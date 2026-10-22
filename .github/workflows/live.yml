@@ -1,0 +1,44 @@
+# The free data sources are unofficial and can change without notice.
+# This runs the real thing daily so breakage shows up here before users report it.
+name: Live endpoints
+
+on:
+  schedule:
+    - cron: "17 22 * * 1-5"  # after the US close
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: "Extra symbol to explain (output is printed, handy for README demos)"
+        required: false
+      when:
+        description: "Date, e.g. 2026-10-14"
+        required: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Stock (Yahoo + Google News)
+        run: python skills/whymoved/scripts/why.py SPY --lang en
+      - name: Crypto (Coinbase)
+        run: python skills/whymoved/scripts/why.py BTC --lang en
+      - name: News feed returns stories
+        run: |
+          python skills/whymoved/scripts/why.py NVDA --days 3 --json > out.json
+          python - <<'PY'
+          import json
+          d = json.load(open("out.json"))
+          n = sum(len(v) for v in d["news"].values())
+          print("stories:", n, "warnings:", d["caveats"][2:])
+          assert n > 0, "Google News returned nothing for NVDA over 3 days"
+          PY
+      - name: Requested symbol
+        if: ${{ github.event.inputs.symbol }}
+        run: |
+          args="${{ github.event.inputs.symbol }} --lang en"
+          if [ -n "${{ github.event.inputs.when }}" ]; then args="$args --when ${{ github.event.inputs.when }}"; fi
+          python skills/whymoved/scripts/why.py $args

@@ -2,6 +2,8 @@
 
 [English](README.md) | **简体中文**
 
+[![CI](https://github.com/drewliu123/whymoved/actions/workflows/ci.yml/badge.svg)](https://github.com/drewliu123/whymoved/actions/workflows/ci.yml) [![Live endpoints](https://github.com/drewliu123/whymoved/actions/workflows/live.yml/badge.svg)](https://github.com/drewliu123/whymoved/actions/workflows/live.yml) ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue) ![deps: none](https://img.shields.io/badge/dependencies-none-brightgreen) ![MIT](https://img.shields.io/badge/license-MIT-lightgrey)
+
 **它为什么涨了？带出处的答案，找不到就说找不到。**
 
 输入 `/why 英伟达`，whymoved 会先找出这次涨跌**具体发生在哪个时间段**，再看大盘和板块有没有一起动，最后只把**异动之前**就已经公开的新闻当作可能的原因。
@@ -18,14 +20,14 @@ whymoved 坚持一条别的工具会跳过的规则：
 
 为了执行这条规则，它分三步：
 
-1. **定位异动窗口**：用分钟线找出能解释大部分涨跌的最短时间段，包括隔夜跳空（比如盘后发财报，会表现为第二天盘前的跳空）。
+1. **定位异动窗口**：用包含盘前盘后的分钟线，找出能解释大部分涨跌的最短时间段。盘后发布的财报会精确定位到盘后交易里的具体几分钟，而不是笼统地算成一整夜的跳空。
 2. **对照大盘**：同一时间段里，SPY、QQQ 和所属板块 ETF 怎么走（加密货币对照 BTC 或 ETH）。如果是整个市场在跌，会先说清楚。
-3. **按时间给新闻分类**：异动前 24 小时内或异动中发布的，列为「可能的触发」；异动之后发布的，或者只是复述涨跌的，单独列为「涨跌之后的报道」。后者可能点名了原因，但本身永远不会被当作原因。
+3. **按时间给新闻分类**：异动前 24 小时内或异动中发布的，列为「可能的触发」；异动之后发布的，或者只是复述涨跌的，单独列为「涨跌之后的报道」。后者可能点名了原因，但本身永远不会被当作原因。异动窗口内发布的事件类标题（「超预期」「上调评级」）仍算候选；第一人称观点和猜测类标题（「我为什么不担心」「能再翻倍吗？」）会被降权。
 
 ## 示例
 
 ```
-$ python3 skills/whymoved/scripts/why.py TSLA --when 2026-10-14
+$ python3 skills/whymoved/scripts/why.py TSLA --when 2026-10-14 --lang zh
 
 TSLA · Tesla, Inc.
 涨跌 -3.02%  (10-13 16:00 → 10-14 20:00 ET)
@@ -68,8 +70,15 @@ npx skills add drewliu123/whymoved -g
 **直接用命令行**
 
 ```bash
+pipx install git+https://github.com/drewliu123/whymoved
+why 英伟达
+```
+
+或者不安装、直接运行：
+
+```bash
 git clone https://github.com/drewliu123/whymoved
-python3 whymoved/skills/whymoved/scripts/why.py NVDA
+python3 whymoved/skills/whymoved/scripts/why.py NVDA --lang zh
 ```
 
 ## 用法
@@ -79,12 +88,15 @@ python3 whymoved/skills/whymoved/scripts/why.py NVDA
 命令行：
 
 ```bash
-python3 why.py NVDA                       # 最近一个交易日，中文简报
-python3 why.py BTC --lang en              # 最近 24 小时，英文简报
-python3 why.py TSLA --when 2026-10-14     # 指定日期
-python3 why.py ETH --days 7               # 一整周
-python3 why.py 英伟达 --json              # 给 Agent 用的结构化证据
+why NVDA --lang zh             # 最近一个交易日，中文简报
+why BTC --lang en              # 最近 24 小时，英文简报
+why TSLA --when 2026-10-14     # 指定日期
+why ETH --days 7               # 一整周
+why WIF-USD                    # Coinbase 上的任意交易对
+why 英伟达 --json              # 给 Agent 用的结构化证据
 ```
+
+输入中文名或系统语言是中文时，简报默认用中文，否则用英文。股票的涨跌从前一交易日收盘算到盘前盘后；如果和常规交易时段的涨跌不同，会一并列出。
 
 ## 覆盖范围
 
@@ -99,6 +111,7 @@ python3 why.py 英伟达 --json              # 给 Agent 用的结构化证据
 
 - 免费新闻搜索覆盖不到付费通讯社、公告原文和社交媒体。「没有明确新闻」的意思是「公开标题里没有」，不代表「没有原因」。
 - 聚合平台的发布时间可能比原始报道晚几分钟，whymoved 留了 10 分钟容差。
+- 5 分钟线大约只能回溯 55 天，更早的日期会退化为小时线、再到日线，简报会提示时间精度变粗。
 - 命令行里的排序是规则打分，因果判断交给按 `SKILL.md` 推理的 Agent，或者交给你自己。
 - 不构成投资建议。
 

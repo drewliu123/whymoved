@@ -119,6 +119,26 @@ class NewsTest(unittest.TestCase):
         self.assertEqual(news.direction("Tesla rallies on deliveries"), 1)
         self.assertEqual(news.direction("Fed holds rates"), 0)
 
+    def test_event_headline_inside_window_stays_a_candidate(self):
+        during = self.start + timedelta(minutes=5)
+        for title in ("Analyst upgrades Nvidia to buy", "Nvidia beats estimates; revenue up 94%"):
+            s = news.classify([news.Story(title, "Reuters", "u", during)], self.start, self.end)
+            s = news.score(s, self.asset, "NVIDIA", self.start, move_sign=1)
+            self.assertEqual(s[0].timing, "candidate", title)
+
+    def test_price_recap_vs_business_numbers(self):
+        self.assertTrue(news.is_price_recap("Nvidia stock up 6% in early trade"))
+        self.assertFalse(news.is_price_recap("Nvidia revenue up 94% on AI demand"))
+
+    def test_opinion_and_commentary_outlets_rank_lower(self):
+        mk = lambda t, src: news.Story(t, src, t, self.start - timedelta(hours=1))
+        s = news.classify([mk("Nvidia wins Pentagon contract", "Reuters"),
+                           mk("Why I'm Not Worried About Nvidia", "Yahoo Finance"),
+                           mk("Is Nvidia a buy?", "The Motley Fool")], self.start, self.end)
+        scores = [x.score for x in news.score(s, self.asset, "NVIDIA", self.start, move_sign=1)]
+        self.assertGreater(scores[0], scores[1])
+        self.assertGreater(scores[0], scores[2])
+
     def test_dedupe_keeps_best(self):
         a = news.Story("Apple unveils new iPhone at event today in Cupertino", "Reuters", "u1", self.start, score=3)
         b = news.Story("Apple unveils new iPhone at event today in Cupertino, analysts react", "Blog", "u2", self.start, score=1)
@@ -130,6 +150,11 @@ class SymbolTest(unittest.TestCase):
         for raw in ("btc", "BTC-USD", "BTCUSDT", "$btc", "比特币", "bitcoin"):
             a = resolve(raw)
             self.assertEqual((a.symbol, a.kind), ("BTC", "crypto"), raw)
+
+    def test_any_coinbase_pair(self):
+        for raw in ("WIF-USD", "wifusdt", "$WIF-USDT"):
+            a = resolve(raw)
+            self.assertEqual((a.symbol, a.kind, a.coinbase_product), ("WIF", "crypto", "WIF-USD"), raw)
 
     def test_stock(self):
         a = resolve("$nvda")

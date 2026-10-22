@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whymoved"
+dynamic = ["version"]
+description = "Explain why a stock or crypto asset moved, with sources and timestamps. Only news published before the move counts as a cause."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["stocks", "crypto", "news", "finance", "agent-skill", "claude-code"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/drewliu123/whymoved"
+
+[project.scripts]
+why = "whymoved.cli:main"
+whymoved = "whymoved.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "skills/whymoved/scripts" }
+packages = ["whymoved"]
+
+[tool.setuptools.dynamic]
+version = { attr = "whymoved.__version__" }
+
+[tool.ruff]
+line-length = 160
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E731"]

@@ -37,6 +37,9 @@ class Result:
     context: str = "asset_specific"
     stories: list[news_mod.Story] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    # Close-to-close change of the regular session (stocks only). The period above also
+    # includes pre/post-market trading, so it can differ from what brokers show as "today".
+    regular_change: float | None = None
 
 
 def _local_date(b: Bar, tz: ZoneInfo) -> date:
@@ -45,7 +48,7 @@ def _local_date(b: Bar, tz: ZoneInfo) -> date:
 
 def _stock_period(series: Series, when: str | None, days: int | None) -> list[Bar]:
     tz = ZoneInfo(series.asset.exchange_tz)
-    by_day: "OrderedDict[date, list[Bar]]" = OrderedDict()
+    by_day: OrderedDict[date, list[Bar]] = OrderedDict()
     for b in series.bars:
         by_day.setdefault(_local_date(b, tz), []).append(b)
     dates = list(by_day)
@@ -66,13 +69,30 @@ def _stock_period(series: Series, when: str | None, days: int | None) -> list[Ba
     if first < 1:
         raise FetchError("not enough history before the requested period")
 
+    # Start at the previous regular close and keep that evening's post-market bars, so an
+    # after-hours earnings move is timed to the minute instead of looking like an overnight gap.
     prev = by_day[dates[first - 1]]
-    regular = [b for b in prev if b.t.astimezone(tz).time() < REGULAR_CLOSE]
-    baseline = (regular or prev)[-1]
-    period = [baseline]
+    baseline = _regular_close(prev, tz)
+    period = [b for b in prev if b.t >= baseline.t]
     for d in dates[first: idx + 1]:
         period.extend(by_day[d])
     return period
+
+
+def _regular_close(day: list[Bar], tz: ZoneInfo) -> Bar:
+    """Last bar of the regular session (falls back to the last bar of the day)."""
+    regular = [b for b in day if b.t.astimezone(tz).time() < REGULAR_CLOSE]
+    return (regular or day)[-1]
+
+
+def _regular_change(period: list[Bar], tz: ZoneInfo) -> float | None:
+    """Previous regular close -> last regular-session price of the period."""
+    last_day = period[-1].t.astimezone(tz).date()
+    day = [b for b in period[1:] if b.t.astimezone(tz).date() == last_day]
+    in_session = [b for b in day if time(9, 30) <= b.t.astimezone(tz).time() < REGULAR_CLOSE]
+    if not in_session:
+        return None
+    return _regular_close(in_session, tz).close / period[0].close - 1
 
 
 def _fetch_range(asset: Asset, when: str | None, days: int | None, now: datetime) -> tuple[datetime, datetime]:
@@ -174,12 +194,18 @@ def analyze(raw_symbol: str, when: str | None = None, days: int | None = None, n
     p_start, p_end = period[0].t + step, period[-1].t + step
     name = series.display_name or asset.name
     result = Result(asset=asset, name=name, period_start=p_start, period_end=p_end, window=w)
+    if asset.kind == "stock":
+        result.regular_change = _regular_change(period, ZoneInfo(asset.exchange_tz))
+    if series.interval_s >= 86400:
+        result.warnings.append("only daily prices are available this far back, so the move window is a whole day and timing cannot rule news in or out")
+    elif series.interval_s >= 3600:
+        result.warnings.append("only hourly prices are available this far back, so the move window is accurate to about an hour")
 
     result.benchmarks = _benchmarks(asset, w, p_start, p_end, f_start, f_end, is_today)
     result.context = _context(w, result.benchmarks)
     try:
         result.stories = news_mod.gather(asset, _search_name(name), w.start, w.end, 1 if w.pct > 0 else -1)
-    except (FetchError, Exception) as e:  # news is best-effort; prices are the backbone
+    except FetchError as e:  # news is best-effort; prices are the backbone
         result.warnings.append(f"news search failed: {e}")
     return result
 

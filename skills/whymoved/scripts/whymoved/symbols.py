@@ -45,4 +45,10 @@ def resolve(raw: str) -> Asset:
             break
     if s in CRYPTO:
         return Asset(symbol=s, kind="crypto", name=CRYPTO[s], exchange_tz="UTC")
+    # An explicit quote currency ("WIF-USD", "WIFUSDT") means a crypto pair even if we have no name for it.
+    for suffix in ("-USDT", "-USD", "USDT"):
+        if s.endswith(suffix) and len(s) > len(suffix) + 1:
+            base = s[: -len(suffix)]
+            if base.isalnum():
+                return Asset(symbol=base, kind="crypto", name=base, exchange_tz="UTC")
     return Asset(symbol=s, kind="stock", name=s, exchange_tz="America/New_York")

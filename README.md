@@ -2,6 +2,8 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
+[![CI](https://github.com/drewliu123/whymoved/actions/workflows/ci.yml/badge.svg)](https://github.com/drewliu123/whymoved/actions/workflows/ci.yml) [![Live endpoints](https://github.com/drewliu123/whymoved/actions/workflows/live.yml/badge.svg)](https://github.com/drewliu123/whymoved/actions/workflows/live.yml) ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue) ![deps: none](https://img.shields.io/badge/dependencies-none-brightgreen) ![MIT](https://img.shields.io/badge/license-MIT-lightgrey)
+
 **Ask why anything moved. Get receipts, not vibes.**
 
 `/why NVDA` finds *when* the move actually happened, checks whether the whole market or sector moved with it, and only accepts news that was public **before** the move as a possible cause.
@@ -18,9 +20,9 @@ whymoved applies one rule other tools skip:
 
 It enforces that rule with three steps:
 
-1. **Find the move window.** From intraday bars, find the shortest stretch of time that explains most of the move, including overnight gaps (earnings after the close show up as a gap into the next pre-market).
+1. **Find the move window.** From intraday bars, including pre- and post-market, find the shortest stretch of time that explains most of the move. Earnings released after the close are timed to the minute in post-market trading, not smeared across the night.
 2. **Check the market.** Compare SPY, QQQ and the sector ETF (or BTC/ETH for crypto) over the same window. If everything fell, it says so first.
-3. **Sort news by time.** Candidates are stories from the 24 hours before the window or during it. Stories published after the move, or that merely restate it, go into a separate "reported after the move" list. They can name a cause, but are never treated as one.
+3. **Sort news by time.** Candidates are stories from the 24 hours before the window or during it. Stories published after the move, or that merely restate it ("shares jump 6%"), go into a separate "reported after the move" list. They can name a cause, but are never treated as one. Event headlines that land inside the window ("beats estimates", "upgraded to buy") stay candidates; first-person takes and speculation ("Why I'm not worried", "Could X double?") rank lower.
 
 ## Example
 
@@ -68,6 +70,13 @@ npx skills add drewliu123/whymoved -g
 **Plain CLI**
 
 ```bash
+pipx install git+https://github.com/drewliu123/whymoved
+why NVDA
+```
+
+or without installing anything:
+
+```bash
 git clone https://github.com/drewliu123/whymoved
 python3 whymoved/skills/whymoved/scripts/why.py NVDA
 ```
@@ -79,12 +88,15 @@ In an agent, just ask: *"why is NVDA down today?"*, *"why did BTC pump yesterday
 From the command line:
 
 ```bash
-python3 why.py NVDA                       # latest session, Chinese brief
-python3 why.py BTC --lang en              # last 24 hours, English brief
-python3 why.py TSLA --when 2026-10-14     # a specific day
-python3 why.py ETH --days 7               # a whole week
-python3 why.py 英伟达 --json              # machine-readable evidence for agents
+why NVDA                       # latest session
+why BTC --lang zh              # last 24 hours, Chinese brief
+why TSLA --when 2026-10-14     # a specific day
+why ETH --days 7               # a whole week
+why WIF-USD                    # any Coinbase pair
+why 英伟达 --json              # machine-readable evidence for agents
 ```
+
+The brief is in English, or in Chinese when you type a Chinese name or run a Chinese locale. A stock's move runs from the previous regular close through pre- and post-market; the regular-session change is shown alongside when it differs.
 
 ## Coverage
 
@@ -99,6 +111,7 @@ News comes from Google News RSS. Benchmarks: SPY, QQQ and a sector ETF for ~70 p
 
 - Free news search misses paywalled wires, filings and social posts. Treat "no clear news" as "nothing in public headlines", not "no reason".
 - Aggregator timestamps can lag the original report by a few minutes; whymoved allows a 10-minute tolerance.
+- Intraday 5-minute bars go back about 55 days. Older dates fall back to hourly, then daily bars, and the brief warns that timing gets coarser.
 - The CLI's ranking is heuristic. Causality is judged by the agent following `SKILL.md`, or by you.
 - Not investment advice.
 

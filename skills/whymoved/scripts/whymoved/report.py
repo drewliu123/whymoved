@@ -36,6 +36,7 @@ def to_dict(r: Result, max_items: int = 8) -> dict:
             "published": s.published.isoformat(),
             "minutes_from_window_start": round((s.published - w.start).total_seconds() / 60),
             "score": s.score,
+            "why_ranked": s.reasons,
             "url": s.url,
         }
 
@@ -43,7 +44,12 @@ def to_dict(r: Result, max_items: int = 8) -> dict:
     return {
         "tool": f"whymoved {__version__}",
         "asset": {"symbol": r.asset.symbol, "kind": r.asset.kind, "name": r.name, "timezone": r.asset.exchange_tz},
-        "period": {"start": r.period_start.isoformat(), "end": r.period_end.isoformat(), "change": round(w.total_pct, 5)},
+        "period": {
+            "start": r.period_start.isoformat(),
+            "end": r.period_end.isoformat(),
+            "change": round(w.total_pct, 5),
+            "regular_session_change": None if r.regular_change is None else round(r.regular_change, 5),
+        },
         "window": {
             "start": w.start.isoformat(),
             "end": w.end.isoformat(),
@@ -80,7 +86,7 @@ def is_notable(r: Result) -> bool:
 
 TEXT = {
     "en": {
-        "period": "Move", "window": "Move window", "share": "{p}% of the move",
+        "period": "Move", "regular": "regular session", "window": "Move window", "share": "{p}% of the move",
         "overshoot": "partly given back afterwards", "gap": "across a market closure",
         "bench": "Market check", "ctx": {
             "asset_specific": "mostly its own move", "partly_market": "partly the market",
@@ -96,7 +102,7 @@ TEXT = {
         "quiet": "This is within normal day-to-day noise; there may be nothing to explain.",
     },
     "zh": {
-        "period": "涨跌", "window": "异动窗口", "share": "占整段涨跌 {p}%",
+        "period": "涨跌", "regular": "常规交易时段", "window": "异动窗口", "share": "占整段涨跌 {p}%",
         "overshoot": "之后回吐了一部分", "gap": "跨越休市跳空",
         "bench": "大盘对照", "ctx": {
             "asset_specific": "主要是自身行情", "partly_market": "部分来自大盘",
@@ -126,9 +132,12 @@ def to_text(r: Result, lang: str = "zh", max_items: int = 5) -> str:
     w = r.window
     multi_day = w.start.astimezone(tz).date() != w.end.astimezone(tz).date()
     share = L["overshoot"] if w.share > 1.05 else L["share"].format(p=f"{max(w.share, 0) * 100:.0f}")
+    regular = ""
+    if r.regular_change is not None and abs(r.regular_change - w.total_pct) >= 0.001:
+        regular = f"; {L['regular']} {_pct(r.regular_change)}"
     lines = [
         f"{r.asset.symbol} · {r.name}",
-        f"{L['period']} {_pct(w.total_pct)}  ({_t(r.period_start, tz, True)} → {_t(r.period_end, tz, True)} {tzname})",
+        f"{L['period']} {_pct(w.total_pct)}  ({_t(r.period_start, tz, True)} → {_t(r.period_end, tz, True)} {tzname}{regular})",
         f"{L['window']} {_t(w.start, tz, multi_day)}–{_t(w.end, tz, multi_day)} {tzname}: {_pct(w.pct)}"
         f"  ({share}{'; ' + L['gap'] if w.is_gap else ''})",
     ]

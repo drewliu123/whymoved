@@ -23,12 +23,15 @@ The JSON contains:
 
 | Field | Meaning |
 |---|---|
-| `period.change` | the whole move being explained |
+| `period.change` | the whole move being explained (stocks: previous regular close through pre/post-market) |
+| `period.regular_session_change` | stocks only: close-to-close regular session, which is what most apps show as "today" |
 | `window` | the shortest stretch of time that explains most of the move (`start`, `end`, `change`, `spans_market_closure`) |
 | `benchmarks`, `market_context` | what SPY / QQQ / the sector ETF (or BTC/ETH) did in the same window; `market_wide`, `partly_market` or `asset_specific` |
 | `notable` | false means the move is within ordinary noise |
 | `news.candidates` | stories published in the 24h before the window or during it, ranked |
 | `news.after_move` | stories published after the move, or ones that just describe it; **never a cause**, but they often name one |
+| `why_ranked` | per story: why the heuristic scored it (tier-1 source, names a concrete event, opinion or speculation, ...) |
+| `caveats` | includes warnings, e.g. only hourly prices this far back, or news search failed. Mention them if they weaken the answer |
 
 ## Step 2: reason about it
 
