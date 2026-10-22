@@ -14,11 +14,12 @@ class FetchError(RuntimeError):
     pass
 
 
-def fetch(url: str, *, timeout: float = 15.0, retries: int = 2) -> bytes:
+def fetch(url: str, *, timeout: float = 15.0, retries: int = 2, headers: dict | None = None,
+          data: bytes | None = None) -> bytes:
     last: Exception | None = None
     for attempt in range(retries + 1):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            req = urllib.request.Request(url, data=data, headers={"User-Agent": USER_AGENT, **(headers or {})})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return resp.read()
         except urllib.error.HTTPError as e:

@@ -23,7 +23,7 @@ from whymoved.report import to_dict, to_text  # noqa: E402
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="why", description="Why did a stock or crypto asset move? Sources and timestamps included.")
-    p.add_argument("symbol", help="ticker or name: NVDA, TSLA, BTC, ETH, 英伟达, 比特币 ...")
+    p.add_argument("symbol", help="ticker or name: NVDA, TSLA, BTC, 0700.HK, 600519, 英伟达, 腾讯, 比特币 ...")
     p.add_argument("--when", default=None, help="today (default), yesterday, or a date like 2026-10-14")
     p.add_argument("--days", type=int, default=None, help="explain a multi-day move ending at --when")
     p.add_argument("--lang", default="zh", choices=["zh", "en"], help="language of the text brief")
@@ -31,7 +31,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--max", type=int, default=5, help="max candidate stories to show")
     a = p.parse_args(argv)
     try:
-        r = analyze(a.symbol, when=a.when, days=a.days)
+        r = analyze(a.symbol, when=a.when, days=a.days, resolve_links=a.json)
     except (FetchError, ValueError) as e:
         print(f"whymoved: {e}", file=sys.stderr)
         return 1
