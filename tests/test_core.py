@@ -13,8 +13,8 @@ from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "skills", "whymoved", "scripts"))
 
-from whymoved import news, prices  # noqa: E402
-from whymoved.analyze import Result, _context  # noqa: E402
+from whymoved import filings, news, prices  # noqa: E402
+from whymoved.analyze import Result, _context, _search_name, ex_asset  # noqa: E402
 from whymoved.prices import Bar  # noqa: E402
 from whymoved.report import to_dict, to_text  # noqa: E402
 from whymoved.symbols import resolve  # noqa: E402
@@ -124,6 +124,75 @@ class NewsTest(unittest.TestCase):
         b = news.Story("Apple unveils new iPhone at event today in Cupertino, analysts react", "Blog", "u2", self.start, score=1)
         self.assertEqual([x.url for x in news.dedupe([b, a])], ["u1"])
 
+    def test_cause_headline_inside_window_stays_a_candidate(self):
+        # An earnings beat released as the move starts is the cause, not a report of the move.
+        s = news.Story("Nvidia beats estimates, raises guidance", "Reuters", "u", self.start + timedelta(minutes=5))
+        recap = news.Story("Nvidia shares jump after earnings", "CNBC", "r", self.start + timedelta(minutes=20))
+        news.classify([s, recap], self.start, self.end)
+        news.score([s, recap], self.asset, "NVIDIA", self.start, move_sign=1)
+        self.assertEqual(s.timing, "candidate")
+        self.assertEqual(recap.timing, "after_move")
+
+    def test_story_not_mentioning_the_asset_ranks_below(self):
+        other = news.Story("Tesla recalls 2 million vehicles", "Reuters", "t", self.start - timedelta(minutes=30))
+        mine = news.Story("Nvidia wins AI order", "Reuters", "n", self.start - timedelta(minutes=30))
+        news.classify([other, mine], self.start, self.end)
+        news.score([other, mine], self.asset, "NVIDIA", self.start, move_sign=1)
+        self.assertIn("does not mention the asset", other.reasons)
+        self.assertLess(other.score, mine.score)
+
+    def test_short_tickers_match_case_sensitively(self):
+        keys = news.asset_keys(resolve("ON"), "ON Semiconductor Corporation")
+        self.assertFalse(news.mentions("Stocks fall on Fed worries", keys))
+        self.assertTrue(news.mentions("ON Semi soars after earnings", keys))
+
+    def test_roundups_are_noise(self):
+        self.assertTrue(news.NOISE.search("Stocks making the biggest moves after hours: Tesla, Meta"))
+
+    def test_chinese_headlines(self):
+        self.assertEqual(news.move_direction("腾讯控股大涨"), 1)
+        self.assertEqual(news.direction("茅台业绩不及预期"), -1)
+        self.assertTrue(news.PRICE_RECAP.search("腾讯控股涨超3%"))
+        keys = news.asset_keys(resolve("腾讯"), "Tencent Holdings Limited")
+        self.assertTrue(news.mentions("腾讯发布三季度财报", keys))
+        self.assertTrue(news.mentions("Tencent beats estimates", keys))
+
+    def test_filing_after_the_move_is_a_pointer(self):
+        f = news.Story("SEC 8-K: results of operations (earnings)", "SEC EDGAR", "f", self.end + timedelta(hours=4), kind="filing")
+        news.classify([f], self.start, self.end)
+        news.score([f], self.asset, "NVIDIA", self.start, move_sign=1)
+        self.assertEqual(f.timing, "after_move")
+        self.assertTrue(any("announced earlier" in r for r in f.reasons))
+
+    def test_gather_survives_failed_extra_evidence(self):
+        def boom():
+            raise RuntimeError("SEC down")
+        with mock.patch.object(news, "fetch", return_value=RSS):
+            out = news.gather(self.asset, "NVIDIA", self.start, self.end, 1, extra_fn=boom)
+        self.assertTrue(out)
+
+    def test_non_google_links_are_left_alone(self):
+        self.assertEqual(news.decode_google_url("https://www.reuters.com/x"), "https://www.reuters.com/x")
+
+
+class FilingsTest(unittest.TestCase):
+    def test_parse_filings_window_and_items(self):
+        data = {"filings": {"recent": {
+            "form": ["8-K", "4", "8-K"],
+            "acceptanceDateTime": ["2026-10-22T00:41:42.000Z", "2026-10-21T22:00:00.000Z", "2026-09-01T12:00:00.000Z"],
+            "accessionNumber": ["0001628280-26-066738", "x", "y"],
+            "primaryDocument": ["tsla-20261021.htm", "a.xml", "b.htm"],
+            "items": ["2.02,9.01", "", "8.01"],
+            "reportDate": ["2026-10-21", "", ""],
+        }}}
+        start = datetime(2026, 10, 21, 0, 0, tzinfo=timezone.utc)
+        out = filings.parse_filings(data, 1318605, start, start + timedelta(days=2))
+        self.assertEqual(len(out), 1)  # form 4 is not evidence, September is out of range
+        self.assertIn("results of operations", out[0].title)
+        self.assertIn("event date 2026-10-21", out[0].title)
+        self.assertTrue(out[0].url.endswith("/1318605/000162828026066738/tsla-20261021.htm"))
+        self.assertEqual(out[0].kind, "filing")
+
 
 class SymbolTest(unittest.TestCase):
     def test_crypto_variants(self):
@@ -135,6 +204,24 @@ class SymbolTest(unittest.TestCase):
         a = resolve("$nvda")
         self.assertEqual((a.symbol, a.kind, a.exchange_tz), ("NVDA", "stock", "America/New_York"))
         self.assertEqual(resolve("英伟达").symbol, "NVDA")
+        self.assertEqual(resolve("brk.b").symbol, "BRK-B")
+
+    def test_hong_kong(self):
+        for raw in ("700", "0700", "00700", "0700.HK", "hk0700", "腾讯"):
+            a = resolve(raw)
+            self.assertEqual((a.symbol, a.market, a.exchange_tz), ("0700.HK", "hk", "Asia/Hong_Kong"), raw)
+        self.assertEqual(resolve("腾讯").zh_name, "腾讯")
+
+    def test_mainland(self):
+        for raw, sym in (("600519", "600519.SS"), ("sh600519", "600519.SS"), ("600519.SH", "600519.SS"),
+                         ("000858", "000858.SZ"), ("300750.SZ", "300750.SZ"), ("688256", "688256.SS"), ("茅台", "600519.SS")):
+            a = resolve(raw)
+            self.assertEqual((a.symbol, a.market), (sym, "cn"), raw)
+
+    def test_company_name_for_search(self):
+        self.assertEqual(_search_name("Alibaba Group Holding Limited"), "Alibaba")
+        self.assertEqual(_search_name("Kweichow Moutai Co., Ltd."), "Kweichow Moutai")
+        self.assertEqual(_search_name("Tesla, Inc."), "Tesla")
 
 
 class NasdaqFallbackTest(unittest.TestCase):
@@ -173,6 +260,26 @@ class ReportTest(unittest.TestCase):
         r = self.make([0.0], [100, 100.2, 100.3, 100.4])
         self.assertFalse(to_dict(r)["notable"])
         self.assertIn("正常波动", to_text(r))
+
+    def test_benchmark_without_the_asset(self):
+        # SMH +1.4% while NVDA (20% of SMH) is +2%: without NVDA the sector is up only ~1.25%.
+        self.assertAlmostEqual(ex_asset(0.014, 0.20, 0.02), 0.0125)
+        self.assertIsNone(ex_asset(None, 0.2, 0.02))
+        w = find_window(bars_from([100, 100, 102, 102]), FIVE)
+        raw = [{"symbol": "SMH", "window_change": 0.013}]
+        self.assertEqual(_context(w, raw), "market_wide")
+        raw[0]["window_change_ex_asset"] = ex_asset(0.013, 0.20, w.pct)
+        self.assertEqual(_context(w, raw), "partly_market")
+
+    def test_notable_is_relative_to_the_assets_own_volatility(self):
+        r = self.make([0.0], [100, 100, 102, 102])  # +2%
+        r.daily_vol = 0.035  # a volatile name: 2% is a normal day
+        self.assertFalse(to_dict(r)["notable"])
+        r.daily_vol = 0.008  # a sleepy name: 2% is news
+        d = to_dict(r)
+        self.assertTrue(d["notable"])
+        self.assertAlmostEqual(d["move_vs_typical"], 2.5, places=1)
+        self.assertIn("2.5×", to_text(r, lang="en"))
 
     def test_json_shape(self):
         d = to_dict(self.make([0.0], [100, 100, 105, 105]))

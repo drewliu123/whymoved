@@ -1,0 +1,26 @@
+# Live check against the free data sources (Yahoo, Coinbase, Google News, SEC).
+# They change without notice; this catches breakage early. Not a merge gate.
+name: Live smoke test
+
+on:
+  schedule:
+    - cron: "17 14 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        symbol: ["NVDA", "BTC", "0700.HK", "600519"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: whymoved ${{ matrix.symbol }}
+        run: |
+          python skills/whymoved/scripts/why.py "${{ matrix.symbol }}" --lang en
+          python skills/whymoved/scripts/why.py "${{ matrix.symbol }}" --json > out.json
+          python -c "import json; d = json.load(open('out.json')); assert d['window'] and d['news'], d"

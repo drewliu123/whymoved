@@ -1,0 +1,24 @@
+name: Wrong or missing explanation
+description: whymoved blamed the wrong story, missed the real cause, or found no window
+labels: ["accuracy"]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: python3 why.py TSLA --when 2026-10-14 --lang en
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Paste the text output (or --json).
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What actually caused the move?
+      description: Link a source with a timestamp if you can.

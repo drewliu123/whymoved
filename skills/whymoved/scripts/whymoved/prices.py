@@ -38,8 +38,11 @@ def _yahoo_interval(start: datetime) -> tuple[str, int]:
     return "1d", 86400
 
 
-def yahoo(symbol: str, start: datetime, end: datetime) -> tuple[list[Bar], int, str | None]:
-    interval, seconds = _yahoo_interval(start)
+def yahoo(symbol: str, start: datetime, end: datetime, interval: str | None = None) -> tuple[list[Bar], int, str | None]:
+    if interval is None:
+        interval, seconds = _yahoo_interval(start)
+    else:
+        seconds = {"5m": 300, "1h": 3600, "1d": 86400}[interval]
     q = urllib.parse.urlencode({
         "period1": int(start.timestamp()),
         "period2": int(end.timestamp()),
@@ -72,10 +75,10 @@ def yahoo(symbol: str, start: datetime, end: datetime) -> tuple[list[Bar], int, 
     return bars, seconds, name
 
 
-def coinbase(product: str, start: datetime, end: datetime) -> tuple[list[Bar], int]:
+def coinbase(product: str, start: datetime, end: datetime, granularity: int | None = None) -> tuple[list[Bar], int]:
     span = end - start
     # Coinbase returns at most 300 candles per request.
-    for seconds in (300, 900, 3600, 21600, 86400):
+    for seconds in (granularity,) if granularity else (300, 900, 3600, 21600, 86400):
         if span.total_seconds() / seconds <= 300:
             break
     q = urllib.parse.urlencode({
@@ -128,10 +131,25 @@ def stock_bars(symbol: str, start: datetime, end: datetime, allow_today_fallback
     try:
         return yahoo(symbol, start, end)
     except FetchError:
-        if not allow_today_fallback:
+        # Nasdaq only covers US listings
+        if not allow_today_fallback or symbol.startswith("^") or "." in symbol:
             raise
         bars, sec = nasdaq_today(symbol)
         return bars, sec, None
+
+
+def daily_returns(asset: Asset, end: datetime, days: int = 120) -> list[float]:
+    """Close-to-close daily returns over roughly the last `days` calendar days before `end`.
+
+    Used to judge whether a move is large *for this asset*: 2% is noise for TSLA, news for KO.
+    """
+    start = end - timedelta(days=days)
+    if asset.kind == "crypto":
+        bars, _ = coinbase(asset.coinbase_product, start, end, granularity=86400)
+    else:
+        bars, _, _ = yahoo(asset.symbol, start, end, interval="1d")
+    closes = [b.close for b in bars if b.t < end and b.close > 0]  # only history before the move
+    return [b / a - 1 for a, b in zip(closes, closes[1:])]
 
 
 def get_series(asset: Asset, start: datetime, end: datetime, today: bool = False) -> Series:
