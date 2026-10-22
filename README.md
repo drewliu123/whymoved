@@ -115,7 +115,7 @@ Intraday bars are 5-minute for the last ~55 days and hourly before that.
 - Free news search misses paywalled wires, social posts and many exchange announcements. Treat "no clear news" as "nothing in public headlines", not "no reason".
 - Aggregator timestamps can lag the original report by a few minutes; whymoved allows a 10-minute tolerance. SEC filings often trail the press release by hours, so a filing after the move points to an event but does not prove its timing.
 - The CLI's ranking is heuristic. Causality is judged by the agent following `SKILL.md`, or by you.
-- SEC asks automated clients for a contact address. Set `WHYMOVED_CONTACT=you@example.com` to use your own.
+- SEC asks automated clients for a contact address. whymoved sends the maintainer's by default; set `WHYMOVED_CONTACT=you@example.com` to send your own, especially if you run it at volume.
 - Not investment advice.
 
 ## Development

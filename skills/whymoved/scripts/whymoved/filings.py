@@ -17,9 +17,9 @@ from . import __version__
 from .net import fetch_json
 from .news import Story
 
-# SEC asks automated clients to identify themselves with a contact address.
-# Set WHYMOVED_CONTACT to your own email to be a good citizen.
-CONTACT = os.environ.get("WHYMOVED_CONTACT", "whymoved@example.com")
+# SEC asks automated clients to identify themselves with a contact address. The default is
+# the maintainer's; set WHYMOVED_CONTACT to your own email if you run whymoved at volume.
+CONTACT = os.environ.get("WHYMOVED_CONTACT", "liuxintian1314520@gmail.com")
 HEADERS = {"User-Agent": f"whymoved/{__version__} {CONTACT}"}
 
 FORMS = {"8-K", "8-K/A", "6-K", "10-Q", "10-K", "20-F", "S-1", "S-3", "424B5", "SC 13D", "SC 13G"}
