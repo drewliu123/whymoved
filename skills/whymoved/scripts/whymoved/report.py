@@ -18,12 +18,19 @@ RULES = [
 
 CAVEATS = [
     "Aggregator timestamps can lag the original report by minutes.",
-    "Free news search misses paywalled wires, filings and social posts; check them if the answer matters.",
+    "Free news search misses paywalled wires, social posts and most exchange announcements; check them if the answer matters.",
+    "SEC filings often trail the press release by hours: a filing after the move names the event but does not prove its timing.",
 ]
 
 
+def _share_undefined(w) -> bool:
+    return abs(w.total_pct) < 0.25 * abs(w.pct)
+
+
 def _pct(x: float | None) -> str:
-    return "n/a" if x is None else f"{x * 100:+.2f}%"
+    if x is None:
+        return "n/a"
+    return "+0.00%" if abs(x) < 0.00005 else f"{x * 100:+.2f}%"
 
 
 def to_dict(r: Result, max_items: int = 8) -> dict:
@@ -51,7 +58,8 @@ def to_dict(r: Result, max_items: int = 8) -> dict:
             "start": w.start.isoformat(),
             "end": w.end.isoformat(),
             "change": round(w.pct, 5),
-            "share_of_period_move": round(w.share, 3),
+            # null when the period ended near where it started, so a share would be meaningless
+            "share_of_period_move": None if _share_undefined(w) else round(w.share, 3),
             "spans_market_closure": w.is_gap,
             "price_start": w.price_start,
             "price_end": w.price_end,
@@ -96,7 +104,8 @@ def is_notable(r: Result) -> bool:
 TEXT = {
     "en": {
         "period": "Move", "window": "Move window", "share": "{p}% of the move",
-        "overshoot": "partly given back afterwards", "gap": "across a market closure",
+        "overshoot": "partly given back afterwards", "offset": "offset by moves outside the window", "ex": "ex-asset",
+        "gap": "across a market closure",
         "bench": "Market check", "ctx": {
             "asset_specific": "mostly its own move", "partly_market": "partly the market",
             "market_wide": "mostly the market"},
@@ -113,7 +122,8 @@ TEXT = {
     },
     "zh": {
         "period": "涨跌", "window": "异动窗口", "share": "占整段涨跌 {p}%",
-        "overshoot": "之后回吐了一部分", "gap": "跨越休市跳空",
+        "overshoot": "之后回吐了一部分", "offset": "被窗口外的走势抵消", "ex": "剔除自身",
+        "gap": "跨越休市跳空",
         "bench": "大盘对照", "ctx": {
             "asset_specific": "主要是自身行情", "partly_market": "部分来自大盘",
             "market_wide": "主要随大盘"},
@@ -134,10 +144,10 @@ TEXT = {
 TZ_LABEL = {"America/New_York": "ET", "Asia/Hong_Kong": "HKT", "Asia/Shanghai": "BJT"}
 
 
-def _bench(b: dict) -> str:
+def _bench(b: dict, ex_label: str) -> str:
     s = f"{b['symbol']} {_pct(b['window_change'])}"
     if b.get("window_change_ex_asset") is not None:
-        s += f" (ex-asset {_pct(b['window_change_ex_asset'])})"
+        s += f" ({ex_label} {_pct(b['window_change_ex_asset'])})"
     return s
 
 
@@ -152,7 +162,10 @@ def to_text(r: Result, lang: str = "zh", max_items: int = 5) -> str:
     tzname = TZ_LABEL.get(r.asset.exchange_tz, "UTC")
     w = r.window
     multi_day = w.start.astimezone(tz).date() != w.end.astimezone(tz).date()
-    share = L["overshoot"] if w.share > 1.05 else L["share"].format(p=f"{max(w.share, 0) * 100:.0f}")
+    if _share_undefined(w):
+        share = L["offset"]
+    else:
+        share = L["overshoot"] if w.share > 1.05 else L["share"].format(p=f"{max(w.share, 0) * 100:.0f}")
     lines = [
         f"{r.asset.symbol} · {r.name}",
         f"{L['period']} {_pct(w.total_pct)}  ({_t(r.period_start, tz, True)} → {_t(r.period_end, tz, True)} {tzname})"
@@ -161,7 +174,7 @@ def to_text(r: Result, lang: str = "zh", max_items: int = 5) -> str:
         f"  ({share}{'; ' + L['gap'] if w.is_gap else ''})",
     ]
     if r.benchmarks:
-        bench = " · ".join(_bench(b) for b in r.benchmarks)
+        bench = " · ".join(_bench(b, L["ex"]) for b in r.benchmarks)
         lines.append(f"{L['bench']}: {bench}  → {L['ctx'][r.context]}")
 
     cands = sorted((s for s in r.stories if s.timing == "candidate"), key=lambda s: -s.score)[:max_items]

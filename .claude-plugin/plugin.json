@@ -1,8 +1,20 @@
 {
   "name": "whymoved",
-  "description": "Explain why a stock or crypto asset moved, with sources and timestamps. Only news published before the move counts as a cause.",
+  "description": "Explain why a stock or crypto asset moved, with sources and timestamps. US, Hong Kong, A-shares and crypto. Only news published before the move counts as a cause.",
   "version": "0.2.0",
-  "author": { "name": "drewliu123" },
+  "author": {
+    "name": "drewliu123"
+  },
   "license": "MIT",
-  "keywords": ["stocks", "crypto", "news", "finance", "skill"]
+  "keywords": [
+    "stocks",
+    "crypto",
+    "news",
+    "finance",
+    "a-shares",
+    "hong-kong",
+    "sec",
+    "skill"
+  ],
+  "homepage": "https://github.com/drewliu123/whymoved"
 }

@@ -54,7 +54,10 @@ MOVE_DOWN = {
 # Words that describe news which can *cause* a move. They point in a direction but are
 # never, on their own, a sign that the story merely reports the move.
 CAUSE_UP = {"beat", "beats", "upgrade", "upgrades", "upgraded", "record", "boost", "boosts", "raises", "approval", "approved"}
-CAUSE_DOWN = {"miss", "misses", "missed", "downgrade", "downgrades", "downgraded", "cuts", "recall", "recalls", "probe", "lawsuit", "halts", "delay", "delays"}
+CAUSE_DOWN = {
+    "miss", "misses", "missed", "downgrade", "downgrades", "downgraded", "cuts", "recall", "recalls",
+    "probe", "lawsuit", "halts", "delay", "delays",
+}
 
 ZH_MOVE_UP = re.compile(r"大涨|暴涨|飙升|拉升|涨停|走高|上涨|收涨|高开|狂飙|急升|攀升|涨超|涨逾")
 ZH_MOVE_DOWN = re.compile(r"大跌|暴跌|跳水|跌停|走低|下跌|收跌|低开|重挫|急跌|下挫|跌超|跌逾|闪崩")

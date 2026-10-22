@@ -28,7 +28,7 @@ SECTOR_ETF = {
     **{t: "XLV" for t in "UNH LLY JNJ PFE MRK ABBV TMO NVO".split()},
     **{t: "KWEB" for t in "BABA PDD JD BIDU NIO XPEV LI TME BILI".split()},
 }
-HK_TECH = set("0700.HK 9988.HK 3690.HK 1810.HK 1024.HK 9618.HK 9999.HK 9888.HK 0981.HK 2015.HK 9866.HK 9868.HK 0268.HK 0992.HK 6618.HK 9992.HK".split())
+HK_TECH = {f"{c}.HK" for c in "0700 9988 3690 1810 1024 9618 9999 9888 0981 2015 9866 9868 0268 0992 6618 9992".split()}
 
 # Approximate index weights of the largest holdings. A benchmark that holds the asset moves
 # partly *because of* the asset (NVDA is ~20% of SMH), so we strip that share out before
@@ -77,7 +77,7 @@ def _regular_close(asset: Asset) -> time:
 
 def _stock_period(series: Series, when: str | None, days: int | None) -> list[Bar]:
     tz = ZoneInfo(series.asset.exchange_tz)
-    by_day: "OrderedDict[date, list[Bar]]" = OrderedDict()
+    by_day: OrderedDict[date, list[Bar]] = OrderedDict()
     for b in series.bars:
         by_day.setdefault(_local_date(b, tz), []).append(b)
     dates = list(by_day)
@@ -214,7 +214,8 @@ def analyze(raw_symbol: str, when: str | None = None, days: int | None = None, n
         series = get_series(asset, f_start, f_end, today=is_today)
     except FetchError as e:
         kind = {"crypto": "crypto pair on Coinbase", "hk": "Hong Kong stock code", "cn": "Shanghai/Shenzhen stock code"}
-        raise FetchError(f"no price data for '{raw_symbol}'. Is it a valid {kind.get(asset.market, 'US stock or ETF ticker')}? ({e})") from e
+        what = kind.get(asset.market, "US stock or ETF ticker")
+        raise FetchError(f"no price data for '{raw_symbol}'. Is it a valid {what}? ({e})") from e
 
     if asset.kind == "stock":
         period = _stock_period(series, when, days)

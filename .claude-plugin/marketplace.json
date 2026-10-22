@@ -1,11 +1,13 @@
 {
   "name": "whymoved",
-  "owner": { "name": "drewliu123" },
+  "owner": {
+    "name": "drewliu123"
+  },
   "plugins": [
     {
       "name": "whymoved",
       "source": "./",
-      "description": "Explain why a stock or crypto asset moved, with sources and timestamps."
+      "description": "Explain why a stock or crypto asset moved, with sources and timestamps. US, Hong Kong, A-shares and crypto."
     }
   ]
 }
