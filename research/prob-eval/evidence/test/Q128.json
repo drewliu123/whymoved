@@ -1,0 +1,43 @@
+{
+  "qid": "Q128",
+  "as_of": "2026-09-21",
+  "kept": [
+    {
+      "excerpt": "O calendário das eleições divulgado pelo Tribunal Superior Eleitoral (TSE) reúne etapas que vão desde a realização das convenções partidárias e o início da campanha até a votação, a prestação de contas dos candidatos e a posse dos eleitos. O primeiro turno das eleições está marcado para 4 de outubro, com eventual segundo turno em 25 de outubro.",
+      "published_at": "2026-03-12",
+      "publisher": "Agência Senado (Brazilian Federal Senate)",
+      "relevance": "This official, dated source establishes the first-round election date and the time remaining from the experiment cutoff.",
+      "url": "https://www12.senado.leg.br/noticias/infomaterias/2026/03/confira-datas-e-prazos-do-calendario-eleitoral-de-2026"
+    },
+    {
+      "excerpt": "No principal cenário estimulado, Lula registra 40% das intenções de voto, enquanto Flávio Bolsonaro aparece com 37%. O escritor Augusto Cury aparece em seguida, com 6%, seguido por Ronaldo Caiado, com 5%, Renan Santos, com 3%, e Zema, com 1%. Foram ouvidos 2.006 eleitores, por telefone, via CATI, entre os dias 18 e 20 de setembro de 2026. A margem de erro é de 2 pontos percentuais, para mais ou para menos, com 95% de nível de confiança.",
+      "published_at": "2026-09-21",
+      "publisher": "Nexus — BTG/Nexus poll, primary release",
+      "relevance": "The cutoff-day primary poll places Flávio numerically second, three points behind Lula and far ahead of the remaining candidates.",
+      "url": "https://www.nexus.fsb.com.br/estudos-divulgados/pesquisa-btg-nexus-de-intencao-de-votos-para-presidente-do-brasil-21-de-setembro-de-2026/"
+    },
+    {
+      "excerpt": "O presidente Lula (PT) tem 37% das intenções de voto no primeiro turno contra 33% do senador Flávio Bolsonaro (PL), segundo pesquisa Quaest divulgada nesta segunda-feira (21). No levantamento da semana passada, o petista aparecia com 36% e o filho de Jair Bolsonaro, ex-presidente condenado e preso por tentativa de golpe de Estado, com 31%. No primeiro turno, o escritor Augusto Cury (Avante) marca 6% (tinha 7%).",
+      "published_at": "2026-09-21T18:22:00-03:00",
+      "publisher": "Folha de S.Paulo — reporting on Quaest",
+      "relevance": "An independent cutoff-day poll also places Flávio second, with a substantial advantage over the next candidate and a four-point deficit to Lula.",
+      "url": "https://www1.folha.uol.com.br/poder/2026/09/quaest-lula-tem-37-e-flavio-bolsonaro-33-no-1o-turno-candidatos-empatam-no-2o-turno.shtml"
+    },
+    {
+      "excerpt": "In a first-round scenario, Lula had 39%, compared with 36% for Flavio Bolsonaro. Augusto Cury had 6%, Ronaldo Caiado 4%, Renan Santos 3% and Romeu Zema 2%. In the previous poll, Lula had 39% and Bolsonaro 35% in the first round. Datafolha surveyed 2,002 people between September 15-17.",
+      "published_at": "2026-09-17T18:33:00-04:00",
+      "publisher": "Reuters, syndicated by MarketScreener",
+      "relevance": "Datafolha supplies another recent measurement of Flávio in second place while showing a narrowing numerical gap to Lula.",
+      "url": "https://www.marketscreener.com/news/brazil-s-lula-holds-lead-over-flavio-bolsonaro-ahead-of-election-datafolha-poll-shows-ce785bd3d181f127"
+    },
+    {
+      "excerpt": "Pesquisa do instituto Palver realizada pela internet e divulgada hoje mostra o senador Flávio Bolsonaro (PL) com 42% das intenções de voto no primeiro turno, numericamente à frente do presidente Lula (PT), que aparece com 41%. A margem de erro é de 2,8% pontos percentuais para mais ou para menos. O levantamento entrevistou 5.000 eleitores pela internet entre os dias 15 e 18 de setembro. O nível de confiança é de 95%.",
+      "published_at": "2026-09-21T09:00:00-03:00",
+      "publisher": "UOL — reporting on Palver",
+      "relevance": "This contemporaneous poll places Flávio narrowly first rather than second, documenting meaningful disagreement across pollsters about the ordering of the leading candidates.",
+      "url": "https://noticias.uol.com.br/eleicoes/2026/09/21/palver-pesquisa-presidencial-setembro.ghtm"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-09-21, inclusive. Five items were retained with explicit publication dates verified in web_search results or source text returned by search; excerpts preserve source wording. Poll percentages are reported voting intentions, not official valid-vote results. Searches surfaced later-dated material, which was excluded from the evidence pack and not used in the relevance assessments. No prediction-market pages, betting odds, or market prices are included. Full-page verification was limited: web_fetch failed because multiple providers were registered without a selected provider, and the requested agent-reach web-read fallback returned RATE_LIMITED; no further fallback reads were attempted after those concurrent failures. Accordingly, this pack relies on dated source passages exposed by web_search rather than successfully fetched full pages."
+}

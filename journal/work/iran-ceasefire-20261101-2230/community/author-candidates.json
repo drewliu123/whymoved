@@ -1,0 +1,21 @@
+{
+  "candidates": [
+    {
+      "author": "Jtsummers",
+      "platform": "hackernews",
+      "sample_count": 1,
+      "sample_scope": "本轮一个已读评论，非全账号样本",
+      "reason": "对同串临战预测提出政治成本反证，适合作为竞争解释的追读入口。",
+      "status": "tentative; insufficient history for sustained-read recommendation"
+    },
+    {
+      "author": "gizmo686",
+      "platform": "hackernews",
+      "sample_count": 1,
+      "sample_scope": "本轮一个已读评论，非全账号样本",
+      "reason": "给出舰艇、补给基地与部署细节，便于逐项追原始记录；可信度尚未核查。",
+      "status": "tentative; insufficient history for sustained-read recommendation"
+    }
+  ],
+  "formal_authors_json_modified": false
+}

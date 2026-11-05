@@ -1,0 +1,38 @@
+{
+ "qid": "Q185",
+ "question": "Will Russia capture all of Huliaipole by September 30?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Russia captures the entirety of Huliaipole, Zaporizhzhya Oblast, (47°39'45.5\"N 36°15'13.1\"E) by September 30, 2026, 11:59 PM ET.\n\nHuliaipole will be considered captured if the entirety of the municipality is shaded red on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. If the area is not shaded red by September 30, 2026, 11:59 PM ET, the market will resolve to “No”.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading indicating Russian control must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date. Any continuous shading which reflects either “Assessed Russian Control”, “Assessed Russian Advance In Ukraine”, or “Assessed Russian Gains in the Past 24 Hours” will qualify. “Assessed Russian Infiltration Areas in Ukraine” will not qualify.\n\nThe territory of the municipality is shaded in light grey and is distinguished from bordering municipalities with a darker grey line. If all area within the municipality ",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Institute for the Study of War and AEI Critical Threats Project",
+   "published_at": "2026-07-17",
+   "excerpt": "Russian forces continued offensive operations in the Hulyaipole direction and western Zaporizhia Oblast on July 16 and 17 but did not advance. ISW has observed evidence to assess that Russian forces are losing 1.6 square kilometers per day thus far in July 2026."
+  },
+  {
+   "id": "E2",
+   "publisher": "Ukrainska Pravda, citing the General Staff of the Armed Forces of Ukraine",
+   "published_at": "2026-07-17",
+   "excerpt": "The Russians continue pressing along the entire line of contact, with a total of 249 combat clashes occurring on the battlefield over the past day. On the Huliaipole front, the Russians conducted 17 attacks towards the settlements of Kosivtseve, Verkhnia Tersa, Tsvitkove, Charivne, Hirke and Vozdvyzhivka."
+  },
+  {
+   "id": "E3",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-07-03",
+   "excerpt": "Two Ukrainian military units operating in the Hulyaipole direction refuted on July 2 the Russian Ministry of Defense (MoD)’s June 30 and July 1 claims that Russian forces seized Lisne and Kopani, and geolocated footage posted on July 2 and 3 shows Ukrainian forces operating in Lisne and Kopani. The units stated that Ukrainian forces destroyed Russian forces attacking toward Lisne and captured a Russian servicemember who had infiltrated into Kopani."
+  },
+  {
+   "id": "E4",
+   "publisher": "Interfax-Ukraine, citing DeepState",
+   "published_at": "2026-06-18",
+   "excerpt": "Russian occupying forces advanced on Wednesday, capturing approximately 3 sq km of Ukrainian territory south of Huliaipole (Zaporizhia region), according to maps published by the OSINT project DeepState. At the same time, the contested area west and northwest of Huliaipole expanded by another 4.68 sq km, though without any increase in occupied territory. The advance was recorded outside populated areas. No villages were reported captured."
+  },
+  {
+   "id": "E5",
+   "publisher": "Institute for the Study of War and AEI Critical Threats Project",
+   "published_at": "2026-02-23",
+   "excerpt": "ISW has observed evidence to assess that Ukrainian forces have liberated 200 square kilometers in some areas of the Novopavlivka, Oleksandrivka, and Hulyaipole directions between February 1 and 23, but lost 35 square kilometers in other areas of those three directions during the same time frame. ISW's mapping methodology depicts the furthest assessed extent of Russian advances until open-source evidence emerges that allows ISW to confidently assess that Russian forces no longer hold those positions. Available footage and reports that meet ISW's threshold for changing its maps are often limited, and ISW's maps can continue to depict areas where an earlier Russian presence has significantly decreased or even disappeared as still within the \"Assessed Russian advances\" until a preponderance of reporting and footage indicates otherwise."
+  }
+ ]
+}

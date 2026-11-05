@@ -1,0 +1,44 @@
+{
+ "qid": "Q170",
+ "question": "Will Trump be in the WC Champions Photo?",
+ "rules": "This market will resolve to “Yes” if Donald Trump is visibly in the frame for the winning team's official team photo following the 2026 FIFA World Cup Final. Otherwise, this market will resolve to “No”.\n\nIf Trump does not attend the 2026 FIFA World Cup Final, this market will resolve to “No”.\n\nIf the 2026 FIFA World Cup Final is cancelled or postponed beyond August 2, 2026, 11:59 PM ET, this market will resolve to “No”.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+ "as_of": "2026-07-10",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "FIFA",
+   "published_at": "2024-02-04",
+   "excerpt": "FIFA announced that the 2026 World Cup final would be held in New York New Jersey on Sunday, July 19, 2026. The opening match was scheduled for June 11, 2026, in Mexico City."
+  },
+  {
+   "id": "E2",
+   "publisher": "NBC4 Washington / NBC News",
+   "published_at": "2026-06-12",
+   "excerpt": "Two sources familiar with the plans told NBC News that President Trump wanted to attend the FIFA World Cup final at New York/New Jersey Stadium on July 19."
+  },
+  {
+   "id": "E3",
+   "publisher": "NBC4 Washington",
+   "published_at": "2026-06-23",
+   "excerpt": "FIFA President Gianni Infantino said Trump would attend the July 19 final in New Jersey and help present the trophy to the winning team. Infantino said they would jointly hand the trophy to the champions' captain on the field."
+  },
+  {
+   "id": "E4",
+   "publisher": "Associated Press",
+   "published_at": "2026-07-06",
+   "excerpt": "Trump had yet to attend a World Cup match. Infantino had said in an interview the previous month that Trump planned to join him for the final and award the trophy to the winning team."
+  },
+  {
+   "id": "E5",
+   "publisher": "Associated Press",
+   "published_at": "2025-07-13",
+   "excerpt": "Trump attended Chelsea's FIFA Club World Cup final victory over Paris Saint-Germain. After the match, he joined the players on the field, presented PSG players with runner-up medals and handed Chelsea their championship trophy."
+  },
+  {
+   "id": "E6",
+   "publisher": "PetaPixel",
+   "published_at": "2025-07-14",
+   "excerpt": "After Chelsea won the Club World Cup in New Jersey, Trump remained with the team for the group-photo opportunity as the players lifted the trophy and celebrated. Infantino had exited the stage and gestured for Trump to accompany him."
+  }
+ ]
+}

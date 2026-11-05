@@ -1,0 +1,56 @@
+[
+  {
+    "id": "3215005",
+    "label": "50+ bps decrease",
+    "url": "https://clob.polymarket.com/book?token_id=17640596861394454242836532536014033416733783473450136742726948856144855149507",
+    "started_at": "2026-10-31T17:17:40.745565+00:00",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:17:41.991648+00:00",
+    "response_date": "Sat, 31 Oct 2026 17:17:42 GMT"
+  },
+  {
+    "id": "3215006",
+    "label": "25 bps decrease",
+    "url": "https://clob.polymarket.com/book?token_id=77367448845023382525249480243608609306658725883285195065573683809293972009019",
+    "started_at": "2026-10-31T17:17:40.746201+00:00",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:17:41.952453+00:00",
+    "response_date": "Sat, 31 Oct 2026 17:17:42 GMT"
+  },
+  {
+    "id": "3215007",
+    "label": "No change",
+    "url": "https://clob.polymarket.com/book?token_id=42865728742506860386768556888821101266630139112044622335353850919229585308601",
+    "started_at": "2026-10-31T17:17:40.746474+00:00",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:17:41.764312+00:00",
+    "response_date": "Sat, 31 Oct 2026 17:17:42 GMT"
+  },
+  {
+    "id": "3215008",
+    "label": "25 bps increase",
+    "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890",
+    "started_at": "2026-10-31T17:17:40.746689+00:00",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:17:41.763040+00:00",
+    "response_date": "Sat, 31 Oct 2026 17:17:42 GMT"
+  },
+  {
+    "id": "3215009",
+    "label": "50+ bps increase",
+    "url": "https://clob.polymarket.com/book?token_id=35090254409399344650860070211816464534198960801264823587796928404808383727584",
+    "started_at": "2026-10-31T17:17:40.746899+00:00",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:17:41.692172+00:00",
+    "response_date": "Sat, 31 Oct 2026 17:17:42 GMT"
+  },
+  {
+    "id": "fomc_september",
+    "label": "September statement",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+    "started_at": "2026-10-31T17:17:40.747181+00:00",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:17:42.004357+00:00",
+    "response_date": "Sat, 31 Oct 2026 17:17:42 GMT"
+  }
+]

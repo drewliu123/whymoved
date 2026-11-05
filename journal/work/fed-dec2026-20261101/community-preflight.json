@@ -1,0 +1,36 @@
+[
+  {
+    "name": "help",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+      "--help"
+    ],
+    "start": "2026-11-02T03:38:20.817139+00:00",
+    "end": "2026-11-02T03:38:21.012281+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "diagnose",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+      "--diagnose"
+    ],
+    "start": "2026-11-02T03:38:21.012373+00:00",
+    "end": "2026-11-02T03:38:26.505505+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "save-resolution",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+      "--resolve-save-dir",
+      "--save-dir="
+    ],
+    "start": "2026-11-02T03:38:26.505644+00:00",
+    "end": "2026-11-02T03:38:26.649152+00:00",
+    "exit_code": 0
+  }
+]

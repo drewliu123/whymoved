@@ -1,0 +1,37 @@
+{
+  "intent": "research",
+  "freshness_mode": "recent",
+  "cluster_mode": "topic",
+  "subqueries": [
+    {
+      "search_query": "Kevin Warsh Fed independence inflation rate cuts",
+      "ranking_query": "Kevin Warsh Fed independence inflation rate cuts",
+      "sources": [
+        "reddit",
+        "hackernews",
+        "youtube"
+      ],
+      "weight": 0.3333333333333333
+    },
+    {
+      "search_query": "Kevin Warsh balance sheet quantitative tightening rate cuts",
+      "ranking_query": "Kevin Warsh balance sheet quantitative tightening rate cuts",
+      "sources": [
+        "reddit",
+        "hackernews",
+        "youtube"
+      ],
+      "weight": 0.3333333333333333
+    },
+    {
+      "search_query": "Kevin Warsh AI productivity inflation",
+      "ranking_query": "Kevin Warsh AI productivity inflation",
+      "sources": [
+        "reddit",
+        "hackernews",
+        "youtube"
+      ],
+      "weight": 0.3333333333333333
+    }
+  ]
+}

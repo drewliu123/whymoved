@@ -1,0 +1,55 @@
+{
+  "version": "3.30.0",
+  "python": "3.12.13 (main, Jul 23 2026, 14:33:47) [Clang 22.1.3 ]",
+  "engine_path": "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+  "command": [
+    "/Users/frankzhang/.local/bin/python3.12",
+    "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+    "Federal Reserve FOMC December 2026 rate hike versus hold or cut inflation employment",
+    "--research-only",
+    "--emit=json",
+    "--json-profile=raw",
+    "--plan",
+    "/Users/frankzhang/Desktop/投研助手/journal/work/fed-dec2026-20261101/community-query-plan.json",
+    "--days",
+    "30",
+    "--as-of",
+    "2026-11-01",
+    "--search",
+    "reddit,x,youtube,hackernews,polymarket,github,grounding",
+    "--official-site",
+    "federalreserve.gov",
+    "--subreddits",
+    "Economics,economy,investing",
+    "--no-browser-cookies",
+    "--save-dir="
+  ],
+  "started_at": "2026-11-02T03:39:12.884253+00:00",
+  "budget": {
+    "max_aggregate_queries": 1,
+    "aggregate_queries_used": 1,
+    "websearch_used": 0,
+    "engine_invocations": 1,
+    "internal_comparison_branches": 2,
+    "aggregate_budget_deviation": "One intended aggregate invocation automatically fanned into two comparison branches because positional topic contained versus. No retries or additional search calls. Both branches retained; not equivalent to a successful single-topic aggregate."
+  },
+  "as_of_date": "2026-11-01",
+  "research_plan_cutoff": "2026-11-02T03:40:00Z",
+  "cutoff_note": "Engine date aligned to requested Nov 1 date; plan instant is Nov 1 evening US time. No Nov 2 publications admitted.",
+  "planning_notes": [
+    "One primary subquery covers both hypotheses; no directional subquery bias.",
+    "Known broad communities inferred from topic; no extra resolution searches due explicit one aggregate budget.",
+    "grounding is engine-attached, omitted from subquery sources per installed schema.",
+    "No dedicated subreddit or author specified. Browser cookie extraction disabled.",
+    "No publish/store flags enabled. Empty save-dir disables rendered saves, not engine cache/last-run writes."
+  ],
+  "exit_code": 0,
+  "status": "completed",
+  "ended_at": "2026-11-02T03:40:56.713637+00:00",
+  "deviations": [
+    "Topic contained versus and triggered unintended automatic comparison splitting. Second branch is an entity mismatch and cannot represent H2 coverage.",
+    "Host resolution and supplemental WebSearch skipped to honor explicit one-query budget. Known broad subreddits inferred.",
+    "Diagnose availability did not ensure runtime success: X and grounding unconfigured; YouTube rate-limited.",
+    "Engine generated_at timestamps follow plan as_of by under one minute; only source publication dates within Oct 2-Nov 1 retained, unknown comment instants not asserted available at cutoff."
+  ]
+}

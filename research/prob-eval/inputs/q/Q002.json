@@ -1,0 +1,44 @@
+{
+ "qid": "Q002",
+ "question": "Will Russia and Ukraine hold any diplomatic meeting by August 31, 2026?",
+ "rules": "This market will resolve to \"Yes\" if there is a diplomatic meeting between representatives of Russia and Ukraine by the listed date, 11:59 PM ET. Otherwise, this market will resolve to “No”.\n\nA diplomatic meeting refers to a deliberate meeting between representatives of the listed countries who are acting in an official capacity and are authorized to engage in negotiation or diplomacy regarding Russia-Ukraine relations on behalf of their governments. Meetings conducted indirectly, for example, through designated mediators, facilitators, or interlocutors acting with the knowledge and authorization of the relevant governments, will qualify. \n\nBrief greetings, chance encounters, or talks otherwise not deliberately aimed at diplomacy or negotiation will not count.\n\nThe meeting must be in-person (including indirect in-person meetings) and must be publicly acknowledged by either government or reported by a consensus of credible media. Remote meetings, phone calls, or other meetings where the relevant parties are not present will not count.\n\nThe resolution sources for this market will be official information from the governments of Russia and Ukraine, and a consensus of credible reporting",
+ "as_of": "2026-08-05",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Siverskodonetsk City Military Administration — republication of the President of Ukraine's address",
+   "published_at": "2026-08-04",
+   "excerpt": "We are in contact with President Trump's representatives every day, this is important. We will be ready for all formats of meetings, we expect that now, in August, Vitkoff and Kushner will be active. Work is also ongoing with other partners, in particular in the Gulf countries, who can support our diplomatic efforts, our security needs."
+  },
+  {
+   "id": "E2",
+   "publisher": "Aju Press",
+   "published_at": "2026-08-04",
+   "excerpt": "On August 3, Mikhail Galuzin, Russia's Deputy Foreign Minister, said at the third Kazakhstan-Russia Media Forum in St. Petersburg, \"We are always ready for negotiations and open to solutions through dialogue.\" Galuzin emphasized that if the Western nations supporting Ukraine recognize the need for honest and constructive dialogue to address the root causes of the conflict, there could be a possibility for negotiations. He also denied speculation that Russia is indirectly negotiating with the West through Kazakhstan, asserting that they are in direct contact with forces that can influence the Kyiv regime and have not requested Kazakhstan to relay messages to the West."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-28",
+   "excerpt": "WASHINGTON, July 28 (Reuters) - U.S. President Donald Trump and Ukrainian leader Volodymyr Zelenskiy on Tuesday discussed efforts to revive peace talks with Russia and a deal to allow Ukraine to make Patriot missile interceptors, ahead of the funeral of a U.S. senator who was one of Kyiv's strongest backers. Zelenskiy held a private meeting with Trump in the Oval Office, in the absence of reporters, before the funeral of Senator Lindsey Graham in the afternoon."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters via ThePrint",
+   "published_at": "2026-07-27",
+   "excerpt": "MOSCOW, July 27 (Reuters) – The Kremlin said on Monday that it had not seen any specific information regarding new proposals for a peace settlement in Ukraine ahead of a meeting in Washington between U.S. President Donald Trump and Ukrainian President Volodymyr Zelenskiy. A Ukrainian source said last week that U.S. and Ukrainian officials had been discussing a proposal for an air ceasefire to take to Russian counterparts as part of a new round of peace talks."
+  },
+  {
+   "id": "E5",
+   "publisher": "Reuters via Investing.com",
+   "published_at": "2026-07-24",
+   "excerpt": "MOSCOW, July 24 (Reuters) - Russia believes U.S. President Donald Trump is sincere in his efforts to end the Ukraine war and will wait for Washington to put forward new proposals, even though the U.S. is continuing to provide weapons to Kyiv, the Kremlin said on Friday. The last three-way peace talks between Russia, Ukraine and the U.S. took place in February, shortly before the United States and Israel went to war with Iran. The Kremlin has repeatedly said it hopes U.S. mediation will resume once the Middle East crisis has eased. Russia has been saying for weeks that it is ready to host Trump’s envoys for talks in Moscow, but no date has been announced."
+  },
+  {
+   "id": "E6",
+   "publisher": "Keystone-SDA via SWI swissinfo.ch",
+   "published_at": "2026-02-18",
+   "excerpt": "Talks between the United States, Ukraine and Russia have resumed in Geneva, a source close to the discussions has said. The delegations met again on Wednesday morning at the Intercontinental Hotel. On Tuesday evening, six hours of political and military talks ended without any public statement from either side. A source close to the Russian delegation described the exchanges as “very tense”."
+  }
+ ]
+}

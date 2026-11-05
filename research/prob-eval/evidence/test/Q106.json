@@ -1,0 +1,55 @@
+{
+  "qid": "Q106",
+  "as_of": "2026-09-21",
+  "kept": [
+    {
+      "excerpt": "Pesquisa Futura Inteligência contratada pelo Política Livre aponta ACM Neto (União Brasil) com 51,3% das intenções de voto para o governo da Bahia, contra 43,6% de Jerônimo Rodrigues (PT). O levantamento ouviu mil eleitores baianos com 16 anos ou mais, por telefone, entre os dias 16 e 19 de setembro, em 218 municípios. A margem de erro é de 3,1 pontos percentuais, para mais ou para menos, e o nível de confiança é de 95%. A pesquisa está registrada na Justiça Eleitoral sob os números BR-04491/2026 e BA-06845/2026.",
+      "published_at": "2026-09-21",
+      "publisher": "Farol da Bahia",
+      "relevance": "This cutoff-day report provides a recent Futura poll showing a numerical lead for ACM Neto, with fieldwork dates, methodology and electoral registration identifiers.",
+      "url": "https://www.faroldabahia.com.br/noticia/pesquisa-futura-acm-neto-lidera-com-51-3-e-jeronimo-com-43-6"
+    },
+    {
+      "excerpt": "No cenário estimulado de primeiro turno, Jerônimo aparece com 45% das intenções de voto, ante 44% de ACM Neto. Jerônimo aparece com 46% e ACM Neto registra 45%, configurando novo empate técnico. A pesquisa Real Time Big Data entrevistou 1.600 eleitores da Bahia entre os dias 4 e 8 de setembro. A margem de erro é de dois pontos percentuais para mais ou para menos, com nível de confiança de 95%.",
+      "published_at": "2026-09-09",
+      "publisher": "CNN Brasil",
+      "relevance": "This independent poll shows a close contest in both rounds and a numerical advantage for Jerônimo, providing a counterweight to polls favoring ACM Neto.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/real-time-jeronimo-e-acm-neto-empatam-no-1o-e-2o-turnos-ao-governo-da-ba/"
+    },
+    {
+      "excerpt": "O ex-prefeito de Salvador ACM Neto (União Brasil) tem 49,2% das intenções de voto num eventual segundo contra o governador e candidato à reeleição, Jerônimo Rodrigues (PT), que soma 48,6%. No quadro de primeiro turno avaliado pelo levantamento, ACM Neto registra 49,1% das intenções de voto. Jerônimo Rodrigues, por sua vez, totaliza 47,9%. Foram ouvidos 1.804 eleitores baianos entre os dias 28 de agosto e 2 de setembro por meio de recrutamento digital aleatório (Atlas RDR).",
+      "published_at": "2026-09-03",
+      "publisher": "CNN Brasil",
+      "relevance": "The AtlasIntel/A Tarde poll shows very small differences in both rounds using a different sampling method; its reported margin of error is two percentage points at 95% confidence.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/atlas-acm-neto-tem-492-no-2o-turno-jeronimo-486-ao-governo-da-bahia/"
+    },
+    {
+      "excerpt": "Um novo levantamento do Instituto Paraná Pesquisas, em parceria com o Bahia Notícias, mostra que ACM Neto (União) possui vantagem de 8,4% sobre Jerônimo Rodrigues (PT) na corrida pelo governo da Bahia. O ex-prefeito da capital aparece com 48,5%, enquanto o atual governador e candidato à reeleição apresenta 40,1% das intenções de voto. Essa é a primeira rodada do Paraná Pesquisas após o início formal da campanha eleitoral de 2026. É também a primeira vez que um levantamento do instituto traz os nomes de todos os candidatos registrados no Tribunal Regional Eleitoral (TRE-BA).",
+      "published_at": "2026-08-27",
+      "publisher": "Bahia Notícias",
+      "relevance": "The poll commissioner's report supplies another polling-house perspective and confirms that this round incorporated the registered candidate field.",
+      "url": "https://www.bahianoticias.com.br/amp/noticia/320444-parana-pesquisas-bn-acm-neto-lidera-com-84-de-vantagem-sobre-jeronimo-apos-inicio-da-campanha-ao-governo"
+    },
+    {
+      "excerpt": "O procurador-geral da República (PGR), Paulo Gonet, manifestou-se favoravelmente a medidas de investigação contra o candidato ao governo da Bahia pelo União Brasil, ACM Neto. Apesar da representação, o político não foi alvo de buscas e apreensões da Polícia Federal (PF).",
+      "published_at": "2026-09-17",
+      "publisher": "Metrópoles",
+      "relevance": "This report documents a potentially salient campaign controversy shortly before the cutoff while distinguishing the investigative request from the absence of searches against Neto.",
+      "url": "https://www.metropoles.com/brasil/pgr-favoravel-buscas-acm-neto-investigacao-overclean"
+    },
+    {
+      "excerpt": "O primeiro turno está marcado para 4 de outubro. Nessa data, os eleitores escolherão presidente da República, governadores, senadores, deputados federais, estaduais e distritais. A propaganda eleitoral gratuita no rádio e na televisão será exibida entre 28 de agosto e 1º de outubro.",
+      "published_at": "2026-08-02",
+      "publisher": "Deutsche Welle",
+      "relevance": "This dated election-calendar explainer establishes the first-round date and the campaign broadcasting window still underway at the experiment cutoff.",
+      "url": "https://amp.dw.com/pt-br/elei%C3%A7%C3%B5es-2026-confira-as-principais-datas-da-campanha/a-78209677"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.tre-ba.jus.br/comunicacao/noticias/2022/Outubro/2o-turno-tre-ba-conclui-apuracao-no-estado",
+      "reason": "Reports election results and declares a winner, including final vote totals and shares. Removed under the explicit results exclusion, even though it concerns the 2022 election and predates the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-09-21, inclusive. Included seven distinct dated reports covering four polling houses, campaign context, election timing and the official 2022 head-to-head baseline. Excerpts retain the sources' original Portuguese wording; relevance statements are in English. Publication dates and article text were verified through expanded web_search results. Direct web_fetch failed because multiple fetch providers were registered; the requested agent-reach fallback returned RATE_LIMITED and was not retried. The DW article states publication on 2026-08-02 and an update on 2026-08-15; the TRE-BA historical article states publication on 2022-10-30 and an update on 2025-03-06, both before the cutoff. The TSE calendar article was excluded because its retrieved version carried a post-cutoff update. Search results published after the cutoff, undated aggregators, prediction-market pages, odds and election-outcome reporting were excluded from the evidence pack. No forecast probability is supplied."
+}

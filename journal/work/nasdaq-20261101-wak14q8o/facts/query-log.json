@@ -1,0 +1,60 @@
+{
+  "queries": [
+    {
+      "query": "Alphabet Amazon Intel October 2026 earnings October 29 30 2026 capex Reuters results",
+      "tool": "WebSearch",
+      "request_window_utc": [
+        "2026-11-02T02:52:42Z",
+        "2026-11-02T02:55:26Z"
+      ],
+      "timing_note": "Tool did not expose per-request timestamps; window is bracket, not invented exact timestamp"
+    },
+    {
+      "query": "site.abc.xyz \"2026\" \"third quarter\" \"October 28\" results",
+      "tool": "WebSearch",
+      "request_window_utc": [
+        "2026-11-02T02:52:42Z",
+        "2026-11-02T02:55:26Z"
+      ],
+      "timing_note": "Tool did not expose per-request timestamps; window is bracket, not invented exact timestamp"
+    },
+    {
+      "query": "site.intc.com \"2026\" \"third-quarter\" \"October 29\"",
+      "tool": "WebSearch",
+      "request_window_utc": [
+        "2026-11-02T02:52:42Z",
+        "2026-11-02T02:55:26Z"
+      ],
+      "timing_note": "Tool did not expose per-request timestamps; window is bracket, not invented exact timestamp"
+    },
+    {
+      "query": "Alphabet Announces Third Quarter 2026 Financial Results 127.6 195 205 investor",
+      "tool": "WebSearch",
+      "request_window_utc": [
+        "2026-11-02T02:52:42Z",
+        "2026-11-02T02:55:26Z"
+      ],
+      "timing_note": "Tool did not expose per-request timestamps; window is bracket, not invented exact timestamp"
+    },
+    {
+      "query": "Amazon October 29 2026 results 2026 Q3 free cash flow revenue 2027 Intel Reuters LSEG",
+      "tool": "WebSearch",
+      "request_window_utc": [
+        "2026-11-02T02:52:42Z",
+        "2026-11-02T02:55:26Z"
+      ],
+      "timing_note": "Tool did not expose per-request timestamps; window is bracket, not invented exact timestamp"
+    }
+  ],
+  "counts": {
+    "search_calls": 5,
+    "unique_content_pages": 6,
+    "notes": "Includes Amazon unreadable PDF and five HTML pages; initial Amazon PDF host redirected to CDN"
+  },
+  "raw_http_log": "request-log.json",
+  "tool_read_window_utc": [
+    "2026-11-02T02:52:42Z",
+    "2026-11-02T02:55:26Z"
+  ],
+  "warning": "Direct urllib 403 does not invalidate separately successful WebFetch; raw copies unavailable for those pages."
+}

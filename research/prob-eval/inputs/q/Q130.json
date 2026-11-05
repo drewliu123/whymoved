@@ -1,0 +1,50 @@
+{
+ "qid": "Q130",
+ "question": "Will Flávio Bolsonaro win the first round of the 2026 Brazilian presidential election by 5–10%?",
+ "rules": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the margin of victory between the top two candidates in the first round of the next Brazil Presidential Election.\n\nFor the purpose of this market, the “margin of victory” is defined as the absolute difference between the percentages of valid votes received by the first- and second-place candidates. Percentages of the valid votes received by each candidate will be determined by dividing the total number of valid votes each of the top two candidates receives by the sum of all valid votes cast in the election.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nThis market will resolve based on the official vote count once the vote count has been made official.\n\nIf a recount is initiated before the vote total has been made official, the market will remain open until the recount is completed and the vote is made official.\n\nIf the result of this election isn't known definitively by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the electi",
+ "as_of": "2026-09-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Nexus",
+   "published_at": "2026-09-21",
+   "excerpt": "No principal cenário estimulado, Lula registra 40% das intenções de voto, enquanto Flávio Bolsonaro aparece com 37%. Em relação à rodada anterior, Lula recuou de 42% para 40%, enquanto Flávio Bolsonaro manteve os 37%. Foram ouvidos 2.006 eleitores, por telefone, via CATI, entre os dias 18 e 20 de setembro de 2026. A margem de erro é de 2 pontos percentuais, para mais ou para menos, com 95% de nível de confiança."
+  },
+  {
+   "id": "E2",
+   "publisher": "CNN Brasil",
+   "published_at": "2026-09-21T18:06:00-03:00",
+   "excerpt": "O presidente e candidato à reeleição, Luiz Inácio Lula da Silva (PT), tem 37% das intenções de voto no primeiro turno da disputa pelo Palácio do Planalto, segundo pesquisa Quaest divulgada nesta segunda-feira (21). Por sua vez, o senador Flávio Bolsonaro (PL-RJ) registra 33%. Foram entrevistados 2.004 eleitores pela Quaest, entre os dias 17 e 20 de setembro. A margem de erro é de dois pontos percentuais, para mais ou para menos."
+  },
+  {
+   "id": "E3",
+   "publisher": "Folha de S.Paulo / Datafolha",
+   "published_at": "2026-09-17T19:05:00-03:00",
+   "excerpt": "O novo levantamento do Datafolha sobre a corrida presidencial, feito em meio à crise no STF (Supremo Tribunal Federal), traz Lula (PT) e Flávio Bolsonaro (PL) empatados tecnicamente no primeiro turno, com o petista marcando 39%, ante 36% do rival. A margem de erro é de dois pontos percentuais para mais ou menos. Na primeira rodada, atrás dos líderes vêm Augusto Cury (Avante), com 6%, Ronaldo Caiado (PSD), com 4%, Renan Santos (Missão), com 3%, e Romeu Zema (Novo), com 2%. O Datafolha ouviu 2.002 pessoas, em 125 municípios, de terça (15) a quinta (17)."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters, syndicated by Internazionale",
+   "published_at": "2026-09-10",
+   "excerpt": "In a first-round scenario, Lula is seen leading with 43.0% of the vote, followed by Bolsonaro (37.4%), Augusto Cury (6.6%) and Renan Santos (6.5%). The previous poll showed Lula at 43.4% and Bolsonaro at 33.7% in the first round. AtlasIntel surveyed 5,000 people between September 4 and 9. The poll has a margin of error of 1 percentage point."
+  },
+  {
+   "id": "E5",
+   "publisher": "Tribunal Superior Eleitoral",
+   "published_at": "2026-03-03T09:36:00-03:00",
+   "excerpt": "Por unanimidade, o Plenário do Tribunal Superior Eleitoral (TSE) aprovou, em sessão administrativa extraordinária realizada nesta segunda-feira (2), mais sete resoluções que vão orientar as Eleições Gerais de 2026. Nas Eleições Gerais deste ano, cujo 1º turno está marcado para o dia 4 de outubro, o eleitorado definirá os ocupantes dos cargos de presidente da República, governador de estado, senador, deputado federal e deputado estadual ou distrital."
+  },
+  {
+   "id": "E6",
+   "publisher": "Tribunal Superior Eleitoral",
+   "published_at": "2022-10-03T09:35:00-03:00",
+   "excerpt": "No primeiro turno das eleições ocorrido neste domingo (2), Lula obteve 57.257.473 (48,43% dos votos válidos) e Bolsonaro alcançou 51.071.106 (43,20%) dos votos, respectivamente."
+  },
+  {
+   "id": "E7",
+   "publisher": "Reuters, syndicated by InfoMoney",
+   "published_at": "2022-10-03T15:49:00-03:00",
+   "excerpt": "BRASÍLIA (Reuters) – Aliados do presidente e candidato à reeleição Jair Bolsonaro (PL) decidiram fazer uma ofensiva contra os institutos de pesquisa no Congresso Nacional e no Tribunal Superior Eleitoral (TSE) após grandes divergências entre o resultado do primeiro turno e as sondagens eleitorais. Com 99,99% dos votos apurados, a diferença entre Bolsonaro e Lula ficou em 5,23 pontos percentuais (48,43% a 43,20% dos votos válidos), bem diferente de pesquisas que apontaram até 16 pontos de distância entre ambos."
+  }
+ ]
+}

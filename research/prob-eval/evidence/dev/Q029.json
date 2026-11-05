@@ -1,0 +1,55 @@
+{
+  "qid": "Q029",
+  "as_of": "2026-09-11",
+  "kept": [
+    {
+      "excerpt": "VTsIOM forecasts turnout in the forthcoming State Duma election at 51–53%. In polling conducted August 31–September 6, 2026, 54% said they would participate and another 16% said they probably would. The turnout model incorporates awareness, interest in the election, voting motivation and other circumstances, with coefficients calibrated using expert surveys.",
+      "published_at": "2026-09-10",
+      "publisher": "Russian Public Opinion Research Center (VTsIOM)",
+      "relevance": "This primary pollster release provides a turnout forecast immediately before the cutoff, placing its forecast above the 47–50% bracket.",
+      "url": "https://wciom.ru/analytical-reviews/analiticheskii-obzor/vybory-v-gosudarstvennuju-dumu-2026-prognoz-ac-vciom"
+    },
+    {
+      "excerpt": "According to the survey, 70% of citizens plan to participate in the forthcoming State Duma election: 44% are certain, 13% say they are more likely to participate than not, and another 13% say they will probably participate. Fieldwork took place September 4–6, 2026, among 1,500 respondents in 97 urban and rural settlements across 51 Russian federal subjects. The stated statistical error does not exceed 3.6%.",
+      "published_at": "2026-09-10",
+      "publisher": "Public Opinion Foundation (FOM)",
+      "relevance": "This independent primary pollster release supplies recent participation intentions and survey methodology, although stated intentions should not be treated as realized turnout.",
+      "url": "https://fom.ru/posts/15378"
+    },
+    {
+      "excerpt": "Russia’s Presidential Administration plans to intensify “corporate mobilization” for the State Duma election, pressuring employees of state-funded institutions, state corporations and major companies with owners loyal to the authorities to vote. Mid-level managers designated as “mobilizers” or “brigade leaders” will oversee groups of several dozen employees and track whether they vote. The tactic previously operated in a more limited set of regions and companies.",
+      "published_at": "2026-08-25",
+      "publisher": "Meduza",
+      "relevance": "The reported expansion of workplace mobilization identifies a concrete mechanism that could increase turnout beyond voluntary participation intentions.",
+      "url": "https://meduza.io/en/feature/2026/08/25/the-kremlin-is-sending-mobilizers-to-psychology-classes-to-help-boost-turnout-in-russia-s-elections"
+    },
+    {
+      "excerpt": "The Presidential Administration has raised the election-performance targets assigned to regional officials for United Russia. In regions with average support for the authorities, the party’s vote-share target increased from 45% to 47%. At large workplaces, designated “mobilization foremen” are responsible for tracking turnout among groups ranging from ten to several dozen colleagues.",
+      "published_at": "2026-09-08",
+      "publisher": "Meduza",
+      "relevance": "This recent campaign report documents continued administrative mobilization while distinguishing party vote-share targets from turnout figures.",
+      "url": "https://meduza.io/en/feature/2026/09/08/united-russia-s-ratings-are-falling-so-why-is-the-kremlin-demanding-better-election-results-putin-joined-the-campaign"
+    },
+    {
+      "excerpt": "Final turnout in the September 17–19, 2021, State Duma election was 51.72%, Central Election Commission chair Ella Pamfilova announced. She said 56,484,685 voters participated out of 109,204,662 people included on voter lists.",
+      "published_at": "2021-09-24",
+      "publisher": "Interfax, reporting the Central Election Commission",
+      "relevance": "The most recent completed parliamentary election provides an official turnout baseline just above the target bracket and explicitly identifies the voter-list denominator.",
+      "url": "https://www.interfax.ru/amp/793344"
+    },
+    {
+      "excerpt": "Turnout in the 2016 State Duma election was 47.88%, Central Election Commission deputy chair Nikolai Bulaev said at the meeting finalizing the election results. Of 110,061,200 people on voter lists, 52,700,992 participated.",
+      "published_at": "2016-09-23",
+      "publisher": "RBC, citing TASS and the Central Election Commission",
+      "relevance": "This earlier official parliamentary turnout falls inside the 47–50% bracket and provides a directly relevant historical comparison.",
+      "url": "https://www.rbc.ru/rbcfreenews/57e45a489a7947b4b16ffe08"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://news.az/news/putin-sets-september-20-for-russian-parliamentary-elections",
+      "reason": "The excerpt explicitly mentions September 20, 2026, and elections expected on that date, after the 2026-09-11 cutoff. Removed under the strict post-cutoff mention rule, even though the scheduling announcement was published before the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-09-11, inclusive. Seven items retained, each with an explicit publication date verified in search-returned source text; Russian-language excerpts are translated into English and other excerpts are concise factual paraphrases. Searches covered primary pollster releases, election scheduling, administrative mobilization and historical official turnout. Post-cutoff sources, outcome reporting, undated pages and prediction-market/betting material were excluded. web_fetch failed because multiple providers were registered; the requested agent-reach web read fallback also failed with a temporary upstream error, so verification relies on dated source text exposed by web_search rather than successful full-page retrieval. No directly retrieved CEC or presidential webpage is included; official historical figures are attributed through contemporary reporting. Polling intentions, modeled forecasts, administrative targets and official historical turnout are distinct measures. This pack contains no forecast probability or election outcome."
+}

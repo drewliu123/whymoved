@@ -1,0 +1,79 @@
+[
+  {
+    "file": "LICENSE",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/LICENSE",
+    "bytes": 11357,
+    "status": "ok",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "file": "README.md",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/README.md",
+    "bytes": 27608,
+    "status": "ok",
+    "sha256": "dbbaf3de3698f39664b2ea40d1e3b3dd92deaf8e1a4f3129d01bd6ff4211229f"
+  },
+  {
+    "file": "CHANGELOG.md",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/CHANGELOG.md",
+    "bytes": 53618,
+    "status": "ok",
+    "sha256": "a80031326b81d9fd49e4b494dbad27a77f8693add1e3f99177359e0ebd687dfa"
+  },
+  {
+    "file": "pyproject.toml",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/pyproject.toml",
+    "bytes": 2477,
+    "status": "ok",
+    "sha256": "670cd3552c10b5dbb2ea4c420336c7b58af455c27b1a65599727ecbefb4f375c"
+  },
+  {
+    "file": "tradingagents/agents/managers/portfolio_manager.py",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/tradingagents/agents/managers/portfolio_manager.py",
+    "bytes": 4593,
+    "status": "ok",
+    "sha256": "a6c62bf32a99003109179d645b2d98eee66090b5a6453ceb53a475f5bf900bba"
+  },
+  {
+    "file": "tradingagents/agents/post_screen.py",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/tradingagents/agents/post_screen.py",
+    "bytes": 7341,
+    "status": "ok",
+    "sha256": "1aa4ada438d9ffeb817b4fb0067bbd46d730e736b00e8640446da483f8be73a9"
+  },
+  {
+    "file": "tradingagents/agents/rating.py",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/tradingagents/agents/rating.py",
+    "bytes": 5619,
+    "status": "ok",
+    "sha256": "90ab5951c3438ba8d9f7536a80c6b5824a6b56ae5cda83f31ada1be311866a52"
+  },
+  {
+    "file": "tradingagents/backtest.py",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/tradingagents/backtest.py",
+    "bytes": 10152,
+    "status": "ok",
+    "sha256": "7123b4931d7cbfc1af882e61545138293075d91569ccc035f05702be30a86763"
+  },
+  {
+    "file": "tradingagents/dataflows/vendors/fred.py",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/tradingagents/dataflows/vendors/fred.py",
+    "bytes": 11106,
+    "status": "ok",
+    "sha256": "905ea6412067145a10c71f0e07b83624769d6e3379dd10391a47b045857ef6d7"
+  },
+  {
+    "file": "tradingagents/memory/log.py",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/tradingagents/memory/log.py",
+    "bytes": 15267,
+    "status": "ok",
+    "sha256": "6361d5d884dc6cf59481cef66ab668669f00fc220a9f2985c4853e6b4c22f40f"
+  },
+  {
+    "file": "tradingagents/agents/schemas.py",
+    "url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/c4544913a14ed3df5f1ed7b9e8483270ce20682a/tradingagents/agents/schemas.py",
+    "bytes": 15228,
+    "status": "ok",
+    "sha256": "782b842c2ef030f690219385364ea2a3a58d98ff6478c62050f5d86a25127534"
+  }
+]

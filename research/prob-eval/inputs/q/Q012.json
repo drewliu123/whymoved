@@ -1,0 +1,32 @@
+{
+ "qid": "Q012",
+ "question": "Will the Fed decide differently in the next three decisions (Apr–Jun–Jul)?",
+ "rules": "The FED interest rates are defined in this market by the upper bound of the target federal funds rate. The decisions on the target federal funds rate are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve according to the decisions made by the next three Federal Open Market Committee (FOMC) meetings: April 28-29; June 16-17; and July 28-29.\n\nA qualifying cut occurs when the new upper bound of the target federal funds rate is lower compared to the level it was prior to the respective meeting.\n\nA qualifying hike occurs when the new upper bound of the target federal funds rate is higher compared to the level it was prior to the respective meeting.\n\nA qualifying pause occurs when the new upper bound of the target federal funds rate is equal to the level it was prior to the respective meeting.\n\nIf the Fed publishes a different combination than any listed, this market will resolve to \"Other\". Any rate hike will be encompassed by \"Other\".\n\nEmergency rate cuts outside the regularly scheduled meetings will not be considered.\n\nThe resolution source for this market is the FOMC’s statement after its meetings:\nhttps://www.federalreserve.gov/monetarypolicy/fomcc",
+ "as_of": "2026-07-15",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-07-02",
+   "excerpt": "Both total nonfarm payroll employment (+57,000) and the unemployment rate (4.2 percent) changed little in June, the U.S. Bureau of Labor Statistics reported today. Employment continued to trend up in professional and business services, social assistance, and health care. Leisure and hospitality lost jobs."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters, via Investing.com",
+   "published_at": "2026-07-14",
+   "excerpt": "July 14 (Reuters) - Top Federal Reserve officials on Tuesday welcomed fresh data showing consumer price inflation cooled last month, but said they would need more such readings to feel confident that price pressures are truly easing. The remarks, from Fed Chairman Kevin Warsh and Chicago Fed President Austan Goolsbee, suggest the case for a near-term interest rate hike may have weakened but is by no means dead. Neither policymaker, however, directly addressed the implications of the benign Consumer Price Index report for a possible rate hike."
+  },
+  {
+   "id": "E3",
+   "publisher": "Associated Press",
+   "published_at": "2026-07-14",
+   "excerpt": "Compared with a year ago, inflation dropped to 3.5% from 4.2% in May. Core inflation rose just 2.6% in June from a year earlier, down from 2.9% in May, a positive sign that higher gas costs haven't yet lifted broader prices. Warsh, asked about the price figures, said they represented just one month of data and suggested he does not see inflation as defeated."
+  },
+  {
+   "id": "E4",
+   "publisher": "Axios",
+   "published_at": "2026-07-15",
+   "excerpt": "The Labor Department on Wednesday morning released a favorable Producer Price Index reading, showing the overall index fell 0.3% in June, while a core index excluding food, energy and trade services was up a modest 0.1%. While Warsh welcomed the favorable June inflation data, he tamped down any suggestion it offers an all-clear on the price stability front."
+  }
+ ]
+}

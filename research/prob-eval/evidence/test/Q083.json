@@ -1,0 +1,57 @@
+{
+  "qid": "Q083",
+  "as_of": "2026-07-06",
+  "kept": [
+    {
+      "excerpt": "Mbappé recorded his seventh goal of the tournament, putting him ahead of Argentina's Lionel Messi in the Golden Boot race thanks to his two assists.",
+      "published_at": "2026-07-06",
+      "publisher": "Yahoo Sports — Ian Casselberry",
+      "relevance": "Provides a cutoff-date report of Mbappé's seven goals and two assists, equivalent to nine goal contributions under the market definition.",
+      "url": "https://sports.yahoo.com/soccer/article/world-cup-2026-frances-kylian-mbappe-responds-to-racist-attack-by-paraguyan-senator-condemning-her-as-despicable-and-unworthy-190537175.html"
+    },
+    {
+      "excerpt": "Kylian Mbappe scored his seventh goal of the FIFA World Cup 2026 as France overcame Paraguay to set up a quarter-final meeting with Morocco. Mbappe struck a second-half penalty to settle an attritional contest at Philadelphia Stadium, moving level with Lionel Messi on goals but leading on assists in the race for the 2026 adidas Golden Boot.",
+      "published_at": "2026-07-04",
+      "publisher": "FIFA",
+      "relevance": "Officially corroborates Mbappé's scoring total and France's progression, establishing that he retained opportunities to add contributions after the cutoff.",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/paraguay-france-match-report-highlights?searchOverlay=1"
+    },
+    {
+      "excerpt": "Argentina avoided a huge World Cup upset as they eventually overcame a stubborn Cabo Verde side to reach the last 16. Messi scored his seventh goal of the tournament. With Egypt in their sights, Nicolas Tagliafico said that Argentina had progressed without producing the performance they wanted.",
+      "published_at": "2026-07-03",
+      "publisher": "FIFA",
+      "relevance": "Establishes Messi as a seven-goal competitor whose team remained in the tournament, while documenting Argentina's difficult passage through the round of 32.",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/argentina-dig-deep-cabo-verde?searchOverlay=1"
+    },
+    {
+      "excerpt": "Erling Haaland struck two late goals as Norway stunned record five-times champions Brazil 2-1 in the World Cup last 16 on Sunday to send the Scandinavian team into the quarter-finals for the first time. Haaland pulled level with Kylian Mbappe and Lionel Messi in the Golden Boot race with his seventh goal of the tournament.",
+      "published_at": "2026-07-05",
+      "publisher": "Reuters, syndicated by KTWB",
+      "relevance": "Identifies another active seven-goal rival and confirms Norway's advancement, both relevant to the remaining competition for total goal contributions.",
+      "url": "https://ktwb.com/2026/07/05/soccer-haaland-double-as-norway-stun-brazil-to-reach-world-cup-quarter-finals/"
+    },
+    {
+      "excerpt": "Michael Olise finished the match against Sweden with two assists and struck the post with an effort that would have been his first goal of the World Cup. He had played 308 minutes in the tournament and was its leading assist provider with five. Alongside Mbappé and Ousmane Dembélé, he was among the players to have started every match for France.",
+      "published_at": "2026-07-04",
+      "publisher": "AS USA — Eduardo Burgos Rodríguez and Joe Brennan",
+      "relevance": "Documents an assist-focused rival within France and the creative support available to Mbappé, while illustrating why goals alone do not establish the market leader.",
+      "url": "https://en.as.com/soccer/world-cup/olise-is-the-chosen-one-f202607-n/"
+    },
+    {
+      "excerpt": "Mbappé finished the 2022 tournament with eight goals and two assists. Messi finished with seven goals and three assists.",
+      "published_at": "2022-12-18",
+      "publisher": "Yahoo Sports / Evening Standard — Matt Verri",
+      "relevance": "Provides a historical example in which both players reached ten combined contributions, making the market's stated tie-breaking rules material.",
+      "url": "https://uk.sports.yahoo.com/news/argentina-vs-france-live-world-110213334.html"
+    },
+    {
+      "excerpt": "With eight goals in seven appearances, Mbappe produced the highest-scoring World Cup by any individual player since Ronaldo's identical haul in 2002. He became the first player to score a World Cup final hat-trick since Geoff Hurst in 1966. France finished as runners-up and Mbappe won the adidas Golden Boot.",
+      "published_at": "2022-12-18",
+      "publisher": "FIFA",
+      "relevance": "Supplies official historical evidence of Mbappé's tournament scoring ceiling and France's ability to provide him a full run of matches.",
+      "url": "https://www.fifa.com/en/member-associations/france/articles/world-cup-qatar-2022-tournament-review-argentina-messi-mbappe-morocco-croatia-japan)"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-06, inclusive. Selected dated official FIFA articles and reputable reporting; publication dates and excerpts were visible in web_search results. web_fetch failed because multiple fetch providers were registered; the agent-reach web-read fallback returned RATE_LIMITED, so full-page retrieval could not be completed. Excerpts are factual condensations of the retrieved source text. Excluded undated live statistics, rolling pages containing later developments, and articles displaying an early publication date but text incorporating matches after the cutoff. No betting or prediction-market sources, odds, prices, or post-cutoff developments are included. The retained evidence does not establish a complete frozen goals-plus-assists leaderboard for every player, and Golden Boot standings are not treated as identical to this market's combined-contributions ranking."
+}

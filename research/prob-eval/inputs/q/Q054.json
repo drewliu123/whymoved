@@ -1,0 +1,14 @@
+{
+ "qid": "Q054",
+ "question": "Will Messi and Ronaldo Shake Hands During World Cup?",
+ "rules": "This market will resolve “Yes” if Lionel Messi and Cristiano Ronaldo are observed physically shaking hands with one another at any point during the 2026 FIFA World Cup window. Otherwise, this market will resolve to “No”.\n\nThe 'handshake' must occur while the listed players are on the pitch or the bench area; handshakes in the locker room or other areas will not count. This can occur before, during, or after the match. Otherwise, this market will resolve to \"No.\"\n\nIf the 2026 FIFA World Cup is cancelled, postponed after August 2, 2026, 11:59 PM ET, or no qualifying handshake can be confirmed within that timeframe, this market will resolve to “No”.\n\nThe primary resolution source for this market will be official match footage and broadcast video; however, a consensus of credible reporting may also be used.",
+ "as_of": "2026-07-06",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Diario La Prensa",
+   "published_at": "2014-11-18",
+   "excerpt": "Cristiano y Messi se saludaron también en el campo, pero un poco más serios. Los dos cracks se dieron una vez más las manos en el saludo con los árbitros, ambos son los capitanes de sus selecciones."
+  }
+ ]
+}

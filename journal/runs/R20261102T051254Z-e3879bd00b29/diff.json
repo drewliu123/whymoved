@@ -1,0 +1,66 @@
+{
+  "analysis_changed": true,
+  "claims": {
+    "added": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "comparability_issues": [
+    {
+      "after": "旧快照2026-11-02T03:44Z，月底合约复核05:06:48Z；报道截至11月1日",
+      "before": "2026年11月1日当前截面，截止11月3日至12月31日的未来期限",
+      "path": "plan.comparison.period"
+    },
+    {
+      "after": "美国发起并落地伊朗陆地或内水的合格空袭/导弹打击；并非全面和平",
+      "before": "Polymarket美国对伊朗合格空袭或地对地导弹打击；并非所有双边敌对行动",
+      "path": "plan.comparison.scope"
+    },
+    {
+      "after": "同规则YES价格、分段条件风险；研究判断不登记数值概率",
+      "before": "YES买卖报价、买卖中点与合约规则",
+      "path": "plan.comparison.unit"
+    }
+  ],
+  "evidence": {
+    "added": [
+      "S38",
+      "S39",
+      "S40",
+      "S41"
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "judgment": {
+    "comparability": {
+      "reason": "同一合约范围及03:44旧曲线可比，新增05:06单期复核；研究新增计算和判断，不把异步截面拼成同步新曲线。",
+      "status": "mixed"
+    },
+    "judgment_changed": true,
+    "reason": "由价格摘录推进到前端风险形状计算和短期拖延的暂定方向；没有登记独立公允概率。"
+  },
+  "method": "structural_ids_and_fields",
+  "parent_run": "R20261102T035050Z-ffc04249819e",
+  "schema_version": 2,
+  "sources": {
+    "added": [
+      "S38",
+      "S39",
+      "S40",
+      "S41"
+    ],
+    "changed": [],
+    "removed": []
+  }
+}

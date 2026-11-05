@@ -1,0 +1,43 @@
+{
+  "qid": "Q159",
+  "as_of": "2026-09-14",
+  "kept": [
+    {
+      "excerpt": "His 36 doubles are tied for the most in baseball with San Francisco Giants first baseman Rafael Devers. Reynolds is hitting .385/.452/.654 for a 1.106 OPS through seven games in September. During his latest 18-game on-base streak, he had 22 hits in 70 at-bats, including six doubles.",
+      "published_at": "2026-09-09",
+      "publisher": "Sports Illustrated / Pittsburgh Pirates On SI — Dominic Campbell",
+      "relevance": "Establishes Reynolds' contemporaneous doubles total, a leading rival, and recent hitting form near the experiment cutoff.",
+      "url": "https://www.si.com/mlb/pirates/onsi/bryan-reynolds-getting-hot-crucial-time-pittsburgh-pirates"
+    },
+    {
+      "excerpt": "Bryan Reynolds had two of Pittsburgh’s five doubles off starter Sean Burke. Reynolds drove in two runs and scored twice as the Pirates jumped out to a 7-0 lead after two innings and rolled to their seventh victory in nine games behind an 18-hit outburst.",
+      "published_at": "2026-09-08T22:43:00-04:00",
+      "publisher": "Associated Press via ABC News — Matt Carlson",
+      "relevance": "Independently corroborates Reynolds' recent two-double performance and active participation in the stretch run.",
+      "url": "https://abcnews.com/amp/Sports/wireStory/pirates-back-bubba-chandler-18-hits-9-3-136291810"
+    },
+    {
+      "excerpt": "Devers was placed on the 60-day injured list on Sunday with a core muscle injury that he’d been playing through for much of the season.",
+      "published_at": "2026-09-13",
+      "publisher": "MLB.com",
+      "relevance": "Documents a season-ending injury to the player identified in the September 9 report as tied with Reynolds for the doubles lead.",
+      "url": "https://www.mlb.com/news/rafael-devers-placed-on-60-day-injured-list-ending-2026-season"
+    },
+    {
+      "excerpt": "The September 14 issue lists Pittsburgh at 75-75 after a 4-3 win over Chicago. Reynolds went 2-for-4 with a walk, an RBI and a run, with a .266 batting average and .799 OPS. Alec Burleson hit his 36th double and had a .283 batting average.",
+      "published_at": "2026-09-14",
+      "publisher": "boxscore.email — MLB daily issue",
+      "relevance": "Provides cutoff-adjacent batting-average information relevant to the market's tie-breaker and identifies Burleson as another challenger with 36 doubles.",
+      "url": "https://boxscore.email/mlb/2026-09-14"
+    },
+    {
+      "excerpt": "The final day of the 2026 regular season will be Sunday, September 27th, featuring nine divisional matchups.",
+      "published_at": "2025-08-26",
+      "publisher": "Major League Baseball — official press release",
+      "relevance": "Establishes the scheduled regular-season endpoint and the limited time remaining after September 14 for the doubles race to change.",
+      "url": "https://www.mlb.com/press-release/press-release-mlb-announces-2026-regular-season-schedule"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-14. Included only dated reporting or a dated daily issue published on or before the cutoff; excerpts from tabular material are factual transcriptions. Publication dates were verified in web_search source text, including the explicit September 9 publication line for the On SI article, the AP timestamp, the MLB injury article date, and the official schedule-release date. The September 14 daily issue reports the preceding day's games. web_fetch failed because multiple web providers were registered; the requested agent-reach web-read fallback returned RATE_LIMITED, so no further attempts were made through that channel. Excluded prediction-market and betting pages, later reporting, and undated live player/statistics pages. A fully dated official MLB-wide doubles leaderboard at the cutoff was not verified; this pack therefore does not claim an exhaustive cutoff leaderboard or supply a forecast or resolution."
+}

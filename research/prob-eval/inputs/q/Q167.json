@@ -1,0 +1,38 @@
+{
+ "qid": "Q167",
+ "question": "Will any presidential candidate win outright in the first round of the Brazil election?",
+ "rules": "Presidential elections are scheduled to be held in Brazil on October 4, 2026. A second round will be held if no candidate secures more than 50% of the valid votes in the first round.\n\nThis market will resolve to \"Yes\" if any candidate wins this election in the first round. Otherwise, this market will resolve to \"No\".\n\nIf the result of the first round of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"No\".\n\nThis market will resolve based on the result of the election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., https://dadosabertos.tse.jus.br/).",
+ "as_of": "2026-09-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters (via GV Wire)",
+   "published_at": "2026-09-21",
+   "excerpt": "In a first-round scenario, Quaest had Lula leading with 37% of the votes, followed by Bolsonaro (33%), Cury (6%) and Caiado (4%). Quaest surveyed 2,004 people from September 17 to 20; the margin of error is 2 percentage points. In a first-round scenario, Lula would lead with 40% of the votes, followed by Bolsonaro (37%), Augusto Cury (6%) and Ronaldo Caiado (5%). Nexus surveyed 2,006 people from September 18 to 20."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters (via MarketScreener)",
+   "published_at": "2026-09-17",
+   "excerpt": "In a first-round scenario, Lula would receive 44.1% of voter support, followed by Bolsonaro with 41.7%, Renan Santos with 5.1%, and Augusto Cury with 3.5%. AtlasIntel surveyed 5,018 people between September 11 and 16. The poll has a margin of error of 1 percentage point."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters (via MarketScreener)",
+   "published_at": "2026-09-17",
+   "excerpt": "In a first-round scenario, Lula had 39%, compared with 36% for Flavio Bolsonaro."
+  },
+  {
+   "id": "E4",
+   "publisher": "Tribunal Regional Eleitoral de São Paulo (TRE-SP)",
+   "published_at": "2026-05-12",
+   "excerpt": "As Eleições 2026 acontecerão no dia 4 de outubro, primeiro domingo do mês. Já se houver segundo turno, ele ocorrerá no último domingo do mesmo mês, 25 de outubro. Nesses casos, no primeiro turno, vence o candidato que receber a maioria absoluta dos votos válidos, sem contar votos brancos e nulos. Caso isso não aconteça, a Justiça Eleitoral organiza um segundo turno, contando apenas com os dois candidatos mais votados."
+  },
+  {
+   "id": "E5",
+   "publisher": "UOL",
+   "published_at": "2022-10-28",
+   "excerpt": "As únicas vezes em que a eleição foi decidida no primeiro turno foram em 1994 e 1998, quando Fernando Henrique Cardoso (PSDB) saiu como vencedor."
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+  "command": [
+    "python3",
+    "tests/intent/score.py",
+    "evidence/intent-fix-20261102/behavior-actual.json"
+  ],
+  "exit_code": 0,
+  "stage": "Before prompt-review clarifications"
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "tests/intent/score.py",
+    "evidence/intent-fix-20261102/behavior-final.json"
+  ],
+  "exit_code": 0,
+  "inputs_sha256": "19dd36a80aab66753e840bc1a8b41b5eab582681107a107a2cddba083fb448a0",
+  "output_sha256": "358972db618738f4b81902dd4959da9a51e6a7a85838b5f46701f8cc7eb5d6cd",
+  "expected_sha256": "eb567d3baf66cd2283026c60d6e54d355e549a7344bbefe639224731858e8918",
+  "kind": "offline model decisions; no real tools/research pipeline executed"
+}

@@ -1,0 +1,694 @@
+{
+  "as_of": "2026-11-02T03:31:35.565610+00:00",
+  "candidates": [
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/stocks/crcl/history/",
+      "evidence_kind": "market_quote",
+      "id": "crcl_start",
+      "locator": "Historical Data / Sep 30, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "CRCL",
+        "outcome": "common equity close",
+        "quote_type": "close",
+        "quoted_at": "2026-09-30T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 82.17
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-crcl",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Sep 30, 2026\t85.72\t86.95\t82.11\t82.17\t82.17\t-1.83%\t8,489,320",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/stocks/crcl/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/stocks/crcl/history/",
+      "evidence_kind": "market_quote",
+      "id": "crcl_prior",
+      "locator": "Historical Data / Oct 29, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "CRCL",
+        "outcome": "common equity close",
+        "quote_type": "close",
+        "quoted_at": "2026-10-29T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 79.99
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-crcl",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Oct 29, 2026\t79.74\t81.20\t78.58\t79.99\t79.99\t-2.11%\t6,927,037",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/stocks/crcl/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/stocks/crcl/history/",
+      "evidence_kind": "market_quote",
+      "id": "crcl_end",
+      "locator": "Historical Data / Oct 30, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "CRCL",
+        "outcome": "common equity close",
+        "quote_type": "close",
+        "quoted_at": "2026-10-30T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 72.54
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-crcl",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Oct 30, 2026\t74.66\t74.80\t71.00\t72.54\t72.54\t-9.31%\t16,271,519",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/stocks/crcl/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/stocks/coin/history/",
+      "evidence_kind": "market_quote",
+      "id": "coin_start",
+      "locator": "Historical Data / Sep 30, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "COIN",
+        "outcome": "common equity close",
+        "quote_type": "close",
+        "quoted_at": "2026-09-30T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 186.41
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-coin",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Sep 30, 2026\t195.50\t198.66\t184.29\t186.41\t186.41\t-1.90%\t8,412,487",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/stocks/coin/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/stocks/coin/history/",
+      "evidence_kind": "market_quote",
+      "id": "coin_prior",
+      "locator": "Historical Data / Oct 29, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "COIN",
+        "outcome": "common equity close",
+        "quote_type": "close",
+        "quoted_at": "2026-10-29T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 160.59
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-coin",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Oct 29, 2026\t157.62\t163.60\t157.61\t160.59\t160.59\t-1.07%\t8,461,044",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/stocks/coin/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/stocks/coin/history/",
+      "evidence_kind": "market_quote",
+      "id": "coin_end",
+      "locator": "Historical Data / Oct 30, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "COIN",
+        "outcome": "common equity close",
+        "quote_type": "close",
+        "quoted_at": "2026-10-30T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 143.54
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-coin",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Oct 30, 2026\t148.23\t148.50\t136.89\t143.54\t143.54\t-10.62%\t20,893,932",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/stocks/coin/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/etf/spy/history/",
+      "evidence_kind": "market_quote",
+      "id": "spy_start",
+      "locator": "Historical Data / Sep 30, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "SPY",
+        "outcome": "ETF close",
+        "quote_type": "close",
+        "quoted_at": "2026-09-30T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 762.63
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-spy",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Sep 30, 2026\t766.45\t769.41\t762.18\t762.63\t762.63\t-0.21%\t59,922,080",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/etf/spy/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/etf/spy/history/",
+      "evidence_kind": "market_quote",
+      "id": "spy_prior",
+      "locator": "Historical Data / Oct 29, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "SPY",
+        "outcome": "ETF close",
+        "quote_type": "close",
+        "quoted_at": "2026-10-29T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 769.36
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-spy",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Oct 29, 2026\t768.79\t770.76\t766.62\t769.36\t769.36\t-0.38%\t40,299,584",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/etf/spy/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/etf/spy/history/",
+      "evidence_kind": "market_quote",
+      "id": "spy_end",
+      "locator": "Historical Data / Oct 30, 2026",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "SPY",
+        "outcome": "ETF close",
+        "quote_type": "close",
+        "quoted_at": "2026-10-30T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 755.72
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-spy",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Oct 30, 2026\t761.38\t761.43\t750.37\t755.72\t755.72\t-1.77%\t77,806,920",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/etf/spy/history/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+      "evidence_kind": "document",
+      "id": "S_scale",
+      "locator": "Financial Highlights / Second Quarter 2026 Financial Highlights and Operating Results",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "circle-q2-2026",
+      "published_at": "2026-08-05",
+      "publisher": "Circle",
+      "quote": "USDC in circulation of $73.3 billion at quarter end, 19% growth year-over-year; USDC onchain transaction volume in Q2’26 of $14.8 trillion grew 151% year-over-year.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+      "evidence_kind": "document",
+      "id": "S_rev",
+      "locator": "Financial Highlights / Second Quarter 2026 Financial Highlights and Operating Results",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "circle-q2-2026",
+      "published_at": "2026-08-05",
+      "publisher": "Circle",
+      "quote": "Total revenue and reserve income in Q2’26 of $701 million grew 7% year-over-year.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+      "evidence_kind": "document",
+      "id": "S_rate",
+      "locator": "Financial Highlights / Second Quarter 2026 Financial Highlights and Operating Results",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "circle-q2-2026",
+      "published_at": "2026-08-05",
+      "publisher": "Circle",
+      "quote": "Reserve Income of $668 million increased 5% year-over-year, primarily from the 25% growth in average USDC in Circulation, partially offset by a 66 bps decline in the Reserve Return Rate.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+      "evidence_kind": "document",
+      "id": "S_cost",
+      "locator": "Financial Highlights / Second Quarter 2026 Financial Highlights and Operating Results",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "circle-q2-2026",
+      "published_at": "2026-08-05",
+      "publisher": "Circle",
+      "quote": "Total Distribution, Transaction and Other Costs of $412 million increased 1% year-over-year, mostly from increased distribution payments.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+      "evidence_kind": "document",
+      "id": "S_ebitda",
+      "locator": "Financial Highlights / Second Quarter 2026 Financial Highlights and Operating Results",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "circle-q2-2026",
+      "published_at": "2026-08-05",
+      "publisher": "Circle",
+      "quote": "Adjusted EBITDA of $143 million increased 8% year-over-year reflecting the revenue growth from higher USDC in circulation, partially offset by increased investment in costs related to new products.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+      "evidence_kind": "document",
+      "id": "S_profit",
+      "locator": "Financial Highlights / Second Quarter 2026 Financial Highlights and Operating Results",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "circle-q2-2026",
+      "published_at": "2026-08-05",
+      "publisher": "Circle",
+      "quote": "Net income from continuing operations in Q2’26 of $48 million increased $530 million year-over-year, driven by prior-year IPO stock-based compensation impacts.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+      "evidence_kind": "document",
+      "id": "S_other",
+      "locator": "Financial Highlights / Second Quarter 2026 Financial Highlights and Operating Results",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "circle-q2-2026",
+      "published_at": "2026-08-05",
+      "publisher": "Circle",
+      "quote": "Other Revenue of $34 million increased 41% year-over-year from growth in subscription and services revenue.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/blog/the-economics-of-usdc-and-why-our-partners-win",
+      "evidence_kind": "document",
+      "id": "S_econ",
+      "locator": "How USDC revenue is distributed",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "S_econ",
+      "published_at": "2026-10-16",
+      "publisher": "Circle",
+      "quote": "In the first half of 2026, Circle generated approximately $1.4 billion in revenue and paid approximately $819 million of it to USDC distribution partners and transaction costs. Approximately 59 cents of every dollar of revenue went to the global partners that make USDC available across wallets, exchanges, banks, fintechs, enterprises, and payment networks worldwide.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/blog/the-economics-of-usdc-and-why-our-partners-win"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/blog/the-economics-of-usdc-and-why-our-partners-win",
+      "evidence_kind": "document",
+      "id": "S_net",
+      "locator": "How USDC revenue is distributed，H1 2026",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "S_econ",
+      "published_at": "2026-10-16",
+      "publisher": "Circle",
+      "quote": "Circle made 7 cents of net profit from every dollar of revenue earned.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/blog/the-economics-of-usdc-and-why-our-partners-win"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.circle.com/pressroom/circle-to-announce-q3-2026-financial-results-on-november-4-2026",
+      "evidence_kind": "document",
+      "id": "S_date",
+      "locator": "Opening paragraphs / November 4 announcement",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "S_date",
+      "published_at": "2026-10-07",
+      "publisher": "Circle",
+      "quote": "NEW YORK, October 7, 2026 — Circle Internet Group, Inc. (NYSE: CRCL) will report its financial results for the third quarter 2026 on Wednesday, November 4.\n\nA live video webcast will be held at 8 a.m. ET to discuss financial results and business highlights.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.circle.com/pressroom/circle-to-announce-q3-2026-financial-results-on-november-4-2026"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://apnews.com/article/39cda8ceb8095e036334a18549d3d20d",
+      "evidence_kind": "opinion",
+      "id": "S_ap",
+      "locator": "Binance security article / Circle response",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "S_ap",
+      "published_at": "2026-10-30",
+      "publisher": "Associated Press",
+      "quote": "Jeremy Allaire, co-founder and CEO of Circle, wrote on X that the company had frozen the equivalent of more than $800 million in currency associated with the incident “in coordination with law enforcement.”",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://apnews.com/article/39cda8ceb8095e036334a18549d3d20d"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.tipranks.com/news/the-fly/mizuho-cuts-circle-internet-target-on-marked-risk-from-ai-agents-thefly-news",
+      "evidence_kind": "opinion",
+      "id": "S_mizuho",
+      "locator": "Article first paragraph",
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "S_mizuho",
+      "published_at": "2026-10-26",
+      "publisher": "TheFly / TipRanks",
+      "quote": "Mizuho lowered the firm’s price target on Circle Internet (CRCL) to $43 from $45 and keeps an Underperform rating on the shares. The firm believes AI personal assistant engines pose a “marked risk” to Circle’s medium-term revenue. Mizuho’s simulation shows that agents like Muse are likely to recommend steering away from USDC, with a strong preference for high-yielding FDIC insured alternatives, the analyst tells investors in a research note.",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T3",
+      "url": "https://www.tipranks.com/news/the-fly/mizuho-cuts-circle-internet-target-on-marked-risk-from-ai-agents-thefly-news"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stockanalysis.com/stocks/crcl/history/",
+      "evidence_kind": "market_quote",
+      "id": "crcl_peak",
+      "locator": "Historical Data / Oct 21",
+      "market_quote": {
+        "direction": "long",
+        "instrument": "CRCL",
+        "outcome": "common equity close",
+        "quote_type": "close",
+        "quoted_at": "2026-10-21T16:00:00-04:00",
+        "unit": "USD/share",
+        "value": 89.71
+      },
+      "origin_basis": "已读取原始文件或具名数据供应商的展示页；同一文件不同片段不视为独立来源",
+      "origin_id": "spglobal-crcl",
+      "published_at": "unknown",
+      "publisher": "S&P Global Market Intelligence，经StockAnalysis展示",
+      "quote": "Oct 21, 2026\t87.05\t92.17\t85.51\t89.71\t89.71\t4.47%\t13,505,948",
+      "retrieved_at": "2026-11-02T03:31:35.565610+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "波动归因",
+        "reason": "直接回答同期表现或经营机制",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T1",
+      "url": "https://stockanalysis.com/stocks/crcl/history/"
+    }
+  ],
+  "historical": false,
+  "schema_version": 2,
+  "selection_summary": {
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting",
+    "selected": [
+      "crcl_start",
+      "crcl_prior",
+      "crcl_end",
+      "coin_start",
+      "coin_prior",
+      "coin_end",
+      "spy_start",
+      "spy_prior",
+      "spy_end",
+      "S_scale",
+      "S_rev",
+      "S_rate",
+      "S_cost",
+      "S_ebitda",
+      "S_profit",
+      "S_other",
+      "S_econ",
+      "S_net",
+      "S_date",
+      "S_ap",
+      "S_mizuho",
+      "crcl_peak"
+    ]
+  },
+  "source_status": {
+    "community": {
+      "reason": "本轮以官方和同期行情为主，未运行Last30Days",
+      "status": "not_run"
+    },
+    "expectations": {
+      "reason": "公开预期提供方存在口径冲突，缺方法和完整历史样本",
+      "status": "partial"
+    },
+    "market": {
+      "status": "ok"
+    },
+    "official": {
+      "status": "ok"
+    },
+    "web_fetch": {
+      "reason": "multiple usable web providers；改用ego-browser正文取证",
+      "status": "error"
+    }
+  }
+}

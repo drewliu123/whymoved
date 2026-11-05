@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "question": "美伊停火会持续多久",
+  "type": "event_pricing",
+  "task": "停火持续时间的条件情景研究",
+  "entity": "美国与伊朗",
+  "as_of": "2026-11-02T03:38:29Z",
+  "historical": false,
+  "decision_needed": "辨明当前是否存在双边停火，判断未来数日、数周与数月的持续条件。",
+  "prior_judgment": "首次研究；不预设用户所称停火已由双方正式确认。",
+  "comparison": {
+    "period": "2026年4月至6月安排、9月至11月1日执行；展望未来数日至三个月",
+    "unit": "协议状态、直接军事行动与履约观察",
+    "scope": "美国与伊朗直接冲突；以色列与地区武装为外部触发因素"
+  },
+  "budget": {
+    "max_queries": 18,
+    "max_followups": 1
+  },
+  "stop_condition": "关键条款与最新行动得到可读证据，或预算内无法补齐而明确限制持续时间判断。",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "event_forecast",
+    "method": "reference_class_scenarios",
+    "rationale": "核实当前状态后再判断持续时间；以2026年同一冲突的停火失效机制为参考类，不用小样本推造概率。选择核问题、霍尔木兹与封锁的互惠次序作为长期条件，近30日实际行动和美国选举前承诺作为近期变化。区分克制的政治激励与能延续数月的执行安排。",
+    "baseline": "2026年6月停火文本承诺及其后执行记录；当前最新可核实承诺。",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "停火条款与政治激励",
+      "可验证的互惠履约",
+      "违约收益与报复约束",
+      "直接冲突是否恢复及持续时间"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "最新停火或暂停承诺的双方确认、期限与执行机制",
+        "source": "官方公告及Reuters、AP独立报道",
+        "by": "2026-11-03及随后一周",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "继续谈判并维持短期克制，但没有完整长期执行条款"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "仅有短期单边承诺，期限届满后缺少续接机制"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "双方确认分阶段互惠条款及核查和争议处理机制"
+          }
+        ]
+      },
+      {
+        "id": "T2",
+        "observe": "近30日直接打击、海峡航运、核查与封锁执行动作",
+        "source": "官方行动披露及独立现场报道",
+        "by": "2026-11-10并在随后一个月复核",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "局部摩擦未升级为持续直接打击，谈判渠道保持"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "恢复直接军事打击且互惠措施逆转"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "核查与海峡通行等互惠措施持续兑现"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "双方成本约束足以支持未来数周延续克制",
+      "discriminating_observation": "短期克制与谈判延续，尚无完整长期条款"
+    },
+    {
+      "id": "H2",
+      "explanation": "只有选举前暂停，触发后近期复战",
+      "discriminating_observation": "短期承诺到期后恢复直接打击"
+    },
+    {
+      "id": "H3",
+      "explanation": "核查与互惠安排支持数月稳定",
+      "discriminating_observation": "双方签署并持续执行核查与海峡通行措施"
+    }
+  ],
+  "queries": [
+    {
+      "question": "当前究竟是什么停火安排？",
+      "query": "US Iran ceasefire latest November 1 2026 October ceasefire Reuters",
+      "source": "官方、Reuters、AP",
+      "purpose": "核实当前状态、双方确认及期限",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "question": "当前有哪些可验证执行动作？",
+      "query": "Iran US October November 2026 strikes Hormuz talks verification",
+      "source": "官方行动记录与独立媒体",
+      "purpose": "区别口头克制和实际履约",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "question": "同一冲突此前为何停火后再度交火？",
+      "query": "Iran US ceasefire memorandum June July 2026 frayed",
+      "source": "白宫原公告、Reuters复盘",
+      "purpose": "建立参考类并识别失效机制",
+      "test_ids": []
+    },
+    {
+      "question": "社区有哪些值得核查的反证或对象误混？",
+      "query": "US Iran ceasefire election November 2026",
+      "source": "Last30Days社区候选",
+      "purpose": "寻找可检验的反证，不用于外部事实支持",
+      "test_ids": [
+        "T1",
+        "T2"
+      ]
+    }
+  ],
+  "resolution_contract": {
+    "definition": "持续克制指美伊未恢复持续直接军事交火；不等同于没有单次摩擦、解除制裁或缔结和平",
+    "horizons": [
+      "未来数日",
+      "未来数周",
+      "未来一至三个月"
+    ],
+    "source": "双方官方行动披露及独立媒体交叉核查",
+    "probability": "不登记数值概率；无充分校准依据"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "qid": "Q064",
+  "as_of": "2026-09-17",
+  "kept": [
+    {
+      "excerpt": "Russian forces advanced in southwestern Bilytske, southeast of Dobropillya, according to geolocated footage published on September 14. Ukrainian forces struck multiple Russian positions in the smaller settlement named Dobropillya after a likely Russian infiltration mission, according to geolocated footage published on September 16.",
+      "published_at": "2026-09-17T02:10:14+00:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "The September 16 assessment supplies the latest verified ISW report retained in this pack and explicitly distinguishes an assessed advance in Bilytske from infiltration nearby.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-16-2026/"
+    },
+    {
+      "excerpt": "Ukrainian forces recently advanced in southwestern Bilytske and advanced or maintained positions in western Bilytske, according to geolocated footage published on September 14, contrary to Russian claims of advances in western Bilytske. An NCO of a Ukrainian battalion operating in the Dobropillya direction said Russian forces had been deploying new units and intensifying attempts to reach Dobropillya over the preceding few weeks.",
+      "published_at": "2026-09-16T02:57:06+00:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "This preceding daily assessment documents Ukrainian positions within Bilytske and shows that successive ISW reports described different local movements, making building-level map verification essential.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-15-2026/"
+    },
+    {
+      "excerpt": "Russian forces were increasing pressure toward Dobropillya, transferring new units and expanding their drone presence, Ukrainian National Guard battalion staff sergeant Dmytro Davydenko said. He said possible routes for mechanized columns had been mined, destroyed or blocked. He also described limits on coordinating infantry groups because drone pilots must guide their movement.",
+      "published_at": "2026-09-15",
+      "publisher": "ArmyInform — Ukrainian Ministry of Defence information agency",
+      "relevance": "This official Ukrainian military publication provides near-cutoff evidence about Russian reinforcement, Ukrainian obstacles and constraints on the tempo of advances in the surrounding sector.",
+      "url": "https://armyinform.com.ua/2026/09/15/%C2%ABodyn-pilot-ne-mozhe-vesty-odnochasno-20%E2%80%9330-grup%C2%BB-do-chogo-gotuyutsya-rosiyany-bilya-dobropillya/"
+    },
+    {
+      "excerpt": "Azov corps commander Denys Prokopenko described the Dobropillya situation as difficult and estimated a roughly six-to-one Russian advantage in personnel, forces and equipment. He said about one-third of Russia's Rubikon drone force was deployed on this axis. He expected September to be the culmination of the Russian offensive campaign and a shift toward mechanized breakthrough attempts in October as weather conditions changed.",
+      "published_at": "2026-09-12T19:53:25+03:00",
+      "publisher": "Interfax-Ukraine",
+      "relevance": "A named Ukrainian commander provides an attributed assessment of local force concentration and the expected timing of Russian tactical changes relative to the September 30 deadline.",
+      "url": "https://interfax.com.ua/news/general/1203191-amp.html"
+    },
+    {
+      "excerpt": "Russian forces were fighting for the village of Dobropillia, about five kilometres from the city of the same name. The Ukrainian account Petrenko reported Russian advances in the Bilytske area. The article cited analyst Clément Molin's assessment that the Russian 8th, 41st and 51st combined arms armies were attacking on the southern Donbas flank.",
+      "published_at": "2026-09-17",
+      "publisher": "EUobserver — Tomáš Vasilko",
+      "relevance": "This cutoff-day battlefield preview corroborates pressure around Bilytske while preserving the distinction between reported advances and independently verified control of the specified building.",
+      "url": "https://euobserver.com/238150/russians-trying-to-capture-dobropillia-before-the-leaves-fall-from-the-trees-ukraine-battlefield-update-day-1666/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-17. Five dated items retained; no prediction-market pages, odds or outcome evidence included. Publication timestamps are reproduced where the fallback reader supplied them; otherwise the source's displayed publication date is used. The ISW September 15 and September 16 assessments were actually timestamped September 16 and September 17 UTC, respectively, and are both within the cutoff. Standard web_fetch failed because of a provider configuration error, so agent-reach web read was used; it subsequently rate-limited, and no further attempts were made. ISW and Interfax article bodies were read successfully; ArmyInform and EUobserver evidence and displayed dates were verified through web_search results. Ukrainian passages are translated factual paraphrases, and military estimates remain attributed claims. The retrieved ISW September 17 page was excluded because its retrieved body contained a temporal inconsistency that prevents treating that version as safely frozen. No archived building-level ISW layer geometry or consecutive finalized map snapshots were verified for 48.40731 N, 37.17956 E; these reports therefore do not establish qualifying shading or persistence through the next full daily update cycle. The supplied resolution text ends mid-clause, leaving any additional exception unspecified."
+}

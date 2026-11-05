@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-31T12:00:00Z",
+  "claims": [
+    {
+      "as_of": "2026-10-31T12:00:00Z",
+      "basis": [],
+      "id": "C1",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "text": "Revenue increased to 12.",
+      "type": "fact"
+    }
+  ],
+  "schema_version": 2
+}

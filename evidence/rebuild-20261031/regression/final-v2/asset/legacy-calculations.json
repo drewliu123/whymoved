@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "revenue_q2_b": "96.221",
+    "revenue_q1_b": "81.615",
+    "dc_q2_b": "89",
+    "cfo_q2_b": "24.077",
+    "cfo_h1_b": "74.421",
+    "ar_cash_use_q2_b": "22.346",
+    "gm_q2": ".75",
+    "revenue_q3_midpoint_b": "108",
+    "gm_q3_midpoint": ".74",
+    "gaap_gross_profit_q2_b": "72.142"
+  },
+  "results": {
+    "month_return_pct": "-10.39",
+    "peak_close_to_month_end_pct": "-14.46",
+    "last_day_return_pct": "-4.22",
+    "last_week_return_pct": "-3.00",
+    "q3_revenue_growth_pct": "12.24",
+    "q2_gross_profit_b": "72.142",
+    "q3_midpoint_implied_gross_profit_b": "79.92",
+    "midpoint_implied_gp_growth_pct": "10.78",
+    "q2_ocf_to_revenue_pct": "25.02",
+    "q1_ocf_b": "50.344",
+    "q1_ocf_to_revenue_pct": "61.68",
+    "q3_revenue_range_b": [
+      "105.84",
+      "110.16"
+    ]
+  },
+  "formulas": {
+    "return": "(end/start-1)*100",
+    "gross_profit": "revenue * gross_margin",
+    "q1_ocf": "half_year_ocf - q2_ocf",
+    "cash_conversion": "quarter_ocf / quarter_revenue * 100"
+  },
+  "interpretation": "Q3毛利额为两个指引中点相乘的示例，并非公司另行公布的指引或实现值。现金流/收入不是客户ROI或坏账率。"
+}

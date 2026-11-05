@@ -1,0 +1,8 @@
+{
+  "purpose": "评级为相对本地投研助手的静态复用判断，不是预测效果榜单",
+  "fields": ["id", "name", "code_grade", "method_grade", "evidence_depth", "reuse_items", "blocking_conditions", "source_commit", "review_document"],
+  "code_grades": {"A":"已读关键源码，可提取完整模块；仍需适配验证", "B":"有实现但适配或依赖成本明显", "C":"仅局部/接口参考，或许可/核心缺失阻碍复制", "N":"论文/理论，没有适用实现", "U":"未取得充分证据，无法判定"},
+  "method_grades": {"A":"直接对应目标缺口且方法可解释", "B":"局部相关或需要场景/数据前提", "C":"外围或暂不优先", "U":"证据不足"},
+  "evidence_depth": {"E0":"检索线索", "E1":"官方说明/摘要", "E2":"关键源码或论文方法正文", "E3":"有意义的运行验证"},
+  "scope": "本轮不宣称E3，不改变生产代码或交易边界"
+}

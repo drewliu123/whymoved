@@ -1,0 +1,62 @@
+{
+ "qid": "Q110",
+ "question": "Will New People (NL) gain the most seats in the next Russian parliamentary election?",
+ "rules": "Parliamentary elections are to be scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the political party that gains the greatest number of seats in the next Russian State Duma election, compared to before the election.\n\nIf the results are not known definitively by September 30, 2027, 11:59 PM ET, this market will resolve to \"Other\".\n\nIn the event of a tie between multiple parties for the most seats gained, this market will resolve in favor of the party that received a greater number of valid votes. In the event that results in a tie, this market will resolve in favor of the party whose listed abbreviation appears first in alphabetical order.\n\nThis market's resolution will be based solely on the number of seats gained by the named party in the State Duma of the Federal Assembly of the Russian Federation.\n\nThis market will resolve based on the results of this election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results reported by Russian government sources such as the Central Election Commission of the Russian Federation.",
+ "as_of": "2026-09-07",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "VTsIOM",
+   "published_at": "2026-09-04",
+   "excerpt": "In polling conducted August 24–30, 2026, support was 37.2% for United Russia, 11.6% for the CPRF, 11.5% for New People, 8.7% for the LDPR, and 5.3% for A Just Russia. New People increased by 0.7 percentage points over the preceding week. The release describes a combined telephone and face-to-face methodology, with 1,600 adult respondents and a maximum sampling error of 2.5%."
+  },
+  {
+   "id": "E2",
+   "publisher": "Riddle Russia — Ksenia Smolyakova",
+   "published_at": "2026-09-07",
+   "excerpt": "After the Supreme Court cancelled registration of Yabloko’s State Duma candidate list, social-media posts mentioning the party attracted sharply increased engagement. New People also accumulated reactions rapidly as Russians compared it with Yabloko. At the end of August, parties remaining in the race received free television and radio airtime and space in major print outlets."
+  },
+  {
+   "id": "E3",
+   "publisher": "VTsIOM",
+   "published_at": "2026-08-25",
+   "excerpt": "In the August 10–16 survey, United Russia received support from 36% of all respondents and 45% of electorally active respondents. Corresponding figures were 11% and 15% for the CPRF, 10% and 12% for New People, 10% and 10% for the LDPR, and 4% and 4% for A Just Russia. Declared intention to participate in the election was 66%."
+  },
+  {
+   "id": "E4",
+   "publisher": "ExtremeScan — Elena Koneva",
+   "published_at": "2026-08-23",
+   "excerpt": "ExtremeScan’s July survey gave United Russia 24% among all eligible voters, the CPRF 13%, New People 11%, the LDPR 8%, and Yabloko 4%. Two-thirds of respondents named a party they were ready to vote for. Among New People supporters, 69% preferred ending hostilities and reaching a peace agreement to a new mobilization, while 14% preferred mobilization."
+  },
+  {
+   "id": "E5",
+   "publisher": "President of Russia, reproduced unaltered by Public Technologies",
+   "published_at": "2026-06-16",
+   "excerpt": "The executive order sets the election of deputies to the State Duma’s new convocation for September 20, 2026. The order enters into force on the day of its official publication. The presidential announcement was published June 16, 2026, at 10:15."
+  },
+  {
+   "id": "E6",
+   "publisher": "Carnegie Endowment for International Peace — Andrey Pertsev",
+   "published_at": "2026-05-11",
+   "excerpt": "VTsIOM polling showed New People’s support rising from 6.6% to 13.4% over a year, placing it second behind United Russia at 27.7%. The party opposed internet shutdowns and the blocking of messaging applications while avoiding direct attacks on Russia’s leaders and security forces. The analysis describes New People as loyal to the Kremlin and notes its shortage of prominent regional figures."
+  },
+  {
+   "id": "E7",
+   "publisher": "Riddle Russia — Ksenia Smolyakova",
+   "published_at": "2026-05-07",
+   "excerpt": "VTsIOM put New People at 13.4%, while FOM put it at 6%, behind the CPRF at 8% and the LDPR at 10%. In the 2025 local elections discussed in the article, New People fielded 48 candidates for 471 deputy mandates and won one seat. The article describes its Duma faction as three named leading figures plus twelve other members."
+  },
+  {
+   "id": "E8",
+   "publisher": "Institute of Central Europe — Jędrzej Jander",
+   "published_at": "2026-01-30",
+   "excerpt": "Half of the State Duma’s 450 deputies are elected in single-member constituencies and half through proportional allocation of federal party lists. A 5% threshold applies to the party-list allocation. The analysis states that this electoral formula and the authorities’ control over election administration give United Russia a substantial advantage."
+  },
+  {
+   "id": "E9",
+   "publisher": "Interfax, reporting the Russian Central Election Commission",
+   "published_at": "2021-09-24",
+   "excerpt": "CEC chair Ella Pamfilova said United Russia received 324 mandates, the CPRF 57, A Just Russia–For Truth 27, the LDPR 21, and New People 13 following the September 17–19, 2021 election. Rodina, Civic Platform, and the Party of Growth received one seat each, while five mandates went to independent candidates."
+  }
+ ]
+}

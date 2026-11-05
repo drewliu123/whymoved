@@ -1,0 +1,44 @@
+{
+ "qid": "Q072",
+ "question": "Will Trump speak to Emmanuel Macron in July?",
+ "rules": "This market will resolve to \"Yes\" if the listed individual speaks with Donald Trump between July 1 and July 31, 2026, 11:59 PM ET. Otherwise, it will resolve to \"No\".\n\nSpeaking is defined as any verbal interaction between the listed individual and Donald Trump, occurring either in person or through verbal communication by phone or video call.\n\nThe resolution source will be credible media reporting. However, in the absence of definitive or in the case of contradictory media reporting, statements by either of the specified individuals or their official representatives will also be considered.\n\nStatements by the specified individuals or their official representatives will only be considered conclusive if the claims explicitly, or in context unambiguously, indicate that a qualifying talk occurred within the specified timeframe and took place via verbal communication, and provided that such claims are not contradicted by the other specified individual, their representatives, or credible media reporting by the end of the third calendar date (ET) following the statement in question.\n\nThis market will resolve at the earlier of i) a qualifying verbal interaction being confirmed under the ab",
+ "as_of": "2026-07-22",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Élysée — Presidency of the French Republic",
+   "published_at": "2026-07-08",
+   "excerpt": "Le Président de la République et son épouse, Brigitte Macron, se sont rendus en Turquie à l’occasion du Sommet de l’OTAN, les mardi 7 et mercredi 8 juillet 2026. Asked whether Trump had imposed conditions on continued U.S. membership in NATO, Macron said he had heard no such condition and referred to Trump's presence and the clarity of discussions on various subjects."
+  },
+  {
+   "id": "E2",
+   "publisher": "Hürriyet Daily News — AFP reporting, with AP pool photograph",
+   "published_at": "2026-07-09",
+   "excerpt": "U.S. President Donald Trump offered NATO allies an unexpected warm embrace as they wrapped up a key summit on July 8 after earlier lashing out at them over their response to his war on Iran. Trump described the closed-door meeting of 32 leaders in Ankara as having incredible unity. The accompanying AP pool photograph identifies both Trump and Macron among the leaders attending the summit on July 8."
+  },
+  {
+   "id": "E3",
+   "publisher": "The Jerusalem Post — Reuters",
+   "published_at": "2026-07-08",
+   "excerpt": "French President Emmanuel Macron said on Wednesday that Iranian strikes on U.S. bases in the Gulf violated the Memorandum of Understanding with the United States and that Iran had been mistaken to carry them out. He added that he understood meetings under the 60-day ceasefire framework would continue. The article was published July 8, 2026, at 16:47 and updated that day at 18:05."
+  },
+  {
+   "id": "E4",
+   "publisher": "Élysée — Presidency of the French Republic",
+   "published_at": "2026-07-13",
+   "excerpt": "Les membres de la Coalition des volontaires se sont réunis aujourd’hui à Paris. Nous saluons la déclaration ferme de soutien du président Trump aux garanties de sécurité, lors du sommet de l’OTAN à Ankara."
+  },
+  {
+   "id": "E5",
+   "publisher": "Élysée — Presidency of the French Republic",
+   "published_at": "2026-06-17",
+   "excerpt": "On the occasion of the 250th anniversary of the independence of the United States of America, President Macron and his wife welcomed President Trump at the Palace of Versailles on Wednesday, June 17, 2026."
+  },
+  {
+   "id": "E6",
+   "publisher": "Élysée — Presidency of the French Republic",
+   "published_at": "2026-06-15",
+   "excerpt": "Dans l’après-midi, le Président Emmanuel Macron s’est entretenu avec Donald Trump, Président des États-Unis d’Amérique. In the published introductory remarks, Macron welcomed Trump and identified Iran, Ukraine, peace efforts and economic cooperation as subjects for the G7. Macron also said he would not travel to the United States on July 4."
+  }
+ ]
+}

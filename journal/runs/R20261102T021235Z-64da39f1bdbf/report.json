@@ -1,0 +1,380 @@
+{
+  "alternatives": [
+    {
+      "claim_ids": [
+        "C8",
+        "C11",
+        "C12",
+        "C18",
+        "C19"
+      ],
+      "text": "不能因为NVDA当日强于半导体指数就排除公司风险。现有材料未建立公司独立业绩下修的事件链；11月17日安排公告也不能替代尚未发布的当季结果。 8月26日的Q3收入指引1080亿美元±2%只作为待核对的旧基准，不能替代最新市场预期。",
+      "title": "公司自身预期下修仍是竞争解释"
+    },
+    {
+      "claim_ids": [
+        "C12",
+        "C13"
+      ],
+      "text": "行业共同下跌也可能包含折现率与风险偏好变化。缺少同口径事件窗口和控制变量时，本轮不分配各因素贡献比例。",
+      "title": "利率与风险偏好可能叠加，但未定量分拆"
+    }
+  ],
+  "answer": {
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C12",
+      "C16",
+      "C17",
+      "C20"
+    ],
+    "text": "截至11月1日，本轮证据更支持行业与AI投入回报担忧中的重估。10月30日NVDA跌4.22%，弱于Nasdaq报道的-2.86%，但强于半导体基准约-7.2%。Amazon官方现金流提供客户AI资本支出压力的具体依据；仍未核实它已导致英伟达采购或回款恶化，也不能把整段12.53%的跌幅全归给当日新闻。"
+  },
+  "as_of": "2026-11-02T02:10:32.656848Z",
+  "calculations": [
+    {
+      "claim_ids": [
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "description": "10月30日NVDA收盘价格收益率",
+      "formula": "(204.64 / 213.66 - 1) * 100",
+      "id": "K1",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "end",
+          "unit": "USD/share",
+          "value": 204.64
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "start",
+          "unit": "USD/share",
+          "value": 213.66
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": -4.221660582233455
+      }
+    },
+    {
+      "claim_ids": [
+        "C1",
+        "C4",
+        "C5"
+      ],
+      "description": "10月2日至30日NVDA收盘价格变化",
+      "formula": "(204.64 / 233.95 - 1) * 100",
+      "id": "K2",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "end",
+          "unit": "USD/share",
+          "value": 204.64
+        },
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "start",
+          "unit": "USD/share",
+          "value": 233.95
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": -12.528318016670227
+      }
+    },
+    {
+      "claim_ids": [
+        "C2",
+        "C4",
+        "C5"
+      ],
+      "description": "10月6日至30日NVDA收盘价格变化",
+      "formula": "(204.64 / 239.24 - 1) * 100",
+      "id": "K3",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "end",
+          "unit": "USD/share",
+          "value": 204.64
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "start",
+          "unit": "USD/share",
+          "value": 239.24
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": -14.462464470824287
+      }
+    },
+    {
+      "claim_ids": [
+        "C5",
+        "C7",
+        "C8"
+      ],
+      "description": "NVDA减Nasdaq当日收益，非风险调整",
+      "formula": "NVDA_return - Nasdaq_return",
+      "id": "K4",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "NVDA",
+          "unit": "percent",
+          "value": -4.221660582233455
+        },
+        {
+          "claim_ids": [
+            "C7"
+          ],
+          "name": "Nasdaq_reported",
+          "unit": "percent",
+          "value": -2.86
+        }
+      ],
+      "result": {
+        "unit": "percentage points",
+        "value": -1.3616605822334553
+      }
+    },
+    {
+      "claim_ids": [
+        "C5",
+        "C7",
+        "C8"
+      ],
+      "description": "NVDA减半导体指数当日收益，非风险调整",
+      "formula": "NVDA_return - semiconductor_return",
+      "id": "K5",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "NVDA",
+          "unit": "percent",
+          "value": -4.221660582233455
+        },
+        {
+          "claim_ids": [
+            "C7"
+          ],
+          "name": "semiconductor_reported",
+          "unit": "percent",
+          "value": -7.2
+        }
+      ],
+      "result": {
+        "unit": "percentage points",
+        "value": 2.978339417766545
+      }
+    },
+    {
+      "claim_ids": [
+        "C17",
+        "C21"
+      ],
+      "description": "Amazon TTM经营现金流减净资本购买对账",
+      "formula": "168300 - 210657 = -42357",
+      "id": "K6",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C17"
+          ],
+          "name": "TTM operating cash flow",
+          "unit": "USD million",
+          "value": 168300
+        },
+        {
+          "claim_ids": [
+            "C17"
+          ],
+          "name": "TTM net PP&E purchases",
+          "unit": "USD million",
+          "value": 210657
+        }
+      ],
+      "result": {
+        "unit": "USD million",
+        "value": -42357
+      }
+    }
+  ],
+  "findings": [],
+  "limitations": [
+    {
+      "claim_ids": [
+        "C12"
+      ],
+      "material": true,
+      "text": "归因是基于同期表现与记者报道的研究推断，没有识别因果贡献；当日比较不能外推整段窗口。"
+    },
+    {
+      "claim_ids": [
+        "C7",
+        "C9",
+        "C16"
+      ],
+      "material": true,
+      "text": "行情网站底层供应商独立性未确认；Nasdaq综合指数收益保留Reuters报道口径；SOX官方日期行未列精确收盘时戳；债券报价未直取交易终端。"
+    },
+    {
+      "claim_ids": [],
+      "material": false,
+      "text": "社区原始候选、排名、聚类和状态已保留，但未完成原帖取证的条目均未选入结论。YouTube访问受限，Stocktwits代码解析失败；这些状态不代表平台没有讨论。"
+    },
+    {
+      "claim_ids": [
+        "C12",
+        "C18",
+        "C19"
+      ],
+      "material": true,
+      "text": "本轮未获取同期分析师一致预期或10月2日至30日完整行业基准序列，不能量化财报预期差，不能把单日相对表现外推整段阶段回撤。"
+    }
+  ],
+  "no_change_reason": "本轮重读Reuters收盘稿的指数及NVDA跌幅归属，并核对Amazon官方TTM现金流表；关键数值与原证据一致。定向搜索未找到在既定窗口内足以改变判断的新证据。本次为有限复核，未重新抓取全部社区或补齐阶段行业回报、订单及回款资料；不声称这些信号没有变化。",
+  "question": "截至2026年11月1日，英伟达近期为什么大跌，行业与公司因素分别有哪些证据？",
+  "schema_version": 2,
+  "tables": [
+    {
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C7",
+        "C16"
+      ],
+      "columns": [
+        "期间/指标",
+        "起点",
+        "终点",
+        "变化"
+      ],
+      "note": "NVDA为未明确复权口径的正常收盘价格收益，不作总回报断言；两组阶段表现不是自然月回报或盘中最高点回撤。",
+      "rows": [
+        [
+          "NVDA 10/29至10/30收盘",
+          "$213.66",
+          "$204.64",
+          "-4.22%"
+        ],
+        [
+          "NVDA 10/02至10/30收盘",
+          "$233.95",
+          "$204.64",
+          "-12.53%"
+        ],
+        [
+          "NVDA 10/06至10/30收盘",
+          "$239.24",
+          "$204.64",
+          "-14.46%"
+        ],
+        [
+          "Nasdaq 10/30（Reuters报道）",
+          "同日收盘比较",
+          "—",
+          "-2.86%"
+        ],
+        [
+          "半导体指数 10/30（Reuters+Nasdaq日期数据）",
+          "同日比较",
+          "未列精确收盘时戳",
+          "-7.20%"
+        ]
+      ],
+      "title": "价格变化与同日基准"
+    },
+    {
+      "claim_ids": [
+        "C17",
+        "C21"
+      ],
+      "columns": [
+        "截至9月30日的过去12个月",
+        "2026年，亿美元",
+        "2025年，亿美元"
+      ],
+      "note": "公司定义的自由现金流口径；PP&E为物业设备净购买，不是资产余额，不能当作Q3单季支出。",
+      "rows": [
+        [
+          "经营现金流",
+          1683.0,
+          1306.91
+        ],
+        [
+          "净PP&E购买",
+          2106.57,
+          1159.03
+        ],
+        [
+          "自由现金流",
+          -423.57,
+          147.88
+        ]
+      ],
+      "title": "Amazon TTM现金流对账"
+    }
+  ],
+  "task": "变化解释",
+  "title": "英伟达下跌复核：关键证据一致，当前判断未变",
+  "type": "asset",
+  "update": {
+    "comparability": {
+      "reason": "沿用同一市场窗口、价格比较、单位及来源范围；本轮不增加新的交易日。",
+      "status": "comparable"
+    },
+    "judgment_changed": false,
+    "reason": "本轮重读Reuters收盘稿的指数及NVDA跌幅归属，并核对Amazon官方TTM现金流表；关键数值与原证据一致。定向搜索未找到在既定窗口内足以改变判断的新证据。本次为有限复核，未重新抓取全部社区或补齐阶段行业回报、订单及回款资料；不声称这些信号没有变化。"
+  },
+  "watch": [
+    {
+      "claim_ids": [
+        "C11",
+        "C15",
+        "C19"
+      ],
+      "meaning": "经营兑现且回款正常更支持预期重估；指引或现金回收转弱则支持压力开始进入经营。 可对照8月26日1080亿美元±2%的原指引，但它不是最新分析师预期。",
+      "signal": "11月17日财报：实际收入、后续指引、毛利率与应收/经营现金流"
+    },
+    {
+      "claim_ids": [
+        "C13",
+        "C14",
+        "C15"
+      ],
+      "meaning": "对齐融资工具、期限和日期，检验融资成本变化，再结合采购和付款履约。信用收益率水平或管理层言论不能替代实际融资成交和订单证据。",
+      "signal": "客户实际新融资条件，以及GPU采购取消、延期与付款履约资料"
+    }
+  ]
+}

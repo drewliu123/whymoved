@@ -1,0 +1,50 @@
+{
+  "qid": "Q091",
+  "as_of": "2026-07-18",
+  "kept": [
+    {
+      "excerpt": "Mashovets reported that Ukrainian forces still hold Serhiivka (northwest of Pokrovsk) and much of the Bilytske area, forcing Russia to concentrate troops to start operations against Dobropillya along a relatively narrow sector of the frontline between Pokrovsk and Novooleksandrivka. Mashovets noted that Russian forces currently lack the numbers and density required to sustain simultaneous offensive operations in the areas of responsibility of the Central Grouping of Forces north and west of Pokrovsk and of the Southern Grouping of Forces against Kostyantynivka.",
+      "published_at": "2026-06-21",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Provides a dated baseline explicitly identifying Ukrainian possession of the relevant Serhiivka northwest of Pokrovsk and constraints on nearby Russian operations.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-21-2026/"
+    },
+    {
+      "excerpt": "Russian forces continued offensive operations in the Pokrovsk direction on June 28 and 29 but did not advance. The spokesperson of a Ukrainian brigade operating in the Pokrovsk direction reported that Russian forces have intensified offensives in the brigade’s area of responsibility, including by increasing ground attacks and drone, artillery, and glide bomb strikes. The spokesperson stated that Russian forces’ goal is to reach Serhiivka (northwest of Pokrovsk) and that Russian forces are increasingly switching to frontal assaults instead of infiltration tactics to accomplish this.",
+      "published_at": "2026-06-29",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Directly identifies Serhiivka as a Russian objective and describes the assault tactics being used to reach it.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-29-2026/"
+    },
+    {
+      "excerpt": "Russian forces are reportedly attempting to bypass Ukrainian positions by conducting infiltration missions in the Pokrovsk direction. A Ukrainian drone battalion’s command post head operating in the Pokrovsk direction stated on July 17 that Russian forces continue attempts to bypass Ukrainian positions without engaging the Ukrainian infantry at those positions, but added that Ukrainian forces are preventing these Russian groups from advancing. A Ukrainian military source indicated that Russian forces maintain a presence west of Rodynske and south of Hryshyne, suggesting that Russian forces have likely infiltrated these areas.",
+      "published_at": "2026-07-17",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Documents nearby infiltration activity relevant to a resolution rule that accepts ISW infiltration shading, while preserving the distinction between reported presence and assessed territorial capture.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-17-2026/"
+    },
+    {
+      "excerpt": "In the Pokrovsk sector, the Defense Forces repelled 37 assaults by the Russian Federation’s army in the areas of Dorozhne, Hryshyne, Novopidhorodne, Rodynske, Vasylivka, Kotlyne, and toward Vilne, Novyi Donbas, Myrne, Serhiivka, and Kucheriv Yar. According to Ukrinform, the General Staff of the Armed Forces of Ukraine shared an update on Facebook regarding the situation on July 17, at 8:00 a.m.",
+      "published_at": "2026-07-17T10:10:00",
+      "publisher": "Ukrinform, reporting the Ukrainian General Staff",
+      "relevance": "Provides a recent official Ukrainian account that explicitly lists assaults toward Serhiivka, without establishing entry into the settlement.",
+      "url": "https://www.ukrinform.net/amp/rubric-ato/4145195-war-update-nearly-250-battles-on-front-lines-russians-attack-most-intensely-in-three-sectors.html"
+    },
+    {
+      "excerpt": "Captain Nazarii Lisovyi, head of the command post of the 59th Brigade’s first unmanned-systems battalion, said the situation remained tense but under Ukrainian control. He said Russian troops were trying to move into Ukrainian rear areas or bypass infantry positions without contact, and that Ukrainian forces were preventing this. He described Ukrainian drone reconnaissance detecting Russian personnel as far as 30 kilometers away and said Russian assault groups sometimes had to walk approximately 50 kilometers because vehicles could not safely approach the front.",
+      "published_at": "2026-07-17T09:35:00",
+      "publisher": "ArmyInform",
+      "relevance": "Supplies the underlying Ukrainian military testimony cited by ISW about obstacles to Russian infiltration in the Pokrovsk sector, so it should not be counted as independent corroboration of that ISW account.",
+      "url": "https://armyinform.com.ua/2026/07/17/%C2%ABdes-50-km-vony-jdut-pishky%C2%BB-yak-zryvayut-rosijski-ataky-na-pokrovskomu-napryamku/"
+    },
+    {
+      "excerpt": "The largest number of assault actions was recorded in the Pokrovsk direction, where Ukrainian defenders stopped 43 attacks. Enemy fire activity and assaults were recorded toward Novopavlivka, Sofiivka, Toretske, Bilytske, Novo Donbas, Bilozerske, Shevchenko, Hryshyne, Myrne, Vasylivka, Serhiivka, Udachne, and Molodetske. According to Ukrinform, this was stated in a report by the General Staff of the Armed Forces of Ukraine on Facebook on the situation as of 08:00 on July 18.",
+      "published_at": "2026-07-18T08:59:00",
+      "publisher": "Ukrinform, reporting the Ukrainian General Staff",
+      "relevance": "Provides cutoff-day reporting that Russian assaults continued toward Serhiivka, updating the immediate threat without asserting qualifying ISW map shading.",
+      "url": "https://www.ukrinform.net/rubric-ato/4145497-war-update-276-combat-clashes-on-front-line-over-past-day-most-in-pokrovsk-and-huliaipole-directions.html"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-18. Selected six dated items addressing Serhiivka northwest of Pokrovsk and the surrounding operational sector; excluded unrelated settlements with the same name, prediction-market pages, undated material, and material published after the cutoff. Publication dates and excerpts were verified from web-search source text; web_fetch failed because of a provider-configuration error, and the requested agent-reach web-read fallback was rate-limited. ArmyInform's excerpt is translated from Ukrainian. Publication times are reproduced as displayed without assuming a time zone. The July 18 ISW assessment was conservatively excluded because its Critical Threats counterpart explicitly says publication was delayed until July 19, creating uncertainty about cutoff-time availability. No archived ISW map snapshot or consecutive finalized daily map layers were verified, so these items do not establish whether the settlement boundary intersected qualifying shading or whether such shading persisted for the required update cycle. The supplied resolution rules end mid-sentence, leaving any omitted exception unverified."
+}

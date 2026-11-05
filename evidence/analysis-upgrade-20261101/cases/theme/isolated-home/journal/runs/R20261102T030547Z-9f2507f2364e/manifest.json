@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-31T12:00:00Z",
+  "audit_role": null,
+  "created_at": "2026-11-02T03:05:47.944260Z",
+  "files": {
+    "claims.json": "8682eb666efce1256f2e3221ea1494e321d91dd59dae647104d70069a75b6867",
+    "diff.json": "2a821522a58eab0cfcc087e2f75a3bd96e849d02e43d36b5b032e5638781bcea",
+    "plan.json": "1c7eb5b223ce5c9c3da16008db72ecc673fc653c5368a0a5cc10aa820101a148",
+    "report.html": "03b0673eb512db85246556a4a85b0d969b0928dd2307b84afba0ead8bf40dfb0",
+    "report.json": "21a268d972c9fdb2372a678d9489137fdec250fec3b65f28cb6866f567d7a44f",
+    "report.md": "6a6bc04955cc0f15a668edd4c22670fcb54b820ea502e5d04f37faf327a7dc3a",
+    "sources.json": "2a921db0954cfbb1e6bb1a611f3ffc48d4bd3ff7aac412e87966e6d0f3fe841b"
+  },
+  "parent_manifest_sha256": "a01c0b8715a0fc26c37dac0b56e559308ad65dd08af341f3ab96c8b0b935f50e",
+  "parent_run": "R20261102T030547Z-547f7a042cad",
+  "run_id": "R20261102T030547Z-9f2507f2364e",
+  "schema_version": 2
+}

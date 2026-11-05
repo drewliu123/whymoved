@@ -1,0 +1,1263 @@
+{
+  "as_of": "2026-10-31T17:29:33Z",
+  "candidates": [
+    {
+      "access_status": "ok",
+      "evidence_kind": "document",
+      "id": "S1",
+      "locator": "source-material/S1/page.txt:323",
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "origin_id": null,
+      "provenance": {
+        "claim_ids": [
+          "C1",
+          "C3",
+          "C17"
+        ],
+        "inline_source_record": {
+          "id": "S1",
+          "published_at": "2025-07-30",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+        },
+        "original_source_id": "S1",
+        "original_source_record": {
+          "document_version": "live official transcript as retrieved; no historical version reconstruction",
+          "event_at": "2025-07-30",
+          "first_retrieved_at": "2026-10-31T17:18:57.816Z",
+          "fiscal_period": "FY25 Q4",
+          "id": "S1",
+          "local_text": "source-material/S1/page.txt",
+          "period_end": "2025-06-30",
+          "period_start": "2025-04-01",
+          "published_at": "2025-07-30",
+          "publisher": "Microsoft",
+          "quotes": [
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-07-30",
+              "id": "S1-L323",
+              "locator": "source-material/S1/page.txt:323",
+              "quote": "Capital expenditures were $24.2 billion, including $6.5 billion of finance leases where we recognize the full value at the time of lease commencement. Cash paid for P, P, and E, was $17.1 billion. The difference is primarily due to finance leases. More than half of our spend was on long-lived assets that will support monetization over the next 15 years and beyond. The remaining spend was primarily for servers, both CPUs and GPUs, and driven by strong demand signals.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-07-30",
+              "id": "S1-L343",
+              "locator": "source-material/S1/page.txt:343",
+              "quote": "Next, building on the strong momentum we saw this past year, we expect to deliver another year of double-digit revenue and operating income growth in FY26. We will continue to invest against the expansive opportunity ahead across both capital expenditures and operating expenses given our leadership position in commercial cloud, strong demand signals for our cloud and AI offerings, and significant contracted backlog. Capital expenditure growth, as we shared last quarter, will moderate compared to FY25 with a greater mix of short-lived assets. Due to the timing of delivery of additional capacity in H1, including large finance lease sites, we expect growth rates in H1 will be higher than in H2. We remain focused on delivering revenue growth and increasing our operational agility, and as a result, expect operating margins to be relatively unchanged year-over-year.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-07-30",
+              "id": "S1-L355",
+              "locator": "source-material/S1/page.txt:355",
+              "quote": "We expect Q1 capital expenditures to be over $30 billion driven by the continued strong demand signals we see. As a reminder, there can be quarterly spend variability from cloud infrastructure buildouts and the timing of delivery of finance leases.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-07-30",
+              "id": "S1-L375",
+              "locator": "source-material/S1/page.txt:375",
+              "quote": "In Azure, we expect Q1 revenue growth of approximately 37% in constant currency driven by strong demand for our portfolio of services on a significant base. Even as we continue bringing more datacenter capacity online, we currently expect to remain capacity constrained through the first half of our fiscal year.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-07-30",
+              "id": "S1-L509",
+              "locator": "source-material/S1/page.txt:509",
+              "quote": "AMY HOOD: Thanks, Kash. Let me back up and first say, when you think about the full year comments I’ve made on capex, as well as the Q1 guidance of over $30 billion, you first have to ground yourself in the fact that we have $368 billion of contracted backlog we need to deliver, not just across Azure, but across the breadth of the Microsoft Cloud.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-07-30",
+              "id": "S1-L511",
+              "locator": "source-material/S1/page.txt:511",
+              "quote": "In terms of feeling good about the ROI and the growth rates and the correlation, I feel very good that the spend that we’re making is correlated to basically contracted on the books business that we need to deliver, and we need the teams to execute at their very best to get the capacity in place as quickly and effectively as they can.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-07-30",
+              "id": "S1-L513",
+              "locator": "source-material/S1/page.txt:513",
+              "quote": "And so, when you look, as we’ve talked about, the growth rate will decline year over year, but at its core, our investments, particularly in short-lived assets like servers, GPUs, CPUs, network and storage, is just really correlated to the backlog we see and the curve of demand. And I talked about it, my gosh, in January, and said I thought we’d be in better supply demand shape by June. And now, I’m saying I hope I’m in better shape by December. And that’s not because we slowed capex. Even with accelerating the spend and trying to pull leases in and get CPUs and GPUs in the system as quickly as we can, we are still seeing demand improve.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-07-30",
+              "id": "S1-L515",
+              "locator": "source-material/S1/page.txt:515",
+              "quote": "And so, I am not as focused, Kash, on trying to pick a date at which revenue growth and capex growth will meet and cross. I’m focused on building backlog, building business and delivering capacity, which we are seeing has a good ROI today in terms of our ability to get that done. I don’t want people to get overly focused on a pivot point, because when you’re in these expansive moments, picking a data point usually means you’re going to pick to be too conservative in terms of market share gain and in terms of winning. And so, I tend to put my energy more there.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+            }
+          ],
+          "retrieval_method": "ego-browser DOM innerText; WebFetch cross-read",
+          "same_origin_group": "Microsoft Investor Relations; six dated documents, one publisher",
+          "sha256": "1d55c41da66838031fa27c19b015a971b5593987ed346cfba69d1cd191c2d630",
+          "status": "retrieved",
+          "tier": "T0",
+          "title": "Microsoft FY25 Q4 earnings conference call",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+        },
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/sources.json",
+        "original_status": "retrieved"
+      },
+      "published_at": "2025-07-30",
+      "publisher": "Microsoft",
+      "quote": "Capital expenditures were $24.2 billion, including $6.5 billion of finance leases where we recognize the full value at the time of lease commencement. Cash paid for P, P, and E, was $17.1 billion. The difference is primarily due to finance leases. More than half of our spend was on long-lived assets that will support monetization over the next 15 years and beyond. The remaining spend was primarily for servers, both CPUs and GPUs, and driven by strong demand signals.",
+      "retrieved_at": "2026-10-31T17:18:57.816Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+    },
+    {
+      "access_status": "ok",
+      "evidence_kind": "document",
+      "id": "S2",
+      "locator": "source-material/S2/page.txt:125",
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "origin_id": null,
+      "provenance": {
+        "claim_ids": [
+          "C2",
+          "C5",
+          "C10"
+        ],
+        "inline_source_record": {
+          "id": "S2",
+          "published_at": "2025-10-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+        },
+        "original_source_id": "S2",
+        "original_source_record": {
+          "document_version": "live official transcript as retrieved; no historical version reconstruction",
+          "event_at": "2025-10-29",
+          "first_retrieved_at": "2026-10-31T17:18:55.870Z",
+          "fiscal_period": "FY26 Q1",
+          "id": "S2",
+          "local_text": "source-material/S2/page.txt",
+          "period_end": "2025-09-30",
+          "period_start": "2025-07-01",
+          "published_at": "2025-10-29",
+          "publisher": "Microsoft",
+          "quotes": [
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-10-29",
+              "id": "S2-L125",
+              "locator": "source-material/S2/page.txt:125",
+              "quote": "Just this quarter, we announced the world’s most powerful AI datacenter, Fairwater in Wisconsin, which will go online next year and scale to two gigawatts alone.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-10-29",
+              "id": "S2-L531",
+              "locator": "source-material/S2/page.txt:531",
+              "quote": "Capital expenditures were $34.9 billion driven by growing demand for our cloud and AI offerings. This quarter, roughly half of our spend was on short-lived assets, primarily GPUs and CPUs, to support increasing Azure platform demand, growing first-party apps and AI solutions, accelerating R&D by our product teams, as well as continued replacement for end-of-life server and networking equipment. The remaining spend was for long-lived assets that will support monetization for the next 15 years and beyond, including $11.1 billion of finance leases that are primarily for large datacenter sites. And cash paid for P, P, and E was $19.4 billion. As a reminder, the difference between total capex and cash paid for P, P, and E is primarily due to finance leases, as well as the normal timing of goods received but not yet paid.     ",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-10-29",
+              "id": "S2-L535",
+              "locator": "source-material/S2/page.txt:535",
+              "quote": "Cash flow from operations was $45.1 billion, up 32% driven by strong cloud billings and collections, partially offset by higher supplier payments. And free cash flow increased 33% to $25.7 billion, with minimal impact from the sequential increase in capex given the higher mix of finance leases.  ",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-10-29",
+              "id": "S2-L643",
+              "locator": "source-material/S2/page.txt:643",
+              "quote": "Next, capital expenditures. With accelerating demand and a growing RPO balance, we’re increasing our spend on GPUs and CPUs. Therefore, total spend will increase sequentially, and we now expect the FY26 growth rate to be higher than FY25. As a reminder, there can be quarterly spend variability from cloud infrastructure buildouts and the timing of delivery of finance leases. ",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2025-10-29",
+              "id": "S2-L691",
+              "locator": "source-material/S2/page.txt:691",
+              "quote": "In Azure, we expect Q2 revenue growth of approximately 37% in constant currency as demand remains significantly ahead of the capacity we have available. And while we’re accelerating the amount of capacity we're bringing online, we will continue to balance Azure revenue growth with the growing needs across our first-party apps and AI solutions, our own R&D efforts, and the end of life server replacements. Therefore, we now expect to be capacity constrained through at least the end of our fiscal year. As a reminder, there can be quarterly variability in the year-on-year growth rates depending on the timing of capacity delivery and when it comes online, as well as from in-period revenue recognition depending on the mix of contracts.  ",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+            }
+          ],
+          "retrieval_method": "ego-browser DOM innerText; WebFetch cross-read",
+          "same_origin_group": "Microsoft Investor Relations; six dated documents, one publisher",
+          "sha256": "34f9d68a31832eccef4458506efd03052f2fac877dc746e85132ae37a0c13fed",
+          "status": "retrieved",
+          "tier": "T0",
+          "title": "Microsoft FY26 Q1 earnings conference call",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+        },
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/sources.json",
+        "original_status": "retrieved"
+      },
+      "published_at": "2025-10-29",
+      "publisher": "Microsoft",
+      "quote": "Just this quarter, we announced the world’s most powerful AI datacenter, Fairwater in Wisconsin, which will go online next year and scale to two gigawatts alone.",
+      "retrieved_at": "2026-10-31T17:18:55.870Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+    },
+    {
+      "access_status": "ok",
+      "evidence_kind": "document",
+      "id": "S3",
+      "locator": "source-material/S3/page.txt:67",
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "origin_id": null,
+      "provenance": {
+        "claim_ids": [
+          "C3",
+          "C9",
+          "C14",
+          "C15"
+        ],
+        "inline_source_record": {
+          "id": "S3",
+          "published_at": "2026-01-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+        },
+        "original_source_id": "S3",
+        "original_source_record": {
+          "document_version": "live official transcript as retrieved; no historical version reconstruction",
+          "event_at": "2026-01-28",
+          "first_retrieved_at": "2026-10-31T17:18:52.255Z",
+          "fiscal_period": "FY26 Q2",
+          "id": "S3",
+          "local_text": "source-material/S3/page.txt",
+          "period_end": "2025-12-31",
+          "period_start": "2025-10-01",
+          "published_at": "2026-01-28",
+          "publisher": "Microsoft",
+          "quotes": [
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L67",
+              "locator": "source-material/S3/page.txt:67",
+              "quote": "All up, we added nearly one gigawatt of total capacity this quarter alone. ",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L297",
+              "locator": "source-material/S3/page.txt:297",
+              "quote": "Capital expenditures were $37.5 billion, and this quarter, roughly two thirds of our capex was on short-lived assets, primarily GPUs and CPUs. Our customer demand continues to exceed our supply. Therefore, we must balance the need to have our incoming supply better meet growing Azure demand with expanding first-party AI usage across services like M365 Copilot and Github Copilot, increasing allocations to R&D teams to accelerate product innovation, and continued replacement of end-of-life server and networking equipment.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L299",
+              "locator": "source-material/S3/page.txt:299",
+              "quote": "The remaining spend was for long-lived assets that will support monetization for the next 15 years and beyond. This quarter, total finance leases were $6.7 billion and were primarily for large datacenter sites. And cash paid for P, P, and E was $29.9 billion.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L301",
+              "locator": "source-material/S3/page.txt:301",
+              "quote": "Cash flow from operations was $35.8 billion, up 60% driven by strong cloud billings and collections. And free cash flow was $5.9 billion and decreased sequentially reflecting the higher cash capital expenditures from a lower mix of finance leases.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L309",
+              "locator": "source-material/S3/page.txt:309",
+              "quote": "Commercial remaining performance obligation, which continues to be reported net of reserves, increased to $625 billion and was up 110% year-over-year with a weighted average duration of approximately two and a half years. Roughly 25% will be recognized in revenue in the next 12 months, up 39% year-over-year. The remaining portion recognized beyond the next 12 months increased 156%. Approximately 45% of our commercial RPO balance is from OpenAI. The significant remaining balance grew 28% and reflects ongoing broad customer demand across the portfolio.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L353",
+              "locator": "source-material/S3/page.txt:353",
+              "quote": "Next, we expect capital expenditures to decrease on a sequential basis due to the normal variability from cloud infrastructure buildouts and the timing of delivery of finance leases. As we work to close the gap between demand and supply, we expect the mix of short-lived assets to remain similar to Q2.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L395",
+              "locator": "source-material/S3/page.txt:395",
+              "quote": "We mentioned the potential impact on Windows OEM and on premises server markets from increased memory pricing earlier. In addition, rising memory prices would impact capital expenditures, though the impact on Microsoft Cloud gross margins will build more gradually as these assets depreciate over six years.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L417",
+              "locator": "source-material/S3/page.txt:417",
+              "quote": "Sometimes, I think it’s probably better to think about the Azure guidance that we give as an allocated capacity guide about what we can deliver in Azure revenue, because as we spend the capital and put GPUs, specifically, it applies to CPUs, but GPUs more specifically, we’re really making long-term decisions.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L419",
+              "locator": "source-material/S3/page.txt:419",
+              "quote": "And the first thing we’re doing is solving for the increased usage in sales and the accelerating pace of M365 Copilot, as well as GitHub Copilot, our first-party apps. Then we make sure we’re investing in the long-term nature of R&D and product innovation. And much of the acceleration that I think you’ve seen from us in products over the past bit is coming because we are allocating GPUs and capacity to many of the talented AI people we’ve been hiring over the past years.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L421",
+              "locator": "source-material/S3/page.txt:421",
+              "quote": "Then when you end up, is that you end up with the remainder going towards serving the Azure capacity that continues to grow in terms of demand. And a way to think about it, because I think I get asked this question sometimes, is if I had taken the GPUs that just came online in Q1 and Q2, in terms of GPUs, and allocated them all to Azure, the KPI would have been over 40.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L429",
+              "locator": "source-material/S3/page.txt:429",
+              "quote": "And so, we don’t want to maximize just one business of ours. We want to be able to allocate capacity while we’re supply constrained in a way that allows us to essentially build the best LTV portfolio. That’s on one side.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L451",
+              "locator": "source-material/S3/page.txt:451",
+              "quote": "And the way to think about that is the majority of the capital that we’re spending today, and a lot of the GPUs that we’re buying are already contracted for most of their useful life. And so, a way to think about that is much of that risk that I think you’re pointing to isn’t there, because they’re already sold for the entirety of their useful life.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-01-28",
+              "id": "S3-L453",
+              "locator": "source-material/S3/page.txt:453",
+              "quote": "And so, part of it exists because you have this shorter-dated RPO because of some of the M365 stuff. If you look at the Azure-only RPO, it’s a little bit more extended. A lot of that is CPU basis. It’s not just GPU. And on the GPU contracts that we’ve talked about, including for some of our largest customers, those are sold for the entire useful life of the GPU. And so, there’s not the risk to which I think you may be referring.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+            }
+          ],
+          "retrieval_method": "ego-browser DOM innerText; WebFetch cross-read",
+          "same_origin_group": "Microsoft Investor Relations; six dated documents, one publisher",
+          "sha256": "788cf3f91589a6a764163f945d23d73a59e23d20796dc46a06edd2cd35428502",
+          "status": "retrieved",
+          "tier": "T0",
+          "title": "Microsoft FY26 Q2 earnings conference call",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+        },
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/sources.json",
+        "original_status": "retrieved"
+      },
+      "published_at": "2026-01-28",
+      "publisher": "Microsoft",
+      "quote": "All up, we added nearly one gigawatt of total capacity this quarter alone. ",
+      "retrieved_at": "2026-10-31T17:18:52.255Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+    },
+    {
+      "access_status": "ok",
+      "evidence_kind": "document",
+      "id": "S4",
+      "locator": "source-material/S4/page.txt:71",
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "origin_id": null,
+      "provenance": {
+        "claim_ids": [
+          "C3",
+          "C5",
+          "C6",
+          "C9"
+        ],
+        "inline_source_record": {
+          "id": "S4",
+          "published_at": "2026-04-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+        },
+        "original_source_id": "S4",
+        "original_source_record": {
+          "document_version": "live official transcript as retrieved; no historical version reconstruction",
+          "event_at": "2026-04-29",
+          "first_retrieved_at": "2026-10-31T17:18:48.636Z",
+          "fiscal_period": "FY26 Q3",
+          "id": "S4",
+          "local_text": "source-material/S4/page.txt",
+          "period_end": "2026-03-31",
+          "period_start": "2026-01-01",
+          "published_at": "2026-04-29",
+          "publisher": "Microsoft",
+          "quotes": [
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L71",
+              "locator": "source-material/S4/page.txt:71",
+              "quote": "All up, we added another gigawatt of capacity this quarter, and remain on track to double our overall footprint in just two years.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L263",
+              "locator": "source-material/S4/page.txt:263",
+              "quote": "Capital expenditures were $31.9 billion, down sequentially due to the normal variability from cloud infrastructure buildouts and the timing of delivery of finance leases. And this quarter, roughly two thirds of our capex was for short-lived assets, primarily GPUs and CPUs.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L265",
+              "locator": "source-material/S4/page.txt:265",
+              "quote": "The remaining spend was for long-lived assets that will support monetization over the next 15 years and beyond. This quarter, total finance leases were $4.7 billion and were primarily for large datacenter sites. And cash paid for P, P, and E was $30.9 billion, roughly in line with capital expenditures as the impact from finance leases was partially offset by differences between the receipt of goods and payment.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L267",
+              "locator": "source-material/S4/page.txt:267",
+              "quote": "Cash flow from operations was $46.7 billion, up 26% driven by strong cloud billings and collections, partially offset by an increase in operating lease payments. And free cash flow was $15.8 billion reflecting higher capital expenditures.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L321",
+              "locator": "source-material/S4/page.txt:321",
+              "quote": "Microsoft Cloud gross margin percentage should be roughly 64%, down year-over-year driven by continued investments in AI and increased GitHub Copilot usage. Just this week we announced a business model transition in GitHub Copilot that will align pricing with usage and value that takes effect on June 1st of this year.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L339",
+              "locator": "source-material/S4/page.txt:339",
+              "quote": "In Azure, we continue to focus on accelerating the delivery of capacity and increasing fleet efficiencies and therefore we expect Q4 revenue growth to be between 39% and 40% in constant currency against a strong prior year comparable that included accelerating growth. Broad and growing customer demand continues to exceed supply and we continue to balance the incoming supply we can allocate here against our other high ROI priorities: first party applications, R&D, and end of life server replacement.  As a reminder, year-over-year Azure growth rates can vary quarter to quarter based on capacity timing and contract mix.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L361",
+              "locator": "source-material/S4/page.txt:361",
+              "quote": "We expect CapEx spend to increase to over $40 billion as we continue to bring more capacity online. The sequential increase includes roughly $5 billion from higher component pricing as well as the impact from finance leases which add variability given the full value is recorded in the period of lease commencement. And we expect the mix of short-lived assets to remain similar to Q3.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L363",
+              "locator": "source-material/S4/page.txt:363",
+              "quote": "For calendar year 2026, we expect to invest roughly $190 billion in capital expenditures which includes approximately $25 billion from the impact of higher component pricing. We remain confident in the return on these investments given higher demand signals and increasing product usage as well as the efficiencies we’re already driving across the platform.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-04-29",
+              "id": "S4-L365",
+              "locator": "source-material/S4/page.txt:365",
+              "quote": "Even with these additional investments, and continued efforts to bring GPU, CPU and storage capacity online faster, we expect to remain constrained at least through 2026. Despite these constraints, and the continued need to balance incoming supply, we expect Azure growth to show modest acceleration in the second half of the calendar year compared with the first half.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+            }
+          ],
+          "retrieval_method": "ego-browser DOM innerText; WebFetch cross-read",
+          "same_origin_group": "Microsoft Investor Relations; six dated documents, one publisher",
+          "sha256": "2b7326afecbd267184fad1e33191cd9ca9ee56833ea4a766a19160f01e7dd2d7",
+          "status": "retrieved",
+          "tier": "T0",
+          "title": "Microsoft FY26 Q3 earnings conference call",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+        },
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/sources.json",
+        "original_status": "retrieved"
+      },
+      "published_at": "2026-04-29",
+      "publisher": "Microsoft",
+      "quote": "All up, we added another gigawatt of capacity this quarter, and remain on track to double our overall footprint in just two years.",
+      "retrieved_at": "2026-10-31T17:18:48.636Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+    },
+    {
+      "access_status": "ok",
+      "evidence_kind": "document",
+      "id": "S5",
+      "locator": "source-material/S5/page.txt:55",
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "origin_id": null,
+      "provenance": {
+        "claim_ids": [
+          "C3",
+          "C4",
+          "C5",
+          "C7",
+          "C9",
+          "C11",
+          "C12",
+          "C15",
+          "C16",
+          "C17"
+        ],
+        "inline_source_record": {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        "original_source_id": "S5",
+        "original_source_record": {
+          "document_version": "live official transcript as retrieved; no historical version reconstruction",
+          "event_at": "2026-07-29",
+          "first_retrieved_at": "2026-10-31T17:18:45.006Z",
+          "fiscal_period": "FY26 Q4",
+          "id": "S5",
+          "local_text": "source-material/S5/page.txt",
+          "period_end": "2026-06-30",
+          "period_start": "2026-04-01",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "quotes": [
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L55",
+              "locator": "source-material/S5/page.txt:55",
+              "quote": "We added 31 new datacenters across 5 continents this quarter, bringing the total to 88 this year, as we expand our footprint in response to accelerating demand.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L57",
+              "locator": "source-material/S5/page.txt:57",
+              "quote": "We are also bringing capacity online faster than ever. Over the last fiscal year, we have reduced dock-to-live times for new GPUs in our largest regions by nearly 50%.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L291",
+              "locator": "source-material/S5/page.txt:291",
+              "quote": "Capital expenditures were $41 billion including the impact from higher component pricing as noted in our guide. Roughly two thirds of our capex was for short-lived assets, primarily CPUs and GPUs as customers increasingly build solutions that leverage both AI and non-AI infrastructure.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L293",
+              "locator": "source-material/S5/page.txt:293",
+              "quote": "The remaining spend was for long-lived assets. This quarter, total finance leases were $5.6 billion and were primarily for large datacenter sites. And cash paid for P, P, and E was $35.8 billion.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L295",
+              "locator": "source-material/S5/page.txt:295",
+              "quote": "Cash flow from operations was $55.4 billion, up 30% driven by strong cloud billings and collections, partially offset by an increase in operating lease payments. And free cash flow was $19.6 billion reflecting higher capital expenditures.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L303",
+              "locator": "source-material/S5/page.txt:303",
+              "quote": "Commercial remaining performance obligation grew 84% to $678 billion. All sequential commercial RPO growth was driven by commitments from customers outside of frontier model companies. And RPO increased 25% when excluding OpenAI. ",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L305",
+              "locator": "source-material/S5/page.txt:305",
+              "quote": "RPO, including OpenAI, has a weighted average duration of 2.3 years. And roughly 30% will be recognized in revenue in the next 12 months, up 37% year-over-year. The remaining portion recognized beyond the next 12 months increased 112%.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L307",
+              "locator": "source-material/S5/page.txt:307",
+              "quote": "Microsoft Cloud revenue was $59.3 billion and grew 27%, reflecting strong demand across Azure and our first-party AI applications and services. And for the full year, our cloud revenue surpassed $214 billion, with nearly 90% from customers outside of frontier model companies.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L309",
+              "locator": "source-material/S5/page.txt:309",
+              "quote": "Microsoft Cloud gross margin percentage was better than expected at 65%, and down year-over-year driven by sales mix shift to Azure, as well as continued investments in AI infrastructure and increased product usage, partially offset by ongoing efficiency gains noted earlier.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L315",
+              "locator": "source-material/S5/page.txt:315",
+              "quote": "M365 Commercial cloud revenue increased 16% on an adjusted basis when normalized for the prior-year comparable that benefited from 2 points of in-period revenue recognition. And on a reported basis, revenue growth was 14%. Building on our Copilot momentum from Q3, net paid seat adds more than doubled sequentially, with paid seats now over 30 million. Premium offerings, including Copilot, E5, and early traction in E7, drove ARPU growth this quarter. And paid M365 Commercial seats grew 6% year-over-year with installed base expansion across all customer segments, though primarily in our small and medium business and frontline worker offerings.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L329",
+              "locator": "source-material/S5/page.txt:329",
+              "quote": "In Azure and other cloud services, revenue grew 43%, against a prior year that included accelerating growth. Customer demand continues to exceed available capacity. Revenue growth was ahead of expectations driven by efficiency gains across our CPU and GPU fleet as well as process improvements to enable earlier delivery of new capacity. That additional in-quarter capacity for Azure was quickly monetized. Results also benefited from stronger-than-expected GitHub Copilot consumption following the June business model change to align pricing with usage and value.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L345",
+              "locator": "source-material/S5/page.txt:345",
+              "quote": "Now, before I move to outlook, effective at the start of FY27, we are extending the estimated useful lives of our datacenters and office buildings, from 15 to 25 years, reflecting our operating history and expected use of these assets. The impact of this update is reflected in today's guidance.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L347",
+              "locator": "source-material/S5/page.txt:347",
+              "quote": "This change affects only the timing of future depreciation and is expected to have a minimal benefit to FY27 operating income. The greater impact is on capital expenditures as more of our future datacenter leases will shift from finance leases to operating leases as a result of this update. Finance leases are included in capital expenditures while operating leases are not. Outside of this useful life impact, our calendar year 2026 CapEx investment expectations remain unchanged. However, the shift from finance to operating leases adjusts our expectation to approximately $175 billion.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L359",
+              "locator": "source-material/S5/page.txt:359",
+              "quote": "At the company level, with strong commercial momentum, we continue to expect another fiscal year of double-digit revenue and operating income growth. Operating expenses should grow in the mid to high-single digits, reflecting continued investment in R&D compute capacity, talent, and data. And we expect FY27 capital expenditures will grow year-over-year given demand signals across our portfolio.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L361",
+              "locator": "source-material/S5/page.txt:361",
+              "quote": "Even as we invest to meet growing demand, full fiscal year operating margins should be down less than a point. In addition, we expect to remain free cash flow positive in FY27.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L391",
+              "locator": "source-material/S5/page.txt:391",
+              "quote": "In Azure, we expect revenue growth of approximately 45% in constant currency and we remain focused on delivering efficiencies that help us bridge the gaps we see as customer demand continues to exceed supply. Even with the strong close to Q4, we continue to expect H1 growth to accelerate. And as a reminder, year-over-year Azure growth rates can vary quarter-to-quarter based on capacity timing and contract mix.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L413",
+              "locator": "source-material/S5/page.txt:413",
+              "quote": "We expect CapEx spend will be over $50 billion including the lease reclassification impact from the useful life update.  ",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L480",
+              "locator": "source-material/S5/page.txt:480",
+              "quote": "Currently, the situation is obviously that demand exceeds available supply in a relatively extreme moment, but when you start to think about over the duration, I try to remind people, a lot of the expense, especially you see it in CapEx, you’ve seen our CapEx really pivot toward what I would call and do call short-lived assets, which really, that’s CPUs and GPUs that have relatively shorter lead times. And so, if the demand environment changes, you just slow down what is, in fact, the largest component and the driver of COGS.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L482",
+              "locator": "source-material/S5/page.txt:482",
+              "quote": "The investment into land and data center builds is actually quite flexible. It’s a smaller percentage of the overall cost structure, and timing can be changed on much of that, especially on the builds, or you can stagger the timing of the build out of, as I was saying, some of the GPUs and CPUs that you plan to put in.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L488",
+              "locator": "source-material/S5/page.txt:488",
+              "quote": "When you have the ability to late bind some of the more expensive components in short term, you have a big book of business that’s flexible. You have a big first-party app business that also uses the capacity that you’re building out in addition to your Azure platform. It does allow us to have a lot more flexibility to manage through those.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L492",
+              "locator": "source-material/S5/page.txt:492",
+              "quote": "And we’re adding this capacity, to your point, but a lot of this obviously, is also being sold in newer contracts. And we’re able to have the pricing reflect it, but keep value where we – listen, for the long term, you want to have pricing work for customers and for you. And so, we’re trying to stay focused on that as well.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L576",
+              "locator": "source-material/S5/page.txt:576",
+              "quote": "I don’t know that, quite frankly, my math has changed in terms of how I do it over the past year. I would say the way to think about it for me is more the confidence in the TAM expansion, the margin levers that we have in terms of both product improvements than the infrastructure improvements.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-07-29",
+              "id": "S5-L580",
+              "locator": "source-material/S5/page.txt:580",
+              "quote": "We still have opportunities, obviously, as we continue to look for the best price performance on silicon, including our investments in first party. The work, frankly, on model diversification also is a margin improvement opportunity. Being able to serve the best possible outcome with a more efficient, or both efficient in terms of token usage and efficient in terms of cost structure are also margin levers. All of these things contribute, obviously, to your point of increased confidence in ROIC, frankly, of the dollars that we’re investing and continue to invest going forward.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            }
+          ],
+          "retrieval_method": "ego-browser DOM innerText; WebFetch cross-read",
+          "same_origin_group": "Microsoft Investor Relations; six dated documents, one publisher",
+          "sha256": "3c029abf73d25b3e1b4bb2dcf31ce4ffbb602f7ed8d1aac6299320860a9ea98a",
+          "status": "retrieved",
+          "tier": "T0",
+          "title": "Microsoft FY26 Q4 earnings conference call",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/sources.json",
+        "original_status": "retrieved"
+      },
+      "published_at": "2026-07-29",
+      "publisher": "Microsoft",
+      "quote": "We added 31 new datacenters across 5 continents this quarter, bringing the total to 88 this year, as we expand our footprint in response to accelerating demand.",
+      "retrieved_at": "2026-10-31T17:18:45.006Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+    },
+    {
+      "access_status": "ok",
+      "evidence_kind": "document",
+      "id": "S6",
+      "locator": "source-material/S6/page.txt:209",
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "origin_id": null,
+      "provenance": {
+        "claim_ids": [
+          "C4",
+          "C5",
+          "C8",
+          "C9",
+          "C11",
+          "C12",
+          "C13",
+          "C15",
+          "C16",
+          "C17"
+        ],
+        "inline_source_record": {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        },
+        "original_source_id": "S6",
+        "original_source_record": {
+          "document_version": "live official transcript as retrieved; no historical version reconstruction",
+          "event_at": "2026-10-28",
+          "first_retrieved_at": "2026-10-31T17:18:42.048Z",
+          "fiscal_period": "FY27 Q1",
+          "id": "S6",
+          "local_text": "source-material/S6/page.txt",
+          "period_end": "2026-09-30",
+          "period_start": "2026-07-01",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "quotes": [
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L209",
+              "locator": "source-material/S6/page.txt:209",
+              "quote": "Accelerating demand led to us adding 24 new data centers across five continents this quarter.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L259",
+              "locator": "source-material/S6/page.txt:259",
+              "quote": "In closing, based on the demand we see, the strength of our products, and the efficiencies we are driving across the stack, I have never been more confident in the long-term returns on our investments.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L269",
+              "locator": "source-material/S6/page.txt:269",
+              "quote": "Operating expenses increased 6%, driven by continued investments in R&D compute capacity and talent. Operating margins increased slightly year-over-year to 50%, driven by strong revenue growth, platform efficiency gains, and focused investments across our portfolio, partially offset by sales mix shift to Azure.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L273",
+              "locator": "source-material/S6/page.txt:273",
+              "quote": "Capital expenditures were $45.2 billion, as some third-party capacity deliveries we expected in Q1 were delayed. Roughly three quarters of our capex was for short-lived assets, primarily CPUs and GPUs, including higher memory and storage costs, as we continue to invest in the infrastructure required for our customers to build and scale AI applications.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L275",
+              "locator": "source-material/S6/page.txt:275",
+              "quote": "The remaining spend was for long-lived assets. This quarter, finance leases were $7.4 billion. As a reminder, we recognize the full principal value of finance leases in capex at the time of lease commencement. And cash paid for P, P, and E was $39.4 billion.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L277",
+              "locator": "source-material/S6/page.txt:277",
+              "quote": "Cash flow from operations was $58 billion, up 29% driven by strong cloud billings and collections. And free cash flow was $18.6 billion reflecting higher capital expenditures.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L279",
+              "locator": "source-material/S6/page.txt:279",
+              "quote": "And finally, we returned $10.2 billion to shareholders through dividends and share repurchases.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L281",
+              "locator": "source-material/S6/page.txt:281",
+              "quote": "Now, to our segment results, reported under the updated segment structure announced in September.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L287",
+              "locator": "source-material/S6/page.txt:287",
+              "quote": "Commercial remaining performance obligation grew 73% to $677 billion, with a smaller sequential decline relative to historical seasonality due to the large Azure commitment this quarter. ",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L289",
+              "locator": "source-material/S6/page.txt:289",
+              "quote": "Our RPO has a weighted average duration of 2.3 years. And roughly 30% will be recognized in revenue in the next 12 months, up 29% year-over-year. The remaining portion recognized beyond the next 12 months increased 98%.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L291",
+              "locator": "source-material/S6/page.txt:291",
+              "quote": "Now to Microsoft Cloud. Revenue was $63.9 billion and growth accelerated to 30% and 31% in constant currency, with sequential dollars added nearly doubling year-over-year, reflecting strong demand across Azure and M365 Commercial cloud.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L293",
+              "locator": "source-material/S6/page.txt:293",
+              "quote": "Azure revenue was ahead of expectations and increased 48%, even with the 3P capacity delays noted earlier, driven by Foundry and improved CPU monetization. Foundry revenue more than tripled year-over-year with upside driven by efficiency gains across our GPU fleet that allowed us to allocate additional capacity to customers, as well as higher revenue per token that we benefited from in the quarter. Across our CPU fleet, engineering work enabled us to identify and monetize underutilized capacity this quarter, helping us serve more of the growing demand with our existing capacity. The timing of engineering efficiencies like these as well as 3P GPU lease deliveries, our own capacity build outs, and ARPU changes from model mix, can create quarterly variability in the year-over-year growth rate.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L305",
+              "locator": "source-material/S6/page.txt:305",
+              "quote": "Microsoft Cloud gross margin percentage declined year-over-year to 66%, driven by sales mix shift to Azure, partially offset by product-level margin improvements, primarily in Azure.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L329",
+              "locator": "source-material/S6/page.txt:329",
+              "quote": "In Azure, we expect revenue growth of 49 to 50% in constant currency with continued efficiency gains across our CPU and GPU fleet helping to offset some 3P GPU as a service contracts that have been delayed to H2. Customer demand continues to exceed available supply. And looking beyond Q2, year-over-year growth will continue to reflect the timing and scale of engineering efficiencies delivered in the quarter, and new capacity adds, as well as a strong prior-year comparable that included accelerating growth in the second half.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L341",
+              "locator": "source-material/S6/page.txt:341",
+              "quote": "Microsoft Cloud gross margin percentage should be roughly 65%, down year-over-year as continued improvement in product-level margins is more than offset by sales mix shift to Azure.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L361",
+              "locator": "source-material/S6/page.txt:361",
+              "quote": "In Q2, we expect CapEx spend will be over $50 billion. Therefore, for the calendar year, spend should be approximately $170 billion due to the 3P capacity delays noted earlier. In the second half of the fiscal year, we currently expect CapEx spend to accelerate primarily from CPUs, inclusive of higher memory and storage costs, and GPUs, as well as the 3P capacity deliveries that shifted to H2. And as we continue to improve the efficiency of our infrastructure, each dollar of capex has the potential to support more revenue and higher returns over time.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L363",
+              "locator": "source-material/S6/page.txt:363",
+              "quote": "Given our strong business performance, we expect to continue to remain free cash flow positive in FY27. To complement cash generated by the business and preserve financial flexibility, we will access additional sources of funding when we believe it is attractive to do so.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L379",
+              "locator": "source-material/S6/page.txt:379",
+              "quote": "SATYA NADELLA: Thanks for the question, Adam. I’d say all of the above, but I think the way we’re coming at this is we have one pool, and we want to get the pool to be as efficient and fungible. That’s the place where, if I think about all of the physics of how we’re building out the data centers, all the operational rigor with which we can bring up the capacity, and then, of course, how do we run the workloads that are optimized on our infrastructure?",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L381",
+              "locator": "source-material/S6/page.txt:381",
+              "quote": "And once you do that, then it’s just a function of how we allocate it by looking at the demand signal. And even there, even in our new segment reporting, I think you kind of see it, which is Copilot, Copilot stateful database underneath it is Work IQ. That gets used in Foundry, which is where people will build, let’s say, a multi-agent system for supply chain that spans both unstructured and structured. Of course, it uses a Postgres database in Azure. And then, by the way, all the agentic work is registered in the Agent 365, and Perception manages the security of it.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L383",
+              "locator": "source-material/S6/page.txt:383",
+              "quote": "To us, at least, we look at all of this as the same infrastructure. Of course, we report to you in a variety of different products, but your core question of where is the margin going to come from, where is the leverage going to come from, it’s going to come from every one of them. And it compounds when we work them across.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L405",
+              "locator": "source-material/S6/page.txt:405",
+              "quote": "Those efficiencies, they’re ground out every week. And you have good ideas; a lot work, some don’t, and you stay at it. They’re not maybe as predictable in terms of how much impact we’ll get in quarter. Q1, they did a very good job, and you saw some of that result in us being able to put more allocation into Foundry in the quarter.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L409",
+              "locator": "source-material/S6/page.txt:409",
+              "quote": "Secondly, and you mentioned it, token pricing will create a little bit of variability. We had higher token pricing than we expected in the quarter. Listen, high quality models that we’re able to take advantage of and see good margins on do benefit us in the quarter. That did happen in Q1.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L413",
+              "locator": "source-material/S6/page.txt:413",
+              "quote": "In Q2 we’ve got those efficiency gains, which is great, and those will continue into Q2. We need to find some more, which we’re counting on, enable to get to that guidance that I gave because I have faith in the teams who work in Q1 continuing into Q2. But we also need that work to be able to help us a little bit because we had some supply we were counting on Q2 move out into H2.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L415",
+              "locator": "source-material/S6/page.txt:415",
+              "quote": "And so, I think, and to your point, there’s also some unknown on some token pricing through the quarter. That stuff can change.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L443",
+              "locator": "source-material/S6/page.txt:443",
+              "quote": "And so, in that sense, the enterprise breadth motion is starting, but like everything else, the enterprise stuff is not a quarter over quarter. It’s a decade-long thing, and that’s what I’ve been waiting for, as opposed to four customers who buy a lot of capacity from you, and you can show a few quarters of growth. And that’s not a business, as far as I’m concerned.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L445",
+              "locator": "source-material/S6/page.txt:445",
+              "quote": "I want the breadth. We are well positioned on the breadth, and we have large customers who want to buy from us. And we’re open for business with it. And as long as the pricing is right, we may sell them some. If not, we will be patient about building the breadth business.",
+              "speaker": "SATYA NADELLA",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L525",
+              "locator": "source-material/S6/page.txt:525",
+              "quote": "AMY HOOD: Great. I’ll take that. I think what I said is, if it’s attractive and makes sense. We’re lucky; we have a lot of flexibility in terms of our capacity to raise financing. I’ve talked about this before. There’s a form of financing called leasing, and we’ve been using that one as a vehicle. Also, we’re fortunate to have access in the debt markets, given that where our ratings are, and we haven’t been able to, and we haven’t yet, I would say, tap that.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            },
+            {
+              "context": "prepared remarks or Q&A; see surrounding lines",
+              "date": "2026-10-28",
+              "id": "S6-L527",
+              "locator": "source-material/S6/page.txt:527",
+              "quote": "And then, of course, there’s other options, but I think the way I see it is we’re feeling good that we’re free cash flow positive. We feel good that the return on every dollar of CapEx we’re spending, we’re confident in that. And therefore, we feel like we have lots of options to be able to tap the financing markets when they make sense and they’re attractive.",
+              "speaker": "AMY HOOD",
+              "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+            }
+          ],
+          "retrieval_method": "ego-browser DOM innerText; WebFetch cross-read",
+          "same_origin_group": "Microsoft Investor Relations; six dated documents, one publisher",
+          "sha256": "847292107f63f7cdc9d16af875b7212bacc10669e060f53a9e3bd917afb7cf3c",
+          "status": "retrieved",
+          "tier": "T0",
+          "title": "Microsoft FY27 Q1 earnings conference call",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        },
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/sources.json",
+        "original_status": "retrieved"
+      },
+      "published_at": "2026-10-28",
+      "publisher": "Microsoft",
+      "quote": "Accelerating demand led to us adding 24 new data centers across five continents this quarter.",
+      "retrieved_at": "2026-10-31T17:18:42.048Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+    }
+  ],
+  "historical": false,
+  "historical_policy": "No historical availability assertions. historical=false describes a dev replay, not a reconstructed historical run.",
+  "mode": "development_regression_frozen_reuse",
+  "original_source_audit": {
+    "as_of": "2026-10-31T17:29:33Z",
+    "discovery_checks": [
+      {
+        "note": "Browser homepage identifies latest earnings FY27 Q1 dated October 28 2026; research cut-off is October 31.",
+        "retrieved_at": "2026-10-31 (exact time not retained)",
+        "status": "retrieved",
+        "url": "https://www.microsoft.com/en-us/investor/default"
+      },
+      {
+        "note": "Browser confirms latest release dated October 28 and quarter ended September 30 2026. Used to check availability/period only; research evidence is six transcripts.",
+        "status": "retrieved",
+        "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+      }
+    ],
+    "retrieval_attempts": [
+      {
+        "error": "HTTP Error 403: Forbidden",
+        "id": "S1",
+        "retrieved_at": "2026-10-31T17:17:28.576573+00:00",
+        "status": "failed",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+      },
+      {
+        "error": "HTTP Error 403: Forbidden",
+        "id": "S2",
+        "retrieved_at": "2026-10-31T17:17:28.577183+00:00",
+        "status": "failed",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+      },
+      {
+        "error": "HTTP Error 403: Forbidden",
+        "id": "S3",
+        "retrieved_at": "2026-10-31T17:17:28.577466+00:00",
+        "status": "failed",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+      },
+      {
+        "error": "HTTP Error 403: Forbidden",
+        "id": "S4",
+        "retrieved_at": "2026-10-31T17:17:28.577757+00:00",
+        "status": "failed",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+      },
+      {
+        "error": "HTTP Error 403: Forbidden",
+        "id": "S5",
+        "retrieved_at": "2026-10-31T17:17:28.578094+00:00",
+        "status": "failed",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+      },
+      {
+        "error": "HTTP Error 403: Forbidden",
+        "id": "S6",
+        "retrieved_at": "2026-10-31T17:17:28.578295+00:00",
+        "status": "failed",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+      },
+      {
+        "error": "HTTP 404; corrected to official events URL; not used as evidence",
+        "method": "WebFetch",
+        "status": "failed",
+        "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q1/earnings-call-transcript"
+      }
+    ],
+    "source_count": 6,
+    "source_independence": "Six official dated disclosures from one issuer; these are not six independent views. No source after 2026-10-31 used."
+  },
+  "schema_version": 2,
+  "source_status": {
+    "S1": {
+      "original_status": "retrieved",
+      "reason": "Original retrieval record reused, no new fetch.",
+      "status": "ok"
+    },
+    "S2": {
+      "original_status": "retrieved",
+      "reason": "Original retrieval record reused, no new fetch.",
+      "status": "ok"
+    },
+    "S3": {
+      "original_status": "retrieved",
+      "reason": "Original retrieval record reused, no new fetch.",
+      "status": "ok"
+    },
+    "S4": {
+      "original_status": "retrieved",
+      "reason": "Original retrieval record reused, no new fetch.",
+      "status": "ok"
+    },
+    "S5": {
+      "original_status": "retrieved",
+      "reason": "Original retrieval record reused, no new fetch.",
+      "status": "ok"
+    },
+    "S6": {
+      "original_status": "retrieved",
+      "reason": "Original retrieval record reused, no new fetch.",
+      "status": "ok"
+    },
+    "regression_external_retrieval": {
+      "reason": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。",
+      "status": "not_run"
+    }
+  }
+}

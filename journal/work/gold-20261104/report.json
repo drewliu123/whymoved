@@ -1,0 +1,416 @@
+{
+ "schema_version": 2,
+ "title": "黄金：利率压顶、官方托底，方向看油价与12月FOMC",
+ "question": "研究下当前市场的黄金等可能走势",
+ "task": "黄金及联动资产1—3个月走势情景研究",
+ "type": "asset",
+ "as_of": "2026-11-04T07:30:00+00:00",
+ "answer": {
+  "text": "未来1—3个月（至12月FOMC及1月初）判断：金价大概率在3800—4300美元区间震荡，方向由油价—通胀—美联储链条决定。加息已大体被定价，因此不对称性在于鹰派预期退潮：若油价继续回落、10月CPI降温使12月加息落空，金价有修复空间；若油价重回110美元以上并迫使美联储连续加息，跌破3900美元的风险上升。白银弹性更大，波动方向与金价一致但幅度约两倍。",
+  "claim_ids": [
+   "C-VIEW",
+   "C-DD"
+  ]
+ },
+ "findings": [
+  {
+   "title": "这轮下跌分两段，第二段是利率驱动",
+   "claim_ids": [
+    "C-DD",
+    "C-LEG1",
+    "C-MECH",
+    "C-REAL",
+    "C-FED-SEP",
+    "C-FED-OCT"
+   ],
+   "text": "金价较1月高点回落约24%。1—3月的第一段下跌发生在实际利率几乎不变时，更像投机仓位出清；4月以后，油价推高通胀、美联储9月加息，10年期实际利率升到2.6%—3.0%，成为主要压力。",
+   "why_it_matters": "两段原因不同：仓位出清大体已经完成，接下来的方向主要取决于利率。",
+   "increment": {
+    "kind": "connection",
+    "baseline": "常见叙事把下跌归为“泡沫破裂”",
+    "detail": "用实际利率与时间分段区分两种原因"
+   }
+  },
+  {
+   "title": "战争升级目前对黄金是利空",
+   "claim_ids": [
+    "C-CORR",
+    "C-OIL"
+   ],
+   "text": "4月以后金价与油价日收益相关为负（-0.45 / -0.21）。11月2—4日油价回落约7%，金价反而从低点回升约3%。",
+   "why_it_matters": "这与“地缘冲突利好黄金”的直觉相反：冲突缓和反而可能利好金价。",
+   "increment": {
+    "kind": "contradiction",
+    "baseline": "避险资产直觉：冲突升级利好黄金",
+    "detail": "分阶段金油相关系数为负，与直觉相反"
+   }
+  },
+  {
+   "title": "央行在买，但没能扭转价格",
+   "claim_ids": [
+    "C-WGC",
+    "C-DEMAND",
+    "V-WGC"
+   ],
+   "text": "Q3央行购金321吨、同比多42%，ETF也回流211吨，但季度均价环比仍跌5%，10月又创年内新低。",
+   "why_it_matters": "官方买盘更像底部支撑，限制大幅下跌，但不足以单独带动上涨。",
+   "increment": {
+    "kind": "contradiction",
+    "baseline": "“央行购金必涨”",
+    "detail": "买盘与价格背离"
+   }
+  }
+ ],
+ "alternatives": [
+  {
+   "title": "避险与官方买盘重新主导",
+   "claim_ids": [
+    "C-DEMAND",
+    "V-WGC"
+   ],
+   "text": "若冲突演变为金融制裁或美元资产信任问题，央行购金加速，金价可能脱离利率上涨。目前相关性数据不支持这一点。"
+  },
+  {
+   "title": "仓位仍未出清",
+   "claim_ids": [
+    "C-LEG1",
+    "C-DD"
+   ],
+   "text": "白银从高点跌约55%，说明投机出清剧烈；若持仓仍拥挤，可能继续抛售。本轮未取CFTC持仓，无法核实。"
+  }
+ ],
+ "limitations": [
+  {
+   "text": "网页搜索工具不可用，媒体只取得标题；伊朗和谈等地缘归因未读原文，只作背景，判断依赖价格与官方数据。",
+   "material": false,
+   "claim_ids": []
+  },
+  {
+   "text": "未取得CFTC持仓、CME FedWatch与机构金价预测调查，仓位出清程度与卖方共识是缺口。",
+   "material": true,
+   "claim_ids": []
+  }
+ ],
+ "watch": [
+  {
+   "signal": "10月CPI（11月中旬发布）及油价是否重回110美元",
+   "meaning": "降温则12月加息概率下降，利好金价；反之支持继续下探。",
+   "claim_ids": [
+    "C-CPI",
+    "C-MECH"
+   ]
+  },
+  {
+   "signal": "12月8—9日FOMC决议与点阵图",
+   "meaning": "检验T3：金价对鹰派/鸽派意外的反应强度决定利率主线是否仍然主导。",
+   "claim_ids": [
+    "C-CAL",
+    "P-PM-DEC"
+   ]
+  },
+  {
+   "signal": "央行月度购金与Q4 ETF流向",
+   "meaning": "若在利率上行时金价仍走强，说明避险/官方主线开始接管。",
+   "claim_ids": [
+    "C-WGC"
+   ]
+  }
+ ],
+ "tables": [
+  {
+   "title": "关键数据快照",
+   "claim_ids": [
+    "P-GC-NOW",
+    "P-GC-PEAK",
+    "P-GC-LOW",
+    "P-SI-NOW",
+    "P-CL-NOW",
+    "C-REAL",
+    "P-PM-DEC"
+   ],
+   "columns": [
+    "指标",
+    "数值"
+   ],
+   "rows": [
+    [
+     "金价（11月4日）",
+     4033.4
+    ],
+    [
+     "金价1月29日高点",
+     5318.4
+    ],
+    [
+     "金价10月30日低点",
+     3898.9
+    ],
+    [
+     "白银（11月4日）",
+     51.72
+    ],
+    [
+     "WTI原油（11月4日）",
+     96.48
+    ],
+    [
+     "10年期实际利率%（11月2日）",
+     2.62
+    ],
+    [
+     "12月加息定价（Polymarket）",
+     0.755
+    ]
+   ],
+   "note": "期货连续合约延迟行情；Polymarket为Gamma参考价。"
+  }
+ ],
+ "analysis": {
+  "version": 1,
+  "question_kind": "event_forecast",
+  "method": "reference_class_scenarios",
+  "price_relevance": true,
+  "baseline": "2026年11月4日金价约4033美元、实际利率2.62%、12月加息定价约75%。",
+  "baseline_claim_ids": [
+   "P-GC-NOW",
+   "C-REAL",
+   "P-PM-DEC"
+  ],
+  "mechanism_chain": [
+   "地缘冲突与油价",
+   "总体通胀",
+   "美联储加息预期",
+   "实际利率",
+   "金价"
+  ],
+  "hypotheses": [
+   {
+    "id": "H1",
+    "explanation": "利率主线：油价通胀推动美联储加息与实际利率上升，主导金价"
+   },
+   {
+    "id": "H2",
+    "explanation": "避险与官方买盘主线：地缘冲突和央行购金主导金价"
+   },
+   {
+    "id": "H3",
+    "explanation": "仓位出清主线：高位投机仓位去杠杆，与利率无关"
+   }
+  ],
+  "tests": [
+   {
+    "id": "T1",
+    "outcomes": [
+     {
+      "hypothesis_id": "H1",
+      "prediction": "相关为负：油价涨→加息预期升→金价跌"
+     },
+     {
+      "hypothesis_id": "H2",
+      "prediction": "相关为正：冲突升级同时推高油价与避险金价"
+     }
+    ],
+    "by": "2026-11-04",
+    "status": "observed",
+    "claim_ids": [
+     "P-GC-NOW",
+     "P-CL-NOW",
+     "C-CORR"
+    ],
+    "supports": [
+     "H1"
+    ],
+    "weakens": [
+     "H2"
+    ],
+    "interpretation": "4月后金油相关转负（-0.45、-0.21），符合利率主线，不符合避险主线；相关不等于因果，但符号稳定。",
+    "next_observation": "油价大幅波动日的金价方向",
+    "supports_if": "油价上涨日金价继续下跌",
+    "weakens_if": "冲突升级日金价与油价同涨"
+   },
+   {
+    "id": "T2",
+    "outcomes": [
+     {
+      "hypothesis_id": "H1",
+      "prediction": "买盘强但价格仍下跌"
+     },
+     {
+      "hypothesis_id": "H2",
+      "prediction": "买盘强且价格企稳上涨"
+     }
+    ],
+    "by": "2026-11-04",
+    "status": "observed",
+    "claim_ids": [
+     "C-WGC",
+     "P-GC-LOW",
+     "C-DEMAND"
+    ],
+    "supports": [
+     "H1"
+    ],
+    "weakens": [
+     "H2"
+    ],
+    "interpretation": "央行购金同比增42%、ETF回流，价格仍下跌，说明买盘未成为方向驱动。",
+    "next_observation": "Q4央行与ETF数据及10—11月月度央行购金",
+    "supports_if": "买盘维持高位而价格继续跟随利率",
+    "weakens_if": "买盘加速且金价在利率上行时仍走强"
+   },
+   {
+    "id": "T3",
+    "outcomes": [
+     {
+      "hypothesis_id": "H1",
+      "prediction": "加息或鹰派点阵图使金价走弱，意外不加息使金价明显反弹"
+     },
+     {
+      "hypothesis_id": "H2",
+      "prediction": "金价对决议反应有限，主要跟随地缘新闻与央行数据"
+     }
+    ],
+    "by": "2026-12-10",
+    "status": "missing",
+    "claim_ids": [],
+    "supports": [],
+    "weakens": [],
+    "gap_reason": "12月FOMC尚未举行",
+    "interpretation": "尚待观察，不能裁定。",
+    "next_observation": "12月9日决议、点阵图与当日金价",
+    "supports_if": "决议鹰派时金价下跌或意外不加息时金价急升",
+    "weakens_if": "金价对决议几乎无反应"
+   },
+   {
+    "id": "T4",
+    "outcomes": [
+     {
+      "hypothesis_id": "H1",
+      "prediction": "跌幅伴随实际利率显著上升"
+     },
+     {
+      "hypothesis_id": "H3",
+      "prediction": "利率基本不变而金银大幅下跌"
+     }
+    ],
+    "by": "2026-11-04",
+    "status": "observed",
+    "claim_ids": [
+     "P-GC-PEAK",
+     "P-GC-APR",
+     "C-REAL",
+     "C-LEG1"
+    ],
+    "supports": [
+     "H3"
+    ],
+    "weakens": [
+     "H1"
+    ],
+    "interpretation": "第一段下跌期间实际利率仅小幅上升，利率主线解释不了这一段；仓位出清更合适。这只削弱H1对第一段的解释，不影响其对4月后的解释。",
+    "next_observation": "CFTC持仓与ETF持仓是否已回到低位",
+    "supports_if": "持仓已大幅出清",
+    "weakens_if": "持仓仍拥挤"
+   }
+  ],
+  "conclusion": "未来1—3个月（至12月FOMC及1月初）判断：金价大概率在3800—4300美元区间震荡，方向由油价—通胀—美联储链条决定。加息已大体被定价，因此不对称性在于鹰派预期退潮：若油价继续回落、10月CPI降温使12月加息落空，金价有修复空间；若油价重回110美元以上并迫使美联储连续加息，跌破3900美元的风险上升。白银弹性更大，波动方向与金价一致但幅度约两倍。",
+  "conclusion_claim_ids": [
+   "C-VIEW"
+  ],
+  "model_status": "not_applicable",
+  "model_reason": "商品无现金流，不适用经营桥或DCF；以情景与市场定价比较代替。",
+  "models": [],
+  "market": {
+   "status": "assessed",
+   "reason": "比较预测市场对12月加息与11月金价触及的定价和研究情景。",
+   "claim_ids": [
+    "P-PM-DEC",
+    "P-PM-4200",
+    "P-PM-4300",
+    "P-GC-NOW",
+    "C-MARKET",
+    "C-VIEW"
+   ],
+   "model_ids": [],
+   "implied_expectation": "12月加息约75%；11月内触及4200约43%、4300约23%。",
+   "research_expectation": "同意加息为基准，但认为金价对“加息落空”的上行弹性大于对“如期加息”的下行弹性。",
+   "gap": "方向上与市场一致，分歧只在不对称性；未校准触及概率，不构成已验证错价。",
+   "conditions": "10月CPI、油价是否重回110美元、12月点阵图。"
+  }
+ },
+ "opportunity": {
+  "version": 1,
+  "applicability": "trading",
+  "market_view": {
+   "basis": "price_implied",
+   "claim_ids": [
+    "P-PM-DEC",
+    "P-PM-4200",
+    "C-MARKET"
+   ],
+   "text": "市场押注美联储12月再加息（约75%），并认为11月金价反弹有限（触及4300约23%）。"
+  },
+  "variant": {
+   "claim_ids": [
+    "C-VIEW",
+    "C-OIL"
+   ],
+   "text": "方向与市场基本一致；分歧在于加息已大体定价，鹰派落空的上行弹性大于如期加息的下行弹性。"
+  },
+  "edge": {
+   "claim_ids": [
+    "C-CORR",
+    "C-MECH"
+   ],
+   "text": "优势来自金油负相关的传导识别：油价与CPI可作为金价的领先观察。未校准概率，不构成已验证错价。"
+  },
+  "catalyst": {
+   "by": "2026-12-09T14:00:00-05:00",
+   "claim_ids": [
+    "C-CAL",
+    "C-CPI"
+   ],
+   "text": "11月中旬10月CPI与12月9日FOMC决议。"
+  },
+  "payoff": {
+   "claim_ids": [
+    "C-DD",
+    "C-OIL"
+   ],
+   "text": "金价已从高点跌约24%，下行空间受官方买盘限制；若油价重新冲高并迫使连续加息，判断失效，金价可能跌破3900美元。"
+  },
+  "assessment": {
+   "status": "watch",
+   "claim_ids": [
+    "C-VIEW",
+    "C-MARKET"
+   ],
+   "text": "等待10月CPI与油价方向；在12月FOMC前，这是最能区分情景的观察。"
+  },
+  "triggers": [
+   {
+    "id": "TR1",
+    "signal": "WTI收盘重回110美元以上",
+    "by": "2026-12-09",
+    "claim_ids": [
+     "P-CL-NOW",
+     "C-MECH"
+    ],
+    "supports_if": "金价同步下跌，利率主线继续",
+    "weakens_if": "金价随油价上涨",
+    "invalidates_if": "金价在油价与实际利率同升时创新高"
+   },
+   {
+    "id": "TR2",
+    "signal": "Polymarket 12月加息Yes跌破0.5",
+    "by": "2026-12-08",
+    "claim_ids": [
+     "P-PM-DEC"
+    ],
+    "supports_if": "金价同期上涨至4200美元以上",
+    "weakens_if": "金价不涨",
+    "invalidates_if": "加息预期下降但金价跌破3900美元"
+   }
+  ]
+ }
+}

@@ -1,0 +1,57 @@
+{
+  "qid": "Q088",
+  "as_of": "2026-07-21",
+  "kept": [
+    {
+      "published_at": "2026-07-21",
+      "publisher": "The Times of Israel — Jacob Magid",
+      "url": "https://www.timesofisrael.com/liveblog_entry/trump-downplays-concerns-over-houthis-blocking-red-sea-says-weve-had-no-problem-with-them/",
+      "excerpt": "US President Donald Trump downplays concerns that the Iran-backed Houthi rebels in Yemen may try to block shipping in the Red Sea. Trump says this hasn’t happened yet, but that the US would be able to deal strongly with the terror group as it has before.",
+      "relevance": "Provides a cutoff-day statement of the US posture toward Houthi escalation, while describing a conditional response rather than an executed Israeli strike."
+    },
+    {
+      "published_at": "2026-07-21",
+      "publisher": "Reuters, via Investing.com",
+      "url": "https://www.investing.com/news/world-news/houthis-announce-saudi-naval-blockade-threatening-new-front-in-usiran-war-4802153",
+      "excerpt": "Yemen’s Iran-aligned Houthis said on Monday they would impose a naval blockade on Saudi Arabia, opening a potential new front against the United States in its war with Iran and raising the threat to global energy supplies and trade beyond the Gulf. After the Houthis announced their blockade, the Saudi-led coalition in Yemen said in a statement that it would respond to them with force.",
+      "relevance": "Documents the latest regional escalation and threatened retaliation, whose Saudi-led attribution must be distinguished from the Israeli action required by Q088."
+    },
+    {
+      "published_at": "2026-07-20",
+      "publisher": "Reuters, via Investing.com",
+      "url": "https://www.investing.com/news/commodities-news/explainerhow-a-houthi-blockade-in-the-red-sea-tightens-irans-grip-on-global-energy-supplies-4801210",
+      "excerpt": "It is not clear how the Houthis would carry out a maritime blockade of Saudi Arabia, its northern neighbour along the Red Sea coast, or whether it would include a return to attacks on shipping. Yemen sits on the Bab el-Mandeb strait – the southern gateway to the Red Sea – and closing that would open up a new front in the energy crisis and Iran’s overarching conflict with the U.S.",
+      "relevance": "Records contemporaneous uncertainty about whether the blockade announcement would translate into attacks that might provoke military retaliation."
+    },
+    {
+      "published_at": "2026-07-13 (updated 2026-07-14)",
+      "publisher": "Reuters, via Investing.com",
+      "url": "https://www.investing.com/news/commodities-news/saudi-says-it-intercepted-houthi-missiles-fired-at-south-in-test-of-yearslong-truce-4789062",
+      "excerpt": "Yemen’s Houthi movement fired missiles at Saudi Arabia after accusing the kingdom of bombing an airport under their control on Monday, breaking a four-year truce in the conflict between the kingdom and the Iran-aligned group. The strikes on Sanaa airport were claimed by Yemen’s internationally recognized government, which is heavily backed by Riyadh, where many of its members reside.",
+      "relevance": "Establishes the immediate escalation trigger and identifies the claimed initiator of the airport strikes, avoiding misclassification as Israeli action."
+    },
+    {
+      "published_at": "2026-07-12 (postscript added 2026-07-14)",
+      "publisher": "Security Council Report",
+      "url": "https://www.securitycouncilreport.org/whatsinblue/2026/07/the-red-sea-vote-on-a-draft-resolution.php?print=true",
+      "excerpt": "After the announcement of the 17 June memorandum of understanding between Iran and the US, there have been no further Houthi attacks against Israel, and the group did not resume its assaults on maritime navigation. The resumption of hostilities this week between Iran and the US once again raises questions on whether the Houthis may re-enter the conflict.",
+      "relevance": "Provides a dated assessment of the preceding lull and the regional condition that could end it, relevant to potential Israeli retaliation before the deadline."
+    },
+    {
+      "published_at": "2025-07-21",
+      "publisher": "The Jerusalem Post — Yonah Jeremy Bob and Jerusalem Post Staff",
+      "url": "https://www.jpost.com/israel-news/defense-news/article-861721",
+      "excerpt": "The Israel Air Force on Monday struck the Yemen-based, Iran-backed Houthi terrorists at the central port of Hodeidah in retaliation for recent ballistic missile attacks against Israel. The last time the IDF responded to almost daily Houthi missile attacks on Israel was on July 7.",
+      "relevance": "Supplies a historical precedent for repeated Israeli airstrikes in Yemen following Houthi missile attacks, without treating the 2025 events as evidence of a 2026 strike."
+    },
+    {
+      "published_at": "2025-05-06",
+      "publisher": "Israel Defense Forces",
+      "url": "https://www.idf.il/en/mini-sites/idf-press-releases-israel-at-war/may-25-pr/iaf-strikes-on-houthi-terror-targets-in-yemen/",
+      "excerpt": "Yesterday (Monday), approximately 20 fighter jets carried out strikes using 50 munitions, targeting dozens of terror targets belonging to the Houthi terror regime along the Yemeni coastline. In addition, the “Bajil” concrete plant east of the city of Hudaydah was struck.",
+      "relevance": "Provides official historical evidence of Israel’s capacity to execute substantial airstrikes directly impacting Yemen, matching the relevant action category."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-21. Included only sources with explicit publication dates on or before the cutoff; all identified updates to included articles also precede the cutoff. Historical 2025 items are background precedents only. Excluded later-dated reporting, undated rolling pages, prediction-market pages, odds, and outcome claims. Excerpts preserve source wording and attribution; characterizations by the IDF and other parties remain their claims. Verification relied on web_search's indexed source text and publication metadata: web_fetch failed because multiple providers were registered, and the agent-reach web reader returned RATE_LIMITED, so no full-page retrieval was completed. This limits independent verification of the currently served pages and their revision histories. The supplied resolution text is truncated after 'Debris, fragments, or a'; no missing rule language or market start date was inferred."
+}

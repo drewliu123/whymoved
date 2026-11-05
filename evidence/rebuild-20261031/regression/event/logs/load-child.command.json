@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-I",
+    "-c",
+    "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); target=sys.argv.pop(1); runpy.run_path(target,run_name=\"__main__\")",
+    "/Users/frankzhang/Desktop/投研助手/scripts",
+    "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+    "show",
+    "R20261031T183409Z-adebe32fad6e"
+  ],
+  "shell": "/Library/Developer/CommandLineTools/usr/bin/python3 -I -c 'import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); target=sys.argv.pop(1); runpy.run_path(target,run_name=\"__main__\")' '/Users/frankzhang/Desktop/投研助手/scripts' '/Users/frankzhang/Desktop/投研助手/scripts/research_run.py' show R20261031T183409Z-adebe32fad6e",
+  "cwd": "/Users/frankzhang/Desktop/投研助手",
+  "exit_code": 0,
+  "stdout": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/event/logs/load-child.stdout.log",
+  "stderr": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/event/logs/load-child.stderr.log",
+  "environment": {
+    "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

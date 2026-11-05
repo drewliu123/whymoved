@@ -1,0 +1,50 @@
+{
+  "qid": "Q030",
+  "as_of": "2026-09-17",
+  "kept": [
+    {
+      "published_at": "2026-09-17",
+      "publisher": "Institute for the Study of War",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-17-2026/",
+      "excerpt": "A prominent Kremlin-affiliated Russian milblogger contested official Russian claims of advances around Kostyantynivka. The milblogger acknowledged that Ukrainian forces maintain an extensive presence in the area between Kostyantynivka and Chasiv Yar and that Russian forces will not be able to conduct an offensive north of Kostyantynivka and towards Virolyubivka without consolidating control over Stinky, Chervone, Mykolaivka, and Podilske.",
+      "relevance": "The cutoff-date assessment provides evidence of continued Ukrainian presence along Chasiv Yar’s western approaches, while distinguishing Russian claims from consolidated control."
+    },
+    {
+      "published_at": "2026-09-09",
+      "publisher": "EUobserver — Roman Pataj",
+      "url": "https://euobserver.com/236361/russia-claims-to-have-encircled-ukraine-troops-in-kharkiv-but-no-one-else-can-see-it-ukraine-battlefield-update-day-1658/",
+      "excerpt": "The same source reported on Monday (7 September) that the command had transferred the 46th Air Assault Brigade to the left flank of the Kostiantynivka sector. In this case, the redeployment began as early as July and, according to Unit Observer, the brigade is to reinforce the boundary between the 11th and 19th Army Corps, whose areas of responsibility meet precisely here. The assumption is that this is preparation for withdrawing the 24th Mechanised Brigade from the Chasiv Yar area, which it has defended since the spring of 2023 and the fall of neighbouring Bakhmut.",
+      "relevance": "The reported reinforcement and explicitly tentative withdrawal interpretation identify a potential near-term change in Ukraine’s defense of the Chasiv Yar area."
+    },
+    {
+      "published_at": "2026-09-01",
+      "publisher": "Institute for the Study of War",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-1-2026/",
+      "excerpt": "Russian forces’ rate of advance marginally increased in August 2026, but Russia’s Spring-Summer 2026 offensive has failed to achieve operational maneuver or rapidly collapse Ukrainian lines. Russian gains remain slow and limited.",
+      "relevance": "This provides recent operational-tempo context for assessing whether remaining Ukrainian positions could be eliminated before the September deadline."
+    },
+    {
+      "published_at": "2026-08-28",
+      "publisher": "Institute for the Study of War",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-28-2026/",
+      "excerpt": "Ukrainian forces previously struck Russian positions and personnel in and west of Dovha Balka, south of Chervone, and in southern Chasiv Yar after what ISW assesses were Russian infiltration missions, according to geolocated footage published between August 2 and 17.",
+      "relevance": "ISW’s treatment of Russian activity in southern Chasiv Yar as infiltration is directly relevant to distinguishing a temporary presence from sustained territorial control."
+    },
+    {
+      "published_at": "2026-08-26",
+      "publisher": "Institute for the Study of War",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-26-2026/",
+      "excerpt": "Mashovets reported on August 26 that Russian forces recently infiltrated along the Novodmytrivka-Molocharka line north of Kostyantynivka up into Stinky in an effort to outflank Ukrainian forces east of Kostyantynivka and west of Chasiv Yar.",
+      "relevance": "This identifies Russian pressure on the flank of Ukrainian positions west of Chasiv Yar and a possible mechanism for forcing a withdrawal."
+    },
+    {
+      "published_at": "2026-06-10",
+      "publisher": "Institute for the Study of War",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-10-2026/",
+      "excerpt": "Russian forces seized the majority of Chasiv Yar as of August 2025 after a 26-month campaign, but Ukrainian counterattacks in March 2026 contested Russian control of the town, and Russian forces have thus far been unable to push Ukrainian forces entirely out of Chasiv Yar.",
+      "relevance": "This establishes the distinction between capturing most of the town and removing all Ukrainian positions, and documents the prolonged and reversible nature of control."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-17, inclusive; no specific intraday experiment cutoff was supplied. Included six separately dated sources and only excerpts describing information available by that date. Dates were verified from indexed publisher headings or article bylines; the September 17 ISW assessment also states an assessment time of 10:00 PM ET and a data cutoff of 2:00 PM ET. Direct web_fetch failed because its provider was not configured, and the requested agent-reach web-read fallback returned UPSTREAM_BROKEN; excerpts therefore rely on text exposed by web_search rather than independently fetched page bodies. Later-dated results, rolling topic pages, undated material, and prediction-market or betting pages were excluded. No outcome inference is supplied. The historical ISW municipality polygon, complete map shading, and persistence through a subsequent full daily update were not independently verified. The supplied resolution rules contain an empty qualifying-layer list and omit the market-creation date; these remain material limitations when applying the evidence to the exact resolution test."
+}

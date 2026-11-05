@@ -1,0 +1,44 @@
+{
+ "qid": "Q142",
+ "question": "Will there be no next Google Gemini Pro model release by July 31, 2026?",
+ "rules": "This market will resolve according to the calendar date (ET) on which Google's next Gemini Pro model is made available to the general public.\n\nAny Gemini model released after market creation and labeled as \"Pro\" may qualify (e.g., gemini-3.2-pro, gemini-3.5-pro, or gemini-4.0-pro-preview). Gemini models labeled only as Flash, Flash-Lite, or another non-Pro variant will not qualify.\n\nProducts labeled as a GA promotion of an already-existing Preview model (e.g., gemini-3.1-pro-ga) may qualify.\n\nA qualifying model must be launched and publicly accessible, including via open beta or open rolling waitlist signups. A closed beta or any form of private access will not suffice. The release must be either clearly defined and publicly announced by Google as being accessible to the general public or otherwise made publicly accessible and explicitly labeled within the company's official website. Labeling errors, placeholder text, or version names displayed on the website that do not correspond to a model that is actually accessible to the general public will not qualify.\n\nThe primary resolution source for this market will be official information from Google, with additional verification from a",
+ "as_of": "2026-07-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Google",
+   "published_at": "2026-02-19",
+   "excerpt": "Today, we’re releasing the upgraded core intelligence that makes those breakthroughs possible: Gemini 3.1 Pro. We are releasing 3.1 Pro in preview today to validate these updates and continue to make further advancements in areas such as ambitious agentic workflows before we make it generally available soon."
+  },
+  {
+   "id": "E2",
+   "publisher": "Google",
+   "published_at": "2026-05-19",
+   "excerpt": "We’re kicking off the series by releasing 3.5 Flash. We’re also hard at work on 3.5 Pro. It's already being used internally, and we look forward to rolling it out next month."
+  },
+  {
+   "id": "E3",
+   "publisher": "Investing.com, reporting Business Insider",
+   "published_at": "2026-06-24",
+   "excerpt": "Google has postponed the launch of its Gemini 3.5 Pro artificial intelligence model to July, according to a report from Business Insider, citing a person familiar with the matter. The company originally planned to release the new frontier AI model in June. Google is using the additional time to collect input from early testers and make adjustments to the model."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters, syndicated by Investing.com",
+   "published_at": "2026-07-16",
+   "excerpt": "Alphabet’s Google is months behind schedule on the release of Gemini 3.5 Pro, its most powerful flagship AI model, as the tech giant works to improve its capabilities, particularly in coding, Bloomberg News reported on Thursday."
+  },
+  {
+   "id": "E5",
+   "publisher": "Mashable, syndicated by Yahoo Tech; Timothy Beck Werth",
+   "published_at": "2026-07-17T20:00:00Z",
+   "excerpt": "At the May developers' conference, the company launched a lighter-weight Gemini 3.5 Flash model for everyday use. However, Google CEO Sundar Pichai assured the audience that Gemini 3.5 Pro would follow in June. As of July 17, there's still no sign of the model."
+  },
+  {
+   "id": "E6",
+   "publisher": "Moneycontrol; Sandip Chakraborty",
+   "published_at": "2026-07-18T15:22:00+05:30",
+   "excerpt": "A Google spokesperson has told Bloomberg, “We’re shipping quickly across a wide range of models while keeping them highly cost-effective for customers.” The spokesperson added, “We’re currently testing 3.5 Pro, an upgraded Flash model, and other models with partners, and we’re productively engaged with the U.S. government.” The report also adds Google's model launch process involves multiple teams and stakeholders, as the company enables its new AI model across its portfolio products such as Search, Maps and YouTube, a process that employees said can slow down releases."
+  }
+ ]
+}

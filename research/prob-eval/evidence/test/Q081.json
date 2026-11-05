@@ -1,0 +1,43 @@
+{
+  "qid": "Q081",
+  "as_of": "2026-09-22",
+  "kept": [
+    {
+      "excerpt": "Les élections générales provinciales viennent d’être déclenchées; le scrutin aura lieu le lundi 5 octobre 2026. Ces élections se tiennent en fonction d’une nouvelle carte électorale comportant 127 circonscriptions.",
+      "published_at": "2026-08-27",
+      "publisher": "Élections Québec",
+      "relevance": "The official election authority confirms the scheduled voting date and the 127 constituencies whose seat results determine this question.",
+      "url": "https://www.electionsquebec.qc.ca/communiques/elections-provinciales-de-2026-un-scrutin-aura-lieu-le-5-octobre/"
+    },
+    {
+      "excerpt": "Le PQ demeure à 29% des intentions de vote chez les électeur·trices décidé·e·s. Sondage en ligne réalisé du 18 au 21 septembre 2026 auprès de 1 001 répondant·e·s du Québec âgé·e·s de 18 ans ou plus ayant le droit de vote.",
+      "published_at": "2026-09-22",
+      "publisher": "Léger",
+      "relevance": "This primary polling release provides a fresh measurement of PQ support using fieldwork completed immediately before the evidence cutoff.",
+      "url": "https://www.legers360.com/fr/intentions-de-vote-au-quebec-climat-de-changement/index.html"
+    },
+    {
+      "excerpt": "Among decided and leaning voters, the PQ under Paul St-Pierre Plamondon holds 28% (+1% since last week), the CAQ under Christine Fréchette has 22% (-1%), and the Quebec Liberal Party under Charles Milliard also has 22% (-1%), the two still tied as they were last week. The Conservative Party of Quebec under Éric Duhaime sits at 16%, unchanged, and Québec solidaire under Ruba Ghazal holds 11%, also unchanged. The analysis in this report is based on a survey of 1,122 Quebec adults conducted by Pallas Data on September 19, 2026.",
+      "published_at": "2026-09-21",
+      "publisher": "Pallas Data",
+      "relevance": "An independent poll corroborates the PQ lead and shows how opposition support is divided among four competitors.",
+      "url": "https://pallas-data.ca/2026/09/21/pallas-quebec-poll-pq-28-plq-22-caq-22-pcq-16-qs-11/"
+    },
+    {
+      "excerpt": "À l’échelle nationale, le Parti québécois récolte — encore! — 29% d’appui parmi les électeurs décidés et enclins, six points devant le Parti libéral, qui récolte 23%. La CAQ se trouve au troisième rang avec 20%. Le Parti québécois, même avec seulement 29% d’appui, se trouve maintenant aux portes de la majorité dans la projection, grâce à sa force auprès de la majorité francophone et à la forte division du vote.",
+      "published_at": "2026-09-22",
+      "publisher": "Qc125 — Philippe J. Fournier",
+      "relevance": "This dated expert analysis explains why the PQ's polling lead and geographic support could translate into the most seats despite a relatively low provincewide vote share.",
+      "url": "https://www.qc125.ca/p/mise-a-jour-qc125-le-pq-aux-portes"
+    },
+    {
+      "excerpt": "On Monday, a new poll by Radio Canada-Segma Recherche showed little changes, with the PQ maintaining the top position with about 29 per cent of the vote, far ahead of Coalition Avenir Québec (CAQ), which came in second with 22 per cent. The Quebec Liberals (PLQ) and the Conservatives (PCQ) were in a virtual tie with just one percentage point separating the two parties at 19 and 18 per cent.",
+      "published_at": "2026-09-21",
+      "publisher": "CityNews Montreal — Manoj Subramaniam",
+      "relevance": "Reputable reporting supplies a third polling firm's contemporaneous assessment, supporting the PQ lead while showing disagreement about its strongest opponent.",
+      "url": "https://montreal.citynews.ca/2026/09/21/pq-pcq-face-questions-alliance/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-22, inclusive. All five included items have explicit publication dates on or before the cutoff, verified in web_search evidence; excerpts reproduce factual source sentences. Pallas displays a September 21 publication date although its internal dateline says September 20; the displayed publication date is used. Poll fieldwork dates are distinguished from publication dates. Qc125 discusses the same Léger poll as the primary Léger release and is included for seat-translation analysis, not as an independent poll. Later-dated sources, election outcomes, undated live trackers, and prediction-market or betting pages were excluded. Full-page verification was limited: web_fetch failed because of provider configuration, and the requested agent-reach fallback returned a rate-limit error; source text and dates therefore rely on indexed web_search extracts."
+}

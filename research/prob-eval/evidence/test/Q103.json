@@ -1,0 +1,57 @@
+{
+  "qid": "Q103",
+  "as_of": "2026-07-22",
+  "kept": [
+    {
+      "excerpt": "A total of three commodity vessels crossed the strait on Tuesday, down from four the previous day, Kpler data showed. There were no visible very large crude carrier (VLCC) or liquefied natural gas (LNG) tankers passing through the strait on Tuesday.",
+      "published_at": "2026-07-21T22:52:00-04:00",
+      "publisher": "Reuters, via MarketScreener",
+      "relevance": "Provides near-cutoff observations for July 21, although Kpler commodity-vessel counts are not the IMF PortWatch series used for resolution.",
+      "url": "https://www.marketscreener.com/news/hormuz-vessel-crossings-fall-further-as-security-concerns-linger-ce7f51d8d18bf723"
+    },
+    {
+      "excerpt": "Nine vessels crossed the strait on Wednesday, mostly on the Iranian route, down from 13 the previous day, Kpler data showed. There were no Very Large Crude Carrier or liquefied natural gas tankers visibly passing through the strait on Wednesday. Since resuming a naval blockade against Iran on Tuesday, the U.S. has redirected two ships and disabled another, the military said.",
+      "published_at": "2026-07-16T04:21:00-04:00",
+      "publisher": "Reuters, via MarketScreener",
+      "relevance": "Documents reduced traffic immediately after the blockade resumed and the operational impediments to a rapid recovery.",
+      "url": "https://www.marketscreener.com/news/fewer-vessels-travel-through-hormuz-after-us-resumes-blockade-ce7f5ed2d18cf325"
+    },
+    {
+      "excerpt": "Compared with the first week of July, overall traffic during 12–16 July is down 59%, while daily deadweight capacity crossing the Strait in either direction declined by 68%.",
+      "published_at": "2026-07-17",
+      "publisher": "American Journal of Transportation",
+      "relevance": "Adds an industry traffic assessment showing that the mid-July decline extended beyond an isolated daily observation.",
+      "url": "https://ajot.com/news/hormuz-traffic-falls-59-as-renewed-escalation-drives-vessel-avoidance"
+    },
+    {
+      "excerpt": "The Council condemned the attacks on civilian commercial ships in and around the Strait of Hormuz and called for the de-escalation of tensions in the region. In a resolution adopted during the session, the Council stressed that the right of transit passage through straits used for international navigation should not be threatened, impeded, denied, hampered, impaired or suspended.",
+      "published_at": "2026-07-13",
+      "publisher": "International Maritime Organization",
+      "relevance": "Provides dated official evidence of continuing threats to commercial navigation and the international response.",
+      "url": "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-council-reaffirms-commitment-to-protecting-vital-shipping-lanes.aspx"
+    },
+    {
+      "excerpt": "Only 11 ships traversed the Strait of Hormuz on July 12, the lowest since June 14, after attacks hit the container ship GFS Galaxy and the US and Iran made retaliatory strikes, S&P Global Commodities at Sea said in a July 13 report. Traffic was down from 32 ships on July 10 and 30 on July 11, with oil, chemical, LPG and LNG tankers making up 48% of the total over the three days over July 10-12, CAS said.",
+      "published_at": "2026-07-13",
+      "publisher": "S&P Global Energy",
+      "relevance": "Supplies a dated daily traffic sequence around the renewed escalation, with a vessel universe that differs from PortWatch.",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/071326-traffic-via-strait-of-hormuz-falls-to-11-ships-july-12-after-us-iran-attacks"
+    },
+    {
+      "excerpt": "The number of ships traversing the Strait of Hormuz on July 8 was 48 compared with 47 on July 7 as more ships turned off their location signals following three tanker attacks, S&P Global Commodities at Sea said in a July 8 report. Just one ship used the route closest to Oman while 36% of the total operated dark -- without signals -- compared with a July average of 21%, CAS data showed.",
+      "published_at": "2026-07-08",
+      "publisher": "S&P Global Energy",
+      "relevance": "Shows earlier July traffic above 40 under another provider's methodology and identifies missing AIS signals as a material measurement issue.",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/070826-strait-of-hormuz-oil-traffic-steady-after-attacks-as-imo-urges-caution"
+    },
+    {
+      "excerpt": "Traffic through the Strait of Hormuz rose to 78 ships June 24, the highest since the war began in late February, with 42% of these vessels using a route managed by Oman and the International Maritime Organization, S&P Global Commodities at Sea said in a June 25 report. The safe corridor for transits close to the Omani coast was used by 33 ships, although some ships continued to sail closer to Iran, CAS said in the report.",
+      "published_at": "2026-06-25",
+      "publisher": "S&P Global Energy",
+      "relevance": "Provides a pre-cutoff example of a sharp traffic rebound under improved passage arrangements, without establishing a qualifying PortWatch observation.",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/shipping/062526-hormuz-traffic-rises-to-near-wartime-high-of-78-ships-42-take-oman-route"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-22. Included only individually dated reporting published by the cutoff; excluded prediction-market pages, undated live trackers, later retrospective reporting, and subsequently retrieved or revised PortWatch histories. Publication dates and excerpts were verified through web_search results containing dated source text. web_fetch failed because multiple providers were registered without a selected provider; the requested agent-reach web-read fallback returned RATE_LIMITED, so full-page retrieval could not be completed. No contemporaneously published, date-verifiable IMF PortWatch snapshot was verified; the alternative providers' counts must not be substituted for finalized PortWatch 'Arrivals of Ships.' The market-creation date was not supplied, so historical observations are context rather than evidence that any date lies within the eligible resolution window. No outcome determination or forecast is included."
+}

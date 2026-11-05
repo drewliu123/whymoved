@@ -1,0 +1,50 @@
+{
+  "qid": "Q160",
+  "as_of": "2026-09-07",
+  "kept": [
+    {
+      "excerpt": "The Phillies split a four-game series with the NL East-leading Braves and cut the division lead to four games.",
+      "published_at": "2026-09-07",
+      "publisher": "Associated Press via The Washington Post",
+      "relevance": "Establishes Philadelphia's division deficit at the experiment cutoff after its September 7 victory.",
+      "url": "https://www.washingtonpost.com/sports/mlb/2026/09/07/braves-phillies-score-luzardo/d108167c-aaf0-11f1-b498-8697f35a6743_story.html"
+    },
+    {
+      "excerpt": "The Phillies (81-63) are now four games back of the Braves (85-59) in the NL East with three more head-to-head matchups left this weekend in Atlanta. With 18 games remaining on the regular-season schedule, the Phillies have a 5.5-game cushion for a postseason spot in the National League.",
+      "published_at": "2026-09-07",
+      "publisher": "Phillies Nation — Destiny Lugardo",
+      "relevance": "Provides both contenders' records, the remaining schedule length, and the remaining direct matchups that could change the division race.",
+      "url": "https://philliesnation.com/2026/09/philadelphia-phillies-jesus-luzardo-complete-game-shutout-time-of-game-mlb-kyle-schwarber-don-mattingly-september-7-2026/"
+    },
+    {
+      "excerpt": "With the loss, Philadelphia can no longer get the tiebreaker from the Braves, who have already won seven games against the Phillies this season.",
+      "published_at": "2026-09-06",
+      "publisher": "Philadelphia Phillies On SI — Kenneth Teape",
+      "relevance": "Establishes Atlanta's secured season-series tiebreaker advantage, which matters directly under the market's official-division-winner resolution rules.",
+      "url": "https://www.si.com/mlb/phillies/onsi/phillies-bullpen-woes-haunt-team-in-blown-game-with-braves"
+    },
+    {
+      "excerpt": "The Phillies need to establish a path to Duran, who allowed a go-ahead triple to Austin Riley in a poor outing. Orion Kerkering has struggled. Jonathan Bowlan's workload might be catching up to him, as Mattingly said the team has noticed his stuff trending downward when pitching on back-to-back days.",
+      "published_at": "2026-09-06",
+      "publisher": "Phillies Nation — Ty Daubert",
+      "relevance": "Documents contemporaneous bullpen weaknesses that could affect Philadelphia's ability to protect leads during its division pursuit.",
+      "url": "https://philliesnation.com/2026/09/philadelphia-phillies-alex-mcfarlane-bullpen-ronald-acuna-jr-mlb-september-6-2026/"
+    },
+    {
+      "excerpt": "Wheeler allowed one run on three hits. Jhoan Duran tossed a 1-2-3 ninth for his 30th save.",
+      "published_at": "2026-09-05",
+      "publisher": "Associated Press via The Washington Post",
+      "relevance": "Provides recent evidence of effective performances from a key Phillies starter and closer against their principal division rival.",
+      "url": "https://www.washingtonpost.com/sports/mlb/2026/09/05/braves-phillies-score/4980b12a-a98b-11f1-9e38-f705d048bd5a_story.html"
+    },
+    {
+      "excerpt": "Since July 23, Aaron Nola has allowed 2 runs or fewer in 7 of his 8 starts (2.31 ERA).",
+      "published_at": "2026-09-06",
+      "publisher": "Major League Baseball — MLB Stories",
+      "relevance": "Official MLB reporting documents Nola's improved recent form, an important component of Philadelphia's rotation entering the remaining division race.",
+      "url": "https://www.mlb.com/stories/game/823417"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: September 7, 2026, inclusive; September 7 game reports are included because no intraday cutoff was specified. Selected six items with explicit publication dates visible in search-indexed source text, covering current standings, remaining games and direct matchups, the tiebreaker, and pitching strengths and weaknesses. No betting pages, odds, market prices, or post-cutoff developments are included. A Yahoo magic-number article was excluded because its displayed publication date was September 9 despite a September 7 title. Dynamic standings and season-summary pages were excluded. web_fetch failed because multiple providers were registered; the requested agent-reach fallback returned a rate-limit error, so evidence verification relied on web_search's indexed article text and visible dates rather than successful direct page retrieval."
+}

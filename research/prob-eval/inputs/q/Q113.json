@@ -1,0 +1,32 @@
+{
+ "qid": "Q113",
+ "question": "Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?",
+ "rules": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate that wins this election.\n\nThis market includes any potential second round. If the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., https://dadosabertos.tse.jus.br/).",
+ "as_of": "2026-10-12",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Tribunal Regional Eleitoral de Santa Catarina (TRE-SC)",
+   "published_at": "2026-03-06",
+   "excerpt": "Brazil's 2026 elections are scheduled for October 4, when voters will elect the president and other federal and state officeholders. Any necessary second round will take place on October 25."
+  },
+  {
+   "id": "E2",
+   "publisher": "Folha de S.Paulo / Datafolha",
+   "published_at": "2026-10-08",
+   "excerpt": "Datafolha's first runoff survey reported Flávio Bolsonaro at 52% of valid voting intentions and Lula at 48%. Including all responses, Bolsonaro had 49%, Lula had 45%, undecided respondents accounted for 1%, and blank or null responses accounted for 5%. Fieldwork took place on October 6 and 7."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters, published by UOL",
+   "published_at": "2026-10-09",
+   "excerpt": "An AtlasIntel/Bloomberg survey reported Flávio Bolsonaro with 51.1% of runoff voting intentions and Lula with 45.7%. The preceding survey had recorded 47.4% for Bolsonaro and 47.6% for Lula. AtlasIntel interviewed 5,026 people online between October 3 and 8."
+  },
+  {
+   "id": "E4",
+   "publisher": "El País",
+   "published_at": "2026-10-11T22:38:35Z",
+   "excerpt": "The Organization of American States election-observation mission recommended that Lula and Flávio Bolsonaro hold televised debates. The mission urged the contenders to maintain mutual respect and focus on discussing their programs, and planned to return to Brazil for the second round."
+  }
+ ]
+}

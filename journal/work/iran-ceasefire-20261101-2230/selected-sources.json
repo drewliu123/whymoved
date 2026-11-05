@@ -1,0 +1,263 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T03:35:54Z",
+  "historical": false,
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/",
+      "canonical_url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/",
+      "publisher": "The White House",
+      "tier": "T0",
+      "published_at": "2026-06-19",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "President Donald J. Trump and Vice President JD Vance have secured a historic breakthrough by signing a Memorandum of Understanding with Iran.",
+      "locator": "正文首段；本地evidence/whitehouse-june.txt:165",
+      "origin_id": "whitehouse-june19",
+      "origin_basis": "核实白宫当时对签署备忘录的公开表述，不据此确认现时履约",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "核实白宫当时对签署备忘录的公开表述，不据此确认现时履约",
+        "relevance": "direct",
+        "purpose": "核实白宫当时对签署备忘录的公开表述，不据此确认现时履约",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S2",
+      "url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/",
+      "canonical_url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/",
+      "publisher": "The White House",
+      "tier": "T0",
+      "published_at": "2026-06-19",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "Whether or not the United States can reach an acceptable, verifiable deal with Iran regarding its nuclear program and other issues is yet to be determined",
+      "locator": "Sen. Lindsey Graham段；evidence/whitehouse-june.txt:183",
+      "origin_id": "whitehouse-june19",
+      "origin_basis": "白宫所载Graham当时观点；揭示停火与可核查最终核协议的区别",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "白宫所载Graham当时观点；揭示停火与可核查最终核协议的区别",
+        "relevance": "direct",
+        "purpose": "白宫所载Graham当时观点；揭示停火与可核查最终核协议的区别",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S3",
+      "url": "https://ca.marketscreener.com/news/why-has-the-iran-us-ceasefire-memorandum-frayed-ce7f5edcd888f325",
+      "canonical_url": "https://ca.marketscreener.com/news/why-has-the-iran-us-ceasefire-memorandum-frayed-ce7f5edcd888f325",
+      "publisher": "Reuters / MarketScreener",
+      "tier": "T2",
+      "published_at": "2026-07-13",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "on July 7, the U.S. revoked a license",
+      "locator": "Reuters解释报道的石油豁免部分；正文同时讨论资金未释放、航行权及核问题",
+      "origin_id": "reuters-july13",
+      "origin_basis": "可读Reuters复盘提供执行次序与争端线索；同一报道只算一个origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "可读Reuters复盘提供执行次序与争端线索；同一报道只算一个origin",
+        "relevance": "direct",
+        "purpose": "可读Reuters复盘提供执行次序与争端线索；同一报道只算一个origin",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S4",
+      "url": "https://www.aol.co.uk/articles/iranian-negotiators-doha-continue-talks-122402000.html",
+      "canonical_url": "https://www.aol.co.uk/articles/iranian-negotiators-doha-continue-talks-122402000.html",
+      "publisher": "Reuters / AOL UK",
+      "tier": "T2",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "no final conclusion had been reached",
+      "locator": "Reuters正文第4段，归属Iranian Foreign Minister Abbas Araqchi；页面Updated 2026-11-01 13:57 UTC",
+      "origin_id": "reuters-doha-nov1",
+      "origin_basis": "最新可读报道引述外长称谈判未有最终结论；非官方协议文本",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "最新可读报道引述外长称谈判未有最终结论；非官方协议文本",
+        "relevance": "direct",
+        "purpose": "最新可读报道引述外长称谈判未有最终结论；非官方协议文本",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S5",
+      "url": "https://www.aol.co.uk/articles/iranian-negotiators-doha-continue-talks-122402000.html",
+      "canonical_url": "https://www.aol.co.uk/articles/iranian-negotiators-doha-continue-talks-122402000.html",
+      "publisher": "Reuters / AOL UK",
+      "tier": "T2",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "before the vote",
+      "locator": "Reuters正文第2段：报道特朗普暂停追加攻击的承诺覆盖11月3日投票前；页面Updated 2026-11-01 13:57 UTC",
+      "origin_id": "reuters-doha-nov1",
+      "origin_basis": "限定报道中的美方承诺窗口；不能当成双方停火到期条款",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "限定报道中的美方承诺窗口；不能当成双方停火到期条款",
+        "relevance": "direct",
+        "purpose": "限定报道中的美方承诺窗口；不能当成双方停火到期条款",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S6",
+      "url": "https://gcaptain.com/irans-irgc-navy-says-four-tankers-catch-fire-in-strait-of-hormuz/",
+      "canonical_url": "https://gcaptain.com/irans-irgc-navy-says-four-tankers-catch-fire-in-strait-of-hormuz/",
+      "publisher": "Reuters / gCaptain",
+      "tier": "T2",
+      "published_at": "2026-10-31",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "All U.S. military unmanned surface vessels in the Middle East are accounted for",
+      "locator": "正文CENTCOM对无人水面艇说法的回应；Reuters dispatch Oct30。UKMTO通知与伊方四船说法不能合并计数。",
+      "origin_id": "reuters-hormuz-oct30",
+      "origin_basis": "保留海事风险反证；各方声明归属不同，不能由伊方声称四船起火推为已证实四船遇袭",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "保留海事风险反证；各方声明归属不同，不能由伊方声称四船起火推为已证实四船遇袭",
+        "relevance": "direct",
+        "purpose": "保留海事风险反证；各方声明归属不同，不能由伊方声称四船起火推为已证实四船遇袭",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S7",
+      "url": "https://apnews.com/article/422b1799a1a06466279ac265f560e014",
+      "canonical_url": "https://apnews.com/article/422b1799a1a06466279ac265f560e014",
+      "publisher": "AP",
+      "tier": "T2",
+      "published_at": "2026-10-08",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "",
+      "locator": "全文抓取失败；只见搜索标题",
+      "origin_id": "ap-oct8",
+      "origin_basis": "原站与部分转刊均不可读，保留候选但不支持主张",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "reason": "原站与部分转刊均不可读，保留候选但不支持主张",
+        "relevance": "direct",
+        "purpose": "原站与部分转刊均不可读，保留候选但不支持主张",
+        "priority": "background"
+      }
+    },
+    {
+      "id": "S8",
+      "url": "https://apnews.com/article/b918f44d8f212d7daf7f2f9a98c91a0b",
+      "canonical_url": "https://apnews.com/article/b918f44d8f212d7daf7f2f9a98c91a0b",
+      "publisher": "AP",
+      "tier": "T2",
+      "published_at": "2026-11-01",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "",
+      "locator": "全文抓取失败；只见搜索摘述",
+      "origin_id": "ap-nov1",
+      "origin_basis": "最新AP线索正文无法取得，不用作第二独立事实支持",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "reason": "最新AP线索正文无法取得，不用作第二独立事实支持",
+        "relevance": "direct",
+        "purpose": "最新AP线索正文无法取得，不用作第二独立事实支持",
+        "priority": "background"
+      }
+    },
+    {
+      "id": "S9",
+      "url": "https://www.lemonde.fr/en/international/article/2026/10/30/iran-braces-for-possible-new-conflict-with-us-and-israel-despite-diplomatic-talks_6767460_4.html",
+      "canonical_url": "https://www.lemonde.fr/en/international/article/2026/10/30/iran-braces-for-possible-new-conflict-with-us-and-israel-despite-diplomatic-talks_6767460_4.html",
+      "publisher": "Le Monde",
+      "tier": "T2",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "quote": "",
+      "locator": "全文抓取失败",
+      "origin_id": "lemonde-oct30",
+      "origin_basis": "不能凭搜索摘要验证当前备战与谈判细节",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "reason": "不能凭搜索摘要验证当前备战与谈判细节",
+        "relevance": "direct",
+        "purpose": "不能凭搜索摘要验证当前备战与谈判细节",
+        "priority": "background"
+      }
+    }
+  ],
+  "source_status": {
+    "official": {
+      "status": "partial",
+      "reason": "取得6月白宫历史原文，未取得当前双边协议与完整履约安排"
+    },
+    "latest_reuters": {
+      "status": "ok",
+      "reason": "11月1日AOL转刊可读，声明作归属观点使用"
+    },
+    "independent_AP": {
+      "status": "unreachable",
+      "reason": "原站及Local10/CityNews/WBAL转刊未取得全文"
+    },
+    "shipping": {
+      "status": "partial",
+      "reason": "取得Reuters转刊，UKMTO通知仍为转述，未取得独立现场确认"
+    },
+    "IAEA_current": {
+      "status": "no_results",
+      "reason": "定向搜索只返旧文件，不能说明当前核查未实施"
+    },
+    "community": {
+      "status": "not_run",
+      "reason": "等待社区侦察结果写入审计，不用于事实支持"
+    }
+  },
+  "selection_summary": {
+    "selected": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ],
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting"
+  }
+}

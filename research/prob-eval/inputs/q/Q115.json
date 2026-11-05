@@ -1,0 +1,44 @@
+{
+ "qid": "Q115",
+ "question": "Will Mohamed Salah play in Süper Lig next?",
+ "rules": "This market will resolve to the league of next club that Mohamed Salah officially joins by August 31, 2026 at 2:00 PM ET.\n\nIf Mohamed Salah does not officially join a new club by August 31, 2026 at 2:00 PM ET, this market will resolve to “Other”.\n\nIf Mohamed Salah signs a contract that includes a delayed transfer or loan-back clause requiring him to remain at Liverpool for a specified period before joining another club, this market will resolve to the club he is officially contracted to join following that period.\n\nIf Mohamed Salah joins a club in a league that is not listed, this market will resolve to “Other”.\n\nIf Mohamed Salah is released, retires, or is not under contract with any professional club by August 31, 2026 at 2:00 PM ET, this market will resolve to “Other”.\n\nTransfers or assignments between a club’s senior team and reserve or affiliate teams will not be considered for this market.\n\nAn official transfer announcement prior to the market’s close date will immediately resolve this market to the corresponding option.\n\nThe primary resolution sources for this market will be official announcements from Liverpool, Mohamed Salah and/or the acquiring club. A consensus of credib",
+ "as_of": "2026-07-23",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Liverpool FC",
+   "published_at": "2026-03-24",
+   "excerpt": "Mohamed Salah is to bring the curtain down on his illustrious career with Liverpool FC at the end of the 2025-26 season. The forward has reached an agreement with the Reds that will see him close a remarkable nine-year chapter at Anfield."
+  },
+  {
+   "id": "E2",
+   "publisher": "Premier League",
+   "published_at": "2026-07-17",
+   "excerpt": "Now without a club to his name, attention turns to where the 34-year-old will continue his career. Salah’s agent Ramy Abbas Issa released an update on Friday morning stating: “We still do not know where Mohamed will play next season but we may know very soon.” He added: “It is not our style to have discussions with clubs that Mohamed wouldn’t want to play for, just for the sake of noise.”"
+  },
+  {
+   "id": "E3",
+   "publisher": "TEAMtalk",
+   "published_at": "2026-07-17",
+   "excerpt": "TEAMtalk revealed in an update yesterday that Inter Miami, San Diego FC, and Sporting Kansas City from MLS have all been trying to convince Salah to join. Salah’s agent, Ramy Abbas Issa, posted on X earlier today: “We still do not know where Mohamed will play next season but we may know very soon.”"
+  },
+  {
+   "id": "E4",
+   "publisher": "Liverpool.com via Yahoo Sports",
+   "published_at": "2026-07-17",
+   "excerpt": "Following reports that Mohamed Salah had agreed to sign for Turkish club Besiktas on a one-year contract, his agent, Ramy Abbas, immediately denied it and said no deal was in place with any club. Roughly two hours after the reports surfaced on social media, Abbas posted on X: “I personally do not know where Mohamed will play next season. What does that tell you?”"
+  },
+  {
+   "id": "E5",
+   "publisher": "beIN SPORTS Türkiye",
+   "published_at": "2026-07-22",
+   "excerpt": "According to information provided by our reporter Tayfun Akkaya, Beşiktaş president Serdal Adalı and Salah’s agent will hold a meeting on Thursday, July 23."
+  },
+  {
+   "id": "E6",
+   "publisher": "Dünya Gazetesi",
+   "published_at": "2026-07-23",
+   "excerpt": "No official agreement has yet been reached between Beşiktaş and Mohamed Salah. Adalı said: “Nothing has been completed regarding the Salah transfer yet.” He said the agents had raised their financial demands after reports that the transfer was finished, that the club had rejected those demands, and that negotiations were continuing. He added: “We love Salah very much and agree with the player on every issue, but everyone should know that our priority is Beşiktaş’s interests.”"
+  }
+ ]
+}

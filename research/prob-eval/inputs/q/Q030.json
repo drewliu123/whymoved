@@ -1,0 +1,44 @@
+{
+ "qid": "Q030",
+ "question": "Will Russia capture all of Chasiv Yar by September 30?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Russia captures the entirety of Chasiv Yar, Donetsk Oblast, (48.589446° N, 37.831430° E) between market creation and the specified date, 11:59 PM ET.\n\nChasiv Yar will be considered captured if the entirety of the municipality is shaded under a below specified layer on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. Otherwise, the market will resolve to “No”.\n\nThe boundaries of the municipality are those shown under the “Ukrainian Settlements” layer on the ISW map. If all area within the municipality is shaded under a qualifying layer, however, the shading does not precisely match up with the border such that there is a tiny amount of unshaded area along the border of the municipality, this will still qualify for a \"Yes\" resolution.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date.\n\nAny continuous shading under the following layers will qualify:\n- ",
+ "as_of": "2026-09-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-17",
+   "excerpt": "A prominent Kremlin-affiliated Russian milblogger contested official Russian claims of advances around Kostyantynivka. The milblogger acknowledged that Ukrainian forces maintain an extensive presence in the area between Kostyantynivka and Chasiv Yar and that Russian forces will not be able to conduct an offensive north of Kostyantynivka and towards Virolyubivka without consolidating control over Stinky, Chervone, Mykolaivka, and Podilske."
+  },
+  {
+   "id": "E2",
+   "publisher": "EUobserver — Roman Pataj",
+   "published_at": "2026-09-09",
+   "excerpt": "The same source reported on Monday (7 September) that the command had transferred the 46th Air Assault Brigade to the left flank of the Kostiantynivka sector. In this case, the redeployment began as early as July and, according to Unit Observer, the brigade is to reinforce the boundary between the 11th and 19th Army Corps, whose areas of responsibility meet precisely here. The assumption is that this is preparation for withdrawing the 24th Mechanised Brigade from the Chasiv Yar area, which it has defended since the spring of 2023 and the fall of neighbouring Bakhmut."
+  },
+  {
+   "id": "E3",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-01",
+   "excerpt": "Russian forces’ rate of advance marginally increased in August 2026, but Russia’s Spring-Summer 2026 offensive has failed to achieve operational maneuver or rapidly collapse Ukrainian lines. Russian gains remain slow and limited."
+  },
+  {
+   "id": "E4",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-08-28",
+   "excerpt": "Ukrainian forces previously struck Russian positions and personnel in and west of Dovha Balka, south of Chervone, and in southern Chasiv Yar after what ISW assesses were Russian infiltration missions, according to geolocated footage published between August 2 and 17."
+  },
+  {
+   "id": "E5",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-08-26",
+   "excerpt": "Mashovets reported on August 26 that Russian forces recently infiltrated along the Novodmytrivka-Molocharka line north of Kostyantynivka up into Stinky in an effort to outflank Ukrainian forces east of Kostyantynivka and west of Chasiv Yar."
+  },
+  {
+   "id": "E6",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-06-10",
+   "excerpt": "Russian forces seized the majority of Chasiv Yar as of August 2025 after a 26-month campaign, but Ukrainian counterattacks in March 2026 contested Russian control of the town, and Russian forces have thus far been unable to push Ukrainian forces entirely out of Chasiv Yar."
+  }
+ ]
+}

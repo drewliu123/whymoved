@@ -1,0 +1,8 @@
+$ /Library/Developer/CommandLineTools/usr/bin/python3 /Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.1.1/scripts/check_claims.py '/Users/frankzhang/Desktop/投研助手/journal/nvda-compare-20261031/claims.json' --json
+{
+  "passed": true,
+  "total": 18,
+  "failures": {}
+}
+
+exit_code=0

@@ -1,0 +1,44 @@
+{
+ "qid": "Q013",
+ "question": "Will María Corina Machado enter Venezuela by July 31?",
+ "rules": "If María Corina Machado visits Venezuela between market creation and July 31, 2026, 11:59 PM ET, this market will resolve to \"Yes\". Otherwise, this market will resolve to \"No\".\n\nFor the purpose of this market, a \"visit\" is defined as María Corina Machado physically entering the terrestrial territory of Venezuela. Whether or not María Corina Machado enters Venezuelan airspace or maritime territory during the timeframe of this market will have no bearing on a positive resolution.\n\nThe primary resolution source for this market will be a consensus of credible reporting.",
+ "as_of": "2026-07-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "EFE via SWI swissinfo.ch",
+   "published_at": "2026-07-15",
+   "excerpt": "«La postura del Departamento de Estado es clara, no vamos a obstaculizar el regreso de María Corina Machado a Venezuela. Ella es ciudadana venezolana y tiene derecho a volver», aseguró Weiland. «Se propuso una ley de amnistía que, lamentablemente tal y como está redactada, sigue impidiendo que María Corina entre en Venezuela sin riesgo de arresto», explicó."
+  },
+  {
+   "id": "E2",
+   "publisher": "Europa Press",
+   "published_at": "2026-07-15",
+   "excerpt": "La líder de la oposición y premio Nobel de la Paz María Corina Machado ha defendido este miércoles su regreso a Venezuela como una fuerza \"estabilizadora\" y \"pacificadora\", insistiendo en que solo una transición democrática llevará la estabilidad al país tras la caída de Nicolás Maduro. \"Ese es mi propósito ahora que voy a regresar a Venezuela\", ha afirmado en una intervención por videoconferencia en el Libertas Forum que organiza el Partido Popular Europeo en Madrid."
+  },
+  {
+   "id": "E3",
+   "publisher": "EFE",
+   "published_at": "2026-07-07",
+   "excerpt": "«Voy a volver. No como un evento, sino como una promesa que se cumple paso a paso, porque mi lugar está allá, con ustedes. Y cuando nos encontremos, vamos a levantar este país desde el mismo lado en el que siempre hemos estado», escribió Machado en su cuenta de X."
+  },
+  {
+   "id": "E4",
+   "publisher": "RTVE Noticias",
+   "published_at": "2026-07-03",
+   "excerpt": "Según una exclusiva de The Wall Street Journal, Machado despegó el viernes 26 de junio rumbo a Venezuela en un avión privado que salió desde Virginia (EE.UU.) con dirección a Curazao, una isla neerlandesa a pocos kilómetros de la costa venezolana. Sin embargo, una hora después del despegue, la compañía encargada del vuelo ordenó a los pilotos que dieran la vuelta. El medio estadounidense, que cita diversas fuentes familiarizadas con el asunto, explica que las autoridades neerlandesas suspendieron el permiso de aterrizaje para Machado —cuyo pasaporte está caducado— al enterarse de que EE.UU. no respaldaba el viaje."
+  },
+  {
+   "id": "E5",
+   "publisher": "EFE",
+   "published_at": "2026-07-03",
+   "excerpt": "La líder opositora venezolana y ganadora del Premio Nobel de la Paz 2025, María Corina Machado, dijo este viernes que no ha solicitado protección para regresar a Venezuela. «Yo no, ni nuestros equipos, requerimos ni hemos solicitado ningún tipo de protección ni que se asigne ningún tipo de recurso a seguridad», indicó Machado en un encuentro virtual con la prensa. «Todo el mundo me dice: ¿Quién te va a cuidar? Bueno, millones de venezolanos», añadió."
+  },
+  {
+   "id": "E6",
+   "publisher": "Reuters via KELO-AM",
+   "published_at": "2026-06-29",
+   "excerpt": "June 29 (Reuters) – Venezuelan opposition leader Maria Corina Machado said on Monday she is “willing to do whatever it takes” to enter Venezuela to help with the country’s recovery efforts following last week’s back-to-back earthquakes. Machado, currently in Panama, accused the Venezuelan government of blocking her attempt to return to the country, and in a video posted on X said she “will be in Venezuela to help coordinate and encourage citizens’ efforts during the emergency.” She did not provide further details about her plan to enter Venezuela."
+  }
+ ]
+}

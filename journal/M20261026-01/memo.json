@@ -1,0 +1,21 @@
+{
+  "question": "美联储 10 月 27–28 日议息会会不会加息？",
+  "type": "event_pricing",
+  "entity": "Fed Decision in October",
+  "as_of": "2026-10-26T06:17:00Z",
+  "market_snapshot": [
+    {"source": "polymarket", "slug": "fed-decision-in-october-20260617190323537", "outcome": "No change", "prob": 0.945},
+    {"source": "kalshi", "slug": "KXFEDDECISION-26OCT-H0", "outcome": "No change", "prob": 0.94},
+    {"source": "polymarket", "slug": "how-many-dissent-at-the-october-fed-meeting", "outcome": "0", "prob": 0.265},
+    {"source": "polymarket", "slug": "fed-decision-in-december-20260729232808632", "outcome": "25 bps increase", "prob": 0.765}
+  ],
+  "hypotheses": [
+    {"id": "H1", "text": "10 月 28 日维持 3.75–4.00% 不变", "verify_by": "2026-10-28",
+     "falsify_if": "声明中的目标区间不是 3.75–4.00%", "my_prob": 0.94, "market_prob": 0.945,
+     "authors": [{"handle": "NickTimiraos", "platform": "x", "stance": "support"}]},
+    {"id": "H2", "text": "10 月声明的投票中至少有 1 票反对", "verify_by": "2026-10-28",
+     "falsify_if": "投票行显示全体一致", "my_prob": 0.70, "market_prob": 0.735, "authors": []},
+    {"id": "H3", "text": "12 月 9 日加息 25bp", "verify_by": "2026-12-09",
+     "falsify_if": "12 月声明维持不变或降息，或加息幅度 ≥50bp", "my_prob": 0.75, "market_prob": 0.765, "authors": []}
+  ]
+}

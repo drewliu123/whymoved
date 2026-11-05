@@ -1,0 +1,50 @@
+{
+  "qid": "Q082",
+  "as_of": "2026-08-18",
+  "kept": [
+    {
+      "excerpt": "President Aleksandar Vučić said that elections would be called within 15 to 25 days. He said the election campaign would last between 45 and 60 days, in accordance with the Constitution and the law.",
+      "published_at": "2026-08-16",
+      "publisher": "Tanjug",
+      "relevance": "The president's latest verified timing statement places the potential election call close to the August 31 dissolution deadline.",
+      "url": "https://www.tanjug.rs/srbija/politika/274068/vucic-izbori-ce-biti-raspisani-u-roku-od-15-do-25-dana-boricemo-se-istinom-i-radom/vest"
+    },
+    {
+      "excerpt": "Deputy Assembly Speaker Marina Raguš said that the parliamentary session announced for the end of August would most likely be the last or penultimate session before dissolution and early parliamentary elections. She said Speaker Ana Brnabić would announce the exact session date and that important legislation remained to be considered.",
+      "published_at": "2026-08-17",
+      "publisher": "Politika",
+      "relevance": "A senior parliamentary official describes pending legislative business and the expected sequence leading to dissolution.",
+      "url": "https://www.politika.rs/sr/clanak/779031/marina-ragus-vanredni-parlamentarni-izbori-najverovatnije-u-drugoj-polovini-oktobra-ili-pocetkom-novembra"
+    },
+    {
+      "excerpt": "The National Assembly rejected the opposition's motion of no confidence in the government after three days of debate. Forty MPs voted for the motion, 135 voted against it, and one abstained. The motion had been submitted by 62 opposition MPs on February 13.",
+      "published_at": "2026-07-29",
+      "publisher": "Radio-televizija Vojvodine / Tanjug",
+      "relevance": "The failed no-confidence motion documents the government's parliamentary support shortly before the cutoff and informs the likelihood of a government-collapse route to dissolution.",
+      "url": "https://www.rtv.rs/sr_lat/politika/treci-dan-vanredne-sednica-skupstine-o-nepoverenju-vladi-srbije_1732353.html"
+    },
+    {
+      "excerpt": "President Aleksandar Vučić said early general elections would be held in the next three to four months, without providing exact dates. He reiterated that he would resign the presidency before the vote and said he could step down in July, August or September. Regular presidential and parliamentary elections were due the following year.",
+      "published_at": "2026-06-29",
+      "publisher": "Associated Press",
+      "relevance": "This establishes the earlier public commitment to an autumn election while documenting uncertainty over the timing of the necessary political steps.",
+      "url": "https://apnews.com/article/b0e56b601bfc438a9adaf1b9c7922e97"
+    },
+    {
+      "excerpt": "President Aleksandar Vučić signed a decree dissolving the Serbian parliament and calling parliamentary elections for December 17. The decree was based on Article 109 of the Constitution, Article 21 of the Law on the President, and the government's reasoned proposal of October 30. Electoral deadlines began when the decision entered into force upon publication in the Official Gazette.",
+      "published_at": "2023-11-01",
+      "publisher": "Government of the Republic of Serbia",
+      "relevance": "This official precedent identifies the formal presidential decree, government proposal and publication process relevant to recognizing a dissolution.",
+      "url": "https://www.srbija.gov.rs/vest/en/215001/parliamentary-and-local-elections-to-be-held-on-17-december.php"
+    },
+    {
+      "excerpt": "On October 13, 2023, President Aleksandar Vučić announced plans to hold parliamentary elections by the end of the year. On November 1, following the government's proposal, he dissolved parliament and scheduled elections for December 17. These were the third parliamentary elections in less than four years and the sixth since 2012.",
+      "published_at": "2024-02-28",
+      "publisher": "OSCE Office for Democratic Institutions and Human Rights",
+      "relevance": "The observation report provides historical context on the frequency of early elections and the interval between an announcement and formal dissolution.",
+      "url": "https://www.osce.org/sites/default/files/f/documents/1/3/563505_0.pdf"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-08-18; target deadline: 2026-08-31 at 11:59 PM ET. Included only individually dated articles or reports published by the cutoff. Serbian-language excerpts are factual English translations/paraphrases of source text returned by web_search. Dates were verified from explicit article datelines or report publication dates rather than relative search metadata. Direct web_fetch failed because of a provider configuration error; the requested agent-reach web-read fallback returned RATE_LIMITED, so verification relied on indexed source text and dated search results. Later-dated material and prediction-market pages surfaced during discovery but were excluded from the evidence pack and were not used to state an outcome. No contemporaneous official dissolution decree was verified in the retained evidence; the official government item is clearly historical procedural context."
+}

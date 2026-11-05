@@ -1,0 +1,34 @@
+{
+  "qid": "Q048",
+  "as_of": "2026-09-17",
+  "kept": [
+    {
+      "excerpt": "Russian forces recently advanced southwest of Orikhiv. Russian forces advanced in southeastern Novoandriivka (west of Orikhiv), according to geolocated footage published on September 16.",
+      "published_at": "2026-09-17T02:10:14+00:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "ISW's September 16 assessment provides the latest verified nearby Russian territorial advance in the collected evidence, without establishing capture of the specified train station.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-16-2026/"
+    },
+    {
+      "excerpt": "Russian forces have conducted limited infiltration missions into Orikhiv, but ISW has not observed any evidence to assess that Russian forces have consolidated any positions in the town. Ukrainian forces maintain positions north of Bilohirya (east of Orikhiv) and in central Orikhiv — in areas where Russian sources previously claimed that Russian forces maintained positions — according to geolocated footage published on September 13 and 14.",
+      "published_at": "2026-09-16T02:57:06+00:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "This directly distinguishes Russian infiltration and unsupported control claims from consolidated positions, which matters because infiltration shading does not qualify under the resolution rules.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-15-2026/"
+    },
+    {
+      "excerpt": "Mashovets indicated that Russian forces made these tactically significant gains in the Orikhiv direction prior to September 1 but stated that Russian forces have since failed to exploit these gains. Mashovets noted that Ukrainian forces have constrained Russian forces west and northwest of Orikhiv, interdicting supply deliveries to these infiltration groups for a few weeks before conducting heavy drone strikes and clearing operations to eliminate the Russian presence. Mashovets noted that Ukrainian forces pushed Russian forces from northern and central Novodanylivka and that Ukrainian advances west of Orikhiv are constraining Russian efforts to advance on Zaporizhzhia City.",
+      "published_at": "2026-09-14T01:52:08+00:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "The assessment documents supply constraints and Ukrainian counterattacks that affect whether Russian infiltration around Orikhiv can turn into sustained territorial control.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-13-2026/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://mezha.net/eng/news/3acda571_russian_forces_try/",
+      "reason": "The excerpt mentions a Russian objective to seize territory by the end of the year, a timeframe after the 2026-09-17 cutoff; excluded under the rule against any post-cutoff mentions or implications."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-09-17. All included items have verified publication timestamps before the cutoff; timestamps are reproduced from the page reader's publication metadata. The ISW report titles carry assessment dates one calendar day earlier than their UTC publication timestamps. Searches used web_search; web_fetch failed because of a provider configuration error, so full texts and metadata were retrieved using agent-reach web read. Subsequent fallback requests encountered rate limiting and were stopped. Excerpts are factual source passages, with Markdown formatting and endnote markers removed. Later-dated results, prediction-market pages, and undated material were excluded. The assessment titled September 17 was conservatively excluded because its publication metadata falls on September 18 UTC. This pack does not verify the train-station icon's qualifying shading or persistence across consecutive finalized ISW map updates; town-level reporting and nearby advances cannot establish that precise resolution condition."
+}

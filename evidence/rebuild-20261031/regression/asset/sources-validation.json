@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "errors": [
+    "candidate[1].retrieved_at: timestamp is unknown",
+    "candidate[2].retrieved_at: timestamp is unknown"
+  ],
+  "strict_claims_validation": false,
+  "historical_availability_proved": false
+}

@@ -1,0 +1,42 @@
+{
+  "qid": "Q150",
+  "as_of": "2026-08-12",
+  "kept": [
+    {
+      "excerpt": "The nominee resulting from this special filing and primary will be a candidate on the November 3, 2026 general election ballot. The statewide special primary is scheduled for August 11, with a special primary runoff, if necessary, on August 25. Voters who participated in the June Democratic primary are not eligible to vote in the special Republican primary.",
+      "published_at": "2026-07-13",
+      "publisher": "South Carolina Election Commission",
+      "relevance": "Establishes the official replacement-nomination process, election timetable, and electorate eligibility relevant to the market's resolution rules.",
+      "url": "https://scvotes.gov/u-s-senate-special-republican-party-filing-primary/"
+    },
+    {
+      "excerpt": "The Emerson College Polling/Nexstar Media survey found Ralph Norman at 22%, Darline Graham at 19%, Russell Fry at 12%, and Mark Sanford at 11%, with a quarter undecided. The survey was conducted July 28–29, 2026 among 500 likely Republican primary voters, with a margin of error of plus or minus 4.3 percentage points. Fifty-three percent said Trump's endorsement of Graham made no impact on their vote, while 29% said it made them more likely to support her and 18% less likely.",
+      "published_at": "2026-07-30",
+      "publisher": "Emerson College Polling",
+      "relevance": "Supplies a dated primary-source poll with methodology and evidence about the potential influence of Trump's endorsement.",
+      "url": "https://emersoncollegepolling.com/south-carolina-2026-norman-graham-lead-gop-special-primary-runoff-likely/"
+    },
+    {
+      "excerpt": "A special Republican primary was scheduled for August 11 after Lindsey Graham, the nominee selected in the June 9 primary, died on July 11. A runoff, if needed, was scheduled for August 25. Republicans have won every South Carolina Senate election since 2004 and every gubernatorial election since 2002.",
+      "published_at": "2026-07-16",
+      "publisher": "Ballotpedia News",
+      "relevance": "Documents why a replacement primary was required and provides historical context for the importance of securing the Republican nomination.",
+      "url": "https://news.ballotpedia.org/2026/07/16/lindsey-grahams-death-will-set-off-a-special-primary-election-for-a-senate-seat-thats-open-for-the-second-time-since-1956/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.live5news.com/2026/08/12/graham-norman-advance-runoff-sc-senate-special-primary/",
+      "reason": "Reports special-primary results, including vote totals and the candidates advancing to the runoff; excluded under the instruction to remove results."
+    },
+    {
+      "url": "https://www.aol.com/articles/where-darline-graham-ralph-norman-174448000.html",
+      "reason": "Reports special-primary results, including county winners and eliminated candidates; excluded under the instruction to remove results."
+    },
+    {
+      "url": "https://www.southcarolinapublicradio.org/2026-08-12/sen-darline-graham-rep-ralph-norman-advance-to-south-carolina-special-primary-runoff",
+      "reason": "Reveals the special-primary result by stating that the election is headed to a runoff; excluded under the instruction to remove results."
+    }
+  ],
+  "search_notes": "Evidence frozen at August 12, 2026, inclusive; no time of day was specified. Publication dates were verified from dated search-index source text, with Emerson's July 30 publication date corroborated by its publisher archive. Live 5 News was originally published August 11 and updated August 12; its displayed update timestamp is used. Excerpts are factual condensations of retrieved source text. Direct web_fetch failed because of provider configuration, and the requested agent-reach fallback returned a rate-limit error, so verification relied on web_search text rather than successfully fetched full pages. Sources dated after the cutoff, articles displaying post-cutoff updates, undated live results pages, and prediction-market or betting material were excluded. No subsequent runoff result or later development is included."
+}

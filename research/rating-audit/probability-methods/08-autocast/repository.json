@@ -1,0 +1,437 @@
+{
+  "repository": "andyzoujm/autocast",
+  "commit": "f7907d45dd3f5e58d70834f2d7770c404ef4baba",
+  "metadata": {
+    "id": 501671501,
+    "node_id": "R_kgDOHebmTQ",
+    "name": "autocast",
+    "full_name": "andyzoujm/autocast",
+    "private": false,
+    "owner": {
+      "login": "andyzoujm",
+      "id": 43451571,
+      "node_id": "MDQ6VXNlcjQzNDUxNTcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43451571?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/andyzoujm",
+      "html_url": "https://github.com/andyzoujm",
+      "followers_url": "https://api.github.com/users/andyzoujm/followers",
+      "following_url": "https://api.github.com/users/andyzoujm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/andyzoujm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/andyzoujm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/andyzoujm/subscriptions",
+      "organizations_url": "https://api.github.com/users/andyzoujm/orgs",
+      "repos_url": "https://api.github.com/users/andyzoujm/repos",
+      "events_url": "https://api.github.com/users/andyzoujm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/andyzoujm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/andyzoujm/autocast",
+    "description": "Forecasting Future World Events with Neural Networks (NeurIPS 2022)",
+    "fork": false,
+    "url": "https://api.github.com/repos/andyzoujm/autocast",
+    "forks_url": "https://api.github.com/repos/andyzoujm/autocast/forks",
+    "keys_url": "https://api.github.com/repos/andyzoujm/autocast/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/andyzoujm/autocast/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/andyzoujm/autocast/teams",
+    "hooks_url": "https://api.github.com/repos/andyzoujm/autocast/hooks",
+    "issue_events_url": "https://api.github.com/repos/andyzoujm/autocast/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/andyzoujm/autocast/events",
+    "assignees_url": "https://api.github.com/repos/andyzoujm/autocast/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/andyzoujm/autocast/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/andyzoujm/autocast/tags",
+    "blobs_url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/andyzoujm/autocast/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/andyzoujm/autocast/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/andyzoujm/autocast/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/andyzoujm/autocast/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/andyzoujm/autocast/languages",
+    "stargazers_url": "https://api.github.com/repos/andyzoujm/autocast/stargazers",
+    "contributors_url": "https://api.github.com/repos/andyzoujm/autocast/contributors",
+    "subscribers_url": "https://api.github.com/repos/andyzoujm/autocast/subscribers",
+    "subscription_url": "https://api.github.com/repos/andyzoujm/autocast/subscription",
+    "commits_url": "https://api.github.com/repos/andyzoujm/autocast/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/andyzoujm/autocast/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/andyzoujm/autocast/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/andyzoujm/autocast/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/andyzoujm/autocast/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/andyzoujm/autocast/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/andyzoujm/autocast/merges",
+    "archive_url": "https://api.github.com/repos/andyzoujm/autocast/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/andyzoujm/autocast/downloads",
+    "issues_url": "https://api.github.com/repos/andyzoujm/autocast/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/andyzoujm/autocast/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/andyzoujm/autocast/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/andyzoujm/autocast/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/andyzoujm/autocast/labels{/name}",
+    "releases_url": "https://api.github.com/repos/andyzoujm/autocast/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/andyzoujm/autocast/deployments",
+    "created_at": "2022-06-09T13:47:23Z",
+    "updated_at": "2026-09-05T11:11:15Z",
+    "pushed_at": "2023-05-13T08:48:41Z",
+    "git_url": "git://github.com/andyzoujm/autocast.git",
+    "ssh_url": "git@github.com:andyzoujm/autocast.git",
+    "clone_url": "https://github.com/andyzoujm/autocast.git",
+    "svn_url": "https://github.com/andyzoujm/autocast",
+    "homepage": "",
+    "size": 2594,
+    "stargazers_count": 186,
+    "watchers_count": 186,
+    "language": "Jupyter Notebook",
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": false,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 48,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 3,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "has_pull_requests": true,
+    "pull_request_creation_policy": "all",
+    "topics": [],
+    "visibility": "public",
+    "forks": 48,
+    "open_issues": 3,
+    "watchers": 186,
+    "default_branch": "master",
+    "temp_clone_token": null,
+    "network_count": 48,
+    "subscribers_count": 7
+  },
+  "tree": {
+    "sha": "f7907d45dd3f5e58d70834f2d7770c404ef4baba",
+    "url": "https://api.github.com/repos/andyzoujm/autocast/git/trees/f7907d45dd3f5e58d70834f2d7770c404ef4baba",
+    "tree": [
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "932cacb28c4bf7cedbe3465e13bcfc718b501afe",
+        "size": 1065,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/932cacb28c4bf7cedbe3465e13bcfc718b501afe"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c847ca51b84e52248ab4ea4d3f5c22046766df91",
+        "size": 3866,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/c847ca51b84e52248ab4ea4d3f5c22046766df91"
+      },
+      {
+        "path": "assets",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e86ca27dddaa83a6186862467045e771e0ef020b",
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/trees/e86ca27dddaa83a6186862467045e771e0ef020b"
+      },
+      {
+        "path": "assets/.DS_Store",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cde5be7bee4294ad7045beb331cb1a4ded457a6c",
+        "size": 6148,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/cde5be7bee4294ad7045beb331cb1a4ded457a6c"
+      },
+      {
+        "path": "assets/splash.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "13cdb4b1f82ad2372cd6b07ea3803596eafd1d4b",
+        "size": 1144778,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/13cdb4b1f82ad2372cd6b07ea3803596eafd1d4b"
+      },
+      {
+        "path": "autocast_experiments",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2dd437ccd185013806f98316b89f5c18fc55b8ce",
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/trees/2dd437ccd185013806f98316b89f5c18fc55b8ce"
+      },
+      {
+        "path": "autocast_experiments/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8b43d150a208240f83a32eecf05c6cac1ed93691",
+        "size": 1223,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/8b43d150a208240f83a32eecf05c6cac1ed93691"
+      },
+      {
+        "path": "autocast_experiments/data",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "87e9a2118f47986a6a5dc8b2bc70021c84832f62",
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/trees/87e9a2118f47986a6a5dc8b2bc70021c84832f62"
+      },
+      {
+        "path": "autocast_experiments/data/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a57f2dc943c0947cebe3419dfe84de6ec3dac5b1",
+        "size": 241,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/a57f2dc943c0947cebe3419dfe84de6ec3dac5b1"
+      },
+      {
+        "path": "autocast_experiments/data/download_cc_news.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1872c8dc67b3a4ebba76a9c0404bc9dd683f0ba7",
+        "size": 9344,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/1872c8dc67b3a4ebba76a9c0404bc9dd683f0ba7"
+      },
+      {
+        "path": "autocast_experiments/data/preprocess_cc_news.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "208b2b135ec5bcf35d835c35e2fa5f298eff1c34",
+        "size": 2962,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/208b2b135ec5bcf35d835c35e2fa5f298eff1c34"
+      },
+      {
+        "path": "autocast_experiments/data/process.ipynb",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "57c061c0a66ffd9dcc0cb4569b3f8bb0f07600e1",
+        "size": 5471,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/57c061c0a66ffd9dcc0cb4569b3f8bb0f07600e1"
+      },
+      {
+        "path": "autocast_experiments/data/retrieve_cc_news_bm25+ce.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "29fd26af80a8eea3a569757c800a2df791cd7f9f",
+        "size": 7871,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/29fd26af80a8eea3a569757c800a2df791cd7f9f"
+      },
+      {
+        "path": "autocast_experiments/data/retrieve_cc_news_bm25+ce.sh",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "85c19c5520bd23ebf8a68ef080a7eefabb98afc5",
+        "size": 181,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/85c19c5520bd23ebf8a68ef080a7eefabb98afc5"
+      },
+      {
+        "path": "autocast_experiments/evaluate.ipynb",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "51837ffc3d07704d6ed01179f66edb1d588e29cc",
+        "size": 15602,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/51837ffc3d07704d6ed01179f66edb1d588e29cc"
+      },
+      {
+        "path": "autocast_experiments/src",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "903a09017f0df51912790117c61daedff8c16b50",
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/trees/903a09017f0df51912790117c61daedff8c16b50"
+      },
+      {
+        "path": "autocast_experiments/src/data_multihead.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "2c72552046fb50327ac84a42ffeeddfc8033a0cc",
+        "size": 9819,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/2c72552046fb50327ac84a42ffeeddfc8033a0cc"
+      },
+      {
+        "path": "autocast_experiments/src/evaluation.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "478aedb6786a3ad512907f75733d853eba16b7c3",
+        "size": 6125,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/478aedb6786a3ad512907f75733d853eba16b7c3"
+      },
+      {
+        "path": "autocast_experiments/src/forecasting_data_multihead.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "905c7296513a22b242a564825cb460503b67954e",
+        "size": 6143,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/905c7296513a22b242a564825cb460503b67954e"
+      },
+      {
+        "path": "autocast_experiments/src/index.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5f8768d80b841dce466e0f291e6c45175e5a171d",
+        "size": 2976,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/5f8768d80b841dce466e0f291e6c45175e5a171d"
+      },
+      {
+        "path": "autocast_experiments/src/model.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "7c882ac7f4472289b80740dcf97aa5c3655f76bb",
+        "size": 13112,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/7c882ac7f4472289b80740dcf97aa5c3655f76bb"
+      },
+      {
+        "path": "autocast_experiments/src/model_multihead.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "0e747d04195d2832c53038659105aa0b22957ea9",
+        "size": 17576,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/0e747d04195d2832c53038659105aa0b22957ea9"
+      },
+      {
+        "path": "autocast_experiments/src/options.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "8b223305df7a03783984a23fcfc645a7f3e4edeb",
+        "size": 7128,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/8b223305df7a03783984a23fcfc645a7f3e4edeb"
+      },
+      {
+        "path": "autocast_experiments/src/slurm.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "c0b33474b7f83db8aa6e98580b8062047fa7826f",
+        "size": 5743,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/c0b33474b7f83db8aa6e98580b8062047fa7826f"
+      },
+      {
+        "path": "autocast_experiments/src/util.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "cf3104a9fd72b16086a8c681a67d167618645742",
+        "size": 13019,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/cf3104a9fd72b16086a8c681a67d167618645742"
+      },
+      {
+        "path": "autocast_experiments/temporal_to_static_data_converter.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b65584413f1fa7c449ca085ec7a91ffffc2ee77c",
+        "size": 849,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/b65584413f1fa7c449ca085ec7a91ffffc2ee77c"
+      },
+      {
+        "path": "autocast_experiments/train_fid_static.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "9ba5f2d099e0ea6b10ac205bc53dbb45491415e4",
+        "size": 14659,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/9ba5f2d099e0ea6b10ac205bc53dbb45491415e4"
+      },
+      {
+        "path": "autocast_experiments/train_fid_static.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "98bbb4887aa85609206b5c06df018890e77d5104",
+        "size": 1057,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/98bbb4887aa85609206b5c06df018890e77d5104"
+      },
+      {
+        "path": "autocast_experiments/train_fid_temporal.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "a7f7a95368160b0c95d1bf1cda404eb45612d32b",
+        "size": 36885,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/a7f7a95368160b0c95d1bf1cda404eb45612d32b"
+      },
+      {
+        "path": "autocast_experiments/train_fid_temporal.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "d93f46581923429790d4354c15d5cfbe58d61417",
+        "size": 1494,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/d93f46581923429790d4354c15d5cfbe58d61417"
+      },
+      {
+        "path": "competition",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "91416a91a50b284625ff454559939887ab042965",
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/trees/91416a91a50b284625ff454559939887ab042965"
+      },
+      {
+        "path": "competition/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3a7b55d3759fd521ada9b39112132aa4d0aefb27",
+        "size": 309,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/3a7b55d3759fd521ada9b39112132aa4d0aefb27"
+      },
+      {
+        "path": "competition/autocast_competition_test_set.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f1c822d244a49eb3f69cb04050f84fa1262dbac4",
+        "size": 2016865,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/f1c822d244a49eb3f69cb04050f84fa1262dbac4"
+      },
+      {
+        "path": "competition/example_submission.ipynb",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "65bb81f76f1dfe9cbb2fb9f1d532224889fe56a6",
+        "size": 6502,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/65bb81f76f1dfe9cbb2fb9f1d532224889fe56a6"
+      },
+      {
+        "path": "intervalqa_experiments",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ac566eaf4d8deddc8428b6c643185f7ab38ddf47",
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/trees/ac566eaf4d8deddc8428b6c643185f7ab38ddf47"
+      },
+      {
+        "path": "intervalqa_experiments/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e225b92c855a913b9eb4e5d8b06bf0d16b87033",
+        "size": 267,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/9e225b92c855a913b9eb4e5d8b06bf0d16b87033"
+      },
+      {
+        "path": "intervalqa_experiments/finetune_confidence.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "030f905412bcc253fe94cc82de4f5b534656483b",
+        "size": 29122,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/030f905412bcc253fe94cc82de4f5b534656483b"
+      },
+      {
+        "path": "intervalqa_experiments/train.sh",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f36409eb70d85ea15bff3ee0d800f7b68f9792e6",
+        "size": 535,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/f36409eb70d85ea15bff3ee0d800f7b68f9792e6"
+      },
+      {
+        "path": "intervalqa_experiments/utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "10948b1268b1662fac2fcd5c726466ab6f342a21",
+        "size": 1666,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/10948b1268b1662fac2fcd5c726466ab6f342a21"
+      },
+      {
+        "path": "usage.ipynb",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e3023fb76c05e5a857be1abe766d67f97569568a",
+        "size": 288595,
+        "url": "https://api.github.com/repos/andyzoujm/autocast/git/blobs/e3023fb76c05e5a857be1abe766d67f97569568a"
+      }
+    ],
+    "truncated": false
+  }
+}

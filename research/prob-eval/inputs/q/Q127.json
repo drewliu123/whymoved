@@ -1,0 +1,44 @@
+{
+ "qid": "Q127",
+ "question": "Will Ukraine re-enter Hryshyne by September 30?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Ukraine captures any territory of Hryshyne, Donetsk Oblast, (48.326812° N, 37.081701° E) between market creation and the specified date, 11:59 PM ET.\n\nTerritory will be considered captured if any part of the specified territory is shaded under a below specified layer on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. Otherwise, the market will resolve to “No”.\n\nThe boundaries of the municipality are those shown under the “Ukrainian Settlements” layer on the ISW map.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date.\n\nAny continuous shading under the following layers will qualify:\n- Claimed Ukrainian Counteroffensives\n\nOnce a qualifying condition is met, any subsequent loss of control will not be considered towards the resolution of this market.\n\nIf Ukraine comes into control of the specified territory as a result of a negotiated settlement, this wi",
+ "as_of": "2026-09-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-17",
+   "excerpt": "Russian forces recently conducted an infiltration mission south of Dobropillya. Ukrainian forces struck a Russian position west of Hryshyne (south of Dobropillya) after what ISW assesses was a Russian infiltration mission based on geolocated footage published on September 17."
+  },
+  {
+   "id": "E2",
+   "publisher": "Hudson Institute",
+   "published_at": "2026-09-16",
+   "excerpt": "A Ukrainian counteroffensive made gains north of Lyman, but Russian forces retained the offensive initiative across the battlespace. These efforts underscore the intensity of the battlespace: last week Ukraine and Russia waged more than 250 tactical engagements per day. Pokrovsk, Kostiantynivka, and Huliaipole remained the most important flashpoints to monitor."
+  },
+  {
+   "id": "E3",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-14",
+   "excerpt": "Ukrainian forces recently advanced or maintained positions southwest of Dobropillya. Ukrainian forces hold positions northeast of Novopidhorodne, according to geolocated footage published on September 13, contrary to Russian claims. Russian forces are heavily relying on drone and glide bomb strikes in the Dobropillya area, likely due to localized Russian personnel shortages following tactical failures to advance in the killzone."
+  },
+  {
+   "id": "E4",
+   "publisher": "Ukrinform, reporting the Ukrainian General Staff",
+   "published_at": "2026-09-13",
+   "excerpt": "Over the past day, September 12, there were 249 combat engagements between units of the Defense Forces of Ukraine and Russian troops along the front line. According to Ukrinform, this was reported by the General Staff of the Armed Forces of Ukraine in a Facebook post on the situation as of 8:00 on Sunday, September 13. The enemy was active near Shakhove, Molodetske, Bilytske, Serhiivka and Udachne, and also launched assaults toward Toretske, Kucheriv Yar, Stepove, Dorozhnie, Svitle, Shevchenko, Matiasheve, Novohryshyne, Hryshyne, and Novopidhorodne."
+  },
+  {
+   "id": "E5",
+   "publisher": "Russia Matters",
+   "published_at": "2026-09-09",
+   "excerpt": "Based on data from Ukraine’s DeepState OSINT group, Russian forces made a net gain of 14 square miles of Ukraine’s territory in the past four weeks (Aug. 11–Sept. 8, 2026). In contrast, RM’s analysis of data from ISW indicates that Russia made a net gain of 75 square miles of Ukraine’s territory in the past four weeks (Aug. 11–Sept. 8, 2026). Settlements near which Russian forces advanced Sept. 1–8, 2026, according to DeepState: Bochkove, Ivashkyne, Luhivske, Hulyaypilske, Holubivka, Stupochky, Kostiantynivka, Shevchenko, Mali Shcherbaky, Varvarivka, Hryshyne, Kalenyky, Fedorivka Druha, Stepanivka, and Kotlyne."
+  },
+  {
+   "id": "E6",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-03-10",
+   "excerpt": "Assessed Russian advances: Geolocated footage published on March 9 and 10 indicates that Russian forces recently advanced east of and in western and central Hryshyne."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+  "qid": "Q052",
+  "as_of": "2026-08-18",
+  "kept": [],
+  "removed": [
+    {
+      "url": "https://www.cbs.gov.il/he/mediarelease/Madad/DocLib/2026/257/10_26_257e.pdf",
+      "reason": "The relevance refers to the upcoming rate decision, implying an event after 2026-08-18. Removed under the explicit prohibition on any post-cutoff implications, although the reported CPI data and publication date precede the cutoff."
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/mad71ihvl",
+      "reason": "The excerpt places the next monetary decision roughly two weeks after its 2026-08-16 publication, implying an event after 2026-08-18."
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/ojr20ladn",
+      "reason": "The excerpt describes prospective defense-budget approval and future rate cuts; the relevance projects a possible pause at the upcoming meeting. These imply events after 2026-08-18 and fail the explicit prohibition on any post-cutoff implications."
+    },
+    {
+      "url": "https://www.boi.org.il/en/communication-and-publications/press-releases/the-monetary-committee-decides-on-july-6-2026-to-lower-the-interest-rate-to-35-percent/",
+      "reason": "The excerpt explicitly mentions August 31, September 1 and September 3, 2026, all after 2026-08-18, even though the schedule announcement was published before the cutoff."
+    },
+    {
+      "url": "https://www.boi.org.il/en/communication-and-publications/press-releases/research-department-staff-forecast-july-2026",
+      "reason": "The excerpt explicitly discusses 2027 GDP, inflation through the second quarter of 2027, and the expected interest rate in that quarter. These post-cutoff references fail the stated rule even though they are pre-cutoff forecasts."
+    },
+    {
+      "url": "https://www.investing.com/news/economy-news/bank-of-israel-cuts-key-rate-by-25-bps-as-usiran-ceasefire-pushes-down-energy-prices-4776948",
+      "reason": "The excerpt and relevance discuss further rate cuts and their future conditions, implying policy developments after 2026-08-18. Removed under the explicit prohibition on any post-cutoff implications; neither the July rate decision nor the stated July revision date independently violates the cutoff."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-08-18, inclusive. Six items retained with explicit publication dates verified in source text returned by web_search; the Reuters revision is also before the cutoff. No post-cutoff reporting, meeting outcome, prediction-market pages, betting odds or market-implied policy probabilities are included. A material timing discrepancy was already public before the cutoff: the July 6 Bank of Israel release moved the decision originally scheduled for August 31 to September 1, while retaining September 3 as its effective date. web_fetch failed because multiple providers were registered without a configured selection; the requested agent-reach web-read fallback returned rate-limit errors, so full-page retrieval could not be independently completed. Excerpts were confined to dated article and release text exposed by search, excluding comments, related links and later publications."
+}

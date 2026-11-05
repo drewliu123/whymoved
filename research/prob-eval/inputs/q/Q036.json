@@ -1,0 +1,26 @@
+{
+ "qid": "Q036",
+ "question": "Will \"Spider-Man: Brand New Day\" score at least 90 on the Rotten Tomatoes Tomatometer?",
+ "rules": "This market will resolve to “Yes” if the displayed Rotten Tomatoes “All Critics” Tomatometer score for Spider-Man: Brand New Day (2026) is at least equal to the specified number at 10:00 AM ET on August 3, 2026. Otherwise, this market will resolve to \"No\".\n\nIf, for any reason, the resolution data is unavailable at this market's specified end time, the resolution source will be checked until the relevant data is available. This market will resolve to “No” if no data is available by August 7, 2026, 11:59 PM ET.\n",
+ "as_of": "2026-07-20",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "ComicBook.com",
+   "published_at": "2019-06-28",
+   "excerpt": "Currently, the movie stands at an impressive 90% with 111 reviews. That means the film is now \"Certified Fresh\" on the review site. As of now, Spider-Man: Far From Home is tied for third highest rated Spider-Man film on Rotten Tomatoes, with Spider-Man: Homecoming coming in second at 92%."
+  },
+  {
+   "id": "E2",
+   "publisher": "TheWrap",
+   "published_at": "2021-12-17",
+   "excerpt": "\"No Way Home\" boasts a 94% Rotten Tomatoes score and is opening in the weekend before Christmas with the expectation that it will perform well into the holiday. Jon Watts returns to direct the film, which was written by Chris McKenna and Erik Sommers."
+  },
+  {
+   "id": "E3",
+   "publisher": "Box Office Mojo",
+   "published_at": "2021-09-02",
+   "excerpt": "Shang-Chi is directed and co-written by Destin Daniel Cretton, who broke through with the indie drama Short Term 12 which met rave reviews, and he most recently directed Just Mercy. The film is at 91% on Rotten Tomatoes, and critics widely praised it for having a strong dramatic core in addition to its eye popping action scenes."
+  }
+ ]
+}

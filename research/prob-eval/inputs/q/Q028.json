@@ -1,0 +1,38 @@
+{
+ "qid": "Q028",
+ "question": "Will NVIDIA be the second-largest company in the world by market cap on July 31?",
+ "rules": "This market will resolve to the second-largest company in the world by market cap on July 31, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters (via MarketScreener)",
+   "published_at": "2026-07-17",
+   "excerpt": "July 17 (Reuters) - Apple overtook Nvidia on Friday to become the world's most valuable company, reshuffling the top ranks of tech heavyweights as investors reassess the outlook for artificial intelligence. Apple was last valued at $4.88 trillion as its shares held steady, while Nvidia was roughly at $4.86 trillion, following a 3.5% decline. Nvidia became the first company in the world to surpass a $5 trillion market valuation in October."
+  },
+  {
+   "id": "E2",
+   "publisher": "Yahoo Finance",
+   "published_at": "2026-07-17",
+   "excerpt": "Apple briefly became the world's most valuable publicly traded company once again on Friday before Nvidia reclaimed the top spot. While Nvidia ended the week with a market cap of $4.912 trillion, just a hair ahead of Apple's $4.901 trillion valuation, Friday's trading capped a blockbuster week of gains for AAPL, even as investors pummeled AI-related stocks."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters (via Investing.com)",
+   "published_at": "2026-07-16",
+   "excerpt": "A shakeout in U.S. semiconductor stocks tanked the tech-heavy Nasdaq on Thursday as AI jitters spread globally, while solid U.S. economic data helped lift the dollar and Treasury yields. Nervousness around the huge cost of the AI buildout is beginning to ripple through Wall Street, with the 'SOX' chip index down 20% in the past month."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters (via MarketScreener)",
+   "published_at": "2026-07-14",
+   "excerpt": "WASHINGTON, July 14 (Reuters) - A top U.S. official told Congress on Tuesday that a small number of Nvidia H200 chips, one of the company's most powerful AI chips, have been shipped to China to date."
+  },
+  {
+   "id": "E5",
+   "publisher": "Axios",
+   "published_at": "2026-05-20",
+   "excerpt": "As the largest U.S. company by market capitalization (now $5.4 trillion!), Nvidia has the single biggest influence on broad market cap-weighted indexes like the S&P 500."
+  }
+ ]
+}

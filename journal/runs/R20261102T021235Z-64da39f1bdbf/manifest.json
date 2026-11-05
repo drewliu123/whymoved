@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-11-02T02:10:32.656848Z",
+  "audit_role": "untrusted_metadata",
+  "created_at": "2026-11-02T02:12:35.364461Z",
+  "files": {
+    "audit.json": "187ea0d6c03ceaae593c6269bfe2f91821d7d5b46e2556383acc269ea7281e24",
+    "calculations.json": "0d1eb25d28f1f56f2edafbd14e27cc7c532a0b36a84bc893fc7ac733b9988eff",
+    "claims.json": "131d1fef3c2bafb4581022a80224ae0c1299da7c91c4aa4594fe0af86f4303be",
+    "diff.json": "c88cfd93811c3649c2754270094eebe34dd7d3a4cf21e7bec4417fb5e9b36759",
+    "plan.json": "6d2df4bed545c9d50e0dfef967d64ac43fb6543578f9742953181b5672c49f9d",
+    "report.html": "520d8ebd23617dfa2bd071963b41361a9072c789036f92f10baed015aa8a44d2",
+    "report.json": "b1d5365203b0899eb588c0986b8233121b03d9aeceabc2ef9e178ae1c7444a9d",
+    "report.md": "ceaa81e39e9940a8063227d4531e3ede2e69c74549acc560017bbec44b6280e5",
+    "sources.json": "fa59f78096e370b9b490d1f12b071014d859e82c1d0a9411266bcdca997cfb40"
+  },
+  "parent_manifest_sha256": "ff04514a5bfd868b64d6bff364f673c7a3440934bac851d0603d509bf1b00817",
+  "parent_run": "R20261102T020745Z-a493e74d7266",
+  "run_id": "R20261102T021235Z-64da39f1bdbf",
+  "schema_version": 2
+}

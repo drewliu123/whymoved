@@ -1,0 +1,166 @@
+{
+  "as_of": "2026-10-31T17:29:33Z",
+  "arithmetic": "Python Decimal on disclosed rounded inputs",
+  "periods": {
+    "FY26": "2025-07-01 through 2026-06-30",
+    "FY27": "2026-07-01 through 2027-06-30",
+    "FY27_H2": "2027-01-01 through 2027-06-30",
+    "CY2026": "2026-01-01 through 2026-12-31"
+  },
+  "observations": [
+    {
+      "period": "FY25 Q4",
+      "calendar_period": "2025-04-01—2025-06-30",
+      "capex_including_finance_leases": 24.2,
+      "cash_ppe": 17.1,
+      "finance_lease_additions": 6.5,
+      "source_id": "S1"
+    },
+    {
+      "period": "FY26 Q1",
+      "calendar_period": "2025-07-01—2025-09-30",
+      "capex_including_finance_leases": 34.9,
+      "cash_ppe": 19.4,
+      "finance_lease_additions": 11.1,
+      "source_id": "S2"
+    },
+    {
+      "period": "FY26 Q2",
+      "calendar_period": "2025-10-01—2025-12-31",
+      "capex_including_finance_leases": 37.5,
+      "cash_ppe": 29.9,
+      "finance_lease_additions": 6.7,
+      "source_id": "S3"
+    },
+    {
+      "period": "FY26 Q3",
+      "calendar_period": "2026-01-01—2026-03-31",
+      "capex_including_finance_leases": 31.9,
+      "cash_ppe": 30.9,
+      "finance_lease_additions": 4.7,
+      "source_id": "S4"
+    },
+    {
+      "period": "FY26 Q4",
+      "calendar_period": "2026-04-01—2026-06-30",
+      "capex_including_finance_leases": 41,
+      "cash_ppe": 35.8,
+      "finance_lease_additions": 5.6,
+      "source_id": "S5"
+    },
+    {
+      "period": "FY27 Q1",
+      "calendar_period": "2026-07-01—2026-09-30",
+      "capex_including_finance_leases": 45.2,
+      "cash_ppe": 39.4,
+      "finance_lease_additions": 7.4,
+      "source_id": "S6"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "K1",
+      "description": "FY26四季公司整体报告资本开支合计",
+      "formula": "34.9+37.5+31.9+41.0",
+      "inputs_claim_ids": [
+        "C2",
+        "C3"
+      ],
+      "result": 145.3,
+      "unit": "USD billion",
+      "qualification": "rounded transcript sum; not annual filing exact amount; includes finance leases; all infrastructure, not AI-only"
+    },
+    {
+      "id": "K2",
+      "description": "FY26现金PP&E及融资租赁分别求和",
+      "formula": "cash=19.4+29.9+30.9+35.8; finance=11.1+6.7+4.7+5.6",
+      "inputs_claim_ids": [
+        "C2",
+        "C3"
+      ],
+      "result": {
+        "cash_ppe": 116.0,
+        "finance_leases": 28.1
+      },
+      "unit": "USD billion",
+      "qualification": "Do not add cash PPE and finance leases as exact capex: receipt/payment timing differs."
+    },
+    {
+      "id": "K3",
+      "description": "FY27 Q1现金PP&E同比",
+      "formula": "difference=39.4-19.4; growth=(39.4/19.4-1)*100",
+      "inputs_claim_ids": [
+        "C2",
+        "C4"
+      ],
+      "result": {
+        "difference": 20.0,
+        "growth_pct": 103.1
+      },
+      "unit": "difference USD billion; growth percent",
+      "qualification": "cash timing and lease classification affect interpretation; not AI physical capacity growth"
+    },
+    {
+      "id": "K4",
+      "description": "FY27 Q1报告资本开支同比",
+      "formula": "(45.2/34.9-1)*100",
+      "inputs_claim_ids": [
+        "C2",
+        "C4",
+        "C7"
+      ],
+      "result": 29.5,
+      "unit": "percent",
+      "qualification": "not like-for-like because FY27 lease classification changed"
+    },
+    {
+      "id": "K5",
+      "description": "日历年2026指引差额（原因标签据管理层解释）",
+      "formula": "175-190;170-175",
+      "inputs_claim_ids": [
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "result": {
+        "classification_change": -15.0,
+        "delivery_delay_revision": -5.0
+      },
+      "unit": "USD billion",
+      "qualification": "Arithmetic guidance differences only; classification/delivery cause labels follow management explanations, not independently verified economic attribution; demand may also change. Not realized savings; first revision changes scope."
+    },
+    {
+      "id": "K6",
+      "description": "CY2026前三季及全年指引隐含末季",
+      "formula": "Jan-Sep=31.9+41+45.2=118.1; implied Oct-Dec=170-118.1=51.9",
+      "inputs_claim_ids": [
+        "C3",
+        "C4",
+        "C8"
+      ],
+      "result": {
+        "reported_Jan_Sep": 118.1,
+        "implied_Oct_Dec": 51.9
+      },
+      "unit": "USD billion",
+      "qualification": "170 is approximate guidance; mixed scope across FY27 reclassification, arithmetic consistency only, no full-year outcome claim"
+    },
+    {
+      "id": "K7",
+      "description": "最新季度FCF算术核对",
+      "formula": "58.0-39.4",
+      "inputs_claim_ids": [
+        "C13",
+        "C4"
+      ],
+      "result": 18.6,
+      "unit": "USD billion",
+      "qualification": "cash operating flow minus cash PPE, not minus capex incl finance leases; no claim that lease principal obligations vanish"
+    }
+  ],
+  "not_calculated": [
+    "AI-only ROI/ROIC/payback: attributable capital and incremental cash profit unavailable",
+    "FY26 capex growth-rate versus FY25/FY24: complete comparable base not collected in six-document set; no claim that revised annual growth-rate guidance was met",
+    "physical AI capacity per dollar: price, asset mix and unavailable usable-GPU capacity prevent estimate"
+  ]
+}

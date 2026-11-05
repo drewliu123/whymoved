@@ -1,0 +1,11 @@
+{
+  "intent": "breaking_news",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "debate",
+  "subqueries": [
+    {"label":"primary","search_query":"Nasdaq tech stocks selloff","ranking_query":"What explanations and counterexamples do public discussions offer for Nasdaq Composite technology stock weakness? Distinguish company earnings, rates, financing and AI investment; do not assume AI caused a broad decline.","sources":["reddit","hackernews","polymarket"],"weight":1.0},
+    {"label":"earnings-return","search_query":"AI spending earnings cash flow","ranking_query":"Which discussions identify concrete spending, earnings or cash-flow mechanisms and counterexamples where strong demand or earnings challenge an AI-demand-collapse explanation? Prefer detailed low-engagement observations too.","sources":["reddit","hackernews"],"weight":0.8},
+    {"label":"alternative-explanations","search_query":"Nasdaq yields rates valuation","ranking_query":"What evidence or viewpoints distinguish interest rates, financing costs, valuation, positioning or non-AI earnings from AI spending as an explanation for Nasdaq weakness?", "sources":["reddit","hackernews"],"weight":0.7}
+  ],
+  "context":{"window_start":"2026-10-02","window_end":"2026-11-01","timezone":"America/New_York","subreddits":["stocks","investing","StockMarket"],"named_entity":"Nasdaq Composite","role":"community leads only; all T4 supports view","excluded_sources_reason":"GitHub may invoke detected gh authentication; YouTube excluded for bounded run; all paid and login lanes excluded"}
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T09:37:13.077786Z",
+  "historical": false,
+  "source_status": {
+    "sec": {
+      "status": "ok"
+    }
+  },
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "publisher": "NVIDIA / SEC EDGAR",
+      "tier": "T0",
+      "published_at": "2026-08-26T20:36:00Z",
+      "retrieved_at": "2026-11-02T09:30:44.008620Z",
+      "quote": "Three Months Ended  Quarter-over-Quarter Change  Year-over-Year Change\nJul 26, 2026  Apr 26, 2026  Jul 27, 2025\n($ in millions, except per share data)\nRevenue  $96,221  $81,615  $46,743  18%  106%",
+      "locator": "10-Q Part I, Item 2; Second Quarter of Fiscal Year 2027 Summary; Revenue; Jul 26, 2026; USD millions",
+      "origin_id": "sec:0001045810-26-000075",
+      "origin_basis": "Original NVIDIA SEC filing, exact accession 0001045810-26-000075",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "Direct revenue row and period/unit headers from the specified filing.",
+        "relevance": "direct",
+        "purpose": "Validate SEC financial evidence ingestion",
+        "priority": "decisive"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "scorer_smoke_only_not_semantic_eval",
+  "passed": true,
+  "checks": {
+    "synthetic_valid": true,
+    "reject_missing_case": true,
+    "reject_duplicate_case": true,
+    "reject_forbidden_action": true,
+    "reject_nonboolean_review": true,
+    "reject_malformed_mode": true,
+    "reject_missing_action": true,
+    "reject_empty_reason": true
+  }
+}

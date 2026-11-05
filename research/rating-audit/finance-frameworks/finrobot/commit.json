@@ -1,0 +1,113 @@
+{
+  "sha": "63e1884a42ea7b729551a5424b4bd6a65af636e0",
+  "node_id": "C_kwDOLYdQW9oAKDYzZTE4ODRhNDJlYTdiNzI5NTUxYTU0MjRiNGJkNmE2NWFmNjM2ZTA",
+  "commit": {
+    "author": {
+      "name": "Wu Shuwen",
+      "email": "mikewushuwen@outlook.com",
+      "date": "2026-10-24T13:58:26Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-10-24T13:58:26Z"
+    },
+    "message": "fix(data): classify FMP payment-required responses (#119)\n\nSigned-off-by: dajiaohuang <mikewushuwen@outlook.com>",
+    "tree": {
+      "sha": "45eae8e2582e4f912555c69d00d37cc10c215b10",
+      "url": "https://api.github.com/repos/AI4Finance-Foundation/FinRobot/git/trees/45eae8e2582e4f912555c69d00d37cc10c215b10"
+    },
+    "url": "https://api.github.com/repos/AI4Finance-Foundation/FinRobot/git/commits/63e1884a42ea7b729551a5424b4bd6a65af636e0",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq3LmCCRC1aQ7uu5UhlAAAbLgQAFHWRlJzCqhmkW5xt1YP+Z3R\nzE5RyrFm3KRdAlEinccOWrzviXGrrsFrz0+ZsKgZF3PTkF4kERANUUJ0hyRoxyim\nGHq3zCaezrHF0pyAwGO4FWs/56urK1BdFfVXo7gXtl48oEz1DWF1PY0R8v8cF7Q6\nMZY5lRYyw+mh7wyL2qXlDu7Kar8DG4WATJ5Ijvztzzk/Zu34upperIS2b8P9Qv2y\nvXMPNQzLHT3oDGiX5pwiHqhH6z7Z5YJ1y3X/t31aOPYw7YSwc95p/Gozskjl9Pwk\nM6C/5R6HnA5LJGQR5oceGWPyy61gWPY/rgWadWj8i/7YaGPathzdkIbnEExpWvef\n6/CI2F25Znud5GdBDCtLlLqqTlgr6+7eUfNk7aAbMb0V0/DAWPRCfKaj/QyTJKRQ\nYqC/UK1pD9cJHEoDoRSGKYy4EbU0Wc0BJ4L0O+6gLxMAgjfyqhoFNfYO5NqFxNUr\nx/waehtt8o2LnM3d47VjBNp6uEe7KZMxaJI+jV8v6jyeBZv2rEmKagd7cJHnrfDO\n/1Iv55pGmmJw33KW7eGQOzxO4rpOcGdTE5+cfDQYu0whgUhWj2mRDplV8LAHrCS+\n5P6aYLbaD5qmU0v2q/TpZaoq1Td8ZNJF43e+gxjapwdfbxGJAT6UxslIlUZXgE3o\napi6H0jdp6J8FF33zOxK\n=IHO0\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 45eae8e2582e4f912555c69d00d37cc10c215b10\nparent 2717499b8e30f242640af08c4ad9afd1113c2d45\nauthor Wu Shuwen <mikewushuwen@outlook.com> 1792850306 +0800\ncommitter GitHub <noreply@github.com> 1792850306 +0800\n\nfix(data): classify FMP payment-required responses (#119)\n\nSigned-off-by: dajiaohuang <mikewushuwen@outlook.com>",
+      "verified_at": "2026-10-24T13:58:26Z"
+    }
+  },
+  "url": "https://api.github.com/repos/AI4Finance-Foundation/FinRobot/commits/63e1884a42ea7b729551a5424b4bd6a65af636e0",
+  "html_url": "https://github.com/AI4Finance-Foundation/FinRobot/commit/63e1884a42ea7b729551a5424b4bd6a65af636e0",
+  "comments_url": "https://api.github.com/repos/AI4Finance-Foundation/FinRobot/commits/63e1884a42ea7b729551a5424b4bd6a65af636e0/comments",
+  "author": {
+    "login": "dajiaohuang",
+    "id": 108231307,
+    "node_id": "U_kgDOBnN6iw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/108231307?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dajiaohuang",
+    "html_url": "https://github.com/dajiaohuang",
+    "followers_url": "https://api.github.com/users/dajiaohuang/followers",
+    "following_url": "https://api.github.com/users/dajiaohuang/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dajiaohuang/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dajiaohuang/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dajiaohuang/subscriptions",
+    "organizations_url": "https://api.github.com/users/dajiaohuang/orgs",
+    "repos_url": "https://api.github.com/users/dajiaohuang/repos",
+    "events_url": "https://api.github.com/users/dajiaohuang/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dajiaohuang/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+      "url": "https://api.github.com/repos/AI4Finance-Foundation/FinRobot/commits/2717499b8e30f242640af08c4ad9afd1113c2d45",
+      "html_url": "https://github.com/AI4Finance-Foundation/FinRobot/commit/2717499b8e30f242640af08c4ad9afd1113c2d45"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 21,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "70bebca047f0ee33f56910606cfae6a0c1b18c52",
+      "filename": "finrobot_desktop/finrobot/engine/data/providers/fmp_provider.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop%2Ffinrobot%2Fengine%2Fdata%2Fproviders%2Ffmp_provider.py",
+      "raw_url": "https://github.com/AI4Finance-Foundation/FinRobot/raw/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop%2Ffinrobot%2Fengine%2Fdata%2Fproviders%2Ffmp_provider.py",
+      "contents_url": "https://api.github.com/repos/AI4Finance-Foundation/FinRobot/contents/finrobot_desktop%2Ffinrobot%2Fengine%2Fdata%2Fproviders%2Ffmp_provider.py?ref=63e1884a42ea7b729551a5424b4bd6a65af636e0",
+      "patch": "@@ -1774,6 +1774,13 @@ async def _get(self, path: str, params: dict[str, Any] | None = None) -> httpx.R\n         # only signal and is key-free — so the data layer can fall through the\n         # provider chain without charging the circuit breaker. The message\n         # carries path + status only, never the URL (which embeds ?apikey=).\n+        if resp.status_code == 402:\n+            # Payment Required is an account/billing entitlement response, not a\n+            # transient provider outage. Keep it out of the circuit-breaker retry\n+            # path just like the explicit 403 plan/legacy response below.\n+            raise ProviderPlanError(\n+                f\"FMP account payment/plan access required for {path} (HTTP 402)\"\n+            )\n         if resp.status_code == 403:\n             try:\n                 body = resp.text[:500].lower()"
+    },
+    {
+      "sha": "3f6c492ed0fba339a22f1d198d3b1239796a9a3b",
+      "filename": "finrobot_desktop/tests/unit/test_fmp_provider.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 2,
+      "changes": 16,
+      "blob_url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop%2Ftests%2Funit%2Ftest_fmp_provider.py",
+      "raw_url": "https://github.com/AI4Finance-Foundation/FinRobot/raw/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop%2Ftests%2Funit%2Ftest_fmp_provider.py",
+      "contents_url": "https://api.github.com/repos/AI4Finance-Foundation/FinRobot/contents/finrobot_desktop%2Ftests%2Funit%2Ftest_fmp_provider.py?ref=63e1884a42ea7b729551a5424b4bd6a65af636e0",
+      "patch": "@@ -1930,14 +1930,26 @@ async def test_fetch_price_drops_rows_missing_adjclose(self, provider):\n \n \n class TestFMPPlanGate:\n-    \"\"\"403 + key-free plan/legacy body → typed ProviderPlanError from _get, so\n-    the data layer falls through the chain without charging the breaker.\"\"\"\n+    \"\"\"Non-retryable payment/plan responses become ProviderPlanError so the\n+    data layer falls through without charging the provider circuit breaker.\"\"\"\n \n     @staticmethod\n     def _resp(status: int, text: str) -> httpx.Response:\n         request = httpx.Request(\"GET\", \"https://financialmodelingprep.com/stable/news/stock\")\n         return httpx.Response(status, text=text, request=request)\n \n+    @pytest.mark.asyncio\n+    async def test_402_payment_required_is_typed_as_account_plan_gate(self, provider, monkeypatch):\n+        from finrobot.engine.data.interface import ProviderPlanError\n+\n+        monkeypatch.setattr(\n+            provider._client,\n+            \"get\",\n+            AsyncMock(return_value=self._resp(402, '{\"error\": \"payment required\"}')),\n+        )\n+        with pytest.raises(ProviderPlanError, match=\"HTTP 402\"):\n+            await provider._get(\"/financials\", params={\"symbol\": \"SYNTH\"})\n+\n     @pytest.mark.asyncio\n     async def test_403_with_plan_body_raises_provider_plan_error(self, provider, monkeypatch):\n         from finrobot.engine.data.interface import ProviderPlanError"
+    }
+  ]
+}

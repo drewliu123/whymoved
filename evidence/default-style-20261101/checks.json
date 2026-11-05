@@ -1,0 +1,36 @@
+{
+  "version": "0.3.1",
+  "changed_files": [
+    {
+      "path": "skills/research/SKILL.md",
+      "changed": true,
+      "sha256": "ac99c52d61f04873f452df300cd5cfa601f47749d3be8944da5a14c9c408045d"
+    },
+    {
+      "path": "skills/research/references/memo-template.md",
+      "changed": true,
+      "sha256": "d4f2fae38b1ebd492c373562dcc31de2c9a0b4f4d97755ff61795b0458aaccb8"
+    },
+    {
+      "path": "agents/red-team.md",
+      "changed": true,
+      "sha256": "397fd040e72fd6dd38db887febda40f3f9ae86fae78137fdd88ebf00e29ae0f5"
+    },
+    {
+      "path": "README.md",
+      "changed": true,
+      "sha256": "6c9c6fcfd2c74a5d54b74df3f12fdd7f2824e1e060af12b3997bb2b1b06d9866"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "changed": true,
+      "sha256": "c4e9e9c44401f862b0799ca896b77d4479b23805f25007bbb6eeebe682731eec"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "changed": true,
+      "sha256": "f2b5a4ff3bda6d6acf5882156eb2c97e98d6f6857659ec2fd7dae3f8a3dcb232"
+    }
+  ],
+  "validation": "six-file diff and plugin metadata checked; no generated research evaluation"
+}

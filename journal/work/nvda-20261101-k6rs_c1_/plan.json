@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "question": "截至2026年11月1日，英伟达近期为什么大跌，行业与公司因素分别有哪些证据？",
+  "type": "asset",
+  "task": "变化解释",
+  "entity": "NVIDIA / NASDAQ:NVDA",
+  "as_of": "2026-11-02T02:00:01.335699Z",
+  "historical": false,
+  "comparison": {
+    "period": "主比较2026-10-29至10-30收盘；背景2026-10-02至10-30；新闻窗口截至2026-11-01美国东部日期",
+    "unit": "美元收盘价、价格收益率%、超额表现百分点",
+    "scope": "NVDA与同期Nasdaq和Philadelphia Semiconductor Index；不混同盘中与收盘或自然月收益"
+  },
+  "decision_needed": "区分行业共振、客户融资约束和已披露的公司经营恶化；给出能改变判断的观察",
+  "prior_judgment": "本会话last30days短评倾向行业与AI融资回报压力，未确认公司独立坏消息；本轮建立严格证据与反方审查，非已归档run更新",
+  "hypotheses": [
+    {
+      "explanation": "行业共同重估与AI投入回报担忧",
+      "discriminating_observation": "NVDA与同日Nasdaq、SOX相对表现，以及客户财报新闻时点"
+    },
+    {
+      "explanation": "客户融资压力削弱未来GPU采购预期",
+      "discriminating_observation": "CoreWeave融资市场与管理层声明分歧，是否有实际采购取消/延期和收款变化"
+    },
+    {
+      "explanation": "英伟达自身经营变差或预期下修",
+      "discriminating_observation": "最新已发布官方财报、收入与毛利指引以及财报发布时间；没有下修证据不作证实"
+    }
+  ],
+  "queries": [
+    {
+      "question": "已知跌幅与同日基准是否匹配",
+      "query": "NVDA October 30 2026 semiconductor index Nasdaq close",
+      "source": "既有StatMuse、Investing行情及Reuters正文+新增行业基准",
+      "purpose": "量化相对表现",
+      "window": "2026-10-02/2026-11-01"
+    },
+    {
+      "question": "经营变化有何官方证据",
+      "query": "NVIDIA Q2 fiscal 2027 financial results guidance",
+      "source": "NVIDIA IR与客户IR",
+      "purpose": "区分已披露业绩和后续预期",
+      "window": "最新已发布财报作窗口外基准"
+    },
+    {
+      "question": "社区分歧有哪些可核查线索",
+      "query": "英伟达大跌 NVIDIA NVDA stock selloff",
+      "source": "复用本会话Last30Days 3.30.0缓存Report，不重新抓取",
+      "purpose": "保留原候选、排名、聚类、状态；未经原文核实不选为证据",
+      "window": "2026-10-02/2026-11-01"
+    }
+  ],
+  "budget": {
+    "max_queries": 3,
+    "max_followups": 1
+  },
+  "stop_condition": "同期表现和两条竞争解释有可核查依据，或预算结束后明确未获证实部分"
+}

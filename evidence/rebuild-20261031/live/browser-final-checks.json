@@ -1,0 +1,31 @@
+{
+  "evidenceLinkOpensAudit": true,
+  "themeSwitchBackground": "rgb(255, 255, 255)",
+  "mobile": {
+    "viewport": 390,
+    "width": 390,
+    "tables": [
+      {
+        "width": 343,
+        "scroll": 343
+      },
+      {
+        "width": 343,
+        "scroll": 343
+      },
+      {
+        "width": 343,
+        "scroll": 343
+      },
+      {
+        "width": 343,
+        "scroll": 343
+      },
+      {
+        "width": 343,
+        "scroll": 400
+      }
+    ]
+  },
+  "initialProbe": "ambiguous selector rejected; narrowed to first actual claim ref"
+}

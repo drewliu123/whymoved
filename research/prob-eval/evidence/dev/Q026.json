@@ -1,0 +1,50 @@
+{
+  "qid": "Q026",
+  "as_of": "2026-07-09",
+  "kept": [
+    {
+      "excerpt": "Russian forces continued offensive operations in the Pokrovsk direction on July 8 and 9 but did not advance.",
+      "published_at": "2026-07-09",
+      "publisher": "Institute for the Study of War / AEI Critical Threats Project",
+      "relevance": "This is the latest assessment located within the cutoff for the sector containing the specified Vasylivka, although the text alone does not establish qualifying map shading inside the settlement.",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-july-9-2026"
+    },
+    {
+      "excerpt": "Geolocated footage published on July 5 and 8 shows Ukrainian forces striking Russian forces in central and southeastern Rodynske (north of Pokrovsk) respectively, indicating that Russian forces maintain positions or recently advanced in the area.",
+      "published_at": "2026-07-08",
+      "publisher": "Institute for the Study of War / AEI Critical Threats Project",
+      "relevance": "Verified Russian positions in nearby Rodynske provide local operational context for pressure on the Pokrovsk–Dobropillya sector surrounding Vasylivka.",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-july-8-2026"
+    },
+    {
+      "excerpt": "Aside from Kostiantynivka, Russia’s Defence Ministry said on Saturday it had taken five villages in eastern Ukraine: Shyikivka, Novyi Myr, Cherneshchyna and Druzhelyubivka in Kharkiv region, and Vasylivka in Donetsk region. Reuters could not verify the battlefield reports.",
+      "published_at": "2026-07-04",
+      "publisher": "Reuters, republished by WSAU",
+      "relevance": "This records an explicit Russian claim to have captured the target settlement while preserving Reuters’ warning that the battlefield reports were unverified.",
+      "url": "https://wsau.com/2026/07/04/ukraine-denies-russian-capture-of-key-eastern-city-kostiantynivka/"
+    },
+    {
+      "excerpt": "ISW has only observed evidence to assess that Russian forces seized or infiltrated into 64 settlements and seized or infiltrated approximately 621.7 square kilometers across the theater since the start of 2026, and that Russian forces have seized or infiltrated into 20 settlements and gained or infiltrated approximately 30.42 square kilometers in the theater in June 2026.",
+      "published_at": "2026-07-04",
+      "publisher": "Institute for the Study of War / AEI Critical Threats Project",
+      "relevance": "The assessed theater-wide advance and infiltration totals provide a contemporaneous baseline for Russian offensive tempo, without equating broad territorial gains with entry into Vasylivka.",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-july-4-2026-6a4a4ea0cc90a"
+    },
+    {
+      "excerpt": "According to Ukrinform, the General Staff of the Armed Forces of Ukraine released the operational update as of 16:00 on Thursday, July 9. In the Pokrovsk sector, Russian troops made seven attempts to push Ukrainian forces from their positions near Dorozhne, Novooleksandrivka, and Udachne, advancing toward Shevchenko and Serhiivka. One engagement is ongoing.",
+      "published_at": "2026-07-09",
+      "publisher": "Ukrinform, citing the Ukrainian General Staff",
+      "relevance": "This supplies a cutoff-day Ukrainian official account of continued fighting around neighboring settlements, but its omission of Vasylivka cannot establish control of the target.",
+      "url": "https://www.ukrinform.net/rubric-ato/4142647-war-update-79-combat-clashes-on-frontline-since-morning.html"
+    },
+    {
+      "excerpt": "Geolocated footage published on June 4 indicates that Ukrainian forces recently advanced in western Rodynske (north of Pokrovsk). ISW assesses that Russian forces no longer maintain a continuous forward line of own troops (FLOT) in western and central Rodynske, given that footage observed since April 24 indicates that Ukrainian forces have maintained or regained positions in western or central Rodynske. A Russian milblogger claimed on June 5 that Russian forces advanced north of Vasylivka (northwest of Pokrovsk).",
+      "published_at": "2026-06-05",
+      "publisher": "Institute for the Study of War / AEI Critical Threats Project",
+      "relevance": "This establishes earlier contested conditions in the immediate sector and explicitly identifies the relevant Vasylivka northwest of Pokrovsk while distinguishing a Russian claim from geolocated evidence.",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-june-5-2026"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-09 inclusive. Six dated items were retained from ISW/CTP, Reuters syndication, and Ukrinform reporting Ukrainian General Staff statements. Excerpts were verified against web-search source text; direct web_fetch failed because multiple providers were registered, and the requested agent-reach web-read fallback failed with UPSTREAM_BROKEN, so full-page retrieval was unavailable. Publication dates are supported by dated article headings, bylines, or explicit search-indexed publication text. Post-cutoff results and prediction-market/betting pages were excluded from the evidence pack. The relevant settlement is Vasylivka northwest of Pokrovsk, Donetsk Oblast; reports about Vasylivka in Zaporizhzhia or Kharkiv and Orikhovo-Vasylivka were excluded. No archived ISW map snapshot or consecutive finalized daily map layers were verified, so this pack does not establish whether qualifying shading covered the specified coordinates and persisted through the next update cycle. Russian capture claims are retained as attributed claims, not confirmation of the resolution condition."
+}

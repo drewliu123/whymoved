@@ -1,0 +1,38 @@
+{
+ "qid": "Q021",
+ "question": "Israel closes its airspace by July 31?",
+ "rules": "This market will resolve to “Yes” if Israel initiates a major closure of its airspace by the specified date, 11:59 PM ET. Otherwise, this market will resolve to “No”. \n\nA “major closure” is defined as a broad closure, cancellation, or complete suspension of commercial aviation across the entirety of Israeli civilian airspace or a region encompassing a majority of Israeli civilian airspace, including commercial flights transiting, arriving in, and departing from that airspace. A qualifying closure must apply generally to all flights across Israel or a qualifying subset of Israeli airspace. Limited cancellations, delays, temporary ground stops or isolated regional closures will not qualify. Limited exceptions to a broad closure, however, will not disqualify such a closure from counting (e.g. exceptions for certain pre-approved flights may be permitted).\n\nWarnings, No-Fly-Zones, flight suspensions, or other flight restrictions imposed by airlines or countries other than Israel will not be sufficient for a “Yes” resolution.\n\nAirspace closures which occur solely due to weather conditions will not qualify.\n\nThe primary resolution source for this market will be official information from I",
+ "as_of": "2026-07-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-14",
+   "excerpt": "The European Union Aviation Safety Agency (EASA) on Tuesday reinstated and toughened its warning to airlines operating in the Middle East, telling them to avoid the airspace of Bahrain, Kuwait, Qatar, the United Arab Emirates and over the Gulf of Oman as the U.S.-Iran war flared up again. That warning had asked airlines to exercise caution when operating within the airspace of these countries, as well as Israel, Jordan, Oman, and Saudi Arabia."
+  },
+  {
+   "id": "E2",
+   "publisher": "European Union Aviation Safety Agency (EASA)",
+   "published_at": "2026-07-08",
+   "excerpt": "Following the agreed ceasefire agreements and the overall reduction in short-term tensions, the Integrated EU Aviation Security Risk Assessment Group decided not to extend the existing Conflict Zone Information Bulletin (CZIB) on the Middle East and Persian Gulf, which expires on July 8, 2026. This CZIB has been replaced by a dedicated Information Note on the Middle East and Persian Gulf, describing the residual medium-level risks, and separate CZIBs on Iran, Iraq and Lebanon, highlighting the remaining high risks in the affected airspace."
+  },
+  {
+   "id": "E3",
+   "publisher": "Kuehne+Nagel",
+   "published_at": "2026-07-07 (last edited; originally published 2026-03-02)",
+   "excerpt": "Bahrain, Israel, Iraq, Jordan, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia and UAE airspace are open though some restrictions may apply. EL Al (LY) and Sundor (2U) have resumed normal operations. Austrian Airlines and Lufthansa Cargo had already resumed flights to Tel Aviv-Ben Gurion Airport (TLV) in June 2026."
+  },
+  {
+   "id": "E4",
+   "publisher": "The Times of Israel",
+   "published_at": "2026-06-07",
+   "excerpt": "Transportation Minister Miri Regev says Israel’s airspace remains open and flights continue as scheduled. The decision was made following a situation assessment led by Regev with Transportation Director General Moshe Ben-Zaken and aviation industry professionals. The ministry says that if the rocket fire expands, a new decision will be made accordingly and the public will be updated."
+  },
+  {
+   "id": "E5",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-03-05",
+   "excerpt": "Israel began to open its airspace on Thursday and allowed a handful of flights to land at Ben Gurion International Airport near Tel Aviv. Israel’s airspace was closed on Saturday at the start of the U.S.-Israeli strikes on Iran, which have triggered missile barrages from Iran against Israel, leaving tens of thousands of passengers stranded abroad."
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+  "analysis_changed": true,
+  "claims": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "comparability_issues": [],
+  "evidence": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "judgment": {
+    "comparability": {
+      "reason": "同一虚构输入与口径",
+      "status": "comparable"
+    },
+    "judgment_changed": false,
+    "reason": "验收只修改下一观察，不虚构新发现"
+  },
+  "method": "structural_ids_and_fields",
+  "parent_run": "R20261102T031043Z-008a0a21c73c",
+  "schema_version": 2,
+  "sources": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  }
+}

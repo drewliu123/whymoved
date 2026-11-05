@@ -1,0 +1,49 @@
+[
+  {
+    "id": "fomc_october",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+    "final_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:16:28.913975+00:00",
+    "started_at": "2026-10-31T17:16:26.378738+00:00",
+    "content_type": "text/html",
+    "response_date": "Sat, 31 Oct 2026 17:16:28 GMT",
+    "text_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/raw-official-first/fomc_october.txt"
+  },
+  {
+    "id": "fomc_calendar",
+    "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "final_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:16:27.865600+00:00",
+    "started_at": "2026-10-31T17:16:26.379540+00:00",
+    "content_type": "text/html",
+    "response_date": "Sat, 31 Oct 2026 17:16:27 GMT",
+    "text_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/raw-official-first/fomc_calendar.txt"
+  },
+  {
+    "id": "bls_employment",
+    "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+    "retrieved_at": "2026-10-31T17:16:27.645532+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "bls_cpi",
+    "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+    "retrieved_at": "2026-10-31T17:16:27.390053+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "bea_pce",
+    "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+    "final_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+    "http_status": 200,
+    "retrieved_at": "2026-10-31T17:16:27.948502+00:00",
+    "started_at": "2026-10-31T17:16:26.380249+00:00",
+    "content_type": "text/html; charset=UTF-8",
+    "response_date": "Sat, 31 Oct 2026 17:16:28 GMT",
+    "text_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/raw-official-first/bea_pce.txt"
+  }
+]

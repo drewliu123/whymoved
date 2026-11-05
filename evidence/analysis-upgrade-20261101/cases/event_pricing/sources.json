@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-10-31T12:00:00Z",
+  "historical": false,
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://example.com/official",
+      "publisher": "Example Official",
+      "tier": "T0",
+      "published_at": "2026-10-30T12:00:00Z",
+      "retrieved_at": "2026-10-31T12:00:00Z",
+      "quote": "Revenue increased to 12.",
+      "locator": "paragraph 1",
+      "origin_id": "O1",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "direct evidence",
+        "relevance": "direct",
+        "purpose": "reported revenue",
+        "priority": "decisive"
+      }
+    }
+  ],
+  "source_status": {
+    "official": {
+      "status": "ok"
+    }
+  }
+}

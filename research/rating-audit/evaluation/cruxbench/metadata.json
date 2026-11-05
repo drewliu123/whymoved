@@ -1,0 +1,27 @@
+{
+  "repository": "ai-prophet/cruxbench",
+  "commit": "c036b3cd94881dc9efba448b7c02594db1b408fd",
+  "url": "https://codeload.github.com/ai-prophet/cruxbench/tar.gz/c036b3cd94881dc9efba448b7c02594db1b408fd",
+  "saved": [
+    "README.md",
+    "config.py",
+    "data_collection/__init__.py",
+    "data_collection/build_trusted_prices.py",
+    "data_collection/data_config.py",
+    "data_collection/fetch_hourly_activity.py",
+    "data_collection/fetch_hourly_prices.py",
+    "data_collection/fetch_polymarket.py",
+    "data_collection/filter.py",
+    "requirements.txt",
+    "scripts/forecast_baseline.py",
+    "scripts/forecast_with_crux.py",
+    "scripts/step1_retrieve.py",
+    "scripts/step2_generate.py",
+    "scripts/step3a_resolve.py",
+    "scripts/step3b_verify.py",
+    "src/__init__.py",
+    "src/llm.py",
+    "src/metrics.py",
+    "src/prompts.py"
+  ]
+}

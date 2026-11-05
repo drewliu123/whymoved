@@ -1,0 +1,50 @@
+{
+  "as_of": "2026-10-31T13:11:12Z",
+  "forecasts": [
+    {
+      "hypothesis_id": "H1",
+      "mode": "market",
+      "question": "FY2027 Q3 non-GAAP毛利率是否落在[73%,75%)区间（按Polymarket规则）？",
+      "yes_means": "首次官方Q3 non-GAAP毛利率>=73%且<75%；边界归高档；若指标是区间用中点；12月31日23:59 ET前无财报或缺该指标按最低档，因此本合约为NO；忽略后续修订。",
+      "window_start": "2026-10-31",
+      "window_end": "2027-01-01",
+      "resolution_source": "NVIDIA官方Q3首次业绩材料；Polymarket原合约规则",
+      "market_prob": 0.82,
+      "market_source": "Polymarket YES最优卖价ask=0.82（最优档20份；bid=.73；显示中间值=.775），2026-10-31订单簿快照 https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000",
+      "evidence_ids": [
+        "C10",
+        "C12"
+      ],
+      "final_prob": 0.82,
+      "method_version": "touyan-forecast-v2",
+      "evidence_hash": "4f792ed5bfe8d509b6d22db0fd1ac572205c6eef8885f7ff966836a0aa99298b"
+    },
+    {
+      "hypothesis_id": "H2",
+      "mode": "independent",
+      "question": "NVIDIA FY2027 Q3首次官方财报是否同时满足总收入>1080亿美元且non-GAAP毛利率<75.0%？",
+      "yes_means": "2026-10-31至2026-12-31首次发布的FY2027 Q3财报同时报告总收入严格大于108000百万美元及non-GAAP毛利率严格低于75.0%。两项缺一为NO；无财报或缺指标为void，不凭推测裁决；忽略后续修订。",
+      "window_start": "2026-10-31",
+      "window_end": "2026-12-31",
+      "resolution_source": "NVIDIA IR FY2027 Q3首次业绩新闻稿及财务表 https://investor.nvidia.com/",
+      "evidence_ids": [
+        "C1",
+        "C2",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9"
+      ],
+      "trials": [
+        0.46,
+        0.46,
+        0.46
+      ],
+      "final_prob": 0.46,
+      "method_version": "touyan-forecast-v2",
+      "evidence_hash": "d1062b07f19f124a5001dbc78e05c8f37e707cefefc18e823a7f6aabb360c6ce"
+    }
+  ]
+}

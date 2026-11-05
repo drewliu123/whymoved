@@ -1,0 +1,18 @@
+[
+  {
+    "name": "historical",
+    "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "earnings",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "media",
+    "url": "https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html",
+    "status": 200,
+    "bytes": 591709
+  }
+]

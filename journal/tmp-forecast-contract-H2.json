@@ -1,0 +1,19 @@
+{
+  "hypothesis_id": "H2",
+  "mode": "independent",
+  "question": "NVIDIA FY2027 Q3首次官方财报是否同时满足总收入>1080亿美元且non-GAAP毛利率<75.0%？",
+  "yes_means": "2026-10-31至2026-12-31首次发布的FY2027 Q3财报同时报告总收入严格大于108000百万美元及non-GAAP毛利率严格低于75.0%。两项缺一为NO；无财报或缺指标为void，不凭推测裁决；忽略后续修订。",
+  "window_start": "2026-10-31",
+  "window_end": "2026-12-31",
+  "resolution_source": "NVIDIA IR FY2027 Q3首次业绩新闻稿及财务表 https://investor.nvidia.com/",
+  "evidence_ids": [
+    "C1",
+    "C2",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9"
+  ]
+}

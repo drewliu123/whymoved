@@ -1,0 +1,42 @@
+{
+  "qid": "Q034",
+  "as_of": "2026-08-05",
+  "kept": [
+    {
+      "publisher": "Cowboy State Daily",
+      "published_at": "2026-07-21",
+      "url": "https://cowboystatedaily.com/2026/07/21/barlow-poll-claims-he-has-huge-lead-over-degenfelder-bien-in-gop-governor-primary/",
+      "excerpt": "His campaign released polling results Tuesday showing him at 42% support, followed by Degenfelder at 19% and Bien at 14% — with 22% undecided — when people were asked who they would vote for if the election were held today. The landline and cellphone call poll was taken from 400 likely Republican primary election voters and with a margin of error of 4.9%, according to the Barlow campaign. His campaign has amassed 2,500 volunteers and contributions from nearly 2,000 individual Wyoming donors, with more than $1 million raised from in-state individuals, the statement says.",
+      "relevance": "This campaign-sponsored poll provides direct evidence of Barlow’s reported lead and organization, with sponsorship and sampling uncertainty limiting its weight."
+    },
+    {
+      "publisher": "Wyoming Republican Party",
+      "published_at": "2026-07-21",
+      "url": "https://wyoming.gop/news/wygop-platform-alignment-endorsements-2026",
+      "excerpt": "Following an extensive grassroots evaluation process, the Wyoming Republican Party officially announces its platform-alignment endorsements for the upcoming Republican Primary Election. During its meeting, the State Central Committee evaluated candidate records, platform fidelity, and core conservative principles. Based on these evaluations, the Party endorses the following candidates for statewide leadership: Governor: Brent Bien.",
+      "relevance": "The official party release establishes that Barlow’s rival Bien received the state party’s endorsement."
+    },
+    {
+      "publisher": "Wyoming Public Media",
+      "published_at": "2026-08-03",
+      "url": "https://www.wyomingpublicmedia.org/2026-08-03/in-a-stacked-race-the-wyoming-republican-party-endorses-brent-bien-for-governor",
+      "excerpt": "The Wyoming Republican Party has endorsed Brent Bien for governor. Bien doesn’t have previous political experience, but decided to run in 2022 in response to Gov. Mark Gordon’s lockdown measures. In that year’s primary, he took about 30% of the vote to Gordon’s nearly 62%. Bien is running on the GOP ticket against three others: Megan Degenfelder, Eric Barlow and Curt Blake.",
+      "relevance": "This recent status report confirms the four-candidate field and supplies Bien’s previous statewide primary performance as context for his electoral strength."
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://wyofile.com/heres-where-the-republican-candidates-for-wyoming-governor-diverge-on-policy/",
+      "reason": "The excerpt explicitly mentions events after the cutoff: the Aug. 18 primary and November’s ballot. Removed under the rule excluding any post-cutoff mentions, even scheduled events known before the cutoff."
+    },
+    {
+      "url": "https://www.wyomingpublicmedia.org/politics-government/2026-07-30/what-to-make-of-the-wyoming-gops-first-primary-endorsements",
+      "reason": "The excerpt explicitly mentions the Aug. 18 primary, after the 2026-08-05 cutoff. Removed under the rule excluding any post-cutoff mentions, even scheduled events known before the cutoff."
+    },
+    {
+      "url": "https://www.wyomingpublicmedia.org/politics-government/2026-07-24/early-and-absentee-voting-begins-in-all-counties",
+      "reason": "The excerpt explicitly mentions Aug. 17 voting deadlines and Aug. 18 election day, after the 2026-08-05 cutoff. Removed under the rule excluding any post-cutoff mentions, even scheduled events known before the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-08-05 inclusive, for Q034. Included only sources with identifiable publication dates on or before the cutoff; excluded later reporting, election-result pages, undated live reference pages, and prediction-market or betting material. Publication dates were checked against article text or publication metadata. The Cowboy State Daily polling article has original publication metadata of July 21, 2026, while its visible date displays July 22; both precede the cutoff. The polling was commissioned by Barlow’s campaign and is not an independent survey. web_fetch failed because multiple fetch providers were registered; the agent-reach skill’s web reader was used to verify selected full texts and metadata. Current navigation, related-story links, and other material outside the dated article bodies were disregarded."
+}

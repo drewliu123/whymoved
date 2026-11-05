@@ -1,0 +1,64 @@
+{
+  "qid": "Q094",
+  "as_of": "2026-07-12",
+  "kept": [
+    {
+      "excerpt": "Formula One and the FIA revealed a 24-race calendar for the 2026 season. Drivers will have their summer break after the Hungarian Grand Prix on July 26 and return on August 23 at the Dutch Grand Prix.",
+      "published_at": "2025-06-10",
+      "publisher": "DPA via Aletihad News Center",
+      "relevance": "Confirms the scheduled Hungarian Grand Prix date relevant to the market's cancellation and rescheduling conditions.",
+      "url": "https://en.aletihad.ae/news/sport/4581634/formula-one-reveals-calendar-for-2026-season"
+    },
+    {
+      "excerpt": "Kimi Antonelli claimed pole position for the 2026 British Grand Prix with a lap of 1:28.111, beating Ferrari's Charles Leclerc by 0.175 seconds. Lewis Hamilton qualified third, with George Russell fourth in the second Mercedes.",
+      "published_at": "2026-07-04",
+      "publisher": "Fédération Internationale de l'Automobile (FIA)",
+      "relevance": "Provides official evidence of Antonelli's qualifying speed against his teammate and leading competitors at the latest completed race weekend before the cutoff.",
+      "url": "https://www.fia.com/news/f1-antonelli-grabs-pole-silverstone-ahead-leclerc-and-hamilton"
+    },
+    {
+      "excerpt": "Kimi Antonelli claimed his first Sprint victory at the 2026 British Grand Prix, passing Lewis Hamilton in the early stages before controlling the remainder of the 17-lap race at Silverstone.",
+      "published_at": "2026-07-04",
+      "publisher": "Fédération Internationale de l'Automobile (FIA)",
+      "relevance": "Shows Antonelli converting competitive pace into a race victory shortly before the forecasting cutoff.",
+      "url": "https://www.fia.com/news/f1-antonelli-passes-hamilton-claim-first-sprint-victory-silverstone"
+    },
+    {
+      "excerpt": "Ferrari's Charles Leclerc won the British Grand Prix under safety car conditions as Mercedes' Kimi Antonelli failed to score for the second time in three races. After nine rounds, Antonelli had 179 championship points, compared with George Russell's 154 and Lewis Hamilton's 147.",
+      "published_at": "2026-07-05",
+      "publisher": "Reuters via WSAU",
+      "relevance": "Establishes Antonelli's championship position and the identities of his closest challengers as of the latest completed Grand Prix before July 12.",
+      "url": "https://wsau.com/2026/07/05/motor-racing-leclerc-wins-british-gp-behind-the-safety-car/"
+    },
+    {
+      "excerpt": "Mercedes took responsibility for Antonelli's failure to score in the British Grand Prix, his second scoreless race in the previous three. His car suffered a mechanical failure with 11 laps remaining, caused by a broken front wheel shield around the brake duct. Toto Wolff said Mercedes' strategists had predicted Antonelli would catch eventual winner Charles Leclerc six laps from the end without the problem.",
+      "published_at": "2026-07-06",
+      "publisher": "Reuters via The Star",
+      "relevance": "Separates Antonelli's underlying winning pace from a recent reliability risk that could prevent him from converting that pace into a Hungarian victory.",
+      "url": "https://www.thestar.com.my/sport/motorsport/2026/07/06/motor-racing-mercedes-take-the-blame-for-antonelli039s-silverstone-blank"
+    },
+    {
+      "excerpt": "A late mechanical issue forced Kimi Antonelli to retire from the Barcelona-Catalunya Grand Prix while on course to finish second behind Lewis Hamilton. The retirement ended Antonelli's run of five consecutive Grand Prix victories and was his first retirement of the season.",
+      "published_at": "2026-06-14",
+      "publisher": "Formula 1",
+      "relevance": "Documents both Antonelli's sustained winning form in 2026 and an earlier mechanical failure relevant to assessing his chance of completing and winning Hungary.",
+      "url": "https://www.formula1.com/en/latest/article/i-feel-a-bit-empty-antonelli-reflects-on-late-barcelona-catalunya-gp-retirement.6wpFZCfvdQgU4FKe3q1dic.6wpFZCfvdQgU4FKe3q1dic"
+    },
+    {
+      "excerpt": "Lando Norris won the 2025 Hungarian Grand Prix after gambling on a one-stop strategy and resisting a late challenge from Oscar Piastri. Piastri's attempts to pass included a lock-up at Turn 1.",
+      "published_at": "2025-08-03",
+      "publisher": "Autosport",
+      "relevance": "Provides historical circuit evidence that tyre strategy and the ability to defend track position can determine the Hungarian winner.",
+      "url": "https://www.autosport.com/f1/news/f1-hungarian-gp-report/10748132/"
+    },
+    {
+      "excerpt": "George Russell narrowly missed pole position for the 2025 Hungarian Grand Prix after Mercedes reverted to its pre-Imola rear suspension specification. Both Mercedes drivers reported greater confidence in the car, although rookie Kimi Antonelli was eliminated in Q2.",
+      "published_at": "2025-08-03",
+      "publisher": "Autosport",
+      "relevance": "Provides prior Hungaroring qualifying context for Antonelli and Russell, while the different 2026 regulations limit direct comparability.",
+      "url": "https://www.autosport.com/f1/news/why-russell-and-antonelli-both-felt-more-confident-in-f1-hungarian-gp-qualifying/10747898/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-07-12 inclusive. Included only items with explicit publication or dated edit information on or before the cutoff; excerpts contain only pre-cutoff facts. No prediction-market pages, betting pages, odds, or market prices are included. Undated live calendars and later reporting were excluded. web_fetch failed because multiple providers were configured, and the agent-reach web-read fallback returned RATE_LIMITED; publication dates and factual passages were therefore verified using web_search's indexed source text. Excerpts are concise factual paraphrases rather than guaranteed verbatim quotations. The pack does not establish that Mercedes' reliability issues had been resolved by July 12 or supply a verified Hungary-specific 2026 preview published by that date."
+}

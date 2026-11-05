@@ -1,0 +1,57 @@
+{
+  "finrobot": {
+    "commit": "63e1884a42ea7b729551a5424b4bd6a65af636e0",
+    "source_files_saved": 18,
+    "all_source_hashes_verified": true,
+    "papers": [
+      {
+        "artifact": "paper-2405.14767.html",
+        "requested_url": "https://arxiv.org/html/2405.14767",
+        "observed_version": "2405.14767v2",
+        "version_url": "https://arxiv.org/html/2405.14767v2",
+        "sha256": "840ba478db2d9fb211ece6e1be72db60a186dc09b38100ec0efa815d14c76135"
+      },
+      {
+        "artifact": "paper-2411.08804.html",
+        "requested_url": "https://arxiv.org/html/2411.08804",
+        "observed_version": "2411.08804v1",
+        "version_url": "https://arxiv.org/html/2411.08804v1",
+        "sha256": "012ce30ab6849fb6ed922fcb06ce27dd9c2d44208c5e1902e5a59ecc2e0342eb"
+      }
+    ]
+  },
+  "tradingagents": {
+    "commit": "c4544913a14ed3df5f1ed7b9e8483270ce20682a",
+    "source_files_saved": 11,
+    "all_source_hashes_verified": true,
+    "papers": [
+      {
+        "artifact": "paper-2412.20138.html",
+        "requested_url": "https://arxiv.org/html/2412.20138",
+        "observed_version": "2412.20138v7",
+        "version_url": "https://arxiv.org/html/2412.20138v7",
+        "sha256": "51eaa22f9156dbf14271028d07be1f16ea7da53e12c84742f1149c357ab31df0"
+      }
+    ]
+  },
+  "qlib": {
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "source_files_saved": 11,
+    "all_source_hashes_verified": true,
+    "papers": [
+      {
+        "artifact": "paper-2009.11189.html",
+        "requested_url": "https://arxiv.org/html/2009.11189",
+        "observed_version": "2009.11189v1",
+        "version_url": "https://arxiv.org/html/2009.11189v1",
+        "sha256": "5ed2d2838f6a78c8c262e43e00b0c60d739918ebfa7c7b188237bad68849c17c"
+      }
+    ]
+  },
+  "ai-hedge-fund": {
+    "commit": "b33175caa1289e180b535d663c89b7a0c04b4726",
+    "source_files_saved": 16,
+    "all_source_hashes_verified": true,
+    "papers": []
+  }
+}

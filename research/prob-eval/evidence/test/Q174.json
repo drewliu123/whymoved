@@ -1,0 +1,42 @@
+{
+  "qid": "Q174",
+  "as_of": "2026-08-21",
+  "kept": [
+    {
+      "excerpt": "Turning to Putin's international contacts, Peskov confirmed that the Russian president plans to attend the Shanghai Cooperation Organization (SCO) summit in Bishkek on Aug. 31-Sept. 1, but said it was too early to provide details of potential bilateral meetings on the sidelines.",
+      "published_at": "2026-08-20",
+      "publisher": "Anadolu Agency",
+      "relevance": "This provides a Kremlin-confirmed travel opportunity overlapping the deadline while establishing that bilateral meeting details were still unavailable.",
+      "url": "https://www.aa.com.tr/en/eurasia/kremlin-says-no-grounds-for-optimism-on-ukraine-peace-deal-for-now/4032901"
+    },
+    {
+      "excerpt": "Kyrgyzstan is completing preparations for a series of international events scheduled to take place in Bishkek from August 30 to September 1. During this period, the capital will host the Shanghai Cooperation Organisation summit, meetings in the “SCO+” format and the opening ceremony of the VI World Nomad Games. The final list of heads of state and their spouses attending the events is expected to be announced once the schedules of the foreign delegations have been fully coordinated.",
+      "published_at": "2026-08-20",
+      "publisher": "Bright Uzbekistan",
+      "relevance": "The preview identifies possible in-person diplomatic opportunities around the deadline and explicitly preserves uncertainty about attendance.",
+      "url": "https://buzb.uz/en/news/bishkek-prepares-to-welcome-leaders-of-21-states-for-sco-summit-and-nomad-games"
+    },
+    {
+      "excerpt": "NBC News reported on August 18 that Russia has transferred drone components, ammunition, and TNT explosives to Iran via the Caspian Sea as of July 2026.",
+      "published_at": "2026-08-18",
+      "publisher": "Critical Threats Project, American Enterprise Institute",
+      "relevance": "This recent report supplies context for continuing substantive Russian-Iranian cooperation, although it does not establish a personal meeting involving Putin.",
+      "url": "https://www.criticalthreats.org/analysis/iran-update-special-report-august-18-2026"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/04/iran-260427-kremlin01.htm",
+      "reason": "Outcome leakage: explicitly documents Putin meeting Iranian Foreign Minister Abbas Araghchi on April 27, 2026. Although before the cutoff, it reveals a qualifying meeting by August 31 under the supplied question, which specifies no starting date."
+    },
+    {
+      "url": "https://www.koreatimes.co.kr/world/20260427/putin-meets-irans-araqchi-voices-hope-for-peace-in-iran-state-media-reports",
+      "reason": "Outcome leakage: explicitly reports Putin's in-person meeting and handshake with Iranian Foreign Minister Abbas Araghchi on April 27, 2026, revealing a qualifying meeting by the deadline despite its pre-cutoff publication."
+    },
+    {
+      "url": "https://www.aa.com.tr/en/asia-pacific/putin-receives-irans-top-security-official-larijani-at-kremlin/3815825",
+      "reason": "Outcome leakage: explicitly reports Putin receiving Iranian Supreme National Security Council secretary Ali Larijani at the Kremlin, revealing a qualifying meeting by the deadline despite its pre-cutoff publication."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-08-21. Included only sources with explicit publication dates on or before that date; excluded later reporting, undated material, prediction-market pages, odds, and prices. Publication dates and excerpts were verified through web_search source text. web_fetch failed because multiple fetch providers were registered; the requested agent-reach web-read fallback returned RATE_LIMITED, so full-page retrieval could not be completed. The January Anadolu article was updated January 31, also before the cutoff. Earlier documented meetings are included as pre-cutoff factual evidence without issuing a market resolution; the supplied rules do not specify a starting date for eligible meetings. No post-cutoff meeting announcements or developments are included."
+}

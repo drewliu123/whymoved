@@ -1,0 +1,37 @@
+{
+  "plugin": {
+    "id": "touyan@touyan-local",
+    "version": "0.6.0",
+    "scope": "user",
+    "enabled": true,
+    "installPath": "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.6.0",
+    "readFromFolder": "/Users/frankzhang/Desktop/投研助手",
+    "folderVersion": "0.6.0",
+    "installedAt": "2026-10-26T04:43:33.451Z",
+    "lastUpdated": "2026-11-02T09:40:24.658Z",
+    "projectEnabled": false
+  },
+  "loaded_source_folder": "/Users/frankzhang/Desktop/投研助手",
+  "file_checks": {
+    "scripts/sec_data.py": {
+      "matches_source": true,
+      "sha256": "75c9b70ed32a6a654dd55315b3398f3b7c0a615b072690308286210285267337"
+    },
+    "scripts/sec_worker.py": {
+      "matches_source": true,
+      "sha256": "327ebd076ebaec0771b5490ec0dda50d3359dbed45b8e70c103f4f82e537eb7e"
+    },
+    "skills/research/references/sec-data.md": {
+      "matches_source": true,
+      "sha256": "93bd0ce4ca69e532024cbaee37074d72f7145f3815251eee621de06bc592f9ba"
+    },
+    "agents/fact-collector.md": {
+      "matches_source": true,
+      "sha256": "ffcff4341bd8c3d30456543acb27e7422132d21bec8ad7dcc6febbcc395917ac"
+    },
+    "skills/research/SKILL.md": {
+      "matches_source": true,
+      "sha256": "3ca1fb368081ffefcdb64890b34d88c44fcb5c261a3824df153bca57ca3958f7"
+    }
+  }
+}

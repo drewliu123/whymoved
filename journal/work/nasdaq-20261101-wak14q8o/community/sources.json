@@ -1,0 +1,682 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T04:59:59Z",
+  "historical": true,
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://news.ycombinator.com/item?id=50315352",
+      "publisher": "koolba",
+      "tier": "T4",
+      "published_at": "2026-10-31T12:06:53.000Z",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "quote": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place!",
+      "locator": "originals/hn-50315317/item.json /children/0/text",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "context",
+        "purpose": "low-engagement financing-risk viewpoint; not index attribution",
+        "priority": "background",
+        "reason": "Verified original comment (story 5 points, 2 comments). Circular-financing skepticism is a lead to investigate, but this thread is about one prospective issuer and cannot establish Nasdaq-wide causation."
+      },
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+        "engine_item_id": "50315317",
+        "engine_rank": 1,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+          "cluster_id": "cluster-1",
+          "engagement": 24,
+          "explanation": "fallback-local-score",
+          "final_score": 31.76612021857924,
+          "freshness": 96,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 0.0,
+          "item_id": "50315317",
+          "local_relevance": 0.2,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50315317",
+                "native_rank": 1,
+                "source": "hackernews",
+                "subquery_label": "primary"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "primary:hackernews": 1
+          },
+          "rerank_score": 22.0,
+          "rrf_score": 0.00546448087431694,
+          "snippet": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "koolba",
+              "body": "Anthropic's path to the Nasdaq just got a lot bumpier\nThe article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 2,
+                "points": 5
+              },
+              "engagement_score": 24,
+              "freshness": 96,
+              "item_id": "50315317",
+              "local_rank_score": 0.394,
+              "local_relevance": 0.2,
+              "metadata": {
+                "comment_insights": [
+                  "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.",
+                  "the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors."
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50315317",
+                "top_comments": [
+                  {
+                    "author": "koolba",
+                    "date": "",
+                    "excerpt": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place!",
+                    "url": "https://news.ycombinator.com/item?id=50315352"
+                  },
+                  {
+                    "author": "jqpabc123",
+                    "date": "",
+                    "excerpt": "the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+                    "url": "https://news.ycombinator.com/item?id=50315601"
+                  }
+                ]
+              },
+              "published_at": "2026-10-31",
+              "relevance_hint": 0.69,
+              "snippet": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+              "url": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+              "why_relevant": "HN story about Anthropic's path to the Nasdaq just got a lot bumpier"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "primary"
+          ],
+          "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+          "url": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html"
+        }
+      },
+      "author": "koolba",
+      "engagement": {
+        "comments": 2,
+        "points": 5
+      },
+      "available_at": "2026-10-31T12:06:53.000Z",
+      "canonical_url": "https://news.ycombinator.com/item?id=50315352"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.reddit.com/r/stocks/comments/1x821pm/anthropic_offers_junkbond_rates_to_blackstone_in/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-17",
+      "retrieved_at": "2026-11-02T02:55:56.717834Z",
+      "quote": "",
+      "locator": "",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "Engine body contains only the title; not opened under the 3-original budget and cannot serve as evidence.",
+        "relevance": "context",
+        "purpose": "review",
+        "priority": "background"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": null,
+        "engine_item_id": "R14",
+        "engine_rank": null,
+        "unranked": true,
+        "raw_candidate": {
+          "body": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+          "container": "stocks",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 217,
+            "score": 931
+          },
+          "engagement_score": 70,
+          "freshness": 50,
+          "item_id": "R14",
+          "local_rank_score": 0.325,
+          "local_relevance": 0.2,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-17",
+          "relevance_hint": 0.23,
+          "snippet": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+          "url": "https://www.reddit.com/r/stocks/comments/1x821pm/anthropic_offers_junkbond_rates_to_blackstone_in/",
+          "why_relevant": "Reddit listing"
+        }
+      },
+      "engagement": {
+        "num_comments": 217,
+        "score": 931
+      },
+      "title": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1x821pm/anthropic_offers_junkbond_rates_to_blackstone_in/"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.reddit.com/r/investing/comments/1x8q1yt/the_ai_selloff_isnt_about_demand_its_about_the/",
+      "title": "The AI selloff is not about demand: financing-cost thesis",
+      "publisher": "Reddit",
+      "tier": "T4",
+      "published_at": "2026-10-18",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "quote": "",
+      "locator": "",
+      "origin_id": null,
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "purpose": "competing-explanation lead",
+        "priority": "background",
+        "reason": "Could distinguish cash-flow-funded incumbents from leveraged infrastructure; WebFetch could not fetch Reddit. Title/search summary not a quote."
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "canonical_url": "https://www.reddit.com/r/investing/comments/1x8q1yt/the_ai_selloff_isnt_about_demand_its_about_the/"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.reddit.com/r/stocks/comments/1xe6f0t/thoughts_on_the_ai_sell_off_this_month/",
+      "title": "Thoughts on the AI sell off this month",
+      "publisher": "Reddit",
+      "tier": "T4",
+      "published_at": "2026-10-24",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "quote": "",
+      "locator": "",
+      "origin_id": null,
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "purpose": "competing-explanation lead",
+        "priority": "background",
+        "reason": "Potential counterexamples: strong earnings, established cash flow, rates and oil; WebFetch could not fetch Reddit. No original quote verified."
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1xe6f0t/thoughts_on_the_ai_sell_off_this_month/"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.reddit.com/r/StockMarket/comments/1x7f0bw/ai_demand_holds_firm_treasury_yields_retreat_opex/",
+      "title": "AI demand holds firm / Treasury yields retreat / OPEX",
+      "publisher": "Reddit",
+      "tier": "T4",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "quote": "",
+      "locator": "",
+      "origin_id": null,
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "purpose": "competing-explanation lead",
+        "priority": "background",
+        "reason": "Search-only potential counterexample; not opened and not selected."
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "canonical_url": "https://www.reddit.com/r/StockMarket/comments/1x7f0bw/ai_demand_holds_firm_treasury_yields_retreat_opex/"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.reddit.com/r/stocks/comments/1x85yzk/rstocks_weekend_discussion_saturday_oct_17_2026/",
+      "title": "Weekend discussion Oct 17",
+      "publisher": "Reddit",
+      "tier": "T4",
+      "published_at": "2026-10-17",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "quote": "",
+      "locator": "",
+      "origin_id": null,
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "purpose": "competing-explanation lead",
+        "priority": "background",
+        "reason": "Search-only rates-versus-demand counterexample; not opened and not selected."
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1x85yzk/rstocks_weekend_discussion_saturday_oct_17_2026/"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.reddit.com/r/stocks/comments/1xfspoa/fed_pce_and_big_tech_earnings_the_week_that_could/",
+      "title": "Fed PCE and Big Tech earnings",
+      "publisher": "Reddit",
+      "tier": "T4",
+      "published_at": "2026-10-26",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "quote": "",
+      "locator": "",
+      "origin_id": null,
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "purpose": "competing-explanation lead",
+        "priority": "background",
+        "reason": "Search-only competing macro and earnings catalysts; not opened and not selected."
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1xfspoa/fed_pce_and_big_tech_earnings_the_week_that_could/"
+    }
+  ],
+  "source_status": {
+    "hackernews": {
+      "at": "2026-11-02T02:55:56.716985Z",
+      "attempted": true,
+      "items_returned": 1,
+      "source": "hackernews",
+      "state": "ok",
+      "status": "ok",
+      "engine_state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-02T02:55:56.716130Z",
+      "attempted": true,
+      "items_returned": 1,
+      "source": "reddit",
+      "state": "ok",
+      "status": "ok",
+      "engine_state": "ok"
+    },
+    "polymarket": {
+      "status": "not_run",
+      "reason": "Requested in plan and CLI but quick run filtered it out; no engine source_status entry"
+    },
+    "github": {
+      "status": "not_run",
+      "reason": "Excluded to avoid detected gh authentication"
+    },
+    "reddit_originals": {
+      "status": "unreachable",
+      "reason": "Two original opens failed; no retry"
+    }
+  },
+  "retrieval": {
+    "engine": "last30days",
+    "engine_version": "3.30.0",
+    "profile": "full",
+    "raw_report": {
+      "artifacts": {
+        "corpus_in_export": false,
+        "grounding": [],
+        "hiring_signals_mode": false,
+        "plan_source": "external",
+        "pre_research_flags_present": true,
+        "resolved": {
+          "context": "",
+          "entity": "Nasdaq Composite tech stocks selloff AI spending earnings",
+          "github_repos": [],
+          "github_user": "",
+          "subreddits": [
+            "stocks",
+            "investing",
+            "StockMarket"
+          ],
+          "trustpilot_domain": "",
+          "x_handle": ""
+        }
+      },
+      "clusters": [
+        {
+          "candidate_ids": [
+            "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html"
+          ],
+          "cluster_id": "cluster-1",
+          "representative_ids": [
+            "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html"
+          ],
+          "score": 31.76612021857924,
+          "sources": [
+            "hackernews"
+          ],
+          "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+          "uncertainty": "single-source"
+        }
+      ],
+      "errors_by_source": {},
+      "freshness_verdicts": [],
+      "generated_at": "2026-11-02T02:55:56.717834+00:00",
+      "items_by_source": {
+        "hackernews": [
+          {
+            "author": "koolba",
+            "body": "Anthropic's path to the Nasdaq just got a lot bumpier\nThe article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+            "container": "Hacker News",
+            "date_confidence": "high",
+            "engagement": {
+              "comments": 2,
+              "points": 5
+            },
+            "engagement_score": 24,
+            "freshness": 96,
+            "item_id": "50315317",
+            "local_rank_score": 0.394,
+            "local_relevance": 0.2,
+            "metadata": {
+              "comment_insights": [
+                "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.",
+                "the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors."
+              ],
+              "hn_url": "https://news.ycombinator.com/item?id=50315317",
+              "top_comments": [
+                {
+                  "author": "koolba",
+                  "date": "",
+                  "excerpt": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place!",
+                  "url": "https://news.ycombinator.com/item?id=50315352"
+                },
+                {
+                  "author": "jqpabc123",
+                  "date": "",
+                  "excerpt": "the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+                  "url": "https://news.ycombinator.com/item?id=50315601"
+                }
+              ]
+            },
+            "published_at": "2026-10-31",
+            "relevance_hint": 0.69,
+            "snippet": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+            "source": "hackernews",
+            "source_quality": 0.8,
+            "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+            "url": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+            "why_relevant": "HN story about Anthropic's path to the Nasdaq just got a lot bumpier"
+          }
+        ],
+        "reddit": [
+          {
+            "body": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+            "container": "stocks",
+            "date_confidence": "high",
+            "engagement": {
+              "num_comments": 217,
+              "score": 931
+            },
+            "engagement_score": 70,
+            "freshness": 50,
+            "item_id": "R14",
+            "local_rank_score": 0.325,
+            "local_relevance": 0.2,
+            "metadata": {
+              "comment_insights": [],
+              "top_comments": []
+            },
+            "published_at": "2026-10-17",
+            "relevance_hint": 0.23,
+            "snippet": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+            "source": "reddit",
+            "source_quality": 0.6,
+            "title": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+            "url": "https://www.reddit.com/r/stocks/comments/1x821pm/anthropic_offers_junkbond_rates_to_blackstone_in/",
+            "why_relevant": "Reddit listing"
+          }
+        ]
+      },
+      "library_context": [],
+      "provider_runtime": {
+        "planner_model": "deterministic",
+        "reasoning_provider": "local",
+        "rerank_model": "local-score"
+      },
+      "query_plan": {
+        "cluster_mode": "debate",
+        "freshness_mode": "strict_recent",
+        "intent": "breaking_news",
+        "notes": [],
+        "raw_topic": "Nasdaq Composite tech stocks selloff AI spending earnings",
+        "source_weights": {
+          "hackernews": 0.3333333333333333,
+          "polymarket": 0.3333333333333333,
+          "reddit": 0.3333333333333333
+        },
+        "subqueries": [
+          {
+            "label": "primary",
+            "ranking_query": "What explanations and counterexamples do public discussions offer for Nasdaq Composite technology stock weakness? Distinguish company earnings, rates, financing and AI investment; do not assume AI caused a broad decline.",
+            "search_query": "Nasdaq tech stocks selloff",
+            "sources": [
+              "reddit",
+              "hackernews"
+            ],
+            "weight": 1.0
+          }
+        ]
+      },
+      "range_from": "2026-10-02",
+      "range_to": "2026-11-01",
+      "ranked_candidates": [
+        {
+          "candidate_id": "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+          "cluster_id": "cluster-1",
+          "engagement": 24,
+          "explanation": "fallback-local-score",
+          "final_score": 31.76612021857924,
+          "freshness": 96,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 0.0,
+          "item_id": "50315317",
+          "local_relevance": 0.2,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50315317",
+                "native_rank": 1,
+                "source": "hackernews",
+                "subquery_label": "primary"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "primary:hackernews": 1
+          },
+          "rerank_score": 22.0,
+          "rrf_score": 0.00546448087431694,
+          "snippet": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "koolba",
+              "body": "Anthropic's path to the Nasdaq just got a lot bumpier\nThe article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 2,
+                "points": 5
+              },
+              "engagement_score": 24,
+              "freshness": 96,
+              "item_id": "50315317",
+              "local_rank_score": 0.394,
+              "local_relevance": 0.2,
+              "metadata": {
+                "comment_insights": [
+                  "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.",
+                  "the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors."
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50315317",
+                "top_comments": [
+                  {
+                    "author": "koolba",
+                    "date": "",
+                    "excerpt": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place!",
+                    "url": "https://news.ycombinator.com/item?id=50315352"
+                  },
+                  {
+                    "author": "jqpabc123",
+                    "date": "",
+                    "excerpt": "the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+                    "url": "https://news.ycombinator.com/item?id=50315601"
+                  }
+                ]
+              },
+              "published_at": "2026-10-31",
+              "relevance_hint": 0.69,
+              "snippet": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+              "url": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+              "why_relevant": "HN story about Anthropic's path to the Nasdaq just got a lot bumpier"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "primary"
+          ],
+          "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+          "url": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html"
+        }
+      ],
+      "source_status": {
+        "hackernews": {
+          "at": "2026-11-02T02:55:56.716985Z",
+          "attempted": true,
+          "items_returned": 1,
+          "source": "hackernews",
+          "state": "ok"
+        },
+        "reddit": {
+          "at": "2026-11-02T02:55:56.716130Z",
+          "attempted": true,
+          "items_returned": 1,
+          "source": "reddit",
+          "state": "ok"
+        }
+      },
+      "topic": "Nasdaq Composite tech stocks selloff AI spending earnings",
+      "warnings": [
+        "Evidence is thin for this topic."
+      ]
+    },
+    "raw_sha256": "ae7dfc0cadbcf52d3ef53dbd3525dcbbb07a54ebb0d25949b1b2e0e2c6e56956",
+    "hash_basis": "canonical JSON UTF-8",
+    "clusters": [
+      {
+        "candidate_ids": [
+          "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html"
+        ],
+        "cluster_id": "cluster-1",
+        "representative_ids": [
+          "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html"
+        ],
+        "score": 31.76612021857924,
+        "sources": [
+          "hackernews"
+        ],
+        "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+        "uncertainty": "single-source"
+      }
+    ],
+    "recall_limit": "Only the engine-returned candidate pool; not complete platform recall",
+    "raw_path": "/Users/frankzhang/Desktop/投研助手/journal/work/nasdaq-20261101-wak14q8o/community/last30days-raw.json"
+  },
+  "research_window": {
+    "start": "2026-10-02T00:00:00-04:00",
+    "end": "2026-11-01T23:59:59-05:00",
+    "timezone": "America/New_York"
+  },
+  "selection_summary": {
+    "selected": [
+      "S1"
+    ],
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T07:35:59.789168+00:00",
+  "historical": false,
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://www.stats.gov.cn/xw/tjxw/tzgg/202512/t20251224_1962137.html",
+      "canonical_url": "https://www.stats.gov.cn/xw/tjxw/tzgg/202512/t20251224_1962137.html",
+      "publisher": "国家统计局",
+      "tier": "T0",
+      "published_at": "2025-12-25T00:00:00+08:00",
+      "retrieved_at": "2026-11-02T07:35:59.789168+00:00",
+      "quote": "居民消费价格指数月度报告；11月：9/一，9:30。本表公布的发布内容（除采购经理指数外）均为指标上月、上季、上年或累计数据。发布日期为初步计划，届时可能有所调整。",
+      "locator": "2026年国家统计局主要统计信息发布日程表，居民消费价格指数月度报告11月栏及附注",
+      "origin_id": "nbs-2026-release-calendar",
+      "origin_basis": "国家统计局直接发布",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接规定10月参考期的计划发布日期",
+        "relevance": "direct",
+        "purpose": "核对日期与数据口径",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S2",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965477.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965477.html",
+      "publisher": "国家统计局",
+      "tier": "T0",
+      "published_at": "2026-10-14T09:30:00+08:00",
+      "retrieved_at": "2026-11-02T07:35:59.789168+00:00",
+      "quote": "2026年9月份居民消费价格同比上涨0.9%；全国居民消费价格同比上涨0.9%。全国居民消费价格环比上涨0.2%。",
+      "locator": "标题及正文前两段",
+      "origin_id": "nbs-2026-september-cpi",
+      "origin_basis": "国家统计局直接发布",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对最近已公布数据的参考月与同比",
+        "relevance": "direct",
+        "purpose": "核对日期与数据口径",
+        "priority": "decisive"
+      }
+    }
+  ],
+  "source_status": {
+    "official": {
+      "status": "ok",
+      "reason": "两份官方网页经WebFetch读取。"
+    },
+    "community": {
+      "status": "not_run",
+      "reason": "纯官方数值及发布时间查询，无需社区材料。"
+    },
+    "expectations": {
+      "status": "not_run",
+      "reason": "用户未要求预测，不把预期当实际值。"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+[View PDF](https://arxiv.org/pdf/2512.25070)[HTML (experimental)](https://arxiv.org/html/2512.25070v2)
+
+> Abstract:High-stakes decision making involves reasoning under uncertainty about the future. In this work, we train language models to make predictions on open-ended forecasting questions. To scale up training data, we synthesize novel forecasting questions from global events reported in daily news, using a fully automated, careful curation recipe. We train the Qwen3 thinking models on our dataset, OpenForesight. To prevent leakage of future information during training and evaluation, we use an offline news corpus, both for data generation and retrieval in our forecasting system. Guided by a small validation set, we show the benefits of retrieval, and an improved reward function for reinforcement learning (RL). Once we obtain our final forecasting system, we perform held-out testing between May to August 2025. Our specialized model, OpenForecaster 8B, matches much larger proprietary models, with our training improving the accuracy, calibration, and consistency of predictions. We find calibration improvements from forecasting training generalize across popular benchmarks. We open-source all our models, code, and data to make research on language model forecasting broadly accessible.
+
+Comments:45 pages
+Subjects:Machine Learning (cs.LG); Computation and Language (cs.CL)
+Cite as:[arXiv:2512.25070](https://arxiv.org/abs/2512.25070) [cs.LG]
+(or [arXiv:2512.25070v2](https://arxiv.org/abs/2512.25070v2) [cs.LG] for this version)
+[https://doi.org/10.48550/arXiv.2512.25070](https://doi.org/10.48550/arXiv.2512.25070)
+
+arXiv-issued DOI via DataCite
+
+## Submission history
+
+From: Nikhil Chandak [[view email](https://arxiv.org/show-email/3860e5d7/2512.25070)]   
+**[[v1]](https://arxiv.org/abs/2512.25070v1)** Wed, 31 Dec 2025 18:59:51 UTC (3,097 KB)  
+**[v2]** Mon, 5 Jan 2026 18:45:47 UTC (3,435 KB)

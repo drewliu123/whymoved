@@ -1,0 +1,44 @@
+{
+ "qid": "Q117",
+ "question": "Will Sergio Moro win the Governor of Paraná election?",
+ "rules": "The Paraná gubernatorial election is scheduled to take place in Brazil on October 4, 2026, with a runoff on October 25, 2026, if no candidate receives a majority of the valid votes in the first round.\n\nThis market will resolve according to the candidate who wins this election.\n\nTemporary, interim, or placeholder governors appointed by any means before the specified election will not be considered.\n\nIf the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., www.tse.jus.br/eleicoes/resultados-eleicoes).",
+ "as_of": "2026-09-22",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "CNN Brasil",
+   "published_at": "2026-09-21",
+   "excerpt": "Real Time Big Data's poll published September 21 put Sergio Moro at 35%, Sandro Alex at 27% and Requião Filho at 22% in the first round. In hypothetical runoffs, Moro had 42% against Sandro Alex's 38%, and 52% against Requião Filho's 30%. The survey interviewed 1,600 voters September 11–15, reported a margin of error of two percentage points and 95% confidence, and was registered with the TSE as PR-00532/2026."
+  },
+  {
+   "id": "E2",
+   "publisher": "CNN Brasil",
+   "published_at": "2026-09-18",
+   "excerpt": "Paraná Pesquisas reported first-round voting intentions of 44.7% for Sergio Moro, 23% for Requião Filho and 19.7% for Sandro Alex. Another 5.8% selected blank, null or none, while 4.8% did not know or expressed no opinion. The institute interviewed 1,280 voters in 57 Paraná municipalities September 15–17, with a margin of error of 2.8 percentage points and 95% confidence; the poll was registered as PR-01022/2026."
+  },
+  {
+   "id": "E3",
+   "publisher": "CNN Brasil",
+   "published_at": "2026-09-17",
+   "excerpt": "AtlasIntel reported first-round support of 49.1% for Sergio Moro, 28.2% for Requião Filho and 18.6% for Sandro Alex. In hypothetical runoffs, Moro recorded 57% against Requião Filho's 37.1%, and 50.4% against Sandro Alex's 35.5%. The poll recruited 1,794 Paraná voters digitally September 11–16, reported a margin of error of two percentage points and 95% confidence, and was registered as PR-02671/2026."
+  },
+  {
+   "id": "E4",
+   "publisher": "Ric.com.br",
+   "published_at": "2026-09-16",
+   "excerpt": "Governor Ratinho Junior announced September 16 that he would request leave from office the following day to focus on Sandro Alex's gubernatorial campaign. Vice-governor Darci Piana would assume the state executive during the absence. Ratinho Junior said the leave would let him travel around the state and campaign without the time constraints of the governorship."
+  },
+  {
+   "id": "E5",
+   "publisher": "Folha de S.Paulo",
+   "published_at": "2026-09-08",
+   "excerpt": "Moro had canceled participation in debates and was avoiding criticism of Governor Ratinho Junior, whose administration had approval close to 80%. Moro's television campaign sought to associate him with the state administration, while Ratinho Junior publicly reiterated his support for Sandro Alex. Moro had joined the PL after previously belonging to União Brasil."
+  },
+  {
+   "id": "E6",
+   "publisher": "Agência Senado",
+   "published_at": "2026-03-12",
+   "excerpt": "The electoral calendar published by the Superior Electoral Court sets the first round for October 4, 2026, with an eventual second round on October 25. The calendar covers party conventions, the beginning of campaigning, voting, campaign accounts and the inauguration of those elected."
+  }
+ ]
+}

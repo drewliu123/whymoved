@@ -1,0 +1,50 @@
+{
+  "qid": "Q162",
+  "as_of": "2026-09-22",
+  "kept": [
+    {
+      "excerpt": "O PL deve conquistar a maior bancada do Rio de Janeiro na Câmara dos Deputados, segundo projeção da sétima rodada da pesquisa Vetor Arrow. O partido aparece com 13 das 46 cadeiras destinadas ao estado, mantendo o mesmo número estimado na rodada anterior. A Federação Brasil da Esperança, formada por PT, PCdoB e PV, ocupa a segunda posição, com nove deputados federais projetados. Em seguida aparece a Federação União Progressista, composta por União Brasil e PP, com cinco cadeiras.",
+      "published_at": "2026-09-14",
+      "publisher": "Agenda do Poder — Ricardo Bruno",
+      "relevance": "This recent state-level projection supports PL's electoral strength in Rio de Janeiro, while covering only 46 of the national Chamber's 513 seats.",
+      "url": "https://agendadopoder.com.br/pl-lidera-projecao-para-a-camara-e-pode-eleger-13-deputados-federais-pelo-rio/"
+    },
+    {
+      "excerpt": "No dia 4 de outubro deste ano, além do presidente da República, dos deputados distritais e estaduais e dos 27 governadores, serão eleitos 513 deputados federais e 54 senadores. Os deputados federais são os representantes do povo, eleitos em voto proporcional nas 27 unidades da federação de acordo com uma regra que estabelece um mínimo de oito deputados por unidade da federação, como é o caso de Roraima, Distrito Federal e Acre, por exemplo, e, no máximo, 70 deputados, como é o caso de São Paulo.",
+      "published_at": "2026-08-19",
+      "publisher": "Agência Câmara de Notícias",
+      "relevance": "This official source confirms the election date, the complete renewal of 513 Chamber seats, and the state-based proportional system that determines party and federation seat totals.",
+      "url": "https://www.camara.leg.br/noticias/1298957-eleicoes-deste-ano-vao-definir-54-vagas-no-senado-e-todas-as-513-vagas-da-camara"
+    },
+    {
+      "excerpt": "União Brasil e PP hoje somam 98 deputados e, com a federação, vão funcionar como um só partido no pleito deste ano. Diferentemente da sigla de Jair Bolsonaro, porém, esse \"superpartido\" do centrão vai priorizar a eleição de deputados federais e planeja gastar pelo menos R$ 400 milhões somente para aumentar sua bancada na Câmara. O PL ocupa 97 cadeiras na Câmara e pretende eleger 115 representantes na Casa este ano.",
+      "published_at": "2026-06-09",
+      "publisher": "Folha de S.Paulo",
+      "relevance": "This report identifies União Brasil–PP as a combined federation competitor with a comparable incumbent seat base and substantial planned spending on Chamber candidates.",
+      "url": "https://www1.folha.uol.com.br/poder/2026/06/pl-deve-focar-fundo-eleitoral-em-flavio-e-senado-e-deputados-temem-falta-de-recursos.shtml"
+    },
+    {
+      "excerpt": "Em São Paulo, estado onde o PL mais fez deputados na última eleição (dezessete), o cenário é igualmente difícil. O PL perdeu seus três puxadores de votos: Eduardo Bolsonaro, Carla Zambelli e Ricardo Salles (que foi para o Novo). Diante desse cenário, Valdemar já admite uma recalibragem nas projeções — antes, esperava 120 deputados eleitos. “Uma conta mais justa para o momento é eleger 110”, diz o dirigente.",
+      "published_at": "2026-06-05",
+      "publisher": "VEJA — Anna Satie",
+      "relevance": "The report documents obstacles in the largest state delegation and a reduced seat target attributed to PL's leader, which should be treated as a partisan expectation rather than an independent forecast.",
+      "url": "https://veja.abril.com.br/politica/em-meio-a-crises-politicas-pl-refaz-planos-de-expansao-no-congresso/"
+    },
+    {
+      "excerpt": "O Tribunal Superior Eleitoral (TSE) aprovou, por unanimidade, na sessão administrativa nesta quinta-feira (26), o registro da federação partidária União Progressista, formada pelos partidos União Brasil (União) e Progressistas (PP). De acordo com a Lei dos Partidos Políticos e a Resolução TSE nº 23.670/2021, as federações devem ter duração mínima de quatro anos, período em que os partidos integrantes são obrigados a permanecer unidos, sob pena de sanções em caso de saída antecipada.",
+      "published_at": "2026-03-26",
+      "publisher": "Tribunal Superior Eleitoral",
+      "relevance": "Official approval establishes that União Brasil and PP form a registered federation, making their combined elected seats relevant under Q162's party-or-federation resolution rule.",
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2026/Marco/tse-aprova-registro-da-federacao-uniao-progressista-1"
+    },
+    {
+      "excerpt": "O PL, partido do presidente da República, Jair Bolsonaro, foi a legenda que mais ganhou deputados com as eleições do último domingo (2): 23, passando da bancada atual de 76 deputados para 99 integrantes. Já o PP é o partido que mais perderá integrantes na Câmara dos Deputados na próxima legislatura: 11 deputados. A bancada atual de 58 integrantes será reduzida para 47 parlamentares.",
+      "published_at": "2022-10-04",
+      "publisher": "Agência Câmara de Notícias",
+      "relevance": "This official contemporaneous account provides the previous-election baseline for PL's seat strength and illustrates that election results can materially change incumbent party delegations.",
+      "url": "https://www.camara.leg.br/noticias/911890-confira-os-partidos-que-mais-ganharam-e-mais-perderam-deputados-nas-eleicoes/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-22 inclusive. Included six items with identifiable publication dates on or before the cutoff; excerpts retain the sources' Portuguese wording. The Câmara schedule article was published on 2026-08-19 and explicitly updated on 2026-09-04, also before the cutoff. Publication dates and passages were verified from web_search's indexed article text. web_fetch failed because its provider configuration was ambiguous; the requested agent-reach web-reader fallback returned RATE_LIMITED, so no further reader retries were attempted. Later-dated material, undated live pages, and prediction-market or betting pages were excluded. The latest retained projection is regional, not a national seat forecast; PL leaders' national seat targets are attributed claims, not independent polling. Historical election totals and dated incumbent seat counts refer to different snapshots and should not be treated as interchangeable. No developments after the cutoff or 2026 election outcomes are included."
+}

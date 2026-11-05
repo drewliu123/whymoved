@@ -1,0 +1,1 @@
+{"as_of":"2026-10-31T15:15:05Z","forecasts":[],"status":"not_applicable","reason":"本研究为NDX长期资产估值情景，无对应可成交二元合约，无可比历史样本足以校准5–10年盈利和退出估值的联合分布。按用户明确要求不派判断员硬报概率；情景与观察假设概率留空。forecast.py finalize仅支持非空market/independent数值预测，因此该步骤不适用，未声称通过。journal.py add允许没有对应forecast条目的my_prob=null假设；保留本文件说明限制，不修改插件源码。"}

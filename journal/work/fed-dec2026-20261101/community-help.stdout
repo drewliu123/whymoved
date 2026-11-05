@@ -1,0 +1,262 @@
+usage: last30days.py [-h] [--research-only]
+                     [--emit {compact,json,context,md,html,brief}]
+                     [--register {default,exec,dev,creator,eli5}]
+                     [--json-profile {agent,raw}] [--search SEARCH] [--quick]
+                     [--deep] [--verify-freshness | --no-verify-freshness]
+                     [--drill TARGET] [--discover [DOMAIN]]
+                     [--discover-shallow] [--nominate-only] [--judgments PATH]
+                     [--finalize] [--angles PATH] [--debug] [--mock]
+                     [--diagnose] [--preflight] [--welcome]
+                     [--no-browser-cookies] [--save-dir SAVE_DIR]
+                     [--resolve-save-dir] [--corpus DIR] [--corpus-all-time]
+                     [--output OUTPUT] [--synthesis-file SYNTHESIS_FILE]
+                     [--cached-report] [--publish-html] [--publish]
+                     [--publish-password PUBLISH_PASSWORD] [--store]
+                     [--x-handle X_HANDLE] [--x-related X_RELATED]
+                     [--official-site DOMAIN] [--no-x-handle REASON]
+                     [--x-posts PATH]
+                     [--web-backend {auto,brave,exa,serper,parallel,parallel-mcp,keyless,none}]
+                     [--perplexity-search-type {web,fast}] [--deep-research]
+                     [--hiring-signals] [--plan PLAN]
+                     [--save-suffix SAVE_SUFFIX] [--subreddits SUBREDDITS]
+                     [--dedicated-subreddits DEDICATED_SUBREDDITS]
+                     [--devto-tags DEVTO_TAGS]
+                     [--tiktok-hashtags TIKTOK_HASHTAGS]
+                     [--tiktok-creators TIKTOK_CREATORS]
+                     [--ig-creators IG_CREATORS] [--days LOOKBACK_DAYS]
+                     [--as-of AS_OF_DATE] [--max-results MAX_RESULTS]
+                     [--max-per-source MAX_PER_SOURCE]
+                     [--max-source-fetches MAX_SOURCE_FETCHES]
+                     [--auto-resolve] [--github-user GITHUB_USER]
+                     [--github-repo GITHUB_REPO]
+                     [--trustpilot-domain TRUSTPILOT_DOMAIN]
+                     [--amazon-query AMAZON_QUERY]
+                     [--meta-ads-page META_ADS_PAGE]
+                     [--telegram-sources TELEGRAM_SOURCES] [--competitors [N]]
+                     [--competitors-list COMPETITORS_LIST]
+                     [--polymarket-keywords POLYMARKET_KEYWORDS]
+                     [--competitors-plan COMPETITORS_PLAN]
+                     [topic ...]
+
+Research a topic across live social, market, and grounded web sources.
+
+positional arguments:
+  topic                 Research topic
+
+options:
+  -h, --help            show this help message and exit
+  --research-only       Treat the topic as research text, never as an
+                        administrative command
+  --emit {compact,json,context,md,html,brief}
+  --register {default,exec,dev,creator,eli5}
+                        Audience synthesis preset for the standard brief
+                        (default, exec, dev, creator, eli5)
+  --json-profile {agent,raw}
+                        JSON export profile for --emit=json (default: agent)
+  --search SEARCH       Comma-separated source list
+  --quick               Lower-latency retrieval profile
+  --deep                Higher-recall retrieval profile
+  --verify-freshness    Re-check source-grounded claims after research, or
+                        verify the cached report when no topic is supplied
+  --no-verify-freshness
+                        Disable freshness verification configured by
+                        LAST30DAYS_VERIFY_FRESHNESS
+  --drill TARGET        Deep follow-up on a cluster from the fresh last-
+                        report.json cache
+  --discover [DOMAIN]   Sweep river listings and rank the topics accelerating
+                        in a domain; each survivor gets a full research pass.
+                        Bare --discover (no domain) runs global trending
+                        across every feed's hot list
+  --discover-shallow    Skip the per-topic research pass during --discover:
+                        rank on listing evidence only (faster, thinner; the
+                        confidence floor still applies)
+  --nominate-only       Leg 1 of the host-judged discovery protocol: sweep,
+                        write the nominations bundle for host judgment, and
+                        stop (no judging, no enrichment). Requires --discover
+  --judgments PATH      Leg 2 of the discovery protocol: resume from the
+                        nominations bundle, applying the host judgments file
+                        at PATH. Requires --discover
+  --finalize            Leg 3 of the discovery protocol: apply host angles,
+                        render the final discovery brief, and record the topic
+                        queue. Requires --discover
+  --angles PATH         Optional host angles file for --discover --finalize
+                        (omitting it ships the brief without angle lines)
+  --debug               Enable HTTP debug logging
+  --mock                Use mock retrieval fixtures
+  --diagnose            Print provider and source availability
+  --preflight           Print a safe human-readable permission preflight
+  --welcome             Print the first-run welcome text (engine-owned; relay
+                        verbatim)
+  --no-browser-cookies  Disable browser-cookie extraction even when
+                        FROM_BROWSER is configured
+  --save-dir SAVE_DIR   Optional directory for saving the rendered output
+  --resolve-save-dir    Print the skill save directory from flags/config, then
+                        exit without research
+  --corpus DIR          Add a local .md/.txt/.pdf directory as a private
+                        ranked source (repeatable)
+  --corpus-all-time     Include matching corpus files older than the research
+                        window
+  --output OUTPUT       Optional exact file path for saving the rendered
+                        output
+  --synthesis-file SYNTHESIS_FILE
+                        Markdown synthesis to embed in --emit=html output
+  --cached-report       Render --emit=html --synthesis-file from cached
+                        research only, without replaying temporary plans
+  --publish-html        Publish --emit=html output to ht-ml.app (explicit opt-
+                        in; public by default)
+  --publish             With 'library feed', publish the HTML index and briefs
+                        (explicit opt-in; public by default); feed.xml remains
+                        local
+  --publish-password PUBLISH_PASSWORD
+                        Optional shared password for --publish-html or
+                        'library feed --publish'; prefer
+                        LAST30DAYS_PUBLISH_PASSWORD to avoid exposing secrets
+                        in process lists
+  --store               Persist ranked findings to the SQLite research store
+  --x-handle X_HANDLE   X handle for targeted supplemental search
+  --x-related X_RELATED
+                        Comma-separated related X handles (searched with lower
+                        weight)
+  --official-site DOMAIN
+                        The topic's own website (e.g., typesafe.ai). The
+                        engine reads the X and GitHub accounts the homepage
+                        links and uses them when --x-handle / --github-user
+                        are not set. Keyless.
+  --no-x-handle REASON  Record that the topic has no resolvable X account, and
+                        why (e.g., "official site links no X account; x.com-
+                        filtered search found none"). Satisfies the agent-
+                        hosted X handle decision check without --x-handle.
+  --x-posts PATH        Path to a last30days-x-posts/1 JSON envelope of posts
+                        the hosting model fetched through its X connector;
+                        replaces the engine's X fetch for this run. A file
+                        path only (never inline JSON); on a comparison run use
+                        the per-entity x_posts field of --competitors-plan.
+  --web-backend {auto,brave,exa,serper,parallel,parallel-mcp,keyless,none}
+                        Web search backend (default: auto; parallel-mcp
+                        explicitly opts into the anonymous hosted MCP; keyless
+                        forces the zero-key floor)
+  --perplexity-search-type {web,fast}
+                        Search backend for direct Perplexity Search API and
+                        Agent web_search; overrides
+                        LAST30DAYS_PERPLEXITY_SEARCH_TYPE. Does not enable the
+                        paid source or select an Agent preset.
+  --deep-research       Use at most one Perplexity Deep Research run. Direct
+                        PERPLEXITY_API_KEY uses the Agent API background path;
+                        OPENROUTER_API_KEY keeps the synchronous Sonar
+                        fallback; cannot be combined with competitor or vs-
+                        mode.
+  --hiring-signals      Analyze public jobs/careers postings as evidence-
+                        backed company focus signals.
+  --plan PLAN           JSON query plan (skips internal LLM planner). Can be a
+                        JSON string or a file path.
+  --save-suffix SAVE_SUFFIX
+                        Suffix for saved output filename (e.g., 'gemini' →
+                        kanye-west-raw-gemini.md)
+  --subreddits SUBREDDITS
+                        Comma-separated broad/category subreddit names to
+                        search (e.g., SaaS,Entrepreneur)
+  --dedicated-subreddits DEDICATED_SUBREDDITS
+                        Comma-separated entity-home subreddit names (e.g.,
+                        Kanye,WestSubEver). Pulled in full (top+hot+new) and
+                        exempt from the relevance floor since the whole sub is
+                        the topic.
+  --devto-tags DEVTO_TAGS
+                        Comma-separated dev.to tags, lowercase alphanumeric
+                        (e.g., claudecode,ai)
+  --tiktok-hashtags TIKTOK_HASHTAGS
+                        Comma-separated TikTok hashtags without # (e.g.,
+                        tella,screenrecording)
+  --tiktok-creators TIKTOK_CREATORS
+                        Comma-separated TikTok creator handles (e.g.,
+                        TellaHQ,taborplace)
+  --ig-creators IG_CREATORS
+                        Comma-separated Instagram creator handles (e.g.,
+                        tella.tv,laborstories)
+  --days LOOKBACK_DAYS, --lookback-days LOOKBACK_DAYS
+                        Number of days to look back for research (default: 30,
+                        watchlist uses 90)
+  --as-of AS_OF_DATE    End date for the lookback window in YYYY-MM-DD format.
+                        When set, --days looks back from this date instead of
+                        today.
+  --max-results MAX_RESULTS
+                        Override the final ranked-pool cap
+                        (pool_limit/rerank_limit) from the depth profile. Use
+                        for high-volume topics where the default (deep=60)
+                        under-covers. See issue #716.
+  --max-per-source MAX_PER_SOURCE
+                        Override the per-stream cap (per_stream_limit) applied
+                        to each (source, subquery) before pooling. Raising it
+                        increases unique-item yield when one source has many
+                        relevant items. See issue #716.
+  --max-source-fetches MAX_SOURCE_FETCHES
+                        Override the per-source fetch cap (MAX_SOURCE_FETCHES,
+                        default x=2) that limits how many subqueries actually
+                        fetch a capped source. Raise it so every X subquery in
+                        a multi-angle --plan runs instead of just the first
+                        two. See issue #716.
+  --auto-resolve        Use web search to discover subreddits/handles before
+                        planning (for platforms without WebSearch)
+  --github-user GITHUB_USER
+                        GitHub username for person-mode search (e.g.,
+                        steipete)
+  --github-repo GITHUB_REPO
+                        Comma-separated owner/repo for project-mode search
+                        (e.g., openclaw/openclaw,paperclipai/paperclip)
+  --trustpilot-domain TRUSTPILOT_DOMAIN
+                        Trustpilot review-page domain for the topic (e.g.,
+                        www.thriftbooks.com). Used verbatim, bypasses the
+                        brand-shape gate, and auto-activates the opt-in
+                        Trustpilot source for this run (unless
+                        EXCLUDE_SOURCES=trustpilot). Find the domain with
+                        `trustpilot-pp-cli search '<name>'`.
+  --amazon-query AMAZON_QUERY
+                        Product keyword the amazon source searches, when that
+                        source is active. Defaults to the topic. Supply it
+                        whenever the topic is not the product: a person topic
+                        searches their company's product line (--amazon-
+                        query='June Oven'), and a brand searches brand-plus-
+                        category (--amazon-query='Weber grill', not 'Weber' --
+                        a bare brand keyword lands on an ad-heavy page that
+                        can miss the brand's own bestsellers). Requires the
+                        brightdata CLI on PATH and logged in.
+  --meta-ads-page META_ADS_PAGE
+                        Meta Ad Library page id for the topic's advertiser,
+                        when the meta_ads source is active. Skips name-based
+                        page resolution and its discovery credit. Accepts a
+                        bare numeric page id (e.g. 123456789012345) or an Ad
+                        Library URL carrying view_all_page_id. A facebook.com
+                        vanity URL is not a page id and is rejected. Use it
+                        when a brand advertises under product names, or when
+                        resolution picked the wrong company.
+  --telegram-sources TELEGRAM_SOURCES
+                        Comma-separated list of public Telegram channel
+                        handles or t.me URLs. Auto-activates the opt-in
+                        Telegram source for this run. Accepts: bare handle
+                        (aipost), @handle (@aipost), t.me URL
+                        (https://t.me/aipost), or preview URL
+                        (https://t.me/s/aipost). Rejects joinchat links and
+                        numeric -100 supergroup IDs.
+  --competitors [N]     Auto-discover N competitor entities and fan out
+                        last30days across all of them as a comparison (default
+                        N=2 → 3-way: original + 2 peers; range 1..6). Use
+                        --competitors-list to override discovery.
+  --competitors-list COMPETITORS_LIST
+                        Comma-separated competitor entities to skip discovery
+                        (e.g., 'Anthropic,xAI,Google Gemini'). Implies
+                        --competitors.
+  --polymarket-keywords POLYMARKET_KEYWORDS
+                        Comma-separated keywords that Polymarket market titles
+                        must match to be included. Use for ambiguous single-
+                        token topics like 'Warriors' (nba,gsw,golden-state) to
+                        filter out Glasgow Warriors rugby, Honor of Kings
+                        Rogue Warriors, etc. When omitted, Polymarket returns
+                        all matching markets — so expect cross-entity noise on
+                        generic topics.
+  --competitors-plan COMPETITORS_PLAN
+                        JSON mapping of per-entity Step 0.55 targeting for
+                        competitor / vs-mode sub-runs. Schema: {entity_name:
+                        {x_handle?, x_related?, subreddits?, github_user?,
+                        github_repos?, context?}}. Accepts inline JSON or a
+                        file path. Implies --competitors. Preferred over
+                        --competitors-list when the hosting model has already
+                        resolved per-entity handles and subs.

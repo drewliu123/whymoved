@@ -1,0 +1,53 @@
+{
+  "as_of": "2026-10-31T12:00:00Z",
+  "claims": [
+    {
+      "as_of": "2026-10-31T12:00:00Z",
+      "basis": [],
+      "id": "C1",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "text": "Revenue increased to 12.",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T12:00:00Z",
+      "basis": [],
+      "id": "P1",
+      "price_kind": "close",
+      "sources": [
+        {
+          "source_id": "SP"
+        }
+      ],
+      "text": "虚构收盘价15美元，仅验收用",
+      "type": "price"
+    },
+    {
+      "as_of": "2026-10-31T12:00:00Z",
+      "basis": [
+        "C1"
+      ],
+      "id": "AM1",
+      "sources": [],
+      "text": "虚构情景假设，仅用于计算验收，不是市场事实",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T12:00:00Z",
+      "basis": [
+        "C1",
+        "AM1",
+        "P1"
+      ],
+      "id": "OM1",
+      "sources": [],
+      "text": "固定模型在给定假设下的结果",
+      "type": "inference"
+    }
+  ],
+  "schema_version": 2
+}

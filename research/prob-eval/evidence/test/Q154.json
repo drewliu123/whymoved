@@ -1,0 +1,64 @@
+{
+  "qid": "Q154",
+  "as_of": "2026-07-22",
+  "kept": [
+    {
+      "published_at": "2026-07-21",
+      "publisher": "KWCH",
+      "url": "https://www.kwch.com/2026/07/21/former-state-senator-announces-ethics-complaint-against-ty-masterson/?outputType=amp",
+      "excerpt": "Mark Steffen, a former Reno County commissioner and state senator, said he filed his complaint with the Kansas Public Disclosure Commission (formerly the Kansas Governmental Ethics Commission) “regarding what appears to be a serious and ongoing violation of Kansas campaign finance law.” The Kansas Public Disclosure Commission said it cannot confirm or deny ethics-complaint filings due to legal matters of confidentiality. In response to Steffen, Masterson’s campaign further said the former senator’s complaint isn’t valid, describing it as “bunk.”",
+      "relevance": "Documents a late-primary controversy and the campaign’s denial immediately before the cutoff, while distinguishing allegations from confirmed findings."
+    },
+    {
+      "published_at": "2026-07-14",
+      "publisher": "Kansas Secretary of State",
+      "url": "https://www.sos.ks.gov/media/press-releases/2026/07-14-26-voter-registration-period-closes-today.html",
+      "excerpt": "Kansas Secretary of State Scott Schwab reminds Kansans that the deadline to register to vote for the August 4 primary election is today, July 14. Unaffiliated voters may affiliate at any time through the close of polls on Election Day and vote a party ballot.",
+      "relevance": "Officially confirms the scheduled primary and identifies unaffiliated voters’ ability to enter a party primary."
+    },
+    {
+      "published_at": "2026-07-13",
+      "publisher": "KWCH",
+      "url": "https://www.kwch.com/2026/07/14/not-once-have-i-ever-seen-him-questions-mount-over-ty-mastersons-217k-job-wsu-makerspace/?outputType=amp",
+      "excerpt": "Masterson is running for governor of Kansas. He’s president of the Kansas Senate, and he also works as the director of GoCreate. However, students say they haven’t seen him there. Masterson and WSU say these are just political attacks on the eve of an election.",
+      "relevance": "Establishes contemporaneous scrutiny of Masterson’s university employment and includes the responses from Masterson and the university."
+    },
+    {
+      "published_at": "2026-07-07",
+      "publisher": "Kansas Reflector",
+      "url": "https://kansasreflector.com/2026/07/07/kansas-gubernatorial-race-descends-into-phase-dominated-by-attacks-and-counterpunches/",
+      "excerpt": "Masterson, who serves as president of the Kansas Senate, is among seven Republican and three Democratic candidates on the ballot in the Aug. 4 primary election. The Kansas Comeback political action committee, linked to GOP gubernatorial candidate Philip Sarnecki, targeted Masterson by challenging Masterson’s vote for a 2025 bill providing data center developers 20-year tax breaks if at least $250 million was invested in the project.",
+      "relevance": "Confirms the crowded Republican field and provides evidence of organized attacks from rival Philip Sarnecki’s political network."
+    },
+    {
+      "published_at": "2026-06-17",
+      "publisher": "Americans for Prosperity–Kansas",
+      "url": "https://ks.americansforprosperity.org/newsroom/afp-ks-endorses-kansas-senate-president-ty-masterson-for-governor/",
+      "excerpt": "Americans for Prosperity-Kansas (AFP-KS) today endorsed Kansas Senate President Ty Masterson (SD 16) to be the next governor. The endorsement gives Sen. Masterson the support of Kansas’ largest grassroots organization and its thousands of activists and volunteers across the state who will be reaching voters door to door every day to make the difference in this competitive primary election.",
+      "relevance": "The endorsing organization’s own dated announcement documents promised voter-contact support, although its characterization of organizational size is self-reported."
+    },
+    {
+      "published_at": "2026-06-01",
+      "publisher": "Sunflower State Journal",
+      "url": "https://sunflowerstatejournal.com/colyer-doesnt-file-for-governor/",
+      "excerpt": "Former Kansas Gov. Jeff Colyer quietly bowed out of the governor’s race Monday when he didn’t officially file for the office as the deadline lapsed at noon. Colyer had been officially campaigning for governor since May 2025 and unofficially starting earlier as he structured a campaign built on his support for President Donald Trump. Trump endorsed Senate President Ty Masterson about a week ago, and Colyer’s campaign has been quiet for days.",
+      "relevance": "Shows that a prominent potential competitor left the race after Masterson secured Trump’s endorsement."
+    },
+    {
+      "published_at": "2026-05-24",
+      "publisher": "Kansas Reflector",
+      "url": "https://kansasreflector.com/2026/05/24/president-donald-trump-endorses-kansas-senate-president-in-gop-campaign-for-governor/",
+      "excerpt": "President Donald Trump endorsed Senate President Ty Masterson on Sunday in the Republican primary for Kansas governor. “Ty Masterson has my complete and total endorsement to be the next governor of Kansas,” Trump said.",
+      "relevance": "Provides dated reporting of a major endorsement relevant to Republican primary voters."
+    },
+    {
+      "published_at": "2025-10-27",
+      "publisher": "Kansas Reflector",
+      "url": "https://kansasreflector.com/2025/10/27/kansas-speaks-survey-shows-lots-of-daylight-between-views-on-issues-and-political-support/",
+      "excerpt": "Colyer was the best-known candidate with 35.1% recognition, followed by Secretary of State Scott Schwab at 29.1%, Senate President Ty Masterson at 25.3% and Insurance Commissioner Vicki Schmidt at 24.4%. All are Republicans. “Most people have never heard of any of these candidates,” Smith said.",
+      "relevance": "Supplies an early name-recognition baseline, rather than a primary vote-intention poll, showing substantial room for campaigning to change voter awareness."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-22, inclusive. All included items have explicit publication dates in indexed source text; the KWCH employment story displays July 13 despite a July 14 URL. Excerpts contain only material about developments on or before the cutoff. Later-dated reporting, election-result pages, undated current profiles, prediction markets and betting material were excluded. No qualifying recent public Republican primary vote-intention poll was verified; the October 2025 survey is included only as a name-recognition baseline. Direct web_fetch failed because of a provider-configuration error, and the requested agent-reach web-read fallback returned RATE_LIMITED; verification therefore relied on web_search-indexed article text and displayed publication dates, without full-page retrieval."
+}

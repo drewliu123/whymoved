@@ -1,0 +1,62 @@
+{
+  "qid": "Q073",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "The July 16 briefing reproduces a Text Arena Overall table labeled as published July 13, 2026. It lists claude-fable-5 at 1508, claude-opus-4-6-thinking at 1504, and claude-opus-4-7-thinking at 1503, all owned by Anthropic.",
+      "published_at": "2026-07-16",
+      "publisher": "New Realities Corporation — AI News Briefing",
+      "relevance": "This dated secondary snapshot places Anthropic models in the first three displayed positions, although it does not explicitly verify the style-control setting or reproduce the official Rank column.",
+      "url": "https://ai-daily-briefing.newrealities.co.jp/archive/2026-07-16/"
+    },
+    {
+      "excerpt": "The July 16, 2026 leaderboard changelog states that inkling and kimi-k3 were added to the Text Arena and Code Arena leaderboards.",
+      "published_at": "2026-07-16",
+      "publisher": "Arena — official leaderboard changelog, July 16 entry",
+      "relevance": "These newly added competitors could change the model ordering during the remaining forecasting window.",
+      "url": "https://arena.ai/company/leaderboard-changelog"
+    },
+    {
+      "excerpt": "Anthropic announced Claude Fable 5, describing it as a Mythos-class model made safe for general use. The company said its capabilities exceeded those of any model Anthropic had previously made generally available, while Claude Mythos 5 would have restricted access.",
+      "published_at": "2026-06-09",
+      "publisher": "Anthropic",
+      "relevance": "This identifies Anthropic's publicly available frontier model and distinguishes it from a restricted model that cannot automatically be assumed to appear in the resolution leaderboard.",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+    },
+    {
+      "excerpt": "Anthropic introduced Claude Sonnet 5 on June 30, describing its performance as close to Opus 4.8 and a substantial improvement over Sonnet 4.6 in reasoning, tool use, coding, and knowledge work. The announcement made Sonnet 5 available across all Claude plans and through the Claude API.",
+      "published_at": "2026-06-30",
+      "publisher": "Anthropic",
+      "relevance": "Additional competitive Anthropic models matter because the resolution orders individual models and allows one company to occupy multiple positions.",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5"
+    },
+    {
+      "excerpt": "Meta introduced Muse Spark 1.1 on July 9 as a multimodal reasoning model with improvements in tool and computer use, coding, and multimodal understanding. It also launched a public preview of the Meta Model API and made the model available in Thinking mode in the Meta AI app and on meta.ai.",
+      "published_at": "2026-07-09",
+      "publisher": "Meta Superintelligence Labs",
+      "relevance": "This documents a recent frontier-model upgrade from a competing company before the evidence cutoff.",
+      "url": "https://research.meta.ai/blog/introducing-muse-spark-meta-model-api"
+    },
+    {
+      "excerpt": "OpenAI announced general availability of the GPT-5.6 family on July 9 following a limited preview. The launch introduced flagship Sol alongside Terra and Luna, and OpenAI claimed Sol achieved state-of-the-art results across coding, knowledge work, cybersecurity, and science.",
+      "published_at": "2026-07-09",
+      "publisher": "OpenAI",
+      "relevance": "The launch adds recent competing models whose eventual preference rankings could affect whether an Anthropic model occupies third place.",
+      "url": "https://openai.com/index/gpt-5-6/"
+    },
+    {
+      "excerpt": "Reuters reported on July 8 that SpaceX AI launched Grok 4.5, describing it as the company's most intelligent offering to date for coding and agentic tasks. Elon Musk called it an Opus-class model that was faster, more token-efficient, and lower cost.",
+      "published_at": "2026-07-08",
+      "publisher": "Reuters, syndicated by Investing.com",
+      "relevance": "This independently reports another pre-cutoff competitor launch, while identifying the comparative capability statement as a vendor claim rather than an Arena result.",
+      "url": "https://www.investing.com/news/stock-market-news/spacexai-launches-grok-45-model-for-coding-agentic-tasks-4782511"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "reason": "published_at is not parseable as a single publication date: '2026-06-30; update 2026-07-01' combines a publication date and an update annotation. Removed under the strict publication-date requirement."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-07-17 inclusive. Included only dated entries and passages describing information published by that cutoff; no outcome, odds, betting pages, or post-cutoff developments are included. Search results supplied publication dates and source text. web_fetch failed because multiple providers were registered; the requested agent-reach web-read fallback returned RATE_LIMITED, so full-page retrieval could not be completed. The Arena changelog item refers only to its explicitly dated July 16 entry. Some announcement pages are maintained and contain later edits; those edits were excluded, but an archived pre-cutoff version was not retrieved. The July 16 secondary leaderboard snapshot does not explicitly establish style control off, official Rank values, or granular tie-breaking scores, so it is contextual evidence rather than a verified exact-resolution snapshot. A style-controlled, company-deduplicated ranking was excluded because it does not match the resolution method. No forecast or resolution conclusion is asserted."
+}

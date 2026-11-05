@@ -1,0 +1,324 @@
+{
+  "alternatives": [],
+  "analysis": {
+    "baseline": "已披露收入和利润基数",
+    "baseline_claim_ids": [
+      "C1"
+    ],
+    "conclusion": "本期收入增加。",
+    "conclusion_claim_ids": [
+      "C1"
+    ],
+    "hypotheses": [
+      {
+        "explanation": "需求兑现进入利润",
+        "id": "H1"
+      },
+      {
+        "explanation": "收入增长但成本吞噬增量",
+        "id": "H2"
+      }
+    ],
+    "market": {
+      "claim_ids": [
+        "P1",
+        "OM1",
+        "AM1"
+      ],
+      "conditions": "后续现金流和折现率变化时重算",
+      "gap": "比较研究情景和隐含要求，差异依赖折现与终值假设",
+      "implied_expectation": "虚构价格在给定模型下隐含增长率为0.089332",
+      "model_ids": [
+        "M1"
+      ],
+      "reason": "在显式折现和终值假设下反推增长",
+      "research_expectation": "研究使用10%的增长情景，不是已校准预测",
+      "status": "assessed"
+    },
+    "mechanism_chain": [
+      "收入",
+      "利润率",
+      "营业利润",
+      "现金流"
+    ],
+    "method": "reverse_valuation",
+    "model_reason": "固定计算器重算并比较单参数情景",
+    "model_status": "computed",
+    "models": [
+      {
+        "assumptions": {
+          "discount_rate": "虚构情景参数，用于检验敏感性",
+          "growth_high": "虚构情景参数，用于检验敏感性",
+          "growth_low": "虚构情景参数，用于检验敏感性",
+          "terminal_growth": "虚构情景参数，用于检验敏感性",
+          "years": "虚构情景参数，用于检验敏感性"
+        },
+        "currency": "USD",
+        "description": "虚构数据固定模型验收",
+        "id": "M1",
+        "instrument": "FICTIONAL",
+        "output_claim_ids": [
+          "OM1"
+        ],
+        "period": "一年基期；DCF明确期5年",
+        "result": {
+          "outputs": {
+            "implied_growth": {
+              "unit": "ratio",
+              "value": 0.08933182778127957
+            },
+            "residual": {
+              "unit": "currency",
+              "value": 1.8047785488306545e-10
+            },
+            "solved_enterprise_value": {
+              "unit": "currency",
+              "value": 170.00000000018048
+            },
+            "target_enterprise_value": {
+              "unit": "currency",
+              "value": 170
+            }
+          },
+          "sensitivity": [
+            {
+              "input": "discount_rate",
+              "outputs": {
+                "implied_growth": {
+                  "unit": "ratio",
+                  "value": 0.05617657158290967
+                },
+                "residual": {
+                  "unit": "currency",
+                  "value": -1.2456979447961203e-08
+                },
+                "solved_enterprise_value": {
+                  "unit": "currency",
+                  "value": 169.99999998754302
+                },
+                "target_enterprise_value": {
+                  "unit": "currency",
+                  "value": 170
+                }
+              },
+              "unit": "ratio",
+              "value": 0.09
+            },
+            {
+              "input": "discount_rate",
+              "outputs": {
+                "implied_growth": {
+                  "unit": "ratio",
+                  "value": 0.12015133342356421
+                },
+                "residual": {
+                  "unit": "currency",
+                  "value": 1.6506334077348583e-08
+                },
+                "solved_enterprise_value": {
+                  "unit": "currency",
+                  "value": 170.00000001650633
+                },
+                "target_enterprise_value": {
+                  "unit": "currency",
+                  "value": 170
+                }
+              },
+              "unit": "ratio",
+              "value": 0.11
+            }
+          ]
+        },
+        "scale": "million (money and shares)",
+        "scope": "虚构同一公司",
+        "spec": {
+          "inputs": {
+            "discount_rate": {
+              "claim_ids": [
+                "AM1"
+              ],
+              "role": "assumption",
+              "unit": "ratio",
+              "value": 0.1
+            },
+            "free_cash_flow": {
+              "claim_ids": [
+                "C1"
+              ],
+              "role": "observed",
+              "unit": "currency",
+              "value": 10
+            },
+            "growth_high": {
+              "claim_ids": [
+                "AM1"
+              ],
+              "role": "assumption",
+              "unit": "ratio",
+              "value": 1.0
+            },
+            "growth_low": {
+              "claim_ids": [
+                "AM1"
+              ],
+              "role": "assumption",
+              "unit": "ratio",
+              "value": -0.5
+            },
+            "net_debt": {
+              "claim_ids": [
+                "C1"
+              ],
+              "role": "observed",
+              "unit": "currency",
+              "value": 20
+            },
+            "price": {
+              "claim_ids": [
+                "P1"
+              ],
+              "role": "observed",
+              "unit": "currency/share",
+              "value": 15
+            },
+            "shares": {
+              "claim_ids": [
+                "C1"
+              ],
+              "role": "observed",
+              "unit": "shares",
+              "value": 10
+            },
+            "terminal_growth": {
+              "claim_ids": [
+                "AM1"
+              ],
+              "role": "assumption",
+              "unit": "ratio",
+              "value": 0.02
+            },
+            "years": {
+              "claim_ids": [
+                "AM1"
+              ],
+              "role": "assumption",
+              "unit": "year",
+              "value": 5
+            }
+          },
+          "kind": "reverse_dcf",
+          "sensitivity": [
+            {
+              "input": "discount_rate",
+              "values": [
+                0.09,
+                0.11
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "price_relevance": true,
+    "question_kind": "valuation",
+    "tests": [
+      {
+        "by": "下次财报",
+        "claim_ids": [
+          "C1"
+        ],
+        "id": "T1",
+        "interpretation": "单项披露不足以区分两种解释",
+        "next_observation": "下一期同口径交付与现金流",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "同口径利润增长"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "同口径利润下降"
+          }
+        ],
+        "status": "observed",
+        "supports": [],
+        "supports_if": "利润增长",
+        "weakens": [],
+        "weakens_if": "利润下降"
+      }
+    ],
+    "version": 1
+  },
+  "answer": {
+    "claim_ids": [
+      "C1"
+    ],
+    "text": "本期收入增加。"
+  },
+  "as_of": "2026-10-31T12:00:00Z",
+  "findings": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "increment": {
+        "baseline": "上一截点未披露",
+        "detail": "补充本期披露值",
+        "kind": "new_fact"
+      },
+      "text": "披露收入为 12。",
+      "title": "收入增加",
+      "why_it_matters": "更新收入判断。"
+    }
+  ],
+  "limitations": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "material": true,
+      "text": "只有单期数据"
+    }
+  ],
+  "question": "收入发生了什么变化？",
+  "schema_version": 2,
+  "tables": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "columns": [
+        "项目",
+        "收入"
+      ],
+      "note": "披露口径",
+      "rows": [
+        [
+          "本期",
+          12
+        ]
+      ],
+      "title": "披露值"
+    }
+  ],
+  "task": "财报观察",
+  "title": "虚构验收示范（非市场研究） · asset",
+  "type": "asset",
+  "update": {
+    "comparability": {
+      "reason": "同一虚构输入与口径",
+      "status": "comparable"
+    },
+    "judgment_changed": false,
+    "reason": "验收只修改下一观察，不虚构新发现"
+  },
+  "watch": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "meaning": "验证趋势是否持续",
+      "signal": "下一次披露"
+    }
+  ]
+}

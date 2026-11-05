@@ -1,0 +1,4043 @@
+{
+  "repo": "DVampire/FinAgent",
+  "sha": "17248a0b8b729ee3e093e30bb7bea7f52181f363",
+  "default_branch": "main",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "tree": {
+    "sha": "17248a0b8b729ee3e093e30bb7bea7f52181f363",
+    "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/17248a0b8b729ee3e093e30bb7bea7f52181f363",
+    "tree": [
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "68bc17f9ff2104a9d7b6777058bb4c343ca72609",
+        "size": 3078,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/68bc17f9ff2104a9d7b6777058bb4c343ca72609"
+      },
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c81f82403e712cbc6d6335c09e585ee586382c23",
+        "size": 1073,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c81f82403e712cbc6d6335c09e585ee586382c23"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "19828785aa1da5fb3dede65c6bff9bb28abfb5ac",
+        "size": 1463,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/19828785aa1da5fb3dede65c6bff9bb28abfb5ac"
+      },
+      {
+        "path": "configs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "decdd42ccc444d67dce077fd43e9ae9047c7c66e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/decdd42ccc444d67dce077fd43e9ae9047c7c66e"
+      },
+      {
+        "path": "configs/_asset_list_",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1be5087e48b55fdc8e3681b2bd6848fc709b5568",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/1be5087e48b55fdc8e3681b2bd6848fc709b5568"
+      },
+      {
+        "path": "configs/_asset_list_/dj30.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "21ba1e7c907236d2dc0621f18ca746b672979767",
+        "size": 113,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/21ba1e7c907236d2dc0621f18ca746b672979767"
+      },
+      {
+        "path": "configs/_asset_list_/exp_cryptos.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "99a59254d06a0effd699e804ccf2eb05e28d6614",
+        "size": 6,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/99a59254d06a0effd699e804ccf2eb05e28d6614"
+      },
+      {
+        "path": "configs/_asset_list_/exp_forexs.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d450fe0d8b7d9535c0372207aa111cc2ca7ddc0e",
+        "size": 6,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d450fe0d8b7d9535c0372207aa111cc2ca7ddc0e"
+      },
+      {
+        "path": "configs/_asset_list_/exp_stocks.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3c79ac2ea5016fdc0818e70c7abc20452cfdec61",
+        "size": 25,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3c79ac2ea5016fdc0818e70c7abc20452cfdec61"
+      },
+      {
+        "path": "configs/_asset_list_/nasdaq100.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5135a03650edb96e6d0955fdcc40124cd6c97e16",
+        "size": 524,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5135a03650edb96e6d0955fdcc40124cd6c97e16"
+      },
+      {
+        "path": "configs/_asset_list_/russell1k.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "224e381cf4f2c10768ffe605bc406fcb8435a8cb",
+        "size": 4037,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/224e381cf4f2c10768ffe605bc406fcb8435a8cb"
+      },
+      {
+        "path": "configs/_asset_list_/sp500.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "99da2760381ebcf8b6b69baa07981a451fbb1be4",
+        "size": 1724,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/99da2760381ebcf8b6b69baa07981a451fbb1be4"
+      },
+      {
+        "path": "configs/_asset_list_/us_stock20k.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6b1599cfb03e7bc60e27d82941fc4ea8a9d341f0",
+        "size": 120142,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6b1599cfb03e7bc60e27d82941fc4ea8a9d341f0"
+      },
+      {
+        "path": "configs/_asset_list_/us_stock3k.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f281a61c1a87b1698416b72feb8c6998ebd3a8a6",
+        "size": 14199,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f281a61c1a87b1698416b72feb8c6998ebd3a8a6"
+      },
+      {
+        "path": "configs/downloader",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "60c779153495009497e09b7b46cf6bd7f4b3d25e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/60c779153495009497e09b7b46cf6bd7f4b3d25e"
+      },
+      {
+        "path": "configs/downloader/news",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "535c2b860eae67769d06b6a5df685bf083ba7171",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/535c2b860eae67769d06b6a5df685bf083ba7171"
+      },
+      {
+        "path": "configs/downloader/news/fmp_news_dj30.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "298b6475ca44cfe4cc9425bf43fc48c5b1d6bb7a",
+        "size": 341,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/298b6475ca44cfe4cc9425bf43fc48c5b1d6bb7a"
+      },
+      {
+        "path": "configs/downloader/news/fmp_news_exp_cryptos.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d8d92a739f49197b5a6b25f650a7477f427bf362",
+        "size": 361,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d8d92a739f49197b5a6b25f650a7477f427bf362"
+      },
+      {
+        "path": "configs/downloader/news/fmp_news_exp_forexs.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "437da486e3ce28b8f4b88e2ca96f39ae3881c267",
+        "size": 358,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/437da486e3ce28b8f4b88e2ca96f39ae3881c267"
+      },
+      {
+        "path": "configs/downloader/news/fmp_news_exp_stocks.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "447a2bf759d4727902f11e559a95933ac15376f7",
+        "size": 358,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/447a2bf759d4727902f11e559a95933ac15376f7"
+      },
+      {
+        "path": "configs/downloader/news/polygon_news_dj30.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eef2fb736ee000f2103ab10ee93191acc4f38a62",
+        "size": 311,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/eef2fb736ee000f2103ab10ee93191acc4f38a62"
+      },
+      {
+        "path": "configs/downloader/news/polygon_news_exp.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "281205eedfd81515835ec864b8e98d84f3217904",
+        "size": 318,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/281205eedfd81515835ec864b8e98d84f3217904"
+      },
+      {
+        "path": "configs/downloader/news/yahoofinance_news_dj30.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0db34634a954367a39f70366486fb36d3397db2b",
+        "size": 496,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/0db34634a954367a39f70366486fb36d3397db2b"
+      },
+      {
+        "path": "configs/downloader/news/yahoofinance_news_exp.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "58cc16873eb6a980a761413a7738c6765bb552dd",
+        "size": 501,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/58cc16873eb6a980a761413a7738c6765bb552dd"
+      },
+      {
+        "path": "configs/downloader/prices",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "df745ab2e53f4a2441b9a608520c6c141813a20c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/df745ab2e53f4a2441b9a608520c6c141813a20c"
+      },
+      {
+        "path": "configs/downloader/prices/fmp_day_prices_dj30.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b7bbd4ee318385779c8417e7e3a5a581ab509750",
+        "size": 351,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b7bbd4ee318385779c8417e7e3a5a581ab509750"
+      },
+      {
+        "path": "configs/downloader/prices/fmp_day_prices_exp_cryptos.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eabe4a54956ed7c6c13f10eb075824c532d69843",
+        "size": 365,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/eabe4a54956ed7c6c13f10eb075824c532d69843"
+      },
+      {
+        "path": "configs/downloader/prices/fmp_day_prices_exp_forexs.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b9000afbf09b3ce05d4f9a16653d2b6e3c51ebfb",
+        "size": 363,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b9000afbf09b3ce05d4f9a16653d2b6e3c51ebfb"
+      },
+      {
+        "path": "configs/downloader/prices/fmp_day_prices_exp_stocks.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ed20a51b84667954b2615e1757150d68768859e7",
+        "size": 363,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ed20a51b84667954b2615e1757150d68768859e7"
+      },
+      {
+        "path": "configs/downloader/prices/fmp_day_prices_sp500.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8a6a668d9b2211be9640e5084f8c8383f4b36fcb",
+        "size": 355,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/8a6a668d9b2211be9640e5084f8c8383f4b36fcb"
+      },
+      {
+        "path": "configs/downloader/prices/polygon_day_prices_dj30.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "866733db9e6780378a1ec87943bdf5407ed3461f",
+        "size": 360,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/866733db9e6780378a1ec87943bdf5407ed3461f"
+      },
+      {
+        "path": "configs/downloader/prices/yahoofinance_day_prices_dj30.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e500b9408d2b0de9d7640d20674e700895d0c59",
+        "size": 370,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5e500b9408d2b0de9d7640d20674e700895d0c59"
+      },
+      {
+        "path": "configs/downloader/tools",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2b0082eb7da6eed8faf09d65bfd52153c44a5ba8",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/2b0082eb7da6eed8faf09d65bfd52153c44a5ba8"
+      },
+      {
+        "path": "configs/downloader/tools/fmp_economic_exp.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "95adbc49f0ed53f032111f305007d811823024c0",
+        "size": 1128,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/95adbc49f0ed53f032111f305007d811823024c0"
+      },
+      {
+        "path": "configs/downloader/tools/fmp_sentiment_exp.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6513c7de222b523d27107124946612d5ea8d27cc",
+        "size": 356,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6513c7de222b523d27107124946612d5ea8d27cc"
+      },
+      {
+        "path": "configs/downloader/tools/rapidapi_seekingalpha_analysis_exp.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "045b01e0a49dbed988ed4f05dcfbc630f5191549",
+        "size": 371,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/045b01e0a49dbed988ed4f05dcfbc630f5191549"
+      },
+      {
+        "path": "configs/exp",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b99cbe8b6f729012999a17c8880c6cae543bac90",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/b99cbe8b6f729012999a17c8880c6cae543bac90"
+      },
+      {
+        "path": "configs/exp/trading",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4d31563549a6c5134c2ffaf4bb95e57e1b7717e0",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4d31563549a6c5134c2ffaf4bb95e57e1b7717e0"
+      },
+      {
+        "path": "configs/exp/trading/AAPL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5766ae917d2b9a815053bf59838d7cbf4027c81a",
+        "size": 4539,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5766ae917d2b9a815053bf59838d7cbf4027c81a"
+      },
+      {
+        "path": "configs/exp/trading/AMZN.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4908f122d83e0f9a584609f5b33e3d93f062cca1",
+        "size": 4539,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/4908f122d83e0f9a584609f5b33e3d93f062cca1"
+      },
+      {
+        "path": "configs/exp/trading/ETHUSD.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ffc277095904492ef215c89b7e3319e304e86e81",
+        "size": 4457,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ffc277095904492ef215c89b7e3319e304e86e81"
+      },
+      {
+        "path": "configs/exp/trading/GOOGL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3122a8991341a9f97a77b71f520d97cdb58a10e4",
+        "size": 4540,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3122a8991341a9f97a77b71f520d97cdb58a10e4"
+      },
+      {
+        "path": "configs/exp/trading/MSFT.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4fbf1e9d07e06276fafa132d86dfd2fdde642328",
+        "size": 4539,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/4fbf1e9d07e06276fafa132d86dfd2fdde642328"
+      },
+      {
+        "path": "configs/exp/trading/TSLA.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "996ade1e893c7fdb19eb3a94d4c40f85c98d0ee2",
+        "size": 4539,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/996ade1e893c7fdb19eb3a94d4c40f85c98d0ee2"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f4947569a51e4e7d0fde48f09b83fab187b6a0c4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/f4947569a51e4e7d0fde48f09b83fab187b6a0c4"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_decision/AAPL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7614bdbbdaa224f35f92fdc7e66c579b9210d4eb",
+        "size": 3481,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7614bdbbdaa224f35f92fdc7e66c579b9210d4eb"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_decision/AMZN.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c6e176d3d5b33b5f9407fb0a2f914e564aa137e0",
+        "size": 3481,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c6e176d3d5b33b5f9407fb0a2f914e564aa137e0"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_decision/ETHUSD.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "13306f683c79b2663dfcbf7036dead5cb54222e6",
+        "size": 3399,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/13306f683c79b2663dfcbf7036dead5cb54222e6"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_decision/GOOGL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261bab13c2ac9259ddeb6d9b2cbe370d949cfb49",
+        "size": 3482,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/261bab13c2ac9259ddeb6d9b2cbe370d949cfb49"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_decision/MSFT.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e80ec7104ac516aa2e3bc86f2bcaaf3f48ec7c0e",
+        "size": 3481,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/e80ec7104ac516aa2e3bc86f2bcaaf3f48ec7c0e"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_decision/TSLA.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "748a6d6090b4afa8f207f0ffb2fe1b9e22b2da16",
+        "size": 3481,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/748a6d6090b4afa8f207f0ffb2fe1b9e22b2da16"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "15c3ed268b22ca0bd867e714e948b1672e230fc5",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/15c3ed268b22ca0bd867e714e948b1672e230fc5"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_decision/AAPL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d94c89ed03e7bd57971ed271d1847cad248691be",
+        "size": 4329,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d94c89ed03e7bd57971ed271d1847cad248691be"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_decision/AMZN.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "55bc5782962814fa29b6f3e0cc1c49ff164b53a9",
+        "size": 4329,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/55bc5782962814fa29b6f3e0cc1c49ff164b53a9"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_decision/ETHUSD.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ae48c91dda2707ffc7003656330a7ba5016bcf22",
+        "size": 4247,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ae48c91dda2707ffc7003656330a7ba5016bcf22"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_decision/GOOGL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ba6fb37fcab6f488b1568d1b8603889c5b551756",
+        "size": 4330,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ba6fb37fcab6f488b1568d1b8603889c5b551756"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_decision/MSFT.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "88ce6e6069f6625b1f7fefe5e00677b08ca2931e",
+        "size": 4329,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/88ce6e6069f6625b1f7fefe5e00677b08ca2931e"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_decision/TSLA.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "46657062ce6c34b70bb6806bc5ddd5d3ad15fd4f",
+        "size": 4329,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/46657062ce6c34b70bb6806bc5ddd5d3ad15fd4f"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5bf78b3b9cc9dadc05796f3f0d032f357caf840c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5bf78b3b9cc9dadc05796f3f0d032f357caf840c"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_decision/AAPL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6562ca8ceebedd0d1dc6967f9d6dcb3db8d42425",
+        "size": 4836,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6562ca8ceebedd0d1dc6967f9d6dcb3db8d42425"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_decision/AMZN.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ac20c5a12ce5aaab71cc9e6ceef933c0d77d0cfd",
+        "size": 4836,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ac20c5a12ce5aaab71cc9e6ceef933c0d77d0cfd"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_decision/ETHUSD.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5cd7666f6112c744f507f1c5f1cc71aa3c63a129",
+        "size": 4698,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5cd7666f6112c744f507f1c5f1cc71aa3c63a129"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_decision/GOOGL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f67abbbdece149fae3ecc607cfa05555cb370881",
+        "size": 4837,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f67abbbdece149fae3ecc607cfa05555cb370881"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_decision/MSFT.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eaed82ed37dc6f707e30c02e799ab32976931e19",
+        "size": 4836,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/eaed82ed37dc6f707e30c02e799ab32976931e19"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_decision/TSLA.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2007a3c7d3bf1c2573bdc3d3a0f2afb55446d6bc",
+        "size": 4836,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/2007a3c7d3bf1c2573bdc3d3a0f2afb55446d6bc"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_tool_w_decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c68dc4a1ca746b5150678aca19267a347f11202d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/c68dc4a1ca746b5150678aca19267a347f11202d"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_tool_w_decision/AAPL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "962adf771b449a9bafa70c3165c0ca663b81804a",
+        "size": 4913,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/962adf771b449a9bafa70c3165c0ca663b81804a"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_tool_w_decision/AMZN.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "73a48304cc184c38322344155dada332a5d7ffa1",
+        "size": 4843,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/73a48304cc184c38322344155dada332a5d7ffa1"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_tool_w_decision/ETHUSD.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a872c7ab4bebd259796488faf1a92bc649f5a2b7",
+        "size": 4705,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a872c7ab4bebd259796488faf1a92bc649f5a2b7"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_tool_w_decision/GOOGL.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f01307d5eb400fc8f66fccc1636d6d670fb38602",
+        "size": 4844,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f01307d5eb400fc8f66fccc1636d6d670fb38602"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_tool_w_decision/MSFT.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b8f34c1c07513d5f013f5314a2aeb85c3aa8cf91",
+        "size": 4843,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b8f34c1c07513d5f013f5314a2aeb85c3aa8cf91"
+      },
+      {
+        "path": "configs/exp/trading_mi_w_low_w_high_w_tool_w_decision/TSLA.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9863416c7f594bc5ec3db0d6928ab9710b396b2e",
+        "size": 4843,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9863416c7f594bc5ec3db0d6928ab9710b396b2e"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7b2ff75b9f3f901fc534dc433d85d9e81a4ecda9",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/7b2ff75b9f3f901fc534dc433d85d9e81a4ecda9"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record/AAPL_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c437ca4c2f7fc6fcfe10188d702699985be6c1ef",
+        "size": 4743,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c437ca4c2f7fc6fcfe10188d702699985be6c1ef"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record/AMZN_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3c1cc82323f7b2ed4442a114b67b8a699ac21a92",
+        "size": 4743,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3c1cc82323f7b2ed4442a114b67b8a699ac21a92"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record/ETHUSD_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44e424e61a69723448ee73702da224b9e5cce544",
+        "size": 4661,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/44e424e61a69723448ee73702da224b9e5cce544"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record/GOOGL_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "32803c37825a979b26ffb00d6e1d2d78abd907e9",
+        "size": 4744,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/32803c37825a979b26ffb00d6e1d2d78abd907e9"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record/MSFT_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6ccd53938db9447cd93f6b29e143c17b6bdee4e7",
+        "size": 4742,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6ccd53938db9447cd93f6b29e143c17b6bdee4e7"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record/TSLA_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5fe81d7f0d1b9ef771733e1c0d4a0b0cb90a10e5",
+        "size": 4742,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5fe81d7f0d1b9ef771733e1c0d4a0b0cb90a10e5"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record_without_MACD",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3d045c225daeee7c192534f41dcb127f4ebc29a8",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/3d045c225daeee7c192534f41dcb127f4ebc29a8"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record_without_MACD/AAPL_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ef14585cbc5dbb7b6d7ab31e713c5a8fb18190b2",
+        "size": 4769,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ef14585cbc5dbb7b6d7ab31e713c5a8fb18190b2"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record_without_MACD/AMZN_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b726e1c5ef63c8d9f5e3248cb9d518d6ebdd27ec",
+        "size": 4769,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b726e1c5ef63c8d9f5e3248cb9d518d6ebdd27ec"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record_without_MACD/ETHUSD_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d47a664a04d24920305e5aa7b9fc60d261189734",
+        "size": 4689,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d47a664a04d24920305e5aa7b9fc60d261189734"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record_without_MACD/GOOGL_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc2403004909882ea520bf1736b198f616ef75df",
+        "size": 4770,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fc2403004909882ea520bf1736b198f616ef75df"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record_without_MACD/MSFT_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "97e368d1cd7d8577f2843583748ceee20a068601",
+        "size": 4769,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/97e368d1cd7d8577f2843583748ceee20a068601"
+      },
+      {
+        "path": "configs/exp/trading_only_strategy_with_record_without_MACD/TSLA_only_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f909bcf7ab9bbafc827a34522c852e7fe019a556",
+        "size": 4769,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f909bcf7ab9bbafc827a34522c852e7fe019a556"
+      },
+      {
+        "path": "configs/openai_config.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c8d9e7dcefbd9d7640fcb69b03180776caefbabb",
+        "size": 131,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c8d9e7dcefbd9d7640fcb69b03180776caefbabb"
+      },
+      {
+        "path": "configs/processor",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "bd3508ae516d8f3930fcabb9eb27166a736b2dcf",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/bd3508ae516d8f3930fcabb9eb27166a736b2dcf"
+      },
+      {
+        "path": "configs/processor/processor_day_dj30.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "13537959e6c2613e2f1988675df3bf3f01fe209e",
+        "size": 790,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/13537959e6c2613e2f1988675df3bf3f01fe209e"
+      },
+      {
+        "path": "configs/processor/processor_day_exp_cryptos.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9984df6b48fb950dfa8da786edb57db7a9fc0d18",
+        "size": 663,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9984df6b48fb950dfa8da786edb57db7a9fc0d18"
+      },
+      {
+        "path": "configs/processor/processor_day_exp_forexs.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5402e3403694ef0571e85d749d911c0e4dc4db68",
+        "size": 659,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5402e3403694ef0571e85d749d911c0e4dc4db68"
+      },
+      {
+        "path": "configs/processor/processor_day_exp_stocks.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d4c561ef04132c924e8690d87437a11f274b9e82",
+        "size": 1238,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d4c561ef04132c924e8690d87437a11f274b9e82"
+      },
+      {
+        "path": "finagent",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b521e483913fa8e4c5ab5a2a791f8a860ab572c2",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/b521e483913fa8e4c5ab5a2a791f8a860ab572c2"
+      },
+      {
+        "path": "finagent/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "size": 0,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "finagent/asset",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "63d47e3bb474b138da0bd2a8656e78a287da732d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/63d47e3bb474b138da0bd2a8656e78a287da732d"
+      },
+      {
+        "path": "finagent/asset/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2fe7ef57293a1522007c64d135e11091d51c5742",
+        "size": 23,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/2fe7ef57293a1522007c64d135e11091d51c5742"
+      },
+      {
+        "path": "finagent/asset/base.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a54319b4912054c07da670c5deab45801d9b1424",
+        "size": 2789,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a54319b4912054c07da670c5deab45801d9b1424"
+      },
+      {
+        "path": "finagent/data",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9fb332240853ee9682a06f903210c389bd37ebe7",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/9fb332240853ee9682a06f903210c389bd37ebe7"
+      },
+      {
+        "path": "finagent/data/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9c402850d680372bc6492849dde6aeefb2770864",
+        "size": 58,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9c402850d680372bc6492849dde6aeefb2770864"
+      },
+      {
+        "path": "finagent/data/base.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "78b86ee9768cf6e42114d3faa2b2141cb764bee8",
+        "size": 404,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/78b86ee9768cf6e42114d3faa2b2141cb764bee8"
+      },
+      {
+        "path": "finagent/data/dataset.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "02d09aba25d16487caf9b77451126d23e20bf7d5",
+        "size": 6710,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/02d09aba25d16487caf9b77451126d23e20bf7d5"
+      },
+      {
+        "path": "finagent/downloader",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "27b7b8953e399df1e5a4a4767020b441c45b9c7c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/27b7b8953e399df1e5a4a4767020b441c45b9c7c"
+      },
+      {
+        "path": "finagent/downloader/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ae3c1f5b9c9d1a64955c1fb4337eef032e32445b",
+        "size": 751,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ae3c1f5b9c9d1a64955c1fb4337eef032e32445b"
+      },
+      {
+        "path": "finagent/downloader/custom.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ba1ae81e6b358b63674833402165d506b4a53fcd",
+        "size": 3132,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ba1ae81e6b358b63674833402165d506b4a53fcd"
+      },
+      {
+        "path": "finagent/downloader/news",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "588c9dac65d0841feb7e2e518b0db4c05d9acdcd",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/588c9dac65d0841feb7e2e518b0db4c05d9acdcd"
+      },
+      {
+        "path": "finagent/downloader/news/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "74948da86ec3dd6a67c748067fc788bcc86ee605",
+        "size": 271,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/74948da86ec3dd6a67c748067fc788bcc86ee605"
+      },
+      {
+        "path": "finagent/downloader/news/fmp_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3711d561497f50ee46ef15dcee24444918d3275b",
+        "size": 6598,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3711d561497f50ee46ef15dcee24444918d3275b"
+      },
+      {
+        "path": "finagent/downloader/news/polygon_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e3cf90dcd8871b9edd56ff632f9d717558202992",
+        "size": 7736,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/e3cf90dcd8871b9edd56ff632f9d717558202992"
+      },
+      {
+        "path": "finagent/downloader/news/yahoofinance_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9927bee210acda767fee01762d4e15c9be7f6977",
+        "size": 5326,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9927bee210acda767fee01762d4e15c9be7f6977"
+      },
+      {
+        "path": "finagent/downloader/prices",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "28185bdbae9eb50c371748a83e69b4a5e254f22e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/28185bdbae9eb50c371748a83e69b4a5e254f22e"
+      },
+      {
+        "path": "finagent/downloader/prices/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a1d53bcc6e9e9cea4e628b7f12a5fda2f9d19c4c",
+        "size": 187,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a1d53bcc6e9e9cea4e628b7f12a5fda2f9d19c4c"
+      },
+      {
+        "path": "finagent/downloader/prices/fmp_day_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4bd0817692151cf4965fa8becb9a98e3fb561700",
+        "size": 7824,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/4bd0817692151cf4965fa8becb9a98e3fb561700"
+      },
+      {
+        "path": "finagent/downloader/prices/polygon_day_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bf2a00369c65a30ee15ce0bb3f3415938b0b6699",
+        "size": 6730,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/bf2a00369c65a30ee15ce0bb3f3415938b0b6699"
+      },
+      {
+        "path": "finagent/downloader/prices/yahoofinance_day_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "af4e92d94dab290bfc1909d3e0066c53c3af3b31",
+        "size": 4878,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/af4e92d94dab290bfc1909d3e0066c53c3af3b31"
+      },
+      {
+        "path": "finagent/downloader/tools",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b98ad63d2ccb203749cf1b4f8921615030cec77d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/b98ad63d2ccb203749cf1b4f8921615030cec77d"
+      },
+      {
+        "path": "finagent/downloader/tools/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cf41027f1103fb51bb71857b8e8922032365be81",
+        "size": 171,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/cf41027f1103fb51bb71857b8e8922032365be81"
+      },
+      {
+        "path": "finagent/downloader/tools/fmp_economic_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "61de53fedcde4952ffc9c2cbfa6832c39ba2bae6",
+        "size": 4563,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/61de53fedcde4952ffc9c2cbfa6832c39ba2bae6"
+      },
+      {
+        "path": "finagent/downloader/tools/fmp_sentiment_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "565e849e53478b0532d779630e8e14f9c94198e0",
+        "size": 6463,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/565e849e53478b0532d779630e8e14f9c94198e0"
+      },
+      {
+        "path": "finagent/downloader/tools/rapidapi_downloader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a73d020ccc9638fb3f9cf3803fdde911fc99b124",
+        "size": 5498,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a73d020ccc9638fb3f9cf3803fdde911fc99b124"
+      },
+      {
+        "path": "finagent/environment",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fd6ad8d7607e336c91fd05647510d3f42d34635e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/fd6ad8d7607e336c91fd05647510d3f42d34635e"
+      },
+      {
+        "path": "finagent/environment/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "16b8772e939081e9fee8f082676f7cd600746cb6",
+        "size": 39,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/16b8772e939081e9fee8f082676f7cd600746cb6"
+      },
+      {
+        "path": "finagent/environment/trading.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6f106e3cf4d004f6d65432962c5c05081e0e575c",
+        "size": 13126,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6f106e3cf4d004f6d65432962c5c05081e0e575c"
+      },
+      {
+        "path": "finagent/memory",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9ef27406088b587befb5cfcc0f1385b9fbdef843",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/9ef27406088b587befb5cfcc0f1385b9fbdef843"
+      },
+      {
+        "path": "finagent/memory/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "adfae8ec52e7d32cd21da9c6fa510d46ee5c974f",
+        "size": 251,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/adfae8ec52e7d32cd21da9c6fa510d46ee5c974f"
+      },
+      {
+        "path": "finagent/memory/base.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b04d9e32067298d7930274e0cea5f610146c620b",
+        "size": 2495,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b04d9e32067298d7930274e0cea5f610146c620b"
+      },
+      {
+        "path": "finagent/memory/basic_memory.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "22a00551f29b50113c4c4ff7eafcd6d71243a81a",
+        "size": 2920,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/22a00551f29b50113c4c4ff7eafcd6d71243a81a"
+      },
+      {
+        "path": "finagent/memory/faiss.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "50f4e721c4e1752556fdd3639704d2f6a99044d3",
+        "size": 6452,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/50f4e721c4e1752556fdd3639704d2f6a99044d3"
+      },
+      {
+        "path": "finagent/memory/interface.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d9d837eaca709db9aecd6a53a0e11b4e6d59f7c6",
+        "size": 9693,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d9d837eaca709db9aecd6a53a0e11b4e6d59f7c6"
+      },
+      {
+        "path": "finagent/metrics",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "10346bc4165e0bfce40c8fef8db0070534ada280",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/10346bc4165e0bfce40c8fef8db0070534ada280"
+      },
+      {
+        "path": "finagent/metrics/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3d0bfe718058ecb11049f565b278bbb04964b18f",
+        "size": 171,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3d0bfe718058ecb11049f565b278bbb04964b18f"
+      },
+      {
+        "path": "finagent/metrics/metrics.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "c3e02e4c3d5f091a14b32932bb5860f70110acaf",
+        "size": 737,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c3e02e4c3d5f091a14b32932bb5860f70110acaf"
+      },
+      {
+        "path": "finagent/plots",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c9a66633e8ca693504f2311e5718d48b257f36a9",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/c9a66633e8ca693504f2311e5718d48b257f36a9"
+      },
+      {
+        "path": "finagent/plots/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b726da12076d59fd250e41632637c696e70e4c2e",
+        "size": 101,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b726da12076d59fd250e41632637c696e70e4c2e"
+      },
+      {
+        "path": "finagent/plots/interface.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0276766254b28ed9c2668b07081eef37abc23a21",
+        "size": 3061,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/0276766254b28ed9c2668b07081eef37abc23a21"
+      },
+      {
+        "path": "finagent/plots/kline.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1e7d1e6ace93fd06ae266450a661e8bb7ef8e252",
+        "size": 8170,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/1e7d1e6ace93fd06ae266450a661e8bb7ef8e252"
+      },
+      {
+        "path": "finagent/plots/trading.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "df4e2d23243b28898a01607aa6255e00bffced11",
+        "size": 4225,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/df4e2d23243b28898a01607aa6255e00bffced11"
+      },
+      {
+        "path": "finagent/processor",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f79082815299e9aaf6822b10af10c704e9887b6b",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/f79082815299e9aaf6822b10af10c704e9887b6b"
+      },
+      {
+        "path": "finagent/processor/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "48b8af54734aac1a91526a1180cdac02005dc10d",
+        "size": 32,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/48b8af54734aac1a91526a1180cdac02005dc10d"
+      },
+      {
+        "path": "finagent/processor/processor.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6939e872958f682b5174e6326c48a527d1918387",
+        "size": 25446,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6939e872958f682b5174e6326c48a527d1918387"
+      },
+      {
+        "path": "finagent/prompt",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "675996e2641b5e69772a99bd14f1f3c72cb00b26",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/675996e2641b5e69772a99bd14f1f3c72cb00b26"
+      },
+      {
+        "path": "finagent/prompt/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cf821588c5b9fa351ffd8a1e3efe5fe615eb8072",
+        "size": 405,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/cf821588c5b9fa351ffd8a1e3efe5fe615eb8072"
+      },
+      {
+        "path": "finagent/prompt/custom.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5bd3d35c0e23c83887e1e88cbcc28b440ce93f05",
+        "size": 4162,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5bd3d35c0e23c83887e1e88cbcc28b440ce93f05"
+      },
+      {
+        "path": "finagent/prompt/helper.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c8c90ca23305e8c9cdacb5c7356237a37c8733da",
+        "size": 17511,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c8c90ca23305e8c9cdacb5c7356237a37c8733da"
+      },
+      {
+        "path": "finagent/prompt/trading",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "bc2a0906cec264fe3a8c1205515abe63e6268140",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/bc2a0906cec264fe3a8c1205515abe63e6268140"
+      },
+      {
+        "path": "finagent/prompt/trading/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3bcb2ee1665227499fba9d3873ecce8ec381f314",
+        "size": 524,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3bcb2ee1665227499fba9d3873ecce8ec381f314"
+      },
+      {
+        "path": "finagent/prompt/trading/decision.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c20ecf6b5ecf6ecbd786354eedf1ce3c641e5ba8",
+        "size": 5626,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c20ecf6b5ecf6ecbd786354eedf1ce3c641e5ba8"
+      },
+      {
+        "path": "finagent/prompt/trading/high_level_reflection.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "67088c179b892d4a98ed3562a6359781124eba3c",
+        "size": 7458,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/67088c179b892d4a98ed3562a6359781124eba3c"
+      },
+      {
+        "path": "finagent/prompt/trading/latest_market_intelligence_summary.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c27d77d19f3e948a644309e7bb0fd5b414c6cd96",
+        "size": 9544,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c27d77d19f3e948a644309e7bb0fd5b414c6cd96"
+      },
+      {
+        "path": "finagent/prompt/trading/low_level_reflection.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "29df4e14388bbb9fecb1d8c8e5f2c5b633cdf294",
+        "size": 10001,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/29df4e14388bbb9fecb1d8c8e5f2c5b633cdf294"
+      },
+      {
+        "path": "finagent/prompt/trading/past_market_intelligence_summary.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "df4acdf35d9c5e0304630eabf903a1b60245d08c",
+        "size": 4979,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/df4acdf35d9c5e0304630eabf903a1b60245d08c"
+      },
+      {
+        "path": "finagent/provider",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "83e71cebe1f203684e185aaa008dffd7b04c7ea9",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/83e71cebe1f203684e185aaa008dffd7b04c7ea9"
+      },
+      {
+        "path": "finagent/provider/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8bbe8183f2f8ac522c16ce233cefcec4b06c6cc9",
+        "size": 198,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/8bbe8183f2f8ac522c16ce233cefcec4b06c6cc9"
+      },
+      {
+        "path": "finagent/provider/base_embedding.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5fc978768f618d71e96c132ef9fb5b2b0b394260",
+        "size": 545,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5fc978768f618d71e96c132ef9fb5b2b0b394260"
+      },
+      {
+        "path": "finagent/provider/base_llm.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1be8f48d4d56b296c562eb1c9ac0b028a85e9bd4",
+        "size": 920,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/1be8f48d4d56b296c562eb1c9ac0b028a85e9bd4"
+      },
+      {
+        "path": "finagent/provider/provider.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d4070baa747b9caa7a8bf1bcb75436e9c7663cdf",
+        "size": 15031,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d4070baa747b9caa7a8bf1bcb75436e9c7663cdf"
+      },
+      {
+        "path": "finagent/query",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0e63f7bed1d1f04920b04dffca580a5f1ae895cb",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/0e63f7bed1d1f04920b04dffca580a5f1ae895cb"
+      },
+      {
+        "path": "finagent/query/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fb8a351ae7d248a328872b570a15c2ff66f0a6b6",
+        "size": 120,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fb8a351ae7d248a328872b570a15c2ff66f0a6b6"
+      },
+      {
+        "path": "finagent/query/diverse_query.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eaa5d28ae4d05df301144637d5aa4985f78b43d5",
+        "size": 1883,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/eaa5d28ae4d05df301144637d5aa4985f78b43d5"
+      },
+      {
+        "path": "finagent/query/query_types.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "11037d7750e24ff9d992f57228f2a4d7277d7a83",
+        "size": 1461,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/11037d7750e24ff9d992f57228f2a4d7277d7a83"
+      },
+      {
+        "path": "finagent/registry.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "434d64cb31f9aa16fed42d3fe44c9daeecf518a5",
+        "size": 602,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/434d64cb31f9aa16fed42d3fe44c9daeecf518a5"
+      },
+      {
+        "path": "finagent/tools",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "298f088f1b3c32ab6f8283e2587197f8038aa377",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/298f088f1b3c32ab6f8283e2587197f8038aa377"
+      },
+      {
+        "path": "finagent/tools/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d172afaf72349411a230fbd940a402e8f03e6d69",
+        "size": 77,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d172afaf72349411a230fbd940a402e8f03e6d69"
+      },
+      {
+        "path": "finagent/tools/rapid_apis.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "973ce636c8b8238bbaf6ee3502637d845d24486f",
+        "size": 5441,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/973ce636c8b8238bbaf6ee3502637d845d24486f"
+      },
+      {
+        "path": "finagent/tools/strategy_agents.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f73b96bc8d02d246b1b4a9ce64052f268657db40",
+        "size": 24385,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f73b96bc8d02d246b1b4a9ce64052f268657db40"
+      },
+      {
+        "path": "finagent/trajectory",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e2593768e136c832375043017d8314fed71b3715",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/e2593768e136c832375043017d8314fed71b3715"
+      },
+      {
+        "path": "finagent/trajectory/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c1adefc494199a7742eabfc091d3282fd96d5678",
+        "size": 56,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c1adefc494199a7742eabfc091d3282fd96d5678"
+      },
+      {
+        "path": "finagent/trajectory/dynamic_programming.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6ad155ce802557361444e1cd2cf79ac8d48260d4",
+        "size": 7911,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6ad155ce802557361444e1cd2cf79ac8d48260d4"
+      },
+      {
+        "path": "finagent/trajectory/dynamic_programming_threshold.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a8708c3e88827c650c82e30013e000e3134e1890",
+        "size": 13008,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a8708c3e88827c650c82e30013e000e3134e1890"
+      },
+      {
+        "path": "finagent/utils",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "10bdfea0e35ce916bcb9dc1d0d92bf68832cee0a",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/10bdfea0e35ce916bcb9dc1d0d92bf68832cee0a"
+      },
+      {
+        "path": "finagent/utils/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "641d103a28aef672d2caea90c4e63a1416e9746c",
+        "size": 346,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/641d103a28aef672d2caea90c4e63a1416e9746c"
+      },
+      {
+        "path": "finagent/utils/file_utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9ce64a95cb0dfb381396bea9f39a4ce001c368c6",
+        "size": 1145,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9ce64a95cb0dfb381396bea9f39a4ce001c368c6"
+      },
+      {
+        "path": "finagent/utils/get_proxy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f703904d5190172f3e6798e7ba9c3aeccb21077a",
+        "size": 4727,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f703904d5190172f3e6798e7ba9c3aeccb21077a"
+      },
+      {
+        "path": "finagent/utils/json_utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6a779d8c68cabf66d97eba5a9148b4570122b30b",
+        "size": 3862,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6a779d8c68cabf66d97eba5a9148b4570122b30b"
+      },
+      {
+        "path": "finagent/utils/misc.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "65b47eb1ca105acd810b7dcc7cc2c9cc408f6154",
+        "size": 4585,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/65b47eb1ca105acd810b7dcc7cc2c9cc408f6154"
+      },
+      {
+        "path": "finagent/utils/singleton.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e4b1a171c065dbb3d5d5e1c34f58485d406b5dc",
+        "size": 630,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6e4b1a171c065dbb3d5d5e1c34f58485d406b5dc"
+      },
+      {
+        "path": "finagent/utils/utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "aaf5636835148ed7dae9e6cd027af67a89fea194",
+        "size": 160,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/aaf5636835148ed7dae9e6cd027af67a89fea194"
+      },
+      {
+        "path": "requirements.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5467ba6fd80463dae907a1f787df155e9a318a17",
+        "size": 280,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5467ba6fd80463dae907a1f787df155e9a318a17"
+      },
+      {
+        "path": "res",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "329ae8d56a1283354855ef9871568d0453260ac5",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/329ae8d56a1283354855ef9871568d0453260ac5"
+      },
+      {
+        "path": "res/prompts",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6c65d86caf1c4a1254c9f2225ea256da7791ac25",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/6c65d86caf1c4a1254c9f2225ea256da7791ac25"
+      },
+      {
+        "path": "res/prompts/asset_infos",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "eb141b6e4be46f060a3ed3fdca13e95ffef00044",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/eb141b6e4be46f060a3ed3fdca13e95ffef00044"
+      },
+      {
+        "path": "res/prompts/asset_infos/dj30.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eb667d267ace87a6cdb35cc80186d410694ec43d",
+        "size": 81093,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/eb667d267ace87a6cdb35cc80186d410694ec43d"
+      },
+      {
+        "path": "res/prompts/asset_infos/exp_cryptos.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1287cc38c22a39bfc1fcbeb5810f3456d05e7944",
+        "size": 1285,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/1287cc38c22a39bfc1fcbeb5810f3456d05e7944"
+      },
+      {
+        "path": "res/prompts/asset_infos/exp_forexs.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ab4019d0f3cf40af5a0408ac18361d4bd9afaf7d",
+        "size": 1180,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ab4019d0f3cf40af5a0408ac18361d4bd9afaf7d"
+      },
+      {
+        "path": "res/prompts/asset_infos/exp_stocks.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0b046251d07eca1391645cfc9c4172e0a7c958bc",
+        "size": 13330,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/0b046251d07eca1391645cfc9c4172e0a7c958bc"
+      },
+      {
+        "path": "res/prompts/module",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3e00b9f16ecc3a6951077e5b0a0438f38bc0dbc3",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/3e00b9f16ecc3a6951077e5b0a0438f38bc0dbc3"
+      },
+      {
+        "path": "res/prompts/module/trading",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8ecf3709bfab59185f115b11b1d7a807ed880c03",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/8ecf3709bfab59185f115b11b1d7a807ed880c03"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_guidance_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "111000b6f880e0a054b500afd14a34c9abfd04eb",
+        "size": 196,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/111000b6f880e0a054b500afd14a34c9abfd04eb"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_output_format_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7c00278b9782cc1a5ff1f4b711028068cb649b17",
+        "size": 460,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7c00278b9782cc1a5ff1f4b711028068cb649b17"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_prompt_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6f32e3ac497a641604575f52513fb5cdddb93780",
+        "size": 3787,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6f32e3ac497a641604575f52513fb5cdddb93780"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_prompt_trading_only_strategy.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "48febd9926e5c71075eba1c65bac187a629895f1",
+        "size": 3854,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/48febd9926e5c71075eba1c65bac187a629895f1"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_prompt_trading_strategy_with_plot.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c2804df6531fa2fd468f1cbccd7faad7a0f609d9",
+        "size": 3232,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c2804df6531fa2fd468f1cbccd7faad7a0f609d9"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_state_description_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "99fc00828c87c3491d68787c6a356637d8148b7d",
+        "size": 358,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/99fc00828c87c3491d68787c6a356637d8148b7d"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_strategy_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8391b682175f12200c07f2a0d27e3c405b028580",
+        "size": 2488,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/8391b682175f12200c07f2a0d27e3c405b028580"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_strategy_trading_with_record.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d17b21c316c44f580cfce5bb371209a5b0609a27",
+        "size": 3364,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d17b21c316c44f580cfce5bb371209a5b0609a27"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_task_description_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f295cda64b08089720dc4e9a2c53db98b3938609",
+        "size": 800,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f295cda64b08089720dc4e9a2c53db98b3938609"
+      },
+      {
+        "path": "res/prompts/module/trading/decision_trader_preference_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "00fb89def9780aab51a82f18277da8622ad7ebfb",
+        "size": 91,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/00fb89def9780aab51a82f18277da8622ad7ebfb"
+      },
+      {
+        "path": "res/prompts/module/trading/high_level_reflection_effects_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dd04541b58309e95bd79f63e7c120b62da1b43a1",
+        "size": 345,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/dd04541b58309e95bd79f63e7c120b62da1b43a1"
+      },
+      {
+        "path": "res/prompts/module/trading/high_level_reflection_output_format_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e7af9b9b50dc2c36989adb90996d30227c55518b",
+        "size": 606,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/e7af9b9b50dc2c36989adb90996d30227c55518b"
+      },
+      {
+        "path": "res/prompts/module/trading/high_level_reflection_prompt_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "137bcc9d3ce4053b62ae9d4afce692add220f4d5",
+        "size": 2009,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/137bcc9d3ce4053b62ae9d4afce692add220f4d5"
+      },
+      {
+        "path": "res/prompts/module/trading/high_level_reflection_task_description_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "548cea98b77190cd4fc282df0f1950cca40db0e2",
+        "size": 815,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/548cea98b77190cd4fc282df0f1950cca40db0e2"
+      },
+      {
+        "path": "res/prompts/module/trading/high_level_reflection_trading_chart_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cd0d1bc34c9e78e50137811e81ee23132e1cbcf3",
+        "size": 1306,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/cd0d1bc34c9e78e50137811e81ee23132e1cbcf3"
+      },
+      {
+        "path": "res/prompts/module/trading/low_level_reflection_effects_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a5d74d5bc095a5e1d3c448d3f4d0417dfe52e0da",
+        "size": 817,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a5d74d5bc095a5e1d3c448d3f4d0417dfe52e0da"
+      },
+      {
+        "path": "res/prompts/module/trading/low_level_reflection_kline_chart_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ba43d809f83caa257fc30c9d75ee021d603404a7",
+        "size": 1816,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ba43d809f83caa257fc30c9d75ee021d603404a7"
+      },
+      {
+        "path": "res/prompts/module/trading/low_level_reflection_output_format_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7c0580a8521e7aa2fa131252bd224c9b266c2cb6",
+        "size": 802,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7c0580a8521e7aa2fa131252bd224c9b266c2cb6"
+      },
+      {
+        "path": "res/prompts/module/trading/low_level_reflection_price_change_description_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "83c967a58bb046cf29f0963a585a2b39814286e0",
+        "size": 921,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/83c967a58bb046cf29f0963a585a2b39814286e0"
+      },
+      {
+        "path": "res/prompts/module/trading/low_level_reflection_price_change_description_with_next_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2778289afb4dccf100be72f19f6e9bb581674625",
+        "size": 1262,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/2778289afb4dccf100be72f19f6e9bb581674625"
+      },
+      {
+        "path": "res/prompts/module/trading/low_level_reflection_prompt_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "613da019fd1ecaaac135d11ea80b760e6147e8d2",
+        "size": 2225,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/613da019fd1ecaaac135d11ea80b760e6147e8d2"
+      },
+      {
+        "path": "res/prompts/module/trading/low_level_reflection_prompt_with_next_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d069ceffbc4a2a753fefa71a61741873e50ba20e",
+        "size": 2229,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d069ceffbc4a2a753fefa71a61741873e50ba20e"
+      },
+      {
+        "path": "res/prompts/module/trading/low_level_reflection_task_description_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0bb28e6a24e42dd86c9c07fa9882e9fb60c76ec4",
+        "size": 800,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/0bb28e6a24e42dd86c9c07fa9882e9fb60c76ec4"
+      },
+      {
+        "path": "res/prompts/module/trading/market_intelligence_effects_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1b51322585747e54d21f9fa8f5a87536b127955b",
+        "size": 2930,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/1b51322585747e54d21f9fa8f5a87536b127955b"
+      },
+      {
+        "path": "res/prompts/module/trading/market_intelligence_latest_summary_output_format_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "112eb99819a74afc5fbeb03e7e42242bfdbbccf3",
+        "size": 929,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/112eb99819a74afc5fbeb03e7e42242bfdbbccf3"
+      },
+      {
+        "path": "res/prompts/module/trading/market_intelligence_latest_summary_prompt_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "717c06577b10da36d1201e9e1dab1023532711eb",
+        "size": 3819,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/717c06577b10da36d1201e9e1dab1023532711eb"
+      },
+      {
+        "path": "res/prompts/module/trading/market_intelligence_past_summary_output_format_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6119e0f4a248de6c7f566159fa4199803a54f721",
+        "size": 505,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6119e0f4a248de6c7f566159fa4199803a54f721"
+      },
+      {
+        "path": "res/prompts/module/trading/market_intelligence_past_summary_prompt_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a253f9026fe8799a8368afaaf67d989a1888f97d",
+        "size": 2622,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a253f9026fe8799a8368afaaf67d989a1888f97d"
+      },
+      {
+        "path": "res/prompts/module/trading/market_intelligence_task_description_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7b0b652f998b547d631fe4d19996b002de249615",
+        "size": 832,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7b0b652f998b547d631fe4d19996b002de249615"
+      },
+      {
+        "path": "res/prompts/module/trading/system_content_trading.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "17195f3207e7739ea9a5b2020963b0a3d4a86ba0",
+        "size": 886,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/17195f3207e7739ea9a5b2020963b0a3d4a86ba0"
+      },
+      {
+        "path": "res/prompts/template",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b7df0937209ed1a4580dc8715375a5289ef5028e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/b7df0937209ed1a4580dc8715375a5289ef5028e"
+      },
+      {
+        "path": "res/prompts/template/train",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4d2ad52152393a79909ba7a9550f8ea5a74b3975",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4d2ad52152393a79909ba7a9550f8ea5a74b3975"
+      },
+      {
+        "path": "res/prompts/template/train/trading",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "48e1ecf157e39a4778d93f0433447da7105c33e7",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/48e1ecf157e39a4778d93f0433447da7105c33e7"
+      },
+      {
+        "path": "res/prompts/template/train/trading/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e7b297c693af8c88ca2e3a7e2e657c42217a19c",
+        "size": 2854,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5e7b297c693af8c88ca2e3a7e2e657c42217a19c"
+      },
+      {
+        "path": "res/prompts/template/train/trading/high_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fb2f798ed4d56415dfeba7ed17cf9b71b76134d7",
+        "size": 1855,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fb2f798ed4d56415dfeba7ed17cf9b71b76134d7"
+      },
+      {
+        "path": "res/prompts/template/train/trading/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/train/trading/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bb509bf8f7d698b41419b73eb50be109bb6b18c2",
+        "size": 1469,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/bb509bf8f7d698b41419b73eb50be109bb6b18c2"
+      },
+      {
+        "path": "res/prompts/template/train/trading/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2ba922826101d5071d2b61b30d625ac3e4491397",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/2ba922826101d5071d2b61b30d625ac3e4491397"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-decision/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8727b24d9115cb17870d7a1a7af97c8b0c39c264",
+        "size": 4011,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/8727b24d9115cb17870d7a1a7af97c8b0c39c264"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-decision/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-decision/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "714305cfe117ab2bcce3a938ab78137d44616d2c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/714305cfe117ab2bcce3a938ab78137d44616d2c"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-decision/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7dc7d44d9dbc5480a8fb0071fa8d9181d8c1395b",
+        "size": 5121,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7dc7d44d9dbc5480a8fb0071fa8d9181d8c1395b"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-decision/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-decision/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bb509bf8f7d698b41419b73eb50be109bb6b18c2",
+        "size": 1469,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/bb509bf8f7d698b41419b73eb50be109bb6b18c2"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-decision/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "bf2edf9788953f2353ba32f8b36dc522cce4c23d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/bf2edf9788953f2353ba32f8b36dc522cce4c23d"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-decision/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3a5b09cee62030925de513bc74ca9eb86ba99392",
+        "size": 6572,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3a5b09cee62030925de513bc74ca9eb86ba99392"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-decision/high_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fb2f798ed4d56415dfeba7ed17cf9b71b76134d7",
+        "size": 1855,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fb2f798ed4d56415dfeba7ed17cf9b71b76134d7"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-decision/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-decision/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bb509bf8f7d698b41419b73eb50be109bb6b18c2",
+        "size": 1469,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/bb509bf8f7d698b41419b73eb50be109bb6b18c2"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-decision/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-tool-w-decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "230e02c7c1daa5a841f98c9a339bf52827db8c8e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/230e02c7c1daa5a841f98c9a339bf52827db8c8e"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-tool-w-decision/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f41554016137e3edccfe2f4286dd57b99237e726",
+        "size": 7670,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f41554016137e3edccfe2f4286dd57b99237e726"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-tool-w-decision/high_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fb2f798ed4d56415dfeba7ed17cf9b71b76134d7",
+        "size": 1855,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fb2f798ed4d56415dfeba7ed17cf9b71b76134d7"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-tool-w-decision/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-tool-w-decision/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cb7aaaf108ffbbdd4e458afd8677d70cde945741",
+        "size": 1470,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/cb7aaaf108ffbbdd4e458afd8677d70cde945741"
+      },
+      {
+        "path": "res/prompts/template/train/trading_mi-w-low-w-high-w-tool-w-decision/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/valid",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fbd4ffa623d1b70e408b4302c6dd3c6087c07480",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/fbd4ffa623d1b70e408b4302c6dd3c6087c07480"
+      },
+      {
+        "path": "res/prompts/template/valid/only_strategy_trading",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "154f2c22300693896ad15674db94d88034e6b3d4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/154f2c22300693896ad15674db94d88034e6b3d4"
+      },
+      {
+        "path": "res/prompts/template/valid/only_strategy_trading/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b317cbdec3f1ace5c36270735f4a563703f83f97",
+        "size": 822,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b317cbdec3f1ace5c36270735f4a563703f83f97"
+      },
+      {
+        "path": "res/prompts/template/valid/only_strategy_trading/decision_with_record.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "94f5468ba920dfeb85ad5e0ed42761298d8c1b07",
+        "size": 834,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/94f5468ba920dfeb85ad5e0ed42761298d8c1b07"
+      },
+      {
+        "path": "res/prompts/template/valid/only_strategy_trading/decision_with_record_without_MACD.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ed0b0377245c6b148524549fd6af40cfd9876453",
+        "size": 847,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ed0b0377245c6b148524549fd6af40cfd9876453"
+      },
+      {
+        "path": "res/prompts/template/valid/only_strategy_trading/high_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "70969b83ebcd9ef47fd045f1bf13e84adac061c9",
+        "size": 2027,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/70969b83ebcd9ef47fd045f1bf13e84adac061c9"
+      },
+      {
+        "path": "res/prompts/template/valid/only_strategy_trading/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/valid/only_strategy_trading/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0184bda5039e7e702e79cc054587ea7411b9a6d5",
+        "size": 1377,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/0184bda5039e7e702e79cc054587ea7411b9a6d5"
+      },
+      {
+        "path": "res/prompts/template/valid/only_strategy_trading/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fe4ec533c6dcdfed03dce086a268b648ec72bf5e",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fe4ec533c6dcdfed03dce086a268b648ec72bf5e"
+      },
+      {
+        "path": "res/prompts/template/valid/strategy_trading_with_plot",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "73dd51ff7a120f1958b652398d595e4d798cded0",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/73dd51ff7a120f1958b652398d595e4d798cded0"
+      },
+      {
+        "path": "res/prompts/template/valid/strategy_trading_with_plot/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2cc127fc950e7c54ab1cdf9f4f227dd389600cf4",
+        "size": 902,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/2cc127fc950e7c54ab1cdf9f4f227dd389600cf4"
+      },
+      {
+        "path": "res/prompts/template/valid/strategy_trading_with_plot/high_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "70969b83ebcd9ef47fd045f1bf13e84adac061c9",
+        "size": 2027,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/70969b83ebcd9ef47fd045f1bf13e84adac061c9"
+      },
+      {
+        "path": "res/prompts/template/valid/strategy_trading_with_plot/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/valid/strategy_trading_with_plot/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0184bda5039e7e702e79cc054587ea7411b9a6d5",
+        "size": 1377,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/0184bda5039e7e702e79cc054587ea7411b9a6d5"
+      },
+      {
+        "path": "res/prompts/template/valid/strategy_trading_with_plot/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fe4ec533c6dcdfed03dce086a268b648ec72bf5e",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fe4ec533c6dcdfed03dce086a268b648ec72bf5e"
+      },
+      {
+        "path": "res/prompts/template/valid/trading",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "47c1a6667ddda388b9be714b6f17c5f330a704f3",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/47c1a6667ddda388b9be714b6f17c5f330a704f3"
+      },
+      {
+        "path": "res/prompts/template/valid/trading/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e7b297c693af8c88ca2e3a7e2e657c42217a19c",
+        "size": 2854,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5e7b297c693af8c88ca2e3a7e2e657c42217a19c"
+      },
+      {
+        "path": "res/prompts/template/valid/trading/high_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fb2f798ed4d56415dfeba7ed17cf9b71b76134d7",
+        "size": 1855,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fb2f798ed4d56415dfeba7ed17cf9b71b76134d7"
+      },
+      {
+        "path": "res/prompts/template/valid/trading/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/valid/trading/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d785823558ef930f96e8d4da280f1220b9915e1b",
+        "size": 1449,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d785823558ef930f96e8d4da280f1220b9915e1b"
+      },
+      {
+        "path": "res/prompts/template/valid/trading/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2ba922826101d5071d2b61b30d625ac3e4491397",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/2ba922826101d5071d2b61b30d625ac3e4491397"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-decision/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8727b24d9115cb17870d7a1a7af97c8b0c39c264",
+        "size": 4011,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/8727b24d9115cb17870d7a1a7af97c8b0c39c264"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-decision/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-decision/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c0a136971e7b262586b9b576f709351d56e04087",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/c0a136971e7b262586b9b576f709351d56e04087"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-decision/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7dc7d44d9dbc5480a8fb0071fa8d9181d8c1395b",
+        "size": 5121,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7dc7d44d9dbc5480a8fb0071fa8d9181d8c1395b"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-decision/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-decision/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d785823558ef930f96e8d4da280f1220b9915e1b",
+        "size": 1449,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d785823558ef930f96e8d4da280f1220b9915e1b"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-decision/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b90e31aa749fb62ccd65b17bc151a6f4a7143710",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/b90e31aa749fb62ccd65b17bc151a6f4a7143710"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-decision/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3a5b09cee62030925de513bc74ca9eb86ba99392",
+        "size": 6572,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3a5b09cee62030925de513bc74ca9eb86ba99392"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-decision/high_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fb2f798ed4d56415dfeba7ed17cf9b71b76134d7",
+        "size": 1855,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fb2f798ed4d56415dfeba7ed17cf9b71b76134d7"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-decision/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-decision/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d785823558ef930f96e8d4da280f1220b9915e1b",
+        "size": 1449,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d785823558ef930f96e8d4da280f1220b9915e1b"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-decision/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-tool-w-decision",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a179205695ac3c75ffee27bea2a9bda08935ec8b",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a179205695ac3c75ffee27bea2a9bda08935ec8b"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-tool-w-decision/decision.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bf5f71e318178b07036e21c53584de244fcc01e8",
+        "size": 7575,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/bf5f71e318178b07036e21c53584de244fcc01e8"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-tool-w-decision/high_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fb2f798ed4d56415dfeba7ed17cf9b71b76134d7",
+        "size": 1855,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fb2f798ed4d56415dfeba7ed17cf9b71b76134d7"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-tool-w-decision/latest_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fcb7732e508697a2e8fc910120895046de6b6593",
+        "size": 1264,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fcb7732e508697a2e8fc910120895046de6b6593"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-tool-w-decision/low_level_reflection.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d785823558ef930f96e8d4da280f1220b9915e1b",
+        "size": 1449,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d785823558ef930f96e8d4da280f1220b9915e1b"
+      },
+      {
+        "path": "res/prompts/template/valid/trading_mi-w-low-w-high-w-tool-w-decision/past_market_intelligence_summary.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c4a0aabfa66495bf8966ad25a5661cb45415540d",
+        "size": 1258,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c4a0aabfa66495bf8966ad25a5661cb45415540d"
+      },
+      {
+        "path": "res/prompts/trader",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2af36d2812d5ed928d1a5ca12e1975ea956735df",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/2af36d2812d5ed928d1a5ca12e1975ea956735df"
+      },
+      {
+        "path": "res/prompts/trader/aggressive_trader.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a993f77babdbb98500d2cd5d1f034d3d547f10c7",
+        "size": 279,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a993f77babdbb98500d2cd5d1f034d3d547f10c7"
+      },
+      {
+        "path": "res/prompts/trader/conservative_trader.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "46845ea3f39d4146f1061ff26bc3c6adae316fd2",
+        "size": 241,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/46845ea3f39d4146f1061ff26bc3c6adae316fd2"
+      },
+      {
+        "path": "res/prompts/trader/moderate_trader.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "574b060ef1ee64157e65fb38f557bf888b02dd35",
+        "size": 233,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/574b060ef1ee64157e65fb38f557bf888b02dd35"
+      },
+      {
+        "path": "res/prompts/trader/risk_averse_trader.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "652ba14a154cc86656093e9a17d74df9c1413e97",
+        "size": 240,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/652ba14a154cc86656093e9a17d74df9c1413e97"
+      },
+      {
+        "path": "res/prompts/trader/risk_seeking_trader.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3fd3ca048535353529b076907ce491a56ccd5df5",
+        "size": 248,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3fd3ca048535353529b076907ce491a56ccd5df5"
+      },
+      {
+        "path": "res/prompts/trader/uncertain_trader.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "abdd3f1f5a1001eef2b77df415a125f2a1ea0d82",
+        "size": 217,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/abdd3f1f5a1001eef2b77df415a125f2a1ea0d82"
+      },
+      {
+        "path": "res/strategy_record",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ac8cd5b0c194bdeb8cedb2f0bafa0582e5b587c0",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/ac8cd5b0c194bdeb8cedb2f0bafa0582e5b587c0"
+      },
+      {
+        "path": "res/strategy_record/trading",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "badffa8099d8c1dba5f96a4376111e7d37768e97",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/badffa8099d8c1dba5f96a4376111e7d37768e97"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1c11b1276ebc299f5682c2dd45d297c2b7d27828",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/1c11b1276ebc299f5682c2dd45d297c2b7d27828"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/0",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e6a5ef7f10170afe1350955352bd188635ba1d18",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/e6a5ef7f10170afe1350955352bd188635ba1d18"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/0/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "34ac64af0fe1e896feacab34463b1ab95d48c890",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/34ac64af0fe1e896feacab34463b1ab95d48c890"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/0/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a53393604ee5f32ef5597cb9e84a14c9a1043674",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a53393604ee5f32ef5597cb9e84a14c9a1043674"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/0/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7314fc8480ee0560c0efb1289085c12b2da2f6d0",
+        "size": 218,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7314fc8480ee0560c0efb1289085c12b2da2f6d0"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/0/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a90729b3ee00b1a9e04c03b1cde6acaad4c76f02",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a90729b3ee00b1a9e04c03b1cde6acaad4c76f02"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/0/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+        "size": 2,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/0/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7314fc8480ee0560c0efb1289085c12b2da2f6d0",
+        "size": 218,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7314fc8480ee0560c0efb1289085c12b2da2f6d0"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0e00bede8cbc2617f5a34c237385c5471bc4d9ba",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/0e00bede8cbc2617f5a34c237385c5471bc4d9ba"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/1/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ca3e3166706e6ff2a0c7b860dbe407e0da01e369",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/ca3e3166706e6ff2a0c7b860dbe407e0da01e369"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/1/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1646b9e0ada9a4b0825efe8b251c7b232452dac6",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/1646b9e0ada9a4b0825efe8b251c7b232452dac6"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/1/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4e724d8f54bfe65247e7ba866989e527bf44464c",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/4e724d8f54bfe65247e7ba866989e527bf44464c"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/1/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "25f1d0a0efdd23ff08d43462103a9fd5228d2540",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/25f1d0a0efdd23ff08d43462103a9fd5228d2540"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/1/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "78fa054b7734da12444e6b7bae0cac747f2cd7c7",
+        "size": 25,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/78fa054b7734da12444e6b7bae0cac747f2cd7c7"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/1/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ceaa8326bfffa419f87aaeff48a920ca20f033d6",
+        "size": 219,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ceaa8326bfffa419f87aaeff48a920ca20f033d6"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9dd0339aaa43afc8769f1a722b34709cab45ae0e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/9dd0339aaa43afc8769f1a722b34709cab45ae0e"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/2/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "449274163b67658c5a06fd90cf2258041ebb9bc6",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/449274163b67658c5a06fd90cf2258041ebb9bc6"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/2/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6aa461f63cc43588d522f7a0491719378241a040",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/6aa461f63cc43588d522f7a0491719378241a040"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/2/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3821d4629934fe23e30d8b11bb230277235be51a",
+        "size": 222,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3821d4629934fe23e30d8b11bb230277235be51a"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/2/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "44351c57d7fc5b3822afadb9120b6c73db2ff21d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/44351c57d7fc5b3822afadb9120b6c73db2ff21d"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/2/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6d1091d28872b0278cac6c3d2a4488af1624c0bd",
+        "size": 81,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6d1091d28872b0278cac6c3d2a4488af1624c0bd"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/2/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c6193a0c1a705305c7dbf93ed45fa99263fd35a8",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c6193a0c1a705305c7dbf93ed45fa99263fd35a8"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/3",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4de8a6724521c00ca2913a99f41d040f7c97c40a",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4de8a6724521c00ca2913a99f41d040f7c97c40a"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/3/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1061cd349b4332b5aac4b632472755dea5f99178",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/1061cd349b4332b5aac4b632472755dea5f99178"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/3/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "dc5207900482eb8b442d7c81af66929ea1109e07",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/dc5207900482eb8b442d7c81af66929ea1109e07"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/3/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c2fe2fdf08e7f179cb9e624c82188beac36df4f4",
+        "size": 217,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c2fe2fdf08e7f179cb9e624c82188beac36df4f4"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/3/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2b58a3ae074d1c22ae0099a2349dafc9264ed952",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/2b58a3ae074d1c22ae0099a2349dafc9264ed952"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/3/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "09824604a9259c1ce2c833904f3345c562551001",
+        "size": 79,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/09824604a9259c1ce2c833904f3345c562551001"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/3/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "610ce24b452e3985e0c7a9d23b8db196d685b10a",
+        "size": 219,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/610ce24b452e3985e0c7a9d23b8db196d685b10a"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/4",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0d0567d1b96b59fbc0c8f4b6ebcdae968d75110d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/0d0567d1b96b59fbc0c8f4b6ebcdae968d75110d"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/4/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "326030e45afcb40677591c06c897ac1336acb2cf",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/326030e45afcb40677591c06c897ac1336acb2cf"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/4/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f952ec9c62b0f89879a5dbfd373947079d1007c4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/f952ec9c62b0f89879a5dbfd373947079d1007c4"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/4/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d8aba91ff83a24638b6f564e796ef77da5879735",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d8aba91ff83a24638b6f564e796ef77da5879735"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/4/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "288f2153a50b1a9ecf32de559bf9933fbeeb3669",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/288f2153a50b1a9ecf32de559bf9933fbeeb3669"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/4/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a87a8cd743d5097850d55dc7ba1a630bb2d90bba",
+        "size": 46,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/a87a8cd743d5097850d55dc7ba1a630bb2d90bba"
+      },
+      {
+        "path": "res/strategy_record/trading/AAPL/4/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d8aba91ff83a24638b6f564e796ef77da5879735",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d8aba91ff83a24638b6f564e796ef77da5879735"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "34e14a1559839d8c3918c9542625c67368662d3a",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/34e14a1559839d8c3918c9542625c67368662d3a"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/0",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "54dca74c278f8e92a8375490166ca2e39c7b4a88",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/54dca74c278f8e92a8375490166ca2e39c7b4a88"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/0/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "10e7ab3615e2e30ac8e93152a74c98769118c910",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/10e7ab3615e2e30ac8e93152a74c98769118c910"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/0/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "40cc767108fc1fc9d6c0e2a2ad2543bdba4b8cc9",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/40cc767108fc1fc9d6c0e2a2ad2543bdba4b8cc9"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/0/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fd06f1c694aea6eac31d59ee25992466cfbe44d3",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fd06f1c694aea6eac31d59ee25992466cfbe44d3"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/0/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c9d50f917488e5c16a73c37c8a282d25ec59cd18",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/c9d50f917488e5c16a73c37c8a282d25ec59cd18"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/0/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+        "size": 2,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/0/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fd06f1c694aea6eac31d59ee25992466cfbe44d3",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fd06f1c694aea6eac31d59ee25992466cfbe44d3"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "61c315badb7dc0a62fa2ffa10d8b72a2cbd3c171",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/61c315badb7dc0a62fa2ffa10d8b72a2cbd3c171"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/1/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d5ff0ab6ea9a171cba061d732cc141383600c995",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/d5ff0ab6ea9a171cba061d732cc141383600c995"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/1/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b1e7bcbc6bcc933b584a7df17415e9926c649078",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/b1e7bcbc6bcc933b584a7df17415e9926c649078"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/1/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e9d00fcc2184a246ea0e2f02355d48afe623b829",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/e9d00fcc2184a246ea0e2f02355d48afe623b829"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/1/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "617a9a5e0721cd92901db7c4e6875b3b6028d511",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/617a9a5e0721cd92901db7c4e6875b3b6028d511"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/1/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "78fa054b7734da12444e6b7bae0cac747f2cd7c7",
+        "size": 25,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/78fa054b7734da12444e6b7bae0cac747f2cd7c7"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/1/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7c6e8e2a145d67a2e4cddffa547c8bd7774c4723",
+        "size": 217,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7c6e8e2a145d67a2e4cddffa547c8bd7774c4723"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6806526b5ac8f09a925599cf6bcf7b72c82eea15",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/6806526b5ac8f09a925599cf6bcf7b72c82eea15"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/2/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e250af6ae7b0ab8a9ce54b1dfb6fe46e67403d68",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/e250af6ae7b0ab8a9ce54b1dfb6fe46e67403d68"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/2/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3537c33fa8010a70df86a8d28eb8a42002d7b6d1",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/3537c33fa8010a70df86a8d28eb8a42002d7b6d1"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/2/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "69373efe774afc4c9e761df8c08bf273d4275ab2",
+        "size": 224,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/69373efe774afc4c9e761df8c08bf273d4275ab2"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/2/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "41bbeac63feadbdc7291d2d9f40552f5835ba8e4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/41bbeac63feadbdc7291d2d9f40552f5835ba8e4"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/2/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e95299f6d78e63269daddbd69ab5e88d43bc30b",
+        "size": 81,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6e95299f6d78e63269daddbd69ab5e88d43bc30b"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/2/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8eba3569b53a4eb6b7f8b0ee3e8c945848042a05",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/8eba3569b53a4eb6b7f8b0ee3e8c945848042a05"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/3",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "47d025822f86cc4e7d071369d0d6ad463c22942f",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/47d025822f86cc4e7d071369d0d6ad463c22942f"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/3/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0bb9c97cb723fbb29870241dee47e964221a5229",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/0bb9c97cb723fbb29870241dee47e964221a5229"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/3/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5ae9a1c500e5055bf1aacc3684da865bb4655441",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5ae9a1c500e5055bf1aacc3684da865bb4655441"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/3/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7bb9bf1c85b7d6ace9d44d640c47f65c33d5608e",
+        "size": 215,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7bb9bf1c85b7d6ace9d44d640c47f65c33d5608e"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/3/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "21c341a7d610167a105916145bc021ee31c643ab",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/21c341a7d610167a105916145bc021ee31c643ab"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/3/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "496ef8d7e814fb42047346735837e884c5a92909",
+        "size": 79,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/496ef8d7e814fb42047346735837e884c5a92909"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/3/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "024fe6cfaacde351b9f638b0eb99ae9c333296d7",
+        "size": 224,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/024fe6cfaacde351b9f638b0eb99ae9c333296d7"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/4",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "84bc208dac296081539c52ab23332c7d63a7dd80",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/84bc208dac296081539c52ab23332c7d63a7dd80"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/4/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1557d72a40a8c8fac2eeabf322b0cf10e60b9a98",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/1557d72a40a8c8fac2eeabf322b0cf10e60b9a98"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/4/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a37bf25a5bc46dd543ae9a71c016f9c8844f1d41",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a37bf25a5bc46dd543ae9a71c016f9c8844f1d41"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/4/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e0dd493493aca5502ee4781f7b269a64404ae13f",
+        "size": 228,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/e0dd493493aca5502ee4781f7b269a64404ae13f"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/4/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "42de3d47c787cf2cead083d8b1ad2958d753c119",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/42de3d47c787cf2cead083d8b1ad2958d753c119"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/4/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "12ea9b0fb6eae1f449e21faac24b198317f9c4e5",
+        "size": 47,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/12ea9b0fb6eae1f449e21faac24b198317f9c4e5"
+      },
+      {
+        "path": "res/strategy_record/trading/AMZN/4/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "291e19e750cda68b29a8fc8eb1c808765966efe6",
+        "size": 225,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/291e19e750cda68b29a8fc8eb1c808765966efe6"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9133cb8a7930a2323a67ad39ee9d6644fcefbd70",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/9133cb8a7930a2323a67ad39ee9d6644fcefbd70"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/0",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4c80a7337a9ea9c700de7732f00be493f0080d9b",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4c80a7337a9ea9c700de7732f00be493f0080d9b"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/0/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a86c7261171378c17f5b478b741801df6e7a984c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a86c7261171378c17f5b478b741801df6e7a984c"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/0/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "066b8c46b11302869dbcb82c00f407314d141a5e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/066b8c46b11302869dbcb82c00f407314d141a5e"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/0/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "25823d37c1f0e69ba2bf3cb7c37c746a1b066b02",
+        "size": 224,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/25823d37c1f0e69ba2bf3cb7c37c746a1b066b02"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/0/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "53fe50399830fc922b31a342680509f636b6ea52",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/53fe50399830fc922b31a342680509f636b6ea52"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/0/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+        "size": 2,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/0/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "25823d37c1f0e69ba2bf3cb7c37c746a1b066b02",
+        "size": 224,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/25823d37c1f0e69ba2bf3cb7c37c746a1b066b02"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "51969cddf97d5cebdb2ae5a5ecd88a99b53cb40c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/51969cddf97d5cebdb2ae5a5ecd88a99b53cb40c"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/1/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4bdc07ab4a3933403eefdfe8e2fdaa0517f336b4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4bdc07ab4a3933403eefdfe8e2fdaa0517f336b4"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/1/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e55d9c31cf7e142790ca7612f3762d774989e11e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/e55d9c31cf7e142790ca7612f3762d774989e11e"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/1/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "aafc24cedc6c4924f6b53636984e0f2c198aeff4",
+        "size": 225,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/aafc24cedc6c4924f6b53636984e0f2c198aeff4"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/1/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "42b1505a45d84430c59bee784b997455e023c2d4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/42b1505a45d84430c59bee784b997455e023c2d4"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/1/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "78fa054b7734da12444e6b7bae0cac747f2cd7c7",
+        "size": 25,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/78fa054b7734da12444e6b7bae0cac747f2cd7c7"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/1/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "18d3ca60d9e27490d06762f776f0791f210a9ec8",
+        "size": 218,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/18d3ca60d9e27490d06762f776f0791f210a9ec8"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7d57ac03c62c12b5cb1237472e5826b2bb0d7d9a",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/7d57ac03c62c12b5cb1237472e5826b2bb0d7d9a"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/2/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7783ed430f7ea136c98d6f54712686871e57a740",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/7783ed430f7ea136c98d6f54712686871e57a740"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/2/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "345c74bb7a74643be1f421dffba1b4588f5ec3a9",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/345c74bb7a74643be1f421dffba1b4588f5ec3a9"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/2/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7603ededd1f3d32ecb0394d367619765c0e2ef3b",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7603ededd1f3d32ecb0394d367619765c0e2ef3b"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/2/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fa150de649638d41fa182c348b75fdcf5f24ef2d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/fa150de649638d41fa182c348b75fdcf5f24ef2d"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/2/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fdb3c53dae4a1857a6bf5e6aafc2b380979ffe4c",
+        "size": 81,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/fdb3c53dae4a1857a6bf5e6aafc2b380979ffe4c"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/2/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "03f6d4a4a6d953a01f0171a0205e30fd9bb97785",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/03f6d4a4a6d953a01f0171a0205e30fd9bb97785"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/3",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "719a68f2935253c0d3c8202c75c801fc6da4e3a4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/719a68f2935253c0d3c8202c75c801fc6da4e3a4"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/3/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ba775cb1b35d42a8a8522fc438c7e527835da015",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/ba775cb1b35d42a8a8522fc438c7e527835da015"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/3/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "cbc4cf232ebbfa8b2a01ed14b77dfada190d4ce5",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/cbc4cf232ebbfa8b2a01ed14b77dfada190d4ce5"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/3/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9c7143622a0406576640be25540a2e7175c5ccf5",
+        "size": 219,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9c7143622a0406576640be25540a2e7175c5ccf5"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/3/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "29744b2b7d58191cc8065dc2b2f657b55679a034",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/29744b2b7d58191cc8065dc2b2f657b55679a034"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/3/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c338bb1b27f81d252fe59fa7f736ecf8615c639a",
+        "size": 79,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c338bb1b27f81d252fe59fa7f736ecf8615c639a"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/3/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9dd903c9cf39f5c85beec6fe7cfe666a053b453d",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9dd903c9cf39f5c85beec6fe7cfe666a053b453d"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/4",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5f15bb0ee27d5120449fe9b7b23b88ad83c597e2",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5f15bb0ee27d5120449fe9b7b23b88ad83c597e2"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/4/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "15ae393017887baf266f006d4c492a2c18243b32",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/15ae393017887baf266f006d4c492a2c18243b32"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/4/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "302c5b6273a90ef0730f93e85398ee5c6192a512",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/302c5b6273a90ef0730f93e85398ee5c6192a512"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/4/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f83189007de4b7f842eccc5d9fd54168777dd7d6",
+        "size": 224,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f83189007de4b7f842eccc5d9fd54168777dd7d6"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/4/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "16437dc1245918bf10b8c61a70497ade9d3e09d1",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/16437dc1245918bf10b8c61a70497ade9d3e09d1"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/4/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5a5d30c580663779381f6be746440c5f374e1bde",
+        "size": 47,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5a5d30c580663779381f6be746440c5f374e1bde"
+      },
+      {
+        "path": "res/strategy_record/trading/ETHUSD/4/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "334623b0eb4c7bb8d0c8f1a14bc1e5e32a48db26",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/334623b0eb4c7bb8d0c8f1a14bc1e5e32a48db26"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9b99870d2b818b4185f712c63ad51adc0216ece7",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/9b99870d2b818b4185f712c63ad51adc0216ece7"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/0",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "517e9835ada17ba36536f00d6e0a24327118bf7a",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/517e9835ada17ba36536f00d6e0a24327118bf7a"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/0/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2d353f0469d391060e18fb00e4a1a16b600ea413",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/2d353f0469d391060e18fb00e4a1a16b600ea413"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/0/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "46794d8b28dea22464f756c43a292c174d82ff4b",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/46794d8b28dea22464f756c43a292c174d82ff4b"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/0/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8e7f738f16c92d6c09aab72265afadbbcd70622a",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/8e7f738f16c92d6c09aab72265afadbbcd70622a"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/0/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "067c3c07108345fa2e7e9fd680bd614446adddf7",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/067c3c07108345fa2e7e9fd680bd614446adddf7"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/0/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+        "size": 2,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/0/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8e7f738f16c92d6c09aab72265afadbbcd70622a",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/8e7f738f16c92d6c09aab72265afadbbcd70622a"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9c6b53c20717f6ab1c16d0554cd504eb13b7fc6c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/9c6b53c20717f6ab1c16d0554cd504eb13b7fc6c"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/1/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1265f0894381bfcb09565137636eb34a535e008f",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/1265f0894381bfcb09565137636eb34a535e008f"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/1/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a93c42275d9b5af792dea7bcfdb506cecb25b120",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a93c42275d9b5af792dea7bcfdb506cecb25b120"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/1/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c89655c7ac0ba8422d02416cb9256a4c140e8701",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c89655c7ac0ba8422d02416cb9256a4c140e8701"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/1/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4b3ab5962d123bfb806c2eb6ba6ec2f8fc030c9d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4b3ab5962d123bfb806c2eb6ba6ec2f8fc030c9d"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/1/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "78fa054b7734da12444e6b7bae0cac747f2cd7c7",
+        "size": 25,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/78fa054b7734da12444e6b7bae0cac747f2cd7c7"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/1/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dc2c9ce8114d9cd275d145c0d195b7e07c933496",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/dc2c9ce8114d9cd275d145c0d195b7e07c933496"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5ef1bb07929627724da818631867d4a04c1d4e2f",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5ef1bb07929627724da818631867d4a04c1d4e2f"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/2/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "cec2aa48867dc1d01a001f3ce1d69a4815723fd7",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/cec2aa48867dc1d01a001f3ce1d69a4815723fd7"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/2/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "767b90ca8e9f2997e253de39d457065a9252d7cc",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/767b90ca8e9f2997e253de39d457065a9252d7cc"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/2/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0249e8979972a222821efeac239a8125a5d56066",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/0249e8979972a222821efeac239a8125a5d56066"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/2/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "57b4b3cb605f4021848a3e97996dfbfe21a85f45",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/57b4b3cb605f4021848a3e97996dfbfe21a85f45"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/2/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "29e92ce6faf66955fec8ad2724bd5af2d5890ce9",
+        "size": 82,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/29e92ce6faf66955fec8ad2724bd5af2d5890ce9"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/2/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e8dcbcc9014f5b56c9f2ab60ddaef11e1fb92f9",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6e8dcbcc9014f5b56c9f2ab60ddaef11e1fb92f9"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/3",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "33bbf793c1e8252c3066fce75ae17e2e224e92be",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/33bbf793c1e8252c3066fce75ae17e2e224e92be"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/3/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5836b1d056408e86144e9a41cf41e74f502731cc",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5836b1d056408e86144e9a41cf41e74f502731cc"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/3/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "783477dac23fcc8149c12abbc161bfc7e4d5bed8",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/783477dac23fcc8149c12abbc161bfc7e4d5bed8"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/3/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ba1eea48df8893ec5e24839c3af333f7ed225a02",
+        "size": 227,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ba1eea48df8893ec5e24839c3af333f7ed225a02"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/3/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5b3ff8f26c4fcb4ad335cd754500e7c920e26cd3",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5b3ff8f26c4fcb4ad335cd754500e7c920e26cd3"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/3/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d3021fede1f71fe0ec23fb0ad6b9066b81514f5b",
+        "size": 78,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/d3021fede1f71fe0ec23fb0ad6b9066b81514f5b"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/3/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "195fa2ed2bb01f2f6cd4d6fbb8cbba091252764a",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/195fa2ed2bb01f2f6cd4d6fbb8cbba091252764a"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/4",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2ee96336f37048e9fde784dc6c37ea9af116933a",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/2ee96336f37048e9fde784dc6c37ea9af116933a"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/4/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "da13b108f14ef6a06757369dd5d918f7178ab5ac",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/da13b108f14ef6a06757369dd5d918f7178ab5ac"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/4/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ddaf3b418b8130b6360eaa65d73c8ea4a1d79847",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/ddaf3b418b8130b6360eaa65d73c8ea4a1d79847"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/4/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "95686272b256b668e8eda7b191e54b26c6ace4b5",
+        "size": 223,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/95686272b256b668e8eda7b191e54b26c6ace4b5"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/4/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "60109e9e142120319a572a25c699227fc7b8d004",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/60109e9e142120319a572a25c699227fc7b8d004"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/4/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5a5d30c580663779381f6be746440c5f374e1bde",
+        "size": 47,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5a5d30c580663779381f6be746440c5f374e1bde"
+      },
+      {
+        "path": "res/strategy_record/trading/GOOGL/4/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b5a63e438e780d00036d61600d5913b3e96c192b",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b5a63e438e780d00036d61600d5913b3e96c192b"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4016fe4c5dfaa91c4ae57df217b5d8fa49fec649",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4016fe4c5dfaa91c4ae57df217b5d8fa49fec649"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/0",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "95060cf05e3958ee04d7a087a0b6fcea069d477c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/95060cf05e3958ee04d7a087a0b6fcea069d477c"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/0/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8964f48316f00d2540cac4a2fc37b6c6d9cdc3aa",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/8964f48316f00d2540cac4a2fc37b6c6d9cdc3aa"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/0/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "cc261e7a5145f72a42a317e29696617acfe1a0b0",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/cc261e7a5145f72a42a317e29696617acfe1a0b0"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/0/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44d0d1022c9c63aa80232e5bb728e5fbab3c57c7",
+        "size": 219,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/44d0d1022c9c63aa80232e5bb728e5fbab3c57c7"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/0/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "03cd5b779de73c7b0aeb4a8218c4a33e4623dca0",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/03cd5b779de73c7b0aeb4a8218c4a33e4623dca0"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/0/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+        "size": 2,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/0/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44d0d1022c9c63aa80232e5bb728e5fbab3c57c7",
+        "size": 219,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/44d0d1022c9c63aa80232e5bb728e5fbab3c57c7"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a01d8804180be22fb0f11ed6b1fb52213b6fc205",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a01d8804180be22fb0f11ed6b1fb52213b6fc205"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/1/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e287af9c0f3c6b613a122165aaf06efeaeb906f8",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/e287af9c0f3c6b613a122165aaf06efeaeb906f8"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/1/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a68f18a39b7913aa0dd43a3502fbf5e3464736ac",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a68f18a39b7913aa0dd43a3502fbf5e3464736ac"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/1/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f82d57a3713c4a955c62fdc4480a6be5fe89fe69",
+        "size": 211,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f82d57a3713c4a955c62fdc4480a6be5fe89fe69"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/1/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9cb9dbcbfa3ff4b1852cddb3183bcf692a11de8d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/9cb9dbcbfa3ff4b1852cddb3183bcf692a11de8d"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/1/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ffabacedb3cc8b14d965516c017f1383ddc8ecd9",
+        "size": 25,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ffabacedb3cc8b14d965516c017f1383ddc8ecd9"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/1/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f82d57a3713c4a955c62fdc4480a6be5fe89fe69",
+        "size": 211,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f82d57a3713c4a955c62fdc4480a6be5fe89fe69"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "75467c73e09ff2f36fd53e49b3b3860eb8e86222",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/75467c73e09ff2f36fd53e49b3b3860eb8e86222"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/2/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "683022317b893d347b0eb91c848784abac787669",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/683022317b893d347b0eb91c848784abac787669"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/2/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e607b2999c5cb7cc8cbccb3f5654fb66405f363c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/e607b2999c5cb7cc8cbccb3f5654fb66405f363c"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/2/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "45fb92d4151d61ac029263b301ec1edcdcc9286f",
+        "size": 222,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/45fb92d4151d61ac029263b301ec1edcdcc9286f"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/2/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "256b5027062ac531c43ea387c2b54a397133eff4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/256b5027062ac531c43ea387c2b54a397133eff4"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/2/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3f9e1cfb4395c71044dc94dc47d6ec382327aad5",
+        "size": 82,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3f9e1cfb4395c71044dc94dc47d6ec382327aad5"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/2/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f6f65424dfdac24389483a5932b0750d171a8c75",
+        "size": 217,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/f6f65424dfdac24389483a5932b0750d171a8c75"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/3",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e0bc888da28608a17ac903faf250b29db80a4b1c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/e0bc888da28608a17ac903faf250b29db80a4b1c"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/3/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "da105bb97ca9566ba2f6c5de704215f4a1490098",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/da105bb97ca9566ba2f6c5de704215f4a1490098"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/3/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f8573bec98b7cac0406662dc2599667b3334d108",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/f8573bec98b7cac0406662dc2599667b3334d108"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/3/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7099c04608524890f9a325efd9c8ca6d8ea2ae8f",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7099c04608524890f9a325efd9c8ca6d8ea2ae8f"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/3/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5724f0dd81a72d2f1ab5e939fce7e46304d52b9c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5724f0dd81a72d2f1ab5e939fce7e46304d52b9c"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/3/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "25b1bc13cdee667fb02aee854325708d46ec52be",
+        "size": 78,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/25b1bc13cdee667fb02aee854325708d46ec52be"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/3/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "88c11921c1cebe3b19837db9bc8cda065569484a",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/88c11921c1cebe3b19837db9bc8cda065569484a"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/4",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "86f9e09a9de42be6070f0ca43ccf25fb085710de",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/86f9e09a9de42be6070f0ca43ccf25fb085710de"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/4/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5c4d7edac1ebdb026d07d8883681e71bea8e05ff",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5c4d7edac1ebdb026d07d8883681e71bea8e05ff"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/4/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "32dbfb1a2a969e862aac7732b1e6daf076d45022",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/32dbfb1a2a969e862aac7732b1e6daf076d45022"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/4/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6eeecb267f487f46a0eddfcadfcf2a4259678d58",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6eeecb267f487f46a0eddfcadfcf2a4259678d58"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/4/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "22245c742a82a65591d1a91ba7209a32bf2a691c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/22245c742a82a65591d1a91ba7209a32bf2a691c"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/4/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5a5d30c580663779381f6be746440c5f374e1bde",
+        "size": 47,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5a5d30c580663779381f6be746440c5f374e1bde"
+      },
+      {
+        "path": "res/strategy_record/trading/MSFT/4/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "be96bb10dda36e7538c5658dd5c93a845c1bb106",
+        "size": 221,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/be96bb10dda36e7538c5658dd5c93a845c1bb106"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "cdb7ac22505435bbd30e333fb9f0c164d2e01ef7",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/cdb7ac22505435bbd30e333fb9f0c164d2e01ef7"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/0",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4ede18d8472965f1bcafd3db40f5f35492813b27",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4ede18d8472965f1bcafd3db40f5f35492813b27"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/0/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "98f5947ffc8219c1f94b093b3d234269baf2536d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/98f5947ffc8219c1f94b093b3d234269baf2536d"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/0/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c9ebc43232085101db0ff4592677201409f81a60",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/c9ebc43232085101db0ff4592677201409f81a60"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/0/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c628522ad7e8fab5cb63523f958077679d12ff94",
+        "size": 231,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c628522ad7e8fab5cb63523f958077679d12ff94"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/0/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5f534eee2b1792cf266536a2556cbe42d5fa5291",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/5f534eee2b1792cf266536a2556cbe42d5fa5291"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/0/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+        "size": 2,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/0/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c628522ad7e8fab5cb63523f958077679d12ff94",
+        "size": 231,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/c628522ad7e8fab5cb63523f958077679d12ff94"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e4fcda93c39e24d57640aade1b83c097d2a753c4",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/e4fcda93c39e24d57640aade1b83c097d2a753c4"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/1/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a9bde8e0b3fb74bfdfa29f389f3728c34a447e82",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a9bde8e0b3fb74bfdfa29f389f3728c34a447e82"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/1/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0b7d30f3ad4019951410e12f3a4756f2f9c8ec2c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/0b7d30f3ad4019951410e12f3a4756f2f9c8ec2c"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/1/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ccef470d05e62c1c664c67a96de51cf7aec916fa",
+        "size": 218,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ccef470d05e62c1c664c67a96de51cf7aec916fa"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/1/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f859247f0a5f564975bb77edf2e1d62dd84f7d4d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/f859247f0a5f564975bb77edf2e1d62dd84f7d4d"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/1/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ffabacedb3cc8b14d965516c017f1383ddc8ecd9",
+        "size": 25,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ffabacedb3cc8b14d965516c017f1383ddc8ecd9"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/1/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ccef470d05e62c1c664c67a96de51cf7aec916fa",
+        "size": 218,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ccef470d05e62c1c664c67a96de51cf7aec916fa"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fff4a1d2279d39daee89d8be87c0d6ef0c92ad7d",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/fff4a1d2279d39daee89d8be87c0d6ef0c92ad7d"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/2/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b1be98209a34a9aa332a56785e9a1f0ca36a2063",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/b1be98209a34a9aa332a56785e9a1f0ca36a2063"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/2/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "39a79d1e26ba72c107014bfd4d80abf6e34b6aa3",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/39a79d1e26ba72c107014bfd4d80abf6e34b6aa3"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/2/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "10733ca8327a835b32fd6936d53ecc2ceb4686c5",
+        "size": 223,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/10733ca8327a835b32fd6936d53ecc2ceb4686c5"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/2/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "299b34dd72a19e2f10a2479ba9573a9c32635579",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/299b34dd72a19e2f10a2479ba9573a9c32635579"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/2/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e2d487f3842446b670311ae131cfab4abe3599a",
+        "size": 81,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6e2d487f3842446b670311ae131cfab4abe3599a"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/2/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3d28bfa081c5f6277270c89e90fe013378ded04a",
+        "size": 223,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3d28bfa081c5f6277270c89e90fe013378ded04a"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/3",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8e6b4ee36bd931b4586a73c7e3fee0be2cc3b5c6",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/8e6b4ee36bd931b4586a73c7e3fee0be2cc3b5c6"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/3/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ac3c09626f293a836d8ef553b85b24c8db4afd8e",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/ac3c09626f293a836d8ef553b85b24c8db4afd8e"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/3/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a3af85ef32a6c9297152c3de067b873bf41f9b56",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/a3af85ef32a6c9297152c3de067b873bf41f9b56"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/3/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "96a8d6e3e9de1e7e058da94170549bb8c3f0a485",
+        "size": 225,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/96a8d6e3e9de1e7e058da94170549bb8c3f0a485"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/3/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4fe72d48781a5dcb104fe13a2de007b9210aa693",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/4fe72d48781a5dcb104fe13a2de007b9210aa693"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/3/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "87bd0067ee9da2703605f37834684b846b8942b2",
+        "size": 79,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/87bd0067ee9da2703605f37834684b846b8942b2"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/3/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b9066d026c5ef2a6175968e3d2491bf1fdc1f32f",
+        "size": 220,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/b9066d026c5ef2a6175968e3d2491bf1fdc1f32f"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/4",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ec3d29cf7f7e4af70f0b64535e8f905342647099",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/ec3d29cf7f7e4af70f0b64535e8f905342647099"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/4/exp001",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "873ed764cf4f9018b2f57464a7cb43ebbad738a0",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/873ed764cf4f9018b2f57464a7cb43ebbad738a0"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/4/exp001/default",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "52ab9c8c8a3d312951517e83d8e7b58b4824b711",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/52ab9c8c8a3d312951517e83d8e7b58b4824b711"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/4/exp001/default/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "064e7cc31c627b91c5e7844069c397c8fcc4b1c6",
+        "size": 223,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/064e7cc31c627b91c5e7844069c397c8fcc4b1c6"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/4/exp001/trained",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "86e2dd2a95169ebb3ab2881b3d522b827a2b072c",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/86e2dd2a95169ebb3ab2881b3d522b827a2b072c"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/4/exp001/trained/best_params.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e78c7528292c7d3be4e5ccfc84089a0433b8655",
+        "size": 46,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/6e78c7528292c7d3be4e5ccfc84089a0433b8655"
+      },
+      {
+        "path": "res/strategy_record/trading/TSLA/4/exp001/trained/best_result.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3df763ef10a2528277595b0068ab3b0a17d7b59b",
+        "size": 222,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3df763ef10a2528277595b0068ab3b0a17d7b59b"
+      },
+      {
+        "path": "tools",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "57bd8e5940ec4a052f50d74c9fcee19ba1bd8dc6",
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/trees/57bd8e5940ec4a052f50d74c9fcee19ba1bd8dc6"
+      },
+      {
+        "path": "tools/data_process.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "198362b816588ce7687e572ebd1dcd821d3c579e",
+        "size": 3407,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/198362b816588ce7687e572ebd1dcd821d3c579e"
+      },
+      {
+        "path": "tools/download_economic.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e4c126c2bf07e2785334e5af50e28a1581cb8433",
+        "size": 3434,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/e4c126c2bf07e2785334e5af50e28a1581cb8433"
+      },
+      {
+        "path": "tools/download_expert_knowledege.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9ee761b9d64ca1479f4a134cf4837d11631d77d7",
+        "size": 3617,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/9ee761b9d64ca1479f4a134cf4837d11631d77d7"
+      },
+      {
+        "path": "tools/download_news.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5dce1c59dc93e51cbdf0423e569b7a546ce00a79",
+        "size": 3437,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/5dce1c59dc93e51cbdf0423e569b7a546ce00a79"
+      },
+      {
+        "path": "tools/download_prices.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4c2500eed327ae9e34562db16cacc58cc05d8578",
+        "size": 3604,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/4c2500eed327ae9e34562db16cacc58cc05d8578"
+      },
+      {
+        "path": "tools/download_sentiment.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "63ddfa6e341f659a1a8ecbd29d2c0ffc36722ad4",
+        "size": 3435,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/63ddfa6e341f659a1a8ecbd29d2c0ffc36722ad4"
+      },
+      {
+        "path": "tools/get_stock_infos.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "881300f077412bfe30a9a3b46b2b66a6e5e0a345",
+        "size": 1006,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/881300f077412bfe30a9a3b46b2b66a6e5e0a345"
+      },
+      {
+        "path": "tools/main.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ab2135320154d3e81fe5595e06b0b5f1b730b38f",
+        "size": 19643,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/ab2135320154d3e81fe5595e06b0b5f1b730b38f"
+      },
+      {
+        "path": "tools/main_mi_w_decision.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7301531ff5c36e63933b9d4adb5a76fc38109576",
+        "size": 15253,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/7301531ff5c36e63933b9d4adb5a76fc38109576"
+      },
+      {
+        "path": "tools/main_mi_w_low_w_decision.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "33249a1cf5f2c979c81167e61d12223d3a50526a",
+        "size": 17518,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/33249a1cf5f2c979c81167e61d12223d3a50526a"
+      },
+      {
+        "path": "tools/main_mi_w_low_w_high_w_decision.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "aacf1336f4639474a6a592443d072aafb36a28ff",
+        "size": 19955,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/aacf1336f4639474a6a592443d072aafb36a28ff"
+      },
+      {
+        "path": "tools/main_mi_w_low_w_high_w_tool_w_decision.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "418309a44c4ed41eba578a3aa90ebcf7467ec4f0",
+        "size": 19960,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/418309a44c4ed41eba578a3aa90ebcf7467ec4f0"
+      },
+      {
+        "path": "tools/main_strategy.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3497b4fabe245a83d212949685a9bd42a6718707",
+        "size": 20892,
+        "url": "https://api.github.com/repos/DVampire/FinAgent/git/blobs/3497b4fabe245a83d212949685a9bd42a6718707"
+      }
+    ],
+    "truncated": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+ "retrieved_at":"2026-11-02T03:39:17Z",
+ "sources":[
+ {"id":"S1","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","publisher":"Federal Reserve","tier":"T0","published_at":"unknown","quote":"2026: October 27-28; December 8-9*. * Meeting associated with a Summary of Economic Projections.","locator":"2026 FOMC Meetings; October and December rows","origin_id":"fed-calendar-2026","origin_basis":"官方会议日历；摘录按行拼接"},
+ {"id":"S2","url":"https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm","publisher":"Federal Reserve","tier":"T0","published_at":"2026-10-28T14:00:00-04:00","quote":"3-3/4 to 4 percent; The Committee will deliver price stability.","locator":"October 28 FOMC statement, target range and inflation commitment paragraphs; extracted snippets","origin_id":"fed-oct2026-statement","origin_basis":"FOMC官方政策声明","verified_extract":{"decision":"maintain","economic_activity":"strong growth; resilient domestic demand; strong productivity; robust business investment","employment":"growth matching workforce expansion; unemployment broadly steady","inflation":"above desired level","vote":"10–2","dissents":"Lisa D. Cook and Beth M. Hammack preferred 25-basis-point increase"}},
+ {"id":"S3","url":"https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm","publisher":"Federal Reserve","tier":"T0","published_at":"2026-10-28","quote":"3-3/4 to 4 percent; October 29, 2026; 3.90 percent","locator":"Implementation Note: target range, effective date, interest on reserve balances","origin_id":"fed-oct2026-implementation","origin_basis":"官方实施说明"},
+ {"id":"S4","url":"https://www.federalreserve.gov/monetarypolicy/fomc.htm","publisher":"Federal Reserve","tier":"T0","published_at":"unknown","quote":"The FOMC holds eight regularly scheduled meetings per year.","locator":"About the FOMC → Structure of the FOMC, second paragraph","origin_id":"fed-fomc-structure","origin_basis":"官方制度说明"}
+ ]
+}

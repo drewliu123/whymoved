@@ -1,0 +1,44 @@
+{
+ "qid": "Q160",
+ "question": "Will Philadelphia Phillies win the 2026 NL East title?",
+ "rules": "This market will resolve according to the team that wins the 2026 MLB National League East division.\n\nIn the event of a tie, this market will resolve according to the official winner as determined by MLB rules. If multiple winners are announced then this market will resolve to the team whose listed nickname comes first alphabetically.\n\nIf at any point it becomes impossible for a listed team to be named the 2026 National League East division champion per the rules of the MLB (e.g., they are eliminated in the playoffs), the corresponding market will resolve to “No”.\n\nIf the 2026 MLB regular season is cancelled, postponed after October 31, 2026, 11:59 PM ET, or there is otherwise no winner declared within that timeframe, this market will resolve to “Other”.\n\nThe primary resolution source will be official information from Major League Baseball (https://www.mlb.com/); however, a consensus of credible reporting may also be used.",
+ "as_of": "2026-09-07",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Associated Press via The Washington Post",
+   "published_at": "2026-09-07",
+   "excerpt": "The Phillies split a four-game series with the NL East-leading Braves and cut the division lead to four games."
+  },
+  {
+   "id": "E2",
+   "publisher": "Phillies Nation — Destiny Lugardo",
+   "published_at": "2026-09-07",
+   "excerpt": "The Phillies (81-63) are now four games back of the Braves (85-59) in the NL East with three more head-to-head matchups left this weekend in Atlanta. With 18 games remaining on the regular-season schedule, the Phillies have a 5.5-game cushion for a postseason spot in the National League."
+  },
+  {
+   "id": "E3",
+   "publisher": "Philadelphia Phillies On SI — Kenneth Teape",
+   "published_at": "2026-09-06",
+   "excerpt": "With the loss, Philadelphia can no longer get the tiebreaker from the Braves, who have already won seven games against the Phillies this season."
+  },
+  {
+   "id": "E4",
+   "publisher": "Phillies Nation — Ty Daubert",
+   "published_at": "2026-09-06",
+   "excerpt": "The Phillies need to establish a path to Duran, who allowed a go-ahead triple to Austin Riley in a poor outing. Orion Kerkering has struggled. Jonathan Bowlan's workload might be catching up to him, as Mattingly said the team has noticed his stuff trending downward when pitching on back-to-back days."
+  },
+  {
+   "id": "E5",
+   "publisher": "Associated Press via The Washington Post",
+   "published_at": "2026-09-05",
+   "excerpt": "Wheeler allowed one run on three hits. Jhoan Duran tossed a 1-2-3 ninth for his 30th save."
+  },
+  {
+   "id": "E6",
+   "publisher": "Major League Baseball — MLB Stories",
+   "published_at": "2026-09-06",
+   "excerpt": "Since July 23, Aaron Nola has allowed 2 runs or fewer in 7 of his 8 starts (2.31 ERA)."
+  }
+ ]
+}

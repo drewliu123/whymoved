@@ -1,0 +1,57 @@
+{
+  "qid": "Q074",
+  "as_of": "2026-09-03",
+  "kept": [
+    {
+      "excerpt": "Verian's September 3 voting-intention poll put the Social Democrats at 29.2%, Sweden Democrats at 18.9%, Moderates at 16.4%, Left Party at 8.1%, Greens at 8.0%, Centre Party at 7.4%, Christian Democrats at 6.3% and Liberals at 3.0%. The survey comprised 3,069 interviews conducted online or by telephone between August 20 and September 2, using a random sample of adults and weighting for sex, age, education and 2022 party choice. The Liberals' increase was the only statistically significant change since the August poll.",
+      "published_at": "2026-09-03",
+      "publisher": "Verian",
+      "relevance": "This cutoff-day primary poll places SD second in voting intention, 2.5 percentage points ahead of its main rival for second or third place, the Moderates.",
+      "url": "https://www.veriangroup.com/sv/news-and-insights/valjarbarometer-september-2026"
+    },
+    {
+      "excerpt": "The TV4/Novus poll put the Social Democrats at 25.8%, down 4.3 percentage points from the previous survey published on August 19. The Moderates fell 1.1 percentage points to 17.2%, while the Sweden Democrats rose 1.6 percentage points to 20.7%. The article was published and updated on September 2, 2026.",
+      "published_at": "2026-09-02",
+      "publisher": "TV4 Nyheterna",
+      "relevance": "An independent recent poll also places SD second, with a 3.5-point lead over the Moderates, providing a cross-check against Verian.",
+      "url": "https://www.tv4.se/artikel/5TPh9cL7pqcj232bse8TAx/l-oekar-stort-spurtar-mot-spaerren"
+    },
+    {
+      "excerpt": "A Demoskop survey of 2,016 voters, conducted July 29 to August 10, put the Social Democrats at 30.2%, the Moderates at 16.8% and the Sweden Democrats at 20.2%. The Liberals polled 2.4%, below the 4% threshold for winning Riksdag seats. The Sweden Democrats planned to join the cabinet for the first time if the right-wing bloc won.",
+      "published_at": "2026-08-13",
+      "publisher": "Reuters, syndicated by WHBL",
+      "relevance": "This earlier independent poll establishes that SD's lead over the Moderates was present before the final campaign weeks and identifies the threshold issue affecting seat allocation.",
+      "url": "https://whbl.com/2026/08/13/swedens-right-wing-government-lags-in-poll-but-gap-narrows/"
+    },
+    {
+      "excerpt": "An Ipsos survey of 1,661 voters, conducted August 11–23 and published by Dagens Nyheter, put the four opposition parties at 52.4%, compared with 45.6% for the governing bloc including the Sweden Democrats. The gap between the blocs had narrowed to 6.8 percentage points from 9.5 points in June. Swedes were scheduled to vote on September 13, with the campaign focused on the cost of living, security, immigration, crime and energy supply.",
+      "published_at": "2026-08-25",
+      "publisher": "Reuters, syndicated by WHBL",
+      "relevance": "This supplies contemporary campaign context and evidence of changing bloc support, while distinguishing government formation from the individual-party seat ranking required by Q074.",
+      "url": "https://whbl.com/2026/08/25/swedens-ruling-coalition-trails-in-poll-but-closes-gap-on-centre-left-opposition/"
+    },
+    {
+      "excerpt": "Elections to the Riksdag and regional and municipal councils were scheduled for September 13, with polling stations open from 08:00 to 20:00. Preliminary counting would begin when polling stations closed, and county administrative boards would start the final count on September 14. The final Riksdag result was expected to be established approximately one week after election day.",
+      "published_at": "2026-09-03",
+      "publisher": "Swedish Election Authority (Valmyndigheten)",
+      "relevance": "This cutoff-day official notice verifies the election schedule and identifies the official counting and certification process relevant to resolving the seat ranking.",
+      "url": "https://www.val.se/servicelankar/servicelankar/pressrum/information-till-media-om-att-folja-rostrakningen-valen-2026"
+    },
+    {
+      "excerpt": "Early voting in Sweden began on August 26, 2026. Early voting was to continue through election day, September 13.",
+      "published_at": "2026-08-26",
+      "publisher": "Swedish Election Authority (Valmyndigheten)",
+      "relevance": "This confirms that voting had already begun before the forecast cutoff, bearing directly on the market's election-occurrence condition.",
+      "url": "https://www.val.se/servicelankar/servicelankar/pressrum/nyheter--pressmeddelanden/pressmeddelande-nya/2026-08-26-i-dag-startar-fortidsrostningen-i-sverige"
+    },
+    {
+      "excerpt": "In the 2022 Riksdag election, the Sweden Democrats received 20.54% of the vote and won 73 seats. The Moderates received 19.10% and won 68 seats.",
+      "published_at": "2026-05-07",
+      "publisher": "Swedish Election Authority (Valmyndigheten)",
+      "relevance": "The official previous-election baseline shows SD ahead of the Moderates by five seats, framing the reversal needed for the Moderates to overtake SD in 2026.",
+      "url": "https://www.val.se/valresultat-och-statistik/riksdags--region--och-kommunval/valresultat-2022"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence pack for Q074 with an inclusive publication cutoff of 2026-09-03. Publication dates were verified from source text or dated search-index extracts; Swedish excerpts are translated factual summaries. Excluded post-cutoff publications, undated rolling aggregators, prediction-market and betting material, and articles updated after the cutoff where the original version could not be isolated. web_fetch failed because of provider configuration; the requested agent-reach fallback returned RATE_LIMITED, so verification relied on web_search source extracts rather than successful full-page retrieval. Poll percentages are voting intentions, not seat projections; no election outcome or post-cutoff development is included."
+}

@@ -1,0 +1,44 @@
+{
+ "qid": "Q001",
+ "question": "Will James Fishback finish second in the Florida Republican Governor primary?",
+ "rules": "This market will resolve according to the individual who places second in the Republican Primary for Governor of Florida, scheduled to take place on August 18, 2026.\n\nThe named candidates will be primarily ranked by the number of valid votes received in the specified election. If two or more candidates are tied on valid votes, ties will be broken by alphabetical order of the candidates' last names. This market will resolve to the candidate that occupies the second-highest finishing position after applying this ranking.\n\nIf the results are not known definitively by December 31, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe resolution source for this market will be the official results of the election; however, an overwhelming consensus of credible reporting may suffice.",
+ "as_of": "2026-08-05",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Florida’s Voice",
+   "published_at": "2026-07-31",
+   "excerpt": "The survey of 635 likely Republican primary voters, conducted July 27–29, shows Donalds commanding 49.6% support—more than triple that of his closest competitor. Sen. Jay Collins sits in second place at 15.7%, followed closely by activist James Fishback at 12.4% and former Florida House Speaker Paul Renner at 3.5%. Another 5.3% of respondents prefer a different candidate, while 13.5% remain undecided. The poll, sponsored by American First Insight, carries a design-adjusted margin of error of plus or minus 4.1 percentage points."
+  },
+  {
+   "id": "E2",
+   "publisher": "Cygnal",
+   "published_at": "2026-07-20",
+   "excerpt": "TALLAHASSEE, Fla. (July 20, 2026) — Cygnal released new survey findings from a statewide poll of 500 likely 2026 Florida Republican primary voters (conducted July 12–13). In the Republican primary ballot test, Byron Donalds leads with 43 percent, followed by James Fishback at 12 percent, Jay Collins at 11 percent, and Paul Renner at 2 percent, while 31 percent remain undecided. The margin of error is plus or minus 4.38 percentage points."
+  },
+  {
+   "id": "E3",
+   "publisher": "Tampa Free Press",
+   "published_at": "2026-07-30",
+   "excerpt": "According to a survey memorandum released July 30, 2026, by national pollster David Wolfson, Donalds leads the field with 46% support among likely primary voters, followed by Collins at 30%. Together, the two candidates command nearly 80% of overall voter support. Trailing the frontrunners are James Fishback at 9.8% and former Florida House Speaker Paul Renner at 5.9%."
+  },
+  {
+   "id": "E4",
+   "publisher": "Florida Politics",
+   "published_at": "2026-07-09",
+   "excerpt": "Lt. Gov. Jay Collins’ campaign says the battle for the Republican nomination for Governor is a “two-man race” with U.S. Rep. Byron Donalds, based on an internal poll it commissioned. Collins is the apparent beneficiary of that erosion. The poll puts his support at 20% — roughly triple his 6.5% public polling average. Pollster David Jay Wolfson surveyed 934 voters between July 2 and July 6 using a text-to-web methodology, according to Playbook."
+  },
+  {
+   "id": "E5",
+   "publisher": "Miami New Times",
+   "published_at": "2026-07-28",
+   "excerpt": "South Florida native James Fishback will remain on statewide ballots in the governor’s race after a Leon County judge Monday ruled he is eligible to run, according to court records. According to the ruling, which the court posted online late Monday night, Florida’s 2nd Judicial Circuit Court Judge David Frank denied Collins’ motion to remove Fishback from the gubernatorial ballot."
+  },
+  {
+   "id": "E6",
+   "publisher": "WLRN Public Media",
+   "published_at": "2026-08-05",
+   "excerpt": "South Florida prosecutors are investigating Sean Lozano, Florida gubernatorial candidate James Fishback's running mate, over his actions as a police officer, WLRN has learned. The Broward County State Attorney’s office confirmed the criminal investigation is being conducted by its Public Corruption Unit, after receiving a request last July from Lozano’s former employer, the Lauderhill Police Department. Lozano was fired by the department in December 2025, according to his personnel file."
+  }
+ ]
+}

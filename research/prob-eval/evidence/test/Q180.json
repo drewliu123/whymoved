@@ -1,0 +1,57 @@
+{
+  "qid": "Q180",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "The briefing is dated July 15, 2026, and identifies its data as current through July 16. Its pinned LMArena overall text snapshot with style control places Claude Fable 5 first at 1507.5, Muse Spark 1.1 second at 1493.1, and GPT-5.6 Sol X-High third at 1486.3. It says the published confidence intervals for Anthropic and Meta overlap.",
+      "published_at": "2026-07-15",
+      "publisher": "Model Gauntlet",
+      "relevance": "This supplies contemporaneous evidence of Anthropic's overall Arena strength, but its overall text category and enabled style control differ from the Math leaderboard required for Q180.",
+      "url": "https://modelgauntlet.com/briefings/weekly/2026-07-15/"
+    },
+    {
+      "excerpt": "Arena's July 16, 2026 changelog entry states that inkling and kimi-k3 were added to the Text Arena and Code Arena leaderboards.",
+      "published_at": "2026-07-16",
+      "publisher": "Arena",
+      "relevance": "New Text Arena entrants immediately before the cutoff expand the competitive field, although the entry supplies no Math ranks or scores.",
+      "url": "https://arena.ai/company/leaderboard-changelog"
+    },
+    {
+      "excerpt": "OpenAI announced general availability of the GPT-5.6 family on July 9, including flagship Sol, Terra, and Luna. Its published academic evaluation table reports FrontierMath Tier 1–3 scores of 89% for Sol and 87% for Claude Fable 5, and Tier 4 scores of 83% for Sol and 87.8% for Fable 5.",
+      "published_at": "2026-07-09",
+      "publisher": "OpenAI",
+      "relevance": "A recently released rival reports competitive mathematical capabilities, with mixed benchmark leadership that cannot directly determine human-preference Math Arena rank.",
+      "url": "https://openai.com/index/gpt-5-6/"
+    },
+    {
+      "excerpt": "Anthropic's June 9 announcement introduces Claude Fable 5 as a Mythos-class model made safe for general use. It also introduces Claude Mythos 5, with access restricted to approved organizations.",
+      "published_at": "2026-06-09",
+      "publisher": "Anthropic",
+      "relevance": "This establishes Anthropic's publicly available frontier contender and distinguishes it from a restricted model whose capabilities alone do not establish Arena eligibility or rank.",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+    },
+    {
+      "excerpt": "The Associated Press reported on July 1 that restrictions on Anthropic's latest Claude models had been lifted. Fable 5 was again widely available, while Mythos 5 access was restored only for a select group of approved U.S.-based organizations.",
+      "published_at": "2026-07-01",
+      "publisher": "Associated Press",
+      "relevance": "Restored availability supports Fable 5's ability to receive public evaluations during July and documents a concrete deployment risk affecting Anthropic's contenders.",
+      "url": "https://apnews.com/article/028db5135128fce6b38c873bf9cb5e09"
+    },
+    {
+      "excerpt": "Arena's July 2, 2026 changelog entry states that claude-sonnet-5-thinking was added to the Code Arena, Text Arena, Search Arena, Vision Arena, and Document Arena leaderboards.",
+      "published_at": "2026-07-02",
+      "publisher": "Arena",
+      "relevance": "Anthropic had another newly listed Text Arena model by the cutoff, although this entry does not establish its position in the Math category.",
+      "url": "https://arena.ai/company/leaderboard-changelog"
+    },
+    {
+      "excerpt": "At Google's May 19 announcement, Gemini 3.5 Flash began rolling out as the first model in the Gemini 3.5 family. The Associated Press reported that Google was using Gemini 3.5 Pro internally and expected to launch it the following month.",
+      "published_at": "2026-05-19",
+      "publisher": "Associated Press",
+      "relevance": "This documents a publicly stated prospective Google challenger available to forecasters before the cutoff, while the announced schedule alone does not verify an actual Pro release.",
+      "url": "https://apnews.com/article/a984e6756032dc4af260f8fa27e8f4a9"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-17. Included only passages attached to explicit publication dates or individually dated changelog entries on or before the cutoff; no prediction-market pages, odds, or outcome reports are included. Critical evidence gap: no dated snapshot of the exact Text Arena | Math leaderboard with style control off was verified, so this pack does not assert Anthropic's Math rank as of July 17. The overall Arena snapshot and FrontierMath evaluations measure different things from the resolution criterion. web_fetch failed because multiple providers were configured; the requested agent-reach fallback returned RATE_LIMITED and was not retried. Evidence therefore rests on dated text exposed by web_search, rather than successfully fetched or independently archived originals. Some sources are mutable pages; only their dated pre-cutoff passages are represented, and historical version integrity could not be independently certified."
+}

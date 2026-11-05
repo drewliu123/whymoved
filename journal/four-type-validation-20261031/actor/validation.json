@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-10-31T17:29:33Z",
+  "completed_at": "2026-10-31T17:29:39.985772+00:00",
+  "overall": "部分满足",
+  "claim_checker": {
+    "script": "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+    "exit_code": 0,
+    "result": {
+      "passed": true,
+      "total": 27,
+      "failures": {}
+    },
+    "stdout": "logs/check_claims.stdout.log",
+    "stderr": "logs/check_claims.stderr.log",
+    "command": "logs/check_claims.command.json",
+    "scope": "R1-R8 structure/source-tier/time rules only; does not validate factual truth, accounting quality or causal ROI"
+  },
+  "protocol_checks": [
+    {
+      "id": "A",
+      "result": "已满足",
+      "evidence": "report first answer distinguishes investment / capacity / monetization / ROI; latest miss is prominent"
+    },
+    {
+      "id": "B",
+      "result": "已满足",
+      "evidence": "27 ledger claims; 6 official sources; 86 exact paragraphs verified against archived text; checker logs",
+      "limitation": "Issuer disclosures not independently audited in this case; quant outcomes and management assertions separated."
+    },
+    {
+      "id": "C",
+      "result": "已满足",
+      "evidence": "calculations.json K1-K7; Decimal arithmetic; no ROI fabricated",
+      "limitation": "Rounded quarter sums not precise annual filing figures; full-year growth-rate comparison omitted for lack of baseline."
+    },
+    {
+      "id": "D",
+      "result": "部分满足",
+      "evidence": "conditional statements, execution and timing, usable capacity boundary, allocation, funding and supplier limits addressed",
+      "limitation": "Board authorization thresholds and pay incentives not sourced; no psychological motive inferred."
+    },
+    {
+      "id": "E",
+      "result": "已满足",
+      "evidence": "3 sourced alternatives and 4 next checks with downgrade conditions"
+    },
+    {
+      "id": "F",
+      "result": "部分满足",
+      "evidence": "Markdown/HTML generated from report.json; same main paragraphs, tables and sources checked",
+      "limitation": "No visual/browser rendering verification of local HTML, no image export; coordinator-relayed independent review corrections recorded, not a full independent audit; this is human-coordinated content validation, not full automated delivery acceptance."
+    }
+  ],
+  "local_checks": {
+    "claim_references": true,
+    "quote_equality": true,
+    "no_future_sources": true,
+    "calculation_recomputed": true,
+    "canonical_paragraphs_in_both_presentations": true,
+    "issues": []
+  },
+  "accounting_review": [
+    "Cash PPE distinct from finance-lease-inclusive capex; no mechanical addition identity",
+    "CY2026 guidance distinct from FY26/FY27; FY27 H2 explicitly Jan-Jun 2027",
+    "190→175 guidance change classified separately from 175→170 delivery revision",
+    "FY27 Q1 >50 guidance versus 45.2 actual preserved",
+    "No published growth equated with AI investment ROI",
+    "Building-life change does not extend GPU depreciation assumption",
+    "Announcement of 2GW Wisconsin excluded from completed capacity; different capacity measures not summed",
+    "New segment reporting warning prevents invalid segment margin comparison"
+  ],
+  "independent_review_followup": {
+    "status": "six coordinator-relayed corrections addressed",
+    "record": "independent-review.md",
+    "new_retrieval": false
+  },
+  "self_challenge": {
+    "independent": false,
+    "reason": "User explicitly requested direct execution without delegation. Self-review is not represented as independent review.",
+    "principal_challenge": "Commercial success can reflect old-capacity optimization and pricing; unresolved incrementality of AI capital returns retained in answer."
+  },
+  "write_boundary": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor",
+  "external_writes": false,
+  "formal_journal_registration": false,
+  "credential_access": false,
+  "downloaded_code_execution": false,
+  "source_failures_recorded": true
+}

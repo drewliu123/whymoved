@@ -1,0 +1,215 @@
+{
+  "quote_basis": "official IR daily Last and High; price return excludes dividend",
+  "cutoff": "2026-10-31T12:19:06Z",
+  "collected_at": "2026-10-31T12:31:54Z",
+  "last_closed": "2026-10-30",
+  "close": 204.64,
+  "base_close": 228.38,
+  "month_return_pct": -10.394955775461955,
+  "week_return_pct": -2.9958285930982265,
+  "day_return_pct": -4.221660582233455,
+  "peak_high": {
+    "High": 243.37,
+    "HistoricalDate": "10/06/2026 00:00:00",
+    "Last": 239.24,
+    "Low": 238.93,
+    "Open": 242.1,
+    "Volume": 100868800
+  },
+  "peak_high_drawdown_pct": -15.914040350084246,
+  "peak_close": {
+    "High": 243.37,
+    "HistoricalDate": "10/06/2026 00:00:00",
+    "Last": 239.24,
+    "Low": 238.93,
+    "Open": 242.1,
+    "Volume": 100868800
+  },
+  "peak_close_drawdown_pct": -14.462464470824287,
+  "full_series": [
+    {
+      "High": 209.06,
+      "HistoricalDate": "10/30/2026 00:00:00",
+      "Last": 204.64,
+      "Low": 200.92,
+      "Open": 208.94,
+      "Volume": 168039400
+    },
+    {
+      "High": 215.33,
+      "HistoricalDate": "10/29/2026 00:00:00",
+      "Last": 213.66,
+      "Low": 212.08,
+      "Open": 214.36,
+      "Volume": 76216000
+    },
+    {
+      "High": 219.99,
+      "HistoricalDate": "10/28/2026 00:00:00",
+      "Last": 215.38,
+      "Low": 214.47,
+      "Open": 219.92,
+      "Volume": 92463400
+    },
+    {
+      "High": 219.19,
+      "HistoricalDate": "10/27/2026 00:00:00",
+      "Last": 217.94,
+      "Low": 215.53,
+      "Open": 218.31,
+      "Volume": 84542200
+    },
+    {
+      "High": 217.75,
+      "HistoricalDate": "10/26/2026 00:00:00",
+      "Last": 216.0,
+      "Low": 212.61,
+      "Open": 213.11,
+      "Volume": 90493500
+    },
+    {
+      "High": 213.85,
+      "HistoricalDate": "10/23/2026 00:00:00",
+      "Last": 210.96,
+      "Low": 210.18,
+      "Open": 210.99,
+      "Volume": 79987200
+    },
+    {
+      "High": 218.88,
+      "HistoricalDate": "10/22/2026 00:00:00",
+      "Last": 212.21,
+      "Low": 211.26,
+      "Open": 217.13,
+      "Volume": 124816000
+    },
+    {
+      "High": 222.19,
+      "HistoricalDate": "10/21/2026 00:00:00",
+      "Last": 221.97,
+      "Low": 217.66,
+      "Open": 220.96,
+      "Volume": 86620400
+    },
+    {
+      "High": 218.46,
+      "HistoricalDate": "10/20/2026 00:00:00",
+      "Last": 216.47,
+      "Low": 212.77,
+      "Open": 215.98,
+      "Volume": 78967900
+    },
+    {
+      "High": 219.62,
+      "HistoricalDate": "10/19/2026 00:00:00",
+      "Last": 217.09,
+      "Low": 214.7,
+      "Open": 218.1,
+      "Volume": 98403300
+    },
+    {
+      "High": 218.68,
+      "HistoricalDate": "10/16/2026 00:00:00",
+      "Last": 214.13,
+      "Low": 213.32,
+      "Open": 216.56,
+      "Volume": 120855100
+    },
+    {
+      "High": 218.47,
+      "HistoricalDate": "10/15/2026 00:00:00",
+      "Last": 217.23,
+      "Low": 212.85,
+      "Open": 215.3,
+      "Volume": 126789100
+    },
+    {
+      "High": 226.0,
+      "HistoricalDate": "10/14/2026 00:00:00",
+      "Last": 221.3,
+      "Low": 219.64,
+      "Open": 225.53,
+      "Volume": 117249000
+    },
+    {
+      "High": 228.64,
+      "HistoricalDate": "10/13/2026 00:00:00",
+      "Last": 228.52,
+      "Low": 223.06,
+      "Open": 224.34,
+      "Volume": 83846800
+    },
+    {
+      "High": 228.86,
+      "HistoricalDate": "10/12/2026 00:00:00",
+      "Last": 226.32,
+      "Low": 224.9,
+      "Open": 228.73,
+      "Volume": 70089000
+    },
+    {
+      "High": 233.92,
+      "HistoricalDate": "10/09/2026 00:00:00",
+      "Last": 229.28,
+      "Low": 229.11,
+      "Open": 233.84,
+      "Volume": 84470000
+    },
+    {
+      "High": 237.07,
+      "HistoricalDate": "10/08/2026 00:00:00",
+      "Last": 230.48,
+      "Low": 229.85,
+      "Open": 234.92,
+      "Volume": 118311700
+    },
+    {
+      "High": 239.08,
+      "HistoricalDate": "10/07/2026 00:00:00",
+      "Last": 237.47,
+      "Low": 236.38,
+      "Open": 237.69,
+      "Volume": 81485100
+    },
+    {
+      "High": 243.37,
+      "HistoricalDate": "10/06/2026 00:00:00",
+      "Last": 239.24,
+      "Low": 238.93,
+      "Open": 242.1,
+      "Volume": 100868800
+    },
+    {
+      "High": 240.1,
+      "HistoricalDate": "10/05/2026 00:00:00",
+      "Last": 238.9,
+      "Low": 235.15,
+      "Open": 236.09,
+      "Volume": 126639900
+    },
+    {
+      "High": 237.88,
+      "HistoricalDate": "10/02/2026 00:00:00",
+      "Last": 233.95,
+      "Low": 233.6,
+      "Open": 236.06,
+      "Volume": 134914600
+    },
+    {
+      "High": 232.29,
+      "HistoricalDate": "10/01/2026 00:00:00",
+      "Last": 230.86,
+      "Low": 228.16,
+      "Open": 229.98,
+      "Volume": 98369800
+    },
+    {
+      "High": 232.37,
+      "HistoricalDate": "09/30/2026 00:00:00",
+      "Last": 228.38,
+      "Low": 228.17,
+      "Open": 229.27,
+      "Volume": 121269300
+    }
+  ]
+}

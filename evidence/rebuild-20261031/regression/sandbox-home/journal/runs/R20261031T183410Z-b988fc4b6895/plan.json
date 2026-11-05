@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-10-31T17:25:57Z",
+  "budget": {
+    "max_followups": 0,
+    "max_queries": 1
+  },
+  "comparison": {
+    "period": "2026-10-31T17:25:57Z 原研究截点",
+    "scope": "四类型旧开发样本 theme；非 heldout；未重建历史可得性",
+    "unit": "保留原报告各表与结论单位"
+  },
+  "decision_needed": "仅验证冻结输入转换、渲染和归档流程；不开展新的投研决定。",
+  "development_notice": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。",
+  "entity": "Eaton Electrical Americas",
+  "executed_external_queries": 0,
+  "historical": false,
+  "hypotheses": [
+    {
+      "discriminating_observation": "render_report 校验/渲染退出码；research_run 归档与无变化差分。",
+      "explanation": "原冻结内容可在保留 schema 1 claims 条件下适配 schema 2 报告。"
+    }
+  ],
+  "original_plan": {
+    "as_of": "2026-10-31T17:25:57Z",
+    "comparison": "2025Q4/2026Q1/2026Q2美洲分部；Q2同比利润/现金；专项数据中心披露不跨口径连线",
+    "hypothesis": "数据中心采购形成显著订单；主题兑现应在交付爬坡后表现为利润与现金，而非只看积压",
+    "implementation_notes": "Swift PDFKit为本地提取工具；下载数据独立raw子目录；Python全部-I；不运行下载代码；HTML父任务统一消费report.json",
+    "method_reference": "../protocol.md; ../../plans/touyan-end-to-end-plan-v2-20261031.md#theme",
+    "queries": [
+      "site.eaton.com 2026 third quarter earnings October 2026 data center orders Electrical Americas",
+      "site.se.com 2026 third quarter revenues October 2026 data center",
+      "site.eaton.com 2026 capacity data center billion"
+    ],
+    "question": "AI数据中心用电增长如何转成电力设备供应商收入与利润，哪个环节最值得验证？",
+    "scope": "只写本theme目录；只读官方来源，不委派、不发布、不修改插件、不登记正式账本/作者库",
+    "source_budget": "6份采用官方文档/页面，均Eaton；无社区",
+    "status": "completed_with_gaps",
+    "steps": [
+      {
+        "status": "done",
+        "task": "读取协议、v2和证据格式"
+      },
+      {
+        "status": "done",
+        "task": "核实最新官方季度与时间"
+      },
+      {
+        "status": "done",
+        "task": "取得两至三期经营/现金和专项敞口"
+      },
+      {
+        "status": "done",
+        "task": "对照利润与现金、竞争扩产及敏感性边界"
+      },
+      {
+        "status": "done",
+        "task": "生成冻结JSON/Markdown和趋势数据"
+      }
+    ],
+    "stop_rule": "核心可靠材料足够即成品；不为缺失利润输入持续扩搜；保留partial",
+    "type": "theme"
+  },
+  "prior_judgment": "当前更值得验证的是Eaton Electrical Americas的数据中心配电与预集成供电设备：公司披露订单与收入增长，分部利润率出现恢复，与交付爬坡改善相容；尚未识别同批订单向收入的转换，价格、组合及并购基数也可解释部分变化。核心问题已从“AI会不会用更多电”推进到“新增产能能否把backlog按可接受成本转成收入、经营利润和现金”。本案例支持该环节优先研究，不足以判定全行业最优或计算纯AI增量利润。",
+  "queries": [
+    {
+      "purpose": "开发回归，不做新研究或历史证明",
+      "query": "offline local JSON audit; external queries not executed",
+      "question": "原材料可否安全适配？",
+      "source": "journal/four-type-validation-20261031/theme"
+    }
+  ],
+  "question": "AI数据中心用电增长如何转成电力设备供应商收入与利润，哪个环节最值得验证？",
+  "schema_version": 2,
+  "stop_condition": "开发回归渲染完成并记录归档成功或缺失元数据的阻塞；不检索新材料或伪造历史取证。",
+  "task": "主题到利润现金：复用冻结证据的开发回归",
+  "type": "theme"
+}

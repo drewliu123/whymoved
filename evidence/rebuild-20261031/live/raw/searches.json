@@ -1,0 +1,20 @@
+{
+  "native_web_queries": [
+    "Microsoft FY25 Q4 24.2 billion capital expenditures finance leases 6.5 17.1 cash",
+    "Microsoft capex finance leases cash flow Hacker News",
+    "Microsoft July 30 2025 24.2 capital expenditures finance leases cash 17.1 Reuters CNBC",
+    "Microsoft FY25 Q4 earnings call transcript cash paid property equipment finance leases 6.5 Microsoft.com",
+    "\"site:news.ycombinator.com\" \"Microsoft\" \"leases\" capex"
+  ],
+  "search_call_count": 9,
+  "breakdown": {
+    "native_web": 5,
+    "engine_actual_hn_queries": 2,
+    "direct_algolia_supplement": 2
+  },
+  "requested_engine_subqueries": 3,
+  "actual_engine_subqueries": 2,
+  "note": "Engine normalized to 2 subqueries. Count is logical search request count, not hidden provider retries, result pages or enrichment requests. 2 host WebFetch calls: official success, GeekWire 403; then 10 urllib GET requests including original retrieval and supplementary searches, all HTTP 200.",
+  "diagnostic_scope": "parent diagnostic copied; no fresh diagnose or login-backed doctor needed because run restricts to HN",
+  "native_results_use": "Only locate URLs; all accepted quotes separately fetched."
+}

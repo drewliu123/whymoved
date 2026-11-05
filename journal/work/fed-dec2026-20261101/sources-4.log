@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "errors": [
+    "candidate[11].origin_id must be a confirmed family string or null",
+    "candidate[12].origin_id must be a confirmed family string or null",
+    "candidate[13].origin_id must be a confirmed family string or null"
+  ]
+}

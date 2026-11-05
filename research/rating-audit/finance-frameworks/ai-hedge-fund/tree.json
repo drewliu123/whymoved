@@ -1,0 +1,1275 @@
+{
+  "sha": "b33175caa1289e180b535d663c89b7a0c04b4726",
+  "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/b33175caa1289e180b535d663c89b7a0c04b4726",
+  "tree": [
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05855c229c248e2fa5f9a0aeb7f09105c1b416e8",
+      "size": 1633,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/05855c229c248e2fa5f9a0aeb7f09105c1b416e8"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8edd078bc8cc3356f71761d1dc4635f40fef0c53",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/8edd078bc8cc3356f71761d1dc4635f40fef0c53"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4bb49cc2e84610253f073d1a41628bd12e1d6a04",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/4bb49cc2e84610253f073d1a41628bd12e1d6a04"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44f432028e8e379d8931fb116b4fdfca5ad38047",
+      "size": 322,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/44f432028e8e379d8931fb116b4fdfca5ad38047"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "decdf1810fb820f083294ecf91c94b043da10c17",
+      "size": 212,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/decdf1810fb820f083294ecf91c94b043da10c17"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8069c7ddf4fae7ebb2ce176dffd2834196afff9c",
+      "size": 653,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/8069c7ddf4fae7ebb2ce176dffd2834196afff9c"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ed5ed19cfc0ec1448fca7e6b6be72abaa2b8b85",
+      "size": 1068,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/6ed5ed19cfc0ec1448fca7e6b6be72abaa2b8b85"
+    },
+    {
+      "path": "Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8200cddbf414f331cab99771acfccc4434fbfcd",
+      "size": 537,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/a8200cddbf414f331cab99771acfccc4434fbfcd"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7123a5dcea0073dc9cc760e6b1f1abb16d791a20",
+      "size": 3237,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/7123a5dcea0073dc9cc760e6b1f1abb16d791a20"
+    },
+    {
+      "path": "ROADMAP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ebaeab42a187149afaf798db8914f699dd50288",
+      "size": 8363,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/3ebaeab42a187149afaf798db8914f699dd50288"
+    },
+    {
+      "path": "VISION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24256e1528dca5d4f7ea1150111cdb5a52e937fd",
+      "size": 9176,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/24256e1528dca5d4f7ea1150111cdb5a52e937fd"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "793e92632c2c3fe441f26381d3a6c1db3c5f2226",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/793e92632c2c3fe441f26381d3a6c1db3c5f2226"
+    },
+    {
+      "path": "assets/ai-hedge-fund-system.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c96445001440e58a3c656a1030f2d970757e087f",
+      "size": 5064,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/c96445001440e58a3c656a1030f2d970757e087f"
+    },
+    {
+      "path": "hedge_fund",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e3ed2046a30e6f8e44223017f17195a13436e7a7",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/e3ed2046a30e6f8e44223017f17195a13436e7a7"
+    },
+    {
+      "path": "hedge_fund/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "968c4a210befdf935b42fcb8d318bbbec1d348ca",
+      "size": 9152,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/968c4a210befdf935b42fcb8d318bbbec1d348ca"
+    },
+    {
+      "path": "hedge_fund/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6efa007019550f7a561bbd7dc3bd66b164ff5137",
+      "size": 253,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/6efa007019550f7a561bbd7dc3bd66b164ff5137"
+    },
+    {
+      "path": "hedge_fund/backtesting",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e75e7a687a9c095a9f3dffa938b3b4820ec0be30",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/e75e7a687a9c095a9f3dffa938b3b4820ec0be30"
+    },
+    {
+      "path": "hedge_fund/backtesting/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9d17c7c9db3d3739c7f33d77d078d2e4bf0cd2f",
+      "size": 697,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/c9d17c7c9db3d3739c7f33d77d078d2e4bf0cd2f"
+    },
+    {
+      "path": "hedge_fund/backtesting/fund.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f03327e077179853b081c45fe21a5b695538206b",
+      "size": 9941,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/f03327e077179853b081c45fe21a5b695538206b"
+    },
+    {
+      "path": "hedge_fund/backtesting/research.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd4e3811695f724506ea7e320cc0a0233da064e8",
+      "size": 3156,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/fd4e3811695f724506ea7e320cc0a0233da064e8"
+    },
+    {
+      "path": "hedge_fund/backtesting/test_fund.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b92e54ac2dcbce120f3315ab6b1d4cbfb2d5365f",
+      "size": 17250,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/b92e54ac2dcbce120f3315ab6b1d4cbfb2d5365f"
+    },
+    {
+      "path": "hedge_fund/backtesting/test_research.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c60c979011456dd77176debdf00843faa13d6e",
+      "size": 1013,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/e5c60c979011456dd77176debdf00843faa13d6e"
+    },
+    {
+      "path": "hedge_fund/brokers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f12d01b2140d9342ea041aadcba8e9d815efe090",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/f12d01b2140d9342ea041aadcba8e9d815efe090"
+    },
+    {
+      "path": "hedge_fund/brokers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "517b206670cd187192a480c88cbf9b56658feaef",
+      "size": 429,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/517b206670cd187192a480c88cbf9b56658feaef"
+    },
+    {
+      "path": "hedge_fund/brokers/costs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b47f4e20510e7fbb8f162de64910a7e9540c9e2",
+      "size": 1581,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/8b47f4e20510e7fbb8f162de64910a7e9540c9e2"
+    },
+    {
+      "path": "hedge_fund/brokers/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f00454401e6efd483cd0b92cc2d52583e8d4fac",
+      "size": 994,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/8f00454401e6efd483cd0b92cc2d52583e8d4fac"
+    },
+    {
+      "path": "hedge_fund/brokers/paper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c06ef63f6ad14d07156e63ce9b7946966294872e",
+      "size": 3130,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/c06ef63f6ad14d07156e63ce9b7946966294872e"
+    },
+    {
+      "path": "hedge_fund/brokers/protocol.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b816f2bfff2f83fe2aa7ae8dc1409f4f15d3c91",
+      "size": 1173,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/9b816f2bfff2f83fe2aa7ae8dc1409f4f15d3c91"
+    },
+    {
+      "path": "hedge_fund/brokers/sim.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f69757b078bbff395e29df2828ab69b7fa396c0",
+      "size": 2566,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/5f69757b078bbff395e29df2828ab69b7fa396c0"
+    },
+    {
+      "path": "hedge_fund/brokers/test_costs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f62b3dfc9b41a9325f616587fa1ed97fcdc31d",
+      "size": 1139,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/79f62b3dfc9b41a9325f616587fa1ed97fcdc31d"
+    },
+    {
+      "path": "hedge_fund/brokers/test_paper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac7ce90e0b3bd103ae63940af0c15404d8ab98ef",
+      "size": 2585,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/ac7ce90e0b3bd103ae63940af0c15404d8ab98ef"
+    },
+    {
+      "path": "hedge_fund/brokers/test_sim.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8288b22dd4a22ac8f7d5cb13d88222298d7ce016",
+      "size": 3759,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/8288b22dd4a22ac8f7d5cb13d88222298d7ce016"
+    },
+    {
+      "path": "hedge_fund/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1305b3316ccf4d2f209a932706d931998acb7da4",
+      "size": 621,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/1305b3316ccf4d2f209a932706d931998acb7da4"
+    },
+    {
+      "path": "hedge_fund/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35054ec9544df049741254a52399cffd5c411339",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/35054ec9544df049741254a52399cffd5c411339"
+    },
+    {
+      "path": "hedge_fund/data/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba55608b491d818ba095dc55ae42b3cbd5c043b0",
+      "size": 734,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/ba55608b491d818ba095dc55ae42b3cbd5c043b0"
+    },
+    {
+      "path": "hedge_fund/data/bars.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0502321bcd27f8dd2ef8c43b6f12cbec24c47984",
+      "size": 6015,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/0502321bcd27f8dd2ef8c43b6f12cbec24c47984"
+    },
+    {
+      "path": "hedge_fund/data/cached.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f23935fe4272e8ae8baffbd34b2ea5b2178de5",
+      "size": 8372,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/91f23935fe4272e8ae8baffbd34b2ea5b2178de5"
+    },
+    {
+      "path": "hedge_fund/data/client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21f9ecf451f3231133f22a24d237726423213d5d",
+      "size": 11435,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/21f9ecf451f3231133f22a24d237726423213d5d"
+    },
+    {
+      "path": "hedge_fund/data/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbc33227ffa7f5ad27367f6388dd874a3ce28484",
+      "size": 8873,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/cbc33227ffa7f5ad27367f6388dd874a3ce28484"
+    },
+    {
+      "path": "hedge_fund/data/protocol.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "170516a4d00583515acb4ff30fc7637c1226e835",
+      "size": 2443,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/170516a4d00583515acb4ff30fc7637c1226e835"
+    },
+    {
+      "path": "hedge_fund/data/sessions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f70c00d8e4cc2f83a1e7d5e8817485f167066b43",
+      "size": 1243,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/f70c00d8e4cc2f83a1e7d5e8817485f167066b43"
+    },
+    {
+      "path": "hedge_fund/data/test_bars.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f015e3bdeb32ddc8af2ef4a6857a9b7e8e47bb43",
+      "size": 4462,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/f015e3bdeb32ddc8af2ef4a6857a9b7e8e47bb43"
+    },
+    {
+      "path": "hedge_fund/data/test_cached.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b0dacf19a7b87e28f630091a59b74d15eb3e484",
+      "size": 6572,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/1b0dacf19a7b87e28f630091a59b74d15eb3e484"
+    },
+    {
+      "path": "hedge_fund/data/test_client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "935b4496c70adaaa37e9051d5831c03083f497ce",
+      "size": 4016,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/935b4496c70adaaa37e9051d5831c03083f497ce"
+    },
+    {
+      "path": "hedge_fund/data/test_client_contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6587a5cf6f5c8ed58f32f3a4bba800335bad725",
+      "size": 8042,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/d6587a5cf6f5c8ed58f32f3a4bba800335bad725"
+    },
+    {
+      "path": "hedge_fund/features",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b9ee7742429ae8fd95a2f4979be34fefe62be9c",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/3b9ee7742429ae8fd95a2f4979be34fefe62be9c"
+    },
+    {
+      "path": "hedge_fund/features/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e8eac06464f04f78726b56169dae2210a6ab624",
+      "size": 446,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/7e8eac06464f04f78726b56169dae2210a6ab624"
+    },
+    {
+      "path": "hedge_fund/features/breakpoints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8599630edc9538dc34a2a0b66d2f7542edb78439",
+      "size": 5423,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/8599630edc9538dc34a2a0b66d2f7542edb78439"
+    },
+    {
+      "path": "hedge_fund/features/intraday.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d347ff4fd3c836f76f3044194610f5c44824d1d6",
+      "size": 9243,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/d347ff4fd3c836f76f3044194610f5c44824d1d6"
+    },
+    {
+      "path": "hedge_fund/features/snapshot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d732de7bdae5247be73e4b0791b47ad9de7d8af",
+      "size": 13107,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/2d732de7bdae5247be73e4b0791b47ad9de7d8af"
+    },
+    {
+      "path": "hedge_fund/features/test_breakpoints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "750b57ff14831ceb57ec7f3e5664855d0d684667",
+      "size": 3675,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/750b57ff14831ceb57ec7f3e5664855d0d684667"
+    },
+    {
+      "path": "hedge_fund/features/test_intraday.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edffc851576fa5705d143cc0529727a9228ebbdb",
+      "size": 7901,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/edffc851576fa5705d143cc0529727a9228ebbdb"
+    },
+    {
+      "path": "hedge_fund/features/test_snapshot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76557255687a5f4f3604232ddccc7fdf47e0c7bf",
+      "size": 11012,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/76557255687a5f4f3604232ddccc7fdf47e0c7bf"
+    },
+    {
+      "path": "hedge_fund/fund",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b57b88b8e4cfd830ae50c4bdd9cd7686824ba787",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/b57b88b8e4cfd830ae50c4bdd9cd7686824ba787"
+    },
+    {
+      "path": "hedge_fund/fund/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57ec045dfd3e655d175726d76ba16a30558cefe6",
+      "size": 778,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/57ec045dfd3e655d175726d76ba16a30558cefe6"
+    },
+    {
+      "path": "hedge_fund/fund/example.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a3ae783a15be749a4a674c57be9af1cbf8b6620",
+      "size": 1596,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/4a3ae783a15be749a4a674c57be9af1cbf8b6620"
+    },
+    {
+      "path": "hedge_fund/fund/spec.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "258a2591b1b6b11479650ee6ef511e62a866bdec",
+      "size": 13189,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/258a2591b1b6b11479650ee6ef511e62a866bdec"
+    },
+    {
+      "path": "hedge_fund/fund/storage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2d2a17135a2a97d4e63de2c2afcae6a650c96fb",
+      "size": 1490,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/b2d2a17135a2a97d4e63de2c2afcae6a650c96fb"
+    },
+    {
+      "path": "hedge_fund/fund/test_spec.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3b91ea504d6612e18fb07a551d268a77e135b14",
+      "size": 14314,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/a3b91ea504d6612e18fb07a551d268a77e135b14"
+    },
+    {
+      "path": "hedge_fund/fund/test_strategy_library.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84091dbbcf223c7fad03d37a59ecd41b6c1c02a3",
+      "size": 2376,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/84091dbbcf223c7fad03d37a59ecd41b6c1c02a3"
+    },
+    {
+      "path": "hedge_fund/llm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5317ea0b933de7e77bf444bf6fadd3831bae6663",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/5317ea0b933de7e77bf444bf6fadd3831bae6663"
+    },
+    {
+      "path": "hedge_fund/llm/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb46906a4da9142ab1de3195170e952c4bc2bd68",
+      "size": 894,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/eb46906a4da9142ab1de3195170e952c4bc2bd68"
+    },
+    {
+      "path": "hedge_fund/llm/api_models.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01a642878ece97aad3d93abfb84d4cf8e7436164",
+      "size": 924,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/01a642878ece97aad3d93abfb84d4cf8e7436164"
+    },
+    {
+      "path": "hedge_fund/llm/cache.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2341828092358c483fe7a5440952070b9aa56567",
+      "size": 1661,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/2341828092358c483fe7a5440952070b9aa56567"
+    },
+    {
+      "path": "hedge_fund/llm/client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d59a36972758de1bdb68bc623975b1c892d48ce",
+      "size": 14611,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/1d59a36972758de1bdb68bc623975b1c892d48ce"
+    },
+    {
+      "path": "hedge_fund/llm/contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fbd70e26564edba47c087dd847ab5155c69bcd5",
+      "size": 6372,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/5fbd70e26564edba47c087dd847ab5155c69bcd5"
+    },
+    {
+      "path": "hedge_fund/llm/registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "177397452c5d701847a456161193d05b844fd5c5",
+      "size": 2448,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/177397452c5d701847a456161193d05b844fd5c5"
+    },
+    {
+      "path": "hedge_fund/llm/test_client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96bb9e5d2ff5978f1cfa80215f3e4e4b3ce54097",
+      "size": 29056,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/96bb9e5d2ff5978f1cfa80215f3e4e4b3ce54097"
+    },
+    {
+      "path": "hedge_fund/llm/test_contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e99725350c0c07610f73a08e7c6b768c1f42a807",
+      "size": 10220,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/e99725350c0c07610f73a08e7c6b768c1f42a807"
+    },
+    {
+      "path": "hedge_fund/llm/test_watch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3428f459c0b9c6035547f0a0fc9d82f09582af8",
+      "size": 4697,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/f3428f459c0b9c6035547f0a0fc9d82f09582af8"
+    },
+    {
+      "path": "hedge_fund/llm/watch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c336b1ce82a87bf540698d41d2558dfe7f157e84",
+      "size": 3682,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/c336b1ce82a87bf540698d41d2558dfe7f157e84"
+    },
+    {
+      "path": "hedge_fund/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "621acafc469ccbc81712306a7334f41b77195166",
+      "size": 1929,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/621acafc469ccbc81712306a7334f41b77195166"
+    },
+    {
+      "path": "hedge_fund/paper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5a349bf7cb11f43b064ccecf74495f1f5283be6",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/d5a349bf7cb11f43b064ccecf74495f1f5283be6"
+    },
+    {
+      "path": "hedge_fund/paper/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23f8cf937f0f2f340fec20093eeb9a4622695243",
+      "size": 1868,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/23f8cf937f0f2f340fec20093eeb9a4622695243"
+    },
+    {
+      "path": "hedge_fund/paper/deployed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fef9993edb5b4fbe4de4da778ef226e339eb9f05",
+      "size": 3507,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/fef9993edb5b4fbe4de4da778ef226e339eb9f05"
+    },
+    {
+      "path": "hedge_fund/paper/ledger.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06a6a82286ffd78673b78c5c42a76ad9e2fc31bb",
+      "size": 12045,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/06a6a82286ffd78673b78c5c42a76ad9e2fc31bb"
+    },
+    {
+      "path": "hedge_fund/paper/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8552bf9ba9c02608e48be5a44df008a26c7aa8fb",
+      "size": 11325,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/8552bf9ba9c02608e48be5a44df008a26c7aa8fb"
+    },
+    {
+      "path": "hedge_fund/paper/test_ledger.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98030a1837e84217160fbeaa51d95821b5b3383a",
+      "size": 7353,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/98030a1837e84217160fbeaa51d95821b5b3383a"
+    },
+    {
+      "path": "hedge_fund/paper/test_runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e11481e39f3ac5ee1fbb096f02f4472804af229d",
+      "size": 12517,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/e11481e39f3ac5ee1fbb096f02f4472804af229d"
+    },
+    {
+      "path": "hedge_fund/paper/test_tick.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f47a20007ddd24b469628dfaa4fd0b64dbb596cf",
+      "size": 13952,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/f47a20007ddd24b469628dfaa4fd0b64dbb596cf"
+    },
+    {
+      "path": "hedge_fund/paper/tick.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06efb309707a819e79171c01f0ddf99eaf61662b",
+      "size": 12722,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/06efb309707a819e79171c01f0ddf99eaf61662b"
+    },
+    {
+      "path": "hedge_fund/paths.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc9926963c5a38bcc29a7e953356af5275eeaa27",
+      "size": 1846,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/dc9926963c5a38bcc29a7e953356af5275eeaa27"
+    },
+    {
+      "path": "hedge_fund/pipeline",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3841983e1507d44d3fd8ead44ccbcd3d61b069e",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/a3841983e1507d44d3fd8ead44ccbcd3d61b069e"
+    },
+    {
+      "path": "hedge_fund/pipeline/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42cf6b85efb0f771055c71ab342a269baabaaef8",
+      "size": 834,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/42cf6b85efb0f771055c71ab342a269baabaaef8"
+    },
+    {
+      "path": "hedge_fund/pipeline/clock.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eef6385ec2ca8c6403cc71026ad0bb71847e8be",
+      "size": 11684,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/1eef6385ec2ca8c6403cc71026ad0bb71847e8be"
+    },
+    {
+      "path": "hedge_fund/pipeline/execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da8a369255288dbb899e7ec2e6721715cc59965f",
+      "size": 1878,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/da8a369255288dbb899e7ec2e6721715cc59965f"
+    },
+    {
+      "path": "hedge_fund/pipeline/fixtures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ecf1264ede4f96234c40a0b0c6cc26032fb9644d",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/ecf1264ede4f96234c40a0b0c6cc26032fb9644d"
+    },
+    {
+      "path": "hedge_fund/pipeline/fixtures/record_before_intraday.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab6e0814a27bde5ec134cc0fc52c79fabc32b878",
+      "size": 2024,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/ab6e0814a27bde5ec134cc0fc52c79fabc32b878"
+    },
+    {
+      "path": "hedge_fund/pipeline/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a0cd636b1293d461b4d69881f2a2c13e744bbbc",
+      "size": 4424,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/2a0cd636b1293d461b4d69881f2a2c13e744bbbc"
+    },
+    {
+      "path": "hedge_fund/pipeline/session.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87e5a810e4f5ddb694744a1bd7a556aec9a4494c",
+      "size": 11331,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/87e5a810e4f5ddb694744a1bd7a556aec9a4494c"
+    },
+    {
+      "path": "hedge_fund/pipeline/stages.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09b19938ba9a04b49ae1c81873a3890612b7739b",
+      "size": 9231,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/09b19938ba9a04b49ae1c81873a3890612b7739b"
+    },
+    {
+      "path": "hedge_fund/pipeline/test_clock.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6c6dfda112c2ca25952b1931f264ba3714604d8",
+      "size": 11458,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/a6c6dfda112c2ca25952b1931f264ba3714604d8"
+    },
+    {
+      "path": "hedge_fund/pipeline/test_execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "864f6b86e387ea00593706e3d06486378210bf48",
+      "size": 1853,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/864f6b86e387ea00593706e3d06486378210bf48"
+    },
+    {
+      "path": "hedge_fund/pipeline/test_session.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8331e39367b09dc996b53c63c842d878fc62404b",
+      "size": 10061,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/8331e39367b09dc996b53c63c842d878fc62404b"
+    },
+    {
+      "path": "hedge_fund/pipeline/test_stages.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b402d69c1547661f000bda3629b6ec28255d7f54",
+      "size": 19877,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/b402d69c1547661f000bda3629b6ec28255d7f54"
+    },
+    {
+      "path": "hedge_fund/pipeline/test_timing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89b73a70ff821f569913fe69ef6f0e900e446b4b",
+      "size": 9656,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/89b73a70ff821f569913fe69ef6f0e900e446b4b"
+    },
+    {
+      "path": "hedge_fund/portfolio",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad3a64874aec8eea2c3ffd99ae4bb9a034dbe089",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/ad3a64874aec8eea2c3ffd99ae4bb9a034dbe089"
+    },
+    {
+      "path": "hedge_fund/portfolio/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cf9c3a12bb6ce8dd8fa54c85051e1fe7e00e985",
+      "size": 262,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/0cf9c3a12bb6ce8dd8fa54c85051e1fe7e00e985"
+    },
+    {
+      "path": "hedge_fund/portfolio/construction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f2a3a433fd5295413024c12102e484c4f70d1f5",
+      "size": 5101,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/9f2a3a433fd5295413024c12102e484c4f70d1f5"
+    },
+    {
+      "path": "hedge_fund/portfolio/test_construction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "350470288524eb9ea45bf3e981089f0b64b5141f",
+      "size": 7527,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/350470288524eb9ea45bf3e981089f0b64b5141f"
+    },
+    {
+      "path": "hedge_fund/portfolio/validation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19dd1d204e54ef67501a06b20b9c2280247fe28c",
+      "size": 4834,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/19dd1d204e54ef67501a06b20b9c2280247fe28c"
+    },
+    {
+      "path": "hedge_fund/risk",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d93bbaf06947a3861cdcf80bb4d3be36637f71ea",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/d93bbaf06947a3861cdcf80bb4d3be36637f71ea"
+    },
+    {
+      "path": "hedge_fund/risk/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c430301715bfc0387b03c69f16e24e14fb340e6",
+      "size": 297,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/6c430301715bfc0387b03c69f16e24e14fb340e6"
+    },
+    {
+      "path": "hedge_fund/risk/limits.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "364d9b8406cb6d7c143d24117040aac15c8ec4f3",
+      "size": 4828,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/364d9b8406cb6d7c143d24117040aac15c8ec4f3"
+    },
+    {
+      "path": "hedge_fund/risk/test_limits.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74c722e3d9786d10f6cf34023303dff87ec061c6",
+      "size": 3988,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/74c722e3d9786d10f6cf34023303dff87ec061c6"
+    },
+    {
+      "path": "hedge_fund/run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b2b97843fcfbb3f4378af54fe07498a507a798e",
+      "size": 16955,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/5b2b97843fcfbb3f4378af54fe07498a507a798e"
+    },
+    {
+      "path": "hedge_fund/scorecard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01316f921722081b0e932523c6bc9b7837751b13",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/01316f921722081b0e932523c6bc9b7837751b13"
+    },
+    {
+      "path": "hedge_fund/scorecard/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90e5306894f8e9c6b911420fe2fbbc4af802861c",
+      "size": 1315,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/90e5306894f8e9c6b911420fe2fbbc4af802861c"
+    },
+    {
+      "path": "hedge_fund/scorecard/analysts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46baf6057bacb308404143ea4e071d3105aadada",
+      "size": 7150,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/46baf6057bacb308404143ea4e071d3105aadada"
+    },
+    {
+      "path": "hedge_fund/scorecard/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29faa7329bfdded6705a60da2af25830186af0f7",
+      "size": 2380,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/29faa7329bfdded6705a60da2af25830186af0f7"
+    },
+    {
+      "path": "hedge_fund/scorecard/strategies.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74053ad1bf2cfaf9af3f57f7422e06643a9a6afc",
+      "size": 3818,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/74053ad1bf2cfaf9af3f57f7422e06643a9a6afc"
+    },
+    {
+      "path": "hedge_fund/scorecard/test_scorecard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "873eedc94b9d1525348594d3fe0c23ea1a461b4d",
+      "size": 16223,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/873eedc94b9d1525348594d3fe0c23ea1a461b4d"
+    },
+    {
+      "path": "hedge_fund/signals",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd7c2f3c3c9540c1c1c7f570b45930d981e2f276",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/dd7c2f3c3c9540c1c1c7f570b45930d981e2f276"
+    },
+    {
+      "path": "hedge_fund/signals/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d09b88caa7e236d4a7d29118796ec4adbc23659",
+      "size": 2529,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/0d09b88caa7e236d4a7d29118796ec4adbc23659"
+    },
+    {
+      "path": "hedge_fund/signals/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6be1d9e86c770a9561fb643f1dbdb3eba623076e",
+      "size": 3438,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/6be1d9e86c770a9561fb643f1dbdb3eba623076e"
+    },
+    {
+      "path": "hedge_fund/signals/buffett.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6753190ce500f141d52c960708dc0ae237a2ac8",
+      "size": 2428,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/d6753190ce500f141d52c960708dc0ae237a2ac8"
+    },
+    {
+      "path": "hedge_fund/signals/druckenmiller.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa74f7aee881fa68de6acf7227cd50a68fbfbb71",
+      "size": 3085,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/aa74f7aee881fa68de6acf7227cd50a68fbfbb71"
+    },
+    {
+      "path": "hedge_fund/signals/graham.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08f5d1f2847e1ecb1aaefa956bdff0482f7660eb",
+      "size": 2680,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/08f5d1f2847e1ecb1aaefa956bdff0482f7660eb"
+    },
+    {
+      "path": "hedge_fund/signals/llm_agent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d227961ef17c1e8b19165910b9cde29bfb0e332",
+      "size": 9346,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/8d227961ef17c1e8b19165910b9cde29bfb0e332"
+    },
+    {
+      "path": "hedge_fund/signals/lynch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c8138f965101412e536649d9b7d96c6e2126563",
+      "size": 2740,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/5c8138f965101412e536649d9b7d96c6e2126563"
+    },
+    {
+      "path": "hedge_fund/signals/munger.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a40995ca33d3018bfbe97d2375b15349d7cc1e4f",
+      "size": 2623,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/a40995ca33d3018bfbe97d2375b15349d7cc1e4f"
+    },
+    {
+      "path": "hedge_fund/signals/pead.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3c0d43f794d64acd766c25ea214773ffe56d92d",
+      "size": 6346,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/f3c0d43f794d64acd766c25ea214773ffe56d92d"
+    },
+    {
+      "path": "hedge_fund/signals/test_llm_agents.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd018a34171957e2042415fa55956463b6f72e9f",
+      "size": 12735,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/dd018a34171957e2042415fa55956463b6f72e9f"
+    },
+    {
+      "path": "hedge_fund/signals/test_signals.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "712a99e8d13f8f7ac63a1e2230578b3bd6a25f5f",
+      "size": 5479,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/712a99e8d13f8f7ac63a1e2230578b3bd6a25f5f"
+    },
+    {
+      "path": "hedge_fund/strategies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ed3d788a1da5846c6e72d0914256f5dfaf70451",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/0ed3d788a1da5846c6e72d0914256f5dfaf70451"
+    },
+    {
+      "path": "hedge_fund/strategies/deep-value.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52c9ae7dd924bd14db7b61d5c2643aca68bb616",
+      "size": 398,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/e52c9ae7dd924bd14db7b61d5c2643aca68bb616"
+    },
+    {
+      "path": "hedge_fund/strategies/earnings-drift.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a51375021ee90e954fd9a1532cc8ccdda2f7b1d",
+      "size": 343,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/7a51375021ee90e954fd9a1532cc8ccdda2f7b1d"
+    },
+    {
+      "path": "hedge_fund/strategies/fundamental-ls.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6b58b9a8ddd3eab7fd499e22045d6b268d9025f",
+      "size": 520,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/e6b58b9a8ddd3eab7fd499e22045d6b268d9025f"
+    },
+    {
+      "path": "hedge_fund/strategies/inflections.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bd6184a5e3b0c08f1fc214f7c508756e201fdeb",
+      "size": 340,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/7bd6184a5e3b0c08f1fc214f7c508756e201fdeb"
+    },
+    {
+      "path": "hedge_fund/test_run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f328e72c5f80ab3e3587339f18d3d7d65848bfa",
+      "size": 12428,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/7f328e72c5f80ab3e3587339f18d3d7d65848bfa"
+    },
+    {
+      "path": "hedge_fund/tui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fed075123c399778d09895fc2133f38df67b784",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/0fed075123c399778d09895fc2133f38df67b784"
+    },
+    {
+      "path": "hedge_fund/tui/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fab6ac90e46df016402e9bb6aa3e25f05211aee2",
+      "size": 1594,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/fab6ac90e46df016402e9bb6aa3e25f05211aee2"
+    },
+    {
+      "path": "hedge_fund/tui/__main__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b89ec2858fab3afdc59e0e936cc188a129616b4",
+      "size": 187,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/5b89ec2858fab3afdc59e0e936cc188a129616b4"
+    },
+    {
+      "path": "hedge_fund/tui/app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43de6748b43f3eee01c141c2c951e23734e9c2d4",
+      "size": 1277,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/43de6748b43f3eee01c141c2c951e23734e9c2d4"
+    },
+    {
+      "path": "hedge_fund/tui/app.tcss",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1abdc56a8d6c713bda9d0a91d32bc114265d0db",
+      "size": 8092,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/e1abdc56a8d6c713bda9d0a91d32bc114265d0db"
+    },
+    {
+      "path": "hedge_fund/tui/backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "321a6beabedd00ce84b5d262526f1975f5ad6fc3",
+      "size": 20385,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/321a6beabedd00ce84b5d262526f1975f5ad6fc3"
+    },
+    {
+      "path": "hedge_fund/tui/builder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c0dcf0191b0b9d5799710c44b565d59484d5fb5",
+      "size": 29984,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/6c0dcf0191b0b9d5799710c44b565d59484d5fb5"
+    },
+    {
+      "path": "hedge_fund/tui/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "341a60c09b8fb69544efd0f305db2182d44d6f9d",
+      "size": 1395,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/341a60c09b8fb69544efd0f305db2182d44d6f9d"
+    },
+    {
+      "path": "hedge_fund/tui/fixtures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49830e8ae2db0a1c480897f6399a1b3e089ec643",
+      "size": 4499,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/49830e8ae2db0a1c480897f6399a1b3e089ec643"
+    },
+    {
+      "path": "hedge_fund/tui/funds.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5bc77ccd0c656cb88284cc8e2367f3cb71efdb0",
+      "size": 18363,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/c5bc77ccd0c656cb88284cc8e2367f3cb71efdb0"
+    },
+    {
+      "path": "hedge_fund/tui/home.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87fdbc0ca391082b401af6873052ac60431ee0fb",
+      "size": 10719,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/87fdbc0ca391082b401af6873052ac60431ee0fb"
+    },
+    {
+      "path": "hedge_fund/tui/keys.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9b43b7f58c7340769b5bc53c9dec299a2912e77",
+      "size": 3559,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/b9b43b7f58c7340769b5bc53c9dec299a2912e77"
+    },
+    {
+      "path": "hedge_fund/tui/palette.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "642786bd7818ef3dc54ea066cfddf90bac1a4205",
+      "size": 1372,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/642786bd7818ef3dc54ea066cfddf90bac1a4205"
+    },
+    {
+      "path": "hedge_fund/tui/paper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64165f7d344c23c193e26a75ed23e95713d7efce",
+      "size": 33548,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/64165f7d344c23c193e26a75ed23e95713d7efce"
+    },
+    {
+      "path": "hedge_fund/tui/paper_view.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfce7920d269bb4d3031ca657efd631d71ad0f64",
+      "size": 19178,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/dfce7920d269bb4d3031ca657efd631d71ad0f64"
+    },
+    {
+      "path": "hedge_fund/tui/report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac80d32ddca1325fdc11d1cee915df44534973ad",
+      "size": 28288,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/ac80d32ddca1325fdc11d1cee915df44534973ad"
+    },
+    {
+      "path": "hedge_fund/tui/scorecard_view.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bfb01f6db5f0255ebfd7409c8e30aea3949bf22",
+      "size": 4691,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/5bfb01f6db5f0255ebfd7409c8e30aea3949bf22"
+    },
+    {
+      "path": "hedge_fund/tui/shared.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1219f528b395990ffb95d9bd37788245cfe2fe8",
+      "size": 11536,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/c1219f528b395990ffb95d9bd37788245cfe2fe8"
+    },
+    {
+      "path": "hedge_fund/tui/test_backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7663613dade0e3ad90a84c1e1f7eca823b8f778",
+      "size": 2797,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/d7663613dade0e3ad90a84c1e1f7eca823b8f778"
+    },
+    {
+      "path": "hedge_fund/tui/test_builder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d706ead92fc7d335599bb753d16a9b2818c50ee9",
+      "size": 20418,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/d706ead92fc7d335599bb753d16a9b2818c50ee9"
+    },
+    {
+      "path": "hedge_fund/tui/test_funds.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "217ad720dfe130e00238ccb9fd170a4f6f026173",
+      "size": 4156,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/217ad720dfe130e00238ccb9fd170a4f6f026173"
+    },
+    {
+      "path": "hedge_fund/tui/test_home.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "137a6e41148584e1f3c0d0a2e309955a6a5a754c",
+      "size": 5428,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/137a6e41148584e1f3c0d0a2e309955a6a5a754c"
+    },
+    {
+      "path": "hedge_fund/tui/test_paper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72408080a625f430f7d56525176f97c3c68b54e7",
+      "size": 19924,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/72408080a625f430f7d56525176f97c3c68b54e7"
+    },
+    {
+      "path": "hedge_fund/tui/test_paper_view.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70c08ad9dff8298a8ac535dde5677e9066a295ac",
+      "size": 8982,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/70c08ad9dff8298a8ac535dde5677e9066a295ac"
+    },
+    {
+      "path": "hedge_fund/tui/test_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "305fd95e87b37dd7ebf23827d043cba03f5c442f",
+      "size": 5302,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/305fd95e87b37dd7ebf23827d043cba03f5c442f"
+    },
+    {
+      "path": "hedge_fund/tui/test_scorecard_view.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dda0ca1a22296e2d3da6a6696372aa2a05872749",
+      "size": 2312,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/dda0ca1a22296e2d3da6a6696372aa2a05872749"
+    },
+    {
+      "path": "hedge_fund/tui/widgets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "483f95db67f3f762dd05569dd9d9953d1d1afa11",
+      "size": 2025,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/483f95db67f3f762dd05569dd9d9953d1d1afa11"
+    },
+    {
+      "path": "hedge_fund/validation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4646e577e30df75c062d1194595e28cf40e55971",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/4646e577e30df75c062d1194595e28cf40e55971"
+    },
+    {
+      "path": "hedge_fund/validation/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e73dd2c74ad95e4c3d30eb495a76d605ef2082c",
+      "size": 122,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/1e73dd2c74ad95e4c3d30eb495a76d605ef2082c"
+    },
+    {
+      "path": "poetry.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c07aa4e6ff9c900a585e0f1957905fc23f92b60",
+      "size": 487264,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/1c07aa4e6ff9c900a585e0f1957905fc23f92b60"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3c086856b670ed0786bad03de267c5aa9152c11",
+      "size": 1424,
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/blobs/c3c086856b670ed0786bad03de267c5aa9152c11"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,44 @@
+{
+ "qid": "Q010",
+ "question": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+ "rules": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's September 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed options, the change will be rounded up to the nearest 25 and will resolve to the relevant bracket. (e.g. if there's a cut/increase of 12.5 bps it will be considered to be 25 bps)\n\nThe resolution source for this market is the FOMC’s statement after its meeting scheduled for September 15-16, 2026 according to the official calendar: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm.\n\nThe level and change of the target federal funds rate is also published at the official website of the Federal Reserve at https://www.federalreserve.gov/monetarypolicy/openmarket.htm.\n\nThis market may resolve as soon as the FOMC’s statement for their September meeting with relevant data is issued. If ",
+ "as_of": "2026-09-02",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "published_at": "2026-07-29",
+   "excerpt": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. Voting against the monetary policy action were Beth M. Hammack, Neel Kashkari, and Lorie K. Logan, who preferred to raise the target range for the federal funds rate by 1/4 percentage point at this meeting."
+  },
+  {
+   "id": "E2",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-08-07",
+   "excerpt": "Both nonfarm payroll employment (-23,000) and the unemployment rate (4.1 percent) changed little in July, the U.S. Bureau of Labor Statistics reported today. Employment declined in local government education and retail trade. Employment continued to trend up in health care."
+  },
+  {
+   "id": "E3",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-08-12",
+   "excerpt": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.1 percent on a seasonally adjusted basis in July after falling 0.4 percent in June, the U.S. Bureau of Labor Statistics reported today. Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment. The index for all items less food and energy rose 0.2 percent after being unchanged in June."
+  },
+  {
+   "id": "E4",
+   "publisher": "U.S. Bureau of Economic Analysis",
+   "published_at": "2026-08-26",
+   "excerpt": "From the preceding month, the PCE price index for July increased 0.2 percent. Excluding food and energy, the PCE price index also increased 0.2 percent. From the same month one year ago, the PCE price index for July increased 3.7 percent. Excluding food and energy, the PCE price index increased 3.3 percent from one year ago."
+  },
+  {
+   "id": "E5",
+   "publisher": "Bloomberg News",
+   "published_at": "2026-09-02",
+   "excerpt": "Federal Reserve Bank of New York President John Williams said there’s evidence inflation continues to ease as the impact of tariffs fades while higher energy prices are not spreading to other services. “The data recently has been encouraging,” Williams said Wednesday in an interview with CNBC. “I am actually seeing the trend in inflation moving slowly down as some of the effects of the tariffs move into the rearview mirror.”"
+  },
+  {
+   "id": "E6",
+   "publisher": "Federal Reserve Bank of Minneapolis — Beige Book National Summary",
+   "published_at": "2026-09-02",
+   "excerpt": "Economic activity increased modestly since early July. Ten of the twelve Federal Reserve Districts reported growth in the slight to moderate range; two Districts reported no change. Consumer spending grew slightly on balance; reports reflected both heightened price sensitivity on the one hand and solid high-end purchases on the other."
+  }
+ ]
+}

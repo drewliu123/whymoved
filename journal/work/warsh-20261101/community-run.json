@@ -1,0 +1,33 @@
+{
+  "version": "3.30.0",
+  "runtime": "Python 3.12.13",
+  "command": [
+    "/Users/frankzhang/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+    "-I",
+    "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+    "Kevin Warsh",
+    "--research-only",
+    "--emit=json",
+    "--json-profile=raw",
+    "--plan",
+    "/Users/frankzhang/Desktop/投研助手/journal/work/warsh-20261101/community-plan.json",
+    "--days",
+    "30",
+    "--as-of",
+    "2026-11-01",
+    "--search",
+    "reddit,hackernews,youtube",
+    "--quick",
+    "--no-browser-cookies",
+    "--save-dir="
+  ],
+  "started_at": "2026-11-02T03:50:05.800709+00:00",
+  "queries": [
+    "Kevin Warsh Fed independence inflation rate cuts",
+    "Kevin Warsh balance sheet quantitative tightening rate cuts",
+    "Kevin Warsh AI productivity inflation"
+  ],
+  "exit_code": 0,
+  "status": "ok",
+  "ended_at": "2026-11-02T03:50:24.379296+00:00"
+}

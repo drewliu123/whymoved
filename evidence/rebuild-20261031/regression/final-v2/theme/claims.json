@@ -1,0 +1,375 @@
+{
+  "question": "AI数据中心用电增长如何转成电力设备供应商收入与利润，哪个环节最值得验证？",
+  "as_of": "2026-10-31T17:25:57Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "截至截点，Eaton官网列示Q3 2026将于11月3日发布；本研究最新已实现季度为2026Q2，不能将Q3指引当实际。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/us/en-us/company/investor-relations/financial-presentations-webcasts.html",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "unknown",
+          "source_id": "S1"
+        },
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "Electrical Americas 2025Q4销售3506百万美元、分部经营利润1046百万美元；滚动12个月有机订单同比增16%，backlog为13.2十亿美元。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2025/q4/4Q-2025-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-02-03",
+          "source_id": "S2"
+        },
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-05-05",
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "Electrical Americas 2026Q1销售3600百万美元、经营利润922百万美元，同比分别20%和2%（公司取整）；销售增长含有机14、并购5、汇率1个百分点；利润率25.6%，上年30.0%；滚动订单增42%，backlog14.5十亿美元，同比增44%。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-05-05",
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "Electrical Americas 2026Q2销售3951百万美元、经营利润1088百万美元；销售同比增18%全有机，未经恒定范围调整；利润率27.5%，上年29.5%；滚动有机订单同比增41%，backlog15.2十亿美元、同比增33%，滚动book-to-bill 1.3。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S4"
+        },
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S5"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "2026Q1 Electrical Americas数据中心当季订单约增240%、收入约增50%；2026Q2披露改为Electrical Sector数据中心当季订单约增85%、收入约增65%；后者未在该条注明有机口径。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-05-05",
+          "source_id": "S3"
+        },
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S5"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "两季数据中心专项口径不同，240%到85%不能被解释为同一业务订单减速，50%到65%也不能直接写成同一业务收入加速。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C5"
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "Eaton披露Data Centers & Distributed IT占2025全公司销售21%；2025公司销售27448百万美元。该分类包括Distributed IT，不等于纯AI数据中心。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2025/q4/4Q-2025-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-02-03",
+          "source_id": "S2"
+        },
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S5"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "以披露分类和全年销售相乘，2025 Data Centers & Distributed IT销售量级约5764百万美元；这是历史敞口近似，不是AI收入、市场TAM或市占率。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C7"
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "2026Q2全公司经营现金1127百万美元、capex253百万美元、FCF874百万美元；2025Q2分别918、202、716。2025Q4分别1965、392、1573，现金口径均为全公司。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2025/q4/4Q-2025-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-02-03",
+          "source_id": "S2"
+        },
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "2026Q2全公司GAAP归属净利润821百万美元，上年982；调整后盈利1228，上年1155。Fibrebond员工交易/留任等并购相关费用在分部信息中计为Corporate Other expense，摊销与重组亦列Corporate；分部利润未包含这些全经济成本，不等于全公司净利润或现金，Corporate全部费用不能归AI。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "按原表重算，Electrical Americas 2026Q1同比增量利润/增量收入约3.05%，2026Q2约16.81%；Q2利润率环比改善约193基点但同比仍低约193基点，公司按披露利润率取整表述为+190/-200基点。Q1销售增20%含有机14、并购5、汇率1个百分点；Q2增18%全为有机。两个增量比率未经范围调整，不能单独证明效率改善。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "美洲backlog从2025Q4的13.2十亿美元升至2026Q2的15.2，增长约15.15%；期末存量相当于Q2季度销售约3.85倍，不能当作3.85个季度的交付保证。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C2",
+        "C4"
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "Eaton的官方产品范围从Grid Connection、Gray Space、White Space延伸至软件服务和冷却；Fibrebond提供预集成模块化电力围护结构，计入Electrical Americas。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-05-05",
+          "source_id": "S3"
+        },
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "text": "2026年9月Eaton宣布超过242百万美元投入Arkansas新厂，拟将Fibrebond美国定制电气围护结构产能翻倍；Minden产能此前三年已翻倍。公告未给新厂投产日期，且服务数据中心、公用事业等多个市场。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-manufacturing-for-modular-electrical-enclosures.html",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-09-02",
+          "source_id": "S6"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "Q2 Electrical Global销售增长44%中，有机18%、Boyd Thermal并购贡献25%、汇率1%；不能把该分部全部增长归为AI新增需求。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "text": "最值得验证的是Electrical Americas中数据中心相关配电/预集成供电设备的backlog转交付，再转增量经营利润与现金；已有订单与收入增长披露及分部利润率恢复，与交付爬坡改善相容；未识别同批订单转换，价格、组合及并购基数亦可解释，AI独立盈利归因尚未建立。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C9",
+        "C11",
+        "C13"
+      ]
+    },
+    {
+      "id": "C17",
+      "text": "用电增长先要形成获电/建设安排和设备规格，才可能成为设备采购；订单积累后还需制造、安装/验收与回款。运行TWh不能直接乘设备单价推导收入；投运延迟对订单、交付、收入、现金可发生在不同时间。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C5",
+        "C9",
+        "C13",
+        "C14"
+      ]
+    },
+    {
+      "id": "C18",
+      "text": "扩产同时支持交付并削弱永久稀缺假设：若产能释放快于有效采购，价格与利用率可能承压；现有分部数字不能识别扩产成本、价格、产品组合各自贡献。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C14"
+      ]
+    },
+    {
+      "id": "C19",
+      "text": "本次核对的六个官方来源未提供AI专属收入基数、增量毛利率/成本桥、取消延期条款及项目回款结构，不能计算可辩护的AI增量利润点估计或给出取消率。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C7",
+        "C9",
+        "C13",
+        "C14"
+      ]
+    },
+    {
+      "id": "C20",
+      "text": "Q2材料将Electrical Americas下半年利润率>30%展示为展望，全年28.8–29.2%为指引，均未在本截点实现。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S5"
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "text": "若后续订单/积压仍强而增量利润率与现金兑现继续改善，交付爬坡解释增强；若订单延期、margin恢复停滞或现金落后，应下调利润兑现判断。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C4",
+        "C9",
+        "C11",
+        "C14",
+        "C20"
+      ]
+    },
+    {
+      "id": "C22",
+      "text": "竞争和替代的证据限于Eaton披露的竞争定价/技术风险、模块化和液冷路线变化；没有直接竞品订单、价格、成本曲线，不能断言Eaton具永久定价权或排名全行业最优。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [],
+      "basis": [
+        "C13",
+        "C14",
+        "C15",
+        "C23"
+      ]
+    },
+    {
+      "id": "C23",
+      "text": "Eaton官网风险提示包括competitive pressures on sales and pricing及introduction of competing technologies。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:25:57Z",
+      "sources": [
+        {
+          "url": "https://www.eaton.com/us/en-us/company/investor-relations/financial-presentations-webcasts.html",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "unknown",
+          "source_id": "S1"
+        }
+      ]
+    }
+  ]
+}

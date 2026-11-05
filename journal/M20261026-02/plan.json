@@ -1,0 +1,16 @@
+{
+  "question": "美联储 10 月 27–28 日会议会有几票反对（仅计利率决定）？",
+  "type": "event_pricing",
+  "entity": "How many dissent at the October Fed meeting",
+  "horizon": "2026-10-28",
+  "as_of": "2026-10-26T06:59:00Z",
+  "method": "逐个票委估计反对概率，再按独立假设组合成票数分布（Poisson-binomial），同时给出相关性情景，与盘口逐档比较",
+  "angles": [
+    {"angle": "市场本身", "question": "各档概率、流动性、近一月变化", "queries": ["polymarket fed dissent october"], "tiers": ["T0", "T4"]},
+    {"angle": "决策者", "question": "2026 年有投票权的票委是谁？每人 7 月、9 月怎么投？静默期（10/17 起）前最后的公开表态？", "queries": ["fomc dissent hammack kashkari logan", "fed official prefers hike remarks"], "tiers": ["T0", "T2"]},
+    {"angle": "驱动数据", "question": "9 月 CPI、非农会不会改变鹰派票委的立场？", "queries": ["cpi fed hawks dissent"], "tiers": ["T0", "T2"]},
+    {"angle": "交叉定价", "question": "Kalshi 是否有反对票市场？", "queries": ["kalshi fed dissent"], "tiers": ["T1"]},
+    {"angle": "历史基准", "question": "近年按兵不动会议的反对票数分布；同一票委连续反对的频率", "queries": ["fomc dissent history record"], "tiers": ["T0", "T3"]},
+    {"angle": "结算规则", "question": "只计利率反对票；以声明为准", "queries": ["读 Polymarket description"], "tiers": ["T0"]}
+  ]
+}

@@ -1,0 +1,657 @@
+{
+  "as_of": "2026-11-02T07:54:08.603270+00:00",
+  "candidates": [
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.stats.gov.cn/xw/tjxw/tzgg/202512/t20251224_1962137.html",
+      "evidence_kind": "document",
+      "id": "S1",
+      "locator": "2026年国家统计局主要统计信息发布日程表，居民消费价格指数月度报告11月栏及附注",
+      "origin_basis": "国家统计局直接发布",
+      "origin_id": "nbs-2026-release-calendar",
+      "published_at": "2025-12-25T00:00:00+08:00",
+      "publisher": "国家统计局",
+      "quote": "居民消费价格指数月度报告；11月：9/一，9:30。本表公布的发布内容（除采购经理指数外）均为指标上月、上季、上年或累计数据。发布日期为初步计划，届时可能有所调整。",
+      "retrieved_at": "2026-11-02T07:44:18.568812+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对日期与数据口径",
+        "reason": "直接规定10月参考期的计划发布日期",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.stats.gov.cn/xw/tjxw/tzgg/202512/t20251224_1962137.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965477.html",
+      "evidence_kind": "document",
+      "id": "S2",
+      "locator": "标题及正文前两段",
+      "origin_basis": "国家统计局直接发布",
+      "origin_id": "nbs-2026-september-cpi",
+      "published_at": "2026-10-14T09:30:00+08:00",
+      "publisher": "国家统计局",
+      "quote": "2026年9月份居民消费价格同比上涨0.9%；全国居民消费价格同比上涨0.9%。全国居民消费价格环比上涨0.2%。",
+      "retrieved_at": "2026-11-02T07:44:18.568812+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对日期与数据口径",
+        "reason": "直接核对最近已公布数据的参考月与同比",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965477.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://tradingeconomics.com/china/inflation-cpi",
+      "evidence_kind": "opinion",
+      "id": "S3",
+      "locator": "HTML calendar row data-id=400850; columns: Date, reference, actual, previous, consensus, TEForecast",
+      "origin_basis": "Trading Economics网页自有模型预测；原始HTML本轮保存",
+      "origin_id": "te-china-oct2026-model",
+      "published_at": "unknown",
+      "publisher": "Trading Economics",
+      "quote": "Date 2026-11-09; Reference Oct; Actual [blank]; Previous 0.9%; Consensus [blank]; TEForecast 0.9%.",
+      "retrieved_at": "2026-11-02T07:44:18.568812+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "外部预测基准",
+        "reason": "与目标2026年10月完全匹配的外部模型预测，明确不是调查共识。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T3",
+      "url": "https://tradingeconomics.com/china/inflation-cpi"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfbhjd/202511/t20251109_1961826.html",
+      "evidence_kind": "document",
+      "id": "S4",
+      "locator": "2025年10月份居民消费价格同比上涨0.2%，正文环比段",
+      "origin_basis": "国家统计局原始公告，WebFetch读取",
+      "origin_id": "nbs-oct2025-cpi",
+      "published_at": "2025-11-09T09:30:00+08:00",
+      "publisher": "国家统计局",
+      "quote": "10月份，全国居民消费价格环比上涨0.2%。",
+      "retrieved_at": "2026-11-02T07:44:18.568812+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "同比环比连接计算",
+        "reason": "同比滚动预测所需去年同月环比基数。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202511/t20251109_1961826.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://gamma-api.polymarket.com/events/slug/october-inflation-china-annual",
+      "evidence_kind": "document",
+      "id": "S20",
+      "locator": "event.description",
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S20",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "This is a market about the variation of consumer prices in China over a 12-month period ending October 2026 as reported by the National Bureau of Statistics (NBS) of China.\n\nThis market will resolve according to the number the Consumer Price Index (CPI) increased by during the 12-month period ending October 2026 (% change from the same month in the previous year) according to the monthly NBS report.\n\nThe resolution source for this market will be the NBS Consumer Price Index monthly report released for October 2026 (https://www.stats.gov.cn/english/PressRelease/), currently scheduled to be released in November 2026. Resolution of this market will take place upon release of the aforementioned data. If no data for the specified month is released by the date the next month's data is scheduled to be released, this market will resolve based on data from the last available month.\n\nYou can find the relevant figure by locating the report for October 2026 on the Press Releases page (see: https://www.stats.gov.cn/english/PressRelease/), locating the table named \"Consumer Price Index in October 2026\", and finding the consumer price index figure in the column labeled \"Growth Rate Y/Y (%)\".\n\nNote: the resolution source for this market will be the official monthly NBS CPI news release which reports inflation during 12-month periods to only one decimal point (e.g. 1.9%). Thus, this is the level of precision that will be used when resolving the market. For the full release schedule, see: https://www.stats.gov.cn/english/PressRelease/ReleaseCalendar/",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://gamma-api.polymarket.com/events/slug/october-inflation-china-annual"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://gamma-api.polymarket.com/events/slug/october-inflation-china-annual",
+      "evidence_kind": "document",
+      "id": "S21",
+      "locator": "markets[0].feeSchedule",
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S21",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"exponent\": 1, \"rate\": 0.05, \"takerOnly\": true, \"rebateRate\": 0.25}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://gamma-api.polymarket.com/events/slug/october-inflation-china-annual"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://docs.polymarket.com/trading/fees",
+      "evidence_kind": "document",
+      "id": "S22",
+      "locator": "fee formula and economics table",
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S22",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "fee = C × feeRate × p × (1 - p). Economics: 0.05. Makers are never charged fees. Taker fees are calculated in USDC.",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://docs.polymarket.com/trading/fees"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=52183944893309575584469195876785440459503726691144855603239839746827009154742",
+      "evidence_kind": "market_quote",
+      "id": "S5734060Yes",
+      "locator": "CLOB best ask after sorting asks ascending; token 52183944893309575584469195876785440459503726691144855603239839746827009154742",
+      "market_quote": {
+        "ask": 0.269,
+        "bid": 0.2,
+        "direction": "buy",
+        "instrument": "52183944893309575584469195876785440459503726691144855603239839746827009154742",
+        "outcome": "Yes",
+        "quote_type": "executable",
+        "quoted_at": "2026-11-02T07:41:41.491000+00:00",
+        "unit": "USD/share",
+        "value": 0.269
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734060Yes",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [{\"price\": \"0.2\", \"size\": \"20\"}, {\"price\": \"0.199\", \"size\": \"20\"}, {\"price\": \"0.15\", \"size\": \"13.33\"}, {\"price\": \"0.131\", \"size\": \"20.01\"}], \"asks\": [{\"price\": \"0.269\", \"size\": \"100\"}, {\"price\": \"0.27\", \"size\": \"40\"}, {\"price\": \"0.356\", \"size\": \"14.82\"}, {\"price\": \"0.357\", \"size\": \"47.03\"}], \"timestamp\": \"1793605301491\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=52183944893309575584469195876785440459503726691144855603239839746827009154742"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=108209989187998892927955357620122640696691348982806268943421311483976413566435",
+      "evidence_kind": "market_quote",
+      "id": "S5734060No",
+      "locator": "CLOB best ask after sorting asks ascending; token 108209989187998892927955357620122640696691348982806268943421311483976413566435",
+      "market_quote": {
+        "ask": 0.8,
+        "bid": 0.731,
+        "direction": "buy",
+        "instrument": "108209989187998892927955357620122640696691348982806268943421311483976413566435",
+        "outcome": "No",
+        "quote_type": "executable",
+        "quoted_at": "2026-11-02T07:41:41.491000+00:00",
+        "unit": "USD/share",
+        "value": 0.8
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734060No",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [{\"price\": \"0.731\", \"size\": \"100\"}, {\"price\": \"0.73\", \"size\": \"40\"}, {\"price\": \"0.644\", \"size\": \"14.82\"}, {\"price\": \"0.643\", \"size\": \"47.03\"}], \"asks\": [{\"price\": \"0.8\", \"size\": \"20\"}, {\"price\": \"0.801\", \"size\": \"20\"}, {\"price\": \"0.85\", \"size\": \"13.33\"}, {\"price\": \"0.869\", \"size\": \"20.01\"}], \"timestamp\": \"1793605301491\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=108209989187998892927955357620122640696691348982806268943421311483976413566435"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=114171842186484275952326049592166610493642657152927370258739004220505470044692",
+      "evidence_kind": "market_quote",
+      "id": "S5734061Yes",
+      "locator": "CLOB best ask after sorting asks ascending; token 114171842186484275952326049592166610493642657152927370258739004220505470044692",
+      "market_quote": {
+        "ask": 0.5,
+        "bid": 0.44,
+        "direction": "buy",
+        "instrument": "114171842186484275952326049592166610493642657152927370258739004220505470044692",
+        "outcome": "Yes",
+        "quote_type": "executable",
+        "quoted_at": "2026-11-02T07:47:19.779000+00:00",
+        "unit": "USD/share",
+        "value": 0.5
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734061Yes",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [{\"price\": \"0.44\", \"size\": \"172\"}, {\"price\": \"0.41\", \"size\": \"20\"}, {\"price\": \"0.4\", \"size\": \"5\"}, {\"price\": \"0.33\", \"size\": \"234\"}], \"asks\": [{\"price\": \"0.5\", \"size\": \"64\"}, {\"price\": \"0.51\", \"size\": \"141.34\"}, {\"price\": \"0.52\", \"size\": \"15.87\"}, {\"price\": \"0.57\", \"size\": \"350\"}], \"timestamp\": \"1793605639779\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=114171842186484275952326049592166610493642657152927370258739004220505470044692"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=109529943778586143059052037585386197051793239973444200675367716646347193445431",
+      "evidence_kind": "market_quote",
+      "id": "S5734061No",
+      "locator": "CLOB best ask after sorting asks ascending; token 109529943778586143059052037585386197051793239973444200675367716646347193445431",
+      "market_quote": {
+        "ask": 0.56,
+        "bid": 0.5,
+        "direction": "buy",
+        "instrument": "109529943778586143059052037585386197051793239973444200675367716646347193445431",
+        "outcome": "No",
+        "quote_type": "executable",
+        "quoted_at": "2026-11-02T07:47:19.779000+00:00",
+        "unit": "USD/share",
+        "value": 0.56
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734061No",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [{\"price\": \"0.5\", \"size\": \"64\"}, {\"price\": \"0.49\", \"size\": \"141.34\"}, {\"price\": \"0.48\", \"size\": \"15.87\"}, {\"price\": \"0.43\", \"size\": \"350\"}], \"asks\": [{\"price\": \"0.56\", \"size\": \"172\"}, {\"price\": \"0.59\", \"size\": \"20\"}, {\"price\": \"0.6\", \"size\": \"5\"}, {\"price\": \"0.67\", \"size\": \"234\"}], \"timestamp\": \"1793605639779\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=109529943778586143059052037585386197051793239973444200675367716646347193445431"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=26887471990263045174666955224465910846695842248672249681094749371722644067548",
+      "evidence_kind": "market_quote",
+      "id": "S5734062Yes",
+      "locator": "CLOB best ask after sorting asks ascending; token 26887471990263045174666955224465910846695842248672249681094749371722644067548",
+      "market_quote": {
+        "ask": 0.28,
+        "bid": 0.21,
+        "direction": "buy",
+        "instrument": "26887471990263045174666955224465910846695842248672249681094749371722644067548",
+        "outcome": "Yes",
+        "quote_type": "executable",
+        "quoted_at": "2026-11-02T07:50:09.464000+00:00",
+        "unit": "USD/share",
+        "value": 0.28
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734062Yes",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [{\"price\": \"0.21\", \"size\": \"80\"}, {\"price\": \"0.17\", \"size\": \"216.76\"}, {\"price\": \"0.15\", \"size\": \"216.32\"}, {\"price\": \"0.1\", \"size\": \"573\"}], \"asks\": [{\"price\": \"0.28\", \"size\": \"118.43\"}, {\"price\": \"0.37\", \"size\": \"61.03\"}, {\"price\": \"0.4\", \"size\": \"5\"}, {\"price\": \"0.41\", \"size\": \"40\"}], \"timestamp\": \"1793605809464\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=26887471990263045174666955224465910846695842248672249681094749371722644067548"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=20505240443959035398948663697700527654147215345529617205666034820832601721703",
+      "evidence_kind": "market_quote",
+      "id": "S5734062No",
+      "locator": "CLOB best ask after sorting asks ascending; token 20505240443959035398948663697700527654147215345529617205666034820832601721703",
+      "market_quote": {
+        "ask": 0.79,
+        "bid": 0.72,
+        "direction": "buy",
+        "instrument": "20505240443959035398948663697700527654147215345529617205666034820832601721703",
+        "outcome": "No",
+        "quote_type": "executable",
+        "quoted_at": "2026-11-02T07:50:09.464000+00:00",
+        "unit": "USD/share",
+        "value": 0.79
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734062No",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [{\"price\": \"0.72\", \"size\": \"118.43\"}, {\"price\": \"0.63\", \"size\": \"61.03\"}, {\"price\": \"0.6\", \"size\": \"5\"}, {\"price\": \"0.59\", \"size\": \"40\"}], \"asks\": [{\"price\": \"0.79\", \"size\": \"80\"}, {\"price\": \"0.83\", \"size\": \"216.76\"}, {\"price\": \"0.85\", \"size\": \"216.32\"}, {\"price\": \"0.9\", \"size\": \"573\"}], \"timestamp\": \"1793605809464\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=20505240443959035398948663697700527654147215345529617205666034820832601721703"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=86933156776420864149302496693737629941007343057217584904829522768776921083933",
+      "evidence_kind": "market_quote",
+      "id": "S5734063Yes",
+      "locator": "CLOB best ask after sorting asks ascending; token 86933156776420864149302496693737629941007343057217584904829522768776921083933",
+      "market_quote": {
+        "ask": 0.08,
+        "bid": 0.015,
+        "direction": "buy",
+        "instrument": "86933156776420864149302496693737629941007343057217584904829522768776921083933",
+        "outcome": "Yes",
+        "quote_type": "executable",
+        "quoted_at": "2026-11-02T07:49:42.760000+00:00",
+        "unit": "USD/share",
+        "value": 0.08
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734063Yes",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [{\"price\": \"0.015\", \"size\": \"98.98\"}, {\"price\": \"0.011\", \"size\": \"6.44\"}, {\"price\": \"0.01\", \"size\": \"160\"}, {\"price\": \"0.009\", \"size\": \"100\"}], \"asks\": [{\"price\": \"0.08\", \"size\": \"69.96\"}, {\"price\": \"0.094\", \"size\": \"14.17\"}, {\"price\": \"0.099\", \"size\": \"21\"}, {\"price\": \"0.208\", \"size\": \"30\"}], \"timestamp\": \"1793605782760\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=86933156776420864149302496693737629941007343057217584904829522768776921083933"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=57129428845494974286065369097486690887399583289017837615497895047905457446913",
+      "evidence_kind": "market_quote",
+      "id": "S5734063No",
+      "locator": "CLOB best ask after sorting asks ascending; token 57129428845494974286065369097486690887399583289017837615497895047905457446913",
+      "market_quote": {
+        "ask": 0.985,
+        "bid": 0.92,
+        "direction": "buy",
+        "instrument": "57129428845494974286065369097486690887399583289017837615497895047905457446913",
+        "outcome": "No",
+        "quote_type": "executable",
+        "quoted_at": "2026-11-02T07:49:42.760000+00:00",
+        "unit": "USD/share",
+        "value": 0.985
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734063No",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [{\"price\": \"0.92\", \"size\": \"69.96\"}, {\"price\": \"0.906\", \"size\": \"14.17\"}, {\"price\": \"0.901\", \"size\": \"21\"}, {\"price\": \"0.792\", \"size\": \"30\"}], \"asks\": [{\"price\": \"0.985\", \"size\": \"98.98\"}, {\"price\": \"0.989\", \"size\": \"6.44\"}, {\"price\": \"0.99\", \"size\": \"160\"}, {\"price\": \"0.991\", \"size\": \"100\"}], \"timestamp\": \"1793605782760\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "直接核对目标合约规则或该选项可执行盘口。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=57129428845494974286065369097486690887399583289017837615497895047905457446913"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=74947865945028394568190892672118545784871288967278080780974446091981724679176",
+      "evidence_kind": "market_quote",
+      "id": "S5734064Yes",
+      "locator": "CLOB best ask after sorting asks ascending; token 74947865945028394568190892672118545784871288967278080780974446091981724679176",
+      "market_quote": {
+        "ask": 0.001,
+        "bid": null,
+        "direction": "buy",
+        "instrument": "74947865945028394568190892672118545784871288967278080780974446091981724679176",
+        "outcome": "Yes",
+        "quote_type": "indicative",
+        "quoted_at": "2026-11-02T07:50:09.396000+00:00",
+        "unit": "USD/share",
+        "value": 0.001
+      },
+      "origin_basis": "Polymarket官方公开API",
+      "origin_id": "polymarket-china-oct2026-S5734064Yes",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"bids\": [], \"asks\": [{\"price\": \"0.001\", \"size\": \"890.42\"}, {\"price\": \"0.011\", \"size\": \"50.99\"}, {\"price\": \"0.012\", \"size\": \"155.98\"}, {\"price\": \"0.1\", \"size\": \"21\"}], \"timestamp\": \"1793605809396\"}",
+      "retrieved_at": "2026-11-02T07:50:23.527860+00:00",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "结算映射及价格判断",
+        "reason": "可见单边卖单，无买价，不声明完整双边可成交报价。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=74947865945028394568190892672118545784871288967278080780974446091981724679176"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261029_1408449_ext.html",
+      "date_nature": "publication date; date-only pages have unknown intraday time",
+      "evidence_kind": "document",
+      "id": "F2",
+      "locator": "调价金额与生效时点段落（分段摘录）",
+      "origin_basis": "直接官方公告",
+      "origin_id": "ndrc-20261029",
+      "provenance": {
+        "engine_rank": 1,
+        "query_id": "Q2"
+      },
+      "published_at": "2026-10-29",
+      "publisher": "国家发展改革委",
+      "quote": "每吨分别应上调440元、420元；调控后实际上调345元、335元；自10月29日24时起。",
+      "retrieved_at": "2026-11-02T07:43:59.196827+00:00",
+      "selection": {
+        "priority": "useful",
+        "purpose": "T1汽油+345元/吨、柴油+335元/吨，月末生效",
+        "reason": "T1汽油+345元/吨、柴油+335元/吨，月末生效",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261029_1408449_ext.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261015_1408170_ext.html",
+      "date_nature": "publication date; date-only pages have unknown intraday time",
+      "evidence_kind": "document",
+      "id": "F1",
+      "locator": "公告正文",
+      "origin_basis": "直接官方公告",
+      "origin_id": "ndrc-20261015",
+      "provenance": {
+        "engine_rank": 2,
+        "query_id": "Q2"
+      },
+      "published_at": "2026-10-15",
+      "publisher": "国家发展改革委",
+      "quote": "根据国际市场油价变化情况，本次汽、柴油价格不作调整。",
+      "retrieved_at": "2026-11-02T07:43:59.196827+00:00",
+      "selection": {
+        "priority": "useful",
+        "purpose": "T1国内油价中旬不变",
+        "reason": "T1国内油价中旬不变",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261015_1408170_ext.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/845398391207/index.phtml",
+      "date_nature": "publication date; date-only pages have unknown intraday time",
+      "evidence_kind": "opinion",
+      "id": "F3",
+      "locator": "截至10月13日高频段；以GB18030解码原网页",
+      "origin_basis": "同一西南证券叶凡研报；底层数字原始出处未取得",
+      "origin_id": "swsc-yefan-20261015",
+      "provenance": {
+        "engine_rank": 9,
+        "query_id": "Q1"
+      },
+      "published_at": "2026-10-15",
+      "publisher": "新浪财经转载西南证券叶凡",
+      "quote": "截至2026 年10 月13 日，同比方面，10 月初28 种重点监测蔬菜价格同比下降17.1%，7 种重点监测水果价格同比下降6.1%。鸡蛋价格同比涨幅收窄至31.7%，猪肉价格同比下降11.5%；环比方面，28 种重点监测蔬菜价格环比由上升转为下降5.9%，7种重点监测水果价格环比下降0.3%，降幅收窄。鸡蛋价格环比由上升转为下降9.6%，猪肉价格环比由上升转为下降2.2%。",
+      "retrieved_at": "2026-11-02T07:43:59.196827+00:00",
+      "selection": {
+        "priority": "useful",
+        "purpose": "T1猪菜月初下跌线索，非全月；原始序列未回溯",
+        "reason": "T1猪菜月初下跌线索，非全月；原始序列未回溯",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T3",
+      "url": "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/845398391207/index.phtml"
+    }
+  ],
+  "historical": false,
+  "schema_version": 2,
+  "selection_summary": {
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting",
+    "selected": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S20",
+      "S21",
+      "S22",
+      "S5734060Yes",
+      "S5734060No",
+      "S5734061Yes",
+      "S5734061No",
+      "S5734062Yes",
+      "S5734062No",
+      "S5734063Yes",
+      "S5734063No",
+      "S5734064Yes",
+      "F2",
+      "F1",
+      "F3"
+    ]
+  },
+  "source_status": {
+    "community": {
+      "reason": "纯官方数值及发布时间查询，无需社区材料。",
+      "status": "not_run"
+    },
+    "expectations": {
+      "reason": "取得TE月度模型0.9%；日历调查共识栏为空，不代表全市场共识。",
+      "status": "partial"
+    },
+    "named_october_numeric_forecasts": {
+      "reason": "五次搜索内未取得目标期具名数字，不代表不存在",
+      "status": "no_results"
+    },
+    "national_food_monthly": {
+      "reason": "仅取得具名研报月初数据及媒体转引月末单日数据，原始日序列未取得",
+      "status": "partial"
+    },
+    "october_services": {
+      "reason": "只有机构方向预测，无10月实际高频",
+      "status": "partial"
+    },
+    "official": {
+      "reason": "两份官方网页经WebFetch读取。",
+      "status": "ok"
+    },
+    "official_oil": {
+      "status": "ok"
+    },
+    "original_survey": {
+      "reason": "未取得目标期调查，预算用尽",
+      "status": "not_run"
+    },
+    "polymarket": {
+      "reason": "已保存event.json、10份订单簿与token映射、feeSchedule。",
+      "status": "ok"
+    }
+  }
+}

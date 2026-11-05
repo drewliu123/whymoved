@@ -1,0 +1,57 @@
+{
+  "qid": "Q097",
+  "as_of": "2026-09-07",
+  "kept": [
+    {
+      "excerpt": "The September 3 Mecklenburg-Vorpommern poll put SPD at 32%, up three percentage points from July, while AfD stood at 35%. Infratest dimap conducted the survey for NDR between August 26 and August 31, 2026, interviewing 1,215 eligible voters by telephone and online. The reported sampling uncertainty was two percentage points for a 10% share and three percentage points for a 50% share.",
+      "published_at": "2026-09-03",
+      "publisher": "NDR",
+      "relevance": "The latest verified pre-cutoff NDR poll shows SPD closing the gap but still trailing AfD in voting intention.",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/landtagswahl/mv-trend-spd-verkuerzt-rueckstand-zur-afd-cdu-rutscht-weiter-ab%2Cmvtrend-168.html"
+    },
+    {
+      "excerpt": "A Forsa poll commissioned by Ostsee-Zeitung placed AfD first with 37%, followed by SPD with 28%, Die Linke with 11%, CDU with 10%, and the Greens with 5%. Forsa surveyed 1,047 eligible voters between August 21 and August 27, 2026. The report notes that polls reflect opinion at the time of interviewing and are not forecasts of the election result.",
+      "published_at": "2026-09-02",
+      "publisher": "dpa, carried by the Mecklenburg-Vorpommern Landtag",
+      "relevance": "An independent recent poll shows a larger AfD lead than NDR's September survey, documenting substantial uncertainty across pollsters.",
+      "url": "https://www.landtag-mv.de/dpa-ticker/dpa-mitteilung?cHash=86e39672a1d0f23a64d398232637bec3&tx_w3dpa_dpalist%5Baction%5D=detail&tx_w3dpa_dpalist%5Bcontroller%5D=Dpa&tx_w3dpa_dpalist%5Buid%5D=7291"
+    },
+    {
+      "excerpt": "INSA's poll published on August 13, 2026, put AfD at 36%, SPD at 29%, Die Linke at 11%, CDU at 10%, the Greens at 5%, BSW at 4%, and FDP at 3%. The Nordkurier-commissioned online survey interviewed 1,000 people between August 4 and August 11. Both AfD and SPD gained one percentage point compared with INSA's June 22 poll.",
+      "published_at": "2026-08-13",
+      "publisher": "DAWUM, reporting INSA's poll for Nordkurier",
+      "relevance": "This earlier independent measurement provides a baseline for assessing the subsequent narrowing reported by NDR.",
+      "url": "https://dawum.de/Mecklenburg-Vorpommern/INSA/2026-08-13/"
+    },
+    {
+      "excerpt": "On September 7, SPD lead candidate and minister-president Manuela Schwesig presented a new campaign poster bearing the slogan 'Die Frau gegen Blau'. She urged voters to give SPD both votes to prevent AfD becoming the strongest party. The report states that AfD was leading in Mecklenburg-Vorpommern polls, although SPD had recently narrowed the gap.",
+      "published_at": "2026-09-07T15:52:00+02:00",
+      "publisher": "dpa, carried by the Mecklenburg-Vorpommern Landtag",
+      "relevance": "Reporting on the cutoff date documents SPD's effort to consolidate votes around Schwesig in the contest for first place.",
+      "url": "https://www.landtag-mv.de/dpa-ticker/dpa-mitteilung?cHash=7166e9f0ab4bc6ec1d73c046570a79e7&tx_w3dpa_dpalist%5Baction%5D=detail&tx_w3dpa_dpalist%5Bcontroller%5D=Dpa&tx_w3dpa_dpalist%5Buid%5D=7364"
+    },
+    {
+      "excerpt": "The Landtag has at least 71 seats, with 36 constituency representatives elected directly by first votes. Parties must obtain at least 5% of valid second votes to participate in allocation of list seats, calculated using the Hare/Niemeyer method. Overhang seats can increase the parliament's size, with compensatory seats limited to twice the number of overhang seats and the overall seat total required to be odd.",
+      "published_at": "2026-08-24",
+      "publisher": "Bundeszentrale für politische Bildung (bpb)",
+      "relevance": "The electoral rules explain how vote shares translate into the seat totals that determine this market, including threshold and overhang effects.",
+      "url": "https://www.bpb.de/themen/wahl-o-mat/mecklenburg-vorpommern-2026/579905/fakten-zur-landtagswahl-in-mecklenburg-vorpommern-2026/"
+    },
+    {
+      "excerpt": "The state government fixed September 20, 2026, as the date of the next Mecklenburg-Vorpommern Landtag election at its cabinet meeting on July 29, 2025. The announcement states that the election must take place between the 58th and 61st month after the start of the parliamentary term. The current term began on October 26, 2021.",
+      "published_at": "2025-07-29T12:05:00+02:00",
+      "publisher": "Ministerium für Inneres und Bau Mecklenburg-Vorpommern, via Presseportal",
+      "relevance": "The dated official announcement confirms the election schedule underlying the resolution rules.",
+      "url": "https://www.presseportal.de/blaulicht/pm/108531/6086399"
+    },
+    {
+      "excerpt": "The final 2021 Landtag seat distribution was SPD 34, AfD 14, CDU 12, Die Linke 9, Greens 5, and FDP 5, for a total of 79 seats. The results page identifies the state returning officer as its source and is dated October 15, 2021, at 17:20.",
+      "published_at": "2021-10-15T17:20:00+02:00",
+      "publisher": "tagesschau / ARD election archive",
+      "relevance": "The previous election establishes SPD's incumbent position as the largest parliamentary party and the historical seat gap to AfD.",
+      "url": "https://wahl.tagesschau.de/wahl/archiv/2021-09-26-LT-DE-MV/index-content.shtml"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-09-07, inclusive; Q097 concerns the party winning the most seats, rather than the party forming the government. Included seven dated items covering recent polls, cutoff-date campaigning, electoral rules, the official schedule, and the previous election. Excerpts are factual English paraphrases of German source text. Publication dates were verified from date-bearing search results or indexed page text; polling fieldwork dates are separately identified. Later-dated reports, election outcomes, undated live pages, and prediction-market or betting material were excluded. web_fetch failed because multiple providers were registered; the requested agent-reach web-read fallback returned a channel rate limit, so verification relied on web_search's indexed source text. No probability estimate or post-cutoff development is included."
+}

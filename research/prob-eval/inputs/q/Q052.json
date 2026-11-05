@@ -1,0 +1,7 @@
+{
+ "qid": "Q052",
+ "question": "Will the Bank of Israel hold at the August 2026 meeting?",
+ "rules": "This market will resolve according to the change in basis points in the Bank of Israel Interest Rate resulting from the August 2026 meeting of the Bank of Israel Monetary Committee, relative to the level it was prior to this meeting.\n\nThe resolution source will be official information from the Bank of Israel, including the statement or release from its August 2026 meeting, scheduled for August 31, 2026, as listed on the official Bank of Israel calendar (https://www.boi.org.il/en/economic-roles/monetary-policy/interest-rate-announcement-dates-2025-2026/#). This market may resolve as soon as the statement or release of the Bank of Israel resulting from its August 2026 meeting with relevant data is issued. \n\nIf the specified rate is defined by an upper and lower bound, the relevant change will be the change to the upper bound. \n\nIf the specified rate is changed to a level not expressed in the displayed options, the change will be rounded according to the following guidelines. Increases or decreases of less than 25 bps will be rounded to 25 bps (e.g. an increase or decrease of 10 bps would be considered to be an increase or decrease of 25 bps). Increases or decreases of greater than 25",
+ "as_of": "2026-08-18",
+ "evidence": []
+}

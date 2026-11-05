@@ -1,0 +1,55 @@
+{
+  "qid": "Q003",
+  "as_of": "2026-08-11",
+  "kept": [
+    {
+      "excerpt": "Rice was a key performer in Arsenal’s Premier League title success and their run to the Champions League final, where they lost on penalties to Paris St Germain. Raya won the Premier League’s Golden Glove, while Gabriel was a solid presence at the back and a threat at attacking set-pieces. Haaland scored a league-high 27 goals, while Cherki was a revelation after joining Manchester City the previous summer. Fernandes contributed 21 assists as Manchester United secured a return to the Champions League.",
+      "published_at": "2026-06-05",
+      "publisher": "Press Association, published by Express & Star",
+      "relevance": "This dated shortlist report compares the season achievements of Fernandes and his principal rivals using information available before the cutoff.",
+      "url": "https://www.expressandstar.com/uk-sports/arsenal-trio-make-shortlist-for-pfa-mens-player-of-the-year-award-8737670"
+    },
+    {
+      "excerpt": "The Coca-Cola Premier League Golden Playmaker prize has been won by Bruno Fernandes after he produced the most assists in 2025/26. The Portuguese created 21 goals across the campaign, a Premier League record, surpassing Thierry Henry and Kevin De Bruyne. He set the record by creating a goal in United’s final fixture away to Brighton & Hove Albion.",
+      "published_at": "2026-05-24",
+      "publisher": "Premier League",
+      "relevance": "Official final-season statistics establish the record-breaking creative output underpinning Fernandes's award candidacy.",
+      "url": "https://www.premierleague.com/en/news/4591818/fernandes-wins-202526-premier-league-golden-playmaker-award-with-record"
+    },
+    {
+      "excerpt": "Manchester United captain Bruno Fernandes has been named Premier League player of the season.",
+      "published_at": "2026-05-23",
+      "publisher": "BBC Sport",
+      "relevance": "Winning a separate major season award provides evidence of recognition for Fernandes, although it does not determine the PFA players' vote.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c9wen9znndeo"
+    },
+    {
+      "excerpt": "Bruno Fernandes has been crowned Footballer of the Year in the Football Writers’ Association annual awards. He beat runner-up Declan Rice by 28 votes, with Manchester City’s Haaland third. Fernandes took 45 per cent of votes from the FWA’s membership of more than 900. He was the only United player nominated, while Arsenal votes were divided between Rice, David Raya, Gabriel Magalhães and Bukayo Saka.",
+      "published_at": "2026-05-08",
+      "publisher": "Football Writers’ Association",
+      "relevance": "The official writers' ballot measures contemporary support for Fernandes and identifies Rice as a close rival, while documenting possible vote splitting among Arsenal players.",
+      "url": "https://footballwriters.co.uk/editorial/bruno-fernandes-is-footballer-of-the-year-and-bunny-shaw-is-womens-football-of-the-year/"
+    },
+    {
+      "excerpt": "Paul Merson argued that Declan Rice should have won the Football Writers’ Association award after his role in Arsenal’s Premier League title campaign and run to the Champions League final. He said United’s lack of European football should be taken into account when assessing Fernandes. Merson also suggested that several strong Arsenal performers had divided support, whereas Fernandes stood out at United.",
+      "published_at": "2026-05-21",
+      "publisher": "FourFourTwo",
+      "relevance": "This attributed expert assessment records a contemporary case for Rice and a potential weakness in Fernandes's candidacy rather than assuming consensus from his other awards.",
+      "url": "https://www.fourfourtwo.com/person/player/im-a-big-fan-of-bruno-fernandes-but-when-youre-playing-once-a-week-it-is-a-lot-different-arsenal-icon-disagrees-with-bruno-fernandes-player-of-the-year-award"
+    },
+    {
+      "excerpt": "Liverpool’s Mohamed Salah has been voted the 2024-25 Men’s PFA Players’ Player of the Year. Salah topped the polling of his fellow professionals from the six-man shortlist. He had also received the 2024-25 Football Writers’ Association Footballer of the Year and Premier League Player of the Season awards.",
+      "published_at": "2025-08-19",
+      "publisher": "Liverpool FC",
+      "relevance": "The preceding season supplies a dated historical example of the FWA and Premier League award winner also winning the PFA vote, without establishing a general conversion rate.",
+      "url": "https://www.liverpoolfc.com/news/mohamed-salah-voted-2024-25-mens-pfa-players-player-year/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.thepfa.com/news/2026/6/4/pfa-awards-2026-top-six-shortlists-announced",
+      "reason": "The excerpt explicitly mentions the awards ceremony on 2026-08-25, after the 2026-08-11 cutoff. Removed under the rule excluding any excerpt or relevance that mentions or implies anything after the cutoff, even though the publication date precedes it."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-08-11 inclusive. Included seven items with publication dates verified through article text, publication metadata or explicitly dated search results. The latest qualifying substantive PFA status located was the June shortlist announcement and contemporaneous reporting; no qualifying July or August update was found. Excerpts are factual extracts or faithful paraphrases of dated article bodies; dynamic navigation, recommendations and later material were excluded. Post-cutoff reports, outcome reports, undated pages, betting pages, odds and prediction-market material were excluded. web_fetch failed because multiple providers were registered, so the agent-reach skill's web reader was used to verify source bodies. Reading the Premier League Player of the Season announcement timed out; that award is represented instead by BBC Sport's explicitly dated May 23 report. Sources were retrieved retrospectively, and no archived page snapshots were verified."
+}

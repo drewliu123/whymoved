@@ -1,0 +1,96 @@
+{
+  "rows": [
+    {
+      "case": "revision_stress",
+      "condition": "history",
+      "score": 10,
+      "max_score": 10,
+      "hard_failures": [],
+      "additional_findings": [
+        {
+          "type": "套利判据的必要条件表述过强",
+          "quote": "只有实际买B卖A的净收入在成本和执行约束后仍为正、且终局收益关系成立，才可能支持套利判断。",
+          "location": "output.pricing_conclusion.required_confirmation",
+          "reason": "同口径、同等支付且A⊆B时，买B卖A的到期支付为1_B−1_A≥0。扣除成本后初始净收入为正，加上支付关系和可执行性，足以支持套利；但将初始净收入严格为正写成必要条件过强。若全部成本已计入、初始净成本为零，且B发生而A不发生的状态有正概率，则仍满足通常的零成本套利定义。此处混淆充分条件与必要条件，可能漏掉零成本套利，不能据此说本例已经存在套利。",
+          "impact_on_prespecified_score": "不改预先评分：第9项要求拒绝用异步末次成交证明套利，该输出已满足；此处也未声称存在确定套利，不计共同硬失败。"
+        }
+      ],
+      "input_utf8_bytes": 3389,
+      "output_utf8_bytes": 7293
+    },
+    {
+      "case": "fed_gap",
+      "condition": "history",
+      "score": 8,
+      "max_score": 8,
+      "hard_failures": [],
+      "additional_findings": [],
+      "input_utf8_bytes": 6864,
+      "output_utf8_bytes": 6904
+    },
+    {
+      "case": "revision_stress",
+      "condition": "summary",
+      "score": 10,
+      "max_score": 10,
+      "hard_failures": [],
+      "additional_findings": [],
+      "input_utf8_bytes": 3370,
+      "output_utf8_bytes": 6476
+    },
+    {
+      "case": "revision_stress",
+      "condition": "state",
+      "score": 10,
+      "max_score": 10,
+      "hard_failures": [],
+      "additional_findings": [],
+      "input_utf8_bytes": 4176,
+      "output_utf8_bytes": 6683
+    },
+    {
+      "case": "fed_gap",
+      "condition": "summary",
+      "score": 8,
+      "max_score": 8,
+      "hard_failures": [],
+      "additional_findings": [],
+      "input_utf8_bytes": 6853,
+      "output_utf8_bytes": 5812
+    },
+    {
+      "case": "fed_gap",
+      "condition": "state",
+      "score": 8,
+      "max_score": 8,
+      "hard_failures": [],
+      "additional_findings": [],
+      "input_utf8_bytes": 7496,
+      "output_utf8_bytes": 6710
+    }
+  ],
+  "totals": [
+    {
+      "condition": "history",
+      "score": 18,
+      "max_score": 18,
+      "input_utf8_bytes": 10253,
+      "output_utf8_bytes": 14197
+    },
+    {
+      "condition": "summary",
+      "score": 18,
+      "max_score": 18,
+      "input_utf8_bytes": 10223,
+      "output_utf8_bytes": 12288
+    },
+    {
+      "condition": "state",
+      "score": 18,
+      "max_score": 18,
+      "input_utf8_bytes": 11672,
+      "output_utf8_bytes": 13393
+    }
+  ],
+  "conclusion": "No incremental correctness observed for explicit dependency state over equal-information full history or summary in these two closed-evidence cases. All prespecified checks pass. This is a representation pilot, not a full agentic research benchmark."
+}

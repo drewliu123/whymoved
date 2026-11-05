@@ -1,0 +1,94 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>【开发回归样本】NVDA回撤之后，先分清增长与现金</title><style>
+:root{color-scheme:light;--page:#fff;--ink:#000;--sub:#52514e;--rule:#deded9;--accent:#225eaa;--plot:#fcfcfb;--series:#2a78d6;--grid:#e1e0d9}
+:root[data-theme=dark]{color-scheme:dark;--page:#141414;--ink:#f0efec;--sub:#c3c2b7;--rule:#444;--accent:#8ab9ef;--plot:#1a1a19;--series:#3987e5;--grid:#2c2c2a}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--page:#141414;--ink:#f0efec;--sub:#c3c2b7;--rule:#444;--accent:#8ab9ef;--plot:#1a1a19;--series:#3987e5;--grid:#2c2c2a}}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:17px/1.85 'PingFang SC',system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:850px;padding:34px 28px 80px;margin:auto}header{padding:14px 5vw;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;gap:16px}button{font:inherit;color:inherit;background:transparent;border:1px solid var(--rule);padding:6px 12px;border-radius:5px;cursor:pointer}a{color:var(--accent);text-underline-offset:4px}h1{font-size:clamp(28px,4vw,42px);line-height:1.35;letter-spacing:-.025em}h2{font-size:23px;margin-top:36px;line-height:1.5}h3{font-size:19px}p{white-space:pre-wrap}a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.refs{font-size:13px;margin-left:8px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}caption{text-align:left;font-weight:650;padding:14px 0}th,td{padding:12px;text-align:left;vertical-align:top;border-top:1px solid var(--rule);white-space:pre-wrap}details{margin:32px 0;border-top:1px solid var(--rule);padding-top:20px}summary{cursor:pointer;font-weight:650}.source,.claim{font-size:14px;padding:12px 0;border-bottom:1px solid var(--rule)}.chart{background:var(--plot);padding:14px}.chart svg{width:100%;height:auto;display:block}.chart text{fill:var(--sub);font:12px system-ui,sans-serif}.line{stroke:var(--series);stroke-width:2;fill:none;stroke-linejoin:round}.dot{fill:var(--series);stroke:var(--plot);stroke-width:2}.grid{stroke:var(--grid)}.skip{position:absolute;left:-10000px}.skip:focus{left:20px;top:10px;background:var(--page)}@media(max-width:600px){main{padding:18px 6vw 60px}body{font-size:16px}th,td{min-width:100px;padding:10px 6px}header{font-size:14px}}@media print{header,.skip{display:none}main{max-width:none;padding:0}body{color:#000;background:#fff}details>*{display:block}.chart{break-inside:avoid}}
+</style></head><body><a class="skip" href="#content">跳到研究正文</a><header><span>投研助手</span><span><button id="theme" type="button">切换明暗</button> <button id="print" type="button">打印</button></span></header><main id="content" tabindex="-1"><h1>【开发回归样本】NVDA回撤之后，先分清增长与现金</h1>
+<p>英伟达10月跌了多少，为什么跌，业务变化怎样验证？</p>
+<p>研究截点 2026-10-31T17:14:08Z · asset · 资产变化与业务验证：复用冻结证据的开发回归</p>
+<h2>判断</h2>
+<p>10月价格收益为−10.39%，月内最高收盘至月末回撤−14.46%。业务原指引仍支持收入与示例毛利额扩张；最后一天的板块抛售有AI投入回报担忧的媒体解释，现有材料仍不能排序整月主因。现金回收是下一步核查线索。<span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C7">[C7]</a></span></p>
+<p>重要限制：开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。<span class="refs"></span></p>
+<p>重要限制：本例复用先前冻结材料，没有新增近期检索；不能称为重新完成最新研究。<span class="refs"></span></p>
+<p>重要限制：缺少全月基准行情、同期一致预期与估值，不能排序整月下跌原因。<span class="refs"></span></p>
+<p>重要限制：财务数据为8月披露；未确认10月订单、客户ROI和业务现状。<span class="refs"></span></p>
+<h2>月跌幅与高点回撤是两件事</h2>
+<p>10月价格收益 −10.39%；最高收盘至月末 −14.46%；最后一日 −4.22%。先涨后跌，不能用高点回撤替代整月收益。<span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a></span></p>
+<p>为什么重要：整月收益、高点回撤和单日下跌具有不同基准，混用会夸大或误读实际变化。</p>
+<p>相较基线：原 report.json 的同名 finding 与原 claims.json（C1, C2）；开发样本复用。</p>
+<p>研究增量（connection）：仅把原结论与其验证意义重新连接：整月收益、高点回撤和单日下跌具有不同基准，混用会夸大或误读实际变化。 本轮无新事实、计算或判断更新，非相对原研究的新发现。</p>
+<h2>毛利率下降，毛利额仍可能增长</h2>
+<p>收入指引中点环比约 +12.24%，毛利率从75%到74%；两项中点隐含毛利额仍增约 10.78%。关键是增长的规模和质量，不能只看利润率方向。<span class="refs"><a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C7">[C7]</a></span></p>
+<p>为什么重要：利润率方向不能代替利润额；收入规模与毛利额共同决定原指引的业务含义。</p>
+<p>相较基线：原 report.json 的同名 finding 与原 claims.json（C3, C4, C7）；开发样本复用。</p>
+<p>研究增量（connection）：仅把原结论与其验证意义重新连接：利润率方向不能代替利润额；收入规模与毛利额共同决定原指引的业务含义。 本轮无新事实、计算或判断更新，非相对原研究的新发现。</p>
+<h2>现金回收提供后续核查线索</h2>
+<p>Q2经营现金流/收入约25.02%，Q1约61.68%；Q2应收变动占用223.46亿美元。它提示核查营运资本，尚不能诊断坏账或10月订单。<span class="refs"><a href="#claim-C6">[C6]</a> <a href="#claim-C8">[C8]</a></span></p>
+<p>为什么重要：营运资本占用提供后续核查线索，但不足以诊断坏账或推断当月订单。</p>
+<p>相较基线：原 report.json 的同名 finding 与原 claims.json（C6, C8）；开发样本复用。</p>
+<p>研究增量（connection）：仅把原结论与其验证意义重新连接：营运资本占用提供后续核查线索，但不足以诊断坏账或推断当月订单。 本轮无新事实、计算或判断更新，非相对原研究的新发现。</p>
+<div class="table-wrap"><table><caption>同口径看增长与现金</caption><thead><tr><th scope="col">指标</th><th scope="col">Q1 FY27</th><th scope="col">Q2 FY27</th><th scope="col">Q3原指引／中点示例</th></tr></thead><tbody>
+<tr><td>收入（十亿美元）</td><td>81.615</td><td>96.221</td><td>108 ±2%</td></tr>
+<tr><td>毛利率</td><td>74.9%</td><td>75.0%</td><td>74.0% ±0.5个百分点</td></tr>
+<tr><td>毛利额（十亿美元）</td><td>未在本例计算</td><td>72.142（GAAP披露）</td><td>示例79.92</td></tr>
+<tr><td>经营现金流（十亿美元）</td><td>50.344（由半年减Q2）</td><td>24.077</td><td>未预测</td></tr>
+<tr><td>经营现金流/收入</td><td>约61.68%</td><td>约25.02%</td><td>未预测</td></tr>
+</tbody></table><span class="refs"><a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a></span><p> 开发转换：引用经原 claims.json 核对；仅提供原研究表格的结论级关联。</p></div>
+<div class="table-wrap"><table><caption>原 claims 内联来源目录（未新增取证）</caption><thead><tr><th scope="col">原来源ID</th><th scope="col">发布方</th><th scope="col">层级</th><th scope="col">发布时间（原记录）</th><th scope="col">URL</th><th scope="col">所引用结论</th></tr></thead><tbody>
+<tr><td>S2</td><td>NVIDIA IR / Q4 historical quote service</td><td>T0</td><td>2026-10-30</td><td>https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx</td><td>C1, C2</td></tr>
+<tr><td>S1</td><td>NVIDIA</td><td>T0</td><td>2026-08-26</td><td>https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027</td><td>C3, C4, C6</td></tr>
+<tr><td>S3</td><td>Reuters via AOL</td><td>T2</td><td>2026-10-30T20:23:00Z</td><td>https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html</td><td>C5</td></tr>
+</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C5">[C5]</a></span><p>按原内联来源 URL 关联原 sources.json；来源目录不证明 quote、历史可得性或独立性，缺失项不补造。</p></div>
+<div class="table-wrap"><table><caption>NVDA日收盘价（美元）（原序列转表，无新计算）</caption><thead><tr><th scope="col">date</th><th scope="col">close</th><th scope="col">high</th></tr></thead><tbody>
+<tr><td>2026-09-30</td><td>228.38</td><td>—</td></tr>
+<tr><td>2026-10-01</td><td>230.86</td><td>232.29</td></tr>
+<tr><td>2026-10-02</td><td>233.95</td><td>237.88</td></tr>
+<tr><td>2026-10-05</td><td>238.9</td><td>240.1</td></tr>
+<tr><td>2026-10-06</td><td>239.24</td><td>243.37</td></tr>
+<tr><td>2026-10-07</td><td>237.47</td><td>239.08</td></tr>
+<tr><td>2026-10-08</td><td>230.48</td><td>237.07</td></tr>
+<tr><td>2026-10-09</td><td>229.28</td><td>233.92</td></tr>
+<tr><td>2026-10-12</td><td>226.32</td><td>228.86</td></tr>
+<tr><td>2026-10-13</td><td>228.52</td><td>228.64</td></tr>
+<tr><td>2026-10-14</td><td>221.3</td><td>226</td></tr>
+<tr><td>2026-10-15</td><td>217.23</td><td>218.47</td></tr>
+<tr><td>2026-10-16</td><td>214.13</td><td>218.68</td></tr>
+<tr><td>2026-10-19</td><td>217.09</td><td>219.62</td></tr>
+<tr><td>2026-10-20</td><td>216.47</td><td>218.46</td></tr>
+<tr><td>2026-10-21</td><td>221.97</td><td>222.19</td></tr>
+<tr><td>2026-10-22</td><td>212.21</td><td>218.88</td></tr>
+<tr><td>2026-10-23</td><td>210.96</td><td>213.85</td></tr>
+<tr><td>2026-10-26</td><td>216</td><td>217.75</td></tr>
+<tr><td>2026-10-27</td><td>217.94</td><td>219.19</td></tr>
+<tr><td>2026-10-28</td><td>215.38</td><td>219.99</td></tr>
+<tr><td>2026-10-29</td><td>213.66</td><td>215.33</td></tr>
+<tr><td>2026-10-30</td><td>204.64</td><td>209.06</td></tr>
+</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a></span><p>原日收盘与盘中 high 字段原值保留，未重画或改造数据。</p></div>
+<h2>其他解释</h2>
+<h3>担忧未必变成近期订单下滑</h3>
+<p>客户回报疑虑可以与继续采购并存；板块共同重估也可能解释部分回撤；兑现原指引，仍可能不足以满足更高预期。区分这些路径，需要行业比较、同期预期与后续披露。<span class="refs"><a href="#claim-C10">[C10]</a></span></p>
+<h2>接下来观察什么</h2>
+<h3>下一季收入、后续指引与毛利额</h3>
+<p>检验扩张是否兑现；原指引收入区间1058.4—1101.6亿美元。<span class="refs"><a href="#claim-C4">[C4]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C11">[C11]</a></span></p>
+<h3>应收、经营现金流及现金转化</h3>
+<p>区分交付扩张的资金占用与持续回收压力。<span class="refs"><a href="#claim-C6">[C6]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C11">[C11]</a></span></p>
+<h2>其他限制</h2>
+<p>原表述中 calculations.json、independent-freeze.json、inputs/、raw/ 等相对路径均指原样本目录；本包 legacy-calculations.json 仅为旧计算审计副本，未新做公式或算术认证。<span class="refs"></span></p>
+<details id="audit"><summary>来源与结论审计</summary>
+<div class="claim" id="claim-C1"><p>[C1] NVDA最近已收盘日为2026-10-30，收204.64美元；9月30日228.38美元，10月价格累计变化-10.39%（204.64/228.38-1）；10月23日210.96美元，最后一周-3.00%；10月29日213.66美元，最后一天-4.22%。均为收盘价格收益，不含股息。（price；2026-10-31T17:14:08Z）</p><p>依据：；来源：https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx</p></div>
+<div class="claim" id="claim-C2"><p>[C2] 完整10月日行情中最高盘中价为10月6日243.37美元，至月末回撤15.91%；该日239.24美元也是月内最高收盘价，至月末收盘回撤14.46%。10月先涨后跌，不能把高点回撤当作整月跌幅。（price；2026-10-31T17:14:08Z）</p><p>依据：；来源：https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx</p></div>
+<div class="claim" id="claim-C3"><p>[C3] NVIDIA 8月26日公布FY2027 Q2（截至7月26日）：总收入962.21亿美元，环比18%、同比106%；数据中心收入890亿美元，环比18%、同比117%；GAAP和non-GAAP毛利率均75.0%。这是本轮已取得的季度财务基准，不能据此声称10月经营现状已确认。 同份财报直接披露GAAP毛利额721.42亿美元。（fact；2026-10-31T17:14:08Z）</p><p>依据：；来源：https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027</p></div>
+<div class="claim" id="claim-C4"><p>[C4] 同一官方财报给FY2027 Q3总收入指引1080亿美元±2%，不假设来自中国的数据中心计算收入；GAAP和non-GAAP毛利率指引均74.0%±50基点。指引是管理层预期，不是已实现收入。（fact；2026-10-31T17:14:08Z）</p><p>依据：；来源：https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027</p></div>
+<div class="claim" id="claim-C5"><p>[C5] Reuters 10月30日收盘报道把科技股抛售联系到Amazon和Intel季报失望及AI巨额投入回报担忧，并记录NVDA当日跌4.2%；Wealthspire的Oliver Pursche表示本周焦点是AI何时取得正回报。这里只保留该媒体及受访者归因，不外推为整月已证实因果。（view；2026-10-31T17:14:08Z）</p><p>依据：；来源：https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html</p></div>
+<div class="claim" id="claim-C6"><p>[C6] FY2027 Q2经营现金流240.77亿美元，半年累计744.21亿美元；Q2应收账款变动占用现金223.46亿美元。（fact；2026-10-31T17:14:08Z）</p><p>依据：；来源：https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027</p></div>
+<div class="claim" id="claim-C7"><p>[C7] Q3收入指引中点较Q2高约12.24%；以两项指引中点相乘，Q3示例毛利额799.2亿美元，Q2直接披露GAAP毛利额721.42亿美元，增约10.78%。这不是已实现利润，也不是股价回报预测。（inference；2026-10-31T17:14:08Z）</p><p>依据：C3, C4；来源：</p></div>
+<div class="claim" id="claim-C8"><p>[C8] Q2经营现金流/收入约25.02%；从半年减Q2得到Q1经营现金流503.44亿美元，同期收入816.15亿美元，该比值约61.68%。单季变动受营运资本及其他现金流项目影响，应收占用不等于坏账。（inference；2026-10-31T17:14:08Z）</p><p>依据：C3, C6；来源：</p></div>
+<div class="claim" id="claim-C9"><p>[C9] 这批材料更适合检验增长兑现、利润和现金回收的质量，尚不足以把10月跌幅判定为订单恶化。最后交易日的AI投入回报担忧有媒体归因支持，全月相对表现、估值与预期修订仍缺资料，不能识别整月主因。（inference；2026-10-31T17:14:08Z）</p><p>依据：C1, C2, C3, C4, C5, C6；来源：</p></div>
+<div class="claim" id="claim-C10"><p>[C10] 最强反方是客户投入回报担忧可能不影响近期GPU采购，收入与毛利额仍能扩张；板块共同重估也可能解释部分回撤，不能只寻找公司特有原因。另一种路径是公司兑现原指引但低于股票隐含要求；区分这些解释需要冻结时点的行业比较、一致预期与估值。（inference；2026-10-31T17:14:08Z）</p><p>依据：C3, C4, C5, C7；来源：</p></div>
+<div class="claim" id="claim-C11"><p>[C11] 下一次应同口径检查收入对原指引区间的兑现、后续指引、毛利额和现金回收，而不能以单个季度现金流变化直接认定需求失效。（inference；2026-10-31T17:14:08Z）</p><p>依据：C3, C4, C6, C7, C8；来源：</p></div>
+</details></main><script>
+document.getElementById('theme').addEventListener('click',()=>{const d=document.documentElement;const dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;d.dataset.theme=dark?'light':'dark'});
+document.getElementById('print').addEventListener('click',()=>window.print());
+document.querySelectorAll('.refs a').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById(a.getAttribute('href').slice(1));if(t)t.closest('details').open=true}));
+document.querySelectorAll('[data-readout]').forEach(n=>{const show=()=>document.getElementById('chart-readout').textContent=n.dataset.readout;n.addEventListener('focus',show);n.addEventListener('pointerenter',show);n.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){const nodes=Array.from(document.querySelectorAll('[data-readout]'));const i=nodes.indexOf(n);nodes[Math.max(0,Math.min(nodes.length-1,i+(e.key==='ArrowRight'?1:-1)))].focus();e.preventDefault()}})});
+</script></body></html>

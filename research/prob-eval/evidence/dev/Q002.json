@@ -1,0 +1,50 @@
+{
+  "qid": "Q002",
+  "as_of": "2026-08-05",
+  "kept": [
+    {
+      "excerpt": "We are in contact with President Trump's representatives every day, this is important. We will be ready for all formats of meetings, we expect that now, in August, Vitkoff and Kushner will be active. Work is also ongoing with other partners, in particular in the Gulf countries, who can support our diplomatic efforts, our security needs.",
+      "published_at": "2026-08-04",
+      "publisher": "Siverskodonetsk City Military Administration — republication of the President of Ukraine's address",
+      "relevance": "This official Ukrainian government republication records readiness for meetings and an expectation of US envoy activity during August, without announcing a meeting date or confirming in-person negotiations.",
+      "url": "https://sed-rada.gov.ua/en/news/it-important-partners-hear-ukraine-and-know-every-package-our-air-defense-actually-protects"
+    },
+    {
+      "excerpt": "On August 3, Mikhail Galuzin, Russia's Deputy Foreign Minister, said at the third Kazakhstan-Russia Media Forum in St. Petersburg, \"We are always ready for negotiations and open to solutions through dialogue.\" Galuzin emphasized that if the Western nations supporting Ukraine recognize the need for honest and constructive dialogue to address the root causes of the conflict, there could be a possibility for negotiations. He also denied speculation that Russia is indirectly negotiating with the West through Kazakhstan, asserting that they are in direct contact with forces that can influence the Kyiv regime and have not requested Kazakhstan to relay messages to the West.",
+      "published_at": "2026-08-04",
+      "publisher": "Aju Press",
+      "relevance": "Russia's conditional openness and denial of a Kazakhstan intermediary channel help distinguish public diplomatic positioning from evidence of a deliberate qualifying meeting.",
+      "url": "https://m.ajupress.com/amp/20260804144470429"
+    },
+    {
+      "excerpt": "WASHINGTON, July 28 (Reuters) - U.S. President Donald Trump and Ukrainian leader Volodymyr Zelenskiy on Tuesday discussed efforts to revive peace talks with Russia and a deal to allow Ukraine to make Patriot missile interceptors, ahead of the funeral of a U.S. senator who was one of Kyiv's strongest backers. Zelenskiy held a private meeting with Trump in the Oval Office, in the absence of reporters, before the funeral of Senator Lindsey Graham in the afternoon.",
+      "published_at": "2026-07-28",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "The meeting demonstrates a recent US-Ukrainian effort to restart the diplomatic process, but does not itself establish Russian participation or an authorized indirect Russia-Ukraine meeting.",
+      "url": "https://www.marketscreener.com/news/trump-welcomes-zelenskiy-ahead-of-funeral-of-senate-ally-who-championed-ukraine-ce7f51ddde8af324"
+    },
+    {
+      "excerpt": "MOSCOW, July 27 (Reuters) – The Kremlin said on Monday that it had not seen any specific information regarding new proposals for a peace settlement in Ukraine ahead of a meeting in Washington between U.S. President Donald Trump and Ukrainian President Volodymyr Zelenskiy. A Ukrainian source said last week that U.S. and Ukrainian officials had been discussing a proposal for an air ceasefire to take to Russian counterparts as part of a new round of peace talks.",
+      "published_at": "2026-07-27",
+      "publisher": "Reuters via ThePrint",
+      "relevance": "This establishes the gap between discussion of a fresh proposal and Russian confirmation of concrete negotiating details shortly before the cutoff.",
+      "url": "https://theprint.in/world/kremlin-says-it-has-seen-nothing-tangible-on-any-new-ukraine-peace-proposals/2997881/"
+    },
+    {
+      "excerpt": "MOSCOW, July 24 (Reuters) - Russia believes U.S. President Donald Trump is sincere in his efforts to end the Ukraine war and will wait for Washington to put forward new proposals, even though the U.S. is continuing to provide weapons to Kyiv, the Kremlin said on Friday. The last three-way peace talks between Russia, Ukraine and the U.S. took place in February, shortly before the United States and Israel went to war with Iran. The Kremlin has repeatedly said it hopes U.S. mediation will resume once the Middle East crisis has eased. Russia has been saying for weeks that it is ready to host Trump’s envoys for talks in Moscow, but no date has been announced.",
+      "published_at": "2026-07-24",
+      "publisher": "Reuters via Investing.com",
+      "relevance": "This provides a dated account of the stalled trilateral process, a possible route through US mediation, and the absence of an announced envoy visit date.",
+      "url": "https://www.investing.com/news/world-news/russia-says-it-will-wait-for-new-trump-proposals-on-ending-ukraine-war-4811762"
+    },
+    {
+      "excerpt": "Talks between the United States, Ukraine and Russia have resumed in Geneva, a source close to the discussions has said. The delegations met again on Wednesday morning at the Intercontinental Hotel. On Tuesday evening, six hours of political and military talks ended without any public statement from either side. A source close to the Russian delegation described the exchanges as “very tense”.",
+      "published_at": "2026-02-18",
+      "publisher": "Keystone-SDA via SWI swissinfo.ch",
+      "relevance": "This supplies historical evidence that official delegations can conduct in-person negotiations in a US-mediated format despite difficult substantive disagreements.",
+      "url": "https://www.swissinfo.ch/eng/international-geneva/geneva-talks-resume-between-us-ukraine-and-russia/90960585"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-08-05, inclusive. All included items have an explicit publication date on or before the cutoff; excerpts are limited to contemporaneous article or statement content. Later-dated search results, undated material, prediction-market pages, odds, and market prices were excluded. Historical meetings are included only as pre-cutoff background, without a market resolution judgment; the supplied rules do not specify a lower bound for the qualifying meeting window. The July 28 Reuters item was published and modified on July 28. The August 4 Ukrainian statement is linked through an official local-government republication. Built-in web_fetch failed because multiple providers were registered; agent-reach retrieved the July 24 and July 27 Reuters articles and the August 4 Aju Press article. Other included excerpts and dates were verified in web_search source text after the fallback reader became temporarily unavailable. The Aju Press page labels its English text as AI-translated. No meeting probability or outcome is supplied."
+}

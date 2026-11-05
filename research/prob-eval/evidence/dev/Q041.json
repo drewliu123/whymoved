@@ -1,0 +1,46 @@
+{
+  "qid": "Q041",
+  "as_of": "2026-07-22",
+  "kept": [
+    {
+      "excerpt": "U.S. Senator Elissa Slotkin, the last Democrat to represent Michigan’s 7th Congressional District, announced her endorsement of Matt Maasdam for Congress, backing the retired Navy SEAL. Maasdam has earned labor union endorsements including the Michigan Pipe Trades Association, IBEW Michigan, Teamsters Local 243, and the Michigan Professional Fire Fighters Union.",
+      "published_at": "2026-07-15",
+      "publisher": "Matt Maasdam for Congress",
+      "relevance": "An official rival campaign announcement establishes Slotkin's endorsement and identifies organized support competing with Lawrence's progressive coalition; campaign claims should be treated as partisan.",
+      "url": "https://mattmaasdam.com/u-s-senator-elissa-slotkin-endorses-matt-maasdam-for-congress/"
+    },
+    {
+      "excerpt": "Lawrence has been on top in most available polls, including in an internal poll from one of his two Democratic primary opponents, ex-Navy SEAL and business executive Matt Maasdam. A third poll sponsored by his other opponent, former U.S. Ambassador to Ukraine Bridget Brink, has her out in front. Maasdam is being boosted by a $750,000 VoteVets ad campaign, while National Nurses United has invested $400,000 in a super PAC for Lawrence.",
+      "published_at": "2026-07-01",
+      "publisher": "The American Prospect",
+      "relevance": "Provides a dated progressive publication's account of conflicting campaign-sponsored polling and campaign resources, useful alongside the later competitive-race preview.",
+      "url": "https://prospect.org/2026/07/01/will-lawrence-lansing-michigan-seventh-congressional-district-data-centers-iran-war/"
+    },
+    {
+      "excerpt": "Respondents were first asked which candidate they would support if the election were held today. Lawrence held a narrow lead with 5.9%, compared to 4.9% for Bridget Brink and 3.8% for Matt Maasdam, with most voters undecided. After hearing a brief biography of the three candidates, Lawrence came out with 45.2% support to Maasdam's 11.7% and Brink’s 9.9% in the March 17–18 survey.",
+      "published_at": "2026-03-26",
+      "publisher": "The Chronicle News",
+      "relevance": "Supplies an early polling baseline while making clear that the much larger Lawrence figure was measured after candidate biographies rather than on the initial ballot question.",
+      "url": "https://www.thechroniclenews.com/post/new-poll-shows-william-lawrence-leading-in-mi-07-democratic-primary"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://jewishinsider.com/2026/07/matt-maasdam-william-lawrence-michigan-democratic-primary/",
+      "reason": "Excerpt explicitly mentions the Aug. 4 primary and students returning to campus after that date, both after the 2026-07-22 cutoff. Removed under the rule excluding any post-cutoff reference, including prospective references."
+    },
+    {
+      "url": "https://michiganadvance.com/2026/07/20/aoc-addresses-apparent-will-lawrence-snub-at-lansing-rally-for-abdul-el-sayed/",
+      "reason": "Excerpt explicitly refers to the August primary, after the 2026-07-22 cutoff. Removed under the rule excluding any post-cutoff reference, including prospective references."
+    },
+    {
+      "url": "https://michiganadvance.com/2026/07/17/democratic-candidates-lay-out-how-they-would-represent-residents-if-elected-in-mi-7/",
+      "reason": "Excerpt mentions the Aug. 4 primary and November election, and relevance repeats the August 4 schedule, all after the 2026-07-22 cutoff. Removed under the rule excluding any post-cutoff reference, including prospective references."
+    },
+    {
+      "url": "https://weareprogressives.org/congressional-progressive-caucus-pac-endorses-william-lawrence-for-mi-07/",
+      "reason": "Excerpt explicitly mentions the August 4th primary election, and relevance refers to its scheduled date, after the 2026-07-22 cutoff. Removed under the rule excluding any post-cutoff reference, including prospective references."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-22, inclusive. Included only sources with publication dates verified through article datelines, campaign release dates, or page metadata. The Chronicle article displays March 26 locally; its metadata timestamp is March 27 at 00:10 UTC. Used web_search for discovery and agent-reach web read for article verification after web_fetch failed because of a provider configuration error. Excerpts are factual extracts or close factual paraphrases; expert assessments and campaign claims remain attributed. Excluded undated polling listings, unavailable campaign pages without verifiable publication dates, an official candidate PDF with conflicting date signals, rolling election summaries, prediction-market/betting pages, and all material published after the cutoff. Poll fieldwork dates alone were not accepted as publication dates. No post-cutoff developments or nomination outcome are included."
+}

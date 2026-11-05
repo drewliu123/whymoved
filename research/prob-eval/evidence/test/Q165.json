@@ -1,0 +1,41 @@
+{
+  "qid": "Q165",
+  "as_of": "2026-07-22",
+  "kept": [
+    {
+      "published_at": "2026-07-14",
+      "publisher": "Missouri Independent",
+      "url": "https://missouriindependent.com/2026/07/14/cori-bush-targets-wesley-bells-israel-stance-in-st-louis-congressional-rematch/",
+      "excerpt": "Wesley Bell and Cori Bush face off again August 4 in the Democratic primary for Missouri’s 1st Congressional District. Three other candidates are running: Alissa Murphy, Carl E. Harris Sr. and Carl Ernest Henderson; none have formed committees to raise money for their campaigns. Federal Election Commission records show United Democracy Project had spent $1.1 million overall in the primary through the preceding Friday. Bush is betting that shifting public sentiment toward the Middle East, Bell’s support for Israel and the money supporting him could help her comeback.",
+      "relevance": "Provides a dated July assessment of the candidate field, Bell’s outside financial support and Bush’s principal strategy for challenging him."
+    },
+    {
+      "published_at": "2026-07-14",
+      "publisher": "Jewish Telegraphic Agency",
+      "url": "https://www.jta.org/2026/07/14/politics/cori-bush-to-fellow-progressives-my-reelection-would-be-the-knockout-punch-to-aipac",
+      "excerpt": "Cori Bush spoke at a Monday-night online rally organized by Our Revolution, the group formed by Senator Bernie Sanders to advance the progressive movement. She was running against incumbent Representative Wesley Bell in a field with three other candidates. Bush cast a primary victory as a potential “knockout” punch to AIPAC.",
+      "relevance": "Documents active progressive organizational support for Bush and the political message she was using against Bell in mid-July."
+    },
+    {
+      "published_at": "2026-07-09",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2026/07/09/aipac-missouri-israel-cori-bush-bell-primary",
+      "excerpt": "United Democracy Project had spent $865,000 on television ads supporting Bell in Missouri’s 1st Congressional District, according to AdImpact.",
+      "relevance": "Establishes a concrete, pre-cutoff measure of the advertising resources supporting Bell."
+    },
+    {
+      "published_at": "2026-06-30",
+      "publisher": "Ballotpedia News",
+      "url": "https://news.ballotpedia.org/2026/06/30/rep-wesley-bell-and-former-rep-cori-bush-are-again-running-against-each-other-in-the-democratic-primary-for-missouris-1st-congressional-district/",
+      "excerpt": "Five candidates are running in the Democratic primary for Missouri’s 1st Congressional District on August 4, 2026. Incumbent Representative Wesley Bell and Cori Bush lead in noteworthy endorsements and fundraising. Democratic Leader Hakeem Jeffries, Democratic Whip Katherine Clark and the Congressional Black Caucus PAC endorsed Bell. Senator Bernie Sanders, Our Revolution and St. Louis Democratic Socialists of America endorsed Bush.",
+      "relevance": "Confirms the primary schedule, Bell’s incumbency and the competing establishment and progressive endorsement coalitions."
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.ksmu.org/news/2024-08-07/wesley-bell-ousts-u-s-rep-cori-bush-in-missouri-democratic-primary",
+      "reason": "Contains explicit election results and vote shares. These concern the historical 2024 primary, but the supplied removal rule excludes results without an exception for historical contests."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-22, inclusive. Publication dates and factual text were verified from dated web_search results; excerpts are factual condensations of those results. web_fetch failed because its provider configuration was ambiguous. The requested agent-reach web-read fallback returned RATE_LIMITED and was not retried. Excluded undated official calendar and candidate pages, dynamic aggregators, prediction-market pages, and all material published after the cutoff. No polling estimate is included because the located pre-cutoff polling references contained conflicting candidate percentages or inconsistent dating. The July 9 and July 14 spending figures use different reporting dates and scopes and should not be added together. This pack contains evidence only and does not assign a forecast probability."
+}

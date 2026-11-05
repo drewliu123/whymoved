@@ -1,0 +1,272 @@
+{
+  "as_of": "2026-10-31T17:21:33.217142+00:00",
+  "claims": [
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C1",
+      "sources": [
+        {
+          "id": "S1",
+          "published_at": "unknown",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+        }
+      ],
+      "text": "12月Fed事件active=true、closed=false；五个子合约也active=true、closed=false且acceptingOrders=true。事件endDate为2026-12-10T04:59:00Z，子合约均为2026-12-09T23:59:00Z。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C2",
+      "sources": [
+        {
+          "id": "S1",
+          "published_at": "unknown",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+        }
+      ],
+      "text": "规则按12月会议前后联邦基金目标区间上限的变化结算，不按从今天到年底的累计变化；非展示幅度向上取至25bp档，例子为12.5bp算25bp。正式来源为12月8–9日会议声明，声明可触发提前结算；原文条件为“If no statement is released by the end date of the next scheduled meeting”则归No change；未明确next相对哪个时点，因此不能据此指定某次会议为默认截止。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C3",
+      "sources": [
+        {
+          "id": "S3",
+          "published_at": "unknown",
+          "publisher": "Federal Reserve",
+          "tier": "T0",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ],
+      "text": "Fed日历列2026年12月8–9日会议并附经济预测；12月之后的日历会议列2027年1月26–27日，日历说明日期在前次会议确认前为暂定。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C4",
+      "sources": [
+        {
+          "id": "S4",
+          "published_at": "2026-10-28T14:00:00-04:00",
+          "publisher": "Federal Reserve",
+          "tier": "T0",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+        }
+      ],
+      "text": "10月28日Fed以10–2维持3.75%–4.00%；Cook与Hammack要求加25bp。声明形容经济强劲、就业与劳动力同步、失业率变化不大，通胀仍高，需要更多信息。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C5",
+      "sources": [
+        {
+          "id": "S5",
+          "published_at": "2026-10-29T08:30:00-04:00",
+          "publisher": "BEA",
+          "tier": "T0",
+          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+        }
+      ],
+      "text": "BEA在10月29日公布9月PCE：总价格环比0.5%、同比3.6%，核心环比0.3%、同比3.1%；8月核心环比同为0.3%。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C6",
+      "sources": [
+        {
+          "id": "S5",
+          "published_at": "2026-10-29T08:30:00-04:00",
+          "publisher": "BEA",
+          "tier": "T0",
+          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+        }
+      ],
+      "text": "同份BEA发布中，9月名义PCE环比0.5%，实际PCE增幅不足0.1%（表格四舍五入为0.0%），较8月0.5%的实际增速放缓；实际可支配收入环比下降0.3%。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C7",
+      "sources": [
+        {
+          "id": "S6",
+          "published_at": "2026-09-16T14:00:00-04:00",
+          "publisher": "Federal Reserve",
+          "tier": "T0",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+        },
+        {
+          "id": "S4",
+          "published_at": "2026-10-28T14:00:00-04:00",
+          "publisher": "Federal Reserve",
+          "tier": "T0",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+        }
+      ],
+      "text": "9月16日Fed以12–0加息25bp至3.75%–4.00%，10月随后维持。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C8",
+      "sources": [
+        {
+          "id": "S1",
+          "published_at": "unknown",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+        }
+      ],
+      "text": "Gamma原始Yes参考价依次为：降50+bp 0.40%、降25bp 0.65%、不变27.50%、加25bp 70.50%、加50+bp 1.70%；获取时间2026-10-31T17:17:21.213899Z，HTTP Date为17:14:28Z。",
+      "type": "price"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C9",
+      "sources": [
+        {
+          "id": "S2",
+          "published_at": "unknown",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+        }
+      ],
+      "text": "CLOB五档Yes bid/ask依次为0.003/0.005、0.006/0.007、0.27/0.28、0.70/0.71、0.016/0.018；获取窗口17:17:41.692–41.992Z，书内时间为17:16:54.639–17:17:40.943Z。",
+      "type": "price"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "basis": [
+        "C8",
+        "C9"
+      ],
+      "id": "C10",
+      "sources": [],
+      "text": "按保存盘口计算，五个Gamma Yes参考价之和100.75%，bid和99.50%，ask和102.00%；保留原值不强行归一化，不能将其当无摩擦精确概率分布。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C11",
+      "sources": [
+        {
+          "id": "S2",
+          "published_at": "unknown",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+        }
+      ],
+      "text": "加25bp最佳bid/ask显示3010.62/48170.95份，按价格乘份数约2107.43/34201.37美元；不变为27435.55/24428.43份。显示深度可撤单，不等于保证成交。",
+      "type": "price"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "basis": [
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "id": "C12",
+      "sources": [],
+      "text": "盘口前定性初判以维持为暂定基准、加25bp为实质竞争情景、降息不作基准。10月的等待选择支持暂停，但核心价格仍有压力，无法把异议票数换成概率；缺条件化样本，不给独立数字概率。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "basis": [
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "id": "C13",
+      "sources": [],
+      "text": "盘口后补见9月全票加息，更合理的竞争解释是10月暂歇后恢复收紧；这削弱把10月维持外推至12月的把握。最终将维持与加25bp并列工作情景，加息的证据基础充分，但没有独立模型支持认定70.5%高估或低估。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "basis": [
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "id": "C14",
+      "sources": [],
+      "text": "9月实际消费增速放缓、实际DPI下降，与通胀压力仍在可以同时成立，但单月数据尚未确认持续或全面需求走弱。10月Fed以10–2选择维持，也支持继续等待有政策依据。核心价格与就业的后续组合仅作定性更新提示，尚非已校准、可重复的改判阈值。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "basis": [
+        "C2",
+        "C3",
+        "C5",
+        "C6"
+      ],
+      "id": "C15",
+      "sources": [],
+      "text": "BEA列下一次个人收入与支出发布为2026年11月25日8:30 a.m. EST；应核对核心PCE与实际消费，而非只看总价格。之后12月8–9日声明和实际规则结算是最终核对节点。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "basis": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "id": "C16",
+      "sources": [],
+      "text": "规则存在元数据时点不一致和延期措辞风险：事件与子合约endDate相差5小时；没有界定“next scheduled meeting”的next相对哪个时点，也没有精确时区/截止秒；日历仅证明2027年1月26–27日在12月会议之后，不能确定它就是默认截止；紧急会改变会前利率时不能直接用今天4.00%上限作差。No change也可能来自无声明默认条款。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "id": "C17",
+      "sources": [
+        {
+          "id": "S1",
+          "published_at": "unknown",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+        },
+        {
+          "id": "S2",
+          "published_at": "unknown",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+        }
+      ],
+      "text": "加25bp的Gamma lastTradePrice为0.71，同一Yes token的CLOB last_trade_price为0.290；两端都未给独立成交时戳。这两个字段不一致，未用于方向或价格变动解释，差异原因未核实。",
+      "type": "price"
+    },
+    {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "basis": [
+        "C2",
+        "C13",
+        "C14"
+      ],
+      "id": "C18",
+      "sources": [],
+      "text": "可否定命题：12月正式声明若相对会议前上限降息或加息至少50bp，即超出维持/加25bp两中心情景，应记为中心情景未覆盖；其余watch仅作定性更新提示，无已校准可重复阈值。无数值概率不计算独立Brier/log loss。",
+      "type": "inference"
+    }
+  ],
+  "question": "12月Fed合约定价及官方证据的分歧是什么？"
+}

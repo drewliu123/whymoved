@@ -1,0 +1,3312 @@
+{
+  "manifest": {
+    "as_of": "2026-10-31T17:21:33.217142+00:00",
+    "created_at": "2026-10-31T18:34:09.309053Z",
+    "files": {
+      "claims.json": "d846d6e9deefbc768ea09e4e22144d1aa16cc712ff4bf0d3affee1a205843d44",
+      "diff.json": "58ca064c09359e294d5016004248262977aa56a3aa737b46cf08cf166515eb4d",
+      "plan.json": "7553f8a298ef455e1373c1d40701b2bf7765d8ea0d100da984cc8c7a699558f3",
+      "report.html": "d352183748ded923504f400bf63e8f06d75efa384543f20f07e8462293186834",
+      "report.json": "ae368cb576ce41b34a95bc3c19f07afb65f271cb62fda19a932b976cdb780ae3",
+      "report.md": "f18086a527df0ae9b2fffe4615c22b255faf1dc892506f8ce924c9de0c505144",
+      "sources.json": "105c6a7988be0047545873cf87290cc5aacf3a96524b50fb09146460666fc4ba"
+    },
+    "parent_manifest_sha256": "8136886e934e05ea30612996cb80f845305ea93c798074ae0f8af1f76a21456a",
+    "parent_run": "R20261031T183409Z-c65c23fddada",
+    "run_id": "R20261031T183409Z-adebe32fad6e",
+    "schema_version": 2
+  },
+  "path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs/R20261031T183409Z-adebe32fad6e",
+  "report": {
+    "alternatives": [
+      {
+        "claim_ids": [
+          "C4",
+          "C5",
+          "C7",
+          "C13",
+          "C14"
+        ],
+        "text": "9月以12–0加25bp，10月2人仍要加息；核心PCE连续0.3%且Fed形容就业稳定，支持把10月暂停解释为等待而非方向反转。若下一份核心通胀保持偏强、就业未明显恶化，加25bp的解释会增强；这是定性提示，并非已校准、可重复的改判阈值。这是对盘口前“维持优先”的实质挑战。",
+        "title": "最强反方：暂停是一次观察窗口，加息路径尚未结束"
+      },
+      {
+        "claim_ids": [
+          "C4",
+          "C5",
+          "C6",
+          "C14"
+        ],
+        "text": "9月实际消费增速较8月放缓、实际DPI下降，核心环比未比8月加速；这些单月数据尚未确认持续或全面需求走弱。10月Fed以10–2维持并表示等待更多信息，是继续等待的直接政策依据。总PCE环比升0.5%不足以单独推出必须12月加息；后续核心价格和就业仅作定性更新提示，尚无校准改判阈值。",
+        "title": "加息情景的反方：单月实际消费放缓，委员会也已选择等待"
+      },
+      {
+        "claim_ids": [
+          "C2",
+          "C16"
+        ],
+        "text": "无声明默认条款可能把No change变成程序性结果；紧急会议若先改变利率，12月相对会前不变也可能与今天利率不同。最终复盘应同时核对政策变化与合约裁决，不用合约标签代替宏观事实。",
+        "title": "规则替代解释：No change不总等于经济政策未变"
+      }
+    ],
+    "answer": {
+      "claim_ids": [
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C12",
+        "C13",
+        "C15"
+      ],
+      "text": "市场把加25bp列为首要结果：Gamma参考70.5%，维持27.5%。官方证据支持把加息视为实质情景：9月全票加25bp，10月虽暂停但仍有加息异议，核心PCE仍有压力。独立初判曾暂偏维持；补齐9月资料后的最终观点改为维持与加25bp并列工作情景。没有校准模型，不能判断70.5%是否错价，也不给独立点概率。下一项最明确观察是11月25日的核心PCE、实际消费及随后就业数据。"
+    },
+    "answer_claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C12",
+      "C13",
+      "C15"
+    ],
+    "as_of": "2026-10-31T17:21:33.217142+00:00",
+    "development_regression": {
+      "heldout": false,
+      "new_research": false,
+      "notice": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。",
+      "strict_claims": false
+    },
+    "findings": [],
+    "gaps": [
+      "BLS就业与CPI即时页均403；未从搜索摘要补入未核实数字，因此缺直接劳动力与CPI基础数据。官方就业判断仅来自Fed声明。",
+      "reference class只定义“相似通胀/就业约束下的常规FOMC会议”，未建立逐次历史条件样本，也无校准反应函数；独立概率留null。定性初判不能转换为概率差或收益优势。",
+      "搜索插件在冻结初判前返回媒体与一家机构加息观点；未见盘口百分比，但不能称对所有外部观点完全盲法。9月决议在看价后才取得，最终观点存在锚定可能。",
+      "Gamma与CLOB异步且Gamma有缓存迹象；未抓No侧深度、成交历史、费用明细或CME对照，未做执行/滑点模拟。不把网站liquidity和累计volume当可成交深度。加25bp的Gamma lastTradePrice=0.71而同Yes token的CLOB last_trade_price=0.290，均无独立成交时戳；两字段不一致且均未用于方向/价格变动结论，未核实差异成因。",
+      "事件/子合约endDate相差5小时；fallback中next相对哪个时点、精确时区/截止秒、非常规变动取整的全部边界、oracle争议处理未由当前描述消除。未另抓规则指向的openmarket.htm页面。",
+      "六个关键T0资料记录来自Fed、BEA、Polymarket，来源独立性有限；未扩搜社区，本轮无社区覆盖结论。",
+      "报告HTML与Markdown由同一report.json生成，已作静态文本和引用检查；未在浏览器渲染、截图或验证移动设备。本轮已收到协调者转达的独立审查并定向修正，处置见independent-review.md；静态校验不代表完整独立QA，也不证明预测优势。"
+    ],
+    "independent_analysis": {
+      "base_rate": null,
+      "final_vs_initial": "盘口后追加9月决议，降低维持优先排序把握；保留原始初判不改写",
+      "frozen_at": "2026-10-31T17:16:48.345345+00:00",
+      "market_blind_scope": "对盘口盲；非对所有外部观点盲",
+      "numeric_probability": null,
+      "record": "independent-freeze.json",
+      "reference_class": "相似通胀约束下的常规FOMC会议；尚未构建历史条件样本，不提供伪基准率。"
+    },
+    "limitations": [
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。"
+      },
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "真实未来合约、完整规则、官方决议/PCE与盘口取得；独立概率、BLS基础数据与规则异常边界仍有缺口。"
+      },
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "BLS就业与CPI即时页均403；未从搜索摘要补入未核实数字，因此缺直接劳动力与CPI基础数据。官方就业判断仅来自Fed声明。"
+      },
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "reference class只定义“相似通胀/就业约束下的常规FOMC会议”，未建立逐次历史条件样本，也无校准反应函数；独立概率留null。定性初判不能转换为概率差或收益优势。"
+      },
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "搜索插件在冻结初判前返回媒体与一家机构加息观点；未见盘口百分比，但不能称对所有外部观点完全盲法。9月决议在看价后才取得，最终观点存在锚定可能。"
+      },
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "Gamma与CLOB异步且Gamma有缓存迹象；未抓No侧深度、成交历史、费用明细或CME对照，未做执行/滑点模拟。不把网站liquidity和累计volume当可成交深度。加25bp的Gamma lastTradePrice=0.71而同Yes token的CLOB last_trade_price=0.290，均无独立成交时戳；两字段不一致且均未用于方向/价格变动结论，未核实差异成因。"
+      },
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "事件/子合约endDate相差5小时；fallback中next相对哪个时点、精确时区/截止秒、非常规变动取整的全部边界、oracle争议处理未由当前描述消除。未另抓规则指向的openmarket.htm页面。"
+      },
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "六个关键T0资料记录来自Fed、BEA、Polymarket，来源独立性有限；未扩搜社区，本轮无社区覆盖结论。"
+      },
+      {
+        "claim_ids": [],
+        "material": true,
+        "text": "报告HTML与Markdown由同一report.json生成，已作静态文本和引用检查；未在浏览器渲染、截图或验证移动设备。本轮已收到协调者转达的独立审查并定向修正，处置见independent-review.md；静态校验不代表完整独立QA，也不证明预测优势。"
+      },
+      {
+        "claim_ids": [],
+        "material": false,
+        "text": "原表述中 calculations.json、independent-freeze.json、inputs/、raw/ 等相对路径均指原样本目录；本包 legacy-calculations.json 仅为旧计算审计副本，未新做公式或算术认证。"
+      }
+    ],
+    "no_change_reason": "开发无变化更新演示：复用完全相同的原证据与结论，没有新增研究发现，原判断保持不变。",
+    "pricing": {
+      "calculation_file": "calculations.json",
+      "normalization": "none",
+      "quote_timestamp_policy": "原始获取时间、HTTP Date、updatedAt和book timestamp并存；不声称同刻",
+      "source": "S1/S2"
+    },
+    "question": "Polymarket的2026年12月Fed决议合约正在定价什么，官方证据支持到哪一步？",
+    "research_note": "仅为研究建议与案例方法验证，不是买卖建议。未写正式预测账本、作者库或外部平台。",
+    "schema_version": 2,
+    "sources": [
+      {
+        "id": "S1",
+        "published_at": "unknown",
+        "title": "Polymarket：12月Fed决议完整事件与五个子合约",
+        "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+      },
+      {
+        "id": "S2",
+        "published_at": "unknown",
+        "title": "Polymarket CLOB：五个Yes token原始订单簿",
+        "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+      },
+      {
+        "id": "S3",
+        "published_at": "unknown",
+        "title": "Federal Reserve：2026/2027 FOMC会议日历",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      },
+      {
+        "id": "S4",
+        "published_at": "2026-10-28T14:00:00-04:00",
+        "title": "Federal Reserve：2026年10月28日FOMC声明",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+      },
+      {
+        "id": "S5",
+        "published_at": "2026-10-29T08:30:00-04:00",
+        "title": "BEA：Personal Income and Outlays, September 2026",
+        "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+      },
+      {
+        "id": "S6",
+        "published_at": "2026-09-16T14:00:00-04:00",
+        "title": "Federal Reserve：2026年9月16日FOMC声明",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+      }
+    ],
+    "status": "partial",
+    "status_reason": "真实未来合约、完整规则、官方决议/PCE与盘口取得；独立概率、BLS基础数据与规则异常边界仍有缺口。",
+    "tables": [
+      {
+        "claim_ids": [
+          "C8",
+          "C9",
+          "C11"
+        ],
+        "columns": [
+          "结果",
+          "Gamma参考",
+          "CLOB bid / ask",
+          "最佳bid份数 / ask份数",
+          "书内UTC时间"
+        ],
+        "note": " 开发转换：引用经原 claims.json 核对；仅提供原研究表格的结论级关联。",
+        "rows": [
+          [
+            "降50+bp",
+            "0.40%",
+            "0.003 / 0.005",
+            "358248.31 / 15457.88",
+            "17:17:39.444"
+          ],
+          [
+            "降25bp",
+            "0.65%",
+            "0.006 / 0.007",
+            "20 / 8556.97",
+            "17:17:39.597"
+          ],
+          [
+            "不变",
+            "27.50%",
+            "0.27 / 0.28",
+            "27435.55 / 24428.43",
+            "17:17:39.936"
+          ],
+          [
+            "加25bp",
+            "70.50%",
+            "0.7 / 0.71",
+            "3010.62 / 48170.95",
+            "17:17:40.943"
+          ],
+          [
+            "加50+bp",
+            "1.70%",
+            "0.016 / 0.018",
+            "2159.38 / 880.64",
+            "17:16:54.639"
+          ]
+        ],
+        "title": "盘口快照：价格为美元/1美元支付份额，规模为份（Yes侧）"
+      },
+      {
+        "claim_ids": [
+          "C9",
+          "C11"
+        ],
+        "columns": [
+          "结果",
+          "bid累计份",
+          "ask累计份",
+          "bid美元名义额",
+          "ask美元名义额"
+        ],
+        "note": "计算见calculations.json。远尾bid累计份大但美元金额很小；深度可撤单。未抓No侧订单簿。 开发转换：引用经原 claims.json 核对；仅提供原研究表格的结论级关联。",
+        "rows": [
+          [
+            "降50+bp",
+            "5802059.00",
+            "32483.70",
+            "9229.55",
+            "183.55"
+          ],
+          [
+            "降25bp",
+            "7334089.07",
+            "19802.10",
+            "18339.65",
+            "206.78"
+          ],
+          [
+            "不变",
+            "374743.19",
+            "356202.54",
+            "97707.58",
+            "103054.45"
+          ],
+          [
+            "加25bp",
+            "199409.31",
+            "425768.66",
+            "137622.53",
+            "306071.73"
+          ],
+          [
+            "加50+bp",
+            "357830.64",
+            "11276.40",
+            "3599.22",
+            "269.04"
+          ]
+        ],
+        "title": "显示深度：bid向下/ask向上各0.01美元内（含边界），金额未计费用"
+      },
+      {
+        "claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C16"
+        ],
+        "columns": [
+          "项目",
+          "核实结果"
+        ],
+        "note": " 开发转换：引用经原 claims.json 核对；仅提供原研究表格的结论级关联。",
+        "rows": [
+          [
+            "真实对象",
+            "event id 770450；五个market id 3215005–3215009"
+          ],
+          [
+            "事件状态",
+            "active=true；closed=false；五个子合约acceptingOrders=true"
+          ],
+          [
+            "事件endDate",
+            "2026-12-10T04:59:00Z = 12月9日23:59 EST"
+          ],
+          [
+            "五个子合约endDate",
+            "2026-12-09T23:59:00Z = 12月9日18:59 EST"
+          ],
+          [
+            "官方决策会议",
+            "2026-12-08–09；附经济预测；声明发布即可结算"
+          ],
+          [
+            "比较基准",
+            "12月会议前的目标区间上限；当前上限4.00%仅是今日背景"
+          ],
+          [
+            "默认/延期",
+            "原文到“the next scheduled meeting”end date无声明则No change；next相对哪个时点、时区及截止秒均不明。2027-01-26–27仅为12月之后的日历会议，不能确定为默认截止"
+          ],
+          [
+            "规则来源",
+            "Gamma description全文；FOMC正式声明为首要结算来源；规则另指openmarket.htm，未另抓其当前页面"
+          ]
+        ],
+        "title": "契约与时间边界"
+      },
+      {
+        "claim_ids": [
+          "C1",
+          "C2",
+          "C8",
+          "C17",
+          "C3",
+          "C4",
+          "C7",
+          "C5",
+          "C6",
+          "C9",
+          "C11"
+        ],
+        "columns": [
+          "原来源ID",
+          "发布方",
+          "层级",
+          "发布时间（原记录）",
+          "URL",
+          "所引用结论"
+        ],
+        "note": "按原内联来源 URL 关联原 sources.json；来源目录不证明 quote、历史可得性或独立性，缺失项不补造。",
+        "rows": [
+          [
+            "S1",
+            "Polymarket",
+            "T0",
+            "unknown",
+            "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632",
+            "C1, C2, C8, C17"
+          ],
+          [
+            "S3",
+            "Federal Reserve",
+            "T0",
+            "unknown",
+            "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+            "C3"
+          ],
+          [
+            "S4",
+            "Federal Reserve",
+            "T0",
+            "2026-10-28T14:00:00-04:00",
+            "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+            "C4, C7"
+          ],
+          [
+            "S5",
+            "BEA",
+            "T0",
+            "2026-10-29T08:30:00-04:00",
+            "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+            "C5, C6"
+          ],
+          [
+            "S6",
+            "Federal Reserve",
+            "T0",
+            "2026-09-16T14:00:00-04:00",
+            "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+            "C7"
+          ],
+          [
+            "S2",
+            "Polymarket",
+            "T0",
+            "unknown",
+            "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890",
+            "C9, C11, C17"
+          ]
+        ],
+        "title": "原 claims 内联来源目录（未新增取证）"
+      }
+    ],
+    "task": "事件定价：复用冻结证据的开发回归",
+    "title": "【开发回归样本】12月Fed：加息有证据，70.5%仍不是独立结论",
+    "type": "event_pricing",
+    "update": {
+      "comparability": {
+        "reason": "claims、sources、as_of、period/unit/scope及判断文本均相同。",
+        "status": "comparable"
+      },
+      "judgment_changed": false,
+      "reason": "开发回归中的相同冻结输入重复，不构成新的实际研究。"
+    },
+    "watch": [
+      {
+        "claim_ids": [
+          "C5",
+          "C6",
+          "C15"
+        ],
+        "meaning": "检查核心PCE环比是否加速，实际消费与实际收入是否修复；价格与就业组合用于定性更新，不代表已校准、可重复的改判阈值；单次消费放缓不确认持续需求走弱。日期取自本次BEA发布，更新前再核实日历。",
+        "signal": "11月25日8:30 EST：BEA十月个人收入与支出"
+      },
+      {
+        "claim_ids": [
+          "C4",
+          "C14"
+        ],
+        "meaning": "以失业率、就业修订、核心价格广度交叉检验；本次BLS页面403，暂不填数字和未核实的发布日期。若出现就业持续恶化，重新评价降息情景；此为定性提示，尚无已校准、可重复的改判阈值。",
+        "signal": "随后BLS就业与CPI正式发布、修订及Fed正式沟通"
+      },
+      {
+        "claim_ids": [
+          "C3",
+          "C4",
+          "C13"
+        ],
+        "meaning": "日历写通常三周后发布；不把推算日期当已公布预约。核对观望者的条件和收紧支持面是否扩大，不能把两张异议票直接变成概率。该观察也仅是定性更新提示，并非已校准改判阈值。",
+        "signal": "按日历惯例约11月18日前后关注10月会议纪要，实际发布时间另核实"
+      },
+      {
+        "claim_ids": [
+          "C2",
+          "C3",
+          "C16",
+          "C18"
+        ],
+        "meaning": "可否定命题：12月正式声明若相对会前目标上限降息，或加息至少50bp，即落在本报告“维持/加25bp”两中心情景之外，记为中心情景未覆盖实际结果；这不等于此前排除尾部可能。保留正式声明和真实结算证据；无声明时不自行指定fallback会议。其余watch仅作定性更新提示，非已校准可重复阈值。无数值概率，不计算独立Brier/log loss。",
+        "signal": "12月8–9日正式声明；延期时需澄清next的指代与裁决"
+      }
+    ]
+  },
+  "claims": {
+    "as_of": "2026-10-31T17:21:33.217142+00:00",
+    "claims": [
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C1",
+        "sources": [
+          {
+            "id": "S1",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+          }
+        ],
+        "text": "12月Fed事件active=true、closed=false；五个子合约也active=true、closed=false且acceptingOrders=true。事件endDate为2026-12-10T04:59:00Z，子合约均为2026-12-09T23:59:00Z。",
+        "type": "fact"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C2",
+        "sources": [
+          {
+            "id": "S1",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+          }
+        ],
+        "text": "规则按12月会议前后联邦基金目标区间上限的变化结算，不按从今天到年底的累计变化；非展示幅度向上取至25bp档，例子为12.5bp算25bp。正式来源为12月8–9日会议声明，声明可触发提前结算；原文条件为“If no statement is released by the end date of the next scheduled meeting”则归No change；未明确next相对哪个时点，因此不能据此指定某次会议为默认截止。",
+        "type": "fact"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C3",
+        "sources": [
+          {
+            "id": "S3",
+            "published_at": "unknown",
+            "publisher": "Federal Reserve",
+            "tier": "T0",
+            "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          }
+        ],
+        "text": "Fed日历列2026年12月8–9日会议并附经济预测；12月之后的日历会议列2027年1月26–27日，日历说明日期在前次会议确认前为暂定。",
+        "type": "fact"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C4",
+        "sources": [
+          {
+            "id": "S4",
+            "published_at": "2026-10-28T14:00:00-04:00",
+            "publisher": "Federal Reserve",
+            "tier": "T0",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+          }
+        ],
+        "text": "10月28日Fed以10–2维持3.75%–4.00%；Cook与Hammack要求加25bp。声明形容经济强劲、就业与劳动力同步、失业率变化不大，通胀仍高，需要更多信息。",
+        "type": "fact"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C5",
+        "sources": [
+          {
+            "id": "S5",
+            "published_at": "2026-10-29T08:30:00-04:00",
+            "publisher": "BEA",
+            "tier": "T0",
+            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+          }
+        ],
+        "text": "BEA在10月29日公布9月PCE：总价格环比0.5%、同比3.6%，核心环比0.3%、同比3.1%；8月核心环比同为0.3%。",
+        "type": "fact"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C6",
+        "sources": [
+          {
+            "id": "S5",
+            "published_at": "2026-10-29T08:30:00-04:00",
+            "publisher": "BEA",
+            "tier": "T0",
+            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+          }
+        ],
+        "text": "同份BEA发布中，9月名义PCE环比0.5%，实际PCE增幅不足0.1%（表格四舍五入为0.0%），较8月0.5%的实际增速放缓；实际可支配收入环比下降0.3%。",
+        "type": "fact"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C7",
+        "sources": [
+          {
+            "id": "S6",
+            "published_at": "2026-09-16T14:00:00-04:00",
+            "publisher": "Federal Reserve",
+            "tier": "T0",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+          },
+          {
+            "id": "S4",
+            "published_at": "2026-10-28T14:00:00-04:00",
+            "publisher": "Federal Reserve",
+            "tier": "T0",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+          }
+        ],
+        "text": "9月16日Fed以12–0加息25bp至3.75%–4.00%，10月随后维持。",
+        "type": "fact"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C8",
+        "sources": [
+          {
+            "id": "S1",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+          }
+        ],
+        "text": "Gamma原始Yes参考价依次为：降50+bp 0.40%、降25bp 0.65%、不变27.50%、加25bp 70.50%、加50+bp 1.70%；获取时间2026-10-31T17:17:21.213899Z，HTTP Date为17:14:28Z。",
+        "type": "price"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C9",
+        "sources": [
+          {
+            "id": "S2",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+          }
+        ],
+        "text": "CLOB五档Yes bid/ask依次为0.003/0.005、0.006/0.007、0.27/0.28、0.70/0.71、0.016/0.018；获取窗口17:17:41.692–41.992Z，书内时间为17:16:54.639–17:17:40.943Z。",
+        "type": "price"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "basis": [
+          "C8",
+          "C9"
+        ],
+        "id": "C10",
+        "sources": [],
+        "text": "按保存盘口计算，五个Gamma Yes参考价之和100.75%，bid和99.50%，ask和102.00%；保留原值不强行归一化，不能将其当无摩擦精确概率分布。",
+        "type": "inference"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C11",
+        "sources": [
+          {
+            "id": "S2",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+          }
+        ],
+        "text": "加25bp最佳bid/ask显示3010.62/48170.95份，按价格乘份数约2107.43/34201.37美元；不变为27435.55/24428.43份。显示深度可撤单，不等于保证成交。",
+        "type": "price"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "basis": [
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "id": "C12",
+        "sources": [],
+        "text": "盘口前定性初判以维持为暂定基准、加25bp为实质竞争情景、降息不作基准。10月的等待选择支持暂停，但核心价格仍有压力，无法把异议票数换成概率；缺条件化样本，不给独立数字概率。",
+        "type": "inference"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "basis": [
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "C8"
+        ],
+        "id": "C13",
+        "sources": [],
+        "text": "盘口后补见9月全票加息，更合理的竞争解释是10月暂歇后恢复收紧；这削弱把10月维持外推至12月的把握。最终将维持与加25bp并列工作情景，加息的证据基础充分，但没有独立模型支持认定70.5%高估或低估。",
+        "type": "inference"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "basis": [
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "id": "C14",
+        "sources": [],
+        "text": "9月实际消费增速放缓、实际DPI下降，与通胀压力仍在可以同时成立，但单月数据尚未确认持续或全面需求走弱。10月Fed以10–2选择维持，也支持继续等待有政策依据。核心价格与就业的后续组合仅作定性更新提示，尚非已校准、可重复的改判阈值。",
+        "type": "inference"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "basis": [
+          "C2",
+          "C3",
+          "C5",
+          "C6"
+        ],
+        "id": "C15",
+        "sources": [],
+        "text": "BEA列下一次个人收入与支出发布为2026年11月25日8:30 a.m. EST；应核对核心PCE与实际消费，而非只看总价格。之后12月8–9日声明和实际规则结算是最终核对节点。",
+        "type": "inference"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "basis": [
+          "C1",
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "id": "C16",
+        "sources": [],
+        "text": "规则存在元数据时点不一致和延期措辞风险：事件与子合约endDate相差5小时；没有界定“next scheduled meeting”的next相对哪个时点，也没有精确时区/截止秒；日历仅证明2027年1月26–27日在12月会议之后，不能确定它就是默认截止；紧急会改变会前利率时不能直接用今天4.00%上限作差。No change也可能来自无声明默认条款。",
+        "type": "inference"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "id": "C17",
+        "sources": [
+          {
+            "id": "S1",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+          },
+          {
+            "id": "S2",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+          }
+        ],
+        "text": "加25bp的Gamma lastTradePrice为0.71，同一Yes token的CLOB last_trade_price为0.290；两端都未给独立成交时戳。这两个字段不一致，未用于方向或价格变动解释，差异原因未核实。",
+        "type": "price"
+      },
+      {
+        "as_of": "2026-10-31T17:21:33.217142+00:00",
+        "basis": [
+          "C2",
+          "C13",
+          "C14"
+        ],
+        "id": "C18",
+        "sources": [],
+        "text": "可否定命题：12月正式声明若相对会议前上限降息或加息至少50bp，即超出维持/加25bp两中心情景，应记为中心情景未覆盖；其余watch仅作定性更新提示，无已校准可重复阈值。无数值概率不计算独立Brier/log loss。",
+        "type": "inference"
+      }
+    ],
+    "question": "12月Fed合约定价及官方证据的分歧是什么？"
+  },
+  "sources": {
+    "as_of": "2026-10-31T17:21:33.217142+00:00",
+    "candidates": [
+      {
+        "access_status": "ok",
+        "evidence_kind": "document",
+        "id": "S1",
+        "locator": "[0].description; [0].active/closed/endDate; [0].markets[*]",
+        "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+        "origin_id": null,
+        "provenance": {
+          "claim_ids": [
+            "C1",
+            "C2",
+            "C8",
+            "C17"
+          ],
+          "inline_source_record": {
+            "id": "S1",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+          },
+          "original_source_id": "S1",
+          "original_source_record": {
+            "data_quote": {
+              "active": true,
+              "closed": false,
+              "endDate": "2026-12-10T04:59:00Z",
+              "outcomes": [
+                {
+                  "acceptingOrders": true,
+                  "active": true,
+                  "bestAsk": 0.005,
+                  "bestBid": 0.003,
+                  "closed": false,
+                  "endDate": "2026-12-09T23:59:00Z",
+                  "groupItemTitle": "50+ bps decrease",
+                  "id": "3215005",
+                  "lastTradePrice": 0.003,
+                  "outcomePrices": "[\"0.004\", \"0.996\"]",
+                  "updatedAt": "2026-10-31T17:12:15.944973Z"
+                },
+                {
+                  "acceptingOrders": true,
+                  "active": true,
+                  "bestAsk": 0.007,
+                  "bestBid": 0.006,
+                  "closed": false,
+                  "endDate": "2026-12-09T23:59:00Z",
+                  "groupItemTitle": "25 bps decrease",
+                  "id": "3215006",
+                  "lastTradePrice": 0.006,
+                  "outcomePrices": "[\"0.0065\", \"0.9935\"]",
+                  "updatedAt": "2026-10-31T17:12:15.944973Z"
+                },
+                {
+                  "acceptingOrders": true,
+                  "active": true,
+                  "bestAsk": 0.28,
+                  "bestBid": 0.27,
+                  "closed": false,
+                  "endDate": "2026-12-09T23:59:00Z",
+                  "groupItemTitle": "No change",
+                  "id": "3215007",
+                  "lastTradePrice": 0.28,
+                  "outcomePrices": "[\"0.275\", \"0.725\"]",
+                  "updatedAt": "2026-10-31T17:12:15.944973Z"
+                },
+                {
+                  "acceptingOrders": true,
+                  "active": true,
+                  "bestAsk": 0.71,
+                  "bestBid": 0.7,
+                  "closed": false,
+                  "endDate": "2026-12-09T23:59:00Z",
+                  "groupItemTitle": "25 bps increase",
+                  "id": "3215008",
+                  "lastTradePrice": 0.71,
+                  "outcomePrices": "[\"0.705\", \"0.295\"]",
+                  "updatedAt": "2026-10-31T17:14:16.806633Z"
+                },
+                {
+                  "acceptingOrders": true,
+                  "active": true,
+                  "bestAsk": 0.018,
+                  "bestBid": 0.016,
+                  "closed": false,
+                  "endDate": "2026-12-09T23:59:00Z",
+                  "groupItemTitle": "50+ bps increase",
+                  "id": "3215009",
+                  "lastTradePrice": 0.018,
+                  "outcomePrices": "[\"0.017\", \"0.983\"]",
+                  "updatedAt": "2026-10-31T17:12:15.944973Z"
+                }
+              ]
+            },
+            "display_url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+            "document_version": "2026-10-31T17:12:31.835923Z",
+            "event_time": "2026-12-08/2026-12-09",
+            "id": "S1",
+            "independence_group": "polymarket-event-770450",
+            "locator": "[0].description; [0].active/closed/endDate; [0].markets[*]",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "quote": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's December 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed options, the change will be rounded up to the nearest 25 and will resolve to the relevant bracket. (e.g. if there's a cut/increase of 12.5 bps it will be considered to be 25 bps)\n\nThe resolution source for this market is the FOMC’s statement after its meeting scheduled for December 8-9, 2026 according to the official calendar: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm.\n\nThe level and change of the target federal funds rate is also published at the official website of the Federal Reserve at https://www.federalreserve.gov/monetarypolicy/openmarket.htm.\n\nThis market may resolve as soon as the FOMC’s statement for their December meeting with relevant data is issued. If no statement is released by the end date of the next scheduled meeting, this market will resolve to the \"No change\" bracket.",
+            "raw_path": "raw-market/gamma-event.json",
+            "response_date": "Sat, 31 Oct 2026 17:14:28 GMT",
+            "retrieved_at": "2026-10-31T17:17:21.213899+00:00",
+            "status": "success",
+            "tier": "T0",
+            "title": "Polymarket：12月Fed决议完整事件与五个子合约",
+            "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+          },
+          "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/sources.json",
+          "original_status": "success"
+        },
+        "published_at": "unknown",
+        "publisher": "Polymarket",
+        "quote": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's December 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed options, the change will be rounded up to the nearest 25 and will resolve to the relevant bracket. (e.g. if there's a cut/increase of 12.5 bps it will be considered to be 25 bps)\n\nThe resolution source for this market is the FOMC’s statement after its meeting scheduled for December 8-9, 2026 according to the official calendar: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm.\n\nThe level and change of the target federal funds rate is also published at the official website of the Federal Reserve at https://www.federalreserve.gov/monetarypolicy/openmarket.htm.\n\nThis market may resolve as soon as the FOMC’s statement for their December meeting with relevant data is issued. If no statement is released by the end date of the next scheduled meeting, this market will resolve to the \"No change\" bracket.",
+        "retrieved_at": "2026-10-31T17:17:21.213899+00:00",
+        "selection": {
+          "priority": "background",
+          "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+          "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+          "relevance": "context",
+          "selected": false
+        },
+        "supports": [],
+        "tier": "T0",
+        "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632"
+      },
+      {
+        "access_status": "ok",
+        "evidence_kind": "document",
+        "id": "S3",
+        "locator": "2026 FOMC Meetings > December；2027 > January；日历说明",
+        "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+        "origin_id": null,
+        "provenance": {
+          "claim_ids": [
+            "C3"
+          ],
+          "inline_source_record": {
+            "id": "S3",
+            "published_at": "unknown",
+            "publisher": "Federal Reserve",
+            "tier": "T0",
+            "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          },
+          "original_source_id": "S3",
+          "original_source_record": {
+            "document_version": "页面Last Update October 28, 2026",
+            "event_time": "2026-12-08/09; 2027-01-26/27",
+            "id": "S3",
+            "independence_group": "fed-calendar",
+            "locator": "2026 FOMC Meetings > December；2027 > January；日历说明",
+            "published_at": "unknown",
+            "publisher": "Federal Reserve",
+            "quote": "December\n8-9*\n* Meeting associated with a Summary of Economic Projections.",
+            "quotes": [
+              "The minutes of regularly scheduled meetings are released three weeks after the date of the policy decision.",
+              "2027 FOMC Meetings\nJanuary\n26-27",
+              "Each meeting date is tentative until confirmed at the meeting immediately preceding it."
+            ],
+            "raw_path": "raw-official-first/fomc_calendar.html",
+            "retrieved_at": "2026-10-31T17:16:27.865600+00:00",
+            "status": "success",
+            "tier": "T0",
+            "title": "Federal Reserve：2026/2027 FOMC会议日历",
+            "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          },
+          "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/sources.json",
+          "original_status": "success"
+        },
+        "published_at": "unknown",
+        "publisher": "Federal Reserve",
+        "quote": "December\n8-9*\n* Meeting associated with a Summary of Economic Projections.",
+        "retrieved_at": "2026-10-31T17:16:27.865600+00:00",
+        "selection": {
+          "priority": "background",
+          "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+          "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+          "relevance": "context",
+          "selected": false
+        },
+        "supports": [],
+        "tier": "T0",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      },
+      {
+        "access_status": "ok",
+        "evidence_kind": "document",
+        "id": "S4",
+        "locator": "正文政策段、经济评价、通胀段、异议段；txt 285–289行",
+        "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+        "origin_id": null,
+        "provenance": {
+          "claim_ids": [
+            "C4",
+            "C7"
+          ],
+          "inline_source_record": {
+            "id": "S4",
+            "published_at": "2026-10-28T14:00:00-04:00",
+            "publisher": "Federal Reserve",
+            "tier": "T0",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+          },
+          "original_source_id": "S4",
+          "original_source_record": {
+            "event_time": "2026-10-28",
+            "id": "S4",
+            "independence_group": "fed-oct-statement",
+            "locator": "正文政策段、经济评价、通胀段、异议段；txt 285–289行",
+            "published_at": "2026-10-28T14:00:00-04:00",
+            "publisher": "Federal Reserve",
+            "quote": "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate.",
+            "quotes": [
+              "The Federal Open Market Committee approved the following statement for release by a 10 – 2 vote:",
+              "Economic activity is expanding at a strong pace.",
+              "Job gains have kept pace with the workforce, and the unemployment rate has changed little.",
+              "Inflation remains elevated. The accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to the Committee's 2 percent goal.",
+              "Voting against the monetary policy action were Lisa D. Cook and Beth M. Hammack, who preferred to raise the target range for the federal funds rate by 1/4 percentage point at this meeting."
+            ],
+            "raw_path": "raw-official-first/fomc_october.html",
+            "retrieved_at": "2026-10-31T17:16:28.913975+00:00",
+            "status": "success",
+            "tier": "T0",
+            "title": "Federal Reserve：2026年10月28日FOMC声明",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+          },
+          "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/sources.json",
+          "original_status": "success"
+        },
+        "published_at": "2026-10-28T14:00:00-04:00",
+        "publisher": "Federal Reserve",
+        "quote": "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate.",
+        "retrieved_at": "2026-10-31T17:16:28.913975+00:00",
+        "selection": {
+          "priority": "background",
+          "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+          "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+          "relevance": "context",
+          "selected": false
+        },
+        "supports": [],
+        "tier": "T0",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+      },
+      {
+        "access_status": "ok",
+        "evidence_kind": "document",
+        "id": "S5",
+        "locator": "正文价格、实际消费、月度对照表、Next release；txt 68–71行",
+        "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+        "origin_id": null,
+        "provenance": {
+          "claim_ids": [
+            "C5",
+            "C6"
+          ],
+          "inline_source_record": {
+            "id": "S5",
+            "published_at": "2026-10-29T08:30:00-04:00",
+            "publisher": "BEA",
+            "tier": "T0",
+            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+          },
+          "original_source_id": "S5",
+          "original_source_record": {
+            "event_time": "2026-09",
+            "id": "S5",
+            "independence_group": "bea-sep-pio",
+            "locator": "正文价格、实际消费、月度对照表、Next release；txt 68–71行",
+            "published_at": "2026-10-29T08:30:00-04:00",
+            "publisher": "BEA",
+            "quote": "From the preceding month, the PCE price index for September increased 0.5 percent . Excluding food and energy, the PCE price index increased 0.3 percent.",
+            "quotes": [
+              "From the same month one year ago, the PCE price index for September increased 3.6 percent . Excluding food and energy, the PCE price index increased 3.1 percent from one year ago.",
+              "Real PCE increased $2.6 billion ( less than 0.1 percent at a monthly rate) in September.",
+              "Real DPI 0.0 -0.3",
+              "PCE price index excluding food and energy 0.3 0.3",
+              "Next release: November 25, 2026, at 8:30 a.m. EST"
+            ],
+            "raw_path": "raw-official-first/bea_pce.html",
+            "retrieved_at": "2026-10-31T17:16:27.948502+00:00",
+            "status": "success",
+            "tier": "T0",
+            "title": "BEA：Personal Income and Outlays, September 2026",
+            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+          },
+          "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/sources.json",
+          "original_status": "success"
+        },
+        "published_at": "2026-10-29T08:30:00-04:00",
+        "publisher": "BEA",
+        "quote": "From the preceding month, the PCE price index for September increased 0.5 percent . Excluding food and energy, the PCE price index increased 0.3 percent.",
+        "retrieved_at": "2026-10-31T17:16:27.948502+00:00",
+        "selection": {
+          "priority": "background",
+          "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+          "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+          "relevance": "context",
+          "selected": false
+        },
+        "supports": [],
+        "tier": "T0",
+        "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+      },
+      {
+        "access_status": "ok",
+        "evidence_kind": "document",
+        "id": "S6",
+        "locator": "正文投票与政策段",
+        "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+        "origin_id": null,
+        "provenance": {
+          "claim_ids": [
+            "C7"
+          ],
+          "inline_source_record": {
+            "id": "S6",
+            "published_at": "2026-09-16T14:00:00-04:00",
+            "publisher": "Federal Reserve",
+            "tier": "T0",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+          },
+          "original_source_id": "S6",
+          "original_source_record": {
+            "event_time": "2026-09-16",
+            "id": "S6",
+            "independence_group": "fed-sep-statement",
+            "locator": "正文投票与政策段",
+            "note": "盘口后追加的官方上下文；不回写盘口前初判依据。",
+            "published_at": "2026-09-16T14:00:00-04:00",
+            "publisher": "Federal Reserve",
+            "quote": "The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate.",
+            "quotes": [
+              "The Federal Open Market Committee approved the following statement for release by a 12 – 0 vote:"
+            ],
+            "raw_path": "raw-clob/fomc_september.html",
+            "retrieved_at": "2026-10-31T17:17:42.004357+00:00",
+            "status": "success",
+            "tier": "T0",
+            "title": "Federal Reserve：2026年9月16日FOMC声明",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+          },
+          "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/sources.json",
+          "original_status": "success"
+        },
+        "published_at": "2026-09-16T14:00:00-04:00",
+        "publisher": "Federal Reserve",
+        "quote": "The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate.",
+        "retrieved_at": "2026-10-31T17:17:42.004357+00:00",
+        "selection": {
+          "priority": "background",
+          "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+          "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+          "relevance": "context",
+          "selected": false
+        },
+        "supports": [],
+        "tier": "T0",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+      },
+      {
+        "access_status": "ok",
+        "evidence_kind": "document",
+        "id": "S2",
+        "locator": "bids/asks[*].price,size; timestamp; hash",
+        "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+        "origin_id": null,
+        "provenance": {
+          "claim_ids": [
+            "C9",
+            "C11",
+            "C17"
+          ],
+          "inline_source_record": {
+            "id": "S2",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "tier": "T0",
+            "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+          },
+          "original_source_id": "S2",
+          "original_source_record": {
+            "data_quote": [
+              {
+                "asks": [
+                  {
+                    "price": "0.999",
+                    "size": "21010441.04"
+                  },
+                  {
+                    "price": "0.998",
+                    "size": "4668.1"
+                  },
+                  {
+                    "price": "0.997",
+                    "size": "63106.64"
+                  },
+                  {
+                    "price": "0.996",
+                    "size": "1505.52"
+                  },
+                  {
+                    "price": "0.995",
+                    "size": "1200"
+                  },
+                  {
+                    "price": "0.994",
+                    "size": "833.33"
+                  },
+                  {
+                    "price": "0.993",
+                    "size": "5.67"
+                  },
+                  {
+                    "price": "0.99",
+                    "size": "24263.54"
+                  },
+                  {
+                    "price": "0.988",
+                    "size": "60000"
+                  },
+                  {
+                    "price": "0.987",
+                    "size": "8.29"
+                  },
+                  {
+                    "price": "0.97",
+                    "size": "7673.4"
+                  },
+                  {
+                    "price": "0.969",
+                    "size": "90000"
+                  },
+                  {
+                    "price": "0.968",
+                    "size": "5.95"
+                  },
+                  {
+                    "price": "0.95",
+                    "size": "4346.54"
+                  },
+                  {
+                    "price": "0.949",
+                    "size": "50000"
+                  },
+                  {
+                    "price": "0.94",
+                    "size": "3395.98"
+                  },
+                  {
+                    "price": "0.93",
+                    "size": "1991.2"
+                  },
+                  {
+                    "price": "0.928",
+                    "size": "15000"
+                  },
+                  {
+                    "price": "0.927",
+                    "size": "6.47"
+                  },
+                  {
+                    "price": "0.91",
+                    "size": "1387.97"
+                  },
+                  {
+                    "price": "0.908",
+                    "size": "20000"
+                  },
+                  {
+                    "price": "0.9",
+                    "size": "996.4"
+                  },
+                  {
+                    "price": "0.888",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.887",
+                    "size": "9000"
+                  },
+                  {
+                    "price": "0.886",
+                    "size": "800"
+                  },
+                  {
+                    "price": "0.88",
+                    "size": "674.77"
+                  },
+                  {
+                    "price": "0.87",
+                    "size": "469.83"
+                  },
+                  {
+                    "price": "0.808",
+                    "size": "9000"
+                  },
+                  {
+                    "price": "0.807",
+                    "size": "5.52"
+                  },
+                  {
+                    "price": "0.75",
+                    "size": "17537.5"
+                  },
+                  {
+                    "price": "0.71",
+                    "size": "14461.21"
+                  },
+                  {
+                    "price": "0.709",
+                    "size": "343"
+                  },
+                  {
+                    "price": "0.67",
+                    "size": "12130.68"
+                  },
+                  {
+                    "price": "0.63",
+                    "size": "10304.04"
+                  },
+                  {
+                    "price": "0.59",
+                    "size": "6992.15"
+                  },
+                  {
+                    "price": "0.55",
+                    "size": "5506.94"
+                  },
+                  {
+                    "price": "0.549",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.51",
+                    "size": "4279.34"
+                  },
+                  {
+                    "price": "0.47",
+                    "size": "3596.7"
+                  },
+                  {
+                    "price": "0.43",
+                    "size": "3344.3"
+                  },
+                  {
+                    "price": "0.429",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.39",
+                    "size": "2500"
+                  },
+                  {
+                    "price": "0.388",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.37",
+                    "size": "2325"
+                  },
+                  {
+                    "price": "0.34",
+                    "size": "2325"
+                  },
+                  {
+                    "price": "0.302",
+                    "size": "3460"
+                  },
+                  {
+                    "price": "0.272",
+                    "size": "3460"
+                  },
+                  {
+                    "price": "0.271",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.241",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.211",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.21",
+                    "size": "500"
+                  },
+                  {
+                    "price": "0.189",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.181",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.151",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.121",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.12",
+                    "size": "400"
+                  },
+                  {
+                    "price": "0.101",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.099",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.098",
+                    "size": "499.98"
+                  },
+                  {
+                    "price": "0.091",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.081",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.08",
+                    "size": "800"
+                  },
+                  {
+                    "price": "0.079",
+                    "size": "2080"
+                  },
+                  {
+                    "price": "0.07",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.063",
+                    "size": "5"
+                  },
+                  {
+                    "price": "0.06",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.059",
+                    "size": "1100"
+                  },
+                  {
+                    "price": "0.058",
+                    "size": "530"
+                  },
+                  {
+                    "price": "0.057",
+                    "size": "800"
+                  },
+                  {
+                    "price": "0.05",
+                    "size": "157"
+                  },
+                  {
+                    "price": "0.049",
+                    "size": "80"
+                  },
+                  {
+                    "price": "0.048",
+                    "size": "25"
+                  },
+                  {
+                    "price": "0.046",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.04",
+                    "size": "48"
+                  },
+                  {
+                    "price": "0.038",
+                    "size": "50"
+                  },
+                  {
+                    "price": "0.036",
+                    "size": "428.64"
+                  },
+                  {
+                    "price": "0.035",
+                    "size": "50"
+                  },
+                  {
+                    "price": "0.021",
+                    "size": "214.74"
+                  },
+                  {
+                    "price": "0.02",
+                    "size": "45"
+                  },
+                  {
+                    "price": "0.018",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.017",
+                    "size": "25"
+                  },
+                  {
+                    "price": "0.012",
+                    "size": "161.54"
+                  },
+                  {
+                    "price": "0.011",
+                    "size": "30"
+                  },
+                  {
+                    "price": "0.009",
+                    "size": "470.29"
+                  },
+                  {
+                    "price": "0.008",
+                    "size": "285.71"
+                  },
+                  {
+                    "price": "0.007",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.006",
+                    "size": "15078.28"
+                  },
+                  {
+                    "price": "0.005",
+                    "size": "15457.88"
+                  }
+                ],
+                "bids": [
+                  {
+                    "price": "0.001",
+                    "size": "2732813.28"
+                  },
+                  {
+                    "price": "0.002",
+                    "size": "2710997.41"
+                  },
+                  {
+                    "price": "0.003",
+                    "size": "358248.31"
+                  }
+                ],
+                "http_status": 200,
+                "id": "3215005",
+                "label": "50+ bps decrease",
+                "last_trade_price": "0.005",
+                "raw_path": "raw-clob/3215005.json",
+                "response_date": "Sat, 31 Oct 2026 17:17:42 GMT",
+                "retrieved_at": "2026-10-31T17:17:41.991648+00:00",
+                "started_at": "2026-10-31T17:17:40.745565+00:00",
+                "timestamp": "1793467059444",
+                "url": "https://clob.polymarket.com/book?token_id=17640596861394454242836532536014033416733783473450136742726948856144855149507"
+              },
+              {
+                "asks": [
+                  {
+                    "price": "0.999",
+                    "size": "21011334.89"
+                  },
+                  {
+                    "price": "0.998",
+                    "size": "64660"
+                  },
+                  {
+                    "price": "0.997",
+                    "size": "3113.51"
+                  },
+                  {
+                    "price": "0.996",
+                    "size": "1500"
+                  },
+                  {
+                    "price": "0.995",
+                    "size": "1200"
+                  },
+                  {
+                    "price": "0.994",
+                    "size": "839.42"
+                  },
+                  {
+                    "price": "0.99",
+                    "size": "24263.54"
+                  },
+                  {
+                    "price": "0.989",
+                    "size": "60000"
+                  },
+                  {
+                    "price": "0.988",
+                    "size": "18.97"
+                  },
+                  {
+                    "price": "0.97",
+                    "size": "7673.4"
+                  },
+                  {
+                    "price": "0.969",
+                    "size": "90000"
+                  },
+                  {
+                    "price": "0.968",
+                    "size": "8875"
+                  },
+                  {
+                    "price": "0.95",
+                    "size": "4346.54"
+                  },
+                  {
+                    "price": "0.947",
+                    "size": "60000"
+                  },
+                  {
+                    "price": "0.946",
+                    "size": "10000"
+                  },
+                  {
+                    "price": "0.945",
+                    "size": "5.83"
+                  },
+                  {
+                    "price": "0.94",
+                    "size": "3395.98"
+                  },
+                  {
+                    "price": "0.93",
+                    "size": "1991.2"
+                  },
+                  {
+                    "price": "0.928",
+                    "size": "20000"
+                  },
+                  {
+                    "price": "0.927",
+                    "size": "684"
+                  },
+                  {
+                    "price": "0.91",
+                    "size": "1387.97"
+                  },
+                  {
+                    "price": "0.9",
+                    "size": "1006.4"
+                  },
+                  {
+                    "price": "0.889",
+                    "size": "4000"
+                  },
+                  {
+                    "price": "0.888",
+                    "size": "499.99"
+                  },
+                  {
+                    "price": "0.88",
+                    "size": "674.77"
+                  },
+                  {
+                    "price": "0.87",
+                    "size": "469.83"
+                  },
+                  {
+                    "price": "0.869",
+                    "size": "9.92"
+                  },
+                  {
+                    "price": "0.75",
+                    "size": "17537.5"
+                  },
+                  {
+                    "price": "0.748",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.71",
+                    "size": "14461.21"
+                  },
+                  {
+                    "price": "0.709",
+                    "size": "3000"
+                  },
+                  {
+                    "price": "0.708",
+                    "size": "342"
+                  },
+                  {
+                    "price": "0.67",
+                    "size": "12130.68"
+                  },
+                  {
+                    "price": "0.63",
+                    "size": "10304.04"
+                  },
+                  {
+                    "price": "0.59",
+                    "size": "6992.15"
+                  },
+                  {
+                    "price": "0.55",
+                    "size": "5506.94"
+                  },
+                  {
+                    "price": "0.549",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.51",
+                    "size": "4279.34"
+                  },
+                  {
+                    "price": "0.47",
+                    "size": "8596.69"
+                  },
+                  {
+                    "price": "0.469",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.43",
+                    "size": "3344.3"
+                  },
+                  {
+                    "price": "0.39",
+                    "size": "2500"
+                  },
+                  {
+                    "price": "0.388",
+                    "size": "500"
+                  },
+                  {
+                    "price": "0.28",
+                    "size": "5"
+                  },
+                  {
+                    "price": "0.254",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.253",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.224",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.22",
+                    "size": "6"
+                  },
+                  {
+                    "price": "0.21",
+                    "size": "510"
+                  },
+                  {
+                    "price": "0.2",
+                    "size": "50"
+                  },
+                  {
+                    "price": "0.194",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.193",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.18",
+                    "size": "1020.25"
+                  },
+                  {
+                    "price": "0.175",
+                    "size": "150"
+                  },
+                  {
+                    "price": "0.164",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.14",
+                    "size": "5"
+                  },
+                  {
+                    "price": "0.134",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.114",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.113",
+                    "size": "400"
+                  },
+                  {
+                    "price": "0.103",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.102",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.094",
+                    "size": "5206.97"
+                  },
+                  {
+                    "price": "0.083",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.082",
+                    "size": "80"
+                  },
+                  {
+                    "price": "0.08",
+                    "size": "150"
+                  },
+                  {
+                    "price": "0.073",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.072",
+                    "size": "2000"
+                  },
+                  {
+                    "price": "0.063",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.062",
+                    "size": "2125"
+                  },
+                  {
+                    "price": "0.061",
+                    "size": "100"
+                  },
+                  {
+                    "price": "0.053",
+                    "size": "3048"
+                  },
+                  {
+                    "price": "0.052",
+                    "size": "527"
+                  },
+                  {
+                    "price": "0.051",
+                    "size": "800"
+                  },
+                  {
+                    "price": "0.05",
+                    "size": "600"
+                  },
+                  {
+                    "price": "0.049",
+                    "size": "80"
+                  },
+                  {
+                    "price": "0.048",
+                    "size": "25"
+                  },
+                  {
+                    "price": "0.046",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.043",
+                    "size": "1650"
+                  },
+                  {
+                    "price": "0.041",
+                    "size": "50"
+                  },
+                  {
+                    "price": "0.04",
+                    "size": "50"
+                  },
+                  {
+                    "price": "0.024",
+                    "size": "1249.99"
+                  },
+                  {
+                    "price": "0.023",
+                    "size": "100"
+                  },
+                  {
+                    "price": "0.022",
+                    "size": "1505.71"
+                  },
+                  {
+                    "price": "0.02",
+                    "size": "1631.57"
+                  },
+                  {
+                    "price": "0.018",
+                    "size": "1498.97"
+                  },
+                  {
+                    "price": "0.017",
+                    "size": "124.97"
+                  },
+                  {
+                    "price": "0.016",
+                    "size": "62.5"
+                  },
+                  {
+                    "price": "0.015",
+                    "size": "200"
+                  },
+                  {
+                    "price": "0.014",
+                    "size": "2222"
+                  },
+                  {
+                    "price": "0.013",
+                    "size": "6777.02"
+                  },
+                  {
+                    "price": "0.012",
+                    "size": "1240.29"
+                  },
+                  {
+                    "price": "0.011",
+                    "size": "475.5"
+                  },
+                  {
+                    "price": "0.01",
+                    "size": "142.85"
+                  },
+                  {
+                    "price": "0.007",
+                    "size": "8556.97"
+                  }
+                ],
+                "bids": [
+                  {
+                    "price": "0.001",
+                    "size": "1265072.22"
+                  },
+                  {
+                    "price": "0.002",
+                    "size": "2666505.1"
+                  },
+                  {
+                    "price": "0.003",
+                    "size": "2008538.1"
+                  },
+                  {
+                    "price": "0.004",
+                    "size": "1253933.65"
+                  },
+                  {
+                    "price": "0.005",
+                    "size": "140020"
+                  },
+                  {
+                    "price": "0.006",
+                    "size": "20"
+                  }
+                ],
+                "http_status": 200,
+                "id": "3215006",
+                "label": "25 bps decrease",
+                "last_trade_price": "0.006",
+                "raw_path": "raw-clob/3215006.json",
+                "response_date": "Sat, 31 Oct 2026 17:17:42 GMT",
+                "retrieved_at": "2026-10-31T17:17:41.952453+00:00",
+                "started_at": "2026-10-31T17:17:40.746201+00:00",
+                "timestamp": "1793467059597",
+                "url": "https://clob.polymarket.com/book?token_id=77367448845023382525249480243608609306658725883285195065573683809293972009019"
+              },
+              {
+                "asks": [
+                  {
+                    "price": "0.99",
+                    "size": "2124295.73"
+                  },
+                  {
+                    "price": "0.98",
+                    "size": "100007.32"
+                  },
+                  {
+                    "price": "0.97",
+                    "size": "7673.4"
+                  },
+                  {
+                    "price": "0.96",
+                    "size": "33006.01"
+                  },
+                  {
+                    "price": "0.95",
+                    "size": "5146.54"
+                  },
+                  {
+                    "price": "0.94",
+                    "size": "3395.98"
+                  },
+                  {
+                    "price": "0.93",
+                    "size": "10996.2"
+                  },
+                  {
+                    "price": "0.92",
+                    "size": "39536.79"
+                  },
+                  {
+                    "price": "0.91",
+                    "size": "1387.97"
+                  },
+                  {
+                    "price": "0.9",
+                    "size": "757.21"
+                  },
+                  {
+                    "price": "0.88",
+                    "size": "25208.33"
+                  },
+                  {
+                    "price": "0.85",
+                    "size": "500"
+                  },
+                  {
+                    "price": "0.84",
+                    "size": "18046.88"
+                  },
+                  {
+                    "price": "0.83",
+                    "size": "1005.98"
+                  },
+                  {
+                    "price": "0.8",
+                    "size": "13750"
+                  },
+                  {
+                    "price": "0.79",
+                    "size": "476"
+                  },
+                  {
+                    "price": "0.76",
+                    "size": "8020.83"
+                  },
+                  {
+                    "price": "0.74",
+                    "size": "11.36"
+                  },
+                  {
+                    "price": "0.72",
+                    "size": "6383.93"
+                  },
+                  {
+                    "price": "0.7",
+                    "size": "2972.91"
+                  },
+                  {
+                    "price": "0.69",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.68",
+                    "size": "4726.56"
+                  },
+                  {
+                    "price": "0.64",
+                    "size": "3819.44"
+                  },
+                  {
+                    "price": "0.61",
+                    "size": "200"
+                  },
+                  {
+                    "price": "0.6",
+                    "size": "3457.5"
+                  },
+                  {
+                    "price": "0.59",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.57",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.56",
+                    "size": "3600"
+                  },
+                  {
+                    "price": "0.54",
+                    "size": "5548.93"
+                  },
+                  {
+                    "price": "0.53",
+                    "size": "350"
+                  },
+                  {
+                    "price": "0.51",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.5",
+                    "size": "18"
+                  },
+                  {
+                    "price": "0.49",
+                    "size": "84"
+                  },
+                  {
+                    "price": "0.48",
+                    "size": "5850"
+                  },
+                  {
+                    "price": "0.46",
+                    "size": "726.37"
+                  },
+                  {
+                    "price": "0.45",
+                    "size": "5005"
+                  },
+                  {
+                    "price": "0.44",
+                    "size": "1005"
+                  },
+                  {
+                    "price": "0.42",
+                    "size": "5590"
+                  },
+                  {
+                    "price": "0.4",
+                    "size": "35.84"
+                  },
+                  {
+                    "price": "0.39",
+                    "size": "5018.08"
+                  },
+                  {
+                    "price": "0.38",
+                    "size": "1422.88"
+                  },
+                  {
+                    "price": "0.37",
+                    "size": "5242.69"
+                  },
+                  {
+                    "price": "0.36",
+                    "size": "6022.93"
+                  },
+                  {
+                    "price": "0.35",
+                    "size": "6588.48"
+                  },
+                  {
+                    "price": "0.34",
+                    "size": "5626.9"
+                  },
+                  {
+                    "price": "0.33",
+                    "size": "5133.34"
+                  },
+                  {
+                    "price": "0.32",
+                    "size": "6216.23"
+                  },
+                  {
+                    "price": "0.31",
+                    "size": "5591.12"
+                  },
+                  {
+                    "price": "0.3",
+                    "size": "72494"
+                  },
+                  {
+                    "price": "0.29",
+                    "size": "331774.11"
+                  },
+                  {
+                    "price": "0.28",
+                    "size": "24428.43"
+                  }
+                ],
+                "bids": [
+                  {
+                    "price": "0.01",
+                    "size": "1227293.89"
+                  },
+                  {
+                    "price": "0.02",
+                    "size": "150581.74"
+                  },
+                  {
+                    "price": "0.03",
+                    "size": "81374.26"
+                  },
+                  {
+                    "price": "0.04",
+                    "size": "40067.52"
+                  },
+                  {
+                    "price": "0.05",
+                    "size": "47618.96"
+                  },
+                  {
+                    "price": "0.06",
+                    "size": "15532.66"
+                  },
+                  {
+                    "price": "0.07",
+                    "size": "14702.9"
+                  },
+                  {
+                    "price": "0.08",
+                    "size": "2201.32"
+                  },
+                  {
+                    "price": "0.09",
+                    "size": "8691.3"
+                  },
+                  {
+                    "price": "0.1",
+                    "size": "643"
+                  },
+                  {
+                    "price": "0.11",
+                    "size": "5909.09"
+                  },
+                  {
+                    "price": "0.13",
+                    "size": "4000"
+                  },
+                  {
+                    "price": "0.14",
+                    "size": "12.5"
+                  },
+                  {
+                    "price": "0.15",
+                    "size": "3265"
+                  },
+                  {
+                    "price": "0.16",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.17",
+                    "size": "5477.49"
+                  },
+                  {
+                    "price": "0.18",
+                    "size": "4781.07"
+                  },
+                  {
+                    "price": "0.19",
+                    "size": "2032.8"
+                  },
+                  {
+                    "price": "0.2",
+                    "size": "1243.09"
+                  },
+                  {
+                    "price": "0.21",
+                    "size": "714.51"
+                  },
+                  {
+                    "price": "0.22",
+                    "size": "458.36"
+                  },
+                  {
+                    "price": "0.23",
+                    "size": "37.03"
+                  },
+                  {
+                    "price": "0.24",
+                    "size": "38888.44"
+                  },
+                  {
+                    "price": "0.25",
+                    "size": "458756.1"
+                  },
+                  {
+                    "price": "0.26",
+                    "size": "347307.64"
+                  },
+                  {
+                    "price": "0.27",
+                    "size": "27435.55"
+                  }
+                ],
+                "http_status": 200,
+                "id": "3215007",
+                "label": "No change",
+                "last_trade_price": "0.280",
+                "raw_path": "raw-clob/3215007.json",
+                "response_date": "Sat, 31 Oct 2026 17:17:42 GMT",
+                "retrieved_at": "2026-10-31T17:17:41.764312+00:00",
+                "started_at": "2026-10-31T17:17:40.746474+00:00",
+                "timestamp": "1793467059936",
+                "url": "https://clob.polymarket.com/book?token_id=42865728742506860386768556888821101266630139112044622335353850919229585308601"
+              },
+              {
+                "asks": [
+                  {
+                    "price": "0.99",
+                    "size": "1278775.29"
+                  },
+                  {
+                    "price": "0.98",
+                    "size": "162511.54"
+                  },
+                  {
+                    "price": "0.97",
+                    "size": "58982.46"
+                  },
+                  {
+                    "price": "0.96",
+                    "size": "67500"
+                  },
+                  {
+                    "price": "0.95",
+                    "size": "39220.77"
+                  },
+                  {
+                    "price": "0.94",
+                    "size": "17479.31"
+                  },
+                  {
+                    "price": "0.93",
+                    "size": "19369.39"
+                  },
+                  {
+                    "price": "0.92",
+                    "size": "2000"
+                  },
+                  {
+                    "price": "0.91",
+                    "size": "9617.67"
+                  },
+                  {
+                    "price": "0.9",
+                    "size": "7006.4"
+                  },
+                  {
+                    "price": "0.89",
+                    "size": "5915.17"
+                  },
+                  {
+                    "price": "0.88",
+                    "size": "884.77"
+                  },
+                  {
+                    "price": "0.87",
+                    "size": "9469.83"
+                  },
+                  {
+                    "price": "0.85",
+                    "size": "100"
+                  },
+                  {
+                    "price": "0.84",
+                    "size": "5120"
+                  },
+                  {
+                    "price": "0.83",
+                    "size": "17"
+                  },
+                  {
+                    "price": "0.82",
+                    "size": "200"
+                  },
+                  {
+                    "price": "0.81",
+                    "size": "23589.99"
+                  },
+                  {
+                    "price": "0.8",
+                    "size": "2336.89"
+                  },
+                  {
+                    "price": "0.79",
+                    "size": "5820.35"
+                  },
+                  {
+                    "price": "0.78",
+                    "size": "5054.16"
+                  },
+                  {
+                    "price": "0.77",
+                    "size": "5660.02"
+                  },
+                  {
+                    "price": "0.76",
+                    "size": "6153.06"
+                  },
+                  {
+                    "price": "0.75",
+                    "size": "5377.06"
+                  },
+                  {
+                    "price": "0.74",
+                    "size": "12897.29"
+                  },
+                  {
+                    "price": "0.73",
+                    "size": "463898.42"
+                  },
+                  {
+                    "price": "0.72",
+                    "size": "377597.71"
+                  },
+                  {
+                    "price": "0.71",
+                    "size": "48170.95"
+                  }
+                ],
+                "bids": [
+                  {
+                    "price": "0.01",
+                    "size": "1037492.06"
+                  },
+                  {
+                    "price": "0.02",
+                    "size": "8076.74"
+                  },
+                  {
+                    "price": "0.03",
+                    "size": "5874.26"
+                  },
+                  {
+                    "price": "0.04",
+                    "size": "23561.22"
+                  },
+                  {
+                    "price": "0.05",
+                    "size": "1950.92"
+                  },
+                  {
+                    "price": "0.06",
+                    "size": "710.5"
+                  },
+                  {
+                    "price": "0.07",
+                    "size": "5"
+                  },
+                  {
+                    "price": "0.08",
+                    "size": "39531.25"
+                  },
+                  {
+                    "price": "0.12",
+                    "size": "34208.33"
+                  },
+                  {
+                    "price": "0.16",
+                    "size": "21046.88"
+                  },
+                  {
+                    "price": "0.17",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.2",
+                    "size": "13750"
+                  },
+                  {
+                    "price": "0.21",
+                    "size": "476"
+                  },
+                  {
+                    "price": "0.23",
+                    "size": "3000"
+                  },
+                  {
+                    "price": "0.24",
+                    "size": "8020.83"
+                  },
+                  {
+                    "price": "0.28",
+                    "size": "6564.49"
+                  },
+                  {
+                    "price": "0.3",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.32",
+                    "size": "4726.56"
+                  },
+                  {
+                    "price": "0.34",
+                    "size": "99.99"
+                  },
+                  {
+                    "price": "0.35",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.36",
+                    "size": "3819.44"
+                  },
+                  {
+                    "price": "0.38",
+                    "size": "100"
+                  },
+                  {
+                    "price": "0.4",
+                    "size": "3587.5"
+                  },
+                  {
+                    "price": "0.41",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.44",
+                    "size": "2500"
+                  },
+                  {
+                    "price": "0.47",
+                    "size": "254.41"
+                  },
+                  {
+                    "price": "0.49",
+                    "size": "10.19"
+                  },
+                  {
+                    "price": "0.5",
+                    "size": "30888.01"
+                  },
+                  {
+                    "price": "0.51",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.58",
+                    "size": "17.83"
+                  },
+                  {
+                    "price": "0.59",
+                    "size": "81.45"
+                  },
+                  {
+                    "price": "0.6",
+                    "size": "15017.64"
+                  },
+                  {
+                    "price": "0.61",
+                    "size": "2017.44"
+                  },
+                  {
+                    "price": "0.62",
+                    "size": "1017.26"
+                  },
+                  {
+                    "price": "0.63",
+                    "size": "1017.07"
+                  },
+                  {
+                    "price": "0.64",
+                    "size": "3159.61"
+                  },
+                  {
+                    "price": "0.65",
+                    "size": "298.72"
+                  },
+                  {
+                    "price": "0.66",
+                    "size": "1272.5"
+                  },
+                  {
+                    "price": "0.67",
+                    "size": "15837.63"
+                  },
+                  {
+                    "price": "0.68",
+                    "size": "165971.28"
+                  },
+                  {
+                    "price": "0.69",
+                    "size": "196398.69"
+                  },
+                  {
+                    "price": "0.7",
+                    "size": "3010.62"
+                  }
+                ],
+                "http_status": 200,
+                "id": "3215008",
+                "label": "25 bps increase",
+                "last_trade_price": "0.290",
+                "raw_path": "raw-clob/3215008.json",
+                "response_date": "Sat, 31 Oct 2026 17:17:42 GMT",
+                "retrieved_at": "2026-10-31T17:17:41.763040+00:00",
+                "started_at": "2026-10-31T17:17:40.746689+00:00",
+                "timestamp": "1793467060943",
+                "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+              },
+              {
+                "asks": [
+                  {
+                    "price": "0.999",
+                    "size": "21011452.11"
+                  },
+                  {
+                    "price": "0.998",
+                    "size": "4660"
+                  },
+                  {
+                    "price": "0.997",
+                    "size": "53114.27"
+                  },
+                  {
+                    "price": "0.996",
+                    "size": "1500"
+                  },
+                  {
+                    "price": "0.995",
+                    "size": "1200"
+                  },
+                  {
+                    "price": "0.994",
+                    "size": "840.11"
+                  },
+                  {
+                    "price": "0.99",
+                    "size": "24263.54"
+                  },
+                  {
+                    "price": "0.989",
+                    "size": "60000"
+                  },
+                  {
+                    "price": "0.988",
+                    "size": "19.02"
+                  },
+                  {
+                    "price": "0.97",
+                    "size": "7673.4"
+                  },
+                  {
+                    "price": "0.969",
+                    "size": "90000"
+                  },
+                  {
+                    "price": "0.95",
+                    "size": "4346.54"
+                  },
+                  {
+                    "price": "0.947",
+                    "size": "40000"
+                  },
+                  {
+                    "price": "0.946",
+                    "size": "6.06"
+                  },
+                  {
+                    "price": "0.94",
+                    "size": "3395.98"
+                  },
+                  {
+                    "price": "0.939",
+                    "size": "9000"
+                  },
+                  {
+                    "price": "0.938",
+                    "size": "800"
+                  },
+                  {
+                    "price": "0.93",
+                    "size": "1991.2"
+                  },
+                  {
+                    "price": "0.91",
+                    "size": "1392.97"
+                  },
+                  {
+                    "price": "0.9",
+                    "size": "996.4"
+                  },
+                  {
+                    "price": "0.88",
+                    "size": "674.77"
+                  },
+                  {
+                    "price": "0.87",
+                    "size": "469.83"
+                  },
+                  {
+                    "price": "0.869",
+                    "size": "9.8"
+                  },
+                  {
+                    "price": "0.75",
+                    "size": "17537.5"
+                  },
+                  {
+                    "price": "0.749",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.71",
+                    "size": "14461.21"
+                  },
+                  {
+                    "price": "0.709",
+                    "size": "343"
+                  },
+                  {
+                    "price": "0.67",
+                    "size": "12130.68"
+                  },
+                  {
+                    "price": "0.63",
+                    "size": "10304.04"
+                  },
+                  {
+                    "price": "0.629",
+                    "size": "3000"
+                  },
+                  {
+                    "price": "0.59",
+                    "size": "6992.15"
+                  },
+                  {
+                    "price": "0.589",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.55",
+                    "size": "5506.94"
+                  },
+                  {
+                    "price": "0.51",
+                    "size": "4279.34"
+                  },
+                  {
+                    "price": "0.509",
+                    "size": "3000"
+                  },
+                  {
+                    "price": "0.47",
+                    "size": "3596.7"
+                  },
+                  {
+                    "price": "0.43",
+                    "size": "3344.3"
+                  },
+                  {
+                    "price": "0.4",
+                    "size": "11259.36"
+                  },
+                  {
+                    "price": "0.399",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.39",
+                    "size": "2500"
+                  },
+                  {
+                    "price": "0.382",
+                    "size": "3472"
+                  },
+                  {
+                    "price": "0.352",
+                    "size": "3472"
+                  },
+                  {
+                    "price": "0.322",
+                    "size": "3615"
+                  },
+                  {
+                    "price": "0.3",
+                    "size": "20000"
+                  },
+                  {
+                    "price": "0.299",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.292",
+                    "size": "3615"
+                  },
+                  {
+                    "price": "0.252",
+                    "size": "4297"
+                  },
+                  {
+                    "price": "0.223",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.22",
+                    "size": "150"
+                  },
+                  {
+                    "price": "0.219",
+                    "size": "500"
+                  },
+                  {
+                    "price": "0.192",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.191",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.162",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.15",
+                    "size": "500"
+                  },
+                  {
+                    "price": "0.132",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.131",
+                    "size": "400"
+                  },
+                  {
+                    "price": "0.112",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.111",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.102",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.092",
+                    "size": "5080"
+                  },
+                  {
+                    "price": "0.091",
+                    "size": "2000"
+                  },
+                  {
+                    "price": "0.082",
+                    "size": "5000"
+                  },
+                  {
+                    "price": "0.072",
+                    "size": "5900"
+                  },
+                  {
+                    "price": "0.071",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.069",
+                    "size": "430"
+                  },
+                  {
+                    "price": "0.068",
+                    "size": "536"
+                  },
+                  {
+                    "price": "0.067",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.066",
+                    "size": "535"
+                  },
+                  {
+                    "price": "0.062",
+                    "size": "258"
+                  },
+                  {
+                    "price": "0.061",
+                    "size": "25"
+                  },
+                  {
+                    "price": "0.06",
+                    "size": "80"
+                  },
+                  {
+                    "price": "0.053",
+                    "size": "67.5"
+                  },
+                  {
+                    "price": "0.052",
+                    "size": "25"
+                  },
+                  {
+                    "price": "0.051",
+                    "size": "50"
+                  },
+                  {
+                    "price": "0.047",
+                    "size": "14.97"
+                  },
+                  {
+                    "price": "0.045",
+                    "size": "1000"
+                  },
+                  {
+                    "price": "0.044",
+                    "size": "50"
+                  },
+                  {
+                    "price": "0.04",
+                    "size": "229.33"
+                  },
+                  {
+                    "price": "0.039",
+                    "size": "508.14"
+                  },
+                  {
+                    "price": "0.038",
+                    "size": "232.93"
+                  },
+                  {
+                    "price": "0.037",
+                    "size": "247.39"
+                  },
+                  {
+                    "price": "0.036",
+                    "size": "815.1"
+                  },
+                  {
+                    "price": "0.034",
+                    "size": "15"
+                  },
+                  {
+                    "price": "0.033",
+                    "size": "45"
+                  },
+                  {
+                    "price": "0.03",
+                    "size": "187.61"
+                  },
+                  {
+                    "price": "0.029",
+                    "size": "72.68"
+                  },
+                  {
+                    "price": "0.027",
+                    "size": "5"
+                  },
+                  {
+                    "price": "0.026",
+                    "size": "1032.5"
+                  },
+                  {
+                    "price": "0.025",
+                    "size": "7540.45"
+                  },
+                  {
+                    "price": "0.023",
+                    "size": "380"
+                  },
+                  {
+                    "price": "0.022",
+                    "size": "470.29"
+                  },
+                  {
+                    "price": "0.02",
+                    "size": "225.56"
+                  },
+                  {
+                    "price": "0.019",
+                    "size": "741.96"
+                  },
+                  {
+                    "price": "0.018",
+                    "size": "880.64"
+                  }
+                ],
+                "bids": [
+                  {
+                    "price": "0.001",
+                    "size": "2280952.43"
+                  },
+                  {
+                    "price": "0.002",
+                    "size": "2424120.97"
+                  },
+                  {
+                    "price": "0.003",
+                    "size": "1032869.27"
+                  },
+                  {
+                    "price": "0.004",
+                    "size": "447500"
+                  },
+                  {
+                    "price": "0.005",
+                    "size": "514000"
+                  },
+                  {
+                    "price": "0.006",
+                    "size": "35133.3"
+                  },
+                  {
+                    "price": "0.007",
+                    "size": "6160.94"
+                  },
+                  {
+                    "price": "0.008",
+                    "size": "14937.32"
+                  },
+                  {
+                    "price": "0.009",
+                    "size": "8444.38"
+                  },
+                  {
+                    "price": "0.01",
+                    "size": "226222"
+                  },
+                  {
+                    "price": "0.011",
+                    "size": "12023.07"
+                  },
+                  {
+                    "price": "0.012",
+                    "size": "1255"
+                  },
+                  {
+                    "price": "0.013",
+                    "size": "17789.36"
+                  },
+                  {
+                    "price": "0.014",
+                    "size": "31139.65"
+                  },
+                  {
+                    "price": "0.015",
+                    "size": "2566.24"
+                  },
+                  {
+                    "price": "0.016",
+                    "size": "2159.38"
+                  }
+                ],
+                "http_status": 200,
+                "id": "3215009",
+                "label": "50+ bps increase",
+                "last_trade_price": "0.018",
+                "raw_path": "raw-clob/3215009.json",
+                "response_date": "Sat, 31 Oct 2026 17:17:42 GMT",
+                "retrieved_at": "2026-10-31T17:17:41.692172+00:00",
+                "started_at": "2026-10-31T17:17:40.746899+00:00",
+                "timestamp": "1793467014639",
+                "url": "https://clob.polymarket.com/book?token_id=35090254409399344650860070211816464534198960801264823587796928404808383727584"
+              }
+            ],
+            "event_time": "snapshot",
+            "id": "S2",
+            "independence_group": "polymarket-event-770450",
+            "locator": "bids/asks[*].price,size; timestamp; hash",
+            "note": "S1与S2为同一市场不同接口，不能充当独立共识来源。只抓Yes侧，No侧深度未抓取。",
+            "published_at": "unknown",
+            "publisher": "Polymarket",
+            "quote": "原始数值记录，见 data_quote；这是官方盘口数据而非文字引语。",
+            "retrieved_at_end": "2026-10-31T17:17:41.991648+00:00",
+            "retrieved_at_start": "2026-10-31T17:17:41.692172+00:00",
+            "status": "success",
+            "tier": "T0",
+            "title": "Polymarket CLOB：五个Yes token原始订单簿",
+            "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+          },
+          "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/sources.json",
+          "original_status": "success"
+        },
+        "published_at": "unknown",
+        "publisher": "Polymarket",
+        "quote": "",
+        "retrieved_at": "2026-10-31T17:17:41.991648+00:00",
+        "selection": {
+          "priority": "background",
+          "purpose": "Development regression source audit; schema 1 claim citations remain unchanged.",
+          "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+          "relevance": "context",
+          "selected": false
+        },
+        "supports": [],
+        "tier": "T0",
+        "url": "https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890"
+      }
+    ],
+    "historical": false,
+    "historical_policy": "No historical availability assertions. historical=false describes a dev replay, not a reconstructed historical run.",
+    "mode": "development_regression_frozen_reuse",
+    "original_source_audit": {
+      "as_of": "2026-10-31T17:21:33.217142+00:00",
+      "dependency_note": "六个关键T0记录包括一条CLOB聚合记录；五本订单簿作为其子记录。Fed声明/日历同一发布方；不能按URL数推断信息独立性。",
+      "failed_sources": [
+        {
+          "error": "HTTP Error 403: Forbidden",
+          "id": "bls_employment",
+          "retrieved_at": "2026-10-31T17:16:27.645532+00:00",
+          "status": "failed",
+          "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+        },
+        {
+          "error": "HTTP Error 403: Forbidden",
+          "id": "bls_cpi",
+          "retrieved_at": "2026-10-31T17:16:27.390053+00:00",
+          "status": "failed",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+        }
+      ],
+      "search_audit": {
+        "note": "返回知乎/媒体转述、无关失业数据及陈旧BEA首页摘要；仅用来定位Fed原始链接。搜索摘要中的机构加息观点属于初判污染披露，未用于数字概率。未继续社区扩搜。",
+        "queries": [
+          "site.federalreserve.gov 2026 October 28 FOMC statement",
+          "site.bls.gov 2026 September employment situation October 2026 unemployment",
+          "site.bea.gov September 2026 personal income outlays October 2026 PCE"
+        ],
+        "representative_urls": [
+          "https://zhuanlan.zhihu.com/p/2098975768223208349",
+          "https://finance.sina.com.cn/stock/stockzmt/2026-10-29/doc-iniwvwre2890431.shtml"
+        ],
+        "results_used_as_fact": false,
+        "retrieved_window": "2026-10-31T17:15–17:16Z",
+        "timestamp_precision": "分钟近似；工具未返回调用时间，未伪造精确秒",
+        "tool": "mcp__zhihu__global_search"
+      },
+      "source_count": 6
+    },
+    "schema_version": 2,
+    "source_status": {
+      "S1": {
+        "original_status": "success",
+        "reason": "Original retrieval record reused, no new fetch.",
+        "status": "ok"
+      },
+      "S2": {
+        "original_status": "success",
+        "reason": "Original retrieval record reused, no new fetch.",
+        "status": "ok"
+      },
+      "S3": {
+        "original_status": "success",
+        "reason": "Original retrieval record reused, no new fetch.",
+        "status": "ok"
+      },
+      "S4": {
+        "original_status": "success",
+        "reason": "Original retrieval record reused, no new fetch.",
+        "status": "ok"
+      },
+      "S5": {
+        "original_status": "success",
+        "reason": "Original retrieval record reused, no new fetch.",
+        "status": "ok"
+      },
+      "S6": {
+        "original_status": "success",
+        "reason": "Original retrieval record reused, no new fetch.",
+        "status": "ok"
+      },
+      "regression_external_retrieval": {
+        "reason": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。",
+        "status": "not_run"
+      }
+    }
+  },
+  "plan": {
+    "as_of": "2026-10-31T17:21:33.217142+00:00",
+    "budget": {
+      "max_followups": 0,
+      "max_queries": 1
+    },
+    "comparison": {
+      "period": "2026-10-31T17:21:33.217142+00:00 原研究截点",
+      "scope": "四类型旧开发样本 event；非 heldout；未重建历史可得性",
+      "unit": "保留原报告各表与结论单位"
+    },
+    "decision_needed": "仅验证冻结输入转换、渲染和归档流程；不开展新的投研决定。",
+    "development_notice": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。",
+    "entity": "2026年12月Fed合约",
+    "executed_external_queries": 0,
+    "historical": false,
+    "hypotheses": [
+      {
+        "discriminating_observation": "render_report 校验/渲染退出码；research_run 归档与无变化差分。",
+        "explanation": "原冻结内容可在保留 schema 1 claims 条件下适配 schema 2 报告。"
+      }
+    ],
+    "original_plan": {
+      "angles": [
+        {
+          "angle": "契约",
+          "queries": [
+            "Fed December"
+          ],
+          "question": "active/closed/endDate、比较基准、取整、结算来源、延期默认条款是否清楚？",
+          "status": "completed",
+          "tiers": [
+            "T0"
+          ]
+        },
+        {
+          "angle": "官方驱动",
+          "queries": [
+            "site.federalreserve.gov 2026 October 28 FOMC statement",
+            "site.bea.gov September 2026 personal income outlays October 2026 PCE"
+          ],
+          "question": "政策路径、通胀与需求是否支持继续暂停或加息？",
+          "status": "completed_with_BLS_gap",
+          "tiers": [
+            "T0"
+          ]
+        },
+        {
+          "angle": "概率与reference class",
+          "numeric_probability": null,
+          "queries": [],
+          "question": "能否给可解释的独立概率？结果互斥穷尽吗？",
+          "status": "qualitative_only",
+          "tiers": [
+            "T0"
+          ]
+        },
+        {
+          "angle": "市场与流动性",
+          "note": "五档Yes订单簿已得；不宣称无滑点可成交",
+          "queries": [],
+          "question": "参考价、双边报价、显示深度和时点是否可复核？",
+          "status": "completed",
+          "tiers": [
+            "T0"
+          ]
+        },
+        {
+          "angle": "反方与下一观察",
+          "queries": [],
+          "question": "什么证据推翻维持或加息工作情景？",
+          "status": "completed",
+          "tiers": [
+            "T0"
+          ]
+        }
+      ],
+      "intentional_omissions": [
+        "未扩搜社区；原始官方资料已足以构成可检验分歧",
+        "不做CME或机构概率拼接，不将机构观点当市场共识",
+        "无条件化历史样本，不给独立数字概率",
+        "无价格轨迹完整时点，未作趋势推断"
+      ],
+      "method_sources": [
+        "../protocol.md",
+        "../../plans/touyan-end-to-end-plan-v2-20261031.md",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.1.1/skills/research/references/evidence.md"
+      ],
+      "prospective_review": {
+        "automatic_task_created": false,
+        "check": [
+          "会前目标区间上限、会后上限、非常规取整及延期条款",
+          "保存最终结算来源和实际结算时间，区分政策方向与条款默认No change",
+          "独立无数字概率，不计算其Brier/log loss；市场如评分须先说明100.75%参考和的归一化政策，保留原值"
+        ],
+        "trigger": "12月正式声明及真实合约结算后人工复核"
+      },
+      "question": "截至真实研究时点，Polymarket 2026年12月Fed决议合约在定价什么，官方资料是否支持，研究判断与市场有何差异？",
+      "scope": "仅写本目录；直接执行；不委派；不改插件、不读凭据、不写作者库和正式预测账本、不发布",
+      "source_budget": "3–6关键T0来源；社区可选，无需凑数；每个失败端点最多一次，本轮没有重试",
+      "stages": [
+        {
+          "artifact": "pre-market-analysis.json",
+          "status": "completed",
+          "step": "先定义反应框架及reference class"
+        },
+        {
+          "note": "搜索有媒体/机构转述，未当作官方事实；未取得有效BLS搜索结果",
+          "status": "completed",
+          "step": "可信搜索插件定位官方资料，随后直接只读HTTP核实",
+          "tool": "mcp__zhihu__global_search"
+        },
+        {
+          "artifact": "independent-freeze.json",
+          "status": "completed",
+          "step": "在未见盘口时冻结官方事实驱动的定性判断"
+        },
+        {
+          "artifact": "raw-market/gamma-event.json",
+          "status": "completed",
+          "step": "使用已读取的polymarket.py搜索并读取真实12月事件，保存Gamma完整响应及时间"
+        },
+        {
+          "artifact": "raw-clob/",
+          "status": "completed",
+          "step": "抓五档Yes CLOB订单簿与9月官方决议，检查规则及报价一致性"
+        },
+        {
+          "artifact": "report.json / report.md / report.html / validation.json",
+          "status": "completed",
+          "step": "分开市场参考、独立初判、市场后观点；自我反方审查；同源产出与现有校验"
+        }
+      ],
+      "status": "executed",
+      "time_budget_minutes": 25,
+      "type": "event_pricing"
+    },
+    "prior_judgment": "市场把加25bp列为首要结果：Gamma参考70.5%，维持27.5%。官方证据支持把加息视为实质情景：9月全票加25bp，10月虽暂停但仍有加息异议，核心PCE仍有压力。独立初判曾暂偏维持；补齐9月资料后的最终观点改为维持与加25bp并列工作情景。没有校准模型，不能判断70.5%是否错价，也不给独立点概率。下一项最明确观察是11月25日的核心PCE、实际消费及随后就业数据。",
+    "queries": [
+      {
+        "purpose": "开发回归，不做新研究或历史证明",
+        "query": "offline local JSON audit; external queries not executed",
+        "question": "原材料可否安全适配？",
+        "source": "journal/four-type-validation-20261031/event"
+      }
+    ],
+    "question": "Polymarket的2026年12月Fed决议合约正在定价什么，官方证据支持到哪一步？",
+    "schema_version": 2,
+    "stop_condition": "开发回归渲染完成并记录归档成功或缺失元数据的阻塞；不检索新材料或伪造历史取证。",
+    "task": "事件定价：复用冻结证据的开发回归",
+    "type": "event_pricing"
+  },
+  "diff": {
+    "claims": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "comparability_issues": [],
+    "evidence": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "judgment": {
+      "comparability": {
+        "reason": "claims、sources、as_of、period/unit/scope及判断文本均相同。",
+        "status": "comparable"
+      },
+      "judgment_changed": false,
+      "reason": "开发回归中的相同冻结输入重复，不构成新的实际研究。"
+    },
+    "method": "structural_ids_and_fields",
+    "parent_run": "R20261031T183409Z-c65c23fddada",
+    "schema_version": 2,
+    "sources": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    }
+  }
+}

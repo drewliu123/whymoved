@@ -1,0 +1,50 @@
+{
+ "qid": "Q100",
+ "question": "Tamas Sulyok out as President of Hungary by July 31?",
+ "rules": "This market will resolve to “Yes” if Tamas Sulyok ceases to be the President of Hungary for any period of time between market creation and July 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to “No”.\n\nAn announcement of Sulyok's resignation/removal before this market's end date will immediately resolve this market to \"Yes\", regardless of when the announced resignation/removal goes into effect.\n\nThe resolution source for this market will be official information from Tamas Sulyok and the Hungarian government; however, a consensus of credible reporting may also be used.\n",
+ "as_of": "2026-07-06",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "MTI — Hungarian News Agency",
+   "published_at": "2026-07-05",
+   "excerpt": "Sulyok said he had no reason to resign and that the prime minister had not found a public-law justification for removing him. He argued that the proposed seventeenth constitutional amendment targeted the incumbent president personally and was incompatible with the rule of law."
+  },
+  {
+   "id": "E2",
+   "publisher": "Telex",
+   "published_at": "2026-07-04",
+   "excerpt": "Following public consultation, the government submitted its proposed seventeenth amendment to the Fundamental Law to Parliament on Saturday. Magyar said Sulyok would certainly no longer be president around July 20. Under the proposal, Parliament would elect a replacement for a period ending when a new constitution entered into force, subject to a maximum of five years."
+  },
+  {
+   "id": "E3",
+   "publisher": "Sándor Palace — Office of the President of Hungary",
+   "published_at": "2026-07-02",
+   "excerpt": "President Sulyok met Venice Commission President Marta Cartabia, Director and Secretary Simona Granata-Menghini, and Austrian member Christoph Grabenwarter at the Sándor Palace. He had requested the commission's assistance on May 29 to resolve the constitutional conflict following the elections. The commission indicated its readiness to consider the submission urgently and obtain information through consultations in Budapest."
+  },
+  {
+   "id": "E4",
+   "publisher": "Hungarian Helsinki Committee",
+   "published_at": "2026-06-28",
+   "excerpt": "The Hungarian Helsinki Committee submitted its opinion on the draft seventeenth amendment, objecting to the five-day consultation period and insufficient justification for proposed changes. It considered Sulyok's removal potentially justified by the need to restore the rule of law, but said the government must explain the underlying arguments in detail in the amendment's explanatory memorandum."
+  },
+  {
+   "id": "E5",
+   "publisher": "Reuters, syndicated by MarketScreener",
+   "published_at": "2026-06-25",
+   "excerpt": "Two Hungarian rights groups criticised a draft constitutional amendment proposing President Tamas Sulyok's removal and a term limit for members of Parliament. Amnesty International Hungary considered Sulyok unworthy of office but objected to the government's chosen removal procedure. Political analyst Gabor Torok also criticised removing the head of state through a one-sentence constitutional amendment."
+  },
+  {
+   "id": "E6",
+   "publisher": "MTI — Hungarian News Agency",
+   "published_at": "2026-06-22",
+   "excerpt": "Magyar told Parliament that the government would initiate the termination of Sulyok's presidential mandate. He said Parliament would elect a replacement until completion of the constitution-making process, for no more than five years."
+  },
+  {
+   "id": "E7",
+   "publisher": "Associated Press",
+   "published_at": "2026-06-01",
+   "excerpt": "Hungary's government said it would amend the constitution to remove President Tamás Sulyok after the May 31 resignation deadline. Magyar's Tisza party held a two-thirds parliamentary majority, enabling constitutional changes. The president could refer legislation to the Constitutional Court for review."
+  }
+ ]
+}

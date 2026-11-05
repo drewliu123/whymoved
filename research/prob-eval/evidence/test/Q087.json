@@ -1,0 +1,50 @@
+{
+  "qid": "Q087",
+  "as_of": "2026-08-28",
+  "kept": [
+    {
+      "excerpt": "MOSCOW, Aug 28 (Reuters) - Russia’s central bank will continue cutting its key rate, lowering it to 13.5% from 14% by the end of this year, Sberbank’s chief economist Alexander Isakov told Reuters, despite Ukrainian attacks on economic targets. Sberbank, Russia’s largest lender, also nudged up its 2026 economic growth forecast to 0.4% from 0.3%, citing a stronger-than-expected second quarter, and robust consumer and state demand.",
+      "published_at": "2026-08-28",
+      "publisher": "Reuters, via Investing.com",
+      "relevance": "Provides a cutoff-day economist forecast for further easing, although the forecast concerns year-end rather than the September meeting specifically.",
+      "url": "https://www.investing.com/news/economy-news/russias-sberbank-sees-more-rate-cuts-higher-growth-this-year-despite-ukrainian-attacks-4880743"
+    },
+    {
+      "excerpt": "According to InFOM’s survey, one-year-ahead inflation expectations of households were 13.7% in August compared to 14.7% in July. Inflation expectations declined among respondents both with and without savings. Despite the decline, inflation expectations remain elevated. Companies’ price expectations picked up.",
+      "published_at": "2026-08-26",
+      "publisher": "Bank of Russia",
+      "relevance": "Supplies recent household and business survey evidence on inflation expectations, which the central bank identifies as an input to subsequent rate decisions.",
+      "url": "https://www.cbr.ru/press/event/?id=32797"
+    },
+    {
+      "excerpt": "Motor fuel became notably more expensive. July statistics captured the second-round effects stemming from the situation in the fuel market. This led to an increase in measures of underlying inflation in July.",
+      "published_at": "2026-08-17",
+      "publisher": "Bank of Russia",
+      "relevance": "Shows that fuel-related inflation was spreading into underlying inflation, a potential constraint on further September easing.",
+      "url": "https://cbr.ru/press/event/?id=32773"
+    },
+    {
+      "excerpt": "The main topic of discussion was accelerated price growth over recent months, driven by higher fuel prices and their impact on inflation expectations. Most participants believed that underlying inflation would not rise considerably, while predicting that inflation would be higher this year than assumed in the April forecast. Considering the materialised proinflationary risks, the regulator now has less room for a further key rate reduction and therefore has raised the forecast range of the average key rate for the next three years.",
+      "published_at": "2026-08-05",
+      "publisher": "Bank of Russia",
+      "relevance": "Records the central bank’s assessment of the remaining scope for cuts following its July decision.",
+      "url": "https://www.cbr.ru/eng/press/event/?id=32745"
+    },
+    {
+      "excerpt": "On 24 July 2026, the Bank of Russia Board of Directors decided to cut the key rate by 25 basis points to 14.00% per annum. The Bank of Russia will make further key rate decisions based on the dynamics of inflation and inflation expectations as well as the analysis of risks posed by domestic and external conditions. The Bank of Russia Board of Directors holds its next key rate meeting on 11 September 2026. The press release on the Bank of Russia Board decision is to be published at 13.30 Moscow time.",
+      "published_at": "2026-07-24T13:30:00+03:00",
+      "publisher": "Bank of Russia Press Service",
+      "relevance": "Establishes the latest announced policy-rate level before the cutoff, the conditional decision framework, and the scheduled September meeting and release time.",
+      "url": "https://www.cbr.ru/eng/press/pr/?file=24072026_133000key_e.htm"
+    },
+    {
+      "excerpt": "At its meeting on 24 July, the Bank of Russia (CBR) made its 10th consecutive cut, mirroring June’s decision and lowering the key rate by 25 basis points to 14.00%. Meanwhile, it trimmed its 2026 GDP growth forecast to 0.0–1.0% from 0.5–1.5%. All of our panelists expect further cuts by year-end, ranging from 50 to 300 basis points, with the Consensus for roughly 150 basis points of additional easing this year.",
+      "published_at": "2026-07-24",
+      "publisher": "FocusEconomics",
+      "relevance": "Provides the recent easing-cycle history, weaker growth outlook, and an economist-panel forecast supporting further cuts without establishing their September timing.",
+      "url": "https://www.focus-economics.com/countries/russia/news/monetary-policy/russia-central-bank-meeting-24-07-2026-bank-of-russia-cuts-key-rate-in-july/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-08-28, inclusive. Included six sources with explicit publication dates and source text exposed in web_search results. Excluded later-dated coverage, outcome information, prediction-market pages, and undated or continuously updated pages lacking a verifiable pre-cutoff publication date. The September schedule is supported by the dated July 24 official release rather than assigning a publication date to the live calendar. web_fetch failed because multiple fetch providers were registered; the requested agent-reach web-read fallback was rate-limited, so full-page retrieval could not be completed. Excerpts were verified against search-returned source text; no claim of archived-page verification is made. The August 28 Reuters article displays publication and update dates of August 28. The August 5 official news release is treated separately from the underlying discussion document, whose English listing carries a different publication date."
+}

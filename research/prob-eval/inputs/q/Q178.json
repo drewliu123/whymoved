@@ -1,0 +1,44 @@
+{
+ "qid": "Q178",
+ "question": "Will there be no change in Fed interest rates after the July 2026 meeting?",
+ "rules": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's July 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed options, the change will be rounded up to the nearest 25 and will resolve to the relevant bracket. (e.g. if there's a cut/increase of 12.5 bps it will be considered to be 25 bps)\n\nThe resolution source for this market is the FOMC’s statement after its meeting scheduled for July 28-29, 2026 according to the official calendar: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm.\n\nThe level and change of the target federal funds rate is also published at the official website of the Federal Reserve at https://www.federalreserve.gov/monetarypolicy/openmarket.htm.\n\nThis market may resolve as soon as the FOMC’s statement for their July meeting with relevant data is issued. If no statement is",
+ "as_of": "2026-07-15",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "published_at": "2026-06-17",
+   "excerpt": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. The Federal Open Market Committee approved the statement by a 12–0 vote. Inflation remained elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks affecting certain sectors, including energy."
+  },
+  {
+   "id": "E2",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-07-02",
+   "excerpt": "Both total nonfarm payroll employment (+57,000) and the unemployment rate (4.2 percent) changed little in June, the U.S. Bureau of Labor Statistics reported. Employment continued to trend up in professional and business services, social assistance, and health care. Leisure and hospitality lost jobs."
+  },
+  {
+   "id": "E3",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "published_at": "2026-07-08",
+   "excerpt": "In their consideration of monetary policy at this meeting, all participants supported maintaining the current target range for the federal funds rate. A few participants commented that there was a case for raising the target range, but supported maintaining it at this meeting. Many participants indicated that the appropriate year-end rate would be within or slightly below the current target range, while many others assessed that it would be above that range. Participants noted that their future policy actions would depend on incoming information."
+  },
+  {
+   "id": "E4",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "published_at": "2026-07-10",
+   "excerpt": "Measured inflation stepped up further in March as energy prices surged after the start of the Middle East conflict. Over the 12 months ending in May, the price index for personal consumption expenditures rose 4.1 percent, up substantially from a 2.5 percent pace a year earlier. Core price inflation was 3.4 percent over the 12 months ending in May, up from a 2.8 percent pace a year earlier."
+  },
+  {
+   "id": "E5",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-07-14",
+   "excerpt": "The Consumer Price Index for All Urban Consumers decreased 0.4 percent on a seasonally adjusted basis in June after rising 0.5 percent in May. This decline was the largest one-month decrease since April 2020. Over the last 12 months, the all-items index increased 3.5 percent before seasonal adjustment. The energy index fell 5.7 percent in June after rising 3.9 percent in May."
+  },
+  {
+   "id": "E6",
+   "publisher": "Board of Governors of the Federal Reserve System — Chairman Kevin Warsh",
+   "published_at": "2026-07-14",
+   "excerpt": "The members of our Committee have no tolerance for persistently elevated inflation. And we share a resolute commitment to restoring price stability. This was the focus of our June meeting, at which we decided to hold the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. America's labor market appears broadly stable."
+  }
+ ]
+}

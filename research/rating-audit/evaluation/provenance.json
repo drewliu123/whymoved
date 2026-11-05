@@ -1,0 +1,36 @@
+{
+  "review_date": "2026-10-30",
+  "depth": "E2 static, no execution",
+  "repositories": [
+    {
+      "repository": "theolivecode/WebDataLeakageAudit",
+      "commit": "02ad57569ebe963efdcf0c28de6a8543ae3b0a1e",
+      "directory": "WebDataLeakageAudit"
+    },
+    {
+      "repository": "forecastingresearch/forecastbench",
+      "commit": "e8d3c94f9b7f424bbd1205007db08cf2950a45a3",
+      "directory": "forecastbench"
+    },
+    {
+      "repository": "waylonli/FINSABER",
+      "commit": "e72c26206d08de2ffeab736b96878109f144040f",
+      "directory": "FINSABER"
+    },
+    {
+      "repository": "ai-prophet/cruxbench",
+      "commit": "c036b3cd94881dc9efba448b7c02594db1b408fd",
+      "directory": "cruxbench"
+    },
+    {
+      "repository": "VectorInstitute/agentic-forecasting",
+      "commit": "e95c97b043522dd7dacf5a9c059a92b6a484f33c",
+      "directory": "agentic-forecasting"
+    },
+    {
+      "repository": "gpleiss/temperature_scaling",
+      "commit": "ce1154ec7d5235eee046f28875c3dd8421f11d45",
+      "directory": "temperature_scaling"
+    }
+  ]
+}

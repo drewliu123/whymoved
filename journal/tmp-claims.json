@@ -1,0 +1,384 @@
+{
+  "question": "NDX中长期投资价值，QQQ工具参照",
+  "as_of": "2026-10-31T15:15:05Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "研究截面为2026-10-31；Nasdaq交易日历显示10月30日为正常交易日，因此最新已完成交易日为2026-10-30。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+          "publisher": "Nasdaq",
+          "tier": "T0",
+          "published_at": "unknown",
+          "quote": "研究截面为2026-10-31；Nasdaq交易日历显示10月30日为正常交易日，因此最新已完成交易日为2026-10-30。"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "Nasdaq历史页标注DATA AS OF 10/30/2026，显示NDX 28,384.85；但同时显示前收也是28,384.85、涨跌-1,000.42及0.00%，彼此不一致，且没有可读历史收盘行。该数只能作为页面展示值，不作已核实正式收盘价或收益率依据。",
+      "type": "price",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://indexes.nasdaq.com/Index/History/NDX",
+          "publisher": "Nasdaq",
+          "tier": "T0",
+          "published_at": "unknown",
+          "quote": "Nasdaq历史页标注DATA AS OF 10/30/2026，显示NDX 28,384.85；但同时显示前收也是28,384.85、涨跌-1,000.42及0.00%，彼此不一致，且没有可读历史收盘行。该数只能作为页面展示值，不作已核实正式收盘价或收益率依据。"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "微软截至2026-09-30季度收入922.79亿美元、经营利润459.15亿美元、Azure收入331.65亿美元同比增长48%；经营现金流580.00亿美元、现金购置物业设备393.67亿美元。现金capex不包含全部融资租赁新增资产。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "published_at": "2026-10-28",
+          "quote": "Revenue was $92.3 billion and increased 19%; Operating income was $45.9 billion and increased 21%"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "Alphabet 2026Q3收入1,275.77亿美元、经营利润405.76亿美元；Services收入963亿美元同比增长11%，Cloud收入307亿美元同比增长103%且含TPU硬件销售；经营现金流422.90亿美元、资本开支513.55亿美元、自由现金流-90.65亿美元，过去十二个月自由现金流197.47亿美元。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+          "publisher": "Alphabet",
+          "tier": "T0",
+          "published_at": "2026-10-28",
+          "quote": "Consolidated Alphabet revenues increased 25% to $127.6 billion"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "Amazon 2026Q3 AWS收入459.84亿美元同比增长39.3%，AWS经营利润177.73亿美元，公司经营利润280.76亿美元；过去十二个月经营现金流1,683.00亿美元、扣出售及激励后的物业设备支出2,106.57亿美元、自由现金流-423.57亿美元；2026现金资本开支约2,200亿美元为管理层指引。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+          "publisher": "Amazon",
+          "tier": "T0",
+          "published_at": "2026-10-29",
+          "quote": "Free cash flow is cash flow from operations reduced by"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "Meta 2026Q3收入646.01亿美元，其中广告630.61亿美元；经营利润129.88亿美元含98.9亿美元诉讼费用；经营现金流327.86亿美元，含融资租赁本金支付的资本开支349.06亿美元，自由现金流-21.20亿美元；全年资本开支1,350–1,450亿美元为指引。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "publisher": "Meta",
+          "tier": "T0",
+          "published_at": "2026-10-21",
+          "quote": "Capital expenditures, including principal payments on finance leases"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "Alphabet季度证券投资损失与年内累计巨额非经营收入方向不同；2026年前九个月损益表Other income net为1,275亿美元左右，Amazon同期非经营净收益681.71亿美元。不能把GAAP盈利增速直接视为可持续经营盈利增速。 非经营净收益不全等于应剔除投资收益，也未证明某个forward PE已受这些项目影响；需核实预测盈利是否已调整。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+          "publisher": "Alphabet",
+          "tier": "T0",
+          "published_at": "2026-10-28",
+          "quote": "Other income (expense), net; year-to-date other income approximately $127.5 billion; quarter other expense approximately $8.2 billion"
+        },
+        {
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+          "publisher": "Amazon",
+          "tier": "T0",
+          "published_at": "2026-10-29",
+          "quote": "Year to date total non-operating income $68.171 billion"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "云计算、企业软件订阅、搜索及社交广告已经产生经营盈利，AI增长可通过算力销售、云消费、软件收费和广告转化兑现；但四家公司收入与现金开支不同步，不能从云收入增长推导指数自由现金流同比例增长。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "共同风险机制：指数内算力供应商的收入可能对应云厂商的资本开支，同一笔产业支出在指数内部兼具收入和投资；终端付费不足会同时影响供应商订单与平台投资回报。折旧、能源约束、竞争降价、监管和利率变化均须作为压力情景，而非已经发生的损失。 这不意味着指数盈利会计重复计算；指数公司财务并非集团合并报表，不能直接抵销供应商收入与客户投资。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "十年价格回报敏感性采用 r=(1+g)*(退出PE/起点PE)^(1/10)-1，盈利必须采用同口径正常化每份盈利，既不混用forward/TTM也不把收入增速代入。起点PE25/30/35/40为假设网格而非当前估值。乐观g15%退出32倍，年化价格回报17.87%/15.75%/13.97%/12.46%；基准g10%退出25倍为10.00%/8.01%/6.36%/4.95%；悲观g4%退出20倍为1.71%/-0.13%/-1.66%/-2.96%。不含分红、基金费、税和汇率；概率均留空。 基准是中间外生参数组合，不表示最大概率；指数换股与每份盈利口径变化须另行处理。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C8",
+        "C9"
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "若要求十年价格年回报8%、退出25倍，同口径起点PE25/30/35/40要求每份盈利年增8.00%/9.99%/11.70%/13.20%。这是反推条件，不是对实际市场预期或概率的观测。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C10"
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "r/investing相关帖子中cloud7100评论质疑在其他股票指数敞口之外继续增加大型科技集中风险；r/stocks另一个帖子里Picks6x担心巨额AI开支能否盈利，CornerOne238则质疑增加芯片支出时抛售芯片股。仅两个帖子，评论时间和截面互动量未独立核实，不能概括投资者总体情绪。",
+      "type": "view",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.reddit.com/r/investing/comments/1xi4res/does_anyone_put_all_their_money_is_the_nasdaq_100/",
+          "publisher": "Reddit",
+          "tier": "T4",
+          "published_at": "unknown",
+          "quote": "I don’t think anyone has thought “Gee, S&P500 doesn’t have enough big tech stocks in 2026.”"
+        },
+        {
+          "url": "https://www.reddit.com/r/stocks/comments/1xjqpj8/stock_market_rocked_as_investors_dump_tech_shares/",
+          "publisher": "Reddit",
+          "tier": "T4",
+          "published_at": "2026-10-30",
+          "quote": "It's like investors hate not knowing if insane spending is going to be profitable or not."
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "Nasdaq-100选取100家大型Nasdaq上市非金融公司，采用修正市值加权；2026-05-01生效方法规定季度再平衡，年度重构于12月第三个周五后首个交易日开盘生效。未独立核实其后是否又有方法修订。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://indexes.nasdaqomx.com/docs/Methodology_NDX_Effective_May_1_2026.pdf",
+          "publisher": "Nasdaq",
+          "tier": "T0",
+          "published_at": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "text": "Nasdaq官方factsheet截至2026-09-30：NVDA8.36%、AAPL7.38%、MSFT5.78%、MU5.04%、AMD4.19%、AMZN4.08%、META3.27%、GOOGL3.07%、GOOG2.86%、TSLA2.83%；Technology68.01%、Consumer Discretionary15.14%。这是9月末权重，不是10月30日。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://indexes.nasdaq.com/docs/FS_NDX.pdf",
+          "publisher": "Nasdaq",
+          "tier": "T0",
+          "published_at": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "上述十大证券权重合计46.86%，Alphabet两股类合计5.93%；十条证券对应九家公司。NVDA、MU、AMD合计17.59%仅是这三家权重，不是全部半导体行业权重。权重不等同于盈利贡献权重。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C14"
+      ]
+    },
+    {
+      "id": "C16",
+      "text": "NDX是价格回报版本，XNDX是总回报版本，XNDXNNR为净总回报版本。基金含分红回报不能直接与NDX价格回报比较。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://indexes.nasdaq.com/docs/FS_NDX.pdf",
+          "publisher": "Nasdaq",
+          "tier": "T0",
+          "published_at": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "text": "Invesco文件说明Nasdaq Composite Total Return覆盖Nasdaq市场境内外普通股；其范围与100家大型非金融公司的NDX不同。该官方PDF URL文件名含QQQ，但本次取得正文标题与ticker为QQQM，按正文身份归属。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/fact-sheet/qqq-invesco-qqq-etf-fact-sheet.pdf",
+          "publisher": "Invesco",
+          "tier": "T0",
+          "published_at": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "text": "Invesco官网列示QQQ总费用率0.18%；2025-12-22官方说明费用由0.20%降至0.18%，并介绍open-ended ETF结构转换。完整转换生效记录本次未取得，因此不沿用旧UIT限制描述。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.invesco.com/qqq-etf/en/performance.html",
+          "publisher": "Invesco",
+          "tier": "T0",
+          "published_at": "unknown"
+        },
+        {
+          "url": "https://www.invesco.com/qqq-etf/en/market-outlook/whats-new-about-qqq.html",
+          "publisher": "Invesco",
+          "tier": "T0",
+          "published_at": "2025-12-22"
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "text": "QQQM官方截至2026-09-30资料列示总费用率0.15%；按两只基金公示费率差0.03个百分点计算，每10,000美元资产每年费用差约3美元，实际取决于净值路径。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.invesco.com/us-rest/contentdetail?contentId=3bb2c37291215710VgnVCM1000006e36b50aRCRD&dnsName=us",
+          "publisher": "Invesco",
+          "tier": "T0",
+          "published_at": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "text": "官方PDF实际正文QQQM截至2026-09-30列示P/E29.48、P/B9.91、ROE34.54%；仅写P/E ratio，未取得forward/TTM、亏损公司处理及加权方法定义。该P/E不是已核实10月30日NDX估值，也不能与未核实的历史远期PE直接比较。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/fact-sheet/qqq-invesco-qqq-etf-fact-sheet.pdf",
+          "publisher": "Invesco",
+          "tier": "T0",
+          "published_at": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "text": "QQQM截至2026-09-30同表：一年NAV总回报23.79%、市场价格回报23.85%、指数24.00%；五年年化NAV16.40%、市场价格16.36%、指数16.56%。另一官方正文注明基准XNDX，市场回报采用美东16时买卖报价中点。",
+      "type": "fact",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [
+        {
+          "url": "https://www.invesco.com/us-rest/contentdetail?contentId=3bb2c37291215710VgnVCM1000006e36b50aRCRD&dnsName=us",
+          "publisher": "Invesco",
+          "tier": "T0",
+          "published_at": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "text": "上述QQQM NAV相对指数一年差-0.21个百分点，五年年化差-0.16个百分点。这是已实现跟踪差异，不是跟踪误差的波动率，也不是QQQ本身的跟踪记录。NAV、交易价格、总回报须分别比较。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C16",
+        "C21"
+      ]
+    },
+    {
+      "id": "C23",
+      "text": "研究判断：已核查的四家大型平台有经营盈利基础，资本支出压低部分平台当期自由现金流；AI支出的独立影响及统一现金转换率变化尚未量化，不能据此证明整个NDX的经营质量。未取得10月30日同口径正常化盈利与估值，当前价格吸引力未被证明，也不能据此断言高估。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C9",
+        "C14",
+        "C20"
+      ]
+    },
+    {
+      "id": "C24",
+      "text": "反方检验：投入期自由现金流下降可能是在建设未来盈利资产，不自动意味着毁损价值；若新增经营现金流持续覆盖新增支出且每份正常化盈利增长，现金流担忧应被下调。反之，延长折旧年限或投资收益抬高EPS不能替代终端客户付费和现金回收。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ]
+    },
+    {
+      "id": "C25",
+      "text": "无概率观察契约：H1按2028年度官方现金流表，Amazon和Alphabet经营现金流减毛额现金购置物业设备均为正，任一家不为正则否，核验2029-04-30；出售激励不加回，租赁本金单列。H3比较2027-12-31生效的同减免费率口径，QQQM费用率仍低于QQQ，否则否，核验2028-01-31；缺少资料或基金终止void。H2正常化每份指数盈利五年复合增长10%因尚无锁定提供者及2026基值，无法裁决，不登记概率或预测。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C4",
+        "C5",
+        "C10",
+        "C18",
+        "C19"
+      ]
+    },
+    {
+      "id": "C26",
+      "text": "QQQ与QQQM都是指数实施工具，费用降低净回报；现金分红是总回报的一部分，除息时不能把现金到账视为额外创造收益。价格偏离NAV、交易价差及税费影响实际结果，基金费用不是跟踪差异的唯一来源。固定回报测算不应重复扣除已在净值中计提的管理费。",
+      "type": "inference",
+      "as_of": "2026-10-31T15:15:05Z",
+      "sources": [],
+      "basis": [
+        "C16",
+        "C18",
+        "C19",
+        "C21",
+        "C22"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "registered_version": "0.5.0",
+  "install_path": "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.0",
+  "matches": {
+    "README.md": true,
+    "scripts/check_claims.py": true,
+    "scripts/forecast.py": true,
+    "scripts/journal.py": true,
+    "scripts/research_plan.py": true,
+    "scripts/polymarket.py": true,
+    "scripts/opportunities.py": true,
+    "scripts/sources.py": true,
+    "scripts/common.py": true,
+    "scripts/analysis_contract.py": true,
+    "scripts/authors.py": true,
+    "scripts/financial_data.py": true,
+    "scripts/render_report.py": true,
+    "scripts/opportunity_contract.py": true,
+    "scripts/analysis_models.py": true,
+    "scripts/research_run.py": true,
+    "tests/test_evidence_v2.py": true,
+    "tests/test_research_plan.py": true,
+    "tests/test_financial_data.py": true,
+    "tests/test_analysis_contract.py": true,
+    "tests/test_analysis_models.py": true,
+    "tests/analysis_fixtures.py": true,
+    "tests/test_reports.py": true,
+    "tests/test_sources.py": true,
+    "tests/test_opportunities.py": true,
+    "tests/test_research_runs.py": true,
+    "tests/test_scripts.py": true,
+    "agents/forecaster.md": true,
+    "agents/fact-collector.md": true,
+    "agents/community-scout.md": true,
+    "agents/red-team.md": true,
+    "skills/research/SKILL.md": true,
+    "skills/research/references/expectations.md": true,
+    "skills/research/references/financial-data.md": true,
+    "skills/research/references/templates.md": true,
+    "skills/research/references/context.md": true,
+    "skills/research/references/sources.md": true,
+    "skills/research/references/evidence.md": true,
+    "skills/research/references/legacy-forecast.md": true,
+    "skills/research/references/analysis-methods.md": true,
+    "skills/research/references/memo-template.md": true,
+    "skills/research/references/research-value.md": true,
+    ".claude-plugin/marketplace.json": true,
+    ".claude-plugin/plugin.json": true
+  },
+  "tests": {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.0",
+    "exit_code": 0,
+    "stdout": "installed-tests.stdout.log",
+    "stderr": "installed-tests.stderr.log"
+  },
+  "final_prompt_sync": {
+    "reason": "CLI does not refresh same-version local source; synchronized two finalized prompt files after backup",
+    "version": "0.5.0",
+    "files": [
+      {
+        "path": "skills/research/SKILL.md",
+        "before": "8caeb903959ab7199d2538e858604ed9df051973e3c792ac3b82705e07aa3790",
+        "after": "f362df9cb406e6a0388020a036af67cdce302a91ff10bba78ade7c3ef757f3af"
+      },
+      {
+        "path": "skills/research/references/research-value.md",
+        "before": "0993d733c7d906042ce9d8985631f65f917e06906588ac24ef82f7b9e713d60b",
+        "after": "e4868f9cf6075b31ffbd49e924c0b7251ca970d8824c4220308386a2d7b74b79"
+      }
+    ]
+  },
+  "reload": "New session required; current session hot reload not claimed"
+}

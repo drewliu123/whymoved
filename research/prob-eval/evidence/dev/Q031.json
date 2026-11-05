@@ -1,0 +1,35 @@
+{
+  "qid": "Q031",
+  "as_of": "2026-08-04",
+  "kept": [
+    {
+      "excerpt": "Real Madrid were expected to make an offer for Rodri and were believed to have made initial contact with Manchester City, according to Sky Sports News. Madrid were believed willing to pay £43 million–£51 million (€50 million–€60 million), given that he had one year left on his contract. City did not want to sell him and hoped to agree a new long-term contract.",
+      "published_at": "2026-07-31",
+      "publisher": "Sky Sports",
+      "relevance": "This late-July report identifies active interest from a prospective buyer while showing that City's stated preference remained retention.",
+      "url": "https://www.skysports.com/transfer/news/13568453/rodri-transfer-latest-real-madrid-expected-to-make-bid-for-manchester-city-midfielder-after-prolonged-interest"
+    },
+    {
+      "excerpt": "AS reported that Rodri prioritized Real Madrid if he left Manchester City, despite interest from Barcelona and other clubs. Barcelona had approached his representatives but had not contacted City, according to SER. City were asking €75 million, while Madrid hoped to complete a deal for around €60 million. Madrid also needed at least one player departure to accommodate its planned signings.",
+      "published_at": "2026-08-04",
+      "publisher": "AS",
+      "relevance": "The cutoff-day report describes the reported destination preference, valuation gap and squad constraints that still stood between interest and a completed transfer.",
+      "url": "https://as.com/futbol/primera/rodri-ni-se-inmuta-por-el-barca-f202608-n/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.mancity.com/news/mens/rodrigo-signs-new-manchester-city-contract-63793206",
+      "reason": "The excerpt explicitly mentions June 2027, after the 2026-08-04 cutoff, and the relevance refers to a later market deadline. Removed under the instruction to exclude mentions of anything after the cutoff."
+    },
+    {
+      "url": "https://www.skysports.com/football/news/11095/13524651/rodri-transfer-news-man-city-midfielder-comments-on-potential-move-to-real-madrid-in-the-future",
+      "reason": "The excerpt explicitly mentions summer 2027, after the 2026-08-04 cutoff. Removed under the instruction to exclude mentions of anything after the cutoff."
+    },
+    {
+      "url": "https://www.skysports.com/football/news/13566264/rodri-man-citys-world-cup-winner-to-undergo-back-surgery-and-may-miss-start-of-premier-league-season",
+      "reason": "The excerpt reports a World Cup result (Spain's victory) and explicitly discusses the August 23 Premier League opener, after the 2026-08-04 cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-08-04. Included only articles with explicit publication dates on or before that date; AS displays an August 4, 2026 update timestamp. Excerpts are factual paraphrases of source text exposed in search results; the AS excerpt is translated from Spanish. Direct web_fetch failed because of a provider configuration error, and the requested agent-reach fallback failed because its web-reading backends were temporarily unavailable, so full-page retrieval could not be independently completed. Post-cutoff results, undated pages, prediction-market pages, betting material and outcome information were excluded. Reported interest and negotiating positions are attributed media claims, not official transfer confirmations."
+}

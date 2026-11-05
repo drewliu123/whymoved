@@ -1,0 +1,51 @@
+{
+  "query": "Nasdaq Composite tech stocks selloff AI spending earnings",
+  "window": {
+    "start": "2026-10-02",
+    "end": "2026-11-01",
+    "timezone": "America/New_York"
+  },
+  "started_at": "2026-11-02T02:54:59.436003+00:00",
+  "command": [
+    "/Users/frankzhang/.local/bin/python3.12",
+    "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+    "Nasdaq Composite tech stocks selloff AI spending earnings",
+    "--research-only",
+    "--emit=json",
+    "--json-profile=raw",
+    "--search",
+    "reddit,hackernews,polymarket",
+    "--quick",
+    "--days",
+    "30",
+    "--as-of",
+    "2026-11-01",
+    "--plan",
+    "/Users/frankzhang/Desktop/投研助手/journal/work/nasdaq-20261101-wak14q8o/community/query-plan.json",
+    "--subreddits",
+    "stocks,investing,StockMarket",
+    "--no-browser-cookies",
+    "--web-backend",
+    "none",
+    "--no-verify-freshness",
+    "--save-dir",
+    "/Users/frankzhang/Desktop/投研助手/journal/work/nasdaq-20261101-wak14q8o/community/engine-save"
+  ],
+  "environment": {
+    "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+    "HOME": "/Users/frankzhang/Desktop/投研助手/journal/work/nasdaq-20261101-wak14q8o/community/runtime-home",
+    "LAST30DAYS_CONFIG_DIR": "",
+    "LAST30DAYS_SKIP_KEYCHAIN": "1",
+    "LAST30DAYS_LIBRARY_CONTEXT": "off",
+    "LAST30DAYS_NATIVE_SEARCH": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TMPDIR": "/Users/frankzhang/Desktop/投研助手/journal/work/nasdaq-20261101-wak14q8o/community/tmp"
+  },
+  "budget_seconds": 175,
+  "raw_path": "/Users/frankzhang/Desktop/投研助手/journal/work/nasdaq-20261101-wak14q8o/community/last30days-raw.json",
+  "stderr_path": "/Users/frankzhang/Desktop/投研助手/journal/work/nasdaq-20261101-wak14q8o/community/engine.stderr",
+  "fresh_run": true,
+  "exit_code": 0,
+  "status": "ok",
+  "elapsed_seconds": 57.35
+}

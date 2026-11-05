@@ -1,0 +1,39 @@
+{
+  "queries": [
+    {
+      "query": "site.reddit.com Iran US ceasefire October 2026 extension November Hormuz inspections",
+      "source": "WebSearch allowed_domains=reddit.com",
+      "executed_at": "2026-11-02T03:34:30.313059+00:00",
+      "status": "partial",
+      "purpose": "Supplement engine with object/date disambiguation; not platform-wide recall",
+      "notes": [
+        "Search returned off-domain links despite allowed_domains; only Reddit URLs retained as community leads.",
+        "Dates and summaries are search-tool assertions, not independently verified."
+      ],
+      "result_urls": [
+        "https://www.reddit.com/r/oil/comments/1xbbdmu/tonight_iran_states_it_will_stop_oil_tanker/",
+        "https://www.reddit.com/r/OilPrices/comments/1x9h1mm/iran_says_it_has_a_new_operational_plan_if_the_us/",
+        "https://www.reddit.com/r/CrudeOil/comments/1x0xuq1/since_february_theres_been_a_ceasefire_and_a/",
+        "https://www.reddit.com/r/oil/comments/1vmdjbu/iran_rejects_pakistans_claim_of_ceasefire/"
+      ]
+    }
+  ],
+  "original_access": [
+    {
+      "url": "https://www.reddit.com/r/oil/comments/1xbbdmu/tonight_iran_states_it_will_stop_oil_tanker/",
+      "source": "WebFetch",
+      "executed_at": "2026-11-02T03:34:30.313059+00:00",
+      "status": "unreachable",
+      "error": "Claude Code is unable to fetch from www.reddit.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/OilPrices/comments/1x9h1mm/iran_says_it_has_a_new_operational_plan_if_the_us/",
+      "source": "WebFetch",
+      "executed_at": "2026-11-02T03:34:30.313059+00:00",
+      "status": "unreachable",
+      "error": "Claude Code is unable to fetch from www.reddit.com"
+    }
+  ],
+  "directed_queries_used": 1,
+  "webfetch_reads_attempted": 2
+}

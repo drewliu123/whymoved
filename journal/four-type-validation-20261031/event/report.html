@@ -1,0 +1,90 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>12月Fed：加息有证据，70.5%仍不是独立结论</title><style>body{font:17px/1.8 system-ui,sans-serif;max-width:1080px;margin:36px auto;padding:0 20px;color:#202020}h1{font-size:30px}h2{font-size:22px;margin-top:36px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#f3f3f3}.scroll{overflow-x:auto}a{color:#1258a0}li{margin:10px 0}small{color:#555}@media print{body{max-width:none;margin:0}table{font-size:11px}a{color:inherit}}</style><body>
+<h1>12月Fed：加息有证据，70.5%仍不是独立结论</h1>
+<small>研究完成截点：2026-10-31T17:21:33.217142+00:00；状态：部分完成。真实未来合约、完整规则、官方决议/PCE与盘口取得；独立概率、BLS基础数据与规则异常边界仍有缺口。</small>
+<p>市场把加25bp列为首要结果：Gamma参考70.5%，维持27.5%。官方证据支持把加息视为实质情景：9月全票加25bp，10月虽暂停但仍有加息异议，核心PCE仍有压力。独立初判曾暂偏维持；补齐9月资料后的最终观点改为维持与加25bp并列工作情景。没有校准模型，不能判断70.5%是否错价，也不给独立点概率。下一项最明确观察是11月25日的核心PCE、实际消费及随后就业数据。 <a href="#claim-c4">[C4]</a> <a href="#claim-c5">[C5]</a> <a href="#claim-c6">[C6]</a> <a href="#claim-c7">[C7]</a> <a href="#claim-c8">[C8]</a> <a href="#claim-c12">[C12]</a> <a href="#claim-c13">[C13]</a> <a href="#claim-c15">[C15]</a> </p>
+<h2>当前判断：加息有证据，70.5%尚无独立校准依据</h2>
+<p>看完市场后，以维持与加息25bp作为并列工作情景。官方材料足以解释为何市场偏向加息，但不足以检验70.5%这个数值是否合理，因此不宣称存在定价优势。9月全票加25bp、10月暂停且仍有加息异议，说明“暂停后恢复收紧”是有根据的路径。 <a href="#claim-c4">[C4]</a> <a href="#claim-c5">[C5]</a> <a href="#claim-c7">[C7]</a> <a href="#claim-c8">[C8]</a> <a href="#claim-c13">[C13]</a> </p>
+<h2>市场参考、独立初判与市场后观点分别保留</h2>
+<p>市场参考：Gamma加25bp 70.5%、维持27.5%。独立初判：在读取任何Polymarket报价前，已在independent-freeze.json冻结“维持为暂定基准，加25bp为实质竞争情景”，未给数字概率。市场后观点：取得9月官方决议后，降低维持优先排序的把握，改为维持/加25bp并列工作情景；此修订受新增官方上下文支持，也可能受已见市场锚定影响，不能重新包装为独立预测。 <a href="#claim-c7">[C7]</a> <a href="#claim-c8">[C8]</a> <a href="#claim-c12">[C12]</a> <a href="#claim-c13">[C13]</a> </p>
+<h2>通胀约束宽松，但需求并非处处加速</h2>
+<p>9月核心PCE环比0.3%、同比3.1%，8月核心环比也为0.3%；10月Fed仍强调通胀高、经济强、就业稳定，暂不支持把降息作基准。另一方面，9月名义消费增0.5%而实际消费不足0.1%、实际可支配收入下降0.3%。9月实际消费增速较8月放缓、实际DPI下降，但尚未确认持续或全面需求走弱；下一组数据需要区分价格推动和真实需求。 <a href="#claim-c4">[C4]</a> <a href="#claim-c5">[C5]</a> <a href="#claim-c6">[C6]</a> <a href="#claim-c14">[C14]</a> </p>
+<h2>合约是一次会议的上限调整，异常条款会改变经济语义</h2>
+<p>按12月会议前后的目标区间上限变化结算，不能误读成今天到年底累计变动。正常25bp网格上的五档为降50+、降25、不变、加25、加50+，在这些条件下互斥并覆盖；非标准变化按规则例子向远离零的25bp档取整，未穷尽的非常规边界不可自行裁定。完整规则逐字保存于sources.json/S1及原始响应。 <a href="#claim-c2">[C2]</a> <a href="#claim-c16">[C16]</a> </p>
+<h2>参考价之和100.75%，双边报价和深度必须一起看</h2>
+<p>五个Gamma Yes参考价相加100.75%，五个最佳bid之和99.50%、ask之和102.00%。不把原值强行拼成精确概率分布，不从该偏差直接推导套利。加25bp和不变的spread都是0.01美元/份，相当于1个百分点的支付价格；降25bp最佳bid只有20份，足见尾部参考价与可执行规模并非一回事。 <a href="#claim-c9">[C9]</a> <a href="#claim-c10">[C10]</a> <a href="#claim-c11">[C11]</a> </p>
+<h2>真实未来状态已核实，报价采用窗口而非伪同刻</h2>
+<p>事件和五个子合约均active=true、closed=false，子合约acceptingOrders=true。Gamma获取于17:17:21Z，但HTTP Date为17:14:28Z，子市场updatedAt为17:12:15Z至17:14:16Z；CLOB获取窗口17:17:41.692–41.992Z，订单簿内部时间为17:16:54.639–17:17:40.943Z。它们是同一研究窗口内的异步快照，不是原子同刻行情。另有加25bp的Gamma lastTradePrice=0.71与CLOB last_trade_price=0.290不一致；两端均无独立成交时戳，未用于结论或价格变动解释，原因未核实。 <a href="#claim-c1">[C1]</a> <a href="#claim-c8">[C8]</a> <a href="#claim-c9">[C9]</a> <a href="#claim-c17">[C17]</a> </p>
+<h2>盘口快照：价格为美元/1美元支付份额，规模为份（Yes侧）</h2>
+<div class="scroll" tabindex="0"><table><thead><tr><th scope="col">结果</th><th scope="col">Gamma参考</th><th scope="col">CLOB bid / ask</th><th scope="col">最佳bid份数 / ask份数</th><th scope="col">书内UTC时间</th></tr></thead><tbody>
+<tr><td>降50+bp</td><td>0.40%</td><td>0.003 / 0.005</td><td>358248.31 / 15457.88</td><td>17:17:39.444</td></tr>
+<tr><td>降25bp</td><td>0.65%</td><td>0.006 / 0.007</td><td>20 / 8556.97</td><td>17:17:39.597</td></tr>
+<tr><td>不变</td><td>27.50%</td><td>0.27 / 0.28</td><td>27435.55 / 24428.43</td><td>17:17:39.936</td></tr>
+<tr><td>加25bp</td><td>70.50%</td><td>0.7 / 0.71</td><td>3010.62 / 48170.95</td><td>17:17:40.943</td></tr>
+<tr><td>加50+bp</td><td>1.70%</td><td>0.016 / 0.018</td><td>2159.38 / 880.64</td><td>17:16:54.639</td></tr>
+</tbody></table></div><p> <a href="#claim-c8">[C8]</a> <a href="#claim-c9">[C9]</a> <a href="#claim-c11">[C11]</a> </p>
+<h2>显示深度：bid向下/ask向上各0.01美元内（含边界），金额未计费用</h2>
+<div class="scroll" tabindex="0"><table><thead><tr><th scope="col">结果</th><th scope="col">bid累计份</th><th scope="col">ask累计份</th><th scope="col">bid美元名义额</th><th scope="col">ask美元名义额</th></tr></thead><tbody>
+<tr><td>降50+bp</td><td>5802059.00</td><td>32483.70</td><td>9229.55</td><td>183.55</td></tr>
+<tr><td>降25bp</td><td>7334089.07</td><td>19802.10</td><td>18339.65</td><td>206.78</td></tr>
+<tr><td>不变</td><td>374743.19</td><td>356202.54</td><td>97707.58</td><td>103054.45</td></tr>
+<tr><td>加25bp</td><td>199409.31</td><td>425768.66</td><td>137622.53</td><td>306071.73</td></tr>
+<tr><td>加50+bp</td><td>357830.64</td><td>11276.40</td><td>3599.22</td><td>269.04</td></tr>
+</tbody></table></div><p>计算见calculations.json。远尾bid累计份大但美元金额很小；深度可撤单。未抓No侧订单簿。 <a href="#claim-c9">[C9]</a> <a href="#claim-c11">[C11]</a> </p>
+<h2>契约与时间边界</h2>
+<div class="scroll" tabindex="0"><table><thead><tr><th scope="col">项目</th><th scope="col">核实结果</th></tr></thead><tbody>
+<tr><td>真实对象</td><td>event id 770450；五个market id 3215005–3215009</td></tr>
+<tr><td>事件状态</td><td>active=true；closed=false；五个子合约acceptingOrders=true</td></tr>
+<tr><td>事件endDate</td><td>2026-12-10T04:59:00Z = 12月9日23:59 EST</td></tr>
+<tr><td>五个子合约endDate</td><td>2026-12-09T23:59:00Z = 12月9日18:59 EST</td></tr>
+<tr><td>官方决策会议</td><td>2026-12-08–09；附经济预测；声明发布即可结算</td></tr>
+<tr><td>比较基准</td><td>12月会议前的目标区间上限；当前上限4.00%仅是今日背景</td></tr>
+<tr><td>默认/延期</td><td>原文到“the next scheduled meeting”end date无声明则No change；next相对哪个时点、时区及截止秒均不明。2027-01-26–27仅为12月之后的日历会议，不能确定为默认截止</td></tr>
+<tr><td>规则来源</td><td>Gamma description全文；FOMC正式声明为首要结算来源；规则另指openmarket.htm，未另抓其当前页面</td></tr>
+</tbody></table></div><p> <a href="#claim-c1">[C1]</a> <a href="#claim-c2">[C2]</a> <a href="#claim-c3">[C3]</a> <a href="#claim-c4">[C4]</a> <a href="#claim-c16">[C16]</a> </p>
+<h2>反方与替代解释</h2>
+<h3>最强反方：暂停是一次观察窗口，加息路径尚未结束</h3>
+<p>9月以12–0加25bp，10月2人仍要加息；核心PCE连续0.3%且Fed形容就业稳定，支持把10月暂停解释为等待而非方向反转。若下一份核心通胀保持偏强、就业未明显恶化，加25bp的解释会增强；这是定性提示，并非已校准、可重复的改判阈值。这是对盘口前“维持优先”的实质挑战。 <a href="#claim-c4">[C4]</a> <a href="#claim-c5">[C5]</a> <a href="#claim-c7">[C7]</a> <a href="#claim-c13">[C13]</a> <a href="#claim-c14">[C14]</a> </p>
+<h3>加息情景的反方：单月实际消费放缓，委员会也已选择等待</h3>
+<p>9月实际消费增速较8月放缓、实际DPI下降，核心环比未比8月加速；这些单月数据尚未确认持续或全面需求走弱。10月Fed以10–2维持并表示等待更多信息，是继续等待的直接政策依据。总PCE环比升0.5%不足以单独推出必须12月加息；后续核心价格和就业仅作定性更新提示，尚无校准改判阈值。 <a href="#claim-c4">[C4]</a> <a href="#claim-c5">[C5]</a> <a href="#claim-c6">[C6]</a> <a href="#claim-c14">[C14]</a> </p>
+<h3>规则替代解释：No change不总等于经济政策未变</h3>
+<p>无声明默认条款可能把No change变成程序性结果；紧急会议若先改变利率，12月相对会前不变也可能与今天利率不同。最终复盘应同时核对政策变化与合约裁决，不用合约标签代替宏观事实。 <a href="#claim-c2">[C2]</a> <a href="#claim-c16">[C16]</a> </p>
+<h2>下一观察与改变判断的条件</h2>
+<h3>11月25日8:30 EST：BEA十月个人收入与支出</h3>
+<p>检查核心PCE环比是否加速，实际消费与实际收入是否修复；价格与就业组合用于定性更新，不代表已校准、可重复的改判阈值；单次消费放缓不确认持续需求走弱。日期取自本次BEA发布，更新前再核实日历。 <a href="#claim-c5">[C5]</a> <a href="#claim-c6">[C6]</a> <a href="#claim-c15">[C15]</a> </p>
+<h3>随后BLS就业与CPI正式发布、修订及Fed正式沟通</h3>
+<p>以失业率、就业修订、核心价格广度交叉检验；本次BLS页面403，暂不填数字和未核实的发布日期。若出现就业持续恶化，重新评价降息情景；此为定性提示，尚无已校准、可重复的改判阈值。 <a href="#claim-c4">[C4]</a> <a href="#claim-c14">[C14]</a> </p>
+<h3>按日历惯例约11月18日前后关注10月会议纪要，实际发布时间另核实</h3>
+<p>日历写通常三周后发布；不把推算日期当已公布预约。核对观望者的条件和收紧支持面是否扩大，不能把两张异议票直接变成概率。该观察也仅是定性更新提示，并非已校准改判阈值。 <a href="#claim-c3">[C3]</a> <a href="#claim-c4">[C4]</a> <a href="#claim-c13">[C13]</a> </p>
+<h3>12月8–9日正式声明；延期时需澄清next的指代与裁决</h3>
+<p>可否定命题：12月正式声明若相对会前目标上限降息，或加息至少50bp，即落在本报告“维持/加25bp”两中心情景之外，记为中心情景未覆盖实际结果；这不等于此前排除尾部可能。保留正式声明和真实结算证据；无声明时不自行指定fallback会议。其余watch仅作定性更新提示，非已校准可重复阈值。无数值概率，不计算独立Brier/log loss。 <a href="#claim-c2">[C2]</a> <a href="#claim-c3">[C3]</a> <a href="#claim-c16">[C16]</a> <a href="#claim-c18">[C18]</a> </p>
+<h2>集中局限</h2>
+<ul><li>BLS就业与CPI即时页均403；未从搜索摘要补入未核实数字，因此缺直接劳动力与CPI基础数据。官方就业判断仅来自Fed声明。</li><li>reference class只定义“相似通胀/就业约束下的常规FOMC会议”，未建立逐次历史条件样本，也无校准反应函数；独立概率留null。定性初判不能转换为概率差或收益优势。</li><li>搜索插件在冻结初判前返回媒体与一家机构加息观点；未见盘口百分比，但不能称对所有外部观点完全盲法。9月决议在看价后才取得，最终观点存在锚定可能。</li><li>Gamma与CLOB异步且Gamma有缓存迹象；未抓No侧深度、成交历史、费用明细或CME对照，未做执行/滑点模拟。不把网站liquidity和累计volume当可成交深度。加25bp的Gamma lastTradePrice=0.71而同Yes token的CLOB last_trade_price=0.290，均无独立成交时戳；两字段不一致且均未用于方向/价格变动结论，未核实差异成因。</li><li>事件/子合约endDate相差5小时；fallback中next相对哪个时点、精确时区/截止秒、非常规变动取整的全部边界、oracle争议处理未由当前描述消除。未另抓规则指向的openmarket.htm页面。</li><li>六个关键T0资料记录来自Fed、BEA、Polymarket，来源独立性有限；未扩搜社区，本轮无社区覆盖结论。</li><li>报告HTML与Markdown由同一report.json生成，已作静态文本和引用检查；未在浏览器渲染、截图或验证移动设备。本轮已收到协调者转达的独立审查并定向修正，处置见independent-review.md；静态校验不代表完整独立QA，也不证明预测优势。</li></ul>
+<h2>来源与审计</h2>
+<p>S1：<a href="https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632">Polymarket：12月Fed决议完整事件与五个子合约</a>；发布时间：unknown</p>
+<p>S2：<a href="https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890">Polymarket CLOB：五个Yes token原始订单簿</a>；发布时间：unknown</p>
+<p>S3：<a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">Federal Reserve：2026/2027 FOMC会议日历</a>；发布时间：unknown</p>
+<p>S4：<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">Federal Reserve：2026年10月28日FOMC声明</a>；发布时间：2026-10-28T14:00:00-04:00</p>
+<p>S5：<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026">BEA：Personal Income and Outlays, September 2026</a>；发布时间：2026-10-29T08:30:00-04:00</p>
+<p>S6：<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm">Federal Reserve：2026年9月16日FOMC声明</a>；发布时间：2026-09-16T14:00:00-04:00</p>
+<p>盘口前冻结：2026-10-31T17:16:48.345345+00:00。完整原句和失败见sources.json；结论claims.json；计算calculations.json；校验validation.json。</p>
+<p>仅为研究建议与案例方法验证，不是买卖建议。未写正式预测账本、作者库或外部平台。</p>
+<details><summary>结论索引与证据</summary>
+<p id="claim-c1"><strong>C1</strong>（fact）：12月Fed事件active=true、closed=false；五个子合约也active=true、closed=false且acceptingOrders=true。事件endDate为2026-12-10T04:59:00Z，子合约均为2026-12-09T23:59:00Z。 <a href="https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632">S1</a> </p>
+<p id="claim-c2"><strong>C2</strong>（fact）：规则按12月会议前后联邦基金目标区间上限的变化结算，不按从今天到年底的累计变化；非展示幅度向上取至25bp档，例子为12.5bp算25bp。正式来源为12月8–9日会议声明，声明可触发提前结算；原文条件为“If no statement is released by the end date of the next scheduled meeting”则归No change；未明确next相对哪个时点，因此不能据此指定某次会议为默认截止。 <a href="https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632">S1</a> </p>
+<p id="claim-c3"><strong>C3</strong>（fact）：Fed日历列2026年12月8–9日会议并附经济预测；12月之后的日历会议列2027年1月26–27日，日历说明日期在前次会议确认前为暂定。 <a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">S3</a> </p>
+<p id="claim-c4"><strong>C4</strong>（fact）：10月28日Fed以10–2维持3.75%–4.00%；Cook与Hammack要求加25bp。声明形容经济强劲、就业与劳动力同步、失业率变化不大，通胀仍高，需要更多信息。 <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">S4</a> </p>
+<p id="claim-c5"><strong>C5</strong>（fact）：BEA在10月29日公布9月PCE：总价格环比0.5%、同比3.6%，核心环比0.3%、同比3.1%；8月核心环比同为0.3%。 <a href="https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026">S5</a> </p>
+<p id="claim-c6"><strong>C6</strong>（fact）：同份BEA发布中，9月名义PCE环比0.5%，实际PCE增幅不足0.1%（表格四舍五入为0.0%），较8月0.5%的实际增速放缓；实际可支配收入环比下降0.3%。 <a href="https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026">S5</a> </p>
+<p id="claim-c7"><strong>C7</strong>（fact）：9月16日Fed以12–0加息25bp至3.75%–4.00%，10月随后维持。 <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm">S6</a> <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">S4</a> </p>
+<p id="claim-c8"><strong>C8</strong>（price）：Gamma原始Yes参考价依次为：降50+bp 0.40%、降25bp 0.65%、不变27.50%、加25bp 70.50%、加50+bp 1.70%；获取时间2026-10-31T17:17:21.213899Z，HTTP Date为17:14:28Z。 <a href="https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632">S1</a> </p>
+<p id="claim-c9"><strong>C9</strong>（price）：CLOB五档Yes bid/ask依次为0.003/0.005、0.006/0.007、0.27/0.28、0.70/0.71、0.016/0.018；获取窗口17:17:41.692–41.992Z，书内时间为17:16:54.639–17:17:40.943Z。 <a href="https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890">S2</a> </p>
+<p id="claim-c10"><strong>C10</strong>（inference）：按保存盘口计算，五个Gamma Yes参考价之和100.75%，bid和99.50%，ask和102.00%；保留原值不强行归一化，不能将其当无摩擦精确概率分布。 依据 C8, C9</p>
+<p id="claim-c11"><strong>C11</strong>（price）：加25bp最佳bid/ask显示3010.62/48170.95份，按价格乘份数约2107.43/34201.37美元；不变为27435.55/24428.43份。显示深度可撤单，不等于保证成交。 <a href="https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890">S2</a> </p>
+<p id="claim-c12"><strong>C12</strong>（inference）：盘口前定性初判以维持为暂定基准、加25bp为实质竞争情景、降息不作基准。10月的等待选择支持暂停，但核心价格仍有压力，无法把异议票数换成概率；缺条件化样本，不给独立数字概率。 依据 C4, C5, C6</p>
+<p id="claim-c13"><strong>C13</strong>（inference）：盘口后补见9月全票加息，更合理的竞争解释是10月暂歇后恢复收紧；这削弱把10月维持外推至12月的把握。最终将维持与加25bp并列工作情景，加息的证据基础充分，但没有独立模型支持认定70.5%高估或低估。 依据 C4, C5, C6, C7, C8</p>
+<p id="claim-c14"><strong>C14</strong>（inference）：9月实际消费增速放缓、实际DPI下降，与通胀压力仍在可以同时成立，但单月数据尚未确认持续或全面需求走弱。10月Fed以10–2选择维持，也支持继续等待有政策依据。核心价格与就业的后续组合仅作定性更新提示，尚非已校准、可重复的改判阈值。 依据 C4, C5, C6</p>
+<p id="claim-c15"><strong>C15</strong>（inference）：BEA列下一次个人收入与支出发布为2026年11月25日8:30 a.m. EST；应核对核心PCE与实际消费，而非只看总价格。之后12月8–9日声明和实际规则结算是最终核对节点。 依据 C2, C3, C5, C6</p>
+<p id="claim-c16"><strong>C16</strong>（inference）：规则存在元数据时点不一致和延期措辞风险：事件与子合约endDate相差5小时；没有界定“next scheduled meeting”的next相对哪个时点，也没有精确时区/截止秒；日历仅证明2027年1月26–27日在12月会议之后，不能确定它就是默认截止；紧急会改变会前利率时不能直接用今天4.00%上限作差。No change也可能来自无声明默认条款。 依据 C1, C2, C3, C4</p>
+<p id="claim-c17"><strong>C17</strong>（price）：加25bp的Gamma lastTradePrice为0.71，同一Yes token的CLOB last_trade_price为0.290；两端都未给独立成交时戳。这两个字段不一致，未用于方向或价格变动解释，差异原因未核实。 <a href="https://gamma-api.polymarket.com/events?slug=fed-decision-in-december-20260729232808632">S1</a> <a href="https://clob.polymarket.com/book?token_id=111662129652828266889360374468657435151479595863413519836161861837506140152890">S2</a> </p>
+<p id="claim-c18"><strong>C18</strong>（inference）：可否定命题：12月正式声明若相对会议前上限降息或加息至少50bp，即超出维持/加25bp两中心情景，应记为中心情景未覆盖；其余watch仅作定性更新提示，无已校准可重复阈值。无数值概率不计算独立Brier/log loss。 依据 C2, C13, C14</p>
+</details></body></html>

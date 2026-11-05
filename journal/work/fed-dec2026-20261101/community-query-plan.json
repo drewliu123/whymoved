@@ -1,0 +1,21 @@
+{
+  "intent": "prediction",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "market",
+  "subqueries": [
+    {
+      "label": "primary",
+      "search_query": "Federal Reserve interest rates inflation employment",
+      "ranking_query": "As of November 1 2026, what verifiable counterexamples distinguish H1 inflation forcing a December 2026 FOMC hike from H2 disinflation or weak employment supporting hold or cuts? Prioritize original data criticism, dated evidence and December-specific pricing; exclude other years and distinguish rate-change count from basis points.",
+      "sources": [
+        "reddit",
+        "x",
+        "youtube",
+        "hackernews",
+        "polymarket",
+        "github"
+      ],
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "qid": "Q018",
+  "as_of": "2026-08-24",
+  "kept": [
+    {
+      "excerpt": "Nominations for the 78th Emmy Awards were announced from the Wolf Theatre in the Saban Media Center. Hacks set the record for most nominations in a single year in the comedy category with 24, surpassing the previous record of 23 shared by The Studio and The Bear.",
+      "published_at": "2026-07-08",
+      "publisher": "Television Academy",
+      "relevance": "Provides official evidence of broad Academy support for Hacks in the relevant awards cycle.",
+      "url": "https://www.televisionacademy.com/features/news/awards-news/260708-nominations"
+    },
+    {
+      "excerpt": "The Outstanding Guest Actress in a Comedy Series nominees are Leslie Bibb, Cherry Jones, Laurie Metcalf, Kaitlin Olson and Lauren Weedman for Hacks; Jamie Lee Curtis for The Bear; and Betty Gilpin for Widow's Bay.",
+      "published_at": "2026-07-08",
+      "publisher": "TheWrap",
+      "relevance": "Confirms Olson's nomination and the complete seven-person field, including four competitors from her own series.",
+      "url": "https://www.thewrap.com/industry-news/awards/emmy-nominations-2026-nominees-list/"
+    },
+    {
+      "excerpt": "Kaitlin Olson received her third Outstanding Guest Actress in a Comedy Series nomination for playing DJ Vance in Hacks. This was her fourth Emmy nomination overall, and she had yet to secure a win.",
+      "published_at": "2026-07-09",
+      "publisher": "CinemaBlend",
+      "relevance": "Documents Olson's prior recognition for the role and her career Emmy record as known before the cutoff.",
+      "url": "https://www.cinemablend.com/television/kaitlin-olsons-high-potential-and-always-sunny-co-stars-share-the-love-after-big-emmy-nomination"
+    },
+    {
+      "excerpt": "Hacks received 24 nominations for its final season, including Outstanding Comedy Series. Newcomer Widow's Bay received 19 nominations, including Outstanding Comedy Series and multiple acting nominations.",
+      "published_at": "2026-07-08",
+      "publisher": "TV Guide",
+      "relevance": "Shows substantial Academy support for both Olson's series and the series of competitor Betty Gilpin.",
+      "url": "https://www.tvguide.com/news/2026-emmy-nominations/"
+    },
+    {
+      "excerpt": "The August 19 category preview identifies Kaitlin Olson's Hacks episode as “D’Amazing Race.”",
+      "published_at": "2026-08-19",
+      "publisher": "Critical Report",
+      "relevance": "Identifies Olson's submitted performance in a category-specific preview close to the evidence cutoff.",
+      "url": "https://criticalreport.substack.com/p/2026-emmy-predictions-guest-comedy-actress"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.televisionacademy.com/calendar",
+      "reason": "The excerpt explicitly mentions dates after the 2026-08-24 cutoff: the August 26 final-voting deadline, September 5–6 awards presentations, and September 14 telecast. Removed under the instruction to exclude any excerpt or relevance mentioning anything after the cutoff."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-08-24 inclusive. Dates and factual excerpts were verified from source text exposed in web_search results; the official calendar uses its explicit July 24 update date. web_fetch failed because multiple providers were registered, and the requested agent-reach web read fallback returned temporary upstream failures, so full-page verification was unavailable. Undated profiles, later publications, pages containing later awards developments, prediction-market/betting material, and odds or prices were excluded. Critical Report is an independent commentary source; its item is limited to the episode identification supported by the indexed text. No forecast or 2026 award outcome is included."
+}

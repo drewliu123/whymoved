@@ -1,0 +1,64 @@
+{
+  "qid": "Q152",
+  "as_of": "2026-09-17",
+  "kept": [
+    {
+      "excerpt": "Talks between Russia, Ukraine and the US aimed at ending Moscow's war in Ukraine have concluded without a breakthrough. The trilateral meetings, held in Geneva, went on late on Tuesday but only lasted two hours on Wednesday.",
+      "published_at": "2026-02-18",
+      "publisher": "BBC News",
+      "relevance": "Documents an earlier in-person trilateral peace meeting, relevant to the meeting threshold and to the absence of an explicit starting date in the supplied resolution text.",
+      "url": "https://www.youtube.com/watch?v=L4FHDdhCk7A"
+    },
+    {
+      "excerpt": "Russian President Vladimir Putin held more than three hours of “highly useful” talks on Saturday with two U.S. envoys seeking a deal to end the Ukraine war, a Kremlin aide said.",
+      "published_at": "2026-09-05",
+      "publisher": "Reuters via WSAU",
+      "relevance": "Establishes the Russian leg of in-person shuttle diplomacy, potentially relevant to the rule allowing authorized indirect meetings.",
+      "url": "https://wsau.com/2026/09/05/putins-envoy-dmitriev-to-meet-witkoff-kushner-upon-their-arrival-in-moscow-sources-say/"
+    },
+    {
+      "excerpt": "Today, following the American team’s talks with the head of Russia, all possibilities for restarting negotiations were discussed in Kyiv. According to the President, the territorial issue remains a relevant one. The Head of State emphasized that such complex issues can only be resolved at the level of leaders.",
+      "published_at": "2026-09-07",
+      "publisher": "Office of the President of Ukraine",
+      "relevance": "Provides official evidence that the subsequent Kyiv meeting addressed substantive peace issues, supporting examination of whether the shuttle meetings satisfy the indirect in-person provision.",
+      "url": "https://www.president.gov.ua/en/news/vidnovlennya-peregovornogo-procesu-ye-vazhlivim-i-ukrayina-v-106273"
+    },
+    {
+      "excerpt": "No such talks between Russia and Ukraine have taken place since February, but President Donald Trump sent his negotiators to Moscow and then Kyiv at the weekend in a bid to relaunch the stalled process.",
+      "published_at": "2026-09-09",
+      "publisher": "Reuters via Internazionale",
+      "relevance": "Distinguishes the stalled Russia-Ukraine negotiating format from the recent mediator visits and establishes the contemporaneous status of formal talks.",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/09/09/russia-says-it-hopes-us-mediated-talks-with-ukraine-will-resume-soon"
+    },
+    {
+      "excerpt": "President Volodymyr Zelenskiy said on Monday that Kyiv was ready to support a U.S. proposal for a Russia-Ukraine ceasefire on energy sites only if Washington could ensure Moscow was genuinely ready to end its war on Ukraine.",
+      "published_at": "2026-09-14",
+      "publisher": "Reuters via AOL",
+      "relevance": "Identifies a concrete substantive de-escalation proposal and Ukraine's condition for accepting it, without establishing that an in-person meeting occurred.",
+      "url": "https://www.aol.com/articles/ukraine-wants-specifics-partners-halting-174643000.html"
+    },
+    {
+      "excerpt": "Russia is ready to resume negotiations with Ukraine and has “something to say” at the talks, Foreign Minister Sergey Lavrov said on Tuesday. Speaking at a roundtable with members of the foreign diplomatic corps in Moscow, Lavrov said Moscow remains prepared to seek “reasonable compromises” while keeping its core security demands unchanged.",
+      "published_at": "2026-09-15",
+      "publisher": "Anadolu Agency",
+      "relevance": "Records Russia's stated willingness to resume negotiations close to the cutoff while showing that its substantive conditions remained unchanged.",
+      "url": "https://www.aa.com.tr/en/russia-ukraine-war/lavrov-says-russia-is-ready-to-resume-ukraine-talks-has-something-to-say-in-negotiations/4057846"
+    },
+    {
+      "excerpt": "Peskov said Russia would stay in touch with the Americans about Trump's proposal. U.S. President Donald Trump said on Monday that Ukraine and Russia had agreed not to hit each other's energy targets, though neither side has confirmed such an agreement.",
+      "published_at": "2026-09-15",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "Shows continued mediator contact and the lack of bilateral confirmation of the proposed energy ceasefire, preventing a public announcement from being mistaken for proof of a qualifying meeting.",
+      "url": "https://www.marketscreener.com/news/kremlin-welcomes-trump-s-idea-of-energy-truce-with-ukraine-calls-for-sanctions-removal-ce785bddda8ef324"
+    },
+    {
+      "excerpt": "The Kremlin said on Thursday that further U.S. sanctions against Russia would make it harder to reach a peace deal in Ukraine.",
+      "published_at": "2026-09-17",
+      "publisher": "Reuters via AOL",
+      "relevance": "Provides cutoff-day evidence of an additional diplomatic obstacle affecting the environment for resumed negotiations.",
+      "url": "https://www.aol.com/articles/russia-says-us-sanctions-signed-095241000.html"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-17, inclusive. Eight items retained with explicit publication or update dates no later than the cutoff; later-dated reporting, undated material, prediction-market pages, odds, and outcome information were excluded. Excerpts reproduce factual sentences visible in web_search source text. Direct web_fetch failed because multiple providers were registered; the requested agent-reach web-read fallback returned RATE_LIMITED and was not retried. Consequently, verification relied on dated search-returned text rather than successful direct page reads. The September 14 and September 17 AOL items display same-day update dates and same-day Reuters datelines. No conclusion about market resolution is supplied: the provided rules are truncated after the in-person requirement and specify no opening date, making both the earlier Geneva meeting and the September shuttle diplomacy material for interpreting the qualifying period and indirect-meeting provision."
+}

@@ -1,0 +1,34 @@
+{
+  "corrected_at": "2026-10-31T12:36:58.403225+00:00",
+  "memo_id": "M20261031-01",
+  "reason": "Coordinator identified double-rounding error and financial input precision overstatement",
+  "month_return_exact_from_displayed_closes": "-10.39495577546194938260793414484630878361",
+  "month_return_rounded": "-10.39",
+  "data_center_share_arithmetic": "92.51559251559251559251559251559251559252",
+  "data_center_share_display": "approximately92.5%",
+  "guidance_growth_arithmetic": "12.26611226611226611226611226611226611230",
+  "guidance_growth_display": "approximately12.3%",
+  "H2": "threshold>90% unchanged; added precision/basis note",
+  "journal_registration_count": 1,
+  "new_registration": false,
+  "archive_byte_identity": {
+    "memo.md": true,
+    "memo.json": true,
+    "claims.json": true,
+    "plan.json": true
+  },
+  "check_claims": {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-B",
+      "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.1.1/scripts/check_claims.py",
+      "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/claims.json",
+      "--json"
+    ],
+    "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1",
+    "exit_code": 0,
+    "stdout": "logs/check_claims-correction.stdout.txt",
+    "stderr": "logs/check_claims-correction.stderr.txt"
+  },
+  "raw_extraction_policy": "Original tool extracts and independent red-team record retain original text as historical evidence; correction applies to final artifacts."
+}

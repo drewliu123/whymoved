@@ -1,0 +1,49 @@
+{
+  "qid": "Q012",
+  "as_of": "2026-07-15",
+  "kept": [
+    {
+      "excerpt": "Both total nonfarm payroll employment (+57,000) and the unemployment rate (4.2 percent) changed little in June, the U.S. Bureau of Labor Statistics reported today. Employment continued to trend up in professional and business services, social assistance, and health care. Leisure and hospitality lost jobs.",
+      "published_at": "2026-07-02",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "The June employment release supplies the latest monthly labor-market evidence available by the cutoff for evaluating the employment side of the July policy decision.",
+      "url": "https://www.bls.gov/news.release/archives/empsit_07022026.htm"
+    },
+    {
+      "excerpt": "July 14 (Reuters) - Top Federal Reserve officials on Tuesday welcomed fresh data showing consumer price inflation cooled last month, but said they would need more such readings to feel confident that price pressures are truly easing. The remarks, from Fed Chairman Kevin Warsh and Chicago Fed President Austan Goolsbee, suggest the case for a near-term interest rate hike may have weakened but is by no means dead. Neither policymaker, however, directly addressed the implications of the benign Consumer Price Index report for a possible rate hike.",
+      "published_at": "2026-07-14",
+      "publisher": "Reuters, via Investing.com",
+      "relevance": "This contemporaneous policy reaction shows how officials interpreted the latest inflation release without committing to a July rate decision.",
+      "url": "https://www.investing.com/news/economy-news/top-fed-officials-embrace-cooler-inflation-reading-clamor-for-more-4791824"
+    },
+    {
+      "excerpt": "Compared with a year ago, inflation dropped to 3.5% from 4.2% in May. Core inflation rose just 2.6% in June from a year earlier, down from 2.9% in May, a positive sign that higher gas costs haven't yet lifted broader prices. Warsh, asked about the price figures, said they represented just one month of data and suggested he does not see inflation as defeated.",
+      "published_at": "2026-07-14",
+      "publisher": "Associated Press",
+      "relevance": "The latest CPI figures and the chair's caution provide evidence about whether inflation justified changing the policy rate at the remaining July meeting.",
+      "url": "https://apnews.com/article/4a1da547d64ae3d54fba29161b213601"
+    },
+    {
+      "excerpt": "The Labor Department on Wednesday morning released a favorable Producer Price Index reading, showing the overall index fell 0.3% in June, while a core index excluding food, energy and trade services was up a modest 0.1%. While Warsh welcomed the favorable June inflation data, he tamped down any suggestion it offers an all-clear on the price stability front.",
+      "published_at": "2026-07-15",
+      "publisher": "Axios",
+      "relevance": "The cutoff-day PPI report adds the freshest available inflation evidence and records the chair's continued caution before the July 28–29 meeting.",
+      "url": "https://www.axios.com/2026/07/15/warsh-inflation-ppi-rates"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+      "reason": "Reveals the April decision outcome, a component of the question's Apr–Jun–Jul decision sequence; excluded under the explicit results/outcome rule despite publication before the cutoff."
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "reason": "Reveals the June decision outcome, a component of the question's Apr–Jun–Jul decision sequence; excluded under the explicit results/outcome rule despite publication before the cutoff."
+    },
+    {
+      "url": "https://www.fidelity.com/news/article/us-economy/202607081405RTRSNEWSCOMBINED_KBN3T429X-OUSBS_1",
+      "reason": "Explicitly states that officials agreed to hold rates steady at the June meeting, revealing a component decision outcome; excluded under the results/outcome rule despite publication before the cutoff."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-07-15, inclusive. All selected items display publication dates on or before the cutoff; excerpts contain only information available by that date. April and June decisions were already public by the experiment date and are included as contemporaneous evidence; no July decision outcome or subsequent development is included. Prediction-market pages, betting pages, odds, and market prices are excluded from the evidence. Web searches returned dated source passages, but full-page retrieval could not be completed: web_fetch failed with a provider-configuration error, and the requested agent-reach fallback reported unavailable upstream readers. The pack therefore relies on source text and explicit dates exposed in search results, with this verification limitation disclosed."
+}

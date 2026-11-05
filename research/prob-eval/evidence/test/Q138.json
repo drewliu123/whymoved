@@ -1,0 +1,57 @@
+{
+  "qid": "Q138",
+  "as_of": "2026-07-22",
+  "kept": [
+    {
+      "excerpt": "Team Trump criticized Perry Johnson for promoting a planned “Trump Tailgate” despite lacking the president’s endorsement. John James was the Trump-endorsed candidate in the Republican gubernatorial primary. Johnson responded that he loved and supported Trump while criticizing the advice behind the James endorsement.",
+      "published_at": "2026-07-22",
+      "publisher": "Michigan Advance / News From The States",
+      "relevance": "Reporting published on the cutoff date establishes the endorsement disadvantage facing Johnson and the public dispute over his efforts to associate himself with Trump.",
+      "url": "https://www.newsfromthestates.com/article/johnsons-trump-tailgate-spurs-backlash-trump-team-he-calls-james-endorsement-bad-advice"
+    },
+    {
+      "excerpt": "The Washington Reporter published internal polling from Mike Cox’s campaign conducted by co/efficient shortly before Cox withdrew. It showed John James at 36%, Perry Johnson at 23%, and Cox at 21%. The article reported that James’s ballot share and image were relatively unchanged despite more than $5 million in advertising directed against him since Trump’s endorsement.",
+      "published_at": "2026-07-20",
+      "publisher": "Washington Reporter",
+      "relevance": "This recent poll supplies a pre-withdrawal comparison of candidate support, with the important limitation that it was an opponent’s internal survey.",
+      "url": "https://washingtonreporter.news/exclusive-mike-cox-positioned-to-lead-in-michigan-politics-despite-dropping-out-of-gubernatorial-race-poll-shows/"
+    },
+    {
+      "excerpt": "Former Michigan Attorney General Mike Cox withdrew from the Republican gubernatorial race and endorsed John James, leaving James and Perry Johnson as the two active candidates. Cox said internal polls after Trump’s June 22 endorsement showed James out of reach in a three-way primary. Cox and Aric Nesbitt would remain on the already printed primary ballot despite ending their campaigns.",
+      "published_at": "2026-07-17",
+      "publisher": "Michigan Public",
+      "relevance": "The withdrawal changes the competitive field while the continued presence of withdrawn candidates on ballots complicates assumptions about vote consolidation.",
+      "url": "https://www.michiganpublic.org/politics-government/2026-07-17/mike-cox-exits-gop-governor-primary-race-endorses-congressman-john-james"
+    },
+    {
+      "excerpt": "John James, Perry Johnson, and Mike Cox participated in a televised gubernatorial debate in Grand Rapids on July 9 ahead of the August 4 Republican primary. Michigan Public reported that James had consistently led polling, aided partly by Trump’s endorsement. Johnson, who had largely financed his own campaign, presented that self-funding as a source of independence.",
+      "published_at": "2026-07-10",
+      "publisher": "Michigan Public / Michigan Public Radio Network",
+      "relevance": "The debate report documents contemporary assessments of the frontrunner and Johnson’s self-funded campaign positioning before the field narrowed.",
+      "url": "https://www.michiganpublic.org/2026-07-10/cox-johnson-go-after-gubernatorial-frontrunner-james-in-second-republican-debate"
+    },
+    {
+      "excerpt": "A Mitchell Research & Communications survey conducted June 11–13 for MIRS found John James at 28%, Mike Cox at 27%, Perry Johnson at 23%, and Aric Nesbitt at 4%, with 18% undecided. The survey covered 404 likely August Republican primary voters. The June 15 release described Johnson as within the poll’s margin of error of the leaders.",
+      "published_at": "2026-06-15",
+      "publisher": "Mitchell Research & Communications / MIRS",
+      "relevance": "This dated pollster release provides a baseline for Johnson’s competitiveness before Trump’s endorsement and subsequent candidate withdrawals.",
+      "url": "https://www.realclearpolitics.com/docs/2026/MIRS-MITCHELL_GOP_Gov_Press_Release_6-15-2026_1100AM.pdf"
+    },
+    {
+      "excerpt": "The official candidate list, updated May 29, 2026, lists Perry Johnson, John James, Mike Cox, and Aric Nesbitt as Republican candidates for governor. The gubernatorial contest is designated a four-year term with voters instructed to vote for no more than one candidate.",
+      "published_at": "2026-05-29",
+      "publisher": "Washtenaw County election administration",
+      "relevance": "The dated official listing establishes Johnson’s ballot presence and the Republican gubernatorial candidate field before later campaign withdrawals.",
+      "url": "https://content.civicplus.com/api/assets/mi-washtenawcounty/d0d9695f-a1d8-44d7-a105-a14f0b85b180?cache=1800"
+    },
+    {
+      "excerpt": "Perry Johnson announced another Michigan gubernatorial campaign ahead of the August 4 primary. His 2022 bid ended over insufficient valid petition signatures, and he also pursued the 2024 presidency. Johnson planned to spend $9 million personally within two months; incumbent Governor Gretchen Whitmer was term-limited.",
+      "published_at": "2026-01-26",
+      "publisher": "Associated Press",
+      "relevance": "The launch report establishes Johnson’s candidacy, prior electoral history, capacity for self-funding, and the scheduled primary in an open-seat contest.",
+      "url": "https://apnews.com/article/e3636ef745a352f81b080586477e6924"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: July 22, 2026, inclusive. Publication dates were checked against dated source text or, for the official candidate list, its explicit May 29 update date. Excerpts are factual paraphrases of source material returned by web_search. The July 20 co/efficient report concerns Cox campaign internal polling conducted before his withdrawal; the June 15 Mitchell poll also predates the subsequent endorsement and field changes. No prediction-market pages, betting prices, post-cutoff developments, or election results are included. Full-page verification was limited: web_fetch failed because multiple providers were registered, and the requested agent-reach web read fallback returned RATE_LIMITED, so further fallback requests were stopped. Search-returned source text supplied the retained evidence; recent polls without a verified eligible publication date were omitted."
+}

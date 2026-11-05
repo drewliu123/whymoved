@@ -1,0 +1,43 @@
+{
+  "completed_at": "2026-10-31T18:37:29.920123+00:00",
+  "elapsed_wall_seconds_from_retrieval_start": 362.415,
+  "engine_exit": 0,
+  "engine_reported_wall_seconds": 5.3,
+  "actual_engine_search_queries": 2,
+  "native_search_queries": 5,
+  "direct_algolia_search_queries": 2,
+  "logical_total_search_queries": 9,
+  "selected_sources": [
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18"
+  ],
+  "engine_relevant_selected": 0,
+  "supplementary_community_original_selected": 1,
+  "report_findings": 3,
+  "arithmetic_independent_check_passed": true,
+  "archive_run_id": "R20261031T183729Z-dab87cf50406",
+  "product_code_modified": false,
+  "scope_note": "Timing starts at runtime preparation immediately before resolver/engine; excludes earlier skill/code reading and 2 pre-engine WebSearch calls. 5.3s is engine own stderr duration. Search counts exclude non-search GETs and unobservable provider internals.",
+  "final_validation_commands_exit_zero": true,
+  "earlier_failed_attempts": [
+    {
+      "step": "select",
+      "exit_code": 1,
+      "stderr": "logs/select.stderr",
+      "stdout": "logs/select.stdout"
+    },
+    {
+      "step": "claims-validate",
+      "exit_code": 1,
+      "stderr": "logs/claims-validate.stderr",
+      "stdout": "logs/claims-validate.stdout"
+    }
+  ],
+  "earlier_failure_notes": [
+    "First local validation harness incorrectly retained -c as script argv[0], raising FileNotFoundError before product script ran; fixed local harness only. Original select.stderr was overwritten by second attempt before unique retry log naming; command and traceback retained in transcript and this note.",
+    "Initial claims validator rejected negative phrase 不能代表市场共识 due to literal 共识 matcher. C7 rewritten as one-person attribution without breadth language; report retains representativeness limitation."
+  ]
+}

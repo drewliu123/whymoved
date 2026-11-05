@@ -1,0 +1,36 @@
+[
+  {
+    "name": "check-claims-final",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.2.0/scripts/check_claims.py",
+      "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/claims.json",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "forecast-finalize",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.2.0/scripts/forecast.py",
+      "finalize",
+      "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/forecast.json",
+      "--claims",
+      "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/claims.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "forecast-check",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.2.0/scripts/forecast.py",
+      "check",
+      "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/forecast.json",
+      "--claims",
+      "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/claims.json"
+    ],
+    "exit_code": 0
+  }
+]

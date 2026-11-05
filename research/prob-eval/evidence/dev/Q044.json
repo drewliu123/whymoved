@@ -1,0 +1,38 @@
+{
+  "qid": "Q044",
+  "as_of": "2026-08-18",
+  "kept": [
+    {
+      "excerpt": "President Donald Trump said on August 18 that talks between the United States and Iran were neither taking place nor scheduled. Iran's top negotiator said reopening the Strait of Hormuz required the United States to lift its blockade of Iranian ports, lift oil sanctions, release frozen assets, and end threats and military operations on all fronts. The June memorandum's 60-day negotiating period had elapsed on Monday, and Trump said he had no plans to extend it.",
+      "published_at": "2026-08-18",
+      "publisher": "Reuters via Investing.com",
+      "relevance": "Provides cutoff-day diplomatic status and identifies oil-sanctions relief as an unresolved condition for reopening Hormuz.",
+      "url": "https://ca.investing.com/news/world-news/trump-says-no-talks-planned-with-iran-tehran-says-strait-of-hormuz-still-shut-4806380"
+    },
+    {
+      "excerpt": "OFAC designated Titan Exchange for materially assisting Shahr Bank and Alps International for operating in Iran's financial sector. Treasury described Shahr Bank and its associated companies as helping Iran retrieve overseas oil-sale revenues for petroleum exporters including the National Iranian Oil Company and Naftiran Intertrade Co. Treasury said it remained committed to maximum pressure and targeting Iran's ability to generate, move, and repatriate funds.",
+      "published_at": "2026-08-07",
+      "publisher": "U.S. Department of the Treasury",
+      "relevance": "Documents a recent official enforcement action against oil-revenue channels and Treasury's stated policy direction as of the cutoff.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0596"
+    },
+    {
+      "excerpt": "Effective July 7, 2026, General License X was revoked and superseded in its entirety by General License X1. X1 authorized transactions ordinarily incident and necessary to winding down previously authorized transactions through 12:01 a.m. eastern daylight time on July 17, with payments to blocked persons required to enter blocked, interest-bearing U.S. accounts. Except for necessary wind-down activity, it did not authorize new transactions, including purchases or loading of Iranian-origin products on or after July 7.",
+      "published_at": "2026-07-07",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+      "relevance": "Establishes the operative revocation and wind-down limits against which a subsequent qualifying relief mechanism would need to be assessed.",
+      "url": "https://ofac.treasury.gov/media/936446/download?inline"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.investing.com/news/economic-indicators/bessent-says-us-to-apply-measures-never-seen-on-iran-4859554",
+      "reason": "The excerpt references announcements expected the following week after August 13, a period extending beyond the August 18 cutoff; the relevance also explicitly references relief before August 31. Removed under the rule excluding mentions or implications of anything after the cutoff."
+    },
+    {
+      "url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/41d1f7e",
+      "reason": "The excerpt explicitly mentions authorization through August 21, 2026, after the August 18 cutoff. Removed under the rule excluding mentions of anything after the cutoff, even when announced before it."
+    }
+  ],
+  "search_notes": "Frozen evidence pack for Q044 with a publication cutoff of 2026-08-18. Dates were verified from displayed article or release dates, the timestamped Treasury bulletin, and the July 7 OFAC announcement linking General License X1. The August 18 Reuters article displays an August 18 update date. Standard web_fetch failed because multiple providers were registered; source text was checked using the agent-reach skill's read-only web channel. Later publications, retrospective accounts, undated reference pages, prediction-market pages, betting odds, and live sidebar data were excluded. Excerpts are factual source summaries; no market outcome or post-cutoff development is included."
+}

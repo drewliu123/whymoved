@@ -1,0 +1,29 @@
+{
+  "repo": "https://github.com/virattt/dexter",
+  "commit": "534f6be455523c5926eba72bdaf4f914555be5c9",
+  "commit_url": "https://github.com/virattt/dexter/commit/534f6be455523c5926eba72bdaf4f914555be5c9",
+  "sources": [
+    {
+      "path": "src/tools/finance/api.ts",
+      "url": "https://raw.githubusercontent.com/virattt/dexter/534f6be455523c5926eba72bdaf4f914555be5c9/src/tools/finance/api.ts",
+      "local_file": "src--tools--finance--api.ts",
+      "sha256": "b6dd3f8974a340d95ca409b7bca38f1ad64570ef0e96f8f79ca5643357144976"
+    },
+    {
+      "path": "src/tools/finance/fundamentals.ts",
+      "url": "https://raw.githubusercontent.com/virattt/dexter/534f6be455523c5926eba72bdaf4f914555be5c9/src/tools/finance/fundamentals.ts",
+      "local_file": "src--tools--finance--fundamentals.ts",
+      "sha256": "6504ada062c5975ae0947ea24d7c19e7e19b17caafd9ae1fa584581b29464039"
+    },
+    {
+      "path": "src/tools/finance/stock-price.ts",
+      "url": "https://raw.githubusercontent.com/virattt/dexter/534f6be455523c5926eba72bdaf4f914555be5c9/src/tools/finance/stock-price.ts",
+      "local_file": "src--tools--finance--stock-price.ts",
+      "sha256": "c5a6501d0c633f1671c67e1b0fcc17b8e9e5c76ca9ace7c8b3baea2561cac756"
+    }
+  ],
+  "implementation": "Independent Python stdlib adapter using public endpoint contracts; upstream code not executed.",
+  "license_note": "README declares MIT; fetching root LICENSE at this revision returned 404. No upstream runtime code imported.",
+  "live_validation": "Unauthenticated AAPL income and snapshot requests returned HTTP 402. Authenticated success not tested.",
+  "offline_validation": "162 unittest tests passed, including 11 adapter tests."
+}

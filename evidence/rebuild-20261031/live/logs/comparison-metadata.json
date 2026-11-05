@@ -1,0 +1,25 @@
+{
+  "method": "Same agent nonblind replay, identical frozen sources/claims; no additional retrieval, not an old plugin complete run and not a model evaluation",
+  "budget": "Both approximately 600 Chinese characters, measured with U+4E00-U+9FFF count; citation IDs, Latin text, digits, punctuation excluded",
+  "old_chinese_characters": 582,
+  "new_chinese_characters": 549,
+  "frozen_hashes": {
+    "claims.json": "857d1c7fc077f9f7c090edc37a8ee7d0e35791adf7feb56f646d90d70d9f69c0",
+    "sources.json": "afa281855c84ac9282e807dc1113ab5d37dc1e5f6a3bf3335061faa8edf850f7",
+    "report.json": "f0c51665d8bc6aff517c97420fcdca1d8f8966ba6b5faf2e722ba49fd4a3d841"
+  },
+  "verified_selected_sources": 5,
+  "claims": 7,
+  "fact_claims": 3,
+  "view_claims": 2,
+  "inference_claims": 2,
+  "arithmetic_checks": 4,
+  "both_present": {
+    "cash_vs_investment_definition": true,
+    "unreconciled_residual": true,
+    "annual_cash_lease_principal_example": true,
+    "community_attribution_limit": true
+  },
+  "quality_score": null,
+  "quality_inference": "Presentation inspection only; no superiority, alpha, model accuracy, time-saving or scoring claim."
+}

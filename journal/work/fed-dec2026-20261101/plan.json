@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "question": "2026年12月美联储是否加息、加几次？",
+  "type": "event_pricing",
+  "task": "政策事件研究",
+  "entity": "Federal Reserve FOMC",
+  "as_of": "2026-11-02T03:49:02.266110+00:00",
+  "historical": false,
+  "decision_needed": "区分12月加息、维持与降息，解释会议次数与基点幅度的区别。",
+  "prior_judgment": "首次研究，不预设加息或降息方向。",
+  "comparison": {
+    "period": "2026年10月会议至12月8—9日会议",
+    "unit": "联邦基金目标区间及基点",
+    "scope": "FOMC政策利率"
+  },
+  "budget": {
+    "max_queries": 12,
+    "max_followups": 2
+  },
+  "stop_condition": "核对最近决定、条件驱动及12月定价；无法获得则明确缺口。",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "event_forecast",
+    "method": "reference_class_scenarios",
+    "rationale": "以10月政策为基准，结合近3个月通胀就业、2026年政策方向和12月隐含预期；制度性日历确定正常决策次数，新增通胀就业决定方向。",
+    "baseline": "2026年10月FOMC决定与12月官方日历。",
+    "price_relevance": true,
+    "mechanism_chain": [
+      "通胀与就业变化",
+      "FOMC政策权衡",
+      "12月目标利率"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "10月声明、近期通胀就业及官员表态是否支持重新收紧",
+        "source": "Fed、BLS、BEA",
+        "by": "2026年12月9日",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "通胀持续偏高且就业稳定，政策措辞保留或加强收紧倾向"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "通胀回落或就业明显转弱，政策措辞支持维持或宽松"
+          }
+        ]
+      },
+      {
+        "id": "T2",
+        "observe": "12月利率期货隐含分布",
+        "source": "CME FedWatch及可核验的同期报道",
+        "by": "研究截点",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "12月高于10月区间的隐含权重占优"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "12月维持或低于10月区间的隐含权重占优"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "通胀压力促使12月重新加息",
+      "discriminating_observation": "通胀持续偏高、就业稳定且收紧信号增强"
+    },
+    {
+      "id": "H2",
+      "explanation": "通胀缓和或就业走弱促使12月维持或降息",
+      "discriminating_observation": "通胀回落、就业转弱且政策支持维持或宽松"
+    }
+  ],
+  "queries": [
+    {
+      "question": "最近FOMC决定与12月会议日历是什么？",
+      "query": "Federal Reserve October 28 2026 statement December 8 9 calendar",
+      "source": "Fed",
+      "purpose": "基准与事件定义",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "question": "截至11月1日可得的近期通胀与就业是否支持加息？",
+      "query": "September 2026 CPI PCE unemployment October 2026 Federal Reserve",
+      "source": "BLS BEA Fed Reuters AP",
+      "purpose": "区分政策驱动",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "question": "10月28日至11月1日对12月9日目标利率的隐含预期是什么？",
+      "query": "October 2026 December Fed hike FedWatch probability",
+      "source": "CME及同期媒体",
+      "purpose": "核验指定会议的隐含定价，缺时刻则不登记为实时价格",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "question": "最近30天社区对12月加息的反例有哪些？",
+      "query": "Fed December 2026 hike inflation hold",
+      "source": "Last30Days",
+      "purpose": "反例与待核查线索",
+      "test_ids": [
+        "T1",
+        "T2"
+      ]
+    }
+  ]
+}

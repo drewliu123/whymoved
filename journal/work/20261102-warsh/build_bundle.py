@@ -1,0 +1,53 @@
+# -*- coding: utf-8 -*-
+import json
+from pathlib import Path
+W=Path('/Users/frankzhang/Desktop/投研助手/journal/work/20261102-warsh')
+AS='2026-11-02T05:50:00Z'
+def save(n,v): (W/n).write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
+p=json.loads((W/'plan.json').read_text()); p['as_of']=AS; save('plan.json',p)
+s=[]
+def source(id,url,publisher,tier,date,quote,locator,notes,supports=None):
+ s.append(dict(id=id,url=url,canonical_url=url,publisher=publisher,tier=tier,published_at=date,retrieved_at='2026-11-02T05:45:45Z',quote=quote,locator=locator,notes=notes,origin_id=id,origin_basis='原始机构文件或具名原创报道',supports=supports or ['fact','view'],evidence_kind='document',access_status='ok',selection=dict(selected=True,reason='直接核对人物履历、政策承诺或行动',relevance='direct',purpose='人物及政策研究',priority='decisive')))
+source('S1','https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm','Federal Reserve','T0','2026-06-17','He was previously a member of the Board of Governors from 2006 to 2011.','Biography / career paragraphs','2026-05-22任主席；主席任期至2030-05-21，理事任期至2040-01-31。1992 Stanford AB，1995 Harvard JD，1995-2002 Morgan Stanley，2002-2006白宫，2011后Hoover/Stanford/Duquesne。')
+source('S2','https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm','Federal Reserve','T0','2026-09-16','Inflation remains elevated.','FOMC statement / policy decision and vote','一致12:0加息25bp至3.75%-4%；保持充裕准备金。')
+source('S3','https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm','Federal Reserve','T0','2026-10-28','3-3/4 to 4 percent','FOMC statement / target range and dissent','维持3.75%-4%；10:2，Cook及Hammack要求加息25bp；通胀仍偏高，就业增长与劳动力增长相当。')
+source('S4','https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm','Federal Reserve','T0','2026-10-07','Federal Open Market Committee','September 15–16 minutes / implementation and outlook','目标利率上调；财政部证券本金全额续作，机构证券本金再投资短期国债；维持充裕准备金框架。多数参与者当时预期年底前再加息，但取决于数据。')
+source('S5','https://www.investing.com/news/economy-news/warsh-says-politics-played-no-role-in-feds-rate-decision-by-group-he-is-honored-to-lead-4981000','Reuters via Investing.com','T2','2026-10-28','Politics played no role in the decision','Reuters article / Warsh press conference comments','沃什称选举政治没有影响决策；报道特朗普要求大幅降息。单篇报道的独立性表态作为本人观点，非动机证据。',['view'])
+source('S6','https://www.federalreserve.gov/monetarypolicy/fomc.htm','Federal Reserve','T0','unknown','the Federal Open Market Committee is responsible for open market operations.','FOMC structure / voting membership','12投票席位：7理事、纽约联储、4轮值地区联储行长。')
+source('S7','https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm','Federal Reserve','T0','2026-05-22','May 22, 2026','Oath announcement / opening paragraphs','2026-05-22宣誓；理事提名5月12日获确认，主席提名5月13日获确认；主席任期至2030-05-21，理事至2040-01-31。')
+claims=[]
+def claim(id,text,type='fact',sources=(),basis=()):
+ c=dict(id=id,text=text,type=type,as_of=AS,sources=[{'source_id':x} for x in sources])
+ if basis:c['basis']=list(basis)
+ claims.append(c)
+claim('C1','沃什于2026年5月22日就任美联储主席；主席任期至2030年5月21日，理事任期至2040年1月31日。',sources=['S7'])
+claim('C2','沃什具有Stanford本科及Harvard法学背景，先后在Morgan Stanley、白宫和美联储工作；2006—2011任美联储理事，之后任Hoover访问研究员及Duquesne Family Office合伙人。',sources=['S1'])
+claim('C3','2026年9月16日FOMC一致加息25个基点，将目标区间调至3.75%—4.00%。',sources=['S2'])
+claim('C4','2026年10月28日FOMC以10比2维持3.75%—4.00%；Cook与Hammack希望加息25基点；声明认为通胀仍偏高。',sources=['S3'])
+claim('C5','9月会议纪要记录继续充裕准备金框架、国债本金全额续作及机构证券本金再投资短期国债。',sources=['S4'])
+claim('C6','沃什10月28日称政治未影响决策；同篇Reuters报道特朗普要求大幅降息。','view',['S5'])
+claim('C7','FOMC有12个投票席位，包括7理事、纽约联储行长及4名轮值地区联储行长。',sources=['S6'])
+claim('C8','近期实际决策更符合受通胀约束的政策选择；无条件服从降息诉求的解释受到9月加息和10月维持利率的反证，但两次决策不能证明长期独立性。','inference',basis=['C3','C4','C6','C7'])
+claim('C9','主席拥有议程和沟通影响力，但利率属于集体决策；不能把每次FOMC行动归为主席单人的偏好。','inference',basis=['C7','C3','C4'])
+claim('C10','若未来短期政策利率下降，同时债券供给或期限风险补偿上升，长期收益率可能不降；短期利率、资产负债表和长期融资成本需要分别核查。','inference',basis=['C5','C7'])
+claim('C11','在通胀受控且增长稳定的降息情景，融资与折现压力缓和有利于股票和加密资产；若因通胀持续而维持高利率，则实际利率和美元融资压力可能压制这些资产。美元还取决于相对其他经济体的政策及风险偏好。以上是条件机制，未核对当前资产定价。','inference',basis=['C3','C4','C10'])
+claim('C12','对BTC/ETH，未来政策利率、实际利率、美元融资及准备金条件的组合比主席标签更有解释力；降息本身不代表扩表或风险资产必涨。','inference',basis=['C5','C10','C11'])
+report=dict(schema_version=2,title='沃什：用实际政策校准人物标签',question=p['question'],type='actor',task=p['task'],as_of=AS,answer=dict(text='截至2026年11月2日，沃什已任美联储主席。近期最有分量的证据是9月一致加息、10月维持利率；当前应将他理解为受通胀与FOMC集体决策约束的主席，不能由白宫的降息诉求直接推导宽松政策。',claim_ids=['C1','C3','C4','C8']),findings=[],alternatives=[dict(title='政治影响仍须持续检验',text='近期行动削弱了无条件降息的解释，但并未消除白宫施压的可能。应在未来通胀反弹时核对实际投票和政策理由。',claim_ids=['C6','C8','C9'])],watch=[dict(signal='后续FOMC声明中的通胀判断、目标区间和异议票',meaning='区分数据约束与无条件宽松；不把不加息误写为开始降息。',claim_ids=['C3','C4','C8']),dict(signal='资产负债表具体实施细则及准备金条件',meaning='区分制度改革、资产组合调整和真正的净扩张，检验是否改善美元融资。',claim_ids=['C5','C10','C12'])],limitations=[dict(text='本轮未获取同一截点的国债、美元、股票和加密资产报价及隐含政策路径；资产部分只分析传导条件，不判断当前价格是否充分反映政策。',material=True,claim_ids=['C11','C12'])],tables=[])
+def finding(title,text,ids,why,kind='connection',baseline='公开政策表述与实际行动分别阅读'):
+ report['findings'].append(dict(title=title,text=text,claim_ids=ids,why_it_matters=why,increment=dict(kind=kind,baseline=baseline,detail=why)))
+finding('履历更接近市场与政策实务','沃什具有法学、投行、白宫、美联储和投资机构经历。这些经历为理解其关注金融市场的框架提供背景，不能代替对现行政策的核查。',['C2'],'理解人物背景，但不由履历推导利率方向。')
+finding('9月加息，比鸽鹰标签更有分量','9月16日FOMC一致加息25基点至3.75%—4.00%；10月28日以10比2维持，反对者要求进一步加息。两次决策支持当前政策仍受通胀约束。',['C3','C4','C8'],'暂停加息并不等于进入降息周期。','contradiction','白宫要求降息及对沃什的宽松期待')
+finding('区分利率、资产负债表与长期融资成本','9月纪要仍维持充裕准备金、国债本金全额续作及机构证券本金再投资短期国债。由此不能推导已启动持续净缩表。未来即使降息，长期债券的期限风险补偿也可能上升，使长期收益率维持高位。',['C5','C10'],'不能将较低短期利率直接等同于所有资产的融资成本下降。')
+finding('独立性应以条件和行动持续检验','沃什称政治没有影响10月决定。9月加息、10月维持利率提供行为证据；FOMC共有12个投票席位，因此这些首先是集体决策，并非主席个人独立性的终局证明。',['C6','C7','C8','C9'],'同时避免把公开表态当作动机事实，或把主席当作利率唯一决定者。')
+finding('资产影响取决于政策组合','通胀受控且增长稳定时的降息可缓和股票和加密资产的融资与折现压力；通胀迫使政策继续收紧时则相反。美元受相对利率及避险需求共同影响。对BTC/ETH，应同时观察实际利率、美元融资及准备金条件。',['C10','C11','C12'],'给出可检验的传导机制；没有同截点报价，不能声称市场已经或尚未定价。')
+report['analysis']=dict(version=1,**{k:p['research_design'][k] for k in ['question_kind','method','price_relevance','baseline','mechanism_chain']},baseline_claim_ids=['C3','C6'],hypotheses=[{k:h[k] for k in ['id','explanation']} for h in p['hypotheses']],tests=[],conclusion=report['answer']['text'],conclusion_claim_ids=['C8'],model_status='not_applicable',model_reason='人物承诺和行动核对，不作经营或估值模型。',models=[],market=dict(status='not_applicable',reason='资产部分仅分析条件传导，不评价当前价格反映了什么。',claim_ids=[],model_ids=[]))
+source('S8','https://plus.hoover.org/plus/research/inflation-choice-kevin-warsh-fixing-federal-reserve','Hoover Institution / Kevin Warsh','T0','2025-07-08',"They don't work perfectly together.",'访谈改革段；录制2025-05-28，发布2025-07-08','本人主张逐步缩小资产负债表，认为有助于较低利率，但承认工具不完美配合；认为技术和政策改善有望提升生产率，并非必然；建议划清财政与货币职责。',['view'])
+source('S9','https://www.federalreserve.gov/newsevents/pressreleases/monetary20101103a.htm','Federal Reserve','T0','2010-11-03','Kevin M. Warsh','赞成票名单及资产购买段','沃什支持QE2：新增购买长期国债6000亿美元，至2011年第二季度；当时声明认为通胀偏低。')
+claim('C13','2025年Hoover本人访谈中，沃什倡导逐步缩小资产负债表，认为可能有助于较低利率，也承认两种工具并不完美配合；他对技术带来生产率提升持乐观但非必然的看法，并建议划清财政部与美联储职责。','view',['S8'])
+claim('C14','2010年11月3日，沃什投票支持QE2；该次FOMC决定额外购买6000亿美元长期国债，当时声明认为通胀偏低。',sources=['S9'])
+claim('C15','将沃什归为一贯反对QE不准确：历史上他支持QE2，2025年回顾主张区分危机救助与长期非常措施。他的缩表与降息构想应按条件评估，不能当作已经实施或必然降低长期利率。','inference',basis=['C13','C14','C5','C10'])
+finding('他的改革主张有条件，历史也有反例','2025年访谈把逐步缩小资产负债表与可能降低利率相联系，同时承认两种工具并不完美配合；其生产率乐观也有非必然性限定。2010年他实际投票支持6000亿美元QE2，不能贴上一贯反对QE的标签。',['C13','C14','C15'],'把本人主张、危机时行为与当前实施状态分开，避免将构想写成既成事实。','contradiction','一贯反QE或上任即无条件宽松的人物标签')
+save('sources-before-selection.json',dict(schema_version=2,as_of=AS,historical=False,candidates=s,source_status=dict(official=dict(status='ok'),media=dict(status='partial',reason='Reuters可获取；AP正文不可获取；Axios 403。'),community=dict(status='not_run',reason='本轮侧重原始政策承诺与实际决策，不对社区情绪作判断。'))))
+save('sources.json',json.loads((W/'sources-before-selection.json').read_text()))
+save('claims.json',dict(schema_version=2,as_of=AS,claims=claims));save('report.json',report)
+save('audit.json',dict(queries=p['queries'],context_review='长期履历和上任前承诺；近期通胀约束与FOMC实际行动。没有同截点行情，不进行价格归因或预期差分析。',review=dict(status='pending'),execution=[],limitations=['TOUYAN_HOME环境变量未设置；使用默认目录。','AP无法获取；Axios 403；未将搜索摘要作为这些网页的正文。']))

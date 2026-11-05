@@ -1,0 +1,128 @@
+[
+  {
+    "file": "LICENSE",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/LICENSE",
+    "bytes": 11552,
+    "status": "ok",
+    "sha256": "bbcb4226500b503737713f0c9a9da17efce56fa6989b9f0538071dcb60826af5"
+  },
+  {
+    "file": "NOTICE",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/NOTICE",
+    "bytes": 1304,
+    "status": "ok",
+    "sha256": "d1da20e9e1e8a0f3189665c4f21cf35f0eba1a8a1432f95a734db0640e289346"
+  },
+  {
+    "file": "README.md",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/README.md",
+    "bytes": 24585,
+    "status": "ok",
+    "sha256": "a18b26396e0ca785364e0379dc9c40d2efa988d1b591d5199e357478f1f911eb"
+  },
+  {
+    "file": "finrobot_desktop/LICENSE",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/LICENSE",
+    "bytes": 10772,
+    "status": "ok",
+    "sha256": "2a35721c050a0d52a7fcf7e2c99f33304911ade34d9b83ce5d7c2b7ce9e9ce85"
+  },
+  {
+    "file": "finrobot_desktop/pyproject.toml",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/pyproject.toml",
+    "bytes": 3988,
+    "status": "ok",
+    "sha256": "b46f8e79c7d2f9eb8ac7f6f365d4407bc91bcf801aa70df0eef94c603838ed1a"
+  },
+  {
+    "file": "finrobot_desktop/finrobot/engine/compute/operators/dcf.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/finrobot/engine/compute/operators/dcf.py",
+    "bytes": 37825,
+    "status": "ok",
+    "sha256": "829bfb4b55ffc0ca8e977ef4228201fb81d45f9c46f42063d71aa54587ced3fb"
+  },
+  {
+    "file": "finrobot_desktop/finrobot/engine/compute/operators/monte_carlo.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/finrobot/engine/compute/operators/monte_carlo.py",
+    "bytes": 17300,
+    "status": "ok",
+    "sha256": "35f8957026d9cc7490e9b94bf8cfb7b20684d7fa8043b3dc0f766de691ea6fac"
+  },
+  {
+    "file": "finrobot_desktop/finrobot/engine/compute/operators/signal.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/finrobot/engine/compute/operators/signal.py",
+    "bytes": 8570,
+    "status": "ok",
+    "sha256": "8891db889deb69deb0841a514c2c2c52c305bdb8b4091e84e3c834437b87b199"
+  },
+  {
+    "file": "finrobot_desktop/finrobot/engine/compute/operators/audit/narrative_numeric_grounding.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/finrobot/engine/compute/operators/audit/narrative_numeric_grounding.py",
+    "bytes": 4491,
+    "status": "ok",
+    "sha256": "27bdcc934f1b0654dbec7339b2a9717ac9fee99e2aa6d66045da7ea807757551"
+  },
+  {
+    "file": "finrobot_desktop/finrobot/engine/models/financial.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/finrobot/engine/models/financial.py",
+    "bytes": 92238,
+    "status": "ok",
+    "sha256": "7439972433497cb54455591e401365647a6f5d3d0eddf8601d8f619c5e38bce9"
+  },
+  {
+    "file": "finrobot_autogen/finrobot/functional/quantitative.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_autogen/finrobot/functional/quantitative.py",
+    "bytes": 7357,
+    "status": "ok",
+    "sha256": "1682d309d12e974e522dd9da3038e4aa2985ee39b49f0206fe45e5382da66de2"
+  },
+  {
+    "file": "finrobot_autogen/finrobot/functional/analyzer.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_autogen/finrobot/functional/analyzer.py",
+    "bytes": 23358,
+    "status": "ok",
+    "sha256": "a7af9f74bca58c5105beb3a48b53622ae41cec4330e851d4702160833c5060d2"
+  },
+  {
+    "file": "finrobot_autogen/README.md",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_autogen/README.md",
+    "bytes": 8474,
+    "status": "ok",
+    "sha256": "2e3dab818ffc0e849f241c54206bcbfda2fc77bdb92038fa48c39fc900d16b6d"
+  },
+  {
+    "file": "TRADEMARK_POLICY.md",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/TRADEMARK_POLICY.md",
+    "bytes": 1825,
+    "status": "ok",
+    "sha256": "28d544a54523e7119a7e4e29e17a2dd532e2c611b8f1991c591fb460dafc81f6"
+  },
+  {
+    "file": "finrobot_desktop/finrobot/engine/compute/operators/wacc.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/finrobot/engine/compute/operators/wacc.py",
+    "bytes": 2971,
+    "status": "ok",
+    "sha256": "1c218e46eee445770350f28552cbb8555f4f2386461baf82b907f7acc8a35792"
+  },
+  {
+    "file": "finrobot_desktop/finrobot/engine/models/valuation_thresholds.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/finrobot/engine/models/valuation_thresholds.py",
+    "bytes": 9043,
+    "status": "ok",
+    "sha256": "6c7d701d0060e220f46a33792aff72f61bfdafa010c74b27f185dcdb74b08dd8"
+  },
+  {
+    "file": "finrobot_desktop/tests/unit/test_dcf_reference.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/tests/unit/test_dcf_reference.py",
+    "bytes": 2806,
+    "status": "ok",
+    "sha256": "25503607d46026d0e9b9f9c9cd7b31f3d85510e83c597bcdba8d95ce75cbfce3"
+  },
+  {
+    "file": "finrobot_desktop/tests/unit/test_monte_carlo.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRobot/63e1884a42ea7b729551a5424b4bd6a65af636e0/finrobot_desktop/tests/unit/test_monte_carlo.py",
+    "bytes": 10363,
+    "status": "ok",
+    "sha256": "d78b45c50fdfe311dd3b23433a1aea632889d4c183733a1cc8627af843f4f6b6"
+  }
+]

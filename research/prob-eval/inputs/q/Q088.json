@@ -1,0 +1,50 @@
+{
+ "qid": "Q088",
+ "question": "Israel military action against Yemen by July 31?",
+ "rules": "This market will resolve to “Yes” if Israel takes a qualifying military action against Yemen by the specified date, 11:59 PM Arabia Standard Time (AST). Otherwise this market will resolve to “No.”\n\nA qualifying military action refers to an air strike or a surface-to-surface missile strike, initiated by Israel, that directly impacts Yemen. An air strike includes bombs, air-to-surface missiles, and air-launched drones. A surface-to-surface missile strike includes one-way attack drones and surface-to-surface missiles such as cruise or ballistic missiles.\n\nThe following actions do not constitute a qualifying military action:\nMunitions destroyed or intercepted before impact;\nSurface-to-air missile strikes;\nSmall-arms fire;\nGround incursions;\nCyber operations;\nNaval gunfire and artillery fire;\nHowitzers, artillery pieces, mortars, and rocket artillery (e.g. MLRS systems);\nMinor surface-to-surface strikes, including short range loitering munitions, FPV drones, and ATGM strikes;\nAny threat, authorization, or announcement of force that has not been executed.\n\nAny munition that is intercepted or destroyed before impact does not constitute a qualifying military action. Debris, fragments, or a",
+ "as_of": "2026-07-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "The Times of Israel — Jacob Magid",
+   "published_at": "2026-07-21",
+   "excerpt": "US President Donald Trump downplays concerns that the Iran-backed Houthi rebels in Yemen may try to block shipping in the Red Sea. Trump says this hasn’t happened yet, but that the US would be able to deal strongly with the terror group as it has before."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters, via Investing.com",
+   "published_at": "2026-07-21",
+   "excerpt": "Yemen’s Iran-aligned Houthis said on Monday they would impose a naval blockade on Saudi Arabia, opening a potential new front against the United States in its war with Iran and raising the threat to global energy supplies and trade beyond the Gulf. After the Houthis announced their blockade, the Saudi-led coalition in Yemen said in a statement that it would respond to them with force."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters, via Investing.com",
+   "published_at": "2026-07-20",
+   "excerpt": "It is not clear how the Houthis would carry out a maritime blockade of Saudi Arabia, its northern neighbour along the Red Sea coast, or whether it would include a return to attacks on shipping. Yemen sits on the Bab el-Mandeb strait – the southern gateway to the Red Sea – and closing that would open up a new front in the energy crisis and Iran’s overarching conflict with the U.S."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters, via Investing.com",
+   "published_at": "2026-07-13 (updated 2026-07-14)",
+   "excerpt": "Yemen’s Houthi movement fired missiles at Saudi Arabia after accusing the kingdom of bombing an airport under their control on Monday, breaking a four-year truce in the conflict between the kingdom and the Iran-aligned group. The strikes on Sanaa airport were claimed by Yemen’s internationally recognized government, which is heavily backed by Riyadh, where many of its members reside."
+  },
+  {
+   "id": "E5",
+   "publisher": "Security Council Report",
+   "published_at": "2026-07-12 (postscript added 2026-07-14)",
+   "excerpt": "After the announcement of the 17 June memorandum of understanding between Iran and the US, there have been no further Houthi attacks against Israel, and the group did not resume its assaults on maritime navigation. The resumption of hostilities this week between Iran and the US once again raises questions on whether the Houthis may re-enter the conflict."
+  },
+  {
+   "id": "E6",
+   "publisher": "The Jerusalem Post — Yonah Jeremy Bob and Jerusalem Post Staff",
+   "published_at": "2025-07-21",
+   "excerpt": "The Israel Air Force on Monday struck the Yemen-based, Iran-backed Houthi terrorists at the central port of Hodeidah in retaliation for recent ballistic missile attacks against Israel. The last time the IDF responded to almost daily Houthi missile attacks on Israel was on July 7."
+  },
+  {
+   "id": "E7",
+   "publisher": "Israel Defense Forces",
+   "published_at": "2025-05-06",
+   "excerpt": "Yesterday (Monday), approximately 20 fighter jets carried out strikes using 50 munitions, targeting dozens of terror targets belonging to the Houthi terror regime along the Yemeni coastline. In addition, the “Bajil” concrete plant east of the city of Hudaydah was struck."
+  }
+ ]
+}

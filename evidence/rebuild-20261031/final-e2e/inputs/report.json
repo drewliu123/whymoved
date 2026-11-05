@@ -1,0 +1,338 @@
+{
+  "schema_version": 2,
+  "title": "微软资本开支：把投入确认、当期现金与未来租赁义务分开",
+  "question": "Microsoft 含融资租赁的资本开支与现金 PP&E，应如何比较实际现金负担？",
+  "task": "资本投入与现金负担比较",
+  "type": "asset",
+  "as_of": "2026-10-31T18:37:29.600836Z",
+  "answer": {
+    "text": "研究现金负担应并列三个视角：总资本投入看资源取得；当期现金以 CFO 减 cash PP&E 为起点，再单列同期间融资租赁本金；未来负担看已签约租赁及到期表。FY25Q4 的 24.2B 含新融资租赁，现金 PP&E 是 17.079B；约 7.121B 差额不能全称为新融资租赁，更不能当作当期现金支出。",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5"
+    ]
+  },
+  "findings": [
+    {
+      "title": "24.2B 是投入确认口径，17.079B 是现金 PP&E",
+      "text": "电话会解释融资租赁在开始时确认全部价值。GeekWire 也以 24.2B 描述投资规模；做现金压力或跨公司比较时，须回到现金流表，统一期间、单位及租赁处理。",
+      "why_it_matters": "用 headline capex 直接扣 CFO 会把新租赁的确认与当期支付混用。",
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C6"
+      ],
+      "increment": {
+        "kind": "connection",
+        "baseline": "媒体 headline 投入规模",
+        "detail": "与现金流原表和租赁开始确认机制关联。"
+      }
+    },
+    {
+      "title": "差额约 7.121B，仍有约 0.621B 未调节",
+      "text": "24.2 − 17.079 ≈ 7.121；再扣 6.5 后约 0.621。因 24.2 和 6.5 已四舍五入，这些差值也是近似数。年报披露 PP&E 应付款，只能提示支付时点可能影响桥接，不能证明本季度残差的具体组成。",
+      "why_it_matters": "保留未解释残差，避免把一个算术差额包装成新增融资租赁事实。",
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "calculation_ids": [
+        "K1",
+        "K2"
+      ],
+      "increment": {
+        "kind": "calculation",
+        "baseline": "差额全是新融资租赁的假设",
+        "detail": "原披露值计算后不相等，拒绝伪调节。"
+      }
+    },
+    {
+      "title": "当期现金还要看融资租赁本金；未来义务另列",
+      "text": "FY2025 全年示例：CFO 136.162 − cash PP&E 64.551 = 71.611B；再扣年报的融资租赁融资现金流 2.283 = 69.328B。这是分析口径，且全部采用全年数据。已含在 CFO 的 1.372B 融资租赁经营现金流不要再扣。未开始租赁 92.7B 是未来义务线索，不能计作这一年的现金支出。",
+      "why_it_matters": "同时避免漏计租赁本金和重复扣经营现金项。",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "calculation_ids": [
+        "K3",
+        "K4"
+      ],
+      "increment": {
+        "kind": "calculation",
+        "baseline": "仅看 CFO 减 cash PP&E",
+        "detail": "增加同期间租赁本金后的剩余现金展示，同时隔离未来义务。"
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "若问题改为扩建规模或设备需求",
+      "text": "可以先看含新融资租赁的资本投入，同时附现金口径；投入用途不可全部称为 AI。",
+      "claim_ids": [
+        "C1",
+        "C6"
+      ]
+    }
+  ],
+  "watch": [
+    {
+      "signal": "同一期间租赁本金、PP&E 应付款变化和明确的资本开支调节表",
+      "meaning": "能否解释确认与支付差异；未取到 Q4 独立租赁本金，不能给出 Q4 扣租赁后的现金余额。",
+      "claim_ids": [
+        "C3",
+        "C4",
+        "C5"
+      ]
+    }
+  ],
+  "limitations": [
+    {
+      "text": "FY25Q4 历史机制案例，证据于当前检索时点冻结。",
+      "material": true,
+      "claim_ids": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "text": "只完成一个会计机制案例。FY25Q4 为历史财报，as_of 是本次抓取后冻结的当前时点；不声称还原 2025 年当日信息集，也不提供最新买卖建议。",
+      "material": false,
+      "claim_ids": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "text": "引擎扩大到 365 天并返回 13 候选，但语义筛选全部不相关；社区原帖来自另行 Algolia 检索与官方 HN 抓取。仅一条上下文观点，无社区代表性、完整平台召回或全链路相关性成功证明。",
+      "material": false,
+      "claim_ids": [
+        "C7"
+      ]
+    },
+    {
+      "text": "独立媒体是原创编辑出版物，但重复的微软数字仍属于同一事实源；没有把媒体转述当作独立现金调节验证。",
+      "material": false,
+      "claim_ids": [
+        "C6"
+      ]
+    },
+    {
+      "text": "验证器检查结构、时间和引用，公式字段不会被执行；本次另用 Decimal 独立复算四个值。未验证资本投入回报率、所有承诺的现金到期分布或季度残差成因。",
+      "material": false,
+      "claim_ids": [
+        "C3",
+        "C5"
+      ]
+    },
+    {
+      "text": "社区上下文：HN 用户 _aavaa_ 质疑分析师预期与公司指引的基准混用，只记录其个人观点，不作为现金算法依据。",
+      "material": false,
+      "claim_ids": [
+        "C7"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "统一期间与口径（USD billion）",
+      "columns": [
+        "期间",
+        "项目",
+        "值",
+        "含义"
+      ],
+      "rows": [
+        [
+          "FY25Q4",
+          "含融资租赁资本开支",
+          24.2,
+          "确认投入"
+        ],
+        [
+          "FY25Q4",
+          "现金 PP&E",
+          17.079,
+          "投资现金流支出"
+        ],
+        [
+          "FY25Q4",
+          "新融资租赁",
+          6.5,
+          "开始时确认；不等于当期本金"
+        ],
+        [
+          "FY2025全年",
+          "融资租赁融资现金流",
+          2.283,
+          "年度本金现金压力"
+        ],
+        [
+          "FY2025全年",
+          "扣本金后分析现金余额",
+          69.328,
+          "分析口径，非季度值"
+        ]
+      ],
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C4",
+        "C5"
+      ],
+      "note": "季度与全年清楚标记，不作跨期间相加。"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "K1",
+      "description": "Q4 reported headline less cash PP&E; approximate because headline rounded",
+      "formula": "24.2 - 17.079",
+      "inputs": [
+        {
+          "name": "headline_capex",
+          "value": 24.2,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C1"
+          ]
+        },
+        {
+          "name": "cash_ppe",
+          "value": 17.079,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C2"
+          ]
+        }
+      ],
+      "result": {
+        "value": 7.121,
+        "unit": "USD billion"
+      },
+      "claim_ids": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "id": "K2",
+      "description": "Unreconciled Q4 remainder after reported new finance leases; not an identified accounting item",
+      "formula": "(24.2 - 17.079) - 6.5",
+      "inputs": [
+        {
+          "name": "headline_capex",
+          "value": 24.2,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C1"
+          ]
+        },
+        {
+          "name": "cash_ppe",
+          "value": 17.079,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C2"
+          ]
+        },
+        {
+          "name": "new_finance_leases",
+          "value": 6.5,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C1"
+          ]
+        }
+      ],
+      "result": {
+        "value": 0.621,
+        "unit": "USD billion"
+      },
+      "claim_ids": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "id": "K3",
+      "description": "Annual cash FCF starting point; FY2025 only",
+      "formula": "136.162 - 64.551",
+      "inputs": [
+        {
+          "name": "CFO_FY2025",
+          "value": 136.162,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C4"
+          ]
+        },
+        {
+          "name": "cash_ppe_FY2025",
+          "value": 64.551,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C4"
+          ]
+        }
+      ],
+      "result": {
+        "value": 71.611,
+        "unit": "USD billion"
+      },
+      "claim_ids": [
+        "C4"
+      ]
+    },
+    {
+      "id": "K4",
+      "description": "Annual financing-lease-principal-adjusted residual cash; analytical metric, not issuer-labelled FCF",
+      "formula": "136.162 - 64.551 - 2.283",
+      "inputs": [
+        {
+          "name": "CFO_FY2025",
+          "value": 136.162,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C4"
+          ]
+        },
+        {
+          "name": "cash_ppe_FY2025",
+          "value": 64.551,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C4"
+          ]
+        },
+        {
+          "name": "finance_lease_financing_cash_FY2025",
+          "value": 2.283,
+          "unit": "USD billion",
+          "claim_ids": [
+            "C4"
+          ]
+        }
+      ],
+      "result": {
+        "value": 69.328,
+        "unit": "USD billion"
+      },
+      "claim_ids": [
+        "C4"
+      ]
+    }
+  ],
+  "update": {
+    "judgment_changed": false,
+    "reason": "操作回放：同一冻结证据，无新增检索或研究判断。",
+    "comparability": {
+      "status": "comparable",
+      "reason": "同一期间、单位和研究范围；仅验证更新流程。"
+    }
+  }
+}

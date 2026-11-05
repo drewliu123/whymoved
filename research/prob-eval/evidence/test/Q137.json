@@ -1,0 +1,57 @@
+{
+  "qid": "Q137",
+  "as_of": "2026-09-07",
+  "kept": [
+    {
+      "excerpt": "The CDU under lead candidate Stefan Evers remained in first place with 20 percent in the new INSA poll, narrowly ahead of Die Linke on 19 percent. The report was published on September 4, 2026.",
+      "published_at": "2026-09-04",
+      "publisher": "BILD",
+      "relevance": "This is a poll published shortly before the evidence cutoff showing a narrow CDU lead over its closest competitor.",
+      "url": "https://www.bild.de/politik/inland/berlin-es-droht-der-naechste-wahl-krimi-6a9a6d2808c763dcf81f38fc"
+    },
+    {
+      "excerpt": "In the BerlinTrend conducted by Infratest dimap for rbb24 Abendschau and rbb 88.8, the CDU rose one percentage point to 21 percent, while Die Linke fell three points to 19 percent. The Greens and AfD each stood at 18 percent, the SPD at 11 percent, and BSW at four percent.",
+      "published_at": "2026-09-02",
+      "publisher": "rbb24",
+      "relevance": "The latest pre-cutoff BerlinTrend placed CDU first but showed several competitors within a few percentage points.",
+      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlin-trend-abgeordnetenhaus-wahl-september.html"
+    },
+    {
+      "excerpt": "A Forsa survey for t-online put Die Linke, led by Elif Eralp, at 22 percent. CDU and AfD shared second place with 18 percent each.",
+      "published_at": "2026-08-22",
+      "publisher": "Der Tagesspiegel",
+      "relevance": "This independent poll provides a counterpoint to the September CDU leads and documents disagreement among recent surveys about the leading party.",
+      "url": "https://www.tagesspiegel.de/berlin/einen-monat-vor-der-wahl-umfrage-sieht-linke-in-berlin-vorne-15970598.html"
+    },
+    {
+      "excerpt": "The election is scheduled for September 20, 2026, from 8 a.m. to 6 p.m. Berlin's Abgeordnetenhaus has at least 130 members, including 78 elected directly in constituencies. Parties qualify for proportional seat allocation by obtaining at least five percent of votes or at least one direct mandate. Parties retain overhang mandates, and other qualifying parties receive compensatory mandates.",
+      "published_at": "2026-08-24",
+      "publisher": "Bundeszentrale für politische Bildung (bpb)",
+      "relevance": "This official civic-education source establishes the timetable and the electoral mechanisms connecting polling support to the seat totals that determine resolution.",
+      "url": "https://www.bpb.de/themen/wahl-o-mat/berlin-2026/579822/fakten-zur-wahl-zum-abgeordnetenhaus-von-berlin-2026/"
+    },
+    {
+      "excerpt": "After Kai Wegner withdrew as the CDU's lead candidate, Stefan Evers took over the candidacy. The July BerlinTrend put CDU at 20 percent and Die Linke at 22 percent. Only 49 percent of respondents said their party choice was already certain, while 28 percent said it could still change.",
+      "published_at": "2026-07-16",
+      "publisher": "rbb24",
+      "relevance": "This dated analysis documents the CDU candidate change, its initial polling recovery, and the substantial scope for voter movement during the campaign.",
+      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlin-trend-analyse-abgeordnetenhaus-wahl.html"
+    },
+    {
+      "excerpt": "The CDU launched its campaign on August 13 for Berlin's September 20 election, with Stefan Evers as its candidate. The report identified housing and security concerns as campaign issues. It attributed Kai Wegner's withdrawal from the reelection race to austerity and his handling of a major January power outage.",
+      "published_at": "2026-08-15",
+      "publisher": "Le Monde",
+      "relevance": "This pre-cutoff campaign preview supplies context for CDU's electoral vulnerabilities and the issues shaping the contest.",
+      "url": "https://www.lemonde.fr/en/international/article/2026/08/15/berlin-s-housing-crisis-and-security-concerns-shape-election-campaign_6756542_4.html"
+    },
+    {
+      "excerpt": "The state election committee confirmed the final result of the February 12, 2023 repeat election, with CDU winning 28.2 percent of votes. In the 159-seat parliament, CDU received 52 seats, SPD and the Greens 34 each, Die Linke 22, and AfD 17. FDP failed to enter parliament with 4.6 percent.",
+      "published_at": "2023-02-27",
+      "publisher": "Der Tagesspiegel",
+      "relevance": "The preceding election provides the historical seat baseline and shows that CDU entered the 2026 contest as the largest parliamentary party.",
+      "url": "https://www.tagesspiegel.de/berlin/amtliches-endergebnis-der-berlin-wahl-spd-liegt-nur-53-stimmen-vor-den-grunen--nachzahlantrag-abgelehnt-9419672.html"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-09-07, inclusive. Publication dates were verified in explicit dates returned by web_search, rather than inferred from crawl dates. Excerpts are English factual paraphrases of the dated source material. Only pre-cutoff article content and historical results are included; later polling, later developments, election-outcome reporting, and prediction-market or betting material are excluded. The rbb September 2 article now contains a link to a later update; that update was excluded. web_fetch failed because its provider configuration was ambiguous, and the requested agent-reach fallback returned a rate-limit error, so verification relied on web_search's indexed article text. No contemporaneous archived page snapshots were obtained."
+}

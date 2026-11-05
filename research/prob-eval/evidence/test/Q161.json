@@ -1,0 +1,57 @@
+{
+  "qid": "Q161",
+  "as_of": "2026-08-13",
+  "kept": [
+    {
+      "excerpt": "The James Madison Institute survey puts Byron Donalds at 49% among Republican likely voters, followed by Jay Collins at 18%, Paul Renner at 8%, and James Fishback at 4%. Targoz Market Research conducted the survey of 1,400 Florida registered voters July 20–26; the reported margin of error for the full survey is plus or minus 2.62 percentage points.",
+      "published_at": "2026-08-06",
+      "publisher": "Florida Politics",
+      "relevance": "This recent dated report places Fishback below the 10% threshold, although the full-survey margin of error does not describe the smaller Republican likely-voter subsample.",
+      "url": "https://floridapolitics.com/archives/811815-poll-byron-donalds-leads-gop-primary-race-by-31-points-david-jolly-by-7/"
+    },
+    {
+      "excerpt": "Byron Donalds commands 49.6% of the vote, followed by Jay Collins at 15.7%, James Fishback at 12.4%, and Paul Renner at 3.5%. Another 5.3% prefer someone else, while 13.5% remain undecided. The poll was sponsored by America First Insight.",
+      "published_at": "2026-07-31",
+      "publisher": "Quantus Insights",
+      "relevance": "The pollster's own dated release supplies evidence above the 10% threshold and shows substantial disagreement with the later-published James Madison Institute survey.",
+      "url": "https://quantusinsights.org/f/donalds-dominates-florida%E2%80%99s-republican-primary?blogcategory=2026+Election"
+    },
+    {
+      "excerpt": "Cygnal released findings from a statewide poll of 500 likely 2026 Florida Republican primary voters conducted July 12–13. Byron Donalds leads with 43%, followed by James Fishback at 12%, Jay Collins at 11%, and Paul Renner at 2%, while 31% remain undecided.",
+      "published_at": "2026-07-20",
+      "publisher": "Cygnal",
+      "relevance": "This primary-source polling release places Fishback above 10% while identifying a large undecided bloc that could change his eventual vote share.",
+      "url": "https://www.cygn.al/news/poll-donalds-leads-florida-gop-governor-primary-with-a-third-of-voters-still-undecided/"
+    },
+    {
+      "excerpt": "A Tyson Group poll taken in July showed Donalds at 48%, Collins at 9%, Fishback at 8%, and former House Speaker Paul Renner at 4%. The report also describes Collins' unsuccessful effort in court to remove Fishback from the ballot over Florida's seven-year residency requirement.",
+      "published_at": "2026-08-06",
+      "publisher": "Florida Phoenix",
+      "relevance": "This dated pre-primary preview adds a separate poll below 10% and describes the ballot-access dispute affecting Fishback's candidacy.",
+      "url": "https://floridaphoenix.com/2026/08/06/gop-gubernatorial-primary-election-seems-a-foregone-conclusion/"
+    },
+    {
+      "excerpt": "Judge David Frank of the 2nd Judicial Circuit ruled that James Fishback could remain in the race for Governor, pending a potential future decision on appeal. In a 25-page order published just after 5 p.m., Frank dismissed a complaint filed by fellow Republican gubernatorial candidate Jay Collins.",
+      "published_at": "2026-07-27",
+      "publisher": "Florida Politics",
+      "relevance": "The ruling establishes Fishback's continuing candidacy at that point and identifies the remaining possibility of an appeal.",
+      "url": "https://floridapolitics.com/archives/809834-james-fishback-stays-in-governors-race-after-judge-dismisses-jay-collins-residency-challenge/"
+    },
+    {
+      "excerpt": "The Front Line, a political nonprofit group aligned with Republican Sen. Ted Cruz, announced a $400,000 ad buy targeting Florida GOP gubernatorial candidate James Fishback over antisemitic statements. Axios reported that Fishback was badly trailing Byron Donalds in primary polls.",
+      "published_at": "2026-07-11",
+      "publisher": "Axios",
+      "relevance": "The announced advertising campaign is a dated campaign-pressure factor potentially affecting Fishback's support before the primary.",
+      "url": "https://www.axios.com/2026/07/11/ted-cruz-ad-antisemitism-fishback-florida"
+    },
+    {
+      "excerpt": "Florida's 2026 primary Election Day is August 18, 2026. The deadline to register to vote or change party affiliation for the primary is July 20, 2026. The Division of Elections webpage states that it was last updated August 22, 2025.",
+      "published_at": "2025-08-22",
+      "publisher": "Florida Department of State, Division of Elections",
+      "relevance": "The official schedule verifies the election date and the party-registration deadline relevant to the Republican primary electorate.",
+      "url": "https://dos.fl.gov/elections/for-voters/election-dates/?lv=true"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-08-13 inclusive. Included only sources with explicit publication dates or, for the official schedule, an explicit last-updated date on or before the cutoff. Publication dates are distinguished from polling field dates. Searches surfaced later material, which was excluded; no election outcomes, later developments, prediction-market pages, betting odds, or market prices are included. web_fetch failed because of provider configuration; the requested agent-reach web-read fallback was attempted but rate-limited, so verification relied on dated source text exposed through web_search. Excerpts are concise factual summaries of that retrieved text. The polling evidence is mixed around the 10% threshold, and this pack makes no probability estimate."
+}

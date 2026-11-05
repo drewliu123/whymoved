@@ -1,0 +1,44 @@
+{
+ "qid": "Q014",
+ "question": "Will the United States send warships through the Strait of Hormuz by July 31, 2026?",
+ "rules": "This market will resolve to \"Yes\" if a national government, its military, or a broad consensus of credible reporting confirms that the listed country's warships transited through the Strait of Hormuz between market creation and July 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to “No”.\n\nA \"warship transit\" is defined as a military vessel passing through the Strait of Hormuz. Military cargo or support vessels will be considered “warships”; however, commercial or civilian vessels will not qualify.\n\nFor the purposes of this market, only transits through the Strait of Hormuz will be considered, defined as passage through the narrowest portion of the waterway between Iran and Oman. Operations solely in the Persian Gulf, Gulf of Oman, or Arabian Sea without passage through this narrowest section will not qualify.\n\nOfficial confirmation by a national government or its military that its vessels transited through the Strait of Hormuz during the specified timeframe will resolve this market immediately. An overwhelming consensus of credible reporting confirming that such a transit occurred during the specified timeframe will also suffice.\n\nQualifying confirmations include statem",
+ "as_of": "2026-07-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "U.S. Central Command",
+   "published_at": "2026-07-17",
+   "excerpt": "U.S. forces ended the seventh consecutive night of strikes against Iran on July 17 at 9:30 p.m. ET. U.S. forces employed fighter aircraft, aerial drones, and warships in addition to other assets. CENTCOM continues to hold Iran accountable at the Commander in Chief's direction while fully enforcing a naval blockade against Iranian ports."
+  },
+  {
+   "id": "E2",
+   "publisher": "The War Zone",
+   "published_at": "2026-07-15T19:11:12-04:00",
+   "excerpt": "More than 20 U.S. warships, depicted in the graphic above, are operating in the Arabian Sea and Indian Ocean, along with hundreds of aircraft dispersed across various bases, vessels, and forward arming and refueling points in the Middle East. Amphibious assault ship USS Boxer, dock landing ship USS Comstock, and amphibious transport dock USS Portland sailed into U.S. 5th Fleet in early July."
+  },
+  {
+   "id": "E3",
+   "publisher": "NPR, republished by KPBS Public Media",
+   "published_at": "2026-07-14",
+   "excerpt": "“U.S. forces resumed the naval blockade against vessels transiting to and from Iranian ports and coastal areas today at 4 p.m. ET,” U.S. Central Command said in an online statement Tuesday. “There are currently more than 20 U.S. Navy warships and hundreds of military aircraft operating across the Middle East.” Prior to announcing the reinstatement of its blockade, the U.S. had urged ships to use a southern route that hugs the coast of Oman."
+  },
+  {
+   "id": "E4",
+   "publisher": "U.S. Central Command",
+   "published_at": "2026-07-13",
+   "excerpt": "At the Commander in Chief's direction, U.S. Central Command (CENTCOM) forces will resume blockading maritime traffic entering and exiting Iranian ports on July 14 at 4 p.m. ET. CENTCOM forces will enforce the blockade against vessels transiting to or from Iranian ports and coastal areas. All mariners are advised to monitor Notice to Mariners broadcasts and contact U.S. naval forces on bridge-to-bridge channel 16 when operating in the Gulf of Oman and Strait of Hormuz approaches."
+  },
+  {
+   "id": "E5",
+   "publisher": "USNI News",
+   "published_at": "2026-07-13",
+   "excerpt": "“The blockade will not impede neutral transit passage through the Strait of Hormuz to or from non-Iranian destinations. Neutral vessels may still be subject to the right of visit and search to determine the presence of contraband cargo or to ensure they are not intending to breach the blockade,” reads the notice. The U.S. and Iran continue to have dueling routes through the Strait, with Iran relying on its so-called Tehran toll passage while the U.S. promotes the path closer to Oman, although it comes with the risk of Iranian attacks."
+  },
+  {
+   "id": "E6",
+   "publisher": "U.S. Central Command",
+   "published_at": "2026-07-11",
+   "excerpt": "U.S. Central Command (CENTCOM) completed a third round of strikes this week against Iran, July 11, holding Iranian forces accountable for attacking another commercial ship in the Strait of Hormuz. U.S. forces hit approximately 140 Iranian military targets with precision munitions launched by land- and sea-based fighter aircraft, drones, and naval vessels. Since early May, U.S. forces have helped facilitate the successful transit of more than 800 commercial vessels and 400 million barrels of crude oil through the Strait of Hormuz."
+  }
+ ]
+}

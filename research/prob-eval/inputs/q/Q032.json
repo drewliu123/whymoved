@@ -1,0 +1,38 @@
+{
+ "qid": "Q032",
+ "question": "Will Save the Children win the Nobel Peace Prize in 2026?",
+ "rules": "This market will resolve according to the winner of the 2026 Nobel Peace Prize, as announced by the Norwegian Nobel Committee.\n\nIf multiple listed individuals or entities jointly receive the prize, the market will resolve to a single winner. If Donald Trump, Volodymyr Zelenskyy,  Benjamin Netanyahu, Vladimir Putin, or Elon Musk are among the recipients, the market will resolve to the highest-ranked among them in that exact order of precedence. If none of those five are among the winners and the prize is awarded jointly to at least one listed individual and at least one listed organization, the market will resolve in favor of the individual. If no prioritized individuals are among the winners and all listed recipients are of the same type (all individuals or all organizations), the market will resolve to the person whose last name, or the entity’s name, comes first in alphabetical order as listed in this market.\n\nIf no official announcement regarding the 2026 Nobel Peace Prize has been made by March 31, 2027, 11:59 PM ET, this market will resolve to \"Other.\"\n\nThe resolution source for this market will be the first official announcement from the Norwegian Nobel Committee.",
+ "as_of": "2026-09-25",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Peace Research Institute Oslo (PRIO)",
+   "published_at": "2026-09-22",
+   "excerpt": "PRIO Director's updated 2026 Nobel Peace Prize List includes Mykola Kuleba and Save the Children, Sudan’s Emergency Response Rooms, the Committee to Protect Journalists, the International Court of Justice and the International Criminal Court, and the International Space Station. Save the Children plays a central global role in preventing and responding to the United Nations’ six grave violations against children in conflict zones. Its protection programmes, advocacy and long-standing field presence demonstrate the critical importance of humanitarian organizations in safeguarding children and holding perpetrators accountable."
+  },
+  {
+   "id": "E2",
+   "publisher": "Peace Research Institute Oslo (PRIO)",
+   "published_at": "2026-03-18",
+   "excerpt": "PRIO’s original 2026 list includes Mykola Kuleba and Save the Children, Sudan’s Emergency Response Rooms, the World Trade Organization, the Committee to Protect Journalists, and the International Court of Justice and International Criminal Court. Awarding the Nobel Peace Prize to Mykola Kuleba and Save the Children would highlight both the devastating impact of war on children and children’s agency in these settings. Awarding the Peace Prize to Save the Children would also emphasize the continuing need for multilateral approaches to peace."
+  },
+  {
+   "id": "E3",
+   "publisher": "Save the Children U.S.",
+   "published_at": "2026-09-21",
+   "excerpt": "As world leaders gather for the 81st United Nations General Assembly, Save the Children U.S. President and CEO Janti Soeripto is calling for greater urgency to protect children facing conflict, hunger and preventable disease. The Impact Alliance is a collaboration between Save the Children, CARE and Prosper Global designed to explore more connected, efficient and locally led delivery of humanitarian assistance. Soeripto is leading the organization’s U.S. delegation at UNGA81, focusing on child survival, nutrition, education and humanitarian diplomacy."
+  },
+  {
+   "id": "E4",
+   "publisher": "The National",
+   "published_at": "2026-09-21",
+   "excerpt": "In an interview with The National, Save the Children U.S. head Janti Soeripto described the trauma of displacement experienced by children in Lebanon as family members, friends and homes are lost. She said the UN humanitarian appeal for Lebanon was only 20 per cent funded. Soeripto planned to attend the UN General Assembly that week to appeal for support for children in conflict zones."
+  },
+  {
+   "id": "E5",
+   "publisher": "Norwegian Nobel Committee via NobelPrize.org",
+   "published_at": "2020-10-09",
+   "excerpt": "The Norwegian Nobel Committee awarded the 2020 Nobel Peace Prize to the World Food Programme for combating hunger, improving conditions for peace in conflict-affected areas and helping prevent hunger from being used as a weapon of war. The Committee emphasized that assistance to increase food security can improve prospects for stability and peace. It described the organization as playing a key role in multilateral cooperation."
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+  "topic": "英伟达大跌",
+  "cutoff": "2026-11-01",
+  "window": {"from": "2026-10-02", "to": "2026-11-01"},
+  "engine_exit_code": 0,
+  "engine_version": "3.30.0",
+  "saved_raw_markdown": "/Users/frankzhang/Documents/Last30Days/nvidia-nvda-stock-selloff-raw-nvda-20261101-91p9ce.md",
+  "host_post_engine_websearch_queries": 3,
+  "price_check": "StatMuse and Investing.com match Oct 2, 6, 29, 30 2026 closing prices; underlying vendor independence not established",
+  "source_outcomes": {
+    "reddit": "16 returned threads; direct post WebFetch unavailable",
+    "x": "16 returned posts; official promotion dominates ranked clusters",
+    "hackernews": "2 returned items; not selected for selloff attribution",
+    "github": "12 returned items; technical issues not relevant to stock selloff attribution",
+    "polymarket": "no_results",
+    "youtube": "rate_limited: bot confirmation required",
+    "stocktwits": "error: no symbol resolved"
+  },
+  "selected_community_items": [
+    {"id": "R119", "use": "individual opinion: competing bubble and macro narratives", "limitation": "engine-returned truncated post body; no independently fetched full post"},
+    {"id": "X30", "use": "individual opinion: stock decline versus claimed B300 rental strength", "limitation": "rental price claim not verified; not quantitative market data"}
+  ],
+  "excluded": ["official promotional posts as selloff causes", "GPU technical GitHub issues", "historical DeepSeek crash confused with current event", "future-dated Nov 2 reports", "unverified social model assumptions as earnings facts"],
+  "interpretation": "Industry and AI financing/return concerns supported by contemporaneous reporting; a single company-specific cause is not established. Community excerpts are not representative sentiment evidence.",
+  "supplement_appendix_written": true
+}

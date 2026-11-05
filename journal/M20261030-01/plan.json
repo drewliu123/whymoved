@@ -1,0 +1,15 @@
+{
+  "question": "Warsh 的政策倾向",
+  "type": "actor",
+  "entity": "Kevin Warsh（美联储主席）",
+  "horizon": "2026-12-09（下次 FOMC 决议）",
+  "as_of": "2026-10-30T09:15:00Z",
+  "angles": [
+    {"angle": "本人表态", "question": "Warsh 就任主席以来公开说了什么：通胀、利率路径、前瞻指引、资产负债表、AI 与生产率、美联储独立性？10 月会后记者会怎么讲？",
+     "queries": ["warsh press conference rate outlook", "warsh speech inflation balance sheet"], "tiers": ["T0", "T2", "T4"]},
+    {"angle": "实际动作", "question": "他主持下 FOMC 做了什么：每次会议的利率决定、投票、声明措辞变化、缩表/资产负债表政策、沟通改革（取消前瞻指引、点阵图等）？",
+     "queries": ["warsh fed chair rate hike hold", "warsh balance sheet shrink fomc statement"], "tiers": ["T0", "T2"]},
+    {"angle": "他人评价", "question": "媒体、机构、社区如何定性他的倾向（鹰/鸽/务实）？与白宫的关系、分歧在哪？",
+     "queries": ["warsh hawk or dove fed chair", "warsh trump rate pressure", "沃什 美联储 鹰派"], "tiers": ["T2", "T3", "T4"]}
+  ]
+}

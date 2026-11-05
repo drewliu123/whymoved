@@ -1,0 +1,23 @@
+{
+  "run_id": "R20261102T034926Z-d6b6ef6ec19f",
+  "path": "/Users/frankzhang/Desktop/投研助手/journal/runs/R20261102T034926Z-d6b6ef6ec19f",
+  "manifest": {
+    "schema_version": 2,
+    "run_id": "R20261102T034926Z-d6b6ef6ec19f",
+    "created_at": "2026-11-02T03:49:26.360395Z",
+    "as_of": "2026-11-02T03:49:02.266110+00:00",
+    "files": {
+      "report.json": "51f61953e3e7d9d2199f61ba540bc9222721df6c375fe08516357e7e12c8eff5",
+      "claims.json": "ccdfc04386cc1982da08345da83baa2f9057ab838d34af646bd27ac7d20c4075",
+      "sources.json": "b1592378c5a65e339cfc6be9e9b844c20ebbfc61f0f66cc5f489184c5a9b63a7",
+      "plan.json": "4765d46b1d2a330b01d87abc86df2699914be60ff25fb9882cd60e656065e3d6",
+      "report.md": "564df963d65f6ebf6f88e8ba9a3b293f252ba05b682274d2f22be4c02a95fb91",
+      "report.html": "ea30518eadc1a729a958f9844ff226eae8129f196625c36f60bb5dfb64892767",
+      "audit.json": "0423a8fdb701dc1958e0ee57d4fb07a63686e0a80ebf64e7489ac0951eb93a73"
+    },
+    "audit_role": "untrusted_metadata",
+    "parent_run": null,
+    "parent_manifest_sha256": null
+  },
+  "diff": null
+}

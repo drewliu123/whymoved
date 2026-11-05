@@ -1,0 +1,16 @@
+{
+  "question": "英伟达2026年8月26日财报：增长与毛利率的预期差在哪里？",
+  "as_of": "2026-10-31T12:00:00Z",
+  "claims": [
+    {"id":"C1","text":"英伟达5月20日给出Q2 FY27收入指引910亿美元上下2%，Non-GAAP毛利率75.0%上下50基点，指引不含中国数据中心计算收入。","type":"fact","as_of":"2026-08-25T23:59:00-04:00","sources":[{"url":"https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx","publisher":"NVIDIA","tier":"T0","published_at":"2026-05-20"}]},
+    {"id":"C2","text":"8月25日路透引述LSEG：Q2收入预期921.8亿美元，Q3收入预期1042亿美元，两季调整后毛利率预期约75%。","type":"view","as_of":"2026-08-25T23:59:00-04:00","sources":[{"url":"https://www.investing.com/news/stock-market-news/nvidia-faces-growth-test-as-rubin-debut-meets-ai-financing-scrutiny-4874842","publisher":"Reuters","tier":"T2","published_at":"2026-08-25"}]},
+    {"id":"C3","text":"8月24日Proactive报道转述UBS预计毛利率将保持在75%左右至2027年，并转述Wedbush对HBM定价的较乐观判断。","type":"view","as_of":"2026-08-25T23:59:00-04:00","sources":[{"url":"https://finance.yahoo.com/markets/stocks/articles/nvidia-heads-earnings-supply-not-192300471.html","publisher":"Proactive","tier":"T3","published_at":"2026-08-24"}]},
+    {"id":"C4","text":"英伟达公布Q2 FY27收入962.21亿美元，Non-GAAP毛利率75.0%。","type":"fact","as_of":"2026-08-27T23:59:00-04:00","sources":[{"url":"https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm","publisher":"NVIDIA SEC exhibit","tier":"T0","published_at":"2026-08-26"}]},
+    {"id":"C5","text":"英伟达Q3收入指引1080亿美元上下2%，GAAP和Non-GAAP毛利率指引74.0%上下50基点，不含中国数据中心计算收入。","type":"fact","as_of":"2026-08-27T23:59:00-04:00","sources":[{"url":"https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm","publisher":"NVIDIA SEC exhibit","tier":"T0","published_at":"2026-08-26"}]},
+    {"id":"C6","text":"路透财报后报道记录：公司预计FY28收入增长约70%，此前分析师预期约44%；股价盘后先跌后涨。","type":"view","as_of":"2026-08-27T23:59:00-04:00","sources":[{"url":"https://www.investing.com/news/stock-market-news/nvidia-forecasts-quarterly-revenue-above-estimates-4877887","publisher":"Reuters","tier":"T2","published_at":"2026-08-27"}]},
+    {"id":"C7","text":"次日收盘路透报道英伟达上涨8.7%，同日半导体指数上涨2.3%。","type":"view","as_of":"2026-08-28T23:59:00-04:00","sources":[{"url":"https://au.investing.com/news/stock-market-news/nasdaq-sp-500-lifted-by-nvidias-forecast-investors-eye-speech-by-feds-warsh-4620509?ampMode=1","publisher":"Reuters","tier":"T2","published_at":"2026-08-28"}]},
+    {"id":"C8","text":"仅收入超过公司指引不能独立构成增长惊喜；还需相对事前分析师预期衡量，并同时检查毛利率。","type":"inference","as_of":"2026-08-25T23:59:00-04:00","basis":["C1","C2","C3"],"sources":[]},
+    {"id":"C9","text":"按事前Q3收入和约75%毛利率推算的毛利润约781.5亿美元；若毛利率下降到74%，收入需约1056.1亿美元才维持同等毛利润。","type":"inference","as_of":"2026-08-25T23:59:00-04:00","basis":["C2"],"sources":[]},
+    {"id":"C10","text":"按公司Q3指引中值推算毛利润为799.2亿美元，约比事前预期组合高2.3%；收入指引增长部分抵消了毛利率下降。","type":"inference","as_of":"2026-08-27T23:59:00-04:00","basis":["C2","C5"],"sources":[]}
+  ]
+}

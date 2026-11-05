@@ -1,0 +1,50 @@
+{
+ "qid": "Q097",
+ "question": "Will SPD win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?",
+ "rules": "Parliamentary elections to elect the Landtag of Mecklenburg-Vorpommern are scheduled to take place on September 20, 2026.\n\nThis market will resolve to the political party that wins the greatest number of seats in the state parliament of Mecklenburg-Vorpommern (Landtag) as a result of this election.\n\nIf voting in the Mecklenburg-Vorpommern election for the Landtag does not occur by January 31, 2027, this market will resolve to \"Other\".\n\nIn the event of a tie between multiple parties for the most seats won, this market will resolve in favor of the party that received a greater number of valid votes. In the event that results in a tie, this market will resolve in favor of the party whose listed abbreviation appears first in alphabetical order.\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as published on the official Mecklenburg-Vorpommern elections page of the Landesamt für innere Verwaltung (www.laiv-mv.de/Wahlen/Landtagswahlen/2026/).",
+ "as_of": "2026-09-07",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "NDR",
+   "published_at": "2026-09-03",
+   "excerpt": "The September 3 Mecklenburg-Vorpommern poll put SPD at 32%, up three percentage points from July, while AfD stood at 35%. Infratest dimap conducted the survey for NDR between August 26 and August 31, 2026, interviewing 1,215 eligible voters by telephone and online. The reported sampling uncertainty was two percentage points for a 10% share and three percentage points for a 50% share."
+  },
+  {
+   "id": "E2",
+   "publisher": "dpa, carried by the Mecklenburg-Vorpommern Landtag",
+   "published_at": "2026-09-02",
+   "excerpt": "A Forsa poll commissioned by Ostsee-Zeitung placed AfD first with 37%, followed by SPD with 28%, Die Linke with 11%, CDU with 10%, and the Greens with 5%. Forsa surveyed 1,047 eligible voters between August 21 and August 27, 2026. The report notes that polls reflect opinion at the time of interviewing and are not forecasts of the election result."
+  },
+  {
+   "id": "E3",
+   "publisher": "DAWUM, reporting INSA's poll for Nordkurier",
+   "published_at": "2026-08-13",
+   "excerpt": "INSA's poll published on August 13, 2026, put AfD at 36%, SPD at 29%, Die Linke at 11%, CDU at 10%, the Greens at 5%, BSW at 4%, and FDP at 3%. The Nordkurier-commissioned online survey interviewed 1,000 people between August 4 and August 11. Both AfD and SPD gained one percentage point compared with INSA's June 22 poll."
+  },
+  {
+   "id": "E4",
+   "publisher": "dpa, carried by the Mecklenburg-Vorpommern Landtag",
+   "published_at": "2026-09-07T15:52:00+02:00",
+   "excerpt": "On September 7, SPD lead candidate and minister-president Manuela Schwesig presented a new campaign poster bearing the slogan 'Die Frau gegen Blau'. She urged voters to give SPD both votes to prevent AfD becoming the strongest party. The report states that AfD was leading in Mecklenburg-Vorpommern polls, although SPD had recently narrowed the gap."
+  },
+  {
+   "id": "E5",
+   "publisher": "Bundeszentrale für politische Bildung (bpb)",
+   "published_at": "2026-08-24",
+   "excerpt": "The Landtag has at least 71 seats, with 36 constituency representatives elected directly by first votes. Parties must obtain at least 5% of valid second votes to participate in allocation of list seats, calculated using the Hare/Niemeyer method. Overhang seats can increase the parliament's size, with compensatory seats limited to twice the number of overhang seats and the overall seat total required to be odd."
+  },
+  {
+   "id": "E6",
+   "publisher": "Ministerium für Inneres und Bau Mecklenburg-Vorpommern, via Presseportal",
+   "published_at": "2025-07-29T12:05:00+02:00",
+   "excerpt": "The state government fixed September 20, 2026, as the date of the next Mecklenburg-Vorpommern Landtag election at its cabinet meeting on July 29, 2025. The announcement states that the election must take place between the 58th and 61st month after the start of the parliamentary term. The current term began on October 26, 2021."
+  },
+  {
+   "id": "E7",
+   "publisher": "tagesschau / ARD election archive",
+   "published_at": "2021-10-15T17:20:00+02:00",
+   "excerpt": "The final 2021 Landtag seat distribution was SPD 34, AfD 14, CDU 12, Die Linke 9, Greens 5, and FDP 5, for a total of 79 seats. The results page identifies the state returning officer as its source and is dated October 15, 2021, at 17:20."
+  }
+ ]
+}

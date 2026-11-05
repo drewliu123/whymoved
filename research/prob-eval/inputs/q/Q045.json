@@ -1,0 +1,26 @@
+{
+ "qid": "Q045",
+ "question": "Will the Liberal Democratic Party of Russia (LDPR) win the second-most seats in the next Russian parliamentary election?",
+ "rules": "Parliamentary elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the political party that wins the second greatest number of seats in the next Russian State Duma election.\n\nIf the results are not known definitively by September 30, 2027, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe named parties or coalitions will be primarily ranked by the number of seats won in the specified election. If two or more parties are tied on seats, ties will be broken by the total number of valid votes received, with higher vote totals ranking higher. If parties remain tied, ties will be broken by alphabetical order of the listed party abbreviations. This market will resolve to the party that occupies the second finishing position after applying this ranking.\n\nThis market's resolution will be based solely on the number of seats won by the named party in the State Duma of the Federal Assembly of the Russian Federation.\n\nThis market will resolve based on the results of this election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results reported by Russian governm",
+ "as_of": "2026-09-07",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Russian Public Opinion Research Center (VCIOM)",
+   "published_at": "2026-09-04",
+   "excerpt": "VCIOM's September 4 release reported party support of 37.2% for United Russia, 11.6% for the Communist Party (CPRF), 11.5% for New People, 8.7% for LDPR and 5.3% for A Just Russia. The survey covered August 24–30, 2026, with 1,600 adult respondents, a combined telephone and household-interview sample, and a stated maximum sampling error of 2.5%."
+  },
+  {
+   "id": "E2",
+   "publisher": "Vedomosti",
+   "published_at": "2026-09-04T11:09:29+03:00",
+   "excerpt": "Vedomosti reported that FOM's August 28–30 survey put United Russia at 33%, LDPR at 11%, CPRF at 9%, New People at 4% and A Just Russia at 3%. LDPR's support increased four percentage points from the preceding survey. FOM interviewed 1,500 respondents in 97 settlements across 51 Russian regions."
+  },
+  {
+   "id": "E3",
+   "publisher": "Vedomosti",
+   "published_at": "2026-08-31T00:23:55+03:00",
+   "excerpt": "Vedomosti reported that FOM's August 21–23 survey placed CPRF at 10%, LDPR at 7% and New People at 6%, while VCIOM's August 17–23 survey placed them at 11.7%, 9.7% and 10.8%, respectively. Political analyst Ilya Grashchenkov said differences between these parties were within the surveys' statistical margins and that several weeks of sustained movement mattered more than weekly fluctuations. He described CPRF as relying on a disciplined protest electorate, LDPR as trying to preserve Zhirinovsky's legacy, and New People as having growth potential among younger and urban voters."
+  }
+ ]
+}

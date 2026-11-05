@@ -1,0 +1,101 @@
+{
+  "sha": "b33175caa1289e180b535d663c89b7a0c04b4726",
+  "node_id": "C_kwDONWoU09oAKGIzMzE3NWNhYTEyODllMTgwYjUzNWQ2NjNjODliN2EwYzA0YjQ3MjY",
+  "commit": {
+    "author": {
+      "name": "virattt",
+      "email": "virat.dot@gmail.com",
+      "date": "2026-10-27T19:40:05Z"
+    },
+    "committer": {
+      "name": "virattt",
+      "email": "virat.dot@gmail.com",
+      "date": "2026-10-27T19:40:05Z"
+    },
+    "message": "Bump version to 2.6.2\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+    "tree": {
+      "sha": "3a991849ae818cd08726d584540447a0d21397a5",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/trees/3a991849ae818cd08726d584540447a0d21397a5"
+    },
+    "url": "https://api.github.com/repos/virattt/ai-hedge-fund/git/commits/b33175caa1289e180b535d663c89b7a0c04b4726",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/virattt/ai-hedge-fund/commits/b33175caa1289e180b535d663c89b7a0c04b4726",
+  "html_url": "https://github.com/virattt/ai-hedge-fund/commit/b33175caa1289e180b535d663c89b7a0c04b4726",
+  "comments_url": "https://api.github.com/repos/virattt/ai-hedge-fund/commits/b33175caa1289e180b535d663c89b7a0c04b4726/comments",
+  "author": {
+    "login": "virattt",
+    "id": 901795,
+    "node_id": "MDQ6VXNlcjkwMTc5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/901795?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/virattt",
+    "html_url": "https://github.com/virattt",
+    "followers_url": "https://api.github.com/users/virattt/followers",
+    "following_url": "https://api.github.com/users/virattt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/virattt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/virattt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/virattt/subscriptions",
+    "organizations_url": "https://api.github.com/users/virattt/orgs",
+    "repos_url": "https://api.github.com/users/virattt/repos",
+    "events_url": "https://api.github.com/users/virattt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/virattt/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "virattt",
+    "id": 901795,
+    "node_id": "MDQ6VXNlcjkwMTc5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/901795?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/virattt",
+    "html_url": "https://github.com/virattt",
+    "followers_url": "https://api.github.com/users/virattt/followers",
+    "following_url": "https://api.github.com/users/virattt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/virattt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/virattt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/virattt/subscriptions",
+    "organizations_url": "https://api.github.com/users/virattt/orgs",
+    "repos_url": "https://api.github.com/users/virattt/repos",
+    "events_url": "https://api.github.com/users/virattt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/virattt/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1b2ba6d635626ba84f6d05e02ba6022fe6a23e4e",
+      "url": "https://api.github.com/repos/virattt/ai-hedge-fund/commits/1b2ba6d635626ba84f6d05e02ba6022fe6a23e4e",
+      "html_url": "https://github.com/virattt/ai-hedge-fund/commit/1b2ba6d635626ba84f6d05e02ba6022fe6a23e4e"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "c3c086856b670ed0786bad03de267c5aa9152c11",
+      "filename": "pyproject.toml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/virattt/ai-hedge-fund/blob/b33175caa1289e180b535d663c89b7a0c04b4726/pyproject.toml",
+      "raw_url": "https://github.com/virattt/ai-hedge-fund/raw/b33175caa1289e180b535d663c89b7a0c04b4726/pyproject.toml",
+      "contents_url": "https://api.github.com/repos/virattt/ai-hedge-fund/contents/pyproject.toml?ref=b33175caa1289e180b535d663c89b7a0c04b4726",
+      "patch": "@@ -1,6 +1,6 @@\n [tool.poetry]\n name = \"aihf\"\n-version = \"2.6.1\"\n+version = \"2.6.2\"\n description = \"An AI-powered hedge fund: LLM investor agents and quant alpha models you can build, backtest, and run from your terminal\"\n authors = [\"Virat Singh <virat.dot@gmail.com>\"]\n license = \"MIT\""
+    }
+  ]
+}

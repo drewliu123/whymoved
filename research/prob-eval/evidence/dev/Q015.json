@@ -1,0 +1,41 @@
+{
+  "qid": "Q015",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "Arena's July 16, 2026 changelog states that kimi-k3 has been added to the Text Arena and Code Arena leaderboards.",
+      "published_at": "2026-07-16",
+      "publisher": "Arena — Leaderboard Changelog, dated July 16 entry",
+      "relevance": "Confirms that Moonshot's new flagship was already eligible to compete on the resolving Text Arena leaderboard by the experiment cutoff.",
+      "url": "https://arena.ai/company/leaderboard-changelog"
+    },
+    {
+      "excerpt": "Recent Chinese AI models are doing well on major benchmarks. GLM-5.2 ranks second in the front-end coding benchmark and first among open-weight models. Moonshot's Kimi K2.7 Code follows OpenAI and Anthropic closely in agent and software engineering benchmarks. DeepSeek V4-Pro and Qwen3.7-Max are also highly capable and just behind US-based models.",
+      "published_at": "2026-07-02",
+      "publisher": "Center for Strategic and International Studies — Yasir Atalan",
+      "relevance": "Identifies the principal Chinese competitors and their recent capabilities, although these task benchmarks do not establish the resolving Text Arena Overall order.",
+      "url": "https://www.csis.org/analysis/what-know-about-chinese-ai-models"
+    },
+    {
+      "excerpt": "Qwen 3.7 Max debuted on Arena AI on May 14, 2026. Qwen 3.7 Max-Preview ranks thirteenth overall in Text Arena, seventh in math, ninth in expert-level prompts, and ninth in software and IT. This makes Alibaba the sixth-ranked AI lab globally in text.",
+      "published_at": "2026-05-20",
+      "publisher": "Decrypt — Jose Antonio Lanz",
+      "relevance": "Establishes a dated historical Text Arena baseline for Alibaba before the newer July competition.",
+      "url": "https://decrypt.co/368499/alibaba-qwen-3-7-max-preview-review"
+    },
+    {
+      "excerpt": "Qwen introduced Qwen3.7-Max as its latest proprietary model designed for the agent era and made it available through Alibaba Cloud Model Studio. In the team's reported evaluations, it scored 92.4 on GPQA Diamond, 41.4 on HLE, and 79.1 on IFBench. Its reported SWE-Verified score of 80.4 was close to Opus-4.6 Max at 80.8 and DeepSeek V4-Pro Max at 80.6.",
+      "published_at": "2026-05-20",
+      "publisher": "Qwen Team — Qwen3.7: The Agent Frontier",
+      "relevance": "Documents Alibaba's released flagship and vendor-reported strengths, providing capability context without treating those benchmarks as Arena rankings.",
+      "url": "https://qwen.ai/blog?id=qwen3.7&locale=en"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.fdiintelligence.com/content/ee517e8e-a107-4783-b38c-1fa0682383dd",
+      "reason": "Excerpt mentions a model-weights release due on July 27, 2026, after the 2026-07-17 cutoff."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-07-17 inclusive. Publication dates were verified from explicit article dates or individually dated official changelog entries. Used web_search and, after web_fetch failed, the agent-reach web skill to read source text. Excluded prediction-market pages, undated current model directories, later publications, and articles explicitly updated after the cutoff. Only the July 16 entry from Arena's continuously updated changelog is included; subsequent entries are excluded. The selected sources do not supply a verified July 17 snapshot of the exact Text Arena Overall Rank column with style control off or its underlying unrounded scores. Historical reported ranks and coding benchmarks are therefore contextual evidence, not a reconstruction of the resolving table. No post-cutoff developments or resolution outcome are included."
+}

@@ -1,0 +1,31 @@
+{
+  "method": "Independently specified Decimal arithmetic; does not evaluate formula strings",
+  "passed": true,
+  "checks": [
+    {
+      "id": "K1",
+      "expected": "7.121",
+      "independently_recomputed": "7.121",
+      "passed": true
+    },
+    {
+      "id": "K2",
+      "expected": "0.621",
+      "independently_recomputed": "0.621",
+      "passed": true
+    },
+    {
+      "id": "K3",
+      "expected": "71.611",
+      "independently_recomputed": "71.611",
+      "passed": true
+    },
+    {
+      "id": "K4",
+      "expected": "69.328",
+      "independently_recomputed": "69.328",
+      "passed": true
+    }
+  ],
+  "limitations": "Input truth and accounting bridge need fetched evidence review; arithmetic does not identify residual components. Rounded source values make quarterly differences approximate."
+}

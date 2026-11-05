@@ -1,0 +1,44 @@
+{
+ "qid": "Q077",
+ "question": "Will Russia enter Oleksiievo-Druzhkivka by September 30?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Russia captures any territory of Oleksiievo-Druzhkivka, Donetsk Oblast, (48.578748° N, 37.616899° E) between market creation and the specified date (ET).\n\nTerritory will be considered captured if any part of the specified territory is shaded under a below specified layer on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. Otherwise, the market will resolve to “No”.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading indicating Russian control must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date. Any continuous shading which reflects either \"Assessed Russian Infiltration Areas in Ukraine\", “Assessed Russian Control”, “Assessed Russian Advance In Ukraine”, or “Assessed Russian Gains in the Past 24 Hours” will qualify. \n\nOnce a qualifying condition is met, any subsequent loss of control will not be considered towards the resolution of this market.\n\nIf Russia comes into control of the specified territory as",
+ "as_of": "2026-07-16",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Institute for the Study of War / AEI Critical Threats Project",
+   "published_at": "2026-07-16",
+   "excerpt": "Russian forces continue to infiltrate in small groups rather than conduct mechanized assaults in the Kostyantynivka-Druzhkivka tactical area. Geolocated footage published on July 16 shows Ukrainian forces striking a Russian position northwestern of Vasyutynke (northeast of Druzhkivka) after what ISW assesses was an infiltration mission. A spokesperson of a Ukrainian brigade operating in the Kostyantynivka direction reported on July 16 that Russian forces continue deploying small groups of dismounted infantry in the Kostyantynivka direction and are not conducting mechanized assaults."
+  },
+  {
+   "id": "E2",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-07-15",
+   "excerpt": "Russian forces continued offensive operations in the Kostyantynivka-Druzhkivka tactical area on July 14 and 15 but did not advance. Russian forces are continuing infiltration missions and strikes in Kostyantynivka but have not seized the city. A Ukrainian officer operating in the Kostyantynivka direction reported on July 15 that Russian forces do not fully control the city despite Russian officials claims that Russian forces seized Kostyantynivka."
+  },
+  {
+   "id": "E3",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-07-14",
+   "excerpt": "Russian forces recently advanced in the Kostyantynivka-Druzhkivka tactical area, as Ukrainian forces counterattacked in the area. Geolocated footage published on July 13 indicates that Russian forces recently advanced in western Kostyantynivka."
+  },
+  {
+   "id": "E4",
+   "publisher": "Institute for the Study of War / AEI Critical Threats Project",
+   "published_at": "2026-07-13",
+   "excerpt": "Russian forces are intensifying their strikes against Druzhkivka to prepare the battlefield and force civilians to evacuate. Donetsk Oblast Military Administration Head Vadym Filashkin stated on July 13 that Russian forces are increasing the number of guided glide bomb, artillery, Shahed drone, Gerbera drone, and fiber optic drone strikes against Donetsk Oblast and that the situation in the region is most difficult in Druzhkivka. Filashkin noted that Russian forces are trying to take control of the access roads leading to Druzhkivka and Oleksiievo-Druzhkivka (between Druzhkivka and Kostyantynivka)."
+  },
+  {
+   "id": "E5",
+   "publisher": "Kyiv Post, reproducing British Defence Intelligence's July 10, 2026 update",
+   "published_at": "2026-07-14",
+   "excerpt": "It is highly unlikely that Russia has fully secured Kostiantynivka. Instead, it is assessed that Russia likely occupies approximately over half of the urban centre. Open source reporting has identified incidents of Russian flag raising along the northern boundary of the city, but these are highly likely small infiltration groups rather than a consolidated force. It is highly likely that Ukraine continues to defend the city, disrupting Russia’s ability to seize full control."
+  },
+  {
+   "id": "E6",
+   "publisher": "Institute for the Study of War / AEI Critical Threats Project",
+   "published_at": "2026-07-01",
+   "excerpt": "Russia’s spring-summer 2026 offensive has failed to achieve operationally significant gains thus far, and Russian forces’ rate of advance in June 2026 is a fraction of the rate of advance that Russian forces achieved in June 2025. ISW has observed evidence to assess that Russian forces seized or infiltrated 30.42 square kilometers in June 2026 and advanced or infiltrated at an average pace of 1.01 square kilometers per day. Russian forces comparatively seized 481.25 square kilometers in June 2025, advancing at an average pace of 16.04 square kilometers per day. Russian forces’ main territorial gains have been in Russia’s main effort area near Kostyantynivka in Donetsk Oblast, where Russian forces have achieved slow tactical gains at high costs in the city’s urban environs."
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+  "qid": "Q027",
+  "as_of": "2026-07-22",
+  "kept": [
+    {
+      "excerpt": "Tavern Research’s online survey of 2,211 likely Democratic primary voters found Stevens at 42%, El-Sayed at 41%, and 18% unsure, with a reported margin of error of 2.5 percentage points. The poll was conducted the day before and day of the July 7 head-to-head debate. In the survey, 42% thought Stevens could very likely beat Mike Rogers, compared with 37% for El-Sayed.",
+      "published_at": "2026-07-08",
+      "publisher": "Michigan Advance — Ben Solis",
+      "relevance": "This post-withdrawal survey provides a close head-to-head baseline and measures the electability perceptions central to Stevens’s campaign.",
+      "url": "https://michiganadvance.com/2026/07/08/new-poll-shows-el-sayed-stevens-statistically-tied-in-michigans-democratic-u-s-senate-primary/"
+    },
+    {
+      "excerpt": "Stevens received 48% support compared with 41% for El-Sayed in a Detroit News/WDIV-TV poll of 500 likely Michigan Democratic primary voters, with about 10% undecided. Among respondents definitely committed to their candidate, Stevens had 34.1% and El-Sayed 33.7%. The article was published July 14, 2026, at 9:01 p.m. UTC.",
+      "published_at": "2026-07-14",
+      "publisher": "The Detroit News — Melissa Nann Burke and Beth LeBlanc, syndicated by Yahoo",
+      "relevance": "This recent independent poll favors Stevens but its committed-voter results indicate substantially less separation than the overall topline.",
+      "url": "https://currently.att.yahoo.com/att/stevens-gains-edge-dems-senate-210102827.html"
+    },
+    {
+      "excerpt": "A Data for Progress survey for the American Priorities super PAC, conducted July 10–14 among 614 likely Michigan Democratic primary voters, put El-Sayed ahead of Stevens 54%–41%. The same dated analysis reported the contrasting Glengariff survey showing Stevens ahead 48%–41%.",
+      "published_at": "2026-07-16",
+      "publisher": "The ELLIS Insight — Jim Ellis, “Close Races to Watch”",
+      "relevance": "This contemporaneous expert polling review documents a conflicting super-PAC-sponsored survey and highlights uncertainty about the race’s true position.",
+      "url": "https://www.ellisinsight.com/2026/07/page/2/"
+    },
+    {
+      "excerpt": "El-Sayed raised nearly $4.6 million between April 1 and June 30, compared with $2.1 million for Stevens. Stevens had about $3.4 million cash on hand compared with $2.7 million for El-Sayed. Outside groups had reported approximately $29 million assisting Stevens, compared with $2.6 million supporting El-Sayed.",
+      "published_at": "2026-07-16 (updated 2026-07-20)",
+      "publisher": "Bridge Michigan — Simon D. Schuster",
+      "relevance": "The finance disclosures show El-Sayed’s stronger candidate fundraising alongside Stevens’s substantial advantage in outside spending and available campaign cash.",
+      "url": "https://bridgemi.com/michigan-government/abdul-el-sayed-outraises-haley-stevens-but-super-pacs-dominate-senate-race/"
+    },
+    {
+      "excerpt": "Outgoing Sen. Gary Peters endorsed Haley Stevens as his successor on July 13, reversing his earlier intention to remain neutral. Stevens also had endorsements from Senate Democratic leader Chuck Schumer, Sen. Ruben Gallego, and Sen. Catherine Cortez Masto. El-Sayed had support from Sen. Bernie Sanders and Sen. Chris Van Hollen.",
+      "published_at": "2026-07-13",
+      "publisher": "The Associated Press — Joey Cappelletti",
+      "relevance": "The incumbent senator’s endorsement strengthens Stevens’s institutional support and documents the competing coalitions in the primary.",
+      "url": "https://www.ap.org/news-highlights/elections/2026/michigan-sen-gary-peters-backs-democratic-rep-haley-stevens-in-contentious-race-to-succeed-him/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.cityofbessemermi.gov/2026/07/20/notice-of-election-and-registration-primary-election-august-4-2026/",
+      "reason": "Excerpt and relevance explicitly mention the August 4, 2026 primary, after the July 22 cutoff, and the excerpt describes polling hours on that future date."
+    },
+    {
+      "url": "https://michiganadvance.com/2026/07/05/mcmorrow-withdraws-from-u-s-senate-race/",
+      "reason": "Excerpt explicitly mentions the August 4 primary, after the July 22 cutoff, and describes continued ballot presence for that future election."
+    },
+    {
+      "url": "https://patch.com/michigan/across-mi/elizabeth-warren-backs-abdul-el-sayed-after-initially-supporting-mallory-mcmorrow",
+      "reason": "Excerpt explicitly mentions planned campaigning on July 25, 2026, after the July 22 cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-22, inclusive. Retained eight items with explicit publication dates on or before the cutoff; the Bridge Michigan update is also before the cutoff. Excerpts are factual paraphrases of source text exposed in web_search results. Direct web_fetch failed because of provider configuration, and the requested agent-reach web read fallback failed because its upstream services were unavailable; full-page retrieval could not be completed. The ELLIS Insight item is a specifically dated July 16 article available within a monthly archive. Poll sponsorship is identified where verified. Undated live aggregations, later publications, prediction-market and betting pages, odds, market prices, and outcome reporting were excluded from the evidence pack."
+}

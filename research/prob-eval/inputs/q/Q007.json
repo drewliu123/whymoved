@@ -1,0 +1,44 @@
+{
+ "qid": "Q007",
+ "question": "Next Mythos-Class Model released by August 31, 2026?",
+ "rules": "On June 9, 2026, Anthropic released the Mythos-class model Claude Fable 5.\n\nThis market will resolve to \"Yes\" if Anthropic releases the next Mythos-class model and makes it available to the general public by the listed date (ET). Otherwise, this market will resolve to \"No.\"\n\nAny model whose official name includes “Mythos,” or that Anthropic officially describes as a “Mythos-class” model or similar, will qualify for this market’s resolution.\n\nFor this market to resolve to \"Yes,\" the qualifying model (as defined above) must be launched and publicly accessible, including via open beta or open rolling waitlist signups. A closed beta or any form of private access will not suffice. The release must be clearly defined and publicly announced by Anthropic as being accessible to the general public.\n\nIf a qualifying model is made publicly accessible and labeled with the relevant version name within the company’s official website, this will qualify as “publicly announced”. Labeling errors, placeholder text, or version names displayed on the website that do not correspond to a model that is actually accessible to the general public under the rules will not qualify.\n\nThe primary resolution sourc",
+ "as_of": "2026-08-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Axios, syndicated by Yahoo Tech",
+   "published_at": "2026-08-14",
+   "excerpt": "Anthropic does not plan to release an internal model they're calling \"Model 2\" that appears to be more powerful than top-of-the-line Mythos, but the company is not slowing development broadly, according to its latest risk report. \"As part of our standard R&D process, we internally train and evaluate many different exploratory versions of models that we don't intend to release. Model 2 is one of these,\" the company told Axios."
+  },
+  {
+   "id": "E2",
+   "publisher": "SiliconANGLE",
+   "published_at": "2026-08-14",
+   "excerpt": "The company stated at the time that one of the breaches was carried out by an unreleased LLM. Its new risk report reveals that it has developed two successors to Claude Mythos 5 dubbed Model 1 and Model 2. The latter algorithm, which is the more capable of the two, is “heavily used” by Anthropic staffers."
+  },
+  {
+   "id": "E3",
+   "publisher": "Anthropic — Responsible Scaling Policy, dated August 14 update",
+   "published_at": "2026-08-14",
+   "excerpt": "We shared our August 2026 Risk Report. Our Risk Reports aim to provide a direct, candid, and informative description of how we see the risks of our systems and our state of preparedness for them (particularly the catastrophic risks addressed in our Responsible Scaling Policy). It covers the risks of Anthropic's models and actions between our previous February 2026 risk report and the report's coverage date of July 15, as well as our mitigations for those risks and our forward-looking plans in each category."
+  },
+  {
+   "id": "E4",
+   "publisher": "Anthropic",
+   "published_at": "2026-07-24",
+   "excerpt": "Claude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price. On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA, Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks."
+  },
+  {
+   "id": "E5",
+   "publisher": "Anthropic",
+   "published_at": "2026-06-30",
+   "excerpt": "As of today, June 30, the export controls on Fable 5 and Mythos 5 have been lifted. Fable 5 will be available starting tomorrow, Wednesday, July 1, to users globally on the Claude Platform, Claude.ai, Claude Code, and Claude Cowork. We have also restored access to Mythos 5 for a set of US organizations, following the US government’s approval on June 26."
+  },
+  {
+   "id": "E6",
+   "publisher": "Anthropic",
+   "published_at": "2026-06-09",
+   "excerpt": "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use. With more capable models arriving in the coming months, we’re working to improve our safeguards and reduce false positives as quickly as we can. Claude Fable 5 is available everywhere today. Claude Mythos 5 is restricted to Glasswing partners (with cyber safeguards lifted) and soon to select biology researchers (with biology and chemistry safeguards lifted) only, until our broader trusted access program is available."
+  }
+ ]
+}

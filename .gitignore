@@ -1,4 +1,11 @@
-__pycache__/
-*.pyc
 .DS_Store
+__pycache__/
+*.py[cod]
 .venv/
+venv/
+research/edgartools-eval-venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

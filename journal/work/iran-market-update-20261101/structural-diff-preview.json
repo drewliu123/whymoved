@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "parent_run": "R20261102T033859Z-9c774311b155",
+  "method": "structural_ids_and_fields",
+  "judgment": {
+    "judgment_changed": true,
+    "reason": "纠正未检索预测市场的遗漏。由无法排序期限情景，更新为已有可核实市场基准：近期延续明显高于月末延续；未新增独立真实概率预测。",
+    "comparability": {
+      "status": "mixed",
+      "reason": "原研究范围是广义美伊直接冲突；本轮价格只覆盖规则列明的美方合格打击，且增加当前市场截面，不能当作同一概率的历史修订。"
+    }
+  },
+  "sources": {
+    "added": [
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37"
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "evidence": {
+    "added": [
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37"
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "claims": {
+    "added": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "removed": [],
+    "changed": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ]
+  },
+  "analysis_changed": true,
+  "comparability_issues": [
+    {
+      "path": "plan.comparison.period",
+      "before": "2026年4月至6月安排、9月至11月1日执行；展望未来数日至三个月",
+      "after": "2026年11月1日当前截面，截止11月3日至12月31日的未来期限"
+    },
+    {
+      "path": "plan.comparison.scope",
+      "before": "美国与伊朗直接冲突；以色列与地区武装为外部触发因素",
+      "after": "Polymarket美国对伊朗合格空袭或地对地导弹打击；并非所有双边敌对行动"
+    },
+    {
+      "path": "plan.comparison.unit",
+      "before": "协议状态、直接军事行动与履约观察",
+      "after": "YES买卖报价、买卖中点与合约规则"
+    }
+  ]
+}

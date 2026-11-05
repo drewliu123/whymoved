@@ -1,0 +1,94 @@
+{
+  "status": "superseded_nonconforming_legacy_archive_gate",
+  "reason": "Previous archiver accepted schema 1 claims. New archives require schema 2 claims; these runs demonstrate the former compatibility loophole, not valid strict archive/update acceptance.",
+  "old_results": {
+    "notice": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。",
+    "cases": [
+      {
+        "case": "event",
+        "development_sample": true,
+        "heldout": false,
+        "render_exit": 0,
+        "source_validation_errors": [],
+        "archive_exit": 0,
+        "claim_schema": 1,
+        "report_schema": 2,
+        "sources_schema": 2,
+        "strict_claims_validated": false,
+        "historical_availability_proved": false,
+        "archive_status": "development_archive_pass_legacy_claims",
+        "run_id": "R20261031T183409Z-c65c23fddada",
+        "archive_path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs/R20261031T183409Z-c65c23fddada",
+        "no_change_exit": 0,
+        "child_run_id": "R20261031T183409Z-adebe32fad6e",
+        "child_archive_path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs/R20261031T183409Z-adebe32fad6e",
+        "no_change_structural_diff_empty": true
+      },
+      {
+        "case": "asset",
+        "development_sample": true,
+        "heldout": false,
+        "render_exit": 0,
+        "source_validation_errors": [
+          "candidate[1].retrieved_at: timestamp is unknown",
+          "candidate[2].retrieved_at: timestamp is unknown"
+        ],
+        "archive_exit": 1,
+        "claim_schema": 1,
+        "report_schema": 2,
+        "sources_schema": 2,
+        "strict_claims_validated": false,
+        "historical_availability_proved": false,
+        "archive_status": "blocked_missing_original_retrieval_metadata",
+        "blocker": "sources: candidate[1].retrieved_at: timestamp is unknown\nsources: candidate[2].retrieved_at: timestamp is unknown\n"
+      },
+      {
+        "case": "theme",
+        "development_sample": true,
+        "heldout": false,
+        "render_exit": 0,
+        "source_validation_errors": [],
+        "archive_exit": 0,
+        "claim_schema": 1,
+        "report_schema": 2,
+        "sources_schema": 2,
+        "strict_claims_validated": false,
+        "historical_availability_proved": false,
+        "archive_status": "development_archive_pass_legacy_claims",
+        "run_id": "R20261031T183410Z-b988fc4b6895",
+        "archive_path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs/R20261031T183410Z-b988fc4b6895",
+        "no_change_exit": 0,
+        "child_run_id": "R20261031T183410Z-c819228d8f40",
+        "child_archive_path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs/R20261031T183410Z-c819228d8f40",
+        "no_change_structural_diff_empty": true
+      },
+      {
+        "case": "actor",
+        "development_sample": true,
+        "heldout": false,
+        "render_exit": 0,
+        "source_validation_errors": [],
+        "archive_exit": 0,
+        "claim_schema": 1,
+        "report_schema": 2,
+        "sources_schema": 2,
+        "strict_claims_validated": false,
+        "historical_availability_proved": false,
+        "archive_status": "development_archive_pass_legacy_claims",
+        "run_id": "R20261031T183410Z-c3bd0f805fdc",
+        "archive_path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs/R20261031T183410Z-c3bd0f805fdc",
+        "no_change_exit": 0,
+        "child_run_id": "R20261031T183410Z-4266c8da97ad",
+        "child_archive_path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs/R20261031T183410Z-4266c8da97ad",
+        "no_change_structural_diff_empty": true
+      }
+    ],
+    "integrity": {
+      "original_files": 151,
+      "originals_unchanged": true,
+      "product_scripts_unchanged": true,
+      "scope": "Writes confined to evidence/rebuild-20261031/regression/",
+      "archived_development_runs": 6
+    }
+  }
+}

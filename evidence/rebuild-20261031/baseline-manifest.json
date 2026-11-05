@@ -1,0 +1,27 @@
+{
+  "source_files": {
+    ".claude-plugin/marketplace.json": "6255ca7809fc37ddd96e55658735e2391bc3e5920d86170a6509feace916a3dc",
+    ".claude-plugin/plugin.json": "c8a1680c8a03e1d922f70e9289cc6d85814009036248662a758fdd1a18da6be0",
+    "agents/community-scout.md": "77c0705379249eaecedf2f3522519afb560256b7f0c9caa57d537e0a262052f0",
+    "agents/fact-collector.md": "2cdf34d99d9011cfaf0428b3f7955076a1f743dcfbddc4a4e54a8a49feaec3cf",
+    "agents/forecaster.md": "1cf26b012d692ba1e5b827329c0660c0bc7243e2ea85aa079cf80dc7731ba4ca",
+    "agents/red-team.md": "a439eded8315c2ae75bbc081df0d3957d7a476d5634a6771930ad60ea3f7f93b",
+    "scripts/authors.py": "b30665e931a6f9c1d288f07dd3c689e4aa05b959c153601ff13d71f79b1d8b05",
+    "scripts/check_claims.py": "430d5c6896295cab3621060be51b02ed3dd67624525e9d51ccd9917fcec4e1f5",
+    "scripts/common.py": "ae061a53718de0b808910021383d4abca6d043b4ef664d5cca98e89a6b3c7618",
+    "scripts/forecast.py": "a058765616e5ea5280730f05c0a47d37482f1ec968e4eea05d817a0acbc8f404",
+    "scripts/journal.py": "aba0147ddbdd9384ad1dad75f8cf779c686044f922126c63b2411f7024aa8535",
+    "scripts/polymarket.py": "d9052cb68fd318a7555a3e7d4815adb75e566892ceac693f7673a38cd2dc3f45",
+    "skills/research/SKILL.md": "767cb21cc9fc5ae34a346dad29946106635ad5af2314d8c68dbdb905d50af438",
+    "skills/research/references/evidence.md": "347aa9caad833af057465c69208722deac0758f135a8dc656cedfbfae45be6e8",
+    "skills/research/references/memo-template.md": "110746bfa8d378ed980eb8ecc80f11047d4e7df412a2435866b195fa82072687",
+    "skills/research/references/sources.md": "c679171c1c200d441d4024ff7b9f6a0b88ca00c2929ac2ae9e7733436ed9eb40",
+    "skills/research/references/templates.md": "a6997b8cfd92a6ea79bfe1f783f58f433c0987704043a5937af031467233d94e",
+    "tests/test_scripts.py": "5ef965d7600291071d9258a52774736b750eea159c6c181acb6c876c4efd4853",
+    "README.md": "89fc55dde2fcf63185d0cbfd6c5329c07008735457f5201bdc5e3244e6837aae"
+  },
+  "protected_data": {
+    "data/authors.json": "ac0eb0babc4e1955b67e4e83050c6e2679cc1ad8fd955f610971b06539d8bb2b",
+    "journal/memos.jsonl": "aad218f99f5f5675dc91af605d5558ca2000f7ff8ac425be15cd8e48dd6921bb"
+  }
+}

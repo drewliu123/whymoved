@@ -1,0 +1,184 @@
+{
+  "question": "截至2026-10-31，英伟达最近一个月跌了多少、为什么跌、业务发生了什么变化，接下来该关注什么？",
+  "as_of": "2026-10-31T12:19:06Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "NVDA最近已收盘日为2026-10-30，收204.64美元；9月30日228.38美元，10月价格累计变化-10.39%（204.64/228.38-1）；10月23日210.96美元，最后一周-3.00%；10月29日213.66美元，最后一天-4.22%。均为收盘价格收益，不含股息。",
+      "type": "price",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+          "publisher": "NVIDIA IR / Q4 historical quote service",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "collected_at": "2026-10-31T12:31:54Z",
+          "local_evidence": "raw/historical/october-response.json",
+          "note": "Retrospective daily completed-session series; retrieval after as_of, not an archived intraday snapshot."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "完整10月日行情中最高盘中价为10月6日243.37美元，至月末回撤15.91%；该日239.24美元也是月内最高收盘价，至月末收盘回撤14.46%。10月先涨后跌，不能把高点回撤当作整月跌幅。",
+      "type": "price",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+          "publisher": "NVIDIA IR / Q4 historical quote service",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "collected_at": "2026-10-31T12:31:54Z",
+          "local_evidence": "raw/historical/october-response.json",
+          "note": "Retrospective daily completed-session series; retrieval after as_of, not an archived intraday snapshot."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "NVIDIA 8月26日公布FY2027 Q2（截至7月26日）：总收入962.21亿美元，环比18%、同比106%；数据中心收入890亿美元，环比18%、同比117%；GAAP和non-GAAP毛利率均75.0%。这是本轮已取得的季度财务基准，不能据此声称10月经营现状已确认。",
+      "type": "fact",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "local_evidence": "raw/newsroom/body.txt"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "同一官方财报给FY2027 Q3总收入指引1080亿美元±2%，不假设来自中国的数据中心计算收入；GAAP和non-GAAP毛利率指引均74.0%±50基点。指引是管理层预期，不是已实现收入。",
+      "type": "fact",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "local_evidence": "raw/newsroom/body.txt"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "8月26日官方财报披露Vera Rubin平台正在爬坡进入全面生产，合作伙伴机架运行；并披露与第三方建立计算融资平台，拟随时间动员超过5000亿美元第三方资本且受最终协议约束。量产和融资公告不能直接当作已收现收入。",
+      "type": "fact",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "local_evidence": "raw/newsroom/body.txt"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "Reuters 10月30日收盘报道把科技股抛售联系到Amazon和Intel季报失望及AI巨额投入回报担忧，并记录NVDA当日跌4.2%；Wealthspire的Oliver Pursche表示本周焦点是AI何时取得正回报。这里只保留该媒体及受访者归因，不外推为整月已证实因果。",
+      "type": "view",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [
+        {
+          "url": "https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html",
+          "publisher": "Reuters via AOL",
+          "tier": "T2",
+          "published_at": "2026-10-30T20:23:00Z",
+          "date_kind": "updated_at; first publication unknown",
+          "local_evidence": "raw/media/body.txt"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "一条10月7日r/stocks帖将其转述的芯片采购解读为需求强，同时担忧客户加杠杆和资金循环；检索快照507分、216评论，作者未核实。这仅是一条观点样本，互动非截面历史快照，也不能证明采购发生。",
+      "type": "view",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [
+        {
+          "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+          "publisher": "Reddit r/stocks unidentified author",
+          "tier": "T4",
+          "published_at": "2026-10-07",
+          "local_evidence": "community/evidence.json",
+          "limitations": "author unavailable, later engagement snapshot, edit history unverified"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "增长兑现与AI投入回报可作为待检验研究方向；旧季收入仍高增长且指引毛利率下降，最后交易日存在板块冲击叙事。现有证据无法识别10月全月主因，未确认10月NVDA订单恶化，也不能用最后一天新闻解释全月。",
+      "type": "inference",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [],
+      "basis": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C6"
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "后续分别核对收入兑现、现金回收和客户投入回报；关注中国收入假设、Rubin交付转化，以及第三方融资平台最终协议和资金到位。平台未落地不能单独证伪近期增长，融资落地也不能证明终端需求持续。",
+      "type": "inference",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C7"
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "反方是AI投入回报担忧不必立刻减少GPU采购，高增长仍可能兑现；Q3总收入指引区间1058.4至1101.6亿美元、两种毛利率区间均73.5%至74.5%。达到公司指引不能证明满足股票隐含预期或客户长期回报，毛利率下降不代表毛利额下降。",
+      "type": "inference",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "官方FY2027 Q2经营现金流240.77亿美元，半年累计744.21亿美元，据此Q1为503.44亿美元；Q2应收账款变动占用现金223.46亿美元。收入高增长应同时核查现金转化，这些旧季数字不证明10月订单或融资恶化。",
+      "type": "fact",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "local_evidence": "raw/newsroom/body.txt"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "H1在截面至2026年12月31日23:59:59 ET窗口内，FY2027 Q3首次合格官方披露数据中心收入严格超过1000亿美元：三个冻结证据单次判断原p为0.63、0.64、0.68，原版forecast.py算得final_prob=0.65。仅使用C3/C4/C5；无经核实截面成交参照，可信度较低，同模型多调用不构成统计独立，不声称更准。",
+      "type": "inference",
+      "as_of": "2026-10-31T12:19:06Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5"
+      ]
+    }
+  ]
+}

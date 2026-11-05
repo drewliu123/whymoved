@@ -1,0 +1,169 @@
+{
+  "schema_version": 2,
+  "title": "2026年10月中国CPI同比预测：中心+0.9%",
+  "question": "预测2026年10月中国通货膨胀率（全国CPI同比）可能是多少？",
+  "type": "event_pricing",
+  "task": "CPI同比中心预测与情景区间",
+  "as_of": "2026-11-02T07:45:35.263179+00:00",
+  "answer": {
+    "text": "我对2026年10月中国CPI同比的中心预测是+0.9%，主要情景区间为+0.7%～+1.1%，倾向于与9月基本持平。这是基准情景预测；完整10月分项贡献尚不齐，区间不是统计置信区间。",
+    "claim_ids": [
+      "C8",
+      "C11"
+    ]
+  },
+  "findings": [
+    {
+      "title": "外部模型预测同样是0.9%",
+      "text": "Trading Economics对10月的模型预测为0.9%；原始表格的调查共识栏为空，因此这个数字只代表该平台模型。",
+      "claim_ids": [
+        "C5"
+      ],
+      "why_it_matters": "提供目标月份一致的外部比较基准，但不能由此宣称全市场一致预期。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "上一轮仅核对发布时间。",
+        "detail": "补上目标月份外部模型预测。"
+      }
+    },
+    {
+      "title": "去年基数决定：环比约0.2%即可维持同比0.9%",
+      "text": "9月同比为0.9%，去年10月环比为0.2%。若今年10月环比也为0.2%，滚动同比仍约0.9%；若环比为0.0%或0.4%，同比约0.7%或1.1%。这是围绕可核验基数构造的情景范围，尚未完成全分项加权预测。",
+      "claim_ids": [
+        "C2",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "why_it_matters": "把中心预测与可观察的当月价格变化连接，说明什么会使预测偏高或偏低。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "单独看到9月同比0.9%不足以推得10月。",
+        "detail": "加入去年同月环比基数，给出当月环比与同比的滚动关系。"
+      }
+    },
+    {
+      "title": "食品偏弱，月末油价上调不足以直接抬高全月预测",
+      "text": "西南证券10月15日研报中的月初高频显示，猪肉环比下降2.2%、蔬菜下降5.9%；这给预测带来下行风险。国内汽柴油10月15日未调价，10月29日24时起才每吨上调345元和335元，月末这次上涨只覆盖10月最后两天，不能套用到全月。食品批发价格到CPI零售口径的传导尚未完整核算，因此维持0.9%的中心预测。",
+      "claim_ids": [
+        "C9",
+        "C10",
+        "C11"
+      ],
+      "why_it_matters": "避免用整月未发生的能源上涨抵消食品下行，也不把月初样本当成全月实际值。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "单独使用TE0.9%及上月实际。",
+        "detail": "用食品方向与油价生效时点检验预测风险，倾向警惕下行而非上行。"
+      }
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "10月官方CPI环比及食品、能源、服务分项贡献。",
+      "meaning": "环比明显低于0%或高于0.4%将使0.7%-1.1%主要情景失效；11月9日发布时核验。",
+      "claim_ids": [
+        "C1",
+        "C7",
+        "C8"
+      ]
+    }
+  ],
+  "limitations": [],
+  "tables": [],
+  "opportunity": {
+    "version": 1,
+    "applicability": "not_applicable",
+    "reason": "本轮预测CPI数值，不研究交易机会。"
+  },
+  "analysis": {
+    "version": 1,
+    "question_kind": "event_forecast",
+    "method": "reference_class_scenarios",
+    "price_relevance": false,
+    "baseline": "2026年9月CPI同比0.9%；2025年10月CPI环比0.2%。",
+    "mechanism_chain": [
+      "10月食品能源服务月度变化",
+      "整体CPI环比",
+      "去年同期基数",
+      "10月CPI同比"
+    ],
+    "baseline_claim_ids": [
+      "C2",
+      "C6"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "10月总体价格月度变化接近去年同期，CPI同比维持9月0.9%附近。"
+      },
+      {
+        "id": "H2",
+        "explanation": "食品、能源或服务价格出现足够大的月度偏离，使CPI同比显著离开0.9%附近。"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "总体环比接近去年10月0.2%，落在0.0%-0.4%附近。"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "高频净影响足以使总体环比明显低于0%或高于0.4%。"
+          }
+        ],
+        "status": "missing",
+        "gap_reason": "尚未取得足以加权推算整体CPI的完整10月食品能源服务数据。",
+        "claim_ids": [],
+        "supports": [],
+        "weakens": [],
+        "interpretation": "不能从局部或缺失高频裁定10月总体环比。",
+        "next_observation": "10月分项贡献或官方月度发布。",
+        "by": "2026-11-09T09:30:00+08:00",
+        "supports_if": "综合高频对应环比落在0.0%-0.4%，支持H1。",
+        "weakens_if": "综合高频显示明显偏离该范围，削弱H1。"
+      },
+      {
+        "id": "T2",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "可核验预测接近0.9%。"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "可核验预测明显偏离0.7%-1.1%区间。"
+          }
+        ],
+        "status": "missing",
+        "gap_reason": "仅获得TE单一模型观点，未取得可支持完整预测分布的调查或多机构同口径输入。",
+        "claim_ids": [],
+        "supports": [],
+        "weakens": [],
+        "interpretation": "TE可作外部比较，但不凭单一模型观点认定预测共识或完整区间已证实。",
+        "next_observation": "发布前更多具名预测。",
+        "by": "2026-11-02T07:44:18.568812+00:00",
+        "supports_if": "多项同口径预测集中0.9%附近。",
+        "weakens_if": "多项同口径预测显著偏离0.7%-1.1%。"
+      }
+    ],
+    "conclusion": "我对2026年10月中国CPI同比的中心预测是+0.9%，主要情景区间为+0.7%～+1.1%，倾向于与9月基本持平。这是基准情景预测；完整10月分项贡献尚不齐，区间不是统计置信区间。",
+    "conclusion_claim_ids": [
+      "C8",
+      "C11"
+    ],
+    "model_status": "not_applicable",
+    "model_reason": "经营桥、FCF、DCF均不适用于CPI；本轮自行执行滚动同比情景算术，非全分项计量模型。",
+    "models": [],
+    "market": {
+      "status": "not_applicable",
+      "reason": "用户要宏观数字预测，未要求交易定价或个人交易建议。",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

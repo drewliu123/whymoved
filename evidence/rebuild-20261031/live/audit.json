@@ -1,0 +1,468 @@
+{
+  "schema_version": 2,
+  "role": "untrusted execution metadata; no quality certification",
+  "queries": {
+    "native_web_queries": [
+      "Microsoft FY25 Q4 24.2 billion capital expenditures finance leases 6.5 17.1 cash",
+      "Microsoft capex finance leases cash flow Hacker News",
+      "Microsoft July 30 2025 24.2 capital expenditures finance leases cash 17.1 Reuters CNBC",
+      "Microsoft FY25 Q4 earnings call transcript cash paid property equipment finance leases 6.5 Microsoft.com",
+      "\"site:news.ycombinator.com\" \"Microsoft\" \"leases\" capex"
+    ],
+    "search_call_count": 9,
+    "breakdown": {
+      "native_web": 5,
+      "engine_actual_hn_queries": 2,
+      "direct_algolia_supplement": 2
+    },
+    "requested_engine_subqueries": 3,
+    "actual_engine_subqueries": 2,
+    "note": "Engine normalized to 2 subqueries. Count is logical search request count, not hidden provider retries, result pages or enrichment requests. 2 host WebFetch calls: official success, GeekWire 403; then 10 urllib GET requests including original retrieval and supplementary searches, all HTTP 200.",
+    "diagnostic_scope": "parent diagnostic copied; no fresh diagnose or login-backed doctor needed because run restricts to HN",
+    "native_results_use": "Only locate URLs; all accepted quotes separately fetched."
+  },
+  "engine": {
+    "runtime": "/Users/frankzhang/.local/bin/python3.12",
+    "skill_dir": "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days",
+    "engine_argv": [
+      "Microsoft capex finance leases cash PP&E cash burden",
+      "--research-only",
+      "--emit=json",
+      "--json-profile=raw",
+      "--plan",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/raw/engine-plan.json",
+      "--search",
+      "hackernews",
+      "--days=365",
+      "--save-dir="
+    ],
+    "env_mode": "env -i, retain PATH and HOME only for runtime; TMPDIR live/tmp",
+    "overrides": {
+      "LAST30DAYS_CONFIG_DIR": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/runtime-state",
+      "LAST30DAYS_SKIP_KEYCHAIN": "1",
+      "LAST30DAYS_NATIVE_SEARCH": "1",
+      "SETUP_COMPLETE": "true",
+      "FROM_BROWSER": "off"
+    },
+    "save_resolver_argv": [
+      "--resolve-save-dir",
+      "--save-dir="
+    ],
+    "saved_directory": "",
+    "exit_code": 0,
+    "isolation_note": "Runtime-only environment overrides, no installed/global config written. Engine was invoked without -I because it imports sibling lib; all locally written Python readers use -I and separate tools directory. No browser/cookie/paid provider was used."
+  },
+  "diagnostic": {
+    "file": "raw/parent-diagnose.json",
+    "scope": "parent-provided; run source_status is in raw/last30days.json"
+  },
+  "commands": [
+    {
+      "step": "select",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+        "select",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.annotated.json",
+        "--out",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:36:19.451209+00:00",
+      "elapsed_seconds": 0.0258,
+      "exit_code": 1,
+      "stdout": "logs/select.stdout",
+      "stderr": "logs/select.stderr"
+    },
+    {
+      "step": "select",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+        "select",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.annotated.json",
+        "--out",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:36:52.820542+00:00",
+      "elapsed_seconds": 0.0467,
+      "exit_code": 0,
+      "stdout": "logs/select.stdout",
+      "stderr": "logs/select.stderr"
+    },
+    {
+      "step": "sources-validate",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+        "validate",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:36:52.867904+00:00",
+      "elapsed_seconds": 0.0333,
+      "exit_code": 0,
+      "stdout": "logs/sources-validate.stdout",
+      "stderr": "logs/sources-validate.stderr"
+    },
+    {
+      "step": "plan-validate",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/research_plan.py",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/plan.json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:36:52.901577+00:00",
+      "elapsed_seconds": 0.0278,
+      "exit_code": 0,
+      "stdout": "logs/plan-validate.stdout",
+      "stderr": "logs/plan-validate.stderr"
+    },
+    {
+      "step": "claims-validate",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+        "--json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:36:52.929672+00:00",
+      "elapsed_seconds": 0.0389,
+      "exit_code": 1,
+      "stdout": "logs/claims-validate.stdout",
+      "stderr": "logs/claims-validate.stderr"
+    },
+    {
+      "step": "select",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+        "select",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.annotated.json",
+        "--out",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:37:29.643620+00:00",
+      "elapsed_seconds": 0.042,
+      "exit_code": 0,
+      "stdout": "logs/select-retry3.stdout",
+      "stderr": "logs/select-retry3.stderr"
+    },
+    {
+      "step": "sources-validate",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+        "validate",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:37:29.686193+00:00",
+      "elapsed_seconds": 0.0334,
+      "exit_code": 0,
+      "stdout": "logs/sources-validate-retry2.stdout",
+      "stderr": "logs/sources-validate-retry2.stderr"
+    },
+    {
+      "step": "plan-validate",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/research_plan.py",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/plan.json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:37:29.719947+00:00",
+      "elapsed_seconds": 0.0273,
+      "exit_code": 0,
+      "stdout": "logs/plan-validate-retry2.stdout",
+      "stderr": "logs/plan-validate-retry2.stderr"
+    },
+    {
+      "step": "claims-validate",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+        "--json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:37:29.747663+00:00",
+      "elapsed_seconds": 0.0355,
+      "exit_code": 0,
+      "stdout": "logs/claims-validate-retry2.stdout",
+      "stderr": "logs/claims-validate-retry2.stderr"
+    },
+    {
+      "step": "render",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/render_report.py",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+        "--out-dir",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/rendered"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:37:29.784159+00:00",
+      "elapsed_seconds": 0.0435,
+      "exit_code": 0,
+      "stdout": "logs/render.stdout",
+      "stderr": "logs/render.stderr"
+    },
+    {
+      "step": "archive",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+        "archive",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/plan.json",
+        "--calculations",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/calculations.json"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:37:29.828051+00:00",
+      "elapsed_seconds": 0.0504,
+      "exit_code": 0,
+      "stdout": "logs/archive.stdout",
+      "stderr": "logs/archive.stderr"
+    },
+    {
+      "step": "archive-show",
+      "command": [
+        "/Users/frankzhang/.local/bin/python3.12",
+        "-I",
+        "-c",
+        "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/frankzhang/Desktop/投研助手/scripts",
+        "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+        "show",
+        "R20261031T183729Z-dab87cf50406"
+      ],
+      "environment": {
+        "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-31T18:37:29.878875+00:00",
+      "elapsed_seconds": 0.0407,
+      "exit_code": 0,
+      "stdout": "logs/archive-show.stdout",
+      "stderr": "logs/archive-show.stderr"
+    }
+  ],
+  "previous_outcomes": {
+    "completed_at": "2026-10-31T18:37:29.920123+00:00",
+    "elapsed_wall_seconds_from_retrieval_start": 362.415,
+    "engine_exit": 0,
+    "engine_reported_wall_seconds": 5.3,
+    "actual_engine_search_queries": 2,
+    "native_search_queries": 5,
+    "direct_algolia_search_queries": 2,
+    "logical_total_search_queries": 9,
+    "selected_sources": [
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18"
+    ],
+    "engine_relevant_selected": 0,
+    "supplementary_community_original_selected": 1,
+    "report_findings": 3,
+    "arithmetic_independent_check_passed": true,
+    "archive_run_id": "R20261031T183729Z-dab87cf50406",
+    "product_code_modified": false,
+    "scope_note": "Timing starts at runtime preparation immediately before resolver/engine; excludes earlier skill/code reading and 2 pre-engine WebSearch calls. 5.3s is engine own stderr duration. Search counts exclude non-search GETs and unobservable provider internals.",
+    "final_validation_commands_exit_zero": true,
+    "earlier_failed_attempts": [
+      {
+        "step": "select",
+        "exit_code": 1,
+        "stderr": "logs/select.stderr",
+        "stdout": "logs/select.stdout"
+      },
+      {
+        "step": "claims-validate",
+        "exit_code": 1,
+        "stderr": "logs/claims-validate.stderr",
+        "stdout": "logs/claims-validate.stdout"
+      }
+    ],
+    "earlier_failure_notes": [
+      "First local validation harness incorrectly retained -c as script argv[0], raising FileNotFoundError before product script ran; fixed local harness only. Original select.stderr was overwritten by second attempt before unique retry log naming; command and traceback retained in transcript and this note.",
+      "Initial claims validator rejected negative phrase 不能代表市场共识 due to literal 共识 matcher. C7 rewritten as one-person attribution without breadth language; report retains representativeness limitation."
+    ]
+  },
+  "arithmetic": {
+    "method": "Independently specified Decimal arithmetic; does not evaluate formula strings",
+    "passed": true,
+    "checks": [
+      {
+        "id": "K1",
+        "expected": "7.121",
+        "independently_recomputed": "7.121",
+        "passed": true
+      },
+      {
+        "id": "K2",
+        "expected": "0.621",
+        "independently_recomputed": "0.621",
+        "passed": true
+      },
+      {
+        "id": "K3",
+        "expected": "71.611",
+        "independently_recomputed": "71.611",
+        "passed": true
+      },
+      {
+        "id": "K4",
+        "expected": "69.328",
+        "independently_recomputed": "69.328",
+        "passed": true
+      }
+    ],
+    "limitations": "Input truth and accounting bridge need fetched evidence review; arithmetic does not identify residual components. Rounded source values make quarterly differences approximate."
+  },
+  "paired_replay": {
+    "method": "Same agent nonblind replay, identical frozen sources/claims; no additional retrieval, not an old plugin complete run and not a model evaluation",
+    "budget": "Both approximately 600 Chinese characters, measured with U+4E00-U+9FFF count; citation IDs, Latin text, digits, punctuation excluded",
+    "old_chinese_characters": 582,
+    "new_chinese_characters": 549,
+    "frozen_hashes": {
+      "claims.json": "857d1c7fc077f9f7c090edc37a8ee7d0e35791adf7feb56f646d90d70d9f69c0",
+      "sources.json": "afa281855c84ac9282e807dc1113ab5d37dc1e5f6a3bf3335061faa8edf850f7",
+      "report.json": "f0c51665d8bc6aff517c97420fcdca1d8f8966ba6b5faf2e722ba49fd4a3d841"
+    },
+    "verified_selected_sources": 5,
+    "claims": 7,
+    "fact_claims": 3,
+    "view_claims": 2,
+    "inference_claims": 2,
+    "arithmetic_checks": 4,
+    "both_present": {
+      "cash_vs_investment_definition": true,
+      "unreconciled_residual": true,
+      "annual_cash_lease_principal_example": true,
+      "community_attribution_limit": true
+    },
+    "quality_score": null,
+    "quality_inference": "Presentation inspection only; no superiority, alpha, model accuracy, time-saving or scoring claim."
+  },
+  "content_review": {
+    "reviewer": "same author, nonblind",
+    "correction": "Only period scope early. Operational diagnostics moved to later limitations. Community view removed as reference for cash arithmetic. Unused TechRadar metadata corrected."
+  },
+  "final_api_validation": {
+    "sources": [],
+    "plan": [],
+    "claims": {
+      "passed": true,
+      "total": 7,
+      "failures": {}
+    },
+    "report": [],
+    "rendered": true
+  },
+  "limitations": [
+    "No browser visual check",
+    "No entire old-plugin run or independent quality/alpha evaluation",
+    "13 engine candidates rejected; useful community source fetched through supplement",
+    "Residual 0.621B not reconciled",
+    "Final archive APIs validate schema and hashes, not truth of metadata"
+  ]
+}

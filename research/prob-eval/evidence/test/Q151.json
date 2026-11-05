@@ -1,0 +1,43 @@
+{
+  "qid": "Q151",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "published_at": "2026-07-17 (updated 15:44; originally published 2026-07-16)",
+      "publisher": "Reuters, via Investing.com",
+      "url": "https://ca.investing.com/news/commodities-news/oil-rises-on-intensifying-usiran-hostilities-and-threat-of-red-sea-closure-4738777",
+      "excerpt": "The two foes expanded fighting on Friday, with the U.S. striking bridges and an airport in Iran and Tehran hitting a power and desalination plant in Kuwait. Saudi Arabia has diverted more than 70% of its normal daily crude exports to the Red Sea port of Yanbu since the beginning of the war. Shipments from Yanbu averaged 4 million barrels per day in recent weeks, up from around 973,000 bpd in the same period last year.",
+      "relevance": "Escalating infrastructure attacks and concentrated reliance on the Red Sea export route identify immediate supply risks relevant to a sharp WTI move during the remaining July sessions."
+    },
+    {
+      "published_at": "2026-07-16 (published 04:18 EDT; updated 16:30 EDT)",
+      "publisher": "Reuters, via MarketScreener",
+      "url": "https://www.marketscreener.com/news/oil-eases-as-traders-weigh-us-iran-conflict-risks-ce7f5ed2df8ff127",
+      "excerpt": "Iran has asked Yemen's Houthis to be ready to close the Red Sea oil route if the U.S. strikes Iranian power infrastructure, three sources told Reuters. The fragile truce reached in June has collapsed, disrupting energy flows through the Strait of Hormuz, which handled about a fifth of daily global oil and LNG trade before the war began.",
+      "relevance": "The conditional threat to a second export chokepoint provides a specific near-term escalation mechanism that could amplify oil supply disruption."
+    },
+    {
+      "published_at": "2026-07-15 10:28 CDT",
+      "publisher": "OilPrice.com — Julianne Geiger",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Crude-Inventories-Fall-17-Million-Barrels-As-Iran-Tensions-Rattle-Markets.amp.html",
+      "excerpt": "US crude inventories fell 1.7 million barrels for the week ending July 10, leaving stockpiles 6% below the five-year average. The EIA's data release follows API's figures that were released a day earlier, which reported that crude oil inventories saw a small draw of 564,000 barrels in the period.",
+      "relevance": "The latest verified inventory release available before the cutoff indicates the size of the domestic supply buffer entering further July disruption risk."
+    },
+    {
+      "published_at": "2026-07-10",
+      "publisher": "International Energy Agency",
+      "url": "https://www.iea.org/reports/oil-market-report-july-2026",
+      "excerpt": "Global oil supply rebounded by a sharp 4.1 mb/d to 98.8 mb/d in June, as a resumption of flows through the Strait of Hormuz underpinned a partial recovery in Gulf production. World output was nevertheless some 9.4 mb/d below pre-war levels. Global observed oil inventories rose for the first time in four months in June, by 21 mb, as sharply higher oil on water volumes more than offset continued draws in onshore tanks.",
+      "relevance": "This official assessment quantifies both the partial supply recovery and the remaining production and inventory vulnerabilities before renewed July hostilities."
+    },
+    {
+      "published_at": "2026-07-07",
+      "publisher": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/pressroom/releases/press590.php",
+      "excerpt": "The U.S. Energy Information Administration published its July Short-Term Energy Outlook (STEO), increasing its expectations for global oil production. Shipping traffic through the Strait of Hormuz has increased following the June 18 memorandum of understanding (MOU) between the United States and Iran to end a months-long conflict and reopen the strait. EIA now expects worldwide crude oil production and trade flows to rebound to near pre-conflict levels by year’s end, with most previously shut in production returning online by the first quarter of 2027.",
+      "relevance": "The official early-July recovery baseline helps assess how much subsequent shipping disruption could undermine the supply outlook during the forecast window."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-17, inclusive; no intraday experiment timestamp was supplied. Included only source text with explicit publication or update dates on or before that date. Excluded later reporting, retrospectively compiled July data, prediction-market and betting pages, odds, and price quotations. Source excerpts were verified through web_search results displaying dated source text; direct web_fetch failed because of a provider configuration error, and the requested agent-reach fallback returned a web-channel rate limit, so full-page retrieval could not be completed. Later sidebar quotes and related-news material were excluded. These items provide contemporaneous supply-risk context and do not establish whether any qualifying Pyth active-month one-minute candle reached the threshold; no market outcome is asserted. The supplied active-month rollover rule was truncated, and market creation time was not provided."
+}

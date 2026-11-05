@@ -1,0 +1,32 @@
+{
+ "qid": "Q047",
+ "question": "Will the Fed Pause–Pause–Pause in the next three decisions (Jun–Jul–Sep)?",
+ "rules": "The FED interest rates are defined in this market by the upper bound of the target federal funds rate. The decisions on the target federal funds rate are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve according to the decisions made by the next three Federal Open Market Committee (FOMC) meetings: June 16-17; July 28-29; and September 15-16.\n\nA qualifying cut occurs when the new upper bound of the target federal funds rate is lower compared to the level it was prior to the respective meeting.\n\nA qualifying hike occurs when the new upper bound of the target federal funds rate is higher compared to the level it was prior to the respective meeting.\n\nA qualifying pause occurs when the new upper bound of the target federal funds rate is equal to the level it was prior to the respective meeting.\n\nIf the Fed publishes a different combination than any listed, this market will resolve to \"Other\". Any rate hike will be encompassed by \"Other\".\n\nEmergency rate cuts outside the regularly scheduled meetings will not be considered.\n\nThe resolution source for this market is the FOMC’s statement after its meetings:\nhttps://www.federalreserve.gov/monetarypolicy/f",
+ "as_of": "2026-09-02",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-08-07",
+   "excerpt": "Both nonfarm payroll employment (-23,000) and the unemployment rate (4.1 percent) changed little in July, the U.S. Bureau of Labor Statistics reported today. The change in total nonfarm payroll employment for May was revised down by 66,000, from +129,000 to +63,000, and the change for June was revised down by 37,000, from +57,000 to +20,000. With these revisions, employment in May and June combined is 103,000 lower than previously reported."
+  },
+  {
+   "id": "E2",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-08-12",
+   "excerpt": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.1 percent on a seasonally adjusted basis in July after falling 0.4 percent in June, the U.S. Bureau of Labor Statistics reported today. The all items index rose 3.4 percent for the 12 months ending July after rising 3.5 percent for the 12 months ending June. The all items less food and energy index rose 2.5 percent over the year, following a 2.6-percent increase over the 12 months ending June."
+  },
+  {
+   "id": "E3",
+   "publisher": "Board of Governors of the Federal Reserve System — Chairman Kevin Warsh",
+   "published_at": "2026-08-28",
+   "excerpt": "And while this summer's PCE and CPI readings were better than expected, they do not tell me that underlying trends have meaningfully improved. Here is my standard: We must be confident that underlying inflation is moving to our objective, clearly and at sufficient speed. Otherwise, we have work to do."
+  },
+  {
+   "id": "E4",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-09-01",
+   "excerpt": "The number of job openings was little changed at 7.3 million in July, the U.S. Bureau of Labor Statistics reported today. Hires and total separations both changed little at 5.1 million. Within separations, quits (3.1 million) and layoffs and discharges (1.7 million) were little changed."
+  }
+ ]
+}

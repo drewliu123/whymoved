@@ -1,0 +1,59 @@
+{
+  "qid": "Q033",
+  "as_of": "2026-09-11",
+  "kept": [
+    {
+      "excerpt": "VTsIOM's September 11 release reports party support for August 31–September 6, 2026: United Russia 37.4%, CPRF 13.1%, New People 10.4%, LDPR 9.9%, and A Just Russia 4.5%. New People's support fell 1.1 percentage points from the preceding week, while LDPR gained 1.2 points. The survey used a combined telephone and household-interview sample of 1,600 adults, with a stated maximum error of 2.5%.",
+      "published_at": "2026-09-11",
+      "publisher": "Russian Public Opinion Research Center (VTsIOM)",
+      "relevance": "The latest verified primary polling release at the cutoff places New People narrowly ahead of LDPR in voting intention, making their competition central to the third-place question.",
+      "url": "https://wciom.ru/analytical-reviews/analiticheskii-obzor/reitingi-prezidenta-pravitelstva-i-politicheskikh-partii-11092026"
+    },
+    {
+      "excerpt": "ExtremeScan's interim telephone survey conducted September 4–10 interviewed 800 Russian adults and reported a margin of error of ±3.5%. Among respondents naming a party, United Russia received 35.6%, CPRF 23.9%, New People 16.2%, LDPR 11.0%, and A Just Russia 5.9%. The report explicitly states that these are party-list voting preferences and that the single-mandate half of the Duma is not modelled.",
+      "published_at": "2026-09-10",
+      "publisher": "ExtremeScan — Elena Koneva",
+      "relevance": "This independent survey provides a contrasting measure that places New People third in party-list preferences, while explicitly identifying the missing constituency-seat component.",
+      "url": "https://extremescan.eu/en/duma-2026-party-preferences/"
+    },
+    {
+      "excerpt": "FOM's preliminary election forecast gives United Russia 47–49%, CPRF 14–17%, LDPR 10–12%, New People 8–9%, and A Just Russia 6–7%. The accompanying text identifies United Russia as the expected leader, CPRF second and LDPR third. Its underlying September 4–6 household survey interviewed 1,500 adults in 97 settlements across 51 regions, with a stated maximum sampling error of 3.6%.",
+      "published_at": "2026-09-10",
+      "publisher": "Public Opinion Foundation (FOM)",
+      "relevance": "This primary forecast places LDPR ahead of New People, providing direct counterevidence to surveys that put New People third in national voting preferences.",
+      "url": "https://fom.ru/posts/15378"
+    },
+    {
+      "excerpt": "A September 11 press digest reproduces Vedomosti's report that VTsIOM and FOM presented election forecasts on September 10. VTsIOM projected United Russia at 51–53%, CPRF at 13–15%, New People and LDPR each at 9–11%, and A Just Russia at 4–6%. FOM instead projected LDPR at 10–12% and New People at 8–9%.",
+      "published_at": "2026-09-11",
+      "publisher": "Moscow City Election Commission, reproducing Vedomosti reporting by Elena Mukhametshina",
+      "relevance": "Contemporaneous reporting documents the disagreement between major forecasters and VTsIOM's overlapping projected ranges for New People and LDPR.",
+      "url": "https://www.mosgorizbirkom.ru/news/obzor-pressy-za-11-sentyabrya-2026-goda/"
+    },
+    {
+      "excerpt": "Ksenia Smolyakova reports that New People was rapidly accumulating social-media reactions as Russians compared it with Yabloko. The monitoring covered VKontakte, MAX, Telegram and YouTube, with other major platforms excluded for technical reasons. The article reports that candidate exclusions and restrictions on competition had become major subjects of campaign discussion.",
+      "published_at": "2026-09-07",
+      "publisher": "Riddle Russia — Ksenia Smolyakova",
+      "relevance": "This recent expert assessment supplies campaign context on New People's visibility and restricted competition, while identifying limitations of social-media engagement evidence.",
+      "url": "https://ridl.io/managed-elections-and-unmanageable-interest/"
+    },
+    {
+      "excerpt": "The article reports a large polling discrepancy: VTsIOM placed New People at 13.4%, whereas FOM measured 6%, behind CPRF and LDPR. It describes New People's regional network and grassroots participation as weak. It also notes that New People entered the Duma in 2021 with 5.3% of the vote.",
+      "published_at": "2026-05-07",
+      "publisher": "Riddle Russia — Ksenia Smolyakova",
+      "relevance": "The expert preview identifies persistent polling disagreement and organizational weaknesses that could affect New People's ability to translate national support into seats.",
+      "url": "https://ridl.io/how-russia-s-parliamentary-parties-are-preparing-for-the-2026-state-duma-elections-new-people-ldpr-and-a-just-russia/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.cikrb.ru/news/index.php?ELEMENT_ID=99794",
+      "reason": "Excerpt explicitly mentions September 20, 2026, after the September 11 cutoff, as the scheduled election date; removed under the rule excluding mentions of anything after the cutoff."
+    },
+    {
+      "url": "https://interfax.com/newsroom/top-stories/72754/",
+      "reason": "Excerpt reports election results and seat totals, and relevance states the resulting party ranking; removed under the explicit results exclusion, although these are historical 2021 results."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-09-11 inclusive. Included eight items with publication dates verified from dated source text or indexed article headers; Russian excerpts are translated or factually condensed into English. Used web_search for discovery; web_fetch failed because of a provider configuration error, so agent-reach web read supplied source text where needed. Excluded undated live pages, prediction-market and betting sources, and all material published after the cutoff. Poll fieldwork dates were distinguished from publication dates. The Moscow election commission item is a dated reproduction of newspaper reporting, not a separate poll; its FOM figures overlap with the primary FOM item. Voting-intention shares and vote forecasts are not total-seat forecasts, and no complete constituency-level seat projection was verified in the selected sources."
+}

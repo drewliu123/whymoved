@@ -1,0 +1,39 @@
+{
+  "question": "截至2026-10-31，英伟达最近一个月跌了多少、为什么跌、业务发生了什么变化，接下来该关注什么？",
+  "type": "asset",
+  "entity": "NVIDIA (NVDA)",
+  "as_of": "2026-10-31T12:19:06Z",
+  "market_snapshot": [
+    {
+      "source": "LSEG market-data feed via FT/Markit and Yahoo",
+      "outcome": "NVDA close USD",
+      "price": 204.64,
+      "session": "2026-10-30",
+      "month_return_pct": -10.39,
+      "week_return_pct": -3.0
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "text": "FY2027 Q3实际营收不低于原1080亿美元±2%指引下限1058.4亿美元。",
+      "verify_by": "2026-11-17",
+      "falsify_if": "官方同口径Q3营收严格低于1058.4亿美元；等于不证伪；未发布、口径不可比或舍入影响边界则待核实/void，不能记miss。",
+      "my_prob": null,
+      "market_prob": null,
+      "authors": []
+    },
+    {
+      "id": "H2",
+      "text": "FY2027 Q3数据中心收入占总营收超过90%。",
+      "verify_by": "2026-11-17",
+      "falsify_if": "官方同口径Data Center/总营收≤90%；字段缺失、口径不可比或舍入影响边界则待核实/void。",
+      "my_prob": null,
+      "market_prob": null,
+      "authors": [],
+      "basis_note": "Q2 approximate92.5% derived from rounded reported amounts; Q3>90% is a falsifiable hypothesis, not a precise Q2 ratio extrapolation."
+    }
+  ],
+  "probability_note": "No subjective numerical probabilities assigned; no newer multi-judge algorithm; crossed late market diagnostic excluded as baseline",
+  "red_team_file": "red-team.json"
+}

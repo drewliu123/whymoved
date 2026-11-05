@@ -1,0 +1,109 @@
+{
+  "question": "截至研究截面，英伟达（NVDA）下一次财报前的市场预期是什么，关键分歧和证伪条件有哪些？",
+  "type": "asset",
+  "entity": "NVIDIA (NASDAQ: NVDA)",
+  "as_of": "2026-10-31T05:12:10.269507Z",
+  "horizon": "2026-11-17 Q3 FY2027财报；合约最晚裁决材料截止2026-12-31 23:59 ET",
+  "comparison": {
+    "baseline": "0.1.1",
+    "candidate": "0.2.0",
+    "design": "共用冻结证据与问题截面，比较研究流程和概率处理；不是独立检索 A/B 或准确率评测",
+    "runtime": "安装已更新；当前会话旧注册项仍在，直接读取新技能和调用新脚本"
+  },
+  "angles": [
+    {
+      "angle": "基本面变化",
+      "question": "最新季度收入、数据中心收入和毛利率有哪些变化？",
+      "queries": [
+        "NVIDIA revenue data center Blackwell gross margin"
+      ],
+      "tiers": [
+        "T0",
+        "T2"
+      ]
+    },
+    {
+      "angle": "催化剂日历",
+      "question": "下一次财报、产品和交付的官方节点是什么？",
+      "queries": [
+        "NVIDIA next earnings investor calendar Rubin"
+      ],
+      "tiers": [
+        "T0",
+        "T2"
+      ]
+    },
+    {
+      "angle": "预期与估值",
+      "question": "下一季收入和 EPS 的一致预期是什么，估值隐含哪些条件？",
+      "queries": [
+        "NVIDIA earnings revenue EPS analyst estimates valuation"
+      ],
+      "tiers": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "angle": "资金与情绪",
+      "question": "截面时点股价、期权隐含波动和社区讨论如何？",
+      "queries": [
+        "NVDA options implied move short interest",
+        "NVDA earnings expectations discussion"
+      ],
+      "tiers": [
+        "T0",
+        "T1",
+        "T4"
+      ]
+    },
+    {
+      "angle": "反方观点",
+      "question": "出口限制、客户回报、竞争和毛利率有哪些最强反方论据？",
+      "queries": [
+        "NVIDIA AI capex monetization export controls competition",
+        "英伟达 财报 预期 分歧"
+      ],
+      "tiers": [
+        "T2",
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "sources": {
+    "T0": [
+      "NVIDIA Investor Relations",
+      "NVIDIA Newsroom",
+      "SEC EDGAR",
+      "Nasdaq/Cboe direct quote"
+    ],
+    "T1": [
+      "analyst consensus with dated sample",
+      "options implied pricing"
+    ],
+    "T2": [
+      "Reuters",
+      "Bloomberg",
+      "CNBC"
+    ],
+    "T4": [
+      "r/NVDA_stock",
+      "r/stocks",
+      "r/investing",
+      "r/wallstreetbets",
+      "r/SecurityAnalysis",
+      "X"
+    ]
+  },
+  "authors": [],
+  "gaps": [
+    "未取得带时点和到期日的期权隐含波幅、空头持仓和标准forward PE。",
+    "Zacks样本人数与EPS完整调整口径未取得，不代表所有参与者。",
+    "X未配置可用后端；Reddit部分超时，仅保留5个线程，不能量化多空比例。",
+    "未找到已核实、与总收入超过1089.9亿美元完全匹配的可成交合约；一次补搜SSL失败，不证明市场不存在。",
+    "盘口为05:03至05:04 UTC的历史快照，与冻结结束并非完全同时。",
+    "未取得可核实的一线媒体最新反方原文、10月Rubin收入或Blackwell独立收入。"
+  ]
+}

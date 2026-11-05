@@ -1,0 +1,42 @@
+{
+  "qid": "Q035",
+  "as_of": "2026-07-06",
+  "kept": [
+    {
+      "excerpt": "The 2022 World Cup's best-player awards went to Lionel Messi (Golden Ball), Kylian Mbappé (Silver Ball), and Luka Modrić (Bronze Ball). Mbappé also won the Golden Boot with eight goals and received three player-of-the-match awards.",
+      "published_at": "2022-12-19",
+      "publisher": "Fédération Française de Football",
+      "relevance": "Supplies Mbappé's directly relevant prior Silver Ball result and the performance profile accompanying that award.",
+      "url": "https://www.fff.fr/article/9141-les-bleus-au-tableau-d-honneur.html"
+    },
+    {
+      "excerpt": "The adidas Golden Ball is presented to the best player at each FIFA World Cup finals. Those who finish as runners-up in the vote receive the adidas Silver Ball and Bronze Ball awards as the second and third most outstanding players in the tournament respectively. Only one man has won multiple adidas Golden Balls at the World Cup.",
+      "published_at": "2026-06-10",
+      "publisher": "FIFA",
+      "relevance": "Clarifies that the target is the second-best-player award rather than the second-highest goalscorer's prize and provides historical context for repeated individual honours.",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/lionel-messi-argentina-golden-balls"
+    },
+    {
+      "excerpt": "Croatia captain Luka Modric was awarded the adidas Golden Ball as the tournament's best player, while Belgium's Eden Hazard and France's Antoine Griezmann won the adidas Silver Ball and adidas Bronze Ball, respectively. England forward Harry Kane took home the adidas Golden Boot, finishing as top scorer with six goals, while France's teenage sensation Kylian Mbappe won the FIFA Young Player Award.",
+      "published_at": "2018-07-18",
+      "publisher": "FIFA",
+      "relevance": "Provides an earlier official award comparison showing that scoring leadership and best-player award rankings are separate distinctions.",
+      "url": "https://inside.fifa.com/en/tournaments/mens/worldcup/2018russia/news/will-world-cup-stars-shine-at-the-best"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/paraguay-france-match-report-highlights?searchOverlay=1",
+      "reason": "Reports 2026 World Cup match results and explicitly references a quarter-final on 9 July 2026, after the 2026-07-06 cutoff."
+    },
+    {
+      "url": "https://www.fff.fr/article/17046-les-bleus-sur-leur-lancee.html",
+      "reason": "Reports 2026 World Cup match results, including France's 3-0 win over Sweden and Mbappé's tournament scoring results; excluded under the instruction to remove results."
+    },
+    {
+      "url": "https://www.lemonde.fr/en/sports/article/2026/07/05/2026-world-cup-france-edge-past-paraguay-in-tense-battle-to-reach-the-quarter-finals_6755165_9.html",
+      "reason": "Reports a 2026 World Cup match result, France's 1-0 win over Paraguay and quarter-final qualification; excluded under the instruction to remove results."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-06, inclusive. Six items retained with explicit publication dates verified in article text or dated search results. Sources were discovered with web_search; web_fetch failed because of provider configuration, so agent-reach web read was used to verify accessible article bodies. The two French federation excerpts are factual English translations. The 2018 FIFA item is supported by the dated search result; a fallback read with an accidentally appended parenthesis returned a missing-page response. Only dated article-body material relevant before the cutoff is included; dynamic recommendation sections, later reporting, undated live profiles, betting pages, odds, and prediction-market prices were excluded. No forecast or resolution outcome is supplied."
+}

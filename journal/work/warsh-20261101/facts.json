@@ -1,0 +1,911 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-01T23:59:59-05:00",
+  "historical": false,
+  "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+  "cutoff_note": "按2026-11-01美东当日结束界定；当日已回到EST(UTC-5)。获取发生于11月1日美东晚间。非截至某个未指定盘中时刻。",
+  "research_design": {
+    "question_kind": "actor commitment_check",
+    "method": "commitment_reconciliation",
+    "mechanism_chain": [
+      "政策框架",
+      "FOMC行动",
+      "短端利率/期限溢价（本轮不取价、不归因）"
+    ],
+    "baseline": [
+      "Powell April29 policy",
+      "Warsh pre-office public statements"
+    ],
+    "hypotheses": {
+      "H1": "通胀信誉与缩表优先、有条件降息",
+      "H2": "政治压力主导宽松"
+    },
+    "discrimination_tests": [
+      {
+        "test_id": "T1",
+        "question": "通胀未达目标时是否激进降息",
+        "outcomes": {
+          "H1": "维持/加息或有条件渐进降息",
+          "H2": "政治宽松压力下快速降息"
+        }
+      },
+      {
+        "test_id": "T2",
+        "question": "缩表与沟通是否从主张进入操作",
+        "outcomes": {
+          "H1": "缩表执行或可核验实施安排、沟通框架落实",
+          "H2": "宽松行动优先，缩表可能停留表述"
+        },
+        "caution": "不缩表是多种解释共同可能的观察，不能独立识别H2"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "W01",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-05-22T16:15:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "took the oath of office as chairman and a member",
+      "locator": "First body paragraph; release header May 22, 2026, 4:15 p.m. EDT",
+      "origin_id": "W01",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核实5月22日就任及身份；任期与确认日期见原文",
+        "priority": "useful",
+        "reason": "核实5月22日就任及身份；任期与确认日期见原文"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+        "quote": "took the oath of office as chairman and a member",
+        "locator": "First body paragraph; release header May 22, 2026, 4:15 p.m. EDT",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "W02",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-04-29T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "3-1/2 to 3-3/4 percent",
+      "locator": "Policy decision paragraph",
+      "origin_id": "W02",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "鲍威尔4月基线；原文表示维持区间",
+        "priority": "decisive",
+        "reason": "鲍威尔4月基线；原文表示维持区间"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+        "quote": "3-1/2 to 3-3/4 percent",
+        "locator": "Policy decision paragraph",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "W03",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-06-17T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+      "locator": "Policy decision paragraph",
+      "origin_id": "W03",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1逐次核对通胀偏高时实际利率行动",
+        "priority": "decisive",
+        "reason": "T1逐次核对通胀偏高时实际利率行动"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+        "quote": "maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+        "locator": "Policy decision paragraph",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "W04",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-07-29T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+      "locator": "Policy decision paragraph",
+      "origin_id": "W04",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1逐次核对通胀偏高时实际利率行动",
+        "priority": "decisive",
+        "reason": "T1逐次核对通胀偏高时实际利率行动"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+        "quote": "maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+        "locator": "Policy decision paragraph",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "W05",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-09-16T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent",
+      "locator": "Policy decision paragraph",
+      "origin_id": "W05",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1九月实际加息及力度",
+        "priority": "decisive",
+        "reason": "T1九月实际加息及力度"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+        "quote": "raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent",
+        "locator": "Policy decision paragraph",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "W06",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-10-28T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent",
+      "locator": "Policy decision paragraph following economic assessment",
+      "origin_id": "W06",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1十月实际维持利率；结合声明通胀表述",
+        "priority": "decisive",
+        "reason": "T1十月实际维持利率；结合声明通胀表述"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "quote": "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent",
+        "locator": "Policy decision paragraph following economic assessment",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "W07",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-04-29",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities.",
+      "locator": "Domestic policy directive, Treasury rollover bullet",
+      "origin_id": "W07",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T2同口径核对4月与10月资产操作指令；全额续作而非国债到期不续作",
+        "priority": "decisive",
+        "reason": "T2同口径核对4月与10月资产操作指令；全额续作而非国债到期不续作"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+        "quote": "Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities.",
+        "locator": "Domestic policy directive, Treasury rollover bullet",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "W08",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities.",
+      "locator": "Domestic policy directive, Treasury rollover bullet",
+      "origin_id": "W08",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T2同口径核对4月与10月资产操作指令；全额续作而非国债到期不续作",
+        "priority": "decisive",
+        "reason": "T2同口径核对4月与10月资产操作指令；全额续作而非国债到期不续作"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+        "quote": "Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities.",
+        "locator": "Domestic policy directive, Treasury rollover bullet",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "W09",
+      "url": "https://www.hoover.org/plus/research/inflation-choice-kevin-warsh-fixing-federal-reserve",
+      "canonical_url": "https://www.hoover.org/plus/research/inflation-choice-kevin-warsh-fixing-federal-reserve",
+      "publisher": "Hoover Institution, Stanford University",
+      "tier": "T3",
+      "published_at": "2025-07-08",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "If we would run the printing press a little quieter, we could then have lower interest rates",
+      "locator": "Kevin Warsh response to Peter Robinson question about shrinking the $7 trillion balance sheet; interview recorded May 28, 2025",
+      "origin_id": "W09",
+      "origin_basis": "Hoover-hosted original interview with Kevin Warsh; recorded May 28, 2025",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "上任前缩表与较低利率的条件式主张",
+        "priority": "useful",
+        "reason": "上任前缩表与较低利率的条件式主张"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.hoover.org/plus/research/inflation-choice-kevin-warsh-fixing-federal-reserve",
+        "quote": "If we would run the printing press a little quieter, we could then have lower interest rates",
+        "locator": "Kevin Warsh response to Peter Robinson question about shrinking the $7 trillion balance sheet; interview recorded May 28, 2025",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page",
+      "attribution": {
+        "speaker": "Kevin Warsh",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "W10",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "At this point, the balance sheet is solely within the four walls of the Balance Sheet Task Force.",
+      "locator": "PRELIMINARY transcript p.14, answer to Sang Eun Lee; continuation p.15",
+      "origin_id": "W10",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T2区分研究建议与已执行缩表；补充沟通、AI及政治压力原话定位",
+        "priority": "decisive",
+        "reason": "T2区分研究建议与已执行缩表；补充沟通、AI及政治压力原话定位"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+        "quote": "At this point, the balance sheet is solely within the four walls of the Balance Sheet Task Force.",
+        "locator": "PRELIMINARY transcript p.14, answer to Sang Eun Lee; continuation p.15",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch downloaded original PDF, then macOS PDFKit via Swift extracted all 17 pages; direct Read rendering unavailable (pdftoppm missing)",
+      "local_original": "/Users/frankzhang/.claude/projects/-Users-frankzhang-Desktop-----/947d5298-67a2-4434-a9c9-089a9e625c9c/tool-results/webfetch-1793591440818-4jixz4.pdf",
+      "local_text": "/Users/frankzhang/.claude/projects/-Users-frankzhang-Desktop-----/947d5298-67a2-4434-a9c9-089a9e625c9c/tool-results/bm1zc1zbj.txt"
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "site.federalreserve.gov Kevin Warsh Chair 2026 biography",
+      "test_ids": [],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 1,
+          "url": "https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 2,
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm?refid=refid",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q2",
+      "query": "site.federalreserve.gov monetary20261028a FOMC statement October 28 2026",
+      "test_ids": [
+        "T1"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 2,
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 3,
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/2026-press-fomc.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q3",
+      "query": "site.federalreserve.gov April 29 2026 FOMC statement",
+      "test_ids": [
+        "T1"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 2,
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q4",
+      "query": "site.federalreserve.gov 2026 June 17 July 29 September 16 FOMC Warsh target range",
+      "test_ids": [
+        "T1"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 2,
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 3,
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 4,
+          "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q5",
+      "query": "Kevin Warsh 2025 2026 smaller balance sheet lower interest rates artificial intelligence productivity independence speech Hoover",
+      "test_ids": [
+        "T2"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 2,
+          "url": "https://www.investing.com/news/economy-news/fed-chair-nominee-warsh-has-big-ideas-here-are-some-in-his-own-words-4622740",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 4,
+          "url": "https://www.hoover.org/profiles/kevin-warsh",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q6",
+      "query": "site.federalreserve.gov Warsh October 2026 speech policy framework balance sheet press conference",
+      "test_ids": [
+        "T2"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 4,
+          "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 7,
+          "url": "https://www.investing.com/news/economy-news/feds-policy-committee-to-weigh-balance-sheet-issues-early-next-year-warsh-says-4980804",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q7",
+      "query": "Kevin Warsh 2025 site.hoover.org \"balance sheet\" \"2025\"",
+      "test_ids": [
+        "T2"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 5,
+          "url": "https://plus.hoover.org/plus/research/inflation-choice-kevin-warsh-fixing-federal-reserve",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q8",
+      "query": "site.banking.senate.gov Warsh April 21 2026 testimony independence inflation artificial intelligence",
+      "test_ids": [
+        "T2"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 1,
+          "url": "https://www.banking.senate.gov/hearings/04/14/2026/nomination-hearing",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 2,
+          "url": "https://www.banking.senate.gov/imo/media/doc/bhua_dems_combined_qfr_responses_from_warsh.pdf",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q9",
+      "query": "Kevin Warsh October 28 2026 press conference transcript \"balance sheet\" \"first quarter\"",
+      "test_ids": [
+        "T2"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 1,
+          "url": "https://www.marketscreener.com/news/fed-s-policy-committee-to-weigh-balance-sheet-issues-early-next-year-warsh-says-ce785cd3d88aff2c",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 3,
+          "url": "https://fight.fudgie.org/search/show/cspan/episode/20261028_CSPAN_2101-2140_EDT_Federal_Reserve_Chair_Warsh_Holds_News_Conference",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    },
+    {
+      "id": "Q10",
+      "query": "site.hoover.org Kevin Warsh 2026 \"artificial intelligence\" \"interest rates\"",
+      "test_ids": [
+        "T2"
+      ],
+      "status": "ok",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "result_candidates": [
+        {
+          "engine_rank": 2,
+          "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        },
+        {
+          "engine_rank": 23,
+          "url": "https://www.hoover.org/publications/hoover-daily-report/wednesday-june-3-2026",
+          "access_status": "snippet",
+          "note": "Search ranking only; direct retrieval separately recorded where opened"
+        }
+      ],
+      "ranking_scope": "selected relevant search candidates; not complete SERP export"
+    }
+  ],
+  "test_observations": [
+    {
+      "test_id": "T1",
+      "source_ids": [
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06"
+      ],
+      "status": "ok",
+      "observation": "April hold 3.50–3.75%; June hold 3.50–3.75% (12–0); July hold 3.50–3.75% (9–3, Hammack/Kashkari/Logan preferred +25bp); September +25bp to 3.75–4.00% (12–0); October hold 3.75–4.00% (10–2, Cook/Hammack preferred +25bp). Each opened June–October statement describes inflation as elevated. No cut appears in these four meeting decisions.",
+      "units": "percent annualized target federal funds rate range; rate change in basis points",
+      "scope": "FOMC decisions, not unilateral chair actions",
+      "missing": "未补BEA原始PCE数值、各次会前公开信息集，不能量化通胀缺口或判定动机"
+    },
+    {
+      "test_id": "T2",
+      "source_ids": [
+        "W07",
+        "W08",
+        "W09",
+        "W10"
+      ],
+      "status": "partial",
+      "observation": "April and October instructions both fully roll Treasury principal, reinvest all agency principal into Treasury bills, and purchase Treasury bills (or if needed other Treasuries <=3 years) to maintain ample reserves. October reserve interest 3.90%, effective Oct29. This is an instruction comparison, not measured realized portfolio shrinkage.",
+      "missing": "未取SOMA/H.4.1实际证券持仓序列及全部中间月份执行指令；不能把操作文件等同实际资产负债表变化"
+    }
+  ],
+  "transcript_observations": [
+    {
+      "topic": "balance_sheet_timetable",
+      "quote": "the recommendations they come to, will be fed into the FOMC probably early in the first quarter, but don't hold me exactly to that timing.",
+      "locator": "p.14, Sang Eun Lee Q&A",
+      "source_id": "W10",
+      "attributed_to": "Kevin Warsh",
+      "scope": "Future recommendation timing; year 2027 is inferred from Oct2026 date, not a literal year in this quotation"
+    },
+    {
+      "topic": "balance_sheet_current_impact",
+      "quote": "I think it is unlikely to have any material effect on this policy conjuncture",
+      "locator": "pp.14–15, same answer",
+      "source_id": "W10",
+      "attributed_to": "Kevin Warsh"
+    },
+    {
+      "topic": "forward_guidance_actual_communication",
+      "quote": "I don't believe in forward guidance absent exigent circumstances, absent a crisis.",
+      "locator": "p.13, answer preceding Sang Eun Lee question",
+      "source_id": "W10",
+      "attributed_to": "Kevin Warsh"
+    },
+    {
+      "topic": "chair_dot",
+      "quote": "I don't submit a dot. I don't plan on submitting a dot, but the 18 of them do.",
+      "locator": "p.6, Steve Liesman Q&A (answer continues p.7)",
+      "source_id": "W10",
+      "attributed_to": "Kevin Warsh"
+    },
+    {
+      "topic": "AI_productivity_qualification",
+      "quote": "My judgement is we have seen an improvement in productivity; we can’t measure it precisely.",
+      "locator": "p.16, Howard Schneider Q&A",
+      "source_id": "W10",
+      "attributed_to": "Kevin Warsh",
+      "context": "He then says most of the productivity change precedes discussion of super intelligence; do not equate current productivity entirely with AI."
+    },
+    {
+      "topic": "political_pressure_response",
+      "quote": "I'm not going to be responding to quotes from public officials.",
+      "locator": "p.9, James Rosen Q&A",
+      "source_id": "W10",
+      "attributed_to": "Kevin Warsh",
+      "note": "Reporter quotation of Trump is not independently verified here."
+    },
+    {
+      "topic": "politics_attribution",
+      "quote": "So, politics played no role in the decision.",
+      "locator": "p.13, Elizabeth Schulze Q&A",
+      "source_id": "W10",
+      "attributed_to": "Kevin Warsh",
+      "scope": "His own statement; not independently established causal fact"
+    },
+    {
+      "topic": "AI_investment_rate_sensitivity",
+      "quote": "Interest rates get in the cracks, interest rates affect directly or indirectly, almost everything.",
+      "locator": "p.12, Claire Jones Q&A",
+      "source_id": "W10",
+      "attributed_to": "Kevin Warsh",
+      "scope": "His mechanism view, not independently verified AI demand elasticity"
+    },
+    {
+      "topic": "preoffice_institutional_division",
+      "quote": "Who's going to be managing interest rates? The Federal Reserve.",
+      "locator": "Hoover May28 recorded interview; Treasury–Fed accord response",
+      "source_id": "W09",
+      "attributed_to": "Kevin Warsh",
+      "scope": "Institutional division view; not proof of actual independence"
+    },
+    {
+      "topic": "preoffice_productivity",
+      "quote": "I believe we are on the front end of a productivity boom.",
+      "locator": "Hoover May28 recorded interview; US debt investor demand response",
+      "source_id": "W09",
+      "attributed_to": "Kevin Warsh",
+      "scope": "His productivity optimism; interviewer explicitly mentions AI, so do not relabel this quote as a quantitative AI forecast"
+    }
+  ],
+  "appointment_facts": {
+    "source_id": "W01",
+    "took_office": "2026-05-22",
+    "board_confirmation": "2026-05-12",
+    "chair_confirmation": "2026-05-13",
+    "chair_term_ends": "2030-05-21",
+    "board_term_ends": "2040-01-31",
+    "fomc_selection": "Unanimously selected May22",
+    "additional_bio": {
+      "url": "https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm",
+      "access_status": "ok",
+      "updated_at": "2026-06-17",
+      "facts": "Previous Fed governor 2006–2011; White House/NEC 2002–2006; Morgan Stanley 1995–2002; Stanford AB1992; Harvard JD1995. Opened official biography, summarized by WebFetch; not an additional selected quotation."
+    }
+  },
+  "additional_opened_documents": [
+    {
+      "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
+      "access_status": "ok",
+      "published_at": "2026-08-28",
+      "title": "In Our Time",
+      "speaker": "Kevin Warsh",
+      "notes": "Jackson Hole framework; fixed 2% PCE target; limited ordinary-times forward guidance; rates predominant tool; AI productivity uncertain. Opened original. Not selected as extra fragment because Oct28 original transcript gives current operational follow-through."
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm",
+      "access_status": "ok",
+      "notes": "Links Oct28 statement and implementation note; WebFetch extraction did not show transcript link; guessed conventional transcript URL succeeded and PDF was extracted."
+    }
+  ],
+  "source_status": {
+    "fed_appointment": {
+      "status": "ok"
+    },
+    "fed_june_oct_statements": {
+      "status": "ok"
+    },
+    "fed_april_oct_implementation": {
+      "status": "ok"
+    },
+    "fed_oct28_transcript": {
+      "status": "ok",
+      "reason": "Initial WebFetch binary PDF text unusable; extracted with local macOS PDFKit"
+    },
+    "fed_bio": {
+      "status": "ok"
+    },
+    "hoover_2025_original_interview": {
+      "status": "ok"
+    },
+    "senate_opening_testimony": {
+      "status": "error",
+      "url": "https://www.banking.senate.gov/imo/media/doc/warsh_testimony_4-21-26.pdf",
+      "access_status": "failed",
+      "reason": "HTTP403 access refusal twice; whether authentication is required is unknown."
+    },
+    "direct_python_fed_fetch": {
+      "status": "error",
+      "reason": "urllib HTTP403; successful WebFetch route used instead"
+    },
+    "senate_written_qfr": {
+      "status": "not_run",
+      "reason": "Search lead found, not opened within targeted budget"
+    },
+    "SOMA_H41": {
+      "status": "not_run",
+      "reason": "Budget prioritized latest official decision and implementation"
+    },
+    "market_expectations_prices": {
+      "status": "not_run",
+      "reason": "Outside authorized task; no consensus or price causal inference"
+    }
+  },
+  "gaps": [
+    {
+      "id": "G1",
+      "test_id": "T1",
+      "detail": "No original BEA PCE release values collected; elevated inflation is the contemporaneous FOMC assessment, not independently computed magnitude."
+    },
+    {
+      "id": "G2",
+      "test_id": "T2",
+      "detail": "No same-scope realized SOMA/H.4.1 series or intermediate implementation notes; full Treasury rollover does not mean all Fed assets or total balance sheet are constant."
+    },
+    {
+      "id": "G3",
+      "test_id": "T2",
+      "detail": "Pre-office AI-to-lower-rate numerical/timing promise not obtained from original. Hoover May2025 explicit AI reference is interviewer Robinson, not necessarily Warsh."
+    },
+    {
+      "id": "G4",
+      "test_id": "T2",
+      "detail": "Senate April21 original independence pledge not retrieved (403); no unconditional promise or Trump agreement inferred. Hoover original interview contains attributed institutional division view; not independent proof of actual independence."
+    },
+    {
+      "id": "G5",
+      "detail": "No causal identification of political pressure or market transmission. FOMC vote belongs to committee; chair commitment and collective decision must remain distinct."
+    }
+  ],
+  "audit": {
+    "search_count": 10,
+    "search_budget": "8–10",
+    "excluded_after_cutoff": [],
+    "queries_rank_note": "Engine rank records selected leads only. Tracking variants canonicalized for source documents; distinct releases retain distinct origin IDs. Same press conference and statement are related institutional evidence, not independent witnesses.",
+    "quote_note": "All selected quotes from opened original sources; transcript supplementary exact excerpts read from locally extracted original PDF. Search snippets alone never support facts.",
+    "expectations": "Read expectations.md; no expectation gap required and no market expectations asserted.",
+    "context": "Only commitment-changing background selected; no extended macro survey.",
+    "coordinator_scope": "Prioritized Oct28 official statement, implementation note, and original press conference. No new macro search beyond 10-query budget."
+  },
+  "claims_suggestions": [
+    {
+      "topic": "履历与权限",
+      "type": "fact",
+      "text": "Warsh5月22日就任主席及理事并获FOMC一致选为主席；FOMC投票不能写成主席单方决策。",
+      "source_ids": [
+        "W01",
+        "W03",
+        "W04",
+        "W05",
+        "W06"
+      ]
+    },
+    {
+      "topic": "实际利率路径",
+      "type": "fact",
+      "text": "4月维持3.50–3.75%；6、7月维持；9月加25bp至3.75–4.00%；10月28日维持。6–10月四次会议未降息，声明均称通胀偏高。",
+      "source_ids": [
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06"
+      ]
+    },
+    {
+      "topic": "沟通改革",
+      "type": "view",
+      "attributed_to": "Kevin Warsh",
+      "text": "10月28日称常态下不信奉前瞻指引；自己不提交点阵图预测，其他18位同事提交。只是其公开表态及自身沟通安排，未独立验证政策效果。",
+      "source_ids": [
+        "W10"
+      ]
+    },
+    {
+      "topic": "缩表兑现程度",
+      "type": "inference",
+      "text": "4月和10月国债全额续作指令相同；10月28日称缩表仍由工作组研究，建议可能下一年一季度初提交。可核对已表述的研究安排，但本轮没有实证持仓序列来判定总表是否收缩。",
+      "source_ids": [
+        "W07",
+        "W08",
+        "W09",
+        "W10"
+      ],
+      "limitation": "不推断支持或削弱任一H；不是实际总表变化的观测"
+    },
+    {
+      "topic": "AI供需两阶段",
+      "type": "view",
+      "attributed_to": "Kevin Warsh",
+      "text": "上任前对生产率繁荣乐观；10月承认AI投资仍受利率影响，并认为近期生产率改善大部分早于超级智能讨论。可作为近期投资需求与未来供给潜力的区分材料，但非AI已降低通胀或自动允许降息的证明。",
+      "source_ids": [
+        "W09",
+        "W10"
+      ],
+      "limitation": "未取得上任前AI直接降息承诺；两阶段为研究者组织框架，不能冒充Warsh原话"
+    }
+  ]
+}

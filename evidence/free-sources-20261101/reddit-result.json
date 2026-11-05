@@ -1,0 +1,78 @@
+{
+  "scope": "Single public search page using installed Last30Days URL builder and parser; not full research engine. No config, cookies, credentials or paid fallback.",
+  "url": "https://www.reddit.com/svc/shreddit/search/?q=NVIDIA&type=posts&t=month&sort=relevance",
+  "tested_at_utc": "2026-11-02T02:30:05.819318+00:00",
+  "http_status": 200,
+  "result": "data-returned",
+  "returned_count": 7,
+  "has_next_page": true,
+  "samples": [
+    {
+      "id": "",
+      "title": "A Chinese businesswoman who had a close relationship with Nvidia chief Jensen Huang was found to be passing intelligence to Beijing. The US President was briefed and took no action",
+      "url": "https://www.reddit.com/r/technology/comments/1xih9m3/a_chinese_businesswoman_who_had_a_close/",
+      "score": 6352,
+      "num_comments": 196,
+      "subreddit": "technology",
+      "created_utc": 1793272958.324,
+      "author": "",
+      "selftext": "",
+      "date": "2026-10-29",
+      "engagement": {
+        "score": 6352,
+        "num_comments": 196,
+        "upvote_ratio": null
+      },
+      "relevance": 1.0,
+      "why_relevant": "Reddit search",
+      "metadata": {
+        "post_id": "1xih9m3"
+      }
+    },
+    {
+      "id": "",
+      "title": "Report: Suspected Chinese Spy Had Access to Nvidia CEO",
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1xillll/report_suspected_chinese_spy_had_access_to_nvidia/",
+      "score": 1720,
+      "num_comments": 138,
+      "subreddit": "wallstreetbets",
+      "created_utc": 1793284257.754,
+      "author": "",
+      "selftext": "",
+      "date": "2026-10-29",
+      "engagement": {
+        "score": 1720,
+        "num_comments": 138,
+        "upvote_ratio": null
+      },
+      "relevance": 1.0,
+      "why_relevant": "Reddit search",
+      "metadata": {
+        "post_id": "1xillll"
+      }
+    },
+    {
+      "id": "",
+      "title": "NVIDIA RTX 5080 24GB reportedly launching by January 2027, replacing 16GB model",
+      "url": "https://www.reddit.com/r/nvidia/comments/1xjbbtu/nvidia_rtx_5080_24gb_reportedly_launching_by/",
+      "score": 1035,
+      "num_comments": 637,
+      "subreddit": "nvidia",
+      "created_utc": 1793354736.271,
+      "author": "",
+      "selftext": "",
+      "date": "2026-10-30",
+      "engagement": {
+        "score": 1035,
+        "num_comments": 637,
+        "upvote_ratio": null
+      },
+      "relevance": 1.0,
+      "why_relevant": "Reddit search",
+      "metadata": {
+        "post_id": "1xjbbtu"
+      }
+    }
+  ],
+  "elapsed_seconds": 2.69
+}

@@ -1,0 +1,57 @@
+{
+  "qid": "Q133",
+  "as_of": "2026-07-09",
+  "kept": [
+    {
+      "excerpt": "As part of the world’s most prestigious math conference, the 2026 International Congress of Mathematicians (ICM), the public is invited to explore the beauty and ubiquity of mathematics at 17 free public events in downtown Philadelphia from July 24–28. All events are free, though some require advance registration to secure a spot. Events will be held at the Pennsylvania Convention Center.",
+      "published_at": "2026-07-01",
+      "publisher": "Simons Foundation",
+      "relevance": "This recent pre-cutoff organizer update corroborates that preparations for the July congress were proceeding.",
+      "url": "https://www.simonsfoundation.org/news/free-public-events-will-bring-the-wonder-of-mathematics-to-philadelphia/"
+    },
+    {
+      "excerpt": "Media registration includes access to a press conference with the Fields Medalists and other honorees following their announcement during the July 23 opening ceremony. The conference’s opening and closing ceremonies, as well as the media conference, will also be livestreamed for free on the Simons Foundation’s YouTube channel. At each conference, two to four mathematicians under 40 years of age are honored for making major contributions to the field.",
+      "published_at": "2026-06-02",
+      "publisher": "Simons Foundation",
+      "relevance": "This dated organizer announcement establishes the expected announcement date before the market deadline and the small number of available medals.",
+      "url": "https://www.simonsfoundation.org/news/media-invitation-fields-medals-and-cutting-edge-math-at-icm-2026-in-philadelphia/"
+    },
+    {
+      "excerpt": "The 2026 New Horizons in Mathematics Prize laureates are Otis Chodosh, Stanford University, “for contributions to differential geometry and the calculus of variations, including work on minimal surfaces and manifolds with positive scalar curvature”; Hong Wang, Institut des Hautes Études Scientifiques and New York University, “for work in harmonic analysis, partial differential equations, and geometric measure theory, including the local smoothing conjecture, Furstenberg set conjecture, and the Kakeya conjecture”; Vesselin Dimitrov, Caltech, and Yunqing Tang, University of California, Berkeley, “for work in Diophantine geometry, including the proof of the Atkin–Swinnerton-Dyer unbounded denominators conjecture and new irrationality results for special values of Dirichlet L-series (both joint with Frank Calegari).”",
+      "published_at": "2026-05",
+      "publisher": "International Mathematical Union, IMU News 137",
+      "relevance": "The official May newsletter documents other recently honored mathematicians and their achievements, providing context for the breadth of distinguished work competing for limited recognition.",
+      "url": "https://www.mathunion.org/imu-news/archive/2026/imu-news-137-may-2026"
+    },
+    {
+      "excerpt": "Stony Brook, NY — April 10, 2025 — Stony Brook University Professor John Pardon is a co-recipient of the New Horizon in Mathematics prize. Professor Pardon was recognized for his research that has produced a number of important results in geometry and topology, particularly in the field of symplectic geometry and pseudo-holomorphic curves, which are certain types of smooth surfaces in manifolds. “Most recently, John proved a conjecture of Maulik, Nekrasov, Okounkov, and Pandharipande for a large class of complex three-dimensional manifolds, including all Calabi–Yau threefolds.”",
+      "published_at": "2025-04-10",
+      "publisher": "Stony Brook University",
+      "relevance": "Pardon's recent major prize and the Simons Center director’s assessment provide direct evidence of his research standing ahead of the 2026 selection.",
+      "url": "https://news.stonybrook.edu/newsroom/press-release/awards/stony-brook-professor-john-pardon-is-co-recipient-of-the-2025-new-horizons-in-mathematics-breakthrough-prize/"
+    },
+    {
+      "excerpt": "We show that curve enumeration invariants of complex threefolds with nef anti-canonical bundle are determined by their values on local curves. This implies the MNOP conjecture of Maulik, Nekrasov, Okounkov, and Pandharipande relating Gromov--Witten and Donaldson--Pandharipande--Thomas invariants, for all complex threefolds with nef anti-canonical bundle (in particular, all Calabi--Yau threefolds) and primary insertions (no descendents), given its known validity for local curves due to Bryan, Okounkov, and Pandharipande.",
+      "published_at": "2023-08-08",
+      "publisher": "John Pardon via arXiv, version 3",
+      "relevance": "This dated research preprint states the scope and limitations of a major result underlying Pardon's candidacy.",
+      "url": "https://arxiv.org/abs/2308.02948v3"
+    },
+    {
+      "excerpt": "A Clay Research Award is made to John Pardon of Princeton University in recognition of his wide-ranging and transformative work in geometry and topology, particularly his ground-breaking achievements in symplectic topology. His novel treatment of the theory of moduli spaces of pseudo-holomorphic curves, leading to an elegant construction of virtual fundamental cycles and chains, provides a compelling example. In a series of papers, Ganatra, Pardon and Shende developed a powerful and subtle descent theory for Fukaya categories, crafted to facilitate diverse applications.",
+      "published_at": "2022-10-26",
+      "publisher": "Clay Mathematics Institute",
+      "relevance": "The award-giving institute’s citation independently identifies several substantial contributions supporting Pardon's scientific reputation.",
+      "url": "https://www.claymath.org/news/2022-clay-research-award/"
+    },
+    {
+      "excerpt": "John Pardon, a Princeton University professor of mathematics, has received a National Science Foundation Alan T. Waterman Award, which is the nation's highest honor for scientists and engineers younger than 35. Pardon was recognized for \"revolutionary, groundbreaking results in geometry and topology\" that \"have extended the power of tools of geometric analysis to solve deep problems in real and complex geometry, topology and dynamical systems,\" according to the prize citation.",
+      "published_at": "2017-04-13",
+      "publisher": "Princeton University, Office of Communications",
+      "relevance": "This earlier national award documents sustained recognition of Pardon's contributions across geometry and topology.",
+      "url": "https://www.princeton.edu/news/2017/04/13/mathematician-pardon-receives-top-national-award-young-scientists"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-09. Included only dated article bodies, a dated newsletter issue, and a specific pre-cutoff preprint version; excluded later developments, outcome reporting, undated biographies, prediction-market pages, odds, and market prices. Publication dates were verified from indexed source text; the IMU newsletter provides month-level dating, retained as 2026-05 without inventing a day. The Clay article displays 26 October 2022. The arXiv item uses version 3 dated 8 August 2023 rather than assuming that the current abstract represents the original submission. Later related-news widgets and archive listings were excluded from excerpts. web_fetch failed because its provider was not configured; the requested agent-reach web read fallback returned RATE_LIMITED, so source verification relied on web_search-indexed text. No archived webpage snapshots were retrieved, and no numerical forecast is supplied."
+}

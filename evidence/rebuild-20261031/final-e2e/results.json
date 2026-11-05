@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "kind": "same-evidence operational replay, not fresh research",
+  "parent_run": "R20261031T184534Z-dc48e418bc07",
+  "child_run": "R20261031T184534Z-4627125eca7e",
+  "parent_bytes_unchanged": true,
+  "commands": [
+    {
+      "step": "archive",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+        "archive",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/plan.json",
+        "--calculations",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/calculations.json",
+        "--audit",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/audit.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "step": "update",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+        "update",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/final-e2e/inputs/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/plan.json",
+        "--calculations",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/calculations.json",
+        "--audit",
+        "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/audit.json",
+        "--parent-run",
+        "R20261031T184534Z-dc48e418bc07"
+      ],
+      "exit_code": 0
+    },
+    {
+      "step": "show",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+        "show",
+        "R20261031T184534Z-4627125eca7e"
+      ],
+      "exit_code": 0
+    },
+    {
+      "step": "list",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+        "list"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

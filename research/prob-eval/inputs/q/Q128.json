@@ -1,0 +1,38 @@
+{
+ "qid": "Q128",
+ "question": "Will Flávio Bolsonaro finish in second place in the first round of the 2026 Brazilian presidential election?",
+ "rules": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate who receives the second-most valid votes in the first round of this election.\n\nThe named candidates will be primarily ranked by the number of valid votes received in the specified election. If two or more candidates are tied on valid votes, ties will be broken by alphabetical order of the candidates' last names. This market will resolve to the candidate that occupies the second-highest finishing position after applying this ranking.\n\nIf the result of this election isn't known definitively by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., https://dadosabertos.tse.jus.br/).",
+ "as_of": "2026-09-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Agência Senado (Brazilian Federal Senate)",
+   "published_at": "2026-03-12",
+   "excerpt": "O calendário das eleições divulgado pelo Tribunal Superior Eleitoral (TSE) reúne etapas que vão desde a realização das convenções partidárias e o início da campanha até a votação, a prestação de contas dos candidatos e a posse dos eleitos. O primeiro turno das eleições está marcado para 4 de outubro, com eventual segundo turno em 25 de outubro."
+  },
+  {
+   "id": "E2",
+   "publisher": "Nexus — BTG/Nexus poll, primary release",
+   "published_at": "2026-09-21",
+   "excerpt": "No principal cenário estimulado, Lula registra 40% das intenções de voto, enquanto Flávio Bolsonaro aparece com 37%. O escritor Augusto Cury aparece em seguida, com 6%, seguido por Ronaldo Caiado, com 5%, Renan Santos, com 3%, e Zema, com 1%. Foram ouvidos 2.006 eleitores, por telefone, via CATI, entre os dias 18 e 20 de setembro de 2026. A margem de erro é de 2 pontos percentuais, para mais ou para menos, com 95% de nível de confiança."
+  },
+  {
+   "id": "E3",
+   "publisher": "Folha de S.Paulo — reporting on Quaest",
+   "published_at": "2026-09-21T18:22:00-03:00",
+   "excerpt": "O presidente Lula (PT) tem 37% das intenções de voto no primeiro turno contra 33% do senador Flávio Bolsonaro (PL), segundo pesquisa Quaest divulgada nesta segunda-feira (21). No levantamento da semana passada, o petista aparecia com 36% e o filho de Jair Bolsonaro, ex-presidente condenado e preso por tentativa de golpe de Estado, com 31%. No primeiro turno, o escritor Augusto Cury (Avante) marca 6% (tinha 7%)."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters, syndicated by MarketScreener",
+   "published_at": "2026-09-17T18:33:00-04:00",
+   "excerpt": "In a first-round scenario, Lula had 39%, compared with 36% for Flavio Bolsonaro. Augusto Cury had 6%, Ronaldo Caiado 4%, Renan Santos 3% and Romeu Zema 2%. In the previous poll, Lula had 39% and Bolsonaro 35% in the first round. Datafolha surveyed 2,002 people between September 15-17."
+  },
+  {
+   "id": "E5",
+   "publisher": "UOL — reporting on Palver",
+   "published_at": "2026-09-21T09:00:00-03:00",
+   "excerpt": "Pesquisa do instituto Palver realizada pela internet e divulgada hoje mostra o senador Flávio Bolsonaro (PL) com 42% das intenções de voto no primeiro turno, numericamente à frente do presidente Lula (PT), que aparece com 41%. A margem de erro é de 2,8% pontos percentuais para mais ou para menos. O levantamento entrevistou 5.000 eleitores pela internet entre os dias 15 e 18 de setembro. O nível de confiança é de 95%."
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+  "qid": "Q004",
+  "as_of": "2026-08-26",
+  "kept": [
+    {
+      "excerpt": "In the Democratic primary in New Hampshire's First Congressional District, Maura Sullivan and Stefany Shaheen are statistically tied, followed by Carleigh Beriont.",
+      "published_at": "2026-08-26",
+      "publisher": "University of New Hampshire Survey Center",
+      "relevance": "The poll release published on the freeze date establishes that Sullivan remained in a competitive nomination contest with Shaheen.",
+      "url": "https://scholars.unh.edu/survey_center_polls/988/"
+    },
+    {
+      "excerpt": "In the 1st Congressional District Democratic primary, Democratic Party Vice Chair Maura Sullivan and former Portsmouth City Councilor Stefany Shaheen are in a statistical dead heat, 26%-24%, atop a crowded field. These results are from a Saint Anselm College Survey Center poll based on online surveys of 1411 New Hampshire likely voters. Surveys were collected between August 17th and 18th, 2026, from cell phone users randomly drawn from a sample of registered voters reflecting the demographic and partisan characteristics of the voting population.",
+      "published_at": "2026-08-20",
+      "publisher": "Saint Anselm College, New Hampshire Institute of Politics",
+      "relevance": "This independently published poll provides a recent numerical comparison of Sullivan and her principal rival; the stated statewide sample is not the district primary subsample.",
+      "url": "https://www.anselm.edu/node/35395"
+    },
+    {
+      "excerpt": "Democrat Heath Howard is suspending his campaign for Congress, narrowing the primary field in New Hampshire’s 1st Congressional District. In his announcement Monday, the 26-year-old Howard said he was throwing his support behind Carleigh Beriont, the current chair of the Hampton Selectboard, and another Democrat in the 1st District primary race. In his statement, Howard encouraged other progressive candidates in the field to also drop out to avoid vote splitting.",
+      "published_at": "2026-08-24",
+      "publisher": "New Hampshire Public Radio",
+      "relevance": "Howard's withdrawal and endorsement could consolidate progressive support behind Beriont and change the competitive field facing Sullivan.",
+      "url": "https://www.nhpr.org/nh-news/2026-08-24/heath-howard-suspends-campaign-1st-congressional-district-nh-newhampshire-2026-midterms"
+    },
+    {
+      "excerpt": "U.S. Sen. Maggie Hassan is backing Stefany Shaheen in the 1st Congressional District Democratic primary.",
+      "published_at": "2026-08-26",
+      "publisher": "WMUR",
+      "relevance": "The endorsement gives Sullivan's leading rival support from a sitting Democratic senator from New Hampshire.",
+      "url": "https://www.wmur.com/article/maggie-hassan-endorse-stefany-shaheen-82626/73535920"
+    },
+    {
+      "excerpt": "Sullivan’s campaign reports the former U.S. Marine collected more than $700,000 since April, bringing Sullivan’s total fundraising to more than $3 million, with more than $1.6 million left to spend. Former Portsmouth City Councilor Stefany Shaheen, daughter of Sen. Jeanne Shaheen, meanwhile, raised about $400,000 in the second quarter. That haul puts Shaheen’s overall fundraising at about $2.2 million. The Shaheen campaign reports having $1.2 million cash on hand.",
+      "published_at": "2026-07-16",
+      "publisher": "New Hampshire Public Radio",
+      "relevance": "The quarterly fundraising comparison documents Sullivan's financial advantage over Shaheen before the final primary campaign period.",
+      "url": "https://www.nhpr.org/politics/2026-07-16/pappas-sununu-sullivan-and-dilorenzo-boast-campaign-funding-hauls"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://news.ballotpedia.org/2026/08/18/nine-candidates-are-running-in-the-democratic-primary-for-new-hampshires-1st-congressional-district/",
+      "reason": "The excerpt explicitly mentions the September 8, 2026 election, after the August 26, 2026 cutoff; removed under the rule excluding excerpt/relevance mentions of anything after the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence pack for Q004 with a publication cutoff of 2026-08-26 inclusive. Publication dates were verified through source text or dated search results: UNH explicitly lists Publication Date 8-26-2026; Saint Anselm's release displays August 20, 2026; Ballotpedia News displays August 18, 2026; NHPR and WMUR display publication or update timestamps. Ballotpedia's nine-candidate field is a dated August 18 snapshot and should be read together with the August 24 Howard withdrawal. Only article bodies and pre-cutoff facts were retained; later navigation, related stories, updated election reference pages, post-cutoff reporting, election outcomes, and prediction-market or betting material were excluded. web_fetch failed with a provider configuration error, so the agent-reach web skill was used to retrieve available source bodies. The AOL polling article could not be retrieved and was omitted. No probability forecast or resolution conclusion is included."
+}

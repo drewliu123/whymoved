@@ -1,0 +1,36 @@
+{
+  "mode": "reuse_frozen_evidence",
+  "new_external_fetches": 0,
+  "sources": [
+    {
+      "id": "S1",
+      "title": "NVIDIA FY2027 Q2官方财报（已归档）",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "published_at": "2026-08-26",
+      "quote": "Revenue $96,221 million; Q1 $81,615 million; Q3 revenue $108.0 billion +/-2%; gross margin 74.0% +/-50bps.",
+      "local_evidence": "inputs/newsroom.txt"
+    },
+    {
+      "id": "S2",
+      "title": "NVIDIA IR历史行情原始响应（已归档）",
+      "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+      "published_at": "2026-10-30",
+      "quote": "09/30 Last 228.38; 10/06 Last 239.24; 10/30 Last 204.64",
+      "local_evidence": "inputs/historical.json"
+    },
+    {
+      "id": "S3",
+      "title": "Reuters 10月30日收市报道（已归档）",
+      "url": "https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html",
+      "published_at": "2026-10-30T20:23:00Z",
+      "date_kind": "更新时间；首次发布时间未确认",
+      "quote": "disappointing quarterly results from Intel and Amazon ... growing worries ... massive spending",
+      "local_evidence": "inputs/media.txt"
+    }
+  ],
+  "failed_or_missing": [
+    "完整月度行业/指数比较序列",
+    "全月事件覆盖",
+    "同一截点一致预期及估值"
+  ]
+}

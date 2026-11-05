@@ -1,0 +1,44 @@
+[
+  {
+    "project": "fingpt",
+    "path": "fingpt/FinGPT_Forecaster/data.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/fingpt/FinGPT_Forecaster/data.py",
+    "bytes": 12090
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/query/diverse_query.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/query/diverse_query.py",
+    "bytes": 1883
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/memory/interface.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/memory/interface.py",
+    "bytes": 9693
+  },
+  {
+    "project": "finagent",
+    "path": "configs/exp/trading/AAPL.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/configs/exp/trading/AAPL.py",
+    "bytes": 4539
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/utils/params.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/utils/params.py",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/package.json",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/package.json",
+    "bytes": 611
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/src/run-cycle.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/src/run-cycle.ts",
+    "bytes": 23508
+  }
+]

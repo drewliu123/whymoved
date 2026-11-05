@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "question": "10月中国通货膨胀-年度是多少？",
+  "type": "actor",
+  "task": "官方统计发布计划与实际数据核对",
+  "entity": "国家统计局：中国2026年10月CPI同比",
+  "as_of": "2026-11-02T07:35:59.789168+00:00",
+  "historical": false,
+  "decision_needed": "确认10月CPI同比是否已公布及何时能够取得实际值。",
+  "prior_judgment": "首次核对，用户未给年份；采用当前年份2026并明确披露。",
+  "comparison": {
+    "period": "2026年10月；最近已公布2026年9月",
+    "unit": "同比百分比",
+    "scope": "中国全国居民消费价格总指数"
+  },
+  "budget": {
+    "max_queries": 2,
+    "max_followups": 1
+  },
+  "stop_condition": "找到官方发布日程和最近一期实际数据，能够区分参考月与发布月。",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "commitment_check",
+    "method": "commitment_reconciliation",
+    "rationale": "本轮为纯事实查询，以官方发布日程及已发布数据核对发布日期与数据所属月；不作通胀预测、交易定价或宏观归因。采用承诺核对方法检查统计发布计划，尚不能核验未来发布动作。",
+    "baseline": "核对2026年统计信息发布日程与最近已公布的2026年9月CPI。",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "10月统计参考期",
+      "11月官方发布计划",
+      "可使用的CPI同比实际值"
+    ],
+    "discrimination_tests": []
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "2026年10月CPI仍处于官方计划发布前，当前不应填写实际同比数值。",
+      "discriminating_observation": "官方日程及对应月份正式发布页。"
+    }
+  ],
+  "queries": [
+    {
+      "question": "2026年10月CPI何时发布？",
+      "query": "国家统计局 2026年 主要统计信息发布日程表 居民消费价格 11月",
+      "source": "国家统计局官方发布日程",
+      "purpose": "核对发布计划与参考月份",
+      "test_ids": []
+    },
+    {
+      "question": "最近已公布CPI属于哪个月？",
+      "query": "2026年10月份 居民消费价格 同比 国家统计局 2026 11月",
+      "source": "国家统计局月度公告",
+      "purpose": "确认9月实际值，避免将10月发布误认10月参考期",
+      "test_ids": []
+    }
+  ]
+}

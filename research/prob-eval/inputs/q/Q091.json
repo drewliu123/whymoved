@@ -1,0 +1,44 @@
+{
+ "qid": "Q091",
+ "question": "Will Russia enter Serhiivka by July 31?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Russia captures any territory of Serhiivka, Donetsk Oblast, (48.311123° N, 36.931008° E) between market creation and the specified date (ET).\n\nTerritory will be considered captured if any part of the specified territory is shaded under a below specified layer on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. Otherwise, the market will resolve to “No”.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading indicating Russian control must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date. Any continuous shading which reflects either \"Assessed Russian Infiltration Areas in Ukraine\", “Assessed Russian Control”, “Assessed Russian Advance In Ukraine”, or “Assessed Russian Gains in the Past 24 Hours” will qualify. \n\nOnce a qualifying condition is met, any subsequent loss of control will not be considered towards the resolution of this market.\n\nIf Russia comes into control of the specified territory as a result of",
+ "as_of": "2026-07-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-06-21",
+   "excerpt": "Mashovets reported that Ukrainian forces still hold Serhiivka (northwest of Pokrovsk) and much of the Bilytske area, forcing Russia to concentrate troops to start operations against Dobropillya along a relatively narrow sector of the frontline between Pokrovsk and Novooleksandrivka. Mashovets noted that Russian forces currently lack the numbers and density required to sustain simultaneous offensive operations in the areas of responsibility of the Central Grouping of Forces north and west of Pokrovsk and of the Southern Grouping of Forces against Kostyantynivka."
+  },
+  {
+   "id": "E2",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-06-29",
+   "excerpt": "Russian forces continued offensive operations in the Pokrovsk direction on June 28 and 29 but did not advance. The spokesperson of a Ukrainian brigade operating in the Pokrovsk direction reported that Russian forces have intensified offensives in the brigade’s area of responsibility, including by increasing ground attacks and drone, artillery, and glide bomb strikes. The spokesperson stated that Russian forces’ goal is to reach Serhiivka (northwest of Pokrovsk) and that Russian forces are increasingly switching to frontal assaults instead of infiltration tactics to accomplish this."
+  },
+  {
+   "id": "E3",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-07-17",
+   "excerpt": "Russian forces are reportedly attempting to bypass Ukrainian positions by conducting infiltration missions in the Pokrovsk direction. A Ukrainian drone battalion’s command post head operating in the Pokrovsk direction stated on July 17 that Russian forces continue attempts to bypass Ukrainian positions without engaging the Ukrainian infantry at those positions, but added that Ukrainian forces are preventing these Russian groups from advancing. A Ukrainian military source indicated that Russian forces maintain a presence west of Rodynske and south of Hryshyne, suggesting that Russian forces have likely infiltrated these areas."
+  },
+  {
+   "id": "E4",
+   "publisher": "Ukrinform, reporting the Ukrainian General Staff",
+   "published_at": "2026-07-17T10:10:00",
+   "excerpt": "In the Pokrovsk sector, the Defense Forces repelled 37 assaults by the Russian Federation’s army in the areas of Dorozhne, Hryshyne, Novopidhorodne, Rodynske, Vasylivka, Kotlyne, and toward Vilne, Novyi Donbas, Myrne, Serhiivka, and Kucheriv Yar. According to Ukrinform, the General Staff of the Armed Forces of Ukraine shared an update on Facebook regarding the situation on July 17, at 8:00 a.m."
+  },
+  {
+   "id": "E5",
+   "publisher": "ArmyInform",
+   "published_at": "2026-07-17T09:35:00",
+   "excerpt": "Captain Nazarii Lisovyi, head of the command post of the 59th Brigade’s first unmanned-systems battalion, said the situation remained tense but under Ukrainian control. He said Russian troops were trying to move into Ukrainian rear areas or bypass infantry positions without contact, and that Ukrainian forces were preventing this. He described Ukrainian drone reconnaissance detecting Russian personnel as far as 30 kilometers away and said Russian assault groups sometimes had to walk approximately 50 kilometers because vehicles could not safely approach the front."
+  },
+  {
+   "id": "E6",
+   "publisher": "Ukrinform, reporting the Ukrainian General Staff",
+   "published_at": "2026-07-18T08:59:00",
+   "excerpt": "The largest number of assault actions was recorded in the Pokrovsk direction, where Ukrainian defenders stopped 43 attacks. Enemy fire activity and assaults were recorded toward Novopavlivka, Sofiivka, Toretske, Bilytske, Novo Donbas, Bilozerske, Shevchenko, Hryshyne, Myrne, Vasylivka, Serhiivka, Udachne, and Molodetske. According to Ukrinform, this was stated in a report by the General Staff of the Armed Forces of Ukraine on Facebook on the situation as of 08:00 on July 18."
+  }
+ ]
+}

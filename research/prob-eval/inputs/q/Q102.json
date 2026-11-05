@@ -1,0 +1,44 @@
+{
+ "qid": "Q102",
+ "question": "Will Lionel Messi be the top goalscorer at the 2026 FIFA World Cup?",
+ "rules": "This market will resolve to the player who scores the most goals through all main tournament rounds of the 2026 FIFA World Cup competition.\n\nIn the event of a tie, this market will resolve according to the official leader as determined by FIFA rules. If multiple leaders are announced then this market will resolve to the player who scored fewer goals from penalty kicks. If a tie still persists, this market will resolve to the player whose listed last name comes first alphabetically.\n\nIf the 2026 FIFA World Cup is cancelled, postponed after August 2, 2026, 11:59 PM ET, or there is no leader declared within that timeframe, the corresponding market will resolve to “Other”.\n\nThe resolution source for this market will be official information from FIFA; however, a consensus of credible reporting may also be used.",
+ "as_of": "2026-07-06",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Agence France-Presse, via The Philippine Star",
+   "published_at": "2026-07-06",
+   "excerpt": "France beat Paraguay 1-0 in the World Cup round of 16, with Kylian Mbappe converting a 70th-minute penalty after Desire Doue was fouled. Mbappe rejoined Lionel Messi as the tournament’s joint-top scorer with seven goals. France advanced to a quarter-final against Morocco."
+  },
+  {
+   "id": "E2",
+   "publisher": "FIFA",
+   "published_at": "2026-07-03",
+   "excerpt": "Messi scored his seventh goal of the tournament as Argentina overcame Cabo Verde 3-2 after extra time to reach the last 16. Argentina struggled against Cabo Verde’s defensive organisation and physical strength, and several players suffered cramp or exhaustion. Egypt awaited Argentina in the next round."
+  },
+  {
+   "id": "E3",
+   "publisher": "The Associated Press",
+   "published_at": "2026-07-03",
+   "excerpt": "Messi scored in the 29th minute of Argentina’s 3-2 extra-time victory over Cape Verde, extending his scoring streak to eight consecutive World Cup games. His seven tournament goals put him one ahead of Mbappé at the time of this report. FIFA’s scoring-leader tiebreakers were assists first and fewest minutes played second."
+  },
+  {
+   "id": "E4",
+   "publisher": "FIFA",
+   "published_at": "2026-07-03",
+   "excerpt": "Egypt advanced past Australia after a 1-1 draw and a 4-2 penalty-shootout victory. Egypt remained unbeaten and secured a round-of-16 match in Atlanta on July 7 against the winner of Argentina versus Cabo Verde."
+  },
+  {
+   "id": "E5",
+   "publisher": "Reuters, via The Kathmandu Post",
+   "published_at": "2026-06-28",
+   "excerpt": "Messi came off the bench to score as Argentina beat Jordan 3-1 for a third consecutive Group J victory. Lionel Scaloni made nine changes from the lineup that beat Austria. Giovani Lo Celso, Lautaro Martinez and Messi scored Argentina’s goals, and Messi became the first player to score in seven consecutive World Cup finals matches."
+  },
+  {
+   "id": "E6",
+   "publisher": "FIFA",
+   "published_at": "2022-12-19",
+   "excerpt": "Kylian Mbappé finished the 2022 World Cup as its top scorer with eight goals and received the adidas Golden Boot. Lionel Messi won the adidas Golden Ball as Argentina lifted the World Cup trophy. The tournament produced 172 goals, surpassing the previous record of 171."
+  }
+ ]
+}

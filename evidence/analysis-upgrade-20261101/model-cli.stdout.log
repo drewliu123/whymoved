@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "result": {
+    "outputs": {
+      "implied_growth": {
+        "value": 0.08933182778127957,
+        "unit": "ratio"
+      },
+      "target_enterprise_value": {
+        "value": 170,
+        "unit": "currency"
+      },
+      "solved_enterprise_value": {
+        "value": 170.00000000018048,
+        "unit": "currency"
+      },
+      "residual": {
+        "value": 1.8047785488306545e-10,
+        "unit": "currency"
+      }
+    },
+    "sensitivity": [
+      {
+        "input": "discount_rate",
+        "value": 0.09,
+        "unit": "ratio",
+        "outputs": {
+          "implied_growth": {
+            "value": 0.05617657158290967,
+            "unit": "ratio"
+          },
+          "target_enterprise_value": {
+            "value": 170,
+            "unit": "currency"
+          },
+          "solved_enterprise_value": {
+            "value": 169.99999998754302,
+            "unit": "currency"
+          },
+          "residual": {
+            "value": -1.2456979447961203e-08,
+            "unit": "currency"
+          }
+        }
+      },
+      {
+        "input": "discount_rate",
+        "value": 0.11,
+        "unit": "ratio",
+        "outputs": {
+          "implied_growth": {
+            "value": 0.12015133342356421,
+            "unit": "ratio"
+          },
+          "target_enterprise_value": {
+            "value": 170,
+            "unit": "currency"
+          },
+          "solved_enterprise_value": {
+            "value": 170.00000001650633,
+            "unit": "currency"
+          },
+          "residual": {
+            "value": 1.6506334077348583e-08,
+            "unit": "currency"
+          }
+        }
+      }
+    ]
+  }
+}

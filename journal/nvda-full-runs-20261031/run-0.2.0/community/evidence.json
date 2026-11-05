@@ -1,0 +1,246 @@
+{
+  "engine": "last30days",
+  "supplemental_engine": "websearch",
+  "entity": "NVIDIA NVDA",
+  "as_of": "2026-10-31T12:19:06Z",
+  "window_start": "2026-10-01T00:00:00Z",
+  "window_end": "2026-10-31T12:19:06Z",
+  "posts": [
+    {
+      "angle": "需求强弱与客户融资风险",
+      "platform": "reddit",
+      "author": null,
+      "author_status": "引擎未提供；公开 JSON 请求 403，不能核实",
+      "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+      "published_at": "2026-10-07",
+      "published_at_precision": "day",
+      "engagement": "507 分，216 评论（检索时快照）",
+      "engagement_raw": {
+        "score": 507,
+        "num_comments": 216
+      },
+      "quote": "For anyone trading Nvidia (NVDA), this shuts down the argument that AI hardware demand is slowing down.",
+      "quote_secondary": "The fascinating part is the cash loop: Nvidia owns about $21 billion worth of SpaceX stock.",
+      "stance": "作者把其转述的拟议采购解读为 AI 硬件需求强，并担忧客户为购芯片加杠杆及资金循环；转述金额与交易安排均未在本任务核实，不可作事实。",
+      "comment_evidence": [],
+      "limitations": [
+        "缺少作者",
+        "日期仅精确到日；10 月 7 日明确早于截止日",
+        "无高互动评论正文",
+        "互动量在 AS_OF 之后采集，不代表截止时点互动",
+        "原帖编辑历史未核实",
+        "帖子未直接证明 Blackwell 需求或毛利率"
+      ]
+    }
+  ],
+  "new_authors": [],
+  "author_discovery": {
+    "rule": "至少 2 条不同主题帖子且本次相关比例 >= 0.5；库内作者不新增",
+    "observed_comment_author_counts": {
+      "m_w_h": 2,
+      "independent-arg": 4,
+      "_sneeqi_": 1,
+      "awen478": 1,
+      "Dragontech97": 1,
+      "KUPOinyourWINDOW": 1,
+      "NewsFromHell": 1,
+      "MelvinSmiley83": 1,
+      "zetazzed": 1,
+      "janalsncm": 1,
+      "Rapzid": 1,
+      "cluckindan": 1,
+      "markus_zhang": 1,
+      "Zagitta": 1,
+      "RachelF": 1,
+      "jacquesm": 1,
+      "Tiberium": 1,
+      "RandyOrion": 1
+    },
+    "eligible_candidates": 0,
+    "explanation": "所有可见署名评论作者仅各命中一个帖子，保留投资帖未取得作者；无作者达到条件。未修改作者库或定向检索 demoted 作者。"
+  },
+  "source_status": {
+    "reddit": "partial：4 条引擎结果，1 条保留；子请求超时；补充公开帖子请求 403",
+    "hackernews": "ok：6 条引擎结果；按指定投资角度筛选后 0 条具体观点，不等于没有讨论",
+    "x": "skipped-unconfigured；限定 x.com 搜索未返回 X URL，覆盖失败",
+    "xiaohongshu": "skipped-unconfigured；未搜索，预算限定两次补查",
+    "youtube": "not-attempted：诊断可用，quick 缩减为仅 Reddit/HN",
+    "polymarket": "not-attempted：诊断可用，quick 缩减为仅 Reddit/HN",
+    "github": "out-of-scope：诊断可用，本次不作为社区投资观点渠道"
+  },
+  "engine_source_status_raw": {
+    "reddit": {
+      "source": "reddit",
+      "state": "ok",
+      "items_returned": 4,
+      "attempted": true,
+      "detail": "1 sub-request timed out",
+      "at": "2026-10-31T12:25:07.461822Z",
+      "lane_failure_state": "timeout"
+    },
+    "hackernews": {
+      "source": "hackernews",
+      "state": "ok",
+      "items_returned": 6,
+      "attempted": true,
+      "at": "2026-10-31T12:25:07.465396Z"
+    }
+  },
+  "execution": {
+    "engine": "last30days",
+    "version": "3.30.0",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-B",
+      "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+      "NVIDIA NVDA",
+      "--emit=compact",
+      "--save-dir=",
+      "--plan",
+      "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/last30days-plan.ZodWVK",
+      "--search=reddit,hackernews,youtube,polymarket",
+      "--dedicated-subreddits=NVDA_Stock,nvidia",
+      "--subreddits=stocks,investing,wallstreetbets,SecurityAnalysis",
+      "--quick",
+      "--as-of=2026-10-31",
+      "--days=30",
+      "--no-browser-cookies"
+    ],
+    "as_of": "2026-10-31T12:19:06Z",
+    "window_start": "2026-10-01T00:00:00Z",
+    "timeout_seconds": 180,
+    "HOME_changed": false,
+    "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0",
+    "config_mode": "isolated_config; keychain disabled after sensitive-source denial",
+    "directed_authors": [],
+    "scope_omitted_available_sources": [
+      "github"
+    ],
+    "started_at": "2026-10-31T12:23:30Z",
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 96.73
+  },
+  "coverage": {
+    "raw_retained_engine_items": 10,
+    "accepted_investment_posts": 1,
+    "specific_blackwell_margin_opinions": 0,
+    "specific_china_export_restriction_opinions": 0,
+    "specific_stock_pullback_opinions": 0,
+    "consensus_supported": false
+  },
+  "degradations": [
+    "自动审批拒绝全局配置链接，原因 Sensitive-Source Provenance；取消链接，使用 run 内独立配置并禁用 Keychain，来源集合可能比用户全局配置少",
+    "quick 把 3 个计划子查询缩减成 1 个；China 与 pullback 子查询未执行",
+    "引擎退出码 0 仅表示完成，不代表来源完整；Reddit 有 timeout",
+    "仅日期级 --as-of；同日精确时间不明的结果剔除",
+    "实际检索始于 2026-10-31T12:23:30Z，晚于 AS_OF；互动与编辑后文本不是历史快照",
+    "两次 WebSearch domain filter 返回域外页面，均拒作限定平台证据",
+    "公开 Reddit JSON 请求 403，未补得作者与评论",
+    "小样本不能推断共识；所有社区观点均 T4，不支撑事实"
+  ],
+  "excluded_engine_items": [
+    {
+      "source": "reddit",
+      "id": "R104",
+      "url": "https://www.reddit.com/r/NVDA_Stock/comments/1xk0f20/weekend_thread_and_discussion_20261031_to_20261101/",
+      "published_at": "2026-10-31",
+      "reason": "10 月 31 日仅日级时间，无法确认早于 12:19:06Z；只有周末串标题无观点"
+    },
+    {
+      "source": "reddit",
+      "id": "R56",
+      "url": "https://www.reddit.com/r/nvidia/comments/1wz575x/game_ready_studio_driver_61742_faqdiscussion/",
+      "published_at": "2026-10-06",
+      "reason": "与 NVIDIA 直接相关，但未提供指定投资角度的具体社区看法"
+    },
+    {
+      "source": "reddit",
+      "id": "R3",
+      "url": "https://www.reddit.com/r/trading212/comments/1x1fjbn/nvidia/",
+      "published_at": "2026-10-09",
+      "reason": "仅有 Nvidia 标题，无具体观点"
+    },
+    {
+      "source": "hackernews",
+      "id": "50293047",
+      "url": "https://news.ycombinator.com/item?id=50293047",
+      "published_at": "2026-10-29",
+      "reason": "间谍报道及媒体可信度争论，不能替代中国出口限制风险观点；评论日期缺失"
+    },
+    {
+      "source": "hackernews",
+      "id": "50275128",
+      "url": "https://news.ycombinator.com/item?id=50275128",
+      "published_at": "2026-10-28",
+      "reason": "与 NVIDIA 直接相关，但未提供指定投资角度的具体社区看法"
+    },
+    {
+      "source": "hackernews",
+      "id": "50236073",
+      "url": "https://news.ycombinator.com/item?id=50236073",
+      "published_at": "2026-10-25",
+      "reason": "与 NVIDIA 直接相关，但未提供指定投资角度的具体社区看法"
+    },
+    {
+      "source": "hackernews",
+      "id": "50286924",
+      "url": "https://news.ycombinator.com/item?id=50286924",
+      "published_at": "2026-10-29",
+      "reason": "间谍报道及媒体可信度争论，不能替代中国出口限制风险观点；评论日期缺失"
+    },
+    {
+      "source": "hackernews",
+      "id": "50247677",
+      "url": "https://news.ycombinator.com/item?id=50247677",
+      "published_at": "2026-10-26",
+      "reason": "与 NVIDIA 直接相关，但未提供指定投资角度的具体社区看法"
+    },
+    {
+      "source": "hackernews",
+      "id": "50219700",
+      "url": "https://news.ycombinator.com/item?id=50219700",
+      "published_at": "2026-10-24",
+      "reason": "与 NVIDIA 直接相关，但未提供指定投资角度的具体社区看法"
+    }
+  ],
+  "unverified_search_leads": [
+    {
+      "allowed_domains": [
+        "reddit.com"
+      ],
+      "query": "NVIDIA NVDA Blackwell demand margin China export restrictions stock pullback after:2026-09-30 before:2026-11-01",
+      "outcome": "结果含大量非限定域名；仅把 Reddit URL 作为线索，缺作者/互动/原帖正文，未纳入帖子",
+      "lead_urls": [
+        "https://www.reddit.com/r/HollowPointTrading/comments/1wxsp6g/nvidia_nvda_a_108_billion_guide_with_no_china/",
+        "https://www.reddit.com/r/NvidiaStock/comments/1xf1ca9/nvda_q3_fy27_earnings_revenue_and_guidance_first/",
+        "https://www.reddit.com/r/NvidiaStock/comments/1wwtxa6/nvda_just_broke_its_channel_and_took_out_the/"
+      ]
+    },
+    {
+      "allowed_domains": [
+        "x.com"
+      ],
+      "query": "NVIDIA NVDA Blackwell demand margin China export restrictions 英伟达 回调 after:2026-09-30 before:2026-11-01",
+      "outcome": "没有 x.com URL；返回其他域名，全部不作为 X 社区证据",
+      "lead_urls": []
+    }
+  ],
+  "artifacts": {
+    "result": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/evidence.json",
+    "stdout": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/last30days.stdout.log",
+    "stderr": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/last30days.stderr.log",
+    "execution": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/last30days.execution.json",
+    "diagnose": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/diagnose.stdout.log",
+    "usage": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/usage.stdout.log",
+    "engine_report": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/engine-config/last-report.json",
+    "fallback": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/websearch-fallback.json",
+    "public_fetch_status": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/public-fetch-status.json"
+  },
+  "sources": [
+    {
+      "label": "保留的 Reddit 需求与融资风险观点",
+      "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "reason": "CLI does not refresh same-version local source; synchronized two finalized prompt files after backup",
+  "version": "0.5.0",
+  "files": [
+    {
+      "path": "skills/research/SKILL.md",
+      "before": "8caeb903959ab7199d2538e858604ed9df051973e3c792ac3b82705e07aa3790",
+      "after": "f362df9cb406e6a0388020a036af67cdce302a91ff10bba78ade7c3ef757f3af"
+    },
+    {
+      "path": "skills/research/references/research-value.md",
+      "before": "0993d733c7d906042ce9d8985631f65f917e06906588ac24ef82f7b9e713d60b",
+      "after": "e4868f9cf6075b31ffbd49e924c0b7251ca970d8824c4220308386a2d7b74b79"
+    }
+  ]
+}

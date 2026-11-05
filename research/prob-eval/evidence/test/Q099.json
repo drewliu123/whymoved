@@ -1,0 +1,57 @@
+{
+  "qid": "Q099",
+  "as_of": "2026-09-20",
+  "kept": [
+    {
+      "published_at": "2026-09-15",
+      "publisher": "LETA, via BNN",
+      "url": "https://bnn.lv/sabiedriba/knab-keries-pie-partijam-sakti-vairaki-procesi-par-prieksvelesanu-agitacijas-parkapumiem-t7u76xr",
+      "excerpt": "KNAB was continuing to examine whether activities by United List representatives, including Prime Minister Andris Kulbergs, on August 7 complied with campaign legislation. The bureau would also assess whether administrative resources had been used in campaigning. KNAB said it had not found significant violations in its campaign monitoring to date.",
+      "relevance": "This identifies an unresolved campaign scrutiny issue involving AS shortly before the evidence cutoff, without implying a finding of wrongdoing."
+    },
+    {
+      "published_at": "2026-09-04",
+      "publisher": "Latvijas Radio / LSM",
+      "url": "https://www.lsm.lv/raksts/zinas/latvija/04.09.2026-partiju-reitingi-dazadu-organizaciju-aptaujas-nedaudz-atskiras-kapec-ta.a661824/",
+      "excerpt": "United List held first place in both the latest publicly available SKDS and Latvijas Fakti party ratings. SKDS results suggested six parties would enter parliament, while Latvijas Fakti suggested seven, adding the Union of Greens and Farmers. Researchers explained that the surveys used different methodologies and could not always be compared directly. The parliamentary election was scheduled for October 3, with polling stations open from 08:00 to 20:00.",
+      "relevance": "This provides dated corroboration of AS's lead across two pollsters, explains methodological uncertainty, and confirms the election schedule."
+    },
+    {
+      "published_at": "2026-09-01",
+      "publisher": "LSM",
+      "url": "https://www.lsm.lv/raksts/zinas/latvija/01.09.2026-no-skaliem-opozicionariem-lidz-premjera-kreslam-kas-ir-apvienotais-saraksts.a659802/",
+      "excerpt": "In its first parliamentary election, United List received 11.01% of votes, the third-largest share, and won 15 seats. Its strongest support was in Liepāja and South Kurzeme municipality. After a period in opposition, AS returned to government following the collapse of Evika Siliņa's cabinet in May, and Andris Kulbergs formed a government of four political forces.",
+      "relevance": "This supplies AS's historical electoral baseline, geographical strengths, and its transition to holding the premiership before the 2026 election."
+    },
+    {
+      "published_at": "2026-08-27",
+      "publisher": "LSM, reporting SKDS polling",
+      "url": "https://www.lsm.lv/raksts/zinas/latvija/27.08.2026-partiju-reitingi-augusta-aug-atbalsts-premjera-partijai-virs-2-pakapjas-stabilitatei-un-latvijas-attistibai.a660469/",
+      "excerpt": "In the SKDS survey conducted August 13–19, United List led with 15.2% support among all eligible respondents, up from 12.2% in July. Sovereign Power/Young Latvians followed at 11.8%, the Progressives at 8.8%, and Latvia First at 8.5%. Another 22.5% did not know whom they would support, while 11.2% said they would not participate. When considering respondents who had chosen a party and their willingness to vote, six parties would clear the 5% threshold, with AS first.",
+      "relevance": "This is a detailed pre-cutoff polling snapshot showing AS's lead, its recent growth, and the substantial undecided electorate."
+    },
+    {
+      "published_at": "2026-08-01",
+      "publisher": "Latvijas Televīzija / LSM, reporting SKDS polling",
+      "url": "https://www.lsm.lv/raksts/zinas/latvija/01.08.2026-partiju-reitingi-julija-premjera-partija-liderpozicija-zzs-pakluvusi-zem-5-barjeras.a657151/",
+      "excerpt": "The SKDS survey conducted July 10–15 put United List at 12.2%, compared with 9.8% in June. Sovereign Power/Young Latvians was second at 11.4%, up from 8.6% in June. Political scientist Juris Rozenvalds and SKDS director Arnis Kaktiņš agreed that the Union of Greens and Farmers was the largest loser in July's ratings, with some supporters moving to United List.",
+      "relevance": "This establishes the earlier trajectory of AS's polling rise and shows that its lead was narrower in July."
+    },
+    {
+      "published_at": "2026-05-28",
+      "publisher": "Reuters, via WTVB",
+      "url": "https://wtvbam.com/2026/05/28/latvia-parliament-approves-new-government-after-drone-row-topples-coalition/",
+      "excerpt": "Latvia's parliament approved a new government led by Andris Kulbergs four months before the next election. The four-party coalition consisted of United List, New Unity, the National Alliance, and the Union of Greens and Farmers, and received support from 66 of the 96 votes cast. The Progressives, part of the outgoing coalition, were left outside the new government.",
+      "relevance": "This documents the change giving AS the premiership and distinguishes the governing coalition from the individual electoral lists whose seats determine resolution."
+    },
+    {
+      "published_at": "2026-05-07",
+      "publisher": "Central Election Commission of Latvia (CVK)",
+      "url": "https://www.cvk.lv/jaunums/apstiprina-velesanu-apgabalos-ievelejamo-deputatu-skaitu",
+      "excerpt": "The Central Election Commission approved the constituency seat allocations for the 15th Saeima election: 38 for Riga, 26 for Vidzeme, 12 for Latgale, 13 for Zemgale, and 11 for Kurzeme. Compared with the previous election, Riga gained two seats, while Latgale and Kurzeme each lost one.",
+      "relevance": "This official source establishes the regional distribution of the 100 parliamentary seats, which matters when translating party support into the seat plurality required by the question."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-20, inclusive. All included items have explicit publication dates on or before the cutoff, verified in web_search source text or dated article URLs and corroborating results; excerpts are concise English translations or factual renderings of the source text. Searches covered Latvian-language polling, election administration, party background, and government formation. Polls published after the cutoff were excluded even when their fieldwork ended before September 20; undated live pages, later developments, election outcomes, and betting or prediction-market material were excluded. web_fetch failed because of a provider configuration error; the requested agent-reach web-read fallback was attempted but returned RATE_LIMITED, so verification relies on indexed source text supplied by web_search. No election-outcome inference or forecast probability is included."
+}

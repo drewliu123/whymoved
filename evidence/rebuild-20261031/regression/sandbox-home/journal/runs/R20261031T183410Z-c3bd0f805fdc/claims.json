@@ -1,0 +1,632 @@
+{
+  "as_of": "2026-10-31T17:29:33Z",
+  "claims": [
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S1-L343",
+        "S1-L355",
+        "S1-L509",
+        "S1-L513"
+      ],
+      "id": "C1",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S1",
+          "published_at": "2025-07-30",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+        }
+      ],
+      "text": "2025-07-30，CFO将FY26扩大投入与云和AI需求、已签约积压相连；预期FY26资本开支增长率较FY25放缓、短寿命资产占比提高，FY26 Q1开支超过300亿美元，并保留建设和融资租赁交付造成季度波动的条件。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S2-L643",
+        "S2-L531"
+      ],
+      "id": "C2",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S2",
+          "published_at": "2025-10-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+        }
+      ],
+      "text": "2025-10-29，CFO因需求和RPO增加将FY26资本开支增长指引改为高于FY25；这是对旧指引的修订。FY26 Q1实际资本开支349亿美元，现金PP&E 194亿美元，融资租赁111亿美元。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S1-L323",
+        "S3-L297",
+        "S3-L299",
+        "S3-L353",
+        "S4-L263",
+        "S4-L265",
+        "S5-L291",
+        "S5-L293"
+      ],
+      "id": "C3",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S1",
+          "published_at": "2025-07-30",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+        },
+        {
+          "id": "S3",
+          "published_at": "2026-01-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+        },
+        {
+          "id": "S4",
+          "published_at": "2026-04-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+        },
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        }
+      ],
+      "text": "FY25 Q4实际资本开支242亿美元、现金PP&E 171亿美元、融资租赁65亿美元；FY26 Q2分别为375、299、67亿美元；FY26 Q3为319、309、47亿美元；FY26 Q4为410、358、56亿美元。FY26 Q2 CFO明确预计下一季capex环比下降。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S5-L413",
+        "S6-L273",
+        "S6-L275"
+      ],
+      "id": "C4",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "FY27 Q1实际资本开支452亿美元、现金PP&E 394亿美元、融资租赁74亿美元；CFO称部分预期第三方容量未按期交付。该季度实际低于此前超过500亿美元的指引。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S2-L531",
+        "S4-L265",
+        "S5-L347",
+        "S6-L275"
+      ],
+      "id": "C5",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S2",
+          "published_at": "2025-10-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+        },
+        {
+          "id": "S4",
+          "published_at": "2026-04-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+        },
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "融资租赁在开始时全额计入资本开支；现金PP&E和资本开支差额还受收货与付款时间影响。经营租赁不计入管理层资本开支指标。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S4-L363",
+        "S4-L365"
+      ],
+      "id": "C6",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S4",
+          "published_at": "2026-04-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+        }
+      ],
+      "text": "2026-04-29管理层预计日历年2026资本开支约1900亿美元，含约250亿美元组件涨价影响；预计即使加速投入，至少到2026年底仍受供给约束。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S5-L345",
+        "S5-L347"
+      ],
+      "id": "C7",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        }
+      ],
+      "text": "2026-07-29管理层宣布FY27起数据中心和办公楼预计寿命由15年延至25年，预计更多未来数据中心租赁从融资转为经营租赁；因此日历年2026资本开支指引变为约1750亿美元，称底层投资预期除寿命影响外未变，FY27营业利润影响很小。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S6-L329",
+        "S6-L361",
+        "S6-L413"
+      ],
+      "id": "C8",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "2026-10-28管理层将日历年2026资本开支预计改为约1700亿美元，归因于第三方产能延迟；FY27 Q2预计超过500亿美元，部分原定Q2第三方GPU服务容量推迟至FY27下半年，FY27下半年开支预计加速。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S3-L67",
+        "S4-L71",
+        "S5-L55",
+        "S6-L209"
+      ],
+      "id": "C9",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S3",
+          "published_at": "2026-01-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+        },
+        {
+          "id": "S4",
+          "published_at": "2026-04-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+        },
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "管理层报告FY26 Q2新增接近1GW总容量、Q3再新增1GW；FY26 Q4新增31个数据中心、全年88个；FY27 Q1再新增24个。数据中心个数和GW口径不同，均非AI专属可售GPU容量。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S2-L125"
+      ],
+      "id": "C10",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S2",
+          "published_at": "2025-10-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+        }
+      ],
+      "text": "FY26 Q1宣布的Wisconsin Fairwater是计划次年上线并扩至2GW的项目，宣布时不能列为已形成产能。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S5-L329",
+        "S6-L293"
+      ],
+      "id": "C11",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "FY26 Q4管理层报告Azure及其他云服务收入增长43%，新增季度容量很快变现，同时受到CPU/GPU效率、交付流程和GitHub Copilot计费变化支持；FY27 Q1报告Azure收入增长48%，Foundry收入超过上年三倍，驱动包括GPU效率、较高每token收入和原有CPU闲置容量变现。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S5-L307",
+        "S5-L309",
+        "S6-L281",
+        "S6-L291",
+        "S6-L305"
+      ],
+      "id": "C12",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "FY26 Q4 Microsoft Cloud收入593亿美元、毛利率65%；FY27 Q1收入639亿美元、毛利率66%，但后者同比下降，管理层归因于Azure收入组合，并称产品层面利润率改善部分抵消。FY27 Q1分部结构已更新。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S6-L277",
+        "S6-L363",
+        "S6-L525",
+        "S6-L527"
+      ],
+      "id": "C13",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "FY27 Q1经营现金流580亿美元、自由现金流186亿美元；管理层预计FY27仍自由现金流为正，吸引力合适时才使用额外融资，Q&A列出租赁和债务市场渠道，未披露一笔特定新融资已完成。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S3-L297",
+        "S3-L417",
+        "S3-L419",
+        "S3-L421",
+        "S3-L429"
+      ],
+      "id": "C14",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S3",
+          "published_at": "2026-01-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+        }
+      ],
+      "text": "CEO和CFO在FY26 Q2解释，由管理层在自营Copilot、研发、Azure客户和设备替换间分配稀缺容量，以组合长期客户价值为目标；Azure指引受到分配影响。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S3-L309",
+        "S3-L451",
+        "S3-L453",
+        "S5-L303",
+        "S5-L305",
+        "S6-L287",
+        "S6-L289"
+      ],
+      "id": "C15",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S3",
+          "published_at": "2026-01-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+        },
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "FY26 Q2 CFO称部分大型GPU合同覆盖GPU整个使用期，并披露商业RPO约45%来自OpenAI；FY26 Q4 RPO为6780亿美元、约30%预期未来12个月确认收入；FY27 Q1 RPO为6770亿美元、约30%未来12个月确认收入。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S5-L480",
+        "S5-L482",
+        "S5-L488",
+        "S6-L443",
+        "S6-L445"
+      ],
+      "id": "C16",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "FY26 Q4 CFO说若需求环境变化，可减缓短寿命CPU/GPU采购、分期建设；FY27 Q1 CEO把向大容量买家销售的条件表述为定价合适，否则耐心扩展客户基础。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "evidence_ids": [
+        "S1-L515",
+        "S5-L576",
+        "S5-L580",
+        "S6-L409",
+        "S6-L259",
+        "S6-L361",
+        "S6-L379",
+        "S6-L383"
+      ],
+      "id": "C17",
+      "qualification": "Financial values and operating descriptions are company disclosures; demand/ROI expectations remain attributed management statements.",
+      "sources": [
+        {
+          "id": "S1",
+          "published_at": "2025-07-30",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4"
+        },
+        {
+          "id": "S5",
+          "published_at": "2026-07-29",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "S6",
+          "published_at": "2026-10-28",
+          "publisher": "Microsoft",
+          "tier": "T0",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+        }
+      ],
+      "text": "管理层在FY26 Q4及FY27 Q1继续表达对投资回报的信心，讨论自研芯片、模型选择、平台效率和定价；本轮六份电话会未提供可计算新增AI资本回报的资本—增量利润/现金配对数据，其他公开披露未穷尽；S1中CFO称good ROI today，S6中CFO称高质量模型带来良好利润率，这些正向自述也应保留，披露粒度不足不等于回报差。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C9",
+        "C11",
+        "C17"
+      ],
+      "id": "C18",
+      "sources": [],
+      "text": "扩张投入的方向已有支出执行支持；据管理层披露部分新增产能已形成，商业化已有信号，但具体新增AI批次可售GPU容量/利用率未核实。本轮六份电话会缺可计算新增AI资本回报的配对数据，其他公开披露未穷尽。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C4",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "id": "C19",
+      "sources": [],
+      "text": "1900→1750→1700亿美元不能整体解释为需求转弱：据管理层解释，前一段属租赁分类口径变化，后一段属交付延期；该解释未经独立经济归因验证，也未排除需求同时变化。FY27 Q1开支低于指引意味着原金额安排未完全兑现。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C5",
+        "C11",
+        "C12",
+        "C17"
+      ],
+      "id": "C20",
+      "sources": [],
+      "text": "收入增长能证明部分商业化，无法单独证明新增AI资本回报；旧设备提效、价格与产品组合也能解释增长，且本轮六份电话会没有AI专属资本和可归属利润的配对数据；未穷尽其他公开披露，也不据此判定回报差。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C1",
+        "C15",
+        "C17"
+      ],
+      "id": "C21",
+      "sources": [],
+      "text": "已签约需求是扩大投入的依据，也留下兑现与集中度约束；RPO并非现金到账或已实现利润，不能把合同覆盖解释为回报保证。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C14",
+        "C16",
+        "C17"
+      ],
+      "id": "C22",
+      "sources": [],
+      "text": "可观察的是CEO/CFO的配置裁量及其公开经营目标，不能据此断言个人资本审批额度、董事会逐项批准、薪酬激励或心理动机；这些资料本轮未取得。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C5",
+        "C6",
+        "C8",
+        "C13",
+        "C14",
+        "C15"
+      ],
+      "id": "C23",
+      "sources": [],
+      "text": "供给迟到、组件涨价、现金和租赁义务、客户集中与稀缺容量的跨业务分配，是仍需跟踪的约束；数字更高不直接等于更多物理容量或更高回报。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "C13",
+        "C17"
+      ],
+      "id": "C24",
+      "sources": [],
+      "text": "下一验证应检查FY27 Q2实际投入、推迟容量是否在下半年上线、剔除分类后的总资源承诺、效率和token定价贡献，以及可归属利润/现金；同口径FY27 Q2实际capex若≤500亿美元，超过500亿美元的金额指引即未兑现；延期容量若再移至2027年7月以后或取消，则FY27 H2交付安排未兑现；无披露仅算未核实。单位经济恶化应下调回报判断。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C2",
+        "C3",
+        "C5"
+      ],
+      "id": "C25",
+      "sources": [],
+      "text": "基于四季电话会四舍五入数字，FY26公司整体资本开支合计1453亿美元、现金PP&E合计1160亿美元、融资租赁281亿美元，不能将这些合计标成AI专项预算或精确年报数。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C2",
+        "C4",
+        "C7"
+      ],
+      "id": "C26",
+      "sources": [],
+      "text": "按已披露同一财政季度的现金PP&E，FY27 Q1比FY26 Q1多200亿美元、增长约103.1%；公司资本开支报告值增29.5%，但跨越租赁分类变化，不构成严格同口径物理扩张率。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-10-31T17:29:33Z",
+      "basis": [
+        "C3",
+        "C4",
+        "C8"
+      ],
+      "id": "C27",
+      "sources": [],
+      "text": "截至研究日，2026日历年前三季报告资本开支为1181亿美元；约1700亿美元全年指引隐含第四季约519亿美元，与超过500亿美元的指引方向一致，尚非已执行全年支出。",
+      "type": "inference"
+    }
+  ],
+  "question": "Microsoft管理层扩大AI基础设施投入的说法，后续投入和经营兑现到哪一步，哪些约束仍存在？"
+}

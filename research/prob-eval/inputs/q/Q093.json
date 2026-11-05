@@ -1,0 +1,56 @@
+{
+ "qid": "Q093",
+ "question": "Will Julian Alvarez stay at Atletico Madrid?",
+ "rules": "This market will resolve to the next team Julian Alvarez officially joins by September 1, 2026, 11:59 PM ET.\n\nIf Julian Alvarez does not officially join a new team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Atletico Madrid\".\n\nIf Julian Alvarez joins a team that is not listed, this market will resolve to \"Other\".\n\nIf Julian Alvarez is released, retires, or is not under contract with any professional team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nAn official transfer announcement prior to the market's close date will immediately resolve this market to the corresponding option.\n\nThe primary resolution sources for this market will be official announcements from Atletico Madrid and/or the acquiring team. A consensus of credible media reporting may also be used to resolve the market.",
+ "as_of": "2026-08-19",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Atlético de Madrid (official)",
+   "published_at": "2024-08-12",
+   "excerpt": "Atlético de Madrid and Manchester City have reached an agreement for the transfer of Julián Alvarez, who has signed for the club until 2030. The club said the Argentine forward signed a contract for the next six seasons."
+  },
+  {
+   "id": "E2",
+   "publisher": "Sports Illustrated",
+   "published_at": "2026-06-22",
+   "excerpt": "After Argentina’s World Cup victory over Austria, Alvarez publicly requested a departure from Atlético: “I spoke to Atlético people, and I think the best for everyone involved is for me to leave.” Sports Illustrated reported that Barcelona’s approximately €100 million offer had been rejected."
+  },
+  {
+   "id": "E3",
+   "publisher": "Cadena SER, reporting EFE",
+   "published_at": "2026-07-30T15:41:00+02:00",
+   "excerpt": "The RFEF disciplinary committee opened extraordinary disciplinary proceedings against Barcelona over Julián Alvarez. The report said Barcelona had submitted an offer of €100 million payable in instalments, while Atlético had publicly and privately maintained that the player was not for sale and referred to his €500 million release clause."
+  },
+  {
+   "id": "E4",
+   "publisher": "Atlético de Madrid (official)",
+   "published_at": "2026-08-10T14:17:00+02:00",
+   "excerpt": "Marcos Llorente, Álex Baena, Julián Alvarez and Juan Musso returned to work on Monday, August 10, and underwent medical examinations. The club said the internationals would follow individual exercise plans supervised by its fitness staff before joining the group."
+  },
+  {
+   "id": "E5",
+   "publisher": "Times of Malta Sports",
+   "published_at": "2026-08-18",
+   "excerpt": "Coach Diego Simeone again insisted on Tuesday that Julian Alvarez would not leave Atlético Madrid that year, saying he wanted to “build a team around” the Argentina striker. While on World Cup duty, Alvarez had said he believed a transfer was best for everyone without confirming his preferred destination."
+  },
+  {
+   "id": "E6",
+   "publisher": "Get Spanish Football News via Yahoo Sports",
+   "published_at": "2026-08-18T20:50:00Z",
+   "excerpt": "Barcelona had established an updated timetable for pursuing Alvarez, according to this report citing Mundo Deportivo. The reported deadline was the next two or three days, after which the sporting management would activate an alternative if the transfer remained unresolved; Atlético continued to regard Alvarez as not for sale."
+  },
+  {
+   "id": "E7",
+   "publisher": "Cadena SER",
+   "published_at": "2026-08-19T17:32:00+02:00",
+   "excerpt": "Atlético president Enrique Cerezo reiterated that the club had never intended to sell Alvarez and said he was confident the player would win back the supporters within two matches. The report said Barcelona’s summer pursuit had included a single €100 million offer."
+  },
+  {
+   "id": "E8",
+   "publisher": "La Nación",
+   "published_at": "2026-08-19",
+   "excerpt": "Alvarez was not called up by Simeone for Atlético’s opening league fixture. La Nación reported that the player remained dissatisfied with the lack of a resolution to his desired Barcelona transfer and that Atlético had rejected a €100 million offer."
+  }
+ ]
+}

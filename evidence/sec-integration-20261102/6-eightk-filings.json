@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "provider": "edgartools",
+  "adapter_version": 1,
+  "operation": "filings",
+  "params": {
+    "operation": "filings",
+    "as_of": null,
+    "identifier": "NVDA",
+    "form": "8-K",
+    "limit": 1,
+    "scan_limit": 2
+  },
+  "retrieved_at": "2026-11-02T09:37:59.636398Z",
+  "status": "ok",
+  "data": {
+    "company": "NVIDIA CORP",
+    "cik": "1045810",
+    "filings": [
+      {
+        "company": "NVIDIA CORP",
+        "cik": "1045810",
+        "accession_number": "0001045810-26-000078",
+        "form": "8-K",
+        "filing_date": "2026-09-03",
+        "period_of_report": "2026-09-02",
+        "acceptance_datetime": "2026-09-03T12:03:56Z",
+        "acceptance_raw_eastern": "2026-09-03 08:03:56",
+        "acceptance_basis": "filing SGML header; America/New_York converted to UTC",
+        "acceptance_header_line": "ACCEPTANCE-DATETIME:            2026-09-03 08:03:56",
+        "acceptance_header_line_is_normalized": true,
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/0001045810-26-000078-index.html",
+        "sec_submission_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/0001045810-26-000078.txt",
+        "primary_document": "nvda-20260902.htm",
+        "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+        "amendment": false,
+        "origin_id": "sec:0001045810-26-000078",
+        "attachments": [
+          {
+            "document": "nvda-20260902.htm",
+            "document_type": "8-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+            "description": "8-K"
+          }
+        ],
+        "primary_content_sha256": "acbff995154e1c003fe90d4d2dfd0ad53a4eb252edc2c956dd37e697545e4c0e",
+        "primary_content_hash_basis": "EdgarTools primary attachment decoded content, re-encoded UTF-8"
+      }
+    ],
+    "excluded_after_cutoff": [],
+    "unknown_acceptance": []
+  },
+  "provenance": {
+    "sec_submissions_url": "https://data.sec.gov/submissions/CIK0001045810.json"
+  },
+  "completeness": {
+    "truncated": true,
+    "scope": "bounded filing search; not complete SEC history",
+    "available_count": 248,
+    "scanned_count": 1,
+    "returned_count": 1,
+    "scan_limit": 2
+  },
+  "notes": [
+    "Retrieval package, not sources/claims or independent corroboration.",
+    "Report period is not public availability; retain exact accession and original periods."
+  ],
+  "library_version": "5.62.1"
+}

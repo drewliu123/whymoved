@@ -1,0 +1,115 @@
+{
+  "cases": {
+    "event": {
+      "status": "structural_pass",
+      "errors": [],
+      "claim_count": 18,
+      "check_claims": {
+        "passed": true,
+        "total": 18,
+        "failures": {}
+      },
+      "command": [
+        "python3",
+        "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+        "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/event/claims.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "semantic_review": "separate independent review; not proven by structural check",
+      "sha256": {
+        "report.md": "d1903ad5fc552405afb07b524958c4ae4f37131cae5abf531572e6507c4c96dd",
+        "report.json": "f43627084ea28276c48bad40919f6abbb653fc67060f792ed079722c89f94935",
+        "claims.json": "5a0a78ac0a219321d04674ab8c952ab9600a66457f1d7b467d84b411b0d249b6",
+        "sources.json": "63f429b8c3f5294bf5203cadc5e1a2f75433cd923ea2ac9da827987023188601",
+        "plan.json": "72491394c0af5767cbd59029201917c64541b4ca7eebc6afe6f230bcba447c59",
+        "calculations.json": "dfbe6718aebb19954a5315b3115596580387139bf75c604fea43a1ca4c381015",
+        "validation.json": "3fe61f95c7b127ed8acffa76549408e50d70091f8f7f2af1550cd0b5cfb144a3"
+      }
+    },
+    "asset": {
+      "status": "structural_pass",
+      "errors": [],
+      "claim_count": 11,
+      "check_claims": {
+        "passed": true,
+        "total": 11,
+        "failures": {}
+      },
+      "command": [
+        "python3",
+        "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+        "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/asset/claims.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "semantic_review": "separate independent review; not proven by structural check",
+      "sha256": {
+        "report.md": "f03fb4cefb1061d52ce81fe055d664973a8cfffe73fe85a8e45f53126182241d",
+        "report.json": "ae6456daee4e8db28841ff2aa92e1c22009fbf47ad10621be0934e4cde1e6907",
+        "claims.json": "680c2f718ae9b5446153923e94b4f81df11682c3158df5a92e14298ba2a7ed4f",
+        "sources.json": "0a5d2635a7923782d9c72897fe25ff74e18f5d1d045103bd162dfa220e12d50d",
+        "plan.json": "25ad1a8534949addf81116da16c1ce227afb05d882d9851f10c93f629b93882d",
+        "calculations.json": "2d321771a6791c7d7653ecf0178babcc9d9bd6a436b9e25ef36d7a7c9e8475ce",
+        "validation.json": "108f491a43e421eb79277f1cd471fa8c8f477b1537012f37c99d83c869718eb0"
+      },
+      "independent_numeric_assertions": 3
+    },
+    "theme": {
+      "status": "structural_pass",
+      "errors": [],
+      "claim_count": 23,
+      "check_claims": {
+        "passed": true,
+        "total": 23,
+        "failures": {}
+      },
+      "command": [
+        "python3",
+        "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+        "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/theme/claims.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "semantic_review": "separate independent review; not proven by structural check",
+      "sha256": {
+        "report.md": "081bfc1cd039c3b794bc78b7033b3d1473a80ec7b29fe7ca2e3bd7f724961c82",
+        "report.json": "9c6ad900719bd74dfecc06261d465cd480815d3438b1a8d5f8648fc71c7dab2c",
+        "claims.json": "fff50164de7b4e2a58f6dabc289183e76150cd7e56096b4d68b6c3a4b8524add",
+        "sources.json": "6394fe7d358410dd9996b27fb08c0f83ad1a6a0c7bbfd182eee155b72075d61b",
+        "plan.json": "2b77600e3c77bb9e627df54a38e5a28f7d911e52f7a52c59fa7cf88cd00aaceb",
+        "calculations.json": "4a34668a9d0af4330839ed28b03da6188596b60b2257da5da505cc53026ba4ca",
+        "validation.json": "57fd88dd1181ec08b8a0f2444285b98b646fd1c3b3811c1e2f1b4fa6eadf02fe"
+      }
+    },
+    "actor": {
+      "status": "structural_pass",
+      "errors": [],
+      "claim_count": 27,
+      "check_claims": {
+        "passed": true,
+        "total": 27,
+        "failures": {}
+      },
+      "command": [
+        "python3",
+        "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+        "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/claims.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "semantic_review": "separate independent review; not proven by structural check",
+      "sha256": {
+        "report.md": "74b3e7797760a774b1ca8b4711ccc6d25715ff03d58418fbef9e4d3794eefe99",
+        "report.json": "adca0b8114df42cbd8ca335a702125758e251d81b750fd0578900c4c720fdb20",
+        "claims.json": "93d2af438a0257db16e57ed4615f4f1e998135327a7d5e52b097720eaec7977b",
+        "sources.json": "bf4d5638732c2e1d2b464a94be09b860821ebe16366340a4e5eb89a0d7cc3cef",
+        "plan.json": "e7b45b690516b46a7ed727643ac3ee52be00e9fd05a40f4c53912d60a6389412",
+        "calculations.json": "82a26168bcb53eda59e6c06066b625c51c86dc9dc0d192e1378d678e6b705223",
+        "validation.json": "063134f75f5773f1299a0210f4a2fa73da70f82ae3263a15734f64053bb4933c"
+      }
+    }
+  },
+  "scope": "development cases; structural and deterministic checks only",
+  "all_present_and_structural_pass": true
+}

@@ -1,0 +1,38 @@
+{
+ "qid": "Q123",
+ "question": "Will Ronaldo Caiado finish in third place in the first round of the 2026 Brazilian presidential election?",
+ "rules": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate who receives the third-most valid votes in the first round of this election.\n\nThe named candidates will be primarily ranked by the number of valid votes received in the specified election. If two or more candidates are tied on valid votes, ties will be broken by alphabetical order of the candidates' last names. This market will resolve to the candidate that occupies the third-highest finishing position after applying this ranking.\n\nIf the result of this election isn't known definitively by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., https://dadosabertos.tse.jus.br/).",
+ "as_of": "2026-09-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Nexus — Pesquisa BTG/Nexus",
+   "published_at": "2026-09-21",
+   "excerpt": "No principal cenário estimulado, Lula registra 40% das intenções de voto, enquanto Flávio Bolsonaro aparece com 37%. O escritor Augusto Cury aparece em seguida, com 6%, seguido por Ronaldo Caiado, com 5%, Renan Santos, com 3%, e Zema, com 1%. Foram ouvidos 2.006 eleitores, por telefone, via CATI, entre os dias 18 e 20 de setembro de 2026. A margem de erro é de 2 pontos percentuais, para mais ou para menos, com 95% de nível de confiança."
+  },
+  {
+   "id": "E2",
+   "publisher": "Jornal do Comércio / Agências",
+   "published_at": "2026-09-21T18:41:08-03:00",
+   "excerpt": "O escritor Augusto Cury (Avante) oscilou de 7% para 6% e permanece na terceira posição. Ele acumula três quedas numéricas consecutivas desde que atingiu 10% no início de setembro. O ex-governador de Goiás Ronaldo Caiado atingiu 4% neste levantamento, mesmo nível da pesquisa de uma semana atrás. Contratada pelo jornal O Globo e pela TV Globo, a pesquisa ouviu presencialmente 2.004 eleitores entre 17 e 20 de setembro."
+  },
+  {
+   "id": "E3",
+   "publisher": "Datafolha",
+   "published_at": "2026-09-14T11:28:00-03:00",
+   "excerpt": "No cenário sem o nome do PRTB, Lula tem hoje 39%, ante 35% de Flavio. Em um patamar mais baixo aparecem o escritor Augusto Cury (Avante), que tem 6%, Ronaldo Caiado (PSD), com 4%, Renan Santos (Missão), com 3%, e Zema (Novo), com 2%. O atual levantamento foi realizado entre os dias 8 e 10 de setembro de 2026, com 2.002 entrevistas presenciais em 125 municípios, com eleitores de 16 anos ou mais de todas as regiões do país. A margem de erro da pesquisa é de 2 pontos percentuais para mais ou para menos considerando um nível de confiança de 95%."
+  },
+  {
+   "id": "E4",
+   "publisher": "Paraíba Online / Conteúdo Estado",
+   "published_at": "2026-09-21T08:45:00-03:00",
+   "excerpt": "Entre os entrevistados que escolheram algum candidato no primeiro turno, 84% afirmam que a decisão está tomada e não mudará, ante 83% na rodada anterior. Outros 15% admitem que ainda podem alterar o voto, ante 17% anteriormente. Os eleitores de Flávio apresentam a maior taxa de certeza, de 92%, seguidos pelos de Lula, com 90%. A taxa é de 55% entre os eleitores de Samara Martins, de 52% entre os de Caiado e Zema e de 48% no eleitorado de Cury."
+  },
+  {
+   "id": "E5",
+   "publisher": "Tribunal Superior Eleitoral (TSE)",
+   "published_at": "2026-03-03T09:36:00-03:00",
+   "excerpt": "Por unanimidade, o Plenário do Tribunal Superior Eleitoral (TSE) aprovou, em sessão administrativa extraordinária realizada nesta segunda-feira (2), mais sete resoluções que vão orientar as Eleições Gerais de 2026. Com o julgamento de hoje, o Tribunal concluiu a votação de todas as instruções relativas ao pleito, incluindo o calendário eleitoral e a atualização das regras sobre uso de inteligência artificial (IA) na campanha eleitoral. Nas Eleições Gerais deste ano, cujo 1º turno está marcado para o dia 4 de outubro, o eleitorado definirá os ocupantes dos cargos de presidente da República, governador de estado, senador, deputado federal e deputado estadual ou distrital."
+  }
+ ]
+}

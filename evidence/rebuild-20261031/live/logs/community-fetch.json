@@ -1,0 +1,32 @@
+[
+  {
+    "name": "hn-comment-original",
+    "url": "https://hacker-news.firebaseio.com/v0/item/50304674.json",
+    "retrieved_at": "2026-10-31T18:34:09.012523+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://hacker-news.firebaseio.com/v0/item/50304674.json",
+    "content_type": "application/json; charset=utf-8",
+    "elapsed_seconds": 0.845
+  },
+  {
+    "name": "hn-discussion-original",
+    "url": "https://news.ycombinator.com/item?id=50304674",
+    "retrieved_at": "2026-10-31T18:34:09.857510+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://news.ycombinator.com/item?id=50304674",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 0.797
+  },
+  {
+    "name": "hn-parent-original",
+    "url": "https://hn.algolia.com/api/v1/items/50303833",
+    "retrieved_at": "2026-10-31T18:34:10.654771+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://hn.algolia.com/api/v1/items/50303833",
+    "content_type": "application/json",
+    "elapsed_seconds": 1.118
+  }
+]

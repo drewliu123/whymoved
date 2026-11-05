@@ -1,0 +1,352 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T03:31:35.565610+00:00",
+  "claims": [
+    {
+      "id": "crcl_start",
+      "text": "CRCL Sep 30, 2026收盘价82.17美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "crcl_start"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "crcl_prior",
+      "text": "CRCL Oct 29, 2026收盘价79.99美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "crcl_prior"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "crcl_end",
+      "text": "CRCL Oct 30, 2026收盘价72.54美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "crcl_end"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "coin_start",
+      "text": "COIN Sep 30, 2026收盘价186.41美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "coin_start"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "coin_prior",
+      "text": "COIN Oct 29, 2026收盘价160.59美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "coin_prior"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "coin_end",
+      "text": "COIN Oct 30, 2026收盘价143.54美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "coin_end"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "spy_start",
+      "text": "SPY Sep 30, 2026收盘价762.63美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "spy_start"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "spy_prior",
+      "text": "SPY Oct 29, 2026收盘价769.36美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "spy_prior"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "spy_end",
+      "text": "SPY Oct 30, 2026收盘价755.72美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "spy_end"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "C_scale",
+      "text": "Q2期末USDC为733亿美元，同比增长19%；链上交易额14.8万亿美元，同比增长151%。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_scale"
+        }
+      ]
+    },
+    {
+      "id": "C_rev",
+      "text": "Q2收入及储备收益合计7.01亿美元，同比增长7%。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_rev"
+        }
+      ]
+    },
+    {
+      "id": "C_rate",
+      "text": "Q2储备收益6.68亿美元，同比增长5%；平均USDC规模增长25%，储备收益率下降66基点。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_rate"
+        }
+      ]
+    },
+    {
+      "id": "C_cost",
+      "text": "Q2分销、交易及其他成本4.12亿美元，同比增长1%。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_cost"
+        }
+      ]
+    },
+    {
+      "id": "C_ebitda",
+      "text": "Q2调整后EBITDA为1.43亿美元，同比增长8%，公司解释新增产品投入抵消部分增长。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_ebitda"
+        }
+      ]
+    },
+    {
+      "id": "C_profit",
+      "text": "Q2持续经营净利润4800万美元，同比增加5.30亿美元，受上年IPO股权激励基数影响。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_profit"
+        }
+      ]
+    },
+    {
+      "id": "C_other",
+      "text": "Q2其他收入3400万美元，同比增长41%。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_other"
+        }
+      ]
+    },
+    {
+      "id": "C_econ",
+      "text": "Circle披露上半年约14亿美元收入中，8.19亿美元用于分销伙伴和交易成本，约占59%。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_econ"
+        }
+      ]
+    },
+    {
+      "id": "C_net",
+      "text": "Circle在上半年经济模型说明中称每1美元收入约形成7美分净利润，不能将该比例当未来固定利润率。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_net"
+        }
+      ]
+    },
+    {
+      "id": "C_date",
+      "text": "Circle公告Q3财报安排在2026-11-04，业绩直播为美国东部时间上午8点。",
+      "type": "fact",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_date"
+        }
+      ]
+    },
+    {
+      "id": "C_ap",
+      "text": "AP报道：Circle CEO称配合执法冻结与Binance安全事件相关的逾8亿美元资产；此为报道转述，不是Circle损失金额。",
+      "type": "view",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_ap"
+        }
+      ]
+    },
+    {
+      "id": "C_mizuho",
+      "text": "TheFly转述瑞穗10月26日将目标价由45降至43美元，维持跑输评级，论点为AI代理引导持有人选择其他生息工具；这是机构情景而非已发生的资金流失。",
+      "type": "view",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "S_mizuho"
+        }
+      ]
+    },
+    {
+      "id": "C_returns",
+      "text": "9月30日至10月30日价格收益：CRCL -11.72%、COIN -23.00%、SPY -0.91%；10月30日单日分别-9.31%、-10.62%、-1.77%。",
+      "type": "inference",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [],
+      "basis": [
+        "crcl_start",
+        "crcl_prior",
+        "crcl_end",
+        "coin_start",
+        "coin_prior",
+        "coin_end",
+        "spy_start",
+        "spy_prior",
+        "spy_end"
+      ]
+    },
+    {
+      "id": "C_drawdown",
+      "text": "CRCL 10月21日收盘89.71美元至10月30日72.54美元回撤19.14%；9月30日至10月29日只下跌2.65%，说明月底冲击主导本月净跌幅，但不能解释月内每次波动。",
+      "type": "inference",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [],
+      "basis": [
+        "crcl_start",
+        "crcl_prior",
+        "crcl_end",
+        "crcl_peak"
+      ]
+    },
+    {
+      "id": "crcl_peak",
+      "text": "CRCL 10月21日收盘89.71美元。",
+      "type": "price",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [
+        {
+          "source_id": "crcl_peak"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "C_mechanism",
+      "text": "Circle储备收益主要由平均USDC余额与收益率共同决定；平均规模同比增长25%而储备收益仅增长5%，支持利率抵消规模增长的解释。链上周转额增长151%不等于公司收入增长151%。",
+      "type": "inference",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [],
+      "basis": [
+        "C_scale",
+        "C_rate",
+        "C_rev"
+      ]
+    },
+    {
+      "id": "C_retention",
+      "text": "分销成本是商业模式的重要分配项，不能据上半年59%费用占比就断言本季恶化；Q2分销、交易及其他成本合计仅增长1%，低于收入增长7%；这不是纯分销费用的单项增幅。储备收入约占总收入95%，新业务增长尚不足以消除利率敏感性。",
+      "type": "inference",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [],
+      "basis": [
+        "C_cost",
+        "C_rev",
+        "C_rate",
+        "C_other",
+        "C_econ"
+      ]
+    },
+    {
+      "id": "C_sector",
+      "text": "同期表现更支持加密相关股共同承压。Circle已披露的利率敏感经营结构提供理解波动的背景，但Q2不能证明10月盈利预期实际下修。CRCL同月跌幅小于COIN，难以用Circle独有基本面崩塌解释；COIN具有自身事件和与USDC的商业关联，不能据两只股票完成因果分解。",
+      "type": "inference",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [],
+      "basis": [
+        "C_returns",
+        "C_ap",
+        "C_mechanism",
+        "C_ebitda"
+      ]
+    },
+    {
+      "id": "C_supply",
+      "text": "瑞穗目标价修订提供叙事分歧线索，不能证明AI已导致USDC流失，也不足以确认减持、增发或期权对冲主导本月价格。",
+      "type": "inference",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [],
+      "basis": [
+        "C_mizuho",
+        "C_returns"
+      ]
+    },
+    {
+      "id": "C_watch",
+      "text": "下一次应配对核查Q3平均USDC、储备收益率、扣除分销成本后的收入、调整后费用及新业务收入。规模回升且净留存改善会削弱经营压力解释；行业企稳而上述指标继续走弱会加强公司特有压力解释。",
+      "type": "inference",
+      "as_of": "2026-11-02T03:31:35.565610+00:00",
+      "sources": [],
+      "basis": [
+        "C_date",
+        "C_mechanism",
+        "C_retention",
+        "C_ebitda"
+      ]
+    }
+  ]
+}

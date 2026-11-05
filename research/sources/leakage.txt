@@ -1,0 +1,263 @@
+[![Image 1: ACL Logo](https://aclanthology.org/images/acl-logo.svg)ACL Anthology](https://aclanthology.org/)
+
+*   [About](https://aclanthology.org/2026.acl-short.65/#)
+    *   [Announcements](https://aclanthology.org/posts/)
+    *   [Communication channels](https://aclanthology.org/faq/news/)
+    *   [Related work](https://aclanthology.org/faq/related-work/)
+    *   [Copyright](https://aclanthology.org/faq/copyright/)
+    *   
+* * *
+
+    *   [Credits](https://aclanthology.org/info/credits/)
+    *   [Volunteer](https://aclanthology.org/faq/volunteer/)
+    *   [Development](https://aclanthology.org/info/development/)
+    *   [Feedback](https://aclanthology.org/faq/feedback/)
+
+*   [Using](https://aclanthology.org/2026.acl-short.65/#)
+    *   [Author directory](https://aclanthology.org/people/)
+    *   [Citing papers](https://aclanthology.org/faq/bib/)
+    *   [Links in the Anthology](https://aclanthology.org/faq/linking/)
+    *   [Data access](https://aclanthology.org/faq/api/)
+    *   
+* * *
+
+    *   [All FAQs](https://aclanthology.org/faq/)
+    *   
+* * *
+
+    *   ###### Details
+
+    *   [Anthology identifiers](https://aclanthology.org/info/ids/)
+    *   [Names](https://aclanthology.org/info/names/)
+    *   [ORCID iDs](https://aclanthology.org/info/orcid/)
+    *   [DOIs](https://aclanthology.org/faq/doi/)
+    *   [Verified authors](https://aclanthology.org/info/verification/)
+
+*   [Contributions](https://aclanthology.org/2026.acl-short.65/#)
+    *   [Submissions](https://aclanthology.org/info/contrib/)
+    *   [Corrections](https://aclanthology.org/info/corrections/)
+    *   [Maintain author pages](https://aclanthology.org/info/author-pages/)
+    *   [Attachments](https://aclanthology.org/faq/attachments/)
+
+*   [GitHub](https://github.com/acl-org/acl-anthology/)
+
+## [Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study](https://aclanthology.org/2026.acl-short.65.pdf)
+
+[Ali El Lahib](https://aclanthology.org/people/ali-el-lahib/), [Ying-Jieh Xia](https://aclanthology.org/people/ying-jieh-xia/), [Zehan Li](https://aclanthology.org/people/zehan-li-6236/), [Yuxuan Wang](https://aclanthology.org/people/yuxuan-wang-9833/), [Xinyu Pi](https://aclanthology.org/people/xinyu-pi/)
+
+##### Correct Metadata for
+
+Use this form to create a GitHub issue with structured data describing the correction. You will need a GitHub account. Once you create that issue, the correction will be reviewed by a staff member.
+
+⚠️ Mobile Users: Submitting this form to create a new issue will only work with github.com, not the GitHub Mobile app.
+
+**Important**: The Anthology treat PDFs as authoritative. Please use this form only to correct data that is out of line with the PDF. See [our corrections guidelines](https://aclanthology.org/info/corrections/) if you need to change the PDF.
+
+Title Adjust the title. Retain tags such as <fixed-case>.
+
+Authors Adjust author names and order to match the PDF.Add Author
+
+Abstract Correct abstract if needed. Retain XML formatting tags such as <tex-math>. You may use <b>...</b> for **bold**, <i>...</i> for _italic_, <u>...</u> for underline, <sc>...</sc> for small-caps, <tt>...<tt> for typewriter text, <url>...</url> for URLs, <a href=...> for hyperlinks, and <par/> for paragraph breaks.
+
+Verification against PDF Ensure that the new title/authors match the snapshot below. (If there is no snapshot or it is too small, consult [the PDF](https://aclanthology.org/2026.acl-short.65/#).)
+
+[![Image 2](https://aclanthology.org/2026.acl-short.65/)](https://aclanthology.org/2026.acl-short.65/#)
+
+Authors concatenated from the text boxes above:
+
+- [x] ALL author names match the snapshot above—including middle initials, hyphens, and accents. 
+
+Create GitHub issue for staff review
+
+* * *
+
+##### Abstract
+
+Search-engine date filters are widely used to enforce pre-cutoff retrieval in retrospective evaluations of search-augmented forecasters. We show this approach is unreliable across two major search engines: auditing Google Search’s before: filter and DuckDuckGo’s date-range filter, we find that at least one retrieved page contains major post-cutoff leakage for 71% of questions on Google and 81% on DuckDuckGo, and the answer is directly revealed for 41% and 55%, respectively. Using gpt-oss-120b to forecast with these leaky documents, we demonstrate inflated prediction accuracy (Brier score 0.10 vs. 0.24 with leak-free documents). We characterize recurring leakage mechanisms, including updated articles, related-content modules, unreliable metadata, and absence-based signals, and argue that date-restricted search on these engines is insufficient for credible retrospective evaluation. We recommend stronger retrieval safeguards or evaluation on frozen, time-stamped web snapshots.
+
+Anthology ID:2026.acl-short.65 Volume:[Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)](https://aclanthology.org/volumes/2026.acl-short/)Month:July Year:2026 Address:San Diego, California, United States Editors:[Maria Liakata](https://aclanthology.org/people/maria-liakata/), [Viviane P. Moreira](https://aclanthology.org/people/viviane-moreira/), [Jiajun Zhang](https://aclanthology.org/people/jiajun-zhang/unverified/), [David Jurgens](https://aclanthology.org/people/david-jurgens/)Venue:[ACL](https://aclanthology.org/venues/acl/ "Annual Meeting of the Association for Computational Linguistics")SIG:Publisher:Association for Computational Linguistics Note:Pages:787–795 Language:URL:[https://aclanthology.org/2026.acl-short.65/](https://aclanthology.org/2026.acl-short.65/)DOI:[10.18653/v1/2026.acl-short.65](https://doi.org/10.18653/v1/2026.acl-short.65 "To the current version of the paper by DOI")Bibkey:el-lahib-etal-2026-temporal Cite (ACL):Ali El Lahib, Ying-Jieh Xia, Zehan Li, Yuxuan Wang, and Xinyu Pi. 2026. [Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study](https://aclanthology.org/2026.acl-short.65/). In _Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)_, pages 787–795, San Diego, California, United States. Association for Computational Linguistics.Cite (Informal):[Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study](https://aclanthology.org/2026.acl-short.65/) (El Lahib et al., ACL 2026)Copy Citation:BibTeX Markdown MODS XML Endnote More options…PDF:[https://aclanthology.org/2026.acl-short.65.pdf](https://aclanthology.org/2026.acl-short.65.pdf)Checklist:[2026.acl-short.65.checklist.pdf](https://aclanthology.org/attachments/2026.acl-short.65.checklist.pdf)
+
+[PDF](https://aclanthology.org/2026.acl-short.65.pdf "Open PDF of 'Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study'")[Cite](https://aclanthology.org/2026.acl-short.65/# "Open dialog for exporting citations")[Search](https://www.semanticscholar.org/search?+q=Temporal+Leakage+in+Search-Engine+Date-Filtered+Web+Retrieval%3A+A+Retrospective+Forecasting+Case+Study "Search for 'Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study' on Semantic Scholar")[Checklist](https://aclanthology.org/attachments/2026.acl-short.65.checklist.pdf "Open checklist for 'Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study'")[Fix data](https://aclanthology.org/2026.acl-short.65/# "Correct problems with title, author list, and abstract")
+
+* * *
+
+##### Export citation
+
+*   [BibTeX](https://aclanthology.org/2026.acl-short.65/#citeBibtex)
+*   [MODS XML](https://aclanthology.org/2026.acl-short.65/#citeMods)
+*   [Endnote](https://aclanthology.org/2026.acl-short.65/#citeEndnote)
+*   [Preformatted](https://aclanthology.org/2026.acl-short.65/#citeMarkdown)
+
+@inproceedings{el-lahib-etal-2026-temporal,
+    title = "Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study",
+    author = "El Lahib, Ali  and
+      Xia, Ying-Jieh  and
+      Li, Zehan  and
+      Wang, Yuxuan  and
+      Pi, Xinyu",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-short.65/",
+    doi = "10.18653/v1/2026.acl-short.65",
+    pages = "787--795",
+    ISBN = "979-8-89176-391-3",
+    abstract = "Search-engine date filters are widely used to enforce pre-cutoff retrieval in retrospective evaluations of search-augmented forecasters. We show this approach is unreliable across two major search engines: auditing Google Search{'}s before: filter and DuckDuckGo{'}s date-range filter, we find that at least one retrieved page contains major post-cutoff leakage for 71{\%} of questions on Google and 81{\%} on DuckDuckGo, and the answer is directly revealed for 41{\%} and 55{\%}, respectively. Using gpt-oss-120b to forecast with these leaky documents, we demonstrate inflated prediction accuracy (Brier score 0.10 vs. 0.24 with leak-free documents). We characterize recurring leakage mechanisms, including updated articles, related-content modules, unreliable metadata, and absence-based signals, and argue that date-restricted search on these engines is insufficient for credible retrospective evaluation. We recommend stronger retrieval safeguards or evaluation on frozen, time-stamped web snapshots."
+}
+
+[Download as File](https://aclanthology.org/2026.acl-short.65/)Copy to Clipboard
+
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="el-lahib-etal-2026-temporal">
+    <titleInfo>
+        <title>Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ali</namePart>
+        <namePart type="family">El Lahib</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ying-Jieh</namePart>
+        <namePart type="family">Xia</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Zehan</namePart>
+        <namePart type="family">Li</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Yuxuan</namePart>
+        <namePart type="family">Wang</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Xinyu</namePart>
+        <namePart type="family">Pi</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2026-07</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)</title>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Maria</namePart>
+            <namePart type="family">Liakata</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <name type="personal">
+            <namePart type="given">Viviane</namePart>
+            <namePart type="given">P</namePart>
+            <namePart type="family">Moreira</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <name type="personal">
+            <namePart type="given">Jiajun</namePart>
+            <namePart type="family">Zhang</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <name type="personal">
+            <namePart type="given">David</namePart>
+            <namePart type="family">Jurgens</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>Association for Computational Linguistics</publisher>
+            <place>
+                <placeTerm type="text">San Diego, California, United States</placeTerm>
+            </place>
+        </originInfo>
+        <genre authority="marcgt">conference publication</genre>
+        <identifier type="isbn">979-8-89176-391-3</identifier>
+    </relatedItem>
+    <abstract>Search-engine date filters are widely used to enforce pre-cutoff retrieval in retrospective evaluations of search-augmented forecasters. We show this approach is unreliable across two major search engines: auditing Google Search’s before: filter and DuckDuckGo’s date-range filter, we find that at least one retrieved page contains major post-cutoff leakage for 71% of questions on Google and 81% on DuckDuckGo, and the answer is directly revealed for 41% and 55%, respectively. Using gpt-oss-120b to forecast with these leaky documents, we demonstrate inflated prediction accuracy (Brier score 0.10 vs. 0.24 with leak-free documents). We characterize recurring leakage mechanisms, including updated articles, related-content modules, unreliable metadata, and absence-based signals, and argue that date-restricted search on these engines is insufficient for credible retrospective evaluation. We recommend stronger retrieval safeguards or evaluation on frozen, time-stamped web snapshots.</abstract>
+    <identifier type="citekey">el-lahib-etal-2026-temporal</identifier>
+    <identifier type="doi">10.18653/v1/2026.acl-short.65</identifier>
+    <location>
+        <url>https://aclanthology.org/2026.acl-short.65/</url>
+    </location>
+    <part>
+        <date>2026-07</date>
+        <extent unit="page">
+            <start>787</start>
+            <end>795</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection>
+
+[Download as File](https://aclanthology.org/2026.acl-short.65/)Copy to Clipboard
+
+%0 Conference Proceedings
+%T Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study
+%A El Lahib, Ali
+%A Xia, Ying-Jieh
+%A Li, Zehan
+%A Wang, Yuxuan
+%A Pi, Xinyu
+%Y Liakata, Maria
+%Y Moreira, Viviane P.
+%Y Zhang, Jiajun
+%Y Jurgens, David
+%S Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)
+%D 2026
+%8 July
+%I Association for Computational Linguistics
+%C San Diego, California, United States
+%@ 979-8-89176-391-3
+%F el-lahib-etal-2026-temporal
+%X Search-engine date filters are widely used to enforce pre-cutoff retrieval in retrospective evaluations of search-augmented forecasters. We show this approach is unreliable across two major search engines: auditing Google Search’s before: filter and DuckDuckGo’s date-range filter, we find that at least one retrieved page contains major post-cutoff leakage for 71% of questions on Google and 81% on DuckDuckGo, and the answer is directly revealed for 41% and 55%, respectively. Using gpt-oss-120b to forecast with these leaky documents, we demonstrate inflated prediction accuracy (Brier score 0.10 vs. 0.24 with leak-free documents). We characterize recurring leakage mechanisms, including updated articles, related-content modules, unreliable metadata, and absence-based signals, and argue that date-restricted search on these engines is insufficient for credible retrospective evaluation. We recommend stronger retrieval safeguards or evaluation on frozen, time-stamped web snapshots.
+%R 10.18653/v1/2026.acl-short.65
+%U https://aclanthology.org/2026.acl-short.65/
+%U https://doi.org/10.18653/v1/2026.acl-short.65
+%P 787-795
+
+[Download as File](https://aclanthology.org/2026.acl-short.65/)Copy to Clipboard
+
+##### Markdown (Informal)
+
+[Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study](https://aclanthology.org/2026.acl-short.65/) (El Lahib et al., ACL 2026)
+
+*   [Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study](https://aclanthology.org/2026.acl-short.65/) (El Lahib et al., ACL 2026)
+
+##### ACL
+
+*   Ali El Lahib, Ying-Jieh Xia, Zehan Li, Yuxuan Wang, and Xinyu Pi. 2026. [Temporal Leakage in Search-Engine Date-Filtered Web Retrieval: A Retrospective Forecasting Case Study](https://aclanthology.org/2026.acl-short.65/). In _Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)_, pages 787–795, San Diego, California, United States. Association for Computational Linguistics.
+
+Copy Markdown to Clipboard Copy ACL to Clipboard
+
+[![Image 3: Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) ACL materials are Copyright ©1963–2026 ACL; other materials are copyrighted by their respective copyright holders. Materials prior to 2016 here are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 International License](https://creativecommons.org/licenses/by-nc-sa/3.0/). Permission is granted to make copies for the purposes of teaching and research. Materials published in or after 2016 are licensed on a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+The ACL Anthology is managed and built by the [ACL Anthology team](https://aclanthology.org/info/credits/) of volunteers.
+
+_Site last built on 30 October 2026 at 09:40 UTC with [commit f54ed9d](https://github.com/acl-org/acl-anthology/tree/f54ed9d044e9b3a55afc4855548c82267993813d)._

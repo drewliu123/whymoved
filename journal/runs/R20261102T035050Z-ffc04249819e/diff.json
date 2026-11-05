@@ -1,0 +1,92 @@
+{
+  "analysis_changed": true,
+  "claims": {
+    "added": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "changed": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "removed": []
+  },
+  "comparability_issues": [
+    {
+      "after": "2026年11月1日当前截面，截止11月3日至12月31日的未来期限",
+      "before": "2026年4月至6月安排、9月至11月1日执行；展望未来数日至三个月",
+      "path": "plan.comparison.period"
+    },
+    {
+      "after": "Polymarket美国对伊朗合格空袭或地对地导弹打击；并非所有双边敌对行动",
+      "before": "美国与伊朗直接冲突；以色列与地区武装为外部触发因素",
+      "path": "plan.comparison.scope"
+    },
+    {
+      "after": "YES买卖报价、买卖中点与合约规则",
+      "before": "协议状态、直接军事行动与履约观察",
+      "path": "plan.comparison.unit"
+    }
+  ],
+  "evidence": {
+    "added": [
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37"
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "judgment": {
+    "comparability": {
+      "reason": "原研究范围是广义美伊直接冲突；本轮价格只覆盖规则列明的美方合格打击，且增加当前市场截面，不能当作同一概率的历史修订。",
+      "status": "mixed"
+    },
+    "judgment_changed": true,
+    "reason": "新增狭义美方合格打击期限的市场基准，纠正上一轮漏查；对广义双边停火寿命仍无充分独立证据排序，不能把合约概率替代其真实持续概率。"
+  },
+  "method": "structural_ids_and_fields",
+  "parent_run": "R20261102T033859Z-9c774311b155",
+  "schema_version": 2,
+  "sources": {
+    "added": [
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37"
+    ],
+    "changed": [],
+    "removed": []
+  }
+}

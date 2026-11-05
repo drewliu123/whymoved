@@ -1,0 +1,28 @@
+{
+  "formula": "((1+SepYoY)*(1+Oct2026MoM)/(1+Oct2025MoM)-1)*100",
+  "SepYoY": 0.009,
+  "Oct2025MoM": 0.002,
+  "rows": [
+    {
+      "mom_assumption_pct": 0,
+      "yoy_result_pct": 0.6986027944111628
+    },
+    {
+      "mom_assumption_pct": 0.1,
+      "yoy_result_pct": 0.7993013972055651
+    },
+    {
+      "mom_assumption_pct": 0.2,
+      "yoy_result_pct": 0.8999999999999897
+    },
+    {
+      "mom_assumption_pct": 0.3,
+      "yoy_result_pct": 1.000698602794392
+    },
+    {
+      "mom_assumption_pct": 0.4,
+      "yoy_result_pct": 1.1013972055887944
+    }
+  ],
+  "note": "环比为研究假设，输入为舍入发布值；情景范围非置信区间。"
+}

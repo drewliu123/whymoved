@@ -1,0 +1,44 @@
+{
+ "qid": "Q049",
+ "question": "Will the Bank of Brazil decrease the target for the Selic rate by 25 bps at the August meeting?",
+ "rules": "This market will resolve according to the change in basis points in the target for the Selic rate resulting from the August 2026 meeting of the Bank of Brazil’s Monetary Policy Committee (COPOM), relative to the level it was prior to this meeting.\n\nThe resolution source will be official information from the Bank of Brazil, including the statement or release from its August 2026 Monetary Policy Committee meeting, scheduled for August 3-4, 2026, as listed on the official Bank of Brazil calendar (https://www.bcb.gov.br/en/about/bcb-calendar?categoria=Monetary%20Policy%20Committee%20(Copom)). This market may resolve as soon as the statement or release of the the Bank of Brazil's August 2026 Monetary Policy Committee meeting with relevant data is issued. \n\nIf the specified rate is defined by an upper and lower bound, the relevant change will be the change to the upper bound. \n\nIf the specified rate is changed to a level not expressed in the displayed options, the change will be rounded according to the following guidelines. Increases or decreases of less than 25 bps will be rounded to 25 bps (e.g. an increase or decrease of 10 bps would be considered to be an increase or decrease of 25 ",
+ "as_of": "2026-07-23",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "International Monetary Fund — statement by Brazil's Executive Director and advisers",
+   "published_at": "2026-07-23",
+   "excerpt": "After signaling the beginning of rate cuts in February, the BCB cut rates by 25 bps in March, April, and June, bringing the policy rate to 14.25%. Heightened global uncertainty warrants a data-dependent approach to monetary policy. Inflation, which had been declining before the war, began to rise, as did inflation expectations."
+  },
+  {
+   "id": "E2",
+   "publisher": "Broadcast / Grupo Estado",
+   "published_at": "2026-07-20",
+   "excerpt": "A mediana do relatório Focus para a taxa Selic no fim de 2026 seguiu em 14,00% pela quarta semana seguida. Considerando só as 40 estimativas atualizadas nos últimos cinco dias úteis, mais sensíveis a novidades, a mediana para a Selic no fim deste ano subiu de 13,75% para em 14,00%."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters, syndicated by MarketScreener",
+   "published_at": "2026-07-15",
+   "excerpt": "Brazil's government raised its inflation forecast for this year to 5.1% on Wednesday from 4.5% projected in May, putting consumer prices above the central bank's target of 3%, with a tolerance band of 1.5 percentage points in either direction. It added, however, that underlying inflation measures have shown a slowdown in recent months. The government kept its forecast for economic growth at 2.3% this year, saying activity remained resilient through May, but stressed that high real interest rates are poised to restrain the pace of growth ahead, with their full effects taking time to filter through the economy."
+  },
+  {
+   "id": "E4",
+   "publisher": "Banco Central do Brasil",
+   "published_at": "2026-06-23",
+   "excerpt": "No cenário atual, caracterizado por forte aumento da incerteza, o Comitê reafirma serenidade e cautela na condução da política monetária, de forma que os passos futuros do processo de calibração da taxa básica de juros possam incorporar novas informações que aumentem a clareza sobre a profundidade e a extensão dos conflitos no Oriente Médio, assim como seus efeitos diretos e indiretos sobre o nível de preços ao longo do tempo."
+  },
+  {
+   "id": "E5",
+   "publisher": "Reuters, syndicated by Investing.com",
+   "published_at": "2026-06-17",
+   "excerpt": "Brazil’s central bank cut rates at a third straight meeting on Wednesday and left its next steps open, acknowledging a tougher inflation outlook and risks from election-year fiscal stimulus. The bank’s rate-setting committee, called Copom, unanimously voted to lower its benchmark Selic rate by 25 basis points to 14.25%, a level last seen in May 2025, in line with forecasts from 41 of 45 economists polled by Reuters."
+  },
+  {
+   "id": "E6",
+   "publisher": "Banco Central do Brasil — press release republished by Publicnow",
+   "published_at": "2025-06-24",
+   "excerpt": "O Banco Central publicou nesta terça-feira (24/6) o calendário das reuniões do Comitê de Política Monetária (Copom) em 2026. The published schedule lists the August meeting for 4 and 5 August 2026. As atas do Copom serão publicadas às 8 horas da terça-feira seguinte às reuniões do comitê."
+  }
+ ]
+}

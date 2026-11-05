@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests"
+  ],
+  "cwd": "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.1",
+  "exit_code": 0,
+  "stdout": "installed-tests.stdout.log",
+  "stderr": "installed-tests.stderr.log"
+}

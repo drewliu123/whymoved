@@ -1,0 +1,4 @@
+{
+ "dispositions":[{"finding":"情景排序证据不足","action":"采纳并定向补查","evidence":"官方9月SEP Table1/Figure2：18位中12位年底中点4.125%，当前中点3.875%。新增S7/C13并纳入C10/C11与T1。说明9月预测未在10月更新，10月等待限制确定性。","status":"addressed"},{"finding":"就业反证触发条件过窄","action":"采纳","evidence":"C12、正文、watch及T1 weakens_if均加入就业连续显著恶化本身削弱加息；解释主席侧重年度和初请，单月非农及修订为另一口径。","status":"addressed"}],
+ "targeted_followup":{"url":"https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm","status":"ok","purpose":"独立审查后一轮定向补查官方年底利率分布","limitation":"未追加第二轮独立审查；主研究者核对新增数字与口径。"}
+}

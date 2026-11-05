@@ -1,0 +1,17 @@
+{
+  "note": "本文件转录本轮实际命令结果；校验通过只证明契约、引用及固定模型算术，不证明经济判断。",
+  "entries": [
+    {"command": "analysis_contract.py route event_forecast", "exit_code": 0, "result": "reference_class_scenarios; resolution_contract/reference_class/conditional_drivers; models=[]"},
+    {"command": "research_plan.py plan.json (initial)", "exit_code": 1, "result": "missing hypotheses[].discriminating_observation"},
+    {"command": "research_plan.py plan.json (corrected)", "exit_code": 0, "result": {"passed": true, "errors": []}},
+    {"command": "python3 -I fetch_books.py", "exit_code": 0, "result": "30 token books and fee-rate responses saved in clob-books.json"},
+    {"command": "python3 -I build_research.py (initial)", "exit_code": 1, "result": "encoding declaration error; added UTF-8 coding declaration"},
+    {"command": "python3 -I build_research.py (corrected)", "exit_code": 0, "result": {"sources": 64, "claims": 64, "calculations": 14}},
+    {"command": "sources.py validate sources.json", "exit_code": 0, "result": {"passed": true, "errors": []}},
+    {"command": "sources.py select sources.json --out selected-sources.json", "exit_code": 0, "result": "No selected fragment removed; selected copy frozen as sources.json before claims validation"},
+    {"command": "check_claims.py claims.json --sources sources.json --json (initial)", "exit_code": 1, "result": {"P-UP780-No": "market quote is after source retrieval", "C-MARKET/C-GAP": "negative wording containing consensus triggered generalization check"}},
+    {"command": "check_claims.py claims.json --sources sources.json --json (corrected)", "exit_code": 0, "result": {"passed": true, "total": 63, "failures": {}}, "correction": "Excluded unused No780 token with inconsistent server/client timestamps; rewrote negative statements without changing research scope"},
+    {"command": "analysis_contract.py check --plan plan.json --report report.json --claims claims.json --sources sources.json", "exit_code": 0, "result": {"passed": true, "note": "Contracts and fixed arithmetic verified; economic meaning still needs review."}},
+    {"command": "render_report.py report.json --claims claims.json --sources sources.json --out-dir output", "exit_code": 0, "result": "output/report.md and output/report.html"}
+  ]
+}

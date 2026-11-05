@@ -1,0 +1,49 @@
+{
+  "slug": "fed-decision-in-december-20260729232808632",
+  "title": "Fed Decision in December?",
+  "end_date": "2026-12-10T04:59:00Z",
+  "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+  "description": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's December 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed options, the change will be rounded up to the nearest 25 and will resolve to the relevant bracket. (e.g. if there's a cut/increase of 12.5 bps it will be considered to be 25 bps)\n\nThe resolution source for this market is the FOMC’s statement after its meeting scheduled for December 8-9, 2026 according to the official calendar: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm.\n\nThe level and change of the target federal funds rate is also published at the official website of the Federal Reserve at https://www.federalreserve.gov/monetarypolicy/openmarket.htm.\n\nThis market may resolve as soon as the FOMC’s statement for their December meeting with relevant data is issued. If no statement is released by the end date of the next scheduled meeting, this market will resolve to the \"No change\" bracket.",
+  "outcomes": [
+    {
+      "outcome": "25 bps increase",
+      "prob": 0.705,
+      "chg_1d": -0.03,
+      "chg_1w": -0.04,
+      "chg_1m": 0.03,
+      "closed": false
+    },
+    {
+      "outcome": "No change",
+      "prob": 0.275,
+      "chg_1d": 0.03,
+      "chg_1w": 0.07,
+      "chg_1m": -0.02,
+      "closed": false
+    },
+    {
+      "outcome": "50+ bps increase",
+      "prob": 0.017,
+      "chg_1d": 0.0025,
+      "chg_1w": -0.0125,
+      "chg_1m": 0.0035,
+      "closed": false
+    },
+    {
+      "outcome": "25 bps decrease",
+      "prob": 0.0065,
+      "chg_1d": null,
+      "chg_1w": null,
+      "chg_1m": -0.0095,
+      "closed": false
+    },
+    {
+      "outcome": "50+ bps decrease",
+      "prob": 0.004,
+      "chg_1d": -0.0005,
+      "chg_1w": -0.001,
+      "chg_1m": 0.0005,
+      "closed": false
+    }
+  ]
+}

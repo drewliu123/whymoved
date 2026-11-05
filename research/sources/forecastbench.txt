@@ -1,0 +1,49 @@
+## Reader's guide[Permalink](https://forecastbench.org/docs/#readers-guide-title "Permalink")
+
+If you're new to ForecastBench, we recommend you start by reading the [latest version of the paper](https://forecastbench.org/docs/#paper-changelog) to understand how it works. To see the changes we've made since the paper was last updated, refer to the [Changelog](https://forecastbench.org/docs/#paper-changelog). If you'd like to take a deep dive into our scoring methodology and stability tests, see [the addendum to the paper](https://forecastbench.org/docs/#technical-report). Finally, you can view the [codebase](https://forecastbench.org/docs/#codebase) and learn more about the ForecastBench [architecture](https://forecastbench.org/docs/#architecture) on our GitHub repository.
+
+The [ICLR 2025 version](https://forecastbench.org/docs/#iclr2025) of the paper is provided as a reference.
+
+## Latest version of paper[Permalink](https://forecastbench.org/docs/#latest-version-of-paper-title "Permalink")
+
+To better understand how ForecastBench works, see the latest version of our paper on arXiv. It has been updated since the ICLR 2025 version. _Last updated: 28 Feb 2025._
+
+[arXiv Paper](https://arxiv.org/abs/2409.19839)
+
+## Changelog[Permalink](https://forecastbench.org/docs/#changelog-title "Permalink")
+
+There have been several notable changes to the benchmark since the latest version of the paper. You can find a brief overview on the changelog. _Last updated: 6 Oct 2025._
+
+[Changelog](https://github.com/forecastingresearch/forecastbench/wiki/Changelog)
+
+## Addendum to the paper[Permalink](https://forecastbench.org/docs/#addendum-to-the-paper-title "Permalink")
+
+Our technical report presents the difficulty-adjusted Brier score, the ranking methodology that enables fair comparisons when forecasters predict on different questions. The report details simulation results showing this scoring rule outperforms alternatives and includes our stability analyses demonstrating that rankings become stable within 50 days of a new model participating on ForecastBench. _Last updated: 3 Oct 2025._
+
+[Technical Report (PDF)](https://forecastbench.org/assets/pdfs/forecastbench_updated_methodology.pdf)
+
+## Codebase[Permalink](https://forecastbench.org/docs/#codebase-title "Permalink")
+
+The ForecastBench codebase is open-sourced under an [MIT license](https://github.com/forecastingresearch/forecastbench/blob/main/LICENSE) and available on GitHub. The repository contains the full pipeline for generating forecasting questions from time-series data, evaluating LLM and human forecasts, computing difficulty-adjusted Brier scores, and maintaining the leaderboard.
+
+[GitHub Repository](https://github.com/forecastingresearch/forecastbench/)
+
+## Architecture[Permalink](https://forecastbench.org/docs/#architecture-title "Permalink")
+
+ForecastBench is an automated Benchmark. Every night at 00:00 UTC the system ingests new questions and resolution data, runs validation and category tagging, refreshes metadata, resolves forecasts, and updates the leaderboard. Every two weeks it samples balanced question sets for LLMs (500) and humans (200) and starts a new forecasting round. To better understand how ForecastBench updates its question bank, creates question sets, and resolved forecasts, see the dedicated page on the wiki.
+
+[GitHub Wiki](https://github.com/forecastingresearch/forecastbench/wiki/How-does-ForecastBench-work%3F)
+
+## ICLR 2025[Permalink](https://forecastbench.org/docs/#iclr-2025-title "Permalink")
+
+@inproceedings{karger2025forecastbench,
+  title={ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities},
+  author={Ezra Karger and Houtan Bastani and Chen Yueh‑Han and Zachary Jacobs and Danny Halawi and Fred Zhang and Philip E. Tetlock},
+  year={2025},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  url={https://iclr.cc/virtual/2025/poster/28507}
+}
+
+* * *
+
+## Leaderboards[Permalink](https://forecastbench.org/docs/#leaderboards-title "Permalink")

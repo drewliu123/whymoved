@@ -1,0 +1,44 @@
+{
+ "qid": "Q066",
+ "question": "Will Russia capture Kostyantynivka by September 30?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Russia captures the Kostyantynivka railroad station located on Pravoberezhna vulytsia by September 30, 2026 at 11:59 PM ET.\n\nThe railroad station will be considered captured if any part of the train station icon is shaded red on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. If the area is not shaded red by September 30, 2026, 11:59 PM ET, the market will resolve to “No”.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading indicating Russian control must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date. Any continuous shading which reflects either “Assessed Russian Control”, “Assessed Russian Advance In Ukraine”, or “Assessed Russian Gains in the Past 24 Hours” will qualify. “Assessed Russian Infiltration Areas in Ukraine” will not qualify.\n\nIf Russia comes into control of this territory as a result of a negotiated settlement, this will qualify for a 'Yes' resolution, regardless of if it is shaded red ",
+ "as_of": "2026-08-05",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-08-05T21:48:34-04:00",
+   "excerpt": "Russian forces recently advanced in Kostyantynivka. Geolocated footage published on August 4 indicates that Russian forces advanced in western Kostyantynivka. The Ukrainian General Staff reported on August 5 that Ukrainian forces struck Russian drone control points near Kostyantynivka, occupied Chasiv Yar (northeast of Kostyantynivka), and occupied Zelene Pole (southwest of Kostyantynivka) and a Russian command post near occupied Bakhmut (northeast of Kostyantynivka)."
+  },
+  {
+   "id": "E2",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-08-04T19:40:54-04:00",
+   "excerpt": "The commander of a Ukrainian company operating in the Kostyantynivka area reported on August 4 that Ukrainian forces are controlling the situation in the city but that small Russian assault groups, including well-trained personnel and officers, continue to try to infiltrate Kostyantynivka. The commander reported that Russian forces send about three small groups per day, which only infiltrate about 500 meters deep into the city. The commander reported that Russian authorities have tasked the groups with conducting flag-raising missions for footage claiming Russian advances."
+  },
+  {
+   "id": "E3",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-08-03T22:01:48-04:00",
+   "excerpt": "Russian forces have been infiltrating Kostyantynivka in recent months but have not seized the city, despite Russian claims otherwise. The situation in and near the city is deteriorating, however, and fighting will likely continue in Kostyantynivka for several weeks as Russian forces try to consolidate the positions they have gained through infiltrations. Russian infiltrators are already starting to move north of the city toward Oleksiievo-Druzhkivka."
+  },
+  {
+   "id": "E4",
+   "publisher": "The New Voice of Ukraine, citing RBC-Ukraine",
+   "published_at": "2026-08-03T13:56:00+03:00",
+   "excerpt": "Ukrainian defense forces could lose control of Kostyantynivka in Donetsk Oblast in the coming months, RBC-Ukraine reported on Aug. 3, citing statements from sources in military and political circles. Sources noted that while there are no prerequisites for a rapid operational breakthrough of the Ukrainian defense line in Donetsk Oblast, Kostyantynivka could be lost in the coming months. However, the source emphasized that to achieve their goals, Russian forces cannot simply advance the frontline slowly."
+  },
+  {
+   "id": "E5",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-07-30T22:52:26-04:00",
+   "excerpt": "Ukrainian counterattacks and drone operations are reportedly hindering the Russian rate of advance within and near Kostyantynivka. A Kremlin-affiliated Russian milblogger claimed that Ukrainian forces are infiltrating into Dovha Balka (west of Kostyantynivka) from Mykolaipillya (northwest of Dovha Balka) and acknowledged that Ukrainian forces maintain positions in Chervone (northeast of Kostyantynivka). The milblogger claimed that numerous Ukrainian drone operators are providing cover and supplies to infiltrating Ukrainian forces, complicating Russian efforts to push Ukrainian forces from Dovha Balka in particular."
+  },
+  {
+   "id": "E6",
+   "publisher": "Reuters, republished by Internazionale",
+   "published_at": "2026-07-04",
+   "excerpt": "Ukraine still controls the strategically important eastern city of Kostiantynivka, President Volodymyr Zelenskiy and the General Staff said on Saturday, rejecting Russian claims that it has been captured. Russian military commanders told President Vladimir Putin on Friday that Moscow’s forces had taken control of Kostiantynivka, a target that Moscow has long sought in its advance through the Donetsk region. Reuters could not verify the battlefield reports."
+  }
+ ]
+}

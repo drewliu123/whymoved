@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-10-31T12:19:06Z",
+  "agent_type": "touyan:fact-collector",
+  "web_calls": 5,
+  "source_records": [
+    {
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "publisher": "NVIDIA IR",
+      "tier": "T0",
+      "published_at": "2026-08-26",
+      "quote": "$96.2 billion; $89.0 billion; Revenue is expected to be $108.0 billion, plus or minus 2%.",
+      "limitation": "Revenue and Data Center returned only short field extracts; no full sentences; growth/margins not obtained"
+    },
+    {
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+      "publisher": "NVIDIA IR",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "quote": "Tuesday, November 17, at 2 p.m. PT (5 p.m. ET); October 25, 2026",
+      "limitation": "Returned as short extracts, not full sentence"
+    }
+  ],
+  "gaps": [
+    "No full revenue/DC sentence returned; no growth/margin/new actual order fields",
+    "Reuters order candidate HTTP403",
+    "Official October complete event calendar absent"
+  ],
+  "original_scope": "facts and calendar only; prices excluded",
+  "raw_status": "Structured handback evidence retained; full underlying remote HTTP payloads not available"
+}

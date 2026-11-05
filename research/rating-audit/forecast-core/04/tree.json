@@ -1,0 +1,244 @@
+{
+  "sha": "cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f",
+  "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/trees/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f",
+  "tree": [
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "444a8c49bb0185d6f9ceee3867c364217a3bef13",
+      "size": 949,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/444a8c49bb0185d6f9ceee3867c364217a3bef13"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39aa82451afca3cade2c1ec75d93feecc6208730",
+      "size": 272,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/39aa82451afca3cade2c1ec75d93feecc6208730"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10bc08960dd6137d8171a72c33c9288373f84f3b",
+      "size": 8875,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/10bc08960dd6137d8171a72c33c9288373f84f3b"
+    },
+    {
+      "path": "blf",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d0ee3d66cfa2bd6b0272da3a0497f88d1e06dee",
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/trees/8d0ee3d66cfa2bd6b0272da3a0497f88d1e06dee"
+    },
+    {
+      "path": "blf/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a39e351bd2ce763568b799ec109b6604a1ce018",
+      "size": 1157,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/1a39e351bd2ce763568b799ec109b6604a1ce018"
+    },
+    {
+      "path": "blf/agent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "336279abf9259dce11502d43e451709c6e53454f",
+      "size": 12938,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/336279abf9259dce11502d43e451709c6e53454f"
+    },
+    {
+      "path": "blf/aggregate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e1be1119b2731f684e6978fb965074d524da248",
+      "size": 2994,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/3e1be1119b2731f684e6978fb965074d524da248"
+    },
+    {
+      "path": "blf/belief.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb741488793fca7cd7adca5bb06c83b039488bdf",
+      "size": 3696,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/eb741488793fca7cd7adca5bb06c83b039488bdf"
+    },
+    {
+      "path": "blf/calibrate_cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87f2a9b7730b2e4dd896cca50d567c096d75ec5b",
+      "size": 3577,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/87f2a9b7730b2e4dd896cca50d567c096d75ec5b"
+    },
+    {
+      "path": "blf/calibration.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbabaa386c4ee5fff042dc0870b188e5513c0d31",
+      "size": 9160,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/fbabaa386c4ee5fff042dc0870b188e5513c0d31"
+    },
+    {
+      "path": "blf/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f80d26e80381e048859db6d18b3d498b0426f794",
+      "size": 2979,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/f80d26e80381e048859db6d18b3d498b0426f794"
+    },
+    {
+      "path": "blf/eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eb8cd136d5f4c063ddc02935c8cfd555da4d400",
+      "size": 6156,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/9eb8cd136d5f4c063ddc02935c8cfd555da4d400"
+    },
+    {
+      "path": "blf/eval_cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fba8c182279eb98f2f7381e9ae36e6d5bf39f0b",
+      "size": 2996,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/3fba8c182279eb98f2f7381e9ae36e6d5bf39f0b"
+    },
+    {
+      "path": "blf/forecast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "442ac2ee7f6e1be55756b5e716baadbaf19dbc00",
+      "size": 3238,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/442ac2ee7f6e1be55756b5e716baadbaf19dbc00"
+    },
+    {
+      "path": "blf/forecastbench.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbad5246aa738f3f353091ed1f2571c189d61fa2",
+      "size": 5617,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/fbad5246aa738f3f353091ed1f2571c189d61fa2"
+    },
+    {
+      "path": "blf/llm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cc9da2ce5efea3397bd6c253511297a15fed2b6",
+      "size": 4264,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/3cc9da2ce5efea3397bd6c253511297a15fed2b6"
+    },
+    {
+      "path": "blf/search.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13300bf0de15b906acdc5e518bb0a5ad17c379dd",
+      "size": 6484,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/13300bf0de15b906acdc5e518bb0a5ad17c379dd"
+    },
+    {
+      "path": "blf/shrinkage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d28b4686a4f601eddfa6a73258a0f115cab09965",
+      "size": 4397,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/d28b4686a4f601eddfa6a73258a0f115cab09965"
+    },
+    {
+      "path": "blf/shrinkage_cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92c5abcec72a15e841158cfde371ee0c84737912",
+      "size": 2633,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/92c5abcec72a15e841158cfde371ee0c84737912"
+    },
+    {
+      "path": "blf/timeseries.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a525111e77a925f45faef0e71f0b5881f65b7780",
+      "size": 8603,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/a525111e77a925f45faef0e71f0b5881f65b7780"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "faf523926413fc4ceb574758e0cdc53ed583e4db",
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/trees/faf523926413fc4ceb574758e0cdc53ed583e4db"
+    },
+    {
+      "path": "data/sample_questions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de203cc1e7ba21ad37567f5db64cf4eebd6afd0f",
+      "size": 816,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/de203cc1e7ba21ad37567f5db64cf4eebd6afd0f"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "989ff1c1fbda8234c24f8c57aa902747fca330dd",
+      "size": 691,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/989ff1c1fbda8234c24f8c57aa902747fca330dd"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c658eb3227f8fd75c704c7810742582be216e042",
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/trees/c658eb3227f8fd75c704c7810742582be216e042"
+    },
+    {
+      "path": "tests/test_aggregate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7540fed0c977244b0df0c752ea726a2dc68007f9",
+      "size": 2599,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/7540fed0c977244b0df0c752ea726a2dc68007f9"
+    },
+    {
+      "path": "tests/test_calibration.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eda84ba034a6f8bba208338050a5baa040e01f89",
+      "size": 2645,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/eda84ba034a6f8bba208338050a5baa040e01f89"
+    },
+    {
+      "path": "tests/test_eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a6bee4484159d0a790e446fcdd2fa88044069df",
+      "size": 2423,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/5a6bee4484159d0a790e446fcdd2fa88044069df"
+    },
+    {
+      "path": "tests/test_forecastbench.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0a703d108b5e457ad30acd54b06709a62a00b5d",
+      "size": 3974,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/b0a703d108b5e457ad30acd54b06709a62a00b5d"
+    },
+    {
+      "path": "tests/test_shrinkage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a31fed2ba05ebee3778a7d1dd6192115dd64c84",
+      "size": 2833,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/6a31fed2ba05ebee3778a7d1dd6192115dd64c84"
+    },
+    {
+      "path": "tests/test_timeseries.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fe148668403f78f747eb0c13055d9fd3f945f86",
+      "size": 2758,
+      "url": "https://api.github.com/repos/swarm-ai-research/blf-forecaster/git/blobs/7fe148668403f78f747eb0c13055d9fd3f945f86"
+    }
+  ],
+  "truncated": false
+}

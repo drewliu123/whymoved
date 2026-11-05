@@ -1,0 +1,57 @@
+{
+  "qid": "Q096",
+  "as_of": "2026-09-02",
+  "kept": [
+    {
+      "published_at": "2026-08-28",
+      "publisher": "Delaware Department of Elections / State of Delaware News",
+      "url": "https://news.delaware.gov/2026/08/28/voting-alert-early-voting-for-the-2026-primary-election-starts-september-2nd/",
+      "excerpt": "The Delaware Department of Elections issued a voting alert notifying eligible primary voters that early voting for the 2026 primary election starts September 2. The primary election is scheduled for September 15, 2026.",
+      "relevance": "The official announcement establishes that a primary was scheduled and voting was about to begin as of the experiment cutoff."
+    },
+    {
+      "published_at": "2026-08-28",
+      "publisher": "Delaware Department of Elections / State of Delaware News",
+      "url": "https://news.delaware.gov/2026/08/28/voting-alert-for-avr-voters/",
+      "excerpt": "Voters automatically registered without a political party affiliation at the DMV by the August 22 primary registration deadline may designate their affiliation as Democratic or Republican up to and including September 15, 2026. These voters may choose a Democratic or Republican primary ballot when voting at an early voting site or their assigned polling place.",
+      "relevance": "This official eligibility clarification identifies a route by which previously unaffiliated automatically registered voters could join the Republican primary electorate."
+    },
+    {
+      "published_at": "2026-08-26",
+      "publisher": "WHYY — Sarah Mueller",
+      "url": "https://whyy.org/articles/election-2026-delaware-us-senate-republican-primary-voter-guide/",
+      "excerpt": "Former state senator and physician Mike Katz and military veteran John Shulli are vying to be the GOP nominee in Delaware’s 2026 primary for U.S. Senate. Katz’s endorsements include the Delaware Republican Party, Northern New Castle County Republicans, former U.S. Attorney Julianne Murray and several state legislators. Shulli has endorsements from state Rep. Lyndon Yearick and former National Security Advisor Michael Flynn.",
+      "relevance": "This recent independent voter guide confirms the two-candidate contest and documents the candidates’ differing endorsement coalitions."
+    },
+    {
+      "published_at": "2026-08-07",
+      "publisher": "Sussex County Republican Committee",
+      "url": "https://www.sussex.gop/post/sussex-county-gop-executive-committee-issues-endorsement-of-dr-mike-katz-for-u-s-senate",
+      "excerpt": "The Sussex County Republican Party endorsed Dr. Mike Katz for the United States Senate and encouraged Republicans across Sussex County to support him in the September 15 Republican primary. The announcement states that Katz had earned the support of 82 percent of delegates at the 2026 Delaware Republican State Convention.",
+      "relevance": "The county party’s dated announcement provides direct evidence of organizational support for Shulli’s opponent in Sussex County."
+    },
+    {
+      "published_at": "2026-06-18",
+      "publisher": "Katz for Delaware — campaign press release",
+      "url": "https://drmikekatz.com/news/northern-gop-endorsement",
+      "excerpt": "The Northern New Castle County Republican Party announced its endorsement of Dr. Mike Katz for the United States Senate. The organization called on registered Republicans across New Castle County to vote for Katz in the September 15 primary.",
+      "relevance": "This campaign announcement supplies dated evidence of another regional Republican organization mobilizing for Shulli’s opponent, while its partisan provenance warrants caution."
+    },
+    {
+      "published_at": "2026-04-26",
+      "publisher": "Delaware LIVE News",
+      "url": "https://delawarelive.com/delaware-republicans-showcase-unity-launch-2026-campaign-at-state-convention/",
+      "excerpt": "In the convention’s only contested race, physician and former state senator Mike Katz defeated retired Army Col. John Schulli for the U.S. Senate endorsement. Katz received 233 delegate votes to Shulli’s 52, approximately 81.7 percent of delegate support.",
+      "relevance": "The convention tally measures relative support among party delegates, although the endorsement did not determine the subsequent primary winner."
+    },
+    {
+      "published_at": "2026-01-15",
+      "publisher": "Federal Election Commission — John Shulli Statement of Candidacy",
+      "url": "https://docquery.fec.gov/pdf/949/202601159794005949/202601159794005949.pdf",
+      "excerpt": "John Shulli’s Statement of Candidacy identifies the office sought as Senate, the state as Delaware and the party as Republican. The filing designates Shulli for Senate as his principal campaign committee and is dated January 15, 2026.",
+      "relevance": "The dated federal filing provides primary-source confirmation of Shulli’s Republican Senate candidacy."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-09-02, inclusive. Only explicitly dated material published or updated by that date is included; WHYY’s date is its displayed August 26 update, corroborated by indexed copies and an August 26 syndication. Excerpts are concise factual extracts or faithful paraphrases of search-indexed source text. web_fetch failed because of a provider configuration error, and the requested agent-reach web read fallback returned RATE_LIMITED, so full-page retrieval could not be completed. Undated pages, later-updated candidate lists, post-cutoff reporting, election results and prediction-market pages were excluded. No qualifying pre-cutoff Republican primary poll was verified. Convention voting is endorsement evidence, not a primary result; campaign and party statements are identified by publisher."
+}

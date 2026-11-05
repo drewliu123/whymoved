@@ -1,0 +1,46 @@
+{
+  "qid": "Q025",
+  "as_of": "2026-07-29",
+  "kept": [
+    {
+      "excerpt": "A Public Policy Polling survey conducted July 23–24, 2026 among 672 likely Minnesota Democratic primary voters found Peggy Flanagan leading Angie Craig 46% to 32%. The Democratic Lieutenant Governors Association's July 28 release reported that Flanagan's lead had increased from seven points in its previous month's survey.",
+      "published_at": "2026-07-28",
+      "publisher": "Democratic Lieutenant Governors Association (poll sponsor supporting Flanagan; poll conducted by Public Policy Polling)",
+      "relevance": "This is recent polling available before the cutoff, with its partisan sponsorship important when weighing the reported Flanagan advantage.",
+      "url": "https://demlgs.org/new-poll-flanagans-lead-over-craig-doubles-to-14-points-as-20-million-in-outside-pro-craig-spending-backfires/"
+    },
+    {
+      "excerpt": "SurveyUSA's July 15–20 survey of 513 likely Minnesota Democratic primary voters found Craig and Flanagan tied at 40% each. Comparing its June and July surveys showed a net gain of five percentage points for Flanagan. Craig held a fundraising advantage and approximately $5 million in cash on hand, compared with $1.5 million for Flanagan.",
+      "published_at": "2026-07-24",
+      "publisher": "The ELLIS Insight — Jim Ellis",
+      "relevance": "This dated expert preview supplies a contrasting media-sponsored poll and campaign resource figures, showing that the available evidence did not uniformly indicate a large Flanagan lead.",
+      "url": "https://www.ellisinsight.com/2026/07/24/"
+    },
+    {
+      "excerpt": "Delegates to the Minnesota Democratic-Farmer-Labor Party convention endorsed Lieutenant Governor Peggy Flanagan for United States Senate on May 30, 2026. The party announcement listed support from Senator Tina Smith, Attorney General Keith Ellison, State Auditor Julie Blaha, a majority of DFL legislators and several labor unions.",
+      "published_at": "2026-05-30",
+      "publisher": "Minnesota Democratic-Farmer-Labor Party",
+      "relevance": "The official party announcement establishes Flanagan's convention endorsement and organizational backing, while the nomination itself remained subject to the primary.",
+      "url": "https://dfl.org/dfl-endorses-lt-governor-peggy-flanagan-for-u-s-senate/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.mprnews.org/story/2026/07/27/angie-craig-peggy-flanagan-senate-race-debate-hosted-by-mpr-news",
+      "reason": "Excerpt explicitly mentions the August 11 primary, after the 2026-07-29 cutoff; excluded under the rule prohibiting any post-cutoff references, including scheduled future events."
+    },
+    {
+      "url": "https://www.mprnews.org/story/2026/07/21/peggy-flanagans-us-senate-push-brings-sen-bernie-sanders-to-first-avenue",
+      "reason": "Excerpt explicitly mentions mobilization before the August 11 primary, after the 2026-07-29 cutoff; excluded under the rule prohibiting any post-cutoff references, including scheduled future events."
+    },
+    {
+      "url": "https://www.sos.mn.gov/about-the-office/news-room/voting-in-the-primary-election-begins-june-26/",
+      "reason": "Excerpt explicitly mentions the August 11, 2026 primary and November 3 general election, both after the 2026-07-29 cutoff; excluded under the rule prohibiting any post-cutoff references, including scheduled future events."
+    },
+    {
+      "url": "https://news.ballotpedia.org/2026/06/05/six-democrats-compete-for-tina-smiths-minnesota-senate-seat-craig-and-flanagan-lead-in-endorsements-and-fundraising/",
+      "reason": "Excerpt explicitly mentions candidates running in the August 11 primary, after the 2026-07-29 cutoff; excluded under the rule prohibiting any post-cutoff references, including scheduled future events."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-29 inclusive. Publication dates were verified from dated publisher text, article metadata or dated search extracts; polling fieldwork dates were distinguished from publication dates. All included excerpts concern information available by the cutoff. Excluded later publications, outcome reporting, undated live aggregators and prediction-market or betting pages. web_fetch failed because of provider configuration; the agent-reach web skill was used to retrieve the DLGA, DFL and Ballotpedia articles, while subsequent public-page reading became temporarily unavailable. The remaining items rely on dated publisher text returned by web_search. The July 28 DLGA poll is explicitly identified as sponsored by an organization supporting Flanagan; the July 24 Ellis preview provides the contrasting SurveyUSA result. Campaign resource figures are the figures reported in the July 24 preview, not figures from filings published after the cutoff."
+}

@@ -1,0 +1,106 @@
+{
+  "tested_at": "2026-11-02T10:28:31.165097+08:00",
+  "official_documentation": "https://akshare.akfamily.xyz/data/stock/stock_research.html",
+  "scope": "三项各调用一次，免费公开请求；个股样例采用600519，未测试NVDA；无付费API、凭据访问或全局配置修改。",
+  "raw_description": "*-data.json 为 AKShare DataFrame 原始记录；raw/<source>.json 为 requests 捕获的上游原始响应（如有）。",
+  "results": [
+    {
+      "source": "stock_info_global_cls",
+      "arguments": {
+        "symbol": "全部"
+      },
+      "status": "timeout",
+      "command": [
+        "/tmp/akshare-free-20261101.kruquy/venv/bin/python",
+        "-I",
+        "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/akshare/scripts/probe.py",
+        "--worker",
+        "stock_info_global_cls"
+      ],
+      "exit_code": 124,
+      "wall_seconds": 45.014,
+      "log": "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/akshare/stock_info_global_cls.log",
+      "python_version": "3.12.13",
+      "akshare_version": "1.20.21",
+      "pandas_version": "3.1.0",
+      "signature_static_verified": "(symbol: str = 全部) -> pd.DataFrame",
+      "row_count": null,
+      "columns": null,
+      "earliest_time": null,
+      "latest_time": null,
+      "future_date_count": null,
+      "samples": [],
+      "body_fetched": false,
+      "http_statuses": [],
+      "response_captured": false
+    },
+    {
+      "source": "stock_info_global_em",
+      "arguments": {},
+      "status": "timeout",
+      "command": [
+        "/tmp/akshare-free-20261101.kruquy/venv/bin/python",
+        "-I",
+        "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/akshare/scripts/probe.py",
+        "--worker",
+        "stock_info_global_em"
+      ],
+      "exit_code": 124,
+      "wall_seconds": 45.013,
+      "log": "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/akshare/stock_info_global_em.log",
+      "python_version": "3.12.13",
+      "akshare_version": "1.20.21",
+      "pandas_version": "3.1.0",
+      "signature_static_verified": "() -> pd.DataFrame",
+      "row_count": null,
+      "columns": null,
+      "earliest_time": null,
+      "latest_time": null,
+      "future_date_count": null,
+      "samples": [],
+      "body_fetched": false,
+      "http_statuses": [],
+      "response_captured": false
+    },
+    {
+      "source": "stock_news_em",
+      "arguments": {
+        "symbol": "600519"
+      },
+      "status": "timeout",
+      "command": [
+        "/tmp/akshare-free-20261101.kruquy/venv/bin/python",
+        "-I",
+        "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/akshare/scripts/probe.py",
+        "--worker",
+        "stock_news_em"
+      ],
+      "exit_code": 124,
+      "wall_seconds": 45.014,
+      "log": "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/akshare/stock_news_em.log",
+      "python_version": "3.12.13",
+      "akshare_version": "1.20.21",
+      "pandas_version": "3.1.0",
+      "signature_static_verified": "(symbol: str = 603777) -> pd.DataFrame",
+      "row_count": null,
+      "columns": null,
+      "earliest_time": null,
+      "latest_time": null,
+      "future_date_count": null,
+      "samples": [],
+      "body_fetched": false,
+      "http_statuses": [],
+      "response_captured": false
+    }
+  ],
+  "environment": {
+    "python": "3.12.13",
+    "akshare": "1.20.21",
+    "pandas": "3.1.0",
+    "environment_path": "/tmp/akshare-free-20261101.kruquy/venv",
+    "installation_exit_code": 0,
+    "installation_command": "uv venv --python python3 /tmp/akshare-free-20261101.kruquy/venv && uv pip install --python /tmp/akshare-free-20261101.kruquy/venv/bin/python --no-cache akshare"
+  },
+  "limitation": "Each subprocess exceeded the 45-second deadline including imports. No HTTP response was captured. Cannot distinguish package import initialization from upstream network blocking; no endpoint retried.",
+  "date_note": "Requested archive date 2026-11-01 retained; actual machine clock was 2026-11-02 Asia/Shanghai. No returned data timestamps available for future-date validation."
+}

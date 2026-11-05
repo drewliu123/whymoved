@@ -1,0 +1,197 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T02:00:01.335699Z",
+  "calculations": [
+    {
+      "id": "K1",
+      "description": "10月30日NVDA收盘价格收益率",
+      "formula": "(204.64 / 213.66 - 1) * 100",
+      "inputs": [
+        {
+          "name": "end",
+          "value": 204.64,
+          "unit": "USD/share",
+          "claim_ids": [
+            "C4"
+          ]
+        },
+        {
+          "name": "start",
+          "value": 213.66,
+          "unit": "USD/share",
+          "claim_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "result": {
+        "value": -4.221660582233455,
+        "unit": "percent"
+      },
+      "claim_ids": [
+        "C3",
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "id": "K2",
+      "description": "10月2日至30日NVDA收盘价格变化",
+      "formula": "(204.64 / 233.95 - 1) * 100",
+      "inputs": [
+        {
+          "name": "end",
+          "value": 204.64,
+          "unit": "USD/share",
+          "claim_ids": [
+            "C4"
+          ]
+        },
+        {
+          "name": "start",
+          "value": 233.95,
+          "unit": "USD/share",
+          "claim_ids": [
+            "C1"
+          ]
+        }
+      ],
+      "result": {
+        "value": -12.528318016670227,
+        "unit": "percent"
+      },
+      "claim_ids": [
+        "C1",
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "id": "K3",
+      "description": "10月6日至30日NVDA收盘价格变化",
+      "formula": "(204.64 / 239.24 - 1) * 100",
+      "inputs": [
+        {
+          "name": "end",
+          "value": 204.64,
+          "unit": "USD/share",
+          "claim_ids": [
+            "C4"
+          ]
+        },
+        {
+          "name": "start",
+          "value": 239.24,
+          "unit": "USD/share",
+          "claim_ids": [
+            "C2"
+          ]
+        }
+      ],
+      "result": {
+        "value": -14.462464470824287,
+        "unit": "percent"
+      },
+      "claim_ids": [
+        "C2",
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "id": "K4",
+      "description": "NVDA减Nasdaq当日收益，非风险调整",
+      "formula": "NVDA_return - Nasdaq_return",
+      "inputs": [
+        {
+          "name": "NVDA",
+          "value": -4.221660582233455,
+          "unit": "percent",
+          "claim_ids": [
+            "C5"
+          ]
+        },
+        {
+          "name": "Nasdaq_reported",
+          "value": -2.86,
+          "unit": "percent",
+          "claim_ids": [
+            "C7"
+          ]
+        }
+      ],
+      "result": {
+        "value": -1.3616605822334553,
+        "unit": "percentage points"
+      },
+      "claim_ids": [
+        "C5",
+        "C7",
+        "C8"
+      ]
+    },
+    {
+      "id": "K5",
+      "description": "NVDA减半导体指数当日收益，非风险调整",
+      "formula": "NVDA_return - semiconductor_return",
+      "inputs": [
+        {
+          "name": "NVDA",
+          "value": -4.221660582233455,
+          "unit": "percent",
+          "claim_ids": [
+            "C5"
+          ]
+        },
+        {
+          "name": "semiconductor_reported",
+          "value": -7.2,
+          "unit": "percent",
+          "claim_ids": [
+            "C7"
+          ]
+        }
+      ],
+      "result": {
+        "value": 2.978339417766545,
+        "unit": "percentage points"
+      },
+      "claim_ids": [
+        "C5",
+        "C7",
+        "C8"
+      ]
+    },
+    {
+      "id": "K6",
+      "description": "Amazon TTM经营现金流减净资本购买对账",
+      "formula": "168300 - 210657 = -42357",
+      "inputs": [
+        {
+          "name": "TTM operating cash flow",
+          "value": 168300,
+          "unit": "USD million",
+          "claim_ids": [
+            "C17"
+          ]
+        },
+        {
+          "name": "TTM net PP&E purchases",
+          "value": 210657,
+          "unit": "USD million",
+          "claim_ids": [
+            "C17"
+          ]
+        }
+      ],
+      "result": {
+        "value": -42357,
+        "unit": "USD million"
+      },
+      "claim_ids": [
+        "C17",
+        "C21"
+      ]
+    }
+  ]
+}

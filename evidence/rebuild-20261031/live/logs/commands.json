@@ -1,0 +1,288 @@
+[
+  {
+    "step": "select",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+      "select",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.annotated.json",
+      "--out",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:36:19.451209+00:00",
+    "elapsed_seconds": 0.0258,
+    "exit_code": 1,
+    "stdout": "logs/select.stdout",
+    "stderr": "logs/select.stderr"
+  },
+  {
+    "step": "select",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+      "select",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.annotated.json",
+      "--out",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:36:52.820542+00:00",
+    "elapsed_seconds": 0.0467,
+    "exit_code": 0,
+    "stdout": "logs/select.stdout",
+    "stderr": "logs/select.stderr"
+  },
+  {
+    "step": "sources-validate",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+      "validate",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:36:52.867904+00:00",
+    "elapsed_seconds": 0.0333,
+    "exit_code": 0,
+    "stdout": "logs/sources-validate.stdout",
+    "stderr": "logs/sources-validate.stderr"
+  },
+  {
+    "step": "plan-validate",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/research_plan.py",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/plan.json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:36:52.901577+00:00",
+    "elapsed_seconds": 0.0278,
+    "exit_code": 0,
+    "stdout": "logs/plan-validate.stdout",
+    "stderr": "logs/plan-validate.stderr"
+  },
+  {
+    "step": "claims-validate",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+      "--sources",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+      "--json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:36:52.929672+00:00",
+    "elapsed_seconds": 0.0389,
+    "exit_code": 1,
+    "stdout": "logs/claims-validate.stdout",
+    "stderr": "logs/claims-validate.stderr"
+  },
+  {
+    "step": "select",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+      "select",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.annotated.json",
+      "--out",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:37:29.643620+00:00",
+    "elapsed_seconds": 0.042,
+    "exit_code": 0,
+    "stdout": "logs/select-retry3.stdout",
+    "stderr": "logs/select-retry3.stderr"
+  },
+  {
+    "step": "sources-validate",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/sources.py",
+      "validate",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:37:29.686193+00:00",
+    "elapsed_seconds": 0.0334,
+    "exit_code": 0,
+    "stdout": "logs/sources-validate-retry2.stdout",
+    "stderr": "logs/sources-validate-retry2.stderr"
+  },
+  {
+    "step": "plan-validate",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/research_plan.py",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/plan.json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:37:29.719947+00:00",
+    "elapsed_seconds": 0.0273,
+    "exit_code": 0,
+    "stdout": "logs/plan-validate-retry2.stdout",
+    "stderr": "logs/plan-validate-retry2.stderr"
+  },
+  {
+    "step": "claims-validate",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+      "--sources",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+      "--json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:37:29.747663+00:00",
+    "elapsed_seconds": 0.0355,
+    "exit_code": 0,
+    "stdout": "logs/claims-validate-retry2.stdout",
+    "stderr": "logs/claims-validate-retry2.stderr"
+  },
+  {
+    "step": "render",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/render_report.py",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/report.json",
+      "--claims",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+      "--sources",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+      "--out-dir",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/rendered"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:37:29.784159+00:00",
+    "elapsed_seconds": 0.0435,
+    "exit_code": 0,
+    "stdout": "logs/render.stdout",
+    "stderr": "logs/render.stderr"
+  },
+  {
+    "step": "archive",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+      "archive",
+      "--report",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/report.json",
+      "--claims",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/claims.json",
+      "--sources",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/sources.json",
+      "--plan",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/plan.json",
+      "--calculations",
+      "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/calculations.json"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:37:29.828051+00:00",
+    "elapsed_seconds": 0.0504,
+    "exit_code": 0,
+    "stdout": "logs/archive.stdout",
+    "stderr": "logs/archive.stderr"
+  },
+  {
+    "step": "archive-show",
+    "command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "-I",
+      "-c",
+      "import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); sys.argv.pop(0); runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+      "/Users/frankzhang/Desktop/投研助手/scripts",
+      "/Users/frankzhang/Desktop/投研助手/scripts/research_run.py",
+      "show",
+      "R20261031T183729Z-dab87cf50406"
+    ],
+    "environment": {
+      "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "started_at": "2026-10-31T18:37:29.878875+00:00",
+    "elapsed_seconds": 0.0407,
+    "exit_code": 0,
+    "stdout": "logs/archive-show.stdout",
+    "stderr": "logs/archive-show.stderr"
+  }
+]

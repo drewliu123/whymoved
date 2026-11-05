@@ -1,0 +1,50 @@
+{
+ "qid": "Q161",
+ "question": "Will James Fishback win less than 10% of votes in the Florida Republican Governor primary?",
+ "rules": "Primary elections in Florida are scheduled to be held on August 18, 2026.\n\nThis market will resolve according to the share of valid votes James Fishback wins in the 2026 Florida Republican Gubernatorial Primary.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the results of the specified election are not known definitively by November 30, 2026, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThe primary resolution source for this market will be information from the State of Florida, such as official statewide results published by the Florida Department of State (https://dos.fl.gov/); however, an overwhelming consensus of credible reporting may suffice.\n\nIf a recount is initiated before the vote total has been made official, the market will remain open until the recount is completed and the vote is made official.",
+ "as_of": "2026-08-13",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Florida Politics",
+   "published_at": "2026-08-06",
+   "excerpt": "The James Madison Institute survey puts Byron Donalds at 49% among Republican likely voters, followed by Jay Collins at 18%, Paul Renner at 8%, and James Fishback at 4%. Targoz Market Research conducted the survey of 1,400 Florida registered voters July 20–26; the reported margin of error for the full survey is plus or minus 2.62 percentage points."
+  },
+  {
+   "id": "E2",
+   "publisher": "Quantus Insights",
+   "published_at": "2026-07-31",
+   "excerpt": "Byron Donalds commands 49.6% of the vote, followed by Jay Collins at 15.7%, James Fishback at 12.4%, and Paul Renner at 3.5%. Another 5.3% prefer someone else, while 13.5% remain undecided. The poll was sponsored by America First Insight."
+  },
+  {
+   "id": "E3",
+   "publisher": "Cygnal",
+   "published_at": "2026-07-20",
+   "excerpt": "Cygnal released findings from a statewide poll of 500 likely 2026 Florida Republican primary voters conducted July 12–13. Byron Donalds leads with 43%, followed by James Fishback at 12%, Jay Collins at 11%, and Paul Renner at 2%, while 31% remain undecided."
+  },
+  {
+   "id": "E4",
+   "publisher": "Florida Phoenix",
+   "published_at": "2026-08-06",
+   "excerpt": "A Tyson Group poll taken in July showed Donalds at 48%, Collins at 9%, Fishback at 8%, and former House Speaker Paul Renner at 4%. The report also describes Collins' unsuccessful effort in court to remove Fishback from the ballot over Florida's seven-year residency requirement."
+  },
+  {
+   "id": "E5",
+   "publisher": "Florida Politics",
+   "published_at": "2026-07-27",
+   "excerpt": "Judge David Frank of the 2nd Judicial Circuit ruled that James Fishback could remain in the race for Governor, pending a potential future decision on appeal. In a 25-page order published just after 5 p.m., Frank dismissed a complaint filed by fellow Republican gubernatorial candidate Jay Collins."
+  },
+  {
+   "id": "E6",
+   "publisher": "Axios",
+   "published_at": "2026-07-11",
+   "excerpt": "The Front Line, a political nonprofit group aligned with Republican Sen. Ted Cruz, announced a $400,000 ad buy targeting Florida GOP gubernatorial candidate James Fishback over antisemitic statements. Axios reported that Fishback was badly trailing Byron Donalds in primary polls."
+  },
+  {
+   "id": "E7",
+   "publisher": "Florida Department of State, Division of Elections",
+   "published_at": "2025-08-22",
+   "excerpt": "Florida's 2026 primary Election Day is August 18, 2026. The deadline to register to vote or change party affiliation for the primary is July 20, 2026. The Division of Elections webpage states that it was last updated August 22, 2025."
+  }
+ ]
+}

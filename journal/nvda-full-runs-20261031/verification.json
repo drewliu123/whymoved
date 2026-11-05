@@ -1,0 +1,84 @@
+{
+  "runs": {
+    "0.1.1": {
+      "missing": [],
+      "checks": [
+        {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.1.1/scripts/check_claims.py",
+            "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/claims.json",
+            "--json"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"passed\": true,\n  \"total\": 15,\n  \"failures\": {}\n}\n",
+          "stderr": ""
+        }
+      ],
+      "claim_count": 15,
+      "hypothesis_count": 2,
+      "report_characters": 3126,
+      "unresolved_claim_refs": [],
+      "markdown_links": 10,
+      "registered_memos": [
+        "M20261031-01"
+      ],
+      "archive_matches": [
+        {
+          "memo.json": true,
+          "memo.md": true,
+          "claims.json": true,
+          "plan.json": true
+        }
+      ]
+    },
+    "0.2.0": {
+      "missing": [],
+      "checks": [
+        {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.2.0/scripts/check_claims.py",
+            "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/claims.json",
+            "--json"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"passed\": true,\n  \"total\": 12,\n  \"failures\": {}\n}\n",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.2.0/scripts/forecast.py",
+            "check",
+            "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/forecast.json",
+            "--claims",
+            "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/claims.json"
+          ],
+          "exit_code": 0,
+          "stdout": "1 条预测通过校验\n",
+          "stderr": ""
+        }
+      ],
+      "claim_count": 12,
+      "hypothesis_count": 1,
+      "report_characters": 2516,
+      "unresolved_claim_refs": [],
+      "markdown_links": 5,
+      "registered_memos": [
+        "M20261031-01"
+      ],
+      "archive_matches": [
+        {
+          "memo.json": true,
+          "memo.md": true,
+          "claims.json": true,
+          "plan.json": true
+        }
+      ],
+      "all_hypotheses_have_forecast": true,
+      "all_probabilities_match": true
+    }
+  },
+  "formal_data_unchanged": true
+}

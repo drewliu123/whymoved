@@ -1,0 +1,52 @@
+{
+  "qid": "Q021",
+  "as_of": "2026-07-18",
+  "kept": [
+    {
+      "excerpt": "The European Union Aviation Safety Agency (EASA) on Tuesday reinstated and toughened its warning to airlines operating in the Middle East, telling them to avoid the airspace of Bahrain, Kuwait, Qatar, the United Arab Emirates and over the Gulf of Oman as the U.S.-Iran war flared up again. That warning had asked airlines to exercise caution when operating within the airspace of these countries, as well as Israel, Jordan, Oman, and Saudi Arabia.",
+      "published_at": "2026-07-14",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "The renewed regional aviation warning indicates deteriorating security conditions but is a foreign advisory rather than an Israeli closure.",
+      "url": "https://ca.marketscreener.com/news/eu-aviation-body-reinstates-middle-east-flights-warning-as-fighting-resumes-ce7f5eddd988fe2d"
+    },
+    {
+      "excerpt": "Following the agreed ceasefire agreements and the overall reduction in short-term tensions, the Integrated EU Aviation Security Risk Assessment Group decided not to extend the existing Conflict Zone Information Bulletin (CZIB) on the Middle East and Persian Gulf, which expires on July 8, 2026. This CZIB has been replaced by a dedicated Information Note on the Middle East and Persian Gulf, describing the residual medium-level risks, and separate CZIBs on Iran, Iraq and Lebanon, highlighting the remaining high risks in the affected airspace.",
+      "published_at": "2026-07-08",
+      "publisher": "European Union Aviation Safety Agency (EASA)",
+      "relevance": "This official aviation-risk assessment establishes the early-July regulatory baseline against which the subsequent regional escalation can be assessed.",
+      "url": "https://www.easa.europa.eu/en/newsroom-and-events/news/revised-conflict-zone-advisories-middle-east"
+    },
+    {
+      "excerpt": "Bahrain, Israel, Iraq, Jordan, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia and UAE airspace are open though some restrictions may apply. EL Al (LY) and Sundor (2U) have resumed normal operations. Austrian Airlines and Lufthansa Cargo had already resumed flights to Tel Aviv-Ben Gurion Airport (TLV) in June 2026.",
+      "published_at": "2026-07-07 (last edited; originally published 2026-03-02)",
+      "publisher": "Kuehne+Nagel",
+      "relevance": "The dated logistics-provider update directly reports Israeli airspace open and commercial operations resuming during July.",
+      "url": "https://www.kuehne-nagel.com/company/news/updates-on-middle-east-situation"
+    },
+    {
+      "excerpt": "Transportation Minister Miri Regev says Israel’s airspace remains open and flights continue as scheduled. The decision was made following a situation assessment led by Regev with Transportation Director General Moshe Ben-Zaken and aviation industry professionals. The ministry says that if the rocket fire expands, a new decision will be made accordingly and the public will be updated.",
+      "published_at": "2026-06-07",
+      "publisher": "The Times of Israel",
+      "relevance": "This report of an Israeli ministerial decision shows that missile fire can coexist with open airspace and identifies escalation as a trigger for reassessment.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/israels-airspace-remaining-open-flights-continuing-as-scheduled-regev-says/"
+    },
+    {
+      "excerpt": "Israel began to open its airspace on Thursday and allowed a handful of flights to land at Ben Gurion International Airport near Tel Aviv. Israel’s airspace was closed on Saturday at the start of the U.S.-Israeli strikes on Iran, which have triggered missile barrages from Iran against Israel, leaving tens of thousands of passengers stranded abroad.",
+      "published_at": "2026-03-05",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "This historical episode documents a broad security-related Israeli airspace closure and subsequent limited reopening, providing precedent without asserting a July outcome.",
+      "url": "https://uk.marketscreener.com/news/more-than-20-000-israelis-return-since-start-of-iran-war-ministry-says-ce7e5fdbda89f522"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.timesofisrael.com/liveblog_entry/us-sending-dozens-of-refueling-aircraft-to-israel-ahead-of-potential-attack-on-iran/",
+      "reason": "The excerpt forecasts escalation in the coming days from July 17, and the relevance explicitly discusses a possible airspace decision before the July 31 deadline, implying developments after the July 18 cutoff."
+    },
+    {
+      "url": "https://ca.marketscreener.com/news/airlines-resume-some-middle-east-flights-but-disruption-continues-ce7f5ed3d08bf723",
+      "reason": "The excerpt mentions flight cancellations until October 24, after the July 18 cutoff; the rule excludes post-cutoff dates even when they describe previously announced schedules."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-18. Included seven sources with explicit publication or last-update dates on or before the cutoff; no prediction-market pages, odds, outcome assessment, or post-cutoff developments are included. Future service dates mentioned in excerpts were schedules announced before the cutoff. Search-result source text and displayed dates supplied the evidence: web_fetch failed because multiple web providers were registered, and the requested agent-reach web read fallback failed because its upstream readers were temporarily unavailable. Full-page verification was therefore unavailable. The latest included reporting is dated July 17; no independently verified July 18 Israeli official closure notice was obtained. Historical closures are included only as precedent because the supplied rules do not identify a start date and the primary-resolution-source sentence is truncated."
+}

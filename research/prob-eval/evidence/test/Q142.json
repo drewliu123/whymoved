@@ -1,0 +1,50 @@
+{
+  "qid": "Q142",
+  "as_of": "2026-07-18",
+  "kept": [
+    {
+      "excerpt": "Today, we’re releasing the upgraded core intelligence that makes those breakthroughs possible: Gemini 3.1 Pro. We are releasing 3.1 Pro in preview today to validate these updates and continue to make further advancements in areas such as ambitious agentic workflows before we make it generally available soon.",
+      "published_at": "2026-02-19",
+      "publisher": "Google",
+      "relevance": "Establishes an earlier publicly released Pro preview and Google's distinction between preview availability and a later general-availability promotion, both relevant to the qualifying-release rules.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
+    },
+    {
+      "excerpt": "We’re kicking off the series by releasing 3.5 Flash. We’re also hard at work on 3.5 Pro. It's already being used internally, and we look forward to rolling it out next month.",
+      "published_at": "2026-05-19",
+      "publisher": "Google",
+      "relevance": "Provides Google's original June rollout expectation for the next Pro model while explicitly distinguishing the released Flash model from internally used Pro.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
+    },
+    {
+      "excerpt": "Google has postponed the launch of its Gemini 3.5 Pro artificial intelligence model to July, according to a report from Business Insider, citing a person familiar with the matter. The company originally planned to release the new frontier AI model in June. Google is using the additional time to collect input from early testers and make adjustments to the model.",
+      "published_at": "2026-06-24",
+      "publisher": "Investing.com, reporting Business Insider",
+      "relevance": "Documents a reported revised July release window and continued testing, providing schedule evidence directly relevant to the July 31 deadline.",
+      "url": "https://www.investing.com/news/stock-market-news/google-delays-gemini-35-pro-model-release-to-july--insider-93CH-4758816"
+    },
+    {
+      "excerpt": "Alphabet’s Google is months behind schedule on the release of Gemini 3.5 Pro, its most powerful flagship AI model, as the tech giant works to improve its capabilities, particularly in coding, Bloomberg News reported on Thursday.",
+      "published_at": "2026-07-16",
+      "publisher": "Reuters, syndicated by Investing.com",
+      "relevance": "Supplies reputable reporting close to the evidence cutoff that development problems were still delaying the qualifying Pro release.",
+      "url": "https://www.investing.com/news/stock-market-news/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals-bloomberg-news-reports-4796622"
+    },
+    {
+      "excerpt": "At the May developers' conference, the company launched a lighter-weight Gemini 3.5 Flash model for everyday use. However, Google CEO Sundar Pichai assured the audience that Gemini 3.5 Pro would follow in June. As of July 17, there's still no sign of the model.",
+      "published_at": "2026-07-17T20:00:00Z",
+      "publisher": "Mashable, syndicated by Yahoo Tech; Timothy Beck Werth",
+      "relevance": "Provides a dated status check one day before the cutoff that the announced Pro successor had still not appeared.",
+      "url": "https://tech.yahoo.com/ai/gemini/articles/where-gemini-3-5-pro-200026497.html"
+    },
+    {
+      "excerpt": "A Google spokesperson has told Bloomberg, “We’re shipping quickly across a wide range of models while keeping them highly cost-effective for customers.” The spokesperson added, “We’re currently testing 3.5 Pro, an upgraded Flash model, and other models with partners, and we’re productively engaged with the U.S. government.” The report also adds Google's model launch process involves multiple teams and stakeholders, as the company enables its new AI model across its portfolio products such as Search, Maps and YouTube, a process that employees said can slow down releases.",
+      "published_at": "2026-07-18T15:22:00+05:30",
+      "publisher": "Moneycontrol; Sandip Chakraborty",
+      "relevance": "Adds cutoff-day reporting containing Google's attributed partner-testing statement, which does not itself establish the public accessibility required for resolution.",
+      "url": "https://www.moneycontrol.com/technology/google-reportedly-delays-gemini-3-5-pro-release-due-to-coding-performance-misses-target-timeline-article-13977277.html"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-07-18. Included only sources with explicit publication dates on or before that date; excluded later-dated reporting, undated live status pages, prediction-market pages, odds, and market prices. Excerpts use dated source text returned by web_search. Full-page verification was limited: web_fetch failed because of provider configuration, and the requested agent-reach web reader returned RATE_LIMITED, so no further reader retries were made. The June 24 Investing.com date was verified in the canonical search result; its mobile rendering has a malformed original-publication field but also displays a June 24 update. The Moneycontrol article was first published at 15:22 IST and displays an update at 15:23 IST on July 18. Reuters and several later items draw on Bloomberg reporting and should not be treated as independent confirmations of the underlying development problems. The market creation date was not supplied, so the February Pro release is historical context rather than a determination that it qualifies for this market. No forecast or resolution determination is supplied."
+}

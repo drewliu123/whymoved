@@ -1,0 +1,26 @@
+{
+  "type": "event_pricing",
+  "question": "截至真实研究时点，Polymarket 2026年12月Fed决议合约在定价什么，官方资料是否支持，研究判断与市场有何差异？",
+  "status": "executed",
+  "scope": "仅写本目录；直接执行；不委派；不改插件、不读凭据、不写作者库和正式预测账本、不发布",
+  "method_sources": ["../protocol.md", "../../plans/touyan-end-to-end-plan-v2-20261031.md", "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.1.1/skills/research/references/evidence.md"],
+  "time_budget_minutes": 25,
+  "source_budget": "3–6关键T0来源；社区可选，无需凑数；每个失败端点最多一次，本轮没有重试",
+  "stages": [
+    {"step":"先定义反应框架及reference class","status":"completed","artifact":"pre-market-analysis.json"},
+    {"step":"可信搜索插件定位官方资料，随后直接只读HTTP核实","status":"completed","tool":"mcp__zhihu__global_search","note":"搜索有媒体/机构转述，未当作官方事实；未取得有效BLS搜索结果"},
+    {"step":"在未见盘口时冻结官方事实驱动的定性判断","status":"completed","artifact":"independent-freeze.json"},
+    {"step":"使用已读取的polymarket.py搜索并读取真实12月事件，保存Gamma完整响应及时间","status":"completed","artifact":"raw-market/gamma-event.json"},
+    {"step":"抓五档Yes CLOB订单簿与9月官方决议，检查规则及报价一致性","status":"completed","artifact":"raw-clob/"},
+    {"step":"分开市场参考、独立初判、市场后观点；自我反方审查；同源产出与现有校验","status":"completed","artifact":"report.json / report.md / report.html / validation.json"}
+  ],
+  "angles": [
+    {"angle":"契约","question":"active/closed/endDate、比较基准、取整、结算来源、延期默认条款是否清楚？","queries":["Fed December"],"tiers":["T0"],"status":"completed"},
+    {"angle":"官方驱动","question":"政策路径、通胀与需求是否支持继续暂停或加息？","queries":["site.federalreserve.gov 2026 October 28 FOMC statement","site.bea.gov September 2026 personal income outlays October 2026 PCE"],"tiers":["T0"],"status":"completed_with_BLS_gap"},
+    {"angle":"概率与reference class","question":"能否给可解释的独立概率？结果互斥穷尽吗？","queries":[],"tiers":["T0"],"status":"qualitative_only","numeric_probability":null},
+    {"angle":"市场与流动性","question":"参考价、双边报价、显示深度和时点是否可复核？","queries":[],"tiers":["T0"],"status":"completed","note":"五档Yes订单簿已得；不宣称无滑点可成交"},
+    {"angle":"反方与下一观察","question":"什么证据推翻维持或加息工作情景？","queries":[],"tiers":["T0"],"status":"completed"}
+  ],
+  "intentional_omissions": ["未扩搜社区；原始官方资料已足以构成可检验分歧", "不做CME或机构概率拼接，不将机构观点当市场共识", "无条件化历史样本，不给独立数字概率", "无价格轨迹完整时点，未作趋势推断"],
+  "prospective_review": {"trigger":"12月正式声明及真实合约结算后人工复核","automatic_task_created":false,"check":["会前目标区间上限、会后上限、非常规取整及延期条款","保存最终结算来源和实际结算时间，区分政策方向与条款默认No change","独立无数字概率，不计算其Brier/log loss；市场如评分须先说明100.75%参考和的归一化政策，保留原值"]}
+}

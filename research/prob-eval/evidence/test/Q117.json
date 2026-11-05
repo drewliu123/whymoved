@@ -1,0 +1,50 @@
+{
+  "qid": "Q117",
+  "as_of": "2026-09-22",
+  "kept": [
+    {
+      "excerpt": "Real Time Big Data's poll published September 21 put Sergio Moro at 35%, Sandro Alex at 27% and Requião Filho at 22% in the first round. In hypothetical runoffs, Moro had 42% against Sandro Alex's 38%, and 52% against Requião Filho's 30%. The survey interviewed 1,600 voters September 11–15, reported a margin of error of two percentage points and 95% confidence, and was registered with the TSE as PR-00532/2026.",
+      "published_at": "2026-09-21",
+      "publisher": "CNN Brasil",
+      "relevance": "The latest retained poll shows Moro leading the first round but facing a much closer potential runoff against Sandro Alex.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/real-time-moro-lidera-cenarios-de-1o-e-2o-turnos-ao-governo-do-parana-2/"
+    },
+    {
+      "excerpt": "Paraná Pesquisas reported first-round voting intentions of 44.7% for Sergio Moro, 23% for Requião Filho and 19.7% for Sandro Alex. Another 5.8% selected blank, null or none, while 4.8% did not know or expressed no opinion. The institute interviewed 1,280 voters in 57 Paraná municipalities September 15–17, with a margin of error of 2.8 percentage points and 95% confidence; the poll was registered as PR-01022/2026.",
+      "published_at": "2026-09-18",
+      "publisher": "CNN Brasil",
+      "relevance": "This independent September survey provides another recent measure of Moro's first-round lead and the competition for the second runoff position.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/parana-pesquisas-sergio-moro-lidera-disputa-pelo-governo-do-pr-com-447/"
+    },
+    {
+      "excerpt": "AtlasIntel reported first-round support of 49.1% for Sergio Moro, 28.2% for Requião Filho and 18.6% for Sandro Alex. In hypothetical runoffs, Moro recorded 57% against Requião Filho's 37.1%, and 50.4% against Sandro Alex's 35.5%. The poll recruited 1,794 Paraná voters digitally September 11–16, reported a margin of error of two percentage points and 95% confidence, and was registered as PR-02671/2026.",
+      "published_at": "2026-09-17",
+      "publisher": "CNN Brasil",
+      "relevance": "AtlasIntel supplies a substantially stronger reading for Moro than Real Time Big Data, documenting meaningful disagreement across pollsters before the cutoff.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/atlas-moro-lidera-cenarios-de-1o-e-2o-turnos-ao-governo-do-parana/"
+    },
+    {
+      "excerpt": "Governor Ratinho Junior announced September 16 that he would request leave from office the following day to focus on Sandro Alex's gubernatorial campaign. Vice-governor Darci Piana would assume the state executive during the absence. Ratinho Junior said the leave would let him travel around the state and campaign without the time constraints of the governorship.",
+      "published_at": "2026-09-16",
+      "publisher": "Ric.com.br",
+      "relevance": "The incumbent governor's direct campaign involvement strengthens the organizational support available to one of Moro's principal rivals.",
+      "url": "https://ric.com.br/politica/eleicoes/ratinho-junior-licenca-cargo-governador-parana/"
+    },
+    {
+      "excerpt": "Moro had canceled participation in debates and was avoiding criticism of Governor Ratinho Junior, whose administration had approval close to 80%. Moro's television campaign sought to associate him with the state administration, while Ratinho Junior publicly reiterated his support for Sandro Alex. Moro had joined the PL after previously belonging to União Brasil.",
+      "published_at": "2026-09-08",
+      "publisher": "Folha de S.Paulo",
+      "relevance": "This campaign preview identifies the popular incumbent's endorsement as a central contest between Moro and Sandro Alex.",
+      "url": "https://www1.folha.uol.com.br/poder/2026/09/moro-evita-debates-e-e-ironizado-ao-tentar-se-associar-a-ratinho-jr-na-tv.shtml"
+    },
+    {
+      "excerpt": "The electoral calendar published by the Superior Electoral Court sets the first round for October 4, 2026, with an eventual second round on October 25. The calendar covers party conventions, the beginning of campaigning, voting, campaign accounts and the inauguration of those elected.",
+      "published_at": "2026-03-12",
+      "publisher": "Agência Senado",
+      "relevance": "This dated official legislative source confirms the election timetable relevant to the market's resolution.",
+      "url": "https://www12.senado.leg.br/noticias/infomaterias/2026/03/confira-datas-e-prazos-do-calendario-eleitoral-de-2026"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-22, inclusive. Retained six sources with explicit publication dates before the cutoff; excerpts are English factual summaries of Portuguese reporting. Publication dates and facts were checked against web_search results, including targeted searches exposing article text and datelines. Direct web_fetch failed because multiple providers were configured; the requested agent-reach fallback returned RATE_LIMITED and was not retried. Full-page retrieval was therefore unavailable, and this pack relies on indexed source text rather than archived page captures. Excluded later-dated reporting, undated or continuously updated aggregators, prediction-market and betting material, and election outcomes. For Paraná Pesquisas, retained only the documented first-round figures because the CNN introduction mentions second-round scenarios without providing their results. Real Time's collection mode differed between indexed reports, so no collection-mode claim is included."
+}

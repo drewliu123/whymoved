@@ -1,0 +1,44 @@
+{
+ "qid": "Q087",
+ "question": "Will the Bank of Russia decrease the key rate after the September Meeting?",
+ "rules": "This market will resolve according to the change in the key rate resulting from the Bank of Russia’s September meeting, relative to the level it was prior to this meeting.\n\nThe resolution source for this market is information released by the Bank of Russia after its September 11, 2026 meeting as listed on the official Bank of Russia calendar: https://www.cbr.ru/eng/dkp/cal_mp/#t13\n\nThis market may resolve as soon as the Bank of Russia’s press release for their September 11, 2026 meeting with relevant data is issued. If no decision on the key rate is issued by the end date of the next scheduled meeting, this market will resolve to the \"No change\" bracket.",
+ "as_of": "2026-08-28",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters, via Investing.com",
+   "published_at": "2026-08-28",
+   "excerpt": "MOSCOW, Aug 28 (Reuters) - Russia’s central bank will continue cutting its key rate, lowering it to 13.5% from 14% by the end of this year, Sberbank’s chief economist Alexander Isakov told Reuters, despite Ukrainian attacks on economic targets. Sberbank, Russia’s largest lender, also nudged up its 2026 economic growth forecast to 0.4% from 0.3%, citing a stronger-than-expected second quarter, and robust consumer and state demand."
+  },
+  {
+   "id": "E2",
+   "publisher": "Bank of Russia",
+   "published_at": "2026-08-26",
+   "excerpt": "According to InFOM’s survey, one-year-ahead inflation expectations of households were 13.7% in August compared to 14.7% in July. Inflation expectations declined among respondents both with and without savings. Despite the decline, inflation expectations remain elevated. Companies’ price expectations picked up."
+  },
+  {
+   "id": "E3",
+   "publisher": "Bank of Russia",
+   "published_at": "2026-08-17",
+   "excerpt": "Motor fuel became notably more expensive. July statistics captured the second-round effects stemming from the situation in the fuel market. This led to an increase in measures of underlying inflation in July."
+  },
+  {
+   "id": "E4",
+   "publisher": "Bank of Russia",
+   "published_at": "2026-08-05",
+   "excerpt": "The main topic of discussion was accelerated price growth over recent months, driven by higher fuel prices and their impact on inflation expectations. Most participants believed that underlying inflation would not rise considerably, while predicting that inflation would be higher this year than assumed in the April forecast. Considering the materialised proinflationary risks, the regulator now has less room for a further key rate reduction and therefore has raised the forecast range of the average key rate for the next three years."
+  },
+  {
+   "id": "E5",
+   "publisher": "Bank of Russia Press Service",
+   "published_at": "2026-07-24T13:30:00+03:00",
+   "excerpt": "On 24 July 2026, the Bank of Russia Board of Directors decided to cut the key rate by 25 basis points to 14.00% per annum. The Bank of Russia will make further key rate decisions based on the dynamics of inflation and inflation expectations as well as the analysis of risks posed by domestic and external conditions. The Bank of Russia Board of Directors holds its next key rate meeting on 11 September 2026. The press release on the Bank of Russia Board decision is to be published at 13.30 Moscow time."
+  },
+  {
+   "id": "E6",
+   "publisher": "FocusEconomics",
+   "published_at": "2026-07-24",
+   "excerpt": "At its meeting on 24 July, the Bank of Russia (CBR) made its 10th consecutive cut, mirroring June’s decision and lowering the key rate by 25 basis points to 14.00%. Meanwhile, it trimmed its 2026 GDP growth forecast to 0.0–1.0% from 0.5–1.5%. All of our panelists expect further cuts by year-end, ranging from 50 to 300 basis points, with the Consensus for roughly 150 basis points of additional easing this year."
+  }
+ ]
+}

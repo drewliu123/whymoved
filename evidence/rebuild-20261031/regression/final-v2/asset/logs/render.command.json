@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-I",
+    "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/build_regression.py",
+    "--root",
+    "/Users/frankzhang/Desktop/投研助手",
+    "--output-name",
+    "final-v2",
+    "--render-only",
+    "asset"
+  ],
+  "shell": "/Library/Developer/CommandLineTools/usr/bin/python3 -I '/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/build_regression.py' --root '/Users/frankzhang/Desktop/投研助手' --output-name final-v2 --render-only asset",
+  "cwd": "/Users/frankzhang/Desktop/投研助手",
+  "exit_code": 0,
+  "stdout": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/final-v2/asset/logs/render.stdout.log",
+  "stderr": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/final-v2/asset/logs/render.stderr.log",
+  "environment": {
+    "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/final-v2/strict-gate-home",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

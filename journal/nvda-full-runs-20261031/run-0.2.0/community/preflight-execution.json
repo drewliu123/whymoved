@@ -1,0 +1,17 @@
+[
+  {
+    "phase": "usage",
+    "exit_code": 0,
+    "seconds": 0.16
+  },
+  {
+    "phase": "diagnose",
+    "exit_code": 0,
+    "seconds": 0.14
+  },
+  {
+    "phase": "resolve-save-dir",
+    "exit_code": 0,
+    "seconds": 0.13
+  }
+]

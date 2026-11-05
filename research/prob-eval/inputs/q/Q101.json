@@ -1,0 +1,50 @@
+{
+ "qid": "Q101",
+ "question": "Will Elmano de Freitas win the 2026 Ceará gubernatorial election?",
+ "rules": "The Ceará gubernatorial election is scheduled to take place in Brazil on October 4, 2026, with a runoff on October 25, 2026, if no candidate receives a majority of the valid votes in the first round.\n\nThis market will resolve according to the candidate who wins this election.\n\nTemporary, interim, or placeholder governors appointed by any means before the specified election will not be considered.\n\nIf the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., www.tse.jus.br/eleicoes/resultados-eleicoes).",
+ "as_of": "2026-09-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "UOL / Agência Estado",
+   "published_at": "2026-09-21T13:48:00-03:00",
+   "excerpt": "An Atlas/Focus poll published on September 21 put Elmano de Freitas at 48.5% and Ciro Gomes at 48% in the first round. In a hypothetical runoff, Elmano had 49.7% and Ciro 49.4%. The survey interviewed 1,815 Ceará voters through random digital recruitment between September 15 and 20, with a margin of error of two percentage points and 95% confidence. Its electoral registration numbers were CE-02298/2026 and BR-05493/2026."
+  },
+  {
+   "id": "E2",
+   "publisher": "R7",
+   "published_at": "2026-09-18T07:00:00-03:00",
+   "excerpt": "A Real Time Big Data poll published on September 18 showed Elmano de Freitas with 47% and Ciro Gomes with 42% in the stimulated first-round scenario. In a hypothetical runoff, Elmano had 48% and Ciro 45%. The institute interviewed 1,600 voters between September 14 and 17, with a margin of error of two percentage points and 95% confidence. The poll was registered with the TSE under CE-04380/2026."
+  },
+  {
+   "id": "E3",
+   "publisher": "Folha de S.Paulo / Datafolha",
+   "published_at": "2026-09-18T16:47:00-03:00",
+   "excerpt": "A Datafolha poll released on September 18 showed Ciro Gomes with 47% of voting intentions and Elmano de Freitas with 40%. In the previous Datafolha survey, released on September 3, Ciro had 46% and Elmano 37%. The latest survey interviewed 1,204 voters aged 16 or older between September 14 and 17."
+  },
+  {
+   "id": "E4",
+   "publisher": "Metrópoles",
+   "published_at": "2026-09-18T14:20:00-03:00",
+   "excerpt": "A Paraná Pesquisas survey released on September 18 showed Ciro Gomes with 47.4% and Elmano de Freitas with 39.9% in the first round. The survey interviewed 1,352 people between September 15 and 17. Its margin of error was 2.7 percentage points at a 95% confidence level, and its TSE registration was CE-04259/2026."
+  },
+  {
+   "id": "E5",
+   "publisher": "Ipsos-Ipec",
+   "published_at": "2026-06-03",
+   "excerpt": "An Ipsos-Ipec release dated June 3 reported Ciro Gomes at 44% and Elmano de Freitas at 33% of first-round voting intentions. Fieldwork took place between May 28 and June 1, 2026. The survey conducted 800 in-person interviews across 37 municipalities."
+  },
+  {
+   "id": "E6",
+   "publisher": "Tribunal Regional Eleitoral de Santa Catarina",
+   "published_at": "2026-03-06T14:01:00-03:00",
+   "excerpt": "The electoral calendar established by TSE Resolution 23.760 schedules the 2026 elections for October 4, including the election of state governors. The second round is scheduled for October 25. Parties and federations hold candidate-selection conventions between July 20 and August 5."
+  },
+  {
+   "id": "E7",
+   "publisher": "Tribunal Superior Eleitoral",
+   "published_at": "2022-10-02T21:38:00-03:00",
+   "excerpt": "Elmano de Freitas of the Workers' Party was elected governor of Ceará in the first round of the 2022 election. He ran for the Ceará Cada Vez Mais Forte coalition, which included the PT-led federation, PP, MDB, PRTB, the PSOL federation and Solidariedade. His running mate was Jade Romero."
+  }
+ ]
+}

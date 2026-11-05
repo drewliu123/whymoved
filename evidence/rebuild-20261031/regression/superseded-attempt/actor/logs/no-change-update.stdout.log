@@ -1,0 +1,50 @@
+{
+  "run_id": "R20261031T183410Z-4266c8da97ad",
+  "path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs/R20261031T183410Z-4266c8da97ad",
+  "manifest": {
+    "schema_version": 2,
+    "run_id": "R20261031T183410Z-4266c8da97ad",
+    "created_at": "2026-10-31T18:34:10.915956Z",
+    "as_of": "2026-10-31T17:29:33Z",
+    "files": {
+      "report.json": "0577216c766fa9d4a3fd533f00e6599aa7c8d1c282f3bf8e28eeec49a2c0124c",
+      "claims.json": "c3b9f2ccc0df61dca9113db7ebc6138466bb0b5ac06f6778fa96b848338cfcc4",
+      "sources.json": "ad39d06df8d8e7a54ee23f9ad0d89e4d0b7e8835ed80c90414d29c0aa8ec5780",
+      "plan.json": "f26aedc9fe2d1ea49353f41981ab87844faac83f1fe9e879a340620d272e2ad1",
+      "report.md": "58b5bf8607a39d2010ce1b1397df0e03b6922afe6514ed76a7875449eceb4704",
+      "report.html": "dd2a4fe7fb028a7f1768c2db4e2b07461570d3e7bb2461e36cf8add235557dbe",
+      "diff.json": "f8fd0217339f9d22e4a4003430a0d801c29eda9fadb19af59e98c22eef3a2ec8"
+    },
+    "parent_run": "R20261031T183410Z-c3bd0f805fdc",
+    "parent_manifest_sha256": "689df13bd264fd9c9ca5d5b130acd755dcf6f56f83448042cc3e204b8f0d85f7"
+  },
+  "diff": {
+    "schema_version": 2,
+    "parent_run": "R20261031T183410Z-c3bd0f805fdc",
+    "method": "structural_ids_and_fields",
+    "judgment": {
+      "judgment_changed": false,
+      "reason": "开发回归中的相同冻结输入重复，不构成新的实际研究。",
+      "comparability": {
+        "status": "comparable",
+        "reason": "claims、sources、as_of、period/unit/scope及判断文本均相同。"
+      }
+    },
+    "sources": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "evidence": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "claims": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "comparability_issues": []
+  }
+}

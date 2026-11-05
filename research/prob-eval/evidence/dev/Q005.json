@@ -1,0 +1,41 @@
+{
+  "qid": "Q005",
+  "as_of": "2026-07-18",
+  "kept": [
+    {
+      "excerpt": "In mid-May, Google announced Gemini 3.5 Flash at I/O 2026 and said the Pro version would arrive in June. That deadline has passed with no update on when to expect it. In a statement, the company said it is “currently testing 3.5 Pro, an upgraded Flash model, and other models with partners.”",
+      "published_at": "2026-07-16",
+      "publisher": "9to5Google",
+      "relevance": "Google’s quoted statement establishes partner testing as the latest reported status, which does not itself demonstrate the general-public access required for resolution.",
+      "url": "https://9to5google.com/2026/07/16/gemini-3-5-pro-delays/"
+    },
+    {
+      "excerpt": "Today, we’re introducing Gemini 3.5, our latest family of models combining frontier intelligence with action. We’re kicking off the series by releasing 3.5 Flash. We’re also hard at work on 3.5 Pro. It's already being used internally, and we look forward to rolling it out next month.",
+      "published_at": "2026-05-19",
+      "publisher": "Google",
+      "relevance": "This official announcement supplies the original June rollout target and distinguishes the released Flash model from the internally used Pro model.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
+    },
+    {
+      "excerpt": "Today, we’re releasing the upgraded core intelligence that makes those breakthroughs possible: Gemini 3.1 Pro. We are releasing 3.1 Pro in preview today to validate these updates and continue to make further advancements in areas such as ambitious agentic workflows before we make it generally available soon. Starting today, Gemini 3.1 Pro in the Gemini app is rolling out with higher limits for users with the Google AI Pro and Ultra plans.",
+      "published_at": "2026-02-19",
+      "publisher": "Google",
+      "relevance": "This establishes the preceding Pro release and shows that Google can make a Pro model publicly accessible while retaining a preview designation.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
+    },
+    {
+      "excerpt": "Today, we’re taking the next step with our 2.5 Pro and Flash models by releasing them as stable and generally available. The preview of Gemini 2.5 Flash-Lite is now available in Google AI Studio and Vertex AI, alongside the stable versions of 2.5 Flash and Pro. Both 2.5 Flash and Pro are also accessible in the Gemini app.",
+      "published_at": "2025-06-17",
+      "publisher": "Google",
+      "relevance": "This provides a historical example of a separate Pro general-availability promotion, a release route explicitly permitted by the supplied resolution rules.",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-2-5-model-family-expands/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://news.bloomberglaw.com/ip-law/google-gemini-launch-delayed-as-tech-falls-short-of-goals-2",
+      "reason": "The relevance explicitly mentions a public release by July 31, 2026, a date after the 2026-07-18 cutoff; removed under the stated rule excluding excerpt/relevance mentions of anything after the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-18. Included only sources with verifiable publication dates on or before that date; the latest included reporting is dated July 16. Excluded prediction-market and betting pages, undated sources, subsequent reporting, and dynamically displayed related stories outside the cutoff. Bloomberg and 9to5Google overlap in their delay reporting and should not be treated as independent confirmations; 9to5Google additionally reproduces Google's partner-testing statement. Publication dates and excerpts were verified from web-search evidence and, where available, article bodies retrieved through agent-reach after web_fetch failed. The Gemini 3.1 Pro article body was available in search results, but its fallback reader failed. The supplied market-creation timestamp is missing and the primary-resolution-source sentence is truncated, so earlier releases are included as historical context without asserting that they qualify for this particular market. No outcome or probability assessment is supplied."
+}

@@ -1,0 +1,48 @@
+{
+  "qid": "Q024",
+  "as_of": "2026-08-19",
+  "kept": [
+    {
+      "excerpt": "Chelsea agreed with Fernández's agent Javier Pastore in late May that he could leave for £120m, with an August 14 deadline for bids. After that deadline passed without formal offers, Chelsea told his camp he was not for sale during this transfer window. Manchester City remained keen and believed Chelsea still wanted a deal. City wanted to strengthen midfield after Rodri agreed a move to Barcelona and Bernardo Silva left upon his contract's expiry.",
+      "published_at": "2026-08-18T13:36:27Z",
+      "publisher": "AOL — Nizaar Kinsella, football reporter",
+      "relevance": "This provides a recent account of the competing negotiating positions and Manchester City's continuing interest after Chelsea's deadline.",
+      "url": "https://www.aol.com/articles/mendes-brought-resolve-fernandez-situation-133627000.html"
+    },
+    {
+      "excerpt": "AS reported that Fernández remained on Manchester City's summer target list at Enzo Maresca's request despite Chelsea's expired ultimatum. Chelsea's valuation was approximately €140m (£120m), a price City wanted to avoid paying. AS also reported that Chelsea remained privately open to a sale.",
+      "published_at": "2026-08-17T10:32:45Z",
+      "publisher": "AS — Eduardo Burgos Rodríguez",
+      "relevance": "This reports continuing interest and potential negotiating flexibility while identifying price as a major obstacle.",
+      "url": "https://as.com/futbol/internacional/el-city-no-tira-la-toalla-por-enzo-f202608-n/"
+    },
+    {
+      "excerpt": "Chelsea expected Enzo Fernández to stay after Manchester City missed their transfer deadline. ESPN reported that Chelsea would demand £120m should Fernández push to leave, but no formal bid had materialised despite interest from Manchester City and Real Madrid.",
+      "published_at": "2026-08-14",
+      "publisher": "ESPN — James Olley",
+      "relevance": "This records the absence of a formal offer at Chelsea's deadline and the club's contemporaneous expectation that he would stay.",
+      "url": "https://www.espn.co.uk/football/story/_/id/49610484/enzo-fernandez-set-chelsea-stay-manchester-city-miss-deadline-sources"
+    },
+    {
+      "excerpt": "Manchester City missed Chelsea's £120m bidding deadline; Chelsea expected Fernández to stay, although City could maintain their interest.",
+      "published_at": "2026-08-14T12:58:00-04:00",
+      "publisher": "The Guardian — Will Unwin",
+      "relevance": "This independently corroborates the missed deadline while indicating that City's pursuit could continue.",
+      "url": "https://www.theguardian.com/football/2026/aug/14/enzo-maresca-manchester-city-chelsea-fernandez-rodri-transfer"
+    },
+    {
+      "excerpt": "Real Madrid stated that it had taken no steps, directly or indirectly, to sign Enzo Fernández and had no intention of pursuing the operation. The club categorically denied speculation linking it to the player.",
+      "published_at": "2026-07-03",
+      "publisher": "Real Madrid Club de Fútbol",
+      "relevance": "This official denial addresses a prominent alternative destination relevant to evaluating Fernández's next club.",
+      "url": "https://www.realmadrid.com/es-ES/noticias/club/comunicados/comunicado-oficial-03-07-2026"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.chelseafc.com/en/news/article/match-report-chelsea-3-1-real-sociedad",
+      "reason": "Excerpt contains a match result (Chelsea's 3–1 preseason victory over Real Sociedad), which is excluded under the instruction to remove items mentioning results."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-08-19. Included only sources with explicit publication dates on or before that date; no prediction-market pages, betting odds, or market prices were used. Post-cutoff material surfaced in search was excluded. Excerpts are factual summaries, with Spanish reporting translated into English. The Guardian timestamp is its displayed August 14 update time; its first publication was also August 14. The built-in web reader failed; agent-reach retrieved the AS, Guardian, and AOL article text and confirmed ESPN's date, but returned only a headline for ESPN. ESPN's substantive claims and the two official club items were verified through dated web-search extracts. Further fallback reads failed temporarily, so those items rely on the available search evidence."
+}

@@ -1,0 +1,50 @@
+{
+ "qid": "Q038",
+ "question": "Iran full airspace closure by July 31?",
+ "rules": "This market will resolve to “Yes” if Iran initiates a general closure of its airspace, that is not solely due to weather conditions, between market creation and the specified date, 11:59 PM ET. Otherwise, this market will resolve to “No”.\n\nA “general closure” refers to a cancellation or suspension of aviation which is generally applicable to all commercial flights transiting Iranian airspace (“Tehran FIR”). A qualifying closure must apply generally to all of Iran or the Tehran FIR; limited cancellations, delays, or partial closures will not qualify. A closure which applies generally to commercial aviation across Iranian airspace, with limited exceptions for certain categories of flights, however, will qualify (e.g. exceptions for certain flights pre-approved by the Iranian Civil Aviation Authority may be permitted).\n\nQualifying previous examples include the February 28, 2026 total closure of Iranian airspace (https://www.iranintl.com/en/202602289115) and the January 2026 total closure of Iranian airspace except to international flights with express governmental permission (https://www.reuters.com/world/middle-east/iran-shuts-airspace-most-flights-flightradar24-says-2026-01-14/). No",
+ "as_of": "2026-07-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters, via ThePrint",
+   "published_at": "2026-07-18T14:00:16Z",
+   "excerpt": "Iran launched more attacks on Washington’s Gulf allies and Jordan on Saturday after a seventh straight night of U.S. strikes on Iranian military targets, escalating the war one week after a ceasefire collapsed. Kuwait came under sustained attack, with a desalination plant hit and operations at Kuwait International Airport suspended due to repeated missile and drone threats."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters, via ThePrint",
+   "published_at": "2026-07-16T18:00:27Z",
+   "excerpt": "Iran and the United States exchanged intensified fire on Thursday in a week-long escalation that has all but torn up last month’s truce, though Iran’s release of a U.S. citizen pointed towards a path to avert the resumption of all-out war."
+  },
+  {
+   "id": "E3",
+   "publisher": "European Union Aviation Safety Agency (EASA)",
+   "published_at": "2026-07-08",
+   "excerpt": "Following the agreed ceasefire agreements and the overall reduction in short-term tensions, the Integrated EU Aviation Security Risk Assessment Group decided not to extend the existing Conflict Zone Information Bulletin (CZIB) on the Middle East and Persian Gulf, which expires on July 8, 2026. This CZIB has been replaced by a dedicated Information Note on the Middle East and Persian Gulf, describing the residual medium-level risks, and separate CZIBs on Iran, Iraq and Lebanon, highlighting the remaining high risks in the affected airspace."
+  },
+  {
+   "id": "E4",
+   "publisher": "Anadolu Agency",
+   "published_at": "2026-07-05",
+   "excerpt": "Flights are continuing nationwide without restrictions on Sunday, but Tehran’s airspace will be completely closed on Monday during the main funeral procession. Under the schedule announced by the Civil Aviation Organization, regular flights at Tehran's Mehrabad International Airport and Imam Khomeini International Airport will be suspended on Monday as public ceremonies take place in the capital. Flights across the rest of the country will continue without restrictions on July 7-8, except for Mashhad on the final day of ceremonies."
+  },
+  {
+   "id": "E5",
+   "publisher": "Tasnim News Agency, reporting Iran’s Civil Aviation Organization statement",
+   "published_at": "2026-04-18T07:26:35Z",
+   "excerpt": "The Civil Aviation Organization announced that part of the country’s airspace has been reopened as of 7:00 am on Saturday, April 18. Air routes in the eastern section of Iran’s airspace are now open for international flights transiting through Iranian skies, the statement said. The Civil Aviation Organization also stated that flight operations at the country’s airports will be gradually resumed, based on the technical and operational readiness of military and civilian sectors."
+  },
+  {
+   "id": "E6",
+   "publisher": "Iran International",
+   "published_at": "2026-02-28T07:01:58Z",
+   "excerpt": "Based on a NOTAM (Notice to Airmen) that has been issued, the entire airspace of Iran has been closed for six hours, Majid Akhavan, spokesperson for Iran's Civil Aviation Organization, told Mehr News Agency."
+  },
+  {
+   "id": "E7",
+   "publisher": "Reuters, via L’Orient Today",
+   "published_at": "2026-01-15",
+   "excerpt": "Iran closed its airspace to all flights except international ones to and from Iran with official permission at 5:15 p.m. ET (10:15 GMT) on Wednesday, according to a notice on the U.S. Federal Aviation Administration website. The notice was removed shortly before 10 p.m. ET, according to tracking service Flightradar24."
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "question": "纳斯达克最近为什么下跌？",
+  "type": "asset",
+  "task": "变化解释",
+  "entity": "Nasdaq Composite（纳斯达克综合指数）",
+  "as_of": "2026-11-02T02:59:00.848830Z",
+  "historical": false,
+  "comparison": {
+    "period": "2026年10月，重点10月28日至30日；最新交易日10月30日",
+    "unit": "收盘价格指数百分比；非总回报",
+    "scope": "Nasdaq Composite，与同日S&P 500、Dow和SOX比较；不混用Nasdaq 100"
+  },
+  "decision_needed": "区分财报与AI投入回报担忧、利率背景、板块集中性，判断本轮解释的证据强弱。",
+  "prior_judgment": "首次研究；用户认为近期下跌，先核对表现。",
+  "hypotheses": [
+    {
+      "explanation": "财报与AI投入回报担忧引发科技和半导体重新定价",
+      "discriminating_observation": "公司原始披露、报告后行情、半导体相对大盘跌幅与业绩事前预期"
+    },
+    {
+      "explanation": "利率和通胀压力抬高估值折现率",
+      "discriminating_observation": "Fed声明、决策日股票与长债收益率的同期反应；避免把利率水平直接当主因"
+    },
+    {
+      "explanation": "广泛经济衰退或全市场风险抛售",
+      "discriminating_observation": "Dow与S&P相对表现、Fed经济表述、现金流和经营原始证据"
+    }
+  ],
+  "queries": [
+    {
+      "question": "跌幅和比较基准",
+      "query": "Nasdaq October 30 2026 week month close Reuters AP",
+      "source": "行情与独立报道",
+      "purpose": "核对单日/月内回撤，剔除实时侧栏"
+    },
+    {
+      "question": "政策背景及事前预期",
+      "query": "Federal Reserve October 28 2026 statement futures expectations",
+      "source": "Fed T0与Reuters原始采访",
+      "purpose": "对照实际与决策前公开定价；无历史快照不宣称预期差"
+    },
+    {
+      "question": "财报与资本开支",
+      "query": "October 2026 Intel Amazon earnings revenue guidance capital expenditure consensus",
+      "source": "公司IR及调查提供方，fact-collector",
+      "purpose": "匹配2026Q3与Q4指引、披露前截点，核对EPS/收入口径；按expectations.md取证"
+    },
+    {
+      "question": "社区分歧",
+      "query": "Nasdaq Composite tech stocks selloff AI spending earnings",
+      "source": "Last30Days，community-scout",
+      "purpose": "寻找可检验反例，只记录样本观点"
+    }
+  ],
+  "budget": {
+    "max_queries": 20,
+    "max_followups": 1
+  },
+  "stop_condition": "获得近期表现与可比较基准、关键官方披露和最强竞争解释；缺失调查样本或历史报价则降低结论，不补造。",
+  "content_cutoff": "2026-11-01 America/New_York; latest US close 2026-10-30",
+  "timestamp_note": "as_of records actual ledger freeze; economic/news window is separate; not a historical backtest."
+}

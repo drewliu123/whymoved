@@ -1,0 +1,24 @@
+[View PDF](https://arxiv.org/pdf/2505.07078)[HTML (experimental)](https://arxiv.org/html/2505.07078v6)
+
+> Abstract:Large Language Models (LLMs) have recently been leveraged for asset pricing tasks and stock trading applications, enabling AI agents to generate investment decisions from unstructured financial data. However, most evaluations of LLM timing-based investing strategies are conducted on narrow timeframes and limited stock universes, overstating effectiveness due to survivorship and data-snooping biases. We critically assess their generalizability and robustness by proposing FINSABER, a backtesting framework evaluating timing-based strategies across longer periods and a larger universe of symbols. Systematic backtests over two decades and 100+ symbols reveal that previously reported LLM advantages deteriorate significantly under broader cross-section and over a longer-term evaluation. Our market regime analysis further demonstrates that LLM strategies are overly conservative in bull markets, underperforming passive benchmarks, and overly aggressive in bear markets, incurring heavy losses. These findings highlight the need to develop LLM strategies that are able to prioritise trend detection and regime-aware risk controls over mere scaling of framework complexity.
+
+Comments:KDD 2026, Datasets & Benchmarks Track (Oral) Corrected the FinAgent results and added FinAgent (GPT-4o-mini) in Table 2; conclusions unchanged
+Subjects:Trading and Market Microstructure (q-fin.TR); Artificial Intelligence (cs.AI); Computational Engineering, Finance, and Science (cs.CE)
+Cite as:[arXiv:2505.07078](https://arxiv.org/abs/2505.07078) [q-fin.TR]
+(or [arXiv:2505.07078v6](https://arxiv.org/abs/2505.07078v6) [q-fin.TR] for this version)
+[https://doi.org/10.48550/arXiv.2505.07078](https://doi.org/10.48550/arXiv.2505.07078)
+
+arXiv-issued DOI via DataCite
+Related DOI:[https://doi.org/10.1145/3770854.3785702](https://doi.org/10.1145/3770854.3785702)
+
+DOI(s) linking to related resources
+
+## Submission history
+
+From: Waylon Li [[view email](https://arxiv.org/show-email/7a7c538a/2505.07078)]   
+**[[v1]](https://arxiv.org/abs/2505.07078v1)** Sun, 11 May 2025 18:02:21 UTC (161 KB)  
+**[[v2]](https://arxiv.org/abs/2505.07078v2)** Tue, 20 May 2025 14:51:24 UTC (159 KB)  
+**[[v3]](https://arxiv.org/abs/2505.07078v3)** Sun, 10 Aug 2025 17:06:51 UTC (354 KB)  
+**[[v4]](https://arxiv.org/abs/2505.07078v4)** Mon, 24 Nov 2025 14:03:22 UTC (364 KB)  
+**[[v5]](https://arxiv.org/abs/2505.07078v5)** Thu, 12 Feb 2026 16:17:00 UTC (358 KB)  
+**[v6]** Fri, 26 Jun 2026 15:42:23 UTC (358 KB)

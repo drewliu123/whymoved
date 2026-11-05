@@ -1,0 +1,46 @@
+{
+  "qid": "Q118",
+  "as_of": "2026-10-04",
+  "kept": [
+    {
+      "excerpt": "« Les militants socialistes ont tranché, on ne change pas les règles en cours de jeu. Moi, je respecterai les règles même si je perds ». Le premier secrétaire du Parti socialiste, Olivier Faure, a de nouveau plaidé pour une primaire élargie, qui irait de François Ruffin à Raphaël Glucksmann, afin de rassembler la gauche. Si François Ruffin s'est dit favorable à cette option, le leader de Place Publique a rappelé que les règles de la primaire qui aura lieu le mois prochain avaient d'ores-et-déjà été tranchées par les militants du PS.",
+      "published_at": "2026-09-08",
+      "publisher": "LCP – Assemblée nationale",
+      "relevance": "Documents both an attempted revival of a broader primary and Glucksmann’s refusal, helping distinguish the separate socialist primary from the original united contest.",
+      "url": "https://lcp.fr/actualites/on-ne-change-pas-les-regles-en-cours-de-jeu-glucksmann-ferme-la-porte-a-ruffin-et"
+    },
+    {
+      "excerpt": "Le Parti socialiste et Place publique ont ratifié mardi 25 août au soir l'accord relatif à l'organisation de la « primaire de la gauche socialiste et démocratique ». La primaire se tiendra en deux tours, qui auront lieu les 9 et 10 octobre pour le premier (de 8 heures le vendredi à 20 heures le samedi), et les 16 et 17 octobre pour le second (aux mêmes horaires). Ce sera un scrutin électronique uninominal, uniquement en ligne donc.",
+      "published_at": "2026-08-26",
+      "publisher": "LCP – Assemblée nationale, with AFP",
+      "relevance": "Establishes the formally agreed schedule and narrower organizers of the alternative primary, avoiding confusion between that election and the October 11 united primary; the article was updated September 4.",
+      "url": "https://lcp.fr/index.php/actualites/presidentielle-dates-candidats-prix-tout-ce-qu-il-faut-savoir-sur-la-primaire-sociale"
+    },
+    {
+      "excerpt": "Le 11 octobre 2026, l’ensemble du peuple de gauche sera appelé à participer à un scrutin inédit pour désigner notre candidature commune. Pour se présenter, il faudra réunir 500 parrainages d’élu·es, comme pour l’élection présidentielle, avec la possibilité, pour les élu·es qui le souhaiteront, de parrainer plusieurs candidatures.",
+      "published_at": "2026-01-24",
+      "publisher": "Front populaire 2027 — official communiqué hosted by Les Écologistes",
+      "relevance": "Supplies the original dated official announcement defining the planned October 11 united primary and its candidate-entry requirement.",
+      "url": "https://lesecologistes.fr/document/41EcCUka1ujg6ocp28Wu7k/fp27-cp-24-01-26.pdf"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-les-ecologistes-reportent-lheure-du-choix-a-decembre-marine-tondelier-toujours-en-lice",
+      "reason": "Outcome leakage: the excerpt states that the motion officially buries the united primary, and the relevance explicitly describes official abandonment and evidence of cancellation."
+    },
+    {
+      "url": "https://www.lemonde.fr/politique/article/2026/09/21/presidentielle-2027-les-ecologistes-trancheront-en-decembre-sur-l-avenir-de-la-candidature-de-marine-tondelier_6779300_823448.html",
+      "reason": "Outcome leakage: the excerpt records the failure of the united primary and a formal replacement strategy, and the relevance explicitly corroborates the project's failure."
+    },
+    {
+      "url": "https://clementine-autain.fr/apres-le-dernier-clou-dans-le-cercueil-de-la-primaire-pose-par-le-ps/",
+      "reason": "Outcome leakage: the excerpt says the primary is buried and the relevance describes it as abandoned."
+    },
+    {
+      "url": "https://www.leparisien.fr/politique/on-repart-de-zero-le-depute-benjamin-lucas-retire-sa-candidature-de-la-primaire-de-gauche-07-07-2026-O4TTGZAIE5BV3BOHOSFJV4QKFA.php",
+      "reason": "Outcome leakage: the excerpt explicitly states there will be no primary, describes its death, and records a resulting candidacy withdrawal."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-10-04, inclusive. Retained only sources with explicit publication dates on or before the cutoff; quoted excerpts remain in the original French. Publication dates were verified in indexed article text or, for the January announcement, the dated official communiqué itself. Sources updated before the cutoff are identified in their relevance fields. Undated pages, later reporting, retrospective outcome material, and prediction-market or betting pages were excluded. web_fetch failed because its provider configuration was ambiguous; the requested agent-reach fallback returned RATE_LIMITED, so verification relied on web_search source text rather than successful direct page retrieval. The September 21 reporting is the latest directly relevant dated evidence retained. These items document statements of abandonment and a formal Ecologists decision, but do not independently establish three explicit official party withdrawals; candidate withdrawals and refusal to join the separate PS-led primary should not be mechanically counted toward that threshold."
+}

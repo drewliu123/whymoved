@@ -1,0 +1,62 @@
+{
+  "qid": "Q038",
+  "as_of": "2026-07-18",
+  "kept": [
+    {
+      "excerpt": "Iran launched more attacks on Washington’s Gulf allies and Jordan on Saturday after a seventh straight night of U.S. strikes on Iranian military targets, escalating the war one week after a ceasefire collapsed. Kuwait came under sustained attack, with a desalination plant hit and operations at Kuwait International Airport suspended due to repeated missile and drone threats.",
+      "published_at": "2026-07-18T14:00:16Z",
+      "publisher": "Reuters, via ThePrint",
+      "relevance": "Establishes the military escalation and regional aviation disruption observable at the evidence cutoff, without establishing a general Iranian airspace closure.",
+      "url": "https://theprint.in/world/iran-hits-gulf-states-and-jordan-after-seventh-night-of-us-strikes/2990111/"
+    },
+    {
+      "excerpt": "Iran and the United States exchanged intensified fire on Thursday in a week-long escalation that has all but torn up last month’s truce, though Iran’s release of a U.S. citizen pointed towards a path to avert the resumption of all-out war.",
+      "published_at": "2026-07-16T18:00:27Z",
+      "publisher": "Reuters, via ThePrint",
+      "relevance": "Provides contemporaneous evidence of both escalation pressure and a possible diplomatic off-ramp relevant to subsequent closure risk.",
+      "url": "https://theprint.in/world/iran-and-us-step-up-attacks-though-release-of-american-may-signal-path-to-climbdown/2988576/"
+    },
+    {
+      "excerpt": "Following the agreed ceasefire agreements and the overall reduction in short-term tensions, the Integrated EU Aviation Security Risk Assessment Group decided not to extend the existing Conflict Zone Information Bulletin (CZIB) on the Middle East and Persian Gulf, which expires on July 8, 2026. This CZIB has been replaced by a dedicated Information Note on the Middle East and Persian Gulf, describing the residual medium-level risks, and separate CZIBs on Iran, Iraq and Lebanon, highlighting the remaining high risks in the affected airspace.",
+      "published_at": "2026-07-08",
+      "publisher": "European Union Aviation Safety Agency (EASA)",
+      "relevance": "Supplies an official, dated assessment that Iranian airspace retained high risks even during the regional easing preceding renewed fighting.",
+      "url": "https://www.easa.europa.eu/en/newsroom-and-events/news/revised-conflict-zone-advisories-middle-east"
+    },
+    {
+      "excerpt": "Flights are continuing nationwide without restrictions on Sunday, but Tehran’s airspace will be completely closed on Monday during the main funeral procession. Under the schedule announced by the Civil Aviation Organization, regular flights at Tehran's Mehrabad International Airport and Imam Khomeini International Airport will be suspended on Monday as public ceremonies take place in the capital. Flights across the rest of the country will continue without restrictions on July 7-8, except for Mashhad on the final day of ceremonies.",
+      "published_at": "2026-07-05",
+      "publisher": "Anadolu Agency",
+      "relevance": "Identifies geographically limited July restrictions that should not be confused with a closure generally applicable across Iran or the entire Tehran FIR.",
+      "url": "https://www.aa.com.tr/en/middle-east/tehran-airspace-to-remain-closed-on-monday-for-khamenei-s-funeral-procession/3986847"
+    },
+    {
+      "excerpt": "The Civil Aviation Organization announced that part of the country’s airspace has been reopened as of 7:00 am on Saturday, April 18. Air routes in the eastern section of Iran’s airspace are now open for international flights transiting through Iranian skies, the statement said. The Civil Aviation Organization also stated that flight operations at the country’s airports will be gradually resumed, based on the technical and operational readiness of military and civilian sectors.",
+      "published_at": "2026-04-18T07:26:35Z",
+      "publisher": "Tasnim News Agency, reporting Iran’s Civil Aviation Organization statement",
+      "relevance": "Documents the reopening of an international transit corridor after the earlier wartime closure and provides context for distinguishing partial restrictions from general closure.",
+      "url": "https://www.tasnimnews.ir/en/news/2026/04/18/3568334/iran-partially-reopens-airspace-after-safety-assessment"
+    },
+    {
+      "excerpt": "Based on a NOTAM (Notice to Airmen) that has been issued, the entire airspace of Iran has been closed for six hours, Majid Akhavan, spokesperson for Iran's Civil Aviation Organization, told Mehr News Agency.",
+      "published_at": "2026-02-28T07:01:58Z",
+      "publisher": "Iran International",
+      "relevance": "Verifies the explicitly cited historical precedent of an Iran-wide closure and shows that a short closure can meet the geographical scope criterion.",
+      "url": "https://www.iranintl.com/en/202602289115"
+    },
+    {
+      "excerpt": "Iran closed its airspace to all flights except international ones to and from Iran with official permission at 5:15 p.m. ET (10:15 GMT) on Wednesday, according to a notice on the U.S. Federal Aviation Administration website. The notice was removed shortly before 10 p.m. ET, according to tracking service Flightradar24.",
+      "published_at": "2026-01-15",
+      "publisher": "Reuters, via L’Orient Today",
+      "relevance": "Verifies the historical general closure with limited permission-based exceptions that the resolution rules expressly recognize as qualifying.",
+      "url": "https://today.lorientlejour.com/article/1491547/iran-reopens-airspace-after-temporary-closure-forced-flights-to-reroute.html"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://sa.marketscreener.com/news/eu-aviation-body-reinstates-middle-east-flights-warning-as-fighting-resumes-ce7f5eddd988fe2d",
+      "reason": "Excerpt explicitly mentions an advisory extending until the end of August, after the 2026-07-18 cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-18. Used web_search for discovery and agent-reach web read to verify article bodies and publication dates after web_fetch failed because of a provider-configuration error. Included only dated article content published by the cutoff; excluded later developments, dynamically populated related-news sections, prediction-market pages, odds, and market prices. Excluded current EASA bulletin revisions dated after the cutoff, using the dated July 8 announcement and July 14 Reuters report instead. Historical January and February closures are context, not claims about resolution within the market window: the market creation date was not supplied. The collected sources do not establish a definitive Tehran FIR-wide operational status on July 18 or supply a complete contemporaneous Iranian NOTAM history; absence of a qualifying closure in this pack must not be interpreted as proof that none occurred."
+}

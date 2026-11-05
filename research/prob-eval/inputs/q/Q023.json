@@ -1,0 +1,50 @@
+{
+ "qid": "Q023",
+ "question": "No change in Reserve Bank of Australia's interest rates at the August 2026 meeting?",
+ "rules": "This market will resolve according to the change in basis points in the cash rate target resulting from the August 2026 meeting of the Reserve Bank of Australia (RBA) Monetary Policy Board, relative to the level it was prior to this meeting. \n\nThe resolution source will be official information from the Reserve Bank of Australia, including the statement or release from its August 2026 meeting, scheduled for August 10-11, 2026, as listed on the official RBA calendar (https://www.rba.gov.au/monetary-policy/rba-board-meetings/). This market may resolve as soon as the statement or release of the Reserve Bank of Australia Monetary Policy Board resulting from its August 2026 meeting with relevant data is issued.\n\nIf the specified rate is defined by an upper and lower bound, the relevant change will be the change to the upper bound.\n\nIf the specified rate is changed to a level not expressed in the displayed options, the change will be rounded according to the following guidelines. Increases or decreases of less than 25 bps will be rounded to 25 bps (e.g. an increase or decrease of 10 bps would be considered to be an increase or decrease of 25 bps). Increases or decreases of greater than 25",
+ "as_of": "2026-07-28",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reserve Bank of Australia",
+   "published_at": "2026-07-28",
+   "excerpt": "The full effects of increases in the cash rate from earlier in the year will take time to materialise. This does mean that some further easing in the growth of demand is likely to be required if we’re to bring inflation back down sustainably to target. A key question in the period ahead is whether the tightening in monetary policy earlier in the year is sufficient to achieve this. The Board is prepared to act as required to achieve its mandate, including by increasing the cash rate further if needed."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters (via Investing.com)",
+   "published_at": "2026-07-28",
+   "excerpt": "In a speech in Sydney, Reserve Bank of Australia Governor Michele Bullock said a key uncertainty was whether the three rate hikes already delivered this year were enough to return inflation to its 2%-3% target band. She said the economy was slowing as expected but the housing market has weakened more than forecast, and the central bank was watching how changes in house prices affect household spending and investment decisions."
+  },
+  {
+   "id": "E3",
+   "publisher": "Australian Bureau of Statistics",
+   "published_at": "2026-07-23",
+   "excerpt": "In June 2026, employment increased by 76,300 people (0.5%) to 14,823,300 people in seasonally adjusted terms. Full-time employment increased by 29,300 to 10,173,500 people, and part-time employment increased by 47,000 to 4,649,800 people."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reserve Bank of Australia",
+   "published_at": "2026-06-30",
+   "excerpt": "Members agreed that financial conditions were now probably somewhat restrictive. Taking these considerations together, members judged that there was merit in using the space provided by the Board’s earlier decisions to raise the cash rate target to assess how the economy was adjusting and the impact of disruptions to oil supply."
+  },
+  {
+   "id": "E5",
+   "publisher": "Australian Bureau of Statistics",
+   "published_at": "2026-06-24",
+   "excerpt": "The Consumer Price Index (CPI) rose 4.0 per cent in the 12 months to May 2026, according to the latest data from the Australian Bureau of Statistics (ABS). ‘Trimmed mean annual inflation was 3.6 per cent in the 12 months to May 2026, up from 3.4 per cent in the 12 months to April 2026,’ Ms McCririck said."
+  },
+  {
+   "id": "E6",
+   "publisher": "Reserve Bank of Australia",
+   "published_at": "2026-06-16",
+   "excerpt": "At its meeting today, the Board decided to leave the cash rate target unchanged at 4.35 per cent. Following the three increases in the cash rate target since the beginning of the year, financial conditions are now tighter than they were, and there are signs that the economy is slowing as expected. But inflation is still too high and the Board judged that it was appropriate to leave the cash rate target unchanged while it assesses the response to previous interest rate rises and the impact of the oil supply disruption. Today’s policy decision was unanimous."
+  },
+  {
+   "id": "E7",
+   "publisher": "Reserve Bank of Australia",
+   "published_at": "2026-05-05",
+   "excerpt": "At its meeting today, the Board decided to increase the cash rate target by 25 basis points to 4.35 per cent. Today’s policy decision was made by majority: eight members voted to increase the cash rate target by 25 basis points to 4.35 per cent; one member voted to leave the cash rate target unchanged at 4.10 per cent."
+  }
+ ]
+}

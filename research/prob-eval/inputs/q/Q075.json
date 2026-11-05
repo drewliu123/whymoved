@@ -1,0 +1,44 @@
+{
+ "qid": "Q075",
+ "question": "Will S&P 500 (SPY) hit (HIGH) $760 in July?",
+ "rules": "This market will resolve to \"Yes\" if, at any point during July 2026, any 1-minute candle for S&P 500 (SPY) has a final \"High\" price equal to or above the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during the regular trading hours of the primary exchange on which the listed security trades (typically 9:30 AM – 4:00 PM ET) will be considered. Prices occurring during pre-market or after-hours trading will not qualify.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Pyth.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Pyth after any adjustments have been applied.\n\nThe resolution source for this market is Pyth — specifically, the S&P 500 (SPY) \"High\" prices available at https://pythdata.app/explore/Equity.US.SPY%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by ap",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-17T15:32:00-04:00",
+   "excerpt": "Wall Street extended its decline on Friday as a pullback on stocks associated with the AI boom morphed into a larger risk-off sentiment. Semiconductor stocks initially led the selloff, which broadened as the session progressed. All three indexes were on course to post weekly losses."
+  },
+  {
+   "id": "E2",
+   "publisher": "FactSet — John Butters",
+   "published_at": "2026-07-17",
+   "excerpt": "Overall, 10% of the companies in the S&P 500 have reported actual results for Q2 2026 to date. Of these companies, 88% have reported actual EPS above estimates, which is above the 5-year average of 78% and above the 10-year average of 76%. The blended earnings growth rate for the second quarter is 24.7%, compared with 22.5% last week and 23.2% at the end of the second quarter. During the upcoming week, 86 S&P 500 companies, including four Dow 30 components, are scheduled to report second-quarter results."
+  },
+  {
+   "id": "E3",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-07-14T08:30:00-04:00",
+   "excerpt": "The Consumer Price Index for All Urban Consumers decreased 0.4 percent on a seasonally adjusted basis in June after rising 0.5 percent in May. This decline in the all items index was the largest 1-month decrease since April 2020 when it fell 0.8 percent. Over the last 12 months, the all items index increased 3.5 percent before seasonal adjustment."
+  },
+  {
+   "id": "E4",
+   "publisher": "Federal Reserve Bank of Minneapolis — Federal Reserve Beige Book national summary",
+   "published_at": "2026-07-15",
+   "excerpt": "This report was prepared at the Federal Reserve Bank of Chicago based on information collected on or before July 6, 2026. Economic activity increased at a slight to moderate pace in eleven of twelve Federal Reserve Districts in late May and June, while one District reported no change. Consumer spending edged up as higher prices, particularly for fuel, dampened sales in other categories. Several Districts noted declines in spending on discretionary items or trading down to more affordable varieties."
+  },
+  {
+   "id": "E5",
+   "publisher": "Bloomberg News — Enda Curran",
+   "published_at": "2026-07-08T18:11:00Z",
+   "excerpt": "A few Federal Reserve officials in their most recent policy meeting said there was a case for raising interest rates, though they ultimately supported the decision to leave rates on hold. Minutes of the Federal Open Market Committee’s June 16–17 meeting released Wednesday reflected growing concern among policymakers over inflation just as worries over the labor market slightly receded."
+  },
+  {
+   "id": "E6",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-17T12:59:00Z",
+   "excerpt": "U.S. equity funds recorded outflows in the week through July 15, as a selloff in chip stocks and rising U.S.-Iran tensions outweighed strong corporate earnings and cooler inflation readings. U.S. money market funds, meanwhile, saw $68.03 billion in outflows, the largest weekly withdrawal since April 15."
+  }
+ ]
+}

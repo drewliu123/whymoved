@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "provider": "edgartools",
+  "adapter_version": 1,
+  "operation": "filings",
+  "params": {
+    "operation": "filings",
+    "as_of": null,
+    "identifier": "NVDA",
+    "form": "10-Q",
+    "limit": 2,
+    "scan_limit": 3
+  },
+  "retrieved_at": "2026-11-02T09:30:53.089362Z",
+  "status": "ok",
+  "data": {
+    "company": "NVIDIA CORP",
+    "cik": "1045810",
+    "filings": [
+      {
+        "company": "NVIDIA CORP",
+        "cik": "1045810",
+        "accession_number": "0001045810-26-000075",
+        "form": "10-Q",
+        "filing_date": "2026-08-26",
+        "period_of_report": "2026-07-26",
+        "acceptance_datetime": "2026-08-26T20:36:00Z",
+        "acceptance_raw_eastern": "2026-08-26 16:36:00",
+        "acceptance_basis": "filing SGML header; America/New_York converted to UTC",
+        "acceptance_header_line": "ACCEPTANCE-DATETIME:            2026-08-26 16:36:00",
+        "acceptance_header_line_is_normalized": true,
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/0001045810-26-000075-index.html",
+        "sec_submission_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/0001045810-26-000075.txt",
+        "primary_document": "nvda-20260726.htm",
+        "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "amendment": false,
+        "origin_id": "sec:0001045810-26-000075",
+        "primary_content_sha256": "0a699e858f01840c18ffa7d807d0498b748dd0ed732b933420965e0ff9e7ed23",
+        "primary_content_hash_basis": "EdgarTools primary attachment decoded content, re-encoded UTF-8"
+      },
+      {
+        "company": "NVIDIA CORP",
+        "cik": "1045810",
+        "accession_number": "0001045810-26-000052",
+        "form": "10-Q",
+        "filing_date": "2026-05-20",
+        "period_of_report": "2026-04-26",
+        "acceptance_datetime": "2026-05-20T20:35:52Z",
+        "acceptance_raw_eastern": "2026-05-20 16:35:52",
+        "acceptance_basis": "filing SGML header; America/New_York converted to UTC",
+        "acceptance_header_line": "ACCEPTANCE-DATETIME:            2026-05-20 16:35:52",
+        "acceptance_header_line_is_normalized": true,
+        "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/0001045810-26-000052-index.html",
+        "sec_submission_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/0001045810-26-000052.txt",
+        "primary_document": "nvda-20260426.htm",
+        "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm",
+        "amendment": false,
+        "origin_id": "sec:0001045810-26-000052",
+        "primary_content_sha256": "bc1d39e6466801be562cda6063758ea84fd0e8b3cd8b7a87cb248a04193536ef",
+        "primary_content_hash_basis": "EdgarTools primary attachment decoded content, re-encoded UTF-8"
+      }
+    ],
+    "excluded_after_cutoff": [],
+    "unknown_acceptance": []
+  },
+  "provenance": {
+    "sec_submissions_url": "https://data.sec.gov/submissions/CIK0001045810.json"
+  },
+  "completeness": {
+    "truncated": true,
+    "scope": "bounded filing search; not complete SEC history",
+    "available_count": 85,
+    "scanned_count": 2,
+    "returned_count": 2,
+    "scan_limit": 3
+  },
+  "notes": [
+    "Retrieval package, not sources/claims or independent corroboration.",
+    "Report period is not public availability; retain exact accession and original periods."
+  ],
+  "library_version": "5.62.1"
+}

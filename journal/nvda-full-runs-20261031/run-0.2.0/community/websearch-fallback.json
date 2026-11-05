@@ -1,0 +1,26 @@
+{
+  "calls": [
+    {
+      "allowed_domains": [
+        "reddit.com"
+      ],
+      "query": "NVIDIA NVDA Blackwell demand margin China export restrictions stock pullback after:2026-09-30 before:2026-11-01",
+      "outcome": "结果含大量非限定域名；仅把 Reddit URL 作为线索，缺作者/互动/原帖正文，未纳入帖子",
+      "lead_urls": [
+        "https://www.reddit.com/r/HollowPointTrading/comments/1wxsp6g/nvidia_nvda_a_108_billion_guide_with_no_china/",
+        "https://www.reddit.com/r/NvidiaStock/comments/1xf1ca9/nvda_q3_fy27_earnings_revenue_and_guidance_first/",
+        "https://www.reddit.com/r/NvidiaStock/comments/1wwtxa6/nvda_just_broke_its_channel_and_took_out_the/"
+      ]
+    },
+    {
+      "allowed_domains": [
+        "x.com"
+      ],
+      "query": "NVIDIA NVDA Blackwell demand margin China export restrictions 英伟达 回调 after:2026-09-30 before:2026-11-01",
+      "outcome": "没有 x.com URL；返回其他域名，全部不作为 X 社区证据",
+      "lead_urls": []
+    }
+  ],
+  "count": 2,
+  "capture": "检索参数与筛选记录；并非 WebSearch 工具完整原始输出"
+}

@@ -1,0 +1,53 @@
+{
+  "run_id": "R20261031T184534Z-4627125eca7e",
+  "path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/final-e2e/home/journal/runs/R20261031T184534Z-4627125eca7e",
+  "manifest": {
+    "schema_version": 2,
+    "run_id": "R20261031T184534Z-4627125eca7e",
+    "created_at": "2026-10-31T18:45:34.801044Z",
+    "as_of": "2026-10-31T18:37:29.600836Z",
+    "files": {
+      "report.json": "c5e71380869ab9077d570f2620745f241e0314a94cf8dc70990c9d9d848f620d",
+      "claims.json": "a5f274e8a6902ab300bda79362ac42338efaf8f12fad00554a39fea73772c95a",
+      "sources.json": "8b4ec036e0a15fc5a60418a39517405ae05160e1be78d5abff5af7908056f712",
+      "plan.json": "530ec61360d29386156f65c85a36cdc31508ec0f5bc54e2e128ce27ebce3e2d8",
+      "report.md": "a994143c4eaaf7681e9a959e15b1a36c46ee9b7dd4200bdacca2539d1ba01c4b",
+      "report.html": "e50b4bb45bccde692a8d4a508d2fcbfee65e1b04b1067afcc914b0a1f676a603",
+      "calculations.json": "943c468182065b3e0d87b38db06e6964e81fa166ff4fac65ee351d0ea423a864",
+      "audit.json": "a5eda65c170c985ff631cdc13b868dcb5408757d31be772e9403826caaa234f8",
+      "diff.json": "7422d7d9476f6d3970912687698ec90246bb097657f32f26afc73335d48f1d5b"
+    },
+    "audit_role": "untrusted_metadata",
+    "parent_run": "R20261031T184534Z-dc48e418bc07",
+    "parent_manifest_sha256": "9a37926ef381591ee929e1c397f070bb13ce635f0699f7ce1c4072a520d427f3"
+  },
+  "diff": {
+    "schema_version": 2,
+    "parent_run": "R20261031T184534Z-dc48e418bc07",
+    "method": "structural_ids_and_fields",
+    "judgment": {
+      "judgment_changed": false,
+      "reason": "操作回放：同一冻结证据，无新增检索或研究判断。",
+      "comparability": {
+        "status": "comparable",
+        "reason": "同一期间、单位和研究范围；仅验证更新流程。"
+      }
+    },
+    "sources": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "evidence": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "claims": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "comparability_issues": []
+  }
+}

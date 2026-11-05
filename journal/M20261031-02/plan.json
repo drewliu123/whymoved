@@ -1,0 +1,13 @@
+{
+  "type": "asset",
+  "entity": "NVIDIA (NVDA)",
+  "as_of": "2026-10-31T13:11:12Z",
+  "horizon": "next NVIDIA earnings after 2026-10-31; official date to verify",
+  "angles": [
+    {"angle":"基本面变化","question":"收入、毛利率、现金回收和客户融资依赖怎样变化？","queries":["Nvidia revenue gross margin cash flow","Nvidia customer financing commitments"],"tiers":["T0","T2"]},
+    {"angle":"催化剂日历","question":"下一次财报何时发布，哪些指标可验证论点？","queries":["Nvidia quarterly results earnings date"],"tiers":["T0","T2"]},
+    {"angle":"预期与估值","question":"分析师预期及财报期权隐含波动是多少？","queries":["Nvidia earnings revenue estimates gross margin","NVDA earnings options implied move"],"tiers":["T1","T3"]},
+    {"angle":"资金与情绪","question":"持仓与社区关注什么？","queries":["NVDA positioning AI spending","英伟达 财报 毛利率 融资"],"tiers":["T1","T4"]},
+    {"angle":"反方观点","question":"增长持续与融资脆弱分别有哪些依据？","queries":["Nvidia AI circular financing risk","Nvidia Blackwell demand margins"],"tiers":["T3","T4"]}
+  ]
+}

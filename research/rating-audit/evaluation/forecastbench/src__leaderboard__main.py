@@ -1,0 +1,3665 @@
+"""Create leaderboard."""
+
+import json
+import logging
+import os
+import re
+import sys
+import traceback
+from datetime import datetime, timedelta
+from enum import Enum
+from typing import Any, Callable, Dict, List, Optional, Tuple, Union
+
+import numpy as np
+import pandas as pd
+import pyfixest as pf
+from jinja2 import Template
+from joblib import Parallel, delayed
+from pandas._libs.tslibs.nattype import NaTType
+from scipy.stats import norm
+from termcolor import colored
+from utils.llm import model_runs
+from utils.llm.lab_registry import LABS
+
+sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+import llm_identities
+
+from helpers import (
+    constants,
+    data_utils,
+    dates,
+    decorator,
+    env,
+    resolution,
+    slack,
+)
+from llm_forecaster.forecast_variants import (
+    ALL_FORECAST_VARIANT_KEYS_WITH_CONTEXT,
+    ALL_FORECAST_VARIANT_KEYS_WITHOUT_CONTEXT,
+)
+from sources import DATASET_SOURCE_NAMES, MARKET_SOURCE_NAMES
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+
+class LeaderboardType(str, Enum):
+    """Enumeration of leaderboard types.
+
+    This enum distinguishes between the supported leaderboard variants:
+    * BASELINE: The baseline leaderboard: FB forecast files w/o freeze values.
+    * TOURNAMENT: The tournament leaderboard. All forecast files.
+    * PRELIMINARY: The preliminary leaderboard using dataset questions only.
+    """
+
+    BASELINE = "baseline"
+    TOURNAMENT = "tournament"
+    PRELIMINARY = "preliminary"
+
+
+class MarketQuestionAdjustment(str, Enum):
+    """Enumeration of market question adjustment methods."""
+
+    MARKET_BRIER = "market_brier"
+    TWO_WAY_FIXED_EFFECTS = "two_way_fixed_effects"
+
+
+LEADERBOARD_FILE_STEMS = {
+    LeaderboardType.BASELINE: "baseline_leaderboard",
+    LeaderboardType.TOURNAMENT: "tournament_leaderboard",
+}
+
+
+LEADERBOARD_UPDATED_DATE_STR = "Updated " + datetime.now().strftime("%b. %-d, %Y")
+
+BASELINE_ORG_NAIVE_MODEL = {
+    "organization": constants.BENCHMARK_NAME,
+    "model": "Naive Forecaster",
+    "model_organization": constants.BENCHMARK_NAME,
+}
+
+HUMAN_SUPERFORECASTER = {
+    "organization": constants.BENCHMARK_NAME,
+    "model": "Superforecaster median forecast",
+    "model_organization": constants.BENCHMARK_NAME,
+}
+HUMAN_PUBLIC = {
+    "organization": constants.BENCHMARK_NAME,
+    "model": "Public median forecast",
+    "model_organization": constants.BENCHMARK_NAME,
+}
+
+HUMAN_MODELS = [HUMAN_SUPERFORECASTER, HUMAN_PUBLIC]
+HUMAN_MODELS_TO_HIGHLIGHT = [m["model"] for m in HUMAN_MODELS]
+LEADERBOARD_DECIMAL_PLACES = 1
+
+IMPUTED_CUTOFF_PCT = 5
+
+MIN_NUM_DATASET_QUESTIONS = 225
+
+MODEL_RELEASE_DAYS_CUTOFF = 365
+
+BRIER_INDEX_COL_PREFIX = "brier_index"
+
+LLM_LAB_ORG_TO_LOGO = {
+    LABS["Anthropic"].name: "anthropic.svg",
+    LABS["DeepSeek"].name: "deepseek.svg",
+    LABS["Moonshot"].name: "moonshot.svg",
+    LABS["MiniMax"].name: "minimax.svg",
+    LABS["Google DeepMind"].name: "deepmind.svg",
+    LABS["Meta"].name: "meta.svg",
+    LABS["Mistral AI"].name: "mistral.svg",
+    LABS["OpenAI"].name: "openai.svg",
+    LABS["Qwen"].name: "qwen.svg",
+    LABS["xAI"].name: "xai.svg",
+    LABS["Z.ai"].name: "zai.svg",
+}
+
+LEGACY_ORG_TO_LOGO = {
+    "Moonshot": "moonshot.svg",
+    "Minimax": "minimax.svg",
+    "Mistral": "mistral.svg",
+}
+
+EXTERNAL_TOURNAMENT_ORG_TO_LOGO = {
+    "Anthral Labs": "anthral.svg",
+    "Cassi-AI": "cassi-ai.png",
+    "FractalAIResearch": "fractal-ai.png",
+    "Lightning Rod Labs": "lightningrod.jpg",
+    "LightningRodLabs": "lightningrod.jpg",
+    "Mantic": "mantic.jpg",
+    "Stochastic Radiant": "stochastic-radiant.svg",
+    "limeforecast": "limeforecast.png",
+    "Voicetree": "voicetree.png",
+    "Artificial Judgement": "artificial-judgement.png",
+    "FutureSearch": "futuresearch.svg",
+    "Torchcast AI": "torchcastai.svg",
+    "Vaticinus": "vaticinus.svg",
+    "Hunchfox": "hunchfox.svg",
+    "Knowable": "knowable.svg",
+    "Outbound OS": "outbound-os.svg",
+    "Cenva Intelligence": "cenva-intelligence.svg",
+    "Quotient": "quotient.svg",
+    "Thinking Machines Lab": "thinking-machines-lab.png",
+    "PolyLedger": "polyledger.svg",
+    "Google Cloud": "google-cloud.png",
+    "Google": "google.svg",
+    "yarrow": "yarrow.png",
+    "Agentese Labs": "agentese-labs.svg",
+    "PathFi": "pathfi.svg",
+    "Phinomial Labs": "phinomial-labs.svg",
+    "TRACES": "traces.svg",
+    "Ryso AI": "ryso-ai.svg",
+    "Yhat Labs": "yhat-labs.svg",
+    "NeuroFusion": "neurofusion.svg",
+    "Afterflow": "afterflow.svg",
+    "Valory": "valory.png",
+    "Gougu": "gougu.png",
+    "CortexAlpha": "cortexalpha.svg",
+}
+
+ORG_TO_LOGO = {
+    constants.BENCHMARK_NAME: "fri.svg",
+    **LLM_LAB_ORG_TO_LOGO,
+    **LEGACY_ORG_TO_LOGO,
+    **EXTERNAL_TOURNAMENT_ORG_TO_LOGO,
+}
+
+_ANON_TEAM_RE = re.compile(r"^anonymous\s+(\d+)$", re.IGNORECASE)
+_ANON_LOGO_DESTINATION = "anonymous_logos"
+_ANON_LOGO_TEMPLATE = """<svg
+  height="1em"
+  width="1em"
+  style="flex:none;line-height:1"
+  viewBox="16 8 36 44"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>Anonymous Ghost {num}</title>
+
+  <!-- Arcade-style blue ghost -->
+  <path
+    d="
+      M20 48
+      V26
+      C20 17 25.5 12 32 12
+      C38.5 12 44 17 44 26
+      V48
+      L40 46
+      L36 48
+      L32 46
+      L28 48
+      L24 46
+      L20 48
+      Z
+    "
+    fill="#1E3A8A"
+  />
+
+  <!-- Big white eyes -->
+  <circle cx="28" cy="26" r="2.4" fill="#FFFFFF" />
+  <circle cx="36" cy="26" r="2.4" fill="#FFFFFF" />
+
+  <!-- Number badge (change this character for 1, 2, 3, ...) -->
+  <text
+    x="59" y="50"
+    text-anchor="end"
+    dominant-baseline="alphabetic"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="24"
+    fill="#000000"
+  >
+    {num}
+  </text>
+</svg>
+"""
+
+
+def get_org_logo(org: str) -> str:
+    """Return the logo filename for a leaderboard organization or team."""
+    logo = ORG_TO_LOGO.get(org)
+    if logo is not None:
+        return logo
+
+    match = _ANON_TEAM_RE.match(org.strip())
+    if match:
+        num = int(match.group(1))
+        if num >= 1:
+            return f"anonymous_{num}.svg"
+
+    return "default.svg"
+
+
+SIM_BOOTSTRAP_COL_PREFIX = "bootstrap"
+
+N_REPLICATES = 1999 if not env.RUNNING_LOCALLY else 5
+
+ALWAYS_05_MODEL = {
+    "organization": "ForecastBench",
+    "model": "Always 0.5",
+}
+
+ENSEMBLE_COMPARISON_MODELS = (
+    "LLM Crowd (gpt-4o, claude-3.5-sonnet, gemini-1.5-pro) geometric mean log odds with news",
+    "LLM Crowd (gpt-4o, claude-3.5-sonnet, gemini-1.5-pro) geometric mean with news",
+    "LLM Crowd (gpt-4o, claude-3.5-sonnet, gemini-1.5-pro) median with news",
+)
+
+FORECASTBENCH_COMPARISON_MODEL_NAMES = {
+    "Always 0",
+    "Always 1",
+    "Always 0.5",
+    "Random Uniform",
+    "Imputed Forecaster",
+    *ENSEMBLE_COMPARISON_MODELS,
+    BASELINE_ORG_NAIVE_MODEL["model"],
+    HUMAN_PUBLIC["model"],
+    HUMAN_SUPERFORECASTER["model"],
+}
+
+LAST_UPDATED_DATE = dates.get_date_today_as_iso()
+
+TOOLTIP_COLUMN_DESCRIPTIONS = {
+    "Organization": "The team that submitted forecasts.",
+    "Model Organization": "The organization that developed the model.",
+    "Model": "The name of the model that was used to generate the forecasts.",
+    "Dataset": (
+        "Brier Index (%) on dataset questions. "
+        "Scale: 100 = perfect, 50 = always predicting 50%, 0 = maximally wrong. "
+        "Higher scores are better."
+    ),
+    "Dataset 95% CI": "Bootstrapped 95% confidence interval for the Dataset Brier Index (%).",
+    "Market": (
+        "Brier Index (%) on market questions. "
+        "Scale: 100 = perfect, 50 = always predicting 50%, 0 = maximally wrong. "
+        "Higher scores are better."
+    ),
+    "Market 95% CI": "Bootstrapped 95% confidence interval for the Market Brier Index (%).",
+    "Overall": (
+        "Brier Index (%) across all questions. "
+        "Scale: 100 = perfect, 50 = always predicting 50%, 0 = maximally wrong. "
+        "Higher scores are better."
+    ),
+    "Overall 95% CI": "Bootstrapped 95% confidence interval for the Overall Brier Index (%).",
+    "Supers > Forecaster?": (
+        "One-sided p-value comparing each forecaster to the superforecaster median based on "
+        f"{N_REPLICATES:,} simulations, with<br>"
+        "H₀: This forecaster performs at least as well as the superforecaster median.<br>"
+        "H₁: The superforecaster median outperforms this forecaster."
+    ),
+    "Forecaster > Public?": (
+        "One-sided p-value comparing each forecaster to the public median based on "
+        f"{N_REPLICATES:,} simulations, with<br>"
+        "H₀: The public median performs at least as well as this forecaster.<br>"
+        "H₁: This forecaster outperforms the public median."
+    ),
+    "Pct times № 1": (
+        f"Percentage of {N_REPLICATES:,} simulations in which this model was the best performer."
+    ),
+    "Pct times top 5%": (
+        f"Percentage of {N_REPLICATES:,} simulations in which this model ranked in the top 5%."
+    ),
+    "Peer": (
+        "Peer score relative to the average Brier score on each question. Higher scores are better."
+    ),
+    "BSS": (
+        "Brier Skill Score using the ForecastBench Naive Forecaster. Higher scores are better."
+    ),
+}
+
+
+def collect_anonymous_numbers(
+    team_names: List[str],
+) -> List[int]:
+    """Collect sorted anonymous team numbers from team names.
+
+    Args:
+        team_names (List[str]): Team names to scan for anonymous entries.
+
+    Returns:
+        List[int]: Sorted anonymous team numbers (>= 1).
+    """
+    numbers = set()
+    for name in team_names:
+        if not isinstance(name, str):
+            continue
+        match = _ANON_TEAM_RE.match(name.strip())
+        if not match:
+            continue
+        num = int(match.group(1))
+        if num >= 1:
+            numbers.add(num)
+    return sorted(numbers)
+
+
+def write_anonymous_logos(
+    team_names: List[str],
+) -> List[str]:
+    """Write anonymous logo SVGs to the public release bucket.
+
+    Args:
+        team_names (List[str]): Team names to scan for anonymous entries.
+
+    Returns:
+        List[str]: Filenames written.
+    """
+    filenames: List[str] = []
+    for num in collect_anonymous_numbers(team_names):
+        filename = f"anonymous_{num}.svg"
+        data_utils.write_file_to_bucket(
+            bucket=env.PUBLIC_RELEASE_BUCKET,
+            basename=filename,
+            destination_folder=_ANON_LOGO_DESTINATION,
+            data=_ANON_LOGO_TEMPLATE.format(num=num),
+        )
+        filenames.append(filename)
+    return filenames
+
+
+def download_question_set_save_in_cache(
+    forecast_due_date: str,
+    cache: Dict[str, Dict[str, Any]],
+) -> None:
+    """Time-saving function to only download files once per run.
+
+    This function checks the cache for the specified forecast_due_date and, for each question set
+    type ('human' and 'llm'), downloads and stores the question set file if it has not already been
+    loaded.
+
+    Args:
+        forecast_due_date (str): Identifier for the forecast due date (e.g., "2024-07-21"), used to
+            construct question set filenames like "{forecast_due_date}-human.json" and
+            "{forecast_due_date}-llm.json".
+        cache (Dict[str, Dict[str, Any]]): Nested cache structure where the first-level
+            keys are forecast_due_date strings and the second-level keys are source types
+            ('human' or 'llm'), mapping to the loaded question set data.
+
+    Returns:
+        None: The cache is modified in-place to include any newly downloaded question sets.
+    """
+    if forecast_due_date not in cache:
+        cache[forecast_due_date] = {}
+
+    for human_or_llm in ["human", "llm"]:
+        if human_or_llm not in cache[forecast_due_date]:
+            cache[forecast_due_date][human_or_llm] = resolution.download_and_read_question_set_file(
+                filename=f"{forecast_due_date}-{human_or_llm}.json"
+            )
+
+
+def get_dataset_mask(df: pd.DataFrame) -> pd.Series:
+    """Generate boolean masks for dataset questions.
+
+    Args:
+        df (pd.DataFrame): The forecast set.
+
+    Returns:
+        pd.Series: questions from DATASET_SOURCE_NAMES
+    """
+    return df["source"].isin(DATASET_SOURCE_NAMES)
+
+
+def get_market_mask(df: pd.DataFrame) -> pd.Series:
+    """Generate boolean masks for market questions.
+
+    Args:
+        df (pd.DataFrame): The forecast set.
+
+    Returns:
+        pd.Series: all questions from MARKET_SOURCE_NAMES.
+    """
+    return df["source"].isin(MARKET_SOURCE_NAMES)
+
+
+def get_masks(df: pd.DataFrame) -> Dict[str, pd.Series]:
+    """Generate boolean masks for dataset and market filters, including resolution status.
+
+    Args:
+        df (pd.DataFrame): The forecast set.
+
+    Returns:
+        Dict[str, pd.Series]: Mapping of mask names to boolean Series:
+            - "dataset":      questions from DATASET_SOURCE_NAMES that are resolved.
+            - "market":       all questions from MARKET_SOURCE_NAMES.
+            - "market_resolved":   market questions that are resolved.
+            - "market_unresolved": market questions that are unresolved.
+    """
+    data_mask = get_dataset_mask(df=df)
+    market_mask = get_market_mask(df=df)
+    resolved_mask = df["resolved"].astype(bool)
+    return {
+        "dataset": data_mask & resolved_mask,
+        "market": market_mask,
+        "market_resolved": market_mask & resolved_mask,
+        "market_unresolved": market_mask & ~resolved_mask,
+    }
+
+
+def set_model_pk(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Set the model primary key.
+
+    Args:
+        df (pd.DataFrame): Forecast set.
+
+    Returns:
+        df (pd.DataFrame): Forecast set with `model_pk` field.
+    """
+    df["model_pk"] = df["organization"] + "_" + df["model_organization"] + "_" + df["model"]
+    if not df["forecastbench_llm"].any():
+        return df
+
+    for identity_col in ("model_run_key", "forecast_variant_key"):
+        if df[identity_col].isna().any():
+            raise ValueError(f"Missing {identity_col} for ForecastBench LLM models.")
+
+    df["model_pk"] = (
+        df["organization"]
+        + "_"
+        + df["model_organization"]
+        + "_"
+        + df["model_run_key"]
+        + "_"
+        + df["forecast_variant_key"]
+    )
+    return df
+
+
+def filter_forecast_files_by_forecast_due_date(
+    forecast_files: List[str],
+    valid_dates: List[str],
+    min_days: int,
+) -> Tuple[List[str], List[str]]:
+    """Filter forecast files to include only those from sufficiently old date folders.
+
+    Args:
+        forecast_files (List[str]): List of forecast file paths on GCP bucket, where each path
+                                    begins with a date folder in the format YYYY-MM-DD.
+        valid_dates (List[str]): List of valid dates (YYYY-MM-DD) associated with the forecast
+                                 files.
+        min_days (int): Minimum number of days before today a question set must be to be included.
+
+    Returns:
+        tuple(List[str], List[str]): A tuple containing:
+            - forecast_files (List[str]): Filtered forecast files, keeping only those in date
+                                          folders older than the cutoff date.
+            - valid_dates (List[str]): The input valid_dates, passed through unchanged.
+    """
+    if min_days == 0:
+        return forecast_files, valid_dates
+
+    cutoff = dates.get_date_today() - timedelta(days=min_days)
+    valid_dates = sorted(
+        [d for d in valid_dates if datetime.strptime(d, "%Y-%m-%d").date() <= cutoff]
+    )
+    forecast_files = [f for f in forecast_files if f.split("/")[0] in valid_dates]
+    return forecast_files, valid_dates
+
+
+def filter_forecast_files_by_min_resolved_questions(
+    forecast_files: List[str],
+    valid_dates: List[str],
+    local_forecast_set_dir: str,
+    min_counts: Dict[str, int],
+) -> Tuple[List[str], List[str]]:
+    """Filter forecast files to exclude dates with too few resolved questions.
+
+    For each forecast due date, reads the Naive Forecaster file and counts resolved questions
+    for each mask_key. Dates that fail any threshold are excluded.
+
+    Args:
+        forecast_files (List[str]): List of forecast file paths on GCP bucket, where each path
+                                    begins with a date folder in the format YYYY-MM-DD.
+        valid_dates (List[str]): List of valid dates (YYYY-MM-DD) associated with the forecast
+                                 files.
+        local_forecast_set_dir (str): Local directory containing the processed forecast files.
+        min_counts (Dict[str, int]): Mapping of mask key (e.g. "market_resolved", "dataset") to
+                                     minimum number of resolved questions required. Zero or falsy
+                                     values are ignored.
+
+    Returns:
+        tuple(List[str], List[str]): A tuple containing:
+            - forecast_files (List[str]): Filtered forecast files, keeping only those in date
+                                          folders with enough resolved questions.
+            - valid_dates (List[str]): Filtered valid dates.
+    """
+    min_counts = {k: v for k, v in min_counts.items() if v}
+    if not min_counts:
+        return forecast_files, valid_dates
+
+    dates_to_keep = []
+    for forecast_due_date in valid_dates:
+        naive_filename = data_utils.get_forecast_filename(
+            forecast_due_date, BASELINE_ORG_NAIVE_MODEL["model"]
+        )
+        data = resolution.read_forecast_file(
+            filename=f"{local_forecast_set_dir}/{forecast_due_date}/{naive_filename}"
+        )
+        if data is None:
+            logger.warning(
+                f"Could not read Naive Forecaster file for {forecast_due_date}. Excluding date."
+            )
+            continue
+
+        df = resolution.make_columns_hashable(data["df"])
+        masks = get_masks(df)
+
+        keep = True
+        for mask_key, min_count in min_counts.items():
+            n_resolved = masks[mask_key].sum()
+            if n_resolved < min_count:
+                logger.info(
+                    f"Excluding forecast due date {forecast_due_date}: "
+                    f"{n_resolved} resolved {mask_key} questions "
+                    f"(minimum required: {min_count})."
+                )
+                keep = False
+                break
+        if keep:
+            dates_to_keep.append(forecast_due_date)
+
+    forecast_files = [f for f in forecast_files if f.split("/")[0] in dates_to_keep]
+    return forecast_files, dates_to_keep
+
+
+def get_df_info(
+    df: pd.DataFrame,
+    org_and_model: Dict[str, str],
+    forecast_due_date: str,
+) -> Optional[pd.DataFrame]:
+    """Preprocess a forecast set DataFrame for a given model and due date.
+
+    Args:
+        df (pd.DataFrame): Forecast set.
+        org_and_model (Dict[str, str]): Normalized organization/model identity associated with the
+            forecast set.
+        forecast_due_date (str): Forecast due date in 'YYYY-MM-DD' format.
+
+    Returns:
+        Optional[pd.DataFrame]: The processed DataFrame or None if the imputed percentage exceeds
+            the defined cutoff.
+    """
+
+    def over_imputed_cutoff(d: pd.DataFrame) -> bool:
+        return d["imputed"].mean() * 100 > IMPUTED_CUTOFF_PCT
+
+    df = resolution.make_columns_hashable(df)
+
+    # Remove combination questions
+    df = df[~df["id"].apply(resolution.is_combo)]
+
+    # Do not run test for the dummy models ForecastBench produces:
+    #   e.g. Imputed Forecaster, Naive Forecaster, ...
+    run_imputed_test_for_model = not (
+        org_and_model.get("organization") == constants.BENCHMARK_NAME
+        and org_and_model.get("model_organization") == constants.BENCHMARK_NAME
+    )
+
+    # Ignore if too many imputed forecasts overall
+    if run_imputed_test_for_model and over_imputed_cutoff(d=df):
+        return None
+
+    # Drop market unresolved questions
+    masks = get_masks(df)
+
+    # Ignore if too many imputed forecasts for questions we will _eventually_ score
+    if run_imputed_test_for_model:
+        for mask in ["market", "dataset"]:
+            if over_imputed_cutoff(d=df[masks[mask]]):
+                return None
+
+    df = df[masks["dataset"] | masks["market_resolved"]]
+
+    # Set formats of columns and add columns useful for processing
+    df["resolution_date"] = pd.to_datetime(df["resolution_date"]).dt.date
+    df["forecast_due_date"] = pd.to_datetime(forecast_due_date).date()
+    df["horizon"] = (df["resolution_date"] - df["forecast_due_date"]).apply(
+        lambda delta: delta.days
+    )
+
+    # Set primary key
+    df["question_pk"] = ""
+    masks = get_masks(df)
+    df.loc[masks["dataset"], "question_pk"] = (
+        df["forecast_due_date"].astype(str)
+        + "_"
+        + df["source"].astype(str)
+        + "_"
+        + df["id"].astype(str)
+        + "_"
+        + df["horizon"].astype(str)
+    )
+
+    df.loc[masks["market_resolved"], "question_pk"] = (
+        df["forecast_due_date"].astype(str)
+        + "_"
+        + df["source"].astype(str)
+        + "_"
+        + df["id"].astype(str)
+    )
+    if not df[df["question_pk"] == ""].empty:
+        raise ValueError(f"Error assigning `question_pk` {org_and_model}.")
+
+    # Set team info. ForecastBench LLM identities were already normalized in
+    # `llm_identities.normalize_llm_identity`
+    for col, value in org_and_model.items():
+        df[col] = value
+
+    # Set info about the model
+    df["external_submission"] = df["organization"] != constants.BENCHMARK_NAME
+    df["forecastbench_llm"] = (df["organization"] == constants.BENCHMARK_NAME) & (
+        df["model_organization"] != constants.BENCHMARK_NAME
+    )
+    df["forecastbench_comparison_model"] = df["model"].isin(FORECASTBENCH_COMPARISON_MODEL_NAMES)
+    unclassified_forecastbench_model = (
+        ~df["external_submission"]
+        & ~df["forecastbench_llm"]
+        & ~df["forecastbench_comparison_model"]
+    )
+    if unclassified_forecastbench_model.any():
+        unclassified_models = "\n".join(
+            sorted(df.loc[unclassified_forecastbench_model, "model"].unique())
+        )
+        message = (
+            f"{constants.BENCHMARK_NAME} model is not classified as an external submission, "
+            "ForecastBench LLM, or comparison model:\n"
+            f"{unclassified_models}"
+        )
+        slack.send_message(message)
+        raise ValueError(message)
+    uses_tools = df.get("uses_tools", pd.Series(False, index=df.index))
+    forecast_variant_key = df.get("forecast_variant_key", pd.Series(pd.NA, index=df.index))
+    baseline_forecast_variant = forecast_variant_key.isin(ALL_FORECAST_VARIANT_KEYS_WITHOUT_CONTEXT)
+    tournament_forecast_variant = forecast_variant_key.isin(ALL_FORECAST_VARIANT_KEYS_WITH_CONTEXT)
+    df["baseline_model"] = df["forecastbench_comparison_model"] | (
+        df["forecastbench_llm"] & baseline_forecast_variant & ~uses_tools
+    )
+    df["tournament_model"] = (
+        df["external_submission"]
+        | df["forecastbench_comparison_model"]
+        | (df["forecastbench_llm"] & (tournament_forecast_variant | uses_tools))
+    )
+    df = set_model_pk(df)
+
+    return df.sort_values(by=["forecast_due_date", "source", "id"], ignore_index=True)
+
+
+def process_forecast_file(
+    leaderboard_entries: List[pd.DataFrame],
+    org_and_model: Dict[str, str],
+    df: pd.DataFrame,
+    forecast_due_date: str,
+) -> None:
+    """Append each model's processed forecast set to the leaderboard_entries list.
+
+    Args:
+        leaderboard_entries (List[pd.DataFrame]): List collecting processed forecast set DataFrames.
+        org_and_model (Dict[str, str]): The organization and model associated with the forecast set.
+        df (pd.DataFrame): Forecast set.
+        forecast_due_date (str): Forecast due date in 'YYYY-MM-DD' format.
+
+    Returns:
+        None: Modifies `leaderboard_entries` in place. Logs a warning if processing is skipped.
+    """
+    processed = get_df_info(
+        df=df,
+        org_and_model=org_and_model,
+        forecast_due_date=forecast_due_date,
+    )
+    if processed is None:
+        logger.warning(
+            colored(
+                f"Ignoring {org_and_model['organization']} {org_and_model['model']}—"
+                "imputed cutoff exceeded.",
+                "yellow",
+            )
+        )
+        return
+
+    leaderboard_entries.append(processed)
+
+
+def write_llm_super_parity_dates(parity_dates: dict, leaderboard_type: LeaderboardType) -> None:
+    """Write LLM-Super parity dates for SOTA graph.
+
+    Args:
+        parity_dates (dict[str, dict[object, dict[str, str]]]): Nested mapping of
+            question types to leaderboard identifiers to summary strings
+            (e.g., {'lower': 'Aug 2025', 'median': 'Nov 2025', 'upper': 'Apr 2026'}).
+        leaderboard_type (LeaderboardType): The leaderboard these parity dates belong to.
+
+    Returns:
+        None
+    """
+    leaderboard_file_stem = LEADERBOARD_FILE_STEMS[leaderboard_type]
+    directory = data_utils.get_mounted_bucket(bucket=env.PUBLIC_RELEASE_BUCKET)
+    local_filename = f"{directory}/simulated_llm_parity/parity_dates.{leaderboard_file_stem}.json"
+    os.makedirs(os.path.dirname(local_filename), exist_ok=True)
+    with open(local_filename, "w", encoding="utf-8") as f:
+        json.dump(parity_dates, f, default=str, ensure_ascii=False, indent=2, sort_keys=True)
+
+
+def write_question_fixed_effects(
+    question_fixed_effects: Dict[str, pd.DataFrame],
+    leaderboard_type: LeaderboardType,
+) -> None:
+    """Write and upload question fixed effects.
+
+    Args:
+        question_fixed_effects (Dict[str, pd.DataFrame]): A mapping from label
+            (e.g., "dataset", "market") to a DataFrame containing question-level
+            fixed effects.
+        leaderboard_type (LeaderboardType): The leaderboard these fixed effects belong to.
+
+    Returns:
+        None: Concatenated DataFrame is created (and can be written or processed
+        further inside the function).
+    """
+    logger.info(colored("Writing question fixed effects.", "yellow"))
+
+    dfs = []
+    for question_type, df_qfe in question_fixed_effects.items():
+        df_qfe = df_qfe.copy()
+        if question_type not in {"dataset", "market"}:
+            raise ValueError(
+                f"Unexpected question type for question fixed effects: {question_type}"
+            )
+        df_qfe["leaderboard_type"] = leaderboard_type.value
+        dfs.append(df_qfe)
+
+    df = pd.concat(dfs, ignore_index=True)
+    df.loc[get_market_mask(df), "horizon"] = None
+    df["forecast_due_date"] = df["forecast_due_date"].astype(str)
+    df = df[
+        [
+            "forecast_due_date",
+            "source",
+            "id",
+            "horizon",
+            "leaderboard_type",
+            "question_fixed_effect",
+        ]
+    ]
+
+    directory = data_utils.get_mounted_bucket(bucket=env.PUBLIC_RELEASE_BUCKET)
+    leaderboard_file_stem = LEADERBOARD_FILE_STEMS[leaderboard_type]
+    # One file per leaderboard, overwritten nightly. The history lives in the dataset repo,
+    # where `push_datasets_to_git` sends this file every night.
+    local_filename = (
+        f"{directory}/question-fixed-effects/question_fixed_effects.{leaderboard_file_stem}.json"
+    )
+    os.makedirs(os.path.dirname(local_filename), exist_ok=True)
+    df.to_json(local_filename, orient="records")
+
+
+def write_leaderboard_html_file(
+    df: pd.DataFrame,
+    sorting_column_number: int,
+    leaderboard_type: LeaderboardType,
+) -> None:
+    """Generate HTML and CSV leaderboard files and upload to Bucket.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+        sorting_column_number (int): column to sort by.
+        leaderboard_type (LeaderboardType): The type of leaderboard to generate
+                                            (e.g., baseline or tournament).
+
+    Returns:
+        None.
+    """
+    template = Template("""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.semanticui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/components/icon.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.semanticui.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.7/js/dataTables.semanticui.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+  <style>
+    body {
+        font-family: Arial,
+        sans-serif;
+        padding: 20px;
+    }
+    .n-count {
+        color: #b9b9b9;
+    }
+    #dataTable td:nth-child({{ sorting_column_number }}) {
+        background-color: #feffeb;
+    }
+    h1 {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 0.75em;
+        text-align: center;
+    }
+    .dataTables_wrapper {
+        width: 100%;
+    }
+    #dataTable {
+        width: 100% !important;
+    }
+    #dataTable tbody tr:hover {
+      background-color: #f1f1f1 !important;
+      cursor: pointer;
+    }
+    .info.circle.icon {
+        color: rgba(185, 185, 185, 0.7) !important;
+    }
+    .updated-date {
+         font-size: 10px;
+         text-align: center;
+         margin-top: -10px;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <p class="updated-date">{{ leaderboard_update_date }}</p>
+  <table id="dataTable" class="ui celled table">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Organization</th>
+        <th>Model Organization</th>
+        <th>Model</th>
+        <th>Dataset (N)</th>
+        <th><!-- N dataset --></th>
+        <th>Dataset 95% CI</th>
+        <th>Market (N)</th>
+        <th><!-- N market --></th>
+        <th>Market 95% CI</th>
+        <th>Overall (N)</th>
+        <th><!-- N --></th>
+        <th>Overall 95% CI</th>
+        <th>Supers > Forecaster?</th>
+        <th>p-val Supers > Forecaster?</th>
+        <th>Forecaster > Public?</th>
+        <th>p-val Forecaster > Public?</th>
+        <th>Pct times № 1</th>
+        <th>Pct times top 5%</th>
+        <th>Peer</th>
+        <th>BSS</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script>
+      $(document).ready(function(){
+        const rawData = {{ data }};
+        const cols = {{ columns }};
+        const columns = cols.map(name => {
+          const col = { data: name, title: name };
+          if (['N dataset','N market','N'].includes(name)) col.visible = false;
+          if (name==='Dataset') {
+            col.title = 'Dataset (N) <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Dataset"] }}"></i>';
+            col.render = function(d,t,row){
+                return t==='display'?parseFloat(d).toFixed(1)+
+                           ' <span class="n-count">('+
+                           Number(row['N dataset']).toLocaleString()+')</span>':d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==='Market') {
+            col.title = 'Market (N) <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Market"] }}"></i>';
+            col.render = function(d,t,row){
+                return t==='display'?parseFloat(d).toFixed(1) +
+                ' <span class="n-count">('+
+                Number(row['N market']).toLocaleString()+')</span>':d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==='Overall') {
+            col.title = 'Overall (N) <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Overall"] }}"></i>';
+            col.render = function(d,t,row){
+                return t==='display'?parseFloat(d).toFixed(1) +
+                ' <span class="n-count">('+
+                Number(row['N']).toLocaleString()+')</span>':d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==='Supers > Forecaster?') {
+            col.title = 'Supers > Forecaster? <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Supers > Forecaster?"] }}"></i>';
+            col.orderable=false;
+          }
+          if (name==='Forecaster > Public?') {
+            col.title = 'Forecaster > Public? <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Forecaster > Public?"] }}"></i>';
+            col.orderable=false;
+          }
+          if (name==='Pct times № 1') {
+            col.title = 'Pct times № 1 <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Pct times № 1"] }}"></i>';
+            col.render = function(d,t){ return t==='display'?Math.round(d)+'%':d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==='Pct times top 5%') {
+            col.title = 'Pct times top 5% <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Pct times top 5%"] }}"></i>';
+            col.render = function(d,t){ return t==='display'?Math.round(d)+'%':d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==='Dataset 95% CI') {
+            col.title = 'Dataset 95% CI <i class="info circle icon" ' +
+                        'data-html="{{ col_desc["Dataset 95% CI"] }}"></i>';
+            col.orderable=false;
+          }
+          if (name==='Market 95% CI') {
+            col.title = 'Market 95% CI <i class="info circle icon" ' +
+                        'data-html="{{ col_desc["Market 95% CI"] }}"></i>';
+            col.orderable=false;
+          }
+          if (name==='Overall 95% CI') {
+            col.title = 'Overall 95% CI <i class="info circle icon" ' +
+                        'data-html="{{ col_desc["Overall 95% CI"] }}"></i>';
+            col.orderable=false;
+          }
+          if (name==="Peer") {
+            col.title = 'Peer <i class="info circle icon" data-html="{{ col_desc["Peer"] }}"></i>';
+            col.render = function(d,t){ return t==='display'?parseFloat(d).toFixed(3):d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==="BSS") {
+            col.title = 'BSS <i class="info circle icon" data-html="{{ col_desc["BSS"] }}"></i>';
+            col.render = function(d,t){ return t==='display'?parseFloat(d).toFixed(3):d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          return col;
+        });
+        $('#dataTable').DataTable({
+          data: rawData,
+          columns: columns,
+          order: [[ cols.indexOf('Overall'), 'desc' ]],
+          responsive: true,
+          paging: false,
+          info: true,
+          search: { regex:true, smart:true },
+          initComplete: function() {
+            $('.info.circle.icon').popup({ html: true} );
+          }
+        });
+      });
+  </script>
+  </body>
+</html>""")
+
+    # The HTML template has a hardcoded <thead> expecting exactly these columns.
+    # Any extra columns (e.g. Rescaled Brier) are CSV-only.
+    html_cols = [
+        "Rank",
+        "Team",
+        "Model Organization",
+        "Model",
+        "Dataset",
+        "N dataset",
+        "Dataset 95% CI",
+        "Market",
+        "N market",
+        "Market 95% CI",
+        "Overall",
+        "N",
+        "Overall 95% CI",
+        "Supers > Forecaster?",
+        "p-val Supers > Forecaster?",
+        "Forecaster > Public?",
+        "p-val Forecaster > Public?",
+        "Pct times № 1",
+        "Pct times top 5%",
+        "Peer",
+        "BSS",
+    ]
+    df_html = df[[c for c in html_cols if c in df.columns]]
+    html = template.render(
+        title=f"{constants.BENCHMARK_NAME} Leaderboard",
+        data=df_html.to_dict(orient="records"),
+        columns=json.dumps(df_html.columns.tolist()),
+        leaderboard_update_date=LEADERBOARD_UPDATED_DATE_STR,
+        sorting_column_number=sorting_column_number,
+        col_desc=TOOLTIP_COLUMN_DESCRIPTIONS,
+    )
+
+    stem = f"leaderboard_{leaderboard_type.value}"
+    destination_folder = "leaderboards/html"
+    data_utils.write_file_to_bucket(
+        bucket=env.PUBLIC_RELEASE_BUCKET,
+        basename=f"{stem}.html",
+        destination_folder=f"{destination_folder}",
+        data=html,
+    )
+
+    directory = data_utils.get_mounted_bucket(bucket=env.PUBLIC_RELEASE_BUCKET)
+    destination_folder = "leaderboards/csv"
+    os.makedirs(f"{directory}/{destination_folder}", exist_ok=True)
+    destination_filename_csv = f"{destination_folder}/{stem}.csv"
+    local_filename_csv = f"{directory}/{destination_filename_csv}"
+    df.to_csv(local_filename_csv, index=False)
+
+
+def write_preliminary_leaderboard_html_file(
+    df: pd.DataFrame,
+    sorting_column_number: int,
+) -> None:
+    """Generate HTML and CSV leaderboard files for the preliminary leaderboard.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+        sorting_column_number (int): column to sort by.
+
+    Returns:
+        None.
+    """
+    template = Template("""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.semanticui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/components/icon.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.semanticui.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.7/js/dataTables.semanticui.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+  <style>
+    body {
+        font-family: Arial,
+        sans-serif;
+        padding: 20px;
+    }
+    .n-count {
+        color: #b9b9b9;
+    }
+    #dataTable td:nth-child({{ sorting_column_number }}) {
+        background-color: #feffeb;
+    }
+    h1 {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 0.75em;
+        text-align: center;
+    }
+    .dataTables_wrapper {
+        width: 100%;
+    }
+    #dataTable {
+        width: 100% !important;
+    }
+    #dataTable tbody tr:hover {
+      background-color: #f1f1f1 !important;
+      cursor: pointer;
+    }
+    .info.circle.icon {
+        color: rgba(185, 185, 185, 0.7) !important;
+    }
+    .updated-date {
+         font-size: 10px;
+         text-align: center;
+         margin-top: -10px;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <p class="updated-date">{{ leaderboard_update_date }}</p>
+  <table id="dataTable" class="ui celled table">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Organization</th>
+        <th>Model Organization</th>
+        <th>Model</th>
+        <th>Dataset (N)</th>
+        <th><!-- N dataset --></th>
+        <th>Dataset 95% CI</th>
+        <th>Supers > Forecaster?</th>
+        <th>p-val Supers > Forecaster?</th>
+        <th>Forecaster > Public?</th>
+        <th>p-val Forecaster > Public?</th>
+        <th>Pct times № 1</th>
+        <th>Pct times top 5%</th>
+        <th>Peer</th>
+        <th>BSS</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script>
+      $(document).ready(function(){
+        const rawData = {{ data }};
+        const cols = {{ columns }};
+        const columns = cols.map(name => {
+          const col = { data: name, title: name };
+          if (['N dataset'].includes(name)) col.visible = false;
+          if (name==='Dataset') {
+            col.title = 'Dataset (N) <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Dataset"] }}"></i>';
+            col.render = function(d,t,row){
+                return t==='display'?parseFloat(d).toFixed(1)+
+                           ' <span class="n-count">('+
+                           Number(row['N dataset']).toLocaleString()+')</span>':d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==='Supers > Forecaster?') {
+            col.title = 'Supers > Forecaster? <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Supers > Forecaster?"] }}"></i>';
+            col.orderable=false;
+          }
+          if (name==='Forecaster > Public?') {
+            col.title = 'Forecaster > Public? <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Forecaster > Public?"] }}"></i>';
+            col.orderable=false;
+          }
+          if (name==='Pct times № 1') {
+            col.title = 'Pct times № 1 <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Pct times № 1"] }}"></i>';
+            col.render = function(d,t){ return t==='display'?Math.round(d)+'%':d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==='Pct times top 5%') {
+            col.title = 'Pct times top 5% <i class="info circle icon" '
+                        + ' data-html="{{ col_desc["Pct times top 5%"] }}"></i>';
+            col.render = function(d,t){ return t==='display'?Math.round(d)+'%':d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==='Dataset 95% CI') {
+            col.title = 'Dataset 95% CI <i class="info circle icon" ' +
+                        'data-html="{{ col_desc["Dataset 95% CI"] }}"></i>';
+            col.orderable=false;
+          }
+          if (name==="Peer") {
+            col.title = 'Peer <i class="info circle icon" data-html="{{ col_desc["Peer"] }}"></i>';
+            col.render = function(d,t){ return t==='display'?parseFloat(d).toFixed(3):d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          if (name==="BSS") {
+            col.title = 'BSS <i class="info circle icon" data-html="{{ col_desc["BSS"] }}"></i>';
+            col.render = function(d,t){ return t==='display'?parseFloat(d).toFixed(3):d; };
+            col.orderSequence = ['desc','asc'];
+          }
+          return col;
+        });
+        $('#dataTable').DataTable({
+          data: rawData,
+          columns: columns,
+          order: [[ cols.indexOf('Dataset'), 'desc' ]],
+          responsive: true,
+          paging: false,
+          info: true,
+          search: { regex:true, smart:true },
+          initComplete: function() {
+            $('.info.circle.icon').popup({ html: true} );
+          }
+        });
+      });
+  </script>
+  </body>
+</html>""")
+
+    html_cols = [
+        "Rank",
+        "Team",
+        "Model Organization",
+        "Model",
+        "Dataset",
+        "N dataset",
+        "Dataset 95% CI",
+        "Supers > Forecaster?",
+        "p-val Supers > Forecaster?",
+        "Forecaster > Public?",
+        "p-val Forecaster > Public?",
+        "Pct times № 1",
+        "Pct times top 5%",
+        "Peer",
+        "BSS",
+    ]
+    df_html = df[[c for c in html_cols if c in df.columns]]
+    html = template.render(
+        title=f"{constants.BENCHMARK_NAME} Preliminary Leaderboard",
+        data=df_html.to_dict(orient="records"),
+        columns=json.dumps(df_html.columns.tolist()),
+        leaderboard_update_date=LEADERBOARD_UPDATED_DATE_STR,
+        sorting_column_number=sorting_column_number,
+        col_desc=TOOLTIP_COLUMN_DESCRIPTIONS,
+    )
+
+    leaderboard_type = LeaderboardType.PRELIMINARY
+    stem = f"leaderboard_{leaderboard_type.value}"
+    destination_folder = "leaderboards/html"
+    data_utils.write_file_to_bucket(
+        bucket=env.PUBLIC_RELEASE_BUCKET,
+        basename=f"{stem}.html",
+        destination_folder=f"{destination_folder}",
+        data=html,
+    )
+
+    directory = data_utils.get_mounted_bucket(bucket=env.PUBLIC_RELEASE_BUCKET)
+    destination_folder = "leaderboards/csv"
+    os.makedirs(f"{directory}/{destination_folder}", exist_ok=True)
+    destination_filename_csv = f"{destination_folder}/{stem}.csv"
+    local_filename_csv = f"{directory}/{destination_filename_csv}"
+    df.to_csv(local_filename_csv, index=False)
+
+
+def write_leaderboard_js_file_full(
+    df: pd.DataFrame,
+    leaderboard_type: LeaderboardType,
+) -> Dict[str, str]:
+    """Generate JS file for website Leaderboard page.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+        leaderboard_type (LeaderboardType): The type of leaderboard to generate
+                                            (e.g., baseline or tournament).
+
+    Returns:
+        None.
+    """
+    template = Template("""
+        window.initLeaderboard_{{ leaderboard_type }} = function()
+        {
+            const data = {{ data }};
+            const isTournament = {{ is_tournament | lower }};
+            const cols = ["Rank", {% if is_tournament %} "Team",{% endif %}
+                          "Model Organization", "Model Organization Logo", "Model",
+                          "Dataset", "N dataset", "Dataset 95% CI",
+                          "Market", "N market", "Market 95% CI",
+                          "Overall", "N", "Overall 95% CI",
+                          "Supers > Forecaster?", "p-val Supers > Forecaster?",
+                          "Forecaster > Public?", "p-val Forecaster > Public?"];
+            const teamColIndex = cols.indexOf("Team");
+            const escapeTooltip = (text) =>
+              String(text ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/\"/g, '&quot;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+            const columns = cols.map(name => {
+                const col = { data: name, title: name };
+                if (name === "Rank") {
+                  col.className = 'dt-center';
+                }
+                if (name === "Team") {
+                  col.className = 'dt-center';
+                  col.render = (d, t, row) => {
+                      if (t !== 'display') return row['Team Name'] || d;
+                      if (!d) return '';
+                      const tooltip = escapeTooltip(row['Team Name'] || d);
+                      return `<span class="cell-tooltip" data-tooltip="${tooltip}"
+                                    style="cursor:help; display:inline-flex;
+                                    align-items:center;">` +
+                             `<img src="/assets/images/org_logos/${d}" alt="${tooltip}"
+                                   style="height:20px">` +
+                             `</span>`;
+                  };
+                }
+
+                if (name === "Model Organization") {
+                  col.title = "Org";
+                  col.className = 'dt-center';
+                  col.render = (d, t, row) => {
+                    if (t === 'display') {
+                      const tooltip = escapeTooltip(d);
+                      if (row['Model Organization Logo']) {
+                        return `<span class="cell-tooltip" data-tooltip="${tooltip}"
+                                      style="cursor:help; display:inline-flex;
+                                      align-items:center;">` +
+                               `<img src="/assets/images/org_logos/${row['Model Organization Logo']}"
+                                alt="${tooltip}" style="height:20px">` +
+                               `</span>`;
+                      }
+                      return `<span class="cell-tooltip" data-tooltip="${tooltip}"
+                                    style="cursor:help">${d}</span>`;
+                    }
+                    return d; // Use text value for search/sort
+                  };
+                }
+
+                if (["N dataset", "N market", "N", "Model Organization Logo",
+                     "p-val Supers > Forecaster?", "p-val Forecaster > Public?"].includes(name)) {
+                  col.visible = false;
+                }
+
+                if (name === "Dataset") {
+                  col.title = "Dataset (N)";
+                  col.render = (d, t, row) =>
+                    t === "display"
+                      ? parseFloat(d).toFixed(1) +
+                        ' <span class="n-count">(' +
+                        Number(row["N dataset"]).toLocaleString() +
+                        ")</span>"
+                      : d;
+                  col.orderSequence = ["desc", "asc"];
+                }
+
+                if (name === "Market") {
+                  col.title = "Market (N)";
+                  col.render = (d, t, row) =>
+                    t === "display"
+                      ? parseFloat(d).toFixed(1) +
+                        ' <span class="n-count">(' +
+                        Number(row["N market"]).toLocaleString() +
+                        ")</span>"
+                      : d;
+                  col.orderSequence = ["desc", "asc"];
+                }
+
+                if (name === "Overall") {
+                  col.title = "Overall (N)";
+                  col.render = (d, t, row) =>
+                    t === "display"
+                      ? parseFloat(d).toFixed(1) +
+                        ' <span class="n-count">(' +
+                        Number(row["N"]).toLocaleString() +
+                        ")</span>"
+                      : d;
+                  col.orderSequence = ["desc", "asc"];
+                }
+
+                if (name === "Supers > Forecaster?"
+                    || name === "Forecaster > Public?") {
+                      col.orderable = false;
+                }
+
+                // Add cell tooltips that show the hidden p-values
+                // Supers > Forecaster?
+                if (name === "Supers > Forecaster?") {
+                  col.className = (col.className ? col.className + ' ' : '') + 'dt-center';
+                  col.render = (d, t, row) => {
+                    if (t !== 'display') return d;
+                    const p = row['p-val Supers > Forecaster?'];
+                    const tip = (p == null || p === '') ? 'p-value unavailable' : 'p-val: ' + String(p);
+                    const val = (d ?? '') === '' ? '' : d;
+                    return `<span class="cell-tooltip" data-tooltip="${tip}"
+                                  style="cursor:help">${val}</span>`;
+                  };
+                }
+
+                // Forecaster > Public?
+                if (name === "Forecaster > Public?") {
+                  col.className = (col.className ? col.className + ' ' : '') + 'dt-center';
+                  col.render = (d, t, row) => {
+                    if (t !== 'display') return d;
+                    const p = row['p-val Forecaster > Public?'];
+                    const tip = (p == null || p === '') ? 'p-value unavailable' : 'p-val: ' + String(p);
+                    const val = (d ?? '') === '' ? '' : d;
+                    return `<span class="cell-tooltip" data-tooltip="${tip}"
+                                  style="cursor:help">${val}</span>`;
+                  };
+                }
+
+                if (["Dataset 95% CI", "Market 95% CI", "Overall 95% CI"].includes(name)) {
+                  col.orderable = false;
+                }
+
+                return col;
+            });
+
+            // Register anonymous-team filter before DataTable init so it applies on first draw
+            if (isTournament && teamColIndex >= 0) {
+              $.fn.dataTable.ext.search.push(function(settings, data, dataIndex, rowData) {
+                if (settings.nTable.id !== 'lb') return true;
+                const showAnon = document.getElementById('show-anonymous')?.checked;
+                if (showAnon) return true;
+                const teamName =
+                  (rowData && rowData["Team Name"]) ||
+                  (settings.aoData?.[dataIndex]?._aData?.["Team Name"]) ||
+                  '';
+                return !(typeof teamName === 'string' &&
+                         teamName.toLowerCase().trim().startsWith('anonymous'));
+              });
+            }
+
+            $('#leaderboard-table-full').html(`
+               ${isTournament ? `<div id="anon-toggle" style="margin-bottom:8px; display:flex;
+                                      align-items:center; gap:6px;">
+                   <input type="checkbox" id="show-anonymous" aria-label="Show anonymous teams">
+                   <label for="show-anonymous" style="margin:0; cursor:pointer;">Show anonymous teams</label>
+                 </div>` : ''}
+               <table id="lb" class="display compact hover" style="width:100%">
+               <thead>
+                 <tr>
+                   <th>Rank</th>
+                   {% if is_tournament %}
+                   <th class="column-header-tooltip" data-tooltip="Team">Team</th>
+                   {% endif %}
+                   <th class="column-header-tooltip" data-tooltip="Org">Org</th>
+                   <th><!-- Model Organization Logo --></th>
+                   <th class="column-header-tooltip" data-tooltip="Model">Model</th>
+                   <th class="column-header-tooltip"
+                       data-tooltip="Dataset (N)">Dataset (N)</th>
+                   <th><!-- N dataset --></th>
+                   <th class="column-header-tooltip" data-tooltip="Dataset 95% CI">Dataset 95% CI</th>
+                   <th class="column-header-tooltip"
+                       data-tooltip="Market (N)">Market (N)</th>
+                   <th><!-- N market --></th>
+                   <th class="column-header-tooltip" data-tooltip="Market 95% CI">Market 95% CI</th>
+                   <th class="column-header-tooltip"
+                       data-tooltip="Overall (N)">Overall (N)</th>
+                   <th><!-- N --></th>
+                   <th class="column-header-tooltip" data-tooltip="Overall 95% CI">Overall 95% CI</th>
+                   <th class="column-header-tooltip"
+                       data-tooltip="Supers > Forecaster?">Supers > Forecaster?</th>
+                   <th><!-- p-val Supers > Forecaster? --></th>
+                   <th class="column-header-tooltip"
+                       data-tooltip="Forecaster > Public?">Forecaster > Public?</th>
+                   <th><!-- p-val Forecaster > Public? --></th>
+                 </tr>
+               </thead>
+               <tbody></tbody>
+             </table>
+             `);
+             const table = $("#lb").DataTable({
+               data: data,
+               columns: columns,
+               order: [[cols.indexOf("Overall"), "desc"]],
+               pageLength:25,
+               lengthMenu:[[10,25,50,100,-1],[10,25,50,100,"All"]],
+               paging: true,
+               info: true,
+               dom:'<"top"lfr>t<"bottom"<"info-pagination-wrapper"ip>>',
+               responsive: true,
+               search: { regex: true, smart: true },
+               createdRow: function(row, data, dataIndex) {
+                 if ({{ model_highlight_rows | tojson }}.includes(data.Model)) {
+                   $(row).css('background-color', '#fef0e6');
+                 }
+               },
+               infoCallback: function(settings, start, end, max, total, pre) {
+                   return pre + '<br>last updated {{ last_updated_date }}';
+               }
+           });
+
+           if (isTournament && teamColIndex >= 0) {
+             $('#show-anonymous').on('change', function() { table.draw(); });
+             // Apply the filter once on load so anonymous rows start hidden
+             table.draw();
+           }
+            table.on('draw.dt', function () {
+              initializeTooltips();
+            });
+           window.tooltipContent = {
+             'Team': `{{ col_desc["Organization"] }}`,
+             'Org': `{{ col_desc["Model Organization"] }}`,
+             'Model': `{{ col_desc["Model"] }}`,
+             'Dataset (N)': `{{ col_desc["Dataset"] }}`,
+             'Dataset 95% CI': `{{ col_desc["Dataset 95% CI"] }}`,
+             'Market (N)': `{{ col_desc["Market"] }}`,
+             'Market 95% CI': `{{ col_desc["Market 95% CI"] }}`,
+             'Overall (N)': `{{ col_desc["Overall"] }}`,
+             'Overall 95% CI': `{{ col_desc["Overall 95% CI"] }}`,
+             'Supers > Forecaster?': `{{ col_desc["Supers > Forecaster?"] }}`,
+             'Forecaster > Public?': `{{ col_desc["Forecaster > Public?"] }}`
+           };
+           initializeTooltips();
+        };""")
+
+    js = template.render(
+        data=df.to_dict(orient="records"),
+        last_updated_date=LAST_UPDATED_DATE,
+        model_highlight_rows=HUMAN_MODELS_TO_HIGHLIGHT,
+        col_desc=TOOLTIP_COLUMN_DESCRIPTIONS,
+        is_tournament=leaderboard_type == LeaderboardType.TOURNAMENT,
+        leaderboard_type=leaderboard_type.value,
+    )
+
+    return {
+        "filename": f"leaderboard_{leaderboard_type.value}_full.js",
+        "js": js,
+    }
+
+
+def write_preliminary_leaderboard_js_file_full(
+    df: pd.DataFrame,
+) -> Dict[str, str]:
+    """Generate JS file for website Preliminary Leaderboard page.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+
+    Returns:
+        Dict[str, str]: Dictionary with 'filename' and 'js' keys.
+    """
+    template = Template("""
+        window.initLeaderboard_preliminary = function()
+        {
+            const data = {{ data }};
+            const isTournament = {{ is_tournament | lower }};
+            const cols = ["Rank", "Team",
+                          "Model Organization", "Model Organization Logo", "Model",
+                          "Dataset", "N dataset", "Dataset 95% CI",
+                          "Supers > Forecaster?", "p-val Supers > Forecaster?",
+                          "Forecaster > Public?", "p-val Forecaster > Public?"];
+            const teamColIndex = cols.indexOf("Team");
+            const escapeTooltip = (text) =>
+              String(text ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/\"/g, '&quot;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+            const columns = cols.map(name => {
+                const col = { data: name, title: name };
+                if (name === "Rank") {
+                  col.className = 'dt-center';
+                }
+                if (name === "Team") {
+                  col.className = 'dt-center';
+                  col.render = (d, t, row) => {
+                      if (t !== 'display') return row['Team Name'] || d;
+                      if (!d) return '';
+                      const tooltip = escapeTooltip(row['Team Name'] || d);
+                      return `<span class="cell-tooltip" data-tooltip="${tooltip}"
+                                    style="cursor:help; display:inline-flex;
+                                    align-items:center;">` +
+                             `<img src="/assets/images/org_logos/${d}" alt="${tooltip}"
+                                   style="height:20px">` +
+                             `</span>`;
+                  };
+                }
+
+                if (name === "Model Organization") {
+                  col.title = "Org";
+                  col.className = 'dt-center';
+                  col.render = (d, t, row) => {
+                    if (t === 'display') {
+                      const tooltip = escapeTooltip(d);
+                      if (row['Model Organization Logo']) {
+                        return `<span class="cell-tooltip" data-tooltip="${tooltip}"
+                                      style="cursor:help; display:inline-flex;
+                                      align-items:center;">` +
+                               `<img src="/assets/images/org_logos/${row['Model Organization Logo']}"
+                                alt="${tooltip}" style="height:20px">` +
+                               `</span>`;
+                      }
+                      return `<span class="cell-tooltip" data-tooltip="${tooltip}"
+                                    style="cursor:help">${d}</span>`;
+                    }
+                    return d; // Use text value for search/sort
+                  };
+                }
+
+                if (["N dataset", "Model Organization Logo",
+                     "p-val Supers > Forecaster?", "p-val Forecaster > Public?"].includes(name)) {
+                  col.visible = false;
+                }
+
+                if (name === "Dataset") {
+                  col.title = "Dataset (N)";
+                  col.render = (d, t, row) =>
+                    t === "display"
+                      ? parseFloat(d).toFixed(1) +
+                        ' <span class="n-count">(' +
+                        Number(row["N dataset"]).toLocaleString() +
+                        ")</span>"
+                      : d;
+                  col.orderSequence = ["desc", "asc"];
+                }
+
+                if (name === "Supers > Forecaster?"
+                    || name === "Forecaster > Public?") {
+                      col.orderable = false;
+                }
+
+                // Add cell tooltips that show the hidden p-values
+                // Supers > Forecaster?
+                if (name === "Supers > Forecaster?") {
+                  col.className = (col.className ? col.className + ' ' : '') + 'dt-center';
+                  col.render = (d, t, row) => {
+                    if (t !== 'display') return d;
+                    const p = row['p-val Supers > Forecaster?'];
+                    const tip = (p == null || p === '') ? 'p-value unavailable' : 'p-val: ' + String(p);
+                    const val = (d ?? '') === '' ? '' : d;
+                    return `<span class="cell-tooltip" data-tooltip="${tip}"
+                                  style="cursor:help">${val}</span>`;
+                  };
+                }
+
+                // Forecaster > Public?
+                if (name === "Forecaster > Public?") {
+                  col.className = (col.className ? col.className + ' ' : '') + 'dt-center';
+                  col.render = (d, t, row) => {
+                    if (t !== 'display') return d;
+                    const p = row['p-val Forecaster > Public?'];
+                    const tip = (p == null || p === '') ? 'p-value unavailable' : 'p-val: ' + String(p);
+                    const val = (d ?? '') === '' ? '' : d;
+                    return `<span class="cell-tooltip" data-tooltip="${tip}"
+                                  style="cursor:help">${val}</span>`;
+                  };
+                }
+
+                if (["Dataset 95% CI"].includes(name)) {
+                  col.orderable = false;
+                }
+
+                return col;
+            });
+
+            // Register anonymous-team filter before DataTable init so it applies on first draw
+            if (isTournament && teamColIndex >= 0) {
+              $.fn.dataTable.ext.search.push(function(settings, data, dataIndex, rowData) {
+                if (settings.nTable.id !== 'lb-preliminary') return true;
+                const showAnon = document.getElementById('show-anonymous-preliminary')?.checked;
+                if (showAnon) return true;
+                const teamName =
+                  (rowData && rowData["Team Name"]) ||
+                  (settings.aoData?.[dataIndex]?._aData?.["Team Name"]) ||
+                  '';
+                return !(typeof teamName === 'string' &&
+                         teamName.toLowerCase().trim().startsWith('anonymous'));
+              });
+            }
+
+            $('#leaderboard-table-full').html(`
+               ${isTournament ? `<div id="anon-toggle-preliminary" style="margin-bottom:8px; display:flex;
+                                      align-items:center; gap:6px;">
+                   <input type="checkbox" id="show-anonymous-preliminary" aria-label="Show anonymous teams">
+                   <label for="show-anonymous-preliminary"
+                     style="margin:0; cursor:pointer;">Show anonymous teams</label>
+                 </div>` : ''}
+               <table id="lb-preliminary" class="display compact hover" style="width:100%">
+               <thead>
+                 <tr>
+                   <th>Rank</th>
+                   {% if is_tournament %}
+                   <th class="column-header-tooltip" data-tooltip="Team">Team</th>
+                   {% endif %}
+                   <th class="column-header-tooltip" data-tooltip="Org">Org</th>
+                   <th><!-- Model Organization Logo --></th>
+                   <th class="column-header-tooltip" data-tooltip="Model">Model</th>
+                   <th class="column-header-tooltip"
+                       data-tooltip="Dataset (N)">Dataset (N)</th>
+                   <th><!-- N dataset --></th>
+                   <th class="column-header-tooltip" data-tooltip="Dataset 95% CI">Dataset 95% CI</th>
+                   <th class="column-header-tooltip"
+                       data-tooltip="Supers > Forecaster?">Supers > Forecaster?</th>
+                   <th><!-- p-val Supers > Forecaster? --></th>
+                   <th class="column-header-tooltip"
+                       data-tooltip="Forecaster > Public?">Forecaster > Public?</th>
+                   <th><!-- p-val Forecaster > Public? --></th>
+                 </tr>
+               </thead>
+               <tbody></tbody>
+             </table>
+             `);
+             const table = $("#lb-preliminary").DataTable({
+               data: data,
+               columns: columns,
+               order: [[cols.indexOf("Dataset"), "desc"]],
+               pageLength:25,
+               lengthMenu:[[10,25,50,100,-1],[10,25,50,100,"All"]],
+               paging: true,
+               info: true,
+               dom:'<"top"lfr>t<"bottom"<"info-pagination-wrapper"ip>>',
+               responsive: true,
+               search: { regex: true, smart: true },
+               createdRow: function(row, data, dataIndex) {
+                 if ({{ model_highlight_rows | tojson }}.includes(data.Model)) {
+                   $(row).css('background-color', '#fef0e6');
+                 }
+               },
+               infoCallback: function(settings, start, end, max, total, pre) {
+                   return pre + '<br>last updated {{ last_updated_date }}';
+               }
+           });
+
+           if (isTournament && teamColIndex >= 0) {
+             $('#show-anonymous-preliminary').on('change', function() { table.draw(); });
+             // Apply the filter once on load so anonymous rows start hidden
+             table.draw();
+           }
+            table.on('draw.dt', function () {
+              initializeTooltips();
+            });
+           window.tooltipContent = {
+             'Team': `{{ col_desc["Organization"] }}`,
+             'Org': `{{ col_desc["Model Organization"] }}`,
+             'Model': `{{ col_desc["Model"] }}`,
+             'Dataset (N)': `{{ col_desc["Dataset"] }}`,
+             'Dataset 95% CI': `{{ col_desc["Dataset 95% CI"] }}`,
+             'Supers > Forecaster?': `{{ col_desc["Supers > Forecaster?"] }}`,
+             'Forecaster > Public?': `{{ col_desc["Forecaster > Public?"] }}`
+           };
+           initializeTooltips();
+        };""")
+
+    js = template.render(
+        data=df.to_dict(orient="records"),
+        last_updated_date=LAST_UPDATED_DATE,
+        model_highlight_rows=HUMAN_MODELS_TO_HIGHLIGHT,
+        col_desc=TOOLTIP_COLUMN_DESCRIPTIONS,
+        is_tournament=True,
+    )
+
+    return {
+        "filename": "leaderboard_preliminary_full.js",
+        "js": js,
+    }
+
+
+def write_leaderboard_js_file_compact(
+    df: pd.DataFrame,
+    leaderboard_type: LeaderboardType,
+) -> Dict[str, str]:
+    """Generate JS file for website Home page.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+        leaderboard_type (LeaderboardType): The type of leaderboard to generate
+                                            (e.g., baseline or tournament).
+
+    Returns:
+        None.
+    """
+    template = Template("""
+        ;(function(){ if(!document.getElementById('leaderboard-{{ leaderboard_type }}-compact')) return;
+        $(function()
+        {
+            const data = {{ data }};
+            const escapeTooltip = (text) =>
+              String(text ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/\"/g, '&quot;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+            const runTooltips = () => {
+              if (typeof initializeTooltips === 'function') {
+                initializeTooltips();
+              } else {
+                setTimeout(runTooltips, 50);
+              }
+            };
+            $('#leaderboard-{{ leaderboard_type }}-compact').html(`
+            <table id="lb-{{ leaderboard_type }}" class="display stripe hover" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th class="column-header-tooltip" data-tooltip="Model Organization">Org</th>
+                  <th class="column-header-tooltip" data-tooltip="Model">Model</th>
+                  <th class="column-header-tooltip" data-tooltip="Overall">Overall</th>
+                </tr>
+              </thead>
+            </table>
+            `);
+            const table = $('#lb-{{ leaderboard_type }}').DataTable({
+              data:data,
+              columns:[
+                {data:'Rank', className:'dt-center', width:'5%'},
+                {
+                  data:'Model Organization',
+                  className:'dt-center',
+                  width:'10%',
+                  render: (d, type, row) => {
+                    if (type === 'display') {
+                      const tooltip = escapeTooltip(d);
+                      return row['Model Organization Logo']
+                        ? `<span class="cell-tooltip" data-tooltip="${tooltip}"
+                                 style="cursor:help; display:inline-flex; align-items:center;">` +
+                          `<img src="/assets/images/org_logos/${row['Model Organization Logo']}"
+                                alt="${tooltip}" style="height:20px">` +
+                          `</span>`
+                        : `<span class="cell-tooltip" data-tooltip="${tooltip}"
+                                 style="cursor:help">${d}</span>`;
+                    }
+                    return d; // Use text value for search/sort
+                  }
+                },
+                {data:'Model', width:'70%'},
+                {data:'Overall', render:d=>parseFloat(d).toFixed(1), width:'15%'}
+              ],
+              autoWidth:false,
+              order:[[3,'desc']],
+              pageLength:10,
+              pagingType:'simple',
+              lengthMenu:[[10,25,50,100,-1],[10,25,50,100,"All"]],
+              paging:true,
+              info:true,
+              dom:'<"top"lfr>t<"bottom"<"info-pagination-wrapper"ip>>',
+              responsive:true,
+              createdRow: function(row, data, dataIndex) {
+                 if ({{ model_highlight_rows | tojson }}.includes(data.Model)) {
+                   $(row).css('background-color', '#fef0e6');
+                 }
+               },
+              infoCallback: function(settings, start, end, max, total, pre) {
+                  return pre + '<br>last updated {{ last_updated_date }}';
+              }
+            });
+            table.on('draw.dt', function () {
+              runTooltips();
+            });
+            // Initialize tooltips after table is created
+            runTooltips();
+          });
+        // Tooltip content object (defined globally for access)
+        // Keys MUST match the <th data-tooltip="..."> values
+        window.tooltipContent = Object.assign(window.tooltipContent || {}, {
+          'Model Organization': `{{ col_desc["Model Organization"] }}`,
+          'Model': `{{ col_desc["Model"] }}`,
+          'Overall': `{{ col_desc["Overall"] }}`
+        });
+        })();""")
+
+    # Remove anonymous submissions from compact leaderboards
+    df = df.copy()
+    anonymous_mask = df["Team Name"].fillna("").str.lower().str.strip().str.startswith("anonymous")
+    df = df[~anonymous_mask]
+    js = template.render(
+        data=df[
+            [
+                "Rank",
+                "Model Organization",
+                "Model Organization Logo",
+                "Model",
+                "Overall",
+            ]
+        ].to_dict(orient="records"),
+        last_updated_date=LAST_UPDATED_DATE,
+        model_highlight_rows=HUMAN_MODELS_TO_HIGHLIGHT,
+        col_desc=TOOLTIP_COLUMN_DESCRIPTIONS,
+        leaderboard_type=leaderboard_type.value,
+    )
+
+    return {
+        "filename": f"leaderboard_{leaderboard_type.value}_compact.js",
+        "js": js,
+    }
+
+
+def write_leaderboard_js_files(
+    df: pd.DataFrame,
+    leaderboard_type: LeaderboardType,
+) -> None:
+    """Wrap functions to create JS files for website.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+        leaderboard_type (LeaderboardType): The type of leaderboard to generate
+                                            (e.g., baseline or tournament).
+
+    Returns:
+        None.
+    """
+    df = df.copy()
+    df["Team Name"] = df["Team"]
+    write_anonymous_logos(df["Team Name"].tolist())
+    df["Model Organization Logo"] = df["Model Organization"].apply(get_org_logo)
+    df["Team"] = df["Team"].apply(get_org_logo)
+
+    leaderboards = [
+        write_leaderboard_js_file_compact(df=df, leaderboard_type=leaderboard_type),
+        write_leaderboard_js_file_full(df=df, leaderboard_type=leaderboard_type),
+    ]
+    # destination_folder = "assets/js/"
+    # os.makedirs(destination_folder, exist_ok=True)
+    for leaderboard in leaderboards:
+        data_utils.write_file_to_bucket(
+            bucket=env.PUBLIC_RELEASE_BUCKET,
+            basename=leaderboard["filename"],
+            destination_folder="leaderboards/js",
+            data=leaderboard["js"],
+        )
+
+
+def write_sota_graph_csv(
+    df: pd.DataFrame,
+    leaderboard_type: LeaderboardType,
+) -> None:
+    """Write CSV for SOTA graph on website Explore page.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+        leaderboard_type (LeaderboardType): The type of leaderboard to generate
+             (e.g., baseline or tournament). Only the baseline is used for the graph.
+
+    Returns:
+        None.
+    """
+    df = df[
+        [
+            "Team",
+            "Model Organization",
+            "Model",
+            "Dataset",
+            "N dataset",
+            "Dataset 95% CI",
+            "Market",
+            "N market",
+            "Market 95% CI",
+            "Overall",
+            "N",
+            "Overall 95% CI",
+            "Model release date",
+        ]
+    ]
+    directory = data_utils.get_mounted_bucket(bucket=env.PUBLIC_RELEASE_BUCKET)
+    destination_folder = "leaderboards/csv"
+    os.makedirs(f"{directory}/{destination_folder}", exist_ok=True)
+    destination_filename_csv = f"{destination_folder}/sota_graph_{leaderboard_type.value}.csv"
+    local_filename_csv = f"{directory}/{destination_filename_csv}"
+    df.to_csv(local_filename_csv, index=False)
+
+
+def write_leaderboard(
+    df: pd.DataFrame,
+    primary_scoring_func: Callable[..., any],
+    leaderboard_type: LeaderboardType,
+) -> None:
+    """Generate HTML and CSV leaderboard files for git and JS files for website.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+        primary_scoring_func (Callable): Function used to compute the primary overall score;
+            its __name__ determines which columns to format and sort by.
+
+    Returns:
+        None.
+    """
+    logger.info("Making HTML and CSV leaderboard file.")
+
+    # Replace NaN with empty strings for display
+    df = df.fillna("")
+
+    # Round Brier Index columns to 1 decimal place, others to 3.
+    numeric_cols = df.select_dtypes(include="number").columns
+    brier_index_cols = [c for c in numeric_cols if c.startswith(BRIER_INDEX_COL_PREFIX)]
+    other_numeric_cols = [c for c in numeric_cols if c not in brier_index_cols]
+    df[brier_index_cols] = df[brier_index_cols].round(LEADERBOARD_DECIMAL_PLACES)
+    df[other_numeric_cols] = df[other_numeric_cols].round(3)
+
+    # Rank and order by displayed overall score; break ties by larger sample size.
+    brier_index = BRIER_INDEX_COL_PREFIX
+    overall_col = f"{brier_index}_overall"
+    df["Rank"] = df[overall_col].rank(
+        ascending=False,
+        method="min",
+    )
+
+    for col in [
+        "n_market",
+        "n_dataset",
+        "n_overall",
+        "Rank",
+    ]:
+        df[col] = df[col].astype(int)
+
+    # Format CI
+    def format_ci(df, question_type):
+        col_prefix = f"{brier_index}_{question_type}"
+        df[f"{col_prefix}_ci_lower"] = (
+            df[f"{col_prefix}_ci_lower"].round(LEADERBOARD_DECIMAL_PLACES).astype(str)
+        )
+        df[f"{col_prefix}_ci_upper"] = (
+            df[f"{col_prefix}_ci_upper"].round(LEADERBOARD_DECIMAL_PLACES).astype(str)
+        )
+        df[f"{col_prefix}_ci"] = (
+            "[" + df[f"{col_prefix}_ci_lower"] + ", " + df[f"{col_prefix}_ci_upper"] + "]"
+        )
+        return df
+
+    df = format_ci(df, "dataset")
+    df = format_ci(df, "market")
+    df = format_ci(df, "overall")
+
+    df = df.sort_values(by=[overall_col, "n_overall"], ascending=[False, False], ignore_index=True)
+
+    p_value_cols = {}
+    for comparison in HUMAN_MODELS:
+        col_name = get_comparison_p_val_col(comparison)
+        col_name_simple = col_name + "_simple"
+        df[col_name_simple] = df[col_name].apply(
+            lambda p: "Yes" if p < 0.01 else "Likely" if p < 0.1 else "No"
+        )
+        df[col_name] = df[col_name].apply(
+            lambda p: "<0.001" if p < 0.001 else "<0.01" if p < 0.01 else f"{p:.2f}"
+        )
+        # Set the p-value for the best to N/A
+        comparison_idx = get_comparison_model_index(df=df, comparison=comparison)
+        df.loc[comparison_idx, col_name] = "—"
+        df.loc[comparison_idx, col_name_simple] = "—"
+        if comparison == HUMAN_SUPERFORECASTER:
+            p_value_cols[col_name_simple] = "Supers > Forecaster?"
+            p_value_cols[col_name] = "p-val Supers > Forecaster?"
+        elif comparison == HUMAN_PUBLIC:
+            p_value_cols[col_name_simple] = "Forecaster > Public?"
+            p_value_cols[col_name] = "p-val Forecaster > Public?"
+        else:
+            raise ValueError("Comparison model not handled")
+
+    # For website communication purposes, change "freeze values" to "crowd forecast"
+    benchmark_mask = df["organization"] == constants.BENCHMARK_NAME
+    df.loc[benchmark_mask, "model"] = df.loc[benchmark_mask, "model"].str.replace(
+        "freeze values", "crowd forecast"
+    )
+
+    rescaled = primary_scoring_func.__name__
+    df = df[
+        [
+            "Rank",
+            "organization",
+            "model_organization",
+            "model",
+            f"{brier_index}_dataset",
+            "n_dataset",
+            f"{brier_index}_dataset_ci",
+            f"{brier_index}_market",
+            "n_market",
+            f"{brier_index}_market_ci",
+            f"{brier_index}_overall",
+            "n_overall",
+            f"{brier_index}_overall_ci",
+            *p_value_cols.keys(),
+            "pct_times_best_performer",
+            "pct_times_top_5_percentile",
+            "peer_score_overall",
+            "brier_skill_score_overall",
+            f"{rescaled}_dataset",
+            f"{rescaled}_market",
+            f"{rescaled}_overall",
+            "model_release_date",
+        ]
+    ].rename(
+        columns={
+            "organization": "Team",
+            "model_organization": "Model Organization",
+            "model": "Model",
+            f"{brier_index}_dataset": "Dataset",
+            "n_dataset": "N dataset",
+            f"{brier_index}_dataset_ci": "Dataset 95% CI",
+            f"{brier_index}_market": "Market",
+            "n_market": "N market",
+            f"{brier_index}_market_ci": "Market 95% CI",
+            f"{brier_index}_overall": "Overall",
+            "n_overall": "N",
+            f"{brier_index}_overall_ci": "Overall 95% CI",
+            **p_value_cols,
+            "pct_times_best_performer": "Pct times № 1",
+            "pct_times_top_5_percentile": "Pct times top 5%",
+            "peer_score_overall": "Peer",
+            "brier_skill_score_overall": "BSS",
+            f"{rescaled}_dataset": "Brier Dataset",
+            f"{rescaled}_market": "Brier Market",
+            f"{rescaled}_overall": "Brier Overall",
+            "model_release_date": "Model release date",
+        }
+    )
+
+    # Write CSV for SOTA graph for website
+    write_sota_graph_csv(
+        df=df,
+        leaderboard_type=leaderboard_type,
+    )
+    df = df.drop(columns="Model release date")
+
+    # Write HTML and CSV leaderboard for datasets repo
+    write_leaderboard_html_file(
+        df=df,
+        sorting_column_number=9,
+        leaderboard_type=leaderboard_type,
+    )
+
+    # Write JS leaderboard for website
+    df = df.drop(
+        columns=[
+            "Pct times № 1",
+            "Pct times top 5%",
+            "Peer",
+            "BSS",
+            "Brier Dataset",
+            "Brier Market",
+            "Brier Overall",
+        ]
+    )
+    write_leaderboard_js_files(
+        df=df,
+        leaderboard_type=leaderboard_type,
+    )
+
+
+def write_preliminary_leaderboard(
+    df: pd.DataFrame,
+    primary_scoring_func: Callable[..., any],
+) -> None:
+    """Generate HTML, CSV, and JS leaderboard files for the preliminary leaderboard.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the leaderboard.
+        primary_scoring_func (Callable): Function used to compute the primary score.
+
+    Returns:
+        None.
+    """
+    logger.info("Making preliminary leaderboard files.")
+
+    # Replace NaN with empty strings for display
+    df = df.fillna("")
+
+    # Round Brier Index columns to 1 decimal place, others to 3.
+    numeric_cols = df.select_dtypes(include="number").columns
+    brier_index_cols = [c for c in numeric_cols if c.startswith(BRIER_INDEX_COL_PREFIX)]
+    other_numeric_cols = [c for c in numeric_cols if c not in brier_index_cols]
+    df[brier_index_cols] = df[brier_index_cols].round(LEADERBOARD_DECIMAL_PLACES)
+    df[other_numeric_cols] = df[other_numeric_cols].round(3)
+
+    # Rank and order by displayed dataset score; break ties by larger sample size.
+    brier_index = BRIER_INDEX_COL_PREFIX
+    dataset_col = f"{brier_index}_dataset"
+    df["Rank"] = df[dataset_col].rank(
+        ascending=False,
+        method="min",
+    )
+
+    for col in [
+        "n_dataset",
+        "Rank",
+    ]:
+        df[col] = df[col].astype(int)
+
+    # Format CI
+    def format_ci(df, question_type):
+        col_prefix = f"{brier_index}_{question_type}"
+        df[f"{col_prefix}_ci_lower"] = (
+            df[f"{col_prefix}_ci_lower"].round(LEADERBOARD_DECIMAL_PLACES).astype(str)
+        )
+        df[f"{col_prefix}_ci_upper"] = (
+            df[f"{col_prefix}_ci_upper"].round(LEADERBOARD_DECIMAL_PLACES).astype(str)
+        )
+        df[f"{col_prefix}_ci"] = (
+            "[" + df[f"{col_prefix}_ci_lower"] + ", " + df[f"{col_prefix}_ci_upper"] + "]"
+        )
+        return df
+
+    df = format_ci(df, "dataset")
+
+    df = df.sort_values(by=[dataset_col, "n_dataset"], ascending=[False, False], ignore_index=True)
+
+    p_value_cols = {}
+    for comparison in HUMAN_MODELS:
+        col_name = get_comparison_p_val_col(comparison)
+        col_name_simple = col_name + "_simple"
+        df[col_name_simple] = df[col_name].apply(
+            lambda p: "Yes" if p < 0.01 else "Likely" if p < 0.1 else "No"
+        )
+        df[col_name] = df[col_name].apply(
+            lambda p: "<0.001" if p < 0.001 else "<0.01" if p < 0.01 else f"{p:.2f}"
+        )
+        # Set the p-value for the best to N/A
+        comparison_idx = get_comparison_model_index(df=df, comparison=comparison)
+        df.loc[comparison_idx, col_name] = "—"
+        df.loc[comparison_idx, col_name_simple] = "—"
+        if comparison == HUMAN_SUPERFORECASTER:
+            p_value_cols[col_name_simple] = "Supers > Forecaster?"
+            p_value_cols[col_name] = "p-val Supers > Forecaster?"
+        elif comparison == HUMAN_PUBLIC:
+            p_value_cols[col_name_simple] = "Forecaster > Public?"
+            p_value_cols[col_name] = "p-val Forecaster > Public?"
+        else:
+            raise ValueError("Comparison model not handled")
+
+    # For website communication purposes, change "freeze values" to "crowd forecast"
+    benchmark_mask = df["organization"] == constants.BENCHMARK_NAME
+    df.loc[benchmark_mask, "model"] = df.loc[benchmark_mask, "model"].str.replace(
+        "freeze values", "crowd forecast"
+    )
+
+    rescaled = primary_scoring_func.__name__
+    df = df[
+        [
+            "Rank",
+            "organization",
+            "model_organization",
+            "model",
+            f"{brier_index}_dataset",
+            "n_dataset",
+            f"{brier_index}_dataset_ci",
+            *p_value_cols.keys(),
+            "pct_times_best_performer",
+            "pct_times_top_5_percentile",
+            "peer_score_dataset",
+            "brier_skill_score_dataset",
+            f"{rescaled}_dataset",
+        ]
+    ].rename(
+        columns={
+            "organization": "Team",
+            "model_organization": "Model Organization",
+            "model": "Model",
+            f"{brier_index}_dataset": "Dataset",
+            "n_dataset": "N dataset",
+            f"{brier_index}_dataset_ci": "Dataset 95% CI",
+            **p_value_cols,
+            "pct_times_best_performer": "Pct times № 1",
+            "pct_times_top_5_percentile": "Pct times top 5%",
+            "peer_score_dataset": "Peer",
+            "brier_skill_score_dataset": "BSS",
+            f"{rescaled}_dataset": "Brier Dataset",
+        }
+    )
+
+    # Write HTML and CSV leaderboard for datasets repo
+    write_preliminary_leaderboard_html_file(
+        df=df.drop(columns=["Brier Dataset"]),
+        sorting_column_number=5,
+    )
+
+    # Write JS leaderboard for website
+    df_js = df.drop(
+        columns=[
+            "Pct times № 1",
+            "Pct times top 5%",
+            "Peer",
+            "BSS",
+            "Brier Dataset",
+        ]
+    )
+    df_js["Team Name"] = df_js["Team"]
+    write_anonymous_logos(df_js["Team Name"].tolist())
+    df_js["Model Organization Logo"] = df_js["Model Organization"].apply(get_org_logo)
+    df_js["Team"] = df_js["Team"].apply(get_org_logo)
+
+    js_result = write_preliminary_leaderboard_js_file_full(df=df_js)
+    data_utils.write_file_to_bucket(
+        bucket=env.PUBLIC_RELEASE_BUCKET,
+        basename=js_result["filename"],
+        destination_folder="leaderboards/js",
+        data=js_result["js"],
+    )
+
+
+def combine_forecasting_rounds(leaderboard: List[pd.DataFrame]) -> pd.DataFrame:
+    """Combine all processed forecast DataFrames into a single DataFrame.
+
+    Args:
+        leaderboard (List[pd.DataFrame]): List of DataFrames, each containing processed
+            forecasts for one model and forecast due date.
+
+    Returns:
+        pd.DataFrame: Concatenated DataFrame of all forecasts.
+    """
+    forecasts = [entry.copy() for entry in leaderboard]
+    df = pd.concat(forecasts).reset_index(drop=True)
+
+    # Add column for date of first submission
+    df["first_forecast_due_date"] = df.groupby(["model_pk"])["forecast_due_date"].transform("min")
+    return df
+
+
+def brier_score(df: pd.DataFrame) -> pd.DataFrame:
+    """Compute the Brier score for each forecast entry.
+
+    Args:
+        df (pd.DataFrame): Combined forecast set.
+
+    Returns:
+        pd.DataFrame: A new DataFrame with an added 'brier_score' column:
+    """
+    df = df.copy()
+    df["brier_score"] = (df["forecast"] - df["resolved_to"]) ** 2
+    return df
+
+
+def filter_to_baseline_leaderboard_models(df: pd.DataFrame) -> pd.DataFrame:
+    """Filter to models used for the baseline leaderboard.
+
+    Keeps rows preclassified as baseline models.
+
+    Args:
+        df (pd.DataFrame): Combined forecast set.
+
+    Returns:
+        pd.DataFrame: Filtered dataframe with baseline leaderboard models.
+    """
+    df = df.copy()
+    return df[df["baseline_model"]].reset_index(drop=True)
+
+
+def filter_to_tournament_leaderboard_models(df: pd.DataFrame) -> pd.DataFrame:
+    """Filter to models used for the tournament leaderboard.
+
+    Keeps rows preclassified as tournament models.
+
+    Args:
+        df (pd.DataFrame): Leaderboard or forecast data.
+
+    Returns:
+        pd.DataFrame: Filtered dataframe.
+    """
+    df = df.copy()
+    return df[df["tournament_model"]].reset_index(drop=True)
+
+
+def two_way_fixed_effects(
+    df: pd.DataFrame,
+    question_type: str,
+    market_question_adjustment: MarketQuestionAdjustment,
+) -> pd.DataFrame:
+    """Generate the difficulty adjusted Brier score.
+
+    Calculate "question difficulty" by estimating a two-way fixed effect model:
+
+      brier{i, j} = a_i + b_j + u_{i,j}
+
+    where i = forecaster, and j = question. Question difficulty is estimated with b_j. In
+    pyfixest, question_pk should be provided as the first FE variable, to ensure we have an
+    estimate for each question_pk (otherwise one question may be dropped to avoid perfect
+    multicolinearity).
+
+    Args:
+        df (pd.DataFrame): Combined forecast set.
+        question_type (str): One of "dataset" or "market".
+        market_question_adjustment (MarketQuestionAdjustment): How to estimate market question
+            effects.
+
+    Returns:
+        pd.DataFrame: A new DataFrame with an added 'two_way_fixed_effects' column.
+    """
+    df = df.copy()
+    df_fe = df.copy()
+    orig_cols = df.columns.tolist()
+
+    use_two_way_fixed_effects = question_type == "dataset" or (
+        question_type == "market"
+        and market_question_adjustment == MarketQuestionAdjustment.TWO_WAY_FIXED_EFFECTS
+    )
+
+    if use_two_way_fixed_effects:
+        # Drop some ForecastBench dummy models
+        forecastbench_models_to_drop = [
+            "Always 0",
+            "Always 1",
+            "Always 0.5",
+            "Random Uniform",
+            # Drop Imputed Forecaster so as not to:
+            # * double count the crowd forecast for market questions (the Naive Forecaster uses the
+            #   value at t-1).
+            # * consider its 0.5 forecast for dataset questions
+            "Imputed Forecaster",
+            *ENSEMBLE_COMPARISON_MODELS,
+        ]
+        forecastbench_model_mask = ~df_fe["model"].isin(forecastbench_models_to_drop)
+        df_fe = df_fe[forecastbench_model_mask]
+        df_fe = df_fe[~df_fe["external_submission"]]
+
+        # Remove models with old release dates
+        org_mask = df_fe["model_organization"] == constants.BENCHMARK_NAME
+        date_mask = df_fe["model_age_at_due_date"] < MODEL_RELEASE_DAYS_CUTOFF
+        df_fe = df_fe[org_mask | date_mask].reset_index(drop=True)
+
+        mod = pf.feols("brier_score ~ 1 | question_pk + model_pk", data=df_fe)
+        dict_question_fe = mod.fixef()["C(question_pk)"]
+    elif (
+        question_type == "market"
+        and market_question_adjustment == MarketQuestionAdjustment.MARKET_BRIER
+    ):
+        # Estimated question fixed effects are equivalent to the market Brier
+        mask = (
+            (df_fe["organization"] == constants.BENCHMARK_NAME)
+            & (df_fe["model_organization"] == constants.BENCHMARK_NAME)
+            & (df_fe["model"] == "Imputed Forecaster")
+        )
+        dict_question_fe = df_fe[mask].set_index("question_pk")["brier_score"].to_dict()
+    else:
+        raise ValueError(f"Question Type: {question_type} not found.")
+
+    if len(dict_question_fe) != len(df["question_pk"].unique()):
+        raise ValueError(
+            f"Estimated num. of question fixed effects ({len(dict_question_fe)}) not equal to num. "
+            f"of questions ({len(df['question_pk'].unique())})"
+        )
+
+    df["question_fixed_effect"] = df["question_pk"].map(dict_question_fe)
+    df["two_way_fixed_effects"] = df["brier_score"] - df["question_fixed_effect"]
+    return df[orig_cols + ["two_way_fixed_effects", "question_fixed_effect"]]
+
+
+def peer_score(df: pd.DataFrame) -> pd.DataFrame:
+    """Compute peer scores by comparing each forecast's Brier score to the question's average.
+
+    Args:
+        df (pd.DataFrame): Combined forecast set.
+
+    Returns:
+        pd.DataFrame: pd.DataFrame: A new DataFrame with an added 'peer_score' column.
+    """
+    df = df.copy()
+    orig_cols = df.columns.tolist()
+
+    # For each question, calculate average Brier score
+    df["question_avg_brier"] = df.groupby("question_pk")["brier_score"].transform("mean")
+
+    # Calculate peer score (positive is better than average)
+    df["peer_score"] = df["question_avg_brier"] - df["brier_score"]
+    return df[orig_cols + ["peer_score"]]
+
+
+def brier_skill_score(df: pd.DataFrame) -> pd.DataFrame:
+    """Compute the Brier Skill Score in absolute terms.
+
+    Args:
+        df (pd.DataFrame): Combined forecast set.
+
+    Returns:
+        pd.DataFrame: pd.DataFrame: A new DataFrame with an added 'brier_skill_score' column.
+    """
+    df = df.copy()
+    orig_cols = df.columns.tolist()
+
+    # Get reference model's predictions
+    mask_ref_model = (df["organization"] == BASELINE_ORG_NAIVE_MODEL["organization"]) & (
+        df["model"] == BASELINE_ORG_NAIVE_MODEL["model"]
+    )
+    ref_data = df.loc[mask_ref_model,].copy()
+    assert len(ref_data) > 0, "Reference model not found in data"
+
+    # Create mapping of question_id to reference brier score
+    ref_brier_by_question = ref_data.set_index("question_pk")["brier_score"].to_dict()
+
+    # Ensure the naive forecaster has forecast on all questions across all question sets
+    assert df["question_pk"].isin(ref_brier_by_question).all(), (
+        "Reference model must predict all questions across all question sets"
+    )
+
+    # Calculate Brier skill score per question
+    df["ref_brier"] = df["question_pk"].map(ref_brier_by_question)
+    df["brier_skill_score"] = df["ref_brier"] - df["brier_score"]
+
+    return df[orig_cols + ["brier_skill_score"]]
+
+
+def score_models(
+    df: pd.DataFrame,
+    scoring_funcs: List[Callable[[pd.DataFrame], pd.DataFrame]],
+    market_question_adjustment: MarketQuestionAdjustment,
+) -> pd.DataFrame:
+    """Score models using the scoring functions in `scoring_funcs`.
+
+    Args:
+        df (pd.DataFrame): Combined forecast set.
+        scoring_funcs (List[Callable[[pd.DataFrame], pd.DataFrame]]): List of scoring functions.
+        market_question_adjustment (MarketQuestionAdjustment): How to estimate market question
+            effects for the two-way fixed effects scoring function.
+
+    Returns:
+        Tuple[pd.DataFrame, Dict[str, pd.Series]]:
+            - df_leaderboard: Leaderboard with
+                - For each scoring function: '{func_name}_dataset', '{func_name}_market', and
+                  '{func_name}_overall'
+                - Count columns for dataset, market, and all questions
+                - The 'organization', 'model', 'model_pk' associated with a forecast set
+            - question_fixed_effects: Dict with optional entries
+              {'dataset': Series, 'market': Series} containing per-question fixed effects when
+              `save_question_fe=True`; otherwise {}.
+    """
+    df = df.copy()
+
+    if len(scoring_funcs) == 0:
+        raise ValueError("Must provide at least one scoring function.")
+
+    if not all([callable(f) for f in scoring_funcs]):
+        raise ValueError("`scoring_funcs` must contain callable scoring functions.")
+
+    # This can be any of the above, just choose the first as we require at least one scoring
+    # function in the list.
+    col_to_count_to_calculate_n = scoring_funcs[0].__name__
+
+    forecastbench_llm_identity_cols = [
+        col for col in llm_identities.LLM_IDENTITY_COLUMNS if col in df.columns
+    ]
+    leaderboard_model_type_cols = [
+        col
+        for col in (
+            "external_submission",
+            "forecastbench_llm",
+            "forecastbench_comparison_model",
+        )
+        if col in df.columns
+    ]
+    leaderboard_identity_cols = [
+        "organization",
+        "model_organization",
+        "model",
+        "model_pk",
+        *leaderboard_model_type_cols,
+        *forecastbench_llm_identity_cols,
+    ]
+    leaderboard_merge_cols = [
+        *leaderboard_identity_cols,
+        "first_forecast_due_date",
+    ]
+
+    results = []
+    question_fixed_effects = {}
+    for question_type in ["dataset", "market"]:
+        df_qt = df[get_masks(df)[question_type]].reset_index(drop=True)
+        df_qt = brier_score(df_qt)
+        for func in scoring_funcs:
+            name = func.__name__
+            if func is two_way_fixed_effects:
+                df_qt = func(
+                    df_qt,
+                    question_type,
+                    market_question_adjustment=market_question_adjustment,
+                ).rename(columns={name: f"{name}_{question_type}"})
+            else:
+                df_qt = func(df_qt).rename(columns={name: f"{name}_{question_type}"})
+
+        if two_way_fixed_effects in scoring_funcs:
+            question_fixed_effects[question_type] = df_qt[
+                [
+                    "forecast_due_date",
+                    "source",
+                    "id",
+                    "horizon",
+                    "question_fixed_effect",
+                ]
+            ].drop_duplicates(ignore_index=True)
+            df_qt = df_qt.drop(columns="question_fixed_effect")
+
+        # Calculate the mean score for each model identity while preserving display and
+        # ForecastBench LLM identity columns on the leaderboard row. Non-LLM reference models have
+        # null LLM identity fields, so keep null grouping keys instead of dropping those rows.
+        question_type_result = (
+            df_qt.groupby(
+                leaderboard_identity_cols,
+                dropna=False,
+            )
+            .agg(
+                **{
+                    f"{func.__name__}_{question_type}": (f"{func.__name__}_{question_type}", "mean")
+                    for func in scoring_funcs
+                },
+                **{
+                    f"n_{question_type}": (
+                        f"{col_to_count_to_calculate_n}_{question_type}",
+                        "count",
+                    )
+                },
+                first_forecast_due_date=("first_forecast_due_date", "min"),
+            )
+            .reset_index()
+        )
+        results.append(question_type_result)
+
+    assert len(results) == 2, "Results should only have 2 entries."
+    df_leaderboard = pd.merge(
+        results[0],
+        results[1],
+        on=leaderboard_merge_cols,
+        how="outer",
+    )
+
+    for func in scoring_funcs:
+        name = func.__name__
+        df_leaderboard[f"{name}_overall"] = (
+            df_leaderboard[f"{name}_dataset"] + df_leaderboard[f"{name}_market"]
+        ) / 2
+
+    df_leaderboard["n_overall"] = df_leaderboard["n_dataset"] + df_leaderboard["n_market"]
+
+    if two_way_fixed_effects in scoring_funcs:
+        df_leaderboard = rescale_difficulty_adjusted_brier(
+            df_leaderboard=df_leaderboard,
+            primary_scoring_func=two_way_fixed_effects,
+        )
+        df_leaderboard = apply_brier_index_transform(
+            df_leaderboard=df_leaderboard,
+            primary_scoring_func=two_way_fixed_effects,
+        )
+    return df_leaderboard, question_fixed_effects
+
+
+def _question_level_bootstrap(
+    df: pd.DataFrame, random_state: int | np.random.RandomState | None = None
+) -> pd.DataFrame:
+    """Resample question_pks with replacement for one bootstrap replicate of a group.
+
+    Args:
+        df (pd.DataFrame): Rows for one ``(forecast_due_date, source)`` group.
+        random_state: Seed / ``RandomState`` for reproducible resampling. ``None`` (the default)
+            draws from fresh entropy, matching the historical non-deterministic behavior.
+
+    Returns:
+        pd.DataFrame: Rows for the resampled questions, with ``question_pk`` made unique per draw.
+    """
+    questions = df["question_pk"].drop_duplicates()
+    questions_bs = questions.sample(frac=1, replace=True, random_state=random_state)
+    sample = questions_bs.to_frame(name="question_pk")
+    sample["draw"] = sample.groupby("question_pk").cumcount()
+    retval = pd.merge(sample, df, on="question_pk", how="left")
+    # `question_pk` must be overwritten with a unique id in case it was sampled more than once.
+    # This ensures that `two_way_fixed_effects()` treats each drawn question separately (instead
+    # of treating multiple draws as one question).
+    retval["question_pk"] = (
+        retval["question_pk"].astype(str) + "_sim_id_" + retval["draw"].astype(str)
+    )
+    return retval.drop(columns=["draw"])
+
+
+@decorator.log_runtime
+def generate_simulated_leaderboards(
+    df: pd.DataFrame,
+    primary_scoring_func: Callable[[pd.DataFrame], pd.DataFrame],
+    market_question_adjustment: MarketQuestionAdjustment,
+    N: int = N_REPLICATES,
+) -> pd.DataFrame:
+    """Generate simulated leaderboards by bootstrap sampling.
+
+    Args:
+        df (pd.DataFrame): Combined forecast set to sample from.
+        primary_scoring_func (Callable[[pd.DataFrame], pd.DataFrame]): Function to compute the
+                     primary overall score.
+        market_question_adjustment (MarketQuestionAdjustment): How to estimate market question
+            effects.
+        N (int): Number of bootstrap replicates to generate.
+
+    Returns:
+        pd.DataFrame: Simulated scores with each column representing a replicate.
+    """
+    logger.info(colored(f"Generate {N} simulated leaderboards", "red"))
+    if not callable(primary_scoring_func):
+        raise ValueError("The primary scoring function must be callable.")
+
+    df = df.copy()
+
+    # For testing/reproducibility only: when `env.RANDOM_SEED` is set, replicate ``i`` uses
+    # ``seed + i`` so each loky child process is deterministic independent of process RNG state.
+    # It is unset in deployment, which preserves the historical non-deterministic behaviour.
+    seed = env.RANDOM_SEED
+
+    def bootstrap_and_score(idx):
+        logger.info(f"[replicate {idx + 1}/{N}] starting...")
+        random_state = None if seed is None else np.random.RandomState(seed + idx)
+        df_bs = (
+            df.groupby(["forecast_due_date", "source"])
+            .apply(_question_level_bootstrap, include_groups=False, random_state=random_state)
+            .reset_index()
+        )
+        try:
+            df_simulated_leaderboard, _ = score_models(
+                df=df_bs,
+                scoring_funcs=[primary_scoring_func],
+                market_question_adjustment=market_question_adjustment,
+            )
+        except Exception as e:
+            traceback.print_exc()
+            raise e
+
+        df_scores = df_simulated_leaderboard.set_index("model_pk")
+        return (
+            df_scores[f"{BRIER_INDEX_COL_PREFIX}_dataset"].rename(
+                f"{SIM_BOOTSTRAP_COL_PREFIX}_{idx}"
+            ),
+            df_scores[f"{BRIER_INDEX_COL_PREFIX}_market"].rename(
+                f"{SIM_BOOTSTRAP_COL_PREFIX}_{idx}"
+            ),
+            df_scores[f"{BRIER_INDEX_COL_PREFIX}_overall"].rename(
+                f"{SIM_BOOTSTRAP_COL_PREFIX}_{idx}"
+            ),
+        )
+
+    logger.info(f"Simulating using {env.NUM_CPUS} CPU(s).")
+    results = Parallel(
+        n_jobs=env.NUM_CPUS,
+        backend="loky",
+        verbose=0,
+        batch_size="auto",
+    )(delayed(bootstrap_and_score)(i) for i in range(N))
+
+    df_simulated_scores_dataset = pd.concat([r[0] for r in results], axis=1)
+    df_simulated_scores_market = pd.concat([r[1] for r in results], axis=1)
+    df_simulated_scores_overall = pd.concat([r[2] for r in results], axis=1)
+    logger.info("Done creating df_simulated_scores!")
+
+    assert (
+        df_simulated_scores_dataset.shape[1] == df_simulated_scores_market.shape[1]
+        and df_simulated_scores_overall.shape[1] == df_simulated_scores_market.shape[1]
+    ), "Assertion failed: Check simulation in `generate_simulated_leaderboards`."
+    logger.info(f"Simulated {df_simulated_scores_overall.shape[1]} / {N}.")
+    return df_simulated_scores_dataset, df_simulated_scores_market, df_simulated_scores_overall
+
+
+def get_confidence_interval(
+    df_leaderboard: pd.DataFrame,
+    df_simulated_scores: pd.DataFrame,
+    question_type: str,
+    primary_scoring_func: Callable[[pd.DataFrame], pd.DataFrame],
+    method: str = "percentile",
+    show_histograms: bool = False,
+) -> pd.DataFrame:
+    """Calculate confidence intervals for leaderboard scores.
+
+    Args:
+        df_leaderboard (pd.DataFrame): Leaderboard.
+        df_simulated_scores (pd.DataFrame): Bootstrapped replicates of overall scores.
+        question_type (str): one of "dataset", "market", "overall"
+        primary_scoring_func (Callable[[pd.DataFrame], pd.DataFrame]): Function to compute the
+                     primary overall score.
+        method (str): CI calculation method, either 'percentile' or 'bca'.
+        show_histograms (bool): Whether to display simulated score histograms.
+
+    Returns:
+        pd.DataFrame: Leaderboard with added lower and upper CI columns.
+    """
+    logger.info(colored("Calculating CIs", "red"))
+    if question_type not in ["dataset", "market", "overall"]:
+        raise ValueError(f"question type {question_type} not valid.")
+
+    if env.RUNNING_LOCALLY and show_histograms:
+        models = [
+            # list model_pk's to plot
+        ]
+        if models:
+            import plotly.graph_objects as go
+
+            fig = go.Figure()
+            for model in models:
+                fig.add_trace(
+                    go.Histogram(
+                        x=df_simulated_scores.loc[model].values, name=str(model), opacity=0.7
+                    )
+                )
+            fig.update_layout(
+                barmode="overlay",
+                title="Simulated Score Distributions",
+                xaxis_title="Score",
+                yaxis_title="Count",
+            )
+            fig.show()
+
+    alpha = 0.05
+    lower_alpha = alpha / 2
+    upper_alpha = 1 - lower_alpha
+    method = method.lower()
+    if method == "bca":
+        # BCa notation from page 190 of https://hastie.su.domains/CASI/index.html
+        theta_hat = df_leaderboard[f"{BRIER_INDEX_COL_PREFIX}_{question_type}"].values
+        bs = df_simulated_scores.reindex(df_leaderboard["model_pk"]).values
+        p0 = np.mean(bs < theta_hat[:, None], axis=1)
+        z0 = norm.ppf(p0)
+        z_alpha = norm.ppf([lower_alpha, upper_alpha])
+        alphas = norm.cdf(2 * z0[:, None] + z_alpha)
+        lower = pd.Series(
+            [np.percentile(bs[i], alphas[i, 0] * 100) for i in range(bs.shape[0])],
+            index=df_simulated_scores.index,
+        )
+        upper = pd.Series(
+            [np.percentile(bs[i], alphas[i, 1] * 100) for i in range(bs.shape[0])],
+            index=df_simulated_scores.index,
+        )
+    elif method == "percentile":
+        lower = df_simulated_scores.quantile(lower_alpha, axis=1)
+        upper = df_simulated_scores.quantile(upper_alpha, axis=1)
+    else:
+        raise ValueError(f"Value passed for method ({method}) is not valid.")
+
+    col_prefix = f"{BRIER_INDEX_COL_PREFIX}_{question_type}"
+    df_leaderboard[f"{col_prefix}_ci_lower"] = df_leaderboard["model_pk"].map(lower).values
+    df_leaderboard[f"{col_prefix}_ci_upper"] = df_leaderboard["model_pk"].map(upper).values
+    return df_leaderboard
+
+
+def get_comparison_p_val_col(comparison: dict) -> str:
+    """Return the column name returned by `get_comparison_p_val()`.
+
+    Args:
+        comparison (dict): A dictionary containing model comparison details
+
+    Returns:
+        str: The column name
+    """
+    return f"p_value_one_sided_{comparison['model']}"
+
+
+def get_comparison_model_index(df: pd.DataFrame, comparison: dict) -> int:
+    """
+    Return the index of a row in a DataFrame matching comparison.
+
+    Args:
+        df (pandas.DataFrame): DataFrame containing model data with 'model', 'organization', and
+            'model_organization' columns.
+        comparison (dict): Dictionary with 'model', 'organization', and 'model_organization' keys
+            specifying the model to find.
+
+    Returns:
+        int: The index of the matching row in the DataFrame.
+    """
+    comparison_mask = (
+        (df["model"] == comparison["model"])
+        & (df["organization"] == comparison["organization"])
+        & (df["model_organization"] == comparison["model_organization"])
+    )
+    idx = df.index[comparison_mask]
+    if len(idx) != 1:
+        raise ValueError(f"Error with provided comparison model: {comparison}.")
+    return idx[0]
+
+
+def get_comparison_p_val(
+    df_leaderboard: pd.DataFrame,
+    df_simulated_scores: pd.DataFrame,
+    comparison: dict,
+    question_type: str = "overall",
+    is_centered: bool = False,
+) -> pd.DataFrame:
+    """Compute one-sided p-values comparing each model to the human comparison groups.
+
+    NB: This function only works for scoring methods where higher scores are
+        better. Adjust if testing for scoring methods where lower is better.
+
+    Args:
+        df_leaderboard (pd.DataFrame): Leaderboard.
+        df_simulated_scores (pd.DataFrame): Bootstrapped replicates of overall scores.
+        comparison (dict): dict showing model to use for comparison.
+        question_type (str): Question type to compare on (e.g. "overall", "dataset", "market").
+        is_centered (bool): Center p-value calculation on observed score differences.
+
+    Returns:
+        pd.DataFrame: Leaderboard with updated p_value column.
+    """
+    if not comparison:
+        raise ValueError("Must provide comparison")
+    logger.info(colored(f"Comparing to {comparison['model']}", "red"))
+
+    score_col = f"{BRIER_INDEX_COL_PREFIX}_{question_type}"
+    if score_col not in df_leaderboard.columns:
+        raise ValueError(f"Metric {score_col} not found in leaderboard DataFrame.")
+
+    out_col = get_comparison_p_val_col(comparison)
+    comparison_idx = get_comparison_model_index(df=df_leaderboard, comparison=comparison)
+    comparison_model_pk = df_leaderboard.loc[comparison_idx, "model_pk"]
+    comparison_mean_score = df_leaderboard.loc[comparison_idx, score_col]
+
+    sim_comparison_scores = df_simulated_scores.loc[comparison_model_pk]
+
+    if is_centered:
+        observed_diffs = comparison_mean_score - df_leaderboard[score_col]
+        observed_diff_dict = dict(zip(df_leaderboard["model_pk"], observed_diffs))
+        p_value_one_sided = {
+            model_pk: np.mean(
+                (
+                    (sim_comparison_scores.values - sim_comp_scores.values)
+                    - observed_diff_dict[model_pk]
+                )
+                >= observed_diff_dict[model_pk]
+            )
+            for model_pk, sim_comp_scores in df_simulated_scores.iterrows()
+        }
+    else:
+        comparison_df = df_simulated_scores.ge(sim_comparison_scores, axis=1)
+        p_value_one_sided = comparison_df.mean(axis=1)
+
+    df_leaderboard[out_col] = df_leaderboard["model_pk"].map(p_value_one_sided)
+    df_leaderboard.loc[comparison_idx, out_col] = -1
+
+    if comparison == HUMAN_PUBLIC:
+        # Switch directions for the one-sided test for the general public as LLMs have already
+        # surpassed them.
+        df_leaderboard[out_col] = 1 - df_leaderboard[out_col]
+
+    return df_leaderboard
+
+
+def get_simulation_performance_metrics(
+    df_leaderboard: pd.DataFrame,
+    df_simulated_scores: pd.DataFrame,
+) -> pd.DataFrame:
+    """Calculate model metrics in the simulation data.
+
+    Args:
+        df_leaderboard (pd.DataFrame): Leaderboard.
+        df_simulated_scores (pd.DataFrame): Bootstrapped replicates.
+
+    Returns:
+        pd.DataFrame: Leaderboard with two new columns:
+            - pct_times_best_performer: percent of simulations each model was best.
+            - pct_times_top_5_percentile: percent of simulations each model was in top 5th percentile.
+    """
+    metrics = {
+        "pct_times_best_performer": lambda df: df.idxmax(axis=0).value_counts(),
+        "pct_times_top_5_percentile": lambda df: df.ge(df.quantile(0.95, axis=0)).sum(axis=1),
+    }
+
+    for col, func in metrics.items():
+        counts = func(df_simulated_scores)
+        pct = counts / df_simulated_scores.columns.size * 100
+        df_leaderboard[col] = df_leaderboard["model_pk"].map(pct).fillna(0)
+
+    return df_leaderboard
+
+
+def rescale_difficulty_adjusted_brier(
+    df_leaderboard: pd.DataFrame,
+    primary_scoring_func: Callable[[pd.DataFrame], pd.DataFrame],
+) -> pd.DataFrame:
+    """Rescale scores such that Always 0.5 has an average score of 0.25.
+
+    Args:
+        df_leaderboard (pd.DataFrame): Leaderboard.
+        primary_scoring_func (Callable[[pd.DataFrame], pd.DataFrame]):
+            Function used to compute the primary overall score.
+
+    Returns:
+        pd.DataFrame: Leaderboard with updated scores.
+    """
+    columns_to_rescale = [
+        f"{primary_scoring_func.__name__}_dataset",
+        f"{primary_scoring_func.__name__}_market",
+        f"{primary_scoring_func.__name__}_overall",
+    ]
+
+    for col in columns_to_rescale:
+        always_0p5_score = df_leaderboard.loc[
+            (df_leaderboard["organization"] == ALWAYS_05_MODEL["organization"])
+            & (df_leaderboard["model"] == ALWAYS_05_MODEL["model"]),
+            col,
+        ].iloc[0]
+        df_leaderboard[col] += 0.25 - always_0p5_score
+
+    return df_leaderboard
+
+
+def apply_brier_index_transform(
+    df_leaderboard: pd.DataFrame,
+    primary_scoring_func: Callable[[pd.DataFrame], pd.DataFrame],
+) -> pd.DataFrame:
+    """Transform rescaled difficulty-adjusted Brier scores to the Brier Index scale.
+
+    Brier Index = (1 - sqrt(rescaled_score)) * 100
+
+    The scale is 0-100 where 100 = perfect, 50 = always predicting 50%, 0 = maximally wrong.
+    Higher is better. The original difficulty-adjusted Brier columns are preserved.
+
+    Args:
+        df_leaderboard (pd.DataFrame): Leaderboard with rescaled scores.
+        primary_scoring_func (Callable[[pd.DataFrame], pd.DataFrame]):
+            Function used to compute the primary overall score.
+
+    Returns:
+        pd.DataFrame: Leaderboard with new brier_index_* columns added.
+    """
+    for question_type in ["dataset", "market", "overall"]:
+        src_col = f"{primary_scoring_func.__name__}_{question_type}"
+        dst_col = f"{BRIER_INDEX_COL_PREFIX}_{question_type}"
+        df_leaderboard[dst_col] = (1 - np.sqrt(df_leaderboard[src_col])) * 100
+
+    return df_leaderboard
+
+
+def get_model_release_date_info(
+    df: pd.DataFrame,
+    add_model_age_at_due_date: bool = True,
+    add_model_release_date: bool = False,
+) -> pd.DataFrame:
+    """Add the requested column(s) related to the model release date.
+
+    Args:
+        df (pd.DataFrame): Combined forecast set.
+        add_model_age_at_due_date (bool, optional): If True, adds the 'model_age_at_due_date' column
+            with the number of days between the model release date and forecast due date.
+            Defaults to True.
+        add_model_release_date (bool, optional): If True, includes the 'model_release_date' column
+            in the output. Defaults to False.
+
+    Returns:
+        pd.DataFrame: The input DataFrame with additional columns 'model_age_at_due_date'
+            (if `add_model_age_at_due_date` is True) and/or 'model_release_date' (if
+            `add_model_release_date` is True). ForecastBench-created benchmark models are
+            retained with missing release dates. ForecastBench LLM release dates come from
+            `model_run_key`.
+    """
+    df = df.copy()
+    cols_to_return = df.columns.tolist()
+
+    df["model_release_date"] = pd.NaT
+    df.loc[df["external_submission"], "model_release_date"] = pd.to_datetime(
+        df.loc[df["external_submission"], "first_forecast_due_date"],
+        errors="raise",
+    )
+    df.loc[df["forecastbench_llm"], "model_release_date"] = pd.to_datetime(
+        df.loc[df["forecastbench_llm"], "model_run_key"].map(
+            lambda model_run_key: model_runs.get_model_run(model_run_key).release_date
+        )
+    )
+    df["model_release_date"] = pd.to_datetime(df["model_release_date"]).dt.date
+
+    if add_model_release_date:
+        cols_to_return += ["model_release_date"]
+
+    if add_model_age_at_due_date:
+        cols_to_return += ["model_age_at_due_date"]
+        df["model_age_at_due_date"] = (
+            pd.to_datetime(df["forecast_due_date"]) - pd.to_datetime(df["model_release_date"])
+        ).dt.days
+
+    return df[cols_to_return]
+
+
+def find_sota_models(
+    df: pd.DataFrame,
+    bootstrap_col: str,
+) -> pd.DataFrame:
+    """Identify SOTA models for a given bootstrap column, allowing co-SOTAs.
+
+    Args:
+        df (pd.DataFrame): Simulated data for models to consider, sorted by model_release_date
+            with nan model_release_dates dropped
+        bootstrap_col (str): Name of the column holding scores for a single bootstraps
+            iteration (e.g., 'bootstrap_0').
+
+    Returns:
+        pd.DataFrame: Subset of rows corresponding to SOTA/co-SOTA models with columns
+            ['model_pk', 'model_release_date', bootstrap_col], sorted by release date.
+            Rows with missing release dates or scores are excluded.
+    """
+    cols = ["model_pk", "model", "model_release_date", bootstrap_col]
+    if "model_release_date_ordinal" in df.columns:
+        cols += ["model_release_date_ordinal"]
+    df = df[cols].copy()
+    best = -np.inf
+    tol = 1e-10
+    chosen_idx = []
+    for _, g in df.groupby("model_release_date", sort=True):
+        g_sorted = g.sort_values([bootstrap_col, "model"], ascending=[False, True])
+        best_of_day = g_sorted.iloc[0][bootstrap_col]
+        if best_of_day > best + tol:
+            chosen_idx.append(g_sorted.index[0])
+            best = best_of_day
+
+    return df.loc[chosen_idx, cols].sort_values("model_release_date").reset_index(drop=True)
+
+
+def calculate_sota_super_intersection_date(
+    df: pd.DataFrame,
+    superforecaster_median: float,
+    bootstrap_col: str,
+) -> Union[float, NaTType]:
+    """Estimate when the SOTA trend intersects the superforecaster median.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing 'model_release_date' and the given
+            `bootstrap_col`. Rows with missing values are ignored implicitly by NumPy.
+        superforecaster_median (float): The superforecaster benchmark score to intersect.
+        bootstrap_col (str): Name of the score column to regress (e.g., 'bootstrap_0').
+
+    Returns:
+        Union[float, pd.NaT]: The intersection expressed as an ordinal day number if
+            finite, otherwise `pd.NaT`. To convert an ordinal to a calendar date, use:
+            `pd.Timestamp.fromordinal(int(round(ordinal))).normalize()`.
+    """
+    if df.empty:
+        return pd.NaT
+
+    x = df["model_release_date_ordinal"].to_numpy(dtype=float)
+    y = df[bootstrap_col].to_numpy(dtype=float)
+    if x.size < 3 or np.unique(x).size < 3:
+        return pd.NaT
+
+    xm = x.mean()
+    ym = y.mean()
+    xc = x - xm
+    yc = y - ym
+    denom = np.dot(xc, xc)
+    if denom == 0:
+        return pd.NaT
+
+    m = np.dot(xc, yc) / denom
+    if not np.isfinite(m) or m <= 0:
+        return pd.NaT
+
+    b = ym - m * xm
+    xi = (superforecaster_median - b) / m
+    return float(xi) if np.isfinite(xi) else pd.NaT
+
+
+def summarize_parity_dates(all_dates: dict, leaderboard_intersection_dates: dict) -> dict:
+    """Summarize bootstrap parity date samples into a 95% interval and median per group.
+
+    Args:
+        all_dates (dict[str, dict[object, Sequence[float]]]): Mapping from
+            question type to leaderboard to a sequence of ordinal day numbers.
+        leaderboard_intersection_dates (dict[str, dict[object, Sequence[float]]]): Mapping from
+            question type to leaderboard to the leaderboard intersection date.
+
+    Returns:
+        dict[str, dict[object, Optional[dict[str, str]]]]: For each question type
+            and leaderboard, either None (no finite samples) or a dict with:
+            {'lower': 'Mon YYYY', 'median': 'Mon YYYY', 'upper': 'Mon YYYY'}.
+
+    Notes:
+        - Ordinals are rounded to the nearest day before formatting.
+        - Percentiles are computed via np.quantile at [0.025, 0.5, 0.975].
+    """
+
+    def fmt(ordinal: float) -> str:
+        return pd.Timestamp.fromordinal(int(round(ordinal))).strftime("%B %Y") if ordinal else ""
+
+    retval = {}
+    for question_type, leaderboards in all_dates.items():
+        retval[question_type] = {}
+        for leaderboard, super_parity_dates in leaderboards.items():
+            a = np.asarray(super_parity_dates, dtype=float)
+            a = a[np.isfinite(a)]
+            logger.info(f"Summarizing parity date {question_type} {leaderboard} {len(a)}")
+            if a.size == 0:
+                logger.error(
+                    colored(
+                        f"PROBLEM CALCULATING PARITY DATE for {question_type}, {leaderboard}", "red"
+                    )
+                )
+                retval[question_type][leaderboard] = None
+                continue
+            q = np.quantile(a, [0.025, 0.975])
+            retval[question_type][leaderboard] = {
+                "lower": fmt(q[0]),
+                "upper": fmt(q[1]),
+                "intersection": fmt(leaderboard_intersection_dates[question_type][leaderboard]),
+            }
+    return retval
+
+
+def get_sota_super_parity_expected_dates(
+    df_leaderboard: pd.DataFrame,
+    df_simulated_scores_dataset: pd.DataFrame,
+    df_simulated_scores_market: pd.DataFrame,
+    df_simulated_scores_overall: pd.DataFrame,
+    leaderboard_type: LeaderboardType,
+) -> dict:
+    """Compute LLM–superforecaster parity dates per question type and leaderboard.
+
+    Args:
+        df_leaderboard (pd.DataFrame): Leaderboard.
+        df_simulated_scores_dataset (pd.DataFrame): Simulated scores for dataset questions.
+        df_simulated_scores_market (pd.DataFrame): Simulated scores for market questions.
+        df_simulated_scores_overall (pd.DataFrame): Simulated scores for overall questions.
+        leaderboard_type (LeaderboardType): The leaderboard to summarize.
+
+    Returns:
+        Dict[str, Dict[str, List[float]]]: Mapping from question type
+            ('dataset' | 'market' | 'overall') to leaderboard type string to a list of
+            intersection dates expressed as ordinal day numbers. Lists may be empty when an
+            intersection cannot be estimated for a bootstrap.
+    """
+    logger.info("Get SOTA LLM Super parity dates.")
+
+    # Add dates to simulated output
+    if "model_release_date" not in df_leaderboard.columns:
+        df_leaderboard = get_model_release_date_info(
+            df=df_leaderboard.copy(),
+            add_model_age_at_due_date=False,
+            add_model_release_date=True,
+        )
+
+    df_leaderboard = df_leaderboard[
+        df_leaderboard["organization"] == constants.BENCHMARK_NAME
+    ].reset_index(drop=True)
+
+    def prep_df_to_find_sota_models(df: pd.DataFrame):
+        super_mask = (
+            (df["model"] == HUMAN_SUPERFORECASTER["model"])
+            & (df["organization"] == HUMAN_SUPERFORECASTER["organization"])
+            & (df["model_organization"] == HUMAN_SUPERFORECASTER["model_organization"])
+        )
+        df_super = df.loc[super_mask]
+        if df_super.shape[0] != 1:
+            raise ValueError("Could not find supers in simulated data")
+        return df.dropna(subset=["model_release_date"], ignore_index=True), df_super
+
+    def create_ordinal_model_release_date(df):
+        df["model_release_date_ordinal"] = np.nan
+        df_model_release_date_datetime = pd.to_datetime(df["model_release_date"], errors="coerce")
+        mask = df_model_release_date_datetime.notna()
+        df.loc[mask, "model_release_date_ordinal"] = df_model_release_date_datetime[mask].map(
+            pd.Timestamp.toordinal
+        )
+        return df
+
+    df_leaderboard = create_ordinal_model_release_date(df_leaderboard)
+
+    df_model = df_leaderboard[
+        [
+            "organization",
+            "model_organization",
+            "model_pk",
+            "model",
+            "model_release_date",
+            "model_release_date_ordinal",
+        ]
+    ].drop_duplicates(ignore_index=True)
+    df_model = df_model[df_model["organization"] == constants.BENCHMARK_NAME].reset_index(drop=True)
+    df_model["release_date"] = pd.to_datetime(df_model["model_release_date"]).dt.date
+
+    dataframes = {
+        "dataset": df_simulated_scores_dataset.copy(),
+        "market": df_simulated_scores_market.copy(),
+        "overall": df_simulated_scores_overall.copy(),
+    }
+    question_types = dataframes.keys()
+    for key in dataframes.keys():
+        df_tmp = pd.merge(
+            dataframes[key],
+            df_model,
+            on="model_pk",
+            how="inner",
+        )
+        cols_to_keep = list(dataframes[key].columns) + [
+            "organization",
+            "model_organization",
+            "model",
+            "model_pk",
+            "model_release_date",
+            "model_release_date_ordinal",
+        ]
+        dataframes[key] = df_tmp.sort_values("model_release_date", ignore_index=True)[cols_to_keep]
+
+    leaderboard_key = leaderboard_type.value
+
+    # Compile LLM-Super parity dates
+    sim_95pct_ci = {question_type: {leaderboard_key: None} for question_type in question_types}
+    leaderboard_intersection_date = {
+        question_type: {leaderboard_key: None} for question_type in question_types
+    }
+
+    for question_type in question_types:
+        leaderboard_score_col = f"{BRIER_INDEX_COL_PREFIX}_{question_type}"
+        # Get leaderboard last SOTA release date and intersection date
+        df_leaderboard_prepped, df_leaderboard_super = prep_df_to_find_sota_models(
+            df=df_leaderboard
+        )
+        df_leaderboard_sota_models = find_sota_models(
+            df=df_leaderboard_prepped,
+            bootstrap_col=leaderboard_score_col,
+        )
+        df_leaderboard_super = df_leaderboard_super[leaderboard_score_col]
+        if df_leaderboard_super.shape[0] != 1:
+            raise ValueError("Could not find supers in leaderboard data")
+        superforecaster_median = float(df_leaderboard_super.iloc[0])
+        leaderboard_intersection_date[question_type][leaderboard_key] = (
+            calculate_sota_super_intersection_date(
+                df=df_leaderboard_sota_models,
+                superforecaster_median=superforecaster_median,
+                bootstrap_col=leaderboard_score_col,
+            )
+        )
+        leaderboard_last_sota_release_date_ordinal = float(
+            pd.to_datetime(df_leaderboard_sota_models["model_release_date"]).max().toordinal()
+        )
+
+        # Get intersection dates for all replicates of sim data
+        df_sim_data = dataframes[question_type]
+        bootstrap_cols = [c for c in df_sim_data.columns if c.startswith(SIM_BOOTSTRAP_COL_PREFIX)]
+        superforecaster_parity_dates = []
+        df_sim_data_prepped, df_sim_data_super = prep_df_to_find_sota_models(df=df_sim_data)
+        for col in bootstrap_cols:
+            df_sota_models = find_sota_models(
+                df=df_sim_data_prepped,
+                bootstrap_col=col,
+            )
+            df_sim_data_super_boot = df_sim_data_super[col]
+            if df_sim_data_super_boot.shape[0] != 1:
+                raise ValueError("Could not find supers in simulated data")
+            superforecaster_median = float(df_sim_data_super_boot.iloc[0])
+            intersection_date_ordinal = calculate_sota_super_intersection_date(
+                df=df_sota_models,
+                superforecaster_median=superforecaster_median,
+                bootstrap_col=col,
+            )
+            if isinstance(intersection_date_ordinal, float) and np.isfinite(
+                intersection_date_ordinal
+            ):
+                if intersection_date_ordinal > leaderboard_last_sota_release_date_ordinal:
+                    superforecaster_parity_dates.append(intersection_date_ordinal)
+            elif pd.isna(intersection_date_ordinal):
+                logger.warning(f"Skipping invalid intersection_date_ordinal (pd.NaT) for {col}")
+            else:
+                logger.warning(
+                    "Unexpected intersection_date_ordinal type: "
+                    f"{type(intersection_date_ordinal)} for {col}"
+                )
+
+        if not superforecaster_parity_dates:
+            slack.send_message("*PROBLEM CALCULATING LLM PARITY DATES*")
+        sim_95pct_ci[question_type][leaderboard_key] = superforecaster_parity_dates
+
+    logger.info("Done getting SOTA LLM Super parity dates.")
+    return summarize_parity_dates(sim_95pct_ci, leaderboard_intersection_date)
+
+
+def make_leaderboard(
+    leaderboard_entries: List[pd.DataFrame],
+    leaderboard_type: LeaderboardType,
+) -> Dict[str, str]:
+    """Create and write the full leaderboard from processed entries.
+
+    Args:
+        leaderboard_entries (List[pd.DataFrame]): Processed forecasts by model and date.
+        leaderboard_type (LeaderboardType): The leaderboard to make.
+
+    Returns:
+        None
+    """
+    logger.info(colored(f"Making {leaderboard_type.value} leaderboard", "red"))
+
+    df = combine_forecasting_rounds(leaderboard_entries)
+    df = get_model_release_date_info(
+        df=df,
+        add_model_age_at_due_date=True,
+        add_model_release_date=False,
+    )
+    if leaderboard_type == LeaderboardType.BASELINE:
+        df = filter_to_baseline_leaderboard_models(df=df)
+        market_question_adjustment = MarketQuestionAdjustment.TWO_WAY_FIXED_EFFECTS
+    elif leaderboard_type == LeaderboardType.TOURNAMENT:
+        df = filter_to_tournament_leaderboard_models(df=df)
+        market_question_adjustment = MarketQuestionAdjustment.MARKET_BRIER
+    else:
+        raise ValueError(f"Unsupported leaderboard type for full leaderboard: {leaderboard_type}")
+
+    # The scoring functions to consider
+    primary_scoring_func = two_way_fixed_effects
+    scoring_funcs = [
+        primary_scoring_func,
+        peer_score,
+        brier_skill_score,
+    ]
+
+    # Score
+    df_leaderboard, question_fixed_effects = score_models(
+        df=df,
+        scoring_funcs=scoring_funcs,
+        market_question_adjustment=market_question_adjustment,
+    )
+
+    # Get simulated scores
+    df_simulated_scores_dataset, df_simulated_scores_market, df_simulated_scores_overall = (
+        generate_simulated_leaderboards(
+            df=df,
+            primary_scoring_func=primary_scoring_func,
+            market_question_adjustment=market_question_adjustment,
+            N=N_REPLICATES,
+        )
+    )
+
+    # CIs
+    df_leaderboard = get_confidence_interval(
+        df_leaderboard=df_leaderboard,
+        df_simulated_scores=df_simulated_scores_dataset,
+        question_type="dataset",
+        primary_scoring_func=primary_scoring_func,
+    )
+    df_leaderboard = get_confidence_interval(
+        df_leaderboard=df_leaderboard,
+        df_simulated_scores=df_simulated_scores_market,
+        question_type="market",
+        primary_scoring_func=primary_scoring_func,
+    )
+    df_leaderboard = get_confidence_interval(
+        df_leaderboard=df_leaderboard,
+        df_simulated_scores=df_simulated_scores_overall,
+        question_type="overall",
+        primary_scoring_func=primary_scoring_func,
+    )
+
+    # Explore SOTA graph trend line
+    llm_super_parity_dates = get_sota_super_parity_expected_dates(
+        df_leaderboard=df_leaderboard,
+        df_simulated_scores_dataset=df_simulated_scores_dataset,
+        df_simulated_scores_market=df_simulated_scores_market,
+        df_simulated_scores_overall=df_simulated_scores_overall,
+        leaderboard_type=leaderboard_type,
+    )
+
+    # Compare to human models
+    for comparison in HUMAN_MODELS:
+        df_leaderboard = get_comparison_p_val(
+            df_leaderboard=df_leaderboard,
+            df_simulated_scores=df_simulated_scores_overall,
+            comparison=comparison,
+        )
+
+    # Simulation performance measures
+    df_leaderboard = get_simulation_performance_metrics(
+        df_leaderboard=df_leaderboard,
+        df_simulated_scores=df_simulated_scores_overall,
+    )
+
+    # Write question fixed effects
+    write_question_fixed_effects(
+        question_fixed_effects=question_fixed_effects,
+        leaderboard_type=leaderboard_type,
+    )
+
+    # Write LLM Super parity dates
+    write_llm_super_parity_dates(
+        parity_dates=llm_super_parity_dates,
+        leaderboard_type=leaderboard_type,
+    )
+
+    # Write leaderboard
+    df_leaderboard = get_model_release_date_info(
+        df=df_leaderboard,
+        add_model_age_at_due_date=False,
+        add_model_release_date=True,
+    )
+    write_leaderboard(
+        df=df_leaderboard,
+        primary_scoring_func=primary_scoring_func,
+        leaderboard_type=leaderboard_type,
+    )
+
+
+def make_preliminary_leaderboard(
+    leaderboard_entries: List[pd.DataFrame],
+) -> None:
+    """Create and write the preliminary leaderboard from processed entries.
+
+    Args:
+        leaderboard_entries (List[pd.DataFrame]): Processed forecasts by model and date.
+
+    Returns:
+        None
+    """
+    logger.info(colored("Making preliminary leaderboard", "red"))
+
+    df = combine_forecasting_rounds(leaderboard_entries)
+    df = get_model_release_date_info(
+        df=df,
+        add_model_age_at_due_date=True,
+        add_model_release_date=False,
+    )
+    df = filter_to_tournament_leaderboard_models(df=df)
+
+    primary_scoring_func = two_way_fixed_effects
+    scoring_funcs = [
+        primary_scoring_func,
+        peer_score,
+        brier_skill_score,
+    ]
+
+    # Score
+    df_leaderboard, _ = score_models(
+        df=df,
+        scoring_funcs=scoring_funcs,
+        market_question_adjustment=MarketQuestionAdjustment.MARKET_BRIER,
+    )
+
+    # Get simulated scores (only dataset scores are used)
+    # Market scores are discarded here, but the bootstrap still scores them; use market Brier
+    # because it is faster than estimating market 2FE.
+    df_simulated_scores_dataset, _, _ = generate_simulated_leaderboards(
+        df=df,
+        primary_scoring_func=primary_scoring_func,
+        market_question_adjustment=MarketQuestionAdjustment.MARKET_BRIER,
+        N=N_REPLICATES,
+    )
+
+    kept_model_pks = set(df_leaderboard["model_pk"])
+    df_simulated_scores_dataset = df_simulated_scores_dataset.loc[
+        df_simulated_scores_dataset.index.isin(kept_model_pks)
+    ]
+
+    # Dataset CI
+    df_leaderboard = get_confidence_interval(
+        df_leaderboard=df_leaderboard,
+        df_simulated_scores=df_simulated_scores_dataset,
+        question_type="dataset",
+        primary_scoring_func=primary_scoring_func,
+    )
+
+    # Compare to human models using dataset scores
+    for comparison in HUMAN_MODELS:
+        df_leaderboard = get_comparison_p_val(
+            df_leaderboard=df_leaderboard,
+            df_simulated_scores=df_simulated_scores_dataset,
+            comparison=comparison,
+            question_type="dataset",
+        )
+
+    # Simulation performance measures using dataset scores
+    df_leaderboard = get_simulation_performance_metrics(
+        df_leaderboard=df_leaderboard,
+        df_simulated_scores=df_simulated_scores_dataset,
+    )
+
+    # Write preliminary leaderboard
+    write_preliminary_leaderboard(
+        df=df_leaderboard,
+        primary_scoring_func=primary_scoring_func,
+    )
+
+
+def download_and_compile_processed_forecast_files(
+    bucket: str,
+    min_days: int,
+    min_num_market_questions: int,
+) -> List[pd.DataFrame]:
+    """Download and compile processed forecast files into entries list.
+
+    Args:
+        bucket (str): GCP bucket name.
+        min_days (int): Minimum number of days before today a question set must be to be included.
+        min_num_market_questions (int): Minimum number of resolved market questions required per
+            date. If 0, skip filtering by market question count.
+
+    Returns:
+        List[pd.DataFrame]: List of DataFrames for each processed forecast file,
+            ready for leaderboard aggregation.
+    """
+    forecast_files, valid_dates = resolution.get_valid_forecast_files_and_dates(bucket=bucket)
+    forecast_files, valid_dates = filter_forecast_files_by_forecast_due_date(
+        forecast_files=forecast_files,
+        valid_dates=valid_dates,
+        min_days=min_days,
+    )
+    logger.info(f"Processing forecast due dates: {valid_dates}.")
+    local_forecast_set_dir = data_utils.get_local_file_dir(bucket=bucket)
+    forecast_files, valid_dates = filter_forecast_files_by_min_resolved_questions(
+        forecast_files=forecast_files,
+        valid_dates=valid_dates,
+        local_forecast_set_dir=local_forecast_set_dir,
+        min_counts={
+            "market_resolved": min_num_market_questions,
+            "dataset": MIN_NUM_DATASET_QUESTIONS,
+        },
+    )
+    logger.info(f"Processing forecast due dates: {valid_dates}.")
+    leaderboard_entries = []
+    for f in forecast_files:
+        data = resolution.read_forecast_file(filename=f"{local_forecast_set_dir}/{f}")
+        if data is None:
+            continue
+
+        organization = data.get("organization")
+        model = data.get("model")
+        model_organization = data.get("model_organization")
+        org_and_model = llm_identities.normalize_llm_identity(
+            {
+                "organization": organization,
+                "model": model,
+                "model_organization": model_organization,
+                "model_run_key": data.get("model_run_key"),
+                "forecast_variant_key": data.get("forecast_variant_key"),
+            }
+        )
+        leaderboard_eligible = data.get("leaderboard_eligible")
+        forecast_due_date = data.get("forecast_due_date")
+        df = data.get("df")
+
+        if leaderboard_eligible:
+            process_forecast_file(
+                leaderboard_entries=leaderboard_entries,
+                org_and_model=org_and_model,
+                df=df,
+                forecast_due_date=forecast_due_date,
+            )
+
+    return leaderboard_entries, valid_dates
+
+
+@decorator.log_runtime
+def driver(leaderboard_type: LeaderboardType) -> None:
+    """Create a new baseline or tournament leaderboard.
+
+    Args:
+        leaderboard_type (LeaderboardType): Baseline or tournament leaderboard to create.
+
+    Returns:
+        None: Exits the process on completion.
+    """
+    min_days = 50
+    min_num_market_questions = 50
+    if leaderboard_type not in [LeaderboardType.BASELINE, LeaderboardType.TOURNAMENT]:
+        raise ValueError("driver only supports baseline and tournament leaderboards.")
+
+    logger.info(colored(f"Making {leaderboard_type.value} leaderboard.", "red"))
+    leaderboard_entries, valid_dates = download_and_compile_processed_forecast_files(
+        bucket=env.PROCESSED_FORECAST_SETS_BUCKET,
+        min_days=min_days,
+        min_num_market_questions=min_num_market_questions,
+    )
+    make_leaderboard(leaderboard_entries=leaderboard_entries, leaderboard_type=leaderboard_type)
+    logger.info(
+        f"Made {leaderboard_type.value} leaderboard for forecast due dates: {sorted(valid_dates)}."
+    )
+    logger.info(colored("Done.", "red"))
+
+
+@decorator.log_runtime
+def driver_preliminary() -> None:
+    """Create the preliminary leaderboard.
+
+    Returns:
+        None: Exits the process on completion.
+    """
+    min_days = 0
+    min_num_market_questions = 0
+    logger.info(colored("Making preliminary leaderboard.", "red"))
+    leaderboard_entries, valid_dates = download_and_compile_processed_forecast_files(
+        bucket=env.PROCESSED_FORECAST_SETS_BUCKET,
+        min_days=min_days,
+        min_num_market_questions=min_num_market_questions,
+    )
+    make_preliminary_leaderboard(leaderboard_entries=leaderboard_entries)
+    logger.info(f"Made preliminary leaderboard for forecast due dates: {sorted(valid_dates)}.")
+    logger.info(colored("Done.", "red"))
+
+
+if __name__ == "__main__":
+    leaderboard_type = os.environ.get("LEADERBOARD_TYPE")
+    if leaderboard_type == "baseline":
+        driver(LeaderboardType.BASELINE)
+    elif leaderboard_type == "tournament":
+        driver(LeaderboardType.TOURNAMENT)
+    elif leaderboard_type == "preliminary":
+        driver_preliminary()
+    else:
+        raise ValueError("LEADERBOARD_TYPE must be 'baseline', 'tournament', or 'preliminary'.")

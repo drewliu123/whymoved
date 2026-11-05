@@ -1,0 +1,23 @@
+{
+  "name": "@autopoly/forecast-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Iterative forecaster with binary, categorical, numeric, and independent-ranking answers: framing -> evidence rounds -> verdict. Source-consumed (tsx/deep imports); no dist build yet \u2014 provider/store injection is the next extraction step (issue #56).",
+  "exports": {
+    "./answer-types": "./src/answer-types.ts",
+    "./types": "./src/types.ts",
+    "./store": "./src/store.ts",
+    "./web-search": "./src/web-search.ts",
+    "./cli": "./src/cli.ts",
+    "./analyst-feedback": "./src/analyst-feedback.ts",
+    "./run-lock": "./src/run-lock.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

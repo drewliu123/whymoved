@@ -1,0 +1,11 @@
+{
+  "intent": "opinion",
+  "freshness_mode": "balanced_recent",
+  "cluster_mode": "debate",
+  "subqueries": [
+    {"label": "primary", "search_query": "NVIDIA NVDA", "ranking_query": "What are traders saying directly about NVIDIA NVDA fundamentals, catalysts, valuation, positioning and bearish counterarguments during 2026-10-01 through 2026-10-31T12:19:06Z?", "sources": ["reddit", "hackernews"], "weight": 1.0},
+    {"label": "fundamentals_catalysts", "search_query": "NVIDIA Blackwell earnings", "ranking_query": "What opinions about NVIDIA Blackwell execution and upcoming earnings catalysts appear in the specified window?", "sources": ["reddit", "hackernews"], "weight": 0.8},
+    {"label": "valuation_counterarguments", "search_query": "NVIDIA valuation competition", "ranking_query": "What valuation and competitive risks do NVIDIA traders debate, including opposing views?", "sources": ["reddit", "hackernews"], "weight": 0.8},
+    {"label": "flows_sentiment", "search_query": "NVIDIA selloff AI spending 英伟达 下跌", "ranking_query": "What are traders saying directly about NVIDIA selloff, AI spending, flows and sentiment?", "sources": ["reddit", "hackernews"], "weight": 0.7}
+  ]
+}

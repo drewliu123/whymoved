@@ -1,0 +1,57 @@
+{
+  "qid": "Q009",
+  "as_of": "2026-08-18",
+  "kept": [
+    {
+      "excerpt": "We wanted to take the time necessary to meet those standards, so we temporarily slowed the pace of scaling. This included a two-week pause in reinforcement learning (RL) training on our latest models intended for deployment while we further hardened and red-teamed our research environments and expanded the coverage of our monitoring systems. Our largest planned frontier RL run remains on hold while we conduct smaller-scale training and evaluations to assess model behavior, validate our safeguards, and establish more evidence of alignment before proceeding.",
+      "published_at": "2026-08-18",
+      "publisher": "OpenAI",
+      "relevance": "This cutoff-date official statement establishes ongoing development constraints on upcoming models, directly informing whether a public successor launch could occur before August 31.",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+    },
+    {
+      "excerpt": "OpenAI on Tuesday said it is slowing down the pace of its AI model development while it overhauls its research and training systems after OpenAI officials were caught unawares last month when an AI agent under testing hacked another AI firm Hugging Face. The company has paused training on its next generation of models, called Astra, and its largest planned training run remains on hold, the company said. The company did not reply to questions about when the two-week slowdown began.",
+      "published_at": "2026-08-18T14:04:00-04:00",
+      "publisher": "Reuters, via MarketScreener",
+      "relevance": "Contemporaneous reporting independently corroborates Astra's development pause while identifying uncertainty about the pause's timing.",
+      "url": "https://www.marketscreener.com/news/openai-slows-model-training-to-bolster-security-after-hugging-face-hack-ce7859ddda8ef323"
+    },
+    {
+      "excerpt": "Our latest internal evaluations of Astra, one of our upcoming models, over the past few days indicate significant advancements in agentic coding and cybersecurity. These results, in addition to expert assessments, have led us to conclude last night that we cannot rule out critical cyber capabilities under our Preparedness Framework.",
+      "published_at": "2026-08-07",
+      "publisher": "OpenAI",
+      "relevance": "OpenAI describes Astra as upcoming and identifies a potential critical capability threshold that could require additional safeguards before public access.",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/"
+    },
+    {
+      "excerpt": "OpenAI said on Friday it cannot rule out that its upcoming AI model, Astra, has “critical” cybersecurity capabilities, prompting the startup to pause some internal development and trigger safety protocols.",
+      "published_at": "2026-08-07",
+      "publisher": "Reuters, via WHTC",
+      "relevance": "This contemporaneous report corroborates that Astra remained upcoming and that safety protocols were affecting development shortly before the experiment cutoff.",
+      "url": "https://whtc.com/2026/08/07/openai-flags-possible-critical-cybersecurity-risk-in-upcoming-model-tightens-controls/"
+    },
+    {
+      "excerpt": "Starting today, we’re updating ChatGPT with a more capable model and expanding access for everyone. Free and Go users will get a new default model for everyday chats. Plus and Pro users will get an updated GPT‑5.6 Sol with a slider that lets them choose how much effort ChatGPT uses for a response. These models will replace GPT-5.5 Instant.",
+      "published_at": "2026-08-06",
+      "publisher": "OpenAI Deployment Safety Hub",
+      "relevance": "This recent official deployment documents continued public rollout within the GPT-5 family, whose point releases do not qualify under the resolution rules.",
+      "url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+    },
+    {
+      "excerpt": "Today, we are sharing a selection of ten results, each of which resolves or makes substantial progress on a long-standing open problem. The results were achieved by an internal version of Astra, our next major model.",
+      "published_at": "2026-08-01",
+      "publisher": "OpenAI",
+      "relevance": "The official preview establishes Astra as the next major model while explicitly identifying the demonstrated version as internal, which does not establish qualifying public access.",
+      "url": "https://openai.com/index/ten-advances-in-mathematics/"
+    },
+    {
+      "excerpt": "GPT‑5 is starting to roll out today to all Plus, Pro, Team, and Free users, with access for Enterprise and Edu coming next week. Pro, Plus, and Team users can also start coding with GPT‑5 in the Codex CLI by signing in with ChatGPT.",
+      "published_at": "2025-08-07",
+      "publisher": "OpenAI",
+      "relevance": "The preceding numbered-generation launch provides a historical example of an explicit public announcement paired with immediate broad access and a phased rollout.",
+      "url": "https://openai.com/index/introducing-gpt-5/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-08-18, inclusive. Retained seven items with explicit publication dates supported by search-returned source text; the August 18 Reuters article also shows an update on August 18 at 15:04 EDT. Excluded prediction-market and betting material, undated sources, later reporting, and later updates to otherwise older pages. Only original announcement passages were retained from pages containing newer navigation or promotional links. Astra is treated as a candidate next major model based on OpenAI's contemporaneous wording, without assuming its eventual product name or that an internal preview satisfies public accessibility. web_fetch failed because multiple usable providers were registered without an explicit selection; the requested agent-reach web read fallback also failed because its upstream readers were temporarily unavailable. Consequently, excerpts and dates were verified against web_search-returned text rather than independently fetched full pages or archived snapshots. No outcome or post-cutoff development is included."
+}

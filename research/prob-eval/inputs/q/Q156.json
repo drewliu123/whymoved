@@ -1,0 +1,44 @@
+{
+ "qid": "Q156",
+ "question": "Will AfD win an absolute majority of seats in Sachsen-Anhalt?",
+ "rules": "Parliamentary elections to elect the Landtag of Sachsen-Anhalt are scheduled to take place on September 6, 2026.\n\nThis market will resolve to \"Yes\" if the party Alternative for Germany (AfD) wins an absolute majority of seats in the state parliament of Sachsen-Anhalt (Landtag) as a result of this election. Otherwise, this market will resolve to \"No\".\n\nIf voting in the Sachsen-Anhalt election for the Landtag does not occur or the results are not known definitively by January 31, 2027, this market will resolve to \"No\".\n\nThis market's resolution will be based solely on the number of seats won by the named party.\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as published on the official website of the Landtag of Sachsen-Anhalt (https://www.landtag.sachsen-anhalt.de/).",
+ "as_of": "2026-08-24",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "FOCUS online / Deutsche Presse-Agentur (dpa)",
+   "published_at": "2026-08-12",
+   "excerpt": "A Pollytix poll commissioned by Campact put AfD at 43%, CDU at 23%, Die Linke at 13%, SPD at 7%, Greens at 5%, BSW at 4% and FDP at 2%. The survey interviewed 2,604 eligible voters by telephone and online between August 3 and August 8. Under these results, AfD would not have its own parliamentary majority, with the Greens entering parliament and BSW missing the threshold. Around 13% of voters had not yet decided which party to support."
+  },
+  {
+   "id": "E2",
+   "publisher": "Stuttgarter Zeitung — Lukas Böhl",
+   "published_at": "2026-08-11",
+   "excerpt": "Only parties receiving at least 5% of valid second votes participate in proportional seat allocation; the incoming Landtag normally has at least 83 members, including 41 elected directly in constituencies. If only CDU, SPD, Die Linke and AfD crossed the threshold under the cited polling figures, they would together account for 83% of votes, including 42 percentage points for AfD. The latest INSA poll instead placed BSW exactly at 5%, a constellation in which AfD would have no majority of its own despite receiving 42%. The cited Infratest dimap poll with AfD at 41% likewise did not yield an absolute majority."
+  },
+  {
+   "id": "E3",
+   "publisher": "FOCUS online — Dominik Voss",
+   "published_at": "2026-08-10",
+   "excerpt": "An INSA poll for Bild put AfD at 42% and CDU at 22%. Die Linke followed at 13%, SPD at 6% and BSW at 5%, while Greens and FDP each received 4%. The report explained that BSW abstentions could help AfD's candidate become minister-president in a later parliamentary ballot, where a simple majority would suffice."
+  },
+  {
+   "id": "E4",
+   "publisher": "Infratest dimap",
+   "published_at": "2026-07-30",
+   "excerpt": "The Sachsen-AnhaltTREND put AfD at 41%, unchanged from May, and CDU at 24%, down two points. Die Linke received 13%, SPD 7%, Greens 5%, BSW 4% and all remaining parties together 6%. The study surveyed 1,149 eligible voters by telephone and online from July 23 to July 28, with a stated sampling fluctuation of three percentage points for a 50% share. Infratest dimap cautioned that the survey measured party preferences rather than voting behavior and that some voters decide shortly before election day."
+  },
+  {
+   "id": "E5",
+   "publisher": "Landtag von Sachsen-Anhalt",
+   "published_at": "2025-05-13",
+   "excerpt": "The Landtag decided in its plenary session that the election for the ninth parliamentary term would take place on September 6, 2026. Landtag president Gunnar Schellenberger proposed the election date and voting hours in consultation with the Council of Elders."
+  },
+  {
+   "id": "E6",
+   "publisher": "Landtag von Sachsen-Anhalt",
+   "published_at": "2021-06-22",
+   "excerpt": "The final result of the June 6, 2021 Landtag election gave CDU 37.1% of second votes and AfD 20.8%, with turnout of 60.3%. The 97 seats were allocated as follows: CDU 40, AfD 23, Die Linke 12, SPD 9, FDP 7 and Greens 6. Fourteen overhang and compensatory seats were created."
+  }
+ ]
+}

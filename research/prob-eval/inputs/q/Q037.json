@@ -1,0 +1,44 @@
+{
+ "qid": "Q037",
+ "question": "Bab el-Mandeb Strait effectively closed by July 31?",
+ "rules": "This market will resolve to “Yes” if IMF PortWatch publishes a 7-day moving average of transit calls (“Arrivals of Ships”) for the Bab el-Mandeb Strait less than or equal to 10 for any date between market creation and the listed date. Otherwise, this market will resolve to “No”.\n\nThis market will resolve as soon as IMF PortWatch publishes a 7-day moving average of transit calls for the Bab el-Mandeb Strait equal to or below 10, or once data has been published for the listed date and no such value has been published.\n\nIf no data has been published for the listed date within 14 calendar days (ET) after that date, this market will resolve based on the data published up to that point.\n\nRevisions to previously published data points made before data has been published for the listed date will be considered; however, they will not disqualify a previously published data point from qualifying. Revisions made after data has been published for the listed date will not be considered.\n\nThe resolution source for this market will be IMF PortWatch, specifically the “Arrivals of Ships” data published for the Bab el-Mandeb Strait at https://portwatch.imf.org/pages/6b1814d64903461b98144a6cc25eb79c.",
+ "as_of": "2026-07-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Steamship Mutual",
+   "published_at": "2026-07-21",
+   "excerpt": "Members should be aware of a recent announcement by the Houthis declaring a \"maritime embargo\" against Saudi Arabia. As advised by maritime security provider Ambrey, although there has been no direct impact on merchant shipping to date, Saudi flagged, owned, operated and Saudi port-calling vessels, together with Saudi Red Sea ports, are considered to present an elevated risk profile whilst operating in the Red Sea and Gulf of Aden."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters via GMA News Online",
+   "published_at": "2026-07-21T19:47:58+08:00",
+   "excerpt": "Shipping companies should not load or discharge cargo at Saudi Arabian ports and such activity may result in being targeted \"in any location\" by Yemen's Iran-aligned Houthi militia, according to an email sent to companies by the Houthis. The new conditions came into force at 1201 GMT on July 20, the email said."
+  },
+  {
+   "id": "E3",
+   "publisher": "Bloomberg via gCaptain",
+   "published_at": "2026-07-21T04:09:17-07:00",
+   "excerpt": "In an email to shipowners, the Iran-backed group makes clear that its blockade doesn’t just apply to Saudi vessels, but to all ships coming to and from Saudi ports, according to the message seen by Bloomberg. It’s unclear, however, how effective the blockade will be. A Saudi-led coalition in Yemen said Monday it has begun implementing operational measures to protect ships in Bab el-Mandeb Strait at the southern end of the Red Sea."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters and The Times of Israel",
+   "published_at": "2026-07-21T17:26:00+03:00",
+   "excerpt": "Two oil tankers loaded with Saudi crude for China and India make U-turns in the Red Sea, heading towards the Suez Canal rather than braving the Yemeni coast at the sea’s mouth following a warning from Yemen’s Iran-backed Houthi terror group. The changes in direction by the ships, the Xin Long Yang and the Rodos, suggest a second potential disruption to a major shipping route that could compound the shortfall in global energy markets caused by the closure of the Strait of Hormuz."
+  },
+  {
+   "id": "E5",
+   "publisher": "Lloyd’s List Intelligence",
+   "published_at": "2026-07-21",
+   "excerpt": "A Cosco Shipping vehicle carrier reversed course near Djibouti on Tuesday after receiving a Houthi warning that its transit clearance had been cancelled and the vessel could be targeted. Since the Hormuz conflict began, Yanbu exports have increased substantially, averaging 3.75 million barrels per day, helping offset lost Gulf export capacity. Crude oil tankers flocked to the Red Sea, via the Bab el Mandeb, in March and traffic levels have been largely on par with pre-Houthi campaign levels."
+  },
+  {
+   "id": "E6",
+   "publisher": "International Monetary Fund",
+   "published_at": "2024-03-07",
+   "excerpt": "Attacks on vessels in the Red Sea area reduced traffic through the Suez Canal, the shortest maritime route between Asia and Europe, through which about 15 percent of global maritime trade volume normally passes. Instead, several shipping companies diverted their ships around the Cape of Good Hope. This increased delivery times by 10 days or more on average, hurting companies with limited inventories. Our high-frequency transit estimates indicate that the volume of trade that passed through the Suez Canal dropped by 50 percent year-over-year in the first two months of the year, and the volume of trade transiting around the Cape of Good Hope surged by an estimated 74 percent above last year’s level."
+  }
+ ]
+}

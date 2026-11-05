@@ -1,0 +1,26 @@
+{
+ "qid": "Q150",
+ "question": "Will Ralph Norman be the new Republican nominee for Senate in South Carolina?",
+ "rules": "This market will resolve according to the winner of the special Republican Primary for United States Senator from South Carolina, including any potential runoff.\n\nIf no 2026 special South Carolina Republican Senate Primary takes place by November 2, 2026, 11:59 PM ET, this market will resolve according to the candidate who is the official Republican nominee to contest the November 3, 2026 South Carolina U.S. Senate election.\n\nIf the results of the special primary are not definitively known, or if there is no Republican nominee to contest the November 3, 2026 South Carolina U.S. Senate election, by November 2, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe resolution source for this market will be the first announcement of the results from the South Carolina Republican party, however an overwhelming consensus of credible reporting may suffice.",
+ "as_of": "2026-08-12",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "South Carolina Election Commission",
+   "published_at": "2026-07-13",
+   "excerpt": "The nominee resulting from this special filing and primary will be a candidate on the November 3, 2026 general election ballot. The statewide special primary is scheduled for August 11, with a special primary runoff, if necessary, on August 25. Voters who participated in the June Democratic primary are not eligible to vote in the special Republican primary."
+  },
+  {
+   "id": "E2",
+   "publisher": "Emerson College Polling",
+   "published_at": "2026-07-30",
+   "excerpt": "The Emerson College Polling/Nexstar Media survey found Ralph Norman at 22%, Darline Graham at 19%, Russell Fry at 12%, and Mark Sanford at 11%, with a quarter undecided. The survey was conducted July 28–29, 2026 among 500 likely Republican primary voters, with a margin of error of plus or minus 4.3 percentage points. Fifty-three percent said Trump's endorsement of Graham made no impact on their vote, while 29% said it made them more likely to support her and 18% less likely."
+  },
+  {
+   "id": "E3",
+   "publisher": "Ballotpedia News",
+   "published_at": "2026-07-16",
+   "excerpt": "A special Republican primary was scheduled for August 11 after Lindsey Graham, the nominee selected in the June 9 primary, died on July 11. A runoff, if needed, was scheduled for August 25. Republicans have won every South Carolina Senate election since 2004 and every gubernatorial election since 2002."
+  }
+ ]
+}

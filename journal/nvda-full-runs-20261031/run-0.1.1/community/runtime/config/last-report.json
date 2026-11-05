@@ -1,0 +1,1374 @@
+{
+  "schema": "last30days-report-cache/v2",
+  "topic": "NVIDIA NVDA \u82f1\u4f1f\u8fbe",
+  "timestamp": "2026-10-31T12:24:53.233163+00:00",
+  "comparison": false,
+  "x_envelope_sha256": null,
+  "research_options": {
+    "search": "reddit,hackernews",
+    "quick": true,
+    "deep": false,
+    "mock": false,
+    "web_backend": "auto",
+    "perplexity_search_type": null,
+    "hiring_signals": false,
+    "x_handle": null,
+    "x_related": null,
+    "official_site": null,
+    "no_x_handle": null,
+    "subreddits": "stocks,investing,wallstreetbets,SecurityAnalysis",
+    "dedicated_subreddits": "NVDA",
+    "devto_tags": null,
+    "tiktok_hashtags": null,
+    "tiktok_creators": null,
+    "ig_creators": null,
+    "max_results": null,
+    "max_per_source": null,
+    "max_source_fetches": null,
+    "auto_resolve": false,
+    "github_user": null,
+    "github_repo": null,
+    "trustpilot_domain": null,
+    "amazon_query": null,
+    "meta_ads_page": null,
+    "telegram_sources": null,
+    "competitors": null,
+    "competitors_list": null,
+    "polymarket_keywords": null,
+    "corpus_all_time": false,
+    "drill": null,
+    "corpus_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "plan": "b4d195108015e8b0e59b64976cbd88c2c7b84568f96fea516ab6471978e8b413",
+    "competitors_plan": null,
+    "config_sha256": "6d585e9d6c7eb7c137ec282fefb80f8f16f01689bd902934b61c3fdb82e1a735"
+  },
+  "reports": [
+    {
+      "entity": "NVIDIA NVDA \u82f1\u4f1f\u8fbe",
+      "report": {
+        "topic": "NVIDIA NVDA \u82f1\u4f1f\u8fbe",
+        "range_from": "2026-10-01",
+        "range_to": "2026-10-31",
+        "generated_at": "2026-10-31T12:24:53.231482+00:00",
+        "provider_runtime": {
+          "reasoning_provider": "local",
+          "planner_model": "deterministic",
+          "rerank_model": "local-score"
+        },
+        "query_plan": {
+          "intent": "opinion",
+          "freshness_mode": "balanced_recent",
+          "cluster_mode": "debate",
+          "raw_topic": "NVIDIA NVDA \u82f1\u4f1f\u8fbe",
+          "subqueries": [
+            {
+              "label": "primary",
+              "search_query": "NVIDIA NVDA",
+              "ranking_query": "What are traders saying directly about NVIDIA NVDA fundamentals, catalysts, valuation, positioning and bearish counterarguments during 2026-10-01 through 2026-10-31T12:19:06Z?",
+              "sources": [
+                "reddit",
+                "hackernews"
+              ],
+              "weight": 1.0
+            }
+          ],
+          "source_weights": {
+            "reddit": 0.5,
+            "hackernews": 0.5
+          },
+          "notes": []
+        },
+        "clusters": [
+          {
+            "cluster_id": "cluster-1",
+            "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+            "candidate_ids": [
+              "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report"
+            ],
+            "representative_ids": [
+              "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 34.30918032786885,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-2",
+            "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+            "candidate_ids": [
+              "https://github.com/Zagitta/gpu-unlock"
+            ],
+            "representative_ids": [
+              "https://github.com/Zagitta/gpu-unlock"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 31.553939393939395,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-3",
+            "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+            "candidate_ids": [
+              "https://wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53"
+            ],
+            "representative_ids": [
+              "https://wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 31.384126984126986,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-4",
+            "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+            "candidate_ids": [
+              "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            ],
+            "representative_ids": [
+              "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 31.166129032258063,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-5",
+            "title": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy",
+            "candidate_ids": [
+              "https://reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy"
+            ],
+            "representative_ids": [
+              "https://reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy"
+            ],
+            "sources": [
+              "reddit"
+            ],
+            "score": 30.466129032258063,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-6",
+            "title": "Nvidia discusses $2k-per-GPU annual fee for software",
+            "candidate_ids": [
+              "https://tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform"
+            ],
+            "representative_ids": [
+              "https://tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 28.823076923076925,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-7",
+            "title": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+            "candidate_ids": [
+              "https://nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html"
+            ],
+            "representative_ids": [
+              "https://nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 27.103125,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-8",
+            "title": "NVDA",
+            "candidate_ids": [
+              "https://reddit.com/r/wallstreetbets/comments/1wy1qzo/nvda"
+            ],
+            "representative_ids": [
+              "https://reddit.com/r/wallstreetbets/comments/1wy1qzo/nvda"
+            ],
+            "sources": [
+              "reddit"
+            ],
+            "score": 1.8991803278688515,
+            "uncertainty": "single-source"
+          }
+        ],
+        "ranked_candidates": [
+          {
+            "candidate_id": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report",
+            "item_id": "50293047",
+            "source": "hackernews",
+            "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+            "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+            "snippet": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism. First, does her activity actually fit the definition of \u201cespionage\u201d? Espionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission The most... Please can we get this fixed to point to the NY Times article; they broke this story no? Also, New York Post? Let's do...",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 1
+            },
+            "local_relevance": 0.03,
+            "freshness": 84,
+            "engagement": 92,
+            "source_quality": 0.8,
+            "rrf_score": 0.00819672131147541,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50293047",
+                "source": "hackernews",
+                "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+                "body": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang\nSuper weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism.\nFirst, does her activity actually fit the definition of \u201cespionage\u201d?\nEspionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission\nThe most... Please can we get this fixed to point to the NY Times article; they broke this story no?\nAlso, New York Post? Let's do better.",
+                "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+                "author": "mgh2",
+                "container": "Hacker News",
+                "published_at": "2026-10-29",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 356,
+                  "comments": 235
+                },
+                "relevance_hint": 0.89,
+                "why_relevant": "HN story about Alleged Chinese spy had 'close relationship' with Nvidia bos",
+                "snippet": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism. First, does her activity actually fit the definition of \u201cespionage\u201d? Espionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission The most... Please can we get this fixed to point to the NY Times article; they broke this story no? Also, New York Post? Let's do...",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50293047",
+                  "top_comments": [
+                    {
+                      "excerpt": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re...",
+                      "author": "zetazzed",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50295769"
+                    },
+                    {
+                      "excerpt": "A couple of questions after reading this article. The Post is not exactly top notch journalism.\nFirst, does her activity actually fit the definition of \u201cespionage\u201d?\nEspionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission\nThe most...",
+                      "author": "janalsncm",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50295873"
+                    },
+                    {
+                      "excerpt": "Please can we get this fixed to point to the NY Times article; they broke this story no?\nAlso, New York Post? Let's do better.",
+                      "author": "Rapzid",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50296355"
+                    },
+                    {
+                      "excerpt": "For the thousandth time, don\u2019t use archive.ph/archive.is/archive.today, THEY ARE ATTACK SITES.",
+                      "author": "cluckindan",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50300118"
+                    },
+                    {
+                      "excerpt": "I doubt Jensen is completely out of the scheme TBH.",
+                      "author": "markus_zhang",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50295132"
+                    }
+                  ],
+                  "comment_insights": [
+                    "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nons",
+                    "A couple of questions after reading this article",
+                    "Please can we get this fixed to point to the NY Times article; they broke this story no?",
+                    "For the thousandth time, don\u2019t use archive.ph/archive.is/archive.today, THEY ARE ATTACK SITES.",
+                    "I doubt Jensen is completely out of the scheme TBH."
+                  ]
+                },
+                "local_relevance": 0.03,
+                "freshness": 84,
+                "engagement_score": 92,
+                "source_quality": 0.8,
+                "local_rank_score": 0.3215
+              }
+            ],
+            "rerank_score": 10.1,
+            "final_score": 34.30918032786885,
+            "explanation": "fallback-local-score",
+            "fun_score": 10.0,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-1",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "50293047"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://github.com/Zagitta/gpu-unlock",
+            "item_id": "50219700",
+            "source": "hackernews",
+            "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+            "url": "https://github.com/Zagitta/gpu-unlock",
+            "snippet": "Hey this is my work, although the exploits etc aren't my ideas by any means. This is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library: https://github.com/aikitoria/open-gpu-kernel-modules The hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats: - you will need to run your card hotter than you...",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 6
+            },
+            "local_relevance": 0.03,
+            "freshness": 70,
+            "engagement": 84,
+            "source_quality": 0.8,
+            "rrf_score": 0.007575757575757576,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50219700",
+                "source": "hackernews",
+                "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+                "body": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards\nHey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library:\nhttps://github.com/aikitoria/open-gpu-kernel-modules\nThe hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats:\n- you will need to run your card hotter than you might be comfortable with\n- the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W\n- This is well above what the stock cooler was designed for so a bit m...",
+                "url": "https://github.com/Zagitta/gpu-unlock",
+                "author": "fragebogen",
+                "container": "Hacker News",
+                "published_at": "2026-10-24",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 351,
+                  "comments": 83
+                },
+                "relevance_hint": 0.88,
+                "why_relevant": "HN story about GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's",
+                "snippet": "Hey this is my work, although the exploits etc aren't my ideas by any means. This is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library: https://github.com/aikitoria/open-gpu-kernel-modules The hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats: - you will need to run your card hotter than you...",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50219700",
+                  "top_comments": [
+                    {
+                      "excerpt": "Hey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl...",
+                      "author": "Zagitta",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50222102"
+                    },
+                    {
+                      "excerpt": "A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library:\nhttps://github.com/aikitoria/open-gpu-kernel-modules\nThe hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa...",
+                      "author": "RachelF",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50223788"
+                    },
+                    {
+                      "excerpt": "This one is real, but there are some caveats:\n- you will need to run your card hotter than you might be comfortable with\n- the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W\n- This is well above what the stock cooler was designed for so a bit m...",
+                      "author": "jacquesm",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50221626"
+                    },
+                    {
+                      "excerpt": "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A...\n> Unfortunately for Nvidia the booter is vulnerable to a classic buffer overflow that writes straight into the ...",
+                      "author": "Tiberium",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50219868"
+                    },
+                    {
+                      "excerpt": "As a person who uses consumer level hardware to do neural network research, this unlock is truly INVALUABLE.\nThis unlock is super useful as it improves the GPU performance on computation-bounded neural network workloads like LLM prefilling, image/video generation, and general neural network training...",
+                      "author": "RandyOrion",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50224757"
+                    }
+                  ],
+                  "comment_insights": [
+                    "Hey this is my work, although the exploits etc aren't my ideas by any means.",
+                    "A semi related: a patch for those with multiple cards",
+                    "This one is real, but there are some caveats:",
+                    "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A...",
+                    "As a person who uses consumer level hardware to do neural network research, this unlock is truly INVALUABLE."
+                  ]
+                },
+                "local_relevance": 0.03,
+                "freshness": 70,
+                "engagement_score": 84,
+                "source_quality": 0.8,
+                "local_rank_score": 0.27849999999999997
+              }
+            ],
+            "rerank_score": 10.1,
+            "final_score": 31.553939393939395,
+            "explanation": "fallback-local-score",
+            "fun_score": 0.0,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-2",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 6,
+                  "item_id": "50219700"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+            "item_id": "50236073",
+            "source": "hackernews",
+            "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+            "url": "https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+            "snippet": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 3
+            },
+            "local_relevance": 0.05,
+            "freshness": 74,
+            "engagement": 74,
+            "source_quality": 0.8,
+            "rrf_score": 0.007936507936507936,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50236073",
+                "source": "hackernews",
+                "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+                "body": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+                "url": "https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+                "author": "JumpCrisscross",
+                "container": "Hacker News",
+                "published_at": "2026-10-25",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 175,
+                  "comments": 47
+                },
+                "relevance_hint": 0.84,
+                "why_relevant": "HN story about Nvidia and Micron Make Up 34% of America's Earnings Boom",
+                "snippet": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50236073",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.05,
+                "freshness": 74,
+                "engagement_score": 74,
+                "source_quality": 0.8,
+                "local_rank_score": 0.2915
+              }
+            ],
+            "rerank_score": 11.5,
+            "final_score": 31.384126984126986,
+            "explanation": "fallback-local-score",
+            "fun_score": 13.05,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-3",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 3,
+                  "item_id": "50236073"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+            "item_id": "50275128",
+            "source": "hackernews",
+            "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+            "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+            "snippet": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 2
+            },
+            "local_relevance": 0.05,
+            "freshness": 82,
+            "engagement": 67,
+            "source_quality": 0.8,
+            "rrf_score": 0.008064516129032258,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50275128",
+                "source": "hackernews",
+                "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+                "body": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+                "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+                "author": "wondersky",
+                "container": "Hacker News",
+                "published_at": "2026-10-28",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 133,
+                  "comments": 26
+                },
+                "relevance_hint": 0.82,
+                "why_relevant": "HN story about Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+                "snippet": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50275128",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.05,
+                "freshness": 82,
+                "engagement_score": 67,
+                "source_quality": 0.8,
+                "local_rank_score": 0.3045
+              }
+            ],
+            "rerank_score": 11.5,
+            "final_score": 31.166129032258063,
+            "explanation": "fallback-local-score",
+            "fun_score": 12.75,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-4",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 2,
+                  "item_id": "50275128"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy",
+            "item_id": "R4",
+            "source": "reddit",
+            "title": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy",
+            "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+            "snippet": "Who cares? We'll just triple the market cap and call it earnings. Does R.O.I. mean anything these days? Musk sure is taking advantage of his \"too big to fail \" status. If SpaceX starts defaulting on debt it would cascade into a stock market crash. The puppets in DC and the fat cats in wallstreet would d",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:reddit": 2
+            },
+            "local_relevance": 0.2,
+            "freshness": 25,
+            "engagement": 73,
+            "source_quality": 0.6,
+            "rrf_score": 0.008064516129032258,
+            "sources": [
+              "reddit"
+            ],
+            "source_items": [
+              {
+                "item_id": "R4",
+                "source": "reddit",
+                "title": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy",
+                "body": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy\nSpaceX is planning a massive $40 billion debt raise to buy Nvidia chips. The financial structure of this deal is quite wild. $40 billion is roughly equal to SpaceX\u2019s entire projected revenue for the year. They are splitting the package into $10 billion in bank loans and $30 billion in investment-grade bonds, with Apollo Global Management leading the deal. For anyone trading Nvidia (NVDA), this shuts down the argument that AI hardware demand is slowing down. The fascinating part is the cash loop: Nvidia owns about $21 billion worth of SpaceX stock. SpaceX is essentially taking on historic debt from Wall Street to hand billions of dollars straight back to Nvidia for chips, which in turn props up the value of Nvidia's own balance sheet. If this deal goes through as planned by 2027, it shows that major companies are willing to push their finances to the absolute limit just to secure computing power. Anyone worried SpaceX is taking on this much leverage for hardware?\n\nSource: [Bloomberg](https://www.bloomberg.com/news/articles/2026-10-06/spacex-seeking-to-raise-40-billion-to-buy-nvidia-chips-ft-says)\nWho cares? We'll just triple the market cap and call it earnings. Does R.O.I. mean anything these days? Musk sure is taking advantage of his \"too big to fail \" status. If SpaceX starts defaulting on debt it would cascade into a stock market crash. The puppets in DC and the fat cats in wallstreet would d",
+                "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+                "container": "stocks",
+                "published_at": "2026-10-07",
+                "date_confidence": "high",
+                "engagement": {
+                  "score": 507,
+                  "num_comments": 216
+                },
+                "relevance_hint": 0.18,
+                "why_relevant": "Reddit listing (arctic-shift)",
+                "snippet": "Who cares? We'll just triple the market cap and call it earnings. Does R.O.I. mean anything these days? Musk sure is taking advantage of his \"too big to fail \" status. If SpaceX starts defaulting on debt it would cascade into a stock market crash. The puppets in DC and the fat cats in wallstreet would d",
+                "metadata": {
+                  "top_comments": [
+                    {
+                      "score": 212,
+                      "date": "2026-10-07",
+                      "author": "KissmySPAC",
+                      "excerpt": "Who cares? We'll just triple the market cap and call it earnings.",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peercfy/"
+                    },
+                    {
+                      "score": 134,
+                      "date": "2026-10-07",
+                      "author": "zedder1994",
+                      "excerpt": "Does R.O.I. mean anything these days?",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peexhra/"
+                    },
+                    {
+                      "score": 96,
+                      "date": "2026-10-07",
+                      "author": "CarpoLarpo",
+                      "excerpt": "Musk sure is taking advantage of his \"too big to fail \" status. If SpaceX starts defaulting on debt it would cascade into a stock market crash. The puppets in DC and the fat cats in wallstreet would d",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pefku75/"
+                    },
+                    {
+                      "score": 78,
+                      "date": "2026-10-07",
+                      "author": "Gundamnitpete",
+                      "excerpt": "Really. Old. Indicator. /s",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pefyn8k/"
+                    },
+                    {
+                      "score": 52,
+                      "date": "2026-10-07",
+                      "author": "Longjumping_Kale3013",
+                      "excerpt": "They\u2019re going to buy much more than that. They want to build over 10 GW of Vera Rubin which will be 400 billion of NVIDIA \u201cai factory\u201d . But a big part will also be funded by revenue. They said they w",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peereut/"
+                    },
+                    {
+                      "score": 38,
+                      "date": "2026-10-07",
+                      "author": "Mobile-Bar7732",
+                      "excerpt": "Not according to SpaceX/Tesla shareholders. They'll spend $300 to earn $1 as long as you promise them you'll make a lot more in the future.",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pegcxng/"
+                    },
+                    {
+                      "score": 31,
+                      "date": "2026-10-07",
+                      "author": "Hacking_the_Gibson",
+                      "excerpt": "I'm really digging this trend of consumption-based revenue models becoming subscription based by just calling it recurring revenue . McDonald's franchise owners are in perfect position. Just take the ",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pef6p47/"
+                    },
+                    {
+                      "score": 26,
+                      "date": "2026-10-07",
+                      "author": "JabCrossE4E5Quark",
+                      "excerpt": "Didnt they have like 7B revenue last Q? 100B ARR by EOY lol sure thing",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pef0mzp/"
+                    },
+                    {
+                      "score": 22,
+                      "date": "2026-10-07",
+                      "author": "DICKPICDOUG",
+                      "excerpt": "\"ARR\" This always scares me off.",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peeyv6q/"
+                    },
+                    {
+                      "score": 20,
+                      "date": "2026-10-07",
+                      "author": "FlipZip69",
+                      "excerpt": "Yes earnings will increaser to 2 dollars in 5 years indicating a 200% growth. Who would not want a 200% growth in earnings???",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pegen48/"
+                    },
+                    {
+                      "score": 20,
+                      "date": "2026-10-07",
+                      "author": "CarpoLarpo",
+                      "excerpt": "Solid financials? Putting aside the money they raised from blatant corruption and fraud that came from selling shares around their IPO they've always operated at a loss. They would have bankrupted the",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pehehez/"
+                    },
+                    {
+                      "score": 20,
+                      "date": "2026-10-07",
+                      "author": "vertigo88",
+                      "excerpt": "This was a rocket company right? Why are they building data centers?",
+                      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pefgyph/"
+                    }
+                  ],
+                  "comment_insights": [
+                    "Who cares? We'll just triple the market cap and call it earnings.",
+                    "Does R.O.I. mean anything these days?",
+                    "Musk sure is taking advantage of his \"too big to fail \" status.",
+                    "They\u2019re going to buy much more than that. They want to build over 10 GW of Vera Rubin which will be 400 billion of NVIDIA \u201cai factory\u201d .",
+                    "Not according to SpaceX/Tesla shareholders. They'll spend $300 to earn $1 as long as you promise them you'll make a lot more in the future.",
+                    "I'm really digging this trend of consumption-based revenue models becoming subscription based by just calling it recurring revenue .",
+                    "Didnt they have like 7B revenue last Q? 100B ARR by EOY lol sure thing"
+                  ]
+                },
+                "local_relevance": 0.2,
+                "freshness": 25,
+                "engagement_score": 73,
+                "source_quality": 0.6,
+                "local_rank_score": 0.2655
+              }
+            ],
+            "rerank_score": 20.0,
+            "final_score": 30.466129032258063,
+            "explanation": "fallback-local-score",
+            "fun_score": 28.217327187944345,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-5",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "reddit",
+                  "subquery_label": "primary",
+                  "native_rank": 2,
+                  "item_id": "R4"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+            "item_id": "50247677",
+            "source": "hackernews",
+            "title": "Nvidia discusses $2k-per-GPU annual fee for software",
+            "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+            "snippet": "Nvidia discusses $2k-per-GPU annual fee for software",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 5
+            },
+            "local_relevance": 0.05,
+            "freshness": 76,
+            "engagement": 56,
+            "source_quality": 0.8,
+            "rrf_score": 0.007692307692307693,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50247677",
+                "source": "hackernews",
+                "title": "Nvidia discusses $2k-per-GPU annual fee for software",
+                "body": "Nvidia discusses $2k-per-GPU annual fee for software",
+                "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+                "author": "gscott",
+                "container": "Hacker News",
+                "published_at": "2026-10-26",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 41,
+                  "comments": 23
+                },
+                "relevance_hint": 0.75,
+                "why_relevant": "HN story about Nvidia discusses $2k-per-GPU annual fee for software",
+                "snippet": "Nvidia discusses $2k-per-GPU annual fee for software",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50247677",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.05,
+                "freshness": 76,
+                "engagement_score": 56,
+                "source_quality": 0.8,
+                "local_rank_score": 0.2785
+              }
+            ],
+            "rerank_score": 11.5,
+            "final_score": 28.823076923076925,
+            "explanation": "fallback-local-score",
+            "fun_score": 14.25,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-6",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 5,
+                  "item_id": "50247677"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html",
+            "item_id": "50286924",
+            "source": "hackernews",
+            "title": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+            "url": "https://www.nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html",
+            "snippet": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 4
+            },
+            "local_relevance": 0.05,
+            "freshness": 84,
+            "engagement": 39,
+            "source_quality": 0.8,
+            "rrf_score": 0.0078125,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50286924",
+                "source": "hackernews",
+                "title": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+                "body": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+                "url": "https://www.nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html",
+                "author": "u1hcw9nx",
+                "container": "Hacker News",
+                "published_at": "2026-10-29",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 26,
+                  "comments": 3
+                },
+                "relevance_hint": 0.72,
+                "why_relevant": "HN story about Nvidia Chief Seen as Target of Chinese Spy Plot",
+                "snippet": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50286924",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.05,
+                "freshness": 84,
+                "engagement_score": 39,
+                "source_quality": 0.8,
+                "local_rank_score": 0.2815
+              }
+            ],
+            "rerank_score": 11.5,
+            "final_score": 27.103125,
+            "explanation": "fallback-local-score",
+            "fun_score": 15.75,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-7",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 4,
+                  "item_id": "50286924"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://reddit.com/r/wallstreetbets/comments/1wy1qzo/nvda",
+            "item_id": "R1",
+            "source": "reddit",
+            "title": "NVDA",
+            "url": "https://www.reddit.com/r/wallstreetbets/comments/1wy1qzo/nvda/",
+            "snippet": "NVDA",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:reddit": 1
+            },
+            "local_relevance": 0.22,
+            "freshness": 20,
+            "engagement": 99,
+            "source_quality": 0.6,
+            "rrf_score": 0.00819672131147541,
+            "sources": [
+              "reddit"
+            ],
+            "source_items": [
+              {
+                "item_id": "R1",
+                "source": "reddit",
+                "title": "NVDA",
+                "body": "NVDA",
+                "url": "https://www.reddit.com/r/wallstreetbets/comments/1wy1qzo/nvda/",
+                "container": "wallstreetbets",
+                "published_at": "2026-10-05",
+                "date_confidence": "high",
+                "engagement": {
+                  "score": 27373,
+                  "num_comments": 1007
+                },
+                "relevance_hint": 0.35,
+                "why_relevant": "Reddit search",
+                "snippet": "NVDA",
+                "metadata": {
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.22,
+                "freshness": 20,
+                "engagement_score": 99,
+                "source_quality": 0.6,
+                "local_rank_score": 0.29200000000000004
+              }
+            ],
+            "rerank_score": 0.0,
+            "final_score": 1.8991803278688515,
+            "explanation": "fallback-local-score (entity-miss demotion)",
+            "fun_score": 28.65,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-8",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "reddit",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "R1"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          }
+        ],
+        "items_by_source": {
+          "hackernews": [
+            {
+              "item_id": "50293047",
+              "source": "hackernews",
+              "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+              "body": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang\nSuper weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism.\nFirst, does her activity actually fit the definition of \u201cespionage\u201d?\nEspionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission\nThe most... Please can we get this fixed to point to the NY Times article; they broke this story no?\nAlso, New York Post? Let's do better.",
+              "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+              "author": "mgh2",
+              "container": "Hacker News",
+              "published_at": "2026-10-29",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 356,
+                "comments": 235
+              },
+              "relevance_hint": 0.89,
+              "why_relevant": "HN story about Alleged Chinese spy had 'close relationship' with Nvidia bos",
+              "snippet": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism. First, does her activity actually fit the definition of \u201cespionage\u201d? Espionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission The most... Please can we get this fixed to point to the NY Times article; they broke this story no? Also, New York Post? Let's do...",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50293047",
+                "top_comments": [
+                  {
+                    "excerpt": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re...",
+                    "author": "zetazzed",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50295769"
+                  },
+                  {
+                    "excerpt": "A couple of questions after reading this article. The Post is not exactly top notch journalism.\nFirst, does her activity actually fit the definition of \u201cespionage\u201d?\nEspionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission\nThe most...",
+                    "author": "janalsncm",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50295873"
+                  },
+                  {
+                    "excerpt": "Please can we get this fixed to point to the NY Times article; they broke this story no?\nAlso, New York Post? Let's do better.",
+                    "author": "Rapzid",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50296355"
+                  },
+                  {
+                    "excerpt": "For the thousandth time, don\u2019t use archive.ph/archive.is/archive.today, THEY ARE ATTACK SITES.",
+                    "author": "cluckindan",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50300118"
+                  },
+                  {
+                    "excerpt": "I doubt Jensen is completely out of the scheme TBH.",
+                    "author": "markus_zhang",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50295132"
+                  }
+                ],
+                "comment_insights": [
+                  "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nons",
+                  "A couple of questions after reading this article",
+                  "Please can we get this fixed to point to the NY Times article; they broke this story no?",
+                  "For the thousandth time, don\u2019t use archive.ph/archive.is/archive.today, THEY ARE ATTACK SITES.",
+                  "I doubt Jensen is completely out of the scheme TBH."
+                ]
+              },
+              "local_relevance": 0.03,
+              "freshness": 84,
+              "engagement_score": 92,
+              "source_quality": 0.8,
+              "local_rank_score": 0.3215
+            },
+            {
+              "item_id": "50275128",
+              "source": "hackernews",
+              "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+              "body": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+              "author": "wondersky",
+              "container": "Hacker News",
+              "published_at": "2026-10-28",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 133,
+                "comments": 26
+              },
+              "relevance_hint": 0.82,
+              "why_relevant": "HN story about Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+              "snippet": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50275128",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.05,
+              "freshness": 82,
+              "engagement_score": 67,
+              "source_quality": 0.8,
+              "local_rank_score": 0.3045
+            },
+            {
+              "item_id": "50236073",
+              "source": "hackernews",
+              "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+              "body": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+              "url": "https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+              "author": "JumpCrisscross",
+              "container": "Hacker News",
+              "published_at": "2026-10-25",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 175,
+                "comments": 47
+              },
+              "relevance_hint": 0.84,
+              "why_relevant": "HN story about Nvidia and Micron Make Up 34% of America's Earnings Boom",
+              "snippet": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50236073",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.05,
+              "freshness": 74,
+              "engagement_score": 74,
+              "source_quality": 0.8,
+              "local_rank_score": 0.2915
+            },
+            {
+              "item_id": "50286924",
+              "source": "hackernews",
+              "title": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+              "body": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+              "url": "https://www.nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html",
+              "author": "u1hcw9nx",
+              "container": "Hacker News",
+              "published_at": "2026-10-29",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 26,
+                "comments": 3
+              },
+              "relevance_hint": 0.72,
+              "why_relevant": "HN story about Nvidia Chief Seen as Target of Chinese Spy Plot",
+              "snippet": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50286924",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.05,
+              "freshness": 84,
+              "engagement_score": 39,
+              "source_quality": 0.8,
+              "local_rank_score": 0.2815
+            },
+            {
+              "item_id": "50247677",
+              "source": "hackernews",
+              "title": "Nvidia discusses $2k-per-GPU annual fee for software",
+              "body": "Nvidia discusses $2k-per-GPU annual fee for software",
+              "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+              "author": "gscott",
+              "container": "Hacker News",
+              "published_at": "2026-10-26",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 41,
+                "comments": 23
+              },
+              "relevance_hint": 0.75,
+              "why_relevant": "HN story about Nvidia discusses $2k-per-GPU annual fee for software",
+              "snippet": "Nvidia discusses $2k-per-GPU annual fee for software",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50247677",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.05,
+              "freshness": 76,
+              "engagement_score": 56,
+              "source_quality": 0.8,
+              "local_rank_score": 0.2785
+            },
+            {
+              "item_id": "50219700",
+              "source": "hackernews",
+              "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+              "body": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards\nHey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library:\nhttps://github.com/aikitoria/open-gpu-kernel-modules\nThe hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats:\n- you will need to run your card hotter than you might be comfortable with\n- the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W\n- This is well above what the stock cooler was designed for so a bit m...",
+              "url": "https://github.com/Zagitta/gpu-unlock",
+              "author": "fragebogen",
+              "container": "Hacker News",
+              "published_at": "2026-10-24",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 351,
+                "comments": 83
+              },
+              "relevance_hint": 0.88,
+              "why_relevant": "HN story about GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's",
+              "snippet": "Hey this is my work, although the exploits etc aren't my ideas by any means. This is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library: https://github.com/aikitoria/open-gpu-kernel-modules The hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats: - you will need to run your card hotter than you...",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50219700",
+                "top_comments": [
+                  {
+                    "excerpt": "Hey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl...",
+                    "author": "Zagitta",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50222102"
+                  },
+                  {
+                    "excerpt": "A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library:\nhttps://github.com/aikitoria/open-gpu-kernel-modules\nThe hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa...",
+                    "author": "RachelF",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50223788"
+                  },
+                  {
+                    "excerpt": "This one is real, but there are some caveats:\n- you will need to run your card hotter than you might be comfortable with\n- the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W\n- This is well above what the stock cooler was designed for so a bit m...",
+                    "author": "jacquesm",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50221626"
+                  },
+                  {
+                    "excerpt": "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A...\n> Unfortunately for Nvidia the booter is vulnerable to a classic buffer overflow that writes straight into the ...",
+                    "author": "Tiberium",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50219868"
+                  },
+                  {
+                    "excerpt": "As a person who uses consumer level hardware to do neural network research, this unlock is truly INVALUABLE.\nThis unlock is super useful as it improves the GPU performance on computation-bounded neural network workloads like LLM prefilling, image/video generation, and general neural network training...",
+                    "author": "RandyOrion",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50224757"
+                  }
+                ],
+                "comment_insights": [
+                  "Hey this is my work, although the exploits etc aren't my ideas by any means.",
+                  "A semi related: a patch for those with multiple cards",
+                  "This one is real, but there are some caveats:",
+                  "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A...",
+                  "As a person who uses consumer level hardware to do neural network research, this unlock is truly INVALUABLE."
+                ]
+              },
+              "local_relevance": 0.03,
+              "freshness": 70,
+              "engagement_score": 84,
+              "source_quality": 0.8,
+              "local_rank_score": 0.27849999999999997
+            }
+          ],
+          "reddit": [
+            {
+              "item_id": "R1",
+              "source": "reddit",
+              "title": "NVDA",
+              "body": "NVDA",
+              "url": "https://www.reddit.com/r/wallstreetbets/comments/1wy1qzo/nvda/",
+              "container": "wallstreetbets",
+              "published_at": "2026-10-05",
+              "date_confidence": "high",
+              "engagement": {
+                "score": 27373,
+                "num_comments": 1007
+              },
+              "relevance_hint": 0.35,
+              "why_relevant": "Reddit search",
+              "snippet": "NVDA",
+              "metadata": {
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.22,
+              "freshness": 20,
+              "engagement_score": 99,
+              "source_quality": 0.6,
+              "local_rank_score": 0.29200000000000004
+            },
+            {
+              "item_id": "R4",
+              "source": "reddit",
+              "title": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy",
+              "body": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy\nSpaceX is planning a massive $40 billion debt raise to buy Nvidia chips. The financial structure of this deal is quite wild. $40 billion is roughly equal to SpaceX\u2019s entire projected revenue for the year. They are splitting the package into $10 billion in bank loans and $30 billion in investment-grade bonds, with Apollo Global Management leading the deal. For anyone trading Nvidia (NVDA), this shuts down the argument that AI hardware demand is slowing down. The fascinating part is the cash loop: Nvidia owns about $21 billion worth of SpaceX stock. SpaceX is essentially taking on historic debt from Wall Street to hand billions of dollars straight back to Nvidia for chips, which in turn props up the value of Nvidia's own balance sheet. If this deal goes through as planned by 2027, it shows that major companies are willing to push their finances to the absolute limit just to secure computing power. Anyone worried SpaceX is taking on this much leverage for hardware?\n\nSource: [Bloomberg](https://www.bloomberg.com/news/articles/2026-10-06/spacex-seeking-to-raise-40-billion-to-buy-nvidia-chips-ft-says)\nWho cares? We'll just triple the market cap and call it earnings. Does R.O.I. mean anything these days? Musk sure is taking advantage of his \"too big to fail \" status. If SpaceX starts defaulting on debt it would cascade into a stock market crash. The puppets in DC and the fat cats in wallstreet would d",
+              "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+              "container": "stocks",
+              "published_at": "2026-10-07",
+              "date_confidence": "high",
+              "engagement": {
+                "score": 507,
+                "num_comments": 216
+              },
+              "relevance_hint": 0.18,
+              "why_relevant": "Reddit listing (arctic-shift)",
+              "snippet": "Who cares? We'll just triple the market cap and call it earnings. Does R.O.I. mean anything these days? Musk sure is taking advantage of his \"too big to fail \" status. If SpaceX starts defaulting on debt it would cascade into a stock market crash. The puppets in DC and the fat cats in wallstreet would d",
+              "metadata": {
+                "top_comments": [
+                  {
+                    "score": 212,
+                    "date": "2026-10-07",
+                    "author": "KissmySPAC",
+                    "excerpt": "Who cares? We'll just triple the market cap and call it earnings.",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peercfy/"
+                  },
+                  {
+                    "score": 134,
+                    "date": "2026-10-07",
+                    "author": "zedder1994",
+                    "excerpt": "Does R.O.I. mean anything these days?",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peexhra/"
+                  },
+                  {
+                    "score": 96,
+                    "date": "2026-10-07",
+                    "author": "CarpoLarpo",
+                    "excerpt": "Musk sure is taking advantage of his \"too big to fail \" status. If SpaceX starts defaulting on debt it would cascade into a stock market crash. The puppets in DC and the fat cats in wallstreet would d",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pefku75/"
+                  },
+                  {
+                    "score": 78,
+                    "date": "2026-10-07",
+                    "author": "Gundamnitpete",
+                    "excerpt": "Really. Old. Indicator. /s",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pefyn8k/"
+                  },
+                  {
+                    "score": 52,
+                    "date": "2026-10-07",
+                    "author": "Longjumping_Kale3013",
+                    "excerpt": "They\u2019re going to buy much more than that. They want to build over 10 GW of Vera Rubin which will be 400 billion of NVIDIA \u201cai factory\u201d . But a big part will also be funded by revenue. They said they w",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peereut/"
+                  },
+                  {
+                    "score": 38,
+                    "date": "2026-10-07",
+                    "author": "Mobile-Bar7732",
+                    "excerpt": "Not according to SpaceX/Tesla shareholders. They'll spend $300 to earn $1 as long as you promise them you'll make a lot more in the future.",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pegcxng/"
+                  },
+                  {
+                    "score": 31,
+                    "date": "2026-10-07",
+                    "author": "Hacking_the_Gibson",
+                    "excerpt": "I'm really digging this trend of consumption-based revenue models becoming subscription based by just calling it recurring revenue . McDonald's franchise owners are in perfect position. Just take the ",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pef6p47/"
+                  },
+                  {
+                    "score": 26,
+                    "date": "2026-10-07",
+                    "author": "JabCrossE4E5Quark",
+                    "excerpt": "Didnt they have like 7B revenue last Q? 100B ARR by EOY lol sure thing",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pef0mzp/"
+                  },
+                  {
+                    "score": 22,
+                    "date": "2026-10-07",
+                    "author": "DICKPICDOUG",
+                    "excerpt": "\"ARR\" This always scares me off.",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peeyv6q/"
+                  },
+                  {
+                    "score": 20,
+                    "date": "2026-10-07",
+                    "author": "FlipZip69",
+                    "excerpt": "Yes earnings will increaser to 2 dollars in 5 years indicating a 200% growth. Who would not want a 200% growth in earnings???",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pegen48/"
+                  },
+                  {
+                    "score": 20,
+                    "date": "2026-10-07",
+                    "author": "CarpoLarpo",
+                    "excerpt": "Solid financials? Putting aside the money they raised from blatant corruption and fraud that came from selling shares around their IPO they've always operated at a loss. They would have bankrupted the",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pehehez/"
+                  },
+                  {
+                    "score": 20,
+                    "date": "2026-10-07",
+                    "author": "vertigo88",
+                    "excerpt": "This was a rocket company right? Why are they building data centers?",
+                    "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/pefgyph/"
+                  }
+                ],
+                "comment_insights": [
+                  "Who cares? We'll just triple the market cap and call it earnings.",
+                  "Does R.O.I. mean anything these days?",
+                  "Musk sure is taking advantage of his \"too big to fail \" status.",
+                  "They\u2019re going to buy much more than that. They want to build over 10 GW of Vera Rubin which will be 400 billion of NVIDIA \u201cai factory\u201d .",
+                  "Not according to SpaceX/Tesla shareholders. They'll spend $300 to earn $1 as long as you promise them you'll make a lot more in the future.",
+                  "I'm really digging this trend of consumption-based revenue models becoming subscription based by just calling it recurring revenue .",
+                  "Didnt they have like 7B revenue last Q? 100B ARR by EOY lol sure thing"
+                ]
+              },
+              "local_relevance": 0.2,
+              "freshness": 25,
+              "engagement_score": 73,
+              "source_quality": 0.6,
+              "local_rank_score": 0.2655
+            }
+          ]
+        },
+        "errors_by_source": {},
+        "source_status": {
+          "reddit": {
+            "source": "reddit",
+            "state": "ok",
+            "items_returned": 2,
+            "attempted": true,
+            "detail": "1 sub-request timed out",
+            "at": "2026-10-31T12:24:53.226601Z",
+            "lane_failure_state": "timeout"
+          },
+          "hackernews": {
+            "source": "hackernews",
+            "state": "ok",
+            "items_returned": 6,
+            "attempted": true,
+            "at": "2026-10-31T12:24:53.224955Z"
+          }
+        },
+        "freshness_verdicts": [],
+        "warnings": [],
+        "artifacts": {
+          "grounding": [],
+          "plan_source": "external",
+          "corpus_in_export": false,
+          "hiring_signals_mode": false,
+          "resolved": {
+            "entity": "NVIDIA NVDA \u82f1\u4f1f\u8fbe",
+            "x_handle": "",
+            "subreddits": [
+              "stocks",
+              "investing",
+              "wallstreetbets",
+              "SecurityAnalysis"
+            ],
+            "github_user": "",
+            "github_repos": [],
+            "trustpilot_domain": "",
+            "context": ""
+          }
+        },
+        "library_context": []
+      }
+    }
+  ]
+}

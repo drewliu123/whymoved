@@ -1,0 +1,1500 @@
+{
+  "schema": "last30days-report-cache/v2",
+  "topic": "NVIDIA NVDA",
+  "timestamp": "2026-10-31T12:25:07.472665+00:00",
+  "comparison": false,
+  "x_envelope_sha256": null,
+  "research_options": {
+    "search": "reddit,hackernews,youtube,polymarket",
+    "quick": true,
+    "deep": false,
+    "mock": false,
+    "web_backend": "auto",
+    "perplexity_search_type": null,
+    "hiring_signals": false,
+    "x_handle": null,
+    "x_related": null,
+    "official_site": null,
+    "no_x_handle": null,
+    "subreddits": "stocks,investing,wallstreetbets,SecurityAnalysis",
+    "dedicated_subreddits": "NVDA_Stock,nvidia",
+    "devto_tags": null,
+    "tiktok_hashtags": null,
+    "tiktok_creators": null,
+    "ig_creators": null,
+    "max_results": null,
+    "max_per_source": null,
+    "max_source_fetches": null,
+    "auto_resolve": false,
+    "github_user": null,
+    "github_repo": null,
+    "trustpilot_domain": null,
+    "amazon_query": null,
+    "meta_ads_page": null,
+    "telegram_sources": null,
+    "competitors": null,
+    "competitors_list": null,
+    "polymarket_keywords": null,
+    "corpus_all_time": false,
+    "drill": null,
+    "corpus_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "plan": "56a32b6208ff2110cb4525888a13a30e9a4de9267e0237cebba9530b96806a6d",
+    "competitors_plan": null,
+    "config_sha256": "c151e938e61c7ba883502cae315673ec9c611950e2fdd94bf8e723cd71bfd07a"
+  },
+  "reports": [
+    {
+      "entity": "NVIDIA NVDA",
+      "report": {
+        "topic": "NVIDIA NVDA",
+        "range_from": "2026-10-01",
+        "range_to": "2026-10-31",
+        "generated_at": "2026-10-31T12:25:07.472189+00:00",
+        "provider_runtime": {
+          "reasoning_provider": "local",
+          "planner_model": "deterministic",
+          "rerank_model": "local-score"
+        },
+        "query_plan": {
+          "intent": "opinion",
+          "freshness_mode": "balanced_recent",
+          "cluster_mode": "debate",
+          "raw_topic": "NVIDIA NVDA",
+          "subqueries": [
+            {
+              "label": "primary",
+              "search_query": "NVIDIA NVDA Blackwell demand margin",
+              "ranking_query": "What do investors say about NVIDIA Blackwell demand and margins? Retain only direct NVIDIA discussion from October 1 through October 31 2026 before 12:19:06 UTC.",
+              "sources": [
+                "reddit",
+                "hackernews"
+              ],
+              "weight": 1.0
+            }
+          ],
+          "source_weights": {
+            "reddit": 0.25,
+            "youtube": 0.25,
+            "hackernews": 0.25,
+            "polymarket": 0.25
+          },
+          "notes": []
+        },
+        "clusters": [
+          {
+            "cluster_id": "cluster-1",
+            "title": "Game Ready & Studio Driver 617.42 FAQ/Discussion",
+            "candidate_ids": [
+              "https://reddit.com/r/nvidia/comments/1wz575x/game_ready_studio_driver_61742_faqdiscussion"
+            ],
+            "representative_ids": [
+              "https://reddit.com/r/nvidia/comments/1wz575x/game_ready_studio_driver_61742_faqdiscussion"
+            ],
+            "sources": [
+              "reddit"
+            ],
+            "score": 35.15806451612903,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-2",
+            "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+            "candidate_ids": [
+              "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report",
+              "https://reddit.com/r/trading212/comments/1x1fjbn/nvidia"
+            ],
+            "representative_ids": [
+              "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report",
+              "https://reddit.com/r/trading212/comments/1x1fjbn/nvidia"
+            ],
+            "sources": [
+              "hackernews",
+              "reddit"
+            ],
+            "score": 34.964590163934425,
+            "uncertainty": "thin-evidence"
+          },
+          {
+            "cluster_id": "cluster-3",
+            "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+            "candidate_ids": [
+              "https://github.com/Zagitta/gpu-unlock"
+            ],
+            "representative_ids": [
+              "https://github.com/Zagitta/gpu-unlock"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 30.6069696969697,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-4",
+            "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+            "candidate_ids": [
+              "https://wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53"
+            ],
+            "representative_ids": [
+              "https://wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 30.392063492063492,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-5",
+            "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+            "candidate_ids": [
+              "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            ],
+            "representative_ids": [
+              "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 30.15806451612903,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-6",
+            "title": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy",
+            "candidate_ids": [
+              "https://reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy"
+            ],
+            "representative_ids": [
+              "https://reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy"
+            ],
+            "sources": [
+              "reddit"
+            ],
+            "score": 28.392063492063492,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-7",
+            "title": "Nvidia discusses $2k-per-GPU annual fee for software",
+            "candidate_ids": [
+              "https://tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform"
+            ],
+            "representative_ids": [
+              "https://tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 27.86153846153846,
+            "uncertainty": "single-source"
+          },
+          {
+            "cluster_id": "cluster-8",
+            "title": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+            "candidate_ids": [
+              "https://nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html"
+            ],
+            "representative_ids": [
+              "https://nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 26.1265625,
+            "uncertainty": "single-source"
+          }
+        ],
+        "ranked_candidates": [
+          {
+            "candidate_id": "https://reddit.com/r/nvidia/comments/1wz575x/game_ready_studio_driver_61742_faqdiscussion",
+            "item_id": "R56",
+            "source": "reddit",
+            "title": "Game Ready & Studio Driver 617.42 FAQ/Discussion",
+            "url": "https://www.reddit.com/r/nvidia/comments/1wz575x/game_ready_studio_driver_61742_faqdiscussion/",
+            "snippet": "Driver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. 617.42 may (note the 'may') have undocumented additions/fixes. The total ad Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070). As always: this is not a definitive review. Every PC setup is different, so treat it as a reference point, I'm still getting screen flickering when using chromium based browsers (Brave and Edge). edit: To clarify, I'm getting green or white screen flickers/flashes at random intervals",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:reddit": 2
+            },
+            "local_relevance": 0.35,
+            "freshness": 22,
+            "engagement": 71,
+            "source_quality": 0.6,
+            "rrf_score": 0.004032258064516129,
+            "sources": [
+              "reddit"
+            ],
+            "source_items": [
+              {
+                "item_id": "R56",
+                "source": "reddit",
+                "title": "Game Ready & Studio Driver 617.42 FAQ/Discussion",
+                "body": "Game Ready & Studio Driver 617.42 FAQ/Discussion\n**Driver Article Here**: [Link Here](https://www.nvidia.com/en-us/geforce/news/call-of-duty-modern-warfare-4-star-wars-galactic-racer-game-ready-driver/)\n\n**Game Ready Driver 617.42 Direct Download Link**: [Link Here](https://us.download.nvidia.com/Windows/617.42/617.42-desktop-win10-win11-64bit-international-dch-whql.exe)\n\n**Studio Driver 617.42 Direct Download Link**: [Link Here](https://us.download.nvidia.com/Windows/617.42/617.42-desktop-win10-win11-64bit-international-nsd-dch-whql.exe)\n\n# New feature and fixes in driver 617.42:\n\n# Game Ready\n\nThis new Game Ready Driver provides the best gaming experience for the latest new games and updates supporting DLSS and RTX technologies including Call of Duty: Modern Warfare 4, STAR WARS: Galactic Racer, Dragon\u2019s Dogma 2: Dark Arisen, Microsoft Flight Simulator 2024, and Valor Mortis.\n\n# Applications\n\nThe October NVIDIA Studio Driver provides optimal support for the latest new creative applications and updates including DaVinci Resolve 21.1, Adobe Premiere Pro, Perplexity App, and support for Topaz Labs Hyperion 2.5.\n\n# Fixed Gaming Bugs\n\n* **FIXED** Assassin's Creed Shadows may crash to desktop after extended gameplay after updating to driver 616.56. \\[6685219\\]\n\n# Fixed General Bugs\n\n* N/A\n\n**Includes additional open issues from** [GeForce Forums](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/591391/geforce-grd-61742-feedback-thread-released-10626/)\n\n* \u201cPrefer Maximum Performance\u201d Power Management Mode may not be applied correctly \\[6007998\\]\n\n# Driver Downloads and Tools\n\n**Information & Documentation**\n\n* Driver Download Page: [Nvidia Download Page](https://www.nvidia.com/Download/Find.aspx?lang=en-us)\n* Latest Game Ready Driver: **617.42** WHQL - [Game Ready Driver Release Notes](https://us.download.nvidia.com/Windows/617.42/617.42-win11-win10-release-notes.pdf)\n* Latest Studio Driver: **617.42** WHQL - [Studio Driver Release Notes](https://us.download.nvidia.com/Windows/617.42/617.42-win10-win11-nsd-release-notes.pdf)\n* High Bandwidth Monitors and GPU Scaling Behavior - [Link Here](https://nvidia.custhelp.com/app/answers/detail/a_id/5694)\n   * High bandwidth monitors are those that support display modes requiring high pixel clock rates, which in turn demand more GPU resources. The threshold for what qualifies as \"high bandwidth\" varies by product. On Blackwell GPUs, any mode operating above 1620 MHz is considered high bandwidth. For instance, the 7680x4320@60Hz mode defined in the CTA-861-H specification runs at 2376 MHz, making it a high bandwidth mode for Blackwell.\n   * These monitors typically support display scaling natively. However, in some single-monitor setups, users may still prefer GPU scaling. When multiple monitors are connected to a GPU and at least one of them is high bandwidth, that monitor will default to display scaling only. GPU scaling is disabled in this case due to bandwidth limitations. Notably, display scaling can be more efficient than GPU scaling in such scenarios, as it reduces the bandwidth load on display cables\u2014especially at higher refresh rates.\n   * When GPU scaling is not enabled for a monitor, only the modes supported by the monitor itself will appear in both the Windows and NVIDIA control panels. Additionally, the \"Display scaling\" option will be pre-selected in the \"Adjust desktop size and position\" section of the NVIDIA Control Panel.\n* Notes on NVIDIA Control Panel - From GeForce Forum\n   * **Please note:** With the introduction of our most recent NVIDIA App update, all actively supported NVIDIA Control Panel features for GeForce users have been modernized and transitioned to the new client.\n   * After 20 years of dedicated service, the classic NVIDIA Control Panel is officially retiring for Game Ready and Studio Drivers. For NVIDIA RTX PRO users, the NVIDIA Control Panel will continue to be supported until we have migrated professional features to the NVIDIA app.\n   * **Existing installs of the NVIDIA Control Panel will remain on users\u2019 systems, unless they perform a clean installation, and users who still need the NVIDIA Control Panel can continue to download it from the Microsoft Store, but we won\u2019t be adding features, fixes, or other changes**.\n\n**Feedback & Discussion Forums**\n\n* **Submit driver feedback directly to NVIDIA:**\u00a0[**Link Here**](https://forms.gle/kJ9Bqcaicvjb82SdA)\n* NVIDIA **617.42** Driver Forum:\u00a0[Link Here](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/591391/geforce-grd-61742-feedback-thread-released-10626/)\n* r/NVIDIA\u00a0Discord Driver Feedback:\u00a0[Invite Link Here](https://discord.gg/fYCdC3xgPm)\n* r/NVIDIA Community Bug Tracker: [Link Here](https://indep-arg.github.io/NvidiaWatch/)\n   * Thanks to u/independent-arg for maintaining this!\n\n**Having Issues with your driver and want to fully clean the driver? Use DDU (Display Driver Uninstaller)**\n\n* DDU Download:\u00a0\u00a0[Link Here](https://www.wagnardsoft.com/display-driver-uninstaller-ddu)\n* DDU Guide:\u00a0[Guide Here](https://docs.google.com/document/d/1xRRx_3r8GgCpBAMuhT9n5kK6Zse_DYKWvjsW0rLcYQ0/edit)\n* DDU/WagnardSoft Patreon:\u00a0[Link Here](https://www.patreon.com/wagnardsoft)\n\n**Before you start - Make sure you Submit Feedback for your Nvidia Driver Issue -** [**Link Here**](https://forms.gle/kJ9Bqcaicvjb82SdA)\n\n**There is only one real way for any of these problems to get solved**, and that\u2019s if the Driver Team at Nvidia knows what those problems are. So in order for them to know what\u2019s going on it would be good for any users who are having problems with the drivers to [Submit Feedback](https://forms.gle/kJ9Bqcaicvjb82SdA) to Nvidia. A guide to the information that is needed to submit feedback can be found [here](http://nvidia.custhelp.com/app/answers/detail/a_id/3141).\n\n**Additionally, if you see someone having the same issue you are having in this thread, reply and mention you are having the same issue. The more people that are affected by a particular bug, the higher the priority that bug will receive from NVIDIA!!**\n\n**Common Troubleshooting Steps**\n\n* Be sure you are on the latest build of Windows\n* Please visit the following link for [DDU guide](https://goo.gl/JChbVf) which contains full detailed information on how to do Fresh Driver Install.\n* If your driver still crashes after DDU reinstall, try going to Go to Nvidia Control Panel -> Managed 3D Settings -> Power Management Mode: Prefer Maximum Performance\n\n**Common Questions**\n\n* **Is it safe to upgrade to <insert driver version here>?** *Fact of the matter is that the result will differ person by person due to different configurations. The only way to know is to try it yourself. My rule of thumb is to wait a few days. If there\u2019s no confirmed widespread issue, I would try the new driver.*\n* **Bear in mind that people who have no issues tend to not post on Reddit or forums. Unless there is significant coverage about specific driver issue, chances are they are fine. Try it yourself and you can always DDU and reinstall old driver if needed.**\n* **My color is washed out after upgrading/installing driver. Help!** *Try going to the Nvidia Control Panel -> Change Resolution -> Scroll all the way down -> Output Dynamic Range = FULL.*\n* **My game is stuttering when processing physics calculation** *Try going to the Nvidia Control Panel and to the Surround and PhysX settings and ensure the PhysX processor is set to your GPU*\n\nRemember, driver codes are extremely complex and there are billions of different possible configurations between hardware and software. Driver will never be perfect and there will always be issues for some people. Two people with the same hardware configuration might not have the same experience with the same driver versions. Again, I encourage folks who installed the driver to post their experience here good or bad.\nDriver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. 617.42 may (note the 'may') have undocumented additions/fixes. The total ad Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070). As always: this is not a definitive review. Every PC setup is different, so treat it as a reference point, I'm still getting screen flickering when using chromium based browsers (Brave and Edge). edit: To clarify, I'm getting green or white screen flickers/flashes at random intervals",
+                "url": "https://www.reddit.com/r/nvidia/comments/1wz575x/game_ready_studio_driver_61742_faqdiscussion/",
+                "container": "nvidia",
+                "published_at": "2026-10-06",
+                "date_confidence": "high",
+                "engagement": {
+                  "score": 272,
+                  "num_comments": 415
+                },
+                "relevance_hint": 0.0,
+                "why_relevant": "Reddit listing (arctic-shift)",
+                "snippet": "Driver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. 617.42 may (note the 'may') have undocumented additions/fixes. The total ad Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070). As always: this is not a definitive review. Every PC setup is different, so treat it as a reference point, I'm still getting screen flickering when using chromium based browsers (Brave and Edge). edit: To clarify, I'm getting green or white screen flickers/flashes at random intervals",
+                "metadata": {
+                  "top_comments": [
+                    {
+                      "score": 142,
+                      "date": "2026-10-06",
+                      "author": "m_w_h",
+                      "excerpt": "Driver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. 617.42 may (note the 'may') have undocumented additions/fixes. The total ad",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8li9e/"
+                    },
+                    {
+                      "score": 128,
+                      "date": "2026-10-06",
+                      "author": "independent-arg",
+                      "excerpt": "Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070). As always: this is not a definitive review. Every PC setup is different, so treat it as a reference point,",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8i7q1/"
+                    },
+                    {
+                      "score": 64,
+                      "date": "2026-10-06",
+                      "author": "_sneeqi_",
+                      "excerpt": "I'm still getting screen flickering when using chromium based browsers (Brave and Edge). edit: To clarify, I'm getting green or white screen flickers/flashes at random intervals",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8jiin/"
+                    },
+                    {
+                      "score": 60,
+                      "date": "2026-10-06",
+                      "author": "awen478",
+                      "excerpt": "flickering will stay until morale improve",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8kyor/"
+                    },
+                    {
+                      "score": 49,
+                      "date": "2026-10-06",
+                      "author": "independent-arg",
+                      "excerpt": "But..",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8js0e/"
+                    },
+                    {
+                      "score": 38,
+                      "date": "2026-10-06",
+                      "author": "independent-arg",
+                      "excerpt": "Finally..",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8iso0/"
+                    },
+                    {
+                      "score": 36,
+                      "date": "2026-10-06",
+                      "author": "Dragontech97",
+                      "excerpt": "How do you test so fast\ud83d\ude2d\ud83d\ude4f",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8l43h/"
+                    },
+                    {
+                      "score": 34,
+                      "date": "2026-10-12",
+                      "author": "m_w_h",
+                      "excerpt": "Driver Stability and Compatibility Testing Results Just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. This will be the last standalone 'Driver Sta",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pfgacqu/"
+                    },
+                    {
+                      "score": 32,
+                      "date": "2026-10-06",
+                      "author": "independent-arg",
+                      "excerpt": "the driver was active more than 3 hours ago, lol",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8lcaz/"
+                    },
+                    {
+                      "score": 28,
+                      "date": "2026-10-06",
+                      "author": "KUPOinyourWINDOW",
+                      "excerpt": "hey Nvidia thanks for the driver update, the washed out hardware cursor bug (regression) we've been reporting for 12 driver versions is still present in this version, hoping for a fix thanks!",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pea8jjd/"
+                    },
+                    {
+                      "score": 25,
+                      "date": "2026-10-06",
+                      "author": "NewsFromHell",
+                      "excerpt": "I'll call this special AC Shadows driver.",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8kkqy/"
+                    },
+                    {
+                      "score": 24,
+                      "date": "2026-10-06",
+                      "author": "MelvinSmiley83",
+                      "excerpt": "Haha, the prefer maximum performance bug will never be fixed apparently. Small mom and pop shop nvidia doesn't have enough ressources to do that.",
+                      "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe99jdm/"
+                    }
+                  ],
+                  "comment_insights": [
+                    "Driver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA.",
+                    "Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070).",
+                    "I'm still getting screen flickering when using chromium based browsers (Brave and Edge).",
+                    "flickering will stay until morale improve",
+                    "Driver Stability and Compatibility Testing Results Just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NV...",
+                    "the driver was active more than 3 hours ago, lol",
+                    "hey Nvidia thanks for the driver update, the washed out hardware cursor bug (regression) we've been reporting for 12 driver versions is still present..."
+                  ]
+                },
+                "local_relevance": 0.35,
+                "freshness": 22,
+                "engagement_score": 71,
+                "source_quality": 0.6,
+                "local_rank_score": 0.3535
+              }
+            ],
+            "rerank_score": 30.5,
+            "final_score": 35.15806451612903,
+            "explanation": "fallback-local-score",
+            "fun_score": 36.120234896104776,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-1",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "reddit",
+                  "subquery_label": "primary",
+                  "native_rank": 2,
+                  "item_id": "R56"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report",
+            "item_id": "50293047",
+            "source": "hackernews",
+            "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+            "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+            "snippet": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism. First, does her activity actually fit the definition of \u201cespionage\u201d? Espionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission The most... Please can we get this fixed to point to the NY Times article; they broke this story no? Also, New York Post? Let's do...",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 1
+            },
+            "local_relevance": 0.07,
+            "freshness": 84,
+            "engagement": 92,
+            "source_quality": 0.8,
+            "rrf_score": 0.004098360655737705,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50293047",
+                "source": "hackernews",
+                "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+                "body": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang\nSuper weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism.\nFirst, does her activity actually fit the definition of \u201cespionage\u201d?\nEspionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission\nThe most... Please can we get this fixed to point to the NY Times article; they broke this story no?\nAlso, New York Post? Let's do better.",
+                "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+                "author": "mgh2",
+                "container": "Hacker News",
+                "published_at": "2026-10-29",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 356,
+                  "comments": 235
+                },
+                "relevance_hint": 0.77,
+                "why_relevant": "HN story about Alleged Chinese spy had 'close relationship' with Nvidia bos",
+                "snippet": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism. First, does her activity actually fit the definition of \u201cespionage\u201d? Espionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission The most... Please can we get this fixed to point to the NY Times article; they broke this story no? Also, New York Post? Let's do...",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50293047",
+                  "top_comments": [
+                    {
+                      "excerpt": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re...",
+                      "author": "zetazzed",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50295769"
+                    },
+                    {
+                      "excerpt": "A couple of questions after reading this article. The Post is not exactly top notch journalism.\nFirst, does her activity actually fit the definition of \u201cespionage\u201d?\nEspionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission\nThe most...",
+                      "author": "janalsncm",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50295873"
+                    },
+                    {
+                      "excerpt": "Please can we get this fixed to point to the NY Times article; they broke this story no?\nAlso, New York Post? Let's do better.",
+                      "author": "Rapzid",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50296355"
+                    },
+                    {
+                      "excerpt": "For the thousandth time, don\u2019t use archive.ph/archive.is/archive.today, THEY ARE ATTACK SITES.",
+                      "author": "cluckindan",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50300118"
+                    },
+                    {
+                      "excerpt": "I doubt Jensen is completely out of the scheme TBH.",
+                      "author": "markus_zhang",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50295132"
+                    }
+                  ],
+                  "comment_insights": [
+                    "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nons",
+                    "A couple of questions after reading this article",
+                    "Please can we get this fixed to point to the NY Times article; they broke this story no?",
+                    "For the thousandth time, don\u2019t use archive.ph/archive.is/archive.today, THEY ARE ATTACK SITES.",
+                    "I doubt Jensen is completely out of the scheme TBH."
+                  ]
+                },
+                "local_relevance": 0.07,
+                "freshness": 84,
+                "engagement_score": 92,
+                "source_quality": 0.8,
+                "local_rank_score": 0.34750000000000003
+              }
+            ],
+            "rerank_score": 12.9,
+            "final_score": 34.964590163934425,
+            "explanation": "fallback-local-score",
+            "fun_score": 10.0,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-2",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "50293047"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://github.com/Zagitta/gpu-unlock",
+            "item_id": "50219700",
+            "source": "hackernews",
+            "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+            "url": "https://github.com/Zagitta/gpu-unlock",
+            "snippet": "Hey this is my work, although the exploits etc aren't my ideas by any means. This is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library: https://github.com/aikitoria/open-gpu-kernel-modules The hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats: - you will need to run your card hotter than you...",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 6
+            },
+            "local_relevance": 0.03,
+            "freshness": 70,
+            "engagement": 84,
+            "source_quality": 0.8,
+            "rrf_score": 0.003787878787878788,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50219700",
+                "source": "hackernews",
+                "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+                "body": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards\nHey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library:\nhttps://github.com/aikitoria/open-gpu-kernel-modules\nThe hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats:\n- you will need to run your card hotter than you might be comfortable with\n- the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W\n- This is well above what the stock cooler was designed for so a bit m...",
+                "url": "https://github.com/Zagitta/gpu-unlock",
+                "author": "fragebogen",
+                "container": "Hacker News",
+                "published_at": "2026-10-24",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 351,
+                  "comments": 83
+                },
+                "relevance_hint": 0.76,
+                "why_relevant": "HN story about GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's",
+                "snippet": "Hey this is my work, although the exploits etc aren't my ideas by any means. This is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library: https://github.com/aikitoria/open-gpu-kernel-modules The hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats: - you will need to run your card hotter than you...",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50219700",
+                  "top_comments": [
+                    {
+                      "excerpt": "Hey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl...",
+                      "author": "Zagitta",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50222102"
+                    },
+                    {
+                      "excerpt": "A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library:\nhttps://github.com/aikitoria/open-gpu-kernel-modules\nThe hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa...",
+                      "author": "RachelF",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50223788"
+                    },
+                    {
+                      "excerpt": "This one is real, but there are some caveats:\n- you will need to run your card hotter than you might be comfortable with\n- the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W\n- This is well above what the stock cooler was designed for so a bit m...",
+                      "author": "jacquesm",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50221626"
+                    },
+                    {
+                      "excerpt": "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A...\n> Unfortunately for Nvidia the booter is vulnerable to a classic buffer overflow that writes straight into the ...",
+                      "author": "Tiberium",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50219868"
+                    },
+                    {
+                      "excerpt": "As a person who uses consumer level hardware to do neural network research, this unlock is truly INVALUABLE.\nThis unlock is super useful as it improves the GPU performance on computation-bounded neural network workloads like LLM prefilling, image/video generation, and general neural network training...",
+                      "author": "RandyOrion",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50224757"
+                    }
+                  ],
+                  "comment_insights": [
+                    "Hey this is my work, although the exploits etc aren't my ideas by any means.",
+                    "A semi related: a patch for those with multiple cards",
+                    "This one is real, but there are some caveats:",
+                    "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A...",
+                    "As a person who uses consumer level hardware to do neural network research, this unlock is truly INVALUABLE."
+                  ]
+                },
+                "local_relevance": 0.03,
+                "freshness": 70,
+                "engagement_score": 84,
+                "source_quality": 0.8,
+                "local_rank_score": 0.27849999999999997
+              }
+            ],
+            "rerank_score": 10.1,
+            "final_score": 30.6069696969697,
+            "explanation": "fallback-local-score",
+            "fun_score": 0.0,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-3",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 6,
+                  "item_id": "50219700"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+            "item_id": "50236073",
+            "source": "hackernews",
+            "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+            "url": "https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+            "snippet": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 3
+            },
+            "local_relevance": 0.05,
+            "freshness": 74,
+            "engagement": 74,
+            "source_quality": 0.8,
+            "rrf_score": 0.003968253968253968,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50236073",
+                "source": "hackernews",
+                "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+                "body": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+                "url": "https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+                "author": "JumpCrisscross",
+                "container": "Hacker News",
+                "published_at": "2026-10-25",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 175,
+                  "comments": 47
+                },
+                "relevance_hint": 0.73,
+                "why_relevant": "HN story about Nvidia and Micron Make Up 34% of America's Earnings Boom",
+                "snippet": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50236073",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.05,
+                "freshness": 74,
+                "engagement_score": 74,
+                "source_quality": 0.8,
+                "local_rank_score": 0.2915
+              }
+            ],
+            "rerank_score": 11.5,
+            "final_score": 30.392063492063492,
+            "explanation": "fallback-local-score",
+            "fun_score": 13.05,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-4",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 3,
+                  "item_id": "50236073"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+            "item_id": "50275128",
+            "source": "hackernews",
+            "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+            "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+            "snippet": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 2
+            },
+            "local_relevance": 0.05,
+            "freshness": 82,
+            "engagement": 67,
+            "source_quality": 0.8,
+            "rrf_score": 0.004032258064516129,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50275128",
+                "source": "hackernews",
+                "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+                "body": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+                "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+                "author": "wondersky",
+                "container": "Hacker News",
+                "published_at": "2026-10-28",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 133,
+                  "comments": 26
+                },
+                "relevance_hint": 0.71,
+                "why_relevant": "HN story about Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+                "snippet": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50275128",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.05,
+                "freshness": 82,
+                "engagement_score": 67,
+                "source_quality": 0.8,
+                "local_rank_score": 0.3045
+              }
+            ],
+            "rerank_score": 11.5,
+            "final_score": 30.15806451612903,
+            "explanation": "fallback-local-score",
+            "fun_score": 12.75,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-5",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 2,
+                  "item_id": "50275128"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy",
+            "item_id": "R17",
+            "source": "reddit",
+            "title": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy",
+            "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+            "snippet": "SpaceX is planning a massive $40 billion debt raise to buy Nvidia chips. The financial structure of this deal is quite wild. $40 billion is roughly equal to SpaceX\u2019s entire projected revenue for the year. They are splitting the package into $10 billion in bank loans and $30 billion in investment-grade bonds, with Apollo Global Management leading the deal. For anyone trading Nvidia (NVDA), this shu",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:reddit": 3
+            },
+            "local_relevance": 0.2,
+            "freshness": 25,
+            "engagement": 66,
+            "source_quality": 0.6,
+            "rrf_score": 0.003968253968253968,
+            "sources": [
+              "reddit"
+            ],
+            "source_items": [
+              {
+                "item_id": "R17",
+                "source": "reddit",
+                "title": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy",
+                "body": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy\nSpaceX is planning a massive $40 billion debt raise to buy Nvidia chips. The financial structure of this deal is quite wild. $40 billion is roughly equal to SpaceX\u2019s entire projected revenue for the year. They are splitting the package into $10 billion in bank loans and $30 billion in investment-grade bonds, with Apollo Global Management leading the deal. For anyone trading Nvidia (NVDA), this shuts down the argument that AI hardware demand is slowing down. The fascinating part is the cash loop: Nvidia owns about $21 billion worth of SpaceX stock. SpaceX is essentially taking on historic debt from Wall Street to hand billions of dollars straight back to Nvidia for chips, which in turn props up the value of Nvidia's own balance sheet. If this deal goes through as planned by 2027, it shows that major companies are willing to push their finances to the absolute limit just to secure computing power. Anyone worried SpaceX is taking on this much leverage for hardware?\n\nSource: [Bloomberg](https://www.bloomberg.com/news/articles/2026-10-06/spacex-seeking-to-raise-40-billion-to-buy-nvidia-chips-ft-says)",
+                "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+                "container": "stocks",
+                "published_at": "2026-10-07",
+                "date_confidence": "high",
+                "engagement": {
+                  "score": 507,
+                  "num_comments": 216
+                },
+                "relevance_hint": 0.37,
+                "why_relevant": "Reddit listing (arctic-shift)",
+                "snippet": "SpaceX is planning a massive $40 billion debt raise to buy Nvidia chips. The financial structure of this deal is quite wild. $40 billion is roughly equal to SpaceX\u2019s entire projected revenue for the year. They are splitting the package into $10 billion in bank loans and $30 billion in investment-grade bonds, with Apollo Global Management leading the deal. For anyone trading Nvidia (NVDA), this shu",
+                "metadata": {
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.2,
+                "freshness": 25,
+                "engagement_score": 66,
+                "source_quality": 0.6,
+                "local_rank_score": 0.2585
+              }
+            ],
+            "rerank_score": 20.0,
+            "final_score": 28.392063492063492,
+            "explanation": "fallback-local-score",
+            "fun_score": 0.0,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-6",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "reddit",
+                  "subquery_label": "primary",
+                  "native_rank": 3,
+                  "item_id": "R17"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+            "item_id": "50247677",
+            "source": "hackernews",
+            "title": "Nvidia discusses $2k-per-GPU annual fee for software",
+            "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+            "snippet": "Nvidia discusses $2k-per-GPU annual fee for software",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 5
+            },
+            "local_relevance": 0.05,
+            "freshness": 76,
+            "engagement": 56,
+            "source_quality": 0.8,
+            "rrf_score": 0.0038461538461538464,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50247677",
+                "source": "hackernews",
+                "title": "Nvidia discusses $2k-per-GPU annual fee for software",
+                "body": "Nvidia discusses $2k-per-GPU annual fee for software",
+                "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+                "author": "gscott",
+                "container": "Hacker News",
+                "published_at": "2026-10-26",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 41,
+                  "comments": 23
+                },
+                "relevance_hint": 0.63,
+                "why_relevant": "HN story about Nvidia discusses $2k-per-GPU annual fee for software",
+                "snippet": "Nvidia discusses $2k-per-GPU annual fee for software",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50247677",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.05,
+                "freshness": 76,
+                "engagement_score": 56,
+                "source_quality": 0.8,
+                "local_rank_score": 0.2785
+              }
+            ],
+            "rerank_score": 11.5,
+            "final_score": 27.86153846153846,
+            "explanation": "fallback-local-score",
+            "fun_score": 14.25,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-7",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 5,
+                  "item_id": "50247677"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html",
+            "item_id": "50286924",
+            "source": "hackernews",
+            "title": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+            "url": "https://www.nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html",
+            "snippet": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 4
+            },
+            "local_relevance": 0.05,
+            "freshness": 84,
+            "engagement": 39,
+            "source_quality": 0.8,
+            "rrf_score": 0.00390625,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50286924",
+                "source": "hackernews",
+                "title": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+                "body": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+                "url": "https://www.nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html",
+                "author": "u1hcw9nx",
+                "container": "Hacker News",
+                "published_at": "2026-10-29",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 26,
+                  "comments": 3
+                },
+                "relevance_hint": 0.61,
+                "why_relevant": "HN story about Nvidia Chief Seen as Target of Chinese Spy Plot",
+                "snippet": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50286924",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.05,
+                "freshness": 84,
+                "engagement_score": 39,
+                "source_quality": 0.8,
+                "local_rank_score": 0.2815
+              }
+            ],
+            "rerank_score": 11.5,
+            "final_score": 26.1265625,
+            "explanation": "fallback-local-score",
+            "fun_score": 15.75,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-8",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 4,
+                  "item_id": "50286924"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://reddit.com/r/trading212/comments/1x1fjbn/nvidia",
+            "item_id": "R3",
+            "source": "reddit",
+            "title": "Nvidia",
+            "url": "https://www.reddit.com/r/trading212/comments/1x1fjbn/nvidia/",
+            "snippet": "Nvidia",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:reddit": 4
+            },
+            "local_relevance": 0.22,
+            "freshness": 30,
+            "engagement": 27,
+            "source_quality": 0.6,
+            "rrf_score": 0.00390625,
+            "sources": [
+              "reddit"
+            ],
+            "source_items": [
+              {
+                "item_id": "R3",
+                "source": "reddit",
+                "title": "Nvidia",
+                "body": "Nvidia",
+                "url": "https://www.reddit.com/r/trading212/comments/1x1fjbn/nvidia/",
+                "container": "trading212",
+                "published_at": "2026-10-09",
+                "date_confidence": "high",
+                "engagement": {
+                  "score": 11,
+                  "num_comments": 9
+                },
+                "relevance_hint": 0.54,
+                "why_relevant": "Reddit search",
+                "snippet": "Nvidia",
+                "metadata": {
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.22,
+                "freshness": 30,
+                "engagement_score": 27,
+                "source_quality": 0.6,
+                "local_rank_score": 0.24500000000000002
+              }
+            ],
+            "rerank_score": 21.4,
+            "final_score": 23.866562499999997,
+            "explanation": "fallback-local-score",
+            "fun_score": 28.05,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-2",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "reddit",
+                  "subquery_label": "primary",
+                  "native_rank": 4,
+                  "item_id": "R3"
+                }
+              ],
+              "range_from": "2026-10-01",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          }
+        ],
+        "items_by_source": {
+          "reddit": [
+            {
+              "item_id": "R104",
+              "source": "reddit",
+              "title": "\u27a1\ufe0f Weekend Thread and Discussion \u2b05\ufe0f 2026-10-31 to 2026-11-01",
+              "body": "\u27a1\ufe0f Weekend Thread and Discussion \u2b05\ufe0f 2026-10-31 to 2026-11-01",
+              "url": "https://www.reddit.com/r/NVDA_Stock/comments/1xk0f20/weekend_thread_and_discussion_20261031_to_20261101/",
+              "container": "NVDA_Stock",
+              "published_at": "2026-10-31",
+              "date_confidence": "high",
+              "engagement": {
+                "score": 6,
+                "num_comments": 16
+              },
+              "relevance_hint": 0.0,
+              "why_relevant": "Reddit listing",
+              "snippet": "\u27a1\ufe0f Weekend Thread and Discussion \u2b05\ufe0f 2026-10-31 to 2026-11-01",
+              "metadata": {
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.16,
+              "freshness": 90,
+              "engagement_score": 26,
+              "source_quality": 0.6,
+              "local_rank_score": 0.35500000000000004
+            },
+            {
+              "item_id": "R56",
+              "source": "reddit",
+              "title": "Game Ready & Studio Driver 617.42 FAQ/Discussion",
+              "body": "Game Ready & Studio Driver 617.42 FAQ/Discussion\n**Driver Article Here**: [Link Here](https://www.nvidia.com/en-us/geforce/news/call-of-duty-modern-warfare-4-star-wars-galactic-racer-game-ready-driver/)\n\n**Game Ready Driver 617.42 Direct Download Link**: [Link Here](https://us.download.nvidia.com/Windows/617.42/617.42-desktop-win10-win11-64bit-international-dch-whql.exe)\n\n**Studio Driver 617.42 Direct Download Link**: [Link Here](https://us.download.nvidia.com/Windows/617.42/617.42-desktop-win10-win11-64bit-international-nsd-dch-whql.exe)\n\n# New feature and fixes in driver 617.42:\n\n# Game Ready\n\nThis new Game Ready Driver provides the best gaming experience for the latest new games and updates supporting DLSS and RTX technologies including Call of Duty: Modern Warfare 4, STAR WARS: Galactic Racer, Dragon\u2019s Dogma 2: Dark Arisen, Microsoft Flight Simulator 2024, and Valor Mortis.\n\n# Applications\n\nThe October NVIDIA Studio Driver provides optimal support for the latest new creative applications and updates including DaVinci Resolve 21.1, Adobe Premiere Pro, Perplexity App, and support for Topaz Labs Hyperion 2.5.\n\n# Fixed Gaming Bugs\n\n* **FIXED** Assassin's Creed Shadows may crash to desktop after extended gameplay after updating to driver 616.56. \\[6685219\\]\n\n# Fixed General Bugs\n\n* N/A\n\n**Includes additional open issues from** [GeForce Forums](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/591391/geforce-grd-61742-feedback-thread-released-10626/)\n\n* \u201cPrefer Maximum Performance\u201d Power Management Mode may not be applied correctly \\[6007998\\]\n\n# Driver Downloads and Tools\n\n**Information & Documentation**\n\n* Driver Download Page: [Nvidia Download Page](https://www.nvidia.com/Download/Find.aspx?lang=en-us)\n* Latest Game Ready Driver: **617.42** WHQL - [Game Ready Driver Release Notes](https://us.download.nvidia.com/Windows/617.42/617.42-win11-win10-release-notes.pdf)\n* Latest Studio Driver: **617.42** WHQL - [Studio Driver Release Notes](https://us.download.nvidia.com/Windows/617.42/617.42-win10-win11-nsd-release-notes.pdf)\n* High Bandwidth Monitors and GPU Scaling Behavior - [Link Here](https://nvidia.custhelp.com/app/answers/detail/a_id/5694)\n   * High bandwidth monitors are those that support display modes requiring high pixel clock rates, which in turn demand more GPU resources. The threshold for what qualifies as \"high bandwidth\" varies by product. On Blackwell GPUs, any mode operating above 1620 MHz is considered high bandwidth. For instance, the 7680x4320@60Hz mode defined in the CTA-861-H specification runs at 2376 MHz, making it a high bandwidth mode for Blackwell.\n   * These monitors typically support display scaling natively. However, in some single-monitor setups, users may still prefer GPU scaling. When multiple monitors are connected to a GPU and at least one of them is high bandwidth, that monitor will default to display scaling only. GPU scaling is disabled in this case due to bandwidth limitations. Notably, display scaling can be more efficient than GPU scaling in such scenarios, as it reduces the bandwidth load on display cables\u2014especially at higher refresh rates.\n   * When GPU scaling is not enabled for a monitor, only the modes supported by the monitor itself will appear in both the Windows and NVIDIA control panels. Additionally, the \"Display scaling\" option will be pre-selected in the \"Adjust desktop size and position\" section of the NVIDIA Control Panel.\n* Notes on NVIDIA Control Panel - From GeForce Forum\n   * **Please note:** With the introduction of our most recent NVIDIA App update, all actively supported NVIDIA Control Panel features for GeForce users have been modernized and transitioned to the new client.\n   * After 20 years of dedicated service, the classic NVIDIA Control Panel is officially retiring for Game Ready and Studio Drivers. For NVIDIA RTX PRO users, the NVIDIA Control Panel will continue to be supported until we have migrated professional features to the NVIDIA app.\n   * **Existing installs of the NVIDIA Control Panel will remain on users\u2019 systems, unless they perform a clean installation, and users who still need the NVIDIA Control Panel can continue to download it from the Microsoft Store, but we won\u2019t be adding features, fixes, or other changes**.\n\n**Feedback & Discussion Forums**\n\n* **Submit driver feedback directly to NVIDIA:**\u00a0[**Link Here**](https://forms.gle/kJ9Bqcaicvjb82SdA)\n* NVIDIA **617.42** Driver Forum:\u00a0[Link Here](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/591391/geforce-grd-61742-feedback-thread-released-10626/)\n* r/NVIDIA\u00a0Discord Driver Feedback:\u00a0[Invite Link Here](https://discord.gg/fYCdC3xgPm)\n* r/NVIDIA Community Bug Tracker: [Link Here](https://indep-arg.github.io/NvidiaWatch/)\n   * Thanks to u/independent-arg for maintaining this!\n\n**Having Issues with your driver and want to fully clean the driver? Use DDU (Display Driver Uninstaller)**\n\n* DDU Download:\u00a0\u00a0[Link Here](https://www.wagnardsoft.com/display-driver-uninstaller-ddu)\n* DDU Guide:\u00a0[Guide Here](https://docs.google.com/document/d/1xRRx_3r8GgCpBAMuhT9n5kK6Zse_DYKWvjsW0rLcYQ0/edit)\n* DDU/WagnardSoft Patreon:\u00a0[Link Here](https://www.patreon.com/wagnardsoft)\n\n**Before you start - Make sure you Submit Feedback for your Nvidia Driver Issue -** [**Link Here**](https://forms.gle/kJ9Bqcaicvjb82SdA)\n\n**There is only one real way for any of these problems to get solved**, and that\u2019s if the Driver Team at Nvidia knows what those problems are. So in order for them to know what\u2019s going on it would be good for any users who are having problems with the drivers to [Submit Feedback](https://forms.gle/kJ9Bqcaicvjb82SdA) to Nvidia. A guide to the information that is needed to submit feedback can be found [here](http://nvidia.custhelp.com/app/answers/detail/a_id/3141).\n\n**Additionally, if you see someone having the same issue you are having in this thread, reply and mention you are having the same issue. The more people that are affected by a particular bug, the higher the priority that bug will receive from NVIDIA!!**\n\n**Common Troubleshooting Steps**\n\n* Be sure you are on the latest build of Windows\n* Please visit the following link for [DDU guide](https://goo.gl/JChbVf) which contains full detailed information on how to do Fresh Driver Install.\n* If your driver still crashes after DDU reinstall, try going to Go to Nvidia Control Panel -> Managed 3D Settings -> Power Management Mode: Prefer Maximum Performance\n\n**Common Questions**\n\n* **Is it safe to upgrade to <insert driver version here>?** *Fact of the matter is that the result will differ person by person due to different configurations. The only way to know is to try it yourself. My rule of thumb is to wait a few days. If there\u2019s no confirmed widespread issue, I would try the new driver.*\n* **Bear in mind that people who have no issues tend to not post on Reddit or forums. Unless there is significant coverage about specific driver issue, chances are they are fine. Try it yourself and you can always DDU and reinstall old driver if needed.**\n* **My color is washed out after upgrading/installing driver. Help!** *Try going to the Nvidia Control Panel -> Change Resolution -> Scroll all the way down -> Output Dynamic Range = FULL.*\n* **My game is stuttering when processing physics calculation** *Try going to the Nvidia Control Panel and to the Surround and PhysX settings and ensure the PhysX processor is set to your GPU*\n\nRemember, driver codes are extremely complex and there are billions of different possible configurations between hardware and software. Driver will never be perfect and there will always be issues for some people. Two people with the same hardware configuration might not have the same experience with the same driver versions. Again, I encourage folks who installed the driver to post their experience here good or bad.\nDriver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. 617.42 may (note the 'may') have undocumented additions/fixes. The total ad Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070). As always: this is not a definitive review. Every PC setup is different, so treat it as a reference point, I'm still getting screen flickering when using chromium based browsers (Brave and Edge). edit: To clarify, I'm getting green or white screen flickers/flashes at random intervals",
+              "url": "https://www.reddit.com/r/nvidia/comments/1wz575x/game_ready_studio_driver_61742_faqdiscussion/",
+              "container": "nvidia",
+              "published_at": "2026-10-06",
+              "date_confidence": "high",
+              "engagement": {
+                "score": 272,
+                "num_comments": 415
+              },
+              "relevance_hint": 0.0,
+              "why_relevant": "Reddit listing (arctic-shift)",
+              "snippet": "Driver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. 617.42 may (note the 'may') have undocumented additions/fixes. The total ad Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070). As always: this is not a definitive review. Every PC setup is different, so treat it as a reference point, I'm still getting screen flickering when using chromium based browsers (Brave and Edge). edit: To clarify, I'm getting green or white screen flickers/flashes at random intervals",
+              "metadata": {
+                "top_comments": [
+                  {
+                    "score": 142,
+                    "date": "2026-10-06",
+                    "author": "m_w_h",
+                    "excerpt": "Driver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. 617.42 may (note the 'may') have undocumented additions/fixes. The total ad",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8li9e/"
+                  },
+                  {
+                    "score": 128,
+                    "date": "2026-10-06",
+                    "author": "independent-arg",
+                    "excerpt": "Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070). As always: this is not a definitive review. Every PC setup is different, so treat it as a reference point,",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8i7q1/"
+                  },
+                  {
+                    "score": 64,
+                    "date": "2026-10-06",
+                    "author": "_sneeqi_",
+                    "excerpt": "I'm still getting screen flickering when using chromium based browsers (Brave and Edge). edit: To clarify, I'm getting green or white screen flickers/flashes at random intervals",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8jiin/"
+                  },
+                  {
+                    "score": 60,
+                    "date": "2026-10-06",
+                    "author": "awen478",
+                    "excerpt": "flickering will stay until morale improve",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8kyor/"
+                  },
+                  {
+                    "score": 49,
+                    "date": "2026-10-06",
+                    "author": "independent-arg",
+                    "excerpt": "But..",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8js0e/"
+                  },
+                  {
+                    "score": 38,
+                    "date": "2026-10-06",
+                    "author": "independent-arg",
+                    "excerpt": "Finally..",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8iso0/"
+                  },
+                  {
+                    "score": 36,
+                    "date": "2026-10-06",
+                    "author": "Dragontech97",
+                    "excerpt": "How do you test so fast\ud83d\ude2d\ud83d\ude4f",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8l43h/"
+                  },
+                  {
+                    "score": 34,
+                    "date": "2026-10-12",
+                    "author": "m_w_h",
+                    "excerpt": "Driver Stability and Compatibility Testing Results Just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA. This will be the last standalone 'Driver Sta",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pfgacqu/"
+                  },
+                  {
+                    "score": 32,
+                    "date": "2026-10-06",
+                    "author": "independent-arg",
+                    "excerpt": "the driver was active more than 3 hours ago, lol",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8lcaz/"
+                  },
+                  {
+                    "score": 28,
+                    "date": "2026-10-06",
+                    "author": "KUPOinyourWINDOW",
+                    "excerpt": "hey Nvidia thanks for the driver update, the washed out hardware cursor bug (regression) we've been reporting for 12 driver versions is still present in this version, hoping for a fix thanks!",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pea8jjd/"
+                  },
+                  {
+                    "score": 25,
+                    "date": "2026-10-06",
+                    "author": "NewsFromHell",
+                    "excerpt": "I'll call this special AC Shadows driver.",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe8kkqy/"
+                  },
+                  {
+                    "score": 24,
+                    "date": "2026-10-06",
+                    "author": "MelvinSmiley83",
+                    "excerpt": "Haha, the prefer maximum performance bug will never be fixed apparently. Small mom and pop shop nvidia doesn't have enough ressources to do that.",
+                    "url": "https://reddit.com/r/nvidia/comments/1wz575x/comment/pe99jdm/"
+                  }
+                ],
+                "comment_insights": [
+                  "Driver Notes First, just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NVIDIA.",
+                  "Hey all, Here's my early look at the 617.42 driver, tested on an Ampere-based GPU (RTX 3070).",
+                  "I'm still getting screen flickering when using chromium based browsers (Brave and Edge).",
+                  "flickering will stay until morale improve",
+                  "Driver Stability and Compatibility Testing Results Just for reference - I'm not a NVIDIA employee, not a r/nvidia moderator and not affiliated with NV...",
+                  "the driver was active more than 3 hours ago, lol",
+                  "hey Nvidia thanks for the driver update, the washed out hardware cursor bug (regression) we've been reporting for 12 driver versions is still present..."
+                ]
+              },
+              "local_relevance": 0.35,
+              "freshness": 22,
+              "engagement_score": 71,
+              "source_quality": 0.6,
+              "local_rank_score": 0.3535
+            },
+            {
+              "item_id": "R17",
+              "source": "reddit",
+              "title": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy",
+              "body": "SpaceX Doubling Its Debt With $40B NVDA Chip Buy\nSpaceX is planning a massive $40 billion debt raise to buy Nvidia chips. The financial structure of this deal is quite wild. $40 billion is roughly equal to SpaceX\u2019s entire projected revenue for the year. They are splitting the package into $10 billion in bank loans and $30 billion in investment-grade bonds, with Apollo Global Management leading the deal. For anyone trading Nvidia (NVDA), this shuts down the argument that AI hardware demand is slowing down. The fascinating part is the cash loop: Nvidia owns about $21 billion worth of SpaceX stock. SpaceX is essentially taking on historic debt from Wall Street to hand billions of dollars straight back to Nvidia for chips, which in turn props up the value of Nvidia's own balance sheet. If this deal goes through as planned by 2027, it shows that major companies are willing to push their finances to the absolute limit just to secure computing power. Anyone worried SpaceX is taking on this much leverage for hardware?\n\nSource: [Bloomberg](https://www.bloomberg.com/news/articles/2026-10-06/spacex-seeking-to-raise-40-billion-to-buy-nvidia-chips-ft-says)",
+              "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+              "container": "stocks",
+              "published_at": "2026-10-07",
+              "date_confidence": "high",
+              "engagement": {
+                "score": 507,
+                "num_comments": 216
+              },
+              "relevance_hint": 0.37,
+              "why_relevant": "Reddit listing (arctic-shift)",
+              "snippet": "SpaceX is planning a massive $40 billion debt raise to buy Nvidia chips. The financial structure of this deal is quite wild. $40 billion is roughly equal to SpaceX\u2019s entire projected revenue for the year. They are splitting the package into $10 billion in bank loans and $30 billion in investment-grade bonds, with Apollo Global Management leading the deal. For anyone trading Nvidia (NVDA), this shu",
+              "metadata": {
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.2,
+              "freshness": 25,
+              "engagement_score": 66,
+              "source_quality": 0.6,
+              "local_rank_score": 0.2585
+            },
+            {
+              "item_id": "R3",
+              "source": "reddit",
+              "title": "Nvidia",
+              "body": "Nvidia",
+              "url": "https://www.reddit.com/r/trading212/comments/1x1fjbn/nvidia/",
+              "container": "trading212",
+              "published_at": "2026-10-09",
+              "date_confidence": "high",
+              "engagement": {
+                "score": 11,
+                "num_comments": 9
+              },
+              "relevance_hint": 0.54,
+              "why_relevant": "Reddit search",
+              "snippet": "Nvidia",
+              "metadata": {
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.22,
+              "freshness": 30,
+              "engagement_score": 27,
+              "source_quality": 0.6,
+              "local_rank_score": 0.24500000000000002
+            }
+          ],
+          "hackernews": [
+            {
+              "item_id": "50293047",
+              "source": "hackernews",
+              "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+              "body": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang\nSuper weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism.\nFirst, does her activity actually fit the definition of \u201cespionage\u201d?\nEspionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission\nThe most... Please can we get this fixed to point to the NY Times article; they broke this story no?\nAlso, New York Post? Let's do better.",
+              "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+              "author": "mgh2",
+              "container": "Hacker News",
+              "published_at": "2026-10-29",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 356,
+                "comments": 235
+              },
+              "relevance_hint": 0.77,
+              "why_relevant": "HN story about Alleged Chinese spy had 'close relationship' with Nvidia bos",
+              "snippet": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re... A couple of questions after reading this article. The Post is not exactly top notch journalism. First, does her activity actually fit the definition of \u201cespionage\u201d? Espionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission The most... Please can we get this fixed to point to the NY Times article; they broke this story no? Also, New York Post? Let's do...",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50293047",
+                "top_comments": [
+                  {
+                    "excerpt": "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nonstop, and I understand they are always transactional (people wanting to sell me stuff), not actual re...",
+                    "author": "zetazzed",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50295769"
+                  },
+                  {
+                    "excerpt": "A couple of questions after reading this article. The Post is not exactly top notch journalism.\nFirst, does her activity actually fit the definition of \u201cespionage\u201d?\nEspionage is the act of secretly gathering confidential, classified, or proprietary information without the owner's permission\nThe most...",
+                    "author": "janalsncm",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50295873"
+                  },
+                  {
+                    "excerpt": "Please can we get this fixed to point to the NY Times article; they broke this story no?\nAlso, New York Post? Let's do better.",
+                    "author": "Rapzid",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50296355"
+                  },
+                  {
+                    "excerpt": "For the thousandth time, don\u2019t use archive.ph/archive.is/archive.today, THEY ARE ATTACK SITES.",
+                    "author": "cluckindan",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50300118"
+                  },
+                  {
+                    "excerpt": "I doubt Jensen is completely out of the scheme TBH.",
+                    "author": "markus_zhang",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50295132"
+                  }
+                ],
+                "comment_insights": [
+                  "Super weird that the only relationship documented in this article is two \"dinners with AI executives in Asia.\" Does that count as a close relationship? I get invited to AI dinners in the Bay Area nons",
+                  "A couple of questions after reading this article",
+                  "Please can we get this fixed to point to the NY Times article; they broke this story no?",
+                  "For the thousandth time, don\u2019t use archive.ph/archive.is/archive.today, THEY ARE ATTACK SITES.",
+                  "I doubt Jensen is completely out of the scheme TBH."
+                ]
+              },
+              "local_relevance": 0.07,
+              "freshness": 84,
+              "engagement_score": 92,
+              "source_quality": 0.8,
+              "local_rank_score": 0.34750000000000003
+            },
+            {
+              "item_id": "50275128",
+              "source": "hackernews",
+              "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+              "body": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+              "author": "wondersky",
+              "container": "Hacker News",
+              "published_at": "2026-10-28",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 133,
+                "comments": 26
+              },
+              "relevance_hint": 0.71,
+              "why_relevant": "HN story about Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+              "snippet": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50275128",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.05,
+              "freshness": 82,
+              "engagement_score": 67,
+              "source_quality": 0.8,
+              "local_rank_score": 0.3045
+            },
+            {
+              "item_id": "50236073",
+              "source": "hackernews",
+              "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+              "body": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+              "url": "https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+              "author": "JumpCrisscross",
+              "container": "Hacker News",
+              "published_at": "2026-10-25",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 175,
+                "comments": 47
+              },
+              "relevance_hint": 0.73,
+              "why_relevant": "HN story about Nvidia and Micron Make Up 34% of America's Earnings Boom",
+              "snippet": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50236073",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.05,
+              "freshness": 74,
+              "engagement_score": 74,
+              "source_quality": 0.8,
+              "local_rank_score": 0.2915
+            },
+            {
+              "item_id": "50286924",
+              "source": "hackernews",
+              "title": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+              "body": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+              "url": "https://www.nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html",
+              "author": "u1hcw9nx",
+              "container": "Hacker News",
+              "published_at": "2026-10-29",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 26,
+                "comments": 3
+              },
+              "relevance_hint": 0.61,
+              "why_relevant": "HN story about Nvidia Chief Seen as Target of Chinese Spy Plot",
+              "snippet": "Nvidia Chief Seen as Target of Chinese Spy Plot",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50286924",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.05,
+              "freshness": 84,
+              "engagement_score": 39,
+              "source_quality": 0.8,
+              "local_rank_score": 0.2815
+            },
+            {
+              "item_id": "50247677",
+              "source": "hackernews",
+              "title": "Nvidia discusses $2k-per-GPU annual fee for software",
+              "body": "Nvidia discusses $2k-per-GPU annual fee for software",
+              "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+              "author": "gscott",
+              "container": "Hacker News",
+              "published_at": "2026-10-26",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 41,
+                "comments": 23
+              },
+              "relevance_hint": 0.63,
+              "why_relevant": "HN story about Nvidia discusses $2k-per-GPU annual fee for software",
+              "snippet": "Nvidia discusses $2k-per-GPU annual fee for software",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50247677",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.05,
+              "freshness": 76,
+              "engagement_score": 56,
+              "source_quality": 0.8,
+              "local_rank_score": 0.2785
+            },
+            {
+              "item_id": "50219700",
+              "source": "hackernews",
+              "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+              "body": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards\nHey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library:\nhttps://github.com/aikitoria/open-gpu-kernel-modules\nThe hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats:\n- you will need to run your card hotter than you might be comfortable with\n- the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W\n- This is well above what the stock cooler was designed for so a bit m...",
+              "url": "https://github.com/Zagitta/gpu-unlock",
+              "author": "fragebogen",
+              "container": "Hacker News",
+              "published_at": "2026-10-24",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 351,
+                "comments": 83
+              },
+              "relevance_hint": 0.76,
+              "why_relevant": "HN story about GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's",
+              "snippet": "Hey this is my work, although the exploits etc aren't my ideas by any means. This is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl... A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library: https://github.com/aikitoria/open-gpu-kernel-modules The hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa... This one is real, but there are some caveats: - you will need to run your card hotter than you...",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50219700",
+                "top_comments": [
+                  {
+                    "excerpt": "Hey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainl...",
+                    "author": "Zagitta",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50222102"
+                  },
+                  {
+                    "excerpt": "A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library:\nhttps://github.com/aikitoria/open-gpu-kernel-modules\nThe hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypa...",
+                    "author": "RachelF",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50223788"
+                  },
+                  {
+                    "excerpt": "This one is real, but there are some caveats:\n- you will need to run your card hotter than you might be comfortable with\n- the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W\n- This is well above what the stock cooler was designed for so a bit m...",
+                    "author": "jacquesm",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50221626"
+                  },
+                  {
+                    "excerpt": "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A...\n> Unfortunately for Nvidia the booter is vulnerable to a classic buffer overflow that writes straight into the ...",
+                    "author": "Tiberium",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50219868"
+                  },
+                  {
+                    "excerpt": "As a person who uses consumer level hardware to do neural network research, this unlock is truly INVALUABLE.\nThis unlock is super useful as it improves the GPU performance on computation-bounded neural network workloads like LLM prefilling, image/video generation, and general neural network training...",
+                    "author": "RandyOrion",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50224757"
+                  }
+                ],
+                "comment_insights": [
+                  "Hey this is my work, although the exploits etc aren't my ideas by any means.",
+                  "A semi related: a patch for those with multiple cards",
+                  "This one is real, but there are some caveats:",
+                  "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A...",
+                  "As a person who uses consumer level hardware to do neural network research, this unlock is truly INVALUABLE."
+                ]
+              },
+              "local_relevance": 0.03,
+              "freshness": 70,
+              "engagement_score": 84,
+              "source_quality": 0.8,
+              "local_rank_score": 0.27849999999999997
+            }
+          ]
+        },
+        "errors_by_source": {},
+        "source_status": {
+          "reddit": {
+            "source": "reddit",
+            "state": "ok",
+            "items_returned": 4,
+            "attempted": true,
+            "detail": "1 sub-request timed out",
+            "at": "2026-10-31T12:25:07.461822Z",
+            "lane_failure_state": "timeout"
+          },
+          "hackernews": {
+            "source": "hackernews",
+            "state": "ok",
+            "items_returned": 6,
+            "attempted": true,
+            "at": "2026-10-31T12:25:07.465396Z"
+          }
+        },
+        "freshness_verdicts": [],
+        "warnings": [],
+        "artifacts": {
+          "grounding": [],
+          "plan_source": "external",
+          "corpus_in_export": false,
+          "hiring_signals_mode": false,
+          "resolved": {
+            "entity": "NVIDIA NVDA",
+            "x_handle": "",
+            "subreddits": [
+              "stocks",
+              "investing",
+              "wallstreetbets",
+              "SecurityAnalysis"
+            ],
+            "github_user": "",
+            "github_repos": [],
+            "trustpilot_domain": "",
+            "context": ""
+          }
+        },
+        "library_context": []
+      }
+    }
+  ]
+}

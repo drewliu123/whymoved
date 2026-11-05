@@ -1,0 +1,100 @@
+{
+  "cases": [
+    {
+      "id": "title_probe",
+      "task_mode": "unresolved",
+      "actions": ["search_market"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "标题式短问尚无年份、链接或用途上下文；按入口规则先搜索匹配预测市场，再根据匹配和上下文判断用途，当前不能认定纯事实或交易任务。"
+    },
+    {
+      "id": "title_unique_match",
+      "task_mode": "market_decision",
+      "actions": ["verify_rules", "forecast_outcomes", "assess_costs"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "合成检索结果已给出唯一有效且期间口径匹配的市场，无相反限定，可说明按该合约研究这一用途推断；下一步核对规则、预测指定公布结果并映射选项、比较含费成本，不能将推断写成用户明示。"
+    },
+    {
+      "id": "explicit_actual_overrides_history",
+      "task_mode": "fact_lookup",
+      "actions": ["official_lookup"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "本轮明确只查2026年10月官方实际值且不要预测，优先于旧交易背景；下一步核对官方未发布状态与发布时间，按事实查询交付。"
+    },
+    {
+      "id": "forecast_unreleased",
+      "task_mode": "forecast",
+      "actions": ["official_lookup", "build_forecast"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "用户明确要下月同比预测及驱动并排除交易价格；下一步取得最新官方实际与预测基准、形成有依据的判断和情景，目标期未发布不能成为仅交发布时间的理由。"
+    },
+    {
+      "id": "forecast_correction",
+      "task_mode": "forecast",
+      "actions": ["replan", "build_forecast"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "最新纠正明确要预测，原计划只查发布时间未满足目标；应重新定义audit.intent、计划和完成条件，再补预测依据、驱动及情景，无交易要求无需强制查盘口。"
+    },
+    {
+      "id": "market_correction",
+      "task_mode": "market_decision",
+      "actions": ["replan", "search_market", "verify_rules", "forecast_outcomes", "assess_costs"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "纠正明确为Polymarket合约决策辅助，应重定目标并定位精确合约，核规则、映射结果、比较报价深度和费用；原中心值与假设范围不构成档位胜率，须补独立判断依据。"
+    },
+    {
+      "id": "multiple_contracts",
+      "task_mode": "market_decision",
+      "actions": ["clarify_contract"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "怎么买才有优势已明确交易用途，但两份有效候选的目标年份无法从现有信息区分；下一步窄澄清2026或2027年，不能按当前年份或搜索排名任选合约给最终判断。"
+    },
+    {
+      "id": "explicit_market_not_found",
+      "task_mode": "market_decision",
+      "actions": ["report_gap", "clarify_contract"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "原词与英文检索仍未定位合约，不改变明确交易用途；应说明已尝试的检索及规则缺口，并请求可识别合约的链接或标识，保留原任务而不编造市场或静默降为事实查询。"
+    },
+    {
+      "id": "asset_attribution",
+      "task_mode": "other",
+      "actions": ["compare_benchmark"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "用户要公司股价变化归因与行业比较；先核对本月起止、实际表现及同期行业基准，再区分公司因素和行业因素，没有依据转成预测市场研究。"
+    },
+    {
+      "id": "review_narrowed_plan",
+      "task_mode": "market_decision",
+      "actions": ["replan", "search_market", "verify_rules", "forecast_outcomes", "assess_costs"],
+      "answer_fit": false,
+      "blocking": true,
+      "reason": "用户最新原话要按规则作Polymarket决策，草稿仅报未公布及发布时间，且计划把价格判为不适用；这是答错任务，结构、引用、算术与归档通过均不能消除blocking。"
+    },
+    {
+      "id": "review_point_only",
+      "task_mode": "market_decision",
+      "actions": ["replan", "search_market", "verify_rules", "forecast_outcomes", "assess_costs"],
+      "answer_fit": false,
+      "blocking": true,
+      "reason": "用户要按规则和现价比较真实档位，草稿仅有中心预测与假设范围且没有合约、档位或成本；计划缩窄为点预测不能成为验收依据，须补合约结果映射与含费门槛，不能把范围编成胜率。"
+    },
+    {
+      "id": "review_actual_answer",
+      "task_mode": "fact_lookup",
+      "actions": [],
+      "answer_fit": true,
+      "blocking": false,
+      "reason": "本轮明确只查官方已发布实际值，合成材料已确认期间、X数值与原始公告匹配，草稿满足所需答案；旧Polymarket背景不产生预测、价格或交易审查要求，本案例无下一步必要补查动作。"
+    }
+  ]
+}

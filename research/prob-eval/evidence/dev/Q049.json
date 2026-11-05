@@ -1,0 +1,50 @@
+{
+  "qid": "Q049",
+  "as_of": "2026-07-23",
+  "kept": [
+    {
+      "published_at": "2026-07-23",
+      "publisher": "International Monetary Fund — statement by Brazil's Executive Director and advisers",
+      "url": "https://www.elibrary.imf.org/view/journals/002/2026/191/article-A003-en.xml",
+      "excerpt": "After signaling the beginning of rate cuts in February, the BCB cut rates by 25 bps in March, April, and June, bringing the policy rate to 14.25%. Heightened global uncertainty warrants a data-dependent approach to monetary policy. Inflation, which had been declining before the war, began to rise, as did inflation expectations.",
+      "relevance": "Published on the cutoff date, this statement documents the recent 25-bp easing pattern alongside inflation risks and a conditional approach to further cuts."
+    },
+    {
+      "published_at": "2026-07-20",
+      "publisher": "Broadcast / Grupo Estado",
+      "url": "https://www.broadcast.com.br/ultimas-noticias/focus-selic-no-fim-de-2026-segue-em-1400-pela-quarta-semana-seguida/",
+      "excerpt": "A mediana do relatório Focus para a taxa Selic no fim de 2026 seguiu em 14,00% pela quarta semana seguida. Considerando só as 40 estimativas atualizadas nos últimos cinco dias úteis, mais sensíveis a novidades, a mediana para a Selic no fim deste ano subiu de 13,75% para em 14,00%.",
+      "relevance": "The latest verified pre-cutoff survey report places the year-end median 25 bps below the prevailing 14.25% rate, although it does not establish the timing of that reduction."
+    },
+    {
+      "published_at": "2026-07-15",
+      "publisher": "Reuters, syndicated by MarketScreener",
+      "url": "https://www.marketscreener.com/news/brazil-government-now-expects-2026-inflation-to-be-above-central-bank-s-target-ce7f5ed2da81f223",
+      "excerpt": "Brazil's government raised its inflation forecast for this year to 5.1% on Wednesday from 4.5% projected in May, putting consumer prices above the central bank's target of 3%, with a tolerance band of 1.5 percentage points in either direction. It added, however, that underlying inflation measures have shown a slowdown in recent months. The government kept its forecast for economic growth at 2.3% this year, saying activity remained resilient through May, but stressed that high real interest rates are poised to restrain the pace of growth ahead, with their full effects taking time to filter through the economy.",
+      "relevance": "This recent report captures the competing inflation and growth considerations facing Copom before its August decision."
+    },
+    {
+      "published_at": "2026-06-23",
+      "publisher": "Banco Central do Brasil",
+      "url": "https://www.bcb.gov.br/publicacoes/atascopom/17062026",
+      "excerpt": "No cenário atual, caracterizado por forte aumento da incerteza, o Comitê reafirma serenidade e cautela na condução da política monetária, de forma que os passos futuros do processo de calibração da taxa básica de juros possam incorporar novas informações que aumentem a clareza sobre a profundidade e a extensão dos conflitos no Oriente Médio, assim como seus efeitos diretos e indiretos sobre o nível de preços ao longo do tempo.",
+      "relevance": "The official minutes of the last meeting before the cutoff make subsequent policy adjustments conditional on incoming information rather than committing to another 25-bp cut."
+    },
+    {
+      "published_at": "2026-06-17",
+      "publisher": "Reuters, syndicated by Investing.com",
+      "url": "https://www.investing.com/news/economy-news/brazil-central-bank-cuts-rates-for-third-straight-meeting-by-25-bps-4748642",
+      "excerpt": "Brazil’s central bank cut rates at a third straight meeting on Wednesday and left its next steps open, acknowledging a tougher inflation outlook and risks from election-year fiscal stimulus. The bank’s rate-setting committee, called Copom, unanimously voted to lower its benchmark Selic rate by 25 basis points to 14.25%, a level last seen in May 2025, in line with forecasts from 41 of 45 economists polled by Reuters.",
+      "relevance": "This establishes the prevailing target and the size, unanimity, and economist consensus surrounding the preceding decision."
+    },
+    {
+      "published_at": "2025-06-24",
+      "publisher": "Banco Central do Brasil — press release republished by Publicnow",
+      "url": "https://www.publicnow.com/view/06170A7E426155D4D0CD9DAF7B3894E04F9C0A40",
+      "excerpt": "O Banco Central publicou nesta terça-feira (24/6) o calendário das reuniões do Comitê de Política Monetária (Copom) em 2026. The published schedule lists the August meeting for 4 and 5 August 2026. As atas do Copom serão publicadas às 8 horas da terça-feira seguinte às reuniões do comitê.",
+      "relevance": "The dated central-bank calendar announcement identifies August 4–5 as the scheduled meeting, exposing a discrepancy with the August 3–4 dates in the question."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-23, inclusive. Six items with explicit publication dates were retained; unknown-date material, post-cutoff publications, prediction-market pages, betting odds, and traded market prices were excluded. The institution setting Selic is Banco Central do Brasil (Central Bank of Brazil); the question's 'Bank of Brazil' wording is imprecise. The dated calendar announcement schedules the August meeting for August 4–5, 2026, rather than August 3–4. The IMF statement is dated July 20 internally but explicitly lists publication on July 23, 2026; the publication date is used here. Excerpts preserve source wording except for the English rendering of the calendar's August date entry. Verification relied on publication dates and article text exposed by web_search: web_fetch failed with a provider-configuration error, and the requested agent-reach web fallback returned RATE_LIMITED, so full-page retrieval was unavailable. The July 20 Focus figures are economist forecasts, not traded prices or an August-specific poll. No post-cutoff developments or meeting outcome are included."
+}

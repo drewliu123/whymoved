@@ -1,0 +1,61 @@
+{
+  "label": "companyfacts",
+  "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+  "command": [
+    "curl",
+    "--silent",
+    "--show-error",
+    "--request",
+    "GET",
+    "--max-time",
+    "30",
+    "--connect-timeout",
+    "15",
+    "--retry",
+    "0",
+    "--user-agent",
+    "InvestmentResearchSourceValidation",
+    "--header",
+    "Accept: application/json",
+    "--header",
+    "Cache-Control: no-cache",
+    "--dump-header",
+    "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/sec/raw/20261102T022643541728Z-companyfacts/response.headers",
+    "--output",
+    "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/sec/raw/20261102T022643541728Z-companyfacts/response.body",
+    "--write-out",
+    "%{http_code}\n%{time_total}\n%{size_download}\n%{url_effective}\n",
+    "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json"
+  ],
+  "exit_code": 0,
+  "http_status": 200,
+  "elapsed_seconds_monotonic": 8.851676,
+  "curl_time_total_seconds": 8.830242,
+  "bytes_saved": 4092966,
+  "physical_line_count": 1,
+  "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+  "body_path": "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/sec/raw/20261102T022643541728Z-companyfacts/response.body",
+  "headers_path": "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/sec/raw/20261102T022643541728Z-companyfacts/response.headers",
+  "stderr": "",
+  "redirects_followed": false,
+  "statistics": {
+    "entity_name": "NVIDIA CORP",
+    "namespace_count": 6,
+    "concept_count": 644,
+    "fact_unit_records": 27281,
+    "filed_dates": {
+      "earliest": "2009-08-20",
+      "latest": "2026-08-26"
+    },
+    "period_end_dates": {
+      "earliest": "2007-01-28",
+      "latest": "2026-08-21"
+    },
+    "period_start_dates": {
+      "earliest": "2007-01-29",
+      "latest": "2026-04-27"
+    },
+    "count_definition": "Sum of all entries in facts[namespace][concept].units[unit]; entries can repeat economic facts across filings/contexts, not unique economic observations."
+  },
+  "completed_utc": "2026-11-02T02:26:54.287188+00:00"
+}

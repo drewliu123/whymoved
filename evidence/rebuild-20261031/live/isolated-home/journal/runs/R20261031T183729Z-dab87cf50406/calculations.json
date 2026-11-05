@@ -1,0 +1,144 @@
+{
+  "as_of": "2026-10-31T18:37:29.600836Z",
+  "calculations": [
+    {
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "description": "Q4 reported headline less cash PP&E; approximate because headline rounded",
+      "formula": "24.2 - 17.079",
+      "id": "K1",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "headline_capex",
+          "unit": "USD billion",
+          "value": 24.2
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "cash_ppe",
+          "unit": "USD billion",
+          "value": 17.079
+        }
+      ],
+      "result": {
+        "unit": "USD billion",
+        "value": 7.121
+      }
+    },
+    {
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "description": "Unreconciled Q4 remainder after reported new finance leases; not an identified accounting item",
+      "formula": "(24.2 - 17.079) - 6.5",
+      "id": "K2",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "headline_capex",
+          "unit": "USD billion",
+          "value": 24.2
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "cash_ppe",
+          "unit": "USD billion",
+          "value": 17.079
+        },
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "new_finance_leases",
+          "unit": "USD billion",
+          "value": 6.5
+        }
+      ],
+      "result": {
+        "unit": "USD billion",
+        "value": 0.621
+      }
+    },
+    {
+      "claim_ids": [
+        "C4"
+      ],
+      "description": "Annual cash FCF starting point; FY2025 only",
+      "formula": "136.162 - 64.551",
+      "id": "K3",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFO_FY2025",
+          "unit": "USD billion",
+          "value": 136.162
+        },
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "cash_ppe_FY2025",
+          "unit": "USD billion",
+          "value": 64.551
+        }
+      ],
+      "result": {
+        "unit": "USD billion",
+        "value": 71.611
+      }
+    },
+    {
+      "claim_ids": [
+        "C4"
+      ],
+      "description": "Annual financing-lease-principal-adjusted residual cash; analytical metric, not issuer-labelled FCF",
+      "formula": "136.162 - 64.551 - 2.283",
+      "id": "K4",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFO_FY2025",
+          "unit": "USD billion",
+          "value": 136.162
+        },
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "cash_ppe_FY2025",
+          "unit": "USD billion",
+          "value": 64.551
+        },
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "finance_lease_financing_cash_FY2025",
+          "unit": "USD billion",
+          "value": 2.283
+        }
+      ],
+      "result": {
+        "unit": "USD billion",
+        "value": 69.328
+      }
+    }
+  ],
+  "schema_version": 2
+}

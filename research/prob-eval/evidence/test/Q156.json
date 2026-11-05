@@ -1,0 +1,50 @@
+{
+  "qid": "Q156",
+  "as_of": "2026-08-24",
+  "kept": [
+    {
+      "published_at": "2026-08-12",
+      "publisher": "FOCUS online / Deutsche Presse-Agentur (dpa)",
+      "url": "https://www.focus.de/politik/deutschland/afd-erreicht-43-prozent-in-neuer-umfrage-vor-landtagswahl_9e385d45-3a2d-4e6d-add9-a964def120d9.html",
+      "excerpt": "A Pollytix poll commissioned by Campact put AfD at 43%, CDU at 23%, Die Linke at 13%, SPD at 7%, Greens at 5%, BSW at 4% and FDP at 2%. The survey interviewed 2,604 eligible voters by telephone and online between August 3 and August 8. Under these results, AfD would not have its own parliamentary majority, with the Greens entering parliament and BSW missing the threshold. Around 13% of voters had not yet decided which party to support.",
+      "relevance": "The most recent independently dated poll report retained before the cutoff directly addresses whether AfD's large vote lead translates into an absolute seat majority."
+    },
+    {
+      "published_at": "2026-08-11",
+      "publisher": "Stuttgarter Zeitung — Lukas Böhl",
+      "url": "https://www.stuttgarter-zeitung.de/politik/aktuelle-umfragewerte-aus-sachsen-anhalt-wird-die-brandmauer-fuer-die-afd-bedeutungslos-79374126.html",
+      "excerpt": "Only parties receiving at least 5% of valid second votes participate in proportional seat allocation; the incoming Landtag normally has at least 83 members, including 41 elected directly in constituencies. If only CDU, SPD, Die Linke and AfD crossed the threshold under the cited polling figures, they would together account for 83% of votes, including 42 percentage points for AfD. The latest INSA poll instead placed BSW exactly at 5%, a constellation in which AfD would have no majority of its own despite receiving 42%. The cited Infratest dimap poll with AfD at 41% likewise did not yield an absolute majority.",
+      "relevance": "Explains the threshold and seat-allocation mechanism that makes small-party performance decisive for the market's seat-based resolution."
+    },
+    {
+      "published_at": "2026-08-10",
+      "publisher": "FOCUS online — Dominik Voss",
+      "url": "https://www.focus.de/politik/deutschland/afd-in-sachsen-anhalt-jetzt-20-prozentpunkte-vor-der-cdu_6231bccf-2124-4894-96dc-ff36c00f06d9.html",
+      "excerpt": "An INSA poll for Bild put AfD at 42% and CDU at 22%. Die Linke followed at 13%, SPD at 6% and BSW at 5%, while Greens and FDP each received 4%. The report explained that BSW abstentions could help AfD's candidate become minister-president in a later parliamentary ballot, where a simple majority would suffice.",
+      "relevance": "Provides a separate August polling benchmark and distinguishes a route to the minister-presidency from winning an absolute majority of seats."
+    },
+    {
+      "published_at": "2026-07-30",
+      "publisher": "Infratest dimap",
+      "url": "https://www.infratest-dimap.de/umfragen-analysen/bundeslaender/sachsen-anhalt/laendertrend/2026/juli",
+      "excerpt": "The Sachsen-AnhaltTREND put AfD at 41%, unchanged from May, and CDU at 24%, down two points. Die Linke received 13%, SPD 7%, Greens 5%, BSW 4% and all remaining parties together 6%. The study surveyed 1,149 eligible voters by telephone and online from July 23 to July 28, with a stated sampling fluctuation of three percentage points for a 50% share. Infratest dimap cautioned that the survey measured party preferences rather than voting behavior and that some voters decide shortly before election day.",
+      "relevance": "Supplies a primary pollster source for the pre-August baseline, methodology and uncertainty surrounding AfD's lead."
+    },
+    {
+      "published_at": "2025-05-13",
+      "publisher": "Landtag von Sachsen-Anhalt",
+      "url": "https://www.landtag.sachsen-anhalt.de/landtagswahl-am-6-september-2026",
+      "excerpt": "The Landtag decided in its plenary session that the election for the ninth parliamentary term would take place on September 6, 2026. Landtag president Gunnar Schellenberger proposed the election date and voting hours in consultation with the Council of Elders.",
+      "relevance": "Officially establishes the scheduled election date specified in the resolution rules."
+    },
+    {
+      "published_at": "2021-06-22",
+      "publisher": "Landtag von Sachsen-Anhalt",
+      "url": "https://www.landtag.sachsen-anhalt.de/amtliches-endergebnis-wurde-bekanntgegeben",
+      "excerpt": "The final result of the June 6, 2021 Landtag election gave CDU 37.1% of second votes and AfD 20.8%, with turnout of 60.3%. The 97 seats were allocated as follows: CDU 40, AfD 23, Die Linke 12, SPD 9, FDP 7 and Greens 6. Fourteen overhang and compensatory seats were created.",
+      "relevance": "Provides the official previous-election baseline and demonstrates that the actual parliament size can exceed its regular size, affecting the absolute-majority threshold."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-08-24 inclusive. Retained six distinct dated sources; excerpts are factual English paraphrases of the German source text. Publication dates were verified in indexed article text; the Infratest dimap publication date was corroborated by its dated survey archive and contemporaneous reporting. The latest retained poll was published on August 12; no later eligible poll publication was verified. Excluded undated pages, dynamically updated results summaries, all material published after the cutoff, and prediction-market or betting sources. Built-in web_fetch failed because multiple fetch providers were registered; the requested agent-reach fallback returned RATE_LIMITED, so verification relied on web_search's indexed source text. Full-page retrieval and archival snapshots could not be obtained; this is a date-filtered evidence selection rather than a preserved byte-for-byte web archive."
+}

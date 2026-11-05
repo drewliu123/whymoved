@@ -1,0 +1,32 @@
+{
+  "qid": "Q054",
+  "as_of": "2026-07-06",
+  "kept": [
+    {
+      "excerpt": "Cristiano y Messi se saludaron también en el campo, pero un poco más serios. Los dos cracks se dieron una vez más las manos en el saludo con los árbitros, ambos son los capitanes de sus selecciones.",
+      "published_at": "2014-11-18",
+      "publisher": "Diario La Prensa",
+      "relevance": "Documents a historical on-field handshake between the two national-team captains during the pre-match greeting with officials, providing a directly relevant precedent distinct from their separate tunnel greeting.",
+      "url": "https://www.laprensa.hn/deportes/video-el-afectuoso-saludo-entre-cristiano-y-messi-KELP768929"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.fifa.com/en/articles/fifa.com/en/articles/cristiano-ronaldo-farewell",
+      "reason": "Excerpt and relevance reveal Portugal's elimination and Ronaldo's final World Cup match, constituting match-result information excluded by the audit rules even when published on the cutoff date."
+    },
+    {
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/argentina-dig-deep-cabo-verde?searchOverlay=1",
+      "reason": "Excerpt reveals Argentina's victory, score, decisive goal, and progression to the last 16; match results are excluded by the audit rules."
+    },
+    {
+      "url": "https://uk.sports.yahoo.com/news/needs-happen-lionel-messi-cristiano-153751145.html",
+      "reason": "Although the excerpt describes conditional bracket scenarios, the relevance explicitly references the July 6 elimination report, implying a match result; the item cannot be retained unchanged under the audit rules."
+    },
+    {
+      "url": "https://apnews.com/article/b511151c5a78afb738e8249c07d30aef",
+      "reason": "Excerpt reveals Portugal's win over Uzbekistan, draw with Congo, scores, and Ronaldo's goals; match results are excluded by the audit rules."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-07-06, inclusive. Publication dates were verified from explicit dates in web-search source extracts; the historical La Prensa item displays an article date of 18 noviembre 2014, distinct from its current site-header date. Excerpts preserve the source language. Searches surfaced later coverage and continuously updated tournament pages; those were excluded. No prediction-market or betting pages, odds, market prices, post-cutoff developments, or handshake-market resolution claims are included. The July 6 FIFA report concerns a match result available on the cutoff date, not the handshake question's outcome. No qualifying 2026 Messi–Ronaldo handshake was verified by this search, and absence of such verification is not evidence that none occurred. Full-page retrieval was unavailable: web_fetch returned a provider-configuration error, and the requested agent-reach fallback returned RATE_LIMITED, so the pack relies on dated search extracts rather than successfully fetched full pages. The agent-reach skill was used for that fallback: /Users/frankzhang/.agents/skills/agent-reach/SKILL.md."
+}

@@ -1,0 +1,40 @@
+{
+  "question": "AI数据中心用电增长如何转成电力设备供应商收入与利润，哪个环节最值得验证？",
+  "type": "theme",
+  "method_reference": "../protocol.md; ../../plans/touyan-end-to-end-plan-v2-20261031.md#theme",
+  "as_of": "2026-10-31T17:25:57Z",
+  "status": "completed_with_gaps",
+  "scope": "只写本theme目录；只读官方来源，不委派、不发布、不修改插件、不登记正式账本/作者库",
+  "hypothesis": "数据中心采购形成显著订单；主题兑现应在交付爬坡后表现为利润与现金，而非只看积压",
+  "comparison": "2025Q4/2026Q1/2026Q2美洲分部；Q2同比利润/现金；专项数据中心披露不跨口径连线",
+  "queries": [
+    "site.eaton.com 2026 third quarter earnings October 2026 data center orders Electrical Americas",
+    "site.se.com 2026 third quarter revenues October 2026 data center",
+    "site.eaton.com 2026 capacity data center billion"
+  ],
+  "steps": [
+    {
+      "task": "读取协议、v2和证据格式",
+      "status": "done"
+    },
+    {
+      "task": "核实最新官方季度与时间",
+      "status": "done"
+    },
+    {
+      "task": "取得两至三期经营/现金和专项敞口",
+      "status": "done"
+    },
+    {
+      "task": "对照利润与现金、竞争扩产及敏感性边界",
+      "status": "done"
+    },
+    {
+      "task": "生成冻结JSON/Markdown和趋势数据",
+      "status": "done"
+    }
+  ],
+  "stop_rule": "核心可靠材料足够即成品；不为缺失利润输入持续扩搜；保留partial",
+  "source_budget": "6份采用官方文档/页面，均Eaton；无社区",
+  "implementation_notes": "Swift PDFKit为本地提取工具；下载数据独立raw子目录；Python全部-I；不运行下载代码；HTML父任务统一消费report.json"
+}

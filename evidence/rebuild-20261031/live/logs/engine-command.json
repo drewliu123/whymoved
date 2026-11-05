@@ -1,0 +1,31 @@
+{
+  "runtime": "/Users/frankzhang/.local/bin/python3.12",
+  "skill_dir": "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days",
+  "engine_argv": [
+    "Microsoft capex finance leases cash PP&E cash burden",
+    "--research-only",
+    "--emit=json",
+    "--json-profile=raw",
+    "--plan",
+    "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/raw/engine-plan.json",
+    "--search",
+    "hackernews",
+    "--days=365",
+    "--save-dir="
+  ],
+  "env_mode": "env -i, retain PATH and HOME only for runtime; TMPDIR live/tmp",
+  "overrides": {
+    "LAST30DAYS_CONFIG_DIR": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/runtime-state",
+    "LAST30DAYS_SKIP_KEYCHAIN": "1",
+    "LAST30DAYS_NATIVE_SEARCH": "1",
+    "SETUP_COMPLETE": "true",
+    "FROM_BROWSER": "off"
+  },
+  "save_resolver_argv": [
+    "--resolve-save-dir",
+    "--save-dir="
+  ],
+  "saved_directory": "",
+  "exit_code": 0,
+  "isolation_note": "Runtime-only environment overrides, no installed/global config written. Engine was invoked without -I because it imports sibling lib; all locally written Python readers use -I and separate tools directory. No browser/cookie/paid provider was used."
+}

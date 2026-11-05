@@ -1,0 +1,44 @@
+{
+ "qid": "Q106",
+ "question": "Will ACM Neto win the 2026 Bahia gubernatorial election?",
+ "rules": "The Bahia gubernatorial election is scheduled to take place in Brazil on October 4, 2026, with a runoff on October 25, 2026, if no candidate receives a majority of the valid votes in the first round.\n\nThis market will resolve according to the candidate who wins this election.\n\nTemporary, interim, or placeholder governors appointed by any means before the specified election will not be considered.\n\nIf the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., www.tse.jus.br/eleicoes/resultados-eleicoes).",
+ "as_of": "2026-09-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Farol da Bahia",
+   "published_at": "2026-09-21",
+   "excerpt": "Pesquisa Futura Inteligência contratada pelo Política Livre aponta ACM Neto (União Brasil) com 51,3% das intenções de voto para o governo da Bahia, contra 43,6% de Jerônimo Rodrigues (PT). O levantamento ouviu mil eleitores baianos com 16 anos ou mais, por telefone, entre os dias 16 e 19 de setembro, em 218 municípios. A margem de erro é de 3,1 pontos percentuais, para mais ou para menos, e o nível de confiança é de 95%. A pesquisa está registrada na Justiça Eleitoral sob os números BR-04491/2026 e BA-06845/2026."
+  },
+  {
+   "id": "E2",
+   "publisher": "CNN Brasil",
+   "published_at": "2026-09-09",
+   "excerpt": "No cenário estimulado de primeiro turno, Jerônimo aparece com 45% das intenções de voto, ante 44% de ACM Neto. Jerônimo aparece com 46% e ACM Neto registra 45%, configurando novo empate técnico. A pesquisa Real Time Big Data entrevistou 1.600 eleitores da Bahia entre os dias 4 e 8 de setembro. A margem de erro é de dois pontos percentuais para mais ou para menos, com nível de confiança de 95%."
+  },
+  {
+   "id": "E3",
+   "publisher": "CNN Brasil",
+   "published_at": "2026-09-03",
+   "excerpt": "O ex-prefeito de Salvador ACM Neto (União Brasil) tem 49,2% das intenções de voto num eventual segundo contra o governador e candidato à reeleição, Jerônimo Rodrigues (PT), que soma 48,6%. No quadro de primeiro turno avaliado pelo levantamento, ACM Neto registra 49,1% das intenções de voto. Jerônimo Rodrigues, por sua vez, totaliza 47,9%. Foram ouvidos 1.804 eleitores baianos entre os dias 28 de agosto e 2 de setembro por meio de recrutamento digital aleatório (Atlas RDR)."
+  },
+  {
+   "id": "E4",
+   "publisher": "Bahia Notícias",
+   "published_at": "2026-08-27",
+   "excerpt": "Um novo levantamento do Instituto Paraná Pesquisas, em parceria com o Bahia Notícias, mostra que ACM Neto (União) possui vantagem de 8,4% sobre Jerônimo Rodrigues (PT) na corrida pelo governo da Bahia. O ex-prefeito da capital aparece com 48,5%, enquanto o atual governador e candidato à reeleição apresenta 40,1% das intenções de voto. Essa é a primeira rodada do Paraná Pesquisas após o início formal da campanha eleitoral de 2026. É também a primeira vez que um levantamento do instituto traz os nomes de todos os candidatos registrados no Tribunal Regional Eleitoral (TRE-BA)."
+  },
+  {
+   "id": "E5",
+   "publisher": "Metrópoles",
+   "published_at": "2026-09-17",
+   "excerpt": "O procurador-geral da República (PGR), Paulo Gonet, manifestou-se favoravelmente a medidas de investigação contra o candidato ao governo da Bahia pelo União Brasil, ACM Neto. Apesar da representação, o político não foi alvo de buscas e apreensões da Polícia Federal (PF)."
+  },
+  {
+   "id": "E6",
+   "publisher": "Deutsche Welle",
+   "published_at": "2026-08-02",
+   "excerpt": "O primeiro turno está marcado para 4 de outubro. Nessa data, os eleitores escolherão presidente da República, governadores, senadores, deputados federais, estaduais e distritais. A propaganda eleitoral gratuita no rádio e na televisão será exibida entre 28 de agosto e 1º de outubro."
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "title_probe": {"required_actions": ["search_market"], "forbidden_actions": ["final_release_only", "choose_contract_final"]},
+  "title_unique_match": {"task_modes": ["market_decision"], "required_actions": ["verify_rules", "forecast_outcomes", "assess_costs"], "forbidden_actions": ["invent_probabilities"]},
+  "explicit_actual_overrides_history": {"task_modes": ["fact_lookup"], "required_actions": ["official_lookup"], "forbidden_actions": ["search_market", "forecast_outcomes", "assess_costs"]},
+  "forecast_unreleased": {"task_modes": ["forecast"], "required_actions": ["build_forecast"], "forbidden_actions": ["final_release_only", "search_market"]},
+  "forecast_correction": {"task_modes": ["forecast"], "required_actions": ["replan", "build_forecast"], "forbidden_actions": ["final_release_only"]},
+  "market_correction": {"task_modes": ["market_decision"], "required_actions": ["replan", "verify_rules", "forecast_outcomes", "assess_costs"], "forbidden_actions": ["invent_probabilities", "downgrade_fact"]},
+  "multiple_contracts": {"task_modes": ["market_decision", "unresolved"], "required_actions": ["clarify_contract"], "forbidden_actions": ["choose_contract_final"]},
+  "explicit_market_not_found": {"task_modes": ["market_decision"], "required_actions": ["report_gap"], "forbidden_actions": ["fabricate_market", "downgrade_fact"]},
+  "asset_attribution": {"task_modes": ["other"], "required_actions": ["compare_benchmark"], "forbidden_actions": ["search_market"]},
+  "review_narrowed_plan": {"answer_fit": false, "blocking": true},
+  "review_point_only": {"answer_fit": false, "blocking": true},
+  "review_actual_answer": {"answer_fit": true, "blocking": false},
+  "review_missing_costs_after_search": {"answer_fit": false, "blocking": false},
+  "review_qualitative_without_probability": {"answer_fit": true, "blocking": false}
+}

@@ -1,0 +1,134 @@
+{
+  "tested_at_utc": "2026-11-02T02:27:08.003724+00:00",
+  "lookback_start_utc": "2026-10-03T02:27:08.003724+00:00",
+  "python": "3.12.13 (main, Jul 23 2026, 14:33:47) [Clang 22.1.3 ]",
+  "results": [
+    {
+      "case": "gdelt_nvda",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=NVIDIA&mode=artlist&format=json&maxrecords=10&sort=datedesc&startdatetime=20261003022708&enddatetime=20261102022708",
+      "started_at_utc": "2026-11-02T02:27:08.006162+00:00",
+      "request_timeout_seconds": 35,
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "result": "data-returned",
+      "returned_count": 10,
+      "total_matches": null,
+      "samples": [
+        {
+          "title": " [ 앤스로픽 , 상장 ] 엔스로픽 메모리  직거래 … 삼성 · 하이닉스 가격 협상력 ↑",
+          "url": "https://www.newspim.com/news/view/20261027000694",
+          "seendate": "20261027T051500Z",
+          "domain": "newspim.com",
+          "language": "Korean",
+          "sourcecountry": "South Korea"
+        },
+        {
+          "title": "IBM Introduces Identity and Control for AI Agents , Securing Frontier Intelligence for the Enterprise",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69941475-ibm-introduces-identity-and-control-for-ai-agents-securing-frontier-intelligence-for-the-enterprise-008.htm",
+          "seendate": "20261027T051500Z",
+          "domain": "finanznachrichten.de",
+          "language": "English",
+          "sourcecountry": "Germany"
+        },
+        {
+          "title": " [ 앤스로픽 , 상장 ]  1000조 투자 · 첫 흑자 · HBM 부족  까지 … 삼성 · 하이닉스 슈퍼사이클 기대",
+          "url": "https://www.newspim.com/news/view/20261027000865",
+          "seendate": "20261027T051500Z",
+          "domain": "newspim.com",
+          "language": "Korean",
+          "sourcecountry": "South Korea"
+        }
+      ],
+      "full_text_returned": false,
+      "elapsed_seconds": 23.833
+    },
+    {
+      "case": "gdelt_fed",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=%22Federal+Reserve%22+interest+rates&mode=artlist&format=json&maxrecords=10&sort=datedesc&startdatetime=20261003022708&enddatetime=20261102022708",
+      "started_at_utc": "2026-11-02T02:27:36.844971+00:00",
+      "request_timeout_seconds": 35,
+      "result": "http-error",
+      "http_status": 429,
+      "error": "HTTP Error 429: Too Many Requests",
+      "elapsed_seconds": 10.694
+    },
+    {
+      "case": "hn_nvda",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=NVIDIA&tags=story&numericFilters=created_at_i%3E1790994428%2Ccreated_at_i%3C1793586428&hitsPerPage=5",
+      "started_at_utc": "2026-11-02T02:27:08.005878+00:00",
+      "request_timeout_seconds": 35,
+      "http_status": 200,
+      "content_type": "application/json",
+      "result": "data-returned",
+      "returned_count": 5,
+      "total_matches": 185,
+      "samples": [
+        {
+          "title": "Flare, Nvidia's DGX Spark Inference Engine",
+          "url": "https://github.com/NVIDIA/spark-local-inference",
+          "created_at": "2026-11-02T01:11:27Z",
+          "points": 1,
+          "num_comments": 1,
+          "discussion_url": "https://news.ycombinator.com/item?id=50331803"
+        },
+        {
+          "title": "A History of Nvidia Stream Multiprocessor (2020)",
+          "url": "https://fabiensanglard.net/cuda/index.html",
+          "created_at": "2026-11-01T22:18:25Z",
+          "points": 2,
+          "num_comments": 0,
+          "discussion_url": "https://news.ycombinator.com/item?id=50330520"
+        },
+        {
+          "title": "Nvidia Didn't Want Me to Do This: Linux on RTX Spark [video]",
+          "url": "https://www.youtube.com/watch?v=0N3TksVcH7Y",
+          "created_at": "2026-11-01T12:41:36Z",
+          "points": 2,
+          "num_comments": 0,
+          "discussion_url": "https://news.ycombinator.com/item?id=50325088"
+        }
+      ],
+      "full_text_returned": false,
+      "elapsed_seconds": 2.044
+    },
+    {
+      "case": "hn_fed",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=Federal+Reserve&tags=story&numericFilters=created_at_i%3E1790994428%2Ccreated_at_i%3C1793586428&hitsPerPage=5",
+      "started_at_utc": "2026-11-02T02:27:08.006094+00:00",
+      "request_timeout_seconds": 35,
+      "http_status": 200,
+      "content_type": "application/json",
+      "result": "data-returned",
+      "returned_count": 5,
+      "total_matches": 8,
+      "samples": [
+        {
+          "title": "Show HN: A faster Python 3 interpreter implemented in C11, one week",
+          "created_at": "2026-11-01T23:00:12Z",
+          "points": 1,
+          "num_comments": 1,
+          "discussion_url": "https://news.ycombinator.com/item?id=50330796"
+        },
+        {
+          "title": "Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge",
+          "url": "https://github.com/Millillion/lasm",
+          "created_at": "2026-10-30T02:05:41Z",
+          "points": 38,
+          "num_comments": 22,
+          "discussion_url": "https://news.ycombinator.com/item?id=50299004"
+        },
+        {
+          "title": "The Fed Faces Its Most Confusing Economy Yet",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-23/federal-reserve-interest-rate-decision-faces-challenges-from-ai-inflation-war",
+          "created_at": "2026-10-24T19:59:35Z",
+          "points": 3,
+          "num_comments": 2,
+          "discussion_url": "https://news.ycombinator.com/item?id=50224565"
+        }
+      ],
+      "full_text_returned": false,
+      "elapsed_seconds": 3.302
+    }
+  ],
+  "scope": "Direct public API samples, not full Last30Days research engine output. HTTP or parser success alone does not establish complete coverage."
+}

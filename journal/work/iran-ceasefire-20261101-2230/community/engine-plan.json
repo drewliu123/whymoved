@@ -1,0 +1,34 @@
+{
+  "intent": "prediction",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "debate",
+  "source_weights": {
+    "reddit": 1.0,
+    "hackernews": 1.0
+  },
+  "subqueries": [
+    {
+      "label": "T1 bilateral ceasefire terms and election countercase",
+      "search_query": "Iran US ceasefire extension October 2026",
+      "ranking_query": "As of November 1 2026, latest US Iran bilateral ceasefire deadline, enforcement and election pause counterarguments; distinguish 2025, April June 2026, Israel Lebanon ceasefires",
+      "sources": [
+        "reddit",
+        "hackernews"
+      ],
+      "weight": 1.0
+    },
+    {
+      "label": "T2 execution and verification counterevidence",
+      "search_query": "Iran Hormuz ceasefire inspection October 2026",
+      "ranking_query": "Last 30 days military strikes Hormuz shipping passage and nuclear inspections: verifiable details challenging weeks of restraint, election-only pause or months of reciprocal stability",
+      "sources": [
+        "reddit",
+        "hackernews"
+      ],
+      "weight": 1.0
+    }
+  ],
+  "notes": [
+    "H1 costs support weeks restraint; H2 election-only pause then renewed fighting; H3 reciprocal verification supports months stability. Community material supports views only, not external facts."
+  ]
+}

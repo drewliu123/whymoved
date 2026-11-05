@@ -1,0 +1,32 @@
+{
+ "qid": "Q039",
+ "question": "Will the Bank of Brazil decrease the target for the Selic rate by 25 bps at the September meeting?",
+ "rules": "This market will resolve according to the change in basis points in the target for the Selic rate resulting from the September 2026 meeting of the Bank of Brazil’s Monetary Policy Committee (COPOM), relative to the level it was prior to this meeting.\n\nThe resolution source will be official information from the Bank of Brazil, including the statement or release from its September 2026 Monetary Policy Committee meeting, scheduled for September 14-15, 2026, as listed on the official Bank of Brazil calendar (https://www.bcb.gov.br/en/about/bcb-calendar?categoria=Monetary%20Policy%20Committee%20(Copom)). This market may resolve as soon as the statement or release of the Bank of Brazil's September 2026 Monetary Policy Committee meeting with relevant data is issued. \n\nIf the specified rate is defined by an upper and lower bound, the relevant change will be the change to the upper bound. \n\nIf the specified rate is changed to a level not expressed in the displayed options, the change will be rounded according to the following guidelines. Increases or decreases of less than 25 bps will be rounded to 25 bps (e.g. an increase or decrease of 10 bps would be considered to be an increase or decre",
+ "as_of": "2026-09-02",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-09-01",
+   "excerpt": "Brazil's GDP grew 0.5% in the second quarter from the previous quarter, down from 1.1% in the first quarter but above the 0.4% forecast in a Reuters poll. Household consumption fell 0.4%, its first contraction in three quarters. The benchmark interest rate remained at 14%."
+  },
+  {
+   "id": "E2",
+   "publisher": "Investing.com",
+   "published_at": "2026-08-26",
+   "excerpt": "Brazil’s annual inflation rate decreased to 4.24% in early August, falling within the central bank’s tolerance range, according to official data released Wednesday. Consumer prices dropped 0.4% from the previous month, the data showed. The annual reading came in below the 4.33% median forecast, while the monthly decline exceeded the estimated 0.32% decrease."
+  },
+  {
+   "id": "E3",
+   "publisher": "Banco Central do Brasil — Minutes of the 280th COPOM meeting",
+   "published_at": "2026-08-11",
+   "excerpt": "O Copom decidiu reduzir a taxa básica de juros para 14,00% a.a., e entende que essa decisão é compatível com a estratégia de convergência da inflação para o redor da meta ao longo do horizonte relevante. O cenário atual, caracterizado por significativo aumento da incerteza, desancoragem das expectativas e riscos elevados em torno do cenário base, demanda serenidade e cautela na condução da política monetária. O Comitê seguirá incorporando novas informações e acompanhando a evolução do cenário de forma a manter a restrição adequada para assegurar a convergência da inflação à meta."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-08-05",
+   "excerpt": "Brazil's central bank cut interest rates by 25 basis points at a fourth straight policy meeting. COPOM unanimously cut the benchmark Selic rate to 14.00%, the lowest level since March 2025. The decision matched the expectations of 38 of 42 analysts polled by Reuters, with the remainder forecasting unchanged rates."
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+  "as_of": "2026-10-31T13:11:12Z",
+  "contract": {
+    "hypothesis_id": "H2",
+    "mode": "independent",
+    "question": "NVIDIA FY2027 Q3首次官方财报是否同时满足总收入>1080亿美元且non-GAAP毛利率<75.0%？",
+    "yes_means": "2026-10-31至2026-12-31首次发布的FY2027 Q3财报同时报告总收入严格大于108000百万美元及non-GAAP毛利率严格低于75.0%。两项缺一为NO；无财报或缺指标为void，不凭推测裁决；忽略后续修订。",
+    "window_start": "2026-10-31",
+    "window_end": "2026-12-31",
+    "resolution_source": "NVIDIA IR FY2027 Q3首次业绩新闻稿及财务表 https://investor.nvidia.com/",
+    "evidence_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "C1",
+      "text": "NVIDIA FY2027 Q2收入962亿美元，同比增长106%；GAAP及non-GAAP毛利率均为75.0%。",
+      "sources": [
+        {
+          "publisher": "NVIDIA",
+          "published_at": "2026-08-26"
+        },
+        {
+          "publisher": "NVIDIA",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "NVIDIA Q3收入指引1080亿美元±2%；GAAP及non-GAAP毛利率指引均为74.0%±50基点；不假设中国数据中心计算收入。",
+      "sources": [
+        {
+          "publisher": "NVIDIA",
+          "published_at": "2026-08-26"
+        },
+        {
+          "publisher": "NVIDIA",
+          "published_at": "2026-08-26"
+        },
+        {
+          "publisher": "NVIDIA",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "截至2026年7月26日六个月经营现金流744.21亿美元，去年同期427.79亿美元；7月26日净应收账款630.59亿美元，1月25日384.66亿美元；半年现金流表应收账款调整为-245.90亿美元，不能等同客户回款总额。",
+      "sources": [
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        },
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        },
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "10-Q称部分投资级大型数据中心项目买家获90天至一年的付款期限；此安排不适用于全部客户。",
+      "sources": [
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "7月26日股权投资承诺合计250亿美元，附有条件；这是承诺口径，并非已支付现金或投资资产余额。",
+      "sources": [
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "10-Q披露8月签订与SB Energy园区相关、上限1050亿美元的担保；付款在特定租户违约时触发，不能当作当期损失或现金支出。",
+      "sources": [
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        },
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "7月26日AI云协议承诺合计360亿美元；AI云客户购买NVIDIA基础设施，NVIDIA承诺购买云服务；第三方使用容量可减少NVIDIA义务。",
+      "sources": [
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "供应承诺从上一季度1190亿美元升至2790亿美元；供应承诺不等于已确认收入，部分安排可在形成确定订单前调整并可能付出额外成本。",
+      "sources": [
+        {
+          "publisher": "NVIDIA / SEC",
+          "published_at": "2026-08-26"
+        }
+      ]
+    }
+  ]
+}

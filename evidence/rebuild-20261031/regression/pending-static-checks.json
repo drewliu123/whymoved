@@ -1,0 +1,26 @@
+{
+  "changed_originals": [],
+  "case_checks": {
+    "event": {
+      "claims_byte_identical": true,
+      "original_as_of": "2026-10-31T17:21:33.217142+00:00",
+      "new_research": false
+    },
+    "asset": {
+      "claims_byte_identical": true,
+      "original_as_of": "2026-10-31T17:14:08Z",
+      "new_research": false
+    },
+    "theme": {
+      "claims_byte_identical": true,
+      "original_as_of": "2026-10-31T17:25:57Z",
+      "new_research": false
+    },
+    "actor": {
+      "claims_byte_identical": true,
+      "original_as_of": "2026-10-31T17:29:33Z",
+      "new_research": false
+    }
+  },
+  "status": "static_content_checks_complete_waiting_new_pipeline_gate"
+}

@@ -1,0 +1,164 @@
+{
+  "computed_at": "2026-10-31T17:18:13.070822+00:00",
+  "method": "Decimal arithmetic on saved raw Gamma and CLOB Yes-side snapshots; no forecast model",
+  "inputs": [
+    "raw-market/gamma-event.json",
+    "raw-clob/3215005.json",
+    "raw-clob/3215006.json",
+    "raw-clob/3215007.json",
+    "raw-clob/3215008.json",
+    "raw-clob/3215009.json"
+  ],
+  "rows": [
+    {
+      "market_id": "3215005",
+      "outcome": "50+ bps decrease",
+      "gamma_yes_reference": "0.004",
+      "yes_best_bid": "0.003",
+      "yes_best_ask": "0.005",
+      "bid_top_shares": "358248.31",
+      "ask_top_shares": "15457.88",
+      "bid_top_usd": "1074.74493",
+      "ask_top_usd": "77.28940",
+      "spread": "0.002",
+      "bid_depth_within_0_01": {
+        "shares": "5802059.00",
+        "usd_notional": "9229.55303",
+        "levels": 3
+      },
+      "ask_depth_within_0_01": {
+        "shares": "32483.70",
+        "usd_notional": "183.54585",
+        "levels": 7
+      },
+      "clob_timestamp_ms": "1793467059444",
+      "clob_timestamp_utc": "2026-10-31T17:17:39.444000+00:00",
+      "source_file": "raw-clob/3215005.json"
+    },
+    {
+      "market_id": "3215006",
+      "outcome": "25 bps decrease",
+      "gamma_yes_reference": "0.0065",
+      "yes_best_bid": "0.006",
+      "yes_best_ask": "0.007",
+      "bid_top_shares": "20",
+      "ask_top_shares": "8556.97",
+      "bid_top_usd": "0.120",
+      "ask_top_usd": "59.89879",
+      "spread": "0.001",
+      "bid_depth_within_0_01": {
+        "shares": "7334089.07",
+        "usd_notional": "18339.65132",
+        "levels": 6
+      },
+      "ask_depth_within_0_01": {
+        "shares": "19802.10",
+        "usd_notional": "206.77502",
+        "levels": 9
+      },
+      "clob_timestamp_ms": "1793467059597",
+      "clob_timestamp_utc": "2026-10-31T17:17:39.597000+00:00",
+      "source_file": "raw-clob/3215006.json"
+    },
+    {
+      "market_id": "3215007",
+      "outcome": "No change",
+      "gamma_yes_reference": "0.275",
+      "yes_best_bid": "0.27",
+      "yes_best_ask": "0.28",
+      "bid_top_shares": "27435.55",
+      "ask_top_shares": "24428.43",
+      "bid_top_usd": "7407.5985",
+      "ask_top_usd": "6839.9604",
+      "spread": "0.01",
+      "bid_depth_within_0_01": {
+        "shares": "374743.19",
+        "usd_notional": "97707.5849",
+        "levels": 2
+      },
+      "ask_depth_within_0_01": {
+        "shares": "356202.54",
+        "usd_notional": "103054.4523",
+        "levels": 2
+      },
+      "clob_timestamp_ms": "1793467059936",
+      "clob_timestamp_utc": "2026-10-31T17:17:39.936000+00:00",
+      "source_file": "raw-clob/3215007.json"
+    },
+    {
+      "market_id": "3215008",
+      "outcome": "25 bps increase",
+      "gamma_yes_reference": "0.705",
+      "yes_best_bid": "0.7",
+      "yes_best_ask": "0.71",
+      "bid_top_shares": "3010.62",
+      "ask_top_shares": "48170.95",
+      "bid_top_usd": "2107.434",
+      "ask_top_usd": "34201.3745",
+      "spread": "0.01",
+      "bid_depth_within_0_01": {
+        "shares": "199409.31",
+        "usd_notional": "137622.5301",
+        "levels": 2
+      },
+      "ask_depth_within_0_01": {
+        "shares": "425768.66",
+        "usd_notional": "306071.7257",
+        "levels": 2
+      },
+      "clob_timestamp_ms": "1793467060943",
+      "clob_timestamp_utc": "2026-10-31T17:17:40.943000+00:00",
+      "source_file": "raw-clob/3215008.json"
+    },
+    {
+      "market_id": "3215009",
+      "outcome": "50+ bps increase",
+      "gamma_yes_reference": "0.017",
+      "yes_best_bid": "0.016",
+      "yes_best_ask": "0.018",
+      "bid_top_shares": "2159.38",
+      "ask_top_shares": "880.64",
+      "bid_top_usd": "34.55008",
+      "ask_top_usd": "15.85152",
+      "spread": "0.002",
+      "bid_depth_within_0_01": {
+        "shares": "357830.64",
+        "usd_notional": "3599.21859",
+        "levels": 11
+      },
+      "ask_depth_within_0_01": {
+        "shares": "11276.40",
+        "usd_notional": "269.03759",
+        "levels": 8
+      },
+      "clob_timestamp_ms": "1793467014639",
+      "clob_timestamp_utc": "2026-10-31T17:16:54.639000+00:00",
+      "source_file": "raw-clob/3215009.json"
+    }
+  ],
+  "formulas": {
+    "spread": "best ask - best bid",
+    "top_notional_usd": "price * displayed shares",
+    "bid_depth": "sum displayed shares / price*shares at price >= best bid - 0.01",
+    "ask_depth": "sum displayed shares / price*shares at price <= best ask + 0.01",
+    "gamma_reference_sum": "sum Yes outcomePrices[0] for five brackets"
+  },
+  "checks": {
+    "gamma_reference_sum": "1.0075",
+    "sum_best_bids": "0.995",
+    "sum_best_asks": "1.020",
+    "each_binary_yes_no_sum_one": true,
+    "book_bid_not_above_ask": true
+  },
+  "limitations": [
+    "snapshot depth is displayed and cancellable, not guaranteed execution; notional excludes fees",
+    "1 cent price means 1 percentage point of payout price; not 1bp policy rate",
+    "five books captured in ~0.30s response window but not atomic; Gamma was earlier and cached",
+    "50+bp tail means expected policy move cannot be computed without tail magnitudes"
+  ],
+  "independent_probability": null,
+  "brier_log_loss": {
+    "status": "not_applicable_for_independent_forecast",
+    "reason": "No numeric independent forecast registered; market snapshot may be scored only against actual resolution at a future review, with explicit normalization policy and no treating cancellation/ambiguity as economic No change."
+  }
+}

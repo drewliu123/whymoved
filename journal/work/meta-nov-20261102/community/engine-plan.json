@@ -1,0 +1,28 @@
+{
+  "intent": "breaking_news",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "story",
+  "subqueries": [
+    {
+      "label": "cash_conversion",
+      "search_query": "Meta META earnings advertising AI capex free cash flow",
+      "ranking_query": "Does Meta advertising monetization convert to profit and cash or does capex absorb growth? Find concrete counterarguments for November stock rebound.",
+      "sources": [
+        "reddit",
+        "youtube",
+        "hackernews"
+      ],
+      "weight": 1.0
+    },
+    {
+      "label": "macro_and_contract",
+      "search_query": "Meta META stock November Polymarket touch rates Nasdaq",
+      "ranking_query": "Are Meta stock moves company specific or macro driven, and do traders confuse intramonth touch with month end close?",
+      "sources": [
+        "reddit",
+        "hackernews"
+      ],
+      "weight": 0.8
+    }
+  ]
+}

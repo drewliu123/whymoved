@@ -1,0 +1,13 @@
+/last30days · researching: Microsoft capex finance leases cash PP&E cash burden
+⏳ [95mProcessing[0m Finding patterns...
+[Planner] Plan: intent=concept, freshness=evergreen_ok, cluster_mode=none, subqueries=2, source=external
+[Planner]   sq1 label=primary search="Microsoft capex" sources=[hackernews]
+[Planner]   sq2 label=leases search="Microsoft leases" sources=[hackernews]
+[HN] Searching for 'microsoft capex' (raw: 'Microsoft capex', since 2025-10-31, count=30)
+[HN] Searching for 'microsoft leases' (raw: 'Microsoft leases', since 2025-10-31, count=30)
+[HN] Found 30 stories
+[HN] Enriching top 5 stories with comments
+[HN] Filtered 2/60 low-engagement stories
+[HN] Found 30 stories
+[HN] Enriching top 5 stories with comments
+✓ Research complete (5.3s) - HN: 13 stories

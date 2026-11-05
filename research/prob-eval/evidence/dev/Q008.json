@@ -1,0 +1,57 @@
+{
+  "qid": "Q008",
+  "as_of": "2026-07-09",
+  "kept": [
+    {
+      "excerpt": "Russian forces continued offensive operations in the Dobropillya tactical area on July 8 and 9 but did not advance. Russian forces continued offensive operations in the Pokrovsk direction on July 8 and 9 but did not advance.",
+      "published_at": "2026-07-09T20:29:18-04:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "This is the latest eligible ISW assessment of the surrounding operational area, although its prose does not establish the target settlement’s map shading.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-9-2026/"
+    },
+    {
+      "excerpt": "Russian forces continued offensive operations in the Dobropillya tactical area on July 7 and 8 but did not advance as Ukrainian forces counterattacked. A Russian milblogger claimed that Ukrainian forces counterattacked near Novyi Donbas (east of Dobropillya). Geolocated footage published on July 5 and 8 shows Ukrainian forces striking Russian forces in central and southeastern Rodynske (north of Pokrovsk) respectively, indicating that Russian forces maintain positions or recently advanced in the area.",
+      "published_at": "2026-07-08T21:06:24-04:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "The report identifies nearby Russian positions and Ukrainian counterattacks that inform the immediate approach to Krasnoiarske.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-8-2026/"
+    },
+    {
+      "excerpt": "On the Pokrovsk front, Ukrainian defenders repelled 38 Russian attacks, the highest number recorded on any front over the past 24 hours. The Russians were active near the settlements of Toretske, Pokrovsk, Rodynske and Bilytske and conducted assaults towards Pavlivka, Vilne, Shevchenko, Hryshyne, Molodetske, Novopidhorodne, Svitle, Hulive, Matiasheve, Dorozhnie, Nykanorivka, Novyi Donbas, Kotlyne and Udachne.",
+      "published_at": "2026-07-09",
+      "publisher": "Ukrainska Pravda, citing the General Staff of the Armed Forces of Ukraine",
+      "relevance": "This dated account of the Ukrainian General Staff’s morning update provides a separate source on assault intensity and locations near the target area.",
+      "url": "https://www.pravda.com.ua/eng/news/2026/07/09/8043170/"
+    },
+    {
+      "excerpt": "Russian forces continued offensive operations in the Dobropillya and Pokrovsk directions on July 6 and 7 but did not advance.",
+      "published_at": "2026-07-07T21:54:32-04:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "This earlier daily assessment helps establish whether the surrounding front was moving consistently immediately before the experiment cutoff.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-7-2026/"
+    },
+    {
+      "excerpt": "ISW has observed evidence to assess that Russian forces have infiltrated as close as about 13 kilometers and advanced as close as 17 kilometers from Sumy City; infiltrated as close as 13 kilometers and advanced as close as 19 kilometers from Slovyansk; infiltrated as close as eight kilometers and advanced as close as seven kilometers from Dobropillya; and infiltrated as close as 25 kilometers and advanced as close as 21 kilometers from Zaporizhzhia City. Russian forces continued limited offensive operations in the Dobropillya tactical area on July 3 and 4 but did not advance.",
+      "published_at": "2026-07-04T21:10:16-04:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "ISW’s measured proximity to Dobropillya supplies early-July geographic context for Russian pressure in the target’s vicinity.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-4-2026/"
+    },
+    {
+      "excerpt": "ISW has observed evidence to assess that Russian forces seized or infiltrated 30.42 square kilometers in June 2026 and advanced or infiltrated at an average pace of 1.01 square kilometers per day. Russian forces comparatively seized 481.25 square kilometers in June 2025, advancing at an average pace of 16.04 square kilometers per day. Russian forces’ main territorial gains have been in Russia’s main effort area near Kostyantynivka in Donetsk Oblast, where Russian forces have achieved slow tactical gains at high costs in the city’s urban environs.",
+      "published_at": "2026-07-01T22:09:25-04:00",
+      "publisher": "Institute for the Study of War",
+      "relevance": "These theater-wide historical advance rates provide a contemporaneous base-rate reference, with limited applicability to any individual settlement.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-1-2026/"
+    },
+    {
+      "excerpt": "Mashovets reported that Russian forces recently conducted unsuccessful small-group infiltration missions near Ivanivka (southeast of Dobropillya), Novyi Donbas (east of Dobropillya), and Bilytske. Mashovets acknowledged that some Russian infiltrators managed to consolidate positions in an area southeast of Shevchenko (northwest of Pokrovsk) and between Bilytske and Krasnoyarske (northwest of Bilytske), however. Mashovets noted that Russian forces currently lack the numbers and density required to sustain simultaneous offensive operations in the areas of responsibility (AoRs) of the Central Grouping of Forces north and west of Pokrovsk and of the Southern Grouping of Forces against Kostyantynivka.",
+      "published_at": "2026-06-21",
+      "publisher": "Institute for the Study of War, citing Ukrainian military observer Kostyantyn Mashovets",
+      "relevance": "This report specifically names Krasnoyarske and describes nearby consolidated infiltrator positions and manpower constraints, without asserting entry into the settlement itself.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-21-2026/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-09 inclusive, interpreted in America/New_York because the supplied resolution rules use ET. ISW publication timestamps returned in UTC were converted to EDT; the July 9 assessment was published at 00:29 UTC on July 10, equivalent to 20:29 EDT on July 9, and is therefore included. Date-only entries use the publisher’s displayed publication date. Searches covered Krasnoiarske/Krasnoyarske, Dobropillya, Bilytske, and Pokrovsk. Source text was checked through agent-reach when web_fetch failed; the June 21 item was verified through indexed ISW page text and its displayed date after direct retrieval failed to provide usable passages. All post-cutoff material surfaced by search was excluded, and no prediction-market pages or prices are included. Excerpts retain source attribution and distinguish reported claims from ISW assessments. A historical snapshot of qualifying ISW map layers at the exact target coordinates and persistence through a subsequent finalized daily update were not verified; these prose reports do not establish that the market’s capture condition had been met. The market creation date was not supplied, and the final resolution-rule paragraph is incomplete."
+}

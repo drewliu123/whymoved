@@ -1,0 +1,293 @@
+{
+  "question": "截至2026-10-31，英伟达最近一个月跌了多少、为什么跌、业务发生了什么变化，接下来该关注什么？",
+  "as_of": "2026-10-31T12:19:06Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "截至最近已收盘交易日2026-10-30，NVDA收盘204.64美元；9月30日收盘228.38美元，月度价格回报-10.39%（少23.74美元）；10月1日收盘230.86美元至月末-11.36%，两种口径不能混用。",
+      "type": "price",
+      "sources": [
+        {
+          "url": "https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=NVDA%3ANSQ",
+          "publisher": "LSEG market-data feed via FT/Markit",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "quote": "Oct30 close204.64; Oct29 close213.66; Oct23 close210.96; Oct6 close239.24 high243.37; Oct1 close230.86",
+          "classification_note": "T0 refers to displayed market-data feed, not FT editorial news; official IR failed"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/NVDA/history/?period1=1790726400&period2=1793491200",
+          "publisher": "Yahoo Finance displayed market-data table",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "quote": "Sep30 close228.38; Oct30 close204.64; Oct29 close213.66; Oct23 close210.96",
+          "classification_note": "Actual historical quote table; not search snippet"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z",
+      "calculations": {
+        "month": "(204.64/228.38-1)*100=-10.39495577546194938260793414484630878361%; direct rounding to two decimals=-10.39%; no intermediate rounding",
+        "first_close": "(204.64/230.86-1)*100=-11.3575%"
+      }
+    },
+    {
+      "id": "C2",
+      "text": "10月6日是已取得全月日线中最高收盘239.24美元及最高盘中价243.37美元；月末较这两种高点分别回撤14.46%和15.91%；并非整月单向下跌。",
+      "type": "price",
+      "sources": [
+        {
+          "url": "https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=NVDA%3ANSQ",
+          "publisher": "LSEG market-data feed via FT/Markit",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "quote": "Oct30 close204.64; Oct29 close213.66; Oct23 close210.96; Oct6 close239.24 high243.37; Oct1 close230.86",
+          "classification_note": "T0 refers to displayed market-data feed, not FT editorial news; official IR failed"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z",
+      "calculations": {
+        "close_drawdown": "(204.64/239.24-1)*100=-14.4625%",
+        "intraday_drawdown": "(204.64/243.37-1)*100=-15.9140%"
+      },
+      "limitations": [
+        "FT/LSEG complete 22-row October table retained in evidence/price-snapshot.json; not all rows repeated in claim excerpt",
+        "FT historical/headline timestamps16:00/20:00BST ambiguous; no exchange-direct confirmation; selected Yahoo closes agree"
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "10月23日收盘210.96美元、10月29日213.66美元、10月30日204.64美元；最后一周-3.00%，最后一天-4.22%；最后一天跌幅大于整周净跌幅。",
+      "type": "price",
+      "sources": [
+        {
+          "url": "https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=NVDA%3ANSQ",
+          "publisher": "LSEG market-data feed via FT/Markit",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "quote": "Oct30 close204.64; Oct29 close213.66; Oct23 close210.96; Oct6 close239.24 high243.37; Oct1 close230.86",
+          "classification_note": "T0 refers to displayed market-data feed, not FT editorial news; official IR failed"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/NVDA/history/?period1=1790726400&period2=1793491200",
+          "publisher": "Yahoo Finance displayed market-data table",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "quote": "Sep30 close228.38; Oct30 close204.64; Oct29 close213.66; Oct23 close210.96",
+          "classification_note": "Actual historical quote table; not search snippet"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z",
+      "calculations": {
+        "week": "(204.64/210.96-1)*100=-2.9958%",
+        "day": "(204.64/213.66-1)*100=-4.2217%"
+      }
+    },
+    {
+      "id": "C4",
+      "text": "已取得的最新官方季度财报于8月26日发布：FY2027 Q2营收962亿美元、Data Center 890亿美元；公司Q3营收指引1080亿美元±2%，该指引是预期而非已实现收入。",
+      "type": "fact",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA IR",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "$96.2 billion; $89.0 billion; Revenue is expected to be $108.0 billion, plus or minus 2%.",
+          "limitation": "Revenue and Data Center returned only short field extracts; no full sentences; growth/margins not obtained"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z"
+    },
+    {
+      "id": "C5",
+      "text": "以已披露金额计算，数据中心占Q2营收约92.5%；Q3营收指引中点较Q2高约12.3%，说明披露时公司仍预计环比扩张，但不足以证明10月实际订单或盈利改善。",
+      "type": "inference",
+      "sources": [],
+      "as_of": "2026-10-31T12:19:06Z",
+      "calculation": "89.0/96.2*100≈92.5%; (108.0/96.2-1)*100≈12.3%; financial inputs disclosed to0.1billion so derived percentages displayed to0.1percentage-point",
+      "basis": [
+        "C4"
+      ],
+      "precision_note": "Source financial inputs are rounded. 92.5% and12.3% are approximate derived figures, not precise actual ratios. H2 remains an independent >90% hypothesis, not guaranteed by Q2."
+    },
+    {
+      "id": "C6",
+      "text": "NVIDIA于10月28日公告Q3财报电话会在11月17日美东17:00举行；公告写该季度截至2026年10月25日。",
+      "type": "fact",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+          "publisher": "NVIDIA IR",
+          "tier": "T0",
+          "published_at": "2026-10-28",
+          "quote": "Tuesday, November 17, at 2 p.m. PT (5 p.m. ET); October 25, 2026",
+          "limitation": "Returned as short extracts, not full sentence"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z"
+    },
+    {
+      "id": "C7",
+      "text": "Reuters的10月30日收市报道将当日科技股下跌解释为Intel和Amazon业绩失望加重AI巨额投入与回报忧虑；文中NVDA跌逾4%、Nasdaq跌近3%；这是该媒体的归因，不能外推为全月唯一原因。",
+      "type": "view",
+      "sources": [
+        {
+          "url": "https://www.marketscreener.com/news/us-stocks-end-sharply-lower-as-ai-cash-burn-fears-spark-tech-selloff-ce785fd8d98af426",
+          "publisher": "Reuters (syndicated on MarketScreener)",
+          "tier": "T2",
+          "published_at": "2026-10-31T00:38:00Z",
+          "quote": "growing worries; massive spending; big backlogs",
+          "limitation": "Full body summarized by WebFetch; original headline date is Oct30 8:38pm EDT; last update00:44Z also before AS_OF; syndicated copies count as one publisher",
+          "extraction_note": "WebFetch returned full-body summary and short quoted phrases; full original article text not locally archived. Attribution remains single-source view."
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z"
+    },
+    {
+      "id": "C8",
+      "text": "Reuters经Euronext刊发的10月29日报道称，中国10月16日公布AI技术出口草案，部分技术转移/海外部署需审批、征求意见至11月15日；该报道没有建立草案与NVDA月跌之间的因果联系。",
+      "type": "view",
+      "sources": [
+        {
+          "url": "https://live.euronext.com/en/financial-news/chinas-new-export-curbs-draw-line-around-its-ai-crown-jewels",
+          "publisher": "Reuters (syndicated on Euronext)",
+          "tier": "T2",
+          "published_at": "2026-10-29",
+          "quote": "subjecting some transfers of underlying technology or deployments overseas to government approval.",
+          "limitation": "Timezone unspecified; draft date Oct16, comment deadlineNov15; no direct NVDA price causality"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z"
+    },
+    {
+      "id": "C9",
+      "text": "10月7日r/stocks一个507分、216评论线程的主帖认为芯片需求未放缓；同线程u/zedder1994以134票评论质疑ROI，u/KissmySPAC以212票评论讽刺用市值代替盈利；这些是同一讨论中的分歧，不代表总体投资者。",
+      "type": "view",
+      "sources": [
+        {
+          "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+          "publisher": "r/stocks post; author unavailable",
+          "tier": "T4",
+          "published_at": "2026-10-07",
+          "quote": "For anyone trading Nvidia (NVDA), this shuts down the argument that AI hardware demand is slowing down.",
+          "engagement": "507 score /216 comments"
+        },
+        {
+          "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peexhra/",
+          "publisher": "u/zedder1994",
+          "tier": "T4",
+          "published_at": "2026-10-07",
+          "quote": "Does R.O.I. mean anything these days?",
+          "engagement": "134 upvotes"
+        },
+        {
+          "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peercfy/",
+          "publisher": "u/KissmySPAC",
+          "tier": "T4",
+          "published_at": "2026-10-07",
+          "quote": "Who cares? We'll just triple the market cap and call it earnings.",
+          "engagement": "212 upvotes"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z",
+      "engagement_observed_at": "2026-10-31T12:24:53.231482+00:00",
+      "limitation": "Engagement observed six minutes after AS_OF; cannot reconstruct exact AS_OF engagement; customer funding/order claims unverified"
+    },
+    {
+      "id": "C10",
+      "text": "本次实际取得的数据中心营收预测盘口中，Q3超过1000亿美元为85%、超过950亿美元为71.5%，单调性倒挂；超过1050亿美元为50%；超过1000亿美元的一日变化-2.5个百分点、一周+2个百分点、一月缺失；采集晚于起始截面。",
+      "type": "price",
+      "sources": [
+        {
+          "url": "https://polymarket.com/event/will-nvidia-nvda-q3-data-center-revenue-be-above-20261008120135000",
+          "publisher": "Polymarket Gamma API",
+          "tier": "T0",
+          "published_at": "unknown",
+          "quote": "above100B=.85; above95B=.715; above105B=.5;100B oneDay=-.025 oneWeek=.02 oneMonth=null",
+          "observed_at": "2026-10-31T12:29:00Z",
+          "limitation": "Approximate collection minute; not reconstructable AS_OF snapshot; no liquidity/orderbook obtained"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z",
+      "snapshot_status": "post_asof_diagnostic_only"
+    },
+    {
+      "id": "C11",
+      "text": "在已取证范围内，客户ROI压力、未来盈利预期下修、估值与折现率变化都是与有限证据相容的候选解释，未识别相对贡献。8月增长指引不能证明10月现状；未取到业务转差证据也不证明业务未转差。全月因素及最后一天独立冲击无法识别。",
+      "type": "inference",
+      "sources": [],
+      "as_of": "2026-10-31T12:19:06Z",
+      "basis": [
+        "C1",
+        "C2",
+        "C4",
+        "C7",
+        "C8",
+        "C9"
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "同一标的、季度、收入定义和结算规则下，超过较低门槛的真实概率不应更低；所采集显示价格异常且晚于截面，缺同步可执行报价/流动性，不能校准起始截面概率或解释10月股价，也不证明参与者真实信念自相矛盾。",
+      "type": "inference",
+      "sources": [],
+      "as_of": "2026-10-31T12:19:06Z",
+      "basis": [
+        "C10"
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "最强反方是客户回报疑虑未必转化为NVDA近期订单下滑：Reuters引述Montis Financial的Dennis Follmer认为Intel问题可能有公司特异性，其他芯片供应商仍有大额积压订单；这是受访者观点，未核验订单金额。",
+      "type": "view",
+      "sources": [
+        {
+          "url": "https://www.marketscreener.com/news/us-stocks-end-sharply-lower-as-ai-cash-burn-fears-spark-tech-selloff-ce785fd8d98af426",
+          "publisher": "Reuters (syndicated on MarketScreener)",
+          "tier": "T2",
+          "published_at": "2026-10-31T00:38:00Z",
+          "quote": "growing worries; massive spending; big backlogs",
+          "limitation": "Full body summarized by WebFetch; original headline date is Oct30 8:38pm EDT; last update00:44Z also before AS_OF; syndicated copies count as one publisher"
+        }
+      ],
+      "as_of": "2026-10-31T12:19:06Z"
+    },
+    {
+      "id": "C14",
+      "text": "下个验证重点是11月17日实际营收相对1058.4—1101.6亿美元原指引区间、后续指引、同口径利润率与数据中心占比；11月15日只是政策征求意见截止，经营影响应以后续正式文本、生效安排及具体披露为准。短期营收兑现也不能证明客户长期ROI。",
+      "type": "inference",
+      "sources": [],
+      "as_of": "2026-10-31T12:19:06Z",
+      "basis": [
+        "C4",
+        "C5",
+        "C6",
+        "C8",
+        "C9",
+        "C13"
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "即使财报达到原指引，也可能因后续指引、利润率或估值要求变化继续下跌；客户融资/订单变化只有足以改变指引对应期间收入预期且未被其他业务抵消时，才使原指引需要重估。两种反方是逻辑情景，未获得新事实确认。",
+      "type": "inference",
+      "sources": [],
+      "as_of": "2026-10-31T12:19:06Z",
+      "basis": [
+        "C4",
+        "C7",
+        "C9",
+        "C13"
+      ]
+    }
+  ],
+  "temporal_policy": "Company/media/post publication before AS_OF; price completed session; late community engagement and live prediction quotes disclosed, not historical reconstruction",
+  "red_team_integrated": [
+    "C2 evidence completeness/time caveat",
+    "C7/C13 extract limitations",
+    "C11 candidate rather than preferred cause; future earnings/rates alternatives",
+    "C12 same-definition premise and displayed quotes only",
+    "C14 policy deadline and comparable margins",
+    "C15 timing/scale/offset conditions"
+  ]
+}

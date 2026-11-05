@@ -1,0 +1,49 @@
+{
+  "topic": "英伟达大跌",
+  "as_of": "2026-11-01",
+  "engine_window": {"from": "2026-10-02", "to": "2026-11-01", "lookback_days": 30},
+  "engine_version": "3.30.0",
+  "python": "/Users/frankzhang/.local/bin/python3.12",
+  "save_dir": "/Users/frankzhang/Documents/Last30Days",
+  "available_sources": ["reddit", "x", "youtube", "hackernews", "polymarket", "github"],
+  "x_health": {"predicted_backend": "bird", "verified": false, "configured_browser_path": true},
+  "resolution": {
+    "official_site": "nvidia.com",
+    "x_handle": "NVIDIA",
+    "x_url": "https://twitter.com/NVIDIA",
+    "founder_personal_x": "not independently verified; not passed to engine",
+    "dedicated_subreddits": ["NVDA_Stock", "NvidiaStock"],
+    "broad_subreddits": ["stocks", "investing", "wallstreetbets"],
+    "broad_subreddits_basis": "inferred finance communities",
+    "stock_community_caveat": "r/nvidia is primarily product and technical discussion, excluded as a dedicated stock community"
+  },
+  "web_evidence": [
+    {
+      "url": "https://www.statmuse.com/money/ask/nvidia-stock-price-october-chart",
+      "type": "dynamic third-party daily OHLC table, host-fetched",
+      "closes_usd": {"2026-10-01": 230.86, "2026-10-02": 233.95, "2026-10-06": 239.24, "2026-10-29": 213.66, "2026-10-30": 204.64},
+      "limitation": "single vendor; prior-month close absent, calendar-month return not yet independently verified"
+    },
+    {
+      "url": "https://www.nbd.com.cn/articles/2026-10-17/4607331.html",
+      "published_at": "2026-10-17T11:58:06",
+      "type": "financial reporting, host-fetched",
+      "reported_weekly_returns_percent": {"NVIDIA": -6.61, "SP500": -1.95, "Nasdaq": -4.48, "Philadelphia_semiconductors": -11.4},
+      "period_note": "week ended 2026-10-16, not the full research window",
+      "reported_explanations": ["inflation and rate expectations", "AI capital expenditure financing costs"],
+      "limitation": "media attribution is not independently established causal identification"
+    },
+    {
+      "url": "https://finance.sina.com.cn/stock/t/2026-10-15/doc-inivhaww4521026.shtml",
+      "published_at": "2026-10-15T08:04:00",
+      "type": "financial reporting, fetched by resolution agent",
+      "finding": "regular-session NVIDIA decline above 3%, separately after-hours decline above 1%; do not add the two"
+    },
+    {
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+      "published_at": "2026-10-28",
+      "type": "official announcement, fetched by resolution agent",
+      "finding": "FY2027 Q3 earnings scheduled for 2026-11-17; not yet released at research cutoff"
+    }
+  ]
+}

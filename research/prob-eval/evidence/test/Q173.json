@@ -1,0 +1,45 @@
+{
+  "qid": "Q173",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "China’s cyberspace regulator said on Wednesday that Apple’s on-device generative AI service, Apple Intelligence, has been registered for use on iPhones in China, paving the way for the long-anticipated rollout of the service in the country. Alibaba said in a statement to Reuters that its Qwen model will be integrated into Apple Intelligence across Apple’s iPhone (iOS), iPad (iPadOS), Mac (macOS) and Vision Pro (visionOS) operating systems in China.",
+      "published_at": "2026-07-15",
+      "publisher": "Reuters, via Investing.com",
+      "relevance": "Identifies a recent regulatory catalyst for Apple's AI rollout in a major market that could influence its valuation before July 31.",
+      "url": "https://www.investing.com/news/stock-market-news/apple-intelligence-ai-service-registered-with-chinas-cyberspace-regulator-4792499"
+    },
+    {
+      "excerpt": "Apple announced today (via MacMagazine) that it will report its Q3 2026 earnings on Thursday, July 30.",
+      "published_at": "2026-07-02",
+      "publisher": "9to5Mac",
+      "relevance": "Establishes an earnings catalyst scheduled immediately before the July 31 market-close resolution using an announcement published before the cutoff.",
+      "url": "https://9to5mac.com/2026/07/02/apple-sets-q3-2026-earnings-release-for-july-30/"
+    },
+    {
+      "excerpt": "Apple today announced financial results for its fiscal 2026 second quarter ended March 28, 2026. The Company posted quarterly revenue of $111.2 billion, up 17 percent year over year. Diluted earnings per share was $2.01, up 22 percent year over year.",
+      "published_at": "2026-04-30",
+      "publisher": "Apple Newsroom",
+      "relevance": "Supplies Apple's latest published quarterly financial results available before the cutoff as a fundamental baseline for its valuation.",
+      "url": "https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results/"
+    },
+    {
+      "excerpt": "NVIDIA today reported record revenue for the first quarter ended April 26, 2026, of $81.6 billion, up 20% from the previous quarter and up 85% from a year ago. For the quarter, GAAP and non-GAAP gross margins were 74.9% and 75.0%, respectively.",
+      "published_at": "2026-05-20",
+      "publisher": "NVIDIA Investor Relations",
+      "relevance": "Supplies the leading rival's latest published quarterly results available before the cutoff, showing the business growth underpinning Nvidia's valuation.",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-briefly-overtakes-nvidia-world-205131478.html",
+      "reason": "Contains market valuation prices: Nvidia's $4.912 trillion and Apple's $4.901 trillion market capitalizations; excluded under the market-prices rule."
+    },
+    {
+      "url": "https://b975.com/2026/07/17/chipmakers-and-other-high-flying-stocks-slide-as-ai-trade-wobbles/",
+      "reason": "Contains market price performance: semiconductor index daily and weekly declines and its percentage drop from an all-time high; excluded under the market-prices rule."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-07-17, inclusive of reporting about that day's market close; target resolution: 2026-07-31 market close. Selected six items with explicit publication dates on or before the cutoff. Excluded later-dated reporting, undated live rankings, prediction-market and betting pages, and subsequent earnings results. Publication dates and excerpts were verified against web_search results and indexed article text. Full-page verification was limited: web_fetch failed because multiple providers were registered, and the requested agent-reach web read fallback returned RATE_LIMITED; no further fallback attempts were made after those failures. Reuters intraday reports of Apple taking the lead were distinguished from the cutoff-day closing report that Nvidia retained a narrow lead. This pack contains evidence only and makes no claim about the July 31 outcome."
+}

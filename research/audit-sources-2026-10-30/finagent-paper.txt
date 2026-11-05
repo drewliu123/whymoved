@@ -1,0 +1,19 @@
+Authors:[Wentao Zhang](https://arxiv.org/search/q-fin?searchtype=author&query=Zhang,+W), [Lingxuan Zhao](https://arxiv.org/search/q-fin?searchtype=author&query=Zhao,+L), [Haochong Xia](https://arxiv.org/search/q-fin?searchtype=author&query=Xia,+H), [Shuo Sun](https://arxiv.org/search/q-fin?searchtype=author&query=Sun,+S), [Jiaze Sun](https://arxiv.org/search/q-fin?searchtype=author&query=Sun,+J), [Molei Qin](https://arxiv.org/search/q-fin?searchtype=author&query=Qin,+M), [Xinyi Li](https://arxiv.org/search/q-fin?searchtype=author&query=Li,+X), [Yuqing Zhao](https://arxiv.org/search/q-fin?searchtype=author&query=Zhao,+Y), [Yilei Zhao](https://arxiv.org/search/q-fin?searchtype=author&query=Zhao,+Y), [Xinyu Cai](https://arxiv.org/search/q-fin?searchtype=author&query=Cai,+X), [Longtao Zheng](https://arxiv.org/search/q-fin?searchtype=author&query=Zheng,+L), [Xinrun Wang](https://arxiv.org/search/q-fin?searchtype=author&query=Wang,+X), [Bo An](https://arxiv.org/search/q-fin?searchtype=author&query=An,+B)
+
+[View PDF](https://arxiv.org/pdf/2402.18485)[HTML (experimental)](https://arxiv.org/html/2402.18485v3)
+
+> Abstract:Financial trading is a crucial component of the markets, informed by a multimodal information landscape encompassing news, prices, and Kline charts, and encompasses diverse tasks such as quantitative trading and high-frequency trading with various assets. While advanced AI techniques like deep learning and reinforcement learning are extensively utilized in finance, their application in financial trading tasks often faces challenges due to inadequate handling of multimodal data and limited generalizability across various tasks. To address these challenges, we present FinAgent, a multimodal foundational agent with tool augmentation for financial trading. FinAgent's market intelligence module processes a diverse range of data-numerical, textual, and visual-to accurately analyze the financial market. Its unique dual-level reflection module not only enables rapid adaptation to market dynamics but also incorporates a diversified memory retrieval system, enhancing the agent's ability to learn from historical data and improve decision-making processes. The agent's emphasis on reasoning for actions fosters trust in its financial decisions. Moreover, FinAgent integrates established trading strategies and expert insights, ensuring that its trading approaches are both data-driven and rooted in sound financial principles. With comprehensive experiments on 6 financial datasets, including stocks and Crypto, FinAgent significantly outperforms 9 state-of-the-art baselines in terms of 6 financial metrics with over 36% average improvement on profit. Specifically, a 92.27% return (a 84.39% relative improvement) is achieved on one dataset. Notably, FinAgent is the first advanced multimodal foundation agent designed for financial trading tasks.
+
+Subjects:Trading and Market Microstructure (q-fin.TR); Artificial Intelligence (cs.AI)
+Cite as:[arXiv:2402.18485](https://arxiv.org/abs/2402.18485) [q-fin.TR]
+(or [arXiv:2402.18485v3](https://arxiv.org/abs/2402.18485v3) [q-fin.TR] for this version)
+[https://doi.org/10.48550/arXiv.2402.18485](https://doi.org/10.48550/arXiv.2402.18485)
+
+arXiv-issued DOI via DataCite
+
+## Submission history
+
+From: Wentao Zhang [[view email](https://arxiv.org/show-email/0b555a79/2402.18485)]   
+**[[v1]](https://arxiv.org/abs/2402.18485v1)** Wed, 28 Feb 2024 17:06:54 UTC (14,008 KB)  
+**[[v2]](https://arxiv.org/abs/2402.18485v2)** Thu, 29 Feb 2024 12:49:03 UTC (14,008 KB)  
+**[v3]** Fri, 28 Jun 2024 10:35:56 UTC (14,379 KB)

@@ -1,0 +1,64 @@
+{
+  "qid": "Q058",
+  "as_of": "2026-08-18",
+  "kept": [
+    {
+      "excerpt": "Fars News Agency reported that the Islamic Revolutionary Guard Corps (IRGC) detained the UAE-owned tanker for refusing to use its Northern route through the Strait and not paying service fees. Fars said tankers seeking safe passage through the Strait of Hormuz “must follow a route designated by Iran, pay service fees and obtain Iranian authorization.” Reports of the seizure have not been independently verified, however, AIS tracking data shows a Liberian-flagged tanker Amara stopping south of Qeshm Island on an inbound crossing of the Strait and proceeding to sail slow in circles for over the next 12 hours.",
+      "published_at": "2026-08-18",
+      "publisher": "Seatrade Maritime News",
+      "relevance": "This cutoff-day report describes alleged enforcement of a general payment requirement for tankers, while explicitly identifying the lack of independent verification.",
+      "url": "https://www.seatrade-maritime.com/security/iran-claims-to-have-detained-uae-tanker-in-hormuz"
+    },
+    {
+      "excerpt": "Speaker of the Iranian Parliament Mohammad Baqer Qalibaf said the Strait of Hormuz will remain closed until the US fulfills its commitments under the Islamabad memorandum of understanding, including lifting the blockade and sanctions on Iran’s oil exports.",
+      "published_at": "2026-08-18",
+      "publisher": "Tasnim News Agency",
+      "relevance": "The parliamentary speaker’s statement establishes an official position on reopening conditions as of the cutoff, which affects implementation of any broadly applicable passage-fee arrangement.",
+      "url": "https://www.tasnimnews.ir/en/news/2026/08/18/3674000/qalibaf-hormuz-won-t-reopen-until-us-meets-commitments"
+    },
+    {
+      "excerpt": "He does not elaborate, but details that have previously emerged suggest the deal would reopen the strait with ships entering through a route close to Iran and exiting through a route close to Oman. Ships would transit without paying fees or tolls during the interim period.",
+      "published_at": "2026-08-17",
+      "publisher": "Associated Press via The Times of Israel",
+      "relevance": "This report immediately before the cutoff describes the proposed routing arrangement and its interim fee exemption, helping distinguish an emerging agreement from operational fee collection.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/as-60-day-mou-deadline-expires-iran-says-it-has-reached-deal-with-oman-on-hormuz/"
+    },
+    {
+      "excerpt": "A proposed deal between Iran and Oman that would give Tehran control over ships entering the Gulf through the Strait of Hormuz is not easily workable due to U.S. sanctions and restrictive insurance clauses on any payments, four industry sources said. A further complication is the introduction in late July by Lloyd's Market Association of a clause for use by war underwriters that terminates insurance cover for a vessel if it has paid a transit fee, toll or other charge for passage through the Strait of Hormuz.",
+      "published_at": "2026-08-06",
+      "publisher": "Reuters via Kitco News",
+      "relevance": "Industry reporting identifies sanctions and insurance obstacles that could prevent a proposed fee policy from becoming a generally operating collection system.",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-08-06/proposed-hormuz-passage-deal-not-feasible-shipping-industry-sources"
+    },
+    {
+      "excerpt": "Oman has presented Iran with a plan backed by Gulf states to manage the Strait of Hormuz, including collecting voluntary fees for using it, a Gulf source and a Western diplomat told Reuters on Tuesday.",
+      "published_at": "2026-07-28",
+      "publisher": "Reuters via Investing.com",
+      "relevance": "The proposal’s voluntary-fee language makes practical enforcement and the ability to transit without payment central evidence questions under the supplied resolution rules.",
+      "url": "https://www.investing.com/news/world-news/gulf-states-back-plan-to-let-iran-collect-voluntary-fees-to-use-hormuz-4816183"
+    },
+    {
+      "excerpt": "Iran’s Strait of Hormuz body said on Friday it would waive planned fees to use the strait during a 60-day negotiation period under the memorandum of understanding signed with the United States this week. Ships seeking passage through the strait while the interim agreement is in force must submit transit requests at least 48 hours before arrival, Iran’s Persian Gulf Strait Authority (PGSA) said in a notice.",
+      "published_at": "2026-06-19",
+      "publisher": "Reuters via Business Recorder",
+      "relevance": "The authority’s announced waiver and transit-request procedure establish the policy baseline for assessing whether mandatory payments subsequently began before the deadline.",
+      "url": "https://www.brecorder.com/news/amp/40426374"
+    },
+    {
+      "excerpt": "Iran has implemented a policy which requires vessels transiting through the Strait of Hormuz to submit information, undergo assessment, and pay transit fees to Iranian authorities.",
+      "published_at": "2026-06-08",
+      "publisher": "Council of the European Union / EUR-Lex",
+      "relevance": "This dated official EU legal act characterizes Iranian transit payments as a required policy, providing authoritative evidence relevant to general applicability and mandatory passage conditions.",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601225"
+    },
+    {
+      "excerpt": "Iran has collected its first revenue from tolls imposed on ships transiting the Strait of Hormuz, one of the world’s most important routes for global energy supplies, Parliament Deputy Speaker Hamidreza Haji Babaei said Thursday. “First revenues from transit fees in the Strait of Hormuz have been deposited into the Central Bank account,” he said in comments carried by the semi-official Tasnim News Agency. The deputy speaker and lawmaker, however, did not give details about the number of ships that had paid.",
+      "published_at": "2026-04-23",
+      "publisher": "Anadolu Agency",
+      "relevance": "This report supplies an Iranian official’s claim of actual receipt of transit-fee revenue, but leaves the breadth of collection and its relationship to market creation unresolved.",
+      "url": "https://www.aa.com.tr/en/middle-east/iran-says-it-collected-1st-revenue-from-tolls-imposed-on-ships-transiting-hormuz/3915660"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-08-18. Included only individually dated articles or official acts published on or before that date; excluded prediction-market and betting material, later-dated material, and undated sources. Publication dates and excerpts were verified from text returned by web_search. Full-page verification was attempted: web_fetch failed because multiple providers were registered, and the requested agent-reach web read fallback returned RATE_LIMITED; no further fallback reads were attempted. The pack preserves attribution and uncertainty: an official claim of revenue receipt, an EU characterization of a mandatory policy, an announced waiver, proposed arrangements, and an unverified enforcement report establish different kinds of evidence. The supplied resolution text ends mid-sentence at 'Both of the following are re', and no market-creation date was supplied, so this pack does not adjudicate whether earlier activity occurred within the qualifying market window or satisfied omitted requirements. No post-cutoff developments or eventual outcome are included."
+}

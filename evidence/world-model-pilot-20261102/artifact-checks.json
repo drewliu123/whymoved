@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "checks": [
+    "input SHA256 unchanged",
+    "JSON required fields",
+    "complete unique old claim IDs",
+    "allowed statuses",
+    "next check budget"
+  ],
+  "sizes": [
+    {
+      "id": "R1",
+      "case": "revision_stress",
+      "condition": "history",
+      "input_utf8_bytes": 3389,
+      "output_utf8_bytes": 7293
+    },
+    {
+      "id": "R2",
+      "case": "fed_gap",
+      "condition": "history",
+      "input_utf8_bytes": 6864,
+      "output_utf8_bytes": 6904
+    },
+    {
+      "id": "R3",
+      "case": "revision_stress",
+      "condition": "summary",
+      "input_utf8_bytes": 3370,
+      "output_utf8_bytes": 6476
+    },
+    {
+      "id": "R4",
+      "case": "revision_stress",
+      "condition": "state",
+      "input_utf8_bytes": 4176,
+      "output_utf8_bytes": 6683
+    },
+    {
+      "id": "R5",
+      "case": "fed_gap",
+      "condition": "summary",
+      "input_utf8_bytes": 6853,
+      "output_utf8_bytes": 5812
+    },
+    {
+      "id": "R6",
+      "case": "fed_gap",
+      "condition": "state",
+      "input_utf8_bytes": 7496,
+      "output_utf8_bytes": 6710
+    }
+  ]
+}

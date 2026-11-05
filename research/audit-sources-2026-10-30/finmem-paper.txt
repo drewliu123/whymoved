@@ -1,0 +1,16 @@
+[View PDF](https://arxiv.org/pdf/2311.13743)[HTML (experimental)](https://arxiv.org/html/2311.13743v2)
+
+> Abstract:Recent advancements in Large Language Models (LLMs) have exhibited notable efficacy in question-answering (QA) tasks across diverse domains. Their prowess in integrating extensive web knowledge has fueled interest in developing LLM-based autonomous agents. While LLMs are efficient in decoding human instructions and deriving solutions by holistically processing historical inputs, transitioning to purpose-driven agents requires a supplementary rational architecture to process multi-source information, establish reasoning chains, and prioritize critical tasks. Addressing this, we introduce \textsc{FinMem}, a novel LLM-based agent framework devised for financial decision-making. It encompasses three core modules: Profiling, to customize the agent's characteristics; Memory, with layered message processing, to aid the agent in assimilating hierarchical financial data; and Decision-making, to convert insights gained from memories into investment decisions. Notably, \textsc{FinMem}'s memory module aligns closely with the cognitive structure of human traders, offering robust interpretability and real-time tuning. Its adjustable cognitive span allows for the retention of critical information beyond human perceptual limits, thereby enhancing trading outcomes. This framework enables the agent to self-evolve its professional knowledge, react agilely to new investment cues, and continuously refine trading decisions in the volatile financial environment. We first compare \textsc{FinMem} with various algorithmic agents on a scalable real-world financial dataset, underscoring its leading trading performance in stocks. We then fine-tuned the agent's perceptual span and character setting to achieve a significantly enhanced trading performance. Collectively, \textsc{FinMem} presents a cutting-edge LLM agent framework for automated trading, boosting cumulative investment returns.
+
+Subjects:Computational Finance (q-fin.CP); Artificial Intelligence (cs.AI); Computational Engineering, Finance, and Science (cs.CE); Machine Learning (cs.LG)
+Cite as:[arXiv:2311.13743](https://arxiv.org/abs/2311.13743) [q-fin.CP]
+(or [arXiv:2311.13743v2](https://arxiv.org/abs/2311.13743v2) [q-fin.CP] for this version)
+[https://doi.org/10.48550/arXiv.2311.13743](https://doi.org/10.48550/arXiv.2311.13743)
+
+arXiv-issued DOI via DataCite
+
+## Submission history
+
+From: Yuechen Jiang [[view email](https://arxiv.org/show-email/b5022fa4/2311.13743)]   
+**[[v1]](https://arxiv.org/abs/2311.13743v1)** Thu, 23 Nov 2023 00:24:40 UTC (16,614 KB)  
+**[v2]** Sun, 3 Dec 2023 16:18:55 UTC (19,959 KB)

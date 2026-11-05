@@ -1,0 +1,64 @@
+{
+  "qid": "Q028",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "url": "https://www.marketscreener.com/news/apple-closes-in-on-nvidia-in-race-for-world-s-most-valuable-company-ce7f51dad88df420",
+      "publisher": "Reuters (via MarketScreener)",
+      "published_at": "2026-07-17",
+      "excerpt": "July 17 (Reuters) - Apple overtook Nvidia on Friday to become the world's most valuable company, reshuffling the top ranks of tech heavyweights as investors reassess the outlook for artificial intelligence. Apple was last valued at $4.88 trillion as its shares held steady, while Nvidia was roughly at $4.86 trillion, following a 3.5% decline. Nvidia became the first company in the world to surpass a $5 trillion market valuation in October.",
+      "relevance": "Shows that on the cutoff date Apple and Nvidia were essentially tied for the top two spots, and the order between them changed during the day."
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-briefly-overtakes-nvidia-world-205131478.html",
+      "publisher": "Yahoo Finance",
+      "published_at": "2026-07-17",
+      "excerpt": "Apple briefly became the world's most valuable publicly traded company once again on Friday before Nvidia reclaimed the top spot. While Nvidia ended the week with a market cap of $4.912 trillion, just a hair ahead of Apple's $4.901 trillion valuation, Friday's trading capped a blockbuster week of gains for AAPL, even as investors pummeled AI-related stocks.",
+      "relevance": "Independently confirms the close of July 17 and how small the Nvidia–Apple gap was, roughly 0.2%, which makes the second-place outcome highly sensitive to small price moves."
+    },
+    {
+      "url": "https://www.investing.com/news/economy-news/trading-day-sinking-chips-4797014",
+      "publisher": "Reuters (via Investing.com)",
+      "published_at": "2026-07-16",
+      "excerpt": "A shakeout in U.S. semiconductor stocks tanked the tech-heavy Nasdaq on Thursday as AI jitters spread globally, while solid U.S. economic data helped lift the dollar and Treasury yields. Nervousness around the huge cost of the AI buildout is beginning to ripple through Wall Street, with the 'SOX' chip index down 20% in the past month.",
+      "relevance": "Describes the sector momentum pushing Nvidia's valuation down toward Apple's just before the cutoff."
+    },
+    {
+      "url": "https://www.marketscreener.com/news/us-official-says-shipments-of-h200-chips-to-china-have-begun-ce7f5eddd888f624",
+      "publisher": "Reuters (via MarketScreener)",
+      "published_at": "2026-07-14",
+      "excerpt": "WASHINGTON, July 14 (Reuters) - A top U.S. official told Congress on Tuesday that a small number of Nvidia H200 chips, one of the company's most powerful AI chips, have been shipped to China to date.",
+      "relevance": "A recent Nvidia-specific fundamental development: China sales could support its valuation."
+    },
+    {
+      "url": "https://www.axios.com/2026/05/20/nvidia-ai-intel-chips",
+      "publisher": "Axios",
+      "published_at": "2026-05-20",
+      "excerpt": "As the largest U.S. company by market capitalization (now $5.4 trillion!), Nvidia has the single biggest influence on broad market cap-weighted indexes like the S&P 500.",
+      "relevance": "Baseline for comparison: in May, Nvidia was about $5.4T and clearly #1, so by mid-July it had fallen roughly $0.5T to parity with Apple."
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.foxbusiness.com/markets/apple-briefly-overtakes-nvidia-worlds-most-valuable-company-amid-ai-investment-doubts",
+      "reason": "Relevance explicitly discusses either company ending up second on July 31, after the 2026-07-17 cutoff."
+    },
+    {
+      "url": "https://beincrypto.com/apple-overtakes-nvidia-market-cap/",
+      "reason": "Excerpt and relevance mention post-cutoff events on July 30, July 31 and August 26."
+    },
+    {
+      "url": "https://www.axios.com/2026/07/14/ai-apple-openai-stocks",
+      "reason": "Excerpt and relevance explicitly mention Apple's July 30 earnings report, after the cutoff."
+    },
+    {
+      "url": "https://www.barchart.com/story/news/2047421/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+      "reason": "Excerpt includes Q2 FY2027 forward revenue guidance, and relevance explicitly extends its valuation context into late July, after the cutoff."
+    },
+    {
+      "url": "https://www.marketscreener.com/news/apple-s-post-cook-future-hinges-on-whether-ternus-can-ignite-ai-growth-ce7f59dbd98df023",
+      "reason": "Excerpt explicitly mentions a leadership transition in September, after the cutoff."
+    }
+  ],
+  "search_notes": "I found 10 items, each with a verified publication date between 2026-05-20 and 2026-07-17. I dropped every item dated after 2026-07-17 that turned up in search, including Reuters and Axios on July 28, Apple's July 30 earnings coverage, July 31 market wraps, August reports and Reddit threads. I also left out market-cap data pages (StatMuse, financecharts, companiesmarketcap) because their publication dates can't be verified and they contain data after the cutoff. Direct page fetches failed (web_fetch provider error; the agent-reach web backends were paused). Excerpts therefore come from the article text shown in search results, and I checked dates against the bylines and timestamps shown there. Status at the cutoff: on July 17, Apple briefly passed Nvidia during the day, but at the close Nvidia was #1 at about $4.91–4.92T and Apple #2 at about $4.89–4.90T. The gap was roughly 0.2–0.6%, so the question mostly turns on whether Nvidia stays #1 (in which case it is not second) or Apple holds the top spot on July 31. No reporting from on or before the cutoff placed a third company near $4.9T. Alphabet appeared to be well behind, but I did not find a dated source for its exact market cap on July 17. Key event before resolution: Apple reports earnings on July 30, and Nvidia does not report until Aug 26. Momentum on the cutoff date: the chip selloff (SOX down about 20% in a month) and Apple trading at all-time highs."
+}

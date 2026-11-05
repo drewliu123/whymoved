@@ -1,0 +1,38 @@
+{
+ "qid": "Q149",
+ "question": "Will Trump meet with Benjamin Netanyahu in July 2026?",
+ "rules": "This market will resolve to \"Yes\" if the listed individual meets with Donald Trump between July 1 and July 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nA meeting is defined as any encounter where both the listed individual and Trump are present and interact with each other in person.\n\nThe resolution source will be a consensus of credible reporting.",
+ "as_of": "2026-07-14",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "The Times of Israel",
+   "published_at": "2026-07-03",
+   "excerpt": "Prime Minister Benjamin Netanyahu and US President Donald Trump agreed to meet in the US in the near future during a phone call today, according to a statement issued by the Prime Minister’s Office."
+  },
+  {
+   "id": "E2",
+   "publisher": "Axios",
+   "published_at": "2026-07-04",
+   "excerpt": "President Trump told Axios Saturday that Israeli Prime Minister Benjamin Netanyahu asked him for a meeting at the White House, and that it could take place as early as next week after Trump returns from the NATO summit. An Israeli official said next week might be too soon for the visit to take place because of Trump's trip to Turkey, where the NATO summit will take place on July 7-8."
+  },
+  {
+   "id": "E3",
+   "publisher": "Prime Minister's Office, Government of Israel",
+   "published_at": "2026-07-09",
+   "excerpt": "As part of the continuous contact between Prime Minister Benjamin Netanyahu and US President Donald Trump, an additional conversation took place this evening between the two, during which the continued coordination between the countries in various sectors was established. President Trump updated the Prime Minister on American moves in the Gulf."
+  },
+  {
+   "id": "E4",
+   "publisher": "Axios",
+   "published_at": "2026-07-14",
+   "excerpt": "President Trump told Israeli Prime Minister Benjamin Netanyahu during a phone call Thursday that Israel should start redeploying its forces out of Syria and urged him to do the same in Lebanon, according to U.S. and Israeli officials."
+  },
+  {
+   "id": "E5",
+   "publisher": "Reuters, via Investing.com",
+   "published_at": "2026-02-11",
+   "excerpt": "WASHINGTON, Feb 11 (Reuters) - President Donald Trump said after talks with Israeli Prime Minister Benjamin Netanyahu on Wednesday they reached no \"definitive\" agreement on how to move forward with Iran but he insisted negotiations with Tehran would continue to see if a deal can be achieved. Netanyahu’s visit, originally scheduled for February 18, was brought forward amid renewed U.S. engagement with Iran."
+  }
+ ]
+}

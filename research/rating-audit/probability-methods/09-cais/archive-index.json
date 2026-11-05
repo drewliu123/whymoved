@@ -1,0 +1,25 @@
+{
+  "url": "https://codeload.github.com/centerforaisafety/forecasting/zip/88e204a1a015061cfc4c4a871ac758c69f369bae",
+  "commit": "88e204a1a015061cfc4c4a871ac758c69f369bae",
+  "files": [
+    "backend/.gitignore",
+    "backend/src/.env.local",
+    "backend/src/Dockerfile",
+    "backend/src/README.md",
+    "backend/src/api.py",
+    "backend/src/chat_forecasting/ForecastingMultiAgents.py",
+    "backend/src/chat_forecasting/__init__.py",
+    "backend/src/chat_forecasting/caching_agent.py",
+    "backend/src/chat_forecasting/crawl_agent.py",
+    "backend/src/chat_forecasting/llm_agent.py",
+    "backend/src/chat_forecasting/logging.py",
+    "backend/src/chat_forecasting/news_domains.py",
+    "backend/src/chat_forecasting/parse_date.py",
+    "backend/src/chat_forecasting/prompts.py",
+    "backend/src/chat_forecasting/related_forecast_agent.py",
+    "backend/src/chat_forecasting/research_agent.py",
+    "backend/src/fast_api.py",
+    "backend/src/requirements.txt",
+    "backend/src/utils.py"
+  ]
+}

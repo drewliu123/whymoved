@@ -1,0 +1,44 @@
+{
+ "qid": "Q042",
+ "question": "0 ships transit Hormuz on any date by July 31?",
+ "rules": "This market will resolve to “Yes” if IMF PortWatch publishes a daily number of transit calls (“Arrivals of Ships”) for the Strait of Hormuz equal to 0 for any date between June 26 and the specified date, 2026. Otherwise, this market will resolve to “No.\"\n\nTransit calls include container, dry bulk, roll-on/roll-off, general cargo, and tanker ships. Ships not reported by IMF PortWatch will not be considered.\n\nThis market will resolve as soon as IMF PortWatch publishes a daily number of transit calls equal to 0, or once complete data has been published for the specified period without such a publication. If complete data for the specified period has not been published within 28 calendar days of the end of the specified period, this market will resolve based on data published up to that point.\n\nIn case of obvious data integrity issues (i.e., erroneous data), the market may remain open until the end of the third calendar day (ET) after the date on which such data is first released to allow for corrections. Data integrity issues refer only to clerical or other similar errors in the underlying data, and do not include cases where IMF PortWatch differs from alternative sources. Revisions t",
+ "as_of": "2026-07-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Statista",
+   "published_at": "2026-07-21",
+   "excerpt": "An average of around 25 ships per day passed through the Strait of Hormuz between late June and early July, down from around 100 at the same time one year prior. Between July 13 and July 19, the latest data available from the IMF, this had already decreased to an average of 10 per day. Between 50 and 60 percent of the vessels passing through the strait are tankers carrying oil and liquefied gas, highlighting its crucial role in global energy trade."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters via Business Recorder",
+   "published_at": "2026-07-21T10:51:40+05:00",
+   "excerpt": "A total of four commodity vessels crossed the strait on Monday, mostly on the Iranian route, down from seven the previous day, Kpler data showed. The four vessels included two tankers that exited the strait as well as two vessels that entered. There were no visible very large crude carrier (VLCC) or liquefied natural gas tankers passing through the strait on Monday."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-20T15:05:25+01:00",
+   "excerpt": "However, the latest satellite imagery from July 18 reviewed by Reuters showed just one pair of tankers involved in ship-to-ship transfers outside Hormuz off Oman's coast. Three pairs of vessels were visible on July 11. Satellite outages and limited public ship tracking data have meant that the full amount of oil exported from the Gulf is not fully known. But maritime sources said that traffic has dropped."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-16T04:21:58-04:00",
+   "excerpt": "Nine vessels crossed the strait on Wednesday, mostly on the Iranian route, down from 13 the previous day, Kpler data showed. There were no Very Large Crude Carrier or liquefied natural gas tankers visibly passing through the strait on Wednesday. On Wednesday, five empty vessels entered the Gulf, including three small oil tankers and two dry bulk carriers for grains, the data showed. The four vessels that exited the strait on Wednesday carried liquefied petroleum gas, coal, fuel oil and fertilizer."
+  },
+  {
+   "id": "E5",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-15T11:41:04-04:00",
+   "excerpt": "Shipping companies are avoiding using a U.S. military-guided transit scheme through the Strait of Hormuz after a wave of Iranian attacks on vessels sparked safety concerns, seven maritime security and shipping industry sources said. Some five ships have been attacked since July 7 - three crude supertankers, one LNG tanker and one container ship - in Omani waters that fell under the U.S. scheme, according to analysis of incidents based on data from the U.N.'s shipping agency. It was unclear if all the ships were sailing under the U.S. scheme, the sources said."
+  },
+  {
+   "id": "E6",
+   "publisher": "International Maritime Organization",
+   "published_at": "2026-07-13",
+   "excerpt": "The Council condemned the attacks on civilian commercial ships in and around the Strait of Hormuz and called for the de-escalation of tensions in the region. In a resolution adopted during the session, the Council stressed that the right of transit passage through straits used for international navigation should not be threatened, impeded, denied, hampered, impaired or suspended. The Council reaffirmed that passage through the Strait should remain free of any tolls and charges, in accordance with international law, including the IMO Convention."
+  }
+ ]
+}

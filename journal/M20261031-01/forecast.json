@@ -1,0 +1,53 @@
+{
+  "as_of": "2026-10-31T05:12:10.269507Z",
+  "forecasts": [
+    {
+      "hypothesis_id": "H1",
+      "mode": "market",
+      "question": "NVIDIA Q3 FY2027首次官方non-GAAP毛利率是否满足73%≤x<75%？",
+      "yes_means": "首次官方最精确non-GAAP毛利率73%包含至75%不包含。区间取中点；缺指标或截止前未发布材料归最低档即本题NO；后续修订不计。",
+      "window_start": "2026-10-31T05:12:10.269507Z",
+      "window_end": "2027-01-01T04:59:00Z",
+      "resolution_source": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000；按其中规则取NVIDIA Q3官方财报、演示、监管文件及必要时电话会；截止2026-12-31 23:59 ET。",
+      "market_prob": 0.82,
+      "market_source": "Polymarket CLOB YES最低卖价；2026-10-31T05:04:28.168337Z历史快照，82¢/20份；同时最高买价73¢/20.1份，显示值77.5%。本次采用YES买入侧报价约定，不含手续费，不代表客观概率或当前仍有挂单。https://clob.polymarket.com/book?token_id=12184345390140772513332883679626608175715846723917987793045546957490562215909",
+      "quote_at": "2026-10-31T05:04:28.168337Z",
+      "quote_side": "YES ask",
+      "quote_size": 20,
+      "evidence_ids": [
+        "C2",
+        "C3",
+        "C9",
+        "C10"
+      ],
+      "final_prob": 0.82,
+      "method_version": "touyan-forecast-v2",
+      "evidence_hash": "7b2a6bb02da2d6972785106ba075742c56b005e44871b8380b983fb3a8686bb9"
+    },
+    {
+      "hypothesis_id": "H2",
+      "mode": "independent",
+      "question": "截至2026-12-31 23:59 ET首次公布的NVIDIA Q3 FY2027总收入是否严格超过1089.9亿美元？",
+      "yes_means": "窗口内首次发布的Q3 FY2027官方财报总收入严格大于108.99 billion USD。等于阈值为NO；截止前未发布或未披露该指标为NO；采用首次材料最精确数值，不计后续修订。",
+      "window_start": "2026-10-31T05:12:10.269507Z",
+      "window_end": "2027-01-01T04:59:00Z",
+      "resolution_source": "NVIDIA IR该季度首次业绩新闻稿或首次监管财报总收入；11月17为计划披露日，12月31 23:59 ET为截止。https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+      "evidence_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C6"
+      ],
+      "trials": [
+        0.67,
+        0.68,
+        0.68
+      ],
+      "execution_note": "当前会话未热注册touyan:forecaster，以三个general-purpose子Agent按新版forecaster.md只读同一冻结输入执行。相同模型的独立调用不保证统计独立。已检索来源中未核实到完全匹配的可成交价格，一次补搜SSL失败，不能证明所有市场均无价格。",
+      "final_prob": 0.6767,
+      "method_version": "touyan-forecast-v2",
+      "evidence_hash": "8d283a86c6f8babc0a7c0b7464779277f99ca3cd09486671267431a64e4ff3c2"
+    }
+  ]
+}

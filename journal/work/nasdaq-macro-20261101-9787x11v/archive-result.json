@@ -1,0 +1,72 @@
+{
+  "run_id": "R20261102T030954Z-c737af1e39b2",
+  "path": "/Users/frankzhang/Desktop/投研助手/journal/runs/R20261102T030954Z-c737af1e39b2",
+  "manifest": {
+    "schema_version": 2,
+    "run_id": "R20261102T030954Z-c737af1e39b2",
+    "created_at": "2026-11-02T03:09:54.327638Z",
+    "as_of": "2026-11-02T03:07:48.761363Z",
+    "files": {
+      "report.json": "fe7cc5c003971df0e6adc5f7bd977604c1216cf31384579737c6aaf857f736d3",
+      "claims.json": "2e2826d17c7aeda0cc440a9a9e0604f7a0748aabee6f05708e18cd279fe57780",
+      "sources.json": "f02db4e7dd9384f8990c502571d43211a549d53bee74b2c96572128081f70384",
+      "plan.json": "8a34eabdf7f19ea16d4e9a4388cb3a57af46e6866a41c96bc1e306682d3c7db0",
+      "report.md": "e33650eb3976730084f924113a3d7bb52c77f642eeaf57ce522b15694a7b3abd",
+      "report.html": "186b38fbccb111633ac14948ea53bfdf508b4246fc643057b36b5c50397660bc",
+      "audit.json": "42202115c6923705c9aef1f785d7472d42667f81bd071214ce76589c1f90dd8b",
+      "diff.json": "07fad65a901f358f48fd1d7d2f44e3899c02b39b03a3775cbd31f7f23324677a"
+    },
+    "audit_role": "untrusted_metadata",
+    "parent_run": "R20261102T030116Z-228fb61e7831",
+    "parent_manifest_sha256": "815f1da96e4b3198fd029a187a7a9a2fc898515a28c4db44b5d9299c245f44cd"
+  },
+  "diff": {
+    "schema_version": 2,
+    "parent_run": "R20261102T030116Z-228fb61e7831",
+    "method": "structural_ids_and_fields",
+    "judgment": {
+      "judgment_changed": true,
+      "reason": "修正财报触发因素占据解释主体的缺口，补充战争/能源通胀/政治情景机制；不提高未经识别的因果确定性。",
+      "comparability": {
+        "status": "mixed",
+        "reason": "沿用同一10月市场窗口，研究任务从变化解释扩展机制研究；新增政策情景不是已发生事件。"
+      }
+    },
+    "sources": {
+      "added": [
+        "M-S1",
+        "M-S2",
+        "M-S3",
+        "M-S4"
+      ],
+      "removed": [],
+      "changed": []
+    },
+    "evidence": {
+      "added": [
+        "M-S1",
+        "M-S2",
+        "M-S3",
+        "M-S4"
+      ],
+      "removed": [],
+      "changed": []
+    },
+    "claims": {
+      "added": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "M9"
+      ],
+      "removed": [],
+      "changed": []
+    },
+    "comparability_issues": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+ "qid": "Q151",
+ "question": "Will WTI Crude Oil (WTI) hit (HIGH) $100 in July?",
+ "rules": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of July 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nOnly prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.\n\nThe active month changes at the start of the second trading session prior to the nearest listed contract's last trading session. At that point, the next listed contract becomes the active month (i.e., for the final three tra",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters, via Investing.com",
+   "published_at": "2026-07-17 (updated 15:44; originally published 2026-07-16)",
+   "excerpt": "The two foes expanded fighting on Friday, with the U.S. striking bridges and an airport in Iran and Tehran hitting a power and desalination plant in Kuwait. Saudi Arabia has diverted more than 70% of its normal daily crude exports to the Red Sea port of Yanbu since the beginning of the war. Shipments from Yanbu averaged 4 million barrels per day in recent weeks, up from around 973,000 bpd in the same period last year."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters, via MarketScreener",
+   "published_at": "2026-07-16 (published 04:18 EDT; updated 16:30 EDT)",
+   "excerpt": "Iran has asked Yemen's Houthis to be ready to close the Red Sea oil route if the U.S. strikes Iranian power infrastructure, three sources told Reuters. The fragile truce reached in June has collapsed, disrupting energy flows through the Strait of Hormuz, which handled about a fifth of daily global oil and LNG trade before the war began."
+  },
+  {
+   "id": "E3",
+   "publisher": "OilPrice.com — Julianne Geiger",
+   "published_at": "2026-07-15 10:28 CDT",
+   "excerpt": "US crude inventories fell 1.7 million barrels for the week ending July 10, leaving stockpiles 6% below the five-year average. The EIA's data release follows API's figures that were released a day earlier, which reported that crude oil inventories saw a small draw of 564,000 barrels in the period."
+  },
+  {
+   "id": "E4",
+   "publisher": "International Energy Agency",
+   "published_at": "2026-07-10",
+   "excerpt": "Global oil supply rebounded by a sharp 4.1 mb/d to 98.8 mb/d in June, as a resumption of flows through the Strait of Hormuz underpinned a partial recovery in Gulf production. World output was nevertheless some 9.4 mb/d below pre-war levels. Global observed oil inventories rose for the first time in four months in June, by 21 mb, as sharply higher oil on water volumes more than offset continued draws in onshore tanks."
+  },
+  {
+   "id": "E5",
+   "publisher": "U.S. Energy Information Administration",
+   "published_at": "2026-07-07",
+   "excerpt": "The U.S. Energy Information Administration published its July Short-Term Energy Outlook (STEO), increasing its expectations for global oil production. Shipping traffic through the Strait of Hormuz has increased following the June 18 memorandum of understanding (MOU) between the United States and Iran to end a months-long conflict and reopen the strait. EIA now expects worldwide crude oil production and trade flows to rebound to near pre-conflict levels by year’s end, with most previously shut in production returning online by the first quarter of 2027."
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-I",
+    "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.1.1/scripts/polymarket.py",
+    "search",
+    "Fed December",
+    "--limit",
+    "10"
+  ],
+  "started_at": "2026-10-31T17:17:04.605058+00:00",
+  "completed_at": "2026-10-31T17:17:06.554400+00:00",
+  "exit_code": 0
+}

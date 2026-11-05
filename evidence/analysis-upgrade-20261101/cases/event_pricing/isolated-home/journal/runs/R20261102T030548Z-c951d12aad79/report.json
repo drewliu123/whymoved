@@ -1,0 +1,140 @@
+{
+  "alternatives": [],
+  "analysis": {
+    "baseline": "已披露收入和利润基数",
+    "baseline_claim_ids": [
+      "C1"
+    ],
+    "conclusion": "本期收入增加。",
+    "conclusion_claim_ids": [
+      "C1"
+    ],
+    "hypotheses": [
+      {
+        "explanation": "需求兑现进入利润",
+        "id": "H1"
+      },
+      {
+        "explanation": "收入增长但成本吞噬增量",
+        "id": "H2"
+      }
+    ],
+    "market": {
+      "claim_ids": [],
+      "model_ids": [],
+      "reason": "本题只核对经营披露，不评估价格",
+      "status": "not_applicable"
+    },
+    "mechanism_chain": [
+      "收入",
+      "利润率",
+      "营业利润",
+      "现金流"
+    ],
+    "method": "reference_class_scenarios",
+    "model_reason": "本回归样本只作定性比较",
+    "model_status": "not_applicable",
+    "models": [],
+    "price_relevance": false,
+    "question_kind": "event_forecast",
+    "tests": [
+      {
+        "by": "下次财报",
+        "claim_ids": [
+          "C1"
+        ],
+        "id": "T1",
+        "interpretation": "单项披露不足以区分两种解释",
+        "next_observation": "下一期同口径交付与现金流",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "同口径利润增长"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "同口径利润下降"
+          }
+        ],
+        "status": "observed",
+        "supports": [],
+        "supports_if": "利润增长",
+        "weakens": [],
+        "weakens_if": "利润下降"
+      }
+    ],
+    "version": 1
+  },
+  "answer": {
+    "claim_ids": [
+      "C1"
+    ],
+    "text": "本期收入增加。"
+  },
+  "as_of": "2026-10-31T12:00:00Z",
+  "findings": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "increment": {
+        "baseline": "上一截点未披露",
+        "detail": "补充本期披露值",
+        "kind": "new_fact"
+      },
+      "text": "披露收入为 12。",
+      "title": "收入增加",
+      "why_it_matters": "更新收入判断。"
+    }
+  ],
+  "limitations": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "material": true,
+      "text": "只有单期数据"
+    }
+  ],
+  "question": "收入发生了什么变化？",
+  "schema_version": 2,
+  "tables": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "columns": [
+        "项目",
+        "收入"
+      ],
+      "note": "披露口径",
+      "rows": [
+        [
+          "本期",
+          12
+        ]
+      ],
+      "title": "披露值"
+    }
+  ],
+  "task": "财报观察",
+  "title": "虚构验收示范（非市场研究） · event_pricing",
+  "type": "event_pricing",
+  "update": {
+    "comparability": {
+      "reason": "同一虚构输入与口径",
+      "status": "comparable"
+    },
+    "judgment_changed": false,
+    "reason": "验收只修改下一观察，不虚构新发现"
+  },
+  "watch": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "meaning": "验证趋势是否持续",
+      "signal": "下一次披露"
+    }
+  ]
+}

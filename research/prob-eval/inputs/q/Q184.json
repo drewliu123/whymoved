@@ -1,0 +1,14 @@
+{
+ "qid": "Q184",
+ "question": "Will Gold (XAUUSD) hit (LOW) $3,900 in July?",
+ "rules": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of July 2026, any 1-minute candle for Gold (XAUUSD) has a final \"High\" or \"Low\" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf Gold (XAUUSD) does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nIn the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.\n\nThe resolution source for this market is Py",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "World Gold Council",
+   "published_at": "2026-06-16",
+   "excerpt": "84% of respondents believe that gold will hold a (moderately or significantly) higher share of total reserves five years from now, up from 76% last year. In addition, 45% of respondents thought that their own institution’s gold reserves would rise over the next year, broadly in line with last year’s finding (43%). Most respondents did not expect their gold reserves to change in the next 12 months."
+  }
+ ]
+}

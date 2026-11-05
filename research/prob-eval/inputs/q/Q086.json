@@ -1,0 +1,44 @@
+{
+ "qid": "Q086",
+ "question": "Will Ken Sim win the 2026 Vancouver mayoral election?",
+ "rules": "The 2026 Vancouver mayoral election is currently scheduled to be held on October 17, 2026.\n\nThis market will resolve according to the candidate who becomes the next mayor of Vancouver as a result of this election.\n\nTemporary, interim, or placeholder mayors appointed before the election will not be considered.\n\nIf the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThe primary resolution source for this market will be a consensus of credible reporting; however, if there is any ambiguity in the results, this market will resolve according to official information from Vancouver.",
+ "as_of": "2026-10-04",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "City of Vancouver",
+   "published_at": "2026-09-18",
+   "excerpt": "The candidate list for the 2026 Vancouver Election is now final following the random ballot draw, which was held this evening in council chambers. As in 2022 and 2018, candidates' names are listed in random order rather than alphabetically. Advance voting is scheduled for October 3, 7, 10 and 13, with Election Day voting on October 17 from 8 am to 8 pm."
+  },
+  {
+   "id": "E2",
+   "publisher": "Justason Market Intelligence",
+   "published_at": "2026-09-17",
+   "excerpt": "Fry leads with 45% support among decided voters, followed by Sim at 30%, Colleen Hardwick at 11%, Kareem Allam at 10%, and Rebecca Bligh at 5%. The online survey, co-sponsored by Fair Voting BC, was conducted August 31 to September 11, 2026, among 607 Vancouver adults, yielding 336 decided voters for mayor. Following the withdrawals of Stephanie Allen and William Azaroff, respondents who had named either as their first choice were reassigned to their stated second choice. The reported margin of error of ±4.35 percentage points applies to the full sample; margins are larger for subgroups, including decided voters."
+  },
+  {
+   "id": "E3",
+   "publisher": "CityNews Vancouver",
+   "published_at": "2026-09-13",
+   "excerpt": "Eight candidates are vying to become Vancouver's next mayor, and incumbent Ken Sim is seeking a second term with ABC Vancouver. Kareem Allam managed Sim's successful 2022 campaign and later served as his chief of staff, while Rebecca Bligh is another former ABC member running against him. Pete Fry is the Green Party candidate under the recently united progressive left. Sim is emphasizing public safety, while housing, affordability, city services and neighbourhood growth are major campaign issues."
+  },
+  {
+   "id": "E4",
+   "publisher": "CityNews Vancouver",
+   "published_at": "2026-09-08",
+   "excerpt": "OneCity's William Azaroff announced Tuesday morning that he was ending his campaign for Vancouver mayor in an effort to unite progressive voters ahead of the election. Azaroff endorsed Pete Fry and said the decision fulfilled a commitment by progressive parties to support a single candidate capable of challenging incumbent Mayor Ken Sim."
+  },
+  {
+   "id": "E5",
+   "publisher": "Research Co.",
+   "published_at": "2026-08-06",
+   "excerpt": "Among decided voters in the mayoral race, incumbent Sim is first with 30 per cent, followed by Allam and Fry with 19% each, and Hardwick with 14%. More than a quarter of likely voters in Vancouver, 26%, are undecided. Results are based on an online survey conducted from July 30 to August 1, 2026, among 401 likely voters in the City of Vancouver. The reported margin of error is ±4.9 percentage points, nineteen times out of twenty."
+  },
+  {
+   "id": "E6",
+   "publisher": "City of Vancouver",
+   "published_at": "2022-10-19",
+   "excerpt": "The Chief Election Officer declared Ken Sim elected mayor with 85,732 votes. The final number of ballots cast was 171,494, equating to a voter turnout of 36.3% out of 472,665 registered voters. Pete Fry was elected councillor with 37,270 votes."
+  }
+ ]
+}

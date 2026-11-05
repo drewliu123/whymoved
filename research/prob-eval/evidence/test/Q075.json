@@ -1,0 +1,50 @@
+{
+  "qid": "Q075",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "Wall Street extended its decline on Friday as a pullback on stocks associated with the AI boom morphed into a larger risk-off sentiment. Semiconductor stocks initially led the selloff, which broadened as the session progressed. All three indexes were on course to post weekly losses.",
+      "published_at": "2026-07-17T15:32:00-04:00",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "Documents the equity-market risk backdrop at the cutoff, including weakness in semiconductor leadership that could affect SPY during the remaining July sessions.",
+      "url": "https://www.marketscreener.com/news/wall-st-slides-as-chip-selloff-broadens-ce7f51dada8dff22"
+    },
+    {
+      "excerpt": "Overall, 10% of the companies in the S&P 500 have reported actual results for Q2 2026 to date. Of these companies, 88% have reported actual EPS above estimates, which is above the 5-year average of 78% and above the 10-year average of 76%. The blended earnings growth rate for the second quarter is 24.7%, compared with 22.5% last week and 23.2% at the end of the second quarter. During the upcoming week, 86 S&P 500 companies, including four Dow 30 components, are scheduled to report second-quarter results.",
+      "published_at": "2026-07-17",
+      "publisher": "FactSet — John Butters",
+      "relevance": "Provides a contemporaneous earnings-support measure and identifies a substantial scheduled catalyst within the remaining July window.",
+      "url": "https://insight.factset.com/sp-500-earnings-season-update-july-17-2026?hs_amp=true"
+    },
+    {
+      "excerpt": "The Consumer Price Index for All Urban Consumers decreased 0.4 percent on a seasonally adjusted basis in June after rising 0.5 percent in May. This decline in the all items index was the largest 1-month decrease since April 2020 when it fell 0.8 percent. Over the last 12 months, the all items index increased 3.5 percent before seasonal adjustment.",
+      "published_at": "2026-07-14T08:30:00-04:00",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "Supplies the latest available official consumer-inflation release, relevant to interest-rate expectations and equity valuations before July ends.",
+      "url": "https://www.bls.gov/news.release/archives/cpi_07142026.htm"
+    },
+    {
+      "excerpt": "This report was prepared at the Federal Reserve Bank of Chicago based on information collected on or before July 6, 2026. Economic activity increased at a slight to moderate pace in eleven of twelve Federal Reserve Districts in late May and June, while one District reported no change. Consumer spending edged up as higher prices, particularly for fuel, dampened sales in other categories. Several Districts noted declines in spending on discretionary items or trading down to more affordable varieties.",
+      "published_at": "2026-07-15",
+      "publisher": "Federal Reserve Bank of Minneapolis — Federal Reserve Beige Book national summary",
+      "relevance": "Provides official contemporaneous evidence about growth and consumer demand underlying the earnings and policy outlook for SPY constituents.",
+      "url": "https://www.minneapolisfed.org/beige-book-reports/2026/2026-07-su"
+    },
+    {
+      "excerpt": "A few Federal Reserve officials in their most recent policy meeting said there was a case for raising interest rates, though they ultimately supported the decision to leave rates on hold. Minutes of the Federal Open Market Committee’s June 16–17 meeting released Wednesday reflected growing concern among policymakers over inflation just as worries over the labor market slightly receded.",
+      "published_at": "2026-07-08T18:11:00Z",
+      "publisher": "Bloomberg News — Enda Curran",
+      "relevance": "Establishes the policy-tightening risk known before the cutoff that could influence equity valuations during the rest of July.",
+      "url": "https://news.bloombergtax.com/daily-tax-report-international/fed-minutes-show-a-few-officials-saw-case-for-june-hike-1"
+    },
+    {
+      "excerpt": "U.S. equity funds recorded outflows in the week through July 15, as a selloff in chip stocks and rising U.S.-Iran tensions outweighed strong corporate earnings and cooler inflation readings. U.S. money market funds, meanwhile, saw $68.03 billion in outflows, the largest weekly withdrawal since April 15.",
+      "published_at": "2026-07-17T12:59:00Z",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "Adds a dated fund-flow indicator of investor positioning and demand for U.S. equities immediately before the cutoff.",
+      "url": "https://sa.marketscreener.com/news/us-equity-funds-suffer-outflows-as-chip-stocks-slide-ce7f51dad88af020"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-17, inclusive. Publication dates were verified from dated release headers, bylines, or article publication/update timestamps exposed in web_search results; the July 17 Reuters market report was published at 14:35 EDT and updated at 15:32 EDT that same day. Excerpts are factual source passages or close factual transcriptions. Only article-body material available by the cutoff was retained; later reporting, live quote widgets, undated historical-price pages, prediction-market pages, odds, and market-price quotations were excluded. web_fetch failed because multiple fetch providers were registered; the requested agent-reach web-read fallback reported an existing rate limit, so verification relied on indexed source text obtained through targeted web_search queries. No Pyth historical 1-minute candle series was verified, and these items do not establish whether the qualifying SPY threshold had already been reached by the cutoff or resolve the market outcome."
+}

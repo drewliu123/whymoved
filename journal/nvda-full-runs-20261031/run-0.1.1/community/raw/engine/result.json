@@ -1,0 +1,27 @@
+{
+  "phase": "engine",
+  "command": "/Users/frankzhang/.local/bin/python3.12 -I -B /Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py 'NVIDIA NVDA 英伟达' --emit=compact --save-dir= --quick --no-browser-cookies --no-verify-freshness --as-of=2026-10-31 --days=30 --plan '/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/plan.json' --dedicated-subreddits=NVDA --subreddits=stocks,investing,wallstreetbets,SecurityAnalysis --search reddit,hackernews",
+  "environment_overrides": {
+    "HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/home",
+    "XDG_CONFIG_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/config",
+    "XDG_CACHE_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/cache",
+    "XDG_DATA_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/data",
+    "TMPDIR": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/tmp",
+    "LAST30DAYS_CONFIG_DIR": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/config",
+    "LAST30DAYS_MEMORY_DIR": "",
+    "LAST30DAYS_LIBRARY_CONTEXT": "off",
+    "LAST30DAYS_NATIVE_SEARCH": "1",
+    "LAST30DAYS_TRUST_PROJECT_CONFIG": "0",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "LAST30DAYS_REPORT_CACHE_TTL_SECONDS": "0"
+  },
+  "credential_config_read_only": "/Users/frankzhang/.config/last30days/.env",
+  "timeout_seconds": 165,
+  "started_at": "2026-10-31T12:23:27Z",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "timed_out": false,
+  "elapsed_seconds": 85.694,
+  "stdout": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/raw/engine/stdout.txt",
+  "stderr": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/raw/engine/stderr.txt"
+}

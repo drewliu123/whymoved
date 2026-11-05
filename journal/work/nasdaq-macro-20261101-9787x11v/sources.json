@@ -1,0 +1,965 @@
+{
+  "as_of": "2026-11-02T03:07:48.761363Z",
+  "candidates": [
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "evidence_kind": "document",
+      "id": "F-GOOG-Q326-CASH",
+      "locator": "Quarter Ended September 30, 2026; cash flow and free cash flow tables; USD millions. Semicolons join separate verbatim table captions/values.",
+      "origin_basis": "Direct issuer release",
+      "origin_id": "alphabet-q3-2026-release",
+      "published_at": "2026-10-28",
+      "publisher": "Alphabet / SEC",
+      "quote": "Net cash provided by operating activities — 42,290; Purchases of property and equipment — (51,355); Free cash flow — (9,065)",
+      "retrieval_note": "WebFetch successfully read content during 2026-11-02T02:52:42Z–02:55:26Z; retrieved_at is packaging timestamp, exact tool HTTP receipt timestamp unavailable. Published date has no verified time zone/time; do not invent timestamp.",
+      "retrieved_at": "2026-11-02T02:56:21.766800Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核查财报与AI投资回报归因",
+        "reason": "季度FCF为负，不能与Amazon TTM直接比较",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "data_note": "Additional values extracted by WebFetch from official tables, not additional verbatim quotations. Adjusted EPS absent from release.",
+      "evidence_kind": "document",
+      "extracted_data": {
+        "cloud_revenue_usd_million": 30709,
+        "gaap_diluted_eps_usd": 2.12,
+        "google_search_other_revenue_usd_million": 63350,
+        "revenue_usd_million": 127577,
+        "search_yoy_growth_pct": 12
+      },
+      "id": "F-GOOG-Q326-BUSINESS",
+      "locator": "CEO remarks; Q3 2026 consolidated and segment tables",
+      "origin_basis": "Direct issuer release",
+      "origin_id": "alphabet-q3-2026-release",
+      "published_at": "2026-10-28",
+      "publisher": "Alphabet / SEC",
+      "quote": "Google Cloud delivered record growth as revenues increased 103% to $30.7 billion",
+      "retrieval_note": "WebFetch successfully read content during 2026-11-02T02:52:42Z–02:55:26Z; retrieved_at is packaging timestamp, exact tool HTTP receipt timestamp unavailable. Published date has no verified time zone/time; do not invent timestamp.",
+      "retrieved_at": "2026-11-02T02:56:21.766800Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核查财报与AI投资回报归因",
+        "reason": "Cloud增长反证需求整体崩塌；广告变现仍可能承压",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "data_note": "Values extracted/paraphrased by WebFetch, not represented as verbatim quotation; PDF redirected to issuer CDN but text could not be decoded; HTML release succeeded.",
+      "evidence_kind": "document",
+      "extracted_data": {
+        "aws_q3_revenue_usd_billion": 46.0,
+        "aws_q3_yoy_growth_pct": 39.3,
+        "q3_diluted_eps_usd": 1.89,
+        "q3_revenue_usd_billion": 201.9,
+        "q4_operating_income_guidance_usd_billion": [
+          28.5,
+          33.5
+        ],
+        "q4_revenue_guidance_usd_billion": [
+          240,
+          247
+        ],
+        "quarter_ended": "2026-09-30",
+        "ttm_fcf_prior_year_usd_billion": 14.8,
+        "ttm_fcf_usd_billion": -42.4,
+        "ttm_ocf_usd_billion": 168.3,
+        "ttm_property_equipment_net_usd_billion": 210.657,
+        "ttm_property_equipment_purchases_usd_billion": 215.192
+      },
+      "id": "F-AMZN-Q326-CAPEX",
+      "locator": "2026 capital spending outlook; other extracted values from Q3 results and TTM cash-flow reconciliation",
+      "origin_basis": "Direct issuer release",
+      "origin_id": "amazon-q3-2026-release",
+      "published_at": "2026-10-29",
+      "publisher": "Amazon IR",
+      "quote": "We continue to expect 2026 cash capital expenditures to be approximately $220 billion. Table: Free cash flow (TTM), Q3 2026: (42,357) million; AWS net sales: 45,984 million. Table values are joined extracts.",
+      "retrieval_note": "WebFetch successfully read content during 2026-11-02T02:52:42Z–02:55:26Z; retrieved_at is packaging timestamp, exact tool HTTP receipt timestamp unavailable. Published date has no verified time zone/time; do not invent timestamp.",
+      "retrieved_at": "2026-11-02T02:56:21.766800Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核查财报与AI投资回报归因",
+        "reason": "官方资本开支与TTM现金流压力支持投资回收担忧",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000188/q326earningsrelease.htm",
+      "evidence_kind": "document",
+      "extracted_data": {
+        "adjusted_fcf_usd_million": 1639,
+        "gaap_eps_usd": 0.6,
+        "gross_capex_usd_million": 4219,
+        "non_gaap_eps_usd": 0.52,
+        "q3_revenue_usd_billion": 16.5,
+        "q4_non_gaap_eps_guidance_usd": 0.25,
+        "q4_revenue_guidance_usd_billion": [
+          15,
+          16
+        ]
+      },
+      "id": "F-INTC-Q326-CASH",
+      "locator": "Business highlights; non-GAAP adjusted FCF reconciliation, Three Months Ended Sep 26, 2026, USD millions",
+      "origin_basis": "Direct issuer release",
+      "origin_id": "intel-q3-2026-release",
+      "published_at": "2026-10-29",
+      "publisher": "Intel IR / SEC filing",
+      "quote": "In the third quarter, the company generated $5.1 billion in cash from operations.",
+      "raw_archive": "downloads/intel/text.txt",
+      "retrieval_note": "Direct urllib GET success and exact UTC request/receipt in downloads/intel/request.json; initial WebFetch also succeeded.",
+      "retrieved_at": "2026-11-02T02:56:21.766800Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核查财报与AI投资回报归因",
+        "reason": "Intel当季经营现金流及调整后FCF为正，不能写成当季烧钱",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000188/q326earningsrelease.htm"
+    },
+    {
+      "id": "M-S1",
+      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "canonical_url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "publisher": "Bureau of Labor Statistics",
+      "tier": "T0",
+      "published_at": "2026-10-14",
+      "retrieved_at": "2026-11-02T03:07:48.761363Z",
+      "retrieval_note": "Actual packaging time bounds WebFetch capture; exact HTTP receipt not exposed. Saved extract is not rawHTML.",
+      "quote": "all items index increased 3.7 percent",
+      "locator": "September2026 CPI release; headline/core and energy summary tables",
+      "extract": "Headline month+0.6%,year+3.7%;core month+0.3%,year+2.6%;energy month+5.2%,year+20.4%;gasoline month+9.1%,year+34.2%. Monthly rates seasonally adjusted, yearly unadjusted.",
+      "origin_id": "m-s1",
+      "origin_basis": "Original statistical release or distinct Reuters dated reporting, syndication not independent publisher.",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "priority": "decisive",
+        "purpose": "Explain inflation/war/election transmission and distinguish observed from contingent",
+        "reason": "Adds background mechanisms missing from parent; scenarios stay conditional."
+      }
+    },
+    {
+      "id": "M-S2",
+      "url": "https://www.investing.com/news/economy-news/wall-st-futures-slip-as-yields-and-oil-rebound-fed-minutes-in-focus-4936151",
+      "canonical_url": "https://www.investing.com/news/economy-news/wall-st-futures-slip-as-yields-and-oil-rebound-fed-minutes-in-focus-4936151",
+      "publisher": "Reuters via Investing.com",
+      "tier": "T2",
+      "published_at": "2026-10-07",
+      "retrieved_at": "2026-11-02T03:07:48.761363Z",
+      "retrieval_note": "Actual packaging time bounds WebFetch capture; exact HTTP receipt not exposed. Saved extract is not rawHTML.",
+      "quote": "Iran war-related supply concerns",
+      "locator": "October7 body, oil/Treasury/equity discussion",
+      "extract": "Nasdaq-0.22% to27538.69; longer yields elevated, no exact10Y quote. Brent priorTuesday above100;Wednesday crude reversed down afterIEA reserve-release acceleration. War/oil/inflation/policy linkage is Reuters attribution, not measured causal contribution.",
+      "origin_id": "m-s2",
+      "origin_basis": "Original statistical release or distinct Reuters dated reporting, syndication not independent publisher.",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "priority": "decisive",
+        "purpose": "Explain inflation/war/election transmission and distinguish observed from contingent",
+        "reason": "Adds background mechanisms missing from parent; scenarios stay conditional."
+      }
+    },
+    {
+      "id": "M-S3",
+      "url": "https://ca.marketscreener.com/news/oil-prices-fall-as-peace-hopes-offset-fears-of-growing-middle-east-conflict-ce785cd3da8cf226",
+      "canonical_url": "https://ca.marketscreener.com/news/oil-prices-fall-as-peace-hopes-offset-fears-of-growing-middle-east-conflict-ce785cd3da8cf226",
+      "publisher": "Reuters via MarketScreener",
+      "tier": "T2",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T03:07:48.761363Z",
+      "retrieval_note": "Actual packaging time bounds WebFetch capture; exact HTTP receipt not exposed. Saved extract is not rawHTML.",
+      "quote": "an escalating regional conflict",
+      "locator": "DatedOctober29 body; settlements, diplomacy and conditional escalation",
+      "extract": "Brent114.88,WTI102 settlement. Existing war/regional fighting; negotiations but no agreed ceasefire reported. IRGC tanker/mines claim unverified. No confirmed full Hormuz closure. Possible furtherUS strike afterNov3 remains prospective.",
+      "origin_id": "m-s3",
+      "origin_basis": "Original statistical release or distinct Reuters dated reporting, syndication not independent publisher.",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "priority": "decisive",
+        "purpose": "Explain inflation/war/election transmission and distinguish observed from contingent",
+        "reason": "Adds background mechanisms missing from parent; scenarios stay conditional."
+      }
+    },
+    {
+      "id": "M-S4",
+      "url": "https://uk.marketscreener.com/news/us-fiscal-deterioration-main-headache-for-investors-as-midterms-loom-ce785fdbdb80f721",
+      "canonical_url": "https://uk.marketscreener.com/news/us-fiscal-deterioration-main-headache-for-investors-as-midterms-loom-ce785fdbdb80f721",
+      "publisher": "Reuters via MarketScreener",
+      "tier": "T2",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-11-02T03:07:48.761363Z",
+      "retrieval_note": "Actual packaging time bounds WebFetch capture; exact HTTP receipt not exposed. Saved extract is not rawHTML.",
+      "quote": "US fiscal deterioration main headache for investors as midterms loom",
+      "locator": "PublishedOctober30 10:09GMT updated10:17GMT; named investor scenario discussion",
+      "extract": "Analysts disagree: unifiedRepublican control could sustain spending/yield pressure;Democraticcontrol might restrain spending;Pimco sees deficit growth possible eitherway. Polls/Polymarket/Kalshi referenced without sample/method/historicalprobabilitytimestamps. No verified marketrepricing from election. AppropriationsDec11,borrowinglimit late2027uncertain.",
+      "origin_id": "m-s4",
+      "origin_basis": "Original statistical release or distinct Reuters dated reporting, syndication not independent publisher.",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "priority": "decisive",
+        "purpose": "Explain inflation/war/election transmission and distinguish observed from contingent",
+        "reason": "Adds background mechanisms missing from parent; scenarios stay conditional."
+      }
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
+      "evidence_kind": "document",
+      "extract": "Nasdaq Composite 25,437.00, -747.73 (-2.86%); S&P 7,580.07 (-1.82%); Dow 51,770.31 (-1.09%); SOX -7.2%. Nasdaq 7.8% below Oct6 record closing level. SOX October decline exceeds15%. Intel -28.6%, Nvidia -4.2%, AMD -10.9%, Dell -10.8%, HP -9.6%. Interpretation: AI cash burn fears. No exact Composite monthly return in body.",
+      "id": "S1",
+      "locator": "Reuters article body: close and earnings discussion",
+      "origin_basis": "Byline/issuer and dated article; syndicated Reuters stories are not independent news organizations.",
+      "origin_id": "reuters-oct30-2026-wallstreet-close",
+      "published_at": "2026-10-30",
+      "publisher": "Reuters via Investing.com",
+      "quote": "The tech rout was sparked by disappointing quarterly results from Intel and Amazon",
+      "retrieval_note": "Packaging timestamp, not exact HTTP receipt; WebFetch read during this research session. See saved extracts.",
+      "retrieved_at": "2026-11-02T02:59:00.848830Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "Compare close, policy background and competing explanations",
+        "reason": "Body read; numerical extracts retained as attributed reporting.",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "evidence_kind": "document",
+      "extract": "Holds3.75–4.00% by10–2; Cook and Hammack prefer+25bp. Economic activity is expanding at a strong pace; resilient demand and business investment. Official language indicates inflation concern, not an announced rate cut.",
+      "id": "S2",
+      "locator": "FOMC statement October28, released2pm EDT; economic assessment and voting paragraphs",
+      "origin_basis": "Byline/issuer and dated article; syndicated Reuters stories are not independent news organizations.",
+      "origin_id": "main-S2",
+      "published_at": "2026-10-28",
+      "publisher": "Federal Reserve",
+      "quote": "Inflation remains elevated.",
+      "retrieval_note": "Packaging timestamp, not exact HTTP receipt; WebFetch read during this research session. See saved extracts.",
+      "retrieved_at": "2026-11-02T02:59:00.848830Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "Compare close, policy background and competing explanations",
+        "reason": "Body read; numerical extracts retained as attributed reporting.",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.investing.com/news/economy-news/fomc-holds-rates-steady-markets-mostly-follow-suit-4980441",
+      "evidence_kind": "document",
+      "extract": "Nasdaq and S&P about+0.2%; 10Y+5bp to5.042%;2Y-3.8bp to4.700%;30Y+6bp to5.367%. Market commentary calls hold expected, but no pre-event timestamped survey/futures snapshot, sample or method. Publication2:29pm updated3:42pm timezone unstated.",
+      "id": "S3",
+      "locator": "Tom Graff of Facet commentary; article body market reaction after press conference began",
+      "origin_basis": "Byline/issuer and dated article; syndicated Reuters stories are not independent news organizations.",
+      "origin_id": "main-S3",
+      "published_at": "2026-10-28",
+      "publisher": "Reuters via Investing.com",
+      "quote": "As expected",
+      "retrieval_note": "Packaging timestamp, not exact HTTP receipt; WebFetch read during this research session. See saved extracts.",
+      "retrieved_at": "2026-11-02T02:59:00.848830Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "Compare close, policy background and competing explanations",
+        "reason": "Body read; numerical extracts retained as attributed reporting.",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://www.investing.com/news/economy-news/fomc-holds-rates-steady-markets-mostly-follow-suit-4980441"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.marketscreener.com/news/stocks-slump-bonds-leap-as-ai-giants-spending-spooks-investors-ce785fdad08af024",
+      "evidence_kind": "document",
+      "extract": "Nasdaq25,437.00,-747.73,-2.86%;10Y yield-5.8bp to4.931%;30Y-1.97bp to5.3093%;2Y-6.64bp to4.59%. Treasury observations not individually timestamped; no synchronous intraday causal regression. Same wire publisher asS1, not independent confirmation.",
+      "id": "S4",
+      "locator": "Article body Treasury market paragraph; updatedOct30 5:34pm EDT",
+      "origin_basis": "Byline/issuer and dated article; syndicated Reuters stories are not independent news organizations.",
+      "origin_id": "main-S4",
+      "published_at": "2026-10-30",
+      "publisher": "Reuters via MarketScreener",
+      "quote": "fell 5.8 basis points to 4.931%",
+      "retrieval_note": "Packaging timestamp, not exact HTTP receipt; WebFetch read during this research session. See saved extracts.",
+      "retrieved_at": "2026-11-02T02:59:00.848830Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "Compare close, policy background and competing explanations",
+        "reason": "Body read; numerical extracts retained as attributed reporting.",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://www.marketscreener.com/news/stocks-slump-bonds-leap-as-ai-giants-spending-spooks-investors-ce785fdad08af024"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html",
+      "evidence_kind": "document",
+      "extract": "Main article Nasdaq daily-2.8%;month-5.2%;S&Pmonth-1.2%. Closing update monthly-5.3%, conflicting within same page. Use approximate5% if needed, no false precision. No numerical closing level in body.",
+      "id": "S5",
+      "locator": "Main article updated2:12pm PDT;8:09pmUTC closing update",
+      "origin_basis": "Byline/issuer and dated article; syndicated Reuters stories are not independent news organizations.",
+      "origin_id": "main-S5",
+      "published_at": "2026-10-30",
+      "publisher": "Yahoo Finance",
+      "quote": "tumbled 2.8%",
+      "retrieval_note": "Packaging timestamp, not exact HTTP receipt; WebFetch read during this research session. See saved extracts.",
+      "retrieved_at": "2026-11-02T02:59:00.848830Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "Compare close, policy background and competing explanations",
+        "reason": "Body read; numerical extracts retained as attributed reporting.",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html"
+    },
+    {
+      "access_status": "failed",
+      "canonical_url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2",
+      "evidence_kind": "document",
+      "extract": "Search snippet supports daily747.73/25,437 but inaccessible body;unselected.",
+      "id": "S7",
+      "locator": "Search results only;WebFetchunable to fetch",
+      "origin_basis": "Byline/issuer and dated article; syndicated Reuters stories are not independent news organizations.",
+      "origin_id": "main-S7",
+      "published_at": "2026-10-30",
+      "publisher": "Associated Press",
+      "quote": "",
+      "retrieval_note": "Packaging timestamp, not exact HTTP receipt; WebFetch read during this research session. See saved extracts.",
+      "retrieved_at": "2026-11-02T02:59:00.848830Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "Compare close, policy background and competing explanations",
+        "reason": "Incomplete body or upstream provenance; not used for a precise price claim.",
+        "relevance": "direct",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2"
+    },
+    {
+      "access_status": "snippet",
+      "canonical_url": "https://www.kiplinger.com/investing/stocks/nasdaq-falls-another-747-points-as-intel-is-way-outside-stock-market-today",
+      "evidence_kind": "document",
+      "extract": "Search result weekly-2% not verified in full text;unselected.",
+      "id": "S8",
+      "locator": "Headline only;body not retrieved",
+      "origin_basis": "Byline/issuer and dated article; syndicated Reuters stories are not independent news organizations.",
+      "origin_id": "main-S8",
+      "published_at": "2026-10-30",
+      "publisher": "Kiplinger",
+      "quote": "Nasdaq Falls Another 747 Points",
+      "retrieval_note": "Packaging timestamp, not exact HTTP receipt; WebFetch read during this research session. See saved extracts.",
+      "retrieved_at": "2026-11-02T02:59:00.848830Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "Compare close, policy background and competing explanations",
+        "reason": "Incomplete body or upstream provenance; not used for a precise price claim.",
+        "relevance": "direct",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://www.kiplinger.com/investing/stocks/nasdaq-falls-another-747-points-as-intel-is-way-outside-stock-market-today"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
+      "evidence_kind": "opinion",
+      "extracted_context": "WebFetch paraphrase: Oliver Pursche said investors were reassessing whether/how soon AI investment produces returns. Article says 82% of 299 S&P 500 reporters beat consensus, LSEG Q3 aggregate earnings growth estimate 31.6%. This is NOT Nasdaq-specific and survey method/sample formation absent. No quantified capex/FCF figures in this closing report.",
+      "id": "F-REUTERS-1030-ATTRIBUTION",
+      "locator": "Headline; by Stephen Culp and Purvi Agarwal. Published Oct 30 04:47 AM; updated 08:42 PM; page timezone unspecified. Named commentary Oliver Pursche, Wealthspire Advisors.",
+      "origin_basis": "Reuters original reporting; Investing.com syndication",
+      "origin_id": "reuters-oct30-2026-wallstreet-close",
+      "published_at": "2026-10-30",
+      "publisher": "Reuters / Investing.com",
+      "quote": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff",
+      "retrieval_note": "WebFetch successfully read content during 2026-11-02T02:52:42Z–02:55:26Z; retrieved_at is packaging timestamp, exact tool HTTP receipt timestamp unavailable. Published date has no verified time zone/time; do not invent timestamp.",
+      "retrieved_at": "2026-11-02T02:56:21.766800Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "核查财报与AI投资回报归因",
+        "reason": "Main S1 retains same Reuters story; not additional corroboration.",
+        "relevance": "direct",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.investing.com/news/stock-market-news/alphabets-heavy-cloud-spending-drives-biggerthanexpected-cash-burn-4980612",
+      "evidence_kind": "opinion",
+      "extracted_context": {
+        "2026_capex_outlook_usd_billion": [
+          195,
+          205
+        ],
+        "LSEG_fcf_expectation": "near zero",
+        "LSEG_revenue_expectation_usd_billion": 128.2,
+        "advertising_expectation_usd_billion": 83.4,
+        "advertising_revenue_usd_billion": 82,
+        "eps_expectation_usd": 3.02,
+        "eps_provider": "not explicitly identified",
+        "q3_fcf_usd_billion": -9.1,
+        "reported_adjusted_eps_usd": 2.67,
+        "reported_total_revenue_usd_billion": 127.6
+      },
+      "id": "F-REUTERS-GOOG-EXPECTATION",
+      "limitations": "These are tool-extracted paraphrases, not verbatim quotations. Survey size/method/fieldwork unknown. Adjusted EPS 2.67 must not be compared with official GAAP EPS 2.12. No survey object populated.",
+      "locator": "Headline; Kenrick Cai and Akash Sriram; published Oct 28 4:11 PM, updated Oct 29 7:30 AM, timezone unspecified. Revenue/FCF comparisons in body attributed to LSEG.",
+      "origin_basis": "Reuters original reporting; Investing.com syndication",
+      "origin_id": "reuters-alphabet-oct28-2026-results",
+      "published_at": "2026-10-28",
+      "publisher": "Reuters / Investing.com",
+      "quote": "Alphabet stock sinks as search woes cause revenue miss, cash burn worsens",
+      "retrieval_note": "WebFetch successfully read content during 2026-11-02T02:52:42Z–02:55:26Z; retrieved_at is packaging timestamp, exact tool HTTP receipt timestamp unavailable. Published date has no verified time zone/time; do not invent timestamp.",
+      "retrieved_at": "2026-11-02T02:56:21.766800Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "核查财报与AI投资回报归因",
+        "reason": "保留具名预期引用，但缺样本方法不得升级为survey/consensus",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://www.investing.com/news/stock-market-news/alphabets-heavy-cloud-spending-drives-biggerthanexpected-cash-burn-4980612"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://portfolio-terminal.com/markets/nasdaq-composite/october-2026",
+      "evidence_kind": "document",
+      "extract": "Table shows prior month close26,861.06 andOct30 25,437.00;monthly-5.30%,-1,424.06pts. Upstream primary-data provenance not established; don't elevate to verified primary price series.",
+      "id": "S6",
+      "locator": "October2026 monthly summary and22-session daily table",
+      "origin_basis": "Byline/issuer and dated article; syndicated Reuters stories are not independent news organizations.",
+      "origin_id": "main-S6",
+      "published_at": "unknown",
+      "publisher": "Portfolio Terminal",
+      "quote": "so far",
+      "retrieval_note": "Packaging timestamp, not exact HTTP receipt; WebFetch read during this research session. See saved extracts.",
+      "retrieved_at": "2026-11-02T02:59:00.848830Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "Compare close, policy background and competing explanations",
+        "reason": "Incomplete body or upstream provenance; not used for a precise price claim.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T3",
+      "url": "https://portfolio-terminal.com/markets/nasdaq-composite/october-2026"
+    },
+    {
+      "access_status": "ok",
+      "author": "koolba",
+      "available_at": "2026-10-31T12:06:53.000Z",
+      "canonical_url": "https://news.ycombinator.com/item?id=50315352",
+      "engagement": {
+        "comments": 2,
+        "points": 5
+      },
+      "evidence_kind": "opinion",
+      "id": "COMM-S1",
+      "locator": "originals/hn-50315317/item.json /children/0/text",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+        "engine_item_id": "50315317",
+        "engine_rank": 1,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "candidate_id": "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+          "cluster_id": "cluster-1",
+          "engagement": 24,
+          "explanation": "fallback-local-score",
+          "final_score": 31.76612021857924,
+          "freshness": 96,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 0.0,
+          "item_id": "50315317",
+          "local_relevance": 0.2,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50315317",
+                "native_rank": 1,
+                "source": "hackernews",
+                "subquery_label": "primary"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "primary:hackernews": 1
+          },
+          "rerank_score": 22.0,
+          "rrf_score": 0.00546448087431694,
+          "snippet": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "koolba",
+              "body": "Anthropic's path to the Nasdaq just got a lot bumpier\nThe article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 2,
+                "points": 5
+              },
+              "engagement_score": 24,
+              "freshness": 96,
+              "item_id": "50315317",
+              "local_rank_score": 0.394,
+              "local_relevance": 0.2,
+              "metadata": {
+                "comment_insights": [
+                  "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.",
+                  "the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors."
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50315317",
+                "top_comments": [
+                  {
+                    "author": "koolba",
+                    "date": "",
+                    "excerpt": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place!",
+                    "url": "https://news.ycombinator.com/item?id=50315352"
+                  },
+                  {
+                    "author": "jqpabc123",
+                    "date": "",
+                    "excerpt": "the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+                    "url": "https://news.ycombinator.com/item?id=50315601"
+                  }
+                ]
+              },
+              "published_at": "2026-10-31",
+              "relevance_hint": 0.69,
+              "snippet": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place! the AI company disclosed a net loss for the first half of the year of $80 billion, alongside hundreds of billions of dollars’ worth of compute commitments and more than 90 pages of risk factors.\nBut if you ignore all their expenses and don't count future commitments, they are already profitable.\nThe...",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+              "url": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+              "why_relevant": "HN story about Anthropic's path to the Nasdaq just got a lot bumpier"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "primary"
+          ],
+          "title": "Anthropic's path to the Nasdaq just got a lot bumpier",
+          "url": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html"
+        },
+        "unranked": false
+      },
+      "published_at": "2026-10-31T12:06:53.000Z",
+      "publisher": "koolba",
+      "quote": "The article has some good information, but the (somewhat) interactive circular financing UI halfway through is what's really interesting.\nThe spending commitment numbers are staggering. Deals in the 100s of billions of dollars all over the place. Sometimes the same place!",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "selection": {
+        "priority": "background",
+        "purpose": "low-engagement financing-risk viewpoint; not index attribution",
+        "reason": "Retained investigation lead; original discussion too indirect for Nasdaq attribution, or original text unavailable.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://news.ycombinator.com/item?id=50315352"
+    },
+    {
+      "access_status": "snippet",
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1x821pm/anthropic_offers_junkbond_rates_to_blackstone_in/",
+      "engagement": {
+        "num_comments": 217,
+        "score": 931
+      },
+      "evidence_kind": "opinion",
+      "id": "COMM-S2",
+      "locator": "",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "R14",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "body": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+          "container": "stocks",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 217,
+            "score": 931
+          },
+          "engagement_score": 70,
+          "freshness": 50,
+          "item_id": "R14",
+          "local_rank_score": 0.325,
+          "local_relevance": 0.2,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-17",
+          "relevance_hint": 0.23,
+          "snippet": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+          "url": "https://www.reddit.com/r/stocks/comments/1x821pm/anthropic_offers_junkbond_rates_to_blackstone_in/",
+          "why_relevant": "Reddit listing"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-17",
+      "publisher": "reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T02:55:56.717834Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "review",
+        "reason": "Retained investigation lead; original discussion too indirect for Nasdaq attribution, or original text unavailable.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "title": "Anthropic Offers Junk-Bond rates to Blackstone in the largest AI chip-financing in history",
+      "url": "https://www.reddit.com/r/stocks/comments/1x821pm/anthropic_offers_junkbond_rates_to_blackstone_in/"
+    },
+    {
+      "access_status": "failed",
+      "canonical_url": "https://www.reddit.com/r/investing/comments/1x8q1yt/the_ai_selloff_isnt_about_demand_its_about_the/",
+      "evidence_kind": "opinion",
+      "id": "COMM-S3",
+      "locator": "",
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "published_at": "2026-10-18",
+      "publisher": "Reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "selection": {
+        "priority": "background",
+        "purpose": "competing-explanation lead",
+        "reason": "Retained investigation lead; original discussion too indirect for Nasdaq attribution, or original text unavailable.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "title": "The AI selloff is not about demand: financing-cost thesis",
+      "url": "https://www.reddit.com/r/investing/comments/1x8q1yt/the_ai_selloff_isnt_about_demand_its_about_the/"
+    },
+    {
+      "access_status": "failed",
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1xe6f0t/thoughts_on_the_ai_sell_off_this_month/",
+      "evidence_kind": "opinion",
+      "id": "COMM-S4",
+      "locator": "",
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "published_at": "2026-10-24",
+      "publisher": "Reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "selection": {
+        "priority": "background",
+        "purpose": "competing-explanation lead",
+        "reason": "Retained investigation lead; original discussion too indirect for Nasdaq attribution, or original text unavailable.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "title": "Thoughts on the AI sell off this month",
+      "url": "https://www.reddit.com/r/stocks/comments/1xe6f0t/thoughts_on_the_ai_sell_off_this_month/"
+    },
+    {
+      "access_status": "snippet",
+      "canonical_url": "https://www.reddit.com/r/StockMarket/comments/1x7f0bw/ai_demand_holds_firm_treasury_yields_retreat_opex/",
+      "evidence_kind": "opinion",
+      "id": "COMM-S5",
+      "locator": "",
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "published_at": "unknown",
+      "publisher": "Reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "selection": {
+        "priority": "background",
+        "purpose": "competing-explanation lead",
+        "reason": "Retained investigation lead; original discussion too indirect for Nasdaq attribution, or original text unavailable.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "title": "AI demand holds firm / Treasury yields retreat / OPEX",
+      "url": "https://www.reddit.com/r/StockMarket/comments/1x7f0bw/ai_demand_holds_firm_treasury_yields_retreat_opex/"
+    },
+    {
+      "access_status": "snippet",
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1x85yzk/rstocks_weekend_discussion_saturday_oct_17_2026/",
+      "evidence_kind": "opinion",
+      "id": "COMM-S6",
+      "locator": "",
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "published_at": "2026-10-17",
+      "publisher": "Reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "selection": {
+        "priority": "background",
+        "purpose": "competing-explanation lead",
+        "reason": "Retained investigation lead; original discussion too indirect for Nasdaq attribution, or original text unavailable.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "title": "Weekend discussion Oct 17",
+      "url": "https://www.reddit.com/r/stocks/comments/1x85yzk/rstocks_weekend_discussion_saturday_oct_17_2026/"
+    },
+    {
+      "access_status": "snippet",
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1xfspoa/fed_pce_and_big_tech_earnings_the_week_that_could/",
+      "evidence_kind": "opinion",
+      "id": "COMM-S7",
+      "locator": "",
+      "origin_basis": "Unresolved public search result; no independent origin established",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "host-WebSearch supplement",
+        "not_last30days_candidate": true
+      },
+      "published_at": "2026-10-26",
+      "publisher": "Reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T02:58:01.639101+00:00",
+      "selection": {
+        "priority": "background",
+        "purpose": "competing-explanation lead",
+        "reason": "Retained investigation lead; original discussion too indirect for Nasdaq attribution, or original text unavailable.",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "title": "Fed PCE and Big Tech earnings",
+      "url": "https://www.reddit.com/r/stocks/comments/1xfspoa/fed_pce_and_big_tech_earnings_the_week_that_could/"
+    }
+  ],
+  "content_cutoff": "2026-11-01 America/New_York; latest US close 2026-10-30",
+  "historical": false,
+  "schema_version": 2,
+  "selection_summary": {
+    "selected": [
+      "F-GOOG-Q326-CASH",
+      "F-GOOG-Q326-BUSINESS",
+      "F-AMZN-Q326-CAPEX",
+      "F-INTC-Q326-CASH",
+      "M-S1",
+      "M-S2",
+      "M-S3",
+      "M-S4",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "F-REUTERS-GOOG-EXPECTATION"
+    ],
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting"
+  },
+  "source_status": {
+    "T1_expectations": {
+      "reason": "LSEG named in Reuters; sample/method/pre-event historical snapshot unavailable. No validated survey claim.",
+      "status": "partial"
+    },
+    "community": {
+      "reason": "Actual57.35s public engine run plus supplemental retrieval; insufficient relevant original community evidence for causal attribution. Polymarket not_run.",
+      "status": "partial"
+    },
+    "community_github": {
+      "reason": "Excluded to avoid detected gh authentication",
+      "status": "not_run"
+    },
+    "community_hackernews": {
+      "at": "2026-11-02T02:55:56.716985Z",
+      "attempted": true,
+      "engine_state": "ok",
+      "items_returned": 1,
+      "source": "hackernews",
+      "state": "ok",
+      "status": "ok"
+    },
+    "community_polymarket": {
+      "reason": "Requested in plan and CLI but quick run filtered it out; no engine source_status entry",
+      "status": "not_run"
+    },
+    "community_reddit": {
+      "at": "2026-11-02T02:55:56.716130Z",
+      "attempted": true,
+      "engine_state": "ok",
+      "items_returned": 1,
+      "source": "reddit",
+      "state": "ok",
+      "status": "ok"
+    },
+    "community_reddit_originals": {
+      "reason": "Two original opens failed; no retry",
+      "status": "unreachable"
+    },
+    "main_web": {
+      "reason": "Reuters/Fed/Yahoo bodies read; AP inaccessible; Kiplinger headline only. Yahoo monthly figures conflict by0.1pp.",
+      "status": "partial"
+    },
+    "macro_extension": {
+      "status": "ok",
+      "reason": "3searches,4originalbodyfetches;BLS headline tables read, supplemental tail not needed."
+    },
+    "election_pricing": {
+      "status": "partial",
+      "reason": "Contemporaneous article mentions polls and markets without dated probability/sample;no verified election probability change."
+    }
+  }
+}

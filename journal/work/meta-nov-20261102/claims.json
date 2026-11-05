@@ -1,0 +1,802 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T08:19:47.499646+00:00",
+  "claims": [
+    {
+      "id": "C-REVENUE",
+      "text": "Meta于2026年10月21日披露Q3收入646.01亿美元，同比增长26%；广告展示量增长10%、单价增长14%。",
+      "type": "fact",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "META-AD"
+        },
+        {
+          "source_id": "META-PROFIT"
+        }
+      ]
+    },
+    {
+      "id": "C-LEGAL",
+      "text": "Q3营业利润129.88亿美元，含98.9亿美元法律计提；公司列示剔除该项后营业利润228.8亿美元。计提不等同于当季现金支付。",
+      "type": "fact",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "META-PROFIT"
+        },
+        {
+          "source_id": "META-LEGAL"
+        }
+      ]
+    },
+    {
+      "id": "C-CASH",
+      "text": "Q3经营现金流327.86亿美元，购买固定资产339.42亿美元，融资租赁本金9.64亿美元；公司自由现金流-21.20亿美元，对比去年同期106.25亿美元。",
+      "type": "fact",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "META-CASH"
+        }
+      ]
+    },
+    {
+      "id": "C-GUIDE",
+      "text": "Meta指引Q4收入730—760亿美元；2026资本开支含租赁本金1350—1450亿美元，之前1300—1450亿美元；2027继续积极投入但未给总capex数值。",
+      "type": "view",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "META-Q4"
+        },
+        {
+          "source_id": "META-CAPEX"
+        },
+        {
+          "source_id": "META-2027"
+        }
+      ]
+    },
+    {
+      "id": "C-RL",
+      "text": "公司预计2026 Reality Labs亏损180—190亿美元，2027约150亿美元；剔除法律计提后，预计2026营业利润高于2025。",
+      "type": "view",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "META-RL"
+        },
+        {
+          "source_id": "META-COST"
+        }
+      ]
+    },
+    {
+      "id": "C-CLASSC",
+      "text": "公司拟设立C类普通股的修章生效日为2027年1月19日；股票股息登记和支付日尚待董事会确定，不是已经确认的11月拆股。",
+      "type": "fact",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "META-CLASSC"
+        }
+      ]
+    },
+    {
+      "id": "C-CLOSE",
+      "text": "2026年10月30日16:00 EDT，META常规收盘614.99美元。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "PX-CLOSE"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "C-OCT21",
+      "text": "2026年10月21日16:00 EDT，META常规收盘697.52美元。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "PX-OCT21"
+        }
+      ],
+      "price_kind": "close"
+    },
+    {
+      "id": "C-RULE",
+      "text": "月内触及合约：2026年11月常规交易时段Pyth最终1分钟K线High≥上档或Low≤下档即Yes；盘前盘后排除，价格不四舍五入，拆股调整；Pyth技术不可用时用主交易所官方日高低价。不是月末收盘事件，不同档位可以同时Yes。",
+      "type": "fact",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-RULES"
+        }
+      ]
+    },
+    {
+      "id": "C-FEE",
+      "text": "该组启用Finance吃单费，rate=0.04、exponent=1；手续费=C×0.04×p×(1−p)，按总费用五位小数取整；挂单方费率0。",
+      "type": "fact",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-FEES"
+        },
+        {
+          "source_id": "S-FEESCHEDULE"
+        }
+      ]
+    },
+    {
+      "id": "C-CALENDAR",
+      "text": "11月3日美国大选；11月6日8:30美东时间公布10月就业报告，11月10日8:30公布10月CPI；2026常规FOMC会议10月27—28日和12月8—9日，11月无常规会议。",
+      "type": "fact",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "CAL-FEC"
+        },
+        {
+          "source_id": "CAL-BLS"
+        },
+        {
+          "source_id": "CAL-FED"
+        }
+      ]
+    },
+    {
+      "id": "C-VOL",
+      "text": "AlphaQuery在2026年10月30日显示30天IV Mean 0.3873、Close-to-Close历史波动0.3649；未取得完整计算及期限行权价方法，不直接转换为本合约触及概率。",
+      "type": "view",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "VOL-AQ"
+        }
+      ]
+    },
+    {
+      "id": "P-UP780-Yes",
+      "text": "UP 780 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.343美元/份，卖出bid 0.021；ask档量23.98份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP780-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP760-Yes",
+      "text": "UP 760 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.11美元/份，卖出bid 0.05；ask档量40份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP760-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP760-No",
+      "text": "UP 760 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.95美元/份，卖出bid 0.89；ask档量40份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP760-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP740-Yes",
+      "text": "UP 740 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.12美元/份，卖出bid 0.06；ask档量21份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP740-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP740-No",
+      "text": "UP 740 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.94美元/份，卖出bid 0.88；ask档量26份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP740-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP720-Yes",
+      "text": "UP 720 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.2美元/份，卖出bid 0.07；ask档量20份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP720-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP720-No",
+      "text": "UP 720 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.93美元/份，卖出bid 0.8；ask档量51份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP720-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP700-Yes",
+      "text": "UP 700 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.29美元/份，卖出bid 0.11；ask档量20份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP700-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP700-No",
+      "text": "UP 700 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.89美元/份，卖出bid 0.71；ask档量18份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP700-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP680-Yes",
+      "text": "UP 680 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.53美元/份，卖出bid 0.24；ask档量200份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP680-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP680-No",
+      "text": "UP 680 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.76美元/份，卖出bid 0.11；ask档量10份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP680-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP660-Yes",
+      "text": "UP 660 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.55美元/份，卖出bid 0.4；ask档量20份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP660-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-UP660-No",
+      "text": "UP 660 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.6美元/份，卖出bid 0.45；ask档量22份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-UP660-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN640-Yes",
+      "text": "DOWN 640 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.999美元/份，卖出bid 0.959；ask档量30份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN640-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN640-No",
+      "text": "DOWN 640 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.041美元/份，卖出bid 0.001；ask档量146.79份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN640-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN620-Yes",
+      "text": "DOWN 620 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.99美元/份，卖出bid 0.57；ask档量60份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN620-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN620-No",
+      "text": "DOWN 620 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.43美元/份，卖出bid 0.01；ask档量12.68份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN620-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN600-Yes",
+      "text": "DOWN 600 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.79美元/份，卖出bid 0.74；ask档量110份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN600-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN600-No",
+      "text": "DOWN 600 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.26美元/份，卖出bid 0.21；ask档量65份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN600-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN580-Yes",
+      "text": "DOWN 580 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.6美元/份，卖出bid 0.46；ask档量20份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN580-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN580-No",
+      "text": "DOWN 580 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.54美元/份，卖出bid 0.4；ask档量200份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN580-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN560-Yes",
+      "text": "DOWN 560 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.43美元/份，卖出bid 0.22；ask档量20份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN560-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN560-No",
+      "text": "DOWN 560 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.78美元/份，卖出bid 0.57；ask档量500份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN560-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN540-Yes",
+      "text": "DOWN 540 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.63美元/份，卖出bid 0.1；ask档量20份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN540-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN540-No",
+      "text": "DOWN 540 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.9美元/份，卖出bid 0.37；ask档量5份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN540-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN520-Yes",
+      "text": "DOWN 520 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.16美元/份，卖出bid 0.05；ask档量444.83份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN520-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN520-No",
+      "text": "DOWN 520 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.95美元/份，卖出bid 0.84；ask档量6.3份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN520-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN500-Yes",
+      "text": "DOWN 500 Yes，11月2日约08:05—08:09 UTC盘口：买入ask 0.31美元/份，卖出bid 0.03；ask档量6.47份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN500-Yes"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "P-DOWN500-No",
+      "text": "DOWN 500 No，11月2日约08:05—08:09 UTC盘口：买入ask 0.97美元/份，卖出bid 0.69；ask档量15.41份。精确时刻见来源。",
+      "type": "price",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [
+        {
+          "source_id": "S-DOWN500-No"
+        }
+      ],
+      "price_kind": "executable"
+    },
+    {
+      "id": "E-DOWN600-Yes",
+      "text": "DOWN600 Yes按顶档价理论100份、忽略滑点的每份含费成本0.796636美元，持有至1美元/0美元结算的盈亏平衡胜率79.66%；实际顶档不足100份时不保证此成本。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "P-DOWN600-Yes",
+        "C-FEE"
+      ],
+      "calculation_id": "K-DOWN600-Yes"
+    },
+    {
+      "id": "E-DOWN600-No",
+      "text": "DOWN600 No按顶档价理论100份、忽略滑点的每份含费成本0.267696美元，持有至1美元/0美元结算的盈亏平衡胜率26.77%；实际顶档不足100份时不保证此成本。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "P-DOWN600-No",
+        "C-FEE"
+      ],
+      "calculation_id": "K-DOWN600-No"
+    },
+    {
+      "id": "E-UP660-Yes",
+      "text": "UP660 Yes按顶档价理论100份、忽略滑点的每份含费成本0.559900美元，持有至1美元/0美元结算的盈亏平衡胜率55.99%；实际顶档不足100份时不保证此成本。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "P-UP660-Yes",
+        "C-FEE"
+      ],
+      "calculation_id": "K-UP660-Yes"
+    },
+    {
+      "id": "E-UP700-Yes",
+      "text": "UP700 Yes按顶档价理论100份、忽略滑点的每份含费成本0.298236美元，持有至1美元/0美元结算的盈亏平衡胜率29.82%；实际顶档不足100份时不保证此成本。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "P-UP700-Yes",
+        "C-FEE"
+      ],
+      "calculation_id": "K-UP700-Yes"
+    },
+    {
+      "id": "E-UP740-Yes",
+      "text": "UP740 Yes按顶档价理论100份、忽略滑点的每份含费成本0.124224美元，持有至1美元/0美元结算的盈亏平衡胜率12.42%；实际顶档不足100份时不保证此成本。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "P-UP740-Yes",
+        "C-FEE"
+      ],
+      "calculation_id": "K-UP740-Yes"
+    },
+    {
+      "id": "E-UP760-Yes",
+      "text": "UP760 Yes按顶档价理论100份、忽略滑点的每份含费成本0.113916美元，持有至1美元/0美元结算的盈亏平衡胜率11.39%；实际顶档不足100份时不保证此成本。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "P-UP760-Yes",
+        "C-FEE"
+      ],
+      "calculation_id": "K-UP760-Yes"
+    },
+    {
+      "id": "E-DOWN580-Yes",
+      "text": "DOWN580 Yes按顶档价理论100份、忽略滑点的每份含费成本0.609600美元，持有至1美元/0美元结算的盈亏平衡胜率60.96%；实际顶档不足100份时不保证此成本。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "P-DOWN580-Yes",
+        "C-FEE"
+      ],
+      "calculation_id": "K-DOWN580-Yes"
+    },
+    {
+      "id": "D-600",
+      "text": "600美元相对614.99美元收盘的距离为-2.44%。这不是触及概率。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-CLOSE",
+        "C-RULE"
+      ],
+      "calculation_id": "K-DIST600"
+    },
+    {
+      "id": "D-660",
+      "text": "660美元相对614.99美元收盘的距离为+7.32%。这不是触及概率。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-CLOSE",
+        "C-RULE"
+      ],
+      "calculation_id": "K-DIST660"
+    },
+    {
+      "id": "D-700",
+      "text": "700美元相对614.99美元收盘的距离为+13.82%。这不是触及概率。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-CLOSE",
+        "C-RULE"
+      ],
+      "calculation_id": "K-DIST700"
+    },
+    {
+      "id": "D-740",
+      "text": "740美元相对614.99美元收盘的距离为+20.33%。这不是触及概率。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-CLOSE",
+        "C-RULE"
+      ],
+      "calculation_id": "K-DIST740"
+    },
+    {
+      "id": "D-760",
+      "text": "760美元相对614.99美元收盘的距离为+23.58%。这不是触及概率。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-CLOSE",
+        "C-RULE"
+      ],
+      "calculation_id": "K-DIST760"
+    },
+    {
+      "id": "C-DROP",
+      "text": "10月21日至30日META常规收盘从697.52至614.99美元，下降11.83%；未核同期指数，不能据此归因全是资本开支。此段已发生下跌不能作为尚未定价的新增利空重复计入。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-CLOSE",
+        "C-OCT21"
+      ],
+      "calculation_id": "K-DROP"
+    },
+    {
+      "id": "C-CORE",
+      "text": "本期报告营业利润加回法律计提为228.78亿美元，比去年报告营业利润205.35亿美元高11.4%。这是单项调整比较，未对去年作全面非经常项调整，足以反驳仅用报告利润率推断业务崩塌。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-LEGAL"
+      ],
+      "calculation_id": "K-CORE"
+    },
+    {
+      "id": "C-MECHANISM",
+      "text": "在11月没有新增现金回报改善的情景下，投入压力使研究倾向暂偏下探。广告量价增长提供反弹基础，资本开支超过当季经营现金流及2027积极投入计划构成估值压力；但10月21日披露已伴随至30日11.83%的下跌，尚无同口径新增预期下修证明11月仍会下跌。法律计提及Reality Labs改善也限制单边经营崩塌解释。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-REVENUE",
+        "C-CASH",
+        "C-GUIDE",
+        "C-LEGAL",
+        "C-RL",
+        "C-CORE",
+        "C-DROP"
+      ]
+    },
+    {
+      "id": "C-DOMINANCE",
+      "text": "相同月内触及及调整规则、且两边可见低价挂单的共同数量内，UP780 Yes ask0.343被UP760 ask0.11覆盖；DOWN540 Yes ask0.63被DOWN560 ask0.43覆盖；DOWN500 Yes ask0.31被DOWN520 ask0.16覆盖。更便宜的合约在所有正常1/0裁决路径下支付至少相同，吃单费后排序仍不变；这是报价劣后，不代表能同时成交的无风险套利。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-RULE",
+        "C-FEE",
+        "P-UP780-Yes",
+        "P-UP760-Yes",
+        "P-DOWN540-Yes",
+        "P-DOWN560-Yes",
+        "P-DOWN500-Yes",
+        "P-DOWN520-Yes"
+      ]
+    },
+    {
+      "id": "C-MARKET",
+      "text": "该两档的持有成本门槛：DOWN600 Yes bid/ask0.74/0.79，含费约79.66%；UP660 Yes bid/ask0.40/0.55，含费约55.99%。600下档距收盘仅2.44%、660上档距7.32%，距离差本身即可造成不同触及率，不能由报价高低识别市场方向倾向。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "P-DOWN600-Yes",
+        "P-UP660-Yes",
+        "D-600",
+        "D-660",
+        "E-DOWN600-Yes",
+        "E-UP660-Yes"
+      ]
+    },
+    {
+      "id": "C-RANK",
+      "text": "研究核查顺序：先看DOWN600 Yes，因为投入压力情景更直接、价差5¢且顶档110份；再看UP660 Yes，价差15¢且顶档20份。该顺序是取证与执行条件的优先级，不代表预期收益排序。600 Yes含费门槛79.66%、660 Yes为55.99%，当前均无已建立的概率优势；10月已下跌11.83%，不能重复当成新增利空。DOWN600 No优先级低：26¢对应整月不下探，缓冲仅2.44%，与能够反弹不同。UP740/760缺尾部概率和新增强催化依据。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-MECHANISM",
+        "C-DROP",
+        "C-MARKET",
+        "E-DOWN600-Yes",
+        "E-DOWN600-No",
+        "E-UP660-Yes",
+        "E-UP740-Yes",
+        "E-UP760-Yes",
+        "D-600",
+        "D-660",
+        "D-740",
+        "D-760"
+      ]
+    },
+    {
+      "id": "C-COSTRISK",
+      "text": "低顶档量使页面胜率与可执行成本差异显著：UP660 Yes55¢顶档仅20份，DOWN580 Yes60¢仅20份、下一档68¢；这些价格下足量市价单会滑点。持有至结算若事件失败可损失全部买入成本与费用，提前退出还面对价差；DOWN600 No一旦常规时段触及600即使之后大涨也失败。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-RULE",
+        "C-FEE",
+        "P-UP660-Yes",
+        "P-DOWN580-Yes",
+        "P-DOWN600-No"
+      ]
+    },
+    {
+      "id": "C-TRIGGER",
+      "text": "观察11月2—10日常规价格路径、11月3日选举、11月6日就业及11月10日CPI；若META在利率及板块压力缓解后仍弱且公司上修投入，增强下探解释；若公司给出可核实的投入收敛/回报兑现且价格修复，增强反弹解释。实际收益归因须补同窗指数，未观察前不裁定宏观主导。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-CALENDAR",
+        "C-MECHANISM",
+        "C-COSTRISK",
+        "C-RULE"
+      ]
+    },
+    {
+      "id": "C-GAP",
+      "text": "有规则、时刻盘口与收入现金对照，但无完整期权链/参考类校准、合格同财季分析师调查及同窗板块基准，因此能评估持有至结算的成本门槛，不能证明任何一档独立胜率高于该成本。AlphaQuery数值仅线索，不伪造精确概率；研究状态watch。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-VOL",
+        "C-RANK",
+        "C-COSTRISK",
+        "C-MARKET"
+      ]
+    },
+    {
+      "id": "C-CONCLUSION",
+      "text": "截至11月2日开盘前，在没有新增现金回报改善的情景下，投入压力使研究倾向暂偏下探，同时广告韧性支持反弹可能。10月披露已伴随11.83%跌幅，未证明11月仍有新增下修。优先核查600下探Yes，再核查660上触Yes，依据是机制匹配及价差/深度，并非已证实收益排序；两档均为watch，尚无经成本验证的概率优势。整月不碰600的No与昂贵劣后档位吸引力较低。",
+      "type": "inference",
+      "as_of": "2026-11-02T08:19:47.499646+00:00",
+      "sources": [],
+      "basis": [
+        "C-MECHANISM",
+        "C-RANK",
+        "C-GAP",
+        "C-DOMINANCE",
+        "C-TRIGGER"
+      ]
+    }
+  ]
+}

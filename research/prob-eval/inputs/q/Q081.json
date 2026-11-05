@@ -1,0 +1,38 @@
+{
+ "qid": "Q081",
+ "question": "Will Parti Québécois win the most seats in the 2026 Quebec general election?",
+ "rules": "Parliamentary elections to elect all 127 seats of the National Assembly of Quebec are scheduled to take place in Quebec on October 5, 2026.\n\nThis market will resolve to the political party that wins the greatest number of seats in the National Assembly of Quebec as a result of this election.\n\nIf voting in the 2026 Quebec general election does not occur by January 31, 2027, this market will resolve to \"Other\".\n\nIn the event of a tie for the most seats won between this party and any other, this market will resolve in favor of the party that won the most valid votes in the respective election. If this also results in a tie, this market will resolve in favor of the party or coalition whose listed abbreviation comes first in alphabetical order.\n\nThis market's resolution will be based solely on the number of seats won by the named party.\n\nThis market will resolve based on the result of the election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by Élections Québec (https://www.electionsquebec.qc.ca).",
+ "as_of": "2026-09-22",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Élections Québec",
+   "published_at": "2026-08-27",
+   "excerpt": "Les élections générales provinciales viennent d’être déclenchées; le scrutin aura lieu le lundi 5 octobre 2026. Ces élections se tiennent en fonction d’une nouvelle carte électorale comportant 127 circonscriptions."
+  },
+  {
+   "id": "E2",
+   "publisher": "Léger",
+   "published_at": "2026-09-22",
+   "excerpt": "Le PQ demeure à 29% des intentions de vote chez les électeur·trices décidé·e·s. Sondage en ligne réalisé du 18 au 21 septembre 2026 auprès de 1 001 répondant·e·s du Québec âgé·e·s de 18 ans ou plus ayant le droit de vote."
+  },
+  {
+   "id": "E3",
+   "publisher": "Pallas Data",
+   "published_at": "2026-09-21",
+   "excerpt": "Among decided and leaning voters, the PQ under Paul St-Pierre Plamondon holds 28% (+1% since last week), the CAQ under Christine Fréchette has 22% (-1%), and the Quebec Liberal Party under Charles Milliard also has 22% (-1%), the two still tied as they were last week. The Conservative Party of Quebec under Éric Duhaime sits at 16%, unchanged, and Québec solidaire under Ruba Ghazal holds 11%, also unchanged. The analysis in this report is based on a survey of 1,122 Quebec adults conducted by Pallas Data on September 19, 2026."
+  },
+  {
+   "id": "E4",
+   "publisher": "Qc125 — Philippe J. Fournier",
+   "published_at": "2026-09-22",
+   "excerpt": "À l’échelle nationale, le Parti québécois récolte — encore! — 29% d’appui parmi les électeurs décidés et enclins, six points devant le Parti libéral, qui récolte 23%. La CAQ se trouve au troisième rang avec 20%. Le Parti québécois, même avec seulement 29% d’appui, se trouve maintenant aux portes de la majorité dans la projection, grâce à sa force auprès de la majorité francophone et à la forte division du vote."
+  },
+  {
+   "id": "E5",
+   "publisher": "CityNews Montreal — Manoj Subramaniam",
+   "published_at": "2026-09-21",
+   "excerpt": "On Monday, a new poll by Radio Canada-Segma Recherche showed little changes, with the PQ maintaining the top position with about 29 per cent of the vote, far ahead of Coalition Avenir Québec (CAQ), which came in second with 22 per cent. The Quebec Liberals (PLQ) and the Conservatives (PCQ) were in a virtual tie with just one percentage point separating the two parties at 19 and 18 per cent."
+  }
+ ]
+}

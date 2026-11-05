@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-11-02T02:53:36.045819+00:00",
+  "files": [
+    "README.md",
+    ".claude-plugin/plugin.json",
+    ".claude-plugin/marketplace.json",
+    "scripts/research_plan.py",
+    "scripts/research_run.py",
+    "scripts/render_report.py",
+    "skills/research/SKILL.md",
+    "skills/research/references/templates.md",
+    "skills/research/references/memo-template.md",
+    "agents/fact-collector.md",
+    "agents/red-team.md",
+    "tests/test_research_runs.py"
+  ],
+  "baseline_tests": 105
+}

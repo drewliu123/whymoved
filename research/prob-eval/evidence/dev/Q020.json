@@ -1,0 +1,43 @@
+{
+  "qid": "Q020",
+  "as_of": "2026-07-31",
+  "kept": [
+    {
+      "excerpt": "Ipsos polling conducted on 8–9 July found that 33% of British adults would prefer Count Binface to win the Clacton by-election, compared with 21% who preferred Nigel Farage; 32% chose neither and 13% did not know. Ipsos interviewed a representative online sample of 1,000 British adults aged 18–75. Research director Keiran Pedley stressed that Clacton residents, rather than the public overall, would vote in the by-election.",
+      "published_at": "2026-07-10",
+      "publisher": "Ipsos",
+      "relevance": "This measures national appetite for a Binface victory but cannot be interpreted as a forecast of his vote share among Clacton electors.",
+      "url": "https://www.ipsos.com/en-uk/british-public-more-likely-prefer-count-binface-wins-clacton-election-nigel-farage"
+    },
+    {
+      "excerpt": "Chancellor Rachel Reeves said she would accept Nigel Farage's request to be appointed Steward and Bailiff of the Manor of Northstead. ITV reported that Farage completed the formalities of quitting as an MP on 8 July, after announcing his intention to contest the resulting Clacton by-election.",
+      "published_at": "2026-07-08",
+      "publisher": "ITV News",
+      "relevance": "This confirms that the resignation triggering the by-election had progressed beyond an announced intention.",
+      "url": "https://www.itv.com/news/2026-07-08/chancellor-accepts-nigel-farages-resignation-as-mp-for-farce-by-election"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.tendringdc.gov.uk/news/clacton-voters-to-choose-next-mp-as-by-election-candidates-confirmed",
+      "reason": "Excerpt mentions the election scheduled for 13 August 2026, after the 2026-07-31 cutoff."
+    },
+    {
+      "url": "https://www.itv.com/news/2026-07-17/nigel-farage-to-compete-with-record-33-candidates-in-clacton-by-election",
+      "reason": "Excerpt mentions voting on 13 August 2026, after the 2026-07-31 cutoff."
+    },
+    {
+      "url": "https://www.comedy.co.uk/people/fyi/1136/count-binface-clacton-manifesto/",
+      "reason": "Excerpt mentions the 13 August 2026 contest, after the 2026-07-31 cutoff."
+    },
+    {
+      "url": "https://www.itv.com/news/2026-07-07/nigel-farage-resigns-as-clacton-mp",
+      "reason": "Excerpt includes election results: Farage's 2024 Clacton vote share and winning majority. Removed under the explicit rule excluding results, including historical results."
+    },
+    {
+      "url": "https://www.itv.com/news/london/2024-05-04/labours-sadiq-khan-wins-historic-third-term-as-london-mayor",
+      "reason": "Excerpt includes election results: Binface's 2024 London mayoral vote total, vote share and ranking relative to other candidates. Removed under the explicit rule excluding results, including historical results."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-07-31. Included seven items with explicit publication dates on or before the cutoff, verified through dated web_search extracts. web_fetch failed because of a provider configuration error; the requested agent-reach web read fallback also failed because its reading services were temporarily unavailable. Full-page retrieval therefore remained unavailable. Excerpts are factual paraphrases of retrieved source text. No betting or prediction-market sources, odds, market prices, election outcome information or post-cutoff developments are included. Constituency polling was excluded because publication by the cutoff could not be verified; fieldwork dates alone were not treated as publication dates. The Ipsos poll is explicitly national preferred-winner polling, not Clacton voting intention. A July-dated candidate profile was excluded because its retrieved version contained later updates."
+}

@@ -1,0 +1,104 @@
+{
+  "as_of": "2026-10-31T17:25:57Z",
+  "checked_at": "2026-10-31T17:34:49.310524Z",
+  "status": "partial",
+  "check_claims": {
+    "command": "python3 -I theme/work/verify_case.py (runpy executes existing /Users/frankzhang/Desktop/投研助手/scripts/check_claims.py with explicitly reviewed scripts directory on sys.path)",
+    "exit_code": 0,
+    "log": "logs/check_claims.log",
+    "result": {
+      "passed": true,
+      "total": 23,
+      "failures": {}
+    },
+    "limitations": "R1–R8是结构/来源层级/时间规则校验，不自动证明引用支持关系、数据准确性或研究判断正确。"
+  },
+  "structural_errors": [],
+  "source_count": 6,
+  "claim_count": 23,
+  "arithmetic": {
+    "status": "已满足",
+    "checks": [
+      "K1=27448×21%=5764.08百万美元",
+      "Q1 Δ利润/Δ收入=18/590=3.05085%",
+      "Q2 Δ利润/Δ收入=101/601=16.80532%",
+      "backlog/季度收入=15.2/3.951=3.8471倍",
+      "OCF-capex=FCF按三期原表重算"
+    ],
+    "unknowns_not_zero": "主题利润输入缺失，未填零或主观情景数"
+  },
+  "protocol": {
+    "A": {
+      "status": "已满足",
+      "evidence": "report.answer与优先验证环节"
+    },
+    "B": {
+      "status": "已满足",
+      "evidence": "claims/source原文、实际文档、日期和口径断点；log保留"
+    },
+    "C": {
+      "status": "已满足",
+      "evidence": "calculations.json；纯AI利润输入不足明确停止"
+    },
+    "D": {
+      "status": "已满足",
+      "evidence": "主题机制、价值归属、分部敞口、经济量级与敏感性"
+    },
+    "E": {
+      "status": "已满足",
+      "evidence": "扩产、并购混合、订单延期替代解释与改判指标；竞争直接资料不足保留缺口"
+    },
+    "F": {
+      "status": "部分满足",
+      "evidence": "Markdown从report.json生成且文本完整性检查通过；HTML与浏览器检查父任务统一执行，尚未在本目录执行"
+    }
+  },
+  "review": {
+    "self_review": "已核对六官方文档；Q1/Q2数据中心口径分开，图中2H26利润率作展望；backlog与收入不同量度；公司现金不归AI",
+    "independent_review": "父任务独立审查四项定向修正已落实；见independent-review.md；未宣称额外独立复审通过",
+    "remaining_gaps": [
+      "纯AI的订单/收入绝对额、产品和地区拆分缺失；广义21%敞口不能代替。",
+      "未取得订单取消、延期、客户集中度、项目验收与收入确认合同条款；不能估算backlog兑现日期。",
+      "没有价格/量/组合/扩产成本利润桥，也无主题营运资本和现金分拆；主题增量利润与FCF不作点估计。",
+      "六个来源均为同一公司，缺竞品官方期间数据和客户侧项目核对；不作行业赢家排序。",
+      "Eaton Q3尚未发布；官方入口核实最新已实现季度，不等于穷尽全部监管/投资者会议文件。",
+      "WebFetch地区网页和主站多次失败、PDF工具缺失；origin-edge与本地PDFKit补齐核心证据，失败详情保留。",
+      "父任务独立审查提出四项定向修正，本轮已落实并记录independent-review.md；HTML与浏览器呈现验收仍由父任务统一完成。"
+    ]
+  },
+  "boundary": {
+    "writes": "仅本theme目录",
+    "external_writes": false,
+    "formal_journal_or_authors_modified": false,
+    "downloaded_code_executed": false,
+    "credentials_read": false,
+    "python_isolated": true
+  },
+  "environment_failures": [
+    "poppler缺失，pdfinfo/pdftotext exit127；Read PDF无法渲染",
+    "Python -I无PDF包；使用系统PDFKit，未安装新依赖",
+    "初次build_case执行出现encoding识别错误exit1，文件重新UTF-8保存并加编码头后exit0；不影响最终JSON"
+  ],
+  "evidence_files": [
+    "raw/eaton-capacity/browser-extract.json",
+    "raw/eaton-ir/browser-extract.json",
+    "raw/eaton-q1-presentation/analyst.pdf",
+    "raw/eaton-q1-presentation/analyst.txt",
+    "raw/eaton-q1-presentation/page-5.png",
+    "raw/eaton-q1/browser-extract.json",
+    "raw/eaton-q1/complete.pdf",
+    "raw/eaton-q1/complete.txt",
+    "raw/eaton-q1/release.html",
+    "raw/eaton-q2-presentation/analyst.pdf",
+    "raw/eaton-q2-presentation/analyst.txt",
+    "raw/eaton-q2-presentation/page-12.png",
+    "raw/eaton-q2-presentation/page-6.png",
+    "raw/eaton-q2/browser-extract.json",
+    "raw/eaton-q2/complete.pdf",
+    "raw/eaton-q2/complete.txt",
+    "raw/eaton-q2/release.html",
+    "raw/eaton-q4/browser-extract.json",
+    "raw/eaton-q4/complete.pdf",
+    "raw/eaton-q4/complete.txt"
+  ]
+}

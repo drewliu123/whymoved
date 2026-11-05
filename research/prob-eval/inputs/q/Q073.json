@@ -1,0 +1,50 @@
+{
+ "qid": "Q073",
+ "question": "Will Anthropic have the third best AI model at the end of July 2026?",
+ "rules": "This market will resolve according to the company that owns the model that has the third-highest arena rank based on the Chatbot Arena LLM Leaderboard (https://lmarena.ai/) when the table under the \"Leaderboard\" tab is checked on July 31, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://lmarena.ai/leaderboard/text with style control off will be used to resolve this market.\n\nModels will be ordered primarily by their leaderboard rank at the market’s check time. If two or more models are tied on rank, they will be ordered by their Arena score, including any underlying, unrounded, granular values reflected in the data below the leaderboard. If a tie remains, alphabetical order of company names as listed in this market group will be used as a final tiebreaker (e.g., if the two models are tied by exact arena score, “Google” would be ranked ahead of “xAI”). This market will resolve based on the company that occupies third place under this ranking system.\n\nThe resolution source for this market is the Chatbot Arena LLM Leaderboard found at https://lmarena.ai/. If this resolution source is unavailable at check time, this market wi",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "New Realities Corporation — AI News Briefing",
+   "published_at": "2026-07-16",
+   "excerpt": "The July 16 briefing reproduces a Text Arena Overall table labeled as published July 13, 2026. It lists claude-fable-5 at 1508, claude-opus-4-6-thinking at 1504, and claude-opus-4-7-thinking at 1503, all owned by Anthropic."
+  },
+  {
+   "id": "E2",
+   "publisher": "Arena — official leaderboard changelog, July 16 entry",
+   "published_at": "2026-07-16",
+   "excerpt": "The July 16, 2026 leaderboard changelog states that inkling and kimi-k3 were added to the Text Arena and Code Arena leaderboards."
+  },
+  {
+   "id": "E3",
+   "publisher": "Anthropic",
+   "published_at": "2026-06-09",
+   "excerpt": "Anthropic announced Claude Fable 5, describing it as a Mythos-class model made safe for general use. The company said its capabilities exceeded those of any model Anthropic had previously made generally available, while Claude Mythos 5 would have restricted access."
+  },
+  {
+   "id": "E4",
+   "publisher": "Anthropic",
+   "published_at": "2026-06-30",
+   "excerpt": "Anthropic introduced Claude Sonnet 5 on June 30, describing its performance as close to Opus 4.8 and a substantial improvement over Sonnet 4.6 in reasoning, tool use, coding, and knowledge work. The announcement made Sonnet 5 available across all Claude plans and through the Claude API."
+  },
+  {
+   "id": "E5",
+   "publisher": "Meta Superintelligence Labs",
+   "published_at": "2026-07-09",
+   "excerpt": "Meta introduced Muse Spark 1.1 on July 9 as a multimodal reasoning model with improvements in tool and computer use, coding, and multimodal understanding. It also launched a public preview of the Meta Model API and made the model available in Thinking mode in the Meta AI app and on meta.ai."
+  },
+  {
+   "id": "E6",
+   "publisher": "OpenAI",
+   "published_at": "2026-07-09",
+   "excerpt": "OpenAI announced general availability of the GPT-5.6 family on July 9 following a limited preview. The launch introduced flagship Sol alongside Terra and Luna, and OpenAI claimed Sol achieved state-of-the-art results across coding, knowledge work, cybersecurity, and science."
+  },
+  {
+   "id": "E7",
+   "publisher": "Reuters, syndicated by Investing.com",
+   "published_at": "2026-07-08",
+   "excerpt": "Reuters reported on July 8 that SpaceX AI launched Grok 4.5, describing it as the company's most intelligent offering to date for coding and agentic tasks. Elon Musk called it an Opus-class model that was faster, more token-efficient, and lower cost."
+  }
+ ]
+}

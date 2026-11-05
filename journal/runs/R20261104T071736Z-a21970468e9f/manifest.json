@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-11-04T07:30:00+00:00",
+  "audit_role": "untrusted_metadata",
+  "created_at": "2026-11-04T07:17:36.470054Z",
+  "files": {
+    "audit.json": "63b980a335f21fc76875c7b7803a2442f88ed78f1dfa734680f6934b8c31749f",
+    "claims.json": "2ce8394a5d0a66f3ba5806187232b382755f17533b94c92148e691665519d6d2",
+    "plan.json": "180d885e2e32f532c7afd71ca1be220765ab46b870cab8677a814d5867a58494",
+    "report.html": "2a30332aeedcdc4ddb13dcd0639b88c2b0744b8926f447bf980fe9db4a05ccbd",
+    "report.json": "f67f258d351107966988cc0344a1e1e870de15e83fa81873a236a4b1b9d56c50",
+    "report.md": "14f47a5bc59c6f2f374944b335e67cbcbdc9c1add96830867d9af13087a11822",
+    "sources.json": "2f5db1e24b3d57663b3bd66d0db0e75ee7f3516a8ac78b69fa067e3b4364d9c5"
+  },
+  "parent_manifest_sha256": null,
+  "parent_run": null,
+  "run_id": "R20261104T071736Z-a21970468e9f",
+  "schema_version": 2
+}

@@ -1,0 +1,10 @@
+{
+  "name": "hn-capex-search",
+  "url": "https://hn.algolia.com/api/v1/search?query=Microsoft+capex&tags=story&hitsPerPage=30",
+  "retrieved_at": "2026-10-31T18:33:10.930959+00:00",
+  "method": "unauthenticated urllib GET; no cookies",
+  "status": 200,
+  "final_url": "https://hn.algolia.com/api/v1/search?query=Microsoft+capex&tags=story&hitsPerPage=30",
+  "content_type": "application/json",
+  "elapsed_seconds": 1.862
+}

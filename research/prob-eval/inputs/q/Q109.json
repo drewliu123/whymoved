@@ -1,0 +1,50 @@
+{
+ "qid": "Q109",
+ "question": "Israeli forces enter Choukine by July 31?",
+ "rules": "This market will resolve to \"Yes\" if Israeli military personnel physically enter the municipality of Choukine in Lebanon for military purposes by the listed day 11:59 PM Israel Daylight Time. Otherwise, this market will resolve to \"No\".\n\nFor the purposes of this market, aerial and maritime operations will not be considered. Only operations involving troops on the ground within the municipality of Choukine will count.\n\nUndercover Israeli operatives and assets will not count.\n\nThe primary resolution source for this market will be photo and video evidence; however, a consensus of credible reporting may also be used.\n\nIf the date/time of a qualifying entry cannot be confirmed by a consensus of credible reporting within 48 hours of this market's end date, it will resolve to \"No\" regardless of whether it was later confirmed to have taken place.",
+ "as_of": "2026-07-20",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "U.S. Department of State, statement by spokesperson Tommy Pigott; reproduced by Public Technologies",
+   "published_at": "2026-07-20",
+   "excerpt": "Today, pilot zone operations began in the villages of Froun, Srifa, and Zawtar Al-Gharbiya in accordance with the Trilateral Framework and under the auspices of the Military Coordination Group for Lebanon. This milestone is a direct outcome of last week's discussions between Israel and Lebanon in Rome."
+  },
+  {
+   "id": "E2",
+   "publisher": "MTV Lebanon, citing Lebanon's National News Agency",
+   "published_at": "2026-07-16T21:56:00+03:00",
+   "excerpt": "NNA: An Israeli drone strike targeted the entrance to Maifadoun, near Choukine."
+  },
+  {
+   "id": "E3",
+   "publisher": "Associated Press, Abby Sewell",
+   "published_at": "2026-07-15",
+   "excerpt": "The deal was supposed to begin with two “pilot zones” where the Israeli military is to turn over control to the Lebanese army, which would clear the areas of any Hezbollah presence. However, implementation on the ground had stalled ahead of this week’s talks."
+  },
+  {
+   "id": "E4",
+   "publisher": "Anadolu Agency, citing Lebanon's National News Agency",
+   "published_at": "2026-07-10; updated 2026-07-11",
+   "excerpt": "Another Israeli drone struck a pickup truck at around 6 am local time (0300GMT) as it was unloading garbage on the outskirts of the towns of Choukine and Kfar Dajjal in the Nabatieh district. The attack left two people injured."
+  },
+  {
+   "id": "E5",
+   "publisher": "Al Jazeera, Caolán Magee",
+   "published_at": "2026-05-31",
+   "excerpt": "Israeli troops have reached the towns of Zawtar al-Sharqiyah and Choukine on the outskirts of Nabatieh."
+  },
+  {
+   "id": "E6",
+   "publisher": "Press TV, Iranian state broadcaster",
+   "published_at": "2026-05-30T13:38:00; timezone not specified",
+   "excerpt": "According to reports on Saturday, Israeli troops have pushed beyond the towns of Zawtar al-Sharqiyeh and Mayfadoun and are now positioned on the outskirts of Choukine, whose residents were ordered to evacuate on Friday."
+  },
+  {
+   "id": "E7",
+   "publisher": "The Times of Israel, reporting an IDF evacuation warning",
+   "published_at": "2026-05-30T09:57:00+03:00",
+   "excerpt": "The IDF calls on residents to flee seven southern Lebanese localities ahead of strikes on Hezbollah. Residents of Mayfadoun, Choukine, Zebdine, Ansar, Zrariyeh, Mazra’at Kawthariyat ar Ruzz and Machghara are urged to flee north of the Zahrani River."
+  }
+ ]
+}

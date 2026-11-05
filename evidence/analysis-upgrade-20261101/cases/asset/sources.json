@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-10-31T12:00:00Z",
+  "historical": false,
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://example.com/official",
+      "publisher": "Example Official",
+      "tier": "T0",
+      "published_at": "2026-10-30T12:00:00Z",
+      "retrieved_at": "2026-10-31T12:00:00Z",
+      "quote": "Revenue increased to 12.",
+      "locator": "paragraph 1",
+      "origin_id": "O1",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "direct evidence",
+        "relevance": "direct",
+        "purpose": "reported revenue",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "SP",
+      "url": "https://example.com/fictional-price",
+      "publisher": "虚构报价验收源",
+      "tier": "T0",
+      "published_at": "2026-10-30T12:00:00Z",
+      "retrieved_at": "2026-10-31T12:00:00Z",
+      "quote": "Fictional close 15 USD/share",
+      "locator": "paragraph 1",
+      "origin_id": "fictional-price",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "direct evidence",
+        "relevance": "direct",
+        "purpose": "reported revenue",
+        "priority": "decisive"
+      },
+      "market_quote": {
+        "quoted_at": "2026-10-31T12:00:00Z",
+        "instrument": "FICTIONAL",
+        "outcome": "common equity",
+        "direction": "close",
+        "value": 15,
+        "unit": "USD/share",
+        "quote_type": "close"
+      }
+    }
+  ],
+  "source_status": {
+    "official": {
+      "status": "ok"
+    }
+  }
+}

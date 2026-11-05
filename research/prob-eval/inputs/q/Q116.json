@@ -1,0 +1,44 @@
+{
+ "qid": "Q116",
+ "question": "Will Russia capture Dovha Balka by September 30?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Russia captures the intersection Tsentralna volytsia x Peremohy volytsia at 48.492703° N, 37.607318° E in Dovha Balka, Donetsk Oblast, between market creation and the specified date, 11:59 PM ET.\n\nThe intersection will be considered captured if any part of the intersection is shaded under a below specified layer on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. Otherwise, the market will resolve to “No”.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date.\n\nAny continuous shading under the following layers will qualify:\n- Assessed Russian-Controlled Terrain\n- Assessed Russian Advances\n\nShading under the following layers will not qualify:\n- Assessed Russian Infiltration Areas\n- Claimed Russian Territory\n\nOnce a qualifying condition is met, any subsequent loss of control will not be considered towards the resolution of this market.\n\nIf Russia comes in",
+ "as_of": "2026-09-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Fakty ICTV, reporting Ukrainian General Staff information",
+   "published_at": "2026-09-17",
+   "excerpt": "On the Kostiantynivka axis, 29 attacks were recorded. Russian forces conducted assault operations in the areas of Kostiantynivka, Illinivka, Dovha Balka, Rozkishne and Toretske, and toward Mykolaipillia, Pavlivka, Novohryhorivka, Kucheriv Yar and Vilne."
+  },
+  {
+   "id": "E2",
+   "publisher": "Russia Matters, Harvard Kennedy School Belfer Center",
+   "published_at": "2026-09-16",
+   "excerpt": "Settlements near which Russian forces advanced Sept. 8–14, 2026, according to DeepState: Stepanivka, Kotlyne, Kostyantynivka, Chervonyi, Novomarkove, Dibrova, Mykolaivka, Dovha Balka, Kalenyky, Bilytske and Nove Shakhove. As of 1:00 p.m. U.S. East Coast time on September 16, DeepState had not published September 15 data, so the report used September 14 as its latest available observation."
+  },
+  {
+   "id": "E3",
+   "publisher": "Institute for the Study of War / Critical Threats Project",
+   "published_at": "2026-09-14",
+   "excerpt": "Russian forces continued offensive operations near and southwest of Kostyantynivka on September 13 and 14 but did not advance."
+  },
+  {
+   "id": "E4",
+   "publisher": "LB.ua, reporting Ukrainian General Staff information",
+   "published_at": "2026-09-14",
+   "excerpt": "In the Kostiantynivka sector, 20 attacks were recorded. The invaders conducted assault actions near Kostiantynivka, Dovha Balka, Rusyn Yar and Toretske, at Kucheriv Yar, and towards Mykolaipillia."
+  },
+  {
+   "id": "E5",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-12",
+   "excerpt": "Ukrainian forces have held Russian forces to near-zero net gains since March 2026, and have conducted successful counterattacks in the Kupyansk, Oleksandrivka, and now Lyman directions. Russian forces have made limited but significant gains in and around Kostyantynivka and east of Slovyansk and Kramatorsk, but are fighting to maintain momentum in these areas and elsewhere along the front line."
+  },
+  {
+   "id": "E6",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-08-30",
+   "excerpt": "Ukrainian forces struck Russian positions in southern and central Dovha Balka, according to geolocated footage published on August 28, which ISW assesses occurred after Russian infiltration missions."
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "qid": "Q082",
+ "question": "Will the Serbian National Assembly be dissolved by August 31?",
+ "rules": "This market will resolve to \"Yes\" if the sitting Serbian National Assembly (Народна скупштина) is dissolved by the specified date, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nThe primary resolution source for this market is official information from the government of Serbia, however a consensus of credible reporting will also be used.",
+ "as_of": "2026-08-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Tanjug",
+   "published_at": "2026-08-16",
+   "excerpt": "President Aleksandar Vučić said that elections would be called within 15 to 25 days. He said the election campaign would last between 45 and 60 days, in accordance with the Constitution and the law."
+  },
+  {
+   "id": "E2",
+   "publisher": "Politika",
+   "published_at": "2026-08-17",
+   "excerpt": "Deputy Assembly Speaker Marina Raguš said that the parliamentary session announced for the end of August would most likely be the last or penultimate session before dissolution and early parliamentary elections. She said Speaker Ana Brnabić would announce the exact session date and that important legislation remained to be considered."
+  },
+  {
+   "id": "E3",
+   "publisher": "Radio-televizija Vojvodine / Tanjug",
+   "published_at": "2026-07-29",
+   "excerpt": "The National Assembly rejected the opposition's motion of no confidence in the government after three days of debate. Forty MPs voted for the motion, 135 voted against it, and one abstained. The motion had been submitted by 62 opposition MPs on February 13."
+  },
+  {
+   "id": "E4",
+   "publisher": "Associated Press",
+   "published_at": "2026-06-29",
+   "excerpt": "President Aleksandar Vučić said early general elections would be held in the next three to four months, without providing exact dates. He reiterated that he would resign the presidency before the vote and said he could step down in July, August or September. Regular presidential and parliamentary elections were due the following year."
+  },
+  {
+   "id": "E5",
+   "publisher": "Government of the Republic of Serbia",
+   "published_at": "2023-11-01",
+   "excerpt": "President Aleksandar Vučić signed a decree dissolving the Serbian parliament and calling parliamentary elections for December 17. The decree was based on Article 109 of the Constitution, Article 21 of the Law on the President, and the government's reasoned proposal of October 30. Electoral deadlines began when the decision entered into force upon publication in the Official Gazette."
+  },
+  {
+   "id": "E6",
+   "publisher": "OSCE Office for Democratic Institutions and Human Rights",
+   "published_at": "2024-02-28",
+   "excerpt": "On October 13, 2023, President Aleksandar Vučić announced plans to hold parliamentary elections by the end of the year. On November 1, following the government's proposal, he dissolved parliament and scheduled elections for December 17. These were the third parliamentary elections in less than four years and the sixth since 2012."
+  }
+ ]
+}

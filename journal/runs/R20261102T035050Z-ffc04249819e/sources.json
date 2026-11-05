@@ -1,0 +1,2419 @@
+{
+  "as_of": "2026-11-02T03:47:19Z",
+  "candidates": [
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/",
+      "evidence_kind": "document",
+      "id": "S1",
+      "locator": "正文首段；本地evidence/whitehouse-june.txt:165",
+      "origin_basis": "核实白宫当时对签署备忘录的公开表述，不据此确认现时履约",
+      "origin_id": "whitehouse-june19",
+      "published_at": "2026-06-19",
+      "publisher": "The White House",
+      "quote": "President Donald J. Trump and Vice President JD Vance have secured a historic breakthrough by signing a Memorandum of Understanding with Iran.",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核实白宫当时对签署备忘录的公开表述，不据此确认现时履约",
+        "reason": "核实白宫当时对签署备忘录的公开表述，不据此确认现时履约",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/",
+      "evidence_kind": "document",
+      "id": "S2",
+      "locator": "Sen. Lindsey Graham段；evidence/whitehouse-june.txt:183",
+      "origin_basis": "白宫所载Graham当时观点；揭示停火与可核查最终核协议的区别",
+      "origin_id": "whitehouse-june19",
+      "published_at": "2026-06-19",
+      "publisher": "The White House",
+      "quote": "Whether or not the United States can reach an acceptable, verifiable deal with Iran regarding its nuclear program and other issues is yet to be determined",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "白宫所载Graham当时观点；揭示停火与可核查最终核协议的区别",
+        "reason": "白宫所载Graham当时观点；揭示停火与可核查最终核协议的区别",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T0",
+      "url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://ca.marketscreener.com/news/why-has-the-iran-us-ceasefire-memorandum-frayed-ce7f5edcd888f325",
+      "evidence_kind": "document",
+      "id": "S3",
+      "locator": "Reuters解释报道的石油豁免部分；正文同时讨论资金未释放、航行权及核问题",
+      "origin_basis": "可读Reuters复盘提供执行次序与争端线索；同一报道只算一个origin",
+      "origin_id": "reuters-july13",
+      "published_at": "2026-07-13",
+      "publisher": "Reuters / MarketScreener",
+      "quote": "on July 7, the U.S. revoked a license",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "可读Reuters复盘提供执行次序与争端线索；同一报道只算一个origin",
+        "reason": "可读Reuters复盘提供执行次序与争端线索；同一报道只算一个origin",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://ca.marketscreener.com/news/why-has-the-iran-us-ceasefire-memorandum-frayed-ce7f5edcd888f325"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.aol.co.uk/articles/iranian-negotiators-doha-continue-talks-122402000.html",
+      "evidence_kind": "document",
+      "id": "S4",
+      "locator": "Reuters正文第4段，归属Iranian Foreign Minister Abbas Araqchi；页面Updated 2026-11-01 13:57 UTC",
+      "origin_basis": "最新可读报道引述外长称谈判未有最终结论；非官方协议文本",
+      "origin_id": "reuters-doha-nov1",
+      "published_at": "unknown",
+      "publisher": "Reuters / AOL UK",
+      "quote": "no final conclusion had been reached",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "最新可读报道引述外长称谈判未有最终结论；非官方协议文本",
+        "reason": "最新可读报道引述外长称谈判未有最终结论；非官方协议文本",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://www.aol.co.uk/articles/iranian-negotiators-doha-continue-talks-122402000.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.aol.co.uk/articles/iranian-negotiators-doha-continue-talks-122402000.html",
+      "evidence_kind": "document",
+      "id": "S5",
+      "locator": "Reuters正文第2段：报道特朗普暂停追加攻击的承诺覆盖11月3日投票前；页面Updated 2026-11-01 13:57 UTC",
+      "origin_basis": "限定报道中的美方承诺窗口；不能当成双方停火到期条款",
+      "origin_id": "reuters-doha-nov1",
+      "published_at": "unknown",
+      "publisher": "Reuters / AOL UK",
+      "quote": "before the vote",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "限定报道中的美方承诺窗口；不能当成双方停火到期条款",
+        "reason": "限定报道中的美方承诺窗口；不能当成双方停火到期条款",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://www.aol.co.uk/articles/iranian-negotiators-doha-continue-talks-122402000.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://gcaptain.com/irans-irgc-navy-says-four-tankers-catch-fire-in-strait-of-hormuz/",
+      "evidence_kind": "document",
+      "id": "S6",
+      "locator": "正文CENTCOM对无人水面艇说法的回应；Reuters dispatch Oct30。UKMTO通知与伊方四船说法不能合并计数。",
+      "origin_basis": "保留海事风险反证；各方声明归属不同，不能由伊方声称四船起火推为已证实四船遇袭",
+      "origin_id": "reuters-hormuz-oct30",
+      "published_at": "2026-10-31",
+      "publisher": "Reuters / gCaptain",
+      "quote": "All U.S. military unmanned surface vessels in the Middle East are accounted for",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "保留海事风险反证；各方声明归属不同，不能由伊方声称四船起火推为已证实四船遇袭",
+        "reason": "保留海事风险反证；各方声明归属不同，不能由伊方声称四船起火推为已证实四船遇袭",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T2",
+      "url": "https://gcaptain.com/irans-irgc-navy-says-four-tankers-catch-fire-in-strait-of-hormuz/"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://gamma-api.polymarket.com/events?slug=us-iran-ceasefire-continues-throughptptpt",
+      "evidence_kind": "document",
+      "id": "S29",
+      "locator": "markets[id=5686980].description；所选系列各期限除日期外规则正文hash相同",
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-ceasefire-series",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "This market will resolve to “No” if the United States takes a qualifying military action against Iran by the specified date, 11:59 PM Iran Standard Time. Otherwise this market will resolve to “Yes.”\n\nA qualifying military action refers to an air strike or a surface-to-surface missile strike, initiated by the United States, that directly impacts Iran. An air strike includes bombs, air-to-surface missiles, and air-launched drones. A surface-to-surface missile strike includes one-way attack drones and surface-to-surface missiles such as cruise or ballistic missiles.\n\nThe following actions do not constitute a qualifying military action:\nMunitions destroyed or intercepted before impact;\nSurface-to-air missile strikes;\nSmall-arms fire;\nGround incursions;\nCyber operations;\nNaval gunfire and artillery fire;\nHowitzers, artillery pieces, mortars, and rocket artillery (e.g. MLRS systems);\nMinor surface-to-surface strikes, including short range loitering munitions, FPV drones, and ATGM strikes;\nAny threat, authorization, or announcement of force that has not been executed.\n\nAny munition that is intercepted or destroyed before impact does not constitute a qualifying military action. Debris, fragments, or any wreckage from intercepted munitions that land on Iran do not constitute a military action regardless of any damage incurred.\n\n“Iran” refers to the terrestrial territory of Iran, including its internal waters. Iran’s maritime territory and airspace are not encompassed. Where territorial borders are disputed, all territory claimed by and under the de facto control of Iran as of market creation will qualify.\n\nThe occurrence, attribution, and timing of a qualifying military action will be primarily determined based on a consensus of information available from the resolution sources. Where multiple sources conflict regarding the occurrence, attribution, or timing of a relevant military action, this market will remain open until the earlier of: i) the confirmation of the occurrence, attribution, and timing of the action based on a consensus of information available from the resolution sources or ii) 3 full calendar days (Iran Standard Time) from the date of the first credibly reported evidence of the action. If this period would extend past the end date, this market will remain open to allow for 3 full calendar days to pass. At the end of the third calendar day, if conflicting reports remain, the incident will be adjudicated based on the totality of information available from the resolution sources at that time. No single statement, denial, or presentation of evidence will govern where it is contradicted by the totality of information.\n\nThe resolution sources for this market will be official information from the governments and militaries of the United States and Iran and a consensus of credible reporting.",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://gamma-api.polymarket.com/events?slug=us-iran-ceasefire-continues-throughptptpt"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://gamma-api.polymarket.com/events?slug=us-iran-ceasefire-continues-through-the-midterms",
+      "evidence_kind": "document",
+      "id": "S30",
+      "locator": "markets[id=5447182].description；特定截止时间11月3日23:59美国东部",
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-midterms",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "This market will resolve to “No” if the United States takes a qualifying military action against Iran by November 3, 2026, 11:59 PM ET. Otherwise this market will resolve to “Yes.”\n\nA qualifying military action refers to an air strike or a surface-to-surface missile strike, initiated by the United States, that directly impacts Iran. An air strike includes bombs, air-to-surface missiles, and air-launched drones. A surface-to-surface missile strike includes one-way attack drones and surface-to-surface missiles such as cruise or ballistic missiles.\n\nThe following actions do not constitute a qualifying military action:\nMunitions destroyed or intercepted before impact;\nSurface-to-air missile strikes;\nSmall-arms fire;\nGround incursions;\nCyber operations;\nNaval gunfire and artillery fire;\nHowitzers, artillery pieces, mortars, and rocket artillery (e.g. MLRS systems);\nMinor surface-to-surface strikes, including short range loitering munitions, FPV drones, and ATGM strikes;\nAny threat, authorization, or announcement of force that has not been executed.\n\nAny munition that is intercepted or destroyed before impact does not constitute a qualifying military action. Debris, fragments, or any wreckage from intercepted munitions that land on Iran do not constitute a military action regardless of any damage incurred.\n\n“Iran” refers to the terrestrial territory of Iran, including its internal waters. Iran’s maritime territory and airspace are not encompassed. Where territorial borders are disputed, all territory claimed by and under the de facto control of Iran as of market creation will qualify.\n\nThe occurrence, attribution, and timing of a qualifying military action will be primarily determined based on a consensus of information available from the resolution sources. Where multiple sources conflict regarding the occurrence, attribution, or timing of a relevant military action, this market will remain open until the earlier of: i) the confirmation of the occurrence, attribution, and timing of the action based on a consensus of information available from the resolution sources or ii) 3 full calendar days (Iran Standard Time) from the date of the first credibly reported evidence of the action. If this period would extend past the end date, this market will remain open to allow for 3 full calendar days to pass. At the end of the third calendar day, if conflicting reports remain, the incident will be adjudicated based on the totality of information available from the resolution sources at that time. No single statement, denial, or presentation of evidence will govern where it is contradicted by the totality of information.\n\nThe resolution sources for this market will be official information from the governments and militaries of the United States and Iran and a consensus of credible reporting.",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://gamma-api.polymarket.com/events?slug=us-iran-ceasefire-continues-through-the-midterms"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=59838288288458809448405089801806485870309105325255232123458269975283939712397",
+      "evidence_kind": "market_quote",
+      "id": "S31",
+      "locator": "完整原始book-5447182.json；YES token与book.asset_id已逐一验证；Gamma选项及成交量另保留事件JSON",
+      "market_quote": {
+        "ask": 0.95,
+        "ask_top_shares": 3687.31,
+        "bid": 0.94,
+        "bid_top_shares": 7192.97,
+        "direction": "long",
+        "instrument": "Polymarket market 5447182",
+        "outcome": "Yes",
+        "quote_type": "indicative",
+        "quoted_at": "2026-11-02T03:44:26.262000+00:00",
+        "token_id": "59838288288458809448405089801806485870309105325255232123458269975283939712397",
+        "unit": "USD/share",
+        "value": 0.945
+      },
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-market-5447182",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"question\": \"US-Iran ceasefire continues through the midterms?\", \"token_id\": \"59838288288458809448405089801806485870309105325255232123458269975283939712397\", \"timestamp\": \"1793591066262\", \"best_bid\": 0.94, \"best_ask\": 0.95, \"mid\": 0.945, \"bid_top_shares\": 7192.97, \"ask_top_shares\": 3687.31, \"gamma_volume24hr\": 58924.999946, \"gamma_updated_at\": \"2026-11-02T03:38:05.534948Z\"}",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=59838288288458809448405089801806485870309105325255232123458269975283939712397"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=52887175815376005958516216405440562902190115366178166609862104681229890293574",
+      "evidence_kind": "market_quote",
+      "id": "S32",
+      "locator": "完整原始book-6369331.json；YES token与book.asset_id已逐一验证；Gamma选项及成交量另保留事件JSON",
+      "market_quote": {
+        "ask": 0.94,
+        "ask_top_shares": 68894.99,
+        "bid": 0.93,
+        "bid_top_shares": 2507.17,
+        "direction": "long",
+        "instrument": "Polymarket market 6369331",
+        "outcome": "Yes",
+        "quote_type": "indicative",
+        "quoted_at": "2026-11-02T03:44:29.990000+00:00",
+        "token_id": "52887175815376005958516216405440562902190115366178166609862104681229890293574",
+        "unit": "USD/share",
+        "value": 0.935
+      },
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-market-6369331",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"question\": \"US x Iran ceasefire continues through November 4?\", \"token_id\": \"52887175815376005958516216405440562902190115366178166609862104681229890293574\", \"timestamp\": \"1793591069990\", \"best_bid\": 0.93, \"best_ask\": 0.94, \"mid\": 0.935, \"bid_top_shares\": 2507.17, \"ask_top_shares\": 68894.99, \"gamma_volume24hr\": 95780.01544100001, \"gamma_updated_at\": \"2026-11-02T03:38:05.534948Z\"}",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=52887175815376005958516216405440562902190115366178166609862104681229890293574"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=11308864288973006753199540704778798414330563151778440954216228592301141985802",
+      "evidence_kind": "market_quote",
+      "id": "S33",
+      "locator": "完整原始book-5686980.json；YES token与book.asset_id已逐一验证；Gamma选项及成交量另保留事件JSON",
+      "market_quote": {
+        "ask": 0.73,
+        "ask_top_shares": 21830.6,
+        "bid": 0.72,
+        "bid_top_shares": 9335.11,
+        "direction": "long",
+        "instrument": "Polymarket market 5686980",
+        "outcome": "Yes",
+        "quote_type": "indicative",
+        "quoted_at": "2026-11-02T03:44:26.209000+00:00",
+        "token_id": "11308864288973006753199540704778798414330563151778440954216228592301141985802",
+        "unit": "USD/share",
+        "value": 0.725
+      },
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-market-5686980",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"question\": \"US x Iran ceasefire continues through November 8?\", \"token_id\": \"11308864288973006753199540704778798414330563151778440954216228592301141985802\", \"timestamp\": \"1793591066209\", \"best_bid\": 0.72, \"best_ask\": 0.73, \"mid\": 0.725, \"bid_top_shares\": 9335.11, \"ask_top_shares\": 21830.6, \"gamma_volume24hr\": 97842.27434100001, \"gamma_updated_at\": \"2026-11-02T03:38:05.534948Z\"}",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=11308864288973006753199540704778798414330563151778440954216228592301141985802"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=87031907950659152062446134694384505777054725343079883521973171236915469964057",
+      "evidence_kind": "market_quote",
+      "id": "S34",
+      "locator": "完整原始book-5190747.json；YES token与book.asset_id已逐一验证；Gamma选项及成交量另保留事件JSON",
+      "market_quote": {
+        "ask": 0.52,
+        "ask_top_shares": 6371.8,
+        "bid": 0.51,
+        "bid_top_shares": 4355.99,
+        "direction": "long",
+        "instrument": "Polymarket market 5190747",
+        "outcome": "Yes",
+        "quote_type": "indicative",
+        "quoted_at": "2026-11-02T03:44:25.794000+00:00",
+        "token_id": "87031907950659152062446134694384505777054725343079883521973171236915469964057",
+        "unit": "USD/share",
+        "value": 0.515
+      },
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-market-5190747",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"question\": \"US x Iran ceasefire continues through November 15?\", \"token_id\": \"87031907950659152062446134694384505777054725343079883521973171236915469964057\", \"timestamp\": \"1793591065794\", \"best_bid\": 0.51, \"best_ask\": 0.52, \"mid\": 0.515, \"bid_top_shares\": 4355.99, \"ask_top_shares\": 6371.8, \"gamma_volume24hr\": 51395.83830899999, \"gamma_updated_at\": \"2026-11-02T03:38:05.534948Z\"}",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=87031907950659152062446134694384505777054725343079883521973171236915469964057"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=100560434094118997306184881069560484429555539737764861525595101306027549038993",
+      "evidence_kind": "market_quote",
+      "id": "S35",
+      "locator": "完整原始book-5686978.json；YES token与book.asset_id已逐一验证；Gamma选项及成交量另保留事件JSON",
+      "market_quote": {
+        "ask": 0.41,
+        "ask_top_shares": 294.11,
+        "bid": 0.4,
+        "bid_top_shares": 1104.38,
+        "direction": "long",
+        "instrument": "Polymarket market 5686978",
+        "outcome": "Yes",
+        "quote_type": "indicative",
+        "quoted_at": "2026-11-02T03:44:27.490000+00:00",
+        "token_id": "100560434094118997306184881069560484429555539737764861525595101306027549038993",
+        "unit": "USD/share",
+        "value": 0.405
+      },
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-market-5686978",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"question\": \"US x Iran ceasefire continues through November 22?\", \"token_id\": \"100560434094118997306184881069560484429555539737764861525595101306027549038993\", \"timestamp\": \"1793591067490\", \"best_bid\": 0.4, \"best_ask\": 0.41, \"mid\": 0.405, \"bid_top_shares\": 1104.38, \"ask_top_shares\": 294.11, \"gamma_volume24hr\": 36587.315685999994, \"gamma_updated_at\": \"2026-11-02T03:38:05.534948Z\"}",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=100560434094118997306184881069560484429555539737764861525595101306027549038993"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=1759128163540908136861900527987306673081148337830189221001436012323578054934",
+      "evidence_kind": "market_quote",
+      "id": "S36",
+      "locator": "完整原始book-4713483.json；YES token与book.asset_id已逐一验证；Gamma选项及成交量另保留事件JSON",
+      "market_quote": {
+        "ask": 0.35,
+        "ask_top_shares": 298.27,
+        "bid": 0.34,
+        "bid_top_shares": 400.54,
+        "direction": "long",
+        "instrument": "Polymarket market 4713483",
+        "outcome": "Yes",
+        "quote_type": "indicative",
+        "quoted_at": "2026-11-02T03:44:23.070000+00:00",
+        "token_id": "1759128163540908136861900527987306673081148337830189221001436012323578054934",
+        "unit": "USD/share",
+        "value": 0.345
+      },
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-market-4713483",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"question\": \"US x Iran ceasefire continues through November 30?\", \"token_id\": \"1759128163540908136861900527987306673081148337830189221001436012323578054934\", \"timestamp\": \"1793591063070\", \"best_bid\": 0.34, \"best_ask\": 0.35, \"mid\": 0.345, \"bid_top_shares\": 400.54, \"ask_top_shares\": 298.27, \"gamma_volume24hr\": 19656.811198, \"gamma_updated_at\": \"2026-11-02T03:38:05.534948Z\"}",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=1759128163540908136861900527987306673081148337830189221001436012323578054934"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=30473344794239220995088264915766809943868068209555159167607047748901899155342",
+      "evidence_kind": "market_quote",
+      "id": "S37",
+      "locator": "完整原始book-4713484.json；YES token与book.asset_id已逐一验证；Gamma选项及成交量另保留事件JSON",
+      "market_quote": {
+        "ask": 0.26,
+        "ask_top_shares": 1160.86,
+        "bid": 0.25,
+        "bid_top_shares": 1369.64,
+        "direction": "long",
+        "instrument": "Polymarket market 4713484",
+        "outcome": "Yes",
+        "quote_type": "indicative",
+        "quoted_at": "2026-11-02T03:44:28.325000+00:00",
+        "token_id": "30473344794239220995088264915766809943868068209555159167607047748901899155342",
+        "unit": "USD/share",
+        "value": 0.255
+      },
+      "origin_basis": "官方公开Gamma/CLOB API；各期限为同平台同事件系列，不算独立共识",
+      "origin_id": "polymarket-market-4713484",
+      "published_at": "unknown",
+      "publisher": "Polymarket",
+      "quote": "{\"question\": \"US x Iran ceasefire continues through December 31?\", \"token_id\": \"30473344794239220995088264915766809943868068209555159167607047748901899155342\", \"timestamp\": \"1793591068325\", \"best_bid\": 0.25, \"best_ask\": 0.26, \"mid\": 0.255, \"bid_top_shares\": 1369.64, \"ask_top_shares\": 1160.86, \"gamma_volume24hr\": 48408.038007999996, \"gamma_updated_at\": \"2026-11-02T03:38:05.534948Z\"}",
+      "retrieved_at": "2026-11-02T03:47:19Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "核对裁决口径与期限报价",
+        "reason": "原始规则或带token和时间的订单簿，直接补上上一轮缺失的市场基准",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "price"
+      ],
+      "tier": "T0",
+      "url": "https://clob.polymarket.com/book?token_id=30473344794239220995088264915766809943868068209555159167607047748901899155342"
+    },
+    {
+      "access_status": "ok",
+      "author": "gizmo686",
+      "canonical_url": "https://news.ycombinator.com/item?id=50113028",
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engagement_note": "Individual comment score absent; parent submission engagement copied separately, not assigned to commenter.",
+      "engagement_parent_submission": {
+        "comments": 21,
+        "points": 68
+      },
+      "engine_rank": 3,
+      "evidence_kind": "opinion",
+      "id": "S26",
+      "locator": "HN comment id=50113028; original API text in originals-hn/50113028.json",
+      "origin_basis": "已核查独立评论定位；其外部事实出处尚未确认，不作为独立事实来源",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": "https://reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks",
+        "engine_item_id": "50112227",
+        "engine_rank": 3,
+        "engine_version": "3.30.0",
+        "original_api_url": "https://hacker-news.firebaseio.com/v0/item/50113028.json",
+        "original_comment_id": "50113028",
+        "parent_engine_candidate_id": "https://reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks",
+        "raw_candidate": {
+          "candidate_id": "https://reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks",
+          "cluster_id": "cluster-3",
+          "engagement": 60,
+          "explanation": "fallback-local-score (entity-miss demotion)",
+          "final_score": 0.0,
+          "freshness": 46,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 0.0,
+          "item_id": "50112227",
+          "local_relevance": 0.11,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50112227",
+                "native_rank": 4,
+                "source": "hackernews",
+                "subquery_label": "T2 execution and verification counterevidence"
+              },
+              {
+                "item_id": "50112227",
+                "native_rank": 4,
+                "source": "hackernews",
+                "subquery_label": "T1 bilateral ceasefire terms and election countercase"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "T1 bilateral ceasefire terms and election countercase:hackernews": 4,
+            "T2 execution and verification counterevidence:hackernews": 4
+          },
+          "rerank_score": 0.0,
+          "rrf_score": 0.0078125,
+          "snippet": "Biggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G... Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom. This is barely telling it. It's a start. It's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic...",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "usernomdeguerre",
+              "body": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans\nBiggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G... Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom. This is barely telling it. It's a start.\nIt's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic phased array sy...",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 21,
+                "points": 68
+              },
+              "engagement_score": 60,
+              "freshness": 46,
+              "item_id": "50112227",
+              "local_rank_score": 0.2205,
+              "local_relevance": 0.07,
+              "metadata": {
+                "comment_insights": [
+                  "Biggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense",
+                  "Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom.",
+                  "This is barely telling it"
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50112227",
+                "top_comments": [
+                  {
+                    "author": "jazzyjackson",
+                    "date": "",
+                    "excerpt": "Biggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G...",
+                    "url": "https://news.ycombinator.com/item?id=50113627"
+                  },
+                  {
+                    "author": "abdelhousni",
+                    "date": "",
+                    "excerpt": "Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom.",
+                    "url": "https://news.ycombinator.com/item?id=50112635"
+                  },
+                  {
+                    "author": "jauntywundrkind",
+                    "date": "",
+                    "excerpt": "This is barely telling it. It's a start.\nIt's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic phased array sy...",
+                    "url": "https://news.ycombinator.com/item?id=50112491"
+                  }
+                ]
+              },
+              "published_at": "2026-10-16",
+              "relevance_hint": 0.64,
+              "snippet": "Biggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G... Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom. This is barely telling it. It's a start. It's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic...",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans",
+              "url": "https://www.reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks/",
+              "why_relevant": "HN story about Iran’s precision strikes picked apart Gulf infrastructure, b"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "T2 execution and verification counterevidence",
+            "T1 bilateral ceasefire terms and election countercase"
+          ],
+          "title": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans",
+          "url": "https://www.reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks/"
+        },
+        "unranked": false
+      },
+      "published_at": "2026-10-16T02:12:35Z",
+      "publisher": "gizmo686",
+      "quote": "> You should look into how many air craft carriers the US has\nAir craft carriers such as the USS Abraham Lincoln? Which had to remain at sea for 286 days, including 208 consequtive days without making port. During which time, the military suffered a massive logistical failure to adaquetly supply it, presumably due to them moving their logistical base from Bahrain to Diego Garcia. Then, was relieved only by diverting the USS George Washington and USS Theodore Roosevelt to the region, leaving no carriers in the West Pacific\n> Also there are somewhere between 20 and 28 US military bases in the middle east alone\nBases which have been comming under repeated air attack; the extent and damage of which is kept quiete, but appears to be much more substantial than the US military wants to admit. And which are increasingly vulnerable as they loose air defense abilities due to both loss of supporting infastructure, and a depletion of interceptors.",
+      "retrieved_at": "2026-11-02T03:35:52.505797+00:00",
+      "selection": {
+        "priority": "useful",
+        "purpose": "H1/H2机制分歧；观点与待查事实分开",
+        "reason": "后勤/部署约束的具体反证线索，可检验H1；航母天数、补给迁移与拦截弹消耗均待原始记录验证。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://news.ycombinator.com/item?id=50113028"
+    },
+    {
+      "access_status": "ok",
+      "author": "esseph",
+      "canonical_url": "https://news.ycombinator.com/item?id=50188579",
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engagement_note": "Individual comment score absent; parent submission engagement copied separately, not assigned to commenter.",
+      "engagement_parent_submission": {
+        "comments": 6,
+        "points": 39
+      },
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S24",
+      "locator": "HN comment id=50188579; original API text in originals-hn/50188579.json",
+      "origin_basis": "已核查独立评论定位；其外部事实出处尚未确认，不作为独立事实来源",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "50187077",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "original_api_url": "https://hacker-news.firebaseio.com/v0/item/50188579.json",
+        "original_comment_id": "50188579",
+        "parent_engine_candidate_id": null,
+        "raw_candidate": {
+          "author": "ciconia",
+          "body": "Israeli military conducts operation near Iran's border\nExpect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks. Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 6,
+            "points": 39
+          },
+          "engagement_score": 47,
+          "freshness": 63,
+          "item_id": "50187077",
+          "local_rank_score": 0.276,
+          "local_relevance": 0.11,
+          "metadata": {
+            "comment_insights": [
+              "Expect a large scale US/Israel attack, maybe this weekend.",
+              "Eh"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50187077",
+            "top_comments": [
+              {
+                "author": "esseph",
+                "date": "",
+                "excerpt": "Expect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks.",
+                "url": "https://news.ycombinator.com/item?id=50188579"
+              },
+              {
+                "author": "iugtmkbdfil834",
+                "date": "",
+                "excerpt": "Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+                "url": "https://news.ycombinator.com/item?id=50187891"
+              }
+            ]
+          },
+          "published_at": "2026-10-21",
+          "relevance_hint": 0.58,
+          "snippet": "Expect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks. Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Israeli military conducts operation near Iran's border",
+          "url": "https://www.axios.com/2026/10/21/israel-military-training-sortie-iran-border",
+          "why_relevant": "HN story about Israeli military conducts operation near Iran's border"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-21T22:30:13Z",
+      "publisher": "esseph",
+      "quote": "Expect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks.",
+      "retrieved_at": "2026-11-02T03:35:52.925117+00:00",
+      "selection": {
+        "priority": "useful",
+        "purpose": "H1/H2机制分歧；观点与待查事实分开",
+        "reason": "选举临近仍预计即将升级，反驳选举必然压制开战；10月21日短期预测需追后续兑现。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://news.ycombinator.com/item?id=50188579"
+    },
+    {
+      "access_status": "ok",
+      "author": "Jtsummers",
+      "canonical_url": "https://news.ycombinator.com/item?id=50188757",
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engagement_note": "Individual comment score absent; parent submission engagement copied separately, not assigned to commenter.",
+      "engagement_parent_submission": {
+        "comments": 6,
+        "points": 39
+      },
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S25",
+      "locator": "HN comment id=50188757; original API text in originals-hn/50188757.json",
+      "origin_basis": "已核查独立评论定位；其外部事实出处尚未确认，不作为独立事实来源",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "50187077",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "original_api_url": "https://hacker-news.firebaseio.com/v0/item/50188757.json",
+        "original_comment_id": "50188757",
+        "parent_engine_candidate_id": null,
+        "raw_candidate": {
+          "author": "ciconia",
+          "body": "Israeli military conducts operation near Iran's border\nExpect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks. Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 6,
+            "points": 39
+          },
+          "engagement_score": 47,
+          "freshness": 63,
+          "item_id": "50187077",
+          "local_rank_score": 0.276,
+          "local_relevance": 0.11,
+          "metadata": {
+            "comment_insights": [
+              "Expect a large scale US/Israel attack, maybe this weekend.",
+              "Eh"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50187077",
+            "top_comments": [
+              {
+                "author": "esseph",
+                "date": "",
+                "excerpt": "Expect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks.",
+                "url": "https://news.ycombinator.com/item?id=50188579"
+              },
+              {
+                "author": "iugtmkbdfil834",
+                "date": "",
+                "excerpt": "Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+                "url": "https://news.ycombinator.com/item?id=50187891"
+              }
+            ]
+          },
+          "published_at": "2026-10-21",
+          "relevance_hint": 0.58,
+          "snippet": "Expect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks. Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Israeli military conducts operation near Iran's border",
+          "url": "https://www.axios.com/2026/10/21/israel-military-training-sortie-iran-border",
+          "why_relevant": "HN story about Israeli military conducts operation near Iran's border"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-21T22:45:58Z",
+      "publisher": "Jtsummers",
+      "quote": "The US could start another round of attacks, but this is an incredibly unpopular war. Escalating again before midterms will only hurt the party in power right now. Not that sense is something this administration has much of.",
+      "retrieved_at": "2026-11-02T03:35:52.968417+00:00",
+      "selection": {
+        "priority": "useful",
+        "purpose": "H1/H2机制分歧；观点与待查事实分开",
+        "reason": "同串直接反驳选举前升级，支持短期政治克制机制，但不能据此认定选后必战。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://news.ycombinator.com/item?id=50188757"
+    },
+    {
+      "access_status": "failed",
+      "author": null,
+      "canonical_url": "https://www.reddit.com/r/oil/comments/1xbbdmu/tonight_iran_states_it_will_stop_oil_tanker/",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S27",
+      "locator": "",
+      "origin_basis": "未读原帖，原始出处未确认",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": null,
+        "retrieval": "supplemental domain-limited WebSearch; original WebFetch unreachable"
+      },
+      "published_at": "unknown",
+      "publisher": "reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:36:26.555791Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "待追原始出处",
+        "reason": "搜索摘要称10月21日涉及停止油轮袭击；原帖不可读，核查是否单方面提议或已生效双边条款。",
+        "relevance": "direct",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reddit.com/r/oil/comments/1xbbdmu/tonight_iran_states_it_will_stop_oil_tanker/"
+    },
+    {
+      "access_status": "failed",
+      "author": null,
+      "canonical_url": "https://www.reddit.com/r/OilPrices/comments/1x9h1mm/iran_says_it_has_a_new_operational_plan_if_the_us/",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S28",
+      "locator": "",
+      "origin_basis": "未读原帖，原始出处未确认",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": null,
+        "retrieval": "supplemental domain-limited WebSearch; original WebFetch unreachable"
+      },
+      "published_at": "unknown",
+      "publisher": "reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:36:26.555791Z",
+      "selection": {
+        "priority": "useful",
+        "purpose": "待追原始出处",
+        "reason": "搜索摘要称10月18日涉及复袭预案；原帖不可读，仅作反证线索。",
+        "relevance": "direct",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reddit.com/r/OilPrices/comments/1x9h1mm/iran_says_it_has_a_new_operational_plan_if_the_us/"
+    },
+    {
+      "access_status": "failed",
+      "canonical_url": "https://apnews.com/article/422b1799a1a06466279ac265f560e014",
+      "evidence_kind": "document",
+      "id": "S7",
+      "locator": "全文抓取失败；只见搜索标题",
+      "origin_basis": "原站与部分转刊均不可读，保留候选但不支持主张",
+      "origin_id": "ap-oct8",
+      "published_at": "2026-10-08",
+      "publisher": "AP",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "原站与部分转刊均不可读，保留候选但不支持主张",
+        "reason": "原站与部分转刊均不可读，保留候选但不支持主张",
+        "relevance": "direct",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T2",
+      "url": "https://apnews.com/article/422b1799a1a06466279ac265f560e014"
+    },
+    {
+      "access_status": "failed",
+      "canonical_url": "https://apnews.com/article/b918f44d8f212d7daf7f2f9a98c91a0b",
+      "evidence_kind": "document",
+      "id": "S8",
+      "locator": "全文抓取失败；只见搜索摘述",
+      "origin_basis": "最新AP线索正文无法取得，不用作第二独立事实支持",
+      "origin_id": "ap-nov1",
+      "published_at": "2026-11-01",
+      "publisher": "AP",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "最新AP线索正文无法取得，不用作第二独立事实支持",
+        "reason": "最新AP线索正文无法取得，不用作第二独立事实支持",
+        "relevance": "direct",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T2",
+      "url": "https://apnews.com/article/b918f44d8f212d7daf7f2f9a98c91a0b"
+    },
+    {
+      "access_status": "failed",
+      "canonical_url": "https://www.lemonde.fr/en/international/article/2026/10/30/iran-braces-for-possible-new-conflict-with-us-and-israel-despite-diplomatic-talks_6767460_4.html",
+      "evidence_kind": "document",
+      "id": "S9",
+      "locator": "全文抓取失败",
+      "origin_basis": "不能凭搜索摘要验证当前备战与谈判细节",
+      "origin_id": "lemonde-oct30",
+      "published_at": "2026-10-30",
+      "publisher": "Le Monde",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:35:54Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "不能凭搜索摘要验证当前备战与谈判细节",
+        "reason": "不能凭搜索摘要验证当前备战与谈判细节",
+        "relevance": "direct",
+        "selected": false
+      },
+      "supports": [],
+      "tier": "T2",
+      "url": "https://www.lemonde.fr/en/international/article/2026/10/30/iran-braces-for-possible-new-conflict-with-us-and-israel-despite-diplomatic-talks_6767460_4.html"
+    },
+    {
+      "access_status": "ok",
+      "author": "MilnerRoute",
+      "canonical_url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html",
+      "engagement": {
+        "comments": 114,
+        "points": 91
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": 2,
+      "evidence_kind": "opinion",
+      "id": "S11",
+      "locator": "body",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": "https://cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html",
+        "engine_item_id": "50092415",
+        "engine_rank": 2,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "candidate_id": "https://cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html",
+          "cluster_id": "cluster-2",
+          "engagement": 75,
+          "explanation": "fallback-local-score (entity-miss demotion)",
+          "final_score": 0.24206349206349387,
+          "freshness": 40,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 10.0,
+          "item_id": "50092415",
+          "local_relevance": 0.11,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50092415",
+                "native_rank": 3,
+                "source": "hackernews",
+                "subquery_label": "T1 bilateral ceasefire terms and election countercase"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "T1 bilateral ceasefire terms and election countercase:hackernews": 3
+          },
+          "rerank_score": 0.0,
+          "rrf_score": 0.003968253968253968,
+          "snippet": "This is just the beginning. Soon an island will surface at the wreck site and COBRA will issue forth to dominate & spread terror. But fear not, a multi-service task force will emerge to combat COBRA, this task force will be named -- GI Joe!\n[Yes, I know COBRA island was located in the Gulf of Americ... Some poor families of dead fisherman want to have a word with you:  https://en.wikipedia.org/wiki/United_States_strikes_on_alleg... We (the usa) can choose to leave at any time. Crying about the effects of your own actions while choosing not to fix it is madness. Don't push your madness on the rest of us",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "MilnerRoute",
+              "body": "Container ship sinks in Strait of Hormuz as Iran steps up attacks\nThis is just the beginning. Soon an island will surface at the wreck site and COBRA will issue forth to dominate & spread terror. But fear not, a multi-service task force will emerge to combat COBRA, this task force will be named -- GI Joe!\n[Yes, I know COBRA island was located in the Gulf of Americ... Some poor families of dead fisherman want to have a word with you:  https://en.wikipedia.org/wiki/United_States_strikes_on_alleg... We (the usa) can choose to leave at any time. Crying about the effects of your own actions while choosing not to fix it is madness. Don't push your madness on the rest of us",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 114,
+                "points": 91
+              },
+              "engagement_score": 75,
+              "freshness": 40,
+              "item_id": "50092415",
+              "local_rank_score": 0.24650000000000002,
+              "local_relevance": 0.11,
+              "metadata": {
+                "comment_insights": [
+                  "This is just the beginning",
+                  "Some poor families of dead fisherman want to have a word with you:  https://en.wikipedia.org/wiki/United_States_strikes_on_alleg...",
+                  "We (the usa) can choose to leave at any time",
+                  "There will be much more attacks before 11.3",
+                  "Fortunately we're only in week 30 of our 2 week war, should be over any day now."
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50092415",
+                "top_comments": [
+                  {
+                    "author": "Nexxius",
+                    "date": "",
+                    "excerpt": "This is just the beginning. Soon an island will surface at the wreck site and COBRA will issue forth to dominate & spread terror. But fear not, a multi-service task force will emerge to combat COBRA, this task force will be named -- GI Joe!\n[Yes, I know COBRA island was located in the Gulf of Americ...",
+                    "url": "https://news.ycombinator.com/item?id=50101944"
+                  },
+                  {
+                    "author": "truetraveller",
+                    "date": "",
+                    "excerpt": "Some poor families of dead fisherman want to have a word with you:  https://en.wikipedia.org/wiki/United_States_strikes_on_alleg...",
+                    "url": "https://news.ycombinator.com/item?id=50093622"
+                  },
+                  {
+                    "author": "nilamo",
+                    "date": "",
+                    "excerpt": "We (the usa) can choose to leave at any time. Crying about the effects of your own actions while choosing not to fix it is madness. Don't push your madness on the rest of us",
+                    "url": "https://news.ycombinator.com/item?id=50093115"
+                  },
+                  {
+                    "author": "lgxz",
+                    "date": "",
+                    "excerpt": "There will be much more attacks before 11.3",
+                    "url": "https://news.ycombinator.com/item?id=50093991"
+                  },
+                  {
+                    "author": "wnevets",
+                    "date": "",
+                    "excerpt": "Fortunately we're only in week 30 of our 2 week war, should be over any day now.",
+                    "url": "https://news.ycombinator.com/item?id=50093505"
+                  }
+                ]
+              },
+              "published_at": "2026-10-14",
+              "relevance_hint": 0.64,
+              "snippet": "This is just the beginning. Soon an island will surface at the wreck site and COBRA will issue forth to dominate & spread terror. But fear not, a multi-service task force will emerge to combat COBRA, this task force will be named -- GI Joe!\n[Yes, I know COBRA island was located in the Gulf of Americ... Some poor families of dead fisherman want to have a word with you:  https://en.wikipedia.org/wiki/United_States_strikes_on_alleg... We (the usa) can choose to leave at any time. Crying about the effects of your own actions while choosing not to fix it is madness. Don't push your madness on the rest of us",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
+              "url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html",
+              "why_relevant": "HN story about Container ship sinks in Strait of Hormuz as Iran steps up at"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "T1 bilateral ceasefire terms and election countercase"
+          ],
+          "title": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
+          "url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html"
+        },
+        "unranked": false
+      },
+      "published_at": "2026-10-14",
+      "publisher": "MilnerRoute",
+      "quote": "Container ship sinks in Strait of Hormuz as Iran steps up attacks\nThis is just the beginning. Soon an island will surface at the wreck site and COBRA will issue forth to dominate & spread terror. But fear not, a multi-service task force will emerge to combat COBRA, this task force will be named -- GI Joe!\n[Yes, I know COBRA island was located in the Gulf of Americ... Some poor families of dead fisherman want to have a word with you:  https://en.wikipedia.org/wiki/United_States_strikes_on_alleg... We (the usa) can choose to leave at any time. Crying about the effects of your own actions while choosing not to fix it is madness. Don't push your madness on the rest of us",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "保留原始候选与排名；提交者不是评论作者，拼接body不作为单人引文。相关评论另以原帖片段入选；媒体标题仅作待追线索。",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html"
+    },
+    {
+      "access_status": "ok",
+      "author": "usernomdeguerre",
+      "canonical_url": "https://www.reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks/",
+      "engagement": {
+        "comments": 21,
+        "points": 68
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": 3,
+      "evidence_kind": "opinion",
+      "id": "S12",
+      "locator": "body",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": "https://reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks",
+        "engine_item_id": "50112227",
+        "engine_rank": 3,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "candidate_id": "https://reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks",
+          "cluster_id": "cluster-3",
+          "engagement": 60,
+          "explanation": "fallback-local-score (entity-miss demotion)",
+          "final_score": 0.0,
+          "freshness": 46,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 0.0,
+          "item_id": "50112227",
+          "local_relevance": 0.11,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50112227",
+                "native_rank": 4,
+                "source": "hackernews",
+                "subquery_label": "T2 execution and verification counterevidence"
+              },
+              {
+                "item_id": "50112227",
+                "native_rank": 4,
+                "source": "hackernews",
+                "subquery_label": "T1 bilateral ceasefire terms and election countercase"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "T1 bilateral ceasefire terms and election countercase:hackernews": 4,
+            "T2 execution and verification counterevidence:hackernews": 4
+          },
+          "rerank_score": 0.0,
+          "rrf_score": 0.0078125,
+          "snippet": "Biggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G... Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom. This is barely telling it. It's a start. It's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic...",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "usernomdeguerre",
+              "body": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans\nBiggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G... Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom. This is barely telling it. It's a start.\nIt's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic phased array sy...",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 21,
+                "points": 68
+              },
+              "engagement_score": 60,
+              "freshness": 46,
+              "item_id": "50112227",
+              "local_rank_score": 0.2205,
+              "local_relevance": 0.07,
+              "metadata": {
+                "comment_insights": [
+                  "Biggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense",
+                  "Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom.",
+                  "This is barely telling it"
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50112227",
+                "top_comments": [
+                  {
+                    "author": "jazzyjackson",
+                    "date": "",
+                    "excerpt": "Biggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G...",
+                    "url": "https://news.ycombinator.com/item?id=50113627"
+                  },
+                  {
+                    "author": "abdelhousni",
+                    "date": "",
+                    "excerpt": "Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom.",
+                    "url": "https://news.ycombinator.com/item?id=50112635"
+                  },
+                  {
+                    "author": "jauntywundrkind",
+                    "date": "",
+                    "excerpt": "This is barely telling it. It's a start.\nIt's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic phased array sy...",
+                    "url": "https://news.ycombinator.com/item?id=50112491"
+                  }
+                ]
+              },
+              "published_at": "2026-10-16",
+              "relevance_hint": 0.64,
+              "snippet": "Biggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G... Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom. This is barely telling it. It's a start. It's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic...",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans",
+              "url": "https://www.reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks/",
+              "why_relevant": "HN story about Iran’s precision strikes picked apart Gulf infrastructure, b"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "T2 execution and verification counterevidence",
+            "T1 bilateral ceasefire terms and election countercase"
+          ],
+          "title": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans",
+          "url": "https://www.reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks/"
+        },
+        "unranked": false
+      },
+      "published_at": "2026-10-16",
+      "publisher": "usernomdeguerre",
+      "quote": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans\nBiggest blunder of the 21st century, to have incompetent kleptocrats in charge of the national defense. “Wars are not won by firepower, but by logistics.” The Iranians are well aware of what two-dozen targets to disable to cripple US supply lines. In the meantime the bozos in Washington are asking G... Also the biggest lesson here : as a (non white) country could not count on them to protect you even after paying trillion dollars of ransom. This is barely telling it. It's a start.\nIt's extremely concerning that the US military basically lost most of it's Middle East presence, had most of it effectively destroyed. We lost massive incredibly complex installations like our AN/FPS-132 radar complexes, huge powerful gigantic phased array sy...",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "保留原始候选与排名；提交者不是评论作者，拼接body不作为单人引文。相关评论另以原帖片段入选；媒体标题仅作待追线索。",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks/"
+    },
+    {
+      "access_status": "ok",
+      "author": "ceejayoz",
+      "canonical_url": "https://www.nytimes.com/2026/10/30/business/energy-environment/exxon-chevron-oil-profits-iran-war.html",
+      "engagement": {
+        "comments": 6,
+        "points": 42
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S13",
+      "locator": "body",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "50306581",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "author": "ceejayoz",
+          "body": "U.S. Oil Industry Earned over $130B in Profit During Iran War\nOil, Shipping, trading made billions during this.\nI want to point out from experience that these are all official profits. In the coming years you'll find out from books, reporting, and documentaries all the shadow black money billions that were made that no even realizes now.\nSo many Marc Rich type... That’s what he wanted.\nBut that’s not the only reason he started that war.  He also wanted to force the US military to expend all of their munitions, so that they would be forced to buy new ones from his other bestest buddies.\nI wonder how much they are paying him for all these free profits? Who picked up the dinner tab for \"gathering of the petrogarchs\" at Mar A Lago in 2023 though?",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 6,
+            "points": 42
+          },
+          "engagement_score": 47,
+          "freshness": 93,
+          "item_id": "50306581",
+          "local_rank_score": 0.35100000000000003,
+          "local_relevance": 0.11,
+          "metadata": {
+            "comment_insights": [
+              "Oil, Shipping, trading made billions during this.",
+              "That’s what he wanted.",
+              "Who picked up the dinner tab for \"gathering of the petrogarchs\" at Mar A Lago in 2023 though?",
+              "petrogarch: member of a small group that controls the petroleum industry, and hence has power over lives and governments similar to the powers of an oligarch."
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50306581",
+            "top_comments": [
+              {
+                "author": "karakoram",
+                "date": "",
+                "excerpt": "Oil, Shipping, trading made billions during this.\nI want to point out from experience that these are all official profits. In the coming years you'll find out from books, reporting, and documentaries all the shadow black money billions that were made that no even realizes now.\nSo many Marc Rich type...",
+                "url": "https://news.ycombinator.com/item?id=50306863"
+              },
+              {
+                "author": "bradknowles",
+                "date": "",
+                "excerpt": "That’s what he wanted.\nBut that’s not the only reason he started that war.  He also wanted to force the US military to expend all of their munitions, so that they would be forced to buy new ones from his other bestest buddies.\nI wonder how much they are paying him for all these free profits?",
+                "url": "https://news.ycombinator.com/item?id=50322707"
+              },
+              {
+                "author": "anjel",
+                "date": "",
+                "excerpt": "Who picked up the dinner tab for \"gathering of the petrogarchs\" at Mar A Lago in 2023 though?",
+                "url": "https://news.ycombinator.com/item?id=50310042"
+              },
+              {
+                "author": "lioeters",
+                "date": "",
+                "excerpt": "petrogarch: member of a small group that controls the petroleum industry, and hence has power over lives and governments similar to the powers of an oligarch.",
+                "url": "https://news.ycombinator.com/item?id=50312764"
+              }
+            ]
+          },
+          "published_at": "2026-10-30",
+          "relevance_hint": 0.62,
+          "snippet": "Oil, Shipping, trading made billions during this. I want to point out from experience that these are all official profits. In the coming years you'll find out from books, reporting, and documentaries all the shadow black money billions that were made that no even realizes now. So many Marc Rich type... That’s what he wanted. But that’s not the only reason he started that war. He also wanted to force the US military to expend all of their munitions, so that they would be forced to buy new ones from his other bestest buddies. I wonder how much they are paying him for all these free profits? Who picked up the dinner tab for \"gathering of the petrogarchs\" at Mar...",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "U.S. Oil Industry Earned over $130B in Profit During Iran War",
+          "url": "https://www.nytimes.com/2026/10/30/business/energy-environment/exxon-chevron-oil-profits-iran-war.html",
+          "why_relevant": "HN story about U.S. Oil Industry Earned over $130B in Profit During Iran Wa"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-30",
+      "publisher": "ceejayoz",
+      "quote": "U.S. Oil Industry Earned over $130B in Profit During Iran War\nOil, Shipping, trading made billions during this.\nI want to point out from experience that these are all official profits. In the coming years you'll find out from books, reporting, and documentaries all the shadow black money billions that were made that no even realizes now.\nSo many Marc Rich type... That’s what he wanted.\nBut that’s not the only reason he started that war.  He also wanted to force the US military to expend all of their munitions, so that they would be forced to buy new ones from his other bestest buddies.\nI wonder how much they are paying him for all these free profits? Who picked up the dinner tab for \"gathering of the petrogarchs\" at Mar A Lago in 2023 though?",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "保留原始候选与排名；提交者不是评论作者，拼接body不作为单人引文。相关评论另以原帖片段入选；媒体标题仅作待追线索。",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.nytimes.com/2026/10/30/business/energy-environment/exxon-chevron-oil-profits-iran-war.html"
+    },
+    {
+      "access_status": "ok",
+      "author": "ciconia",
+      "canonical_url": "https://www.axios.com/2026/10/21/israel-military-training-sortie-iran-border",
+      "engagement": {
+        "comments": 6,
+        "points": 39
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S14",
+      "locator": "body",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "50187077",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "author": "ciconia",
+          "body": "Israeli military conducts operation near Iran's border\nExpect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks. Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 6,
+            "points": 39
+          },
+          "engagement_score": 47,
+          "freshness": 63,
+          "item_id": "50187077",
+          "local_rank_score": 0.276,
+          "local_relevance": 0.11,
+          "metadata": {
+            "comment_insights": [
+              "Expect a large scale US/Israel attack, maybe this weekend.",
+              "Eh"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50187077",
+            "top_comments": [
+              {
+                "author": "esseph",
+                "date": "",
+                "excerpt": "Expect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks.",
+                "url": "https://news.ycombinator.com/item?id=50188579"
+              },
+              {
+                "author": "iugtmkbdfil834",
+                "date": "",
+                "excerpt": "Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+                "url": "https://news.ycombinator.com/item?id=50187891"
+              }
+            ]
+          },
+          "published_at": "2026-10-21",
+          "relevance_hint": 0.58,
+          "snippet": "Expect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks. Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Israeli military conducts operation near Iran's border",
+          "url": "https://www.axios.com/2026/10/21/israel-military-training-sortie-iran-border",
+          "why_relevant": "HN story about Israeli military conducts operation near Iran's border"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-21",
+      "publisher": "ciconia",
+      "quote": "Israeli military conducts operation near Iran's border\nExpect a large scale US/Israel attack, maybe this weekend.\nIsrael elections in 5-6 days, US midterms in ~2 weeks. Eh. If it was any other time, I would have invoked \"Wag the dog\" movie, but these days that movie seems overly optimistic.",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "保留原始候选与排名；提交者不是评论作者，拼接body不作为单人引文。相关评论另以原帖片段入选；媒体标题仅作待追线索。",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.axios.com/2026/10/21/israel-military-training-sortie-iran-border"
+    },
+    {
+      "access_status": "snippet",
+      "author": "hebelehubele",
+      "canonical_url": "https://www.theatlantic.com/national-security/2026/10/trump-iran-war-strikes-after-midterms/689121/",
+      "engagement": {
+        "comments": 3,
+        "points": 5
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S15",
+      "locator": "",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "50204595",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "author": "hebelehubele",
+          "body": "Trump's Gamble to End the Iran War",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 3,
+            "points": 5
+          },
+          "engagement_score": 26,
+          "freshness": 70,
+          "item_id": "50204595",
+          "local_rank_score": 0.24,
+          "local_relevance": 0.06,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=50204595",
+            "top_comments": []
+          },
+          "published_at": "2026-10-23",
+          "relevance_hint": 0.64,
+          "snippet": "Trump's Gamble to End the Iran War",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Trump's Gamble to End the Iran War",
+          "url": "https://www.theatlantic.com/national-security/2026/10/trump-iran-war-strikes-after-midterms/689121/",
+          "why_relevant": "HN story about Trump's Gamble to End the Iran War"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-23",
+      "publisher": "hebelehubele",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "保留原始候选与排名；提交者不是评论作者，拼接body不作为单人引文。相关评论另以原帖片段入选；媒体标题仅作待追线索。",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.theatlantic.com/national-security/2026/10/trump-iran-war-strikes-after-midterms/689121/"
+    },
+    {
+      "access_status": "snippet",
+      "author": "gumby",
+      "canonical_url": "https://maritime-executive.com/article/report-despite-iran-s-attacks-gulf-oil-exports-exceed-prewar-levels",
+      "engagement": {
+        "comments": 20,
+        "points": 20
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S16",
+      "locator": "",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "50179719",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "author": "gumby",
+          "body": "Despite Iran's Attacks, Gulf Oil Exports Exceed Prewar Levels",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 20,
+            "points": 20
+          },
+          "engagement_score": 49,
+          "freshness": 63,
+          "item_id": "50179719",
+          "local_rank_score": 0.239,
+          "local_relevance": 0.05,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=50179719",
+            "top_comments": []
+          },
+          "published_at": "2026-10-21",
+          "relevance_hint": 0.54,
+          "snippet": "Despite Iran's Attacks, Gulf Oil Exports Exceed Prewar Levels",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Despite Iran's Attacks, Gulf Oil Exports Exceed Prewar Levels",
+          "url": "https://maritime-executive.com/article/report-despite-iran-s-attacks-gulf-oil-exports-exceed-prewar-levels",
+          "why_relevant": "HN story about Despite Iran's Attacks, Gulf Oil Exports Exceed Prewar Level"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-21",
+      "publisher": "gumby",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "保留原始候选与排名；提交者不是评论作者，拼接body不作为单人引文。相关评论另以原帖片段入选；媒体标题仅作待追线索。",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://maritime-executive.com/article/report-despite-iran-s-attacks-gulf-oil-exports-exceed-prewar-levels"
+    },
+    {
+      "access_status": "snippet",
+      "author": "snarky-comments",
+      "canonical_url": "https://www.telegraph.co.uk/world-news/2026/10/20/iran-threatens-cut-hormuz-internet-cables/",
+      "engagement": {
+        "comments": 5,
+        "points": 7
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S17",
+      "locator": "",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "50190546",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "author": "snarky-comments",
+          "body": "Iran threatens to cut Hormuz internet cables",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 5,
+            "points": 7
+          },
+          "engagement_score": 31,
+          "freshness": 66,
+          "item_id": "50190546",
+          "local_rank_score": 0.23500000000000001,
+          "local_relevance": 0.06,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=50190546",
+            "top_comments": []
+          },
+          "published_at": "2026-10-22",
+          "relevance_hint": 0.75,
+          "snippet": "Iran threatens to cut Hormuz internet cables",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Iran threatens to cut Hormuz internet cables",
+          "url": "https://www.telegraph.co.uk/world-news/2026/10/20/iran-threatens-cut-hormuz-internet-cables/",
+          "why_relevant": "HN story about Iran threatens to cut Hormuz internet cables"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-22",
+      "publisher": "snarky-comments",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "保留原始候选与排名；提交者不是评论作者，拼接body不作为单人引文。相关评论另以原帖片段入选；媒体标题仅作待追线索。",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.telegraph.co.uk/world-news/2026/10/20/iran-threatens-cut-hormuz-internet-cables/"
+    },
+    {
+      "access_status": "snippet",
+      "author": "wslh",
+      "canonical_url": "https://www.politico.com/news/2026/10/21/peter-thiel-trump-iran-war-01131284",
+      "engagement": {
+        "comments": 3,
+        "points": 9
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S18",
+      "locator": "",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "50203383",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "author": "wslh",
+          "body": "Peter Thiel breaks with Trump over Iran war: 'We should not have done it'",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 3,
+            "points": 9
+          },
+          "engagement_score": 30,
+          "freshness": 70,
+          "item_id": "50203383",
+          "local_rank_score": 0.205,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=50203383",
+            "top_comments": []
+          },
+          "published_at": "2026-10-23",
+          "relevance_hint": 0.62,
+          "snippet": "Peter Thiel breaks with Trump over Iran war: 'We should not have done it'",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Peter Thiel breaks with Trump over Iran war: 'We should not have done it'",
+          "url": "https://www.politico.com/news/2026/10/21/peter-thiel-trump-iran-war-01131284",
+          "why_relevant": "HN story about Peter Thiel breaks with Trump over Iran war: 'We should not"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-23",
+      "publisher": "wslh",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "保留原始候选与排名；提交者不是评论作者，拼接body不作为单人引文。相关评论另以原帖片段入选；媒体标题仅作待追线索。",
+        "relevance": "context",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.politico.com/news/2026/10/21/peter-thiel-trump-iran-war-01131284"
+    },
+    {
+      "access_status": "ok",
+      "author": null,
+      "canonical_url": "https://www.reddit.com/r/CredibleDefense/comments/1xkzc8n/active_conflicts_news_megathread_november_01_2026/",
+      "engagement": {
+        "num_comments": 13,
+        "score": 24
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": 1,
+      "evidence_kind": "opinion",
+      "id": "S10",
+      "locator": "body",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/active_conflicts_news_megathread_november_01_2026",
+        "engine_item_id": "R2",
+        "engine_rank": 1,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/active_conflicts_news_megathread_november_01_2026",
+          "cluster_id": "cluster-1",
+          "engagement": 34,
+          "explanation": "fallback-local-score",
+          "final_score": 30.049180327868854,
+          "freshness": 100,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 13.648143055578661,
+          "item_id": "R2",
+          "local_relevance": 0.15,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R2",
+                "native_rank": 1,
+                "source": "reddit",
+                "subquery_label": "T1 bilateral ceasefire terms and election countercase"
+              },
+              {
+                "item_id": "R2",
+                "native_rank": 1,
+                "source": "reddit",
+                "subquery_label": "T2 execution and verification counterevidence"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "T1 bilateral ceasefire terms and election countercase:reddit": 1,
+            "T2 execution and verification counterevidence:reddit": 1
+          },
+          "rerank_score": 16.5,
+          "rrf_score": 0.00819672131147541,
+          "snippet": "While it doesn't appear the war in Ukraine is close to an end, there's some small good news happening. Ukrainian evacuees reach Belarus as Melania Trump-brokered Oleshky ceasefire takes effect (1) Fou I’m not too sure if first-hand experiences are allowed here but it appears the Ukrainian ‘Air Alert!’ App has been hacked. Warnings not too long ago announced a chemical /nuclear attack in Kyiv follow I have read some OSINT pages, earlier today, mentioning american intelligence telling Ukraine that bombers were airborne and a missile attack may follow. So, speculation on my part, could it be a coor",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Active Conflicts & News Megathread November 01, 2026\nWhile it doesn't appear the war in Ukraine is close to an end, there's some small good news happening. Ukrainian evacuees reach Belarus as Melania Trump-brokered Oleshky ceasefire takes effect (1) Fou I’m not too sure if first-hand experiences are allowed here but it appears the Ukrainian ‘Air Alert!’ App has been hacked. Warnings not too long ago announced a chemical /nuclear attack in Kyiv follow I have read some OSINT pages, earlier today, mentioning american intelligence telling Ukraine that bombers were airborne and a missile attack may follow. So, speculation on my part, could it be a coor",
+              "container": "CredibleDefense",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 13,
+                "score": 24
+              },
+              "engagement_score": 34,
+              "freshness": 100,
+              "item_id": "R2",
+              "local_rank_score": 0.38150000000000006,
+              "local_relevance": 0.15,
+              "metadata": {
+                "comment_insights": [
+                  "While it doesn't appear the war in Ukraine is close to an end, there's some small good news happening.",
+                  "I’m not too sure if first-hand experiences are allowed here but it appears the Ukrainian ‘Air Alert!",
+                  "I have read some OSINT pages, earlier today, mentioning american intelligence telling Ukraine that bombers were airborne and a missile attack may foll...",
+                  "Hope you managed to figure it out as quickly as possible, honestly that's really pretty disgusting, even for the levels they showed over the last few...",
+                  "Russia is pushing in both the north and the south hoping to keep Ukraine from reinforcing the units holding in the center.",
+                  "There's a lot of small arms discussions that end up concluding that \"Good enough is good enough\" and that small arms don't really matter much.",
+                  "The answers are going to vary widely depending on conflict intensity and scale."
+                ],
+                "top_comments": [
+                  {
+                    "author": "moragisdo",
+                    "date": "2026-11-01",
+                    "excerpt": "While it doesn't appear the war in Ukraine is close to an end, there's some small good news happening. Ukrainian evacuees reach Belarus as Melania Trump-brokered Oleshky ceasefire takes effect (1) Fou",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19rzjjm1qtwjn/"
+                  },
+                  {
+                    "author": "Quarterwit_85",
+                    "date": "2026-11-01",
+                    "excerpt": "I’m not too sure if first-hand experiences are allowed here but it appears the Ukrainian ‘Air Alert!’ App has been hacked. Warnings not too long ago announced a chemical /nuclear attack in Kyiv follow",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19rzxbhr60qh1/"
+                  },
+                  {
+                    "author": "moragisdo",
+                    "date": "2026-11-01",
+                    "excerpt": "I have read some OSINT pages, earlier today, mentioning american intelligence telling Ukraine that bombers were airborne and a missile attack may follow. So, speculation on my part, could it be a coor",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19rzy3e8mktfl/"
+                  },
+                  {
+                    "author": "LepezaVolB",
+                    "date": "2026-11-02",
+                    "excerpt": "Hope you managed to figure it out as quickly as possible, honestly that's really pretty disgusting, even for the levels they showed over the last few years. As for the other comment: While the retalia",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19s0czvcd6tj7/"
+                  },
+                  {
+                    "author": "Well-Sourced",
+                    "date": "2026-11-01",
+                    "excerpt": "Russia is pushing in both the north and the south hoping to keep Ukraine from reinforcing the units holding in the center. Russia is fighting for a border village near Kharkiv that leads it nowhere. W",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19rzw8r83hukl/"
+                  },
+                  {
+                    "author": "theblitz6794",
+                    "date": "2026-11-01",
+                    "excerpt": "There's a lot of small arms discussions that end up concluding that \"Good enough is good enough\" and that small arms don't really matter much. Pretending that mounting optics to older wespons is possi",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19rzgu9ywvim8/"
+                  },
+                  {
+                    "author": "Toptomcat",
+                    "date": "2026-11-01",
+                    "excerpt": "The answers are going to vary widely depending on conflict intensity and scale. In a slow-burning counterinsurgency, squad-level infantry engagements with limited, occasional artillery and air support",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19rzjo545y96t/"
+                  },
+                  {
+                    "author": "-spartacus-",
+                    "date": "2026-11-01",
+                    "excerpt": "It really comes down to military doctrine. You can't find maneuver and suppress warfare with bolt-actions against an enemy with automatic fire. You can, however, fight asymmetric ambushes and small en",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19rzl2u5mz3sy/"
+                  },
+                  {
+                    "author": "genghiswolves",
+                    "date": "2026-11-01",
+                    "excerpt": "From what I gathered, soldiers care most about: Weight, reliability, ease of use, performance, roughly in that order (depending on the role and task). Going all the way back the the enfield would be a",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19rzjgz1fv3t1/"
+                  },
+                  {
+                    "author": "tiredstars",
+                    "date": "2026-11-01",
+                    "excerpt": "I wonder how much soldiers' preferences match what's actually best for a military. It's much harder for a soldier (or anyone else, for that matter) to judge the effectiveness of a weapon at killing/in",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19s02r05t5x4z/"
+                  },
+                  {
+                    "author": "NikkoJT",
+                    "date": "2026-11-02",
+                    "excerpt": "The thing really is that small arms of a similar type are largely the same. Full-length bolt-action vs select-fire assault rifle is not similar types. Magazine depth, rate of fire, and weight and size",
+                    "score": 1,
+                    "url": "https://reddit.com/r/CredibleDefense/comments/1xkzc8n/comment/19s0d7zoge39e/"
+                  }
+                ]
+              },
+              "published_at": "2026-11-01",
+              "relevance_hint": 0.2,
+              "snippet": "While it doesn't appear the war in Ukraine is close to an end, there's some small good news happening. Ukrainian evacuees reach Belarus as Melania Trump-brokered Oleshky ceasefire takes effect (1) Fou I’m not too sure if first-hand experiences are allowed here but it appears the Ukrainian ‘Air Alert!’ App has been hacked. Warnings not too long ago announced a chemical /nuclear attack in Kyiv follow I have read some OSINT pages, earlier today, mentioning american intelligence telling Ukraine that bombers were airborne and a missile attack may follow. So, speculation on my part, could it be a coor",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Active Conflicts & News Megathread November 01, 2026",
+              "url": "https://www.reddit.com/r/CredibleDefense/comments/1xkzc8n/active_conflicts_news_megathread_november_01_2026/",
+              "why_relevant": "Reddit listing"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "T1 bilateral ceasefire terms and election countercase",
+            "T2 execution and verification counterevidence"
+          ],
+          "title": "Active Conflicts & News Megathread November 01, 2026",
+          "url": "https://www.reddit.com/r/CredibleDefense/comments/1xkzc8n/active_conflicts_news_megathread_november_01_2026/"
+        },
+        "unranked": false
+      },
+      "published_at": "2026-11-01",
+      "publisher": "reddit",
+      "quote": "Active Conflicts & News Megathread November 01, 2026\nWhile it doesn't appear the war in Ukraine is close to an end, there's some small good news happening. Ukrainian evacuees reach Belarus as Melania Trump-brokered Oleshky ceasefire takes effect (1) Fou I’m not too sure if first-hand experiences are allowed here but it appears the Ukrainian ‘Air Alert!’ App has been hacked. Warnings not too long ago announced a chemical /nuclear attack in Kyiv follow I have read some OSINT pages, earlier today, mentioning american intelligence telling Ukraine that bombers were airborne and a missile attack may follow. So, speculation on my part, could it be a coor",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "本次所见Reddit材料偏题，无法回答美伊双边期限/核查；综合冲突串不能按标题中的ceasefire认定对象。",
+        "relevance": "irrelevant",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reddit.com/r/CredibleDefense/comments/1xkzc8n/active_conflicts_news_megathread_november_01_2026/"
+    },
+    {
+      "access_status": "ok",
+      "author": null,
+      "canonical_url": "https://www.reddit.com/r/iran/comments/1xl2r6a/one_month_in_iran_kindle_book_for_free/",
+      "engagement": {
+        "num_comments": 4,
+        "score": 28
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S19",
+      "locator": "body",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "R10",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "body": "One month in Iran kindle book for free\nWhere did you find kids in traditional clothes? I never once seen one and I'm Iranian In Yazd. They were Zoroastrian kids, if I recall well. Fix me if I am wrong.",
+          "container": "iran",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 4,
+            "score": 28
+          },
+          "engagement_score": 30,
+          "freshness": 100,
+          "item_id": "R10",
+          "local_rank_score": 0.28,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [
+              "Where did you find kids in traditional clothes? I never once seen one and I'm Iranian",
+              "In Yazd. They were Zoroastrian kids, if I recall well. Fix me if I am wrong."
+            ],
+            "top_comments": [
+              {
+                "author": "Aromatic_Garlic4041",
+                "date": "2026-11-01",
+                "excerpt": "Where did you find kids in traditional clothes? I never once seen one and I'm Iranian",
+                "score": 1,
+                "url": "https://reddit.com/r/iran/comments/1xl2r6a/comment/19rziieb4v25f/"
+              },
+              {
+                "author": "lostwandererHR",
+                "date": "2026-11-01",
+                "excerpt": "In Yazd. They were Zoroastrian kids, if I recall well. Fix me if I am wrong.",
+                "score": 1,
+                "url": "https://reddit.com/r/iran/comments/1xl2r6a/comment/19rzjge96rkx0/"
+              }
+            ]
+          },
+          "published_at": "2026-11-01",
+          "relevance_hint": 0.1,
+          "snippet": "Where did you find kids in traditional clothes? I never once seen one and I'm Iranian In Yazd. They were Zoroastrian kids, if I recall well. Fix me if I am wrong.",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "One month in Iran kindle book for free",
+          "url": "https://www.reddit.com/r/iran/comments/1xl2r6a/one_month_in_iran_kindle_book_for_free/",
+          "why_relevant": "Reddit listing"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-11-01",
+      "publisher": "reddit",
+      "quote": "One month in Iran kindle book for free\nWhere did you find kids in traditional clothes? I never once seen one and I'm Iranian In Yazd. They were Zoroastrian kids, if I recall well. Fix me if I am wrong.",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "本次所见Reddit材料偏题，无法回答美伊双边期限/核查；综合冲突串不能按标题中的ceasefire认定对象。",
+        "relevance": "irrelevant",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reddit.com/r/iran/comments/1xl2r6a/one_month_in_iran_kindle_book_for_free/"
+    },
+    {
+      "access_status": "ok",
+      "author": null,
+      "canonical_url": "https://www.reddit.com/r/iran/comments/1xjkpks/iran_is_no_place_for_amateurs/",
+      "engagement": {
+        "num_comments": 9,
+        "score": 77
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S20",
+      "locator": "body",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "R6",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "body": "Iran is no place for amateurs\nThe irony is the road ahead is clear, judging from the rear window I think it’s just supposed to be funny and cute. I wouldn’t overthink it. Asim Munir called shotgun on one of his 17 previous trips to Tehran.",
+          "container": "iran",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 9,
+            "score": 77
+          },
+          "engagement_score": 43,
+          "freshness": 93,
+          "item_id": "R6",
+          "local_rank_score": 0.2755,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [
+              "The irony is the road ahead is clear, judging from the rear window",
+              "I think it’s just supposed to be funny and cute. I wouldn’t overthink it.",
+              "Asim Munir called shotgun on one of his 17 previous trips to Tehran."
+            ],
+            "top_comments": [
+              {
+                "author": "Just_Some_Rolls",
+                "date": "2026-10-30",
+                "excerpt": "The irony is the road ahead is clear, judging from the rear window",
+                "score": 13,
+                "url": "https://reddit.com/r/iran/comments/1xjkpks/comment/19rw1a1fsal7m/"
+              },
+              {
+                "author": "felinebeeline",
+                "date": "2026-10-30",
+                "excerpt": "I think it’s just supposed to be funny and cute. I wouldn’t overthink it.",
+                "score": 6,
+                "url": "https://reddit.com/r/iran/comments/1xjkpks/comment/19rw3jfaxahut/"
+              },
+              {
+                "author": "SentientSeaweed",
+                "date": "2026-10-30",
+                "excerpt": "Asim Munir called shotgun on one of his 17 previous trips to Tehran.",
+                "score": 6,
+                "url": "https://reddit.com/r/iran/comments/1xjkpks/comment/19rwge0nndihx/"
+              },
+              {
+                "author": "AmAghapoyr",
+                "date": "2026-10-31",
+                "excerpt": "buckle up kids!",
+                "score": 3,
+                "url": "https://reddit.com/r/iran/comments/1xjkpks/comment/19rx5bifb6wo4/"
+              },
+              {
+                "author": "Every-Web-7170",
+                "date": "2026-10-30",
+                "excerpt": "Why pak is on front seat ?",
+                "score": 2,
+                "url": "https://reddit.com/r/iran/comments/1xjkpks/comment/19rw292sdgmao/"
+              },
+              {
+                "author": "felinebeeline",
+                "date": "2026-10-31",
+                "excerpt": "Who was driving?",
+                "score": 2,
+                "url": "https://reddit.com/r/iran/comments/1xjkpks/comment/19rwxn9rthip0/"
+              }
+            ]
+          },
+          "published_at": "2026-10-30",
+          "relevance_hint": 0.13,
+          "snippet": "The irony is the road ahead is clear, judging from the rear window I think it’s just supposed to be funny and cute. I wouldn’t overthink it. Asim Munir called shotgun on one of his 17 previous trips to Tehran.",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Iran is no place for amateurs",
+          "url": "https://www.reddit.com/r/iran/comments/1xjkpks/iran_is_no_place_for_amateurs/",
+          "why_relevant": "Reddit listing"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-30",
+      "publisher": "reddit",
+      "quote": "Iran is no place for amateurs\nThe irony is the road ahead is clear, judging from the rear window I think it’s just supposed to be funny and cute. I wouldn’t overthink it. Asim Munir called shotgun on one of his 17 previous trips to Tehran.",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "本次所见Reddit材料偏题，无法回答美伊双边期限/核查；综合冲突串不能按标题中的ceasefire认定对象。",
+        "relevance": "irrelevant",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reddit.com/r/iran/comments/1xjkpks/iran_is_no_place_for_amateurs/"
+    },
+    {
+      "access_status": "snippet",
+      "author": null,
+      "canonical_url": "https://www.reddit.com/r/iran/comments/1xhfm9e/esmaeili_strikes_gold_as_iran_seals_historic/",
+      "engagement": {
+        "num_comments": 1,
+        "score": 16
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S21",
+      "locator": "",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "R4",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "body": "Esmaeili strikes gold as Iran seals historic back-to-back Greco-Roman world titles",
+          "container": "iran",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 1,
+            "score": 16
+          },
+          "engagement_score": 22,
+          "freshness": 86,
+          "item_id": "R4",
+          "local_rank_score": 0.263,
+          "local_relevance": 0.04,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-28",
+          "relevance_hint": 0.18,
+          "snippet": "Esmaeili strikes gold as Iran seals historic back-to-back Greco-Roman world titles",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Esmaeili strikes gold as Iran seals historic back-to-back Greco-Roman world titles",
+          "url": "https://www.reddit.com/r/iran/comments/1xhfm9e/esmaeili_strikes_gold_as_iran_seals_historic/",
+          "why_relevant": "Reddit listing"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-28",
+      "publisher": "reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "本次所见Reddit材料偏题，无法回答美伊双边期限/核查；综合冲突串不能按标题中的ceasefire认定对象。",
+        "relevance": "irrelevant",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reddit.com/r/iran/comments/1xhfm9e/esmaeili_strikes_gold_as_iran_seals_historic/"
+    },
+    {
+      "access_status": "ok",
+      "author": null,
+      "canonical_url": "https://www.reddit.com/r/iran/comments/1xgxwdq/children_of_iran_and_palestine_hamash_piroz_bashid/",
+      "engagement": {
+        "num_comments": 9,
+        "score": 181
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S22",
+      "locator": "body",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "R8",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "body": "Children of Iran and Palestine, hamash piroz bashid\nWhat the hell is up with that extra hand Dajjal :) I wanna see the original post lol, the pic looks like AI",
+          "container": "iran",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 9,
+            "score": 181
+          },
+          "engagement_score": 48,
+          "freshness": 83,
+          "item_id": "R8",
+          "local_rank_score": 0.2555,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [
+              "What the hell is up with that extra hand",
+              "I wanna see the original post lol, the pic looks like AI",
+              "😂🤣🤣😂🤣😂🤣 they do better lego vids"
+            ],
+            "top_comments": [
+              {
+                "author": "fatrustyfarts",
+                "date": "2026-10-27",
+                "excerpt": "What the hell is up with that extra hand",
+                "score": 14,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19rqxdr27osww/"
+              },
+              {
+                "author": "commandersafegurad",
+                "date": "2026-10-27",
+                "excerpt": "Dajjal :)",
+                "score": 7,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19rr3fzmxaixv/"
+              },
+              {
+                "author": "Positive_Version_889",
+                "date": "2026-10-27",
+                "excerpt": "I wanna see the original post lol, the pic looks like AI",
+                "score": 5,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19rqwdhhgqpgl/"
+              },
+              {
+                "author": "Low-Challenge5099",
+                "date": "2026-10-27",
+                "excerpt": "Damn, that's cold",
+                "score": 4,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19rqwyz8s6tlx/"
+              },
+              {
+                "author": "wggn",
+                "date": "2026-10-28",
+                "excerpt": "ai slop",
+                "score": 2,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19rr9awsnvfj6/"
+              },
+              {
+                "author": "wggn",
+                "date": "2026-10-28",
+                "excerpt": "because it is",
+                "score": 2,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19rr9b4eeztr6/"
+              },
+              {
+                "author": "impacted_bowel",
+                "date": "2026-10-28",
+                "excerpt": "😂😂",
+                "score": 1,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19rr7jqe1fvqd/"
+              },
+              {
+                "author": "Ok_Photo_865",
+                "date": "2026-11-01",
+                "excerpt": "😂🤣🤣😂🤣😂🤣 they do better lego vids",
+                "score": 1,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19ryqd8k61bog/"
+              },
+              {
+                "author": "Own_Chocolate_6810",
+                "date": "2026-10-28",
+                "excerpt": "Slop",
+                "score": -1,
+                "url": "https://reddit.com/r/iran/comments/1xgxwdq/comment/19rr9r32q0zts/"
+              }
+            ]
+          },
+          "published_at": "2026-10-27",
+          "relevance_hint": 0.1,
+          "snippet": "What the hell is up with that extra hand Dajjal :) I wanna see the original post lol, the pic looks like AI",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Children of Iran and Palestine, hamash piroz bashid",
+          "url": "https://www.reddit.com/r/iran/comments/1xgxwdq/children_of_iran_and_palestine_hamash_piroz_bashid/",
+          "why_relevant": "Reddit listing"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-27",
+      "publisher": "reddit",
+      "quote": "Children of Iran and Palestine, hamash piroz bashid\nWhat the hell is up with that extra hand Dajjal :) I wanna see the original post lol, the pic looks like AI",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "本次所见Reddit材料偏题，无法回答美伊双边期限/核查；综合冲突串不能按标题中的ceasefire认定对象。",
+        "relevance": "irrelevant",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reddit.com/r/iran/comments/1xgxwdq/children_of_iran_and_palestine_hamash_piroz_bashid/"
+    },
+    {
+      "access_status": "snippet",
+      "author": null,
+      "canonical_url": "https://www.reddit.com/r/iran/comments/1xfxbeg/brugada_and_other_common_genetic_diseases_of_iran/",
+      "engagement": {
+        "num_comments": 2,
+        "score": 9
+      },
+      "engagement_collected_at": "2026-11-02T03:34:20.442193+00:00",
+      "engine_rank": null,
+      "evidence_kind": "opinion",
+      "id": "S23",
+      "locator": "",
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "origin_id": null,
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_candidate_id": null,
+        "engine_item_id": "R11",
+        "engine_rank": null,
+        "engine_version": "3.30.0",
+        "raw_candidate": {
+          "body": "Brugada and other common genetic diseases of Iran",
+          "container": "iran",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 2,
+            "score": 9
+          },
+          "engagement_score": 20,
+          "freshness": 80,
+          "item_id": "R11",
+          "local_rank_score": 0.22000000000000003,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-26",
+          "relevance_hint": 0.1,
+          "snippet": "Brugada and other common genetic diseases of Iran",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Brugada and other common genetic diseases of Iran",
+          "url": "https://www.reddit.com/r/iran/comments/1xfxbeg/brugada_and_other_common_genetic_diseases_of_iran/",
+          "why_relevant": "Reddit listing"
+        },
+        "unranked": true
+      },
+      "published_at": "2026-10-26",
+      "publisher": "reddit",
+      "quote": "",
+      "retrieved_at": "2026-11-02T03:34:20.442193Z",
+      "selection": {
+        "priority": "background",
+        "purpose": "候选池审计与待追出处",
+        "reason": "本次所见Reddit材料偏题，无法回答美伊双边期限/核查；综合冲突串不能按标题中的ceasefire认定对象。",
+        "relevance": "irrelevant",
+        "selected": false
+      },
+      "supports": [
+        "view"
+      ],
+      "tier": "T4",
+      "url": "https://www.reddit.com/r/iran/comments/1xfxbeg/brugada_and_other_common_genetic_diseases_of_iran/"
+    }
+  ],
+  "historical": false,
+  "schema_version": 2,
+  "selection_summary": {
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting",
+    "selected": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37",
+      "S26",
+      "S24",
+      "S25"
+    ]
+  },
+  "source_status": {
+    "IAEA_current": {
+      "reason": "定向搜索只返旧文件，不能说明当前核查未实施",
+      "status": "no_results"
+    },
+    "Kalshi_matching": {
+      "reason": "定向搜索未取得直接匹配的Kalshi合约；核协议合约不是同义比较。",
+      "status": "no_results"
+    },
+    "community": {
+      "reason": "引擎Reddit与HN成功，14条候选主要偏题；3条评论作为机制分歧备查，不能支持外部事实。X等未运行。",
+      "status": "partial"
+    },
+    "independent_AP": {
+      "reason": "原站及Local10/CityNews/WBAL转刊未取得全文",
+      "status": "unreachable"
+    },
+    "latest_reuters": {
+      "reason": "11月1日AOL转刊可读，声明作归属观点使用",
+      "status": "ok"
+    },
+    "official": {
+      "reason": "取得6月白宫历史原文，未取得当前双边协议与完整履约安排",
+      "status": "partial"
+    },
+    "prediction_market": {
+      "reason": "取得两组Gamma原始规则、8个YES订单簿及0基础费率；正文选7期。书面规则与部分Gamma endDate时区不一致，以书面裁决为准。",
+      "status": "ok"
+    },
+    "shipping": {
+      "reason": "取得Reuters转刊，UKMTO通知仍为转述，未取得独立现场确认",
+      "status": "partial"
+    }
+  }
+}

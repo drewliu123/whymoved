@@ -1,0 +1,50 @@
+{
+  "qid": "Q006",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "published_at": "2026-07-16",
+      "publisher": "Reuters via MarketScreener",
+      "url": "https://uk.marketscreener.com/news/gold-falls-as-mideast-escalation-dims-hopes-of-easing-inflation-ce7f5ed2df8df72c",
+      "excerpt": "Oil prices remained near a one month-high as concerns over Middle East energy supplies increased after Iran asked Yemen's Houthis to stand ready to close the Red Sea oil route if the U.S. strikes Iranian power infrastructure. Higher oil prices stoke inflation concerns, raising expectations of elevated interest rates and denting gold's appeal as a non-yielding asset.",
+      "relevance": "Documents the energy-inflation and interest-rate pressures affecting precious metals immediately before the cutoff."
+    },
+    {
+      "published_at": "2026-07-08T06:09:00-04:00",
+      "publisher": "Reuters via MarketScreener",
+      "url": "https://ca.marketscreener.com/news/india-silver-import-curbs-create-shortages-push-premiums-to-six-month-high-ce7f5ed8d08fff22",
+      "excerpt": "India's restrictions on silver imports have created shortages in the world's biggest market for the precious metal, pushing premiums to their highest levels in six months despite weaker-than-usual demand. Lower imports by India, which meets more than 80% of its silver demand through overseas purchases, could weigh on global prices, while helping narrow the country's trade deficit and ease pressure on its rupee currency.",
+      "relevance": "Identifies a July-specific restriction that can reduce global physical demand even while creating local shortages."
+    },
+    {
+      "published_at": "2026-07-08T14:05:00-04:00",
+      "publisher": "Reuters via Fidelity",
+      "url": "https://www.fidelity.com/news/article/us-economy/202607081405RTRSNEWSCOMBINED_KBN3T429X-OUSBS_1",
+      "excerpt": "A \"few participants\" at the June 16-17 meeting said there was already a case to raise borrowing costs, even though they ultimately agreed with their colleagues to hold rates steady \"at this meeting.\" The broader debate, however, seemed evenly divided, minutes of the session showed on Wednesday, with \"most participants\" seeing a scenario in which inflation would fall towards the Fed's 2% target on its own, but also one in which it would remain high.",
+      "relevance": "Provides contemporaneous evidence of monetary-policy uncertainty that could influence silver demand and volatility during the remaining July sessions."
+    },
+    {
+      "published_at": "2026-05-14",
+      "publisher": "Kitco News, reporting UBS research",
+      "url": "https://www.kitco.com/news/article/2026-05-14/silver-price-outlooks-chopped-supply-deficit-forecasted-narrow-dramatically",
+      "excerpt": "Turning to investment demand, the UBS analysts noted that total known ETF holdings have dropped by nearly 70 million ounces to around 794 million ounces, and net speculative futures positioning has pulled back to just above 100 million ounces. UBS now projects the 2026 silver market supply deficit to narrow to roughly 60–70 million ounces, a dramatic reduction from the previous estimate of 300 million ounces. Although implied volatility has come down significantly from earlier this year — when one-month realized volatility nearly reached 150% in February — it remains historically elevated.",
+      "relevance": "Combines weakening investment participation with evidence of unusually high volatility relevant to an intramonth threshold event."
+    },
+    {
+      "published_at": "2026-04-15",
+      "publisher": "The Silver Institute; research by Metals Focus",
+      "url": "https://silverinstitute.org/elevated-lease-rates-regional-liquidity-tightness-and-robust-investor-interest-resulted-in-record-silver-prices-in-2025/",
+      "excerpt": "Global silver mine production is expected to remain flat in 2026. Broader grade-related and operational pressures across key producing regions should offset modest growth at a limited number of assets. With mine production stable this year, we expect the structural market deficit to widen to 46.3 Moz.",
+      "relevance": "Supplies an official industry baseline for constrained supply and a continuing annual deficit."
+    },
+    {
+      "published_at": "2026-04-15",
+      "publisher": "Reuters via Kitco News",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-04-15/silver-faces-sixth-year-deficit-stock-drawdown-raising-squeeze-risks",
+      "excerpt": "Metals Focus estimates that 28% of 884 million ounces of silver held in London vaults at end-March were not tied to ETPs and were potentially available to support liquidity, the highest share since January 2025 and up from a historic low of 17% in September that helped precipitate the October squeeze. Conditions for a silver squeeze will be created again, requiring further outflows from the U.S., if the price becomes more volatile and Indian demand gets active, especially coupled with inflows to ETPs storing their metal in London, Newman said.",
+      "relevance": "Explains the inventory and investment-flow conditions under which a renewed liquidity squeeze could generate a sharp silver move."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-17. Included only articles with explicit publication dates at or before the cutoff; the July 16 Reuters article also displays a July 16 update date. Publication dates and excerpts were verified from article text or dated web-search evidence. Native web_fetch failed with a provider-configuration error; agent-reach web read supplied article text where available, while some other retrievals failed and dated search evidence was used for those items. Excluded later articles, retrospective monthly recaps, undated sources, prediction-market and betting pages, odds, and quoted asset prices. Dynamic quote widgets, later related headlines, and other page furniture were excluded. No outcome determination is made: these sources do not establish whether an eligible Pyth XAGUSD one-minute candle crossed the threshold, and the supplied rules omit the market-creation timestamp and truncate the resolution-source link."
+}

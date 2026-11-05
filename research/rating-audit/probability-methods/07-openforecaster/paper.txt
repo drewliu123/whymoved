@@ -1,0 +1,2867 @@
+
+
+
+Scaling Open-Ended Reasoning To Predict the Future
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      Report GitHub Issue
+      ×
+    
+
+    
+
+      Title:
+      
+
+      
+Content selection saved. Describe the issue below:
+
+      Description:
+      
+    
+
+    
+      Submit without GitHub
+      Submit in GitHub
+    
+  
+
+
+    
+    arXiv is now an independent nonprofit!
+    Learn more
+    ×
+  
+
+
+  
+
+    
+      Back to arXiv
+    
+  
+  
+  
+    Why HTML?
+    
+      
+        
+      
+      Report Issue
+    
+    
+      
+        
+        
+      
+      Back to Abstract
+    
+    
+    
+      
+        
+      
+      Download PDF
+    
+    
+      
+        
+        
+      
+    
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+          
+          
+        
+      
+      
+        
+          
+          
+        
+      
+      
+        
+          
+          
+        
+      
+    
+  
+
+
+
+
+Abstract
+
+1 Introduction
+
+2 Related Work
+
+3 Open-Ended Forecasting
+
+4 Generating Open-Ended Forecasting Questions from News
+
+
+4.1 Methodology for Generating Forecasting Questions
+
+4.2 OpenForesight: An Open, Large-Scale Forecasting Training Dataset
+
+
+5 Prediction System
+
+6 Final Results
+
+7 Conclusion
+
+References
+
+Appendix
+
+
+A Adapting Brier Score to free-form responses
+
+B Analyzing OpenForesight Dataset
+
+
+B.1 Analysis of Best Question Selection
+
+B.2 Distribution of Answer Types
+
+
+C Qualitative Analysis of Final Answers
+
+
+C.1 Test Set
+
+
+D Additional Results
+
+
+D.1 Ablation: Using Prediction Market Binary Data
+
+D.2 Evaluation on Metaculus Questions
+
+
+Prediction Market Dataset.
+
+Results on Real Market Questions.
+
+
+D.3 Varying models and evaluation months
+
+
+Improvement on non-Qwen models.
+
+Results over time.
+
+
+D.4 Consistency Evaluation
+
+
+E Qualitative Analysis of Reasoning Evolution During Training
+
+
+E.1 Example 1: Model stays incorrect but learns to hedge
+
+E.2 Example 2: Model goes from incorrect to correct
+
+E.3 Example 3: Model goes from correct to incorrect, but interestingly reasons about brier
+
+
+F Systematic Failure Modes in Model Reasoning
+
+
+1. Missing Information in Retrieved Articles
+
+2. Over-reliance on General Knowledge
+
+3. Entity Confusion: Selecting Wrong Person/Place/Organization
+
+
+G Prompt Templates
+
+
+G.1 Question Creation Pipeline
+
+
+G.2 Evaluation Prompts
+
+
+H Details on Compute and Cost
+
+
+Cost.
+
+
+
+
+
+
+
+
+
+
+
+  
+    License: CC BY 4.0
+  
+  
+
+arXiv:2512.25070v1 [cs.LG] 31 Dec 2025
+
+
+
+
+Scaling Open-Ended Reasoning To Predict the Future
+
+
+
+Nikhil Chandak
+
+Affiliation: Max Planck Institute for Intelligent Systems
+
+  
+Shashwat Goel
+
+Affiliation: Max Planck Institute for Intelligent Systems
+
+  
+Ameya Prabhu
+
+Affiliation: Tübingen AI Center
+
+  
+Moritz Hardt
+
+Affiliation: Max Planck Institute for Intelligent Systems
+
+  
+Jonas Geiping
+
+Affiliation: Max Planck Institute for Intelligent Systems
+
+Affiliation: ELLIS Institute Tübingen 
+
+
+Affiliation: University of Tübingen
+
+
+
+Abstract
+    
+
+High-stakes decision making involves reasoning under uncertainty about the future. In this work, we train language models to make predictions on open-ended forecasting questions. To scale up training data, we synthesize novel forecasting questions from global events reported in daily news, using a fully automated, careful curation recipe. We train the Qwen3 thinking models on our dataset, OpenForesight. To prevent leakage of future information during training and evaluation, we use an offline news corpus, both for data generation and retrieval in our forecasting system. Guided by a small validation set, we show the benefits of retrieval, and an improved reward function for reinforcement learning (RL). Once we obtain our final forecasting system, we perform held-out testing between May to August 2025. Our specialized model, OpenForecaster8B, matches much larger proprietary models, with our training improving the accuracy, calibration, and consistency of predictions. We find calibration improvements from forecasting training generalize across popular benchmarks. We open-source all our models, code, and data to make research on language model forecasting broadly accessible.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+ Webpage
+      
+
+ Code
+     
+
+ Dataset and Models   
+
+
+
+
+
+1 Introduction
+
+
+
+
+Every day, people navigate decisions under uncertainty, due to incomplete evidence or competing hypotheses. The highest-stakes choices are inherently forward-looking: governments set policy while anticipating macroeconomic and geopolitical shifts; investors allocate capital amid market and regulatory uncertainty; individuals choose careers as technologies evolve; and scientists pursue research directions in search of the next breakthrough. Decades of work (Tetlock et al., 2014) on human forecasting shows that while prediction is hard and skill varies widely, it is possible to train humans to become better forecasters. In fact, some “superforecasters” consistently outperform peers. While there is a ceiling to predictability in social systems (Franklin, 1999), we do not yet know where that ceiling lies in the real world.
+
+
+
+
+If trained at scale for forecasting world events, Large Language Models (LLMs) may enjoy structural advantages over humans: they can ingest and synthesize vast, heterogeneous corpora across thousands of topics; and update predictions rapidly as new information arrives. Just like language models now show superhuman reasoning on some exam-style math and coding problems (OpenAI, 2025), in the future, language model forecasters may be able to come up with possibilities that humans miss. So in this work, we study:
+
+
+
+
+
+How can we train language models to better forecast open-ended questions?
+
+
+
+
+
+
+Scaling training data for forecasting. As forecasting world events is hard for humans, detailed and correct reasoning traces for forecasting are difficult to obtain. Fortunately, recent success in Reinforcement Learning (RL) for language models enables training with just the eventual outcome of the question (Guo et al., 2025). Further, the static knowledge cutoff of LLMs enables a unique opportunity: events that resolve after the cutoff are in the future for the model. Even then, sourcing questions at scale for training forecasting abilities has a few key challenges. First, waiting for events to resolve is too slow as a feedback loop for training. Second, prediction markets–the primary source for existing forecasting questions–mostly consist of binary yes or no questions. As there is a 50% chance of success on these questions even with incorrect reasoning, they make for noisy rewards.
+
+
+
+
+Instead, we use global news, which covers a large number of salient events every day, to synthesize open-ended forecasting questions like “Who will be confirmed as the new prime minister of Ukraine on 17 July 2025?”. Our recipe for creating training data is entirely automated and scalable, with one language model extracting events from news articles to generate questions, and a different model filtering and rewriting questions to avoid leaking future information. For this work, we use this recipe with 250,000 articles up till April 2025, to create OpenForesight, a dataset of ∼\sim 50,000 open-ended forecasting questions for training. To grade responses for open-ended questions, we use model-based answer matching (Chandak et al., 2025) consistent with frontier benchmarks like Humanity’s Last Exam (Phan et al., 2025).
+
+
+
+
+Ensuring we truly improve forecasting. We take extensive measures to avoid the leakage of future information during training and evaluation. First, we do not use online search engines for sourcing news, as they have unreliable date cutoffs due to dynamic updates to documents and search ranking (Paleka et al., 2025a). Instead, we use the CommonCrawl News corpus, which provides static, monthly snapshots of global news. Second, we only train on events until April 2025, which is when the Qwen3 model weights we train were released. Finally, we do not observe performance on the test set until the very end. Our test set is composed of diverse news sources, different from the ones used in training and validation, to ensure we are not just learning distributional biases of the training data.
+
+
+
+
+Validating design choices for LLM Forecasting Systems. We start from Qwen3 (Yang et al., 2025) 4B and 8B models with thinking enabled. We perform all ablations on a small validation set. We use dense retrieval with the Qwen3-8B Embedding model to provide forecasters relevant chunks from our offline news corpus. Despite a cautious approach of only retrieving articles until one month before the question resolution date to avoid leakage, the retrieved information leads to large improvements. Then, we train language models using RL with GRPO. For the reward function, we propose combining accuracy, and an adaptation of the brier score for open-ended responses (Damani et al., 2025). Ablations show rewarding accuracy alone hurts calibration, while optimizing only the brier score hurts exploration on hard questions. Our final methodology is illustrated in Figure 1.
+
+
+Figure 1: A summary of our methodology for training language model forecasters.
+
+
+
+
+Final results. In Section 6, we report results on our held-out test set of open-ended forecasting questions from May to August 2025, and FutureX (Zeng et al., 2025), an external forecasting benchmark. RL training on OpenForesight makes the predictions of our specialized 8B model competitive with much larger proprietary models in both accuracy and calibration. We also observe large improvements on consistency evaluations for long-term predictions (Paleka et al., 2025b). Finally, we find calibration from our forecasting training generalizes to multiple out of distribution benchmarks.
+
+
+
+
+By providing rigorous probabilistic predictions, open-ended forecasting systems could transform policy making, corporate planning, and financial risk management (Tetlock, 2017). To promote forecasting research, we open-source our dataset, code, and models.
+
+
+
+
+
+2 Related Work
+
+
+
+
+Forecasting World Events. Much prior work in Machine Learning and Statistics has focused on forecasting numeric or time-series data (Box and Jenkins, 1976) in diverse domains like weather (Richardson, 1922), econometrics (Tinbergen, 1939) or finance (Cowles, 1933). Instead, our work focuses on the prediction of discrete world events, with both questions and answers described in natural language, also called judgemental forecasting (Tetlock and Gardner, 2016). In the rest of our paper, we refer to this as forecasting for brevity. In prior work on evaluating language models for forecasting (Zou et al., 2022; Karger et al., 2024), questions are primarily sourced from prediction markets like Metaculus, Manifold, and Polymarket. Prediction markets provide a platform for online participants to register predictions on questions like “Will Donald Trump win the US Presidential Election in 2024?", which mostly have binary, yes or no, outcomes and have rapidly grown in popularity over the last few years.
+
+
+
+
+Evaluating LLMs for Forecasting. New information (before the event resolves) benefits forecasting. Thus, LLM forecasting work (Zou et al., 2022; Halawi et al., 2024) provides relevant retrieved articles to models (Lewis et al., 2020) often obtained via web-search APIs. Paleka et al. (2025a) discuss pitfalls of LLM forecasting evaluations, including leakage of outcomes from online search in backtests, and distributional biases of prediction market questions. To avoid these issues, we use static, monthly snapshots of global news for retrieval and creating questions. Jin et al. (2021) ask humans to create forecasting questions, while Dai et al. (2024) try to automate this process with LLMs. However, their questions pre-define a few outcomes to choose from.  Guan et al. (2024); Wang et al. (2025) evaluate models on open-ended forecasts, but we go a step further by showing how to train models for this task.
+
+
+
+
+Reinforcement Learning for LLMs. Shao et al. (2024) proposed Group Relative Policy Optimization (GRPO), an RL algorithm that only uses outcome rewards. This approach has been highly successful in training LLMs to reason about well-specified coding (Jain et al., 2024) and exam-style questions across domains (Phan et al., 2025). Instead, forecasting requires LLMs to reason about uncertainty. Halawi et al. (2024) proposed training language models for forecasting by Supervised Finetuning (SFT) on chain of thought traces that lead to brier scores better than the prediction market aggregate. In the same setting of binary forecasting questions, Turtel et al. (2025a) optimize brier scores using GRPO, while  Damani et al. (2025) extend it to short answer questions in other domains. We depart from these works in showing how to synthesise large-scale forecasting training data from daily news, to train models at open-ended reasoning about the future.
+
+
+
+
+
+3 Open-Ended Forecasting
+
+
+
+
+Motivation. The forecasting task we study is open-ended in two key ways:
+
+
+1. 
+
+
+
+It allows expressing arbitrary natural language forecasting questions
+
+
+2. 
+
+
+
+It may not have a structured outcome set, unlike numeric or categorical predictions. This differentiates it from both time-series forecasting, and prediction markets.
+
+
+
+For example, prediction markets are dominated by binary (yes/no) or multiple choice questions. While this design is easy to score, the most foresight often lies in predicting the unexpected, or when a large number of possibilities could occur. The most important questions to forecast—such as scientific breakthroughs, geopolitical shocks, or technological disruptions—often emerge as unknown unknowns: possibilities not anticipated, and hard to enumerate. Thus, in this work, we focus on training models to make open-ended predictions like "Which company will the US Government buy a >5% stake in by September 2025?". Such questions require exploration and imagination, rewarding novel hypotheses that turn out to be correct, rather than just distributing probabilities over a known set of outcomes.
+
+
+
+
+Background. LLM weights are frozen after training, especially for open-weight models. Any event that happens after the last date in the training corpus is in the future for the LLM. This provides a time window to collect questions for training models to reason about future events. Similarly, their evaluation involves testing on questions resolving after the cutoff date of the training data, called backtesting (Tashman, 2000). While prior work has relied on prediction market questions as training data, this has three key problems:
+
+
+1. 
+
+
+
+The questions are created by humans, which makes them low in number (Paleka et al., 2025a). This becomes a bottleneck for scaling training data, which has been an essential component in the success of LLMs (Kaplan et al., 2020; Lu, 2025).
+
+
+2. 
+
+
+
+Most questions have binary outcomes, which creates a 50% baseline success rate. This leads to noisy rewards in outcome-based RL, which means even incorrect reasoning has a high chance of being reinforced.
+
+
+3. 
+
+
+
+Each platform has a skewed distribution of events. All overrepresent US political news, along with their specific focus such as crypto-currency price movements in Polymarket, technology in Metaculus, personal life of users in Manifold, and sports events on Kalshi (Paleka et al., 2025a).
+
+
+
+These limitations motivate us to explore alternate ways to create forecasting questions.
+
+
+
+
+Setup. Let 𝒳\mathcal{X} be the set of open-ended forecasting questions; and 𝒴\mathcal{Y} the set of short textual answers. We provide a language model πθ\pi_{\theta} a question x∈𝒳x\in\mathcal{X}, for which we already know the ground-truth outcome y⋆y^{\star} as it has resolved in the real-world. We ask the model to report its best guess prediction yy, and the probability qq of it being the true outcome.
+
+
+
+
+Measuring Accuracy. We measure accuracy by checking if the model’s attempted answer yy matches with the ground truth outcome y⋆y^{\star}, using another language model to test for semantic equivalence (for example “Geoffrey Hinton” = “Geoffrey Everest Hinton”) consistent with recent frontier benchmarks (Wei et al., 2024; Phan et al., 2025). For evaluations, we use Llama-4-Scout (Meta AI, 2025), as in a recent study (Chandak et al., 2025), it at matching answers, it has inter-human levels of alignment with human judgments. During training, we use Qwen3-4B in non-thinking mode, as it achieves high alignment levels for its size in the same study. We find the two models agree on ∼97%\sim 97\% grading responses, and manual validation ensures they are accurate in ≥95%\geq 95\% cases.
+
+
+
+
+Measuring Calibration. We adapt the multi-class Brier scoring rule (Mucsányi et al., 2023) for free-form responses as follows (details in Appendix A):
+
+
+
+
+
+S′​(q,y,y∗)={1−(q−1)2,if ​y≡y∗−q2,if ​y≠y∗S^{\prime}(q,y,y^{*})=\begin{cases}1-(q-1)^{2},&\text{if }y\equiv y^{*}\\
+-q^{2},&\text{if }y\neq y^{*}\end{cases}\\
+
+
+
+
+Interpretation. Predicting an event with a probability q=0q=0 returns a baseline score of 00 regardless of the prediction yy. Correct predictions receive positive scores while incorrect predictions negative. For brevity, we call S′​(q,y,y∗)S^{\prime}(q,y,y^{*}) Brier score throughout this paper. Our Brier score is equivalent to the reward metric used by Damani et al. (2025). They show this is a proper scoring rule, incentivizing both high accuracy and truthful reporting of probability on the answer that seems most likely. For completeness, we discuss this further in Appendix A.
+
+
+
+
+Training Algorithm: GRPO (Shao et al., 2024).
+We train LLMs using outcome-based reinforcement learning on our dataset. For each prompt xx, we draw KK completions {(yi,pi)}i=1K∼πθ(⋅∣x)\{(y_{i},p_{i})\}_{i=1}^{K}\sim\pi_{\theta}(\cdot\mid x) and compute rewards ri=R⁡(yi,pi,y⋆)r_{i}=R(y_{i},p_{i};y^{\star}). However, following prior work (Damani et al., 2025; Turtel et al., 2025b), we do not divide by remove the group standard deviation when computing advantages, as this stabilizes updates in settings like ours where reward variance can be small.
+
+
+
+
+Initial Policy: Qwen3 Thinking (Yang et al., 2025). We start with the 8B thinking model. For Qwen3 models, no official knowledge–cutoff date is reported. When queried directly, the models return inconsistent cutoff dates (most often October 2023 or June 2024). Usually, they treat questions about 2024 as being in the future. Since the model weights were released and frozen in April 2025, we train up to this date, and use the period between May to August 2025 for testing. In the Appendix, we show large improvements from our training on even the Llama and Gemma models in Section D.3.
+
+
+
+
+
+4 Generating Open-Ended Forecasting Questions from News
+
+
+
+
+We now discuss our methodology to convert daily news articles into forecasting questions using language models. Any fixed forecasting dataset loses value as newer base models with training cutoffs after the dataset was created are adopted. Thus, we first describe the general methodology which can be used in the future, and then describe the specific instantiations we used to create our training data OpenForesightwhich has questions until April 2025. We conclude by demonstrating forecasting improvements due to our data filtering steps.
+
+
+
+4.1 Methodology for Generating Forecasting Questions
+
+
+Figure 2: Our question generation methodology. We use DeepSeek-v3 to generate multiple forecasting questions per news article. Then, we use Llama-4-Maverick to check if questions follow all guidelines, choose the best question, and remove any hints revealing the answer.
+
+
+
+
+We generate short-answer, open-ended forecasting questions from individual news articles as illustrated in Figure 2. We describe each step in detail below:
+
+
+
+
+Sourcing Event Information.
+News outlets establish global infrastructure for reporting salient events as they occur. Unfortunately, Paleka et al. (2025a) show that sourcing news via online search engines is unreliable. While search engines provide date cutoffs, future information can leak through updates to articles after the publish date, and even search engine ranking. This compromises the reliablity of backtests, and leaks future information in training, which can hurt Deep Learning models that easily overfit to spurious correlations. Fortunately, the CommonCrawl News (CCNews) Corpus (Nagel, 2016) provides static monthly snapshots of global news with accurate dates. This makes it free and easy to obtain news articles for creating forecasting questions.
+
+
+
+
+Generating samples from documents. Based on each news article, we ask a sample creator model to generate up to three diverse forecasting samples. Each sample consists of:
+
+
+1. 
+
+
+
+Question: Asks about the prediction of an event.
+
+
+2. 
+
+
+
+Background: Provides brief context, and defines uncommon terms.
+
+
+3. 
+
+
+
+Resolution criteria: Fixes a source of truth, proposes a resolution date for the question, and the expected answer format.
+
+
+4. 
+
+
+
+Answer: Drawn verbatim from the article, unique, short (usually 1–3 words), and non-numeric (usually a name or location).
+
+
+5. 
+
+
+
+Source article link: Obtained from article metadata for future reference.
+
+
+
+
+
+
+Sample Generated Forecasting Question
+
+
+Question. Who will be confirmed as the new prime minister of Ukraine by 17 July 2025?
+Background.
+Ukraine’s parliament is scheduled to vote to appoint a new prime minister.
+Resolution Criteria.
+
+• 
+
+Source of Truth: Official announcement from the Verkhovna Rada (Ukraine’s parliament) confirming the appointment, via parliamentary records or government press release.
+
+• 
+
+Resolution Date: 17 July 2025, the date on which the parliamentary vote occurs and results are published.
+
+• 
+
+Accepted Answer Format: Full name of the individual exactly as given in the parliamentary announcement.
+
+
+Answer Type. String (Name)
+Ground-Truth Answer. Yulia Svyrydenko
+Source. The Guardian (live blog): Ukraine live updates — 17 July 2025
+
+
+
+
+
+A challenging issue we face is that sometimes news articles talk about past events, or report an event late. This is why we ask the sample creator to propose a resolution date, and set the final resolution date as min(model_generated_date, article_publish_date). We perform additional steps, including manual review, to address this issue for evaluation questions, as described later in Section 6. For training data, we do not add more complex steps to fix resolution dates due to cost constraints.
+
+
+
+
+Filtering samples. For each question, we use another LLM, the sample selector, to verify:
+
+
+1. 
+
+
+
+The question-answer pair is fully based on information in the source article.
+
+
+2. 
+
+
+
+The question is forward-looking, for e.g. it is in future tense
+
+
+3. 
+
+
+
+The answer is definite, unambiguous, and resolvable by the publication date.
+
+
+
+We mark a question as valid only if it passes these checks. If multiple questions from a single article remain, we ask the sample selector to pick the best one, favoring questions with clear, unique answers and high relevance. This is to ensure data diversity, and enhance quality.
+
+
+
+
+Editing to fix leakage. At this stage, we find that even the filtered samples sometimes leak information about the answer. This can create shortcuts during training. To fix this, we do a final editing stage where we ask the sample selector to scan the title, background, and resolution criteria to check if they reveal the answer. When it finds leakage, we ask it to rewrite only the offending spans, replacing specifics with generic placeholders. Finally, we re-scan using exact string matching any remaining mentions of the answer, and discard those samples.
+
+
+
+
+Overall, this pipeline can continually ingest news articles and generate open-ended forecasting questions. We use the same methodology to create train, validation and test splits, but use different news sources to check if our model learns generalizable forecasting skills.
+
+
+
+
+4.2 OpenForesight: An Open, Large-Scale Forecasting Training Dataset
+
+
+
+
+We now describe the specific composition of our training dataset. We use DeepSeek v3 as the sample creator and Llama-4-Maverick as the sample selector, with prompts in Appendix G.
+
+
+
+
+Generating samples. One practical issue we face is that many top news sources, such as The Reuters and Associated Press (AP), have disallowed scraping even for CommonCrawl, due to the rise of commercial use in language model training (Grynbaum and Mac, 2023; Longpre et al., 2025). Still, we are able to collect articles from popular outlets spanning diverse geographies and topics.
+
+
+
+
+Particularly, for our training set, we start with ∼248,000\sim 248,000 deduplicated English-language articles between June 2023 to April 2025 from Forbes, CNN, Hindustan Times, Deutsche Welle, and Irish Times. The distribution is described in Figure 9. From each article, the sample creator produces three forecasting samples, yielding ∼745,000\sim 745,000 samples.
+
+
+
+
+Filtering samples.  Table 1 (right) contains a breakdown of questions remaining after each filtering stage. 60% of question-answer candidates are marked invalid — most commonly because the article does not unambiguously resolve the question to the given answer. At this stage, zero questions remain from 40% articles, and 21% articles yield exactly one valid question, which we keep as is. For the 39% with multiple valid questions, the sample selector picks the best one. Finally, we remove samples with numeric answers.
+
+
+
+
+Editing to fix leakage. Despite explicit prompts to avoid it, over 40%40\% of selected questions directly contain the answer string. The sample selector’s rewriting and rejection removes ∼\sim90% of such cases. We apply a string matching filter to remove the remaining questions with such direct leakage and finally keep only those questions which resolve after January 1, 2024.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Stage
+Number (%Total)
+
+
+Source Articles
+248,321
+
+
+Question Generation
+744,963   (100%)
+
+
+Validation
+295,274   (40%)
+
+
+Best Question Selection
+157,260   (21%)
+
+
+Fixing Leakage
+150,500   (20%)
+
+
+Answer Type Filtering
+62,279    (8%)
+
+
+Resolving after 2024-01-01
+52,183    (7%)
+
+
+Final Set
+52,183   (7%)
+
+
+Table 1: (Left) Benefits of our filtering stage. Without leakage removal (red), the model worsens at forecasting, possibly learning shortcuts. With only the leakage removal step (blue), we find that achieving the same performance requires 3×3\times more compute and data. Applying all filtering steps (green) leads to higher accuracy. (Right) Number of questions after each filtering stage.
+
+
+
+
+Validation Set. We use the same recipe to create a validation set of 207 questions using 500 randomly sampled articles from TheGuardian in the month of July 2025. To ensure high-quality, we used o4-mini-high, a much more capable model than DeepSeek-v3, to generate the seed questions. It is ∼10×\sim 10\times costlier, but followed the generation guidelines better, leading to ∼\sim 40% retention rate (207 final questions out of 500 starting articles).
+
+
+
+
+Result 1: Filtering Improves Performance.  Table 1 (left) shows the effect of our filtering steps. We train Qwen3-8B using RL with identical hyperparameters on three data variants: (red) 30,000 original generated questions, without any filtering; (blue) 30,000 samples obtained after the question editing step to remove leakage; and (green) 10,000 samples sourced from Forbes and included in OpenForesight. First, we observe the drastic impact of leakage in training. Training without leakage removal (red) worsens the model, perhaps due to shortcut learning. After the leakage removal steps, training improves the model (blue line). Yet, using all filtering stages (green line) leads to both higher accuracy and Brier score, in one-third the data and training steps.
+
+
+
+
+In Section D.1, we also ablate the effect of training on binary-only, free-form-only, and combined binary and free-form data for Qwen3-8B. We find that free-form data is crucial for improving open-ended forecasting, however, training solely on freeform data does not improve performance on binary Metaculus questions. Training with both kind of questions achieves the best trade-off, so we use this for our final training runs presented in Section 6.
+
+
+
+
+Final training dataset. Across stages, we remove ∼90%\sim 90\% of questions, yielding a training set of 52K samples, each drawn from a unique article. We evaluated Qwen3-32B on this corpus while providing it the source article alongside the generated questions. The model achieves 95%95\% accuracy confirming high validity. We release this training dataset, as OpenForesight.
+
+
+
+
+Result 2: Continued Improvements from Scaling Training Data.  Figure 3 shows the effect of scaling training dataset size. For each dataset size, we report test set (described later) results from the best validation checkpoint over prolonged training runs. We use Llama-3.1-8B-Instruct as it starts without any RL post-training. We see continued, and large gains in both accuracy and Brier score as we continue to scale up the training data, demonstrating the importance of our contribution in releasing OpenForesight.
+
+
+
+
+
+
+
+
+
+
+
+Figure 3: 
+Benefits of scaling training data. We take the best scores from training Llama-3.1-8B-Instruct on different sized subsets of OpenForesight. We see continued improvements in both accuracy and brier as the data size increases, eventually making Llama-3.1-8B-Instruct match or surpass much larger, more recent models.
+
+
+
+
+
+
+
+5 Prediction System
+
+
+
+
+We now present intermediate results that guided the design decisions for our prediction system. We did not measure performance on the held-out test set throughout development, making decisions solely based on our validation set. We did not any find any notable difference between training in temporal order (sorted by resolution date), compared to training in a randomly shuffled order. Below we present results which show the benefits of our reward design for RL training, and retrieval system.
+
+
+
+
+Reward Design. For training with RL, we compare three reward functions:
+
+
+1. 
+
+
+
+Only Accuracy (Baseline): R=𝟙y≡y∗R=\mathds{1}_{y\equiv y^{*}}. Vanilla success rewards are commonly used in literature on LLM RL with verifiable rewards (Guo et al., 2025).
+
+
+2. 
+
+
+
+Only Brier score (Damani et al. (2025)): R=S′​(q,y,y∗)=−q2+𝟙y≡y∗⋅2​qR=S^{\prime}(q,y,y^{*})=-q^{2}+\mathds{1}_{y\equiv y^{*}}\cdot 2q. This incentivizes both correct predictions and calibrated confidence estimates.
+
+
+3. 
+
+
+
+Accuracy + Brier score (Ours): R=𝟙y≡y∗+S′​(q,y,y∗)R=\mathds{1}_{y\equiv y^{*}}+S^{\prime}(q,y,y^{*}). We hypothesise optimizing the Brier score alone hurts exploration as when the model assigns a low confidence to its prediction, the correctness has a small impact on the Brier score. To fix this, we propose adding the accuracy term as well. In this case, even on hard questions, which merit low confidence, models get a large boost for correct predictions.
+
+
+
+
+Figure 4: Accuracy + Brier score reward performs the best. Accuracy alone leads to poor calibration. While brier score incentivizes both correct predictions and calibration, on hard questions with low confidence, it provides little signal on correctness. Adding the accuracy term boosts exploration in this situation.
+
+
+
+
+Result 3: Accuracy + Brier score as the reward improves performance. Figure 4 shows the validation set results of training with all three reward functions on the full OpenForesight dataset. We observe that optimizing accuracy alone (blue line) leads to negative brier scores, worse than a constant (0) baseline. In contrast, optimizing the Brier score alone (red line) also improves the accuracy, but to a lesser extent. Our proposed reward, accuracy + Brier (purple line), leads to the best performance on both metrics. It improves accuracy beyond the Brier alone while maintaining equal brier score on the validation set. Analyzing output distributions, we find that the brier-only trained model predicts “Unknown” with near-0 confidence in ∼40%\sim 40\% of samples, due to low reward for correct yet low-confidence guesses, which hurts exploration. In contrast, our proposed reward yields “Unknown” in only ∼4%\sim 4\% of samples, making low-confidence guesses on hard cases—improving both accuracy and Brier score.
+
+
+
+
+Retrieval. Like prior work (Zou et al., 2022; Halawi et al., 2024), we provide the same relevant recent information across forecasting models. This provides them new evidence, or competing viewpoints to weigh, that was available before the resolution date, but potentially after the model’s training cutoff. To prevent leakage issues (Paleka et al., 2025a), we use our offline CCNews corpus, and only use articles up to one month before the question’s resolution date. Our overall pool consists of 1 million articles across 60 different sources. We de-duplicate the articles and split each into fixed-size chunks (512 tokens) and embed each chunk with the Qwen3-embedding 8B model. During evaluation, we retrieve the top-kk most relevant chunks and append them to the model prompt in order as context.
+
+
+
+
+Retrieval leads to large improvements in accuracy. As shown in Figure 5, providing retrieved information improves accuracy by 9−18%9-18\% across model families and sizes. In Appendix Figure 13, we vary the number of retrieved chunks and find that improvements plateau after five chunks. Thus, we fix k=5k=5 chunks for all evaluations henceforth.
+
+
+Figure 5: Retrieval improves accuracy across models. We use the specialized Qwen3 8B embedding model to retrieve the 5 most relevant chunks (512 tokens) for each question. We take a cautious approach, using articles only until a month before the resolution date.
+
+
+
+
+Training the final forecasting system. Based on the above design decisions guided by validation set performance, we now describe our final training methodology: We use the Qwen3-8B embedding model to retrieve the 5 most relevant chunks from news articles until a month before each question’s resolution date. During training, we add a random number of such article chunks (between 0 to 5) in the prompt to make our forecaster generalizable to variable number of articles. We train the Qwen3-8B thinking model with GRPO on OpenForesight which has ∼\sim 50,000 samples and also include 2000 binary resolved questions from Metaculus (from 2024), both with retrieval. For the reward, we use our Accuracy + Brier score for free-form questions and only brier score for binary questions.
+
+
+
+
+
+6 Final Results
+
+
+
+
+We now present evaluations of our model, OpenForecaster8B. To avoid making decisions based on future information, we evaluate on test sets that were not observed until the end.
+
+
+
+
+Open-ended Test Set. Given the lack of open-ended forecasting benchmarks that are still “in the future” for our models, we create our own test set with additional steps to ensure high quality. We first use our data creation recipe to generate an initial set of 1,000 questions between May to August 2025 using a stronger model, o4-mini-high. We draw from five diverse news sources: Al Jazeera English (global news, based out of Qatar), Time (global news, based out of USA) The Independent (UK focused), Fox News (USA focused), NDTV (India focused), with 200 questions selected from each. The choice of sources was made under the constraint of many established news sources have disallowed crawling of their articles starting 2025.
+We deliberately use distinct sources from the training set to ensure that our model is learning generalizable forecasting skills, and not source distribution specific biases. Beginning from this initial set of 1000 questions, we perform additional filtering steps to prepare a high-quality test set:
+
+
+1. 
+
+
+
+We remove any potentially unanswerable questions (noise) by keeping only those which grok-4.1-fast could successfully answer with search tool access (85%85\%).
+
+
+2. 
+
+
+
+To address the issue of late reporting in news outlets, we again use grok-4.1-fast with search tool to find the earliest resolution date for a given question. This is important to prevent leakage from retrieving articles with the true answer. We retain only those questions with resolution date after May 2025 (64%64\%).
+
+
+3. 
+
+
+
+Finally, we manually filter the remaining questions to meet our quality checks, resulting in a final test set of 302302 questions. We provide more details like news source specific statistics in Section C.1.
+
+
+
+
+
+
+External Datasets. We use the FutureX benchmark (Zeng et al., 2025), filtering to non-numeric, English, resolved forecasting questions and evaluating all models with our retrieval. This leaves 86 binary or multiple choice questions, between July to August 2025. For evaluating long-term predictions (without retrieval), we measure consistency metrics on binary questions up to 2028 as proposed by  Paleka et al. (2025b), who show they correlate strongly with forecasting performance. Finally, to measure whether our forecasting training generalizes to calibration on standard benchmarks of LLM capabilities, we evaluate without retrieval on a challenging factuality benchmark, SimpleQA (Wei et al., 2024), and popular cross-domain reasoning benchmarks, MMLU-Pro and GPQA-Diamond.
+
+
+
+
+
+
+
+
+
+(a) Results on OpenForesight  May-Aug 2025.
+
+
+
+(b) 
+Results on FutureX July-Aug 2025.
+
+
+Figure 6: 
+Our forecasting training improves accuracy and calibration both on open-ended questions in our test set, and the external FutureX benchmark. It makes OpenForecaster8B competitive with much larger models that have knowledge cutoffs before May 2025.
+
+
+
+
+
+
+
+
+(a) Brier score on general benchmarks.
+
+
+
+(b) Calibration curve on our test set. 
+
+Figure 7: Calibration of the models improve significantly after training on OpenForesight both on (a) out of distribution benchmarks and (b) on OpenForesight test set.
+
+
+
+
+Result 4: Training on our dataset leads to large improvements in forecasting.
+Figure 6(a) shows performance of models on our held-out test set of open-ended forecasting questions. On the Brier score (Y axis), the primary metric recommended for forecasting (Tetlock and Gardner, 2016), as it measures both accuracy and calibration, OpenForecaster8B outperforms even GPT OSS 120B. Our improvements are not merely from calibration, the predictions also become more accurate (X axis), beating Qwen3 235B, but are a bit behind others. Training on OpenForesight also improves models from other families like Llama and Gemma as we show in Section D.3. We saw a particularly large (+25% absolute improvement in accuracy) improvement for Llama 3.1 8B Instruct, surpassing the much larger Qwen3-235-A22B. We also show model accuracy by month in  Figure 16.
+
+
+
+
+On FutureX, our model has the strongest accuracy by a large margin, even compared to much larger proprietary counterparts. It is close to the best for Brier score as well. Finally, our training leads to more consistent long-term predictions, improving 44% on arbitrage metrics, and 19% on frequentist metrics, with detailed results in Section D.4.
+
+
+
+
+Result 5: Calibration training for forecasting generalizes to other domains. Figure 7(a) shows downstream improvements in calibration across SimpleQA, GPQA-Diamond and MMLU-Pro.
+This calibration can then be used to reduce hallucinations, for example abstaining on questions the model is not confident about, using simple rules like if probability < 0.1, replace prediction with ‘‘I do not know’’
+
+
+
+
+
+7 Conclusion
+
+
+
+
+In this paper, we show how to curate data for scalable training of open-ended forecasting. The results are promising, an 8B model finetuned on our data becomes competitive with proprietary models like GPT-OSS-120B, DeepSeek-R1, and Grok-3-Mini. Calibration improvements from forecasting training generalize out of distribution. A few limitations remain. For example, we only use news to create forecasting questions, which leads to a distributional bias. The news also reports some events late, such as scientific breakthroughs, and this can make such questions easier to “predict” than others in our dataset. This should not affect relative performance comparisons between models though. We also do not consider long-form forecasts, as it is unclear how to grade these. Overall, open-ended forecasting, being a challenging and highly valuable task, offers exciting directions to pursue across research communities. A strong forecaster needs to reason about uncertainty, efficiently seek new information, and make optimal Bayesian updates to its world model, long-standing challenges in the quest for general intelligence. Scaling up end-to-end training of open-ended forecasting systems may lead to emergent improvements in such capabilities. By open-sourcing all our artefacts, we hope to spark more research on this important direction.
+
+
+
+
+
+Acknowledgments
+
+
+
+
+We thank Douwe Kiela, Alexander Panfilov, Tim Rocktäschel, and Guanhua Zhang for valuable discussions. We thank Maksym Andriushchenko, Arvindh Arun, Alessandro Bifulco, Paras Chopra, and Daniel Paleka for helpful feedback on our draft. We thank CCNews and TheGuardian for providing free access to news articles, Thinking Machines for providing Tinker API research credits, and Contextual AI for letting us test their retrieval system.
+
+
+
+
+
+References
+
+
+
+Box and Jenkins (1976)
+G. E. P. Box and G. M. Jenkins
+
+Time series analysis: forecasting and control.
+
+Revised ed. edition,  Holden-Day, San Francisco.
+
+External Links: ISBN 0816211043
+
+Cited by: §2.
+
+
+Chandak et al. (2025)
+N. Chandak, S. Goel, A. Prabhu, M. Hardt, and J. Geiping
+
+Answer matching outperforms multiple choice for language model evaluation.
+
+arXiv preprint arXiv:2507.02856.
+
+Cited by: §1,
+§3.
+
+
+Cowles (1933)
+A. Cowles
+
+Can stock market forecasters forecast?.
+
+Econometrica 1 (3), pp. 309–324.
+
+Cited by: §2.
+
+
+Dai et al. (2024)
+H. Dai, R. Teehan, and M. Ren
+
+Are llms prescient? a continuous evaluation using daily news as the oracle.
+
+arXiv preprint arXiv:2411.08324.
+
+Cited by: §2.
+
+
+Damani et al. (2025)
+M. Damani, I. Puri, S. Slocum, I. Shenfeld, L. Choshen, Y. Kim, and J. Andreas
+
+Beyond binary rewards: training lms to reason about their uncertainty.
+
+arXiv preprint arXiv:2507.16806.
+
+Cited by: Appendix A,
+§1,
+§2,
+§3,
+§3,
+item 2.
+
+
+Franklin (1999)
+U. Franklin
+
+The real world of technology.
+
+ House of Anansi.
+
+Cited by: §1.
+
+
+Grynbaum and Mac (2023)
+M. M. Grynbaum and R. Mac
+
+The times sues openai and microsoft over ai use of copyrighted work.
+
+The New York Times 27 (1).
+
+Cited by: §4.2.
+
+
+Guan et al. (2024)
+Y. Guan, H. Peng, X. Wang, L. Hou, and J. Li
+
+Openep: open-ended future event prediction.
+
+arXiv preprint arXiv:2408.06578.
+
+Cited by: §2.
+
+
+Guo et al. (2025)
+D. Guo, D. Yang, H. Zhang, J. Song, P. Wang, Q. Zhu, R. Xu, R. Zhang, S. Ma, X. Bi, et al.
+
+DeepSeek-r1 incentivizes reasoning in llms through reinforcement learning.
+
+Nature 645 (8081), pp. 633–638.
+
+Cited by: §1,
+item 1.
+
+
+Halawi et al. (2024)
+D. Halawi, F. Zhang, C. Yueh-Han, and J. Steinhardt
+
+Approaching human-level forecasting with language models.
+
+Advances in Neural Information Processing Systems 37, pp. 50426–50468.
+
+Cited by: §2,
+§2,
+§5.
+
+
+Jain et al. (2024)
+N. Jain, K. Han, A. Gu, W. Li, F. Yan, T. Zhang, S. Wang, A. Solar-Lezama, K. Sen, and I. Stoica
+
+Livecodebench: holistic and contamination free evaluation of large language models for code.
+
+arXiv preprint arXiv:2403.07974.
+
+Cited by: §2.
+
+
+Jin et al. (2021)
+W. Jin, R. Khanna, S. Kim, D. Lee, F. Morstatter, A. Galstyan, and X. Ren
+
+ForecastQA: a question answering challenge for event forecasting with temporal text data.
+
+External Links: Link
+
+Cited by: §2.
+
+
+Kaplan et al. (2020)
+J. Kaplan, S. McCandlish, T. Henighan, T. B. Brown, B. Chess, R. Child, S. Gray, A. Radford, J. Wu, and D. Amodei
+
+Scaling laws for neural language models.
+
+External Links: 2001.08361,
+Link
+
+Cited by: item 1.
+
+
+Karger et al. (2024)
+E. Karger, H. Bastani, C. Yueh-Han, Z. Jacobs, D. Halawi, F. Zhang, and P. E. Tetlock
+
+Forecastbench: a dynamic benchmark of ai forecasting capabilities.
+
+arXiv preprint arXiv:2409.19839.
+
+Cited by: §2.
+
+
+Lewis et al. (2020)
+P. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal, H. Küttler, M. Lewis, W. Yih, T. Rocktäschel, et al.
+
+Retrieval-augmented generation for knowledge-intensive nlp tasks.
+
+Advances in neural information processing systems 33, pp. 9459–9474.
+
+Cited by: §2.
+
+
+Longpre et al. (2025)
+S. Longpre, R. Mahari, A. Lee, C. Lund, H. Oderinwale, W. Brannon, N. Saxena, N. Obeng-Marnu, T. South, C. Hunter, K. Klyman, C. Klamm, H. Schoelkopf, N. Singh, M. Cherep, A. M. Anis, A. Dinh, C. Chitongo, D. Yin, D. Sileo, D. Mataciunas, D. Misra, E. Alghamdi, E. Shippole, J. Zhang, J. Materzynska, K. Qian, K. Tiwary, L. Miranda, M. Dey, M. Liang, M. Hamdy, N. Muennighoff, S. Ye, S. Kim, S. Mohanty, V. Gupta, V. Sharma, V. M. Chien, X. Zhou, Y. Li, C. Xiong, L. Villa, S. Biderman, H. Li, D. Ippolito, S. Hooker, J. Kabbara, S. Pentland, and D. P. Initiative
+
+Consent in crisis: the rapid decline of the AI data commons.
+
+In Proceedings of the 38th International Conference on Neural Information Processing Systems,
+
+NIPS ’24.
+
+Cited by: §4.2.
+
+
+Lu (2025)
+K. Lu
+
+The only important technology is the internet: why you should care about product‐research co‐design, and what is the dual of rl?.
+
+Note: https://kevinlu.ai/the-only-important-technology-is-the-internetPublished July 2025. Accessed: 2025-09-19
+
+Cited by: item 1.
+
+
+Meta AI (2025)
+Meta AI
+
+LLaMA-4: multimodal intelligence.
+
+Note: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+
+Cited by: §3.
+
+
+Mucsányi et al. (2023)
+B. Mucsányi, M. Kirchhof, E. Nguyen, A. Rubinstein, and S. J. Oh
+
+Trustworthy machine learning.
+
+arXiv preprint arXiv:2310.08215.
+
+Cited by: Appendix A,
+§3.
+
+
+Nagel (2016)
+S. NagelCommon crawl news dataset(Website)
+
+ Common Crawl.
+
+External Links: Link
+
+Cited by: §4.1.
+
+
+OpenAI (2025)
+OpenAI
+
+OpenAI — icpc world finals 2025.
+
+Note: https://worldfinals.icpc.global/2025/openai.html
+
+Cited by: §1.
+
+
+Paleka et al. (2025a)
+D. Paleka, S. Goel, J. Geiping, and F. Tramèr
+
+Pitfalls in evaluating language model forecasters.
+
+arXiv preprint arXiv:2506.00723.
+
+Cited by: §1,
+§2,
+item 1,
+item 3,
+§4.1,
+§5.
+
+
+Paleka et al. (2025b)
+D. Paleka, A. P. Sudhir, A. Alvarez, V. Bhat, A. Shen, E. Wang, and F. Tramèr
+
+Consistency checks for language model forecasters.
+
+In The Thirteenth International Conference on Learning Representations,
+
+External Links: Link
+
+Cited by: §D.4,
+§D.4,
+§1,
+§6.
+
+
+Phan et al. (2025)
+L. Phan, A. Gatti, Z. Han, N. Li, J. Hu, H. Zhang, C. B. C. Zhang, M. Shaaban, J. Ling, S. Shi, et al.
+
+Humanity’s last exam.
+
+arXiv preprint arXiv:2501.14249.
+
+Cited by: §1,
+§2,
+§3.
+
+
+Richardson (1922)
+L. F. Richardson
+
+Weather prediction by numerical process.
+
+ Cambridge University Press, Cambridge.
+
+Cited by: §2.
+
+
+Shao et al. (2024)
+Z. Shao, P. Wang, Q. Zhu, R. Xu, J. Song, X. Bi, H. Zhang, M. Zhang, Y. Li, Y. Wu, et al.
+
+Deepseekmath: pushing the limits of mathematical reasoning in open language models.
+
+arXiv preprint arXiv:2402.03300.
+
+Cited by: §2,
+§3.
+
+
+Tashman (2000)
+L. J. Tashman
+
+Out-of-sample tests of forecasting accuracy: an analysis and review.
+
+International Journal of Forecasting 16 (4), pp. 437–450.
+
+External Links: Document
+
+Cited by: §3.
+
+
+Tetlock and Gardner (2016)
+P. E. Tetlock and D. Gardner
+
+Superforecasting: the art and science of prediction.
+
+ Random House.
+
+Cited by: §2,
+§6.
+
+
+Tetlock et al. (2014)
+P. E. Tetlock, B. A. Mellers, N. Rohrbaugh, and E. Chen
+
+Forecasting tournaments: tools for increasing transparency and improving the quality of debate.
+
+Current Directions in Psychological Science 23 (4), pp. 290–295.
+
+Cited by: §1.
+
+
+Tetlock (2017)
+P. E. Tetlock
+
+Expert political judgment: how good is it? how can we know?-new edition.
+
+Cited by: §1.
+
+
+Tinbergen (1939)
+J. Tinbergen
+
+Statistical testing of business-cycle theories. part ii: business cycles in the united states of america, 1919–1932.
+
+ League of Nations, Geneva.
+
+Cited by: §2.
+
+
+Turtel et al. (2025a)
+B. Turtel, D. Franklin, and P. Schoenegger
+
+Llms can teach themselves to better predict the future.
+
+arXiv preprint arXiv:2502.05253.
+
+Cited by: §D.1,
+§2.
+
+
+Turtel et al. (2025b)
+B. Turtel, D. Franklin, K. Skotheim, L. Hewitt, and P. Schoenegger
+
+Outcome-based reinforcement learning to predict the future.
+
+arXiv preprint arXiv:2505.17989.
+
+Cited by: §D.1,
+§3.
+
+
+Wang et al. (2025)
+Z. Wang, X. Zhou, Y. Yang, B. Ma, L. Wang, R. Dong, and A. Anwar
+
+Openforecast: a large-scale open-ended event forecasting dataset.
+
+In Proceedings of the 31st International Conference on Computational Linguistics,
+
+pp. 5273–5294.
+
+Cited by: §2.
+
+
+Wei et al. (2024)
+J. Wei, N. Karina, H. W. Chung, Y. J. Jiao, S. Papay, A. Glaese, J. Schulman, and W. Fedus
+
+Measuring short-form factuality in large language models.
+
+External Links: 2411.04368,
+Link
+
+Cited by: §3,
+§6.
+
+
+Yang et al. (2025)
+A. Yang, A. Li, B. Yang, B. Zhang, B. Hui, B. Zheng, B. Yu, C. Gao, C. Huang, C. Lv, C. Zheng, D. Liu, F. Zhou, F. Huang, F. Hu, H. Ge, H. Wei, H. Lin, J. Tang, J. Yang, J. Tu, J. Zhang, J. Yang, J. Yang, J. Zhou, J. Zhou, J. Lin, K. Dang, K. Bao, K. Yang, L. Yu, L. Deng, M. Li, M. Xue, M. Li, P. Zhang, P. Wang, Q. Zhu, R. Men, R. Gao, S. Liu, S. Luo, T. Li, T. Tang, W. Yin, X. Ren, X. Wang, X. Zhang, X. Ren, Y. Fan, Y. Su, Y. Zhang, Y. Zhang, Y. Wan, Y. Liu, Z. Wang, Z. Cui, Z. Zhang, Z. Zhou, and Z. Qiu
+
+Qwen3 technical report.
+
+External Links: 2505.09388,
+Link
+
+Cited by: §1,
+§3.
+
+
+Zeng et al. (2025)
+Z. Zeng, J. Liu, S. Chen, T. He, Y. Liao, J. Wang, Z. Wang, Y. Yang, L. Yin, M. Yin, et al.
+
+FutureX: an advanced live benchmark for llm agents in future prediction.
+
+arXiv preprint arXiv:2508.11987.
+
+Cited by: §1,
+§6.
+
+
+Zou et al. (2022)
+A. Zou, T. Xiao, R. Jia, J. Kwon, M. Mazeika, R. Li, D. Song, J. Steinhardt, O. Evans, and D. Hendrycks
+
+Forecasting future world events with neural networks.
+
+Advances in Neural Information Processing Systems 35, pp. 27293–27305.
+
+Cited by: §2,
+§2,
+§5.
+
+
+
+
+
+
+
+
+Appendix
+
+
+
+
+
+
+Appendix A Adapting Brier Score to free-form responses
+
+
+
+
+Let 𝒳\mathcal{X} be the set of open-ended forecasting questions; and 𝒴\mathcal{Y} the set of short textual answers. Let x∈𝒳x\in\mathcal{X} be a resolved forecasting question and y⋆y^{\star} be the ground truth answer (as the question has already resolved. We ask the forecaster to respond with its best guess answer yy, and the probability qq they assign to that being the true outcome. We evaluate this prediction tuple <y,qy,q> using the Brier score (Mucsányi et al., 2023) but adapt it to our setting. For a KK-class outcome space 𝒴\mathcal{Y} with reported distribution qq and true class y∗y^{*}, the (multi-class) Brier score is
+
+
+
+
+
+S(q,k)=−∑y∈𝒴(qy−ky)2=−(qy∗−1)2−∑y≠y∗qy2,S(q,k)=-\sum_{y\in\mathcal{Y}}(q_{y}-k_{y})^{2}=-(q_{y^{*}}-1)^{2}-\sum_{y\neq y^{*}}q_{y}^{2},
+
+
+
+where kk is one-hot encoding with ky∗=1k_{y^{*}}=1. In our open-ended setting, 𝒴\mathcal{Y} is not predefined but rather its instances are provided by the forecaster. For simplicity, we elicit only a single guess yy with probability q∈[0,1]q\in[0,1] and assume the forecaster’s probability is 00 for all other (semantically different) answers y′≠yy^{\prime}\neq y.11
+              1
+              
+              
+              
+              
+              
+              
+              
+            This is technically incorrect to assume as the forecaster may have non-zero probability for guesses other than yy. Ideally the forecaster should report all its guesses which have non-zero probability (with the multi-class brier scoring rule still being applicable) but we leave exploring this direction for future work. Applying the multi-class brier scoring rule in such a case induces a simplified score:
+
+
+
+
+
+S⁡(q,y,y∗)={−(q−1)2−0=−1+2​q−q2,if ​y≡y∗,−(0−1)2−q2=−1−q2,if ​y≠y∗.S(q,y,y^{*})=\begin{cases}-(q-1)^{2}-0=-1+2q-q^{2},&\text{if }y\equiv y^{*},\\
+-(0-1)^{2}-q^{2}=-1-q^{2},&\text{if }y\neq y^{*}.\end{cases}
+
+
+
+Dropping the constant −1-1 yields
+
+
+
+
+
+S′​(q,y,y∗)={1−(q−1)2,if ​y≡y∗,−q2,if ​y≠y∗,S^{\prime}\!(q,y,y^{*})=\begin{cases}1-(q-1)^{2},&\text{if }y\equiv y^{*},\\
+-\,q^{2},&\text{if }y\neq y^{*},\end{cases}\qquad
+
+
+
+
+Figure 8: Illustration of the brier score when adapted to free-form response with answer yy and probability qq.
+
+
+
+
+which shifts the range from [−2,0][-2,0] to [−1,1][-1,1] while providing a more natural interpretation: predicting q=0q=0 gives a baseline 00 regardless of yy; correct answers receive positive scores, incorrect answers negative scores; and magnitude scales quadratically with confidence. We report S′S^{\prime} (visualized in  Figure 8) as the Brier score in this paper.
+
+
+
+
+Recent work by  Damani et al. (2025) shows that this metric is a proper scoring rule, incentivizing both high accuracy and truthful reporting of probability on the answer that seems most likely. However, note that what we call as brier score here is distinct from the brier score considered by Damani et al. (2025). Their brier score is the one traditionally used for evaluating binary outcomes while ours is for free-form responses. Yet, we can show that our brier score is same as the training reward considered by them.
+
+
+
+
+
+
+
+
+
+Appendix B Analyzing OpenForesight Dataset
+
+
+Table 2: Breakdown of source news articles by news outlet.
+
+
+
+
+
+Source
+Articles (%Total)
+
+
+Forbes
+110,103 (44.3%)
+
+
+The Hindustan Times
+80,000  (32.2%)
+
+
+The Irish Times
+29,546   (11.9%)
+
+
+Deutsche Welle (DW)
+21,317  (8.6%)
+
+
+Cable News Net (CNN)
+7,355    (3.0%)
+
+
+Total
+248,321 (100%)
+
+
+
+
+
+
+News Corpus Details. We drew from a heterogeneous pool of news articles diversified by geography, time, and topic to ensure broad coverage. We collected a English-language articles from outlets including Forbes, Hindustan Times, The Irish Times, Deutsche Welle, and CNN. They were selected by first collecting a corpus of approximately 250,000 articles spanning from June 2023 to April 2025, encompassing major large-scale events across sports, geopolitics, local news, crime, entertainment, and the arts. Then, performing de-duplication and filtering for language, text availability, and valid dates, we retained approximately 248,000 articles for the question generation phase. Table 2 details the distribution across news outlets for our corpus.
+
+
+
+B.1 Analysis of Best Question Selection
+
+
+
+
+If there were multiple valid questions per article, we have a selection step asking an LLM for the single best question based on four criteria: (1) Forecasting validity, prioritizing questions with appropriate temporal horizons; (2) Impact assessment, favoring questions with broader relevance and significance; (3) Answer definiteness, selecting questions with the clearest resolution criteria; and (4) Understandability, ensuring questions are comprehensible without requiring specialized domain knowledge. We analyze the questions selected by these criteria in this subsection.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 9: Data Distribution of Questions in OpenForesight. (Left) Distribution of number of questions selected after filtering from articles (Right) We show the number of questions generated, and the proportion of the first, second and third generate question being picked as the final “best question”.
+
+
+
+
+As Figure 9 (left) illustrates, the generation process yielded mixed results. Post-processing, 39% of source articles failed to produce any valid questions. Among the surviving articles, 21% yielded exactly one valid question, which we retained. For the 61% of articles producing multiple valid questions, we employed another LLM to identify the best candidate based on global relevance, specificity, and unambiguity. Our analysis of selected questions, shown in Table 9 (right) reveals a selection bias:
+
+
+• 
+
+
+
+Question 1: Selected 43.6% of the time (10.3% above random).
+
+
+• 
+
+
+
+Question 2: Selected 31% of the time (2.4% below random).
+
+
+• 
+
+
+
+Question 3: Selected 26.7% of the time (6.7% below random).
+
+
+
+This trend suggests that initial generation attempts (question positioned earlier) frequently produce higher-quality results. Figure 4 provides qualitative examples of these generated questions.
+
+
+
+
+
+
+
+
+Name(s)
+Location
+Country
+Title
+Team
+Color
+Organization
+Currency
+Brand
+Month
+
+
+
+
+
+
+
+name
+
+
+
+name
+
+
+
+Count
+32,213
+14,337
+2,579
+2,479
+1,445
+1,047
+1,030
+877
+779
+730
+
+
+Share
+44.8%
+20.0%
+3.6%
+3.5%
+2.0%
+1.5%
+1.4%
+1.2%
+1.1%
+1.0%
+
+
+Table 3: Top ten answer types of the questions in our curated dataset. These ten categories cover 80.1% of our training dataset.
+
+
+
+
+B.2 Distribution of Answer Types
+
+
+
+
+Table 3 categorizes the answer types within the training data. Two categories dominate the dataset:
+
+
+• 
+
+
+
+People and Places (65%): Names of individuals constitute nearly 45% of the answers, while locations account for 20%.
+
+
+• 
+
+
+
+Miscellaneous Entities (35%): The remainder consists of teams, countries, organizations, colors, and similar entities.
+
+
+
+
+
+
+
+
+
+Question
+
+
+
+Background
+
+
+
+Resolution (trigger & deadline)
+
+
+
+Answer Type
+
+
+
+Answer
+
+
+
+Source
+
+
+
+
+
+Host country of COP30 (Nov 2025)?
+
+
+
+UNFCCC COP venue rotates among regions.
+
+
+
+Host confirmed by UNFCCC/organizers; no later than COP30 start (Nov 2025).
+
+
+
+string (country)
+
+
+
+Brazil
+
+
+
+DW:
+link
+
+
+
+
+
+Release month of Marvel’s Fantastic Four (2025)?
+
+
+
+Reboot announced with lead cast; 2025 release slated.
+
+
+
+Month confirmed by Marvel/Disney; by Dec 2025.
+
+
+
+string (month)
+
+
+
+July
+
+
+
+Forbes:
+link
+
+
+
+
+
+First state to require Ten Commandments in public classrooms (by 2025)?
+
+
+
+Several U.S. states advance religion-in-school measures.
+
+
+
+First state enacts requirement; by Dec 31, 2025.
+
+
+
+string (state name)
+
+
+
+Louisiana
+
+
+
+Forbes:
+link
+
+
+
+
+
+African host of G20 Summit (Nov 2025)?
+
+
+
+G20 presidency rotates; South Africa presiding from Dec 2024.
+
+
+
+G20/host government confirms location; by Nov 2025.
+
+
+
+string (country)
+
+
+
+South Africa
+
+
+
+DW:
+link
+
+
+
+
+
+Recipient of Lesotho–Botswana Transfer Scheme (by 2025)?
+
+
+
+Regional pipeline to pump water from Lesotho via SA.
+
+
+
+ORASECOM or governments confirm recipient; by 2025.
+
+
+
+string (country name)
+
+
+
+Botswana
+
+
+
+DW:
+link
+
+
+Table 4: Five succinct forecasting questions spanning climate, entertainment, law, geopolitics, and infrastructure; selected for brevity and diverse sources (DW, Forbes). Each row lists the question (summarized here for conciseness), short background, resolution trigger with deadline, answer type, ground-truth answer, and citation.
+
+
+
+
+
+
+
+
+Appendix C Qualitative Analysis of Final Answers
+
+
+
+
+We manually annotated responses to 207 questions by both the initial Qwen3-8B thinking model and the trained OpenForecaster8B on the Guardian validation set. Using this set, we found that the agreement between the two models used for grading, Llama 4 Scout and Qwen3 4B is ∼97%\sim 97\%, and we agree with their grading in over ∼95%\sim 95\% cases. This confirms the reliability of automatic answer matching based evaluation.
+
+
+
+
+In Table 5, we analyze the domains (by news section) in which our trained model improves. We find significant improvements in the World, Australian, and US news sections, with no significant change for sports. This entails our model may not yet perform too well on sports-heavy prediction markets like Kalshi.
+
+
+
+
+
+Domain
+nn
+Before
+After
+Δ\Delta
+
+
+world
+20
+21.7
+33.3
++11.6
+
+
+australia-news
+15
+35.6
+42.2
++6.7
+
+
+us-news
+21
+41.3
+44.4
++3.2
+
+
+sport
+37
+43.2
+43.2
++0.0
+
+
+football
+30
+34.4
+33.3
+-1.1
+
+Table 5: Avg@3 by domain (n ≥\geq 10).
+
+
+
+
+In Table 6, we analyze change in performance by question type, finding significant improvements on questions of the form “what”, “which”, and “who”, while a slight regression in performance on location questions (“where”).
+
+
+
+
+
+Question form
+nn
+Before
+After
+Δ\Delta
+
+
+what
+25
+14.7
+29.3
++14.7
+
+
+which
+98
+45.2
+51.4
++6.1
+
+
+who
+60
+27.8
+33.9
++6.1
+
+
+other
+10
+40.0
+43.3
++3.3
+
+
+where
+14
+47.6
+45.2
+-2.4
+
+Table 6: Avg@3 by question form (n ≥\geq 10).
+
+
+
+
+Below, we present qualitative examples where our training improves and worsens predictions compared to the original model.
+
+
+
+Qualitative examples (improved; first sample)
+
+
+
+
+
+• 
+
+
+
+Q: Who will be wearing the yellow jersey in the general classification at the end of stage eight of the 2025 Tour de France? 
+Truth: Tadej Pogačar 
+Before: Jonas Vingegaard (p=0.10) 
+After: Tadej Pogačar (p=0.60)
+
+
+• 
+
+
+
+Q: Who will withhold a resolution from the U.S. House floor to force a vote on releasing the Epstein documents by July 25, 2025? 
+Truth: Mike Johnson 
+Before: Pam Bondi (p=0.30) 
+After: Mike Johnson (p=0.60)
+
+
+• 
+
+
+
+Q: Which former Bank of England governor will be named in a Guardian piece criticizing ‘moral hazards’ for banks during the 2007–08 financial crisis? 
+Truth: Mervyn King 
+Before: Andrew Bailey (p=0.30) 
+After: Mervyn King (p=0.40)
+
+
+• 
+
+
+
+Q: Which major tournament will the US women’s national team focus on challenging for after the 2025 summer friendlies? 
+Truth: 2027 World Cup 
+Before: 2025 European Championship (p=0.95) 
+After: 2027 Women’s World Cup (p=0.40)
+
+
+
+
+
+
+Qualitative examples (regressed; first sample)
+
+
+
+
+
+• 
+
+
+
+Q: Which agency will drivers in Northern Ireland apply to for a replacement driving licence by 31 July 2025? 
+Truth: DVA 
+Before: DVLA (p=0.70) 
+After: DVLA (p=0.20)
+
+
+• 
+
+
+
+Q: Where could Sweden’s Euro 2025 journey conclude with a historic night if they continue to win? 
+Truth: Basel 
+Before: Basel (p=0.70) 
+After: Zurich (p=0.40)
+
+
+• 
+
+
+
+Q: Who will be the Democratic Party’s nominee for New York City mayor in the November 2025 general election? 
+Truth: Zohran Mamdani 
+Before: Zohran Mamdani (p=0.60) 
+After: Andrew Cuomo (p=0.40)
+
+
+• 
+
+
+
+Q: Who will post the lowest first-round score among Rory McIlroy, Scottie Scheffler and Viktor Hovland at the 2025 Scottish Open? 
+Truth: Viktor Hovland 
+Before: Viktor Hovland (p=0.60) 
+After: Scottie Scheffler (p=0.40)
+
+
+
+
+
+
+C.1 Test Set
+
+
+
+
+For the test set, we manual filtered of the remaining questions if the question did not satisfy validity criteria like: 1) having multiple answers 2) question actually resolves in the future (after September 2025) for which article reports the scheduled/planned place/event/etc. 3) question being irrelevant because it is too niche to a certain place or locality
+4) question is about something which is already established (known).
+
+
+
+
+
+
+
+(a) Manual filter pass rate per news source.
+
+
+
+(b) Proportion of questions with correct resolution date upon generation per news source.
+
+Figure 10: 
+Filtering pass rate of forecasting questions across news sources.
+
+
+
+
+
+
+
+
+
+Appendix D Additional Results
+
+
+
+D.1 Ablation: Using Prediction Market Binary Data
+
+
+
+
+
+
+
+(a) Performance on our Validation Set composed of question from TheGuardian new source from July 2025.
+
+
+
+
+(b)  Performance on Metaculus binary questions resolved in May–July 2025.
+
+Figure 11: Performance of different data ablations.
+We evaluate performance after training on 3 different supervision signals:
+(i) only binary data (20K samples),
+(ii) only freeform data (20K samples), and
+(iii) both binary and freeform data (10K samples each) for data-matched comparison.
+(a) Accuracy and freeform Brier score of the initial and post-RL model on our Validation Set from July 2025.
+(b) Accuracy and binary Brier score of initial and post-RL model on volume-filtered binary questions resolved between May to July 2025 on Metaculus.
+We find training on binary questions hurts performance on open-ended forecasting, but is necessary to retain performance on binary prediction market questions.
+
+
+
+
+We ablate supervision type with Qwen3-8B using three size-matched settings (Figure 11). For binary-only, we curate 20K resolved markets from Manifold, volume-filtered to ensure engagement; because many markets resolve slowly, this set spans the past five years. For free-form only, we use 20K pipeline-generated, usable questions from Forbes articles. For the binary+free-form mix, we take 10K Manifold + 10K Forbes questions to keep total examples constant. The goal is to isolate which learning signal—binary resolution vs. open-ended outcome specification—most effectively trains calibrated forecasters under identical compute and token budgets.
+
+
+
+
+On the free-form test set (Fig. 11 Left), post-RL performance improves most with free-form only supervision (Accuracy 19.3%→22.4%19.3\%\!\rightarrow\!22.4\%; Free-form Brier −→0.086-0.009\!\rightarrow\!0.086). Mixing binary and free-form also helps (Brier 0.0650.065), whereas binary-only yields minimal gains on free-form evaluation (Brier 0.0040.004). On Metaculus (binary) (Fig. 11 Right), both binary-only and the mixed setting improve accuracy and Brier, with the binary+free-form mix offering the best overall trade-off across testing formats. Our gains by training on binary-only format are consistent with prior work by Turtel et al. (2025b); Turtel et al. (2025a). However, we do not arrive at a single unanimous recipe: free-form data is essential for open-ended forecasting, while combining formats appears Pareto-optimal across binary and free-form evaluations. Practically, it seems training on a mixture of question styles provides the most robust gains across tasks.
+
+
+
+
+D.2 Evaluation on Metaculus Questions
+
+
+Figure 12: Performance of models on Metaculus questions from May 01 to Nov. 18 2025.
+
+
+
+
+Prediction Market Dataset.
+
+
+
+
+We also source questions from the Metaculus prediction market from May - Nov. 2025. We filter questions which are either meta-prediction questions (prediction about some other prediction question on Metaculus), stock price prediction or below a certain trading volume leaving 449 high-interest questions. Each question is binary so a naive baseline gets 50% accuracy. We evaluate models on this benchmark by computing both accuracy and brier score.
+
+
+
+
+Results on Real Market Questions.
+
+
+
+
+As shown in Figure 12, OpenForecaster 8B performs better than many larger models like DeepSeek-R1 and Llama-4-Maverick while GPT-OSS-120B is significantly better than rest of the models. Note: The brier score reported here is the standard brier score used in prediction markets ranging from −1-1 to 00 (with -0.25 being the baseline for a constant prediction of 50%50\%) and this is different from the brier score we have reported earlier for freeform questions.
+
+
+
+
+
+D.3 Varying models and evaluation months
+
+
+Figure 13: Improvements from retrieval plateau at ∼5\sim 5 chunks. We show the accuracy of both a large GPT-OSS-120B model and a small Qwen3-8B model which we finetune.
+
+
+
+
+In  Figure 13 we observe that while the first few article chunks that are retrieved lead to large improvements, at around five articles improvements plateau, both on our Qwen3-8B and also other large models like GPT-OSS-120B. Thus, unless otherwise specified, we use 5 articles for all evaluations and training in this work.
+
+
+
+Improvement on non-Qwen models.
+
+
+
+
+Our training data OpenForesight can be used to improve models across different families. In Figure 14 we show improvements for Llama-3.1-8B-Instruct, Llama-3.2-3B-Instruct and Gemma-3-4B-Instruct. We see particularly large improvements in both accuracy and brier score for Llama due to both: poor initial performance, but also surprising amenability to RL training with our data as the final performance exceeds much larger models like Qwen3-235B-A22B and DeepSeek-v3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 14: Performance of models from Llama and Gemma family our test set.
+
+
+
+
+Results over time.
+
+
+
+
+As our test set is derived from articles from May to August 2025, so we split the questions by resolution date to get monthly performance of the models. Breaking down by month, our test has 270 questions resolving in May, 265 in June, 193 resolving in July and 137 resolving in August. Our hypothesis is that as we go further into the future, forecasting should become more difficult leading to lower performance. In Figure 16 and Figure 16, we find that the accuracy and brier score of the models indeed drops gradually month-by-month consistent with our hypothesis. We also find that our trained models are consistently better than the original versions and also better than all other models in Brier score.
+
+
+
+
+
+
+Figure 15: Monthly accuracy of the models on our test set. 
+
+
+
+Figure 16: Monthly brier score of the models 
+
+
+
+
+
+D.4 Consistency Evaluation
+
+
+Table 7: Improvement in consistency checks before and after RL training. We report average violation scores and relative improvements (negative percentages indicate improvements). The RL-trained model shows substantial improvements in logical consistency across most reasoning tasks.
+
+
+
+
+
+
+Arbitrage
+Frequentist
+
+
+Check
+Qwen3-8B
+OpenForecaster-8B
+Δ\Delta
+Qwen3-8B
+OpenForecaster-8B
+Δ\Delta
+
+
+Negation
+0.043
+0.029
+-32%
+0.198
+0.177
+-11%
+
+
+Paraphrase
+0.030
+0.015
+-50%
+0.157
+0.114
+-27%
+
+
+Consequence
+0.010
+0.003
+-66%
+0.048
+0.033
+-31%
+
+
+AndOr
+0.033
+0.019
+-43%
+0.205
+0.148
+-28%
+
+
+And
+0.016
+0.004
+-78%
+0.063
+0.026
+-59%
+
+
+Or
+0.022
+0.008
+-64%
+0.094
+0.061
+-35%
+
+
+But
+0.040
+0.021
+-47%
+0.234
+0.193
+-17%
+
+
+Cond
+0.039
+0.030
+-23%
+0.227
+0.220
+-3%
+
+
+CondCond
+0.036
+0.032
+-13%
+0.256
+0.255
+-0%
+
+
+ExpEvidence
+0.041
+0.015
+-64%
+0.240
+0.166
+-31%
+
+
+Aggregated
+0.031
+0.017
+-44%
+0.172
+0.139
+-19%
+
+
+
+
+
+
+Paleka et al. (2025b) release a dataset of long-term forecasting questinos set to resolve up to 2028, showing language models exhibit inconsistencies in their probabilistic predictions. To evaluate consistency, they propose ten consistency checks measuring both arbitrage and frequentist violations.
+
+
+
+
+We evaluate Qwen3-8B and our trained model on the dataset created by Paleka et al. (2025b). We measure performance of the models on all consistency check tuples proposed by them. Table 7 compares the baseline Qwen3-8B with our RL-trained model. The results demonstrate substantial improvements across most consistency checks, with particularly strong gains in Boolean logic operations (AND: 78% reduction, OR: 64% reduction) and paraphrase consistency (50% reduction). Overall, our training achieves a 43.5% reduction in arbitrage violations and 19.2% reduction in frequentist violations, indicating more consistent long-term predictions.
+
+
+
+
+
+
+
+
+
+
+Appendix E Qualitative Analysis of Reasoning Evolution During Training
+
+
+
+
+We now provide a few qualitative examples of how the model reasoning evolves when training on OpenForesight. We ask the model itself to provide a summary of its reasoning (after the <think></think> tags), and show this summary below for the initial Qwen3 8B model, followed by training checkpoints.
+
+
+
+E.1 Example 1: Model stays incorrect but learns to hedge
+
+
+
+
+Question: Which country will face a new 25% US tariff in a trade announcement by 30 July 2025?
+Background: The US administration is evaluating other countries’ trade barriers and is expected to announce new tariffs by the end of July 2025.
+Resolution Criteria:
+
+
+
+
+Source of Truth: Official tariff announcement issued by the White House or the Office of the United States Trade Representative.
+
+
+
+
+Resolution Date: 30 July 2025, the date by which the 25% tariff announcement is expected.
+
+
+
+
+Accepted Answer Format: The full name of the country as stated in the official announcement.
+
+
+
+
+Resolution answer: India
+
+
+
+
+Checkpoint 0: score=-0.722, status=wrong
+<answer>South Korea</answer> <probability>0.85</probability> **Reasoning**: - **Article 2** (May 25, 2025) explicitly mentions a **25% tariff** on **Samsung** (South Korea) and other smartphone manufacturers. This directly ties the 25% tariff to **South Korea**. - While the EU is mentioned with a **50% tariff** in the same article, the **25% tariff** specifically targets South Korea’s exports. - Other articles reference tariffs on China, the EU, or automakers, but none specify a **25% tariff** on a country beyond South Korea. - The resolution date (July 30, 2025) aligns with the timeline of the May 25 announcement, as no newer data is provided. **Confidence**: 85% (strong evidence from Article 2, though no post-May 25 updates confirm further announcements).
+
+
+
+
+Checkpoint 400: score=-0.360, status=wrong
+The retrieved articles indicate ongoing US tariff announcements by the Trump administration in 2025. Article 2 explicitly mentions a 25% tariff on South Korea for smartphone manufacturers like Samsung, while Article 4 references 25% tariffs on steel and aluminum imports from Canada and Mexico. Article 3 also notes a 25% tariff on foreign automakers, which could target countries like South Korea or others, but South Korea is specifically named in Article 2 for a 25% rate. Given the question’s focus on a "new" 25% tariff announcement by July 30, 2025, and the patterns in the articles, South Korea appears as a likely candidate, as it has already faced such announcements and fits the criteria. However, the question implies a potential new announcement, and other countries like Canada or Mexico could also be possibilities based on Article 4, introducing uncertainty. My confidence is moderate due to the reliance on past announcements and the possibility of new developments by the resolution date. <answer>South Korea</answer> <probability>0.6</probability>
+
+
+
+
+Checkpoint 800: score=-0.090, status=wrong
+The retrieved articles indicate a pattern of US tariffs targeting major trade partners like China, India, the EU, Canada, Mexico, and South Korea. Article 4 specifically mentions a 25% tariff on steel and aluminum imports, which historically targets countries such as China and those in the EU. Article 2 highlights a 25% tariff on South Korean products (e.g., Samsung), while Article 1 and Article 3 reference ongoing tariffs on China and other nations. Given the US administration’s focus on trade barriers, China is the most frequently mentioned target, making it a likely candidate for a new 25% tariff announcement by July 2025. However, the articles do not confirm a specific new announcement, and other countries like India are also potential targets based on Article 1, introducing uncertainty. Due to the lack of direct evidence for a July announcement and the possibility of shifts in US policy, my confidence is low. <answer>China</answer> <probability>0.3</probability>
+
+
+
+
+E.2 Example 2: Model goes from incorrect to correct
+
+
+
+
+Question: Who will give Harvard one week to produce extensive records for its exchange visitor program review by July 23, 2025? 
+Background: The U.S. Secretary of State periodically issues directives to universities regarding their exchange visitor program compliance.
+Resolution Criteria:
+
+
+
+
+Source of Truth: The official announcement or government statement naming the individual who issued the one-week deadline.
+
+
+
+
+Resolution Date: When the directive is publicly attributed (expected by July 23, 2025).
+
+
+
+
+Accepted Answer Format: Full name, for example "Jane Doe".
+
+
+
+
+Resolution answer: Marco Rubio
+
+
+
+
+Checkpoint 0: score=-0.902, status=wrong
+The retrieved articles describe actions by the Trump administration’s Department of Homeland Security, specifically Secretary Kristi Noem, toward Harvard. In the text, Noem sends Harvard a letter giving them 72 hours to provide information, not one week, so there is a mismatch between the question’s “one week by July 23, 2025” and the articles’ “72 hours.” It seems that the July 23 date comes from the resolution criteria and isn’t in the articles themselves, and that the 72-hour deadline might be part of a larger process leading up to that date, or that the question wording is slightly off. Despite this discrepancy, all the evidence points to Kristi Noem as the person issuing the directive to Harvard about providing records. Therefore, the answer should be Kristi Noem, and the confidence is high because all the articles point to her as the one who issued the directive to Harvard regarding the records.<answer>Kristi Noem</answer> <probability>0.95</probability>
+
+
+
+
+Checkpoint 400: score=-0.490, status=wrong
+The retrieved articles indicate that Kristi Noem, as the U.S. Department of Homeland Security (DHS) Secretary, has been directly involved in issuing deadlines related to Harvard’s exchange visitor program compliance. For instance, in Article 2, she gave Harvard 72 hours (approximately 3 days) to comply with requests for records. The question specifies a one-week deadline by July 23, 2025, which may be a variation or continuation of similar directives from this administration. Given the pattern in the articles, it is reasonable to infer that Noem or a similar high-level official from the Trump administration is likely to issue such a directive. However, there is uncertainty due to the slight discrepancy between 72 hours and one week, and potential changes in personnel or administration by July 2025. Final Answer: <answer> Kristi Noem </answer> <probability> 0.7 </probability>
+
+
+
+
+Checkpoint 800: score=0.910, status=correct
+The retrieved articles primarily discuss the U.S. Department of Homeland Security (DHS) Secretary, Kristi Noem, in the context of Harvard’s visa program issues, such as scrutiny and potential termination due to non-compliance. However, the question specifically pertains to the U.S. Secretary of State issuing a directive, as outlined in the question background. Based on the Trump administration’s context in the articles, Marco Rubio was the Secretary of State in 2024 and likely remained in that role through at least 2025, as no other name is explicitly mentioned for that position. This is inferred from the articles’ references to Trump administration actions, though the articles confuse DHS Secretary Noem with Secretary of State responsibilities. Given the resolution criteria requiring the official announcement, I am considering the most probable candidate from historical context, but the articles’ inconsistencies lower my confidence. Final Answer: <answer>Marco Rubio</answer> <probability>0.7</probability>
+
+
+
+
+E.3 Example 3: Model goes from correct to incorrect, but interestingly reasons about brier
+
+
+
+
+Question: Which Australian state besides New South Wales will be affected by the forecast ’second surge’ of rain and wind on Wednesday night?
+Background: The Bureau of Meteorology has forecast a ’second surge’ of rain and wind for Wednesday night, expected to impact coastal regions.
+Resolution Criteria:
+
+
+
+
+Source of Truth: The question will resolve based on the Bureau of Meteorology’s severe weather warnings and regional impact statements for the second surge, as published on bom.gov.au.
+
+
+
+
+Resolution Date: 2 July 2025, following the Wednesday night updates.
+
+
+
+
+Accepted Answer Format: The name of the Australian state, in 1–2 words.
+
+
+
+
+Resolution answer: Victoria
+
+
+
+
+Checkpoint 0: score=0.978, status=correct
+The question’s background says the resolution is on 2 July 2025, following Wednesday night updates. So the answer should be based on the Bureau’s forecast as of that time. But the available articles are up to February 2025. If the ’second surge’ is part of the forecast mentioned in Article 2 (from January 2025), then the answer is Victoria. However, the user might have a different scenario. Alternatively, in Article 4, there’s a mention of damaging winds in parts of Illawarra, Sydney, and Hunter coast, but again, that’s part of NSW. So, based on the available information, the most likely answer is Victoria. But I need to make sure that the ’second surge’ refers to the same event. The article mentions a second strong wind coming from the south-west, which would affect the south of the country, including Victoria. Therefore, the answer is Victoria. Confidence: The articles mention Victoria as part of the affected regions. However, since the exact ’second surge’ isn’t explicitly named in the articles, there’s some uncertainty. But based on the context, Victoria is the most likely state besides NSW. </think> <answer>Victoria</answer> <probability>0.85</probability>
+
+
+
+
+Checkpoint 400: score=0.840, status=correct
+The provided articles indicate patterns of weather impacts from the Bureau of Meteorology, particularly in eastern Australia. Article 2 explicitly mentions a weather system affecting eastern New South Wales, with parts of Victoria and south-east Queensland also likely impacted, including strong winds and rain. This aligns with the question’s reference to a ’second surge’ of rain and wind on Wednesday night. Article 1 and Article 3 further support influences on Victoria and South Australia from similar weather fronts, but Victoria is the most consistently mentioned state besides New South Wales across multiple articles. Given the resolution criteria relying on BoM’s warnings, I infer that Victoria is the most probable state based on these patterns. However, the articles do not directly reference the specific forecast for 2 July 2025, introducing uncertainty. Confidence: The articles don’t directly match the question, so I’m not 100% sure. Maybe 0.6, since it’s inferred from patterns. To maximize my score with Brier score: If I’m correct, higher p is better; if wrong, lower p is better. I need to be honest about my confidence. I think 0.6 is reasonable, as it’s a guess based on the info. <answer>Victoria</answer> <probability>0.6</probability>
+
+
+
+
+Checkpoint 800: score=-0.360, status=wrong
+The retrieved articles provide information on weather patterns in Australia, particularly from 2023 and early 2025. Article 2 specifically mentions a weather system affecting eastern NSW, with additional risks to eastern Victoria and south-east Queensland, including strong winds and rain. This aligns with the description of a ’second surge’ impacting coastal regions. Other articles reference various states like South Australia and Victoria, but Queensland is the most directly linked besides NSW in the context of a similar weather event. Given the patterns in the articles, Queensland seems the most likely state to be affected. However, the articles are from different dates and not explicitly about the 2 July 2025 event, introducing uncertainty. Based on the evidence, I am moderately confident in this guess. I need to maximize my score using Brier scoring. If I’m correct, higher p is better; if wrong, lower p is better. Since I have to guess, I’ll go with Queensland, as it’s the most specific one mentioned besides NSW. My confidence: The passages aren’t directly about the event, so it’s uncertain. Maybe 0.4 or 0.5? Let’s say 0.6, because it’s the most prominent besides NSW in the relevant passages. <answer>Queensland</answer> <probability>0.6</probability>
+
+
+
+
+
+
+
+
+
+
+Appendix F Systematic Failure Modes in Model Reasoning
+
+
+
+
+OpenForecaster 8B achieved an accuracy of 33% on our test set consisting of 302 questions. Through manual analysis of the failure cases, we identified three systematic failure modes in the model’s reasoning process.
+
+
+
+1. Missing Information in Retrieved Articles
+
+
+
+
+The most common failure mode occurs when retrieved articles lack the specific information needed. The model acknowledges this but falls back to general knowledge or educated guesses rather than expressing high uncertainty.
+
+
+
+
+Example 1: “By what date will the New York City Board of Elections certify the official results of the Democratic mayoral primary?”
+
+
+
+
+
+• 
+
+
+
+Correct answer: July 15
+
+
+• 
+
+
+
+Model answer: August 15 (probability: 0.2)
+
+
+• 
+
+
+
+Model’s reasoning: “The provided news articles discuss the New York City Democratic mayoral primary, including polling data, candidate strategies, and the election date of June 24, 2025. However, they do not specify the certification process or timeline for the New York City Board of Elections. Based on general knowledge of past NYC elections, certification typically occurs 2-6 weeks after the primary to allow for vote counting, ballot challenges, and legal reviews. For instance, in the 2013 primary, certification was completed by July 2. Given the late summer 2025 resolution criteria, a reasonable estimate is mid-August, but without specific historical data from the articles, this is uncertain. I am guessing August 15, 2025, as it aligns with typical procedures, but my confidence is low due to the lack of direct evidence.”
+
+
+• 
+
+
+
+Analysis: The model correctly identifies that articles lack the certification date but incorrectly infers from general knowledge. It acknowledges uncertainty (probability 0.2) yet provides a specific date. The inference from “2-6 weeks after June 24” to “mid-August” is flawed, as July 15 falls within this range.
+
+
+
+
+
+
+2. Over-reliance on General Knowledge
+
+
+
+
+When articles lack specific information, the model makes educated guesses based on general knowledge, historical patterns, or analogies rather than acknowledging the answer cannot be determined from the provided context.
+
+
+
+
+Example 1: “What will be the official name of Donna D’Errico’s interactive AI voice service by mid-July 2025?”
+
+
+
+
+
+• 
+
+
+
+Correct answer: Call Donna D.
+
+
+• 
+
+
+
+Model answer: Donna Voice (probability: 0.1)
+
+
+• 
+
+
+
+Model’s reasoning: “The provided articles do not mention Donna D’Errico or her specific AI voice service, making it impossible to draw direct insights. However, patterns from the articles, such as the naming of AI voice services (e.g., Melania Trump’s “Melania: The Audiobook”), suggest that such services often incorporate the individual’s name followed by descriptors like “Voice” or “AI.” Based on this analogy, I am guessing the name might be “Donna Voice” or something similar. This is a speculative prediction, as there’s no concrete information, leading to low confidence.”
+
+
+• 
+
+
+
+Analysis: The model creates a naming pattern from one unrelated example (Melania Trump’s service) and applies it incorrectly. It recognizes the speculation (probability 0.1) but the actual name “Call Donna D.” follows a different pattern entirely.
+
+
+
+
+
+
+Example 2: “What name will the new Pope take upon his election on May 8, 2025?”
+
+
+
+
+
+• 
+
+
+
+Correct answer: Leo XIV
+
+
+• 
+
+
+
+Model answer: Pius (probability: 0.1)
+
+
+• 
+
+
+
+Model’s reasoning: “The provided articles do not specify the name of the next Pope or any potential candidates’ chosen names. They focus on Pope Francis’s health, the conclave process, and recent appointments of cardinals. Historically, new Popes select names that are traditional, often drawing from saints or biblical figures, but without specific information from the articles or external knowledge, any prediction is highly uncertain. Based on patterns from past Popes (e.g., Francis, Benedict), I am guessing “Pius” as a common regnal name, but this is purely speculative and not supported by the articles. Therefore, my confidence in this answer is very low.”
+
+
+• 
+
+
+
+Analysis: The model relies entirely on general knowledge about papal naming conventions rather than specific information. It correctly identifies high uncertainty (probability 0.1) though. The reasoning conflates “common regnal names” with what the next Pope will actually choose.
+
+
+
+
+
+
+3. Entity Confusion: Selecting Wrong Person/Place/Organization
+
+
+
+
+When multiple entities are mentioned, the model frequently selects the most prominent or frequently mentioned one rather than the correct answer, even when both are present in the context.
+
+
+
+
+Example 1: “Who will Chelsea face in the round of 16 of the 2025 FIFA Club World Cup?”
+
+
+
+
+
+• 
+
+
+
+Correct answer: Benfica
+
+
+• 
+
+
+
+Model answer: Bayern Munich (probability: 0.4)
+
+
+• 
+
+
+
+Model’s reasoning: “The provided articles detail the groups for the 2025 FIFA Club World Cup, with Group C consisting of Bayern Munich, Benfica, Boca Juniors, and Auckland City, and Group D including Chelsea, Flamengo, Esperance Sportive de Tunisie, and a replacement (possibly Los Angeles FC or Club America based on Article 1). The question specifies that the round of 16 matchup is between the runner-up of Group D and the winner of Group C. Without the actual group stage results, I must make an educated guess based on team strengths. Bayern Munich is a strong candidate for the winner of Group C, as they are the defending champions and one of the top teams. Chelsea, in Group D, could plausibly be the runner-up, given their history, but this is uncertain. The replacement team adds further uncertainty, as it could affect group dynamics.”
+
+
+• 
+
+
+
+Analysis: The model selects the more prominent team (Bayern Munich) from Group C rather than correctly identifying which team would actually win the group. It uses team prominence (“defending champions,” “top teams”) as a proxy for group stage results, ignoring that the question requires specific match outcomes that aren’t in the articles.
+
+
+
+
+
+
+
+
+Appendix G Prompt Templates
+
+
+
+G.1 Question Creation Pipeline
+
+
+
+
+Stage 1 — Question Generation (Requires: self.num_questions_per_article > 1)
+
+
+
+
+
+
+Stage 2 — Individual Validation
+
+
+
+
+
+
+Stage 3 — Choose Best
+
+
+
+
+
+
+Stage 4 — Leakage Removal
+
+
+
+
+
+
+
+G.2 Evaluation Prompts
+
+
+
+
+Model Evaluation Prompt (Uses retrieved news summaries)
+
+
+
+
+
+
+Example Prompt from Test Set (Without Retrieval)
+
+
+
+
+
+
+Example Prompt from Test Set (With Retrieval)
+
+
+
+
+
+
+
+
+Appendix H Details on Compute and Cost
+
+
+
+
+To improve transparency around data and compute, we report approximate token counts, training steps, and GPU-hours for both SFT and RL. Our curated OpenForesighttraining set contains 52,183 samples. The average sample (just the question without any retrieval) has about 1000 characters and corresponds to roughly 400 tokens under the Qwen3 tokenizer for the question text, yielding approximately 2×1072\times 10^{7} prompt tokens in total.
+
+
+
+
+For SFT, fine-tuning Qwen3-8B for 3 epochs took 5 hours on 8 H100 GPUs, corresponding to roughly 40 H100 GPU-hours. RL training is substantially more expensive: Our final run lasted for 5 epochs over the training set, resulting in about 1,300 optimization steps, for an estimated total of ∼1,000\sim 1{,}000 H100 GPU-hours. Including all ablations, we estimate we used ∼20,000\sim 20{,}000 H100 GPU-hours.
+
+
+
+Cost.
+
+
+
+
+The overall dataset creation process costed us  3000$ with training set costing  2200$ (using DeepSeek-v3) while creating the test set costed  750$ (using o4-mini-high).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    Experimental support, please
+    view the build logs
+    for errors. Generated by
+    
+      
+        L
+        A
+        T
+        E
+      
+      xml
+      
+    .
+  
+  
+
+    
+Instructions for reporting errors
+    
+We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile
+      support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the
+      methods listed below:
+    
+      
+Click the "Report Issue" (
+            
+          ) button, located in the page header.
+    
+    
+Tip: You can select the relevant text first, to include it in your report.
+    
+Our team has already identified the following issues. We appreciate your time reviewing and reporting rendering errors we
+      may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability
+      should not be a barrier to accessing research. Thank you for your continued support in championing open access for
+      all.
+    
+Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a list of packages that need conversion, and welcome developer contributions.
+  
+
+  
+
+    
+
+      
+
+        We gratefully acknowledge support from
+        our major funders,
+        member institutions, ,
+        and all contributors.
+      
+      
+        About
+        ·
+        Help
+        ·
+        Contact
+        ·
+        Subscribe
+        ·
+        Copyright
+        ·
+        Privacy
+        ·
+        Accessibility
+        ·
+        Operational Status (opens in new tab)
+      
+    
+
+    
+
+      
+Major funding support from
+      
+
+        
+          
+        
+        
+          
+        
+        
+          
+        
+      
+    
+  
+
+
+  
+    
+      
+    
+  
+
+

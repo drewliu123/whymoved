@@ -1,0 +1,63 @@
+{
+  "qid": "Q010",
+  "as_of": "2026-09-02",
+  "kept": [
+    {
+      "excerpt": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. Voting against the monetary policy action were Beth M. Hammack, Neel Kashkari, and Lorie K. Logan, who preferred to raise the target range for the federal funds rate by 1/4 percentage point at this meeting.",
+      "published_at": "2026-07-29",
+      "publisher": "Board of Governors of the Federal Reserve System",
+      "relevance": "Establishes the most recent scheduled FOMC decision before the cutoff, with a 3.75 percent upper bound and three dissents favoring an increase.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    },
+    {
+      "excerpt": "Both nonfarm payroll employment (-23,000) and the unemployment rate (4.1 percent) changed little in July, the U.S. Bureau of Labor Statistics reported today. Employment declined in local government education and retail trade. Employment continued to trend up in health care.",
+      "published_at": "2026-08-07",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "Provides the latest monthly federal employment report available at the cutoff, relevant to the employment side of the Fed's dual mandate.",
+      "url": "https://www.bls.gov/news.release/archives/empsit_08072026.htm"
+    },
+    {
+      "excerpt": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.1 percent on a seasonally adjusted basis in July after falling 0.4 percent in June, the U.S. Bureau of Labor Statistics reported today. Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment. The index for all items less food and energy rose 0.2 percent after being unchanged in June.",
+      "published_at": "2026-08-12",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "Documents the latest available CPI release, showing modest monthly inflation alongside still-elevated annual headline inflation.",
+      "url": "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+    },
+    {
+      "excerpt": "From the preceding month, the PCE price index for July increased 0.2 percent. Excluding food and energy, the PCE price index also increased 0.2 percent. From the same month one year ago, the PCE price index for July increased 3.7 percent. Excluding food and energy, the PCE price index increased 3.3 percent from one year ago.",
+      "published_at": "2026-08-26",
+      "publisher": "U.S. Bureau of Economic Analysis",
+      "relevance": "Supplies the latest PCE inflation release available at the cutoff, directly relevant to the Fed's inflation objective.",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026"
+    },
+    {
+      "excerpt": "Federal Reserve Bank of New York President John Williams said there’s evidence inflation continues to ease as the impact of tariffs fades while higher energy prices are not spreading to other services. “The data recently has been encouraging,” Williams said Wednesday in an interview with CNBC. “I am actually seeing the trend in inflation moving slowly down as some of the effects of the tariffs move into the rearview mirror.”",
+      "published_at": "2026-09-02",
+      "publisher": "Bloomberg News",
+      "relevance": "Provides cutoff-day commentary from a permanent FOMC voter describing evidence of disinflation relevant to the case for holding rates.",
+      "url": "https://news.bloombergtax.com/daily-tax-report-state/feds-williams-says-inflation-continuing-to-trend-down-1"
+    },
+    {
+      "excerpt": "Economic activity increased modestly since early July. Ten of the twelve Federal Reserve Districts reported growth in the slight to moderate range; two Districts reported no change. Consumer spending grew slightly on balance; reports reflected both heightened price sensitivity on the one hand and solid high-end purchases on the other.",
+      "published_at": "2026-09-02",
+      "publisher": "Federal Reserve Bank of Minneapolis — Beige Book National Summary",
+      "relevance": "Adds cutoff-day qualitative evidence on economic activity and consumer demand, based on information collected on or before August 24.",
+      "url": "https://www.minneapolisfed.org/beige-book-reports/2026/2026-09-su"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm",
+      "reason": "The excerpt anticipates inflation over the rest of 2026 and conditional future policy tightening, implying developments after 2026-09-02. Removed under the explicit prohibition on post-cutoff references, even though the publication date precedes the cutoff."
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
+      "reason": "The relevance explicitly connects the remarks to the next policy decision, implying the September meeting after 2026-09-02. Removed under the explicit prohibition on post-cutoff references."
+    },
+    {
+      "url": "https://apnews.com/article/31077ff3bc27f6639689cf099f4c1160",
+      "reason": "The excerpt explicitly mentions the September 15-16 meeting and possible rate action then, after 2026-09-02. Removed under the explicit prohibition on post-cutoff references, despite its pre-cutoff publication date."
+    }
+  ],
+  "search_notes": "Frozen evidence pack for Q010 with an inclusive publication-date cutoff of 2026-09-02. Publication dates were verified from explicit release dates, embargo headers, or dated article text returned by web_search; the July FOMC minutes' August 19 release date was also corroborated by the Federal Reserve news listing and contemporaneous coverage. Only pre-cutoff source passages are included. Later-dated results encountered during search were discarded, and no subsequent developments or meeting outcome are included. Prediction-market and betting pages, odds, and market prices are excluded. web_fetch failed because its provider configuration was ambiguous; the authorized agent-reach web read fallback also failed because its upstream services were temporarily unavailable. Accordingly, excerpts rely on source text exposed by search, not independently fetched full pages. The supplied official calendar and open-market overview were not included as separate items because a qualifying publication date for the relevant page version was not verified; meeting dates are instead supported by dated AP reporting."
+}

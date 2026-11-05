@@ -1,0 +1,17 @@
+[
+  {
+    "source": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/raw/newsroom/body.txt",
+    "copy": "inputs/newsroom.txt",
+    "sha256": "0f2681212c4c3b504a6d7b8f20712b9b64b9acdcbc08d7feed80f95141ce801b"
+  },
+  {
+    "source": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/raw/media/body.txt",
+    "copy": "inputs/media.txt",
+    "sha256": "7fc14c24547fbfb79b5e1c4e9ce9686028f47eb9db7708a8b75ecbad81610b35"
+  },
+  {
+    "source": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/raw/historical/october-response.json",
+    "copy": "inputs/historical.json",
+    "sha256": "e5b3665733261bbcb570d6bee3413e5599edc6fd94104ebe10639690baedc025"
+  }
+]

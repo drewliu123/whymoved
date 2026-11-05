@@ -1,0 +1,17 @@
+{
+  "claim_check_command": [
+    "python3",
+    "/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py",
+    "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/asset/claims.json",
+    "--json"
+  ],
+  "claim_check_exit_code": 0,
+  "question_answer": "partial",
+  "mechanism": "growth to gross profit and working-capital observation",
+  "limitations": [
+    "No new retrieval",
+    "No matched benchmark series",
+    "No controlled outcome comparison"
+  ],
+  "formal_journal_write": false
+}

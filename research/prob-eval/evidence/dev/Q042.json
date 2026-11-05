@@ -1,0 +1,50 @@
+{
+  "qid": "Q042",
+  "as_of": "2026-07-21",
+  "kept": [
+    {
+      "excerpt": "An average of around 25 ships per day passed through the Strait of Hormuz between late June and early July, down from around 100 at the same time one year prior. Between July 13 and July 19, the latest data available from the IMF, this had already decreased to an average of 10 per day. Between 50 and 60 percent of the vessels passing through the strait are tankers carrying oil and liquefied gas, highlighting its crucial role in global energy trade.",
+      "published_at": "2026-07-21",
+      "publisher": "Statista",
+      "relevance": "This dated report provides a contemporaneous summary of IMF PortWatch traffic through July 19, although weekly averages cannot establish whether an individual day recorded zero qualifying transit calls.",
+      "url": "https://www.statista.com/chart/amp/35984/ship-traffic-in-the-strait-of-hormuz/"
+    },
+    {
+      "excerpt": "A total of four commodity vessels crossed the strait on Monday, mostly on the Iranian route, down from seven the previous day, Kpler data showed. The four vessels included two tankers that exited the strait as well as two vessels that entered. There were no visible very large crude carrier (VLCC) or liquefied natural gas tankers passing through the strait on Monday.",
+      "published_at": "2026-07-21T10:51:40+05:00",
+      "publisher": "Reuters via Business Recorder",
+      "relevance": "The July 20 observations show very low but continuing traffic immediately before the cutoff, while Kpler counts remain distinct from the IMF PortWatch series required for resolution.",
+      "url": "https://www.brecorder.com/news/amp/40431054"
+    },
+    {
+      "excerpt": "However, the latest satellite imagery from July 18 reviewed by Reuters showed just one pair of tankers involved in ship-to-ship transfers outside Hormuz off Oman's coast. Three pairs of vessels were visible on July 11. Satellite outages and limited public ship tracking data have meant that the full amount of oil exported from the Gulf is not fully known. But maritime sources said that traffic has dropped.",
+      "published_at": "2026-07-20T15:05:25+01:00",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "The report documents declining activity and tracking limitations that matter when assessing the prospect of an AIS-derived zero count rather than a complete physical cessation of shipping.",
+      "url": "https://uk.marketscreener.com/news/oil-transfer-activity-in-gulf-of-oman-slows-following-ship-attacks-data-shows-ce7f51dbdb8ef725"
+    },
+    {
+      "excerpt": "Nine vessels crossed the strait on Wednesday, mostly on the Iranian route, down from 13 the previous day, Kpler data showed. There were no Very Large Crude Carrier or liquefied natural gas tankers visibly passing through the strait on Wednesday. On Wednesday, five empty vessels entered the Gulf, including three small oil tankers and two dry bulk carriers for grains, the data showed. The four vessels that exited the strait on Wednesday carried liquefied petroleum gas, coal, fuel oil and fertilizer.",
+      "published_at": "2026-07-16T04:21:58-04:00",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "These July 15 observations establish that multiple relevant vessel categories continued crossing after the renewed blockade, despite a decline in traffic.",
+      "url": "https://www.marketscreener.com/news/fewer-vessels-travel-through-hormuz-after-us-resumes-blockade-ce7f5ed2d18cf325"
+    },
+    {
+      "excerpt": "Shipping companies are avoiding using a U.S. military-guided transit scheme through the Strait of Hormuz after a wave of Iranian attacks on vessels sparked safety concerns, seven maritime security and shipping industry sources said. Some five ships have been attacked since July 7 - three crude supertankers, one LNG tanker and one container ship - in Omani waters that fell under the U.S. scheme, according to analysis of incidents based on data from the U.N.'s shipping agency. It was unclear if all the ships were sailing under the U.S. scheme, the sources said.",
+      "published_at": "2026-07-15T11:41:04-04:00",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "Shipowners' avoidance of the alternative transit route supplies a concrete mechanism through which already reduced daily crossings could fall further.",
+      "url": "https://www.marketscreener.com/news/some-ships-refusing-us-military-guided-hormuz-transits-after-attacks-sources-say-ce7f5ed2db80f421"
+    },
+    {
+      "excerpt": "The Council condemned the attacks on civilian commercial ships in and around the Strait of Hormuz and called for the de-escalation of tensions in the region. In a resolution adopted during the session, the Council stressed that the right of transit passage through straits used for international navigation should not be threatened, impeded, denied, hampered, impaired or suspended. The Council reaffirmed that passage through the Strait should remain free of any tolls and charges, in accordance with international law, including the IMO Convention.",
+      "published_at": "2026-07-13",
+      "publisher": "International Maritime Organization",
+      "relevance": "This dated official statement confirms ongoing threats to commercial navigation and the international effort to restore unimpeded passage before the cutoff.",
+      "url": "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-council-reaffirms-commitment-to-protecting-vital-shipping-lanes.aspx"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-21. Included six dated sources and excluded prediction-market pages, undated live dashboards, later reporting, and retrospectively revised traffic series. Publication dates were checked against source-page text or structured metadata; the IMO date was also verified in web_search. Statista displays July 21, 2026 for the included chart/report, although its extraction metadata retains an older original publication date. The Reuters articles were last modified on their respective publication dates. web_fetch failed because multiple providers were registered, so full source text was read using the agent-reach web channel. The excerpts contain only information reported by the cutoff. No archived daily IMF PortWatch release with a verifiable publication vintage at or before the cutoff was obtained; the contemporaneous Statista report supplies PortWatch averages through July 19, but these averages and alternative-provider counts do not establish the presence or absence of an individual zero day in the qualifying window. The supplied resolution text ends mid-sentence, so no assumptions were added about its omitted revision provisions."
+}

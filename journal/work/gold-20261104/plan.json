@@ -1,0 +1,171 @@
+{
+ "schema_version": 2,
+ "analysis_version": 1,
+ "question": "研究下当前市场的黄金等可能走势",
+ "type": "asset",
+ "task": "黄金及联动资产1—3个月走势情景研究",
+ "entity": "黄金（COMEX金期货/XAUUSD），附白银、原油",
+ "as_of": "2026-11-04T07:30:00+00:00",
+ "historical": false,
+ "decision_needed": "判断未来1—3个月金价更可能的方向与区间、主导驱动是什么、哪些观察会改变判断。",
+ "prior_judgment": "首次研究，无既有判断。",
+ "comparison": {
+  "period": "2025-11-04至2026-11-04日频，重点2026-04以后",
+  "unit": "USD/oz、百分比、吨",
+  "scope": "COMEX期货连续合约、10年期TIPS、WGC全球需求"
+ },
+ "resolution_contract": {
+  "indicator": "COMEX金期货主力连续合约收盘价",
+  "target_period": "2026-11-04至2027-01-08",
+  "source": "交易所行情",
+  "check_at": "2026-12-10与2027-01-08"
+ },
+ "budget": {
+  "max_queries": 12,
+  "max_followups": 1
+ },
+ "stop_condition": "取得价格、利率、政策与需求的同口径数据并能区分主线，或预算内无法补齐。",
+ "research_design": {
+  "question_kind": "event_forecast",
+  "method": "reference_class_scenarios",
+  "rationale": "用户问黄金等资产的可能走势，按1—3个月窗口（到12月FOMC与1月初）做情景预测。长期条件是去美元化背景下的央行购金；近期环境是伊朗冲突引发油价冲击、通胀回升和美联储重启加息；事前预期用联邦基金利率预测市场与金价触及合约代替；后续用12月FOMC和10月CPI区分利率主线与避险主线。白银与原油作为联动资产附带判断。",
+  "baseline": "2026年11月4日金价约4033美元、实际利率2.62%、12月加息定价约75%。",
+  "price_relevance": true,
+  "mechanism_chain": [
+   "地缘冲突与油价",
+   "总体通胀",
+   "美联储加息预期",
+   "实际利率",
+   "金价"
+  ],
+  "discrimination_tests": [
+   {
+    "id": "T1",
+    "observe": "4月以来金价与油价日收益的相关符号",
+    "source": "COMEX/NYMEX日行情与FRED实际利率",
+    "by": "2026-11-04",
+    "outcomes": [
+     {
+      "hypothesis_id": "H1",
+      "prediction": "相关为负：油价涨→加息预期升→金价跌"
+     },
+     {
+      "hypothesis_id": "H2",
+      "prediction": "相关为正：冲突升级同时推高油价与避险金价"
+     }
+    ]
+   },
+   {
+    "id": "T2",
+    "observe": "Q3官方及ETF买入规模与同期价格方向",
+    "source": "WGC Gold Demand Trends Q3 2026",
+    "by": "2026-11-04",
+    "outcomes": [
+     {
+      "hypothesis_id": "H1",
+      "prediction": "买盘强但价格仍下跌"
+     },
+     {
+      "hypothesis_id": "H2",
+      "prediction": "买盘强且价格企稳上涨"
+     }
+    ]
+   },
+   {
+    "id": "T3",
+    "observe": "12月8—9日FOMC决议及点阵图后的金价反应",
+    "source": "Fed声明与金价行情",
+    "by": "2026-12-10",
+    "outcomes": [
+     {
+      "hypothesis_id": "H1",
+      "prediction": "加息或鹰派点阵图使金价走弱，意外不加息使金价明显反弹"
+     },
+     {
+      "hypothesis_id": "H2",
+      "prediction": "金价对决议反应有限，主要跟随地缘新闻与央行数据"
+     }
+    ]
+   },
+   {
+    "id": "T4",
+    "observe": "1月29日至4月1日金价跌幅与同期实际利率变化",
+    "source": "COMEX日行情与FRED DFII10",
+    "by": "2026-11-04",
+    "outcomes": [
+     {
+      "hypothesis_id": "H1",
+      "prediction": "跌幅伴随实际利率显著上升"
+     },
+     {
+      "hypothesis_id": "H3",
+      "prediction": "利率基本不变而金银大幅下跌"
+     }
+    ]
+   }
+  ]
+ },
+ "hypotheses": [
+  {
+   "id": "H1",
+   "explanation": "利率主线：油价通胀推动美联储加息与实际利率上升，主导金价",
+   "discriminating_observation": "油价上涨日金价下跌；12月决议鹰派时金价走弱"
+  },
+  {
+   "id": "H2",
+   "explanation": "避险与官方买盘主线：地缘冲突和央行购金主导金价",
+   "discriminating_observation": "冲突升级、央行加码时金价走强，与油价正相关"
+  },
+  {
+   "id": "H3",
+   "explanation": "仓位出清主线：高位投机仓位去杠杆，与利率无关",
+   "discriminating_observation": "利率未变时金银仍大跌，白银跌幅远大于黄金"
+  }
+ ],
+ "queries": [
+  {
+   "question": "过去一年金银油价与实际利率路径？",
+   "query": "Yahoo chart GC=F SI=F CL=F; FRED DFII10 DGS10 T10YIE",
+   "source": "行情与FRED",
+   "purpose": "计算回撤与相关",
+   "test_ids": [
+    "T1",
+    "T4"
+   ]
+  },
+  {
+   "question": "美联储最近决议与下一会议？",
+   "query": "federalreserve.gov press_monetary feed; fomccalendars",
+   "source": "Fed",
+   "purpose": "政策路径",
+   "test_ids": [
+    "T3"
+   ]
+  },
+  {
+   "question": "Q3官方与投资需求？",
+   "query": "WGC Gold Demand Trends Q3 2026",
+   "source": "WGC",
+   "purpose": "检验买盘与价格方向",
+   "test_ids": [
+    "T2"
+   ]
+  },
+  {
+   "question": "市场对12月加息和11月金价的定价？",
+   "query": "Polymarket Fed December 2026; gold price November 2026",
+   "source": "Polymarket Gamma",
+   "purpose": "事前预期基准",
+   "test_ids": [
+    "T3"
+   ]
+  },
+  {
+   "question": "近期地缘与油价新闻背景？",
+   "query": "Google News RSS gold price / oil Brent when:7d",
+   "source": "媒体标题",
+   "purpose": "背景线索",
+   "test_ids": []
+  }
+ ]
+}

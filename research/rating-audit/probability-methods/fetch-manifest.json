@@ -1,0 +1,235 @@
+[
+  {
+    "path": "research/rating-audit/probability-methods/05-leap/README.md",
+    "url": "https://raw.githubusercontent.com/layingfish/LEAP/3677fbb50242fcbeaafdfe258ba3b4767aeaf34e/README.md",
+    "bytes": 207,
+    "sha256": "964d9b74c05b2056a62f79c0fa1e9b5f19febc3d4cdf18ba3680d2d21f4c3a4e"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/05-leap/LICENSE",
+    "url": "https://raw.githubusercontent.com/layingfish/LEAP/3677fbb50242fcbeaafdfe258ba3b4767aeaf34e/LICENSE",
+    "bytes": 1081,
+    "sha256": "06182cc6efec2f1d6d10d6a4128d84a991ce8b4ca39e4ca07d2ef78a10ddfa30"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/05-leap/references/finalizer-contract.md",
+    "url": "https://raw.githubusercontent.com/layingfish/LEAP/3677fbb50242fcbeaafdfe258ba3b4767aeaf34e/references/finalizer-contract.md",
+    "bytes": 1613,
+    "sha256": "b0dd5438d003d8abd3ba0f696252a15dd3a11b988cb6823856b77b13fbc437b7"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/05-leap/scripts/normalize_agent_trace.py",
+    "url": "https://raw.githubusercontent.com/layingfish/LEAP/3677fbb50242fcbeaafdfe258ba3b4767aeaf34e/scripts/normalize_agent_trace.py",
+    "bytes": 18864,
+    "sha256": "4c196367c93eefc6fcca3b914566b2e5f8f77e7153da2643f794587290c059cd"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/05-leap/docs/LEAP.pdf",
+    "url": "https://raw.githubusercontent.com/layingfish/LEAP/3677fbb50242fcbeaafdfe258ba3b4767aeaf34e/docs/LEAP.pdf",
+    "bytes": 2959090,
+    "sha256": "524ea17a0732fea960cabf1d88eeeb6deab25c7a31e2331cffbce193a7a9c4dc"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/README.md",
+    "url": "https://raw.githubusercontent.com/dpaleka/consistency-forecasting/08f0fdb0f347ede39e3fb7c18d60d204341a2517/README.md",
+    "bytes": 16920,
+    "sha256": "21bdabeff95dd482fedf2a04c9347926db7396a8947b111bcd4a9027692d6a4f"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/pyproject.toml",
+    "url": "https://raw.githubusercontent.com/dpaleka/consistency-forecasting/08f0fdb0f347ede39e3fb7c18d60d204341a2517/pyproject.toml",
+    "bytes": 81,
+    "sha256": "cbe1472fd36dbc1d3119913d87a67de176e703f098cd60232c25ca68720c281c"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/requirements.txt",
+    "url": "https://raw.githubusercontent.com/dpaleka/consistency-forecasting/08f0fdb0f347ede39e3fb7c18d60d204341a2517/requirements.txt",
+    "bytes": 4874,
+    "sha256": "b22c2a03fb16bd15cc2a243b6b3064041716deb3444fba6ec2548a8a109697d1"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/src/common/LICENSE",
+    "url": "https://raw.githubusercontent.com/dpaleka/consistency-forecasting/08f0fdb0f347ede39e3fb7c18d60d204341a2517/src/common/LICENSE",
+    "bytes": 1106,
+    "sha256": "7d4c22f4daa45045dc17f25a3f5d288fae4809bd5a247c748b46866232a4e988"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/src/static_checks/Checker.py",
+    "url": "https://raw.githubusercontent.com/dpaleka/consistency-forecasting/08f0fdb0f347ede39e3fb7c18d60d204341a2517/src/static_checks/Checker.py",
+    "bytes": 76696,
+    "sha256": "a5ad8a3837f563c6b79468a1c77ff41d4b5c31670168c392fc15282fc3eb473d"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/src/forecasters/consistent_forecaster.py",
+    "url": "https://raw.githubusercontent.com/dpaleka/consistency-forecasting/08f0fdb0f347ede39e3fb7c18d60d204341a2517/src/forecasters/consistent_forecaster.py",
+    "bytes": 18253,
+    "sha256": "79ea22a57694d3b58b586fd4e9e2011906d49c6092bc2f22036de85e29f3d935"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/src/evaluation_utils/proper_scoring.py",
+    "url": "https://raw.githubusercontent.com/dpaleka/consistency-forecasting/08f0fdb0f347ede39e3fb7c18d60d204341a2517/src/evaluation_utils/proper_scoring.py",
+    "bytes": 12048,
+    "sha256": "bac0ff4e1b0c72a921e63f7c693175fc1ae187111ece3ab0033578074c30cd5d"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/src/common/datatypes.py",
+    "url": "https://raw.githubusercontent.com/dpaleka/consistency-forecasting/08f0fdb0f347ede39e3fb7c18d60d204341a2517/src/common/datatypes.py",
+    "bytes": 10012,
+    "sha256": "c5f50a0ee80e4d203786a9adbf67cce6968945ad9a353bce6367f2d64d704863"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/README.md",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/README.md",
+    "bytes": 6003,
+    "sha256": "f75b0a5c64a05df7a7d5e9bce9d236d36f167bb2f60484ce609046236e665e4e"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/LICENSE",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/LICENSE",
+    "bytes": 1071,
+    "sha256": "9748960c3c0d6ad371daf339a5b204a4485cba6e19ad131a7cd20f33e38d9f62"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/libraries/verl/LICENSE",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/libraries/verl/LICENSE",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/libraries/verl/requirements.txt",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/libraries/verl/requirements.txt",
+    "bytes": 370,
+    "sha256": "ac6b28004be9f31974da2bee19db0b5bb274c2319fdc980b6a62086a02cd683e"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/libraries/verl/verl/utils/reward_score/freeform.py",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/libraries/verl/verl/utils/reward_score/freeform.py",
+    "bytes": 4325,
+    "sha256": "82afe3f2f935d4a70afa6b0d7fd0d72583628ad4bfe1f0064e2c0452ffb37633"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/libraries/verl/verl/utils/reward_score/binary.py",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/libraries/verl/verl/utils/reward_score/binary.py",
+    "bytes": 2394,
+    "sha256": "e46c21e53796c11b570623e14315aeb46046e838eae06b6693a4be9b905ce7bf"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/libraries/verl/scripts/ours/genrm/brier_reward_function.py",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/libraries/verl/scripts/ours/genrm/brier_reward_function.py",
+    "bytes": 19402,
+    "sha256": "f43f0f5495f2e8c2e2c559b4aa536c2e94e7f62b327d77246812e5184b732c8f"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/custom_eval_scripts/eval_binary_retrieval.py",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/custom_eval_scripts/eval_binary_retrieval.py",
+    "bytes": 47921,
+    "sha256": "db05d7564c508964b4871f609a82d2e4a20533bb751e588324802b6b811f7abf"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/custom_eval_scripts/eval_freeform_retrieval.py",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/custom_eval_scripts/eval_freeform_retrieval.py",
+    "bytes": 44507,
+    "sha256": "41943bc776a43273984144fc195ae5da76dbaaaf75215b1479ca819b3b4a2436"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/custom_eval_scripts/utils.py",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/custom_eval_scripts/utils.py",
+    "bytes": 15905,
+    "sha256": "f8f2da0988df6f96a724c42d3ce23032b74760edd496569a29daf1d30c025260"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/qgen/filters/leakage_filter.py",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/qgen/filters/leakage_filter.py",
+    "bytes": 19158,
+    "sha256": "c586fa65297300363475834e7f3a24e8ce873470ee60e84ba7f248b1f9416efe"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/embedding_retrieval/retrieval.py",
+    "url": "https://raw.githubusercontent.com/OpenForecaster/scaling-forecasting-training/455e35d67e2b3e65f252cb148bdbe08ac9280706/embedding_retrieval/retrieval.py",
+    "bytes": 6483,
+    "sha256": "9a2408dca7ceb6636aada43caeb3b07c03f8443b18296966839a9bcae50f0967"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/README.md",
+    "url": "https://raw.githubusercontent.com/andyzoujm/autocast/f7907d45dd3f5e58d70834f2d7770c404ef4baba/README.md",
+    "bytes": 3866,
+    "sha256": "f1d2e644f255a1083a2b24c411f04bdad595c29854eb15d9e1c54de755c107c5"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/LICENSE",
+    "url": "https://raw.githubusercontent.com/andyzoujm/autocast/f7907d45dd3f5e58d70834f2d7770c404ef4baba/LICENSE",
+    "bytes": 1065,
+    "sha256": "ddc240ab2063e8e75178a6b43ea182408b6507d8f878fa68306bf66a01154a63"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/autocast_experiments/README.md",
+    "url": "https://raw.githubusercontent.com/andyzoujm/autocast/f7907d45dd3f5e58d70834f2d7770c404ef4baba/autocast_experiments/README.md",
+    "bytes": 1223,
+    "sha256": "8c5deaebb9ac7c69ec91801b30793b92745804c3b702984be3bd6fbf0c6abe43"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/autocast_experiments/src/model_multihead.py",
+    "url": "https://raw.githubusercontent.com/andyzoujm/autocast/f7907d45dd3f5e58d70834f2d7770c404ef4baba/autocast_experiments/src/model_multihead.py",
+    "bytes": 17576,
+    "sha256": "47e8bbcb9fe326eaafb54bd29348aad5d29217c5cde2d35867c3be7f512f0036"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/autocast_experiments/src/forecasting_data_multihead.py",
+    "url": "https://raw.githubusercontent.com/andyzoujm/autocast/f7907d45dd3f5e58d70834f2d7770c404ef4baba/autocast_experiments/src/forecasting_data_multihead.py",
+    "bytes": 6143,
+    "sha256": "ca6432e447c97ffa81184f9b528687b891a71c988f143580d7f21999edb72137"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/autocast_experiments/train_fid_temporal.py",
+    "url": "https://raw.githubusercontent.com/andyzoujm/autocast/f7907d45dd3f5e58d70834f2d7770c404ef4baba/autocast_experiments/train_fid_temporal.py",
+    "bytes": 36885,
+    "sha256": "4626811fd8a9ed7ea85354d79c4abb41fbe38288e52e5afe1c59b6d1922aa1ba"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/autocast_experiments/data/retrieve_cc_news_bm25+ce.py",
+    "url": "https://raw.githubusercontent.com/andyzoujm/autocast/f7907d45dd3f5e58d70834f2d7770c404ef4baba/autocast_experiments/data/retrieve_cc_news_bm25%2Bce.py",
+    "bytes": 7871,
+    "sha256": "0eceb35a7527b0b4a4da4708354adfdf5b5eb57e19bea6aca623d1cec20755c9"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/intervalqa_experiments/finetune_confidence.py",
+    "url": "https://raw.githubusercontent.com/andyzoujm/autocast/f7907d45dd3f5e58d70834f2d7770c404ef4baba/intervalqa_experiments/finetune_confidence.py",
+    "bytes": 29122,
+    "sha256": "4cda103d18d1cd4c6ca01bbb0738006b0050acd5aacf02ca1a26645e0cd7e27e"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/05-leap/paper.html",
+    "url": "https://arxiv.org/html/2609.01337v1",
+    "bytes": 475429,
+    "sha256": "332e43938d2a88e6ad6054d43347df97533c0002ff560e3992898144be6de2a4"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/06-consistency/paper.html",
+    "url": "https://arxiv.org/html/2412.18544v3",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/07-openforecaster/paper.html",
+    "url": "https://arxiv.org/html/2512.25070v1",
+    "bytes": 310124,
+    "sha256": "1b34fe01019c2877236496d905528b4f02f7d6fc5781fa9874d1f7e2376544e3"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/08-autocast/paper.html",
+    "url": "https://arxiv.org/html/2206.15474v2",
+    "bytes": 245992,
+    "sha256": "37ef401f0b2d74d8feea4f7f3cde4b1137f686191253e1b2f716c91a2af3554c"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/09-cais/release.html",
+    "url": "https://safe.ai/blog/forecasting",
+    "bytes": 48175,
+    "sha256": "a7493a3eeedf4d4eee7d039488190e12c12b56459991d8c4f6f0be8438624d5b"
+  },
+  {
+    "path": "research/rating-audit/probability-methods/09-cais/report.pdf",
+    "url": "https://drive.google.com/uc?export=download&id=1Tc_xY1NM-US4mZ4OpzxrpTudyo1W4KsE",
+    "bytes": 138918,
+    "sha256": "294b8bc3aa5807ef134f0a790c090a1f6e1103e28aac3559c37fd1181d5ccae1"
+  }
+]

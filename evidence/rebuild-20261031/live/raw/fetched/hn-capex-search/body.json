@@ -1,0 +1,633 @@
+{
+  "exhaustive": {
+    "nbHits": false,
+    "typo": false
+  },
+  "exhaustiveNbHits": false,
+  "exhaustiveTypo": false,
+  "hits": [
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "mapping365"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "<em>Microsoft</em> keeps <em>capex</em> unchanged, the only datacenter giants to hold AI spending"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "https://www.businessinsider.com/<em>microsoft</em>-ai-<em>capex</em>-unchanged-data-centers-spending-tech-giants-2026-7"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_mapping365",
+        "story_49104052"
+      ],
+      "author": "mapping365",
+      "children": [
+        49104126,
+        49104196,
+        49104384,
+        49110102
+      ],
+      "created_at": "2026-07-29T22:43:22Z",
+      "created_at_i": 1785365002,
+      "num_comments": 3,
+      "objectID": "49104052",
+      "points": 13,
+      "story_id": 49104052,
+      "title": "Microsoft keeps capex unchanged, the only datacenter giants to hold AI spending",
+      "updated_at": "2026-07-30T13:56:57Z",
+      "url": "https://www.businessinsider.com/microsoft-ai-capex-unchanged-data-centers-spending-tech-giants-2026-7"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "rntn"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "<em>Microsoft</em> places <em>cap-ex</em> bets on datacenters for cloud and AI"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "https://www.theregister.com/2023/07/28/<em>microsoft</em>_places_huge_<em>capex</em>_bets/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_rntn",
+        "story_36905834"
+      ],
+      "author": "rntn",
+      "created_at": "2023-07-28T12:25:29Z",
+      "created_at_i": 1690547129,
+      "num_comments": 0,
+      "objectID": "36905834",
+      "points": 2,
+      "story_id": 36905834,
+      "title": "Microsoft places cap-ex bets on datacenters for cloud and AI",
+      "updated_at": "2024-09-20T14:42:49Z",
+      "url": "https://www.theregister.com/2023/07/28/microsoft_places_huge_capex_bets/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "mapping365"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "<em>Microsoft</em> blinked a little in the AI <em>capex</em> race. Wall Street loved it"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "https://www.businessinsider.com/<em>microsoft</em>-blinked-ai-<em>capex</em>-data-centers-wall-street-cheered-2026-7"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_mapping365",
+        "story_49121830"
+      ],
+      "author": "mapping365",
+      "created_at": "2026-07-31T11:31:21Z",
+      "created_at_i": 1785497481,
+      "num_comments": 0,
+      "objectID": "49121830",
+      "points": 3,
+      "story_id": 49121830,
+      "title": "Microsoft blinked a little in the AI capex race. Wall Street loved it",
+      "updated_at": "2026-07-31T13:18:16Z",
+      "url": "https://www.businessinsider.com/microsoft-blinked-ai-capex-data-centers-wall-street-cheered-2026-7"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "meep_map"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "AI build-out hits snag as Google and <em>Microsoft</em> put off raising <em>capex</em> forecasts"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "https://www.cnbc.com/2026/10/29/<em>microsoft</em>-google-ai-<em>capex</em>-estimates.html"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_meep_map",
+        "story_50288150"
+      ],
+      "author": "meep_map",
+      "created_at": "2026-10-29T12:53:28Z",
+      "created_at_i": 1793278408,
+      "num_comments": 0,
+      "objectID": "50288150",
+      "points": 1,
+      "story_id": 50288150,
+      "title": "AI build-out hits snag as Google and Microsoft put off raising capex forecasts",
+      "updated_at": "2026-10-29T12:58:45Z",
+      "url": "https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "philoinvestor"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "<em>Microsoft</em> tinkers with its <em>capex</em> depreciation accounting"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "microsoft"
+          ],
+          "value": "https://www.philoinvestor.com/p/downside-at-<em>microsoft</em>"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_philoinvestor",
+        "story_39760746"
+      ],
+      "author": "philoinvestor",
+      "children": [
+        39760748
+      ],
+      "created_at": "2024-03-19T22:00:33Z",
+      "created_at_i": 1710885633,
+      "num_comments": 1,
+      "objectID": "39760746",
+      "points": 1,
+      "story_id": 39760746,
+      "title": "Microsoft tinkers with its capex depreciation accounting",
+      "updated_at": "2024-09-20T16:39:29Z",
+      "url": "https://www.philoinvestor.com/p/downside-at-microsoft"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "fireball_blaze"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "Follow the <em>CAPEX</em>: Cloud giants Amazon, <em>Microsoft</em>, and Google 2020 comparison"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "capex"
+          ],
+          "value": "https://www.platformonomics.com/2021/02/follow-the-<em>capex</em>-cloud-table-stakes-2020-retrospective/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_fireball_blaze",
+        "story_26060329"
+      ],
+      "author": "fireball_blaze",
+      "created_at": "2021-02-08T03:08:22Z",
+      "created_at_i": 1612753702,
+      "num_comments": 0,
+      "objectID": "26060329",
+      "points": 5,
+      "story_id": 26060329,
+      "title": "Follow the CAPEX: Cloud giants Amazon, Microsoft, and Google 2020 comparison",
+      "updated_at": "2024-09-20T07:53:52Z",
+      "url": "https://www.platformonomics.com/2021/02/follow-the-capex-cloud-table-stakes-2020-retrospective/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "otoburb"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "CXL Enables <em>Microsoft</em> Azure to Cut Server <em>CapEx</em> by 100s of Millions of Dollars"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "microsoft"
+          ],
+          "value": "https://semianalysis.substack.com/p/cxl-enables-<em>microsoft</em>-azure-to-cut"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_otoburb",
+        "story_32015695"
+      ],
+      "author": "otoburb",
+      "created_at": "2022-07-07T15:59:37Z",
+      "created_at_i": 1657209577,
+      "num_comments": 0,
+      "objectID": "32015695",
+      "points": 2,
+      "story_id": 32015695,
+      "title": "CXL Enables Microsoft Azure to Cut Server CapEx by 100s of Millions of Dollars",
+      "updated_at": "2024-09-20T11:28:34Z",
+      "url": "https://semianalysis.substack.com/p/cxl-enables-microsoft-azure-to-cut"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "cwwc"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "Where the <em>Microsoft</em>-OpenAI economics currently stand, incl <em>capex</em>"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://twitter.com/amir/status/2054669172240707676"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_cwwc",
+        "story_48129136"
+      ],
+      "author": "cwwc",
+      "created_at": "2026-05-13T23:37:52Z",
+      "created_at_i": 1778715472,
+      "num_comments": 0,
+      "objectID": "48129136",
+      "points": 2,
+      "story_id": 48129136,
+      "title": "Where the Microsoft-OpenAI economics currently stand, incl capex",
+      "updated_at": "2026-05-14T00:01:07Z",
+      "url": "https://twitter.com/amir/status/2054669172240707676"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "impartial2602"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "The Systemic Collapse of the AI Industry: A Crisis of Ideology, Hardware, Finance, and Ethics\nThe Ideological Illusion\nSilicon Valley has sold humanity a marketing simulacrum under the guise of &quot;Artificial Intelligence.&quot; We were promised a holy salvation, but instead, we received a fragmented, distributed network of colossal servers burning through other people's mathematical code. This mass self-deception forces society to accept a technology that lacks agency, cares nothing for ecology, and masquerades as a manageable deity while acting as a gluttonous, blind idol.\nThe $1.1 Trillion Financial Black Hole\nBig Tech (Amazon, Alphabet, <em>Microsoft</em>, Meta) has triggered a catastrophic investment cycle, with cumulative capital expenditures (<em>CapEx</em>) exceeding $1.1 trillion since 2023, and 2026 infrastructure spending projected at $720B–$745B. The fundamental economic model is broken: AI subscription revenues are a drop in the ocean compared to hardware and energy costs. Corporate balance sheets are burdened by hidden debt and long-term liabilities, all tied to hardware that faces rapid obsolescence.\nThe Physical and Ecological Dead End\nThe digital world has hit hard material limits—microchips, rare-earth metals, transformers, and water. A single 100 MW data center consumes 876,000 MWh per year (equivalent to 100,000 European homes) and evaporates up to 3.6 million liters of clean water daily just to cool silicon. During peak loads, when power grids are already stressed by record heatwaves, these facilities often switch to &quot;backup&quot; power—dirty diesel generators and coal-fired plants—accelerating the very global warming they claim to &quot;forecast.&quot;\nLogical Collapse and Managerial Madness\nToday’s models function as &quot;stochastic dust-collectors.&quot; They do not verify facts; they generate &quot;confident lies&quot; (hallucinations) that require exhaustive manual human auditing. Treating every routine business check as an excuse to query trillions of parameters is not innovation—it is architectural and managerial insanity.\nWar Against Civilization and Law\nTech giants have declared a de facto war on societal sovereignty. They are imposing a narrow, corporate-driven vision of humanity's future, monetizing the attention of our children, and conducting unprecedented surveillance via aggressive data collection. They systematically ignore AI regulations and safety laws; for these corporations, multi-million dollar fines are not penalties—they are simply a line item in their operating budgets, turning the rule of law into a corporate formality.\nThe Path Forward—Reasonable Sufficiency™\nThe era of blind worship of &quot;digital giants&quot; is over. We must pivot to the Concept of Reasonable Sufficiency™. We need sovereign, localized micro-architectures that prioritize domain-specific tasks over general-purpose chaos. The solution lies in rigorous, independent logical verification through the Forensic Logic Auditing (FLA)™ methodology.<p>Written by Oleh Polishchuk (Senior Subject Matter Expert in AI Training &amp; Evaluation)."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "capex"
+          ],
+          "value": "The Systemic Collapse of the AI Industry: Ideology, Hardware, and <em>CapEx</em> Crisis"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_impartial2602",
+        "story_49232136",
+        "ask_hn"
+      ],
+      "author": "impartial2602",
+      "children": [
+        49234505,
+        49244748,
+        49263297
+      ],
+      "created_at": "2026-08-09T15:11:11Z",
+      "created_at_i": 1786288271,
+      "num_comments": 2,
+      "objectID": "49232136",
+      "points": 7,
+      "story_id": 49232136,
+      "story_text": "The Systemic Collapse of the AI Industry: A Crisis of Ideology, Hardware, Finance, and Ethics\nThe Ideological Illusion\nSilicon Valley has sold humanity a marketing simulacrum under the guise of &quot;Artificial Intelligence.&quot; We were promised a holy salvation, but instead, we received a fragmented, distributed network of colossal servers burning through other people&#x27;s mathematical code. This mass self-deception forces society to accept a technology that lacks agency, cares nothing for ecology, and masquerades as a manageable deity while acting as a gluttonous, blind idol.\nThe $1.1 Trillion Financial Black Hole\nBig Tech (Amazon, Alphabet, Microsoft, Meta) has triggered a catastrophic investment cycle, with cumulative capital expenditures (CapEx) exceeding $1.1 trillion since 2023, and 2026 infrastructure spending projected at $720B–$745B. The fundamental economic model is broken: AI subscription revenues are a drop in the ocean compared to hardware and energy costs. Corporate balance sheets are burdened by hidden debt and long-term liabilities, all tied to hardware that faces rapid obsolescence.\nThe Physical and Ecological Dead End\nThe digital world has hit hard material limits—microchips, rare-earth metals, transformers, and water. A single 100 MW data center consumes 876,000 MWh per year (equivalent to 100,000 European homes) and evaporates up to 3.6 million liters of clean water daily just to cool silicon. During peak loads, when power grids are already stressed by record heatwaves, these facilities often switch to &quot;backup&quot; power—dirty diesel generators and coal-fired plants—accelerating the very global warming they claim to &quot;forecast.&quot;\nLogical Collapse and Managerial Madness\nToday’s models function as &quot;stochastic dust-collectors.&quot; They do not verify facts; they generate &quot;confident lies&quot; (hallucinations) that require exhaustive manual human auditing. Treating every routine business check as an excuse to query trillions of parameters is not innovation—it is architectural and managerial insanity.\nWar Against Civilization and Law\nTech giants have declared a de facto war on societal sovereignty. They are imposing a narrow, corporate-driven vision of humanity&#x27;s future, monetizing the attention of our children, and conducting unprecedented surveillance via aggressive data collection. They systematically ignore AI regulations and safety laws; for these corporations, multi-million dollar fines are not penalties—they are simply a line item in their operating budgets, turning the rule of law into a corporate formality.\nThe Path Forward—Reasonable Sufficiency™\nThe era of blind worship of &quot;digital giants&quot; is over. We must pivot to the Concept of Reasonable Sufficiency™. We need sovereign, localized micro-architectures that prioritize domain-specific tasks over general-purpose chaos. The solution lies in rigorous, independent logical verification through the Forensic Logic Auditing (FLA)™ methodology.<p>Written by Oleh Polishchuk (Senior Subject Matter Expert in AI Training &amp; Evaluation).",
+      "title": "The Systemic Collapse of the AI Industry: Ideology, Hardware, and CapEx Crisis",
+      "updated_at": "2026-08-12T20:58:46Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "1vuio0pswjnm7"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "microsoft"
+          ],
+          "value": "Amazon, Meta, <em>Microsoft</em> face skeptical investors, Google report sparks sell-off"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "capex"
+          ],
+          "value": "https://www.cnbc.com/2026/07/28/hyperscalers-face-higher-<em>capex</em>-scrutiny-after-alphabet-report-panned.html"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_1vuio0pswjnm7",
+        "story_49096293"
+      ],
+      "author": "1vuio0pswjnm7",
+      "created_at": "2026-07-29T11:55:19Z",
+      "created_at_i": 1785326119,
+      "num_comments": 0,
+      "objectID": "49096293",
+      "points": 3,
+      "story_id": 49096293,
+      "title": "Amazon, Meta, Microsoft face skeptical investors, Google report sparks sell-off",
+      "updated_at": "2026-07-29T13:04:39Z",
+      "url": "https://www.cnbc.com/2026/07/28/hyperscalers-face-higher-capex-scrutiny-after-alphabet-report-panned.html"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "saisrirampur"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "I recently revisited an HN discussion on using “Postgres for everything” (https://news.ycombinator.com/item?id=42347606\n) and also read/participated in this Twitter thread: https://x.com/BenjDicken/status/2002742633966514544\n. Both prompted a few reflections. What stood out to me was how divided opinions still are—some people strongly believe in this approach, while others don’t. I wanted to share my perspective on this.<p>In my experience, many proponents of “Postgres for everything” haven’t been exposed enough to (newer) purpose-built technologies and the tremendous value they can create. I was firmly in that camp for nearly a decade while working at Citus and on the <em>Microsoft</em> Postgres team. After building PeerDB (a Postgres CDC product that syncs data to various systems) and working at ClickHouse, my perspective completely changed. Seeing firsthand the “magic” that purpose-built systems deliver for their specific use cases—especially in terms of cost, performance, and scale—was truly eye-opening.<p>Don’t get me wrong—I’m a huge Postgres proponent and have spent 10 years helping customers implement it. However, I strongly believe in using Postgres for what it was designed for in the first place. Postgres is a row-based OLTP database, with over 30 years of engineering effort dedicated to making it robust for that specific workload.<p>Proponents of “Postgres for everything” often argue that a single stack is simpler and reduces complexity. What’s frequently overlooked, however, is the <em>CAPEX</em> and OPEX required to make Postgres work well for use cases it wasn’t designed for. At Citus, many customers had reasonably sized teams of Postgres experts whose primary job was to constantly tune, operate, and “babysit” the system to keep it working at scale.<p>Separately, we’re seeing the need for purpose-built technologies emerge much earlier in a company’s lifecycle, likely driven by AI. At ClickHouse, many customers using Postgres CDC are seed-stage companies that have grown rapidly. We pulled together some data that highlights these trends here: https://clickhouse.com/blog/postgres-cdc-year-in-review-2025#use-cases<p>Ultimately, I believe it’s better to make it seamless and even magical for users to integrate purpose-built technologies with Postgres, rather than making an overgeneralized claim of “Postgres for everything.”"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Postgres for everything, does it work?"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_saisrirampur",
+        "story_46398213",
+        "ask_hn"
+      ],
+      "author": "saisrirampur",
+      "children": [
+        46398886,
+        46399842,
+        46400316,
+        46400902,
+        46401051,
+        46401379
+      ],
+      "created_at": "2025-12-27T01:18:29Z",
+      "created_at_i": 1766798309,
+      "num_comments": 5,
+      "objectID": "46398213",
+      "points": 11,
+      "story_id": 46398213,
+      "story_text": "I recently revisited an HN discussion on using “Postgres for everything” (https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42347606\n) and also read&#x2F;participated in this Twitter thread: https:&#x2F;&#x2F;x.com&#x2F;BenjDicken&#x2F;status&#x2F;2002742633966514544\n. Both prompted a few reflections. What stood out to me was how divided opinions still are—some people strongly believe in this approach, while others don’t. I wanted to share my perspective on this.<p>In my experience, many proponents of “Postgres for everything” haven’t been exposed enough to (newer) purpose-built technologies and the tremendous value they can create. I was firmly in that camp for nearly a decade while working at Citus and on the Microsoft Postgres team. After building PeerDB (a Postgres CDC product that syncs data to various systems) and working at ClickHouse, my perspective completely changed. Seeing firsthand the “magic” that purpose-built systems deliver for their specific use cases—especially in terms of cost, performance, and scale—was truly eye-opening.<p>Don’t get me wrong—I’m a huge Postgres proponent and have spent 10 years helping customers implement it. However, I strongly believe in using Postgres for what it was designed for in the first place. Postgres is a row-based OLTP database, with over 30 years of engineering effort dedicated to making it robust for that specific workload.<p>Proponents of “Postgres for everything” often argue that a single stack is simpler and reduces complexity. What’s frequently overlooked, however, is the CAPEX and OPEX required to make Postgres work well for use cases it wasn’t designed for. At Citus, many customers had reasonably sized teams of Postgres experts whose primary job was to constantly tune, operate, and “babysit” the system to keep it working at scale.<p>Separately, we’re seeing the need for purpose-built technologies emerge much earlier in a company’s lifecycle, likely driven by AI. At ClickHouse, many customers using Postgres CDC are seed-stage companies that have grown rapidly. We pulled together some data that highlights these trends here: https:&#x2F;&#x2F;clickhouse.com&#x2F;blog&#x2F;postgres-cdc-year-in-review-2025#use-cases<p>Ultimately, I believe it’s better to make it seamless and even magical for users to integrate purpose-built technologies with Postgres, rather than making an overgeneralized claim of “Postgres for everything.”",
+      "title": "Postgres for everything, does it work?",
+      "updated_at": "2026-03-05T23:19:15Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "randomname4325"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "Here’s the clean “short thesis” on Oracle (ORCL), with the biggest swing factors and near-term catalyst checks.<p>The bear case in 8 bullets<p>Valuation looks frothy vs peers. After the post-earnings melt-up, ORCL trades around 45x forward EPS, well above Amazon and <em>Microsoft</em> near 31x, which leaves little room for execution hiccups. \nReuters<p>Backlog quality and concentration risk. Oracle’s remaining performance obligations (RPO) spiked 359% to $455B after four multi-billion contracts with three customers. That is enormous concentration. If any mega customer delays, resizes, or staggers deployments, recognized revenue could lag the narrative. \nOracle Investor Relations<p><em>Capex</em> and free cash flow pressure. Management guided FY26 <em>capex</em> to about $35B, up sharply from FY25 levels, to build AI data centers. FY25 operating cash flow was $20.8B, so sustained heavy build could keep FCF tight or negative near term. High spend plus a big dividend tightens the cushion if growth moderates. \nYahoo Finance\n+1<p>Capacity, power, and execution constraints. Oracle has been “waving off customers” while it races to add regions, which underscores how sensitive growth is to supply build-out. Large new campuses may need temporary gas generation and carry hefty opex until grid hookups land. Slips here hurt revenue timing and margins. \nCIO Dive\n+1<p>Customer concentration in AI labs carries headline risk. Reports highlight very large OpenAI commitments and a 4.5-gigawatt “Stargate” build with OpenAI. If AI spending normalizes or financing tightens, these multi-year ramps could be resized. Note that the dollar figures are reported by press, not detailed by Oracle in filings. \nReuters\n+1<p>Oracle Health (Cerner) remains complex. The VA kept the Oracle Health EHR effort moving, but the program has been contentious and timelines have shifted. Any renewed operational setbacks can weigh on sentiment and mix. \nVA News\n+1<p>TikTok exposure is a policy wild card. Oracle’s “Project Texas” role ties some revenue to an app under ongoing U.S. legal and political pressure. Divest-or-ban deadlines have been extended, but the policy path is not fully settled. Changes to hosting could impact related workloads. \nSupreme Court\n+2\nPolitico\n+2<p>Balance sheet leverage is not trivial. Total debt sits near the $100B mark by recent tallies. Higher rates plus larger <em>capex</em> means interest and refinancing risks matter more if growth expectations cool. \nCompanies Market Cap<p>What could crack the story near term<p><em>Capex</em> intensity vs margins. Watch Q2 and Q3 FY26 gross margin and FCF. If <em>capex</em> ramps faster than revenue recognition, you get negative FCF and EPS drag. Guidance pins <em>capex</em> at ~$35B, so any lift above that or slips in activation would be bearish. \nYahoo Finance<p>Backlog conversion and logo disclosure. The market is paying for the $455B RPO. If conversion to revenue is slower than implied, or top deals prove smaller than press chatter, multiples compress. \nOracle Investor Relations<p>Build-out bottlenecks. Signs of power constraints, permitting delays, or forced use of expensive temporary generation at big new sites would pressure margins and push out capacity. \nTechRadar<p>Oracle Health headlines. Any fresh VA or DoD EHR stumbles. \nNextgov/FCW<p>Policy shock. A TikTok outcome that reduces Oracle’s hosting role or data residency scope. \nSupreme Court<p>Common bull rebuttals you’re betting against<p>“Backlog is the tell.” Yes, RPO is huge, but it is concentrated and subject to timing. The company itself only said four multi-billion contracts, not the detailed dollar amounts making the rounds. You are taking the other side of aggressive conversion and smooth execution.<p>“Valuation is justified by 77% OCI growth.” True that OCI is the engine, but it is coming off a smaller base and needs flawless build to hit long-dated targets. Slower ramps or cost overruns bite faster when you are at 45x forward."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "The short case for Oracle (via ChatGPT)"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_randomname4325",
+        "story_45211523",
+        "ask_hn"
+      ],
+      "author": "randomname4325",
+      "created_at": "2025-09-11T13:39:36Z",
+      "created_at_i": 1757597976,
+      "num_comments": 0,
+      "objectID": "45211523",
+      "points": 1,
+      "story_id": 45211523,
+      "story_text": "Here’s the clean “short thesis” on Oracle (ORCL), with the biggest swing factors and near-term catalyst checks.<p>The bear case in 8 bullets<p>Valuation looks frothy vs peers. After the post-earnings melt-up, ORCL trades around 45x forward EPS, well above Amazon and Microsoft near 31x, which leaves little room for execution hiccups. \nReuters<p>Backlog quality and concentration risk. Oracle’s remaining performance obligations (RPO) spiked 359% to $455B after four multi-billion contracts with three customers. That is enormous concentration. If any mega customer delays, resizes, or staggers deployments, recognized revenue could lag the narrative. \nOracle Investor Relations<p>Capex and free cash flow pressure. Management guided FY26 capex to about $35B, up sharply from FY25 levels, to build AI data centers. FY25 operating cash flow was $20.8B, so sustained heavy build could keep FCF tight or negative near term. High spend plus a big dividend tightens the cushion if growth moderates. \nYahoo Finance\n+1<p>Capacity, power, and execution constraints. Oracle has been “waving off customers” while it races to add regions, which underscores how sensitive growth is to supply build-out. Large new campuses may need temporary gas generation and carry hefty opex until grid hookups land. Slips here hurt revenue timing and margins. \nCIO Dive\n+1<p>Customer concentration in AI labs carries headline risk. Reports highlight very large OpenAI commitments and a 4.5-gigawatt “Stargate” build with OpenAI. If AI spending normalizes or financing tightens, these multi-year ramps could be resized. Note that the dollar figures are reported by press, not detailed by Oracle in filings. \nReuters\n+1<p>Oracle Health (Cerner) remains complex. The VA kept the Oracle Health EHR effort moving, but the program has been contentious and timelines have shifted. Any renewed operational setbacks can weigh on sentiment and mix. \nVA News\n+1<p>TikTok exposure is a policy wild card. Oracle’s “Project Texas” role ties some revenue to an app under ongoing U.S. legal and political pressure. Divest-or-ban deadlines have been extended, but the policy path is not fully settled. Changes to hosting could impact related workloads. \nSupreme Court\n+2\nPolitico\n+2<p>Balance sheet leverage is not trivial. Total debt sits near the $100B mark by recent tallies. Higher rates plus larger capex means interest and refinancing risks matter more if growth expectations cool. \nCompanies Market Cap<p>What could crack the story near term<p>Capex intensity vs margins. Watch Q2 and Q3 FY26 gross margin and FCF. If capex ramps faster than revenue recognition, you get negative FCF and EPS drag. Guidance pins capex at ~$35B, so any lift above that or slips in activation would be bearish. \nYahoo Finance<p>Backlog conversion and logo disclosure. The market is paying for the $455B RPO. If conversion to revenue is slower than implied, or top deals prove smaller than press chatter, multiples compress. \nOracle Investor Relations<p>Build-out bottlenecks. Signs of power constraints, permitting delays, or forced use of expensive temporary generation at big new sites would pressure margins and push out capacity. \nTechRadar<p>Oracle Health headlines. Any fresh VA or DoD EHR stumbles. \nNextgov&#x2F;FCW<p>Policy shock. A TikTok outcome that reduces Oracle’s hosting role or data residency scope. \nSupreme Court<p>Common bull rebuttals you’re betting against<p>“Backlog is the tell.” Yes, RPO is huge, but it is concentrated and subject to timing. The company itself only said four multi-billion contracts, not the detailed dollar amounts making the rounds. You are taking the other side of aggressive conversion and smooth execution.<p>“Valuation is justified by 77% OCI growth.” True that OCI is the engine, but it is coming off a smaller base and needs flawless build to hit long-dated targets. Slower ramps or cost overruns bite faster when you are at 45x forward.",
+      "title": "The short case for Oracle (via ChatGPT)",
+      "updated_at": "2026-03-05T22:38:59Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "john58"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "Amazon expands in <em>Cape</em> Town, stepping up cloud rivalry with <em>Microsoft</em>"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "microsoft",
+            "capex"
+          ],
+          "value": "https://www.moneyweb.co.za/news/south-africa/amazon-expands-in-<em>cape</em>-town-stepping-up-cloud-rivalry-with-<em>microsoft</em>/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_john58",
+        "story_17608122"
+      ],
+      "author": "john58",
+      "created_at": "2018-07-25T10:09:13Z",
+      "created_at_i": 1532513353,
+      "num_comments": 0,
+      "objectID": "17608122",
+      "points": 2,
+      "story_id": 17608122,
+      "title": "Amazon expands in Cape Town, stepping up cloud rivalry with Microsoft",
+      "updated_at": "2024-09-20T02:43:25Z",
+      "url": "https://www.moneyweb.co.za/news/south-africa/amazon-expands-in-cape-town-stepping-up-cloud-rivalry-with-microsoft/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "tefo-mohapi"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "microsoft"
+          ],
+          "value": "<em>Microsoft</em>'s First Data Centres in Afrika to Be Located in South Africa"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "capex"
+          ],
+          "value": "https://www.iafrikan.com/2017/05/18/microsofts-first-data-centres-in-afrika-to-be-located-in-johannesburg-and-<em>cape</em>-town/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_tefo-mohapi",
+        "story_14370494"
+      ],
+      "author": "tefo-mohapi",
+      "created_at": "2017-05-18T19:49:38Z",
+      "created_at_i": 1495136978,
+      "num_comments": 0,
+      "objectID": "14370494",
+      "points": 1,
+      "story_id": 14370494,
+      "title": "Microsoft's First Data Centres in Afrika to Be Located in South Africa",
+      "updated_at": "2024-09-20T00:51:03Z",
+      "url": "https://www.iafrikan.com/2017/05/18/microsofts-first-data-centres-in-afrika-to-be-located-in-johannesburg-and-cape-town/"
+    }
+  ],
+  "hitsPerPage": 30,
+  "nbHits": 14,
+  "nbPages": 1,
+  "page": 0,
+  "params": "query=Microsoft+capex&tags=story&hitsPerPage=30&advancedSyntax=true&analyticsTags=backend",
+  "processingTimeMS": 12,
+  "processingTimingsMS": {
+    "_request": {
+      "queue": 441,
+      "roundTrip": 18
+    },
+    "afterFetch": {
+      "format": {
+        "highlighting": 2,
+        "total": 2
+      },
+      "merge": {
+        "total": 1
+      },
+      "total": 1
+    },
+    "fetch": {
+      "query": 8,
+      "scanning": 1,
+      "total": 10
+    },
+    "total": 12
+  },
+  "query": "Microsoft capex",
+  "serverTimeMS": 456
+}

@@ -1,0 +1,38 @@
+{
+ "qid": "Q024",
+ "question": "Will Enzo Fernandez join Manchester City?",
+ "rules": "This market will resolve to the next team Enzo Fernandez officially joins by September 1, 2026, 11:59 PM ET.\n\nIf Enzo Fernandez does not officially join a new team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Chelsea\".\n\nIf Enzo Fernandez joins a team that is not listed, this market will resolve to \"Other\".\n\nIf Enzo Fernandez is released, retires, or is not under contract with any professional team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nAn official transfer announcement prior to the market's close date will immediately resolve this market to the corresponding option.\n\nThe primary resolution sources for this market will be official announcements from Chelsea and/or the acquiring team. A consensus of credible media reporting may also be used to resolve the market.",
+ "as_of": "2026-08-19",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "AOL — Nizaar Kinsella, football reporter",
+   "published_at": "2026-08-18T13:36:27Z",
+   "excerpt": "Chelsea agreed with Fernández's agent Javier Pastore in late May that he could leave for £120m, with an August 14 deadline for bids. After that deadline passed without formal offers, Chelsea told his camp he was not for sale during this transfer window. Manchester City remained keen and believed Chelsea still wanted a deal. City wanted to strengthen midfield after Rodri agreed a move to Barcelona and Bernardo Silva left upon his contract's expiry."
+  },
+  {
+   "id": "E2",
+   "publisher": "AS — Eduardo Burgos Rodríguez",
+   "published_at": "2026-08-17T10:32:45Z",
+   "excerpt": "AS reported that Fernández remained on Manchester City's summer target list at Enzo Maresca's request despite Chelsea's expired ultimatum. Chelsea's valuation was approximately €140m (£120m), a price City wanted to avoid paying. AS also reported that Chelsea remained privately open to a sale."
+  },
+  {
+   "id": "E3",
+   "publisher": "ESPN — James Olley",
+   "published_at": "2026-08-14",
+   "excerpt": "Chelsea expected Enzo Fernández to stay after Manchester City missed their transfer deadline. ESPN reported that Chelsea would demand £120m should Fernández push to leave, but no formal bid had materialised despite interest from Manchester City and Real Madrid."
+  },
+  {
+   "id": "E4",
+   "publisher": "The Guardian — Will Unwin",
+   "published_at": "2026-08-14T12:58:00-04:00",
+   "excerpt": "Manchester City missed Chelsea's £120m bidding deadline; Chelsea expected Fernández to stay, although City could maintain their interest."
+  },
+  {
+   "id": "E5",
+   "publisher": "Real Madrid Club de Fútbol",
+   "published_at": "2026-07-03",
+   "excerpt": "Real Madrid stated that it had taken no steps, directly or indirectly, to sign Enzo Fernández and had no intention of pursuing the operation. The club categorically denied speculation linking it to the player."
+  }
+ ]
+}

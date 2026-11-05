@@ -1,0 +1,448 @@
+{
+  "as_of": "2026-11-02T05:10:24Z",
+  "calculations": [
+    {
+      "claim_ids": [
+        "C16",
+        "C17"
+      ],
+      "description": "同截面嵌套假设下的interval条件价格比；days为合约截止日历天数",
+      "formula": "1 - later / earlier",
+      "id": "K1interval",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C16"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.935
+        },
+        {
+          "claim_ids": [
+            "C17"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.725
+        },
+        {
+          "claim_ids": [
+            "C16",
+            "C17"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 4
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.22459893048128354
+      }
+    },
+    {
+      "claim_ids": [
+        "C16",
+        "C17"
+      ],
+      "description": "同截面嵌套假设下的daily条件价格比；days为合约截止日历天数",
+      "formula": "1 - (later / earlier) ** (1 / days)",
+      "id": "K1daily",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C16"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.935
+        },
+        {
+          "claim_ids": [
+            "C17"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.725
+        },
+        {
+          "claim_ids": [
+            "C16",
+            "C17"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 4
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.06161382906664936
+      }
+    },
+    {
+      "claim_ids": [
+        "C17",
+        "C18"
+      ],
+      "description": "同截面嵌套假设下的interval条件价格比；days为合约截止日历天数",
+      "formula": "1 - later / earlier",
+      "id": "K2interval",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C17"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.725
+        },
+        {
+          "claim_ids": [
+            "C18"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.515
+        },
+        {
+          "claim_ids": [
+            "C17",
+            "C18"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 7
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.289655172413793
+      }
+    },
+    {
+      "claim_ids": [
+        "C17",
+        "C18"
+      ],
+      "description": "同截面嵌套假设下的daily条件价格比；days为合约截止日历天数",
+      "formula": "1 - (later / earlier) ** (1 / days)",
+      "id": "K2daily",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C17"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.725
+        },
+        {
+          "claim_ids": [
+            "C18"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.515
+        },
+        {
+          "claim_ids": [
+            "C17",
+            "C18"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 7
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.047683481494384505
+      }
+    },
+    {
+      "claim_ids": [
+        "C18",
+        "C19"
+      ],
+      "description": "同截面嵌套假设下的interval条件价格比；days为合约截止日历天数",
+      "formula": "1 - later / earlier",
+      "id": "K3interval",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C18"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.515
+        },
+        {
+          "claim_ids": [
+            "C19"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.405
+        },
+        {
+          "claim_ids": [
+            "C18",
+            "C19"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 7
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.21359223300970875
+      }
+    },
+    {
+      "claim_ids": [
+        "C18",
+        "C19"
+      ],
+      "description": "同截面嵌套假设下的daily条件价格比；days为合约截止日历天数",
+      "formula": "1 - (later / earlier) ** (1 / days)",
+      "id": "K3daily",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C18"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.515
+        },
+        {
+          "claim_ids": [
+            "C19"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.405
+        },
+        {
+          "claim_ids": [
+            "C18",
+            "C19"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 7
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.033743247268385956
+      }
+    },
+    {
+      "claim_ids": [
+        "C19",
+        "C20"
+      ],
+      "description": "同截面嵌套假设下的interval条件价格比；days为合约截止日历天数",
+      "formula": "1 - later / earlier",
+      "id": "K4interval",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C19"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.405
+        },
+        {
+          "claim_ids": [
+            "C20"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.345
+        },
+        {
+          "claim_ids": [
+            "C19",
+            "C20"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 8
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.14814814814814825
+      }
+    },
+    {
+      "claim_ids": [
+        "C19",
+        "C20"
+      ],
+      "description": "同截面嵌套假设下的daily条件价格比；days为合约截止日历天数",
+      "formula": "1 - (later / earlier) ** (1 / days)",
+      "id": "K4daily",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C19"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.405
+        },
+        {
+          "claim_ids": [
+            "C20"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.345
+        },
+        {
+          "claim_ids": [
+            "C19",
+            "C20"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 8
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.01984330893779951
+      }
+    },
+    {
+      "claim_ids": [
+        "C20",
+        "C21"
+      ],
+      "description": "同截面嵌套假设下的interval条件价格比；days为合约截止日历天数",
+      "formula": "1 - later / earlier",
+      "id": "K5interval",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C20"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.345
+        },
+        {
+          "claim_ids": [
+            "C21"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.255
+        },
+        {
+          "claim_ids": [
+            "C20",
+            "C21"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 31
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.26086956521739124
+      }
+    },
+    {
+      "claim_ids": [
+        "C20",
+        "C21"
+      ],
+      "description": "同截面嵌套假设下的daily条件价格比；days为合约截止日历天数",
+      "formula": "1 - (later / earlier) ** (1 / days)",
+      "id": "K5daily",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C20"
+          ],
+          "name": "earlier",
+          "unit": "USD/share",
+          "value": 0.345
+        },
+        {
+          "claim_ids": [
+            "C21"
+          ],
+          "name": "later",
+          "unit": "USD/share",
+          "value": 0.255
+        },
+        {
+          "claim_ids": [
+            "C20",
+            "C21"
+          ],
+          "name": "days",
+          "unit": "days",
+          "value": 31
+        }
+      ],
+      "result": {
+        "unit": "ratio",
+        "value": 0.009703609054616091
+      }
+    },
+    {
+      "claim_ids": [
+        "C16",
+        "C17",
+        "C20"
+      ],
+      "description": "匹配11月4日和30日两端的恒定风险形状基准，非公允概率",
+      "formula": "0.935 * (0.345 / 0.935) ** (4 / 26)",
+      "id": "Kconstant",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C16"
+          ],
+          "name": "Nov4",
+          "unit": "USD/share",
+          "value": 0.935
+        },
+        {
+          "claim_ids": [
+            "C20"
+          ],
+          "name": "Nov30",
+          "unit": "USD/share",
+          "value": 0.345
+        },
+        {
+          "claim_ids": [
+            "C16",
+            "C17",
+            "C20"
+          ],
+          "name": "fraction",
+          "unit": "ratio",
+          "value": 0.15384615384615385
+        }
+      ],
+      "result": {
+        "unit": "USD/share",
+        "value": 0.8020424919476875
+      }
+    }
+  ],
+  "schema_version": 2
+}

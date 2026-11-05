@@ -1,0 +1,50 @@
+{
+ "qid": "Q121",
+ "question": "Israel military action against Greater Beirut by August 31?",
+ "rules": "This market will resolve to “Yes” if Israel takes a qualifying military action against Greater Beirut by the specified date, 11:59 PM Israel Daylight Time (IDT). Otherwise this market will resolve to “No.”\n\nA qualifying military action refers to an air strike or a surface-to-surface missile strike, initiated by Israel, that directly impacts Greater Beirut. An air strike includes bombs, air-to-surface missiles, and air-launched drones. A surface-to-surface missile strike includes one-way attack drones and surface-to-surface missiles such as cruise or ballistic missiles.\n\nThe following actions do not constitute a qualifying military action:\nMunitions destroyed or intercepted before impact;\nSurface-to-air missile strikes;\nSmall-arms fire;\nGround incursions;\nCyber operations;\nNaval gunfire and artillery fire;\nHowitzers, artillery pieces, mortars, and rocket artillery (e.g. MLRS systems);\nMinor surface-to-surface strikes, including short range loitering munitions, FPV drones, and ATGM strikes;\nAny threat, authorization, or announcement of force that has not been executed.\n\nAny munition that is intercepted or destroyed before impact does not constitute a qualifying military action. Debri",
+ "as_of": "2026-08-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Hürriyet Daily News",
+   "published_at": "2026-08-21",
+   "excerpt": "Israeli warplanes and artillery struck several areas of southern Lebanon early on Aug. 21, while Israeli forces carried out detonations in border towns, Lebanon’s state-run National News Agency (NNA) reported. Jets hit Mansouri in the Tyre district shortly after 2 a.m., with powerful explosions heard across surrounding villages and towns. Further airstrikes targeted Ali al-Taher and Dabsha hills near Nabatieh al-Fawqa, as well as the area around Kfar Roummane."
+  },
+  {
+   "id": "E2",
+   "publisher": "The Times of Israel",
+   "published_at": "2026-08-21",
+   "excerpt": "The IDF says it struck a building in southern Lebanon earlier today after several suspects crossed the ceasefire line and entered it. Soldiers of the Kfir Brigade spotted the suspects crossing into the military’s buffer zone in the area of the village of Baraashit. The army says the suspects who entered the building “posed a threat to IDF troops,” and that a short while later, the Israeli Air Force struck the site."
+  },
+  {
+   "id": "E3",
+   "publisher": "U.S. Department of the Treasury",
+   "published_at": "2026-08-20",
+   "excerpt": "Today, the U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC) is designating 10 individuals that are part of a network responsible for transferring cash to Hizballah. The network utilizes couriers travelling on commercial airline flights between Lebanon, Turkiye, the UAE, and Iran to move up to hundreds of millions of dollars between jurisdictions, providing an avenue outside the formal financial system for Hizballah to obtain foreign currency and evade sanctions. OFAC is also re-designating Hizballah for service to the Iranian regime under the command of Iran’s Islamic Revolutionary Guard Corps-Qods Force (IRGC-QF)."
+  },
+  {
+   "id": "E4",
+   "publisher": "The Times of Israel",
+   "published_at": "2026-08-16",
+   "excerpt": "On Sunday, the Israel Defense Forces said it had killed a senior Hezbollah commander in an airstrike in the southern Lebanon town of Deir al-Zahrani the previous day. It said the Saturday morning strike on Ali Muhammad Fakhr al-Din came in response to a Hezbollah explosive drone attack in the predawn hours Saturday that seriously wounded three soldiers. Hezbollah said the Israeli strikes would be met with an “appropriate” response, urging authorities to halt “humiliating” negotiations with Israel."
+  },
+  {
+   "id": "E5",
+   "publisher": "Associated Press",
+   "published_at": "2026-08-15",
+   "excerpt": "Israeli airstrikes on southern Lebanon killed at least 11 people Saturday, in the deadliest attacks since a truce between Israel and Hezbollah went into effect on June 20. Hezbollah has refused direct talks and wasn't party to the deal."
+  },
+  {
+   "id": "E6",
+   "publisher": "Reuters via Awani International",
+   "published_at": "2026-08-07",
+   "excerpt": "The seventh round of talks between Lebanon and Israel concluded in Rome on Thursday without a breakthrough on key territorial issues, but with agreements on procedural frameworks and prisoner lists, according to sources close to the negotiations. All the participants underscored the importance of upholding the current ceasefire and agreed to pursue a new United Nations Security Council resolution that would serve as the international framework for arrangements following the mandate of the UN Interim Force in Lebanon (UNIFIL). The next round is tentatively scheduled for September 1."
+  },
+  {
+   "id": "E7",
+   "publisher": "Axios",
+   "published_at": "2026-06-07",
+   "excerpt": "Israel struck Beirut's southern suburbs Sunday in retaliation to a Hezbollah missile attack on northern Israel, Israeli officials said. Israeli Prime Minister Benjamin Netanyahu said the strike answered Hezbollah missiles fired at northern Israel earlier Sunday, which the Israeli military says it intercepted."
+  }
+ ]
+}

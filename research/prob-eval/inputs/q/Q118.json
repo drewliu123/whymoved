@@ -1,0 +1,26 @@
+{
+ "qid": "Q118",
+ "question": "Will the 2026 United Left primary for the 2027 French presidential election be canceled?",
+ "rules": "The 2026 United Left primary is currently scheduled to be held on October 11, 2026, to select a joint candidate for the 2027 French presidential election among participating left-wing parties and movements.\n\nThis market will resolve according to the candidate who wins the nomination as a joint candidate of the participating left-wing parties and movements as a result of this election.\n\nThis market will resolve to “Canceled” if the organizers of the 2026 United Left primary officially announce that it will not take place, or if at least three of L’Après, Les Écologistes, Debout!, and Génération.s officially announce that they will not participate. A postponement of the scheduled date will not qualify.\n\nIf no qualifying nominee is announced by March 31, 2027, 11:59 PM ET, this market will resolve to \"Other\". \n\nThe resolution source for this market will be a consensus of credible reporting. In the case of ambiguity, this market will resolve based solely on official announcements from the primary organizers or participating parties.\n\nAny replacement of the nominee before election day will not change the resolution of the market.",
+ "as_of": "2026-10-04",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "LCP – Assemblée nationale",
+   "published_at": "2026-09-08",
+   "excerpt": "« Les militants socialistes ont tranché, on ne change pas les règles en cours de jeu. Moi, je respecterai les règles même si je perds ». Le premier secrétaire du Parti socialiste, Olivier Faure, a de nouveau plaidé pour une primaire élargie, qui irait de François Ruffin à Raphaël Glucksmann, afin de rassembler la gauche. Si François Ruffin s'est dit favorable à cette option, le leader de Place Publique a rappelé que les règles de la primaire qui aura lieu le mois prochain avaient d'ores-et-déjà été tranchées par les militants du PS."
+  },
+  {
+   "id": "E2",
+   "publisher": "LCP – Assemblée nationale, with AFP",
+   "published_at": "2026-08-26",
+   "excerpt": "Le Parti socialiste et Place publique ont ratifié mardi 25 août au soir l'accord relatif à l'organisation de la « primaire de la gauche socialiste et démocratique ». La primaire se tiendra en deux tours, qui auront lieu les 9 et 10 octobre pour le premier (de 8 heures le vendredi à 20 heures le samedi), et les 16 et 17 octobre pour le second (aux mêmes horaires). Ce sera un scrutin électronique uninominal, uniquement en ligne donc."
+  },
+  {
+   "id": "E3",
+   "publisher": "Front populaire 2027 — official communiqué hosted by Les Écologistes",
+   "published_at": "2026-01-24",
+   "excerpt": "Le 11 octobre 2026, l’ensemble du peuple de gauche sera appelé à participer à un scrutin inédit pour désigner notre candidature commune. Pour se présenter, il faudra réunir 500 parrainages d’élu·es, comme pour l’élection présidentielle, avec la possibilité, pour les élu·es qui le souhaiteront, de parrainer plusieurs candidatures."
+  }
+ ]
+}

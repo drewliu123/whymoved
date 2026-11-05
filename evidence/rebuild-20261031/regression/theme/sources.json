@@ -1,0 +1,594 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-10-31T17:25:57Z",
+  "historical": false,
+  "mode": "development_regression_frozen_reuse",
+  "historical_policy": "No historical availability assertions. historical=false describes a dev replay, not a reconstructed historical run.",
+  "source_status": {
+    "regression_external_retrieval": {
+      "status": "not_run",
+      "reason": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。"
+    },
+    "S1": {
+      "status": "ok",
+      "original_status": "success",
+      "reason": "Original retrieval record reused, no new fetch."
+    },
+    "S4": {
+      "status": "ok",
+      "original_status": "success",
+      "reason": "Original retrieval record reused, no new fetch."
+    },
+    "S2": {
+      "status": "ok",
+      "original_status": "success",
+      "reason": "Original retrieval record reused, no new fetch."
+    },
+    "S3": {
+      "status": "ok",
+      "original_status": "success",
+      "reason": "Original retrieval record reused, no new fetch."
+    },
+    "S5": {
+      "status": "ok",
+      "original_status": "success",
+      "reason": "Original retrieval record reused, no new fetch."
+    },
+    "S6": {
+      "status": "ok",
+      "original_status": "success",
+      "reason": "Original retrieval record reused, no new fetch."
+    }
+  },
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://www.eaton.com/us/en-us/company/investor-relations/financial-presentations-webcasts.html",
+      "publisher": "Eaton",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-10-31T17:23:30.434003Z",
+      "quote": "Eaton will announce third quarter 2026 earnings on Tuesday, November 3, 2026, before the opening of the New York Stock Exchange.",
+      "locator": "Third quarter 2026",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/theme/sources.json",
+        "original_source_id": "S1",
+        "original_status": "success",
+        "claim_ids": [
+          "C1",
+          "C23"
+        ],
+        "original_source_record": {
+          "id": "S1",
+          "title": "Eaton financial presentations and webcasts",
+          "url": "https://www.eaton.com/us/en-us/company/investor-relations/financial-presentations-webcasts.html",
+          "retrieval_url": "https://origin-edge.eaton.com/us/en-us/company/investor-relations/financial-presentations-webcasts.html",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "unknown",
+          "event_period": "截至获取时页面列示Q2/Q1 2026；Q3待发布",
+          "retrieved_at": "2026-10-31T17:23:30.434003Z",
+          "status": "success",
+          "local_file": "raw/eaton-ir/browser-extract.json",
+          "sha256": "ac8eed371b478d4b97132f361460629790a9a5b1dc69887c388ea94173f64546",
+          "version": "本次截点获取的官网版本，未独立核对SEC归档版本",
+          "excerpts": [
+            {
+              "locator": "Third quarter 2026",
+              "original": "Eaton will announce third quarter 2026 earnings on Tuesday, November 3, 2026, before the opening of the New York Stock Exchange.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "Forward-looking statement",
+              "original": "Factors that could cause actual results to differ materially from those in the forward-looking statements include: unanticipated changes in the markets for the Company’s business segments, unanticipated downturns in business relationships with customers or their purchases from us, competitive pressures on sales and pricing, unexpected increases in the cost of material and other production costs that cannot be recouped in product pricing, introduction of competing technologies",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            }
+          ]
+        },
+        "inline_source_record": {
+          "url": "https://www.eaton.com/us/en-us/company/investor-relations/financial-presentations-webcasts.html",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "unknown",
+          "source_id": "S1"
+        }
+      }
+    },
+    {
+      "id": "S4",
+      "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+      "publisher": "Eaton",
+      "tier": "T0",
+      "published_at": "2026-07-31",
+      "retrieved_at": "2026-10-31T17:20:35.056681Z",
+      "quote": "Electrical Americas $ 1,088 $ 987 $ 2,010 $ 1,891",
+      "locator": "p8 Business Segment Information；2026Q2/2025Q2/2026H1/2025H1",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/theme/sources.json",
+        "original_source_id": "S4",
+        "original_status": "success",
+        "claim_ids": [
+          "C1",
+          "C4",
+          "C9",
+          "C10",
+          "C13",
+          "C15"
+        ],
+        "original_source_record": {
+          "id": "S4",
+          "title": "Second quarter 2026 earnings complete",
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "retrieval_url": "https://origin-edge.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "event_period": "2026Q2/H1；同比2025Q2/H1；URL中20265为官网真实文件名",
+          "retrieved_at": "2026-10-31T17:20:35.056681Z",
+          "status": "success",
+          "local_file": "raw/eaton-q2/complete.pdf",
+          "sha256": "85d2af2cbe82ddc297bc21a1b70a0e87d34d079b980c79ef8d585e4d8d1ddbe7",
+          "version": "本次截点获取的官网版本，未独立核对SEC归档版本",
+          "excerpts": [
+            {
+              "locator": "p8 Business Segment Information；2026Q2/2025Q2/2026H1/2025H1",
+              "original": "Electrical Americas $ 1,088 $ 987 $ 2,010 $ 1,891",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p8 sales row; original multi-column order in raw text",
+              "original": "Electrical Americas $ 3,350 $ 7,551 $ 6,360",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p3 Business Segment Results",
+              "original": "The twelve-month rolling average of orders in the second quarter was up 41% organically. Total backlog at the end of June remained strong and was up 33% over June 2025.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p10 Non-GAAP reconciliation",
+              "original": "Operating cash flow $ 1,127 $ 918\nCapital expenditures for property, plant and equipment (253) (202)\nFree cash flow $ 874 $ 716",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p3 Electrical Global",
+              "original": "The sales increase consisted of 18% growth in organic sales, 25% contribution from Boyd Thermal in its first full quarter post-acquisition, and 1% growth from foreign exchange.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p7 Net income / adjusted earnings",
+              "original": "Net income attributable to Eaton ordinary shareholders $ 821 $ 982 $ 1,687 $ 1,945\nExcluding acquisition and divestiture charges, after-tax 190 54 278 61\nExcluding restructuring program charges, after-tax 19 18 49 33\nExcluding intangible asset amortization expense, after-tax 198 101 308 185\nAdjusted earnings $ 1,228 $ 1,155 $ 2,322 $ 2,225",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p11 Fibrebond",
+              "original": "Fibrebond is a U.S. based designer and builder of pre-integrated modular power enclosures for data center, industrial, utility and communications customers. Fibrebond is reported within the Electrical Americas business segment.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p12 Boyd Thermal",
+              "original": "On March 12, 2026, Eaton acquired Boyd Thermal for $9.55 billion, net of cash acquired.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p13 acquisition charges / p8 Corporate; see raw/eaton-q2/complete.txt lines440–447",
+              "original": "Employee transaction and retention award compensation expense related to the acquisition of Fibrebond of $27 million and $39 million in the second quarter and the first six months of 2026, respectively, and $47 million in the second quarter and the first six months of 2025.\nCharges in 2026 and 2025 were included in Cost of products sold, Selling and administrative expense, Research and development expense, or Other expense (income) - net. In Business Segment Information, the charges were included in Other expense - net.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            }
+          ]
+        },
+        "inline_source_record": {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S4"
+        }
+      }
+    },
+    {
+      "id": "S2",
+      "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2025/q4/4Q-2025-earnings-complete.pdf",
+      "publisher": "Eaton",
+      "tier": "T0",
+      "published_at": "2026-02-03",
+      "retrieved_at": "2026-10-31T17:23:48.446234Z",
+      "quote": "Sales for the Electrical Americas segment were a record $3.5 billion, up 21% from the fourth quarter of 2024.",
+      "locator": "p3 Business Segment Results",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/theme/sources.json",
+        "original_source_id": "S2",
+        "original_status": "success",
+        "claim_ids": [
+          "C2",
+          "C7",
+          "C9"
+        ],
+        "original_source_record": {
+          "id": "S2",
+          "title": "Fourth quarter 2025 earnings complete",
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2025/q4/4Q-2025-earnings-complete.pdf",
+          "retrieval_url": "https://origin-edge.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2025/q4/4Q-2025-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-02-03",
+          "event_period": "2025Q4/FY2025；PDF多列抽取顺序需结合原表，2025Q4美洲销售3506",
+          "retrieved_at": "2026-10-31T17:23:48.446234Z",
+          "status": "success",
+          "local_file": "raw/eaton-q4/complete.pdf",
+          "sha256": "b542528d8a3e2d585e5fc687ff8c68320a242bb0069db1ba5bc813d891523dc3",
+          "version": "本次截点获取的官网版本，未独立核对SEC归档版本",
+          "excerpts": [
+            {
+              "locator": "p3 Business Segment Results",
+              "original": "Sales for the Electrical Americas segment were a record $3.5 billion, up 21% from the fourth quarter of 2024.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p8 Business Segment Information（列顺序2025Q4/2024Q4/2025FY/2024FY）",
+              "original": "Electrical Americas $ 1,046 $ 918 $ 3,972 $ 3,455",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p10 Non-GAAP financial information",
+              "original": "Operating cash flow $ 1,965 $ 1,597\nCapital expenditures for property, plant and equipment (392) (255)\nFree cash flow $ 1,573 $ 1,342",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p8 Net sales rows; also raw complete.txt lines220–226",
+              "original": "Electrical Americas $ 2,905 $ 13,276 $ 11,436\nElectrical Global 1,728 1,569 6,815 6,248\nAerospace 1,111 971 4,249 3,744\nVehicle 586 647 2,505 2,790\neMobility 125 147 604 662\nTotal net sales $ 7,055 $ 6,240 $ 27,448 $ 24,878",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            }
+          ]
+        },
+        "inline_source_record": {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2025/q4/4Q-2025-earnings-complete.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-02-03",
+          "source_id": "S2"
+        }
+      }
+    },
+    {
+      "id": "S3",
+      "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+      "publisher": "Eaton",
+      "tier": "T0",
+      "published_at": "2026-05-05",
+      "retrieved_at": "2026-10-31T17:21:34.772577Z",
+      "quote": "In Q1, Electrical Americas data center orders are up approximately 240% and revenue up approximately 50% versus 1Q25 demonstrating continued strong momentum in this rapid growth market.",
+      "locator": "p3 Highlights",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/theme/sources.json",
+        "original_source_id": "S3",
+        "original_status": "success",
+        "claim_ids": [
+          "C2",
+          "C3",
+          "C5",
+          "C13"
+        ],
+        "original_source_record": {
+          "id": "S3",
+          "title": "First quarter 2026 analyst presentation",
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+          "retrieval_url": "https://origin-edge.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-05-05",
+          "event_period": "2026Q1；同比2025Q1",
+          "retrieved_at": "2026-10-31T17:21:34.772577Z",
+          "status": "success",
+          "local_file": "raw/eaton-q1-presentation/analyst.pdf",
+          "sha256": "d8ce150570ef0f7cea3f06278048bbcbbf8f9cd788a6ad16d8e1f9a9b0ebd1ad",
+          "version": "本次截点获取的官网版本，未独立核对SEC归档版本",
+          "excerpts": [
+            {
+              "locator": "p3 Highlights",
+              "original": "In Q1, Electrical Americas data center orders are up approximately 240% and revenue up approximately 50% versus 1Q25 demonstrating continued strong momentum in this rapid growth market.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p9 Electrical Americas Segment",
+              "original": "Sales\n1Q ‘26\n1Q ‘25 V ‘25\n$3,600\n$3,010\n20%\nOperating Profit\n922\n904\n2%\nOperating Margin\n25.6%\n30.0%\n(440) bps",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p9 bullets",
+              "original": "• Orders up 42% on rolling 12-month basis, including\ndata centers, up ~240% in the quarter\n• Book-to-bill ratio 1.2 on rolling 12-month basis\n• Backlog up $4.4B or 44% year-over-year",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p5 chart; visual verified raw/eaton-q1-presentation/page-5.png",
+              "original": "Total backlog ($B) / Rolling 12 Month Organic Order Growth: 4Q25 $13.2 / 16%; 1Q26 $14.5 / 42%",
+              "extraction": "chart transcription (labels/numbers; not a prose quotation)"
+            },
+            {
+              "locator": "p6 portfolio headings",
+              "original": "Power Generation & Grid Connection; Gray Space Power Conditioning, Isolation, & Stability; White Space Power Conditioning, Delivery, & Stability; Software & Services; Cooling",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p7 Beam Rubin DSX Platform",
+              "original": "Faster deployment amid power constraints\nSolving for grid limitations and engineering build requirements\nto keep up with AI growth cycles\nPre-engineered, modular power and cooling",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p9 Sales Growth",
+              "original": "Sales Growth:\nOrganic 14%\nAcquisition 5%\nForex 1%\nTotal 20%",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            }
+          ]
+        },
+        "inline_source_record": {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-05-05",
+          "source_id": "S3"
+        }
+      }
+    },
+    {
+      "id": "S5",
+      "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf",
+      "publisher": "Eaton",
+      "tier": "T0",
+      "published_at": "2026-07-31",
+      "retrieved_at": "2026-10-31T17:25:18.151337Z",
+      "quote": "In Q2, Electrical Sector data center orders are up approximately 85% and revenue up approximately 65% versus 2Q25 demonstrating continued strong momentum in this rapid growth market.",
+      "locator": "p3 Highlights",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/theme/sources.json",
+        "original_source_id": "S5",
+        "original_status": "success",
+        "claim_ids": [
+          "C4",
+          "C5",
+          "C7",
+          "C20"
+        ],
+        "original_source_record": {
+          "id": "S5",
+          "title": "Second quarter 2026 analyst presentation",
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf",
+          "retrieval_url": "https://origin-edge.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "event_period": "2026Q2；专项口径Electrical Sector；敞口分母2025全公司销售",
+          "retrieved_at": "2026-10-31T17:25:18.151337Z",
+          "status": "success",
+          "local_file": "raw/eaton-q2-presentation/analyst.pdf",
+          "sha256": "2c075a8077b0523450ad10c3c6bbaee5f0fe40513e48629f3955a93c716ba1ff",
+          "version": "本次截点获取的官网版本，未独立核对SEC归档版本",
+          "excerpts": [
+            {
+              "locator": "p3 Highlights",
+              "original": "In Q2, Electrical Sector data center orders are up approximately 85% and revenue up approximately 65% versus 2Q25 demonstrating continued strong momentum in this rapid growth market.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p8 Electrical Americas Segment",
+              "original": "Sales\n2Q ‘26\n2Q ‘25 V ‘25\n$3,951\n$3,350\n18%\nOperating Profit\n1,088\n987\n10%\nOperating Margin\n27.5%\n29.5%\n(200) bps",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p8 bullets",
+              "original": "• Book-to-bill ratio 1.3 on rolling 12-month basis\n• Backlog up $3.8B or 33% year-over-year",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p6 chart; visual verified raw/eaton-q2-presentation/page-6.png",
+              "original": "Total backlog ($B): 4Q25 $13.2; 2Q26 $15.2. Segment margin: 1Q26 25.6%; 2Q26 27.5%; 2H26 >30%.",
+              "extraction": "chart transcription (labels/numbers; not a prose quotation)"
+            },
+            {
+              "locator": "p12 exposure; visual verified raw/eaton-q2-presentation/page-12.png",
+              "original": "Data Centers & Distributed IT — 21% of 2025 Eaton Sales",
+              "extraction": "chart transcription (labels/numbers; not a prose quotation)"
+            },
+            {
+              "locator": "p13 guidance",
+              "original": "Electrical Americas: Organic Growth Guidance 14 – 16%; Operating Margin Guidance 28.8 – 29.2%",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "p8 Sales Growth",
+              "original": "Sales Growth:\nOrganic 18%\nAcquisition 0%\nForex 0%\nTotal 18%",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            }
+          ]
+        },
+        "inline_source_record": {
+          "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-07-31",
+          "source_id": "S5"
+        }
+      }
+    },
+    {
+      "id": "S6",
+      "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-manufacturing-for-modular-electrical-enclosures.html",
+      "publisher": "Eaton",
+      "tier": "T0",
+      "published_at": "2026-09-02",
+      "retrieved_at": "2026-10-31T17:24:01.837020Z",
+      "quote": "CLEVELAND – Intelligent power management company Eaton (NYSE:ETN) today announced a more than $242 million investment to expand its U.S. manufacturing footprint with a new facility in North Little Rock, Arkansas.",
+      "locator": "opening paragraph",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/theme/sources.json",
+        "original_source_id": "S6",
+        "original_status": "success",
+        "claim_ids": [
+          "C14"
+        ],
+        "original_source_record": {
+          "id": "S6",
+          "title": "Eaton expands modular electrical enclosures capacity, Arkansas",
+          "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-manufacturing-for-modular-electrical-enclosures.html",
+          "retrieval_url": "https://origin-edge.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-manufacturing-for-modular-electrical-enclosures.html",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-09-02",
+          "event_period": "2026-09-02扩产宣布；非已投产",
+          "retrieved_at": "2026-10-31T17:24:01.837020Z",
+          "status": "success",
+          "local_file": "raw/eaton-capacity/browser-extract.json",
+          "sha256": "d71836d75073ddaff9eab070d148a2219ac82066e4825f51452f93cd34ddb39e",
+          "version": "本次截点获取的官网版本，未独立核对SEC归档版本",
+          "excerpts": [
+            {
+              "locator": "opening paragraph",
+              "original": "CLEVELAND – Intelligent power management company Eaton (NYSE:ETN) today announced a more than $242 million investment to expand its U.S. manufacturing footprint with a new facility in North Little Rock, Arkansas.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "opening paragraph",
+              "original": "The company expects to double its U.S. manufacturing capacity of customized electrical enclosures from the Fibrebond business to help meet growing demand across data center, utility, industrial and digital communications markets.",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            },
+            {
+              "locator": "Highlights",
+              "original": "New Arkansas facility builds on Fibrebond’s over 40 years in Minden, Louisiana, where production capacity has doubled over the past three years and Eaton continues to invest",
+              "extraction": "verbatim excerpt/text-layer; multi-column rows retain extraction order"
+            }
+          ]
+        },
+        "inline_source_record": {
+          "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-manufacturing-for-modular-electrical-enclosures.html",
+          "publisher": "Eaton",
+          "tier": "T0",
+          "published_at": "2026-09-02",
+          "source_id": "S6"
+        }
+      }
+    }
+  ],
+  "original_source_audit": {
+    "as_of": "2026-10-31T17:25:57Z",
+    "cutoff_verification": "S1实际读取确认Q3待发布；最新季度S4/S5，最新采用的运营公告S6。非全公司全文件穷尽审计。",
+    "failed_attempts": [
+      {
+        "url": "https://www.eaton.com/il/en-gb/company/news-insights/news-releases/2026/eaton-reports-record-second-quarter-2026-results.html",
+        "method": "WebFetch",
+        "status": "failed",
+        "error": "timeout of 60000ms exceeded",
+        "fallback": "origin-edge官方镜像+原始PDF成功"
+      },
+      {
+        "url": "https://www.eaton.com/my/en-us/company/news-insights/news-releases/2026/eaton-reports-record-first-quarter-2026-results.html",
+        "method": "WebFetch",
+        "status": "failed",
+        "error": "timeout of 60000ms exceeded",
+        "fallback": "origin-edge+PDF"
+      },
+      {
+        "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-second-quarter-2026-results.html",
+        "method": "WebFetch/curl",
+        "status": "failed",
+        "error": "WebFetch timeout; curl HTTP/2 INTERNAL_ERROR exit92; Q1/Q4主站curl亦同",
+        "fallback": "curl --http1.1 origin-edge成功"
+      },
+      {
+        "url": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf",
+        "method": "WebFetch PDF",
+        "status": "failed",
+        "error": "返回压缩二进制，未能提取正文",
+        "fallback": "本地系统PDFKit成功"
+      },
+      {
+        "method": "pdfinfo/pdftotext/Read PDF",
+        "status": "failed",
+        "error": "poppler工具不存在(exit127)；Python -I环境无pypdf/fitz/pdfplumber",
+        "fallback": "系统PDFKit提取+关键页栅格核对；未安装包"
+      }
+    ],
+    "not_used": [
+      {
+        "url": "https://www.se.com/ww/en/about-us/investor-relations/financial-results/",
+        "reason": "选样预查；最终收窄Eaton，未将搜索摘要或Schneider数字作为事实证据"
+      },
+      {
+        "local_file": "raw/eaton-q1/complete.pdf",
+        "reason": "与S3相同季度辅助下载，正文数字均用S3或S4；不增加独立来源数"
+      }
+    ],
+    "independence": "六份官方文档/页面，发布方均为Eaton；是公司披露案例，非六个独立验证者。IEA未采用，避免旧用电预测冒充最新。"
+  }
+}

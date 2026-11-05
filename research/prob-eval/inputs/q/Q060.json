@@ -1,0 +1,32 @@
+{
+ "qid": "Q060",
+ "question": "Will Lando Norris get pole position at the 2026 F1 Hungarian Grand Prix?",
+ "rules": "This is a polymarket on the driver who achieves pole position at the 2026 F1 Hungarian Grand Prix, scheduled for Jul 25, 2026.\n\nIf the 2026 F1 Hungarian Grand Prix is canceled or rescheduled to a date after Aug 1, 2026, this market will resolve to “Other.”\n\nThis market will resolve in favor of the driver who is officially recognized by Formula 1 as having set the fastest time during the qualifying session for the 2026 F1 Hungarian Grand Prix. The market will be settled based on the FIA's official qualifying results, regardless of any subsequent penalties, disqualifications, or changes to the starting grid.\n\nFor example, if a driver sets the fastest qualifying time but later receives a grid penalty or is moved down the starting order, the market will still resolve to “Yes” for that driver.\n\nThe resolution source will be the official Formula 1 website and a consensus of credible sports news reporting.",
+ "as_of": "2026-07-11",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Formula 1 — Becky Hart",
+   "published_at": "2026-07-04T19:54:00Z",
+   "excerpt": "Lando Norris, Sprint: 3rd, Qualifying: 6th, 1:28.877. Norris said: \"It was a challenging Qualifying and, at the moment, we're simply too far off the pace.\" Andrea Stella said: \"Ultimately, looking at performance right now, we’re operating as the third or fourth team alongside Red Bull, and that’s broadly where we belong at the moment with the MCL40’s current package.\""
+  },
+  {
+   "id": "E2",
+   "publisher": "Formula 1 — Becky Hart",
+   "published_at": "2026-06-27T18:48:00Z",
+   "excerpt": "Lando Norris, 6th, 1:06.502. Oscar Piastri, 7th, 1:06.511. Andrea Stella said: \"Today's Qualifying result of P6 and P7 is a fair representation of where we stand at the moment.\" He added: \"Lando and Oscar drove very well to extract that performance, but we are under no illusion that we have a gap to Mercedes and Ferrari.\""
+  },
+  {
+   "id": "E3",
+   "publisher": "Formula 1",
+   "published_at": "2025-08-02T15:54:00Z",
+   "excerpt": "Charles Leclerc claimed a shock pole position for the Hungarian Grand Prix, beating the dominant McLarens of Oscar Piastri and Lando Norris to the top spot."
+  },
+  {
+   "id": "E4",
+   "publisher": "FIA",
+   "published_at": "2024-07-20",
+   "excerpt": "Despite light rain falling in the hour before Qualifying, the start of Q1 was judged dry enough for slick tyres and when the lights went green all 20 cars streamed out on track ahead of an expected further shower. Norris therefore took his third career pole and his second of 2024 as McLaren recorded its first front-row lockout since the 2012 Brazilian Grand Prix."
+  }
+ ]
+}

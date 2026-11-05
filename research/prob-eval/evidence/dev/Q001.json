@@ -1,0 +1,55 @@
+{
+  "qid": "Q001",
+  "as_of": "2026-08-05",
+  "kept": [
+    {
+      "excerpt": "The survey of 635 likely Republican primary voters, conducted July 27–29, shows Donalds commanding 49.6% support—more than triple that of his closest competitor. Sen. Jay Collins sits in second place at 15.7%, followed closely by activist James Fishback at 12.4% and former Florida House Speaker Paul Renner at 3.5%. Another 5.3% of respondents prefer a different candidate, while 13.5% remain undecided. The poll, sponsored by American First Insight, carries a design-adjusted margin of error of plus or minus 4.1 percentage points.",
+      "published_at": "2026-07-31",
+      "publisher": "Florida’s Voice",
+      "relevance": "This recent statewide poll directly measures the second-place contest, placing Fishback 3.3 percentage points behind Collins with a substantial undecided share.",
+      "url": "https://flvoicenews.com/poll-byron-donalds-holds-commanding-lead-in-florida-republican-gubernatorial-primary/"
+    },
+    {
+      "excerpt": "TALLAHASSEE, Fla. (July 20, 2026) — Cygnal released new survey findings from a statewide poll of 500 likely 2026 Florida Republican primary voters (conducted July 12–13). In the Republican primary ballot test, Byron Donalds leads with 43 percent, followed by James Fishback at 12 percent, Jay Collins at 11 percent, and Paul Renner at 2 percent, while 31 percent remain undecided. The margin of error is plus or minus 4.38 percentage points.",
+      "published_at": "2026-07-20",
+      "publisher": "Cygnal",
+      "relevance": "This original pollster release places Fishback narrowly second and documents the sample, field dates, uncertainty and large undecided bloc.",
+      "url": "https://www.cygn.al/news/poll-donalds-leads-florida-gop-governor-primary-with-a-third-of-voters-still-undecided/"
+    },
+    {
+      "excerpt": "According to a survey memorandum released July 30, 2026, by national pollster David Wolfson, Donalds leads the field with 46% support among likely primary voters, followed by Collins at 30%. Together, the two candidates command nearly 80% of overall voter support. Trailing the frontrunners are James Fishback at 9.8% and former Florida House Speaker Paul Renner at 5.9%.",
+      "published_at": "2026-07-30",
+      "publisher": "Tampa Free Press",
+      "relevance": "This contemporaneous report supplies a contrasting late-July survey with a much larger Collins lead over Fishback, illustrating disagreement across polls relevant to second place.",
+      "url": "https://www.tampafp.com/donalds-leads-florida-gop-primary-as-survey-points-to-two-man-race-with-collins/"
+    },
+    {
+      "excerpt": "Lt. Gov. Jay Collins’ campaign says the battle for the Republican nomination for Governor is a “two-man race” with U.S. Rep. Byron Donalds, based on an internal poll it commissioned. Collins is the apparent beneficiary of that erosion. The poll puts his support at 20% — roughly triple his 6.5% public polling average. Pollster David Jay Wolfson surveyed 934 voters between July 2 and July 6 using a text-to-web methodology, according to Playbook.",
+      "published_at": "2026-07-09",
+      "publisher": "Florida Politics",
+      "relevance": "This report establishes that Collins commissioned a Wolfson internal poll and explains its unusually favorable Collins result and methodology, providing context for interpreting campaign polling.",
+      "url": "https://floridapolitics.com/archives/806564-anomaly-jay-collins-campaign-says-he-has-20-support-in-internal-poll/"
+    },
+    {
+      "excerpt": "South Florida native James Fishback will remain on statewide ballots in the governor’s race after a Leon County judge Monday ruled he is eligible to run, according to court records. According to the ruling, which the court posted online late Monday night, Florida’s 2nd Judicial Circuit Court Judge David Frank denied Collins’ motion to remove Fishback from the gubernatorial ballot.",
+      "published_at": "2026-07-28",
+      "publisher": "Miami New Times",
+      "relevance": "The ruling establishes Fishback’s ballot eligibility following a challenge by a principal rival, a necessary condition for finishing second.",
+      "url": "https://www.miaminewtimes.com/news/breaking-judge-rules-fishback-is-eligible-in-florida-governor-race-40569590/"
+    },
+    {
+      "excerpt": "South Florida prosecutors are investigating Sean Lozano, Florida gubernatorial candidate James Fishback's running mate, over his actions as a police officer, WLRN has learned. The Broward County State Attorney’s office confirmed the criminal investigation is being conducted by its Public Corruption Unit, after receiving a request last July from Lozano’s former employer, the Lauderhill Police Department. Lozano was fired by the department in December 2025, according to his personnel file.",
+      "published_at": "2026-08-05",
+      "publisher": "WLRN Public Media",
+      "relevance": "This cutoff-day report documents a newly reported campaign liability involving Fishback’s chosen running mate that could affect support before the primary.",
+      "url": "https://www.wlrn.org/light/government-politics/2026-08-05/james-fishbacks-pro-law-enforcement-running-mate-under-criminal-investigation"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.axios.com/local/tampa-bay/2026/07/07/donalds-towers-over-a-sleepy-florida-governors-race",
+      "reason": "The excerpt explicitly mentions the August 18 primary and debate plans before that date, after the 2026-08-05 cutoff; the relevance also references the August 18 schedule. Removed under the rule excluding mentions of anything after the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-08-05, inclusive. Publication dates were verified from article datelines, displayed timestamps or dated publisher search results; poll field dates were kept separate from publication dates. Web searches located the sources; web_fetch failed because of provider configuration, so agent-reach web read verified available article bodies and dates. The final read attempts failed with a temporary upstream error; the July 30 Tampa Free Press report and July 28 Miami New Times report are supported by dated web_search excerpts. Excluded post-cutoff publications, election outcomes, prediction-market and betting pages, and undated live polling aggregators. In particular, excluded a poll published August 6 despite its July fieldwork. No official election-calendar item was retained because its publication date could not be verified. Only contemporaneous article content is included; later recommendations and other dynamically inserted page material were excluded."
+}

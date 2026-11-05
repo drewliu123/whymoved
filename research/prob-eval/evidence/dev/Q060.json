@@ -1,0 +1,41 @@
+{
+  "qid": "Q060",
+  "as_of": "2026-07-11",
+  "kept": [
+    {
+      "excerpt": "Lando Norris, Sprint: 3rd, Qualifying: 6th, 1:28.877. Norris said: \"It was a challenging Qualifying and, at the moment, we're simply too far off the pace.\" Andrea Stella said: \"Ultimately, looking at performance right now, we’re operating as the third or fourth team alongside Red Bull, and that’s broadly where we belong at the moment with the MCL40’s current package.\"",
+      "published_at": "2026-07-04T19:54:00Z",
+      "publisher": "Formula 1 — Becky Hart",
+      "relevance": "The latest completed Grand Prix qualifying session before the cutoff documents Norris’s sixth place and McLaren’s assessment of its deficit to the leading teams.",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-sprint-day-and-qualifying-in-great-britain-2026.48VIG6l9fFjiPijbKDJCYM.48VIG6l9fFjiPijbKDJCYM"
+    },
+    {
+      "excerpt": "Lando Norris, 6th, 1:06.502. Oscar Piastri, 7th, 1:06.511. Andrea Stella said: \"Today's Qualifying result of P6 and P7 is a fair representation of where we stand at the moment.\" He added: \"Lando and Oscar drove very well to extract that performance, but we are under no illusion that we have a gap to Mercedes and Ferrari.\"",
+      "published_at": "2026-06-27T18:48:00Z",
+      "publisher": "Formula 1 — Becky Hart",
+      "relevance": "The preceding qualifying weekend provides another recent measure of McLaren’s single-lap competitiveness and shows how closely Norris and teammate Piastri were matched.",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-qualifying-in-austria-2026.4lXXUtrZ4wjXQGag18VEeN.4lXXUtrZ4wjXQGag18VEeN"
+    },
+    {
+      "excerpt": "Charles Leclerc claimed a shock pole position for the Hungarian Grand Prix, beating the dominant McLarens of Oscar Piastri and Lando Norris to the top spot.",
+      "published_at": "2025-08-02T15:54:00Z",
+      "publisher": "Formula 1",
+      "relevance": "The previous Hungarian qualifying session establishes that Norris and McLaren were competitive at this circuit but were beaten by Leclerc and Piastri.",
+      "url": "https://www.formula1.com/en/latest/article/highlights-relive-qualifying-as-leclerc-beats-piastri-and-norris-for-shock.46S5ygP31nrpXmFM3biK4s"
+    },
+    {
+      "excerpt": "Despite light rain falling in the hour before Qualifying, the start of Q1 was judged dry enough for slick tyres and when the lights went green all 20 cars streamed out on track ahead of an expected further shower. Norris therefore took his third career pole and his second of 2024 as McLaren recorded its first front-row lockout since the 2012 Brazilian Grand Prix.",
+      "published_at": "2024-07-20",
+      "publisher": "FIA",
+      "relevance": "The FIA’s historical report confirms Norris’s demonstrated ability to take Hungarian Grand Prix pole, including in changeable conditions.",
+      "url": "https://www.fia.com/news/f1-norris-claims-hungarian-grand-prix-pole-mclaren-lock-out-front-row"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.autosport.com/f1/news/imola-out-for-madrid-as-2026-f1-calendar-revealed/10731117/",
+      "reason": "The excerpt explicitly mentions July 24–26, 2026, after the cutoff of 2026-07-11; excluded under the rule barring mentions of anything after the cutoff, even though the calendar announcement was published before the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-11. Included only sources with explicit publication dates on or before that date; the newest included source is dated 2026-07-04. Publication dates and excerpts were verified through web_search results containing dated article text. Full-page web_fetch failed because of a provider-configuration error, and the requested agent-reach web read fallback returned RATE_LIMITED, so full-page retrieval was unavailable. Excluded undated live result pages, later publications, prediction-market and betting pages, odds, market prices, and all post-cutoff developments. The calendar source identifies July 24–26 as the Grand Prix weekend; July 25 in the question corresponds to the scheduled qualifying day. Historical qualifying evidence is provided as context, without treating the 2024–2025 car performance as directly transferable to the 2026 regulations. Excerpts containing tabular qualifying entries are rendered as factual sentences."
+}

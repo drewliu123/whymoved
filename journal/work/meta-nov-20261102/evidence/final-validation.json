@@ -1,0 +1,7 @@
+{
+  "command": "analysis_contract.py check --plan plan.json --report report.json --claims claims.json --sources sources.json",
+  "exit_code": 0,
+  "passed": true,
+  "scope": "contracts and citations; no probability-calibration certification",
+  "review": "review.json; material original T3 design limitation retained and disclosed"
+}

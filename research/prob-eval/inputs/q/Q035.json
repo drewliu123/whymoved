@@ -1,0 +1,26 @@
+{
+ "qid": "Q035",
+ "question": "Will Kylian Mbappé win the Silver Ball at the 2026 FIFA World Cup?",
+ "rules": "This market will resolve to the player who is awarded the Silver Ball award for the 2026 FIFA World Cup.\n\nIn the event of a tie, this market will resolve according to the official winner as determined by FIFA rules. If multiple winners are announced then this market will resolve to the player whose listed last name comes first alphabetically.\n\nIf the 2026 FIFA World Cup is cancelled, postponed after August 2, 2026, 11:59 PM ET, or there is otherwise no winner declared within that timeframe, this market will resolve to “Other”.\n\nThe resolution source for this market will be official information from FIFA; however, a consensus of credible reporting may also be used.",
+ "as_of": "2026-07-06",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Fédération Française de Football",
+   "published_at": "2022-12-19",
+   "excerpt": "The 2022 World Cup's best-player awards went to Lionel Messi (Golden Ball), Kylian Mbappé (Silver Ball), and Luka Modrić (Bronze Ball). Mbappé also won the Golden Boot with eight goals and received three player-of-the-match awards."
+  },
+  {
+   "id": "E2",
+   "publisher": "FIFA",
+   "published_at": "2026-06-10",
+   "excerpt": "The adidas Golden Ball is presented to the best player at each FIFA World Cup finals. Those who finish as runners-up in the vote receive the adidas Silver Ball and Bronze Ball awards as the second and third most outstanding players in the tournament respectively. Only one man has won multiple adidas Golden Balls at the World Cup."
+  },
+  {
+   "id": "E3",
+   "publisher": "FIFA",
+   "published_at": "2018-07-18",
+   "excerpt": "Croatia captain Luka Modric was awarded the adidas Golden Ball as the tournament's best player, while Belgium's Eden Hazard and France's Antoine Griezmann won the adidas Silver Ball and adidas Bronze Ball, respectively. England forward Harry Kane took home the adidas Golden Boot, finishing as top scorer with six goals, while France's teenage sensation Kylian Mbappe won the FIFA Young Player Award."
+  }
+ ]
+}

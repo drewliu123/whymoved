@@ -1,0 +1,50 @@
+{
+ "qid": "Q085",
+ "question": "Will Douglas Ruas win the Governor of Rio de Janeiro election?",
+ "rules": "The Rio de Janeiro gubernatorial election is scheduled to take place in Brazil on October 4, 2026, with a runoff on October 25, 2026, if no candidate receives a majority of the valid votes in the first round.\n\nThis market will resolve according to the candidate who wins this election.\n\nTemporary, interim, or placeholder governors appointed by any means before the specified election will not be considered.\n\nIf the result of this election isn't known by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., www.tse.jus.br/eleicoes/resultados-eleicoes).",
+ "as_of": "2026-10-02",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Datafolha",
+   "published_at": "2026-10-02T15:07:00-03:00",
+   "excerpt": "Datafolha reported Eduardo Paes at 47% of valid first-round votes and Douglas Ruas at 35%, compared with 51% and 23%, respectively, in August. In the scenario excluding Garotinho, Paes had 48% and Ruas 38%. The survey conducted 1,204 in-person interviews in 35 municipalities from September 29 to October 1 and was registered under RJ-02070/2026 and BR-01272/2026. The institute reported that 27% of voters could still change their vote."
+  },
+  {
+   "id": "E2",
+   "publisher": "Paraná Pesquisas, quoting Manchete Rio",
+   "published_at": "2026-10-02",
+   "excerpt": "A Paraná Pesquisas survey released on October 2 put Eduardo Paes at 41.9% of first-round voting intentions and Douglas Ruas at 30.1%. Anthony Garotinho had 8.2%, while each remaining candidate registered no more than 1.9%."
+  },
+  {
+   "id": "E3",
+   "publisher": "UOL, reporting Atlas/Estadão",
+   "published_at": "2026-09-29T09:00:00-03:00",
+   "excerpt": "Atlas/Estadão recorded Eduardo Paes at 44.1% and Douglas Ruas at 35.7% of first-round voting intentions, compared with 45.7% and 32.4% in its previous release. In the hypothetical runoff, Paes had 51.1% and Ruas 42.1%, equivalent to 54.9% and 45.1% of valid votes. The survey interviewed 1,836 voters through random digital recruitment from September 22 to 27, with a two-percentage-point margin of error and 95% confidence. Its TSE registration was RJ-09456/2026."
+  },
+  {
+   "id": "E4",
+   "publisher": "O Dia / Estadão Conteúdo",
+   "published_at": "2026-09-29T17:57:00-03:00",
+   "excerpt": "Quaest put Eduardo Paes at 34% and Douglas Ruas at 25% in the first round; without Garotinho, the figures were 35% and 26%. In a hypothetical runoff, Paes led Ruas by 43% to 33%, compared with 44% to 31% previously. Quaest conducted 1,302 household interviews from September 25 to 28, with a three-percentage-point margin of error and 95% confidence. The poll was registered under RJ-04419/2026."
+  },
+  {
+   "id": "E5",
+   "publisher": "CNN Brasil",
+   "published_at": "2026-10-02T19:13:00-03:00",
+   "excerpt": "TSE minister Floriano de Azevedo Marques determined on October 2 that votes for Rio gubernatorial candidate Anthony Garotinho should be considered null. The decision stated that votes for him would be classified as 'anulados sub judice' under the currently effective refusal of his candidacy registration, even though his name would appear on voting machines. The minister revoked the earlier injunction that had protected his candidacy prerogatives."
+  },
+  {
+   "id": "E6",
+   "publisher": "Tribunal Regional Eleitoral do Rio de Janeiro (TRE-RJ)",
+   "published_at": "2026-09-11T15:09:00-03:00",
+   "excerpt": "On September 11, the TRE-RJ unanimously refused Anthony Garotinho's registration as a gubernatorial candidate because of missing eligibility conditions and a statutory ineligibility ground. The court cited a conviction for intentional administrative misconduct involving damage to public funds and illicit enrichment of third parties, which expressly suspended his political rights. The decision could be appealed to the TSE."
+  },
+  {
+   "id": "E7",
+   "publisher": "Tribunal Superior Eleitoral (TSE), Diário da Justiça Eletrônico",
+   "published_at": "2026-03-04",
+   "excerpt": "TSE Resolution 23.760 of March 2, 2026 establishes the electoral calendar for the 2026 elections. The calendar schedules the first round for October 4 and the second round, where necessary, for October 25. The elections include the offices of state governor and vice-governor."
+  }
+ ]
+}

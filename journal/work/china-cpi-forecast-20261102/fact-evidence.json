@@ -1,0 +1,260 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02",
+  "historical": false,
+  "candidates": [
+    {
+      "id": "F1",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261015_1408170_ext.html",
+      "canonical_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261015_1408170_ext.html",
+      "publisher": "国家发展改革委",
+      "tier": "T0",
+      "published_at": "2026-10-15",
+      "retrieved_at": "2026-11-02T07:43:59.196827+00:00",
+      "quote": "根据国际市场油价变化情况，本次汽、柴油价格不作调整。",
+      "locator": "公告正文",
+      "origin_id": "ndrc-20261015",
+      "origin_basis": "直接官方公告",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1国内油价中旬不变",
+        "priority": "useful",
+        "reason": "T1国内油价中旬不变"
+      },
+      "provenance": {
+        "query_id": "Q2",
+        "engine_rank": 2
+      },
+      "date_nature": "publication date; date-only pages have unknown intraday time"
+    },
+    {
+      "id": "F2",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261029_1408449_ext.html",
+      "canonical_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261029_1408449_ext.html",
+      "publisher": "国家发展改革委",
+      "tier": "T0",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T07:43:59.196827+00:00",
+      "quote": "每吨分别应上调440元、420元；调控后实际上调345元、335元；自10月29日24时起。",
+      "locator": "调价金额与生效时点段落（分段摘录）",
+      "origin_id": "ndrc-20261029",
+      "origin_basis": "直接官方公告",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1汽油+345元/吨、柴油+335元/吨，月末生效",
+        "priority": "useful",
+        "reason": "T1汽油+345元/吨、柴油+335元/吨，月末生效"
+      },
+      "provenance": {
+        "query_id": "Q2",
+        "engine_rank": 1
+      },
+      "date_nature": "publication date; date-only pages have unknown intraday time"
+    },
+    {
+      "id": "F3",
+      "url": "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/845398391207/index.phtml",
+      "canonical_url": "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/845398391207/index.phtml",
+      "publisher": "新浪财经转载西南证券叶凡",
+      "tier": "T3",
+      "published_at": "2026-10-15",
+      "retrieved_at": "2026-11-02T07:43:59.196827+00:00",
+      "quote": "截至2026 年10 月13 日，同比方面，10 月初28 种重点监测蔬菜价格同比下降17.1%，7 种重点监测水果价格同比下降6.1%。鸡蛋价格同比涨幅收窄至31.7%，猪肉价格同比下降11.5%；环比方面，28 种重点监测蔬菜价格环比由上升转为下降5.9%，7种重点监测水果价格环比下降0.3%，降幅收窄。鸡蛋价格环比由上升转为下降9.6%，猪肉价格环比由上升转为下降2.2%。",
+      "locator": "截至10月13日高频段；以GB18030解码原网页",
+      "origin_id": "swsc-yefan-20261015",
+      "origin_basis": "同一西南证券叶凡研报；底层数字原始出处未取得",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1猪菜月初下跌线索，非全月；原始序列未回溯",
+        "priority": "useful",
+        "reason": "T1猪菜月初下跌线索，非全月；原始序列未回溯"
+      },
+      "provenance": {
+        "query_id": "Q1",
+        "engine_rank": 9
+      },
+      "date_nature": "publication date; date-only pages have unknown intraday time"
+    },
+    {
+      "id": "F4",
+      "url": "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/845398391207/index.phtml",
+      "canonical_url": "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/845398391207/index.phtml",
+      "publisher": "新浪财经转载西南证券叶凡",
+      "tier": "T3",
+      "published_at": "2026-10-15",
+      "retrieved_at": "2026-11-02T07:43:59.196827+00:00",
+      "quote": "展望10 月，国际油价高位运行及AI 算力需求带动的消费电子涨价仍将提供支撑，但蔬果价格同比降幅扩大、猪肉价格环比转跌，叠加服务价格季节性回落，CPI 整体或延续温和修复。",
+      "locator": "摘要展望10月段；GB18030解码",
+      "origin_id": "swsc-yefan-20261015",
+      "origin_basis": "同一西南证券叶凡研报；底层数字原始出处未取得",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1服务方向预测、T2具名定性预测，未给同比点数",
+        "priority": "useful",
+        "reason": "T1服务方向预测、T2具名定性预测，未给同比点数"
+      },
+      "provenance": {
+        "query_id": "Q1",
+        "engine_rank": 9
+      },
+      "date_nature": "publication date; date-only pages have unknown intraday time"
+    },
+    {
+      "id": "F5",
+      "url": "https://cj.sina.com.cn/articles/view/2868676035/aafc85c302001z5si",
+      "canonical_url": "https://cj.sina.com.cn/articles/view/2868676035/aafc85c302001z5si",
+      "publisher": "新浪财经转载财联社",
+      "tier": "T2",
+      "published_at": "2026-10-30T14:28:00+08:00",
+      "retrieved_at": "2026-11-02T07:43:59.196827+00:00",
+      "quote": "截至今日14:00时，全国农产品批发市场猪肉平均价格为15.29元/公斤，比昨天下降0.6%；重点监测的28种蔬菜平均价格为4.08元/公斤，比昨天上升0.5%。",
+      "locator": "10月30日14:28价格快讯正文（分句摘录）",
+      "origin_id": "mara-wholesale-20261030",
+      "origin_basis": "财联社转引农业农村部监测；原始发布未取得",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1月末猪肉下跌、蔬菜日涨；日环比非月环比；原始发布未取得",
+        "priority": "useful",
+        "reason": "T1月末猪肉下跌、蔬菜日涨；日环比非月环比；原始发布未取得"
+      },
+      "provenance": {
+        "query_id": "Q5",
+        "engine_rank": 2
+      },
+      "date_nature": "publication date; date-only pages have unknown intraday time"
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "2026年10月 CPI 预测 猪肉 蔬菜 环比 11月",
+      "status": "ok"
+    },
+    {
+      "id": "Q2",
+      "query": "2026年10月 国内 成品油 价格 调整 10月 汽油 柴油",
+      "status": "ok"
+    },
+    {
+      "id": "Q3",
+      "query": "2026年10月 CPI 预测 旅游 服务 价格 机构",
+      "status": "ok"
+    },
+    {
+      "id": "Q4",
+      "query": "\"2026\" \"10月CPI\" \"预计\" \"11月2日\"",
+      "status": "ok"
+    },
+    {
+      "id": "Q5",
+      "query": "\"2026年10月\" \"猪肉\" \"蔬菜\" \"价格\" \"30日\"",
+      "status": "ok"
+    }
+  ],
+  "source_status": {
+    "official_oil": {
+      "status": "ok"
+    },
+    "national_food_monthly": {
+      "status": "partial",
+      "reason": "仅取得具名研报月初数据及媒体转引月末单日数据，原始日序列未取得"
+    },
+    "october_services": {
+      "status": "partial",
+      "reason": "只有机构方向预测，无10月实际高频"
+    },
+    "named_october_numeric_forecasts": {
+      "status": "no_results",
+      "reason": "五次搜索内未取得目标期具名数字，不代表不存在"
+    },
+    "original_survey": {
+      "status": "not_run",
+      "reason": "未取得目标期调查，预算用尽"
+    }
+  },
+  "tests": [
+    {
+      "test_id": "T1",
+      "observation_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "status": "partial",
+      "missing": "缺全月食品月均、零售映射和权重、10月服务实际，不能核算环比相对+0.2%的偏离"
+    },
+    {
+      "test_id": "T2",
+      "observation_ids": [
+        "F4"
+      ],
+      "status": "partial",
+      "missing": "只有一家具名机构定性判断，无数值预测组，无法形成聚集范围或共识"
+    }
+  ],
+  "gaps": [
+    "高频食品原始序列待回溯",
+    "全国10月食品及服务同口径环比贡献未取得",
+    "具名机构中国2026年10月CPI同比数值预测未取得；不以全年或9月预测替代"
+  ],
+  "excluded_records": [
+    {
+      "url": "https://finance.eastmoney.com/a/202610143894582934.html",
+      "access_status": "ok",
+      "reason": "原文实际讨论美国9月CPI，非中国10月",
+      "query_id": "Q3",
+      "engine_rank": 5
+    },
+    {
+      "url": "https://finance.eastmoney.com/a/202611013917725961.html",
+      "access_status": "ok",
+      "reason": "事件日历，无中国10月CPI数字",
+      "query_id": "Q4",
+      "engine_rank": 11
+    },
+    {
+      "url": "https://cif.mofcom.gov.cn/cif/html/inland_month_report/2026/10/1792117515769.html",
+      "access_status": "ok",
+      "reason": "台州9月地方数据与10月预判，不能当全国10月实际",
+      "query_id": "Q1",
+      "engine_rank": 1
+    }
+  ],
+  "audit": {
+    "search_count": 5,
+    "price_relevance": false,
+    "model_output": "取证不自行填预测值；交主研究者结合基数和其他预测材料完成"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "claude",
+    "plugin",
+    "update",
+    "touyan@touyan-local",
+    "--json"
+  ],
+  "exit_code": 0
+}

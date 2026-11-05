@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-B",
+    "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.1.1/scripts/polymarket.py",
+    "event",
+    "will-nvidia-nvda-q3-data-center-revenue-be-above-20261008120135000",
+    "--json"
+  ],
+  "exit_code": 0
+}

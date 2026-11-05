@@ -1,0 +1,50 @@
+{
+  "qid": "Q050",
+  "as_of": "2026-07-18",
+  "kept": [
+    {
+      "published_at": "2026-07-18",
+      "publisher": "UNN, citing the General Staff of the Armed Forces of Ukraine",
+      "url": "https://unn.ua/en/news/276-combat-engagements-occurred-on-the-front-in-a-day-the-most-attacks-in-the-pokrovsk-direction",
+      "excerpt": "During the past day, July 17, 276 combat engagements occurred on the front line. The largest number of assault actions was recorded in the Pokrovsk direction, where Ukrainian defenders stopped 43 attacks. The enemy's fire activity and assaults were recorded in the directions of Novopavlivka, Sofiivka, Toretske, Bilytske, Novyi Donbas, Bilozerske, Shevchenko, Hryshyne, Myrne, Vasylivka, Serhiivka, Udachne and Molodetske.",
+      "relevance": "Published July 18 at 05:27 AM, this report identifies Toretske among the locations under Russian assault immediately before the freeze date, although the sector-wide attack count does not establish control of the specified intersection."
+    },
+    {
+      "published_at": "2026-07-18",
+      "publisher": "Ukrinform, citing the General Staff of the Armed Forces of Ukraine",
+      "url": "https://www.ukrinform.net/amp/rubric-ato/4145642-war-update-69-combat-clashes-since-morning.html",
+      "excerpt": "According to Ukrinform, the General Staff of the Armed Forces of Ukraine reported the operational situation as of 16:00 on Saturday, July 18, in a Facebook update. In the Kostiantynivka sector, Ukrainian forces repelled 10 Russian attacks near Kostiantynivka, Illinivka, and toward Kucheriv Yar. Two battles are ongoing. In the Pokrovsk sector, Russian forces attempted nine assaults near Dorozhne, Hryshyne, Udachne, Molodetske, and toward Kucheriv Yar.",
+      "relevance": "Published July 18 at 17:39, this provides a same-day update on fighting in the surrounding sectors without establishing intersection-level territorial control."
+    },
+    {
+      "published_at": "2026-07-16",
+      "publisher": "UNN, citing the General Staff of the Armed Forces of Ukraine",
+      "url": "https://unn.ua/en/amp/279-combat-engagements-occurred-on-the-front-in-a-day-general-staff-of-the-armed-forces-of-ukraine",
+      "excerpt": "During the past day, July 15, 279 combat engagements were recorded. In the Kostiantynivka direction, the enemy carried out 30 attacks in the areas of the populated areas of Kostiantynivka, Illinivka, Ivanopillia, Sofiivka, as well as towards Vilne, Toretske, and Kucherovyi Yar.",
+      "relevance": "Published July 16 at 07:01 AM, this documents Russian attacks toward Toretske two days before the freeze date and preserves the distinction between attacks toward a settlement and its capture."
+    },
+    {
+      "published_at": "2026-07-14",
+      "publisher": "Armed Forces of Ukraine / General Staff",
+      "url": "https://www.zsu.gov.ua/news/operatyvna-informatsiia-stanom-na-0800-14072026-shchodo-rosiiskoho-vtorhnennia",
+      "excerpt": "Загалом протягом минулої доби зафіксовано 244 бойові зіткнення. На Покровському напрямку наші захисники зупинили 37 штурмових дій агресора у районах населених пунктів Торецьке, Русин Яр, Василівка, Котлине, Удачне, Філія, Новоолександрівка та в бік населених пунктів Вільне, Білицьке, Новий Донбас, Шевченко, Мирне, Сергіївка, Новопавлівка.",
+      "relevance": "This official July 14 operational update reports 37 assaults stopped across the Pokrovsk sector, including near Toretske, providing a primary-source baseline for local pressure."
+    },
+    {
+      "published_at": "2026-07-16",
+      "publisher": "Eurasia, republishing the ISW / Critical Threats July 14 assessment",
+      "url": "https://eurasia.ro/2026/07/16/russian-offensive-campaign-assessment-july-14-2026/",
+      "excerpt": "Russian forces conducted limited ground operations in the Dobropillya tactical area on July 13 to 14 but did not make confirmed advances.",
+      "relevance": "The republication is dated July 16 and supplies an independent assessment of the nearby tactical area's lack of confirmed Russian advances, which is more relevant to qualifying map changes than assault counts alone."
+    },
+    {
+      "published_at": "2026-07-01",
+      "publisher": "Institute for the Study of War / AEI Critical Threats Project",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-july-1-2026",
+      "excerpt": "ISW has observed evidence to assess that Russian forces seized or infiltrated 30.42 square kilometers in June 2026 and advanced or infiltrated at an average pace of 1.01 square kilometers per day. Russian forces comparatively seized 481.25 square kilometers in June 2025, advancing at an average pace of 16.04 square kilometers per day.",
+      "relevance": "This provides a dated historical benchmark for Russian territorial progress, with the essential limitation that the 2026 measure includes infiltration that does not qualify under this question's resolution rules."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-18. Selected six dated items using web_search and source passages exposed in indexed results; excerpts retain source wording, including Ukrainian for the official General Staff item. web_fetch failed because multiple providers were registered; the requested agent-reach fallback returned a challenge page for ISW and then a web-channel rate limit, so full-page retrieval could not be completed. Publication dates were checked against displayed dates or dated republication paths. The Critical Threats version of the assessment titled July 18 explicitly states that it was published July 19; it was excluded, and the corresponding ISW version was also excluded conservatively because of the publication-timing ambiguity. No later developments, outcomes, prediction-market pages, odds, or prices are included in the evidence pack. The live ISW map was not used as frozen evidence: the exact intersection's shading as of July 18 and persistence through a full daily update cycle remain unverified. Sector-level reports of attacks or repelled assaults do not prove control of the specified coordinates. No qualifying, dated negotiated-settlement evidence was established in this search."
+}

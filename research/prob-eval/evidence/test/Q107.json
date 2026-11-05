@@ -1,0 +1,57 @@
+{
+  "qid": "Q107",
+  "as_of": "2026-09-17",
+  "kept": [
+    {
+      "excerpt": "Russian forces continued limited offensive operations west and south of Orikhiv on September 16 and 17 but did not advance.",
+      "published_at": "2026-09-17",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Provides the cutoff-date assessment from the designated resolution authority for the sector containing Prymorske, although it does not establish shading at the specified intersection.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-17-2026/"
+    },
+    {
+      "excerpt": "A total of 278 combat engagements between the Ukrainian Defense Forces and Russian forces were recorded along the front line over the past day, September 16. Ukrinform reports this, citing the General Staff of the Armed Forces of Ukraine in a Facebook update on the situation as of 8:00 on Thursday, September 17. In the Orikhiv sector, Ukraine’s Defense Forces stopped one Russian attempt to advance toward Prymorske.",
+      "published_at": "2026-09-17",
+      "publisher": "Ukrinform, citing the General Staff of the Armed Forces of Ukraine",
+      "relevance": "Supplies recent, settlement-specific official Ukrainian reporting on a Russian assault toward Prymorske immediately before the evidence cutoff.",
+      "url": "https://www.ukrinform.net/amp/rubric-ato/4164900-war-update-278-clashes-on-front-line-over-past-day-most-attacks-in-pokrovsk-and-kostiantynivka-sectors.html"
+    },
+    {
+      "excerpt": "Russian forces recently advanced southwest of Orikhiv. Russian forces advanced in southeastern Novoandriivka (west of Orikhiv), according to geolocated footage published on September 16.",
+      "published_at": "2026-09-16",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Documents a recent confirmed Russian advance elsewhere in the western Zaporizhzhia sector, providing regional offensive context without implying capture of the Prymorske intersection.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-16-2026/"
+    },
+    {
+      "excerpt": "Ukrainian forces have held Russian forces to near-zero net gains since March 2026, and have conducted successful counterattacks in the Kupyansk, Oleksandrivka, and now Lyman directions. Russian forces have made limited but significant gains in and around Kostyantynivka and east of Slovyansk and Kramatorsk, but are fighting to maintain momentum in these areas and elsewhere along the front line.",
+      "published_at": "2026-09-12",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Provides a pre-cutoff theater-wide baseline for Russian territorial momentum, with the limitation that net gains across Ukraine do not measure the probability of taking this individual intersection.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-12-2026/"
+    },
+    {
+      "excerpt": "A Russian milblogger acknowledged on August 8 that Russian forces no longer maintain positions in southern Prymorske (west of Orikhiv).",
+      "published_at": "2026-08-08",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Records a Russian-source acknowledgment of lost positions in the target settlement, offering a local baseline preceding September's reported assaults.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-8-2026/"
+    },
+    {
+      "excerpt": "Geolocated footage published on June 2 and June 3 shows Ukrainian forces striking Russian-occupied buildings in southern Mala Tokmachka (southeast of Orikhiv) and southern Prymorske (northwest of Orikhiv) after what ISW assesses were infiltration missions.",
+      "published_at": "2026-06-04",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Shows that Russian personnel appearing in southern Prymorske have previously been classified by ISW as infiltrators, a distinction central to the market's exclusion of infiltration-area shading.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-4-2026/"
+    },
+    {
+      "excerpt": "Assessed Ukrainian advances: Recent video and textual evidence, including geolocated footage published on March 19, 24, and 25, indicates that Ukrainian forces liberated northern and central Prymorske and Richne (both northwest of Orikhiv).",
+      "published_at": "2026-03-26",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Establishes historical Ukrainian recovery of northern and central Prymorske and demonstrates why earlier Russian presence cannot by itself establish the intersection's status at the experiment date.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-march-26-2026/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-17 inclusive. Included only individually dated publications on or before the cutoff; no prediction-market pages, odds, or post-cutoff developments were used as evidence. Searches returned later-dated material, which was excluded. Publication dates and excerpts were checked against web_search source text; web_fetch failed because of a provider-configuration error, and the requested agent-reach web read fallback returned RATE_LIMITED, so full-page retrieval could not be completed. The excerpts are factual source passages with attribution retained where applicable. No frozen ISW map snapshot or coordinate-level layer query was verified for 47.623814 N, 35.288073 E, and persistence through the next full daily update cycle was not established. These items therefore provide forecasting context, not a determination that the resolution condition had already been met. The market creation date was not supplied, limiting assessment of any earlier qualifying event."
+}

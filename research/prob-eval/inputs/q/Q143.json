@@ -1,0 +1,44 @@
+{
+ "qid": "Q143",
+ "question": "Will United Russia win between 310 and 324 seats in the next Russian State Duma election?",
+ "rules": "Legislative elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the number of seats held by United Russia in the State Duma as a result of the next Russian legislative election.\n\nIf results are not known definitively by May 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThis market’s resolution will be based solely on the number of seats won by the named party in the State Duma.\n\nThis market will resolve based on the results of this election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results reported by Russian government sources such as the Central Election Commission of the Russian Federation.",
+ "as_of": "2026-09-07",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "President of Russia, official statement distributed unaltered by Public Technologies",
+   "published_at": "2026-06-16",
+   "excerpt": "In accordance with this Executive Order, the election of deputies to the new convocation of the State Duma is set to take place on September 20, 2026. The Executive Order comes into force on the day of its official publication."
+  },
+  {
+   "id": "E2",
+   "publisher": "Russian Public Opinion Research Center (VTsIOM)",
+   "published_at": "2026-09-04",
+   "excerpt": "For August 24–30, 2026, United Russia's support was 37.2%, down 2.0 percentage points over the preceding week; Communist Party support was 11.6%, New People 11.5%, LDPR 8.7%, and A Just Russia 5.3%. The party-preference figures are percentages of all respondents. The survey methodology specifies 1,600 adult respondents, a combined telephone and route-based sample, and a maximum sampling error of 2.5%."
+  },
+  {
+   "id": "E3",
+   "publisher": "Meduza",
+   "published_at": "2026-07-23",
+   "excerpt": "Nationwide, the Kremlin’s expectations for United Russia in the upcoming election now average around 45–50%. Several officials and United Russia members from the Central, Northwestern, and Far Eastern federal districts, along with a source close to the Presidential Administration, told Meduza the Presidential Administration had lowered the KPI again for a number of regions. The Kremlin now wants the ruling party to win at least 45% of the vote, down from 50%. The turnout target of 50% remains unchanged."
+  },
+  {
+   "id": "E4",
+   "publisher": "bne IntelliNews",
+   "published_at": "2026-08-07",
+   "excerpt": "Some 56% of Russians have already decided which party they will vote for in September's State Duma election, according to July survey data from state pollster VTsIOM, Vedomosti reported on August 7. A further 34% said they had yet to make up their minds or could still change them. United Russia remains the dominant force by a wide margin: 34% of all respondents said they were ready to vote for the ruling party, against 11% for the Communist Party and 10% for New People, VTsIOM's monthly tracking shows."
+  },
+  {
+   "id": "E5",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-08-11",
+   "excerpt": "The Russian Supreme Court upheld a lawsuit from the Rodina Party on August 10 and annulled the registration of Yabloko candidates from the Duma elections. Rodina's lawsuit from August 7 advocated for Yabloko’s disqualification from the Duma elections for violating copyright and promoting extremist slogans."
+  },
+  {
+   "id": "E6",
+   "publisher": "Le Monde",
+   "published_at": "2026-09-06",
+   "excerpt": "The State Duma elections, the first parliamentary elections since the start of the war, are scheduled for September 18–20. According to the Levada Center, an independent polling institute, the proportion of Russians believing the country is headed in the right direction fell by 10 points between July 2025 and July 2026, down to 54%."
+  }
+ ]
+}

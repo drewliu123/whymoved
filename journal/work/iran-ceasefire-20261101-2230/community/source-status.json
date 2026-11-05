@@ -1,0 +1,67 @@
+{
+  "engine_source_status": {
+    "hackernews": {
+      "at": "2026-11-02T03:34:20.424892Z",
+      "attempted": true,
+      "items_returned": 8,
+      "source": "hackernews",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-02T03:34:20.428177Z",
+      "attempted": true,
+      "items_returned": 6,
+      "source": "reddit",
+      "state": "ok"
+    }
+  },
+  "research_source_status": {
+    "hackernews": {
+      "at": "2026-11-02T03:34:20.424892Z",
+      "attempted": true,
+      "items_returned": 8,
+      "source": "hackernews",
+      "state": "ok",
+      "status": "ok",
+      "engine_state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-02T03:34:20.428177Z",
+      "attempted": true,
+      "items_returned": 6,
+      "source": "reddit",
+      "state": "ok",
+      "status": "ok",
+      "engine_state": "ok"
+    },
+    "x": {
+      "status": "not_run",
+      "reason": "diagnose has no verified backend; browser cookies disabled"
+    },
+    "youtube": {
+      "status": "not_run",
+      "reason": "narrow community scope and budget"
+    },
+    "polymarket": {
+      "status": "not_run",
+      "reason": "narrow community scope and budget"
+    },
+    "github": {
+      "status": "not_run",
+      "reason": "narrow community scope and budget"
+    },
+    "grounding": {
+      "status": "not_run",
+      "reason": "narrow community scope and budget"
+    },
+    "reddit_original_webfetch": {
+      "status": "unreachable",
+      "attempted": 2,
+      "reason": "Unable to fetch www.reddit.com"
+    },
+    "hn_original_api": {
+      "status": "ok",
+      "items_returned": 5
+    }
+  }
+}

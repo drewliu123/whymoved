@@ -1,0 +1,44 @@
+{
+ "qid": "Q133",
+ "question": "Will John Pardon win the 2026 Fields Medal?",
+ "rules": "The Fields Medal is a prize regarded as the top award in the field of mathematics worldwide. It is awarded to two, three, or four mathematicians under 40 years of age at the International Congress of the International Mathematical Union (IMU), a meeting that takes place every four years. The International Congress of Mathematicians 2026 (ICM 2026) is scheduled to take place from July 23 to July 30, 2026.\n\nThis market will resolve according to the winners of the 2026 Fields medal.\n\nIf the 2026 Fields medalists are not announced by August 15, 2026, 11:59PM ET, this market will resolve to \"Other\".\n\nThe primary resolution source for this market will be official information from the IMU (https://www.mathunion.org/imu-awards/fields-medal), however other credible reporting may be used.",
+ "as_of": "2026-07-09",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Simons Foundation",
+   "published_at": "2026-07-01",
+   "excerpt": "As part of the world’s most prestigious math conference, the 2026 International Congress of Mathematicians (ICM), the public is invited to explore the beauty and ubiquity of mathematics at 17 free public events in downtown Philadelphia from July 24–28. All events are free, though some require advance registration to secure a spot. Events will be held at the Pennsylvania Convention Center."
+  },
+  {
+   "id": "E2",
+   "publisher": "Simons Foundation",
+   "published_at": "2026-06-02",
+   "excerpt": "Media registration includes access to a press conference with the Fields Medalists and other honorees following their announcement during the July 23 opening ceremony. The conference’s opening and closing ceremonies, as well as the media conference, will also be livestreamed for free on the Simons Foundation’s YouTube channel. At each conference, two to four mathematicians under 40 years of age are honored for making major contributions to the field."
+  },
+  {
+   "id": "E3",
+   "publisher": "Stony Brook University",
+   "published_at": "2025-04-10",
+   "excerpt": "Stony Brook, NY — April 10, 2025 — Stony Brook University Professor John Pardon is a co-recipient of the New Horizon in Mathematics prize. Professor Pardon was recognized for his research that has produced a number of important results in geometry and topology, particularly in the field of symplectic geometry and pseudo-holomorphic curves, which are certain types of smooth surfaces in manifolds. “Most recently, John proved a conjecture of Maulik, Nekrasov, Okounkov, and Pandharipande for a large class of complex three-dimensional manifolds, including all Calabi–Yau threefolds.”"
+  },
+  {
+   "id": "E4",
+   "publisher": "John Pardon via arXiv, version 3",
+   "published_at": "2023-08-08",
+   "excerpt": "We show that curve enumeration invariants of complex threefolds with nef anti-canonical bundle are determined by their values on local curves. This implies the MNOP conjecture of Maulik, Nekrasov, Okounkov, and Pandharipande relating Gromov--Witten and Donaldson--Pandharipande--Thomas invariants, for all complex threefolds with nef anti-canonical bundle (in particular, all Calabi--Yau threefolds) and primary insertions (no descendents), given its known validity for local curves due to Bryan, Okounkov, and Pandharipande."
+  },
+  {
+   "id": "E5",
+   "publisher": "Clay Mathematics Institute",
+   "published_at": "2022-10-26",
+   "excerpt": "A Clay Research Award is made to John Pardon of Princeton University in recognition of his wide-ranging and transformative work in geometry and topology, particularly his ground-breaking achievements in symplectic topology. His novel treatment of the theory of moduli spaces of pseudo-holomorphic curves, leading to an elegant construction of virtual fundamental cycles and chains, provides a compelling example. In a series of papers, Ganatra, Pardon and Shende developed a powerful and subtle descent theory for Fukaya categories, crafted to facilitate diverse applications."
+  },
+  {
+   "id": "E6",
+   "publisher": "Princeton University, Office of Communications",
+   "published_at": "2017-04-13",
+   "excerpt": "John Pardon, a Princeton University professor of mathematics, has received a National Science Foundation Alan T. Waterman Award, which is the nation's highest honor for scientists and engineers younger than 35. Pardon was recognized for \"revolutionary, groundbreaking results in geometry and topology\" that \"have extended the power of tools of geometric analysis to solve deep problems in real and complex geometry, topology and dynamical systems,\" according to the prize citation."
+  }
+ ]
+}

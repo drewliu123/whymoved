@@ -1,0 +1,314 @@
+[
+  {
+    "project": "fingpt",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/LICENSE",
+    "bytes": 1083
+  },
+  {
+    "project": "fingpt",
+    "path": "fingpt/FinGPT_Forecaster/README.md",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/fingpt/FinGPT_Forecaster/README.md",
+    "bytes": 9079
+  },
+  {
+    "project": "fingpt",
+    "path": "fingpt/FinGPT_Forecaster/data_pipeline.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/fingpt/FinGPT_Forecaster/data_pipeline.py",
+    "bytes": 3042
+  },
+  {
+    "project": "fingpt",
+    "path": "fingpt/FinGPT_Forecaster/utils.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/fingpt/FinGPT_Forecaster/utils.py",
+    "bytes": 5685
+  },
+  {
+    "project": "fingpt",
+    "path": "fingpt/FinGPT_Forecaster/prompt.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/fingpt/FinGPT_Forecaster/prompt.py",
+    "bytes": 7788
+  },
+  {
+    "project": "fingpt",
+    "path": "fingpt/FinGPT_Forecaster/app.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/fingpt/FinGPT_Forecaster/app.py",
+    "bytes": 13940
+  },
+  {
+    "project": "fingpt",
+    "path": "fingpt/FinGPT_Forecaster/train_lora.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/fingpt/FinGPT_Forecaster/train_lora.py",
+    "bytes": 8174
+  },
+  {
+    "project": "fingpt",
+    "path": "fingpt/FinGPT_Forecaster/requirements.txt",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinGPT/ac5c5443fbeeafad801e7a3c188e4f24cfaad4d8/fingpt/FinGPT_Forecaster/requirements.txt",
+    "bytes": 237
+  },
+  {
+    "project": "finrl",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/7e98df461cbc7772f16a545a2f13b521e5d0b8f4/LICENSE",
+    "bytes": 1093
+  },
+  {
+    "project": "finrl",
+    "path": "requirements.txt",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/7e98df461cbc7772f16a545a2f13b521e5d0b8f4/requirements.txt",
+    "bytes": 693
+  },
+  {
+    "project": "finrl",
+    "path": "pyproject.toml",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/7e98df461cbc7772f16a545a2f13b521e5d0b8f4/pyproject.toml",
+    "bytes": 1837
+  },
+  {
+    "project": "finrl",
+    "path": "finrl/meta/env_stock_trading/env_stocktrading.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/7e98df461cbc7772f16a545a2f13b521e5d0b8f4/finrl/meta/env_stock_trading/env_stocktrading.py",
+    "bytes": 23862
+  },
+  {
+    "project": "finrl",
+    "path": "finrl/meta/env_stock_trading/env_stocktrading_stoploss.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/7e98df461cbc7772f16a545a2f13b521e5d0b8f4/finrl/meta/env_stock_trading/env_stocktrading_stoploss.py",
+    "bytes": 20305
+  },
+  {
+    "project": "finrl",
+    "path": "finrl/agents/stablebaselines3/models.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/7e98df461cbc7772f16a545a2f13b521e5d0b8f4/finrl/agents/stablebaselines3/models.py",
+    "bytes": 27413
+  },
+  {
+    "project": "finmem",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/LICENSE",
+    "bytes": 1114
+  },
+  {
+    "project": "finmem",
+    "path": "pyproject.toml",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/pyproject.toml",
+    "bytes": 765
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/agent.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/agent.py",
+    "bytes": 25767
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/memorydb.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/memorydb.py",
+    "bytes": 35302
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/reflection.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/reflection.py",
+    "bytes": 16279
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/portfolio.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/portfolio.py",
+    "bytes": 3680
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/environment.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/environment.py",
+    "bytes": 4374
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/memory_functions/compound_score.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/memory_functions/compound_score.py",
+    "bytes": 413
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/memory_functions/decay.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/memory_functions/decay.py",
+    "bytes": 611
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/memory_functions/recency.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/memory_functions/recency.py",
+    "bytes": 84
+  },
+  {
+    "project": "finmem",
+    "path": "puppy/memory_functions/importance_score.py",
+    "url": "https://raw.githubusercontent.com/pipiku915/FinMem-LLM-StockTrading/be814aa47970de9bf2fdd6a1d5a60ae5cf361b46/puppy/memory_functions/importance_score.py",
+    "bytes": 1594
+  },
+  {
+    "project": "finagent",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/LICENSE",
+    "bytes": 1073
+  },
+  {
+    "project": "finagent",
+    "path": "requirements.txt",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/requirements.txt",
+    "bytes": 280
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/prompt/trading/decision.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/prompt/trading/decision.py",
+    "bytes": 5626
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/prompt/trading/high_level_reflection.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/prompt/trading/high_level_reflection.py",
+    "bytes": 7458
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/prompt/trading/low_level_reflection.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/prompt/trading/low_level_reflection.py",
+    "bytes": 10001
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/memory/basic_memory.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/memory/basic_memory.py",
+    "bytes": 2920
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/memory/faiss.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/memory/faiss.py",
+    "bytes": 6452
+  },
+  {
+    "project": "finagent",
+    "path": "finagent/environment/trading.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/finagent/environment/trading.py",
+    "bytes": 13126
+  },
+  {
+    "project": "finagent",
+    "path": "tools/main.py",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/tools/main.py",
+    "bytes": 19643
+  },
+  {
+    "project": "finagent",
+    "path": "res/prompts/module/trading/low_level_reflection_price_change_description_with_next_trading.html",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/res/prompts/module/trading/low_level_reflection_price_change_description_with_next_trading.html",
+    "bytes": 1262
+  },
+  {
+    "project": "finagent",
+    "path": "res/prompts/template/train/trading/low_level_reflection.html",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/res/prompts/template/train/trading/low_level_reflection.html",
+    "bytes": 1469
+  },
+  {
+    "project": "finagent",
+    "path": "res/prompts/template/valid/trading/low_level_reflection.html",
+    "url": "https://raw.githubusercontent.com/DVampire/FinAgent/17248a0b8b729ee3e093e30bb7bea7f52181f363/res/prompts/template/valid/trading/low_level_reflection.html",
+    "bytes": 1449
+  },
+  {
+    "project": "raven",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/LICENSE",
+    "bytes": 1068
+  },
+  {
+    "project": "raven",
+    "path": "packages/forecast-engine/package.json",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/packages/forecast-engine/package.json",
+    "bytes": 822
+  },
+  {
+    "project": "raven",
+    "path": "packages/forecast-engine/src/bayes.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/packages/forecast-engine/src/bayes.ts",
+    "bytes": 8115
+  },
+  {
+    "project": "raven",
+    "path": "packages/forecast-engine/src/market-blind.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/packages/forecast-engine/src/market-blind.ts",
+    "bytes": 3502
+  },
+  {
+    "project": "raven",
+    "path": "packages/forecast-engine/src/claims.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/packages/forecast-engine/src/claims.ts",
+    "bytes": 2393
+  },
+  {
+    "project": "raven",
+    "path": "packages/forecast-engine/src/engine.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/packages/forecast-engine/src/engine.ts",
+    "bytes": 43144
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/src/policy.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/src/policy.ts",
+    "bytes": 8427
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/src/fees.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/src/fees.ts",
+    "bytes": 2190
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/src/book-sim.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/src/book-sim.ts",
+    "bytes": 3644
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/src/reflect.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/src/reflect.ts",
+    "bytes": 38358
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/src/portfolio.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/src/portfolio.ts",
+    "bytes": 5133
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/src/evaluator.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/src/evaluator.ts",
+    "bytes": 9432
+  },
+  {
+    "project": "raven",
+    "path": "services/paper-agent/src/config.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/paper-agent/src/config.ts",
+    "bytes": 4618
+  },
+  {
+    "project": "raven",
+    "path": "services/orchestrator/src/lib/risk.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/services/orchestrator/src/lib/risk.ts",
+    "bytes": 5206
+  },
+  {
+    "project": "raven",
+    "path": "packages/contracts/src/trade-decision.ts",
+    "url": "https://raw.githubusercontent.com/Alchemist-X/predict-raven/21f70d9132918217ae6c2b5900dd3a15047d46ff/packages/contracts/src/trade-decision.ts",
+    "bytes": 3428
+  }
+]

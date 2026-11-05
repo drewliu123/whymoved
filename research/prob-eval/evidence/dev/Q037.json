@@ -1,0 +1,55 @@
+{
+  "qid": "Q037",
+  "as_of": "2026-07-21",
+  "kept": [
+    {
+      "excerpt": "Members should be aware of a recent announcement by the Houthis declaring a \"maritime embargo\" against Saudi Arabia. As advised by maritime security provider Ambrey, although there has been no direct impact on merchant shipping to date, Saudi flagged, owned, operated and Saudi port-calling vessels, together with Saudi Red Sea ports, are considered to present an elevated risk profile whilst operating in the Red Sea and Gulf of Aden.",
+      "published_at": "2026-07-21",
+      "publisher": "Steamship Mutual",
+      "relevance": "The insurer's contemporaneous security notice distinguishes the announced embargo and elevated targeting risk from an established interruption of merchant shipping.",
+      "url": "https://www.steamshipmutual.com/publications/articles/houthi-maritime-embargo-against-saudi-arabia"
+    },
+    {
+      "excerpt": "Shipping companies should not load or discharge cargo at Saudi Arabian ports and such activity may result in being targeted \"in any location\" by Yemen's Iran-aligned Houthi militia, according to an email sent to companies by the Houthis. The new conditions came into force at 1201 GMT on July 20, the email said.",
+      "published_at": "2026-07-21T19:47:58+08:00",
+      "publisher": "Reuters via GMA News Online",
+      "relevance": "The reported email establishes the effective timing and Saudi-port scope of the threat that could deter Bab el-Mandeb transits.",
+      "url": "https://www.gmanetwork.com/news/topstories/world/995650/houthis-warn-shipping-companies-to-avoid-saudi-ports-email-shows/story/"
+    },
+    {
+      "excerpt": "In an email to shipowners, the Iran-backed group makes clear that its blockade doesn’t just apply to Saudi vessels, but to all ships coming to and from Saudi ports, according to the message seen by Bloomberg. It’s unclear, however, how effective the blockade will be. A Saudi-led coalition in Yemen said Monday it has begun implementing operational measures to protect ships in Bab el-Mandeb Strait at the southern end of the Red Sea.",
+      "published_at": "2026-07-21T04:09:17-07:00",
+      "publisher": "Bloomberg via gCaptain",
+      "relevance": "This report documents both the broad affiliation-based threat and a protective response, while explicitly identifying uncertainty about enforcement.",
+      "url": "https://gcaptain.com/houthis-warn-all-ships-against-calling-at-saudi-arabias-ports/"
+    },
+    {
+      "excerpt": "Two oil tankers loaded with Saudi crude for China and India make U-turns in the Red Sea, heading towards the Suez Canal rather than braving the Yemeni coast at the sea’s mouth following a warning from Yemen’s Iran-backed Houthi terror group. The changes in direction by the ships, the Xin Long Yang and the Rodos, suggest a second potential disruption to a major shipping route that could compound the shortfall in global energy markets caused by the closure of the Strait of Hormuz.",
+      "published_at": "2026-07-21T17:26:00+03:00",
+      "publisher": "Reuters and The Times of Israel",
+      "relevance": "Named tanker diversions provide concrete evidence of shipping behavior changing in response to the warning, without establishing an all-vessel transit shutdown.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/two-tankers-carrying-saudi-crude-make-u-turns-in-red-sea-after-houthi-warning/"
+    },
+    {
+      "excerpt": "A Cosco Shipping vehicle carrier reversed course near Djibouti on Tuesday after receiving a Houthi warning that its transit clearance had been cancelled and the vessel could be targeted. Since the Hormuz conflict began, Yanbu exports have increased substantially, averaging 3.75 million barrels per day, helping offset lost Gulf export capacity. Crude oil tankers flocked to the Red Sea, via the Bab el Mandeb, in March and traffic levels have been largely on par with pre-Houthi campaign levels.",
+      "published_at": "2026-07-21",
+      "publisher": "Lloyd’s List Intelligence",
+      "relevance": "The dated maritime intelligence briefing adds a non-tanker diversion and context on tanker traffic supporting the route before the new threat; these figures are not the IMF all-vessel moving average.",
+      "url": "https://www.lloydslistintelligence.com/resources/blog/strait-of-hormuz-brief-21-july-2026"
+    },
+    {
+      "excerpt": "Attacks on vessels in the Red Sea area reduced traffic through the Suez Canal, the shortest maritime route between Asia and Europe, through which about 15 percent of global maritime trade volume normally passes. Instead, several shipping companies diverted their ships around the Cape of Good Hope. This increased delivery times by 10 days or more on average, hurting companies with limited inventories. Our high-frequency transit estimates indicate that the volume of trade that passed through the Suez Canal dropped by 50 percent year-over-year in the first two months of the year, and the volume of trade transiting around the Cape of Good Hope surged by an estimated 74 percent above last year’s level.",
+      "published_at": "2024-03-07",
+      "publisher": "International Monetary Fund",
+      "relevance": "This official PortWatch-based historical analysis documents the diversion response to Red Sea attacks, while measuring trade volume rather than the Bab el-Mandeb ship-count resolution metric.",
+      "url": "https://www.imf.org/en/Blogs/Articles/2024/03/07/Red-Sea-Attacks-Disrupt-Global-Trade"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.insurancejournal.com/news/international/2026/07/21/878345.htm",
+      "reason": "Contains market prices: quoted war-risk insurance premiums of around 0.75% and 0.3% of ship value. Excluded under the stated market-price rule."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-07-21, inclusive. Publication dates were verified from dated article text, metadata, or search-indexed publisher text; the Times of Israel entry displays 21 July 2026 at 5:26 pm, and the Lloyd’s List Intelligence briefing displays July 21, 2026. The built-in web_fetch tool failed because of provider configuration; source bodies were checked using the agent-reach skill's read-only web channel where available. The IMF historical article was verified through dated search-indexed text because direct reading returned Access Denied. The specified IMF PortWatch page was inspected, but it supplied no verifiable pre-cutoff publication date or frozen July 21 data vintage, so its current contents were excluded as evidence. No verified as-published July 21 Bab el-Mandeb 'Arrivals of Ships' seven-day moving average was obtained. The market-creation date was not supplied, preventing identification of the full eligible observation window. Non-IMF ship counts, tanker observations, trade volumes, and embargo declarations do not themselves establish the resolution threshold. Undated live trackers, post-cutoff publications or revisions, later developments, prediction-market pages, betting odds, and outcome claims were excluded."
+}

@@ -1,0 +1,239 @@
+{
+  "engine": "last30days",
+  "as_of": "2026-10-31T12:19:06Z",
+  "data_range": {
+    "from": "2026-10-01T00:00:00Z",
+    "to_exclusive": "2026-10-31T12:19:06Z",
+    "engine_date_window": [
+      "2026-10-01",
+      "2026-10-31"
+    ],
+    "retained_date_range": [
+      "2026-10-05",
+      "2026-10-26"
+    ],
+    "publication_precision": "day",
+    "observation_time": "2026-10-31T12:24:53.231482+00:00",
+    "observation_limitation": "本次采集晚于AS_OF约6分钟；所留帖最晚10月26日，互动数是采集时观测，不能还原AS_OF时精确互动。"
+  },
+  "posts": [
+    {
+      "angle": "基本面变化",
+      "platform": "reddit",
+      "author": null,
+      "url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+      "published_at": "2026-10-07",
+      "published_at_precision": "day",
+      "observed_at": "2026-10-31T12:24:53.231482+00:00",
+      "engagement": {
+        "score": 507,
+        "num_comments": 216
+      },
+      "quote": "For anyone trading Nvidia (NVDA), this shuts down the argument that AI hardware demand is slowing down.",
+      "quote_type": "post_excerpt",
+      "stance": "发帖人用其转述的客户融资购芯片消息表达对 NVDA 硬件需求的乐观看法；同时质疑客户加杠杆与资金循环。金额及交易真实性未经本流程验证。",
+      "evidence_tier": "T4",
+      "supports": "community_discussion_only",
+      "kind": "post",
+      "raw_item_id": "R4",
+      "limitations": [
+        "原始报告未保留主帖作者",
+        "引述仅代表发帖人的说法"
+      ]
+    },
+    {
+      "angle": "基本面变化",
+      "platform": "hackernews",
+      "author": "JumpCrisscross",
+      "url": "https://news.ycombinator.com/item?id=50236073",
+      "published_at": "2026-10-25",
+      "published_at_precision": "day",
+      "observed_at": "2026-10-31T12:24:53.231482+00:00",
+      "engagement": {
+        "points": 175,
+        "comments": 47
+      },
+      "quote": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+      "quote_type": "title",
+      "stance": "此 HN 分享标题关注 NVIDIA 对盈利增长的贡献；没有抓到足以判断作者多空立场的评论。",
+      "evidence_tier": "T4",
+      "supports": "community_discussion_only",
+      "kind": "post",
+      "raw_item_id": "50236073",
+      "limitations": [
+        "仅标题和互动可用，34%不作为已核实事实"
+      ]
+    },
+    {
+      "angle": "基本面变化",
+      "platform": "hackernews",
+      "author": "gscott",
+      "url": "https://news.ycombinator.com/item?id=50247677",
+      "published_at": "2026-10-26",
+      "published_at_precision": "day",
+      "observed_at": "2026-10-31T12:24:53.231482+00:00",
+      "engagement": {
+        "points": 41,
+        "comments": 23
+      },
+      "quote": "Nvidia discusses $2k-per-GPU annual fee for software",
+      "quote_type": "title",
+      "stance": "此 HN 分享标题关注 NVIDIA 软件收费模式；没有抓到足以判断作者立场的评论。",
+      "evidence_tier": "T4",
+      "supports": "community_discussion_only",
+      "kind": "post",
+      "raw_item_id": "50247677",
+      "limitations": [
+        "仅标题和互动可用，收费金额不作为已核实事实"
+      ]
+    },
+    {
+      "angle": "预期与估值",
+      "platform": "reddit",
+      "author": "KissmySPAC",
+      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peercfy/",
+      "published_at": "2026-10-07",
+      "published_at_precision": "day",
+      "observed_at": "2026-10-31T12:24:53.231482+00:00",
+      "engagement": {
+        "upvotes": 212
+      },
+      "parent_engagement": {
+        "score": 507,
+        "num_comments": 216
+      },
+      "parent_url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+      "quote": "Who cares? We'll just triple the market cap and call it earnings.",
+      "quote_type": "comment_excerpt",
+      "stance": "讽刺用市值上涨代替盈利兑现，表现出对增长叙事和估值的质疑。",
+      "evidence_tier": "T4",
+      "supports": "community_opinion_only",
+      "kind": "comment",
+      "raw_item_id": "R4"
+    },
+    {
+      "angle": "资金与情绪",
+      "platform": "reddit",
+      "author": null,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1wy1qzo/nvda/",
+      "published_at": "2026-10-05",
+      "published_at_precision": "day",
+      "observed_at": "2026-10-31T12:24:53.231482+00:00",
+      "engagement": {
+        "score": 27373,
+        "num_comments": 1007
+      },
+      "quote": "NVDA",
+      "quote_type": "title",
+      "stance": "该 NVDA 主题帖互动较高，只支持“样本内受到关注”；正文和评论缺失，无法判断多空情绪、资金流向或持仓变化。",
+      "evidence_tier": "T4",
+      "supports": "community_discussion_only",
+      "kind": "post",
+      "raw_item_id": "R1",
+      "limitations": [
+        "只有标题与互动数",
+        "原始报告未保留作者",
+        "不得据此宣称实际资金流入流出或看涨看跌"
+      ]
+    },
+    {
+      "angle": "反方观点",
+      "platform": "reddit",
+      "author": "zedder1994",
+      "url": "https://reddit.com/r/stocks/comments/1wztydi/comment/peexhra/",
+      "published_at": "2026-10-07",
+      "published_at_precision": "day",
+      "observed_at": "2026-10-31T12:24:53.231482+00:00",
+      "engagement": {
+        "upvotes": 134
+      },
+      "parent_engagement": {
+        "score": 507,
+        "num_comments": 216
+      },
+      "parent_url": "https://www.reddit.com/r/stocks/comments/1wztydi/spacex_doubling_its_debt_with_40b_nvda_chip_buy/",
+      "quote": "Does R.O.I. mean anything these days?",
+      "quote_type": "comment_excerpt",
+      "stance": "质疑客户购买 NVDA 芯片的资本支出是否具备投资回报；这不是对 NVDA 经营情况的独立事实验证。",
+      "evidence_tier": "T4",
+      "supports": "community_opinion_only",
+      "kind": "comment",
+      "raw_item_id": "R4"
+    }
+  ],
+  "source_status": {
+    "reddit": {
+      "state": "partial",
+      "engine_reported_state": "ok",
+      "returned_items": 2,
+      "detail": "引擎保留2帖；ArcticShift r/wallstreetbets 子请求超时、listing deadline；不代表其余版块无讨论。"
+    },
+    "hackernews": {
+      "state": "ok",
+      "returned_items": 6
+    },
+    "x": {
+      "state": "skipped-unconfigured",
+      "detail": "diagnose未列为available；bird未认证，无可用X后端；未定向作者。"
+    },
+    "xiaohongshu": {
+      "state": "unavailable",
+      "detail": "diagnose未列为available_sources，未执行；不能判断是否有讨论。"
+    },
+    "youtube": {
+      "state": "not_requested",
+      "detail": "diagnose可用，本次有限社区scope排除。"
+    },
+    "polymarket": {
+      "state": "not_requested",
+      "detail": "本次有限社区scope排除。"
+    },
+    "github": {
+      "state": "not_requested",
+      "detail": "本次有限社区scope排除。"
+    }
+  },
+  "new_authors": [],
+  "new_author_reason": "没有作者具有至少两篇可确认直接相关的独立帖子且相关比例达到50%；同帖两条主要讨论SpaceX的评论不作为NVDA作者入库证据。",
+  "angle_coverage": {
+    "基本面变化": "有限，仅发帖人观点和两个分享标题",
+    "催化剂日历": "insufficient_evidence",
+    "预期与估值": "同一Reddit线程的讽刺评论",
+    "资金与情绪": "仅注意力指标，无可判定方向",
+    "反方观点": "同一Reddit线程的ROI质疑"
+  },
+  "limitations": [
+    "T4仅支持观点、讨论与注意力，不支持企业事实或真实资金流断言。",
+    "quick将计划裁成一个primary子查询；Blackwell earnings、valuation competition、selloff AI spending和中文英伟达下跌的独立查询未实际运行。",
+    "8条原始项中保留6个主帖指标、分享标题或评论证据行；不是6个独立讨论线程，独立主帖为4。",
+    "排除两条涉及人物指控的新闻线程，不据标题放大未经核实指控。",
+    "GPU-unlock线程虽直接涉及NVIDIA，但缺少所抓评论日期与票数，未用于定量意见排序；Nemotron分享缺少投资角度，未保留。",
+    "未使用早年材料；未追加搜索。"
+  ],
+  "execution": {
+    "engine_research_runs": 1,
+    "diagnose_runs": 1,
+    "fallback_websearch_calls": 0,
+    "total_websearch_calls": 0,
+    "browser_calls": 0,
+    "delegations": 0,
+    "diagnose_exit_code": 0,
+    "diagnose_elapsed_seconds": 5.491,
+    "engine_exit_code": 0,
+    "engine_elapsed_seconds": 85.694,
+    "total_engine_seconds": 91.185,
+    "native_search_signal": true,
+    "native_search_note": "LAST30DAYS_NATIVE_SEARCH=1表明宿主具备搜索能力并抑制引擎通用web回退，本次实际宿主WebSearch调用为0。",
+    "plan_path": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/plan.json",
+    "diagnose_result_path": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/raw/diagnose/result.json",
+    "engine_result_path": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/raw/engine/result.json",
+    "raw_report_path": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/config/last-report.json",
+    "stdout_path": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/raw/engine/stdout.txt",
+    "stderr_path": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/raw/engine/stderr.txt"
+  },
+  "write_scope": {
+    "agent_and_engine_outputs": "均在指定community目录下；脚本与raw分目录，HOME/XDG/TMP/配置重定向，Python -I -B，未写报告md。",
+    "host_tool_exception": "一次过大的Bash输出被宿主工具自动持久化到指定目录外；非引擎输出路径配置或主动文件写入。",
+    "host_auto_persisted_path": "/Users/frankzhang/.claude/projects/-Users-frankzhang-Desktop-----/a194af10-8fc6-454a-b2d6-664b833e8a80/tool-results/bddanj9o2.txt"
+  }
+}

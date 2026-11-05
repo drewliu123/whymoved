@@ -1,0 +1,44 @@
+{
+ "qid": "Q105",
+ "question": "Will a player representing Argentina be the top goalscorer at the 2026 FIFA World Cup?",
+ "rules": "This market resolves to the nation represented by the player who finishes as the top goalscorer across all main tournament rounds of the 2026 FIFA World Cup.\n\nIn the event of a tie, this market will resolve according to the official leader as determined by FIFA rules. If multiple leaders are announced then this market will resolve to the nation represented by the player who scored fewer goals from penalty kicks. If a tie still persists, this market will resolve to the nationality of the player whose listed last name comes first alphabetically.\n\nIf the 2026 FIFA World Cup is cancelled, postponed after August 2, 2026, 11:59 PM ET, or there is no leader declared within that timeframe, the corresponding market will resolve to “Other”.\n\nThe resolution source for this market will be official information from FIFA; however, a consensus of credible reporting may also be used. ",
+ "as_of": "2026-07-06",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "FIFA",
+   "published_at": "2026-07-04",
+   "excerpt": "Argentina beat Cabo Verde 3-2 after extra time and will face Egypt in the last 16. Lionel Messi scored in the 29th minute, extending his scoring streak to eight successive World Cup matches. Argentina's other goals were credited to Lisandro Martinez and a Diney Borges own goal."
+  },
+  {
+   "id": "E2",
+   "publisher": "FIFA",
+   "published_at": "2026-07-04",
+   "excerpt": "Kylian Mbappe scored his seventh goal of the FIFA World Cup 2026 as France overcame Paraguay to set up a quarter-final meeting with Morocco. Mbappe struck a second-half penalty, moving level with Lionel Messi on goals but leading on assists in the race for the adidas Golden Boot."
+  },
+  {
+   "id": "E3",
+   "publisher": "The Associated Press",
+   "published_at": "2026-07-03",
+   "excerpt": "Messi's goal against Cape Verde was the 20th of his World Cup career and extended his scoring streak to eight consecutive World Cup games. After the match he appeared with a large bump above his right eye following an apparent collision with a Cape Verde player. He said, in comments translated from Spanish, \"It hurts a little but I'm good.\""
+  },
+  {
+   "id": "E4",
+   "publisher": "The Guardian",
+   "published_at": "2026-07-05",
+   "excerpt": "Haaland's second goal against Brazil brought his tournament total to seven, level at the top of the Golden Boot standings."
+  },
+  {
+   "id": "E5",
+   "publisher": "Al Jazeera",
+   "published_at": "2026-07-06",
+   "excerpt": "Argentina face Egypt in the round of 16 in Atlanta on July 7 at noon local time. The winners face Switzerland or Colombia."
+  },
+  {
+   "id": "E6",
+   "publisher": "Qatar News Agency",
+   "published_at": "2022-12-18",
+   "excerpt": "Kylian Mbappe won the 2022 World Cup Golden Boot after scoring eight goals, including three in the final. Lionel Messi finished second with seven goals."
+  }
+ ]
+}

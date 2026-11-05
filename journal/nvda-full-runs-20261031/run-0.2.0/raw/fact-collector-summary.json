@@ -1,0 +1,14 @@
+{
+  "agent": "touyan:fact-collector",
+  "web_calls": 5,
+  "result": "unverified candidates only from WebFetch; parent subsequently verified newsroom/media raw bodies",
+  "candidate_urls": [
+    "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+    "https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html"
+  ],
+  "limitations": [
+    "No verified whole-month cause",
+    "No official next-earnings date verified",
+    "Do not count Reuters syndications independently"
+  ]
+}

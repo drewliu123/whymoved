@@ -1,0 +1,240 @@
+{
+  "schema_version": 2,
+  "scope": "本地研究资料生成，无产品代码修改，无Git或外部发布操作",
+  "question": "截至2026-11-01，英伟达近期为什么大跌？",
+  "content_window": "2026-10-02至2026-11-01美国东部日期；8月26日官方财报只作窗口外背景",
+  "timestamp_note": "as_of使用UTC冻结时刻，可能显示11月2日；所研究的市场窗口仍截至美国东部11月1日。retrieved_at为读取/接收工具材料后冻结本地摘录的时刻，不冒充HTTP Date；未将11月2日新闻纳入证据。",
+  "queries": [
+    {
+      "query": "site:investor.nvidia.com 2026 Second Quarter Fiscal 2027 108",
+      "source": "fact-collector WebSearch",
+      "status": "no_results",
+      "followup": "通过已知官方财报目录进入其真实HTML链接",
+      "candidate_path": "sources.json#S14"
+    },
+    {
+      "query": "October 30 2026 Philadelphia semiconductor index 7.2 Reuters SOX",
+      "source": "fact-collector WebSearch",
+      "status": "ok",
+      "candidate_path": "sources.json#S11"
+    },
+    {
+      "query": "October 2026 Amazon Intel third quarter 2026 results investor relations cash flow",
+      "source": "fact-collector WebSearch",
+      "status": "ok",
+      "candidate_path": "official-supplement.json"
+    }
+  ],
+  "retrieval": {
+    "fact_collection": "独立子agent：3次WebSearch、5页WebFetch；主研究者另复读Amazon和Intel原始稿核实关键说法",
+    "community": "复用同一会话131.5秒Last30Days原始运行，不重新抓取；缓存Report身份与topic核对后导出",
+    "engine_version": "3.30.0",
+    "engine_generated_at": "2026-11-02T01:46:54.954226+00:00",
+    "engine_command_evidence": "/Users/frankzhang/Desktop/投研助手/evidence/last30days-nvda-20261101.91p9ce/query-plan.json",
+    "engine_stdout": "/Users/frankzhang/Desktop/投研助手/evidence/last30days-nvda-20261101.91p9ce/engine-output.md",
+    "engine_stderr": "/Users/frankzhang/Desktop/投研助手/evidence/last30days-nvda-20261101.91p9ce/engine-stderr.log",
+    "engine_exit_code": 0,
+    "raw_export": "last30days-raw.json",
+    "raw_envelope": "last30days-cache-envelope.json",
+    "import_output": "community-candidates.json",
+    "imported_candidates": 46,
+    "import_exit_code": 0,
+    "raw_hash_location": "sources.json.retrieval",
+    "selection": "所有社区候选保留，未完成原文独立取证者不选入主张；官方宣传和GPU技术问题不作为股价归因证据",
+    "engine_command": [
+      "/Users/frankzhang/.local/bin/python3.12",
+      "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+      "英伟达大跌 NVIDIA NVDA stock selloff",
+      "--research-only",
+      "--emit=compact",
+      "--plan",
+      "<same-run temporary plan; retained copy in engine_command_evidence>",
+      "--days=30",
+      "--as-of=2026-11-01",
+      "--official-site=nvidia.com",
+      "--x-handle=NVIDIA",
+      "--subreddits=stocks,investing,wallstreetbets",
+      "--dedicated-subreddits=NVDA_Stock,NvidiaStock",
+      "--tiktok-hashtags=nvidia,nvda,stocks",
+      "--save-dir=/Users/frankzhang/Documents/Last30Days",
+      "--save-suffix=nvda-20261101-91p9ce"
+    ],
+    "engine_reuse_note": "原运行emit=compact；本轮从该次last-report缓存导出完整Report，保留原始结构及hash后按raw导入，不将手写摘要当raw。该次运行未重新执行。"
+  },
+  "source_outcomes": {
+    "reddit": "ok，返回16条；主研究者直接WebFetch原帖不可用，未外推市场情绪",
+    "x": "ok，返回16条；官方宣传占据原始高排名",
+    "hackernews": "ok，返回2条，未用于主张",
+    "github": "ok，返回12条，技术问题未用于主张",
+    "polymarket": "no_results",
+    "youtube": "rate_limited，反机器人确认限制",
+    "stocktwits": "error，未解析出symbol"
+  },
+  "execution": {
+    "commands_and_exit_codes": "validation-execution.json",
+    "plan_validation_initial_exit": 0,
+    "initial_claim_validation": "15条通过，但官方增补脚本首次因多余右括号SyntaxError退出1，该次未产生增补结果；修复后增补退出0，21条主张重新校验通过",
+    "render": "审查R1修正后21条主张重新校验通过；HTML/Markdown已同源重新渲染，摘录复核完成且无剩余阻塞项；归档命令返回结果和manifest另存archive-result.json及归档目录，成功与否以实际退出码和输出为准",
+    "tests": "本任务为研究资料生成；未运行应用单元、集成或E2E测试，不声称其通过",
+    "records": [
+      {
+        "command": [
+          "/Users/frankzhang/.local/bin/python3.12",
+          "-I",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/enrich_bundle.py"
+        ],
+        "exit_code": 0,
+        "log": "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/official-enrichment.log"
+      },
+      {
+        "command": [
+          "python3",
+          "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.3.1/scripts/sources.py",
+          "validate",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/sources-before-selection.json"
+        ],
+        "exit_code": 0,
+        "log": "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/sources-validation.log"
+      },
+      {
+        "command": [
+          "python3",
+          "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.3.1/scripts/sources.py",
+          "select",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/sources-before-selection.json",
+          "--out",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/selected-sources.json"
+        ],
+        "exit_code": 0,
+        "log": "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/source-selection.log"
+      },
+      {
+        "command": [
+          "python3",
+          "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.3.1/scripts/check_claims.py",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/claims.json",
+          "--sources",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/sources.json",
+          "--json"
+        ],
+        "exit_code": 0,
+        "log": "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/claims-validation.log"
+      },
+      {
+        "command": [
+          "python3",
+          "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.3.1/scripts/research_plan.py",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/plan.json"
+        ],
+        "exit_code": 0,
+        "log": "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/final-plan-validation.log"
+      },
+      {
+        "command": [
+          "python3",
+          "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.3.1/scripts/render_report.py",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/report.json",
+          "--claims",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/claims.json",
+          "--sources",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/sources.json",
+          "--out-dir",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/output"
+        ],
+        "exit_code": 0,
+        "log": "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/render.log"
+      },
+      {
+        "command": [
+          "python3",
+          "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.3.1/scripts/check_claims.py",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/claims.json",
+          "--sources",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/sources.json",
+          "--json"
+        ],
+        "exit_code": 0,
+        "log": "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/claims-after-review.log"
+      },
+      {
+        "command": [
+          "python3",
+          "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.3.1/scripts/render_report.py",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/report.json",
+          "--claims",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/claims.json",
+          "--sources",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/sources.json",
+          "--out-dir",
+          "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/output-reviewed"
+        ],
+        "exit_code": 0,
+        "log": "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/render-after-review.log"
+      }
+    ],
+    "archive_initial_failure": {
+      "exit_code": 1,
+      "message": "calculations document requires schema_version 2 and matching as_of",
+      "log": "archive-attempt-1-stderr.log",
+      "fix": "给原六项计算添加schema_version和与report一致的as_of；计算内容与report.calculations逐项相等"
+    },
+    "archive_retry": {
+      "command": [
+        "python3",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.3.1/scripts/research_run.py",
+        "archive",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/plan.json",
+        "--audit",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/audit.json",
+        "--calculations",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/nvda-20261101-k6rs_c1_/calculations.json"
+      ],
+      "result_file": "archive-result.json",
+      "stderr": "archive-stderr.log",
+      "exit_record": "archive-exit.json"
+    }
+  },
+  "review": {
+    "status": "completed; R1 addressed; no remaining blocking findings in selected-excerpt review",
+    "followup_result": "复核15条已选摘录及修订后的C12、C14、finding和watch，未发现新的阻塞项；六项计算及TTM单位区分未见错误。复核基于摘录与locator，不等同完整网页逐段独立复核。",
+    "agent": "independent touyan:red-team",
+    "findings": [
+      {
+        "id": "R1",
+        "target": "C14与CoreWeave finding",
+        "severity": "material",
+        "description": "单只存量债券收益率水平与整体资本成本下降方向不能直接认定矛盾"
+      }
+    ],
+    "dispositions": [
+      {
+        "finding": "R1",
+        "action": "accepted",
+        "change": "C14与finding撤回矛盾，改为口径未对齐；increment从contradiction改connection；watch改为同口径融资条件"
+      }
+    ],
+    "limitations": [
+      "首轮审查工具无法筛选完整sources；后续已读取15条已选来源精简快照，完成摘录支持度复核",
+      "审查者未独立重开Reuters完整收盘稿及Amazon完整表格上下文；本轮独立审查不声称完整网页逐段核验，主研究者已另核实Amazon关键表格和Intel原稿",
+      "审查者曾推定不同Amazon URL而404，已撤回该失败对实际证据可用性的任何暗示；实际证据URL含Amazon-com而非Amazon.com"
+    ]
+  },
+  "limitations": [
+    "校验器只检查契约与引用，不证明原文语义或因果",
+    "价格站点底层数据供应商独立性未知，不认定为两个独立origin",
+    "未获得同期分析师一致预期、完整阶段行业回报、订单取消与客户付款恶化证据",
+    "SOX官方数据行无精确close时戳；信用债券行情保留媒体报道属性"
+  ],
+  "input_fingerprints": {
+    "last30days-raw.json": "66e1cf49368e64eee5a69131380ced27eb13c211284af1641b830abd010b66d5",
+    "last30days-cache-envelope.json": "57ee0083cf6eb8281be1fb9fbcbf5c7e6024efa128d6915b32c7beb000140d58",
+    "community-candidates.json": "24c56624a2e092d6436da334af0ab1eb519d3738585ff4ca569fe72c8a31f4d4"
+  }
+}

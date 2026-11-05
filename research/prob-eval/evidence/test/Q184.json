@@ -1,0 +1,36 @@
+{
+  "qid": "Q184",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "84% of respondents believe that gold will hold a (moderately or significantly) higher share of total reserves five years from now, up from 76% last year. In addition, 45% of respondents thought that their own institution’s gold reserves would rise over the next year, broadly in line with last year’s finding (43%). Most respondents did not expect their gold reserves to change in the next 12 months.",
+      "published_at": "2026-06-16",
+      "publisher": "World Gold Council",
+      "relevance": "Provides official-sector survey evidence of potential underlying demand support, while its longer horizon limits its usefulness for predicting a particular July intraday low.",
+      "url": "https://www.gold.org/goldhub/research/central-bank-gold-reserves-survey-2026/perspectives-on-gold-reserves"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.marketscreener.com/news/gold-set-for-biggest-weekly-drop-since-early-june-on-inflation-rate-hike-worries-ce7f51dadb80f22d",
+      "reason": "Contains market prices: the excerpt quotes spot gold at $4,011.29 per ounce."
+    },
+    {
+      "url": "https://uk.marketscreener.com/news/gold-falls-as-mideast-escalation-dims-hopes-of-easing-inflation-ce7f5ed2df8df72c",
+      "reason": "Contains market prices: the excerpt quotes spot gold at $3,984.64 and gold futures at $3,992.10."
+    },
+    {
+      "url": "https://uk.marketscreener.com/news/gold-slips-as-oil-rally-keeps-inflation-rate-outlook-on-investors-radar-ce7f5edddf8bf724",
+      "reason": "Contains market prices: the excerpt quotes spot gold at $4,057.34 per ounce."
+    },
+    {
+      "url": "https://www.marketscreener.com/news/gold-falls-as-higher-treasury-yields-fed-rate-hike-bets-weigh-ce7f5fddd188f420",
+      "reason": "Contains market prices: the excerpt quotes spot gold at $4,010.11 and the previous session's low of $3,942.99."
+    },
+    {
+      "url": "https://www.gold.org/goldhub/research/gold-mid-year-outlook-2026",
+      "reason": "Contains a market-price reference and projected trading range: the excerpt describes gold trading ±5% around US$4,100/oz."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-07-17. Included six distinct dated articles or reports published by the cutoff; the Reuters updates used are also dated on or before the cutoff. Excluded prediction-market pages, betting odds, later retrospective reports, full-month historical tables, undated pages and live quote widgets. Gold quotations are underlying-asset observations, not prediction-market contract prices. Publication dates and excerpts were verified from web_search indexed source text: web_fetch failed because of a provider-configuration error, and the requested agent-reach fallback returned RATE_LIMITED, so full-page retrieval could not be completed. These sources do not verify Pyth one-minute candle extrema, market creation time, feed adjustments or applicable special-session hours; they therefore cannot establish the market's resolution. No post-cutoff developments or final outcome are included."
+}

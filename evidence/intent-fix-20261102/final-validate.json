@@ -1,0 +1,10 @@
+{
+  "command": [
+    "claude",
+    "plugin",
+    "validate",
+    "--json",
+    "/Users/frankzhang/Desktop/\u6295\u7814\u52a9\u624b/.claude-plugin/plugin.json"
+  ],
+  "exit_code": 0
+}

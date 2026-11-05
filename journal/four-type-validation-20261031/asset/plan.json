@@ -1,0 +1,17 @@
+{
+  "type": "asset",
+  "entity": "NVDA",
+  "mode": "frozen-evidence development case",
+  "as_of": "2026-10-31T17:14:08Z",
+  "must_answer": [
+    "实际变化",
+    "业务到利润/现金机制",
+    "候选解释",
+    "预期差缺口",
+    "下一验证"
+  ],
+  "inputs": [
+    "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/claims.json",
+    "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/evidence/price-snapshot.json"
+  ]
+}

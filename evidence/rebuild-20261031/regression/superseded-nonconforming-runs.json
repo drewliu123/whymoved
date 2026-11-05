@@ -1,0 +1,13 @@
+{
+  "status": "superseded_nonconforming",
+  "path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/regression/sandbox-home/journal/runs",
+  "run_ids": [
+    "R20261031T183410Z-b988fc4b6895",
+    "R20261031T183410Z-4266c8da97ad",
+    "R20261031T183410Z-c819228d8f40",
+    "R20261031T183409Z-adebe32fad6e",
+    "R20261031T183409Z-c65c23fddada",
+    "R20261031T183410Z-c3bd0f805fdc"
+  ],
+  "reason": "Schema 1 claims archives and updates are nonconforming to the new strict archive gate; preserve only as evidence of the old gate behavior."
+}

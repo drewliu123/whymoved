@@ -1,0 +1,288 @@
+{
+  "schema_version": 2,
+  "title": "CRCL股价波动：行业共振与利率敏感的经营结构",
+  "question": "CRCL近期为什么剧烈波动，经营变化还是行业共振？",
+  "type": "asset",
+  "task": "变化解释",
+  "as_of": "2026-11-02T03:31:35.565610+00:00",
+  "answer": {
+    "text": "CRCL最近一个月的波动，首先呈现加密相关股共同承压的特征。Circle的利率敏感经营结构解释了股价为何容易受盈利预期变化影响，但Q2数据不能证明10月已经发生盈利下修。安全事件报道提供月底抛售的候选催化；缺少事件首发时刻、完整事前共识与资金流，无法把跌幅精确分摊给各原因，也不能仅凭跌幅认定便宜。",
+    "claim_ids": [
+      "C_sector",
+      "C_mechanism",
+      "C_supply"
+    ]
+  },
+  "findings": [
+    {
+      "title": "先看实际表现：月底冲击决定本月净跌幅",
+      "text": "9月30日至10月30日价格收益：CRCL -11.72%、COIN -23.00%、SPY -0.91%；10月30日单日分别-9.31%、-10.62%、-1.77%。 CRCL 10月21日收盘89.71美元至10月30日72.54美元回撤19.14%；9月30日至10月29日只下跌2.65%，说明月底冲击主导本月净跌幅，但不能解释月内每次波动。",
+      "claim_ids": [
+        "C_returns",
+        "C_drawdown"
+      ],
+      "why_it_matters": "全月净跌幅、月内回撤与单日冲击是不同问题。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看CRCL自身跌幅",
+        "detail": "补入同月COIN/SPY及月底前基准，避免把行业压力全归为公司问题。"
+      }
+    },
+    {
+      "title": "业务仍增长，但余额到收入的传导受利率拖累",
+      "text": "Q2平均USDC规模同比增长25%，储备收益只增长5%；总收入增长7%，调整后EBITDA增长8%。期末USDC增长19%，链上交易额增长151%。公司还在增长，但交易额不能直接当作收入增长率；储备收益率下降66基点，是已披露的传导阻力。",
+      "claim_ids": [
+        "C_scale",
+        "C_rev",
+        "C_rate",
+        "C_ebitda",
+        "C_mechanism"
+      ],
+      "why_it_matters": "股价依赖未来利润，而不是单纯稳定币叙事或链上交易次数。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "USDC规模或交易额增长即意味着同幅收入增长",
+        "detail": "以同季平均余额、收益率和储备收入连接量价机制。"
+      }
+    },
+    {
+      "title": "分销很重要，但不能把分销占比高写成持续恶化",
+      "text": "分销成本是商业模式的重要分配项，不能据上半年59%费用占比就断言本季恶化；Q2分销、交易及其他成本合计仅增长1%，低于收入增长7%；这不是纯分销费用的单项增幅。储备收入约占总收入95%，新业务增长尚不足以消除利率敏感性。 公司上半年说明每1美元收入约形成7美分净利润。该比例说明成本和留存值得观察，不是未来利润率预测。",
+      "claim_ids": [
+        "C_retention",
+        "C_net"
+      ],
+      "why_it_matters": "扩张渠道能同时带来规模和分成成本，需要看净留存结果。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "高分销成本就是本季利润率恶化",
+        "detail": "将上半年商业模式与本季度同比成本增长区分。"
+      }
+    },
+    {
+      "title": "安全事件与机构观点要分别对待",
+      "text": "AP报道Circle参与冻结与Binance安全事件相关资产。冻结金额不能当作Circle自身损失。瑞穗下调目标价，反映对AI代理分流资金的担忧；尚不能把机构情景当作已经发生的客户流失。同期下跌支持共同风险解释，但不能测得安全事件贡献了多少跌幅。",
+      "claim_ids": [
+        "C_ap",
+        "C_mizuho",
+        "C_sector",
+        "C_supply"
+      ],
+      "why_it_matters": "避免把执法动作误读成资产损失，把情景推演误读成经营事实。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "新闻与股价下跌同时出现",
+        "detail": "明确报道、机构观点、公司损失和因果贡献之间的区别。"
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "公司独有盈利下修仍需Q3验证",
+      "text": "Q2是已披露经营基准，不能直接证明10月经营状况；净利润同比受IPO股权激励基数影响，不能当成持续盈利大幅加速。",
+      "claim_ids": [
+        "C_profit",
+        "C_date",
+        "C_watch"
+      ]
+    }
+  ],
+  "watch": [
+    {
+      "signal": "11月4日Q3财报及美国东部上午8点业绩直播",
+      "meaning": "下一次应配对核查Q3平均USDC、储备收益率、扣除分销成本后的收入、调整后费用及新业务收入。规模回升且净留存改善会削弱经营压力解释；行业企稳而上述指标继续走弱会加强公司特有压力解释。",
+      "claim_ids": [
+        "C_watch",
+        "C_date"
+      ]
+    }
+  ],
+  "limitations": [
+    {
+      "text": "未取得同口径完整事前共识与历史修订，不使用超/低预期归因；未建立反向估值，无法认定当前价格已充分反映风险或便宜。",
+      "material": true,
+      "claim_ids": [
+        "C_sector"
+      ]
+    },
+    {
+      "text": "COIN与USDC存在商业关联且有自身公司事件；同涨同跌只支持共振解释，不构成干净因果控制组。本轮未运行Last30Days，不代表社区无讨论。",
+      "material": false,
+      "claim_ids": [
+        "C_sector",
+        "C_econ"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "同期价格比较",
+      "columns": [
+        "证券",
+        "9月30日收盘 USD",
+        "10月30日收盘 USD",
+        "10月价格收益 %",
+        "10月30日单日 %"
+      ],
+      "rows": [
+        [
+          "CRCL",
+          82.17,
+          72.54,
+          -11.72,
+          -9.31
+        ],
+        [
+          "COIN",
+          186.41,
+          143.54,
+          -23.0,
+          -10.62
+        ],
+        [
+          "SPY",
+          762.63,
+          755.72,
+          -0.91,
+          -1.77
+        ]
+      ],
+      "claim_ids": [
+        "C_returns"
+      ],
+      "note": "收盘到收盘价格收益，非总回报。数据为S&P Global经StockAnalysis展示。"
+    }
+  ],
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "2026-09-30与10-30同期收盘；COIN与SPY为参照，Q2财报为经营基准",
+    "price_relevance": true,
+    "mechanism_chain": [
+      "USDC平均余额与储备利率",
+      "储备收益与分销成本",
+      "净留存利润预期",
+      "股价"
+    ],
+    "baseline_claim_ids": [
+      "crcl_start",
+      "coin_start",
+      "spy_start",
+      "C_rev"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "Circle经营增长与利润留存压力"
+      },
+      {
+        "id": "H2",
+        "explanation": "加密行业安全事件与市场风险偏好共振"
+      },
+      {
+        "id": "H3",
+        "explanation": "估值叙事及股票供给放大价格反应"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "CRCL在公司坏消息后明显独立走弱"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "加密相关股同时下跌并强于大盘跌幅"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "crcl_end",
+          "coin_end",
+          "spy_end",
+          "C_returns",
+          "C_ap"
+        ],
+        "interpretation": "同期相对表现支持共同压力；COIN并非纯粹控制组，无法估算归因份额。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [],
+        "next_observation": "Q3财报及事件后同行相对表现",
+        "by": "2026-11-04及后续交易日",
+        "supports_if": "规模和净留存持续走弱且显著弱于同业，支持公司特有压力",
+        "weakens_if": "规模与净留存恢复且共同抛售消退，削弱经营压力解释"
+      },
+      {
+        "id": "T2",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "规模增加但单位收益下降或留存增长落后"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "经营增长稳定而价格主要受叙事和交易供给冲击"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "C_scale",
+          "C_rate",
+          "C_cost",
+          "C_ebitda"
+        ],
+        "interpretation": "Q2规模到储备收益的传导受利率拖累，仅支持H1的历史机制；收入与调整后利润仍增长，不能证明10月盈利下修或全面恶化。",
+        "supports": [
+          "H1"
+        ],
+        "weakens": [],
+        "next_observation": "Q3财报及事件后同行相对表现",
+        "by": "2026-11-04及后续交易日",
+        "supports_if": "规模和净留存持续走弱且显著弱于同业，支持公司特有压力",
+        "weakens_if": "规模与净留存恢复且共同抛售消退，削弱经营压力解释"
+      },
+      {
+        "id": "T3",
+        "outcomes": [
+          {
+            "hypothesis_id": "H3",
+            "prediction": "存在与价格转折匹配的新增供给或明确估值修订"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "主要新消息为共同风险事件，没有足够公司独立证据"
+          }
+        ],
+        "status": "missing",
+        "claim_ids": [],
+        "interpretation": "已取得机构修订观点，但缺实际流通供给及资金流证据，不能裁定叙事或供给主导。",
+        "supports": [],
+        "weakens": [],
+        "next_observation": "Q3财报及事件后同行相对表现",
+        "by": "2026-11-04及后续交易日",
+        "supports_if": "规模和净留存持续走弱且显著弱于同业，支持公司特有压力",
+        "weakens_if": "规模与净留存恢复且共同抛售消退，削弱经营压力解释",
+        "gap_reason": "未获得完整SEC减持/新增股票供给及期权持仓证据；机构转述不等于实际资金流。"
+      }
+    ],
+    "conclusion": "CRCL最近一个月的波动，首先呈现加密相关股共同承压的特征。Circle的利率敏感经营结构解释了股价为何容易受盈利预期变化影响，但Q2数据不能证明10月已经发生盈利下修。安全事件报道提供月底抛售的候选催化；缺少事件首发时刻、完整事前共识与资金流，无法把跌幅精确分摊给各原因，也不能仅凭跌幅认定便宜。",
+    "conclusion_claim_ids": [
+      "C_sector",
+      "C_mechanism",
+      "C_supply"
+    ],
+    "model_status": "not_applicable",
+    "model_reason": "主任务是同期变化解释，本轮不做经营预测或目标价；价格收益按公开收盘算术计算，不冒充固定经济模型。",
+    "models": [],
+    "market": {
+      "status": "missing",
+      "reason": "已取得价格，但缺同口径现金流估值输入、事前盈利预期完整样本及历史修订，无法识别价格隐含增长要求。",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

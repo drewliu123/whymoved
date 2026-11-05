@@ -1,0 +1,50 @@
+{
+  "qid": "Q146",
+  "as_of": "2026-08-19",
+  "kept": [
+    {
+      "excerpt": "Real Madrid C. F. and Camavinga have reached an agreement on a contract extension which ties the player to the club until 30 June 2029.",
+      "published_at": "2023-11-07",
+      "publisher": "Real Madrid C. F.",
+      "relevance": "The official contract extension establishes that Camavinga remains contractually tied to Real Madrid beyond the resolution deadline, so a departure would require a subsequent transaction or contract termination.",
+      "url": "https://www.realmadrid.com/en-US/news/club/announcements/official-announcement-camavinga-extends-contract-until-2029-07-11-2023"
+    },
+    {
+      "excerpt": "El Real Madrid no encuentra salida a Eduardo Camavinga, a pesar de que José Mourinho no contaba con él; ningún club se ha mostrado dispuesto a pagar una cifra que se acerque a lo que pretende el Real Madrid. Mourinho no contaba con él pero el jugador francés se ha negado a marcharse cedido al Manchester United.",
+      "published_at": "2026-08-18",
+      "publisher": "The Objective — Eduardo Segovia",
+      "relevance": "This report close to the cutoff identifies both an unmet asking price and the player's reported refusal of a Manchester United loan as obstacles to a departure.",
+      "url": "https://theobjective.com/deportes/futbol/2026-08-18/madrid-camavinga-rodri/"
+    },
+    {
+      "excerpt": "The Athletic reports that Madrid and Mourinho remain open to Eduardo Camavinga and Raúl Asencio leaving this summer. There are no concrete moves for either player at this stage.",
+      "published_at": "2026-08-18",
+      "publisher": "MadridXtra",
+      "relevance": "This secondary account of The Athletic's reporting distinguishes willingness to sell from the absence of a concrete transfer shortly before the cutoff.",
+      "url": "https://madridxtra.com/articles/real-madrid-sale-before-another-signing-camavinga-asencio"
+    },
+    {
+      "excerpt": "El ex del Rennes es uno de los nombres que encabezan la operación salida en el Real Madrid, pero por el momento no está dispuesto a escuchar ofertas y su intención es la de seguir en el Santiago Bernabéu hasta que expire su contrato en 2029.",
+      "published_at": "2026-08-09",
+      "publisher": "Mundo Deportivo",
+      "relevance": "The report describes the player's desire to remain despite the club considering him a departure candidate, a key constraint on completing a transfer.",
+      "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260809/1004214681/camavinga-no-despeja-dudas-real-madrid.html?facet=amp"
+    },
+    {
+      "excerpt": "Real Madrid midfielder Eduardo Camavinga is working hard during the team’s preseason stage and is not even considering a departure from the Spanish capital even though the club would like to part ways with him if a good offer comes their way, sources told Managing Madrid. Real Madrid have not received much interest for him and that’s the main reason why the French player will likely stay.",
+      "published_at": "2026-07-23",
+      "publisher": "Managing Madrid — Lucas Navarrete",
+      "relevance": "This specialist outlet's attributed reporting provides earlier evidence of the player's resistance to leaving and limited buyer interest.",
+      "url": "https://www.managingmadrid.com/110357/camavinga-real-madrid-rumors-news-2026"
+    },
+    {
+      "excerpt": "According to the Daily Mail, Real Madrid could allow Eduardo Camavinga to leave the club this summer amid reported interest from United and rivals Manchester City.",
+      "published_at": "2026-07-16",
+      "publisher": "FourFourTwo",
+      "relevance": "This dated report identifies Manchester United and Manchester City as reported potential destinations while describing a possible departure rather than an agreed transfer.",
+      "url": "https://www.fourfourtwo.com/transfer/manchester-united-target-eduardo-camavinga-could-leave-real-madrid-this-summer-report"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-08-19. All included items have explicit calendar dates visible in web_search extracts and fall on or before the cutoff; the Mundo Deportivo extract labels its date as an update on 2026-08-09 at 22:33 CEST, and The Objective shows publication and update on 2026-08-18. Excerpts preserve source wording and attribution; transfer claims are reported claims rather than independently established facts. The official extension is the contractual anchor, while the recent articles cover willingness to sell, player preference, buyer interest and transaction obstacles. MadridXtra explicitly summarizes The Athletic and is not independent confirmation of that underlying reporting. web_fetch failed because of provider configuration, and the requested agent-reach web-read fallback returned RATE_LIMITED; verification therefore relies on dated search-index extracts rather than successfully retrieved full pages or archived snapshots. Later-dated material, undated live profiles, prediction-market pages, betting pages, odds and market prices were excluded. No post-cutoff developments are included."
+}

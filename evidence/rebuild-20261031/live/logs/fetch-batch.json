@@ -1,0 +1,72 @@
+[
+  {
+    "name": "official-call",
+    "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+    "retrieved_at": "2026-10-31T18:33:10.930574+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 1.942
+  },
+  {
+    "name": "official-release",
+    "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast",
+    "retrieved_at": "2026-10-31T18:33:10.930522+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 2.533
+  },
+  {
+    "name": "official-annual",
+    "url": "https://www.microsoft.com/investor/reports/ar25/",
+    "retrieved_at": "2026-10-31T18:33:10.930200+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://www.microsoft.com/investor/reports/ar25/",
+    "content_type": "text/html",
+    "elapsed_seconds": 2.465
+  },
+  {
+    "name": "geekwire",
+    "url": "https://www.geekwire.com/2025/microsoft-plans-record-30b-in-quarterly-capital-spending-to-meet-surging-ai-demand/",
+    "retrieved_at": "2026-10-31T18:33:10.930618+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://www.geekwire.com/2025/microsoft-plans-record-30b-in-quarterly-capital-spending-to-meet-surging-ai-demand/",
+    "content_type": "text/html; charset=UTF-8",
+    "elapsed_seconds": 1.95
+  },
+  {
+    "name": "techradar",
+    "url": "https://www.techradar.com/pro/microsoft-says-it-will-spend-billions-this-years-as-ai-moves-pay-off",
+    "retrieved_at": "2026-10-31T18:33:10.930784+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://www.techradar.com/pro/microsoft-says-it-will-spend-billions-this-years-as-ai-moves-pay-off",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 2.546
+  },
+  {
+    "name": "hn-leases-search",
+    "url": "https://hn.algolia.com/api/v1/search?query=finance+leases&tags=comment&hitsPerPage=30",
+    "retrieved_at": "2026-10-31T18:33:10.930859+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://hn.algolia.com/api/v1/search?query=finance+leases&tags=comment&hitsPerPage=30",
+    "content_type": "application/json",
+    "elapsed_seconds": 1.415
+  },
+  {
+    "name": "hn-capex-search",
+    "url": "https://hn.algolia.com/api/v1/search?query=Microsoft+capex&tags=story&hitsPerPage=30",
+    "retrieved_at": "2026-10-31T18:33:10.930959+00:00",
+    "method": "unauthenticated urllib GET; no cookies",
+    "status": 200,
+    "final_url": "https://hn.algolia.com/api/v1/search?query=Microsoft+capex&tags=story&hitsPerPage=30",
+    "content_type": "application/json",
+    "elapsed_seconds": 1.862
+  }
+]

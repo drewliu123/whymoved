@@ -1,0 +1,44 @@
+{
+ "qid": "Q033",
+ "question": "Will New People (NL) win the third-most seats in the next Russian parliamentary election?",
+ "rules": "Parliamentary elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the political party that wins the third greatest number of seats in the next Russian State Duma election.\n\nIf the results are not known definitively by September 30, 2027, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe named parties or coalitions will be primarily ranked by the number of seats won in the specified election. If two or more parties are tied on seats, ties will be broken by the total number of valid votes received, with higher vote totals ranking higher. If parties remain tied, ties will be broken by alphabetical order of the listed party abbreviations. This market will resolve to the party that occupies the third-highest finishing position after applying this ranking.\n\nThis market's resolution will be based solely on the number of seats won by the named party in the State Duma of the Federal Assembly of the Russian Federation.\n\nThis market will resolve based on the results of this election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results reported by Russian g",
+ "as_of": "2026-09-11",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Russian Public Opinion Research Center (VTsIOM)",
+   "published_at": "2026-09-11",
+   "excerpt": "VTsIOM's September 11 release reports party support for August 31–September 6, 2026: United Russia 37.4%, CPRF 13.1%, New People 10.4%, LDPR 9.9%, and A Just Russia 4.5%. New People's support fell 1.1 percentage points from the preceding week, while LDPR gained 1.2 points. The survey used a combined telephone and household-interview sample of 1,600 adults, with a stated maximum error of 2.5%."
+  },
+  {
+   "id": "E2",
+   "publisher": "ExtremeScan — Elena Koneva",
+   "published_at": "2026-09-10",
+   "excerpt": "ExtremeScan's interim telephone survey conducted September 4–10 interviewed 800 Russian adults and reported a margin of error of ±3.5%. Among respondents naming a party, United Russia received 35.6%, CPRF 23.9%, New People 16.2%, LDPR 11.0%, and A Just Russia 5.9%. The report explicitly states that these are party-list voting preferences and that the single-mandate half of the Duma is not modelled."
+  },
+  {
+   "id": "E3",
+   "publisher": "Public Opinion Foundation (FOM)",
+   "published_at": "2026-09-10",
+   "excerpt": "FOM's preliminary election forecast gives United Russia 47–49%, CPRF 14–17%, LDPR 10–12%, New People 8–9%, and A Just Russia 6–7%. The accompanying text identifies United Russia as the expected leader, CPRF second and LDPR third. Its underlying September 4–6 household survey interviewed 1,500 adults in 97 settlements across 51 regions, with a stated maximum sampling error of 3.6%."
+  },
+  {
+   "id": "E4",
+   "publisher": "Moscow City Election Commission, reproducing Vedomosti reporting by Elena Mukhametshina",
+   "published_at": "2026-09-11",
+   "excerpt": "A September 11 press digest reproduces Vedomosti's report that VTsIOM and FOM presented election forecasts on September 10. VTsIOM projected United Russia at 51–53%, CPRF at 13–15%, New People and LDPR each at 9–11%, and A Just Russia at 4–6%. FOM instead projected LDPR at 10–12% and New People at 8–9%."
+  },
+  {
+   "id": "E5",
+   "publisher": "Riddle Russia — Ksenia Smolyakova",
+   "published_at": "2026-09-07",
+   "excerpt": "Ksenia Smolyakova reports that New People was rapidly accumulating social-media reactions as Russians compared it with Yabloko. The monitoring covered VKontakte, MAX, Telegram and YouTube, with other major platforms excluded for technical reasons. The article reports that candidate exclusions and restrictions on competition had become major subjects of campaign discussion."
+  },
+  {
+   "id": "E6",
+   "publisher": "Riddle Russia — Ksenia Smolyakova",
+   "published_at": "2026-05-07",
+   "excerpt": "The article reports a large polling discrepancy: VTsIOM placed New People at 13.4%, whereas FOM measured 6%, behind CPRF and LDPR. It describes New People's regional network and grassroots participation as weak. It also notes that New People entered the Duma in 2021 with 5.3% of the vote."
+  }
+ ]
+}

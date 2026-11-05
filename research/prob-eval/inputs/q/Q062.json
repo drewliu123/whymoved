@@ -1,0 +1,44 @@
+{
+ "qid": "Q062",
+ "question": "Will Natural Gas (NG) hit (LOW) $2.60 in July?",
+ "rules": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of July 2026, any 1-minute candle for the Active Month of Natural Gas futures has a final \"High\" or \"Low\" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nOnly prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.\n\nThe active month changes at the start of the second trading session prior to that contract's last trading session, at which point the next listed contract becomes the active month (i.e., for the final three trading sessions of",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "U.S. Energy Information Administration — July 2026 Short-Term Energy Outlook",
+   "published_at": "2026-07-07",
+   "excerpt": "Natural gas inventories remain above the five-year average through much of our forecast, helping limit upward price pressures. Inventories remain relatively high because we expect record natural gas production, led by growth in the Permian region, to help meet rising demand. At the end of June, U.S. working natural gas inventories were 6% above the five-year average."
+  },
+  {
+   "id": "E2",
+   "publisher": "Alden Energy — EIA Weekly Natural Gas Storage Report & Insight",
+   "published_at": "2026-07-16T09:56:50-05:00",
+   "excerpt": "Working gas in storage was 3,024 Bcf as of Friday, July 10, 2026, according to EIA estimates. This represents a net increase of 41 Bcf from the previous week. Stocks were 21 Bcf less than last year at this time and 181 Bcf above the five-year average of 2,843 Bcf."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters, republished by Pipeline & Gas Journal",
+   "published_at": "2026-07-16",
+   "excerpt": "LSEG data showed that gas flows to Freeport were on track to rise to 0.6 billion cubic feet per day on July 16, up from 0.2 billion cubic feet per day on July 15. Since July 10, Freeport had been pulling in a reduced 1.2 billion cubic feet per day of gas during maintenance work expected to last until late August. The three liquefaction trains at Freeport are capable of turning about 2.4 billion cubic feet per day of gas into LNG."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters, republished by Business Recorder",
+   "published_at": "2026-07-17T05:46:52+05:00",
+   "excerpt": "Financial group LSEG said average gas output in the US Lower 48 states rose to 110.3 billion cubic feet per day (bcfd) so far in July from 110.0 bcfd in June, but remained below the monthly record high of 110.6 bcfd in December 2025. Meteorologists forecast the weather would remain mostly warmer than normal through July 31, forcing power generators to burn lots of gas to keep air conditioners humming. About 40 percent of US power generation comes from gas-fired plants."
+  },
+  {
+   "id": "E5",
+   "publisher": "American Gas Association — Natural Gas Market Indicators",
+   "published_at": "2026-07-09",
+   "excerpt": "According to data from Rystad Energy, natural gas demand for electric power generation averaged 45.6 Bcf per day for the week ending July 7, more than 15 percent, higher than the previous week. U.S. dry gas production averaged 111.2 Bcf per day in June, rising 3.4 percent over the same month last year but declining 0.2 percent compared to last month, according to preliminary data from Rystad Energy. Looking into mid-July, the National Oceanic and Atmospheric Administration (NOAA) expects warmer-than-normal temperatures to continue."
+  },
+  {
+   "id": "E6",
+   "publisher": "Barchart / Rich Asplund, republished by Yahoo Finance",
+   "published_at": "2026-07-17T19:13:29Z",
+   "excerpt": "The Commodity Weather Group on Friday said forecasts shifted cooler, with below-average temperatures expected in the Southwest and Mid-Atlantic through July 26. US (lower-48) dry gas production on Friday was 112.6 bcf/day (+3.6% y/y), according to BNEF. Estimated LNG net flows to US LNG export terminals on Friday were 18.1 bcf/day (+0.5% w/w), according to BNEF. Baker Hughes reported Friday that the number of active US nat-gas drilling rigs in the week ending July 17 remained unchanged at 126 rigs, moderately below the 2.5-year high of 134 rigs set in February 2026."
+  }
+ ]
+}

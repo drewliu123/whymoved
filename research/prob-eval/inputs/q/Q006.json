@@ -1,0 +1,44 @@
+{
+ "qid": "Q006",
+ "question": "Will Silver (XAGUSD) hit (HIGH) $64 in July?",
+ "rules": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of July 2026, any 1-minute candle for Silver (XAGUSD) has a final \"High\" or \"Low\" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf Silver (XAGUSD) does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nIn the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.\n\nThe resolution source for this market i",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-16",
+   "excerpt": "Oil prices remained near a one month-high as concerns over Middle East energy supplies increased after Iran asked Yemen's Houthis to stand ready to close the Red Sea oil route if the U.S. strikes Iranian power infrastructure. Higher oil prices stoke inflation concerns, raising expectations of elevated interest rates and denting gold's appeal as a non-yielding asset."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters via MarketScreener",
+   "published_at": "2026-07-08T06:09:00-04:00",
+   "excerpt": "India's restrictions on silver imports have created shortages in the world's biggest market for the precious metal, pushing premiums to their highest levels in six months despite weaker-than-usual demand. Lower imports by India, which meets more than 80% of its silver demand through overseas purchases, could weigh on global prices, while helping narrow the country's trade deficit and ease pressure on its rupee currency."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters via Fidelity",
+   "published_at": "2026-07-08T14:05:00-04:00",
+   "excerpt": "A \"few participants\" at the June 16-17 meeting said there was already a case to raise borrowing costs, even though they ultimately agreed with their colleagues to hold rates steady \"at this meeting.\" The broader debate, however, seemed evenly divided, minutes of the session showed on Wednesday, with \"most participants\" seeing a scenario in which inflation would fall towards the Fed's 2% target on its own, but also one in which it would remain high."
+  },
+  {
+   "id": "E4",
+   "publisher": "Kitco News, reporting UBS research",
+   "published_at": "2026-05-14",
+   "excerpt": "Turning to investment demand, the UBS analysts noted that total known ETF holdings have dropped by nearly 70 million ounces to around 794 million ounces, and net speculative futures positioning has pulled back to just above 100 million ounces. UBS now projects the 2026 silver market supply deficit to narrow to roughly 60–70 million ounces, a dramatic reduction from the previous estimate of 300 million ounces. Although implied volatility has come down significantly from earlier this year — when one-month realized volatility nearly reached 150% in February — it remains historically elevated."
+  },
+  {
+   "id": "E5",
+   "publisher": "The Silver Institute; research by Metals Focus",
+   "published_at": "2026-04-15",
+   "excerpt": "Global silver mine production is expected to remain flat in 2026. Broader grade-related and operational pressures across key producing regions should offset modest growth at a limited number of assets. With mine production stable this year, we expect the structural market deficit to widen to 46.3 Moz."
+  },
+  {
+   "id": "E6",
+   "publisher": "Reuters via Kitco News",
+   "published_at": "2026-04-15",
+   "excerpt": "Metals Focus estimates that 28% of 884 million ounces of silver held in London vaults at end-March were not tied to ETPs and were potentially available to support liquidity, the highest share since January 2025 and up from a historic low of 17% in September that helped precipitate the October squeeze. Conditions for a silver squeeze will be created again, requiring further outflows from the U.S., if the price becomes more volatile and Indian demand gets active, especially coupled with inflows to ETPs storing their metal in London, Newman said."
+  }
+ ]
+}

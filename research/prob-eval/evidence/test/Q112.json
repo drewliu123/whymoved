@@ -1,0 +1,57 @@
+{
+  "qid": "Q112",
+  "as_of": "2026-08-07",
+  "kept": [
+    {
+      "excerpt": "The Islamic Republic of Iran and the United States of America commit to negotiating and achieving the final Deal, in maximum 60 days extendable with mutual consent.",
+      "published_at": "2026-06-17",
+      "publisher": "The American Presidency Project (archived MOU text; page labels the document a draft)",
+      "relevance": "Paragraph 3 establishes the specific negotiation period and mutual-consent requirement whose extension must be distinguished from other diplomatic arrangements.",
+      "url": "https://www.presidency.ucsb.edu/documents/islamabad-memorandum-understanding-between-the-united-states-america-and-the-islamic"
+    },
+    {
+      "excerpt": "The official Iranian news agency IRNA on Wednesday published the full text of a 14-point memorandum of understanding between Iran and the US. Negotiations on a final agreement within 60 days, extendable by mutual consent.",
+      "published_at": "2026-06-17",
+      "publisher": "Anadolu Agency",
+      "relevance": "Reporting on Iran's official publication corroborates that the original framework explicitly permitted an extension by mutual consent.",
+      "url": "https://www.aa.com.tr/en/us-israel-iran-war/iran-releases-14-point-draft-agreement-outlining-us-deal-roadmap/3970242"
+    },
+    {
+      "excerpt": "Iranian Foreign Ministry spokesman says talks with Oman on ensuring safe shipping through the Strait of Hormuz are bilateral between the two littoral states, adding that Tehran is not currently engaged in negotiations with the United States. Baghaei said Iran’s ongoing talks are exclusively with Oman and are focused on agreeing on a temporary route to ensure the safe passage of commercial shipping through the Strait of Hormuz.",
+      "published_at": "2026-08-03",
+      "publisher": "Press TV (Iranian state broadcaster)",
+      "relevance": "The foreign ministry spokesman's public account distinguishes bilateral maritime talks from negotiations with Washington and provides Iran's stated position near the freeze date.",
+      "url": "https://www.presstv.co.uk/Detail/2026/08/03/773638/Hormuz-talks-limited-to-Oman--no-negotiations-underway-with-US--Tehran?ht-comment-id=36020044"
+    },
+    {
+      "excerpt": "Iran and the Gulf Arab state of Oman have made progress toward a deal to reopen the Strait of Hormuz, a potential breakthrough that could help wind down the war in the Middle East, regional officials said Tuesday. The two sides reached an interim agreement in June to reopen the strait and launch 60 days of talks aimed at ending the war and resolving the longstanding dispute over Iran's nuclear program.",
+      "published_at": "2026-08-04",
+      "publisher": "Associated Press",
+      "relevance": "This contemporaneous report connects the June negotiation framework with maritime diplomacy while describing progress toward a separate agreement rather than a declared extension.",
+      "url": "https://apnews.com/article/6587f90f2ab5beec373ce5fabf637541"
+    },
+    {
+      "excerpt": "The U.S., Iran and Oman are closing in on an interim agreement to reopen the Strait of Hormuz, with the U.S. aiming for a Wednesday announcement, according to two regional sources and a U.S. official. According to two regional sources, the deal under discussion sets up a 60-day temporary arrangement between Oman and Iran in the Hormuz strait, which could be extended.",
+      "published_at": "2026-08-05",
+      "publisher": "Axios",
+      "relevance": "The proposed maritime arrangement has its own extendable 60-day term, making it especially important to distinguish it from an extension of the original MOU negotiation period.",
+      "url": "https://www.axios.com/2026/08/05/us-iran-strait-of-hormuz-deal-nears"
+    },
+    {
+      "excerpt": "U.S. President Donald Trump said there was an \"all-day negotiation\" on Tuesday with Iran, characterizing the talks positively while also threatening to hit Iran \"really hard\" if a deal with Tehran was not reached. Qatar said on Tuesday mediators were making progress in efforts to end the Iran war, although Tehran has denied Trump’s assertion that talks were under way.",
+      "published_at": "2026-08-05",
+      "publisher": "Reuters (via Investing.com)",
+      "relevance": "This report supplies recent U.S. presidential statements and mediator activity while documenting conflicting public accounts of whether negotiations were occurring.",
+      "url": "https://www.investing.com/news/commodities-news/trump-says-us-held-allday-negotiation-with-iran-on-tuesday-4836396"
+    },
+    {
+      "excerpt": "President Donald Trump said talks with Tehran seemed \"to be working out quite well,\" reiterating his positive portrayal of the negotiations on the Iran war without elaborating on the specifics of the discussions. Trump has said a deal on reopening the Strait of Hormuz, a key route for energy supplies that Iran blocked after the war began, is imminent.",
+      "published_at": "2026-08-05",
+      "publisher": "Reuters (via Investing.com)",
+      "relevance": "This later August 5 report updates the U.S. president's public position but contains no specific declaration extending the MOU negotiation period.",
+      "url": "https://www.investing.com/news/commodities-news/trump-reiterates-his-positive-portrayal-of-iran-talks-4839991"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-08-07. Included only sources with explicit publication dates on or before the cutoff; excluded later-dated reports, undated material, prediction-market pages, odds and market prices. Excerpts are supported by dated web_search results and expanded indexed source text. Direct web_fetch failed because of a provider-configuration error; the requested agent-reach web-read fallback returned RATE_LIMITED, so full-page retrieval could not be completed. The MOU archive is explicitly labeled a draft, and its displayed document date does not independently establish when the archive page first appeared. June 14 announcement and June 17 document/signing dates are distinct. This collection does not establish an exhaustive absence of qualifying official announcements and does not infer the eventual resolution."
+}

@@ -1,0 +1,44 @@
+{
+ "qid": "Q095",
+ "question": "Will Cleveland Guardians win the 2026 AL Central title?",
+ "rules": "This market will resolve according to the team that wins the 2026 MLB American League Central division.\n\nIn the event of a tie, this market will resolve according to the official winner as determined by MLB rules. If multiple winners are announced then this market will resolve to the team whose listed nickname comes first alphabetically.\n\nIf at any point it becomes impossible for a listed team to be named the 2026 American League Central division champion per the rules of the MLB (e.g., they are eliminated in the playoffs), the corresponding market will resolve to “No”.\n\nIf the 2026 MLB regular season is cancelled, postponed after October 31, 2026, 11:59 PM ET, or there is otherwise no winner declared within that timeframe, this market will resolve to “Other”.\n\nThe primary resolution source will be official information from Major League Baseball (https://www.mlb.com/); however, a consensus of credible reporting may also be used.",
+ "as_of": "2026-09-13",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Associated Press via SeattlePI",
+   "published_at": "2026-09-13",
+   "excerpt": "Steven Kwan homered to lead off the game, Tanner Bibee had seven strikeouts in 6 2/3 strong innings, and the Cleveland Guardians beat the Minnesota Twins 9-2 on Sunday to pull within a half-game of the American League Central-leading Chicago White Sox. Guardians: RHP Gavin Williams (13-7, 3.78 ERA) starts Monday for Cleveland opposite White Sox RHP Sean Burke (8-7, 3.58)."
+  },
+  {
+   "id": "E2",
+   "publisher": "Associated Press / Canadian Press via Lethbridge Herald",
+   "published_at": "2026-09-13",
+   "excerpt": "The White Sox, who have lost 10 of their last 14 games, begin a three-game series Monday in Cleveland. Alec Burleson hit a bases-clearing double, sparking St. Louis Cardinals to a victory over Chicago to wrap up a three-game series."
+  },
+  {
+   "id": "E3",
+   "publisher": "MLB.com",
+   "published_at": "2025-08-27",
+   "excerpt": "Cleveland's final homestand runs September 14–20 against the White Sox and Athletics, followed by road series against Boston and Kansas City."
+  },
+  {
+   "id": "E4",
+   "publisher": "MLB.com",
+   "published_at": "2026-09-10",
+   "excerpt": "DeLauter returned from a wrist sprain after missing four games. Cleveland's bullpen covered an MLB-leading 38⅔ innings over its first nine September games."
+  },
+  {
+   "id": "E5",
+   "publisher": "Axios Cleveland",
+   "published_at": "2026-09-01",
+   "excerpt": "The Guardians currently hold the AL's final wild-card spot after winning eight of their last 10 games. The Guardians also remain within striking distance of the AL Central-leading White Sox. Chase DeLauter — the team's best hitter this season — is looking healthy again."
+  },
+  {
+   "id": "E6",
+   "publisher": "Akron Beacon Journal via Yahoo Sports",
+   "published_at": "2026-09-10T18:38:00Z",
+   "excerpt": "Walters, who hasn't thrown a pitch in the majors since last season, has undergone UCL repair surgery. The procedure was performed by Dr. Keith Meister in Arlington, Texas, and comes with an expected return-to-play timeline of 10-to-12 months."
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-I",
+    "-c",
+    "import sys, runpy; sys.path.insert(0, '/Users/frankzhang/Desktop/投研助手/scripts'); sys.argv=['/Users/frankzhang/Desktop/投研助手/scripts/check_claims.py', '/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/claims.json', '--json']; runpy.run_path(sys.argv[0], run_name='__main__')"
+  ],
+  "cwd": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor/work",
+  "exit_code": 0,
+  "executed_at": "2026-10-31T17:29:39.978414+00:00",
+  "note": "Runs existing unmodified checker via runpy; -I excludes cwd/import environment. Only explicitly trusted local scripts directory added for common.py dependency."
+}

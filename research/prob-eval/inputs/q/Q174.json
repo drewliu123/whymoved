@@ -1,0 +1,26 @@
+{
+ "qid": "Q174",
+ "question": "Putin meets with Iranian officials by August 31?",
+ "rules": "This market will resolve to \"Yes\" if Vladimir Putin meets with one or more Iranian government officials by August 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nA meeting is defined as any encounter where both Putin and one or more Iranian government officials are present and interact with each other in person.\n\nAn exchange of words, handshake, direct conversation, or other clear personal interaction between the named individuals will qualify as a meeting. Merely standing in proximity, making eye contact, or being present in the same room or event without direct interaction will not qualify.\n\nThe resolution source will be a consensus of credible reporting.",
+ "as_of": "2026-08-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Anadolu Agency",
+   "published_at": "2026-08-20",
+   "excerpt": "Turning to Putin's international contacts, Peskov confirmed that the Russian president plans to attend the Shanghai Cooperation Organization (SCO) summit in Bishkek on Aug. 31-Sept. 1, but said it was too early to provide details of potential bilateral meetings on the sidelines."
+  },
+  {
+   "id": "E2",
+   "publisher": "Bright Uzbekistan",
+   "published_at": "2026-08-20",
+   "excerpt": "Kyrgyzstan is completing preparations for a series of international events scheduled to take place in Bishkek from August 30 to September 1. During this period, the capital will host the Shanghai Cooperation Organisation summit, meetings in the “SCO+” format and the opening ceremony of the VI World Nomad Games. The final list of heads of state and their spouses attending the events is expected to be announced once the schedules of the foreign delegations have been fully coordinated."
+  },
+  {
+   "id": "E3",
+   "publisher": "Critical Threats Project, American Enterprise Institute",
+   "published_at": "2026-08-18",
+   "excerpt": "NBC News reported on August 18 that Russia has transferred drone components, ammunition, and TNT explosives to Iran via the Caspian Sea as of July 2026."
+  }
+ ]
+}

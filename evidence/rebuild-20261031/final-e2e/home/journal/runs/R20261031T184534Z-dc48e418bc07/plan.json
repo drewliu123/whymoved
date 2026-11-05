@@ -1,0 +1,51 @@
+{
+  "as_of": "2026-10-31T18:37:29.600836Z",
+  "budget": {
+    "max_followups": 2,
+    "max_queries": 9
+  },
+  "comparison": {
+    "period": "FY25Q4 quarter ended 2025-06-30; separate explicitly labelled FY2025 annual illustration",
+    "scope": "Consolidated Microsoft; gross investment, cash PP&E, and lease principal/interest classification; not all capex is AI",
+    "unit": "USD billion unless source original says USD million"
+  },
+  "decision_needed": "确定投入规模、当期现金支出和未来租赁义务的比较口径",
+  "entity": "Microsoft / MSFT",
+  "historical": false,
+  "hypotheses": [
+    {
+      "discriminating_observation": "计算季度总投入减现金 PP&E，和披露的新融资租赁比较。",
+      "explanation": "两种 capex 口径仅由新融资租赁解释"
+    },
+    {
+      "discriminating_observation": "核对年报租赁现金流分类、PP&E 应付款和季度定义。",
+      "explanation": "还包含现金支付与确认时点差异，且租赁本金另列融资现金流"
+    }
+  ],
+  "prior_judgment": "待核实：headline capex 与 cash PP&E 不同，二者差额未必等于新融资租赁。",
+  "queries": [
+    {
+      "purpose": "定义和现金金额",
+      "query": "Microsoft FY25 Q4 24.2 billion capital expenditures finance leases 6.5 17.1 cash",
+      "question": "季度定义与金额是什么？",
+      "source": "host web then official original GET"
+    },
+    {
+      "purpose": "媒体叙事口径",
+      "query": "Microsoft July 30 2025 24.2 capital expenditures finance leases cash 17.1 Reuters CNBC",
+      "question": "独立报道怎样描述投入？",
+      "source": "host web then GeekWire original GET"
+    },
+    {
+      "purpose": "社区原文与误比较线索",
+      "query": "Microsoft capex; Microsoft leases (engine actual executed); finance leases comments; Microsoft capex stories (direct Algolia)",
+      "question": "社区讨论是否能帮助发现比较陷阱？",
+      "source": "Last30Days 3.30.0 HN; supplementary Algolia and HN originals"
+    }
+  ],
+  "question": "Microsoft 含融资租赁的资本开支与现金 PP&E，应如何比较实际现金负担？",
+  "schema_version": 2,
+  "stop_condition": "官方原文、独立媒体原文、社区原文均有实际抓取；数字和分类可定位，未解决差额明确保留。",
+  "task": "资本投入与现金负担比较",
+  "type": "asset"
+}

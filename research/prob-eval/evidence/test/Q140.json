@@ -1,0 +1,50 @@
+{
+  "qid": "Q140",
+  "as_of": "2026-09-21",
+  "kept": [
+    {
+      "excerpt": "A Real Time Big Data poll published September 21 put Cleitinho at 35% in the first round, followed by Patrus Ananias at 19%, Alexandre Kalil at 10% and Mateus Simões at 10%. In a simulated runoff, Cleitinho had 43% against Patrus's 42%, a technical tie within the two-percentage-point margin of error. Cleitinho led Kalil 46%–35% and Simões 44%–37% in the other runoff scenarios. The institute interviewed 2,000 voters September 16–19 using telephone interviews and digital recruitment, with 95% confidence and TSE registration MG-07331/2026.",
+      "published_at": "2026-09-21",
+      "publisher": "CNN Brasil",
+      "relevance": "The cutoff-day poll directly measures both Cleitinho's first-round lead and the competitive runoff scenario that could prevent him from winning the election.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/real-time-cleitinho-vence-kalil-e-simoes-e-empata-com-patrus-no-2o-em-mg/"
+    },
+    {
+      "excerpt": "An Itatiaia/Ver poll released September 21 showed Cleitinho with 42.8% of first-round voting intentions, Patrus Ananias with 15.7%, Alexandre Kalil with 9.3% and Mateus Simões with 6.3%. Undecided voters accounted for 14%, while blank or null voting intentions totaled 4.8%. The poll interviewed 1,197 voters and reported a margin of error of 2.8 percentage points at 95% confidence, under TSE registration MG-07337/2026.",
+      "published_at": "2026-09-21",
+      "publisher": "CNN Brasil",
+      "relevance": "An independent cutoff-day survey corroborates Cleitinho's substantial first-round lead while quantifying the remaining undecided electorate.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/itatiaia-ver-1o-turno-cleitinho-lidera-corrida-ao-governo-de-mg-com-428/"
+    },
+    {
+      "excerpt": "A Veritá poll reported Cleitinho with 47.4% of first-round voting intentions and Patrus Ananias with 21.2%. The institute interviewed 2,030 voters September 12–17 using an automated response system with voice recognition and audio-to-text transcription. The reported margin of error was 2.5 percentage points; the survey was registered with the TSE under MG-05919/2026 and BR-03240/2026.",
+      "published_at": "2026-09-18",
+      "publisher": "CNN Brasil",
+      "relevance": "This recent survey provides another estimate of Cleitinho's support and highlights variation across pollsters and collection methods.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/verita-cleitinho-tem-474-no-1o-turno-em-mg-patrus-212/"
+    },
+    {
+      "excerpt": "Datafolha reported Cleitinho leading with 37%, compared with 32% in August, followed by Patrus Ananias at 13% and Alexandre Kalil at 11%. Blank or null voting intentions were 11%, and undecided voters were 10%. Excluding blank, null and undecided responses, Cleitinho had 47% of valid voting intentions. Datafolha conducted 1,204 in-person interviews in 55 municipalities September 8–10, with a three-percentage-point margin of error at 95% confidence and TSE registrations MG-01611/2026 and BR-03022/2026.",
+      "published_at": "2026-09-14",
+      "publisher": "Datafolha / Folha de S.Paulo",
+      "relevance": "The pollster's primary publication supplies a methodological benchmark and shows Cleitinho below a majority of estimated valid votes despite his large lead.",
+      "url": "https://datafolha.folha.uol.com.br/eleicoes/2026/09/cleitinho-republicanos-mantem-a-lideranca-com-37-das-intencoes-de-voto-patrus-pt-e-kalil-pdt-seguem-empatados-no-segundo-lugar.shtml"
+    },
+    {
+      "excerpt": "A Quaest poll put Cleitinho at 32%, up from 29% in August, with Patrus Ananias and Alexandre Kalil at 11% each and Mateus Simões at 8%. Undecided voters totaled 19%, while 12% intended to vote blank or null or not vote. The Globo-commissioned survey interviewed 1,506 voters September 4–7, with a three-percentage-point margin of error at 95% confidence and TSE registration MG-04716/2026. The report also described the PL fielding Flávio Roscoe after uncertainty over Cleitinho's candidacy, while Cleitinho maintained support for Flávio Bolsonaro's presidential candidacy.",
+      "published_at": "2026-09-08",
+      "publisher": "Folha de S.Paulo",
+      "relevance": "This survey establishes an earlier campaign baseline and explains fragmentation among candidates appealing to overlapping political constituencies.",
+      "url": "https://www1.folha.uol.com.br/poder/2026/09/quaest-cleitinho-lidera-com-32-em-minas-gerais-patrus-kalil-e-simoes-disputam-2o-lugar.shtml"
+    },
+    {
+      "excerpt": "Brazil's 2026 general elections were scheduled for October 4, including voting for state governors. Any second round was scheduled for October 25. The electoral calendar provided for party conventions July 20–August 5, candidate registration by August 15 and the start of electoral campaigning August 16.",
+      "published_at": "2026-03-06",
+      "publisher": "Tribunal Regional Eleitoral de Santa Catarina (TRE-SC)",
+      "relevance": "An official electoral-court publication establishes the election timetable and the campaign milestones applicable to the forecast.",
+      "url": "https://www.tre-sc.jus.br/comunicacao/noticias/2026/Marco/eleicoes-2026-confira-as-principais-datas-do-calendario-eleitoral"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-21, inclusive. Included six sources with explicit publication dates on or before the cutoff; excerpts are English factual translations or paraphrases of the Portuguese source text. Excluded later reporting, election outcomes, undated aggregators, prediction-market material and betting prices. The TSE calendar news page showed an update after the cutoff, so an explicitly dated March 6 TRE-SC calendar publication was used instead. web_fetch failed because of a provider-configuration error; the requested agent-reach fallback was rate-limited, so verification relied on source text and publication timestamps exposed through targeted web_search results. No archived pre-cutoff page snapshots were obtained. The Itatiaia/Ver article has inconsistent fieldwork dates between its subtitle (September 17–20) and methodology (September 17–19), so its fieldwork dates were omitted from the excerpt."
+}

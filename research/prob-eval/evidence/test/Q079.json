@@ -1,0 +1,57 @@
+{
+  "qid": "Q079",
+  "as_of": "2026-10-13",
+  "kept": [
+    {
+      "excerpt": "The 70th edition of the prestigious award ceremony will take place on 26 October in London. Presented annually by France Football (owned by L'Équipe Group), the award has been co-organised with UEFA since 2024.",
+      "published_at": "2026-05-28",
+      "publisher": "UEFA",
+      "relevance": "The official announcement establishes the scheduled award date and France Football’s role, placing the ceremony after the experiment cutoff but before the market’s year-end deadline.",
+      "url": "https://www.uefa.com/ballondor/news/02a5-20bba5196317-e0e34001e13b-1000--2026-ballon-d-or-ceremony-date-and-host-city-announced/"
+    },
+    {
+      "excerpt": "The Ballon d’Or will celebrate its 2026 ceremony on Monday 26 October at the London Palladium Theatre in London, England, for the first time. The full list of nominees in all categories is available here. Media representatives wishing to attend and cover the ceremony are invited to submit their accreditation requests by 12 October.",
+      "published_at": "2026-09-08",
+      "publisher": "UEFA",
+      "relevance": "This dated official release confirms that nominations had been announced and supplies the ceremony venue and preparations known before the cutoff.",
+      "url": "https://www.uefa.com/news-media/news/02a9-218afc0b9ae8-b59f54b95799-1000--nominees-announced-for-2026-ballon-d-or-awards/"
+    },
+    {
+      "excerpt": "The Ballon d'Or is awarded by an international jury of specialized journalists, with one representative per country: the top 100 nations according to the FIFA rankings for the men's award, and the top 50 for the women's award. Each jury member selects 10 players in descending order of merit from a 30-player shortlist. The 10 selected players receive 15, 12, 10, 8, 7, 5, 4, 3, 2, and 1 point respectively. The Ballon d'Or is awarded to the player with the highest overall score.",
+      "published_at": "2026-09-29",
+      "publisher": "Ballondor.com — official Ballon d’Or website",
+      "relevance": "The official voting explanation identifies the electorate and scoring mechanism that determine whether Kane wins.",
+      "url": "https://ballondor.com/news/posts/who-decides-the-ballon-dor"
+    },
+    {
+      "excerpt": "Harry Kane described the 2025-26 campaign as the best season of his life after scoring 73 goals for Bayern Munich and England, and while his performances have made him a leading candidate for the Ballon d'Or he says he is not focused on individual awards. No English player has won the Ballon d'Or since Michael Owen in 2001 and Kane is up against tough competition with Lamine Yamal and Kylian Mbappe also in the running.",
+      "published_at": "2026-09-18T14:02:00+08:00",
+      "publisher": "Reuters, published by The Star",
+      "relevance": "This dated Reuters report documents Kane’s central statistical case and identifies major competing candidates before the cutoff.",
+      "url": "https://www.thestar.com.my/sport/football/2026/09/18/soccer-kane-proud-of-achievements-not-giving-too-much-thought-to-ballon-d039or"
+    },
+    {
+      "excerpt": "Kylian Mbappé has finished UEFA Champions League top scorer for the second time after registering 15 goals in 11 appearances in 2025/26. Harry Kane, who shared the top scorer prize with Mbappé in 2023/24, finished just one behind. The 32-year-old took his tally to 14 in the semi-final second leg between Bayern München and Paris, scoring for the seventh successive outing in the competition.",
+      "published_at": "2026-05-30",
+      "publisher": "UEFA",
+      "relevance": "Official competition reporting supplies a direct comparison between Kane and Mbappé in the Champions League and records Kane’s sustained knockout-stage scoring.",
+      "url": "https://www.uefa.com/uefachampionsleague/news/029d-1ec1670159ea-2d1882e6a430-1000--champions-league-top-scorers-kylian-mbappe-leads-anthony-go/"
+    },
+    {
+      "excerpt": "From 1995 onwards, when the trophy became open to players of all nationalities, the percentage increased: there have been seven World Cups, and in four of them the champions have lifted the Ballon d'Or. That represents a success rate of 57.1 per cent. Since the award was opened up to the whole world in 1995, 100 per cent of the Ballon d'Or podiums have featured at least one world champion from that same year or season.",
+      "published_at": "2026-10-07",
+      "publisher": "Ballondor.com — official Ballon d’Or website",
+      "relevance": "The official retrospective provides historical context for the importance of World Cup success when weighing Kane against candidates from the champion team.",
+      "url": "https://ballondor.com/news/posts/does-winning-the-world-cup-automatically-make-you-the-favourite-for-the-ballon-dor"
+    },
+    {
+      "excerpt": "Troy Deeney has controversially left Harry Kane and Kylian Mbappe out of his top three Ballon d’Or picks. PSG’s Georgian forward Kvicha Kvaratskhelia was named as his third-best player above Kane and Mbappe, with Deeney labelling the Champions League and Ligue 1 winner “unbelievable and probably the best winger in world football”. Deeney named Lamine Yamal as the best player in the world after the teenager won both La Liga with Barcelona and the World Cup with Spain in the summer.",
+      "published_at": "2026-10-13T10:35:00Z",
+      "publisher": "AOL / Kasra Moradi",
+      "relevance": "An expert preview published on the cutoff date supplies a dissenting assessment of Kane’s candidacy and highlights Yamal’s competing claim.",
+      "url": "https://www.aol.co.uk/articles/harry-kane-kylian-mbappe-excluded-103533000.html"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence pack for Q079 with cutoff 2026-10-13. All retained items have explicit publication dates visible in web_search evidence; no later developments, award outcome, betting pages, odds, or prediction-market prices are included. Official pages showing updates after the cutoff were excluded, including the men's nominee profile page updated on October 24 and England Football pages bearing October 26 publication dates despite September URL paths. web_fetch failed because multiple providers were registered; the requested agent-reach web-read fallback returned RATE_LIMITED, so verification relied on dated search excerpts and expanded search results rather than successful direct page retrieval. The historical percentages are the official October 7 article's retrospective figures, not an independently calculated probability for Kane."
+}

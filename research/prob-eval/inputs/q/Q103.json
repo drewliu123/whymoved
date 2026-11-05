@@ -1,0 +1,50 @@
+{
+ "qid": "Q103",
+ "question": "Will 40 ships transit the Strait of Hormuz on any day by July 31, 2026?",
+ "rules": "This market will resolve to “Yes” if any finalized daily number of transit calls (“Arrivals of Ships”) for the Strait of Hormuz reported by IMF Portwatch is equal to or above the listed value for any date between market creation and July 31, 2026. Otherwise, this market will resolve to “No”.\n\nTransit calls include container, dry bulk, roll-on/roll-off, general cargo, and tanker ships. Ships not reported by IMF Portwatch will not be considered.\n\nData for a specific date must be finalized before it is considered for this market (namely, once the next date's data point is available, the previous one is finalized).\n\nThis market will resolve as soon as a qualifying figure has been finalized or once all relevant data has been finalized. If the data for the final date of the specified timeframe has not been finalized by the end of the third calendar day (ET) after the day on which such data is first released, this market will resolve based on data published up to that point. Additionally, if not all relevant data has been released and finalized within 14 calendar days of the end of the specified period, this market will resolve based on data published up to that point.\n\nIn case of obvious",
+ "as_of": "2026-07-22",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters, via MarketScreener",
+   "published_at": "2026-07-21T22:52:00-04:00",
+   "excerpt": "A total of three commodity vessels crossed the strait on Tuesday, down from four the previous day, Kpler data showed. There were no visible very large crude carrier (VLCC) or liquefied natural gas (LNG) tankers passing through the strait on Tuesday."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters, via MarketScreener",
+   "published_at": "2026-07-16T04:21:00-04:00",
+   "excerpt": "Nine vessels crossed the strait on Wednesday, mostly on the Iranian route, down from 13 the previous day, Kpler data showed. There were no Very Large Crude Carrier or liquefied natural gas tankers visibly passing through the strait on Wednesday. Since resuming a naval blockade against Iran on Tuesday, the U.S. has redirected two ships and disabled another, the military said."
+  },
+  {
+   "id": "E3",
+   "publisher": "American Journal of Transportation",
+   "published_at": "2026-07-17",
+   "excerpt": "Compared with the first week of July, overall traffic during 12–16 July is down 59%, while daily deadweight capacity crossing the Strait in either direction declined by 68%."
+  },
+  {
+   "id": "E4",
+   "publisher": "International Maritime Organization",
+   "published_at": "2026-07-13",
+   "excerpt": "The Council condemned the attacks on civilian commercial ships in and around the Strait of Hormuz and called for the de-escalation of tensions in the region. In a resolution adopted during the session, the Council stressed that the right of transit passage through straits used for international navigation should not be threatened, impeded, denied, hampered, impaired or suspended."
+  },
+  {
+   "id": "E5",
+   "publisher": "S&P Global Energy",
+   "published_at": "2026-07-13",
+   "excerpt": "Only 11 ships traversed the Strait of Hormuz on July 12, the lowest since June 14, after attacks hit the container ship GFS Galaxy and the US and Iran made retaliatory strikes, S&P Global Commodities at Sea said in a July 13 report. Traffic was down from 32 ships on July 10 and 30 on July 11, with oil, chemical, LPG and LNG tankers making up 48% of the total over the three days over July 10-12, CAS said."
+  },
+  {
+   "id": "E6",
+   "publisher": "S&P Global Energy",
+   "published_at": "2026-07-08",
+   "excerpt": "The number of ships traversing the Strait of Hormuz on July 8 was 48 compared with 47 on July 7 as more ships turned off their location signals following three tanker attacks, S&P Global Commodities at Sea said in a July 8 report. Just one ship used the route closest to Oman while 36% of the total operated dark -- without signals -- compared with a July average of 21%, CAS data showed."
+  },
+  {
+   "id": "E7",
+   "publisher": "S&P Global Energy",
+   "published_at": "2026-06-25",
+   "excerpt": "Traffic through the Strait of Hormuz rose to 78 ships June 24, the highest since the war began in late February, with 42% of these vessels using a route managed by Oman and the International Maritime Organization, S&P Global Commodities at Sea said in a June 25 report. The safe corridor for transits close to the Omani coast was used by 33 ships, although some ships continued to sail closer to Iran, CAS said in the report."
+  }
+ ]
+}

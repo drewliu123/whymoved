@@ -1,0 +1,37 @@
+{
+  "question": "美伊停火会持续多久",
+  "as_of_local_date": "2026-11-01",
+  "window_days": 30,
+  "hypotheses": {
+    "H1": "双方成本支持数周克制",
+    "H2": "仅选举前短暂停顿，近期复战",
+    "H3": "互惠核查支持数月稳定"
+  },
+  "tests": {
+    "T1": "最新停火期限是否双边及执行机制",
+    "T2": "近30日军事行动、霍尔木兹与核查执行"
+  },
+  "object_exclusions": [
+    "2025美伊停火不能替代当前条款",
+    "2026年4月/6月旧材料不能无更新地当作当前状态",
+    "以黎停火并非美伊双边停火"
+  ],
+  "scope": "T4社区观点、反证与待追原始出处；不支持外部事实",
+  "author_memory": "not_read_or_modified",
+  "diagnose_interpretation": {
+    "reddit": "advertised available; retrieval outcome pending",
+    "hackernews": "advertised available; retrieval outcome pending",
+    "x": "not_run: no verified authentication, browser cookies disabled",
+    "youtube": "not_run: narrow community budget",
+    "polymarket": "not_run: precise contract out of this scout scope",
+    "github": "not_run: unrelated community scope",
+    "grounding": "not_run: no native engine web provider configured"
+  },
+  "engine_research_calls_budget": 1,
+  "engine_plan_subqueries": 2,
+  "fallback_queries_budget_max": 2,
+  "references_read": [
+    "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.4.1/skills/research/references/context.md",
+    "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.4.1/skills/research/references/sources.md"
+  ]
+}

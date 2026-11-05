@@ -1,0 +1,50 @@
+{
+  "qid": "Q170",
+  "as_of": "2026-07-10",
+  "kept": [
+    {
+      "excerpt": "FIFA announced that the 2026 World Cup final would be held in New York New Jersey on Sunday, July 19, 2026. The opening match was scheduled for June 11, 2026, in Mexico City.",
+      "published_at": "2024-02-04",
+      "publisher": "FIFA",
+      "relevance": "The official schedule places the final in the United States and before the market's August 2 postponement deadline.",
+      "url": "https://inside.fifa.com/tournaments/mens/worldcup/canadamexicousa2026/media-releases/fifa-world-cup-26-tm-final-to-be-held-in-new-york-new-jersey-mexico-city-to"
+    },
+    {
+      "excerpt": "Two sources familiar with the plans told NBC News that President Trump wanted to attend the FIFA World Cup final at New York/New Jersey Stadium on July 19.",
+      "published_at": "2026-06-12",
+      "publisher": "NBC4 Washington / NBC News",
+      "relevance": "This provides sourced reporting on intended attendance, which is a necessary condition for a Yes resolution.",
+      "url": "https://www.nbcwashington.com/world-cup/trump-world-cup-final-fifa-metlife-stadium/4116015/"
+    },
+    {
+      "excerpt": "FIFA President Gianni Infantino said Trump would attend the July 19 final in New Jersey and help present the trophy to the winning team. Infantino said they would jointly hand the trophy to the champions' captain on the field.",
+      "published_at": "2026-06-23",
+      "publisher": "NBC4 Washington",
+      "relevance": "A planned on-field trophy presentation would put Trump close to the winning team during the post-match ceremony, although it does not establish inclusion in the official team photo.",
+      "url": "https://www.nbcwashington.com/world-cup/donald-trump-present-world-cup-trophy-final-fifa-president-gianni-infantino-confirms/4120793/"
+    },
+    {
+      "excerpt": "Trump had yet to attend a World Cup match. Infantino had said in an interview the previous month that Trump planned to join him for the final and award the trophy to the winning team.",
+      "published_at": "2026-07-06",
+      "publisher": "Associated Press",
+      "relevance": "This is a recent pre-cutoff status report reiterating the attendance and presentation plans while distinguishing plans from attendance already realized.",
+      "url": "https://apnews.com/article/ed312dc4565ae4cfadf6810270cc30c6"
+    },
+    {
+      "excerpt": "Trump attended Chelsea's FIFA Club World Cup final victory over Paris Saint-Germain. After the match, he joined the players on the field, presented PSG players with runner-up medals and handed Chelsea their championship trophy.",
+      "published_at": "2025-07-13",
+      "publisher": "Associated Press",
+      "relevance": "The previous year's FIFA final provides a directly relevant precedent for Trump's attendance and participation in a winning team's trophy ceremony.",
+      "url": "https://apnews.com/article/92a5e1cf1e723bafed86cbf72e289646"
+    },
+    {
+      "excerpt": "After Chelsea won the Club World Cup in New Jersey, Trump remained with the team for the group-photo opportunity as the players lifted the trophy and celebrated. Infantino had exited the stage and gestured for Trump to accompany him.",
+      "published_at": "2025-07-14",
+      "publisher": "PetaPixel",
+      "relevance": "This documents a closely analogous instance of Trump remaining in the champions' photo, while also showing that the trophy presenter was expected to leave the stage.",
+      "url": "https://petapixel.com/2025/07/14/trump-stays-in-team-group-photo-after-club-world-cup-final/"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-10, inclusive. Included only items with explicit publication dates verifiable in web-search results; excerpts are factual paraphrases of the retrieved source text. Excluded undated sources, prediction-market and betting pages, and all reporting published after the cutoff. Built-in web_fetch failed because of a provider-configuration error; the requested agent-reach fallback returned a web-channel rate limit, so full-page retrieval was unavailable and verification relied on indexed search evidence. The June 23 and July 6 items repeat the same Infantino announcement and should not be treated as independent confirmations. No retained source explicitly confirms Trump's inclusion in the 2026 winning team's official photo; the Chelsea example concerns the separate 2025 Club World Cup."
+}

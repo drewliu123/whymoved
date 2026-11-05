@@ -1,0 +1,57 @@
+{
+  "qid": "Q057",
+  "as_of": "2026-07-13",
+  "kept": [
+    {
+      "excerpt": "As of early July 2026, Claude Fable 5 was described as the highest-rated model overall, with an approximately 1509 Arena score. Claude Opus 4.6–4.8 Thinking variants were described as extremely close behind Fable 5.",
+      "published_at": "2026-07-03",
+      "publisher": "ReadyTools",
+      "relevance": "Provides a contemporaneous indication of proximity to 1510, although the article does not identify the style-control setting and therefore cannot establish the resolution-specific score.",
+      "url": "https://www.readytools.co/de/blog/the-2026-ai-landscape-strongest-models-vs-most-used-models/"
+    },
+    {
+      "excerpt": "The July 10, 2026 changelog entry states that muse-spark-1.1 was added to the Text Arena and Code Arena leaderboards. The July 2 entry states that claude-sonnet-5-thinking was added to Code Arena, Text Arena, Search Arena, Vision Arena, and Document Arena leaderboards.",
+      "published_at": "2026-07-10",
+      "publisher": "Arena",
+      "relevance": "Documents recent additions to the qualifying Text Arena leaderboard before the experiment cutoff, showing that the evaluated model pool was continuing to expand.",
+      "url": "https://arena.ai/company/leaderboard-changelog"
+    },
+    {
+      "excerpt": "As of June 30, the export controls on Fable 5 and Mythos 5 had been lifted. Anthropic said Fable 5 would be available globally starting July 1 on the Claude Platform, Claude.ai, Claude Code, and Claude Cowork. A July 1 update states that access to Claude Fable 5 and Mythos 5 was restored.",
+      "published_at": "2026-06-30",
+      "publisher": "Anthropic",
+      "relevance": "Establishes that the model reported near the threshold had returned to public availability before the cutoff following an interruption in deployment.",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5"
+    },
+    {
+      "excerpt": "Anthropic launched Claude Fable 5 on June 9, describing it as a Mythos-class model made safe for general use. Anthropic stated that its capabilities exceeded those of any model the company had previously made generally available and that it was state-of-the-art on nearly all tested AI capability benchmarks.",
+      "published_at": "2026-06-09",
+      "publisher": "Anthropic",
+      "relevance": "Provides dated primary-source evidence of a new frontier model release, while the performance statements remain vendor claims rather than qualifying Arena scores.",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+    },
+    {
+      "excerpt": "GPT-5.6 is a new family of three models: Sol, OpenAI's new flagship model; Terra, a capable lower-cost option; and Luna, its fastest and most cost-efficient model. OpenAI published the family’s system card on July 9, 2026.",
+      "published_at": "2026-07-09",
+      "publisher": "OpenAI",
+      "relevance": "Identifies a newly released competing frontier model family immediately before the cutoff, without assuming that its general capabilities translate into a particular Arena score.",
+      "url": "https://deploymentsafety.openai.com/gpt-5-6"
+    },
+    {
+      "excerpt": "Arena released the full history of its published leaderboards as a public-access dataset. The release covered 14 subsets across 10 arenas, including separate variants with and without style control, and included a leaderboard publication date for each entry. Arena reported that the mean score of the leading Text Arena models had risen from a little over 1,000 in May 2023 to nearly 1,500.",
+      "published_at": "2026-04-02",
+      "publisher": "Arena",
+      "relevance": "Supplies official historical progression context and establishes the dated, non-style-controlled dataset needed to reconstruct the exact baseline relevant to the threshold.",
+      "url": "https://arena.ai/blog/arena-leaderboard-dataset"
+    },
+    {
+      "excerpt": "Arena published Arena-Rank, an open-source Python package that powers its leaderboard. Its example fits a Bradley–Terry ranking model and prints ratings and confidence intervals. Arena said the implementation used closed-form confidence intervals instead of bootstrap intervals.",
+      "published_at": "2025-12-18",
+      "publisher": "Arena",
+      "relevance": "Explains the statistical mechanism behind the score, helping distinguish a published point estimate crossing 1510 from uncertainty intervals or ordinal rankings.",
+      "url": "https://arena.ai/blog/arena-rank"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-07-13, inclusive. Only explicitly dated publications or individually dated changelog entries on or before that date are included; no prediction-market material, odds, or later developments are included. Publication dates and excerpts were checked against web_search-indexed source text. web_fetch failed because its provider configuration was ambiguous; the requested agent-reach fallback returned a rate-limit error, so full-page fallback verification was unavailable. The ReadyTools score is approximate and its style-control setting is unspecified. A verified July 13 Text Arena Overall snapshot with style control off was not obtained; this pack therefore does not establish the exact cutoff-day qualifying leader score. For sources with updates, only content dated on or before the cutoff was used: Anthropic's July 1 restoration update and Arena-Rank's stated February 21, 2026 update are within the permitted window."
+}

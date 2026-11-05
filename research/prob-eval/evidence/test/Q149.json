@@ -1,0 +1,43 @@
+{
+  "qid": "Q149",
+  "as_of": "2026-07-14",
+  "kept": [
+    {
+      "excerpt": "Prime Minister Benjamin Netanyahu and US President Donald Trump agreed to meet in the US in the near future during a phone call today, according to a statement issued by the Prime Minister’s Office.",
+      "published_at": "2026-07-03",
+      "publisher": "The Times of Israel",
+      "relevance": "Reports a public agreement to meet soon in the United States, supporting the possibility of an in-person encounter during July without establishing a firm date.",
+      "url": "https://www.timesofisrael.com/liveblog_entry/trump-and-netanyahu-speak-by-phone-pmo-says-agreed-to-meet-in-us-soon/"
+    },
+    {
+      "excerpt": "President Trump told Axios Saturday that Israeli Prime Minister Benjamin Netanyahu asked him for a meeting at the White House, and that it could take place as early as next week after Trump returns from the NATO summit. An Israeli official said next week might be too soon for the visit to take place because of Trump's trip to Turkey, where the NATO summit will take place on July 7-8.",
+      "published_at": "2026-07-04",
+      "publisher": "Axios",
+      "relevance": "Provides Trump's direct indication of a possible July meeting alongside a contemporaneous scheduling caveat from an Israeli official.",
+      "url": "https://www.axios.com/2026/07/04/trump-israel-netanyahu-white-house-meeting-iran"
+    },
+    {
+      "excerpt": "As part of the continuous contact between Prime Minister Benjamin Netanyahu and US President Donald Trump, an additional conversation took place this evening between the two, during which the continued coordination between the countries in various sectors was established. President Trump updated the Prime Minister on American moves in the Gulf.",
+      "published_at": "2026-07-09",
+      "publisher": "Prime Minister's Office, Government of Israel",
+      "relevance": "Officially documents continuing high-level coordination during July, while describing a conversation that does not itself establish a qualifying in-person encounter.",
+      "url": "https://www.gov.il/en/pages/event-tramp090726"
+    },
+    {
+      "excerpt": "President Trump told Israeli Prime Minister Benjamin Netanyahu during a phone call Thursday that Israel should start redeploying its forces out of Syria and urged him to do the same in Lebanon, according to U.S. and Israeli officials.",
+      "published_at": "2026-07-14",
+      "publisher": "Axios",
+      "relevance": "Provides cutoff-day reporting on substantive bilateral issues and recent telephone contact that could motivate further talks, without demonstrating an in-person meeting.",
+      "url": "https://www.axios.com/2026/07/14/trump-netanyahu-syria-lebanon-redeploy"
+    },
+    {
+      "excerpt": "WASHINGTON, Feb 11 (Reuters) - President Donald Trump said after talks with Israeli Prime Minister Benjamin Netanyahu on Wednesday they reached no \"definitive\" agreement on how to move forward with Iran but he insisted negotiations with Tehran would continue to see if a deal can be achieved. Netanyahu’s visit, originally scheduled for February 18, was brought forward amid renewed U.S. engagement with Iran.",
+      "published_at": "2026-02-11",
+      "publisher": "Reuters, via Investing.com",
+      "relevance": "Supplies a historical precedent for an in-person meeting and for advancing a planned visit when Iran diplomacy creates urgency.",
+      "url": "https://www.investing.com/news/world-news/israels-netanyahu-expected-to-press-trump-over-iran-diplomacy-4498718"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-07-14, inclusive. Publication dates and quoted passages were verified from web_search results displaying explicit dates or dated article text. Built-in web_fetch failed because of a provider configuration error; the requested agent-reach web read fallback returned RATE_LIMITED, so full-page verification was unavailable. Only dated material published on or before the cutoff is included; later-dated results, retrospective material, prediction-market pages, odds, and market prices were excluded. The July 3 and July 4 items concern the same prospective visit and should not be counted as independent meeting arrangements. Telephone conversations do not satisfy the specified in-person interaction requirement. These selected sources establish prospective meeting intent and relevant diplomatic context, but do not establish a firm July appointment as of the cutoff."
+}

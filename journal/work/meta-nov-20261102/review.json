@@ -1,0 +1,51 @@
+{
+  "status": "completed_with_findings_addressed",
+  "independent_reviewer": "touyan:red-team",
+  "analysis_checks": {
+    "method": "pass",
+    "discrimination": "fail_in_original_T3_design; limitation retained; original outcomes frozen, no retrospective rewrite; next observations corrected",
+    "models": "pass_for_nonapplicability_and_spot_checked_arithmetic; no independent execution",
+    "market": "pass_for_cost_evaluation_only"
+  },
+  "value_checks": {
+    "variant_edge": "original direction proxy failed; replaced with cost-only proxy",
+    "catalyst_timing": "pass_with_two_original_checks",
+    "price_payoff": "pass",
+    "ranking": "pass_as_research_order_only",
+    "failure_triggers": "pass_with_specific_observations_added",
+    "update_review": "not_applicable_first_run"
+  },
+  "findings": [
+    {
+      "severity": "material",
+      "target": "direction",
+      "problem": "Old capex disclosures and negative FCF do not alone establish November incremental downside; all capex not identifiable as AI",
+      "disposition": "Conditional downside scenario, acknowledged realized decline, capital expenditure wording corrected"
+    },
+    {
+      "severity": "material",
+      "target": "market direction proxy",
+      "problem": "Different barrier distances confound direction inference",
+      "disposition": "Removed directional reading from claims, market and opportunity; cost proxy only"
+    },
+    {
+      "severity": "material",
+      "target": "T2/T3 discrimination",
+      "problem": "T3 predictions coexist; next observations copied across tests",
+      "disposition": "Preserved frozen outcomes, explicitly marked T3 no discrimination; no supports/weakens; tailored observations and next-run redesign"
+    },
+    {
+      "severity": "minor",
+      "target": "100-share theoretical fees and dominance",
+      "problem": "Top depth often below100; dominance quantity bounded",
+      "disposition": "Relabeled theoretical unit cost, retained depth and limited coverage to common visible quantity"
+    },
+    {
+      "severity": "minor",
+      "target": "ranking expression",
+      "problem": "Research order could be confused with expected return ranking",
+      "disposition": "Added spread/depth reasoning in answer and table; no confirmed edge"
+    }
+  ],
+  "verification_scope": "Reviewer independently opened Meta IR and BLS; did not re-fetch CLOB/fees or execute code; no claim that revised draft independently re-reviewed."
+}

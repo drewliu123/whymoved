@@ -1,0 +1,38 @@
+{
+ "qid": "Q064",
+ "question": "Will Russia capture Bilytske by September 30, 2026?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Russia captures the building located at 48.40731° N, 37.17956° E in Bilytske, Donetsk Oblast, between market creation and the specified date, 11:59 PM ET.\n\nThe building will be considered captured if any part of the building is shaded under a below specified layer on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. Otherwise, the market will resolve to “No”.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date.\n\nAny continuous shading under the following layers will qualify:\n- Assessed Russian-Controlled Terrain\n- Assessed Russian Advances\n\nShading under the following layers will not qualify:\n- Assessed Russian Infiltration Areas\n- Claimed Russian Territory\n\nOnce a qualifying condition is met, any subsequent loss of control will not be considered towards the resolution of this market.\n\nIf Russia comes into control of the specified territory as a result",
+ "as_of": "2026-09-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-17T02:10:14+00:00",
+   "excerpt": "Russian forces advanced in southwestern Bilytske, southeast of Dobropillya, according to geolocated footage published on September 14. Ukrainian forces struck multiple Russian positions in the smaller settlement named Dobropillya after a likely Russian infiltration mission, according to geolocated footage published on September 16."
+  },
+  {
+   "id": "E2",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-16T02:57:06+00:00",
+   "excerpt": "Ukrainian forces recently advanced in southwestern Bilytske and advanced or maintained positions in western Bilytske, according to geolocated footage published on September 14, contrary to Russian claims of advances in western Bilytske. An NCO of a Ukrainian battalion operating in the Dobropillya direction said Russian forces had been deploying new units and intensifying attempts to reach Dobropillya over the preceding few weeks."
+  },
+  {
+   "id": "E3",
+   "publisher": "ArmyInform — Ukrainian Ministry of Defence information agency",
+   "published_at": "2026-09-15",
+   "excerpt": "Russian forces were increasing pressure toward Dobropillya, transferring new units and expanding their drone presence, Ukrainian National Guard battalion staff sergeant Dmytro Davydenko said. He said possible routes for mechanized columns had been mined, destroyed or blocked. He also described limits on coordinating infantry groups because drone pilots must guide their movement."
+  },
+  {
+   "id": "E4",
+   "publisher": "Interfax-Ukraine",
+   "published_at": "2026-09-12T19:53:25+03:00",
+   "excerpt": "Azov corps commander Denys Prokopenko described the Dobropillya situation as difficult and estimated a roughly six-to-one Russian advantage in personnel, forces and equipment. He said about one-third of Russia's Rubikon drone force was deployed on this axis. He expected September to be the culmination of the Russian offensive campaign and a shift toward mechanized breakthrough attempts in October as weather conditions changed."
+  },
+  {
+   "id": "E5",
+   "publisher": "EUobserver — Tomáš Vasilko",
+   "published_at": "2026-09-17",
+   "excerpt": "Russian forces were fighting for the village of Dobropillia, about five kilometres from the city of the same name. The Ukrainian account Petrenko reported Russian advances in the Bilytske area. The article cited analyst Clément Molin's assessment that the Russian 8th, 41st and 51st combined arms armies were attacking on the southern Donbas flank."
+  }
+ ]
+}

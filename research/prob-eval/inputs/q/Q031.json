@@ -1,0 +1,20 @@
+{
+ "qid": "Q031",
+ "question": "Will Rodri stay at Manchester City?",
+ "rules": "This market will resolve to the next team Rodri officially joins by September 1, 2026, 11:59 PM ET.\n\nIf Rodri does not officially join a new team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Manchester City\".\n\nIf Rodri joins a team that is not listed, this market will resolve to \"Other\".\n\nIf Rodri is released, retires, or is not under contract with any professional team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nAn official transfer announcement prior to the market's close date will immediately resolve this market to the corresponding option.\n\nThe primary resolution sources for this market will be official announcements from Manchester City and/or the acquiring team. A consensus of credible media reporting may also be used to resolve the market.",
+ "as_of": "2026-08-04",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Sky Sports",
+   "published_at": "2026-07-31",
+   "excerpt": "Real Madrid were expected to make an offer for Rodri and were believed to have made initial contact with Manchester City, according to Sky Sports News. Madrid were believed willing to pay £43 million–£51 million (€50 million–€60 million), given that he had one year left on his contract. City did not want to sell him and hoped to agree a new long-term contract."
+  },
+  {
+   "id": "E2",
+   "publisher": "AS",
+   "published_at": "2026-08-04",
+   "excerpt": "AS reported that Rodri prioritized Real Madrid if he left Manchester City, despite interest from Barcelona and other clubs. Barcelona had approached his representatives but had not contacted City, according to SER. City were asking €75 million, while Madrid hoped to complete a deal for around €60 million. Madrid also needed at least one player departure to accommodate its planned signings."
+  }
+ ]
+}

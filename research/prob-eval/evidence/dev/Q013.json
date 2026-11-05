@@ -1,0 +1,50 @@
+{
+  "qid": "Q013",
+  "as_of": "2026-07-18",
+  "kept": [
+    {
+      "published_at": "2026-07-15",
+      "publisher": "EFE via SWI swissinfo.ch",
+      "url": "https://www.swissinfo.ch/spa/estados-unidos-asegura-que-no-obstaculizar%C3%A1-el-regreso-de-mar%C3%ADa-corina-machado-a-venezuela/91752830",
+      "excerpt": "«La postura del Departamento de Estado es clara, no vamos a obstaculizar el regreso de María Corina Machado a Venezuela. Ella es ciudadana venezolana y tiene derecho a volver», aseguró Weiland. «Se propuso una ley de amnistía que, lamentablemente tal y como está redactada, sigue impidiendo que María Corina entre en Venezuela sin riesgo de arresto», explicó.",
+      "relevance": "Congressional testimony describes the stated US policy permitting her return while identifying unresolved arrest risk as a practical obstacle to physical entry."
+    },
+    {
+      "published_at": "2026-07-15",
+      "publisher": "Europa Press",
+      "url": "https://www.europapress.es/internacional/noticia-machado-defiende-regreso-venezuela-fuerza-estabilizadora-pacificadora-pais-20260715134457.html",
+      "excerpt": "La líder de la oposición y premio Nobel de la Paz María Corina Machado ha defendido este miércoles su regreso a Venezuela como una fuerza \"estabilizadora\" y \"pacificadora\", insistiendo en que solo una transición democrática llevará la estabilidad al país tras la caída de Nicolás Maduro. \"Ese es mi propósito ahora que voy a regresar a Venezuela\", ha afirmado en una intervención por videoconferencia en el Libertas Forum que organiza el Partido Popular Europeo en Madrid.",
+      "relevance": "Her latest verified public remarks in the selected evidence reiterate an intention to return, without supplying a dated itinerary for entry by July 31."
+    },
+    {
+      "published_at": "2026-07-07",
+      "publisher": "EFE",
+      "url": "https://efe.com/mundo/2026-07-07/maria-corina-machado-regresara-venezuela-promesa-opositora/",
+      "excerpt": "«Voy a volver. No como un evento, sino como una promesa que se cumple paso a paso, porque mi lugar está allá, con ustedes. Y cuando nos encontremos, vamos a levantar este país desde el mismo lado en el que siempre hemos estado», escribió Machado en su cuenta de X.",
+      "relevance": "A directly attributed statement confirms continued intent to return while its gradual framing leaves the timing uncertain."
+    },
+    {
+      "published_at": "2026-07-03",
+      "publisher": "RTVE Noticias",
+      "url": "https://www.rtve.es/noticias/20260703/eeuu-maria-corina-machado-intentos-frustrados-volver-venezuela/17142122.shtml",
+      "excerpt": "Según una exclusiva de The Wall Street Journal, Machado despegó el viernes 26 de junio rumbo a Venezuela en un avión privado que salió desde Virginia (EE.UU.) con dirección a Curazao, una isla neerlandesa a pocos kilómetros de la costa venezolana. Sin embargo, una hora después del despegue, la compañía encargada del vuelo ordenó a los pilotos que dieran la vuelta. El medio estadounidense, que cita diversas fuentes familiarizadas con el asunto, explica que las autoridades neerlandesas suspendieron el permiso de aterrizaje para Machado —cuyo pasaporte está caducado— al enterarse de que EE.UU. no respaldaba el viaje.",
+      "relevance": "The reported aborted journey demonstrates concrete travel efforts and diplomatic and documentation obstacles that prevented progress toward Venezuelan terrestrial entry."
+    },
+    {
+      "published_at": "2026-07-03",
+      "publisher": "EFE",
+      "url": "https://efe.com/mundo/2026-07-03/maria-corina-machado-regreso-venezuela-proteccion/",
+      "excerpt": "La líder opositora venezolana y ganadora del Premio Nobel de la Paz 2025, María Corina Machado, dijo este viernes que no ha solicitado protección para regresar a Venezuela. «Yo no, ni nuestros equipos, requerimos ni hemos solicitado ningún tipo de protección ni que se asigne ningún tipo de recurso a seguridad», indicó Machado en un encuentro virtual con la prensa. «Todo el mundo me dice: ¿Quién te va a cuidar? Bueno, millones de venezolanos», añadió.",
+      "relevance": "Machado's direct denial of requiring a security detail helps assess whether obtaining foreign protection is a prerequisite she herself places on returning."
+    },
+    {
+      "published_at": "2026-06-29",
+      "publisher": "Reuters via KELO-AM",
+      "url": "https://kelo.com/2026/06/29/venezuelas-machado-says-she-will-return-to-venezuela-to-help-quake-victims/",
+      "excerpt": "June 29 (Reuters) – Venezuelan opposition leader Maria Corina Machado said on Monday she is “willing to do whatever it takes” to enter Venezuela to help with the country’s recovery efforts following last week’s back-to-back earthquakes. Machado, currently in Panama, accused the Venezuelan government of blocking her attempt to return to the country, and in a video posted on X said she “will be in Venezuela to help coordinate and encourage citizens’ efforts during the emergency.” She did not provide further details about her plan to enter Venezuela.",
+      "relevance": "Reuters establishes her reported location outside Venezuela, the humanitarian catalyst for an accelerated return, and the absence of disclosed entry arrangements."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-07-18. Selected six reports with explicit publication dates on or before the cutoff; original-language excerpts are retained. Search results with later publication dates and outcome information were excluded, as were prediction-market and betting pages. Full article text was retrieved for the June 29 Reuters report, July 3 RTVE report, and July 3 and July 7 EFE reports using the agent-reach web reader after web_fetch failed. The July 15 Europa Press and EFE/SWI items were verified from dated article text exposed by web_search; fallback reads of those pages were unavailable. Dynamic recommendations and unrelated later material on article pages were excluded. The selected sources provide no confirmed itinerary specifying physical entry into Venezuela by July 31. The market-creation date was not supplied, so the beginning of the resolution window could not be independently checked."
+}

@@ -1,0 +1,50 @@
+{
+  "qid": "Q105",
+  "as_of": "2026-07-06",
+  "kept": [
+    {
+      "excerpt": "Argentina beat Cabo Verde 3-2 after extra time and will face Egypt in the last 16. Lionel Messi scored in the 29th minute, extending his scoring streak to eight successive World Cup matches. Argentina's other goals were credited to Lisandro Martinez and a Diney Borges own goal.",
+      "published_at": "2026-07-04",
+      "publisher": "FIFA",
+      "relevance": "The official match report confirms Argentina remained in contention and identifies which goals count toward its players' individual scoring totals.",
+      "url": "https://www.fifa.com/en/articles/argentina-cabo-verde-match-report-highlights"
+    },
+    {
+      "excerpt": "Kylian Mbappe scored his seventh goal of the FIFA World Cup 2026 as France overcame Paraguay to set up a quarter-final meeting with Morocco. Mbappe struck a second-half penalty, moving level with Lionel Messi on goals but leading on assists in the race for the adidas Golden Boot.",
+      "published_at": "2026-07-04",
+      "publisher": "FIFA",
+      "relevance": "This establishes Messi's seven-goal total and a principal rival's advantage under FIFA's official ranking criteria when goals are equal.",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/paraguay-france-match-report-highlights?searchOverlay=1"
+    },
+    {
+      "excerpt": "Messi's goal against Cape Verde was the 20th of his World Cup career and extended his scoring streak to eight consecutive World Cup games. After the match he appeared with a large bump above his right eye following an apparent collision with a Cape Verde player. He said, in comments translated from Spanish, \"It hurts a little but I'm good.\"",
+      "published_at": "2026-07-03",
+      "publisher": "The Associated Press",
+      "relevance": "The report provides contemporaneous evidence of Messi's scoring form and his own assessment of a potential fitness concern.",
+      "url": "https://apnews.com/article/64fe1029d7f5ca97976cd5ac09075c28"
+    },
+    {
+      "excerpt": "Haaland's second goal against Brazil brought his tournament total to seven, level at the top of the Golden Boot standings.",
+      "published_at": "2026-07-05",
+      "publisher": "The Guardian",
+      "relevance": "Haaland's tally establishes another direct competitor to Messi by the evidence cutoff.",
+      "url": "https://www.theguardian.com/football/live/2026/jul/05/brazil-v-norway-world-cup-2026-last-16-live"
+    },
+    {
+      "excerpt": "Argentina face Egypt in the round of 16 in Atlanta on July 7 at noon local time. The winners face Switzerland or Colombia.",
+      "published_at": "2026-07-06",
+      "publisher": "Al Jazeera",
+      "relevance": "The dated preview identifies Argentina's next elimination hurdle and prospective quarter-final opponents, which affect its scorers' remaining opportunities.",
+      "url": "https://www.aljazeera.com/news/2026/7/6/argentina-vs-egypt-fifa-world-cup-last-16-messi-salah-prediction-kickoff-news"
+    },
+    {
+      "excerpt": "Kylian Mbappe won the 2022 World Cup Golden Boot after scoring eight goals, including three in the final. Lionel Messi finished second with seven goals.",
+      "published_at": "2022-12-18",
+      "publisher": "Qatar News Agency",
+      "relevance": "The previous tournament supplies a historical scoring benchmark and demonstrates that seven goals did not guarantee the award.",
+      "url": "https://qna.org.qa/en/news/special-news-details?date=18%2F12%2F2022&id=0078-qatar-2022-mbappe-wins-golden-boot"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-06. Publication dates were verified through explicit dates in web-search source extracts or dated news metadata; relative crawl ages were not used as publication dates. Only reporting about events through the cutoff and previews published by the cutoff were retained. Later reports, updated tournament-wide trackers, undated statistics pages, betting pages and market prices were excluded. Built-in web_fetch failed because of a provider-configuration error; the requested agent-reach fallback returned RATE_LIMITED, so no further fallback reads were attempted. Evidence relies on indexed source extracts rather than successful full-page fetches. No post-cutoff developments or tournament outcome are included."
+}

@@ -1,0 +1,55 @@
+{
+  "qid": "Q051",
+  "as_of": "2026-09-03",
+  "kept": [
+    {
+      "excerpt": "The September 3 voter barometer put the Social Democrats at 29.2%, the Sweden Democrats at 18.9%, and the Moderates at 16.4%. The remaining parliamentary parties each polled between 3.0% and 8.1%. Verian conducted 3,069 interviews between August 20 and September 2, 2026; 12.5% of respondents did not name a party.",
+      "published_at": "2026-09-03",
+      "publisher": "Verian, polling for SVT",
+      "relevance": "The cutoff-date poll places SD second, 2.5 percentage points ahead of its nearest challenger, the Moderates, while documenting remaining voter uncertainty.",
+      "url": "https://www.veriangroup.com/sv/news-and-insights/valjarbarometer-september-2026"
+    },
+    {
+      "excerpt": "Demoskop's September poll showed a sharp decline for the Social Democrats and an increase for the Sweden Democrats. Social Democratic support was 27.2%, while the Liberals increased to 2.8%. The survey comprised 1,998 online interviews conducted between August 25 and September 1; Demoskop does not report conventional margins of error because its monthly barometer is not based on a purely random population sample.",
+      "published_at": "2026-09-03",
+      "publisher": "Demoskop, polling for Aftonbladet and Svenska Dagbladet",
+      "relevance": "This independent cutoff-date survey corroborates movement toward SD while highlighting methodological uncertainty and the Liberals' position below the parliamentary threshold.",
+      "url": "https://demoskop.se/valjarbarometer-september-2026/"
+    },
+    {
+      "excerpt": "Novus reported that Moderate support fell by 1.1 percentage points to 17.2%, while SD recovered its previous month's decline. Its hypothetical allocation of parliamentary seats was Social Democrats 95, Sweden Democrats 76, Moderates 63, Centre Party 31, Left Party 31, Greens 29, Christian Democrats 24, and Liberals zero. The survey covered 2,984 eligible voters interviewed between August 24 and August 30, 2026.",
+      "published_at": "2026-09-01",
+      "publisher": "Novus",
+      "relevance": "The poll's explicit seat allocation directly addresses the resolution criterion and places SD second with a 13-seat lead over the Moderates.",
+      "url": "https://novus.se/valjarbarometer-arkiv/2026-09-novus-valjarbarometer/"
+    },
+    {
+      "excerpt": "The official summary of the 2022 Riksdag election gives the Social Democrats 30.33% of votes and 107 seats, the Sweden Democrats 20.54% and 73 seats, and the Moderates 19.10% and 68 seats. The Riksdag's 349 seats were distributed among eight parties.",
+      "published_at": "2026-05-07",
+      "publisher": "Valmyndigheten — Swedish Election Authority",
+      "relevance": "The preceding election supplies the historical baseline: SD finished second, narrowly ahead of the Moderates in both votes and seats.",
+      "url": "https://www.val.se/valresultat-och-statistik/riksdags--region--och-kommunval/valresultat-2022"
+    },
+    {
+      "excerpt": "Demoskop's additional August barometer reported that SD fell by almost two percentage points, narrowing the difference between SD and the Moderates to 1.1 percentage points. The opposition's aggregate lead was 5.7 percentage points. Christian Democratic support reached 8.5%, while the Liberals remained at 2.0%.",
+      "published_at": "2026-08-27",
+      "publisher": "Demoskop, polling for Aftonbladet and Svenska Dagbladet",
+      "relevance": "This recent earlier survey shows that SD's advantage over the Moderates had been small and variable during the campaign.",
+      "url": "https://demoskop.se/extra-valjarbarometer-augusti-2026/"
+    },
+    {
+      "excerpt": "Verian's August barometer put the Social Democrats at 30.5%, the Sweden Democrats at 18.5%, and the Moderates at 17.3%. SD had polled below 19% for three consecutive measurements, while the Moderates had recorded support around 17% for five consecutive measurements. The survey comprised 3,043 interviews conducted between August 3 and August 16, 2026.",
+      "published_at": "2026-08-18",
+      "publisher": "Verian, polling for SVT",
+      "relevance": "The preceding comparable poll establishes SD's second-place position and its narrower 1.2-point advantage over the Moderates before the cutoff-date measurement.",
+      "url": "https://www.veriangroup.com/sv/news-and-insights/valjarbarometer-augusti-2026"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.val.se/servicelankar/servicelankar/pressrum/information-till-media-om-att-folja-rostrakningen-valen-2026",
+      "reason": "The excerpt explicitly mentions post-cutoff events: the September 13 election, September 14 final counting, and the expected establishment of the final result approximately one week after election day. Removed under the rule excluding any excerpt/relevance mentioning or implying anything after 2026-09-03, even though these are prospective schedule statements."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-09-03 inclusive. Selected seven dated official or original polling sources; excerpts are factual English translations or paraphrases of source text. No betting pages, market prices, later polls, election outcomes or post-cutoff developments are included. Publication dates were verified in indexed source text and, for Verian, its dated publication index. The Novus page displays '1 September 2026' but describes the release as the September 2 barometer; both dates precede the cutoff, and published_at follows the displayed page date. Pages explicitly updated after the cutoff were excluded. web_fetch failed because multiple fetch providers were registered; the authorized agent-reach web-read fallback returned RATE_LIMITED, so no further requests were made through that channel. Evidence therefore relies on source text exposed by web_search, rather than successful direct page retrieval. Poll vote shares and hypothetical seat allocations are evidence available at the cutoff, not election results."
+}

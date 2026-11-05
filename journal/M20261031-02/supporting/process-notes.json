@@ -1,0 +1,38 @@
+{
+  "community": {
+    "result": "insufficient_verified_current_evidence",
+    "reddit": "last30days返回候选；原帖与归档403，时间与互动量无法核验，未纳入结论",
+    "x": "engine unconfigured; supplemental search no verifiable results",
+    "new_authors": []
+  },
+  "forecast_audit": {
+    "first_trials_rejected": [
+      0.72,
+      0.7,
+      0.68
+    ],
+    "reason": "三者引入冻结证据外公司保守指引历史假设；未采用",
+    "compliant_rerun_trials": [
+      0.46,
+      0.46,
+      0.46
+    ],
+    "note": "独立作答不等于统计独立，均为主观判断"
+  },
+  "red_team": {
+    "applied": [
+      "公司指引不能代替同期市场调查",
+      "超过中点不等于超预期",
+      "毛利率低于75%也可能低于指引下沿",
+      "单次财报不能裁决长账期融资风险",
+      "ask概率只表示YES小额成交口径，非全市场概率"
+    ],
+    "unresolved_gaps": [
+      "带截面时间的最新分析师调查",
+      "客户级应收回款及违约条款",
+      "可靠期权链和原始持仓"
+    ]
+  },
+  "source_code_modified": false,
+  "forbidden_historical_evidence_used": false
+}

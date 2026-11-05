@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "copy": "source",
+      "path": "skills/research/SKILL.md",
+      "sha256": "decb5a73b9f5b48464159693963d6237d84be0531d845bb7599e0234aae1a9af",
+      "new_rule_present": true
+    },
+    {
+      "copy": "source",
+      "path": "skills/research/references/memo-template.md",
+      "sha256": "74d2095e7900e569dbe5fd1a7b66e2209d01dc058e242dfe5a2daf767a27c37c",
+      "new_rule_present": true
+    },
+    {
+      "copy": "source",
+      "path": "agents/red-team.md",
+      "sha256": "d64d1e49825ea36034a8a6afba094ccf3356275d0161b02f475bb21fb057f28f",
+      "new_rule_present": true
+    },
+    {
+      "copy": "installed",
+      "path": "skills/research/SKILL.md",
+      "sha256": "318307e526ff9741c2f41ab0b766a27eb019b81f7305db5685e623aac1336d5b",
+      "new_rule_present": true
+    },
+    {
+      "copy": "installed",
+      "path": "skills/research/references/memo-template.md",
+      "sha256": "74d2095e7900e569dbe5fd1a7b66e2209d01dc058e242dfe5a2daf767a27c37c",
+      "new_rule_present": true
+    },
+    {
+      "copy": "installed",
+      "path": "agents/red-team.md",
+      "sha256": "d64d1e49825ea36034a8a6afba094ccf3356275d0161b02f475bb21fb057f28f",
+      "new_rule_present": true
+    }
+  ],
+  "existing_source_install_difference_preserved": true,
+  "execution": "提示词差异与内容核对；未执行研究E2E或应用测试"
+}

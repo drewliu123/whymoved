@@ -1,0 +1,251 @@
+{
+  "question": "截至研究截面，英伟达（NVDA）下一次财报前的市场预期是什么，关键分歧和证伪条件有哪些？",
+  "as_of": "2026-10-31T05:12:10.269507Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "NVIDIA 2026-08-26公布截至2026-07-26的Q2 FY2027：总收入962.21亿美元，数据中心收入890亿美元；non-GAAP毛利率75.0%。",
+      "type": "fact",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA IR",
+          "tier": "T0",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "公司对Q3 FY2027总收入指引为1080亿美元±2%，non-GAAP毛利率指引74.0%±50基点；指引不假设中国Data Center compute收入。",
+      "type": "fact",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA IR",
+          "tier": "T0",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "公司2026-10-28公告：截至2026-10-25的Q3 FY2027业绩将于2026-11-17约13:20 PT公布，电话会14:00 PT/17:00 ET。",
+      "type": "fact",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+          "publisher": "NVIDIA IR",
+          "tier": "T0",
+          "published_at": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "官方IR行情页标注2026-10-30 4:00 PM：NVDA为204.64美元，前收213.66美元，变动-9.02美元/-4.22%；页面说明报价延迟20分钟，未明确该时间标记的时区。",
+      "type": "price",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/stock-info/stock-quote-and-chart/default.aspx",
+          "publisher": "NVIDIA IR / quote feed",
+          "tier": "T0",
+          "published_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "Zacks 2026-10-30汇总的当季收入预期为1089.9亿美元，当季EPS预期2.49美元，后者30天上调1%；本次未取得样本人数与EPS完整调整口径。",
+      "type": "consensus",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://www.zacks.com/stock/news/3019405/nvidia-corporation-nvda-is-attracting-investor-attention-here-is-what-you-should-know",
+          "publisher": "Zacks",
+          "tier": "T1",
+          "published_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "Zacks 2026-10-30称，过去四季NVIDIA均超过其收入和EPS估计；上季收入962.2亿美元相对其918亿美元估计高4.82%，上季EPS为2.22美元。",
+      "type": "consensus",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://www.zacks.com/stock/news/3019405/nvidia-corporation-nvda-is-attracting-investor-attention-here-is-what-you-should-know",
+          "publisher": "Zacks",
+          "tier": "T1",
+          "published_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "Zacks收入预期比公司指引中值高9.9亿美元，约0.92%，仍在公司1058.4亿至1101.6亿美元指引区间内；超过公司中值不等于超过该预期。",
+      "type": "inference",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [],
+      "basis": [
+        "C2",
+        "C5"
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "2026-10-31T05:03:55Z抓取的Polymarket数据中心收入阈值显示：>950亿美元为70%，>1000亿美元为88%；前者bid/ask为43¢/97¢，后者78¢/98¢。",
+      "type": "price",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://polymarket.com/event/will-nvidia-nvda-q3-data-center-revenue-be-above-20261008120135000",
+          "publisher": "Polymarket Gamma",
+          "tier": "T0",
+          "published_at": "2026-10-31T05:03:55Z"
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "2026-10-31T05:03:57Z毛利率73%至75%合约显示77.5%；05:04:28Z的CLOB订单簿最高买价73¢/20.1份、最低卖价82¢/20份；这是历史抓取报价，不保证随后仍可成交。",
+      "type": "price",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "published_at": "2026-10-31T05:03:57Z"
+        },
+        {
+          "url": "https://clob.polymarket.com/book?token_id=12184345390140772513332883679626608175715846723917987793045546957490562215909",
+          "publisher": "Polymarket CLOB",
+          "tier": "T0",
+          "published_at": "2026-10-31T05:04:28Z"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "毛利率合约按Q3官方最精确non-GAAP毛利率裁决，73%包含、75%不包含；如报区间取中点，缺指标或截至2026-12-31 23:59 ET未发布材料则归最低档，后续修订不计。",
+      "type": "fact",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000",
+          "publisher": "Polymarket rules",
+          "tier": "T0",
+          "published_at": "2026-10-31T05:03:57Z"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "收入阈值显示值违背嵌套事件应有的单调关系，且价差很大，不宜拟合可靠收入分布；毛利率77.5%显示值也不能当作可直接成交价。",
+      "type": "inference",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [],
+      "basis": [
+        "C8",
+        "C9"
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "公司毛利率指引区间73.5%至74.5%落在73%含至75%不含的合约区间内；指引与合约方向相容，但指引不是已实现毛利率。",
+      "type": "inference",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [],
+      "basis": [
+        "C2",
+        "C10"
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "r/stocks作者soukstah质疑下游AI软件收入能否覆盖资本投入所需回报；这是个人观点，帖子约844分/566评论，互动量为抓取或归档值。",
+      "type": "view",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://www.reddit.com/r/stocks/comments/1wuxwtu/just_sold_last_nvda_googl_and_msft/",
+          "publisher": "Reddit u/soukstah",
+          "tier": "T4",
+          "published_at": "2026-10-01T12:17:27Z"
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "text": "r/NVDA_Stock作者KeyTrainingk看好业务，但不认为盈利增长自动意味着股票便宜；帖子约40分/93评论，互动量为抓取或归档值。",
+      "type": "view",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://www.reddit.com/r/NVDA_Stock/comments/1x0vnke/nvidia_is_doing_almost_everything_right_so_whats/",
+          "publisher": "Reddit u/KeyTrainingk",
+          "tier": "T4",
+          "published_at": "2026-10-08T16:34:04Z"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "r/stocks作者Wonderful-Sail-1126认为不同模型路线均需要硬件，借租价叙事推断需求韧性；帖子约237分/165评论，租价数据未作基本面核验。",
+      "type": "view",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://www.reddit.com/r/stocks/comments/1x7niv5/nvidia_blackwell_rental_prices_hits_record_high/",
+          "publisher": "Reddit u/Wonderful-Sail-1126",
+          "tier": "T4",
+          "published_at": "2026-10-16T18:10:03Z"
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "text": "这组资料能支持对收入兑现与毛利率区间的观察，不能单独推出财报后股价上涨概率或股票便宜；价格反应还需要预期门槛和估值证据。",
+      "type": "inference",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [],
+      "basis": [
+        "C2",
+        "C4",
+        "C5",
+        "C14"
+      ]
+    },
+    {
+      "id": "C17",
+      "text": "最强反方是即使当季增长兑现，客户回报和后续增长仍可能不足以支撑估值；这里将其作为研究风险，未把社区质疑当成已证实的融资或需求恶化。",
+      "type": "inference",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [],
+      "basis": [
+        "C5",
+        "C13",
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "id": "C18",
+      "text": "公司总收入指引区间同时覆盖1089.9亿美元预期的两侧；过去四季超出Zacks预期为有限样本，无法单独确立本季超预期概率。",
+      "type": "inference",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [],
+      "basis": [
+        "C2",
+        "C5",
+        "C6"
+      ]
+    }
+  ]
+}

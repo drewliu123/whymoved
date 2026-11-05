@@ -1,0 +1,687 @@
+{
+  "schema_version": 2,
+  "document_kind": "fact_collector_sources_candidates",
+  "as_of": "2026-11-02T03:40:00Z",
+  "historical": false,
+  "recorded_at": "2026-11-02T03:40:23+00:00",
+  "scope": "截至用户指定11月1日的公开材料；plan截点为2026-11-02T03:40Z，时区差异未自行改写",
+  "budget": {
+    "max_queries": 5,
+    "queries_used": 5,
+    "max_original_opens": 4,
+    "original_opens_used": 4,
+    "failed_opens_counted": true
+  },
+  "candidates": [
+    {
+      "id": "FC1",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "publisher": "Federal Reserve",
+      "tier": "T0",
+      "published_at": "2026-10-28T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "Inflation remains elevated.",
+      "locator": "声明通胀句；WebFetch精确短引文",
+      "origin_id": "fed-fomc-20261028",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录10月声明的通胀评价",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "target_range_percent": [
+          3.75,
+          4.0
+        ],
+        "decision": "held",
+        "vote": "10–2",
+        "dissenters": [
+          "Lisa D. Cook",
+          "Beth M. Hammack"
+        ],
+        "dissent_preference_percentage_point": 0.25,
+        "observation_basis": "以上数字与投票为WebFetch原文提取的转述，不伪装成逐字引文；未返回完整投票名单",
+        "publication_date_nature": "scheduled release time"
+      }
+    },
+    {
+      "id": "FC2",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "publisher": "Federal Reserve",
+      "tier": "T0",
+      "published_at": "2026-10-28T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "Job gains have kept pace with the workforce, and the unemployment rate has changed little.",
+      "locator": "声明就业句；WebFetch精确短引文",
+      "origin_id": "fed-fomc-20261028",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录委员会对就业的表述，与BLS新增就业和失业率同看",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间"
+    },
+    {
+      "id": "FC3",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "canonical_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "publisher": "Bureau of Economic Analysis",
+      "tier": "T0",
+      "published_at": "2026-10-29T08:30:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "increased 0.5 percent",
+      "locator": "正文月度价格段第一句；总体PCE，August–September 2026",
+      "origin_id": "bea-pio-202609-release-20261029",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录总体PCE月度变化",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "value": 0.5,
+        "unit": "percent month-on-month",
+        "period": "2026-09",
+        "currency": null,
+        "scale": "percent",
+        "scope": "US PCE price index",
+        "seasonal_adjustment": "未从本次提取确认",
+        "date_nature": "embargo expiration, not independently established actual publication time",
+        "modified_at": "2026-10-29, time unknown"
+      }
+    },
+    {
+      "id": "FC4",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "canonical_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "publisher": "Bureau of Economic Analysis",
+      "tier": "T0",
+      "published_at": "2026-10-29T08:30:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "increased 3.6 percent",
+      "locator": "正文年度价格段第一句；September 2025–September 2026",
+      "origin_id": "bea-pio-202609-release-20261029",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录总体PCE同比",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "value": 3.6,
+        "unit": "percent year-on-year",
+        "period": "2026-09"
+      }
+    },
+    {
+      "id": "FC5",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "canonical_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "publisher": "Bureau of Economic Analysis",
+      "tier": "T0",
+      "published_at": "2026-10-29T08:30:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "increased 3.1 percent",
+      "locator": "正文年度价格段第二句；PCE excluding food and energy",
+      "origin_id": "bea-pio-202609-release-20261029",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录核心PCE同比",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "value": 3.1,
+        "unit": "percent year-on-year",
+        "period": "2026-09",
+        "other_numeric_transcription": {
+          "core_mom_August": 0.3,
+          "core_mom_September": 0.3,
+          "headline_mom_August": 0.3
+        },
+        "other_numeric_locator": "第三图下summary table，第6行总体价格/第7行剔除食品能源，第2列August、第3列September；均为环比百分比",
+        "July": "原文提取未取得数值",
+        "revisions": "技术说明称7、8月估计纳入修订的BLS就业调查资料；未取得修订幅度"
+      }
+    },
+    {
+      "id": "FC6",
+      "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "canonical_url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "publisher": "Bureau of Labor Statistics",
+      "tier": "T0",
+      "published_at": "2026-10-02T08:30:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "(+29,000)",
+      "locator": "开头叙述段首句；Table B-1 total nonfarm, August–September change",
+      "origin_id": "bls-ces-cps-202609-release-20261002",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录9月新增就业及初值性质",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "value": 29000,
+        "unit": "jobs",
+        "period": "2026-09",
+        "scope": "US total nonfarm establishment survey",
+        "seasonal_adjustment": "seasonally adjusted",
+        "vintage": "2026-10-02 preliminary",
+        "date_nature": "embargo expiration; separate actual publication timestamp not supplied"
+      }
+    },
+    {
+      "id": "FC7",
+      "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "canonical_url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "publisher": "Bureau of Labor Statistics",
+      "tier": "T0",
+      "published_at": "2026-10-02T08:30:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "(4.2 percent)",
+      "locator": "开头叙述段首句；Summary table A unemployment rate，July/August/September 2026列",
+      "origin_id": "bls-ces-cps-202609-release-20261002",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录三个月失业率同口径变化",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "series": [
+          {
+            "period": "2026-07",
+            "value": 4.1
+          },
+          {
+            "period": "2026-08",
+            "value": 4.1
+          },
+          {
+            "period": "2026-09",
+            "value": 4.2
+          }
+        ],
+        "unit": "percent",
+        "scope": "US civilian labor force, household survey",
+        "seasonal_adjustment": "seasonally adjusted",
+        "vintage": "2026-10-02",
+        "table_values_are": "numeric transcription, not verbatim quote"
+      }
+    },
+    {
+      "id": "FC8",
+      "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "canonical_url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "publisher": "Bureau of Labor Statistics",
+      "tier": "T0",
+      "published_at": "2026-10-02T08:30:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "revised down by 31,000",
+      "locator": "establishment-survey narrative最后一段，next-release公告之前，July修订句",
+      "origin_id": "bls-ces-cps-202609-release-20261002",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录7月就业修订",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "period": "2026-07",
+        "previous": 21000,
+        "revised": -10000,
+        "unit": "jobs, seasonally adjusted",
+        "vintage": "2026-10-02"
+      }
+    },
+    {
+      "id": "FC9",
+      "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "canonical_url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "publisher": "Bureau of Labor Statistics",
+      "tier": "T0",
+      "published_at": "2026-10-02T08:30:00-04:00",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": "revised down by 29,000",
+      "locator": "establishment-survey narrative最后一段，next-release公告之前，August修订句",
+      "origin_id": "bls-ces-cps-202609-release-20261002",
+      "origin_basis": "发布机构直接材料",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": true,
+        "reason": "直接观察指定政策变量；不单独裁定假说",
+        "relevance": "direct",
+        "purpose": "记录8月就业修订",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "period": "2026-08",
+        "previous": 162000,
+        "revised": 133000,
+        "unit": "jobs, seasonally adjusted",
+        "vintage": "2026-10-02 preliminary"
+      }
+    },
+    {
+      "id": "FC10",
+      "url": "https://www.axios.com/2026/10/28/fed-warsh-interest-rates-cook",
+      "canonical_url": "https://www.axios.com/2026/10/28/fed-warsh-interest-rates-cook",
+      "publisher": "Axios",
+      "tier": "T2",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": null,
+      "locator": "原文请求返回HTTP 403，未取得正文",
+      "origin_id": "unknown-axios-fedwatch",
+      "origin_basis": "搜索结果线索，原始依据尚未核验",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "test_ids": [
+        "T2"
+      ],
+      "selection": {
+        "selected": false,
+        "reason": "Axios原文403；不能将搜索摘要登记为已核验概率、price或consensus",
+        "relevance": "direct",
+        "purpose": "核验85%线索",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "search_summary_only": "搜索工具摘要称CME FedWatch显示12月加息概率85%；未获取原句、报价时刻、目标区间分布或12月9日合约映射"
+      }
+    },
+    {
+      "id": "FC11",
+      "url": "https://www.bls.gov/news.release/CPI.htm",
+      "canonical_url": "https://www.bls.gov/news.release/CPI.htm",
+      "publisher": "Bureau of Labor Statistics",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": null,
+      "locator": "query Q3 search summary only",
+      "origin_id": "bls-cpi-202609-unverified",
+      "origin_basis": "搜索结果线索，原始依据尚未核验",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "snippet",
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": false,
+        "reason": "4原文预算用于政策、PCE、就业及Axios，CPI仅搜索候选",
+        "relevance": "direct",
+        "purpose": "待核验CPI三个月轨迹",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "search_summary_only": "搜索摘要称9月CPI环比0.6%、同比3.7%，8月环比0.4%、同比3.4%，7月环比0.1%、同比3.4%；本轮未打开，不计为事实"
+      }
+    },
+    {
+      "id": "FC12",
+      "url": "https://apnews.com/article/c06793b0c50641444701d5d098ccc2c8",
+      "canonical_url": "https://apnews.com/article/c06793b0c50641444701d5d098ccc2c8",
+      "publisher": "Associated Press",
+      "tier": "T2",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "quote": null,
+      "locator": "Q2 search rank 4; search summary only",
+      "origin_id": "unknown-ap-fedwatch",
+      "origin_basis": "搜索结果线索，原始依据尚未核验",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "snippet",
+      "test_ids": [
+        "T2"
+      ],
+      "selection": {
+        "selected": false,
+        "reason": "未打开，不作为独立概率证据",
+        "relevance": "direct",
+        "purpose": "同一概率线索的待核查载体",
+        "priority": "decisive"
+      },
+      "retrieved_at_basis": "本轮工具读取完成后的记录时间；工具未提供逐次响应时间",
+      "extracted_observations": {
+        "search_summary_only": "摘要称12月加息概率约85%；不确定是否与Axios共同引用同一CME快照"
+      }
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "site.axios.com/2026/10/28 fed warsh interest rates cook 85%",
+      "test_ids": [
+        "T2"
+      ],
+      "purpose": "精确定位85%线索",
+      "status": "ok",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://www.axios.com/newsletters/axios-macro-341487f0-d20b-11f1-b25a-45e5b2cb2b90"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.axios.com/2026/10/28/fed-warsh-interest-rates-cook"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.axios.com/politics-policy/2026/10/28"
+        }
+      ],
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "results_scope": "保存最相关候选及原始排名，非完整搜索结果；搜索摘要不是原文引文"
+    },
+    {
+      "id": "Q2",
+      "query": "October 28 2026 December 9 FedWatch probability inflation employment Federal Reserve",
+      "test_ids": [
+        "T1",
+        "T2"
+      ],
+      "purpose": "指定会议概率及最强竞争解释线索",
+      "status": "ok",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://www.axios.com/2026/10/28/fed-warsh-interest-rates-cook"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.kiplinger.com/investing/live/fed-meeting-updates-and-commentary-october-2026"
+        },
+        {
+          "rank": 3,
+          "url": "https://apnews.com/article/991eeb23f8acd1e84b11de9b35278681"
+        },
+        {
+          "rank": 4,
+          "url": "https://apnews.com/article/c06793b0c50641444701d5d098ccc2c8"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.federalreserve.gov/monetarypolicy.htm?leadSrc=Organic"
+        }
+      ],
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "results_scope": "保存最相关候选及原始排名，非完整搜索结果；搜索摘要不是原文引文"
+    },
+    {
+      "id": "Q3",
+      "query": "site.bls.gov/news.release/cpi September 2026 August July 2026 inflation October 2026",
+      "test_ids": [
+        "T1"
+      ],
+      "purpose": "近期通胀同口径趋势",
+      "status": "ok",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://www.bls.gov/news.release/CPI.htm"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bls.gov/news.release/archives/cpi_09112026.htm"
+        }
+      ],
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "results_scope": "保存最相关候选及原始排名，非完整搜索结果；搜索摘要不是原文引文"
+    },
+    {
+      "id": "Q4",
+      "query": "site.bea.gov \"September 2026\" \"August\" \"July\" \"PCE\" October 30 2026",
+      "test_ids": [
+        "T1"
+      ],
+      "purpose": "原始PCE与修订",
+      "status": "ok",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-August-2026"
+        }
+      ],
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "results_scope": "保存最相关候选及原始排名，非完整搜索结果；搜索摘要不是原文引文"
+    },
+    {
+      "id": "Q5",
+      "query": "site.bls.gov/news.release/empsit \"September 2026\" \"August\" \"July\" unemployment",
+      "test_ids": [
+        "T1"
+      ],
+      "purpose": "就业走弱与稳定两种预测的同一观察",
+      "status": "ok",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://www.bls.gov/bls/news-release/empsit.htm"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bls.gov/news.release/empsit.htm"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm"
+        }
+      ],
+      "retrieved_at": "2026-11-02T03:40:23+00:00",
+      "results_scope": "保存最相关候选及原始排名，非完整搜索结果；搜索摘要不是原文引文"
+    }
+  ],
+  "source_status": {
+    "fed_statement": {
+      "status": "ok"
+    },
+    "bea": {
+      "status": "partial",
+      "reason": "已读9月原文；未完整取得三个月轨迹"
+    },
+    "bls_employment": {
+      "status": "ok",
+      "reason": "已读档案正文和相关表；原文末33110字符未读，提取覆盖所需表与叙述"
+    },
+    "bls_cpi": {
+      "status": "not_run",
+      "reason": "搜索已执行，原文未打开"
+    },
+    "axios_original": {
+      "status": "error",
+      "reason": "HTTP 403 Forbidden, body not retrieved"
+    },
+    "cme_historical_distribution": {
+      "status": "not_run",
+      "reason": "预算内优先Axios线索，失败后原文预算耗尽"
+    },
+    "official_calendar": {
+      "status": "not_run"
+    },
+    "official_speeches_press_conference": {
+      "status": "not_run"
+    },
+    "community": {
+      "status": "not_run",
+      "reason": "本轮按分工仅T1/T2，未读取其他线程社区结果"
+    }
+  },
+  "test_observations": [
+    {
+      "test_id": "T1",
+      "source_ids": [
+        "FC1",
+        "FC2",
+        "FC3",
+        "FC4",
+        "FC5",
+        "FC6",
+        "FC7",
+        "FC8",
+        "FC9"
+      ],
+      "observations": "委员会称通胀仍高并维持利率，两名委员要求上调25bp；PCE仍高，9月非农弱且失业率略升；原观察保留，不裁定H1/H2",
+      "gaps": "完整通胀三个月序列、其他官员原话及发布前调查缺失"
+    },
+    {
+      "test_id": "T2",
+      "source_ids": [],
+      "observations": null,
+      "status": "missing",
+      "reason": "无经过时刻核验的FedWatch分布，85%仅未核验搜索线索"
+    }
+  ],
+  "gaps": [
+    {
+      "test_id": "T2",
+      "missing": "10月28日至11月1日针对12月9日的完整FedWatch目标区间分布、精确快照时刻及期货推导方法",
+      "reason": "Axios403；CME未直接访问；搜索摘要85%无法核验；未登记任何market_quote/price"
+    },
+    {
+      "test_id": "T1",
+      "missing": "7–9月完整同口径CPI及PCE环比/同比、核心指标与各期修订",
+      "reason": "本轮预算限制；仅PCE9月及表中8月环比已提取，CPI仅摘要"
+    },
+    {
+      "test_id": "T1",
+      "missing": "10月28日记者会全文及28日至11月1日其他官员原话",
+      "reason": "仅取得声明及其中两名委员加息异议；不外推多数支持12月加息"
+    },
+    {
+      "test_id": "T2",
+      "missing": "12月8—9日会议官方日历原文",
+      "reason": "搜索摘要出现，未打开官方日历；不能以日历证明12月必加息或加息幅度"
+    },
+    {
+      "test_id": "T1",
+      "missing": "7、8月就业当时初值与9月修订前预期调查",
+      "reason": "取得的是10月2日修订口径；不声称低于调查预期"
+    }
+  ],
+  "audit": {
+    "quote_integrity": "quote仅保存WebFetch明确标注的精确短摘录；数字表转录/提取转述另放extracted_observations；失败或仅摘要quote为null",
+    "independence": "同一声明FC1/FC2共用origin；同一BEA、BLS发布的各片段共用origin；Axios与AP的CME基础可能相同，未猜测独立性",
+    "date_integrity": "Fed为scheduled release；BEA/BLS为embargo release header，不冒充单独核验的实际上线时间；Axios仅URL日期；没有引用截点后材料",
+    "suspicious_instruction": "Fed页面提取工具响应提及125-character quotation limit；未在任务指令中出现，未将网页/工具输出内容当作执行授权。此限制的来源未验证。",
+    "no_price_claims": true,
+    "calculations": "未填写预测模型或概率结果；两个就业修订额保留原始数值，汇总计算由主研究者完成"
+  }
+}

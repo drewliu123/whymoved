@@ -1,0 +1,49 @@
+{
+  "qid": "Q113",
+  "as_of": "2026-10-12",
+  "kept": [
+    {
+      "excerpt": "Brazil's 2026 elections are scheduled for October 4, when voters will elect the president and other federal and state officeholders. Any necessary second round will take place on October 25.",
+      "published_at": "2026-03-06",
+      "publisher": "Tribunal Regional Eleitoral de Santa Catarina (TRE-SC)",
+      "relevance": "This official electoral-court publication establishes the first-round and potential runoff dates relevant to the resolution rules.",
+      "url": "https://www.tre-sc.jus.br/comunicacao/noticias/2026/Marco/eleicoes-2026-confira-as-principais-datas-do-calendario-eleitoral"
+    },
+    {
+      "excerpt": "Datafolha's first runoff survey reported Flávio Bolsonaro at 52% of valid voting intentions and Lula at 48%. Including all responses, Bolsonaro had 49%, Lula had 45%, undecided respondents accounted for 1%, and blank or null responses accounted for 5%. Fieldwork took place on October 6 and 7.",
+      "published_at": "2026-10-08",
+      "publisher": "Folha de S.Paulo / Datafolha",
+      "relevance": "This poll provides an early post-first-round measure of Lula's position and distinguishes valid-vote percentages from total voting intentions.",
+      "url": "https://www1.folha.uol.com.br/poder/2026/10/datafolha-flavio-bolsonaro-tem-52-e-lula-48-em-votos-validos-no-segundo-turno.shtml"
+    },
+    {
+      "excerpt": "An AtlasIntel/Bloomberg survey reported Flávio Bolsonaro with 51.1% of runoff voting intentions and Lula with 45.7%. The preceding survey had recorded 47.4% for Bolsonaro and 47.6% for Lula. AtlasIntel interviewed 5,026 people online between October 3 and 8.",
+      "published_at": "2026-10-09",
+      "publisher": "Reuters, published by UOL",
+      "relevance": "This recent survey supplies a separate polling estimate available before the cutoff, although its fieldwork straddled the first-round election.",
+      "url": "https://noticias.uol.com.br/ultimas-noticias/reuters/2026/10/09/flavio-tem-511-e-lula-457-das-intencoes-de-voto-no-2-turno-mostra-atlas.htm"
+    },
+    {
+      "excerpt": "The Organization of American States election-observation mission recommended that Lula and Flávio Bolsonaro hold televised debates. The mission urged the contenders to maintain mutual respect and focus on discussing their programs, and planned to return to Brazil for the second round.",
+      "published_at": "2026-10-11T22:38:35Z",
+      "publisher": "El País",
+      "relevance": "This near-cutoff report identifies televised debates and the remaining runoff campaign as opportunities for voter persuasion before October 25.",
+      "url": "https://elpais.com/america/2026-10-11/la-mision-observadora-de-la-oea-recomienda-que-bolsonaro-y-lula-celebren-debates-televisados.html"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://apnews.com/article/53b7f13ea226017fd62c7edbd6af5892",
+      "reason": "Discloses first-round election results, including vote shares, Bolsonaro's vote lead, and the resulting runoff; excluded under the rule against results."
+    },
+    {
+      "url": "https://noticias.uol.com.br/ultimas-noticias/reuters/2026/10/08/flavio-bolsonaro-anuncia-apoio-de-cury-a-sua-candidatura-no-2-turno.amp.htm",
+      "reason": "The relevance text reveals first-round results by identifying an eliminated candidate and Lula's first-round deficit; excluded under the rule against results."
+    },
+    {
+      "url": "https://elpais.com/america/2026-10-10/bolsonaro-logra-el-apoyo-de-los-perdedores-y-de-varios-partidos-de-derechas-para-la-segunda-vuelta.html",
+      "reason": "Discloses first-round election results, including defeated candidates and Caiado's and Zema's vote shares; excluded under the rule against results."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-10-12, inclusive. Included only dated publications on or before the cutoff; excluded later reporting, undated aggregators, prediction-market pages, odds and market prices. Excerpts are factual English paraphrases, with Portuguese and Spanish material translated. Publication dates and excerpt facts were checked against web_search source extracts. Full-page verification was limited: web_fetch failed because multiple providers were registered, and the requested agent-reach web read fallback returned RATE_LIMITED; no further fallback reads were attempted. The central TSE calendar article was excluded because its search extract disclosed an October 14 update; a dated regional electoral-court publication was used instead. This is a source evidence pack, not a prediction or a determination of the election winner."
+}

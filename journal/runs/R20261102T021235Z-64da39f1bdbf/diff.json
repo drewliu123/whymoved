@@ -1,0 +1,29 @@
+{
+  "claims": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "comparability_issues": [],
+  "evidence": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "judgment": {
+    "comparability": {
+      "reason": "沿用同一市场窗口、价格比较、单位及来源范围；本轮不增加新的交易日。",
+      "status": "comparable"
+    },
+    "judgment_changed": false,
+    "reason": "本轮重读Reuters收盘稿的指数及NVDA跌幅归属，并核对Amazon官方TTM现金流表；关键数值与原证据一致。定向搜索未找到在既定窗口内足以改变判断的新证据。本次为有限复核，未重新抓取全部社区或补齐阶段行业回报、订单及回款资料；不声称这些信号没有变化。"
+  },
+  "method": "structural_ids_and_fields",
+  "parent_run": "R20261102T020745Z-a493e74d7266",
+  "schema_version": 2,
+  "sources": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  }
+}

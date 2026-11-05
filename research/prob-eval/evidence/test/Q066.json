@@ -1,0 +1,50 @@
+{
+  "qid": "Q066",
+  "as_of": "2026-08-05",
+  "kept": [
+    {
+      "publisher": "Institute for the Study of War",
+      "published_at": "2026-08-05T21:48:34-04:00",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-5-2026/",
+      "excerpt": "Russian forces recently advanced in Kostyantynivka. Geolocated footage published on August 4 indicates that Russian forces advanced in western Kostyantynivka. The Ukrainian General Staff reported on August 5 that Ukrainian forces struck Russian drone control points near Kostyantynivka, occupied Chasiv Yar (northeast of Kostyantynivka), and occupied Zelene Pole (southwest of Kostyantynivka) and a Russian command post near occupied Bakhmut (northeast of Kostyantynivka).",
+      "relevance": "The cutoff-day assessment from the resolution authority confirms a territorial advance inside the city, although it does not establish control of the specified railroad station."
+    },
+    {
+      "publisher": "Institute for the Study of War",
+      "published_at": "2026-08-04T19:40:54-04:00",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-4-2026/",
+      "excerpt": "The commander of a Ukrainian company operating in the Kostyantynivka area reported on August 4 that Ukrainian forces are controlling the situation in the city but that small Russian assault groups, including well-trained personnel and officers, continue to try to infiltrate Kostyantynivka. The commander reported that Russian forces send about three small groups per day, which only infiltrate about 500 meters deep into the city. The commander reported that Russian authorities have tasked the groups with conducting flag-raising missions for footage claiming Russian advances.",
+      "relevance": "This attributed battlefield account helps distinguish infiltration and symbolic flag-raising from the sustained territorial control required by the resolution rules."
+    },
+    {
+      "publisher": "Institute for the Study of War",
+      "published_at": "2026-08-03T22:01:48-04:00",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-3-2026/",
+      "excerpt": "Russian forces have been infiltrating Kostyantynivka in recent months but have not seized the city, despite Russian claims otherwise. The situation in and near the city is deteriorating, however, and fighting will likely continue in Kostyantynivka for several weeks as Russian forces try to consolidate the positions they have gained through infiltrations. Russian infiltrators are already starting to move north of the city toward Oleksiievo-Druzhkivka.",
+      "relevance": "ISW describes both worsening Ukrainian conditions and the remaining Russian task of converting infiltrations into consolidated positions within the forecast horizon."
+    },
+    {
+      "publisher": "The New Voice of Ukraine, citing RBC-Ukraine",
+      "published_at": "2026-08-03T13:56:00+03:00",
+      "url": "https://english.nv.ua/russian-war/kostyantynivka-may-fall-in-coming-months-50629436.html",
+      "excerpt": "Ukrainian defense forces could lose control of Kostyantynivka in Donetsk Oblast in the coming months, RBC-Ukraine reported on Aug. 3, citing statements from sources in military and political circles. Sources noted that while there are no prerequisites for a rapid operational breakthrough of the Ukrainian defense line in Donetsk Oblast, Kostyantynivka could be lost in the coming months. However, the source emphasized that to achieve their goals, Russian forces cannot simply advance the frontline slowly.",
+      "relevance": "This contemporaneous preview provides an explicitly attributed months-scale risk assessment while emphasizing the operational obstacles to Russian success."
+    },
+    {
+      "publisher": "Institute for the Study of War",
+      "published_at": "2026-07-30T22:52:26-04:00",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-30-2026/",
+      "excerpt": "Ukrainian counterattacks and drone operations are reportedly hindering the Russian rate of advance within and near Kostyantynivka. A Kremlin-affiliated Russian milblogger claimed that Ukrainian forces are infiltrating into Dovha Balka (west of Kostyantynivka) from Mykolaipillya (northwest of Dovha Balka) and acknowledged that Ukrainian forces maintain positions in Chervone (northeast of Kostyantynivka). The milblogger claimed that numerous Ukrainian drone operators are providing cover and supplies to infiltrating Ukrainian forces, complicating Russian efforts to push Ukrainian forces from Dovha Balka in particular.",
+      "relevance": "This assessment identifies Ukrainian counterattacks and drone-supported logistics as concrete constraints on Russia's ability to consolidate and expand control around the city."
+    },
+    {
+      "publisher": "Reuters, republished by Internazionale",
+      "published_at": "2026-07-04",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/07/04/ukraine-denies-russian-capture-of-key-eastern-city-kostiantynivka",
+      "excerpt": "Ukraine still controls the strategically important eastern city of Kostiantynivka, President Volodymyr Zelenskiy and the General Staff said on Saturday, rejecting Russian claims that it has been captured. Russian military commanders told President Vladimir Putin on Friday that Moscow’s forces had taken control of Kostiantynivka, a target that Moscow has long sought in its advance through the Donetsk region. Reuters could not verify the battlefield reports.",
+      "relevance": "The conflicting claims demonstrate why declarations of city capture require independent verification against the market's specific station and ISW-control criteria."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: August 5, 2026, inclusive, interpreted in America/New_York consistently with the question's ET convention and ISW's US-dated daily assessments. ISW's August 5 assessment carries publication metadata of August 6 at 01:48:34 UTC, equivalent to August 5 at 21:48:34 EDT; other ISW timestamps were likewise converted from verified UTC metadata. Dates for the Reuters republication and New Voice article were verified in their retrieved pages. Built-in web_fetch failed because of a provider configuration error, so source text was read using agent-reach web read. Later-dated search results were excluded, and no prediction-market pages or prices were used. The excerpts preserve source attribution and contemporaneous analytical language; they do not independently verify the underlying battlefield claims. These sources do not establish the specified station icon's shading on August 5 or persistence through a full ISW update cycle. The live ArcGIS map was not treated as a frozen historical snapshot, and no inference about the eventual outcome is included."
+}

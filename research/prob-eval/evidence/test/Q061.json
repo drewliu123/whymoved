@@ -1,0 +1,57 @@
+{
+  "qid": "Q061",
+  "as_of": "2026-07-28",
+  "kept": [
+    {
+      "publisher": "James Hansen, Pushker Kharecha, Dylan Morgan and Jasen Vest — Climate Uncensored",
+      "published_at": "2026-07-23",
+      "url": "https://jimehansen.substack.com/p/beware-media-hype-its-not-the-el",
+      "excerpt": "June this year was cooler than June 2024, making it the sixth consecutive month this year with a lower global temperature than its 2024 counterpart. Global (land plus ocean) temperature lags SST by about 1.5 months, as the maximum correlation is 0.92 at both 1-month and 2-month lags. The 2026 global SST surpasses the 2024 global SST by mid-June; thus, given the lag, 2024 might remain warmer than 2026 in July, but the final five months of the year should have 2026 as warmer than 2024.",
+      "relevance": "This dated expert preview directly addresses July 2026 versus July 2024 using GISS/NOAA data and explains why record sea temperatures might affect global temperatures with a delay."
+    },
+    {
+      "publisher": "Berkeley Earth",
+      "published_at": "2026-07-23",
+      "url": "https://berkeleyearth.org/june-2026-temperature-update/",
+      "excerpt": "June 2026 was nominally the 2nd warmest June on record, with a global average of 1.49 ± 0.10 °C above the 1850–1900 average, behind only June 2024. Ocean temperatures were 1.17 ± 0.09 °C above the 1850–1900 average — the warmest June on record for ocean surfaces. If the current El Niño event evolves as forecast, it would be expected to raise global mean temperatures late in 2026 and, even more so, into 2027, since the global-average response typically lags the peak in the central Pacific by several months.",
+      "relevance": "This independent analysis supplies recent observed warmth and the timing of the expected El Niño influence, while its temperature series remains distinct from NASA's resolution dataset."
+    },
+    {
+      "publisher": "NOAA Climate Prediction Center / NCEP / National Weather Service",
+      "published_at": "2026-07-09",
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_jul2026/ensodisc.shtml",
+      "excerpt": "El Niño strengthened over the past month, with a large area of sea surface temperature anomalies in excess of +1.0°C across the central and eastern equatorial Pacific. The latest weekly Niño-3.4 index value was +1.2°C. There is an 81% chance of a very strong El Niño during October-December that would rank among the largest El Niño events in the historical record going back to 1950.",
+      "relevance": "The official July ENSO assessment establishes an important source of warming pressure and distinguishes current conditions from stronger conditions forecast for later in the year."
+    },
+    {
+      "publisher": "Copernicus Climate Change Service / ECMWF",
+      "published_at": "2026-07-09",
+      "url": "https://climate.copernicus.eu/copernicus-record-heatwave-brings-hottest-june-western-europe-during-second-warmest-june-globally",
+      "excerpt": "June 2026 was the second-warmest June globally in the ERA5 dataset, with an average surface air temperature of 16.54°C, 0.56°C above the 1991-2020 average for the month, behind June 2024. The average SST for extra-polar oceans (60°S–60°N) in June 2026 was the highest on record for the month at 20.86°C, but only marginally higher (by 0.01°C) than June 2024.",
+      "relevance": "This official pre-cutoff bulletin corroborates near-record global warmth immediately before July, although ERA5 rankings do not determine NASA GISTEMP rankings."
+    },
+    {
+      "publisher": "NOAA National Centers for Environmental Information",
+      "published_at": "2026-07-08T14:23:30-04:00",
+      "url": "https://www.ncei.noaa.gov/news/global-climate-202606",
+      "excerpt": "Global surface temperatures in June 2026 were 1.96°F (1.09°C) above the 20th-century average—the second-warmest June on record, trailing only 2024. Global ocean temperature was the highest on record for the month, while global land temperatures came in at fourth highest on record. Looking at the year-to-date, the January–June global surface temperature was third highest on record.",
+      "relevance": "NOAA provides another official measure of conditions entering July, including the differing contributions of land and ocean temperatures."
+    },
+    {
+      "publisher": "UK Met Office",
+      "published_at": "2025-12-18",
+      "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2025/2026-outlook-likely-another-year-above-1.4c",
+      "excerpt": "The central estimate for the forecast next year is 1.46°C, this is lower than the value of 1.55°C recorded in 2024—the current warmest year on record. The average global temperature for 2026 is forecast to be between 1.34°C and 1.58°C above the average for the pre-industrial period (1850-1900).",
+      "relevance": "This forecast provides an ex ante annual temperature baseline, with the limitation that an annual forecast does not directly specify July's rank."
+    },
+    {
+      "publisher": "NASA Goddard Space Flight Center — Scientific Visualization Studio",
+      "published_at": "2023-08-14",
+      "url": "https://svs.gsfc.nasa.gov/14396",
+      "excerpt": "Earth in July 2023 was 1.18ºC (2.12ºF) warmer than the average for the month, and warmer than any other month in the 143-year record. July 2023 was 0.24°C (0.43°F) warmer than any previous July in NASA’s record. And according to GISS temperature anomaly data, the top-five hottest Julys since 1880 have all happened in the past five years.",
+      "relevance": "This dated NASA release documents a major historical July record and the concentration of hot Julys in recent years; its ranking is historical as of publication, not a claim about the standing record in July 2026."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-07-28. All included sources have an explicit publication date in the article, issuing text, or retrieved publication metadata on or before the cutoff. Copernicus's publication metadata returned a retrieval-day timestamp, so its date is taken from the release's explicit dateline, 'Bonn, 09/07/2026'; NOAA's June article date uses its retrieved publication metadata. Searches surfaced post-cutoff material, which was excluded. No July 2026 outcome reports, prediction-market pages, betting odds, or market prices are included. The live NASA resolution table was not used as frozen evidence because a verified pre-cutoff snapshot was not obtained. Historical releases may precede subsequent data revisions; non-NASA datasets provide context and cannot substitute automatically for the specified NASA Jul-column comparison. web_fetch failed because of provider configuration, so source text and dates were checked using the agent-reach skill's read-only web reader."
+}

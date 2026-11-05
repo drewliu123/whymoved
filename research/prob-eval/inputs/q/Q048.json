@@ -1,0 +1,26 @@
+{
+ "qid": "Q048",
+ "question": "Will Russia capture Orikhiv by September 30, 2026?",
+ "rules": "This market will resolve to “Yes” if, according to the ISW map, Russia captures the train station in Orikhiv (47.559860° N, 35.786219° E), Zaporizhzhia Oblast, between market creation and the specified date, 11:59 PM ET.\n\nThe train station will be considered captured if any part of the icon is shaded under a below specified layer on the ISW map (https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375) by the resolution date. Otherwise, the market will resolve to “No”.\n\nFor any change on the ISW map to qualify for this market’s resolution, the relevant shading must persist through the next full ISW daily update cycle. If ISW skips a day, shading must persist until the next finalized ISW update is published, regardless of the date.\n\nAny continuous shading under the following layers will qualify:\n- Assessed Russian-Controlled Terrain\n- Assessed Russian Advances\n\nShading under the following layers will not qualify:\n- Assessed Russian Infiltration Areas\n- Claimed Russian Territory\n\nOnce a qualifying condition is met, any subsequent loss of control will not be considered towards the resolution of this market.\n\nIf Russia comes into control of the specified territory as a res",
+ "as_of": "2026-09-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-17T02:10:14+00:00",
+   "excerpt": "Russian forces recently advanced southwest of Orikhiv. Russian forces advanced in southeastern Novoandriivka (west of Orikhiv), according to geolocated footage published on September 16."
+  },
+  {
+   "id": "E2",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-16T02:57:06+00:00",
+   "excerpt": "Russian forces have conducted limited infiltration missions into Orikhiv, but ISW has not observed any evidence to assess that Russian forces have consolidated any positions in the town. Ukrainian forces maintain positions north of Bilohirya (east of Orikhiv) and in central Orikhiv — in areas where Russian sources previously claimed that Russian forces maintained positions — according to geolocated footage published on September 13 and 14."
+  },
+  {
+   "id": "E3",
+   "publisher": "Institute for the Study of War",
+   "published_at": "2026-09-14T01:52:08+00:00",
+   "excerpt": "Mashovets indicated that Russian forces made these tactically significant gains in the Orikhiv direction prior to September 1 but stated that Russian forces have since failed to exploit these gains. Mashovets noted that Ukrainian forces have constrained Russian forces west and northwest of Orikhiv, interdicting supply deliveries to these infiltration groups for a few weeks before conducting heavy drone strikes and clearing operations to eliminate the Russian presence. Mashovets noted that Ukrainian forces pushed Russian forces from northern and central Novodanylivka and that Ukrainian advances west of Orikhiv are constraining Russian efforts to advance on Zaporizhzhia City."
+  }
+ ]
+}

@@ -1,0 +1,584 @@
+{
+ "question": "Warsh 的政策倾向",
+ "as_of": "2026-10-30T09:15:00Z",
+ "claims": [
+  {
+   "id": "C1",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Trump 于 2026-03-04 提名 Warsh；参议院 5 月 13 日以 54-45 确认其任主席，5 月 22 日宣誓就任",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+     "publisher": "Federal Reserve Board",
+     "tier": "T0",
+     "published_at": "2026-05-22"
+    },
+    {
+     "url": "https://api.congress.gov/v3/nomination/119/855-1?format=json",
+     "publisher": "Congress.gov",
+     "tier": "T0",
+     "published_at": "2026-05-13"
+    }
+   ]
+  },
+  {
+   "id": "C2",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Powell 主持的最后一次会议（4 月）声明仍带宽松倾向措辞；Warsh 主持的首次会议（6 月）12-0 维持 3.50–3.75%，声明缩短且不含前瞻指引",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+     "publisher": "Federal Reserve (FOMC statement Apr)",
+     "tier": "T0",
+     "published_at": "2026-04-29"
+    },
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+     "publisher": "Federal Reserve (FOMC statement Jun)",
+     "tier": "T0",
+     "published_at": "2026-06-17"
+    }
+   ]
+  },
+  {
+   "id": "C3",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "7 月会议 9-3 维持 3.50–3.75%，Hammack、Kashkari、Logan 反对并主张加息 25bp",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-07-29"
+    }
+   ]
+  },
+  {
+   "id": "C4",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "9 月会议 12-0 加息 25bp 至 3.75–4.00%",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-09-16"
+    }
+   ]
+  },
+  {
+   "id": "C5",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "10 月会议 10-2 维持 3.75–4.00%，理事 Cook 与 Hammack 反对并主张加息 25bp",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-28"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C6",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "10 月执行说明未作缩表决定：继续按需购买国库券维持充足准备金，到期国债本金全部滚续",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C7",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "7 月 9 日 Warsh 设立 5 个工作组：沟通、资产负债表政策、数据、生产率与就业、通胀框架",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-07-09"
+    }
+   ]
+  },
+  {
+   "id": "C8",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "6 月首次记者会宣布不再提供前瞻指引，Warsh 本人不提交经济预测；10 月 28 日重申除危机外不信奉前瞻指引、不打算提交点阵",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260617.pdf",
+     "publisher": "Federal Reserve (presconf Jun)",
+     "tier": "T0",
+     "published_at": "2026-06-17"
+    },
+    {
+     "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+     "publisher": "Federal Reserve (presconf Oct)",
+     "tier": "T0",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C9",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "7 月 14 日众议院证词：委员会对持续偏高的通胀“零容忍”",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/testimony/warsh20260714a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-07-14"
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "8 月 28 日 Jackson Hole 演讲：2% PCE 是“坚定、固定”的目标，难以把整体金融条件称为限制性",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-08-28"
+    }
+   ]
+  },
+  {
+   "id": "C11",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "10 月 28 日记者会：没有软性或隐性通胀目标；金融条件虽收紧但他不愿称之为“紧”；已表明准备在必要时行动",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-28"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "id": "C12",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "10 月 28 日宣布 2027 年 8 次会议中有 1 次只讨论战略、不就利率投票；预计 2028 年为 2 次战略会加 6 次政策会",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C13",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "10 月 28 日 Warsh 称资产负债表议题目前只在工作组内，建议预计 2027 年一季度初提交 FOMC，对当前政策局面不太可能有实质影响",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C14",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Warsh 9 月称“独立性是双向的，我们守好自己的车道”；10 月称政治在决定中没有作用，并拒绝回应 Trump 的言论",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260916.pdf",
+     "publisher": "Federal Reserve (presconf Sep)",
+     "tier": "T0",
+     "published_at": "2026-09-16"
+    },
+    {
+     "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+     "publisher": "Federal Reserve (presconf Oct)",
+     "tier": "T0",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C15",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "据路透与 CNBC 报道，Trump 仍要求降息，但没有像对 Powell 那样点名攻击 Warsh 本人，并多次表示信任他",
+   "sources": [
+    {
+     "url": "https://www.msn.com/en-us/news/other/warsh-says-politics-played-no-role-in-fed-s-rate-decision-by-group-he-is-honored-to-lead/ar-AA2ghoMV",
+     "publisher": "Reuters",
+     "tier": "T2",
+     "published_at": "2026-10-28"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-08-06"
+    }
+   ]
+  },
+  {
+   "id": "C16",
+   "type": "fact",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "据 CNBC 报道，缩表是 Warsh 的优先事项之一但尚未落实；10 月执行说明同样未见缩表",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/09/25/kevin-warsh-fed-interest-rates-balance-sheet.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-09-25"
+    },
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C17",
+   "type": "view",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "CNBC 分析认为 Warsh 当前倾向更高利率；WSJ 认为 10 月声明“隐约指向再加息”",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-10-29"
+    },
+    {
+     "url": "https://www.msn.com/en-us/news/other/fed-holds-rates-steady-but-two-officials-sought-another-increase/ar-AA2gg9Jt",
+     "publisher": "WSJ",
+     "tier": "T2",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C18",
+   "type": "view",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Jefferies 的 Thomas Simons 不愿把他的沟通定性为偏鸽或偏鹰",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C19",
+   "type": "view",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "路透专栏作者 McGeever 批评 Warsh 未能讲清 9 月加息后为何没有继续加息，认为这重新引发了对其公信力的怀疑",
+   "sources": [
+    {
+     "url": "https://www.zawya.com/en/insights/warshs-muddled-messaging-revives-fed-credibility-doubts-mcgeever-1856401",
+     "publisher": "Reuters (McGeever column)",
+     "tier": "T2",
+     "published_at": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "id": "C20",
+   "type": "consensus",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "10 月 16–20 日路透调查中，100 位受访经济学家全部预期 12 月加息，近 60% 预期终点区间为 4.00–4.25%",
+   "sources": [
+    {
+     "url": "https://www.msn.com/en-us/money/economy/fed-to-skip-october-but-raise-rates-again-in-december-nearly-all-economists-say-reuters-poll/ar-AA2fF4Md",
+     "publisher": "Reuters poll",
+     "tier": "T1",
+     "published_at": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "C21",
+   "type": "price",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "CME FedWatch（经 CNBC 转引）：会前 12 月加息概率超过 80%，10 月 29 日为超过 77%",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/27/federal-reserve-rates-kevin-warsh.html",
+     "publisher": "CNBC citing CME FedWatch (Oct 27)",
+     "tier": "T1",
+     "published_at": "2026-10-27"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/10/29/treasury-yields-federal-reserve-rates.html",
+     "publisher": "CNBC citing CME FedWatch (Oct 29)",
+     "tier": "T1",
+     "published_at": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "id": "C22",
+   "type": "price",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Polymarket 12 月加息 25bp 为 72.5%（1 天 -4.0pt），按兵不动 24.5%（1 天 +3.0pt）",
+   "sources": [
+    {
+     "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+     "publisher": "Polymarket",
+     "tier": "T0",
+     "published_at": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "id": "C23",
+   "type": "price",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Polymarket 2026 年末利率 4.25% 为 70.4%（1 天 -7.6pt）；2026 年降息 0 次为 97.2%",
+   "sources": [
+    {
+     "url": "https://polymarket.com/event/what-will-the-fed-rate-be-at-the-end-of-2026",
+     "publisher": "Polymarket (end-2026 rate)",
+     "tier": "T0",
+     "published_at": "2026-10-30"
+    },
+    {
+     "url": "https://polymarket.com/event/how-many-fed-rate-cuts-in-2026",
+     "publisher": "Polymarket (cuts 2026)",
+     "tier": "T0",
+     "published_at": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "id": "C24",
+   "type": "price",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Polymarket 12 月会议 0 票反对为 64.0%（1 周 +19.0pt）",
+   "sources": [
+    {
+     "url": "https://polymarket.com/event/how-many-dissent-at-the-december-fed-meeting-20260730000304473",
+     "publisher": "Polymarket",
+     "tier": "T0",
+     "published_at": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "id": "C25",
+   "type": "price",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Polymarket：Trump 年底前公开辱骂 Warsh 23.0%；2026 年内试图解雇 Warsh 3.1%；Warsh 年底前离任 1.6%",
+   "sources": [
+    {
+     "url": "https://polymarket.com/event/trump-publicly-insults-warsh-by",
+     "publisher": "Polymarket (insult)",
+     "tier": "T0",
+     "published_at": "2026-10-30"
+    },
+    {
+     "url": "https://polymarket.com/event/trump-tries-to-fire-warsh-in-2026-20260724155002773",
+     "publisher": "Polymarket (fire)",
+     "tier": "T0",
+     "published_at": "2026-10-30"
+    },
+    {
+     "url": "https://polymarket.com/event/warsh-out-as-fed-chair-by-20260723173321450",
+     "publisher": "Polymarket (out)",
+     "tier": "T0",
+     "published_at": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "id": "C26",
+   "type": "view",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "r/investing 高票评论把 10 月会议概括为“按兵不动、口头鹰派”（57 票），另一条认为债市在“戳穿他的虚张声势”（17 票）",
+   "sources": [
+    {
+     "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsqs7cf18ps/",
+     "publisher": "u/MomentSpecialist2020",
+     "tier": "T4",
+     "published_at": "2026-10-28"
+    },
+    {
+     "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsr93zr3nmo/",
+     "publisher": "u/fumbling_artisan",
+     "tier": "T4",
+     "published_at": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "id": "C27",
+   "type": "view",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "NickTimiraos 追问：经济强、通胀无进展、金融条件不紧，为什么还按兵不动（268 赞）",
+   "sources": [
+    {
+     "url": "https://x.com/NickTimiraos/status/2115874026513989787",
+     "publisher": "@NickTimiraos",
+     "tier": "T4",
+     "published_at": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "id": "C28",
+   "type": "view",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "Robin Brooks 认为 12 月加息远非定局：9 月加息是对 8 月长端收益率飙升的反应，欧元区债务压力正在压低美债收益率",
+   "sources": [
+    {
+     "url": "https://x.com/robin_j_brooks/status/2116067839065125375",
+     "publisher": "@robin_j_brooks",
+     "tier": "T4",
+     "published_at": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "id": "C29",
+   "type": "view",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "r/stocks 一条 346 票的评论称 Warsh 是被任命的“傀儡”；同帖也有评论反驳这种解读",
+   "sources": [
+    {
+     "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypwl8evup/",
+     "publisher": "u/WheredoesithurtRA",
+     "tier": "T4",
+     "published_at": "2026-10-29"
+    },
+    {
+     "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzzrr2my82/",
+     "publisher": "u/Same_Lack_1775",
+     "tier": "T4",
+     "published_at": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "id": "C30",
+   "type": "view",
+   "as_of": "2026-10-30T09:15:00Z",
+   "text": "biancoresearch 为 Warsh 辩护：通胀已连续 67 个月高于 2%，他才上任 4 个月",
+   "sources": [
+    {
+     "url": "https://x.com/biancoresearch/status/2115766600011821234",
+     "publisher": "@biancoresearch",
+     "tier": "T4",
+     "published_at": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "id": "I1",
+   "type": "inference",
+   "as_of": "2026-10-30T09:15:00Z",
+   "sources": [],
+   "text": "措辞偏鹰、行动渐进：本次检索到的 3 份公开表态措辞偏鹰（其中“零容忍”以委员会名义表述），但任内 4 次会议（6、7、9、10 月）只在 9 月加息 1 次，7 月和 10 月都在主张加息的反对票下按兵不动",
+   "basis": [
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C9",
+    "C10",
+    "C11"
+   ]
+  },
+  {
+   "id": "I2",
+   "type": "inference",
+   "as_of": "2026-10-30T09:15:00Z",
+   "sources": [],
+   "text": "政策结果落在委员会中位附近，鹰派反对者比结果更鹰：任内反对票都主张加息，没有主张降息的；Warsh 个人偏好无法从主席投票中分离",
+   "basis": [
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+   ]
+  },
+  {
+   "id": "I3",
+   "type": "inference",
+   "as_of": "2026-10-30T09:15:00Z",
+   "sources": [],
+   "text": "Warsh 不给前瞻指引、不交点阵，会后一天 Polymarket 12 月加息定价下修 4.0pt；三个读数时点不同：路透调查（10/16–20，点预测）100/100 预期加息，FedWatch（10/29，转引）超过 77%，Polymarket（10/30）72.5%",
+   "basis": [
+    "C8",
+    "C20",
+    "C21",
+    "C22"
+   ]
+  },
+  {
+   "id": "I4",
+   "type": "inference",
+   "as_of": "2026-10-30T09:15:00Z",
+   "sources": [],
+   "text": "截至 10/30 未见 Trump 点名攻击 Warsh 本人（据路透、CNBC）；Polymarket 给年内试图解雇 3.1%、年底前离任 1.6%，但年底前公开辱骂仍有 23%",
+   "basis": [
+    "C4",
+    "C14",
+    "C15",
+    "C25"
+   ]
+  },
+  {
+   "id": "I5",
+   "type": "inference",
+   "as_of": "2026-10-30T09:15:00Z",
+   "sources": [],
+   "text": "据 Warsh 10/28 表态，资产负债表建议预计 2027 年一季度初提交 FOMC，12 月出现缩表决定的可能性低",
+   "basis": [
+    "C6",
+    "C7",
+    "C13",
+    "C16"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+  "engine": "last30days",
+  "version": "3.30.0",
+  "command": [
+    "/Users/frankzhang/.local/bin/python3.12",
+    "-B",
+    "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+    "NVIDIA NVDA",
+    "--emit=compact",
+    "--save-dir=",
+    "--plan",
+    "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/community/last30days-plan.ZodWVK",
+    "--search=reddit,hackernews,youtube,polymarket",
+    "--dedicated-subreddits=NVDA_Stock,nvidia",
+    "--subreddits=stocks,investing,wallstreetbets,SecurityAnalysis",
+    "--quick",
+    "--as-of=2026-10-31",
+    "--days=30",
+    "--no-browser-cookies"
+  ],
+  "as_of": "2026-10-31T12:19:06Z",
+  "window_start": "2026-10-01T00:00:00Z",
+  "timeout_seconds": 180,
+  "HOME_changed": false,
+  "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0",
+  "config_mode": "isolated_config; keychain disabled after sensitive-source denial",
+  "directed_authors": [],
+  "scope_omitted_available_sources": [
+    "github"
+  ],
+  "started_at": "2026-10-31T12:23:30Z",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 96.73
+}

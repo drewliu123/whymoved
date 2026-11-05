@@ -1,0 +1,1444 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [],
+    "hiring_signals_mode": false,
+    "plan_source": "external",
+    "pre_research_flags_present": true,
+    "resolved": {
+      "context": "",
+      "entity": "Kevin Warsh",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super"
+      ],
+      "score": 48.56612021857923,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Did anyone notice Kevin Warsh used the term \u2018super intelligence\u2019 in the FOMC presser? Has the Fed clearly lost independence?"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh"
+      ],
+      "score": 44.39408602150537,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Contradictory Statements from Kevin Warsh"
+    },
+    {
+      "candidate_ids": [
+        "https://pudding.cool/2026/10/kevin-bacon"
+      ],
+      "cluster_id": "cluster-3",
+      "representative_ids": [
+        "https://pudding.cool/2026/10/kevin-bacon"
+      ],
+      "score": 33.066120218579236,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "The Real Kevin Bacon"
+    },
+    {
+      "candidate_ids": [
+        "https://taylor.town/kk-ai-2026"
+      ],
+      "cluster_id": "cluster-4",
+      "representative_ids": [
+        "https://taylor.town/kk-ai-2026"
+      ],
+      "score": 29.922751322751324,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later"
+    },
+    {
+      "candidate_ids": [
+        "https://rte.ie/entertainment/2026/1019/1595980-kevin-bacon"
+      ],
+      "cluster_id": "cluster-5",
+      "representative_ids": [
+        "https://rte.ie/entertainment/2026/1019/1595980-kevin-bacon"
+      ],
+      "score": 25.144086021505373,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Kevin Bacon's missing clothes finally delivered in Ireland"
+    },
+    {
+      "candidate_ids": [
+        "https://theangryoptimist.org/p/kevin-kelly-the-case-for-optimism"
+      ],
+      "cluster_id": "cluster-6",
+      "representative_ids": [
+        "https://theangryoptimist.org/p/kevin-kelly-the-case-for-optimism"
+      ],
+      "score": 20.842083333333335,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Kevin Kelly: The Case for Optimism (2021)"
+    },
+    {
+      "candidate_ids": [
+        "https://kevinkelly.substack.com/p/the-influence-of-science-fiction"
+      ],
+      "cluster_id": "cluster-7",
+      "representative_ids": [
+        "https://kevinkelly.substack.com/p/the-influence-of-science-fiction"
+      ],
+      "score": 20.32205128205128,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Kevin Kelly \u2013 The Influence of Science Fiction on Science"
+    }
+  ],
+  "errors_by_source": {},
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-02T03:50:24.305421+00:00",
+  "items_by_source": {
+    "hackernews": [
+      {
+        "author": "xnx",
+        "body": "The Real Kevin Bacon\nSure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now.  (The one from Pulp Fiction, not the one from Ted.)\nBut what if you could have TWO actors in a movie?  Would Sam Jackson (again, the o... Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list.... I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn\u2019t worked with yet.",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 96,
+          "points": 378
+        },
+        "engagement_score": 86,
+        "freshness": 58,
+        "item_id": "50169499",
+        "local_rank_score": 0.296,
+        "local_relevance": 0.1,
+        "metadata": {
+          "comment_insights": [
+            "Sure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now",
+            "Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about)",
+            "I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn\u2019t worked with yet.",
+            "Somehow it's a fun fact that you can reach any other actor in four moves, but a much less fun fact that you can probably-reach any other actor in 2.6 moves",
+            "Chlo\u00eb Grace Moretz was huge as a child star but she is basically retired now, the likelihood that she continues to appear in any major movies is very slim"
+          ],
+          "hn_url": "https://news.ycombinator.com/item?id=50169499",
+          "top_comments": [
+            {
+              "author": "MattCruikshank",
+              "date": "",
+              "excerpt": "Sure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now.  (The one from Pulp Fiction, not the one from Ted.)\nBut what if you could have TWO actors in a movie?  Would Sam Jackson (again, the o...",
+              "url": "https://news.ycombinator.com/item?id=50212592"
+            },
+            {
+              "author": "ameliaquining",
+              "date": "",
+              "excerpt": "Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list....",
+              "url": "https://news.ycombinator.com/item?id=50213440"
+            },
+            {
+              "author": "dec0dedab0de",
+              "date": "",
+              "excerpt": "I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn\u2019t worked with yet.",
+              "url": "https://news.ycombinator.com/item?id=50212480"
+            },
+            {
+              "author": "card_zero",
+              "date": "",
+              "excerpt": "Somehow it's a fun fact that you can reach any other actor in four moves, but a much less fun fact that you can probably-reach any other actor in 2.6 moves.  \"Connectedness\", huh. Though it was interesting to see that Frank Welker used to be in fourth place. Never heard of him. Or I've only heard of...",
+              "url": "https://news.ycombinator.com/item?id=50212120"
+            },
+            {
+              "author": "reticulates",
+              "date": "",
+              "excerpt": "Chlo\u00eb Grace Moretz was huge as a child star but she is basically retired now, the likelihood that she continues to appear in any major movies is very slim. Her career's early start was beneficial to this ranking but is not representative. The likelihood that she ever overtakes Samuel L Jackson is......",
+              "url": "https://news.ycombinator.com/item?id=50217868"
+            }
+          ]
+        },
+        "published_at": "2026-10-20",
+        "relevance_hint": 0.81,
+        "snippet": "Sure, but what's the Basis Set movie? If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now. (The one from Pulp Fiction, not the one from Ted.) But what if you could have TWO actors in a movie? Would Sam Jackson (again, the o... Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list.... I hope Kevin bacon takes this as a personal attack and manages...",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "The Real Kevin Bacon",
+        "url": "https://pudding.cool/2026/10/kevin-bacon/",
+        "why_relevant": "HN story about The Real Kevin Bacon"
+      },
+      {
+        "author": "austinallegro",
+        "body": "Kevin Bacon's missing clothes finally delivered in Ireland\nWith the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation. My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago. \"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 7,
+          "points": 9
+        },
+        "engagement_score": 36,
+        "freshness": 54,
+        "item_id": "50153598",
+        "local_rank_score": 0.23600000000000002,
+        "local_relevance": 0.1,
+        "metadata": {
+          "comment_insights": [
+            "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation.",
+            "My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago.",
+            "\"The Footloose star,\"",
+            "Oh good, can't tell you how concerned I was about this"
+          ],
+          "hn_url": "https://news.ycombinator.com/item?id=50153598",
+          "top_comments": [
+            {
+              "author": "yzydserd",
+              "date": "",
+              "excerpt": "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation.",
+              "url": "https://news.ycombinator.com/item?id=50153715"
+            },
+            {
+              "author": "mtklein",
+              "date": "",
+              "excerpt": "My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago.",
+              "url": "https://news.ycombinator.com/item?id=50153793"
+            },
+            {
+              "author": "Markoff",
+              "date": "",
+              "excerpt": "\"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+              "url": "https://news.ycombinator.com/item?id=50154759"
+            },
+            {
+              "author": "f30e3dfed1c9",
+              "date": "",
+              "excerpt": "Oh good, can't tell you how concerned I was about this. What a relief!",
+              "url": "https://news.ycombinator.com/item?id=50155083"
+            }
+          ]
+        },
+        "published_at": "2026-10-19",
+        "relevance_hint": 0.68,
+        "snippet": "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation. My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago. \"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Kevin Bacon's missing clothes finally delivered in Ireland",
+        "url": "https://www.rte.ie/entertainment/2026/1019/1595980-kevin-bacon/",
+        "why_relevant": "HN story about Kevin Bacon's missing clothes finally delivered in Ireland"
+      },
+      {
+        "author": "surprisetalk",
+        "body": "Kevin Kelly's 2016 AI Predictions, 10 Years Later\nBy my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still... Google\u2019s main product was and continues to be ads In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 88,
+          "points": 220
+        },
+        "engagement_score": 80,
+        "freshness": 36,
+        "item_id": "50057668",
+        "local_rank_score": 0.23500000000000001,
+        "local_relevance": 0.1,
+        "metadata": {
+          "comment_insights": [
+            "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous",
+            "Google\u2019s main product was and continues to be ads",
+            "In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia",
+            "I would say that KK's \"The bulk of AI will be special purpose software brains\" has turned out closer to the truth than \"The Bitter Lesson\" has",
+            "> Amid all this activity, a picture of our AI future is coming into view, and it is not the HAL 9000\u2014a discrete machine animated by a charismatic (yet potentially homicidal) humanlike consciousness\u2014or"
+          ],
+          "hn_url": "https://news.ycombinator.com/item?id=50057668",
+          "top_comments": [
+            {
+              "author": "stephen_cagle",
+              "date": "",
+              "excerpt": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still...",
+              "url": "https://news.ycombinator.com/item?id=50059811"
+            },
+            {
+              "author": "cousinbryce",
+              "date": "",
+              "excerpt": "Google\u2019s main product was and continues to be ads",
+              "url": "https://news.ycombinator.com/item?id=50059825"
+            },
+            {
+              "author": "at1as",
+              "date": "",
+              "excerpt": "In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+              "url": "https://news.ycombinator.com/item?id=50061236"
+            },
+            {
+              "author": "rossdavidh",
+              "date": "",
+              "excerpt": "I would say that KK's \"The bulk of AI will be special purpose software brains\" has turned out closer to the truth than \"The Bitter Lesson\" has.  LLM's do not drive cars, or vice versa.  Stockfish still beats the newest, largest LLM at chess.  Etc.  Most of the truly productive \"AI\" is customized for...",
+              "url": "https://news.ycombinator.com/item?id=50062685"
+            },
+            {
+              "author": "gwern",
+              "date": "",
+              "excerpt": "> Amid all this activity, a picture of our AI future is coming into view, and it is not the HAL 9000\u2014a discrete machine animated by a charismatic (yet potentially homicidal) humanlike consciousness\u2014or a Singularitan rapture of superintelligence.\nThe only important prediction Kelly made was a complet...",
+              "url": "https://news.ycombinator.com/item?id=50065195"
+            }
+          ]
+        },
+        "published_at": "2026-10-12",
+        "relevance_hint": 0.76,
+        "snippet": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still... Google\u2019s main product was and continues to be ads In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
+        "url": "https://taylor.town/kk-ai-2026",
+        "why_relevant": "HN story about Kevin Kelly's 2016 AI Predictions, 10 Years Later"
+      },
+      {
+        "author": "simonebrunozzi",
+        "body": "Kevin Kelly: The Case for Optimism (2021)",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 0,
+          "points": 4
+        },
+        "engagement_score": 14,
+        "freshness": 36,
+        "item_id": "50061315",
+        "local_rank_score": 0.182,
+        "local_relevance": 0.12,
+        "metadata": {
+          "comment_insights": [],
+          "hn_url": "https://news.ycombinator.com/item?id=50061315",
+          "top_comments": []
+        },
+        "published_at": "2026-10-12",
+        "relevance_hint": 0.65,
+        "snippet": "Kevin Kelly: The Case for Optimism (2021)",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Kevin Kelly: The Case for Optimism (2021)",
+        "url": "https://www.theangryoptimist.org/p/kevin-kelly-the-case-for-optimism",
+        "why_relevant": "HN story about Kevin Kelly: The Case for Optimism (2021)"
+      },
+      {
+        "author": "rmason",
+        "body": "Kevin Kelly \u2013 The Influence of Science Fiction on Science",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 2,
+          "points": 3
+        },
+        "engagement_score": 20,
+        "freshness": 22,
+        "item_id": "49998265",
+        "local_rank_score": 0.15300000000000002,
+        "local_relevance": 0.12,
+        "metadata": {
+          "comment_insights": [],
+          "hn_url": "https://news.ycombinator.com/item?id=49998265",
+          "top_comments": []
+        },
+        "published_at": "2026-10-07",
+        "relevance_hint": 0.63,
+        "snippet": "Kevin Kelly \u2013 The Influence of Science Fiction on Science",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Kevin Kelly \u2013 The Influence of Science Fiction on Science",
+        "url": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction",
+        "why_relevant": "HN story about Kevin Kelly \u2013 The Influence of Science Fiction on Science"
+      }
+    ],
+    "reddit": [
+      {
+        "body": "Did anyone notice Kevin Warsh used the term \u2018super intelligence\u2019 in the FOMC presser? Has the Fed clearly lost independence?\nYou must be new here Kevin Warsh* was appointed to serve as a puppet You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+        "container": "stocks",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 152,
+          "score": 846
+        },
+        "engagement_score": 76,
+        "freshness": 82,
+        "item_id": "R1",
+        "local_rank_score": 0.6060000000000001,
+        "local_relevance": 0.5,
+        "metadata": {
+          "comment_insights": [
+            "Kevin Warsh* was appointed to serve as a puppet",
+            "You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communi...",
+            "the fed lost independence way before warsh, powell was already bending over backwards in the first term.",
+            "Warsh hasn\u2019t lost independence, he\u2019s always been a Trump sycophant.",
+            "As an fyi, the fed receives no money from taxes/congress\u2014intentionally so.",
+            "From the Congressional Research Service \"Given the Fed\u2019s independent status, it is unclear which, if any, executive orders the board or the Fed banks...",
+            "Language control gives 1984 vibes"
+          ],
+          "top_comments": [
+            {
+              "author": "purub123",
+              "date": "2026-10-29",
+              "excerpt": "You must be new here",
+              "score": 600,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypcxdxqdh/"
+            },
+            {
+              "author": "WheredoesithurtRA",
+              "date": "2026-10-29",
+              "excerpt": "Kevin Warsh* was appointed to serve as a puppet",
+              "score": 372,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypwl8evup/"
+            },
+            {
+              "author": "Same_Lack_1775",
+              "date": "2026-10-29",
+              "excerpt": "You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+              "score": 144,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzzrr2my82/"
+            },
+            {
+              "author": "Still_Glass_8272",
+              "date": "2026-10-29",
+              "excerpt": "the fed lost independence way before warsh, powell was already bending over backwards in the first term. the whole 'super intelligence' thing is just the new buzzword they have to use now to get their",
+              "score": 121,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtz31hovni8/"
+            },
+            {
+              "author": "KevinCubano",
+              "date": "2026-10-29",
+              "excerpt": "Warsh hasn\u2019t lost independence, he\u2019s always been a Trump sycophant.",
+              "score": 116,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzscbehvpd/"
+            },
+            {
+              "author": "Doth_Thou_Even",
+              "date": "2026-10-29",
+              "excerpt": "As an fyi, the fed receives no money from taxes/congress\u2014intentionally so.",
+              "score": 67,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzoektwvk4/"
+            },
+            {
+              "author": "BeaverFly",
+              "date": "2026-10-29",
+              "excerpt": "From the Congressional Research Service \"Given the Fed\u2019s independent status, it is unclear which, if any, executive orders the board or the Fed banks are required to comply with.\"",
+              "score": 63,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru3h2cynpvp/"
+            },
+            {
+              "author": "lycopeneLover",
+              "date": "2026-10-29",
+              "excerpt": "Language control gives 1984 vibes",
+              "score": 59,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru32r0pson9/"
+            },
+            {
+              "author": "raj6126",
+              "date": "2026-10-29",
+              "excerpt": "How do you not raise interest rates now inflation is running out of control.",
+              "score": 40,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtz84hblgaq/"
+            },
+            {
+              "author": "2-wheels",
+              "date": "2026-10-29",
+              "excerpt": "Yeah, but vote was 10-2 so this isn\u2019t all on Warsh.",
+              "score": 39,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru0qfmzgk3o/"
+            },
+            {
+              "author": "jimbo831",
+              "date": "2026-10-29",
+              "excerpt": "Kevin Walsh was appointed to serve as a puppet",
+              "score": 32,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzffixwt6t/"
+            },
+            {
+              "author": "CarpoLarpo",
+              "date": "2026-10-29",
+              "excerpt": "The corruption runs deeper than most of us know. Its been this way for a while. They're just showing their true colors now because we've fallen so far they can publicly get away with it now.",
+              "score": 30,
+              "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru2sfbygszm/"
+            }
+          ]
+        },
+        "published_at": "2026-10-29",
+        "relevance_hint": 0.99,
+        "snippet": "You must be new here Kevin Warsh* was appointed to serve as a puppet You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Did anyone notice Kevin Warsh used the term \u2018super intelligence\u2019 in the FOMC presser? Has the Fed clearly lost independence?",
+        "url": "https://www.reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super/",
+        "why_relevant": "Reddit search"
+      },
+      {
+        "body": "Contradictory Statements from Kevin Warsh\nThe Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now. market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+        "container": "investing",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 71,
+          "score": 54
+        },
+        "engagement_score": 51,
+        "freshness": 78,
+        "item_id": "R2",
+        "local_rank_score": 0.5710000000000001,
+        "local_relevance": 0.5,
+        "metadata": {
+          "comment_insights": [
+            "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now.",
+            "market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard",
+            "Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+            "Of course it\u2019s politically motivated - inflation has been over their limit for 4 years now",
+            "they know the hour, as soon as Democratic party gets any traction then it is All Austerity All The Time.",
+            "trump has been demanding powell for lower rate. why would it be any different with warsh?",
+            "Not really the discussion in the market is about how hawkish they are, not if they are hawkish."
+          ],
+          "top_comments": [
+            {
+              "author": "RealMcGonzo",
+              "date": "2026-10-28",
+              "excerpt": "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now.",
+              "score": 41,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsv4g0jrdr4/"
+            },
+            {
+              "author": "fumbling_artisan",
+              "date": "2026-10-28",
+              "excerpt": "market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard",
+              "score": 18,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsr93zr3nmo/"
+            },
+            {
+              "author": "Suitable-Option833",
+              "date": "2026-10-28",
+              "excerpt": "Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+              "score": 16,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsquihy3ko0/"
+            },
+            {
+              "author": "FewUnderstanding2214",
+              "date": "2026-10-28",
+              "excerpt": "Of course it\u2019s politically motivated - inflation has been over their limit for 4 years now",
+              "score": 14,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsqsxv8pyzn/"
+            },
+            {
+              "author": "DrXaos",
+              "date": "2026-10-28",
+              "excerpt": "they know the hour, as soon as Democratic party gets any traction then it is All Austerity All The Time.",
+              "score": 12,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsygppsimao/"
+            },
+            {
+              "author": "Bush_Trimmer",
+              "date": "2026-10-29",
+              "excerpt": "trump has been demanding powell for lower rate. why would it be any different with warsh?",
+              "score": 12,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt0kwrbwmld/"
+            },
+            {
+              "author": "GAV17",
+              "date": "2026-10-29",
+              "excerpt": "Not really the discussion in the market is about how hawkish they are, not if they are hawkish. Everyone expected, as future showed, that they wouldn't increase rates today, but they will in December.",
+              "score": 11,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt5o3hu23qb/"
+            },
+            {
+              "author": "RIP_Soulja_Slim",
+              "date": "2026-10-29",
+              "excerpt": "My running theory is that Trump is so genuinely stupid he had no idea Warsh was a hawk. It kinda checks out, and Warsh played it well by not really discussing rates a lot in his rhetoric prior to bein",
+              "score": 8,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rtui349q15u/"
+            },
+            {
+              "author": "Packtex60",
+              "date": "2026-10-29",
+              "excerpt": "He said that a couple of indicators of inflation improved but they need to see more to know what to do next. They aren\u2019t going to get to 2% inflation without causing a recession. The 2% target was and",
+              "score": 7,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt40g6e5bvp/"
+            },
+            {
+              "author": "enfuego138",
+              "date": "2026-10-28",
+              "excerpt": "Warsh is a hawk. Pay attention.",
+              "score": 5,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsxinq0402p/"
+            },
+            {
+              "author": "RIP_Soulja_Slim",
+              "date": "2026-10-29",
+              "excerpt": "It\u2019s really easy to differentiate the people that pay attention to economics and the Fed vs those who only know about politics by if they are aware Warsh is a hawk or not lol. The guy is in the runnin",
+              "score": 4,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rtuqn4608ki/"
+            },
+            {
+              "author": "kiwimancy",
+              "date": "2026-10-28",
+              "excerpt": "The main reason is that they tend to skip every other meeting if it's not urgent to hike or lower rates (lowering always seems to be more urgent than raising...)",
+              "score": 4,
+              "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsxjxqt9gmd/"
+            }
+          ]
+        },
+        "published_at": "2026-10-28",
+        "relevance_hint": 1.0,
+        "snippet": "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now. market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Contradictory Statements from Kevin Warsh",
+        "url": "https://www.reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh/",
+        "why_relevant": "Reddit search"
+      }
+    ]
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "deterministic",
+    "reasoning_provider": "local",
+    "rerank_model": "local-score"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "recent",
+    "intent": "concept",
+    "notes": [],
+    "raw_topic": "Kevin Warsh",
+    "source_weights": {
+      "hackernews": 0.3333333333333333,
+      "reddit": 0.3333333333333333,
+      "youtube": 0.3333333333333333
+    },
+    "subqueries": [
+      {
+        "label": "q1",
+        "ranking_query": "Kevin Warsh Fed independence inflation rate cuts",
+        "search_query": "Kevin Warsh Fed independence inflation rate cuts",
+        "sources": [
+          "reddit",
+          "hackernews"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-02",
+  "range_to": "2026-11-01",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super",
+      "cluster_id": "cluster-1",
+      "engagement": 76,
+      "explanation": "fallback-local-score",
+      "final_score": 48.56612021857923,
+      "freshness": 82,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 33.67681544492215,
+      "item_id": "R1",
+      "local_relevance": 0.5,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R1",
+            "native_rank": 1,
+            "source": "reddit",
+            "subquery_label": "q1"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "q1:reddit": 1
+      },
+      "rerank_score": 41.0,
+      "rrf_score": 0.00546448087431694,
+      "snippet": "You must be new here Kevin Warsh* was appointed to serve as a puppet You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Did anyone notice Kevin Warsh used the term \u2018super intelligence\u2019 in the FOMC presser? Has the Fed clearly lost independence?\nYou must be new here Kevin Warsh* was appointed to serve as a puppet You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+          "container": "stocks",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 152,
+            "score": 846
+          },
+          "engagement_score": 76,
+          "freshness": 82,
+          "item_id": "R1",
+          "local_rank_score": 0.6060000000000001,
+          "local_relevance": 0.5,
+          "metadata": {
+            "comment_insights": [
+              "Kevin Warsh* was appointed to serve as a puppet",
+              "You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communi...",
+              "the fed lost independence way before warsh, powell was already bending over backwards in the first term.",
+              "Warsh hasn\u2019t lost independence, he\u2019s always been a Trump sycophant.",
+              "As an fyi, the fed receives no money from taxes/congress\u2014intentionally so.",
+              "From the Congressional Research Service \"Given the Fed\u2019s independent status, it is unclear which, if any, executive orders the board or the Fed banks...",
+              "Language control gives 1984 vibes"
+            ],
+            "top_comments": [
+              {
+                "author": "purub123",
+                "date": "2026-10-29",
+                "excerpt": "You must be new here",
+                "score": 600,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypcxdxqdh/"
+              },
+              {
+                "author": "WheredoesithurtRA",
+                "date": "2026-10-29",
+                "excerpt": "Kevin Warsh* was appointed to serve as a puppet",
+                "score": 372,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypwl8evup/"
+              },
+              {
+                "author": "Same_Lack_1775",
+                "date": "2026-10-29",
+                "excerpt": "You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+                "score": 144,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzzrr2my82/"
+              },
+              {
+                "author": "Still_Glass_8272",
+                "date": "2026-10-29",
+                "excerpt": "the fed lost independence way before warsh, powell was already bending over backwards in the first term. the whole 'super intelligence' thing is just the new buzzword they have to use now to get their",
+                "score": 121,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtz31hovni8/"
+              },
+              {
+                "author": "KevinCubano",
+                "date": "2026-10-29",
+                "excerpt": "Warsh hasn\u2019t lost independence, he\u2019s always been a Trump sycophant.",
+                "score": 116,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzscbehvpd/"
+              },
+              {
+                "author": "Doth_Thou_Even",
+                "date": "2026-10-29",
+                "excerpt": "As an fyi, the fed receives no money from taxes/congress\u2014intentionally so.",
+                "score": 67,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzoektwvk4/"
+              },
+              {
+                "author": "BeaverFly",
+                "date": "2026-10-29",
+                "excerpt": "From the Congressional Research Service \"Given the Fed\u2019s independent status, it is unclear which, if any, executive orders the board or the Fed banks are required to comply with.\"",
+                "score": 63,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru3h2cynpvp/"
+              },
+              {
+                "author": "lycopeneLover",
+                "date": "2026-10-29",
+                "excerpt": "Language control gives 1984 vibes",
+                "score": 59,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru32r0pson9/"
+              },
+              {
+                "author": "raj6126",
+                "date": "2026-10-29",
+                "excerpt": "How do you not raise interest rates now inflation is running out of control.",
+                "score": 40,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtz84hblgaq/"
+              },
+              {
+                "author": "2-wheels",
+                "date": "2026-10-29",
+                "excerpt": "Yeah, but vote was 10-2 so this isn\u2019t all on Warsh.",
+                "score": 39,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru0qfmzgk3o/"
+              },
+              {
+                "author": "jimbo831",
+                "date": "2026-10-29",
+                "excerpt": "Kevin Walsh was appointed to serve as a puppet",
+                "score": 32,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzffixwt6t/"
+              },
+              {
+                "author": "CarpoLarpo",
+                "date": "2026-10-29",
+                "excerpt": "The corruption runs deeper than most of us know. Its been this way for a while. They're just showing their true colors now because we've fallen so far they can publicly get away with it now.",
+                "score": 30,
+                "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru2sfbygszm/"
+              }
+            ]
+          },
+          "published_at": "2026-10-29",
+          "relevance_hint": 0.99,
+          "snippet": "You must be new here Kevin Warsh* was appointed to serve as a puppet You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Did anyone notice Kevin Warsh used the term \u2018super intelligence\u2019 in the FOMC presser? Has the Fed clearly lost independence?",
+          "url": "https://www.reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "q1"
+      ],
+      "title": "Did anyone notice Kevin Warsh used the term \u2018super intelligence\u2019 in the FOMC presser? Has the Fed clearly lost independence?",
+      "url": "https://www.reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh",
+      "cluster_id": "cluster-2",
+      "engagement": 51,
+      "explanation": "fallback-local-score",
+      "final_score": 44.39408602150537,
+      "freshness": 78,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 19.67194535938615,
+      "item_id": "R2",
+      "local_relevance": 0.5,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R2",
+            "native_rank": 2,
+            "source": "reddit",
+            "subquery_label": "q1"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "q1:reddit": 2
+      },
+      "rerank_score": 41.0,
+      "rrf_score": 0.005376344086021505,
+      "snippet": "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now. market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Contradictory Statements from Kevin Warsh\nThe Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now. market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+          "container": "investing",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 71,
+            "score": 54
+          },
+          "engagement_score": 51,
+          "freshness": 78,
+          "item_id": "R2",
+          "local_rank_score": 0.5710000000000001,
+          "local_relevance": 0.5,
+          "metadata": {
+            "comment_insights": [
+              "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now.",
+              "market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard",
+              "Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+              "Of course it\u2019s politically motivated - inflation has been over their limit for 4 years now",
+              "they know the hour, as soon as Democratic party gets any traction then it is All Austerity All The Time.",
+              "trump has been demanding powell for lower rate. why would it be any different with warsh?",
+              "Not really the discussion in the market is about how hawkish they are, not if they are hawkish."
+            ],
+            "top_comments": [
+              {
+                "author": "RealMcGonzo",
+                "date": "2026-10-28",
+                "excerpt": "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now.",
+                "score": 41,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsv4g0jrdr4/"
+              },
+              {
+                "author": "fumbling_artisan",
+                "date": "2026-10-28",
+                "excerpt": "market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard",
+                "score": 18,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsr93zr3nmo/"
+              },
+              {
+                "author": "Suitable-Option833",
+                "date": "2026-10-28",
+                "excerpt": "Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+                "score": 16,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsquihy3ko0/"
+              },
+              {
+                "author": "FewUnderstanding2214",
+                "date": "2026-10-28",
+                "excerpt": "Of course it\u2019s politically motivated - inflation has been over their limit for 4 years now",
+                "score": 14,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsqsxv8pyzn/"
+              },
+              {
+                "author": "DrXaos",
+                "date": "2026-10-28",
+                "excerpt": "they know the hour, as soon as Democratic party gets any traction then it is All Austerity All The Time.",
+                "score": 12,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsygppsimao/"
+              },
+              {
+                "author": "Bush_Trimmer",
+                "date": "2026-10-29",
+                "excerpt": "trump has been demanding powell for lower rate. why would it be any different with warsh?",
+                "score": 12,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt0kwrbwmld/"
+              },
+              {
+                "author": "GAV17",
+                "date": "2026-10-29",
+                "excerpt": "Not really the discussion in the market is about how hawkish they are, not if they are hawkish. Everyone expected, as future showed, that they wouldn't increase rates today, but they will in December.",
+                "score": 11,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt5o3hu23qb/"
+              },
+              {
+                "author": "RIP_Soulja_Slim",
+                "date": "2026-10-29",
+                "excerpt": "My running theory is that Trump is so genuinely stupid he had no idea Warsh was a hawk. It kinda checks out, and Warsh played it well by not really discussing rates a lot in his rhetoric prior to bein",
+                "score": 8,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rtui349q15u/"
+              },
+              {
+                "author": "Packtex60",
+                "date": "2026-10-29",
+                "excerpt": "He said that a couple of indicators of inflation improved but they need to see more to know what to do next. They aren\u2019t going to get to 2% inflation without causing a recession. The 2% target was and",
+                "score": 7,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt40g6e5bvp/"
+              },
+              {
+                "author": "enfuego138",
+                "date": "2026-10-28",
+                "excerpt": "Warsh is a hawk. Pay attention.",
+                "score": 5,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsxinq0402p/"
+              },
+              {
+                "author": "RIP_Soulja_Slim",
+                "date": "2026-10-29",
+                "excerpt": "It\u2019s really easy to differentiate the people that pay attention to economics and the Fed vs those who only know about politics by if they are aware Warsh is a hawk or not lol. The guy is in the runnin",
+                "score": 4,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rtuqn4608ki/"
+              },
+              {
+                "author": "kiwimancy",
+                "date": "2026-10-28",
+                "excerpt": "The main reason is that they tend to skip every other meeting if it's not urgent to hike or lower rates (lowering always seems to be more urgent than raising...)",
+                "score": 4,
+                "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsxjxqt9gmd/"
+              }
+            ]
+          },
+          "published_at": "2026-10-28",
+          "relevance_hint": 1.0,
+          "snippet": "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now. market doesn\u2019t believe the hawkish talk either, look at how bonds are trading. they\u2019re calling his bluff hard Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Contradictory Statements from Kevin Warsh",
+          "url": "https://www.reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "q1"
+      ],
+      "title": "Contradictory Statements from Kevin Warsh",
+      "url": "https://www.reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh/"
+    },
+    {
+      "candidate_id": "https://pudding.cool/2026/10/kevin-bacon",
+      "cluster_id": "cluster-3",
+      "engagement": 86,
+      "explanation": "fallback-local-score",
+      "final_score": 33.066120218579236,
+      "freshness": 58,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "50169499",
+      "local_relevance": 0.1,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50169499",
+            "native_rank": 1,
+            "source": "hackernews",
+            "subquery_label": "q1"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "q1:hackernews": 1
+      },
+      "rerank_score": 15.0,
+      "rrf_score": 0.00546448087431694,
+      "snippet": "Sure, but what's the Basis Set movie? If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now. (The one from Pulp Fiction, not the one from Ted.) But what if you could have TWO actors in a movie? Would Sam Jackson (again, the o... Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list.... I hope Kevin bacon takes this as a personal attack and manages...",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "xnx",
+          "body": "The Real Kevin Bacon\nSure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now.  (The one from Pulp Fiction, not the one from Ted.)\nBut what if you could have TWO actors in a movie?  Would Sam Jackson (again, the o... Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list.... I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn\u2019t worked with yet.",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 96,
+            "points": 378
+          },
+          "engagement_score": 86,
+          "freshness": 58,
+          "item_id": "50169499",
+          "local_rank_score": 0.296,
+          "local_relevance": 0.1,
+          "metadata": {
+            "comment_insights": [
+              "Sure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now",
+              "Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about)",
+              "I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn\u2019t worked with yet.",
+              "Somehow it's a fun fact that you can reach any other actor in four moves, but a much less fun fact that you can probably-reach any other actor in 2.6 moves",
+              "Chlo\u00eb Grace Moretz was huge as a child star but she is basically retired now, the likelihood that she continues to appear in any major movies is very slim"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50169499",
+            "top_comments": [
+              {
+                "author": "MattCruikshank",
+                "date": "",
+                "excerpt": "Sure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now.  (The one from Pulp Fiction, not the one from Ted.)\nBut what if you could have TWO actors in a movie?  Would Sam Jackson (again, the o...",
+                "url": "https://news.ycombinator.com/item?id=50212592"
+              },
+              {
+                "author": "ameliaquining",
+                "date": "",
+                "excerpt": "Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list....",
+                "url": "https://news.ycombinator.com/item?id=50213440"
+              },
+              {
+                "author": "dec0dedab0de",
+                "date": "",
+                "excerpt": "I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn\u2019t worked with yet.",
+                "url": "https://news.ycombinator.com/item?id=50212480"
+              },
+              {
+                "author": "card_zero",
+                "date": "",
+                "excerpt": "Somehow it's a fun fact that you can reach any other actor in four moves, but a much less fun fact that you can probably-reach any other actor in 2.6 moves.  \"Connectedness\", huh. Though it was interesting to see that Frank Welker used to be in fourth place. Never heard of him. Or I've only heard of...",
+                "url": "https://news.ycombinator.com/item?id=50212120"
+              },
+              {
+                "author": "reticulates",
+                "date": "",
+                "excerpt": "Chlo\u00eb Grace Moretz was huge as a child star but she is basically retired now, the likelihood that she continues to appear in any major movies is very slim. Her career's early start was beneficial to this ranking but is not representative. The likelihood that she ever overtakes Samuel L Jackson is......",
+                "url": "https://news.ycombinator.com/item?id=50217868"
+              }
+            ]
+          },
+          "published_at": "2026-10-20",
+          "relevance_hint": 0.81,
+          "snippet": "Sure, but what's the Basis Set movie? If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now. (The one from Pulp Fiction, not the one from Ted.) But what if you could have TWO actors in a movie? Would Sam Jackson (again, the o... Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list.... I hope Kevin bacon takes this as a personal attack and manages...",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "The Real Kevin Bacon",
+          "url": "https://pudding.cool/2026/10/kevin-bacon/",
+          "why_relevant": "HN story about The Real Kevin Bacon"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "q1"
+      ],
+      "title": "The Real Kevin Bacon",
+      "url": "https://pudding.cool/2026/10/kevin-bacon/"
+    },
+    {
+      "candidate_id": "https://taylor.town/kk-ai-2026",
+      "cluster_id": "cluster-4",
+      "engagement": 80,
+      "explanation": "fallback-local-score",
+      "final_score": 29.922751322751324,
+      "freshness": 36,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "50057668",
+      "local_relevance": 0.1,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50057668",
+            "native_rank": 3,
+            "source": "hackernews",
+            "subquery_label": "q1"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "q1:hackernews": 3
+      },
+      "rerank_score": 15.0,
+      "rrf_score": 0.005291005291005291,
+      "snippet": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still... Google\u2019s main product was and continues to be ads In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "surprisetalk",
+          "body": "Kevin Kelly's 2016 AI Predictions, 10 Years Later\nBy my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still... Google\u2019s main product was and continues to be ads In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 88,
+            "points": 220
+          },
+          "engagement_score": 80,
+          "freshness": 36,
+          "item_id": "50057668",
+          "local_rank_score": 0.23500000000000001,
+          "local_relevance": 0.1,
+          "metadata": {
+            "comment_insights": [
+              "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous",
+              "Google\u2019s main product was and continues to be ads",
+              "In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia",
+              "I would say that KK's \"The bulk of AI will be special purpose software brains\" has turned out closer to the truth than \"The Bitter Lesson\" has",
+              "> Amid all this activity, a picture of our AI future is coming into view, and it is not the HAL 9000\u2014a discrete machine animated by a charismatic (yet potentially homicidal) humanlike consciousness\u2014or"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50057668",
+            "top_comments": [
+              {
+                "author": "stephen_cagle",
+                "date": "",
+                "excerpt": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still...",
+                "url": "https://news.ycombinator.com/item?id=50059811"
+              },
+              {
+                "author": "cousinbryce",
+                "date": "",
+                "excerpt": "Google\u2019s main product was and continues to be ads",
+                "url": "https://news.ycombinator.com/item?id=50059825"
+              },
+              {
+                "author": "at1as",
+                "date": "",
+                "excerpt": "In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+                "url": "https://news.ycombinator.com/item?id=50061236"
+              },
+              {
+                "author": "rossdavidh",
+                "date": "",
+                "excerpt": "I would say that KK's \"The bulk of AI will be special purpose software brains\" has turned out closer to the truth than \"The Bitter Lesson\" has.  LLM's do not drive cars, or vice versa.  Stockfish still beats the newest, largest LLM at chess.  Etc.  Most of the truly productive \"AI\" is customized for...",
+                "url": "https://news.ycombinator.com/item?id=50062685"
+              },
+              {
+                "author": "gwern",
+                "date": "",
+                "excerpt": "> Amid all this activity, a picture of our AI future is coming into view, and it is not the HAL 9000\u2014a discrete machine animated by a charismatic (yet potentially homicidal) humanlike consciousness\u2014or a Singularitan rapture of superintelligence.\nThe only important prediction Kelly made was a complet...",
+                "url": "https://news.ycombinator.com/item?id=50065195"
+              }
+            ]
+          },
+          "published_at": "2026-10-12",
+          "relevance_hint": 0.76,
+          "snippet": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still... Google\u2019s main product was and continues to be ads In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
+          "url": "https://taylor.town/kk-ai-2026",
+          "why_relevant": "HN story about Kevin Kelly's 2016 AI Predictions, 10 Years Later"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "q1"
+      ],
+      "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
+      "url": "https://taylor.town/kk-ai-2026"
+    },
+    {
+      "candidate_id": "https://rte.ie/entertainment/2026/1019/1595980-kevin-bacon",
+      "cluster_id": "cluster-5",
+      "engagement": 36,
+      "explanation": "fallback-local-score",
+      "final_score": 25.144086021505373,
+      "freshness": 54,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 10.0,
+      "item_id": "50153598",
+      "local_relevance": 0.1,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50153598",
+            "native_rank": 2,
+            "source": "hackernews",
+            "subquery_label": "q1"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "q1:hackernews": 2
+      },
+      "rerank_score": 15.0,
+      "rrf_score": 0.005376344086021505,
+      "snippet": "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation. My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago. \"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "austinallegro",
+          "body": "Kevin Bacon's missing clothes finally delivered in Ireland\nWith the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation. My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago. \"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 7,
+            "points": 9
+          },
+          "engagement_score": 36,
+          "freshness": 54,
+          "item_id": "50153598",
+          "local_rank_score": 0.23600000000000002,
+          "local_relevance": 0.1,
+          "metadata": {
+            "comment_insights": [
+              "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation.",
+              "My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago.",
+              "\"The Footloose star,\"",
+              "Oh good, can't tell you how concerned I was about this"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50153598",
+            "top_comments": [
+              {
+                "author": "yzydserd",
+                "date": "",
+                "excerpt": "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation.",
+                "url": "https://news.ycombinator.com/item?id=50153715"
+              },
+              {
+                "author": "mtklein",
+                "date": "",
+                "excerpt": "My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago.",
+                "url": "https://news.ycombinator.com/item?id=50153793"
+              },
+              {
+                "author": "Markoff",
+                "date": "",
+                "excerpt": "\"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+                "url": "https://news.ycombinator.com/item?id=50154759"
+              },
+              {
+                "author": "f30e3dfed1c9",
+                "date": "",
+                "excerpt": "Oh good, can't tell you how concerned I was about this. What a relief!",
+                "url": "https://news.ycombinator.com/item?id=50155083"
+              }
+            ]
+          },
+          "published_at": "2026-10-19",
+          "relevance_hint": 0.68,
+          "snippet": "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation. My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago. \"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Kevin Bacon's missing clothes finally delivered in Ireland",
+          "url": "https://www.rte.ie/entertainment/2026/1019/1595980-kevin-bacon/",
+          "why_relevant": "HN story about Kevin Bacon's missing clothes finally delivered in Ireland"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "q1"
+      ],
+      "title": "Kevin Bacon's missing clothes finally delivered in Ireland",
+      "url": "https://www.rte.ie/entertainment/2026/1019/1595980-kevin-bacon/"
+    },
+    {
+      "candidate_id": "https://theangryoptimist.org/p/kevin-kelly-the-case-for-optimism",
+      "cluster_id": "cluster-6",
+      "engagement": 14,
+      "explanation": "fallback-local-score",
+      "final_score": 20.842083333333335,
+      "freshness": 36,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 17.549999999999997,
+      "item_id": "50061315",
+      "local_relevance": 0.12,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50061315",
+            "native_rank": 4,
+            "source": "hackernews",
+            "subquery_label": "q1"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "q1:hackernews": 4
+      },
+      "rerank_score": 16.4,
+      "rrf_score": 0.005208333333333333,
+      "snippet": "Kevin Kelly: The Case for Optimism (2021)",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "simonebrunozzi",
+          "body": "Kevin Kelly: The Case for Optimism (2021)",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 0,
+            "points": 4
+          },
+          "engagement_score": 14,
+          "freshness": 36,
+          "item_id": "50061315",
+          "local_rank_score": 0.182,
+          "local_relevance": 0.12,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=50061315",
+            "top_comments": []
+          },
+          "published_at": "2026-10-12",
+          "relevance_hint": 0.65,
+          "snippet": "Kevin Kelly: The Case for Optimism (2021)",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Kevin Kelly: The Case for Optimism (2021)",
+          "url": "https://www.theangryoptimist.org/p/kevin-kelly-the-case-for-optimism",
+          "why_relevant": "HN story about Kevin Kelly: The Case for Optimism (2021)"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "q1"
+      ],
+      "title": "Kevin Kelly: The Case for Optimism (2021)",
+      "url": "https://www.theangryoptimist.org/p/kevin-kelly-the-case-for-optimism"
+    },
+    {
+      "candidate_id": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction",
+      "cluster_id": "cluster-7",
+      "engagement": 20,
+      "explanation": "fallback-local-score",
+      "final_score": 20.32205128205128,
+      "freshness": 22,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 12.75,
+      "item_id": "49998265",
+      "local_relevance": 0.12,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "49998265",
+            "native_rank": 5,
+            "source": "hackernews",
+            "subquery_label": "q1"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "q1:hackernews": 5
+      },
+      "rerank_score": 16.4,
+      "rrf_score": 0.005128205128205128,
+      "snippet": "Kevin Kelly \u2013 The Influence of Science Fiction on Science",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "rmason",
+          "body": "Kevin Kelly \u2013 The Influence of Science Fiction on Science",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 2,
+            "points": 3
+          },
+          "engagement_score": 20,
+          "freshness": 22,
+          "item_id": "49998265",
+          "local_rank_score": 0.15300000000000002,
+          "local_relevance": 0.12,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=49998265",
+            "top_comments": []
+          },
+          "published_at": "2026-10-07",
+          "relevance_hint": 0.63,
+          "snippet": "Kevin Kelly \u2013 The Influence of Science Fiction on Science",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Kevin Kelly \u2013 The Influence of Science Fiction on Science",
+          "url": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction",
+          "why_relevant": "HN story about Kevin Kelly \u2013 The Influence of Science Fiction on Science"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "q1"
+      ],
+      "title": "Kevin Kelly \u2013 The Influence of Science Fiction on Science",
+      "url": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction"
+    }
+  ],
+  "source_status": {
+    "hackernews": {
+      "at": "2026-11-02T03:50:24.302367Z",
+      "attempted": true,
+      "items_returned": 5,
+      "source": "hackernews",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-02T03:50:24.302995Z",
+      "attempted": true,
+      "items_returned": 2,
+      "source": "reddit",
+      "state": "ok"
+    }
+  },
+  "topic": "Kevin Warsh",
+  "warnings": []
+}

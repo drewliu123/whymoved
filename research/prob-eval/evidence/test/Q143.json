@@ -1,0 +1,55 @@
+{
+  "qid": "Q143",
+  "as_of": "2026-09-07",
+  "kept": [
+    {
+      "excerpt": "In accordance with this Executive Order, the election of deputies to the new convocation of the State Duma is set to take place on September 20, 2026. The Executive Order comes into force on the day of its official publication.",
+      "published_at": "2026-06-16",
+      "publisher": "President of Russia, official statement distributed unaltered by Public Technologies",
+      "relevance": "Establishes the officially scheduled election date for the election that determines this market's resolution.",
+      "url": "https://ebs.publicnow.com/view/36CD2CFB7795090BBE670FC288FE5CFACE4EDB98"
+    },
+    {
+      "excerpt": "For August 24–30, 2026, United Russia's support was 37.2%, down 2.0 percentage points over the preceding week; Communist Party support was 11.6%, New People 11.5%, LDPR 8.7%, and A Just Russia 5.3%. The party-preference figures are percentages of all respondents. The survey methodology specifies 1,600 adult respondents, a combined telephone and route-based sample, and a maximum sampling error of 2.5%.",
+      "published_at": "2026-09-04",
+      "publisher": "Russian Public Opinion Research Center (VTsIOM)",
+      "relevance": "Provides a directly published, recent pre-cutoff poll while identifying the denominator needed to avoid treating all-respondent support as an election vote-share forecast.",
+      "url": "https://wciom.ru/analytical-reviews/analiticheskii-obzor/reitingi-prezidenta-pravitelstva-i-politicheskikh-partii-04092026"
+    },
+    {
+      "excerpt": "Nationwide, the Kremlin’s expectations for United Russia in the upcoming election now average around 45–50%. Several officials and United Russia members from the Central, Northwestern, and Far Eastern federal districts, along with a source close to the Presidential Administration, told Meduza the Presidential Administration had lowered the KPI again for a number of regions. The Kremlin now wants the ruling party to win at least 45% of the vote, down from 50%. The turnout target of 50% remains unchanged.",
+      "published_at": "2026-07-23",
+      "publisher": "Meduza",
+      "relevance": "Reports administrative election targets and their downward revision, which help assess the intended party-list result alongside United Russia's constituency advantage.",
+      "url": "https://meduza.io/en/feature/2026/07/23/as-support-for-putin-slips-the-kremlin-lowers-the-ruling-party-s-election-target-amid-fears-a-landslide-victory-would-look-suspicious"
+    },
+    {
+      "excerpt": "Some 56% of Russians have already decided which party they will vote for in September's State Duma election, according to July survey data from state pollster VTsIOM, Vedomosti reported on August 7. A further 34% said they had yet to make up their minds or could still change them. United Russia remains the dominant force by a wide margin: 34% of all respondents said they were ready to vote for the ruling party, against 11% for the Communist Party and 10% for New People, VTsIOM's monthly tracking shows.",
+      "published_at": "2026-08-07",
+      "publisher": "bne IntelliNews",
+      "relevance": "Adds a dated earlier campaign polling baseline and evidence of undecided voters relevant to movement before election day.",
+      "url": "https://www.intellinews.com/more-than-half-of-russians-have-already-decided-how-they-ll-vote-in-duma-election-poll-459788/"
+    },
+    {
+      "excerpt": "The Russian Supreme Court upheld a lawsuit from the Rodina Party on August 10 and annulled the registration of Yabloko candidates from the Duma elections. Rodina's lawsuit from August 7 advocated for Yabloko’s disqualification from the Duma elections for violating copyright and promoting extremist slogans.",
+      "published_at": "2026-08-11",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Documents a pre-cutoff restriction on electoral competition that matters when interpreting polling and the likely distribution of parliamentary seats.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-11-2026/"
+    },
+    {
+      "excerpt": "The State Duma elections, the first parliamentary elections since the start of the war, are scheduled for September 18–20. According to the Levada Center, an independent polling institute, the proportion of Russians believing the country is headed in the right direction fell by 10 points between July 2025 and July 2026, down to 54%.",
+      "published_at": "2026-09-06",
+      "publisher": "Le Monde",
+      "relevance": "Provides a near-cutoff campaign update confirming the three-day voting schedule and reporting a deterioration in public sentiment before the vote.",
+      "url": "https://www.lemonde.fr/en/international/article/2026/09/06/putin-war-leader-and-election-campaign-chief-prepares-russia-for-military-escalation_6757224_4.html"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://interfax.com/newsroom/top-stories/72754/",
+      "reason": "Reports election results and the winning party's exact seat total. Although these are historical 2021 results, the supplied removal rule excludes items mentioning results without a historical-results exception."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-09-07, inclusive. All seven retained items have explicit publication dates on or before the cutoff; publication dates, rather than polling fieldwork dates or crawl dates, governed inclusion. Excerpts from Russian-language material are translated into English; other excerpts are lightly condensed where necessary. Searches returned later-dated material, which was excluded, and no post-cutoff developments or election outcome are included. Prediction-market and betting pages were excluded. web_fetch failed because multiple fetch providers were registered; the requested agent-reach web-read fallback reported a pre-existing rate limit, so verification relied on dated source text exposed by web_search. Full-page retrieval was therefore unavailable, and these are not archived page snapshots. No verified pre-cutoff constituency-by-constituency seat projection was obtained; polling percentages and reported administrative targets should not be treated as direct seat forecasts."
+}

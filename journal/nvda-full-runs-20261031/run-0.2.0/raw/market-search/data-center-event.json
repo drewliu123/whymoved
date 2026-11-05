@@ -1,0 +1,49 @@
+{
+  "slug": "will-nvidia-nvda-q3-data-center-revenue-be-above-20261008120135000",
+  "title": "Will NVIDIA (NVDA) Q3 Data Center Revenue be above __?",
+  "end_date": "2026-11-18T23:00:00Z",
+  "url": "https://polymarket.com/event/will-nvidia-nvda-q3-data-center-revenue-be-above-20261008120135000",
+  "description": "This market will resolve to \"Yes\" if NVIDIA's Data Center revenue for the upcoming third fiscal quarter, as reported in its official company earnings materials, is above the listed amount. Otherwise, this market will resolve to \"No\".\n\nThe specified metric will be considered as reported in the company's official earnings materials. Subsequent revisions will not be considered.\n\nIf the specified company's official earnings materials for the specified quarter are released, and the specified metric is not included, this market will resolve to \"No\".\n\nIf the specified company does not release quarterly earnings materials for the specified quarter by December 31, 2026, 11:59 PM ET, this market will resolve to \"No\".\n\nIf the specified metric is reported as a range rather than a specific number, the midpoint of the range will be used for resolution of this market.\n\nThe resolution source for this market is the specified company's official company earnings materials, including press releases, investor presentations, and regulatory filings. If the specified metric is not reported in these materials, recordings or transcripts of the company's earnings webcast may also be used.\n\nNote: This market will resolve based on the most numerically precise version of the specified metric reported in the company's official earnings materials. Only the specified metric will be considered; alternate versions that differ in definition or scope from the specified metric will not be considered.",
+  "outcomes": [
+    {
+      "outcome": "$100B",
+      "prob": 0.85,
+      "chg_1d": -0.025,
+      "chg_1w": 0.02,
+      "chg_1m": null,
+      "closed": false
+    },
+    {
+      "outcome": "$95B",
+      "prob": 0.715,
+      "chg_1d": 0.015,
+      "chg_1w": -0.16,
+      "chg_1m": null,
+      "closed": false
+    },
+    {
+      "outcome": "$105B",
+      "prob": 0.5,
+      "chg_1d": null,
+      "chg_1w": 0.2,
+      "chg_1m": null,
+      "closed": false
+    },
+    {
+      "outcome": "$110B",
+      "prob": 0.3,
+      "chg_1d": null,
+      "chg_1w": 0.08,
+      "chg_1m": null,
+      "closed": false
+    },
+    {
+      "outcome": "$115B",
+      "prob": 0.3,
+      "chg_1d": null,
+      "chg_1w": 0.1,
+      "chg_1m": null,
+      "closed": false
+    }
+  ]
+}

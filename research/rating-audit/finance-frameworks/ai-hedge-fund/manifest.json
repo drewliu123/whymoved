@@ -1,0 +1,114 @@
+[
+  {
+    "file": "LICENSE",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/LICENSE",
+    "bytes": 1068,
+    "status": "ok",
+    "sha256": "6cb192c4a37c69c84459d2e1b3da7af51b06d91e35be521c898107bdae18e2a4"
+  },
+  {
+    "file": "README.md",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/README.md",
+    "bytes": 3237,
+    "status": "ok",
+    "sha256": "bcc175cee008fef78c0456e3fc1eb5d4deca24ee4682e42207aba3b8ee9710c8"
+  },
+  {
+    "file": "pyproject.toml",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/pyproject.toml",
+    "bytes": 1424,
+    "status": "ok",
+    "sha256": "e562a71cb4ded8a7c22fc8893d2635e42acae225a250e566efbdaa77c3ee1d0d"
+  },
+  {
+    "file": "hedge_fund/risk/limits.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/risk/limits.py",
+    "bytes": 4828,
+    "status": "ok",
+    "sha256": "c7328e79fa4abff7e3ab0de95eca0756d4b4ed5114b29827f953d00f355f454a"
+  },
+  {
+    "file": "hedge_fund/portfolio/construction.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/portfolio/construction.py",
+    "bytes": 5101,
+    "status": "ok",
+    "sha256": "dbe2b2d6807f5be98537bf49a8fdb57ca4190785ebc663348d46ad275c459b24"
+  },
+  {
+    "file": "hedge_fund/portfolio/validation.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/portfolio/validation.py",
+    "bytes": 4834,
+    "status": "ok",
+    "sha256": "1fcacb30fd8faef41178bd32fd4ed0383c9ce9aa46b7472f8fec6f3d4d8dfdb2"
+  },
+  {
+    "file": "hedge_fund/signals/llm_agent.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/signals/llm_agent.py",
+    "bytes": 9346,
+    "status": "ok",
+    "sha256": "1037b32500dd0ba361c89128525aba0b79b263e1d9d8a8077d217a9eb2d3159e"
+  },
+  {
+    "file": "hedge_fund/signals/graham.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/signals/graham.py",
+    "bytes": 2680,
+    "status": "ok",
+    "sha256": "87f1898338e423715c843ac4aed9fef1659658f59b6da7c73a3c900f4e1687d1"
+  },
+  {
+    "file": "hedge_fund/paper/ledger.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/paper/ledger.py",
+    "bytes": 12045,
+    "status": "ok",
+    "sha256": "43830552beb1752fc147c25c3099c1836ef88cdc00c9d899fa87b67568cef818"
+  },
+  {
+    "file": "hedge_fund/brokers/costs.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/brokers/costs.py",
+    "bytes": 1581,
+    "status": "ok",
+    "sha256": "2473264ea9ea91fc4fc809dff5466ce6d3f0d7388eea63cff695be9e0cae6417"
+  },
+  {
+    "file": "hedge_fund/pipeline/execution.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/pipeline/execution.py",
+    "bytes": 1878,
+    "status": "ok",
+    "sha256": "3d5c5e225a14701799550b1b459983c46c95bd1cf3684bae3ac2f3bf25c6fb63"
+  },
+  {
+    "file": "hedge_fund/pipeline/stages.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/pipeline/stages.py",
+    "bytes": 9231,
+    "status": "ok",
+    "sha256": "0fe61daa9280ecae9f26fcc452da19df13fd454730d2198b4647f1762002a713"
+  },
+  {
+    "file": "hedge_fund/llm/contract.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/llm/contract.py",
+    "bytes": 6372,
+    "status": "ok",
+    "sha256": "24f69cb8c01f7ca042dc6021c1a3d4669870f003815ab7af63acc16ebff019f0"
+  },
+  {
+    "file": "hedge_fund/features/snapshot.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/features/snapshot.py",
+    "bytes": 13107,
+    "status": "ok",
+    "sha256": "3f7555c10bab10ba653d972246b49687a5f71af4280f7b504810ac4c97dfede8"
+  },
+  {
+    "file": "hedge_fund/pipeline/clock.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/pipeline/clock.py",
+    "bytes": 11684,
+    "status": "ok",
+    "sha256": "0ddd2300f00e0e91ffff53f992ef8dd64a681d9bcf67a4b0abd94569b2cf9c9b"
+  },
+  {
+    "file": "hedge_fund/data/client.py",
+    "url": "https://raw.githubusercontent.com/virattt/ai-hedge-fund/b33175caa1289e180b535d663c89b7a0c04b4726/hedge_fund/data/client.py",
+    "bytes": 11435,
+    "status": "ok",
+    "sha256": "008cb8badf662fe60a6aa4c94b12bbc1d3e5d0226010687e39de9f4ff1141c4c"
+  }
+]

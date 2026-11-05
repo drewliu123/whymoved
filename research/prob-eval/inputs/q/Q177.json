@@ -1,0 +1,50 @@
+{
+ "qid": "Q177",
+ "question": "No change in Bank of Mexico’s interest rates after August 2026 meeting?",
+ "rules": "This market will resolve according to the change in basis points in the target for the overnight interbank interest rate resulting from the August 2026 meeting of the Bank of Mexico, relative to the level it was prior to this meeting.\n\nThe resolution source will be official information from the Bank of Mexico, including the statement or release from its August 2026 meeting, scheduled for August 6, 2026, as listed on the official Bank of Mexico calendar (https://www.banxico.org.mx/viewers2/JSP/calendarioDifusion_es.jsp). This market may resolve as soon as the statement or release of the Bank of Mexico resulting from its August 2026 meeting with relevant data is issued. \n\nIf the specified rate is defined by an upper and lower bound, the relevant change will be the change to the upper bound. \n\nIf the specified rate is changed to a level not expressed in the displayed options, the change will be rounded according to the following guidelines. Increases or decreases of less than 25 bps will be rounded to 25 bps (e.g. an increase or decrease of 10 bps would be considered to be an increase or decrease of 25 bps). Increases or decreases of greater than 25 bps will be rounded to the nearest ",
+ "as_of": "2026-07-23",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Banco de México",
+   "published_at": "2026-06-25",
+   "excerpt": "Banco de México’s Governing Board decided unanimously to maintain the target for the overnight interbank interest rate at 6.50%. Headline inflation was still expected to converge to the target in the second quarter of 2027. The balance of risks for the trajectory of inflation within the forecast horizon remained biased to the upside."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters via Investing.com",
+   "published_at": "2026-07-23",
+   "excerpt": "Mexico’s annual inflation rate decelerated for an eighth consecutive fortnight in early July. Twelve-month inflation reached 3.10%, compared with the 3.12% forecast in a Reuters poll. Annual core inflation was 3.95%, returning within the central bank’s 3%, plus or minus one percentage point, target range."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters via StreetInsider",
+   "published_at": "2026-07-09",
+   "excerpt": "Mexico’s annual inflation rate fell in June for the third consecutive month, reaching its lowest level since December 2020. Annual prices slowed more than expected and settled into the central bank’s target range, easing pressures to hike rates. Banxico had held its benchmark interest rate at 6.5% in a unanimous decision late in June."
+  },
+  {
+   "id": "E4",
+   "publisher": "BBVA Research",
+   "published_at": "2026-06-25",
+   "excerpt": "BBVA expected Banxico to keep the policy rate unchanged at 6.50% and reiterate that the current stance would remain in place for an extended period while monitoring services inflation. It judged that significant economic slack was unlikely to receive much weight now that the policy rate had reached neutral. Soft labor market conditions were expected to support core services disinflation."
+  },
+  {
+   "id": "E5",
+   "publisher": "Investing.com, reporting a Reuters poll",
+   "published_at": "2026-06-23",
+   "excerpt": "All 30 economists in a Reuters poll conducted between June 18 and June 22 expected Banxico to maintain its benchmark interest rate at 6.50% at its June 25 meeting. The report noted that Banxico had lowered its 2026 economic growth forecast to 1.1% from 1.6%."
+  },
+  {
+   "id": "E6",
+   "publisher": "BBVA Research",
+   "published_at": "2026-05-08",
+   "excerpt": "Banxico cut the policy rate by 25 basis points to 6.50% and confirmed the end of the easing cycle, although the decision revealed a divided Board. The easing bias in forward guidance was dropped. The statement said that it would be appropriate to maintain the reference rate at its current level."
+  },
+  {
+   "id": "E7",
+   "publisher": "Reuters via Investing.com",
+   "published_at": "2026-06-24",
+   "excerpt": "Mexico’s annual inflation rate reached 3.55% in the first half of June, below the 3.77% expected in a Reuters poll. Capital Economics analyst Kimberley Sperrfechter said the larger-than-expected decline would ease pressure on Banxico to raise interest rates in the near term. She nevertheless expected a modest tightening cycle to begin near the end of the year."
+  }
+ ]
+}

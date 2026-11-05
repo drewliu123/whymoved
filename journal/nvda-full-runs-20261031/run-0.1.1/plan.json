@@ -1,0 +1,14 @@
+{
+  "question": "截至2026-10-31，英伟达最近一个月跌了多少、为什么跌、业务发生了什么变化，接下来该关注什么？",
+  "type": "asset", "entity": "NVIDIA (NVDA)", "horizon": "2026-10-31 and next earnings", "as_of": "2026-10-31T12:19:06Z",
+  "plugin_version": "0.1.1", "search_fetch_budget": 12,
+  "angles": [
+    {"angle":"基本面变化","question":"最新官方财报的收入、业务结构与供应约束发生了什么变化？","queries":["NVIDIA quarterly results Blackwell revenue","英伟达 营收 出货"],"tiers":["T0","T2"]},
+    {"angle":"催化剂日历","question":"全月与最后交易日有何可核实事件，下个验证点是什么？","queries":["NVIDIA earnings export controls","英伟达 财报 出口限制"],"tiers":["T0","T2"]},
+    {"angle":"预期与估值","question":"月度、一周与月内高点回撤多少，预期或隐含定价如何？","queries":["NVIDIA expectations valuation","NVIDIA share price historical"],"tiers":["T0","T1","T3"]},
+    {"angle":"资金与情绪","question":"讨论集中在哪些因素，有无持仓资金证据？","queries":["NVIDIA selloff AI spending","英伟达 下跌 资本开支"],"tiers":["T1","T4"]},
+    {"angle":"反方观点","question":"最强反方及证伪条件是什么？","queries":["NVIDIA bearish bullish thesis","英伟达 竞争 回报"],"tiers":["T3","T4"]}
+  ],
+  "price_definition": {"month":"last completed close / 2026-09-30 close - 1","week":"last completed close / 2026-10-23 close - 1","drawdown":"last completed close / highest daily close in October - 1; distinguish intraday high if available"},
+  "restrictions":["only this run writable","preserve demoted authors","no prior comparison inputs","no newer probability algorithm","community posts cannot prove company facts","single-origin media causes are attributed views"]
+}

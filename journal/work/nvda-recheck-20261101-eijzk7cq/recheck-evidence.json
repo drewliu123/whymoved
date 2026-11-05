@@ -1,0 +1,46 @@
+{
+  "captured_at": "2026-11-02T02:10:32.656848Z",
+  "capture_note": "工具输出接收与记录时刻，不冒充HTTP响应时间",
+  "websearch": {
+    "query": "Nvidia NVDA October 30 2026 stock fall Amazon Intel Reuters 4.2 7.2",
+    "selected": [
+      "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163"
+    ],
+    "selection_reason": "同一Reuters收盘稿可直接解决原有百分比归属疑问；其他结果不作为新增独立证据，未读取内容不入主张"
+  },
+  "reuters": {
+    "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
+    "status": "read",
+    "reported_published": "2026-10-30 04:47",
+    "reported_updated": "2026-10-30 20:42",
+    "timezone": "not stated in returned output",
+    "extract": "收盘稿中Nasdaq跌747.73点、2.86%；英伟达跌4.2%，芯片行业指数跌7.2%；后两句位于收盘语境，未各自再次写明close。记者将抛售联系到Intel、Amazon季报及AI支出回报担忧。",
+    "source_ids": [
+      "S6",
+      "S7"
+    ]
+  },
+  "amazon": {
+    "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+    "status": "read",
+    "published": "2026-10-29",
+    "locator": "Supplemental Financial Information and Business Metrics第一张表，TTM至9月30日，USD millions",
+    "extract": {
+      "2026": {
+        "operating_cash_flow": 168300,
+        "net_ppe_purchases": 210657,
+        "free_cash_flow": -42357
+      },
+      "2025": {
+        "operating_cash_flow": 130691,
+        "net_ppe_purchases": 115903,
+        "free_cash_flow": 14788
+      }
+    },
+    "interpretation_limit": "AI说明针对资本购买支出增量；不是将全部支出归于AI，也不是Q3单季数据。",
+    "source_ids": [
+      "S12",
+      "S15"
+    ]
+  }
+}

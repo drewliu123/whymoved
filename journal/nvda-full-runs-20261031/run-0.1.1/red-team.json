@@ -1,0 +1,31 @@
+{
+  "agent_type": "touyan:red-team",
+  "mode": "read-only; no web calls; no file writes",
+  "reviewed": ["claims.json", "memo.json"],
+  "counterpoints": [
+    {"target":"C2","argument":"计算未发现有力反方，但最高点依赖全月日线完整性和收盘字段含义；FT时间字段疑点属于核实缺口，不是已发现价格错误。","sources":[]},
+    {"target":"C5","argument":"计算与所列金额一致，严格限定于披露时预期则未发现有力反方；字段的同季度同口径仍依赖短摘录标签。","sources":[]},
+    {"target":"C7","argument":"客户降低资本开支或提高采购效率也可影响未来盈利预期，不能仅由估值倍数压力解释。这是逻辑反方，未找到来源。","sources":[]},
+    {"target":"C9","argument":"同线程分歧不能代表总体投资者；互动数晚于截面，不能支持截面观点强弱或全月变化。","sources":[]},
+    {"target":"C11","argument":"未来盈利预期、折现率和其他风险亦相容；8月指引不能排除10月尚未取证的业务变化，现有材料无法区分或排序。这是逻辑反方，未找到来源。","sources":[]},
+    {"target":"C12","argument":"同标的、同季度、同口径、同结算规则才要求门槛单调性；显示价格倒挂说明报价不宜直接当概率，不证明真实信念矛盾。","sources":[]},
+    {"target":"C14","argument":"11月15日只是征求意见截止，不承诺规则生效；11月17日财报不能单独回答长期客户ROI。","sources":[]},
+    {"target":"C15","argument":"客户融资订单变化未必使当季指引失效，可能在后续季度体现或被其他业务抵消。这是逻辑反方，未找到来源。","sources":[]},
+    {"target":"H1","argument":"管理层指引不保证实现；交付验收收入确认跨期可能低于下限，未取得已发生证据。这是逻辑反方，未找到来源。","sources":[]},
+    {"target":"H2","argument":"Q2占比不保证Q3超过90%；其他业务增长或交付跨期也能降低占比。这是逻辑反方，未找到来源。","sources":[]}
+  ],
+  "overreach": [
+    {"target":"C2","problem":"校验和关键收盘相符不替代全月完整性及时间字段核实。","fix":"披露官方失败、行情降级及FT时间疑点。"},
+    {"target":"C7","problem":"短quote不足以逐项重新核对Intel/Amazon归因。","fix":"保留单源媒体转述，披露WebFetch摘要而非完整原文留档。"},
+    {"target":"C11","problem":"更可检验的解释暗示优选排序，证据不足。","fix":"降为有限证据相容的候选解释；不将8月预期当10月现状。"},
+    {"target":"C12","problem":"倒挂逻辑需相同口径前提，缺同步成交与流动性。","fix":"仅称显示价格异常，不推断参与者信念。"},
+    {"target":"C13","problem":"具体受访者表述只在全文摘要，quote不足。","fix":"只作为受访者观点，不作为NVDA订单事实或独立第二来源。"},
+    {"target":"C14","problem":"缺Q2利润率基线；征求意见截止非生效。","fix":"同口径官方利润率比较待取得，政策按正式文本生效安排及经营披露。"},
+    {"target":"C15","problem":"客户变化使8月指引过时缺影响期间规模抵消前提。","fix":"限定足以改变对应期间收入预期才重估。"}
+  ],
+  "falsifiers": [
+    {"target":"H1","observe":"11月17日官方同口径Q3总营收严格低于1058.4亿美元；等于不证伪。未发布、边界舍入或口径不可比记待核实/void，不记miss。","by":"2026-11-17"},
+    {"target":"H2","observe":"11月17日官方同口径Data Center/总营收≤90%；字段缺失、边界舍入或口径不可比不构成证伪。","by":"2026-11-17"}
+  ],
+  "storage_note":"Faithful structured preservation of the independent handback, with wording condensed; no added external evidence."
+}

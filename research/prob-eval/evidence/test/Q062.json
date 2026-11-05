@@ -1,0 +1,50 @@
+{
+  "qid": "Q062",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "Natural gas inventories remain above the five-year average through much of our forecast, helping limit upward price pressures. Inventories remain relatively high because we expect record natural gas production, led by growth in the Permian region, to help meet rising demand. At the end of June, U.S. working natural gas inventories were 6% above the five-year average.",
+      "published_at": "2026-07-07",
+      "publisher": "U.S. Energy Information Administration — July 2026 Short-Term Energy Outlook",
+      "relevance": "The official pre-cutoff outlook identifies abundant supply and surplus inventories as constraints on upward pressure during the July forecasting window.",
+      "url": "https://www.eia.gov/outlooks/steo/archives/Jul26.pdf"
+    },
+    {
+      "excerpt": "Working gas in storage was 3,024 Bcf as of Friday, July 10, 2026, according to EIA estimates. This represents a net increase of 41 Bcf from the previous week. Stocks were 21 Bcf less than last year at this time and 181 Bcf above the five-year average of 2,843 Bcf.",
+      "published_at": "2026-07-16T09:56:50-05:00",
+      "publisher": "Alden Energy — EIA Weekly Natural Gas Storage Report & Insight",
+      "relevance": "The latest storage release available by the cutoff quantifies the inventory cushion relevant to downside pressure on natural gas.",
+      "url": "https://aldenenergy.com/news/eia-weekly-natural-gas-storage-report-07162026"
+    },
+    {
+      "excerpt": "LSEG data showed that gas flows to Freeport were on track to rise to 0.6 billion cubic feet per day on July 16, up from 0.2 billion cubic feet per day on July 15. Since July 10, Freeport had been pulling in a reduced 1.2 billion cubic feet per day of gas during maintenance work expected to last until late August. The three liquefaction trains at Freeport are capable of turning about 2.4 billion cubic feet per day of gas into LNG.",
+      "published_at": "2026-07-16",
+      "publisher": "Reuters, republished by Pipeline & Gas Journal",
+      "relevance": "Reduced feedgas consumption at a major export terminal leaves more gas available domestically, while a restart could restore some demand.",
+      "url": "https://www.pgjonline.com/news/2026/july/freeport-lng-restarts-texas-export-plant-after-power-related-shutdown"
+    },
+    {
+      "excerpt": "Financial group LSEG said average gas output in the US Lower 48 states rose to 110.3 billion cubic feet per day (bcfd) so far in July from 110.0 bcfd in June, but remained below the monthly record high of 110.6 bcfd in December 2025. Meteorologists forecast the weather would remain mostly warmer than normal through July 31, forcing power generators to burn lots of gas to keep air conditioners humming. About 40 percent of US power generation comes from gas-fired plants.",
+      "published_at": "2026-07-17T05:46:52+05:00",
+      "publisher": "Reuters, republished by Business Recorder",
+      "relevance": "This dated report captures the opposing effects of rising July production and anticipated cooling demand over the remaining month.",
+      "url": "https://www.brecorder.com/news/amp/40430425"
+    },
+    {
+      "excerpt": "According to data from Rystad Energy, natural gas demand for electric power generation averaged 45.6 Bcf per day for the week ending July 7, more than 15 percent, higher than the previous week. U.S. dry gas production averaged 111.2 Bcf per day in June, rising 3.4 percent over the same month last year but declining 0.2 percent compared to last month, according to preliminary data from Rystad Energy. Looking into mid-July, the National Oceanic and Atmospheric Administration (NOAA) expects warmer-than-normal temperatures to continue.",
+      "published_at": "2026-07-09",
+      "publisher": "American Gas Association — Natural Gas Market Indicators",
+      "relevance": "The industry report provides an early-July baseline for power demand, production growth and the weather outlook against which subsequent changes can be assessed.",
+      "url": "https://www.aga.org/research-policy/resource-library/natural-gas-market-indicators-june-9-2026/"
+    },
+    {
+      "excerpt": "The Commodity Weather Group on Friday said forecasts shifted cooler, with below-average temperatures expected in the Southwest and Mid-Atlantic through July 26. US (lower-48) dry gas production on Friday was 112.6 bcf/day (+3.6% y/y), according to BNEF. Estimated LNG net flows to US LNG export terminals on Friday were 18.1 bcf/day (+0.5% w/w), according to BNEF. Baker Hughes reported Friday that the number of active US nat-gas drilling rigs in the week ending July 17 remained unchanged at 126 rigs, moderately below the 2.5-year high of 134 rigs set in February 2026.",
+      "published_at": "2026-07-17T19:13:29Z",
+      "publisher": "Barchart / Rich Asplund, republished by Yahoo Finance",
+      "relevance": "The cutoff-day report supplies updated weather, production, export demand and drilling indicators relevant to the risk of further downside.",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/nat-gas-prices-supported-surge-191329091.html"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-17, inclusive; no intraday cutoff was specified. Included only dated publications on or before that date, using publication metadata or explicit source headings and dates. Searched with web_search; web_fetch failed with a provider-configuration error, so source bodies were checked using the agent-reach web-read fallback. The EIA item uses its July archive rather than a changing current-release URL. The AGA URL says june-9, but its indexed publication title explicitly identifies July 9, 2026 and its body contains early-July observations. Alden's introductory commentary contains an inconsistent inventory total; the excerpt uses its detailed EIA summary, corroborated by the other contemporaneous reports. Excluded unknown-date and later publications, retrospective full-July summaries, prediction-market pages, odds and quoted market prices. Excerpts omit dynamic page navigation and later related stories. These sources provide forecasting context and do not establish whether the Pyth Active Month one-minute candle threshold was reached; the supplied resolution rules are truncated and market-creation time was not provided."
+}

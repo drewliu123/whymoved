@@ -1,0 +1,44 @@
+{
+ "qid": "Q051",
+ "question": "Will the Sweden Democrats (SD) win the second most seats in the 2026 Swedish parliamentary election?",
+ "rules": "Parliamentary elections are scheduled to be held in Sweden on September 13, 2026.\n\nThis market will resolve according to the political party that wins the second-greatest number of seats in the Swedish Parliament (Riksdag) in this election.\n\nIf voting in the Swedish parliamentary election does not occur by December 31, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nThe named parties or coalitions will be primarily ranked by the number of seats won in the specified election. If two or more parties are tied on seats, ties will be broken by the total number of valid votes received, with higher vote totals ranking higher. If parties remain tied, ties will be broken by alphabetical order of the listed party abbreviations. This market will resolve to the party that occupies the second finishing position after applying this ranking.\n\nThis market will resolve based on the results of this election as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Swedish government, specifically the Swedish Election Authority (Valmyndigheten) (https://www.val.se/).",
+ "as_of": "2026-09-03",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Verian, polling for SVT",
+   "published_at": "2026-09-03",
+   "excerpt": "The September 3 voter barometer put the Social Democrats at 29.2%, the Sweden Democrats at 18.9%, and the Moderates at 16.4%. The remaining parliamentary parties each polled between 3.0% and 8.1%. Verian conducted 3,069 interviews between August 20 and September 2, 2026; 12.5% of respondents did not name a party."
+  },
+  {
+   "id": "E2",
+   "publisher": "Demoskop, polling for Aftonbladet and Svenska Dagbladet",
+   "published_at": "2026-09-03",
+   "excerpt": "Demoskop's September poll showed a sharp decline for the Social Democrats and an increase for the Sweden Democrats. Social Democratic support was 27.2%, while the Liberals increased to 2.8%. The survey comprised 1,998 online interviews conducted between August 25 and September 1; Demoskop does not report conventional margins of error because its monthly barometer is not based on a purely random population sample."
+  },
+  {
+   "id": "E3",
+   "publisher": "Novus",
+   "published_at": "2026-09-01",
+   "excerpt": "Novus reported that Moderate support fell by 1.1 percentage points to 17.2%, while SD recovered its previous month's decline. Its hypothetical allocation of parliamentary seats was Social Democrats 95, Sweden Democrats 76, Moderates 63, Centre Party 31, Left Party 31, Greens 29, Christian Democrats 24, and Liberals zero. The survey covered 2,984 eligible voters interviewed between August 24 and August 30, 2026."
+  },
+  {
+   "id": "E4",
+   "publisher": "Valmyndigheten — Swedish Election Authority",
+   "published_at": "2026-05-07",
+   "excerpt": "The official summary of the 2022 Riksdag election gives the Social Democrats 30.33% of votes and 107 seats, the Sweden Democrats 20.54% and 73 seats, and the Moderates 19.10% and 68 seats. The Riksdag's 349 seats were distributed among eight parties."
+  },
+  {
+   "id": "E5",
+   "publisher": "Demoskop, polling for Aftonbladet and Svenska Dagbladet",
+   "published_at": "2026-08-27",
+   "excerpt": "Demoskop's additional August barometer reported that SD fell by almost two percentage points, narrowing the difference between SD and the Moderates to 1.1 percentage points. The opposition's aggregate lead was 5.7 percentage points. Christian Democratic support reached 8.5%, while the Liberals remained at 2.0%."
+  },
+  {
+   "id": "E6",
+   "publisher": "Verian, polling for SVT",
+   "published_at": "2026-08-18",
+   "excerpt": "Verian's August barometer put the Social Democrats at 30.5%, the Sweden Democrats at 18.5%, and the Moderates at 17.3%. SD had polled below 19% for three consecutive measurements, while the Moderates had recorded support around 17% for five consecutive measurements. The survey comprised 3,043 interviews conducted between August 3 and August 16, 2026."
+  }
+ ]
+}

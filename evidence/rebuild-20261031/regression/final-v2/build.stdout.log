@@ -1,0 +1,83 @@
+{
+  "cases": [
+    {
+      "case": "event",
+      "development_sample": true,
+      "heldout": false,
+      "render_exit": 0,
+      "source_validation_errors": [],
+      "archive_exit": 1,
+      "claim_schema": 1,
+      "report_schema": 2,
+      "sources_schema": 2,
+      "strict_claims_validated": false,
+      "historical_availability_proved": false,
+      "archive_status": "blocked_legacy_claims_expected",
+      "blocker": "new archives require claims schema_version 2\n",
+      "update_status": "not_run_requires_safe_schema2_claims",
+      "no_change_note": "Legacy no-change updates are not valid strict acceptance. Safe schema 2 fixture tests belong to the parent validation."
+    },
+    {
+      "case": "asset",
+      "development_sample": true,
+      "heldout": false,
+      "render_exit": 0,
+      "source_validation_errors": [
+        "candidate[1].retrieved_at: timestamp is unknown",
+        "candidate[2].retrieved_at: timestamp is unknown"
+      ],
+      "archive_exit": 1,
+      "claim_schema": 1,
+      "report_schema": 2,
+      "sources_schema": 2,
+      "strict_claims_validated": false,
+      "historical_availability_proved": false,
+      "archive_status": "blocked_legacy_claims_expected",
+      "blocker": "new archives require claims schema_version 2\n",
+      "update_status": "not_run_requires_safe_schema2_claims",
+      "no_change_note": "Legacy no-change updates are not valid strict acceptance. Safe schema 2 fixture tests belong to the parent validation."
+    },
+    {
+      "case": "theme",
+      "development_sample": true,
+      "heldout": false,
+      "render_exit": 0,
+      "source_validation_errors": [],
+      "archive_exit": 1,
+      "claim_schema": 1,
+      "report_schema": 2,
+      "sources_schema": 2,
+      "strict_claims_validated": false,
+      "historical_availability_proved": false,
+      "archive_status": "blocked_legacy_claims_expected",
+      "blocker": "new archives require claims schema_version 2\n",
+      "update_status": "not_run_requires_safe_schema2_claims",
+      "no_change_note": "Legacy no-change updates are not valid strict acceptance. Safe schema 2 fixture tests belong to the parent validation."
+    },
+    {
+      "case": "actor",
+      "development_sample": true,
+      "heldout": false,
+      "render_exit": 0,
+      "source_validation_errors": [],
+      "archive_exit": 1,
+      "claim_schema": 1,
+      "report_schema": 2,
+      "sources_schema": 2,
+      "strict_claims_validated": false,
+      "historical_availability_proved": false,
+      "archive_status": "blocked_legacy_claims_expected",
+      "blocker": "new archives require claims schema_version 2\n",
+      "update_status": "not_run_requires_safe_schema2_claims",
+      "no_change_note": "Legacy no-change updates are not valid strict acceptance. Safe schema 2 fixture tests belong to the parent validation."
+    }
+  ],
+  "integrity": {
+    "original_files": 151,
+    "originals_unchanged": true,
+    "product_scripts_unchanged": true,
+    "scope": "Writes confined to evidence/rebuild-20261031/regression/",
+    "archived_development_runs": 0,
+    "superseded_nonconforming_runs": 6
+  }
+}

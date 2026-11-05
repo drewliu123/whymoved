@@ -1,0 +1,14 @@
+{
+  "question": "截至2026-10-31，英伟达最近一个月跌了多少、为什么跌、业务发生了什么变化，接下来该关注什么？",
+  "type": "asset", "entity": "NVIDIA NVDA", "horizon": "2026-10-31 and next quarterly disclosure", "as_of": "2026-10-31T12:19:06Z",
+  "angles": [
+    {"angle":"基本面变化","question":"最新已披露收入、数据中心与毛利率怎样变化？","queries":["NVIDIA financial results data center revenue","NVIDIA China compute revenue outlook"],"tiers":["T0","T2"]},
+    {"angle":"催化剂日历","question":"下一季首次披露与产品交付应关注什么？","queries":["NVIDIA earnings webcast","NVIDIA Rubin production"],"tiers":["T0","T2"]},
+    {"angle":"预期与估值","question":"股票本月回撤与已匹配财报盘口分别怎样定价？","queries":["NVIDIA historical stock prices","NVIDIA data center revenue prediction market"],"tiers":["T0","T1"]},
+    {"angle":"资金与情绪","question":"下跌叙事与社区担忧是否有具体样本？","queries":["NVIDIA stock pullback AI spending","英伟达 AI 投入 回报"],"tiers":["T1","T4"]},
+    {"angle":"反方观点","question":"收入增长能否抵消客户投资回报和毛利压力？","queries":["NVIDIA AI demand customer financing","NVIDIA margin risk"],"tiers":["T3","T4"]}
+  ],
+  "scope": "isolated full trial; no official journal writes; no old reports or other runs; approximately 12 web search/fetch target budget, local and market operations excluded",
+  "author_policy": "copied existing run/data/authors.json retained; no asset core/watch; do not target demoted",
+  "delegation": {"facts":"touyan:fact-collector; maximum 5 web calls", "community":"touyan:community-scout; actual last30days then maximum 2 fallback searches", "markets":"main researcher"}
+}

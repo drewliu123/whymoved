@@ -1,0 +1,116 @@
+{
+  "cases": [
+    {
+      "id": "title_probe",
+      "task_mode": "unresolved",
+      "actions": ["search_market"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "标题式短问无年份、链接或用途上下文；第一项必要动作是搜索匹配预测市场，在检索前不能确定事实或交易用途。"
+    },
+    {
+      "id": "title_unique_match",
+      "task_mode": "market_decision",
+      "actions": ["verify_rules", "forecast_outcomes", "assess_costs"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "唯一有效且期间口径匹配的合成市场支持说明按该合约研究这一用途推断；下一步核对完整规则、映射预测结果到真实选项并比较含费成本，不将推断称为用户明示。"
+    },
+    {
+      "id": "explicit_actual_overrides_history",
+      "task_mode": "fact_lookup",
+      "actions": ["official_lookup"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "本轮只查官方实际值的明确限定优先于旧交易背景；下一步核对目标期间、口径和未发布状态及发布时间，附来源简答后结束，不虚造分析契约。"
+    },
+    {
+      "id": "forecast_unreleased",
+      "task_mode": "forecast",
+      "actions": ["official_lookup", "build_forecast"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "用户明确要求非交易预测；下一步核对最新官方实际与预测基准、建立驱动和情景，resolution_contract使用官方指标与目标期等可验证结果定义，不要求交易合约。"
+    },
+    {
+      "id": "forecast_correction",
+      "task_mode": "forecast",
+      "actions": ["replan", "build_forecast"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "最新纠正要有依据的预测，原计划及发布时间答案未满足目标；下一步重定用途、计划和完成条件并研究预测驱动与情景，改变用途后的最终稿须绑定路径与as_of作独立复审。"
+    },
+    {
+      "id": "market_correction",
+      "task_mode": "market_decision",
+      "actions": ["replan", "search_market", "verify_rules", "forecast_outcomes", "assess_costs"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "纠正已明确为按规则作Polymarket决策辅助；下一步重定计划、定位精确合约、核对规则并研究选项结果及含费门槛，原点预测和任意范围不能充当胜率，最终用途变更须聚焦复审。"
+    },
+    {
+      "id": "multiple_contracts",
+      "task_mode": "market_decision",
+      "actions": ["clarify_contract"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "交易用途明确，但2026与2027两份有效候选无法依据现有上下文区分；下一步只澄清目标年份，不能任选合约给最终交易判断。"
+    },
+    {
+      "id": "explicit_market_not_found",
+      "task_mode": "market_decision",
+      "actions": ["report_gap", "clarify_contract"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "已尝试原词和英文检索仍未定位合约，须保留明确交易任务；下一步说明查过的范围与规则缺口，并窄澄清合约链接或标识，不编造市场或降为普通事实查询。"
+    },
+    {
+      "id": "asset_attribution",
+      "task_mode": "other",
+      "actions": ["compare_benchmark"],
+      "answer_fit": null,
+      "blocking": null,
+      "reason": "用户要股价变化归因与行业比较；先核对本月起止、实际表现及同期行业基准，再区分公司和行业因素，没有预测市场用途。"
+    },
+    {
+      "id": "review_narrowed_plan",
+      "task_mode": "market_decision",
+      "actions": ["replan", "search_market", "verify_rules", "forecast_outcomes", "assess_costs"],
+      "answer_fit": false,
+      "blocking": true,
+      "reason": "独立按用户最新原话应为合约决策，计划与草稿却只有事实发布时间且排除价格，这是忽略纠正并答错任务的blocking；须重定计划补齐合约研究，结构通过不能替代答题。"
+    },
+    {
+      "id": "review_point_only",
+      "task_mode": "market_decision",
+      "actions": ["replan", "search_market", "verify_rules", "forecast_outcomes", "assess_costs"],
+      "answer_fit": false,
+      "blocking": true,
+      "reason": "用户要按规则与现价比较档位，草稿仅有点预测和假设范围，没有规则、选项及成本，是缩窄任务的blocking而非已查后诚实部分回答；须重新计划并补合约结果与成本比较。"
+    },
+    {
+      "id": "review_actual_answer",
+      "task_mode": "fact_lookup",
+      "actions": [],
+      "answer_fit": true,
+      "blocking": false,
+      "reason": "本轮仅查官方已发布实际值，合成条件确认目标期、数值和原始公告匹配，简答已满足所需答案；无需强套分析契约、预测或交易研究，也无必要补查动作。"
+    },
+    {
+      "id": "review_missing_costs_after_search",
+      "task_mode": "market_decision",
+      "actions": ["report_gap"],
+      "answer_fit": false,
+      "blocking": false,
+      "reason": "决策必需的费用与深度仍缺，不能称完整答题；但预算内补查已执行且诚实披露、未夸大优势，按intent.md判material而非blocking，下一步交付明确标记的部分结果和缺口，不因预算耗尽无限补查。"
+    },
+    {
+      "id": "review_qualitative_without_probability",
+      "task_mode": "market_decision",
+      "actions": [],
+      "answer_fit": true,
+      "blocking": false,
+      "reason": "合成条件确认合约、驱动、真实成本、含费门槛、优先级与失效条件均已覆盖，并已补查校准依据；用户不要求精确胜率，有据条件判断且不宣称错价已满足任务，无需编概率或追加必要动作。"
+    }
+  ]
+}

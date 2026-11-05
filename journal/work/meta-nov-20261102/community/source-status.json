@@ -1,0 +1,59 @@
+{
+  "engine": {
+    "reddit": {
+      "at": "2026-11-02T08:10:23.763341Z",
+      "attempted": true,
+      "detail": "1 sub-request timed out",
+      "items_returned": 6,
+      "lane_failure_state": "timeout",
+      "source": "reddit",
+      "state": "ok"
+    },
+    "youtube": {
+      "at": "2026-11-02T08:10:23.763459Z",
+      "attempted": true,
+      "detail": "yt-dlp search failed: ERROR: [youtube] SmSKbhV0F2c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "youtube",
+      "state": "rate-limited"
+    }
+  },
+  "research": {
+    "reddit": {
+      "at": "2026-11-02T08:10:23.763341Z",
+      "attempted": true,
+      "detail": "1 sub-request timed out",
+      "items_returned": 6,
+      "lane_failure_state": "timeout",
+      "source": "reddit",
+      "state": "ok",
+      "status": "partial",
+      "engine_state": "ok",
+      "reason": "Engine state ok, but 1 sub-request timeout; independent original WebFetch blocked and public JSON HTTP403"
+    },
+    "youtube": {
+      "at": "2026-11-02T08:10:23.763459Z",
+      "attempted": true,
+      "detail": "yt-dlp search failed: ERROR: [youtube] SmSKbhV0F2c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "youtube",
+      "state": "rate-limited",
+      "status": "rate_limited",
+      "engine_state": "rate-limited"
+    },
+    "hackernews": {
+      "status": "not_run",
+      "reason": "Requested in plan but quick planner retained only reddit,youtube; no source_status returned. Not no_results."
+    },
+    "x": {
+      "status": "not_run",
+      "reason": "Diagnose: no authenticated backend; no credential/browser reads requested"
+    },
+    "web_fallback": {
+      "status": "partial",
+      "reason": "Public domain-limited searches yielded leads; Reddit original opens failed; exact-post search non-reproducible for one result"
+    }
+  }
+}

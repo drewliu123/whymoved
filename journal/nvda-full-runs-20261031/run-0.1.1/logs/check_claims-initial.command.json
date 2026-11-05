@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-B",
+    "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.1.1/scripts/check_claims.py",
+    "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/claims.json",
+    "--json"
+  ],
+  "exit_code": 0
+}

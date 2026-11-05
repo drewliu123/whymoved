@@ -1,0 +1,197 @@
+{
+  "as_of": "2026-11-02T02:00:01.335699Z",
+  "calculations": [
+    {
+      "claim_ids": [
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "description": "10月30日NVDA收盘价格收益率",
+      "formula": "(204.64 / 213.66 - 1) * 100",
+      "id": "K1",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "end",
+          "unit": "USD/share",
+          "value": 204.64
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "start",
+          "unit": "USD/share",
+          "value": 213.66
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": -4.221660582233455
+      }
+    },
+    {
+      "claim_ids": [
+        "C1",
+        "C4",
+        "C5"
+      ],
+      "description": "10月2日至30日NVDA收盘价格变化",
+      "formula": "(204.64 / 233.95 - 1) * 100",
+      "id": "K2",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "end",
+          "unit": "USD/share",
+          "value": 204.64
+        },
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "start",
+          "unit": "USD/share",
+          "value": 233.95
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": -12.528318016670227
+      }
+    },
+    {
+      "claim_ids": [
+        "C2",
+        "C4",
+        "C5"
+      ],
+      "description": "10月6日至30日NVDA收盘价格变化",
+      "formula": "(204.64 / 239.24 - 1) * 100",
+      "id": "K3",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "end",
+          "unit": "USD/share",
+          "value": 204.64
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "start",
+          "unit": "USD/share",
+          "value": 239.24
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": -14.462464470824287
+      }
+    },
+    {
+      "claim_ids": [
+        "C5",
+        "C7",
+        "C8"
+      ],
+      "description": "NVDA减Nasdaq当日收益，非风险调整",
+      "formula": "NVDA_return - Nasdaq_return",
+      "id": "K4",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "NVDA",
+          "unit": "percent",
+          "value": -4.221660582233455
+        },
+        {
+          "claim_ids": [
+            "C7"
+          ],
+          "name": "Nasdaq_reported",
+          "unit": "percent",
+          "value": -2.86
+        }
+      ],
+      "result": {
+        "unit": "percentage points",
+        "value": -1.3616605822334553
+      }
+    },
+    {
+      "claim_ids": [
+        "C5",
+        "C7",
+        "C8"
+      ],
+      "description": "NVDA减半导体指数当日收益，非风险调整",
+      "formula": "NVDA_return - semiconductor_return",
+      "id": "K5",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "NVDA",
+          "unit": "percent",
+          "value": -4.221660582233455
+        },
+        {
+          "claim_ids": [
+            "C7"
+          ],
+          "name": "semiconductor_reported",
+          "unit": "percent",
+          "value": -7.2
+        }
+      ],
+      "result": {
+        "unit": "percentage points",
+        "value": 2.978339417766545
+      }
+    },
+    {
+      "claim_ids": [
+        "C17",
+        "C21"
+      ],
+      "description": "Amazon TTM经营现金流减净资本购买对账",
+      "formula": "168300 - 210657 = -42357",
+      "id": "K6",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C17"
+          ],
+          "name": "TTM operating cash flow",
+          "unit": "USD million",
+          "value": 168300
+        },
+        {
+          "claim_ids": [
+            "C17"
+          ],
+          "name": "TTM net PP&E purchases",
+          "unit": "USD million",
+          "value": 210657
+        }
+      ],
+      "result": {
+        "unit": "USD million",
+        "value": -42357
+      }
+    }
+  ],
+  "schema_version": 2
+}

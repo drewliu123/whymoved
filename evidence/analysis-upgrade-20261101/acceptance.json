@@ -1,0 +1,235 @@
+{
+  "result": "pass",
+  "records": [
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "tests.stdout.log",
+      "stderr": "tests.stderr.log"
+    },
+    {
+      "command": [
+        "claude",
+        "plugin",
+        "validate",
+        ".",
+        "--json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "plugin-validate.stdout.log",
+      "stderr": "plugin-validate.stderr.log"
+    },
+    {
+      "command": [
+        "claude",
+        "plugin",
+        "validate",
+        ".claude-plugin/plugin.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "plugin-contents-validate.stdout.log",
+      "stderr": "plugin-contents-validate.stderr.log"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/analysis_contract.py",
+        "check",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/plan.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "asset-check.stdout.log",
+      "stderr": "asset-check.stderr.log"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/analysis_models.py",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/model-spec.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "model-cli.stdout.log",
+      "stderr": "model-cli.stderr.log"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/analysis_contract.py",
+        "check",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/plan.json"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "tampered-result-rejected.stdout.log",
+      "stderr": "tampered-result-rejected.stderr.log"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/analysis_contract.py",
+        "check",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/theme/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/theme/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/theme/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/theme/plan.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "theme-check.stdout.log",
+      "stderr": "theme-check.stderr.log"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/analysis_contract.py",
+        "check",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/event_pricing/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/event_pricing/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/event_pricing/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/event_pricing/plan.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "event_pricing-check.stdout.log",
+      "stderr": "event_pricing-check.stderr.log"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/analysis_contract.py",
+        "check",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/actor/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/actor/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/actor/sources.json",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/actor/plan.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "actor-check.stdout.log",
+      "stderr": "actor-check.stderr.log"
+    }
+  ],
+  "cases": [
+    {
+      "object_type": "asset",
+      "question_kind": "valuation",
+      "run_id": "R20261102T031042Z-bf12b652f309",
+      "update_run_id": "R20261102T031042Z-0caa6a778387",
+      "report_html": "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/isolated-home/journal/runs/R20261102T031042Z-bf12b652f309/report.html",
+      "report_md": "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/asset/isolated-home/journal/runs/R20261102T031042Z-bf12b652f309/report.md",
+      "model_status": "computed",
+      "market_status": "assessed",
+      "synthetic": true
+    },
+    {
+      "object_type": "theme",
+      "question_kind": "theme_transmission",
+      "run_id": "R20261102T031043Z-37b450e39e0e",
+      "update_run_id": "R20261102T031043Z-c82d0cf655be",
+      "report_html": "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/theme/isolated-home/journal/runs/R20261102T031043Z-37b450e39e0e/report.html",
+      "report_md": "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/theme/isolated-home/journal/runs/R20261102T031043Z-37b450e39e0e/report.md",
+      "model_status": "not_applicable",
+      "market_status": "not_applicable",
+      "synthetic": true
+    },
+    {
+      "object_type": "event_pricing",
+      "question_kind": "event_forecast",
+      "run_id": "R20261102T031043Z-008a0a21c73c",
+      "update_run_id": "R20261102T031043Z-a6e4fd2de777",
+      "report_html": "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/event_pricing/isolated-home/journal/runs/R20261102T031043Z-008a0a21c73c/report.html",
+      "report_md": "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/event_pricing/isolated-home/journal/runs/R20261102T031043Z-008a0a21c73c/report.md",
+      "model_status": "not_applicable",
+      "market_status": "not_applicable",
+      "synthetic": true
+    },
+    {
+      "object_type": "actor",
+      "question_kind": "commitment_check",
+      "run_id": "R20261102T031043Z-ca2fb446e14e",
+      "update_run_id": "R20261102T031043Z-0936c95c66ad",
+      "report_html": "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/actor/isolated-home/journal/runs/R20261102T031043Z-ca2fb446e14e/report.html",
+      "report_md": "/Users/frankzhang/Desktop/投研助手/evidence/analysis-upgrade-20261101/cases/actor/isolated-home/journal/runs/R20261102T031043Z-ca2fb446e14e/report.md",
+      "model_status": "not_applicable",
+      "market_status": "not_applicable",
+      "synthetic": true
+    }
+  ],
+  "old_runs_read": [
+    {
+      "run_id": "R20261102T020745Z-a493e74d7266",
+      "title": "英伟达大跌：行业承压与客户现金流压力，仍缺经营转弱证据",
+      "as_of": "2026-11-02T02:00:01.335699Z",
+      "created_at": "2026-11-02T02:07:45.539589Z",
+      "parent_run": null
+    },
+    {
+      "run_id": "R20261102T021235Z-64da39f1bdbf",
+      "title": "英伟达下跌复核：关键证据一致，当前判断未变",
+      "as_of": "2026-11-02T02:10:32.656848Z",
+      "created_at": "2026-11-02T02:12:35.364461Z",
+      "parent_run": "R20261102T020745Z-a493e74d7266"
+    },
+    {
+      "run_id": "R20261102T030116Z-228fb61e7831",
+      "title": "纳斯达克10月回撤：财报预期落差与AI现金回报担忧",
+      "as_of": "2026-11-02T02:59:00.848830Z",
+      "created_at": "2026-11-02T03:01:16.887577Z",
+      "parent_run": null
+    },
+    {
+      "run_id": "R20261102T030954Z-c737af1e39b2",
+      "title": "纳指下跌的背景机制：通胀、伊朗战争与中期选举",
+      "as_of": "2026-11-02T03:07:48.761363Z",
+      "created_at": "2026-11-02T03:09:54.327638Z",
+      "parent_run": "R20261102T030116Z-228fb61e7831"
+    }
+  ],
+  "old_archive_files_unchanged": true,
+  "not_run": [
+    "live web research",
+    "forecast accuracy or alpha evaluation",
+    "new interactive session reload"
+  ],
+  "notes": "Four object types use explicit synthetic fixtures. Existing NVDA archives were loaded only, not re-researched or rewritten."
+}

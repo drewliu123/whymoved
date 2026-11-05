@@ -1,0 +1,123 @@
+{
+  "as_of": "2026-11-02T03:47:19Z",
+  "candidate_paths": [
+    "sources-before-selection.json",
+    "selected-sources.json",
+    "market-snapshot.json"
+  ],
+  "execution": [
+    {
+      "command": "Gamma /events?slug=... (2 events)",
+      "exit_code": 0,
+      "log": "us-iran-ceasefire-continues-through-the-midterms.json; us-iran-ceasefire-continues-throughptptpt.json"
+    },
+    {
+      "command": "CLOB /book?token_id=... (8 YES tokens)",
+      "exit_code": 0,
+      "log": "book-*.json; market-snapshot.json"
+    },
+    {
+      "command": "CLOB /fee-rate?token_id=... (8 YES tokens)",
+      "exit_code": 0,
+      "log": "fee-rates.json"
+    },
+    {
+      "command": "sources.py validate / select",
+      "exit_code": 0,
+      "log": "sources.json; selected-sources.json"
+    },
+    {
+      "command": "check_claims.py initial",
+      "exit_code": 1,
+      "log": "C22用了泛化词主流，单平台不支持广泛判断；改为精确YES价格与50%比较，并限定Polymarket范围。"
+    },
+    {
+      "command": "check_claims.py final",
+      "exit_code": 0,
+      "log": "24 claims passed"
+    },
+    {
+      "command": "analysis_contract.py check",
+      "exit_code": 0,
+      "log": "contracts passed"
+    },
+    {
+      "command": "analysis_contract.py check after review",
+      "exit_code": 0,
+      "log": "全链一致性通过；24条主张均满足来源契约。"
+    },
+    {
+      "command": "render_report.py report.json --claims claims.json --sources sources.json --out-dir output",
+      "exit_code": 0,
+      "log": "output/report.md; output/report.html"
+    },
+    {
+      "command": "python3 -I render_reading.py",
+      "exit_code": 0,
+      "log": "output/美伊停火研究-市场补充.md; output/美伊停火研究-市场补充.html"
+    }
+  ],
+  "fees": "8个YES token基础费率API返回0；未估计链上/资金转换成本；中点不作为执行价。",
+  "identity": "每个book.asset_id与Gamma outcomes=Yes对应clobTokenIds逐一匹配，使用订单簿timestamp作为quoted_at。",
+  "market_snapshot": "market-snapshot.json",
+  "parent_run": "R20261102T033859Z-9c774311b155",
+  "queries": [
+    {
+      "purpose": "核对事件身份、选项与裁决条件",
+      "query": "site.polymarket.com Iran US ceasefire November 2026 strikes by November",
+      "question": "哪些合约直接对应停火持续期限？",
+      "source": "WebSearch及Gamma事件API",
+      "status": "ok",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "purpose": "寻找独立市场；核协议与停火持续不可混同",
+      "query": "site.kalshi.com Iran ceasefire November 2026 US strike",
+      "question": "Kalshi是否有同义合约可作比较？",
+      "source": "WebSearch",
+      "status": "no_results",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "purpose": "补报价时刻、YES映射、买卖价、顶档数量及费率",
+      "query": "Gamma events slug + CLOB book token_id + fee-rate",
+      "question": "当前每一期限的实际买卖盘和深度是多少？",
+      "source": "Polymarket官方公开API",
+      "status": "ok",
+      "test_ids": [
+        "T3"
+      ]
+    }
+  ],
+  "raw_evidence": [
+    "us-iran-ceasefire-continues-through-the-midterms.json",
+    "us-iran-ceasefire-continues-throughptptpt.json",
+    "book-*.json",
+    "fee-rates.json"
+  ],
+  "review": {
+    "checks": "审查确认7项中点计算、YES方向与快照一致，规则时区已披露；没有由期限斜率推断选举因果。审查未重做原始Gamma token映射与plan契约，主研究者已执行身份与契约检查。",
+    "dispositions": [
+      {
+        "action": "accepted",
+        "change": "标题与主判断明确无合格美方打击；更新说明广义双边停火仍不能独立排序。",
+        "target": "title, answer, update.reason"
+      }
+    ],
+    "findings": [
+      {
+        "problem": "狭义美方打击概率不能包装成广义停火寿命结论。",
+        "severity": "material",
+        "target": "title, answer, update.reason"
+      }
+    ],
+    "status": "completed_with_revision"
+  },
+  "selection": "正文展示选举日与6个系列期限；11月2日冗余近端快照保留原始文件但不入正文。",
+  "structural_diff_interpretation": "新增12个主张和9条来源，market由不适用改为已评估；旧12条主张只更新as_of，未更改历史文本。判断变化仅为新增狭义市场基准，不表示广义停火已可排序，也不表示行情发生历史升降。",
+  "time_discrepancy": "系列Gamma endDate部分看似UTC或美国东部，书面规则明确伊朗标准时间；全部按description裁决文字呈现。不得混用时间。"
+}

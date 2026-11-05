@@ -1,0 +1,50 @@
+{
+ "qid": "Q141",
+ "question": "Will Lionel Messi score 10+ goals during the 2026 FIFA World Cup?",
+ "rules": "This market will resolve to \"Yes\" if the number of goals Lionel Messi scores during the 2026 FIFA World Cup equals or exceeds the listed number. Otherwise, this market will resolve to \"No\".\n\nOnly goals scored during regular time, stoppage time, or extra time count. Only goals credited on FIFA's official scoresheet will count. Penalty shootout goals do not count. Own goals do not count toward the final total.\n\nIf Lionel Messi does not play in the 2026 FIFA World Cup for any reason, this market will resolve to \"No\".\n\nIf the 2026 FIFA World Cup is cancelled, postponed after August 2, 2026, 11:59 PM ET, or it cannot be determined how many goals Lionel Messi scored within that timeframe, this market will resolve to \"50-50\".\n\nThe resolution source for this market will be official information from FIFA; however, a consensus of credible reporting may also be used.",
+ "as_of": "2026-07-06",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "FIFA",
+   "published_at": "2026-07-04",
+   "excerpt": "Argentina goals: Messi (29), L. Martinez (92), Borges (OG,111). The defending champions survived a pulsating match against a heroic Cabo Verde. Argentina will face Egypt in the last 16."
+  },
+  {
+   "id": "E2",
+   "publisher": "Associated Press",
+   "published_at": "2026-07-03",
+   "excerpt": "Messi's goal in the 29th minute was the 20th of his World Cup career, extending his record and moving him two ahead of France's Kylian Mbappé on the all-time list. Messi was pictured later at his media conference with a large bump on his head after apparently being hit with a knee during a collision with a Cape Verde player. \"It hurts a little but I'm good,\" he was quoted in comments translated from Spanish about the goose-egg over his right eye."
+  },
+  {
+   "id": "E3",
+   "publisher": "Al Jazeera",
+   "published_at": "2026-07-06",
+   "excerpt": "Who: Argentina vs Egypt. What: FIFA World Cup 2026 – Round of 16. When: Tuesday, July 7, at 12pm (16:00 GMT). The winner of the Argentina vs Egypt match will play either Switzerland or Colombia in the quarterfinals in Kansas City in the US on Saturday, July 11."
+  },
+  {
+   "id": "E4",
+   "publisher": "FIFA",
+   "published_at": "2026-06-28",
+   "excerpt": "Lionel Messi came off the bench to score his sixth goal of the FIFA World Cup 2026™ as Argentina beat Jordan 3-1 in Dallas. He lashed home an 80th-minute free-kick to net for the seventh successive World Cup game, setting a new record. With top spot already confirmed ahead of the match, Messi was named among the substitutes as Lionel Scaloni made nine changes from the team that started their 2-0 win over Austria on Monday."
+  },
+  {
+   "id": "E5",
+   "publisher": "FIFA",
+   "published_at": "2026-06-17",
+   "excerpt": "Argentina goals: Messi (17, 60, 76). Lionel Messi equalled the all-time FIFA World Cup™ goalscoring record with a hat-trick as Argentina kicked off their title defence with victory over Algeria in Group J at Kansas City Stadium."
+  },
+  {
+   "id": "E6",
+   "publisher": "FIFA",
+   "published_at": "2022-12-20",
+   "excerpt": "Messi scored seven times in the tournament, and twice in the final. His tally is only bettered by Kylian Mbappe, who became just the second player to score a hat-trick in a World Cup final, after Geoff Hurst in 1966."
+  },
+  {
+   "id": "E7",
+   "publisher": "FIFA",
+   "published_at": "2026-05-29",
+   "excerpt": "France striker Just Fontaine astonishingly hit 13 goals in six games at Sweden 1958 – a record for one World Cup. He is followed by Hungary’s Sandor Kocsis (11 goals in 1954), West Germany’s Gerd Muller (10 in 1970), Brazil’s Ademir de Menezes (9 in 1950) and Portugal’s Eusebio (9 in 1966)."
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "qid": "Q069",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "Apple was last valued at $4.90 trillion as its shares rose marginally in premarket trading on Friday, while Nvidia was roughly at the same level, following a 2.4% decline. Apple had raised prices to offset rising costs, a strategy that could hurt demand.",
+      "published_at": "2026-07-17",
+      "publisher": "Reuters via Investing.com",
+      "relevance": "Establishes Apple's proximity to the largest company at the cutoff and identifies a demand risk that could affect its valuation before resolution.",
+      "url": "https://www.investing.com/news/stock-market-news/apple-closes-in-on-nvidia-in-race-for-worlds-most-valuable-company-4798490"
+    },
+    {
+      "excerpt": "The Google parent, the third-largest U.S. company by market value at $4.2 trillion, can jostle indexes as one of the heavyweight \"Magnificent Seven\" stocks. Alphabet and Intel were set to offer updates in the coming week that could sway the market-leading AI trade.",
+      "published_at": "2026-07-17",
+      "publisher": "Reuters via Investing.com",
+      "relevance": "Identifies Alphabet as the immediate challenger below Apple and flags an earnings catalyst within the forecast horizon.",
+      "url": "https://www.investing.com/news/stock-market-news/alphabet-intel-results-in-focus-for-ai-trade-as-us-earnings-rev-up-4797849"
+    },
+    {
+      "excerpt": "China's cyberspace regulator said on Wednesday that Apple's on-device generative AI service, Apple Intelligence, has been registered for use on iPhones in China, paving the way for the long-anticipated rollout of the service in the country.",
+      "published_at": "2026-07-15",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "Documents a recent regulatory development relevant to Apple's AI offering and demand in a major market.",
+      "url": "https://au.marketscreener.com/news/apple-intelligence-ai-service-registered-with-china-s-cyberspace-regulator-ce7f5eddd18af525"
+    },
+    {
+      "excerpt": "BEIJING, July 7 (Reuters) - Smartphone sales in China fell 13% year-on-year during the month-long 618 shopping festival, as brands raised prices to offset higher memory costs, according to data from Counterpoint Research. Apple's sales remained lower than a year earlier.",
+      "published_at": "2026-07-07",
+      "publisher": "Reuters via MarketScreener",
+      "relevance": "Supplies a recent demand headwind that balances positive Apple valuation and AI developments.",
+      "url": "https://au.marketscreener.com/news/china-smartphone-sales-drop-13-during-618-festival-as-memory-costs-limit-discounts-ce7f5edbdf8af626"
+    },
+    {
+      "excerpt": "The Company posted quarterly revenue of $111.2 billion, up 17 percent year over year. Diluted earnings per share was $2.01, up 22 percent year over year. The board of directors has also authorized an additional program to repurchase up to $100 billion of the Company's common stock.",
+      "published_at": "2026-04-30",
+      "publisher": "Apple",
+      "relevance": "Provides the latest eligible official quarterly financial baseline and buyback authorization supporting Apple's valuation.",
+      "url": "https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results/"
+    },
+    {
+      "excerpt": "MOUNTAIN VIEW, Calif. (July 8, 2026) - Alphabet Inc. will hold its quarterly conference call to discuss second quarter 2026 financial results on Wednesday, July 22, at 1:30pm Pacific Time (4:30pm Eastern Time). Please visit the Investor Relations website at abc.xyz/investor on July 22, 2026 to view the earnings release before the conference call.",
+      "published_at": "2026-07-08",
+      "publisher": "Alphabet via Public Technologies / MarketScreener",
+      "relevance": "Confirms a scheduled earnings event for Apple's nearest lower-ranked competitor before the July 31 resolution date.",
+      "url": "https://www.marketscreener.com/news/alphabet-announces-date-of-second-quarter-2026-financial-results-conference-call-ce7f5ed9dd8dff20"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://macdailynews.com/2026/07/17/apple-shares-hit-new-all-time-closing-and-intraday-highs-260717/",
+      "reason": "Contains an explicit stock market price ($333.74) and price change ($0.48), excluded under the rule against market prices."
+    }
+  ],
+  "search_notes": "Frozen cutoff: July 17, 2026, inclusive; target: July 31, 2026 market close. Included only sources displaying an explicit publication date on or before the cutoff. July 17 intraday valuations are distinguished from the dated closing-session report; figures from different timestamps and providers need not match. Excluded later reporting, undated live rankings, prediction-market and betting pages, and resolution outcomes. web_fetch failed because multiple providers were registered without an explicit selection. The requested agent-reach web-read fallback returned RATE_LIMITED and was stopped; retained evidence therefore relies on dated source text exposed by web_search, including expanded targeted results. No probability estimate is supplied."
+}

@@ -1,0 +1,44 @@
+{
+ "qid": "Q131",
+ "question": "Will there be between 20 and 40 average daily transits of the Strait of Hormuz on July 31?",
+ "rules": "This market will resolve according to the finalized 7-day moving average of transit calls (“Arrivals of Ships”) for the Strait of Hormuz that IMF Portwatch reports for July 31, 2026.\n\nIf the reported value falls exactly between two brackets, this market will resolve to the higher range bracket.\n\nTransit calls include container, dry bulk, roll-on/roll-off, general cargo, and tanker ships. Ships not reported by IMF Portwatch will not be considered.\n\nData for a specific date must be finalized before it is considered for this market (namely, once the next date's data point is available, the previous one is finalized).\n\nThis market will resolve as soon as the relevant data has been finalized. If the data for the specified date has not been finalized by the end of the third calendar day (ET) after the day on which such data is released, this market will resolve based on data published up to that point. Additionally, if the relevant data is not released and finalized within 14 calendar days of the specified date, this market will resolve based on the most recent data published up to that point.\n\nIn case of obvious data integrity issues (i.e., erroneous data), the market may remain open un",
+ "as_of": "2026-07-22",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters via ThePrint",
+   "published_at": "2026-07-22",
+   "excerpt": "A total of three commodity vessels crossed the strait on Tuesday, down from four the previous day, Kpler data showed. There were no visible very large crude carrier (VLCC) or liquefied natural gas (LNG) tankers passing through the strait on Tuesday."
+  },
+  {
+   "id": "E2",
+   "publisher": "Lloyd's List Intelligence",
+   "published_at": "2026-07-21",
+   "excerpt": "Maritime traffic through the Strait of Hormuz has sharply declined in the past week (July 13-19) due to escalating security tensions, erasing previous gains from the US-Iran Memorandum of Understanding period. The US-backed southern Omani transit corridor is still in use with at least two tankers tracked using it during the week, but a high volume of dark transits makes it difficult to ascertain the route used in most cases."
+  },
+  {
+   "id": "E3",
+   "publisher": "MarineTraffic / Kpler Risk and Compliance",
+   "published_at": "2026-07-20",
+   "excerpt": "Across 17–19 July, 13 crossings used the Iranian Unilateral Scheme, 14 were Route Undetermined, 2 used Omani Territorial Waters Passage and 1 used the Hormuz TSS."
+  },
+  {
+   "id": "E4",
+   "publisher": "International Maritime Organization",
+   "published_at": "2026-07-08",
+   "excerpt": "These attacks further intensify the fear, uncertainty and psychological strain already being endured by the nearly 6,000 seafarers who remain stranded on board vessels unable to depart the Persian Gulf safely."
+  },
+  {
+   "id": "E5",
+   "publisher": "Congressional Research Service, archived by EveryCRSReport",
+   "published_at": "2026-04-10",
+   "excerpt": "Before U.S. and Israeli military operations began against Iran on February 28, 2026, the average number of ships from various countries transiting through the Strait of Hormuz (the Strait) was about 130 each day. As of April 7, 2026, only a handful of ships have risked the transit each day since the start of the operations for fear of attack by Iranian forces, which are reportedly negotiating with and permitting selected ships to pass through the Strait."
+  },
+  {
+   "id": "E6",
+   "publisher": "International Monetary Fund",
+   "published_at": "2023-11-15",
+   "excerpt": "PortWatch is an online platform designed to monitor and simulate disruptions to maritime trade due to climate extremes and other shocks. PortWatch uses satellite-based vessel data and big data analytics to help policymakers, analysts, and public stakeholders assess impacts of disruptions to maritime trade and simulate indirect spillover effects across the maritime network and global supply chains."
+  }
+ ]
+}

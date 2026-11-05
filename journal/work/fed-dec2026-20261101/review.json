@@ -1,0 +1,8 @@
+{
+ "reviewer":"touyan:red-team",
+ "scope":"独立只读审查首版plan、report、claims、selected sources及记者会原文；未重跑CLI，未补检索",
+ "first_review_conclusion":"原版支持加息可能性，但加息优于维持的排序缺少直接证据。应补官方SEP，或降低结论强度。",
+ "findings":[{"severity":"material","target":"C10/C11、主判断、T1","problem":"9月加息、通胀高与10月讨论物价也符合等待收紧效果，尚未直接支持12月情景排序。两位10月异议者不代表委员会对12月承诺。","evidence":"conference.txt pp5–6、13–14","recommendation":"核验9月官方SEP年底利率分布，否则降低基准判断强度。"},{"severity":"material","target":"C7/C12、watch、T1","problem":"后续条件不应要求就业恶化和通胀降温同时出现；年度/初请与单月就业口径不同。","evidence":"C7及conference.txt p2","recommendation":"说明口径差异；就业连续显著恶化单独作为削弱加息的条件。"}],
+ "verified_no_defect":["会议次数和25bp算术正确","未把记者提问当主席承诺","未将85%未核验线索计为价格","企业固定模型不适用合理"],
+ "followup_review_note":"协调者收窄审查范围后，审查员保留上述两项实质问题；未独立审查新增SEP材料。"
+}

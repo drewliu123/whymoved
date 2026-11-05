@@ -1,0 +1,11 @@
+{
+  "command": [
+    "claude",
+    "plugin",
+    "marketplace",
+    "update",
+    "touyan-local",
+    "--json"
+  ],
+  "exit_code": 0
+}

@@ -1,0 +1,29 @@
+{
+  "claims": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "comparability_issues": [],
+  "evidence": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "judgment": {
+    "comparability": {
+      "reason": "claims、sources、as_of、period/unit/scope及判断文本均相同。",
+      "status": "comparable"
+    },
+    "judgment_changed": false,
+    "reason": "开发回归中的相同冻结输入重复，不构成新的实际研究。"
+  },
+  "method": "structural_ids_and_fields",
+  "parent_run": "R20261031T183410Z-c3bd0f805fdc",
+  "schema_version": 2,
+  "sources": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  }
+}

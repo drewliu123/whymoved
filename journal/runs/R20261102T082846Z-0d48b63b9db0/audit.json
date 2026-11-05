@@ -1,0 +1,326 @@
+{
+  "as_of": "2026-11-02T08:19:47.499646+00:00",
+  "community": {
+    "query_log": "community/query-log.json",
+    "raw": "community/last30days-raw.json",
+    "reason": "原文获取失败，保留候选不纳事实",
+    "selection": "community/sources.json",
+    "status": "partial"
+  },
+  "context_review": {
+    "long_term": "广告现金引擎与AI投资资本周期",
+    "new_transmission": "收入韧性与现金投入配对；10月资料是已知基准，不当作11月新消息",
+    "next_test": "11月2—10日路径、宏观与投入新证据",
+    "prior_expectations": "具名报道但调查方法不足，不宣称超预期",
+    "recent": "10月21财报及至30日价格路径",
+    "unresolved": "同窗指数、完整期权和参考类、同财季合格共识"
+  },
+  "exclusions": [
+    "社区融资10%利率等未经原件核对，未纳事实",
+    "Pyth盘外参考价未作常规结算依据",
+    "未以不完整共识计算超预期或历史预期修订"
+  ],
+  "execution": [
+    {
+      "command": "analysis_contract.py route event_forecast",
+      "exit_code": 0
+    },
+    {
+      "command": "research_plan.py plan.json (initial)",
+      "exit_code": 1,
+      "reason": "补discriminating_observation后通过"
+    },
+    {
+      "command": "research_plan.py plan.json (corrected)",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -I fetch_books.py",
+      "exit_code": 0,
+      "log": "evidence/clob-books.json"
+    },
+    {
+      "command": "python3 -I build_research.py",
+      "exit_code": 0,
+      "note": "calculations由显式Python算术生成；后续脚本仅校验结构、固定模型不适用；算术仍需独立审查"
+    },
+    {
+      "command": "check_claims.py initial",
+      "exit_code": 1,
+      "reason": "No780服务器报价时刻晚于接收时刻，剔除未使用token；两条否定性调查范围措辞触发泛化检查，改写保留原意"
+    },
+    {
+      "command": "sources.py validate/select + check_claims corrected",
+      "exit_code": 0,
+      "log": "evidence/verification-log.json"
+    },
+    {
+      "command": "analysis_contract.py check initial",
+      "exit_code": 0,
+      "log": "evidence/verification-log.json"
+    },
+    {
+      "command": "render_report.py initial",
+      "exit_code": 0,
+      "log": "evidence/verification-log.json"
+    },
+    {
+      "command": "package_reports.py",
+      "exit_code": 0,
+      "reason": "同源Markdown/HTML仅搬移计算和价格评估至附录，不增删主张。"
+    },
+    {
+      "command": "analysis_contract.py check final after review corrections",
+      "exit_code": 0,
+      "log": "evidence/final-validation.json",
+      "result": {
+        "passed": true
+      }
+    },
+    {
+      "command": "render_report.py --overwrite after review + package_reports.py",
+      "exit_code": 0,
+      "log": "../../../../delivery/meta-nov-20261102/provenance.json"
+    }
+  ],
+  "main_queries": [
+    {
+      "evidence": [
+        "evidence/gamma-event.json",
+        "evidence/clob-books.json",
+        "evidence/fees.md"
+      ],
+      "query": "Polymarket META November2026 Gamma/CLOB rules and fees",
+      "status": "ok"
+    },
+    {
+      "evidence": [
+        "evidence/pyth-page.html",
+        "evidence/pyth-feed.json"
+      ],
+      "query": "Pyth META feed page",
+      "reason": "页面无完整价格日期，不以615.94替代常规收盘",
+      "status": "partial"
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "META Q3 2026 earnings release October 2026 investor relations",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "id": "Q2",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "META stock October 30 2026 historical closing price",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 4,
+          "url": "https://finance.yahoo.com/quote/META/history/"
+        },
+        {
+          "engine_rank": 5,
+          "url": "https://stockanalysis.com/stocks/meta/history/"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "id": "Q3",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "Meta Q4 2026 revenue EPS LSEG FactSet October 2026 expectations capital spending 2027",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 5,
+          "url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-q3-earnings-revenue-201155968.html"
+        },
+        {
+          "engine_rank": 14,
+          "url": "https://www.theta.md/earnings/meta/q4-2026"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "id": "Q4",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "site.federalreserve.gov monetarypolicy fomccalendars 2026 November",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "id": "Q5",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "site.bls.gov schedule November 2026 CPI Employment Situation November 2026",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "id": "Q6",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "site.fec.gov 2026 general election November 3 2026",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 4,
+          "url": "https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2026-reporting-dates/electioneering-communications-periods-general-election-2026/"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "id": "Q7",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "META October 30 2026 implied volatility 30 day historical volatility options",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://marketchameleon.com/Overview/META/IV/"
+        },
+        {
+          "engine_rank": 2,
+          "url": "https://www.alphaquery.com/stock/META/volatility-option-statistics/30-day/iv-mean"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "id": "Q8",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "Meta October 2026 earnings 2027 spending costs advertising AI risks Reuters October 21 2026",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 10,
+          "url": "https://www.investing.com/news/stock-market-news/meta-falls-as-investors-balance-muse-growth-with-rising-ai-costs-4965902"
+        },
+        {
+          "engine_rank": 14,
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T1",
+        "T2"
+      ]
+    },
+    {
+      "id": "Q9",
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "query": "META November 2026 investor conference November 2026 stock dividend January 19 2027",
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+        },
+        {
+          "engine_rank": 2,
+          "url": "https://investor.atmeta.com/investor-events/default.aspx"
+        }
+      ],
+      "status": "ok",
+      "test_ids": [
+        "T2"
+      ]
+    }
+  ],
+  "remaining_method_gap": "T3 original scenario predictions were not mutually distinguishing; preserved original plan, explicitly no conclusion from T3. A later run must redesign this test instead of rewriting frozen predictions.",
+  "review": {
+    "analysis_checks": {
+      "discrimination": "fail_in_original_T3_design; limitation retained; original outcomes frozen, no retrospective rewrite; next observations corrected",
+      "market": "pass_for_cost_evaluation_only",
+      "method": "pass",
+      "models": "pass_for_nonapplicability_and_spot_checked_arithmetic; no independent execution"
+    },
+    "findings": [
+      {
+        "disposition": "Conditional downside scenario, acknowledged realized decline, capital expenditure wording corrected",
+        "problem": "Old capex disclosures and negative FCF do not alone establish November incremental downside; all capex not identifiable as AI",
+        "severity": "material",
+        "target": "direction"
+      },
+      {
+        "disposition": "Removed directional reading from claims, market and opportunity; cost proxy only",
+        "problem": "Different barrier distances confound direction inference",
+        "severity": "material",
+        "target": "market direction proxy"
+      },
+      {
+        "disposition": "Preserved frozen outcomes, explicitly marked T3 no discrimination; no supports/weakens; tailored observations and next-run redesign",
+        "problem": "T3 predictions coexist; next observations copied across tests",
+        "severity": "material",
+        "target": "T2/T3 discrimination"
+      },
+      {
+        "disposition": "Relabeled theoretical unit cost, retained depth and limited coverage to common visible quantity",
+        "problem": "Top depth often below100; dominance quantity bounded",
+        "severity": "minor",
+        "target": "100-share theoretical fees and dominance"
+      },
+      {
+        "disposition": "Added spread/depth reasoning in answer and table; no confirmed edge",
+        "problem": "Research order could be confused with expected return ranking",
+        "severity": "minor",
+        "target": "ranking expression"
+      }
+    ],
+    "independent_reviewer": "touyan:red-team",
+    "status": "completed_with_findings_addressed",
+    "value_checks": {
+      "catalyst_timing": "pass_with_two_original_checks",
+      "failure_triggers": "pass_with_specific_observations_added",
+      "price_payoff": "pass",
+      "ranking": "pass_as_research_order_only",
+      "update_review": "not_applicable_first_run",
+      "variant_edge": "original direction proxy failed; replaced with cost-only proxy"
+    },
+    "verification_scope": "Reviewer independently opened Meta IR and BLS; did not re-fetch CLOB/fees or execute code; no claim that revised draft independently re-reviewed."
+  },
+  "scope_note": "用户未指定具体合约；选用匹配月内触及市场。月末收盘市场为不同事件。"
+}

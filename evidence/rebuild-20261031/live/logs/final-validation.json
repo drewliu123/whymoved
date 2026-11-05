@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "final_run_id": "R20261031T184001Z-7bace460dc9c",
+  "final_archive_path": "/Users/frankzhang/Desktop/投研助手/evidence/rebuild-20261031/live/isolated-home/journal/runs/R20261031T184001Z-7bace460dc9c",
+  "audit_role": "untrusted_metadata",
+  "completed_at": "2026-10-31T18:40:01.257983+00:00",
+  "wall_seconds_from_retrieval_start_through_final_archive": 513.753,
+  "native_queries": 5,
+  "engine_queries": 2,
+  "direct_algolia_queries": 2,
+  "total_logical_search_queries": 9,
+  "raw_engine_exit": 0,
+  "engine_seconds": 5.3,
+  "note": "9 search queries only; 2 host WebFetch requests and 10 urllib GETs (2 are Algolia search requests) also recorded. Excludes earlier bootstrap reads and first 2 WebSearch calls from wall clock. No further retrieval for replay. Final validation through APIs exit0."
+}

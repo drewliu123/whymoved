@@ -1,0 +1,50 @@
+{
+  "qid": "Q116",
+  "as_of": "2026-09-17",
+  "kept": [
+    {
+      "published_at": "2026-09-17",
+      "publisher": "Fakty ICTV, reporting Ukrainian General Staff information",
+      "url": "https://fakty.com.ua/ua/ukraine/20260917-karta-bojovyh-dij-na-17-veresnya-2026-sytuatsiya-na-fronti/",
+      "excerpt": "On the Kostiantynivka axis, 29 attacks were recorded. Russian forces conducted assault operations in the areas of Kostiantynivka, Illinivka, Dovha Balka, Rozkishne and Toretske, and toward Mykolaipillia, Pavlivka, Novohryhorivka, Kucheriv Yar and Vilne.",
+      "relevance": "This cutoff-day report establishes continued assault activity around Dovha Balka, although it does not establish qualifying ISW control of the specified intersection."
+    },
+    {
+      "published_at": "2026-09-16",
+      "publisher": "Russia Matters, Harvard Kennedy School Belfer Center",
+      "url": "https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-sept-16-2026",
+      "excerpt": "Settlements near which Russian forces advanced Sept. 8–14, 2026, according to DeepState: Stepanivka, Kotlyne, Kostyantynivka, Chervonyi, Novomarkove, Dibrova, Mykolaivka, Dovha Balka, Kalenyky, Bilytske and Nove Shakhove. As of 1:00 p.m. U.S. East Coast time on September 16, DeepState had not published September 15 data, so the report used September 14 as its latest available observation.",
+      "relevance": "This provides recent evidence of Russian advances near the target settlement while explicitly identifying the observation lag and the use of a mapping source other than ISW."
+    },
+    {
+      "published_at": "2026-09-14",
+      "publisher": "Institute for the Study of War / Critical Threats Project",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-september-14-2026",
+      "excerpt": "Russian forces continued offensive operations near and southwest of Kostyantynivka on September 13 and 14 but did not advance.",
+      "relevance": "ISW's assessment of no advances in the surrounding operational area helps contextualize the pace of movement and the difference between ISW and DeepState reporting."
+    },
+    {
+      "published_at": "2026-09-14",
+      "publisher": "LB.ua, reporting Ukrainian General Staff information",
+      "url": "https://en.lb.ua/news/2026/09/14/41790_more_than_200_clashes_reported.html",
+      "excerpt": "In the Kostiantynivka sector, 20 attacks were recorded. The invaders conducted assault actions near Kostiantynivka, Dovha Balka, Rusyn Yar and Toretske, at Kucheriv Yar, and towards Mykolaipillia.",
+      "relevance": "This dated report corroborates sustained fighting around Dovha Balka several days before the experiment cutoff without equating attacks with territorial capture."
+    },
+    {
+      "published_at": "2026-09-12",
+      "publisher": "Institute for the Study of War",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-12-2026/",
+      "excerpt": "Ukrainian forces have held Russian forces to near-zero net gains since March 2026, and have conducted successful counterattacks in the Kupyansk, Oleksandrivka, and now Lyman directions. Russian forces have made limited but significant gains in and around Kostyantynivka and east of Slovyansk and Kramatorsk, but are fighting to maintain momentum in these areas and elsewhere along the front line.",
+      "relevance": "This supplies broader operational context for near-term advances while distinguishing the locally active Kostyantynivka area from theater-wide net territorial trends."
+    },
+    {
+      "published_at": "2026-08-30",
+      "publisher": "Institute for the Study of War",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-30-2026/",
+      "excerpt": "Ukrainian forces struck Russian positions in southern and central Dovha Balka, according to geolocated footage published on August 28, which ISW assesses occurred after Russian infiltration missions.",
+      "relevance": "This directly documents Russian presence inside the settlement while identifying it as infiltration, a category that does not satisfy the specified resolution rules."
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-09-17, inclusive. Publication dates and excerpts were checked against dated web_search results containing source text; the ICTV excerpt is translated from Ukrainian, and other excerpts have minor punctuation or date-format normalization. ICTV displayed September 17 at 06:51, LB.ua displayed September 14 at 08:37, and the research reports displayed their stated publication dates. Direct web_fetch failed because multiple fetch providers were registered; the requested agent-reach web read fallback returned RATE_LIMITED, so full-page retrieval could not be completed. Included evidence therefore relies on search-visible source text rather than independently retrieved full pages. Prediction-market pages, later publications, and rolling pages with mixed-date content were excluded from the pack. No post-cutoff developments or outcome claims are included. A frozen ISW layer snapshot at 48.492703 N, 37.607318 E and persistence across consecutive finalized updates were not verified; these items do not establish that the intersection had met the capture condition. Reports of advances near Dovha Balka, attacks around it, or infiltration within it must not be treated as equivalent to qualifying ISW shading."
+}

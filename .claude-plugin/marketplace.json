@@ -1,11 +1,18 @@
 {
-  "name": "whymoved",
-  "owner": { "name": "drewliu123" },
+  "name": "touyan-local",
+  "owner": {
+    "name": "drewliu"
+  },
+  "metadata": {
+    "description": "本地投研助手插件市场"
+  },
   "plugins": [
     {
-      "name": "whymoved",
+      "name": "touyan",
+      "description": "投研助手：多层来源检索、研究判断、同源Markdown/HTML与可追溯更新。研究建议，非个人买卖指令。",
+      "version": "0.6.0",
       "source": "./",
-      "description": "Explain why a stock or crypto asset moved, with sources and timestamps."
+      "category": "productivity"
     }
   ]
 }

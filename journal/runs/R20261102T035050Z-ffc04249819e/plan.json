@@ -1,0 +1,172 @@
+{
+  "analysis_version": 1,
+  "as_of": "2026-11-02T03:47:19Z",
+  "budget": {
+    "max_followups": 1,
+    "max_queries": 8
+  },
+  "comparison": {
+    "period": "2026年11月1日当前截面，截止11月3日至12月31日的未来期限",
+    "scope": "Polymarket美国对伊朗合格空袭或地对地导弹打击；并非所有双边敌对行动",
+    "unit": "YES买卖报价、买卖中点与合约规则"
+  },
+  "decision_needed": "理解市场为不同停火持续期限定价多少，并判断该合约概率能说明什么。",
+  "entity": "美国与伊朗",
+  "historical": false,
+  "hypotheses": [
+    {
+      "discriminating_observation": "短期克制与谈判延续，尚无完整长期条款",
+      "explanation": "双方成本约束足以支持未来数周延续克制",
+      "id": "H1"
+    },
+    {
+      "discriminating_observation": "短期承诺到期后恢复直接打击",
+      "explanation": "只有选举前暂停，触发后近期复战",
+      "id": "H2"
+    },
+    {
+      "discriminating_observation": "双方签署并持续执行核查与海峡通行措施",
+      "explanation": "核查与互惠安排支持数月稳定",
+      "id": "H3"
+    }
+  ],
+  "parent_run_id": "R20261102T033859Z-9c774311b155",
+  "prior_judgment": "上一轮未检查预测市场，仅判断无法可靠给出期限；用户指出遗漏，现补同口径期限合约与盘口。",
+  "queries": [
+    {
+      "purpose": "核对事件身份、选项与裁决条件",
+      "query": "site.polymarket.com Iran US ceasefire November 2026 strikes by November",
+      "question": "哪些合约直接对应停火持续期限？",
+      "source": "WebSearch及Gamma事件API",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "purpose": "寻找独立市场；核协议与停火持续不可混同",
+      "query": "site.kalshi.com Iran ceasefire November 2026 US strike",
+      "question": "Kalshi是否有同义合约可作比较？",
+      "source": "WebSearch",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "purpose": "补报价时刻、YES映射、买卖价、顶档数量及费率",
+      "query": "Gamma events slug + CLOB book token_id + fee-rate",
+      "question": "当前每一期限的实际买卖盘和深度是多少？",
+      "source": "Polymarket官方公开API",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "purpose": "沿用上一轮证据及缺口；本轮不重复执行。核实当前状态、双方确认及期限",
+      "query": "US Iran ceasefire latest November 1 2026 October ceasefire Reuters",
+      "question": "当前究竟是什么停火安排？",
+      "source": "官方、Reuters、AP",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "purpose": "沿用上一轮证据及缺口；本轮不重复执行。区别口头克制和实际履约",
+      "query": "Iran US October November 2026 strikes Hormuz talks verification",
+      "question": "当前有哪些可验证执行动作？",
+      "source": "官方行动记录与独立媒体",
+      "test_ids": [
+        "T2"
+      ]
+    }
+  ],
+  "question": "美伊停火会持续多久",
+  "research_design": {
+    "baseline": "上一轮仅凭新闻无法排序停火持续时间；本轮以同口径预测市场期限概率作比较基准。",
+    "discrimination_tests": [
+      {
+        "by": "2026-11-03及随后一周",
+        "id": "T1",
+        "observe": "最新停火或暂停承诺的双方确认、期限与执行机制",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "继续谈判并维持短期克制，但没有完整长期执行条款"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "仅有短期单边承诺，期限届满后缺少续接机制"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "双方确认分阶段互惠条款及核查和争议处理机制"
+          }
+        ],
+        "source": "官方公告及Reuters、AP独立报道"
+      },
+      {
+        "by": "2026-11-10并在随后一个月复核",
+        "id": "T2",
+        "observe": "近30日直接打击、海峡航运、核查与封锁执行动作",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "局部摩擦未升级为持续直接打击，谈判渠道保持"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "恢复直接军事打击且互惠措施逆转"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "核查与海峡通行等互惠措施持续兑现"
+          }
+        ],
+        "source": "官方行动披露及独立现场报道"
+      },
+      {
+        "by": "当前截面及下一次关键外交军事消息后",
+        "id": "T3",
+        "observe": "同一合格美方打击定义下，不同截止日期的YES盘口与期限结构",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "较近数周期限的未打击价格保持较高，但不必支持长期全面和平"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "投票前未打击价格高，之后更长期限未打击价格明显降低"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "更长期限未打击价格也较高，但仍须实际互惠核查事实支持"
+          }
+        ],
+        "source": "Polymarket Gamma合约规则与CLOB订单簿"
+      }
+    ],
+    "mechanism_chain": [
+      "停火条款与政治激励",
+      "可验证的互惠履约",
+      "违约收益与报复约束",
+      "直接冲突是否恢复及持续时间"
+    ],
+    "method": "reference_class_scenarios",
+    "price_relevance": true,
+    "question_kind": "event_forecast",
+    "rationale": "核实当前状态后再判断持续时间；以2026年同一冲突的停火失效机制为参考类，不用小样本推造概率。选择核问题、霍尔木兹与封锁的互惠次序作为长期条件，近30日实际行动和美国选举前承诺作为近期变化。区分克制的政治激励与能延续数月的执行安排。 本次纠正将非资产问题误作无价格相关的取舍；事件合约可提供持续期限基准。保留历史风险机制，新增明确合约定义和当前订单簿，不能将市场价格当独立研究预测。"
+  },
+  "resolution_contract": {
+    "definition": "持续克制指美伊未恢复持续直接军事交火；不等同于没有单次摩擦、解除制裁或缔结和平",
+    "horizons": [
+      "未来数日",
+      "未来数周",
+      "未来一至三个月"
+    ],
+    "probability": "不登记数值概率；无充分校准依据",
+    "source": "双方官方行动披露及独立媒体交叉核查"
+  },
+  "schema_version": 2,
+  "stop_condition": "关键条款与最新行动得到可读证据，或预算内无法补齐而明确限制持续时间判断。",
+  "task": "停火持续期限的预测市场补充与判断更新",
+  "type": "event_pricing"
+}

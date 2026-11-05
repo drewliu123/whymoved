@@ -1,0 +1,50 @@
+{
+  "qid": "Q098",
+  "as_of": "2026-09-17",
+  "kept": [
+    {
+      "excerpt": "Russian forces continued offensive operations toward Lyman itself on September 16 to 17 but did not advance as Ukrainian forces counterattacked in the area. Ukrainian 3rd Army Corps Commander Brigadier General Andrii Biletskyi stated on September 17 that Ukrainian forces operationally defeated the Russian northern pincer in the Lyman direction and that Operation Vivaldi continues.",
+      "published_at": "2026-09-17",
+      "publisher": "Institute for the Study of War",
+      "relevance": "The cutoff-day assessment describes the immediate operational situation around Lyman, although its narrative does not establish qualifying ISW shading within Stavky.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-17-2026/"
+    },
+    {
+      "excerpt": "There has been mixed reporting that Russian forces may maintain limited positions in some areas of the salient north of Lyman, including near Shandryholove, Stavky, Derylove, and Ridkodub. The full extent of Ukrainian advances in the Lyman direction and the shape of the frontline in the area remains unclear, due to limited open-source evidence about the salient.",
+      "published_at": "2026-09-16",
+      "publisher": "Institute for the Study of War",
+      "relevance": "This directly identifies uncertainty about Russian positions near Stavky, making the distinction between reported presence and qualifying mapped territory especially important.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-16-2026/"
+    },
+    {
+      "excerpt": "Ukrainian 3rd Army Corps Commander Brigadier General Andrii Biletskyi confirmed on September 15 that Ukrainian forces have been conducting a counteroffensive — Operation Vivaldi — against the Russian salient north of Lyman. Biletskyi stated that Ukrainian forces have cleared or liberated a total of 85 square kilometers, including liberating Serednie and clearing Russian infiltrators from Novoselivka, Yarova, Oleksandrivka, and the outskirts of Korovii Yar. Russian forces continued offensive operations in the Lyman direction on September 14 and 15 but did not advance.",
+      "published_at": "2026-09-15",
+      "publisher": "Institute for the Study of War",
+      "relevance": "The assessment documents Ukrainian counteroffensive momentum and the absence of assessed Russian advances in the surrounding tactical area shortly before the cutoff.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-15-2026/"
+    },
+    {
+      "excerpt": "Russian milbloggers claimed on September 9 through 11 that Ukrainian forces had effectively cut the Russian salient north of Lyman and pushed Russian forces to the Zherebets River. One Russian milblogger, who acknowledged that the Russian salient was essentially gone, claimed that fighting is still ongoing in some areas within the salient, including near Shandryholove, Stavky, Derylove, and Ridkodub. Some individual Russian elements may still be operating within the former salient as Ukrainian forces continue to clear the area.",
+      "published_at": "2026-09-12",
+      "publisher": "Institute for the Study of War",
+      "relevance": "This supplies an earlier Stavky-specific baseline and highlights that residual Russian elements could remain despite broader Ukrainian gains.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-12-2026/"
+    },
+    {
+      "excerpt": "Biletskyi said Ukrainian troops had cleared 75 square kilometers in northern Donetsk Oblast of Russian infiltrators and liberated 10 square kilometers, including the village of Serednie. In the Lyman counterattacks, months of Russian infiltrations meant that in addition to moving forward and taking territory, Ukrainian forces also had to systematically clear the rear area of Russian infiltration groups. The areas Biletskyi announced as cleared or liberated on Sept. 15 — Oleksandrivka, Yarova, Korovii Yar, and Novoselivka — mostly saw this type of operation and never fully left Ukrainian control according to most open-source maps.",
+      "published_at": "2026-09-15T20:32:00",
+      "publisher": "The Kyiv Independent",
+      "relevance": "This explains why battlefield infiltration, clearance announcements, and mapped control can differ, which matters because assessed infiltration shading also qualifies under the resolution rules.",
+      "url": "https://kyivindependent.com/analysis-through-the-fog-of-war-ukraine-goes-on-operation-vivaldi-counterattack-near-lyman/"
+    },
+    {
+      "excerpt": "Ukrinform reports this, citing operational information from the General Staff as of 10 p.m. on September 15, 2026, posted on Facebook. In the Lyman direction, our defenders successfully repelled six attempts by the invaders to advance near Novoselivka, Drobysheve, Stavky, Lyman, and Dibrova; another combat engagement is ongoing.",
+      "published_at": "2026-09-15T23:30:00",
+      "publisher": "Ukrinform, citing the General Staff of the Armed Forces of Ukraine",
+      "relevance": "The Ukrainian official operational account confirms active Russian attacks near Stavky immediately before the cutoff, without establishing territorial capture.",
+      "url": "https://www.ukrinform.net/amp/rubric-ato/4164414-war-update-219-combat-clashes-reported-along-front-line-on-september-15.html"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-17 inclusive. Selected six dated sources published on or before the cutoff; excerpts preserve attribution for claims and contain no post-cutoff developments or outcome information. Excluded prediction-market pages, rolling updates containing later reports, and later-dated republications. Publication dates and passages were checked against web_search results, including expanded source text. Direct web_fetch failed because multiple providers were registered; the requested agent-reach web read fallback returned rate-limit errors, so full-page retrieval was unavailable. Times reproduce source displays without an inferred timezone. This pack does not verify historical ISW settlement-boundary overlap or persistence through the next full daily update cycle; the narrative reports alone cannot establish the resolution condition. Market creation time was not supplied, so no conclusion is drawn about whether earlier mapped conditions fell within the eligible interval."
+}

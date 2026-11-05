@@ -1,0 +1,18 @@
+{
+  "question": "美联储 10 月 27–28 日会议会有几票反对（仅计利率决定）？",
+  "type": "event_pricing",
+  "entity": "How many dissent at the October Fed meeting",
+  "as_of": "2026-10-26T06:59:00Z",
+  "market_snapshot": [
+    {"source": "polymarket", "slug": "how-many-dissent-at-the-october-fed-meeting", "outcome": "2", "prob": 0.275},
+    {"source": "polymarket", "slug": "how-many-dissent-at-the-october-fed-meeting", "outcome": "0", "prob": 0.265},
+    {"source": "kalshi", "slug": "KXFEDDISSENT-Hammack", "outcome": "Yes", "prob": 0.74},
+    {"source": "kalshi", "slug": "KXFEDDISSENT-Kashkari", "outcome": "Yes (mid)", "prob": 0.26}
+  ],
+  "hypotheses": [
+    {"id": "H1", "text": "Hammack 对利率决定投反对票", "verify_by": "2026-10-28", "falsify_if": "声明中 Hammack 投赞成", "my_prob": 0.70, "market_prob": 0.74, "authors": []},
+    {"id": "H2", "text": "Kashkari 对利率决定投反对票", "verify_by": "2026-10-28", "falsify_if": "声明中 Kashkari 投赞成", "my_prob": 0.25, "market_prob": 0.26, "authors": []},
+    {"id": "H3", "text": "恰好 2 票对利率决定投反对票", "verify_by": "2026-10-28", "falsify_if": "反对票数不是 2", "my_prob": 0.34, "market_prob": 0.29, "authors": []},
+    {"id": "H4", "text": "0 票对利率决定投反对票", "verify_by": "2026-10-28", "falsify_if": "出现任何一张对利率决定的反对票", "my_prob": 0.22, "market_prob": 0.28, "authors": []}
+  ]
+}

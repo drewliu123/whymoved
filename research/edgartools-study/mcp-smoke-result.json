@@ -1,0 +1,538 @@
+{
+  "validation_scope": "offline initialize, list_tools, list_prompts, invalid input; no SEC request",
+  "server": {
+    "name": "edgartools",
+    "title": null,
+    "version": "5.62.1",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool_count": 13,
+  "tools": [
+    {
+      "name": "edgar_company",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "description": "Company ticker (AAPL), CIK (320193), or name (Apple Inc)"
+          },
+          "include": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "profile",
+                "financials",
+                "filings",
+                "ownership"
+              ]
+            },
+            "description": "Data to include. Default: profile, financials, filings",
+            "default": [
+              "profile",
+              "financials",
+              "filings"
+            ]
+          },
+          "periods": {
+            "type": "integer",
+            "description": "Number of financial periods (default 4)",
+            "default": 4
+          },
+          "period": {
+            "type": "string",
+            "description": "Period type: 'annual', 'quarterly', or 'ttm' (trailing twelve months)",
+            "enum": [
+              "annual",
+              "quarterly",
+              "ttm"
+            ],
+            "default": "annual"
+          },
+          "annual": {
+            "type": "boolean",
+            "description": "Deprecated. Use 'period' instead. Annual (true) or quarterly (false) financials",
+            "default": true
+          }
+        },
+        "required": [
+          "identifier"
+        ]
+      }
+    },
+    {
+      "name": "edgar_search",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search term for company name or description"
+          },
+          "search_type": {
+            "type": "string",
+            "enum": [
+              "companies",
+              "filings",
+              "all"
+            ],
+            "description": "What to search: companies, filings, or all",
+            "default": "all"
+          },
+          "identifier": {
+            "type": "string",
+            "description": "Limit filing search to specific company (ticker/CIK)"
+          },
+          "form": {
+            "type": "string",
+            "description": "Filter filings by form type (10-K, 10-Q, 8-K, DEF 14A, 13F-HR, etc.)"
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Maximum results per category (default 20)",
+            "default": 20
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "edgar_filing",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "description": "Company ticker (AAPL), CIK (320193), or name. Used with 'form' to get the latest filing."
+          },
+          "form": {
+            "type": "string",
+            "description": "Form type (10-K, 10-Q, 8-K, DEF 14A, 4, 13F-HR, etc.). Used with 'identifier'."
+          },
+          "input": {
+            "type": "string",
+            "description": "Accession number or URL containing an accession number (alternative to identifier+form)"
+          },
+          "detail": {
+            "type": "string",
+            "enum": [
+              "minimal",
+              "standard",
+              "full"
+            ],
+            "description": "Detail level for context output (default: standard)",
+            "default": "standard"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "edgar_read",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "accession_number": {
+            "type": "string",
+            "description": "Filing accession number (e.g., 0000320193-23-000077)"
+          },
+          "identifier": {
+            "type": "string",
+            "description": "Company identifier (alternative - gets most recent filing of form type)"
+          },
+          "form": {
+            "type": "string",
+            "description": "Form type (used with identifier to get most recent)"
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Sections to extract. Use 'summary' for metadata only, 'all' for everything. Available sections depend on form type.",
+            "default": [
+              "summary"
+            ]
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Max rows in the 13F-HR 'holdings' section (default 30). 0 returns every row, which for large managers can be thousands of rows and a large payload. Validated for all forms, applied only to 13F holdings.",
+            "default": 30,
+            "minimum": 0
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "edgar_compare",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "identifiers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Companies to compare (2-10 tickers/CIKs)"
+          },
+          "industry": {
+            "type": "string",
+            "enum": [
+              "pharmaceuticals",
+              "biotechnology",
+              "software",
+              "semiconductors",
+              "banking",
+              "investment",
+              "insurance",
+              "real_estate",
+              "oil_gas",
+              "retail"
+            ],
+            "description": "OR select industry for automatic peer selection"
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "revenue",
+                "net_income",
+                "gross_profit",
+                "operating_income",
+                "assets",
+                "liabilities",
+                "equity",
+                "margins",
+                "growth"
+              ]
+            },
+            "description": "Metrics to compare (default: revenue, net_income)",
+            "default": [
+              "revenue",
+              "net_income"
+            ]
+          },
+          "periods": {
+            "type": "integer",
+            "description": "Number of periods (default 3)",
+            "default": 3
+          },
+          "annual": {
+            "type": "boolean",
+            "description": "Annual (true) or quarterly (false)",
+            "default": true
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Max companies for industry comparison (default 5, max 10)",
+            "default": 5,
+            "minimum": 1,
+            "maximum": 10
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "edgar_ownership",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "description": "Company ticker/CIK (for insiders) OR fund/institution CIK (for fund_portfolio/portfolio_diff)"
+          },
+          "analysis_type": {
+            "type": "string",
+            "enum": [
+              "insiders",
+              "fund_portfolio",
+              "portfolio_diff"
+            ],
+            "description": "insiders=Form 4 insider trades, fund_portfolio=13F holdings, portfolio_diff=quarter-over-quarter changes"
+          },
+          "days": {
+            "type": "integer",
+            "description": "Lookback period for insider transactions (default 90)",
+            "default": 90
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Max results (default 20, max 100)",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 100
+          }
+        },
+        "required": [
+          "identifier",
+          "analysis_type"
+        ]
+      }
+    },
+    {
+      "name": "edgar_monitor",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "form": {
+            "type": "string",
+            "description": "Filter by form type (e.g., '8-K', '4', '10-K', '10-Q', '13F-HR')"
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Max filings to return (default 20, max 100)",
+            "default": 20
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "edgar_trends",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "description": "Company ticker (AAPL), CIK (320193), or name"
+          },
+          "concepts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "revenue",
+                "net_income",
+                "total_assets",
+                "total_liabilities",
+                "equity",
+                "gross_profit",
+                "operating_income",
+                "eps"
+              ]
+            },
+            "description": "Financial concepts to track (default: revenue, net_income)",
+            "default": [
+              "revenue",
+              "net_income"
+            ]
+          },
+          "periods": {
+            "type": "integer",
+            "description": "Number of periods to retrieve (default 8)",
+            "default": 8
+          },
+          "period": {
+            "type": "string",
+            "enum": [
+              "annual",
+              "quarterly"
+            ],
+            "description": "Period type (default: annual)",
+            "default": "annual"
+          },
+          "include_growth": {
+            "type": "boolean",
+            "description": "Calculate YoY/QoQ growth rates (default true)",
+            "default": true
+          }
+        },
+        "required": [
+          "identifier"
+        ]
+      }
+    },
+    {
+      "name": "edgar_screen",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "industry": {
+            "type": "string",
+            "description": "Industry keyword to search SIC descriptions (e.g., 'software', 'pharmaceutical', 'banking')"
+          },
+          "sic": {
+            "type": "integer",
+            "description": "Exact SIC code (e.g., 2834 for pharma, 7372 for software)"
+          },
+          "exchange": {
+            "type": "string",
+            "enum": [
+              "NYSE",
+              "Nasdaq",
+              "OTC",
+              "CBOE"
+            ],
+            "description": "Stock exchange filter"
+          },
+          "state": {
+            "type": "string",
+            "description": "US state code for state of incorporation (e.g., 'DE', 'CA', 'NY')"
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Max companies to return (default 25, max 100)",
+            "default": 25
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "edgar_text_search",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Full-text search query (searches filing content)"
+          },
+          "forms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Filter by form types (e.g., ['10-K', '8-K']). Default: all forms."
+          },
+          "identifier": {
+            "type": "string",
+            "description": "Optional company ticker or CIK to scope results"
+          },
+          "start_date": {
+            "type": "string",
+            "description": "Start date for filing date range (YYYY-MM-DD)"
+          },
+          "end_date": {
+            "type": "string",
+            "description": "End date for filing date range (YYYY-MM-DD)"
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Max results to return (default 20, max 50)",
+            "default": 20
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "edgar_fund",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "lookup",
+              "search",
+              "portfolio",
+              "money_market",
+              "bdc_search",
+              "bdc_portfolio"
+            ],
+            "description": "The action to perform"
+          },
+          "identifier": {
+            "type": "string",
+            "description": "Fund ticker, series ID (S000XXXXX), class ID (C000XXXXX), or CIK"
+          },
+          "query": {
+            "type": "string",
+            "description": "Search text for fund or BDC name"
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Max results to return (default 20, max 50)",
+            "default": 20
+          }
+        },
+        "required": [
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "edgar_proxy",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "description": "Company ticker, CIK, or name"
+          },
+          "filing_index": {
+            "type": "integer",
+            "description": "Which proxy filing to use (0=latest, 1=previous, etc.)",
+            "default": 0
+          }
+        },
+        "required": [
+          "identifier"
+        ]
+      }
+    },
+    {
+      "name": "edgar_notes",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "description": "Company ticker (AAPL), CIK (320193), or name"
+          },
+          "topic": {
+            "type": "string",
+            "description": "Note topic to search for (e.g., 'debt', 'revenue', 'leases', 'contingencies'). Omit for table of contents."
+          },
+          "form": {
+            "type": "string",
+            "description": "Filing form type (default: 10-K). Use 10-Q for quarterly notes.",
+            "default": "10-K"
+          },
+          "detail": {
+            "type": "string",
+            "enum": [
+              "minimal",
+              "standard",
+              "full"
+            ],
+            "description": "Detail level: minimal (titles only), standard (context + tables), full (includes DataFrame data)",
+            "default": "standard"
+          }
+        },
+        "required": [
+          "identifier"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    "due_diligence",
+    "earnings_analysis",
+    "industry_overview",
+    "insider_monitor",
+    "fund_analysis",
+    "filing_comparison",
+    "activist_tracking"
+  ],
+  "invalid_input_response": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": false,\n  \"error\": \"Could not find an accession number in: not-an-accession\",\n  \"suggestions\": [\n    \"Provide identifier + form (e.g., identifier='AAPL', form='10-K')\",\n    \"Or a dashed accession number like '0000320193-23-000077'\"\n  ]\n}",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  }
+}

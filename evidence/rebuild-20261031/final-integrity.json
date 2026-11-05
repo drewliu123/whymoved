@@ -1,0 +1,45 @@
+{
+  "protected_data_unchanged": true,
+  "protected_data": {
+    "data/authors.json": {
+      "expected": "ac0eb0babc4e1955b67e4e83050c6e2679cc1ad8fd955f610971b06539d8bb2b",
+      "actual": "ac0eb0babc4e1955b67e4e83050c6e2679cc1ad8fd955f610971b06539d8bb2b"
+    },
+    "journal/memos.jsonl": {
+      "expected": "aad218f99f5f5675dc91af605d5558ca2000f7ff8ac425be15cd8e48dd6921bb",
+      "actual": "aad218f99f5f5675dc91af605d5558ca2000f7ff8ac425be15cd8e48dd6921bb"
+    }
+  },
+  "reviewed_hashes_match": true,
+  "source_files": {
+    ".claude-plugin/marketplace.json": "7cab976c4090bcd8903c9a6605a8518a632c789c68c78642c580c3b0546513b5",
+    ".claude-plugin/plugin.json": "571a463eea9e70a344e6e5152d389ace017a97a65fd388a7b5bc624adaf469d6",
+    "README.md": "a57b463ef89e012d9d587a9b263026bae2831d5548acea0ed76901717a333ec9",
+    "agents/community-scout.md": "046a02bc902ef0b1778c267c42df969ab66dec78e641aaae487a038c0b467e72",
+    "agents/fact-collector.md": "c97588c844ad9d2296a6f9189daa99bd05b159dab9b590a4ed8bdf70116389bc",
+    "agents/forecaster.md": "1cf26b012d692ba1e5b827329c0660c0bc7243e2ea85aa079cf80dc7731ba4ca",
+    "agents/red-team.md": "7bbbfd9bacddcbfa89bbfa0e8412ef55fe63776495270b84f7a9cb8ba357218b",
+    "scripts/authors.py": "b30665e931a6f9c1d288f07dd3c689e4aa05b959c153601ff13d71f79b1d8b05",
+    "scripts/check_claims.py": "13ad8ce4747c33800c640a727fc04038ae276b5bd01844b3483d0ef1907bbb1d",
+    "scripts/common.py": "ae061a53718de0b808910021383d4abca6d043b4ef664d5cca98e89a6b3c7618",
+    "scripts/forecast.py": "a058765616e5ea5280730f05c0a47d37482f1ec968e4eea05d817a0acbc8f404",
+    "scripts/journal.py": "aba0147ddbdd9384ad1dad75f8cf779c686044f922126c63b2411f7024aa8535",
+    "scripts/polymarket.py": "d9052cb68fd318a7555a3e7d4815adb75e566892ceac693f7673a38cd2dc3f45",
+    "scripts/render_report.py": "3bae4155341e63132d391e3fa850a2569174d7d15f202f3c26aa5323cd995994",
+    "scripts/research_plan.py": "d6bc0f8b8323c49eef07c42d2d3be60f9443b3a7e2233aaaa987a81ba195ef41",
+    "scripts/research_run.py": "078f5598a5943fd3d00fb57e83925dd4bebf37334b732cf898fdce6af7d6ac33",
+    "scripts/sources.py": "af515463667c7d5bc6f904c163acd424adf48c3c0b94990757a4b5e172bb0671",
+    "skills/research/SKILL.md": "3e1a653b6d869b51e5a10c3ef72e62fa82709741877b37d0b27e7eb0aa7e9c4c",
+    "skills/research/references/evidence.md": "18245993af8e66859dc4ef0c6431810a8b1957033d7a32307241d74303a33c0a",
+    "skills/research/references/legacy-forecast.md": "f3b4f17117ccc55bd189599f57a0dba02ffd5fa5be2b5ab334430d0b1f165595",
+    "skills/research/references/memo-template.md": "f3aa023393b442a0120f8f124339e9ea375b3b1ec44d72db154965f28ddb685d",
+    "skills/research/references/sources.md": "d1d43504cf9ae8f771348024302c9c40ceaa861da0086a9e250a6e2e307dfa5c",
+    "skills/research/references/templates.md": "c31a6179d4e2e7c6d6aa8029bde22e3ddb241bdb2173ab30ddd41ca4378ada51",
+    "tests/test_evidence_v2.py": "98c21e4319a213f602f8c79add84cec68b3741a68bbbf53a5ab67ef49d42ed66",
+    "tests/test_reports.py": "e181117eb3a9187013cfedc392722f7078e9f1e8ca320d465ec5b4e80e817001",
+    "tests/test_research_plan.py": "2cf9c6fd3eae0e60e9f2548e4e6c61a1d12bcfc52160e776f343dbe16fcfb5a9",
+    "tests/test_research_runs.py": "937998129a2ff9be8308ef95c347a32971c473c9f88e1d77b5c21c62ed13a70d",
+    "tests/test_scripts.py": "5ef965d7600291071d9258a52774736b750eea159c6c181acb6c876c4efd4853",
+    "tests/test_sources.py": "ecac392755cfa4175321ee67f96c1c6a34a6deff4434b28d682f27b88696ae45"
+  }
+}

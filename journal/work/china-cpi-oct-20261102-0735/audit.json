@@ -1,0 +1,125 @@
+{
+  "skill_version": "0.5.0",
+  "scope": "纯事实查询，采用2026年；不做预测登记。",
+  "queries": [
+    {
+      "question": "2026年10月CPI何时发布？",
+      "query": "国家统计局 2026年 主要统计信息发布日程表 居民消费价格 11月",
+      "source": "国家统计局官方发布日程",
+      "purpose": "核对发布计划与参考月份",
+      "test_ids": []
+    },
+    {
+      "question": "最近已公布CPI属于哪个月？",
+      "query": "2026年10月份 居民消费价格 同比 国家统计局 2026 11月",
+      "source": "国家统计局月度公告",
+      "purpose": "确认9月实际值，避免将10月发布误认10月参考期",
+      "test_ids": []
+    }
+  ],
+  "evidence": {
+    "official_urls": [
+      "https://www.stats.gov.cn/xw/tjxw/tzgg/202512/t20251224_1962137.html",
+      "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965477.html"
+    ],
+    "fetch_method": "WebFetch，提取官方标题、表格与正文原句；搜索结果只作定位。"
+  },
+  "review": {
+    "status": "completed",
+    "reviewer": "touyan:red-team",
+    "answer_fit": true,
+    "analysis_checks": "方法、参考月与发布月、无模型处理、非交易边界均核对无关键问题。",
+    "value_checks": "非交易查询，不适用。",
+    "findings": [
+      {
+        "severity": "minor",
+        "problem": "官方日程不能穷尽排除提前发布。",
+        "disposition": "保留推断类型及“计划可能调整”；结合本轮实际值检索未找到10月公告，主判断为当前没有可提供的10月官方实际值。未将日期视为不可变承诺。"
+      }
+    ],
+    "render_note": "模型为空，通用模板重算尾注不代表运行数值模型。"
+  },
+  "execution": [
+    {
+      "command": [
+        "python3",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.0/scripts/research_plan.py",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/plan.json"
+      ],
+      "exit_code": 0,
+      "log": "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/validation-1.log"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.0/scripts/sources.py",
+        "validate",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/sources.json"
+      ],
+      "exit_code": 0,
+      "log": "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/validation-2.log"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.0/scripts/sources.py",
+        "select",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/sources.json",
+        "--out",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/selected-sources.json"
+      ],
+      "exit_code": 0,
+      "log": "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/validation-3.log"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.0/scripts/analysis_contract.py",
+        "check",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/plan.json",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/sources.json"
+      ],
+      "exit_code": 0,
+      "log": "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/analysis-validation.log"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.0/scripts/render_report.py",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/report.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/sources.json",
+        "--out-dir",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/output"
+      ],
+      "exit_code": 0,
+      "log": "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/render.log"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.5.0/scripts/check_claims.py",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/claims.json",
+        "--sources",
+        "/Users/frankzhang/Desktop/投研助手/journal/work/china-cpi-oct-20261102-0735/sources.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "total": 4,
+        "failures": {}
+      }
+    }
+  ],
+  "method_note": "现有六种question_kind没有纯事实查询类型，采用commitment_check核对有日期的官方发布计划；不虚构竞争解释与宏观模型。",
+  "render_note": "插件渲染器含通用尾注“固定模型的数值已重算”，本轮analysis.models为空，没有建立或重算数值模型；模型状态为not_applicable。"
+}

@@ -1,0 +1,50 @@
+{
+ "qid": "Q166",
+ "question": "Will Partido Liberal (PL) win the most seats in the next Brazilian Senate election?",
+ "rules": "The next federal Senate election is scheduled to take place in Brazil on October 4, 2026, in which two-thirds of the Senate’s 81 seats will be contested.\n\nThis market will resolve according to the political party that wins the greatest number of seats in the next Brazilian Senate election. \n\nOnly seats contested in the next Brazilian Senate election will be considered.\n\nIf the result of this election isn't known definitively by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral Court (Tribunal Superior Eleitoral, TSE) (e.g., www.tse.jus.br/eleicoes/resultados-eleicoes).",
+ "as_of": "2026-09-21",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Agência Senado",
+   "published_at": "2026-09-10",
+   "excerpt": "Nas eleições de 4 de outubro, 54 das 81 cadeiras do Senado estarão em disputa. Entre os 54 senadores em exercício em setembro de 2026, em cadeiras cujos mandatos vão até janeiro de 2027, 41 participam das eleições deste ano."
+  },
+  {
+   "id": "E2",
+   "publisher": "Congresso em Foco",
+   "published_at": "2026-07-31 (updated 2026-08-01)",
+   "excerpt": "Levantamento do Congresso em Foco, com base nas pesquisas disponíveis mais recentes até esta quinta-feira (30), coloca candidatos das duas legendas em 21 das 54 posições de liderança mapeadas, considerando os dois maiores percentuais de cada Estado e do Distrito Federal. O MDB lidera o ranking partidário, com 11 posições, seguido pelo PL, com dez. O PT tem sete; o PP, seis; PSB e União Brasil, quatro cada; e o Republicanos, três."
+  },
+  {
+   "id": "E3",
+   "publisher": "Folha de S.Paulo",
+   "published_at": "2026-09-02",
+   "excerpt": "Ao menos 24 candidatos do PL ao Senado despontam na briga pelas 54 vagas ao Senado em disputa nesta eleição, apontam pesquisas Datafolha e Quaest realizadas na segunda quinzena de agosto, período que marcou a largada da campanha eleitoral. Ao todo, quatro candidatos do PL lideram isolados na disputa pela primeira vaga em seus estados, caso de Michelle Bolsonaro (DF), Reinaldo Azambuja (MS), Eduardo Gomes (TO) e Fernando Máximo (RO)."
+  },
+  {
+   "id": "E4",
+   "publisher": "CNN Brasil",
+   "published_at": "2026-08-23",
+   "excerpt": "O PL (Partido Liberal), a UP (Unidade Popular) e o PSOL (Partido Socialismo e Liberdade) concentram o maior número de candidaturas ao Senado nas eleições de 2026. Na disputa, como a CNN mostrou, 32 senadores com mandatos atualmente concorrem à reeleição e três miram vagas de suplência na Casa."
+  },
+  {
+   "id": "E5",
+   "publisher": "Metrópoles",
+   "published_at": "2026-09-21",
+   "excerpt": "Segundo o levantamento divulgado pelo instituto, Derrite aparece com 20% das intenções de voto, seguido por André do Prado, com 18%, e Simone Tebet, com 17%. Marina Silva (Rede) aparece na quarta colocação, com 14% das intenções de voto. A pesquisa considera margem de erro de dois pontos percentuais, o que indica empate triplo entre Derrite, Prado e Tebet na liderança. Ao todo, foram entrevistadas 2 mil pessoas pelo instituto, entre os dias 16 e 19 de setembro."
+  },
+  {
+   "id": "E6",
+   "publisher": "RIC.com.br",
+   "published_at": "2026-09-18",
+   "excerpt": "Deltan Dallagnol (Novo) tem 31,6% das intenções de voto. Em seguida, aparece Alexandre Curi (Republicanos) com 30,4% e Filipe Barros (PL) com 26,3%. Ainda segundo a sondagem, Gleisi Hoffmann (PT) tem 25,9% da preferência e, na sequência, Cristina Graeml (PSD) com 14,8%. A Paraná Pesquisas ouviu 1.280 eleitores em 57 municípios entre os dias 15 e 17 de setembro."
+  },
+  {
+   "id": "E7",
+   "publisher": "Brasil de Fato",
+   "published_at": "2026-09-08",
+   "excerpt": "A Quaest divulgada nesta terça-feira (8) mostra Michelle Bolsonaro (PL) com 26% das intenções de voto para o Senado no Distrito Federal. O levantamento aponta uma disputa mais acirrada para a segunda vaga. Leila do Vôlei (PDT) tem 17%, Erika Kokay (PT) aparece com 13% e Bia Kicis (PL) com 11% das intenções de voto."
+  }
+ ]
+}

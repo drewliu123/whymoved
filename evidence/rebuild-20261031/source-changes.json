@@ -1,0 +1,38 @@
+{
+  "added": [
+    "scripts/render_report.py",
+    "scripts/research_plan.py",
+    "scripts/research_run.py",
+    "scripts/sources.py",
+    "skills/research/references/legacy-forecast.md",
+    "tests/test_evidence_v2.py",
+    "tests/test_reports.py",
+    "tests/test_research_plan.py",
+    "tests/test_research_runs.py",
+    "tests/test_sources.py"
+  ],
+  "modified": [
+    ".claude-plugin/marketplace.json",
+    ".claude-plugin/plugin.json",
+    "README.md",
+    "agents/community-scout.md",
+    "agents/fact-collector.md",
+    "agents/red-team.md",
+    "scripts/check_claims.py",
+    "skills/research/SKILL.md",
+    "skills/research/references/evidence.md",
+    "skills/research/references/memo-template.md",
+    "skills/research/references/sources.md",
+    "skills/research/references/templates.md"
+  ],
+  "unchanged": [
+    "agents/forecaster.md",
+    "scripts/authors.py",
+    "scripts/common.py",
+    "scripts/forecast.py",
+    "scripts/journal.py",
+    "scripts/polymarket.py",
+    "tests/test_scripts.py"
+  ],
+  "removed": []
+}

@@ -1,0 +1,191 @@
+{
+  "analysis_version": 1,
+  "as_of": "2026-11-02T05:10:24Z",
+  "budget": {
+    "max_followups": 1,
+    "max_queries": 8
+  },
+  "comparison": {
+    "period": "旧快照2026-11-02T03:44Z，月底合约复核05:06:48Z；报道截至11月1日",
+    "scope": "美国发起并落地伊朗陆地或内水的合格空袭/导弹打击；并非全面和平",
+    "unit": "同规则YES价格、分段条件风险；研究判断不登记数值概率"
+  },
+  "decision_needed": "34.5%的月底未打击价格是否便宜，选后哪一段期限最值得检验？",
+  "entity": "美国与伊朗",
+  "historical": false,
+  "hypotheses": [
+    {
+      "discriminating_observation": "短期克制与谈判延续，尚无完整长期条款",
+      "explanation": "双方成本约束足以支持未来数周延续克制",
+      "id": "H1"
+    },
+    {
+      "discriminating_observation": "短期承诺到期后恢复直接打击",
+      "explanation": "只有选举前暂停，触发后近期复战",
+      "id": "H2"
+    },
+    {
+      "discriminating_observation": "双方签署并持续执行核查与海峡通行措施",
+      "explanation": "核查与互惠安排支持数月稳定",
+      "id": "H3"
+    }
+  ],
+  "prior_judgment": "补看预测市场后，可以给出上一轮遗漏的狭义事件基准：按Polymarket的“美国不实施合格空袭或导弹打击”定义，维持到选举日的盘口中点为94.5%，到11月8日为72.5%，到11月15日为51.5%，到11月底为34.5%。该平台对近期不发生这类美方打击定价较高，对月底前始终不发生这类打击定价较低；我尚无充分独立证据判断它偏高或偏低。",
+  "queries": [
+    {
+      "purpose": "核对共同规则、不同创建日期、计算同一截面条件价格比；保留非联合分布限制",
+      "query": "沿用已冻结Gamma全规则和7期CLOB，并复核Nov30 book",
+      "question": "期限风险是否只是累计而非前端集中？",
+      "source": "Polymarket公开API",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "purpose": "继续核对双边条款与执行；未取得完整行动记录仍missing",
+      "query": "US Iran November 1 2 2026 Doha talks Trump deal Reuters",
+      "question": "当前谈判和选前承诺有什么实际改变？",
+      "source": "Reuters/AOL/ThePrint/Investing",
+      "test_ids": [
+        "T1",
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "purpose": "区分兵力存在、政治意愿和实际执行准备；与长期库存压力区分",
+      "query": "Axios October 7 29 2026 Cooper CENTCOM Iran blockade post-midterms",
+      "question": "军事准备和立即重启打击有何事实？",
+      "source": "Axios/CENTCOM及Reuters历史报道",
+      "test_ids": [
+        "T5"
+      ]
+    }
+  ],
+  "question": "美伊停火会持续多久",
+  "research_design": {
+    "baseline": "上一轮已取得期限价格，但未判断定价矛盾；本轮检验风险是否集中在选后最初数日及其行动依据。",
+    "discrimination_tests": [
+      {
+        "by": "2026-11-03及随后一周",
+        "id": "T1",
+        "observe": "最新停火或暂停承诺的双方确认、期限与执行机制",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "继续谈判并维持短期克制，但没有完整长期执行条款"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "仅有短期单边承诺，期限届满后缺少续接机制"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "双方确认分阶段互惠条款及核查和争议处理机制"
+          }
+        ],
+        "source": "官方公告及Reuters、AP独立报道"
+      },
+      {
+        "by": "2026-11-10并在随后一个月复核",
+        "id": "T2",
+        "observe": "近30日直接打击、海峡航运、核查与封锁执行动作",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "局部摩擦未升级为持续直接打击，谈判渠道保持"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "恢复直接军事打击且互惠措施逆转"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "核查与海峡通行等互惠措施持续兑现"
+          }
+        ],
+        "source": "官方行动披露及独立现场报道"
+      },
+      {
+        "by": "当前截面及下一次关键外交军事消息后",
+        "id": "T3",
+        "observe": "同一合格美方打击定义下，不同截止日期的YES盘口与期限结构",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "较近数周期限的未打击价格保持较高，但不必支持长期全面和平"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "投票前未打击价格高，之后更长期限未打击价格明显降低"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "更长期限未打击价格也较高，但仍须实际互惠核查事实支持"
+          }
+        ],
+        "source": "Polymarket Gamma合约规则与CLOB订单簿"
+      },
+      {
+        "by": "11月3日至8日",
+        "id": "T4",
+        "observe": "美方是否已有执行决定，还是保留谈判与非空袭施压选择",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "未决定新增打击并保留谈判，选后可能明确延长克制窗口"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "出现执行决定或明确最后通牒，选后迅速落实打击"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "双方公布并实施互惠步骤及核查条款"
+          }
+        ],
+        "source": "最新Reuters具名官员表态与谈判报道"
+      },
+      {
+        "by": "11月3日至8日",
+        "id": "T5",
+        "observe": "新增军事准备及触发事件是否被核实",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "新施压主要仍是封锁与制裁，克制承诺续接"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "出现具体打击准备、已执行授权或美方伤亡等新触发事件"
+          }
+        ],
+        "source": "CENTCOM/DoD原始行动披露及独立现场报道"
+      }
+    ],
+    "mechanism_chain": [
+      "停火条款与政治激励",
+      "可验证的互惠履约",
+      "违约收益与报复约束",
+      "直接冲突是否恢复及持续时间"
+    ],
+    "method": "reference_class_scenarios",
+    "price_relevance": true,
+    "question_kind": "event_forecast",
+    "rationale": "核实当前状态后再判断持续时间；以2026年同一冲突的停火失效机制为参考类，不用小样本推造概率。选择核问题、霍尔木兹与封锁的互惠次序作为长期条件，近30日实际行动和美国选举前承诺作为近期变化。区分克制的政治激励与能延续数月的执行安排。 本次纠正将非资产问题误作无价格相关的取舍；事件合约可提供持续期限基准。保留历史风险机制，新增明确合约定义和当前订单簿，不能将市场价格当独立研究预测。 本轮把长期核问题与短期是否启动打击分开；检验选举约束消失是否足以解释即时军事行动。先前社区线索在本轮两小时内仍沿用，不重复广泛检索。"
+  },
+  "resolution_contract": {
+    "definition": "用户问题仍为停火持续时间；价格比较严格限定美方合格打击；本轮重点选后数日与11月底。",
+    "horizons": [
+      "未来数日",
+      "未来数周",
+      "未来一至三个月"
+    ],
+    "probability": "不登记数值概率；无充分校准依据",
+    "source": "双方官方行动披露及独立媒体交叉核查"
+  },
+  "schema_version": 2,
+  "stop_condition": "关键条款与最新行动得到可读证据，或预算内无法补齐而明确限制持续时间判断。",
+  "task": "检验停火期限的前端风险定价与潜在信号",
+  "type": "event_pricing"
+}

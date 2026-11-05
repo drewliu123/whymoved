@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "title": "2026年10月中国CPI同比：实际值尚未公布",
+  "question": "10月中国通货膨胀-年度是多少？",
+  "type": "actor",
+  "task": "官方统计发布计划与实际数据核对",
+  "as_of": "2026-11-02T07:35:59.789168+00:00",
+  "answer": {
+    "text": "按2026年10月、全国居民消费价格指数（CPI）同比理解，截至2026年11月2日尚未公布实际值。国家统计局计划于2026年11月9日9:30（北京时间）发布，日程可能调整。",
+    "claim_ids": [
+      "C1",
+      "C3"
+    ]
+  },
+  "findings": [
+    {
+      "title": "最近已公布的是9月，同比增长0.9%",
+      "text": "2026年10月14日公布的是9月CPI：同比+0.9%、环比+0.2%。这两个数字都不能当作10月同比实际值。这里将“年度”按经济日历常见口径理解为同比，即与上年同月比较。",
+      "claim_ids": [
+        "C2",
+        "C4"
+      ],
+      "why_it_matters": "区分数据参考月与公告发布月，避免错填经济日历数值。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只按公告发布在10月寻找数字，容易将9月数据认作10月数据。",
+        "detail": "连接官方日程的上月口径和9月公告，定位10月实际值的预定发布时间。"
+      }
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "2026年11月9日9:30（北京时间）的国家统计局CPI公告，或官方日程调整通知。",
+      "meaning": "公告发布后取得2026年10月CPI同比实际值。",
+      "claim_ids": [
+        "C1",
+        "C3"
+      ]
+    }
+  ],
+  "limitations": [],
+  "tables": [],
+  "opportunity": {
+    "version": 1,
+    "applicability": "not_applicable",
+    "reason": "本轮只查官方实际值和发布日期，不研究交易机会。"
+  },
+  "analysis": {
+    "version": 1,
+    "question_kind": "commitment_check",
+    "method": "commitment_reconciliation",
+    "price_relevance": false,
+    "baseline": "核对2026年统计信息发布日程与最近已公布的2026年9月CPI。",
+    "mechanism_chain": [
+      "10月统计参考期",
+      "11月官方发布计划",
+      "可使用的CPI同比实际值"
+    ],
+    "baseline_claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "2026年10月CPI仍处于官方计划发布前，当前不应填写实际同比数值。"
+      }
+    ],
+    "tests": [],
+    "conclusion": "按2026年10月、全国居民消费价格指数（CPI）同比理解，截至2026年11月2日尚未公布实际值。国家统计局计划于2026年11月9日9:30（北京时间）发布，日程可能调整。",
+    "conclusion_claim_ids": [
+      "C3"
+    ],
+    "model_status": "not_applicable",
+    "model_reason": "纯数值与发布日程查询，不建立预测或估值模型。",
+    "models": [],
+    "market": {
+      "status": "not_applicable",
+      "reason": "未要求调查共识或交易价格分析。",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

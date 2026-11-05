@@ -1,0 +1,108 @@
+{
+  "analysis_version": 1,
+  "as_of": "2026-11-02T07:45:35.263179+00:00",
+  "budget": {
+    "max_followups": 1,
+    "max_queries": 10
+  },
+  "comparison": {
+    "period": "2026年10月；最近已公布2026年9月",
+    "scope": "中国全国居民消费价格总指数",
+    "unit": "同比百分比"
+  },
+  "decision_needed": "获得可使用的预测数值、区间及决定偏离的因素。",
+  "entity": "2026年10月全国CPI同比",
+  "historical": false,
+  "hypotheses": [
+    {
+      "discriminating_observation": "10月环比约0.0%-0.4%，具名预测接近0.9%。",
+      "explanation": "10月总体价格月度变化接近去年同期，CPI同比维持9月0.9%附近。",
+      "id": "H1"
+    },
+    {
+      "discriminating_observation": "10月环比明显低于0%或高于0.4%，且高频贡献或具名预测支持偏离。",
+      "explanation": "食品、能源或服务价格出现足够大的月度偏离，使CPI同比显著离开0.9%附近。",
+      "id": "H2"
+    }
+  ],
+  "prior_judgment": "上一轮只核对发布时间，没有回答用户的预测意图；此次重新预测。",
+  "queries": [
+    {
+      "purpose": "检验当月价格偏离",
+      "query": "2026年10月 食品 猪肉 蔬菜 成品油 CPI 预测",
+      "question": "10月高频是否支持偏离0.9%？",
+      "source": "官方高频与机构报告",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "purpose": "匹配目标月预测，不冒充共识",
+      "query": "2026 October China CPI inflation forecast November 2026 poll",
+      "question": "外部10月预测是多少？",
+      "source": "具名模型及调查",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "purpose": "滚动同比基数",
+      "query": "2025年10月 CPI 环比 国家统计局",
+      "question": "去年10月环比是多少？",
+      "source": "国家统计局",
+      "test_ids": []
+    }
+  ],
+  "question": "预测2026年10月中国通货膨胀率（全国CPI同比）可能是多少？",
+  "research_design": {
+    "baseline": "2026年9月CPI同比0.9%；2025年10月CPI环比0.2%。",
+    "discrimination_tests": [
+      {
+        "by": "2026-11-09T09:30:00+08:00",
+        "id": "T1",
+        "observe": "10月食品、能源及服务高频对总体环比的净影响。",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "总体环比接近去年10月0.2%，落在0.0%-0.4%附近。"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "高频净影响足以使总体环比明显低于0%或高于0.4%。"
+          }
+        ],
+        "source": "农业农村部、成品油调价与当月价格前瞻"
+      },
+      {
+        "by": "2026-11-02T07:44:18.568812+00:00",
+        "id": "T2",
+        "observe": "截至11月2日、目标10月CPI同比的具名外部预测。",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "可核验预测接近0.9%。"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "可核验预测明显偏离0.7%-1.1%区间。"
+          }
+        ],
+        "source": "Trading Economics及具名机构前瞻"
+      }
+    ],
+    "mechanism_chain": [
+      "10月食品能源服务月度变化",
+      "整体CPI环比",
+      "去年同期基数",
+      "10月CPI同比"
+    ],
+    "method": "reference_class_scenarios",
+    "price_relevance": false,
+    "question_kind": "event_forecast",
+    "rationale": "预测单次月度CPI发布，使用9月实际值、去年10月基数、当月高频及外部模型形成可核验情景。当前核心缺口是完整食品能源服务贡献；不以全年预测替代单月预测。"
+  },
+  "schema_version": 2,
+  "stop_condition": "形成有外部模型和可复算基数支持的中心预测及区间，披露高频覆盖缺口。",
+  "task": "CPI同比中心预测与情景区间",
+  "type": "event_pricing"
+}

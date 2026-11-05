@@ -1,0 +1,26 @@
+{
+ "qid": "Q124",
+ "question": "Will Aisha Wahab win the CA-14 special election?",
+ "rules": "A special election is scheduled for August 18, 2026 to fill the seat of California’s 14th Congressional district in the U.S. House of Representatives.\n\nThis market will resolve according to the winner of this election.\n\nThis market includes any potential runoff election or second round.\n\nIf the results of this election are not definitively known by December 31, 2026, 11:59 PM ET, this market will resolve to “Other”.\n\nThe resolution source for this market will be a consensus of official sources, including: https://www.sos.ca.gov/.",
+ "as_of": "2026-08-07",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Office of the Governor of California",
+   "published_at": "2026-04-14",
+   "excerpt": "Governor Gavin Newsom today issued a proclamation setting a special election on August 18, 2026 to fill the Congressional seat for the fourteenth congressional district. The proclamation states that the election will fill the vacancy resulting from the resignation of Representative Eric Swalwell."
+  },
+  {
+   "id": "E2",
+   "publisher": "The Independent — Jessica Zimmer",
+   "published_at": "2026-07-30",
+   "excerpt": "Mail-in voting is underway for the Aug. 18 special general election between Democrats BART Board President Melissa Hernandez and State Senator Aisha Wahab to fill the 14th Congressional District seat until January 2027. Ballots are due in person or postmarked by Aug. 18. The boundaries for the November 3 election will be different because the district lines were redrawn under Proposition 50."
+  },
+  {
+   "id": "E3",
+   "publisher": "The Guardian — Dani Anguiano, syndicated by inkl",
+   "published_at": "2026-08-06",
+   "excerpt": "Super PACs tied to the American Israel Public Affairs Committee have spent millions in a California congressional race to keep a progressive Democrat from winning Eric Swalwell’s former seat. Aisha Wahab, a state senator who has been endorsed by the California Democratic party, is widely considered the frontrunner in the special election for the district covering a swathe of the East Bay."
+  }
+ ]
+}

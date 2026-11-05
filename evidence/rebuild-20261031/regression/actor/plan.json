@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "question": "Microsoft管理层扩大AI基础设施投入的说法，后续投入和经营兑现到哪一步，哪些约束仍存在？",
+  "type": "actor",
+  "task": "人物机构言行兑现：复用冻结证据的开发回归",
+  "as_of": "2026-10-31T17:29:33Z",
+  "historical": false,
+  "entity": "Microsoft管理层",
+  "decision_needed": "仅验证冻结输入转换、渲染和归档流程；不开展新的投研决定。",
+  "prior_judgment": "扩大投入已有实际支出支持；据管理层披露，部分产能已上线、商业化已有进展，具体新增AI批次可售GPU容量/利用率未核实。本轮六份电话会未提供可计算新增AI资本回报的配对数据，其他公开披露未穷尽，披露不足不等于回报差。最新季度开支低于指引；据管理层解释，日历年指引下调分别涉及分类变化和交付延期，该解释未经独立验证，也不能排除需求同时变化。",
+  "stop_condition": "开发回归渲染完成并记录归档成功或缺失元数据的阻塞；不检索新材料或伪造历史取证。",
+  "comparison": {
+    "period": "2026-10-31T17:29:33Z 原研究截点",
+    "unit": "保留原报告各表与结论单位",
+    "scope": "四类型旧开发样本 actor；非 heldout；未重建历史可得性"
+  },
+  "hypotheses": [
+    {
+      "explanation": "原冻结内容可在保留 schema 1 claims 条件下适配 schema 2 报告。",
+      "discriminating_observation": "render_report 校验/渲染退出码；research_run 归档与无变化差分。"
+    }
+  ],
+  "queries": [
+    {
+      "question": "原材料可否安全适配？",
+      "query": "offline local JSON audit; external queries not executed",
+      "source": "journal/four-type-validation-20261031/actor",
+      "purpose": "开发回归，不做新研究或历史证明"
+    }
+  ],
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "executed_external_queries": 0,
+  "original_plan": {
+    "question": "Microsoft管理层扩大AI基础设施投入的说法，后续投入和经营兑现到哪一步，哪些约束仍存在？",
+    "type": "actor",
+    "secondary_context": "AI infrastructure economics only; not a separate theme report",
+    "as_of": "2026-10-31T17:29:33Z",
+    "status": "completed_with_gaps",
+    "protocol": "journal/four-type-validation-20261031/protocol.md",
+    "method": "v2 actor: authority/constraints → conditional words → actual action → matching/outcomes → alternative explanations → next validation",
+    "source_budget": {
+      "primary_documents": 6,
+      "selection": "six consecutive official earnings calls FY25 Q4 through latest FY27 Q1; latest availability verified first"
+    },
+    "research_questions": [
+      {
+        "angle": "原话/条件",
+        "question": "扩张和节奏说法如何修订，依赖需求、合同还是交付？",
+        "sources": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "angle": "执行/口径",
+        "question": "现金PP&E、含融资租赁capex、经营租赁分类与财政/日历年度如何分开？",
+        "sources": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "angle": "产能/经营兑现",
+        "question": "哪些容量已上线，什么已变现，能否归属到新增投资回报？",
+        "sources": [
+          "S3",
+          "S4",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "angle": "权限/激励/约束",
+        "question": "能观察何种配置权、经营目标与融资约束，哪些治理材料缺失？",
+        "sources": [
+          "S3",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "angle": "反方/更新",
+        "question": "分类、价格、旧容量提效能否替代新增资本解释？什么后续事实改变判断？",
+        "sources": [
+          "S5",
+          "S6"
+        ]
+      }
+    ],
+    "actions_taken": [
+      "read protocol, v2 actor and evidence rules",
+      "read six consecutive official transcripts; preserve original paragraph quotes and dates",
+      "calculate on rounded disclosed numbers",
+      "self-review accounting/periods/conditional commitments",
+      "render Markdown and HTML from report.json",
+      "run existing check_claims.py and save exit code/logs"
+    ],
+    "permissions": {
+      "external": "read-only",
+      "write_scope": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/actor",
+      "delegation": false,
+      "formal_journal_or_authors_modified": false,
+      "plugin_modified": false,
+      "github_published": false,
+      "downloaded_code_executed": false,
+      "credentials_read": false
+    },
+    "adaptations": "User authorized v2: no fixed legacy angles, community collection, subagents or mandatory forecast registration. Formal journal untouched."
+  },
+  "development_notice": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。"
+}

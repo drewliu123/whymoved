@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-10-31T12:19:06Z",
+  "forecasts": [
+    {
+      "hypothesis_id": "H1",
+      "mode": "independent",
+      "question": "FY2027 Q3首次合格官方披露的数据中心收入是否严格超过1000亿美元？",
+      "yes_means": "在窗口内NVIDIA首次公布FY2027 Q3官方业绩材料，按最精确口径报告的Data Center revenue严格大于USD100,000,000,000。等于1000亿美元为NO。若只报区间取中点。只计该季度正式材料，之后修订不计；窗口前的指引/订单/产品公告不计。窗口内有季报但未披露此指标为NO，截止仍未披露合格季报亦为NO。",
+      "window_start": "2026-10-31T12:19:06Z",
+      "window_end": "2027-01-01T04:59:59Z",
+      "resolution_source": "NVIDIA FY2027 Q3首次官方公司业绩材料，优先nvidianews.nvidia.com、investor.nvidia.com及SEC；若上述缺该指标再用同期官方业绩会录像或逐字稿。窗口终点对应2026-12-31 23:59:59 ET。",
+      "evidence_ids": [
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "trials": [
+        0.63,
+        0.64,
+        0.68
+      ],
+      "market_search_gap": "Matching Polymarket revenue contract found; displayed midpoint not execution. $100B Gamma Yes bid0.72 ask0.98, last0.72, updated12:28:16Z after as_of; CLOB YES and NO book403, no verified timestamped depth. Does not assert global absence of prices.",
+      "final_prob": 0.65,
+      "method_version": "touyan-forecast-v2",
+      "evidence_hash": "c8ba1eac9d6e04bbf5283b64f192aae44393b9a65a25ec24bc90f60e7d729ad7"
+    }
+  ]
+}

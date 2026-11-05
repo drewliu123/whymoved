@@ -1,0 +1,32 @@
+{
+ "qid": "Q015",
+ "question": "Will Alibaba have the best Chinese AI model at the end of July 2026?",
+ "rules": "This market will resolve according to the company that owns the model that has the highest arena rank among primarily Chinese companies, based on the Chatbot Arena LLM Leaderboard (https://lmarena.ai/) when the table under the \"Leaderboard\" tab is checked on July 31, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://lmarena.ai/leaderboard/text with style control off will be used to resolve this market.\n\nQualifying Chinese Models will be ordered primarily by their leaderboard rank at the market’s check time. If two or more models are tied on rank, they will be ordered by their Arena score, including any underlying, unrounded, granular values reflected in the data below the leaderboard. If a tie still remains, alphabetical order of company names as listed in this market group will be used as a final tiebreaker (e.g., if the two models are tied by exact arena score, “Meituan” would be ranked ahead of “Xiaomi”). This market will resolve based on the company that occupies first place under this ranking.\n\nThe resolution source for this market is the Chatbot Arena LLM Leaderboard found at https://lmarena.ai/. If this resolution ",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Arena — Leaderboard Changelog, dated July 16 entry",
+   "published_at": "2026-07-16",
+   "excerpt": "Arena's July 16, 2026 changelog states that kimi-k3 has been added to the Text Arena and Code Arena leaderboards."
+  },
+  {
+   "id": "E2",
+   "publisher": "Center for Strategic and International Studies — Yasir Atalan",
+   "published_at": "2026-07-02",
+   "excerpt": "Recent Chinese AI models are doing well on major benchmarks. GLM-5.2 ranks second in the front-end coding benchmark and first among open-weight models. Moonshot's Kimi K2.7 Code follows OpenAI and Anthropic closely in agent and software engineering benchmarks. DeepSeek V4-Pro and Qwen3.7-Max are also highly capable and just behind US-based models."
+  },
+  {
+   "id": "E3",
+   "publisher": "Decrypt — Jose Antonio Lanz",
+   "published_at": "2026-05-20",
+   "excerpt": "Qwen 3.7 Max debuted on Arena AI on May 14, 2026. Qwen 3.7 Max-Preview ranks thirteenth overall in Text Arena, seventh in math, ninth in expert-level prompts, and ninth in software and IT. This makes Alibaba the sixth-ranked AI lab globally in text."
+  },
+  {
+   "id": "E4",
+   "publisher": "Qwen Team — Qwen3.7: The Agent Frontier",
+   "published_at": "2026-05-20",
+   "excerpt": "Qwen introduced Qwen3.7-Max as its latest proprietary model designed for the agent era and made it available through Alibaba Cloud Model Studio. In the team's reported evaluations, it scored 92.4 on GPQA Diamond, 41.4 on HLE, and 79.1 on IFBench. Its reported SWE-Verified score of 80.4 was close to Opus-4.6 Max at 80.8 and DeepSeek V4-Pro Max at 80.6."
+  }
+ ]
+}

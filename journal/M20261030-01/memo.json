@@ -1,0 +1,18 @@
+{
+  "question": "Warsh 的政策倾向",
+  "type": "actor",
+  "entity": "Kevin Warsh（美联储主席）",
+  "as_of": "2026-10-30T09:15:00Z",
+  "market_snapshot": [
+    {"source": "polymarket", "slug": "fed-decision-in-december-20260729232808632", "outcome": "25 bps increase", "prob": 0.725},
+    {"source": "polymarket", "slug": "how-many-dissent-at-the-december-fed-meeting-20260730000304473", "outcome": "0", "prob": 0.64},
+    {"source": "polymarket", "slug": "trump-publicly-insults-warsh-by", "outcome": "December 31", "prob": 0.23},
+    {"source": "polymarket", "slug": "warsh-out-as-fed-chair-by-20260723173321450", "outcome": "December 31, 2026", "prob": 0.016}
+  ],
+  "hypotheses": [
+    {"id": "H1", "text": "12 月 9 日加息 25bp 至 4.00–4.25%", "verify_by": "2026-12-09", "falsify_if": "声明维持 3.75–4.00%，或加息 ≥50bp，或降息", "my_prob": 0.70, "market_prob": 0.725,
+     "authors": [{"handle": "robin_j_brooks", "platform": "x", "stance": "oppose"}]},
+    {"id": "H2", "text": "12 月会议 0 票反对（与 H1 高度相关）", "verify_by": "2026-12-09", "falsify_if": "声明列出任何反对票", "my_prob": 0.58, "market_prob": 0.64, "authors": []},
+    {"id": "H3", "text": "Trump 在 2026-12-31 前公开辱骂 Warsh", "verify_by": "2026-12-31", "falsify_if": "截至 12/31 未出现符合 Polymarket 结算规则的辱骂", "my_prob": 0.27, "market_prob": 0.23, "authors": []}
+  ]
+}

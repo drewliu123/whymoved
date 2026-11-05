@@ -1,8 +1,10 @@
 {
-  "name": "whymoved",
-  "description": "Explain why a stock or crypto asset moved, with sources and timestamps. Only news published before the move counts as a cause.",
-  "version": "0.1.0",
-  "author": { "name": "drewliu123" },
+  "name": "touyan",
+  "version": "0.6.0",
+  "description": "投研助手：按研究用途选择多层来源，连接证据与计算，形成判断，交付可追溯Markdown/HTML并更新研究。研究建议，非个人买卖指令。",
+  "author": {
+    "name": "drewliu"
+  },
   "license": "MIT",
-  "keywords": ["stocks", "crypto", "news", "finance", "skill"]
+  "keywords": ["research", "investment", "prediction-markets", "evidence"]
 }

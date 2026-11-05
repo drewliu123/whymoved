@@ -1,0 +1,23 @@
+{
+  "spaceId": 19,
+  "fixture": "synthetic only",
+  "keyboard": {
+    "focused": "Q2 12 测试单位",
+    "readout": "Q2 12 测试单位",
+    "crosshair": "<line id=\"chart-crosshair\" x1=\"370.000\" x2=\"370.000\" y1=\"25\" y2=\"195\" stroke=\"var(--sub)\" visibility=\"visible\" pointer-events=\"none\"></line>"
+  },
+  "hover": {
+    "readout": "Q3 11 测试单位"
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "tableScrollInternal": true
+  },
+  "theme": {
+    "light": "rgb(255, 255, 255)",
+    "dark": "rgb(20, 20, 20)",
+    "darkInk": "rgb(240, 239, 236)"
+  },
+  "evidenceLinkOpensAudit": true
+}

@@ -1,0 +1,50 @@
+{
+ "qid": "Q099",
+ "question": "Will Apvienotais Saraksts (AS) win the most seats in the 2026 Latvian parliamentary election?",
+ "rules": "Parliamentary elections are expected to be held in Latvia on October 3, 2026.\n\nThis market will resolve according to the listed political party or coalition that wins the greatest number of seats in the Latvian Parliament (Saeima) in the next Latvian Parliamentary election. \n\nIn the event of a tie between multiple parties/coalitions for the most seats won, this market will resolve in favor of the party or coalition that received a greater number of valid votes. In the event that results in a tie, this market will resolve in favor of the party or coalition whose listed abbreviation appears first in alphabetical order.\n\nThis market's resolution will be based solely on the number of seats won by the named party or coalition in the Latvian Parliament. If a named coalition dissolves and does not contest this election, the corresponding market will resolve based on the number of seats won by the constituent party within that coalition that held the largest number of seats before the election.\n\nIf the results of this election are not known definitively by June 30, 2027 11:59 PM ET, this market will resolve to \"Other\".\n\nThis market will resolve based on the results of this election as indi",
+ "as_of": "2026-09-20",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "LETA, via BNN",
+   "published_at": "2026-09-15",
+   "excerpt": "KNAB was continuing to examine whether activities by United List representatives, including Prime Minister Andris Kulbergs, on August 7 complied with campaign legislation. The bureau would also assess whether administrative resources had been used in campaigning. KNAB said it had not found significant violations in its campaign monitoring to date."
+  },
+  {
+   "id": "E2",
+   "publisher": "Latvijas Radio / LSM",
+   "published_at": "2026-09-04",
+   "excerpt": "United List held first place in both the latest publicly available SKDS and Latvijas Fakti party ratings. SKDS results suggested six parties would enter parliament, while Latvijas Fakti suggested seven, adding the Union of Greens and Farmers. Researchers explained that the surveys used different methodologies and could not always be compared directly. The parliamentary election was scheduled for October 3, with polling stations open from 08:00 to 20:00."
+  },
+  {
+   "id": "E3",
+   "publisher": "LSM",
+   "published_at": "2026-09-01",
+   "excerpt": "In its first parliamentary election, United List received 11.01% of votes, the third-largest share, and won 15 seats. Its strongest support was in Liepāja and South Kurzeme municipality. After a period in opposition, AS returned to government following the collapse of Evika Siliņa's cabinet in May, and Andris Kulbergs formed a government of four political forces."
+  },
+  {
+   "id": "E4",
+   "publisher": "LSM, reporting SKDS polling",
+   "published_at": "2026-08-27",
+   "excerpt": "In the SKDS survey conducted August 13–19, United List led with 15.2% support among all eligible respondents, up from 12.2% in July. Sovereign Power/Young Latvians followed at 11.8%, the Progressives at 8.8%, and Latvia First at 8.5%. Another 22.5% did not know whom they would support, while 11.2% said they would not participate. When considering respondents who had chosen a party and their willingness to vote, six parties would clear the 5% threshold, with AS first."
+  },
+  {
+   "id": "E5",
+   "publisher": "Latvijas Televīzija / LSM, reporting SKDS polling",
+   "published_at": "2026-08-01",
+   "excerpt": "The SKDS survey conducted July 10–15 put United List at 12.2%, compared with 9.8% in June. Sovereign Power/Young Latvians was second at 11.4%, up from 8.6% in June. Political scientist Juris Rozenvalds and SKDS director Arnis Kaktiņš agreed that the Union of Greens and Farmers was the largest loser in July's ratings, with some supporters moving to United List."
+  },
+  {
+   "id": "E6",
+   "publisher": "Reuters, via WTVB",
+   "published_at": "2026-05-28",
+   "excerpt": "Latvia's parliament approved a new government led by Andris Kulbergs four months before the next election. The four-party coalition consisted of United List, New Unity, the National Alliance, and the Union of Greens and Farmers, and received support from 66 of the 96 votes cast. The Progressives, part of the outgoing coalition, were left outside the new government."
+  },
+  {
+   "id": "E7",
+   "publisher": "Central Election Commission of Latvia (CVK)",
+   "published_at": "2026-05-07",
+   "excerpt": "The Central Election Commission approved the constituency seat allocations for the 15th Saeima election: 38 for Riga, 26 for Vidzeme, 12 for Latgale, 13 for Zemgale, and 11 for Kurzeme. Compared with the previous election, Riga gained two seats, while Latgale and Kurzeme each lost one."
+  }
+ ]
+}

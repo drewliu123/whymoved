@@ -1,0 +1,50 @@
+{
+ "qid": "Q153",
+ "question": "Mitch McConnell votes in the Senate by July 31?",
+ "rules": "This market will resolve to \"Yes\" if Senator Mitch McConnell of Kentucky casts a vote in the United States Senate on any bill, resolution, nomination, motion, or any other measure between market creation and July 31, 2026 at 11:59PM ET. Otherwise, this market will resolve to \"No\".\n\nThe resolution source for this market will be the United States Senate; however, a consensus of credible reporting may also be used.",
+ "as_of": "2026-07-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "United States Senate, Congressional Record (GovInfo)",
+   "published_at": "2026-07-16",
+   "excerpt": "Mr. BARRASSO. The following Senators are necessarily absent: the Senator from Tennessee (Mr. HAGERTY), the Senator from Kentucky (Mr. MCCONNELL), and the Senator from Mississippi (Mr. WICKER). The result was announced—yeas 46, nays 50, as follows: [Rollcall Vote No. 199 Leg.]."
+  },
+  {
+   "id": "E2",
+   "publisher": "Office of Senator Mitch McConnell (press release reproduced by PublicNow)",
+   "published_at": "2026-07-12",
+   "excerpt": "In fact, with signs of continued progress, I've been able to move from hospital care to a rehabilitation center where I'll keep regaining my strength. As much as it frustrates me, this process takes time. And on the advice of my doctors, I won't be able to return to the Senate floor to vote quite yet."
+  },
+  {
+   "id": "E3",
+   "publisher": "Roll Call",
+   "published_at": "2026-07-12T18:21:00-04:00",
+   "excerpt": "The release also included a note from the Office of the Attending Physician confirming that McConnell fell four weeks ago, sustaining minor injuries, and that “a comprehensive evaluation by a multidisciplinary team determined that he had no fractures, cardiac abnormalities, stroke, tumor, or hemorrhage.” “The remainder of his hospital stay focused on physical therapy and strategies to reduce his risk of future falls,” the statement read."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters (republished by WTAQ)",
+   "published_at": "2026-07-09",
+   "excerpt": "WASHINGTON, July 9 (Reuters) – The U.S. Senate returns on Monday for a four-week work period expected to include votes on defense and other national security legislation, with one of the most influential voices on those issues – Republican Senator Mitch McConnell – still absent with undisclosed health problems. The Senate has been on a July 4 break since June 24."
+  },
+  {
+   "id": "E5",
+   "publisher": "United States Senate",
+   "published_at": "2025-11-21",
+   "excerpt": "The list below identifies expected non-legislative periods (days that the Senate will not be in session). The schedule lists June 29–July 10 and August 10–September 11 as state work periods. Updated on Nov 21, 2025."
+  },
+  {
+   "id": "E6",
+   "publisher": "PolitiFact",
+   "published_at": "2026-07-13",
+   "excerpt": "We found no evidence that the photo released July 12 showing Sen. Mitch McConnell in a rehabilitation facility alongside his wife, Elaine Chao, has appeared online before. Multiple digital forensics experts analyzed the image and told PolitiFact they found no evidence of AI generation."
+  },
+  {
+   "id": "E7",
+   "publisher": "ABC News",
+   "published_at": "2023-04-17T15:47:00-04:00",
+   "excerpt": "Republican Leader Mitch McConnell returned to the Senate floor on Monday, nearly six weeks after suffering a concussion and a fractured rib from a fall at a Washington hotel."
+  }
+ ]
+}

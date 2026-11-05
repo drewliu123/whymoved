@@ -1,0 +1,32 @@
+{
+ "qid": "Q173",
+ "question": "Will Apple be the largest company in the world by market cap on July 31?",
+ "rules": "This market will resolve to the largest company in the world by market cap on July 31, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+ "as_of": "2026-07-17",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters, via Investing.com",
+   "published_at": "2026-07-15",
+   "excerpt": "China’s cyberspace regulator said on Wednesday that Apple’s on-device generative AI service, Apple Intelligence, has been registered for use on iPhones in China, paving the way for the long-anticipated rollout of the service in the country. Alibaba said in a statement to Reuters that its Qwen model will be integrated into Apple Intelligence across Apple’s iPhone (iOS), iPad (iPadOS), Mac (macOS) and Vision Pro (visionOS) operating systems in China."
+  },
+  {
+   "id": "E2",
+   "publisher": "9to5Mac",
+   "published_at": "2026-07-02",
+   "excerpt": "Apple announced today (via MacMagazine) that it will report its Q3 2026 earnings on Thursday, July 30."
+  },
+  {
+   "id": "E3",
+   "publisher": "Apple Newsroom",
+   "published_at": "2026-04-30",
+   "excerpt": "Apple today announced financial results for its fiscal 2026 second quarter ended March 28, 2026. The Company posted quarterly revenue of $111.2 billion, up 17 percent year over year. Diluted earnings per share was $2.01, up 22 percent year over year."
+  },
+  {
+   "id": "E4",
+   "publisher": "NVIDIA Investor Relations",
+   "published_at": "2026-05-20",
+   "excerpt": "NVIDIA today reported record revenue for the first quarter ended April 26, 2026, of $81.6 billion, up 20% from the previous quarter and up 85% from a year ago. For the quarter, GAAP and non-GAAP gross margins were 74.9% and 75.0%, respectively."
+  }
+ ]
+}

@@ -1,0 +1,322 @@
+{
+ "schema_version": 2,
+ "as_of": "2026-11-04T07:30:00+00:00",
+ "claims": [
+  {
+   "id": "P-GC-NOW",
+   "text": "2026年11月4日06:55 UTC，COMEX金期货主力连续合约报4033.4美元/盎司（延迟行情）。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PX-GC-NOW"
+    }
+   ],
+   "price_kind": "indicative"
+  },
+  {
+   "id": "P-GC-PEAK",
+   "text": "2026年1月29日，COMEX金期货收于5318.4美元/盎司，为过去一年收盘高点。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PX-GC-PEAK"
+    }
+   ],
+   "price_kind": "close"
+  },
+  {
+   "id": "P-GC-APR",
+   "text": "2026年4月1日，COMEX金期货收于4813.1美元/盎司。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PX-GC-APR"
+    }
+   ],
+   "price_kind": "close"
+  },
+  {
+   "id": "P-GC-LOW",
+   "text": "2026年10月30日，COMEX金期货收于3898.9美元/盎司，为过去一年收盘低点。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PX-GC-LOW"
+    }
+   ],
+   "price_kind": "close"
+  },
+  {
+   "id": "P-SI-PEAK",
+   "text": "2026年1月26日，COMEX银期货收于115.08美元/盎司。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PX-SI-PEAK"
+    }
+   ],
+   "price_kind": "close"
+  },
+  {
+   "id": "P-SI-NOW",
+   "text": "2026年11月4日，COMEX银期货报51.72美元/盎司（延迟行情）。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PX-SI-NOW"
+    }
+   ],
+   "price_kind": "indicative"
+  },
+  {
+   "id": "P-CL-OCT30",
+   "text": "2026年10月30日，WTI原油期货收于104.12美元/桶。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PX-CL-OCT30"
+    }
+   ],
+   "price_kind": "close"
+  },
+  {
+   "id": "P-CL-NOW",
+   "text": "2026年11月4日，WTI原油期货报96.48美元/桶（延迟行情）。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PX-CL-NOW"
+    }
+   ],
+   "price_kind": "indicative"
+  },
+  {
+   "id": "C-REAL",
+   "text": "10年期TIPS实际收益率：1月29日1.89%、4月1日2.02%、10月5日2.95%、11月2日2.62%。",
+   "type": "fact",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "FRED-DFII10"
+    }
+   ]
+  },
+  {
+   "id": "C-CPI",
+   "text": "2026年9月美国CPI同比约3.7%，核心CPI同比约2.6%（季调指数计算）。",
+   "type": "fact",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "FRED-CPI"
+    }
+   ]
+  },
+  {
+   "id": "C-FED-SEP",
+   "text": "FOMC于2026年9月16日加息25个基点，目标区间升至3.75%—4.00%。",
+   "type": "fact",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "FED-SEP"
+    }
+   ]
+  },
+  {
+   "id": "C-FED-OCT",
+   "text": "FOMC于2026年10月28日以10比2维持3.75%—4.00%；Cook与Hammack主张再加息25个基点。",
+   "type": "fact",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "FED-OCT"
+    }
+   ]
+  },
+  {
+   "id": "C-CAL",
+   "text": "下一次FOMC会议为2026年12月8—9日，并发布经济预测摘要。",
+   "type": "fact",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "FED-CAL"
+    }
+   ]
+  },
+  {
+   "id": "C-WGC",
+   "text": "WGC数据：2026年Q3央行购金321.2吨、同比增42%；ETF净流入211.2吨；金条金币267.8吨、同比降19%；首饰消费同比降17%；LBMA季度均价4262.2美元，环比降5%。",
+   "type": "fact",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "WGC-Q3"
+    }
+   ]
+  },
+  {
+   "id": "V-WGC",
+   "text": "WGC预计2026年央行购金至少与2025年持平。",
+   "type": "view",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "WGC-OUTLOOK"
+    }
+   ]
+  },
+  {
+   "id": "P-PM-DEC",
+   "text": "11月4日07:08 UTC，Polymarket“12月FOMC加息25个基点”Yes参考价0.755（bid 0.75 / ask 0.76）。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PM-DEC-HIKE"
+    }
+   ],
+   "price_kind": "indicative"
+  },
+  {
+   "id": "P-PM-4300",
+   "text": "11月4日Polymarket“金价11月内触及4300美元”Yes参考价0.235（bid 0.20 / ask 0.27）。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PM-GOLD-4300"
+    }
+   ],
+   "price_kind": "indicative"
+  },
+  {
+   "id": "P-PM-4200",
+   "text": "11月4日Polymarket“金价11月内触及4200美元”Yes参考价0.43（bid 0.40 / ask 0.46）。",
+   "type": "price",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [
+    {
+     "source_id": "PM-GOLD-4200"
+    }
+   ],
+   "price_kind": "indicative"
+  },
+  {
+   "id": "C-DD",
+   "text": "金价较1月29日高点回落-24.2%；10月30日低点时回撤-26.7%。白银同期从高点回落-55.1%。",
+   "type": "inference",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [],
+   "basis": [
+    "P-GC-NOW",
+    "P-GC-PEAK",
+    "P-GC-LOW",
+    "P-SI-PEAK",
+    "P-SI-NOW"
+   ]
+  },
+  {
+   "id": "C-LEG1",
+   "text": "第一段下跌（1月29日至4月1日）金价跌-9.5%，同期实际利率只升0.13个百分点；这段更像高位投机仓位出清，白银跌幅约为黄金两倍也与此一致。",
+   "type": "inference",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [],
+   "basis": [
+    "P-GC-PEAK",
+    "P-GC-APR",
+    "C-REAL",
+    "C-DD"
+   ]
+  },
+  {
+   "id": "C-CORR",
+   "text": "按日收益计算，金价与油价的相关系数在2025年11月至2026年3月为0.03（99个交易日），4—7月为-0.45（83日），8月至11月4日为-0.21（63日）。4月后油价上涨日金价更常下跌。",
+   "type": "inference",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [],
+   "basis": [
+    "P-GC-NOW",
+    "P-CL-NOW",
+    "C-REAL"
+   ]
+  },
+  {
+   "id": "C-MECH",
+   "text": "第二段下跌的主线是利率：油价冲击推高总体CPI（3.7%，核心2.6%），美联储9月加息且10月仍有两票主张再加，10年期实际利率从约1.9%升至2.6%—3.0%，持有黄金的机会成本显著上升。因此地缘冲突升级目前通过“油价→通胀→加息”路径压制金价，而非提供避险支撑。",
+   "type": "inference",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [],
+   "basis": [
+    "C-CPI",
+    "C-FED-SEP",
+    "C-FED-OCT",
+    "C-REAL",
+    "C-CORR"
+   ]
+  },
+  {
+   "id": "C-DEMAND",
+   "text": "Q3央行与ETF合计净买入约532吨，而季度均价仍环比下跌，10月继续创年内新低；官方买盘在放大，但目前没有抵消利率压力，更像是限制跌幅的底部力量，而非方向驱动。",
+   "type": "inference",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [],
+   "basis": [
+    "C-WGC",
+    "V-WGC",
+    "P-GC-LOW"
+   ]
+  },
+  {
+   "id": "C-OIL",
+   "text": "油价从10月30日104.12美元回落至96.48美元（-7.3%），同期金价从3898.9美元回升至4033.4美元；两者反向移动与利率主线一致。",
+   "type": "inference",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [],
+   "basis": [
+    "P-CL-OCT30",
+    "P-CL-NOW",
+    "P-GC-LOW",
+    "P-GC-NOW",
+    "C-MECH"
+   ]
+  },
+  {
+   "id": "C-MARKET",
+   "text": "市场已为12月加息定价约四分之三概率；Polymarket认为金价11月内触及4200美元的概率约43%%、触及4300美元约23%%，即市场预期反弹有限、但不押注继续崩跌。",
+   "type": "inference",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [],
+   "basis": [
+    "P-PM-DEC",
+    "P-PM-4200",
+    "P-PM-4300",
+    "P-GC-NOW"
+   ]
+  },
+  {
+   "id": "C-VIEW",
+   "text": "未来1—3个月（至12月FOMC及1月初）判断：金价大概率在3800—4300美元区间震荡，方向由油价—通胀—美联储链条决定。加息已大体被定价，因此不对称性在于鹰派预期退潮：若油价继续回落、10月CPI降温使12月加息落空，金价有修复空间；若油价重回110美元以上并迫使美联储连续加息，跌破3900美元的风险上升。白银弹性更大，波动方向与金价一致但幅度约两倍。",
+   "type": "inference",
+   "as_of": "2026-11-04T07:30:00+00:00",
+   "sources": [],
+   "basis": [
+    "C-MECH",
+    "C-DEMAND",
+    "C-MARKET",
+    "C-OIL",
+    "C-CAL",
+    "C-LEG1"
+   ]
+  }
+ ]
+}

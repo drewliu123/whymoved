@@ -1,0 +1,25 @@
+{
+  "registered_version": "0.4.1",
+  "install_path": "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.4.1",
+  "matches": {
+    "skills/research/SKILL.md": true,
+    "skills/research/references/context.md": true,
+    "skills/research/references/templates.md": true,
+    "skills/research/references/memo-template.md": true,
+    "agents/fact-collector.md": true,
+    "agents/red-team.md": true,
+    "README.md": true,
+    ".claude-plugin/plugin.json": true
+  },
+  "reload": "CLI explicitly requires restart; current session not claimed reloaded",
+  "marketplace_update": {
+    "exit_code": 0,
+    "outcome": "ok"
+  },
+  "plugin_update": {
+    "exit_code": 0,
+    "outcome": "updated",
+    "old_version": "0.4.0",
+    "new_version": "0.4.1"
+  }
+}

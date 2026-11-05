@@ -1,0 +1,6 @@
+{
+  "readable_report_template_identical": true,
+  "claims_validator_identical": true,
+  "old_probability_contract": "本次研究给出的概率",
+  "new_probability_contract": "forecast.py finalize的final_prob，新增forecast.json及契约"
+}

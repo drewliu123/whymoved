@@ -1,0 +1,1312 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [],
+    "hiring_signals_mode": false,
+    "plan_source": "external",
+    "pre_research_flags_present": true,
+    "resolved": {
+      "context": "",
+      "entity": "Meta Platforms META stock November rebound advertising AI capex cash flow",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [
+        "stocks",
+        "ValueInvesting",
+        "SecurityAnalysis",
+        "wallstreetbets"
+      ],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame"
+      ],
+      "score": 32.77612021857924,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout",
+      "uncertainty": "single-source"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund"
+      ],
+      "score": 30.132751322751325,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Meta launches $35 billion stock offering to fund AI expansion",
+      "uncertainty": "single-source"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants"
+      ],
+      "cluster_id": "cluster-3",
+      "representative_ids": [
+        "https://reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants"
+      ],
+      "score": 27.16205128205128,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
+      "uncertainty": "single-source"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750"
+      ],
+      "cluster_id": "cluster-4",
+      "representative_ids": [
+        "https://reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750"
+      ],
+      "score": 25.142083333333332,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Will the META stock ever recover back to over $750?",
+      "uncertainty": "single-source"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts"
+      ],
+      "cluster_id": "cluster-5",
+      "representative_ids": [
+        "https://reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts"
+      ],
+      "score": 23.552626262626262,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+      "uncertainty": "single-source"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex"
+      ],
+      "cluster_id": "cluster-6",
+      "representative_ids": [
+        "https://reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex"
+      ],
+      "score": 3.294086021505379,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+      "uncertainty": "single-source"
+    }
+  ],
+  "errors_by_source": {
+    "youtube": "yt-dlp search failed: ERROR: [youtube] SmSKbhV0F2c: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-02T08:10:23.765452+00:00",
+  "items_by_source": {
+    "reddit": [
+      {
+        "body": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout\nTo err is human, but to blame someone else shows management potential. \"Blame tech stocks for tech stock rout\" Genius \u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills",
+        "container": "wallstreetbets",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 261,
+          "score": 1549
+        },
+        "engagement_score": 83,
+        "freshness": 90,
+        "item_id": "R9",
+        "local_rank_score": 0.36000000000000004,
+        "local_relevance": 0.08,
+        "metadata": {
+          "comment_insights": [
+            "To err is human, but to blame someone else shows management potential.",
+            "\"Blame tech stocks for tech stock rout\" Genius",
+            "\u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend t...",
+            "I mean Sundar and Zuck was saying they're gonna spend $600 billion dollars on AI at that tech dinner they had with Trump last year. It was true...",
+            "Finding fault is the first step in problem solving. \ud83d\udc4d",
+            "But they didn't expect that they would dilute shareholders or issue corporate bonds at 10% effective interest rate while going negative on FCF",
+            "No, we blame idiotic retail for holding on to their Tesla and SpaceX instead of buying these magnificent companies trading at discounts"
+          ],
+          "top_comments": [
+            {
+              "author": "Doughnutpower",
+              "date": "2026-10-30",
+              "excerpt": "To err is human, but to blame someone else shows management potential.",
+              "score": 1268,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvichr4siud/"
+            },
+            {
+              "author": "kylkartz21",
+              "date": "2026-10-30",
+              "excerpt": "\"Blame tech stocks for tech stock rout\" Genius",
+              "score": 374,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjvpd3eyqr/"
+            },
+            {
+              "author": "toydan",
+              "date": "2026-10-30",
+              "excerpt": "\u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills ",
+              "score": 293,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvhyp4x14kj/"
+            },
+            {
+              "author": "No-Paint-5726",
+              "date": "2026-10-30",
+              "excerpt": "I mean Sundar and Zuck was saying they're gonna spend $600 billion dollars on AI at that tech dinner they had with Trump last year. It was true...",
+              "score": 185,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvicbfiamht/"
+            },
+            {
+              "author": "AutisticGayBear69",
+              "date": "2026-10-30",
+              "excerpt": "Finding fault is the first step in problem solving. \ud83d\udc4d",
+              "score": 141,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvlypddj4h1/"
+            },
+            {
+              "author": "Soffatjockis",
+              "date": "2026-10-30",
+              "excerpt": "But they didn't expect that they would dilute shareholders or issue corporate bonds at 10% effective interest rate while going negative on FCF",
+              "score": 86,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvnptsmd4kk/"
+            },
+            {
+              "author": "approximately_exact",
+              "date": "2026-10-30",
+              "excerpt": "No, we blame idiotic retail for holding on to their Tesla and SpaceX instead of buying these magnificent companies trading at discounts",
+              "score": 70,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvj9ie1v71h/"
+            },
+            {
+              "author": "Icterus_Galbula",
+              "date": "2026-10-30",
+              "excerpt": "The street can get over it, or maybe they should hire actual researchers who can do the work for them. None of this is surprising if they had been monitoring the build out, which is showing no signs o",
+              "score": 61,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjjf9mmbmq/"
+            },
+            {
+              "author": "zxcvbnmqwerty12345",
+              "date": "2026-10-30",
+              "excerpt": "Almost a trillion dollar of capex is just crazy money.",
+              "score": 48,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvk0a6y7hi8/"
+            },
+            {
+              "author": "Neowarcloud",
+              "date": "2026-10-30",
+              "excerpt": "They are also driving the sky high valuations...",
+              "score": 42,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvhp5sryp2d/"
+            },
+            {
+              "author": "PLEASE_PUNCH_MY_FACE",
+              "date": "2026-10-30",
+              "excerpt": "Problem finding is the step first in fault solving.",
+              "score": 40,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvrhnyxxnj9/"
+            },
+            {
+              "author": "Moddingspreee",
+              "date": "2026-10-30",
+              "excerpt": "I also blame Joe Biden",
+              "score": 37,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvm0l6iatlx/"
+            }
+          ]
+        },
+        "published_at": "2026-10-30",
+        "relevance_hint": 0.14,
+        "snippet": "To err is human, but to blame someone else shows management potential. \"Blame tech stocks for tech stock rout\" Genius \u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout",
+        "url": "https://www.reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame/",
+        "why_relevant": "Reddit search"
+      },
+      {
+        "body": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+        "container": "stocks",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 315,
+          "score": 872
+        },
+        "engagement_score": 71,
+        "freshness": 83,
+        "item_id": "R1",
+        "local_rank_score": 0.337,
+        "local_relevance": 0.09,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-10-28",
+        "relevance_hint": 0.42,
+        "snippet": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+        "url": "https://www.reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex/",
+        "why_relevant": "Reddit listing"
+      },
+      {
+        "body": "Meta launches $35 billion stock offering to fund AI expansion\nWhy is dilution green now? This is why META is up pre-market in case anyone is wondering. Because company get money. Get money good.",
+        "container": "wallstreetbets",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 141,
+          "score": 844
+        },
+        "engagement_score": 75,
+        "freshness": 76,
+        "item_id": "R2",
+        "local_rank_score": 0.317,
+        "local_relevance": 0.08,
+        "metadata": {
+          "comment_insights": [
+            "This is why META is up pre-market in case anyone is wondering.",
+            "Because company get money. Get money good.",
+            "It\u2019s all such a fake circlejerk lol",
+            "It went from -5% to +2% pre-market",
+            "Facebook : \u201cwe have no money. give us more money. Just give us $25 billion more dollar bro I swear Muse will be profitable if you give us $25 billion...",
+            "Tech has been crushed because people feared a lack of capital meant the music was about to stop. This shows a willingness to keep the music playing.",
+            "Hyperscalers and AI labs when they see more circular financing"
+          ],
+          "top_comments": [
+            {
+              "author": "Fortnait739595958",
+              "date": "2026-10-26",
+              "excerpt": "Why is dilution green now?",
+              "score": 429,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohkloihb7m/"
+            },
+            {
+              "author": "heisthemaincharacter",
+              "date": "2026-10-26",
+              "excerpt": "This is why META is up pre-market in case anyone is wondering.",
+              "score": 260,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpy9ewumd/"
+            },
+            {
+              "author": "ittrut",
+              "date": "2026-10-26",
+              "excerpt": "Because company get money. Get money good.",
+              "score": 189,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohnmdu5mv4/"
+            },
+            {
+              "author": "AmItheonlySaneperson",
+              "date": "2026-10-26",
+              "excerpt": "It\u2019s all such a fake circlejerk lol",
+              "score": 170,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohyruax79c/"
+            },
+            {
+              "author": "TeBp242",
+              "date": "2026-10-26",
+              "excerpt": "why the fuck is it up",
+              "score": 168,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohut0poao5/"
+            },
+            {
+              "author": "rebel-capitalist",
+              "date": "2026-10-26",
+              "excerpt": "It went from -5% to +2% pre-market",
+              "score": 136,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roheavbn2tc/"
+            },
+            {
+              "author": "bubblegum-rose",
+              "date": "2026-10-26",
+              "excerpt": "Facebook : \u201cwe have no money. give us more money. Just give us $25 billion more dollar bro I swear Muse will be profitable if you give us $25 billion more dollars\u201d Stock market: \u201c\ud83e\udd11\ud83e\udd11\ud83e\udd11 yes Mr. Zuck!!! W",
+              "score": 136,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpjausyrm/"
+            },
+            {
+              "author": "TheKingInTheNorth",
+              "date": "2026-10-26",
+              "excerpt": "Tech has been crushed because people feared a lack of capital meant the music was about to stop. This shows a willingness to keep the music playing.",
+              "score": 117,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roj5pxbwydh/"
+            },
+            {
+              "author": "_IsNull",
+              "date": "2026-10-26",
+              "excerpt": "Stop thinking logically.",
+              "score": 102,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohq70w36rl/"
+            },
+            {
+              "author": "Wooder__Ice",
+              "date": "2026-10-26",
+              "excerpt": "Hyperscalers and AI labs when they see more circular financing",
+              "score": 87,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roi7y4hlcsi/"
+            },
+            {
+              "author": "Fortnait739595958",
+              "date": "2026-10-26",
+              "excerpt": "That has always been the case, also that they are getting that money at your expense",
+              "score": 62,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpy94x98l/"
+            },
+            {
+              "author": "impulse07",
+              "date": "2026-10-26",
+              "excerpt": "Meta splitting the stock to offer non voting shares like your boy Elon does. Are they going to dilute non voting shares? Who knows. I'm staying away from this shit show.",
+              "score": 55,
+              "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohm4orzfnp/"
+            }
+          ]
+        },
+        "published_at": "2026-10-26",
+        "relevance_hint": 0.36,
+        "snippet": "Why is dilution green now? This is why META is up pre-market in case anyone is wondering. Because company get money. Get money good.",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Meta launches $35 billion stock offering to fund AI expansion",
+        "url": "https://www.reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund/",
+        "why_relevant": "Reddit search"
+      },
+      {
+        "body": "Will the META stock ever recover back to over $750?",
+        "container": "MetaAI",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 15,
+          "score": 6
+        },
+        "engagement_score": 26,
+        "freshness": 83,
+        "item_id": "R15",
+        "local_rank_score": 0.3115,
+        "local_relevance": 0.12,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-10-28",
+        "relevance_hint": 0.15,
+        "snippet": "Will the META stock ever recover back to over $750?",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Will the META stock ever recover back to over $750?",
+        "url": "https://www.reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750/",
+        "why_relevant": "Reddit search"
+      },
+      {
+        "body": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership\nWith all these companies owning pieces of each other, how long until they are effectively one mega corp? What a beautiful circlejerk. $3 Billion\u2026 what is this, data center for ants?!",
+        "container": "stocks",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 76,
+          "score": 287
+        },
+        "engagement_score": 64,
+        "freshness": 80,
+        "item_id": "R3",
+        "local_rank_score": 0.29000000000000004,
+        "local_relevance": 0.04,
+        "metadata": {
+          "comment_insights": [
+            "With all these companies owning pieces of each other, how long until they are effectively one mega corp?",
+            "$3 Billion\u2026 what is this, data center for ants?!",
+            "Which will be too big to fail...",
+            "Which Meta will use it buy Nividia chips, and everything look perfect",
+            "This is like the equivalent of buying your buddy a single beer like how is this even news worthy",
+            "Does a seller investing in a customer ever end well?",
+            "Owning Nvidia is basically just investing into an ETF"
+          ],
+          "top_comments": [
+            {
+              "author": "ikefalcon",
+              "date": "2026-10-27",
+              "excerpt": "With all these companies owning pieces of each other, how long until they are effectively one mega corp?",
+              "score": 221,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9whta7kgw/"
+            },
+            {
+              "author": "CalebVanPoneisen",
+              "date": "2026-10-27",
+              "excerpt": "What a beautiful circlejerk.",
+              "score": 152,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9hj1kvtyd/"
+            },
+            {
+              "author": "questionname",
+              "date": "2026-10-27",
+              "excerpt": "$3 Billion\u2026 what is this, data center for ants?!",
+              "score": 113,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqajdf9ye76/"
+            },
+            {
+              "author": "BuzzerWhirr",
+              "date": "2026-10-27",
+              "excerpt": "Which will be too big to fail...",
+              "score": 91,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa7v11veqs/"
+            },
+            {
+              "author": "Rubricity",
+              "date": "2026-10-27",
+              "excerpt": "Which Meta will use it buy Nividia chips, and everything look perfect",
+              "score": 61,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9hxkvm1r6/"
+            },
+            {
+              "author": "vaticanhotline",
+              "date": "2026-10-27",
+              "excerpt": "Weyland-Yutani vibes.",
+              "score": 60,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa9azr2v6p/"
+            },
+            {
+              "author": "foundboots",
+              "date": "2026-10-27",
+              "excerpt": "This is like the equivalent of buying your buddy a single beer like how is this even news worthy",
+              "score": 47,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqe6xv48yn8/"
+            },
+            {
+              "author": "BuzzerWhirr",
+              "date": "2026-10-27",
+              "excerpt": "Does a seller investing in a customer ever end well? Giving them your money to buy your product? So you can give them more money to buy more of your product? Carlo Ponzi has entered the chat...",
+              "score": 44,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa1oecnyar/"
+            },
+            {
+              "author": "nightwica",
+              "date": "2026-10-27",
+              "excerpt": "Owning Nvidia is basically just investing into an ETF",
+              "score": 22,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqhf4n9i5ib/"
+            },
+            {
+              "author": "mikeydoc96",
+              "date": "2026-10-27",
+              "excerpt": "How many companies does Nvidia own shares in now? Must be near 25",
+              "score": 21,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa4x8ofi3o/"
+            },
+            {
+              "author": "ozthinker",
+              "date": "2026-10-27",
+              "excerpt": "They won't. $3b investment is small, compared to the amount being raised by Meta. Nvidia has been more careful in the past few months, not just for reducing the risk of circular financing, but also to",
+              "score": 16,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqi8414dx7k/"
+            },
+            {
+              "author": "RedshiftOnPandy",
+              "date": "2026-10-27",
+              "excerpt": "Why is Nvidia investing into Meta? Meta is selling data centre time now because no one uses their AI",
+              "score": 16,
+              "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa8cdl8h2d/"
+            }
+          ]
+        },
+        "published_at": "2026-10-27",
+        "relevance_hint": 0.27,
+        "snippet": "With all these companies owning pieces of each other, how long until they are effectively one mega corp? What a beautiful circlejerk. $3 Billion\u2026 what is this, data center for ants?!",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
+        "url": "https://www.reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants/",
+        "why_relevant": "Reddit search"
+      },
+      {
+        "body": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+        "container": "ValueInvesting",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 17,
+          "score": 10
+        },
+        "engagement_score": 29,
+        "freshness": 63,
+        "item_id": "R13",
+        "local_rank_score": 0.26449999999999996,
+        "local_relevance": 0.12,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-10-22",
+        "relevance_hint": 0.15,
+        "snippet": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+        "url": "https://www.reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts/",
+        "why_relevant": "Reddit search"
+      }
+    ],
+    "youtube": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "deterministic",
+    "reasoning_provider": "local",
+    "rerank_model": "local-score"
+  },
+  "query_plan": {
+    "cluster_mode": "story",
+    "freshness_mode": "strict_recent",
+    "intent": "breaking_news",
+    "notes": [],
+    "raw_topic": "Meta Platforms META stock November rebound advertising AI capex cash flow",
+    "source_weights": {
+      "hackernews": 0.3333333333333333,
+      "reddit": 0.3333333333333333,
+      "youtube": 0.3333333333333333
+    },
+    "subqueries": [
+      {
+        "label": "cash_conversion",
+        "ranking_query": "Does Meta advertising monetization convert to profit and cash or does capex absorb growth? Find concrete counterarguments for November stock rebound.",
+        "search_query": "Meta META earnings advertising AI capex free cash flow",
+        "sources": [
+          "reddit",
+          "youtube"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-03",
+  "range_to": "2026-11-02",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame",
+      "cluster_id": "cluster-1",
+      "engagement": 83,
+      "explanation": "fallback-local-score",
+      "final_score": 32.77612021857924,
+      "freshness": 90,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 37.610444566917835,
+      "item_id": "R9",
+      "local_relevance": 0.08,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R9",
+            "native_rank": 1,
+            "source": "reddit",
+            "subquery_label": "cash_conversion"
+          }
+        ],
+        "range_from": "2026-10-03",
+        "range_to": "2026-11-02",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "cash_conversion:reddit": 1
+      },
+      "rerank_score": 11.6,
+      "rrf_score": 0.00546448087431694,
+      "snippet": "To err is human, but to blame someone else shows management potential. \"Blame tech stocks for tech stock rout\" Genius \u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout\nTo err is human, but to blame someone else shows management potential. \"Blame tech stocks for tech stock rout\" Genius \u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills",
+          "container": "wallstreetbets",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 261,
+            "score": 1549
+          },
+          "engagement_score": 83,
+          "freshness": 90,
+          "item_id": "R9",
+          "local_rank_score": 0.36000000000000004,
+          "local_relevance": 0.08,
+          "metadata": {
+            "comment_insights": [
+              "To err is human, but to blame someone else shows management potential.",
+              "\"Blame tech stocks for tech stock rout\" Genius",
+              "\u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend t...",
+              "I mean Sundar and Zuck was saying they're gonna spend $600 billion dollars on AI at that tech dinner they had with Trump last year. It was true...",
+              "Finding fault is the first step in problem solving. \ud83d\udc4d",
+              "But they didn't expect that they would dilute shareholders or issue corporate bonds at 10% effective interest rate while going negative on FCF",
+              "No, we blame idiotic retail for holding on to their Tesla and SpaceX instead of buying these magnificent companies trading at discounts"
+            ],
+            "top_comments": [
+              {
+                "author": "Doughnutpower",
+                "date": "2026-10-30",
+                "excerpt": "To err is human, but to blame someone else shows management potential.",
+                "score": 1268,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvichr4siud/"
+              },
+              {
+                "author": "kylkartz21",
+                "date": "2026-10-30",
+                "excerpt": "\"Blame tech stocks for tech stock rout\" Genius",
+                "score": 374,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjvpd3eyqr/"
+              },
+              {
+                "author": "toydan",
+                "date": "2026-10-30",
+                "excerpt": "\u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills ",
+                "score": 293,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvhyp4x14kj/"
+              },
+              {
+                "author": "No-Paint-5726",
+                "date": "2026-10-30",
+                "excerpt": "I mean Sundar and Zuck was saying they're gonna spend $600 billion dollars on AI at that tech dinner they had with Trump last year. It was true...",
+                "score": 185,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvicbfiamht/"
+              },
+              {
+                "author": "AutisticGayBear69",
+                "date": "2026-10-30",
+                "excerpt": "Finding fault is the first step in problem solving. \ud83d\udc4d",
+                "score": 141,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvlypddj4h1/"
+              },
+              {
+                "author": "Soffatjockis",
+                "date": "2026-10-30",
+                "excerpt": "But they didn't expect that they would dilute shareholders or issue corporate bonds at 10% effective interest rate while going negative on FCF",
+                "score": 86,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvnptsmd4kk/"
+              },
+              {
+                "author": "approximately_exact",
+                "date": "2026-10-30",
+                "excerpt": "No, we blame idiotic retail for holding on to their Tesla and SpaceX instead of buying these magnificent companies trading at discounts",
+                "score": 70,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvj9ie1v71h/"
+              },
+              {
+                "author": "Icterus_Galbula",
+                "date": "2026-10-30",
+                "excerpt": "The street can get over it, or maybe they should hire actual researchers who can do the work for them. None of this is surprising if they had been monitoring the build out, which is showing no signs o",
+                "score": 61,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjjf9mmbmq/"
+              },
+              {
+                "author": "zxcvbnmqwerty12345",
+                "date": "2026-10-30",
+                "excerpt": "Almost a trillion dollar of capex is just crazy money.",
+                "score": 48,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvk0a6y7hi8/"
+              },
+              {
+                "author": "Neowarcloud",
+                "date": "2026-10-30",
+                "excerpt": "They are also driving the sky high valuations...",
+                "score": 42,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvhp5sryp2d/"
+              },
+              {
+                "author": "PLEASE_PUNCH_MY_FACE",
+                "date": "2026-10-30",
+                "excerpt": "Problem finding is the step first in fault solving.",
+                "score": 40,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvrhnyxxnj9/"
+              },
+              {
+                "author": "Moddingspreee",
+                "date": "2026-10-30",
+                "excerpt": "I also blame Joe Biden",
+                "score": 37,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvm0l6iatlx/"
+              }
+            ]
+          },
+          "published_at": "2026-10-30",
+          "relevance_hint": 0.14,
+          "snippet": "To err is human, but to blame someone else shows management potential. \"Blame tech stocks for tech stock rout\" Genius \u2018Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout",
+          "url": "https://www.reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "cash_conversion"
+      ],
+      "title": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout",
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund",
+      "cluster_id": "cluster-2",
+      "engagement": 75,
+      "explanation": "fallback-local-score",
+      "final_score": 30.132751322751325,
+      "freshness": 76,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 31.914658993092676,
+      "item_id": "R2",
+      "local_relevance": 0.08,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R2",
+            "native_rank": 3,
+            "source": "reddit",
+            "subquery_label": "cash_conversion"
+          }
+        ],
+        "range_from": "2026-10-03",
+        "range_to": "2026-11-02",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "cash_conversion:reddit": 3
+      },
+      "rerank_score": 11.6,
+      "rrf_score": 0.005291005291005291,
+      "snippet": "Why is dilution green now? This is why META is up pre-market in case anyone is wondering. Because company get money. Get money good.",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Meta launches $35 billion stock offering to fund AI expansion\nWhy is dilution green now? This is why META is up pre-market in case anyone is wondering. Because company get money. Get money good.",
+          "container": "wallstreetbets",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 141,
+            "score": 844
+          },
+          "engagement_score": 75,
+          "freshness": 76,
+          "item_id": "R2",
+          "local_rank_score": 0.317,
+          "local_relevance": 0.08,
+          "metadata": {
+            "comment_insights": [
+              "This is why META is up pre-market in case anyone is wondering.",
+              "Because company get money. Get money good.",
+              "It\u2019s all such a fake circlejerk lol",
+              "It went from -5% to +2% pre-market",
+              "Facebook : \u201cwe have no money. give us more money. Just give us $25 billion more dollar bro I swear Muse will be profitable if you give us $25 billion...",
+              "Tech has been crushed because people feared a lack of capital meant the music was about to stop. This shows a willingness to keep the music playing.",
+              "Hyperscalers and AI labs when they see more circular financing"
+            ],
+            "top_comments": [
+              {
+                "author": "Fortnait739595958",
+                "date": "2026-10-26",
+                "excerpt": "Why is dilution green now?",
+                "score": 429,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohkloihb7m/"
+              },
+              {
+                "author": "heisthemaincharacter",
+                "date": "2026-10-26",
+                "excerpt": "This is why META is up pre-market in case anyone is wondering.",
+                "score": 260,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpy9ewumd/"
+              },
+              {
+                "author": "ittrut",
+                "date": "2026-10-26",
+                "excerpt": "Because company get money. Get money good.",
+                "score": 189,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohnmdu5mv4/"
+              },
+              {
+                "author": "AmItheonlySaneperson",
+                "date": "2026-10-26",
+                "excerpt": "It\u2019s all such a fake circlejerk lol",
+                "score": 170,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohyruax79c/"
+              },
+              {
+                "author": "TeBp242",
+                "date": "2026-10-26",
+                "excerpt": "why the fuck is it up",
+                "score": 168,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohut0poao5/"
+              },
+              {
+                "author": "rebel-capitalist",
+                "date": "2026-10-26",
+                "excerpt": "It went from -5% to +2% pre-market",
+                "score": 136,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roheavbn2tc/"
+              },
+              {
+                "author": "bubblegum-rose",
+                "date": "2026-10-26",
+                "excerpt": "Facebook : \u201cwe have no money. give us more money. Just give us $25 billion more dollar bro I swear Muse will be profitable if you give us $25 billion more dollars\u201d Stock market: \u201c\ud83e\udd11\ud83e\udd11\ud83e\udd11 yes Mr. Zuck!!! W",
+                "score": 136,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpjausyrm/"
+              },
+              {
+                "author": "TheKingInTheNorth",
+                "date": "2026-10-26",
+                "excerpt": "Tech has been crushed because people feared a lack of capital meant the music was about to stop. This shows a willingness to keep the music playing.",
+                "score": 117,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roj5pxbwydh/"
+              },
+              {
+                "author": "_IsNull",
+                "date": "2026-10-26",
+                "excerpt": "Stop thinking logically.",
+                "score": 102,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohq70w36rl/"
+              },
+              {
+                "author": "Wooder__Ice",
+                "date": "2026-10-26",
+                "excerpt": "Hyperscalers and AI labs when they see more circular financing",
+                "score": 87,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roi7y4hlcsi/"
+              },
+              {
+                "author": "Fortnait739595958",
+                "date": "2026-10-26",
+                "excerpt": "That has always been the case, also that they are getting that money at your expense",
+                "score": 62,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpy94x98l/"
+              },
+              {
+                "author": "impulse07",
+                "date": "2026-10-26",
+                "excerpt": "Meta splitting the stock to offer non voting shares like your boy Elon does. Are they going to dilute non voting shares? Who knows. I'm staying away from this shit show.",
+                "score": 55,
+                "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohm4orzfnp/"
+              }
+            ]
+          },
+          "published_at": "2026-10-26",
+          "relevance_hint": 0.36,
+          "snippet": "Why is dilution green now? This is why META is up pre-market in case anyone is wondering. Because company get money. Get money good.",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Meta launches $35 billion stock offering to fund AI expansion",
+          "url": "https://www.reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "cash_conversion"
+      ],
+      "title": "Meta launches $35 billion stock offering to fund AI expansion",
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants",
+      "cluster_id": "cluster-3",
+      "engagement": 64,
+      "explanation": "fallback-local-score",
+      "final_score": 27.16205128205128,
+      "freshness": 80,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 28.43514411511726,
+      "item_id": "R3",
+      "local_relevance": 0.04,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R3",
+            "native_rank": 5,
+            "source": "reddit",
+            "subquery_label": "cash_conversion"
+          }
+        ],
+        "range_from": "2026-10-03",
+        "range_to": "2026-11-02",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "cash_conversion:reddit": 5
+      },
+      "rerank_score": 8.8,
+      "rrf_score": 0.005128205128205128,
+      "snippet": "With all these companies owning pieces of each other, how long until they are effectively one mega corp? What a beautiful circlejerk. $3 Billion\u2026 what is this, data center for ants?!",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership\nWith all these companies owning pieces of each other, how long until they are effectively one mega corp? What a beautiful circlejerk. $3 Billion\u2026 what is this, data center for ants?!",
+          "container": "stocks",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 76,
+            "score": 287
+          },
+          "engagement_score": 64,
+          "freshness": 80,
+          "item_id": "R3",
+          "local_rank_score": 0.29000000000000004,
+          "local_relevance": 0.04,
+          "metadata": {
+            "comment_insights": [
+              "With all these companies owning pieces of each other, how long until they are effectively one mega corp?",
+              "$3 Billion\u2026 what is this, data center for ants?!",
+              "Which will be too big to fail...",
+              "Which Meta will use it buy Nividia chips, and everything look perfect",
+              "This is like the equivalent of buying your buddy a single beer like how is this even news worthy",
+              "Does a seller investing in a customer ever end well?",
+              "Owning Nvidia is basically just investing into an ETF"
+            ],
+            "top_comments": [
+              {
+                "author": "ikefalcon",
+                "date": "2026-10-27",
+                "excerpt": "With all these companies owning pieces of each other, how long until they are effectively one mega corp?",
+                "score": 221,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9whta7kgw/"
+              },
+              {
+                "author": "CalebVanPoneisen",
+                "date": "2026-10-27",
+                "excerpt": "What a beautiful circlejerk.",
+                "score": 152,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9hj1kvtyd/"
+              },
+              {
+                "author": "questionname",
+                "date": "2026-10-27",
+                "excerpt": "$3 Billion\u2026 what is this, data center for ants?!",
+                "score": 113,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqajdf9ye76/"
+              },
+              {
+                "author": "BuzzerWhirr",
+                "date": "2026-10-27",
+                "excerpt": "Which will be too big to fail...",
+                "score": 91,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa7v11veqs/"
+              },
+              {
+                "author": "Rubricity",
+                "date": "2026-10-27",
+                "excerpt": "Which Meta will use it buy Nividia chips, and everything look perfect",
+                "score": 61,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9hxkvm1r6/"
+              },
+              {
+                "author": "vaticanhotline",
+                "date": "2026-10-27",
+                "excerpt": "Weyland-Yutani vibes.",
+                "score": 60,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa9azr2v6p/"
+              },
+              {
+                "author": "foundboots",
+                "date": "2026-10-27",
+                "excerpt": "This is like the equivalent of buying your buddy a single beer like how is this even news worthy",
+                "score": 47,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqe6xv48yn8/"
+              },
+              {
+                "author": "BuzzerWhirr",
+                "date": "2026-10-27",
+                "excerpt": "Does a seller investing in a customer ever end well? Giving them your money to buy your product? So you can give them more money to buy more of your product? Carlo Ponzi has entered the chat...",
+                "score": 44,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa1oecnyar/"
+              },
+              {
+                "author": "nightwica",
+                "date": "2026-10-27",
+                "excerpt": "Owning Nvidia is basically just investing into an ETF",
+                "score": 22,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqhf4n9i5ib/"
+              },
+              {
+                "author": "mikeydoc96",
+                "date": "2026-10-27",
+                "excerpt": "How many companies does Nvidia own shares in now? Must be near 25",
+                "score": 21,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa4x8ofi3o/"
+              },
+              {
+                "author": "ozthinker",
+                "date": "2026-10-27",
+                "excerpt": "They won't. $3b investment is small, compared to the amount being raised by Meta. Nvidia has been more careful in the past few months, not just for reducing the risk of circular financing, but also to",
+                "score": 16,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqi8414dx7k/"
+              },
+              {
+                "author": "RedshiftOnPandy",
+                "date": "2026-10-27",
+                "excerpt": "Why is Nvidia investing into Meta? Meta is selling data centre time now because no one uses their AI",
+                "score": 16,
+                "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa8cdl8h2d/"
+              }
+            ]
+          },
+          "published_at": "2026-10-27",
+          "relevance_hint": 0.27,
+          "snippet": "With all these companies owning pieces of each other, how long until they are effectively one mega corp? What a beautiful circlejerk. $3 Billion\u2026 what is this, data center for ants?!",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
+          "url": "https://www.reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "cash_conversion"
+      ],
+      "title": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
+      "url": "https://www.reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750",
+      "cluster_id": "cluster-4",
+      "engagement": 26,
+      "explanation": "fallback-local-score",
+      "final_score": 25.142083333333332,
+      "freshness": 83,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 14.549999999999999,
+      "item_id": "R15",
+      "local_relevance": 0.12,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R15",
+            "native_rank": 4,
+            "source": "reddit",
+            "subquery_label": "cash_conversion"
+          }
+        ],
+        "range_from": "2026-10-03",
+        "range_to": "2026-11-02",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "cash_conversion:reddit": 4
+      },
+      "rerank_score": 14.399999999999999,
+      "rrf_score": 0.005208333333333333,
+      "snippet": "Will the META stock ever recover back to over $750?",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Will the META stock ever recover back to over $750?",
+          "container": "MetaAI",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 15,
+            "score": 6
+          },
+          "engagement_score": 26,
+          "freshness": 83,
+          "item_id": "R15",
+          "local_rank_score": 0.3115,
+          "local_relevance": 0.12,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-28",
+          "relevance_hint": 0.15,
+          "snippet": "Will the META stock ever recover back to over $750?",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Will the META stock ever recover back to over $750?",
+          "url": "https://www.reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "cash_conversion"
+      ],
+      "title": "Will the META stock ever recover back to over $750?",
+      "url": "https://www.reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts",
+      "cluster_id": "cluster-5",
+      "engagement": 29,
+      "explanation": "fallback-local-score",
+      "final_score": 23.552626262626262,
+      "freshness": 63,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 10.35,
+      "item_id": "R13",
+      "local_relevance": 0.12,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R13",
+            "native_rank": 6,
+            "source": "reddit",
+            "subquery_label": "cash_conversion"
+          }
+        ],
+        "range_from": "2026-10-03",
+        "range_to": "2026-11-02",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "cash_conversion:reddit": 6
+      },
+      "rerank_score": 14.399999999999999,
+      "rrf_score": 0.00505050505050505,
+      "snippet": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+          "container": "ValueInvesting",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 17,
+            "score": 10
+          },
+          "engagement_score": 29,
+          "freshness": 63,
+          "item_id": "R13",
+          "local_rank_score": 0.26449999999999996,
+          "local_relevance": 0.12,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-22",
+          "relevance_hint": 0.15,
+          "snippet": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+          "url": "https://www.reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "cash_conversion"
+      ],
+      "title": "Meta Capex Is Bullish: My Take on Buffett\u2019s Investment Philosophy",
+      "url": "https://www.reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex",
+      "cluster_id": "cluster-6",
+      "engagement": 71,
+      "explanation": "fallback-local-score (entity-miss demotion)",
+      "final_score": 3.294086021505379,
+      "freshness": 83,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.75,
+      "item_id": "R1",
+      "local_relevance": 0.09,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R1",
+            "native_rank": 2,
+            "source": "reddit",
+            "subquery_label": "cash_conversion"
+          }
+        ],
+        "range_from": "2026-10-03",
+        "range_to": "2026-11-02",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "cash_conversion:reddit": 2
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.005376344086021505,
+      "snippet": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+          "container": "stocks",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 315,
+            "score": 872
+          },
+          "engagement_score": 71,
+          "freshness": 83,
+          "item_id": "R1",
+          "local_rank_score": 0.337,
+          "local_relevance": 0.09,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-28",
+          "relevance_hint": 0.42,
+          "snippet": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+          "url": "https://www.reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex/",
+          "why_relevant": "Reddit listing"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "cash_conversion"
+      ],
+      "title": "Alphabet\u2019s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+      "url": "https://www.reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex/"
+    }
+  ],
+  "source_status": {
+    "reddit": {
+      "at": "2026-11-02T08:10:23.763341Z",
+      "attempted": true,
+      "detail": "1 sub-request timed out",
+      "items_returned": 6,
+      "lane_failure_state": "timeout",
+      "source": "reddit",
+      "state": "ok"
+    },
+    "youtube": {
+      "at": "2026-11-02T08:10:23.763459Z",
+      "attempted": true,
+      "detail": "yt-dlp search failed: ERROR: [youtube] SmSKbhV0F2c: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "youtube",
+      "state": "rate-limited"
+    }
+  },
+  "topic": "Meta Platforms META stock November rebound advertising AI capex cash flow",
+  "warnings": [
+    "Top evidence is highly concentrated in one source.",
+    "Some sources failed: youtube"
+  ]
+}

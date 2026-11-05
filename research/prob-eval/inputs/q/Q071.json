@@ -1,0 +1,68 @@
+{
+ "qid": "Q071",
+ "question": "U.S. anti-cartel operation outside of the U.S. by July 31?",
+ "rules": "This market will resolve to \"Yes\" if U.S. government personnel (military, DEA, CIA, or any other agency) directly participate on the ground in an anti-cartel operation or conduct a kinetic strike directed against a cartel on foreign soil between market creation and the specified date, 11:59 PM ET. Otherwise, this market will resolve to “No”.\n\nU.S. personnel must directly participate to qualify. U.S. personnel involved in intelligence, surveillance, logistical, support, or advisory roles will not count.\n\nOnly direct U.S. participation, confirmed by the U.S. Government or by an overwhelming consensus of reporting, will count. For example, previous operations such as the 2014 capture of Joaquín \"El Chapo\" Guzmán, in which U.S. forces were rumored to have been embedded with Mexican Marines, would not qualify.\n\nThe primary resolution source for this market will be official statements from the U.S. government; however, an overwhelming consensus of reporting may also be used.",
+ "as_of": "2026-07-20",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "La Jornada",
+   "published_at": "2026-07-20",
+   "excerpt": "La presencia de agentes estadunidenses de inteligencia en México que no informaron su estancia al gobierno federal sólo se ha detectado en Chihuahua, reiteró la presidenta de México, Claudia Sheinbaum. Recordó que hay alrededor de 250 agentes en México, quienes cumplen con la Constitución y la ley nacional, pues han sido aprobados por un comité que revisa las solicitudes y cada mes estos agentes extranjeros de inteligencia o seguridad deben cumplir con un informe de su actuación en México."
+  },
+  {
+   "id": "E2",
+   "publisher": "U.S. Department of State / Federal Register",
+   "published_at": "2026-07-16",
+   "excerpt": "Therefore, I hereby designate the aforementioned organizations and their respective aliases as Foreign Terrorist Organizations pursuant to section 219 of the INA. These designations go into effect upon publication."
+  },
+  {
+   "id": "E3",
+   "publisher": "Reuters via Investing.com",
+   "published_at": "2026-05-28",
+   "excerpt": "Guatemala has requested U.S. military cooperation spanning access to equipment, training, and experts to assist Guatemalan operations against drug trafficking, President Bernardo Arevalo said on Thursday. The joint plans stopped short of U.S. military operations on Guatemalan soil and fall within existing bilateral agreements, the government noted. \"There is no agreement authorizing foreign military operations on national territory,\" the government said in a statement."
+  },
+  {
+   "id": "E4",
+   "publisher": "CNN via KVIA",
+   "published_at": "2026-05-12",
+   "excerpt": "Since last year, CIA operatives inside Mexico have directly participated in deadly attacks on several, mostly mid-level cartel members, the sources said. The level of CIA involvement with operations has varied, according to the sources, from more passive intelligence sharing and providing general support to direct participation in assassination operations. After publication, CIA spokesperson Liz Lyons released a statement to CNN saying, “This is false and salacious reporting that serves as nothing more than a PR campaign for the cartels and puts American lives at risk,” without specifying what aspect of the reporting is false."
+  },
+  {
+   "id": "E5",
+   "publisher": "Associated Press",
+   "published_at": "2026-04-21",
+   "excerpt": "Two U.S. officials killed in a vehicle crash as they returned from destroying a clandestine drug lab in northern Mexico over the weekend were working for the CIA, according to a U.S. official and two other people familiar with the matter. The U.S. Embassy declined Monday to identify the individuals or which entity of the U.S. government they worked for, but said the officials were \"supporting Chihuahua state authorities' efforts to combat cartel operations.\""
+  },
+  {
+   "id": "E6",
+   "publisher": "Cronkite News / Arizona PBS",
+   "published_at": "2026-04-17",
+   "excerpt": "On March 6, Ecuador bombed a site that officials there and in the U.S. described as a training camp for drug traffickers, using intelligence supplied by the U.S. Nearby residents later said the site was nothing more than a civilian farm. Secretary of Defense Pete Hegseth has said more such strikes are coming as part of the new anti-cartel U.S.-Ecuador effort."
+  },
+  {
+   "id": "E7",
+   "publisher": "Executive Office of the President / Federal Register",
+   "published_at": "2026-03-12",
+   "excerpt": "In furtherance of our efforts, the Secretary of War established the Americas Counter Cartel Coalition, a pledge from military leaders and representatives from 17 countries demonstrating that the region is ready to operationalize hard power to defeat these threats to our security and civilization. The United States will train and mobilize partner nation militaries to achieve the most effective fighting force necessary to dismantle cartels and their ability to export violence and pursue influence through organized intimidation."
+  },
+  {
+   "id": "E8",
+   "publisher": "Reuters via KELO-AM",
+   "published_at": "2026-03-06",
+   "excerpt": "The U.S. and Ecuador carried out a joint operation targeting drug trafficking operations in the South American country, authorities in both countries said on Friday, with the U.S. calling the move “lethal kinetic operations.” The operations used helicopters, aircraft, river boats and drones to locate and bomb a drug traffickers’ training camp in north-east Ecuador near the Colombian border, Ecuador’s defense ministry said in a statement. The camp belonged to the Comandos de la Frontera (CDF), a Colombian crime group made up of FARC dissidents, and had a capacity for 50 people, it added. “At the request of Ecuador, the Department of War executed targeted action to advance our shared objective of dismantling narco-terrorist networks,” Pentagon spokesman Sean Parnell wrote on X."
+  },
+  {
+   "id": "E9",
+   "publisher": "U.S. Southern Command",
+   "published_at": "2026-03-03",
+   "excerpt": "On March 3, Ecuadorian and U.S. military forces launched operations against Designated Terrorist Organizations in Ecuador. The operations are a powerful example of the commitment of partners in Latin America and the Caribbean to combat the scourge of narco-terrorism."
+  },
+  {
+   "id": "E10",
+   "publisher": "ABC News",
+   "published_at": "2026-03-03",
+   "excerpt": "The U.S. military's role in the joint mission was the presence of military advisors in Ecuador who provided planning, intelligence, and operational support in preparation for the mission, a source familiar with the operation told ABC News. They advised Ecuadorian forces, but they did not participate in the actual ground and airlift operation, which was carried out by Ecuadorian forces, the source said."
+  }
+ ]
+}

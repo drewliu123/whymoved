@@ -1,0 +1,38 @@
+{
+  "qid": "Q124",
+  "as_of": "2026-08-07",
+  "kept": [
+    {
+      "excerpt": "Governor Gavin Newsom today issued a proclamation setting a special election on August 18, 2026 to fill the Congressional seat for the fourteenth congressional district. The proclamation states that the election will fill the vacancy resulting from the resignation of Representative Eric Swalwell.",
+      "published_at": "2026-04-14",
+      "publisher": "Office of the Governor of California",
+      "relevance": "Establishes the official election date and the vacancy covered by Q124.",
+      "url": "https://www.gov.ca.gov/2026/04/14/governor-newsom-issues-proclamation-setting-special-election-for-california-congressional-district-14/"
+    },
+    {
+      "excerpt": "Mail-in voting is underway for the Aug. 18 special general election between Democrats BART Board President Melissa Hernandez and State Senator Aisha Wahab to fill the 14th Congressional District seat until January 2027. Ballots are due in person or postmarked by Aug. 18. The boundaries for the November 3 election will be different because the district lines were redrawn under Proposition 50.",
+      "published_at": "2026-07-30",
+      "publisher": "The Independent — Jessica Zimmer",
+      "relevance": "Documents that voting was already underway and identifies a district-boundary difference that limits comparisons with the November contest.",
+      "url": "https://www.independentnews.com/news/regional_and_ca/hernandez-and-wahab-ramp-up-efforts-to-win-over-d-14-voters-on-august-18/article_ee088f36-efdd-4b81-9d95-342ab095b0b8.html"
+    },
+    {
+      "excerpt": "Super PACs tied to the American Israel Public Affairs Committee have spent millions in a California congressional race to keep a progressive Democrat from winning Eric Swalwell’s former seat. Aisha Wahab, a state senator who has been endorsed by the California Democratic party, is widely considered the frontrunner in the special election for the district covering a swathe of the East Bay.",
+      "published_at": "2026-08-06",
+      "publisher": "The Guardian — Dani Anguiano, syndicated by inkl",
+      "relevance": "Provides a near-cutoff assessment of Wahab’s standing while identifying substantial outside spending as a challenge to her campaign.",
+      "url": "https://www.inkl.com/news/aipac-linked-super-pacs-spend-millions-in-california-to-thwart-progressive-candidate"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://apnews.com/article/951f9d3fb1ffee327280ac83b94f109e",
+      "reason": "Reports primary-election results, including the top two finishers and advancement to the runoff; excluded under the explicit rule removing items that mention results."
+    },
+    {
+      "url": "https://jewishinsider.com/2026/08/aipac-united-democracy-project-aisha-wahab-california-michelle-hernandez/",
+      "reason": "Reports special and regular primary-election results with vote percentages; excluded under the explicit rule removing items that mention results."
+    }
+  ],
+  "search_notes": "Evidence cutoff: 2026-08-07, inclusive. Included only dated publications at or before the cutoff; excluded later reporting, outcome information, prediction-market pages, and betting prices. Publication dates were verified through indexed article text, publisher archives, or syndication metadata; The Independent's July 30 date was additionally corroborated by its author's indexed publication profile. web_fetch failed because of a provider-configuration error, and the requested agent-reach fallback returned a web-channel rate limit, so evidence relies on web_search-indexed source passages and dated syndicated copies rather than independently retrieved full-page snapshots. Excerpts are factual passages or lightly normalized factual condensations. No eligible public poll was verified in this search. This is a cutoff-filtered evidence selection, not a claim that archived page versions were captured on August 7."
+}

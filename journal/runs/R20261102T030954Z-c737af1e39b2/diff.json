@@ -1,0 +1,49 @@
+{
+  "claims": {
+    "added": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9"
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "comparability_issues": [],
+  "evidence": {
+    "added": [
+      "M-S1",
+      "M-S2",
+      "M-S3",
+      "M-S4"
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "judgment": {
+    "comparability": {
+      "reason": "沿用同一10月市场窗口，研究任务从变化解释扩展机制研究；新增政策情景不是已发生事件。",
+      "status": "mixed"
+    },
+    "judgment_changed": true,
+    "reason": "修正财报触发因素占据解释主体的缺口，补充战争/能源通胀/政治情景机制；不提高未经识别的因果确定性。"
+  },
+  "method": "structural_ids_and_fields",
+  "parent_run": "R20261102T030116Z-228fb61e7831",
+  "schema_version": 2,
+  "sources": {
+    "added": [
+      "M-S1",
+      "M-S2",
+      "M-S3",
+      "M-S4"
+    ],
+    "changed": [],
+    "removed": []
+  }
+}

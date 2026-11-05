@@ -1,0 +1,165 @@
+{
+  "question": "NVDA 10月跌了多少，怎样区分增长、盈利与现金回收？现有材料能解释多少跌幅？",
+  "as_of": "2026-10-31T17:14:08Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "NVDA最近已收盘日为2026-10-30，收204.64美元；9月30日228.38美元，10月价格累计变化-10.39%（204.64/228.38-1）；10月23日210.96美元，最后一周-3.00%；10月29日213.66美元，最后一天-4.22%。均为收盘价格收益，不含股息。",
+      "type": "price",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+          "publisher": "NVIDIA IR / Q4 historical quote service",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "collected_at": "2026-10-31T12:31:54Z",
+          "local_evidence": "inputs/historical.json",
+          "note": "获取于本轮截点之前；本例复用旧归档，不是新检索。"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "完整10月日行情中最高盘中价为10月6日243.37美元，至月末回撤15.91%；该日239.24美元也是月内最高收盘价，至月末收盘回撤14.46%。10月先涨后跌，不能把高点回撤当作整月跌幅。",
+      "type": "price",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+          "publisher": "NVIDIA IR / Q4 historical quote service",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "collected_at": "2026-10-31T12:31:54Z",
+          "local_evidence": "inputs/historical.json",
+          "note": "获取于本轮截点之前；本例复用旧归档，不是新检索。"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "NVIDIA 8月26日公布FY2027 Q2（截至7月26日）：总收入962.21亿美元，环比18%、同比106%；数据中心收入890亿美元，环比18%、同比117%；GAAP和non-GAAP毛利率均75.0%。这是本轮已取得的季度财务基准，不能据此声称10月经营现状已确认。 同份财报直接披露GAAP毛利额721.42亿美元。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "local_evidence": "inputs/newsroom.txt"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "同一官方财报给FY2027 Q3总收入指引1080亿美元±2%，不假设来自中国的数据中心计算收入；GAAP和non-GAAP毛利率指引均74.0%±50基点。指引是管理层预期，不是已实现收入。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "local_evidence": "inputs/newsroom.txt"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "Reuters 10月30日收盘报道把科技股抛售联系到Amazon和Intel季报失望及AI巨额投入回报担忧，并记录NVDA当日跌4.2%；Wealthspire的Oliver Pursche表示本周焦点是AI何时取得正回报。这里只保留该媒体及受访者归因，不外推为整月已证实因果。",
+      "type": "view",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [
+        {
+          "url": "https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html",
+          "publisher": "Reuters via AOL",
+          "tier": "T2",
+          "published_at": "2026-10-30T20:23:00Z",
+          "date_kind": "update_time; first_publication_unconfirmed",
+          "local_evidence": "inputs/media.txt"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "FY2027 Q2经营现金流240.77亿美元，半年累计744.21亿美元；Q2应收账款变动占用现金223.46亿美元。",
+      "type": "fact",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "local_evidence": "inputs/newsroom.txt"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "Q3收入指引中点较Q2高约12.24%；以两项指引中点相乘，Q3示例毛利额799.2亿美元，Q2直接披露GAAP毛利额721.42亿美元，增约10.78%。这不是已实现利润，也不是股价回报预测。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "Q2经营现金流/收入约25.02%；从半年减Q2得到Q1经营现金流503.44亿美元，同期收入816.15亿美元，该比值约61.68%。单季变动受营运资本及其他现金流项目影响，应收占用不等于坏账。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C6"
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "这批材料更适合检验增长兑现、利润和现金回收的质量，尚不足以把10月跌幅判定为订单恶化。最后交易日的AI投入回报担忧有媒体归因支持，全月相对表现、估值与预期修订仍缺资料，不能识别整月主因。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [],
+      "basis": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "最强反方是客户投入回报担忧可能不影响近期GPU采购，收入与毛利额仍能扩张；板块共同重估也可能解释部分回撤，不能只寻找公司特有原因。另一种路径是公司兑现原指引但低于股票隐含要求；区分这些解释需要冻结时点的行业比较、一致预期与估值。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C5",
+        "C7"
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "下一次应同口径检查收入对原指引区间的兑现、后续指引、毛利额和现金回收，而不能以单个季度现金流变化直接认定需求失效。",
+      "type": "inference",
+      "as_of": "2026-10-31T17:14:08Z",
+      "sources": [],
+      "basis": [
+        "C3",
+        "C4",
+        "C6",
+        "C7",
+        "C8"
+      ]
+    }
+  ]
+}

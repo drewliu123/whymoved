@@ -1,0 +1,132 @@
+{
+  "analysis_version": 1,
+  "as_of": "2026-11-02T03:31:35.565610+00:00",
+  "budget": {
+    "max_followups": 2,
+    "max_queries": 16
+  },
+  "comparison": {
+    "period": "2026-09-30至2026-10-30收盘；单日10-29至10-30",
+    "scope": "CRCL、COIN、SPY；非总回报",
+    "unit": "USD及价格收益率"
+  },
+  "decision_needed": "区分已披露经营压力、行业事件与估值叙事，确定下一观察",
+  "entity": "Circle Internet Group / NYSE:CRCL",
+  "historical": false,
+  "hypotheses": [
+    {
+      "discriminating_observation": "同期相对表现与公司事件",
+      "explanation": "Circle经营增长与利润留存压力",
+      "id": "H1"
+    },
+    {
+      "discriminating_observation": "安全事件及同日共同下跌",
+      "explanation": "加密行业安全事件与市场风险偏好共振",
+      "id": "H2"
+    },
+    {
+      "discriminating_observation": "具名机构修订与实际股票供给",
+      "explanation": "估值叙事及股票供给放大价格反应",
+      "id": "H3"
+    }
+  ],
+  "prior_judgment": "首次研究",
+  "queries": [
+    {
+      "purpose": "检验共同波动",
+      "query": "CRCL COIN SPY October 2026 historical prices",
+      "question": "实际跌幅与基准",
+      "source": "S&P Global价格经StockAnalysis展示",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "purpose": "检验规模到利润传导及同季事前共识",
+      "query": "Circle second quarter 2026 results reserve income distribution costs analyst consensus",
+      "question": "经营与预期",
+      "source": "Circle/SEC及预期提供方",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "purpose": "核查事件先后及替代解释",
+      "query": "Circle October 2026 Binance security incident insider selling Mizuho",
+      "question": "近期事件",
+      "source": "Reuters、Circle、具名机构报道",
+      "test_ids": [
+        "T1",
+        "T3"
+      ]
+    }
+  ],
+  "question": "CRCL近期为什么剧烈波动，经营变化还是行业共振？",
+  "research_design": {
+    "baseline": "2026-09-30与10-30同期收盘；COIN与SPY为参照，Q2财报为经营基准",
+    "discrimination_tests": [
+      {
+        "by": "本轮",
+        "id": "T1",
+        "observe": "CRCL与COIN及SPY同月和事件日表现",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "CRCL在公司坏消息后明显独立走弱"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "加密相关股同时下跌并强于大盘跌幅"
+          }
+        ],
+        "source": "同期历史收盘与新闻时间线"
+      },
+      {
+        "by": "本轮及Q3财报",
+        "id": "T2",
+        "observe": "最新披露USDC、储备收入与净留存变化",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "规模增加但单位收益下降或留存增长落后"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "经营增长稳定而价格主要受叙事和交易供给冲击"
+          }
+        ],
+        "source": "Circle季度业绩"
+      },
+      {
+        "by": "本轮",
+        "id": "T3",
+        "observe": "事件窗口内公司增发、减持及叙事修订的可核查证据",
+        "outcomes": [
+          {
+            "hypothesis_id": "H3",
+            "prediction": "存在与价格转折匹配的新增供给或明确估值修订"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "主要新消息为共同风险事件，没有足够公司独立证据"
+          }
+        ],
+        "source": "公司公告、SEC及具名机构原文"
+      }
+    ],
+    "mechanism_chain": [
+      "USDC平均余额与储备利率",
+      "储备收益与分销成本",
+      "净留存利润预期",
+      "股价"
+    ],
+    "method": "comparative_attribution",
+    "price_relevance": true,
+    "question_kind": "change_explanation",
+    "rationale": "主要问题是解释实际波动，不作目标价预测"
+  },
+  "schema_version": 2,
+  "stop_condition": "取得可比价格和官方经营数据，或披露无法补足的因果与预期缺口",
+  "task": "变化解释",
+  "type": "asset"
+}

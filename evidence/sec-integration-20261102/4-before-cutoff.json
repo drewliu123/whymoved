@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "provider": "edgartools",
+  "adapter_version": 1,
+  "operation": "document",
+  "params": {
+    "operation": "document",
+    "as_of": "2026-08-26T20:35:59Z",
+    "accession": "0001045810-26-000075",
+    "section": "mda",
+    "item": null,
+    "attachment": null
+  },
+  "retrieved_at": "2026-11-02T09:37:50.245792Z",
+  "status": "no_results",
+  "data": null,
+  "provenance": {
+    "company": "NVIDIA CORP",
+    "cik": "1045810",
+    "accession_number": "0001045810-26-000075",
+    "form": "10-Q",
+    "filing_date": "2026-08-26",
+    "period_of_report": "2026-07-26",
+    "acceptance_datetime": "2026-08-26T20:36:00Z",
+    "acceptance_raw_eastern": "2026-08-26 16:36:00",
+    "acceptance_basis": "filing SGML header; America/New_York converted to UTC",
+    "acceptance_header_line": "ACCEPTANCE-DATETIME:            2026-08-26 16:36:00",
+    "acceptance_header_line_is_normalized": true,
+    "sec_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/0001045810-26-000075-index.html",
+    "sec_submission_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/0001045810-26-000075.txt",
+    "primary_document": "nvda-20260726.htm",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+    "amendment": false,
+    "origin_id": "sec:0001045810-26-000075",
+    "attachments": [
+      {
+        "document": "nvda-20260726.htm",
+        "document_type": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "description": "10-Q"
+      },
+      {
+        "document": "nvda2027q2ex101.htm",
+        "document_type": "EX-10.1",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda2027q2ex101.htm",
+        "description": "EX-10.1"
+      },
+      {
+        "document": "nvda2027q2ex311.htm",
+        "document_type": "EX-31.1",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda2027q2ex311.htm",
+        "description": "EX-31.1"
+      },
+      {
+        "document": "nvda2027q2ex312.htm",
+        "document_type": "EX-31.2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda2027q2ex312.htm",
+        "description": "EX-31.2"
+      },
+      {
+        "document": "nvda2027q2ex321.htm",
+        "document_type": "EX-32.1",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda2027q2ex321.htm",
+        "description": "EX-32.1"
+      },
+      {
+        "document": "nvda2027q2ex322.htm",
+        "document_type": "EX-32.2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda2027q2ex322.htm",
+        "description": "EX-32.2"
+      }
+    ],
+    "primary_content_sha256": "0a699e858f01840c18ffa7d807d0498b748dd0ed732b933420965e0ff9e7ed23",
+    "primary_content_hash_basis": "EdgarTools primary attachment decoded content, re-encoded UTF-8"
+  },
+  "completeness": {
+    "truncated": false,
+    "availability_verified": false,
+    "excluded_by_as_of": true
+  },
+  "notes": [
+    "Retrieval package, not sources/claims or independent corroboration.",
+    "Report period is not public availability; retain exact accession and original periods."
+  ],
+  "library_version": "5.62.1",
+  "reason": "accepted_after_cutoff"
+}

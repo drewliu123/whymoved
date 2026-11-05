@@ -1,0 +1,69 @@
+{
+  "checks": [
+    {
+      "check": "required_report_fields",
+      "passed": true
+    },
+    {
+      "check": "claim_references_exist",
+      "passed": true
+    },
+    {
+      "check": "all_substantive_text_in_md_and_html",
+      "passed": true
+    },
+    {
+      "check": "all_table_cells_in_md_and_html",
+      "passed": true
+    },
+    {
+      "check": "html_claim_anchors",
+      "passed": true
+    },
+    {
+      "check": "original_cutoff_preserved",
+      "passed": true
+    },
+    {
+      "check": "original_freeze_before_search",
+      "passed": true
+    },
+    {
+      "check": "six_T0_and_BLS_failures",
+      "passed": true
+    },
+    {
+      "check": "official_quotes_match",
+      "passed": true
+    },
+    {
+      "check": "reference_sum_and_spreads_recomputed",
+      "passed": true
+    },
+    {
+      "check": "top_notionals_recomputed",
+      "passed": true
+    },
+    {
+      "check": "fallback_reference_point_and_date_limit_explicit",
+      "passed": true
+    },
+    {
+      "check": "single_month_demand_limit_explicit",
+      "passed": true
+    },
+    {
+      "check": "falsifiable_center_scenario_and_qualitative_limits",
+      "passed": true
+    },
+    {
+      "check": "trade_conflict_explicit",
+      "passed": true
+    },
+    {
+      "check": "independent_probability_null",
+      "passed": true
+    }
+  ],
+  "exit_code": 0
+}

@@ -1,0 +1,25 @@
+{
+  "version": "0.3.1",
+  "path": "delivery/touyan-0.3.1-source.zip",
+  "sha256": "d0cd34999b5752ca9448042668b354c8fa1d785dbbd612b7713ab8485efd0a5a",
+  "bytes": 93231,
+  "files": 29,
+  "changed_from_0.3.0": [
+    ".claude-plugin/marketplace.json",
+    ".claude-plugin/plugin.json",
+    "README.md",
+    "agents/red-team.md",
+    "skills/research/SKILL.md",
+    "skills/research/references/memo-template.md"
+  ],
+  "checks": [
+    "six-file diff reviewed",
+    "version metadata parsed",
+    "zip integrity passed",
+    "scripts and tests byte-identical to 0.3.0",
+    "protected ledger hashes unchanged"
+  ],
+  "tests": "not rerun: prompt/documentation and version metadata only; 0.3.0 test record remains historical",
+  "model_behavior_evaluation": "not run",
+  "installed_cache_updated": false
+}

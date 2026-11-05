@@ -1,0 +1,50 @@
+{
+ "qid": "Q057",
+ "question": "Will any AI model reach 1510 Overall Arena Score by September 30, 2026?",
+ "rules": "This market will resolve to \"Yes\" if any model on the Arena.AI Leaderboard (arena.ai/leaderboard/text) reaches at least the specified Arena Score by September 30, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nResults from the \"Score\" column under the \"Text Arena | Overall\" Leaderboard tab at https://lmarena.ai/leaderboard/text with style control off will be used to resolve this market.\n\nThe resolution source for this market is the Chatbot Arena LLM Leaderboard found at arena.ai/leaderboard/text. If this resolution source is unavailable at check time, this market will remain open until the leaderboard comes back online and will resolve based on the first check after it becomes available. If permanently unavailable, this market will resolve to \"No\".",
+ "as_of": "2026-07-13",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "ReadyTools",
+   "published_at": "2026-07-03",
+   "excerpt": "As of early July 2026, Claude Fable 5 was described as the highest-rated model overall, with an approximately 1509 Arena score. Claude Opus 4.6–4.8 Thinking variants were described as extremely close behind Fable 5."
+  },
+  {
+   "id": "E2",
+   "publisher": "Arena",
+   "published_at": "2026-07-10",
+   "excerpt": "The July 10, 2026 changelog entry states that muse-spark-1.1 was added to the Text Arena and Code Arena leaderboards. The July 2 entry states that claude-sonnet-5-thinking was added to Code Arena, Text Arena, Search Arena, Vision Arena, and Document Arena leaderboards."
+  },
+  {
+   "id": "E3",
+   "publisher": "Anthropic",
+   "published_at": "2026-06-30",
+   "excerpt": "As of June 30, the export controls on Fable 5 and Mythos 5 had been lifted. Anthropic said Fable 5 would be available globally starting July 1 on the Claude Platform, Claude.ai, Claude Code, and Claude Cowork. A July 1 update states that access to Claude Fable 5 and Mythos 5 was restored."
+  },
+  {
+   "id": "E4",
+   "publisher": "Anthropic",
+   "published_at": "2026-06-09",
+   "excerpt": "Anthropic launched Claude Fable 5 on June 9, describing it as a Mythos-class model made safe for general use. Anthropic stated that its capabilities exceeded those of any model the company had previously made generally available and that it was state-of-the-art on nearly all tested AI capability benchmarks."
+  },
+  {
+   "id": "E5",
+   "publisher": "OpenAI",
+   "published_at": "2026-07-09",
+   "excerpt": "GPT-5.6 is a new family of three models: Sol, OpenAI's new flagship model; Terra, a capable lower-cost option; and Luna, its fastest and most cost-efficient model. OpenAI published the family’s system card on July 9, 2026."
+  },
+  {
+   "id": "E6",
+   "publisher": "Arena",
+   "published_at": "2026-04-02",
+   "excerpt": "Arena released the full history of its published leaderboards as a public-access dataset. The release covered 14 subsets across 10 arenas, including separate variants with and without style control, and included a leaderboard publication date for each entry. Arena reported that the mean score of the leading Text Arena models had risen from a little over 1,000 in May 2023 to nearly 1,500."
+  },
+  {
+   "id": "E7",
+   "publisher": "Arena",
+   "published_at": "2025-12-18",
+   "excerpt": "Arena published Arena-Rank, an open-source Python package that powers its leaderboard. Its example fits a Bradley–Terry ranking model and prints ratings and confidence intervals. Arena said the implementation used closed-form confidence intervals instead of bootstrap intervals."
+  }
+ ]
+}

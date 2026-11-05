@@ -1,0 +1,59 @@
+{
+  "qid": "Q043",
+  "as_of": "2026-09-17",
+  "kept": [
+    {
+      "excerpt": "Russian forces continued limited offensive operations west and south of Orikhiv on September 16 and 17 but did not advance.",
+      "published_at": "2026-09-17T23:39:16-04:00",
+      "publisher": "Institute for the Study of War (ISW)",
+      "relevance": "The latest eligible ISW daily assessment provides immediate local battlefield status, although its prose does not establish the specified intersection's map shading.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-17-2026/"
+    },
+    {
+      "excerpt": "Russian forces recently advanced southwest of Orikhiv. Russian forces advanced in southeastern Novoandriivka (west of Orikhiv), according to geolocated footage published on September 16.",
+      "published_at": "2026-09-16T22:10:14-04:00",
+      "publisher": "Institute for the Study of War (ISW)",
+      "relevance": "This documents a confirmed advance on the opposite flank of nearby Orikhiv, relevant to pressure on the broader defensive position around Mala Tokmachka.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-16-2026/"
+    },
+    {
+      "excerpt": "A Kremlin-affiliated milblogger claimed that the Russian Dnepr GoF recently advanced in Mala Tokmachka (southeast of Orikhiv), that this advance will enable Russian infiltrations toward Preobrezhenka (just north of Orikhiv), and that the Russian Eastern GoF is supporting these efforts by outflanking Ukrainian forces near Chervona Krynytsya (southwest of Hulyaipole and northeast of Orikhiv). The two GoFs are likely attempting to converge on Ukrainian forces from the western and eastern flanks to seize Orikhiv and subsequently push toward Zaporizhzhia City from the southeast.",
+      "published_at": "2026-09-15T22:57:06-04:00",
+      "publisher": "Institute for the Study of War (ISW)",
+      "relevance": "This identifies a recent claim of advances inside Mala Tokmachka and the operational objective behind them, while preserving ISW's attribution of the advance to a Russian source.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-15-2026/"
+    },
+    {
+      "excerpt": "Russian forces additionally infiltrated into southern Preobrazhenka (immediately north of Orikhiv), central Mala Tokmachka, and northern Chervona Krynytsia (northeast of Orikhiv), according to geolocated footage published on September 12 and 13. Mashovets indicated that Russian forces made these tactically significant gains in the Orikhiv direction prior to September 1 but stated that Russian forces have since failed to exploit these gains.",
+      "published_at": "2026-09-13T21:52:08-04:00",
+      "publisher": "Institute for the Study of War (ISW)",
+      "relevance": "Geolocated infiltration into central Mala Tokmachka is directly relevant, but infiltration alone is explicitly excluded by the market's qualifying-layer rules.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-13-2026/"
+    },
+    {
+      "excerpt": "The head of communications of Ukraine's 154th Mechanized Brigade, Orest Drymalovskyi, said Russian assaults in the Hulyaipole direction had decreased from 20–30 per day to about 10 because of losses. He said Russian troops conducted assaults on foot in groups of two or three soldiers, sometimes individually, seeking to infiltrate between Ukrainian positions and accumulate in areas they could reach.",
+      "published_at": "2026-09-13",
+      "publisher": "ArmyInform (Ukrainian Ministry of Defense news agency)",
+      "relevance": "This attributed Ukrainian military account provides nearby-axis evidence about assault tempo and infiltration tactics that could affect Russia's ability to consolidate territorial gains.",
+      "url": "https://armyinform.com.ua/2026/09/13/myaso-zakinchuyetsya-rosiyany-zmusheni-zmenshyty-nastupalnu-aktyvnist-na-pivdni/"
+    },
+    {
+      "excerpt": "A Russian milblogger claimed on September 11 that Russian forces are attempting to encircle and assault Orikhiv. The milblogger claimed that elements of the Russian Dnepr Grouping of Forces shifted their assaults towards Preobrazhenka (just northeast of Orikhiv) and secured positions near Novopavlivka (northwest of Orikhiv) and Mala Tokmachka (southeast of Orikhiv) as part of Russia’s encirclement efforts. Another Russian milblogger claimed that Ukrainian fortifications are impeding Russian offensive operations east and southeast of Orikhiv.",
+      "published_at": "2026-09-11T22:08:51-04:00",
+      "publisher": "Institute for the Study of War (ISW)",
+      "relevance": "This records both claimed Russian positioning near Mala Tokmachka and reported defensive obstacles before the cutoff.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-11-2026/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.osw.waw.pl/en/publikacje/analyses/2026-09-15/russians-are-launching-attack-along-border-poland-day-1665-war",
+      "reason": "Outcome-revealing capture/control claim: the excerpt states that Mala Tokmachka has come under Russian control according to some sources. Removed under the instruction to exclude outcome-revealing material, even though the claim is attributed and predates the cutoff."
+    },
+    {
+      "url": "https://notes.citeam.org/dispatch-aug-31-sep-3-2026",
+      "reason": "Outcome-revealing capture claim: the excerpt explicitly references Russian Ministry of Defense claims of capturing Mala Tokmachka in the previous year. Removed under the instruction to exclude outcome-revealing material, even though the claim is attributed and predates the cutoff."
+    }
+  ],
+  "search_notes": "Frozen cutoff: September 17, 2026, interpreted through 23:59 Eastern Time, consistent with the question's ET convention. ISW publication metadata was converted from UTC to America/New_York: the September 17 assessment was published September 18 at 03:39:16 UTC, which is September 17 at 23:39:16 EDT and therefore eligible under that convention. Searches used web_search; web_fetch failed because multiple fetch providers were registered, so full ISW and CIT texts were read using the agent-reach web skill. OSW's direct read returned a CAPTCHA; its dated article text was available in web_search. ArmyInform passages are translated into English, and CIT passages are condensed factual paraphrases. Search results dated after the cutoff were excluded; no prediction-market pages, odds, or prices are included. Claims are retained as attributed claims. The specified intersection at 47.540813 N, 35.885706 E and persistence through the next finalized ISW update were not independently verified against archived interactive-map layers; these articles do not establish whether a qualifying capture condition had already been met. The market-creation date was not supplied, and the provided resolution text ends mid-sentence, limiting assessment of historical qualifying events and any omitted rule."
+}

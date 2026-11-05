@@ -1,0 +1,44 @@
+{
+ "qid": "Q029",
+ "question": "Will voter turnout be between 47% and 50% in the 2026 Russian parliamentary election?",
+ "rules": "Parliamentary elections are scheduled to be held in Russia in September 2026.\n\nThis market will resolve according to the official voter turnout rate for the 2026 Russia Parliamentary election, defined as the total number of votes cast divided by the total number of eligible voters.\n\nIf the reported value falls exactly between two brackets, this market will resolve to the higher bracket.\n\nIf the results of this election are not known by October 31, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThe primary resolution source for this market will be official election results reported by Russian government sources such as the Central Election Commission of the Russian Federation; however, a consensus of credible reporting may also be used if official results are not available.",
+ "as_of": "2026-09-11",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Russian Public Opinion Research Center (VTsIOM)",
+   "published_at": "2026-09-10",
+   "excerpt": "VTsIOM forecasts turnout in the forthcoming State Duma election at 51–53%. In polling conducted August 31–September 6, 2026, 54% said they would participate and another 16% said they probably would. The turnout model incorporates awareness, interest in the election, voting motivation and other circumstances, with coefficients calibrated using expert surveys."
+  },
+  {
+   "id": "E2",
+   "publisher": "Public Opinion Foundation (FOM)",
+   "published_at": "2026-09-10",
+   "excerpt": "According to the survey, 70% of citizens plan to participate in the forthcoming State Duma election: 44% are certain, 13% say they are more likely to participate than not, and another 13% say they will probably participate. Fieldwork took place September 4–6, 2026, among 1,500 respondents in 97 urban and rural settlements across 51 Russian federal subjects. The stated statistical error does not exceed 3.6%."
+  },
+  {
+   "id": "E3",
+   "publisher": "Meduza",
+   "published_at": "2026-08-25",
+   "excerpt": "Russia’s Presidential Administration plans to intensify “corporate mobilization” for the State Duma election, pressuring employees of state-funded institutions, state corporations and major companies with owners loyal to the authorities to vote. Mid-level managers designated as “mobilizers” or “brigade leaders” will oversee groups of several dozen employees and track whether they vote. The tactic previously operated in a more limited set of regions and companies."
+  },
+  {
+   "id": "E4",
+   "publisher": "Meduza",
+   "published_at": "2026-09-08",
+   "excerpt": "The Presidential Administration has raised the election-performance targets assigned to regional officials for United Russia. In regions with average support for the authorities, the party’s vote-share target increased from 45% to 47%. At large workplaces, designated “mobilization foremen” are responsible for tracking turnout among groups ranging from ten to several dozen colleagues."
+  },
+  {
+   "id": "E5",
+   "publisher": "Interfax, reporting the Central Election Commission",
+   "published_at": "2021-09-24",
+   "excerpt": "Final turnout in the September 17–19, 2021, State Duma election was 51.72%, Central Election Commission chair Ella Pamfilova announced. She said 56,484,685 voters participated out of 109,204,662 people included on voter lists."
+  },
+  {
+   "id": "E6",
+   "publisher": "RBC, citing TASS and the Central Election Commission",
+   "published_at": "2016-09-23",
+   "excerpt": "Turnout in the 2016 State Duma election was 47.88%, Central Election Commission deputy chair Nikolai Bulaev said at the meeting finalizing the election results. Of 110,061,200 people on voter lists, 52,700,992 participated."
+  }
+ ]
+}

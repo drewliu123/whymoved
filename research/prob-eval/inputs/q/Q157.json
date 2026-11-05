@@ -1,0 +1,44 @@
+{
+ "qid": "Q157",
+ "question": "Will the Toronto Blue Jays clinch a spot in the 2026 MLB Postseason?",
+ "rules": "This market will resolve to \"Yes\" if the listed team clinches a spot in the 2026 MLB Playoffs per the rules of the MLB. Otherwise, the associated market will resolve to \"No\".\n\nIf at any point it becomes impossible for the listed team to advance to the 2026 MLB Playoffs (e.g. they are mathematically eliminated), the associated market will resolve to \"No\". Any tiebreaker or “Game 163” will not be considered part of the MLB Playoffs.\n\nIf the 2026 MLB Playoffs are cancelled, postponed to begin after October 31, 2026 11:59 PM ET, or the full 12-team playoff field has not been officially confirmed by MLB within that timeframe, this market will resolve to \"No\".\n\nThe resolution source for this market will be official information from the MLB and/or the clinching team; however, a consensus of credible reporting may also be used.",
+ "as_of": "2026-09-10",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Yahoo Sports — Randy Miller",
+   "published_at": "2026-09-10",
+   "excerpt": "Toronto was 73-74, fourth in the AL Wild Card standings and one game behind Cleveland for the final Wild Card berth, with 15 games remaining. The Blue Jays had won the season series against Cleveland 4-2 and Boston 9-4, but trailed Texas 4-0. Their remaining schedule comprised six games against Baltimore and three each against Detroit, Texas and Cincinnati."
+  },
+  {
+   "id": "E2",
+   "publisher": "MLB.com — Theo DeRosa",
+   "published_at": "2026-09-09",
+   "excerpt": "With a favorable schedule -- all of their remaining opponents have records below .500 -- they know exactly what’s to come."
+  },
+  {
+   "id": "E3",
+   "publisher": "CBS Sports — RotoWire Staff",
+   "published_at": "2026-09-09T19:03:00-04:00",
+   "excerpt": "Lorenzen (3-12) took the loss Wednesday, giving up two runs on four hits and a walk over 2.2 innings of relief as the Blue Jays were downed 2-0 by the A's. He struck out two. Over four appearances and 8.2 innings for Toronto, he's served up three long balls and has stumbled to a 6.23 ERA, 1.61 WHIP and 6:2 K:BB."
+  },
+  {
+   "id": "E4",
+   "publisher": "Sportsnet — Sportsnet Staff",
+   "published_at": "2026-03-26",
+   "excerpt": "The Blue Jays finished tied with the Yankees at 94-68 in 2025 and won the AL East through the head-to-head tiebreaker. The preseason FanGraphs projected standings separated all five AL East teams by six wins, with the Yankees, Blue Jays and Red Sox within one game of one another. Toronto, Baltimore, Boston and New York were all among MLB's top 10 teams by projected fWAR."
+  },
+  {
+   "id": "E5",
+   "publisher": "Major League Baseball — Official press release",
+   "published_at": "2026-08-10",
+   "excerpt": "MLB announced that the 2026 Postseason was scheduled to begin September 29 with four Wild Card Series."
+  },
+  {
+   "id": "E6",
+   "publisher": "MLB.com — Anthony Castrovince",
+   "published_at": "2022-07-25",
+   "excerpt": "In each league, the three division winners and three teams with the next-best records advance to October."
+  }
+ ]
+}

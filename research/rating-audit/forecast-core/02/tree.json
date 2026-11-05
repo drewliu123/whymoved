@@ -1,0 +1,530 @@
+{
+  "sha": "85e72d026fc0703f16e7aef6faaec99cc5f4041d",
+  "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/85e72d026fc0703f16e7aef6faaec99cc5f4041d",
+  "tree": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17397dca123e65cfeca6fd38c820cf7f0f4add16",
+      "size": 3938,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/17397dca123e65cfeca6fd38c820cf7f0f4add16"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a04736320cca127ee8e96eeea9f02dd4f24115a4",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/a04736320cca127ee8e96eeea9f02dd4f24115a4"
+    },
+    {
+      "path": "assets/forecasting_system.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2126282cb22010952349b13a458a9adcc6729a5",
+      "size": 295723,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/d2126282cb22010952349b13a458a9adcc6729a5"
+    },
+    {
+      "path": "llm_forecasting",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ec81a21c4c6caed2045d6f78139515950a32ccdf",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/ec81a21c4c6caed2045d6f78139515950a32ccdf"
+    },
+    {
+      "path": "llm_forecasting/alignment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16bf5c52111779c6795441cae3c50cf09ce5afa3",
+      "size": 2430,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/16bf5c52111779c6795441cae3c50cf09ce5afa3"
+    },
+    {
+      "path": "llm_forecasting/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8a6b81377743c73261fdfd86c29ed5e7e64cfd6",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/b8a6b81377743c73261fdfd86c29ed5e7e64cfd6"
+    },
+    {
+      "path": "llm_forecasting/config/constants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d6114472626e7060c8f13ece37b86ff4d7ed011",
+      "size": 7351,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/2d6114472626e7060c8f13ece37b86ff4d7ed011"
+    },
+    {
+      "path": "llm_forecasting/config/keys.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7332a3608285df5e11fe3668610a367f1c254d",
+      "size": 810,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/2b7332a3608285df5e11fe3668610a367f1c254d"
+    },
+    {
+      "path": "llm_forecasting/config/site_whitelist.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2129ffec7b97de68e32d2972e3faa11a0c169c42",
+      "size": 133753,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/2129ffec7b97de68e32d2972e3faa11a0c169c42"
+    },
+    {
+      "path": "llm_forecasting/data_scraping.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3ed146745189abaeedd926791b64106a8ae89ec",
+      "size": 5967,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/c3ed146745189abaeedd926791b64106a8ae89ec"
+    },
+    {
+      "path": "llm_forecasting/ensemble.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a576a474fc9320e79f91ac4d05e371f27fbe5bc",
+      "size": 15149,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/4a576a474fc9320e79f91ac4d05e371f27fbe5bc"
+    },
+    {
+      "path": "llm_forecasting/evaluation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43e7479fc2a7f4bb8471dbcc987ed2c4f2a70dbc",
+      "size": 9816,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/43e7479fc2a7f4bb8471dbcc987ed2c4f2a70dbc"
+    },
+    {
+      "path": "llm_forecasting/information_retrieval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d290b87d01c54cd56b764d1b025f88db56632ad",
+      "size": 31958,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/2d290b87d01c54cd56b764d1b025f88db56632ad"
+    },
+    {
+      "path": "llm_forecasting/model_eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "962e42d26ff0e6f3ffcbecabfcc653c6c69b3aef",
+      "size": 13497,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/962e42d26ff0e6f3ffcbecabfcc653c6c69b3aef"
+    },
+    {
+      "path": "llm_forecasting/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e4e6faf1f56d57498e07c6746b1227f92168be8",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/4e4e6faf1f56d57498e07c6746b1227f92168be8"
+    },
+    {
+      "path": "llm_forecasting/prompts/alignment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f0293983932592d66f52b389cca0924d2997680",
+      "size": 963,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/7f0293983932592d66f52b389cca0924d2997680"
+    },
+    {
+      "path": "llm_forecasting/prompts/base_eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "384f9f43c262b58b7627794dbfd6f647bb60e8e2",
+      "size": 2506,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/384f9f43c262b58b7627794dbfd6f647bb60e8e2"
+    },
+    {
+      "path": "llm_forecasting/prompts/base_reasoning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbef2e300cef0791ac74da43b5f4c74395aab5ee",
+      "size": 20682,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/cbef2e300cef0791ac74da43b5f4c74395aab5ee"
+    },
+    {
+      "path": "llm_forecasting/prompts/data_wrangling.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "790e7bc11e90fd90b12a292e1b5580b45697f07b",
+      "size": 3309,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/790e7bc11e90fd90b12a292e1b5580b45697f07b"
+    },
+    {
+      "path": "llm_forecasting/prompts/ensemble_reasoning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97c8ff46e351cb27e4d39efcdb515f8cca1ae3aa",
+      "size": 2143,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/97c8ff46e351cb27e4d39efcdb515f8cca1ae3aa"
+    },
+    {
+      "path": "llm_forecasting/prompts/prompts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e457cfba3d53489b6122852b879fe6cd3420327",
+      "size": 2825,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/2e457cfba3d53489b6122852b879fe6cd3420327"
+    },
+    {
+      "path": "llm_forecasting/prompts/relevance.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fba9800991353a59d8898a8f2e1c07ec20773b0e",
+      "size": 1027,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/fba9800991353a59d8898a8f2e1c07ec20773b0e"
+    },
+    {
+      "path": "llm_forecasting/prompts/search_query.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71351f50f3a9fbdc8f53339f6c9c2ce9195e1c7a",
+      "size": 9244,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/71351f50f3a9fbdc8f53339f6c9c2ce9195e1c7a"
+    },
+    {
+      "path": "llm_forecasting/prompts/summarization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0c116b67a0f441c8dcb8f24995d957daafab674",
+      "size": 5655,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/a0c116b67a0f441c8dcb8f24995d957daafab674"
+    },
+    {
+      "path": "llm_forecasting/prompts/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "215c01a837a90d576d588b5600beb01d71dd4754",
+      "size": 277,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/215c01a837a90d576d588b5600beb01d71dd4754"
+    },
+    {
+      "path": "llm_forecasting/ranking.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaa078ea42c11e59ef73974c3dfcedce655641ec",
+      "size": 22539,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/aaa078ea42c11e59ef73974c3dfcedce655641ec"
+    },
+    {
+      "path": "llm_forecasting/summarize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de8f3913ec6453d7501f9a0ad338eb9511ba395d",
+      "size": 9767,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/de8f3913ec6453d7501f9a0ad338eb9511ba395d"
+    },
+    {
+      "path": "llm_forecasting/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b7d30777cd2a99d145b28f6bb6d509515571dd6",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/6b7d30777cd2a99d145b28f6bb6d509515571dd6"
+    },
+    {
+      "path": "llm_forecasting/utils/api_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f18fab6f332ec2f31a05e8b39e50f58897fa6b7",
+      "size": 3646,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/7f18fab6f332ec2f31a05e8b39e50f58897fa6b7"
+    },
+    {
+      "path": "llm_forecasting/utils/article_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6242d0b66a52a56b6f73395a06f417c318ee5d7",
+      "size": 1912,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/e6242d0b66a52a56b6f73395a06f417c318ee5d7"
+    },
+    {
+      "path": "llm_forecasting/utils/data_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f11624b1c34f7db847c304d2d09dc7a71eb4574",
+      "size": 10695,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/0f11624b1c34f7db847c304d2d09dc7a71eb4574"
+    },
+    {
+      "path": "llm_forecasting/utils/db_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c40d4847cb33a2b37c9079bcbf560895902d6d0",
+      "size": 4173,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/6c40d4847cb33a2b37c9079bcbf560895902d6d0"
+    },
+    {
+      "path": "llm_forecasting/utils/logging_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0efb335302b5bd4fc8c2a427013549e1ef18df6e",
+      "size": 503,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/0efb335302b5bd4fc8c2a427013549e1ef18df6e"
+    },
+    {
+      "path": "llm_forecasting/utils/metrics_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "391cfd80c277cecb9bf2438417d22ebdb7deb016",
+      "size": 3970,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/391cfd80c277cecb9bf2438417d22ebdb7deb016"
+    },
+    {
+      "path": "llm_forecasting/utils/model_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13dea54f2eda431484072679c88bcc43917aaf5d",
+      "size": 1144,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/13dea54f2eda431484072679c88bcc43917aaf5d"
+    },
+    {
+      "path": "llm_forecasting/utils/string_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f458112e2b511518d7a981370b861741a5da66bb",
+      "size": 9954,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/f458112e2b511518d7a981370b861741a5da66bb"
+    },
+    {
+      "path": "llm_forecasting/utils/time_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1250c542a6a1afc731bb70e5192ffe93f6d44d83",
+      "size": 9388,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/1250c542a6a1afc731bb70e5192ffe93f6d44d83"
+    },
+    {
+      "path": "llm_forecasting/utils/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c87dcd44d22e8da6a9f49b942103d26ef48a1a7",
+      "size": 1417,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/8c87dcd44d22e8da6a9f49b942103d26ef48a1a7"
+    },
+    {
+      "path": "llm_forecasting/utils/validation_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2206fa59c92fbaa8a4e0301da0fd38b12045d11e",
+      "size": 1990,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/2206fa59c92fbaa8a4e0301da0fd38b12045d11e"
+    },
+    {
+      "path": "llm_forecasting/utils/visualize_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88fb38ab82a0bcc5ac5e8d79d5e600af496febdc",
+      "size": 15456,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/88fb38ab82a0bcc5ac5e8d79d5e600af496febdc"
+    },
+    {
+      "path": "notebooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c8a784ecf36a8b4f269cde232f18139b71f0bf1",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/9c8a784ecf36a8b4f269cde232f18139b71f0bf1"
+    },
+    {
+      "path": "notebooks/demo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f614ad0a19ade04196b2de1a10e63bc75a75bab",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/9f614ad0a19ade04196b2de1a10e63bc75a75bab"
+    },
+    {
+      "path": "notebooks/demo/sample_q_base_output.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b4181beda5143368e62efe0d20243d33948b6d6",
+      "size": 323255,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/0b4181beda5143368e62efe0d20243d33948b6d6"
+    },
+    {
+      "path": "notebooks/demo/sample_q_meta_output.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ccbc6a15b36af95d33d22340dddc6f5da55613b",
+      "size": 271288,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/5ccbc6a15b36af95d33d22340dddc6f5da55613b"
+    },
+    {
+      "path": "notebooks/demo/sample_questions.pickle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef7304726c551daeaf81ff0b9ab5ecd7e73f3099",
+      "size": 2731548,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/ef7304726c551daeaf81ff0b9ab5ecd7e73f3099"
+    },
+    {
+      "path": "notebooks/demo/system_demo.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53de988cbe0e6fa25383cde62521de278fe2ae86",
+      "size": 32356,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/53de988cbe0e6fa25383cde62521de278fe2ae86"
+    },
+    {
+      "path": "notebooks/results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b90bf096e862f0b62fe02ebd4d0f20f27667a796",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/b90bf096e862f0b62fe02ebd4d0f20f27667a796"
+    },
+    {
+      "path": "notebooks/results/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a5524331527ad79ac0081c4c3ba3fdd4c9d4a89",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/7a5524331527ad79ac0081c4c3ba3fdd4c9d4a89"
+    },
+    {
+      "path": "notebooks/results/data/answers.pickle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b1a0a3a83611af8f0872e83e8163c0181fd8761",
+      "size": 7732,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/9b1a0a3a83611af8f0872e83e8163c0181fd8761"
+    },
+    {
+      "path": "notebooks/results/data/base_predictions.pickle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c652918e9cd79a829c7db622a6854acf71d616cd",
+      "size": 119333,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/c652918e9cd79a829c7db622a6854acf71d616cd"
+    },
+    {
+      "path": "notebooks/results/data/crowd_predictions.pickle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fbbf3eca1046d365f6664e00f8ecfcf031aea89",
+      "size": 34668,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/8fbbf3eca1046d365f6664e00f8ecfcf031aea89"
+    },
+    {
+      "path": "notebooks/results/data/finetuned_other_predictions.pickle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4336ae40b12349cd73dc6bc6c4778a1997bdb549",
+      "size": 77181,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/4336ae40b12349cd73dc6bc6c4778a1997bdb549"
+    },
+    {
+      "path": "notebooks/results/data/finetuned_predictions.pickle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75a4d8c96fe017a9535b6e6c27a8c79434e2ac20",
+      "size": 46212,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/75a4d8c96fe017a9535b6e6c27a8c79434e2ac20"
+    },
+    {
+      "path": "notebooks/results/data/questions_data.pickle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17f5259f914250e759c4bc2df07d0200d0aa69ac",
+      "size": 4240380,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/17f5259f914250e759c4bc2df07d0200d0aa69ac"
+    },
+    {
+      "path": "notebooks/results/results.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce705b868fe3e11ab9b51f4ae37decf0227a5560",
+      "size": 4403,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/ce705b868fe3e11ab9b51f4ae37decf0227a5560"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06a04eab3b7b645d236bf501001010c9efd10ab6",
+      "size": 831,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/06a04eab3b7b645d236bf501001010c9efd10ab6"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bc44947fc1241285466503bfe887fb177bab1c28",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/bc44947fc1241285466503bfe887fb177bab1c28"
+    },
+    {
+      "path": "scripts/data_scraping",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "661c7ae28fa91836aa161a03d3c9fc146080eabf",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/661c7ae28fa91836aa161a03d3c9fc146080eabf"
+    },
+    {
+      "path": "scripts/data_scraping/cset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e63ba75c77b24a263f54b04e0d0c39fd1b98a1cf",
+      "size": 5508,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/e63ba75c77b24a263f54b04e0d0c39fd1b98a1cf"
+    },
+    {
+      "path": "scripts/data_scraping/gjopen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf0ae3a3ced6bb6672c00c9d1e911a53f3587dc5",
+      "size": 5506,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/bf0ae3a3ced6bb6672c00c9d1e911a53f3587dc5"
+    },
+    {
+      "path": "scripts/data_scraping/manifold.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b36fc0e06b532e97ef66408a49b8b303a205483",
+      "size": 12381,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/9b36fc0e06b532e97ef66408a49b8b303a205483"
+    },
+    {
+      "path": "scripts/data_scraping/metaculus.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d720f472f0517cce984a643f52df59450d768edc",
+      "size": 15296,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/d720f472f0517cce984a643f52df59450d768edc"
+    },
+    {
+      "path": "scripts/data_scraping/polymarket.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b7964c58afcfd97bc1925fad8c6b16c2fc4769d",
+      "size": 9444,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/5b7964c58afcfd97bc1925fad8c6b16c2fc4769d"
+    },
+    {
+      "path": "scripts/fine_tune",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c21e9ae2b62539a37bf85507e72d475644782ebf",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/c21e9ae2b62539a37bf85507e72d475644782ebf"
+    },
+    {
+      "path": "scripts/fine_tune/fine_tune.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12099b49181c223913a716bc183869f670f75271",
+      "size": 2473,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/12099b49181c223913a716bc183869f670f75271"
+    },
+    {
+      "path": "scripts/training_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26df522401bca690f69cd528922e1465d0c2d726",
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/trees/26df522401bca690f69cd528922e1465d0c2d726"
+    },
+    {
+      "path": "scripts/training_data/training_point_generation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b5c479656ff35a9bf991d3b5cb7f2ff9349d861",
+      "size": 7193,
+      "url": "https://api.github.com/repos/dannyallover/llm_forecasting/git/blobs/8b5c479656ff35a9bf991d3b5cb7f2ff9349d861"
+    }
+  ],
+  "truncated": false
+}

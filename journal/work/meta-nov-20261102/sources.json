@@ -1,0 +1,3160 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T08:19:47.499646+00:00",
+  "historical": false,
+  "candidates": [
+    {
+      "id": "META-AD",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Revenue was $64.60 billion, an increase of 26% year-over-year on both a reported and constant currency basis. Ad impressions delivered across our Family of Apps increased by 10% year-over-year. Average price per ad increased by 14% year-over-year.",
+      "locator": "Third Quarter 2026 Operational and Other Financial Highlights; Revenue, Ad impressions, Average price per ad bullets",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct disclosure",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 operating observation: revenue and ad quantity/pricing; does not establish AI causality",
+        "relevance": "direct",
+        "purpose": "T1 operating observation: revenue and ad quantity/pricing; does not establish AI causality",
+        "priority": "decisive"
+      },
+      "units": {
+        "currency": "USD",
+        "scale": "billions",
+        "period": "2026Q3",
+        "scope": "consolidated / Family of Apps for ad KPIs"
+      },
+      "date_nature": "release date; publication time not given"
+    },
+    {
+      "id": "META-PROFIT",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Revenue | 2026 64,601 | 2025 51,242; Costs and expenses | 51,613 | 30,707; Income from operations | 12,988 | 20,535; Operating margin | 20% | 40%",
+      "locator": "Third Quarter 2026 Financial Highlights, Three Months Ended September 30; labels and values transcribed from table",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct disclosure",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 reported profitability with same-quarter prior year",
+        "relevance": "direct",
+        "purpose": "T1 reported profitability with same-quarter prior year",
+        "priority": "decisive"
+      },
+      "units": {
+        "currency": "USD",
+        "scale": "millions except percentages",
+        "periods": [
+          "2026Q3",
+          "2025Q3"
+        ],
+        "scope": "consolidated"
+      }
+    },
+    {
+      "id": "META-LEGAL",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Third quarter 2026 costs and expenses includes a $9.89 billion charge related to this agreement. Excluding this charge, the third quarter 2026: Income from operations of $12.99 billion would have increased by $9.89 billion to $22.88 billion. Diluted EPS of $3.83 would have increased by $3.57 to $7.40.",
+      "locator": "Agreement with U.S. State Attorneys General",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct disclosure",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 counter-observation to interpreting reported margin/EPS decline as recurring operating weakness",
+        "relevance": "direct",
+        "purpose": "T1 counter-observation to interpreting reported margin/EPS decline as recurring operating weakness",
+        "priority": "decisive"
+      },
+      "qualification": "Adjusted figures are company calculation; not GAAP results or surveyed adjusted EPS. Agreement announced August 2026; Q3 recognized charge not equivalent to Q3 cash payment."
+    },
+    {
+      "id": "META-CASH",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Net cash provided by operating activities | 32,786 | 29,999 | 96,873 | 79,586; Purchases of property and equipment | (33,942) | (18,829) | (83,055) | (48,308); Principal payments on finance leases | (964) | (545) | (2,769) | (1,770); Free cash flow | (2,120) | 10,625 | 11,049 | 29,508",
+      "locator": "Reconciliation of GAAP to Non-GAAP Results; columns Three Months Ended September 30 2026,2025; Nine Months Ended September 30 2026,2025; original row values",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct disclosure",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 same-basis cash-flow and investment observations",
+        "relevance": "direct",
+        "purpose": "T1 same-basis cash-flow and investment observations",
+        "priority": "decisive"
+      },
+      "units": {
+        "currency": "USD",
+        "scale": "millions",
+        "scope": "consolidated"
+      },
+      "qualification": "FCF is company non-GAAP definition including finance lease principal."
+    },
+    {
+      "id": "META-Q4",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "We expect fourth quarter 2026 total revenue to be in the range of $73-76 billion. Our guidance assumes foreign currency is an approximately 1% headwind to year-over-year total revenue growth, based on current exchange rates.",
+      "locator": "CFO Outlook Commentary, opening paragraph",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 Q4 company guidance, not analyst consensus",
+        "relevance": "direct",
+        "purpose": "T1 Q4 company guidance, not analyst consensus",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-CAPEX",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion, narrowed from our prior outlook of $130-145 billion.",
+      "locator": "CFO Outlook Commentary, capital expenditure paragraph",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 2026 capex range revision; preserve lease-inclusive basis",
+        "relevance": "direct",
+        "purpose": "T1 2026 capex range revision; preserve lease-inclusive basis",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-COST",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "We are raising our expense outlook to incorporate the $9.9 billion charge related to legal proceedings recognized in the third quarter. We now expect full year 2026 total expenses to be in the range of $175-179 billion. Excluding the third quarter legal charge, we continue to expect 2026 operating income to be above 2025 operating income.",
+      "locator": "CFO Outlook Commentary, expense outlook",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 expense revision explicitly includes legal charge; recurring margin pressure cannot be inferred from headline alone",
+        "relevance": "direct",
+        "purpose": "T1 expense revision explicitly includes legal charge; recurring margin pressure cannot be inferred from headline alone",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-2027",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Looking beyond 2026, we are still developing our budget and capacity plans for next year, but we expect to continue investing aggressively to support both our core business and emerging AI initiatives.",
+      "locator": "CFO Outlook Commentary, Looking beyond 2026",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 2027 qualitative spending plan; no numeric 2027 capex or total-expense range supplied",
+        "relevance": "direct",
+        "purpose": "T1 2027 qualitative spending plan; no numeric 2027 capex or total-expense range supplied",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-AI",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Our AI investments are already delivering substantial incremental advertising revenue through stronger engagement, better recommendations, and more efficient monetization. While these investments will take longer to generate returns than those in our core business, the breadth of monetization opportunities and internal efficiencies gives us confidence in their long-term potential.",
+      "locator": "CFO Outlook Commentary; AI revenue paragraph and following MSL paragraph; non-contiguous excerpts",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer management explanation",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 competing mechanisms: attributed monetization gains and slower returns; independent causal verification missing",
+        "relevance": "direct",
+        "purpose": "T1 competing mechanisms: attributed monetization gains and slower returns; independent causal verification missing",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-RL",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "At a segment level, we now expect Reality Labs losses to decline compared to 2025 to a range of $18-19 billion. Separately, we remain focused on improving Reality Labs profitability and expect losses to narrow next year to around $15 billion as we reallocate investment toward other priority areas, primarily AI.",
+      "locator": "CFO Outlook Commentary; two non-contiguous Reality Labs outlook passages",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 counter-observation to all costs worsening: segment loss guidance narrows, spending reallocated to AI",
+        "relevance": "direct",
+        "purpose": "T1 counter-observation to all costs worsening: segment loss guidance narrows, spending reallocated to AI",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-CLASSC",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Meta intends to file an amended and restated certificate of incorporation in Delaware to establish the Class C common stock, with an effective date of January 19, 2027. The record date and payment date of the stock dividend will be determined by the Board at a later date. After the payment date of the stock dividend, we expect the market price for our Class A common stock to reflect the effect of a two-for-one stock split.",
+      "locator": "Establishment of New Class C Common Stock; three excerpts",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer board announcement",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T2 share-class/action timing; announced future event is outside November and dividend dates remain TBD",
+        "relevance": "direct",
+        "purpose": "T2 share-class/action timing; announced future event is outside November and dividend dates remain TBD",
+        "priority": "decisive"
+      },
+      "qualification": "Board announced one Class C per outstanding Class A/B; no November split date confirmed. Forecast price effect is view, not observed price."
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:19:47.499646+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-RULES",
+      "publisher": "Polymarket Gamma",
+      "url": "https://gamma-api.polymarket.com/events?slug=what-price-will-meta-hit-in-november-2026",
+      "quote": "This market will resolve to \"Yes\" if, at any point after market creation and during November 2026, any 1-minute candle for Meta Platforms, Inc. (META) has a final \"High\" or \"Low\" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during the regular trading hours of the primary exchange on which the listed security trades (typically 9:30 AM – 4:00 PM ET) will be considered. Prices occurring during pre-market or after-hours trading will not qualify.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Pyth.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Pyth after any adjustments have been applied.\n\nThe resolution source for this market is Pyth — specifically, the Meta Platforms, Inc. (META) \"High\" and \"Low\" prices available at https://pythdata.app/explore/Equity.US.META%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter. Any timestamp within the listed market time frame may be used to view the relevant candle data (e.g., https://pythdata.app/explore/Equity.US.META%2FUSD?t=1773432000)\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily high/low price published by the primary exchange on which the listed security trades will be used to determine whether the listed price was reached during the applicable trading session.",
+      "locator": "event1250206 markets[].description; endDate=2026-12-01T04:59:59.999Z",
+      "origin_id": "polymarket-meta-nov-rules",
+      "origin_basis": "交易平台逐合约正式描述",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "canonical_url": "https://gamma-api.polymarket.com/events?slug=what-price-will-meta-hit-in-november-2026"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:19:47.499646+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-FEES",
+      "publisher": "Polymarket Documentation",
+      "url": "https://docs.polymarket.com/trading/fees.md",
+      "quote": "fee = C × feeRate × p × (1 - p). Makers are never charged fees. Only takers pay fees. Finance: fee rate 0.04. Fees are rounded to 5 decimal places.",
+      "locator": "Fee structure / Finance row / rounding; evidence/fees.md",
+      "origin_id": "polymarket-fee-doc",
+      "origin_basis": "平台手续费原始规则",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "canonical_url": "https://docs.polymarket.com/trading/fees.md"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:19:47.499646+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-FEESCHEDULE",
+      "publisher": "Polymarket Gamma",
+      "url": "https://gamma-api.polymarket.com/events?slug=what-price-will-meta-hit-in-november-2026",
+      "quote": "{\"feesEnabled\": true, \"feeType\": \"finance_prices_fees\", \"feeSchedule\": {\"exponent\": 1, \"rate\": 0.04, \"takerOnly\": true, \"rebateRate\": 0.25}}",
+      "locator": "markets[].feesEnabled/feeType/feeSchedule; evidence/gamma-event.json",
+      "origin_id": "polymarket-meta-nov-fees",
+      "origin_basis": "各合约费用参数与文档相互核对",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "canonical_url": "https://gamma-api.polymarket.com/events?slug=what-price-will-meta-hit-in-november-2026"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:55.146616+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP780-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=68680917370635218290797368629884976199773178965149768362938511306118537566076",
+      "quote": "{\"market_id\": \"6171617\", \"outcome\": \"Yes\", \"timestamp\": \"1793606934777\", \"best_bid\": {\"price\": \"0.021\", \"size\": \"6.99\"}, \"best_ask\": {\"price\": \"0.343\", \"size\": \"23.98\"}, \"next_asks\": [{\"price\": \"0.344\", \"size\": \"50\"}, {\"price\": \"0.345\", \"size\": \"9.69\"}]}",
+      "locator": "evidence/clob-books.json; market=6171617 outcome=Yes",
+      "origin_id": "clob-6171617",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:54.777000+00:00",
+        "instrument": "Polymarket:6171617",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.343,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.021,
+        "ask": 0.343
+      },
+      "token_id": "68680917370635218290797368629884976199773178965149768362938511306118537566076",
+      "depth": {
+        "best_ask_shares": 23.98,
+        "best_bid_shares": 6.99
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-780-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=68680917370635218290797368629884976199773178965149768362938511306118537566076"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:57.228984+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "订单簿服务器时刻晚于本地接收时刻，时间一致性不合格；该未使用token不支持主张",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP780-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=109118293677759572956045935863289507734153101829398977496685706387749534319135",
+      "quote": "{\"market_id\": \"6171617\", \"outcome\": \"No\", \"timestamp\": \"1793606937289\", \"best_bid\": {\"price\": \"0.659\", \"size\": \"23.98\"}, \"best_ask\": {\"price\": \"0.979\", \"size\": \"6.99\"}, \"next_asks\": [{\"price\": \"0.98\", \"size\": \"240\"}, {\"price\": \"0.987\", \"size\": \"7.11\"}]}",
+      "locator": "evidence/clob-books.json; market=6171617 outcome=No",
+      "origin_id": "clob-6171617",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:57.289000+00:00",
+        "instrument": "Polymarket:6171617",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.979,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.659,
+        "ask": 0.979
+      },
+      "token_id": "109118293677759572956045935863289507734153101829398977496685706387749534319135",
+      "depth": {
+        "best_ask_shares": 6.99,
+        "best_bid_shares": 23.98
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-780-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=109118293677759572956045935863289507734153101829398977496685706387749534319135"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:55.293822+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP760-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=60186251540393156217132475900351273730489979527805236408502207612870727120491",
+      "quote": "{\"market_id\": \"6171623\", \"outcome\": \"Yes\", \"timestamp\": \"1793606736519\", \"best_bid\": {\"price\": \"0.05\", \"size\": \"40\"}, \"best_ask\": {\"price\": \"0.11\", \"size\": \"40\"}, \"next_asks\": [{\"price\": \"0.55\", \"size\": \"40.9\"}, {\"price\": \"0.56\", \"size\": \"278\"}]}",
+      "locator": "evidence/clob-books.json; market=6171623 outcome=Yes",
+      "origin_id": "clob-6171623",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:05:36.519000+00:00",
+        "instrument": "Polymarket:6171623",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.11,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.05,
+        "ask": 0.11
+      },
+      "token_id": "60186251540393156217132475900351273730489979527805236408502207612870727120491",
+      "depth": {
+        "best_ask_shares": 40.0,
+        "best_bid_shares": 40.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-760-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=60186251540393156217132475900351273730489979527805236408502207612870727120491"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:57.286856+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP760-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=82497209642918827198060797166844063162189486893641306347889213786212489608331",
+      "quote": "{\"market_id\": \"6171623\", \"outcome\": \"No\", \"timestamp\": \"1793606936531\", \"best_bid\": {\"price\": \"0.89\", \"size\": \"40\"}, \"best_ask\": {\"price\": \"0.95\", \"size\": \"40\"}, \"next_asks\": [{\"price\": \"0.96\", \"size\": \"10.81\"}, {\"price\": \"0.97\", \"size\": \"55.67\"}]}",
+      "locator": "evidence/clob-books.json; market=6171623 outcome=No",
+      "origin_id": "clob-6171623",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:56.531000+00:00",
+        "instrument": "Polymarket:6171623",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.95,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.89,
+        "ask": 0.95
+      },
+      "token_id": "82497209642918827198060797166844063162189486893641306347889213786212489608331",
+      "depth": {
+        "best_ask_shares": 40.0,
+        "best_bid_shares": 40.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-760-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=82497209642918827198060797166844063162189486893641306347889213786212489608331"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:55.112199+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP740-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=36527373512540066934086720458179159980179137229707606002663077140682214334548",
+      "quote": "{\"market_id\": \"6171634\", \"outcome\": \"Yes\", \"timestamp\": \"1793606931820\", \"best_bid\": {\"price\": \"0.06\", \"size\": \"26\"}, \"best_ask\": {\"price\": \"0.12\", \"size\": \"21\"}, \"next_asks\": [{\"price\": \"0.19\", \"size\": \"199\"}, {\"price\": \"0.58\", \"size\": \"359.29\"}]}",
+      "locator": "evidence/clob-books.json; market=6171634 outcome=Yes",
+      "origin_id": "clob-6171634",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:51.820000+00:00",
+        "instrument": "Polymarket:6171634",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.12,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.06,
+        "ask": 0.12
+      },
+      "token_id": "36527373512540066934086720458179159980179137229707606002663077140682214334548",
+      "depth": {
+        "best_ask_shares": 21.0,
+        "best_bid_shares": 26.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-740-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=36527373512540066934086720458179159980179137229707606002663077140682214334548"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:57.950815+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP740-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=101558331114102109122777307250148009743039852062355099056198208708098624178583",
+      "quote": "{\"market_id\": \"6171634\", \"outcome\": \"No\", \"timestamp\": \"1793606936531\", \"best_bid\": {\"price\": \"0.88\", \"size\": \"21\"}, \"best_ask\": {\"price\": \"0.94\", \"size\": \"26\"}, \"next_asks\": [{\"price\": \"0.95\", \"size\": \"7.32\"}, {\"price\": \"0.96\", \"size\": \"300\"}]}",
+      "locator": "evidence/clob-books.json; market=6171634 outcome=No",
+      "origin_id": "clob-6171634",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:56.531000+00:00",
+        "instrument": "Polymarket:6171634",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.94,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.88,
+        "ask": 0.94
+      },
+      "token_id": "101558331114102109122777307250148009743039852062355099056198208708098624178583",
+      "depth": {
+        "best_ask_shares": 26.0,
+        "best_bid_shares": 21.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-740-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=101558331114102109122777307250148009743039852062355099056198208708098624178583"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:54.979941+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP720-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=61805137783491876481703048596759412961150925975560772617273955455436808089570",
+      "quote": "{\"market_id\": \"6171644\", \"outcome\": \"Yes\", \"timestamp\": \"1793606802386\", \"best_bid\": {\"price\": \"0.07\", \"size\": \"51\"}, \"best_ask\": {\"price\": \"0.2\", \"size\": \"20\"}, \"next_asks\": [{\"price\": \"0.57\", \"size\": \"9\"}, {\"price\": \"0.67\", \"size\": \"5\"}]}",
+      "locator": "evidence/clob-books.json; market=6171644 outcome=Yes",
+      "origin_id": "clob-6171644",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:06:42.386000+00:00",
+        "instrument": "Polymarket:6171644",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.2,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.07,
+        "ask": 0.2
+      },
+      "token_id": "61805137783491876481703048596759412961150925975560772617273955455436808089570",
+      "depth": {
+        "best_ask_shares": 20.0,
+        "best_bid_shares": 51.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-720-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=61805137783491876481703048596759412961150925975560772617273955455436808089570"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:57.286226+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP720-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=108338740503141894013045257367818395410100062675012104882393918897125754843971",
+      "quote": "{\"market_id\": \"6171644\", \"outcome\": \"No\", \"timestamp\": \"1793606936531\", \"best_bid\": {\"price\": \"0.8\", \"size\": \"20\"}, \"best_ask\": {\"price\": \"0.93\", \"size\": \"51\"}, \"next_asks\": [{\"price\": \"0.94\", \"size\": \"55.03\"}, {\"price\": \"0.95\", \"size\": \"109\"}]}",
+      "locator": "evidence/clob-books.json; market=6171644 outcome=No",
+      "origin_id": "clob-6171644",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:56.531000+00:00",
+        "instrument": "Polymarket:6171644",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.93,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.8,
+        "ask": 0.93
+      },
+      "token_id": "108338740503141894013045257367818395410100062675012104882393918897125754843971",
+      "depth": {
+        "best_ask_shares": 51.0,
+        "best_bid_shares": 20.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-720-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=108338740503141894013045257367818395410100062675012104882393918897125754843971"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:55.013023+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP700-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=23955471742928806922667526371860966634954420692150038792469521476959415891191",
+      "quote": "{\"market_id\": \"6171652\", \"outcome\": \"Yes\", \"timestamp\": \"1793606934997\", \"best_bid\": {\"price\": \"0.11\", \"size\": \"18\"}, \"best_ask\": {\"price\": \"0.29\", \"size\": \"20\"}, \"next_asks\": [{\"price\": \"0.34\", \"size\": \"6.77\"}, {\"price\": \"0.35\", \"size\": \"20.96\"}]}",
+      "locator": "evidence/clob-books.json; market=6171652 outcome=Yes",
+      "origin_id": "clob-6171652",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:54.997000+00:00",
+        "instrument": "Polymarket:6171652",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.29,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.11,
+        "ask": 0.29
+      },
+      "token_id": "23955471742928806922667526371860966634954420692150038792469521476959415891191",
+      "depth": {
+        "best_ask_shares": 20.0,
+        "best_bid_shares": 18.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-700-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=23955471742928806922667526371860966634954420692150038792469521476959415891191"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:57.453378+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP700-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=18424000383761959550393393655982801710333557599417746491193261569262453648926",
+      "quote": "{\"market_id\": \"6171652\", \"outcome\": \"No\", \"timestamp\": \"1793606935381\", \"best_bid\": {\"price\": \"0.71\", \"size\": \"20\"}, \"best_ask\": {\"price\": \"0.89\", \"size\": \"18\"}, \"next_asks\": [{\"price\": \"0.9\", \"size\": \"500\"}, {\"price\": \"0.91\", \"size\": \"167.12\"}]}",
+      "locator": "evidence/clob-books.json; market=6171652 outcome=No",
+      "origin_id": "clob-6171652",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:55.381000+00:00",
+        "instrument": "Polymarket:6171652",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.89,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.71,
+        "ask": 0.89
+      },
+      "token_id": "18424000383761959550393393655982801710333557599417746491193261569262453648926",
+      "depth": {
+        "best_ask_shares": 18.0,
+        "best_bid_shares": 20.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-700-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=18424000383761959550393393655982801710333557599417746491193261569262453648926"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:55.000632+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP680-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=93002751734983026986336933658619253061054725392106740845421876355446863703419",
+      "quote": "{\"market_id\": \"6171661\", \"outcome\": \"Yes\", \"timestamp\": \"1793606735909\", \"best_bid\": {\"price\": \"0.24\", \"size\": \"10\"}, \"best_ask\": {\"price\": \"0.53\", \"size\": \"200\"}, \"next_asks\": [{\"price\": \"0.89\", \"size\": \"28\"}, {\"price\": \"0.9\", \"size\": \"21\"}]}",
+      "locator": "evidence/clob-books.json; market=6171661 outcome=Yes",
+      "origin_id": "clob-6171661",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:05:35.909000+00:00",
+        "instrument": "Polymarket:6171661",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.53,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.24,
+        "ask": 0.53
+      },
+      "token_id": "93002751734983026986336933658619253061054725392106740845421876355446863703419",
+      "depth": {
+        "best_ask_shares": 200.0,
+        "best_bid_shares": 10.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-680-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=93002751734983026986336933658619253061054725392106740845421876355446863703419"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:58.470761+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP680-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=74588495406887718910897516853646043601935940332920051083381092095030546981120",
+      "quote": "{\"market_id\": \"6171661\", \"outcome\": \"No\", \"timestamp\": \"1793606936203\", \"best_bid\": {\"price\": \"0.11\", \"size\": \"28\"}, \"best_ask\": {\"price\": \"0.76\", \"size\": \"10\"}, \"next_asks\": [{\"price\": \"0.81\", \"size\": \"500\"}, {\"price\": \"0.82\", \"size\": \"110\"}]}",
+      "locator": "evidence/clob-books.json; market=6171661 outcome=No",
+      "origin_id": "clob-6171661",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:56.203000+00:00",
+        "instrument": "Polymarket:6171661",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.76,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.11,
+        "ask": 0.76
+      },
+      "token_id": "74588495406887718910897516853646043601935940332920051083381092095030546981120",
+      "depth": {
+        "best_ask_shares": 10.0,
+        "best_bid_shares": 28.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-680-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=74588495406887718910897516853646043601935940332920051083381092095030546981120"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:54.999959+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP660-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=111249090859196818987176868716884929877644338632982795106061290634922751109570",
+      "quote": "{\"market_id\": \"6171670\", \"outcome\": \"Yes\", \"timestamp\": \"1793606926398\", \"best_bid\": {\"price\": \"0.4\", \"size\": \"22\"}, \"best_ask\": {\"price\": \"0.55\", \"size\": \"20\"}, \"next_asks\": [{\"price\": \"0.56\", \"size\": \"17\"}, {\"price\": \"0.57\", \"size\": \"5\"}]}",
+      "locator": "evidence/clob-books.json; market=6171670 outcome=Yes",
+      "origin_id": "clob-6171670",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:46.398000+00:00",
+        "instrument": "Polymarket:6171670",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.55,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.4,
+        "ask": 0.55
+      },
+      "token_id": "111249090859196818987176868716884929877644338632982795106061290634922751109570",
+      "depth": {
+        "best_ask_shares": 20.0,
+        "best_bid_shares": 22.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-660-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=111249090859196818987176868716884929877644338632982795106061290634922751109570"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:57.390632+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-UP660-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=61249475104750828647223332473942132838939856133267234930728335976611566064008",
+      "quote": "{\"market_id\": \"6171670\", \"outcome\": \"No\", \"timestamp\": \"1793606926398\", \"best_bid\": {\"price\": \"0.45\", \"size\": \"20\"}, \"best_ask\": {\"price\": \"0.6\", \"size\": \"22\"}, \"next_asks\": [{\"price\": \"0.61\", \"size\": \"200\"}, {\"price\": \"0.63\", \"size\": \"500\"}]}",
+      "locator": "evidence/clob-books.json; market=6171670 outcome=No",
+      "origin_id": "clob-6171670",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:46.398000+00:00",
+        "instrument": "Polymarket:6171670",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.6,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.45,
+        "ask": 0.6
+      },
+      "token_id": "61249475104750828647223332473942132838939856133267234930728335976611566064008",
+      "depth": {
+        "best_ask_shares": 22.0,
+        "best_bid_shares": 20.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-reach-660-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=61249475104750828647223332473942132838939856133267234930728335976611566064008"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:55.133362+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN640-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=49619093763526013551446775946580900929577152902485691850567415345351792227699",
+      "quote": "{\"market_id\": \"6171678\", \"outcome\": \"Yes\", \"timestamp\": \"1793606585484\", \"best_bid\": {\"price\": \"0.959\", \"size\": \"146.79\"}, \"best_ask\": {\"price\": \"0.999\", \"size\": \"30\"}, \"next_asks\": []}",
+      "locator": "evidence/clob-books.json; market=6171678 outcome=Yes",
+      "origin_id": "clob-6171678",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:03:05.484000+00:00",
+        "instrument": "Polymarket:6171678",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.999,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.959,
+        "ask": 0.999
+      },
+      "token_id": "49619093763526013551446775946580900929577152902485691850567415345351792227699",
+      "depth": {
+        "best_ask_shares": 30.0,
+        "best_bid_shares": 146.79
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-640-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=49619093763526013551446775946580900929577152902485691850567415345351792227699"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:57.388807+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN640-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=97841144866099805546000591500897152277552040460210028607077725273536610285267",
+      "quote": "{\"market_id\": \"6171678\", \"outcome\": \"No\", \"timestamp\": \"1793606585484\", \"best_bid\": {\"price\": \"0.001\", \"size\": \"30\"}, \"best_ask\": {\"price\": \"0.041\", \"size\": \"146.79\"}, \"next_asks\": [{\"price\": \"0.067\", \"size\": \"2.25\"}, {\"price\": \"0.955\", \"size\": \"16.12\"}]}",
+      "locator": "evidence/clob-books.json; market=6171678 outcome=No",
+      "origin_id": "clob-6171678",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:03:05.484000+00:00",
+        "instrument": "Polymarket:6171678",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.041,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.001,
+        "ask": 0.041
+      },
+      "token_id": "97841144866099805546000591500897152277552040460210028607077725273536610285267",
+      "depth": {
+        "best_ask_shares": 146.79,
+        "best_bid_shares": 30.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-640-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=97841144866099805546000591500897152277552040460210028607077725273536610285267"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:00.889939+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN620-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=6711216523652993400343127039202825431779900892561150989795970061447550363134",
+      "quote": "{\"market_id\": \"6171688\", \"outcome\": \"Yes\", \"timestamp\": \"1793606710372\", \"best_bid\": {\"price\": \"0.57\", \"size\": \"12.68\"}, \"best_ask\": {\"price\": \"0.99\", \"size\": \"60\"}, \"next_asks\": []}",
+      "locator": "evidence/clob-books.json; market=6171688 outcome=Yes",
+      "origin_id": "clob-6171688",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:05:10.372000+00:00",
+        "instrument": "Polymarket:6171688",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.99,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.57,
+        "ask": 0.99
+      },
+      "token_id": "6711216523652993400343127039202825431779900892561150989795970061447550363134",
+      "depth": {
+        "best_ask_shares": 60.0,
+        "best_bid_shares": 12.68
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-620-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=6711216523652993400343127039202825431779900892561150989795970061447550363134"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:02.860637+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN620-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=62351613074180854377299666600049465280407726874062590309743490918005933252671",
+      "quote": "{\"market_id\": \"6171688\", \"outcome\": \"No\", \"timestamp\": \"1793606710372\", \"best_bid\": {\"price\": \"0.01\", \"size\": \"60\"}, \"best_ask\": {\"price\": \"0.43\", \"size\": \"12.68\"}, \"next_asks\": [{\"price\": \"0.44\", \"size\": \"242\"}, {\"price\": \"0.47\", \"size\": \"5\"}]}",
+      "locator": "evidence/clob-books.json; market=6171688 outcome=No",
+      "origin_id": "clob-6171688",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:05:10.372000+00:00",
+        "instrument": "Polymarket:6171688",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.43,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.01,
+        "ask": 0.43
+      },
+      "token_id": "62351613074180854377299666600049465280407726874062590309743490918005933252671",
+      "depth": {
+        "best_ask_shares": 12.68,
+        "best_bid_shares": 60.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-620-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=62351613074180854377299666600049465280407726874062590309743490918005933252671"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:59.365166+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN600-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=66992975272156230589736546594571351867438518981882176418101019755368992570330",
+      "quote": "{\"market_id\": \"6171697\", \"outcome\": \"Yes\", \"timestamp\": \"1793606706262\", \"best_bid\": {\"price\": \"0.74\", \"size\": \"65\"}, \"best_ask\": {\"price\": \"0.79\", \"size\": \"110\"}, \"next_asks\": [{\"price\": \"0.88\", \"size\": \"21\"}, {\"price\": \"0.91\", \"size\": \"68.07\"}]}",
+      "locator": "evidence/clob-books.json; market=6171697 outcome=Yes",
+      "origin_id": "clob-6171697",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:05:06.262000+00:00",
+        "instrument": "Polymarket:6171697",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.79,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.74,
+        "ask": 0.79
+      },
+      "token_id": "66992975272156230589736546594571351867438518981882176418101019755368992570330",
+      "depth": {
+        "best_ask_shares": 110.0,
+        "best_bid_shares": 65.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-600-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=66992975272156230589736546594571351867438518981882176418101019755368992570330"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:01.626091+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN600-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=95796512453873682573231061683921243879363991183027188355688407915185013713122",
+      "quote": "{\"market_id\": \"6171697\", \"outcome\": \"No\", \"timestamp\": \"1793606706262\", \"best_bid\": {\"price\": \"0.21\", \"size\": \"110\"}, \"best_ask\": {\"price\": \"0.26\", \"size\": \"65\"}, \"next_asks\": [{\"price\": \"0.29\", \"size\": \"100\"}, {\"price\": \"0.31\", \"size\": \"110\"}]}",
+      "locator": "evidence/clob-books.json; market=6171697 outcome=No",
+      "origin_id": "clob-6171697",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:05:06.262000+00:00",
+        "instrument": "Polymarket:6171697",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.26,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.21,
+        "ask": 0.26
+      },
+      "token_id": "95796512453873682573231061683921243879363991183027188355688407915185013713122",
+      "depth": {
+        "best_ask_shares": 65.0,
+        "best_bid_shares": 110.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-600-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=95796512453873682573231061683921243879363991183027188355688407915185013713122"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:59.377952+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN580-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=41814410314199704801396112619174869684943084707930289149536862034867772546726",
+      "quote": "{\"market_id\": \"6171710\", \"outcome\": \"Yes\", \"timestamp\": \"1793606908146\", \"best_bid\": {\"price\": \"0.46\", \"size\": \"200\"}, \"best_ask\": {\"price\": \"0.6\", \"size\": \"20\"}, \"next_asks\": [{\"price\": \"0.68\", \"size\": \"200\"}, {\"price\": \"0.77\", \"size\": \"20\"}]}",
+      "locator": "evidence/clob-books.json; market=6171710 outcome=Yes",
+      "origin_id": "clob-6171710",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:28.146000+00:00",
+        "instrument": "Polymarket:6171710",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.6,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.46,
+        "ask": 0.6
+      },
+      "token_id": "41814410314199704801396112619174869684943084707930289149536862034867772546726",
+      "depth": {
+        "best_ask_shares": 20.0,
+        "best_bid_shares": 200.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-580-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=41814410314199704801396112619174869684943084707930289149536862034867772546726"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:01.404549+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN580-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=46902919890964518950608283210596790055246533934740750822458677697454461893907",
+      "quote": "{\"market_id\": \"6171710\", \"outcome\": \"No\", \"timestamp\": \"1793606908146\", \"best_bid\": {\"price\": \"0.4\", \"size\": \"20\"}, \"best_ask\": {\"price\": \"0.54\", \"size\": \"200\"}, \"next_asks\": [{\"price\": \"0.55\", \"size\": \"5\"}, {\"price\": \"0.57\", \"size\": \"500\"}]}",
+      "locator": "evidence/clob-books.json; market=6171710 outcome=No",
+      "origin_id": "clob-6171710",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:28.146000+00:00",
+        "instrument": "Polymarket:6171710",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.54,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.4,
+        "ask": 0.54
+      },
+      "token_id": "46902919890964518950608283210596790055246533934740750822458677697454461893907",
+      "depth": {
+        "best_ask_shares": 200.0,
+        "best_bid_shares": 20.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-580-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=46902919890964518950608283210596790055246533934740750822458677697454461893907"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:08:59.536559+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN560-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=109756558005429735520182065663807109792204093201450315698088808284285179624677",
+      "quote": "{\"market_id\": \"6171718\", \"outcome\": \"Yes\", \"timestamp\": \"1793606916982\", \"best_bid\": {\"price\": \"0.22\", \"size\": \"500\"}, \"best_ask\": {\"price\": \"0.43\", \"size\": \"20\"}, \"next_asks\": [{\"price\": \"0.81\", \"size\": \"10\"}, {\"price\": \"0.82\", \"size\": \"5\"}]}",
+      "locator": "evidence/clob-books.json; market=6171718 outcome=Yes",
+      "origin_id": "clob-6171718",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:36.982000+00:00",
+        "instrument": "Polymarket:6171718",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.43,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.22,
+        "ask": 0.43
+      },
+      "token_id": "109756558005429735520182065663807109792204093201450315698088808284285179624677",
+      "depth": {
+        "best_ask_shares": 20.0,
+        "best_bid_shares": 500.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-560-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=109756558005429735520182065663807109792204093201450315698088808284285179624677"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:01.581409+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN560-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=55325427004486641444662411120759202737316149427737093515376036692432779654779",
+      "quote": "{\"market_id\": \"6171718\", \"outcome\": \"No\", \"timestamp\": \"1793606916982\", \"best_bid\": {\"price\": \"0.57\", \"size\": \"20\"}, \"best_ask\": {\"price\": \"0.78\", \"size\": \"500\"}, \"next_asks\": [{\"price\": \"0.8\", \"size\": \"110\"}, {\"price\": \"0.93\", \"size\": \"9.81\"}]}",
+      "locator": "evidence/clob-books.json; market=6171718 outcome=No",
+      "origin_id": "clob-6171718",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:36.982000+00:00",
+        "instrument": "Polymarket:6171718",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.78,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.57,
+        "ask": 0.78
+      },
+      "token_id": "55325427004486641444662411120759202737316149427737093515376036692432779654779",
+      "depth": {
+        "best_ask_shares": 500.0,
+        "best_bid_shares": 20.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-560-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=55325427004486641444662411120759202737316149427737093515376036692432779654779"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:00.025452+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN540-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=80243427859860763043806646737409485633751702179570452088409402749633584945395",
+      "quote": "{\"market_id\": \"6171726\", \"outcome\": \"Yes\", \"timestamp\": \"1793606907087\", \"best_bid\": {\"price\": \"0.1\", \"size\": \"5\"}, \"best_ask\": {\"price\": \"0.63\", \"size\": \"20\"}, \"next_asks\": [{\"price\": \"0.64\", \"size\": \"32\"}, {\"price\": \"0.65\", \"size\": \"40\"}]}",
+      "locator": "evidence/clob-books.json; market=6171726 outcome=Yes",
+      "origin_id": "clob-6171726",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:27.087000+00:00",
+        "instrument": "Polymarket:6171726",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.63,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.1,
+        "ask": 0.63
+      },
+      "token_id": "80243427859860763043806646737409485633751702179570452088409402749633584945395",
+      "depth": {
+        "best_ask_shares": 20.0,
+        "best_bid_shares": 5.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-540-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=80243427859860763043806646737409485633751702179570452088409402749633584945395"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:02.156419+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN540-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=44536805286535237146066185797490173788470352986393354430931998443076548508070",
+      "quote": "{\"market_id\": \"6171726\", \"outcome\": \"No\", \"timestamp\": \"1793606907087\", \"best_bid\": {\"price\": \"0.37\", \"size\": \"20\"}, \"best_ask\": {\"price\": \"0.9\", \"size\": \"5\"}, \"next_asks\": [{\"price\": \"0.91\", \"size\": \"500\"}, {\"price\": \"0.92\", \"size\": \"110\"}]}",
+      "locator": "evidence/clob-books.json; market=6171726 outcome=No",
+      "origin_id": "clob-6171726",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:27.087000+00:00",
+        "instrument": "Polymarket:6171726",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.9,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.37,
+        "ask": 0.9
+      },
+      "token_id": "44536805286535237146066185797490173788470352986393354430931998443076548508070",
+      "depth": {
+        "best_ask_shares": 5.0,
+        "best_bid_shares": 20.0
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-540-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=44536805286535237146066185797490173788470352986393354430931998443076548508070"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:00.761587+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN520-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=51461531840711149713398366420687260119985934889638370450920891252975133083344",
+      "quote": "{\"market_id\": \"6171733\", \"outcome\": \"Yes\", \"timestamp\": \"1793606907091\", \"best_bid\": {\"price\": \"0.05\", \"size\": \"6.3\"}, \"best_ask\": {\"price\": \"0.16\", \"size\": \"444.83\"}, \"next_asks\": [{\"price\": \"0.58\", \"size\": \"16\"}, {\"price\": \"0.59\", \"size\": \"436\"}]}",
+      "locator": "evidence/clob-books.json; market=6171733 outcome=Yes",
+      "origin_id": "clob-6171733",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:27.091000+00:00",
+        "instrument": "Polymarket:6171733",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.16,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.05,
+        "ask": 0.16
+      },
+      "token_id": "51461531840711149713398366420687260119985934889638370450920891252975133083344",
+      "depth": {
+        "best_ask_shares": 444.83,
+        "best_bid_shares": 6.3
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-520-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=51461531840711149713398366420687260119985934889638370450920891252975133083344"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:02.769841+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN520-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=31959673308389329903042697244485367036569552568990609505265711475924756793680",
+      "quote": "{\"market_id\": \"6171733\", \"outcome\": \"No\", \"timestamp\": \"1793606907091\", \"best_bid\": {\"price\": \"0.84\", \"size\": \"444.83\"}, \"best_ask\": {\"price\": \"0.95\", \"size\": \"6.3\"}, \"next_asks\": [{\"price\": \"0.96\", \"size\": \"55\"}, {\"price\": \"0.97\", \"size\": \"276\"}]}",
+      "locator": "evidence/clob-books.json; market=6171733 outcome=No",
+      "origin_id": "clob-6171733",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:27.091000+00:00",
+        "instrument": "Polymarket:6171733",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.95,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.84,
+        "ask": 0.95
+      },
+      "token_id": "31959673308389329903042697244485367036569552568990609505265711475924756793680",
+      "depth": {
+        "best_ask_shares": 6.3,
+        "best_bid_shares": 444.83
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-520-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=31959673308389329903042697244485367036569552568990609505265711475924756793680"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:01.089887+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN500-Yes",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=50513258202592040604469171715121802847813684230812660536332244543481667063617",
+      "quote": "{\"market_id\": \"6349546\", \"outcome\": \"Yes\", \"timestamp\": \"1793606927143\", \"best_bid\": {\"price\": \"0.03\", \"size\": \"15.41\"}, \"best_ask\": {\"price\": \"0.31\", \"size\": \"6.47\"}, \"next_asks\": [{\"price\": \"0.32\", \"size\": \"22\"}, {\"price\": \"0.51\", \"size\": \"48\"}]}",
+      "locator": "evidence/clob-books.json; market=6349546 outcome=Yes",
+      "origin_id": "clob-6349546",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:47.143000+00:00",
+        "instrument": "Polymarket:6349546",
+        "outcome": "Yes",
+        "direction": "buy",
+        "value": 0.31,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.03,
+        "ask": 0.31
+      },
+      "token_id": "50513258202592040604469171715121802847813684230812660536332244543481667063617",
+      "depth": {
+        "best_ask_shares": 6.47,
+        "best_bid_shares": 15.41
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-500-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=50513258202592040604469171715121802847813684230812660536332244543481667063617"
+    },
+    {
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:09:03.213286+00:00",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "直接核对11月触及合约规则和交易成本。",
+        "relevance": "direct",
+        "purpose": "T3合约及成本",
+        "priority": "decisive"
+      },
+      "id": "S-DOWN500-No",
+      "publisher": "Polymarket CLOB",
+      "url": "https://clob.polymarket.com/book?token_id=21779352819425088815376999473985046967658413585132499830592911903452092200460",
+      "quote": "{\"market_id\": \"6349546\", \"outcome\": \"No\", \"timestamp\": \"1793606927143\", \"best_bid\": {\"price\": \"0.69\", \"size\": \"6.47\"}, \"best_ask\": {\"price\": \"0.97\", \"size\": \"15.41\"}, \"next_asks\": [{\"price\": \"0.98\", \"size\": \"131.17\"}, {\"price\": \"0.99\", \"size\": \"211.07\"}]}",
+      "locator": "evidence/clob-books.json; market=6349546 outcome=No",
+      "origin_id": "clob-6349546",
+      "origin_basis": "平台订单簿，Yes/No为同一市场来源家族",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "market_quote": {
+        "quoted_at": "2026-11-02T08:08:47.143000+00:00",
+        "instrument": "Polymarket:6349546",
+        "outcome": "No",
+        "direction": "buy",
+        "value": 0.97,
+        "unit": "USD/share",
+        "quote_type": "executable",
+        "bid": 0.69,
+        "ask": 0.97
+      },
+      "token_id": "21779352819425088815376999473985046967658413585132499830592911903452092200460",
+      "depth": {
+        "best_ask_shares": 15.41,
+        "best_bid_shares": 6.47
+      },
+      "market_url": "https://polymarket.com/event/what-price-will-meta-hit-in-november-2026/will-meta-dip-to-500-in-november-2026",
+      "canonical_url": "https://clob.polymarket.com/book?token_id=21779352819425088815376999473985046967658413585132499830592911903452092200460"
+    },
+    {
+      "id": "COMM-S1",
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-11-02T08:10:23.765452Z",
+      "quote": "",
+      "locator": "Original post not independently readable; engine body retained in provenance only",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "原文独立抓取失败；仅候选线索。",
+        "relevance": "direct",
+        "purpose": "T1现金兑现/融资、T2行业传导反证",
+        "priority": "useful"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame",
+        "engine_item_id": "R9",
+        "engine_rank": 1,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame",
+          "cluster_id": "cluster-1",
+          "engagement": 83,
+          "explanation": "fallback-local-score",
+          "final_score": 32.77612021857924,
+          "freshness": 90,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 37.610444566917835,
+          "item_id": "R9",
+          "local_relevance": 0.08,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R9",
+                "native_rank": 1,
+                "source": "reddit",
+                "subquery_label": "cash_conversion"
+              }
+            ],
+            "range_from": "2026-10-03",
+            "range_to": "2026-11-02",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "cash_conversion:reddit": 1
+          },
+          "rerank_score": 11.6,
+          "rrf_score": 0.00546448087431694,
+          "snippet": "To err is human, but to blame someone else shows management potential. \"Blame tech stocks for tech stock rout\" Genius ‘Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout\nTo err is human, but to blame someone else shows management potential. \"Blame tech stocks for tech stock rout\" Genius ‘Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills",
+              "container": "wallstreetbets",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 261,
+                "score": 1549
+              },
+              "engagement_score": 83,
+              "freshness": 90,
+              "item_id": "R9",
+              "local_rank_score": 0.36000000000000004,
+              "local_relevance": 0.08,
+              "metadata": {
+                "comment_insights": [
+                  "To err is human, but to blame someone else shows management potential.",
+                  "\"Blame tech stocks for tech stock rout\" Genius",
+                  "‘Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend t...",
+                  "I mean Sundar and Zuck was saying they're gonna spend $600 billion dollars on AI at that tech dinner they had with Trump last year. It was true...",
+                  "Finding fault is the first step in problem solving. 👍",
+                  "But they didn't expect that they would dilute shareholders or issue corporate bonds at 10% effective interest rate while going negative on FCF",
+                  "No, we blame idiotic retail for holding on to their Tesla and SpaceX instead of buying these magnificent companies trading at discounts"
+                ],
+                "top_comments": [
+                  {
+                    "author": "Doughnutpower",
+                    "date": "2026-10-30",
+                    "excerpt": "To err is human, but to blame someone else shows management potential.",
+                    "score": 1268,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvichr4siud/"
+                  },
+                  {
+                    "author": "kylkartz21",
+                    "date": "2026-10-30",
+                    "excerpt": "\"Blame tech stocks for tech stock rout\" Genius",
+                    "score": 374,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjvpd3eyqr/"
+                  },
+                  {
+                    "author": "toydan",
+                    "date": "2026-10-30",
+                    "excerpt": "‘Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills ",
+                    "score": 293,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvhyp4x14kj/"
+                  },
+                  {
+                    "author": "No-Paint-5726",
+                    "date": "2026-10-30",
+                    "excerpt": "I mean Sundar and Zuck was saying they're gonna spend $600 billion dollars on AI at that tech dinner they had with Trump last year. It was true...",
+                    "score": 185,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvicbfiamht/"
+                  },
+                  {
+                    "author": "AutisticGayBear69",
+                    "date": "2026-10-30",
+                    "excerpt": "Finding fault is the first step in problem solving. 👍",
+                    "score": 141,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvlypddj4h1/"
+                  },
+                  {
+                    "author": "Soffatjockis",
+                    "date": "2026-10-30",
+                    "excerpt": "But they didn't expect that they would dilute shareholders or issue corporate bonds at 10% effective interest rate while going negative on FCF",
+                    "score": 86,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvnptsmd4kk/"
+                  },
+                  {
+                    "author": "approximately_exact",
+                    "date": "2026-10-30",
+                    "excerpt": "No, we blame idiotic retail for holding on to their Tesla and SpaceX instead of buying these magnificent companies trading at discounts",
+                    "score": 70,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvj9ie1v71h/"
+                  },
+                  {
+                    "author": "Icterus_Galbula",
+                    "date": "2026-10-30",
+                    "excerpt": "The street can get over it, or maybe they should hire actual researchers who can do the work for them. None of this is surprising if they had been monitoring the build out, which is showing no signs o",
+                    "score": 61,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjjf9mmbmq/"
+                  },
+                  {
+                    "author": "zxcvbnmqwerty12345",
+                    "date": "2026-10-30",
+                    "excerpt": "Almost a trillion dollar of capex is just crazy money.",
+                    "score": 48,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvk0a6y7hi8/"
+                  },
+                  {
+                    "author": "Neowarcloud",
+                    "date": "2026-10-30",
+                    "excerpt": "They are also driving the sky high valuations...",
+                    "score": 42,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvhp5sryp2d/"
+                  },
+                  {
+                    "author": "PLEASE_PUNCH_MY_FACE",
+                    "date": "2026-10-30",
+                    "excerpt": "Problem finding is the step first in fault solving.",
+                    "score": 40,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvrhnyxxnj9/"
+                  },
+                  {
+                    "author": "Moddingspreee",
+                    "date": "2026-10-30",
+                    "excerpt": "I also blame Joe Biden",
+                    "score": 37,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvm0l6iatlx/"
+                  }
+                ]
+              },
+              "published_at": "2026-10-30",
+              "relevance_hint": 0.14,
+              "snippet": "To err is human, but to blame someone else shows management potential. \"Blame tech stocks for tech stock rout\" Genius ‘Blame the hyperscalers like Amazon (AMZN), Alphabet (GOOGL) and Meta (META) for not guiding Wall Street properly on how much they intended to spend this year and next on AI infrastructure. The bills",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout",
+              "url": "https://www.reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame/",
+              "why_relevant": "Reddit search"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "cash_conversion"
+          ],
+          "title": "Amazon, Alphabet, SpaceX and Meta are all to blame for the new tech stock rout",
+          "url": "https://www.reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame/"
+        }
+      },
+      "engagement": {
+        "num_comments": 261,
+        "score": 1549
+      },
+      "engine_rank": 1,
+      "author": "unknown",
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "canonical_url": "https://www.reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame/"
+    },
+    {
+      "id": "COMM-S2",
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-26",
+      "retrieved_at": "2026-11-02T08:10:23.765452Z",
+      "quote": "",
+      "locator": "Original post not independently readable; engine body retained in provenance only",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "原文独立抓取失败；仅候选线索。",
+        "relevance": "direct",
+        "purpose": "T1现金兑现/融资、T2行业传导反证",
+        "priority": "useful"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund",
+        "engine_item_id": "R2",
+        "engine_rank": 2,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund",
+          "cluster_id": "cluster-2",
+          "engagement": 75,
+          "explanation": "fallback-local-score",
+          "final_score": 30.132751322751325,
+          "freshness": 76,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 31.914658993092676,
+          "item_id": "R2",
+          "local_relevance": 0.08,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R2",
+                "native_rank": 3,
+                "source": "reddit",
+                "subquery_label": "cash_conversion"
+              }
+            ],
+            "range_from": "2026-10-03",
+            "range_to": "2026-11-02",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "cash_conversion:reddit": 3
+          },
+          "rerank_score": 11.6,
+          "rrf_score": 0.005291005291005291,
+          "snippet": "Why is dilution green now? This is why META is up pre-market in case anyone is wondering. Because company get money. Get money good.",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Meta launches $35 billion stock offering to fund AI expansion\nWhy is dilution green now? This is why META is up pre-market in case anyone is wondering. Because company get money. Get money good.",
+              "container": "wallstreetbets",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 141,
+                "score": 844
+              },
+              "engagement_score": 75,
+              "freshness": 76,
+              "item_id": "R2",
+              "local_rank_score": 0.317,
+              "local_relevance": 0.08,
+              "metadata": {
+                "comment_insights": [
+                  "This is why META is up pre-market in case anyone is wondering.",
+                  "Because company get money. Get money good.",
+                  "It’s all such a fake circlejerk lol",
+                  "It went from -5% to +2% pre-market",
+                  "Facebook : “we have no money. give us more money. Just give us $25 billion more dollar bro I swear Muse will be profitable if you give us $25 billion...",
+                  "Tech has been crushed because people feared a lack of capital meant the music was about to stop. This shows a willingness to keep the music playing.",
+                  "Hyperscalers and AI labs when they see more circular financing"
+                ],
+                "top_comments": [
+                  {
+                    "author": "Fortnait739595958",
+                    "date": "2026-10-26",
+                    "excerpt": "Why is dilution green now?",
+                    "score": 429,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohkloihb7m/"
+                  },
+                  {
+                    "author": "heisthemaincharacter",
+                    "date": "2026-10-26",
+                    "excerpt": "This is why META is up pre-market in case anyone is wondering.",
+                    "score": 260,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpy9ewumd/"
+                  },
+                  {
+                    "author": "ittrut",
+                    "date": "2026-10-26",
+                    "excerpt": "Because company get money. Get money good.",
+                    "score": 189,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohnmdu5mv4/"
+                  },
+                  {
+                    "author": "AmItheonlySaneperson",
+                    "date": "2026-10-26",
+                    "excerpt": "It’s all such a fake circlejerk lol",
+                    "score": 170,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohyruax79c/"
+                  },
+                  {
+                    "author": "TeBp242",
+                    "date": "2026-10-26",
+                    "excerpt": "why the fuck is it up",
+                    "score": 168,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohut0poao5/"
+                  },
+                  {
+                    "author": "rebel-capitalist",
+                    "date": "2026-10-26",
+                    "excerpt": "It went from -5% to +2% pre-market",
+                    "score": 136,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roheavbn2tc/"
+                  },
+                  {
+                    "author": "bubblegum-rose",
+                    "date": "2026-10-26",
+                    "excerpt": "Facebook : “we have no money. give us more money. Just give us $25 billion more dollar bro I swear Muse will be profitable if you give us $25 billion more dollars” Stock market: “🤑🤑🤑 yes Mr. Zuck!!! W",
+                    "score": 136,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpjausyrm/"
+                  },
+                  {
+                    "author": "TheKingInTheNorth",
+                    "date": "2026-10-26",
+                    "excerpt": "Tech has been crushed because people feared a lack of capital meant the music was about to stop. This shows a willingness to keep the music playing.",
+                    "score": 117,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roj5pxbwydh/"
+                  },
+                  {
+                    "author": "_IsNull",
+                    "date": "2026-10-26",
+                    "excerpt": "Stop thinking logically.",
+                    "score": 102,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohq70w36rl/"
+                  },
+                  {
+                    "author": "Wooder__Ice",
+                    "date": "2026-10-26",
+                    "excerpt": "Hyperscalers and AI labs when they see more circular financing",
+                    "score": 87,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roi7y4hlcsi/"
+                  },
+                  {
+                    "author": "Fortnait739595958",
+                    "date": "2026-10-26",
+                    "excerpt": "That has always been the case, also that they are getting that money at your expense",
+                    "score": 62,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohpy94x98l/"
+                  },
+                  {
+                    "author": "impulse07",
+                    "date": "2026-10-26",
+                    "excerpt": "Meta splitting the stock to offer non voting shares like your boy Elon does. Are they going to dilute non voting shares? Who knows. I'm staying away from this shit show.",
+                    "score": 55,
+                    "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19rohm4orzfnp/"
+                  }
+                ]
+              },
+              "published_at": "2026-10-26",
+              "relevance_hint": 0.36,
+              "snippet": "Why is dilution green now? This is why META is up pre-market in case anyone is wondering. Because company get money. Get money good.",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Meta launches $35 billion stock offering to fund AI expansion",
+              "url": "https://www.reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund/",
+              "why_relevant": "Reddit search"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "cash_conversion"
+          ],
+          "title": "Meta launches $35 billion stock offering to fund AI expansion",
+          "url": "https://www.reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund/"
+        }
+      },
+      "engagement": {
+        "num_comments": 141,
+        "score": 844
+      },
+      "engine_rank": 2,
+      "author": "unknown",
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "canonical_url": "https://www.reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund/"
+    },
+    {
+      "id": "COMM-S5",
+      "url": "https://www.reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-22",
+      "retrieved_at": "2026-11-02T08:10:23.765452Z",
+      "quote": "",
+      "locator": "Original post not independently readable; engine body retained in provenance only",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "引擎body等于标题，不能作为原文引述；保留低热度反证/背景候选。",
+        "relevance": "direct",
+        "purpose": "低热度反证待核",
+        "priority": "useful"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts",
+        "engine_item_id": "R13",
+        "engine_rank": 5,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts",
+          "cluster_id": "cluster-5",
+          "engagement": 29,
+          "explanation": "fallback-local-score",
+          "final_score": 23.552626262626262,
+          "freshness": 63,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 10.35,
+          "item_id": "R13",
+          "local_relevance": 0.12,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R13",
+                "native_rank": 6,
+                "source": "reddit",
+                "subquery_label": "cash_conversion"
+              }
+            ],
+            "range_from": "2026-10-03",
+            "range_to": "2026-11-02",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "cash_conversion:reddit": 6
+          },
+          "rerank_score": 14.399999999999999,
+          "rrf_score": 0.00505050505050505,
+          "snippet": "Meta Capex Is Bullish: My Take on Buffett’s Investment Philosophy",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Meta Capex Is Bullish: My Take on Buffett’s Investment Philosophy",
+              "container": "ValueInvesting",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 17,
+                "score": 10
+              },
+              "engagement_score": 29,
+              "freshness": 63,
+              "item_id": "R13",
+              "local_rank_score": 0.26449999999999996,
+              "local_relevance": 0.12,
+              "metadata": {
+                "comment_insights": [],
+                "top_comments": []
+              },
+              "published_at": "2026-10-22",
+              "relevance_hint": 0.15,
+              "snippet": "Meta Capex Is Bullish: My Take on Buffett’s Investment Philosophy",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Meta Capex Is Bullish: My Take on Buffett’s Investment Philosophy",
+              "url": "https://www.reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts/",
+              "why_relevant": "Reddit search"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "cash_conversion"
+          ],
+          "title": "Meta Capex Is Bullish: My Take on Buffett’s Investment Philosophy",
+          "url": "https://www.reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts/"
+        }
+      },
+      "engagement": {
+        "num_comments": 17,
+        "score": 10
+      },
+      "engine_rank": 5,
+      "author": "unknown",
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "canonical_url": "https://www.reddit.com/r/ValueInvesting/comments/1xckdyz/meta_capex_is_bullish_my_take_on_buffetts/"
+    },
+    {
+      "id": "PX-CLOSE",
+      "url": "https://stockanalysis.com/stocks/meta/history/",
+      "canonical_url": "https://stockanalysis.com/stocks/meta/history/",
+      "publisher": "Stock Analysis / S&P Global Market Intelligence",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Oct 30, 2026 | Open 614.51 | High 626.37 | Low 610.13 | Close 614.99 | Adj. Close 614.99 | Change -1.53% | Volume 25,400,688; 4:00 PM EDT; USD",
+      "locator": "Historical Data table Oct 30 2026 row; header quote timestamp/currency; data provider note",
+      "origin_id": "spglobal-meta-20261030-eod",
+      "origin_basis": "Stock Analysis explicitly identifies S&P Global Market Intelligence upstream; not independent of its vendor",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T3 latest completed regular-session baseline; Nov2 08:10 UTC retrieval is premarket",
+        "relevance": "direct",
+        "purpose": "T3 latest completed regular-session baseline; Nov2 08:10 UTC retrieval is premarket",
+        "priority": "useful"
+      },
+      "market_quote": {
+        "quoted_at": "2026-10-30T16:00:00-04:00",
+        "instrument": "NASDAQ:META Class A common stock (issuer identity confirmed by Q3 10-Q cover)",
+        "outcome": "Class A share price",
+        "direction": "level",
+        "value": 614.99,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "date_nature": "page last data update Oct30; publication time unknown; quote time explicit"
+    },
+    {
+      "id": "PX-PATH",
+      "url": "https://stockanalysis.com/stocks/meta/history/",
+      "canonical_url": "https://stockanalysis.com/stocks/meta/history/",
+      "publisher": "Stock Analysis / S&P Global Market Intelligence",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Oct 21, 2026 | Close 697.52; Oct 22, 2026 | Close 648.85; Oct 23 | 642.62; Oct 26 | 630.56; Oct 27 | 620.19; Oct 28 | 612.49; Oct 29 | 624.52; Oct 30 | 614.99",
+      "locator": "Historical Data table date rows; USD regular daily closes",
+      "origin_id": "spglobal-meta-eod",
+      "origin_basis": "Same explicitly named upstream vendor as PX-CLOSE",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "历史价格另拆为具时刻的price片段，不作为fact绕过价格要求。",
+        "relevance": "direct",
+        "purpose": "T3 raw inputs for already-realized price path; no causal attribution",
+        "priority": "useful"
+      },
+      "qualification": "For strict price claims split into separately timestamped market_quote candidates; this fragment is raw historical table input, not a price-qualified claim."
+    },
+    {
+      "id": "VOL-AQ",
+      "url": "https://www.alphaquery.com/stock/META/volatility-option-statistics/30-day/iv-mean",
+      "canonical_url": "https://www.alphaquery.com/stock/META/volatility-option-statistics/30-day/iv-mean",
+      "publisher": "AlphaQuery / Market Computing LLC",
+      "tier": "T3",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "2026-10-30; 30-Day; Last Closing Price 614.99; Historical Volatility (Close-to-Close) 0.3649; Historical Volatility (Parkinson) 0.2987; Implied Volatility (Calls) 0.3868; Implied Volatility (Puts) 0.3877; Implied Volatility (Mean) 0.3873; derived from the average of the put and call implied volatilities",
+      "locator": "30-Day volatility statistics dated 2026-10-30 and IV definition",
+      "origin_id": "alphaquery-meta-20261030-vol",
+      "origin_basis": "AlphaQuery own displayed calculated statistics; upstream vendor unidentified",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T3 traceable dated vendor estimate only; insufficient methodology for strict touch-probability model",
+        "relevance": "direct",
+        "purpose": "T3 traceable dated vendor estimate only; insufficient methodology for strict touch-probability model",
+        "priority": "useful"
+      },
+      "qualification": "No clock time/timezone, explicit annualization convention, pricing model, risk-free/dividend input, strike/expiry set or upstream data disclosed. Decimal values retained without converting units. Not executable option quotes."
+    },
+    {
+      "id": "CAL-FED",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "canonical_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publisher": "Federal Reserve",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "2026 FOMC Meetings; October 27-28; December 8-9; Last Update: October 28, 2026",
+      "locator": "2026 FOMC Meetings calendar; no November row; page footer",
+      "origin_id": "fed-fomc-calendar-2026",
+      "origin_basis": "Federal Reserve publishes own schedule",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T2 correct November catalyst premise: no regularly scheduled November meeting",
+        "relevance": "direct",
+        "purpose": "T2 correct November catalyst premise: no regularly scheduled November meeting",
+        "priority": "useful"
+      },
+      "updated_at": "2026-10-28",
+      "qualification": "November minutes release date not supplied; do not infer confirmed date."
+    },
+    {
+      "id": "CAL-BLS",
+      "url": "https://www.bls.gov/schedule/2026/home.htm",
+      "canonical_url": "https://www.bls.gov/schedule/2026/home.htm",
+      "publisher": "Bureau of Labor Statistics",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "NOTE: All times on calendar are Eastern Time. Last Modified Date: February 18, 2026; November 6, 2026 08:30 AM Employment Situation for October 2026; November 10, 2026 08:30 AM Consumer Price Index for October 2026 (table transcription).",
+      "locator": "2026 release calendar November entries: JOLTS September2026 Nov3 10:00; Employment Situation October2026 Nov6 08:30; CPI October2026 Nov10 08:30; PPI October2026 Nov13 08:30 (entries transcribed, not direct prose quotation)",
+      "origin_id": "bls-release-calendar-2026",
+      "origin_basis": "BLS publishes own release schedule",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T2 confirmed scheduled macro windows; no outcomes or surveyed expectations yet",
+        "relevance": "direct",
+        "purpose": "T2 confirmed scheduled macro windows; no outcomes or surveyed expectations yet",
+        "priority": "useful"
+      },
+      "updated_at": "2026-02-18",
+      "events": [
+        {
+          "event": "JOLTS September2026",
+          "at": "2026-11-03T10:00:00-05:00"
+        },
+        {
+          "event": "Employment Situation October2026",
+          "at": "2026-11-06T08:30:00-05:00"
+        },
+        {
+          "event": "CPI October2026",
+          "at": "2026-11-10T08:30:00-05:00"
+        },
+        {
+          "event": "PPI October2026",
+          "at": "2026-11-13T08:30:00-05:00"
+        }
+      ]
+    },
+    {
+      "id": "CAL-FEC",
+      "url": "https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2026-reporting-dates/electioneering-communications-periods-general-election-2026/",
+      "canonical_url": "https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2026-reporting-dates/electioneering-communications-periods-general-election-2026/",
+      "publisher": "Federal Election Commission",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Electioneering communications periods: general election (2026); Electioneering communications period for the general election; General election date: 11/03/2026 (table transcription).",
+      "locator": "General election table; date 11/03/2026, disclosure period 09/04/2026-11/03/2026 (table transcribed)",
+      "origin_id": "fec-election-calendar-2026",
+      "origin_basis": "FEC own election/disclosure schedule",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T2 election date confirmed, outcomes and market impact remain unknown",
+        "relevance": "direct",
+        "purpose": "T2 election date confirmed, outcomes and market impact remain unknown",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "EXPECT-MTN",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-q3-earnings-revenue-201155968.html",
+      "canonical_url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-q3-earnings-revenue-201155968.html",
+      "publisher": "MT Newswires via Yahoo Finance",
+      "tier": "T2",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Analysts polled by FactSet expected $6.54. Analysts expected $63.34 billion. Analysts expect $73.65 billion.",
+      "locator": "Body: Q3 EPS, Q3 revenue and Q4 revenue expectation sentences respectively",
+      "origin_id": "factset-meta-20261021-mtn",
+      "origin_basis": "Article explicitly names FactSet for Q3 EPS, not sample/method; Q3/Q4 revenue provider not separately specified",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "Expectation lead only: missing sample, method and polling date; no validated survey/consensus claim",
+        "relevance": "direct",
+        "purpose": "Expectation lead only: missing sample, method and polling date; no validated survey/consensus claim",
+        "priority": "useful"
+      },
+      "qualification": "No publication clock time; Q3 EPS GAAP/adjusted comparability not established."
+    },
+    {
+      "id": "EXPECT-THETA",
+      "url": "https://www.theta.md/earnings/meta/q4-2026",
+      "canonical_url": "https://www.theta.md/earnings/meta/q4-2026",
+      "publisher": "Theta Research",
+      "tier": "T3",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "USD 75.16B; USD 8.33; October 30, 2026",
+      "locator": "Q4 FY2026 consensus revenue and EPS; data date",
+      "origin_id": "theta-meta-q4-2026-20261030",
+      "origin_basis": "Unidentified third-party aggregated estimates; upstream vendor undisclosed",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "Expectation lead only: no named provider, analyst count, collection window, aggregation method or publication time; cannot establish consensus or same-provider revision",
+        "relevance": "direct",
+        "purpose": "Expectation lead only: no named provider, analyst count, collection window, aggregation method or publication time; cannot establish consensus or same-provider revision",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "REUTERS-RISK",
+      "url": "https://www.investing.com/news/stock-market-news/meta-falls-as-investors-balance-muse-growth-with-rising-ai-costs-4965902",
+      "canonical_url": "https://www.investing.com/news/stock-market-news/meta-falls-as-investors-balance-muse-growth-with-rising-ai-costs-4965902",
+      "publisher": "Reuters via Investing.com",
+      "tier": "T2",
+      "published_at": "2026-10-22",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Meta shares slide, default insurance hits record as AI spending alarms investors; fell more than 7%",
+      "locator": "Headline and opening share-performance clause; published 08:07 AM, updated 01:24 PM Oct22; timezone absent",
+      "origin_id": "reuters-meta-20261022",
+      "origin_basis": "Reuters reporting; financial numbers in story refer back to company release, not independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "Context only; no sector benchmark or independent expected-cost revision. Reported possibility of equity issuance starting autumn2026 conflicts with issuer ClassC effective January2027; do not use for November action timing",
+        "relevance": "direct",
+        "purpose": "Context only; no sector benchmark or independent expected-cost revision. Reported possibility of equity issuance starting autumn2026 conflicts with issuer ClassC effective January2027; do not use for November action timing",
+        "priority": "useful"
+      },
+      "updated_at": "2026-10-22",
+      "qualification": "Author Prathik Jayaprakash and Aditya Soni. CDS interpretation attributed to Shay Boloor; not independently verified."
+    },
+    {
+      "id": "SEC-IDENTITY",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+      "publisher": "Meta filing via SEC EDGAR",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "For the quarterly period ended September 30, 2026; Class A Common Stock, $0.000006 par value; META",
+      "locator": "10-Q cover page",
+      "origin_id": "meta-q3-2026-10q",
+      "origin_basis": "Issuer filing establishes security identity",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T3 confirm META ClassA identity for price wrapper",
+        "relevance": "direct",
+        "purpose": "T3 confirm META ClassA identity for price wrapper",
+        "priority": "useful"
+      },
+      "qualification": "Fetch covered first 100000/129748 characters; requested capex/ClassC discussion not in returned excerpt, cannot claim absent from full filing."
+    },
+    {
+      "id": "PX-OCT21",
+      "url": "https://stockanalysis.com/stocks/meta/history/",
+      "canonical_url": "https://stockanalysis.com/stocks/meta/history/",
+      "publisher": "Stock Analysis / S&P Global Market Intelligence",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Oct 21, 2026 | Close 697.52 (USD)",
+      "locator": "Historical Data table Oct21 2026 Close column",
+      "origin_id": "spglobal-meta-eod",
+      "origin_basis": "Stock Analysis explicitly identifies S&P Global Market Intelligence upstream; not independent of its vendor",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T3 latest completed regular-session baseline; Nov2 08:10 UTC retrieval is premarket",
+        "relevance": "direct",
+        "purpose": "T3 latest completed regular-session baseline; Nov2 08:10 UTC retrieval is premarket",
+        "priority": "useful"
+      },
+      "market_quote": {
+        "quoted_at": "2026-10-21T16:00:00-04:00",
+        "instrument": "NASDAQ:META Class A common stock (issuer identity confirmed by Q3 10-Q cover)",
+        "outcome": "Class A share price",
+        "direction": "level",
+        "value": 697.52,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "date_nature": "page last data update Oct30; publication time unknown; quote time explicit"
+    },
+    {
+      "id": "COMM-COMM-C7",
+      "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvnptsmd4kk/",
+      "canonical_url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvnptsmd4kk/",
+      "publisher": "reddit",
+      "platform": "reddit",
+      "author": "Soffatjockis",
+      "tier": "T4",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-11-02T08:10:23.765452+00:00",
+      "quote": "",
+      "locator": "engine metadata.top_comments excerpt; permalink open failed",
+      "engine_excerpt": "But they didn't expect that they would dilute shareholders or issue corporate bonds at 10% effective interest rate while going negative on FCF",
+      "origin_id": null,
+      "origin_basis": "Unknown original factual source; same-thread comments are not independent factual confirmations",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "engagement": {
+        "score": 86
+      },
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "engine_rank": 1,
+      "provenance": {
+        "engine": "last30days",
+        "parent_candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame",
+        "comment": {
+          "author": "Soffatjockis",
+          "date": "2026-10-30",
+          "excerpt": "But they didn't expect that they would dilute shareholders or issue corporate bonds at 10% effective interest rate while going negative on FCF",
+          "score": 86,
+          "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvnptsmd4kk/"
+        },
+        "original_open": "failed; Reddit WebFetch unavailable"
+      },
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": false,
+        "reason": "成本以外的融资/稀释路径；10%等数字必须追原件。 原文打不开，未升级可引用证据。",
+        "relevance": "direct",
+        "purpose": "区分解释的待核线索",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "COMM-COMM-C8",
+      "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjjf9mmbmq/",
+      "canonical_url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjjf9mmbmq/",
+      "publisher": "reddit",
+      "platform": "reddit",
+      "author": "Icterus_Galbula",
+      "tier": "T4",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-11-02T08:10:23.765452+00:00",
+      "quote": "",
+      "locator": "engine metadata.top_comments excerpt; permalink open failed",
+      "engine_excerpt": "The street can get over it, or maybe they should hire actual researchers who can do the work for them. None of this is surprising if they had been monitoring the build out, which is showing no signs o",
+      "origin_id": null,
+      "origin_basis": "Unknown original factual source; same-thread comments are not independent factual confirmations",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "engagement": {
+        "score": 61
+      },
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "engine_rank": 1,
+      "provenance": {
+        "engine": "last30days",
+        "parent_candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/amazon_alphabet_spacex_and_meta_are_all_to_blame",
+        "comment": {
+          "author": "Icterus_Galbula",
+          "date": "2026-10-30",
+          "excerpt": "The street can get over it, or maybe they should hire actual researchers who can do the work for them. None of this is surprising if they had been monitoring the build out, which is showing no signs o",
+          "score": 61,
+          "url": "https://reddit.com/r/wallstreetbets/comments/1xjaz2h/comment/19rvjjf9mmbmq/"
+        },
+        "original_open": "failed; Reddit WebFetch unavailable"
+      },
+      "test_ids": [
+        "T1"
+      ],
+      "selection": {
+        "selected": false,
+        "reason": "相对低互动反证：投入或早已可预见，需找当时已公开建设证据。 原文打不开，未升级可引用证据。",
+        "relevance": "direct",
+        "purpose": "区分解释的待核线索",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "COMM-COMM-C9",
+      "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roj5pxbwydh/",
+      "canonical_url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roj5pxbwydh/",
+      "publisher": "reddit",
+      "platform": "reddit",
+      "author": "TheKingInTheNorth",
+      "tier": "T4",
+      "published_at": "2026-10-26",
+      "retrieved_at": "2026-11-02T08:10:23.765452+00:00",
+      "quote": "",
+      "locator": "engine metadata.top_comments excerpt; permalink open failed",
+      "engine_excerpt": "Tech has been crushed because people feared a lack of capital meant the music was about to stop. This shows a willingness to keep the music playing.",
+      "origin_id": null,
+      "origin_basis": "Unknown original factual source; same-thread comments are not independent factual confirmations",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "engagement": {
+        "score": 117
+      },
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "engine_rank": 2,
+      "provenance": {
+        "engine": "last30days",
+        "parent_candidate_id": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/meta_launches_35_billion_stock_offering_to_fund",
+        "comment": {
+          "author": "TheKingInTheNorth",
+          "date": "2026-10-26",
+          "excerpt": "Tech has been crushed because people feared a lack of capital meant the music was about to stop. This shows a willingness to keep the music playing.",
+          "score": 117,
+          "url": "https://reddit.com/r/wallstreetbets/comments/1xfu6n1/comment/19roj5pxbwydh/"
+        },
+        "original_open": "failed; Reddit WebFetch unavailable"
+      },
+      "test_ids": [
+        "T1",
+        "T2"
+      ],
+      "selection": {
+        "selected": false,
+        "reason": "反证：新增融资可能缓解资金约束，短期价格方向不等于长期每股价值方向。 原文打不开，未升级可引用证据。",
+        "relevance": "direct",
+        "purpose": "区分解释的待核线索",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "COMM-S4",
+      "url": "https://www.reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T08:10:23.765452Z",
+      "quote": "",
+      "locator": "Original post not independently readable; engine body retained in provenance only",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "引擎body等于标题，不能作为原文引述；保留低热度反证/背景候选。",
+        "relevance": "direct",
+        "purpose": "线索待核",
+        "priority": "background"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750",
+        "engine_item_id": "R15",
+        "engine_rank": 4,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750",
+          "cluster_id": "cluster-4",
+          "engagement": 26,
+          "explanation": "fallback-local-score",
+          "final_score": 25.142083333333332,
+          "freshness": 83,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 14.549999999999999,
+          "item_id": "R15",
+          "local_relevance": 0.12,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R15",
+                "native_rank": 4,
+                "source": "reddit",
+                "subquery_label": "cash_conversion"
+              }
+            ],
+            "range_from": "2026-10-03",
+            "range_to": "2026-11-02",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "cash_conversion:reddit": 4
+          },
+          "rerank_score": 14.399999999999999,
+          "rrf_score": 0.005208333333333333,
+          "snippet": "Will the META stock ever recover back to over $750?",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Will the META stock ever recover back to over $750?",
+              "container": "MetaAI",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 15,
+                "score": 6
+              },
+              "engagement_score": 26,
+              "freshness": 83,
+              "item_id": "R15",
+              "local_rank_score": 0.3115,
+              "local_relevance": 0.12,
+              "metadata": {
+                "comment_insights": [],
+                "top_comments": []
+              },
+              "published_at": "2026-10-28",
+              "relevance_hint": 0.15,
+              "snippet": "Will the META stock ever recover back to over $750?",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Will the META stock ever recover back to over $750?",
+              "url": "https://www.reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750/",
+              "why_relevant": "Reddit search"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "cash_conversion"
+          ],
+          "title": "Will the META stock ever recover back to over $750?",
+          "url": "https://www.reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750/"
+        }
+      },
+      "engagement": {
+        "num_comments": 15,
+        "score": 6
+      },
+      "engine_rank": 4,
+      "author": "unknown",
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "canonical_url": "https://www.reddit.com/r/MetaAI/comments/1xi41u3/will_the_meta_stock_ever_recover_back_to_over_750/"
+    },
+    {
+      "id": "COMM-S3",
+      "url": "https://www.reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-27",
+      "retrieved_at": "2026-11-02T08:10:23.765452Z",
+      "quote": "",
+      "locator": "Original post not independently readable; engine body retained in provenance only",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "原文独立抓取失败；仅候选线索。",
+        "relevance": "context",
+        "purpose": "T1现金兑现/融资、T2行业传导反证",
+        "priority": "background"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants",
+        "engine_item_id": "R3",
+        "engine_rank": 3,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants",
+          "cluster_id": "cluster-3",
+          "engagement": 64,
+          "explanation": "fallback-local-score",
+          "final_score": 27.16205128205128,
+          "freshness": 80,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 28.43514411511726,
+          "item_id": "R3",
+          "local_relevance": 0.04,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R3",
+                "native_rank": 5,
+                "source": "reddit",
+                "subquery_label": "cash_conversion"
+              }
+            ],
+            "range_from": "2026-10-03",
+            "range_to": "2026-11-02",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "cash_conversion:reddit": 5
+          },
+          "rerank_score": 8.8,
+          "rrf_score": 0.005128205128205128,
+          "snippet": "With all these companies owning pieces of each other, how long until they are effectively one mega corp? What a beautiful circlejerk. $3 Billion… what is this, data center for ants?!",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership\nWith all these companies owning pieces of each other, how long until they are effectively one mega corp? What a beautiful circlejerk. $3 Billion… what is this, data center for ants?!",
+              "container": "stocks",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 76,
+                "score": 287
+              },
+              "engagement_score": 64,
+              "freshness": 80,
+              "item_id": "R3",
+              "local_rank_score": 0.29000000000000004,
+              "local_relevance": 0.04,
+              "metadata": {
+                "comment_insights": [
+                  "With all these companies owning pieces of each other, how long until they are effectively one mega corp?",
+                  "$3 Billion… what is this, data center for ants?!",
+                  "Which will be too big to fail...",
+                  "Which Meta will use it buy Nividia chips, and everything look perfect",
+                  "This is like the equivalent of buying your buddy a single beer like how is this even news worthy",
+                  "Does a seller investing in a customer ever end well?",
+                  "Owning Nvidia is basically just investing into an ETF"
+                ],
+                "top_comments": [
+                  {
+                    "author": "ikefalcon",
+                    "date": "2026-10-27",
+                    "excerpt": "With all these companies owning pieces of each other, how long until they are effectively one mega corp?",
+                    "score": 221,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9whta7kgw/"
+                  },
+                  {
+                    "author": "CalebVanPoneisen",
+                    "date": "2026-10-27",
+                    "excerpt": "What a beautiful circlejerk.",
+                    "score": 152,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9hj1kvtyd/"
+                  },
+                  {
+                    "author": "questionname",
+                    "date": "2026-10-27",
+                    "excerpt": "$3 Billion… what is this, data center for ants?!",
+                    "score": 113,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqajdf9ye76/"
+                  },
+                  {
+                    "author": "BuzzerWhirr",
+                    "date": "2026-10-27",
+                    "excerpt": "Which will be too big to fail...",
+                    "score": 91,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa7v11veqs/"
+                  },
+                  {
+                    "author": "Rubricity",
+                    "date": "2026-10-27",
+                    "excerpt": "Which Meta will use it buy Nividia chips, and everything look perfect",
+                    "score": 61,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rq9hxkvm1r6/"
+                  },
+                  {
+                    "author": "vaticanhotline",
+                    "date": "2026-10-27",
+                    "excerpt": "Weyland-Yutani vibes.",
+                    "score": 60,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa9azr2v6p/"
+                  },
+                  {
+                    "author": "foundboots",
+                    "date": "2026-10-27",
+                    "excerpt": "This is like the equivalent of buying your buddy a single beer like how is this even news worthy",
+                    "score": 47,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqe6xv48yn8/"
+                  },
+                  {
+                    "author": "BuzzerWhirr",
+                    "date": "2026-10-27",
+                    "excerpt": "Does a seller investing in a customer ever end well? Giving them your money to buy your product? So you can give them more money to buy more of your product? Carlo Ponzi has entered the chat...",
+                    "score": 44,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa1oecnyar/"
+                  },
+                  {
+                    "author": "nightwica",
+                    "date": "2026-10-27",
+                    "excerpt": "Owning Nvidia is basically just investing into an ETF",
+                    "score": 22,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqhf4n9i5ib/"
+                  },
+                  {
+                    "author": "mikeydoc96",
+                    "date": "2026-10-27",
+                    "excerpt": "How many companies does Nvidia own shares in now? Must be near 25",
+                    "score": 21,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa4x8ofi3o/"
+                  },
+                  {
+                    "author": "ozthinker",
+                    "date": "2026-10-27",
+                    "excerpt": "They won't. $3b investment is small, compared to the amount being raised by Meta. Nvidia has been more careful in the past few months, not just for reducing the risk of circular financing, but also to",
+                    "score": 16,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqi8414dx7k/"
+                  },
+                  {
+                    "author": "RedshiftOnPandy",
+                    "date": "2026-10-27",
+                    "excerpt": "Why is Nvidia investing into Meta? Meta is selling data centre time now because no one uses their AI",
+                    "score": 16,
+                    "url": "https://reddit.com/r/stocks/comments/1xgptmy/comment/19rqa8cdl8h2d/"
+                  }
+                ]
+              },
+              "published_at": "2026-10-27",
+              "relevance_hint": 0.27,
+              "snippet": "With all these companies owning pieces of each other, how long until they are effectively one mega corp? What a beautiful circlejerk. $3 Billion… what is this, data center for ants?!",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
+              "url": "https://www.reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants/",
+              "why_relevant": "Reddit search"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "cash_conversion"
+          ],
+          "title": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
+          "url": "https://www.reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants/"
+        }
+      },
+      "engagement": {
+        "num_comments": 76,
+        "score": 287
+      },
+      "engine_rank": 3,
+      "author": "unknown",
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1xgptmy/nvidia_to_invest_3_billion_in_meta_as_tech_giants/"
+    },
+    {
+      "id": "COMM-S6",
+      "url": "https://www.reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T08:10:23.765452Z",
+      "quote": "",
+      "locator": "Original post not independently readable; engine body retained in provenance only",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "引擎body等于标题，不能作为原文引述；保留低热度反证/背景候选。",
+        "relevance": "context",
+        "purpose": "线索待核",
+        "priority": "background"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex",
+        "engine_item_id": "R1",
+        "engine_rank": 6,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex",
+          "cluster_id": "cluster-6",
+          "engagement": 71,
+          "explanation": "fallback-local-score (entity-miss demotion)",
+          "final_score": 3.294086021505379,
+          "freshness": 83,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 0.75,
+          "item_id": "R1",
+          "local_relevance": 0.09,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R1",
+                "native_rank": 2,
+                "source": "reddit",
+                "subquery_label": "cash_conversion"
+              }
+            ],
+            "range_from": "2026-10-03",
+            "range_to": "2026-11-02",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "cash_conversion:reddit": 2
+          },
+          "rerank_score": 0.0,
+          "rrf_score": 0.005376344086021505,
+          "snippet": "Alphabet’s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Alphabet’s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+              "container": "stocks",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 315,
+                "score": 872
+              },
+              "engagement_score": 71,
+              "freshness": 83,
+              "item_id": "R1",
+              "local_rank_score": 0.337,
+              "local_relevance": 0.09,
+              "metadata": {
+                "comment_insights": [],
+                "top_comments": []
+              },
+              "published_at": "2026-10-28",
+              "relevance_hint": 0.42,
+              "snippet": "Alphabet’s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Alphabet’s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+              "url": "https://www.reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex/",
+              "why_relevant": "Reddit listing"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "cash_conversion"
+          ],
+          "title": "Alphabet’s free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
+          "url": "https://www.reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex/"
+        }
+      },
+      "engagement": {
+        "num_comments": 315,
+        "score": 872
+      },
+      "engine_rank": 6,
+      "author": "unknown",
+      "engagement_collected_at": "2026-11-02T08:10:23.765452+00:00",
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1xhza38/alphabets_free_cash_flow_sinks_further_q3_capex/"
+    }
+  ],
+  "source_status": {
+    "official": {
+      "status": "ok",
+      "reason": "原始财报与宏观日历已核对"
+    },
+    "market": {
+      "status": "ok",
+      "reason": "Gamma规则与30个token的CLOB订单簿及fee-rate已取得；异步快照，价格可变"
+    },
+    "consensus": {
+      "status": "partial",
+      "reason": "检索到具名预期线索但缺调查方法样本，不纳为consensus"
+    },
+    "volatility": {
+      "status": "partial",
+      "reason": "有AlphaQuery显示值，缺完整期权链和校准方法"
+    },
+    "community": {
+      "status": "partial",
+      "reason": "Last30Days候选保留；原文获取失败，全部未选中"
+    },
+    "relative_returns": {
+      "status": "not_run",
+      "reason": "未收集同窗QQQ及同业，不能作个股/宏观收益归因"
+    }
+  },
+  "selection_summary": {
+    "selected": [
+      "META-AD",
+      "META-PROFIT",
+      "META-LEGAL",
+      "META-CASH",
+      "META-Q4",
+      "META-CAPEX",
+      "META-COST",
+      "META-2027",
+      "META-AI",
+      "META-RL",
+      "META-CLASSC",
+      "S-RULES",
+      "S-FEES",
+      "S-FEESCHEDULE",
+      "S-UP780-Yes",
+      "S-UP780-No",
+      "S-UP760-Yes",
+      "S-UP760-No",
+      "S-UP740-Yes",
+      "S-UP740-No",
+      "S-UP720-Yes",
+      "S-UP720-No",
+      "S-UP700-Yes",
+      "S-UP700-No",
+      "S-UP680-Yes",
+      "S-UP680-No",
+      "S-UP660-Yes",
+      "S-UP660-No",
+      "S-DOWN640-Yes",
+      "S-DOWN640-No",
+      "S-DOWN620-Yes",
+      "S-DOWN620-No",
+      "S-DOWN600-Yes",
+      "S-DOWN600-No",
+      "S-DOWN580-Yes",
+      "S-DOWN580-No",
+      "S-DOWN560-Yes",
+      "S-DOWN560-No",
+      "S-DOWN540-Yes",
+      "S-DOWN540-No",
+      "S-DOWN520-Yes",
+      "S-DOWN520-No",
+      "S-DOWN500-Yes",
+      "S-DOWN500-No",
+      "PX-CLOSE",
+      "VOL-AQ",
+      "CAL-FED",
+      "CAL-BLS",
+      "CAL-FEC",
+      "SEC-IDENTITY",
+      "PX-OCT21"
+    ],
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": "0.5.0",
+  "result": "implemented_and_engineering_validated",
+  "contract": "journal/plans/value-upgrade-contract-20261102.md",
+  "acceptance": {
+    "AC-1": {"status": "pass", "evidence": ["scripts/opportunity_contract.py", "tests/test_opportunities.py", "cases/frozen-event/report.json"]},
+    "AC-2": {"status": "implemented", "evidence": ["skills/research/SKILL.md", "agents/fact-collector.md", "agents/community-scout.md", "agents/red-team.md", "baseline-to-current.diff"], "limit": "No new live retrieval behavior evaluation"},
+    "AC-3": {"status": "pass", "evidence": ["tests/test_opportunities.py", "cases/results.json", "scripts/opportunities.py"]},
+    "AC-4": {"status": "pass", "evidence": ["tests/test_opportunities.py", "scripts/research_run.py", "tests.stderr.log"]},
+    "AC-5": {"status": "foundation_implemented_cases_validated", "evidence": ["cases/results.json", "tests/test_opportunities.py", "skills/research/references/research-value.md"], "limit": "Frozen research reframing and synthetic scenarios only; prospective market outcomes and returns not evaluated"},
+    "AC-6": {"status": "pass", "evidence": ["installation.json", "plugin-validate.json", "plugin-manifest-validate.json", "review.json", "cache-sync.json"]}
+  },
+  "commands": [
+    {"command": "python3 -m unittest discover -s tests -v", "exit_code": 0, "tests": 172, "stdout": "tests.stdout.log", "stderr": "tests.stderr.log"},
+    {"command": "python3 evidence/value-upgrade-20261102/verify_cases.py", "exit_code": 0, "stdout": "cases.stdout.log", "stderr": "cases.stderr.log"},
+    {"command": "claude plugin validate . --json", "exit_code": 0, "stdout": "plugin-validate.json"},
+    {"command": "claude plugin validate .claude-plugin/plugin.json --json", "exit_code": 0, "stdout": "plugin-manifest-validate.json"},
+    {"command": "claude plugin marketplace update touyan-local", "exit_code": 0, "stdout": "marketplace-update.stdout.log", "stderr": "marketplace-update.stderr.log"},
+    {"command": "claude plugin update touyan@touyan-local", "exit_code": 0, "stdout": "plugin-update.stdout.log", "stderr": "plugin-update.stderr.log"},
+    {"command": "claude plugin update touyan@touyan-local --json", "exit_code": 0, "outcome": "up_to_date; did not copy finalized same-version prompt files", "stdout": "plugin-refresh.stdout.log"},
+    {"command": "python3 evidence/value-upgrade-20261102/verify_installation.py", "initial_outcome": "failed on two finalized prompt hashes", "remediation": "Backed up and synchronized exactly two prompt files; see cache-sync.json", "final_exit_code": 0, "matched_files": 44, "installed_tests": 172, "evidence": "installation.json"}
+  ],
+  "not_run": ["live research with upgraded workflow", "prospective forecast or investment return evaluation", "new session reload", "build/lint/typecheck: no separate configured pipeline used"],
+  "notes": "Original frozen research preserved. No GitHub writes. Existing nonblocking directory warnings recorded in plugin validation."
+}

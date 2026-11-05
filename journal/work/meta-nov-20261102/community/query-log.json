@@ -1,0 +1,45 @@
+[
+  {
+    "query": "Last30Days engine-plan.json",
+    "source": "reddit,youtube,hackernews requested",
+    "executed_at": "2026-11-02T08:09:05.629181+00:00",
+    "status": "partial",
+    "candidate_path": "/Users/frankzhang/Desktop/投研助手/journal/work/meta-nov-20261102/community/community-candidates.json"
+  },
+  {
+    "query": "site.reddit.com/r/stocks META October 2026 earnings capex 2027 November",
+    "source": "WebSearch",
+    "executed_at": "2026-11-02T08:12:21.188540+00:00",
+    "status": "partial",
+    "candidate_path": "/Users/frankzhang/Desktop/投研助手/journal/work/meta-nov-20261102/community/sources.json",
+    "notes": "Leads only; original Reddit WebFetch failed"
+  },
+  {
+    "query": "site.reddit.com/r/ValueInvesting/comments/1xchqrd meta",
+    "source": "WebSearch",
+    "executed_at": "2026-11-02T08:12:21.188540+00:00",
+    "status": "no_results",
+    "notes": "No exact ID reproduced, initial result not verified"
+  },
+  {
+    "query": "site.reddit.com Meta November 2026 Polymarket",
+    "source": "WebSearch",
+    "executed_at": "2026-11-02T08:12:21.188540+00:00",
+    "status": "partial",
+    "notes": "No direct touch vs close community debate; mixed unrelated discussions"
+  },
+  {
+    "query": "site.reddit.com META October 2026 Nasdaq capex",
+    "source": "WebSearch",
+    "executed_at": "2026-11-02T08:12:21.188540+00:00",
+    "status": "partial",
+    "notes": "Daily thread leads only; no verified relative returns"
+  },
+  {
+    "query": "Reddit original post/comment opens: ValueInvesting 1xchqrd, stocks 1xbxxwm, meta_stock 1xc7qh0, comments 19roj5pxbwydh and 19rvnptsmd4kk",
+    "source": "WebFetch and one public JSON curl",
+    "executed_at": "2026-11-02T08:12:21.188540+00:00",
+    "status": "unreachable",
+    "notes": "WebFetch unavailable for reddit/old.reddit; public JSON HTTP403; response saved"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "qid": "Q185",
+  "as_of": "2026-07-17",
+  "kept": [
+    {
+      "excerpt": "Russian forces continued offensive operations in the Hulyaipole direction and western Zaporizhia Oblast on July 16 and 17 but did not advance. ISW has observed evidence to assess that Russian forces are losing 1.6 square kilometers per day thus far in July 2026.",
+      "published_at": "2026-07-17",
+      "publisher": "Institute for the Study of War and AEI Critical Threats Project",
+      "relevance": "Provides the cutoff-date assessment of local offensive progress and the broader territorial trend, although it does not independently establish complete municipal map coverage.",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-july-17-2026"
+    },
+    {
+      "excerpt": "The Russians continue pressing along the entire line of contact, with a total of 249 combat clashes occurring on the battlefield over the past day. On the Huliaipole front, the Russians conducted 17 attacks towards the settlements of Kosivtseve, Verkhnia Tersa, Tsvitkove, Charivne, Hirke and Vozdvyzhivka.",
+      "published_at": "2026-07-17",
+      "publisher": "Ukrainska Pravda, citing the General Staff of the Armed Forces of Ukraine",
+      "relevance": "Supplies a contemporaneous Ukrainian official account of attack intensity and the locations of fighting around Huliaipole.",
+      "url": "https://www.pravda.com.ua/eng/news/2026/07/17/8044490/index.amp"
+    },
+    {
+      "excerpt": "Two Ukrainian military units operating in the Hulyaipole direction refuted on July 2 the Russian Ministry of Defense (MoD)’s June 30 and July 1 claims that Russian forces seized Lisne and Kopani, and geolocated footage posted on July 2 and 3 shows Ukrainian forces operating in Lisne and Kopani. The units stated that Ukrainian forces destroyed Russian forces attacking toward Lisne and captured a Russian servicemember who had infiltrated into Kopani.",
+      "published_at": "2026-07-03",
+      "publisher": "Institute for the Study of War",
+      "relevance": "Documents the distinction between Russian seizure claims, infiltration and geolocated Ukrainian presence northwest of Huliaipole, which matters for assessing qualifying control.",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-3-2026/"
+    },
+    {
+      "excerpt": "Russian occupying forces advanced on Wednesday, capturing approximately 3 sq km of Ukrainian territory south of Huliaipole (Zaporizhia region), according to maps published by the OSINT project DeepState. At the same time, the contested area west and northwest of Huliaipole expanded by another 4.68 sq km, though without any increase in occupied territory. The advance was recorded outside populated areas. No villages were reported captured.",
+      "published_at": "2026-06-18",
+      "publisher": "Interfax-Ukraine, citing DeepState",
+      "relevance": "Provides an independent mapping account of incremental gains south of the town and separates contested territory from assessed occupation.",
+      "url": "https://en.interfax.com.ua/news/general/1177471-amp.html"
+    },
+    {
+      "excerpt": "ISW has observed evidence to assess that Ukrainian forces have liberated 200 square kilometers in some areas of the Novopavlivka, Oleksandrivka, and Hulyaipole directions between February 1 and 23, but lost 35 square kilometers in other areas of those three directions during the same time frame. ISW's mapping methodology depicts the furthest assessed extent of Russian advances until open-source evidence emerges that allows ISW to confidently assess that Russian forces no longer hold those positions. Available footage and reports that meet ISW's threshold for changing its maps are often limited, and ISW's maps can continue to depict areas where an earlier Russian presence has significantly decreased or even disappeared as still within the \"Assessed Russian advances\" until a preponderance of reporting and footage indicates otherwise.",
+      "published_at": "2026-02-23",
+      "publisher": "Institute for the Study of War and AEI Critical Threats Project",
+      "relevance": "Explains the evidentiary lag and conservative mapping convention directly relevant to a resolution based on ISW shading rather than battlefield claims alone.",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-february-23-2026"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-february-6-2026",
+      "reason": "Outcome-revealing content: the excerpt explicitly assesses that Russian forces likely seized Huliaipole and hold the town. Removed under the outcome-disclosure rule despite its pre-cutoff publication date."
+    }
+  ],
+  "search_notes": "Frozen cutoff: 2026-07-17, inclusive. All included items have explicit publication dates verified in search-returned article text or dated article headers. Only information from publications dated on or before the cutoff is included; later-dated results, undated living reference pages and prediction-market sources were excluded. The July 17 ISW/CTP assessment identifies its assessment time as 9:30 PM ET and data cutoff as 12:15 PM ET. Direct web_fetch failed because of a provider-configuration error; the requested agent-reach web-read fallback returned RATE_LIMITED, so verification relied on web_search results exposing source text and dates. No archived municipal polygon or consecutive daily map snapshots were successfully inspected; these excerpts do not verify that every part of the specified municipality had qualifying shading persisting through a full subsequent update cycle. No forecast or resolution conclusion is supplied."
+}

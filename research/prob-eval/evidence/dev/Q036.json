@@ -1,0 +1,46 @@
+{
+  "qid": "Q036",
+  "as_of": "2026-07-20",
+  "kept": [
+    {
+      "excerpt": "Currently, the movie stands at an impressive 90% with 111 reviews. That means the film is now \"Certified Fresh\" on the review site. As of now, Spider-Man: Far From Home is tied for third highest rated Spider-Man film on Rotten Tomatoes, with Spider-Man: Homecoming coming in second at 92%.",
+      "published_at": "2019-06-28",
+      "publisher": "ComicBook.com",
+      "relevance": "This contemporaneous report supplies dated historical benchmarks showing two earlier Holland solo films at or above the market's 90-point threshold.",
+      "url": "https://comicbook.com/marvel/news/spider-man-far-from-home-officially-certified-fresh-rotten-tomatoes/"
+    },
+    {
+      "excerpt": "\"No Way Home\" boasts a 94% Rotten Tomatoes score and is opening in the weekend before Christmas with the expectation that it will perform well into the holiday. Jon Watts returns to direct the film, which was written by Chris McKenna and Erik Sommers.",
+      "published_at": "2021-12-17",
+      "publisher": "TheWrap",
+      "relevance": "The immediate predecessor exceeded 90 around its opening, providing a directly relevant historical comparison while also identifying the prior trilogy's different director.",
+      "url": "https://www.thewrap.com/spider-man-no-way-home-thursday-box-office/"
+    },
+    {
+      "excerpt": "Shang-Chi is directed and co-written by Destin Daniel Cretton, who broke through with the indie drama Short Term 12 which met rave reviews, and he most recently directed Just Mercy. The film is at 91% on Rotten Tomatoes, and critics widely praised it for having a strong dramatic core in addition to its eye popping action scenes.",
+      "published_at": "2021-09-02",
+      "publisher": "Box Office Mojo",
+      "relevance": "Cretton's earlier MCU feature provides a director-specific historical benchmark above 90 and evidence of critical appreciation for his combination of drama and action.",
+      "url": "https://www.boxofficemojo.com/article/ed3866166276/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.denofgeek.com/movies/spider-man-brand-new-day-exclusive-inside-look-tom-holland/",
+      "reason": "The excerpt mentions the film's July 31, 2026 opening date, after the July 20, 2026 cutoff. Removed under the explicit rule excluding any post-cutoff references, including planned events."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tLeBDumanoc",
+      "reason": "The excerpt mentions a July 31, 2026 theatrical release, and the relevance mentions an August 3 resolution check after the planned opening weekend; these are after the July 20, 2026 cutoff."
+    },
+    {
+      "url": "https://abcnews.com/GMA/Culture/zendaya-tom-holland-new-spider-man-brand-new/story?id=133974444",
+      "reason": "The excerpt mentions the film's July 31, 2026 theatrical release, after the July 20, 2026 cutoff. Removed under the explicit rule excluding any post-cutoff references, including planned events."
+    },
+    {
+      "url": "https://apnews.com/article/14b84e9b36e91e8fc4272a55a990303a",
+      "reason": "The excerpt mentions the film's July 31, 2026 theatrical opening, after the July 20, 2026 cutoff. Removed under the explicit rule excluding any post-cutoff references, including planned events."
+    }
+  ],
+  "search_notes": "Evidence cutoff: 2026-07-20, inclusive. Publication dates were verified through source bylines, page metadata, the official video's displayed upload date, or dated search evidence; Box Office Mojo's search listing explicitly dates its article September 2, 2021. Standard web_fetch failed because of a provider configuration error, so page contents were checked using the agent-reach skill's read-only web channel. Only eligible article bodies and the official trailer description were used; dynamic recommendations, comments, current engagement counts, undated live score pages, later publications, and prediction-market or betting material were excluded. Historical scores are the values reported in the dated articles, not claims about their values on July 20, 2026. No eligible source in this pack establishes a Brand New Day All Critics Tomatometer score or a verified review-embargo schedule as of the cutoff. Filmmaker and cast statements are promotional evidence, not critic reviews. No post-cutoff developments or resolution outcome are included."
+}

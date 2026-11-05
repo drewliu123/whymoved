@@ -1,0 +1,929 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T08:12:36.187854+00:00",
+  "historical": false,
+  "cutoff_date": "2026-11-02",
+  "clock_note": "Retrieval is approximately 08:10-08:13 UTC, before Nov2 US regular session; Oct30 is latest completed regular close.",
+  "candidates": [
+    {
+      "id": "META-AD",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Revenue was $64.60 billion, an increase of 26% year-over-year on both a reported and constant currency basis. Ad impressions delivered across our Family of Apps increased by 10% year-over-year. Average price per ad increased by 14% year-over-year.",
+      "locator": "Third Quarter 2026 Operational and Other Financial Highlights; Revenue, Ad impressions, Average price per ad bullets",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct disclosure",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 operating observation: revenue and ad quantity/pricing; does not establish AI causality",
+        "relevance": "direct",
+        "purpose": "T1 operating observation: revenue and ad quantity/pricing; does not establish AI causality",
+        "priority": "decisive"
+      },
+      "units": {
+        "currency": "USD",
+        "scale": "billions",
+        "period": "2026Q3",
+        "scope": "consolidated / Family of Apps for ad KPIs"
+      },
+      "date_nature": "release date; publication time not given"
+    },
+    {
+      "id": "META-PROFIT",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Revenue | 2026 64,601 | 2025 51,242; Costs and expenses | 51,613 | 30,707; Income from operations | 12,988 | 20,535; Operating margin | 20% | 40%",
+      "locator": "Third Quarter 2026 Financial Highlights, Three Months Ended September 30; labels and values transcribed from table",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct disclosure",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 reported profitability with same-quarter prior year",
+        "relevance": "direct",
+        "purpose": "T1 reported profitability with same-quarter prior year",
+        "priority": "decisive"
+      },
+      "units": {
+        "currency": "USD",
+        "scale": "millions except percentages",
+        "periods": [
+          "2026Q3",
+          "2025Q3"
+        ],
+        "scope": "consolidated"
+      }
+    },
+    {
+      "id": "META-LEGAL",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Third quarter 2026 costs and expenses includes a $9.89 billion charge related to this agreement. Excluding this charge, the third quarter 2026: Income from operations of $12.99 billion would have increased by $9.89 billion to $22.88 billion. Diluted EPS of $3.83 would have increased by $3.57 to $7.40.",
+      "locator": "Agreement with U.S. State Attorneys General",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct disclosure",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 counter-observation to interpreting reported margin/EPS decline as recurring operating weakness",
+        "relevance": "direct",
+        "purpose": "T1 counter-observation to interpreting reported margin/EPS decline as recurring operating weakness",
+        "priority": "decisive"
+      },
+      "qualification": "Adjusted figures are company calculation; not GAAP results or surveyed adjusted EPS. Agreement announced August 2026; Q3 recognized charge not equivalent to Q3 cash payment."
+    },
+    {
+      "id": "META-CASH",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Net cash provided by operating activities | 32,786 | 29,999 | 96,873 | 79,586; Purchases of property and equipment | (33,942) | (18,829) | (83,055) | (48,308); Principal payments on finance leases | (964) | (545) | (2,769) | (1,770); Free cash flow | (2,120) | 10,625 | 11,049 | 29,508",
+      "locator": "Reconciliation of GAAP to Non-GAAP Results; columns Three Months Ended September 30 2026,2025; Nine Months Ended September 30 2026,2025; original row values",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct disclosure",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 same-basis cash-flow and investment observations",
+        "relevance": "direct",
+        "purpose": "T1 same-basis cash-flow and investment observations",
+        "priority": "decisive"
+      },
+      "units": {
+        "currency": "USD",
+        "scale": "millions",
+        "scope": "consolidated"
+      },
+      "qualification": "FCF is company non-GAAP definition including finance lease principal."
+    },
+    {
+      "id": "META-Q4",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "We expect fourth quarter 2026 total revenue to be in the range of $73-76 billion. Our guidance assumes foreign currency is an approximately 1% headwind to year-over-year total revenue growth, based on current exchange rates.",
+      "locator": "CFO Outlook Commentary, opening paragraph",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 Q4 company guidance, not analyst consensus",
+        "relevance": "direct",
+        "purpose": "T1 Q4 company guidance, not analyst consensus",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-CAPEX",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion, narrowed from our prior outlook of $130-145 billion.",
+      "locator": "CFO Outlook Commentary, capital expenditure paragraph",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 2026 capex range revision; preserve lease-inclusive basis",
+        "relevance": "direct",
+        "purpose": "T1 2026 capex range revision; preserve lease-inclusive basis",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-COST",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "We are raising our expense outlook to incorporate the $9.9 billion charge related to legal proceedings recognized in the third quarter. We now expect full year 2026 total expenses to be in the range of $175-179 billion. Excluding the third quarter legal charge, we continue to expect 2026 operating income to be above 2025 operating income.",
+      "locator": "CFO Outlook Commentary, expense outlook",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 expense revision explicitly includes legal charge; recurring margin pressure cannot be inferred from headline alone",
+        "relevance": "direct",
+        "purpose": "T1 expense revision explicitly includes legal charge; recurring margin pressure cannot be inferred from headline alone",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-2027",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Looking beyond 2026, we are still developing our budget and capacity plans for next year, but we expect to continue investing aggressively to support both our core business and emerging AI initiatives.",
+      "locator": "CFO Outlook Commentary, Looking beyond 2026",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 2027 qualitative spending plan; no numeric 2027 capex or total-expense range supplied",
+        "relevance": "direct",
+        "purpose": "T1 2027 qualitative spending plan; no numeric 2027 capex or total-expense range supplied",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-AI",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Our AI investments are already delivering substantial incremental advertising revenue through stronger engagement, better recommendations, and more efficient monetization. While these investments will take longer to generate returns than those in our core business, the breadth of monetization opportunities and internal efficiencies gives us confidence in their long-term potential.",
+      "locator": "CFO Outlook Commentary; AI revenue paragraph and following MSL paragraph; non-contiguous excerpts",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer management explanation",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 competing mechanisms: attributed monetization gains and slower returns; independent causal verification missing",
+        "relevance": "direct",
+        "purpose": "T1 competing mechanisms: attributed monetization gains and slower returns; independent causal verification missing",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-RL",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "At a segment level, we now expect Reality Labs losses to decline compared to 2025 to a range of $18-19 billion. Separately, we remain focused on improving Reality Labs profitability and expect losses to narrow next year to around $15 billion as we reallocate investment toward other priority areas, primarily AI.",
+      "locator": "CFO Outlook Commentary; two non-contiguous Reality Labs outlook passages",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer direct guidance",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T1 counter-observation to all costs worsening: segment loss guidance narrows, spending reallocated to AI",
+        "relevance": "direct",
+        "purpose": "T1 counter-observation to all costs worsening: segment loss guidance narrows, spending reallocated to AI",
+        "priority": "decisive"
+      },
+      "attribution": {
+        "speaker": "Meta management",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "META-CLASSC",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "publisher": "Meta Platforms",
+      "tier": "T0",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Meta intends to file an amended and restated certificate of incorporation in Delaware to establish the Class C common stock, with an effective date of January 19, 2027. The record date and payment date of the stock dividend will be determined by the Board at a later date. After the payment date of the stock dividend, we expect the market price for our Class A common stock to reflect the effect of a two-for-one stock split.",
+      "locator": "Establishment of New Class C Common Stock; three excerpts",
+      "origin_id": "meta-q3-2026-release",
+      "origin_basis": "Issuer board announcement",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T2 share-class/action timing; announced future event is outside November and dividend dates remain TBD",
+        "relevance": "direct",
+        "purpose": "T2 share-class/action timing; announced future event is outside November and dividend dates remain TBD",
+        "priority": "decisive"
+      },
+      "qualification": "Board announced one Class C per outstanding Class A/B; no November split date confirmed. Forecast price effect is view, not observed price."
+    },
+    {
+      "id": "PX-CLOSE",
+      "url": "https://stockanalysis.com/stocks/meta/history/",
+      "canonical_url": "https://stockanalysis.com/stocks/meta/history/",
+      "publisher": "Stock Analysis / S&P Global Market Intelligence",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Oct 30, 2026 | Open 614.51 | High 626.37 | Low 610.13 | Close 614.99 | Adj. Close 614.99 | Change -1.53% | Volume 25,400,688; 4:00 PM EDT; USD",
+      "locator": "Historical Data table Oct 30 2026 row; header quote timestamp/currency; data provider note",
+      "origin_id": "spglobal-meta-20261030-eod",
+      "origin_basis": "Stock Analysis explicitly identifies S&P Global Market Intelligence upstream; not independent of its vendor",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T3 latest completed regular-session baseline; Nov2 08:10 UTC retrieval is premarket",
+        "relevance": "direct",
+        "purpose": "T3 latest completed regular-session baseline; Nov2 08:10 UTC retrieval is premarket",
+        "priority": "useful"
+      },
+      "market_quote": {
+        "quoted_at": "2026-10-30T16:00:00-04:00",
+        "instrument": "NASDAQ:META Class A common stock (issuer identity confirmed by Q3 10-Q cover)",
+        "outcome": "Class A share price",
+        "direction": "level",
+        "value": 614.99,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "date_nature": "page last data update Oct30; publication time unknown; quote time explicit"
+    },
+    {
+      "id": "PX-PATH",
+      "url": "https://stockanalysis.com/stocks/meta/history/",
+      "canonical_url": "https://stockanalysis.com/stocks/meta/history/",
+      "publisher": "Stock Analysis / S&P Global Market Intelligence",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Oct 21, 2026 | Close 697.52; Oct 22, 2026 | Close 648.85; Oct 23 | 642.62; Oct 26 | 630.56; Oct 27 | 620.19; Oct 28 | 612.49; Oct 29 | 624.52; Oct 30 | 614.99",
+      "locator": "Historical Data table date rows; USD regular daily closes",
+      "origin_id": "spglobal-meta-eod",
+      "origin_basis": "Same explicitly named upstream vendor as PX-CLOSE",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T3 raw inputs for already-realized price path; no causal attribution",
+        "relevance": "direct",
+        "purpose": "T3 raw inputs for already-realized price path; no causal attribution",
+        "priority": "useful"
+      },
+      "qualification": "For strict price claims split into separately timestamped market_quote candidates; this fragment is raw historical table input, not a price-qualified claim."
+    },
+    {
+      "id": "VOL-AQ",
+      "url": "https://www.alphaquery.com/stock/META/volatility-option-statistics/30-day/iv-mean",
+      "canonical_url": "https://www.alphaquery.com/stock/META/volatility-option-statistics/30-day/iv-mean",
+      "publisher": "AlphaQuery / Market Computing LLC",
+      "tier": "T3",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "2026-10-30; 30-Day; Last Closing Price 614.99; Historical Volatility (Close-to-Close) 0.3649; Historical Volatility (Parkinson) 0.2987; Implied Volatility (Calls) 0.3868; Implied Volatility (Puts) 0.3877; Implied Volatility (Mean) 0.3873; derived from the average of the put and call implied volatilities",
+      "locator": "30-Day volatility statistics dated 2026-10-30 and IV definition",
+      "origin_id": "alphaquery-meta-20261030-vol",
+      "origin_basis": "AlphaQuery own displayed calculated statistics; upstream vendor unidentified",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T3 traceable dated vendor estimate only; insufficient methodology for strict touch-probability model",
+        "relevance": "direct",
+        "purpose": "T3 traceable dated vendor estimate only; insufficient methodology for strict touch-probability model",
+        "priority": "useful"
+      },
+      "qualification": "No clock time/timezone, explicit annualization convention, pricing model, risk-free/dividend input, strike/expiry set or upstream data disclosed. Decimal values retained without converting units. Not executable option quotes."
+    },
+    {
+      "id": "CAL-FED",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "canonical_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publisher": "Federal Reserve",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "2026 FOMC Meetings; October 27-28; December 8-9; Last Update: October 28, 2026",
+      "locator": "2026 FOMC Meetings calendar; no November row; page footer",
+      "origin_id": "fed-fomc-calendar-2026",
+      "origin_basis": "Federal Reserve publishes own schedule",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T2 correct November catalyst premise: no regularly scheduled November meeting",
+        "relevance": "direct",
+        "purpose": "T2 correct November catalyst premise: no regularly scheduled November meeting",
+        "priority": "useful"
+      },
+      "updated_at": "2026-10-28",
+      "qualification": "November minutes release date not supplied; do not infer confirmed date."
+    },
+    {
+      "id": "CAL-BLS",
+      "url": "https://www.bls.gov/schedule/2026/home.htm",
+      "canonical_url": "https://www.bls.gov/schedule/2026/home.htm",
+      "publisher": "Bureau of Labor Statistics",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "NOTE: All times on calendar are Eastern Time. Last Modified Date: February 18, 2026",
+      "locator": "2026 release calendar November entries: JOLTS September2026 Nov3 10:00; Employment Situation October2026 Nov6 08:30; CPI October2026 Nov10 08:30; PPI October2026 Nov13 08:30 (entries transcribed, not direct prose quotation)",
+      "origin_id": "bls-release-calendar-2026",
+      "origin_basis": "BLS publishes own release schedule",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T2 confirmed scheduled macro windows; no outcomes or surveyed expectations yet",
+        "relevance": "direct",
+        "purpose": "T2 confirmed scheduled macro windows; no outcomes or surveyed expectations yet",
+        "priority": "useful"
+      },
+      "updated_at": "2026-02-18",
+      "events": [
+        {
+          "event": "JOLTS September2026",
+          "at": "2026-11-03T10:00:00-05:00"
+        },
+        {
+          "event": "Employment Situation October2026",
+          "at": "2026-11-06T08:30:00-05:00"
+        },
+        {
+          "event": "CPI October2026",
+          "at": "2026-11-10T08:30:00-05:00"
+        },
+        {
+          "event": "PPI October2026",
+          "at": "2026-11-13T08:30:00-05:00"
+        }
+      ]
+    },
+    {
+      "id": "CAL-FEC",
+      "url": "https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2026-reporting-dates/electioneering-communications-periods-general-election-2026/",
+      "canonical_url": "https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2026-reporting-dates/electioneering-communications-periods-general-election-2026/",
+      "publisher": "Federal Election Commission",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Electioneering communications periods: general election (2026); Electioneering communications period for the general election",
+      "locator": "General election table; date 11/03/2026, disclosure period 09/04/2026-11/03/2026 (table transcribed)",
+      "origin_id": "fec-election-calendar-2026",
+      "origin_basis": "FEC own election/disclosure schedule",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T2 election date confirmed, outcomes and market impact remain unknown",
+        "relevance": "direct",
+        "purpose": "T2 election date confirmed, outcomes and market impact remain unknown",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "EXPECT-MTN",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-q3-earnings-revenue-201155968.html",
+      "canonical_url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-q3-earnings-revenue-201155968.html",
+      "publisher": "MT Newswires via Yahoo Finance",
+      "tier": "T2",
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Analysts polled by FactSet expected $6.54. Analysts expected $63.34 billion. Analysts expect $73.65 billion.",
+      "locator": "Body: Q3 EPS, Q3 revenue and Q4 revenue expectation sentences respectively",
+      "origin_id": "factset-meta-20261021-mtn",
+      "origin_basis": "Article explicitly names FactSet for Q3 EPS, not sample/method; Q3/Q4 revenue provider not separately specified",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "Expectation lead only: missing sample, method and polling date; no validated survey/consensus claim",
+        "relevance": "direct",
+        "purpose": "Expectation lead only: missing sample, method and polling date; no validated survey/consensus claim",
+        "priority": "useful"
+      },
+      "qualification": "No publication clock time; Q3 EPS GAAP/adjusted comparability not established."
+    },
+    {
+      "id": "EXPECT-THETA",
+      "url": "https://www.theta.md/earnings/meta/q4-2026",
+      "canonical_url": "https://www.theta.md/earnings/meta/q4-2026",
+      "publisher": "Theta Research",
+      "tier": "T3",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "USD 75.16B; USD 8.33; October 30, 2026",
+      "locator": "Q4 FY2026 consensus revenue and EPS; data date",
+      "origin_id": "theta-meta-q4-2026-20261030",
+      "origin_basis": "Unidentified third-party aggregated estimates; upstream vendor undisclosed",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "Expectation lead only: no named provider, analyst count, collection window, aggregation method or publication time; cannot establish consensus or same-provider revision",
+        "relevance": "direct",
+        "purpose": "Expectation lead only: no named provider, analyst count, collection window, aggregation method or publication time; cannot establish consensus or same-provider revision",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "REUTERS-RISK",
+      "url": "https://www.investing.com/news/stock-market-news/meta-falls-as-investors-balance-muse-growth-with-rising-ai-costs-4965902",
+      "canonical_url": "https://www.investing.com/news/stock-market-news/meta-falls-as-investors-balance-muse-growth-with-rising-ai-costs-4965902",
+      "publisher": "Reuters via Investing.com",
+      "tier": "T2",
+      "published_at": "2026-10-22",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "Meta shares slide, default insurance hits record as AI spending alarms investors; fell more than 7%",
+      "locator": "Headline and opening share-performance clause; published 08:07 AM, updated 01:24 PM Oct22; timezone absent",
+      "origin_id": "reuters-meta-20261022",
+      "origin_basis": "Reuters reporting; financial numbers in story refer back to company release, not independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "Context only; no sector benchmark or independent expected-cost revision. Reported possibility of equity issuance starting autumn2026 conflicts with issuer ClassC effective January2027; do not use for November action timing",
+        "relevance": "direct",
+        "purpose": "Context only; no sector benchmark or independent expected-cost revision. Reported possibility of equity issuance starting autumn2026 conflicts with issuer ClassC effective January2027; do not use for November action timing",
+        "priority": "useful"
+      },
+      "updated_at": "2026-10-22",
+      "qualification": "Author Prathik Jayaprakash and Aditya Soni. CDS interpretation attributed to Shay Boloor; not independently verified."
+    },
+    {
+      "id": "SEC-IDENTITY",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+      "publisher": "Meta filing via SEC EDGAR",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T08:12:36.187854+00:00",
+      "quote": "For the quarterly period ended September 30, 2026; Class A Common Stock, $0.000006 par value; META",
+      "locator": "10-Q cover page",
+      "origin_id": "meta-q3-2026-10q",
+      "origin_basis": "Issuer filing establishes security identity",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "T3 confirm META ClassA identity for price wrapper",
+        "relevance": "direct",
+        "purpose": "T3 confirm META ClassA identity for price wrapper",
+        "priority": "useful"
+      },
+      "qualification": "Fetch covered first 100000/129748 characters; requested capex/ClassC discussion not in returned excerpt, cannot claim absent from full filing."
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "META Q3 2026 earnings release October 2026 investor relations",
+      "test_ids": [
+        "T1"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    },
+    {
+      "id": "Q2",
+      "query": "META stock October 30 2026 historical closing price",
+      "test_ids": [
+        "T3"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 4,
+          "url": "https://finance.yahoo.com/quote/META/history/"
+        },
+        {
+          "engine_rank": 5,
+          "url": "https://stockanalysis.com/stocks/meta/history/"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    },
+    {
+      "id": "Q3",
+      "query": "Meta Q4 2026 revenue EPS LSEG FactSet October 2026 expectations capital spending 2027",
+      "test_ids": [
+        "T1"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 5,
+          "url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-q3-earnings-revenue-201155968.html"
+        },
+        {
+          "engine_rank": 14,
+          "url": "https://www.theta.md/earnings/meta/q4-2026"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    },
+    {
+      "id": "Q4",
+      "query": "site.federalreserve.gov monetarypolicy fomccalendars 2026 November",
+      "test_ids": [
+        "T2"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    },
+    {
+      "id": "Q5",
+      "query": "site.bls.gov schedule November 2026 CPI Employment Situation November 2026",
+      "test_ids": [
+        "T2"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    },
+    {
+      "id": "Q6",
+      "query": "site.fec.gov 2026 general election November 3 2026",
+      "test_ids": [
+        "T2"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 4,
+          "url": "https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2026-reporting-dates/electioneering-communications-periods-general-election-2026/"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    },
+    {
+      "id": "Q7",
+      "query": "META October 30 2026 implied volatility 30 day historical volatility options",
+      "test_ids": [
+        "T3"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://marketchameleon.com/Overview/META/IV/"
+        },
+        {
+          "engine_rank": 2,
+          "url": "https://www.alphaquery.com/stock/META/volatility-option-statistics/30-day/iv-mean"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    },
+    {
+      "id": "Q8",
+      "query": "Meta October 2026 earnings 2027 spending costs advertising AI risks Reuters October 21 2026",
+      "test_ids": [
+        "T1",
+        "T2"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 10,
+          "url": "https://www.investing.com/news/stock-market-news/meta-falls-as-investors-balance-muse-growth-with-rising-ai-costs-4965902"
+        },
+        {
+          "engine_rank": 14,
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    },
+    {
+      "id": "Q9",
+      "query": "META November 2026 investor conference November 2026 stock dividend January 19 2027",
+      "test_ids": [
+        "T2"
+      ],
+      "queried_at": "2026-11-02T08:12:36.187854+00:00",
+      "results": [
+        {
+          "engine_rank": 1,
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+        },
+        {
+          "engine_rank": 2,
+          "url": "https://investor.atmeta.com/investor-events/default.aspx"
+        }
+      ],
+      "result_preservation": "Relevant candidate original ranks retained; full search URL lists remain in tool transcript",
+      "status": "ok"
+    }
+  ],
+  "source_status": {
+    "issuer_release": {
+      "status": "ok"
+    },
+    "closing_price": {
+      "status": "ok"
+    },
+    "volatility": {
+      "status": "partial",
+      "reason": "Dated vendor calculated statistics, incomplete method"
+    },
+    "consensus": {
+      "status": "partial",
+      "reason": "Leads only; no survey-qualified candidate"
+    },
+    "official_macro_calendar": {
+      "status": "ok"
+    },
+    "issuer_calendar": {
+      "status": "partial",
+      "reason": "No November event verified; not equivalent to no event"
+    },
+    "sec_10q": {
+      "status": "partial",
+      "reason": "First 100000 of 129748 chars fetched"
+    },
+    "ap": {
+      "status": "unreachable",
+      "url": "https://apnews.com/article/13ecd6c459e39a3602f302bcc2412fe9",
+      "reason": "WebFetch unable to fetch; search snippet only, not selected"
+    },
+    "option_chain": {
+      "status": "not_run",
+      "reason": "Query located calculated IV, direct chain not opened"
+    },
+    "financial_data_script": {
+      "status": "not_run",
+      "reason": "Public release and price sufficient for focused inputs"
+    },
+    "sector_comparison": {
+      "status": "not_run",
+      "reason": "Budget prioritization"
+    },
+    "polymarket": {
+      "status": "not_run",
+      "reason": "Explicitly assigned to lead researcher"
+    }
+  },
+  "test_observations": [
+    {
+      "test_id": "T1",
+      "observations": [
+        "META-AD",
+        "META-PROFIT",
+        "META-LEGAL",
+        "META-CASH",
+        "META-Q4",
+        "META-CAPEX",
+        "META-COST",
+        "META-2027",
+        "META-AI",
+        "META-RL"
+      ],
+      "missing": [
+        "G-CONSENSUS",
+        "G-2027"
+      ],
+      "interpretation": "No support/weaken adjudication by collector; paired revenue, reported/charge-adjusted profit and cash observations provided."
+    },
+    {
+      "test_id": "T2",
+      "observations": [
+        "CAL-FED",
+        "CAL-BLS",
+        "CAL-FEC",
+        "META-CLASSC"
+      ],
+      "missing": [
+        "G-MACRO",
+        "G-CALENDAR"
+      ],
+      "interpretation": "Schedule confirmation only, no realized macro-event outcomes or causal attribution."
+    },
+    {
+      "test_id": "T3",
+      "observations": [
+        "PX-CLOSE",
+        "PX-PATH",
+        "VOL-AQ",
+        "SEC-IDENTITY"
+      ],
+      "missing": [
+        "G-IV",
+        "G-MODEL"
+      ],
+      "interpretation": "Observed price baseline and dated calculated vol data; no event probability or fair price computed."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G-CONSENSUS",
+      "test_id": "T1",
+      "reason": "No qualified dated Q4 2026 LSEG/FactSet survey with method/sample. MT Newswires and Theta values cannot establish revision because provider/basis/snapshot differ."
+    },
+    {
+      "id": "G-2027",
+      "test_id": "T1",
+      "reason": "Issuer release has no numerical 2027 total-expense/capex outlook; no independently verified 2027 consensus revision retrieved. Qualitative aggressive investment is attributed view only."
+    },
+    {
+      "id": "G-MACRO",
+      "test_id": "T2",
+      "reason": "Same-window QQQ/sector/peer returns, rates changes and their pre-event pricing not collected within budget; cannot discriminate company driver versus H3 common factor."
+    },
+    {
+      "id": "G-IV",
+      "test_id": "T3",
+      "reason": "AlphaQuery dated values available but annualization/model/strikes/expiries/upstream and clock time missing; no directly quoted options bid/ask chain. No calibrated touch-probability conclusion."
+    },
+    {
+      "id": "G-CALENDAR",
+      "test_id": "T2",
+      "reason": "Issuer events page fetch listed no November events, but search/fetch past-event content inconsistent. No company conference date verified; no confirmed November dividend/split or FOMC minutes date."
+    },
+    {
+      "id": "G-MODEL",
+      "test_id": "T3",
+      "reason": "No complete 20/30-day price sample, tax/D&A/working-capital inputs, shares/net-debt valuation package or historical reference-class frequency gathered; not requested to build model."
+    }
+  ],
+  "budget": {
+    "searches_used": 9,
+    "searches_allowed": 9,
+    "supplementary_search_reason": "Check company November calendar and share-action timing after primary release surfaced ClassC proposal"
+  },
+  "suspicious_instructions_found": false
+}

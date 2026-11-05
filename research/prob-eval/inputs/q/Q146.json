@@ -1,0 +1,44 @@
+{
+ "qid": "Q146",
+ "question": "Will Eduardo Camavinga stay at Real Madrid?",
+ "rules": "This market will resolve to the next team Eduardo Camavinga officially joins by September 1, 2026, 11:59 PM ET.\n\nIf Eduardo Camavinga does not officially join a new team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Real Madrid\".\n\nIf Eduardo Camavinga joins a team that is not listed, this market will resolve to \"Other\".\n\nIf Eduardo Camavinga is released, retires, or is not under contract with any professional team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nAn official transfer announcement prior to the market's close date will immediately resolve this market to the corresponding option.\n\nThe primary resolution sources for this market will be official announcements from Real Madrid and/or the acquiring team. A consensus of credible media reporting may also be used to resolve the market.",
+ "as_of": "2026-08-19",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Real Madrid C. F.",
+   "published_at": "2023-11-07",
+   "excerpt": "Real Madrid C. F. and Camavinga have reached an agreement on a contract extension which ties the player to the club until 30 June 2029."
+  },
+  {
+   "id": "E2",
+   "publisher": "The Objective — Eduardo Segovia",
+   "published_at": "2026-08-18",
+   "excerpt": "El Real Madrid no encuentra salida a Eduardo Camavinga, a pesar de que José Mourinho no contaba con él; ningún club se ha mostrado dispuesto a pagar una cifra que se acerque a lo que pretende el Real Madrid. Mourinho no contaba con él pero el jugador francés se ha negado a marcharse cedido al Manchester United."
+  },
+  {
+   "id": "E3",
+   "publisher": "MadridXtra",
+   "published_at": "2026-08-18",
+   "excerpt": "The Athletic reports that Madrid and Mourinho remain open to Eduardo Camavinga and Raúl Asencio leaving this summer. There are no concrete moves for either player at this stage."
+  },
+  {
+   "id": "E4",
+   "publisher": "Mundo Deportivo",
+   "published_at": "2026-08-09",
+   "excerpt": "El ex del Rennes es uno de los nombres que encabezan la operación salida en el Real Madrid, pero por el momento no está dispuesto a escuchar ofertas y su intención es la de seguir en el Santiago Bernabéu hasta que expire su contrato en 2029."
+  },
+  {
+   "id": "E5",
+   "publisher": "Managing Madrid — Lucas Navarrete",
+   "published_at": "2026-07-23",
+   "excerpt": "Real Madrid midfielder Eduardo Camavinga is working hard during the team’s preseason stage and is not even considering a departure from the Spanish capital even though the club would like to part ways with him if a good offer comes their way, sources told Managing Madrid. Real Madrid have not received much interest for him and that’s the main reason why the French player will likely stay."
+  },
+  {
+   "id": "E6",
+   "publisher": "FourFourTwo",
+   "published_at": "2026-07-16",
+   "excerpt": "According to the Daily Mail, Real Madrid could allow Eduardo Camavinga to leave the club this summer amid reported interest from United and rivals Manchester City."
+  }
+ ]
+}

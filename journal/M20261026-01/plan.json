@@ -1,0 +1,15 @@
+{
+  "question": "美联储 10 月议息会会不会加息？",
+  "type": "event_pricing",
+  "entity": "Fed Decision in October",
+  "horizon": "unknown（待 T0 美联储日历核实）",
+  "as_of": "2026-10-26T06:17:00Z",
+  "angles": [
+    {"angle": "市场本身", "question": "Polymarket/Kalshi 现在给 10 月加息/不变/降息各多少？1天/1周/1月怎么变？", "queries": ["polymarket fed decision october", "fed rate hike odds polymarket"], "tiers": ["T0", "T4"]},
+    {"angle": "决策者", "question": "主席和 FOMC 官员最近对加息/按兵不动说了什么？", "queries": ["fed chair rate hike hold remarks", "fomc officials hike remarks"], "tiers": ["T0", "T2"]},
+    {"angle": "驱动数据", "question": "最近的 CPI、PCE、非农结果如何，对加息预期的影响？", "queries": ["cpi inflation fed hike odds", "nonfarm payrolls fed hike odds"], "tiers": ["T0", "T1", "T2"]},
+    {"angle": "交叉定价", "question": "CME FedWatch、Kalshi 给的概率是多少，与 Polymarket 差多少？", "queries": ["kalshi fedwatch fed rate odds"], "tiers": ["T1"]},
+    {"angle": "历史基准", "question": "当前所处的加息周期位置下，历史上连续加息/暂停的频率？", "queries": ["fed consecutive rate hikes history"], "tiers": ["T0", "T3"]},
+    {"angle": "结算规则", "question": "Polymarket 市场的结算口径、截止时间、意外会议条款？", "queries": ["读 Polymarket 市场 description"], "tiers": ["T0"]}
+  ]
+}

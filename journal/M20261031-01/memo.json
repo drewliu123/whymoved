@@ -1,0 +1,51 @@
+{
+  "question": "截至研究截面，英伟达（NVDA）下一次财报前的市场预期是什么，关键分歧和证伪条件有哪些？",
+  "type": "asset",
+  "entity": "NVIDIA (NASDAQ: NVDA)",
+  "as_of": "2026-10-31T05:12:10.269507Z",
+  "market_snapshot": [
+    {
+      "source": "Polymarket CLOB",
+      "outcome": "Q3 non-GAAP margin 73% inclusive to 75% exclusive",
+      "prob": 0.82,
+      "quote_side": "YES ask",
+      "quote_at": "2026-10-31T05:04:28.168337Z",
+      "size": 20,
+      "bid": 0.73,
+      "display_prob": 0.775
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "text": "NVIDIA Q3 FY2027首次官方non-GAAP毛利率是否满足73%≤x<75%？",
+      "verify_by": "2027-01-01",
+      "falsify_if": "首次官方最精确non-GAAP毛利率73%包含至75%不包含。区间取中点；缺指标或截止前未发布材料归最低档即本题NO；后续修订不计。 未满足YES即NO。",
+      "my_prob": 0.82,
+      "authors": [],
+      "contract": {
+        "question": "NVIDIA Q3 FY2027首次官方non-GAAP毛利率是否满足73%≤x<75%？",
+        "yes_means": "首次官方最精确non-GAAP毛利率73%包含至75%不包含。区间取中点；缺指标或截止前未发布材料归最低档即本题NO；后续修订不计。",
+        "window_start": "2026-10-31T05:12:10.269507Z",
+        "window_end": "2027-01-01T04:59:00Z",
+        "resolution_source": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000；按其中规则取NVIDIA Q3官方财报、演示、监管文件及必要时电话会；截止2026-12-31 23:59 ET。"
+      },
+      "market_prob": 0.82
+    },
+    {
+      "id": "H2",
+      "text": "截至2026-12-31 23:59 ET首次公布的NVIDIA Q3 FY2027总收入是否严格超过1089.9亿美元？",
+      "verify_by": "2027-01-01",
+      "falsify_if": "窗口内首次发布的Q3 FY2027官方财报总收入严格大于108.99 billion USD。等于阈值为NO；截止前未发布或未披露该指标为NO；采用首次材料最精确数值，不计后续修订。 未满足YES即NO。",
+      "my_prob": 0.6767,
+      "authors": [],
+      "contract": {
+        "question": "截至2026-12-31 23:59 ET首次公布的NVIDIA Q3 FY2027总收入是否严格超过1089.9亿美元？",
+        "yes_means": "窗口内首次发布的Q3 FY2027官方财报总收入严格大于108.99 billion USD。等于阈值为NO；截止前未发布或未披露该指标为NO；采用首次材料最精确数值，不计后续修订。",
+        "window_start": "2026-10-31T05:12:10.269507Z",
+        "window_end": "2027-01-01T04:59:00Z",
+        "resolution_source": "NVIDIA IR该季度首次业绩新闻稿或首次监管财报总收入；11月17为计划披露日，12月31 23:59 ET为截止。https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
+      }
+    }
+  ]
+}

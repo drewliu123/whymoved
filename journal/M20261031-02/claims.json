@@ -1,0 +1,344 @@
+{
+  "question": "截至2026-10-31，NVDA下一财报前预期、独立论点及增长毛利率融资风险",
+  "as_of": "2026-10-31T13:11:12Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "NVIDIA FY2027 Q2收入962亿美元，同比增长106%；GAAP及non-GAAP毛利率均为75.0%。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "Revenue of $96.2 billion, up 106% from a year ago",
+          "numeric_basis": "FY2027 Q2 ended July 26, 2026; USD"
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "For the quarter, GAAP and non-GAAP gross margins were both 75.0%.",
+          "numeric_basis": "FY2027 Q2 actual"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "NVIDIA Q3收入指引1080亿美元±2%；GAAP及non-GAAP毛利率指引均为74.0%±50基点；不假设中国数据中心计算收入。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "Revenue is expected to be $108.0 billion, plus or minus 2%.",
+          "numeric_basis": "FY2027 Q3 management guidance, not analyst consensus"
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.",
+          "numeric_basis": "FY2027 Q3 management guidance, not actual results"
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "NVIDIA is not assuming any Data Center compute revenue from China in its outlook.",
+          "numeric_basis": "FY2027 Q3 outlook assumption"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "官方10月28日公告确认FY2027 Q3财报于2026年11月17日约13:20 PT发布，电话会14:00 PT；报告季度截至10月25日。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-10-28",
+          "quote": "Tuesday, November 17, at 2 p.m. PT (5 p.m. ET)",
+          "numeric_basis": "Verbatim fragment; 2026 earnings call; results expected approximately 1:20 p.m. PT; FY2027 Q3 ended October 25, 2026"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "截至2026年7月26日六个月经营现金流744.21亿美元，去年同期427.79亿美元；7月26日净应收账款630.59亿美元，1月25日384.66亿美元；半年现金流表应收账款调整为-245.90亿美元，不能等同客户回款总额。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "Net cash provided by operating activities",
+          "numeric_basis": "Table row: millions USD; six months ended July 26, 2026: 74,421; July 27, 2025: 42,779"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "Accounts receivable, net",
+          "numeric_basis": "Table row: millions USD; July 26, 2026: 63,059; January 25, 2026: 38,466"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "Accounts receivable",
+          "numeric_basis": "Cash flow adjustment row: millions USD; six months ended July 26, 2026: (24,590); not customer collections"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "10-Q称部分投资级大型数据中心项目买家获90天至一年的付款期限；此安排不适用于全部客户。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "payment terms ranging from 90 days up to one year",
+          "numeric_basis": "Verbatim fragment; qualifying large data-center projects, Note 7"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "7月26日股权投资承诺合计250亿美元，附有条件；这是承诺口径，并非已支付现金或投资资产余额。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "Equity investments",
+          "numeric_basis": "Note 10 commitments table: billions USD; July 26, 2026 total 25; subject to contingencies; not asset balance"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "10-Q披露8月签订与SB Energy园区相关、上限1050亿美元的担保；付款在特定租户违约时触发，不能当作当期损失或现金支出。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "In August 2026, we entered into guarantees, capped at a total of $105 billion",
+          "numeric_basis": "Verbatim fragment; SB Energy guarantees; subsequent event; maximum exposure, not cash payment"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "Our payment obligations under the guarantees are triggered upon certain tenant defaults",
+          "numeric_basis": "Verbatim fragment; contingent guarantee trigger"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "7月26日AI云协议承诺合计360亿美元；AI云客户购买NVIDIA基础设施，NVIDIA承诺购买云服务；第三方使用容量可减少NVIDIA义务。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "AI clouds procure our data center infrastructure products and we commit to cloud service agreements",
+          "numeric_basis": "Verbatim fragment; AI cloud agreements commitments table total 36 billion USD at July 26, 2026"
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "供应承诺从上一季度1190亿美元升至2790亿美元；供应承诺不等于已确认收入，部分安排可在形成确定订单前调整并可能付出额外成本。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "publisher": "NVIDIA / SEC",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "quote": "increasing supply commitments from $119 billion last quarter to $279 billion",
+          "numeric_basis": "Verbatim fragment; supply commitments, not recognized revenue"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "Polymarket Q3 non-GAAP毛利率[73%,75%)合约显示77.5%；最优买价73%、卖价82%，最优卖档20份；显示价格1日变动-6个百分点、1周-5个百分点，1月数据缺失。77.5%不是单点可成交价格。",
+      "type": "price",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "published_at": "2026-10-31T13:10:15Z"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "Polymarket数据中心收入>950亿美元显示76.5%（买56%/卖97%），>1000亿美元显示88%（买79%/卖97%），>1050亿美元显示50%（买11%/卖89%）；不同门槛显示值非单调，价差宽且区间重叠。",
+      "type": "price",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://polymarket.com/event/will-nvidia-nvda-q3-data-center-revenue-be-above-20261008120135000",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "published_at": "2026-10-31T13:10:15Z"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "毛利率盘口按官方首次公布的Q3 non-GAAP指标结算，边界归较高区间；故73%计入、75%不计入[73%,75%)。若2026年12月31日23:59 ET前不发布或缺指标，按最低区间结算；盘口11月18日标签不是官方财报日。",
+      "type": "fact",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000",
+          "publisher": "Polymarket",
+          "tier": "T0",
+          "published_at": "2026-10-31T13:10:15Z"
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "公司指引已包含收入较Q2上升、毛利率较Q2下降的组合；实际毛利率下降是否意外，应比较指引区间与同期市场预期，低于75%这个宽条件不足以判断。",
+      "type": "inference",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [],
+      "basis": [
+        "C1",
+        "C2",
+        "C10"
+      ]
+    },
+    {
+      "id": "C14",
+      "text": "本研究选取Q3收入超过1080亿美元且non-GAAP毛利率低于75%的联合事件作为独立可检验论点；超过1080亿美元只是超过公司指引中点，不等于超过分析师预期。现金回收、融资条款应与产品组合、客户集中度和收入确认一起交叉检验；未核验到该联合事件对应盘口。",
+      "type": "inference",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [],
+      "basis": [
+        "C1",
+        "C2",
+        "C4",
+        "C5",
+        "C8",
+        "C10"
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "按指引中点静态计算，1080亿美元×74%=799.2亿美元毛利，高于Q2的962亿美元×75%=721.5亿美元；在1080亿美元收入下每下降1个百分点毛利率少10.8亿美元毛利。该计算不是利润预测或估值结论。",
+      "type": "inference",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [],
+      "basis": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "id": "C16",
+      "text": "融资风险传导是待验证假设：回款延长、客户融资或利用率转弱可能影响应收回收、云采购义务及担保触发；截至7月26日的强经营现金流是反方证据，不是Q3回款证明。当前披露不能证明违约或虚假收入，各类承诺也不能直接相加为债务或损失；共同客户冲击可能使风险相关。",
+      "type": "inference",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [],
+      "basis": [
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9"
+      ]
+    },
+    {
+      "id": "C17",
+      "text": "现有预测市场只能提供局部预期；收入门槛显示价不宜用于估算收入中位数，毛利率盘口也不能代表全体股票投资者预期。",
+      "type": "inference",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [],
+      "basis": [
+        "C10",
+        "C11"
+      ]
+    },
+    {
+      "id": "C18",
+      "text": "Reuters于2026年8月26日报道，当时LSEG分析师Q3收入平均预期为1041.9亿美元，公司给出1080亿美元指引；这是8月历史基准，不能当成10月31日预期。",
+      "type": "consensus",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/nvidia-forecasts-quarterly-revenue-above-estimates-4877887",
+          "publisher": "Reuters / LSEG",
+          "tier": "T1",
+          "published_at": "2026-08-26",
+          "quote": "analysts’ average estimate of $104.19 billion"
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "text": "融资风险不能由单次Q3财报彻底裁决：应收增长也可能来自增长及发货时点；部分账期长达一年，须追踪同批到期应收、是否展期、是否以新增融资替代回款及担保触发。若缺客户批次数据，应标无法裁决，不凭总量现金流宣告安全。",
+      "type": "inference",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [],
+      "basis": [
+        "C4",
+        "C5",
+        "C7",
+        "C8"
+      ]
+    },
+    {
+      "id": "C20",
+      "text": "公司指引换算为收入1058.4亿至1101.6亿美元、毛利率73.5%至74.5%；独立联合事件包含超过中点但仍在收入指引内的结果，也包含毛利率跌破73.5%的结果，因此命中本身不等于经营质量改善或恶化。",
+      "type": "inference",
+      "as_of": "2026-10-31T13:11:12Z",
+      "sources": [],
+      "basis": [
+        "C1",
+        "C2",
+        "C14"
+      ]
+    }
+  ]
+}

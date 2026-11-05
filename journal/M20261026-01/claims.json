@@ -1,0 +1,342 @@
+{
+ "question": "美联储 10 月 27–28 日议息会会不会加息？",
+ "as_of": "2026-10-26T06:17:00Z",
+ "claims": [
+  {
+   "id": "C1",
+   "type": "price",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "Polymarket 给 10 月“不变”94.5%，一个月内上涨 61 个百分点；“加息 25bp”4.5%，一个月内下跌 60 个百分点",
+   "sources": [
+    {
+     "url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
+     "publisher": "Polymarket",
+     "tier": "T0",
+     "published_at": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "C2",
+   "type": "price",
+   "as_of": "2026-10-26T06:22:00Z",
+   "text": "Kalshi 给 10 月“不变”最新成交 0.94（买 0.93 / 卖 0.94），“加息 25bp”0.06",
+   "sources": [
+    {
+     "url": "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXFEDDECISION&status=open",
+     "publisher": "Kalshi",
+     "tier": "T1",
+     "published_at": "unknown"
+    }
+   ]
+  },
+  {
+   "id": "C3",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "10 月 FOMC 会议在 10 月 27–28 日，不发布 SEP；下一次会议在 12 月 8–9 日",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "unknown"
+    }
+   ]
+  },
+  {
+   "id": "C4",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "9 月 16 日 FOMC 加息 25bp 至 3.75–4.00%，投票 12 比 0",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-09-16"
+    }
+   ]
+  },
+  {
+   "id": "C5",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "本轮至今只加息 1 次；上一轮从 2022 年 3 月到 2023 年 7 月共加息 11 次，其中 2022 年 3 月至 2023 年 5 月是连续加息",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "unknown"
+    }
+   ]
+  },
+  {
+   "id": "C6",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "9 月 CPI 同比 3.7%、环比 0.6%；核心 CPI 同比 2.6%、环比 0.3%",
+   "sources": [
+    {
+     "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+     "publisher": "BLS",
+     "tier": "T0",
+     "published_at": "2026-10-14"
+    }
+   ]
+  },
+  {
+   "id": "C8",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "9 月非农新增 2.9 万人，失业率 4.2%",
+   "sources": [
+    {
+     "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+     "publisher": "BLS",
+     "tier": "T0",
+     "published_at": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "id": "C9",
+   "type": "consensus",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "Bloomberg 调查预期 9 月非农 9 万、失业率 4.1%（只核对了标题）",
+   "sources": [
+    {
+     "url": "https://www.bloomberg.com/news/articles/2026-09-26/us-jobs-report-seen-showing-90-000-payrolls-4-1-unemployment-rate",
+     "publisher": "Bloomberg survey",
+     "tier": "T1",
+     "published_at": "2026-09-26"
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "8 月 PCE 物价同比 3.4%",
+   "sources": [
+    {
+     "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+     "publisher": "BEA",
+     "tier": "T0",
+     "published_at": "2026-09-30"
+    }
+   ]
+  },
+  {
+   "id": "C11",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "Waller 10 月 8 日表示预计还会加息，但加息不必在连续两次会议进行",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "C12",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "副主席 Jefferson 10 月 1 日表示，决定下一步可能需要更多时间",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-01"
+    }
+   ]
+  },
+  {
+   "id": "C13",
+   "type": "view",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "据 CNBC 报道，Warsh 10 月 16 日表示不预判会议结果",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-10-16T04:08:27Z"
+    }
+   ]
+  },
+  {
+   "id": "C14",
+   "type": "view",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "据 CNBC 报道，Bowman 和 Daly 表示临近 10 月会议可以等待更清晰的信号",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/15/dollar-falls-from-18-month-high-despite-hot-cpi-as-fed-curb-hike-bets.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-10-15T04:33:27Z"
+    }
+   ]
+  },
+  {
+   "id": "C15",
+   "type": "view",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "据 CNBC 报道，9 月纪要显示 18 名官员中 16 人预计年内再加息一次（这是 9 月中旬、10 月非农与 CPI 公布之前的预期），但没有给出时点",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/07/fed-officials-see-another-hike-coming-but-no-sign-as-to-when-minutes-show.html",
+     "publisher": "CNBC",
+     "tier": "T2",
+     "published_at": "2026-10-07T18:00:37Z"
+    }
+   ]
+  },
+  {
+   "id": "C16",
+   "type": "price",
+   "as_of": "2026-10-26T06:34:00Z",
+   "text": "Polymarket 给 12 月“加息 25bp”76.5%、“不变”20.5%",
+   "sources": [
+    {
+     "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+     "publisher": "Polymarket",
+     "tier": "T0",
+     "published_at": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "C17",
+   "type": "price",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "Polymarket 10 月反对票数：2 票 27.5%、0 票 26.5%、3 票 21.5%、1 票 15.5%、4 票及以上 4.4%（各档合计 95.4%）",
+   "sources": [
+    {
+     "url": "https://polymarket.com/event/how-many-dissent-at-the-october-fed-meeting",
+     "publisher": "Polymarket",
+     "tier": "T0",
+     "published_at": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "C18",
+   "type": "fact",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "Polymarket 以 10 月 27–28 日会后的 FOMC 声明结算；声明一发布即可结算；下次例会结束前仍无声明的，按“不变”结算",
+   "sources": [
+    {
+     "url": "https://gamma-api.polymarket.com/events?slug=fed-decision-in-october-20260617190323537",
+     "publisher": "Polymarket",
+     "tier": "T0",
+     "published_at": "2026-06-17T23:05:56Z"
+    }
+   ]
+  },
+  {
+   "id": "C19",
+   "type": "view",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "社区把翻转归因于 9 月 29 日 Williams 说“不急”，帖子称当天加息概率从约 70% 跌到 44%",
+   "sources": [
+    {
+     "url": "https://x.com/zerohedge/status/2105054183686889568",
+     "publisher": "@zerohedge",
+     "tier": "T4",
+     "published_at": "2026-09-29"
+    },
+    {
+     "url": "https://x.com/RoundtableSpace/status/2105202235940761864",
+     "publisher": "@RoundtableSpace",
+     "tier": "T4",
+     "published_at": "2026-09-30"
+    }
+   ]
+  },
+  {
+   "id": "C20",
+   "type": "view",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "有交易者转述 FedWatch 数据，认为分歧已经转到 12 月（12 月加息 25bp 约 75%）",
+   "sources": [
+    {
+     "url": "https://x.com/chooseamana/status/2112464399005000080",
+     "publisher": "@chooseamana",
+     "tier": "T4",
+     "published_at": "2026-10-20"
+    },
+    {
+     "url": "https://x.com/ZacksResearch/status/2113239444983517439",
+     "publisher": "@ZacksResearch",
+     "tier": "T4",
+     "published_at": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "C21",
+   "type": "view",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "NickTimiraos 称两周内至少 5 位官员表达了“不急”，并指出 Warsh 不再提供前瞻指引（watch 作者，权重减半）",
+   "sources": [
+    {
+     "url": "https://x.com/NickTimiraos/status/2111093148453593508",
+     "publisher": "@NickTimiraos",
+     "tier": "T4",
+     "published_at": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "C22",
+   "type": "view",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "r/investing 有高赞评论质疑“10 月跳过、12 月补加”的路径（27 赞）；也有评论担心出现 50bp 意外（10 赞）",
+   "sources": [
+    {
+     "url": "https://reddit.com/r/investing/comments/1x8rtgh/comment/phf9dyb/",
+     "publisher": "reddit:Necessary-File-7064",
+     "tier": "T4",
+     "published_at": "2026-10-18"
+    },
+    {
+     "url": "https://reddit.com/r/investing/comments/1x8rtgh/comment/phfmsi3/",
+     "publisher": "reddit:U3011",
+     "tier": "T4",
+     "published_at": "2026-10-18"
+    }
+   ]
+  },
+  {
+   "id": "C23",
+   "type": "inference",
+   "as_of": "2026-10-26T06:34:00Z",
+   "text": "10 月不变已经基本定价，两家盘口相差不到 1 个百分点；仍未定的主要是票型、声明与发布会措辞，以及 12 月的时点",
+   "basis": [
+    "C1",
+    "C2",
+    "C11",
+    "C12",
+    "C16"
+   ],
+   "sources": []
+  },
+  {
+   "id": "C24",
+   "type": "inference",
+   "as_of": "2026-10-26T06:17:00Z",
+   "text": "票数盘口给“至少 1 票反对”约 69%（1 票及以上各档相加）到 74%（1 减 0 票）；盘口本身不区分异议的方向",
+   "basis": [
+    "C17"
+   ],
+   "sources": []
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "收入发生了什么变化？",
+  "type": "asset",
+  "task": "财报观察",
+  "entity": "example",
+  "as_of": "2026-10-31T12:00:00Z",
+  "historical": false,
+  "decision_needed": "Separate volume from price",
+  "prior_judgment": "First investigation",
+  "comparison": {
+    "period": "quarterly",
+    "unit": "USD",
+    "scope": "same segment"
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "需求兑现进入利润",
+      "discriminating_observation": "利润与交付同比改善"
+    },
+    {
+      "id": "H2",
+      "explanation": "收入增长但成本吞噬增量",
+      "discriminating_observation": "收入增而利润降"
+    }
+  ],
+  "queries": [
+    {
+      "question": "How many units?",
+      "query": "example quarter shipments",
+      "source": "official",
+      "purpose": "Test volume",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ],
+  "budget": {
+    "max_queries": 4,
+    "max_followups": 1
+  },
+  "stop_condition": "Bridge obtained or budget exhausted",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "valuation",
+    "method": "reverse_valuation",
+    "rationale": "按问题选择可检验的方法",
+    "baseline": "已披露收入和利润基数",
+    "price_relevance": true,
+    "mechanism_chain": [
+      "收入",
+      "利润率",
+      "营业利润",
+      "现金流"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "同口径收入和利润",
+        "source": "公司财报",
+        "by": "下次财报",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "同口径利润增长"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "同口径利润下降"
+          }
+        ]
+      }
+    ]
+  }
+}

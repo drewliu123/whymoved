@@ -1,0 +1,50 @@
+{
+  "qid": "Q125",
+  "as_of": "2026-09-21",
+  "kept": [
+    {
+      "excerpt": "Divulgada neste sábado, 19, a nova pesquisa Paraná Pesquisas para o governo do Rio Grande do Sul mostra o deputado federal Zucco (PL) na liderança, com 36,4% das intenções de voto. Ele é seguido por Juliana Brizola (PDT), que marca 31,3% no cenário estimulado. O atual vice-governador Gabriel Souza (MDB) aparece na terceira colocação, tendo avançado para 12,9%. A pesquisa Paraná Pesquisas entrevistou 1.352 eleitores entre 16 e 18 de setembro de 2026, por meio de entrevistas pessoais, domiciliares e presenciais.",
+      "published_at": "2026-09-19",
+      "publisher": "EXAME",
+      "relevance": "The most recent verified poll included before the cutoff puts Zucco numerically ahead, with a 2.7-percentage-point margin of error and TSE registration RS-00319/2026.",
+      "url": "https://exame.com/brasil/pesquisa-parana-zucco-tem-364-e-brizola-313-no-1o-turno-no-rio-grande-do-sul/"
+    },
+    {
+      "excerpt": "Real Time Big Data's September 10 poll put Zucco at 36%, Juliana Brizola at 35%, and Gabriel Souza at 22% in the stimulated first-round contest. In a simulated runoff, Zucco and Brizola each received 44%; Zucco received 45% against Souza's 40% in another matchup. The survey interviewed 1,600 Rio Grande do Sul voters between September 5 and 9, with a two-percentage-point margin of error and 95% confidence. It was registered with the TSE under RS-05497/2026.",
+      "published_at": "2026-09-10",
+      "publisher": "Correio do Povo",
+      "relevance": "Direct runoff polling shows that Zucco's first-round position did not translate into a clear advantage over Brizola.",
+      "url": "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/elei%C3%A7%C3%B5es/real-time-zucco-e-juliana-brizola-aparecem-com-empate-tecnico-1.1746596"
+    },
+    {
+      "excerpt": "Quaest's August 24 survey put Luciano Zucco at 26% and Juliana Brizola at 23%, a technical tie within its three-percentage-point margin of error. In a simulated runoff between them, Brizola received 36% and Zucco 33%. Quaest interviewed 900 voters in person between August 20 and 23. The poll was registered with the TSE under RS-06875/2026.",
+      "published_at": "2026-08-24",
+      "publisher": "UOL Notícias",
+      "relevance": "An independent pollster provides a different measurement of the close race and an earlier runoff benchmark.",
+      "url": "https://noticias.uol.com.br/eleicoes/2026/08/24/quaest-rs-agosto.ghtm"
+    },
+    {
+      "excerpt": "Paraná Pesquisas reported Zucco at 34.4%, Juliana Brizola at 31.4%, and Gabriel Souza at 11.3% in its August first-round survey. The survey did not simulate runoff scenarios. It interviewed 1,504 voters in person between August 18 and 20, with a 2.6-percentage-point margin of error and 95% confidence. It was commissioned by the institute itself and registered with the TSE under RS-03898/2026.",
+      "published_at": "2026-08-21",
+      "publisher": "EXAME",
+      "relevance": "This same-pollster baseline helps assess whether the September figures represent substantial movement or broadly stable candidate support.",
+      "url": "https://exame.com/brasil/parana-pesquisas-zucco-tem-344-e-juliana-brizola-314-no-1o-turno-no-rio-grande-do-sul/"
+    },
+    {
+      "excerpt": "O PL (Partido Liberal) no Rio Grande do Sul oficializou nesta quarta-feira (22) a candidatura do deputado federal Luciano Zucco ao governo do estado. A chapa formada para rivalizar com Juliana Brizola (PDT) — apoiada pelo presidente Luiz Inácio Lula da Silva (PT) — foi costurada há meses com os cinco maiores partidos do campo da direita no estado: PL, PP-União Brasil, Republicanos, Novo e Podemos. Integram a chapa como vice a deputada estadual Silvana Covatti (PP) e, para o Senado, os deputados federais Ubiratan Sanderson (PL) e Marcel Van Hattem (Novo).",
+      "published_at": "2026-07-22",
+      "publisher": "CNN Brasil",
+      "relevance": "Confirms Zucco's nomination, running mate, and supporting party coalition, establishing the organizational backing for his candidacy.",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/pl-lanca-candidatura-de-zucco-ao-governo-do-rs-com-frente-ampla-da-direita/"
+    },
+    {
+      "excerpt": "As Eleições de 2026 estão marcadas para o dia 4 de outubro, quando eleitoras e eleitores vão às urnas para eleger ocupantes dos cargos de presidente da República, governadores, senadores e deputados federais, estaduais e distritais, no caso do Distrito Federal. O segundo turno do pleito está marcado para o dia 25 de outubro. De 20 de julho a 5 de agosto, partidos e federações realizam convenções partidárias para deliberar sobre coligações e escolher candidatas e candidatos que concorrerão aos cargos de presidente e vice-presidente da República, governador e vice-governador, senador e respectivos suplentes, bem como aos cargos de deputado federal, estadual e distrital nas Eleições de 2026.",
+      "published_at": "2026-03-06",
+      "publisher": "Tribunal Regional Eleitoral de Santa Catarina (TRE-SC)",
+      "relevance": "An official electoral-justice source confirms the first-round and runoff schedule applicable to the Rio Grande do Sul gubernatorial election.",
+      "url": "https://www.tre-sc.jus.br/comunicacao/noticias/2026/Marco/eleicoes-2026-confira-as-principais-datas-do-calendario-eleitoral"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-09-21, inclusive. Included only sources with explicitly verifiable publication dates on or before the cutoff; the latest included release is dated 2026-09-19. Excluded later reporting, undated live candidate pages, prediction-market and betting material, and a TSE calendar article whose displayed update date was after the cutoff; used the dated TRE-SC calendar article instead. Publication dates and factual passages were verified through web_search indexed source text. Direct web_fetch failed because multiple providers were registered, and the requested agent-reach web-read fallback returned a rate-limit error, so full-page retrieval was unavailable. English excerpts are factual translations or condensations of the indexed Portuguese source text; Portuguese excerpts preserve source wording with minor punctuation normalization. No election outcome or post-cutoff development is included."
+}

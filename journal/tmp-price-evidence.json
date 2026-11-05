@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-10-31T13:11:12Z",
+  "raw_source_dir": "nvda-source-2q27lvy7",
+  "observations": [
+    {"id":"P1","url":"https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000","publisher":"Polymarket","tier":"T0","published_at":"2026-10-31T13:10:15Z","text":"Q3 non-GAAP gross margin bracket [73%,75%) displayed outcome price 0.775; best bid 0.73 with 19 shares, best ask 0.82 with 20 shares, last trade 0.740. Bracket boundaries resolve upward. Deadline if no materials: December 31 2026 23:59 ET, lowest bracket. Gamma oneDayPriceChange -0.06 and oneWeekPriceChange -0.05. These changes are display-price changes, not executable returns."},
+    {"id":"P2","url":"https://polymarket.com/event/will-nvidia-nvda-q3-data-center-revenue-be-above-20261008120135000","publisher":"Polymarket","tier":"T0","published_at":"2026-10-31T13:10:15Z","text":"Displayed YES outcomes: >95B 0.765 (bid .56 ask .97); >100B .88 (bid .79 ask .97); >105B .50 (bid .11 ask .89); >110B .30 (bid .02 ask .58); >115B .30 (bid .03 ask .57). Displayed threshold probabilities violate monotonicity, but broad bid-ask ranges overlap; this does not establish executable arbitrage or a reliable median."}
+  ],
+  "fetch_failure":"Additional CLOB /price?side=SELL request returned HTTP 403. The already returned raw /book contains bids and asks. No trade was placed."
+}

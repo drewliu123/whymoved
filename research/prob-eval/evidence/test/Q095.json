@@ -1,0 +1,50 @@
+{
+  "qid": "Q095",
+  "as_of": "2026-09-13",
+  "kept": [
+    {
+      "excerpt": "Steven Kwan homered to lead off the game, Tanner Bibee had seven strikeouts in 6 2/3 strong innings, and the Cleveland Guardians beat the Minnesota Twins 9-2 on Sunday to pull within a half-game of the American League Central-leading Chicago White Sox. Guardians: RHP Gavin Williams (13-7, 3.78 ERA) starts Monday for Cleveland opposite White Sox RHP Sean Burke (8-7, 3.58).",
+      "published_at": "2026-09-13",
+      "publisher": "Associated Press via SeattlePI",
+      "relevance": "Establishes Cleveland's division deficit at the cutoff and the scheduled starting pitchers for its next game against the division leader.",
+      "url": "https://www.seattlepi.com/sports/kwan-bazzana-help-guardians-beat-twins-9-2-pull-a22430189"
+    },
+    {
+      "excerpt": "The White Sox, who have lost 10 of their last 14 games, begin a three-game series Monday in Cleveland. Alec Burleson hit a bases-clearing double, sparking St. Louis Cardinals to a victory over Chicago to wrap up a three-game series.",
+      "published_at": "2026-09-13",
+      "publisher": "Associated Press / Canadian Press via Lethbridge Herald",
+      "relevance": "Documents the division leader's recent losing stretch and the imminent head-to-head series that could materially change the AL Central race.",
+      "url": "https://lethbridgeherald.com/sports/national-sports/2026/09/13/agustin-ramirez-hits-game-ending-2-run-homer-as-marlins-rally-past-dodgers-6-4/"
+    },
+    {
+      "excerpt": "Cleveland's final homestand runs September 14–20 against the White Sox and Athletics, followed by road series against Boston and Kansas City.",
+      "published_at": "2025-08-27",
+      "publisher": "MLB.com",
+      "relevance": "Identifies Cleveland's remaining opponents and home-road sequence entering the final two weeks of the division race.",
+      "url": "https://www.mlb.com/news/guardians-2026-regular-season-schedule-breakdown?msockid=1b04ee3485726261134bf88184576325"
+    },
+    {
+      "excerpt": "DeLauter returned from a wrist sprain after missing four games. Cleveland's bullpen covered an MLB-leading 38⅔ innings over its first nine September games.",
+      "published_at": "2026-09-10",
+      "publisher": "MLB.com",
+      "relevance": "Provides official evidence of an important hitter's return and heavy bullpen usage during Cleveland's stretch run.",
+      "url": "https://www.mlb.com/app-firstpitch/giants/news/chase-delauter-s-homer-overshadowed-by-big-inning-in-guardians-loss"
+    },
+    {
+      "excerpt": "The Guardians currently hold the AL's final wild-card spot after winning eight of their last 10 games. The Guardians also remain within striking distance of the AL Central-leading White Sox. Chase DeLauter — the team's best hitter this season — is looking healthy again.",
+      "published_at": "2026-09-01",
+      "publisher": "Axios Cleveland",
+      "relevance": "Supplies an earlier September snapshot of Cleveland's improving form, offensive health, and position relative to Chicago.",
+      "url": "https://www.axios.com/local/cleveland/2026/09/01/guardians-september-playoff-fate"
+    },
+    {
+      "excerpt": "Walters, who hasn't thrown a pitch in the majors since last season, has undergone UCL repair surgery. The procedure was performed by Dr. Keith Meister in Arlington, Texas, and comes with an expected return-to-play timeline of 10-to-12 months.",
+      "published_at": "2026-09-10T18:38:00Z",
+      "publisher": "Akron Beacon Journal via Yahoo Sports",
+      "relevance": "Confirms that Andrew Walters would not be available to reinforce Cleveland's bullpen during the remaining division race.",
+      "url": "https://sports.yahoo.com/articles/guardians-reliever-andrew-walters-undergoes-183855069.html"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-09-13, inclusive. Selected six dated reports covering the latest division gap, the leading rival's form, remaining schedule, player health, and bullpen workload. Publication dates were visible in web_search source extracts; excerpts reproduce or closely condense those extracts. Built-in web_fetch failed because multiple providers were configured, and the agent-reach skill's web fallback returned RATE_LIMITED, so full-page retrieval could not be completed. Undated dynamic standings, later publications, prediction-market and betting pages, and post-cutoff developments were excluded."
+}

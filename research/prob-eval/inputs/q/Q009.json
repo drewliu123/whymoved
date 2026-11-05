@@ -1,0 +1,50 @@
+{
+ "qid": "Q009",
+ "question": "Will GPT-6 be released by August 31, 2026?",
+ "rules": "This market will resolve to \"Yes\" if OpenAI's GPT-6 model is made available to the general public by August 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No.\"\n\nFor this market to resolve to \"Yes,\" GPT-6 must be launched and publicly accessible, including via open beta or open rolling waitlist signups. A closed beta or any form of private access will not suffice. The release must be clearly defined and publicly announced by OpenAI as being accessible to the general public.\n\nGPT-6 refers to a product explicitly named GPT-6 (e.g. ChatGPT-6o would count), or one that is recognized as a successor to GPT-5, similar to the progression from GPT-3 to GPT-4. Products labeled as GPT-5.5 or similar will not count for this market's resolution.\n\nThe primary resolution source for this market will be official information from OpenAI, with additional verification from a consensus of credible reporting.",
+ "as_of": "2026-08-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "OpenAI",
+   "published_at": "2026-08-18",
+   "excerpt": "We wanted to take the time necessary to meet those standards, so we temporarily slowed the pace of scaling. This included a two-week pause in reinforcement learning (RL) training on our latest models intended for deployment while we further hardened and red-teamed our research environments and expanded the coverage of our monitoring systems. Our largest planned frontier RL run remains on hold while we conduct smaller-scale training and evaluations to assess model behavior, validate our safeguards, and establish more evidence of alignment before proceeding."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters, via MarketScreener",
+   "published_at": "2026-08-18T14:04:00-04:00",
+   "excerpt": "OpenAI on Tuesday said it is slowing down the pace of its AI model development while it overhauls its research and training systems after OpenAI officials were caught unawares last month when an AI agent under testing hacked another AI firm Hugging Face. The company has paused training on its next generation of models, called Astra, and its largest planned training run remains on hold, the company said. The company did not reply to questions about when the two-week slowdown began."
+  },
+  {
+   "id": "E3",
+   "publisher": "OpenAI",
+   "published_at": "2026-08-07",
+   "excerpt": "Our latest internal evaluations of Astra, one of our upcoming models, over the past few days indicate significant advancements in agentic coding and cybersecurity. These results, in addition to expert assessments, have led us to conclude last night that we cannot rule out critical cyber capabilities under our Preparedness Framework."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters, via WHTC",
+   "published_at": "2026-08-07",
+   "excerpt": "OpenAI said on Friday it cannot rule out that its upcoming AI model, Astra, has “critical” cybersecurity capabilities, prompting the startup to pause some internal development and trigger safety protocols."
+  },
+  {
+   "id": "E5",
+   "publisher": "OpenAI Deployment Safety Hub",
+   "published_at": "2026-08-06",
+   "excerpt": "Starting today, we’re updating ChatGPT with a more capable model and expanding access for everyone. Free and Go users will get a new default model for everyday chats. Plus and Pro users will get an updated GPT‑5.6 Sol with a slider that lets them choose how much effort ChatGPT uses for a response. These models will replace GPT-5.5 Instant."
+  },
+  {
+   "id": "E6",
+   "publisher": "OpenAI",
+   "published_at": "2026-08-01",
+   "excerpt": "Today, we are sharing a selection of ten results, each of which resolves or makes substantial progress on a long-standing open problem. The results were achieved by an internal version of Astra, our next major model."
+  },
+  {
+   "id": "E7",
+   "publisher": "OpenAI",
+   "published_at": "2025-08-07",
+   "excerpt": "GPT‑5 is starting to roll out today to all Plus, Pro, Team, and Free users, with access for Enterprise and Edu coming next week. Pro, Plus, and Team users can also start coding with GPT‑5 in the Codex CLI by signing in with ChatGPT."
+  }
+ ]
+}

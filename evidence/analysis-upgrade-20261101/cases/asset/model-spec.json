@@ -1,0 +1,86 @@
+{
+  "kind": "reverse_dcf",
+  "inputs": {
+    "free_cash_flow": {
+      "value": 10,
+      "unit": "currency",
+      "role": "observed",
+      "claim_ids": [
+        "C1"
+      ]
+    },
+    "discount_rate": {
+      "value": 0.1,
+      "unit": "ratio",
+      "role": "assumption",
+      "claim_ids": [
+        "AM1"
+      ]
+    },
+    "terminal_growth": {
+      "value": 0.02,
+      "unit": "ratio",
+      "role": "assumption",
+      "claim_ids": [
+        "AM1"
+      ]
+    },
+    "years": {
+      "value": 5,
+      "unit": "year",
+      "role": "assumption",
+      "claim_ids": [
+        "AM1"
+      ]
+    },
+    "net_debt": {
+      "value": 20,
+      "unit": "currency",
+      "role": "observed",
+      "claim_ids": [
+        "C1"
+      ]
+    },
+    "shares": {
+      "value": 10,
+      "unit": "shares",
+      "role": "observed",
+      "claim_ids": [
+        "C1"
+      ]
+    },
+    "price": {
+      "value": 15,
+      "unit": "currency/share",
+      "role": "observed",
+      "claim_ids": [
+        "P1"
+      ]
+    },
+    "growth_low": {
+      "value": -0.5,
+      "unit": "ratio",
+      "role": "assumption",
+      "claim_ids": [
+        "AM1"
+      ]
+    },
+    "growth_high": {
+      "value": 1.0,
+      "unit": "ratio",
+      "role": "assumption",
+      "claim_ids": [
+        "AM1"
+      ]
+    }
+  },
+  "sensitivity": [
+    {
+      "input": "discount_rate",
+      "values": [
+        0.09,
+        0.11
+      ]
+    }
+  ]
+}

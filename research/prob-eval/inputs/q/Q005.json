@@ -1,0 +1,32 @@
+{
+ "qid": "Q005",
+ "question": "Will the next Google Gemini Pro model be released by July 31, 2026?",
+ "rules": "This market will resolve to \"Yes\" if Google's next Gemini Pro model is made available to the general public between market creation and the specified date (ET). Otherwise, this market will resolve to “No”.\n\nAny Gemini model released after market creation and labeled as \"Pro\" may qualify (e.g., gemini-3.2-pro, gemini-3.5-pro, or gemini-4.0-pro-preview). Gemini models labeled only as Flash, Flash-Lite, or another non-Pro variant will not qualify.\n\nProducts labeled as a GA promotion of an already-existing Preview model (e.g., gemini-3.1-pro-ga) may qualify\n\nA qualifying model must be launched and publicly accessible, including via open beta or open rolling waitlist signups. A closed beta or any form of private access will not suffice. The release must be either clearly defined and publicly announced by Google as being accessible to the general public or otherwise made publicly accessible and explicitly labeled within the company's official website. Labeling errors, placeholder text, or version names displayed on the website that do not correspond to a model that is actually accessible to the general public will not qualify.\n\nThe primary resolution source for this market will be offici",
+ "as_of": "2026-07-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "9to5Google",
+   "published_at": "2026-07-16",
+   "excerpt": "In mid-May, Google announced Gemini 3.5 Flash at I/O 2026 and said the Pro version would arrive in June. That deadline has passed with no update on when to expect it. In a statement, the company said it is “currently testing 3.5 Pro, an upgraded Flash model, and other models with partners.”"
+  },
+  {
+   "id": "E2",
+   "publisher": "Google",
+   "published_at": "2026-05-19",
+   "excerpt": "Today, we’re introducing Gemini 3.5, our latest family of models combining frontier intelligence with action. We’re kicking off the series by releasing 3.5 Flash. We’re also hard at work on 3.5 Pro. It's already being used internally, and we look forward to rolling it out next month."
+  },
+  {
+   "id": "E3",
+   "publisher": "Google",
+   "published_at": "2026-02-19",
+   "excerpt": "Today, we’re releasing the upgraded core intelligence that makes those breakthroughs possible: Gemini 3.1 Pro. We are releasing 3.1 Pro in preview today to validate these updates and continue to make further advancements in areas such as ambitious agentic workflows before we make it generally available soon. Starting today, Gemini 3.1 Pro in the Gemini app is rolling out with higher limits for users with the Google AI Pro and Ultra plans."
+  },
+  {
+   "id": "E4",
+   "publisher": "Google",
+   "published_at": "2025-06-17",
+   "excerpt": "Today, we’re taking the next step with our 2.5 Pro and Flash models by releasing them as stable and generally available. The preview of Gemini 2.5 Flash-Lite is now available in Google AI Studio and Vertex AI, alongside the stable versions of 2.5 Flash and Pro. Both 2.5 Flash and Pro are also accessible in the Gemini app."
+  }
+ ]
+}

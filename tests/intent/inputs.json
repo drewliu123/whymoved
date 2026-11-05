@@ -1,0 +1,102 @@
+{
+  "fixture_notice": "以下发现结果均为合成材料，只测试意图分流和审查，不代表真实行情或已联网核实。",
+  "cases": [
+    {
+      "id": "title_probe",
+      "stage": "triage",
+      "user_turns": ["/touyan:research 10月中国通货膨胀-年度是多少"],
+      "discovery": "尚未检索，无年份或市场链接。",
+      "request": "给出第一项必要动作；不要执行联网或报告生成。"
+    },
+    {
+      "id": "title_unique_match",
+      "stage": "triage",
+      "user_turns": ["/touyan:research 10月中国通货膨胀-年度是多少"],
+      "discovery": "已检索，唯一有效且标题、国家、指标、目标月一致的合成市场为2026年10月全国headline CPI同比；合约全文、费用和订单簿尚未核对。没有相反用途限定。"
+    },
+    {
+      "id": "explicit_actual_overrides_history",
+      "stage": "triage",
+      "user_turns": ["上次研究用于Polymarket。", "这次只查2026年10月CPI官方已公布实际值，不要预测。"],
+      "discovery": "该期尚未发布。"
+    },
+    {
+      "id": "forecast_unreleased",
+      "stage": "triage",
+      "user_turns": ["预计下个月中国CPI同比可能多少？给判断和驱动，不看交易价格。"],
+      "discovery": "目标期未发布；期间和官方指标已确认，没有交易上下文。"
+    },
+    {
+      "id": "forecast_correction",
+      "stage": "triage",
+      "user_turns": ["10月CPI是多少？", "我想知道可能是多少，你没帮我预测。"],
+      "previous_plan": "只查官方发布时间；price_relevance=false。",
+      "discovery": "原答只有尚未公布及发布时间。"
+    },
+    {
+      "id": "market_correction",
+      "stage": "triage",
+      "user_turns": ["10月中国通货膨胀-年度是多少", "是为了在Polymarket下单做决策辅助，要根据他的规则。"],
+      "previous_plan": "宏观中心预测，市场价格不适用。",
+      "discovery": "原答给0.9%中心和0.7%至1.1%的假设情景；没有精确合约或概率校准。"
+    },
+    {
+      "id": "multiple_contracts",
+      "stage": "triage",
+      "user_turns": ["帮我分析这份October Inflation China - Annual怎么买才有优势。"],
+      "discovery": "工具返回两份有效候选，年份分别2026和2027；用户没有链接或时间上下文，无法辨别目标年份。"
+    },
+    {
+      "id": "explicit_market_not_found",
+      "stage": "triage",
+      "user_turns": ["我问中国10月通胀是为了Polymarket交易，请核对结算档位。"],
+      "discovery": "已尝试原词和英文标题检索，但本轮未找到可确认的合约；没有实际市场链接或规则。"
+    },
+    {
+      "id": "asset_attribution",
+      "stage": "triage",
+      "user_turns": ["英伟达这个月为什么跌？比较行业表现和公司因素。"],
+      "discovery": "尚未核对起止、实际跌幅及行业基准；没有预测市场上下文。"
+    },
+    {
+      "id": "review_narrowed_plan",
+      "stage": "review",
+      "user_turns": ["10月中国通货膨胀-年度是多少", "为了Polymarket下单决策辅助，根据规则来。"],
+      "plan": "纯事实查询；只核对发布时间；市场不适用。",
+      "draft": "10月CPI尚未公布，下周发布。",
+      "validation": "计划与报告一致，来源、引用、算术和归档结构全部通过。"
+    },
+    {
+      "id": "review_point_only",
+      "stage": "review",
+      "user_turns": ["按Polymarket的规则和现在价格帮我判断中国10月通胀各档哪个值得研究。"],
+      "plan": "预测中国CPI中心值。",
+      "draft": "中心预测0.9%，假设情景0.7%至1.1%，完整食品数据待补。没有合约规则、档位或报价成本。",
+      "validation": "公式和引用通过。"
+    },
+    {
+      "id": "review_actual_answer",
+      "stage": "review",
+      "user_turns": ["上次研究过Polymarket。", "现在只查官方已经发布的某期CPI同比，不看交易。"],
+      "plan": "官方实际值查询。",
+      "draft": "该期官方公布同比为X%，附目标期和原始公告。",
+      "validation": "本合成案例已确认目标期、X数值及官方来源匹配；没有要求预测或价格判断。"
+    },
+    {
+      "id": "review_missing_costs_after_search",
+      "stage": "review",
+      "user_turns": ["按合约和现在能成交的成本，判断哪些通胀档位值得研究。"],
+      "plan": "合约决策辅助，需核对结算、预测驱动、报价、费用与深度。",
+      "draft": "已核对规则与驱动，取得报价；预算内定向补查费用、深度均失败，日志齐全。仅能提供部分判断，未核实可成交成本，不声称正期望。明确列出缺口及下一检验。",
+      "validation": "已执行补查且诚实披露，不存在虚构成本或把部分结果称完整完成。"
+    },
+    {
+      "id": "review_qualitative_without_probability",
+      "stage": "review",
+      "user_turns": ["按合约和价格给有依据的档位倾向与条件判断，不要求精确胜率。"],
+      "plan": "合约决策辅助，需规则、驱动、真实成本、含费门槛、优先级及失效条件。",
+      "draft": "上述要素均已核实且有来源，已执行校准依据补查但不足以给可靠胜率；给有据定性倾向、成本门槛与翻转条件，不宣称已验证错价。",
+      "validation": "合成条件确认所有必需取证已执行、答案要素覆盖且结论不过度；唯一缺口是用户未要求的精确校准概率。"
+    }
+  ]
+}

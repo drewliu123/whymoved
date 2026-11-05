@@ -1,0 +1,73 @@
+/last30days · researching: 英伟达大跌 NVIDIA NVDA stock selloff
+⏳ [95mProcessing[0m Removing duplicates...
+[Resolve] Official site https://nvidia.com/: x_handle='nvidia', github_user=''
+[Planner] Added installed/opted-in sources absent from every --plan subquery to primary: stocktwits (set EXCLUDE_SOURCES to skip them).
+[Planner] Plan: intent=breaking_news, freshness=strict_recent, cluster_mode=story, subqueries=2, source=external
+[Planner]   sq1 label=primary search="NVIDIA stock" sources=[reddit,x,youtube,hackernews,polymarket,github,stocktwits]
+[Planner]   sq2 label=selloff search="NVDA selloff" sources=[reddit,x,youtube,hackernews]
+[HN] Searching for 'nvidia stock' (raw: 'NVIDIA stock', since 2026-10-02, count=30)
+[PM] Searching for 'NVIDIA stock' with queries: ['NVIDIA stock', 'NVIDIA', 'stock'] (pages=3)
+[YouTube] Searching YouTube for '英伟达大跌 nvidia nvda stock selloff' (since 2026-10-02, count=8)
+[Bird] Searching: 英伟达大跌 nvidia nvda stock selloff since:2026-10-02 until:2026-11-02
+[HN] Searching for 'nvda selloff' (raw: 'NVDA selloff', since 2026-10-02, count=30)
+[GitHub] Searching for 'nvidia stock' (raw: 'NVIDIA stock', since 2026-10-02, count=30)
+[HN] Filtered 1/7 low-engagement stories
+[HN] Found 6 stories
+[HN] Prefix filter removed 6/6 false-positive hits for 'NVDA selloff'
+[Bird] 0 results for '英伟达大跌 nvidia nvda stock selloff', retrying with '英伟达大跌 nvidia'
+[HN] Found 30 stories
+[HN] Enriching top 5 stories with comments
+[PM] Domain expansion queries: ['Finance', 'Equities']
+[GitHub] Found 30 issues/PRs
+[GitHub] Enriching top 5 items with comments
+[PM] Found 47 unique events across 5 queries
+[PM] Filtered 37 noise events (topic: '英伟达大跌 NVIDIA NVDA stock selloff')
+[X] corpus off-topic; retrying with '英伟达大跌 nvidia nvda stock selloff'
+[Bird] Searching: 英伟达大跌 nvidia nvda stock selloff since:2026-10-02 until:2026-11-02
+[Bird] 0 results for '英伟达大跌 nvidia nvda stock selloff', retrying with '英伟达大跌 nvidia'
+[YouTube] YouTube search failed (rc=1): ERROR: [youtube] JH3m_txZioI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[YouTube] Searching YouTube for '英伟达大跌 nvidia nvda stock selloff review reaction breakdown' (since 2026-10-02, count=8)
+[RedditKeyless] arctic-shift supplement: 48 new posts from 100 arctic results
+[RedditKeyless] Dedicated lane: 139 posts from ['NVDA_Stock', 'NvidiaStock']
+[RedditKeyless] arctic-shift supplement: 48 new posts from 100 arctic results
+[RedditKeyless] Dedicated lane: 139 posts from ['NVDA_Stock', 'NvidiaStock']
+[YouTube] YouTube search failed (rc=1): ERROR: [youtube] LEIDYg3fBhU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[RedditSearch] 25 posts (t=year, 3 targeted subs)
+[RedditSearch] 25 posts (t=year, 3 targeted subs)
+[RedditKeyless] arctic-shift supplement: 37 new posts from 75 arctic results
+[RedditKeyless] Tier 1 (site search) 25 posts; listing discovery 169
+[RedditKeyless] arctic-shift supplement: 37 new posts from 75 arctic results
+[RedditKeyless] Tier 1 (site search) 25 posts; listing discovery 169
+[RedditKeyless] arctic-shift backfilled 27 post scores
+[RedditKeyless] Relevance floor dropped 168 off-topic posts
+[RedditKeyless] arctic-shift backfilled 27 post scores
+[RedditKeyless] Relevance floor dropped 168 off-topic posts
+[Reddit] relevance prune dropped 143 of 149 items below the relevance/engagement floor
+[Hacker News] relevance prune dropped 28 of 30 items below the relevance/engagement floor
+[Reddit] relevance prune dropped 126 of 149 items below the relevance/engagement floor
+[Bird] Searching: from:nvidia since:2026-10-02 until:2026-11-02 -> 8 results
+[Bird] Searching: from:wesz123456789 since:2026-10-02 until:2026-11-02 -> 8 results
+[Bird] Searching: from:angelaww888 since:2026-10-02 until:2026-11-02 -> 8 results
+[Bird] Searching: @wesz123456789 since:2026-10-02 until:2026-11-02 -> 5 mentions
+[Bird] Searching: @nvidia since:2026-10-02 until:2026-11-02 -> 5 mentions
+[Bird] Searching: @angelaww888 since:2026-10-02 until:2026-11-02 -> 5 mentions
+[X] relevance prune dropped 18 of 34 items below the relevance/engagement floor
+[HN] Searching for '英伟达大跌 nvidia nvda' (raw: '英伟达大跌 nvidia nvda', since 2026-10-02, count=30)
+[PM] Searching for '英伟达大跌 nvidia nvda' with queries: ['英伟达大跌 nvidia nvda', '英伟达大跌', 'nvidia', 'nvda'] (pages=3)
+[HN] Found 0 stories
+[PM] Domain expansion queries: ['Finance', 'AI']
+[PM] Found 34 unique events across 6 queries
+[PM] Filtered 25 noise events (topic: '英伟达大跌 NVIDIA NVDA stock selloff')
+[X] relevance prune dropped 12 of 20 items below the relevance/engagement floor (per-query stream)
+[X] relevance prune dropped 4 of 12 items below the relevance/engagement floor (per-query stream)
+[X] relevance prune dropped 16 of 32 items below the relevance/engagement floor (merged stream)
+✓ Research complete (131.5s) - Reddit: 16 threads, X: 16 posts, YouTube: 0 videos, HN: 2 stories, Polymarket: 0 markets, Github: 12 results, Stocktwits: 0 results
+
+Research quality: 4/5 core sources.
+Missing: YouTube (errored this run).
+
+Free fixes:
+  - YouTube errored - update yt-dlp: brew upgrade yt-dlp
+
+Bonus: TikTok and Instagram are available with a free ScrapeCreators key at scrapecreators.com (no affiliation).
+[last30days] Saved output to /Users/frankzhang/Documents/Last30Days/nvidia-nvda-stock-selloff-raw-nvda-20261101-91p9ce.md

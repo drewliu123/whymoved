@@ -1,0 +1,43 @@
+{
+  "qid": "Q123",
+  "as_of": "2026-09-21",
+  "kept": [
+    {
+      "excerpt": "No principal cenário estimulado, Lula registra 40% das intenções de voto, enquanto Flávio Bolsonaro aparece com 37%. O escritor Augusto Cury aparece em seguida, com 6%, seguido por Ronaldo Caiado, com 5%, Renan Santos, com 3%, e Zema, com 1%. Foram ouvidos 2.006 eleitores, por telefone, via CATI, entre os dias 18 e 20 de setembro de 2026. A margem de erro é de 2 pontos percentuais, para mais ou para menos, com 95% de nível de confiança.",
+      "published_at": "2026-09-21",
+      "publisher": "Nexus — Pesquisa BTG/Nexus",
+      "relevance": "This primary poll places Caiado numerically fourth, one percentage point behind third-place Cury, immediately before the evidence cutoff; its TSE registration is BR-00485/2026.",
+      "url": "https://www.nexus.fsb.com.br/estudos-divulgados/pesquisa-btg-nexus-de-intencao-de-votos-para-presidente-do-brasil-21-de-setembro-de-2026/"
+    },
+    {
+      "excerpt": "O escritor Augusto Cury (Avante) oscilou de 7% para 6% e permanece na terceira posição. Ele acumula três quedas numéricas consecutivas desde que atingiu 10% no início de setembro. O ex-governador de Goiás Ronaldo Caiado atingiu 4% neste levantamento, mesmo nível da pesquisa de uma semana atrás. Contratada pelo jornal O Globo e pela TV Globo, a pesquisa ouviu presencialmente 2.004 eleitores entre 17 e 20 de setembro.",
+      "published_at": "2026-09-21T18:41:08-03:00",
+      "publisher": "Jornal do Comércio / Agências",
+      "relevance": "The latest Quaest report places Caiado two points behind third-place Cury while documenting Cury's recent decline; the poll has a two-point margin of error and TSE registration BR-06004/2026.",
+      "url": "https://www.jornaldocomercio.com/politica/2026/09/1264073-no-1-turno-lula-tem-37-dos-votos-totais-flavio-33-cury-6-caiado-4-aponta-quaest.html"
+    },
+    {
+      "excerpt": "No cenário sem o nome do PRTB, Lula tem hoje 39%, ante 35% de Flavio. Em um patamar mais baixo aparecem o escritor Augusto Cury (Avante), que tem 6%, Ronaldo Caiado (PSD), com 4%, Renan Santos (Missão), com 3%, e Zema (Novo), com 2%. O atual levantamento foi realizado entre os dias 8 e 10 de setembro de 2026, com 2.002 entrevistas presenciais em 125 municípios, com eleitores de 16 anos ou mais de todas as regiões do país. A margem de erro da pesquisa é de 2 pontos percentuais para mais ou para menos considerando um nível de confiança de 95%.",
+      "published_at": "2026-09-14T11:28:00-03:00",
+      "publisher": "Datafolha",
+      "relevance": "An independent primary poll also places Caiado numerically fourth behind Cury, providing a comparison with the September 21 surveys; its TSE registration is BR-01833/2026.",
+      "url": "https://datafolha.folha.uol.com.br/eleicoes/2026/09/no-1o-turno-lula-tem-39-contra-35-de-flavio-e-no-2o-turno-persiste-empate-tecnico-entre-eles.shtml"
+    },
+    {
+      "excerpt": "Entre os entrevistados que escolheram algum candidato no primeiro turno, 84% afirmam que a decisão está tomada e não mudará, ante 83% na rodada anterior. Outros 15% admitem que ainda podem alterar o voto, ante 17% anteriormente. Os eleitores de Flávio apresentam a maior taxa de certeza, de 92%, seguidos pelos de Lula, com 90%. A taxa é de 55% entre os eleitores de Samara Martins, de 52% entre os de Caiado e Zema e de 48% no eleitorado de Cury.",
+      "published_at": "2026-09-21T08:45:00-03:00",
+      "publisher": "Paraíba Online / Conteúdo Estado",
+      "relevance": "Vote-certainty figures from the same BTG/Nexus survey indicate substantial remaining fluidity among Caiado and Cury supporters, directly relevant to their close contest for third place.",
+      "url": "https://paraibaonline.com.br/eleicoes/2026/09/21/nova-pesquisa-btg-nexus-para-presidente-saiba-os-numeros/"
+    },
+    {
+      "excerpt": "Por unanimidade, o Plenário do Tribunal Superior Eleitoral (TSE) aprovou, em sessão administrativa extraordinária realizada nesta segunda-feira (2), mais sete resoluções que vão orientar as Eleições Gerais de 2026. Com o julgamento de hoje, o Tribunal concluiu a votação de todas as instruções relativas ao pleito, incluindo o calendário eleitoral e a atualização das regras sobre uso de inteligência artificial (IA) na campanha eleitoral. Nas Eleições Gerais deste ano, cujo 1º turno está marcado para o dia 4 de outubro, o eleitorado definirá os ocupantes dos cargos de presidente da República, governador de estado, senador, deputado federal e deputado estadual ou distrital.",
+      "published_at": "2026-03-03T09:36:00-03:00",
+      "publisher": "Tribunal Superior Eleitoral (TSE)",
+      "relevance": "The official electoral authority confirms October 4 as the scheduled first-round date and approval of the governing election calendar.",
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2026/Marco/tse-aprova-calendario-eleitoral-e-regulamenta-uso-de-ia-nas-eleicoes-2026"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen evidence cutoff: 2026-09-21 inclusive. Included five dated items covering three independent national polls, vote certainty, and the official election schedule. Excerpts retain the sources' Portuguese wording. Publication dates were verified in search-indexed article text or the dated primary release title; the TSE article shows an update on 2026-07-08, also before the cutoff. Poll percentages are reported voting intentions, not official valid-vote results, and rounded poll ties do not establish election-result ties. The Paraíba Online item adds vote-certainty detail from the same BTG/Nexus poll and is not independent polling evidence. Direct web_fetch failed because of provider configuration; the requested agent-reach fallback returned RATE_LIMITED, so verification relied on web_search's indexed source text. Excluded undated or dynamically updated aggregators, material published after the cutoff, election outcomes, and prediction-market or betting material. No forecast probability is supplied."
+}

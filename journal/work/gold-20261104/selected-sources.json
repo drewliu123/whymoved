@@ -1,0 +1,706 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-04T07:30:00+00:00",
+  "historical": false,
+  "candidates": [
+    {
+      "id": "PX-GC-NOW",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1y&interval=1d",
+      "canonical_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&range=1y",
+      "publisher": "Yahoo Finance chart API (exchange data, delayed)",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "GC=F 2026-11-04T06:55:32+00:00 = 4033.4",
+      "locator": "raw/y_GC=F.json chart.result[0]",
+      "origin_id": "yahoo-gc=f",
+      "origin_basis": "交易所行情经Yahoo转发；非独立第二来源",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-04T06:55:32+00:00",
+        "instrument": "COMEX gold futures continuous front contract (GC=F), USD/oz",
+        "outcome": "last price",
+        "direction": "level",
+        "value": 4033.4,
+        "unit": "USD/oz",
+        "quote_type": "indicative"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "当前金价基准",
+        "relevance": "direct",
+        "purpose": "当前金价基准",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "PX-GC-PEAK",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1y&interval=1d",
+      "canonical_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&range=1y",
+      "publisher": "Yahoo Finance chart API (exchange data, delayed)",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "GC=F 2026-01-29T17:00:00-05:00 = 5318.4",
+      "locator": "raw/y_GC=F.json chart.result[0]",
+      "origin_id": "yahoo-gc=f",
+      "origin_basis": "交易所行情经Yahoo转发；非独立第二来源",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-01-29T17:00:00-05:00",
+        "instrument": "COMEX gold futures continuous front contract (GC=F), USD/oz",
+        "outcome": "daily close",
+        "direction": "level",
+        "value": 5318.4,
+        "unit": "USD/oz",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "一年内收盘高点",
+        "relevance": "direct",
+        "purpose": "一年内收盘高点",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "PX-GC-APR",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1y&interval=1d",
+      "canonical_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&range=1y",
+      "publisher": "Yahoo Finance chart API (exchange data, delayed)",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "GC=F 2026-04-01T17:00:00-04:00 = 4813.1",
+      "locator": "raw/y_GC=F.json chart.result[0]",
+      "origin_id": "yahoo-gc=f",
+      "origin_basis": "交易所行情经Yahoo转发；非独立第二来源",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-04-01T17:00:00-04:00",
+        "instrument": "COMEX gold futures continuous front contract (GC=F), USD/oz",
+        "outcome": "daily close",
+        "direction": "level",
+        "value": 4813.1,
+        "unit": "USD/oz",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "T4第一段下跌终点",
+        "relevance": "direct",
+        "purpose": "T4第一段下跌终点",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "PX-GC-LOW",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1y&interval=1d",
+      "canonical_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&range=1y",
+      "publisher": "Yahoo Finance chart API (exchange data, delayed)",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "GC=F 2026-10-30T17:00:00-04:00 = 3898.9",
+      "locator": "raw/y_GC=F.json chart.result[0]",
+      "origin_id": "yahoo-gc=f",
+      "origin_basis": "交易所行情经Yahoo转发；非独立第二来源",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-10-30T17:00:00-04:00",
+        "instrument": "COMEX gold futures continuous front contract (GC=F), USD/oz",
+        "outcome": "daily close",
+        "direction": "level",
+        "value": 3898.9,
+        "unit": "USD/oz",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "一年内收盘低点",
+        "relevance": "direct",
+        "purpose": "一年内收盘低点",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "PX-SI-PEAK",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SI=F?range=1y&interval=1d",
+      "canonical_url": "https://query1.finance.yahoo.com/v8/finance/chart/SI=F?interval=1d&range=1y",
+      "publisher": "Yahoo Finance chart API (exchange data, delayed)",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "SI=F 2026-01-26T17:00:00-05:00 = 115.08",
+      "locator": "raw/y_SI=F.json chart.result[0]",
+      "origin_id": "yahoo-si=f",
+      "origin_basis": "交易所行情经Yahoo转发；非独立第二来源",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-01-26T17:00:00-05:00",
+        "instrument": "COMEX silver futures continuous front contract (SI=F), USD/oz",
+        "outcome": "daily close",
+        "direction": "level",
+        "value": 115.08,
+        "unit": "USD/oz",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "白银高点",
+        "relevance": "direct",
+        "purpose": "白银高点",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "PX-SI-NOW",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SI=F?range=1y&interval=1d",
+      "canonical_url": "https://query1.finance.yahoo.com/v8/finance/chart/SI=F?interval=1d&range=1y",
+      "publisher": "Yahoo Finance chart API (exchange data, delayed)",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "SI=F 2026-11-04T06:55:35+00:00 = 51.72",
+      "locator": "raw/y_SI=F.json chart.result[0]",
+      "origin_id": "yahoo-si=f",
+      "origin_basis": "交易所行情经Yahoo转发；非独立第二来源",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-04T06:55:35+00:00",
+        "instrument": "COMEX silver futures continuous front contract (SI=F), USD/oz",
+        "outcome": "last price",
+        "direction": "level",
+        "value": 51.72,
+        "unit": "USD/oz",
+        "quote_type": "indicative"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "白银当前",
+        "relevance": "direct",
+        "purpose": "白银当前",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "PX-CL-OCT30",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=1y&interval=1d",
+      "canonical_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?interval=1d&range=1y",
+      "publisher": "Yahoo Finance chart API (exchange data, delayed)",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "CL=F 2026-10-30T17:00:00-04:00 = 104.12",
+      "locator": "raw/y_CL=F.json chart.result[0]",
+      "origin_id": "yahoo-cl=f",
+      "origin_basis": "交易所行情经Yahoo转发；非独立第二来源",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-10-30T17:00:00-04:00",
+        "instrument": "NYMEX WTI crude futures continuous front contract (CL=F), USD/bbl",
+        "outcome": "daily close",
+        "direction": "level",
+        "value": 104.12,
+        "unit": "USD/bbl",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "油价近期高位",
+        "relevance": "direct",
+        "purpose": "油价近期高位",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "PX-CL-NOW",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=1y&interval=1d",
+      "canonical_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?interval=1d&range=1y",
+      "publisher": "Yahoo Finance chart API (exchange data, delayed)",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "CL=F 2026-11-04T06:55:59+00:00 = 96.48",
+      "locator": "raw/y_CL=F.json chart.result[0]",
+      "origin_id": "yahoo-cl=f",
+      "origin_basis": "交易所行情经Yahoo转发；非独立第二来源",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-04T06:55:59+00:00",
+        "instrument": "NYMEX WTI crude futures continuous front contract (CL=F), USD/bbl",
+        "outcome": "last price",
+        "direction": "level",
+        "value": 96.48,
+        "unit": "USD/bbl",
+        "quote_type": "indicative"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "油价当前",
+        "relevance": "direct",
+        "purpose": "油价当前",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "FRED-DFII10",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10",
+      "canonical_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10",
+      "publisher": "FRED / U.S. Treasury",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "2026-01-29,1.89; 2026-04-01,2.02; 2026-10-05,2.95; 2026-11-02,2.62",
+      "locator": "DFII10 rows 2026-01-29, 2026-04-01, 2026-10-05, 2026-11-02",
+      "origin_id": "ust-real-yield-curve",
+      "origin_basis": "财政部实际收益率曲线原始序列",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "units": {
+        "unit": "percent",
+        "scope": "10-year TIPS constant maturity"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "实际利率路径",
+        "relevance": "direct",
+        "purpose": "实际利率路径",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "FED-SEP",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "publisher": "Federal Reserve",
+      "tier": "T0",
+      "published_at": "2026-09-16T14:00:00-04:00",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent",
+      "locator": "FOMC statement paragraph 1",
+      "origin_id": "fomc-20260916",
+      "origin_basis": "FOMC正式声明",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "9月加息",
+        "relevance": "direct",
+        "purpose": "9月加息",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "FED-OCT",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "publisher": "Federal Reserve",
+      "tier": "T0",
+      "published_at": "2026-10-28T14:00:00-04:00",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent ... Voting against the monetary policy action were Lisa D. Cook and Beth M. Hammack, who preferred to raise the target range for the federal funds rate by 1/4 percentage point",
+      "locator": "FOMC statement paragraphs 1 and final",
+      "origin_id": "fomc-20261028",
+      "origin_basis": "FOMC正式声明",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "10月按兵不动但两票主张加息",
+        "relevance": "direct",
+        "purpose": "10月按兵不动但两票主张加息",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "FED-CAL",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "canonical_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publisher": "Federal Reserve",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "December 8-9* * Meeting associated with a Summary of Economic Projections.",
+      "locator": "2026 FOMC Meetings, December row",
+      "origin_id": "fomc-calendar-2026",
+      "origin_basis": "Fed官方日历",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "下一催化日期",
+        "relevance": "direct",
+        "purpose": "下一催化日期",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "WGC-Q3",
+      "url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q3-2026",
+      "canonical_url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q3-2026",
+      "publisher": "World Gold Council (Metals Focus data)",
+      "tier": "T0",
+      "published_at": "2026-11-03",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "ETFs and Similar Products 225.7 175.7 62.4 -47.3 211.2 ... Central Bank and Other Institutions 226.3 209.9 57.7 296.3 321.2 8 42 ... Total Bar and Coin 328.6 428.3 476.9 308.6 267.8 -13 -19 ... Jewellery Consumption ... 312.9 12 -17 ... LBMA Gold Price (US$/oz) 3,456.5 4,135.2 4,872.9 4,506.3 4,262.2 -5 23",
+      "locator": "Table 1: Quarterly gold supply and demand by sector, tonnes (Q3'25..Q3'26, q/q%, y/y%)",
+      "origin_id": "wgc-gdt-q3-2026",
+      "origin_basis": "WGC季度供需统计原始发布",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "date_nature": "Google News列示11月3日；页面数据截至9月30日",
+      "selection": {
+        "selected": true,
+        "reason": "区分官方需求与价格",
+        "relevance": "direct",
+        "purpose": "区分官方需求与价格",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "PM-DEC-HIKE",
+      "url": "https://gamma-api.polymarket.com/events?closed=false&limit=50&order=volume24hr&ascending=false&tag_slug=fed",
+      "canonical_url": "https://gamma-api.polymarket.com/events?ascending=false&closed=false&limit=50&order=volume24hr&tag_slug=fed",
+      "publisher": "Polymarket Gamma API",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting? [\"0.755\", \"0.245\"] bestBid 0.75 bestAsk 0.76 updatedAt 2026-11-04T07:07:57Z",
+      "locator": "raw/pm_fed.json event 'Fed Decision in December?'",
+      "origin_id": "polymarket-fed-dec-2026",
+      "origin_basis": "平台Gamma参考价（非CLOB订单簿）",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-04T07:07:57+00:00",
+        "instrument": "Polymarket: Fed Decision in December? / +25bps",
+        "outcome": "Yes",
+        "direction": "level",
+        "value": 0.755,
+        "unit": "USD/share",
+        "quote_type": "indicative"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "市场对12月加息的定价",
+        "relevance": "direct",
+        "purpose": "市场对12月加息的定价",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "FRED-CPI",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL",
+      "canonical_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL",
+      "publisher": "FRED / BLS",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "CPIAUCSL 2025-09-01,324.245; 2026-09-01,336.298 | CPILFESL 2025-09-01,330.418; 2026-09-01,338.896",
+      "locator": "CPIAUCSL与CPILFESL 2025-09与2026-09行（季调指数）",
+      "origin_id": "bls-cpi",
+      "origin_basis": "BLS原始指数经FRED",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "通胀来源：能源 vs 核心",
+        "relevance": "direct",
+        "purpose": "通胀来源：能源 vs 核心",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "WGC-OUTLOOK",
+      "url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q3-2026",
+      "canonical_url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q3-2026",
+      "publisher": "World Gold Council",
+      "tier": "T3",
+      "published_at": "2026-11-03",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "Central bank buying likely to at least match 2025 after surprisingly strong Q3.",
+      "locator": "Highlights / Outlook bullet",
+      "origin_id": "wgc-gdt-q3-2026",
+      "origin_basis": "WGC自身展望",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方需求展望",
+        "relevance": "direct",
+        "purpose": "官方需求展望",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "PM-GOLD-4300",
+      "url": "https://gamma-api.polymarket.com/public-search?q=gold%20price&limit_per_type=10",
+      "canonical_url": "https://gamma-api.polymarket.com/public-search?limit_per_type=10&q=gold+price",
+      "publisher": "Polymarket Gamma API",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "Will Gold (XAUUSD) hit (HIGH) $4,300 in November? [\"0.235\", \"0.765\"] 0.2 0.27",
+      "locator": "public-search 'gold price' event 'What will Gold (XAUUSD) hit in November 2026?'",
+      "origin_id": "polymarket-gold-nov-2026",
+      "origin_basis": "平台Gamma参考价（非CLOB订单簿）",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-04T07:10:00+00:00",
+        "instrument": "Polymarket: Gold (XAUUSD) hit HIGH $4,300 in November 2026",
+        "outcome": "Yes",
+        "direction": "level",
+        "value": 0.235,
+        "unit": "USD/share",
+        "quote_type": "indicative"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "月内反弹空间的市场定价",
+        "relevance": "direct",
+        "purpose": "月内反弹空间的市场定价",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "PM-GOLD-4200",
+      "url": "https://gamma-api.polymarket.com/public-search?q=gold%20price&limit_per_type=10",
+      "canonical_url": "https://gamma-api.polymarket.com/public-search?limit_per_type=10&q=gold+price",
+      "publisher": "Polymarket Gamma API",
+      "tier": "T1",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "Will Gold (XAUUSD) hit (HIGH) $4,200 in November? [\"0.43\", \"0.57\"] 0.4 0.46",
+      "locator": "public-search 'gold price' event 'What will Gold (XAUUSD) hit in November 2026?'",
+      "origin_id": "polymarket-gold-nov-2026",
+      "origin_basis": "平台Gamma参考价（非CLOB订单簿）",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-04T07:10:00+00:00",
+        "instrument": "Polymarket: Gold (XAUUSD) hit HIGH $4,200 in November 2026",
+        "outcome": "Yes",
+        "direction": "level",
+        "value": 0.43,
+        "unit": "USD/share",
+        "quote_type": "indicative"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "月内反弹空间的市场定价",
+        "relevance": "direct",
+        "purpose": "月内反弹空间的市场定价",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "N-OIL",
+      "url": "https://news.google.com/rss/search?q=gold+price+when:7d",
+      "canonical_url": "https://news.google.com/rss/search?q=gold+price+when%3A7d",
+      "publisher": "Google News RSS headline",
+      "tier": "T2",
+      "published_at": "2026-11-03",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "Oil drops 7% as Iran signals openness to peace talks - Reuters",
+      "locator": "RSS item title",
+      "origin_id": null,
+      "origin_basis": "仅取得聚合器标题，原始媒体家族未确认",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "仅有标题，原文未取得；只作背景线索",
+        "relevance": "context",
+        "purpose": "地缘/选举背景线索",
+        "priority": "background"
+      }
+    },
+    {
+      "id": "N-GOLD",
+      "url": "https://news.google.com/rss/search?q=gold+price+when:7d",
+      "canonical_url": "https://news.google.com/rss/search?q=gold+price+when%3A7d",
+      "publisher": "Google News RSS headline",
+      "tier": "T2",
+      "published_at": "2026-11-04",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "Gold rises as dollar weakens; Democrats score early wins in US midterm elections - Reuters",
+      "locator": "RSS item title",
+      "origin_id": null,
+      "origin_basis": "仅取得聚合器标题，原始媒体家族未确认",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "仅有标题，原文未取得；只作背景线索",
+        "relevance": "context",
+        "purpose": "地缘/选举背景线索",
+        "priority": "background"
+      }
+    },
+    {
+      "id": "N-MS",
+      "url": "https://news.google.com/rss/search?q=gold+price+when:7d",
+      "canonical_url": "https://news.google.com/rss/search?q=gold+price+when%3A7d",
+      "publisher": "Google News RSS headline",
+      "tier": "T2",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "Why Is the Gold Price Falling Even as Investors and Central Banks Pile In? - Morningstar",
+      "locator": "RSS item title",
+      "origin_id": null,
+      "origin_basis": "仅取得聚合器标题，原始媒体家族未确认",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "仅有标题，原文未取得；只作背景线索",
+        "relevance": "context",
+        "purpose": "地缘/选举背景线索",
+        "priority": "background"
+      }
+    },
+    {
+      "id": "N-GS",
+      "url": "https://news.google.com/rss/search?q=gold+price+when:7d",
+      "canonical_url": "https://news.google.com/rss/search?q=gold+price+when%3A7d",
+      "publisher": "Google News RSS headline",
+      "tier": "T2",
+      "published_at": "2026-11-02",
+      "retrieved_at": "2026-11-04T07:10:00+00:00",
+      "quote": "Goldman Sachs Raises December Brent Oil Price Forecast to $105 - OilPrice.com",
+      "locator": "RSS item title",
+      "origin_id": null,
+      "origin_basis": "仅取得聚合器标题，原始媒体家族未确认",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "仅有标题，原文未取得；只作背景线索",
+        "relevance": "context",
+        "purpose": "地缘/选举背景线索",
+        "priority": "background"
+      }
+    }
+  ],
+  "source_status": {
+    "official": {
+      "status": "ok",
+      "reason": "FOMC声明、Fed日历、FRED实际利率与CPI已取得"
+    },
+    "market": {
+      "status": "partial",
+      "reason": "Yahoo延迟行情与Polymarket Gamma参考价；未取CLOB订单簿与CME FedWatch"
+    },
+    "media": {
+      "status": "partial",
+      "reason": "WebSearch/WebFetch工具报错；仅取得Google News标题，未读原文"
+    },
+    "consensus": {
+      "status": "not_run",
+      "reason": "未取得机构金价预测调查"
+    },
+    "community": {
+      "status": "not_run",
+      "reason": "本轮未运行Last30Days"
+    }
+  },
+  "selection_summary": {
+    "selected": [
+      "PX-GC-NOW",
+      "PX-GC-PEAK",
+      "PX-GC-APR",
+      "PX-GC-LOW",
+      "PX-SI-PEAK",
+      "PX-SI-NOW",
+      "PX-CL-OCT30",
+      "PX-CL-NOW",
+      "FRED-DFII10",
+      "FED-SEP",
+      "FED-OCT",
+      "FED-CAL",
+      "WGC-Q3",
+      "PM-DEC-HIKE",
+      "FRED-CPI",
+      "WGC-OUTLOOK",
+      "PM-GOLD-4300",
+      "PM-GOLD-4200"
+    ],
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting"
+  }
+}

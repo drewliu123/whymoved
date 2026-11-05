@@ -1,0 +1,43 @@
+{
+  "qid": "Q135",
+  "as_of": "2026-07-29",
+  "kept": [
+    {
+      "excerpt": "The index for all items less food and energy was unchanged in June after rising 0.2 percent in May. The shelter index increased 0.1 percent over the month, the smallest one-month change reported for that index since January 2021. Motor vehicle insurance declined 2.0 percent, communication fell 1.5 percent, apparel declined 0.6 percent, and used cars and trucks fell 0.2 percent. Core CPI rose 2.6 percent over the past 12 months.",
+      "published_at": "2026-07-14",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "The latest available official CPI release establishes June's flat core reading and identifies the component movements relevant to assessing July persistence or reversal.",
+      "url": "https://www.bls.gov/news.release/archives/cpi_07142026.htm"
+    },
+    {
+      "excerpt": "The index for all items less food and energy rose 0.2 percent in May. Indexes that increased included communication, airline fares, medical care, personal care, and recreation; motor vehicle insurance, household furnishings and operations, and new vehicles were among the indexes that decreased. The core index rose 2.9 percent over the year, following a 2.8-percent increase over the 12 months ending April.",
+      "published_at": "2026-06-10",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "May supplies a recent example of the precise 0.2-percent monthly outcome and shows the component mix preceding June's slowdown.",
+      "url": "https://www.bls.gov/news.release/archives/cpi_06102026.htm"
+    },
+    {
+      "excerpt": "Table 1 reports seasonally adjusted monthly increases in all items less food and energy of 0.2 percent in February, 0.2 percent in March, and 0.4 percent in April. The April core index was 2.8 percent above its year-earlier level. Services less energy services and commodities less food and energy commodities had respective relative importances of 60.349 percent and 19.002 percent.",
+      "published_at": "2026-05-12",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "The April release provides historical context for the frequency of 0.2-percent readings and the larger weight of services in core CPI.",
+      "url": "https://www.bls.gov/news.release/archives/cpi_05122026.htm"
+    },
+    {
+      "excerpt": "Measures of consumer price inflation moved up steadily over the remainder of 2025 amid signs that increases in tariffs on U.S. goods imports had pushed up domestic prices for some consumer goods. Measured inflation stepped up further in March as energy prices surged after the start of the Middle East conflict. Over the 12 months ending May, PCE prices rose 4.1 percent and core PCE prices rose 3.4 percent.",
+      "published_at": "2026-07-10",
+      "publisher": "Board of Governors of the Federal Reserve System",
+      "relevance": "This contemporaneous official assessment identifies broader inflation pressures, while its PCE figures must be distinguished from the CPI measure used for resolution.",
+      "url": "https://www.federalreserve.gov/monetarypolicy/2026-07-mpr-part1.htm"
+    },
+    {
+      "excerpt": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. Economic activity was expanding at a solid pace despite elevated uncertainty owing in part to the conflict in the Middle East. Inflation remained elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks that had driven price increases in certain sectors, including energy.",
+      "published_at": "2026-07-29T14:00:00-04:00",
+      "publisher": "Board of Governors of the Federal Reserve System",
+      "relevance": "The statement provides an official assessment at the evidence cutoff that inflation pressures remained elevated despite the softer June CPI release.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-29, inclusive; the same-day FOMC statement was released at 2:00 p.m. EDT. Included five dated official publications and excluded post-cutoff publications, later CPI results and previews, prediction-market pages, and sources without verifiable publication dates. Excerpts are factual paraphrases of source text or tables returned by web_search. Direct web_fetch failed because of a provider configuration error; the requested agent-reach web read fallback returned RATE_LIMITED and was not retried. Verification therefore relies on dated, source-specific search extracts rather than successful direct page retrieval. No independently verified July core-CPI consensus forecast or contemporaneous nowcast was found for inclusion by the cutoff."
+}

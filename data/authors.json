@@ -1,0 +1,390 @@
+{
+  "authors": {
+    "x:nicktimiraos": {
+      "handle": "NickTimiraos",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "first_seen": "2026-10-26T03:00:00Z",
+      "observations": [
+        {
+          "at": "2026-10-26T03:00:00Z",
+          "memo": null,
+          "claim": "WSJ 美联储记者，种子名单（人工指定，未复盘）"
+        }
+      ]
+    },
+    "x:unusual_whales": {
+      "handle": "unusual_whales",
+      "platform": "x",
+      "categories": [
+        "event_pricing",
+        "asset"
+      ],
+      "status": "demoted",
+      "hits": 0,
+      "misses": 0,
+      "first_seen": "2026-10-26T03:00:00Z",
+      "observations": [
+        {
+          "at": "2026-10-26T03:00:00Z",
+          "memo": null,
+          "claim": "多次转发 Polymarket 美联储赔率，种子名单（未复盘）"
+        },
+        {
+          "at": "2026-10-26T08:43:14Z",
+          "memo": null,
+          "claim": "用户要求手动降级为 demoted，不再定向抓取：主要转发赔率，本期帖子与议息主题相关度低"
+        }
+      ]
+    },
+    "x:fort1kkk": {
+      "handle": "fort1kkk",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "demoted",
+      "hits": 0,
+      "misses": 0,
+      "first_seen": "2026-10-26T03:00:00Z",
+      "observations": [
+        {
+          "at": "2026-10-26T03:00:00Z",
+          "memo": null,
+          "claim": "用“20 年未连续两次加息”质疑 Polymarket 年内再加息 69% 的定价（last30days 自动发现）"
+        },
+        {
+          "at": "2026-10-26T08:43:14Z",
+          "memo": null,
+          "claim": "用户要求手动降级为 demoted，不再定向抓取：本期 3 条帖子都和主题无关（Polymarket 返佣闲聊）"
+        }
+      ]
+    },
+    "x:tenfivees": {
+      "handle": "TenFivees",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "demoted",
+      "hits": 0,
+      "misses": 0,
+      "first_seen": "2026-10-26T03:00:00Z",
+      "observations": [
+        {
+          "at": "2026-10-26T03:00:00Z",
+          "memo": null,
+          "claim": "记录非农不及预期后 Polymarket 加息概率下跌"
+        },
+        {
+          "at": "2026-10-26T08:43:14Z",
+          "memo": null,
+          "claim": "用户要求手动降级为 demoted，不再定向抓取：本期 3 条帖子都和主题无关"
+        }
+      ]
+    },
+    "x:fundstrat": {
+      "handle": "fundstrat",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:13:16Z",
+          "memo": null,
+          "claim": "7 月会前逐个整理 12 位票委自 6 月以来的表态（3 鹰 2 鸽），https://x.com/fundstrat/status/2082486401631764512"
+        }
+      ],
+      "first_seen": "2026-10-26T08:13:16Z"
+    },
+    "x:biancoresearch": {
+      "handle": "biancoresearch",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:13:16Z",
+          "memo": null,
+          "claim": "跟踪利率期货对 10 月加息的定价并评论美联储，https://x.com/biancoresearch/status/2102800664934170911"
+        }
+      ],
+      "first_seen": "2026-10-26T08:13:16Z"
+    },
+    "x:schuldensuehner": {
+      "handle": "Schuldensuehner",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:13:16Z",
+          "memo": null,
+          "claim": "点评 7 月决议：三票反对、声明无新意、2 年期收益率下行，https://x.com/Schuldensuehner/status/2082530966522798361"
+        }
+      ],
+      "first_seen": "2026-10-26T08:13:16Z"
+    },
+    "x:renmacllc": {
+      "handle": "RenMacLLC",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:13:16Z",
+          "memo": null,
+          "claim": "议息会后定性为“very hawkish hold”，https://x.com/RenMacLLC/status/2067310263439610021"
+        }
+      ],
+      "first_seen": "2026-10-26T08:13:16Z"
+    },
+    "x:garyblack00": {
+      "handle": "garyblack00",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:13:16Z",
+          "memo": null,
+          "claim": "逐句比对 7 月与 6 月声明，判断“通篇讲的是耐心”，https://x.com/garyblack00/status/2082531619769122999"
+        }
+      ],
+      "first_seen": "2026-10-26T08:13:16Z"
+    },
+    "x:pierocingari": {
+      "handle": "pierocingari",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "demoted",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:13:16Z",
+          "memo": null,
+          "claim": "整理 CME FedWatch 各月份的加息概率，https://x.com/pierocingari/status/2055267802299220026"
+        },
+        {
+          "at": "2026-10-26T08:43:14Z",
+          "memo": null,
+          "claim": "用户要求手动降级为 demoted，不再定向抓取：只转述 FedWatch 概率，未见自己的判断"
+        }
+      ],
+      "first_seen": "2026-10-26T08:13:16Z"
+    },
+    "x:johnkicklighter": {
+      "handle": "JohnKicklighter",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "demoted",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:13:16Z",
+          "memo": null,
+          "claim": "CPI 公布后跟踪下次会议加息概率的变化，https://x.com/JohnKicklighter/status/2110365630587138405"
+        },
+        {
+          "at": "2026-10-26T08:43:14Z",
+          "memo": null,
+          "claim": "用户要求手动降级为 demoted，不再定向抓取：只转述利率期货概率，未见自己的判断"
+        }
+      ],
+      "first_seen": "2026-10-26T08:13:16Z"
+    },
+    "x:annmarie": {
+      "handle": "annmarie",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[B 记者] Bloomberg 主持人，第一时间转述 7 月反对者 Hammack/Kashkari 的解释声明，https://x.com/annmarie/status/2083167118854369575"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    },
+    "x:bencasselman": {
+      "handle": "bencasselman",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[B 记者] NYT 经济记者，点评 9 月非农：+29k 不算糟，核心问题是工资增速放缓，https://x.com/bencasselman/status/2106006259963183582"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    },
+    "x:lamonicabuzz": {
+      "handle": "LaMonicaBuzz",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[B 记者] Paul La Monica，7 月决议 9-3 投票快评，https://x.com/LaMonicaBuzz/status/2082527159474635112"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    },
+    "x:samro": {
+      "handle": "SamRo",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[C 分析] TKer，7 月会前转述 BofA 预测“按兵不动 + 2 票鹰派反对（Logan、Hammack）”，实际是 3 票，https://x.com/SamRo/status/2082093911338520694"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    },
+    "x:kobeissiletter": {
+      "handle": "KobeissiLetter",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[C 分析] 7 月会前判断“不会加息”，结果维持不变，https://x.com/KobeissiLetter/status/2082154863815786521"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    },
+    "x:drjstrategy": {
+      "handle": "DrJStrategy",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[C 分析] James Thorne，判断中期选举前还会加息，12 月和次年 3 月也会加，https://x.com/DrJStrategy/status/2103122985846792530"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    },
+    "x:specialsitsnews": {
+      "handle": "SpecialSitsNews",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[C 分析] FOMC 专题长帖，分析 6 月点阵图分歧，https://x.com/SpecialSitsNews/status/2067311104649257182"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    },
+    "x:firstglobalsec": {
+      "handle": "firstglobalsec",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[C 分析] First Global 固收研究，7 月定性为“按兵不动但出现鹰派裂痕”，https://x.com/firstglobalsec/status/2082703403822813194"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    },
+    "x:zerohedge": {
+      "handle": "zerohedge",
+      "platform": "x",
+      "categories": [
+        "event_pricing"
+      ],
+      "status": "watch",
+      "hits": 0,
+      "misses": 0,
+      "observations": [
+        {
+          "at": "2026-10-26T08:14:18Z",
+          "memo": null,
+          "claim": "[C 分析] 转述卖方观点并附自己的立场；9 月会前转述的“全票加息、无明确反对”与结果一致，https://x.com/zerohedge/status/2100065531705352637"
+        }
+      ],
+      "first_seen": "2026-10-26T08:14:18Z"
+    }
+  }
+}

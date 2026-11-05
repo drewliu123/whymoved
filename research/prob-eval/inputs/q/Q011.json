@@ -1,0 +1,20 @@
+{
+ "qid": "Q011",
+ "question": "Will Ed Markey be the Democratic nominee for Senate in Massachusetts?",
+ "rules": "This market will resolve according to the winner of the Democratic Primary for United States Senator from Massachusetts.\n\nIf no 2026 Massachusetts Democratic Senate Primary takes place, this market will resolve to \"Other\".\n\nThe resolution source for this market will be the first announcement of the results from the Massachusetts Democratic party, however an overwhelming consensus of credible reporting may suffice.",
+ "as_of": "2026-08-19",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "WBUR",
+   "published_at": "2026-06-29",
+   "excerpt": "Bernie Sanders endorsed Ed Markey for reelection as the Massachusetts senator faced a primary challenge from Representative Seth Moulton. Sanders called Markey “one of the strongest progressive voices in the United States Senate.”"
+  },
+  {
+   "id": "E2",
+   "publisher": "GBH News",
+   "published_at": "2026-08-03",
+   "excerpt": "During their August 3 debate, Moulton repeatedly raised Markey's age and supported both term limits and age limits for elected officials. Markey argued that ideas rather than age mattered and defended his progressive record. Moulton apologized for earlier comments about transgender athletes, while Markey criticized those comments. The candidates also agreed on ending the war in Iran and lowering energy costs."
+  }
+ ]
+}

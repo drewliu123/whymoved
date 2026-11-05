@@ -1,0 +1,71 @@
+{
+  "real_case": {
+    "source_run": "R20261102T051254Z-e3879bd00b29",
+    "derived_run": "R20261102T071813Z-ed4c56923b22",
+    "kind": "frozen_research_reframe",
+    "original_unchanged": true,
+    "passed": true
+  },
+  "synthetic_cases": [
+    {
+      "status": "research_now",
+      "kind": "synthetic_contract_case",
+      "passed": true
+    },
+    {
+      "status": "watch",
+      "kind": "synthetic_contract_case",
+      "passed": true
+    },
+    {
+      "status": "priced_in",
+      "kind": "synthetic_contract_case",
+      "passed": true
+    },
+    {
+      "status": "no_edge",
+      "kind": "synthetic_contract_case",
+      "passed": true
+    }
+  ],
+  "nontrading": true,
+  "opportunities": [
+    {
+      "run_id": "R20261102T071813Z-ed4c56923b22",
+      "parent_run": null,
+      "title": "美伊停火：更值得检验的是选后四天的风险定价",
+      "as_of": "2026-11-02T05:10:24Z",
+      "status": "watch",
+      "label": "等待触发",
+      "judgment": "我倾向于选后最初几天继续谈判与拖延，优先研究11月8日的前端风险；月底35美分尚未显示清晰优势。值得追的是选后克制承诺能否延长并兑现，这比继续谈判的表态更能区分近期打击与继续拖延。",
+      "reason": "优先等待可核查续接克制承诺。方向有倾向，但公开表态可能已入价，目前尚不能把曲线异常当作可成交优势。",
+      "catalyst": {
+        "by": "原研究截点之后至2026年11月8日；本案例未刷新",
+        "claim_ids": [
+          "C32"
+        ],
+        "text": "选后克制承诺延至11月8日之后并可核查执行，会直接检验前端风险；最后通牒配合执行准备则反向。"
+      },
+      "triggers": [
+        {
+          "by": "2026年11月3日至8日；过期需重新研究",
+          "claim_ids": [
+            "C32"
+          ],
+          "id": "V1",
+          "invalidates_if": "发生合约定义的合格打击，或期限内关键检验不再支持原判断",
+          "signal": "选后克制期限与执行准备",
+          "supports_if": "明确延长不打击承诺至11月8日后且获可核查执行",
+          "weakens_if": "新最后通牒与执行准备配套出现"
+        }
+      ],
+      "last_update": null
+    }
+  ],
+  "not_evaluated": [
+    "live retrieval",
+    "prospective forecasting",
+    "actual returns",
+    "automated semantic evaluation"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-10-31T17:37:39.553Z",
+  "renderer": "index.html",
+  "reports": {
+    "event": {
+      "missing": [],
+      "heading": "12月Fed：加息有证据，70.5%仍不是独立结论",
+      "tables": 3,
+      "overflow": false,
+      "claimCount": 18
+    },
+    "asset": {
+      "missing": [],
+      "heading": "NVDA回撤之后，先分清增长与现金",
+      "tables": 2,
+      "overflow": false,
+      "claimCount": 11
+    },
+    "theme": {
+      "missing": [],
+      "heading": "AI用电到电力设备利润：Eaton的订单已来，交付兑现更值得验证",
+      "tables": 3,
+      "overflow": false,
+      "claimCount": 23
+    },
+    "actor": {
+      "missing": [],
+      "heading": "Microsoft管理层AI投入承诺：支出与商业化已推进，交付和资本回报仍需分开验收",
+      "tables": 3,
+      "overflow": false,
+      "claimCount": 27
+    }
+  },
+  "keyboard": "2026-09-30  228.38 美元",
+  "evidence_expands": true,
+  "modes": {
+    "light": {
+      "background": "rgb(255, 255, 255)",
+      "line": "rgb(42, 120, 214)",
+      "overflow": false
+    },
+    "dark": {
+      "background": "rgb(20, 20, 20)",
+      "line": "rgb(57, 135, 229)",
+      "overflow": false
+    }
+  },
+  "mobile": {
+    "event": {
+      "width": 390,
+      "overflow": false,
+      "tableScroll": true
+    },
+    "asset": {
+      "width": 390,
+      "overflow": false,
+      "tableScroll": true
+    },
+    "theme": {
+      "width": 390,
+      "overflow": false,
+      "tableScroll": true
+    },
+    "actor": {
+      "width": 390,
+      "overflow": false,
+      "tableScroll": true
+    }
+  },
+  "scope": "Browser DOM content, viewport, interaction, style and screenshot checks. Does not validate source truth, future outcomes or printer output."
+}

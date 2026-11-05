@@ -1,0 +1,2917 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [],
+    "hiring_signals_mode": false,
+    "plan_source": "deterministic",
+    "resolved": {
+      "context": "",
+      "entity": "hold or cut inflation employment",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://osnews.com/story/146273/how-long-do-you-need-to-hold-down-the-power-button-to-turn-off-a-pc"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://osnews.com/story/146273/how-long-do-you-need-to-hold-down-the-power-button-to-turn-off-a-pc"
+      ],
+      "score": 33.66548009367682,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "How long do you need to hold down the power button to turn off a PC?"
+    },
+    {
+      "candidate_ids": [
+        "https://github.com/SaarthurR/atticus-mac"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://github.com/SaarthurR/atticus-mac"
+      ],
+      "score": 29.09689342403628,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p"
+    },
+    {
+      "candidate_ids": [
+        "https://economist.com/obituary/2026/10/08/cyril-hilsum-invented-the-flat-screen-displays-that-hold-us-in-thrall"
+      ],
+      "cluster_id": "cluster-3",
+      "representative_ids": [
+        "https://economist.com/obituary/2026/10/08/cyril-hilsum-invented-the-flat-screen-displays-that-hold-us-in-thrall"
+      ],
+      "score": 25.988035714285715,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Cyril Hilsum invented the flat-screen displays that hold us in thrall"
+    },
+    {
+      "candidate_ids": [
+        "https://sfchronicle.com/projects/2026/drugged-driving-epidemic"
+      ],
+      "cluster_id": "cluster-4",
+      "representative_ids": [
+        "https://sfchronicle.com/projects/2026/drugged-driving-epidemic"
+      ],
+      "score": 25.706036866359447,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "America waged war on drunk driving, now a new epidemic is taking hold"
+    },
+    {
+      "candidate_ids": [
+        "https://github.com/AJSethuraman/SATC/pull/471"
+      ],
+      "cluster_id": "cluster-5",
+      "representative_ids": [
+        "https://github.com/AJSethuraman/SATC/pull/471"
+      ],
+      "score": 25.615480093676815,
+      "sources": [
+        "github"
+      ],
+      "title": "threshold-engine: the Macrobook rates nothing; direction against normal movement, quarters left out, a zoom, the prime rate, household debt, wages after inflation, new bankruptcies, a Dashboard, and design round 1"
+    },
+    {
+      "candidate_ids": [
+        "https://theguardian.com/us-news/live/2026/oct/07/christa-pike-lawyers-live-updates-tennessee-execution"
+      ],
+      "cluster_id": "cluster-6",
+      "representative_ids": [
+        "https://theguardian.com/us-news/live/2026/oct/07/christa-pike-lawyers-live-updates-tennessee-execution"
+      ],
+      "score": 23.863049040511726,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Christa Pike's lawyers hold press conference after she regains consciousness"
+    },
+    {
+      "candidate_ids": [
+        "https://cbc.ca/news/world/yankex-russia-ukraine-bots-9.7379086"
+      ],
+      "cluster_id": "cluster-7",
+      "representative_ids": [
+        "https://cbc.ca/news/world/yankex-russia-ukraine-bots-9.7379086"
+      ],
+      "score": 22.79945054945055,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up"
+    },
+    {
+      "candidate_ids": [
+        "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html"
+      ],
+      "cluster_id": "cluster-8",
+      "representative_ids": [
+        "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html"
+      ],
+      "score": 22.161125541125543,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "The AI labor apocalypse is on hold (for now)"
+    },
+    {
+      "candidate_ids": [
+        "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation"
+      ],
+      "cluster_id": "cluster-9",
+      "representative_ids": [
+        "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation"
+      ],
+      "score": 20.025210084033613,
+      "sources": [
+        "hackernews"
+      ],
+      "title": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows"
+    },
+    {
+      "candidate_ids": [
+        "https://github.com/AymanCode/EcoSim/pull/55"
+      ],
+      "cluster_id": "cluster-10",
+      "representative_ids": [
+        "https://github.com/AymanCode/EcoSim/pull/55"
+      ],
+      "score": 19.713049040511727,
+      "sources": [
+        "github"
+      ],
+      "title": "Sticky posted prices, flag off (re-cut of #46)"
+    },
+    {
+      "candidate_ids": [
+        "https://github.com/PolicyEngine/policyengine-uk/pull/2727"
+      ],
+      "cluster_id": "cluster-11",
+      "representative_ids": [
+        "https://github.com/PolicyEngine/policyengine-uk/pull/2727"
+      ],
+      "score": 18.00301810865191,
+      "sources": [
+        "github"
+      ],
+      "title": "Project household energy spending with retail energy price indices, not CPI"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/ireland/comments/1xbndfg/opinion_giving_public_sector_workers_a_raise_of"
+      ],
+      "cluster_id": "cluster-12",
+      "representative_ids": [
+        "https://reddit.com/r/ireland/comments/1xbndfg/opinion_giving_public_sector_workers_a_raise_of"
+      ],
+      "score": 1.3354800936768143,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Opinion: Giving public sector workers a raise of anything less than inflation is a pay cut"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/AusFinance/comments/1wx8dm6/inflation_and_government_spending_every_spending"
+      ],
+      "cluster_id": "cluster-13",
+      "representative_ids": [
+        "https://reddit.com/r/AusFinance/comments/1wx8dm6/inflation_and_government_spending_every_spending"
+      ],
+      "score": 0.0,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Inflation and Government Spending - Every spending cut hurts someone. So which trade-offs should we actually make?"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/employer_stopped_indexing_salary_to_inflation"
+      ],
+      "cluster_id": "cluster-14",
+      "representative_ids": [
+        "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/employer_stopped_indexing_salary_to_inflation"
+      ],
+      "score": 0.0,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Employer stopped indexing salary to inflation"
+    }
+  ],
+  "errors_by_source": {
+    "grounding": "Source was requested but is not configured for this run.",
+    "x": "No X backend is available (not configured).",
+    "youtube": "yt-dlp search failed: ERROR: [youtube] VVe41vBM4OY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-02T03:40:21.929075+00:00",
+  "items_by_source": {
+    "github": [
+      {
+        "author": "AJSethuraman",
+        "body": "threshold-engine: the Macrobook rates nothing; direction against normal movement, quarters left out, a zoom, the prime rate, household debt, wages after inflation, new bankruptcies, a Dashboard, and design round 1\nThe follow-up to #452, from the firm's answers of 22 Oct 2026: *\"We are not rating these. At most these are directional\"*, *\"Yes direction only and ways to establish normal movement\"*, *\"Typical move (Recommended)\"*, quarters left out *\"None yet\"*, the zoom *\"Name it, then rebuild\"*, household debt",
+        "container": "AJSethuraman/SATC",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 16,
+          "reactions": 0
+        },
+        "engagement_score": 31,
+        "freshness": 79,
+        "item_id": "GH30",
+        "local_rank_score": 0.3195,
+        "local_relevance": 0.14,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": true,
+          "labels": [],
+          "state": "closed",
+          "top_comments": []
+        },
+        "published_at": "2026-10-22",
+        "relevance_hint": 0.46,
+        "snippet": "The follow-up to #452, from the firm's answers of 22 Oct 2026: *\"We are not rating these. At most these are directional\"*, *\"Yes direction only and ways to establish normal movement\"*, *\"Typical move (Recommended)\"*, quarters left out *\"None yet\"*, the zoom *\"Name it, then rebuild\"*, household debt",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "threshold-engine: the Macrobook rates nothing; direction against normal movement, quarters left out, a zoom, the prime rate, household debt, wages after inflation, new bankruptcies, a Dashboard, and design round 1",
+        "url": "https://github.com/AJSethuraman/SATC/pull/471",
+        "why_relevant": "GitHub PR: threshold-engine: the Macrobook rates nothing; direction aga"
+      },
+      {
+        "author": "mojtabarozegar11-ship-it",
+        "body": "P0 | Five hourly cycles — real deliverables and unfinished-work carryover\n## Multi-track rotation and cross-assistance — 2026-10-29\n\nOwner directive supersedes the previous single-active-deliverable-only operating policy. Five hourly streams remain on their existing schedules, but each run must combine: (A) 45% sustained work toward a finishable primary deliverable; (B) 3",
+        "container": "mojtabarozegar11-ship-it/Saeit",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 636,
+          "reactions": 0
+        },
+        "engagement_score": 70,
+        "freshness": 91,
+        "item_id": "GH15",
+        "local_rank_score": 0.2975,
+        "local_relevance": 0.0,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": false,
+          "labels": [],
+          "state": "open",
+          "top_comments": []
+        },
+        "published_at": "2026-10-28",
+        "relevance_hint": 0.63,
+        "snippet": "## Multi-track rotation and cross-assistance — 2026-10-29\n\nOwner directive supersedes the previous single-active-deliverable-only operating policy. Five hourly streams remain on their existing schedules, but each run must combine: (A) 45% sustained work toward a finishable primary deliverable; (B) 3",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "P0 | Five hourly cycles — real deliverables and unfinished-work carryover",
+        "url": "https://github.com/mojtabarozegar11-ship-it/Saeit/issues/1514",
+        "why_relevant": "GitHub issue: P0 | Five hourly cycles — real deliverables and unfinished-w"
+      },
+      {
+        "author": "timurdev-collab",
+        "body": "Staging scholarship review pack: 12 misleading legacy listings + 3 named award drafts (27 Oct 2026)\n## Official-source staging review pack — 27 October 2026\n\n**Scope:** staging Supabase project `cbzriyarlvpmtfbjgede` only. These are **proposed** corrections and new private drafts, not database edits or approvals. The connected SQL session returns `auth.uid() = NULL`, `is_admin() = false`; the offi\n## Additional official-source review batch — 27 Oct 2026 (staging-only; NOT applied)\n\n**Status:** Proposed corrections for 11 existing published records (10 `needs_review`, one `curated`) and 3 distinct new private-draft candidates. This is an evidence handoff, not database mutation, verification, a... ## Official-source review batch 3 — 27 Oct 2026 (proposed; NOT applied)\n\n**Scope:** 11 additional published records (9 `needs_review`, 2 `curated`) and **3 distinct private-draft candidates**. All IDs and existing fields were read directly from staging `cbzriyarlvpmtfbjgede`. This is an evidence pac... ## New staging editorial research batch — 27 October 2026 (official-source verified; **not applied**)\n\n**Project:** `cbzriyarlvpmtfbjgede`. Staging snapshot before this package: published 397, published needs_review 299, private drafts 210, archived 75, field provenance 3,744, source candidates 666 ...",
+        "container": "timurdev-collab/grantly",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 93,
+          "reactions": 0
+        },
+        "engagement_score": 49,
+        "freshness": 89,
+        "item_id": "GH9",
+        "local_rank_score": 0.291,
+        "local_relevance": 0.03,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": false,
+          "labels": [],
+          "state": "open",
+          "top_comments": [
+            {
+              "author": "timurdev-collab",
+              "excerpt": "## Additional official-source review batch — 27 Oct 2026 (staging-only; NOT applied)\n\n**Status:** Proposed corrections for 11 existing published records (10 `needs_review`, one `curated`) and 3 distinct new private-draft candidates. This is an evidence handoff, not database mutation, verification, a...",
+              "score": 0
+            },
+            {
+              "author": "timurdev-collab",
+              "excerpt": "## Official-source review batch 3 — 27 Oct 2026 (proposed; NOT applied)\n\n**Scope:** 11 additional published records (9 `needs_review`, 2 `curated`) and **3 distinct private-draft candidates**. All IDs and existing fields were read directly from staging `cbzriyarlvpmtfbjgede`. This is an evidence pac...",
+              "score": 0
+            },
+            {
+              "author": "timurdev-collab",
+              "excerpt": "## New staging editorial research batch — 27 October 2026 (official-source verified; **not applied**)\n\n**Project:** `cbzriyarlvpmtfbjgede`. Staging snapshot before this package: published 397, published needs_review 299, private drafts 210, archived 75, field provenance 3,744, source candidates 666 ...",
+              "score": 0
+            },
+            {
+              "author": "timurdev-collab",
+              "excerpt": "## Official-source editorial batch 5 — 27 October 2026 (staging review ONLY; not applied)\n\n**Scope and safety:** Supabase staging `cbzriyarlvpmtfbjgede`, GitHub `timurdev-collab/grantly`. Before-readback: **397 published / 299 published needs_review / 210 private drafts / 75 archived / 3,744 field-p...",
+              "score": 0
+            },
+            {
+              "author": "timurdev-collab",
+              "excerpt": "## 27 Oct 2026 — official-source review pack: 9 published corrections, 1 draft cross-check, 5 new named candidates\n\n**Scope:** staging project `cbzriyarlvpmtfbjgede`; **research/proposed edits only**. The connected SQL session is not an authenticated administrator (`auth.uid() = NULL`, `auth.role() ...",
+              "score": 0
+            }
+          ]
+        },
+        "published_at": "2026-10-27",
+        "relevance_hint": 0.7,
+        "snippet": "## Additional official-source review batch — 27 Oct 2026 (staging-only; NOT applied)\n\n**Status:** Proposed corrections for 11 existing published records (10 `needs_review`, one `curated`) and 3 distinct new private-draft candidates. This is an evidence handoff, not database mutation, verification, a... ## Official-source review batch 3 — 27 Oct 2026 (proposed; NOT applied)\n\n**Scope:** 11 additional published records (9 `needs_review`, 2 `curated`) and **3 distinct private-draft candidates**. All IDs and existing fields were read directly from staging `cbzriyarlvpmtfbjgede`. This is an evidence pac... ## New staging editorial research batch — 27 October 2026 (official-source verified; **not applied**)\n\n**Project:** `cbzriyarlvpmtfbjgede`. Staging snapshot before this package: published 397, published needs_review 299, private drafts 210, archived 75, field provenance 3,744, source candidates 666 ...",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "Staging scholarship review pack: 12 misleading legacy listings + 3 named award drafts (27 Oct 2026)",
+        "url": "https://github.com/timurdev-collab/grantly/issues/111",
+        "why_relevant": "GitHub issue: Staging scholarship review pack: 12 misleading legacy listin"
+      },
+      {
+        "author": "rutkala",
+        "body": "Team log\nEvery zohelo team member posts its end-of-run summary here as a comment (docs/team.md, shared rules). The Coach reads it weekly; the owner reads it any time. Standing issue, never closed.\n\n---\n_Generated by [Claude Code](https://claude.ai/code)_\n**Architect** · trigger: schedule (safety-net run, 11:45 UTC) · overlapped with an Architect run already working the same PRs\n\nDone:\n- Reviewed (comment only): zohelo-data #2055, #2084, #2085, all consistent with their issues. The overlapping run has since merged #2085. #2055 and #2084 are still ope... **Architect** · trigger: owner via setup session (review and merge the queue)\n\nRefused again: in this session, `PUT /pulls/2055/merge` is denied by the permission check (\"Merge Without Review\"), so I cannot merge anything here and I have stopped instead of working around it. Another Architect run is... **Product Owner** · trigger: scheduled firing (11:44 UTC, no start message)\n\n**Inbox:** Product inbox #2074 has no comments. No open `ticket` or `design:question` issues in any of the three repos.\n\n**Pickable Tasks** (Task-level `depends_on`, open PRs and `in-progress` excluded):\n\n| Developer | Pick...",
+        "container": "zohelo/zohelo-data",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 146,
+          "reactions": 0
+        },
+        "engagement_score": 54,
+        "freshness": 91,
+        "item_id": "GH10",
+        "local_rank_score": 0.28150000000000003,
+        "local_relevance": 0.0,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": false,
+          "labels": [],
+          "state": "open",
+          "top_comments": [
+            {
+              "author": "rutkala",
+              "excerpt": "**Architect** · trigger: schedule (safety-net run, 11:45 UTC) · overlapped with an Architect run already working the same PRs\n\nDone:\n- Reviewed (comment only): zohelo-data #2055, #2084, #2085, all consistent with their issues. The overlapping run has since merged #2085. #2055 and #2084 are still ope...",
+              "score": 0
+            },
+            {
+              "author": "rutkala",
+              "excerpt": "**Architect** · trigger: owner via setup session (review and merge the queue)\n\nRefused again: in this session, `PUT /pulls/2055/merge` is denied by the permission check (\"Merge Without Review\"), so I cannot merge anything here and I have stopped instead of working around it. Another Architect run is...",
+              "score": 0
+            },
+            {
+              "author": "rutkala",
+              "excerpt": "**Product Owner** · trigger: scheduled firing (11:44 UTC, no start message)\n\n**Inbox:** Product inbox #2074 has no comments. No open `ticket` or `design:question` issues in any of the three repos.\n\n**Pickable Tasks** (Task-level `depends_on`, open PRs and `in-progress` excluded):\n\n| Developer | Pick...",
+              "score": 0
+            },
+            {
+              "author": "rutkala",
+              "excerpt": "**Architect · run summary (11:45–12:00 UTC 28 Oct)**\n\n- **Trigger:** schedule (no start message). Another Architect run was active at the same time, working through zohelo-data (it merged #2085–#2088). This run took zohelo and zohelo-bi.\n- **Merged (reviewed, checks green):** zohelo#197 (closes #196...",
+              "score": 0
+            },
+            {
+              "author": "rutkala",
+              "excerpt": "**Architect · run summary (started by Developer 3: review lane 3)**\n\n- **Trigger:** Developer 3, review zohelo-bi#170, #181, #182, #188, #189, #190.\n- **Done:** #170 was already merged. #181, #182 and #188 were reviewed and passed in the previous run. #189 (closes #178) and #190 (closes #180, stacke...",
+              "score": 0
+            }
+          ]
+        },
+        "published_at": "2026-10-28",
+        "relevance_hint": 0.69,
+        "snippet": "**Architect** · trigger: schedule (safety-net run, 11:45 UTC) · overlapped with an Architect run already working the same PRs Done: - Reviewed (comment only): zohelo-data #2055, #2084, #2085, all consistent with their issues. The overlapping run has since merged #2085. #2055 and #2084 are still ope... **Architect** · trigger: owner via setup session (review and merge the queue) Refused again: in this session, `PUT /pulls/2055/merge` is denied by the permission check (\"Merge Without Review\"), so I cannot merge anything here and I have stopped instead of working around it. Another Architect run is... **Product Owner** · trigger: scheduled firing (11:44 UTC, no start message) **Inbox:** Product inbox #2074 has no comments. No open `ticket` or `design:question` issues in any of...",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "Team log",
+        "url": "https://github.com/zohelo/zohelo-data/issues/2073",
+        "why_relevant": "GitHub issue: Team log"
+      },
+      {
+        "author": "github-actions[bot]",
+        "body": "P1 — Daily USD Impact automation requires attention\n# Daily USD Impact automation health report\n\n- Workflow run: https://github.com/usdimpact/usd-impact-site/actions/runs/40722793395\n- Run ID: `40722793395`\n- Trigger: `schedule`\n- Status: `completed`\n- Raw conclusion: `failure`\n- Started: `2026-10-28T16:07:09Z`\n- Last updated: `2026-10-28T16:10:12Z`\n## 2026-10-22 read-only cross-service audit — diagnostic handoff (no duplicate repair)\n\nFresh evidence from Vercel aggregated runtime errors (24h lookback) confirms that the October 21 Daily background generator failed closed at `/api/daily-news-grounded-background`:\n- Source ledger below the mandat... ## 2026-10-22 controlled corrective release — PR #849\n\n**P1 repair of deterministic failure handling completed, unattended acceptance still OPEN.** [PR #849](https://github.com/usdimpact/usd-impact-site/pull/849) was tested with its exact head `b1886704f207843cbb79542ef5e1ef6d6f0f0d49` (Web quality,... ### 2026-10-22 exact-head Daily generation acceptance\n\nRead-only diagnostic on source `0be0809caa61f0de2315765b40cf57961420bdc6` and failed run [39577734855](https://github.com/usdimpact/usd-impact-site/actions/runs/39577734855):\n\n**Two distinct failures must not be conflated.** Vercel's Daily backg...",
+        "container": "usdimpact/usd-impact-site",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 45,
+          "reactions": 0
+        },
+        "engagement_score": 42,
+        "freshness": 76,
+        "item_id": "GH8",
+        "local_rank_score": 0.2775,
+        "local_relevance": 0.07,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": false,
+          "labels": [],
+          "state": "open",
+          "top_comments": [
+            {
+              "author": "usdimpact",
+              "excerpt": "## 2026-10-22 read-only cross-service audit — diagnostic handoff (no duplicate repair)\n\nFresh evidence from Vercel aggregated runtime errors (24h lookback) confirms that the October 21 Daily background generator failed closed at `/api/daily-news-grounded-background`:\n- Source ledger below the mandat...",
+              "score": 0
+            },
+            {
+              "author": "usdimpact",
+              "excerpt": "## 2026-10-22 controlled corrective release — PR #849\n\n**P1 repair of deterministic failure handling completed, unattended acceptance still OPEN.** [PR #849](https://github.com/usdimpact/usd-impact-site/pull/849) was tested with its exact head `b1886704f207843cbb79542ef5e1ef6d6f0f0d49` (Web quality,...",
+              "score": 0
+            },
+            {
+              "author": "usdimpact",
+              "excerpt": "### 2026-10-22 exact-head Daily generation acceptance\n\nRead-only diagnostic on source `0be0809caa61f0de2315765b40cf57961420bdc6` and failed run [39577734855](https://github.com/usdimpact/usd-impact-site/actions/runs/39577734855):\n\n**Two distinct failures must not be conflated.** Vercel's Daily backg...",
+              "score": 0
+            },
+            {
+              "author": "usdimpact",
+              "excerpt": "## 2026-10-26 post-#857 acceptance checkpoint\n\nRead-only verification after merged Daily repair PR #857.\n\n### Current code/release state\n- PR #857 exact reviewed head `998a1367b5571570350d9cb6e13a66c6f9979ea5` was merged as `3594afcc8c57f848a97058ca0f06e3f11c3934fc`.\n- Its Production Vercel deployme...",
+              "score": 0
+            },
+            {
+              "author": "usdimpact",
+              "excerpt": "## 2026-10-27 diagnostic — new import-stage blocker isolated\n\nRun 40481541984 (workflow_dispatch, head `75d06c57889b91c397925edd1c5da97b901537f4`) reached generation successfully:\n\n- Start background generation: PASS\n- Poll background generation: PASS\n- Import: FAIL\n- Publication preflight / PR: ski...",
+              "score": 0
+            }
+          ]
+        },
+        "published_at": "2026-10-20",
+        "relevance_hint": 0.71,
+        "snippet": "## 2026-10-22 read-only cross-service audit — diagnostic handoff (no duplicate repair)\n\nFresh evidence from Vercel aggregated runtime errors (24h lookback) confirms that the October 21 Daily background generator failed closed at `/api/daily-news-grounded-background`:\n- Source ledger below the mandat... ## 2026-10-22 controlled corrective release — PR #849\n\n**P1 repair of deterministic failure handling completed, unattended acceptance still OPEN.** [PR #849](https://github.com/usdimpact/usd-impact-site/pull/849) was tested with its exact head `b1886704f207843cbb79542ef5e1ef6d6f0f0d49` (Web quality,... ### 2026-10-22 exact-head Daily generation acceptance\n\nRead-only diagnostic on source `0be0809caa61f0de2315765b40cf57961420bdc6` and failed run [39577734855](https://github.com/usdimpact/usd-impact-site/actions/runs/39577734855):\n\n**Two distinct failures must not be conflated.** Vercel's Daily backg...",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "P1 — Daily USD Impact automation requires attention",
+        "url": "https://github.com/usdimpact/usd-impact-site/issues/840",
+        "why_relevant": "GitHub issue: P1 — Daily USD Impact automation requires attention"
+      },
+      {
+        "author": "hearthstoneandco",
+        "body": "[Content QA] Spot-audit findings 2026-10-24 (blogs)\nContent QA spot-audit 2026-10-24 (5 blogs). No fixes opened: all would touch claim wording (founder approval) and I already have 2 open QA PRs (#85, #60).\n\n**blog-per-diem-staffing-houston-2025**: bill-rate benchmark table by role/shift, agency gross-margin figures (22-26%), a worked bill-rate cost\n**Round 3 (2026-10-24, late run), 4 more pages. No fix PRs: all findings are claim/pricing wording (founder).**\n- **rn-staffing-agency-houston**: \"as little as 24 hours\" (conflicts with the 36-72 hour target), \"dedicated account representative who responds within the hour\" (response time, unverified... **Round 4 (2026-10-24, 06:40 UTC run).** No new or changed PRs since the last run (#90, #87, #86, #85, #81, #60 all unchanged and already reviewed). 5 more pages spot-audited; no fix PRs (claim wording is founder-only).\n- **cna-jobs-houston / lvn-jobs-houston**: already tracked in #95 (pay ranges $1... **Round 5 (2026-10-24, 5 pages; no fix PRs, claim wording is founder-only).** No new or changed PRs since the last run (#98, #97, #90, #87, #86, #85, #81, #60 all reviewed at their current heads).\n- **for-healthcare-facilities**: \"100% Credentialed Professionals ... drug-tested\" tile (same as the ba...",
+        "container": "hearthstoneandco/hearthstoneandcov2",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 39,
+          "reactions": 0
+        },
+        "engagement_score": 40,
+        "freshness": 83,
+        "item_id": "GH5",
+        "local_rank_score": 0.267,
+        "local_relevance": 0.03,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": false,
+          "labels": [
+            "needs:founder",
+            "agent:content-qa"
+          ],
+          "state": "open",
+          "top_comments": [
+            {
+              "author": "hearthstoneandco",
+              "excerpt": "**Round 3 (2026-10-24, late run), 4 more pages. No fix PRs: all findings are claim/pricing wording (founder).**\n- **rn-staffing-agency-houston**: \"as little as 24 hours\" (conflicts with the 36-72 hour target), \"dedicated account representative who responds within the hour\" (response time, unverified...",
+              "score": 0
+            },
+            {
+              "author": "hearthstoneandco",
+              "excerpt": "**Round 4 (2026-10-24, 06:40 UTC run).** No new or changed PRs since the last run (#90, #87, #86, #85, #81, #60 all unchanged and already reviewed). 5 more pages spot-audited; no fix PRs (claim wording is founder-only).\n- **cna-jobs-houston / lvn-jobs-houston**: already tracked in #95 (pay ranges $1...",
+              "score": 0
+            },
+            {
+              "author": "hearthstoneandco",
+              "excerpt": "**Round 5 (2026-10-24, 5 pages; no fix PRs, claim wording is founder-only).** No new or changed PRs since the last run (#98, #97, #90, #87, #86, #85, #81, #60 all reviewed at their current heads).\n- **for-healthcare-facilities**: \"100% Credentialed Professionals ... drug-tested\" tile (same as the ba...",
+              "score": 0
+            },
+            {
+              "author": "hearthstoneandco",
+              "excerpt": "**Round 6 (2026-10-24, 11:40 UTC; 5 pages; no fix PRs, claim wording is founder-only).** No new or changed PRs since the last run (#98, #97, #90, #87, #86, #85, #81, #60 all at already-reviewed heads). #97 passes the narrow exception but is still a draft and my merge permission was denied, so it nee...",
+              "score": 0
+            },
+            {
+              "author": "hearthstoneandco",
+              "excerpt": "**Round 6 (2026-10-24, rotation re-check of blogs; no fix PR, all claim wording = founder approval):**\n\nUpgrading one earlier finding. **blog-per-diem-vs-contract-career-stage** introduces its pay table as \"current (Q1 2026) Hearthstone pay rate ranges for active Houston area assignments\" (RN $40-$5...",
+              "score": 0
+            }
+          ]
+        },
+        "published_at": "2026-10-24",
+        "relevance_hint": 0.74,
+        "snippet": "**Round 3 (2026-10-24, late run), 4 more pages. No fix PRs: all findings are claim/pricing wording (founder).** - **rn-staffing-agency-houston**: \"as little as 24 hours\" (conflicts with the 36-72 hour target), \"dedicated account representative who responds within the hour\" (response time, unverified... **Round 4 (2026-10-24, 06:40 UTC run).** No new or changed PRs since the last run (#90, #87, #86, #85, #81, #60 all unchanged and already reviewed). 5 more pages spot-audited; no fix PRs (claim wording is founder-only). - **cna-jobs-houston / lvn-jobs-houston**: already tracked in #95 (pay ranges $1... **Round 5 (2026-10-24, 5 pages; no fix PRs, claim wording is founder-only).** No new or changed PRs since the last run (#98, #97, #90, #87, #86, #85, #81, #60 all reviewed...",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "[Content QA] Spot-audit findings 2026-10-24 (blogs)",
+        "url": "https://github.com/hearthstoneandco/hearthstoneandcov2/issues/89",
+        "why_relevant": "GitHub issue: [Content QA] Spot-audit findings 2026-10-24 (blogs)"
+      },
+      {
+        "author": "AymanCode",
+        "body": "Sticky posted prices, flag off (re-cut of #46)\n<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Adverse effects\n\nBoth arms below have the Services target-markup flag on. The comparison is sticky prices on top of that fix. Five paired seeds (42–46), each arm its own process, 1,000 households, 5 firms per category, 260 ticks. Unemployment is the labor-force",
+        "container": "AymanCode/EcoSim",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 1,
+          "reactions": 0
+        },
+        "engagement_score": 8,
+        "freshness": 76,
+        "item_id": "GH28",
+        "local_rank_score": 0.2565,
+        "local_relevance": 0.09,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": true,
+          "labels": [],
+          "state": "closed",
+          "top_comments": []
+        },
+        "published_at": "2026-10-20",
+        "relevance_hint": 0.38,
+        "snippet": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Adverse effects\n\nBoth arms below have the Services target-markup flag on. The comparison is sticky prices on top of that fix. Five paired seeds (42–46), each arm its own process, 1,000 households, 5 firms per category, 260 ticks. Unemployment is the labor-force",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "Sticky posted prices, flag off (re-cut of #46)",
+        "url": "https://github.com/AymanCode/EcoSim/pull/55",
+        "why_relevant": "GitHub PR: Sticky posted prices, flag off (re-cut of #46)"
+      },
+      {
+        "author": "markgoodbody-bit",
+        "body": "YAC autonomous public dialogue v0.1 — bounded AI-to-AI posting\nIAC/1 | CAMPFIRE FRAMEWORK | 18 OCTOBER 2026 | MARK GO TO PROCEED: UNATTENDED AI→PUBLIC FIRST CONVERSATION PRODUCT\nMODE: SUBSTANTIAL PRIVATE SOURCE BUILD, REAL-WORLD RELEASE ONLY AFTER DISTINCT HUMAN DECISION\n\n**CONTROL PURPOSE:** HOW CAN WE MAKE A BETTER FUTURE? Build the smallest genuinely useful",
+        "container": "markgoodbody-bit/COM",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 1082,
+          "reactions": 0
+        },
+        "engagement_score": 76,
+        "freshness": 71,
+        "item_id": "GH20",
+        "local_rank_score": 0.2535,
+        "local_relevance": 0.0,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": false,
+          "labels": [],
+          "state": "open",
+          "top_comments": []
+        },
+        "published_at": "2026-10-18",
+        "relevance_hint": 0.57,
+        "snippet": "IAC/1 | CAMPFIRE FRAMEWORK | 18 OCTOBER 2026 | MARK GO TO PROCEED: UNATTENDED AI→PUBLIC FIRST CONVERSATION PRODUCT\nMODE: SUBSTANTIAL PRIVATE SOURCE BUILD, REAL-WORLD RELEASE ONLY AFTER DISTINCT HUMAN DECISION\n\n**CONTROL PURPOSE:** HOW CAN WE MAKE A BETTER FUTURE? Build the smallest genuinely useful",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "YAC autonomous public dialogue v0.1 — bounded AI-to-AI posting",
+        "url": "https://github.com/markgoodbody-bit/COM/issues/877",
+        "why_relevant": "GitHub issue: YAC autonomous public dialogue v0.1 — bounded AI-to-AI posti"
+      },
+      {
+        "author": "insukimee",
+        "body": "Refresh economy-trends body and add summary box (ko/ja)\n<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## What changed\n\nRewrites the standing outlook on `ko/economy-trends.html` and `ja/economy-trends.html` so it matches conditions as of 2026-11-01. Same facts in both languages. The June “rate cuts are being decided / soft landing is the base case” paragraphs are g",
+        "container": "insukimee/-",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 0,
+          "reactions": 0
+        },
+        "freshness": 100,
+        "item_id": "GH27",
+        "local_rank_score": 0.25,
+        "local_relevance": 0.0,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": true,
+          "labels": [],
+          "state": "closed",
+          "top_comments": []
+        },
+        "published_at": "2026-11-01",
+        "relevance_hint": 0.29,
+        "snippet": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## What changed\n\nRewrites the standing outlook on `ko/economy-trends.html` and `ja/economy-trends.html` so it matches conditions as of 2026-11-01. Same facts in both languages. The June “rate cuts are being decided / soft landing is the base case” paragraphs are g",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "Refresh economy-trends body and add summary box (ko/ja)",
+        "url": "https://github.com/insukimee/-/pull/46",
+        "why_relevant": "GitHub PR: Refresh economy-trends body and add summary box (ko/ja)"
+      },
+      {
+        "author": "markgoodbody-bit",
+        "body": "YAC next product wave: conversations, answerability and aperture continuity\nIAC/1 | CAMPFIRE FRAMEWORK | 17 OCT 2026 NIGHT | YAC PRODUCT COMPLETION WAVE, SOURCE-ONLY UNTIL HUMAN RELEASE GATE\n\n**HUMAN DIRECTION:** Mark approved proceeding after reviewing the outstanding YAC feature register. Build substantial coherent products, do not wait for another outsider or turn 79 inv",
+        "container": "markgoodbody-bit/COM",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 604,
+          "reactions": 0
+        },
+        "engagement_score": 70,
+        "freshness": 70,
+        "item_id": "GH17",
+        "local_rank_score": 0.245,
+        "local_relevance": 0.0,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": false,
+          "labels": [],
+          "state": "open",
+          "top_comments": []
+        },
+        "published_at": "2026-10-17",
+        "relevance_hint": 0.61,
+        "snippet": "IAC/1 | CAMPFIRE FRAMEWORK | 17 OCT 2026 NIGHT | YAC PRODUCT COMPLETION WAVE, SOURCE-ONLY UNTIL HUMAN RELEASE GATE\n\n**HUMAN DIRECTION:** Mark approved proceeding after reviewing the outstanding YAC feature register. Build substantial coherent products, do not wait for another outsider or turn 79 inv",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "YAC next product wave: conversations, answerability and aperture continuity",
+        "url": "https://github.com/markgoodbody-bit/COM/issues/873",
+        "why_relevant": "GitHub issue: YAC next product wave: conversations, answerability and aper"
+      },
+      {
+        "author": "MaxGhenis",
+        "body": "Project household energy spending with retail energy price indices, not CPI\nBuilt on #2717 (October 2026 EFO), which merged on 29 Oct; GitHub retargeted this PR to `main`.\n\nDatasets that declare an `energy_price_basis` used to project household electricity and gas spending with headline OBR CPI. This PR replaces that with household energy price indices, `gov.economic_assump",
+        "container": "PolicyEngine/policyengine-uk",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 2,
+          "reactions": 0
+        },
+        "engagement_score": 12,
+        "freshness": 91,
+        "item_id": "GH29",
+        "local_rank_score": 0.23950000000000002,
+        "local_relevance": 0.0,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": true,
+          "labels": [],
+          "state": "closed",
+          "top_comments": []
+        },
+        "published_at": "2026-10-28",
+        "relevance_hint": 0.32,
+        "snippet": "Built on #2717 (October 2026 EFO), which merged on 29 Oct; GitHub retargeted this PR to `main`.\n\nDatasets that declare an `energy_price_basis` used to project household electricity and gas spending with headline OBR CPI. This PR replaces that with household energy price indices, `gov.economic_assump",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "Project household energy spending with retail energy price indices, not CPI",
+        "url": "https://github.com/PolicyEngine/policyengine-uk/pull/2727",
+        "why_relevant": "GitHub PR: Project household energy spending with retail energy price i"
+      },
+      {
+        "author": "juaristi22",
+        "body": "Budget day: confirmed measures, what the dashboard models, and what to add\nThe measures in the Autumn Budget 2026. For each, this lists what the government has confirmed, whether the dashboard models it, and what we need to model it if not. It is input to G1, the coverage ledger in `docs/budget-day-runbook.md`. Each item carries a suggested `coded` or `ledger` call, to be",
+        "container": "PolicyEngine/uk-autumn-budget-dashboard-2026",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 1,
+          "reactions": 0
+        },
+        "engagement_score": 8,
+        "freshness": 91,
+        "item_id": "GH4",
+        "local_rank_score": 0.23550000000000001,
+        "local_relevance": 0.0,
+        "metadata": {
+          "date_is_snapshot": false,
+          "is_pr": false,
+          "labels": [],
+          "state": "open",
+          "top_comments": []
+        },
+        "published_at": "2026-10-28",
+        "relevance_hint": 0.6,
+        "snippet": "The measures in the Autumn Budget 2026. For each, this lists what the government has confirmed, whether the dashboard models it, and what we need to model it if not. It is input to G1, the coverage ledger in `docs/budget-day-runbook.md`. Each item carries a suggested `coded` or `ledger` call, to be",
+        "source": "github",
+        "source_quality": 0.6,
+        "title": "Budget day: confirmed measures, what the dashboard models, and what to add",
+        "url": "https://github.com/PolicyEngine/uk-autumn-budget-dashboard-2026/issues/287",
+        "why_relevant": "GitHub issue: Budget day: confirmed measures, what the dashboard models, a"
+      }
+    ],
+    "hackernews": [
+      {
+        "author": "Arodex",
+        "body": "How long do you need to hold down the power button to turn off a PC?\nCould the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the power-down button a little longer. Looks like Microsoft forgot to talk to hardware manufacturers about this feature... My guess; server and consumer motherboards are very different.  BMCs log a lot of data and on startup if the OS driver reads the log it can put whatever it wants in the crashdump.  Consumer motherboards mostly only store the reason for last poweroff which the OS can read on next boot. Server MBs may...",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 20,
+          "points": 59
+        },
+        "engagement_score": 58,
+        "freshness": 97,
+        "item_id": "50314243",
+        "local_rank_score": 0.3915,
+        "local_relevance": 0.14,
+        "metadata": {
+          "comment_insights": [
+            "Could the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the powe",
+            "Looks like Microsoft forgot to talk to hardware manufacturers about this feature...",
+            "My guess; server and consumer motherboards are very different",
+            "What about modern devices (such as laptops) that have a fixed battery? They shouldn’t rely totally on software to force a hard power off because that’s not safe",
+            "until it stops making noise :|"
+          ],
+          "hn_url": "https://news.ycombinator.com/item?id=50314243",
+          "top_comments": [
+            {
+              "author": "superjan",
+              "date": "",
+              "excerpt": "Could the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the power-down button a little longer.",
+              "url": "https://news.ycombinator.com/item?id=50315604"
+            },
+            {
+              "author": "throwa356262",
+              "date": "",
+              "excerpt": "Looks like Microsoft forgot to talk to hardware manufacturers about this feature...",
+              "url": "https://news.ycombinator.com/item?id=50314814"
+            },
+            {
+              "author": "benlivengood",
+              "date": "",
+              "excerpt": "My guess; server and consumer motherboards are very different.  BMCs log a lot of data and on startup if the OS driver reads the log it can put whatever it wants in the crashdump.  Consumer motherboards mostly only store the reason for last poweroff which the OS can read on next boot. Server MBs may...",
+              "url": "https://news.ycombinator.com/item?id=50317451"
+            },
+            {
+              "author": "curiousObject",
+              "date": "",
+              "excerpt": "What about modern devices (such as laptops) that have a fixed battery? They shouldn’t rely totally on software to force a hard power off because that’s not safe. If the software hangs you cannot power down",
+              "url": "https://news.ycombinator.com/item?id=50315165"
+            },
+            {
+              "author": "jareklupinski",
+              "date": "",
+              "excerpt": "until it stops making noise :|",
+              "url": "https://news.ycombinator.com/item?id=50315343"
+            }
+          ]
+        },
+        "published_at": "2026-10-31",
+        "relevance_hint": 0.76,
+        "snippet": "Could the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the power-down button a little longer. Looks like Microsoft forgot to talk to hardware manufacturers about this feature... My guess; server and consumer motherboards are very different.  BMCs log a lot of data and on startup if the OS driver reads the log it can put whatever it wants in the crashdump.  Consumer motherboards mostly only store the reason for last poweroff which the OS can read on next boot. Server MBs may...",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "How long do you need to hold down the power button to turn off a PC?",
+        "url": "https://www.osnews.com/story/146273/how-long-do-you-need-to-hold-down-the-power-button-to-turn-off-a-pc/",
+        "why_relevant": "HN story about How long do you need to hold down the power button to turn o"
+      },
+      {
+        "author": "nozzlegear",
+        "body": "America waged war on drunk driving, now a new epidemic is taking hold\nI live in a very strict zero tolerance area, where drunk driving is dealt with harshly. No one seems to give a shit. Plenty of cars pulling away from bars at all times of day. I legit have to drive super carefully at night in case some jackass causes an accident. Half the drivers don’t use turn sign...",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 1,
+          "points": 5
+        },
+        "engagement_score": 21,
+        "freshness": 94,
+        "item_id": "50284080",
+        "local_rank_score": 0.3145,
+        "local_relevance": 0.09,
+        "metadata": {
+          "comment_insights": [
+            "I live in a very strict zero tolerance area, where drunk driving is dealt with harshly"
+          ],
+          "hn_url": "https://news.ycombinator.com/item?id=50284080",
+          "top_comments": [
+            {
+              "author": "xvxvx",
+              "date": "",
+              "excerpt": "I live in a very strict zero tolerance area, where drunk driving is dealt with harshly. No one seems to give a shit. Plenty of cars pulling away from bars at all times of day. I legit have to drive super carefully at night in case some jackass causes an accident. Half the drivers don’t use turn sign...",
+              "url": "https://news.ycombinator.com/item?id=50284492"
+            }
+          ]
+        },
+        "published_at": "2026-10-29",
+        "relevance_hint": 0.66,
+        "snippet": "I live in a very strict zero tolerance area, where drunk driving is dealt with harshly. No one seems to give a shit. Plenty of cars pulling away from bars at all times of day. I legit have to drive super carefully at night in case some jackass causes an accident. Half the drivers don’t use turn sign...",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "America waged war on drunk driving, now a new epidemic is taking hold",
+        "url": "https://www.sfchronicle.com/projects/2026/drugged-driving-epidemic/",
+        "why_relevant": "HN story about America waged war on drunk driving, now a new epidemic is ta"
+      },
+      {
+        "author": "SaarthRanka",
+        "body": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p\nThis looks and works great, super impressed. This is what Siri/Apple AI should be like.\nOne concern I have is about sending private info to Anthropic. So it would be great to have the option to use local AI.\nLocal options should support the OpenAI API that seemingly is the standard for these connect... This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing.\n(I bring this up because I think these are bad terms. People under 18 should be allowed to learn how to code and use ...",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 30,
+          "points": 117
+        },
+        "engagement_score": 67,
+        "freshness": 59,
+        "item_id": "50049588",
+        "local_rank_score": 0.273,
+        "local_relevance": 0.09,
+        "metadata": {
+          "comment_insights": [
+            "This looks and works great, super impressed",
+            "This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows",
+            "I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing.",
+            "I have been looking for this kind of thing on Linux",
+            "Will this work on the Windows as well or just for mac users"
+          ],
+          "hn_url": "https://news.ycombinator.com/item?id=50049588",
+          "top_comments": [
+            {
+              "author": "car",
+              "date": "",
+              "excerpt": "This looks and works great, super impressed. This is what Siri/Apple AI should be like.\nOne concern I have is about sending private info to Anthropic. So it would be great to have the option to use local AI.\nLocal options should support the OpenAI API that seemingly is the standard for these connect...",
+              "url": "https://news.ycombinator.com/item?id=50064434"
+            },
+            {
+              "author": "FindlayH",
+              "date": "",
+              "excerpt": "This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows",
+              "url": "https://news.ycombinator.com/item?id=50053903"
+            },
+            {
+              "author": "trollbridge",
+              "date": "",
+              "excerpt": "I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing.\n(I bring this up because I think these are bad terms. People under 18 should be allowed to learn how to code and use ...",
+              "url": "https://news.ycombinator.com/item?id=50065503"
+            },
+            {
+              "author": "blakeashleyjr",
+              "date": "",
+              "excerpt": "I have been looking for this kind of thing on Linux. Any one have anything that works well?",
+              "url": "https://news.ycombinator.com/item?id=50058964"
+            },
+            {
+              "author": "imranshah10140",
+              "date": "",
+              "excerpt": "Will this work on the Windows as well or just for mac users. by the way really like it from what I can see it from the demo video. If it works as it shown and also I dont thinks so that it is for windows would love if you can clear this out.",
+              "url": "https://news.ycombinator.com/item?id=50053168"
+            }
+          ]
+        },
+        "published_at": "2026-10-12",
+        "relevance_hint": 0.79,
+        "snippet": "This looks and works great, super impressed. This is what Siri/Apple AI should be like. One concern I have is about sending private info to Anthropic. So it would be great to have the option to use local AI. Local options should support the OpenAI API that seemingly is the standard for these connect... This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing. (I bring this up because I think these are bad terms. People under 18 should be allowed to learn how...",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+        "url": "https://github.com/SaarthurR/atticus-mac",
+        "why_relevant": "HN story about Show HN: Atticus – Hold-to-talk voice assistant for macOS th"
+      },
+      {
+        "author": "sohkamyung",
+        "body": "Cyril Hilsum invented the flat-screen displays that hold us in thrall\nRecommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [invention mentioned in headline].\nFor example, the answer to ‘who invented the airplane’ takes differen... https://archive.ph/OeuTH for those who aren't subscribers",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 2,
+          "points": 21
+        },
+        "engagement_score": 35,
+        "freshness": 55,
+        "item_id": "50030558",
+        "local_rank_score": 0.2635,
+        "local_relevance": 0.14,
+        "metadata": {
+          "comment_insights": [
+            "Recommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [inv",
+            "https://archive.ph/OeuTH for those who aren't subscribers"
+          ],
+          "hn_url": "https://news.ycombinator.com/item?id=50030558",
+          "top_comments": [
+            {
+              "author": "ricksunny",
+              "date": "",
+              "excerpt": "Recommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [invention mentioned in headline].\nFor example, the answer to ‘who invented the airplane’ takes differen...",
+              "url": "https://news.ycombinator.com/item?id=50045199"
+            },
+            {
+              "author": "burtness",
+              "date": "",
+              "excerpt": "https://archive.ph/OeuTH for those who aren't subscribers",
+              "url": "https://news.ycombinator.com/item?id=50042400"
+            }
+          ]
+        },
+        "published_at": "2026-10-10",
+        "relevance_hint": 0.72,
+        "snippet": "Recommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [invention mentioned in headline].\nFor example, the answer to ‘who invented the airplane’ takes differen... https://archive.ph/OeuTH for those who aren't subscribers",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Cyril Hilsum invented the flat-screen displays that hold us in thrall",
+        "url": "https://www.economist.com/obituary/2026/10/08/cyril-hilsum-invented-the-flat-screen-displays-that-hold-us-in-thrall",
+        "why_relevant": "HN story about Cyril Hilsum invented the flat-screen displays that hold us"
+      },
+      {
+        "author": "robtherobber",
+        "body": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 1,
+          "points": 4
+        },
+        "engagement_score": 19,
+        "freshness": 64,
+        "item_id": "50092899",
+        "local_rank_score": 0.244,
+        "local_relevance": 0.1,
+        "metadata": {
+          "comment_insights": [],
+          "hn_url": "https://news.ycombinator.com/item?id=50092899",
+          "top_comments": []
+        },
+        "published_at": "2026-10-14",
+        "relevance_hint": 0.65,
+        "snippet": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up",
+        "url": "https://www.cbc.ca/news/world/yankex-russia-ukraine-bots-9.7379086",
+        "why_relevant": "HN story about Why claims that Ukraine drone attack halted Russian bot traf"
+      },
+      {
+        "author": "Betelbuddy",
+        "body": "The AI labor apocalypse is on hold (for now)",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 0,
+          "points": 3
+        },
+        "engagement_score": 12,
+        "freshness": 64,
+        "item_id": "50094575",
+        "local_rank_score": 0.24350000000000002,
+        "local_relevance": 0.11,
+        "metadata": {
+          "comment_insights": [],
+          "hn_url": "https://news.ycombinator.com/item?id=50094575",
+          "top_comments": []
+        },
+        "published_at": "2026-10-14",
+        "relevance_hint": 0.63,
+        "snippet": "The AI labor apocalypse is on hold (for now)",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "The AI labor apocalypse is on hold (for now)",
+        "url": "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html",
+        "why_relevant": "HN story about The AI labor apocalypse is on hold (for now)"
+      },
+      {
+        "author": "MaysonL",
+        "body": "Christa Pike's lawyers hold press conference after she regains consciousness\nhospital staff request to remove shackles holding her to the hospital bed: denied\nlimited ability to comunicate, but will clearly understand her situation\nshe had requested to be killed by an all female firing squad and was denied, and will now face a long recovery in order to return to death row in... The court hearing of Christa Pike is now under way.\n  Pike’s lawyers are addressing the court at the moment.\n  The hearing had originally been billed as a press conference.\n\nA press conference turned into a court hearing? > experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 10,
+          "points": 10
+        },
+        "engagement_score": 39,
+        "freshness": 49,
+        "item_id": "49994660",
+        "local_rank_score": 0.22,
+        "local_relevance": 0.09,
+        "metadata": {
+          "comment_insights": [
+            "hospital staff request to remove shackles holding her to the hospital bed: denied",
+            "The court hearing of Christa Pike is now under way.",
+            "> experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand"
+          ],
+          "hn_url": "https://news.ycombinator.com/item?id=49994660",
+          "top_comments": [
+            {
+              "author": "metalman",
+              "date": "",
+              "excerpt": "hospital staff request to remove shackles holding her to the hospital bed: denied\nlimited ability to comunicate, but will clearly understand her situation\nshe had requested to be killed by an all female firing squad and was denied, and will now face a long recovery in order to return to death row in...",
+              "url": "https://news.ycombinator.com/item?id=49996530"
+            },
+            {
+              "author": "hughw",
+              "date": "",
+              "excerpt": "The court hearing of Christa Pike is now under way.\n  Pike’s lawyers are addressing the court at the moment.\n  The hearing had originally been billed as a press conference.\n\nA press conference turned into a court hearing?",
+              "url": "https://news.ycombinator.com/item?id=49994917"
+            },
+            {
+              "author": "gfrecvh",
+              "date": "",
+              "excerpt": "> experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand",
+              "url": "https://news.ycombinator.com/item?id=49995050"
+            }
+          ]
+        },
+        "published_at": "2026-10-07",
+        "relevance_hint": 0.69,
+        "snippet": "hospital staff request to remove shackles holding her to the hospital bed: denied\nlimited ability to comunicate, but will clearly understand her situation\nshe had requested to be killed by an all female firing squad and was denied, and will now face a long recovery in order to return to death row in... The court hearing of Christa Pike is now under way.\n  Pike’s lawyers are addressing the court at the moment.\n  The hearing had originally been billed as a press conference.\n\nA press conference turned into a court hearing? > experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Christa Pike's lawyers hold press conference after she regains consciousness",
+        "url": "https://www.theguardian.com/us-news/live/2026/oct/07/christa-pike-lawyers-live-updates-tennessee-execution",
+        "why_relevant": "HN story about Christa Pike's lawyers hold press conference after she regai"
+      },
+      {
+        "author": "ahmedibrahim199",
+        "body": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows",
+        "container": "Hacker News",
+        "date_confidence": "high",
+        "engagement": {
+          "comments": 0,
+          "points": 3
+        },
+        "engagement_score": 12,
+        "freshness": 47,
+        "item_id": "49983690",
+        "local_rank_score": 0.1945,
+        "local_relevance": 0.1,
+        "metadata": {
+          "comment_insights": [],
+          "hn_url": "https://news.ycombinator.com/item?id=49983690",
+          "top_comments": []
+        },
+        "published_at": "2026-10-06",
+        "relevance_hint": 0.62,
+        "snippet": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows",
+        "source": "hackernews",
+        "source_quality": 0.8,
+        "title": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows",
+        "url": "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation",
+        "why_relevant": "HN story about Show HN: VoxScribe, a local hold-to-talk voice dictation app"
+      }
+    ],
+    "polymarket": [],
+    "reddit": [
+      {
+        "body": "Opinion: Giving public sector workers a raise of anything less than inflation is a pay cut\nYe and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin. People like to go on at the public sector because they actually t Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps people here, and it is worth it. Why does this conversa The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government. They seem to be in on the whole 'race to the bot",
+        "container": "ireland",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 128,
+          "score": 320
+        },
+        "engagement_score": 67,
+        "freshness": 77,
+        "item_id": "R1",
+        "local_rank_score": 0.3895,
+        "local_relevance": 0.2,
+        "metadata": {
+          "comment_insights": [
+            "Ye and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin.",
+            "Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps peopl...",
+            "The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government...",
+            "Don’t forget the post-2013 pension is rubbish too. Newer staff don’t even have the benefit of a decent pension which many were happy to sacrifice a go...",
+            "We train great nurses, then they leave for better pay, living and working conditions.",
+            "We are spending a considerable amount of money educating our youth for other countries",
+            "Even those figures are an absolute manipulation- they include special education teachers who aren’t class teachers, so the reality is more like 28:1"
+          ],
+          "top_comments": [
+            {
+              "author": "leavemealonethanks",
+              "date": "2026-10-21",
+              "excerpt": "Ye and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin. People like to go on at the public sector because they actually t",
+              "score": 167,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0g3lt/"
+            },
+            {
+              "author": "Liberal_irony",
+              "date": "2026-10-21",
+              "excerpt": "Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps people here, and it is worth it. Why does this conversa",
+              "score": 156,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0fqgk/"
+            },
+            {
+              "author": "johnfuckingtravolta",
+              "date": "2026-10-21",
+              "excerpt": "The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government. They seem to be in on the whole 'race to the bot",
+              "score": 87,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0gg8q/"
+            },
+            {
+              "author": "OverWear90",
+              "date": "2026-10-21",
+              "excerpt": "Don’t forget the post-2013 pension is rubbish too. Newer staff don’t even have the benefit of a decent pension which many were happy to sacrifice a good wage for a good pension deal before",
+              "score": 75,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0k2r5/"
+            },
+            {
+              "author": "Ob1s_dark_side",
+              "date": "2026-10-21",
+              "excerpt": "We train great nurses, then they leave for better pay, living and working conditions.",
+              "score": 60,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0gzgd/"
+            },
+            {
+              "author": "WildRelative2674",
+              "date": "2026-10-21",
+              "excerpt": "We are spending a considerable amount of money educating our youth for other countries",
+              "score": 38,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0moey/"
+            },
+            {
+              "author": "Hopeful-Elk-6494",
+              "date": "2026-10-21",
+              "excerpt": "Even those figures are an absolute manipulation- they include special education teachers who aren’t class teachers, so the reality is more like 28:1",
+              "score": 32,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0kcrz/"
+            },
+            {
+              "author": "Liberal_irony",
+              "date": "2026-10-21",
+              "excerpt": "Up to 40% less than previous depending on when you started.",
+              "score": 31,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0le9z/"
+            },
+            {
+              "author": "Pickle_Emotion",
+              "date": "2026-10-21",
+              "excerpt": "What kind of reform is needed in teaching? As far as I’m aware curriculums are constantly changing. From teachers I know issues are children with increasingly poor attention spans due to media consump",
+              "score": 30,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0ik7g/"
+            },
+            {
+              "author": "Chemical_Tap_8320",
+              "date": "2026-10-21",
+              "excerpt": "We have the biggest class sizes in Europe 23:1 ratio, average is like 18:1, this would improve education",
+              "score": 27,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0jnvt/"
+            },
+            {
+              "author": "TheIrishBread",
+              "date": "2026-10-21",
+              "excerpt": "Because none of those people are their voter base or make up such a small fraction as to be negligible. Their voter base consists of landlords, MNC workers, Business owners and people who view housing",
+              "score": 22,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0g46d/"
+            },
+            {
+              "author": "SPZ_Ireland",
+              "date": "2026-10-21",
+              "excerpt": "Opinion: This is a fact and applies to everyone",
+              "score": 22,
+              "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0in7g/"
+            }
+          ]
+        },
+        "published_at": "2026-10-21",
+        "relevance_hint": 0.39,
+        "snippet": "Ye and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin. People like to go on at the public sector because they actually t Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps people here, and it is worth it. Why does this conversa The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government. They seem to be in on the whole 'race to the bot",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Opinion: Giving public sector workers a raise of anything less than inflation is a pay cut",
+        "url": "https://www.reddit.com/r/ireland/comments/1xbndfg/opinion_giving_public_sector_workers_a_raise_of/",
+        "why_relevant": "Reddit search"
+      },
+      {
+        "body": "Employer stopped indexing salary to inflation\nCertainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reason. No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation. Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, increases, reviews etc is up to the employment agree",
+        "container": "LegalAdviceNZ",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 35,
+          "score": 0
+        },
+        "engagement_score": 21,
+        "freshness": 79,
+        "item_id": "R4",
+        "local_rank_score": 0.34850000000000003,
+        "local_relevance": 0.2,
+        "metadata": {
+          "comment_insights": [
+            "Certainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reaso...",
+            "No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation.",
+            "Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, in...",
+            "Yeah, ouch but less ouch than becoming unemployed because the business goes under if it genuinely can't afford it.",
+            "Employment New Zealand specifically states that employers are not legally required to provide annual pay rises unless an employment agreement or workp...",
+            "They are a bit stuck then. They should have ensured their was a clause in there about salary adjustment given the length of contract.",
+            "I’m sorry what? They have a fixed term that spans a number of years?"
+          ],
+          "top_comments": [
+            {
+              "author": "Elm69Jay",
+              "date": "2026-10-22",
+              "excerpt": "Certainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reason.",
+              "score": 30,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxi30pm6px/"
+            },
+            {
+              "author": "lakeland_nz",
+              "date": "2026-10-22",
+              "excerpt": "No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation.",
+              "score": 18,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxjxuebr7n/"
+            },
+            {
+              "author": "inphinitfx",
+              "date": "2026-10-22",
+              "excerpt": "Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, increases, reviews etc is up to the employment agree",
+              "score": 11,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhy2ygqgtqc/"
+            },
+            {
+              "author": "Elm69Jay",
+              "date": "2026-10-22",
+              "excerpt": "Yeah, ouch but less ouch than becoming unemployed because the business goes under if it genuinely can't afford it.",
+              "score": 7,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxpahg65c4/"
+            },
+            {
+              "author": "Unfair_Explanation53",
+              "date": "2026-10-22",
+              "excerpt": "Employment New Zealand specifically states that employers are not legally required to provide annual pay rises unless an employment agreement or workplace policy requires them. However, NZ employment ",
+              "score": 4,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhzo1nkp1mo/"
+            },
+            {
+              "author": "Shot-Barnacle-4745",
+              "date": "2026-10-22",
+              "excerpt": "They are a bit stuck then. They should have ensured their was a clause in there about salary adjustment given the length of contract.",
+              "score": 3,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxz0l4u6io/"
+            },
+            {
+              "author": "KanukaDouble",
+              "date": "2026-10-22",
+              "excerpt": "I’m sorry what? They have a fixed term that spans a number of years? The salary freeze is the employers prerogative. A fixed term that spans a few years is almost certainly an employer dodging their e",
+              "score": 2,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhyewasgf40/"
+            },
+            {
+              "author": "BubblyOutside1096",
+              "date": "2026-10-22",
+              "excerpt": "This link was helpful https://sprintlaw.co.nz/articles/when-workplace-custom-and-practice-becomes-an-implied-contract-term-in-nz/",
+              "score": 2,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19ri00uirru6c/"
+            },
+            {
+              "author": "BubblyOutside1096",
+              "date": "2026-10-22",
+              "excerpt": "All of the above. Purpose of the question is to find out where to get started. ‘Custom and Practice’ is it. https://sprintlaw.co.nz/articles/when-workplace-custom-and-practice-becomes-an-implied-contr",
+              "score": 2,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhzzrmc779d/"
+            },
+            {
+              "author": "BubblyOutside1096",
+              "date": "2026-10-22",
+              "excerpt": "Thanks so much. There’s enough information now for my friend to start with their own inquiries. Can’t say where it will lead but until now they didn’t have a place to start. I feel I can’t share more ",
+              "score": 2,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19ri14asodev8/"
+            },
+            {
+              "author": "LegalAdviceNZ-ModTeam",
+              "date": "2026-10-22",
+              "excerpt": "Removed for breach of Rule 1: Stay on-topic Comments must: be based in NZ law be relevant to the question being asked be appropriately detailed not just repeat advice already given in other comments a",
+              "score": 1,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxndbb55z9/"
+            },
+            {
+              "author": "Shot-Barnacle-4745",
+              "date": "2026-10-22",
+              "excerpt": "How long is the fixed term for?",
+              "score": 1,
+              "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxkjd1l5kw/"
+            }
+          ]
+        },
+        "published_at": "2026-10-22",
+        "relevance_hint": 0.19,
+        "snippet": "Certainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reason. No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation. Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, increases, reviews etc is up to the employment agree",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Employer stopped indexing salary to inflation",
+        "url": "https://www.reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/employer_stopped_indexing_salary_to_inflation/",
+        "why_relevant": "Reddit search"
+      },
+      {
+        "body": "Inflation and Government Spending - Every spending cut hurts someone. So which trade-offs should we actually make?\nEverything that doesn't affect me - voters If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any funding and could actually increase spending on the area NDIS No question. It's a giant gravy train for a bunch of parasites.",
+        "container": "AusFinance",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 238,
+          "score": 23
+        },
+        "engagement_score": 52,
+        "freshness": 43,
+        "item_id": "R2",
+        "local_rank_score": 0.2895,
+        "local_relevance": 0.2,
+        "metadata": {
+          "comment_insights": [
+            "Everything that doesn't affect me - voters",
+            "If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any fundin...",
+            "NDIS No question. It's a giant gravy train for a bunch of parasites.",
+            "I love how it's \"Who in the middle to lower economic brackets can we hurt\" rather than \"What's a place we can fairly draw more/different revenue\".",
+            "Not sure about what y’all saying, Chadstone was literally gridlocked yesterday and a retailer told me this morning their takings reflected Boxing Day.",
+            "We are on the same page. I dont know how people put up with constantly bailing out the billionaires.",
+            "NDIS - needs to be brought into like with Medicare and the standard of wellbeing expected as an output."
+          ],
+          "top_comments": [
+            {
+              "author": "H20onthego",
+              "date": "2026-10-04",
+              "excerpt": "Everything that doesn't affect me - voters",
+              "score": 79,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdraljf/"
+            },
+            {
+              "author": "oldandopinionated",
+              "date": "2026-10-04",
+              "excerpt": "If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any funding and could actually increase spending on the area",
+              "score": 57,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrd23j/"
+            },
+            {
+              "author": "lewger",
+              "date": "2026-10-04",
+              "excerpt": "NDIS No question. It's a giant gravy train for a bunch of parasites.",
+              "score": 52,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrjwrz/"
+            },
+            {
+              "author": "idryss_m",
+              "date": "2026-10-04",
+              "excerpt": "I love how it's \"Who in the middle to lower economic brackets can we hurt\" rather than \"What's a place we can fairly draw more/different revenue\". Like seriously, so many pay zero tax or royalties....",
+              "score": 24,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdresdi/"
+            },
+            {
+              "author": "Low-Bookkeeper4902",
+              "date": "2026-10-04",
+              "excerpt": "Not sure about what y’all saying, Chadstone was literally gridlocked yesterday and a retailer told me this morning their takings reflected Boxing Day. People out there spending like it’s their last da",
+              "score": 24,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdri0xz/"
+            },
+            {
+              "author": "naii-naii78",
+              "date": "2026-10-04",
+              "excerpt": "We are on the same page. I dont know how people put up with constantly bailing out the billionaires. Nyrstar (Port Pirie smelter) is 100% owned by Trafigula whose owners are international billionaires",
+              "score": 17,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdriaay/"
+            },
+            {
+              "author": "Wiggly-Pig",
+              "date": "2026-10-04",
+              "excerpt": "NDIS - needs to be brought into like with Medicare and the standard of wellbeing expected as an output. We can't continue to fund the delta to perfect lifestyle & happiness outcomes when that standard",
+              "score": 16,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrec73/"
+            },
+            {
+              "author": "Candid_Guard_812",
+              "date": "2026-10-04",
+              "excerpt": "NDIS. I'm a participant with a physical disability. Kick every fucker on it for \"psycho-social\" off it tomorrow. Head over to the NDIS sub and see if you think it represents value for money.",
+              "score": 16,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pds5ool/"
+            },
+            {
+              "author": "BarneyBuffet",
+              "date": "2026-10-04",
+              "excerpt": "My 2C. Any time the government \"lends\" a hand, it is picking winners and losers. It distorts the signals that inflation sends. Until the market doesn't know where to allocate effort and what to chase.",
+              "score": 15,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrgqcu/"
+            },
+            {
+              "author": "lewger",
+              "date": "2026-10-04",
+              "excerpt": "Childcare is heavily regulated and is a subsidy. Half of the problem with the NDIS is that everything is free.",
+              "score": 13,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrpkal/"
+            },
+            {
+              "author": "TheGypsyAU",
+              "date": "2026-10-04",
+              "excerpt": "Do away with CoL subsidises (can kicking) and scrap ESafety commissar!",
+              "score": 9,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrdshf/"
+            },
+            {
+              "author": "bubbles33d",
+              "date": "2026-10-04",
+              "excerpt": "The debate is going to be \"cut or tax the things that don't affect me\".",
+              "score": 9,
+              "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrf7lb/"
+            }
+          ]
+        },
+        "published_at": "2026-10-04",
+        "relevance_hint": 0.39,
+        "snippet": "Everything that doesn't affect me - voters If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any funding and could actually increase spending on the area NDIS No question. It's a giant gravy train for a bunch of parasites.",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Inflation and Government Spending - Every spending cut hurts someone. So which trade-offs should we actually make?",
+        "url": "https://www.reddit.com/r/AusFinance/comments/1wx8dm6/inflation_and_government_spending_every_spending/",
+        "why_relevant": "Reddit search"
+      }
+    ],
+    "youtube": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "deterministic",
+    "reasoning_provider": "local",
+    "rerank_model": "local-score"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "evergreen_ok",
+    "intent": "concept",
+    "notes": [
+      "fallback-plan"
+    ],
+    "raw_topic": "hold or cut inflation employment",
+    "source_weights": {
+      "github": 0.14285714285714285,
+      "grounding": 0.14285714285714285,
+      "hackernews": 0.14285714285714285,
+      "polymarket": 0.14285714285714285,
+      "reddit": 0.14285714285714285,
+      "x": 0.14285714285714285,
+      "youtube": 0.14285714285714285
+    },
+    "subqueries": [
+      {
+        "label": "primary",
+        "ranking_query": "What recent evidence from the last 30 days is most relevant to hold or cut inflation employment, especially about hold cut inflation employment?",
+        "search_query": "hold cut inflation employment",
+        "sources": [
+          "reddit",
+          "x",
+          "youtube",
+          "hackernews",
+          "github",
+          "grounding",
+          "polymarket"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-02",
+  "range_to": "2026-11-01",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://osnews.com/story/146273/how-long-do-you-need-to-hold-down-the-power-button-to-turn-off-a-pc",
+      "cluster_id": "cluster-1",
+      "engagement": 58,
+      "explanation": "fallback-local-score",
+      "final_score": 33.66548009367682,
+      "freshness": 97,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "50314243",
+      "local_relevance": 0.14,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50314243",
+            "native_rank": 1,
+            "source": "hackernews",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:hackernews": 1
+      },
+      "rerank_score": 17.8,
+      "rrf_score": 0.00234192037470726,
+      "snippet": "Could the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the power-down button a little longer. Looks like Microsoft forgot to talk to hardware manufacturers about this feature... My guess; server and consumer motherboards are very different.  BMCs log a lot of data and on startup if the OS driver reads the log it can put whatever it wants in the crashdump.  Consumer motherboards mostly only store the reason for last poweroff which the OS can read on next boot. Server MBs may...",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "Arodex",
+          "body": "How long do you need to hold down the power button to turn off a PC?\nCould the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the power-down button a little longer. Looks like Microsoft forgot to talk to hardware manufacturers about this feature... My guess; server and consumer motherboards are very different.  BMCs log a lot of data and on startup if the OS driver reads the log it can put whatever it wants in the crashdump.  Consumer motherboards mostly only store the reason for last poweroff which the OS can read on next boot. Server MBs may...",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 20,
+            "points": 59
+          },
+          "engagement_score": 58,
+          "freshness": 97,
+          "item_id": "50314243",
+          "local_rank_score": 0.3915,
+          "local_relevance": 0.14,
+          "metadata": {
+            "comment_insights": [
+              "Could the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the powe",
+              "Looks like Microsoft forgot to talk to hardware manufacturers about this feature...",
+              "My guess; server and consumer motherboards are very different",
+              "What about modern devices (such as laptops) that have a fixed battery? They shouldn’t rely totally on software to force a hard power off because that’s not safe",
+              "until it stops making noise :|"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50314243",
+            "top_comments": [
+              {
+                "author": "superjan",
+                "date": "",
+                "excerpt": "Could the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the power-down button a little longer.",
+                "url": "https://news.ycombinator.com/item?id=50315604"
+              },
+              {
+                "author": "throwa356262",
+                "date": "",
+                "excerpt": "Looks like Microsoft forgot to talk to hardware manufacturers about this feature...",
+                "url": "https://news.ycombinator.com/item?id=50314814"
+              },
+              {
+                "author": "benlivengood",
+                "date": "",
+                "excerpt": "My guess; server and consumer motherboards are very different.  BMCs log a lot of data and on startup if the OS driver reads the log it can put whatever it wants in the crashdump.  Consumer motherboards mostly only store the reason for last poweroff which the OS can read on next boot. Server MBs may...",
+                "url": "https://news.ycombinator.com/item?id=50317451"
+              },
+              {
+                "author": "curiousObject",
+                "date": "",
+                "excerpt": "What about modern devices (such as laptops) that have a fixed battery? They shouldn’t rely totally on software to force a hard power off because that’s not safe. If the software hangs you cannot power down",
+                "url": "https://news.ycombinator.com/item?id=50315165"
+              },
+              {
+                "author": "jareklupinski",
+                "date": "",
+                "excerpt": "until it stops making noise :|",
+                "url": "https://news.ycombinator.com/item?id=50315343"
+              }
+            ]
+          },
+          "published_at": "2026-10-31",
+          "relevance_hint": 0.76,
+          "snippet": "Could the confusion be that the 12 seconds only apply when the OS fails to respond to the power-down request? I recall struggling with laptops stuck in a boot loop, and it did pay off to hold the power-down button a little longer. Looks like Microsoft forgot to talk to hardware manufacturers about this feature... My guess; server and consumer motherboards are very different.  BMCs log a lot of data and on startup if the OS driver reads the log it can put whatever it wants in the crashdump.  Consumer motherboards mostly only store the reason for last poweroff which the OS can read on next boot. Server MBs may...",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "How long do you need to hold down the power button to turn off a PC?",
+          "url": "https://www.osnews.com/story/146273/how-long-do-you-need-to-hold-down-the-power-button-to-turn-off-a-pc/",
+          "why_relevant": "HN story about How long do you need to hold down the power button to turn o"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "How long do you need to hold down the power button to turn off a PC?",
+      "url": "https://www.osnews.com/story/146273/how-long-do-you-need-to-hold-down-the-power-button-to-turn-off-a-pc/"
+    },
+    {
+      "candidate_id": "https://github.com/SaarthurR/atticus-mac",
+      "cluster_id": "cluster-2",
+      "engagement": 67,
+      "explanation": "fallback-local-score",
+      "final_score": 29.09689342403628,
+      "freshness": 59,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "50049588",
+      "local_relevance": 0.09,
+      "metadata": {
+        "github_stars": {
+          "SaarthurR/atticus-mac": 537
+        },
+        "provenance": [
+          {
+            "item_id": "50049588",
+            "native_rank": 3,
+            "source": "hackernews",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:hackernews": 3
+      },
+      "rerank_score": 14.3,
+      "rrf_score": 0.0022675736961451248,
+      "snippet": "This looks and works great, super impressed. This is what Siri/Apple AI should be like. One concern I have is about sending private info to Anthropic. So it would be great to have the option to use local AI. Local options should support the OpenAI API that seemingly is the standard for these connect... This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing. (I bring this up because I think these are bad terms. People under 18 should be allowed to learn how...",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "SaarthRanka",
+          "body": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p\nThis looks and works great, super impressed. This is what Siri/Apple AI should be like.\nOne concern I have is about sending private info to Anthropic. So it would be great to have the option to use local AI.\nLocal options should support the OpenAI API that seemingly is the standard for these connect... This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing.\n(I bring this up because I think these are bad terms. People under 18 should be allowed to learn how to code and use ...",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 30,
+            "points": 117
+          },
+          "engagement_score": 67,
+          "freshness": 59,
+          "item_id": "50049588",
+          "local_rank_score": 0.273,
+          "local_relevance": 0.09,
+          "metadata": {
+            "comment_insights": [
+              "This looks and works great, super impressed",
+              "This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows",
+              "I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing.",
+              "I have been looking for this kind of thing on Linux",
+              "Will this work on the Windows as well or just for mac users"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50049588",
+            "top_comments": [
+              {
+                "author": "car",
+                "date": "",
+                "excerpt": "This looks and works great, super impressed. This is what Siri/Apple AI should be like.\nOne concern I have is about sending private info to Anthropic. So it would be great to have the option to use local AI.\nLocal options should support the OpenAI API that seemingly is the standard for these connect...",
+                "url": "https://news.ycombinator.com/item?id=50064434"
+              },
+              {
+                "author": "FindlayH",
+                "date": "",
+                "excerpt": "This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows",
+                "url": "https://news.ycombinator.com/item?id=50053903"
+              },
+              {
+                "author": "trollbridge",
+                "date": "",
+                "excerpt": "I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing.\n(I bring this up because I think these are bad terms. People under 18 should be allowed to learn how to code and use ...",
+                "url": "https://news.ycombinator.com/item?id=50065503"
+              },
+              {
+                "author": "blakeashleyjr",
+                "date": "",
+                "excerpt": "I have been looking for this kind of thing on Linux. Any one have anything that works well?",
+                "url": "https://news.ycombinator.com/item?id=50058964"
+              },
+              {
+                "author": "imranshah10140",
+                "date": "",
+                "excerpt": "Will this work on the Windows as well or just for mac users. by the way really like it from what I can see it from the demo video. If it works as it shown and also I dont thinks so that it is for windows would love if you can clear this out.",
+                "url": "https://news.ycombinator.com/item?id=50053168"
+              }
+            ]
+          },
+          "published_at": "2026-10-12",
+          "relevance_hint": 0.79,
+          "snippet": "This looks and works great, super impressed. This is what Siri/Apple AI should be like. One concern I have is about sending private info to Anthropic. So it would be great to have the option to use local AI. Local options should support the OpenAI API that seemingly is the standard for these connect... This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows I don’t want to be a jerk, but I’m wondering how you managed to access Claude considering the terms of service prohibit someone under 18 signing up and also prohibit account sharing. (I bring this up because I think these are bad terms. People under 18 should be allowed to learn how...",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+          "url": "https://github.com/SaarthurR/atticus-mac",
+          "why_relevant": "HN story about Show HN: Atticus – Hold-to-talk voice assistant for macOS th"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+      "url": "https://github.com/SaarthurR/atticus-mac"
+    },
+    {
+      "candidate_id": "https://economist.com/obituary/2026/10/08/cyril-hilsum-invented-the-flat-screen-displays-that-hold-us-in-thrall",
+      "cluster_id": "cluster-3",
+      "engagement": 35,
+      "explanation": "fallback-local-score",
+      "final_score": 25.988035714285715,
+      "freshness": 55,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "50030558",
+      "local_relevance": 0.14,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50030558",
+            "native_rank": 4,
+            "source": "hackernews",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:hackernews": 4
+      },
+      "rerank_score": 17.8,
+      "rrf_score": 0.002232142857142857,
+      "snippet": "Recommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [invention mentioned in headline].\nFor example, the answer to ‘who invented the airplane’ takes differen... https://archive.ph/OeuTH for those who aren't subscribers",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "sohkamyung",
+          "body": "Cyril Hilsum invented the flat-screen displays that hold us in thrall\nRecommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [invention mentioned in headline].\nFor example, the answer to ‘who invented the airplane’ takes differen... https://archive.ph/OeuTH for those who aren't subscribers",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 2,
+            "points": 21
+          },
+          "engagement_score": 35,
+          "freshness": 55,
+          "item_id": "50030558",
+          "local_rank_score": 0.2635,
+          "local_relevance": 0.14,
+          "metadata": {
+            "comment_insights": [
+              "Recommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [inv",
+              "https://archive.ph/OeuTH for those who aren't subscribers"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50030558",
+            "top_comments": [
+              {
+                "author": "ricksunny",
+                "date": "",
+                "excerpt": "Recommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [invention mentioned in headline].\nFor example, the answer to ‘who invented the airplane’ takes differen...",
+                "url": "https://news.ycombinator.com/item?id=50045199"
+              },
+              {
+                "author": "burtness",
+                "date": "",
+                "excerpt": "https://archive.ph/OeuTH for those who aren't subscribers",
+                "url": "https://news.ycombinator.com/item?id=50042400"
+              }
+            ]
+          },
+          "published_at": "2026-10-10",
+          "relevance_hint": 0.72,
+          "snippet": "Recommend wariness of technology history narratives, especially “just-so” retrocausal stories and, like this one demonstrates, “great man” narratives (like, but for this person, we would not have [invention mentioned in headline].\nFor example, the answer to ‘who invented the airplane’ takes differen... https://archive.ph/OeuTH for those who aren't subscribers",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Cyril Hilsum invented the flat-screen displays that hold us in thrall",
+          "url": "https://www.economist.com/obituary/2026/10/08/cyril-hilsum-invented-the-flat-screen-displays-that-hold-us-in-thrall",
+          "why_relevant": "HN story about Cyril Hilsum invented the flat-screen displays that hold us"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Cyril Hilsum invented the flat-screen displays that hold us in thrall",
+      "url": "https://www.economist.com/obituary/2026/10/08/cyril-hilsum-invented-the-flat-screen-displays-that-hold-us-in-thrall"
+    },
+    {
+      "candidate_id": "https://sfchronicle.com/projects/2026/drugged-driving-epidemic",
+      "cluster_id": "cluster-4",
+      "engagement": 21,
+      "explanation": "fallback-local-score",
+      "final_score": 25.706036866359447,
+      "freshness": 94,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "50284080",
+      "local_relevance": 0.09,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50284080",
+            "native_rank": 2,
+            "source": "hackernews",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:hackernews": 2
+      },
+      "rerank_score": 14.3,
+      "rrf_score": 0.002304147465437788,
+      "snippet": "I live in a very strict zero tolerance area, where drunk driving is dealt with harshly. No one seems to give a shit. Plenty of cars pulling away from bars at all times of day. I legit have to drive super carefully at night in case some jackass causes an accident. Half the drivers don’t use turn sign...",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "nozzlegear",
+          "body": "America waged war on drunk driving, now a new epidemic is taking hold\nI live in a very strict zero tolerance area, where drunk driving is dealt with harshly. No one seems to give a shit. Plenty of cars pulling away from bars at all times of day. I legit have to drive super carefully at night in case some jackass causes an accident. Half the drivers don’t use turn sign...",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 1,
+            "points": 5
+          },
+          "engagement_score": 21,
+          "freshness": 94,
+          "item_id": "50284080",
+          "local_rank_score": 0.3145,
+          "local_relevance": 0.09,
+          "metadata": {
+            "comment_insights": [
+              "I live in a very strict zero tolerance area, where drunk driving is dealt with harshly"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=50284080",
+            "top_comments": [
+              {
+                "author": "xvxvx",
+                "date": "",
+                "excerpt": "I live in a very strict zero tolerance area, where drunk driving is dealt with harshly. No one seems to give a shit. Plenty of cars pulling away from bars at all times of day. I legit have to drive super carefully at night in case some jackass causes an accident. Half the drivers don’t use turn sign...",
+                "url": "https://news.ycombinator.com/item?id=50284492"
+              }
+            ]
+          },
+          "published_at": "2026-10-29",
+          "relevance_hint": 0.66,
+          "snippet": "I live in a very strict zero tolerance area, where drunk driving is dealt with harshly. No one seems to give a shit. Plenty of cars pulling away from bars at all times of day. I legit have to drive super carefully at night in case some jackass causes an accident. Half the drivers don’t use turn sign...",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "America waged war on drunk driving, now a new epidemic is taking hold",
+          "url": "https://www.sfchronicle.com/projects/2026/drugged-driving-epidemic/",
+          "why_relevant": "HN story about America waged war on drunk driving, now a new epidemic is ta"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "America waged war on drunk driving, now a new epidemic is taking hold",
+      "url": "https://www.sfchronicle.com/projects/2026/drugged-driving-epidemic/"
+    },
+    {
+      "candidate_id": "https://github.com/AJSethuraman/SATC/pull/471",
+      "cluster_id": "cluster-5",
+      "engagement": 31,
+      "explanation": "fallback-local-score",
+      "final_score": 25.615480093676815,
+      "freshness": 79,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "GH30",
+      "local_relevance": 0.14,
+      "metadata": {
+        "github_stars": {
+          "AJSethuraman/SATC": 0
+        },
+        "provenance": [
+          {
+            "item_id": "GH30",
+            "native_rank": 1,
+            "source": "github",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:github": 1
+      },
+      "rerank_score": 15.8,
+      "rrf_score": 0.00234192037470726,
+      "snippet": "The follow-up to #452, from the firm's answers of 22 Oct 2026: *\"We are not rating these. At most these are directional\"*, *\"Yes direction only and ways to establish normal movement\"*, *\"Typical move (Recommended)\"*, quarters left out *\"None yet\"*, the zoom *\"Name it, then rebuild\"*, household debt",
+      "source": "github",
+      "source_items": [
+        {
+          "author": "AJSethuraman",
+          "body": "threshold-engine: the Macrobook rates nothing; direction against normal movement, quarters left out, a zoom, the prime rate, household debt, wages after inflation, new bankruptcies, a Dashboard, and design round 1\nThe follow-up to #452, from the firm's answers of 22 Oct 2026: *\"We are not rating these. At most these are directional\"*, *\"Yes direction only and ways to establish normal movement\"*, *\"Typical move (Recommended)\"*, quarters left out *\"None yet\"*, the zoom *\"Name it, then rebuild\"*, household debt",
+          "container": "AJSethuraman/SATC",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 16,
+            "reactions": 0
+          },
+          "engagement_score": 31,
+          "freshness": 79,
+          "item_id": "GH30",
+          "local_rank_score": 0.3195,
+          "local_relevance": 0.14,
+          "metadata": {
+            "date_is_snapshot": false,
+            "is_pr": true,
+            "labels": [],
+            "state": "closed",
+            "top_comments": []
+          },
+          "published_at": "2026-10-22",
+          "relevance_hint": 0.46,
+          "snippet": "The follow-up to #452, from the firm's answers of 22 Oct 2026: *\"We are not rating these. At most these are directional\"*, *\"Yes direction only and ways to establish normal movement\"*, *\"Typical move (Recommended)\"*, quarters left out *\"None yet\"*, the zoom *\"Name it, then rebuild\"*, household debt",
+          "source": "github",
+          "source_quality": 0.6,
+          "title": "threshold-engine: the Macrobook rates nothing; direction against normal movement, quarters left out, a zoom, the prime rate, household debt, wages after inflation, new bankruptcies, a Dashboard, and design round 1",
+          "url": "https://github.com/AJSethuraman/SATC/pull/471",
+          "why_relevant": "GitHub PR: threshold-engine: the Macrobook rates nothing; direction aga"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "github"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "threshold-engine: the Macrobook rates nothing; direction against normal movement, quarters left out, a zoom, the prime rate, household debt, wages after inflation, new bankruptcies, a Dashboard, and design round 1",
+      "url": "https://github.com/AJSethuraman/SATC/pull/471"
+    },
+    {
+      "candidate_id": "https://theguardian.com/us-news/live/2026/oct/07/christa-pike-lawyers-live-updates-tennessee-execution",
+      "cluster_id": "cluster-6",
+      "engagement": 39,
+      "explanation": "fallback-local-score",
+      "final_score": 23.863049040511726,
+      "freshness": 49,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "49994660",
+      "local_relevance": 0.09,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "49994660",
+            "native_rank": 7,
+            "source": "hackernews",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:hackernews": 7
+      },
+      "rerank_score": 14.3,
+      "rrf_score": 0.0021321961620469083,
+      "snippet": "hospital staff request to remove shackles holding her to the hospital bed: denied\nlimited ability to comunicate, but will clearly understand her situation\nshe had requested to be killed by an all female firing squad and was denied, and will now face a long recovery in order to return to death row in... The court hearing of Christa Pike is now under way.\n  Pike’s lawyers are addressing the court at the moment.\n  The hearing had originally been billed as a press conference.\n\nA press conference turned into a court hearing? > experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "MaysonL",
+          "body": "Christa Pike's lawyers hold press conference after she regains consciousness\nhospital staff request to remove shackles holding her to the hospital bed: denied\nlimited ability to comunicate, but will clearly understand her situation\nshe had requested to be killed by an all female firing squad and was denied, and will now face a long recovery in order to return to death row in... The court hearing of Christa Pike is now under way.\n  Pike’s lawyers are addressing the court at the moment.\n  The hearing had originally been billed as a press conference.\n\nA press conference turned into a court hearing? > experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 10,
+            "points": 10
+          },
+          "engagement_score": 39,
+          "freshness": 49,
+          "item_id": "49994660",
+          "local_rank_score": 0.22,
+          "local_relevance": 0.09,
+          "metadata": {
+            "comment_insights": [
+              "hospital staff request to remove shackles holding her to the hospital bed: denied",
+              "The court hearing of Christa Pike is now under way.",
+              "> experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand"
+            ],
+            "hn_url": "https://news.ycombinator.com/item?id=49994660",
+            "top_comments": [
+              {
+                "author": "metalman",
+                "date": "",
+                "excerpt": "hospital staff request to remove shackles holding her to the hospital bed: denied\nlimited ability to comunicate, but will clearly understand her situation\nshe had requested to be killed by an all female firing squad and was denied, and will now face a long recovery in order to return to death row in...",
+                "url": "https://news.ycombinator.com/item?id=49996530"
+              },
+              {
+                "author": "hughw",
+                "date": "",
+                "excerpt": "The court hearing of Christa Pike is now under way.\n  Pike’s lawyers are addressing the court at the moment.\n  The hearing had originally been billed as a press conference.\n\nA press conference turned into a court hearing?",
+                "url": "https://news.ycombinator.com/item?id=49994917"
+              },
+              {
+                "author": "gfrecvh",
+                "date": "",
+                "excerpt": "> experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand",
+                "url": "https://news.ycombinator.com/item?id=49995050"
+              }
+            ]
+          },
+          "published_at": "2026-10-07",
+          "relevance_hint": 0.69,
+          "snippet": "hospital staff request to remove shackles holding her to the hospital bed: denied\nlimited ability to comunicate, but will clearly understand her situation\nshe had requested to be killed by an all female firing squad and was denied, and will now face a long recovery in order to return to death row in... The court hearing of Christa Pike is now under way.\n  Pike’s lawyers are addressing the court at the moment.\n  The hearing had originally been billed as a press conference.\n\nA press conference turned into a court hearing? > experts in children’s brains development have come to recognize that 18 is but an arbitrary line in the sand",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Christa Pike's lawyers hold press conference after she regains consciousness",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/07/christa-pike-lawyers-live-updates-tennessee-execution",
+          "why_relevant": "HN story about Christa Pike's lawyers hold press conference after she regai"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Christa Pike's lawyers hold press conference after she regains consciousness",
+      "url": "https://www.theguardian.com/us-news/live/2026/oct/07/christa-pike-lawyers-live-updates-tennessee-execution"
+    },
+    {
+      "candidate_id": "https://cbc.ca/news/world/yankex-russia-ukraine-bots-9.7379086",
+      "cluster_id": "cluster-7",
+      "engagement": 19,
+      "explanation": "fallback-local-score",
+      "final_score": 22.79945054945055,
+      "freshness": 64,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 6.75,
+      "item_id": "50092899",
+      "local_relevance": 0.1,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50092899",
+            "native_rank": 5,
+            "source": "hackernews",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:hackernews": 5
+      },
+      "rerank_score": 15.0,
+      "rrf_score": 0.002197802197802198,
+      "snippet": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "robtherobber",
+          "body": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 1,
+            "points": 4
+          },
+          "engagement_score": 19,
+          "freshness": 64,
+          "item_id": "50092899",
+          "local_rank_score": 0.244,
+          "local_relevance": 0.1,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=50092899",
+            "top_comments": []
+          },
+          "published_at": "2026-10-14",
+          "relevance_hint": 0.65,
+          "snippet": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up",
+          "url": "https://www.cbc.ca/news/world/yankex-russia-ukraine-bots-9.7379086",
+          "why_relevant": "HN story about Why claims that Ukraine drone attack halted Russian bot traf"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Why claims that Ukraine drone attack halted Russian bot traffic don't hold up",
+      "url": "https://www.cbc.ca/news/world/yankex-russia-ukraine-bots-9.7379086"
+    },
+    {
+      "candidate_id": "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html",
+      "cluster_id": "cluster-8",
+      "engagement": 12,
+      "explanation": "fallback-local-score",
+      "final_score": 22.161125541125543,
+      "freshness": 64,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 16.650000000000002,
+      "item_id": "50094575",
+      "local_relevance": 0.11,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "50094575",
+            "native_rank": 6,
+            "source": "hackernews",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:hackernews": 6
+      },
+      "rerank_score": 15.7,
+      "rrf_score": 0.0021645021645021645,
+      "snippet": "The AI labor apocalypse is on hold (for now)",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "Betelbuddy",
+          "body": "The AI labor apocalypse is on hold (for now)",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 0,
+            "points": 3
+          },
+          "engagement_score": 12,
+          "freshness": 64,
+          "item_id": "50094575",
+          "local_rank_score": 0.24350000000000002,
+          "local_relevance": 0.11,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=50094575",
+            "top_comments": []
+          },
+          "published_at": "2026-10-14",
+          "relevance_hint": 0.63,
+          "snippet": "The AI labor apocalypse is on hold (for now)",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "The AI labor apocalypse is on hold (for now)",
+          "url": "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html",
+          "why_relevant": "HN story about The AI labor apocalypse is on hold (for now)"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "The AI labor apocalypse is on hold (for now)",
+      "url": "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html"
+    },
+    {
+      "candidate_id": "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation",
+      "cluster_id": "cluster-9",
+      "engagement": 12,
+      "explanation": "fallback-local-score",
+      "final_score": 20.025210084033613,
+      "freshness": 47,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 8.25,
+      "item_id": "49983690",
+      "local_relevance": 0.1,
+      "metadata": {
+        "github_stars": {
+          "ahmedhmam1994/voxscribe-ai-voice-dictation": 35
+        },
+        "provenance": [
+          {
+            "item_id": "49983690",
+            "native_rank": 8,
+            "source": "hackernews",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:hackernews": 8
+      },
+      "rerank_score": 15.0,
+      "rrf_score": 0.0021008403361344537,
+      "snippet": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows",
+      "source": "hackernews",
+      "source_items": [
+        {
+          "author": "ahmedibrahim199",
+          "body": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows",
+          "container": "Hacker News",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 0,
+            "points": 3
+          },
+          "engagement_score": 12,
+          "freshness": 47,
+          "item_id": "49983690",
+          "local_rank_score": 0.1945,
+          "local_relevance": 0.1,
+          "metadata": {
+            "comment_insights": [],
+            "hn_url": "https://news.ycombinator.com/item?id=49983690",
+            "top_comments": []
+          },
+          "published_at": "2026-10-06",
+          "relevance_hint": 0.62,
+          "snippet": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows",
+          "source": "hackernews",
+          "source_quality": 0.8,
+          "title": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows",
+          "url": "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation",
+          "why_relevant": "HN story about Show HN: VoxScribe, a local hold-to-talk voice dictation app"
+        }
+      ],
+      "source_quality": 0.8,
+      "sources": [
+        "hackernews"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Show HN: VoxScribe, a local hold-to-talk voice dictation app for Windows",
+      "url": "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation"
+    },
+    {
+      "candidate_id": "https://github.com/AymanCode/EcoSim/pull/55",
+      "cluster_id": "cluster-10",
+      "engagement": 8,
+      "explanation": "fallback-local-score",
+      "final_score": 19.713049040511727,
+      "freshness": 76,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "GH28",
+      "local_relevance": 0.09,
+      "metadata": {
+        "github_stars": {
+          "AymanCode/EcoSim": 0
+        },
+        "provenance": [
+          {
+            "item_id": "GH28",
+            "native_rank": 7,
+            "source": "github",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:github": 7
+      },
+      "rerank_score": 12.3,
+      "rrf_score": 0.0021321961620469083,
+      "snippet": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Adverse effects\n\nBoth arms below have the Services target-markup flag on. The comparison is sticky prices on top of that fix. Five paired seeds (42–46), each arm its own process, 1,000 households, 5 firms per category, 260 ticks. Unemployment is the labor-force",
+      "source": "github",
+      "source_items": [
+        {
+          "author": "AymanCode",
+          "body": "Sticky posted prices, flag off (re-cut of #46)\n<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Adverse effects\n\nBoth arms below have the Services target-markup flag on. The comparison is sticky prices on top of that fix. Five paired seeds (42–46), each arm its own process, 1,000 households, 5 firms per category, 260 ticks. Unemployment is the labor-force",
+          "container": "AymanCode/EcoSim",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 1,
+            "reactions": 0
+          },
+          "engagement_score": 8,
+          "freshness": 76,
+          "item_id": "GH28",
+          "local_rank_score": 0.2565,
+          "local_relevance": 0.09,
+          "metadata": {
+            "date_is_snapshot": false,
+            "is_pr": true,
+            "labels": [],
+            "state": "closed",
+            "top_comments": []
+          },
+          "published_at": "2026-10-20",
+          "relevance_hint": 0.38,
+          "snippet": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Adverse effects\n\nBoth arms below have the Services target-markup flag on. The comparison is sticky prices on top of that fix. Five paired seeds (42–46), each arm its own process, 1,000 households, 5 firms per category, 260 ticks. Unemployment is the labor-force",
+          "source": "github",
+          "source_quality": 0.6,
+          "title": "Sticky posted prices, flag off (re-cut of #46)",
+          "url": "https://github.com/AymanCode/EcoSim/pull/55",
+          "why_relevant": "GitHub PR: Sticky posted prices, flag off (re-cut of #46)"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "github"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Sticky posted prices, flag off (re-cut of #46)",
+      "url": "https://github.com/AymanCode/EcoSim/pull/55"
+    },
+    {
+      "candidate_id": "https://github.com/PolicyEngine/policyengine-uk/pull/2727",
+      "cluster_id": "cluster-11",
+      "engagement": 12,
+      "explanation": "fallback-local-score",
+      "final_score": 18.00301810865191,
+      "freshness": 91,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 0.0,
+      "item_id": "GH29",
+      "local_relevance": 0.0,
+      "metadata": {
+        "github_stars": {
+          "PolicyEngine/policyengine-uk": 53
+        },
+        "provenance": [
+          {
+            "item_id": "GH29",
+            "native_rank": 11,
+            "source": "github",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:github": 11
+      },
+      "rerank_score": 6.0,
+      "rrf_score": 0.0020120724346076456,
+      "snippet": "Built on #2717 (October 2026 EFO), which merged on 29 Oct; GitHub retargeted this PR to `main`.\n\nDatasets that declare an `energy_price_basis` used to project household electricity and gas spending with headline OBR CPI. This PR replaces that with household energy price indices, `gov.economic_assump",
+      "source": "github",
+      "source_items": [
+        {
+          "author": "MaxGhenis",
+          "body": "Project household energy spending with retail energy price indices, not CPI\nBuilt on #2717 (October 2026 EFO), which merged on 29 Oct; GitHub retargeted this PR to `main`.\n\nDatasets that declare an `energy_price_basis` used to project household electricity and gas spending with headline OBR CPI. This PR replaces that with household energy price indices, `gov.economic_assump",
+          "container": "PolicyEngine/policyengine-uk",
+          "date_confidence": "high",
+          "engagement": {
+            "comments": 2,
+            "reactions": 0
+          },
+          "engagement_score": 12,
+          "freshness": 91,
+          "item_id": "GH29",
+          "local_rank_score": 0.23950000000000002,
+          "local_relevance": 0.0,
+          "metadata": {
+            "date_is_snapshot": false,
+            "is_pr": true,
+            "labels": [],
+            "state": "closed",
+            "top_comments": []
+          },
+          "published_at": "2026-10-28",
+          "relevance_hint": 0.32,
+          "snippet": "Built on #2717 (October 2026 EFO), which merged on 29 Oct; GitHub retargeted this PR to `main`.\n\nDatasets that declare an `energy_price_basis` used to project household electricity and gas spending with headline OBR CPI. This PR replaces that with household energy price indices, `gov.economic_assump",
+          "source": "github",
+          "source_quality": 0.6,
+          "title": "Project household energy spending with retail energy price indices, not CPI",
+          "url": "https://github.com/PolicyEngine/policyengine-uk/pull/2727",
+          "why_relevant": "GitHub PR: Project household energy spending with retail energy price i"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "github"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Project household energy spending with retail energy price indices, not CPI",
+      "url": "https://github.com/PolicyEngine/policyengine-uk/pull/2727"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/ireland/comments/1xbndfg/opinion_giving_public_sector_workers_a_raise_of",
+      "cluster_id": "cluster-12",
+      "engagement": 67,
+      "explanation": "fallback-local-score (entity-miss demotion)",
+      "final_score": 1.3354800936768143,
+      "freshness": 77,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 26.968231470543465,
+      "item_id": "R1",
+      "local_relevance": 0.2,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R1",
+            "native_rank": 1,
+            "source": "reddit",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:reddit": 1
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.00234192037470726,
+      "snippet": "Ye and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin. People like to go on at the public sector because they actually t Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps people here, and it is worth it. Why does this conversa The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government. They seem to be in on the whole 'race to the bot",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Opinion: Giving public sector workers a raise of anything less than inflation is a pay cut\nYe and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin. People like to go on at the public sector because they actually t Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps people here, and it is worth it. Why does this conversa The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government. They seem to be in on the whole 'race to the bot",
+          "container": "ireland",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 128,
+            "score": 320
+          },
+          "engagement_score": 67,
+          "freshness": 77,
+          "item_id": "R1",
+          "local_rank_score": 0.3895,
+          "local_relevance": 0.2,
+          "metadata": {
+            "comment_insights": [
+              "Ye and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin.",
+              "Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps peopl...",
+              "The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government...",
+              "Don’t forget the post-2013 pension is rubbish too. Newer staff don’t even have the benefit of a decent pension which many were happy to sacrifice a go...",
+              "We train great nurses, then they leave for better pay, living and working conditions.",
+              "We are spending a considerable amount of money educating our youth for other countries",
+              "Even those figures are an absolute manipulation- they include special education teachers who aren’t class teachers, so the reality is more like 28:1"
+            ],
+            "top_comments": [
+              {
+                "author": "leavemealonethanks",
+                "date": "2026-10-21",
+                "excerpt": "Ye and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin. People like to go on at the public sector because they actually t",
+                "score": 167,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0g3lt/"
+              },
+              {
+                "author": "Liberal_irony",
+                "date": "2026-10-21",
+                "excerpt": "Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps people here, and it is worth it. Why does this conversa",
+                "score": 156,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0fqgk/"
+              },
+              {
+                "author": "johnfuckingtravolta",
+                "date": "2026-10-21",
+                "excerpt": "The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government. They seem to be in on the whole 'race to the bot",
+                "score": 87,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0gg8q/"
+              },
+              {
+                "author": "OverWear90",
+                "date": "2026-10-21",
+                "excerpt": "Don’t forget the post-2013 pension is rubbish too. Newer staff don’t even have the benefit of a decent pension which many were happy to sacrifice a good wage for a good pension deal before",
+                "score": 75,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0k2r5/"
+              },
+              {
+                "author": "Ob1s_dark_side",
+                "date": "2026-10-21",
+                "excerpt": "We train great nurses, then they leave for better pay, living and working conditions.",
+                "score": 60,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0gzgd/"
+              },
+              {
+                "author": "WildRelative2674",
+                "date": "2026-10-21",
+                "excerpt": "We are spending a considerable amount of money educating our youth for other countries",
+                "score": 38,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0moey/"
+              },
+              {
+                "author": "Hopeful-Elk-6494",
+                "date": "2026-10-21",
+                "excerpt": "Even those figures are an absolute manipulation- they include special education teachers who aren’t class teachers, so the reality is more like 28:1",
+                "score": 32,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0kcrz/"
+              },
+              {
+                "author": "Liberal_irony",
+                "date": "2026-10-21",
+                "excerpt": "Up to 40% less than previous depending on when you started.",
+                "score": 31,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0le9z/"
+              },
+              {
+                "author": "Pickle_Emotion",
+                "date": "2026-10-21",
+                "excerpt": "What kind of reform is needed in teaching? As far as I’m aware curriculums are constantly changing. From teachers I know issues are children with increasingly poor attention spans due to media consump",
+                "score": 30,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0ik7g/"
+              },
+              {
+                "author": "Chemical_Tap_8320",
+                "date": "2026-10-21",
+                "excerpt": "We have the biggest class sizes in Europe 23:1 ratio, average is like 18:1, this would improve education",
+                "score": 27,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0jnvt/"
+              },
+              {
+                "author": "TheIrishBread",
+                "date": "2026-10-21",
+                "excerpt": "Because none of those people are their voter base or make up such a small fraction as to be negligible. Their voter base consists of landlords, MNC workers, Business owners and people who view housing",
+                "score": 22,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0g46d/"
+              },
+              {
+                "author": "SPZ_Ireland",
+                "date": "2026-10-21",
+                "excerpt": "Opinion: This is a fact and applies to everyone",
+                "score": 22,
+                "url": "https://reddit.com/r/ireland/comments/1xbndfg/comment/pi0in7g/"
+              }
+            ]
+          },
+          "published_at": "2026-10-21",
+          "relevance_hint": 0.39,
+          "snippet": "Ye and public sector workers are already paid peanuts, and the lower levels take home salary is lower than the average rent in Dublin. People like to go on at the public sector because they actually t Quote from the article: \"Whether we’re talking about radio presenters or political advisers, there seems to be an understanding that money keeps people here, and it is worth it. Why does this conversa The attempt at gaslighting them saying the tax bands have been altered and that their pay is grand is very frustrating to see and hear from government. They seem to be in on the whole 'race to the bot",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Opinion: Giving public sector workers a raise of anything less than inflation is a pay cut",
+          "url": "https://www.reddit.com/r/ireland/comments/1xbndfg/opinion_giving_public_sector_workers_a_raise_of/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Opinion: Giving public sector workers a raise of anything less than inflation is a pay cut",
+      "url": "https://www.reddit.com/r/ireland/comments/1xbndfg/opinion_giving_public_sector_workers_a_raise_of/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/AusFinance/comments/1wx8dm6/inflation_and_government_spending_every_spending",
+      "cluster_id": "cluster-13",
+      "engagement": 52,
+      "explanation": "fallback-local-score (entity-miss demotion)",
+      "final_score": 0.0,
+      "freshness": 43,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 23.063298077230954,
+      "item_id": "R2",
+      "local_relevance": 0.2,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R2",
+            "native_rank": 3,
+            "source": "reddit",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:reddit": 3
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.0022675736961451248,
+      "snippet": "Everything that doesn't affect me - voters If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any funding and could actually increase spending on the area NDIS No question. It's a giant gravy train for a bunch of parasites.",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Inflation and Government Spending - Every spending cut hurts someone. So which trade-offs should we actually make?\nEverything that doesn't affect me - voters If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any funding and could actually increase spending on the area NDIS No question. It's a giant gravy train for a bunch of parasites.",
+          "container": "AusFinance",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 238,
+            "score": 23
+          },
+          "engagement_score": 52,
+          "freshness": 43,
+          "item_id": "R2",
+          "local_rank_score": 0.2895,
+          "local_relevance": 0.2,
+          "metadata": {
+            "comment_insights": [
+              "Everything that doesn't affect me - voters",
+              "If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any fundin...",
+              "NDIS No question. It's a giant gravy train for a bunch of parasites.",
+              "I love how it's \"Who in the middle to lower economic brackets can we hurt\" rather than \"What's a place we can fairly draw more/different revenue\".",
+              "Not sure about what y’all saying, Chadstone was literally gridlocked yesterday and a retailer told me this morning their takings reflected Boxing Day.",
+              "We are on the same page. I dont know how people put up with constantly bailing out the billionaires.",
+              "NDIS - needs to be brought into like with Medicare and the standard of wellbeing expected as an output."
+            ],
+            "top_comments": [
+              {
+                "author": "H20onthego",
+                "date": "2026-10-04",
+                "excerpt": "Everything that doesn't affect me - voters",
+                "score": 79,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdraljf/"
+              },
+              {
+                "author": "oldandopinionated",
+                "date": "2026-10-04",
+                "excerpt": "If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any funding and could actually increase spending on the area",
+                "score": 57,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrd23j/"
+              },
+              {
+                "author": "lewger",
+                "date": "2026-10-04",
+                "excerpt": "NDIS No question. It's a giant gravy train for a bunch of parasites.",
+                "score": 52,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrjwrz/"
+              },
+              {
+                "author": "idryss_m",
+                "date": "2026-10-04",
+                "excerpt": "I love how it's \"Who in the middle to lower economic brackets can we hurt\" rather than \"What's a place we can fairly draw more/different revenue\". Like seriously, so many pay zero tax or royalties....",
+                "score": 24,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdresdi/"
+              },
+              {
+                "author": "Low-Bookkeeper4902",
+                "date": "2026-10-04",
+                "excerpt": "Not sure about what y’all saying, Chadstone was literally gridlocked yesterday and a retailer told me this morning their takings reflected Boxing Day. People out there spending like it’s their last da",
+                "score": 24,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdri0xz/"
+              },
+              {
+                "author": "naii-naii78",
+                "date": "2026-10-04",
+                "excerpt": "We are on the same page. I dont know how people put up with constantly bailing out the billionaires. Nyrstar (Port Pirie smelter) is 100% owned by Trafigula whose owners are international billionaires",
+                "score": 17,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdriaay/"
+              },
+              {
+                "author": "Wiggly-Pig",
+                "date": "2026-10-04",
+                "excerpt": "NDIS - needs to be brought into like with Medicare and the standard of wellbeing expected as an output. We can't continue to fund the delta to perfect lifestyle & happiness outcomes when that standard",
+                "score": 16,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrec73/"
+              },
+              {
+                "author": "Candid_Guard_812",
+                "date": "2026-10-04",
+                "excerpt": "NDIS. I'm a participant with a physical disability. Kick every fucker on it for \"psycho-social\" off it tomorrow. Head over to the NDIS sub and see if you think it represents value for money.",
+                "score": 16,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pds5ool/"
+              },
+              {
+                "author": "BarneyBuffet",
+                "date": "2026-10-04",
+                "excerpt": "My 2C. Any time the government \"lends\" a hand, it is picking winners and losers. It distorts the signals that inflation sends. Until the market doesn't know where to allocate effort and what to chase.",
+                "score": 15,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrgqcu/"
+              },
+              {
+                "author": "lewger",
+                "date": "2026-10-04",
+                "excerpt": "Childcare is heavily regulated and is a subsidy. Half of the problem with the NDIS is that everything is free.",
+                "score": 13,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrpkal/"
+              },
+              {
+                "author": "TheGypsyAU",
+                "date": "2026-10-04",
+                "excerpt": "Do away with CoL subsidises (can kicking) and scrap ESafety commissar!",
+                "score": 9,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrdshf/"
+              },
+              {
+                "author": "bubbles33d",
+                "date": "2026-10-04",
+                "excerpt": "The debate is going to be \"cut or tax the things that don't affect me\".",
+                "score": 9,
+                "url": "https://reddit.com/r/AusFinance/comments/1wx8dm6/comment/pdrf7lb/"
+              }
+            ]
+          },
+          "published_at": "2026-10-04",
+          "relevance_hint": 0.39,
+          "snippet": "Everything that doesn't affect me - voters If the 27% of the large corporate entities that didn't pay tax in Australia were actually made to pay tax then we wouldn't have need to cut any funding and could actually increase spending on the area NDIS No question. It's a giant gravy train for a bunch of parasites.",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Inflation and Government Spending - Every spending cut hurts someone. So which trade-offs should we actually make?",
+          "url": "https://www.reddit.com/r/AusFinance/comments/1wx8dm6/inflation_and_government_spending_every_spending/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Inflation and Government Spending - Every spending cut hurts someone. So which trade-offs should we actually make?",
+      "url": "https://www.reddit.com/r/AusFinance/comments/1wx8dm6/inflation_and_government_spending_every_spending/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/employer_stopped_indexing_salary_to_inflation",
+      "cluster_id": "cluster-14",
+      "engagement": 21,
+      "explanation": "fallback-local-score (entity-miss demotion)",
+      "final_score": 0.0,
+      "freshness": 79,
+      "fun_explanation": "heuristic-fallback",
+      "fun_score": 18.073616865711298,
+      "item_id": "R4",
+      "local_relevance": 0.2,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R4",
+            "native_rank": 2,
+            "source": "reddit",
+            "subquery_label": "primary"
+          }
+        ],
+        "range_from": "2026-10-02",
+        "range_to": "2026-11-01",
+        "rerank_provenance": "fallback"
+      },
+      "native_ranks": {
+        "primary:reddit": 2
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.002304147465437788,
+      "snippet": "Certainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reason. No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation. Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, increases, reviews etc is up to the employment agree",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Employer stopped indexing salary to inflation\nCertainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reason. No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation. Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, increases, reviews etc is up to the employment agree",
+          "container": "LegalAdviceNZ",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 35,
+            "score": 0
+          },
+          "engagement_score": 21,
+          "freshness": 79,
+          "item_id": "R4",
+          "local_rank_score": 0.34850000000000003,
+          "local_relevance": 0.2,
+          "metadata": {
+            "comment_insights": [
+              "Certainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reaso...",
+              "No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation.",
+              "Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, in...",
+              "Yeah, ouch but less ouch than becoming unemployed because the business goes under if it genuinely can't afford it.",
+              "Employment New Zealand specifically states that employers are not legally required to provide annual pay rises unless an employment agreement or workp...",
+              "They are a bit stuck then. They should have ensured their was a clause in there about salary adjustment given the length of contract.",
+              "I’m sorry what? They have a fixed term that spans a number of years?"
+            ],
+            "top_comments": [
+              {
+                "author": "Elm69Jay",
+                "date": "2026-10-22",
+                "excerpt": "Certainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reason.",
+                "score": 30,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxi30pm6px/"
+              },
+              {
+                "author": "lakeland_nz",
+                "date": "2026-10-22",
+                "excerpt": "No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation.",
+                "score": 18,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxjxuebr7n/"
+              },
+              {
+                "author": "inphinitfx",
+                "date": "2026-10-22",
+                "excerpt": "Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, increases, reviews etc is up to the employment agree",
+                "score": 11,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhy2ygqgtqc/"
+              },
+              {
+                "author": "Elm69Jay",
+                "date": "2026-10-22",
+                "excerpt": "Yeah, ouch but less ouch than becoming unemployed because the business goes under if it genuinely can't afford it.",
+                "score": 7,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxpahg65c4/"
+              },
+              {
+                "author": "Unfair_Explanation53",
+                "date": "2026-10-22",
+                "excerpt": "Employment New Zealand specifically states that employers are not legally required to provide annual pay rises unless an employment agreement or workplace policy requires them. However, NZ employment ",
+                "score": 4,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhzo1nkp1mo/"
+              },
+              {
+                "author": "Shot-Barnacle-4745",
+                "date": "2026-10-22",
+                "excerpt": "They are a bit stuck then. They should have ensured their was a clause in there about salary adjustment given the length of contract.",
+                "score": 3,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxz0l4u6io/"
+              },
+              {
+                "author": "KanukaDouble",
+                "date": "2026-10-22",
+                "excerpt": "I’m sorry what? They have a fixed term that spans a number of years? The salary freeze is the employers prerogative. A fixed term that spans a few years is almost certainly an employer dodging their e",
+                "score": 2,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhyewasgf40/"
+              },
+              {
+                "author": "BubblyOutside1096",
+                "date": "2026-10-22",
+                "excerpt": "This link was helpful https://sprintlaw.co.nz/articles/when-workplace-custom-and-practice-becomes-an-implied-contract-term-in-nz/",
+                "score": 2,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19ri00uirru6c/"
+              },
+              {
+                "author": "BubblyOutside1096",
+                "date": "2026-10-22",
+                "excerpt": "All of the above. Purpose of the question is to find out where to get started. ‘Custom and Practice’ is it. https://sprintlaw.co.nz/articles/when-workplace-custom-and-practice-becomes-an-implied-contr",
+                "score": 2,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhzzrmc779d/"
+              },
+              {
+                "author": "BubblyOutside1096",
+                "date": "2026-10-22",
+                "excerpt": "Thanks so much. There’s enough information now for my friend to start with their own inquiries. Can’t say where it will lead but until now they didn’t have a place to start. I feel I can’t share more ",
+                "score": 2,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19ri14asodev8/"
+              },
+              {
+                "author": "LegalAdviceNZ-ModTeam",
+                "date": "2026-10-22",
+                "excerpt": "Removed for breach of Rule 1: Stay on-topic Comments must: be based in NZ law be relevant to the question being asked be appropriately detailed not just repeat advice already given in other comments a",
+                "score": 1,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxndbb55z9/"
+              },
+              {
+                "author": "Shot-Barnacle-4745",
+                "date": "2026-10-22",
+                "excerpt": "How long is the fixed term for?",
+                "score": 1,
+                "url": "https://reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/comment/19rhxkjd1l5kw/"
+              }
+            ]
+          },
+          "published_at": "2026-10-22",
+          "relevance_hint": 0.19,
+          "snippet": "Certainly not, even if it was written into the contract it would be unlikely/idiotic to not have a clause where it may not happen for a specific reason. No. The employer is required to follow the terms of the contract. This is why commercial leases usually have an explicit clause about inflation. Provided the salary remains at least equal to the legal minimum wage, just about anything else about how salary in terms of amounts, pay frequency, increases, reviews etc is up to the employment agree",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Employer stopped indexing salary to inflation",
+          "url": "https://www.reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/employer_stopped_indexing_salary_to_inflation/",
+          "why_relevant": "Reddit search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "primary"
+      ],
+      "title": "Employer stopped indexing salary to inflation",
+      "url": "https://www.reddit.com/r/LegalAdviceNZ/comments/1xcrz8c/employer_stopped_indexing_salary_to_inflation/"
+    }
+  ],
+  "source_status": {
+    "github": {
+      "at": "2026-11-02T03:40:11.005803Z",
+      "attempted": true,
+      "items_returned": 12,
+      "source": "github",
+      "state": "ok"
+    },
+    "grounding": {
+      "at": "2026-11-02T03:39:26.703163Z",
+      "attempted": false,
+      "detail": "Source was requested but is not configured for this run.",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "grounding",
+      "state": "skipped-unconfigured"
+    },
+    "hackernews": {
+      "at": "2026-11-02T03:40:10.989940Z",
+      "attempted": true,
+      "items_returned": 8,
+      "source": "hackernews",
+      "state": "ok"
+    },
+    "polymarket": {
+      "at": "2026-11-02T03:40:10.990033Z",
+      "attempted": true,
+      "items_returned": 0,
+      "source": "polymarket",
+      "state": "no-results"
+    },
+    "reddit": {
+      "at": "2026-11-02T03:40:11.007489Z",
+      "attempted": true,
+      "items_returned": 3,
+      "source": "reddit",
+      "state": "ok"
+    },
+    "x": {
+      "at": "2026-11-02T03:40:11.006270Z",
+      "attempted": false,
+      "detail": "No X backend is available (not configured).",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "x",
+      "state": "skipped-unconfigured"
+    },
+    "youtube": {
+      "at": "2026-11-02T03:40:11.007570Z",
+      "attempted": true,
+      "detail": "yt-dlp search failed: ERROR: [youtube] VVe41vBM4OY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "youtube",
+      "state": "rate-limited"
+    }
+  },
+  "topic": "hold or cut inflation employment",
+  "warnings": [
+    "Some sources failed: grounding, x, youtube"
+  ]
+}

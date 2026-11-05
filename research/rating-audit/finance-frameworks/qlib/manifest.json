@@ -1,0 +1,79 @@
+[
+  {
+    "file": "LICENSE",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/LICENSE",
+    "bytes": 1141,
+    "status": "ok",
+    "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+  },
+  {
+    "file": "README.md",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/README.md",
+    "bytes": 44277,
+    "status": "ok",
+    "sha256": "e9f7cc8eeb60e3fe3784ec496e350ecb584157c3240cda0651c20acb26fd9037"
+  },
+  {
+    "file": "setup.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/setup.py",
+    "bytes": 509,
+    "status": "ok",
+    "sha256": "d4c91c0c581513eb23832e0491a3fd78be635bfa94bd690f4d47ed9b5eafc1b2"
+  },
+  {
+    "file": "qlib/contrib/evaluate.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/evaluate.py",
+    "bytes": 14842,
+    "status": "ok",
+    "sha256": "f4440ebaab095d7f239f5ea53fc8d9f686a304262a10223afb07d93b9d1da636"
+  },
+  {
+    "file": "qlib/contrib/strategy/signal_strategy.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/strategy/signal_strategy.py",
+    "bytes": 22719,
+    "status": "ok",
+    "sha256": "7ac8dbbbef2e0286131545ccb3fe60deb0a420748dd7477e18b1ab61cf78c1ca"
+  },
+  {
+    "file": "qlib/backtest/exchange.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/backtest/exchange.py",
+    "bytes": 44235,
+    "status": "ok",
+    "sha256": "4affc13ab45af464cfb5b55663b80b2fc3dadb4769045d34d0fd218f760d7e08"
+  },
+  {
+    "file": "qlib/contrib/data/handler.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/data/handler.py",
+    "bytes": 5092,
+    "status": "ok",
+    "sha256": "b621481c6009c39066c67c71390fd2bea635f56daf9f2c4e38817eff268e3232"
+  },
+  {
+    "file": "qlib/model/riskmodel/shrink.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/model/riskmodel/shrink.py",
+    "bytes": 10417,
+    "status": "ok",
+    "sha256": "353296322169d0edaabecb4c062f8294b520c48910d649dc884db0d6bcc65940"
+  },
+  {
+    "file": "pyproject.toml",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/pyproject.toml",
+    "bytes": 3861,
+    "status": "ok",
+    "sha256": "c47849f143278fef2c114513ca123c6100f007947cdf051928e734985f35a4e9"
+  },
+  {
+    "file": "qlib/model/riskmodel/base.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/model/riskmodel/base.py",
+    "bytes": 5035,
+    "status": "ok",
+    "sha256": "e015c9183ba49288ccfdfab34572025c2e54987db9fe6dee88ebc7891ec51938"
+  },
+  {
+    "file": "qlib/contrib/data/loader.py",
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/contrib/data/loader.py",
+    "bytes": 16080,
+    "status": "ok",
+    "sha256": "814b7f7ab3d418ae3c87ce352220080b239eba2670eac9e38376b794be4075cb"
+  }
+]

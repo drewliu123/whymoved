@@ -1,0 +1,189 @@
+{
+  "as_of": "2026-10-31T17:25:57Z",
+  "status": "observed_calculations_complete_theme_profit_not_identifiable",
+  "calculations": [
+    {
+      "id": "K1",
+      "formula": "27448 * 0.21",
+      "inputs": {
+        "sales_musd": 27448,
+        "reported_share": 0.21,
+        "source_ids": [
+          "S2",
+          "S5"
+        ]
+      },
+      "result": 5764.08,
+      "unit": "USD million",
+      "interpretation": "披露百分比取整，结果应展示约5.8十亿美元；非AI敞口"
+    },
+    {
+      "id": "K_2026Q1",
+      "formula": "delta_profit / delta_revenue",
+      "inputs": {
+        "revenue": 3600,
+        "prior_revenue": 3010,
+        "profit": 922,
+        "prior_profit": 904,
+        "unit": "USD million",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      "result": {
+        "delta_revenue": 590,
+        "delta_profit": 18,
+        "incremental_margin_pct": 3.050847457627119,
+        "revenue_growth_pct": 19.60132890365449,
+        "profit_growth_pct": 1.9911504424778848,
+        "margin_pct": 25.61111111111111,
+        "prior_margin_pct": 30.033222591362126
+      },
+      "unit": "percent / USD million",
+      "interpretation": "全分部同比桥，非AI项目边际利润率。Q1销售增长20%含有机14、并购5、汇率1个百分点；Q2增长18%全有机，未经范围调整；未剔价格/产品组合，不能独立证明交付效率改善"
+    },
+    {
+      "id": "K_2026Q2",
+      "formula": "delta_profit / delta_revenue",
+      "inputs": {
+        "revenue": 3951,
+        "prior_revenue": 3350,
+        "profit": 1088,
+        "prior_profit": 987,
+        "unit": "USD million",
+        "source_ids": [
+          "S4",
+          "S5"
+        ]
+      },
+      "result": {
+        "delta_revenue": 601,
+        "delta_profit": 101,
+        "incremental_margin_pct": 16.80532445923461,
+        "revenue_growth_pct": 17.940298507462682,
+        "profit_growth_pct": 10.233029381965553,
+        "margin_pct": 27.537332320931412,
+        "prior_margin_pct": 29.46268656716418
+      },
+      "unit": "percent / USD million",
+      "interpretation": "全分部同比桥，非AI项目边际利润率。Q1销售增长20%含有机14、并购5、汇率1个百分点；Q2增长18%全有机，未经范围调整；未剔价格/产品组合，不能独立证明交付效率改善"
+    },
+    {
+      "id": "K4",
+      "formula": "(1088/3951 - 922/3600)*10000",
+      "inputs": {
+        "source_ids": [
+          "S3",
+          "S5"
+        ]
+      },
+      "result": 192.62212098203003,
+      "unit": "basis points",
+      "interpretation": "Q2环比，原表金额取整可能造成尾差"
+    },
+    {
+      "id": "K5",
+      "formula": "(1088/3951 - 987/3350)*10000",
+      "inputs": {
+        "source_ids": [
+          "S5"
+        ]
+      },
+      "result": -192.5354246232769,
+      "unit": "basis points",
+      "interpretation": "Q2同比"
+    },
+    {
+      "id": "K6",
+      "formula": "15.2 / 3.951",
+      "inputs": {
+        "backlog_busd": 15.2,
+        "quarterly_sales_busd": 3.951,
+        "source_ids": [
+          "S5"
+        ]
+      },
+      "result": 3.847127309541888,
+      "unit": "times quarterly sales",
+      "interpretation": "存量/单季流量；不是交付年限，不是backlog转化率"
+    },
+    {
+      "id": "K7",
+      "formula": "15.2 / 13.2 - 1",
+      "inputs": {
+        "source_ids": [
+          "S3",
+          "S5"
+        ]
+      },
+      "result": 15.15151515151516,
+      "unit": "percent",
+      "interpretation": "2025Q4至2026Q2期末积压增长"
+    },
+    {
+      "id": "K8",
+      "formula": "OCF-capex=FCF",
+      "inputs": {
+        "source_ids": [
+          "S2",
+          "S4"
+        ]
+      },
+      "result": [
+        {
+          "period": "2025Q4",
+          "ocf": 1965,
+          "capex": 392,
+          "fcf": 1573
+        },
+        {
+          "period": "2025Q2",
+          "ocf": 918,
+          "capex": 202,
+          "fcf": 716
+        },
+        {
+          "period": "2026Q2",
+          "ocf": 1127,
+          "capex": 253,
+          "fcf": 874
+        }
+      ],
+      "unit": "USD million",
+      "interpretation": "公司定义FCF；未扣并购价款；非主题/分部自由现金"
+    },
+    {
+      "id": "K9",
+      "formula": "821 / 982 - 1",
+      "inputs": {
+        "source_ids": [
+          "S4"
+        ]
+      },
+      "result": -16.39511201629328,
+      "unit": "percent",
+      "interpretation": "Q2公司GAAP净利同比；非分部利润"
+    }
+  ],
+  "sensitivity": {
+    "status": "symbolic_only_no_subjective_scenarios",
+    "variables": {
+      "B": "同口径AI设备已签订单金额（未知）",
+      "d": "取消/削减比例（未知）",
+      "c": "本期可交付并满足收入确认的比例（未知）",
+      "m": "这些交付的增量贡献率，未扣F（未知）",
+      "F": "增量启动/固定成本及折旧（未知）",
+      "delta_NWC": "主题新增营运资本占用（未知）",
+      "K": "主题增量资本开支（未知）"
+    },
+    "formulas": [
+      "ΔR = B × (1-d) × c （同口径、同批订单；不将全部积压视为本期）",
+      "ΔOP = ΔR × m - F",
+      "盈亏阈值：B × (1-d) × c × m > F",
+      "当m>0且B(1-d)>0时：c > F / [B(1-d)m]",
+      "每提高1个百分点交付率：ΔOP变化 = 0.01 × B × (1-d) × m，须固定其他输入",
+      "ΔFCF ≈ ΔOP - 现金税 + 非现金折旧摊销 - ΔNWC - K，仍需利息及公司分摊桥"
+    ],
+    "not_permitted": "不得把分部25.6%/27.5%平均利润率直接当AI新增贡献率；不得以约5.8B总敞口乘AI增长率得主题利润。"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "analysis_version": 1,
+  "as_of": "2026-11-02T08:19:47.499646+00:00",
+  "budget": {
+    "max_followups": 1,
+    "max_queries": 16
+  },
+  "comparison": {
+    "period": "2026年11月常规交易时段，相对2026年10月30日收盘与Q3披露",
+    "scope": "META普通股及Polymarket月内触及合约",
+    "unit": "USD/share及每份合约美元"
+  },
+  "decision_needed": "理解十一月催化及触及合约，比较各档位成本与证据，判断是否存在可辩护优势。",
+  "entity": "Meta Platforms, Inc. (META)",
+  "historical": false,
+  "hypotheses": [
+    {
+      "discriminating_observation": "收入改善同时成本与现金压力缓和",
+      "explanation": "广告增长与AI变现改善支撑反弹",
+      "id": "H1"
+    },
+    {
+      "discriminating_observation": "收入强但资本支出和未来费用上升",
+      "explanation": "资本开支和未来成本压力压制估值",
+      "id": "H2"
+    },
+    {
+      "discriminating_observation": "宏观冲击引发科技板块共变，个股成本修订解释力有限",
+      "explanation": "宏观和选举利率冲击主导十一月路径",
+      "id": "H3"
+    }
+  ],
+  "prior_judgment": "首次研究，未预设方向；用户未指定具体合约，采用对应月内触及价格市场。",
+  "queries": [
+    {
+      "purpose": "核对身份、路径依赖、成本与深度",
+      "query": "Polymarket META November 2026 Gamma CLOB rules fee orderbook",
+      "question": "11月触及合约如何裁决、哪些档位成本合理？",
+      "source": "Gamma/CLOB/Pyth",
+      "test_ids": [
+        "T3"
+      ]
+    },
+    {
+      "purpose": "比较收入改善与成本压力，不把指引当共识",
+      "query": "META Q3 2026 earnings release Q4 outlook LSEG FactSet capex 2027 expenses October 2026",
+      "question": "财报公布前对Q3及Q4收入EPS有何可追溯预期，实际与成本怎样？",
+      "source": "Meta IR SEC Reuters及预期提供方",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "purpose": "建立时间窗口与宏观竞争解释",
+      "query": "November 2026 FOMC CPI employment midterm election META October 30 close",
+      "question": "11月确认的宏观选举日历与股票基准是什么？",
+      "source": "官方日历、交易所与可靠行情",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "purpose": "区分路径概率与方向叙事，核查反证",
+      "query": "META November 2026 implied volatility last 30 days earnings capex discussion",
+      "question": "是否有匹配一个月的波动参考和具体反证？",
+      "source": "期权资料、Last30Days社区线索",
+      "test_ids": [
+        "T1",
+        "T3"
+      ]
+    }
+  ],
+  "question": "Meta Platforms, Inc. (META)在2026年11月会有什么影响？对应Polymarket哪些档位值得研究？",
+  "research_design": {
+    "baseline": "2026年10月30日META收盘、最新Q3披露和11月2日Polymarket订单簿。",
+    "discrimination_tests": [
+      {
+        "by": "2026-11-30T21:00:00Z",
+        "id": "T1",
+        "observe": "Q3收入及Q4指引相对资本支出与2027费用信号",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "收入改善伴随成本及现金压力缓和，支持反弹"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "收入强但资本支出和未来费用上升，压制估值"
+          }
+        ],
+        "source": "Meta IR与可追溯的财报预期"
+      },
+      {
+        "by": "2026-11-30T21:00:00Z",
+        "id": "T2",
+        "observe": "11月已确认事件日历、公司预期修订与板块表现",
+        "outcomes": [
+          {
+            "hypothesis_id": "H2",
+            "prediction": "个股成本预期恶化造成特有压力"
+          },
+          {
+            "hypothesis_id": "H3",
+            "prediction": "利率或政策冲击造成广泛科技板块共变"
+          }
+        ],
+        "source": "官方宏观日历、公司公告及市场表现"
+      },
+      {
+        "by": "2026-11-02开盘前与2026-11-30到期",
+        "id": "T3",
+        "observe": "月内触及规则、各档YES/NO可成交成本及波动率参考",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "反弹触及档位在合理成本下容纳收入韧性情景"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "下探触及档位在合理成本下容纳现金流压力情景"
+          }
+        ],
+        "source": "Polymarket Gamma/CLOB、Pyth及可验证波动资料"
+      }
+    ],
+    "mechanism_chain": [
+      "广告收入与AI变现",
+      "资本开支和成本预期",
+      "现金流及估值修订",
+      "11月股价路径及触及结算"
+    ],
+    "method": "reference_class_scenarios",
+    "price_relevance": true,
+    "question_kind": "event_forecast",
+    "rationale": "主问题是11月触及事件及定价，不是长期股票估值。长期广告现金引擎与AI资本周期决定盈利和现金兑现，最新Q3及2027成本表态决定11月预期修订；宏观数据与选举通过折现和板块风险偏好传导。观察近期财报至11月末，核查常规时段规则与首次触及参考类，缺波动率时不编造精确胜率。"
+  },
+  "schema_version": 2,
+  "stop_condition": "官方事实、规则和盘口足以形成有边界的判断，或预算内关键概率输入仍不可得时明确缺失。",
+  "task": "十一月股价触及事件研究",
+  "type": "event_pricing"
+}

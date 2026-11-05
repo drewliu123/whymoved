@@ -1,0 +1,80 @@
+{
+  "as_of": "2026-10-31T17:25:57Z",
+  "datasets": [
+    {
+      "id": "ea_trend",
+      "title": "Electrical Americas已实现数据（同分部，未作恒定范围调整）",
+      "period_type": "quarter / quarter end",
+      "rows": [
+        {
+          "period": "2025Q4",
+          "sales_musd": 3506,
+          "segment_profit_musd": 1046,
+          "margin_pct": 29.8,
+          "rolling_12m_organic_orders_yoy_pct": 16.0,
+          "backlog_busd": 13.2,
+          "source_ids": [
+            "S2",
+            "S3"
+          ]
+        },
+        {
+          "period": "2026Q1",
+          "sales_musd": 3600,
+          "segment_profit_musd": 922,
+          "margin_pct": 25.6,
+          "rolling_12m_organic_orders_yoy_pct": 42.0,
+          "backlog_busd": 14.5,
+          "source_ids": [
+            "S3"
+          ]
+        },
+        {
+          "period": "2026Q2",
+          "sales_musd": 3951,
+          "segment_profit_musd": 1088,
+          "margin_pct": 27.5,
+          "rolling_12m_organic_orders_yoy_pct": 41.0,
+          "backlog_busd": 15.2,
+          "source_ids": [
+            "S4",
+            "S5"
+          ]
+        }
+      ],
+      "render_note": "各指标分图，金额单位明确；不使用双轴；不把分部增量当AI利润；Q1销售增20%含有机14/并购5/汇率1个百分点，Q2增18%全有机，未经恒定范围调整"
+    },
+    {
+      "id": "company_cash",
+      "title": "Eaton现金季度对照",
+      "rows": [
+        {
+          "period": "2025Q4",
+          "ocf_musd": 1965,
+          "capex_musd": 392,
+          "fcf_musd": 1573,
+          "source_id": "S2"
+        },
+        {
+          "period": "2025Q2",
+          "ocf_musd": 918,
+          "capex_musd": 202,
+          "fcf_musd": 716,
+          "source_id": "S4"
+        },
+        {
+          "period": "2026Q2",
+          "ocf_musd": 1127,
+          "capex_musd": 253,
+          "fcf_musd": 874,
+          "source_id": "S4"
+        }
+      ],
+      "render_note": "Q2同比单独比较，Q4只是季节性参照，不连成平滑增长线"
+    }
+  ],
+  "excluded_from_trend": [
+    "Q1 Americas vs Q2 Electrical Sector数据中心增速，覆盖不同",
+    "Q2材料中2H26 >30%为展望，不画为已实现"
+  ]
+}

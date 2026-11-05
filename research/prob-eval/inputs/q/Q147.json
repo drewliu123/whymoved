@@ -1,0 +1,44 @@
+{
+ "qid": "Q147",
+ "question": "Will Vinicius Junior stay at Real Madrid?",
+ "rules": "This market will resolve to the next team Vinicius Junior officially joins by September 1, 2026, 11:59 PM ET.\n\nIf Vinicius Junior does not officially join a new team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Real Madrid\".\n\nIf Vinicius Junior joins a team that is not listed, this market will resolve to \"Other\".\n\nIf Vinicius Junior is released, retires, or is not under contract with any professional team by September 1, 2026, 11:59 PM ET, this market will resolve to \"Other\".\n\nAn official transfer announcement prior to the market's close date will immediately resolve this market to the corresponding option.\n\nThe primary resolution sources for this market will be official announcements from Real Madrid and/or the acquiring team. A consensus of credible media reporting may also be used to resolve the market.",
+ "as_of": "2026-07-25",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Real Madrid C. F.",
+   "published_at": "2023-10-31",
+   "excerpt": "Real Madrid C. F. and Vini Jr. agreed to extend the player's contract until June 30, 2027."
+  },
+  {
+   "id": "E2",
+   "publisher": "Diario AS",
+   "published_at": "2026-06-10",
+   "excerpt": "AS reported that Vinicius had decided to remain at Real Madrid for the next season even if he did not renew his contract. The report said he would otherwise run down his existing agreement, which expires on June 30, 2027, and that renewal negotiations had stalled."
+  },
+  {
+   "id": "E3",
+   "publisher": "Diario AS",
+   "published_at": "2026-07-11",
+   "excerpt": "AS reported that Real Madrid and Vinicius had arranged renewal discussions for the final days of July, before preseason began. Both the player and club officials had communicated their intention to reach an agreement extending his contract and keeping him at Madrid."
+  },
+  {
+   "id": "E4",
+   "publisher": "The Guardian",
+   "published_at": "2026-07-25",
+   "excerpt": "The Guardian reported that Arsenal's potential move for Vinicius was at a formative stage."
+  },
+  {
+   "id": "E5",
+   "publisher": "Cadena SER",
+   "published_at": "2026-07-25",
+   "excerpt": "Citing The Athletic, Cadena SER reported that Arsenal would pursue Vinicius if he did not renew with Real Madrid. The reproduced David Ornstein report described Arsenal's interest as early stage, approved internally at all levels, with no club-to-club talks yet. Cadena SER said Vinicius was expected back at Valdebebas the following Monday, when renewal discussions were expected to resume."
+  },
+  {
+   "id": "E6",
+   "publisher": "Arseblog News",
+   "published_at": "2026-07-25",
+   "excerpt": "Arseblog reported that The Athletic's David Ornstein had identified Arsenal's interest in Vinicius should he decide against extending his Madrid contract. It noted that he had 12 months left on his existing agreement and that a transfer would require a substantial commitment in both fee and salary."
+  }
+ ]
+}

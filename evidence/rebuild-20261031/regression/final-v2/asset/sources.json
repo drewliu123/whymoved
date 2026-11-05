@@ -1,0 +1,181 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-10-31T17:14:08Z",
+  "historical": false,
+  "mode": "development_regression_frozen_reuse",
+  "historical_policy": "No historical availability assertions. historical=false describes a dev replay, not a reconstructed historical run.",
+  "source_status": {
+    "regression_external_retrieval": {
+      "status": "not_run",
+      "reason": "开发回归样本（dev sample，非 heldout）。仅将原冻结材料转换为 schema 2 报告；保留原 as_of，无新增检索、事实、引语、计算或研究判断。claims 保留原 schema 1，本次结构校验及开发归档不等于 strict schema 2 claims 验证，也不提供严格历史可得性证明。"
+    },
+    "S2": {
+      "status": "not_run",
+      "original_status": null,
+      "reason": "Original sources.json records local reuse without explicit successful retrieval status."
+    },
+    "S1": {
+      "status": "not_run",
+      "original_status": null,
+      "reason": "Original sources.json records local reuse without explicit successful retrieval status."
+    },
+    "S3": {
+      "status": "not_run",
+      "original_status": null,
+      "reason": "Original sources.json records local reuse without explicit successful retrieval status."
+    }
+  },
+  "candidates": [
+    {
+      "id": "S2",
+      "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+      "publisher": "NVIDIA IR / Q4 historical quote service",
+      "tier": "T0",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-10-31T12:31:54Z",
+      "quote": "09/30 Last 228.38; 10/06 Last 239.24; 10/30 Last 204.64",
+      "locator": "inputs/historical.json",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/asset/sources.json",
+        "original_source_id": "S2",
+        "original_status": null,
+        "claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "original_source_record": {
+          "id": "S2",
+          "title": "NVIDIA IR历史行情原始响应（已归档）",
+          "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+          "published_at": "2026-10-30",
+          "quote": "09/30 Last 228.38; 10/06 Last 239.24; 10/30 Last 204.64",
+          "local_evidence": "inputs/historical.json"
+        },
+        "inline_source_record": {
+          "url": "https://investor.nvidia.com/stock-info/historical-price-lookup/default.aspx",
+          "publisher": "NVIDIA IR / Q4 historical quote service",
+          "tier": "T0",
+          "published_at": "2026-10-30",
+          "collected_at": "2026-10-31T12:31:54Z",
+          "local_evidence": "inputs/historical.json",
+          "note": "获取于本轮截点之前；本例复用旧归档，不是新检索。"
+        }
+      }
+    },
+    {
+      "id": "S1",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "publisher": "NVIDIA",
+      "tier": "T0",
+      "published_at": "2026-08-26",
+      "retrieved_at": "unknown",
+      "quote": "Revenue $96,221 million; Q1 $81,615 million; Q3 revenue $108.0 billion +/-2%; gross margin 74.0% +/-50bps.",
+      "locator": "inputs/newsroom.txt",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/asset/sources.json",
+        "original_source_id": "S1",
+        "original_status": null,
+        "claim_ids": [
+          "C3",
+          "C4",
+          "C6"
+        ],
+        "original_source_record": {
+          "id": "S1",
+          "title": "NVIDIA FY2027 Q2官方财报（已归档）",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "published_at": "2026-08-26",
+          "quote": "Revenue $96,221 million; Q1 $81,615 million; Q3 revenue $108.0 billion +/-2%; gross margin 74.0% +/-50bps.",
+          "local_evidence": "inputs/newsroom.txt"
+        },
+        "inline_source_record": {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "publisher": "NVIDIA",
+          "tier": "T0",
+          "published_at": "2026-08-26",
+          "local_evidence": "inputs/newsroom.txt"
+        }
+      }
+    },
+    {
+      "id": "S3",
+      "url": "https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html",
+      "publisher": "Reuters via AOL",
+      "tier": "T2",
+      "published_at": "2026-10-30T20:23:00Z",
+      "retrieved_at": "unknown",
+      "quote": "disappointing quarterly results from Intel and Amazon ... growing worries ... massive spending",
+      "locator": "inputs/media.txt",
+      "origin_id": null,
+      "origin_basis": "Unresolved in schema 1; publisher and URL are not proof of independent origin.",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "relevance": "context",
+        "priority": "background",
+        "reason": "Legacy evidence catalog only; no new strict semantic selection performed.",
+        "purpose": "Development regression source audit; schema 1 claim citations remain unchanged."
+      },
+      "provenance": {
+        "original_sources_path": "/Users/frankzhang/Desktop/投研助手/journal/four-type-validation-20261031/asset/sources.json",
+        "original_source_id": "S3",
+        "original_status": null,
+        "claim_ids": [
+          "C5"
+        ],
+        "original_source_record": {
+          "id": "S3",
+          "title": "Reuters 10月30日收市报道（已归档）",
+          "url": "https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html",
+          "published_at": "2026-10-30T20:23:00Z",
+          "date_kind": "更新时间；首次发布时间未确认",
+          "quote": "disappointing quarterly results from Intel and Amazon ... growing worries ... massive spending",
+          "local_evidence": "inputs/media.txt"
+        },
+        "inline_source_record": {
+          "url": "https://www.aol.co.uk/articles/nasdaq-futures-tumble-amazon-intel-084615000.html",
+          "publisher": "Reuters via AOL",
+          "tier": "T2",
+          "published_at": "2026-10-30T20:23:00Z",
+          "date_kind": "update_time; first_publication_unconfirmed",
+          "local_evidence": "inputs/media.txt"
+        }
+      }
+    }
+  ],
+  "original_source_audit": {
+    "mode": "reuse_frozen_evidence",
+    "new_external_fetches": 0,
+    "failed_or_missing": [
+      "完整月度行业/指数比较序列",
+      "全月事件覆盖",
+      "同一截点一致预期及估值"
+    ]
+  }
+}

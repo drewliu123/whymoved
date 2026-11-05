@@ -1,0 +1,43 @@
+[
+  {
+    "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+    "request_at": "2026-11-02T02:54:46.528571Z",
+    "method": "GET",
+    "name": "amazon",
+    "received_at": "2026-11-02T02:54:47.378883Z",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+    "request_at": "2026-11-02T02:54:46.528338Z",
+    "method": "GET",
+    "name": "alphabet",
+    "received_at": "2026-11-02T02:54:47.607356Z",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000188/q326earningsrelease.htm",
+    "request_at": "2026-11-02T02:54:46.527168Z",
+    "method": "GET",
+    "name": "intel",
+    "http_status": 200,
+    "final_url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000188/q326earningsrelease.htm",
+    "received_at": "2026-11-02T02:54:48.866568Z"
+  },
+  {
+    "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
+    "request_at": "2026-11-02T02:54:46.528844Z",
+    "method": "GET",
+    "name": "reuters-close",
+    "received_at": "2026-11-02T02:54:47.358498Z",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.investing.com/news/stock-market-news/alphabets-heavy-cloud-spending-drives-biggerthanexpected-cash-burn-4980612",
+    "request_at": "2026-11-02T02:54:46.529063Z",
+    "method": "GET",
+    "name": "reuters-alphabet",
+    "received_at": "2026-11-02T02:54:47.478064Z",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

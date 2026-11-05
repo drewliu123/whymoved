@@ -1,0 +1,2211 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T04:03:52.886569+00:00",
+  "historical": false,
+  "candidates": [
+    {
+      "id": "S2",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-04-29T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "3-1/2 to 3-3/4 percent",
+      "locator": "Policy decision paragraph",
+      "origin_id": "W02",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "鲍威尔4月基线；原文表示维持区间",
+        "priority": "decisive",
+        "reason": "鲍威尔4月基线；原文表示维持区间"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+        "quote": "3-1/2 to 3-3/4 percent",
+        "locator": "Policy decision paragraph",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-06-17T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+      "locator": "Policy decision paragraph",
+      "origin_id": "W03",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1逐次核对通胀偏高时实际利率行动",
+        "priority": "decisive",
+        "reason": "T1逐次核对通胀偏高时实际利率行动"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+        "quote": "maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+        "locator": "Policy decision paragraph",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-07-29T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+      "locator": "Policy decision paragraph",
+      "origin_id": "W04",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1逐次核对通胀偏高时实际利率行动",
+        "priority": "decisive",
+        "reason": "T1逐次核对通胀偏高时实际利率行动"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+        "quote": "maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+        "locator": "Policy decision paragraph",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-09-16T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent",
+      "locator": "Policy decision paragraph",
+      "origin_id": "W05",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1九月实际加息及力度",
+        "priority": "decisive",
+        "reason": "T1九月实际加息及力度"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+        "quote": "raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent",
+        "locator": "Policy decision paragraph",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-10-28T14:00:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent",
+      "locator": "Policy decision paragraph following economic assessment",
+      "origin_id": "W06",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T1十月实际维持利率；结合声明通胀表述",
+        "priority": "decisive",
+        "reason": "T1十月实际维持利率；结合声明通胀表述"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "quote": "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent",
+        "locator": "Policy decision paragraph following economic assessment",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-04-29",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities.",
+      "locator": "Domestic policy directive, Treasury rollover bullet",
+      "origin_id": "W07",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T2同口径核对4月与10月资产操作指令；全额续作而非国债到期不续作",
+        "priority": "decisive",
+        "reason": "T2同口径核对4月与10月资产操作指令；全额续作而非国债到期不续作"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+        "quote": "Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities.",
+        "locator": "Domestic policy directive, Treasury rollover bullet",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities.",
+      "locator": "Domestic policy directive, Treasury rollover bullet",
+      "origin_id": "W08",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T2同口径核对4月与10月资产操作指令；全额续作而非国债到期不续作",
+        "priority": "decisive",
+        "reason": "T2同口径核对4月与10月资产操作指令；全额续作而非国债到期不续作"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+        "quote": "Roll over at auction all principal payments from the Federal Reserve's holdings of Treasury securities.",
+        "locator": "Domestic policy directive, Treasury rollover bullet",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "S10",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "At this point, the balance sheet is solely within the four walls of the Balance Sheet Task Force.",
+      "locator": "PRELIMINARY transcript p.14, answer to Sang Eun Lee; continuation p.15",
+      "origin_id": "W10",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "T2区分研究建议与已执行缩表；补充沟通、AI及政治压力原话定位",
+        "priority": "decisive",
+        "reason": "T2区分研究建议与已执行缩表；补充沟通、AI及政治压力原话定位"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+        "quote": "At this point, the balance sheet is solely within the four walls of the Balance Sheet Task Force.",
+        "locator": "PRELIMINARY transcript p.14, answer to Sang Eun Lee; continuation p.15",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch downloaded original PDF, then macOS PDFKit via Swift extracted all 17 pages; direct Read rendering unavailable (pdftoppm missing)",
+      "local_original": "/Users/frankzhang/.claude/projects/-Users-frankzhang-Desktop-----/947d5298-67a2-4434-a9c9-089a9e625c9c/tool-results/webfetch-1793591440818-4jixz4.pdf",
+      "local_text": "/Users/frankzhang/.claude/projects/-Users-frankzhang-Desktop-----/947d5298-67a2-4434-a9c9-089a9e625c9c/tool-results/bm1zc1zbj.txt"
+    },
+    {
+      "id": "S1",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+      "canonical_url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "2026-05-22T16:15:00-04:00",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "took the oath of office as chairman and a member",
+      "locator": "First body paragraph; release header May 22, 2026, 4:15 p.m. EDT",
+      "origin_id": "W01",
+      "origin_basis": "Original institutional publication, not a syndicated copy",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核实5月22日就任及身份；任期与确认日期见原文",
+        "priority": "useful",
+        "reason": "核实5月22日就任及身份；任期与确认日期见原文"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+        "quote": "took the oath of office as chairman and a member",
+        "locator": "First body paragraph; release header May 22, 2026, 4:15 p.m. EDT",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page"
+    },
+    {
+      "id": "S24",
+      "url": "https://www.reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T03:50:24.305421Z",
+      "quote": "",
+      "locator": "Engine pooled item; title/body may combine title with multiple comment excerpts; no verified continuous quote",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "Relevant thread; original access blocked; retained as lead only"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super",
+        "engine_item_id": "R1",
+        "engine_rank": 1,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super",
+          "cluster_id": "cluster-1",
+          "engagement": 76,
+          "explanation": "fallback-local-score",
+          "final_score": 48.56612021857923,
+          "freshness": 82,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 33.67681544492215,
+          "item_id": "R1",
+          "local_relevance": 0.5,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R1",
+                "native_rank": 1,
+                "source": "reddit",
+                "subquery_label": "q1"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "q1:reddit": 1
+          },
+          "rerank_score": 41.0,
+          "rrf_score": 0.00546448087431694,
+          "snippet": "You must be new here Kevin Warsh* was appointed to serve as a puppet You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Did anyone notice Kevin Warsh used the term ‘super intelligence’ in the FOMC presser? Has the Fed clearly lost independence?\nYou must be new here Kevin Warsh* was appointed to serve as a puppet You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+              "container": "stocks",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 152,
+                "score": 846
+              },
+              "engagement_score": 76,
+              "freshness": 82,
+              "item_id": "R1",
+              "local_rank_score": 0.6060000000000001,
+              "local_relevance": 0.5,
+              "metadata": {
+                "comment_insights": [
+                  "Kevin Warsh* was appointed to serve as a puppet",
+                  "You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communi...",
+                  "the fed lost independence way before warsh, powell was already bending over backwards in the first term.",
+                  "Warsh hasn’t lost independence, he’s always been a Trump sycophant.",
+                  "As an fyi, the fed receives no money from taxes/congress—intentionally so.",
+                  "From the Congressional Research Service \"Given the Fed’s independent status, it is unclear which, if any, executive orders the board or the Fed banks...",
+                  "Language control gives 1984 vibes"
+                ],
+                "top_comments": [
+                  {
+                    "author": "purub123",
+                    "date": "2026-10-29",
+                    "excerpt": "You must be new here",
+                    "score": 600,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypcxdxqdh/"
+                  },
+                  {
+                    "author": "WheredoesithurtRA",
+                    "date": "2026-10-29",
+                    "excerpt": "Kevin Warsh* was appointed to serve as a puppet",
+                    "score": 372,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypwl8evup/"
+                  },
+                  {
+                    "author": "Same_Lack_1775",
+                    "date": "2026-10-29",
+                    "excerpt": "You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+                    "score": 144,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzzrr2my82/"
+                  },
+                  {
+                    "author": "Still_Glass_8272",
+                    "date": "2026-10-29",
+                    "excerpt": "the fed lost independence way before warsh, powell was already bending over backwards in the first term. the whole 'super intelligence' thing is just the new buzzword they have to use now to get their",
+                    "score": 121,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtz31hovni8/"
+                  },
+                  {
+                    "author": "KevinCubano",
+                    "date": "2026-10-29",
+                    "excerpt": "Warsh hasn’t lost independence, he’s always been a Trump sycophant.",
+                    "score": 116,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzscbehvpd/"
+                  },
+                  {
+                    "author": "Doth_Thou_Even",
+                    "date": "2026-10-29",
+                    "excerpt": "As an fyi, the fed receives no money from taxes/congress—intentionally so.",
+                    "score": 67,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzoektwvk4/"
+                  },
+                  {
+                    "author": "BeaverFly",
+                    "date": "2026-10-29",
+                    "excerpt": "From the Congressional Research Service \"Given the Fed’s independent status, it is unclear which, if any, executive orders the board or the Fed banks are required to comply with.\"",
+                    "score": 63,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru3h2cynpvp/"
+                  },
+                  {
+                    "author": "lycopeneLover",
+                    "date": "2026-10-29",
+                    "excerpt": "Language control gives 1984 vibes",
+                    "score": 59,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru32r0pson9/"
+                  },
+                  {
+                    "author": "raj6126",
+                    "date": "2026-10-29",
+                    "excerpt": "How do you not raise interest rates now inflation is running out of control.",
+                    "score": 40,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtz84hblgaq/"
+                  },
+                  {
+                    "author": "2-wheels",
+                    "date": "2026-10-29",
+                    "excerpt": "Yeah, but vote was 10-2 so this isn’t all on Warsh.",
+                    "score": 39,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru0qfmzgk3o/"
+                  },
+                  {
+                    "author": "jimbo831",
+                    "date": "2026-10-29",
+                    "excerpt": "Kevin Walsh was appointed to serve as a puppet",
+                    "score": 32,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtzffixwt6t/"
+                  },
+                  {
+                    "author": "CarpoLarpo",
+                    "date": "2026-10-29",
+                    "excerpt": "The corruption runs deeper than most of us know. Its been this way for a while. They're just showing their true colors now because we've fallen so far they can publicly get away with it now.",
+                    "score": 30,
+                    "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru2sfbygszm/"
+                  }
+                ]
+              },
+              "published_at": "2026-10-29",
+              "relevance_hint": 0.99,
+              "snippet": "You must be new here Kevin Warsh* was appointed to serve as a puppet You are reading too much into this one. Executive Order 14434 requires all Federal Agencies to use the term Super Intelligence in all official communications. Regardless of independence, the Federal R",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Did anyone notice Kevin Warsh used the term ‘super intelligence’ in the FOMC presser? Has the Fed clearly lost independence?",
+              "url": "https://www.reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super/",
+              "why_relevant": "Reddit search"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "q1"
+          ],
+          "title": "Did anyone notice Kevin Warsh used the term ‘super intelligence’ in the FOMC presser? Has the Fed clearly lost independence?",
+          "url": "https://www.reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super/"
+        }
+      },
+      "engagement": {
+        "num_comments": 152,
+        "score": 846
+      },
+      "author": "unknown",
+      "engine_rank": 1,
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "canonical_url": "https://www.reddit.com/r/stocks/comments/1xijjls/did_anyone_notice_kevin_warsh_used_the_term_super/"
+    },
+    {
+      "id": "S31",
+      "publisher": "Reddit r/stocks",
+      "platform": "reddit",
+      "author": "WheredoesithurtRA",
+      "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypwl8evup/",
+      "canonical_url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtypwl8evup/",
+      "origin_id": null,
+      "origin_basis": "Comment within engine-returned Reddit thread; original inaccessible; no independent origin established",
+      "tier": "T4",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T03:50:24.305421+00:00",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "quote": "Kevin Warsh* was appointed to serve as a puppet",
+      "locator": "Engine items_by_source.reddit[0].metadata.top_comments; comment permalink; original WebFetch blocked",
+      "engagement": {
+        "score": 372
+      },
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "engine_rank": 1,
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_rank": 1,
+        "parent_item_id": "R1",
+        "comment_excerpt_only": true
+      },
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "H2 political-capture narrative; cannot establish rate decision mechanism; original inaccessible, not selected evidence"
+      }
+    },
+    {
+      "id": "S32",
+      "publisher": "Reddit r/stocks",
+      "platform": "reddit",
+      "author": "BeaverFly",
+      "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru3h2cynpvp/",
+      "canonical_url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru3h2cynpvp/",
+      "origin_id": null,
+      "origin_basis": "Comment within engine-returned Reddit thread; original inaccessible; no independent origin established",
+      "tier": "T4",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T03:50:24.305421+00:00",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "quote": "From the Congressional Research Service \"Given the Fed’s independent status, it is unclear which, if any, executive orders the board or the Fed banks are required to comply with.\"",
+      "locator": "Engine items_by_source.reddit[0].metadata.top_comments; comment permalink; original WebFetch blocked",
+      "engagement": {
+        "score": 63
+      },
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "engine_rank": 1,
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_rank": 1,
+        "parent_item_id": "R1",
+        "comment_excerpt_only": true
+      },
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "Counterargument to inferring loss of independence from language; pursue CRS original; original inaccessible, not selected evidence"
+      }
+    },
+    {
+      "id": "S33",
+      "publisher": "Reddit r/stocks",
+      "platform": "reddit",
+      "author": "raj6126",
+      "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtz84hblgaq/",
+      "canonical_url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19rtz84hblgaq/",
+      "origin_id": null,
+      "origin_basis": "Comment within engine-returned Reddit thread; original inaccessible; no independent origin established",
+      "tier": "T4",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T03:50:24.305421+00:00",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "quote": "How do you not raise interest rates now inflation is running out of control.",
+      "locator": "Engine items_by_source.reddit[0].metadata.top_comments; comment permalink; original WebFetch blocked",
+      "engagement": {
+        "score": 40
+      },
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "engine_rank": 1,
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_rank": 1,
+        "parent_item_id": "R1",
+        "comment_excerpt_only": true
+      },
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "High-inflation action test proposed by reader; verify inflation and actual vote; original inaccessible, not selected evidence"
+      }
+    },
+    {
+      "id": "S34",
+      "publisher": "Reddit r/stocks",
+      "platform": "reddit",
+      "author": "2-wheels",
+      "url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru0qfmzgk3o/",
+      "canonical_url": "https://reddit.com/r/stocks/comments/1xijjls/comment/19ru0qfmzgk3o/",
+      "origin_id": null,
+      "origin_basis": "Comment within engine-returned Reddit thread; original inaccessible; no independent origin established",
+      "tier": "T4",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T03:50:24.305421+00:00",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "quote": "Yeah, but vote was 10-2 so this isn’t all on Warsh.",
+      "locator": "Engine items_by_source.reddit[0].metadata.top_comments; comment permalink; original WebFetch blocked",
+      "engagement": {
+        "score": 39
+      },
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "engine_rank": 1,
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_rank": 1,
+        "parent_item_id": "R1",
+        "comment_excerpt_only": true
+      },
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "Collective FOMC attribution counterargument; verify vote in official statement; original inaccessible, not selected evidence"
+      }
+    },
+    {
+      "id": "S25",
+      "url": "https://www.reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh/",
+      "publisher": "reddit",
+      "tier": "T4",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T03:50:24.305421Z",
+      "quote": "",
+      "locator": "Engine pooled item; title/body may combine title with multiple comment excerpts; no verified continuous quote",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "Relevant thread; original access blocked; retained as lead only"
+      },
+      "platform": "reddit",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh",
+        "engine_item_id": "R2",
+        "engine_rank": 2,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh",
+          "cluster_id": "cluster-2",
+          "engagement": 51,
+          "explanation": "fallback-local-score",
+          "final_score": 44.39408602150537,
+          "freshness": 78,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 19.67194535938615,
+          "item_id": "R2",
+          "local_relevance": 0.5,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "R2",
+                "native_rank": 2,
+                "source": "reddit",
+                "subquery_label": "q1"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "q1:reddit": 2
+          },
+          "rerank_score": 41.0,
+          "rrf_score": 0.005376344086021505,
+          "snippet": "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now. market doesn’t believe the hawkish talk either, look at how bonds are trading. they’re calling his bluff hard Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+          "source": "reddit",
+          "source_items": [
+            {
+              "body": "Contradictory Statements from Kevin Warsh\nThe Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now. market doesn’t believe the hawkish talk either, look at how bonds are trading. they’re calling his bluff hard Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+              "container": "investing",
+              "date_confidence": "high",
+              "engagement": {
+                "num_comments": 71,
+                "score": 54
+              },
+              "engagement_score": 51,
+              "freshness": 78,
+              "item_id": "R2",
+              "local_rank_score": 0.5710000000000001,
+              "local_relevance": 0.5,
+              "metadata": {
+                "comment_insights": [
+                  "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now.",
+                  "market doesn’t believe the hawkish talk either, look at how bonds are trading. they’re calling his bluff hard",
+                  "Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+                  "Of course it’s politically motivated - inflation has been over their limit for 4 years now",
+                  "they know the hour, as soon as Democratic party gets any traction then it is All Austerity All The Time.",
+                  "trump has been demanding powell for lower rate. why would it be any different with warsh?",
+                  "Not really the discussion in the market is about how hawkish they are, not if they are hawkish."
+                ],
+                "top_comments": [
+                  {
+                    "author": "RealMcGonzo",
+                    "date": "2026-10-28",
+                    "excerpt": "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now.",
+                    "score": 41,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsv4g0jrdr4/"
+                  },
+                  {
+                    "author": "fumbling_artisan",
+                    "date": "2026-10-28",
+                    "excerpt": "market doesn’t believe the hawkish talk either, look at how bonds are trading. they’re calling his bluff hard",
+                    "score": 18,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsr93zr3nmo/"
+                  },
+                  {
+                    "author": "Suitable-Option833",
+                    "date": "2026-10-28",
+                    "excerpt": "Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+                    "score": 16,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsquihy3ko0/"
+                  },
+                  {
+                    "author": "FewUnderstanding2214",
+                    "date": "2026-10-28",
+                    "excerpt": "Of course it’s politically motivated - inflation has been over their limit for 4 years now",
+                    "score": 14,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsqsxv8pyzn/"
+                  },
+                  {
+                    "author": "DrXaos",
+                    "date": "2026-10-28",
+                    "excerpt": "they know the hour, as soon as Democratic party gets any traction then it is All Austerity All The Time.",
+                    "score": 12,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsygppsimao/"
+                  },
+                  {
+                    "author": "Bush_Trimmer",
+                    "date": "2026-10-29",
+                    "excerpt": "trump has been demanding powell for lower rate. why would it be any different with warsh?",
+                    "score": 12,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt0kwrbwmld/"
+                  },
+                  {
+                    "author": "GAV17",
+                    "date": "2026-10-29",
+                    "excerpt": "Not really the discussion in the market is about how hawkish they are, not if they are hawkish. Everyone expected, as future showed, that they wouldn't increase rates today, but they will in December.",
+                    "score": 11,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt5o3hu23qb/"
+                  },
+                  {
+                    "author": "RIP_Soulja_Slim",
+                    "date": "2026-10-29",
+                    "excerpt": "My running theory is that Trump is so genuinely stupid he had no idea Warsh was a hawk. It kinda checks out, and Warsh played it well by not really discussing rates a lot in his rhetoric prior to bein",
+                    "score": 8,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rtui349q15u/"
+                  },
+                  {
+                    "author": "Packtex60",
+                    "date": "2026-10-29",
+                    "excerpt": "He said that a couple of indicators of inflation improved but they need to see more to know what to do next. They aren’t going to get to 2% inflation without causing a recession. The 2% target was and",
+                    "score": 7,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt40g6e5bvp/"
+                  },
+                  {
+                    "author": "enfuego138",
+                    "date": "2026-10-28",
+                    "excerpt": "Warsh is a hawk. Pay attention.",
+                    "score": 5,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsxinq0402p/"
+                  },
+                  {
+                    "author": "RIP_Soulja_Slim",
+                    "date": "2026-10-29",
+                    "excerpt": "It’s really easy to differentiate the people that pay attention to economics and the Fed vs those who only know about politics by if they are aware Warsh is a hawk or not lol. The guy is in the runnin",
+                    "score": 4,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rtuqn4608ki/"
+                  },
+                  {
+                    "author": "kiwimancy",
+                    "date": "2026-10-28",
+                    "excerpt": "The main reason is that they tend to skip every other meeting if it's not urgent to hike or lower rates (lowering always seems to be more urgent than raising...)",
+                    "score": 4,
+                    "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsxjxqt9gmd/"
+                  }
+                ]
+              },
+              "published_at": "2026-10-28",
+              "relevance_hint": 1.0,
+              "snippet": "The Fed is totally committed to bringing inflation down to their 2% target. Soon, they will spring into action! Any decade now. market doesn’t believe the hawkish talk either, look at how bonds are trading. they’re calling his bluff hard Trump stated he wants hyperinflation. And he hired warsh, who is in the Epstein files, to ensure it happens.",
+              "source": "reddit",
+              "source_quality": 0.6,
+              "title": "Contradictory Statements from Kevin Warsh",
+              "url": "https://www.reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh/",
+              "why_relevant": "Reddit search"
+            }
+          ],
+          "source_quality": 0.6,
+          "sources": [
+            "reddit"
+          ],
+          "subquery_labels": [
+            "q1"
+          ],
+          "title": "Contradictory Statements from Kevin Warsh",
+          "url": "https://www.reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh/"
+        }
+      },
+      "engagement": {
+        "num_comments": 71,
+        "score": 54
+      },
+      "author": "unknown",
+      "engine_rank": 2,
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "canonical_url": "https://www.reddit.com/r/investing/comments/1xhzrsh/contradictory_statements_from_kevin_warsh/"
+    },
+    {
+      "id": "S35",
+      "publisher": "Reddit r/investing",
+      "platform": "reddit",
+      "author": "fumbling_artisan",
+      "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsr93zr3nmo/",
+      "canonical_url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rsr93zr3nmo/",
+      "origin_id": null,
+      "origin_basis": "Comment within engine-returned Reddit thread; original inaccessible; no independent origin established",
+      "tier": "T4",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T03:50:24.305421+00:00",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "quote": "market doesn’t believe the hawkish talk either, look at how bonds are trading. they’re calling his bluff hard",
+      "locator": "Engine items_by_source.reddit[1].metadata.top_comments; comment permalink; original WebFetch blocked",
+      "engagement": {
+        "score": 18
+      },
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "engine_rank": 2,
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_rank": 2,
+        "parent_item_id": "R2",
+        "comment_excerpt_only": true
+      },
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "Financial-conditions claim; requires matched yield curve/event window, not sentiment as pricing; original inaccessible, not selected evidence"
+      }
+    },
+    {
+      "id": "S36",
+      "publisher": "Reddit r/investing",
+      "platform": "reddit",
+      "author": "GAV17",
+      "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt5o3hu23qb/",
+      "canonical_url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt5o3hu23qb/",
+      "origin_id": null,
+      "origin_basis": "Comment within engine-returned Reddit thread; original inaccessible; no independent origin established",
+      "tier": "T4",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T03:50:24.305421+00:00",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "quote": "Not really the discussion in the market is about how hawkish they are, not if they are hawkish. Everyone expected, as future showed, that they wouldn't increase rates today, but they will in December.",
+      "locator": "Engine items_by_source.reddit[1].metadata.top_comments; comment permalink; original WebFetch blocked",
+      "engagement": {
+        "score": 11
+      },
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "engine_rank": 2,
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_rank": 2,
+        "parent_item_id": "R2",
+        "comment_excerpt_only": true
+      },
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "H1 counterargument: dispute degree of hawkishness, not whether hawkish; futures claim needs original pricing; original inaccessible, not selected evidence"
+      }
+    },
+    {
+      "id": "S37",
+      "publisher": "Reddit r/investing",
+      "platform": "reddit",
+      "author": "Packtex60",
+      "url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt40g6e5bvp/",
+      "canonical_url": "https://reddit.com/r/investing/comments/1xhzrsh/comment/19rt40g6e5bvp/",
+      "origin_id": null,
+      "origin_basis": "Comment within engine-returned Reddit thread; original inaccessible; no independent origin established",
+      "tier": "T4",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T03:50:24.305421+00:00",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "quote": "He said that a couple of indicators of inflation improved but they need to see more to know what to do next. They aren’t going to get to 2% inflation without causing a recession. The 2% target was and",
+      "locator": "Engine items_by_source.reddit[1].metadata.top_comments; comment permalink; original WebFetch blocked",
+      "engagement": {
+        "score": 7
+      },
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "engine_rank": 2,
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_rank": 2,
+        "parent_item_id": "R2",
+        "comment_excerpt_only": true
+      },
+      "selection": {
+        "selected": false,
+        "relevance": "direct",
+        "purpose": "lead",
+        "priority": "useful",
+        "reason": "Conditional policy interpretation; distinguish data dependence from political motive; original inaccessible, not selected evidence"
+      }
+    },
+    {
+      "id": "S9",
+      "url": "https://www.hoover.org/plus/research/inflation-choice-kevin-warsh-fixing-federal-reserve",
+      "canonical_url": "https://www.hoover.org/plus/research/inflation-choice-kevin-warsh-fixing-federal-reserve",
+      "publisher": "Hoover Institution, Stanford University",
+      "tier": "T3",
+      "published_at": "2025-07-08",
+      "retrieved_at": "2026-11-02T03:53:26.271162+00:00",
+      "date_nature": "publication; date-only where no official release time was obtained",
+      "updated_at": null,
+      "quote": "If we would run the printing press a little quieter, we could then have lower interest rates",
+      "locator": "Kevin Warsh response to Peter Robinson question about shrinking the $7 trillion balance sheet; interview recorded May 28, 2025",
+      "origin_id": "W09",
+      "origin_basis": "Hoover-hosted original interview with Kevin Warsh; recorded May 28, 2025",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "上任前缩表与较低利率的条件式主张",
+        "priority": "useful",
+        "reason": "上任前缩表与较低利率的条件式主张"
+      },
+      "availability": {
+        "available_at": "2026-11-02T03:53:26.271162+00:00",
+        "evidence_url": "https://www.hoover.org/plus/research/inflation-choice-kevin-warsh-fixing-federal-reserve",
+        "quote": "If we would run the printing press a little quieter, we could then have lower interest rates",
+        "locator": "Kevin Warsh response to Peter Robinson question about shrinking the $7 trillion balance sheet; interview recorded May 28, 2025",
+        "evidence_type": "current direct retrieval before end-of-day cutoff; not a historical archive"
+      },
+      "access_method": "WebFetch original page",
+      "attribution": {
+        "speaker": "Kevin Warsh",
+        "original": true,
+        "statement_kind": "attributed_statement"
+      }
+    },
+    {
+      "id": "S11",
+      "url": "https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm",
+      "canonical_url": "https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "Warsh previously served as a member of the Board of Governors from 2006 until 2011.",
+      "locator": "Official biography, career paragraphs; Morgan Stanley 1995–2002; White House/NEC 2002–2006; Stanford AB1992, Harvard JD1995",
+      "origin_id": "https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S12",
+      "url": "https://www.federalreserve.gov/aboutthefed/structure-federal-open-market-committee.htm",
+      "canonical_url": "https://www.federalreserve.gov/aboutthefed/structure-federal-open-market-committee.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "12 voting members",
+      "locator": "FOMC composition: seven governors, New York Fed president, four rotating Reserve Bank presidents",
+      "origin_id": "https://www.federalreserve.gov/aboutthefed/structure-federal-open-market-committee.htm",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S13",
+      "url": "https://www.federalreserve.gov/monetarypolicy/bst_openmarketops.htm",
+      "canonical_url": "https://www.federalreserve.gov/monetarypolicy/bst_openmarketops.htm",
+      "publisher": "Federal Reserve Board",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "put downward pressure on longer-term interest rates",
+      "locator": "Open market operations, permanent purchases paragraph; Monetary Policy Normalization, reduced reinvestment paragraph",
+      "origin_id": "https://www.federalreserve.gov/monetarypolicy/bst_openmarketops.htm",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S14",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "the recommendations they come to, will be fed into the FOMC probably early in the first quarter, but don't hold me exactly to that timing.",
+      "locator": "p.14, Sang Eun Lee Q&A; PRELIMINARY transcript",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S15",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "I think it is unlikely to have any material effect on this policy conjuncture",
+      "locator": "pp.14–15, same answer; PRELIMINARY transcript",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S16",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "I don't believe in forward guidance absent exigent circumstances, absent a crisis.",
+      "locator": "p.13, answer preceding Sang Eun Lee question; PRELIMINARY transcript",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S17",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "I don't submit a dot. I don't plan on submitting a dot, but the 18 of them do.",
+      "locator": "p.6, Steve Liesman Q&A (answer continues p.7); PRELIMINARY transcript",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S18",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "My judgement is we have seen an improvement in productivity; we can’t measure it precisely.",
+      "locator": "p.16, Howard Schneider Q&A; PRELIMINARY transcript",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S19",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "I'm not going to be responding to quotes from public officials.",
+      "locator": "p.9, James Rosen Q&A; PRELIMINARY transcript",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S20",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "So, politics played no role in the decision.",
+      "locator": "p.13, Elizabeth Schulze Q&A; PRELIMINARY transcript",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S21",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "Interest rates get in the cracks, interest rates affect directly or indirectly, almost everything.",
+      "locator": "p.12, Claire Jones Q&A; PRELIMINARY transcript",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S22",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "But inflation remains elevated.",
+      "locator": "PRELIMINARY transcript opening pp.1–2; discussion emphasizes price stability",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S23",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "On November 16th, the Productivity and Jobs Task Force will be doing a field hearing",
+      "locator": "PRELIMINARY transcript pp.8–9; announced future event, not completed",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S38",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "economic growth is higher, but that doesn’t tell me that economic growth is somehow causing inflation",
+      "locator": "PRELIMINARY transcript p.16, Howard Schneider Q&A; pp.16 lines about tighter financial conditions",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S39",
+      "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "canonical_url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+      "publisher": "Federal Reserve Board / Kevin Warsh",
+      "tier": "T0",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T04:03:52.886569+00:00",
+      "quote": "in 2027, one meeting will focus exclusively on broad monetary policy strategy",
+      "locator": "PRELIMINARY transcript p.3, opening statement; neither rate vote nor policy statement anticipated; starting next fall; 2028 described as expectation",
+      "origin_id": "W10",
+      "origin_basis": "Opened original institutional document; same document fragments share origin",
+      "supports": [
+        "fact",
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "relevance": "direct",
+        "purpose": "核对人物履历、权限及政策机制",
+        "priority": "useful",
+        "reason": "原始资料直接支持本轮重要判断"
+      }
+    },
+    {
+      "id": "S26",
+      "url": "https://pudding.cool/2026/10/kevin-bacon/",
+      "publisher": "xnx",
+      "tier": "T4",
+      "published_at": "2026-10-20",
+      "retrieved_at": "2026-11-02T03:50:24.305421Z",
+      "quote": "",
+      "locator": "Engine pooled item; title/body may combine title with multiple comment excerpts; no verified continuous quote",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "irrelevant",
+        "purpose": "exclude",
+        "priority": "background",
+        "reason": "Object mismatch: Kevin Bacon or Kevin Kelly, not Kevin Warsh"
+      },
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://pudding.cool/2026/10/kevin-bacon",
+        "engine_item_id": "50169499",
+        "engine_rank": 3,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://pudding.cool/2026/10/kevin-bacon",
+          "cluster_id": "cluster-3",
+          "engagement": 86,
+          "explanation": "fallback-local-score",
+          "final_score": 33.066120218579236,
+          "freshness": 58,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 0.0,
+          "item_id": "50169499",
+          "local_relevance": 0.1,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50169499",
+                "native_rank": 1,
+                "source": "hackernews",
+                "subquery_label": "q1"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "q1:hackernews": 1
+          },
+          "rerank_score": 15.0,
+          "rrf_score": 0.00546448087431694,
+          "snippet": "Sure, but what's the Basis Set movie? If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now. (The one from Pulp Fiction, not the one from Ted.) But what if you could have TWO actors in a movie? Would Sam Jackson (again, the o... Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list.... I hope Kevin bacon takes this as a personal attack and manages...",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "xnx",
+              "body": "The Real Kevin Bacon\nSure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now.  (The one from Pulp Fiction, not the one from Ted.)\nBut what if you could have TWO actors in a movie?  Would Sam Jackson (again, the o... Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list.... I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn’t worked with yet.",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 96,
+                "points": 378
+              },
+              "engagement_score": 86,
+              "freshness": 58,
+              "item_id": "50169499",
+              "local_rank_score": 0.296,
+              "local_relevance": 0.1,
+              "metadata": {
+                "comment_insights": [
+                  "Sure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now",
+                  "Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about)",
+                  "I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn’t worked with yet.",
+                  "Somehow it's a fun fact that you can reach any other actor in four moves, but a much less fun fact that you can probably-reach any other actor in 2.6 moves",
+                  "Chloë Grace Moretz was huge as a child star but she is basically retired now, the likelihood that she continues to appear in any major movies is very slim"
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50169499",
+                "top_comments": [
+                  {
+                    "author": "MattCruikshank",
+                    "date": "",
+                    "excerpt": "Sure, but what's the Basis Set movie?  If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now.  (The one from Pulp Fiction, not the one from Ted.)\nBut what if you could have TWO actors in a movie?  Would Sam Jackson (again, the o...",
+                    "url": "https://news.ycombinator.com/item?id=50212592"
+                  },
+                  {
+                    "author": "ameliaquining",
+                    "date": "",
+                    "excerpt": "Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list....",
+                    "url": "https://news.ycombinator.com/item?id=50213440"
+                  },
+                  {
+                    "author": "dec0dedab0de",
+                    "date": "",
+                    "excerpt": "I hope Kevin bacon takes this as a personal attack and manages to get small roles in every upcoming film that has actors he hasn’t worked with yet.",
+                    "url": "https://news.ycombinator.com/item?id=50212480"
+                  },
+                  {
+                    "author": "card_zero",
+                    "date": "",
+                    "excerpt": "Somehow it's a fun fact that you can reach any other actor in four moves, but a much less fun fact that you can probably-reach any other actor in 2.6 moves.  \"Connectedness\", huh. Though it was interesting to see that Frank Welker used to be in fourth place. Never heard of him. Or I've only heard of...",
+                    "url": "https://news.ycombinator.com/item?id=50212120"
+                  },
+                  {
+                    "author": "reticulates",
+                    "date": "",
+                    "excerpt": "Chloë Grace Moretz was huge as a child star but she is basically retired now, the likelihood that she continues to appear in any major movies is very slim. Her career's early start was beneficial to this ranking but is not representative. The likelihood that she ever overtakes Samuel L Jackson is......",
+                    "url": "https://news.ycombinator.com/item?id=50217868"
+                  }
+                ]
+              },
+              "published_at": "2026-10-20",
+              "relevance_hint": 0.81,
+              "snippet": "Sure, but what's the Basis Set movie? If you only had one actor in a movie, and you wanted to have the most connectedness in it, you'd choose Sam Jackson right now. (The one from Pulp Fiction, not the one from Ted.) But what if you could have TWO actors in a movie? Would Sam Jackson (again, the o... Prior art here is the much older Oracle of Bacon project (which I'm hoping the author didn't know about). It uses the full IMDb data set (not just the top 10,000 films) and gets different results, with Eric Roberts in first place and Samuel L. Jackson in fifth: https://oracleofbacon.org/center_list.... I hope Kevin bacon takes this as a personal attack and manages...",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "The Real Kevin Bacon",
+              "url": "https://pudding.cool/2026/10/kevin-bacon/",
+              "why_relevant": "HN story about The Real Kevin Bacon"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "q1"
+          ],
+          "title": "The Real Kevin Bacon",
+          "url": "https://pudding.cool/2026/10/kevin-bacon/"
+        }
+      },
+      "author": "xnx",
+      "engagement": {
+        "comments": 96,
+        "points": 378
+      },
+      "engine_rank": 3,
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "canonical_url": "https://pudding.cool/2026/10/kevin-bacon/"
+    },
+    {
+      "id": "S27",
+      "url": "https://taylor.town/kk-ai-2026",
+      "publisher": "surprisetalk",
+      "tier": "T4",
+      "published_at": "2026-10-12",
+      "retrieved_at": "2026-11-02T03:50:24.305421Z",
+      "quote": "",
+      "locator": "Engine pooled item; title/body may combine title with multiple comment excerpts; no verified continuous quote",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "irrelevant",
+        "purpose": "exclude",
+        "priority": "background",
+        "reason": "Object mismatch: Kevin Bacon or Kevin Kelly, not Kevin Warsh"
+      },
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://taylor.town/kk-ai-2026",
+        "engine_item_id": "50057668",
+        "engine_rank": 4,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://taylor.town/kk-ai-2026",
+          "cluster_id": "cluster-4",
+          "engagement": 80,
+          "explanation": "fallback-local-score",
+          "final_score": 29.922751322751324,
+          "freshness": 36,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 0.0,
+          "item_id": "50057668",
+          "local_relevance": 0.1,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50057668",
+                "native_rank": 3,
+                "source": "hackernews",
+                "subquery_label": "q1"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "q1:hackernews": 3
+          },
+          "rerank_score": 15.0,
+          "rrf_score": 0.005291005291005291,
+          "snippet": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still... Google’s main product was and continues to be ads In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "surprisetalk",
+              "body": "Kevin Kelly's 2016 AI Predictions, 10 Years Later\nBy my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still... Google’s main product was and continues to be ads In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 88,
+                "points": 220
+              },
+              "engagement_score": 80,
+              "freshness": 36,
+              "item_id": "50057668",
+              "local_rank_score": 0.23500000000000001,
+              "local_relevance": 0.1,
+              "metadata": {
+                "comment_insights": [
+                  "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous",
+                  "Google’s main product was and continues to be ads",
+                  "In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia",
+                  "I would say that KK's \"The bulk of AI will be special purpose software brains\" has turned out closer to the truth than \"The Bitter Lesson\" has",
+                  "> Amid all this activity, a picture of our AI future is coming into view, and it is not the HAL 9000—a discrete machine animated by a charismatic (yet potentially homicidal) humanlike consciousness—or"
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50057668",
+                "top_comments": [
+                  {
+                    "author": "stephen_cagle",
+                    "date": "",
+                    "excerpt": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still...",
+                    "url": "https://news.ycombinator.com/item?id=50059811"
+                  },
+                  {
+                    "author": "cousinbryce",
+                    "date": "",
+                    "excerpt": "Google’s main product was and continues to be ads",
+                    "url": "https://news.ycombinator.com/item?id=50059825"
+                  },
+                  {
+                    "author": "at1as",
+                    "date": "",
+                    "excerpt": "In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+                    "url": "https://news.ycombinator.com/item?id=50061236"
+                  },
+                  {
+                    "author": "rossdavidh",
+                    "date": "",
+                    "excerpt": "I would say that KK's \"The bulk of AI will be special purpose software brains\" has turned out closer to the truth than \"The Bitter Lesson\" has.  LLM's do not drive cars, or vice versa.  Stockfish still beats the newest, largest LLM at chess.  Etc.  Most of the truly productive \"AI\" is customized for...",
+                    "url": "https://news.ycombinator.com/item?id=50062685"
+                  },
+                  {
+                    "author": "gwern",
+                    "date": "",
+                    "excerpt": "> Amid all this activity, a picture of our AI future is coming into view, and it is not the HAL 9000—a discrete machine animated by a charismatic (yet potentially homicidal) humanlike consciousness—or a Singularitan rapture of superintelligence.\nThe only important prediction Kelly made was a complet...",
+                    "url": "https://news.ycombinator.com/item?id=50065195"
+                  }
+                ]
+              },
+              "published_at": "2026-10-12",
+              "relevance_hint": 0.76,
+              "snippet": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book).\nWith that said, maybe he meant inevitable as N approaches infinity... So there's still... Google’s main product was and continues to be ads In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia\nPossibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last y...",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
+              "url": "https://taylor.town/kk-ai-2026",
+              "why_relevant": "HN story about Kevin Kelly's 2016 AI Predictions, 10 Years Later"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "q1"
+          ],
+          "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
+          "url": "https://taylor.town/kk-ai-2026"
+        }
+      },
+      "author": "surprisetalk",
+      "engagement": {
+        "comments": 88,
+        "points": 220
+      },
+      "engine_rank": 4,
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "canonical_url": "https://taylor.town/kk-ai-2026"
+    },
+    {
+      "id": "S28",
+      "url": "https://www.rte.ie/entertainment/2026/1019/1595980-kevin-bacon/",
+      "publisher": "austinallegro",
+      "tier": "T4",
+      "published_at": "2026-10-19",
+      "retrieved_at": "2026-11-02T03:50:24.305421Z",
+      "quote": "",
+      "locator": "Engine pooled item; title/body may combine title with multiple comment excerpts; no verified continuous quote",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "irrelevant",
+        "purpose": "exclude",
+        "priority": "background",
+        "reason": "Object mismatch: Kevin Bacon or Kevin Kelly, not Kevin Warsh"
+      },
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://rte.ie/entertainment/2026/1019/1595980-kevin-bacon",
+        "engine_item_id": "50153598",
+        "engine_rank": 5,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://rte.ie/entertainment/2026/1019/1595980-kevin-bacon",
+          "cluster_id": "cluster-5",
+          "engagement": 36,
+          "explanation": "fallback-local-score",
+          "final_score": 25.144086021505373,
+          "freshness": 54,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 10.0,
+          "item_id": "50153598",
+          "local_relevance": 0.1,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50153598",
+                "native_rank": 2,
+                "source": "hackernews",
+                "subquery_label": "q1"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "q1:hackernews": 2
+          },
+          "rerank_score": 15.0,
+          "rrf_score": 0.005376344086021505,
+          "snippet": "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation. My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago. \"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "austinallegro",
+              "body": "Kevin Bacon's missing clothes finally delivered in Ireland\nWith the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation. My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago. \"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 7,
+                "points": 9
+              },
+              "engagement_score": 36,
+              "freshness": 54,
+              "item_id": "50153598",
+              "local_rank_score": 0.23600000000000002,
+              "local_relevance": 0.1,
+              "metadata": {
+                "comment_insights": [
+                  "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation.",
+                  "My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago.",
+                  "\"The Footloose star,\"",
+                  "Oh good, can't tell you how concerned I was about this"
+                ],
+                "hn_url": "https://news.ycombinator.com/item?id=50153598",
+                "top_comments": [
+                  {
+                    "author": "yzydserd",
+                    "date": "",
+                    "excerpt": "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation.",
+                    "url": "https://news.ycombinator.com/item?id=50153715"
+                  },
+                  {
+                    "author": "mtklein",
+                    "date": "",
+                    "excerpt": "My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago.",
+                    "url": "https://news.ycombinator.com/item?id=50153793"
+                  },
+                  {
+                    "author": "Markoff",
+                    "date": "",
+                    "excerpt": "\"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+                    "url": "https://news.ycombinator.com/item?id=50154759"
+                  },
+                  {
+                    "author": "f30e3dfed1c9",
+                    "date": "",
+                    "excerpt": "Oh good, can't tell you how concerned I was about this. What a relief!",
+                    "url": "https://news.ycombinator.com/item?id=50155083"
+                  }
+                ]
+              },
+              "published_at": "2026-10-19",
+              "relevance_hint": 0.68,
+              "snippet": "With the package \"travelling through Memphis, France and Germany before being sent to Israel several times\", this is clearly a case of six degrees of separation. My first skim had me thinking he sent the package in the 90s; sadly it was just three weeks ago. \"The Footloose star,\"\nthat's definitely not how I would describe Kevin Bacon, personally I would say Sleepers or Hollow Man star",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Kevin Bacon's missing clothes finally delivered in Ireland",
+              "url": "https://www.rte.ie/entertainment/2026/1019/1595980-kevin-bacon/",
+              "why_relevant": "HN story about Kevin Bacon's missing clothes finally delivered in Ireland"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "q1"
+          ],
+          "title": "Kevin Bacon's missing clothes finally delivered in Ireland",
+          "url": "https://www.rte.ie/entertainment/2026/1019/1595980-kevin-bacon/"
+        }
+      },
+      "author": "austinallegro",
+      "engagement": {
+        "comments": 7,
+        "points": 9
+      },
+      "engine_rank": 5,
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "canonical_url": "https://www.rte.ie/entertainment/2026/1019/1595980-kevin-bacon/"
+    },
+    {
+      "id": "S29",
+      "url": "https://www.theangryoptimist.org/p/kevin-kelly-the-case-for-optimism",
+      "publisher": "simonebrunozzi",
+      "tier": "T4",
+      "published_at": "2026-10-12",
+      "retrieved_at": "2026-11-02T03:50:24.305421Z",
+      "quote": "",
+      "locator": "Engine pooled item; title/body may combine title with multiple comment excerpts; no verified continuous quote",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "irrelevant",
+        "purpose": "exclude",
+        "priority": "background",
+        "reason": "Object mismatch: Kevin Bacon or Kevin Kelly, not Kevin Warsh"
+      },
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://theangryoptimist.org/p/kevin-kelly-the-case-for-optimism",
+        "engine_item_id": "50061315",
+        "engine_rank": 6,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://theangryoptimist.org/p/kevin-kelly-the-case-for-optimism",
+          "cluster_id": "cluster-6",
+          "engagement": 14,
+          "explanation": "fallback-local-score",
+          "final_score": 20.842083333333335,
+          "freshness": 36,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 17.549999999999997,
+          "item_id": "50061315",
+          "local_relevance": 0.12,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "50061315",
+                "native_rank": 4,
+                "source": "hackernews",
+                "subquery_label": "q1"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "q1:hackernews": 4
+          },
+          "rerank_score": 16.4,
+          "rrf_score": 0.005208333333333333,
+          "snippet": "Kevin Kelly: The Case for Optimism (2021)",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "simonebrunozzi",
+              "body": "Kevin Kelly: The Case for Optimism (2021)",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 0,
+                "points": 4
+              },
+              "engagement_score": 14,
+              "freshness": 36,
+              "item_id": "50061315",
+              "local_rank_score": 0.182,
+              "local_relevance": 0.12,
+              "metadata": {
+                "comment_insights": [],
+                "hn_url": "https://news.ycombinator.com/item?id=50061315",
+                "top_comments": []
+              },
+              "published_at": "2026-10-12",
+              "relevance_hint": 0.65,
+              "snippet": "Kevin Kelly: The Case for Optimism (2021)",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Kevin Kelly: The Case for Optimism (2021)",
+              "url": "https://www.theangryoptimist.org/p/kevin-kelly-the-case-for-optimism",
+              "why_relevant": "HN story about Kevin Kelly: The Case for Optimism (2021)"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "q1"
+          ],
+          "title": "Kevin Kelly: The Case for Optimism (2021)",
+          "url": "https://www.theangryoptimist.org/p/kevin-kelly-the-case-for-optimism"
+        }
+      },
+      "author": "simonebrunozzi",
+      "engagement": {
+        "comments": 0,
+        "points": 4
+      },
+      "engine_rank": 6,
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "canonical_url": "https://www.theangryoptimist.org/p/kevin-kelly-the-case-for-optimism"
+    },
+    {
+      "id": "S30",
+      "url": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction",
+      "publisher": "rmason",
+      "tier": "T4",
+      "published_at": "2026-10-07",
+      "retrieved_at": "2026-11-02T03:50:24.305421Z",
+      "quote": "",
+      "locator": "Engine pooled item; title/body may combine title with multiple comment excerpts; no verified continuous quote",
+      "origin_id": null,
+      "origin_basis": "Unresolved: engine source/cluster does not establish independent origin",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "opinion",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "relevance": "irrelevant",
+        "purpose": "exclude",
+        "priority": "background",
+        "reason": "Object mismatch: Kevin Bacon or Kevin Kelly, not Kevin Warsh"
+      },
+      "platform": "hackernews",
+      "provenance": {
+        "engine": "last30days",
+        "engine_version": "3.30.0",
+        "engine_candidate_id": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction",
+        "engine_item_id": "49998265",
+        "engine_rank": 7,
+        "unranked": false,
+        "raw_candidate": {
+          "candidate_id": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction",
+          "cluster_id": "cluster-7",
+          "engagement": 20,
+          "explanation": "fallback-local-score",
+          "final_score": 20.32205128205128,
+          "freshness": 22,
+          "fun_explanation": "heuristic-fallback",
+          "fun_score": 12.75,
+          "item_id": "49998265",
+          "local_relevance": 0.12,
+          "metadata": {
+            "provenance": [
+              {
+                "item_id": "49998265",
+                "native_rank": 5,
+                "source": "hackernews",
+                "subquery_label": "q1"
+              }
+            ],
+            "range_from": "2026-10-02",
+            "range_to": "2026-11-01",
+            "rerank_provenance": "fallback"
+          },
+          "native_ranks": {
+            "q1:hackernews": 5
+          },
+          "rerank_score": 16.4,
+          "rrf_score": 0.005128205128205128,
+          "snippet": "Kevin Kelly – The Influence of Science Fiction on Science",
+          "source": "hackernews",
+          "source_items": [
+            {
+              "author": "rmason",
+              "body": "Kevin Kelly – The Influence of Science Fiction on Science",
+              "container": "Hacker News",
+              "date_confidence": "high",
+              "engagement": {
+                "comments": 2,
+                "points": 3
+              },
+              "engagement_score": 20,
+              "freshness": 22,
+              "item_id": "49998265",
+              "local_rank_score": 0.15300000000000002,
+              "local_relevance": 0.12,
+              "metadata": {
+                "comment_insights": [],
+                "hn_url": "https://news.ycombinator.com/item?id=49998265",
+                "top_comments": []
+              },
+              "published_at": "2026-10-07",
+              "relevance_hint": 0.63,
+              "snippet": "Kevin Kelly – The Influence of Science Fiction on Science",
+              "source": "hackernews",
+              "source_quality": 0.8,
+              "title": "Kevin Kelly – The Influence of Science Fiction on Science",
+              "url": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction",
+              "why_relevant": "HN story about Kevin Kelly – The Influence of Science Fiction on Science"
+            }
+          ],
+          "source_quality": 0.8,
+          "sources": [
+            "hackernews"
+          ],
+          "subquery_labels": [
+            "q1"
+          ],
+          "title": "Kevin Kelly – The Influence of Science Fiction on Science",
+          "url": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction"
+        }
+      },
+      "author": "rmason",
+      "engagement": {
+        "comments": 2,
+        "points": 3
+      },
+      "engine_rank": 7,
+      "engagement_collected_at": "2026-11-02T03:50:24.305421+00:00",
+      "canonical_url": "https://kevinkelly.substack.com/p/the-influence-of-science-fiction"
+    }
+  ],
+  "source_status": {
+    "fed_appointment": {
+      "status": "ok"
+    },
+    "fed_june_oct_statements": {
+      "status": "ok"
+    },
+    "fed_april_oct_implementation": {
+      "status": "ok"
+    },
+    "fed_oct28_transcript": {
+      "status": "ok",
+      "reason": "Initial WebFetch binary PDF text unusable; extracted with local macOS PDFKit"
+    },
+    "fed_bio": {
+      "status": "ok"
+    },
+    "hoover_2025_original_interview": {
+      "status": "ok"
+    },
+    "senate_opening_testimony": {
+      "status": "error",
+      "url": "https://www.banking.senate.gov/imo/media/doc/warsh_testimony_4-21-26.pdf",
+      "access_status": "failed",
+      "reason": "HTTP403 access refusal twice; whether authentication is required is unknown."
+    },
+    "direct_python_fed_fetch": {
+      "status": "error",
+      "reason": "urllib HTTP403; successful WebFetch route used instead"
+    },
+    "senate_written_qfr": {
+      "status": "not_run",
+      "reason": "Search lead found, not opened within targeted budget"
+    },
+    "SOMA_H41": {
+      "status": "not_run",
+      "reason": "Budget prioritized latest official decision and implementation"
+    },
+    "market_expectations_prices": {
+      "status": "not_run",
+      "reason": "Outside authorized task; no consensus or price causal inference"
+    },
+    "community": {
+      "status": "partial",
+      "reason": "Last30Days executed; relevant Reddit originals blocked, all community leads unselected; other platform coverage limited",
+      "details": {
+        "hackernews": {
+          "at": "2026-11-02T03:50:24.302367Z",
+          "attempted": true,
+          "items_returned": 5,
+          "source": "hackernews",
+          "state": "ok",
+          "status": "ok",
+          "engine_state": "ok"
+        },
+        "reddit": {
+          "at": "2026-11-02T03:50:24.302995Z",
+          "attempted": true,
+          "items_returned": 2,
+          "source": "reddit",
+          "state": "ok",
+          "status": "ok",
+          "engine_state": "ok"
+        },
+        "youtube": {
+          "status": "not_run",
+          "reason": "Requested and diagnosed available, but engine quick profile sanitized plan to reddit,hackernews; omitted from raw source_status"
+        },
+        "x": {
+          "status": "not_run",
+          "reason": "Diagnose: bird unauthenticated, no X backend; browser-cookie access disabled"
+        },
+        "web_fallback": {
+          "status": "partial",
+          "reason": "WebSearch returned relevant leads; all three attempted Reddit WebFetch requests blocked"
+        }
+      }
+    },
+    "cato": {
+      "status": "unreachable",
+      "reason": "403 and browser access denied"
+    },
+    "axios": {
+      "status": "partial",
+      "reason": "Browser read visible introduction only; email wall; excluded from claims"
+    }
+  },
+  "selection_summary": {
+    "selected": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S10",
+      "S1",
+      "S9",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23",
+      "S38",
+      "S39"
+    ],
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting"
+  }
+}

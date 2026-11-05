@@ -1,0 +1,43 @@
+{
+  "qid": "Q017",
+  "as_of": "2026-08-19",
+  "kept": [
+    {
+      "excerpt": "A Roath-backing PAC’s August 5–6 poll found Lynch at 50%, Roath 43%, undecided 7%; 469 likely voters, ±4.53-point margin; no independent public polling.",
+      "published_at": "2026-08-17",
+      "publisher": "The Boston Globe",
+      "relevance": "This is the most recent verified pre-cutoff polling report located, but its sponsor supported Roath and it was not independent polling.",
+      "url": "https://www.bostonglobe.com/2026/08/17/newsletters/lynch-roath-polling-eighth-district-primary-the-scrum/"
+    },
+    {
+      "excerpt": "Roath gets our nod as the most viable challenger largely because of his fundraising prowess: he’s raised more than $1.1 million with, he said, a median donation of $25, suggesting a broad base of voter support. Roath also boasts endorsements from Patrick, David Hogg’s group Leaders We Deserve, the Boston Teachers Union, and AFT (American Federation of Teachers) Massachusetts. Lynch is the favorite here, but the prospect of Roath pulling off an upset isn’t far fetched as it initially seemed.",
+      "published_at": "2026-08-03",
+      "publisher": "GBH News",
+      "relevance": "This local expert preview assesses Lynch as the favorite while documenting the resources and organizational support making Roath a credible challenger.",
+      "url": "https://wgbh.org/news/politics/2026-08-03/why-more-than-half-of-massachusetts-house-reps-are-facing-primary-challengers-this-year"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.boston.com/news/local-news/2026/08/14/takeaways-lynch-and-roath-face-off-at-candidate-forum-in-weymouth/",
+      "reason": "The excerpt's reference to less than three weeks until the primary implies an election after the 2026-08-19 cutoff; removed under the literal prohibition on post-cutoff references."
+    },
+    {
+      "url": "https://news.ballotpedia.org/2026/07/27/generational-change-versus-experience-a-theme-in-the-democratic-primary-for-massachusetts-8th-congressional-district/",
+      "reason": "The excerpt explicitly mentions the September 1, 2026 primary, after the 2026-08-19 cutoff."
+    },
+    {
+      "url": "https://www.sec.state.ma.us/divisions/news/news-archives/archived-news-stories.htm",
+      "reason": "The excerpt explicitly mentions post-cutoff dates: August 25, August 22–28, September 1, October 17–30, and November 3, 2026."
+    },
+    {
+      "url": "https://www.axios.com/local/boston/2026/05/20/boston-teachers-union-endorsement-patrick-roath-stephen-lynch",
+      "reason": "The excerpt explicitly mentions the September 1 Democratic primary and planned field participation ahead of that post-cutoff event."
+    },
+    {
+      "url": "https://patrickroath.com/new-poll-establishes-clear-path-to-victory-for-patrick-roath-in-ma-08-democratic-primary/",
+      "reason": "The excerpt explicitly mentions the September 2026 Democratic primary election, after the 2026-08-19 cutoff."
+    }
+  ],
+  "search_notes": "Q017 frozen evidence cutoff: 2026-08-19 inclusive. Included seven items with explicit publication dates verified in web_search results or date-labeled source text. Excerpts contain only information attributed to material dated on or before the cutoff; no subsequent developments, nomination outcome, betting pages, odds, or market prices are included. The official calendar excerpt comes specifically from the July 9, 2026 announcement within an archive page; other archive entries were excluded. Campaign-sponsored polling is labeled and should not be treated as independent confirmation; the August 17 Globe report stated there was no independent public polling at that point. Direct web_fetch failed because of a provider-configuration error; the agent-reach skill web-read fallback also failed because its upstream services were temporarily unavailable, so verification relied on indexed source text returned by web_search. This is a cutoff-filtered evidence selection, not an archived capture proving that each live page has remained unchanged since publication."
+}

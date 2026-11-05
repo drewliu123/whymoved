@@ -1,0 +1,346 @@
+{
+ "question": "美联储 10 月 27–28 日会议会有几票反对（仅计利率决定）？",
+ "as_of": "2026-10-26T06:59:00Z",
+ "claims": [
+  {
+   "id": "D1",
+   "type": "price",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Polymarket 反对票数：2 票 27.5%、0 票 26.5%、3 票 22%、1 票 14.5%、4 票及以上 4.4%（合计 94.9%）；0 票一个月内下跌 18 个百分点",
+   "sources": [
+    {
+     "url": "https://polymarket.com/event/how-many-dissent-at-the-october-fed-meeting",
+     "publisher": "Polymarket",
+     "tier": "T0",
+     "published_at": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "D2",
+   "type": "price",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Kalshi 反对票数（最后成交价）：2 票 0.30、0 票 0.22、1 票 0.21、3 票 0.20、4 票 0.03、5 票 0.03",
+   "sources": [
+    {
+     "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXFOMCDISSENTCOUNT&with_nested_markets=true&status=open",
+     "publisher": "Kalshi",
+     "tier": "T1",
+     "published_at": "2026-10-26T03:52:00Z"
+    }
+   ]
+  },
+  {
+   "id": "D3",
+   "type": "price",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Kalshi 逐人反对（最后成交价）：Hammack 0.74、Logan 0.43、Kashkari 0.36、Bowman 0.06、Williams 与 Waller 各 0.04，其余 ≤0.02",
+   "sources": [
+    {
+     "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXFEDDISSENT&with_nested_markets=true&status=open",
+     "publisher": "Kalshi",
+     "tier": "T1",
+     "published_at": "2026-10-26T05:36:00Z"
+    }
+   ]
+  },
+  {
+   "id": "D3b",
+   "type": "price",
+   "as_of": "2026-10-26T07:04:00Z",
+   "text": "Kalshi 逐人买卖价快照：Logan 0.60/0.61，Kashkari 0.13/0.39",
+   "sources": [
+    {
+     "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXFEDDISSENT&with_nested_markets=true&status=open",
+     "publisher": "Kalshi",
+     "tier": "T1",
+     "published_at": "unknown"
+    }
+   ]
+  },
+  {
+   "id": "D4",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "2026 年 12 位票委：理事 Warsh（主席）、Barr、Bowman、Cook、Jefferson、Powell、Waller，纽约联储 Williams，轮值主席 Hammack、Kashkari、Logan、Paulson",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomc.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-07"
+    }
+   ]
+  },
+  {
+   "id": "D5",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "7 月会议以 9 比 3 维持利率不变，Hammack、Kashkari、Logan 反对，主张加息 25bp",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-07-29"
+    }
+   ]
+  },
+  {
+   "id": "D6",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "4 月会议 Hammack、Kashkari、Logan 支持维持利率，但反对声明中的宽松倾向措辞并投了反对票；Miran 主张降息 25bp，也投了反对票",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-04-29"
+    }
+   ]
+  },
+  {
+   "id": "D7",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "2026 年其余会议：1 月 2 票反对（Miran、Waller，主张降息），3 月 1 票反对（Miran），6 月与 9 月都是 12 比 0",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-01-28"
+    },
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-03-18"
+    },
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-06-17"
+    },
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-09-16"
+    }
+   ]
+  },
+  {
+   "id": "D8",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Hammack 10 月 12 日表示，可行时倾向小幅调整，而不是等待之后需要更大幅度的纠正；但没有点名 10 月会议",
+   "sources": [
+    {
+     "url": "https://www.clevelandfed.org/collections/speeches/2026/sp-20261012-trimming-the-sails-communicating-my-reaction-function",
+     "publisher": "Cleveland Fed",
+     "tier": "T0",
+     "published_at": "2026-10-12"
+    }
+   ]
+  },
+  {
+   "id": "D9",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Logan 10 月 1 日估计目标区间还需要再上调 50bp 或更多，但没有说明哪次会议",
+   "sources": [
+    {
+     "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261001",
+     "publisher": "Dallas Fed",
+     "tier": "T0",
+     "published_at": "2026-10-01"
+    }
+   ]
+  },
+  {
+   "id": "D10",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Kashkari 7 月的反对理由是倾向在收集数据的同时渐进收紧；9 月 30 日的 CFR 活动没有文字稿",
+   "sources": [
+    {
+     "url": "https://www.minneapolisfed.org/article/2026/statement-on-my-fomc-dissent",
+     "publisher": "Minneapolis Fed",
+     "tier": "T0",
+     "published_at": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "id": "D11",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Williams 9 月 29 日说没有紧迫性，年内晚些时候可能再加一次；Waller 10 月 8 日说加息不必在连续两次会议进行",
+   "sources": [
+    {
+     "url": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260929",
+     "publisher": "New York Fed",
+     "tier": "T0",
+     "published_at": "2026-09-29"
+    },
+    {
+     "url": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "D12",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Barr（9/29）和 Paulson（9/24）都认为可能还需要进一步收紧，但都没有给出时点",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-09-29"
+    },
+    {
+     "url": "https://www.philadelphiafed.org/the-economy/monetary-policy/260924-10th-annual-fintech-conference-speech",
+     "publisher": "Philadelphia Fed",
+     "tier": "T0",
+     "published_at": "2026-09-24"
+    }
+   ]
+  },
+  {
+   "id": "D13",
+   "type": "view",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Bloomberg 视频标题称 Bowman 认为没有进一步行动的紧迫性（只有标题，正文无法打开）",
+   "sources": [
+    {
+     "url": "https://www.bloomberg.com/news/videos/2026-10-14/fed-s-bowman-sees-no-urgency-for-further-action-on-rates-video",
+     "publisher": "Bloomberg",
+     "tier": "T2",
+     "published_at": "2026-10-14"
+    }
+   ]
+  },
+  {
+   "id": "D14",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Polymarket 只按对利率决定的反对票结算，以 10 月 27–28 日会后声明为准",
+   "sources": [
+    {
+     "url": "https://gamma-api.polymarket.com/events?slug=how-many-dissent-at-the-october-fed-meeting",
+     "publisher": "Polymarket",
+     "tier": "T0",
+     "published_at": "unknown"
+    }
+   ]
+  },
+  {
+   "id": "D15",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "9 月纪要显示与会者全部支持加息 25bp，并认为年底前很可能还需要再加息一次",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2026-10-07"
+    }
+   ]
+  },
+  {
+   "id": "D16",
+   "type": "fact",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "2025 年 7 月 Bowman、Waller 投反对票主张降息；9 月降息后两人都投了赞成票",
+   "sources": [
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250730a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2025-07-30"
+    },
+    {
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm",
+     "publisher": "Federal Reserve",
+     "tier": "T0",
+     "published_at": "2025-09-17"
+    }
+   ]
+  },
+  {
+   "id": "I1",
+   "type": "inference",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "三人在 2026 年唯一一次利率反对（7 月）中同时反对，4 月又同时就声明措辞反对；同时反对的样本只有 2 次，能说明他们有共同的驱动因素，但不足以估计相关系数",
+   "basis": [
+    "D5",
+    "D6",
+    "D7"
+   ],
+   "sources": []
+  },
+  {
+   "id": "I3",
+   "type": "inference",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "按证据修正逐人概率（Hammack 0.70、Logan 0.60、Kashkari 0.25），用保持各人概率不变的同向混合（权重 0.6–1）计算：0 票 19%–26%、1 票 12%–21%、2 票 32%–36%、3 票 22%–26%，各档与盘口的差距都不超过 7 个百分点",
+   "basis": [
+    "I1",
+    "D8",
+    "D9",
+    "D10",
+    "D11",
+    "D12",
+    "D1",
+    "D2"
+   ],
+   "sources": []
+  },
+  {
+   "id": "I4",
+   "type": "inference",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "如果鹰派像 4 月那样支持维持利率、只反对声明措辞，这种反对不计入结算，结果仍是 0 票",
+   "basis": [
+    "D6",
+    "D14"
+   ],
+   "sources": []
+  },
+  {
+   "id": "I5",
+   "type": "inference",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "用 Kalshi 逐人买卖中间价（Hammack 0.74、Logan 约 0.605、Kashkari 约 0.26），按三人完全同向计算，得到 0 票 21%、1 票 15%、2 票 31%、3 票 27%，与两家平台的票数盘口大体一致；票数盘口已经反映了三人高度相关、且概率各不相同",
+   "basis": [
+    "D1",
+    "D2",
+    "D3",
+    "D3b"
+   ],
+   "sources": []
+  },
+  {
+   "id": "I6",
+   "type": "inference",
+   "as_of": "2026-10-26T06:59:00Z",
+   "text": "Logan 10 月仍主张至少再加 50bp，Kashkari 没有 9 月加息后的公开表态、且他主张的渐进收紧在 9 月已经得到满足；这支持市场把 Logan 排在 Kashkari 前面",
+   "basis": [
+    "D9",
+    "D10",
+    "D15",
+    "D16"
+   ],
+   "sources": []
+  }
+ ]
+}

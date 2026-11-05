@@ -1,0 +1,41 @@
+{
+  "qid": "Q059",
+  "as_of": "2026-07-10",
+  "kept": [
+    {
+      "excerpt": "April–May saw a decrease not only in current price growth rates, but also in many measures of underlying inflation. For some participants in the discussion, that was sufficient evidence that inflation would continue decelerating under the influence of tight monetary policy. Others, however, argued that it would be premature to draw a firm conclusion about a further decline in underlying inflation measures, as they had been affected by strong, albeit transitory, disinflationary factors in recent months. The discussants agreed that proinflationary risks had increased, pushed up by both a stronger fiscal impulse and a temporary contraction in motor fuel production.",
+      "published_at": "2026-07-01",
+      "publisher": "Bank of Russia",
+      "relevance": "Provides a dated official account of the competing inflation assessments and fiscal and fuel risks shaping the next rate decision.",
+      "url": "https://www.cbr.ru/eng/press/event/?id=32679"
+    },
+    {
+      "excerpt": "I would like to emphasise that neither a further key rate cut nor the size of it is predetermined at any particular meeting. We might need to take pauses to analyse all incoming information and the effect of our earlier decisions.",
+      "published_at": "2026-06-19",
+      "publisher": "Bank of Russia — Governor Elvira Nabiullina",
+      "relevance": "The governor explicitly leaves a pause available, preventing the recent sequence of reductions from being treated as a commitment to another July cut.",
+      "url": "https://cbr.ru/press/event/?id=32635"
+    },
+    {
+      "excerpt": "The Russian central bank cut its benchmark interest rate by 25 basis points to 14.25% on Friday, a smaller move than the 50 bps that analysts had expected, citing risks stemming from soft budget policy and a decline in fuel production. The economy contracted by 0.2% in the first quarter, and Nabiullina said it will grow by about 0.5% in the first half of the year.",
+      "published_at": "2026-06-19",
+      "publisher": "Reuters, via Investing.com",
+      "relevance": "Documents the smaller-than-expected June easing and the weak growth backdrop against which inflation risks constrained further cuts.",
+      "url": "https://www.investing.com/news/economy-news/russian-central-bank-trims-rate-by-25-bps-to-1425-amid-fuel-supply-budget-risks-4751499"
+    },
+    {
+      "excerpt": "Inflation in Russia accelerated to 0.87% in June 2026 after 0.17% in May, 0.14% in April, 0.60% in March, 0.73% in February and 1.62% in January, Rosstat said on Friday. The consensus forecast of economists surveyed by Interfax was 0.85% for the month. According to Rosstat, annual inflation accelerated to 6.02% in June 2026 (analysts expected 5.99%) from 5.31% at the end of May.",
+      "published_at": "2026-07-10",
+      "publisher": "Interfax, reporting Rosstat data",
+      "relevance": "Supplies cutoff-day inflation data showing renewed price acceleration and a modest upside surprise relevant to the room for July easing.",
+      "url": "https://interfax.com/newsroom/top-stories/118365/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.cbr.ru/eng/press/pr/?file=19062026_133000key_e.htm",
+      "reason": "Excerpt explicitly mentions the July 24, 2026 meeting and its planned publication time, after the July 10 cutoff; removed under the rule excluding mentions of anything after the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence pack for Q059 with publication cutoff 2026-07-10 inclusive. Included five dated items, using only their pre-cutoff content; no July meeting outcome, subsequent developments, prediction-market pages, odds, or market prices are included. The June 19 official decision verifies the July 24 schedule without relying on an undated live calendar. The July 1 official release announcement provides an explicit publication date for the discussion evidence. Interfax's original article is dated July 10, corroborated by its news index entry dated 10 Jul 26 at 19:39; later syndicated versions were excluded. web_search supplied indexed source text and date evidence. web_fetch failed because multiple providers were registered, and the requested agent-reach fallback returned RATE_LIMITED; no further fallback reads were attempted. Full-page retrieval was therefore unavailable, and excerpts rely on source text exposed in search results. No sufficiently verified July-meeting analyst poll published by the cutoff was identified."
+}

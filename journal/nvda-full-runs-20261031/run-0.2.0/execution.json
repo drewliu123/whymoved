@@ -1,0 +1,120 @@
+{
+  "plugin_version": "0.2.0",
+  "plugin_root": "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.2.0",
+  "TOUYAN_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0",
+  "question_as_of": "2026-10-31T12:19:06Z",
+  "completed_at": "2026-10-31T12:37:21.791500+00:00",
+  "mode": "isolated complete trial; not official statistics",
+  "memo_id": "M20261031-01",
+  "archive": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/journal/M20261031-01",
+  "steps": {
+    "1": "asset route; exact as_of and last completed-session price basis",
+    "2": "five fixed asset angles in plan.json",
+    "3": "T0 official IR/newsroom and Polymarket; T2 Reuters; T4 Reddit/HN; seed library copied and demoted retained",
+    "4": {
+      "fact_agent": "touyan:fact-collector a869664bad5f20e40;5 web calls;unverified candidates,parent raw verification recorded",
+      "community_agent": "touyan:community-scout add7637e35200db27;actual last30days96.73sec exit0;partial sources",
+      "market": "main researcher ran search/event, Gamma raw and both YES/NO CLOB attempts;403 depth;after-cutoff updates excluded from forecast inputs"
+    },
+    "5": {
+      "initial_claims": 10,
+      "final_claims": 12,
+      "check_claims_exit_code": 0,
+      "log": "logs/check-claims-final.stdout.log"
+    },
+    "6": {
+      "agent": "touyan:red-team a6ca97bbd0808af8b",
+      "report": "red-team.json",
+      "integrated": "C8/C9/C10 narrowed; C11 cash conversion added; contract boundaries explicit"
+    },
+    "6.5": {
+      "mode": "independent",
+      "hypotheses": 1,
+      "input": "forecast-input-H1.json",
+      "input_claim_types": [
+        "fact"
+      ],
+      "evidence_ids": [
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "fallback_agent": "general-purpose because touyan:forecaster unregistered",
+      "trials": [
+        0.63,
+        0.64,
+        0.68
+      ],
+      "final_prob": 0.65,
+      "finalize_exit_code": 0,
+      "check_exit_code": 0,
+      "independence": "same inherited model, separate isolated single-input calls; not statistically independent",
+      "no_price_scope": "No verified executable as_of depth in attempted Polymarket market; not assertion no global price"
+    },
+    "7": {
+      "journal_add_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.2.0/scripts/journal.py",
+        "add",
+        "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/memo.json",
+        "--claims",
+        "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/claims.json",
+        "--report",
+        "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/memo.md",
+        "--plan",
+        "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/plan.json",
+        "--forecast",
+        "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.2.0/forecast.json"
+      ],
+      "journal_add_exit_code": 0,
+      "archive_byte_equality": {
+        "memo.json": true,
+        "claims.json": true,
+        "memo.md": true,
+        "plan.json": true,
+        "forecast.json": true
+      }
+    }
+  },
+  "web_budget": {
+    "web_tool_calls": 8,
+    "breakdown": "fact5, community fallback2, main initialWebFetch1",
+    "additional_raw_nonprice_fetches": 5,
+    "raw_breakdown": "parent3:IR earnings403, Reuters200, newsroom200;community Reddit2:403",
+    "approx_search_fetch_total_excluding_price_and_market_operations": 13,
+    "note": "Approximately12 budget used as convergence target; no further searches. Official price widget and quote API, widget source, Gamma and CLOB market operations excluded."
+  },
+  "failures_and_degradations": [
+    "Initial forecast.py --help with python -I failed ModuleNotFoundError common; scripts executed normally with trusted plugin script path thereafter; network JSON readers used python -I.",
+    "Official IR direct earnings and historical paths403; newsroom raw200; official historical data succeeded in isolated ego browser using observed quote service.",
+    "Initial WebFetch outputs from fact agent did not establish original URL body; candidates not accepted until parent raw verification.",
+    "Browser widget external fetch hit CORS; selected-date click blocked by privacy dialog; inspected dialog, rejected nonessential cookies, observed same-origin official API succeeded; TaskSpace11 finished keep[] exactly once.",
+    "last30days global config-link automatic approval rejected Sensitive-Source Provenance; no retry or alternate retrieval of denied secrets, used isolated config with keychain disabled; quick reduced actual query plan to Reddit/HN.",
+    "last30days exit0 with partial Reddit timeout;X unconfigured;public Reddit JSON403;engagement collected after as_of;author unverified;one view only.",
+    "Polymarket displayed probabilities are midpoints and nonmonotonic across thresholds;not execution;YES/NO depth403;Gamma updates after cutoff prevent contemporaneous reconstruction.",
+    "Full-month causal attribution, stock valuation/consensus/options/flows, October order/export events and exact next earnings date unverified."
+  ],
+  "author_library": {
+    "file": "data/authors.json",
+    "demoted_preserved": true,
+    "entire_seed_byte_equal": true,
+    "new_authors": 0,
+    "reason": "No candidate met at least two theme-hit posts and >=half relevance condition"
+  },
+  "write_boundaries": {
+    "only_run_written": true,
+    "no_plugin_edits": true,
+    "no_Git_writes": true,
+    "no_official_journal": true,
+    "no_other_run_or_old_report_reads": true,
+    "browser_space": "touyan-020-nvda-20261031-isolated id11 closed"
+  },
+  "sha256": {
+    "claims.json": "bd2fd01ac7a655d8b6606f2489b93bd727b88509f1890140e6989429069ee4f2",
+    "forecast-input-H1.json": "4e8619e61e151d1e132f7e4ec1818d949c76220b9920adf478ff2faed0bd385c",
+    "forecast.json": "9470f4da561f66966b0673765080bb76064e20a838eb481f758e588f19ea077a",
+    "memo.md": "b6cfd6a6cc817a06c91e8c859450ac32ccf2dceb90514fdaf5a43794627841fb",
+    "memo.json": "de500e35892d90eff129a482a90c802285b2c0a2bf95cc906738838b318dc03b",
+    "plan.json": "834bb6886ed1f1684ffa5f97a12c618014a6e2c101a1138bbc057cfb62ea49ad"
+  }
+}

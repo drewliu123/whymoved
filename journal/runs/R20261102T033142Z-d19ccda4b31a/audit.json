@@ -1,0 +1,81 @@
+{
+  "evidence_files": [
+    "spy.txt",
+    "axios-hack.txt",
+    "mizuho.txt",
+    "ap-hack.txt",
+    "coin.txt",
+    "economics.txt",
+    "crcl.txt",
+    "q3-date.txt",
+    "q2.txt",
+    "hack.txt"
+  ],
+  "execution": [
+    {
+      "command": "analysis_contract.py route change_explanation",
+      "exit_code": 0
+    },
+    {
+      "method": "ego-browser",
+      "notes": "部分goto load超时，但document interactive后成功取得全文；Reuters空正文未采用",
+      "space_id": 21
+    }
+  ],
+  "queries": [
+    {
+      "purpose": "检验共同波动",
+      "query": "CRCL COIN SPY October 2026 historical prices",
+      "question": "实际跌幅与基准",
+      "source": "S&P Global价格经StockAnalysis展示",
+      "test_ids": [
+        "T1"
+      ]
+    },
+    {
+      "purpose": "检验规模到利润传导及同季事前共识",
+      "query": "Circle second quarter 2026 results reserve income distribution costs analyst consensus",
+      "question": "经营与预期",
+      "source": "Circle/SEC及预期提供方",
+      "test_ids": [
+        "T2"
+      ]
+    },
+    {
+      "purpose": "核查事件先后及替代解释",
+      "query": "Circle October 2026 Binance security incident insider selling Mizuho",
+      "question": "近期事件",
+      "source": "Reuters、Circle、具名机构报道",
+      "test_ids": [
+        "T1",
+        "T3"
+      ]
+    }
+  ],
+  "review": {
+    "dispositions": [
+      "主结论降为共同承压，Q2只作经营背景",
+      "安全事件保留候选催化，不分摊跌幅",
+      "补入已读取正文的日期句和机构情景原句",
+      "明确分销、交易及其他合计口径"
+    ],
+    "findings": [
+      "Q2机制不得升级为10月实质归因",
+      "消息首发时刻未核实",
+      "财报日期和AI分流论点引文不足",
+      "成本增幅是合并科目"
+    ],
+    "reviewer": "2deff6aa-b71c-4798-890e-25153eb4ca8c",
+    "status": "completed_with_corrections"
+  },
+  "unselected_candidates": [
+    {
+      "reason": "短正文，对本轮判断未比AP增加关键证据；不重复计算Binance声明独立性",
+      "url": "https://www.axios.com/2026/10/29/binance-cyberattack-crypto-heist"
+    },
+    {
+      "reason": "取得空正文，未采纳",
+      "url": "https://www.reuters.com/markets/us/tether-circle-freeze-238-billion-after-binance-reports-security-incident-2026-10-29/"
+    }
+  ]
+}

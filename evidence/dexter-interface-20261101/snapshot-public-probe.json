@@ -1,0 +1,24 @@
+{
+  "exit_code": 2,
+  "result": {
+    "schema_version": 1,
+    "provider": "financial_datasets",
+    "contract_reference": "https://github.com/virattt/dexter/tree/main/src/tools/finance",
+    "operation": "snapshot",
+    "params": {
+      "ticker": "AAPL"
+    },
+    "source_url": "https://api.financialdatasets.ai/prices/snapshot/?ticker=AAPL",
+    "retrieved_at": "2026-11-02T03:38:57.418343Z",
+    "status": "payment_required",
+    "http_status": 402,
+    "data": null,
+    "raw_response": null,
+    "notes": [
+      "Provider data requires provenance and accounting-period review before research use.",
+      "Retrieval time and report period do not establish historical public availability."
+    ],
+    "access_mode": "public_probe",
+    "reason": "Provider HTTP 402; no automatic retry, redirect or payment performed."
+  }
+}

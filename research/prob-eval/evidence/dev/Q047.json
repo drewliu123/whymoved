@@ -1,0 +1,53 @@
+{
+  "qid": "Q047",
+  "as_of": "2026-09-02",
+  "kept": [
+    {
+      "excerpt": "Both nonfarm payroll employment (-23,000) and the unemployment rate (4.1 percent) changed little in July, the U.S. Bureau of Labor Statistics reported today. The change in total nonfarm payroll employment for May was revised down by 66,000, from +129,000 to +63,000, and the change for June was revised down by 37,000, from +57,000 to +20,000. With these revisions, employment in May and June combined is 103,000 lower than previously reported.",
+      "published_at": "2026-08-07",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "The latest monthly payroll report available by the cutoff provides evidence of weak job growth relevant to whether the Fed would continue pausing in September.",
+      "url": "https://www.bls.gov/news.release/archives/empsit_08072026.htm"
+    },
+    {
+      "excerpt": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.1 percent on a seasonally adjusted basis in July after falling 0.4 percent in June, the U.S. Bureau of Labor Statistics reported today. The all items index rose 3.4 percent for the 12 months ending July after rising 3.5 percent for the 12 months ending June. The all items less food and energy index rose 2.5 percent over the year, following a 2.6-percent increase over the 12 months ending June.",
+      "published_at": "2026-08-12",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "The latest CPI release available by the cutoff documents easing annual headline and core inflation, an input to the September pause decision.",
+      "url": "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+    },
+    {
+      "excerpt": "And while this summer's PCE and CPI readings were better than expected, they do not tell me that underlying trends have meaningfully improved. Here is my standard: We must be confident that underlying inflation is moving to our objective, clearly and at sufficient speed. Otherwise, we have work to do.",
+      "published_at": "2026-08-28",
+      "publisher": "Board of Governors of the Federal Reserve System — Chairman Kevin Warsh",
+      "relevance": "The chairman's Jackson Hole speech supplies a recent policy assessment indicating that improved inflation readings had not yet satisfied his standard for progress.",
+      "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm"
+    },
+    {
+      "excerpt": "The number of job openings was little changed at 7.3 million in July, the U.S. Bureau of Labor Statistics reported today. Hires and total separations both changed little at 5.1 million. Within separations, quits (3.1 million) and layoffs and discharges (1.7 million) were little changed.",
+      "published_at": "2026-09-01",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "relevance": "This labor-demand release immediately before the cutoff provides current evidence on employment conditions entering the September decision.",
+      "url": "https://www.bls.gov/news.release/archives/jolts_09012026.htm"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "reason": "Reveals the June decision result: the excerpt states that the target range was maintained, and the relevance explicitly identifies the first qualifying pause in the queried sequence."
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "reason": "Reveals the July decision result: the excerpt states that the target range was maintained, and the relevance explicitly identifies the second qualifying pause in the queried sequence."
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm",
+      "reason": "Implies the July decision result by reporting that most participants supported maintaining the current target range at that meeting, revealing a component of the queried sequence."
+    },
+    {
+      "url": "https://www.marketscreener.com/news/fed-survey-shows-economic-activity-edged-up-prices-rose-moderately-in-recent-weeks-ce7858d3db8df623",
+      "reason": "Explicitly reveals the July decision result by stating that the Fed kept its benchmark rate unchanged at its late-July meeting, revealing a component of the queried sequence."
+    }
+  ],
+  "search_notes": "Frozen evidence pack for Q047 with an inclusive publication cutoff of 2026-09-02. Eight dated items were selected using web_search, prioritizing official FOMC statements, minutes, archived economic releases, the chairman's recent speech, and cutoff-day Reuters reporting. Publication dates were verified from release headers, official release listings, or visible article timestamps; the Reuters article was published September 2 at 2:47 p.m. EDT and updated that day at 3:53 p.m. EDT. The June and July decisions were already public by the cutoff; no September decision or other post-cutoff development is included. Prediction-market and betting pages, odds, and market prices were excluded. Excerpts contain selected source sentences; omitted intervening text is not represented as continuous quotation. web_fetch failed because of a provider configuration error, so agent-reach web read was used to verify available full text. The speech's full text and date were available through web_search; its fallback read encountered rate limiting and was not retried. Dynamic navigation, related stories, and quote widgets were excluded from the evidence."
+}

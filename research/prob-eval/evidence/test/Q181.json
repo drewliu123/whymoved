@@ -1,0 +1,50 @@
+{
+  "qid": "Q181",
+  "as_of": "2026-07-11",
+  "kept": [
+    {
+      "excerpt": "The thirteenth flight test of Starship is preparing to launch as soon as Thursday, July 16. The 90-minute launch window will open at 5:45 p.m. CT. As is the case with all developmental testing, the schedule is dynamic and likely to change.",
+      "published_at": "2026-07-11",
+      "publisher": "r/SpaceXLounge — contemporaneous quotation of SpaceX's Flight 13 announcement",
+      "relevance": "A dated July 11 comment preserves SpaceX's announced launch window and schedule caveat before the experiment cutoff.",
+      "url": "https://www.reddit.com/r/SpaceXLounge/comments/1utxzzy/starship_flight_13_page_released/"
+    },
+    {
+      "excerpt": "SpaceX today (July 10) completed a brief static fire of the Starship Super Heavy booster tapped to launch the 13th test flight of the massive, mega-lift vehicle. Booster 20 — the latest Super Heavy to roll off the assembly line — was transported to the pad at SpaceX's Starbase, Texas, facility yesterday (July 9) and hoisted onto its support stand using the launch tower's stalwart \"Mechazilla\" chopstick arms.",
+      "published_at": "2026-07-10T16:13:48Z",
+      "publisher": "Space.com — Josh Dinner",
+      "relevance": "Completion of the flight-assigned booster's engine test is a recent, concrete milestone toward launch readiness.",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-all-33-powerful-engines-on-starship-booster-test-ahead-of-flight-13-test-launch"
+    },
+    {
+      "excerpt": "Ship 40 conducted its first-ever static fire last week, lighting a single Raptor for about 15 seconds. This more recent test involved all six Raptors and lasted a full minute, according to SpaceX. Ship 40 will take part in the second \"Version 3\" (V3) Starship launch; SpaceX debuted the updated rocket prototype during a test flight on May 22.",
+      "published_at": "2026-07-02T22:00:00Z",
+      "publisher": "Space.com",
+      "relevance": "The upper stage assigned to Flight 13 had completed both single-engine and full six-engine ground tests before the cutoff.",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-all-6-of-starships-engines-ahead-of-13th-test-flight-video"
+    },
+    {
+      "excerpt": "The company has already completed a static fire test ahead of Starship Flight 13, a key milestone as SpaceX works to demonstrate more advanced capabilities for the massive spacecraft. Dr. Don Platt, an aerospace expert with Florida Tech, says reaching an operational orbital status is critical for SpaceX's future plans, including potential Starship launches from Florida's Space Coast.",
+      "published_at": "2026-07-10T22:21:00-04:00",
+      "publisher": "WFTV — Melonie Holt",
+      "relevance": "Independent local reporting corroborates the recent testing milestone and provides expert context for the program's development priorities.",
+      "url": "https://www.wftv.com/news/local/spacex-prepares-starship-flight-13-company-works-toward-orbital-operations-florida-launches/PQSBT6WZ4JC77LFTN3XFSSETRQ/"
+    },
+    {
+      "excerpt": "SpaceX launched the newest version of its giant Starship rocket Friday (May 22), from a recently completed second pad at its Starbase manufacturing and test facility in South Texas. Liftoff occurred at 6:30 p.m. EDT (2230 GMT), sending the massive 408-foot-tall (124-meter) vehicle skyward on its 12th suborbital test flight. It was the first Starship mission since October 2025, and the first-ever flight of Starship Version 3 (V3), a next-generation build of the rocket that features a complete design overhaul meant to evolve the vehicle toward operational missions.",
+      "published_at": "2026-05-23T00:32:57Z",
+      "publisher": "Space.com",
+      "relevance": "Establishes that Flight 12 had launched and the V3 vehicle and second launch pad had flown, while documenting the preceding long gap in launch cadence.",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-v3-megarocket-first-test-flight"
+    },
+    {
+      "excerpt": "Since SpaceX upgraded from its first version of Starship (used in Flights 1 through 6) to its second version (beginning with Flight 7), three of the five subsequent flight tests (Flights 7, 8, and 9) underperformed, with each flight test ending with a loss of the Starship vehicle. According to HLS Program management, with each mishap, there is an estimated 1- to 3-month impact to the schedule. While the next two flight tests (Flights 10 and 11) performed successfully, in November 2025, the Starship booster for the subsequent flight test (Flight 12)—the first flight test that will use the third version of the lander—experienced an anomaly during ground testing.",
+      "published_at": "2026-03-10",
+      "publisher": "NASA Office of Inspector General — report IG-26-004",
+      "relevance": "Provides an official historical benchmark for schedule delays following development mishaps, which can affect the timing of the next launch.",
+      "url": "https://oig.nasa.gov/wp-content/uploads/2026/03/final-report-ig-26-004-nasas-management-of-the-human-landing-system-contracts.pdf"
+    }
+  ],
+  "removed": [],
+  "search_notes": "Frozen cutoff: 2026-07-11. Included only explicitly dated publications or individually dated pre-cutoff text; no prediction-market pages, odds, or market prices were used. The July 11 schedule item is a contemporaneous quotation of SpaceX preserved in a dated Reddit comment, rather than the subsequently mutable official mission page. Only that pre-cutoff comment text is included. Dates and excerpts were verified through web_search's indexed source text; full-page retrieval could not be completed because web_fetch returned a provider-configuration error and the prescribed agent-reach web read fallback returned RATE_LIMITED. No retry or alternative backend was used after that rate limit. Later-dated material and later developments were excluded from this evidence pack. The NASA report's publication date is March 10, 2026, as printed on its cover; its historical findings should not be mistaken for July status."
+}

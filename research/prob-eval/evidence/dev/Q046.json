@@ -1,0 +1,52 @@
+{
+  "qid": "Q046",
+  "as_of": "2026-09-02",
+  "kept": [
+    {
+      "excerpt": "Among Republican primary voters, Elaine Pelino (37%) has a 20-percentage point lead over Aaron Guckian (17%) heading into the GOP primary for governor, while a whopping 44% of likely Republican primary voters reported they were still undecided. The survey was directed by Pell Center Associate Director and Fellow Katie Sonder and fielded by Embold Research between August 3-11, 2026. It surveyed 857 likely 2026 primary voters in Rhode Island with a margin of error of 3.6%.",
+      "published_at": "2026-08-18",
+      "publisher": "Salve Regina University, Pell Center",
+      "relevance": "Provides an original university polling release showing Pelino ahead but a very large undecided electorate; the stated sample size and margin of error cover the overall survey rather than an identified Republican subsample.",
+      "url": "https://salve.edu/news/news-listing/new-survey-foulkes-leads-mckee-governors-race-reed-holds-strong-senate-lead-other-races-remain"
+    },
+    {
+      "excerpt": "Guckian, 50, a former aide to Gov. Don Carcieri who also ran for lieutenant governor in 2022, launched his 2026 campaign as a “compassionate conservative” focused on affordability and government efficiency. Pelino, 72, a first-time candidate, proudly proclaims herself as the “only MAGA candidate” in the primary, promising to keep the left-leaning state from continuing down a path toward “socialism.” The two GOP rivals also espoused similar conservative talking points about increasing government efficiency and accountability while reducing state spending and taxes.",
+      "published_at": "2026-08-12",
+      "publisher": "Rhode Island Current, Nancy Lavin",
+      "relevance": "Documents the candidates’ first televised debate and the ideological division between Pelino’s MAGA appeal and Guckian’s moderate positioning.",
+      "url": "https://rhodeislandcurrent.com/2026/08/12/guckian-and-pelino-trade-accusations-over-resumes-and-radio-comments-in-first-tv-debate/"
+    },
+    {
+      "excerpt": "For the quarter ending June 30, Aaron Guckian reported $9,088.49 in donations, $61,011.55 in spending and $30,190.38 in cash on hand. Elaine Pelino reported $2,124.99 in donations, $2,022.68 in spending and $3,142.95 in cash on hand. Second-quarter campaign finance reports were due to the Rhode Island Board of Elections by 11:59 p.m. on July 31.",
+      "published_at": "2026-08-03",
+      "publisher": "Rhode Island Current staff",
+      "relevance": "Quantifies Guckian’s substantial campaign spending and cash advantages over Pelino using contemporaneous reporting on state campaign disclosures.",
+      "url": "https://rhodeislandcurrent.com/2026/08/03/democratic-challengers-foulkes-and-khamsyvoravong-widen-cash-leads-over-incumbents-in-q2/"
+    },
+    {
+      "excerpt": "The survey also took the pulse of 145 Republican primary voters in a three-way gubernatorial contest between Aaron Guckian, Elaine Pelino and Robert Raimondo, though Raimondo has since withdrawn. Pelino, a former comedian and first-time candidate, was backed by more than four in 10 primary voters, while Guckian, the state GOP’s endorsed candidate, received 17% support. Another four in 10 Republican primary voters were undecided, according to the survey. The margin of error for questions specific to Republican primary voters was 8.1%.",
+      "published_at": "2026-07-01",
+      "publisher": "Rhode Island Current, Nancy Lavin",
+      "relevance": "Supplies an earlier independent UNH polling benchmark with explicit Republican sample uncertainty and notes that its fieldwork preceded Guckian’s party endorsement.",
+      "url": "https://rhodeislandcurrent.com/2026/07/01/mckee-picks-up-steam-in-new-unh-poll-but-foulkes-still-democratic-front-runner/"
+    },
+    {
+      "excerpt": "Guckian secured the Republican endorsement over primary rival Elaine Pelino by a 72-44 vote, with 10 participants opting not to endorse, according to information supplied by William Ricci Jr., secretary for the state party convention. Endorsements were made by secret ballot. Party-endorsed candidates get top placement on primary ballots.",
+      "published_at": "2026-06-26",
+      "publisher": "Rhode Island Current, Nancy Lavin",
+      "relevance": "Establishes the party organization’s preference for Guckian and the ballot-placement benefit accompanying that endorsement.",
+      "url": "https://rhodeislandcurrent.com/2026/06/26/ri-gop-endorses-aaron-guckian-for-governor/"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.aol.com/articles/meet-candidates-aaron-guckian-ri-224518000.html",
+      "reason": "Although published before the cutoff, the excerpt and relevance explicitly mention voting scheduled for September 9, 2026, after the September 2 cutoff; excluded under the instruction to remove mentions of anything after the cutoff."
+    },
+    {
+      "url": "https://apps.ri.gov/press/view/50774",
+      "reason": "Although published before the cutoff, the excerpt and relevance explicitly mention the September 9, 2026 primary date, after the September 2 cutoff; excluded under the instruction to remove mentions of anything after the cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-09-02, inclusive. Included only dated material published on or before that date; excluded later reporting, results pages, undated current-status aggregators, and prediction-market or betting material. Publication dates were checked against article text, structured publication metadata, or the official release date. The September 1 WPRI item was published September 1 and its fetched page displays an update on September 2, both within the cutoff. The official April 23 release was verified in web_search and through its dated EIN Presswire reproduction. web_fetch failed because of a provider configuration error; agent-reach web read supplied article bodies until its web channel reported a rate limit, after which no further Reach requests were made. Two distinct pre-cutoff polling organizations were located: UNH and Pell Center/Embold; coverage repeating the same poll was not counted as independent polling. The Pell Center’s 3.6% margin of error is for its overall sample and should not be applied automatically to the Republican subgroup. Contemporaneous official scheduling information gives September 9, 2026 as the primary date. No outcome or forecast is included."
+}

@@ -1,0 +1,44 @@
+{
+ "qid": "Q084",
+ "question": "US announces end of Iranian blockade by August 15, 2026?",
+ "rules": "On July 13, 2026, Trump announced the United States would reinstate its naval blockade of Iran, targeting Iranian ships and customers.\n\nThis market will resolve to “Yes” if the United States government, or an authorized representative of the United States government, publicly and officially announces the end, termination, lifting, or suspension of the United States’ naval blockade on Iranian ships and ships of Iranian customers, between market creation and the specified date, 11:59 PM ET. Otherwise, this market will resolve to “No”.\n\nAn announcement qualifies if it communicates that the United States will generally cease blocking vessel traffic for Iranian ships and customers, including an announcement that the blockade will not take effect at all, even if some restrictions remain (for example, an imposition of fees). An announcement does not qualify if it reflects only a limited or partial change that stops short of a general end or suspension of the blockade, for example, an exemption for a specific vessel, cargo, or port.\n\nA qualifying announcement must be a declarative statement of the United States government’s present termination or suspension of the blockade, previously-unan",
+ "as_of": "2026-08-02",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Roya News, quoting U.S. Central Command",
+   "published_at": "2026-08-02",
+   "excerpt": "US Central Command (CENTCOM) said its forces continue to enforce the naval blockade reimposed on Iran last month, as the US military expands maritime operations in the region. In its latest update, CENTCOM said that, as of Aug. 2, US forces have redirected 35 commercial vessels, disabled two, and boarded two as part of the blockade."
+  },
+  {
+   "id": "E2",
+   "publisher": "Reuters via MarketScreener; published August 1 and updated August 2, 2026",
+   "published_at": "2026-08-02",
+   "excerpt": "President Donald Trump has said the U.S. will hold off on a fresh attack on Iran as long as a deal can be reached quickly to halt Iran's nuclear ambitions and reopen the Strait of Hormuz. Iran's official news agency IRNA reported on Sunday that negotiations between Tehran and Oman over the Strait of Hormuz were in their final stages, citing Iran's Foreign Minister Abbas Araqchi."
+  },
+  {
+   "id": "E3",
+   "publisher": "Associated Press",
+   "published_at": "2026-08-02",
+   "excerpt": "President Donald Trump said Sunday he decided to hold off on ordering American forces to carry out new strikes against Iran at the urging of Gulf allies Qatar, Saudi Arabia and the United Arab Emirates. A regional official said the proposal announced by Trump over the weekend calls for the U.S. and Iran to return to negotiations and continue working out many of the issues that have stymied prior progress on the deal."
+  },
+  {
+   "id": "E4",
+   "publisher": "Critical Threats Project / Institute for the Study of War",
+   "published_at": "2026-08-02",
+   "excerpt": "IRGC-affiliated Fars News denied on August 2 that Iran agreed to a plan to reopen the strait. An informed Iranian military source told Fars News that the strait will remain closed as long as the United States continues to conduct “hostile actions.” The source added that vessels can only transit through Iran's traffic separation scheme and with permission from the IRGC Navy."
+  },
+  {
+   "id": "E5",
+   "publisher": "Associated Press",
+   "published_at": "2026-07-31",
+   "excerpt": "The White House on Friday signaled that President Donald Trump is weighing carrying out new strikes on Iran as the U.S. presses for Tehran to reopen the Strait of Hormuz and abide by terms set out in a truce agreement the two sides forged last month only to quickly collapse."
+  },
+  {
+   "id": "E6",
+   "publisher": "U.S. Central Command",
+   "published_at": "2026-07-13",
+   "excerpt": "At the Commander in Chief's direction, U.S. Central Command (CENTCOM) forces will resume blockading maritime traffic entering and exiting Iranian ports on July 14 at 4 p.m. ET. CENTCOM forces will enforce the blockade against vessels transiting to or from Iranian ports and coastal areas. The U.S. military continues to support traffic flow through regional waters for all vessels not violating the blockade. The resumption of the U.S. blockade against Iran follows the initial implementation from April 13 to June 18."
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+  "as_of": "2026-10-31T05:12:10.269507Z",
+  "contract": {
+    "hypothesis_id": "H2",
+    "mode": "independent",
+    "question": "截至2026-12-31 23:59 ET首次公布的NVIDIA Q3 FY2027总收入是否严格超过1089.9亿美元？",
+    "yes_means": "窗口内首次发布的Q3 FY2027官方财报总收入严格大于108.99 billion USD。等于阈值为NO；截止前未发布或未披露该指标为NO；采用首次材料最精确数值，不计后续修订。",
+    "window_start": "2026-10-31T05:12:10.269507Z",
+    "window_end": "2027-01-01T04:59:00Z",
+    "resolution_source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/；以NVIDIA IR该季度首次业绩新闻稿或首次监管财报总收入为准，11月17为计划披露日，12月31 23:59 ET为截止。",
+    "evidence_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "C1",
+      "text": "NVIDIA 2026-08-26公布截至2026-07-26的Q2 FY2027：总收入962.21亿美元，数据中心收入890亿美元；non-GAAP毛利率75.0%。",
+      "type": "fact",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA IR",
+          "tier": "T0",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "公司对Q3 FY2027总收入指引为1080亿美元±2%，non-GAAP毛利率指引74.0%±50基点；指引不假设中国Data Center compute收入。",
+      "type": "fact",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "publisher": "NVIDIA IR",
+          "tier": "T0",
+          "published_at": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "公司2026-10-28公告：截至2026-10-25的Q3 FY2027业绩将于2026-11-17约13:20 PT公布，电话会14:00 PT/17:00 ET。",
+      "type": "fact",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+          "publisher": "NVIDIA IR",
+          "tier": "T0",
+          "published_at": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "Zacks 2026-10-30汇总的当季收入预期为1089.9亿美元，当季EPS预期2.49美元，后者30天上调1%；本次未取得样本人数与EPS完整调整口径。",
+      "type": "consensus",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://www.zacks.com/stock/news/3019405/nvidia-corporation-nvda-is-attracting-investor-attention-here-is-what-you-should-know",
+          "publisher": "Zacks",
+          "tier": "T1",
+          "published_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "Zacks 2026-10-30称，过去四季NVIDIA均超过其收入和EPS估计；上季收入962.2亿美元相对其918亿美元估计高4.82%，上季EPS为2.22美元。",
+      "type": "consensus",
+      "as_of": "2026-10-31T05:12:10.269507Z",
+      "sources": [
+        {
+          "url": "https://www.zacks.com/stock/news/3019405/nvidia-corporation-nvda-is-attracting-investor-attention-here-is-what-you-should-know",
+          "publisher": "Zacks",
+          "tier": "T1",
+          "published_at": "2026-10-30"
+        }
+      ]
+    }
+  ]
+}

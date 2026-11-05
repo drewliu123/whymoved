@@ -1,0 +1,255 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-02T05:04:00Z",
+  "historical": true,
+  "candidates": [
+    {
+      "id": "M1",
+      "url": "https://www.axios.com/2026/10/07/trump-us-central-command-iran-israel-war-elections",
+      "canonical_url": "https://www.axios.com/2026/10/07/trump-us-central-command-iran-israel-war-elections",
+      "publisher": "Axios",
+      "tier": "T2",
+      "published_at": "2026-10-07",
+      "retrieved_at": "2026-11-02T05:06:17.517294+00:00",
+      "quote": "",
+      "locator": "HTTP 403; search result Q1 rank 30",
+      "origin_id": "axios-20261007-centcom-preparations",
+      "origin_basis": "Original Axios reporting",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "reason": "Preparation order lead only; no original text or timing obtained",
+        "relevance": "direct",
+        "purpose": "T4/T5 military discrimination evidence",
+        "priority": "useful"
+      },
+      "provenance": {
+        "query_id": "Q1",
+        "engine_rank": 30
+      }
+    },
+    {
+      "id": "M2",
+      "url": "https://www.axios.com/2026/10/29/brad-cooper-briefs-trump-iran-naval-blockade",
+      "canonical_url": "https://www.axios.com/2026/10/29/brad-cooper-briefs-trump-iran-naval-blockade",
+      "publisher": "Axios",
+      "tier": "T2",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T05:06:17.517294+00:00",
+      "quote": "",
+      "locator": "HTTP 403; search result Q1 rank 4",
+      "origin_id": "axios-20261029-cooper-briefing",
+      "origin_basis": "Original Axios reporting",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "failed",
+      "selection": {
+        "selected": false,
+        "reason": "Competing naval-pressure explanation lead; original text unavailable",
+        "relevance": "direct",
+        "purpose": "T4/T5 military discrimination evidence",
+        "priority": "useful"
+      },
+      "provenance": {
+        "query_id": "Q1",
+        "engine_rank": 4
+      }
+    },
+    {
+      "id": "M3",
+      "url": "https://wdsm710.com/2026/09/02/trump-aides-fearing-a-midterm-rout-push-to-keep-iran-war-quiet-for-now/",
+      "canonical_url": "https://wdsm710.com/2026/09/02/trump-aides-fearing-a-midterm-rout-push-to-keep-iran-war-quiet-for-now/",
+      "publisher": "Reuters via WDSM",
+      "tier": "T2",
+      "published_at": "2026-09-02",
+      "retrieved_at": "2026-11-02T05:06:17.517294+00:00",
+      "quote": "Trump aides seek ‘quiet’ in Iran war but say attacks may intensify after November elections",
+      "locator": "Headline; body paragraphs exclude byline; article supplied by fetch extractor",
+      "origin_id": "reuters-20260902-quiet-midterms",
+      "origin_basis": "Reuters article syndicated by WDSM",
+      "supports": [
+        "view"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": false,
+        "reason": "Historical attributed reporting only; no independent origin or November validity verification; not admitted as current military fact",
+        "relevance": "direct",
+        "purpose": "T4/T5 military discrimination evidence",
+        "priority": "useful"
+      },
+      "provenance": {
+        "query_id": "Q4",
+        "engine_rank": 15
+      },
+      "publication_details": {
+        "displayed_time": "5:07 a.m.",
+        "timezone": "unknown",
+        "updated_at": "unknown",
+        "byline": [
+          "Nandita Bose",
+          "Humeyra Pamuk",
+          "Gram Slattery"
+        ]
+      },
+      "observations": [
+        {
+          "test_id": "T5",
+          "locator": "Opening section paragraph 2",
+          "paraphrase": "Military characterized latest strikes as retaliation for earlier attacks targeting US troops and shipping; motive is attributed to military, not independently verified."
+        },
+        {
+          "test_id": "T5",
+          "locator": "Opening section paragraph 11",
+          "paraphrase": "Article reports strikes against launchers on Larak Island and subsequent strikes near Hormuz. No new November incident verified."
+        },
+        {
+          "test_id": "T4",
+          "locator": "Opening section paragraph 7; section after paragraph 18, paragraphs 1–4",
+          "paraphrase": "Anonymous sources discussed ammunition replenishment; prior Reuters and Washington Post inventory reports are referenced, not independently retrieved. Pentagon said resources sufficient for assigned mission."
+        }
+      ],
+      "gaps": [
+        "Exact body quote not returned by extractor; only paraphrases available",
+        "No primary strike release or independently sourced verification",
+        "September assessments not verified as current November constraints",
+        "No precise public-availability timestamp or archive evidence for cutoff",
+        "No Pickaxe Mountain or nuclear reconstruction threshold in retrieved text"
+      ]
+    },
+    {
+      "id": "M4",
+      "url": "https://www.dvidshub.net/news/576379/centcom-maintains-strict-enforcement-us-blockade-against-iran",
+      "canonical_url": "https://www.dvidshub.net/news/576379/centcom-maintains-strict-enforcement-us-blockade-against-iran",
+      "publisher": "CENTCOM via DVIDS",
+      "tier": "T0",
+      "published_at": "2026-10-05",
+      "retrieved_at": "2026-11-02T05:06:17.517294+00:00",
+      "quote": "",
+      "locator": "Q3 search summary only",
+      "origin_id": "centcom-20261005-blockade",
+      "origin_basis": "CENTCOM release syndicated by DVIDS; body not obtained",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "Official blockade candidate; unopen due budget; no admissible original quotation",
+        "relevance": "direct",
+        "purpose": "T4/T5 military discrimination evidence",
+        "priority": "useful"
+      },
+      "provenance": {
+        "query_id": "Q3",
+        "engine_rank": 4
+      }
+    },
+    {
+      "id": "M5",
+      "url": "https://www.axios.com/2026/11/01/trump-netanyahu-iran-negotiations-war",
+      "canonical_url": "https://www.axios.com/2026/11/01/trump-netanyahu-iran-negotiations-war",
+      "publisher": "Axios",
+      "tier": "T2",
+      "published_at": "2026-11-01",
+      "retrieved_at": "2026-11-02T05:06:17.517294+00:00",
+      "quote": "",
+      "locator": "Q2 search summary only",
+      "origin_id": "axios-20261101-trump-netanyahu",
+      "origin_basis": "Original Axios reporting",
+      "supports": [],
+      "evidence_kind": "document",
+      "access_status": "snippet",
+      "selection": {
+        "selected": false,
+        "reason": "Israeli pressure lead only; not proof US authorization or independent Israeli action",
+        "relevance": "direct",
+        "purpose": "T4/T5 military discrimination evidence",
+        "priority": "useful"
+      },
+      "provenance": {
+        "query_id": "Q2",
+        "engine_rank": 1
+      }
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "Iran US military strike preparations October November 2026 Reuters November 1 2026 CENTCOM",
+      "test_ids": [
+        "T4",
+        "T5"
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "Q2",
+      "query": "site.axios.com 2026 Iran November October Trump military strike election",
+      "test_ids": [
+        "T4"
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "Q3",
+      "query": "site.centcom.mil October 2026 Iran November blockade forces attack deployment",
+      "test_ids": [
+        "T4"
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "Q4",
+      "query": "Reuters October 2026 Iran Trump strikes nuclear rebuilding American troops ships attacked military targets preparations November",
+      "test_ids": [
+        "T4",
+        "T5"
+      ],
+      "status": "ok"
+    }
+  ],
+  "budget": {
+    "search_used": 4,
+    "search_max": 4,
+    "open_used": 3,
+    "open_max": 3
+  },
+  "source_status": {
+    "axios": {
+      "status": "unreachable",
+      "reason": "Two original fetches returned HTTP 403"
+    },
+    "reuters_syndication": {
+      "status": "partial",
+      "reason": "WDSM original article accessible via extractor; exact body paragraphs not returned; historical validity not verified"
+    },
+    "centcom_dod": {
+      "status": "not_run",
+      "reason": "CENTCOM/DVIDS official lead surfaced; no opening budget remaining; DoD not directly searched"
+    },
+    "AP": {
+      "status": "not_run",
+      "reason": "User reports repeated failures; avoided"
+    }
+  },
+  "tests": [
+    {
+      "test_id": "T4",
+      "observation": "Anonymous preparations-order search lead contrasts with blockade briefing lead; both Axios originals 403. September Reuters replenishment discussion is historical only.",
+      "missing": "New force deployment, operational-ready date, approved order, target list, current inventories and partner basing/access restrictions remain unverified."
+    },
+    {
+      "test_id": "T5",
+      "observation": "September Reuters article attributes prior retaliatory strike rationale to military following attacks on US forces and shipping.",
+      "missing": "No new qualifying attack, reconstruction threshold, Israeli independent execution or automatic US response authorization verified."
+    }
+  ],
+  "gaps": [
+    "No inference on H1/H2/H3 support or on 34.5% market edge is made",
+    "Unknown later-page modification and historical availability prohibit strict cutoff admission",
+    "Key unvisited sources: primary CENTCOM strike announcements, DoD readiness statement, independently readable Axios preparation reporting, nuclear reconstruction imagery/IAEA and exact presidential trigger language"
+  ]
+}

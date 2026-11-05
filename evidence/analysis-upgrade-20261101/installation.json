@@ -1,0 +1,237 @@
+{
+  "result": "pass",
+  "plugin": "touyan@touyan-local",
+  "version": "0.4.0",
+  "installed_path": "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.4.0",
+  "records": [
+    {
+      "command": [
+        "claude",
+        "plugin",
+        "marketplace",
+        "update",
+        "touyan-local",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "marketplace-update.stdout.log",
+      "stderr": "marketplace-update.stderr.log"
+    },
+    {
+      "command": [
+        "claude",
+        "plugin",
+        "update",
+        "touyan@touyan-local",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "plugin-update.stdout.log",
+      "stderr": "plugin-update.stderr.log"
+    },
+    {
+      "command": [
+        "claude",
+        "plugin",
+        "validate",
+        "/Users/frankzhang/.claude/plugins/cache/touyan-local/touyan/0.4.0/.claude-plugin/plugin.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "installed-plugin-validate.stdout.log",
+      "stderr": "installed-plugin-validate.stderr.log"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "installed-tests.stdout.log",
+      "stderr": "installed-tests.stderr.log"
+    }
+  ],
+  "files": [
+    {
+      "path": ".claude-plugin/plugin.json",
+      "sha256": "d62221776eaf3a0c35a460a6ec9bcd3dfbe658074f35c93aac5f849ed8788440",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "e12535f80272b7c57b27a53af4b3ab941fd4a9d8846588ad18ab9f7c88bbc348",
+      "matches": true
+    },
+    {
+      "path": "agents/community-scout.md",
+      "sha256": "046a02bc902ef0b1778c267c42df969ab66dec78e641aaae487a038c0b467e72",
+      "matches": true
+    },
+    {
+      "path": "agents/fact-collector.md",
+      "sha256": "1af252815971dcba91e1bb0918a8d57e2e4d4d720d34449edb175a9e97630eca",
+      "matches": true
+    },
+    {
+      "path": "agents/forecaster.md",
+      "sha256": "1cf26b012d692ba1e5b827329c0660c0bc7243e2ea85aa079cf80dc7731ba4ca",
+      "matches": true
+    },
+    {
+      "path": "agents/red-team.md",
+      "sha256": "9733208ae8246de9aaac6e226c17219c17b5848763d94731d84f4be2987dbe17",
+      "matches": true
+    },
+    {
+      "path": "scripts/analysis_contract.py",
+      "sha256": "503771057490aa620c09aeb621dfb82a4a2a7208423727c61468369154f2ac22",
+      "matches": true
+    },
+    {
+      "path": "scripts/analysis_models.py",
+      "sha256": "d099e0e39f195307590a21890f452106a01b4004f15e62eb4528336d18469f73",
+      "matches": true
+    },
+    {
+      "path": "scripts/authors.py",
+      "sha256": "b30665e931a6f9c1d288f07dd3c689e4aa05b959c153601ff13d71f79b1d8b05",
+      "matches": true
+    },
+    {
+      "path": "scripts/check_claims.py",
+      "sha256": "13ad8ce4747c33800c640a727fc04038ae276b5bd01844b3483d0ef1907bbb1d",
+      "matches": true
+    },
+    {
+      "path": "scripts/common.py",
+      "sha256": "ae061a53718de0b808910021383d4abca6d043b4ef664d5cca98e89a6b3c7618",
+      "matches": true
+    },
+    {
+      "path": "scripts/forecast.py",
+      "sha256": "a058765616e5ea5280730f05c0a47d37482f1ec968e4eea05d817a0acbc8f404",
+      "matches": true
+    },
+    {
+      "path": "scripts/journal.py",
+      "sha256": "aba0147ddbdd9384ad1dad75f8cf779c686044f922126c63b2411f7024aa8535",
+      "matches": true
+    },
+    {
+      "path": "scripts/polymarket.py",
+      "sha256": "d9052cb68fd318a7555a3e7d4815adb75e566892ceac693f7673a38cd2dc3f45",
+      "matches": true
+    },
+    {
+      "path": "scripts/render_report.py",
+      "sha256": "a609d6f6e0a0d6ba280e87dd9802281cec61de308527384932339bf595e666d7",
+      "matches": true
+    },
+    {
+      "path": "scripts/research_plan.py",
+      "sha256": "8b1f4038511867560d67be28f837d895d4c556ad8a74f81fc134224e9a8f07c6",
+      "matches": true
+    },
+    {
+      "path": "scripts/research_run.py",
+      "sha256": "4f1a8358e15efe5a7566b5868d1d88ed06324162c92fb0226975f4c5c5071dba",
+      "matches": true
+    },
+    {
+      "path": "scripts/sources.py",
+      "sha256": "af515463667c7d5bc6f904c163acd424adf48c3c0b94990757a4b5e172bb0671",
+      "matches": true
+    },
+    {
+      "path": "skills/research/SKILL.md",
+      "sha256": "ad2426576b151596e1f041e4b3f37faf173876c2a3304874e7259e8e45ec7823",
+      "matches": true
+    },
+    {
+      "path": "skills/research/references/analysis-methods.md",
+      "sha256": "eeb4ea2ea5ea27284248750df98c4da78739b2ccb0373178085d6151066c06f7",
+      "matches": true
+    },
+    {
+      "path": "skills/research/references/evidence.md",
+      "sha256": "18245993af8e66859dc4ef0c6431810a8b1957033d7a32307241d74303a33c0a",
+      "matches": true
+    },
+    {
+      "path": "skills/research/references/expectations.md",
+      "sha256": "351e6ab3e97443953becf3b84200b68de9a409d202996d6f662b3f2b8be4e3b5",
+      "matches": true
+    },
+    {
+      "path": "skills/research/references/legacy-forecast.md",
+      "sha256": "f3b4f17117ccc55bd189599f57a0dba02ffd5fa5be2b5ab334430d0b1f165595",
+      "matches": true
+    },
+    {
+      "path": "skills/research/references/memo-template.md",
+      "sha256": "924114ada609fdb87ef5dd7c1b286c04efb6faae6a5db740602aca9776ca00d1",
+      "matches": true
+    },
+    {
+      "path": "skills/research/references/sources.md",
+      "sha256": "3c382a80fe99316739383cbc9978cff4c0d469df73b90b52275fbe7bfecc0be6",
+      "matches": true
+    },
+    {
+      "path": "skills/research/references/templates.md",
+      "sha256": "6b438ab877add48af9e99e6ebcf9e305daa518f2b2c7cbb31a167796abb5f070",
+      "matches": true
+    },
+    {
+      "path": "tests/analysis_fixtures.py",
+      "sha256": "18fe9aad940557d4ee5156cbdf5e7cf5aaa1995c8f34cdb653b83d4c348fb428",
+      "matches": true
+    },
+    {
+      "path": "tests/test_analysis_contract.py",
+      "sha256": "cf1cfd341547c6e4df1c399a9cab26e5ac870dee3ed9ab024ea9ae9bea2b912d",
+      "matches": true
+    },
+    {
+      "path": "tests/test_analysis_models.py",
+      "sha256": "7ed3f5d9a52dd4278c9c53c55bbae3830bcb8845748e69b9df0a348895410c96",
+      "matches": true
+    },
+    {
+      "path": "tests/test_evidence_v2.py",
+      "sha256": "98c21e4319a213f602f8c79add84cec68b3741a68bbbf53a5ab67ef49d42ed66",
+      "matches": true
+    },
+    {
+      "path": "tests/test_reports.py",
+      "sha256": "e181117eb3a9187013cfedc392722f7078e9f1e8ca320d465ec5b4e80e817001",
+      "matches": true
+    },
+    {
+      "path": "tests/test_research_plan.py",
+      "sha256": "2cf9c6fd3eae0e60e9f2548e4e6c61a1d12bcfc52160e776f343dbe16fcfb5a9",
+      "matches": true
+    },
+    {
+      "path": "tests/test_research_runs.py",
+      "sha256": "1b5a91527f4860c70215108be1adecafeddddbee2fb3ec2e7f7104da6326f611",
+      "matches": true
+    },
+    {
+      "path": "tests/test_scripts.py",
+      "sha256": "5ef965d7600291071d9258a52774736b750eea159c6c181acb6c876c4efd4853",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sources.py",
+      "sha256": "ecac392755cfa4175321ee67f96c1c6a34a6deff4434b28d682f27b88696ae45",
+      "matches": true
+    }
+  ],
+  "activation": "Restart or start a new session to load the updated plugin; current-session hot reload not verified."
+}

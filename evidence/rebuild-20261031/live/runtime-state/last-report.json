@@ -1,0 +1,1760 @@
+{
+  "schema": "last30days-report-cache/v2",
+  "topic": "Microsoft capex finance leases cash PP&E cash burden",
+  "timestamp": "2026-10-31T18:31:33.142393+00:00",
+  "comparison": false,
+  "x_envelope_sha256": null,
+  "research_options": {
+    "search": "hackernews",
+    "quick": false,
+    "deep": false,
+    "mock": false,
+    "web_backend": "auto",
+    "perplexity_search_type": null,
+    "hiring_signals": false,
+    "x_handle": null,
+    "x_related": null,
+    "official_site": null,
+    "no_x_handle": null,
+    "subreddits": null,
+    "dedicated_subreddits": null,
+    "devto_tags": null,
+    "tiktok_hashtags": null,
+    "tiktok_creators": null,
+    "ig_creators": null,
+    "max_results": null,
+    "max_per_source": null,
+    "max_source_fetches": null,
+    "auto_resolve": false,
+    "github_user": null,
+    "github_repo": null,
+    "trustpilot_domain": null,
+    "amazon_query": null,
+    "meta_ads_page": null,
+    "telegram_sources": null,
+    "competitors": null,
+    "competitors_list": null,
+    "polymarket_keywords": null,
+    "corpus_all_time": false,
+    "drill": null,
+    "corpus_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "plan": "1e59e880864ebdc63af8113caff1762ecdf7ee77bbf077cab1c7bf4591412c73",
+    "competitors_plan": null,
+    "config_sha256": "c6ad311f389549ffa4cad4f0bfc9dde7c9d1896a5753d544f4664e2b5615fc82"
+  },
+  "reports": [
+    {
+      "entity": "Microsoft capex finance leases cash PP&E cash burden",
+      "report": {
+        "topic": "Microsoft capex finance leases cash PP&E cash burden",
+        "range_from": "2025-10-31",
+        "range_to": "2026-10-31",
+        "generated_at": "2026-10-31T18:31:33.141894+00:00",
+        "provider_runtime": {
+          "reasoning_provider": "local",
+          "planner_model": "deterministic",
+          "rerank_model": "local-score"
+        },
+        "query_plan": {
+          "intent": "concept",
+          "freshness_mode": "evergreen_ok",
+          "cluster_mode": "none",
+          "raw_topic": "Microsoft capex finance leases cash PP&E cash burden",
+          "subqueries": [
+            {
+              "label": "primary",
+              "search_query": "Microsoft capex",
+              "ranking_query": "How do Microsoft capital expenditures and finance leases affect cash burden and free cash flow?",
+              "sources": [
+                "hackernews"
+              ],
+              "weight": 0.5555555555555556
+            },
+            {
+              "label": "leases",
+              "search_query": "Microsoft leases",
+              "ranking_query": "What do commenters say about Microsoft lease obligations, cash payments and data center investment accounting?",
+              "sources": [
+                "hackernews"
+              ],
+              "weight": 0.4444444444444445
+            }
+          ],
+          "source_weights": {
+            "hackernews": 1.0
+          },
+          "notes": []
+        },
+        "clusters": [
+          {
+            "cluster_id": "cluster-1",
+            "title": "Rust is tier-1 language at Microsoft",
+            "candidate_ids": [
+              "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft"
+            ],
+            "representative_ids": [
+              "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 41.168981726305894
+          },
+          {
+            "cluster_id": "cluster-2",
+            "title": "Trump administration is suspending Microsoft from a green card program",
+            "candidate_ids": [
+              "https://apnews.com/article/h1b-visa-program-vance-microsoft-e7b3a407f822702b269ee277d21343ea"
+            ],
+            "representative_ids": [
+              "https://apnews.com/article/h1b-visa-program-vance-microsoft-e7b3a407f822702b269ee277d21343ea"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 40.63625448028674
+          },
+          {
+            "cluster_id": "cluster-3",
+            "title": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+            "candidate_ids": [
+              "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal"
+            ],
+            "representative_ids": [
+              "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 40.551632513661204
+          },
+          {
+            "cluster_id": "cluster-4",
+            "title": "Dutch governments builds alternative for Microsoft based on NixOS",
+            "candidate_ids": [
+              "https://dawo.community/en"
+            ],
+            "representative_ids": [
+              "https://dawo.community/en"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 40.47398724732058
+          },
+          {
+            "cluster_id": "cluster-5",
+            "title": "Microsoft offers mass buyouts for roughly a quarter of its workforce",
+            "candidate_ids": [
+              "https://seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce"
+            ],
+            "representative_ids": [
+              "https://seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 40.020420567087235
+          },
+          {
+            "cluster_id": "cluster-6",
+            "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+            "candidate_ids": [
+              "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal"
+            ],
+            "representative_ids": [
+              "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 39.72787878787879
+          },
+          {
+            "cluster_id": "cluster-7",
+            "title": "Microsoft fire idTech team at Id software",
+            "candidate_ids": [
+              "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software"
+            ],
+            "representative_ids": [
+              "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 38.836470588235294
+          },
+          {
+            "cluster_id": "cluster-8",
+            "title": "Microsoft Comic Chat is now open source",
+            "candidate_ids": [
+              "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source"
+            ],
+            "representative_ids": [
+              "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 38.64134328358209
+          },
+          {
+            "cluster_id": "cluster-9",
+            "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+            "candidate_ids": [
+              "https://cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html"
+            ],
+            "representative_ids": [
+              "https://cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 38.5131884057971
+          },
+          {
+            "cluster_id": "cluster-10",
+            "title": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+            "candidate_ids": [
+              "https://windowslatest.com/2026/06/15/microsofts-new-outlook-takes-10-seconds-to-do-what-outlook-classic-does-instantly-on-windows"
+            ],
+            "representative_ids": [
+              "https://windowslatest.com/2026/06/15/microsofts-new-outlook-takes-10-seconds-to-do-what-outlook-classic-does-instantly-on-windows"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 38.01142857142857
+          },
+          {
+            "cluster_id": "cluster-11",
+            "title": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+            "candidate_ids": [
+              "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)"
+            ],
+            "representative_ids": [
+              "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 37.66112676056338
+          },
+          {
+            "cluster_id": "cluster-12",
+            "title": "Microsoft's \"fix\" for Windows 11",
+            "candidate_ids": [
+              "https://sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting"
+            ],
+            "representative_ids": [
+              "https://sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 36.22901234567901
+          },
+          {
+            "cluster_id": "cluster-13",
+            "title": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+            "candidate_ids": [
+              "https://techspot.com/news/112410-security-researcher-microsoft-secretly-built-backdoor-bitlocker-releases.html"
+            ],
+            "representative_ids": [
+              "https://techspot.com/news/112410-security-researcher-microsoft-secretly-built-backdoor-bitlocker-releases.html"
+            ],
+            "sources": [
+              "hackernews"
+            ],
+            "score": 35.03320987654321
+          }
+        ],
+        "ranked_candidates": [
+          {
+            "candidate_id": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft",
+            "item_id": "49643546",
+            "source": "hackernews",
+            "title": "Rust is tier-1 language at Microsoft",
+            "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+            "snippet": "Rust is tier-1 language at Microsoft",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 1,
+              "leases:hackernews": 2
+            },
+            "local_relevance": 0.1,
+            "freshness": 91,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.016275926905223576,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "49643546",
+                "source": "hackernews",
+                "title": "Rust is tier-1 language at Microsoft",
+                "body": "Rust is tier-1 language at Microsoft",
+                "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+                "author": "mmastrac",
+                "container": "Hacker News",
+                "published_at": "2026-09-10",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 730,
+                  "comments": 517
+                },
+                "relevance_hint": 0.64,
+                "why_relevant": "HN story about Rust is tier-1 language at Microsoft",
+                "snippet": "Rust is tier-1 language at Microsoft",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=49643546",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.1,
+                "freshness": 91,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.39249999999999996
+              }
+            ],
+            "rerank_score": 15.0,
+            "final_score": 41.168981726305894,
+            "explanation": "fallback-local-score",
+            "fun_score": 19.05,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-1",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 1,
+                  "item_id": "49643546"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 2,
+                  "item_id": "49643546"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://apnews.com/article/h1b-visa-program-vance-microsoft-e7b3a407f822702b269ee277d21343ea",
+            "item_id": "50006832",
+            "source": "hackernews",
+            "title": "Trump administration is suspending Microsoft from a green card program",
+            "url": "https://apnews.com/article/h1b-visa-program-vance-microsoft-e7b3a407f822702b269ee277d21343ea",
+            "snippet": "Trump administration is suspending Microsoft from a green card program",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 2,
+              "leases:hackernews": 4
+            },
+            "local_relevance": 0.08,
+            "freshness": 95,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.015905017921146954,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50006832",
+                "source": "hackernews",
+                "title": "Trump administration is suspending Microsoft from a green card program",
+                "body": "Trump administration is suspending Microsoft from a green card program",
+                "url": "https://apnews.com/article/h1b-visa-program-vance-microsoft-e7b3a407f822702b269ee277d21343ea",
+                "author": "alephnerd",
+                "container": "Hacker News",
+                "published_at": "2026-10-08",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 945,
+                  "comments": 1615
+                },
+                "relevance_hint": 0.75,
+                "why_relevant": "HN story about Trump administration is suspending Microsoft from a green ca",
+                "snippet": "Trump administration is suspending Microsoft from a green card program",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50006832",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.08,
+                "freshness": 95,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.38949999999999996
+              }
+            ],
+            "rerank_score": 13.6,
+            "final_score": 40.63625448028674,
+            "explanation": "fallback-local-score",
+            "fun_score": 18.85,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-2",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 2,
+                  "item_id": "50006832"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 4,
+                  "item_id": "50006832"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
+            "item_id": "49863864",
+            "source": "hackernews",
+            "title": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+            "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+            "snippet": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 4,
+              "leases:hackernews": 1
+            },
+            "local_relevance": 0.08,
+            "freshness": 94,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.01596653005464481,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "49863864",
+                "source": "hackernews",
+                "title": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+                "body": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+                "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+                "author": "papergirl",
+                "container": "Hacker News",
+                "published_at": "2026-09-27",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 632,
+                  "comments": 625
+                },
+                "relevance_hint": 0.56,
+                "why_relevant": "HN story about Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+                "snippet": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=49863864",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.08,
+                "freshness": 94,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.387
+              }
+            ],
+            "rerank_score": 13.6,
+            "final_score": 40.551632513661204,
+            "explanation": "fallback-local-score",
+            "fun_score": 14.25,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-3",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 4,
+                  "item_id": "49863864"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 1,
+                  "item_id": "49863864"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://dawo.community/en",
+            "item_id": "49841563",
+            "source": "hackernews",
+            "title": "Dutch governments builds alternative for Microsoft based on NixOS",
+            "url": "https://www.dawo.community/en/",
+            "snippet": "Dutch governments builds alternative for Microsoft based on NixOS",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 3,
+              "leases:hackernews": 5
+            },
+            "local_relevance": 0.08,
+            "freshness": 94,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.015655948989282326,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "49841563",
+                "source": "hackernews",
+                "title": "Dutch governments builds alternative for Microsoft based on NixOS",
+                "body": "Dutch governments builds alternative for Microsoft based on NixOS",
+                "url": "https://www.dawo.community/en/",
+                "author": "fjfaase",
+                "container": "Hacker News",
+                "published_at": "2026-09-25",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 1021,
+                  "comments": 584
+                },
+                "relevance_hint": 0.8,
+                "why_relevant": "HN story about Dutch governments builds alternative for Microsoft based on",
+                "snippet": "Dutch governments builds alternative for Microsoft based on NixOS",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=49841563",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.08,
+                "freshness": 94,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.387
+              }
+            ],
+            "rerank_score": 13.6,
+            "final_score": 40.47398724732058,
+            "explanation": "fallback-local-score",
+            "fun_score": 10.35,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-4",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 3,
+                  "item_id": "49841563"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 5,
+                  "item_id": "49841563"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce",
+            "item_id": "50245524",
+            "source": "hackernews",
+            "title": "Microsoft offers mass buyouts for roughly a quarter of its workforce",
+            "url": "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/",
+            "snippet": "Ex-MSFT here. I resigned in June, I was an L63. I spent 8 years at MSFT across two stints. My last 18 months at MSFT were deeply unproductive. Constant reorgs, the work not being aligned to my capabilities and unfortunately just the general feeling that I was under worked and had very little opportu... 60k workers, 1/4 of the workers. This is a big deal. It also really puts you into a bind if you receive the offer. Do you accept, take the money, and hope you can find a job (Now competing with many other Msft employees that are looking). Do you decline and hope you don't get hit with the layoff wh... The mass buyout offer to 25%...",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 5,
+              "leases:hackernews": 3
+            },
+            "local_relevance": 0.06,
+            "freshness": 98,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.015601682268348935,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "50245524",
+                "source": "hackernews",
+                "title": "Microsoft offers mass buyouts for roughly a quarter of its workforce",
+                "body": "Microsoft offers mass buyouts for roughly a quarter of its workforce\nEx-MSFT here. I resigned in June, I was an L63. I spent 8 years at MSFT across two stints.\nMy last 18 months at MSFT were deeply unproductive. Constant reorgs, the work not being aligned to my capabilities and unfortunately just the general feeling that I was under worked and had very little opportu... 60k workers, 1/4 of the workers. This is a big deal. It also really puts you into a bind if you receive the offer. Do you accept, take the money, and hope you can find a job  (Now competing with many other Msft employees that are looking). Do you decline and hope you don't get hit with the layoff wh... The mass buyout offer to 25% of Microsoft's workforce comes less than a week after Microsoft President Brad Smith proclaimed to employees: 'We stand by our people. We always have. We always will.' in a video he posted to LinkedIn.\nhttps://www.linkedin.com/feed/update/urn:li:activity:7518428...",
+                "url": "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/",
+                "author": "doctorzook",
+                "container": "Hacker News",
+                "published_at": "2026-10-26",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 1082,
+                  "comments": 1172
+                },
+                "relevance_hint": 0.86,
+                "why_relevant": "HN story about Microsoft offers mass buyouts for roughly a quarter of its w",
+                "snippet": "Ex-MSFT here. I resigned in June, I was an L63. I spent 8 years at MSFT across two stints. My last 18 months at MSFT were deeply unproductive. Constant reorgs, the work not being aligned to my capabilities and unfortunately just the general feeling that I was under worked and had very little opportu... 60k workers, 1/4 of the workers. This is a big deal. It also really puts you into a bind if you receive the offer. Do you accept, take the money, and hope you can find a job (Now competing with many other Msft employees that are looking). Do you decline and hope you don't get hit with the layoff wh... The mass buyout offer to 25%...",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=50245524",
+                  "top_comments": [
+                    {
+                      "excerpt": "Ex-MSFT here. I resigned in June, I was an L63. I spent 8 years at MSFT across two stints.\nMy last 18 months at MSFT were deeply unproductive. Constant reorgs, the work not being aligned to my capabilities and unfortunately just the general feeling that I was under worked and had very little opportu...",
+                      "author": "AbbeFaria",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50248103"
+                    },
+                    {
+                      "excerpt": "60k workers, 1/4 of the workers. This is a big deal. It also really puts you into a bind if you receive the offer. Do you accept, take the money, and hope you can find a job  (Now competing with many other Msft employees that are looking). Do you decline and hope you don't get hit with the layoff wh...",
+                      "author": "ecshafer",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50245779"
+                    },
+                    {
+                      "excerpt": "The mass buyout offer to 25% of Microsoft's workforce comes less than a week after Microsoft President Brad Smith proclaimed to employees: 'We stand by our people. We always have. We always will.' in a video he posted to LinkedIn.\nhttps://www.linkedin.com/feed/update/urn:li:activity:7518428...",
+                      "author": "theodpHN",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50248274"
+                    },
+                    {
+                      "excerpt": "My former boss at Microsoft told me this sort of thing is a good way to get rid of your best, most employable employees. I guess he didn\u2019t pass the memo up the chain.",
+                      "author": "christophilus",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50246330"
+                    },
+                    {
+                      "excerpt": "The way these companies are run so cut-throat while also being worth a trillion dollars is such a fundamental systemic failure.\nTo say that it's because Microsoft overhired is a gross mis-remembering of the last 20 years.\nFor starters, I remember way back in the late 2000s meeting an engineer from t...",
+                      "author": "jarjoura",
+                      "date": "",
+                      "url": "https://news.ycombinator.com/item?id=50249794"
+                    }
+                  ],
+                  "comment_insights": [
+                    "Ex-MSFT here",
+                    "60k workers, 1/4 of the workers",
+                    "The mass buyout offer to 25% of Microsoft's workforce comes less than a week after Microsoft President Brad Smith proclaimed to employees: 'We stand by our people",
+                    "My former boss at Microsoft told me this sort of thing is a good way to get rid of your best, most employable employees",
+                    "The way these companies are run so cut-throat while also being worth a trillion dollars is such a fundamental systemic failure."
+                  ]
+                },
+                "local_relevance": 0.06,
+                "freshness": 98,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.384
+              }
+            ],
+            "rerank_score": 12.2,
+            "final_score": 40.020420567087235,
+            "explanation": "fallback-local-score",
+            "fun_score": 0.0,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-5",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 5,
+                  "item_id": "50245524"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 3,
+                  "item_id": "50245524"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+            "item_id": "49752056",
+            "source": "hackernews",
+            "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+            "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+            "snippet": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 6,
+              "leases:hackernews": 6
+            },
+            "local_relevance": 0.07,
+            "freshness": 92,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.015151515151515152,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "49752056",
+                "source": "hackernews",
+                "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+                "body": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+                "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+                "author": "pluc",
+                "container": "Hacker News",
+                "published_at": "2026-09-18",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 955,
+                  "comments": 841
+                },
+                "relevance_hint": 0.76,
+                "why_relevant": "HN story about Microsoft exec called AI scraping 'the largest theft of labo",
+                "snippet": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=49752056",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.07,
+                "freshness": 92,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.37550000000000006
+              }
+            ],
+            "rerank_score": 12.9,
+            "final_score": 39.72787878787879,
+            "explanation": "fallback-local-score",
+            "fun_score": 6.1499999999999995,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-6",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 6,
+                  "item_id": "49752056"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 6,
+                  "item_id": "49752056"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software",
+            "item_id": "48819244",
+            "source": "hackernews",
+            "title": "Microsoft fire idTech team at Id software",
+            "url": "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software/",
+            "snippet": "Microsoft fire idTech team at Id software",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 8,
+              "leases:hackernews": 8
+            },
+            "local_relevance": 0.08,
+            "freshness": 80,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.014705882352941176,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "48819244",
+                "source": "hackernews",
+                "title": "Microsoft fire idTech team at Id software",
+                "body": "Microsoft fire idTech team at Id software",
+                "url": "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software/",
+                "author": "bauc",
+                "container": "Hacker News",
+                "published_at": "2026-07-07",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 676,
+                  "comments": 602
+                },
+                "relevance_hint": 0.62,
+                "why_relevant": "HN story about Microsoft fire idTech team at Id software",
+                "snippet": "Microsoft fire idTech team at Id software",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=48819244",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.08,
+                "freshness": 80,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.352
+              }
+            ],
+            "rerank_score": 13.6,
+            "final_score": 38.836470588235294,
+            "explanation": "fallback-local-score",
+            "fun_score": 17.549999999999997,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-7",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 8,
+                  "item_id": "48819244"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 8,
+                  "item_id": "48819244"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source",
+            "item_id": "48936426",
+            "source": "hackernews",
+            "title": "Microsoft Comic Chat is now open source",
+            "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+            "snippet": "Microsoft Comic Chat is now open source",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 7,
+              "leases:hackernews": 7
+            },
+            "local_relevance": 0.08,
+            "freshness": 82,
+            "engagement": 97,
+            "source_quality": 0.8,
+            "rrf_score": 0.01492537313432836,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "48936426",
+                "source": "hackernews",
+                "title": "Microsoft Comic Chat is now open source",
+                "body": "Microsoft Comic Chat is now open source",
+                "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+                "author": "jervant",
+                "container": "Hacker News",
+                "published_at": "2026-07-16",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 814,
+                  "comments": 178
+                },
+                "relevance_hint": 0.69,
+                "why_relevant": "HN story about Microsoft Comic Chat is now open source",
+                "snippet": "Microsoft Comic Chat is now open source",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=48936426",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.08,
+                "freshness": 82,
+                "engagement_score": 97,
+                "source_quality": 0.8,
+                "local_rank_score": 0.354
+              }
+            ],
+            "rerank_score": 13.6,
+            "final_score": 38.64134328358209,
+            "explanation": "fallback-local-score",
+            "fun_score": 18.15,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-8",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 7,
+                  "item_id": "48936426"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 7,
+                  "item_id": "48936426"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+            "item_id": "49035303",
+            "source": "hackernews",
+            "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+            "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+            "snippet": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 9,
+              "leases:hackernews": 9
+            },
+            "local_relevance": 0.07,
+            "freshness": 83,
+            "engagement": 99,
+            "source_quality": 0.8,
+            "rrf_score": 0.014492753623188408,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "49035303",
+                "source": "hackernews",
+                "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+                "body": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+                "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+                "author": "louiereederson",
+                "container": "Hacker News",
+                "published_at": "2026-07-24",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 659,
+                  "comments": 318
+                },
+                "relevance_hint": 0.61,
+                "why_relevant": "HN story about Nvidia, Microsoft, Meta warn against overregulating open-wei",
+                "snippet": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=49035303",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.07,
+                "freshness": 83,
+                "engagement_score": 99,
+                "source_quality": 0.8,
+                "local_rank_score": 0.352
+              }
+            ],
+            "rerank_score": 12.9,
+            "final_score": 38.5131884057971,
+            "explanation": "fallback-local-score",
+            "fun_score": 8.85,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-9",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 9,
+                  "item_id": "49035303"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 9,
+                  "item_id": "49035303"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://windowslatest.com/2026/06/15/microsofts-new-outlook-takes-10-seconds-to-do-what-outlook-classic-does-instantly-on-windows",
+            "item_id": "48584207",
+            "source": "hackernews",
+            "title": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+            "url": "https://www.windowslatest.com/2026/06/15/microsofts-new-outlook-takes-10-seconds-to-do-what-outlook-classic-does-instantly-on-windows/",
+            "snippet": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 10,
+              "leases:hackernews": 10
+            },
+            "local_relevance": 0.07,
+            "freshness": 77,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.014285714285714287,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "48584207",
+                "source": "hackernews",
+                "title": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+                "body": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+                "url": "https://www.windowslatest.com/2026/06/15/microsofts-new-outlook-takes-10-seconds-to-do-what-outlook-classic-does-instantly-on-windows/",
+                "author": "Adam-Hincu",
+                "container": "Hacker News",
+                "published_at": "2026-06-18",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 760,
+                  "comments": 524
+                },
+                "relevance_hint": 0.65,
+                "why_relevant": "HN story about Microsoft new Outlook takes 10 seconds to do what Outlook Cl",
+                "snippet": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=48584207",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.07,
+                "freshness": 77,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.338
+              }
+            ],
+            "rerank_score": 12.9,
+            "final_score": 38.01142857142857,
+            "explanation": "fallback-local-score",
+            "fun_score": 5.8500000000000005,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-10",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 10,
+                  "item_id": "48584207"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 10,
+                  "item_id": "48584207"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
+            "item_id": "48341578",
+            "source": "hackernews",
+            "title": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+            "url": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
+            "snippet": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+            "subquery_labels": [
+              "primary",
+              "leases"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 11,
+              "leases:hackernews": 11
+            },
+            "local_relevance": 0.07,
+            "freshness": 74,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.014084507042253521,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "48341578",
+                "source": "hackernews",
+                "title": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+                "body": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+                "url": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
+                "author": "antipurist",
+                "container": "Hacker News",
+                "published_at": "2026-05-30",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 1015,
+                  "comments": 376
+                },
+                "relevance_hint": 0.79,
+                "why_relevant": "HN story about Microsoft Office 2019 and 2021 for Mac view-only conversion",
+                "snippet": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=48341578",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.07,
+                "freshness": 74,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.3305
+              }
+            ],
+            "rerank_score": 12.9,
+            "final_score": 37.66112676056338,
+            "explanation": "fallback-local-score",
+            "fun_score": 12.15,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-11",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 11,
+                  "item_id": "48341578"
+                },
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 11,
+                  "item_id": "48341578"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting",
+            "item_id": "47500335",
+            "source": "hackernews",
+            "title": "Microsoft's \"fix\" for Windows 11",
+            "url": "https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/",
+            "snippet": "Microsoft's \"fix\" for Windows 11",
+            "subquery_labels": [
+              "primary"
+            ],
+            "native_ranks": {
+              "primary:hackernews": 12
+            },
+            "local_relevance": 0.1,
+            "freshness": 63,
+            "engagement": 100,
+            "source_quality": 0.8,
+            "rrf_score": 0.00771604938271605,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "47500335",
+                "source": "hackernews",
+                "title": "Microsoft's \"fix\" for Windows 11",
+                "body": "Microsoft's \"fix\" for Windows 11",
+                "url": "https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/",
+                "author": "h0ek",
+                "container": "Hacker News",
+                "published_at": "2026-03-24",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 1046,
+                  "comments": 758
+                },
+                "relevance_hint": 0.83,
+                "why_relevant": "HN story about Microsoft's \"fix\" for Windows 11",
+                "snippet": "Microsoft's \"fix\" for Windows 11",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=47500335",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.1,
+                "freshness": 63,
+                "engagement_score": 100,
+                "source_quality": 0.8,
+                "local_rank_score": 0.3225
+              }
+            ],
+            "rerank_score": 15.0,
+            "final_score": 36.22901234567901,
+            "explanation": "fallback-local-score",
+            "fun_score": 20.25,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-12",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "primary",
+                  "native_rank": 12,
+                  "item_id": "47500335"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          },
+          {
+            "candidate_id": "https://techspot.com/news/112410-security-researcher-microsoft-secretly-built-backdoor-bitlocker-releases.html",
+            "item_id": "48168856",
+            "source": "hackernews",
+            "title": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+            "url": "https://www.techspot.com/news/112410-security-researcher-microsoft-secretly-built-backdoor-bitlocker-releases.html",
+            "snippet": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+            "subquery_labels": [
+              "leases"
+            ],
+            "native_ranks": {
+              "leases:hackernews": 12
+            },
+            "local_relevance": 0.07,
+            "freshness": 72,
+            "engagement": 97,
+            "source_quality": 0.8,
+            "rrf_score": 0.00617283950617284,
+            "sources": [
+              "hackernews"
+            ],
+            "source_items": [
+              {
+                "item_id": "48168856",
+                "source": "hackernews",
+                "title": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+                "body": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+                "url": "https://www.techspot.com/news/112410-security-researcher-microsoft-secretly-built-backdoor-bitlocker-releases.html",
+                "author": "nolok",
+                "container": "Hacker News",
+                "published_at": "2026-05-17",
+                "date_confidence": "high",
+                "engagement": {
+                  "points": 594,
+                  "comments": 263
+                },
+                "relevance_hint": 0.56,
+                "why_relevant": "HN story about Security researcher says Microsoft built a Bitlocker backdoo",
+                "snippet": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+                "metadata": {
+                  "hn_url": "https://news.ycombinator.com/item?id=48168856",
+                  "top_comments": [],
+                  "comment_insights": []
+                },
+                "local_relevance": 0.07,
+                "freshness": 72,
+                "engagement_score": 97,
+                "source_quality": 0.8,
+                "local_rank_score": 0.3225
+              }
+            ],
+            "rerank_score": 12.9,
+            "final_score": 35.03320987654321,
+            "explanation": "fallback-local-score",
+            "fun_score": 6.1499999999999995,
+            "fun_explanation": "heuristic-fallback",
+            "cluster_id": "cluster-13",
+            "metadata": {
+              "provenance": [
+                {
+                  "source": "hackernews",
+                  "subquery_label": "leases",
+                  "native_rank": 12,
+                  "item_id": "48168856"
+                }
+              ],
+              "range_from": "2025-10-31",
+              "range_to": "2026-10-31",
+              "rerank_provenance": "fallback"
+            }
+          }
+        ],
+        "items_by_source": {
+          "hackernews": [
+            {
+              "item_id": "49643546",
+              "source": "hackernews",
+              "title": "Rust is tier-1 language at Microsoft",
+              "body": "Rust is tier-1 language at Microsoft",
+              "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+              "author": "mmastrac",
+              "container": "Hacker News",
+              "published_at": "2026-09-10",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 730,
+                "comments": 517
+              },
+              "relevance_hint": 0.64,
+              "why_relevant": "HN story about Rust is tier-1 language at Microsoft",
+              "snippet": "Rust is tier-1 language at Microsoft",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=49643546",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.1,
+              "freshness": 91,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.39249999999999996
+            },
+            {
+              "item_id": "50006832",
+              "source": "hackernews",
+              "title": "Trump administration is suspending Microsoft from a green card program",
+              "body": "Trump administration is suspending Microsoft from a green card program",
+              "url": "https://apnews.com/article/h1b-visa-program-vance-microsoft-e7b3a407f822702b269ee277d21343ea",
+              "author": "alephnerd",
+              "container": "Hacker News",
+              "published_at": "2026-10-08",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 945,
+                "comments": 1615
+              },
+              "relevance_hint": 0.75,
+              "why_relevant": "HN story about Trump administration is suspending Microsoft from a green ca",
+              "snippet": "Trump administration is suspending Microsoft from a green card program",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50006832",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.08,
+              "freshness": 95,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.38949999999999996
+            },
+            {
+              "item_id": "49841563",
+              "source": "hackernews",
+              "title": "Dutch governments builds alternative for Microsoft based on NixOS",
+              "body": "Dutch governments builds alternative for Microsoft based on NixOS",
+              "url": "https://www.dawo.community/en/",
+              "author": "fjfaase",
+              "container": "Hacker News",
+              "published_at": "2026-09-25",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 1021,
+                "comments": 584
+              },
+              "relevance_hint": 0.8,
+              "why_relevant": "HN story about Dutch governments builds alternative for Microsoft based on",
+              "snippet": "Dutch governments builds alternative for Microsoft based on NixOS",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=49841563",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.08,
+              "freshness": 94,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.387
+            },
+            {
+              "item_id": "49863864",
+              "source": "hackernews",
+              "title": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+              "body": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+              "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+              "author": "papergirl",
+              "container": "Hacker News",
+              "published_at": "2026-09-27",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 632,
+                "comments": 625
+              },
+              "relevance_hint": 0.56,
+              "why_relevant": "HN story about Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+              "snippet": "Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=49863864",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.08,
+              "freshness": 94,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.387
+            },
+            {
+              "item_id": "50245524",
+              "source": "hackernews",
+              "title": "Microsoft offers mass buyouts for roughly a quarter of its workforce",
+              "body": "Microsoft offers mass buyouts for roughly a quarter of its workforce\nEx-MSFT here. I resigned in June, I was an L63. I spent 8 years at MSFT across two stints.\nMy last 18 months at MSFT were deeply unproductive. Constant reorgs, the work not being aligned to my capabilities and unfortunately just the general feeling that I was under worked and had very little opportu... 60k workers, 1/4 of the workers. This is a big deal. It also really puts you into a bind if you receive the offer. Do you accept, take the money, and hope you can find a job  (Now competing with many other Msft employees that are looking). Do you decline and hope you don't get hit with the layoff wh... The mass buyout offer to 25% of Microsoft's workforce comes less than a week after Microsoft President Brad Smith proclaimed to employees: 'We stand by our people. We always have. We always will.' in a video he posted to LinkedIn.\nhttps://www.linkedin.com/feed/update/urn:li:activity:7518428...",
+              "url": "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/",
+              "author": "doctorzook",
+              "container": "Hacker News",
+              "published_at": "2026-10-26",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 1082,
+                "comments": 1172
+              },
+              "relevance_hint": 0.86,
+              "why_relevant": "HN story about Microsoft offers mass buyouts for roughly a quarter of its w",
+              "snippet": "Ex-MSFT here. I resigned in June, I was an L63. I spent 8 years at MSFT across two stints. My last 18 months at MSFT were deeply unproductive. Constant reorgs, the work not being aligned to my capabilities and unfortunately just the general feeling that I was under worked and had very little opportu... 60k workers, 1/4 of the workers. This is a big deal. It also really puts you into a bind if you receive the offer. Do you accept, take the money, and hope you can find a job (Now competing with many other Msft employees that are looking). Do you decline and hope you don't get hit with the layoff wh... The mass buyout offer to 25%...",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=50245524",
+                "top_comments": [
+                  {
+                    "excerpt": "Ex-MSFT here. I resigned in June, I was an L63. I spent 8 years at MSFT across two stints.\nMy last 18 months at MSFT were deeply unproductive. Constant reorgs, the work not being aligned to my capabilities and unfortunately just the general feeling that I was under worked and had very little opportu...",
+                    "author": "AbbeFaria",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50248103"
+                  },
+                  {
+                    "excerpt": "60k workers, 1/4 of the workers. This is a big deal. It also really puts you into a bind if you receive the offer. Do you accept, take the money, and hope you can find a job  (Now competing with many other Msft employees that are looking). Do you decline and hope you don't get hit with the layoff wh...",
+                    "author": "ecshafer",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50245779"
+                  },
+                  {
+                    "excerpt": "The mass buyout offer to 25% of Microsoft's workforce comes less than a week after Microsoft President Brad Smith proclaimed to employees: 'We stand by our people. We always have. We always will.' in a video he posted to LinkedIn.\nhttps://www.linkedin.com/feed/update/urn:li:activity:7518428...",
+                    "author": "theodpHN",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50248274"
+                  },
+                  {
+                    "excerpt": "My former boss at Microsoft told me this sort of thing is a good way to get rid of your best, most employable employees. I guess he didn\u2019t pass the memo up the chain.",
+                    "author": "christophilus",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50246330"
+                  },
+                  {
+                    "excerpt": "The way these companies are run so cut-throat while also being worth a trillion dollars is such a fundamental systemic failure.\nTo say that it's because Microsoft overhired is a gross mis-remembering of the last 20 years.\nFor starters, I remember way back in the late 2000s meeting an engineer from t...",
+                    "author": "jarjoura",
+                    "date": "",
+                    "url": "https://news.ycombinator.com/item?id=50249794"
+                  }
+                ],
+                "comment_insights": [
+                  "Ex-MSFT here",
+                  "60k workers, 1/4 of the workers",
+                  "The mass buyout offer to 25% of Microsoft's workforce comes less than a week after Microsoft President Brad Smith proclaimed to employees: 'We stand by our people",
+                  "My former boss at Microsoft told me this sort of thing is a good way to get rid of your best, most employable employees",
+                  "The way these companies are run so cut-throat while also being worth a trillion dollars is such a fundamental systemic failure."
+                ]
+              },
+              "local_relevance": 0.06,
+              "freshness": 98,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.384
+            },
+            {
+              "item_id": "49752056",
+              "source": "hackernews",
+              "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+              "body": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+              "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+              "author": "pluc",
+              "container": "Hacker News",
+              "published_at": "2026-09-18",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 955,
+                "comments": 841
+              },
+              "relevance_hint": 0.76,
+              "why_relevant": "HN story about Microsoft exec called AI scraping 'the largest theft of labo",
+              "snippet": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=49752056",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.07,
+              "freshness": 92,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.37550000000000006
+            },
+            {
+              "item_id": "48936426",
+              "source": "hackernews",
+              "title": "Microsoft Comic Chat is now open source",
+              "body": "Microsoft Comic Chat is now open source",
+              "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+              "author": "jervant",
+              "container": "Hacker News",
+              "published_at": "2026-07-16",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 814,
+                "comments": 178
+              },
+              "relevance_hint": 0.69,
+              "why_relevant": "HN story about Microsoft Comic Chat is now open source",
+              "snippet": "Microsoft Comic Chat is now open source",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=48936426",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.08,
+              "freshness": 82,
+              "engagement_score": 97,
+              "source_quality": 0.8,
+              "local_rank_score": 0.354
+            },
+            {
+              "item_id": "48819244",
+              "source": "hackernews",
+              "title": "Microsoft fire idTech team at Id software",
+              "body": "Microsoft fire idTech team at Id software",
+              "url": "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software/",
+              "author": "bauc",
+              "container": "Hacker News",
+              "published_at": "2026-07-07",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 676,
+                "comments": 602
+              },
+              "relevance_hint": 0.62,
+              "why_relevant": "HN story about Microsoft fire idTech team at Id software",
+              "snippet": "Microsoft fire idTech team at Id software",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=48819244",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.08,
+              "freshness": 80,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.352
+            },
+            {
+              "item_id": "49035303",
+              "source": "hackernews",
+              "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+              "body": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+              "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+              "author": "louiereederson",
+              "container": "Hacker News",
+              "published_at": "2026-07-24",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 659,
+                "comments": 318
+              },
+              "relevance_hint": 0.61,
+              "why_relevant": "HN story about Nvidia, Microsoft, Meta warn against overregulating open-wei",
+              "snippet": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=49035303",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.07,
+              "freshness": 83,
+              "engagement_score": 99,
+              "source_quality": 0.8,
+              "local_rank_score": 0.352
+            },
+            {
+              "item_id": "48584207",
+              "source": "hackernews",
+              "title": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+              "body": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+              "url": "https://www.windowslatest.com/2026/06/15/microsofts-new-outlook-takes-10-seconds-to-do-what-outlook-classic-does-instantly-on-windows/",
+              "author": "Adam-Hincu",
+              "container": "Hacker News",
+              "published_at": "2026-06-18",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 760,
+                "comments": 524
+              },
+              "relevance_hint": 0.65,
+              "why_relevant": "HN story about Microsoft new Outlook takes 10 seconds to do what Outlook Cl",
+              "snippet": "Microsoft new Outlook takes 10 seconds to do what Outlook Classic does instantly",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=48584207",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.07,
+              "freshness": 77,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.338
+            },
+            {
+              "item_id": "48341578",
+              "source": "hackernews",
+              "title": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+              "body": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+              "url": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
+              "author": "antipurist",
+              "container": "Hacker News",
+              "published_at": "2026-05-30",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 1015,
+                "comments": 376
+              },
+              "relevance_hint": 0.79,
+              "why_relevant": "HN story about Microsoft Office 2019 and 2021 for Mac view-only conversion",
+              "snippet": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=48341578",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.07,
+              "freshness": 74,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.3305
+            },
+            {
+              "item_id": "47500335",
+              "source": "hackernews",
+              "title": "Microsoft's \"fix\" for Windows 11",
+              "body": "Microsoft's \"fix\" for Windows 11",
+              "url": "https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/",
+              "author": "h0ek",
+              "container": "Hacker News",
+              "published_at": "2026-03-24",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 1046,
+                "comments": 758
+              },
+              "relevance_hint": 0.83,
+              "why_relevant": "HN story about Microsoft's \"fix\" for Windows 11",
+              "snippet": "Microsoft's \"fix\" for Windows 11",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=47500335",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.1,
+              "freshness": 63,
+              "engagement_score": 100,
+              "source_quality": 0.8,
+              "local_rank_score": 0.3225
+            },
+            {
+              "item_id": "48168856",
+              "source": "hackernews",
+              "title": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+              "body": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+              "url": "https://www.techspot.com/news/112410-security-researcher-microsoft-secretly-built-backdoor-bitlocker-releases.html",
+              "author": "nolok",
+              "container": "Hacker News",
+              "published_at": "2026-05-17",
+              "date_confidence": "high",
+              "engagement": {
+                "points": 594,
+                "comments": 263
+              },
+              "relevance_hint": 0.56,
+              "why_relevant": "HN story about Security researcher says Microsoft built a Bitlocker backdoo",
+              "snippet": "Security researcher says Microsoft built a Bitlocker backdoor, releases exploit",
+              "metadata": {
+                "hn_url": "https://news.ycombinator.com/item?id=48168856",
+                "top_comments": [],
+                "comment_insights": []
+              },
+              "local_relevance": 0.07,
+              "freshness": 72,
+              "engagement_score": 97,
+              "source_quality": 0.8,
+              "local_rank_score": 0.3225
+            }
+          ]
+        },
+        "errors_by_source": {},
+        "source_status": {
+          "hackernews": {
+            "source": "hackernews",
+            "state": "ok",
+            "items_returned": 13,
+            "attempted": true,
+            "at": "2026-10-31T18:31:33.139900Z"
+          }
+        },
+        "freshness_verdicts": [],
+        "warnings": [
+          "Top evidence is highly concentrated in one source."
+        ],
+        "artifacts": {
+          "grounding": [],
+          "plan_source": "external",
+          "corpus_in_export": false,
+          "hiring_signals_mode": false,
+          "resolved": {
+            "entity": "Microsoft capex finance leases cash PP&E cash burden",
+            "x_handle": "",
+            "subreddits": [],
+            "github_user": "",
+            "github_repos": [],
+            "trustpilot_domain": "",
+            "context": ""
+          }
+        },
+        "library_context": []
+      }
+    }
+  ]
+}

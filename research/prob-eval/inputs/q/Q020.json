@@ -1,0 +1,20 @@
+{
+ "qid": "Q020",
+ "question": "Will Count Binface win 30–40% of votes in the Clacton parliamentary by-election?",
+ "rules": "A by-election for the United Kingdom parliamentary constituency of Clacton is expected to be held soon following the announced resignation of incumbent Nigel Farage.\n\nThis market will resolve according to the share of valid votes Count Binface wins in the Clacton parliamentary by-election.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the specified candidate does not compete or the results of the specified election are not known definitively by June 30, 2027, 11:59 PM ET, this market will resolve to the lowest bracket.\n\nThe resolution source for this market will be a consensus of credible reporting. In case of ambiguity, this market will resolve solely based on official election results as published by Tendring District Council (https://www.tendringdc.gov.uk/) and the UK Parliament (https://www.parliament.uk/).",
+ "as_of": "2026-07-31",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Ipsos",
+   "published_at": "2026-07-10",
+   "excerpt": "Ipsos polling conducted on 8–9 July found that 33% of British adults would prefer Count Binface to win the Clacton by-election, compared with 21% who preferred Nigel Farage; 32% chose neither and 13% did not know. Ipsos interviewed a representative online sample of 1,000 British adults aged 18–75. Research director Keiran Pedley stressed that Clacton residents, rather than the public overall, would vote in the by-election."
+  },
+  {
+   "id": "E2",
+   "publisher": "ITV News",
+   "published_at": "2026-07-08",
+   "excerpt": "Chancellor Rachel Reeves said she would accept Nigel Farage's request to be appointed Steward and Bailiff of the Manor of Northstead. ITV reported that Farage completed the formalities of quitting as an MP on 8 July, after announcing his intention to contest the resulting Clacton by-election."
+  }
+ ]
+}

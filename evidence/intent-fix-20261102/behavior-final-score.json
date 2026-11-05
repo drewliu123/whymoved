@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "errors": [],
+  "cases": [
+    {
+      "id": "title_probe",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "title_unique_match",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "explicit_actual_overrides_history",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "forecast_unreleased",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "forecast_correction",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "market_correction",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "multiple_contracts",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "explicit_market_not_found",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "asset_attribution",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "review_narrowed_plan",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "review_point_only",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "review_actual_answer",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "review_missing_costs_after_search",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "review_qualitative_without_probability",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

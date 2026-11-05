@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-10-31T12:19:06Z",
+  "sources": [
+    {
+      "url": "https://www.marketscreener.com/news/us-stocks-end-sharply-lower-as-ai-cash-burn-fears-spark-tech-selloff-ce785fd8d98af426",
+      "publisher": "Reuters (syndicated on MarketScreener)",
+      "tier": "T2",
+      "published_at": "2026-10-31T00:38:00Z",
+      "quote": "growing worries; massive spending; big backlogs",
+      "limitation": "Full body summarized by WebFetch; original headline date is Oct30 8:38pm EDT; last update00:44Z also before AS_OF; syndicated copies count as one publisher"
+    },
+    {
+      "url": "https://live.euronext.com/en/financial-news/chinas-new-export-curbs-draw-line-around-its-ai-crown-jewels",
+      "publisher": "Reuters (syndicated on Euronext)",
+      "tier": "T2",
+      "published_at": "2026-10-29",
+      "quote": "subjecting some transfers of underlying technology or deployments overseas to government approval.",
+      "limitation": "Timezone unspecified; draft date Oct16, comment deadlineNov15; no direct NVDA price causality"
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/dept-of-justice-reportedly-probes-nvidia-over-usd13-billion-hugging-face-ai-platform-acquisition-concerns-raised-over-competition-in-ai-and-pressure-on-customers",
+      "reason": "Only headline; no date/byline/Reuters link/body; not evidence of DOJ inquiry or price cause"
+    }
+  ],
+  "deduplication": "Reuters syndications treated as one publisher; not independent confirmation"
+}

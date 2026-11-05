@@ -1,0 +1,63 @@
+{
+  "design": "3 representations x 2 cases, one fresh subagent per cell; identical historical semantic information and new evidence; no live retrieval or runtime token telemetry. Authored state preparation costs not measured.",
+  "conditions": {
+    "fed_gap/history": {
+      "input_file": "fed_gap-history-input.json",
+      "input_utf8_bytes": 6864,
+      "input_sha256": "c1b683b329766986186435cb5cd061461f1ddf7c05e661ec5290963695994502",
+      "old_claim_count": 6,
+      "dependency_count": 4,
+      "new_evidence_count": 3
+    },
+    "fed_gap/summary": {
+      "input_file": "fed_gap-summary-input.json",
+      "input_utf8_bytes": 6853,
+      "input_sha256": "66a8596b93c40dc596c15bcfd72f4b7db160af10ff1ef57a5a791a5ff0e9174b",
+      "old_claim_count": 6,
+      "dependency_count": 4,
+      "new_evidence_count": 3
+    },
+    "fed_gap/state": {
+      "input_file": "fed_gap-state-input.json",
+      "input_utf8_bytes": 7496,
+      "input_sha256": "221c701818c6b08bb4bc1576580780f08a0af591fe50b453707a418a63c27f05",
+      "old_claim_count": 6,
+      "dependency_count": 4,
+      "new_evidence_count": 3
+    },
+    "revision_stress/history": {
+      "input_file": "revision_stress-history-input.json",
+      "input_utf8_bytes": 3389,
+      "input_sha256": "55fe12b986b94d23efe249b3807688617f8a1ffc524818b814f8eb67eb2e9d13",
+      "old_claim_count": 8,
+      "dependency_count": 5,
+      "new_evidence_count": 6
+    },
+    "revision_stress/summary": {
+      "input_file": "revision_stress-summary-input.json",
+      "input_utf8_bytes": 3370,
+      "input_sha256": "7ae8df96e2d6311d7af639f2e651935b718e101c1ef86a5fe689d026d4507b46",
+      "old_claim_count": 8,
+      "dependency_count": 5,
+      "new_evidence_count": 6
+    },
+    "revision_stress/state": {
+      "input_file": "revision_stress-state-input.json",
+      "input_utf8_bytes": 4176,
+      "input_sha256": "e54ed0d8d53623a03f2cdfc36c3d124551976c2d4624538ca07a3f6ec1e53eb7",
+      "old_claim_count": 8,
+      "dependency_count": 5,
+      "new_evidence_count": 6
+    }
+  },
+  "cases": {
+    "fed_gap": {
+      "question": "上次2024年7月31日问过降息，此后没跟踪。现在是2024年11月8日，只根据给定材料：目前政策状态怎样？旧判断哪些应更新？下一步最值得查什么？能否判断预测合约错价？",
+      "ground_truth_file": "fed_gap-ground-truth.json"
+    },
+    "revision_stress": {
+      "question": "以下为完全虚构的澜国央行实验，不可套用真实历史。2028-01-10后一直没跟踪，现为2028-04-10。更新当前判断和后续研究；旧判断哪些应复核或保留？是否能认定合约错价？",
+      "ground_truth_file": "revision_stress-ground-truth.json"
+    }
+  }
+}

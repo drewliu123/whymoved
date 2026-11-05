@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "status": 200,
+  "statusText": "",
+  "url": "https://investor.nvidia.com/services/StockQuoteService.svc/GetStockQuoteHistoricalList",
+  "headers": {
+    "access-control-allow-origin": "*",
+    "cache-control": "public,max-age=120, stale-if-error=86400, stale-while-revalidate=86400",
+    "cf-cache-status": "MISS",
+    "cf-ray": "a532adee4a00c78b-LAX",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Sat, 31 Oct 2026 12:31:54 GMT",
+    "last-modified": "Sat, 31 Oct 2026 12:31:54 GMT",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-permitted-cross-domain-policies": "none"
+  },
+  "body": "{\"GetStockQuoteHistoricalListResult\":[{\"High\":209.0600,\"HistoricalDate\":\"10\\/30\\/2026 00:00:00\",\"Last\":204.6400,\"Low\":200.9200,\"Open\":208.9400,\"Volume\":168039400},{\"High\":215.3300,\"HistoricalDate\":\"10\\/29\\/2026 00:00:00\",\"Last\":213.6600,\"Low\":212.0800,\"Open\":214.3600,\"Volume\":76216000},{\"High\":219.9900,\"HistoricalDate\":\"10\\/28\\/2026 00:00:00\",\"Last\":215.3800,\"Low\":214.4700,\"Open\":219.9200,\"Volume\":92463400},{\"High\":219.1900,\"HistoricalDate\":\"10\\/27\\/2026 00:00:00\",\"Last\":217.9400,\"Low\":215.5300,\"Open\":218.3100,\"Volume\":84542200},{\"High\":217.7500,\"HistoricalDate\":\"10\\/26\\/2026 00:00:00\",\"Last\":216.0000,\"Low\":212.6100,\"Open\":213.1100,\"Volume\":90493500},{\"High\":213.8500,\"HistoricalDate\":\"10\\/23\\/2026 00:00:00\",\"Last\":210.9600,\"Low\":210.1800,\"Open\":210.9900,\"Volume\":79987200},{\"High\":218.8800,\"HistoricalDate\":\"10\\/22\\/2026 00:00:00\",\"Last\":212.2100,\"Low\":211.2600,\"Open\":217.1300,\"Volume\":124816000},{\"High\":222.1900,\"HistoricalDate\":\"10\\/21\\/2026 00:00:00\",\"Last\":221.9700,\"Low\":217.6600,\"Open\":220.9600,\"Volume\":86620400},{\"High\":218.4600,\"HistoricalDate\":\"10\\/20\\/2026 00:00:00\",\"Last\":216.4700,\"Low\":212.7700,\"Open\":215.9800,\"Volume\":78967900},{\"High\":219.6200,\"HistoricalDate\":\"10\\/19\\/2026 00:00:00\",\"Last\":217.0900,\"Low\":214.7000,\"Open\":218.1000,\"Volume\":98403300},{\"High\":218.6800,\"HistoricalDate\":\"10\\/16\\/2026 00:00:00\",\"Last\":214.1300,\"Low\":213.3200,\"Open\":216.5600,\"Volume\":120855100},{\"High\":218.4700,\"HistoricalDate\":\"10\\/15\\/2026 00:00:00\",\"Last\":217.2300,\"Low\":212.8500,\"Open\":215.3000,\"Volume\":126789100},{\"High\":226.0000,\"HistoricalDate\":\"10\\/14\\/2026 00:00:00\",\"Last\":221.3000,\"Low\":219.6400,\"Open\":225.5300,\"Volume\":117249000},{\"High\":228.6400,\"HistoricalDate\":\"10\\/13\\/2026 00:00:00\",\"Last\":228.5200,\"Low\":223.0600,\"Open\":224.3400,\"Volume\":83846800},{\"High\":228.8600,\"HistoricalDate\":\"10\\/12\\/2026 00:00:00\",\"Last\":226.3200,\"Low\":224.9000,\"Open\":228.7300,\"Volume\":70089000},{\"High\":233.9200,\"HistoricalDate\":\"10\\/09\\/2026 00:00:00\",\"Last\":229.2800,\"Low\":229.1100,\"Open\":233.8400,\"Volume\":84470000},{\"High\":237.0700,\"HistoricalDate\":\"10\\/08\\/2026 00:00:00\",\"Last\":230.4800,\"Low\":229.8500,\"Open\":234.9200,\"Volume\":118311700},{\"High\":239.0800,\"HistoricalDate\":\"10\\/07\\/2026 00:00:00\",\"Last\":237.4700,\"Low\":236.3800,\"Open\":237.6900,\"Volume\":81485100},{\"High\":243.3700,\"HistoricalDate\":\"10\\/06\\/2026 00:00:00\",\"Last\":239.2400,\"Low\":238.9300,\"Open\":242.1000,\"Volume\":100868800},{\"High\":240.1000,\"HistoricalDate\":\"10\\/05\\/2026 00:00:00\",\"Last\":238.9000,\"Low\":235.1500,\"Open\":236.0900,\"Volume\":126639900},{\"High\":237.8800,\"HistoricalDate\":\"10\\/02\\/2026 00:00:00\",\"Last\":233.9500,\"Low\":233.6000,\"Open\":236.0600,\"Volume\":134914600},{\"High\":232.2900,\"HistoricalDate\":\"10\\/01\\/2026 00:00:00\",\"Last\":230.8600,\"Low\":228.1600,\"Open\":229.9800,\"Volume\":98369800},{\"High\":232.3700,\"HistoricalDate\":\"09\\/30\\/2026 00:00:00\",\"Last\":228.3800,\"Low\":228.1700,\"Open\":229.2700,\"Volume\":121269300}]}"
+}

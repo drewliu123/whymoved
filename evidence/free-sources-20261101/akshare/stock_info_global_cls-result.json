@@ -1,0 +1,30 @@
+{
+  "source": "stock_info_global_cls",
+  "arguments": {
+    "symbol": "全部"
+  },
+  "status": "timeout",
+  "command": [
+    "/tmp/akshare-free-20261101.kruquy/venv/bin/python",
+    "-I",
+    "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/akshare/scripts/probe.py",
+    "--worker",
+    "stock_info_global_cls"
+  ],
+  "exit_code": 124,
+  "wall_seconds": 45.014,
+  "log": "/Users/frankzhang/Desktop/投研助手/evidence/free-sources-20261101/akshare/stock_info_global_cls.log",
+  "python_version": "3.12.13",
+  "akshare_version": "1.20.21",
+  "pandas_version": "3.1.0",
+  "signature_static_verified": "(symbol: str = 全部) -> pd.DataFrame",
+  "row_count": null,
+  "columns": null,
+  "earliest_time": null,
+  "latest_time": null,
+  "future_date_count": null,
+  "samples": [],
+  "body_fetched": false,
+  "http_statuses": [],
+  "response_captured": false
+}

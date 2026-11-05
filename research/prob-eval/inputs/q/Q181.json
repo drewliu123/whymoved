@@ -1,0 +1,44 @@
+{
+ "qid": "Q181",
+ "question": "Will SpaceX Starship Flight Test 13 launch by August 31?",
+ "rules": "If the 13th SpaceX Starship successfully launches from its launch pad by August 31, 2026, 11:59 PM ET, this market will resolve to “Yes”. Otherwise, this market will resolve to “No.”\n\nThe outcome of any launch will be corroborated by examining official video provided by SpaceX (https://www.youtube.com/c/SpaceX), as well as secondary video feeds and/or written reports if necessary.\n\nAny subsequent anomaly (e.g., an explosion) after the launch will have no bearing on the outcome. Any name change of the Starship with another vehicle will have no bearing on the outcome of the market.",
+ "as_of": "2026-07-11",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "r/SpaceXLounge — contemporaneous quotation of SpaceX's Flight 13 announcement",
+   "published_at": "2026-07-11",
+   "excerpt": "The thirteenth flight test of Starship is preparing to launch as soon as Thursday, July 16. The 90-minute launch window will open at 5:45 p.m. CT. As is the case with all developmental testing, the schedule is dynamic and likely to change."
+  },
+  {
+   "id": "E2",
+   "publisher": "Space.com — Josh Dinner",
+   "published_at": "2026-07-10T16:13:48Z",
+   "excerpt": "SpaceX today (July 10) completed a brief static fire of the Starship Super Heavy booster tapped to launch the 13th test flight of the massive, mega-lift vehicle. Booster 20 — the latest Super Heavy to roll off the assembly line — was transported to the pad at SpaceX's Starbase, Texas, facility yesterday (July 9) and hoisted onto its support stand using the launch tower's stalwart \"Mechazilla\" chopstick arms."
+  },
+  {
+   "id": "E3",
+   "publisher": "Space.com",
+   "published_at": "2026-07-02T22:00:00Z",
+   "excerpt": "Ship 40 conducted its first-ever static fire last week, lighting a single Raptor for about 15 seconds. This more recent test involved all six Raptors and lasted a full minute, according to SpaceX. Ship 40 will take part in the second \"Version 3\" (V3) Starship launch; SpaceX debuted the updated rocket prototype during a test flight on May 22."
+  },
+  {
+   "id": "E4",
+   "publisher": "WFTV — Melonie Holt",
+   "published_at": "2026-07-10T22:21:00-04:00",
+   "excerpt": "The company has already completed a static fire test ahead of Starship Flight 13, a key milestone as SpaceX works to demonstrate more advanced capabilities for the massive spacecraft. Dr. Don Platt, an aerospace expert with Florida Tech, says reaching an operational orbital status is critical for SpaceX's future plans, including potential Starship launches from Florida's Space Coast."
+  },
+  {
+   "id": "E5",
+   "publisher": "Space.com",
+   "published_at": "2026-05-23T00:32:57Z",
+   "excerpt": "SpaceX launched the newest version of its giant Starship rocket Friday (May 22), from a recently completed second pad at its Starbase manufacturing and test facility in South Texas. Liftoff occurred at 6:30 p.m. EDT (2230 GMT), sending the massive 408-foot-tall (124-meter) vehicle skyward on its 12th suborbital test flight. It was the first Starship mission since October 2025, and the first-ever flight of Starship Version 3 (V3), a next-generation build of the rocket that features a complete design overhaul meant to evolve the vehicle toward operational missions."
+  },
+  {
+   "id": "E6",
+   "publisher": "NASA Office of Inspector General — report IG-26-004",
+   "published_at": "2026-03-10",
+   "excerpt": "Since SpaceX upgraded from its first version of Starship (used in Flights 1 through 6) to its second version (beginning with Flight 7), three of the five subsequent flight tests (Flights 7, 8, and 9) underperformed, with each flight test ending with a loss of the Starship vehicle. According to HLS Program management, with each mishap, there is an estimated 1- to 3-month impact to the schedule. While the next two flight tests (Flights 10 and 11) performed successfully, in November 2025, the Starship booster for the subsequent flight test (Flight 12)—the first flight test that will use the third version of the lander—experienced an anomaly during ground testing."
+  }
+ ]
+}

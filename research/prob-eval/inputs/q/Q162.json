@@ -1,0 +1,44 @@
+{
+ "qid": "Q162",
+ "question": "Will Partido Liberal (PL) hold the most seats in the Brazilian Chamber of Deputies after the 2026 election?",
+ "rules": "The next federal Chamber of Deputies election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the political party or electoral federation that holds the greatest number of seats in the next Brazilian Chamber of Deputies (Câmara dos Deputados) as a result of the next Brazilian Chamber of Deputies election.\n\nIn the event of a tie between multiple entities for the most seats held, this market will resolve in favor of the entity whose listed abbreviation appears first in alphabetical order.\n\nThis market's resolution will be based solely on the number of seats held by the named party or electoral federation in the Brazilian Chamber of Deputies as a result of the next Brazilian Chamber of Deputies election, not by any coalition it may be a part of.\n\nIf the result of this election isn't known definitively by June 30, 2027, 11:59 PM ET, the market will resolve to \"Other\".\n\nThis market will resolve based on the result of the election, as indicated by a consensus of credible reporting. If there is ambiguity, this market will resolve based solely on the official results as reported by the Brazilian government, specifically the Superior Electoral",
+ "as_of": "2026-09-22",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Agenda do Poder — Ricardo Bruno",
+   "published_at": "2026-09-14",
+   "excerpt": "O PL deve conquistar a maior bancada do Rio de Janeiro na Câmara dos Deputados, segundo projeção da sétima rodada da pesquisa Vetor Arrow. O partido aparece com 13 das 46 cadeiras destinadas ao estado, mantendo o mesmo número estimado na rodada anterior. A Federação Brasil da Esperança, formada por PT, PCdoB e PV, ocupa a segunda posição, com nove deputados federais projetados. Em seguida aparece a Federação União Progressista, composta por União Brasil e PP, com cinco cadeiras."
+  },
+  {
+   "id": "E2",
+   "publisher": "Agência Câmara de Notícias",
+   "published_at": "2026-08-19",
+   "excerpt": "No dia 4 de outubro deste ano, além do presidente da República, dos deputados distritais e estaduais e dos 27 governadores, serão eleitos 513 deputados federais e 54 senadores. Os deputados federais são os representantes do povo, eleitos em voto proporcional nas 27 unidades da federação de acordo com uma regra que estabelece um mínimo de oito deputados por unidade da federação, como é o caso de Roraima, Distrito Federal e Acre, por exemplo, e, no máximo, 70 deputados, como é o caso de São Paulo."
+  },
+  {
+   "id": "E3",
+   "publisher": "Folha de S.Paulo",
+   "published_at": "2026-06-09",
+   "excerpt": "União Brasil e PP hoje somam 98 deputados e, com a federação, vão funcionar como um só partido no pleito deste ano. Diferentemente da sigla de Jair Bolsonaro, porém, esse \"superpartido\" do centrão vai priorizar a eleição de deputados federais e planeja gastar pelo menos R$ 400 milhões somente para aumentar sua bancada na Câmara. O PL ocupa 97 cadeiras na Câmara e pretende eleger 115 representantes na Casa este ano."
+  },
+  {
+   "id": "E4",
+   "publisher": "VEJA — Anna Satie",
+   "published_at": "2026-06-05",
+   "excerpt": "Em São Paulo, estado onde o PL mais fez deputados na última eleição (dezessete), o cenário é igualmente difícil. O PL perdeu seus três puxadores de votos: Eduardo Bolsonaro, Carla Zambelli e Ricardo Salles (que foi para o Novo). Diante desse cenário, Valdemar já admite uma recalibragem nas projeções — antes, esperava 120 deputados eleitos. “Uma conta mais justa para o momento é eleger 110”, diz o dirigente."
+  },
+  {
+   "id": "E5",
+   "publisher": "Tribunal Superior Eleitoral",
+   "published_at": "2026-03-26",
+   "excerpt": "O Tribunal Superior Eleitoral (TSE) aprovou, por unanimidade, na sessão administrativa nesta quinta-feira (26), o registro da federação partidária União Progressista, formada pelos partidos União Brasil (União) e Progressistas (PP). De acordo com a Lei dos Partidos Políticos e a Resolução TSE nº 23.670/2021, as federações devem ter duração mínima de quatro anos, período em que os partidos integrantes são obrigados a permanecer unidos, sob pena de sanções em caso de saída antecipada."
+  },
+  {
+   "id": "E6",
+   "publisher": "Agência Câmara de Notícias",
+   "published_at": "2022-10-04",
+   "excerpt": "O PL, partido do presidente da República, Jair Bolsonaro, foi a legenda que mais ganhou deputados com as eleições do último domingo (2): 23, passando da bancada atual de 76 deputados para 99 integrantes. Já o PP é o partido que mais perderá integrantes na Câmara dos Deputados na próxima legislatura: 11 deputados. A bancada atual de 58 integrantes será reduzida para 47 parlamentares."
+  }
+ ]
+}

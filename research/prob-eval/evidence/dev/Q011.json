@@ -1,0 +1,39 @@
+{
+  "qid": "Q011",
+  "as_of": "2026-08-19",
+  "kept": [
+    {
+      "excerpt": "Bernie Sanders endorsed Ed Markey for reelection as the Massachusetts senator faced a primary challenge from Representative Seth Moulton. Sanders called Markey “one of the strongest progressive voices in the United States Senate.”",
+      "published_at": "2026-06-29",
+      "publisher": "WBUR",
+      "relevance": "The endorsement documents support from a prominent progressive figure who could reinforce Markey's standing with the Democratic primary electorate.",
+      "url": "https://www.wbur.org/news/2026/06/29/bernie-sanders-endorses-markey-senate-moulton"
+    },
+    {
+      "excerpt": "During their August 3 debate, Moulton repeatedly raised Markey's age and supported both term limits and age limits for elected officials. Markey argued that ideas rather than age mattered and defended his progressive record. Moulton apologized for earlier comments about transgender athletes, while Markey criticized those comments. The candidates also agreed on ending the war in Iran and lowering energy costs.",
+      "published_at": "2026-08-03",
+      "publisher": "GBH News",
+      "relevance": "The debate report documents the challenger's generational argument and the ideological disputes shaping voter choice before the cutoff.",
+      "url": "https://www.wgbh.org/news/politics/2026-08-03/in-heated-moulton-markey-debate-epstein-files-makes-unexpected-appearance"
+    }
+  ],
+  "removed": [
+    {
+      "url": "https://www.umass.edu/poll/about/reports/2026-08-massachusetts-public-opinion-poll",
+      "reason": "The excerpt explicitly mentions the September 1 primary date, which is after the 2026-08-19 cutoff."
+    },
+    {
+      "url": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/massachusetts",
+      "reason": "The excerpt explicitly mentions voting in the September 1 Democratic primary, which is after the 2026-08-19 cutoff."
+    },
+    {
+      "url": "https://scholars.unh.edu/survey_center_polls/973/",
+      "reason": "The excerpt mentions the September Democratic primary and general-election matchups, events after the 2026-08-19 cutoff."
+    },
+    {
+      "url": "https://apnews.com/article/b8c29e958655b7fb1e46db425f069fc2",
+      "reason": "The excerpt explicitly states that the primary was scheduled for September 1, which is after the 2026-08-19 cutoff."
+    }
+  ],
+  "search_notes": "Frozen evidence cutoff: 2026-08-19, inclusive. Included only explicitly dated releases or reporting published by the cutoff; for Suffolk's continuously maintained archive, only its explicitly dated August 18 release entry and associated methodology were used. Excerpts are factual source summaries. Excluded later publications, undated material, election outcomes, prediction markets, betting pages, and market prices. web_fetch failed because of a provider configuration error; the requested agent-reach web-read fallback also failed because its upstream readers were temporarily unavailable. Evidence was therefore verified through dated source text returned by targeted web_search queries rather than successful direct page retrieval."
+}

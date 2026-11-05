@@ -1,0 +1,3434 @@
+{
+  "sha": "0b1693de71d07df3fd99ad16d96469aeebadf9f1",
+  "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/0b1693de71d07df3fd99ad16d96469aeebadf9f1",
+  "tree": [
+    {
+      "path": ".cursor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6679ab2752874d75856d1c159fc7ffb56fabb761",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/6679ab2752874d75856d1c159fc7ffb56fabb761"
+    },
+    {
+      "path": ".cursor/rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11a7354b07ad3e401636cfe8e8122406a759508e",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/11a7354b07ad3e401636cfe8e8122406a759508e"
+    },
+    {
+      "path": ".cursor/rules/code-tests.mdc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "694c650c4faf3d7287f2f3cb16b64f47d768b8f3",
+      "size": 349,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/694c650c4faf3d7287f2f3cb16b64f47d768b8f3"
+    },
+    {
+      "path": ".cursor/rules/general-guidelines.mdc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2df2554c4dafaca073e329b7fcc795791050ddd",
+      "size": 634,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a2df2554c4dafaca073e329b7fcc795791050ddd"
+    },
+    {
+      "path": ".cursor/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e890b767e3b8f49909c410fad951bf7f6d9e5b2",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/9e890b767e3b8f49909c410fad951bf7f6d9e5b2"
+    },
+    {
+      "path": ".cursor/skills/analyze-bot-failures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d512b9eb3be9fc49ec097ae3a0b41ce3e137f49c",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/d512b9eb3be9fc49ec097ae3a0b41ce3e137f49c"
+    },
+    {
+      "path": ".cursor/skills/analyze-bot-failures/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aad91dc9446fdaf85f8cc0d95161e536f09ffea",
+      "size": 550,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5aad91dc9446fdaf85f8cc0d95161e536f09ffea"
+    },
+    {
+      "path": ".devcontainer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84aa8a4be114cfbb2e0ddf65f60d68e50d96ba56",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/84aa8a4be114cfbb2e0ddf65f60d68e50d96ba56"
+    },
+    {
+      "path": ".devcontainer/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdd8992d4004b3aaf3c1b1b4b887b608715ffc08",
+      "size": 56,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/bdd8992d4004b3aaf3c1b1b4b887b608715ffc08"
+    },
+    {
+      "path": ".devcontainer/devcontainer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0727aa8ded8ad813712e484a3045febcf1cea385",
+      "size": 2148,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0727aa8ded8ad813712e484a3045febcf1cea385"
+    },
+    {
+      "path": ".devcontainer/postinstall.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0265a902781180f50694bd3f664e326e2b72fc8d",
+      "size": 1597,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0265a902781180f50694bd3f664e326e2b72fc8d"
+    },
+    {
+      "path": ".devcontainer/set_up_git_ssh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52b92153d8ce59b1c5ccd2ec8a07039d54709fdf",
+      "size": 1973,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/52b92153d8ce59b1c5ccd2ec8a07039d54709fdf"
+    },
+    {
+      "path": ".devcontainer/set_up_python.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af91704425f9a50b56849c6f499c9c256dcb5d9b",
+      "size": 643,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/af91704425f9a50b56849c6f499c9c256dcb5d9b"
+    },
+    {
+      "path": ".dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": ".env.template",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8084ca70e7f1b2a40c913995b41cc3aea7fcd22",
+      "size": 1999,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e8084ca70e7f1b2a40c913995b41cc3aea7fcd22"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f4d417472c92bc6f8079a1055823eeba45872652",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/f4d417472c92bc6f8079a1055823eeba45872652"
+    },
+    {
+      "path": ".github/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b28a4003dbff9bb0159ede3191ddbcf12366d7f7",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/b28a4003dbff9bb0159ede3191ddbcf12366d7f7"
+    },
+    {
+      "path": ".github/scripts/precache_asknews.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6140dec84ea69c5227281d1b0673160f982d37e",
+      "size": 1713,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f6140dec84ea69c5227281d1b0673160f982d37e"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40f996ad872a4f0fc386c06a9abd00fc0fda5598",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/40f996ad872a4f0fc386c06a9abd00fc0fda5598"
+    },
+    {
+      "path": ".github/workflows/pre-commit.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d90a16d6aaf69e73e368a9297b71bb53871fff2",
+      "size": 282,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8d90a16d6aaf69e73e368a9297b71bb53871fff2"
+    },
+    {
+      "path": ".github/workflows/run-bot-aib-tournament.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2d219267c1ad7f56d91026f659e5cee9f14ce07",
+      "size": 114042,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d2d219267c1ad7f56d91026f659e5cee9f14ce07"
+    },
+    {
+      "path": ".github/workflows/run-bot-launcher.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c07d8ba93934d98157679c363bc7f859bd81bd89",
+      "size": 3912,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c07d8ba93934d98157679c363bc7f859bd81bd89"
+    },
+    {
+      "path": ".github/workflows/unit-tests.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab58208087c17941390dbe9c995c44d7c0faec07",
+      "size": 952,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ab58208087c17941390dbe9c995c44d7c0faec07"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a05a45042a43b2cb8563c827a9b421ead09f5ec",
+      "size": 3410,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4a05a45042a43b2cb8563c827a9b421ead09f5ec"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25632e5d768d1ada6dfcaab6002000cc138d9102",
+      "size": 1713,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/25632e5d768d1ada6dfcaab6002000cc138d9102"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16b7ce67fea03a4e9f1ed5ca33bf84628071b923",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/16b7ce67fea03a4e9f1ed5ca33bf84628071b923"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "891f624550789ed7a82dd9b8ef4584627067840a",
+      "size": 515,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/891f624550789ed7a82dd9b8ef4584627067840a"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f79c704c793c4168cb38cb4771f29ed9bb47a1e9",
+      "size": 740,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f79c704c793c4168cb38cb4771f29ed9bb47a1e9"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95ca3360578732e0f3287fad707e029303427eec",
+      "size": 1069,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/95ca3360578732e0f3287fad707e029303427eec"
+    },
+    {
+      "path": "README.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18e720cdaa0c08714eb0d8a78074c533ba328815",
+      "size": 40812,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/18e720cdaa0c08714eb0d8a78074c533ba328815"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bfb356f12e548db0f457ac01465b4a59f241c34",
+      "size": 30106,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8bfb356f12e548db0f457ac01465b4a59f241c34"
+    },
+    {
+      "path": "_typos.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83ba4592ea3ae5b0aee776c25404a94ff3e16c93",
+      "size": 634,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/83ba4592ea3ae5b0aee776c25404a94ff3e16c93"
+    },
+    {
+      "path": "code_tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "88d91a857f0c5071c0a7785e8e9b1be69f5563f5",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/88d91a857f0c5071c0a7785e8e9b1be69f5563f5"
+    },
+    {
+      "path": "code_tests/integration_tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "31df60fdd2edb6d50a0d7ccb1e02ab6c400ffd25",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/31df60fdd2edb6d50a0d7ccb1e02ab6c400ffd25"
+    },
+    {
+      "path": "code_tests/integration_tests/test_ai_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b73e644350791a6ee2762ec8ad724451e7d417a8",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/b73e644350791a6ee2762ec8ad724451e7d417a8"
+    },
+    {
+      "path": "code_tests/integration_tests/test_ai_models/test_agent_wrappers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bce74830b4a7bd2380b92ed75bc4029508ce6d0",
+      "size": 1784,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2bce74830b4a7bd2380b92ed75bc4029508ce6d0"
+    },
+    {
+      "path": "code_tests/integration_tests/test_ai_models/test_ai_model_interface.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68d4da37dbfceb100ddc1e018eddf669d7d03977",
+      "size": 3963,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/68d4da37dbfceb100ddc1e018eddf669d7d03977"
+    },
+    {
+      "path": "code_tests/integration_tests/test_ai_models/test_exa_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58e5ea67bed197f4317d36d9ffe3072193d99e1e",
+      "size": 5722,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/58e5ea67bed197f4317d36d9ffe3072193d99e1e"
+    },
+    {
+      "path": "code_tests/integration_tests/test_ai_models/test_general_llm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f7ca69832fbf66e372a610fba121c5f6565767c",
+      "size": 22258,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6f7ca69832fbf66e372a610fba121c5f6565767c"
+    },
+    {
+      "path": "code_tests/integration_tests/test_ai_models/test_models_incurring_cost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "830df3b1677589de47de2d63f2fd16854ebf51cf",
+      "size": 7995,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/830df3b1677589de47de2d63f2fd16854ebf51cf"
+    },
+    {
+      "path": "code_tests/integration_tests/test_asknews.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "607ccd0a20d9a3a9d29027dabda081521ce5ac2b",
+      "size": 3005,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/607ccd0a20d9a3a9d29027dabda081521ce5ac2b"
+    },
+    {
+      "path": "code_tests/integration_tests/test_base_rate_responder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afaef0352ebacc24f7a09f535a679080c39a7941",
+      "size": 1004,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/afaef0352ebacc24f7a09f535a679080c39a7941"
+    },
+    {
+      "path": "code_tests/integration_tests/test_benchmarker.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "328e3e023b636c49e7175a514635e0af0f403364",
+      "size": 10864,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/328e3e023b636c49e7175a514635e0af0f403364"
+    },
+    {
+      "path": "code_tests/integration_tests/test_bot_optimizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce8259395bca6d05a64a3e788fe0c1f020c696ba",
+      "size": 3616,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ce8259395bca6d05a64a3e788fe0c1f020c696ba"
+    },
+    {
+      "path": "code_tests/integration_tests/test_coherence_links.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7e13beb864e58d3ef1cf4bfb1e5f1e6f8fbe8b3",
+      "size": 589,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a7e13beb864e58d3ef1cf4bfb1e5f1e6f8fbe8b3"
+    },
+    {
+      "path": "code_tests/integration_tests/test_customizable_bot_live.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f15d3ad3f6174e9db1a192e091f1c74e5f64b7d",
+      "size": 2886,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8f15d3ad3f6174e9db1a192e091f1c74e5f64b7d"
+    },
+    {
+      "path": "code_tests/integration_tests/test_deduplicator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f40188d8b66ec2efcaa8d28a9bccf2997829c19",
+      "size": 15829,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4f40188d8b66ec2efcaa8d28a9bccf2997829c19"
+    },
+    {
+      "path": "code_tests/integration_tests/test_forecast_bots_live.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdbece0a7099fbfd54bbbddf5b2a10a967a7a56c",
+      "size": 10212,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/cdbece0a7099fbfd54bbbddf5b2a10a967a7a56c"
+    },
+    {
+      "path": "code_tests/integration_tests/test_forecast_database_manager.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "082690bf8f73339b501a113f83b17d9f7d807a2d",
+      "size": 2711,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/082690bf8f73339b501a113f83b17d9f7d807a2d"
+    },
+    {
+      "path": "code_tests/integration_tests/test_metaculus_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be2583c98dc6bf54c4233aed3be35dc76f2712ca",
+      "size": 64973,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/be2583c98dc6bf54c4233aed3be35dc76f2712ca"
+    },
+    {
+      "path": "code_tests/integration_tests/test_question_generators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "93c72d2eeccaf6ae3ea4e59930c8bb7e636442ea",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/93c72d2eeccaf6ae3ea4e59930c8bb7e636442ea"
+    },
+    {
+      "path": "code_tests/integration_tests/test_question_generators/test_question_decomposer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "710c36eda529bb3114409275cf476e71dfbd11d6",
+      "size": 591,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/710c36eda529bb3114409275cf476e71dfbd11d6"
+    },
+    {
+      "path": "code_tests/integration_tests/test_question_generators/test_question_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8386b825bd61c3b173b801e9fad834e1028bda10",
+      "size": 5807,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8386b825bd61c3b173b801e9fad834e1028bda10"
+    },
+    {
+      "path": "code_tests/integration_tests/test_question_generators/test_question_operationalizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b46e56a0cb95f7e1ffe2838c01c6c02c6879adca",
+      "size": 745,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b46e56a0cb95f7e1ffe2838c01c6c02c6879adca"
+    },
+    {
+      "path": "code_tests/integration_tests/test_run_bots_live.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc0d7e822496be6a9fb70e21f402131828029802",
+      "size": 1410,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/fc0d7e822496be6a9fb70e21f402131828029802"
+    },
+    {
+      "path": "code_tests/integration_tests/test_run_chat_app_tools__moderately_expensive.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "868d82579c44f2c288f7bd6ba49f7aa5193629eb",
+      "size": 4130,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/868d82579c44f2c288f7bd6ba49f7aa5193629eb"
+    },
+    {
+      "path": "code_tests/integration_tests/test_smart_searcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "451c46bc0dc9004e63a8ab9320bf87bb1bbd3fda",
+      "size": 3805,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/451c46bc0dc9004e63a8ab9320bf87bb1bbd3fda"
+    },
+    {
+      "path": "code_tests/integration_tests/test_structure_output.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2e1564fc1f11ae2020e31bcc86ac0ff51460b66",
+      "size": 9209,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c2e1564fc1f11ae2020e31bcc86ac0ff51460b66"
+    },
+    {
+      "path": "code_tests/unit_tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54aa44ce52d78cbdfcea2aedaeacfc659e102977",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/54aa44ce52d78cbdfcea2aedaeacfc659e102977"
+    },
+    {
+      "path": "code_tests/unit_tests/forecasting_test_manager.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d0cb03a70f11024e8c3d8fa7ff6eb837d25be5b",
+      "size": 7567,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6d0cb03a70f11024e8c3d8fa7ff6eb837d25be5b"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2769d48b609a511bd7d9c2d32bda47a1c323e969",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/2769d48b609a511bd7d9c2d32bda47a1c323e969"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_ai_congress_v2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbbe4f620569c8d224e4def44d033f33ac2c61e0",
+      "size": 20760,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/cbbe4f620569c8d224e4def44d033f33ac2c61e0"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_intervention_testing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac716e0e8e79000cd0557e4853dafda5751808c9",
+      "size": 17522,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ac716e0e8e79000cd0557e4853dafda5751808c9"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_key_factors_searcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "485c90e7c5ef0eee0c08894ca648b58326979b19",
+      "size": 2646,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/485c90e7c5ef0eee0c08894ca648b58326979b19"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_situation_simulator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1668a42af666d85422537d50682723e78c1e19a",
+      "size": 26384,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a1668a42af666d85422537d50682723e78c1e19a"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "763ffeb8c08a2c8622ddd0b47dd2dc701dda0d8b",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/763ffeb8c08a2c8622ddd0b47dd2dc701dda0d8b"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff07b8296c89b6b6b5d10f0010f6f11fed86e9a3",
+      "size": 1667,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ff07b8296c89b6b6b5d10f0010f6f11fed86e9a3"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_backends.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53f0a6ac7a1bc6c2302b559bde462fceba49e6de",
+      "size": 9801,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/53f0a6ac7a1bc6c2302b559bde462fceba49e6de"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_canonicalize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e45405c0828826306322489f3455b2498adda9a0",
+      "size": 3092,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e45405c0828826306322489f3455b2498adda9a0"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_catalog.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3387d046d70926c0dadbf18c0d7dd7ef488752f1",
+      "size": 4859,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3387d046d70926c0dadbf18c0d7dd7ef488752f1"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_content_store.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27dfdf151aa456d57938913d5e569aeae13fc91c",
+      "size": 7337,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/27dfdf151aa456d57938913d5e569aeae13fc91c"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_cost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe9dea550c4ed184d310c42ea0575d61904216a1",
+      "size": 2372,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/fe9dea550c4ed184d310c42ea0575d61904216a1"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_coverage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "155d3772a87a262210479f3d3c4c0c25ec947877",
+      "size": 3684,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/155d3772a87a262210479f3d3c4c0c25ec947877"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_layout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36147d38b369ac4d39ce6ccbae358284a43d254a",
+      "size": 4300,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/36147d38b369ac4d39ce6ccbae358284a43d254a"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_pipeline_and_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba895f4d0f4c298846606b29a7217db44c4ae606",
+      "size": 10832,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ba895f4d0f4c298846606b29a7217db44c4ae606"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_quality_and_tiered.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4f6b697cc38a2621e15c5173f4f7a0706f1b8d8",
+      "size": 2064,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d4f6b697cc38a2621e15c5173f4f7a0706f1b8d8"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_reindex.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82e5f5b7c0b3d09a76a16ddb79af4f845d515906",
+      "size": 3273,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/82e5f5b7c0b3d09a76a16ddb79af4f845d515906"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_reports.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a637a64bd5af63cca40a2ae2b8e829ad1edfa3e",
+      "size": 3648,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7a637a64bd5af63cca40a2ae2b8e829ad1edfa3e"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_screenshot_encoding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d357982b397bbe9e073648acaa5738b0e98fb12a",
+      "size": 2356,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d357982b397bbe9e073648acaa5738b0e98fb12a"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_trace_extraction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2637eccd6f07acb88796b57963dc82daede00132",
+      "size": 7358,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2637eccd6f07acb88796b57963dc82daede00132"
+    },
+    {
+      "path": "code_tests/unit_tests/test_agents_and_tools/test_source_archive/test_url_extraction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "443578bba73d66b1a1f5c1e32519e0201dbcbeef",
+      "size": 2845,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/443578bba73d66b1a1f5c1e32519e0201dbcbeef"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "375d9bc54c05f72b6087623d1ec1489822aa12a3",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/375d9bc54c05f72b6087623d1ec1489822aa12a3"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/ai_mock_manager.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ce8d0fb5c77429971afb4bc7c9a84f53fe262be",
+      "size": 6166,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3ce8d0fb5c77429971afb4bc7c9a84f53fe262be"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/models_to_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea6d094f4bd91fdf0fe8caf198d2ae0cebe712da",
+      "size": 3452,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ea6d094f4bd91fdf0fe8caf198d2ae0cebe712da"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_ai_utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d6e767632b852417591241bf232ff2c5008cd02b",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/d6e767632b852417591241bf232ff2c5008cd02b"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_ai_utils/test_ai_misc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c5d721e61524fcbdbadfa835bf6d72d16443e89",
+      "size": 6146,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7c5d721e61524fcbdbadfa835bf6d72d16443e89"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_combined_llm_archetype.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3b221faf4be249c1c52512c46c384360eea4971",
+      "size": 972,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c3b221faf4be249c1c52512c46c384360eea4971"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_exa_searcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b97c77eb1915c2bb980c25cd9510ae2c77637109",
+      "size": 3171,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b97c77eb1915c2bb980c25cd9510ae2c77637109"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_general_llm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a666eaded73d0ea17a079813e21977887001f846",
+      "size": 10808,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a666eaded73d0ea17a079813e21977887001f846"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_hard_limit_enforcement.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df018ae9b904cc60b0abc103543720972f146673",
+      "size": 3177,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/df018ae9b904cc60b0abc103543720972f146673"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_open_ai_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "228702ca03760ced8675641aba8bb90949145c46",
+      "size": 1583,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/228702ca03760ced8675641aba8bb90949145c46"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_outputs_text.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7d664bfc5caf334cb7d3cbf57c1229e51b05fb4",
+      "size": 10368,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f7d664bfc5caf334cb7d3cbf57c1229e51b05fb4"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_request_limited_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4bbc501becdc4c7763a96154f714a299de592d2",
+      "size": 10771,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e4bbc501becdc4c7763a96154f714a299de592d2"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_resource_managers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52f577e0bd769063740fe724deb254f43604482b",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/52f577e0bd769063740fe724deb254f43604482b"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_resource_managers/test_hard_limit_managers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92e1816850cad89dc9b5c197b8d2fa7056de8d4b",
+      "size": 10851,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/92e1816850cad89dc9b5c197b8d2fa7056de8d4b"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_resource_managers/test_refreshing_bucket_rate_limiter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02a06154152acb61d9e9bbeb29fd862c439b8560",
+      "size": 13722,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/02a06154152acb61d9e9bbeb29fd862c439b8560"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_retryable_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fd731298bc83376d100f3a35eeedc60b55931f8",
+      "size": 2906,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4fd731298bc83376d100f3a35eeedc60b55931f8"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_time_limited_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aa8cfa0b75a6de2a2e74484f7875cf1374f8418",
+      "size": 1460,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5aa8cfa0b75a6de2a2e74484f7875cf1374f8418"
+    },
+    {
+      "path": "code_tests/unit_tests/test_ai_models/test_token_limited_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad7314d9a0873478c3736371d0b2ed95f1a509b9",
+      "size": 3091,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ad7314d9a0873478c3736371d0b2ed95f1a509b9"
+    },
+    {
+      "path": "code_tests/unit_tests/test_analyze_bot_run_failures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c03402efb99de0b65b4e4e3fdbaff9a543c378f",
+      "size": 3996,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3c03402efb99de0b65b4e4e3fdbaff9a543c378f"
+    },
+    {
+      "path": "code_tests/unit_tests/test_auto_optimizers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b26990cee63fab029feb89a9a4570c14c109f73f",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/b26990cee63fab029feb89a9a4570c14c109f73f"
+    },
+    {
+      "path": "code_tests/unit_tests/test_auto_optimizers/test_customizable_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5420f06b3c2094acc12ef180f2df0ec687dbfc1",
+      "size": 12793,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f5420f06b3c2094acc12ef180f2df0ec687dbfc1"
+    },
+    {
+      "path": "code_tests/unit_tests/test_auto_optimizers/test_question_plus_research.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf9a51ec519572d985d64db1e664f77887d4b8a7",
+      "size": 1704,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/cf9a51ec519572d985d64db1e664f77887d4b8a7"
+    },
+    {
+      "path": "code_tests/unit_tests/test_cp_benchmarking",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6c2a68530d449877a2dcb445418b4624e34f035f",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/6c2a68530d449877a2dcb445418b4624e34f035f"
+    },
+    {
+      "path": "code_tests/unit_tests/test_cp_benchmarking/test_benchmark_displayer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4adf9149144d3193a30e4309f457a55f6a91e43",
+      "size": 685,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b4adf9149144d3193a30e4309f457a55f6a91e43"
+    },
+    {
+      "path": "code_tests/unit_tests/test_cp_benchmarking/test_benchmark_for_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95819e1c4c051670fe0e209f3ff5c4a66f1628de",
+      "size": 1251,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/95819e1c4c051670fe0e209f3ff5c4a66f1628de"
+    },
+    {
+      "path": "code_tests/unit_tests/test_cp_benchmarking/test_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d9b0d1fc927f14cc734201936b30c0a5ea3fa0d",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/7d9b0d1fc927f14cc734201936b30c0a5ea3fa0d"
+    },
+    {
+      "path": "code_tests/unit_tests/test_cp_benchmarking/test_data/benchmark_object_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8d06fedd22c23feb549fa65ae6dac3984310e00",
+      "size": 7588867,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b8d06fedd22c23feb549fa65ae6dac3984310e00"
+    },
+    {
+      "path": "code_tests/unit_tests/test_cp_benchmarking/test_data/benchmark_object_examples.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32ef1715e1073188d3663f1b13a339f4e7a5298a",
+      "size": 2307740,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/32ef1715e1073188d3663f1b13a339f4e7a5298a"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f37260a826bfa69aa45d5e202c8242e703face5",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/2f37260a826bfa69aa45d5e202c8242e703face5"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/forecasting_test_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11184de10373959434816e6d0c6bc8e73cbe7c7a",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/11184de10373959434816e6d0c6bc8e73cbe7c7a"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/forecasting_test_data/base_rate_reports.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7eb7e62fa2c8a2aa568a996ce666055da6b75a4",
+      "size": 6108,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a7eb7e62fa2c8a2aa568a996ce666055da6b75a4"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/forecasting_test_data/metaculus_forecast_report_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11e88c19ae18790713c11c06ac678ee8ff6d2616",
+      "size": 2319072,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/11e88c19ae18790713c11c06ac678ee8ff6d2616"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/forecasting_test_data/metaculus_questions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "304b1f231b4239cb78af1875e69fae06ade1da8d",
+      "size": 1347802,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/304b1f231b4239cb78af1875e69fae06ade1da8d"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/test_aggregate_edge_cases.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c36eea8a8063aaabbd1f79f7231c404d0affcee",
+      "size": 5315,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8c36eea8a8063aaabbd1f79f7231c404d0affcee"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/test_binary_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "146f766f2d54617ff394ed91c3268386ceac84cb",
+      "size": 5902,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/146f766f2d54617ff394ed91c3268386ceac84cb"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/test_forecast_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22f2b64a48b9c28b1bcb7f28edca7831748ffa6b",
+      "size": 6262,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/22f2b64a48b9c28b1bcb7f28edca7831748ffa6b"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/test_markdown_tree.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0219701225a28155a398fb99d3e95c31b4e781e6",
+      "size": 18684,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0219701225a28155a398fb99d3e95c31b4e781e6"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/test_metaculus_question.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc841c20ef93b45d6ef45d81a6c570c78f5716b3",
+      "size": 4207,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/fc841c20ef93b45d6ef45d81a6c570c78f5716b3"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/test_multiple_choice_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7e289fd50ded7cf58eeb7b655dd74075eddf8f1",
+      "size": 9639,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a7e289fd50ded7cf58eeb7b655dd74075eddf8f1"
+    },
+    {
+      "path": "code_tests/unit_tests/test_data_models/test_numeric_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d59268e91fb4319975a3b5ab9432762670317a9",
+      "size": 31642,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0d59268e91fb4319975a3b5ab9432762670317a9"
+    },
+    {
+      "path": "code_tests/unit_tests/test_forecast_bots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b80c113c883b9b74bd76bf65e8d34c6c6c3b97e8",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/b80c113c883b9b74bd76bf65e8d34c6c6c3b97e8"
+    },
+    {
+      "path": "code_tests/unit_tests/test_forecast_bots/test_forecast_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f56779f3905c9ec654fc355b4458614948ed39f",
+      "size": 14684,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5f56779f3905c9ec654fc355b4458614948ed39f"
+    },
+    {
+      "path": "code_tests/unit_tests/test_frontend",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3eb7473e5a3c5135f0ae54f2286eb59b0ac4ba42",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/3eb7473e5a3c5135f0ae54f2286eb59b0ac4ba42"
+    },
+    {
+      "path": "code_tests/unit_tests/test_frontend/front_end_test_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6e9df4a27923e4972a9c02f2390215eb6c19b30",
+      "size": 614,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d6e9df4a27923e4972a9c02f2390215eb6c19b30"
+    },
+    {
+      "path": "code_tests/unit_tests/test_frontend/test_home_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c6aacef0b3e6595a1a493b72ba91da9c7e0b31e",
+      "size": 998,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3c6aacef0b3e6595a1a493b72ba91da9c7e0b31e"
+    },
+    {
+      "path": "code_tests/unit_tests/test_frontend/test_report_displayer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0363616ba11341bf369e714b764004230fcdb60c",
+      "size": 1468,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0363616ba11341bf369e714b764004230fcdb60c"
+    },
+    {
+      "path": "code_tests/unit_tests/test_helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7950b025b3fe8ad88e67f083e05f5af144275158",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/7950b025b3fe8ad88e67f083e05f5af144275158"
+    },
+    {
+      "path": "code_tests/unit_tests/test_helpers/test_asknews_cache.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccb70e17fe3fc2c719cd8415d5d378eefd072ebc",
+      "size": 22517,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ccb70e17fe3fc2c719cd8415d5d378eefd072ebc"
+    },
+    {
+      "path": "code_tests/unit_tests/test_helpers/test_metaculus_client_acting_user.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9f79e13732aa379ea9d39dfcb11aff1af6f6d56",
+      "size": 8011,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e9f79e13732aa379ea9d39dfcb11aff1af6f6d56"
+    },
+    {
+      "path": "code_tests/unit_tests/test_helpers/test_metaculus_client_create_question.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b6f41bf7b1ea00be2c987b3c8f5a19373add6e5",
+      "size": 4705,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6b6f41bf7b1ea00be2c987b3c8f5a19373add6e5"
+    },
+    {
+      "path": "code_tests/unit_tests/test_helpers/test_prediction_extractor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "230a4999caec77ea22c8bf1afdb1750835d618de",
+      "size": 27566,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/230a4999caec77ea22c8bf1afdb1750835d618de"
+    },
+    {
+      "path": "code_tests/unit_tests/test_helpers/test_retry_decorator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2226fa61f7ac67bd285fef15ffe4ba3f5be89de3",
+      "size": 4213,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2226fa61f7ac67bd285fef15ffe4ba3f5be89de3"
+    },
+    {
+      "path": "code_tests/unit_tests/test_optional_imports.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e8ee25d7b1729d513fc94832234a6b340e47380",
+      "size": 3229,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8e8ee25d7b1729d513fc94832234a6b340e47380"
+    },
+    {
+      "path": "code_tests/unit_tests/test_public_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9edce5129e6fa38b9c6b834285a13d22b161b78",
+      "size": 3978,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f9edce5129e6fa38b9c6b834285a13d22b161b78"
+    },
+    {
+      "path": "code_tests/unit_tests/test_run_bots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40caf4e6a87850b15ca1d032c17564080d9c2662",
+      "size": 8002,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/40caf4e6a87850b15ca1d032c17564080d9c2662"
+    },
+    {
+      "path": "code_tests/unit_tests/test_util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37ab833844c957917d2095f9734d6a9547a0290a",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/37ab833844c957917d2095f9734d6a9547a0290a"
+    },
+    {
+      "path": "code_tests/unit_tests/test_util/test_async_batching.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf339c16136509598e2d15a2b2717baa64571205",
+      "size": 11270,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/bf339c16136509598e2d15a2b2717baa64571205"
+    },
+    {
+      "path": "code_tests/unit_tests/test_util/test_file_manipulation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59287c43c20a73165a88862cf04a290232c2b412",
+      "size": 6513,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/59287c43c20a73165a88862cf04a290232c2b412"
+    },
+    {
+      "path": "code_tests/unit_tests/test_util/test_misc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fd55960269298a5c1a1bbd17aae58cc444d3434",
+      "size": 3001,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5fd55960269298a5c1a1bbd17aae58cc444d3434"
+    },
+    {
+      "path": "code_tests/unit_tests/test_util/test_readme.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1305c621b71e5636a12c0cc84781dfb6a2073a68",
+      "size": 270,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1305c621b71e5636a12c0cc84781dfb6a2073a68"
+    },
+    {
+      "path": "code_tests/unit_tests/test_util/test_stats.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14a2044858220cdcb46d84fffbd6c09e672d6fef",
+      "size": 17954,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/14a2044858220cdcb46d84fffbd6c09e672d6fef"
+    },
+    {
+      "path": "code_tests/utilities_for_tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86b0902b296bd686af30b7ad4219411276342948",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/86b0902b296bd686af30b7ad4219411276342948"
+    },
+    {
+      "path": "code_tests/utilities_for_tests/coroutine_testing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ec1761afaec19278893a9829e679c08fcef7355",
+      "size": 7961,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8ec1761afaec19278893a9829e679c08fcef7355"
+    },
+    {
+      "path": "code_tests/utilities_for_tests/jsonable_assertations.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f82718e9d22b2996dc18ce4165c155bcb664ff2",
+      "size": 2605,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5f82718e9d22b2996dc18ce4165c155bcb664ff2"
+    },
+    {
+      "path": "code_tests/utilities_for_tests/misc_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34b6074dd2a8e5bad127754ca54fc9f208efe050",
+      "size": 1126,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/34b6074dd2a8e5bad127754ca54fc9f208efe050"
+    },
+    {
+      "path": "conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "439162dfecde911220e1c105a198deaa64cd6c3f",
+      "size": 300,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/439162dfecde911220e1c105a198deaa64cd6c3f"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2b5904df853656341b8cae25b30b295ed9fe112",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/d2b5904df853656341b8cae25b30b295ed9fe112"
+    },
+    {
+      "path": "docs/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "071527f50fde28f583932015c1c7ef9a529c489e",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/071527f50fde28f583932015c1c7ef9a529c489e"
+    },
+    {
+      "path": "docs/images/benchmark_bottom_screen.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4313b2940d82f3b2c65218e5b32082036dcd6565",
+      "size": 119386,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4313b2940d82f3b2c65218e5b32082036dcd6565"
+    },
+    {
+      "path": "docs/images/benchmark_top_screen.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ceca56d8291407248edf8e28aca53bc461626db2",
+      "size": 138664,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ceca56d8291407248edf8e28aca53bc461626db2"
+    },
+    {
+      "path": "forecasting_tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f8721d577a9cd572ae820d787358c481d6d7fbe",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/4f8721d577a9cd572ae820d787358c481d6d7fbe"
+    },
+    {
+      "path": "forecasting_tools/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54e97454a793bf17fde68f0e55e9620d22f9615a",
+      "size": 11715,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/54e97454a793bf17fde68f0e55e9620d22f9615a"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5d07fb5681befec3ad95012e7647505d6c3ab08",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/d5d07fb5681befec3ad95012e7647505d6c3ab08"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/ai_congress_v2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d606eb3b6d3e0f320af0029b255b70070f1c54e6",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/d606eb3b6d3e0f320af0029b255b70070f1c54e6"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/ai_congress_v2/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/ai_congress_v2/congress_member_agent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "540d3b7165dbc7892b95156b8f3d648807f60eec",
+      "size": 43170,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/540d3b7165dbc7892b95156b8f3d648807f60eec"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/ai_congress_v2/congress_orchestrator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36920366438e7514e509111cc4207d81cc0341e3",
+      "size": 41983,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/36920366438e7514e509111cc4207d81cc0341e3"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/ai_congress_v2/data_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aaddaf4b3f2417f390ead41bbf3383648b6d4cc",
+      "size": 13524,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4aaddaf4b3f2417f390ead41bbf3383648b6d4cc"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/ai_congress_v2/member_profiles.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a86e7c1d0482d9efbcb1ef45153f75ecfed6840",
+      "size": 12049,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6a86e7c1d0482d9efbcb1ef45153f75ecfed6840"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/ai_congress_v2/tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b04e4a1a965d75a20780a664a560379ba353c8ea",
+      "size": 4530,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b04e4a1a965d75a20780a664a560379ba353c8ea"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/base_rates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1c5f8d046e81e6fb6bde30ed5c4dcad67b8304e4",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/1c5f8d046e81e6fb6bde30ed5c4dcad67b8304e4"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/base_rates/base_rate_researcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e38aa00755ca78b3193069c127d6902b5731c960",
+      "size": 25115,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e38aa00755ca78b3193069c127d6902b5731c960"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/base_rates/deduplicator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66657a8e9366390858aa71c4bb35b271c508f3a3",
+      "size": 10606,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/66657a8e9366390858aa71c4bb35b271c508f3a3"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/base_rates/estimator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6397d5710d3d58bcafe08cb52cb030d8e8a65f1d",
+      "size": 5470,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6397d5710d3d58bcafe08cb52cb030d8e8a65f1d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/base_rates/niche_list_researcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa7b04d0f9cfe11ac508e73f157e6e1eff1f122c",
+      "size": 23439,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/aa7b04d0f9cfe11ac508e73f157e6e1eff1f122c"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/deprecated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57c5330e7bd25990b170566d484fb1d3c33bf600",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/57c5330e7bd25990b170566d484fb1d3c33bf600"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/deprecated/configured_llms.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63a3009e03a41e6f67f5d75c3f037f8dc5188c1d",
+      "size": 514,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/63a3009e03a41e6f67f5d75c3f037f8dc5188c1d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/deprecated/general_researcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02a67415e790a6d3274037e7241c12946860d71f",
+      "size": 2611,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/02a67415e790a6d3274037e7241c12946860d71f"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/deprecated/question_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad58e8110aa2b15ed54bbb0b8c5fdd387aac87b6",
+      "size": 12057,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ad58e8110aa2b15ed54bbb0b8c5fdd387aac87b6"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/deprecated/question_responder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abd570cd56484f4df83f776ba73de7a5588a41ab",
+      "size": 988,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/abd570cd56484f4df83f776ba73de7a5588a41ab"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/deprecated/question_router.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f83ebab185248db9ef6f2a05241f7ea3eba73e3c",
+      "size": 2800,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f83ebab185248db9ef6f2a05241f7ea3eba73e3c"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/deprecated/research_coordinator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c3cadf7a7b3b958a5927a5abea4d800cad35642",
+      "size": 24881,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4c3cadf7a7b3b958a5927a5abea4d800cad35642"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/minor_tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fee3b477a041513714f215357b50ebf46354fe1d",
+      "size": 7447,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/fee3b477a041513714f215357b50ebf46354fe1d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/other",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f65d9ff6734344ff07fae9da7439ae5fce43f827",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/f65d9ff6734344ff07fae9da7439ae5fce43f827"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/other/data_analyzer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4e4ec159d6353cd8e9da99d4a677bb6c599e6e8",
+      "size": 3902,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a4e4ec159d6353cd8e9da99d4a677bb6c599e6e8"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/other/hosted_file.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51287bca3354a1b4beae5a7956fac47f4faab689",
+      "size": 3234,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/51287bca3354a1b4beae5a7956fac47f4faab689"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/question_generators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f76ee7b5e75a6f44b13496793716eb676bac496",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/7f76ee7b5e75a6f44b13496793716eb676bac496"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/question_generators/generated_question.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da8899c0bdfe381ef22c422b388f12ebe55dafe0",
+      "size": 1445,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/da8899c0bdfe381ef22c422b388f12ebe55dafe0"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/question_generators/harmful_question_identifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd85bf3c0261765fc7cb5dad4087f1c659ab0c2c",
+      "size": 11821,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/fd85bf3c0261765fc7cb5dad4087f1c659ab0c2c"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/question_generators/q3_q4_quarterly_questions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1156baaa7999af51344f27449419bdb16046e849",
+      "size": 268929,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1156baaa7999af51344f27449419bdb16046e849"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/question_generators/question_decomposer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e3a1074bcae3b0ff103a399a2582547cd364771",
+      "size": 42988,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1e3a1074bcae3b0ff103a399a2582547cd364771"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/question_generators/question_operationalizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb82eb2712f7af08a3be229c99b2c9aff67ff7a0",
+      "size": 4581,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/eb82eb2712f7af08a3be229c99b2c9aff67ff7a0"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/question_generators/simple_question.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23c18524dfc4700954c18a408ae7466d7fe91e10",
+      "size": 11518,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/23c18524dfc4700954c18a408ae7466d7fe91e10"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/question_generators/topic_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "189b51ec94372d2007056765031814bb921df38f",
+      "size": 10737,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/189b51ec94372d2007056765031814bb921df38f"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/research",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59eaee04bd5a1b385ea3978de921d939680c56e6",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/59eaee04bd5a1b385ea3978de921d939680c56e6"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/research/computer_use.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d63c5b4bb8c7f36bddba38da701bb8aad6332c7",
+      "size": 8228,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7d63c5b4bb8c7f36bddba38da701bb8aad6332c7"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/research/find_a_dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ffd59042a9b6823ead245c97a751678e53f69e5",
+      "size": 5409,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0ffd59042a9b6823ead245c97a751678e53f69e5"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/research/key_factors_researcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f74b38f97cb69710f7f134200e7dd94aaca7dae2",
+      "size": 15777,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f74b38f97cb69710f7f134200e7dd94aaca7dae2"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/research/smart_searcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d92a7c779d4aeb829e6248f879e26dde1ae5c4e4",
+      "size": 10991,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d92a7c779d4aeb829e6248f879e26dde1ae5c4e4"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f277e869e81e73280267155e5fcef2aa2bc547e5",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/f277e869e81e73280267155e5fcef2aa2bc547e5"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/agent_runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "038d80db44e21bf3305a19a6a37504535a27e97d",
+      "size": 17383,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/038d80db44e21bf3305a19a6a37504535a27e97d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/data_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8838c5b5dca30b8e911367c0a2e133bad2bf2d86",
+      "size": 5432,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8838c5b5dca30b8e911367c0a2e133bad2bf2d86"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/effect_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "750126533d95f0e856c6f6e162ad66911f1d6eea",
+      "size": 10950,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/750126533d95f0e856c6f6e162ad66911f1d6eea"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/example_situations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "12ad7d6830ba48f39b96f976f33ddb3bbea0f342",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/12ad7d6830ba48f39b96f976f33ddb3bbea0f342"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/example_situations/industrial_basin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e27710b09efc2df131c60f304fc02c84317e2fb0",
+      "size": 171107,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e27710b09efc2df131c60f304fc02c84317e2fb0"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/example_situations/milbrook.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c2cb1cd1d096c30dc2d62490c314a4f026cebde",
+      "size": 100383,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1c2cb1cd1d096c30dc2d62490c314a4f026cebde"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/example_situations/simple_business.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ca9637a9900d7aee747ff4d434f2447eef39f21",
+      "size": 9102,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7ca9637a9900d7aee747ff4d434f2447eef39f21"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/example_situations/simple_dnd.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f850a1b04a357e371cc35dcf497237199d7f0ca",
+      "size": 8254,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3f850a1b04a357e371cc35dcf497237199d7f0ca"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/example_situations/simple_election.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d21a2ecedb38ca108b7846439378c906ada76dfe",
+      "size": 8967,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d21a2ecedb38ca108b7846439378c906ada76dfe"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/example_situations/willowbrook.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df7afe0ed3a54d19571da8b5e8f749c3bd6ae21",
+      "size": 89781,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4df7afe0ed3a54d19571da8b5e8f749c3bd6ae21"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/example_situations/z_broken_mafia.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e7ba017801e2626dcc3f83a39bf59f34d752bfd",
+      "size": 7050,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7e7ba017801e2626dcc3f83a39bf59f34d752bfd"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/intervention_testing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "858eb30d5a7abe59b32f8d67513bd2853364d53e",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/858eb30d5a7abe59b32f8d67513bd2853364d53e"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/intervention_testing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/intervention_testing/data_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d937096dd13ffe6a2763ee47bee7501f8b207b8d",
+      "size": 4125,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d937096dd13ffe6a2763ee47bee7501f8b207b8d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/intervention_testing/forecast_resolver.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "225232411bace156c121a6c379ed0af2f9a20467",
+      "size": 8079,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/225232411bace156c121a6c379ed0af2f9a20467"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/intervention_testing/intervention_policy_agent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24710198b426a34f9246952bbbb66b70e6cb16a3",
+      "size": 18380,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/24710198b426a34f9246952bbbb66b70e6cb16a3"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/intervention_testing/intervention_runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bb430fbd1a4628788421b5396ff7778ea3746dd",
+      "size": 9197,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7bb430fbd1a4628788421b5396ff7778ea3746dd"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/intervention_testing/intervention_storage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d75332cca7a66e84c8d1a3c5286f65159dbe3c5",
+      "size": 2881,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0d75332cca7a66e84c8d1a3c5286f65159dbe3c5"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/simulator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca49565503551e527637978d8aea1cd8a9798f0d",
+      "size": 8615,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ca49565503551e527637978d8aea1cd8a9798f0d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/situation_simulator/situation_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edcb12657fc4c8164629e1c11ec1de90a2b901d1",
+      "size": 15114,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/edcb12657fc4c8164629e1c11ec1de90a2b901d1"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "470c5c33e0053ef5390ac4ec4753759354f3c30d",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/470c5c33e0053ef5390ac4ec4753759354f3c30d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c368e3281799329470bee4976baf6bb063326c4",
+      "size": 13505,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5c368e3281799329470bee4976baf6bb063326c4"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ede914d3e8ad19b448808c2dad01e02de5078ec",
+      "size": 1922,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5ede914d3e8ad19b448808c2dad01e02de5078ec"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/benchmark.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76d79083e242337eaa2a4322733057998c9abb3f",
+      "size": 15712,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/76d79083e242337eaa2a4322733057998c9abb3f"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/canonicalize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d722c69940f736b2921629de2eb8da191d3f920",
+      "size": 4072,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7d722c69940f736b2921629de2eb8da191d3f920"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/catalog.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7712760de6ddd9208e17688b3d7fa2ba2084e355",
+      "size": 21506,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7712760de6ddd9208e17688b3d7fa2ba2084e355"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a93a1f3f5899e0b77fb702135b1680e2f0ed7e8",
+      "size": 13391,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0a93a1f3f5899e0b77fb702135b1680e2f0ed7e8"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb643ef2f9a2b37b5b5e58ad22983200df4723c",
+      "size": 3878,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/cfb643ef2f9a2b37b5b5e58ad22983200df4723c"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/content_store.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c0827cbc19371486b27bd0b509e1239620c1e49",
+      "size": 13392,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2c0827cbc19371486b27bd0b509e1239620c1e49"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/cost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33e950eb119da698a62874ea73da4fdd9f121b41",
+      "size": 4822,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/33e950eb119da698a62874ea73da4fdd9f121b41"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/coverage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b812e9b79863e23b27e3bda1a47080548843c8b",
+      "size": 8603,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/9b812e9b79863e23b27e3bda1a47080548843c8b"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "298aef81c2184e52a836f1c7b1f46af00dc78017",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/298aef81c2184e52a836f1c7b1f46af00dc78017"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e41b581d92f3d1f699a918520e346e0413d9d354",
+      "size": 5307,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e41b581d92f3d1f699a918520e346e0413d9d354"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2432a8a364f9b5213fcb48681f542e49d3f2e39",
+      "size": 714,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e2432a8a364f9b5213fcb48681f542e49d3f2e39"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers/cloakbrowser_fetcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4164e70a9842ea79986d924b26774dbdf316380",
+      "size": 2719,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d4164e70a9842ea79986d924b26774dbdf316380"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers/firecrawl_fetcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "622d51ff223bedd096d01de63ec837929323b753",
+      "size": 4963,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/622d51ff223bedd096d01de63ec837929323b753"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers/hyperbrowser_fetcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce728abdad1b492ae6332c094c3767066539d4dd",
+      "size": 5814,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ce728abdad1b492ae6332c094c3767066539d4dd"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers/pdf_fetcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0977605cdd2cc9b8e1617e084a4d0b2e31ec13c1",
+      "size": 5817,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0977605cdd2cc9b8e1617e084a4d0b2e31ec13c1"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers/playwright_fetcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d81ea82e0bc9b1a49f5f6fc14473e995881f0b61",
+      "size": 9954,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d81ea82e0bc9b1a49f5f6fc14473e995881f0b61"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/fetchers/tiered.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb47640a3689e54628b3ce5029b7227846e357ee",
+      "size": 1927,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/bb47640a3689e54628b3ce5029b7227846e357ee"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/ingest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6541a6d5bd7366b2a0b1d2f2ecb22d284f8bc420",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/6541a6d5bd7366b2a0b1d2f2ecb22d284f8bc420"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/ingest/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b9729dbdb206c7d5d02068bf06eea5dad9104bc",
+      "size": 948,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5b9729dbdb206c7d5d02068bf06eea5dad9104bc"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/ingest/trace_extraction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c63fe084fcb7ff4ce88daa8661d8be67ab06e65",
+      "size": 13906,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1c63fe084fcb7ff4ce88daa8661d8be67ab06e65"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/ingest/url_extraction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8b06d3b8c832105dbd837d58bba16f2bc6c1209",
+      "size": 4450,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b8b06d3b8c832105dbd837d58bba16f2bc6c1209"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/layout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b63c1435d2fd228b182692c8272d2cb11cf39725",
+      "size": 2164,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b63c1435d2fd228b182692c8272d2cb11cf39725"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b629fd18c0aeea55d6fc26fcd7518f664c9bea8",
+      "size": 3349,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4b629fd18c0aeea55d6fc26fcd7518f664c9bea8"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08c63cd62764ae9f1b4dad7f1d40a8cd295ab2c1",
+      "size": 3370,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/08c63cd62764ae9f1b4dad7f1d40a8cd295ab2c1"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e55646699ff300bca4a727f1227afa9ad9d670cb",
+      "size": 12126,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e55646699ff300bca4a727f1227afa9ad9d670cb"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/quality.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bed34975731ae24c1a2e7222e29859ad08b5fb4",
+      "size": 1817,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0bed34975731ae24c1a2e7222e29859ad08b5fb4"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/reindex.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a1e5a453688d66de63c135caaf6e58345c6a7d1",
+      "size": 10898,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0a1e5a453688d66de63c135caaf6e58345c6a7d1"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/reports.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ad95945b190c5d1398354b2f39390ac27e47e5d",
+      "size": 3466,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8ad95945b190c5d1398354b2f39390ac27e47e5d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/storage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df6d75ce3d9ca52797eaa122e25e9bd9e4e1f4d5",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/df6d75ce3d9ca52797eaa122e25e9bd9e4e1f4d5"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/storage/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7c7755a912ecf80ddcc3524b85426bcb7b8515d",
+      "size": 417,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a7c7755a912ecf80ddcc3524b85426bcb7b8515d"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/storage/blob_store.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7553c972890b7ca07f349216383b5a3365ac8893",
+      "size": 690,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7553c972890b7ca07f349216383b5a3365ac8893"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/storage/local_store.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d85b0b0b917585431b8e91698294e3459a946fed",
+      "size": 990,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d85b0b0b917585431b8e91698294e3459a946fed"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/storage/s3_store.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10914b94cae8491e3f1f210cbc522ea1462d0f50",
+      "size": 2395,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/10914b94cae8491e3f1f210cbc522ea1462d0f50"
+    },
+    {
+      "path": "forecasting_tools/agents_and_tools/source_archive/viewer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39884dff8c8daafa80c150686b60ed3ffc0aac2a",
+      "size": 15045,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/39884dff8c8daafa80c150686b60ed3ffc0aac2a"
+    },
+    {
+      "path": "forecasting_tools/ai_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f02eddc6c858262916f7d0d5019fbfa7a27da07a",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/f02eddc6c858262916f7d0d5019fbfa7a27da07a"
+    },
+    {
+      "path": "forecasting_tools/ai_models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/ai_models/agent_wrappers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54c06e077df343289518ab679cc9898876145b66",
+      "size": 3758,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/54c06e077df343289518ab679cc9898876145b66"
+    },
+    {
+      "path": "forecasting_tools/ai_models/ai_utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dad5f6cf5f7388e77790e772e14bb280a62696e9",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/dad5f6cf5f7388e77790e772e14bb280a62696e9"
+    },
+    {
+      "path": "forecasting_tools/ai_models/ai_utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/ai_models/ai_utils/openai_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e50a2278543fc65b5d19a7385e0aa880f255787",
+      "size": 9758,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1e50a2278543fc65b5d19a7385e0aa880f255787"
+    },
+    {
+      "path": "forecasting_tools/ai_models/ai_utils/response_types.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e884c9d6c630778805da19e7d04bfd24fba13db",
+      "size": 387,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3e884c9d6c630778805da19e7d04bfd24fba13db"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e27eac05682fbe917095814fe352a4a7e1285c22",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/e27eac05682fbe917095814fe352a4a7e1285c22"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea1d612307dc4f17aa28cc461115e734ec2f8024",
+      "size": 5347,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ea1d612307dc4f17aa28cc461115e734ec2f8024"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/claude35sonnet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36c74947eb7f5199ef9122f1100e4aa937545476",
+      "size": 867,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/36c74947eb7f5199ef9122f1100e4aa937545476"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/deepseek_r1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea354ea3634db7ebadbcdbd72e456ea70f4f317a",
+      "size": 564,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ea354ea3634db7ebadbcdbd72e456ea70f4f317a"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/gpt4o.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a763795d2916bf553a02b45518f960c1585a95a2",
+      "size": 668,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a763795d2916bf553a02b45518f960c1585a95a2"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/gpt4ovision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "784a6b3a35d112d7057f79b5c251736196b7a3ef",
+      "size": 1487,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/784a6b3a35d112d7057f79b5c251736196b7a3ef"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/gpto1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "085fc878ed5761e39d826a9168e21a4de6d9989f",
+      "size": 291,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/085fc878ed5761e39d826a9168e21a4de6d9989f"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/gpto1preview.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "681c5fbaf4fbfe6ddfee2f9756866f51d3f11e32",
+      "size": 1449,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/681c5fbaf4fbfe6ddfee2f9756866f51d3f11e32"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/metaculus4o.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcbb24ae0e7919e88ce9b8a143fb7bb01026af82",
+      "size": 782,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/fcbb24ae0e7919e88ce9b8a143fb7bb01026af82"
+    },
+    {
+      "path": "forecasting_tools/ai_models/deprecated_model_classes/perplexity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8b5d348314307c3ca398b17139534ee4d130744",
+      "size": 631,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c8b5d348314307c3ca398b17139534ee4d130744"
+    },
+    {
+      "path": "forecasting_tools/ai_models/exa_searcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d696a2d5a65e8a9711618f1088c56a4e7d1b1ffd",
+      "size": 23500,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d696a2d5a65e8a9711618f1088c56a4e7d1b1ffd"
+    },
+    {
+      "path": "forecasting_tools/ai_models/general_llm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5e6136a72e814a33bc3c01d3b5e29845d07b744",
+      "size": 32439,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d5e6136a72e814a33bc3c01d3b5e29845d07b744"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c99b01d6d52c3f5b1c98ee05ceb63124c53bb06d",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/c99b01d6d52c3f5b1c98ee05ceb63124c53bb06d"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/ai_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d8bc9493b9de2105a34bda4ede009432a7dc07c",
+      "size": 2152,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0d8bc9493b9de2105a34bda4ede009432a7dc07c"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/combined_llm_archetype.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "010bf2e4f5d71e5ee5da3eb1c5db2c5086c3d1a7",
+      "size": 4178,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/010bf2e4f5d71e5ee5da3eb1c5db2c5086c3d1a7"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/incurs_cost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7c644d79cf0f8edbdb5089e8954d591e9a3fa6b",
+      "size": 1071,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d7c644d79cf0f8edbdb5089e8954d591e9a3fa6b"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/named_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac1b2998dcdb19ad621197b761568ebf9241bb2d",
+      "size": 373,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ac1b2998dcdb19ad621197b761568ebf9241bb2d"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/outputs_text.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e1ee4fddd0796b881227c9d3ec43ce0dce19365",
+      "size": 10004,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2e1ee4fddd0796b881227c9d3ec43ce0dce19365"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/priced_per_request.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40186fe47833792f0e6db7a19eaf76ea69d04e04",
+      "size": 425,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/40186fe47833792f0e6db7a19eaf76ea69d04e04"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/request_limited_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccef23d4b985f90c0b53de8d33302ed0d67e5a5b",
+      "size": 2295,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ccef23d4b985f90c0b53de8d33302ed0d67e5a5b"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/retryable_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eabc9ba51027c894c54f348c1b2430227c75e4ea",
+      "size": 2375,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/eabc9ba51027c894c54f348c1b2430227c75e4ea"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/time_limited_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82c5083ec7c35b11f68ccbbe03b66928c7539f6e",
+      "size": 1362,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/82c5083ec7c35b11f68ccbbe03b66928c7539f6e"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/token_limited_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6deaf2de7caa4fd2cdfd63e7a65d5cb0bcd1d945",
+      "size": 2555,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6deaf2de7caa4fd2cdfd63e7a65d5cb0bcd1d945"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/tokens_are_calculatable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdcd171f250d30836ca8a5876cc2e2209a9c0a61",
+      "size": 161,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/bdcd171f250d30836ca8a5876cc2e2209a9c0a61"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_interfaces/tokens_incur_cost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e926d4ccff6ec89e5b8341ef52846ec4a92c190",
+      "size": 1095,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/9e926d4ccff6ec89e5b8341ef52846ec4a92c190"
+    },
+    {
+      "path": "forecasting_tools/ai_models/model_tracker.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7024ba80f42b490274581802f489382280793b3e",
+      "size": 1257,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7024ba80f42b490274581802f489382280793b3e"
+    },
+    {
+      "path": "forecasting_tools/ai_models/resource_managers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf47adf0d496ea494b447e27bdd987d851964224",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/cf47adf0d496ea494b447e27bdd987d851964224"
+    },
+    {
+      "path": "forecasting_tools/ai_models/resource_managers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/ai_models/resource_managers/hard_limit_manager.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b3baaf926ac9468838f20c187739b191651b334",
+      "size": 3392,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7b3baaf926ac9468838f20c187739b191651b334"
+    },
+    {
+      "path": "forecasting_tools/ai_models/resource_managers/monetary_cost_manager.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75a12b0840413710d453c0fead1c8e7da2ee0d07",
+      "size": 5141,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/75a12b0840413710d453c0fead1c8e7da2ee0d07"
+    },
+    {
+      "path": "forecasting_tools/ai_models/resource_managers/refreshing_bucket_rate_limiter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85c8449d865d477364da5e60e4e07170ec9af17a",
+      "size": 7815,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/85c8449d865d477364da5e60e4e07170ec9af17a"
+    },
+    {
+      "path": "forecasting_tools/auto_optimizers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "609d859f719848280fa606e493e2345426c95ebf",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/609d859f719848280fa606e493e2345426c95ebf"
+    },
+    {
+      "path": "forecasting_tools/auto_optimizers/bot_evaluator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77524d88bf60134da0ff18eab5dafe23babe25c0",
+      "size": 9656,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/77524d88bf60134da0ff18eab5dafe23babe25c0"
+    },
+    {
+      "path": "forecasting_tools/auto_optimizers/bot_optimizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8f58d38da103dcbb756696951326320a72088cd",
+      "size": 14899,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a8f58d38da103dcbb756696951326320a72088cd"
+    },
+    {
+      "path": "forecasting_tools/auto_optimizers/control_prompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e186d3bbb0f59132f8104440e20ed281da99543",
+      "size": 2914,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/9e186d3bbb0f59132f8104440e20ed281da99543"
+    },
+    {
+      "path": "forecasting_tools/auto_optimizers/customizable_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6275f373c8b1861fc9176e077e8bed81fb7cb81d",
+      "size": 17394,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6275f373c8b1861fc9176e077e8bed81fb7cb81d"
+    },
+    {
+      "path": "forecasting_tools/auto_optimizers/prompt_data_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8069d762fa999384009a0bd4f33ae60bbc401f34",
+      "size": 2193,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8069d762fa999384009a0bd4f33ae60bbc401f34"
+    },
+    {
+      "path": "forecasting_tools/auto_optimizers/prompt_optimizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8968f337af8d2a2014a16d4b193d3a6fb14bc63",
+      "size": 23344,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e8968f337af8d2a2014a16d4b193d3a6fb14bc63"
+    },
+    {
+      "path": "forecasting_tools/auto_optimizers/question_plus_research.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "674051d6e1a1ff74288d15e7f0068410ce19ce99",
+      "size": 2292,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/674051d6e1a1ff74288d15e7f0068410ce19ce99"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca6c082d0da9b1507dccfad9ccee73832b9b4e13",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/ca6c082d0da9b1507dccfad9ccee73832b9b4e13"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "813770d273bc672a1be5a565b512c49427ee9a42",
+      "size": 41,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/813770d273bc672a1be5a565b512c49427ee9a42"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e0b417803ecec3d5f723c1b681b1f538da691a6",
+      "size": 1041,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2e0b417803ecec3d5f723c1b681b1f538da691a6"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/_training_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8b836cfe2666a8de7e5b7453c04bc4e7a41710f",
+      "size": 3453,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d8b836cfe2666a8de7e5b7453c04bc4e7a41710f"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/benchmark.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "262b32e3aeba3b3317461af60912572bf99357fd",
+      "size": 1231980,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/262b32e3aeba3b3317461af60912572bf99357fd"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/calibration_adjuster.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f84a454a194c5d36f3a78bab7f5434ff364fb41",
+      "size": 7268,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2f84a454a194c5d36f3a78bab7f5434ff364fb41"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/constant_shift_adjuster.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b787089b39a0fda90943993253ea9eb13f944a66",
+      "size": 2223,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b787089b39a0fda90943993253ea9eb13f944a66"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/decision_tree_adjuster.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50dda142460de376ad3b0a72e113fc76e9037b90",
+      "size": 8563,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/50dda142460de376ad3b0a72e113fc76e9037b90"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/k_means_adjuster.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fac7a2359cd9b807b08c40e0a994e0f2ca82fb4f",
+      "size": 9952,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/fac7a2359cd9b807b08c40e0a994e0f2ca82fb4f"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/logistic_recalibration_adjuster.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acc736ea18e8e4d1c8ea1192bbcc2e7026edaafa",
+      "size": 4702,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/acc736ea18e8e4d1c8ea1192bbcc2e7026edaafa"
+    },
+    {
+      "path": "forecasting_tools/calibration_adjustment/step_adjuster.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c70d8d76c7a40609b55b3ddd3095523a27833b9",
+      "size": 7088,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1c70d8d76c7a40609b55b3ddd3095523a27833b9"
+    },
+    {
+      "path": "forecasting_tools/cp_benchmarking",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32d9e77db9371c180aa43d8caa6f9a4d220c504e",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/32d9e77db9371c180aa43d8caa6f9a4d220c504e"
+    },
+    {
+      "path": "forecasting_tools/cp_benchmarking/benchmark_displayer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68cc744f509d74cbc32426d5ca492b07ada48a95",
+      "size": 25377,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/68cc744f509d74cbc32426d5ca492b07ada48a95"
+    },
+    {
+      "path": "forecasting_tools/cp_benchmarking/benchmark_for_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a8f2a853116e987cc07c80d05f188707036d733",
+      "size": 7780,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1a8f2a853116e987cc07c80d05f188707036d733"
+    },
+    {
+      "path": "forecasting_tools/cp_benchmarking/benchmarker.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "759f1432744d25e9752ee2721d904b32f640ab23",
+      "size": 9000,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/759f1432744d25e9752ee2721d904b32f640ab23"
+    },
+    {
+      "path": "forecasting_tools/data_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42ad8759034ffc3063487d8f326fba72a46ea416",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/42ad8759034ffc3063487d8f326fba72a46ea416"
+    },
+    {
+      "path": "forecasting_tools/data_models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/data_models/binary_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41aa045473c396e74b242b25d4c9eba8dd1ce1ea",
+      "size": 4560,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/41aa045473c396e74b242b25d4c9eba8dd1ce1ea"
+    },
+    {
+      "path": "forecasting_tools/data_models/coherence_link.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75070801cfdc742c97f26057a78107833f9e086b",
+      "size": 1263,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/75070801cfdc742c97f26057a78107833f9e086b"
+    },
+    {
+      "path": "forecasting_tools/data_models/conditional_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d0353d705c75b84dfa7dfea57ebb5f045289b77",
+      "size": 680,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3d0353d705c75b84dfa7dfea57ebb5f045289b77"
+    },
+    {
+      "path": "forecasting_tools/data_models/conditional_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "398bd0133b47bee3dff2c14f0c0adca3ac7225a9",
+      "size": 5422,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/398bd0133b47bee3dff2c14f0c0adca3ac7225a9"
+    },
+    {
+      "path": "forecasting_tools/data_models/data_organizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85d336fc4ef5103b97feb38471c66dddd14974d7",
+      "size": 9266,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/85d336fc4ef5103b97feb38471c66dddd14974d7"
+    },
+    {
+      "path": "forecasting_tools/data_models/forecast_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3352579aec94de212d8ffa58531920c622ebbcc2",
+      "size": 5326,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3352579aec94de212d8ffa58531920c622ebbcc2"
+    },
+    {
+      "path": "forecasting_tools/data_models/markdown_tree.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "845c5c87f1d4941234df1ac1e08696c78e5e0890",
+      "size": 8556,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/845c5c87f1d4941234df1ac1e08696c78e5e0890"
+    },
+    {
+      "path": "forecasting_tools/data_models/multiple_choice_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f79b35ee6a9eff867da5186c0fb30448103d8878",
+      "size": 8672,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f79b35ee6a9eff867da5186c0fb30448103d8878"
+    },
+    {
+      "path": "forecasting_tools/data_models/numeric_report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b574fd1149b427cb0b41095c9b209d0fc4ab8986",
+      "size": 31256,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b574fd1149b427cb0b41095c9b209d0fc4ab8986"
+    },
+    {
+      "path": "forecasting_tools/data_models/questions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be16759581b373724a83d44b2b0214f537f433e4",
+      "size": 33558,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/be16759581b373724a83d44b2b0214f537f433e4"
+    },
+    {
+      "path": "forecasting_tools/data_models/timestamped_predictions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eda90bdd237203f0f0778a5f9da3074ae7dd021",
+      "size": 546,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3eda90bdd237203f0f0778a5f9da3074ae7dd021"
+    },
+    {
+      "path": "forecasting_tools/data_models/user_response.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd4974a30dfa80917fe7ebd94ffb9183ab550d26",
+      "size": 244,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/bd4974a30dfa80917fe7ebd94ffb9183ab550d26"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1188e68f1697975915943da3eb1fb475374210ac",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/1188e68f1697975915943da3eb1fb475374210ac"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/bot_lists.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b1933a076e338567893b526da37ff85578e76cc",
+      "size": 3635,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4b1933a076e338567893b526da37ff85578e76cc"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb571e1b6dd63025baede48578137c560828d056",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/bb571e1b6dd63025baede48578137c560828d056"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q1_veritas_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57ee353b2416b7c99e24885e2e19d103d4734b28",
+      "size": 178,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/57ee353b2416b7c99e24885e2e19d103d4734b28"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q1t_w_convert_to_binary.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df9e3eec2a825291a851318f405a0fe59644b82",
+      "size": 9091,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4df9e3eec2a825291a851318f405a0fe59644b82"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q1t_w_personas_and_exa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9d1e66c648263bfbaa1d6c6336bc0bcf320c1cd",
+      "size": 12819,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a9d1e66c648263bfbaa1d6c6336bc0bcf320c1cd"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q2t_w_decomposition.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84212d6b2c70e72612c9d080ebfa122759087ad7",
+      "size": 15836,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/84212d6b2c70e72612c9d080ebfa122759087ad7"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q3t_w_asknews.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37c506f5ad119b3e972972b476066674a940c57b",
+      "size": 467,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/37c506f5ad119b3e972972b476066674a940c57b"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q3t_w_exa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db18a97de6f4ccc5a0e54ceb3641ac6630a53cfa",
+      "size": 1107,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/db18a97de6f4ccc5a0e54ceb3641ac6630a53cfa"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q3t_w_q4vbinary.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1b476684ee0c46799f8a9bfdd154cba4cce5e91",
+      "size": 2641,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b1b476684ee0c46799f8a9bfdd154cba4cce5e91"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q4_veritas_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1642fc3152714e9490be482bc2c750fded0ae07",
+      "size": 5157,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c1642fc3152714e9490be482bc2c750fded0ae07"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q4v_w_exa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3ce7abf1de4e76b8f06a50126e46c10b35ea71d",
+      "size": 2354,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f3ce7abf1de4e76b8f06a50126e46c10b35ea71d"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q4v_w_exa_and_dseekr1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3c700af05f382a42f8e0f0237f435b263b1b5bd",
+      "size": 340,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b3c700af05f382a42f8e0f0237f435b263b1b5bd"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/experiments/q4v_w_exa_and_o1_preview.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f003ab0e8f1310b1a2320ac1afe11685fdf135e6",
+      "size": 275,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f003ab0e8f1310b1a2320ac1afe11685fdf135e6"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/forecast_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f32c59954060c0ab065efaddc5bf52504524f780",
+      "size": 41694,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f32c59954060c0ab065efaddc5bf52504524f780"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/main_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59ac884a6ed435bc44943624932bb8228219eed8",
+      "size": 1890,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/59ac884a6ed435bc44943624932bb8228219eed8"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4af60a041bd482c83a1e17f77063e76667781adf",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/4af60a041bd482c83a1e17f77063e76667781adf"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/gpt_4_1_optimized_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24b619c89ffbd8cabf1856294ccee29fd92cc4d7",
+      "size": 8449,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/24b619c89ffbd8cabf1856294ccee29fd92cc4d7"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/no_research_one_shot_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46e270f87ac08ba65a535848d00026188f1b587e",
+      "size": 7718,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/46e270f87ac08ba65a535848d00026188f1b587e"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/q1_template_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5f06390f8088f9890e9967388637ecd101e2ac9",
+      "size": 15273,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b5f06390f8088f9890e9967388637ecd101e2ac9"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/q2_template_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "389dda599cc282a29f89eb6459908c7712304eb0",
+      "size": 16371,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/389dda599cc282a29f89eb6459908c7712304eb0"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/q3_template_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b1283b4b31f52d3411e326323af74b21eedf8ea",
+      "size": 4144,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0b1283b4b31f52d3411e326323af74b21eedf8ea"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/q4_template_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72c9dd3ba2c24fd7eb2153f5eb645a09705c152b",
+      "size": 547,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/72c9dd3ba2c24fd7eb2153f5eb645a09705c152b"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/research_only_bot_2025_fall.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3893a28e46a2665220da4c5b5f231d333ea165f",
+      "size": 8549,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f3893a28e46a2665220da4c5b5f231d333ea165f"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/template_bot_2025_fall.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff552eb2770e0ec61bf704da5b7d9fa4b506af1d",
+      "size": 35798,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ff552eb2770e0ec61bf704da5b7d9fa4b506af1d"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/template_bot_2026_fall.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc39ece18178b5b47ed07a92933bde1365ab1b18",
+      "size": 36084,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/bc39ece18178b5b47ed07a92933bde1365ab1b18"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/template_bot_2026_spring.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adb0828fbcdf3d59869f6456ad2e983b6acc23cc",
+      "size": 34100,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/adb0828fbcdf3d59869f6456ad2e983b6acc23cc"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/template_bot_2026_summer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e4eb662b1505b85625a8e06f6d8f939ab5042a6",
+      "size": 36093,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2e4eb662b1505b85625a8e06f6d8f939ab5042a6"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/official_bots/uniform_probability_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7622b1cb430245bc412edf368ce0cbe9c956b5dc",
+      "size": 4795,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7622b1cb430245bc412edf368ce0cbe9c956b5dc"
+    },
+    {
+      "path": "forecasting_tools/forecast_bots/template_bot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70ef0482ecfc1d26b01f93cece65e15ebe797ddc",
+      "size": 339,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/70ef0482ecfc1d26b01f93cece65e15ebe797ddc"
+    },
+    {
+      "path": "forecasting_tools/front_end",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23eebce146e35b6646b253caa8fa2206a91ce2a9",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/23eebce146e35b6646b253caa8fa2206a91ce2a9"
+    },
+    {
+      "path": "forecasting_tools/front_end/Home.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b74892b18a8063e05d2761a0aa459e1f8318fcb",
+      "size": 3324,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1b74892b18a8063e05d2761a0aa459e1f8318fcb"
+    },
+    {
+      "path": "forecasting_tools/front_end/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad2b0db5d46eb254e315b96891c75005aa011bd7",
+      "size": 258,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ad2b0db5d46eb254e315b96891c75005aa011bd7"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89af1ed0841f15f6ff9c75cf026febee44bf9999",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/89af1ed0841f15f6ff9c75cf026febee44bf9999"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/base_rate_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07963da438ae94f11d21196be5c5a6958864cf58",
+      "size": 2771,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/07963da438ae94f11d21196be5c5a6958864cf58"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/benchmark_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fe5cbf633e6815d0729c49e93a8befd235adda3",
+      "size": 1282,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/9fe5cbf633e6815d0729c49e93a8befd235adda3"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/chat_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49f68a991c85dff3ce6b2d21c9247c879a2be1c2",
+      "size": 21977,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/49f68a991c85dff3ce6b2d21c9247c879a2be1c2"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/congress_v2_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fb9bd847e4ee08e11a10d9a38982a1a7a80db14",
+      "size": 36088,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/9fb9bd847e4ee08e11a10d9a38982a1a7a80db14"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/csv_agent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "869d9b5542782d40e43cc2342defb453be18b622",
+      "size": 15848,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/869d9b5542782d40e43cc2342defb453be18b622"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/estimator_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "033577adc4652465aab1c44bd1bcfb7d9de11e1d",
+      "size": 3683,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/033577adc4652465aab1c44bd1bcfb7d9de11e1d"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/forecaster_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6835b16c590972fae0867245c6ef8d3e8c7ed8e3",
+      "size": 9683,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6835b16c590972fae0867245c6ef8d3e8c7ed8e3"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/intervention_leaderboard_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9a28c25ca14819251ac8ed4a6e62b21bd2d4ed2",
+      "size": 13812,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c9a28c25ca14819251ac8ed4a6e62b21bd2d4ed2"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/key_factors_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a72ccbc36c49eb4e03b741ed17c7da0a31a0ffa7",
+      "size": 4644,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a72ccbc36c49eb4e03b741ed17c7da0a31a0ffa7"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/niche_list_researcher_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f51a1a5006c9abe212ef7d2773d0d82171e3954",
+      "size": 4287,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5f51a1a5006c9abe212ef7d2773d0d82171e3954"
+    },
+    {
+      "path": "forecasting_tools/front_end/app_pages/simulator_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81e206d582fee84e9a6a8d671a5cfcfea8c350ee",
+      "size": 38563,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/81e206d582fee84e9a6a8d671a5cfcfea8c350ee"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "975cdff25e5cba381743fc42860eea1aaecb3ac9",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/975cdff25e5cba381743fc42860eea1aaecb3ac9"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs/base_rate_page_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1be5040d45378213d818b1286b49423853419daf",
+      "size": 37395,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/1be5040d45378213d818b1286b49423853419daf"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs/congress_page_example.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c44bc6edcd29e162e9854cab2ce9fa7a65b11c7a",
+      "size": 177853,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c44bc6edcd29e162e9854cab2ce9fa7a65b11c7a"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs/congress_v2_page_example.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07eb3d6552cb2f56c1453e8686b923a58ee03aa7",
+      "size": 314526,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/07eb3d6552cb2f56c1453e8686b923a58ee03aa7"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs/estimator_page_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "300f7f8ebfd6f1716a60943b886117c6061af9bb",
+      "size": 8538,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/300f7f8ebfd6f1716a60943b886117c6061af9bb"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs/forecast_page_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f7d1ba5842e3a15ef6f1521395ba7934d93195b",
+      "size": 223844,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0f7d1ba5842e3a15ef6f1521395ba7934d93195b"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs/key_factors_page_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7931be1cf46968a82224bb2db1087748f912c53",
+      "size": 7907,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c7931be1cf46968a82224bb2db1087748f912c53"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs/niche_list_page_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9db108e218eb49d5a0fd1a42a1ee21cc12f68db2",
+      "size": 35348,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/9db108e218eb49d5a0fd1a42a1ee21cc12f68db2"
+    },
+    {
+      "path": "forecasting_tools/front_end/example_outputs/question_generator_page_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7863f8c54db5b6c225dabb7fb3c81d53f6eb919d",
+      "size": 720867,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7863f8c54db5b6c225dabb7fb3c81d53f6eb919d"
+    },
+    {
+      "path": "forecasting_tools/front_end/helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3da46992bde6ef47295fbef40cfcf0c08a2444d6",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/3da46992bde6ef47295fbef40cfcf0c08a2444d6"
+    },
+    {
+      "path": "forecasting_tools/front_end/helpers/app_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fffcef85bdb8edfdd91468f5a74bb0ef58e33aa",
+      "size": 2075,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7fffcef85bdb8edfdd91468f5a74bb0ef58e33aa"
+    },
+    {
+      "path": "forecasting_tools/front_end/helpers/custom_auth.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f17dde36beae59b03c3550d257c0ff5f7cea761a",
+      "size": 1137,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f17dde36beae59b03c3550d257c0ff5f7cea761a"
+    },
+    {
+      "path": "forecasting_tools/front_end/helpers/report_displayer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a64b79ee26fc1e1f57c575dce047e543d7b88fd4",
+      "size": 7190,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a64b79ee26fc1e1f57c575dce047e543d7b88fd4"
+    },
+    {
+      "path": "forecasting_tools/front_end/helpers/tool_page.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60d2d5707c8c1717f4cb3e2903b34bfc7896fbd8",
+      "size": 6541,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/60d2d5707c8c1717f4cb3e2903b34bfc7896fbd8"
+    },
+    {
+      "path": "forecasting_tools/helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c22f15e3c4b262542b759a0cf4d1cafa3b19a923",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/c22f15e3c4b262542b759a0cf4d1cafa3b19a923"
+    },
+    {
+      "path": "forecasting_tools/helpers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/helpers/asknews_cache.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8580a6b8a0f3cc640377613bcc3fd06cf74ea1f2",
+      "size": 4388,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8580a6b8a0f3cc640377613bcc3fd06cf74ea1f2"
+    },
+    {
+      "path": "forecasting_tools/helpers/asknews_searcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac3ad79d60babbc15bd1c04c7c1d4c5326523866",
+      "size": 9627,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ac3ad79d60babbc15bd1c04c7c1d4c5326523866"
+    },
+    {
+      "path": "forecasting_tools/helpers/forecast_database_manager.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50e487ed3d09ffdc8b35f9c65acbfbe6b815fd4f",
+      "size": 8392,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/50e487ed3d09ffdc8b35f9c65acbfbe6b815fd4f"
+    },
+    {
+      "path": "forecasting_tools/helpers/metaculus_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bec1cd7fe9f11892895126a4f5829f3638fadcbc",
+      "size": 9058,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/bec1cd7fe9f11892895126a4f5829f3638fadcbc"
+    },
+    {
+      "path": "forecasting_tools/helpers/metaculus_client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0e081f192a3e2ae6e734ce6f38b68ff614ffdf0",
+      "size": 60694,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d0e081f192a3e2ae6e734ce6f38b68ff614ffdf0"
+    },
+    {
+      "path": "forecasting_tools/helpers/prediction_extractor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ecf270f4329292ed391cb3feed565bb7f05e6c",
+      "size": 13675,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/61ecf270f4329292ed391cb3feed565bb7f05e6c"
+    },
+    {
+      "path": "forecasting_tools/helpers/structure_output.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abb3d2fa8347d9fe5c2c589243236b18bf654f1d",
+      "size": 6389,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/abb3d2fa8347d9fe5c2c589243236b18bf654f1d"
+    },
+    {
+      "path": "forecasting_tools/helpers/works_cited_creator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86bd34260f03b717b3ac862565df8b06c05fba50",
+      "size": 2047,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/86bd34260f03b717b3ac862565df8b06c05fba50"
+    },
+    {
+      "path": "forecasting_tools/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70453b6845453b12a8081df51ad569a5dbca2a5f",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/70453b6845453b12a8081df51ad569a5dbca2a5f"
+    },
+    {
+      "path": "forecasting_tools/util/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "forecasting_tools/util/async_batching.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1c8d56b57a2b5e9e11cd4c9daf34352e260ac3b",
+      "size": 5886,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c1c8d56b57a2b5e9e11cd4c9daf34352e260ac3b"
+    },
+    {
+      "path": "forecasting_tools/util/coda_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce1f81e15b9d48b7385eade165c7b156bc96805a",
+      "size": 2718,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/ce1f81e15b9d48b7385eade165c7b156bc96805a"
+    },
+    {
+      "path": "forecasting_tools/util/custom_logger.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2718277e7a09e36729001af2e696c3e9fdeed80a",
+      "size": 5625,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/2718277e7a09e36729001af2e696c3e9fdeed80a"
+    },
+    {
+      "path": "forecasting_tools/util/file_manipulation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "678fe75fbdaf571ba194487df3a6b8f849b53e13",
+      "size": 7553,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/678fe75fbdaf571ba194487df3a6b8f849b53e13"
+    },
+    {
+      "path": "forecasting_tools/util/jsonable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "289cd6dfb3150f03089166af6c4bb47d90811c41",
+      "size": 2975,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/289cd6dfb3150f03089166af6c4bb47d90811c41"
+    },
+    {
+      "path": "forecasting_tools/util/misc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f69de3822cbd519410a37cb11a3f7bc2f02a7278",
+      "size": 11617,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f69de3822cbd519410a37cb11a3f7bc2f02a7278"
+    },
+    {
+      "path": "forecasting_tools/util/optional_imports.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6956ff78bacc95e6969b4b9ffce99e5275353f82",
+      "size": 837,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6956ff78bacc95e6969b4b9ffce99e5275353f82"
+    },
+    {
+      "path": "forecasting_tools/util/stats.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fef1268dfabbef491e1e6064fbb0a03a2304dec",
+      "size": 13743,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/9fef1268dfabbef491e1e6064fbb0a03a2304dec"
+    },
+    {
+      "path": "front_end",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df9eeb8c311db21ad643830792115b292e5cb4d6",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/df9eeb8c311db21ad643830792115b292e5cb4d6"
+    },
+    {
+      "path": "front_end/Home.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e067c3b0c1fc0677c3a23506c5773c500863f20",
+      "size": 635,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0e067c3b0c1fc0677c3a23506c5773c500863f20"
+    },
+    {
+      "path": "front_end/saved_chats.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1a657f82600db0877762e3c0bfe48a74a6c36c3",
+      "size": 1976956,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/d1a657f82600db0877762e3c0bfe48a74a6c36c3"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7767494a14d6a6fecad32e515ee9992d4d0ea85e",
+      "size": 4083,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/7767494a14d6a6fecad32e515ee9992d4d0ea85e"
+    },
+    {
+      "path": "pytest.ini",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72b858f18e90afd8e2d5127367d69bec63a95ef2",
+      "size": 353,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/72b858f18e90afd8e2d5127367d69bec63a95ef2"
+    },
+    {
+      "path": "run_bots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b86b84916cbcd60e6dabb8e365a53ce94943b75b",
+      "size": 110036,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/b86b84916cbcd60e6dabb8e365a53ce94943b75b"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f12d2b60dfebaaa94fd4f114c0e1c07f0b9411c",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/1f12d2b60dfebaaa94fd4f114c0e1c07f0b9411c"
+    },
+    {
+      "path": "scripts/expensive_tests__run_individually",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3345accbe8af152ea2cbdd5b6702ce70b2e4a636",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/3345accbe8af152ea2cbdd5b6702ce70b2e4a636"
+    },
+    {
+      "path": "scripts/expensive_tests__run_individually/ex_base_rate_responder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4970093a7c2823e302fdddc01cd2d996ede524b1",
+      "size": 2304,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4970093a7c2823e302fdddc01cd2d996ede524b1"
+    },
+    {
+      "path": "scripts/expensive_tests__run_individually/ex_key_factors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f31f0b3a75841062244a2ac0434415feaaf469e",
+      "size": 2094,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/8f31f0b3a75841062244a2ac0434415feaaf469e"
+    },
+    {
+      "path": "scripts/expensive_tests__run_individually/ex_niche_list_researcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a12502e9eac07d0ee3bbd0abb34f1caf32810ac6",
+      "size": 23533,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/a12502e9eac07d0ee3bbd0abb34f1caf32810ac6"
+    },
+    {
+      "path": "scripts/expensive_tests__run_individually/ex_question_responders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c849d26246ec56a5bded2da1f1d57cf7c044f154",
+      "size": 5251,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c849d26246ec56a5bded2da1f1d57cf7c044f154"
+    },
+    {
+      "path": "scripts/expensive_tests__run_individually/ex_smart_searcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44cf2ae4578373e513bf1ebb4c5998758f6186ff",
+      "size": 673,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/44cf2ae4578373e513bf1ebb4c5998758f6186ff"
+    },
+    {
+      "path": "scripts/forecast_report_displayer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "651af81e06f70c3c1d57abd87b5edef27f072987",
+      "size": 805,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/651af81e06f70c3c1d57abd87b5edef27f072987"
+    },
+    {
+      "path": "scripts/generate_bot_costs_csv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11373db4e4aca6338407e34f0a9b8394dec381a3",
+      "size": 2929,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/11373db4e4aca6338407e34f0a9b8394dec381a3"
+    },
+    {
+      "path": "scripts/interesting_forecast_finder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b5a93b2e400c88550fbb8e45090c1a10e53bc94",
+      "size": 7545,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/0b5a93b2e400c88550fbb8e45090c1a10e53bc94"
+    },
+    {
+      "path": "scripts/run_benchmarker.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4027e85334ca1b2a3b975a12a32e15e635465eed",
+      "size": 5137,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4027e85334ca1b2a3b975a12a32e15e635465eed"
+    },
+    {
+      "path": "scripts/run_higher_model_evaluation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "737e25b404342545633e2075511dbaec88a985fa",
+      "size": 3834,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/737e25b404342545633e2075511dbaec88a985fa"
+    },
+    {
+      "path": "scripts/run_intervention_benchmark.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74059efc1f7e7729563b91bb1238d490f4ed0228",
+      "size": 8372,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/74059efc1f7e7729563b91bb1238d490f4ed0228"
+    },
+    {
+      "path": "scripts/run_key_factors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ff4f4d246325a091bc26bf9a66eae4568094ae1",
+      "size": 6779,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/3ff4f4d246325a091bc26bf9a66eae4568094ae1"
+    },
+    {
+      "path": "scripts/run_optimizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f9cc577d13d115e8b4109f6f83627896f3442b",
+      "size": 2627,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/f1f9cc577d13d115e8b4109f6f83627896f3442b"
+    },
+    {
+      "path": "scripts/run_question_snapshots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07b73f753bc6805b4687c15a436f1979a432e5f2",
+      "size": 3995,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/07b73f753bc6805b4687c15a436f1979a432e5f2"
+    },
+    {
+      "path": "scripts/run_simulation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5c71bd5d542989cc3f09e5afb1da033f3b21035",
+      "size": 3112,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/c5c71bd5d542989cc3f09e5afb1da033f3b21035"
+    },
+    {
+      "path": "scripts/simulate_a_tournament.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e1f90e0ad5a4f8699eeab9b1d2809a19d5ffadc",
+      "size": 44090,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/4e1f90e0ad5a4f8699eeab9b1d2809a19d5ffadc"
+    },
+    {
+      "path": "scripts/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9beef4194e4429e4064964b60ed8df1d502ec39f",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/9beef4194e4429e4064964b60ed8df1d502ec39f"
+    },
+    {
+      "path": "scripts/skills/analyze_bot_failures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37db488d97f52728a5e87224d4b3540029556e97",
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/trees/37db488d97f52728a5e87224d4b3540029556e97"
+    },
+    {
+      "path": "scripts/skills/analyze_bot_failures/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d6270582dff487ef2065e3de5291195c1b8b9b2",
+      "size": 4493,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/5d6270582dff487ef2065e3de5291195c1b8b9b2"
+    },
+    {
+      "path": "scripts/skills/analyze_bot_failures/analyze_bot_run_failures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c6ed37c381a9b5e8cb554295e458e285e673cd4",
+      "size": 22747,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/6c6ed37c381a9b5e8cb554295e458e285e673cd4"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc965321bed4955bee5ee2534427fc29c7131b54",
+      "size": 1023136,
+      "url": "https://api.github.com/repos/Metaculus/forecasting-tools/git/blobs/dc965321bed4955bee5ee2534427fc29c7131b54"
+    }
+  ],
+  "truncated": false
+}

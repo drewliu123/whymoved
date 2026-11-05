@@ -1,0 +1,207 @@
+{
+  "as_of": "2026-11-02T02:00:01.335699Z",
+  "selected": [
+    {
+      "id": "S1",
+      "url": "https://cn.investing.com/equities/nvidia-corp-historical-data",
+      "tier": "T1",
+      "quote": "2026-10-02 | 233.95 | +1.34%",
+      "locator": "历史行情每日表：2026-10-02行，收盘价USD；引文保留原数字，日期规范化为ISO",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": null,
+      "origin_basis": "原始数据供应商独立性未确认",
+      "market_quote": {
+        "quoted_at": "2026-10-02T20:00:00Z",
+        "instrument": "NASDAQ:NVDA",
+        "outcome": "普通股每股收盘价格",
+        "direction": "long",
+        "value": 233.95,
+        "unit": "USD/share",
+        "quote_type": "close"
+      }
+    },
+    {
+      "id": "S2",
+      "url": "https://cn.investing.com/equities/nvidia-corp-historical-data",
+      "tier": "T1",
+      "quote": "2026-10-06 | 239.24 | +0.14%",
+      "locator": "历史行情每日表：2026-10-06行，收盘价USD；引文保留原数字，日期规范化为ISO",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": null,
+      "origin_basis": "原始数据供应商独立性未确认",
+      "market_quote": {
+        "quoted_at": "2026-10-06T20:00:00Z",
+        "instrument": "NASDAQ:NVDA",
+        "outcome": "普通股每股收盘价格",
+        "direction": "long",
+        "value": 239.24,
+        "unit": "USD/share",
+        "quote_type": "close"
+      }
+    },
+    {
+      "id": "S3",
+      "url": "https://cn.investing.com/equities/nvidia-corp-historical-data",
+      "tier": "T1",
+      "quote": "2026-10-29 | 213.66 | -0.80%",
+      "locator": "历史行情每日表：2026-10-29行，收盘价USD；引文保留原数字，日期规范化为ISO",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": null,
+      "origin_basis": "原始数据供应商独立性未确认",
+      "market_quote": {
+        "quoted_at": "2026-10-29T20:00:00Z",
+        "instrument": "NASDAQ:NVDA",
+        "outcome": "普通股每股收盘价格",
+        "direction": "long",
+        "value": 213.66,
+        "unit": "USD/share",
+        "quote_type": "close"
+      }
+    },
+    {
+      "id": "S4",
+      "url": "https://cn.investing.com/equities/nvidia-corp-historical-data",
+      "tier": "T1",
+      "quote": "2026-10-30 | 204.64 | -4.22%",
+      "locator": "历史行情每日表：2026-10-30行，收盘价USD；引文保留原数字，日期规范化为ISO",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": null,
+      "origin_basis": "原始数据供应商独立性未确认",
+      "market_quote": {
+        "quoted_at": "2026-10-30T20:00:00Z",
+        "instrument": "NASDAQ:NVDA",
+        "outcome": "普通股每股收盘价格",
+        "direction": "long",
+        "value": 204.64,
+        "unit": "USD/share",
+        "quote_type": "close"
+      }
+    },
+    {
+      "id": "S5",
+      "url": "https://www.statmuse.com/money/ask/nvidia-stock-price-october-chart",
+      "tier": "T1",
+      "quote": "2026-10-02 233.95; 2026-10-06 239.24; 2026-10-29 213.66; 2026-10-30 204.64",
+      "locator": "October 2026每日OHLC表的四个日期行，close列；摘录日期及数字",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": null,
+      "origin_basis": "原始数据供应商独立性未确认"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
+      "tier": "T2",
+      "quote": "disappointing quarterly results from Intel and Amazon; AI-related companies’ massive spending",
+      "locator": "2026-10-30收盘稿的财报触发与AI投入担忧段；短句摘录",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": "reuters-20261030-us-stocks-close",
+      "origin_basis": "页面Reuters署名，转载不是另一个独立原始出处"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
+      "tier": "T2",
+      "quote": "or 2.86%; down 4.2%; shed 7.2%",
+      "locator": "同一收盘稿：Nasdaq下跌、NVIDIA下跌、broader semiconductor index下跌各段短语；百分比依次对应上述三项",
+      "published_at": "2026-10-30",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": "reuters-20261030-us-stocks-close",
+      "origin_basis": "页面Reuters署名，与S6同一原始报道"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.36kr.com/p/4028016585986439",
+      "tier": "T2",
+      "quote": "资本成本实际上正在下降",
+      "locator": "2026-10-16文章转述黄仁勋美东10月15日在瑞典活动受访的段落",
+      "published_at": "2026-10-16",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": "wallstreetcn-max-coreweave-20261016",
+      "origin_basis": "36氪标明原来源华尔街见闻Max，作者李丹；仅作为归属明确的管理层观点"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.36kr.com/p/4028016585986439",
+      "tier": "T2",
+      "quote": "0.799美元；15.6%",
+      "locator": "文章援引彭博行情：10月15日盘中，2031年到期、票息9%的CoreWeave债券，每1美元面值价格及到期收益率",
+      "published_at": "2026-10-16",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": "wallstreetcn-max-coreweave-20261016",
+      "origin_basis": "二手信用行情报道，未直取债券终端；不认定为独立的违约概率证据"
+    },
+    {
+      "id": "S10",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+      "tier": "T0",
+      "quote": "October 28, 2026; Tuesday, November 17; 2 p.m. PT (5 p.m. ET); ended October 25, 2026.; approximately 1:20 p.m. PT.",
+      "locator": "公告日期、首段季度结束日与电话会安排、第三段结果发布时间；短片段摘录",
+      "published_at": "2026-10-28",
+      "retrieved_at": "2026-11-02T01:58:13.621983Z",
+      "origin_id": "nvidia-ir-fy2027-q3-calendar",
+      "origin_basis": "公司原始财报安排公告"
+    },
+    {
+      "id": "S11",
+      "url": "https://indexes.nasdaq.com/Index/Overview/sox?trk=test",
+      "tier": "T0",
+      "quote": "DATA AS OF 10/30/2026 10,688.80 -829.40 -7.20%",
+      "locator": "PHLX Semiconductor/SOX标题下的数据行；未明确列出具体时区时刻或close字段",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-02T02:00:01.335699Z",
+      "origin_id": "nasdaq-sox-20261030",
+      "origin_basis": "发行人或指数编制者原始页面；仅用于对应披露和指数数据"
+    },
+    {
+      "id": "S12",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "tier": "T0",
+      "quote": "Operating cash flow -- trailing twelve months (TTM): 168,300; Free cash flow -- TTM (1): -42,357; Purchases of property and equipment, net of proceeds from sales and incentives -- TTM: 210,657. This increase primarily reflects investments in artificial intelligence.",
+      "locator": "Supplemental Financial Information，TTM截至2026-09-30列，单位USD millions；数字摘录与原句。不是Q3单季",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T02:00:01.335699Z",
+      "origin_id": "amazon-2026-q3-release",
+      "origin_basis": "发行人或指数编制者原始页面；仅用于对应披露和指数数据"
+    },
+    {
+      "id": "S13",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+      "tier": "T0",
+      "quote": "Revenue, gross margin and earnings per share exceeded guidance",
+      "locator": "CFO David Zinsner引语，Q3 2026业绩新闻稿；guidance指公司自身指引",
+      "published_at": "2026-10-29T20:01:00Z",
+      "retrieved_at": "2026-11-02T02:00:01.335699Z",
+      "origin_id": "intel-2026-q3-release",
+      "origin_basis": "发行人或指数编制者原始页面；仅用于对应披露和指数数据"
+    },
+    {
+      "id": "S14",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "tier": "T0",
+      "quote": "Revenue is expected to be $108.0 billion, plus or minus 2%. NVIDIA is not assuming any Data Center compute revenue from China in its outlook.",
+      "locator": "FY2027 Q2公告Outlook首条，Q3展望；2026-08-26，窗口外背景，不冒充10月新消息",
+      "published_at": "2026-08-26",
+      "retrieved_at": "2026-11-02T02:00:01.335699Z",
+      "origin_id": "nvidia-fy2027-q2-release",
+      "origin_basis": "发行人或指数编制者原始页面；仅用于对应披露和指数数据"
+    },
+    {
+      "id": "S15",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "tier": "T0",
+      "quote": "数据摘录（非逐字句子）：TTM经营现金流2026/2025为168,300/130,691；净PP&E购买210,657/115,903；FCF -42,357/14,788，单位USD millions。",
+      "locator": "Supplemental Financial Information，同口径TTM截至2026-09-30和2025-09-30两列",
+      "published_at": "2026-10-29",
+      "retrieved_at": "2026-11-02T02:00:01.335699Z",
+      "origin_id": "amazon-2026-q3-release",
+      "origin_basis": "发行人或指数编制者原始页面；仅用于对应披露和指数数据"
+    }
+  ],
+  "note": "精简快照供独立语义审查；完整数据与未选候选仍在sources.json"
+}

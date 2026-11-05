@@ -1,0 +1,29 @@
+{
+  "version": "3.30.0",
+  "python": "3.12.13",
+  "command": [
+    "/Users/frankzhang/.local/bin/python3.12",
+    "/Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py",
+    "Meta Platforms META stock November rebound advertising AI capex cash flow",
+    "--research-only",
+    "--emit=json",
+    "--json-profile=raw",
+    "--plan",
+    "/Users/frankzhang/Desktop/\u6295\u7814\u52a9\u624b/journal/work/meta-nov-20261102/community/engine-plan.json",
+    "--days",
+    "30",
+    "--as-of",
+    "2026-11-02",
+    "--search",
+    "reddit,youtube,hackernews",
+    "--subreddits",
+    "stocks,ValueInvesting,SecurityAnalysis,wallstreetbets",
+    "--quick",
+    "--no-browser-cookies",
+    "--save-dir="
+  ],
+  "started_at": "2026-11-02T08:09:05.629181+00:00",
+  "note": "No publish/store. Engine may write own last-run/cache. X excluded: no authenticated backend. GitHub/Polymarket excluded by community scope.",
+  "exit_code": 0,
+  "ended_at": "2026-11-02T08:10:23.811468+00:00"
+}

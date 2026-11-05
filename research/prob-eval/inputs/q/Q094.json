@@ -1,0 +1,56 @@
+{
+ "qid": "Q094",
+ "question": "Will Kimi Antonelli win the 2026 F1 Hungarian Grand Prix?",
+ "rules": "This is a polymarket on the winner of the 2026 F1 Hungarian Grand Prix, scheduled for Jul 26, 2026.\n\nIf the 2026 F1 Hungarian Grand Prix is canceled or rescheduled to a date after Aug 2, 2026, this market will resolve to “Other.”\n\nThis market will resolve in favor of the driver who is officially listed in first place in the Final Classification published by the FIA following the conclusion of the race. The Final Classification is typically released 30-60 minutes after the race ends and includes any applied time penalties and official adjustments.\n\nDisqualifications or changes made after the publication of the Final Classification will not affect market resolution. The timing of the podium ceremony does not determine the result for this market — only the FIA's published classification will be used to resolve this market.\n\nThe resolution source will be the official Formula 1 website and a consensus of credible sports news reporting.",
+ "as_of": "2026-07-12",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "DPA via Aletihad News Center",
+   "published_at": "2025-06-10",
+   "excerpt": "Formula One and the FIA revealed a 24-race calendar for the 2026 season. Drivers will have their summer break after the Hungarian Grand Prix on July 26 and return on August 23 at the Dutch Grand Prix."
+  },
+  {
+   "id": "E2",
+   "publisher": "Fédération Internationale de l'Automobile (FIA)",
+   "published_at": "2026-07-04",
+   "excerpt": "Kimi Antonelli claimed pole position for the 2026 British Grand Prix with a lap of 1:28.111, beating Ferrari's Charles Leclerc by 0.175 seconds. Lewis Hamilton qualified third, with George Russell fourth in the second Mercedes."
+  },
+  {
+   "id": "E3",
+   "publisher": "Fédération Internationale de l'Automobile (FIA)",
+   "published_at": "2026-07-04",
+   "excerpt": "Kimi Antonelli claimed his first Sprint victory at the 2026 British Grand Prix, passing Lewis Hamilton in the early stages before controlling the remainder of the 17-lap race at Silverstone."
+  },
+  {
+   "id": "E4",
+   "publisher": "Reuters via WSAU",
+   "published_at": "2026-07-05",
+   "excerpt": "Ferrari's Charles Leclerc won the British Grand Prix under safety car conditions as Mercedes' Kimi Antonelli failed to score for the second time in three races. After nine rounds, Antonelli had 179 championship points, compared with George Russell's 154 and Lewis Hamilton's 147."
+  },
+  {
+   "id": "E5",
+   "publisher": "Reuters via The Star",
+   "published_at": "2026-07-06",
+   "excerpt": "Mercedes took responsibility for Antonelli's failure to score in the British Grand Prix, his second scoreless race in the previous three. His car suffered a mechanical failure with 11 laps remaining, caused by a broken front wheel shield around the brake duct. Toto Wolff said Mercedes' strategists had predicted Antonelli would catch eventual winner Charles Leclerc six laps from the end without the problem."
+  },
+  {
+   "id": "E6",
+   "publisher": "Formula 1",
+   "published_at": "2026-06-14",
+   "excerpt": "A late mechanical issue forced Kimi Antonelli to retire from the Barcelona-Catalunya Grand Prix while on course to finish second behind Lewis Hamilton. The retirement ended Antonelli's run of five consecutive Grand Prix victories and was his first retirement of the season."
+  },
+  {
+   "id": "E7",
+   "publisher": "Autosport",
+   "published_at": "2025-08-03",
+   "excerpt": "Lando Norris won the 2025 Hungarian Grand Prix after gambling on a one-stop strategy and resisting a late challenge from Oscar Piastri. Piastri's attempts to pass included a lock-up at Turn 1."
+  },
+  {
+   "id": "E8",
+   "publisher": "Autosport",
+   "published_at": "2025-08-03",
+   "excerpt": "George Russell narrowly missed pole position for the 2025 Hungarian Grand Prix after Mercedes reverted to its pre-Imola rear suspension specification. Both Mercedes drivers reported greater confidence in the car, although rookie Kimi Antonelli was eliminated in Q2."
+  }
+ ]
+}

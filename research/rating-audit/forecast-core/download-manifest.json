@@ -1,0 +1,482 @@
+[
+  {
+    "path": "01/LICENSE",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/LICENSE",
+    "sha256": "381e7c01be4ef601bdcc0608a0b11d27ef9dfacb2feee7da658eb97e29c998ed",
+    "bytes": 1069
+  },
+  {
+    "path": "01/pyproject.toml",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/pyproject.toml",
+    "sha256": "ba9772b3e91d825df36e8f5fb22ae6fc8513d555f586b3384b911e640f8f0494",
+    "bytes": 4083
+  },
+  {
+    "path": "01/forecasting_tools/forecast_bots/forecast_bot.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/forecast_bots/forecast_bot.py",
+    "sha256": "4925483ea47f0f3f5d034a6186686dd2764533c1a7701b69d9d2edfa93f85ce1",
+    "bytes": 41694
+  },
+  {
+    "path": "01/forecasting_tools/forecast_bots/template_bot.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/forecast_bots/template_bot.py",
+    "sha256": "b0b567cd55115148414cfef916ad9d114586ee54b0bc66b7dabdee85fb9b3c70",
+    "bytes": 339
+  },
+  {
+    "path": "01/forecasting_tools/forecast_bots/official_bots/template_bot_2026_fall.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/forecast_bots/official_bots/template_bot_2026_fall.py",
+    "sha256": "cc5863d50ab6020e912acbdbf4445d8c26699c33454ade876e105a583680b254",
+    "bytes": 36084
+  },
+  {
+    "path": "01/forecasting_tools/data_models/binary_report.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/data_models/binary_report.py",
+    "sha256": "68c10d752ff39950b117c89c79da50d0a28c0ec287cd7417b4cf8c3de3d81e3e",
+    "bytes": 4560
+  },
+  {
+    "path": "01/forecasting_tools/data_models/multiple_choice_report.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/data_models/multiple_choice_report.py",
+    "sha256": "91ca251ae7b75a1e7b9eb82ea72b66d80c54fa4ae182f4db74af7cd0a5d5751f",
+    "bytes": 8672
+  },
+  {
+    "path": "01/forecasting_tools/data_models/numeric_report.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/data_models/numeric_report.py",
+    "sha256": "f4b042dce567210e39e97b457455ab491b8b617a1ac27e2ee69a734b4ff8c00b",
+    "bytes": 31256
+  },
+  {
+    "path": "01/forecasting_tools/calibration_adjustment/logistic_recalibration_adjuster.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/calibration_adjustment/logistic_recalibration_adjuster.py",
+    "sha256": "3ff9d6c8bbb076aad02fbe84209515854922137f4394c006a2d22e0a66b01536",
+    "bytes": 4702
+  },
+  {
+    "path": "01/forecasting_tools/calibration_adjustment/calibration_adjuster.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/calibration_adjustment/calibration_adjuster.py",
+    "sha256": "6e3b3402afe2a248b3403bf326bc58a9d814cb85d17360c39c842cbec0aad028",
+    "bytes": 7268
+  },
+  {
+    "path": "01/forecasting_tools/helpers/prediction_extractor.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/forecasting_tools/helpers/prediction_extractor.py",
+    "sha256": "7155a07b81a762369e06b61be7ee8e58c9ca0840c7ec8940f0c9af552e897011",
+    "bytes": 13675
+  },
+  {
+    "path": "01/code_tests/unit_tests/test_data_models/test_aggregate_edge_cases.py",
+    "url": "https://raw.githubusercontent.com/Metaculus/forecasting-tools/0b1693de71d07df3fd99ad16d96469aeebadf9f1/code_tests/unit_tests/test_data_models/test_aggregate_edge_cases.py",
+    "sha256": "1acf9d7da75980c908414e57f7efb55f49793242391318e2db6be2829a9d26eb",
+    "bytes": 5315
+  },
+  {
+    "path": "02/README.md",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/README.md",
+    "sha256": "0c194ea81ed1b6284805e2655975683dec727ef172702923eadbdf05d5564e7f",
+    "bytes": 3938
+  },
+  {
+    "path": "02/llm_forecasting/alignment.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/alignment.py",
+    "sha256": "9c5c0555ebf8d1e614d1acdc280d59d7eb7dbdec476dc6261ff8dde3c21e9624",
+    "bytes": 2430
+  },
+  {
+    "path": "02/llm_forecasting/config/constants.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/config/constants.py",
+    "sha256": "fae7941037c4dbd6f17e7cde0f926a49aa5df3de77fc0888bd96ccadef8ecab7",
+    "bytes": 7351
+  },
+  {
+    "path": "02/llm_forecasting/config/keys.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/config/keys.py",
+    "sha256": "452370f380e1e55b48c2e1af30864a29fe88d7207206c169fdc7134448b123fb",
+    "bytes": 810
+  },
+  {
+    "path": "02/llm_forecasting/config/site_whitelist.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/config/site_whitelist.py",
+    "sha256": "5ed895905395161a65cec35cb2c57bc2292636b295e5b2051365b97e719de53e",
+    "bytes": 133753
+  },
+  {
+    "path": "02/llm_forecasting/data_scraping.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/data_scraping.py",
+    "sha256": "77aacf7c1ab9d64e8b099184b24b029c0327692d324d3b620d1f094cff72ecb0",
+    "bytes": 5967
+  },
+  {
+    "path": "02/llm_forecasting/ensemble.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/ensemble.py",
+    "sha256": "60ae071e53cceea0e7f21c37a3dbe25ff421150699d39adb18ed44459038d6fb",
+    "bytes": 15149
+  },
+  {
+    "path": "02/llm_forecasting/evaluation.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/evaluation.py",
+    "sha256": "59d843cdc0f71aead430ee3562618cd30a76c58dbdf0dfc75deb67a2b490766d",
+    "bytes": 9816
+  },
+  {
+    "path": "02/llm_forecasting/information_retrieval.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/information_retrieval.py",
+    "sha256": "776b22e31dcb7522534d52bb2fb8734624475b32f7f190e3dbab51b4611e41ba",
+    "bytes": 31958
+  },
+  {
+    "path": "02/llm_forecasting/model_eval.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/model_eval.py",
+    "sha256": "1f23cf5fa51b87006420712d732e7cb6767bdfa9ae93576225badff60d6e3bee",
+    "bytes": 13497
+  },
+  {
+    "path": "02/llm_forecasting/prompts/alignment.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/alignment.py",
+    "sha256": "8c156f1d8b33c6874f8553696452c05fc72e57b8733036a495fc214a01026557",
+    "bytes": 963
+  },
+  {
+    "path": "02/llm_forecasting/prompts/base_eval.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/base_eval.py",
+    "sha256": "638e692c057ec8ff65be3b8308b8db5ee864e3a3c49dcb7152355fe47a6fa72f",
+    "bytes": 2506
+  },
+  {
+    "path": "02/llm_forecasting/prompts/base_reasoning.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/base_reasoning.py",
+    "sha256": "22cf9bf792c76a4646987d9ae0202fbb0e24c887e713a7dc31e2bd5c232ce37f",
+    "bytes": 20682
+  },
+  {
+    "path": "02/llm_forecasting/prompts/data_wrangling.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/data_wrangling.py",
+    "sha256": "de37139527221ab13221cd9615f146ffda4133bfc1f06baa33311b04ca509c9b",
+    "bytes": 3309
+  },
+  {
+    "path": "02/llm_forecasting/prompts/ensemble_reasoning.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/ensemble_reasoning.py",
+    "sha256": "7eb6957c674307629aa570ee24cb9b50f6e79d911d42b5af17b215c4fead18f8",
+    "bytes": 2143
+  },
+  {
+    "path": "02/llm_forecasting/prompts/prompts.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/prompts.py",
+    "sha256": "acd419be64154c7740ebb018dc6bb38443936fc7bfa35a0120b7b78f3f880428",
+    "bytes": 2825
+  },
+  {
+    "path": "02/llm_forecasting/prompts/relevance.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/relevance.py",
+    "sha256": "b64db9eb9a1bcf2648b6afb6d187bd8bcf76dc42ef6c98daa8ed21d05b81b27f",
+    "bytes": 1027
+  },
+  {
+    "path": "02/llm_forecasting/prompts/search_query.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/search_query.py",
+    "sha256": "982f728a9dd32e5a0a28b632b863a785b7d4613809e50c5997177731d8ae413b",
+    "bytes": 9244
+  },
+  {
+    "path": "02/llm_forecasting/prompts/summarization.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/summarization.py",
+    "sha256": "4fe4ffe35c626ea77860563c17e45c10f541a135de6bc9f715514207914dca02",
+    "bytes": 5655
+  },
+  {
+    "path": "02/llm_forecasting/prompts/system.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/prompts/system.py",
+    "sha256": "a995045065697d56c26cb3e2276269bccc5f8bfc298e950e20fa5f34397bb862",
+    "bytes": 277
+  },
+  {
+    "path": "02/llm_forecasting/ranking.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/ranking.py",
+    "sha256": "74f5fb20096279f1d68f917a8a353ec8f412a8f27dea9e9fd77fdba784162026",
+    "bytes": 22539
+  },
+  {
+    "path": "02/llm_forecasting/summarize.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/summarize.py",
+    "sha256": "ceb0689b94e1bfb4c982e2078c8ec15d3503bf4ec8fe06c6d2db317ef4b19e42",
+    "bytes": 9767
+  },
+  {
+    "path": "02/llm_forecasting/utils/api_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/api_utils.py",
+    "sha256": "f57cb64c1f34879850273ce030d43d344450f99512e0de7699ea1da9f318ce93",
+    "bytes": 3646
+  },
+  {
+    "path": "02/llm_forecasting/utils/article_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/article_utils.py",
+    "sha256": "4fe3c9419b659495bdaf2999453ee0a5e15e89ea1a360c852af2038828f35872",
+    "bytes": 1912
+  },
+  {
+    "path": "02/llm_forecasting/utils/data_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/data_utils.py",
+    "sha256": "e43c6118f797aea054fd11d8f1975789d1f61ff3331fc486a81444bb7af88261",
+    "bytes": 10695
+  },
+  {
+    "path": "02/llm_forecasting/utils/db_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/db_utils.py",
+    "sha256": "b5ade9bedba9a7dacb9143fd1726463022394cd4984fad5b7f601aae8f3fd529",
+    "bytes": 4173
+  },
+  {
+    "path": "02/llm_forecasting/utils/logging_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/logging_utils.py",
+    "sha256": "9341d135f50447828e18f2e4513abeb7425a89f7b0f4cb6952d6c82c3f58848a",
+    "bytes": 503
+  },
+  {
+    "path": "02/llm_forecasting/utils/metrics_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/metrics_utils.py",
+    "sha256": "5326b84b7e718e0494eb47592b766588df7aa0c34d8782a13fa6f098299b8aa6",
+    "bytes": 3970
+  },
+  {
+    "path": "02/llm_forecasting/utils/model_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/model_utils.py",
+    "sha256": "1cf2c231f1ec94470830bd75d81b1b11a1fa59fcdfaca8f7857004a381552006",
+    "bytes": 1144
+  },
+  {
+    "path": "02/llm_forecasting/utils/string_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/string_utils.py",
+    "sha256": "20a1350bf0d1357bd4aa0e21bbdbdec4e2210cf240c12980201f092292e0feb7",
+    "bytes": 9954
+  },
+  {
+    "path": "02/llm_forecasting/utils/time_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/time_utils.py",
+    "sha256": "8f29e4fdc6e83b69a63ad147660c4d72491fdd87636f4f6c18f12a3a14de4f75",
+    "bytes": 9388
+  },
+  {
+    "path": "02/llm_forecasting/utils/utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/utils.py",
+    "sha256": "d9d5bde61a141bbc027941b0a3809bbeefbd2bd13d0a5de89936ab81f9574438",
+    "bytes": 1417
+  },
+  {
+    "path": "02/llm_forecasting/utils/validation_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/validation_utils.py",
+    "sha256": "141a9a5888808dcc2c032ed8fda1d40cc1cb7c0d6f2297a720e4673d9b9ca206",
+    "bytes": 1990
+  },
+  {
+    "path": "02/llm_forecasting/utils/visualize_utils.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/llm_forecasting/utils/visualize_utils.py",
+    "sha256": "91687f702ba712e225fea7e62e0fd80d94d7a038c8b7599e1e1b269e77c490aa",
+    "bytes": 15456
+  },
+  {
+    "path": "02/pyproject.toml",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/pyproject.toml",
+    "sha256": "586189c4b49120f28d004d5edf2a06c1515e28cfcf785a063695bd2a789d77eb",
+    "bytes": 831
+  },
+  {
+    "path": "02/scripts/data_scraping/cset.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/scripts/data_scraping/cset.py",
+    "sha256": "92bdc24f236a5ec1e295dcd7578a6771efe7e2fbe41a38ec97d6887c69e13a98",
+    "bytes": 5508
+  },
+  {
+    "path": "02/scripts/data_scraping/gjopen.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/scripts/data_scraping/gjopen.py",
+    "sha256": "f40e60d2aa19c75fee8116ae1c6cfb2d2b1ab2ca2aff61bf33f0fcf5fed89664",
+    "bytes": 5506
+  },
+  {
+    "path": "02/scripts/data_scraping/manifold.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/scripts/data_scraping/manifold.py",
+    "sha256": "28c2321bdcc0eeef13aaa229d600309dfe68142faae47fcba96339ccb8f5ecac",
+    "bytes": 12381
+  },
+  {
+    "path": "02/scripts/data_scraping/metaculus.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/scripts/data_scraping/metaculus.py",
+    "sha256": "70b19e5f046939c66b6044340c0a3ae40dd9314b32233cf6fa244d15b8b8e75c",
+    "bytes": 15296
+  },
+  {
+    "path": "02/scripts/data_scraping/polymarket.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/scripts/data_scraping/polymarket.py",
+    "sha256": "77a8a7eaf6c04f5685326fc2db89c5410c403eecef3954d72899ab1d4d6620cc",
+    "bytes": 9444
+  },
+  {
+    "path": "02/scripts/fine_tune/fine_tune.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/scripts/fine_tune/fine_tune.py",
+    "sha256": "6409f6c6ca0b1012fcebf45c84944640cefe3e7529e4ce3b63b77d9fda47a343",
+    "bytes": 2473
+  },
+  {
+    "path": "02/scripts/training_data/training_point_generation.py",
+    "url": "https://raw.githubusercontent.com/dannyallover/llm_forecasting/85e72d026fc0703f16e7aef6faaec99cc5f4041d/scripts/training_data/training_point_generation.py",
+    "sha256": "6e18e4950ae5477351a0a6eb333e180c81acc7fae34bde50c68cbfe098b25f37",
+    "bytes": 7193
+  },
+  {
+    "path": "04/README.md",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/README.md",
+    "sha256": "366911ef6786cdbff66286829c2c1a601b47a6e129386b91f6aa288b493a6353",
+    "bytes": 8875
+  },
+  {
+    "path": "04/blf/__init__.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/__init__.py",
+    "sha256": "4706ee97063cd2afa9ffc6f22bcf9638e6b3870829b636b84a9c39d8363d8e8f",
+    "bytes": 1157
+  },
+  {
+    "path": "04/blf/agent.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/agent.py",
+    "sha256": "625ff8e46eb4b453b9fa7643f04f846ed77d0ef634fcacb22cf8e1cd87408f3c",
+    "bytes": 12938
+  },
+  {
+    "path": "04/blf/aggregate.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/aggregate.py",
+    "sha256": "c1ae92ce67cd22324e6eea0aa1031d14a71b2e1b0df60b14691de5496eb028d6",
+    "bytes": 2994
+  },
+  {
+    "path": "04/blf/belief.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/belief.py",
+    "sha256": "665bc988d778a53f5243090f676548bff1f7790ffa727e7629c18dca29112efa",
+    "bytes": 3696
+  },
+  {
+    "path": "04/blf/calibrate_cli.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/calibrate_cli.py",
+    "sha256": "9442c614a771e930db0f508e15731f0695bf47ec185379dd0c0fd39278c40443",
+    "bytes": 3577
+  },
+  {
+    "path": "04/blf/calibration.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/calibration.py",
+    "sha256": "4b6035b7254b64223422d84606f17670ba041a78150670382456a1ed8e26eb2f",
+    "bytes": 9160
+  },
+  {
+    "path": "04/blf/cli.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/cli.py",
+    "sha256": "892fc87a0211a385aae9ac18c395595037f3ab257055134ce7c0940690caf05a",
+    "bytes": 2979
+  },
+  {
+    "path": "04/blf/eval.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/eval.py",
+    "sha256": "a9cf02866e1b8b5bb06ff0da68e343262d6514e911d20190265aa144019da93a",
+    "bytes": 6156
+  },
+  {
+    "path": "04/blf/eval_cli.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/eval_cli.py",
+    "sha256": "0fd0de80c84da77adafb416ad14f9d5a6216af52e79afcef8392d9f15c19b3d0",
+    "bytes": 2996
+  },
+  {
+    "path": "04/blf/forecast.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/forecast.py",
+    "sha256": "c05db3a0020260fc11851475c6bfaae182b03a7539f6ba0c02d50164d4a17466",
+    "bytes": 3238
+  },
+  {
+    "path": "04/blf/forecastbench.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/forecastbench.py",
+    "sha256": "c4f8bb8b7d5144dfa642e70d3b1309c3f6a3912c176b9e43ce7b913e7d74e5b1",
+    "bytes": 5617
+  },
+  {
+    "path": "04/blf/llm.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/llm.py",
+    "sha256": "3ac70bfd1ab02fe9b61dd84204e817b124e5d0e5e58152a44db21ab1addab6fc",
+    "bytes": 4264
+  },
+  {
+    "path": "04/blf/search.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/search.py",
+    "sha256": "39ded199257708d89e5463bab1defcc16f75a0f5868a20038fafbb23c83c551d",
+    "bytes": 6484
+  },
+  {
+    "path": "04/blf/shrinkage.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/shrinkage.py",
+    "sha256": "997cc07d2f7e71903d5c4dc9223cabf4b5b5e9c1a889e258ef524ee873e9ca1d",
+    "bytes": 4397
+  },
+  {
+    "path": "04/blf/shrinkage_cli.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/shrinkage_cli.py",
+    "sha256": "de3688dbaae9cca1d3c60cf54175fcaec8990bb2efa3c2753585d96f6d1728f3",
+    "bytes": 2633
+  },
+  {
+    "path": "04/blf/timeseries.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/blf/timeseries.py",
+    "sha256": "51b01613cc97bf15914b5dcd479256a9c1cc10b1ad3e824ecec772bf5df190bb",
+    "bytes": 8603
+  },
+  {
+    "path": "04/pyproject.toml",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/pyproject.toml",
+    "sha256": "1d968cb070d840ddbb8e8d1edd6a57d763823314d68ac2405bd03c28853ad5b8",
+    "bytes": 691
+  },
+  {
+    "path": "04/tests/test_aggregate.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/tests/test_aggregate.py",
+    "sha256": "efce74ce4939ef975032133c52951a3f349c42c2b6dc341bc0a2887a96f1b0e5",
+    "bytes": 2599
+  },
+  {
+    "path": "04/tests/test_calibration.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/tests/test_calibration.py",
+    "sha256": "122f1f41cb816a4d874e8cafc9ad08db095d162e8f3afbc2b575f61882ea05d4",
+    "bytes": 2645
+  },
+  {
+    "path": "04/tests/test_eval.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/tests/test_eval.py",
+    "sha256": "73808885244f472782e6487f609c2235f4fe64c07dee3159b036ea4288c6a7ff",
+    "bytes": 2423
+  },
+  {
+    "path": "04/tests/test_forecastbench.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/tests/test_forecastbench.py",
+    "sha256": "21aa7b799dff36da8d60e0d415e1d1cabab97a98af505f0484377873f12adc30",
+    "bytes": 3974
+  },
+  {
+    "path": "04/tests/test_shrinkage.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/tests/test_shrinkage.py",
+    "sha256": "5e2b4130fbf20992fe963e2de15ad54204ce9b0a826bf01e00dc911c3c812fb2",
+    "bytes": 2833
+  },
+  {
+    "path": "04/tests/test_timeseries.py",
+    "url": "https://raw.githubusercontent.com/swarm-ai-research/blf-forecaster/cc4d3f9b2804e2ba3bf7b3f1958b7225be56e60f/tests/test_timeseries.py",
+    "sha256": "8e93117a0af7a623c090bbf80ec56d58782760dc3a5f0b89f36b77fa49a85d6f",
+    "bytes": 2758
+  },
+  {
+    "path": "02-paper.html",
+    "url": "https://arxiv.org/html/2402.18563v1",
+    "sha256": "f6b75122e92c692f7de1c37f9cf0bdb864c97f9e86a7b3f0978543dac444d4bc",
+    "bytes": 554873
+  },
+  {
+    "path": "03-paper.html",
+    "url": "https://arxiv.org/html/2604.18576v1",
+    "sha256": "e0c26a774280cdb32a2410a9d02d175d5047262b9414931525e45ade5ee07bec",
+    "bytes": 976112
+  }
+]

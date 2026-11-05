@@ -1,0 +1,26 @@
+{
+ "qid": "Q044",
+ "question": "US reissues Iran oil sanction relief by August 31?",
+ "rules": "On July 7, 2026, the United States revoked a sanctions waiver, “General License X,” which allowed for the sale of Iranian oil (see: https://thehill.com/policy/energy-environment/5957647-iran-oil-sanctions-waiver-strait-of-hormuz/).\n\nThis market will resolve to “Yes” if the United States federal government issues a waiver, license, or equivalent sanctions-relief mechanism lifting US sanctions on the sale of Iranian oil, petrochemical products, or petroleum products by the specified date, 11:59 PM ET. Otherwise this market will resolve to “No”.\n\nActions which direct partial or full sanction relief will both qualify. However, qualifying actions must reverse, remove, waive, or suspend US penalties on the sale of Iranian oil, petrochemical products, or petroleum products, in whole or in part.\n\nQualifying actions need not be permanent; temporary suspensions of sanctions will qualify. Relief issued for either primary or secondary sanctions will qualify. A re-issuance of the initial waiver will qualify. The full removal of any sanction on the sale of Iranian oil, petrochemical products, or petroleum products will also qualify.\n\nContinued sales of Iranian oil allowed during the wind-down pe",
+ "as_of": "2026-08-18",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "Reuters via Investing.com",
+   "published_at": "2026-08-18",
+   "excerpt": "President Donald Trump said on August 18 that talks between the United States and Iran were neither taking place nor scheduled. Iran's top negotiator said reopening the Strait of Hormuz required the United States to lift its blockade of Iranian ports, lift oil sanctions, release frozen assets, and end threats and military operations on all fronts. The June memorandum's 60-day negotiating period had elapsed on Monday, and Trump said he had no plans to extend it."
+  },
+  {
+   "id": "E2",
+   "publisher": "U.S. Department of the Treasury",
+   "published_at": "2026-08-07",
+   "excerpt": "OFAC designated Titan Exchange for materially assisting Shahr Bank and Alps International for operating in Iran's financial sector. Treasury described Shahr Bank and its associated companies as helping Iran retrieve overseas oil-sale revenues for petroleum exporters including the National Iranian Oil Company and Naftiran Intertrade Co. Treasury said it remained committed to maximum pressure and targeting Iran's ability to generate, move, and repatriate funds."
+  },
+  {
+   "id": "E3",
+   "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+   "published_at": "2026-07-07",
+   "excerpt": "Effective July 7, 2026, General License X was revoked and superseded in its entirety by General License X1. X1 authorized transactions ordinarily incident and necessary to winding down previously authorized transactions through 12:01 a.m. eastern daylight time on July 17, with payments to blocked persons required to enter blocked, interest-bearing U.S. accounts. Except for necessary wind-down activity, it did not authorize new transactions, including purchases or loading of Iranian-origin products on or after July 7."
+  }
+ ]
+}

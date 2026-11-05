@@ -1,0 +1,284 @@
+--- before/README.md
++++ after/README.md
+@@ -1,6 +1,10 @@
+ # 投研助手
+ 
+-围绕研究问题工作的本地Claude Code插件，源码版本0.4.1。它把官方数据、预期、独立报道、机构分析与社区线索连接起来，给出当前判断、重要发现及下一项会改变判断的观察；同一冻结内容生成Markdown和HTML，并可更新旧研究。
++围绕研究问题工作的本地Claude Code插件，源码版本0.5.0。它把官方数据、预期、独立报道、机构分析与社区线索连接起来，给出当前判断、重要发现及下一项会改变判断的观察；同一冻结内容生成Markdown和HTML，并可更新旧研究。
++
++0.5.0将研究价值放到主线：价格相关研究明确市场押注、我们的分歧、证据优势、催化和剩余空间/做错代价，按优先研究、等待触发、价格已反映、未见优势排序。市场代理估计可支持有方向的条件判断，但须引用推断，不能冒充调查共识或已验证的价格隐含值。重要限制说明对判断或机会的具体影响，不以免责声明替代答案。
++
++新增可选`report.opportunity.version=1`，主流程要求交易研究使用；旧报告与纯事实研究保持兼容。更新逐项核对父报告触发，记录判断强弱、价格变化和剩余机会，支持方向、幅度、时点、机制与价格兑现的分开复盘。协议和输出示例见[研究价值参考](skills/research/references/research-value.md)。记录和校验不自动判断机会是否存在，也不产生实时行情、后台监控或投资收益证明。
+ 
+ 0.4.0增加四处分析升级：明确问题与方法匹配、区分竞争解释的检验、确定性经济模型及敏感性、市场隐含预期与研究假设比较。新研究归档强制分析契约，固定模型会在校验、渲染和归档时重算；旧归档仍按原格式读取，不追溯补写结论。
+ 
+@@ -73,6 +77,8 @@
+ | scripts/sources.py | 来源契约、确定性选择审计、Last30Days导入 |
+ | scripts/check_claims.py | schema1兼容及schema2严格整账本校验 |
+ | scripts/render_report.py | 冻结report.json生成Markdown/HTML |
++| scripts/opportunity_contract.py | 机会判断、证据依据类型、触发与父报告更新一致性 |
++| scripts/opportunities.py | 只读汇总最新归档机会与触发，按研究优先级列出；--history保留历史 |
+ | scripts/research_run.py | archive/update/show/list/diff，hash清单与不可覆盖归档 |
+ | scripts/forecast.py、journal.py、authors.py | 保留的概率、到期复盘与作者评分 |
+ | scripts/polymarket.py | 原有Gamma只读参考值查询，严格v2需补选项/报价时刻/盘口 |
+--- before/agents/fact-collector.md
++++ after/agents/fact-collector.md
+@@ -14,6 +14,9 @@
+ - 同时检索主解释与最强竞争解释。先读research_design的question_kind / method / mechanism_chain及discrimination_tests，按每个test的outcomes寻找两解释会给出不同预测的同一观察；逐项回报test_id、原观察、来源/口径和缺口，不只搜支持结论的同义词。共同预测、管理层重复表态、未找到反证不能代替区分证据。允许年份、财报期、会议日；限定域名无结果后可放宽并记原因。
+ - 保存查询、结果候选、原排名、打开原文后的quote/locator、发布时间/更新时间/获取时间和日期性质。搜索摘要只能access_status=snippet；打不开的failed，不写成无信息。
+ - 股票财务或行情快照需要结构化数据时，可读`../skills/research/references/financial-data.md`并调用本插件`scripts/financial_data.py`，复用Dexter同源Financial Datasets接口。按脚本JSON记录not_run/payment_required/auth_failed/partial等状态；原始获取包不是sources候选，供应商数据不自动视为T0。证券、单位、期间、报价时刻和历史可得性核实后再入现有证据链；不读取凭据文件，不自动付款。
++- 执行前读`../skills/research/references/research-value.md`。交易相关缺口优先寻找市场押注的依据、研究分歧、可核实的证据优势、催化窗口、已经发生的价格变化、剩余空间与判断做错的成本路径。增量可以是同口径计算所需输入、跨材料连接或矛盾，不以链接数、转载量或热度计；低热度但可核查的订单、交付、规则或数据细节要保留，同时注明核查路径与有效期。
++- 市场依据分别返回调查共识、价格隐含所需证据、proxy推断可用的代理材料；记录对象、期间、截点及代理局限。可以提出有据proxy候选，但明确是推断、交主研究者以inference及basis入账，不伪装成consensus。缺价格或隐含预期材料仍是缺失，不得用proxy填充market.assessed；不以缺精确概率或空间数字为由抹掉有据的条件判断，也不编造数字。
++- 催化返回可核实事件、日期/窗口、支持或削弱哪个分歧及可能的失效条件。更新取证逐项对应旧trigger_id、原signal与by，保存检查时点和观察；未检查、不可达与已核查未发生分开返回，不能把没取到写成not_hit。核对旧截点至当前价格及口径，不能只按新闻方向推断行情。
+ - 一个候选片段一种明确用途。不要只返回对主判断有利的材料。数字照原文保存，换算交给主研究者的计算记录。
+ - 区分canonical_url去重和共同原始出处。转载同公告共用origin_id；独立性需要origin_basis，不由不同域名或publisher猜测。观点不同的同主题材料保留。
+ - 时间晚于截点的材料保留为排除记录，不能入账。历史任务中unknown日期、只有日而无时间、后续修改页，需要独立的当时可得性凭据。
+--- before/agents/community-scout.md
++++ after/agents/community-scout.md
+@@ -16,7 +16,10 @@
+ ## 选择
+ 
+ - 先判断对象、时间、问题和用途，再保留引擎原排名；不能重新按点赞量截取每角度五条。
+-- 优先能区分研究解释、指出原数据问题、提供可核查细节的材料；保留重要反证和相关低热度新线索。样本数随问题和预算，不凑条数。
++- 先读`../skills/research/references/research-value.md`。优先能区分研究解释、指出原数据问题、提供可核查细节的材料；保留重要反证和相关低热度新线索。增量来自计算线索、材料连接、矛盾和传导断点，不以链接数、互动量或“独家”措辞计。样本数随问题和预算，不凑条数。
++- 交易相关线索说明：它揭示何种市场押注/叙事，我们的分歧可能在哪里，何种原始证据可核查，哪个催化及时间会检验它，价格已变化后是否仍有研究空间，做错会怎样。无需每条材料填全这些项目，也不要求社区提供精确概率或目标价；未知写明，不编数字。研究排序由证据增量和时间价值决定，不能用情绪排行榜代替。
++- 社区样本仅代表本次读到的群体；即使多人同向，也不能标为全市场consensus或直接证明已定价。可向主研究者提出市场proxy候选，明确推断链、样本偏差与待核实项，须以inference入账；proxy不能补齐market.assessed所缺价格/隐含预期证据。
++- 为催化、失败路径和信号失效寻找可核查条件，记录事件窗口、原帖时点、追原始出处的方法。更新对照旧trigger_id与原门槛，区分已检查未触发与未检查；保留当时原文，不用后来的改口替换旧预测。价格实现须另核对行情，社区声称“已兑现”不作事实。
+ - 互动量保持原始字段、平台及采集时刻。缺失不记为零质量，跨平台互动不直接比较。引擎综合分不等于事实可信度或投资重要性。
+ - URL与已确认共同原始出处分别去重；同主题不同观点保留。帖子引用官方材料时追原件，社区自己不升级为事实。
+ - 用“本次读到的n条材料中……”限定观察范围；不把它写成全市场共识。账号/版块集中度与营销迹象只列可核查事实，不据此断言机器人。
+--- before/agents/red-team.md
++++ after/agents/red-team.md
+@@ -6,7 +6,7 @@
+ 
+ 输入：plan（含research_design）、sources/claims、report（含analysis）草稿、固定模型spec/result、执行日志及可选旧run。先读`../skills/research/references/analysis-methods.md`。契约与重算通过只说明字段、引用和固定算术满足，原文是否支持、假设是否合理、经济机制和因果是否成立仍需你判断。
+ 
+-先读用户问题和当前答案，找最可能改变结论的错误。不要以增加限制条件数量代替审查，不机械给每条结论凑一个反方。
++同时读`../skills/research/references/research-value.md`。先读用户问题和当前答案，找最可能改变结论的错误。不要以增加限制条件数量代替审查，不机械给每条结论凑一个反方。审查目标是让有据判断更明确、可检验，不要求研究者变得更保守，不把一律降为watch或强求精确概率当作通过条件。
+ 
+ 检查：
+ 
+@@ -30,6 +30,17 @@
+ 
+ 把每项检查结果写入analysis_checks，错误进入findings并给出具体证据、影响和最小修正；未核验写not_checked及原因，不写通过。旧档案加载不强制新字段，不重判旧结论；新archive/update才强制契约。预测矩阵、参数与审查记录放附录，正文继续由判断、机制与关键结果承担，不用更多限制段落替代答案。
+ 
++另将研究价值检查写入独立value_checks，不并入或替代analysis_checks：
++
++- variant_edge：市场押注和我们的分歧是否明确，优势是否来自计算、连接、矛盾或可核实的低热度线索，能否区分竞争解释；链接数量与热度不能充当优势。proxy须引用inference并标明推断；consensus须有consensus主张，price_implied须有price与inference，不伪装全市场共识。market仍missing时不能借机会字段宣称assessed或已定价。
++- catalyst_timing：催化是否具体、可观察、有时间窗，近期研究理由是否成立；不要求所有研究都有交易催化。
++- price_payoff：是否扣除已经发生的价格变化讨论剩余空间与做错代价；无可靠数字时定性是否有据，不强求目标价或精确概率。机制兑现与价格兑现分开判断。
++- ranking：research_now / watch / priced_in / no_edge是否有理由，research_now是否说明为什么近期值得研究；多个候选是否有证据支持的优先顺序，不把状态当个人仓位或机械交易指令。
++- failure_triggers：失败后果、支持/削弱/失效及到期条件是否明确；trading的triggers非空且id稳定，文字与引用完整，重要推断入账；not_applicable需reason且不生成机会字段。
++- update_review：父run为trading时新run是否保留trading opportunity及update.opportunity（可降为no_edge），previous/current状态是否准确、全部旧trigger是否恰好一次，未检查是否仍not_checked而非not_hit；hit/not_hit需证据，更新reason/price_move/remaining_edge由非空claim_ids支持。旧触发和前瞻不得事后改写，方向/幅度/时点和机制/价格兑现分开；可选review若出现，direction / magnitude / timing / mechanism / price_realization五项文字须完整，区分未到期与已观察，不冒充收益验收。
++
++value_checks各项使用pass / fail / not_checked与具体evidence；非交易或无更新时说明适用范围，未核验不能写pass。错误同样进入findings，给出让判断更准确、更明确的最小修正。正文机会判断应嵌入开头、驱动及后续观察，契约详情放附录，不要求机械栏目。
++
+ 返回JSON：
+ 
+ ```json
+@@ -39,6 +50,14 @@
+     "discrimination": {"status": "pass|fail|not_checked", "evidence": "预测矩阵、观察与裁定"},
+     "models": {"status": "pass|fail|not_checked", "evidence": "输入、单位、实际重算与敏感性，或不适用理由"},
+     "market": {"status": "pass|fail|not_checked", "evidence": "价格与隐含预期比较，或缺失/不适用理由"}
++  },
++  "value_checks": {
++    "variant_edge": {"status": "pass|fail|not_checked", "evidence": "分歧、证据优势与市场依据类型"},
++    "catalyst_timing": {"status": "pass|fail|not_checked", "evidence": "催化、窗口与近期研究理由，或适用范围"},
++    "price_payoff": {"status": "pass|fail|not_checked", "evidence": "已发生价格变化、剩余空间及失败代价"},
++    "ranking": {"status": "pass|fail|not_checked", "evidence": "机会状态、排序与理由"},
++    "failure_triggers": {"status": "pass|fail|not_checked", "evidence": "失败后果、触发、失效与到期"},
++    "update_review": {"status": "pass|fail|not_checked", "evidence": "旧触发全量对照、前瞻冻结与复盘，或无更新理由"}
+   },
+   "answer_fit": {"answered": true, "reason": "针对原问题的评价"},
+   "findings": [{"target": "C3或finding标题", "severity": "blocking|material|minor", "problem": "具体证据到错误结论的路径", "evidence": "原文定位/计算", "fix": "最小修正"}],
+--- before/scripts/render_report.py
++++ after/scripts/render_report.py
+@@ -209,6 +209,8 @@
+     if "analysis" in report:
+         from analysis_contract import validate_analysis
+         errors.extend(validate_analysis(report["analysis"], claims, sources=sources))
++    from opportunity_contract import validate_opportunity
++    errors.extend(validate_opportunity(report, claims))
+     return errors
+ 
+ 
+@@ -288,6 +290,9 @@
+         yield ("p", "证据模式：旧版 schema 1；本报告未按 schema 2 的来源与证据契约校验。")
+     yield ("h2", "判断")
+     yield ("p", report["answer"]["text"], report["answer"]["claim_ids"])
++    if report.get("opportunity"):
++        from opportunity_contract import opportunity_blocks
++        yield from opportunity_blocks(report["opportunity"])
+     for limit in report["limitations"]:
+         if limit["material"]:
+             yield ("p", "重要限制：" + limit["text"], limit["claim_ids"])
+@@ -297,8 +302,9 @@
+         yield ("h2", finding["title"])
+         yield ("p", finding["text"], finding["claim_ids"])
+         yield ("p", "为什么重要：" + finding["why_it_matters"])
+-        yield ("p", "相较基线：" + finding["increment"]["baseline"])
+-        yield ("p", "研究增量（" + finding["increment"]["kind"] + "）：" + finding["increment"]["detail"])
++        if "opportunity" not in report:
++            yield ("p", "相较基线：" + finding["increment"]["baseline"])
++            yield ("p", "研究增量（" + finding["increment"]["kind"] + "）：" + finding["increment"]["detail"])
+     if report.get("analysis"):
+         yield from _analysis_blocks(report["analysis"], answer_text=report["answer"]["text"])
+     for calculation in report.get("calculations", []):
+@@ -331,6 +337,16 @@
+         yield ("h2", "本轮更新说明")
+         yield ("p", "判断变化：" + ("是" if update["judgment_changed"] else "否") + "；" + update["reason"])
+         yield ("p", "可比性：" + update["comparability"]["status"] + "；" + update["comparability"]["reason"])
++        if update.get("opportunity"):
++            from opportunity_contract import update_blocks
++            yield from update_blocks(update["opportunity"])
++    if report.get("opportunity"):
++        from opportunity_contract import opportunity_blocks
++        yield from opportunity_blocks(report["opportunity"], appendix=True)
++        if report["findings"]:
++            yield ("h2", "附录：相对原文与旧判断的增量")
++            for finding in report["findings"]:
++                yield ("p", finding["title"] + "；基线：" + finding["increment"]["baseline"] + "；增加的判断：" + finding["increment"]["detail"], finding["claim_ids"])
+     if report.get("analysis"):
+         yield from _analysis_blocks(report["analysis"], appendix=True)
+     yield ("audit", "来源与结论审计")
+--- before/scripts/research_run.py
++++ after/scripts/research_run.py
+@@ -128,6 +128,10 @@
+     update = report.get("update")
+     if update is None:
+         raise ValueError("comparison requires explicit report.update judgment and comparability explanation")
++    from opportunity_contract import validate_parent_opportunity
++    errors = validate_parent_opportunity(parent["report"], report)
++    if errors:
++        raise ValueError("\n".join(errors))
+     old_sources = parent["sources"]["candidates"]
+     # Evidence identity is the source ID. Evidence text/access/locator changes are
+     # separated from candidate ranking changes so neither is mistaken for truth.
+@@ -140,6 +144,7 @@
+                   "evidence": _changes(evidence(old_sources), evidence(sources["candidates"])),
+                   "claims": _changes(parent["claims"]["claims"], ledger["claims"]),
+                   "analysis_changed": parent["report"].get("analysis") != report.get("analysis"),
++                  "opportunity_changed": parent["report"].get("opportunity") != report.get("opportunity"),
+                   "comparability_issues": []}
+     for key, old, new in (("report", parent["report"], report), ("claims", parent["claims"], ledger), ("sources", parent["sources"], sources)):
+         comparison["comparability_issues"].extend(_metadata_differences(old, new, key))
+@@ -190,6 +195,10 @@
+             path = parent_path.parent / name
+             if path.is_symlink() or not path.is_file() or _hash(path.read_bytes()) != digest:
+                 raise ValueError("parent file changed: " + name)
++        from opportunity_contract import validate_parent_opportunity
++        errors = validate_parent_opportunity(read_document(parent_path.parent / "report.json"), result["report"])
++        if errors:
++            raise ValueError("\n".join(errors))
+     return result
+ 
+ 
+--- before/.claude-plugin/marketplace.json
++++ after/.claude-plugin/marketplace.json
+@@ -10,7 +10,7 @@
+     {
+       "name": "touyan",
+       "description": "投研助手：多层来源检索、研究判断、同源Markdown/HTML与可追溯更新。研究建议，非个人买卖指令。",
+-      "version": "0.4.1",
++      "version": "0.5.0",
+       "source": "./",
+       "category": "productivity"
+     }
+--- before/.claude-plugin/plugin.json
++++ after/.claude-plugin/plugin.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "touyan",
+-  "version": "0.4.1",
++  "version": "0.5.0",
+   "description": "投研助手：按研究用途选择多层来源，连接证据与计算，形成判断，交付可追溯Markdown/HTML并更新研究。研究建议，非个人买卖指令。",
+   "author": {
+     "name": "drewliu"
+--- before/skills/research/SKILL.md
++++ after/skills/research/SKILL.md
+@@ -7,7 +7,7 @@
+ 
+ # 投研助手
+ 
+-用户读完应多知道什么：发生了什么重要变化，它如何影响当前判断，哪项观察值得继续跟踪。主研究者负责取舍、计算和综合，不能只汇编摘要与限制条件。
++用户读完应多知道什么：发生了什么重要变化，它如何影响当前判断，哪项观察值得继续跟踪。交易相关研究优先回答市场在押注什么、我们的分歧、证据优势、催化及时间、价格变化后的剩余空间和做错代价，并给出有理由的研究优先级。主研究者负责取舍、计算和综合，不能只汇编摘要与限制条件；研究结论不是个人仓位建议。非交易问题不强制交易研究。
+ 
+ ## 研究边界
+ 
+@@ -53,7 +53,7 @@
+ 
+ ## 1. 定义本轮有用的答案
+ 
+-读[templates.md](references/templates.md)与[analysis-methods.md](references/analysis-methods.md)，按对象选event_pricing/asset/theme/actor。研究者明确选择一种question_kind：change_explanation / operating_outlook / valuation / event_forecast / theme_transmission / commitment_check；运行`python3 "$TY_DIR/scripts/analysis_contract.py" route <question_kind>`取得对应method、必需输入与模型要求。route按明确选择查表，不自动理解或分类用户问题。
++读[templates.md](references/templates.md)、[analysis-methods.md](references/analysis-methods.md)与[research-value.md](references/research-value.md)，按对象选event_pricing/asset/theme/actor。交易相关问题将市场押注、研究分歧、证据优势、催化窗口、剩余空间和失败代价转成具体取证缺口；非交易问题不强制机会字段。研究者明确选择一种question_kind：change_explanation / operating_outlook / valuation / event_forecast / theme_transmission / commitment_check；运行`python3 "$TY_DIR/scripts/analysis_contract.py" route <question_kind>`取得对应method、必需输入与模型要求。route按明确选择查表，不自动理解或分类用户问题。
+ 
+ 新plan写`analysis_version: 1`及research_design：question_kind、method、rationale、baseline、price_relevance、mechanism_chain、discrimination_tests。hypotheses使用稳定id和explanation；每个检验写id、observe、source、by，以及至少两个不同解释各自不同的outcomes（hypothesis_id / prediction）。除commitment_check外均须竞争解释与区分检验；承诺核对仍须记录解释，可在不需要竞争检验时保留空列表。queries每条写test_ids，背景查询可为空，每个检验须有对应查询。问题、截点、比较口径、查询用途与预算仍完整保存。
+ 
+@@ -77,7 +77,7 @@
+ - community-scout：Last30Days raw候选、原排名、聚类与状态；寻找叙事冲突和可核查细节。用`--research-only`避免将问题解释成管理指令。
+ - 主研究者：需要时查精确合约与报价，核对选项、时刻、bid/ask、深度和参考价性质。
+ 
+-给子Agent问题契约、research_design、带id的候选解释、各检验的不同预测、test_ids对应查询、选中的背景及时间尺度、已知与新增信息、证据缺口、预算和输出路径；分析性问题同时给context.md路径，不只给实体名。优先找会区分解释的观察：同一观察在两种解释下应有不同结果；共同预测不能当作区分证据。来源资格与相关性分开；同一原始公告的转载只计一个origin。相关低热度线索、重要反证不得被点赞榜挤掉。保留未入选候选与理由。
++给子Agent问题契约、research_design、带id的候选解释、各检验的不同预测、test_ids对应查询、选中的背景及时间尺度、已知与新增信息、证据缺口、预算和输出路径；分析性问题同时给context.md路径，涉及研究价值给research-value.md路径及具体的分歧/催化/空间缺口，更新给旧触发id、signal、by与原条件，不只给实体名。优先找会区分解释的观察：同一观察在两种解释下应有不同结果；共同预测不能当作区分证据。来源资格与相关性分开；同一原始公告的转载只计一个origin。相关低热度线索、重要反证不得被点赞榜挤掉。保留未入选候选与理由。
+ 
+ 合并为sources.json，按片段分配稳定S编号，补齐selection理由、原文quote/locator、日期、origin与支持用途。
+ 
+@@ -93,7 +93,7 @@
+ 
+ ## 3. 形成判断与可复算连接
+ 
+-主研究者先回答问题，再选择最有信息价值的发现。每项说明相对于原文、比较基准或旧判断增加了什么：事实、计算、连接、矛盾或判断更新。读[memo-template.md](references/memo-template.md)。
++主研究者先回答问题，再选择最有信息价值的发现。每项说明相对于原文、比较基准或旧判断增加了什么：事实、计算、连接、矛盾或判断更新；链接数量与热度不等于增量。交易相关的新研究必须按[research-value.md](references/research-value.md)形成report.opportunity v1（脚本保持可选扩展以兼容旧报告），给出有理由的research_now / watch / priced_in / no_edge；多个候选给优先顺序。research_now解释近期为什么值得研究，不是交易指令。正文把机会判断嵌入开头、驱动及后续观察，详情放附录，不机械铺成八栏目。读[memo-template.md](references/memo-template.md)。
+ 
+ 将重要分析写入schema_version=2 claims.json：source_id引用来源；inference通过basis连接已有claims。区分观察、计算、归因和情景假设，不运行来源文本表达式。
+ 
+@@ -101,7 +101,7 @@
+ 
+ 数值连接使用`analysis_models.py`的固定compute_model：operating_bridge / free_cash_flow / dcf / reverse_dcf。每项输入写value、规范unit、role（observed / assumption）、claim_ids；observed引fact / price / consensus，assumption引inference / view，并在模型wrapper的assumptions中逐输入说明理由。金额unit用currency，币种、金额及股数同一缩放、期间、范围分别写wrapper.currency / scale / period / scope；每个spec必须有单参数sensitivity，至少一个参数且至少两个不同取值。reverse_dcf的wrapper还须有instrument（如NVDA）；price输入value、wrapper币种对应的每股报价单位（如USD/share）、instrument须与所引sources.market_quote的value / unit / instrument精确一致。先执行`python3 "$TY_DIR/scripts/analysis_models.py" "$WORK/model-spec.json"`，成功后将stdout的result对象原样冻结到`report.analysis.models[].result`，不要复制外层passed，也不能以手算结果冒充重算验证。模型wrapper的output_claim_ids均指向inference，其basis覆盖全部输入claims。operating_outlook需经营桥或现金流模型，valuation需reverse_dcf；输入缺失则model_status=missing并写model_reason，不编造输入。其他问题可说明不适用；models与model_status须一致，所有状态都写model_reason。固定算术不保证经济假设或因果成立。
+ 
+-price_relevance=true必须记录market.status=assessed或missing。assessed引用带时刻的price claim，并写implied_expectation / research_expectation / gap / conditions、reason、claim_ids与model_ids；claim_ids须包含所有关联模型的output_claim_ids。valuation还须关联reverse_dcf模型及价格。缺价格或隐含预期证据则missing，reason明确缺口，claim_ids / model_ids为空并披露其对判断的影响。经营、人物等非价格问题可price_relevance=false，以market.status=not_applicable及reason解释；不因提到公司就强行估值。完整字段及可运行示例见[analysis-methods.md](references/analysis-methods.md)。
++price_relevance=true必须记录market.status=assessed或missing。assessed引用带时刻的price claim，并写implied_expectation / research_expectation / gap / conditions、reason、claim_ids与model_ids；claim_ids须包含所有关联模型的output_claim_ids。valuation还须关联reverse_dcf模型及价格。缺价格或隐含预期证据则missing，reason明确缺口，claim_ids / model_ids为空并披露其对判断的影响。经营、人物等非价格问题可price_relevance=false，以market.status=not_applicable及reason解释；不因提到公司就强行估值。完整字段及可运行示例见[analysis-methods.md](references/analysis-methods.md)。研究者可按research-value.md用proxy推断市场基准，但须明确代理范围与推导，重要判断入inference及basis；market_view.basis为proxy至少引用inference，consensus至少引用consensus，price_implied同时引用price与inference。不伪装共识、不以proxy放松market.assessed约束：市场缺数据仍missing，可在独立opportunity中表达有据条件倾向，不能宣称已验证错价或已定价。空间与失败代价可定性，不强制精确概率或编数字。
+ 
+ ```bash
+ python3 "$TY_DIR/scripts/check_claims.py" "$WORK/claims.json" --sources "$WORK/sources.json" --json
+@@ -111,7 +111,7 @@
+ 
+ ## 4. 审查会改变结论的问题
+ 
+-把问题、通过校验的材料、计算和草稿交red-team。它检查答题程度、真实增量、原文支持、口径、因果及最强竞争解释。只对会改变主判断的缺口做一轮预算内定向补查；新结论重入账、重校验。记录审查意见与处理，不整段转贴到用户报告。
++把问题、通过校验的材料、计算和草稿交red-team。它检查答题程度、真实增量、原文支持、口径、因果及最强竞争解释，并按research-value.md返回独立于analysis_checks的value_checks，核对分歧证据、催化时点、价格空间、排序、失败后果与触发。未核验不得写通过，修正应让判断更明确，不要求一律降为watch或更保守。只对会改变主判断的缺口做一轮预算内定向补查；新结论重入账、重校验。记录审查意见与处理，不整段转贴到用户报告。
+ 
+ ## 5. 同源输出与不可覆盖归档
+ 
+@@ -135,6 +135,10 @@
+ 
+ 更新用同样完整新输入执行`research_run.py update ... --parent-run <run_id>`，report额外记录update.judgment_changed/reason、comparability.status/reason。先读结构diff，再由研究者解释经济意义；字段变化不自动等于判断变化。没有新发现用no_change_reason，不复制旧报告冒充更新。
+ 
++按[research-value.md](references/research-value.md)由旧触发、新证据及价格变化驱动更新。父run为trading机会时，新run必须保留trading opportunity及update.opportunity，可降为no_edge但不能静默丢弃；previous/current状态准确对应，全部旧trigger_id各恰好一次，旧触发原文和窗口冻结在旧run。hit / not_hit须证据，未检查写not_checked（可空引用），不能因没取到而判未触发；reason / price_move / remaining_edge用非空claim_ids支撑。解释方向与强弱是否变化、价格实际走过多少以及还剩什么优势，不能把机制增强等同机会增强。新触发在新run定义，失效与到期明确；无旧机会时建立新基准，不伪造对照。只读机会列表的使用与边界见参考，不代表后台监控。
++
++前瞻先在当轮plan / claims / report中冻结方向、幅度或定性范围、时点、机制、价格基准与失效/到期条件，再按原记录复盘；机制兑现与价格兑现分开，不事后重写旧判断。更新可选review位于update.opportunity内，若提供则direction / magnitude / timing / mechanism / price_realization五项非空文本须完整，区分未到期与已观察，不宣称自动验收收益。定性前瞻不强制概率登记，正式概率预测仍走下列旧流程。
++
+ ## 可选：登记预测
+ 
+ 只有用户要求预测/评分/复盘时进入[legacy-forecast.md](references/legacy-forecast.md)。市场基准、独立判断与旧账本概率分开。普通研究无需3个forecaster、无需写作者库；不能把复制市场价的登记当预测优势。若采用旧接口，生成独立schema1兼容输入与映射，不静默重判历史记录。
+--- before/skills/research/references/memo-template.md
++++ after/skills/research/references/memo-template.md
+@@ -79,6 +79,18 @@
+ 
+ comparability.status为comparable/mixed/not_comparable。结构diff是新增/修改/移除的ID与字段，不是自动语义分析。稳定ID有助对照，但同ID内容变更仍须解释。
+ 
++## 机会研究：判断、催化与剩余空间
++
++价格相关的新研究先读[research-value.md](research-value.md)，从同一证据账本冻结`report.opportunity.version=1`。先给有方向、有排序的判断，再解释市场押注与我们的分歧、证据优势、重估催化、剩余空间和做错代价。不因缺精确共识或收益数字放弃全部分析：有依据的代理估计标明proxy并引用inference；条件判断不冒充已验证的预期差。现有analysis.market的严格要求不变。
++
++机会状态使用research_now / watch / priced_in / no_edge。正文概括机会吸引力与最关键理由，完整比较和触发放附录；findings按对判断的影响排序，不按来源或热度排序。非交易问题可省略机会扩展，或用`{version: 1, applicability: "not_applicable", reason: "具体原因"}`，无需为了填表强行产生交易信号。
++
++`opportunity`交易字段：market_view（text、basis、claim_ids）、variant / edge / payoff（text、claim_ids）、catalyst（text、by、claim_ids）、assessment（status、text、claim_ids）、triggers（id、signal、by、claim_ids、supports_if、weakens_if、invalidates_if）。payoff同时解释剩余空间与做错代价；没有数值依据时定性说明，不能凭空写目标价。每个重要推断入claims。完整示例与校验条件见研究价值参考。
++
++更新父报告有交易机会时，须保留opportunity并增加update.opportunity：previous_status / current_status / thesis_change / reason / price_move / remaining_edge / claim_ids / trigger_results。结果覆盖每个父trigger恰好一次，使用原trigger_id，status=hit / not_hit / not_checked，observation写实际观察或未检查原因；前两者须证据引用，not_checked的claim_ids可空。current_status必须等于本轮assessment，previous_status必须等于父报告冻结状态。失效观点降为no_edge并说明，不能删除原判断逃避复盘。新触发可写本轮triggers，下次才作为待检验的事前条件。
++
++可选update.opportunity.review同时记录direction / magnitude / timing / mechanism / price_realization五项文字，未到期与未观察如实标记；经营逻辑兑现与价格收益兑现分别评价，不把修改后的观点当作原先预测。机会档案与复盘是研究记录，不是自动交易或统计回测。
++
+ ## 渲染与归档
+ 
+ ```bash

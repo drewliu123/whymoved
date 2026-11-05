@@ -1,0 +1,41 @@
+{
+  "tool": "edgar_filing",
+  "arguments": {
+    "identifier": "NVDA",
+    "form": "10-Q",
+    "detail": "standard"
+  },
+  "retrieved_at": "2026-11-02T09:19:49.793263+00:00",
+  "raw_mcp": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"data\": {\n    \"accession_number\": \"0001045810-26-000075\",\n    \"form\": \"10-Q\",\n    \"company\": \"NVIDIA CORP\",\n    \"filed\": \"2026-08-26\",\n    \"source\": \"data_object\",\n    \"context\": \"TENQ: NVIDIA CORP Quarterly Report\\n\\nPeriod: 2026-07-26\\nFiled: 2026-08-26\\nForm: 10-Q\\nCIK: 0001045810\\n\\nFINANCIALS:\\n  Revenue: $96.2B\\n  Net Income: $59.7B\\n  Total Assets: $320.3B\\n  Operating Income: $63.7B\\n\\nSECTIONS:\\n  Part I, Item 1, Part I, Item 2, Part I, Item 3, Part I, Item 4, Part II, Item 1, Part II, Item 1A, Part II, Item 2, Part II, Item 5, Part II, Item 6\\n\\nAVAILABLE ACTIONS:\\n  .financials              XBRL financial statements\\n  .income_statement        Income statement\\n  .balance_sheet           Balance sheet\\n  .cash_flow_statement     Cash flow statement\\n  .notes                   Notes to financial statements\\n  .items                   All available section items\\n  .document                Parsed HTML document\",\n    \"data_object_type\": \"TenQ\"\n  },\n  \"next_steps\": [\n    \"Filing parsed as TenQ \\u2014 see AVAILABLE ACTIONS in context\",\n    \"Use edgar_read to extract section text (risk_factors, mda, business, etc.)\",\n    \"Use edgar_company for full company profile\"\n  ]\n}",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  },
+  "parsed": [
+    {
+      "success": true,
+      "data": {
+        "accession_number": "0001045810-26-000075",
+        "form": "10-Q",
+        "company": "NVIDIA CORP",
+        "filed": "2026-08-26",
+        "source": "data_object",
+        "context": "TENQ: NVIDIA CORP Quarterly Report\n\nPeriod: 2026-07-26\nFiled: 2026-08-26\nForm: 10-Q\nCIK: 0001045810\n\nFINANCIALS:\n  Revenue: $96.2B\n  Net Income: $59.7B\n  Total Assets: $320.3B\n  Operating Income: $63.7B\n\nSECTIONS:\n  Part I, Item 1, Part I, Item 2, Part I, Item 3, Part I, Item 4, Part II, Item 1, Part II, Item 1A, Part II, Item 2, Part II, Item 5, Part II, Item 6\n\nAVAILABLE ACTIONS:\n  .financials              XBRL financial statements\n  .income_statement        Income statement\n  .balance_sheet           Balance sheet\n  .cash_flow_statement     Cash flow statement\n  .notes                   Notes to financial statements\n  .items                   All available section items\n  .document                Parsed HTML document",
+        "data_object_type": "TenQ"
+      },
+      "next_steps": [
+        "Filing parsed as TenQ — see AVAILABLE ACTIONS in context",
+        "Use edgar_read to extract section text (risk_factors, mda, business, etc.)",
+        "Use edgar_company for full company profile"
+      ]
+    }
+  ]
+}

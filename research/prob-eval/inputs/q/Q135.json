@@ -1,0 +1,38 @@
+{
+ "qid": "Q135",
+ "question": "Will Core CPI MoM be 0.2% in July?",
+ "rules": "This is a market about the one-month percent change in the Consumer Price Index for All Urban Consumers excluding food and energy in July 2026 as reported by the Bureau of Labor Statistics.\n\nThis market will resolve to the one-month percentage change in the Consumer Price Index for All Urban Consumers excluding food and energy (Core CPI-U) in July 2026 according to the monthly Bureau of Labor Statistics (BLS) report (seasonally adjusted change from the preceding month).\n\nThe resolution source for this market will be the BLS Consumer Price Index report released for July 2026 (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled to be released on August 12, 2026, at 8:30 AM ET. Resolution of this market will take place upon release of the aforementioned data.\n\nNote: the resolution source for this market will be the official monthly BLS CPI news release, which reports core inflation (all items less food and energy) over 1-month periods to only one decimal point (e.g., 0.3%). Thus, this is the level of precision that will be used when resolving the market. For the avoidance of doubt, this market resolves on the core CPI figure — the all items index excluding food and ener",
+ "as_of": "2026-07-29",
+ "evidence": [
+  {
+   "id": "E1",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-07-14",
+   "excerpt": "The index for all items less food and energy was unchanged in June after rising 0.2 percent in May. The shelter index increased 0.1 percent over the month, the smallest one-month change reported for that index since January 2021. Motor vehicle insurance declined 2.0 percent, communication fell 1.5 percent, apparel declined 0.6 percent, and used cars and trucks fell 0.2 percent. Core CPI rose 2.6 percent over the past 12 months."
+  },
+  {
+   "id": "E2",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-06-10",
+   "excerpt": "The index for all items less food and energy rose 0.2 percent in May. Indexes that increased included communication, airline fares, medical care, personal care, and recreation; motor vehicle insurance, household furnishings and operations, and new vehicles were among the indexes that decreased. The core index rose 2.9 percent over the year, following a 2.8-percent increase over the 12 months ending April."
+  },
+  {
+   "id": "E3",
+   "publisher": "U.S. Bureau of Labor Statistics",
+   "published_at": "2026-05-12",
+   "excerpt": "Table 1 reports seasonally adjusted monthly increases in all items less food and energy of 0.2 percent in February, 0.2 percent in March, and 0.4 percent in April. The April core index was 2.8 percent above its year-earlier level. Services less energy services and commodities less food and energy commodities had respective relative importances of 60.349 percent and 19.002 percent."
+  },
+  {
+   "id": "E4",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "published_at": "2026-07-10",
+   "excerpt": "Measures of consumer price inflation moved up steadily over the remainder of 2025 amid signs that increases in tariffs on U.S. goods imports had pushed up domestic prices for some consumer goods. Measured inflation stepped up further in March as energy prices surged after the start of the Middle East conflict. Over the 12 months ending May, PCE prices rose 4.1 percent and core PCE prices rose 3.4 percent."
+  },
+  {
+   "id": "E5",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "published_at": "2026-07-29T14:00:00-04:00",
+   "excerpt": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. Economic activity was expanding at a solid pace despite elevated uncertainty owing in part to the conflict in the Middle East. Inflation remained elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks that had driven price increases in certain sectors, including energy."
+  }
+ ]
+}

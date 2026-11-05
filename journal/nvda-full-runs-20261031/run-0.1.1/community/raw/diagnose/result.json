@@ -1,0 +1,27 @@
+{
+  "phase": "diagnose",
+  "command": "/Users/frankzhang/.local/bin/python3.12 -I -B /Users/frankzhang/.claude/plugins/cache/last30days-skill/last30days/3.30.0/skills/last30days/scripts/last30days.py --diagnose --no-browser-cookies",
+  "environment_overrides": {
+    "HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/home",
+    "XDG_CONFIG_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/config",
+    "XDG_CACHE_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/cache",
+    "XDG_DATA_HOME": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/data",
+    "TMPDIR": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/tmp",
+    "LAST30DAYS_CONFIG_DIR": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/runtime/config",
+    "LAST30DAYS_MEMORY_DIR": "",
+    "LAST30DAYS_LIBRARY_CONTEXT": "off",
+    "LAST30DAYS_NATIVE_SEARCH": "1",
+    "LAST30DAYS_TRUST_PROJECT_CONFIG": "0",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "LAST30DAYS_REPORT_CACHE_TTL_SECONDS": "0"
+  },
+  "credential_config_read_only": "/Users/frankzhang/.config/last30days/.env",
+  "timeout_seconds": 45,
+  "started_at": "2026-10-31T12:22:57Z",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "timed_out": false,
+  "elapsed_seconds": 5.491,
+  "stdout": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/raw/diagnose/stdout.txt",
+  "stderr": "/Users/frankzhang/Desktop/投研助手/journal/nvda-full-runs-20261031/run-0.1.1/community/raw/diagnose/stderr.txt"
+}
