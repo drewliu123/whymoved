@@ -17,13 +17,14 @@ jobs:
       matrix:
         python-version: ['3.9', '3.11', '3.12']
     env:
-      TOUYAN_HOME: ${{ runner.temp }}/touyan-data
       PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Configure isolated research data
+        run: echo "TOUYAN_HOME=$RUNNER_TEMP/touyan-data" >> "$GITHUB_ENV"
       - name: Verify frozen example file hashes
         run: |
           python - <<'PY'
