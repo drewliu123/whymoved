@@ -63,4 +63,4 @@ python3 scripts/render_report.py examples/msft-cashflow/research/work/report.jso
 
 先阅读改动的最终 diff，确认文档从实际 clone 目录可执行、链接目标存在、生成输出没有混入无关变更。运行与改动相应的测试及离线示例检查，记录 Python 版本、执行结果及未验证范围。协议、schema 或固定模型变化应加入能验证行为的回归测试；纯文字修订通常只需链接和命令核对。
 
-如果修改插件源码，需要在 Claude Code 中更新本地市场与已安装插件并开启新会话才能验证宿主效果，详见 [更新说明](installation.md#更新已安装副本)。其他 coding agent 可执行通用协议和 CLI，不应据此宣称其插件已经适配。
+修改源码后，需按宿主的插件或 Skill 加载机制更新副本，再验证实际工具与权限；Claude Code 的市场更新命令见[更新说明](installation.md#更新已安装副本)，Codex、DeepSeek Harness 等加载路径见[兼容说明](installation.md#其他-coding-agent-的加载方式)。离线CLI通过、插件被识别与完整研究执行是不同的验证层次。

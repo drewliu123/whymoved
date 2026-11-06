@@ -1,6 +1,6 @@
 # 安装与首次运行
 
-投研助手的主宿主是 **Claude Code**。核心 Python CLI 要求 Python 3.9+，仅使用标准库，无需先执行 `pip install`。阅读已生成的离线示例不需要 Claude Code、API Key 或 SEC 运行时。以下终端命令使用 macOS / Linux 的 POSIX shell。
+投研助手面向支持相应插件或 Skill 加载机制的 **Coding Agent**。本页先给出 Claude Code 的完整安装示例，再说明 Codex 与 DeepSeek Harness 等客户端的加载方式。核心 Python CLI 要求 Python 3.9+，仅使用标准库；阅读离线示例无需模型凭据或 SEC 运行时。以下终端命令使用 macOS / Linux 的 POSIX shell。
 
 ## 获取源码并指定数据目录
 
@@ -65,7 +65,34 @@ claude
 /touyan:research 微软现金流增长由哪些因素驱动？先核对官方披露与比较期间
 ```
 
-自然语言研究依赖 Claude Code 的模型、可用检索工具和相应账户权限。其他 coding agent 可以阅读 [研究协议](../skills/research/SKILL.md)或运行 Python CLI，但这不代表已适配它们的插件加载、命令注册、子代理或权限机制。
+自然语言研究依赖宿主的模型、可用检索工具和相应账户权限；上面的 `/touyan:research` 是 Claude Code 中的命名空间调用示例。
+
+## 其他 Coding Agent 的加载方式
+
+### Codex：使用兼容的插件市场入口
+
+具备 `plugin` 命令的 Codex 版本提供以下入口，在实际克隆目录执行：
+
+```bash
+codex plugin marketplace add "$TOUYAN_ROOT"
+codex plugin add touyan@touyan-local
+```
+
+命令语法已按本机 `codex plugin --help`、`codex plugin marketplace add --help` 和 `codex plugin add --help` 核对；Codex 公开实现支持读取 `.claude-plugin/marketplace.json`，也包含 Claude Code 格式插件清单的兼容处理。参见[市场加载实现](https://github.com/openai/codex/blob/main/codex-rs/core-plugins/src/marketplace.rs)及[插件清单实现](https://github.com/openai/codex/blob/main/codex-rs/core-plugins/src/manifest.rs)。
+
+本轮核对的是命令和清单格式，没有替用户执行安装或完整模型调用。安装后按客户端确认 Skill 已加载，并核对网页工具、终端、子 Agent 与权限的映射；不要将不同客户端的命令名称视为一致。
+
+### DeepSeek Harness：通过 Skill 加载机制使用
+
+DeepSeek Harness 的本地 Skill provider 支持自定义技能目录。使用该机制时，将完整仓库中的 `skills` 目录加入宿主的 Skill 搜索目录，并保留同一仓库的 `scripts`、`agents` 和参考文档。该方式是加载研究 Skill，不是把本仓库当成 TypeScript / npm 原生扩展安装。
+
+本例曾由 DeepSeek Harness 会话 Agent 按研究协议执行，调用项目脚本完成核验与输出；这不等同于已替所有版本完成一键插件安装测试。具体配置入口以客户端版本为准。
+
+### 其他支持 Skill 的客户端
+
+也可以让具备文件、网页和终端工具的 Coding Agent 读取[研究 Skill](../skills/research/SKILL.md)，按协议调用完整仓库中的脚本。支持独立子 Agent 时加载对应[角色定义](../agents/)；缺少独立审查能力时应记录未执行，不能把同一 Agent 的自查标为独立复核。
+
+不要只复制孤立的 `SKILL.md`：正文按文件位置定位插件根，丢失相邻参考或仓库的 `scripts` 会导致路径失效。Skill加载、插件安装识别、工具映射及完整研究执行分别核对，不能只凭其中一步宣布全部兼容。
 
 ## 更新已安装副本
 

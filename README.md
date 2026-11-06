@@ -2,7 +2,7 @@
 
 把一个研究问题，推进到**有出处的判断、可复核的计算，以及下一项值得观察的变化**。
 
-这是个人研究项目，以插件化方式组织主研究、取证与独立审查 Agent。当前插件入口为 **Claude Code**，核心验证与报告脚本使用 Python 标准库；研究结果可保存为 Markdown / HTML，并在用户追问时继续更新。
+这是面向 **Coding Agent** 的个人研究项目，以插件化方式组织主研究、取证与独立审查。仓库包含研究 Skill、Python 工具及 Claude Code 兼容插件清单；下文以 Claude Code 示范安装，其他客户端可按其兼容插件或 Skill 机制加载。
 
 [![Core checks](https://github.com/drewliu123/whymoved/actions/workflows/tests.yml/badge.svg)](https://github.com/drewliu123/whymoved/actions/workflows/tests.yml)
 
@@ -39,9 +39,9 @@ cd whymoved
 
 打开 [案例展示页](examples/msft-cashflow/index.html)，或直接在 GitHub 阅读 [Markdown 报告](examples/msft-cashflow/research/work/report.md)。这一步不需要模型凭据、SEC 身份或金融数据 API。
 
-### 2. 在 Claude Code 中启用插件
+### 2. 安装到 Coding Agent（以 Claude Code 为例）
 
-需要支持插件的 Claude Code、可用模型，以及网页检索、文件和终端工具；核心脚本需要 Python 3.9+。在上述**实际克隆目录**执行：
+以下命令以支持插件的 Claude Code 示范；其他客户端见[兼容与加载方式](docs/installation.md#其他-coding-agent-的加载方式)。运行研究需要可用模型、网页检索、文件和终端工具，核心脚本需要 Python 3.9+。在上述**实际克隆目录**执行：
 
 ```bash
 export TOUYAN_HOME="$PWD/.local/touyan-data"
@@ -61,7 +61,7 @@ claude
 
 显式设置 `TOUYAN_HOME` 可将个人运行数据与源码、仓库示例分开。未设置时，旧脚本默认使用 `~/Desktop/投研助手`，保留这一行为用于兼容已有安装。完整设置、更新和可选接口见 **[安装指南](docs/installation.md)**。
 
-> 当前提供 Claude Code 插件安装入口。其他具备相应工具的 Agent 可参考研究协议和脚本，但没有将其视为已提供其他客户端的插件适配。
+> Claude Code 是一条安装示例，不是独占运行环境。兼容同一插件格式的客户端可按自己的入口安装；支持 Skill 的客户端也可加载研究 Skill，同时保持完整仓库路径和工具映射。插件能被识别、Skill能被加载与完整研究能运行，需要分别核对。
 
 ## Agent、Workflow 和工具怎样分工
 
