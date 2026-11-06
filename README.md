@@ -1,8 +1,10 @@
 # 投研助手 · Touyan
 
-把一个研究问题，推进到**有出处的判断、可复核的计算，以及下一项值得观察的变化**。
+从一个投研问题出发，**找到证据、看清分歧，形成有依据的判断**。
 
-这是面向 **Coding Agent** 的个人研究项目，以插件化方式组织主研究、取证与独立审查。仓库包含研究 Skill、Python 工具及 Claude Code 兼容插件清单；下文以 Claude Code 示范安装，其他客户端可按其兼容插件或 Skill 机制加载。
+投研助手为 **Coding Agent** 提供一套可延续的研究方法：围绕问题规划取证、比较解释、调用计算工具，再由独立审查梳理关键结论。报告连到原文，后续追问沿着已有证据和判断继续推进。
+
+仓库包含研究 Skill、Python 工具和兼容插件清单。你可以按所用客户端的插件或 Skill 机制加载；下文以 Claude Code 展示安装方式。
 
 [![Core checks](https://github.com/drewliu123/whymoved/actions/workflows/tests.yml/badge.svg)](https://github.com/drewliu123/whymoved/actions/workflows/tests.yml)
 
@@ -14,34 +16,34 @@
 
 ![微软真实案例的研究结果与现金流变化桥](examples/msft-cashflow/preview-compact.png)
 
-- **[直接阅读研究报告](examples/msft-cashflow/research/work/report.md)**：判断、发现、计算、来源和后续复核条件。
-- **[查看完整案例与复核方法](examples/msft-cashflow/README.md)**：冻结输入、官方表格、独立算术脚本和实际执行记录。
-- **[离线交互展示页](examples/msft-cashflow/index.html)**：下载后用浏览器打开，可切换研究结果、证据、运行说明和完整原报告。GitHub 默认显示 HTML 源码，不将这个链接当作在线应用。
+- **[直接阅读研究报告](examples/msft-cashflow/research/work/report.md)**：先看判断和发现，再追溯计算与来源。
+- **[查看完整案例](examples/msft-cashflow/README.md)**：研究输入、官方表格、独立算术脚本和运行记录。
+- **[打开交互展示页](examples/msft-cashflow/index.html)**：下载后在浏览器查看研究结果、证据与计算、完整报告。
 
-这是 2026-11-06 新运行的**历史财报案例**，比较 FY2024 与 FY2025，不代表最新经营或股价判断。取证与研究由宿主 Agent 执行，项目脚本负责校验、输出与归档；案例中透明算术由独立脚本复算，不强套口径不同的 FCFF 模型。
+这次研究于 **2026-11-06** 完成，比较微软 **FY2024 与 FY2025** 的官方披露。报告把分散的财务指标连成一条现金流变化桥，并给出后续更新时值得继续核对的变量。
 
-## 它适合解决什么问题
+## 用它研究什么
 
-- **解释变化**：公司为什么下跌？先比较实际表现、背景与新增证据，而不只拼接新闻。
-- **梳理经营传导**：AI 用电增长如何进入设备公司的订单、利润和现金？找出最值得核查的环节。
-- **继续一项研究**：新披露是否改变原判断？保留旧结论，比较新增证据与判断变化。
+- **解释变化**：公司为什么下跌？比较实际表现、背景和新增证据，区分不同解释。
+- **梳理经营传导**：AI 用电增长如何进入设备公司的订单、利润和现金？找到值得深入核查的环节。
+- **延续已有判断**：新披露改变了什么？保留旧研究，对比新增证据、判断变化和下一步观察。
 
-与一次性问答相比，本项目把问题定义、证据引用、不同解释的检验、独立审查和版本记录组织成可复核的研究过程。报告先回答问题，再展示关键发现；完整证据与计算放在附录。
+每次研究围绕一个需要回答的问题展开。主研究 Agent 组织取证与分析，取证和审查 Agent 分工协作，工具展开计算与引用。你看到的是当前判断、重要发现和接下来该关注什么，完整底稿随报告保留。
 
 ## 快速开始
 
-### 1. 先看效果，无需配置数据接口
+### 1. 直接看研究效果
 
 ```bash
 git clone https://github.com/drewliu123/whymoved.git
 cd whymoved
 ```
 
-打开 [案例展示页](examples/msft-cashflow/index.html)，或直接在 GitHub 阅读 [Markdown 报告](examples/msft-cashflow/research/work/report.md)。这一步不需要模型凭据、SEC 身份或金融数据 API。
+在浏览器打开 [案例展示页](examples/msft-cashflow/index.html)，或直接在 GitHub 阅读 [Markdown 报告](examples/msft-cashflow/research/work/report.md)。
 
 ### 2. 安装到 Coding Agent（以 Claude Code 为例）
 
-以下命令以支持插件的 Claude Code 示范；其他客户端见[兼容与加载方式](docs/installation.md#其他-coding-agent-的加载方式)。运行研究需要可用模型、网页检索、文件和终端工具，核心脚本需要 Python 3.9+。在上述**实际克隆目录**执行：
+准备支持插件的 Claude Code、可用模型、网页与终端工具，以及 Python 3.9+。在实际克隆目录执行：
 
 ```bash
 export TOUYAN_HOME="$PWD/.local/touyan-data"
@@ -59,32 +61,32 @@ claude
 /touyan:research update <run_id> 核对新增披露是否改变原判断
 ```
 
-显式设置 `TOUYAN_HOME` 可将个人运行数据与源码、仓库示例分开。未设置时，旧脚本默认使用 `~/Desktop/投研助手`，保留这一行为用于兼容已有安装。完整设置、更新和可选接口见 **[安装指南](docs/installation.md)**。
+使用 Codex、DeepSeek Harness 或其他客户端？查看 **[安装与加载方式](docs/installation.md#其他-coding-agent-的加载方式)**。
 
-> Claude Code 是一条安装示例，不是独占运行环境。兼容同一插件格式的客户端可按自己的入口安装；支持 Skill 的客户端也可加载研究 Skill，同时保持完整仓库路径和工具映射。插件能被识别、Skill能被加载与完整研究能运行，需要分别核对。
+`TOUYAN_HOME` 用于存放本机研究数据。数据目录、插件更新和可选接口的设置见[安装指南](docs/installation.md)。
 
-## Agent、Workflow 和工具怎样分工
+## 研究怎样组织
 
 | 层次 | 职责 |
 | --- | --- |
-| 主研究 Agent | 界定用户要作的判断，选择方法，规划取证，连接事实并形成结论 |
-| 取证与审查 Agent | 按证据缺口检索、检查不同解释，独立复核主判断与原始问题是否一致 |
-| Workflow / 研究协议 | 规定计划、证据、主张、审查、报告和更新的连接要求，不替代经济判断 |
-| Python 工具 | 检查引用、时间、数据结构及分析契约；重算受支持的固定模型，渲染并冻结研究档案 |
-| 宿主客户端 | 提供模型、网页工具、终端和子 Agent 等执行能力；插件本身不包含模型权重 |
+| 主研究 Agent | 界定要作的判断，选择方法，规划取证，连接事实并形成结论 |
+| 取证与审查 Agent | 根据证据缺口检索、比较不同解释，独立复核主判断与原始问题 |
+| Workflow / 研究协议 | 连接研究计划、证据、主张、审查、报告和更新，保持过程可追溯 |
+| Python 工具 | 检查引用、时间和分析契约，重算固定财务模型，渲染并保存研究档案 |
+| 宿主客户端 | 提供模型、网页、文件、终端与子 Agent 等执行能力 |
 
-固定财务模型覆盖经营利润桥、自由现金流、DCF 和反向 DCF。自由公式只作透明记录；计算、原文含义和因果判断仍按各自口径复核。详细设计见 [架构说明](docs/architecture.md) 和 [分析方法](skills/research/references/analysis-methods.md)。
+固定模型覆盖经营利润桥、FCFF、DCF 和反向 DCF，并提供单参数敏感性比较。设计与计算口径见[架构说明](docs/architecture.md)和[分析方法](skills/research/references/analysis-methods.md)。
 
-## 数据接口按需启用
+## 按研究需要连接数据
 
-| 能力 | 最低条件与当前边界 |
+| 能力 | 如何启用 |
 | --- | --- |
-| 核心研究、证据校验、报告与归档 | Python 3.9+ 标准库；联网研究由宿主提供网页工具 |
-| SEC 原始披露 | 可选：独立 Python 3.11+、EdgarTools 5.62.1、用户本机的 SEC 联系身份；见 [设置步骤](docs/installation.md#可选sec-原始披露运行时) |
-| Financial Datasets | 可选：服务端授权与配额；公开无凭据探测曾返回 402，不将模拟响应测试当成真实授权取数成功 |
-| 社区材料 | 可选：复用 Last30Days 引擎；其平台可用性与依赖单独配置，失败、无结果与部分成功分别记录 |
+| 核心研究、证据校验、报告与归档 | Python 3.9+ 标准库，配合宿主的模型与网页工具 |
+| SEC 原始披露 | 配置独立运行时，以精确文件和原始报表开展取证；见[设置步骤](docs/installation.md#可选sec-原始披露运行时) |
+| Financial Datasets 适配器 | 对接财务报表与行情服务；账户授权与配置见[金融接口说明](skills/research/references/financial-data.md) |
+| 社区材料 | 通过 Last30Days 补充讨论、观点与反例；见[来源说明](skills/research/references/sources.md) |
 
-第三方 EdgarTools 源码以固定提交的子模块保留，便于追溯；普通离线示例与核心测试不要求下载它。如需查看第三方源码，再执行 `git submodule update --init --recursive`。
+第三方 EdgarTools 源码以固定提交的子模块保留。需要阅读时，执行 `git submodule update --init --recursive`。
 
 ## 验证与开发
 
@@ -92,21 +94,19 @@ claude
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
 ```
 
-[CI](.github/workflows/tests.yml) 覆盖核心离线测试与真实示例的算术、计划、来源、主张、分析契约和渲染检查；不把这些检查视为所有外部接口均已联网验证。重放示例与贡献方式见 **[开发指南](docs/development.md)**。
+[CI](.github/workflows/tests.yml) 在 Python 3.9、3.11 和 3.12 下检查核心测试、真实示例文件哈希、独立算术、研究契约及报告渲染。重放示例与参与开发见 **[开发指南](docs/development.md)**。
 
-本项目是研究辅助原型，不承诺预测收益或后台自动跟踪。严格校验能提高可复核性，不能自动证明来源语义、经济因果或投资优势。
-
-## 仓库导航
+## 继续探索
 
 | 入口 | 内容 |
 | --- | --- |
-| [真实示例](examples/msft-cashflow/README.md) | 从问题到判断、官方出处、计算与实际运行记录 |
-| [研究 Skill](skills/research/SKILL.md) / [Agent 定义](agents) / [脚本](scripts) | 插件核心与验证工具 |
+| [真实示例](examples/msft-cashflow/README.md) | 从问题到判断、官方出处、计算与运行记录 |
+| [研究 Skill](skills/research/SKILL.md) / [Agent 定义](agents) / [脚本](scripts) | 研究方法、协作角色与验证工具 |
 | [安装](docs/installation.md) / [架构](docs/architecture.md) / [开发与贡献](docs/development.md) | 运行、设计和维护说明 |
-| [研究资料索引](research/README.md) | 实验、方法比较、原始研究资料与第三方源码 |
-| [验证证据索引](evidence/README.md) | 真实取证、离线回归和各轮验收记录，分别标明范围 |
-| [研究档案索引](journal/README.md) | 不可覆盖的研究报告、历史验证与冻结工作稿 |
-| [历史导出](delivery/README.md) / [数据说明](data/README.md) | 保留的发布材料、运行数据和本机配置边界 |
-| [版本记录](CHANGELOG.md) / [档案策略](docs/archive-policy.md) | 版本演进及完整历史的保留方式 |
+| [研究资料](research/README.md) | 实验、方法比较、原始研究资料与第三方源码 |
+| [验证证据](evidence/README.md) | 取证、回归与各轮验收记录 |
+| [研究档案](journal/README.md) | 历次研究报告、判断变化与工作记录 |
+| [历史导出](delivery/README.md) / [数据说明](data/README.md) | 发布材料、运行数据与配置说明 |
+| [版本记录](CHANGELOG.md) / [档案策略](docs/archive-policy.md) | 版本演进与完整历史的保留方式 |
 
-完整研究过程和历史路径保留；运行缓存与本机配置不作为新安装的共享配置。第三方资料按其原许可使用；本项目代码采用 [MIT License](LICENSE)。
+研究过程和历史档案可从上表继续探索。项目代码采用 [MIT License](LICENSE)，第三方依赖与引用材料保留各自许可。
