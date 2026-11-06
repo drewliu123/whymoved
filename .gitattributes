@@ -1,0 +1,5 @@
+# These frozen evidence/report files contain verbatim table excerpts, including tabs.
+# Preserve their captured bytes rather than rewriting evidence for whitespace lint.
+examples/msft-cashflow/research/evidence/official-excerpts.txt -whitespace
+examples/msft-cashflow/research/work/report.html -whitespace
+examples/msft-cashflow/index.html -whitespace

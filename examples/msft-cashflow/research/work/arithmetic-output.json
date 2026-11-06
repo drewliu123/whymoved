@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "method": "Independent Python Decimal arithmetic parsed from official-tables.json, assertions on accounting bridge; not a semantic evidence review or project fixed-model recomputation.",
+  "input_unit": "USD millions; outflows positive",
+  "period": "Years ended June 30; columns FY2025 then FY2024 in original",
+  "inputs": {
+    "revenue": {
+      "FY2024": "245122",
+      "FY2025": "281724"
+    },
+    "cfo": {
+      "FY2024": "118548",
+      "FY2025": "136162"
+    },
+    "cash_capex_outflow": {
+      "FY2024": "44477",
+      "FY2025": "64551"
+    },
+    "cfi_net_outflow": {
+      "FY2024": "96970",
+      "FY2025": "72599"
+    },
+    "acquisition_intangible_other_outflow": {
+      "FY2024": "69132",
+      "FY2025": "5978"
+    }
+  },
+  "outputs": {
+    "fcf_FY2024": "74071",
+    "fcf_FY2025": "71611",
+    "delta_fcf": "-2460",
+    "revenue_growth_pct": "14.9321562324067199190607126247338060",
+    "fcf_growth_pct": "-3.32113782721982962292935156809007574",
+    "delta_cfo": "17614",
+    "delta_cash_capex": "20074",
+    "capex_increment_excess": "2460",
+    "delta_cfi_net_outflow": "-24371",
+    "delta_acquisition_intangible_other_outflow": "-63154",
+    "delta_other_investing_net_outflow": "18709",
+    "cfo_revenue_FY2024_pct": "48.3628560471928264292882727784531784",
+    "cfo_revenue_FY2025_pct": "48.3317005295963425196291405773026082",
+    "fcf_revenue_FY2024_pct": "30.2180138869624105547441682101157791",
+    "fcf_revenue_FY2025_pct": "25.4188496542715565589016200252729622"
+  },
+  "input_sha256": "f7fea5d2e96934612221f8f37f69c19b0216f9e578962208775c27f46f7a6011"
+}

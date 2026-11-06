@@ -1,0 +1,370 @@
+{
+  "as_of": "2026-11-06T14:23:37.833839Z",
+  "calculations": [
+    {
+      "claim_ids": [
+        "C6"
+      ],
+      "description": "FY2024 CFO-capex",
+      "formula": "118548-44477",
+      "id": "A1",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO24",
+          "unit": "百万美元",
+          "value": 118548
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 74071
+      }
+    },
+    {
+      "claim_ids": [
+        "C6"
+      ],
+      "description": "FY2025 CFO-capex",
+      "formula": "136162-64551",
+      "id": "A2",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO25",
+          "unit": "百万美元",
+          "value": 136162
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 71611
+      }
+    },
+    {
+      "claim_ids": [
+        "C6"
+      ],
+      "description": "收入同比百分比",
+      "formula": "(281724/245122-1)*100",
+      "id": "A3",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "revenue24",
+          "unit": "百万美元",
+          "value": 245122
+        },
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "revenue25",
+          "unit": "百万美元",
+          "value": 281724
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": 14.932156232406712
+      }
+    },
+    {
+      "claim_ids": [
+        "C6"
+      ],
+      "description": "FCF同比百分比",
+      "formula": "((136162-64551)/(118548-44477)-1)*100",
+      "id": "A4",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO24",
+          "unit": "百万美元",
+          "value": 118548
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO25",
+          "unit": "百万美元",
+          "value": 136162
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": -3.3211378272198333
+      }
+    },
+    {
+      "claim_ids": [
+        "C7"
+      ],
+      "description": "CFO增量",
+      "formula": "136162-118548",
+      "id": "A5",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO24",
+          "unit": "百万美元",
+          "value": 118548
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO25",
+          "unit": "百万美元",
+          "value": 136162
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 17614
+      }
+    },
+    {
+      "claim_ids": [
+        "C7"
+      ],
+      "description": "现金capex增量",
+      "formula": "64551-44477",
+      "id": "A6",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 20074
+      }
+    },
+    {
+      "claim_ids": [
+        "C7"
+      ],
+      "description": "FCF变化桥",
+      "formula": "(136162-118548)-(64551-44477)",
+      "id": "A7",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO24",
+          "unit": "百万美元",
+          "value": 118548
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO25",
+          "unit": "百万美元",
+          "value": 136162
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": -2460
+      }
+    },
+    {
+      "claim_ids": [
+        "C8"
+      ],
+      "description": "投资净流出变化（流出正值）",
+      "formula": "72599-96970",
+      "id": "A8",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFI24_outflow",
+          "unit": "百万美元",
+          "value": 96970
+        },
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFI25_outflow",
+          "unit": "百万美元",
+          "value": 72599
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": -24371
+      }
+    },
+    {
+      "claim_ids": [
+        "C8"
+      ],
+      "description": "收购及无形等流出变化（流出正值）",
+      "formula": "5978-69132",
+      "id": "A9",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "acquisition24",
+          "unit": "百万美元",
+          "value": 69132
+        },
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "acquisition25",
+          "unit": "百万美元",
+          "value": 5978
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": -63154
+      }
+    },
+    {
+      "claim_ids": [
+        "C8"
+      ],
+      "description": "其余投资项目净流出变化残差",
+      "formula": "(72599-96970)-(64551-44477)-(5978-69132)",
+      "id": "A10",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFI24",
+          "unit": "百万美元",
+          "value": 96970
+        },
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFI25",
+          "unit": "百万美元",
+          "value": 72599
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        },
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "acquisition24",
+          "unit": "百万美元",
+          "value": 69132
+        },
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "acquisition25",
+          "unit": "百万美元",
+          "value": 5978
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 18709
+      }
+    }
+  ],
+  "schema_version": 2
+}

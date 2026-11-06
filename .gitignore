@@ -9,3 +9,10 @@ research/edgartools-eval-venv/
 !.env.example
 *.pem
 *.key
+
+# Local execution state; frozen evidence and research archives stay tracked.
+/.local/
+/data/sec-runtime.json
+/data/sec-cache/
+/journal/work/
+/journal/tmp-*/

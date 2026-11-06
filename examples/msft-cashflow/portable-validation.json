@@ -1,0 +1,26 @@
+[
+  {
+    "tool": "research_plan.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"passed\": true,\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "tool": "sources.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"passed\": true,\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "tool": "check_claims.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"passed\": true,\n  \"total\": 10,\n  \"failures\": {}\n}\n",
+    "stderr": ""
+  },
+  {
+    "tool": "analysis_contract.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"passed\": true,\n  \"note\": \"Contracts and fixed arithmetic verified; economic meaning still needs review.\"\n}\n",
+    "stderr": ""
+  }
+]

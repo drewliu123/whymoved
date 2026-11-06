@@ -1,0 +1,79 @@
+{
+  "analysis_version": 1,
+  "as_of": "2026-11-06T14:23:37.833839Z",
+  "budget": {
+    "max_followups": 1,
+    "max_queries": 1
+  },
+  "comparison": {
+    "period": "FY2024 vs FY2025，均截至6月30日",
+    "scope": "微软合并报表；现金PPE增加支出取流出正值",
+    "unit": "百万美元；正文转换为十亿美元"
+  },
+  "decision_needed": "理解营收与CFO-capex方向背离的会计变化桥，并识别后续同口径观察。",
+  "entity": "Microsoft Corporation",
+  "historical": false,
+  "hypotheses": [
+    {
+      "discriminating_observation": "同口径deltaCapex大于deltaCFO，且CFO未下降。",
+      "explanation": "现金capex增量超过CFO增量，导致CFO-capex下降。",
+      "id": "H1"
+    },
+    {
+      "discriminating_observation": "同口径CFO同比下降，减少的CFO构成FCF下降主要贡献。",
+      "explanation": "CFO总额下滑是FCF下降主因。",
+      "id": "H2"
+    }
+  ],
+  "prior_judgment": "全新案例；用户给出待复算数字，未作为独立验证结论。",
+  "queries": [
+    {
+      "planning_timing": "post_retrieval",
+      "purpose": "在取证后整理的核对计划；复核Lead已取证原始表格并区分H1与H2，非预注册检索。",
+      "query": "Microsoft FY2025 annual report Total revenue Net cash from operations Additions to property and equipment Net cash used in investing",
+      "question": "收入、CFO、现金capex及投资现金流各自如何变化？",
+      "retrieved_at": "2026-11-06T14:14:24.369Z",
+      "source": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "status": "ok",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ],
+  "question": "微软FY2025营收增长，为什么按CFO减现金资本开支定义的自由现金流反而下降？",
+  "research_design": {
+    "baseline": "FY2024与FY2025截至6月30日完整财年、微软合并口径；金额百万美元，流出在分析中取正值。",
+    "discrimination_tests": [
+      {
+        "by": "本轮使用已保存官方证据核对",
+        "id": "T1",
+        "observe": "核对FY24/FY25 CFO与现金PPE支出，并计算两项同口径变化。",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "CFO上升但现金capex增加更多，deltaCFO减deltaCapex为负。"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "CFO同比减少，下降的CFO是FCF收缩的主要贡献。"
+          }
+        ],
+        "source": "Microsoft FY2025 annual report CASH FLOWS STATEMENTS"
+      }
+    ],
+    "mechanism_chain": [
+      "收入",
+      "经营活动现金流CFO",
+      "现金PPE资本开支",
+      "CFO减现金capex自由现金流"
+    ],
+    "method": "comparative_attribution",
+    "price_relevance": false,
+    "question_kind": "change_explanation",
+    "rationale": "现在回看两个完整财年，研究现金需求如何抵消经营现金增量；不研究价格、事前预期差或AI投资回报。已取得证据后整理查询计划，非预注册。"
+  },
+  "schema_version": 2,
+  "stop_condition": "官方同口径数字核对及独立算术完成，契约通过；独立review留待Lead。",
+  "task": "解释FY24至FY25经营现金流与现金资本开支变化",
+  "type": "asset"
+}

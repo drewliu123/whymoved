@@ -1,0 +1,410 @@
+[
+  {
+    "label": "build",
+    "started_at": "2026-11-06T14:23:37.800516+00:00",
+    "finished_at": "2026-11-06T14:23:37.840091+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$CASE_ROOT/research/work/build_case.py"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$CASE_ROOT/research/work/build_case.py'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\"created\": [\"plan.json\", \"sources-before-selection.json\", \"sources.json\", \"claims.json\", \"calculations.json\", \"report.json\", \"audit.json\"], \"as_of\": \"2026-11-06T14:23:37.833839Z\"}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/01-build.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/01-build.stderr.log"
+  },
+  {
+    "label": "route",
+    "started_at": "2026-11-06T14:23:37.840313+00:00",
+    "finished_at": "2026-11-06T14:23:37.882847+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/analysis_contract.py",
+      "route",
+      "change_explanation"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/analysis_contract.py' route change_explanation",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"question_kind\": \"change_explanation\",\n  \"method\": \"comparative_attribution\",\n  \"inputs\": [\n    \"performance_and_benchmark\",\n    \"event_timeline\",\n    \"prior_expectations\"\n  ],\n  \"test\": true,\n  \"models\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/02-route.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/02-route.stderr.log"
+  },
+  {
+    "label": "arithmetic",
+    "started_at": "2026-11-06T14:23:37.883064+00:00",
+    "finished_at": "2026-11-06T14:23:37.925314+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$CASE_ROOT/research/work/arithmetic.py"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$CASE_ROOT/research/work/arithmetic.py'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"status\": \"passed\",\n  \"method\": \"Independent Python Decimal arithmetic parsed from official-tables.json, assertions on accounting bridge; not a semantic evidence review or project fixed-model recomputation.\",\n  \"input_unit\": \"USD millions; outflows positive\",\n  \"period\": \"Years ended June 30; columns FY2025 then FY2024 in original\",\n  \"inputs\": {\n    \"revenue\": {\n      \"FY2024\": \"245122\",\n      \"FY2025\": \"281724\"\n    },\n    \"cfo\": {\n      \"FY2024\": \"118548\",\n      \"FY2025\": \"136162\"\n    },\n    \"cash_capex_outflow\": {\n      \"FY2024\": \"44477\",\n      \"FY2025\": \"64551\"\n    },\n    \"cfi_net_outflow\": {\n      \"FY2024\": \"96970\",\n      \"FY2025\": \"72599\"\n    },\n    \"acquisition_intangible_other_outflow\": {\n      \"FY2024\": \"69132\",\n      \"FY2025\": \"5978\"\n    }\n  },\n  \"outputs\": {\n    \"fcf_FY2024\": \"74071\",\n    \"fcf_FY2025\": \"71611\",\n    \"delta_fcf\": \"-2460\",\n    \"revenue_growth_pct\": \"14.9321562324067199190607126247338060\",\n    \"fcf_growth_pct\": \"-3.32113782721982962292935156809007574\",\n    \"delta_cfo\": \"17614\",\n    \"delta_cash_capex\": \"20074\",\n    \"capex_increment_excess\": \"2460\",\n    \"delta_cfi_net_outflow\": \"-24371\",\n    \"delta_acquisition_intangible_other_outflow\": \"-63154\",\n    \"delta_other_investing_net_outflow\": \"18709\",\n    \"cfo_revenue_FY2024_pct\": \"48.3628560471928264292882727784531784\",\n    \"cfo_revenue_FY2025_pct\": \"48.3317005295963425196291405773026082\",\n    \"fcf_revenue_FY2024_pct\": \"30.2180138869624105547441682101157791\",\n    \"fcf_revenue_FY2025_pct\": \"25.4188496542715565589016200252729622\"\n  },\n  \"input_sha256\": \"f7fea5d2e96934612221f8f37f69c19b0216f9e578962208775c27f46f7a6011\"\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/03-arithmetic.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/03-arithmetic.stderr.log"
+  },
+  {
+    "label": "plan",
+    "started_at": "2026-11-06T14:23:37.925579+00:00",
+    "finished_at": "2026-11-06T14:23:37.962727+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/research_plan.py",
+      "$CASE_ROOT/research/work/plan.json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/research_plan.py' '$CASE_ROOT/research/work/plan.json'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"passed\": true,\n  \"errors\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/04-plan.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/04-plan.stderr.log"
+  },
+  {
+    "label": "sources",
+    "started_at": "2026-11-06T14:23:37.962993+00:00",
+    "finished_at": "2026-11-06T14:23:38.009669+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/sources.py",
+      "validate",
+      "$CASE_ROOT/research/work/sources.json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/sources.py' validate '$CASE_ROOT/research/work/sources.json'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"passed\": true,\n  \"errors\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/05-sources.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/05-sources.stderr.log"
+  },
+  {
+    "label": "claims",
+    "started_at": "2026-11-06T14:23:38.009995+00:00",
+    "finished_at": "2026-11-06T14:23:38.085447+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/check_claims.py",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json",
+      "--json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/check_claims.py' '$CASE_ROOT/research/work/claims.json' --sources '$CASE_ROOT/research/work/sources.json' --json",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"passed\": true,\n  \"total\": 10,\n  \"failures\": {}\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/06-claims.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/06-claims.stderr.log"
+  },
+  {
+    "label": "analysis-contract",
+    "started_at": "2026-11-06T14:23:38.085839+00:00",
+    "finished_at": "2026-11-06T14:23:38.141643+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/analysis_contract.py",
+      "check",
+      "--plan",
+      "$CASE_ROOT/research/work/plan.json",
+      "--report",
+      "$CASE_ROOT/research/work/report.json",
+      "--claims",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/analysis_contract.py' check --plan '$CASE_ROOT/research/work/plan.json' --report '$CASE_ROOT/research/work/report.json' --claims '$CASE_ROOT/research/work/claims.json' --sources '$CASE_ROOT/research/work/sources.json'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"passed\": true,\n  \"note\": \"Contracts and fixed arithmetic verified; economic meaning still needs review.\"\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/07-analysis-contract.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/07-analysis-contract.stderr.log"
+  },
+  {
+    "label": "render",
+    "started_at": "2026-11-06T14:23:38.142028+00:00",
+    "finished_at": "2026-11-06T14:23:38.198995+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/render_report.py",
+      "$CASE_ROOT/research/work/report.json",
+      "--claims",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json",
+      "--out-dir",
+      "$CASE_ROOT/research/work/preview"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/render_report.py' '$CASE_ROOT/research/work/report.json' --claims '$CASE_ROOT/research/work/claims.json' --sources '$CASE_ROOT/research/work/sources.json' --out-dir '$CASE_ROOT/research/work/preview'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\"written\": [\"$CASE_ROOT/research/work/preview/report.md\", \"$CASE_ROOT/research/work/preview/report.html\"]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/08-render.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/08-render.stderr.log"
+  },
+  {
+    "label": "source-selection",
+    "started_at": "2026-11-06T14:24:26.211372+00:00",
+    "finished_at": "2026-11-06T14:24:26.262132+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/sources.py",
+      "select",
+      "$CASE_ROOT/research/work/sources-before-selection.json",
+      "--out",
+      "$CASE_ROOT/research/work/selected-sources.json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/sources.py' select '$CASE_ROOT/research/work/sources-before-selection.json' --out '$CASE_ROOT/research/work/selected-sources.json'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\"out\": \"$CASE_ROOT/research/work/selected-sources.json\", \"candidates\": 4}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/09-source-selection.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/09-source-selection.stderr.log"
+  },
+  {
+    "label": "plan",
+    "started_at": "2026-11-06T14:24:26.262901+00:00",
+    "finished_at": "2026-11-06T14:24:26.300737+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/research_plan.py",
+      "$CASE_ROOT/research/work/plan.json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/research_plan.py' '$CASE_ROOT/research/work/plan.json'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"passed\": true,\n  \"errors\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/10-plan.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/10-plan.stderr.log"
+  },
+  {
+    "label": "sources",
+    "started_at": "2026-11-06T14:24:26.301463+00:00",
+    "finished_at": "2026-11-06T14:24:26.347210+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/sources.py",
+      "validate",
+      "$CASE_ROOT/research/work/sources.json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/sources.py' validate '$CASE_ROOT/research/work/sources.json'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"passed\": true,\n  \"errors\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/11-sources.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/11-sources.stderr.log"
+  },
+  {
+    "label": "claims",
+    "started_at": "2026-11-06T14:24:26.347652+00:00",
+    "finished_at": "2026-11-06T14:24:26.396122+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/check_claims.py",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json",
+      "--json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/check_claims.py' '$CASE_ROOT/research/work/claims.json' --sources '$CASE_ROOT/research/work/sources.json' --json",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"passed\": true,\n  \"total\": 10,\n  \"failures\": {}\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/12-claims.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/12-claims.stderr.log"
+  },
+  {
+    "label": "analysis-contract",
+    "started_at": "2026-11-06T14:24:26.396585+00:00",
+    "finished_at": "2026-11-06T14:24:26.451022+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/analysis_contract.py",
+      "check",
+      "--plan",
+      "$CASE_ROOT/research/work/plan.json",
+      "--report",
+      "$CASE_ROOT/research/work/report.json",
+      "--claims",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/analysis_contract.py' check --plan '$CASE_ROOT/research/work/plan.json' --report '$CASE_ROOT/research/work/report.json' --claims '$CASE_ROOT/research/work/claims.json' --sources '$CASE_ROOT/research/work/sources.json'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\n  \"passed\": true,\n  \"note\": \"Contracts and fixed arithmetic verified; economic meaning still needs review.\"\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/13-analysis-contract.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/13-analysis-contract.stderr.log"
+  },
+  {
+    "label": "render",
+    "started_at": "2026-11-06T14:24:26.451949+00:00",
+    "finished_at": "2026-11-06T14:24:26.507831+00:00",
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "$PROJECT_ROOT/scripts/render_report.py",
+      "$CASE_ROOT/research/work/report.json",
+      "--claims",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json",
+      "--out-dir",
+      "$CASE_ROOT/research/work/preview-final"
+    ],
+    "command": "PYTHONDONTWRITEBYTECODE=1 TOUYAN_HOME='$CASE_ROOT/research/isolated-home' /Library/Developer/CommandLineTools/usr/bin/python3 '$PROJECT_ROOT/scripts/render_report.py' '$CASE_ROOT/research/work/report.json' --claims '$CASE_ROOT/research/work/claims.json' --sources '$CASE_ROOT/research/work/sources.json' --out-dir '$CASE_ROOT/research/work/preview-final'",
+    "cwd": "$CASE_ROOT/research/work",
+    "stdout": "{\"written\": [\"$CASE_ROOT/research/work/preview-final/report.md\", \"$CASE_ROOT/research/work/preview-final/report.html\"]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "stdout_path": "$CASE_ROOT/research/work/logs/14-render.stdout.log",
+    "stderr_path": "$CASE_ROOT/research/work/logs/14-render.stderr.log"
+  },
+  {
+    "label": "plan-final",
+    "started_at": "2026-11-06T14:33:32.511499+00:00",
+    "finished_at": "2026-11-06T14:33:32.560142+00:00",
+    "argv": [
+      "python3",
+      "$PROJECT_ROOT/scripts/research_plan.py",
+      "$CASE_ROOT/research/work/plan.json"
+    ],
+    "stdout": "{\n  \"passed\": true,\n  \"errors\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  {
+    "label": "sources-final",
+    "started_at": "2026-11-06T14:33:32.561366+00:00",
+    "finished_at": "2026-11-06T14:33:32.616254+00:00",
+    "argv": [
+      "python3",
+      "$PROJECT_ROOT/scripts/sources.py",
+      "validate",
+      "$CASE_ROOT/research/work/sources.json"
+    ],
+    "stdout": "{\n  \"passed\": true,\n  \"errors\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  {
+    "label": "claims-final",
+    "started_at": "2026-11-06T14:33:32.617218+00:00",
+    "finished_at": "2026-11-06T14:33:32.674014+00:00",
+    "argv": [
+      "python3",
+      "$PROJECT_ROOT/scripts/check_claims.py",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json",
+      "--json"
+    ],
+    "stdout": "{\n  \"passed\": true,\n  \"total\": 10,\n  \"failures\": {}\n}\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  {
+    "label": "analysis-final",
+    "started_at": "2026-11-06T14:33:32.674928+00:00",
+    "finished_at": "2026-11-06T14:33:32.742612+00:00",
+    "argv": [
+      "python3",
+      "$PROJECT_ROOT/scripts/analysis_contract.py",
+      "check",
+      "--plan",
+      "$CASE_ROOT/research/work/plan.json",
+      "--report",
+      "$CASE_ROOT/research/work/report.json",
+      "--claims",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json"
+    ],
+    "stdout": "{\n  \"passed\": true,\n  \"note\": \"Contracts and fixed arithmetic verified; economic meaning still needs review.\"\n}\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  {
+    "label": "render-reviewed",
+    "started_at": "2026-11-06T14:33:32.743521+00:00",
+    "finished_at": "2026-11-06T14:33:32.803394+00:00",
+    "argv": [
+      "python3",
+      "$PROJECT_ROOT/scripts/render_report.py",
+      "$CASE_ROOT/research/work/report.json",
+      "--claims",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json",
+      "--out-dir",
+      "$CASE_ROOT/research/work/preview-reviewed"
+    ],
+    "stdout": "{\"written\": [\"$CASE_ROOT/research/work/preview-reviewed/report.md\", \"$CASE_ROOT/research/work/preview-reviewed/report.html\"]}\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  {
+    "label": "archive-reviewed",
+    "started_at": "2026-11-06T14:33:32.804849+00:00",
+    "finished_at": "2026-11-06T14:33:32.867108+00:00",
+    "argv": [
+      "python3",
+      "$PROJECT_ROOT/scripts/research_run.py",
+      "archive",
+      "--plan",
+      "$CASE_ROOT/research/work/plan.json",
+      "--report",
+      "$CASE_ROOT/research/work/report.json",
+      "--claims",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json",
+      "--audit",
+      "$CASE_ROOT/research/work/audit.json",
+      "--calculations",
+      "$CASE_ROOT/research/work/calculations.json"
+    ],
+    "stdout": "",
+    "stderr": "calculations document requires schema_version 2 and matching as_of\n",
+    "exit_code": 1
+  },
+  {
+    "label": "archive-reviewed-corrected",
+    "finished_at": "2026-11-06T14:34:22.593531+00:00",
+    "argv": [
+      "python3",
+      "$PROJECT_ROOT/scripts/research_run.py",
+      "archive",
+      "--plan",
+      "$CASE_ROOT/research/work/plan.json",
+      "--report",
+      "$CASE_ROOT/research/work/report.json",
+      "--claims",
+      "$CASE_ROOT/research/work/claims.json",
+      "--sources",
+      "$CASE_ROOT/research/work/sources.json",
+      "--audit",
+      "$CASE_ROOT/research/work/audit.json",
+      "--calculations",
+      "$CASE_ROOT/research/work/calculations.json"
+    ],
+    "stdout": "{\n  \"run_id\": \"R20261106T143422Z-a56d1e862f71\",\n  \"path\": \"$CASE_ROOT/research/isolated-home/journal/runs/R20261106T143422Z-a56d1e862f71\",\n  \"manifest\": {\n    \"schema_version\": 2,\n    \"run_id\": \"R20261106T143422Z-a56d1e862f71\",\n    \"created_at\": \"2026-11-06T14:34:22.583737Z\",\n    \"as_of\": \"2026-11-06T14:23:37.833839Z\",\n    \"files\": {\n      \"report.json\": \"91865e7ba3cd3016c7d788e9fa797c6c301b707c32d26d2f9d6d775cff9ba28d\",\n      \"claims.json\": \"d238a64b21e14e66b296a3d130b68ec0cd6bdbae4b84aa5589e8b71342aeb0fb\",\n      \"sources.json\": \"cf27e0dcab9f0849003f114200d11e4632db3c180c19bfa706dfa8bb983ffc03\",\n      \"plan.json\": \"9e53e696d2362894cf596e056059070501c041c54cb32c4d85b91848b9169119\",\n      \"report.md\": \"3443c1d40a30522d6973bc7fb74b3d6b9d1a6be1a07b402914a0aa674331a431\",\n      \"report.html\": \"119cba77b2b28b0a943c1a3edee43db6ad6b23d175615669b0ddb13d9ff73448\",\n      \"calculations.json\": \"f1e19c25a620b8c4a38a3bb36cb217f1fb01556923876e7977ac3d607e356947\",\n      \"audit.json\": \"ca96b4453de7556a0f1cb7991c084633a46a0a250727c8f8f353dd41e458a719\"\n    },\n    \"audit_role\": \"untrusted_metadata\",\n    \"parent_run\": null,\n    \"parent_manifest_sha256\": null\n  },\n  \"diff\": null\n}\n",
+    "stderr": "",
+    "exit_code": 0
+  }
+]

@@ -1,0 +1,154 @@
+{
+  "as_of": "2026-11-06T14:23:37.833839Z",
+  "candidates": [
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "evidence_kind": "document",
+      "id": "S1",
+      "locator": "官方年报DOM文本 lines 1133-1145; table 15 (official-tables.json index)",
+      "origin_basis": "同一Microsoft FY2025官方年报，片段共享一个原始出处，不计独立来源。",
+      "origin_id": "microsoft-fy2025-annual-report",
+      "provenance": {
+        "captured_sha256": "a5d7bbb163c91de9c84ec13bcb8b406898164443fd7da3389ee6c0226784cb18",
+        "download_metadata": "research/evidence/download.json",
+        "local_text": "research/evidence/official-excerpts.txt",
+        "method": "ego-browser DOM capture of official annual report",
+        "hash_target": "captured_sha256 identifies the original full HTML DOM snapshot; this portable package contains the quoted excerpts and tables, not that full snapshot"
+      },
+      "published_at": "unknown",
+      "publisher": "Microsoft",
+      "quote": "INCOME STATEMENTS\n(In millions, except per share amounts)\nYear Ended June 30,\t2025\t\t2024\t\t2023\nRevenue:\t\t\t\t\t\nProduct\t\n$\n63,946\t\t\n$\n64,773\t\t\n$\n64,699\nService and other\t217,778\t\t180,349\t\t147,216\nTotal revenue\t281,724\t\t245,122\t\t211,915",
+      "retrieved_at": "2026-11-06T14:14:24.369Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "FY24/FY25收入",
+        "reason": "直接提供同一财年、单位与合并范围的原始行及表头。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "evidence_kind": "document",
+      "id": "S2",
+      "locator": "官方年报DOM文本 lines 1273-1299; table 18 (official-tables.json index)",
+      "origin_basis": "同一Microsoft FY2025官方年报，片段共享一个原始出处，不计独立来源。",
+      "origin_id": "microsoft-fy2025-annual-report",
+      "provenance": {
+        "captured_sha256": "a5d7bbb163c91de9c84ec13bcb8b406898164443fd7da3389ee6c0226784cb18",
+        "download_metadata": "research/evidence/download.json",
+        "local_text": "research/evidence/official-excerpts.txt",
+        "method": "ego-browser DOM capture of official annual report",
+        "hash_target": "captured_sha256 identifies the original full HTML DOM snapshot; this portable package contains the quoted excerpts and tables, not that full snapshot"
+      },
+      "published_at": "unknown",
+      "publisher": "Microsoft",
+      "quote": "CASH FLOWS STATEMENTS\n(In millions)\nYear Ended June 30,\t2025\t\t2024\t\t2023\nOperations\t\t\t\t\t\nNet income\t\n$\n101,832\t\t\n$\n88,136\t\t\n$\n72,361\nAdjustments to reconcile net income to net cash from operations:\t\t\t\t\t\nDepreciation, amortization, and other\t34,153\t\t22,287\t\t13,861\nStock-based compensation expense\t11,974\t\t10,734\t\t9,611\nNet recognized losses on investments and derivatives\t609\t\t305\t\t196\nDeferred income taxes\t(7,056)\t\t(4,738)\t\t(6,059)\nChanges in operating assets and liabilities:\t\t\t\t\t\nAccounts receivable\t(10,581)\t\t(7,191)\t\t(4,087)\nInventories\t309\t\t1,284\t\t1,242\nOther current assets\t(3,044)\t\t(1,648)\t\t(1,991)\nOther long-term assets\t(2,950)\t\t(6,817)\t\t(2,833)\nAccounts payable\t569\t\t3,545\t\t(2,721)\nUnearned revenue\t5,438\t\t5,348\t\t5,535\nIncome taxes\t(38)\t\t1,687\t\t(358)\nOther current liabilities\t5,922\t\t4,867\t\t2,272\nOther long-term liabilities\t(975)\t\t749\t\t553\nNet cash from operations\t136,162\t\t118,548\t\t87,582",
+      "retrieved_at": "2026-11-06T14:14:24.369Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "FY24/FY25经营现金流",
+        "reason": "直接提供同一财年、单位与合并范围的原始行及表头。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "evidence_kind": "document",
+      "id": "S3",
+      "locator": "官方年报DOM文本 lines 1273-1275; table 18 (official-tables.json index)",
+      "origin_basis": "同一Microsoft FY2025官方年报，片段共享一个原始出处，不计独立来源。",
+      "origin_id": "microsoft-fy2025-annual-report",
+      "provenance": {
+        "captured_sha256": "a5d7bbb163c91de9c84ec13bcb8b406898164443fd7da3389ee6c0226784cb18",
+        "download_metadata": "research/evidence/download.json",
+        "local_text": "research/evidence/official-excerpts.txt",
+        "method": "ego-browser DOM capture of official annual report",
+        "hash_target": "captured_sha256 identifies the original full HTML DOM snapshot; this portable package contains the quoted excerpts and tables, not that full snapshot"
+      },
+      "published_at": "unknown",
+      "publisher": "Microsoft",
+      "quote": "CASH FLOWS STATEMENTS\n(In millions)\nYear Ended June 30,\t2025\t\t2024\t\t2023",
+      "retrieved_at": "2026-11-06T14:14:24.369Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "现金流表头与期间",
+        "reason": "直接提供同一财年、单位与合并范围的原始行及表头。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html"
+    },
+    {
+      "access_status": "ok",
+      "canonical_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "evidence_kind": "document",
+      "id": "S4",
+      "locator": "官方年报DOM文本 lines 1309-1316; table 18 (official-tables.json index)",
+      "origin_basis": "同一Microsoft FY2025官方年报，片段共享一个原始出处，不计独立来源。",
+      "origin_id": "microsoft-fy2025-annual-report",
+      "provenance": {
+        "captured_sha256": "a5d7bbb163c91de9c84ec13bcb8b406898164443fd7da3389ee6c0226784cb18",
+        "download_metadata": "research/evidence/download.json",
+        "local_text": "research/evidence/official-excerpts.txt",
+        "method": "ego-browser DOM capture of official annual report",
+        "hash_target": "captured_sha256 identifies the original full HTML DOM snapshot; this portable package contains the quoted excerpts and tables, not that full snapshot"
+      },
+      "published_at": "unknown",
+      "publisher": "Microsoft",
+      "quote": "CASH FLOWS STATEMENTS\n(In millions)\nYear Ended June 30,\t2025\t\t2024\t\t2023\nInvesting\t\t\t\t\t\nAdditions to property and equipment\t(64,551)\t\t(44,477)\t\t(28,107)\nAcquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets\t(5,978)\t\t(69,132)\t\t(1,670)\nPurchases of investments\t(29,775)\t\t(17,732)\t\t(37,651)\nMaturities of investments\t16,079\t\t24,775\t\t33,510\nSales of investments\t9,309\t\t10,894\t\t14,354\nOther, net\t2,317\t\t(1,298)\t\t(3,116)\nNet cash used in investing\t(72,599)\t\t(96,970)\t\t(22,680)",
+      "retrieved_at": "2026-11-06T14:14:24.369Z",
+      "selection": {
+        "priority": "decisive",
+        "purpose": "现金PPE支出、收购及无形等支出与投资净流出",
+        "reason": "直接提供同一财年、单位与合并范围的原始行及表头。",
+        "relevance": "direct",
+        "selected": true
+      },
+      "supports": [
+        "fact"
+      ],
+      "tier": "T0",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html"
+    }
+  ],
+  "historical": false,
+  "schema_version": 2,
+  "selection_summary": {
+    "method": "explicit semantic relevance, priority, then original engine rank; no engagement weighting",
+    "selected": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "source_status": {
+    "community": {
+      "reason": "本题为财报现金流算术归因，社区材料不增加同口径检验信息。",
+      "status": "not_run"
+    },
+    "official": {
+      "reason": "Lead通过ego-browser读取官方年报；本轮已读取保存全文、表格与真实下载元数据。",
+      "status": "ok"
+    }
+  }
+}

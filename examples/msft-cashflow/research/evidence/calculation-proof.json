@@ -1,0 +1,57 @@
+{
+  "source": {
+    "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+    "title": "Microsoft 2025 Annual Report",
+    "retrieved_at": "2026-11-06T14:14:24.369Z",
+    "method": "ego-browser DOM capture of official annual report",
+    "sha256": "a5d7bbb163c91de9c84ec13bcb8b406898164443fd7da3389ee6c0226784cb18"
+  },
+  "unit": "USD million",
+  "definition": "FCF = net cash from operations - cash additions to property and equipment; cash capex = positive outflow magnitude",
+  "rows": {
+    "revenue": {
+      "FY2025": 281724,
+      "FY2024": 245122,
+      "verbatim_row": "Total revenue\t281,724\t\t245,122\t\t211,915"
+    },
+    "cfo": {
+      "FY2025": 136162,
+      "FY2024": 118548,
+      "verbatim_row": "Net cash from operations\t136,162\t\t118,548\t\t87,582"
+    },
+    "cash_capex_original_signed_row": {
+      "FY2025": -64551,
+      "FY2024": -44477,
+      "verbatim_row": "Additions to property and equipment\t(64,551)\t\t(44,477)\t\t(28,107)"
+    },
+    "net_cash_used_in_investing": {
+      "FY2025": -72599,
+      "FY2024": -96970,
+      "verbatim_row": "Net cash used in investing\t(72,599)\t\t(96,970)\t\t(22,680)"
+    },
+    "acquisition_and_other_assets_outflow": {
+      "FY2025": -5978,
+      "FY2024": -69132,
+      "verbatim_row": "Acquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets\t(5,978)\t\t(69,132)\t\t(1,670)"
+    }
+  },
+  "cash_capex": {
+    "FY2024": 44477,
+    "FY2025": 64551
+  },
+  "free_cash_flow": {
+    "FY2024": 74071,
+    "FY2025": 71611
+  },
+  "delta_cfo": 17614,
+  "delta_cash_capex": 20074,
+  "delta_fcf": -2460,
+  "revenue_growth_percent": "14.93215623240671991906071260",
+  "fcf_growth_percent": "-3.321137827219829622929351570",
+  "cash_conversion_percent": {
+    "FY2024": "48.36285604719282642928827278",
+    "FY2025": "48.33170052959634251962914058"
+  },
+  "assertion": "deltaFCF = deltaCFO - deltaCashCapex; verified by Python integer arithmetic",
+  "tool_boundary": "This independent arithmetic check is separate from the project calculation-record schema checker; the project fixed FCFF model is not used."
+}
