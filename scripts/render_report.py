@@ -128,6 +128,7 @@ def validate_report(report, ledger, sources=None):
         refs(answer, "answer")
     shapes = {"findings": ("title", "text", "why_it_matters"), "alternatives": ("title", "text"),
               "watch": ("signal", "meaning"), "limitations": ("text",), "tables": ("title",)}
+    table_refs, table_ids = set(), set()
     for field, texts in shapes.items():
         items = report.get(field)
         if not isinstance(items, list):
@@ -146,6 +147,14 @@ def validate_report(report, ledger, sources=None):
                 inc = item.get("increment")
                 if not isinstance(inc, dict) or not isinstance(inc.get("kind"), str) or inc.get("kind") not in INCREMENTS or not all(_text(inc.get(k)) for k in ("baseline", "detail")):
                     errors.append(path + ".increment requires kind, baseline and detail")
+                if "table_ids" in item:
+                    links = item.get("table_ids")
+                    if not isinstance(links, list) or not links or any(not isinstance(tid, str) or not _text(tid) for tid in links):
+                        errors.append(path + ".table_ids must be a nonempty table id list")
+                    elif len(set(links)) != len(links):
+                        errors.append(path + ".table_ids contains duplicates")
+                    else:
+                        table_refs.update(links)
             elif field == "limitations" and not isinstance(item.get("material"), bool):
                 errors.append(path + ".material must be boolean")
             elif field == "tables":
@@ -156,6 +165,19 @@ def validate_report(report, ledger, sources=None):
                     errors.append(path + ".rows must match columns with scalar finite values")
                 if "note" in item and not isinstance(item["note"], str):
                     errors.append(path + ".note must be text")
+                if "id" in item:
+                    tid = item.get("id")
+                    if not isinstance(tid, str) or not ID.fullmatch(tid) or tid in table_ids:
+                        errors.append(path + ".id must be a unique safe identifier")
+                    else:
+                        table_ids.add(tid)
+                if "units" in item:
+                    units = item.get("units")
+                    if not isinstance(units, list) or not isinstance(cols, list) or len(units) != len(cols) or not all(isinstance(unit, str) for unit in units):
+                        errors.append(path + ".units must be one text per column (empty means no unit)")
+    if table_refs - table_ids:
+        errors.append("finding.table_ids must reference a table with an id: " +
+                      ", ".join(sorted(table_refs - table_ids)))
     if report.get("findings") == [] and not _text(report.get("no_change_reason")):
         errors.append("empty findings requires no_change_reason")
     chart = report.get("chart")
@@ -386,6 +408,15 @@ def _str(value):
     return "—" if value is None else str(value)
 
 
+def _table_columns(table):
+    """Column labels, with an optional per-column unit appended in the header."""
+    columns = list(table["columns"])
+    units = table.get("units")
+    if isinstance(units, list) and len(units) == len(columns):
+        return [column + ("（" + unit + "）" if _text(unit) else "") for column, unit in zip(columns, units)]
+    return columns
+
+
 def _checked(report, ledger, sources):
     errors = validate_report(report, ledger, sources)
     if errors:
@@ -410,6 +441,9 @@ def _blocks(report, ledger, sources):
             yield ("p", "重要限制：" + limit["text"], limit["claim_ids"])
     if report.get("no_change_reason"):
         yield ("p", report["no_change_reason"])
+    tables_by_id = {table["id"]: table for table in report["tables"]
+                    if isinstance(table, dict) and isinstance(table.get("id"), str)}
+    referenced_tables = set()
     for finding in report["findings"]:
         yield ("h2", finding["title"])
         yield ("p", finding["text"], finding["claim_ids"])
@@ -417,6 +451,11 @@ def _blocks(report, ledger, sources):
         if "opportunity" not in report:
             yield ("p", "相较基线：" + finding["increment"]["baseline"])
             yield ("p", "研究增量（" + finding["increment"]["kind"] + "）：" + finding["increment"]["detail"])
+        for table_id in finding.get("table_ids", []):
+            table = tables_by_id.get(table_id)
+            if table is not None:
+                yield ("table", table)
+                referenced_tables.add(table_id)
     if report.get("analysis"):
         yield from _analysis_blocks(report["analysis"], answer_text=report["answer"]["text"])
     if report.get("valuation_summary"):
@@ -438,6 +477,8 @@ def _blocks(report, ledger, sources):
     if any(isinstance(item, dict) and item.get("op") for item in calculations):
         yield ("p", "标注 op 的计算式已由固定算子重算；未标注的仅记录公式，未经重算。")
     for table in report["tables"]:
+        if isinstance(table, dict) and table.get("id") in referenced_tables:
+            continue
         yield ("table", table)
     if report.get("chart"):
         c = report["chart"]
@@ -686,8 +727,9 @@ def render_markdown(report, ledger, sources=None):
             out.append(_md(value) + (" " + " ".join("[%s]" % _md(cid) for cid in block[2]) if len(block) > 2 else ""))
         elif kind == "table":
             out.append("### " + _md(value["title"]))
-            lines = ["| " + " | ".join(_md(c) for c in value["columns"]) + " |",
-                     "| " + " | ".join("---" for c in value["columns"]) + " |"]
+            columns = _table_columns(value)
+            lines = ["| " + " | ".join(_md(c) for c in columns) + " |",
+                     "| " + " | ".join("---" for c in columns) + " |"]
             lines.extend("| " + " | ".join(_md(c) for c in row) + " |" for row in value["rows"])
             out.append("\n".join(lines))
             out.append(" ".join("[%s]" % _md(cid) for cid in value["claim_ids"]))
@@ -762,7 +804,7 @@ def render_html(report, ledger, sources=None):
             out.append('<details id="audit"><summary>%s</summary>' % _h(value))
             audit = True
         elif kind == "table":
-            out.append('<div class="table-wrap"><table><caption>%s</caption><thead><tr>%s</tr></thead><tbody>' % (_h(value["title"]), "".join('<th scope="col">%s</th>' % _h(c) for c in value["columns"])))
+            out.append('<div class="table-wrap"><table><caption>%s</caption><thead><tr>%s</tr></thead><tbody>' % (_h(value["title"]), "".join('<th scope="col">%s</th>' % _h(c) for c in _table_columns(value))))
             out.extend('<tr>%s</tr>' % "".join('<td>%s</td>' % _h(c) for c in row) for row in value["rows"])
             out.append('</tbody></table>%s<p>%s</p></div>' % (_refs(value["claim_ids"]), _h(value.get("note", ""))))
         elif kind == "chart":

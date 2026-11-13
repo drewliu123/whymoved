@@ -37,6 +37,56 @@ def documents():
     return report, ledger, sources
 
 
+class BlockRenderTests(unittest.TestCase):
+    def document(self):
+        report, ledger, sources = documents()
+        report["tables"] = [
+            {"id": "T1", "title": "分部收入", "columns": ["分部", "收入"], "units": ["", "百万美元"],
+             "rows": [["云", 120], ["设备", 80]], "claim_ids": ["C1"]},
+            {"id": "T2", "title": "附注表", "columns": ["项目"], "rows": [["其他"]], "claim_ids": ["C1"]},
+        ]
+        report["findings"][0]["table_ids"] = ["T1"]
+        return report, ledger, sources
+
+    def test_validation_of_inline_tables_and_units(self):
+        report, ledger, sources = self.document()
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        cases = [
+            lambda r: r["findings"][0].update(table_ids=["T404"]),
+            lambda r: r["findings"][0].update(table_ids=[]),
+            lambda r: r["findings"][0].update(table_ids=["T1", "T1"]),
+            lambda r: r["findings"][0].update(table_ids=[1]),
+            lambda r: r["tables"][0].update(id="1bad"),
+            lambda r: r["tables"][1].update(id="T1"),
+            lambda r: r["tables"][0].update(units=["百万美元"]),
+            lambda r: r["tables"][0].update(units=[1, 2]),
+            lambda r: r["tables"][0].update(id=None),
+        ]
+        for mutate in cases:
+            report, ledger, sources = self.document()
+            mutate(report)
+            self.assertTrue(render_report.validate_report(report, ledger, sources), mutate)
+
+    def test_inline_table_renders_once_and_units_in_headers(self):
+        report, ledger, sources = self.document()
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(report, ledger, sources).replace("\\", "")
+            self.assertEqual(text.count("分部收入"), 1)
+            self.assertIn("收入（百万美元）", text)
+            self.assertIn("附注表", text)
+            self.assertLess(text.index("为什么重要"), text.index("分部收入"))
+            self.assertLess(text.index("分部收入"), text.index("附注表"))
+
+    def test_unreferenced_tables_keep_previous_order_and_output(self):
+        report, ledger, sources = documents()
+        report["tables"][0]["units"] = ["", "百万美元"]
+        markdown = render_report.render_markdown(report, ledger, sources)
+        self.assertIn("收入（百万美元）", markdown)
+        plain, ledger2, sources2 = documents()
+        before = render_report.render_markdown(plain, ledger2, sources2)
+        self.assertNotIn("（百万美元）", before)
+
+
 class Text(HTMLParser):
     def __init__(self):
         super().__init__()
