@@ -111,8 +111,8 @@
 
 ## P1-4 块级渲染 / IC memo 包
 
-- 状态：内联表格（Cycle 15）、多序列图表（Cycle 17）、一页纸 memo（Cycle 18）✅；`charts[]` 多图容器待认领
-- 遗留：一张报告里多张图。
+- 状态：✅ 全部完成（内联表格 Cycle 15、多序列 Cycle 17、一页纸 Cycle 18、多图 Cycle 19）
+- 遗留：柱状/瀑布图；多图共享坐标轴。
 - 方案：(a) findings 加 `table_ids` 内联；(b) `charts[]` 支持多序列与日期轴，同源数据表保留；(c) 列级 units；(d) `memo_pack`：一页判断 + variant + 估值汇总 + 催化 + 证伪条件。
 - 风险：`render_report.py` 是爆炸半径最大的文件；schema 变化需旧档案仍可渲染。
 
@@ -151,6 +151,7 @@
 
 ## 已完成
 
+- P1-4 块级渲染 / IC memo 包 — 2026-11-14，Cycle 15–19
 - P1-4c 一页式 IC memo — 2026-11-14，Cycle 18
 - P1-4b 多序列图表 — 2026-11-14，Cycle 17
 - P2-1 参考类事件研究 — 2026-11-14，Cycle 16

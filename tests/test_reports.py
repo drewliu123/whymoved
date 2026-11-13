@@ -142,6 +142,53 @@ class MultiSeriesChartTests(unittest.TestCase):
         self.assertNotIn("系列：", page)
 
 
+class ChartListTests(unittest.TestCase):
+    def chart(self, title, series=False):
+        if series:
+            return {"title": title, "x_label": "期间", "y_label": "值", "unit": "亿元", "claim_ids": ["C1"],
+                    "series": [{"name": "A", "rows": [{"label": "Q1", "value": 1}, {"label": "Q2", "value": 2}]},
+                               {"name": "B", "rows": [{"label": "Q1", "value": 2}, {"label": "Q2", "value": 1}]}]}
+        return {"title": title, "x_label": "期间", "y_label": "值", "unit": "亿元", "claim_ids": ["C1"],
+                "rows": [{"label": "Q1", "value": 1}, {"label": "Q2", "value": 2}]}
+
+    def document(self):
+        report, ledger, sources = documents()
+        report["charts"] = [self.chart("单序列"), self.chart("双序列", series=True)]
+        return report, ledger, sources
+
+    def test_validates_and_renders_each_chart(self):
+        report, ledger, sources = self.document()
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        self.assertEqual(page.count('<section class="chart">'), 2)
+        self.assertEqual(page.count("<polyline"), 3)
+        self.assertLess(page.index("单序列"), page.index("双序列"))
+        markdown = render_report.render_markdown(report, ledger, sources)
+        self.assertLess(markdown.index("单序列"), markdown.index("双序列"))
+        self.assertIn("| 期间 | 值（亿元） |", markdown)
+        self.assertIn("| 期间 | A（亿元） | B（亿元） |", markdown)
+
+    def test_negative_cases(self):
+        report, ledger, sources = self.document()
+        report["chart"] = self.chart("重复")
+        self.assertTrue(any("either chart or charts" in error
+                            for error in render_report.validate_report(report, ledger, sources)))
+        for patch in ({"charts": []}, {"charts": "nope"}, {"charts": [None]},
+                      {"charts": [{"title": "x"}]}, {"charts": [self.chart("x", series=True)]}):
+            report, ledger, sources = self.document()
+            report.update(patch)
+            if patch.get("charts") == [self.chart("x", series=True)]:
+                report["charts"][0]["series"][1]["rows"][0]["label"] = "Q9"
+            self.assertTrue(render_report.validate_report(report, ledger, sources), patch)
+
+    def test_single_chart_reports_still_valid(self):
+        report, ledger, sources = documents()
+        report["chart"] = self.chart("唯一")
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        self.assertEqual(page.count('<section class="chart">'), 1)
+
+
 class Text(HTMLParser):
     def __init__(self):
         super().__init__()

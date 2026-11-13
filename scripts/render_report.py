@@ -50,6 +50,53 @@ def safe_link(value):
     return quote(value, safe="/:?&=#%+~@!$*,-._")
 
 
+def _chart_errors(chart, path, refs):
+    """Validate one chart (single or multi-series); shared by chart and charts[]."""
+    errors = []
+    if not isinstance(chart, dict):
+        return [path + " must be an object"]
+    for key in ("title", "x_label", "y_label", "unit"):
+        if not _text(chart.get(key)):
+            errors.append(path + "." + key + " must be nonempty text")
+    if "series" in chart:
+        if "rows" in chart:
+            errors.append(path + " must use either rows or series, not both")
+        series = chart.get("series")
+        if not isinstance(series, list) or not series:
+            errors.append(path + ".series must be a nonempty list")
+        else:
+            labels = None
+            for n, item in enumerate(series):
+                item_path = "%s.series[%d]" % (path, n)
+                if not isinstance(item, dict):
+                    errors.append(item_path + " must be an object")
+                    continue
+                extra = set(item) - {"name", "rows"}
+                if extra:
+                    errors.append(item_path + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
+                if not _text(item.get("name")):
+                    errors.append(item_path + ".name must be nonempty text")
+                item_rows = item.get("rows")
+                if not isinstance(item_rows, list) or len(item_rows) < 2 or any(
+                        not isinstance(row, dict) or not _text(row.get("label")) or not _number(row.get("value"))
+                        for row in item_rows):
+                    errors.append(item_path + ".rows requires at least two label/finite numeric value pairs")
+                    continue
+                item_labels = [row["label"] for row in item_rows]
+                if labels is None:
+                    labels = item_labels
+                elif item_labels != labels:
+                    errors.append(item_path + ".rows must share the same labels as the first series")
+    else:
+        rows = chart.get("rows")
+        if not isinstance(rows, list) or len(rows) < 2 or any(not isinstance(row, dict) or not _text(row.get("label")) or not _number(row.get("value")) for row in rows):
+            errors.append(path + ".rows requires at least two label/finite numeric value pairs")
+    refs(chart, path)
+    if "note" in chart and not isinstance(chart["note"], str):
+        errors.append(path + ".note must be text")
+    return errors
+
+
 def validate_report(report, ledger, sources=None):
     """Check structure, dates, references and evidence validators; not semantic truth."""
     errors = []
@@ -180,50 +227,17 @@ def validate_report(report, ledger, sources=None):
                       ", ".join(sorted(table_refs - table_ids)))
     if report.get("findings") == [] and not _text(report.get("no_change_reason")):
         errors.append("empty findings requires no_change_reason")
-    chart = report.get("chart")
-    if chart is not None:
-        if not isinstance(chart, dict):
-            errors.append("chart must be an object")
+    if "chart" in report:
+        errors.extend(_chart_errors(report["chart"], "chart", refs))
+    if "charts" in report:
+        if "chart" in report:
+            errors.append("report must use either chart or charts, not both")
+        charts = report.get("charts")
+        if not isinstance(charts, list) or not charts:
+            errors.append("charts must be a nonempty list")
         else:
-            for key in ("title", "x_label", "y_label", "unit"):
-                if not _text(chart.get(key)):
-                    errors.append("chart." + key + " must be nonempty text")
-            if "series" in chart:
-                if "rows" in chart:
-                    errors.append("chart must use either rows or series, not both")
-                series = chart.get("series")
-                if not isinstance(series, list) or not series:
-                    errors.append("chart.series must be a nonempty list")
-                else:
-                    labels = None
-                    for n, item in enumerate(series):
-                        path = "chart.series[%d]" % n
-                        if not isinstance(item, dict):
-                            errors.append(path + " must be an object")
-                            continue
-                        extra = set(item) - {"name", "rows"}
-                        if extra:
-                            errors.append(path + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
-                        if not _text(item.get("name")):
-                            errors.append(path + ".name must be nonempty text")
-                        item_rows = item.get("rows")
-                        if not isinstance(item_rows, list) or len(item_rows) < 2 or any(
-                                not isinstance(row, dict) or not _text(row.get("label")) or not _number(row.get("value"))
-                                for row in item_rows):
-                            errors.append(path + ".rows requires at least two label/finite numeric value pairs")
-                            continue
-                        item_labels = [row["label"] for row in item_rows]
-                        if labels is None:
-                            labels = item_labels
-                        elif item_labels != labels:
-                            errors.append(path + ".rows must share the same labels as the first series")
-            else:
-                rows = chart.get("rows")
-                if not isinstance(rows, list) or len(rows) < 2 or any(not isinstance(row, dict) or not _text(row.get("label")) or not _number(row.get("value")) for row in rows):
-                    errors.append("chart.rows requires at least two label/finite numeric value pairs")
-            refs(chart, "chart")
-            if "note" in chart and not isinstance(chart["note"], str):
-                errors.append("chart.note must be text")
+            for n, item in enumerate(charts):
+                errors.extend(_chart_errors(item, "charts[%d]" % n, refs))
     if any(isinstance(c, dict) and not _text(c.get("text")) for c in claims):
         errors.append("claim text must be nonempty")
     calculations = report.get("calculations", [])
@@ -513,16 +527,10 @@ def _blocks(report, ledger, sources):
     if report.get("chart"):
         c = report["chart"]
         yield ("chart", c)
-        if "series" in c:
-            labels = [row["label"] for row in c["series"][0]["rows"]]
-            yield ("table", {"title": c["title"],
-                             "columns": [c["x_label"]] + [series["name"] + "（" + c["unit"] + "）" for series in c["series"]],
-                             "rows": [[label] + [series["rows"][index]["value"] for series in c["series"]]
-                                      for index, label in enumerate(labels)],
-                             "claim_ids": c["claim_ids"], "note": c.get("note", "")})
-        else:
-            yield ("table", {"title": c["title"], "columns": [c["x_label"], c["y_label"] + "（" + c["unit"] + "）"],
-                             "rows": [[r["label"], r["value"]] for r in c["rows"]], "claim_ids": c["claim_ids"], "note": c.get("note", "")})
+        yield ("table", _chart_table(c))
+    for c in report.get("charts", []):
+        yield ("chart", c)
+        yield ("table", _chart_table(c))
     for field, heading in (("alternatives", "其他解释"), ("watch", "接下来观察什么")):
         if report[field]:
             yield ("h2", heading)
@@ -803,6 +811,20 @@ def _h(value):
 
 def _refs(ids):
     return '<span class="refs">' + " ".join('<a href="#claim-%s">[%s]</a>' % (_h(cid), _h(cid)) for cid in ids) + "</span>"
+
+
+def _chart_table(c):
+    """Companion data table for one chart, generated from the same rows."""
+    if "series" in c:
+        labels = [row["label"] for row in c["series"][0]["rows"]]
+        return {"title": c["title"],
+                "columns": [c["x_label"]] + [series["name"] + "（" + c["unit"] + "）" for series in c["series"]],
+                "rows": [[label] + [series["rows"][index]["value"] for series in c["series"]]
+                         for index, label in enumerate(labels)],
+                "claim_ids": c["claim_ids"], "note": c.get("note", "")}
+    return {"title": c["title"], "columns": [c["x_label"], c["y_label"] + "（" + c["unit"] + "）"],
+            "rows": [[row["label"], row["value"]] for row in c["rows"]],
+            "claim_ids": c["claim_ids"], "note": c.get("note", "")}
 
 
 def _chart_series(chart):
