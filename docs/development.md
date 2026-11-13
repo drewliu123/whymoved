@@ -59,6 +59,19 @@ python3 scripts/render_report.py examples/msft-cashflow/research/work/report.jso
 
 真实 SEC 配置与虚拟环境属于本机环境，生成办法见 [SEC 运行时安装](installation.md#可选sec-原始披露运行时)。[配置结构示例](../data/sec-runtime.example.json)只展示占位路径，不能直接复制为可用配置。不要提交身份、API Key、本机绝对运行时路径、虚拟环境或缓存；测试不应读取用户真实身份或联网。
 
+## 新增能力的检查清单
+
+增加一个脚本、模型种类或契约字段时，按以下清单同步，缺一项就会出现「文档写了、校验不认」的第三种状态：
+
+1. **脚本**：docstring 写清输入、输出、边界与退出码（0 通过 / 1 输入不符合契约 / 2 无法读取）；错误用英文短句并带路径，不抛 traceback。
+2. **测试**：正例、负例、边界各至少一条；涉及渲染的加 Markdown 与 HTML 双格式断言；涉及归档的加 `archive`/`load` 往返。
+3. **契约**：可选字段必须向后兼容；旧档案保持可加载、可渲染；渲染变更用「字段存在才生效」的方式隔离，否则冻结示例哈希会失败。
+4. **参考文档**：在 `skills/research/references/` 增加或更新说明，并在 [索引](../skills/research/references/README.md) 登记。
+5. **入口表**：`docs/architecture.md` 的主代码入口表加一行。
+6. **版本与记录**：`CHANGELOG.md` 加条目；`.claude-plugin/plugin.json` 与 `marketplace.json` 版本同步（`tests/test_packaging.py` 会检查三者一致）；`docs/iteration/log.md` 记本轮目标、改动、验证证据与遗留。
+7. **回归**：`python3 -m unittest discover -s tests` 全绿；`examples/msft-cashflow/SHA256.json` 校验通过；冻结报告重新渲染逐字节相同。
+8. **不伪造**：缺失写 `missing`/`null` 并说明原因；cannot verify（例如缩放不可解析）与 error 分开处理。
+
 ## 提交前复查
 
 先阅读改动的最终 diff，确认文档从实际 clone 目录可执行、链接目标存在、生成输出没有混入无关变更。运行与改动相应的测试及离线示例检查，记录 Python 版本、执行结果及未验证范围。协议、schema 或固定模型变化应加入能验证行为的回归测试；纯文字修订通常只需链接和命令核对。

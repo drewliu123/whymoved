@@ -30,6 +30,20 @@
 
 每次研究围绕一个需要回答的问题展开。主研究 Agent 组织取证与分析，取证和审查 Agent 分工协作，工具展开计算与引用。你看到的是当前判断、重要发现和接下来该关注什么，完整底稿随报告保留。
 
+### 能力地图
+
+| 你会问的问题 | 用什么回答 | 参考 |
+| --- | --- | --- |
+| 这个价格贵不贵 | DCF、反向 DCF、可比公司倍数与分位、方法区间汇总 | [分析方法](skills/research/references/analysis-methods.md) |
+| 增长是现金还是会计 | 盈利质量筛查：利润率趋势、现金转化、应计、周转、资本开支、红旗 | [盈利质量](skills/research/references/financial-quality.md) |
+| 预期在上修还是下修 | 一致预期序列、修订方向与分歧；公司指引与分析师共识分开 | [预期取证](skills/research/references/expectations.md) |
+| 下一个会改变判断的事件是哪天 | 催化日历（upcoming / overdue / undated） | [催化日历](skills/research/references/catalysts.md) |
+| 之前判断过什么、改过几次 | 跨轮研究记忆、当时视角查询、判断沿革与多轮摘要 | [研究记忆](skills/research/references/research-memory.md) |
+| 同类事件之后怎么走 | 参考类事件研究的窗口收益分布 | [事件研究](skills/research/references/event-study.md) |
+| 这条产业链在哪一环断 | 行业传导图与瓶颈定位 | [行业传导](skills/research/references/transmission.md) |
+| 报告里的数字能不能核 | 结构化数值事实、计算重算、模型输入与证据数值一致性 | [证据契约](skills/research/references/evidence.md) |
+| 能不能先看一页 | 一页式 IC memo（只裁剪，不新增证据） | [报告模板](skills/research/references/memo-template.md) |
+
 ## 快速开始
 
 ### 1. 直接看研究效果
