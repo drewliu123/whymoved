@@ -4,6 +4,16 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.48.0 · 预期对照工具
+
+研究里常同时出现两个「增长」：反向 DCF 的多年恒定隐含增长、共识相邻财年增幅。盘点指出它们目前只能手工对照，容易被当成同一口径相减。
+
+- 新增 [expectation_compare.py](scripts/expectation_compare.py)：并列展示两侧，**强制标注期限不同、不可相减**；任一侧缺失时只展示已有侧并说明缺口，绝不合成单一「预期差」。
+- 只读：从冻结报告读 reverse_dcf 结果，从账本读共识增长；不产生新数字、不改报告。
+- 输出 JSON（含 horizons、gaps、notes）或 `--markdown` 表格；退出码 0/1/2。
+- 测试：新增 [test_expectation_compare.py](tests/test_expectation_compare.py) 5 个用例（双侧、缺侧、Markdown、CLI 成败），全套 484 个测试通过。
+- 文档：expectations 与 architecture 补说明。
+
 ## 0.47.0 · 一页纸完整度
 
 盘点指出的两处 memo 缺口：

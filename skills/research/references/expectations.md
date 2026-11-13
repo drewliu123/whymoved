@@ -30,7 +30,9 @@ T1回答：结果揭晓之前，哪个群体对什么对象、哪个目标期间
 
 ## 结构化记录与修订
 
-同一序列、同一目标期间的多个截点写成多条consensus主张，每条带`consensus`块（`series_id`、`metric`、`target_period`、`provider`、`sample_size`、`median`、`low`、`high`），claim的`as_of`就是该截点。修订由`scripts/consensus.py`按`series_id + target_period`自动比较：`delta`、`pct`、方向与每次快照的离散度。同一序列的相邻财年（如FY2026→FY2027）还会计算`period_growth`：取各自最新快照的中位数相除减一；只在同一提供方、同一指标标签、年份连续时计算，否则跳过并给 warning。它只是共识自己的算术，不是研究判断。跨提供方的快照会给出warning——不同调查的样本与方法不同，不能当同一条序列直接比较。
+同一序列、同一目标期间的多个截点写成多条consensus主张，每条带`consensus`块（`series_id`、`metric`、`target_period`、`provider`、`sample_size`、`median`、`low`、`high`），claim的`as_of`就是该截点。修订由`scripts/consensus.py`按`series_id + target_period`自动比较：`delta`、`pct`、方向与每次快照的离散度。同一序列的相邻财年（如FY2026→FY2027）还会计算`period_growth`：取各自最新快照的中位数相除减一；只在同一提供方、同一指标标签、年份连续时计算，否则跳过并给 warning。它只是共识自己的算术，不是研究判断。
+
+要把共识增长与价格隐含增长放在一起看时，用`scripts/expectation_compare.py`：它并列展示反向 DCF 的多年恒定增长与共识相邻财年增幅，并**强制标注两者期限不同、不可相减**。任一侧缺失时只展示已有的一侧并说明缺口，不合成单一「预期差」。跨提供方的快照会给出warning——不同调查的样本与方法不同，不能当同一条序列直接比较。
 
 公司指引用fact主张上的`guidance`块记录（`metric`、`target_period`、`midpoint`、可选`low`/`high`）。**指引不能写成consensus**：校验会直接拒绝把`guidance`放在consensus主张上。指引与共识在报告里分开展示，比较「公司自己说的」与「分析师预期的」是两项工作。
 
