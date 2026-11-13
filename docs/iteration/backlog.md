@@ -97,13 +97,14 @@
 
 ## P1-2 数据新鲜度与来源冲突
 
-- 状态：待认领（下一轮）
+- 状态：✅ 已完成（Cycle 9，见 [log.md](log.md)）
+- 遗留：consensus/filing 陈旧度；冲突未解决无阻断级别；未自动比对同名 metric。
 - 方案：(a) `check_claims` 计算 `quote_age = as_of − quoted_at/published_at`，按类型阈值（用于 market.assessed 的 price 超时 → error，其余 warning）；(b) `report.conflicts[] {metric, candidates[{source_id, value}], adopted_source_id, rule, reason}`，渲染脚注表。
 - 验收：阈值可配置；长周期研究不被误伤；冲突仅在真实并存时要求。
 
 ## P1-3 情景集 + 龙卷风敏感性
 
-- 状态：待认领
+- 状态：待认领（下一轮）
 - 方案：允许 N 个同 kind 模型带 `scenario: bear|base|bull` 并共享 driver-set id；契约要求至少一上一下、输入全为 assumption；`sensitivity_mode: tornado` 输出按影响幅度排序。两者都**不给概率**；≤4 个情景；图注写明各输入独立假设。
 
 ## P1-4 块级渲染 / IC memo 包
@@ -142,6 +143,7 @@
 
 ## 已完成
 
+- P1-2 价格时效与来源冲突 — 2026-11-14，Cycle 9
 - P0-6 跨轮研究记忆 — 2026-11-14，Cycle 8
 - P0-5 催化日历 — 2026-11-14，Cycle 7
 - P0-4 估值汇总（football field）— 2026-11-14，Cycle 6

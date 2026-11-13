@@ -90,6 +90,20 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 
 没有metric的旧账本继续合法，渲染结果不变；不要为了填字段把区间、估算或未经核对的数字写成精确值。
 
+## 来源冲突：可选 report.conflicts
+
+同一指标多个来源给出不同数值时，不要悄悄挑一个。用可选`conflicts`记录取舍：
+
+```json
+{"conflicts": [{
+  "metric": "Q3 收入", "unit": "million USD",
+  "candidates": [{"source_id": "S1", "value": 120}, {"source_id": "S2", "value": 118}],
+  "adopted_claim_id": "C3",
+  "rule": "以公司原始披露为准", "reason": "第二来源为转引且与原始披露不一致"}]}
+```
+
+规则：`candidates`至少两条且数值必须不同；`source_id`须存在于sources；`adopted_claim_id`须是fact / price / consensus主张；`unit`统一，若采用主张带`metric`，其unit须一致、value须等于某个候选值。渲染在附录「来源冲突与取舍」表。没有该字段的报告渲染不变。不要用它表演严谨：只有真实分歧才记录。
+
 ## 估值汇总：只读模型输出
 
 多个估值方法并存时，用可选`valuation_summary`把它们并排成一张表。**这一节不允许写任何数字**：每行只能引用`model_id`与`metric`，渲染时从冻结的模型结果读取，避免手抄、事后改数与口径混用。
@@ -117,7 +131,7 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 - `tests`覆盖全部计划检验，各出现一次，id和outcomes逐项不变。每项有status（observed / missing）、claim_ids、interpretation、supports / weakens（H id）、next_observation、by、supports_if、weakens_if。observed至少引用一条fact / price / consensus，不能仅有view或inference；missing写gap_reason，claim_ids / supports / weakens均为空，不能用未找到证据支持或削弱解释。
 - `models`每项有id / description / currency / scale / period / scope / assumptions / spec / result / output_claim_ids。spec只用六种固定compute_model：operating_bridge、free_cash_flow、dcf、reverse_dcf、relative_valuation、driver_build。全部输入分observed与assumption，后者在wrapper.assumptions逐输入说明理由；金额unit为currency，币种与缩放在wrapper说明，金额和股数用同一缩放。每个模型必须有单参数sensitivity，至少一个参数、两个不同取值。reverse_dcf的wrapper另有instrument，price输入value及币种每股unit、instrument与所引sources.market_quote逐项精确一致。relative_valuation须peer_set_rationale与逐peer证据；driver_build须spec.segments且每段同时引用observed与假设证据。CLI成功后冻结完整result，不能用手算结果代替。output_claim_ids对应inference，basis覆盖该模型所有输入claims。
 - `model_status`为computed / missing / not_applicable，均写model_reason；computed有非空models，其余为空。经营展望需要经营桥或现金流，估值需要reverse_dcf或relative_valuation；comps还要peer_set_rationale与逐peer证据，数据不够须missing，不能虚填模型。数值核对不保证因果或经济假设成立。
-- `market`有status / reason / claim_ids / model_ids。price_relevance=true只允许assessed或missing；assessed有price类claim，写implied_expectation / research_expectation / gap / conditions，claim_ids包含全部关联模型output_claim_ids，valuation关联reverse_dcf或relative_valuation及匹配价格。missing的claim_ids / model_ids为空，在相关判断旁披露具体缺口。非价格经营/人物等问题为false，market用not_applicable及reason，不强行得出估值结论。
+- `market`有status / reason / claim_ids / model_ids，可选`price_max_age_hours`（默认96）。price_relevance=true只允许assessed或missing；assessed有price类claim，写implied_expectation / research_expectation / gap / conditions，claim_ids包含全部关联模型output_claim_ids，valuation关联reverse_dcf或relative_valuation及匹配价格。missing的claim_ids / model_ids为空，在相关判断旁披露具体缺口。非价格经营/人物等问题为false，market用not_applicable及reason，不强行得出估值结论。
 
 更新另加：
 

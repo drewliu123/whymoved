@@ -213,7 +213,9 @@ price_relevance=true时market只用assessed / missing；false必须not_applicabl
 }
 ```
 
-这是字段示意，C/M需换成实际记录且C_implied含对应模型输出。缺价格或不能识别隐含预期时使用`{"status":"missing","reason":"具体缺失输入及其对价格判断的影响","claim_ids":[],"model_ids":[]}`，在相关判断旁披露，不写“已被定价”。经营/人物等非价格问题用`{"status":"not_applicable","reason":"只核查公开承诺兑现，不判断价格","claim_ids":[],"model_ids":[]}`。
+这是字段示意，C/M需换成实际记录且C_implied含对应模型输出。价格时效：`status=assessed`时，所引price claim的`market_quote.quoted_at`距`claim.as_of`不得超过`market.price_max_age_hours`（默认96小时，覆盖周末；日内研究应显式收紧到24小时或更短）。超时直接校验失败，不能拿过期报价当「现价」下判断；历史研究把`as_of`设在当时，报价与当时截点同时代即可。阈值须是1–8760之间的数值。
+
+缺价格或不能识别隐含预期时使用`{"status":"missing","reason":"具体缺失输入及其对价格判断的影响","claim_ids":[],"model_ids":[]}`，在相关判断旁披露，不写“已被定价”。经营/人物等非价格问题用`{"status":"not_applicable","reason":"只核查公开承诺兑现，不判断价格","claim_ids":[],"model_ids":[]}`。
 
 多个估值模型并存时，用`report.valuation_summary`并排展示（见[memo-template.md](memo-template.md)）：该节只引用`model_id`与`metric`，数字一律从冻结模型读取，不允许在正文或汇总里手抄模型结果，也不允许跨方法加权成「目标价」。
 

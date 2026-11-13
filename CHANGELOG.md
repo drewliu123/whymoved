@@ -4,6 +4,16 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.14.0 · 价格时效与来源冲突
+
+两处证据处理此前靠人记得：市场评估可以用一份很旧的报价当「现价」；同一指标多个来源数值不一致时，报告里通常只留下被采用的那一个，分歧消失。
+
+- 价格时效：`status=assessed`时校验所引 price claim 的 `market_quote.quoted_at` 与 `claim.as_of` 的间隔，超过 `market.price_max_age_hours`（默认 96 小时，覆盖周末；日内研究可收紧）直接失败。历史研究把截点设在当时，报价与截点同时代即可。阈值须为 1–8760 的数值。
+- 来源冲突：新增可选 `report.conflicts[]`，记录 `metric`、`unit`、至少两个不同数值的 `candidates`（含 `source_id`）、`adopted_claim_id`、`rule` 与 `reason`。采用主张须是 fact/price/consensus；若其带 `metric`，unit 必须一致、value 必须等于某个候选值。附录新增「来源冲突与取舍」表。
+- 兼容：没有 `conflicts` 字段的报告渲染字节不变，冻结示例哈希继续通过。
+- 测试：新增 [test_freshness_conflicts.py](tests/test_freshness_conflicts.py) 11 个用例（新鲜度边界与阈值、无 sources 时跳过、冲突形状/证据/数值匹配、双格式渲染），全套 310 个测试通过。
+- 文档：analysis-methods 补价格时效规则，memo-template 补 conflicts 契约，SKILL 与研究价值参考同步。
+
 ## 0.13.0 · 跨轮研究记忆
 
 研究是接力的，但此前只能逐个打开归档才知道「关于这个标的，上一轮判断了什么、依据多少主张、后来改没改」。新增 [research_memory.py](scripts/research_memory.py)：把 `journal/runs/` 整理成只存指针的索引，支持按实体/关键词与当时视角查询。

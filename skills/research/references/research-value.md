@@ -45,7 +45,7 @@ market_view.basis约束引用类型：proxy必须至少引用一条inference，c
 
 ### 与严格市场评估的边界
 
-`report.analysis.market`的现有约束完全不变。price_relevance=true时，缺价格或可靠隐含预期证据仍须status=missing，写具体reason，claim_ids / model_ids为空；assessed仍需带时刻price主张、四项预期比较与关联模型输出，valuation仍需匹配reverse_dcf或relative_valuation。不能用proxy、社区观点、机会对象或文字改名填补assessed所需输入。
+`report.analysis.market`的现有约束完全不变。price_relevance=true时，价格时效按`market.price_max_age_hours`（默认96小时）校验；缺价格或可靠隐含预期证据仍须status=missing，写具体reason，claim_ids / model_ids为空；assessed仍需带时刻price主张、四项预期比较与关联模型输出，valuation仍需匹配reverse_dcf或relative_valuation。不能用proxy、社区观点、机会对象或文字改名填补assessed所需输入。
 
 在market=missing时，可以在opportunity中用basis=proxy及有据inference表达条件倾向，交代它依赖什么、尚未证明什么；不能称为已核实共识、已验证错价或已被定价。机会状态不等于market状态，不能由research_now反推assessed，也不能仅因missing自动抹掉所有有据研究判断。重要缺口紧贴它限制的判断说明一次。
 

@@ -210,6 +210,7 @@ def validate_report(report, ledger, sources=None):
         from analysis_contract import validate_analysis
         errors.extend(validate_analysis(report["analysis"], claims, sources=sources))
     errors.extend(validate_valuation_summary(report))
+    errors.extend(validate_conflicts(report, ledger, sources))
     from calendar import validate_report_catalysts
     errors.extend(validate_report_catalysts(report))
     from opportunity_contract import validate_opportunity
@@ -289,6 +290,71 @@ def validate_valuation_summary(report):
     if len(prices) > 1:
         rendered = ", ".join("%s %s" % (value, unit) for value, unit in sorted(prices, key=str))
         errors.append("valuation_summary requires one observed price across models, found: " + rendered)
+    return errors
+
+
+def validate_conflicts(report, ledger, sources):
+    """Optional record of disagreeing sources and the value finally adopted."""
+    conflicts = report.get("conflicts")
+    if conflicts is None:
+        return []
+    if not isinstance(conflicts, list) or not conflicts:
+        return ["conflicts must be a nonempty list"]
+    claims = ledger.get("claims") if isinstance(ledger, dict) else None
+    claim_map = {c["id"]: c for c in claims if isinstance(c, dict) and isinstance(c.get("id"), str)} if isinstance(claims, list) else {}
+    source_doc = sources if isinstance(sources, dict) else (ledger.get("sources") if isinstance(ledger, dict) else {})
+    source_ids = {s["id"] for s in source_doc.get("candidates", [])
+                  if isinstance(s, dict) and isinstance(s.get("id"), str)}
+    errors = []
+    for n, entry in enumerate(conflicts):
+        path = "conflicts[%d]" % n
+        if not isinstance(entry, dict):
+            errors.append(path + " must be an object")
+            continue
+        extra = set(entry) - {"metric", "candidates", "adopted_claim_id", "unit", "rule", "reason"}
+        if extra:
+            errors.append(path + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
+        for field in ("metric", "unit", "rule", "reason"):
+            if not _text(entry.get(field)):
+                errors.append(path + "." + field + " must be nonempty text")
+        adopted = entry.get("adopted_claim_id")
+        adopted_claim = claim_map.get(adopted) if isinstance(adopted, str) else None
+        if adopted_claim is None:
+            errors.append(path + ".adopted_claim_id must reference a claim")
+        elif adopted_claim.get("type") not in {"fact", "price", "consensus"}:
+            errors.append(path + ".adopted_claim_id must be a fact/price/consensus claim")
+        candidates = entry.get("candidates")
+        values = []
+        if not isinstance(candidates, list) or len(candidates) < 2:
+            errors.append(path + ".candidates must list at least two sources")
+        else:
+            for i, candidate in enumerate(candidates):
+                cpath = path + ".candidates[%d]" % i
+                if not isinstance(candidate, dict):
+                    errors.append(cpath + " must be an object")
+                    continue
+                extra = set(candidate) - {"source_id", "value"}
+                if extra:
+                    errors.append(cpath + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
+                if not isinstance(candidate.get("source_id"), str) or candidate["source_id"] not in source_ids:
+                    errors.append(cpath + ".source_id must reference a source")
+                value = candidate.get("value")
+                if _number(value) is not True:
+                    errors.append(cpath + ".value must be a finite number")
+                else:
+                    values.append(value)
+            if len(values) >= 2 and len({round(value, 12) for value in values}) < 2:
+                errors.append(path + ".candidates must report different values")
+        if isinstance(adopted_claim, dict):
+            metric = adopted_claim.get("metric")
+            if isinstance(metric, dict) and values:
+                unit = entry.get("unit")
+                if _text(metric.get("unit")) and _text(unit) and metric["unit"].strip().casefold() != unit.strip().casefold():
+                    errors.append(path + ".unit differs from the adopted claim metric unit")
+                elif _number(metric.get("value")) is True:
+                    adopted_value = metric["value"]
+                    if not any(abs(adopted_value - value) <= max(1e-9 * abs(adopted_value), 1e-12) for value in values):
+                        errors.append(path + ".adopted_claim_id metric value must match one candidate")
     return errors
 
 
@@ -406,6 +472,15 @@ def _blocks(report, ledger, sources):
                 yield ("p", finding["title"] + "；基线：" + finding["increment"]["baseline"] + "；增加的判断：" + finding["increment"]["detail"], finding["claim_ids"])
     if report.get("analysis"):
         yield from _analysis_blocks(report["analysis"], appendix=True)
+    if report.get("conflicts"):
+        yield ("h2", "来源冲突与取舍")
+        yield ("table", {"title": "冲突与采用", "columns": ["指标", "候选来源值", "采用主张", "单位", "取舍规则", "理由"],
+                         "rows": [[entry["metric"],
+                                   "；".join("%s=%s" % (candidate["source_id"], candidate["value"])
+                                            for candidate in entry["candidates"]),
+                                   entry["adopted_claim_id"], entry["unit"], entry["rule"], entry["reason"]]
+                                  for entry in report["conflicts"]],
+                         "claim_ids": [entry["adopted_claim_id"] for entry in report["conflicts"]]})
     yield ("audit", "来源与结论审计")
     from metrics import describe as _describe_metric, extract_metrics
     metric_rows = extract_metrics(ledger["claims"])

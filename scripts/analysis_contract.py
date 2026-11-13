@@ -127,6 +127,36 @@ def _same_result(actual, recorded):
     return type(actual) is type(recorded) and actual == recorded
 
 
+def _price_age_errors(market, market_refs, claim_map, sources, path, max_age_hours):
+    """Reject a verdict built on a price quote that is stale relative to its claim."""
+    from sources import timestamp
+    errors = []
+    source_map = {s["id"]: s for s in sources.get("candidates", [])
+                  if isinstance(s, dict) and _id(s.get("id"))}
+    for cid in market_refs:
+        claim = claim_map.get(cid)
+        if not isinstance(claim, dict) or claim.get("type") != "price":
+            continue
+        claim_time, _, claim_error = timestamp(claim.get("as_of"), utc=True)
+        if claim_error or claim_time is None:
+            continue
+        for ref in claim.get("sources", []):
+            source = source_map.get(ref.get("source_id")) if isinstance(ref, dict) else None
+            quote = source.get("market_quote") if isinstance(source, dict) else None
+            if not isinstance(quote, dict):
+                continue
+            quoted, _, error = timestamp(quote.get("quoted_at"), utc=True)
+            if error or quoted is None:
+                continue
+            age = (claim_time - quoted).total_seconds() / 3600
+            if age < 0:
+                continue
+            if age > max_age_hours:
+                errors.append("%s price claim %s quotes a %.1f hour old price; max is %s hours"
+                              % (path, cid, age, max_age_hours))
+    return errors
+
+
 def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=None):
     """Validate evidence links and recompute fixed models, optionally against a plan."""
     errors = []
@@ -427,6 +457,11 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
         for key in ("implied_expectation", "research_expectation", "gap", "conditions"):
             if not _text(market.get(key)):
                 errors.append("analysis.market." + key + " is required")
+        max_age = market.get("price_max_age_hours", 96)
+        if isinstance(max_age, bool) or type(max_age) not in (int, float) or not 1 <= max_age <= 8760:
+            errors.append("analysis.market.price_max_age_hours must be a number between 1 and 8760")
+        elif isinstance(sources, dict):
+            errors.extend(_price_age_errors(market, market_refs, claim_map, sources, "analysis.market", max_age))
         if not any(claim_map[c].get("type") == "price" for c in market_refs):
             errors.append("market assessment needs a timestamped price claim")
         for model in models:
