@@ -143,7 +143,7 @@ python3 "$TY_DIR/scripts/research_run.py" archive --report "$WORK/report.json" -
 
 归档前将查询、候选路径、执行命令/退出码与审查处置写入audit.json（建议queries、review、execution字段），以--audit一同冻结；日志路径应指向保存的证据，字段不代表自动核实。新archive/update强制plan.analysis_version=1与完整report.analysis契约，仅收claims schema2；旧归档load/show不强制补新字段，不重判旧档案。旧schema1可单独兼容渲染，但不作为严格v2归档。如有计算文件添加`--calculations "$WORK/calculations.json"`。研究归档到`$TY_HOME/journal/runs/<run_id>/`，不要求预测、不修改memos.jsonl/作者库。交付HTML与Markdown及run_id，聊天先给核心判断和增量。不要只回复一串文件路径；文件交付工具可用时附报告。
 
-更新用同样完整新输入执行`research_run.py update ... --parent-run <run_id>`，report额外记录update.judgment_changed/reason、comparability.status/reason。先读结构diff，再由研究者解释经济意义；字段变化不自动等于判断变化。没有新发现用no_change_reason，不复制旧报告冒充更新。
+开始新研究或更新前，先按[research-memory.md](references/research-memory.md)用`scripts/research_memory.py`查询同一实体/主题的旧判断与旧触发（`--as-of`给当时视角）；索引只存指针，引用旧判断须回冻结run读claims/sources，旧inference不能直接支撑新结论。更新用同样完整新输入执行`research_run.py update ... --parent-run <run_id>`，report额外记录update.judgment_changed/reason、comparability.status/reason。先读结构diff，再由研究者解释经济意义；字段变化不自动等于判断变化。没有新发现用no_change_reason，不复制旧报告冒充更新。
 
 按[research-value.md](references/research-value.md)由旧触发、新证据及价格变化驱动更新。父run为trading机会时，新run必须保留trading opportunity及update.opportunity，可降为no_edge但不能静默丢弃；previous/current状态准确对应，全部旧trigger_id各恰好一次，旧触发原文和窗口冻结在旧run。hit / not_hit须证据，未检查写not_checked（可空引用），不能因没取到而判未触发；reason / price_move / remaining_edge用非空claim_ids支撑。解释方向与强弱是否变化、价格实际走过多少以及还剩什么优势，不能把机制增强等同机会增强。新触发在新run定义，失效与到期明确；无旧机会时建立新基准，不伪造对照。只读机会列表的使用与边界见参考，不代表后台监控。
 

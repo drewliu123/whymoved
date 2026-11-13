@@ -83,7 +83,8 @@
 
 ## P0-6 跨轮次研究记忆（research memory）
 
-- 状态：待认领（下一轮）
+- 状态：✅ 已完成（Cycle 8，见 [log.md](log.md)）
+- 遗留：跨轮论点时间线（parent_run 已入索引）；增量索引；实体别名表。
 - 价值：HIGH / 成本：M。「持续性投研」的核心：回答「我们之前对 X 判断过什么、依据哪条证据、现在改变了吗」；也是唯一能防事后诸葛的东西。
 - 方案：`scripts/research_memory.py index|query`：扫描 `journal/runs/*/`，抽取实体（plan.entity + 代码）、as_of、判断、assessment 状态、触发 id、claim 类型，生成可重建、幂等、带内容哈希的 `journal/index.json`；按实体查询返回时间排序的判断与冻结文件链接；`--as-of` 给当时视图。
 - 约束：只存指针不合并数字；不产生 claim；不改归档；每条打印父 run 的 as_of；禁止用旧 inference 直接支撑新结论。
@@ -96,7 +97,7 @@
 
 ## P1-2 数据新鲜度与来源冲突
 
-- 状态：待认领
+- 状态：待认领（下一轮）
 - 方案：(a) `check_claims` 计算 `quote_age = as_of − quoted_at/published_at`，按类型阈值（用于 market.assessed 的 price 超时 → error，其余 warning）；(b) `report.conflicts[] {metric, candidates[{source_id, value}], adopted_source_id, rule, reason}`，渲染脚注表。
 - 验收：阈值可配置；长周期研究不被误伤；冲突仅在真实并存时要求。
 
@@ -141,6 +142,7 @@
 
 ## 已完成
 
+- P0-6 跨轮研究记忆 — 2026-11-14，Cycle 8
 - P0-5 催化日历 — 2026-11-14，Cycle 7
 - P0-4 估值汇总（football field）— 2026-11-14，Cycle 6
 - P0-3 驱动式经营模型（driver_build）— 2026-11-14，Cycle 5
