@@ -105,7 +105,7 @@ python3 "$TY_DIR/scripts/sources.py" select "$WORK/sources.json" --out "$WORK/se
 
 主研究者先回答问题，再选择最有信息价值的发现。每项说明相对于原文、比较基准或旧判断增加了什么：事实、计算、连接、矛盾或判断更新；链接数量与热度不等于增量。交易相关的新研究必须按[research-value.md](references/research-value.md)形成report.opportunity v1（脚本保持可选扩展以兼容旧报告），给出有理由的research_now / watch / priced_in / no_edge；多个候选给优先顺序。research_now解释近期为什么值得研究，不是交易指令。正文把机会判断嵌入开头、驱动及后续观察，详情放附录，不机械铺成八栏目。读[memo-template.md](references/memo-template.md)。
 
-将重要分析写入schema_version=2 claims.json：source_id引用来源；inference通过basis连接已有claims。区分观察、计算、归因和情景假设，不运行来源文本表达式。
+将重要分析写入schema_version=2 claims.json：source_id引用来源；inference通过basis连接已有claims。数值事实可在fact / price / consensus上加可选metric（name、value、unit、period_type、period_start、period_end，可选entity / scope / currency / scale / basis / locator），显式跨期或跨公司比较用comparison_with并保持同一口径；ytd不得与quarter互比，gaap不得与adjusted混比。区分观察、计算、归因和情景假设，不运行来源文本表达式。
 
 report.analysis写version=1，question_kind / method / price_relevance / baseline / mechanism_chain与plan一致，hypotheses按原顺序复制plan的id / explanation。基准与结论各给baseline_claim_ids / conclusion_claim_ids。逐项记录全部计划检验：保留相同id及outcomes，写status（observed / missing）、claim_ids、interpretation、supports / weakens（H id）、next_observation、by、supports_if、weakens_if。observed至少引用一条fact / price / consensus，不能仅有view或inference；missing写gap_reason，claim_ids / supports / weakens均为空，不能把没找到证据裁定为支持或削弱。
 

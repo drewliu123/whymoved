@@ -4,6 +4,54 @@
 
 ---
 
+## Cycle 3 · 2026-11-14 · 结构化数值事实（claim.metric）
+
+**对应卡片**：P0-0b
+
+**问题**：事实只有文本。数字、单位、期间、范围全埋在句子里，三类经典事故——YTD 当季度、币种缩放不一致、分部当合并——只靠提示词警告；SEC 取证已经保留了 `period_type`、YTD/quarter 与 dimensions，但下游没有任何地方消费。这也是财务质量、驱动建模、comps 一致性的共同前提。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/metrics.py`（新） | `claim.metric` 形状校验（M1）、期间与 instant 语义（M2）、显式比较一致性（M3）、同组口径一致性（M4）；`extract_metrics` 导出；CLI 打印 `{passed, metrics, failures}` |
+| `scripts/check_claims.py` | 账本校验接入 metric：形状错误与跨主张错误挂到对应 claim；metric 仅允许出现在 fact / price / consensus |
+| `scripts/render_report.py` | 附录新增「数值事实」表（主张、实体、指标、数值、单位、期间、口径、范围），仅在存在 metric 时输出 |
+| `tests/test_metrics.py`（新） | 17 个用例：必填/未知字段、数值类型、期间先后、instant、scope/basis、比较口径、跨实体、同组单位、导出、CLI、双格式渲染、无 metric 兼容 |
+| 文档 | evidence.md 新章节（字段表 + 口径规则 + 示例）、memo-template、SKILL、SEC 参考、architecture 入口、CHANGELOG 0.8.0 |
+
+**关键设计决定**
+
+1. **`entity` 进入分组键**：同名指标跨公司比较很常见（comps 的 peer 倍数就是这样做），若不区分实体，AMD 的 EUR 口径会和 NVDA 的 USD 口径互相误伤。分组键 = `entity + name + scope + period_type`。
+2. **只强制显式比较**：跨期比较是研究的常态（同比、环比），全局要求同期会把正常工作判成错误。因此口径一致性只在两种情形下强制——同组（同实体同指标同范围同期间类型）必须单位一致；写了 `comparison_with` 的一对必须期间类型一致。ytd vs quarter、gaap vs adjusted 在这里被拦住，合法同比（都是 quarter、期间不同）不受影响。
+3. **instant 语义**：股本、股数、市价这类「某一时点」的指标不要求 period_start；若填了必须等于 period_end。
+4. **只允许 fact / price / consensus**：view 与 inference 的数值应由模型或计算记录表达，避免把推断伪装成披露值。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 241 tests ... OK
+```
+
+- 冻结示例：`report.md` / `report.html` 仍逐字节相同（无 metric 的账本渲染不变）。
+- 口径演示（用 NVDA 风格数值构造）：
+  - `quarter`（comparison_with 指向 `ytd`）→ `M3 comparison requires the same period_type: quarter vs ytd`
+  - 同指标同实体但一边 `USD billion` 一边 `USD million` → 两条主张都报 `M4 ... must use one unit`
+  - 跨实体（NVDA/USD vs AMD/EUR）→ 通过，不误伤
+- 无 metric 的旧账本：校验、渲染、归档行为完全不变，未追溯改写。
+
+**投研意义增量**
+
+3. 多一条可核实的连接：数字第一次带上单位、期间与范围，能被程序比较；SEC 的期间属性终于有落点。
+4. 边界更清楚：非 GAAP 必须显式标 `adjusted`；分部必须写 `segment:<name>`；同一指标不许悄悄换单位或缩放。
+
+**遗留**
+
+- **模型输入与 metric 的一致性校验**（P1-0c）：模型输入引用了一条带 metric 的 observed claim 时，两者数值应当一致；但 wrapper 的 `scale` 是自由文本（million/billion），需要先定义缩放映射，否则会误报。等下一步再做。
+- 冲突未处理：同组同期间但数值不同目前不报错（那是来源冲突，应由 P1-2 的 conflicts 记录负责），避免把正常的来源分歧当作错误。
+- `comparison_with` 是单向声明即可，不强制双方互指；反向缺失不会报错。
+
 ## Cycle 2 · 2026-11-14 · 可复算的派生计算
 
 **对应卡片**：P0-0a

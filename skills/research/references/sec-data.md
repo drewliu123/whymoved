@@ -42,7 +42,7 @@ python3 scripts/sec_data.py statements --accession '<NUMBER>' --statement all --
 
 ## 获取包与完整性
 
-统一输出获取包包含 `provider: edgartools`、`status`、`data`、`provenance`、`completeness`。它不是 sources v2 文档，也不直接创建 sources/claims。核对包内版本、参数、获取时间、精确 accession、SEC URL、三类日期及完整性信息后，再进入现有证据流程。
+统一输出获取包包含 `provider: edgartools`、`status`、`data`、`provenance`、`completeness`。它不是 sources v2 文档，也不直接创建 sources/claims；取得period_type、YTD/quarter与分部维度后应写入claim的可选metric（见[evidence.md](evidence.md)），不要只把口径留在正文。核对包内版本、参数、获取时间、精确 accession、SEC URL、三类日期及完整性信息后，再进入现有证据流程。
 
 正文路径使用 Python 解析接口，保留完整主文件文本或所选完整章节，不经过 MCP 的 6000 字符截断输出。精确附件用 `--attachment` 读取，候选文件名和类型可从 `provenance.attachments` 核对。读取时可以分块定位，但不得把工具界面预览当全文。`full_text` 指主文件正文，不等于所有附件全文；8-K 的 EX-99.1 等附件须另行核对实际原文件，不能声称本入口已完整覆盖附件。章节不存在、解析失败或数据缺失时检查 `status` 和 `completeness`，不得因有一段文本就宣称完整。
 

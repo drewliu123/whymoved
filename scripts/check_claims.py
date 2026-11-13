@@ -327,6 +327,11 @@ def _strict_claim(claim, source_map, cutoff, historical):
 def validate_ledger(ledger, sources=None):
     """Validate schema 1 (default) or strict schema 2, without mutating inputs.
 
+    Optional claim.metric adds a structured number (name, value, unit,
+    period_type, period_start/period_end, entity, scope, currency, scale, basis)
+    and explicit comparison_with consistency (same unit/currency/scale/
+    period_type, no gaap-adjustment mixing). See metrics.py.
+
     Strict price extras: market_quote={quoted_at,instrument,outcome,direction,
     value,unit,quote_type}; claim.price_kind matches quote_type. Executable quotes
     also require bid/ask. Consensus: survey={population,sample_size,method,
@@ -396,8 +401,18 @@ def validate_ledger(ledger, sources=None):
                 errors = ["R1 malformed legacy claim"]
         else:
             errors = ["R1 claim must be an object"]
+        if isinstance(claim, dict) and "metric" in claim:
+            from metrics import validate_metric
+            if claim.get("type") not in {"fact", "price", "consensus"}:
+                errors = list(errors) + ["metric: M1 metric is only allowed on fact/price/consensus claims"]
+            for message in validate_metric(claim["metric"]):
+                errors = list(errors) + ["metric: " + message]
         if errors:
             failures.setdefault(key, []).extend(errors)
+    from metrics import cross_claim_metric_errors
+    for cid, messages in cross_claim_metric_errors(claims).items():
+        for message in messages:
+            fail(cid, "metric: " + message)
     if strict:
         graph = {}
         claim_times = {c["id"]: timestamp(c.get("as_of"), utc=True)[0]

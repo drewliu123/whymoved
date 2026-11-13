@@ -327,6 +327,17 @@ def _blocks(report, ledger, sources):
     if report.get("analysis"):
         yield from _analysis_blocks(report["analysis"], appendix=True)
     yield ("audit", "来源与结论审计")
+    from metrics import describe as _describe_metric, extract_metrics
+    metric_rows = extract_metrics(ledger["claims"])
+    if metric_rows:
+        yield ("h3", "数值事实")
+        yield ("table", {"title": "结构化数值与口径", "columns": ["主张", "实体", "指标", "数值", "单位", "期间", "口径", "范围"],
+                         "rows": [[row["claim_id"], row["entity"], row["name"], row["value"], row["unit"],
+                                   _describe_metric({"period_type": row["period_type"], "period_start": row["period_start"],
+                                                     "period_end": row["period_end"], "scope": row["scope"],
+                                                     "basis": row["basis"]}),
+                                   row["basis"], row["scope"]] for row in metric_rows],
+                         "claim_ids": [row["claim_id"] for row in metric_rows]})
     for claim in ledger["claims"]:
         yield ("claim", claim)
     source_doc = sources if sources is not None else ledger.get("sources", {})

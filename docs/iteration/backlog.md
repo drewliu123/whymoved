@@ -25,7 +25,8 @@
 
 ## P0-0b 数值事实结构（claim.metric）
 
-- 状态：待认领（下一轮）
+- 状态：✅ 已完成（Cycle 3，见 [log.md](log.md)）
+- 遗留增强：模型输入与 metric 的一致性校验（需先定义缩放映射），见 P1-0c。
 - 价值：HIGH / 成本：M。是财务质量、驱动建模、comps 一致性的共同前提。
 - 现状：claim 只有 `{id, text, type, as_of, sources, basis}`，数字只活在自然语言里；SEC 入口保留了 period_type / YTD / dimensions / scope，但下游没有任何地方消费。YTD 当季度、币种缩放不一致、分部当合并，全靠提示词警告。
 - 方案：fact / consensus / price 三类 claim 加**可选** `metric`：`{name, value, unit, currency, scale, period_start, period_end, period_type: fy|quarter|ytd|ltm|instant, scope: consolidated|segment:<name>, basis: gaap|adjusted, locator}`。
@@ -42,7 +43,7 @@
 
 ## P0-2 财务质量与法证筛查
 
-- 状态：待认领（依赖 P0-0b 的数值层）
+- 状态：待认领（下一轮；数值层已就绪）
 - 价值：HIGH / 成本：M。「增长是现金还是会计」是回报最高的一问；当前完全没有比率、应计、周转。
 - 方案：`scripts/financial_quality.py`（或 P0-0b 之后的模型 kind），输入两期以上 metric facts，输出：
   - 毛利率/营业利润率/净利率趋势；CFO/NI 现金转化；应计比率 `(NI−CFO)/平均总资产`
@@ -128,7 +129,14 @@
 
 ---
 
+## P1-0c 模型输入与 metric 的一致性
+
+- 状态：待认领
+- 方案：模型 observed 输入引用带 metric 的 claim 时，校验数值与单位换算一致。前提是先定义 `scale` 的规范映射（million/billion/万/亿），或要求 metric.scale 使用枚举；换算失败时报告“无法核对”而不是报错。
+- 风险：缩放文本解析误判；应限定枚举并允许显式 unknown。
+
 ## 已完成
 
+- P0-0b 结构化数值事实（claim.metric）— 2026-11-14，Cycle 3
 - P0-0a 可复算派生计算（calculations op）— 2026-11-14，Cycle 2
 - P0-1 相对估值（comps）— 2026-11-14，Cycle 1

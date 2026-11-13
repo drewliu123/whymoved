@@ -84,6 +84,12 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 
 不要在unit里塞第二个结果或口径说明：unit只写单位，推导过程写description/formula/新增行。
 
+## 数值事实：可选 claim.metric
+
+数值不只写在文本里。fact / price / consensus 主张可加`metric`块：`{name, value, unit, period_type, period_start, period_end, entity?, scope?, currency?, scale?, basis?, locator?, comparison_with?}`。period_type为fy / quarter / ytd / ltm / instant；除instant外period_start必填。显式比较用`comparison_with`，双方unit / currency / scale / period_type必须一致，gaap与adjusted不得混比；同一entity + name + scope + period_type组内口径必须一致。metric只允许出现在fact / price / consensus上，进入附录「数值事实」表。完整字段与规则见[evidence.md](evidence.md)。
+
+没有metric的旧账本继续合法，渲染结果不变；不要为了填字段把区间、估算或未经核对的数字写成精确值。
+
 ## analysis：底稿完整，正文简明
 
 新报告须有`analysis.version: 1`，完整plan/analysis示例与模型精确字段见[analysis-methods.md](analysis-methods.md)。不要把本节逐条展开为正文栏目；正文呈现判断、机制、关键结果及相关缺口，预测矩阵、输入/假设和敏感性放证据附录。

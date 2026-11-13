@@ -45,6 +45,54 @@
 }
 ```
 
+## 数值事实：可选 metric
+
+fact / price / consensus 主张可加可选`metric`块，把数字连同单位、期间与范围变成可检查结构。没有该块时行为完全不变；有该块时校验形状与口径一致性，但仍不证明数字等于原文。
+
+```json
+{
+  "id": "C3", "text": "示例公司Q3收入12亿美元，同比+14.9%。", "type": "fact",
+  "as_of": "2026-11-01T00:00:00Z", "sources": [{"source_id": "S1"}],
+  "metric": {
+    "name": "revenue", "value": 1200, "unit": "USD million",
+    "period_type": "quarter", "period_start": "2026-07-01", "period_end": "2026-09-30",
+    "entity": "EXAMPLE", "scope": "consolidated", "currency": "USD", "scale": "million",
+    "basis": "adjusted", "locator": "10-Q p.23",
+    "comparison_with": ["C4"]
+  }
+}
+```
+
+| 字段 | 要求 |
+|---|---|
+| name | 非空文本，指标的稳定名称；同一指标跨期用同一写法 |
+| value | 有限数值，不带符号或单位符号 |
+| unit | 非空文本，写清量纲（如`USD million`、`ratio`、`shares`） |
+| period_type | `fy` / `quarter` / `ytd` / `ltm` / `instant` |
+| period_end | ISO 日期或时刻，必须可解析 |
+| period_start | 除`instant`外必填；`instant`若填必须等于`period_end` |
+| entity | 可选，标的或公司标识；用于区分同业比较 |
+| scope | 可选，默认`consolidated`；分部写`segment:<名称>` |
+| currency / scale | 可选，但同组必须一致；写明币种与缩放，别只写在文本里 |
+| basis | 可选，`gaap` 或 `adjusted`；非GAAP数字必须显式标记 |
+| locator | 可选，原文定位 |
+| comparison_with | 可选，本次**显式比较**的另一条主张id列表 |
+
+口径规则：
+
+- 同一`entity + name + scope + period_type`组内，`unit`、`currency`、`scale`与`basis`必须一致（M4）。跨公司比较靠`entity`区分，不同币种不会互相误伤。
+- `comparison_with`要求双方都声明metric，且`unit`、`currency`、`scale`、`period_type`一致；`period_type`不同即报错（M3）——这正是把YTD当季度、把年度当单季的常见事故。同比比较（同为`quarter`、期间不同）是合法的。
+- gaap与adjusted不得在同一比较里混用；两者都存在时必须显式比较，不能靠文本暗示。
+- `metric`只允许出现在fact / price / consensus上；view与inference的数值应通过模型或计算记录表达。
+
+查看与导出：
+
+```bash
+python3 "$TY_DIR/scripts/metrics.py" "$WORK/claims.json"
+```
+
+打印`{passed, metrics, failures}`。metric块会进入Markdown/HTML附录的「数值事实」表；没有metric的账本渲染结果不变。SEC取证得到的`period_type`、YTD/quarter与分部维度应直接写入metric，而不是只留在文本里。
+
 获取状态access_status与source_status分开：前者ok/snippet/failed；后者使用ok/partial/no_results/not_run/error/rate_limited/auth_failed/payment_required/unreachable/timeout/schema_drift。字段用具体契约枚举，文字描述可说明失败原因。
 
 ```bash

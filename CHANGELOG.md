@@ -4,6 +4,21 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.8.0 · 结构化数值事实
+
+事实此前只有文本：数字、单位、期间与范围都埋在句子里，YTD 当季度、币种缩放不一致、分部当合并只能靠提示词警告；SEC 取证已保留的 `period_type`、YTD/quarter 与分部维度也没有下游消费者。
+
+新增可选 `claim.metric` 块，把 fact / price / consensus 的数字变成可检查结构：`name`、`value`、`unit`、`period_type`（fy / quarter / ytd / ltm / instant）、`period_start` / `period_end`，可选 `entity`、`scope`、`currency`、`scale`、`basis`、`locator` 与 `comparison_with`。
+
+- 形状校验：字段、数值有限性、期间可解析与先后、instant 期间一致性、scope / basis 枚举；未知字段直接拒绝；metric 只允许出现在 fact / price / consensus 上。
+- 口径校验：同一 `entity + name + scope + period_type` 组内 `unit` / `currency` / `scale` / `basis` 必须一致；显式 `comparison_with` 要求双方都声明 metric，且上述口径与 `period_type` 一致——ytd 与 quarter 互比、gaap 与 adjusted 混比都会报错，合法同比（同为 quarter、期间不同）不受影响。
+- 可读：附录新增「数值事实」表（主张、实体、指标、数值、单位、期间、口径、范围）；没有 metric 的报告渲染字节不变，微软示例哈希继续通过。
+- 工具：[metrics.py](scripts/metrics.py) 可独立导出 `{passed, metrics, failures}`，供后续财务质量、驱动模型与 comps 一致性检查消费。
+- 文档：evidence.md 新增字段与口径规则（含 M3/M4 说明），memo-template、SKILL、SEC 参考补充落库要求。
+- 测试：新增 [test_metrics.py](tests/test_metrics.py) 17 个用例，覆盖形状、期间陷阱、比较一致性、跨实体、导出与渲染；全套 241 个测试通过。
+
+旧账本无需迁移：不写 metric 就完全保持原行为。
+
 ## 0.7.1 · 可复算的派生计算
 
 报告里除固定模型外的数字此前只作记录，从不重算：`calculations[]` 校验数值、单位与引用，公式字符串不执行。实盘 run 出现过把第二个结果塞进 `result.unit` 的情况，估值支点因此不可核验。
