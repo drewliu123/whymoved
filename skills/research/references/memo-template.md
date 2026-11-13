@@ -184,7 +184,7 @@ python3 "$TY_DIR/scripts/memo_pack.py" "$WORK/report.json" \
   --claims "$WORK/claims.json" --sources "$WORK/sources.json" --out "$WORK/memo.md"
 ```
 
-内容：判断、最多三条关键发现、方法区间（数字只从冻结模型输出读取）、有日期的催化、改变判断的条件、主要风险与溯源。它先跑与渲染相同的全套校验，校验不过就直接失败；不新增证据、不产生新数字、不改 report.json。`--max-findings` 控制发现条数。
+内容：判断、最多三条关键发现、方法区间（数字只从冻结模型输出读取）、传导瓶颈（若报告嵌入 transmission）、质量红旗前五条（若报告嵌入 quality，按严重度排序）、有日期的催化、改变判断的条件、主要风险与溯源。它先跑与渲染相同的全套校验，校验不过就直接失败；不新增证据、不产生新数字、不改 report.json。`--max-findings` 控制发现条数。
 
 一页纸是裁剪，不是替代：完整证据、计算、敏感性、审查记录仍在 report.json / Markdown / HTML 与归档里。
 

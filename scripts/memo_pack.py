@@ -125,6 +125,51 @@ def _risks(report):
     return rows
 
 
+def _bottleneck(report):
+    """Bottleneck and paths from an embedded transmission map, if any."""
+    document = report.get("transmission")
+    if not isinstance(document, dict):
+        return []
+    from transmission import analyse
+    try:
+        result = analyse(document)
+    except (KeyError, TypeError, ValueError):
+        return []
+    lines = ["", "## 传导瓶颈", "",
+             "- 瓶颈：%s（%s）｜%s" % (_escape(result["bottleneck"]["label"]),
+                                      _escape(result["bottleneck"]["node"]),
+                                      _escape(result["bottleneck"]["reason"]))]
+    if result.get("paths"):
+        lines.append("- 路径：%s" % _escape("；".join(" → ".join(path) for path in result["paths"])))
+    if result.get("warnings"):
+        lines.append("- 提示：%s" % _escape("；".join(result["warnings"])))
+    return lines
+
+
+def _quality_flags(report):
+    """Top red flags from embedded quality statements, if any."""
+    quality = report.get("quality")
+    if not isinstance(quality, dict) or not isinstance(quality.get("statements"), dict):
+        return []
+    from financial_quality import analyse
+    try:
+        result = analyse(quality["statements"], quality.get("thresholds"))
+    except (KeyError, TypeError, ValueError):
+        return []
+    lines = ["", "## 质量红旗", ""]
+    severity = {"high": 0, "medium": 1}
+    flags = sorted(result.get("flags") or [], key=lambda item: severity.get(str(item.get("severity")), 2))
+    if not flags:
+        lines.append("- 未触发默认红旗阈值；这不等于没有风险。")
+        return lines
+    for item in flags[:5]:
+        lines.append("- %s｜%s：%s" % (_escape(item["period"]), _escape(item["code"]),
+                                       _escape(item["message"])))
+    if len(flags) > 5:
+        lines.append("- 其余 %d 条见完整报告" % (len(flags) - 5))
+    return lines
+
+
 def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
     """Return memo markdown derived only from frozen fields; no new numbers."""
     answer = report.get("answer") if isinstance(report.get("answer"), dict) else {}
@@ -144,6 +189,8 @@ def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
                       "| 方法 | 指标 | 低 | 中 | 高 | 单位 |", "| --- | --- | --- | --- | --- | --- |"] + valuation)
         lines.append("")
         lines.append("不跨方法加权、不给概率、不是目标价；反向DCF一行是价格隐含的预期。")
+    lines.extend(_bottleneck(report))
+    lines.extend(_quality_flags(report))
     catalysts = _catalysts(report)
     if catalysts:
         lines.extend(["", "## 接下来看什么", ""] + catalysts)

@@ -12,7 +12,7 @@ sys.path.insert(0, str(SCRIPTS))
 import memo_pack
 import render_report
 from test_analysis_contract import summary_bundle
-from test_reports import documents
+from test_reports import QualityReportTests, documents
 
 
 def memo(data, max_findings=3):
@@ -83,6 +83,45 @@ class MemoContentTests(unittest.TestCase):
         data[0]["valuation_summary"]["rows"][0]["label"] = "DCF|基准"
         text = memo(data[:3])
         self.assertIn("DCF\\|基准", text)
+
+
+class MemoLinkedSectionsTests(unittest.TestCase):
+    def transmission(self):
+        return {"schema_version": 1, "theme": "测试传导", "as_of": "2026-10-31T12:00:00Z",
+                "nodes": [{"id": "A", "label": "需求", "kind": "demand",
+                           "observables": ["订单"], "claim_ids": ["C1"]},
+                          {"id": "B", "label": "并网容量", "kind": "capacity",
+                           "observables": ["排队时长"], "claim_ids": ["C1"]}],
+                "edges": [{"from": "A", "to": "B", "mechanism": "排队", "lag": "1个季度",
+                           "claim_ids": ["C1"]}],
+                "bottleneck": {"node": "B", "reason": "审批节奏", "claim_ids": ["C1"]}}
+
+    def test_bottleneck_section(self):
+        report, ledger, sources = documents()
+        report["transmission"] = self.transmission()
+        text = memo((report, ledger, sources))
+        self.assertIn("## 传导瓶颈", text)
+        self.assertIn("并网容量", text)
+        self.assertIn("审批节奏", text)
+        self.assertIn("路径：", text)
+        self.assertIn("A → B", text)
+
+    def test_quality_flags_section(self):
+        report, ledger, sources = documents()
+        report["quality"] = {"statements": QualityReportTests().statements()}
+        text = memo((report, ledger, sources)).replace("\\", "")
+        self.assertIn("## 质量红旗", text)
+        self.assertIn("growth_without_cash", text)
+        self.assertIn("其余 3 条见完整报告", text)
+        report["quality"]["thresholds"] = {"conversion_drop": 1.0}
+        text = memo((report, ledger, sources)).replace("\\", "")
+        self.assertNotIn("growth_without_cash", text)
+        self.assertIn("low_capex_vs_da", text)
+
+    def test_sections_absent_by_default(self):
+        text = memo(documents())
+        self.assertNotIn("## 传导瓶颈", text)
+        self.assertNotIn("## 质量红旗", text)
 
 
 class MemoCliTests(unittest.TestCase):
