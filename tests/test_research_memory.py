@@ -182,6 +182,21 @@ class AliasTests(unittest.TestCase):
             result = memory.query_index(index, term)
             self.assertEqual(result["count"], 2, term)
 
+    def test_alias_conflicts_are_reported_and_first_wins(self):
+        (self.home / "journal" / "aliases.json").write_text(
+            json.dumps({"NVDA": ["NVIDIA"], "NVIDIA": ["NVDA"]}), encoding="utf-8")
+        index = memory.build_index(self.home)
+        self.assertEqual(index["alias_map"].get("nvidia"), "NVDA")
+        self.assertEqual(index["alias_map"].get("nvda"), "NVDA")
+        self.assertTrue(any("maps to both" in warning for warning in index["warnings"]))
+
+    def test_non_list_aliases_warn(self):
+        (self.home / "journal" / "aliases.json").write_text(
+            json.dumps({"NVDA": "NVIDIA"}), encoding="utf-8")
+        index = memory.build_index(self.home)
+        self.assertTrue(any("must be a list" in warning for warning in index["warnings"]))
+        self.assertEqual(index["alias_map"].get("nvda"), "NVDA")
+
     def test_index_is_stable_with_aliases(self):
         first = memory.build_index(self.home)
         second = memory.build_index(self.home)

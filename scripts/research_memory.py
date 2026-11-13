@@ -156,18 +156,27 @@ def load_aliases(home):
         return {}, ["aliases.json cannot be read and was ignored: " + str(exc)]
     if not isinstance(data, dict):
         return {}, ["aliases.json must be an object mapping canonical names to alias lists"]
-    mapping = {}
-    for canonical, aliases in data.items():
+    mapping, warnings = {}, []
+
+    def register(key, target):
+        if key in mapping and mapping[key] != target:
+            warnings.append("alias %r maps to both %r and %r; keeping the first" % (key, mapping[key], target))
+            return
+        mapping[key] = target
+
+    for canonical in sorted(data):
+        aliases = data[canonical]
         if not _text(canonical):
             continue
         name = canonical.strip()
-        mapping.setdefault(name.casefold(), name)
+        register(name.casefold(), name)
         if not isinstance(aliases, list):
+            warnings.append("aliases for %r must be a list and were ignored" % name)
             continue
         for alias in aliases:
             if _text(alias):
-                mapping[alias.strip().casefold()] = name
-    return mapping, []
+                register(alias.strip().casefold(), name)
+    return mapping, warnings
 
 
 def build_index(home):

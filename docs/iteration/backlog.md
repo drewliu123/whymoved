@@ -84,7 +84,7 @@
 ## P0-6 跨轮次研究记忆（research memory）
 
 - 状态：✅ 已完成（Cycle 8，见 [log.md](log.md)）
-- 遗留：判断沿革已由 `thread` 覆盖（Cycle 20）；✅ 实体别名表（Cycle 37）；增量索引；沿革未带证据摘要。
+- 遗留：判断沿革已由 `thread` 覆盖（Cycle 20）；✅ 实体别名表（Cycle 37）与 ✅ 冲突检测（Cycle 41）；增量索引；沿革未带证据摘要。
 - 价值：HIGH / 成本：M。「持续性投研」的核心：回答「我们之前对 X 判断过什么、依据哪条证据、现在改变了吗」；也是唯一能防事后诸葛的东西。
 - 方案：`scripts/research_memory.py index|query`：扫描 `journal/runs/*/`，抽取实体（plan.entity + 代码）、as_of、判断、assessment 状态、触发 id、claim 类型，生成可重建、幂等、带内容哈希的 `journal/index.json`；按实体查询返回时间排序的判断与冻结文件链接；`--as-of` 给当时视图。
 - 约束：只存指针不合并数字；不产生 claim；不改归档；每条打印父 run 的 as_of；禁止用旧 inference 直接支撑新结论。
@@ -164,6 +164,7 @@
 
 ## 已完成
 
+- P0-6d 别名冲突检测 — 2026-11-14，Cycle 41
 - P2-7 数据根体检 doctor — 2026-11-14，Cycle 40
 - P1-4f 分组柱状图 — 2026-11-14，Cycle 39
 - P2-6 真实报表模型验证 — 2026-11-14，Cycle 38

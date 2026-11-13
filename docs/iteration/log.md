@@ -4,6 +4,47 @@
 
 ---
 
+## Cycle 41 · 2026-11-14 · 别名冲突检测
+
+**对应卡片**：P0-6c 遗留
+
+**问题**：别名表上一版是「后者覆盖前者」——两个规范名共享同一别名时，结果取决于字典顺序，且没有任何提示。用户会看到实体分组不对，却不知道原因。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/research_memory.py` | 规范名排序遍历；冲突先到先得并写 warning；别名值非数组时只保留规范名 + warning |
+| `tests/test_research_memory.py` | 2 个用例：双向别名冲突、非法别名值 |
+| 文档 | research-memory 补冲突规则；CHANGELOG 0.43.1 |
+
+**关键设计决定**
+
+1. **先到先得 + 字母序**：结果可预测、可复现，不依赖 JSON 书写顺序。
+2. **冲突是 warning 不是 error**：别名是辅助功能；一个冲突不该让整个索引失败，但必须让人看见。
+3. **冲突信息带双方名字**：warning 直接写 `maps to both 'NVDA' and 'NVIDIA'`，用户知道要改哪两条。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 459 tests ... OK
+```
+
+- 冲突：`{"NVDA": ["NVIDIA"], "NVIDIA": ["NVDA"]}` → warnings 两条（nvidia、nvda 各一），`alias_map["nvidia"] == "NVDA"`（字母序先到）。
+- 非数组：`{"NVDA": "NVIDIA"}` → warning「must be a list」，规范名本身仍注册。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 实体归并结果可预测、可解释。
+2. 数据问题从「静默错分」变成「显式 warning」。
+
+**遗留**
+
+- 没有「建议别名」功能（从已有 run 的实体变体里自动提议）。
+- 冲突解决仍需用户手工改文件。
+
 ## Cycle 40 · 2026-11-14 · 数据根体检 doctor
 
 **对应卡片**：P2-7（新增；升级/迁移的运维入口）

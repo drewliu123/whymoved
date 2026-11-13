@@ -73,6 +73,7 @@ python3 "$TY_DIR/scripts/research_memory.py" query --home "$TY_HOME" NVDA --limi
 - 左键是**规范名**，值是别名数组；大小写不敏感。
 - `index` 会按规范名归并 `entities`，并在 `alias_map` 里记录归一化后的映射（可审计）；`query` 命中任一别名都会返回该实体的全部 run。
 - 别名文件缺失是正常状态（不影响任何功能）；文件损坏或不是对象时**忽略并写进 index 的 warnings**，不会让整个索引失败。
+- 冲突（同一别名指向两个规范名）按规范名字母序**先到先得**，冲突写进 warnings；别名值不是数组时只保留规范名本身并给出 warning。
 - 别名字段只影响检索与分组，不改变归档里的原始 entity 文本，也不做语义消歧（「Apple」是公司还是水果仍需人判断）。
 
 ## 判断沿革：thread
