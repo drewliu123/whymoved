@@ -4,6 +4,51 @@
 
 ---
 
+## Cycle 34 · 2026-11-14 · 估值汇总的基期披露
+
+**对应卡片**：P1-0d 遗留（跨模型窗口一致性）
+
+**问题**：DCF 用 FY2025 基期、comps 用 FY2026E 倍数，并列在「方法区间」里本身是常见的，但读者必须知道两者基期不同。此前 `valuation_summary` 没有任何字段记录基期；`period_window` 已经能写进模型，却没有下游消费。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/render_report.py` | `valuation_summary` 行新增可选 `period`；被比较模型 `period_window` 不一致时强制每行填写；表格按需增加「期间」列 |
+| `scripts/memo_pack.py` | 方法区间的方法名后附 `period` |
+| `tests/test_analysis_contract.py` | 2 个用例：窗口不同时强制披露与渲染；窗口相同时不要求 |
+| 文档 | analysis-methods 与 memo-template；CHANGELOG 0.37.0 |
+
+**关键设计决定**
+
+1. **不禁止混用，只要求披露**：DCF（历史基期）与 comps（前瞻倍数）并列是标准做法；一刀切禁止会逼研究者隐藏真实做法。强制写 `period` 是更小的侵入。
+2. **只在窗口真的不同时要求**：所有模型同一个窗口时不需要冗余标签，避免无意义的必填项；列也只在有 `period` 时出现，保证旧报告渲染字节不变。
+3. **窗口比较用 (start, end, period_type) 三元组**：只看结束日期会漏掉「FY vs LTM」这类口径差异。
+4. **memo 跟随**：一页纸的方法名后直接附基期，读者不必回完整报告确认。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 439 tests ... OK
+```
+
+- 窗口不同：DCF FY2025 与 comps FY2026 → 不写 `period` 时失败 `period is required`；写上后通过，Markdown/HTML 出现「期间」「FY2025A」「FY2026E」。
+- 窗口相同：三个模型共用 FY2025 窗口 → 不要求 `period`，渲染不出现该列。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 多一条可核实连接：汇总表里的每个区间都能看到基期。
+2. 多回答一类问题：「这两条区间是不是同一期的口径」。
+3. 边界更清楚：允许并存、要求披露、同一窗口不添冗余。
+
+**遗留**
+
+- `period` 是自由文本标签，不与 `period_window` 做交叉校验（例如把 FY2026E 写成 FY2025A 不会被发现）。要校验需要标签→窗口映射表。
+- 只有「被汇总引用的模型」参与比较；未进入汇总的模型之间不检查。
+- memo 只把基期附在方法名后，没有单独的期间列。
+
 ## Cycle 33 · 2026-11-14 · 归档兼容回归测试
 
 **对应卡片**：真实归档验收的收尾

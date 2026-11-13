@@ -450,9 +450,9 @@ def validate_valuation_summary(report):
         if not isinstance(row, dict):
             errors.append(path + " must be an object")
             continue
-        extra = set(row) - {"model_id", "label", "metric"}
+        extra = set(row) - {"model_id", "label", "metric", "period"}
         if extra:
-            errors.append(path + " must only name model_id, label and metric; values come from the model")
+            errors.append(path + " must only name model_id, label, metric and period; values come from the model")
         model_id = row.get("model_id")
         if not isinstance(model_id, str) or model_id not in model_map:
             errors.append(path + ".model_id must reference an analysis model")
@@ -462,6 +462,8 @@ def validate_valuation_summary(report):
         seen.add(model_id)
         if not _text(row.get("label")):
             errors.append(path + ".label must be nonempty text")
+        if "period" in row and not _text(row.get("period")):
+            errors.append(path + ".period must be nonempty text when present")
         spec = model_map[model_id].get("spec") or {}
         kind = spec.get("kind")
         metric = row.get("metric")
@@ -470,6 +472,17 @@ def validate_valuation_summary(report):
             errors.append(path + " references a model that does not produce a valuation metric")
         elif metric not in allowed:
             errors.append(path + ".metric must be one of " + ", ".join(sorted(allowed)) + " for " + str(kind))
+    referenced = [model_map[model_id] for model_id in seen if model_id in model_map]
+    windows = set()
+    for model in referenced:
+        window = model.get("period_window")
+        if isinstance(window, dict):
+            windows.add((window.get("start"), window.get("end"), window.get("period_type")))
+    if len(windows) > 1:
+        for n, row in enumerate(rows):
+            if isinstance(row, dict) and isinstance(row.get("model_id"), str) and row["model_id"] in model_map \
+                    and not _text(row.get("period")):
+                errors.append("valuation_summary.rows[%d].period is required when the compared models use different period windows" % n)
     prices = valuation_prices(models)
     if len(prices) > 1:
         rendered = ", ".join("%s %s" % (value, unit) for value, unit in sorted(prices, key=str))
@@ -842,11 +855,15 @@ def _valuation_summary_blocks(report):
         (price, unit_price_ref), _ = next(iter(prices.items()))
     yield ("h2", "估值汇总")
     rows, claims = [], []
+    has_period = any(isinstance(entry.get("period"), str) and entry["period"].strip()
+                     for entry in summary["rows"] if isinstance(entry, dict))
+    period_of = {entry.get("model_id"): entry.get("period") for entry in summary["rows"] if isinstance(entry, dict)}
     for entry in summary["rows"]:
         model = models[entry["model_id"]]
         kind = model["spec"]["kind"]
         outputs = model["result"]["outputs"]
         claims.extend(model.get("output_claim_ids", []))
+        period = entry.get("period") if _text(entry.get("period")) else None
         if kind == "dcf":
             mid = outputs["per_share"]["value"]
             values = [row["outputs"]["per_share"]["value"] for row in model["result"]["sensitivity"]
@@ -862,7 +879,12 @@ def _valuation_summary_blocks(report):
                          (mid / price - 1) if price else "—"])
         else:
             rows.append([entry["label"], "隐含增长率", "—", outputs["implied_growth"]["value"], "—", "ratio", "—"])
-    yield ("table", {"title": "方法区间对照", "columns": ["方法", "指标", "低", "中", "高", "单位", "中位相对现价"],
+    columns = ["方法", "指标", "低", "中", "高", "单位", "中位相对现价"]
+    if has_period:
+        columns.insert(1, "期间")
+        rows = [[row[0], period_of.get(entry["model_id"]) or "—"] + row[1:]
+                for row, entry in zip(rows, summary["rows"])]
+    yield ("table", {"title": "方法区间对照", "columns": columns,
                      "rows": rows, "claim_ids": list(dict.fromkeys(claims))})
     if price:
         yield ("p", "参考现价（来自模型输入的带时刻价格）：" + str(price) + " " + str(unit_price_ref) + "。")

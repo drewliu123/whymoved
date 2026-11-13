@@ -67,9 +67,12 @@ def _valuation(report):
         spec = model.get("spec") or {}
         outputs = (model.get("result") or {}).get("outputs") or {}
         kind = spec.get("kind")
+        label = entry.get("label", "")
+        if isinstance(entry.get("period"), str) and entry["period"].strip():
+            label = str(label) + "（" + entry["period"].strip() + "）"
         if kind == "relative_valuation" and "per_share_median" in outputs:
             rows.append("| %s | 每股价值 | %s | %s | %s | %s |" % (
-                _cell(entry.get("label", "")), outputs["per_share_low"]["value"],
+                _cell(label), outputs["per_share_low"]["value"],
                 outputs["per_share_median"]["value"], outputs["per_share_high"]["value"],
                 _cell(outputs["per_share_median"]["unit"])))
         elif kind == "dcf" and "per_share" in outputs:
@@ -78,10 +81,10 @@ def _valuation(report):
                       if isinstance(row, dict) and isinstance(row.get("outputs"), dict) and "per_share" in row["outputs"]]
             low, high = (min(values), max(values)) if values else (mid, mid)
             rows.append("| %s | 每股价值 | %s | %s | %s | %s |" % (
-                _cell(entry.get("label", "")), low, mid, high, _cell(outputs["per_share"]["unit"])))
+                _cell(label), low, mid, high, _cell(outputs["per_share"]["unit"])))
         elif kind == "reverse_dcf" and "implied_growth" in outputs:
             rows.append("| %s | 隐含增长率 | — | %s | — | ratio |" % (
-                _cell(entry.get("label", "")), outputs["implied_growth"]["value"]))
+                _cell(label), outputs["implied_growth"]["value"]))
     return rows
 
 

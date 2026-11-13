@@ -269,6 +269,31 @@ class AnalysisContractTests(unittest.TestCase):
             self.assertEqual(loaded["report"]["valuation_summary"], data[0]["valuation_summary"])
             self.assertIn("估值汇总", (Path(archived["path"]) / "report.md").read_text())
 
+    def test_period_disclosure_when_windows_differ(self):
+        data = summary_bundle()
+        for model_id, window in (("M2", {"start": "2025-01-01", "end": "2025-12-31", "period_type": "fy"}),
+                                 ("M3", {"start": "2026-01-01", "end": "2026-12-31", "period_type": "fy"})):
+            model = next(item for item in data[0]["analysis"]["models"] if item["id"] == model_id)
+            model["period_window"] = window
+        with self.assertRaisesRegex(ValueError, "period is required"):
+            self.check(data)
+        for entry in data[0]["valuation_summary"]["rows"]:
+            entry["period"] = "FY2025A" if entry["model_id"] == "M2" else "FY2026E"
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            self.assertIn("期间", text)
+            self.assertIn("FY2025A", text)
+            self.assertIn("FY2026E", text)
+
+    def test_same_windows_do_not_require_period(self):
+        data = summary_bundle()
+        window = {"start": "2025-01-01", "end": "2025-12-31", "period_type": "fy"}
+        for model in data[0]["analysis"]["models"]:
+            model["period_window"] = dict(window)
+        self.check(data)
+        self.assertNotIn("FY2025A", render_report.render_markdown(*data[:3]))
+
     def test_valuation_summary_cannot_carry_its_own_numbers(self):
         for mutate in (
             lambda s: s["rows"][0].update(low=1),

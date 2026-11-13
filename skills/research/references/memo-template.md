@@ -141,7 +141,7 @@ consensus主张可带`consensus`块（series_id、metric、target_period、provi
 }
 ```
 
-规则：`rows`非空、`model_id`唯一且必须在`analysis.models`中；`metric`须匹配模型种类（dcf / relative_valuation → per_share，reverse_dcf → implied_growth）；所有模型引用的带时刻价格必须一致，否则无法比较相对现价；`note`可选文本。渲染列为方法 / 指标 / 低 / 中 / 高 / 单位 / 中位相对现价，并注明「不跨方法加权、不给概率、不是目标价；反向DCF一行是预期不是估值」。没有该字段的报告渲染结果不变。
+规则：`rows`非空、`model_id`唯一且必须在`analysis.models`中；`metric`须匹配模型种类（dcf / relative_valuation → per_share，reverse_dcf → implied_growth）；所有模型引用的带时刻价格必须一致，否则无法比较相对现价；`note`可选文本。如果被比较的模型写了不同的`period_window`，每行必须补`period`文本（如FY2025A / FY2026E），表格会多一列「期间」——不同基期的模型可以并列，但必须披露。渲染列为方法 / 指标 / 低 / 中 / 高 / 单位 / 中位相对现价，并注明「不跨方法加权、不给概率、不是目标价；反向DCF一行是预期不是估值」。没有该字段的报告渲染结果不变。
 
 不要用它制造「综合目标价」：表格是方法对照，不是加权结论。
 
