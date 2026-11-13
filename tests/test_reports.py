@@ -271,6 +271,39 @@ class BarWaterfallTests(unittest.TestCase):
         self.assertIn("| 分部 | FY2024（亿元） | FY2025（亿元） |", markdown)
         self.assertIn("| 云 | 10 | 12 |", markdown)
 
+    def test_stacked_bar_chart(self):
+        report, ledger, sources = documents()
+        report["chart"] = {"kind": "bar", "bar_mode": "stacked", "title": "收入结构", "x_label": "期间",
+                           "y_label": "收入", "unit": "亿元", "claim_ids": ["C1"],
+                           "series": [
+                               {"name": "云", "rows": [{"label": "FY2024", "value": 6}, {"label": "FY2025", "value": 8}]},
+                               {"name": "设备", "rows": [{"label": "FY2024", "value": 4}, {"label": "FY2025", "value": 3}]}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        self.assertEqual(page.count("<rect"), 4)
+        for token in ("堆叠柱状", "堆叠顺序（自下而上）", "云 · FY2025 8 亿元", "设备 · FY2025 3 亿元"):
+            self.assertIn(token, page)
+        markdown = render_report.render_markdown(report, ledger, sources)
+        self.assertIn("| 期间 | 云（亿元） | 设备（亿元） |", markdown)
+        self.assertIn("| FY2025 | 8 | 3 |", markdown)
+
+    def test_stacked_bar_validation(self):
+        report, ledger, sources = self.bar_document()
+        report["chart"]["bar_mode"] = "stacked"
+        self.assertTrue(any("requires series" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.bar_document()
+        report["chart"]["bar_mode"] = "stacked"
+        report["chart"].pop("rows")
+        report["chart"]["series"] = [
+            {"name": "A", "rows": [{"label": "Q1", "value": 2}, {"label": "Q2", "value": -1}]},
+            {"name": "B", "rows": [{"label": "Q1", "value": 1}, {"label": "Q2", "value": 3}]}]
+        self.assertTrue(any("negative" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = documents()
+        report["chart"] = {"title": "折线", "x_label": "x", "y_label": "y", "unit": "元",
+                           "rows": [{"label": "A", "value": 1}, {"label": "B", "value": 2}],
+                           "claim_ids": ["C1"], "bar_mode": "stacked"}
+        self.assertTrue(any("only valid for bar" in error for error in render_report.validate_report(report, ledger, sources)))
+
     def test_line_charts_unchanged(self):
         report, ledger, sources = documents()
         report["chart"] = {"title": "收入", "x_label": "期间", "y_label": "收入", "unit": "亿元",

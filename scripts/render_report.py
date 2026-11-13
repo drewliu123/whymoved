@@ -131,6 +131,23 @@ def _chart_errors(chart, path, refs):
     kind = chart.get("kind", "line")
     if kind not in {"line", "bar", "waterfall"}:
         errors.append(path + ".kind must be line, bar or waterfall")
+    mode = chart.get("bar_mode")
+    if mode is not None:
+        if kind != "bar":
+            errors.append(path + ".bar_mode is only valid for bar charts")
+        elif not isinstance(mode, str) or mode not in {"grouped", "stacked"}:
+            errors.append(path + ".bar_mode must be grouped or stacked")
+        elif mode == "stacked":
+            if "series" not in chart:
+                errors.append(path + ".bar_mode stacked requires series")
+            else:
+                series = chart.get("series")
+                if isinstance(series, list):
+                    for n, item in enumerate(series):
+                        rows = item.get("rows") if isinstance(item, dict) else None
+                        if isinstance(rows, list) and any(isinstance(row, dict) and _number(row.get("value")) and row["value"] < 0
+                                                          for row in rows):
+                            errors.append("%s.series[%d] stacked bars cannot contain negative values" % (path, n))
     elif kind == "waterfall" and "series" in chart:
         errors.append(path + ".kind waterfall cannot use series")
     if kind == "waterfall":
@@ -1154,6 +1171,8 @@ def _bar_chart(c):
 
 def _grouped_bar_chart(c):
     series = _chart_series(c)
+    if c.get("bar_mode") == "stacked":
+        return _stacked_bar_chart(c, series)
     labels = [row["label"] for row in series[0][1]]
     values = [row["value"] for _, rows in series for row in rows]
     lo, hi = min(min(values), 0), max(max(values), 0)
@@ -1183,6 +1202,44 @@ def _grouped_bar_chart(c):
     out.append('<text x="60" y="220">%s</text><text x="680" y="220" text-anchor="end">%s</text></svg>' % (
         _h(labels[0]), _h(labels[-1])))
     out.append('<p style="font-size:13px">系列顺序（同组从左到右，色调由深到浅）：%s。精确数值见下方同源数据表。</p>' % _h(
+        "、".join(name for name, _ in series)))
+    out.append('<p id="chart-readout" role="tooltip" aria-live="polite">%s</p></section>' % _h(
+        c["x_label"] + " · " + c["y_label"] + "（" + c["unit"] + "）"))
+    return "".join(out)
+
+
+def _stacked_bar_chart(c, series):
+    labels = [row["label"] for row in series[0][1]]
+    totals = [sum(rows[index]["value"] for _, rows in series) for index in range(len(labels))]
+    hi = max(totals + [1])
+    scale = max(abs(hi), 1)
+
+    def y(value):
+        return 190 - (value / scale) * 150
+
+    slot = 620 / len(labels)
+    out = ['<section class="chart"><h2>%s</h2><svg viewBox="0 0 720 250" role="group" aria-label="%s（堆叠柱状）">' % (
+        _h(c["title"]), _h(c["title"]))]
+    for value in (0, hi):
+        out.append('<line class="grid" x1="60" x2="680" y1="%s" y2="%s"/><text x="2" y="%s">%s</text>' % (
+            y(value), y(value), y(value) - 5, _h(value)))
+    for index, label in enumerate(labels):
+        left = 60 + index * slot + slot * 0.2
+        width = slot * 0.6
+        base = 0.0
+        for series_index, (name, rows) in enumerate(series):
+            value = rows[index]["value"]
+            top = y(base + value)
+            height = y(base) - y(base + value)
+            opacity = max(0.35, 0.9 - series_index * 0.25)
+            cell = "%s · %s %s %s" % (name, label, value, c["unit"])
+            out.append('<rect x="%.3f" y="%.3f" width="%.3f" height="%.3f" fill="var(--series)" opacity="%s" '
+                       'tabindex="0" role="img" aria-label="%s" aria-describedby="chart-readout"><title>%s</title></rect>' % (
+                           left, top, width, height, opacity, _h(cell), _h(cell)))
+            base += value
+    out.append('<text x="60" y="220">%s</text><text x="680" y="220" text-anchor="end">%s</text></svg>' % (
+        _h(labels[0]), _h(labels[-1])))
+    out.append('<p style="font-size:13px">堆叠顺序（自下而上）：%s。精确数值见下方同源数据表。</p>' % _h(
         "、".join(name for name, _ in series)))
     out.append('<p id="chart-readout" role="tooltip" aria-live="polite">%s</p></section>' % _h(
         c["x_label"] + " · " + c["y_label"] + "（" + c["unit"] + "）"))
