@@ -30,7 +30,7 @@
 | catalyst | {text, by, claim_ids}；什么可观察事件会检验分歧，by为带时区日期/时间或明确可判定的事件窗口，不写“未来关注” |
 | payoff | {text, claim_ids}；价格已走过多少、还剩什么空间、判断做错的损失路径/成本；缺可靠数字可定性说明方向、约束及未知，不编收益率、目标价或损失数字 |
 | assessment | {status, text, claim_ids}；status仅research_now / watch / priced_in / no_edge；text解释排序理由与条件 |
-| triggers | 非空列表；每项{id, signal, by, claim_ids, supports_if, weakens_if, invalidates_if}；id本轮唯一且稳定，其他文字非空，signal可核实，by明确检查窗口或到期条件；支持、削弱、失效条件可区分，不能只有“持续关注” |
+| triggers | 非空列表；每项{id, signal, by, claim_ids, supports_if, weakens_if, invalidates_if}，可选due（ISO日期，不得早于report.as_of）与type（earnings/macro/regulatory/company/industry）；按[catalysts.md](catalysts.md)标注日期；id本轮唯一且稳定，其他文字非空，signal可核实，by明确检查窗口或到期条件；支持、削弱、失效条件可区分，不能只有“持续关注” |
 
 market_view.basis约束引用类型：proxy必须至少引用一条inference，consensus必须至少引用一条consensus，price_implied必须同时包含price与inference；可混合引用更多相关claims，但不能仅改basis名称绕过来源资格。
 

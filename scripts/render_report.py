@@ -210,6 +210,8 @@ def validate_report(report, ledger, sources=None):
         from analysis_contract import validate_analysis
         errors.extend(validate_analysis(report["analysis"], claims, sources=sources))
     errors.extend(validate_valuation_summary(report))
+    from calendar import validate_report_catalysts
+    errors.extend(validate_report_catalysts(report))
     from opportunity_contract import validate_opportunity
     errors.extend(validate_opportunity(report, claims))
     return errors

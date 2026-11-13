@@ -42,6 +42,7 @@ flowchart TD
 | [check_claims.py](../scripts/check_claims.py) | 主张引用、来源资格、时间及推断关系校验 |
 | [metrics.py](../scripts/metrics.py) | 可选结构化数值事实（claim.metric）的形状、期间与比较口径校验及导出 |
 | [financial_quality.py](../scripts/financial_quality.py) | 两期以上报表的利润率、现金转化、周转、资本开支与红旗筛查 |
+| [calendar.py](../scripts/calendar.py) | 已冻结报告的催化日期汇总（upcoming / overdue / undated），只读、不监控 |
 | [analysis_contract.py](../scripts/analysis_contract.py) | 问题方法匹配、区分检验、模型与市场预期契约 |
 | [analysis_models.py](../scripts/analysis_models.py) | 经营桥、FCFF、DCF、反向DCF和可比公司相对估值固定模型 |
 | [render_report.py](../scripts/render_report.py) | 从冻结报告生成同源Markdown和HTML |

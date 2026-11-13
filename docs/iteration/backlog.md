@@ -74,7 +74,8 @@
 
 ## P0-5 催化日历（与 triggers 共用 id 空间）
 
-- 状态：待认领（下一轮）
+- 状态：✅ 已完成（Cycle 7，见 [log.md](log.md)）
+- 遗留：合并 update.trigger_results 状态；watch 位置编号会漂移。
 - 价值：HIGH / 成本：S–M。催化目前只是机会对象里的文字与自由文本 watch；没有日期、没有状态机、无法回答「上周该看的东西看了吗」。
 - 方案：`report.catalysts[]`：`{id, by（日期或窗口）, type, expectation, discriminating_signal, claim_ids, status: upcoming|hit|not_hit|expired|not_checked}`；渲染按日期排序的附录时间线；提供 `--due N` 查询。
 - **关键约束**：不能另建第二套触发系统。`opportunity.triggers` 改为它的视图（同 id、同 by），全仓一套触发体系。
@@ -82,7 +83,7 @@
 
 ## P0-6 跨轮次研究记忆（research memory）
 
-- 状态：待认领
+- 状态：待认领（下一轮）
 - 价值：HIGH / 成本：M。「持续性投研」的核心：回答「我们之前对 X 判断过什么、依据哪条证据、现在改变了吗」；也是唯一能防事后诸葛的东西。
 - 方案：`scripts/research_memory.py index|query`：扫描 `journal/runs/*/`，抽取实体（plan.entity + 代码）、as_of、判断、assessment 状态、触发 id、claim 类型，生成可重建、幂等、带内容哈希的 `journal/index.json`；按实体查询返回时间排序的判断与冻结文件链接；`--as-of` 给当时视图。
 - 约束：只存指针不合并数字；不产生 claim；不改归档；每条打印父 run 的 as_of；禁止用旧 inference 直接支撑新结论。
@@ -140,6 +141,7 @@
 
 ## 已完成
 
+- P0-5 催化日历 — 2026-11-14，Cycle 7
 - P0-4 估值汇总（football field）— 2026-11-14，Cycle 6
 - P0-3 驱动式经营模型（driver_build）— 2026-11-14，Cycle 5
 - P0-2 盈利质量与红旗筛查 — 2026-11-14，Cycle 4

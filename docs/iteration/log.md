@@ -4,6 +4,54 @@
 
 ---
 
+## Cycle 7 · 2026-11-14 · 催化日历（共用触发 id）
+
+**对应卡片**：P0-5
+
+**问题**：报告里「12 月 9 日 FOMC 是下一个催化」只是散文。`opportunity.triggers` 有 id、有 `by`（自由文本），但没有可计算日期，无法排序、无法回答「上周该看的东西看了吗」；非交易研究的 `watch` 连 id 都没有。审计同时警告：不能为此新建第二套触发系统。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/calendar.py`（新） | 校验 `due`/`type`（可选）；从 trigger 与 watch 抽取条目；`build_calendar` 分 upcoming / overdue / undated 并按日期排序；CLI 支持报告路径、run 目录、`--home`、`--as-of`、`--due N` |
+| `scripts/render_report.py` | `validate_report` 接入催化字段校验 |
+| `tests/test_calendar.py`（新） | 13 个用例：可选字段、非法/过期日期、类型枚举、抽取保留 id、状态与排序、horizon、无 as_of、CLI 单文件/目录/home/退出码 |
+| 文档 | 新增 [catalysts.md](../../skills/research/references/catalysts.md)（字段、查询、边界）；research-value 的 triggers 行补 due/type；SKILL 与 architecture 补入口；CHANGELOG 0.12.0 |
+
+**关键设计决定**
+
+1. **扩展而非新建**：trigger id 留在 `opportunity.triggers`，watch 用位置编号 W1..Wn；日历只是视图。审计的警告（两套触发体系会 id 漂移）被直接规避。
+2. **`by` 与 `due` 并存**：`by` 是人读窗口（「12/9 附近」），`due` 是可计算日期。脚本绝不从自由文本猜日期——旧 run 的触发全部进 `undated`，这是诚实状态。
+3. **过期不等于未触发**：`overdue` 只表示观察时点已过、报告没有记录核对；命中与否仍须写进 `update.opportunity.trigger_results` 并附证据。文档把这条写成硬边界。
+4. **过去日期在冻结时被拒绝，在复查时变成 overdue**：校验要求 `due >= report.as_of`（冻结时不能写一个已经过期的「未来催化」）；用更晚的 `--as-of` 查询时它自然进入 overdue。两个动作合起来才是完整的过期语义。
+5. **不改归档**：日历只读，不写状态、不提醒、不轮询。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 289 tests ... OK
+```
+
+- 用真实用户归档验证兼容性：`calendar.py journal/runs/R20261112T165159Z-... --as-of 2026-11-14` 读出 6 条 trigger，全部进入 `undated`（该 run 只有自由文本 `by`），`run_id` 从 manifest 正确解析。
+- 状态与排序：`due` 11-20 / 12-01 / 12-09 在 11-14 视角按日期排序；把 `--as-of` 推到 12-10，三条全部变 overdue。
+- `--due 10` 只保留 10 天内到期的 upcoming；`undated` 不参与过滤。
+- 冻结示例：`report.md` / `report.html` 逐字节相同，22 个文件哈希全部匹配。
+
+**投研意义增量**
+
+1. 多一种投研工作流：从「文中的催化」到「可排序、可复查的日历」。
+2. 多回答一类问题：「接下来 30 天有什么会改变判断」「哪些该看的已经过期没核对」。
+3. 多一条可核实连接：每条催化带 claim_ids 与所属 run。
+4. 边界更清楚：不监控、不自动判命中、不猜日期。
+
+**遗留**
+
+- 日历还没有把 update 的 `trigger_results` 合并进来显示「已核对/未核对」状态；下一步可让 `calendar.py` 读取父子 run 并按 trigger id 关联。
+- 旧 run 的 `by` 文本无法批量转成 `due`；迁移只能靠研究者逐条补，不自动化。
+- `watch` 的位置编号在条目增删后会漂移；需要稳定引用时应改用 opportunity.triggers。
+
 ## Cycle 6 · 2026-11-14 · 估值汇总（football field）+ 发布一致性
 
 **对应卡片**：P0-4

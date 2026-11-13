@@ -4,6 +4,17 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.12.0 · 催化日历
+
+报告里的「12 月 9 日 FOMC 是下一个催化」通常只是段落里的散文：没有日期字段、无法排序、无法回答「上周该看的东西看了吗」。本轮给已有的触发体系补上日期，而不是另建一套。
+
+- 字段：`opportunity.triggers[]` 与 `watch[]` 新增**可选** `due`（ISO 日期/时刻，不得早于 `report.as_of`）与 `type`（earnings / macro / regulatory / company / industry）。`by` 仍是给人读的窗口，不从文本猜日期。
+- 校验：`due` 必须可解析且不早于报告截点；`type` 必须为枚举值；旧报告不填这两个字段完全不受影响。
+- 查询：[calendar.py](scripts/calendar.py) 只读扫描报告或 `journal/runs`，输出 `upcoming`（按日期排序、带距今天数）/ `overdue`（已过观察时点、不等于未触发）/ `undated`；支持 `--as-of` 与 `--due N`。
+- 边界：不新建 id 空间（trigger id 保持原处，watch 用位置编号 W1..Wn），不后台监控、不自动判定命中；过期不等于未触发，核对结果仍须写进 `update.opportunity.trigger_results`。
+- 文档：[catalysts.md](skills/research/references/catalysts.md) 说明字段、查询与边界；research-value 与 SKILL 同步。
+- 测试：新增 [test_calendar.py](tests/test_calendar.py) 12 个用例（校验、抽取、状态、排序、horizon、home 扫描、退出码），全套 289 个测试通过。
+
 ## 0.11.0 · 估值汇总（football field）
 
 同一份研究常有 DCF、可比公司与反向 DCF 三个模型，但它们此前各自躺在附录，读者要自己对照；正文里手抄模型数字又容易走样。新增可选 `report.valuation_summary`：行只写 `model_id`、`label`、`metric`，**不允许携带任何数字**，渲染时从冻结模型结果读取。
