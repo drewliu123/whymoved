@@ -26,6 +26,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 SERIES_ID = re.compile(r"^[A-Za-z][A-Za-z0-9_.-]*$")
+FISCAL_YEAR = re.compile(r"^\s*fy\s*((?:19|20)\d{2})\s*$", re.IGNORECASE)
 CONSENSUS_REQUIRED = ("series_id", "metric", "target_period", "provider", "sample_size", "median", "low", "high")
 GUIDANCE_REQUIRED = ("metric", "target_period", "midpoint")
 GUIDANCE_OPTIONAL = ("low", "high")
@@ -171,6 +172,41 @@ def _dispersion(row):
     return (row["high"] - row["low"]) / abs(row["median"])
 
 
+def _period_growth(series):
+    """Implied growth between consecutive fiscal years of the same series."""
+    rows, warnings = [], []
+    grouped = {}
+    for item in series:
+        match = FISCAL_YEAR.match(str(item.get("target_period", "")))
+        if not match:
+            continue
+        grouped.setdefault(item["series_id"], []).append((int(match.group(1)), item))
+    for series_id, items in sorted(grouped.items()):
+        items.sort(key=lambda pair: pair[0])
+        for (year_from, earlier), (year_to, later) in zip(items, items[1:]):
+            if year_to != year_from + 1:
+                continue
+            if earlier["providers"] != later["providers"]:
+                warnings.append("period growth skipped for " + series_id + ": providers differ between " +
+                                earlier["target_period"] + " and " + later["target_period"])
+                continue
+            if earlier["metric"].strip().casefold() != later["metric"].strip().casefold():
+                warnings.append("period growth skipped for " + series_id + ": metric labels differ")
+                continue
+            if not earlier["snapshots"] or not later["snapshots"]:
+                continue
+            start, end = earlier["snapshots"][-1], later["snapshots"][-1]
+            if start["median"] in (0, None):
+                warnings.append("period growth skipped for " + series_id + ": base median is zero")
+                continue
+            rows.append({"series_id": series_id, "metric": later["metric"],
+                         "from_period": earlier["target_period"], "to_period": later["target_period"],
+                         "from_median": start["median"], "to_median": end["median"],
+                         "from_claim": start["claim_id"], "to_claim": end["claim_id"],
+                         "implied_growth": end["median"] / start["median"] - 1})
+    return rows, warnings
+
+
 def analyse(claims):
     """Group snapshots into series, compute revisions and surface comparability warnings."""
     rows = snapshots(claims)
@@ -208,8 +244,12 @@ def analyse(claims):
                                       "median": item["median"], "low": item["low"], "high": item["high"],
                                       "dispersion": _dispersion(item)} for item in items],
                        "revisions": revisions})
-    return {"passed": True, "series": series, "guidance": guidance_entries(claims), "warnings": warnings,
+    growth_rows, growth_warnings = _period_growth(series)
+    warnings.extend(growth_warnings)
+    return {"passed": True, "series": series, "period_growth": growth_rows,
+            "guidance": guidance_entries(claims), "warnings": warnings,
             "notes": ["修订只在同一series_id与target_period内计算，跨提供方不可直接比较。",
+                      "period_growth只在同一序列、同一提供方、相邻财年之间计算；非FY标签不推断。",
                       "离散度=(high-low)/|median|，样本量必须一并看。",
                       "指引与共识分开列出；指引不能替代分析师共识。"]}
 

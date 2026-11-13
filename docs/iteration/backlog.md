@@ -92,7 +92,7 @@
 ## P1-1 一致预期序列、修订与指引 vs 实际
 
 - 状态：✅ 已完成（Cycle 12；指引 vs 实际的期间映射未做，见遗留）
-- 遗留：guidance.target_period 与 claim.metric 日期期间的映射；跨 run 序列汇总。
+- 遗留：guidance.target_period 与 claim.metric 日期期间的映射；跨 run 序列汇总；季度序列增长未做；隐含增长未进 memo。
 - 方案：(a) consensus claim 加 `series {series_id, metric, target_period, provider, n, median, low, high, as_of}`，用 P0-0a 的 growth 算子算修订；(b) claim 加 `guidance {metric, target_period, midpoint, range, as_of, company_guidance: true}`，契约硬规则：**指引永远不能充当 consensus**；(c) 渲染「预期 vs 实际 vs 修订」小表。
 - 风险：数据在付费墙后，做成字段后长期为空 → 要求 provider + n + method 三件套；`missing` 为默认；禁止拿分析师目标价当 consensus。
 
@@ -164,6 +164,7 @@
 
 ## 已完成
 
+- P1-1b 共识相邻财年隐含增长 — 2026-11-14，Cycle 43
 - P1-4g 堆叠柱状图 — 2026-11-14，Cycle 42
 - P0-6d 别名冲突检测 — 2026-11-14，Cycle 41
 - P2-7 数据根体检 doctor — 2026-11-14，Cycle 40

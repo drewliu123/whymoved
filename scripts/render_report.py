@@ -753,7 +753,7 @@ def _blocks(report, ledger, sources):
                                    entry["adopted_claim_id"], entry["unit"], entry["rule"], entry["reason"]]
                                   for entry in report["conflicts"]],
                          "claim_ids": [entry["adopted_claim_id"] for entry in report["conflicts"]]})
-    from consensus import guidance_entries, snapshots as consensus_snapshots
+    from consensus import analyse as analyse_consensus, guidance_entries, snapshots as consensus_snapshots
     consensus_rows = consensus_snapshots(ledger["claims"])
     if consensus_rows:
         yield ("h2", "一致预期序列")
@@ -764,6 +764,17 @@ def _blocks(report, ledger, sources):
                                   for row in consensus_rows],
                          "claim_ids": [row["claim_id"] for row in consensus_rows]})
         yield ("p", "修订只在同一序列与目标期间内比较；跨提供方不可直接比较，样本量与离散度须一并看。")
+        growth = analyse_consensus(ledger["claims"]).get("period_growth") or []
+        if growth:
+            yield ("h3", "相邻财年的隐含增长")
+            yield ("table", {"title": "共识隐含增长",
+                             "columns": ["序列", "指标", "自", "至", "起点中位", "终点中位", "隐含增长"],
+                             "rows": [[row["series_id"], row["metric"], row["from_period"], row["to_period"],
+                                       row["from_median"], row["to_median"], _metric_text(row["implied_growth"])]
+                                      for row in growth],
+                             "claim_ids": list(dict.fromkeys([row["from_claim"] for row in growth] +
+                                                             [row["to_claim"] for row in growth]))})
+            yield ("p", "隐含增长只在同一序列、同一提供方、相邻财年之间计算；它不是研究判断，只是共识自己的算术。")
     guidance_rows = guidance_entries(ledger["claims"])
     if guidance_rows:
         yield ("h3", "公司指引（不是分析师共识）")

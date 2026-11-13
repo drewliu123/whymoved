@@ -179,6 +179,56 @@ class RevisionTests(unittest.TestCase):
         self.assertEqual(result["guidance"], [])
 
 
+class GrowthTests(unittest.TestCase):
+    def claim(self, cid, period, median, provider="LSEG", metric="EPS", as_of="2026-10-01T00:00:00Z"):
+        return {"id": cid, "type": "consensus", "as_of": as_of,
+                "consensus": {"series_id": "NVDA_EPS", "metric": metric, "target_period": period,
+                              "provider": provider, "sample_size": 20, "median": median,
+                              "low": median - 1, "high": median + 1}}
+
+    def growth(self, claims):
+        return consensus.analyse(claims)
+
+    def test_consecutive_fiscal_years_produce_growth(self):
+        result = self.growth([self.claim("C1", "FY2026", 10), self.claim("C2", "FY2027", 12)])
+        self.assertEqual(len(result["period_growth"]), 1)
+        row = result["period_growth"][0]
+        self.assertAlmostEqual(row["implied_growth"], 0.2)
+        self.assertEqual((row["from_period"], row["to_period"]), ("FY2026", "FY2027"))
+        self.assertEqual((row["from_claim"], row["to_claim"]), ("C1", "C2"))
+
+    def test_non_consecutive_years_are_skipped(self):
+        result = self.growth([self.claim("C1", "FY2025", 10), self.claim("C2", "FY2027", 12)])
+        self.assertEqual(result["period_growth"], [])
+
+    def test_provider_mismatch_is_skipped_with_warning(self):
+        result = self.growth([self.claim("C1", "FY2026", 10),
+                              self.claim("C2", "FY2027", 12, provider="FactSet")])
+        self.assertEqual(result["period_growth"], [])
+        self.assertTrue(any("providers differ" in warning for warning in result["warnings"]))
+
+    def test_metric_mismatch_and_zero_base(self):
+        result = self.growth([self.claim("C1", "FY2026", 10, metric="EPS"),
+                              self.claim("C2", "FY2027", 12, metric="EPS (adj)")])
+        self.assertEqual(result["period_growth"], [])
+        self.assertTrue(any("metric labels differ" in warning for warning in result["warnings"]))
+        result = self.growth([self.claim("C1", "FY2026", 0), self.claim("C2", "FY2027", 12)])
+        self.assertEqual(result["period_growth"], [])
+        self.assertTrue(any("base median is zero" in warning for warning in result["warnings"]))
+
+    def test_non_fiscal_labels_are_ignored(self):
+        result = self.growth([self.claim("C1", "next quarter", 10), self.claim("C2", "2027Q1", 12)])
+        self.assertEqual(result["period_growth"], [])
+
+    def test_latest_snapshot_of_each_period_is_used(self):
+        result = self.growth([self.claim("C1", "FY2026", 9, as_of="2026-09-01T00:00:00Z"),
+                              self.claim("C2", "FY2026", 10, as_of="2026-10-01T00:00:00Z"),
+                              self.claim("C3", "FY2027", 12)])
+        row = result["period_growth"][0]
+        self.assertAlmostEqual(row["implied_growth"], 0.2)
+        self.assertEqual(row["from_claim"], "C2")
+
+
 class CliAndRenderTests(unittest.TestCase):
     def run_cli(self, claims):
         with tempfile.TemporaryDirectory() as tmp:
@@ -220,6 +270,24 @@ class CliAndRenderTests(unittest.TestCase):
             text = render(report, ledger, sources).replace("\\", "")
             for word in ("一致预期序列", "共识快照", "NVDA_FY2027_EPS", "24", "公司指引", "管理层指引",
                          "FY2027", "跨提供方不可直接比较"):
+                self.assertIn(word, text)
+
+    def test_render_period_growth_table(self):
+        report, ledger, sources = documents()
+        sources["candidates"].append(survey("S2"))
+        sources["candidates"].append(survey("S3"))
+        ledger["claims"].append({"id": "C2", "text": "FY2026 EPS estimate snapshot", "type": "consensus",
+                                 "as_of": AS_OF, "sources": [{"source_id": "S2"}],
+                                 "consensus_scope": "24 surveyed analysts",
+                                 "consensus": block(target_period="FY2026", median=10.0, low=9.0, high=11.0)})
+        ledger["claims"].append({"id": "C3", "text": "FY2027 EPS estimate snapshot", "type": "consensus",
+                                 "as_of": AS_OF, "sources": [{"source_id": "S3"}],
+                                 "consensus_scope": "24 surveyed analysts",
+                                 "consensus": block(target_period="FY2027", median=12.0, low=11.0, high=13.0)})
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(report, ledger, sources).replace("\\", "")
+            for word in ("相邻财年的隐含增长", "共识隐含增长", "FY2026", "FY2027", "0.2", "共识自己的算术"):
                 self.assertIn(word, text)
 
     def test_reports_without_blocks_render_unchanged(self):
