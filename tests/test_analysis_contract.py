@@ -44,6 +44,20 @@ def priced_bundle():
     return report, ledger, sources, plan
 
 
+def comps_bundle():
+    report, ledger, sources, plan = bundle("valuation")
+    add_price(report, ledger, sources)
+    model = add_model(report, ledger, "relative_valuation")
+    median = model["result"]["outputs"]["per_share_median"]["value"]
+    report["analysis"]["market"] = {"status": "assessed", "reason": "在选定可比公司倍数下比较隐含价值",
+        "claim_ids": ["P1", "OM1"], "model_ids": ["M1"],
+        "implied_expectation": "可比公司中位倍数对目标指标隐含每股%.6f" % median,
+        "research_expectation": "研究者认为可比集有限，只把区间当作参照而非估值结论",
+        "gap": "当前价格与中位隐含价值的差异取决于可比集选择与目标指标口径",
+        "conditions": "可比公司倍数或目标指标修正时重算"}
+    return report, ledger, sources, plan
+
+
 class AnalysisContractTests(unittest.TestCase):
     def check(self, data):
         research_run._validate_bundle(*data, require_analysis=True)
@@ -205,6 +219,67 @@ class AnalysisContractTests(unittest.TestCase):
             bad = copy.deepcopy(data); mutate(bad[0]["analysis"])
             with self.assertRaises(ValueError):
                 self.check(bad)
+
+    def test_relative_valuation_supports_valuation_question(self):
+        data = comps_bundle()
+        self.check(data)
+        model = data[0]["analysis"]["models"][0]
+        self.assertEqual(model["spec"]["kind"], "relative_valuation")
+        self.assertEqual(model["result"]["outputs"]["peer_count"]["value"], 3)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            for word in ("可比公司倍数", "虚构可比甲", model["peer_set_rationale"], "peer_multiple_median"):
+                self.assertIn(word, text)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            paths = []
+            for name, document in zip(("report", "claims", "sources", "plan"), data):
+                path = root / (name + ".json")
+                path.write_text(json.dumps(document, ensure_ascii=False), encoding="utf-8")
+                paths.append(path)
+            archived = research_run.archive_run(*paths, home=root / "home")
+            loaded = research_run.load_run(archived["run_id"], root / "home")
+            self.assertEqual(loaded["report"]["analysis"]["models"][0]["spec"]["peers"],
+                             data[0]["analysis"]["models"][0]["spec"]["peers"])
+            self.assertIn("可比公司倍数", (Path(archived["path"]) / "report.md").read_text())
+
+    def test_relative_valuation_requires_evidenced_peer_set(self):
+        for mutate in (
+            lambda m: m.pop("peer_set_rationale"),
+            lambda m: m.update(peer_set_rationale=""),
+            lambda m: m["spec"]["peers"][0].pop("claim_ids"),
+            lambda m: m["spec"]["peers"][0].update(claim_ids=[]),
+            lambda m: m["spec"]["peers"][0].update(claim_ids=["OM1"]),
+            lambda m: m["spec"]["peers"][1].update(name=m["spec"]["peers"][0]["name"].upper()),
+            lambda m: m["spec"]["peers"][0].update(multiple=0),
+            lambda m: m["spec"]["peers"][0].update(unit=1),
+        ):
+            data = comps_bundle()
+            mutate(data[0]["analysis"]["models"][0])
+            with self.assertRaises(ValueError):
+                self.check(data)
+
+    def test_relative_valuation_result_cannot_be_forged(self):
+        data = comps_bundle()
+        data[0]["analysis"]["models"][0]["result"]["outputs"]["per_share_median"]["value"] = 1
+        with self.assertRaisesRegex(ValueError, "recomputation"):
+            self.check(data)
+        data = comps_bundle()
+        del data[0]["analysis"]["models"][0]["result"]["outputs"]["peer_count"]
+        with self.assertRaisesRegex(ValueError, "recomputation"):
+            self.check(data)
+
+    def test_relative_valuation_output_basis_must_include_peer_claims(self):
+        data = comps_bundle()
+        data[1]["claims"][-1]["basis"] = ["P1"]
+        with self.assertRaisesRegex(ValueError, "all input claims"):
+            self.check(data)
+
+    def test_peers_are_rejected_outside_relative_valuation(self):
+        data = priced_bundle()
+        data[0]["analysis"]["models"][0]["spec"]["peers"] = [{"name": "A", "multiple": 10, "claim_ids": ["C1"]}]
+        with self.assertRaisesRegex(ValueError, "only supported"):
+            self.check(data)
 
     def test_missing_market_is_disclosed_in_both_formats(self):
         data = bundle("valuation"); self.check(data)

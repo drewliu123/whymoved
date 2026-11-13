@@ -4,6 +4,19 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.7.0 · 相对估值与可比公司
+
+在绝对估值之外加入分析师最常用的相对估值：`relative_valuation` 固定模型读取目标指标、净债务、股数与带时刻价格，并按一组可比公司的倍数分布给出隐含 EV、隐含股权与隐含每股区间，同时反推当前价格隐含的倍数与相对可比中位数的溢价/折价。`valuation` 问题现在可由 `reverse_dcf` 或 `relative_valuation` 支撑，两者也可并用互相检验。
+
+- 模型：`scripts/analysis_models.py` 新增 kind 与 `peers`（name、multiple、可选 note 与 claim_ids）；确定性输出 `peer_count`、`peer_multiple_min/q1/median/q3/max/mean`、`implied_ev_median`、`implied_equity_median`、`per_share_median/low/high`、`implied_multiple_at_price`，可比中位隐含每股为正时输出 `price_vs_peer_median`。分位采用线性插值，结果与 peer 顺序无关。
+- 契约：`spec.peers` 逐项须引用 fact / price / consensus，wrapper 须写 `peer_set_rationale`；相对估值同样要求 observed 价格、`instrument` 与来源 `market_quote` 的 value / unit / instrument 精确一致；输出 inference 的 basis 须覆盖全部输入与 peer claims。`valuation` 的 market.assessed 关联模型放宽为 `reverse_dcf` 或 `relative_valuation` 二选一。
+- 边界：metric 必须为正（亏损或负基数不能套倍数）；目标指标须与倍数同口径（EV/EBITDA、EV/Sales 对 metric 扣净债务，P/E 对净利润）；comps 只回答相对可比集贵不贵，不产出目标价，也不证明可比集选对；样本量 n 与四分位必须同时披露。
+- 渲染：模型附录新增「可比公司倍数」表与「可比公司选择」说明，由冻结的 spec.peers 生成；无 peers 的旧模型渲染字节不变，微软示例哈希继续通过。
+- 测试：新增相对估值算术、边界、证据绑定、重算伪造、peers 越界使用及归档往返用例，全套 205 个测试通过。
+
+- [分析方法](skills/research/references/analysis-methods.md)
+- [迭代计划与待办](docs/iteration/README.md)
+
 ## 2026-11-06 · 公开仓库整理
 
 保持插件源码版本 **0.6.0**，不改变研究协议及既有数据根的兼容行为。

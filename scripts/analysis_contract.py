@@ -14,12 +14,12 @@ from pathlib import Path
 METHODS = {
     "change_explanation": {"method": "comparative_attribution", "inputs": ["performance_and_benchmark", "event_timeline", "prior_expectations"], "test": True, "models": []},
     "operating_outlook": {"method": "driver_bridge", "inputs": ["volume_price_or_revenue", "margins", "cash_requirements"], "test": True, "models": ["operating_bridge", "free_cash_flow"]},
-    "valuation": {"method": "reverse_valuation", "inputs": ["timestamped_price", "shares_and_net_debt", "cash_flow", "discount_and_terminal_assumptions"], "test": True, "models": ["reverse_dcf"]},
+    "valuation": {"method": "reverse_valuation", "inputs": ["timestamped_price", "shares_and_net_debt", "cash_flow", "discount_and_terminal_assumptions"], "test": True, "models": ["reverse_dcf", "relative_valuation"]},
     "event_forecast": {"method": "reference_class_scenarios", "inputs": ["resolution_contract", "reference_class", "conditional_drivers"], "test": True, "models": []},
     "theme_transmission": {"method": "transmission_bottleneck", "inputs": ["demand_to_cash_chain", "cancellation_and_delivery", "profit_capture"], "test": True, "models": []},
     "commitment_check": {"method": "commitment_reconciliation", "inputs": ["dated_commitment", "conditions_and_authority", "observed_action"], "test": False, "models": []},
 }
-MODEL_KINDS = {"operating_bridge", "free_cash_flow", "dcf", "reverse_dcf"}
+MODEL_KINDS = {"operating_bridge", "free_cash_flow", "dcf", "reverse_dcf", "relative_valuation"}
 IDENTIFIER = re.compile(r"^[A-Za-z][A-Za-z0-9_.-]*$")
 
 
@@ -289,11 +289,40 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
                     errors.append(path + "." + name + " observed input must cite fact/price/consensus")
             if set(assumptions) != expected_assumptions:
                 errors.append(path + ".assumptions must match assumption inputs exactly")
-            if spec.get("kind") == "reverse_dcf":
+            peers = spec.get("peers")
+            if peers is not None or spec.get("kind") == "relative_valuation":
+                if spec.get("kind") != "relative_valuation":
+                    errors.append(path + ".spec.peers is only supported by relative_valuation")
+                elif not isinstance(peers, list) or not peers:
+                    errors.append(path + ".spec.peers must be a nonempty peer list")
+                else:
+                    seen_peers = set()
+                    for n, peer in enumerate(peers):
+                        peer_path = path + ".spec.peers[%d]" % n
+                        if not isinstance(peer, dict):
+                            errors.append(peer_path + " must be an object")
+                            continue
+                        name = peer.get("name")
+                        if not isinstance(name, str) or not name.strip():
+                            errors.append(peer_path + ".name is required")
+                        elif name.strip().casefold() in seen_peers:
+                            errors.append(peer_path + ".name duplicates another peer")
+                        else:
+                            seen_peers.add(name.strip().casefold())
+                        multiple = peer.get("multiple")
+                        if type(multiple) not in (int, float) or not multiple > 0:
+                            errors.append(peer_path + ".multiple must be a positive number")
+                        peer_refs = refs(peer.get("claim_ids"), peer_path + ".claim_ids")
+                        if any(claim_map[c].get("type") not in {"fact", "price", "consensus"} for c in peer_refs):
+                            errors.append(peer_path + ".claim_ids must cite fact/price/consensus evidence")
+                        input_claims.update(peer_refs)
+            if spec.get("kind") == "relative_valuation" and not _text(model.get("peer_set_rationale")):
+                errors.append(path + ".peer_set_rationale must explain why the peer set is comparable")
+            if spec.get("kind") in ("reverse_dcf", "relative_valuation"):
                 price = inputs.get("price", {})
                 price_refs = price.get("claim_ids", []) if isinstance(price, dict) else []
                 if not isinstance(price, dict) or price.get("role") != "observed" or not isinstance(price_refs, list) or not price_refs or any(not isinstance(c, str) or c not in claim_map or claim_map[c].get("type") != "price" for c in price_refs):
-                    errors.append(path + " reverse_dcf requires an observed price claim")
+                    errors.append(path + " valuation model requires an observed price claim")
                 if not _text(model.get("instrument")):
                     errors.append(path + ".instrument must identify the priced security")
                 if isinstance(sources, dict) and isinstance(price, dict):
@@ -369,8 +398,11 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
                 output_refs = model.get("output_claim_ids")
                 if not isinstance(output_refs, list) or any(not isinstance(v, str) for v in output_refs) or not set(output_refs).issubset(set(market_refs)):
                     errors.append("market assessment must cite linked model output claims")
-        if kind == "valuation" and not any(m.get("id") in links and isinstance(m.get("spec"), dict) and m["spec"].get("kind") == "reverse_dcf" for m in models if isinstance(m, dict)):
-            errors.append("valuation market assessment requires a linked reverse_dcf model")
+        if kind == "valuation" and not any(
+                m.get("id") in links and isinstance(m.get("spec"), dict)
+                and m["spec"].get("kind") in {"reverse_dcf", "relative_valuation"}
+                for m in models if isinstance(m, dict)):
+            errors.append("valuation market assessment requires a linked reverse_dcf or relative_valuation model")
     elif links or (status == "missing" and market_refs):
         errors.append("missing/not_applicable market must not claim assessed models or missing evidence")
     return errors

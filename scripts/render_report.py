@@ -395,6 +395,14 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
     for model in analysis["models"]:
         yield ("h3", model["description"])
         yield ("p", "模型：" + model["spec"]["kind"] + "；币种：" + model["currency"] + "；金额与股数共同缩放：" + model["scale"] + "；期间：" + model["period"] + "；范围：" + model["scope"])
+        peers = model["spec"].get("peers")
+        if peers:
+            peer_claims = list(dict.fromkeys(cid for peer in peers for cid in peer.get("claim_ids", [])))
+            if model.get("peer_set_rationale"):
+                yield ("p", "可比公司选择：" + model["peer_set_rationale"], peer_claims)
+            yield ("table", {"title": "可比公司倍数", "columns": ["可比公司", "倍数", "备注"],
+                             "rows": [[peer["name"], peer["multiple"], peer.get("note", "")] for peer in peers],
+                             "claim_ids": peer_claims})
         yield ("table", {"title": "观察值与假设", "columns": ["变量", "数值", "单位", "性质", "假设理由"],
                          "rows": [[name, v["value"], v["unit"], v["role"], model["assumptions"].get(name, "")] for name, v in model["spec"]["inputs"].items()],
                          "claim_ids": list(dict.fromkeys(cid for v in model["spec"]["inputs"].values() for cid in v["claim_ids"]))})

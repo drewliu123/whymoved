@@ -22,12 +22,16 @@ def spec(kind="dcf", **overrides):
         "reverse_dcf": {"free_cash_flow": 100, "discount_rate": .1,
                         "terminal_growth": 0, "years": 2, "net_debt": 100,
                         "shares": 10, "price": 110, "growth_low": -.5, "growth_high": .5},
+        "relative_valuation": {"metric": 100, "net_debt": 20, "shares": 10, "price": 15},
     }
     values = dict(defaults[kind], **overrides)
-    return {"kind": kind, "inputs": {
+    item = {"kind": kind, "inputs": {
         name: {"value": value, "unit": MODEL_UNITS[kind][name],
                "role": "assumption", "claim_ids": []} for name, value in values.items()},
         "sensitivity": []}
+    if kind == "relative_valuation":
+        item["peers"] = [{"name": "A", "multiple": 8}, {"name": "B", "multiple": 12}]
+    return item
 
 
 def value(result, name):
@@ -254,7 +258,9 @@ class ModelTests(unittest.TestCase):
                 ("dcf", [{"input": "discount_rate", "values": [.15, .2]},
                          {"input": "growth", "values": [0]}]),
                 ("reverse_dcf", [{"input": "price", "values": [100, 120]},
-                                 {"input": "discount_rate", "values": [.15]}])):
+                                 {"input": "discount_rate", "values": [.15]}]),
+                ("relative_valuation", [{"input": "metric", "values": [90, 110]},
+                                        {"input": "shares", "values": [5]}])):
             item = spec(kind)
             item["sensitivity"] = scenarios
             original = copy.deepcopy(item)
@@ -315,6 +321,92 @@ class ModelTests(unittest.TestCase):
                 else:
                     self.assertTrue(payload["errors"])
             self.assertEqual(sorted(p.name for p in Path(directory).iterdir()), ["input.json"])
+
+
+class RelativeValuationTests(unittest.TestCase):
+    def peers(self, *multiples):
+        return [{"name": "P%d" % index, "multiple": multiple}
+                for index, multiple in enumerate(multiples)]
+
+    def test_peer_distribution_and_implied_value(self):
+        item = spec("relative_valuation")
+        item["peers"] = self.peers(8, 10, 12, 14)
+        result = compute_model(item)
+        expected = {"peer_count": 4, "peer_multiple_min": 8, "peer_multiple_q1": 9.5,
+                    "peer_multiple_median": 11, "peer_multiple_q3": 12.5,
+                    "peer_multiple_max": 14, "peer_multiple_mean": 11,
+                    "implied_ev_median": 1100, "implied_equity_median": 1080,
+                    "per_share_median": 108, "per_share_low": 93, "per_share_high": 123,
+                    "implied_multiple_at_price": 1.7}
+        for name, number in expected.items():
+            self.assertAlmostEqual(value(result, name), number, msg=name)
+        self.assertAlmostEqual(value(result, "price_vs_peer_median"), 15 / 108 - 1)
+        self.assertEqual(result["outputs"]["peer_count"]["unit"], "count")
+        self.assertEqual(result["outputs"]["per_share_median"]["unit"], "currency/share")
+
+    def test_peer_order_does_not_change_the_result(self):
+        first, second = spec("relative_valuation"), spec("relative_valuation")
+        first["peers"] = self.peers(14, 8, 12, 10)
+        second["peers"] = self.peers(8, 10, 12, 14)
+        self.assertEqual(compute_model(first)["outputs"], compute_model(second)["outputs"])
+        self.assertEqual(first["peers"][0]["name"], "P0")
+
+    def test_single_peer_and_net_cash(self):
+        item = spec("relative_valuation", net_debt=-50)
+        item["peers"] = self.peers(10)
+        result = compute_model(item)
+        for name in ("peer_multiple_min", "peer_multiple_median", "peer_multiple_max"):
+            self.assertEqual(value(result, name), 10)
+        self.assertEqual(value(result, "implied_equity_median"), 1050)
+        self.assertEqual(value(result, "per_share_median"), 105)
+        self.assertEqual(value(result, "peer_count"), 1)
+
+    def test_nonpositive_implied_equity_omits_premium(self):
+        item = spec("relative_valuation", net_debt=5000)
+        item["peers"] = self.peers(8, 12)
+        result = compute_model(item)
+        self.assertLess(value(result, "per_share_median"), 0)
+        self.assertNotIn("price_vs_peer_median", result["outputs"])
+
+    def test_metric_must_be_positive(self):
+        for bad in (0, -100):
+            item = spec("relative_valuation", metric=bad)
+            item["peers"] = self.peers(10)
+            with self.subTest(metric=bad), self.assertRaisesRegex(ValueError, "metric"):
+                compute_model(item)
+
+    def test_peer_set_is_required_and_validated(self):
+        item = spec("relative_valuation")
+        del item["peers"]
+        with self.assertRaisesRegex(ValueError, "peers"):
+            compute_model(item)
+        for invalid in ([], {}, "peers", [None], [{}], [{"name": "A"}],
+                        [{"name": "", "multiple": 10}], [{"name": "A", "multiple": 0}],
+                        [{"name": "A", "multiple": -1}], [{"name": "A", "multiple": True}],
+                        [{"name": "A", "multiple": "10"}], [{"name": "A", "multiple": math.nan}],
+                        [{"name": "A", "multiple": 10, "extra": 1}],
+                        [{"name": "A", "multiple": 10, "note": 1}],
+                        [{"name": "A", "multiple": 10, "claim_ids": None}],
+                        [{"name": "A", "multiple": 10, "claim_ids": "C1"}],
+                        [{"name": "A", "multiple": 10, "claim_ids": [1]}],
+                        [{"name": "A", "multiple": 10, "claim_ids": [""]}],
+                        [{"name": "A", "multiple": 10}, {"name": " a ", "multiple": 12}]):
+            bad = copy.deepcopy(item)
+            bad["peers"] = invalid
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError):
+                compute_model(bad)
+
+    def test_peers_only_belong_to_relative_valuation(self):
+        item = spec()
+        item["peers"] = self.peers(10)
+        with self.assertRaisesRegex(ValueError, "only supported"):
+            compute_model(item)
+
+    def test_overflow_is_readable(self):
+        item = spec("relative_valuation", metric=1e308)
+        item["peers"] = self.peers(10)
+        with self.assertRaises(ValueError):
+            compute_model(item)
 
 
 if __name__ == "__main__":

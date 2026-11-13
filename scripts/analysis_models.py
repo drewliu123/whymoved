@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Compute fixed, deterministic economic models using Python 3.9+ only.
 
-Units are canonical labels: currency, ratio, year, shares, currency/share.
+Units are canonical labels: currency, ratio, year, shares, currency/share, count.
 All currency and share quantities in one spec must use consistent scaling.
 Evidence semantics of role and claim_ids are validated by the caller.
+
+relative_valuation additionally accepts a `peers` list (name, multiple,
+optional note and claim_ids) and reports the peer multiple distribution, the
+implied value range applied to the target metric, and the multiple that the
+observed price implies. It is arithmetic on a selected peer set, not proof
+that those peers are comparable.
 """
 
 import argparse
@@ -33,6 +39,10 @@ MODEL_UNITS = {
         "terminal_growth": "ratio", "years": "year",
         "net_debt": "currency", "shares": "shares", "price": "currency/share",
         "growth_low": "ratio", "growth_high": "ratio",
+    },
+    "relative_valuation": {
+        "metric": "currency", "net_debt": "currency",
+        "shares": "shares", "price": "currency/share",
     },
 }
 
@@ -69,7 +79,7 @@ def _ranges(kind, values):
             raise ValueError(name + " must be greater than -1")
         if name in ("base_revenue", "depreciation", "capex") and value < 0:
             raise ValueError(name + " must be nonnegative")
-        if name in ("shares", "price", "discount_rate") and value <= 0:
+        if name in ("shares", "price", "discount_rate", "metric") and value <= 0:
             raise ValueError(name + " must be positive")
         if name == "free_cash_flow" and value <= 0:
             raise ValueError("free_cash_flow must be positive for valuation")
@@ -84,6 +94,53 @@ def _ranges(kind, values):
 
 def _output(value, unit):
     return {"value": _number(value, "model output"), "unit": unit}
+
+
+def _peer_rows(spec):
+    """Validate the peer set used by relative valuation; order is preserved."""
+    peers = spec.get("peers")
+    if not isinstance(peers, list) or not peers:
+        raise ValueError("relative_valuation requires a nonempty peers list")
+    seen, rows = set(), []
+    for n, peer in enumerate(peers):
+        label = "peers[%d]" % n
+        _fields(peer, ("name", "multiple"), ("note", "claim_ids"), label)
+        name = peer["name"]
+        if not isinstance(name, str) or not name.strip():
+            raise ValueError(label + ".name must be nonempty text")
+        key = name.strip().casefold()
+        if key in seen:
+            raise ValueError(label + ".name duplicates another peer")
+        seen.add(key)
+        multiple = _number(peer["multiple"], label + ".multiple")
+        if multiple <= 0:
+            raise ValueError(label + ".multiple must be positive")
+        if "note" in peer and not isinstance(peer["note"], str):
+            raise ValueError(label + ".note must be text")
+        claim_ids = peer.get("claim_ids")
+        if "claim_ids" in peer and (not isinstance(claim_ids, list) or any(
+                not isinstance(item, str) or not item.strip() for item in claim_ids)):
+            raise ValueError(label + ".claim_ids must be a list of nonempty strings")
+        row = {"name": name.strip(), "multiple": multiple}
+        if "note" in peer:
+            row["note"] = peer["note"]
+        if "claim_ids" in peer:
+            row["claim_ids"] = list(claim_ids)
+        rows.append(row)
+    return rows
+
+
+def _percentile(sorted_values, fraction):
+    """Linear-interpolated percentile of an ascending nonempty list."""
+    if len(sorted_values) == 1:
+        return sorted_values[0]
+    position = (len(sorted_values) - 1) * fraction
+    lower, upper = math.floor(position), math.ceil(position)
+    if lower == upper:
+        return sorted_values[lower]
+    return _number(sorted_values[lower] + (sorted_values[upper] - sorted_values[lower]) * (position - lower),
+                   "percentile")
+
 
 
 def _dcf(values, growth):
@@ -104,7 +161,7 @@ def _dcf(values, growth):
     return enterprise, discounted_terminal
 
 
-def _calculate(kind, values):
+def _calculate(kind, values, peers=None):
     _ranges(kind, values)
     if kind == "operating_bridge":
         base_profit = values["base_revenue"] * values["base_margin"]
@@ -132,6 +189,34 @@ def _calculate(kind, values):
             "per_share": _output(equity / values["shares"], "currency/share"),
             "terminal_value_share": _output(terminal / enterprise, "ratio"),
         }
+    if kind == "relative_valuation":
+        if not peers:
+            raise ValueError("relative_valuation requires a nonempty peers list")
+        multiples = sorted(peer["multiple"] for peer in peers)
+        low, median, high = (_percentile(multiples, fraction) for fraction in (.25, .5, .75))
+        metric, net_debt, shares = values["metric"], values["net_debt"], values["shares"]
+
+        def per_share(multiple):
+            return (multiple * metric - net_debt) / shares
+
+        result = {
+            "peer_count": _output(len(multiples), "count"),
+            "peer_multiple_min": _output(multiples[0], "ratio"),
+            "peer_multiple_q1": _output(low, "ratio"),
+            "peer_multiple_median": _output(median, "ratio"),
+            "peer_multiple_q3": _output(high, "ratio"),
+            "peer_multiple_max": _output(multiples[-1], "ratio"),
+            "peer_multiple_mean": _output(math.fsum(multiples) / len(multiples), "ratio"),
+            "implied_ev_median": _output(median * metric, "currency"),
+            "implied_equity_median": _output(median * metric - net_debt, "currency"),
+            "per_share_median": _output(per_share(median), "currency/share"),
+            "per_share_low": _output(per_share(low), "currency/share"),
+            "per_share_high": _output(per_share(high), "currency/share"),
+            "implied_multiple_at_price": _output((values["price"] * shares + net_debt) / metric, "ratio"),
+        }
+        if result["per_share_median"]["value"] > 0:
+            result["price_vs_peer_median"] = _output(values["price"] / result["per_share_median"]["value"] - 1, "ratio")
+        return result
     target = _number(values["price"] * values["shares"] + values["net_debt"], "target enterprise value")
     if target <= 0:
         raise ValueError("target enterprise value must be positive")
@@ -173,10 +258,16 @@ def compute_model(spec):
     Raises ValueError for malformed specs, invalid ranges, overflow, or an
     unbracketed reverse valuation. Does not mutate the supplied spec.
     """
-    _fields(spec, ("kind", "inputs"), ("sensitivity",), "spec")
+    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers"), "spec")
     kind = spec["kind"]
     if not isinstance(kind, str) or kind not in MODEL_UNITS:
         raise ValueError("unknown model kind")
+    if kind == "relative_valuation":
+        peers = _peer_rows(spec)
+    elif "peers" in spec:
+        raise ValueError("peers is only supported by relative_valuation")
+    else:
+        peers = None
     units = MODEL_UNITS[kind]
     _fields(spec["inputs"], units, (), "inputs")
     values = {}
@@ -210,14 +301,14 @@ def compute_model(spec):
         for value in row["values"]:
             _number(value, "sensitivity " + name)
     try:
-        outputs = _calculate(kind, values)
+        outputs = _calculate(kind, values, peers)
         sensitivity = []
         for row in scenarios:
             name = row["input"]
             for value in row["values"]:
                 changed = dict(values, **{name: value})
                 sensitivity.append({"input": name, "value": value, "unit": units[name],
-                                    "outputs": _calculate(kind, changed)})
+                                    "outputs": _calculate(kind, changed, peers)})
     except (OverflowError, ZeroDivisionError) as exc:
         raise ValueError("model arithmetic overflow or singular denominator") from exc
     return {"outputs": outputs, "sensitivity": sensitivity}

@@ -41,7 +41,7 @@ flowchart TD
 | [sources.py](../scripts/sources.py) | 来源契约、选择与去重审计 |
 | [check_claims.py](../scripts/check_claims.py) | 主张引用、来源资格、时间及推断关系校验 |
 | [analysis_contract.py](../scripts/analysis_contract.py) | 问题方法匹配、区分检验、模型与市场预期契约 |
-| [analysis_models.py](../scripts/analysis_models.py) | 经营桥、FCFF、DCF和反向DCF固定模型 |
+| [analysis_models.py](../scripts/analysis_models.py) | 经营桥、FCFF、DCF、反向DCF和可比公司相对估值固定模型 |
 | [render_report.py](../scripts/render_report.py) | 从冻结报告生成同源Markdown和HTML |
 | [research_run.py](../scripts/research_run.py) | 新建、更新、读取、比较与不可覆盖归档 |
 | [sec_data.py](../scripts/sec_data.py) | 可选SEC披露取证入口，通过独立运行时使用EdgarTools |

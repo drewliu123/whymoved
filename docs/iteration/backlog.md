@@ -1,0 +1,133 @@
+# 迭代待办（Backlog）
+
+状态图例：`待认领` → `进行中` → `待验证` → `已完成` / `搁置（理由）`
+优先级：P0 = 投研方法硬缺口；P1 = 显著提升研究深度；P2 = 支撑性/工程性。
+
+排序原则：价值（是否让研究更像分析师做的事）÷ 成本（改动面、契约风险）。**同一轮只认领一张卡，且不与其他卡的写文件范围重叠。**
+
+> 2026-11-14 修订：独立审计（专业分析师视角）指出两个比原 P0 更便宜、更关键的缺口——(a) `calculations[]` 从不重算，报告里除 5 个固定模型外所有数字都不可复算，且实盘 run 已出现「把第二个结果塞进 result.unit」的事故；(b) 事实只有文本，没有「数值+单位+期间+范围」结构，导致量价、质量、comps 下游各自发明输入格式。二者已插到最前，原排期顺延。
+
+---
+
+## P0-0a 可复算的派生计算（calculations op 白名单）
+
+- 状态：待认领（下一轮）
+- 价值：HIGH / 成本：S–M。这是最便宜的高价值改动，且修的是**已经发生的真实事故**。
+- 现状：`report.calculations[]` 只校验有限数值、单位与引用，**从不执行也不重算**（[render_report.py:217](../scripts/render_report.py)）。实盘 run `R20261112T153326Z`（NVDA）把 FY27 EPS 与 P/E 塞进 `result.unit` 字符串，全篇估值结论的支点既不是输入也不是结果，任何校验都碰不到。
+- 方案：
+  1. calculation 行加**可选** `op`，白名单算子：`ratio`、`growth`、`cagr`、`sum`、`product`、`difference`、`pct_change`、`share_of`、`bridge_add`。
+  2. `inputs` 用 claim_id 或 calculation_id 引用，`precision` 明确舍入位数。
+  3. 命中白名单 → 重算并与 `result` 比对（相对容差 1e-9）；未命中 → 保持今天的「仅记录」，渲染明确标注差异。
+  4. 渲染区分「已重算 / 仅记录」，并在附录打印公式与输入值。
+- 验收：旧 formula-only 行继续合法；白名单算子有正例+篡改用例；嵌套深度 ≤2；不允许来源文本当表达式；归档往返一致。
+- 风险：滑向自制公式语言 → 硬性限制算子数、嵌套深度、禁止自由表达式；它只证明算术一致，不证明输入值等于原文（那属于 P0-0b）。
+- 主要文件：`scripts/render_report.py`（validate_calculation_rows 与渲染）、新 `scripts/calculations.py` 或复用、`tests/test_reports.py`、`skills/research/references/memo-template.md`、CHANGELOG
+
+## P0-0b 数值事实结构（claim.metric）
+
+- 状态：待认领
+- 价值：HIGH / 成本：M。是财务质量、驱动建模、comps 一致性的共同前提。
+- 现状：claim 只有 `{id, text, type, as_of, sources, basis}`，数字只活在自然语言里；SEC 入口保留了 period_type / YTD / dimensions / scope，但下游没有任何地方消费。YTD 当季度、币种缩放不一致、分部当合并，全靠提示词警告。
+- 方案：fact / consensus / price 三类 claim 加**可选** `metric`：`{name, value, unit, currency, scale, period_start, period_end, period_type: fy|quarter|ytd|ltm|instant, scope: consolidated|segment:<name>, basis: gaap|adjusted, locator}`。
+  - `check_claims` 增加：同一 `name` 在不同 claim 间 unit/currency/scale/period_type 必须一致；显式 `comparison_with` 的一对 claim 若 period_type 不同则报错；模型输入的 metric 期间须落在 wrapper.period 内。
+  - **只在字段存在时校验**，旧档案零迁移。
+- 验收：正例/反例；旧 claim 不受影响；渲染不改；与 P0-0a 成对上线（否则「已重算」会制造虚假安心）。
+- 风险：契约膨胀与「假强制」→ 不设必填；只在显式比较关系时强制期间一致性；`basis: adjusted` 显式标记，防止非 GAAP 混入 GAAP 比较。
+
+## P0-1 相对估值：可比公司分析（comps）
+
+- 状态：✅ 已完成（Cycle 1，见 [log.md](log.md)）
+- 交付：`relative_valuation` 固定模型（peers 分布、隐含 EV/股权/每股区间、隐含倍数、相对中位数溢价）、契约与证据绑定、附录渲染、13 个新测试、文档与 0.7.0。
+- 遗留增强：`implied_multiple_percentile`（现价隐含倍数在 peer 分布中的分位）。
+
+## P0-2 财务质量与法证筛查
+
+- 状态：待认领（依赖 P0-0b 的数值层）
+- 价值：HIGH / 成本：M。「增长是现金还是会计」是回报最高的一问；当前完全没有比率、应计、周转。
+- 方案：`scripts/financial_quality.py`（或 P0-0b 之后的模型 kind），输入两期以上 metric facts，输出：
+  - 毛利率/营业利润率/净利率趋势；CFO/NI 现金转化；应计比率 `(NI−CFO)/平均总资产`
+  - DSO / DIO / DPO / 现金周期；capex/D&A；capex/收入；SBC/收入
+  - ROIC（**打印投资资本定义**）；净股本变动（回购 vs 稀释）
+  - 红旗清单：每条含阈值、依据字段、解释；只作提示不作结论
+- 验收：正例+边界（负利润、零分母、缺字段拒绝计算而非猜）；行业 profile 可覆盖阈值；文档写明「经验区间」。
+- 主要文件：新 `scripts/financial_quality.py`、`tests/test_financial_quality.py`、references 新文档、README/architecture 入口表
+
+## P0-3 驱动式经营模型（driver build）
+
+- 状态：待认领
+- 价值：HIGH / 成本：M–L。现有 operating_bridge 是 4 个标量，文档自己承认不含量价效应；而行业分析本体就是分部与量价。
+- 方案：`driver_build`：`segments[] {name, base_revenue, volume_growth, price_growth | revenue_growth, margin}`；输出分段收入/利润贡献、量价结构利润率四效应、增量利润率 = Δ利润/Δ收入；**恒等式检查**：分部加总=合计、`(1+v)(1+p)` 复原收入、精确相等。
+- 验收：恒等式、零基数、负增长、单分部、分部利润加总与合并口径不一致时报错而非静默。
+- 风险：数组输入与现有扁平 `_fields/_ranges` 冲突 → 需要真正输入 schema；6 个分部 = 18 个不可验证假设 → 每个驱动强制 assumption + 敏感性。
+- 主要文件：`scripts/analysis_models.py`、`scripts/analysis_contract.py`、`scripts/render_report.py`、测试、analysis-methods
+
+## P0-4 估值汇总表（football field）
+
+- 状态：待认领（依赖 P0-1；有 DCF 即可开工）
+- 价值：HIGH / 成本：S。IC 要的就是一张表：方法 → 低/中/高每股 → 对现价隐含空间 → 主导假设。现在 DCF 与 comps 躺在两张附录表里，读者要自己动手，报告自然「没有结论」。
+- 方案：`report.valuation_summary` 从**已冻结模型输出**生成；行 = DCF 区间、reverse-DCF 隐含、comps 分位；列 = 低/中/高/每股/相对现价/主导假设。**不加权、不给概率、不给「公允价值」单值**，reverse-DCF 行标注「这是预期，不是估值」。
+- 验收：篡改行数值不能通过（重算或用模型输出）；无模型时该块不存在而非空表；双格式渲染。
+
+## P0-5 催化日历（与 triggers 共用 id 空间）
+
+- 状态：待认领
+- 价值：HIGH / 成本：S–M。催化目前只是机会对象里的文字与自由文本 watch；没有日期、没有状态机、无法回答「上周该看的东西看了吗」。
+- 方案：`report.catalysts[]`：`{id, by（日期或窗口）, type, expectation, discriminating_signal, claim_ids, status: upcoming|hit|not_hit|expired|not_checked}`；渲染按日期排序的附录时间线；提供 `--due N` 查询。
+- **关键约束**：不能另建第二套触发系统。`opportunity.triggers` 改为它的视图（同 id、同 by），全仓一套触发体系。
+- 验收：schema 校验；跨 run 状态继承；日历不宣称「已被监控」。
+
+## P0-6 跨轮次研究记忆（research memory）
+
+- 状态：待认领
+- 价值：HIGH / 成本：M。「持续性投研」的核心：回答「我们之前对 X 判断过什么、依据哪条证据、现在改变了吗」；也是唯一能防事后诸葛的东西。
+- 方案：`scripts/research_memory.py index|query`：扫描 `journal/runs/*/`，抽取实体（plan.entity + 代码）、as_of、判断、assessment 状态、触发 id、claim 类型，生成可重建、幂等、带内容哈希的 `journal/index.json`；按实体查询返回时间排序的判断与冻结文件链接；`--as-of` 给当时视图。
+- 约束：只存指针不合并数字；不产生 claim；不改归档；每条打印父 run 的 as_of；禁止用旧 inference 直接支撑新结论。
+
+## P1-1 一致预期序列、修订与指引 vs 实际
+
+- 状态：待认领（数据受限）
+- 方案：(a) consensus claim 加 `series {series_id, metric, target_period, provider, n, median, low, high, as_of}`，用 P0-0a 的 growth 算子算修订；(b) claim 加 `guidance {metric, target_period, midpoint, range, as_of, company_guidance: true}`，契约硬规则：**指引永远不能充当 consensus**；(c) 渲染「预期 vs 实际 vs 修订」小表。
+- 风险：数据在付费墙后，做成字段后长期为空 → 要求 provider + n + method 三件套；`missing` 为默认；禁止拿分析师目标价当 consensus。
+
+## P1-2 数据新鲜度与来源冲突
+
+- 状态：待认领
+- 方案：(a) `check_claims` 计算 `quote_age = as_of − quoted_at/published_at`，按类型阈值（用于 market.assessed 的 price 超时 → error，其余 warning）；(b) `report.conflicts[] {metric, candidates[{source_id, value}], adopted_source_id, rule, reason}`，渲染脚注表。
+- 验收：阈值可配置；长周期研究不被误伤；冲突仅在真实并存时要求。
+
+## P1-3 情景集 + 龙卷风敏感性
+
+- 状态：待认领
+- 方案：允许 N 个同 kind 模型带 `scenario: bear|base|bull` 并共享 driver-set id；契约要求至少一上一下、输入全为 assumption；`sensitivity_mode: tornado` 输出按影响幅度排序。两者都**不给概率**；≤4 个情景；图注写明各输入独立假设。
+
+## P1-4 块级渲染 / IC memo 包
+
+- 状态：待认领
+- 方案：(a) findings 加 `table_ids` 内联；(b) `charts[]` 支持多序列与日期轴，同源数据表保留；(c) 列级 units；(d) `memo_pack`：一页判断 + variant + 估值汇总 + 催化 + 证伪条件。
+- 风险：`render_report.py` 是爆炸半径最大的文件；schema 变化需旧档案仍可渲染。
+
+## P2-1 事件研究与历史类比
+
+- 状态：待认领
+- 方案：`scripts/event_study.py`：给定事件样本与收益序列，计算 [-N,+N] 窗口累计收益分布、胜率、中位数；样本逐条引用来源；禁止事后挑样本；报 n 不给 p 值。
+
+## P2-2 Watchlist 摘要
+
+- 状态：待认领（P0-6 的派生产物）
+- 方案：汇总多个 run 的判断变化生成 digest，不另起扫描器。
+
+## P2-3 安装与开发文档补齐
+
+- 方案：新脚本、新模型写进 architecture 入口表与 development 测试说明。
+
+## 搁置
+
+- **研究质量自评分脚本**：结构性自评可刷分、易官僚化，red-team 已在做语义审查。除非能设计出不可作弊的判据，否则不做。
+- **WACC/CAPM 构建**：beta 选择不可验证，确定性 CAPM 只增加精度不增加真值。保持 `discount_rate` 为显式假设 + 区间敏感性。
+- **SOTP / NAV**：依赖分部与资产清单，L 成本、极高假精度风险，等 P0-3 落地后再评估。
+
+---
+
+## 已完成
+
+- P0-1 相对估值（comps）— 2026-11-14，Cycle 1
