@@ -4,6 +4,18 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.25.0 · 行业传导图
+
+主题研究里「需求 → 产能 → 交付 → 毛利」通常是一段话，断点靠感觉。新增 [transmission.py](scripts/transmission.py)：把传导链变成可校验的图。
+
+- 节点：安全 id、标签、种类（demand/capex/capacity/price/margin/policy/cash/other）、至少一条可观察指标、可选 claim_ids。
+- 边：from/to、机制、时滞；自环、重复边、悬空引用直接拒绝；环路只提示不判错。
+- 瓶颈：明确一个节点与理由；输出每个节点相对瓶颈的方向（upstream / downstream / bottleneck / unrelated）、到瓶颈的跳数、从各源头到瓶颈的路径。
+- 告警：无关节点、环路、未挂 claim_ids 的节点；配合 `--claims` 可核对引用是否真实存在。
+- 边界：不判断机制真假；跳数不是时间（时滞在各边 lag 里，不可加总）；瓶颈由研究者指定。
+- 测试：新增 [test_transmission.py](tests/test_transmission.py) 11 个用例（形状、引用、方向/距离/路径、多源头、无关节点、环路、无证据节点、CLI），全套 398 个测试通过。
+- 文档：[transmission.md](skills/research/references/transmission.md) 含完整示例、输出说明与边界。
+
 ## 0.24.0 · 判断沿革（thread）
 
 研究记忆已经记录每轮的 `parent_run`，但没有把它变成可读的沿革。新增 `research_memory.py thread --home DIR <run_id>`：

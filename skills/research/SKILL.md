@@ -65,7 +65,7 @@ fact_lookup走简答路径：核对官方来源、目标期间/口径与发布�
 
 新plan写`analysis_version: 1`及research_design：question_kind、method、rationale、baseline、price_relevance、mechanism_chain、discrimination_tests。hypotheses使用稳定id和explanation；每个检验写id、observe、source、by，以及至少两个不同解释各自不同的outcomes（hypothesis_id / prediction）。除commitment_check外均须竞争解释与区分检验；承诺核对仍须记录解释，可在不需要竞争检验时保留空列表。queries每条写test_ids，背景查询可为空，每个检验须有对应查询。问题、截点、比较口径、查询用途与预算仍完整保存。
 
-不要把用户问题偷换成更容易回答的问题。资产归因先有实际表现与同期基准；主题先找到传导断点；事件预测先定义可验证目标（非交易预测用官方公布口径，合约决策先读交易规则），需要历史类比时用[event-study.md](references/event-study.md)的`scripts/event_study.py`跑事前选定的参考类（报n与分布，不给p值）；机构先配对承诺和行动。
+不要把用户问题偷换成更容易回答的问题。资产归因先有实际表现与同期基准；主题先按[transmission.md](references/transmission.md)用`scripts/transmission.py`画出节点、机制、时滞与瓶颈，再判断断点；事件预测先定义可验证目标（非交易预测用官方公布口径，合约决策先读交易规则），需要历史类比时用[event-study.md](references/event-study.md)的`scripts/event_study.py`跑事前选定的参考类（报n与分布，不给p值）；机构先配对承诺和行动。
 
 分析性问题先读[context.md](references/context.md)，按相关性检查长期条件、近期环境、事前预期、新增变化与传导、后续验证。时间尺度随传导周期选择，不限于最近30天；纯事实查询按需省略。长期条件解释承压或受益条件，新增信息与预期修订解释变化时点。把选中的背景及时间尺度写入rationale，具体取证缺口写入queries，取舍与未查明项记入audit；沿用现有机制链和区分检验，不机械新增五个检索任务或正文栏目。
 

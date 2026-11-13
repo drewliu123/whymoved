@@ -4,6 +4,56 @@
 
 ---
 
+## Cycle 21 · 2026-11-14 · 行业传导图
+
+**对应卡片**：P2-4（新增；目标里的「行业传导」）
+
+**问题**：主题研究里「需求 → 产能 → 交付 → 毛利」通常是一段话：断点靠感觉，机制没有方向，时滞没有窗口，读者无法核对哪一环最可能断。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/transmission.py`（新） | 节点/边/瓶颈校验；方向（upstream/downstream/bottleneck/unrelated）、跳数、源头到瓶颈路径；无关节点、环路、无证据节点告警；可选 `--claims` 核对引用 |
+| `tests/test_transmission.py`（新） | 11 个用例：形状、引用、方向/距离/路径、多源头、无关节点、环路、无证据节点、CLI |
+| 文档 | 新增 [transmission.md](../../skills/research/references/transmission.md)；SKILL、architecture；CHANGELOG 0.25.0 |
+
+**关键设计决定**
+
+1. **方向比「排一条链」重要**：第一版把不能到达瓶颈的节点都叫「可能只是背景」，但瓶颈**下游**的节点（交付、毛利）本来就到不了瓶颈，却被误报。改成 upstream/downstream/bottleneck/unrelated 四种方向后，告警只针对真正无关的节点。
+2. **瓶颈由研究者指定**：工具不自动挑「最重要的节点」。换瓶颈会让所有方向判断翻转，这个选择必须写在正文里。
+3. **跳数不是时间**：`lag` 是每条边的时间窗口，工具不做加总、不换算成一条时间线——那会制造不存在的精度。
+4. **环路只提示**：价格与需求可能真的互相反馈；把环路判成错误会逼研究者隐藏真实的反馈关系。
+5. **observables 必须可核对**：空泛的「景气度」不接受，至少要有订单、排队时长、交付周期这类可观察项。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 398 tests ... OK
+```
+
+- 示例链 DEMAND→GRID→EQUIP→MARGIN，瓶颈 GRID：方向为 upstream(DEMAND)、bottleneck(GRID)、downstream(EQUIP, MARGIN)，距离 DEMAND=1，路径 [[DEMAND, GRID]]。
+- 多源头：PRICE→GRID 追加后两条路径；POLICY→DEMAND 追加后距离 2、路径 [[POLICY, DEMAND, GRID]]。
+- 无关节点：新增无连线的 ISOLATED → direction unrelated 且出现在告警里。
+- 环路：EQUIP→DEMAND → 告警含「环路」，输出正常返回不死循环。
+- 无证据：移掉 DEMAND 的 claim_ids → 告警列出该节点。
+- 校验：未知 kind、空 observables、悬空 edge、自环、重复边、瓶颈缺失、未知 claim（带 --claims 时）全部拒绝。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 多一种分析师会用的方法：行业传导图 + 瓶颈定位，而不是一段叙述。
+2. 多回答一类问题：「这条链最可能在哪一环断、用什么指标核对、哪些环节其实无关」。
+3. 多一条可核实连接：节点与边都可挂 claim_ids，`--claims` 会核对是否真实存在。
+4. 边界更清楚：不判机制真假、跳数不等于时间、瓶颈是研究者的选择。
+
+**遗留**
+
+- 没有渲染进报告：目前是独立产物，把图写进正文仍需研究者组织。
+- 时滞不做加总，也没有「整条链总时滞」的区间推导；这是有意的，但如果要，需要区间算术而不是图算法。
+- 一个主题一张图；跨主题复用时需手工合并。
+
 ## Cycle 20 · 2026-11-14 · 判断沿革（thread）
 
 **对应卡片**：P0-6 遗留项（论点跟踪）
