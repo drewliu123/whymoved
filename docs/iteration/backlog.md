@@ -79,7 +79,7 @@
 
 - 状态：✅ 已完成（Cycle 2，见 [log.md](log.md)）
 - 价值：HIGH / 成本：S–M。这是最便宜的高价值改动，且修的是**已经发生的真实事故**。
-- 现状：`report.calculations[]` 只校验有限数值、单位与引用，**从不执行也不重算**（[render_report.py:217](../scripts/render_report.py)）。实盘 run `R20261112T153326Z`（NVDA）把 FY27 EPS 与 P/E 塞进 `result.unit` 字符串，全篇估值结论的支点既不是输入也不是结果，任何校验都碰不到。
+- 现状：`report.calculations[]` 只校验有限数值、单位与引用，**从不执行也不重算**（[render_report.py:217](../../scripts/render_report.py)）。实盘 run `R20261112T153326Z`（NVDA）把 FY27 EPS 与 P/E 塞进 `result.unit` 字符串，全篇估值结论的支点既不是输入也不是结果，任何校验都碰不到。
 - 方案：
   1. calculation 行加**可选** `op`，白名单算子：`ratio`、`growth`、`cagr`、`sum`、`product`、`difference`、`pct_change`、`share_of`、`bridge_add`。
   2. `inputs` 用 claim_id 或 calculation_id 引用，`precision` 明确舍入位数。
@@ -230,6 +230,7 @@
 
 ## 已完成
 
+- P4-6 文档链接与脚本引用校验 — 2026-11-14，Cycle 64
 - P4-5 教程可执行回归 — 2026-11-14，Cycle 63
 - P4-4 ROIC 数据补齐与税率推导 — 2026-11-14，Cycle 62
 - P4-3 多年路径进入一页纸 — 2026-11-14，Cycle 61

@@ -4,6 +4,22 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.64.0 · 文档链接与脚本引用校验
+
+新增 [tests/test_docs.py](tests/test_docs.py)：扫描 README、`docs/` 与 `skills/` 下的全部 Markdown，校验
+
+- 每个相对链接都能解析（跳过 http、锚点、mailto）；
+- 每个内联的 `scripts/*.py` 引用都指向真实文件（迭代日志作为历史记录豁免，允许提到已改名的文件）。
+
+首次运行抓出 4 处问题并修复：
+
+- `docs/iteration/backlog.md` 的 `render_report.py` 链接少一层 `../`；
+- `skills/research/SKILL.md` 的 `catalyst_calendar.py` 链接少一层；
+- `skills/research/references/financial-quality.md` 的示例链接少一层；
+- `docs/iteration/log.md` 仍提到已改名的 `scripts/calendar.py`——历史记录保留。
+
+测试：新增 3 个用例，全套 518 个测试通过。
+
 ## 0.63.0 · 教程可执行回归
 
 上一轮遗留：教程命令只在本地实跑，没有进 CI。

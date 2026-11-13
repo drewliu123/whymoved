@@ -105,7 +105,7 @@ python3 "$TY_DIR/scripts/financial_quality.py" "$WORK/statements.json"
 
 ## 真实示例
 
-[微软 FY2024–FY2025 盈利质量示例](../../examples/msft-quality/README.md) 使用已冻结的官方表格数字：毛利率 68.8%、现金转化 1.34、资本开支/折旧 1.89、增量利润率 52.2%，红旗为空；资产负债表科目缺失时 DSO/ROIC 等输出 `null`。
+[微软 FY2024–FY2025 盈利质量示例](../../../examples/msft-quality/README.md) 使用已冻结的官方表格数字：毛利率 68.8%、现金转化 1.34、资本开支/折旧 1.89、增量利润率 52.2%，红旗为空；资产负债表科目缺失时 DSO/ROIC 等输出 `null`。
 
 ```bash
 python3 "$TY_DIR/scripts/financial_quality.py" examples/msft-quality/statements.json
