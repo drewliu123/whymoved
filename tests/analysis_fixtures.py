@@ -44,6 +44,7 @@ def add_model(report, ledger, kind="operating_bridge", model_id="M1"):
         "reverse_dcf": {"free_cash_flow": 10, "discount_rate": .1, "terminal_growth": .02, "years": 5, "net_debt": 20, "shares": 10,
                         "price": 15, "growth_low": -.5, "growth_high": 1.0},
         "relative_valuation": {"metric": 100, "net_debt": 20, "shares": 10, "price": 15},
+        "driver_build": {"margin_delta": 0.0},
     }[kind]
     observed = {"base_revenue", "operating_profit", "free_cash_flow", "net_debt", "shares", "price", "metric"}
     assumption_id, output_id = "A" + model_id, "O" + model_id
@@ -66,13 +67,25 @@ def add_model(report, ledger, kind="operating_bridge", model_id="M1"):
         spec["peers"] = [{"name": "虚构可比甲", "multiple": 8, "claim_ids": ["C1"]},
                          {"name": "虚构可比乙", "multiple": 12, "claim_ids": ["C1"]},
                          {"name": "虚构可比丙", "multiple": 10, "claim_ids": ["C1"]}]
+    if kind == "driver_build":
+        spec["segments"] = [
+            {"name": "虚构分部甲", "base_revenue": 100, "volume_growth": 0.1,
+             "price_growth": 0.05, "margin": 0.2, "claim_ids": ["C1", assumption_id]},
+            {"name": "虚构分部乙", "base_revenue": 50, "volume_growth": -0.1,
+             "price_growth": 0.02, "margin": 0.1, "claim_ids": ["C1", assumption_id]},
+        ]
+        for segment in spec["segments"]:
+            for cid in segment["claim_ids"]:
+                if cid not in input_cids:
+                    input_cids.append(cid)
     claims.append({"id": output_id, "text": "固定模型在给定假设下的结果", "type": "inference",
                    "as_of": report["as_of"], "sources": [], "basis": list(input_cids)})
     ledger["claims"].extend(claims)
     parameter = {"operating_bridge": "scenario_margin", "free_cash_flow": "capex", "dcf": "growth",
-                 "reverse_dcf": "discount_rate", "relative_valuation": "metric"}[kind]
+                 "reverse_dcf": "discount_rate", "relative_valuation": "metric",
+                 "driver_build": "margin_delta"}[kind]
     sweep = {"scenario_margin": [.1, .2], "capex": [6, 10], "growth": [.05, .15],
-             "discount_rate": [.09, .11], "metric": [90, 110]}[parameter]
+             "discount_rate": [.09, .11], "metric": [90, 110], "margin_delta": [-.02, .02]}[parameter]
     spec["sensitivity"] = [{"input": parameter, "values": sweep}]
     model = {"id": model_id, "instrument": "FICTIONAL", "description": "虚构数据固定模型验收", "currency": "USD", "scale": "million (money and shares)",
              "period": "一年基期；DCF明确期5年", "scope": "虚构同一公司", "spec": spec, "assumptions": assumptions,

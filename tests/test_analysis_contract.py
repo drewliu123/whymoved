@@ -220,6 +220,62 @@ class AnalysisContractTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.check(bad)
 
+    def test_driver_build_supports_operating_outlook(self):
+        data = bundle("operating_outlook")
+        model = add_model(data[0], data[1], "driver_build")
+        self.check(data)
+        self.assertEqual(model["result"]["outputs"]["segment_count"]["value"], 2)
+        self.assertAlmostEqual(model["result"]["outputs"]["revenue"]["value"], 161.4)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            for word in ("分部驱动", "虚构分部甲", "volume_effect", "incremental_margin"):
+                self.assertIn(word, text)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            paths = []
+            for name, document in zip(("report", "claims", "sources", "plan"), data):
+                path = root / (name + ".json")
+                path.write_text(json.dumps(document, ensure_ascii=False), encoding="utf-8")
+                paths.append(path)
+            archived = research_run.archive_run(*paths, home=root / "home")
+            loaded = research_run.load_run(archived["run_id"], root / "home")
+            self.assertEqual(loaded["report"]["analysis"]["models"][0]["spec"]["segments"],
+                             data[0]["analysis"]["models"][0]["spec"]["segments"])
+
+    def test_driver_build_requires_evidenced_segments(self):
+        for mutate in (
+            lambda m: m["spec"].pop("segments"),
+            lambda m: m["spec"].update(segments=[]),
+            lambda m: m["spec"]["segments"][0].pop("claim_ids"),
+            lambda m: m["spec"]["segments"][0].update(claim_ids=["AM1"]),
+            lambda m: m["spec"]["segments"][0].update(claim_ids=["C1"]),
+            lambda m: m["spec"]["segments"][0].update(base_revenue=-1),
+            lambda m: m["spec"]["segments"][0].update(volume_growth=-1),
+            lambda m: m["spec"]["segments"][0].update(margin="0.2"),
+            lambda m: m["spec"]["segments"][0].update(name=m["spec"]["segments"][1]["name"]),
+        ):
+            data = bundle("operating_outlook")
+            add_model(data[0], data[1], "driver_build")
+            mutate(data[0]["analysis"]["models"][0])
+            with self.assertRaises(ValueError):
+                self.check(data)
+
+    def test_segments_are_rejected_outside_driver_build(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "operating_bridge")
+        data[0]["analysis"]["models"][0]["spec"]["segments"] = [
+            {"name": "A", "base_revenue": 1, "volume_growth": 0, "price_growth": 0,
+             "margin": 0, "claim_ids": ["C1", "AM1"]}]
+        with self.assertRaisesRegex(ValueError, "only supported"):
+            self.check(data)
+
+    def test_driver_build_result_cannot_be_forged(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "driver_build")
+        data[0]["analysis"]["models"][0]["result"]["outputs"]["revenue"]["value"] = 170
+        with self.assertRaisesRegex(ValueError, "recomputation"):
+            self.check(data)
+
     def test_relative_valuation_supports_valuation_question(self):
         data = comps_bundle()
         self.check(data)

@@ -4,6 +4,56 @@
 
 ---
 
+## Cycle 5 · 2026-11-14 · 驱动式经营模型（driver_build）
+
+**对应卡片**：P0-3
+
+**问题**：`operating_bridge` 只有收入增长与利润率两个标量，文档自己写明不含量价归因；分部、量价、增量利润率只能写成一句假设，再对这句假设做敏感性——用精确的桥包装未拆解的假设。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/analysis_models.py` | 新增 `driver_build`：`segments` 数组（name、base_revenue、volume_growth、price_growth、margin、claim_ids）+ 标量 `margin_delta`；输出收入、利润与四项效应 |
+| `scripts/analysis_contract.py` | `operating_outlook` 接受该模型；每段证据必须同时含 observed 与假设两类；段校验（重名、负基数、增长率 ≤ −1、类型）；`segments` 越界使用报错 |
+| `scripts/render_report.py` | 模型附录新增「分部驱动」表；无 segments 的报告字节不变 |
+| 测试 | 模型用例 7 个（恒等式、单分部、零增长、负利润率、越界、区间、敏感性），契约用例 4 个（支撑 operating_outlook、证据缺失、越界、篡改重算） |
+| 文档 | analysis-methods（模型表、恒等式、边界）、SKILL、memo-template、CHANGELOG 0.10.0 |
+
+**关键设计决定**
+
+1. **恒等式而不是近似**：`base×(1+v)(1+p) = base + volume_effect + price_effect + interaction_effect`，三项效应之和必须精确等于收入变化。第一版把 `price_effect` 写成 `base×(1+v)×p`，等于把交互项算了两遍；测试的恒等式断言当场暴露，改成 `base×p` 后才成立。这类原子级错误正是确定性模型存在的理由。
+2. **每段必须两类证据**：基期收入来自 fact/price/consensus，驱动（量、价、利润率）来自 inference/view。只有一类直接失败——防止把拍脑袋的分部拆解伪装成披露数据。
+3. **只保留一个标量输入**：`margin_delta` 表示统一利润率冲击，必须写成 assumption 并在 wrapper 解释。分部驱动本身不进 `inputs`，避免把「敏感性能扫所有分部参数」的错觉写进契约（那需要真正的多维情景，见 P1-3）。
+4. **边界写清**：分部独立、不建模共享成本与转移价、margin 是营业利润率、margin_delta 不是概率加权情景。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 269 tests ... OK
+```
+
+- 虚构两分部（100 @ +10% 量 / +5% 价 / 20% 利润率；50 @ −10% 量 / +2% 价 / 10% 利润率）：
+  收入 161.4（基期 150）、收入变化 11.4、效应 5 + 6 + 0.4 = 11.4 精确相等、利润 27.69、利润变化 2.69、增量利润率 23.6%。
+- `margin_delta = −0.02` → 利润 27.69 − 0.02×161.4 = 24.462，收入不变。
+- 契约负例：段只引 inference（缺 observed）→ `must include the observed base`；只引 observed（缺驱动）→ `must include the evidenced drivers`；`segments` 用于 DCF → `only supported by driver_build`；篡改收入 → `differs from deterministic recomputation`。
+- 冻结示例：`report.md` / `report.html` 仍逐字节相同。
+- 真实过程 bug：新增的 `claim_types` 局部变量最初命名为 `kinds`，遮蔽了模型 kind 集合，导致所有 operating_outlook 模型被判「与研究方法不匹配」；新增契约测试立刻抓到，已改名并复测。
+
+**投研意义增量**
+
+1. 多一种分析师会用的方法：分部量价拆解 + 增量利润率，而不是只给收入一个增长率。
+2. 多回答一类问题：「增长来自量还是价」「新增收入到底创造了多少利润」「哪个分部在拖累利润率」。
+3. 多一条可核实连接：每段基期收入与驱动分别挂到主张，恒等式由代码重算。
+4. 边界更清楚：单参数扫描不被说成情景分析，分部口径与共享成本限制写进文档。
+
+**遗留**
+
+- 分部表只展示驱动，不展示每段收入/利润贡献；下一步可以在渲染里补一列派生值（不新增输出结构）。
+- 敏感性只能扫全局 `margin_delta`，不能扫单个分部的量价；真正的多参数情景见 P1-3。
+- SOTP 仍不做：需要分部估值倍数与资产清单，假精度风险高。
+
 ## Cycle 4 · 2026-11-14 · 盈利质量与红旗筛查
 
 **对应卡片**：P0-2

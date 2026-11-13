@@ -5,6 +5,11 @@ Units are canonical labels: currency, ratio, year, shares, currency/share, count
 All currency and share quantities in one spec must use consistent scaling.
 Evidence semantics of role and claim_ids are validated by the caller.
 
+driver_build additionally accepts a `segments` list (name, base_revenue,
+volume_growth, price_growth, margin, claim_ids) and decomposes revenue into
+base, volume, price and interaction effects. It is arithmetic on stated
+segment assumptions, not proof that segments behave independently.
+
 relative_valuation additionally accepts a `peers` list (name, multiple,
 optional note and claim_ids) and reports the peer multiple distribution, the
 implied value range applied to the target metric, and the multiple that the
@@ -44,6 +49,7 @@ MODEL_UNITS = {
         "metric": "currency", "net_debt": "currency",
         "shares": "shares", "price": "currency/share",
     },
+    "driver_build": {"margin_delta": "ratio"},
 }
 
 
@@ -85,6 +91,8 @@ def _ranges(kind, values):
             raise ValueError("free_cash_flow must be positive for valuation")
         if name == "years" and (value != int(value) or not 1 <= value <= 50):
             raise ValueError("years must be an integer from 1 to 50")
+    if kind == "driver_build" and not -1 <= values["margin_delta"] <= 1:
+        raise ValueError("margin_delta must be between -1 and 1")
     if kind in ("dcf", "reverse_dcf"):
         if values["terminal_growth"] >= values["discount_rate"]:
             raise ValueError("terminal_growth must be less than discount_rate")
@@ -130,6 +138,45 @@ def _peer_rows(spec):
     return rows
 
 
+def _segment_rows(spec):
+    """Validate driver-build segments; order is preserved."""
+    segments = spec.get("segments")
+    if not isinstance(segments, list) or not segments:
+        raise ValueError("driver_build requires a nonempty segments list")
+    seen, rows = set(), []
+    for n, segment in enumerate(segments):
+        label = "segments[%d]" % n
+        _fields(segment, ("name", "base_revenue", "volume_growth", "price_growth", "margin"),
+                ("claim_ids",), label)
+        name = segment["name"]
+        if not isinstance(name, str) or not name.strip():
+            raise ValueError(label + ".name must be nonempty text")
+        key = name.strip().casefold()
+        if key in seen:
+            raise ValueError(label + ".name duplicates another segment")
+        seen.add(key)
+        base = _number(segment["base_revenue"], label + ".base_revenue")
+        if base < 0:
+            raise ValueError(label + ".base_revenue must be nonnegative")
+        volume = _number(segment["volume_growth"], label + ".volume_growth")
+        price = _number(segment["price_growth"], label + ".price_growth")
+        if volume <= -1:
+            raise ValueError(label + ".volume_growth must be greater than -1")
+        if price <= -1:
+            raise ValueError(label + ".price_growth must be greater than -1")
+        margin = _number(segment["margin"], label + ".margin")
+        claim_ids = segment.get("claim_ids")
+        if claim_ids is not None and (not isinstance(claim_ids, list) or any(
+                not isinstance(item, str) or not item.strip() for item in claim_ids)):
+            raise ValueError(label + ".claim_ids must be a list of nonempty strings")
+        row = {"name": name.strip(), "base_revenue": base, "volume_growth": volume,
+               "price_growth": price, "margin": margin}
+        if claim_ids is not None:
+            row["claim_ids"] = list(claim_ids)
+        rows.append(row)
+    return rows
+
+
 def _percentile(sorted_values, fraction):
     """Linear-interpolated percentile of an ascending nonempty list."""
     if len(sorted_values) == 1:
@@ -161,7 +208,7 @@ def _dcf(values, growth):
     return enterprise, discounted_terminal
 
 
-def _calculate(kind, values, peers=None):
+def _calculate(kind, values, peers=None, segments=None):
     _ranges(kind, values)
     if kind == "operating_bridge":
         base_profit = values["base_revenue"] * values["base_margin"]
@@ -189,6 +236,38 @@ def _calculate(kind, values, peers=None):
             "per_share": _output(equity / values["shares"], "currency/share"),
             "terminal_value_share": _output(terminal / enterprise, "ratio"),
         }
+    if kind == "driver_build":
+        if not segments:
+            raise ValueError("driver_build requires a nonempty segments list")
+        delta = values["margin_delta"]
+        base_revenue = math.fsum(segment["base_revenue"] for segment in segments)
+        revenue = math.fsum(segment["base_revenue"] * (1 + segment["volume_growth"]) *
+                            (1 + segment["price_growth"]) for segment in segments)
+        volume_effect = math.fsum(segment["base_revenue"] * segment["volume_growth"] for segment in segments)
+        price_effect = math.fsum(segment["base_revenue"] * segment["price_growth"] for segment in segments)
+        interaction_effect = math.fsum(segment["base_revenue"] * segment["volume_growth"] * segment["price_growth"]
+                                       for segment in segments)
+        base_profit = math.fsum(segment["base_revenue"] * segment["margin"] for segment in segments)
+        profit = math.fsum(segment["base_revenue"] * (1 + segment["volume_growth"]) *
+                           (1 + segment["price_growth"]) * (segment["margin"] + delta) for segment in segments)
+        revenue_change = revenue - base_revenue
+        result = {
+            "segment_count": _output(len(segments), "count"),
+            "base_revenue": _output(base_revenue, "currency"),
+            "revenue": _output(revenue, "currency"),
+            "revenue_change": _output(revenue_change, "currency"),
+            "volume_effect": _output(volume_effect, "currency"),
+            "price_effect": _output(price_effect, "currency"),
+            "interaction_effect": _output(interaction_effect, "currency"),
+            "base_profit": _output(base_profit, "currency"),
+            "profit": _output(profit, "currency"),
+            "profit_change": _output(profit - base_profit, "currency"),
+        }
+        if base_revenue > 0:
+            result["revenue_growth"] = _output(revenue / base_revenue - 1, "ratio")
+        if revenue_change != 0:
+            result["incremental_margin"] = _output((profit - base_profit) / revenue_change, "ratio")
+        return result
     if kind == "relative_valuation":
         if not peers:
             raise ValueError("relative_valuation requires a nonempty peers list")
@@ -258,7 +337,7 @@ def compute_model(spec):
     Raises ValueError for malformed specs, invalid ranges, overflow, or an
     unbracketed reverse valuation. Does not mutate the supplied spec.
     """
-    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers"), "spec")
+    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers", "segments"), "spec")
     kind = spec["kind"]
     if not isinstance(kind, str) or kind not in MODEL_UNITS:
         raise ValueError("unknown model kind")
@@ -268,6 +347,12 @@ def compute_model(spec):
         raise ValueError("peers is only supported by relative_valuation")
     else:
         peers = None
+    if kind == "driver_build":
+        segments = _segment_rows(spec)
+    elif "segments" in spec:
+        raise ValueError("segments is only supported by driver_build")
+    else:
+        segments = None
     units = MODEL_UNITS[kind]
     _fields(spec["inputs"], units, (), "inputs")
     values = {}
@@ -301,14 +386,14 @@ def compute_model(spec):
         for value in row["values"]:
             _number(value, "sensitivity " + name)
     try:
-        outputs = _calculate(kind, values, peers)
+        outputs = _calculate(kind, values, peers, segments)
         sensitivity = []
         for row in scenarios:
             name = row["input"]
             for value in row["values"]:
                 changed = dict(values, **{name: value})
                 sensitivity.append({"input": name, "value": value, "unit": units[name],
-                                    "outputs": _calculate(kind, changed, peers)})
+                                    "outputs": _calculate(kind, changed, peers, segments)})
     except (OverflowError, ZeroDivisionError) as exc:
         raise ValueError("model arithmetic overflow or singular denominator") from exc
     return {"outputs": outputs, "sensitivity": sensitivity}

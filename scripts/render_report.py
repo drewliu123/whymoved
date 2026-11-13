@@ -391,6 +391,13 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
             yield ("table", {"title": "可比公司倍数", "columns": ["可比公司", "倍数", "备注"],
                              "rows": [[peer["name"], peer["multiple"], peer.get("note", "")] for peer in peers],
                              "claim_ids": peer_claims})
+        segments = model["spec"].get("segments")
+        if segments:
+            segment_claims = list(dict.fromkeys(cid for segment in segments for cid in segment.get("claim_ids", [])))
+            yield ("table", {"title": "分部驱动", "columns": ["分部", "基期收入", "量增长", "价增长", "利润率"],
+                             "rows": [[segment["name"], segment["base_revenue"], segment["volume_growth"],
+                                       segment["price_growth"], segment["margin"]] for segment in segments],
+                             "claim_ids": segment_claims})
         yield ("table", {"title": "观察值与假设", "columns": ["变量", "数值", "单位", "性质", "假设理由"],
                          "rows": [[name, v["value"], v["unit"], v["role"], model["assumptions"].get(name, "")] for name, v in model["spec"]["inputs"].items()],
                          "claim_ids": list(dict.fromkeys(cid for v in model["spec"]["inputs"].values() for cid in v["claim_ids"]))})

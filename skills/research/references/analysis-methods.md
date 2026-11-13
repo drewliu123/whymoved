@@ -15,7 +15,7 @@ python3 "$TY_DIR/scripts/analysis_contract.py" route theme_transmission
 | question_kind | method | 必需输入 | 模型要求 |
 |---|---|---|---|
 | change_explanation | comparative_attribution | 实际表现与同期基准、事件时间线、事前预期 | 按需 |
-| operating_outlook | driver_bridge | 量价或收入、利润率、现金需求 | operating_bridge或free_cash_flow |
+| operating_outlook | driver_bridge | 量价或收入、利润率、现金需求 | operating_bridge、free_cash_flow或driver_build |
 | valuation | reverse_valuation | 带时刻价格、股数及净债务、现金流或可比倍数分布、折现与终值假设 | reverse_dcf或relative_valuation |
 | event_forecast | reference_class_scenarios | 可验证的预测目标口径（resolution_contract）、参考类、条件驱动 | 按需 |
 | theme_transmission | transmission_bottleneck | 需求到现金链条、取消与交付、利润归属 | 按需 |
@@ -114,7 +114,7 @@ analysis的question_kind / method / price_relevance / baseline / mechanism_chain
 
 ## 3. 固定模型、输入与真实重算
 
-仅五种模型由compute_model验证，不eval来源公式。spec.inputs精确字段如下，每项都写`{value, unit, role, claim_ids}`；数值有限，ratio用小数。
+仅六种模型由compute_model验证，不eval来源公式。spec.inputs精确字段如下，每项都写`{value, unit, role, claim_ids}`；数值有限，ratio用小数。
 
 | kind | 输入及unit | 输出 |
 |---|---|---|
@@ -122,6 +122,7 @@ analysis的question_kind / method / price_relevance / baseline / mechanism_chain
 | free_cash_flow | operating_profit: currency；tax_rate: ratio；depreciation: currency；capex: currency；change_working_capital: currency | free_cash_flow（currency） |
 | dcf | free_cash_flow: currency；growth: ratio；discount_rate: ratio；terminal_growth: ratio；years: year；net_debt: currency；shares: shares | enterprise_value、equity_value（currency）、per_share（currency/share）、terminal_value_share（ratio） |
 | reverse_dcf | free_cash_flow: currency；discount_rate: ratio；terminal_growth: ratio；years: year；net_debt: currency；shares: shares；price: currency/share；growth_low: ratio；growth_high: ratio | implied_growth（ratio），target_enterprise_value、solved_enterprise_value、residual（currency） |
+| driver_build | margin_delta: ratio；spec.segments非空 | segment_count（count）、base_revenue、revenue、revenue_change、volume_effect、price_effect、interaction_effect、base_profit、profit、profit_change（currency）；基准收入为正时revenue_growth（ratio）；收入变化非零时incremental_margin（ratio） |
 | relative_valuation | metric: currency；net_debt: currency；shares: shares；price: currency/share；spec.peers非空 | peer_count（count）、peer_multiple_min/q1/median/q3/max/mean（ratio）、implied_ev_median、implied_equity_median（currency）、per_share_median/per_share_low/per_share_high（currency/share）、implied_multiple_at_price（ratio）、可比中位隐含每股为正时price_vs_peer_median（ratio） |
 
 经营桥用收入增长和利润率作桥，revenue_growth_effect是收入增长项，不自动识别纯数量效应，量价归因需额外证据。利润率接受有限数值，支持亏损、扭亏及利润率超过100%的情景；基准利润为零或负时省略profit_growth，使用绝对利润变化及桥拆解说明，避免负基数增长率误导。
@@ -132,7 +133,11 @@ DCF的free_cash_flow为FCF0，须匹配完整年度或明确年化的基期，ye
 
 估值需正FCF、股数、价格及折现率，years为1–50整数，terminal_growth小于discount_rate。reverse_dcf增长上下界必须包住目标，否则如实报无解，不能伪造结果。金额unit固定currency，币种、缩放、期间、范围写wrapper.currency / scale / period / scope。金额和股数同一缩放（百万美元与百万股），price仍为美元/股；不混用分部利润与全公司资本支出。reverse_dcf wrapper另须instrument（如NVDA）；模型price输入value、wrapper.currency对应的每股报价unit（如USD/share）及instrument必须与所引sources.market_quote的value / unit / instrument精确一致。
 
-relative_valuation用一组可比公司的倍数分布给目标指标定价。spec.peers每项写name与multiple，可选note和claim_ids；claim_ids须引用fact / price / consensus证据，wrapper另写peer_set_rationale说明这批公司为什么可比（业务、规模、增长、会计口径）。模型输出peer_count、min/q1/median/q3/max/mean：n小或分布偏斜时只看中位数会高估精度，须同时报告分位与样本量。分位采用线性插值，n=1时min=median=max。再用中位倍数与四分位给隐含EV、隐含股权与隐含每股区间，并用当前价格反推implied_multiple_at_price（现价隐含多少倍）和price_vs_peer_median（相对可比中位数的溢价/折价）；后一项在可比中位隐含每股不为正时省略，避免负基数比率误导。
+driver_build把收入拆成分部量价。spec.segments每段写name、base_revenue（基期收入）、volume_growth、price_growth（均须大于−1）、margin（段营业利润率）与claim_ids；claim_ids必须同时包含observed（fact / price / consensus，支撑基期收入）与假设（inference / view，支撑驱动），缺一边即契约失败——这是防止把没有依据的分部拆解写成精确结果。spec.inputs只有margin_delta（−1到1，assumption），表示统一的利润率冲击，wrapper.assumptions须解释它。
+
+收入恒等式：base×(1+v)(1+p)=base+volume_effect+price_effect+interaction_effect，三项效应之和在模型内部精确等于revenue_change（volume_effect=Σbase×v，price_effect=Σbase×p，interaction_effect=Σbase×v×p，不要重复计入交互项）。incremental_margin=Δprofit÷Δrevenue，收入不变时省略该输出。利润为Σ段收入×(margin+margin_delta)。
+
+边界：分部相互独立，不建模共享成本、协同或分部间转移价；margin是营业利润率而不是净利率；margin_delta是统一冲击，不是分部特定情景，也不能当概率加权。敏感性扫margin_delta可以看整体利润率变化的传导，但单参数扫描仍不是联合情景。relative_valuation用一组可比公司的倍数分布给目标指标定价。spec.peers每项写name与multiple，可选note和claim_ids；claim_ids须引用fact / price / consensus证据，wrapper另写peer_set_rationale说明这批公司为什么可比（业务、规模、增长、会计口径）。模型输出peer_count、min/q1/median/q3/max/mean：n小或分布偏斜时只看中位数会高估精度，须同时报告分位与样本量。分位采用线性插值，n=1时min=median=max。再用中位倍数与四分位给隐含EV、隐含股权与隐含每股区间，并用当前价格反推implied_multiple_at_price（现价隐含多少倍）和price_vs_peer_median（相对可比中位数的溢价/折价）；后一项在可比中位隐含每股不为正时省略，避免负基数比率误导。
 
 metric必须为正：亏损、负EBITDA或负收入不能用倍数法，应改用现金流模型或明确写model_status=missing。net_debt可为负表示净现金，shares与price须为正。目标指标与peer倍数必须同一口径：EV/EBITDA、EV/Sales对metric=EBITDA或收入并扣净债务；P/E对metric=净利润；不能用P/E乘EBITDA混用股权价值与企业价值。comps回答“相对这个可比集贵不贵”，不能证明可比集选对，也不产出目标价；样本少、可比性弱、口径不一时把限制写在相关判断旁。零或负FCF的标的可用comps估值，但仍须说明该方法何时失效。敏感性可扫metric（如指引区间两端），不能把单参数扫描当联合情景。
 

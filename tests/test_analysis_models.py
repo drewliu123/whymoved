@@ -23,6 +23,7 @@ def spec(kind="dcf", **overrides):
                         "terminal_growth": 0, "years": 2, "net_debt": 100,
                         "shares": 10, "price": 110, "growth_low": -.5, "growth_high": .5},
         "relative_valuation": {"metric": 100, "net_debt": 20, "shares": 10, "price": 15},
+        "driver_build": {"margin_delta": 0},
     }
     values = dict(defaults[kind], **overrides)
     item = {"kind": kind, "inputs": {
@@ -31,6 +32,11 @@ def spec(kind="dcf", **overrides):
         "sensitivity": []}
     if kind == "relative_valuation":
         item["peers"] = [{"name": "A", "multiple": 8}, {"name": "B", "multiple": 12}]
+    if kind == "driver_build":
+        item["segments"] = [
+            {"name": "A", "base_revenue": 100, "volume_growth": 0.1, "price_growth": 0.05, "margin": 0.2},
+            {"name": "B", "base_revenue": 50, "volume_growth": -0.1, "price_growth": 0.02, "margin": 0.1},
+        ]
     return item
 
 
@@ -260,7 +266,8 @@ class ModelTests(unittest.TestCase):
                 ("reverse_dcf", [{"input": "price", "values": [100, 120]},
                                  {"input": "discount_rate", "values": [.15]}]),
                 ("relative_valuation", [{"input": "metric", "values": [90, 110]},
-                                        {"input": "shares", "values": [5]}])):
+                                        {"input": "shares", "values": [5]}]),
+                ("driver_build", [{"input": "margin_delta", "values": [-0.02, 0.02]}])):
             item = spec(kind)
             item["sensitivity"] = scenarios
             original = copy.deepcopy(item)
@@ -321,6 +328,85 @@ class ModelTests(unittest.TestCase):
                 else:
                     self.assertTrue(payload["errors"])
             self.assertEqual(sorted(p.name for p in Path(directory).iterdir()), ["input.json"])
+
+
+class DriverBuildTests(unittest.TestCase):
+    def test_revenue_and_profit_decomposition(self):
+        result = compute_model(spec("driver_build"))
+        expected = {
+            "segment_count": 2, "base_revenue": 150, "revenue": 161.4,
+            "revenue_change": 11.4, "volume_effect": 5, "price_effect": 6,
+            "interaction_effect": 0.4, "base_profit": 25, "profit": 27.69,
+            "profit_change": 2.69, "revenue_growth": 161.4 / 150 - 1,
+            "incremental_margin": 2.69 / 11.4,
+        }
+        for name, number in expected.items():
+            self.assertAlmostEqual(value(result, name), number, places=9, msg=name)
+        total = (value(result, "volume_effect") + value(result, "price_effect")
+                 + value(result, "interaction_effect"))
+        self.assertAlmostEqual(total, value(result, "revenue_change"), places=9)
+        self.assertAlmostEqual(value(result, "profit_change"),
+                               value(result, "profit") - value(result, "base_profit"), places=9)
+
+    def test_margin_delta_flows_through_every_segment(self):
+        result = compute_model(spec("driver_build", margin_delta=-0.02))
+        self.assertAlmostEqual(value(result, "profit"), 27.69 - 0.02 * 161.4, places=9)
+        self.assertAlmostEqual(value(result, "revenue"), 161.4, places=9)
+
+    def test_single_segment_and_zero_growth(self):
+        item = spec("driver_build")
+        item["segments"] = [{"name": "only", "base_revenue": 100, "volume_growth": 0,
+                             "price_growth": 0, "margin": 0.2}]
+        result = compute_model(item)
+        self.assertEqual(value(result, "revenue"), 100)
+        self.assertEqual(value(result, "revenue_change"), 0)
+        self.assertNotIn("incremental_margin", result["outputs"])
+        self.assertEqual(value(result, "revenue_growth"), 0)
+        self.assertAlmostEqual(value(result, "profit"), 20)
+
+    def test_negative_segment_margin_is_allowed(self):
+        item = spec("driver_build")
+        item["segments"] = [{"name": "growth", "base_revenue": 100, "volume_growth": 0.5,
+                             "price_growth": -0.1, "margin": -0.2}]
+        result = compute_model(item)
+        self.assertAlmostEqual(value(result, "profit"), 100 * 1.5 * 0.9 * -0.2)
+
+    def test_segment_validation(self):
+        bad_inputs = [
+            [],
+            [{}],
+            [{"name": "", "base_revenue": 10, "volume_growth": 0, "price_growth": 0, "margin": 0}],
+            [{"name": "A", "base_revenue": -1, "volume_growth": 0, "price_growth": 0, "margin": 0}],
+            [{"name": "A", "base_revenue": 1, "volume_growth": -1, "price_growth": 0, "margin": 0}],
+            [{"name": "A", "base_revenue": 1, "volume_growth": 0, "price_growth": -2, "margin": 0}],
+            [{"name": "A", "base_revenue": 1, "volume_growth": 0, "price_growth": 0, "margin": "0"}],
+            [{"name": "A", "base_revenue": 1, "volume_growth": 0, "price_growth": 0, "margin": 0, "extra": 1}],
+            [{"name": "A", "base_revenue": 1, "volume_growth": 0, "price_growth": 0, "margin": 0,
+              "claim_ids": [""]}],
+            [{"name": "A", "base_revenue": 1, "volume_growth": 0, "price_growth": 0, "margin": 0},
+             {"name": " a ", "base_revenue": 2, "volume_growth": 0, "price_growth": 0, "margin": 0}],
+        ]
+        for segments in bad_inputs:
+            item = spec("driver_build")
+            item["segments"] = segments
+            with self.subTest(segments=segments), self.assertRaises(ValueError):
+                compute_model(item)
+
+    def test_segments_required_and_scoped_to_driver_build(self):
+        item = spec("driver_build")
+        del item["segments"]
+        with self.assertRaisesRegex(ValueError, "segments"):
+            compute_model(item)
+        wrong = spec("dcf")
+        wrong["segments"] = [{"name": "A", "base_revenue": 1, "volume_growth": 0,
+                              "price_growth": 0, "margin": 0}]
+        with self.assertRaisesRegex(ValueError, "only supported"):
+            compute_model(wrong)
+
+    def test_margin_delta_range(self):
+        for bad in (-1.5, 2):
+            with self.assertRaisesRegex(ValueError, "margin_delta"):
+                compute_model(spec("driver_build", margin_delta=bad))
 
 
 class RelativeValuationTests(unittest.TestCase):
