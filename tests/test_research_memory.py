@@ -154,6 +154,73 @@ class QueryTests(unittest.TestCase):
         self.assertEqual(result["matches"], [])
 
 
+class LineageTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.home = Path(self.tmp.name).resolve()
+        write_run(self.home, "R20261001T000000Z-aaaaaaaaaaaa", as_of="2026-10-01T00:00:00Z",
+                  title="首轮", question="BTC 怎么看", entity="BTC", judgment="中性")
+        write_run(self.home, "R20261015T000000Z-bbbbbbbbbbbb", as_of="2026-10-15T00:00:00Z",
+                  title="第二轮", entity="BTC", judgment="转空", judgment_changed=True,
+                  parent="R20261001T000000Z-aaaaaaaaaaaa")
+        write_run(self.home, "R20261101T000000Z-cccccccccccc", as_of="2026-11-01T00:00:00Z",
+                  title="第三轮", entity="BTC", judgment="维持偏空", judgment_changed=False,
+                  parent="R20261015T000000Z-bbbbbbbbbbbb")
+        self.index = memory.build_index(self.home)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_lineage_walks_to_root(self):
+        result = memory.lineage(self.index, "R20261101T000000Z-cccccccccccc")
+        self.assertEqual([row["run_id"] for row in result["lineage"]],
+                         ["R20261001T000000Z-aaaaaaaaaaaa",
+                          "R20261015T000000Z-bbbbbbbbbbbb",
+                          "R20261101T000000Z-cccccccccccc"])
+        self.assertEqual([row["judgment"] for row in result["lineage"]], ["中性", "转空", "维持偏空"])
+        self.assertEqual(result["lineage"][1]["judgment_changed"], True)
+        self.assertEqual(result["lineage"][2]["judgment_changed"], False)
+        self.assertEqual(result["length"], 3)
+        self.assertEqual(result["children"], [])
+
+    def test_children_of_an_earlier_run(self):
+        result = memory.lineage(self.index, "R20261001T000000Z-aaaaaaaaaaaa")
+        self.assertEqual(result["length"], 1)
+        self.assertEqual(result["children"], ["R20261015T000000Z-bbbbbbbbbbbb"])
+
+    def test_unknown_run(self):
+        with self.assertRaisesRegex(ValueError, "unknown run id"):
+            memory.lineage(self.index, "R404")
+
+    def test_missing_parent_stops_the_walk(self):
+        write_run(self.home, "R20261020T000000Z-dddddddddddd", as_of="2026-10-20T00:00:00Z",
+                  entity="BTC", parent="R00000000T000000Z-missing00000")
+        index = memory.build_index(self.home)
+        result = memory.lineage(index, "R20261020T000000Z-dddddddddddd")
+        self.assertEqual([row["run_id"] for row in result["lineage"]], ["R20261020T000000Z-dddddddddddd"])
+
+    def test_cycle_is_bounded(self):
+        write_run(self.home, "R20261025T000000Z-eeeeeeeeeeee", as_of="2026-10-25T00:00:00Z",
+                  entity="BTC", parent="R20261026T000000Z-ffffffffffff")
+        write_run(self.home, "R20261026T000000Z-ffffffffffff", as_of="2026-10-26T00:00:00Z",
+                  entity="BTC", parent="R20261025T000000Z-eeeeeeeeeeee")
+        index = memory.build_index(self.home)
+        result = memory.lineage(index, "R20261025T000000Z-eeeeeeeeeeee")
+        self.assertLessEqual(result["length"], 2)
+
+    def test_cli_thread(self):
+        process = subprocess.run([sys.executable, str(SCRIPTS / "research_memory.py"), "thread",
+                                  "--home", str(self.home), "R20261101T000000Z-cccccccccccc"],
+                                 capture_output=True, text=True)
+        self.assertEqual(process.returncode, 0, process.stdout + process.stderr)
+        payload = json.loads(process.stdout)
+        self.assertTrue(payload["passed"])
+        self.assertEqual(payload["length"], 3)
+        process = subprocess.run([sys.executable, str(SCRIPTS / "research_memory.py"), "thread",
+                                  "--home", str(self.home), "R404"], capture_output=True, text=True)
+        self.assertEqual(process.returncode, 1)
+
+
 class CliTests(unittest.TestCase):
     def test_index_and_query_cli(self):
         with tempfile.TemporaryDirectory() as tmp:

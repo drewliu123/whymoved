@@ -60,6 +60,24 @@ python3 "$TY_DIR/scripts/research_memory.py" query --home "$TY_HOME" NVDA --limi
 
 （示例为真实归档的裁剪结果。）
 
+## 判断沿革：thread
+
+索引已经记录每轮的 `parent_run`。`thread` 把它还原成一条判断沿革：
+
+```bash
+python3 "$TY_DIR/scripts/research_memory.py" thread --home "$TY_HOME" R20261101T000000Z-cccccccccccc
+```
+
+输出 `lineage`（旧→新，按 `parent_run` 回溯到最早一轮）、每轮的 `judgment`、`judgment_changed`（该轮相对于父轮是否声明改变判断）、`model_kinds`、`opportunity_status` 与 `depth`，以及请求那一轮的直接 `children`。
+
+用法：
+
+- **更新前先看沿革**：确认这次要改的是哪一段判断，旧判断原文是什么，避免「其实两轮前已经改过」。
+- **写更新报告时**：`judgment_changed` 必须与沿革一致；声称「维持判断」却在正文推翻旧结论，沿革会把矛盾暴露出来。
+- **分支更新**：同一父轮可以有多个子轮，`children` 列出直接子轮；不同子轮之间没有顺序关系，不能当成一条时间线。
+
+沿革同样只是指针：判断原文复制自各轮报告，引用前回冻结 run 读证据。
+
 ## 边界
 
 - **指针不是证据**：索引里的 `judgment` 是报告原文的复制，用于检索；引用它支撑新结论没有意义——必须回到冻结 run 读 claims 与 sources，再按当前研究重新入账。旧 `inference` 尤其不能直接当作新结论的依据。

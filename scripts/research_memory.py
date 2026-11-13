@@ -207,6 +207,40 @@ def query_index(index, term, as_of=None, limit=None):
                       "judgment_changed 取自该 run 的 update 记录，None 表示没有更新关系。"]}
 
 
+def lineage(index, run_id):
+    """Walk parent_run links for one run: ancestors ordered, plus direct children."""
+    runs = {record["run_id"]: record for record in index.get("runs", [])}
+    if run_id not in runs:
+        raise ValueError("unknown run id: " + str(run_id))
+    chain, seen = [], set()
+    current = run_id
+    while current and current not in seen:
+        seen.add(current)
+        record = runs.get(current)
+        if record is None:
+            break
+        chain.append(record)
+        current = record.get("parent_run") or ""
+    chain.reverse()
+    children = sorted(record["run_id"] for record in index.get("runs", [])
+                      if record.get("parent_run") == run_id)
+    rows = []
+    for position, record in enumerate(chain):
+        rows.append({"run_id": record["run_id"], "as_of": record.get("as_of", ""),
+                     "title": record.get("title", ""), "question": record.get("question", ""),
+                     "entity": record.get("entity", ""), "judgment": record.get("judgment", ""),
+                     "judgment_changed": record.get("judgment_changed"),
+                     "opportunity_status": record.get("opportunity_status", ""),
+                     "model_kinds": record.get("model_kinds", []),
+                     "parent_run": record.get("parent_run", ""),
+                     "depth": position})
+    return {"run_id": run_id, "entity": rows[-1].get("entity", ""), "length": len(rows),
+            "lineage": rows, "children": children,
+            "notes": ["lineage按parent_run回溯到最早一轮，顺序为旧→新。",
+                      "judgment_changed取自每轮自己的update记录；None表示该轮未声明更新关系。",
+                      "children只列直接子run；分支更新的完整家族需逐个run查看。"]}
+
+
 def _write_index(index, path):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -226,6 +260,9 @@ def main():
     query_parser.add_argument("term")
     query_parser.add_argument("--as-of", dest="as_of")
     query_parser.add_argument("--limit", type=int)
+    thread_parser = sub.add_parser("thread")
+    thread_parser.add_argument("--home", type=Path, required=True)
+    thread_parser.add_argument("run_id")
     args = parser.parse_args()
     try:
         index = build_index(args.home)
@@ -235,6 +272,15 @@ def main():
     except OSError as exc:
         print(json.dumps({"passed": False, "errors": [str(exc)]}, ensure_ascii=False))
         return 2
+    if args.cmd == "thread":
+        try:
+            result = lineage(index, args.run_id)
+        except ValueError as exc:
+            print(json.dumps({"passed": False, "errors": [str(exc)]}, ensure_ascii=False))
+            return 1
+        result["passed"] = True
+        print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))
+        return 0
     if args.cmd == "index":
         target = args.out or (Path(args.home).resolve() / "journal" / "index.json")
         try:

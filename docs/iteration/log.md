@@ -4,6 +4,52 @@
 
 ---
 
+## Cycle 20 · 2026-11-14 · 判断沿革（thread）
+
+**对应卡片**：P0-6 遗留项（论点跟踪）
+
+**问题**：「跨轮研究记忆」已经能回答「关于 X 我们判断过什么」，但没有把每轮的 `parent_run` 还原成一条沿革：读者看到的是并列的 run 列表，看不出「这一轮改了什么、上一轮判断原文是什么」。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/research_memory.py` | 新增 `thread --home DIR <run_id>`：按 parent_run 回溯 lineage（旧→新），带判断原文、judgment_changed、模型种类、机会状态与 depth；附直接子轮 |
+| `tests/test_research_memory.py` | 6 个用例：三轮回溯、子轮、未知 run、缺父轮、循环保护、CLI |
+| 文档 | research-memory 增判断沿革章节；CHANGELOG 0.24.0 |
+
+**关键设计决定**
+
+1. **只回溯祖先，不自动串联分支**：同一父轮可能有两个子轮（例如同时做资金面与技术面更新），把它们拼成一条时间线是编造顺序。`children` 明确列出并列子轮。
+2. **`judgment_changed` 取自每轮自己的 update 记录**，不从判断文本做 diff。文本变了但作者声明「未改变判断」是合法的（比如补充证据），工具不该替作者裁决。
+3. **缺失父轮就停**：父 run 不在本机归档（迁移、清理）时，沿革从已知最早处开始，不报错也不假装完整。
+4. **循环保护**：manifest 被手工改坏可能出现 A→B→A，访问集合保证回溯终止。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 383 tests ... OK
+```
+
+- 三轮回溯：A(中性) → B(转空, judgment_changed=true) → C(维持偏空, false)，`thread C` 输出顺序、判断原文与开关全部正确。
+- 子轮：`thread A` 返回 length 1、children 为 [B]。
+- 缺父轮：parent 指向不存在的 run → 沿革只含自身。
+- 循环：A parent B、B parent A → 回溯长度 ≤2 且终止。
+- CLI：已知 run 退出 0，未知 run 退出 1。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 多一种持续性工作流：判断沿革可读，更新时知道「上一轮到底说了什么」。
+2. 多回答一类问题：「这次改的是哪一段判断、之前改过几次」。
+3. 边界更清楚：分支不合并、不看文本 diff、缺父轮不假装完整。
+
+**遗留**
+
+- 沿革不带每轮的关键证据摘要（claims 数量已在索引，但未在 thread 输出）。
+- 没有「沿革导出为时间线图」；如果要画，应等柱状/瀑布图之外的新图型。
+
 ## Cycle 19 · 2026-11-14 · 多图容器 charts[]
 
 **对应卡片**：P1-4 收尾

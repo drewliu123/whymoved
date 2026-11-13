@@ -84,7 +84,7 @@
 ## P0-6 跨轮次研究记忆（research memory）
 
 - 状态：✅ 已完成（Cycle 8，见 [log.md](log.md)）
-- 遗留：跨轮论点时间线（parent_run 已入索引）；增量索引；实体别名表。
+- 遗留：判断沿革已由 `thread` 覆盖（Cycle 20）；增量索引；实体别名表；沿革未带证据摘要。
 - 价值：HIGH / 成本：M。「持续性投研」的核心：回答「我们之前对 X 判断过什么、依据哪条证据、现在改变了吗」；也是唯一能防事后诸葛的东西。
 - 方案：`scripts/research_memory.py index|query`：扫描 `journal/runs/*/`，抽取实体（plan.entity + 代码）、as_of、判断、assessment 状态、触发 id、claim 类型，生成可重建、幂等、带内容哈希的 `journal/index.json`；按实体查询返回时间排序的判断与冻结文件链接；`--as-of` 给当时视图。
 - 约束：只存指针不合并数字；不产生 claim；不改归档；每条打印父 run 的 as_of；禁止用旧 inference 直接支撑新结论。
@@ -151,6 +151,7 @@
 
 ## 已完成
 
+- P0-6b 判断沿革 thread — 2026-11-14，Cycle 20
 - P1-4 块级渲染 / IC memo 包 — 2026-11-14，Cycle 15–19
 - P1-4c 一页式 IC memo — 2026-11-14，Cycle 18
 - P1-4b 多序列图表 — 2026-11-14，Cycle 17
