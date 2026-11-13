@@ -188,9 +188,39 @@ def validate_report(report, ledger, sources=None):
             for key in ("title", "x_label", "y_label", "unit"):
                 if not _text(chart.get(key)):
                     errors.append("chart." + key + " must be nonempty text")
-            rows = chart.get("rows")
-            if not isinstance(rows, list) or len(rows) < 2 or any(not isinstance(row, dict) or not _text(row.get("label")) or not _number(row.get("value")) for row in rows):
-                errors.append("chart.rows requires at least two label/finite numeric value pairs")
+            if "series" in chart:
+                if "rows" in chart:
+                    errors.append("chart must use either rows or series, not both")
+                series = chart.get("series")
+                if not isinstance(series, list) or not series:
+                    errors.append("chart.series must be a nonempty list")
+                else:
+                    labels = None
+                    for n, item in enumerate(series):
+                        path = "chart.series[%d]" % n
+                        if not isinstance(item, dict):
+                            errors.append(path + " must be an object")
+                            continue
+                        extra = set(item) - {"name", "rows"}
+                        if extra:
+                            errors.append(path + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
+                        if not _text(item.get("name")):
+                            errors.append(path + ".name must be nonempty text")
+                        item_rows = item.get("rows")
+                        if not isinstance(item_rows, list) or len(item_rows) < 2 or any(
+                                not isinstance(row, dict) or not _text(row.get("label")) or not _number(row.get("value"))
+                                for row in item_rows):
+                            errors.append(path + ".rows requires at least two label/finite numeric value pairs")
+                            continue
+                        item_labels = [row["label"] for row in item_rows]
+                        if labels is None:
+                            labels = item_labels
+                        elif item_labels != labels:
+                            errors.append(path + ".rows must share the same labels as the first series")
+            else:
+                rows = chart.get("rows")
+                if not isinstance(rows, list) or len(rows) < 2 or any(not isinstance(row, dict) or not _text(row.get("label")) or not _number(row.get("value")) for row in rows):
+                    errors.append("chart.rows requires at least two label/finite numeric value pairs")
             refs(chart, "chart")
             if "note" in chart and not isinstance(chart["note"], str):
                 errors.append("chart.note must be text")
@@ -483,8 +513,16 @@ def _blocks(report, ledger, sources):
     if report.get("chart"):
         c = report["chart"]
         yield ("chart", c)
-        yield ("table", {"title": c["title"], "columns": [c["x_label"], c["y_label"] + "（" + c["unit"] + "）"],
-                         "rows": [[r["label"], r["value"]] for r in c["rows"]], "claim_ids": c["claim_ids"], "note": c.get("note", "")})
+        if "series" in c:
+            labels = [row["label"] for row in c["series"][0]["rows"]]
+            yield ("table", {"title": c["title"],
+                             "columns": [c["x_label"]] + [series["name"] + "（" + c["unit"] + "）" for series in c["series"]],
+                             "rows": [[label] + [series["rows"][index]["value"] for series in c["series"]]
+                                      for index, label in enumerate(labels)],
+                             "claim_ids": c["claim_ids"], "note": c.get("note", "")})
+        else:
+            yield ("table", {"title": c["title"], "columns": [c["x_label"], c["y_label"] + "（" + c["unit"] + "）"],
+                             "rows": [[r["label"], r["value"]] for r in c["rows"]], "claim_ids": c["claim_ids"], "note": c.get("note", "")})
     for field, heading in (("alternatives", "其他解释"), ("watch", "接下来观察什么")):
         if report[field]:
             yield ("h2", heading)
@@ -767,7 +805,55 @@ def _refs(ids):
     return '<span class="refs">' + " ".join('<a href="#claim-%s">[%s]</a>' % (_h(cid), _h(cid)) for cid in ids) + "</span>"
 
 
+def _chart_series(chart):
+    """Return [(name or None, rows)]; single-series charts keep one unnamed series."""
+    if "series" in chart:
+        return [(item["name"], item["rows"]) for item in chart["series"]]
+    return [(None, chart["rows"])]
+
+
 def _chart(c):
+    series = _chart_series(c)
+    if len(series) == 1 and series[0][0] is None:
+        return _single_chart(c)
+    return _multi_chart(c, series)
+
+
+def _multi_chart(c, series):
+    labels = [row["label"] for row in series[0][1]]
+    values = [row["value"] for _, rows in series for row in rows]
+    lo, hi = min(values), max(values)
+    scale = max(abs(lo), abs(hi), 1)
+    low, high = lo / scale, hi / scale
+
+    def x(i):
+        return 60 + i / (len(labels) - 1) * 620
+
+    def y(v):
+        return 190 - ((v / scale - low) / (high - low) if high != low else .5) * 150
+
+    out = ['<section class="chart"><h2>%s</h2><svg viewBox="0 0 720 250" role="group" aria-label="%s（%d个序列）">' % (_h(c["title"]), _h(c["title"]), len(series))]
+    for v in (lo, hi):
+        out.append('<line class="grid" x1="60" x2="680" y1="%s" y2="%s"/><text x="2" y="%s">%s</text>' % (y(v), y(v), y(v) - 5, _h(v)))
+    dashes = ("none", "6 4", "2 3", "10 3 2 3")
+    for index, (name, rows) in enumerate(series):
+        dash = dashes[index % len(dashes)]
+        style = "" if dash == "none" else ' style="stroke-dasharray:%s"' % dash
+        out.append('<polyline class="line" points="%s"%s/>' % (
+            " ".join("%.3f,%.3f" % (x(i), y(row["value"])) for i, row in enumerate(rows)), style))
+        for i, row in enumerate(rows):
+            out.append('<circle class="dot" cx="%.3f" cy="%.3f" r="3" aria-hidden="true"/>' % (x(i), y(row["value"])))
+    out.append('<text x="60" y="220">%s</text><text x="680" y="220" text-anchor="end">%s</text></svg>' % (
+        _h(labels[0]), _h(labels[-1])))
+    legend = "；".join("%s（%s）" % (name, "实线" if dashes[index % len(dashes)] == "none" else "虚线%d" % (index + 1))
+                      for index, (name, _) in enumerate(series))
+    out.append('<p style="font-size:13px">系列：%s。精确数值见下方同源数据表。</p>' % _h(legend))
+    out.append('<p id="chart-readout" role="tooltip" aria-live="polite">%s</p></section>' % _h(
+        c["x_label"] + " · " + c["y_label"] + "（" + c["unit"] + "）"))
+    return "".join(out)
+
+
+def _single_chart(c):
     rows = c["rows"]
     vals = [r["value"] for r in rows]
     lo, hi = min(vals), max(vals)

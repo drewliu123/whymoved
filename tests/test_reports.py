@@ -87,6 +87,61 @@ class BlockRenderTests(unittest.TestCase):
         self.assertNotIn("（百万美元）", before)
 
 
+class MultiSeriesChartTests(unittest.TestCase):
+    def chart_document(self):
+        report, ledger, sources = documents()
+        report["chart"] = {
+            "title": "收入与利润", "x_label": "期间", "y_label": "数值", "unit": "亿元",
+            "claim_ids": ["C1"], "note": "同一口径",
+            "series": [
+                {"name": "收入", "rows": [{"label": "Q1", "value": 12}, {"label": "Q2", "value": 15}]},
+                {"name": "利润", "rows": [{"label": "Q1", "value": 2}, {"label": "Q2", "value": 3}]},
+            ]}
+        return report, ledger, sources
+
+    def test_validates_and_renders_both_formats(self):
+        report, ledger, sources = self.chart_document()
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        self.assertEqual(page.count("<polyline"), 2)
+        self.assertIn("收入", page)
+        self.assertIn("利润", page)
+        self.assertIn("2个序列", page)
+        self.assertIn("系列：", page)
+        self.assertEqual(page.count("<script"), 1, "no inline script is added")
+        markdown = render_report.render_markdown(report, ledger, sources)
+        self.assertIn("期间", markdown)
+        self.assertIn("收入（亿元）", markdown)
+        self.assertIn("利润（亿元）", markdown)
+        self.assertIn("| Q1 | 12 | 2 |", markdown)
+        self.assertIn("| Q2 | 15 | 3 |", markdown)
+
+    def test_negative_cases(self):
+        cases = [
+            lambda c: c.update(rows=[{"label": "Q1", "value": 1}]),
+            lambda c: c.update(series=[]),
+            lambda c: c["series"][0].pop("name"),
+            lambda c: c["series"][1]["rows"][0].update(label="Q3"),
+            lambda c: c["series"][0]["rows"][0].update(value=float("nan")),
+            lambda c: c["series"][0].update(extra=1),
+            lambda c: c["series"][0].update(rows=[{"label": "Q1", "value": 1}]),
+        ]
+        for mutate in cases:
+            report, ledger, sources = self.chart_document()
+            mutate(report["chart"])
+            self.assertTrue(render_report.validate_report(report, ledger, sources), mutate)
+
+    def test_single_series_chart_still_uses_interactive_renderer(self):
+        report, ledger, sources = documents()
+        report["chart"] = {"title": "收入序列", "x_label": "期间", "y_label": "收入", "unit": "亿元",
+                           "rows": [{"label": "Q1", "value": 12}, {"label": "Q2", "value": 12}],
+                           "claim_ids": ["C1"]}
+        page = render_report.render_html(report, ledger, sources)
+        for token in ('id="chart-crosshair"', 'r="14" fill="transparent"', "data-x=", 'aria-live="polite"'):
+            self.assertIn(token, page)
+        self.assertNotIn("系列：", page)
+
+
 class Text(HTMLParser):
     def __init__(self):
         super().__init__()
