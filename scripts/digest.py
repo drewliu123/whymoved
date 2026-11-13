@@ -60,6 +60,7 @@ def build_digest(home, as_of=None, days=30):
         status_label, thesis_label, result_label = {}, {}, {}
     else:
         result_label = opportunity_tool.RESULTS
+    has_children = {record.get("parent_run") for record in index["runs"] if record.get("parent_run")}
     recent = []
     for record in index["runs"]:
         stamp = _date(record.get("as_of"))
@@ -138,6 +139,8 @@ def build_digest(home, as_of=None, days=30):
                 versions = len({record.get("judgment", "") for record in records})
                 statuses = []
                 for record in records:
+                    if record.get("run_id") in has_children:
+                        continue  # superseded by a later run on this branch
                     report = reports.get(record.get("run_id"))
                     opportunity = report.get("opportunity") if isinstance(report, dict) else None
                     status = opportunity.get("assessment", {}).get("status") if isinstance(opportunity, dict) else None
@@ -148,7 +151,7 @@ def build_digest(home, as_of=None, days=30):
                     counts = {}
                     for label in statuses:
                         counts[label] = counts.get(label, 0) + 1
-                    suffix = "；论点状态：" + "、".join("%s %d" % (key, value) for key, value in counts.items())
+                    suffix = "；论点状态（仅最新分支）：" + "、".join("%s %d" % (key, value) for key, value in counts.items())
                 lines.append("  - 同题 %d 轮（另：%s）；结论版本 %d 个%s" % (len(records), shown, versions, suffix))
     else:
         lines.append("- 本窗口没有新归档。")
@@ -186,7 +189,7 @@ def build_digest(home, as_of=None, days=30):
     lines.extend(["", "## 边界", "",
                   "- 摘要只复制已冻结报告里的判断与触发，不新增证据，也不给买卖建议。",
                   "- 没有 `due` 的观察项不进催化小节；不要从自由文本猜日期。",
-                  "- 判断变化包含 `update.judgment_changed=true`，以及 `update.opportunity` 里论点被削弱/加强/推翻或状态改变。",
+                  "- 判断变化包含 `update.judgment_changed=true`，以及 `update.opportunity` 里论点被削弱/加强/推翻或状态改变；论点状态计数只取每条分支的最新一轮。",
                   "- 同一问题跑多轮时合并显示，判断取最新一轮；重复实验不等于多次独立验证，结论版本数会标出。",
                   "- 窗口按各轮报告的 as_of 计算，不是归档写入时间；补档历史研究不会落进当前窗口。"])
     return "\n".join(lines) + "\n"

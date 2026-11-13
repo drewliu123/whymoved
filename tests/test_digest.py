@@ -73,7 +73,7 @@ class DigestTests(unittest.TestCase):
         text = self.digest()
         self.assertIn("更新：指引下修", text)
         self.assertIn("论点：等待触发 → 未见优势（削弱）", text)
-        self.assertIn("论点状态：", text)
+        self.assertIn("论点状态（仅最新分支）：未见优势 1", text)
         report["update"]["opportunity"] = {"previous_status": "watch", "current_status": "watch",
                                           "thesis_change": "strengthened",
                                           "trigger_results": [{"trigger_id": "TR1", "status": "hit"},
@@ -83,6 +83,24 @@ class DigestTests(unittest.TestCase):
         self.assertIn("论点：等待触发（增强）", text)
         self.assertNotIn("等待触发 → 等待触发", text)
         self.assertIn("触发：已触发 1、未检查 1", text)
+
+    def test_status_counts_use_latest_per_branch(self):
+        parent = "R20261101T000000Z-aaaaaaaaaaaa"
+        write_run(self.home, "R20261111T000000Z-eeeeeeeeeeee", as_of="2026-11-11T00:00:00Z",
+                  title="BTC 分支一", question="BTC 怎么看", entity="BTC", judgment="偏多", parent=parent)
+        write_run(self.home, "R20261112T000000Z-ffffffffffff", as_of="2026-11-12T00:00:00Z",
+                  title="BTC 分支二", question="BTC 怎么看", entity="BTC", judgment="偏空", parent=parent)
+        for run_id, status in (("R20261111T000000Z-eeeeeeeeeeee", "watch"),
+                               ("R20261112T000000Z-ffffffffffff", "no_edge")):
+            path = self.home / "journal" / "runs" / run_id / "report.json"
+            report = json.loads(path.read_text(encoding="utf-8"))
+            report["opportunity"] = {"applicability": "trading", "assessment": {"status": status}}
+            path.write_text(json.dumps(report, ensure_ascii=False), encoding="utf-8")
+        text = self.digest()
+        self.assertIn("论点状态（仅最新分支）：", text)
+        self.assertIn("等待触发 1", text)
+        self.assertIn("未见优势 1", text)
+        self.assertNotIn("等待触发 2", text)
 
     def test_upcoming_and_overdue_catalysts(self):
         write_run(self.home, "R20261112T000000Z-dddddddddddd", as_of="2026-11-12T00:00:00Z",
