@@ -4,6 +4,13 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.73.0 · 可选接口失败路径与机会分支列表测试
+
+- 新增 [test_optional_apis.py](tests/test_optional_apis.py)：`financial_data` 未配置 `FINANCIAL_DATASETS_API_KEY` 时返回 `status: not_run`、`access_mode: unconfigured`、退出 2、`data` 为 null、不触网；`polymarket` 未知子命令退出 2，帮助里列出 `search` / `event`。
+- 新增机会分支测试：同一父 run 下两个分支分别归档后，`opportunities list` 保留两条最新记录（不复用父轮），`--history` 含三条；分支状态各自保留。
+- 能力索引补「可选数据接口」与「机会记录与更新分支」两行。
+- 测试：新增 4 个用例，全套 531 个测试通过。
+
 ## 0.72.0 · SEC 采集入口的可验证行为
 
 盘点遗留「SEC 采集层未验收」：此前只做人工 curl 核对，没有测试。

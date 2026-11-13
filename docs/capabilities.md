@@ -27,6 +27,8 @@
 | CLI 错误约定与文档链接 | — | `test_cli_errors.py`、`test_docs.py` | [development](development.md) |
 | 发布一致性（版本/CHANGELOG/入口） | — | `test_packaging.py` | [development](development.md) |
 | SEC 官方检索（可选运行时） | — | `test_sec_cli.py` | [sec-data](../skills/research/references/sec-data.md) |
+| 可选数据接口（Financial Datasets / Polymarket） | — | `test_optional_apis.py` | [financial-data](../skills/research/references/financial-data.md) |
+| 机会记录与更新分支 | — | `test_opportunities.py` | [research-value](../skills/research/references/research-value.md) |
 
 ## 怎么读这张表
 

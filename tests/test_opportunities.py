@@ -179,5 +179,25 @@ class OpportunityRunsTest(unittest.TestCase):
             fixture.tearDown()
 
 
+    def test_branches_from_one_parent_are_all_listed(self):
+        fixture = test_research_runs.ResearchRunsTest()
+        fixture.setUp()
+        try:
+            add_opportunity(fixture.report, fixture.ledger)
+            first = fixture.archive()
+            branch = []
+            for status in ("priced_in", "no_edge"):
+                fixture.report["opportunity"]["assessment"]["status"] = status
+                fixture.report["update"] = update(previous="watch", current=status)
+                branch.append(fixture.archive(parent_run=first["run_id"])["run_id"])
+            latest = opportunities.list_opportunities(fixture.home)
+            self.assertEqual(len(latest), 2, "each branch keeps its own latest record")
+            self.assertEqual({row["status"] for row in latest}, {"priced_in", "no_edge"})
+            self.assertEqual({row["run_id"] for row in latest}, set(branch))
+            self.assertEqual(len(opportunities.list_opportunities(fixture.home, history=True)), 3)
+        finally:
+            fixture.tearDown()
+
+
 if __name__ == "__main__":
     unittest.main()

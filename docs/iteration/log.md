@@ -4,6 +4,57 @@
 
 ---
 
+## Cycle 76 · 2026-11-14 · 可选接口失败路径与机会分支列表测试
+
+**对应卡片**：Cycle 75 遗留（可选适配器未测、分支列表未验证）
+
+**做法**
+
+1. 探测 `financial_data` 未配置密钥与 `polymarket` 命令面，确认失败语义。
+2. 在临时数据根归档「父 + 两个分支」，验证 `opportunities list` 与 `--history`。
+
+**结果**
+
+- `financial_data snapshot AAPL`（无 `FINANCIAL_DATASETS_API_KEY`）：`status: not_run`、`access_mode: unconfigured`、原因写明未发请求、退出码 2、`data: null`。
+- `polymarket` 未知子命令退出 2；帮助列出 `search` / `event`；真实搜索可用（本轮人工验证，未进 CI，避免网络依赖）。
+- 分支列表：父 run 下两个分支分别归档后，`list` 返回两条最新（各自状态 `priced_in` / `no_edge`），`--history` 返回三条；父轮不被复用为「最新」。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `tests/test_optional_apis.py`（新） | 3 个用例：无密钥 fail-closed、未知子命令、帮助清单 |
+| `tests/test_opportunities.py` | 1 个用例：两个分支的最新与历史列表 |
+| `docs/capabilities.md` | 补可选数据接口与机会记录两行 |
+| CHANGELOG | 0.73.0 |
+
+**关键设计决定**
+
+1. **只测失败闭环**：真实 API 调用依赖密钥与网络，不进 CI；「未配置就绝不发请求」是更重要的契约。
+2. **分支列表用真实归档**：复用 `ResearchRunsTest` 的归档夹具，而不是构造字典，保证测的是 `list_opportunities` 的真实路径。
+3. **父轮不复用**：分支各自保留最新记录，符合「分支是真实研究状态」的既有原则。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 531 tests ... OK
+```
+
+- 3 个可选接口用例通过；分支列表断言两条最新与三条历史。
+- 五个示例哈希一致；冻结渲染逐字节相同。
+
+**投研意义增量**
+
+1. 可选数据接口从「文档描述」变成「有测试描述的失败边界」。
+2. 多分支研究在列表层面的语义第一次被验证，而不只是摘要计数。
+
+**遗留**
+
+- `polymarket` 真实查询与 `financial_data --public-probe` 未进 CI（网络/速率）。
+- 分支测试只覆盖两层；更深的分支树未测。
+- 列表输出未断言字段完整性（只查 run_id/status）。
+
 ## Cycle 75 · 2026-11-14 · SEC 采集入口的可验证行为
 
 **对应卡片**：盘点遗留（SEC 采集层未验收）
