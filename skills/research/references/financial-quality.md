@@ -33,6 +33,7 @@ python3 "$TY_DIR/scripts/financial_quality.py" "$WORK/statements.json" [--out "$
 - 期间：`period_type` 为 `fy` / `quarter` / `ltm`，全部期间必须同类型，混用直接拒绝（FQ2）；`period_start` 可选，但缺它就**不计算**周转与应计类指标，而不是假设一个天数。
 - 数值字段可写裸数字，或 `{"value": 120, "claim_ids": ["C3"]}`。没有 `claim_ids` 的字段会列在输出的 `unattributed` 里——这是证据链尚未接上的提示，不是错误。
 - 未列出的字段名直接拒绝（FQ1），避免把 `ebitda`、`fcf` 之类的自定义口径悄悄塞进来。所有比率输出为小数（0.42 而非 42%）。
+- 可选字段 `pretax_income` 与 `income_tax` 用于推导税率：未给 `tax_rate` 时按两者之比计算，显式 `tax_rate` 优先。`ROIC` 需要 `equity`、`debt`、`cash` 齐全（投入资本 = 权益 + 有息负债 − 现金）；`cash` 只应填现金及等价物，不含短期投资，否则会低估 ROIC。
 
 ## 从主张账本装配
 

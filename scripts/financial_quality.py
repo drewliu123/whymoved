@@ -39,6 +39,7 @@ FIELDS = (
     "revenue", "gross_profit", "operating_profit", "net_income", "cfo", "capex",
     "depreciation_amortization", "receivables", "inventory", "payables",
     "total_assets", "equity", "debt", "cash", "share_based_comp", "shares_diluted", "tax_rate",
+    "pretax_income", "income_tax",
 )
 PERIOD_REQUIRED = ("id", "period_end", "revenue")
 PERIOD_OPTIONAL = ("period_type", "period_start") + FIELDS
@@ -186,6 +187,10 @@ def period_metrics(period):
     sbc, _ = _field(period, "share_based_comp")
     shares, _ = _field(period, "shares_diluted")
     tax, _ = _field(period, "tax_rate")
+    pretax, _ = _field(period, "pretax_income")
+    income_tax, _ = _field(period, "income_tax")
+    if tax is None and pretax is not None and income_tax is not None and pretax > 0:
+        tax = income_tax / pretax
     days = _period_days(period)
     cogs = revenue - gross if revenue is not None and gross is not None else None
     metrics = {

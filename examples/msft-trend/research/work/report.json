@@ -8,9 +8,9 @@
   "answer": {
     "text": "三年看，经营现金流始终高于净利润、应计为负、现金周期为负，利润有现金支撑，增长质量没有恶化迹象；但应收周转天数从 FY2023 到 FY2025 上升，说明信用条件在放松，需要与新披露的应收增速对照。库存周转天数下降、应付天数上升，营运资本整体仍为负。",
     "claim_ids": [
-      "C29",
-      "C28",
-      "C32",
+      "C37",
+      "C36",
+      "C40",
       "C8",
       "I-JUDGE"
     ]
@@ -22,8 +22,8 @@
       "claim_ids": [
         "C5",
         "C4",
-        "C29",
-        "C28"
+        "C37",
+        "C36"
       ],
       "why_it_matters": "若现金转化跌破 1 且应计转正，才是质量恶化的典型信号；这里相反。",
       "increment": {
@@ -36,10 +36,10 @@
       "title": "现金周期为负且改善",
       "text": "应付天数高于应收与库存天数之和，营运资本继续为经营提供资金。",
       "claim_ids": [
-        "C34",
-        "C32",
-        "C33",
-        "C25"
+        "C42",
+        "C40",
+        "C41",
+        "C33"
       ],
       "why_it_matters": "负现金周期意味着增长不占用自有资金；这是质量稳定的结构原因。",
       "increment": {
@@ -49,13 +49,31 @@
       }
     },
     {
+      "title": "资本回报率可算且处于较高水平",
+      "text": "营业利润、税前利润与所得税、有息负债、现金与权益齐全，ROIC 按税后营业利润/投入资本可算；口径只含现金及等价物。",
+      "claim_ids": [
+        "C35",
+        "C47",
+        "C48",
+        "C44",
+        "C45",
+        "C46"
+      ],
+      "why_it_matters": "质量筛查不只看百分比利润率，还要看投入资本回报；口径写清才不会高估。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "此前只有利润率与现金转化",
+        "detail": "补入债务、现金与税项后 ROIC 可算"
+      }
+    },
+    {
       "title": "应收周转天数上升是唯一压力点",
       "text": "应收从 FY2023 到 FY2025 增长快于收入，应收天数上升；库存天数下降部分抵消。",
       "claim_ids": [
         "C8",
-        "C32",
+        "C40",
         "C1",
-        "C25"
+        "C33"
       ],
       "why_it_matters": "应收快于收入若持续，可能是信用放宽或回款变慢，需要下一期核对。",
       "increment": {
@@ -71,7 +89,7 @@
       "signal": "下一期应收增速与收入增速",
       "meaning": "验证应收天数上升是否持续",
       "claim_ids": [
-        "C32"
+        "C40"
       ],
       "due": "2027-07-30",
       "type": "earnings"
@@ -79,10 +97,10 @@
   ],
   "limitations": [
     {
-      "text": "未取得折旧摊销、债务与现金，资本开支/折旧与 ROIC 为 null；XBRL 事实可能被后续重述。",
+      "text": "未取得折旧摊销，资本开支/折旧仍为 null；投入资本口径只含现金及等价物，不含短期投资；XBRL 事实可能被后续重述。",
       "material": true,
       "claim_ids": [
-        "C30"
+        "C38"
       ]
     }
   ],
@@ -128,9 +146,9 @@
         ]
       ],
       "claim_ids": [
-        "C25",
-        "C29",
-        "C28"
+        "C33",
+        "C37",
+        "C36"
       ]
     }
   ],
@@ -143,11 +161,11 @@
       "unit": "百万美元",
       "claim_ids": [
         "C1",
-        "C13",
-        "C25",
-        "C5",
         "C17",
-        "C29"
+        "C33",
+        "C5",
+        "C21",
+        "C37"
       ],
       "series": [
         {
@@ -271,6 +289,30 @@
             "claim_ids": [
               "C12"
             ]
+          },
+          "debt": {
+            "value": 47237,
+            "claim_ids": [
+              "C13"
+            ]
+          },
+          "cash": {
+            "value": 34704,
+            "claim_ids": [
+              "C14"
+            ]
+          },
+          "pretax_income": {
+            "value": 89311,
+            "claim_ids": [
+              "C15"
+            ]
+          },
+          "income_tax": {
+            "value": 16950,
+            "claim_ids": [
+              "C16"
+            ]
           }
         },
         {
@@ -281,73 +323,97 @@
           "revenue": {
             "value": 245122,
             "claim_ids": [
-              "C13"
+              "C17"
             ]
           },
           "gross_profit": {
             "value": 171008,
             "claim_ids": [
-              "C14"
+              "C18"
             ]
           },
           "operating_profit": {
             "value": 109433,
             "claim_ids": [
-              "C15"
+              "C19"
             ]
           },
           "net_income": {
             "value": 88136,
             "claim_ids": [
-              "C16"
+              "C20"
             ]
           },
           "cfo": {
             "value": 118548,
             "claim_ids": [
-              "C17"
+              "C21"
             ]
           },
           "capex": {
             "value": 44477,
             "claim_ids": [
-              "C18"
+              "C22"
             ]
           },
           "share_based_comp": {
             "value": 10734,
             "claim_ids": [
-              "C19"
+              "C23"
             ]
           },
           "receivables": {
             "value": 56924,
             "claim_ids": [
-              "C20"
+              "C24"
             ]
           },
           "inventory": {
             "value": 1246,
             "claim_ids": [
-              "C21"
+              "C25"
             ]
           },
           "payables": {
             "value": 21996,
             "claim_ids": [
-              "C22"
+              "C26"
             ]
           },
           "total_assets": {
             "value": 512163,
             "claim_ids": [
-              "C23"
+              "C27"
             ]
           },
           "equity": {
             "value": 268477,
             "claim_ids": [
-              "C24"
+              "C28"
+            ]
+          },
+          "debt": {
+            "value": 44937,
+            "claim_ids": [
+              "C29"
+            ]
+          },
+          "cash": {
+            "value": 18315,
+            "claim_ids": [
+              "C30"
+            ]
+          },
+          "pretax_income": {
+            "value": 107787,
+            "claim_ids": [
+              "C31"
+            ]
+          },
+          "income_tax": {
+            "value": 19651,
+            "claim_ids": [
+              "C32"
             ]
           }
         },
@@ -359,73 +425,97 @@
           "revenue": {
             "value": 281724,
             "claim_ids": [
-              "C25"
+              "C33"
             ]
           },
           "gross_profit": {
             "value": 193893,
             "claim_ids": [
-              "C26"
+              "C34"
             ]
           },
           "operating_profit": {
             "value": 128528,
             "claim_ids": [
-              "C27"
+              "C35"
             ]
           },
           "net_income": {
             "value": 101832,
             "claim_ids": [
-              "C28"
+              "C36"
             ]
           },
           "cfo": {
             "value": 136162,
             "claim_ids": [
-              "C29"
+              "C37"
             ]
           },
           "capex": {
             "value": 64551,
             "claim_ids": [
-              "C30"
+              "C38"
             ]
           },
           "share_based_comp": {
             "value": 11974,
             "claim_ids": [
-              "C31"
+              "C39"
             ]
           },
           "receivables": {
             "value": 69905,
             "claim_ids": [
-              "C32"
+              "C40"
             ]
           },
           "inventory": {
             "value": 938,
             "claim_ids": [
-              "C33"
+              "C41"
             ]
           },
           "payables": {
             "value": 27724,
             "claim_ids": [
-              "C34"
+              "C42"
             ]
           },
           "total_assets": {
             "value": 619003,
             "claim_ids": [
-              "C35"
+              "C43"
             ]
           },
           "equity": {
             "value": 343479,
             "claim_ids": [
-              "C36"
+              "C44"
+            ]
+          },
+          "debt": {
+            "value": 43151,
+            "claim_ids": [
+              "C45"
+            ]
+          },
+          "cash": {
+            "value": 30242,
+            "claim_ids": [
+              "C46"
+            ]
+          },
+          "pretax_income": {
+            "value": 123627,
+            "claim_ids": [
+              "C47"
+            ]
+          },
+          "income_tax": {
+            "value": 21795,
+            "claim_ids": [
+              "C48"
             ]
           }
         }
@@ -474,12 +564,12 @@
         ],
         "status": "observed",
         "claim_ids": [
-          "C29",
-          "C28",
-          "C32",
+          "C37",
+          "C36",
+          "C40",
           "C8",
-          "C34",
-          "C33"
+          "C42",
+          "C41"
         ],
         "interpretation": "现金转化高于 1、应计为负、现金周期为负，支持 H1；应收天数上升削弱「完全稳定」，列入观察。",
         "supports": [

@@ -4,6 +4,54 @@
 
 ---
 
+## Cycle 62 · 2026-11-14 · ROIC 数据补齐与税率推导
+
+**对应卡片**：P4-4（盘点：ROIC 为 null）
+
+**问题**：趋势示例只有权益、没有有息负债/现金/税项，`ROIC` 一直是 null；税率若手写又会引入手算数字。
+
+**做法**
+
+1. 从 SEC XBRL 取有息负债（`LongTermDebt`）、现金及等价物、税前利润与所得税的三年值（均已逐项核对）。
+2. 不让研究者手写有效税率：`financial_quality` 新增可选字段 `pretax_income` 与 `income_tax`，未给 `tax_rate` 时按两值之比推导；显式 `tax_rate` 仍优先。
+3. `quality_inputs` 补别名映射，账本可直接装配这两个字段。
+4. 趋势示例补入 12 条事实主张并重生成；ROIC 约 **29.7%**（税后营业利润/投入资本），红旗仍为空。
+
+**折旧摊销为什么仍缺**
+
+MSFT 现金流量表的「折旧、摊销及其他」在 XBRL 里由 `Depreciation`、`AmortizationOfIntangibleAssets` 与「其他」拼成，没有单行口径；FY2025 那一行来自年报 DOM 文本（已在现金流示例里引用）。为了不在趋势示例里混用两种来源，`capex_to_da` 保持 null，并在限制里说明它在哪里可以取到。
+
+**关键设计决定**
+
+1. **推导而不是手写**：税率是可算的比率，写死就绕过了证据链；两个字段各自带 claim_ids，读者可以复核。
+2. **口径写进限制**：`cash` 只含现金及等价物，不含短期投资，投入资本偏高、ROIC 偏保守——宁可低估，不假装精确。
+3. **缺项如实留白**：`capex_to_da` 仍为 null，不拿「接近的 tag」凑一个看起来完整的指标。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 513 tests ... OK
+python3 scripts/quality_inputs.py examples/msft-trend/research/work/claims.json > /tmp/s.json
+python3 scripts/financial_quality.py /tmp/s.json
+```
+
+- 趋势示例：`invested_capital` 356,388、`roic` 0.2971、`flags` 为空、`unattributed` 为空。
+- 税率推导：200 利润 → 显式 0.2 与推导 50/250 结果一致；显式值优先。
+- 别名：`pretax_income`、`income_tax` 经 `quality_inputs` 正常装配并保留 claim_ids。
+- 四个示例哈希一致；冻结渲染逐字节相同。
+
+**投研意义增量**
+
+1. 质量筛查第一次能给出投入资本回报，而不只是利润率。
+2. 税率来自报表而非手算，ROIC 的每个输入都能回溯。
+
+**遗留**
+
+- 折旧摊销仍未补齐，`capex_to_da` 为 null。
+- `cash` 不含短期投资，ROIC 偏保守；若要更精确需要新的字段定义。
+- 报告正文只定性描述 ROIC，未写百分比（避免手写派生数字）。
+
 ## Cycle 61 · 2026-11-14 · 多年路径进入一页纸
 
 **对应卡片**：P4-3（盘点：推演不进 memo）

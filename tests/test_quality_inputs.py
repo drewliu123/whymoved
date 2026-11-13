@@ -123,6 +123,24 @@ class AssembleTests(unittest.TestCase):
         self.assertEqual(statements["currency"], "USD")
 
 
+class TaxAliasTests(unittest.TestCase):
+    def test_pretax_income_and_income_tax_are_mapped(self):
+        rows = []
+        for index, (period_start, period_end) in enumerate((("2023-07-01", "2024-06-30"),
+                                                            ("2024-07-01", "2025-06-30"))):
+            for name, value in (("revenue", 1000 + index), ("pretax_income", 260 + index), ("income_tax", 10 + index)):
+                rows.append({"id": "C%d" % len(rows), "text": name, "type": "fact", "as_of": "2026-11-14",
+                             "sources": [{"source_id": "S1"}],
+                             "metric": {"name": name, "value": value, "unit": "USD million", "period_type": "fy",
+                                        "period_start": period_start, "period_end": period_end, "entity": "X",
+                                        "scope": "consolidated", "currency": "USD", "scale": "million", "basis": "gaap"}})
+        result, _ = quality_inputs.assemble(rows)
+        period = result["periods"][-1]
+        self.assertEqual(period["pretax_income"]["value"], 261)
+        self.assertEqual(period["income_tax"]["value"], 11)
+        self.assertEqual(period["income_tax"]["claim_ids"], ["C5"])
+
+
 class CliTests(unittest.TestCase):
     def run_cli(self, payload, *extra):
         with tempfile.TemporaryDirectory() as tmp:

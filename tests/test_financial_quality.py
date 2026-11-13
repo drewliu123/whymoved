@@ -134,6 +134,26 @@ class MetricTests(unittest.TestCase):
         self.assertIn("capex", result["unattributed"]["FY2025"])
 
 
+class DerivedTaxTests(unittest.TestCase):
+    def test_tax_rate_is_derived_from_pretax_income_and_tax(self):
+        data = document()
+        for item in data["periods"]:
+            item.pop("tax_rate")
+            item["pretax_income"] = 250
+            item["income_tax"] = 50
+        self.assertEqual(fq.validate_document(data), [])
+        metrics = fq.analyse(data)["periods"][-1]["metrics"]
+        self.assertAlmostEqual(metrics["roic"], 210 * 0.8 / (520 + 260 - 90), places=9)
+
+    def test_explicit_tax_rate_still_wins(self):
+        data = document()
+        for item in data["periods"]:
+            item["pretax_income"] = 250
+            item["income_tax"] = 0
+        metrics = fq.analyse(data)["periods"][-1]["metrics"]
+        self.assertAlmostEqual(metrics["roic"], 210 * 0.8 / (520 + 260 - 90), places=9)
+
+
 class FlagTests(unittest.TestCase):
     def codes(self, result):
         return {flag["code"] for flag in result["flags"]}

@@ -35,6 +35,8 @@ FIELD_ALIASES = {
     "share_based_comp": ("sbc", "share based compensation", "stock based compensation", "股权激励", "股份支付"),
     "shares_diluted": ("diluted shares", "shares_diluted", "摊薄股本", "稀释股数"),
     "tax_rate": ("tax_rate", "effective tax rate", "有效税率"),
+    "pretax_income": ("pretax_income", "income before tax", "pre-tax income", "税前利润", "税前收入"),
+    "income_tax": ("income_tax", "income tax expense", "provision for income tax", "所得税费用"),
 }
 PERIOD_TYPES = ("fy", "quarter", "ltm")
 RATIO_FIELDS = {"tax_rate"}
