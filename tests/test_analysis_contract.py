@@ -613,6 +613,9 @@ class AnalysisContractTests(unittest.TestCase):
         for render in (render_report.render_markdown, render_report.render_html):
             text = render(*data[:3]).replace("\\", "")
             self.assertIn("情景对比：S1", text)
+            self.assertIn("情景推演对照：S1", text)
+            self.assertIn("情景收入推演", text)
+            self.assertIn("情景营业利润推演", text)
             self.assertIn("多年推演", text)
             self.assertNotIn("'label'", text)
         bad = bundle("operating_outlook")
@@ -626,6 +629,34 @@ class AnalysisContractTests(unittest.TestCase):
                                     "inputs": [{"input": "margin_delta", "low": -0.01, "high": 0.01}]}
         with self.assertRaisesRegex(ValueError, "scalar output"):
             self.check(bad)
+
+    def test_scenario_projection_requires_aligned_years(self):
+        import copy
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "driver_build")
+        base_model = data[0]["analysis"]["models"][0]
+        base_model["scenario"] = "base"
+        base_model["scenario_set"] = "S2"
+        base_model["spec"]["projection"] = [{"label": "Y1", "revenue_growth": 0.08, "margin": 0.21}]
+        base_model["result"] = analysis_models.compute_model(base_model["spec"])
+        bull = copy.deepcopy(base_model)
+        bull["id"] = base_model["id"] + "_bull"
+        bull["scenario"] = "bull"
+        bull["spec"]["projection"] = [{"label": "Y1", "revenue_growth": 0.15, "margin": 0.22},
+                                      {"label": "Y2", "revenue_growth": 0.1, "margin": 0.23}]
+        bull["result"] = analysis_models.compute_model(bull["spec"])
+        bear = copy.deepcopy(base_model)
+        bear["id"] = base_model["id"] + "_bear"
+        bear["scenario"] = "bear"
+        bear["spec"]["projection"] = [{"label": "Y1", "revenue_growth": 0.0, "margin": 0.2}]
+        bear["result"] = analysis_models.compute_model(bear["spec"])
+        data[0]["analysis"]["models"].extend([bear, bull])
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            self.assertIn("情景对比：S2", text)
+            self.assertNotIn("情景推演对照：S2", text)
+            self.assertIn("多年推演", text)
 
     def test_projection_renders_and_validates(self):
         data = bundle("operating_outlook")

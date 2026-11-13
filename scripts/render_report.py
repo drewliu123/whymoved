@@ -1059,6 +1059,22 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
                                                 for name in columns],
                          "rows": rows, "claim_ids": claim_ids})
         yield ("p", "情景之间不是概率加权：不计算期望值、不给概率，也不把区间当作预测。")
+        projections = [member["result"]["outputs"].get("projection") for member in members]
+        if all(isinstance(item, list) and item for item in projections):
+            labels = [row["label"] for row in projections[0]]
+            aligned = all([row["label"] for row in item] == labels for item in projections) and all(
+                all(isinstance(row.get(metric), dict) and "value" in row[metric] for row in item)
+                for item in projections for metric in ("revenue", "profit"))
+            if aligned:
+                yield ("h3", "情景推演对照：" + set_id)
+                for metric, title in (("revenue", "收入"), ("profit", "营业利润")):
+                    columns = ["年度"] + ["%s（%s）" % (member["scenario"], members[0]["currency"])
+                                          for member in members]
+                    rows = [[label] + [item[index][metric]["value"] for item in projections]
+                            for index, label in enumerate(labels)]
+                    yield ("table", {"title": "情景%s推演" % title, "columns": columns, "rows": rows,
+                                     "claim_ids": claim_ids})
+                yield ("p", "三条路径各用自己情景模型的分部假设；不是概率加权，也不把任一路径当作预测。")
     yield ("p", "固定模型的数值已重算；来源含义、假设合理性与因果解释仍需研究审查。敏感性结果不是统计置信区间。")
 
 
