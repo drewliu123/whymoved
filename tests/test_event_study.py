@@ -137,6 +137,56 @@ class AnalyseTests(unittest.TestCase):
         self.assertTrue(event_study.validate_document(doc))
 
 
+class ReturnsOnlyTests(unittest.TestCase):
+    def document(self):
+        return {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
+                "samples": [
+                    {"id": "E1", "date": "2025-05-03", "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
+                    {"id": "E2", "date": "2025-06-03", "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
+
+    def test_valid_and_aggregated(self):
+        document = self.document()
+        self.assertEqual(event_study.validate_document(document), [])
+        result = event_study.analyse(document)
+        self.assertEqual(len(result["samples"]), 2)
+        self.assertEqual(result["samples"][0]["pre_return"], 0.2)
+        self.assertAlmostEqual(result["summary"]["post_return"]["median"], 0.095)
+        self.assertAlmostEqual(result["summary"]["post_return"]["q1"], 0.0425)
+        self.assertTrue(any("returns-only" in note for note in result["notes"]))
+        self.assertNotIn("start_close", result["samples"][0])
+
+    def test_shape_failures(self):
+        cases = [
+            lambda s: s.update(returns={"pre": 0.1, "post": 0.2}),
+            lambda s: s.update(returns={"pre": 0.1, "post": 0.2, "total": 0.3, "extra": 1}),
+            lambda s: s.update(returns={"pre": "0.1", "post": 0.2, "total": 0.3}),
+            lambda s: s.update(returns={"pre": float("nan"), "post": 0.2, "total": 0.3}),
+            lambda s: s.update(returns=[]),
+        ]
+        for mutate in cases:
+            document = self.document()
+            mutate(document["samples"][0])
+            self.assertTrue(event_study.validate_document(document), mutate)
+
+    def test_mixed_samples_and_minimum(self):
+        document = self.document()
+        document["samples"].append(sample("E3", [100, 110, 120, 132, 144], 2))
+        result = event_study.analyse(document)
+        self.assertEqual(len(result["samples"]), 3)
+        single = self.document()
+        single["samples"] = single["samples"][:1]
+        with self.assertRaisesRegex(ValueError, "fewer than two usable"):
+            event_study.analyse(single)
+
+    def test_cli_accepts_returns_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp).resolve() / "events.json"
+            path.write_text(json.dumps(self.document()), encoding="utf-8")
+            process = subprocess.run([sys.executable, str(SCRIPTS / "event_study.py"), str(path)],
+                                     capture_output=True, text=True)
+            self.assertEqual(process.returncode, 0, process.stdout + process.stderr)
+
+
 class CliTests(unittest.TestCase):
     def run_cli(self, payload, *extra):
         with tempfile.TemporaryDirectory() as tmp:

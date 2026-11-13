@@ -93,7 +93,7 @@ def validate_document(document):
         if not isinstance(sample, dict):
             errors.append(path + " must be an object")
             continue
-        extra = set(sample) - {"id", "date", "label", "claim_ids", "prices"}
+        extra = set(sample) - {"id", "date", "label", "claim_ids", "prices", "returns"}
         if extra:
             errors.append(path + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
         identifier = sample.get("id")
@@ -108,6 +108,13 @@ def validate_document(document):
         if "claim_ids" in sample and (not isinstance(sample["claim_ids"], list) or
                                       any(not _text(cid) for cid in sample["claim_ids"])):
             errors.append(path + ".claim_ids must be a list of claim ids")
+        if "returns" in sample:
+            returns = sample.get("returns")
+            if not isinstance(returns, dict) or set(returns) != {"pre", "post", "total"}:
+                errors.append(path + ".returns must contain exactly pre, post and total")
+            elif any(_number(returns.get(key)) is None for key in ("pre", "post", "total")):
+                errors.append(path + ".returns values must be finite numbers")
+            continue
         prices = sample.get("prices")
         if not isinstance(prices, list) or len(prices) < 2:
             errors.append(path + ".prices must be a series with at least two points")
@@ -130,6 +137,12 @@ def validate_document(document):
 
 def sample_result(sample, before, after):
     """Return (result, None) or (None, reason) for one sample."""
+    if "returns" in sample:
+        returns = sample["returns"]
+        return {"id": sample.get("id"), "event_date": sample.get("date", ""),
+                "label": sample.get("label", ""), "claim_ids": sample.get("claim_ids", []),
+                "pre_return": returns.get("pre"), "post_return": returns.get("post"),
+                "total_return": returns.get("total")}, None
     prices = [point for point in sample.get("prices", []) if isinstance(point, dict)]
     dates = [point.get("date") for point in prices]
     if sample.get("date") not in dates:
@@ -185,7 +198,8 @@ def analyse(document):
             "notes": ["窗口单位是每条价格序列自己的观测点（通常为交易日），不是自然日。",
                       "收益是绝对收益，不是相对基准的超额收益；样本由研究者事前选定。",
                       "不给p值或显著性结论：小样本与选择偏误不支持统计推断。",
-                      "skipped列出的样本窗口不足或事件日缺失，不参与汇总。"]}
+                      "skipped列出的样本窗口不足或事件日缺失，不参与汇总。",
+                      "returns-only样本不内嵌价格序列，无法从价格重算收益；需要逐点复核时保留prices。"]}
 
 
 def main():
