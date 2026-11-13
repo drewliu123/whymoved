@@ -4,6 +4,70 @@
 
 ---
 
+## Cycle 59 · 2026-11-14 · 跟做式教程与渲染确定性修复
+
+**对应卡片**：P4-1（第二次盘点后的最高优先项）
+
+**做法**：写一条从冻结报告到四类研究的跟做路径，所有命令在本机实跑；写的过程中顺带做了归档 + 体检的端到端验证。
+
+**写教程时抓到的真问题**
+
+`doctor --renders` 对刚归档的 `msft-segments` 报 `report.md differs from the current renderer`。定位：
+
+1. 归档会用 `sort_keys` 重写 `report.json`，键顺序变成字母序；
+2. 渲染器按字典插入顺序输出模型结果表与敏感性表；
+3. 于是「归档时渲染的 md」与「用归档重渲染的 md」顺序不同，内容相同但字节不同。
+
+这不是归档的错，也不是渲染的错，而是**渲染依赖了不该依赖的顺序**。
+
+**修复**
+
+| 位置 | 变更 |
+| --- | --- |
+| `render_report` | 模型输出表、单参数敏感性表、情景对照列按输出名排序 |
+| `tests/test_analysis_contract.py` | 新增「打乱 outputs 顺序后渲染不变」回归 |
+| `examples/msft-segments` | 重新生成冻结 md/html 与 SHA256（唯一含模型输出表的示例） |
+| `docs/tutorial.md`（新） | 四步跟做路径 + 预期输出 + 常见错误表 |
+| README | 教程入口 |
+
+**教程验证**
+
+在本机按教程顺序执行：
+
+- `analysis_contract check` → `passed: true`；
+- `research_run archive` → 生成 run_id 与 manifest；
+- `doctor --renders` → `passed: true`、`renders_checked: 1`、`errors: []`；
+- 记忆索引、query、thread、digest、quality_inputs + financial_quality、render `--out-dir` 均按教程命令跑通。
+
+**关键设计决定**
+
+1. **渲染必须与输入顺序无关**：JSON 键顺序不是语义，任何以它为输出顺序的设计都会在归档、重启或工具链变化时漂移。
+2. **只重生成受影响的示例**：其余三个示例逐字节未变，说明排序只影响含模型输出表的报告。
+3. **教程命令逐条实跑**：README 之前就吃过「参数写成 --claims」的亏，这次没有只靠阅读文档。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 504 tests ... OK
+python3 scripts/doctor.py --home "$TOUYAN_HOME" --renders
+# passed true, renders_checked 1, errors []
+```
+
+- 四个示例哈希全部匹配；其余三个示例渲染逐字节不变。
+- 归档后体检不再误报渲染差异。
+
+**投研意义增量**
+
+1. 有了一条可跟做的路径，新用户不必从参考文档拼装流程。
+2. 渲染确定性修复让「归档输出 = 现在重渲染」真的成立，而不只是测试里成立。
+
+**遗留**
+
+- 教程只覆盖四个示例，估值/传导/事件研究仍没有跟做路径。
+- 排序只覆盖模型相关表格；其他表格若未来依赖字典顺序，需要同样处理。
+- 教程命令未进 CI（本地实跑过，但没有脚本化校验）。
+
 ## Cycle 58 · 2026-11-14 · 第二次阶段性盘点
 
 **对应卡片**：第 57 轮结尾提出的计划

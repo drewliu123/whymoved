@@ -1017,13 +1017,19 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
         yield ("table", {"title": "观察值与假设", "columns": ["变量", "数值", "单位", "性质", "假设理由"],
                          "rows": [[name, v["value"], v["unit"], v["role"], model["assumptions"].get(name, "")] for name, v in model["spec"]["inputs"].items()],
                          "claim_ids": list(dict.fromkeys(cid for v in model["spec"]["inputs"].values() for cid in v["claim_ids"]))})
-        scalars = {name: v for name, v in model["result"]["outputs"].items()
-                   if isinstance(v, dict) and "value" in v and "unit" in v}
+        scalars = {name: model["result"]["outputs"][name]
+                   for name in sorted(model["result"]["outputs"])
+                   if isinstance(model["result"]["outputs"][name], dict)
+                   and "value" in model["result"]["outputs"][name]
+                   and "unit" in model["result"]["outputs"][name]}
         yield ("table", {"title": "固定模型重算结果", "columns": ["输出", "结果", "单位"],
                          "rows": [[name, v["value"], v["unit"]] for name, v in scalars.items()],
                          "claim_ids": model["output_claim_ids"]})
         yield ("table", {"title": "单参数敏感性（其余输入固定）", "columns": ["变量", "改为", "单位", "输出", "结果", "结果单位"],
-                         "rows": [[row["input"], row["value"], row["unit"], name, v["value"], v["unit"]] for row in model["result"]["sensitivity"] for name, v in row["outputs"].items()],
+                         "rows": [[row["input"], row["value"], row["unit"], name, row["outputs"][name]["value"],
+                                   row["outputs"][name]["unit"]]
+                                  for row in model["result"]["sensitivity"] for name in sorted(row["outputs"])
+                                  if isinstance(row["outputs"][name], dict) and "value" in row["outputs"][name]],
                          "claim_ids": model["output_claim_ids"]})
         tornado_rows = model["result"].get("tornado")
         if tornado_rows:
@@ -1047,7 +1053,7 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
 
         outputs = [scalar_outputs(member["result"]["outputs"]) for member in members]
         common = set.intersection(*outputs) if outputs else set()
-        columns = [name for name in members[0]["result"]["outputs"] if name in common]
+        columns = [name for name in sorted(members[0]["result"]["outputs"]) if name in common]
         if not columns:
             continue
         rows = [[member["scenario"]] + [member["result"]["outputs"][name]["value"] for name in columns]

@@ -592,6 +592,16 @@ class AnalysisContractTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.check(data)
 
+    def test_render_does_not_depend_on_output_insertion_order(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "driver_build")
+        first = render_report.render_markdown(*data[:3])
+        model = data[0]["analysis"]["models"][0]
+        outputs = model["result"]["outputs"]
+        model["result"]["outputs"] = {name: outputs[name] for name in sorted(outputs, reverse=True)}
+        self.assertEqual(render_report.render_markdown(*data[:3]), first)
+        self.assertEqual(render_report.validate_report(*data[:3]), [])
+
     def test_projection_with_scenarios_and_tornado_guard(self):
         data = bundle("operating_outlook")
         add_model(data[0], data[1], "driver_build")

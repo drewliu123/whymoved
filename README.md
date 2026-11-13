@@ -37,6 +37,8 @@
 - **[阅读三年趋势报告](examples/msft-trend/research/work/report.md)**
 - **[查看完整案例与命令](examples/msft-trend/README.md)**
 
+想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
+
 ## 用它研究什么
 
 - **解释变化**：公司为什么下跌？比较实际表现、背景和新增证据，区分不同解释。

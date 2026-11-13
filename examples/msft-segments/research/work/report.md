@@ -108,18 +108,18 @@ FY2025 合并营业利润增量主要来自生产力与业务流程分部，云�
 
 | 输出 | 结果 | 单位 |
 | --- | --- | --- |
-| segment\_count | 3 | count |
-| base\_revenue | 245122\.0 | currency |
-| revenue | 281724\.0 | currency |
-| revenue\_change | 36602\.0 | currency |
-| volume\_effect | 36602\.000000000015 | currency |
-| price\_effect | 0\.0 | currency |
-| interaction\_effect | 0\.0 | currency |
 | base\_profit | 109433\.0 | currency |
+| base\_revenue | 245122\.0 | currency |
+| incremental\_margin | 0\.5216928036719313 | ratio |
+| interaction\_effect | 0\.0 | currency |
+| price\_effect | 0\.0 | currency |
 | profit | 128528\.00000000003 | currency |
 | profit\_change | 19095\.00000000003 | currency |
+| revenue | 281724\.0 | currency |
+| revenue\_change | 36602\.0 | currency |
 | revenue\_growth | 0\.14932156232406713 | ratio |
-| incremental\_margin | 0\.5216928036719313 | ratio |
+| segment\_count | 3 | count |
+| volume\_effect | 36602\.000000000015 | currency |
 
 [O\-SEG]
 
@@ -127,30 +127,30 @@ FY2025 合并营业利润增量主要来自生产力与业务流程分部，云�
 
 | 变量 | 改为 | 单位 | 输出 | 结果 | 结果单位 |
 | --- | --- | --- | --- | --- | --- |
-| margin\_delta | \-0\.01 | ratio | segment\_count | 3 | count |
-| margin\_delta | \-0\.01 | ratio | base\_revenue | 245122\.0 | currency |
-| margin\_delta | \-0\.01 | ratio | revenue | 281724\.0 | currency |
-| margin\_delta | \-0\.01 | ratio | revenue\_change | 36602\.0 | currency |
-| margin\_delta | \-0\.01 | ratio | volume\_effect | 36602\.000000000015 | currency |
-| margin\_delta | \-0\.01 | ratio | price\_effect | 0\.0 | currency |
-| margin\_delta | \-0\.01 | ratio | interaction\_effect | 0\.0 | currency |
 | margin\_delta | \-0\.01 | ratio | base\_profit | 109433\.0 | currency |
+| margin\_delta | \-0\.01 | ratio | base\_revenue | 245122\.0 | currency |
+| margin\_delta | \-0\.01 | ratio | incremental\_margin | 0\.44472323916725887 | ratio |
+| margin\_delta | \-0\.01 | ratio | interaction\_effect | 0\.0 | currency |
+| margin\_delta | \-0\.01 | ratio | price\_effect | 0\.0 | currency |
 | margin\_delta | \-0\.01 | ratio | profit | 125710\.76000000001 | currency |
 | margin\_delta | \-0\.01 | ratio | profit\_change | 16277\.76000000001 | currency |
+| margin\_delta | \-0\.01 | ratio | revenue | 281724\.0 | currency |
+| margin\_delta | \-0\.01 | ratio | revenue\_change | 36602\.0 | currency |
 | margin\_delta | \-0\.01 | ratio | revenue\_growth | 0\.14932156232406713 | ratio |
-| margin\_delta | \-0\.01 | ratio | incremental\_margin | 0\.44472323916725887 | ratio |
-| margin\_delta | 0\.01 | ratio | segment\_count | 3 | count |
-| margin\_delta | 0\.01 | ratio | base\_revenue | 245122\.0 | currency |
-| margin\_delta | 0\.01 | ratio | revenue | 281724\.0 | currency |
-| margin\_delta | 0\.01 | ratio | revenue\_change | 36602\.0 | currency |
-| margin\_delta | 0\.01 | ratio | volume\_effect | 36602\.000000000015 | currency |
-| margin\_delta | 0\.01 | ratio | price\_effect | 0\.0 | currency |
-| margin\_delta | 0\.01 | ratio | interaction\_effect | 0\.0 | currency |
+| margin\_delta | \-0\.01 | ratio | segment\_count | 3 | count |
+| margin\_delta | \-0\.01 | ratio | volume\_effect | 36602\.000000000015 | currency |
 | margin\_delta | 0\.01 | ratio | base\_profit | 109433\.0 | currency |
+| margin\_delta | 0\.01 | ratio | base\_revenue | 245122\.0 | currency |
+| margin\_delta | 0\.01 | ratio | incremental\_margin | 0\.5986623681766029 | ratio |
+| margin\_delta | 0\.01 | ratio | interaction\_effect | 0\.0 | currency |
+| margin\_delta | 0\.01 | ratio | price\_effect | 0\.0 | currency |
 | margin\_delta | 0\.01 | ratio | profit | 131345\.24000000002 | currency |
 | margin\_delta | 0\.01 | ratio | profit\_change | 21912\.24000000002 | currency |
+| margin\_delta | 0\.01 | ratio | revenue | 281724\.0 | currency |
+| margin\_delta | 0\.01 | ratio | revenue\_change | 36602\.0 | currency |
 | margin\_delta | 0\.01 | ratio | revenue\_growth | 0\.14932156232406713 | ratio |
-| margin\_delta | 0\.01 | ratio | incremental\_margin | 0\.5986623681766029 | ratio |
+| margin\_delta | 0\.01 | ratio | segment\_count | 3 | count |
+| margin\_delta | 0\.01 | ratio | volume\_effect | 36602\.000000000015 | currency |
 
 [O\-SEG]
 
