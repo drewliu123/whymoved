@@ -225,6 +225,42 @@ def _chart_inventory(report):
     return ["- 图表 %d 张：%s（完整报告或 HTML 版可查看）" % (len(charts), titles)]
 
 
+def _figure(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return "—"
+    try:
+        return "{:,.0f}".format(value) if abs(value) >= 1000 else "{:.4g}".format(value)
+    except (OverflowError, ValueError):
+        return "—"
+
+
+def _projection(report):
+    """Multi-year paths copied from frozen model outputs; no new numbers."""
+    analysis = report.get("analysis") if isinstance(report, dict) else None
+    models = analysis.get("models") if isinstance(analysis, dict) else None
+    rows = []
+    for model in models if isinstance(models, list) else []:
+        if not isinstance(model, dict):
+            continue
+        outputs = (model.get("result") or {}).get("outputs") or {}
+        projection = outputs.get("projection")
+        if not isinstance(projection, list) or not projection:
+            continue
+        unit = ("%s %s" % (model.get("currency", ""), model.get("scale", ""))).strip()
+        shown = [step for step in projection[:3] if isinstance(step, dict)]
+        parts = ["%s %s/%s" % (_escape(str(step.get("label", ""))),
+                               _figure((step.get("revenue") or {}).get("value")),
+                               _figure((step.get("profit") or {}).get("value"))) for step in shown]
+        suffix = "；等 %d 年" % len(projection) if len(projection) > 3 else ""
+        label = str(model.get("id") or "模型")
+        if model.get("scenario"):
+            label += "（%s）" % model["scenario"]
+        rows.append("- %s：%s%s（各年收入/营业利润，%s）" % (_escape(label), "；".join(parts), suffix, _escape(unit)))
+    if not rows:
+        return []
+    return ["", "## 多年路径", ""] + rows + ["- 路径只复述冻结模型里的年度假设结果，不是预测；增长率与利润率的来历见完整报告。"]
+
+
 def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
     """Return memo markdown derived only from frozen fields; no new numbers."""
     answer = report.get("answer") if isinstance(report.get("answer"), dict) else {}
@@ -238,6 +274,7 @@ def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
     findings = _findings(report, max_findings)
     if findings:
         lines.extend(["", "## 关键发现", ""] + ["%d. %s" % (index, row) for index, row in enumerate(findings, 1)])
+    lines.extend(_projection(report))
     valuation = _valuation(report)
     if valuation:
         lines.extend(["", "## 方法区间（来自冻结模型输出）", "",

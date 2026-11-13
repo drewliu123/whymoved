@@ -11,7 +11,7 @@ SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 import memo_pack
 import render_report
-from test_analysis_contract import summary_bundle
+from test_analysis_contract import add_model, bundle, summary_bundle
 from test_event_study import document as event_document, sample as event_sample
 from test_reports import QualityReportTests, documents
 
@@ -138,6 +138,23 @@ class MemoLinkedSectionsTests(unittest.TestCase):
         text = memo((report, ledger, sources)).replace("\\", "")
         self.assertIn("未挂 claim 的字段", text)
         self.assertIn("capex", text)
+
+    def test_projection_section_copies_frozen_years(self):
+        report, ledger, sources, plan = bundle("operating_outlook")
+        add_model(report, ledger, "driver_build")
+        model = report["analysis"]["models"][0]
+        model["spec"]["projection"] = [{"label": "FY2026E", "revenue_growth": 0.08, "margin": 0.21},
+                                       {"label": "FY2027E", "revenue_growth": 0.06, "margin": 0.22},
+                                       {"label": "FY2028E", "revenue_growth": 0.05, "margin": 0.23},
+                                       {"label": "FY2029E", "revenue_growth": 0.04, "margin": 0.23}]
+        import analysis_models
+        model["result"] = analysis_models.compute_model(model["spec"])
+        text = memo((report, ledger, sources))
+        self.assertIn("## 多年路径", text)
+        self.assertIn("FY2026E", text)
+        self.assertIn("等 4 年", text)
+        self.assertIn("不是预测", text)
+        self.assertIn("收入/营业利润", text)
 
     def test_chart_inventory(self):
         report, ledger, sources = documents()
