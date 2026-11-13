@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "entity": "MSFT",
+  "currency": "USD",
+  "scale": "million",
+  "as_of": "2026-11-14",
+  "periods": [
+    {
+      "id": "FY2024",
+      "period_type": "fy",
+      "period_start": "2023-07-01",
+      "period_end": "2024-06-30",
+      "revenue": 245122,
+      "gross_profit": 171008,
+      "operating_profit": 109433,
+      "net_income": 88136,
+      "cfo": 118548,
+      "capex": 44477,
+      "depreciation_amortization": 22287,
+      "share_based_comp": 10734
+    },
+    {
+      "id": "FY2025",
+      "period_type": "fy",
+      "period_start": "2024-07-01",
+      "period_end": "2025-06-30",
+      "revenue": 281724,
+      "gross_profit": 193893,
+      "operating_profit": 128528,
+      "net_income": 101832,
+      "cfo": 136162,
+      "capex": 64551,
+      "depreciation_amortization": 34153,
+      "share_based_comp": 11974
+    }
+  ]
+}

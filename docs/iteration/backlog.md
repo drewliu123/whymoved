@@ -43,7 +43,8 @@
 
 ## P0-2 财务质量与法证筛查
 
-- 状态：待认领（下一轮；数值层已就绪）
+- 状态：✅ 已完成（Cycle 4，见 [log.md](log.md)）
+- 遗留：从 claim.metric 装配 statements.json 的适配器；应计改用平均总资产。
 - 价值：HIGH / 成本：M。「增长是现金还是会计」是回报最高的一问；当前完全没有比率、应计、周转。
 - 方案：`scripts/financial_quality.py`（或 P0-0b 之后的模型 kind），输入两期以上 metric facts，输出：
   - 毛利率/营业利润率/净利率趋势；CFO/NI 现金转化；应计比率 `(NI−CFO)/平均总资产`
@@ -55,7 +56,7 @@
 
 ## P0-3 驱动式经营模型（driver build）
 
-- 状态：待认领
+- 状态：待认领（下一轮）
 - 价值：HIGH / 成本：M–L。现有 operating_bridge 是 4 个标量，文档自己承认不含量价效应；而行业分析本体就是分部与量价。
 - 方案：`driver_build`：`segments[] {name, base_revenue, volume_growth, price_growth | revenue_growth, margin}`；输出分段收入/利润贡献、量价结构利润率四效应、增量利润率 = Δ利润/Δ收入；**恒等式检查**：分部加总=合计、`(1+v)(1+p)` 复原收入、精确相等。
 - 验收：恒等式、零基数、负增长、单分部、分部利润加总与合并口径不一致时报错而非静默。
@@ -137,6 +138,7 @@
 
 ## 已完成
 
+- P0-2 盈利质量与红旗筛查 — 2026-11-14，Cycle 4
 - P0-0b 结构化数值事实（claim.metric）— 2026-11-14，Cycle 3
 - P0-0a 可复算派生计算（calculations op）— 2026-11-14，Cycle 2
 - P0-1 相对估值（comps）— 2026-11-14，Cycle 1

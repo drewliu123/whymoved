@@ -75,7 +75,7 @@ claude
 | Python 工具 | 检查引用、时间和分析契约，重算固定财务模型，渲染并保存研究档案 |
 | 宿主客户端 | 提供模型、网页、文件、终端与子 Agent 等执行能力 |
 
-固定模型覆盖经营利润桥、FCFF、DCF、反向 DCF 和可比公司相对估值，并提供单参数敏感性比较。设计与计算口径见[架构说明](docs/architecture.md)和[分析方法](skills/research/references/analysis-methods.md)。
+固定模型覆盖经营利润桥、FCFF、DCF、反向 DCF 和可比公司相对估值，并提供单参数敏感性比较；两期以上报表可做盈利质量与红旗筛查。设计与计算口径见[架构说明](docs/architecture.md)和[分析方法](skills/research/references/analysis-methods.md)。
 
 ## 按研究需要连接数据
 
