@@ -4,6 +4,13 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.70.1 · 架构索引补全与全量验收
+
+- 对 25 个真实归档跑了一遍跨工具扫查：渲染、memo、催化日历全部成功；`quality_inputs` 对没有 `claim.metric` 的 run 返回「no usable claim.metric blocks」，属于预期语义（退出码 1），不是故障；多窗口摘要与 `opportunities list/list --history` 均正常。
+- 架构文档补「其它模块」表：`opportunities`、`opportunity_contract`、`journal`、`forecast`、`authors`、`polymarket`、`sec_worker`、`common` 此前没有在架构里出现。
+- 新增守卫测试：`scripts/*.py` 必须都在 `docs/architecture.md` 出现，防止新模块漏登记。
+- 测试：新增 1 个用例，全套 524 个测试通过。
+
 ## 0.70.0 · 文档命令的子命令校验
 
 上一轮遗留：文档里的命令只校验脚本存在，不校验子命令。

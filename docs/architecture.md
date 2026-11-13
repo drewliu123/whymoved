@@ -69,6 +69,21 @@ flowchart TD
 
 每个归档保存本轮输入、报告与哈希。更新任务保留父报告，建立新的 run，再比较来源、主张、分析与判断变化。这能记录研究如何演进；它不等于后台监控、自动核查触发条件，或已完成长期持久研究状态系统。
 
+## 其它模块（不是主流程入口）
+
+主流程之外的模块仍属于仓库的一部分，调用方式与边界如下：
+
+| 模块 | 作用 |
+| --- | --- |
+| [opportunities.py](../scripts/opportunities.py) | 只读列出冻结机会记录与更新链（`list`，`--history` 含旧版本），不刷新行情、不检查触发 |
+| [opportunity_contract.py](../scripts/opportunity_contract.py) | 交易论点扩展契约：评估、触发、更新绑定与父机会一致性；只校验证据链，不判断 alpha |
+| [journal.py](../scripts/journal.py) | 旧版追加式复盘日志（memo 与假设），保留以兼容历史数据 |
+| [forecast.py](../scripts/forecast.py) | 旧版假设概率记录与校验；不是当前研究主流程的一部分 |
+| [authors.py](../scripts/authors.py) | 社区作者库：按复盘命中率升降级，供旧版流程使用 |
+| [polymarket.py](../scripts/polymarket.py) | 只读 Polymarket 查询（公共 Gamma API），不执行交易 |
+| [sec_worker.py](../scripts/sec_worker.py) | 隔离的 EdgarTools 子进程，只有它导入可选依赖 |
+| [common.py](../scripts/common.py) | 共享路径（`TOUYAN_HOME`）与 JSON 读写助手 |
+
 ## 可选接口与验证状态
 
 默认核心工具使用 Python 3.9+ 标准库。SEC解析、Financial Datasets和社区引擎是独立的可选能力；接口失败、缺授权、部分成功与无结果分别记录。参见[安装指南](installation.md)、[SEC参考](../skills/research/references/sec-data.md)及[金融接口参考](../skills/research/references/financial-data.md)。

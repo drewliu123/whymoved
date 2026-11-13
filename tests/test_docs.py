@@ -75,6 +75,12 @@ class DocumentationTests(unittest.TestCase):
                     broken.append((str(path.relative_to(ROOT)), target))
         self.assertEqual(broken, [], "broken relative links: %r" % (broken,))
 
+    def test_architecture_lists_every_script(self):
+        architecture = (ROOT / "docs" / "architecture.md").read_text(encoding="utf-8")
+        missing = sorted(path.name for path in (ROOT / "scripts").glob("*.py")
+                         if path.name not in architecture)
+        self.assertEqual(missing, [], "scripts missing from docs/architecture.md: %r" % (missing,))
+
     def test_script_references_exist(self):
         missing = []
         for path in FILES:

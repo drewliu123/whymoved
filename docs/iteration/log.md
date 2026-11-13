@@ -4,6 +4,50 @@
 
 ---
 
+## Cycle 73 · 2026-11-14 · 架构索引补全与全量验收
+
+**对应卡片**：第三次盘点后的维护项（文档完整性）
+
+**做法**：先做一次真实归档的全量扫查，再补文档索引。
+
+**扫查结果（25 个归档 × 4 个工具）**
+
+- 渲染、memo、催化日历：全部成功，无 traceback。
+- `quality_inputs`：25 个 run 全部返回「no usable claim.metric blocks」——因为这些旧 run 的 claim 没有结构化 `metric`。这是**预期语义**（可读但无可用字段，退出码 1），不是故障；扫查时容易误判为「全挂了」。
+- 多窗口摘要（7/30/365 天 × 三个截点）：全部成功。
+- `opportunities list` 与 `--history`：正常输出，含分支与旧版本。
+
+**发现**：架构文档漏了 8 个模块（`opportunities`、`opportunity_contract`、`journal`、`forecast`、`authors`、`polymarket`、`sec_worker`、`common`）。主流程入口表只覆盖主线，读文档的人会以为仓库只有那些文件。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `docs/architecture.md` | 新增「其它模块」表，逐项写作用与边界 |
+| `tests/test_docs.py` | 守卫：`scripts/*.py` 必须都出现在架构文档 |
+| CHANGELOG | 0.70.1 |
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 524 tests ... OK
+```
+
+- 架构守卫：30 个脚本全部登记。
+- 五个示例哈希一致；冻结渲染逐字节相同。
+
+**投研意义增量**
+
+1. 文档不再只描述主线，读者能看到旧版与适配器的存在与边界。
+2. 「旧版仍保留」这件事有了明确文字，避免误以为它们仍在主流程里。
+
+**遗留**
+
+- 旧版模块（journal/forecast/authors）没有弃用时间表；只是标注。
+- 扫查未检查 `opportunities --history` 的语义正确性，只确认不崩溃。
+- 没有把「旧 run 无 metric」的预期写进 doctor 的 warnings（doctor 目前只报催化日期）。
+
 ## Cycle 72 · 2026-11-14 · 文档命令的子命令校验
 
 **对应卡片**：P5-4（参考文档命令静态检查）
