@@ -13,6 +13,7 @@ from test_reports import AS_OF, SCRIPTS, documents
 from test_research_plan import plan as old_plan
 from analysis_fixtures import add_model, add_price, upgrade
 import analysis_contract
+import analysis_models
 import render_report
 import research_run
 from research_plan import validate_plan
@@ -55,6 +56,22 @@ def comps_bundle():
         "research_expectation": "研究者认为可比集有限，只把区间当作参照而非估值结论",
         "gap": "当前价格与中位隐含价值的差异取决于可比集选择与目标指标口径",
         "conditions": "可比公司倍数或目标指标修正时重算"}
+    return report, ledger, sources, plan
+
+
+def summary_bundle():
+    """Valuation bundle with DCF, comps and reverse DCF plus a method summary."""
+    report, ledger, sources, plan = priced_bundle()
+    add_model(report, ledger, "dcf", model_id="M2")
+    add_model(report, ledger, "relative_valuation", model_id="M3")
+    report["valuation_summary"] = {
+        "rows": [
+            {"model_id": "M2", "label": "DCF 基准情形", "metric": "per_share"},
+            {"model_id": "M3", "label": "可比公司倍数", "metric": "per_share"},
+            {"model_id": "M1", "label": "反向DCF隐含增长", "metric": "implied_growth"},
+        ],
+        "note": "不同方法的区间口径不同，不能直接相加。",
+    }
     return report, ledger, sources, plan
 
 
@@ -219,6 +236,62 @@ class AnalysisContractTests(unittest.TestCase):
             bad = copy.deepcopy(data); mutate(bad[0]["analysis"])
             with self.assertRaises(ValueError):
                 self.check(bad)
+
+    def test_valuation_summary_reads_frozen_model_outputs(self):
+        data = summary_bundle()
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            for word in ("估值汇总", "方法区间对照", "DCF 基准情形", "可比公司倍数",
+                         "反向DCF隐含增长", "每股价值", "隐含增长率", "参考现价",
+                         "不跨方法加权", "不能直接相加"):
+                self.assertIn(word, text)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            paths = []
+            for name, document in zip(("report", "claims", "sources", "plan"), data):
+                path = root / (name + ".json")
+                path.write_text(json.dumps(document, ensure_ascii=False), encoding="utf-8")
+                paths.append(path)
+            archived = research_run.archive_run(*paths, home=root / "home")
+            loaded = research_run.load_run(archived["run_id"], root / "home")
+            self.assertEqual(loaded["report"]["valuation_summary"], data[0]["valuation_summary"])
+            self.assertIn("估值汇总", (Path(archived["path"]) / "report.md").read_text())
+
+    def test_valuation_summary_cannot_carry_its_own_numbers(self):
+        for mutate in (
+            lambda s: s["rows"][0].update(low=1),
+            lambda s: s["rows"][0].update(model_id="M404"),
+            lambda s: s["rows"].append(dict(s["rows"][0])),
+            lambda s: s["rows"][0].update(metric="implied_growth"),
+            lambda s: s["rows"][0].pop("label"),
+            lambda s: s.update(note=1),
+            lambda s: s.update(extra=1),
+            lambda s: s.update(rows=[]),
+        ):
+            data = summary_bundle()
+            mutate(data[0]["valuation_summary"])
+            with self.assertRaises(ValueError):
+                self.check(data)
+
+    def test_valuation_summary_rejects_non_valuation_models_and_price_drift(self):
+        data = summary_bundle()
+        data[0]["valuation_summary"]["rows"].append(
+            {"model_id": "M404", "label": "缺失模型", "metric": "per_share"})
+        with self.assertRaises(ValueError):
+            self.check(data)
+        data = summary_bundle()
+        data[0]["analysis"]["models"][2]["spec"]["inputs"]["price"]["value"] = 16
+        data[0]["analysis"]["models"][2]["result"] = analysis_models.compute_model(
+            data[0]["analysis"]["models"][2]["spec"])
+        with self.assertRaisesRegex(ValueError, "one observed price"):
+            self.check(data)
+        data = summary_bundle()
+        data[0]["analysis"]["models"].append({"id": "M9", "spec": {"kind": "operating_bridge"}})
+        data[0]["valuation_summary"]["rows"].append(
+            {"model_id": "M9", "label": "经营桥", "metric": "per_share"})
+        with self.assertRaises(ValueError):
+            self.check(data)
 
     def test_driver_build_supports_operating_outlook(self):
         data = bundle("operating_outlook")

@@ -90,6 +90,25 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 
 没有metric的旧账本继续合法，渲染结果不变；不要为了填字段把区间、估算或未经核对的数字写成精确值。
 
+## 估值汇总：只读模型输出
+
+多个估值方法并存时，用可选`valuation_summary`把它们并排成一张表。**这一节不允许写任何数字**：每行只能引用`model_id`与`metric`，渲染时从冻结的模型结果读取，避免手抄、事后改数与口径混用。
+
+```json
+{
+  "rows": [
+    {"model_id": "M2", "label": "DCF 基准情形", "metric": "per_share"},
+    {"model_id": "M3", "label": "可比公司倍数", "metric": "per_share"},
+    {"model_id": "M1", "label": "反向DCF隐含增长", "metric": "implied_growth"}
+  ],
+  "note": "不同方法的区间口径不同，不能直接相加。"
+}
+```
+
+规则：`rows`非空、`model_id`唯一且必须在`analysis.models`中；`metric`须匹配模型种类（dcf / relative_valuation → per_share，reverse_dcf → implied_growth）；所有模型引用的带时刻价格必须一致，否则无法比较相对现价；`note`可选文本。渲染列为方法 / 指标 / 低 / 中 / 高 / 单位 / 中位相对现价，并注明「不跨方法加权、不给概率、不是目标价；反向DCF一行是预期不是估值」。没有该字段的报告渲染结果不变。
+
+不要用它制造「综合目标价」：表格是方法对照，不是加权结论。
+
 ## analysis：底稿完整，正文简明
 
 新报告须有`analysis.version: 1`，完整plan/analysis示例与模型精确字段见[analysis-methods.md](analysis-methods.md)。不要把本节逐条展开为正文栏目；正文呈现判断、机制、关键结果及相关缺口，预测矩阵、输入/假设和敏感性放证据附录。

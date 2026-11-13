@@ -209,8 +209,84 @@ def validate_report(report, ledger, sources=None):
     if "analysis" in report:
         from analysis_contract import validate_analysis
         errors.extend(validate_analysis(report["analysis"], claims, sources=sources))
+    errors.extend(validate_valuation_summary(report))
     from opportunity_contract import validate_opportunity
     errors.extend(validate_opportunity(report, claims))
+    return errors
+
+
+VALUATION_METRICS = {
+    "dcf": {"per_share"},
+    "relative_valuation": {"per_share"},
+    "reverse_dcf": {"implied_growth"},
+}
+
+
+def valuation_prices(models):
+    """Distinct observed prices referenced by model inputs: {(value, unit): [model ids]}."""
+    found = {}
+    for model in models if isinstance(models, list) else []:
+        if not isinstance(model, dict):
+            continue
+        spec = model.get("spec")
+        inputs = spec.get("inputs") if isinstance(spec, dict) else None
+        price = inputs.get("price") if isinstance(inputs, dict) else None
+        if isinstance(price, dict) and _number(price.get("value")):
+            found.setdefault((price["value"], price.get("unit")), []).append(model.get("id"))
+    return found
+
+
+def validate_valuation_summary(report):
+    """A summary row may only name a model and a metric; every number comes from that model."""
+    summary = report.get("valuation_summary")
+    if summary is None:
+        return []
+    analysis = report.get("analysis")
+    models = analysis.get("models") if isinstance(analysis, dict) else None
+    if not isinstance(models, list) or not models:
+        return ["valuation_summary requires analysis models"]
+    if not isinstance(summary, dict):
+        return ["valuation_summary must be an object"]
+    errors = []
+    unknown = set(summary) - {"rows", "note"}
+    if unknown:
+        errors.append("valuation_summary has unknown fields: " + ", ".join(sorted(map(str, unknown))))
+    if "note" in summary and not isinstance(summary["note"], str):
+        errors.append("valuation_summary.note must be text")
+    rows = summary.get("rows")
+    if not isinstance(rows, list) or not rows:
+        return errors + ["valuation_summary.rows must be a nonempty list"]
+    model_map = {m["id"]: m for m in models if isinstance(m, dict) and isinstance(m.get("id"), str)}
+    seen = set()
+    for n, row in enumerate(rows):
+        path = "valuation_summary.rows[%d]" % n
+        if not isinstance(row, dict):
+            errors.append(path + " must be an object")
+            continue
+        extra = set(row) - {"model_id", "label", "metric"}
+        if extra:
+            errors.append(path + " must only name model_id, label and metric; values come from the model")
+        model_id = row.get("model_id")
+        if not isinstance(model_id, str) or model_id not in model_map:
+            errors.append(path + ".model_id must reference an analysis model")
+            continue
+        if model_id in seen:
+            errors.append(path + ".model_id duplicates another row")
+        seen.add(model_id)
+        if not _text(row.get("label")):
+            errors.append(path + ".label must be nonempty text")
+        spec = model_map[model_id].get("spec") or {}
+        kind = spec.get("kind")
+        metric = row.get("metric")
+        allowed = VALUATION_METRICS.get(kind, set())
+        if not allowed:
+            errors.append(path + " references a model that does not produce a valuation metric")
+        elif metric not in allowed:
+            errors.append(path + ".metric must be one of " + ", ".join(sorted(allowed)) + " for " + str(kind))
+    prices = valuation_prices(models)
+    if len(prices) > 1:
+        rendered = ", ".join("%s %s" % (value, unit) for value, unit in sorted(prices, key=str))
+        errors.append("valuation_summary requires one observed price across models, found: " + rendered)
     return errors
 
 
@@ -275,6 +351,8 @@ def _blocks(report, ledger, sources):
             yield ("p", "研究增量（" + finding["increment"]["kind"] + "）：" + finding["increment"]["detail"])
     if report.get("analysis"):
         yield from _analysis_blocks(report["analysis"], answer_text=report["answer"]["text"])
+    if report.get("valuation_summary"):
+        yield from _valuation_summary_blocks(report)
     calculations = report.get("calculations", [])
     for calculation in calculations:
         yield ("h2", calculation["description"])
@@ -349,6 +427,45 @@ def _blocks(report, ledger, sources):
                 yield ("source", source)
     if source_doc.get("source_status"):
         yield ("p", "来源状态：" + json.dumps(source_doc["source_status"], ensure_ascii=False, sort_keys=True))
+
+
+def _valuation_summary_blocks(report):
+    """Body table across valuation methods; every number is read from a frozen model."""
+    summary = report["valuation_summary"]
+    models = {model["id"]: model for model in report["analysis"]["models"]}
+    prices = valuation_prices(report["analysis"]["models"])
+    price = unit_price_ref = None
+    if len(prices) == 1:
+        (price, unit_price_ref), _ = next(iter(prices.items()))
+    yield ("h2", "估值汇总")
+    rows, claims = [], []
+    for entry in summary["rows"]:
+        model = models[entry["model_id"]]
+        kind = model["spec"]["kind"]
+        outputs = model["result"]["outputs"]
+        claims.extend(model.get("output_claim_ids", []))
+        if kind == "dcf":
+            mid = outputs["per_share"]["value"]
+            values = [row["outputs"]["per_share"]["value"] for row in model["result"]["sensitivity"]
+                      if isinstance(row.get("outputs"), dict) and "per_share" in row["outputs"]]
+            distinct = sorted(set(values))
+            low, high = (distinct[0], distinct[-1]) if len(distinct) > 1 else (mid, mid)
+            rows.append([entry["label"], "每股价值", low, mid, high, outputs["per_share"]["unit"],
+                         (mid / price - 1) if price else "—"])
+        elif kind == "relative_valuation":
+            low, mid, high = (outputs["per_share_low"]["value"], outputs["per_share_median"]["value"],
+                              outputs["per_share_high"]["value"])
+            rows.append([entry["label"], "每股价值", low, mid, high, outputs["per_share_median"]["unit"],
+                         (mid / price - 1) if price else "—"])
+        else:
+            rows.append([entry["label"], "隐含增长率", "—", outputs["implied_growth"]["value"], "—", "ratio", "—"])
+    yield ("table", {"title": "方法区间对照", "columns": ["方法", "指标", "低", "中", "高", "单位", "中位相对现价"],
+                     "rows": rows, "claim_ids": list(dict.fromkeys(claims))})
+    if price:
+        yield ("p", "参考现价（来自模型输入的带时刻价格）：" + str(price) + " " + str(unit_price_ref) + "。")
+    yield ("p", "区间来自各方法的固定模型输出；不跨方法加权、不给概率、不是目标价。反向DCF一行是价格隐含的预期，不是估值。")
+    if summary.get("note"):
+        yield ("p", summary["note"])
 
 
 def _analysis_blocks(analysis, appendix=False, answer_text=None):

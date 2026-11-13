@@ -4,6 +4,27 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.11.0 · 估值汇总（football field）
+
+同一份研究常有 DCF、可比公司与反向 DCF 三个模型，但它们此前各自躺在附录，读者要自己对照；正文里手抄模型数字又容易走样。新增可选 `report.valuation_summary`：行只写 `model_id`、`label`、`metric`，**不允许携带任何数字**，渲染时从冻结模型结果读取。
+
+- 校验：`model_id` 唯一且必须存在于 `analysis.models`；`metric` 必须匹配模型种类（dcf / relative_valuation → per_share，reverse_dcf → implied_growth）；所有模型引用的带时刻价格必须一致；行内出现其它字段（包括 `low`/`mid` 这类数值）直接拒绝。
+- 渲染：正文「估值汇总」表列出方法、指标、低/中/高、单位与中位相对现价；DCF 区间取自敏感性扫描，comps 取四分位，反向 DCF 单列为隐含增长率；脚注明确「不跨模型加权、不给概率、不是目标价」。
+- 兼容：没有该字段的报告渲染字节不变，冻结示例哈希继续通过。
+- 测试：新增 3 个用例（只读模型、禁止自带数字、非估值模型与价格漂移），全套 272 个测试通过。
+- 文档：memo-template 新增字段说明与示例，analysis-methods 与 SKILL 指明用法。
+
+## 0.10.0 · 驱动式经营模型
+
+`operating_bridge` 只有收入增长与利润率两个标量，文档自己承认不含量价归因；分部与量价拆分只能写成一句话假设。新增 `driver_build` 固定模型：按分部给基期收入、量增长、价增长与分部利润率，确定性汇总为收入、利润与四项效应。
+
+- 恒等式：`base×(1+v)(1+p) = base + volume_effect + price_effect + interaction_effect`，三项效应之和精确等于收入变化；利润为 Σ 分部收入 ×（利润率 + `margin_delta`）。
+- 输出：`segment_count`、`base_revenue`、`revenue`、`revenue_change`、三项效应、`base_profit`、`profit`、`profit_change`；基准收入为正时 `revenue_growth`，收入变化非零时 `incremental_margin = Δ利润 ÷ Δ收入`。
+- 契约：`spec.segments` 每段须同时引用 observed（fact/price/consensus，支撑基期收入）与假设（inference/view，支撑驱动），缺一边即失败；`margin_delta` 是唯一标量输入，须写成 assumption 并在 wrapper 解释；`operating_outlook` 可由 driver_build 支撑。
+- 渲染：模型附录新增「分部驱动」表；无 segments 的报告渲染字节不变，冻结示例哈希继续通过。
+- 测试：新增 7 个模型用例与 4 个契约用例（恒等式、单分部、零增长、负利润率、驱动证据、篡改重算、越界使用），全套 269 个测试通过。
+- 文档：分析方法的模型表、量价分解说明与边界；SKILL 与 memo-template 同步。
+
 ## 0.9.0 · 盈利质量与红旗筛查
 
 插件此前只有现金流桥与固定估值模型，没有回答「这段增长是现金还是会计」的工具。新增[financial_quality.py](scripts/financial_quality.py)：读两期以上同口径报表，输出利润率趋势、现金转化、应计比率、DSO/DIO/DPO 与现金周期、资本开支强度、资本开支/折旧、股权激励占比、投入资本与 ROIC、增量利润率，并给出带阈值与证据字段的红旗清单。

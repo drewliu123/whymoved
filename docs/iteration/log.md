@@ -4,6 +4,57 @@
 
 ---
 
+## Cycle 6 · 2026-11-14 · 估值汇总（football field）+ 发布一致性
+
+**对应卡片**：P0-4
+
+**问题**：DCF、comps、反向 DCF 各自躺在附录，读者要自己对照；正文手抄模型数字既可能走样，也无法被程序核对。IC 需要的是一张「方法 → 区间 → 相对现价 → 口径」的表，同时不能变成加权的目标价。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/render_report.py` | 新增 `valuation_summary` 校验与渲染：行只能引用 `model_id`/`label`/`metric`，数值全部从冻结模型读取；DCF 区间取敏感性扫描、comps 取四分位、反向 DCF 单列隐含增长率；脚注声明不加权、不给概率、不是目标价 |
+| `tests/test_analysis_contract.py` | 3 个用例：只读模型 + 归档往返 + 双格式渲染；行内自带数字/未知模型/重复模型/metric 不匹配/价格漂移均拒绝 |
+| `tests/test_packaging.py`（新） | 4 个发布一致性用例：两个 manifest 版本一致、CHANGELOG 最新条目与版本一致、architecture 脚本链接存在、README 相对链接存在 |
+| 文档 | memo-template 新增「估值汇总：只读模型输出」；analysis-methods 与 SKILL 指明用法；CHANGELOG 0.11.0；版本 0.11.0 |
+
+**关键设计决定**
+
+1. **汇总节不允许有数字**：任何 `low`/`mid`/`high` 字段直接拒绝，只能写 `model_id` 与 `metric`。这是把「数字必须可重算」这条原则延伸到交付层——汇总表不能成为手抄的后门。
+2. **价格从模型输入取**：汇总里的「相对现价」用模型 `price` 输入的值与单位；所有模型引用的价格必须一致，否则拒绝。避免在汇总里再写一个可能过期的价格。
+3. **不做加权**：列只到「中位相对现价」，没有综合分、没有概率、没有目标价；反向 DCF 行明确标注是预期不是估值。
+
+**过程事故与修复（值得记录）**
+
+Cycle 5 的 CHANGELOG 条目**没有真正写入**：那条命令先用 `json.loads` 读 manifest 再追加 CHANGELOG，而 Cycle 4 的版本脚本把字面量 `\n` 写进了 JSON，导致 `json.loads` 抛错、脚本在写 CHANGELOG 之前就中止；我只看到 stderr 里的 traceback 没有逐条核对产物，就提交了。结果 0.10.0 条目缺失、测试基线停在 258，直到本轮更新文档时发现。
+
+修复：补写 0.10.0 与 0.11.0 两条记录、恢复基线，并新增 [test_packaging.py](../../tests/test_packaging.py)——版本号、CHANGELOG 最新条目、文档链接现在由测试强制一致，同类「发布了但没记录」不会再静默通过。另修复 manifest 里的字面量换行，JSON 恢复合法。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 276 tests ... OK
+```
+
+- 汇总渲染：三个模型（DCF/comps/反向 DCF）并排，正文出现「估值汇总」「方法区间对照」「每股价值」「隐含增长率」「参考现价」「不跨方法加权」「不能直接相加」。
+- 负例：`rows[0].low = 1` → `must only name model_id, label and metric`；`model_id="M404"` → `must reference an analysis model`；`metric="implied_growth"` 用在 DCF 上 → `metric must be one of per_share`；两个模型价格 15 vs 16 → `requires one observed price`。
+- 冻结示例：`report.md` / `report.html` 仍逐字节相同。
+- 发布一致性：manifest 版本、CHANGELOG 最新条目、architecture/README 链接全部由测试覆盖。
+
+**投研意义增量**
+
+1. 多一种交付形态：从「三张附录表」到「一张方法对照表」，判断可直接落在区间相对现价的位置上。
+2. 多一条可核实连接：汇总数字无法手写，只能来自已重算的模型输出。
+3. 边界更清楚：明确禁止加权、概率与目标价，反向 DCF 被标为预期。
+
+**遗留**
+
+- DCF 的区间来自单参数敏感性，不是联合区间；真正的情景区间见 P1-3。
+- 汇总不显示「主导假设」列；如果未来模型 wrapper 增加结构化的关键假设字段，可补。
+- 发布一致性测试只覆盖 manifest/CHANGELOG/文档链接，不校验 `evidence/` 历史记录（那些不应重写）。
+
 ## Cycle 5 · 2026-11-14 · 驱动式经营模型（driver_build）
 
 **对应卡片**：P0-3

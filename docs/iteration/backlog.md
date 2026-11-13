@@ -66,14 +66,15 @@
 
 ## P0-4 估值汇总表（football field）
 
-- 状态：待认领（下一轮；comps 与 DCF 都已就绪）
+- 状态：✅ 已完成（Cycle 6，见 [log.md](log.md)）
+- 遗留：DCF 区间仍是单参数敏感性；未展示主导假设列。
 - 价值：HIGH / 成本：S。IC 要的就是一张表：方法 → 低/中/高每股 → 对现价隐含空间 → 主导假设。现在 DCF 与 comps 躺在两张附录表里，读者要自己动手，报告自然「没有结论」。
 - 方案：`report.valuation_summary` 从**已冻结模型输出**生成；行 = DCF 区间、reverse-DCF 隐含、comps 分位；列 = 低/中/高/每股/相对现价/主导假设。**不加权、不给概率、不给「公允价值」单值**，reverse-DCF 行标注「这是预期，不是估值」。
 - 验收：篡改行数值不能通过（重算或用模型输出）；无模型时该块不存在而非空表；双格式渲染。
 
 ## P0-5 催化日历（与 triggers 共用 id 空间）
 
-- 状态：待认领
+- 状态：待认领（下一轮）
 - 价值：HIGH / 成本：S–M。催化目前只是机会对象里的文字与自由文本 watch；没有日期、没有状态机、无法回答「上周该看的东西看了吗」。
 - 方案：`report.catalysts[]`：`{id, by（日期或窗口）, type, expectation, discriminating_signal, claim_ids, status: upcoming|hit|not_hit|expired|not_checked}`；渲染按日期排序的附录时间线；提供 `--due N` 查询。
 - **关键约束**：不能另建第二套触发系统。`opportunity.triggers` 改为它的视图（同 id、同 by），全仓一套触发体系。
@@ -139,6 +140,7 @@
 
 ## 已完成
 
+- P0-4 估值汇总（football field）— 2026-11-14，Cycle 6
 - P0-3 驱动式经营模型（driver_build）— 2026-11-14，Cycle 5
 - P0-2 盈利质量与红旗筛查 — 2026-11-14，Cycle 4
 - P0-0b 结构化数值事实（claim.metric）— 2026-11-14，Cycle 3

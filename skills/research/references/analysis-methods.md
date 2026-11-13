@@ -215,6 +215,8 @@ price_relevance=true时market只用assessed / missing；false必须not_applicabl
 
 这是字段示意，C/M需换成实际记录且C_implied含对应模型输出。缺价格或不能识别隐含预期时使用`{"status":"missing","reason":"具体缺失输入及其对价格判断的影响","claim_ids":[],"model_ids":[]}`，在相关判断旁披露，不写“已被定价”。经营/人物等非价格问题用`{"status":"not_applicable","reason":"只核查公开承诺兑现，不判断价格","claim_ids":[],"model_ids":[]}`。
 
+多个估值模型并存时，用`report.valuation_summary`并排展示（见[memo-template.md](memo-template.md)）：该节只引用`model_id`与`metric`，数字一律从冻结模型读取，不允许在正文或汇总里手抄模型结果，也不允许跨方法加权成「目标价」。
+
 ## 5. 全链核对与交付
 
 ```bash
