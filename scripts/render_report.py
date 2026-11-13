@@ -183,6 +183,32 @@ def _quality_errors(report, claims):
     return errors
 
 
+def _event_study_errors(report, claims):
+    """Validate optional report.event_study: frozen samples plus usable-size check."""
+    document = report.get("event_study")
+    if document is None:
+        return []
+    from event_study import analyse as analyse_events, validate_document as validate_events
+    claim_ids = {claim["id"] for claim in claims if isinstance(claim, dict) and isinstance(claim.get("id"), str)}
+    errors = ["event_study: " + error for error in validate_events(document)]
+    if errors:
+        return errors
+    samples = document.get("samples") if isinstance(document.get("samples"), list) else []
+    for index, sample in enumerate(samples):
+        refs = sample.get("claim_ids") if isinstance(sample, dict) else None
+        if refs is None:
+            continue
+        if any(not isinstance(cid, str) or cid not in claim_ids for cid in refs):
+            errors.append("event_study: samples[%d].claim_ids contains unknown claims" % index)
+    if errors:
+        return errors
+    try:
+        analyse_events(document)
+    except ValueError as exc:
+        errors.append("event_study: " + str(exc))
+    return errors
+
+
 def validate_report(report, ledger, sources=None):
     """Check structure, dates, references and evidence validators; not semantic truth."""
     errors = []
@@ -368,6 +394,7 @@ def validate_report(report, ledger, sources=None):
         claims = ledger.get("claims") if isinstance(ledger, dict) else None
         errors.extend("transmission: " + error for error in validate_transmission(report["transmission"], claims))
     errors.extend(_quality_errors(report, claims))
+    errors.extend(_event_study_errors(report, claims))
     from calendar import validate_report_catalysts
     errors.extend(validate_report_catalysts(report))
     from opportunity_contract import validate_opportunity
@@ -746,6 +773,36 @@ def _blocks(report, ledger, sources):
         else:
             yield ("p", "未触发默认红旗阈值；这不等于没有风险。")
         yield ("p", "指标由嵌入的报表输入确定性计算；输入口径与来源仍须核对，阈值可在quality.thresholds覆盖。")
+    if report.get("event_study"):
+        from event_study import analyse as analyse_events
+        result = analyse_events(report["event_study"])
+        window = result["window"]
+        yield ("h2", "事件研究")
+        yield ("p", "事件类型：" + str(result["event"]) + "；窗口：−%s / +%s 个观测点" % (window["before"], window["after"]))
+        summary_rows = []
+        for name, label in (("pre_return", "前窗"), ("post_return", "后窗"), ("total_return", "全窗")):
+            stats = result["summary"].get(name)
+            if not stats:
+                continue
+            summary_rows.append([label, stats["n"], _metric_text(stats["median"]), _metric_text(stats["mean"]),
+                                 _metric_text(stats["q1"]), _metric_text(stats["q3"]),
+                                 _metric_text(stats["min"]), _metric_text(stats["max"]),
+                                 _metric_text(stats["positive_rate"])])
+        sample_claims = list(dict.fromkeys(cid for sample in report["event_study"].get("samples", [])
+                                           if isinstance(sample, dict)
+                                           for cid in sample.get("claim_ids", []) if isinstance(cid, str)))
+        yield ("table", {"title": "参考类收益分布",
+                         "columns": ["收益口径", "n", "中位", "均值", "Q1", "Q3", "最小", "最大", "为正比例"],
+                         "rows": summary_rows, "claim_ids": sample_claims})
+        yield ("table", {"title": "样本明细",
+                         "columns": ["样本", "事件日", "前窗收益", "后窗收益", "全窗收益"],
+                         "rows": [[row["id"], row["event_date"], _metric_text(row["pre_return"]),
+                                   _metric_text(row["post_return"]), _metric_text(row["total_return"])]
+                                  for row in result["samples"]],
+                         "claim_ids": sample_claims})
+        if result["skipped"]:
+            yield ("p", "跳过：" + "；".join("%s（%s）" % (row["id"], row["reason"]) for row in result["skipped"]))
+        yield ("p", "绝对收益、样本事前选定、不给p值；参考类分布不是预测，也不是超额收益。")
     yield ("audit", "来源与结论审计")
     from metrics import describe as _describe_metric, extract_metrics
     metric_rows = extract_metrics(ledger["claims"])

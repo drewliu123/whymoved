@@ -94,6 +94,12 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 
 consensus主张可带`consensus`块（series_id、metric、target_period、provider、sample_size、median、low、high），同一series_id与target_period的多个截点用于计算修订；fact主张可带`guidance`块（metric、target_period、midpoint、可选low/high）。指引不能冒充共识：`guidance`放在consensus上会被拒绝。附录渲染「一致预期序列」与「公司指引（不是分析师共识）」。详见[evidence.md](evidence.md)与[expectations.md](expectations.md)。
 
+## 事件研究：可选 report.event_study
+
+需要历史类比时，可把 event_study 的输入文档（event / window / samples）放进 `report.event_study`，随报告一起归档。校验复用 `event_study.validate_document`，核对样本 `claim_ids` 是否存在，并要求至少两条可用样本；渲染在附录生成「事件研究」小节——参考类收益分布（n、中位、均值、四分位、正为比例）与样本明细，并注明「绝对收益、样本事前选定、不给 p 值」。
+
+字段与独立运行完全一致；没有该字段的报告渲染不变。
+
 ## 盈利质量：可选 report.quality
 
 两期以上报表可把质量筛查嵌进报告：`report.quality = {statements, thresholds?}`。`statements` 与[financial-quality.md](financial-quality.md)的输入完全一致（字段值可为裸数字或`{value, claim_ids}`）；`thresholds`可覆盖默认阈值（键名必须是已知阈值，取值在(0,1]）。

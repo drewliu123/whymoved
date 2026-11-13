@@ -48,6 +48,10 @@
 python3 "$TY_DIR/scripts/event_study.py" "$WORK/events.json" --out "$WORK/event-result.json"
 ```
 
+## 嵌入报告
+
+同一份输入可以放进 `report.event_study` 随报告归档：校验会核对样本 `claim_ids`、窗口与可用样本数，渲染在附录生成「事件研究」小节（分布表与样本明细）。独立运行与嵌入运行共用同一套校验，字段不需要改写。
+
 ## 边界
 
 - **绝对收益，不是超额收益**：没有基准调整，也没有行业/市场中性。把它当「同类事件后的绝对涨跌」读，不要当 alpha。

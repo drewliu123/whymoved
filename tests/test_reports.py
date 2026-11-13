@@ -15,6 +15,7 @@ from pathlib import Path
 SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 import render_report
+from test_event_study import document as event_document, sample as event_sample
 
 AS_OF = "2026-10-31T12:00:00Z"
 
@@ -373,6 +374,46 @@ class QualityReportTests(unittest.TestCase):
     def test_reports_without_quality_unchanged(self):
         report, ledger, sources = documents()
         self.assertNotIn("盈利质量", render_report.render_markdown(report, ledger, sources))
+
+
+class EventStudyReportTests(unittest.TestCase):
+    def document(self):
+        report, ledger, sources = documents()
+        report["event_study"] = event_document(
+            [event_sample("E1", [100, 110, 120, 132, 144, 158], 2),
+             event_sample("E2", [100, 100, 100, 90, 99, 108.9], 2)], before=2, after=2)
+        return report, ledger, sources
+
+    def test_validates_and_renders(self):
+        report, ledger, sources = self.document()
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(report, ledger, sources).replace("\\", "")
+            for word in ("事件研究", "参考类收益分布", "样本明细", "E1", "E2", "后窗",
+                         "绝对收益", "不给p值", "不是预测"):
+                self.assertIn(word, text)
+        markdown = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("0.095", markdown)
+
+    def test_negative_cases(self):
+        report, ledger, sources = self.document()
+        report["event_study"]["window"]["after"] = 0
+        self.assertTrue(any("event_study:" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.document()
+        report["event_study"]["samples"][0]["claim_ids"] = ["C404"]
+        self.assertTrue(any("unknown claims" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.document()
+        report["event_study"] = "nope"
+        self.assertTrue(any("event_study:" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.document()
+        report["event_study"]["samples"] = [report["event_study"]["samples"][0],
+                                            event_sample("E3", [100, 110, 120], 0)]
+        self.assertTrue(any("fewer than two usable" in error
+                            for error in render_report.validate_report(report, ledger, sources)))
+
+    def test_reports_without_event_study_unchanged(self):
+        report, ledger, sources = documents()
+        self.assertNotIn("事件研究", render_report.render_markdown(report, ledger, sources))
 
 
 class Text(HTMLParser):
