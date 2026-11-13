@@ -173,6 +173,41 @@ def _quality_flags(report):
     return lines
 
 
+def _ratio(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return "—"
+    try:
+        return str(round(value, 4))
+    except (OverflowError, ValueError):
+        return "—"
+
+
+def _event_study(report):
+    """Reference-class distribution from an embedded event study, if any."""
+    document = report.get("event_study")
+    if not isinstance(document, dict):
+        return []
+    from event_study import analyse as analyse_events
+    try:
+        result = analyse_events(document)
+    except (KeyError, TypeError, ValueError):
+        return []
+    window = result["window"]
+    lines = ["", "## 参考类事件", "",
+             "- 事件：%s；窗口：−%s / +%s 个观测点" % (_escape(str(result["event"])), window["before"], window["after"])]
+    for name, label in (("post_return", "后窗"), ("total_return", "全窗")):
+        stats = result["summary"].get(name)
+        if not stats:
+            continue
+        lines.append("- %s：n=%d，中位 %s，为正 %s，Q1—Q3 %s—%s" % (
+            label, stats["n"], _ratio(stats["median"]), _ratio(stats["positive_rate"]),
+            _ratio(stats["q1"]), _ratio(stats["q3"])))
+    if result.get("skipped"):
+        lines.append("- 跳过 %d 条样本（窗口不足或事件日缺失），详见完整报告。" % len(result["skipped"]))
+    lines.append("- 绝对收益、样本事前选定、不给 p 值；参考类分布不是预测。")
+    return lines
+
+
 def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
     """Return memo markdown derived only from frozen fields; no new numbers."""
     answer = report.get("answer") if isinstance(report.get("answer"), dict) else {}
@@ -194,6 +229,7 @@ def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
         lines.append("不跨方法加权、不给概率、不是目标价；反向DCF一行是价格隐含的预期。")
     lines.extend(_bottleneck(report))
     lines.extend(_quality_flags(report))
+    lines.extend(_event_study(report))
     catalysts = _catalysts(report)
     if catalysts:
         lines.extend(["", "## 接下来看什么", ""] + catalysts)

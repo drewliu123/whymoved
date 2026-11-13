@@ -12,6 +12,7 @@ sys.path.insert(0, str(SCRIPTS))
 import memo_pack
 import render_report
 from test_analysis_contract import summary_bundle
+from test_event_study import document as event_document, sample as event_sample
 from test_reports import QualityReportTests, documents
 
 
@@ -118,10 +119,23 @@ class MemoLinkedSectionsTests(unittest.TestCase):
         self.assertNotIn("growth_without_cash", text)
         self.assertIn("low_capex_vs_da", text)
 
+    def test_event_study_section(self):
+        report, ledger, sources = documents()
+        report["event_study"] = event_document(
+            [event_sample("E1", [100, 110, 120, 132, 144, 158], 2),
+             event_sample("E2", [100, 100, 100, 90, 99, 108.9], 2)], before=2, after=2)
+        text = memo((report, ledger, sources))
+        self.assertIn("## 参考类事件", text)
+        self.assertIn("后窗", text)
+        self.assertIn("中位", text)
+        self.assertIn("为正", text)
+        self.assertIn("不是预测", text)
+
     def test_sections_absent_by_default(self):
         text = memo(documents())
         self.assertNotIn("## 传导瓶颈", text)
         self.assertNotIn("## 质量红旗", text)
+        self.assertNotIn("## 参考类事件", text)
 
 
 class MemoCliTests(unittest.TestCase):
