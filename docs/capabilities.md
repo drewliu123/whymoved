@@ -26,6 +26,7 @@
 | 示例回归与教程可执行 | [教程](tutorial.md) | `test_examples.py`、`test_tutorial.py` | [development](development.md) |
 | CLI 错误约定与文档链接 | — | `test_cli_errors.py`、`test_docs.py` | [development](development.md) |
 | 发布一致性（版本/CHANGELOG/入口） | — | `test_packaging.py` | [development](development.md) |
+| SEC 官方检索（可选运行时） | — | `test_sec_cli.py` | [sec-data](../skills/research/references/sec-data.md) |
 
 ## 怎么读这张表
 

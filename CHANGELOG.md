@@ -4,6 +4,17 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.72.0 · SEC 采集入口的可验证行为
+
+盘点遗留「SEC 采集层未验收」：此前只做人工 curl 核对，没有测试。
+
+- 新增 [test_sec_cli.py](tests/test_sec_cli.py)：不触网验证可选采集入口。
+  - `doctor` 返回 provider `edgartools`、`status: ok`、`sec_network_requested: false`；运行时缺失时优雅跳过。
+  - 未配置 `EDGAR_IDENTITY` 时 `filings` 返回 `status: not_run`、原因写明、退出码 2、`data` 为 null——**不发送请求**。
+  - 未知子命令退出 2，无 traceback。
+- 能力索引补一行 SEC 官方检索（可选运行时）。
+- 测试：新增 3 个用例，全套 527 个测试通过。
+
 ## 0.71.0 · 体检说明质量筛查不可用的归档
 
 上一轮全量扫查发现：25 个旧归档对 `quality_inputs` 全部返回「no usable claim.metric blocks」，但体检里看不出原因。

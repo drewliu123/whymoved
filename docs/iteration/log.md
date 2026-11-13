@@ -4,6 +4,57 @@
 
 ---
 
+## Cycle 75 · 2026-11-14 · SEC 采集入口的可验证行为
+
+**对应卡片**：盘点遗留（SEC 采集层未验收）
+
+**做法**：不触网，验证可选采集入口的配置与失败行为。
+
+**结果**
+
+- `sec_data doctor`：provider `edgartools` 5.62.1、`status: ok`、`identity_configured: false`、`sec_network_requested: false`。
+- `sec_data filings AAPL`（清空 `EDGAR_IDENTITY`）：`status: not_run`、`reason: EDGAR_IDENTITY is not configured; no SEC request sent.`、退出码 2、`data: null`。
+- 未知子命令：退出 2，无 traceback。
+
+这三点正是采集层最重要的边界：**没配置就绝不发请求**，失败要写得能行动。
+
+**另外验证了三级更新链**：父→子→孙 归档成功，`thread` 回溯顺序为根→子→孙（length 3），摘要「同题」正常。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `tests/test_sec_cli.py`（新） | 3 个用例：doctor、未配置身份、未知子命令；运行时缺失时跳过 |
+| `docs/capabilities.md` | 补 SEC 官方检索（可选运行时） |
+| CHANGELOG | 0.72.0 |
+
+**关键设计决定**
+
+1. **不触网**：测试只验证「没配置时不发请求」，不验证真实抓取；真实抓取需要身份与速率约束，不适合放进 CI。
+2. **可跳过**：可选运行时在 CI 里可能不存在，`doctor` 失败即 `skipTest`，不把环境缺失当产品缺陷。
+3. **错误码一致**：配置缺失属于「输入不可读/不可运行」，沿用 2。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 527 tests ... OK
+```
+
+- 3 个 SEC 用例通过；三级链归档与 thread 顺序正确。
+- 五个示例哈希一致；冻结渲染逐字节相同。
+
+**投研意义增量**
+
+1. 采集层从「人工核对过」变成「有测试描述边界」。
+2. 「未配置身份不得发请求」有了机器验证。
+
+**遗留**
+
+- 真实抓取（有身份）未进测试，避免速率与凭据问题。
+- `financial_data` / `polymarket` 的失败路径未做同类测试（依赖网络或外部 API）。
+- 三级链只验证了结构，未验证摘要中多级更新的去重。
+
 ## Cycle 74 · 2026-11-14 · 体检说明质量筛查不可用的归档
 
 **对应卡片**：Cycle 73 遗留（旧 run 无 metric 的预期结果未进 doctor warnings）
