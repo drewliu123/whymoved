@@ -131,8 +131,8 @@ def _chart_errors(chart, path, refs):
     kind = chart.get("kind", "line")
     if kind not in {"line", "bar", "waterfall"}:
         errors.append(path + ".kind must be line, bar or waterfall")
-    elif kind != "line" and "series" in chart:
-        errors.append(path + ".kind " + kind + " cannot use series")
+    elif kind == "waterfall" and "series" in chart:
+        errors.append(path + ".kind waterfall cannot use series")
     if kind == "waterfall":
         rows = chart.get("rows")
         if isinstance(rows, list):
@@ -1119,6 +1119,8 @@ def _chart(c):
 
 
 def _bar_chart(c):
+    if "series" in c:
+        return _grouped_bar_chart(c)
     rows = c["rows"]
     values = [row["value"] for row in rows]
     lo, hi = min(min(values), 0), max(max(values), 0)
@@ -1145,6 +1147,43 @@ def _bar_chart(c):
                        left, top, width, height, _h(label), _h(label)))
     out.append('<text x="60" y="220">%s</text><text x="680" y="220" text-anchor="end">%s</text></svg>' % (
         _h(rows[0]["label"]), _h(rows[-1]["label"])))
+    out.append('<p id="chart-readout" role="tooltip" aria-live="polite">%s</p></section>' % _h(
+        c["x_label"] + " · " + c["y_label"] + "（" + c["unit"] + "）"))
+    return "".join(out)
+
+
+def _grouped_bar_chart(c):
+    series = _chart_series(c)
+    labels = [row["label"] for row in series[0][1]]
+    values = [row["value"] for _, rows in series for row in rows]
+    lo, hi = min(min(values), 0), max(max(values), 0)
+    scale = max(abs(lo), abs(hi), 1)
+    low, high = lo / scale, hi / scale
+
+    def y(value):
+        return 190 - ((value / scale - low) / (high - low) if high != low else .5) * 150
+
+    group = 620 / len(labels)
+    width = group / (len(series) + 1)
+    out = ['<section class="chart"><h2>%s</h2><svg viewBox="0 0 720 250" role="group" aria-label="%s（分组柱状）">' % (
+        _h(c["title"]), _h(c["title"]))]
+    for value in (lo, 0, hi):
+        out.append('<line class="grid" x1="60" x2="680" y1="%s" y2="%s"/><text x="2" y="%s">%s</text>' % (
+            y(value), y(value), y(value) - 5, _h(value)))
+    for series_index, (name, rows) in enumerate(series):
+        opacity = max(0.35, 0.9 - series_index * 0.25)
+        for index, row in enumerate(rows):
+            left = 60 + index * group + (series_index + 0.5) * width
+            top = y(max(row["value"], 0))
+            height = abs(y(row["value"]) - y(0))
+            label = name + " · " + row["label"] + " " + str(row["value"]) + " " + c["unit"]
+            out.append('<rect x="%.3f" y="%.3f" width="%.3f" height="%.3f" fill="var(--series)" opacity="%s" '
+                       'tabindex="0" role="img" aria-label="%s" aria-describedby="chart-readout"><title>%s</title></rect>' % (
+                           left, top, width * 0.9, height, opacity, _h(label), _h(label)))
+    out.append('<text x="60" y="220">%s</text><text x="680" y="220" text-anchor="end">%s</text></svg>' % (
+        _h(labels[0]), _h(labels[-1])))
+    out.append('<p style="font-size:13px">系列顺序（同组从左到右，色调由深到浅）：%s。精确数值见下方同源数据表。</p>' % _h(
+        "、".join(name for name, _ in series)))
     out.append('<p id="chart-readout" role="tooltip" aria-live="polite">%s</p></section>' % _h(
         c["x_label"] + " · " + c["y_label"] + "（" + c["unit"] + "）"))
     return "".join(out)

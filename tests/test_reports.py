@@ -240,11 +240,12 @@ class BarWaterfallTests(unittest.TestCase):
         report, ledger, sources = self.bar_document()
         report["chart"]["kind"] = "pie"
         self.assertTrue(any("kind must be" in error for error in render_report.validate_report(report, ledger, sources)))
-        report, ledger, sources = self.bar_document()
+        report, ledger, sources = self.waterfall_document()
         report["chart"]["series"] = [{"name": "A", "rows": [{"label": "Q1", "value": 1},
                                                             {"label": "Q2", "value": 2}]}]
         report["chart"].pop("rows")
-        self.assertTrue(any("cannot use series" in error for error in render_report.validate_report(report, ledger, sources)))
+        self.assertTrue(any("waterfall cannot use series" in error
+                            for error in render_report.validate_report(report, ledger, sources)))
         report, ledger, sources = self.waterfall_document()
         report["chart"]["rows"][0].pop("role")
         self.assertTrue(any("role must be" in error for error in render_report.validate_report(report, ledger, sources)))
@@ -252,6 +253,23 @@ class BarWaterfallTests(unittest.TestCase):
         report["chart"]["rows"] = [{"label": "变动", "value": 1, "role": "delta"},
                                    {"label": "合计", "value": 1, "role": "total"}]
         self.assertTrue(any("start with a total" in error for error in render_report.validate_report(report, ledger, sources)))
+
+    def test_grouped_bar_chart(self):
+        report, ledger, sources = documents()
+        report["chart"] = {"kind": "bar", "title": "分部对比", "x_label": "分部", "y_label": "收入",
+                           "unit": "亿元", "claim_ids": ["C1"],
+                           "series": [
+                               {"name": "FY2024", "rows": [{"label": "云", "value": 10}, {"label": "设备", "value": 4}]},
+                               {"name": "FY2025", "rows": [{"label": "云", "value": 12}, {"label": "设备", "value": 3}]}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        self.assertEqual(page.count("<rect"), 4)
+        self.assertNotIn("<polyline", page)
+        for token in ("分组柱状", "FY2024 · 云 10 亿元", "FY2025 · 云 12 亿元", "系列顺序", "同源数据表"):
+            self.assertIn(token, page)
+        markdown = render_report.render_markdown(report, ledger, sources)
+        self.assertIn("| 分部 | FY2024（亿元） | FY2025（亿元） |", markdown)
+        self.assertIn("| 云 | 10 | 12 |", markdown)
 
     def test_line_charts_unchanged(self):
         report, ledger, sources = documents()
