@@ -17,6 +17,14 @@ python3 --version
 
 未设置 `TOUYAN_HOME` 时，现有代码仍默认使用 `~/Desktop/投研助手`，以兼容历史数据；新用户建议显式设置上面的隔离目录。归档写入 `$TOUYAN_HOME/journal/runs/`，工作输入通常放在 `$TOUYAN_HOME/journal/work/`。源码目录中的历史资料不代表新数据会自动迁入本机数据根。
 
+升级或迁移数据后先跑一次数据根体检：
+
+```bash
+python3 scripts/doctor.py --home "$TOUYAN_HOME"
+```
+
+它会用当前校验器加载每个归档、重建研究记忆索引、统计催化日期，并给出可读的 errors / warnings；只读，不修复任何东西。退出码 0 健康（允许 warning）、1 至少一个归档无法加载、2 数据根或 `journal/runs` 不存在。
+
 仓库内第三方 EdgarTools 源码以子模块记录。核心离线 CLI、示例和单元测试不需要初始化子模块；需要阅读该第三方源码时再运行：
 
 ```bash

@@ -46,6 +46,7 @@ flowchart TD
 | [calendar.py](../scripts/calendar.py) | 已冻结报告的催化日期汇总（upcoming / overdue / undated），只读、不监控 |
 | [research_memory.py](../scripts/research_memory.py) | 跨轮次研究记忆索引与当时视角查询，只存指针、不改归档 |
 | [digest.py](../scripts/digest.py) | 多轮摘要：判断变化、窗口内研究、未来催化与过期未核对 |
+| [doctor.py](../scripts/doctor.py) | 数据根体检：归档可加载性、记忆索引、催化日期与只读保证 |
 | [consensus.py](../scripts/consensus.py) | 一致预期快照、修订与指引/共识分离，只读计算 |
 | [event_study.py](../scripts/event_study.py) | 参考类事件的窗口收益分布（观测点窗口、n与分位、不给p值） |
 | [transmission.py](../scripts/transmission.py) | 行业传导图：节点/机制/时滞/瓶颈校验与上下游方向、路径、告警 |
