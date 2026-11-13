@@ -98,6 +98,10 @@ python3 "$TY_DIR/scripts/financial_quality.py" "$WORK/statements.json"
 - **不产生主张**：输出是计算记录，不自动成为 claims。要写进报告的数字与判断仍须走来源与主张账本；把这些数字挂成 `claim.metric` 或计算记录，再让结论引用它们。
 - **不能替代读财报**：指标异常时，下一步永远是读附注与 MD&A，找机制，而不是加大红旗阈值。
 
+## 嵌入报告
+
+把同一份 statements 放进 `report.quality.statements` 即可随报告归档：校验会核对报表结构与字段的 `claim_ids`，渲染在附录生成「盈利质量」小节（指标表、环比变化、红旗）。可选 `quality.thresholds` 覆盖默认阈值。嵌入时指标在渲染时重新计算，不冻结结论；独立运行时用 `financial_quality.py`，两者输入结构一致。
+
 ## 真实示例
 
 [微软 FY2024–FY2025 盈利质量示例](../../examples/msft-quality/README.md) 使用已冻结的官方表格数字：毛利率 68.8%、现金转化 1.34、资本开支/折旧 1.89、增量利润率 52.2%，红旗为空；资产负债表科目缺失时 DSO/ROIC 等输出 `null`。

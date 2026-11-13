@@ -94,6 +94,12 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 
 consensus主张可带`consensus`块（series_id、metric、target_period、provider、sample_size、median、low、high），同一series_id与target_period的多个截点用于计算修订；fact主张可带`guidance`块（metric、target_period、midpoint、可选low/high）。指引不能冒充共识：`guidance`放在consensus上会被拒绝。附录渲染「一致预期序列」与「公司指引（不是分析师共识）」。详见[evidence.md](evidence.md)与[expectations.md](expectations.md)。
 
+## 盈利质量：可选 report.quality
+
+两期以上报表可把质量筛查嵌进报告：`report.quality = {statements, thresholds?}`。`statements` 与[financial-quality.md](financial-quality.md)的输入完全一致（字段值可为裸数字或`{value, claim_ids}`）；`thresholds`可覆盖默认阈值（键名必须是已知阈值，取值在(0,1]）。
+
+校验会检查报表结构与各字段的 `claim_ids` 是否存在；渲染在附录生成「盈利质量」小节：关键指标表（利润率、现金转化、应计、周转、资本开支、SBC、ROIC）、环比变化表、红旗清单。指标在校验/渲染时由嵌入输入重新计算，不是冻结的结论；没有该字段的报告渲染不变。
+
 ## 行业传导：可选 report.transmission
 
 主题研究可把传导图直接嵌进报告：`report.transmission` 的字段与[transmission.md](transmission.md)的输入完全一致（nodes / edges / bottleneck）。校验会用账本核对各节点、边与瓶颈的 `claim_ids` 是否存在；渲染在附录生成「行业传导」小节：瓶颈与理由、节点表（节点、标签、方向、可观察指标）、传导路径与告警。没有该字段的报告渲染不变。

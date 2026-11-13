@@ -302,6 +302,79 @@ class TransmissionReportTests(unittest.TestCase):
         self.assertNotIn("行业传导", render_report.render_markdown(report, ledger, sources))
 
 
+class QualityReportTests(unittest.TestCase):
+    def statements(self):
+        def period(identifier, start, end, values):
+            data = {"id": identifier, "period_type": "fy", "period_start": start, "period_end": end}
+            for name, value in values.items():
+                data[name] = {"value": value, "claim_ids": ["C1"]}
+            return data
+        return {"schema_version": 1, "entity": "EXAMPLE", "currency": "USD", "scale": "million",
+                "as_of": AS_OF,
+                "periods": [
+                    period("FY2024", "2024-01-01", "2024-12-31",
+                           {"revenue": 1000, "gross_profit": 500, "operating_profit": 200, "net_income": 150,
+                            "cfo": 180, "capex": 60, "depreciation_amortization": 80,
+                            "receivables": 120, "inventory": 80, "payables": 60, "total_assets": 900,
+                            "equity": 500, "debt": 200, "cash": 100, "share_based_comp": 40,
+                            "shares_diluted": 100, "tax_rate": 0.2}),
+                    period("FY2025", "2025-01-01", "2025-12-31",
+                           {"revenue": 1200, "gross_profit": 570, "operating_profit": 210, "net_income": 120,
+                            "cfo": 100, "capex": 50, "depreciation_amortization": 90,
+                            "receivables": 210, "inventory": 130, "payables": 65, "total_assets": 1100,
+                            "equity": 520, "debt": 260, "cash": 90, "share_based_comp": 90,
+                            "shares_diluted": 104, "tax_rate": 0.2})]}
+
+    def document(self):
+        report, ledger, sources = documents()
+        report["quality"] = {"statements": self.statements()}
+        return report, ledger, sources
+
+    def test_validates_and_renders(self):
+        report, ledger, sources = self.document()
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(report, ledger, sources).replace("\\", "")
+            for word in ("盈利质量", "关键指标", "毛利率", "现金转化", "ROIC", "环比变化", "增量利润率",
+                         "红旗", "growth_without_cash", "确定性计算"):
+                self.assertIn(word, text)
+        markdown = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("0.475", markdown)
+        self.assertIn("0.2", markdown)
+
+    def test_thresholds_override(self):
+        report, ledger, sources = self.document()
+        report["quality"]["thresholds"] = {"sbc_ratio": 0.05, "margin_drop": 1.0}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("high_sbc", text)
+        self.assertNotIn("gross_margin_pressure", text)
+
+    def test_negative_cases(self):
+        report, ledger, sources = self.document()
+        report["quality"] = "nope"
+        self.assertTrue(any("quality must be" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.document()
+        report["quality"] = {"statements": {}}
+        self.assertTrue(any("quality.statements:" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.document()
+        report["quality"]["thresholds"] = {"unknown": 0.1}
+        self.assertTrue(any("not a known threshold" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.document()
+        report["quality"]["thresholds"] = {"sbc_ratio": 2}
+        self.assertTrue(any("in (0, 1]" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.document()
+        report["quality"]["statements"]["periods"][0]["revenue"]["claim_ids"] = ["C404"]
+        self.assertTrue(any("unknown claims" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.document()
+        report["quality"]["extra"] = 1
+        self.assertTrue(any("unknown fields" in error for error in render_report.validate_report(report, ledger, sources)))
+
+    def test_reports_without_quality_unchanged(self):
+        report, ledger, sources = documents()
+        self.assertNotIn("盈利质量", render_report.render_markdown(report, ledger, sources))
+
+
 class Text(HTMLParser):
     def __init__(self):
         super().__init__()

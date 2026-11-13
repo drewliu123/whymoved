@@ -143,6 +143,46 @@ def _chart_errors(chart, path, refs):
     return errors
 
 
+def _quality_errors(report, claims):
+    """Validate optional report.quality: frozen statements plus optional thresholds."""
+    quality = report.get("quality")
+    if quality is None:
+        return []
+    from financial_quality import THRESHOLDS, validate_document
+    claim_ids = {claim["id"] for claim in claims if isinstance(claim, dict) and isinstance(claim.get("id"), str)}
+    errors = []
+    if not isinstance(quality, dict):
+        return ["quality must be an object"]
+    extra = set(quality) - {"statements", "thresholds"}
+    if extra:
+        errors.append("quality has unknown fields: " + ", ".join(sorted(map(str, extra))))
+    statements = quality.get("statements")
+    if not isinstance(statements, dict):
+        return errors + ["quality.statements must be an object"]
+    errors.extend("quality.statements: " + error for error in validate_document(statements))
+    thresholds = quality.get("thresholds")
+    if thresholds is not None:
+        if not isinstance(thresholds, dict):
+            errors.append("quality.thresholds must be an object")
+        else:
+            for key, value in thresholds.items():
+                if key not in THRESHOLDS:
+                    errors.append("quality.thresholds." + str(key) + " is not a known threshold")
+                elif isinstance(value, bool) or not isinstance(value, (int, float)) or not 0 < value <= 1:
+                    errors.append("quality.thresholds." + str(key) + " must be a number in (0, 1]")
+    periods = statements.get("periods") if isinstance(statements.get("periods"), list) else []
+    for index, period in enumerate(periods):
+        if not isinstance(period, dict):
+            continue
+        for field, value in period.items():
+            if not isinstance(value, dict) or "claim_ids" not in value:
+                continue
+            refs = value.get("claim_ids")
+            if not isinstance(refs, list) or any(not isinstance(cid, str) or cid not in claim_ids for cid in refs):
+                errors.append("quality.statements.periods[%d].%s.claim_ids contains unknown claims" % (index, field))
+    return errors
+
+
 def validate_report(report, ledger, sources=None):
     """Check structure, dates, references and evidence validators; not semantic truth."""
     errors = []
@@ -327,6 +367,7 @@ def validate_report(report, ledger, sources=None):
         from transmission import validate_document as validate_transmission
         claims = ledger.get("claims") if isinstance(ledger, dict) else None
         errors.extend("transmission: " + error for error in validate_transmission(report["transmission"], claims))
+    errors.extend(_quality_errors(report, claims))
     from calendar import validate_report_catalysts
     errors.extend(validate_report_catalysts(report))
     from opportunity_contract import validate_opportunity
@@ -502,6 +543,17 @@ def _str(value):
     return "—" if value is None else str(value)
 
 
+def _metric_text(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return "—"
+    try:
+        if not math.isfinite(value):
+            return "—"
+    except OverflowError:
+        return "—"
+    return str(round(value, 4))
+
+
 def _table_columns(table):
     """Column labels, with an optional per-column unit appended in the header."""
     columns = list(table["columns"])
@@ -656,6 +708,44 @@ def _blocks(report, ledger, sources):
             yield ("p", "传导路径：" + "；".join(" → ".join(path) for path in result["paths"]))
         for warning in result["warnings"]:
             yield ("p", "传导提示：" + warning)
+    if report.get("quality"):
+        from financial_quality import analyse as analyse_quality
+        quality = report["quality"]
+        result = analyse_quality(quality["statements"], quality.get("thresholds"))
+        period_rows = []
+        claim_ids = []
+        for period in quality["statements"].get("periods", []):
+            for value in period.values():
+                if isinstance(value, dict):
+                    claim_ids.extend(cid for cid in value.get("claim_ids", []) if isinstance(cid, str))
+        claim_ids = list(dict.fromkeys(claim_ids))
+        fields = (("gross_margin", "毛利率"), ("operating_margin", "营业利润率"), ("net_margin", "净利率"),
+                  ("cash_conversion", "现金转化"), ("accrual_ratio", "应计比率"),
+                  ("capex_intensity", "资本开支/收入"), ("capex_to_da", "资本开支/折旧"),
+                  ("sbc_ratio", "SBC/收入"), ("roic", "ROIC"))
+        for row in result["periods"]:
+            period_rows.append([row["id"]] + [_metric_text(row["metrics"].get(name)) for name, _ in fields])
+        yield ("h2", "盈利质量")
+        yield ("table", {"title": "关键指标", "columns": ["期间"] + [label for _, label in fields],
+                         "rows": period_rows, "claim_ids": claim_ids})
+        changes = result["changes"]
+        if changes:
+            change_fields = (("revenue_growth", "收入增长"), ("gross_margin_change", "毛利率变化"),
+                             ("operating_margin_change", "营业利润率变化"), ("incremental_margin", "增量利润率"),
+                             ("dso_change", "DSO变化"), ("dio_change", "DIO变化"), ("share_growth", "股本变化"))
+            yield ("table", {"title": "环比变化",
+                             "columns": ["区间"] + [label for _, label in change_fields],
+                             "rows": [[item["from"] + " → " + item["to"]] +
+                                      [_metric_text(item.get(name)) for name, _ in change_fields]
+                                      for item in changes],
+                             "claim_ids": claim_ids})
+        if result["flags"]:
+            yield ("h3", "红旗")
+            for item in result["flags"]:
+                yield ("p", item["period"] + "｜" + item["code"] + "：" + item["message"])
+        else:
+            yield ("p", "未触发默认红旗阈值；这不等于没有风险。")
+        yield ("p", "指标由嵌入的报表输入确定性计算；输入口径与来源仍须核对，阈值可在quality.thresholds覆盖。")
     yield ("audit", "来源与结论审计")
     from metrics import describe as _describe_metric, extract_metrics
     metric_rows = extract_metrics(ledger["claims"])

@@ -4,6 +4,17 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.31.0 · 盈利质量嵌入报告
+
+盈利质量筛查此前是独立脚本，结论与报表不随报告归档。新增可选 `report.quality = {statements, thresholds?}`：
+
+- `statements` 与 financial_quality 的输入完全一致，字段值可为裸数字或 `{value, claim_ids}`；`thresholds` 覆盖默认阈值（已知键名、(0,1]）。
+- 校验：报表结构复用 `financial_quality.validate_document`，并逐字段核对 `claim_ids` 是否存在；未知字段、未知阈值键、非法阈值都失败。
+- 渲染：附录新增「盈利质量」小节——关键指标表（毛利率/营业利润率/净利率/现金转化/应计/资本开支/SBC/ROIC）、环比变化表（收入增长、利润率变化、增量利润率、周转变化、股本变化）与红旗清单；指标在渲染时由嵌入输入重新计算，不冻结结论。
+- 兼容：没有该字段的报告渲染字节不变，冻结示例哈希继续通过。
+- 测试：新增 4 个用例（校验与渲染、阈值覆盖、六类负例、无字段兼容），全套 420 个测试通过。
+- 文档：memo-template 与 financial-quality 参考补嵌入说明。
+
 ## 0.30.0 · 传导图嵌入报告
 
 行业传导图此前是独立产物，研究结论与链条不在同一份档案里。新增可选 `report.transmission`：结构与[transmission.md](skills/research/references/transmission.md)的输入完全一致，嵌入后随报告一起归档与渲染。
