@@ -12,7 +12,7 @@ export PYTHONDONTWRITEBYTECODE=1
 python3 -m unittest discover -s tests
 ```
 
-当前基线为 484 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
+当前基线为 486 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
 
 ## 离线示例回归
 
@@ -55,7 +55,7 @@ python3 scripts/render_report.py examples/msft-cashflow/research/work/report.jso
 
 [scripts](../scripts/)是确定性 CLI 与契约实现，[tests](../tests/)是标准库回归测试，[研究协议](../skills/research/SKILL.md)及其参考文档描述模型应遵循的流程，[agents](../agents/)定义取证和审查职责。修改研究提示词时同步检查对应引用及协议，避免把流程要求误描述成代码已自动保证的能力。
 
-`TOUYAN_HOME` 只指定研究数据根，不会移动插件源码，也不隔离 Last30Days 自己的缓存。默认数据根保留 `~/Desktop/投研助手` 以兼容既有用户；开发时显式使用 `$PWD/.local/touyan-data`，不要为了本机方便更改共享默认路径。
+归档、渲染与输入读取只拒绝对**自身目录/文件**的符号链接；祖先符号链接（macOS `/var`、外置盘、链接的家目录）是正常位置，不是攻击。`TOUYAN_HOME` 只指定研究数据根，不会移动插件源码，也不隔离 Last30Days 自己的缓存。默认数据根保留 `~/Desktop/投研助手` 以兼容既有用户；开发时显式使用 `$PWD/.local/touyan-data`，不要为了本机方便更改共享默认路径。
 
 真实 SEC 配置与虚拟环境属于本机环境，生成办法见 [SEC 运行时安装](installation.md#可选sec-原始披露运行时)。[配置结构示例](../data/sec-runtime.example.json)只展示占位路径，不能直接复制为可用配置。不要提交身份、API Key、本机绝对运行时路径、虚拟环境或缓存；测试不应读取用户真实身份或联网。
 

@@ -41,9 +41,12 @@ def _hash(data):
 
 def _root(home=None, create=False):
     root = Path(home if home is not None else os.environ.get("TOUYAN_HOME", Path.home() / "Desktop" / "投研助手")).expanduser().absolute()
-    root = root / "journal" / "runs"
-    if ".." in root.parts or any(p.is_symlink() for p in [root] + list(root.parents)):
+    runs_dir = root / "journal" / "runs"
+    if ".." in runs_dir.parts or runs_dir.is_symlink() or (root / "journal").is_symlink():
+        # Ancestor symlinks (macOS /var, external volumes) are legitimate; the
+        # components the archive itself owns must not be links.
         raise ValueError("unsafe research runs directory")
+    root = runs_dir
     if create:
         root.mkdir(parents=True, exist_ok=True)
     return root

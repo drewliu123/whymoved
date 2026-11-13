@@ -666,6 +666,16 @@ class ReportsTest(unittest.TestCase):
         r["calculations"][0]["inputs"][0]["claim_ids"] = ["missing"]
         self.assertTrue(render_report.validate_report(r, l, s))
 
+    def test_symlinked_ancestor_is_allowed_for_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            real = root / "real"
+            real.mkdir()
+            alias = root / "alias"
+            alias.symlink_to(real, target_is_directory=True)
+            render_report.write_outputs(alias / "out", "md", "html")
+            self.assertEqual((real / "out/report.md").read_text(), "md")
+
     def test_output_refuses_overwrite_and_symlink(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp).resolve()

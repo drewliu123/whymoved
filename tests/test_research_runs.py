@@ -139,6 +139,19 @@ class ResearchRunsTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             research_run.load_run("../../outside", self.home)
 
+    def test_symlinked_ancestor_is_allowed_but_owned_components_are_not(self):
+        real = self.root / "real"
+        real.mkdir()
+        alias = self.root / "alias"
+        alias.symlink_to(real, target_is_directory=True)
+        result = research_run.archive_run(*self.paths, home=alias / "home")
+        self.assertTrue((real / "home/journal/runs" / result["run_id"]).is_dir())
+        other = self.root / "other"
+        (other / "journal").mkdir(parents=True)
+        (other / "journal/runs").symlink_to(real, target_is_directory=True)
+        with self.assertRaisesRegex(ValueError, "unsafe"):
+            research_run.archive_run(*self.paths, home=other)
+
     def test_source_and_output_symlinks_and_traversal_refused(self):
         linked = self.root / "linked.json"; linked.symlink_to(self.paths[0])
         with self.assertRaises(ValueError):

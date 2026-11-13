@@ -1401,7 +1401,9 @@ def read_document(path):
     if ".." in path.parts:
         raise ValueError("input path traversal refused")
     absolute = path.absolute()
-    if any(p.is_symlink() for p in [absolute] + list(absolute.parents)):
+    if absolute.is_symlink() or absolute.parent.is_symlink():
+        # Only the named file and its immediate directory are inspected; an
+        # ancestor symlink such as macOS /var is a normal location.
         raise ValueError("symlink input refused: " + str(path))
     if not path.is_file():
         raise ValueError("input must be a regular file: " + str(path))
@@ -1412,7 +1414,9 @@ def read_document(path):
 def write_outputs(directory, markdown, page, overwrite=False):
     """Validate destinations before creating files; refuse symlinks and replacement by default."""
     directory = Path(directory).expanduser().absolute()
-    if ".." in directory.parts or any(p.is_symlink() for p in [directory] + list(directory.parents)):
+    if ".." in directory.parts or directory.is_symlink():
+        # The output directory itself must not be a link; a symlinked parent
+        # (macOS /var, a linked home) is a normal location.
         raise ValueError("unsafe output directory")
     paths = [directory / "report.md", directory / "report.html"]
     for path in paths:
