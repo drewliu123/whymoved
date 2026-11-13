@@ -139,7 +139,7 @@ driver_build把收入拆成分部量价。spec.segments每段写name、base_reve
 
 收入恒等式：base×(1+v)(1+p)=base+volume_effect+price_effect+interaction_effect，三项效应之和在模型内部精确等于revenue_change（volume_effect=Σbase×v，price_effect=Σbase×p，interaction_effect=Σbase×v×p，不要重复计入交互项）。incremental_margin=Δprofit÷Δrevenue，收入不变时省略该输出。利润为Σ段收入×(margin+margin_delta)；基期利润为Σ基期收入×(base_margin，缺省用margin)。
 
-可选`projection`做多年推演：列表每项写`label`、`revenue_growth`（>−1）与`margin`，从模型当年收入起逐年复合，输出每年收入与营业利润，报告渲染「多年推演」表。推演逐年套用给定增长率与利润率，不叠加`margin_delta`敏感性；它是情景算术，不是预测，增长率与利润率的来历仍要写进假设与证据。
+`tornado.output`必须命名标量输出，不能指向多年推演数组；情景集对照也只比较标量输出，推演按各情景模型分别展示。可选`projection`做多年推演：列表每项写`label`、`revenue_growth`（>−1）与`margin`，从模型当年收入起逐年复合，输出每年收入与营业利润，报告渲染「多年推演」表。推演逐年套用给定增长率与利润率，不叠加`margin_delta`敏感性；它是情景算术，不是预测，增长率与利润率的来历仍要写进假设与证据。
 
 边界：分部相互独立，不建模共享成本、协同或分部间转移价；margin是营业利润率而不是净利率；margin_delta是统一冲击，不是分部特定情景，也不能当概率加权。敏感性扫margin_delta可以看整体利润率变化的传导，但单参数扫描仍不是联合情景。情景集：同一驱动结构可以生成bear / base / bull多个模型，各自wrapper写`scenario`（bear/base/bull）与`scenario_set`（同一共享id）。同一set须至少两个模型、含bear与bull、情景不重复、`spec.kind`一致、假设输入集合相同，且每个情景至少有一个assumption输入——否则拒绝。渲染时模型标题标注情景，附录末尾给「情景对比」表（只列各情景共有的输出）。情景之间不是概率加权：不计算期望值、不给概率、不把区间当预测。
 

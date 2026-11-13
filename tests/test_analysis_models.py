@@ -461,6 +461,14 @@ class DriverBuildTests(unittest.TestCase):
         self.assertAlmostEqual(rows[1]["profit"]["value"], rows[1]["revenue"]["value"] * 0.24)
         self.assertNotIn("projection", compute_model(spec("driver_build"))["outputs"])
 
+    def test_tornado_cannot_target_the_projection_array(self):
+        item = spec("driver_build")
+        item["projection"] = [{"label": "Y1", "revenue_growth": 0.1, "margin": 0.2}]
+        item["tornado"] = {"output": "projection",
+                           "inputs": [{"input": "margin_delta", "low": -0.01, "high": 0.01}]}
+        with self.assertRaisesRegex(ValueError, "must name a scalar output"):
+            compute_model(item)
+
     def test_projection_validation(self):
         cases = [
             [{"label": "Y1", "revenue_growth": -1, "margin": 0.2}],

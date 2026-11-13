@@ -471,6 +471,8 @@ def compute_model(spec):
             target = tornado["output"]
             if target not in outputs:
                 raise ValueError("tornado.output is not defined for this model")
+            if not (isinstance(outputs[target], dict) and "value" in outputs[target]):
+                raise ValueError("tornado.output must name a scalar output")
             for row in tornado["inputs"]:
                 name, low, high = row["input"], row["low"], row["high"]
                 low_outputs = _calculate(kind, dict(values, **{name: low}), peers, segments)

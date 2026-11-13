@@ -632,6 +632,13 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
                     errors.append(path + ".spec.tornado has unknown fields: " + ", ".join(sorted(map(str, extra))))
                 if not _text(tornado.get("output")):
                     errors.append(path + ".spec.tornado.output must name a model output")
+                else:
+                    model_result = model.get("result")
+                    reported = model_result.get("outputs") if isinstance(model_result, dict) else None
+                    target = tornado["output"]
+                    if isinstance(reported, dict) and target in reported and not (
+                            isinstance(reported[target], dict) and "value" in reported[target]):
+                        errors.append(path + ".spec.tornado.output must name a scalar output")
                 entries = tornado.get("inputs")
                 inputs = spec.get("inputs") if isinstance(spec.get("inputs"), dict) else {}
                 if not isinstance(entries, list) or not entries:

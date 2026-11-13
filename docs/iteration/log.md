@@ -4,6 +4,52 @@
 
 ---
 
+## Cycle 56 · 2026-11-14 · 推演与敏感性/情景的交互加固
+
+**对应卡片**：Cycle 54 遗留（推演与敏感性/情景的交互未验证）
+
+**问题**：新增多年推演后，`projection` 是唯一一个非标量输出。既有代码在多处假设「输出都是 {value, unit}」：
+
+1. `tornado.output` 指向 `projection` 时，龙卷风循环重算时不带推演，报「not defined at the swept values of margin_delta」——错误信息完全指错方向。
+2. 情景集对照表对每个输出取 `["value"]`，三个情景模型都带推演时直接 `TypeError`。
+
+**修复**
+
+| 位置 | 变更 |
+| --- | --- |
+| `analysis_models.compute_model` | tornado.target 必须是标量输出，否则 `tornado.output must name a scalar output` |
+| `analysis_contract` | 同样按已报告输出检查一次，契约层即拒绝 |
+| `render_report` | 情景集只取标量输出列；推演表按各情景模型分别渲染 |
+| tests | 2 个用例：龙卷风指向推演被拒（模型层）；三情景带推演可渲染且不含字典文本 |
+
+**关键设计决定**
+
+1. **先问「谁是标量」**：输出集合不再默认可比较，标量判定统一成「dict 且有 value 与 unit」。
+2. **错误信息必须指对方向**：把「swept values 未定义」改成「必须命名标量输出」，用户才知道该改哪个字段。
+3. **情景对照保留标量、推演分开看**：不强行把数组塞进同一张表；每个情景自己的推演表已经足够对照。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 502 tests ... OK
+```
+
+- 龙卷风：`tornado.output="projection"` → `ValueError: tornado.output must name a scalar output`。
+- 情景：三个 driver_build 模型各带推演 → 渲染含「情景对比：S1」与「多年推演」，且不含 `'label'` 这类字典文本。
+- 兼容：不写推演时所有行为不变；四个示例哈希与冻结渲染全一致。
+
+**投研意义增量**
+
+1. 新增能力的交互面被验证，而不是只测「单独能用」。
+2. 错误信息从误导改成可行动。
+
+**遗留**
+
+- 推演数组不能直接做龙卷风；如果未来要给推演做敏感性，需要单独的「路径敏感性」设计。
+- 情景对照目前只并列标量；三条推演路径的并排对照仍缺。
+- 标量判定写了两处（模型与渲染），可以抽成共享函数。
+
 ## Cycle 55 · 2026-11-14 · 第四个真实示例：三年盈利质量趋势
 
 **对应卡片**：示例覆盖面（Cycle 53 遗留：趋势类缺位）与应计/周转演示

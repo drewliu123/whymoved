@@ -1041,7 +1041,11 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
     order = {"bear": 0, "base": 1, "bull": 2}
     for set_id, members in scenario_sets.items():
         members = sorted(members, key=lambda item: order.get(item.get("scenario"), 9))
-        outputs = [set(member["result"]["outputs"]) for member in members]
+        def scalar_outputs(outputs):
+            return {name for name, value in outputs.items()
+                    if isinstance(value, dict) and "value" in value and "unit" in value}
+
+        outputs = [scalar_outputs(member["result"]["outputs"]) for member in members]
         common = set.intersection(*outputs) if outputs else set()
         columns = [name for name in members[0]["result"]["outputs"] if name in common]
         if not columns:

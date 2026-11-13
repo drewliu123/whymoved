@@ -592,6 +592,41 @@ class AnalysisContractTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.check(data)
 
+    def test_projection_with_scenarios_and_tornado_guard(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "driver_build")
+        base_model = data[0]["analysis"]["models"][0]
+        base_model["scenario"] = "base"
+        base_model["scenario_set"] = "S1"
+        base_model["spec"]["projection"] = [{"label": "Y1", "revenue_growth": 0.08, "margin": 0.21}]
+        base_model["result"] = analysis_models.compute_model(base_model["spec"])
+        for tag, growth in (("bear", 0.02), ("bull", 0.15)):
+            import copy
+            model = copy.deepcopy(base_model)
+            model["id"] = base_model["id"] + "_" + tag
+            model["scenario"] = tag
+            for segment in model["spec"]["segments"]:
+                segment["volume_growth"] = growth
+            model["result"] = analysis_models.compute_model(model["spec"])
+            data[0]["analysis"]["models"].append(model)
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            self.assertIn("情景对比：S1", text)
+            self.assertIn("多年推演", text)
+            self.assertNotIn("'label'", text)
+        bad = bundle("operating_outlook")
+        add_model(bad[0], bad[1], "driver_build")
+        model = bad[0]["analysis"]["models"][0]
+        model["spec"]["projection"] = [{"label": "Y1", "revenue_growth": 0.08, "margin": 0.21}]
+        model["result"] = analysis_models.compute_model(model["spec"])
+        model["result"]["tornado"] = [{"input": "margin_delta", "output": "projection", "low": -0.01, "high": 0.01,
+                                       "low_output": {}, "high_output": {}, "swing": 0}]
+        model["spec"]["tornado"] = {"output": "projection",
+                                    "inputs": [{"input": "margin_delta", "low": -0.01, "high": 0.01}]}
+        with self.assertRaisesRegex(ValueError, "scalar output"):
+            self.check(bad)
+
     def test_projection_renders_and_validates(self):
         data = bundle("operating_outlook")
         add_model(data[0], data[1], "driver_build")
