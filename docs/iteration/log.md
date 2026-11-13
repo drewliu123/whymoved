@@ -4,6 +4,52 @@
 
 ---
 
+## Cycle 37 · 2026-11-14 · 实体别名
+
+**对应卡片**：P0-6 遗留（实体别名表）
+
+**问题**：同一标的在不同 run 里常写成 `NVDA` / `NVIDIA` / `英伟达`。索引把它们当成三个实体，`query` 只命中其中一种写法——真实归档里已经出现「Kevin Warsh」与「Kevin Warsh / 美联储」这类变体。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/research_memory.py` | 读取数据根下 `journal/aliases.json`（规范名 → 别名数组）；index 按规范名归并 `entities` 并输出 `alias_map`；query 命中别名时返回该实体全部 run；坏文件降级为 warning |
+| `tests/test_research_memory.py` | 4 个用例：归并、三种写法查询、幂等、损坏文件降级 |
+| 文档 | research-memory 增「实体别名」；CHANGELOG 0.40.0 |
+
+**关键设计决定**
+
+1. **别名表放数据根，不进源码**：不同用户的称呼习惯不同，别名属于个人数据，不该提交到仓库。
+2. **规范名 + 别名数组**：单选一个方向，避免双向映射冲突；左键即展示名。
+3. **坏文件降级**：损坏的 JSON 只写 `warnings`，索引照常构建。别名是辅助功能，不该让整个记忆系统失败。
+4. **只影响检索与分组**：不改归档原文，也不做语义消歧（Apple 是公司还是水果仍需人判断）。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 445 tests ... OK
+```
+
+- 归并：`NVDA` 与 `NVIDIA` 两个 run 在 `entities["NVDA"]` 下合并；`alias_map["nvidia"] == "NVDA"`，`warnings` 为空。
+- 查询：`NVDA`、`nvidia`、`英伟达` 三种写法都返回 2 条（第二条的正文里根本没有这些字，靠别名命中）。
+- 幂等：带别名的索引连跑两次完全相等。
+- 降级：`aliases.json` 写成 `{` 或数组时，索引仍构建、`warnings` 非空、`alias_map` 为空。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 多一条检索正确性：同一标的的不同写法不再分裂。
+2. 多一条可审计性：`alias_map` 让人看到归并规则。
+3. 边界更清楚：只做检索与分组，不做语义消歧。
+
+**遗留**
+
+- 别名表要手工维护，没有从已有 run 里建议别名的机制。
+- 归并只用于 `entities` 与 query；`thread`、`digest` 仍按 run 原文展示实体。
+- 没有冲突检测（同一别名指向两个规范名时后者覆盖前者）。
+
 ## Cycle 36 · 2026-11-14 · 基期标签窄校验
 
 **对应卡片**：P1-0e 遗留（period 标签未与窗口交叉校验）

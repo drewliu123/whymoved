@@ -145,6 +145,31 @@ def run_record(run_dir):
     return record, None
 
 
+def load_aliases(home):
+    """Read journal/aliases.json: {canonical: [alias, ...]} -> (normalized map, warnings)."""
+    path = Path(home).resolve() / "journal" / "aliases.json"
+    if not path.is_file():
+        return {}, []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        return {}, ["aliases.json cannot be read and was ignored: " + str(exc)]
+    if not isinstance(data, dict):
+        return {}, ["aliases.json must be an object mapping canonical names to alias lists"]
+    mapping = {}
+    for canonical, aliases in data.items():
+        if not _text(canonical):
+            continue
+        name = canonical.strip()
+        mapping.setdefault(name.casefold(), name)
+        if not isinstance(aliases, list):
+            continue
+        for alias in aliases:
+            if _text(alias):
+                mapping[alias.strip().casefold()] = name
+    return mapping, []
+
+
 def build_index(home):
     """Rebuild the pointer index from journal/runs; deterministic and side-effect free."""
     runs_dir = Path(home).resolve() / "journal" / "runs"
@@ -158,14 +183,17 @@ def build_index(home):
             continue
         runs.append(record)
     runs.sort(key=lambda item: (item["run_id"],))
+    aliases, warnings = load_aliases(home)
     entities = {}
     for record in runs:
         for entity in record["entities"]:
-            entities.setdefault(entity, []).append(record["run_id"])
+            canonical = aliases.get(entity.strip().casefold(), entity)
+            entities.setdefault(canonical, []).append(record["run_id"])
     for key in entities:
         entities[key].sort()
     payload = {"schema_version": SCHEMA_VERSION, "runs": runs,
-               "entities": dict(sorted(entities.items())), "skipped": skipped}
+               "entities": dict(sorted(entities.items())), "skipped": skipped,
+               "alias_map": dict(sorted(aliases.items())), "warnings": warnings}
     payload["index_hash"] = _hash(payload)
     return payload
 
@@ -178,9 +206,15 @@ def query_index(index, term, as_of=None, limit=None):
     cutoff = _date(as_of) if as_of else None
     if as_of and cutoff is None:
         raise ValueError("--as-of must be an ISO date")
+    aliases = index.get("alias_map") or {}
+    canonical = aliases.get(needle)
     matches = []
     for record in index.get("runs", []):
-        if needle not in record.get("search", ""):
+        hits_text = needle in record.get("search", "")
+        hits_alias = bool(canonical) and any(
+            aliases.get(str(entity).strip().casefold()) == canonical
+            for entity in record.get("entities", []))
+        if not hits_text and not hits_alias:
             continue
         stamp = _date(record.get("as_of"))
         if cutoff is not None and (stamp is None or stamp > cutoff):

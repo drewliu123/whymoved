@@ -154,6 +154,50 @@ class QueryTests(unittest.TestCase):
         self.assertEqual(result["matches"], [])
 
 
+class AliasTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.home = Path(self.tmp.name).resolve()
+        write_run(self.home, "R20261001T000000Z-aaaaaaaaaaaa", as_of="2026-10-01T00:00:00Z",
+                  title="显卡厂商估值", question="GPU vendor 怎么看", entity="NVDA", judgment="偏多")
+        write_run(self.home, "R20261015T000000Z-bbbbbbbbbbbb", as_of="2026-10-15T00:00:00Z",
+                  title="图形供应商更新", question="graphics supplier 更新", entity="NVIDIA", judgment="中性")
+        (self.home / "journal").mkdir(parents=True, exist_ok=True)
+        (self.home / "journal" / "aliases.json").write_text(
+            json.dumps({"NVDA": ["NVIDIA", "英伟达"]}), encoding="utf-8")
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_entities_are_grouped_by_canonical_name(self):
+        index = memory.build_index(self.home)
+        self.assertEqual(index["entities"]["NVDA"],
+                         ["R20261001T000000Z-aaaaaaaaaaaa", "R20261015T000000Z-bbbbbbbbbbbb"])
+        self.assertEqual(index["alias_map"]["nvidia"], "NVDA")
+        self.assertEqual(index["warnings"], [])
+
+    def test_query_resolves_aliases(self):
+        index = memory.build_index(self.home)
+        for term in ("NVDA", "nvidia", "英伟达"):
+            result = memory.query_index(index, term)
+            self.assertEqual(result["count"], 2, term)
+
+    def test_index_is_stable_with_aliases(self):
+        first = memory.build_index(self.home)
+        second = memory.build_index(self.home)
+        self.assertEqual(first, second)
+
+    def test_invalid_alias_file_is_ignored_with_warning(self):
+        (self.home / "journal" / "aliases.json").write_text("{", encoding="utf-8")
+        index = memory.build_index(self.home)
+        self.assertTrue(index["warnings"])
+        self.assertEqual(index["alias_map"], {})
+        self.assertIn("NVDA", index["entities"])
+        (self.home / "journal" / "aliases.json").write_text(json.dumps(["NVDA"]), encoding="utf-8")
+        index = memory.build_index(self.home)
+        self.assertTrue(any("must be an object" in warning for warning in index["warnings"]))
+
+
 class LineageTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()

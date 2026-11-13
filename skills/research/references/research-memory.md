@@ -60,6 +60,21 @@ python3 "$TY_DIR/scripts/research_memory.py" query --home "$TY_HOME" NVDA --limi
 
 （示例为真实归档的裁剪结果。）
 
+## 实体别名：journal/aliases.json
+
+不同 run 对同一标的的写法常常不一致（`NVDA` / `NVIDIA` / `英伟达`）。可在数据根下放一个别名表把它们归到同一个实体：
+
+```json
+{"NVDA": ["NVIDIA", "英伟达"], "BTC": ["Bitcoin", "比特币"]}
+```
+
+规则：
+
+- 左键是**规范名**，值是别名数组；大小写不敏感。
+- `index` 会按规范名归并 `entities`，并在 `alias_map` 里记录归一化后的映射（可审计）；`query` 命中任一别名都会返回该实体的全部 run。
+- 别名文件缺失是正常状态（不影响任何功能）；文件损坏或不是对象时**忽略并写进 index 的 warnings**，不会让整个索引失败。
+- 别名字段只影响检索与分组，不改变归档里的原始 entity 文本，也不做语义消歧（「Apple」是公司还是水果仍需人判断）。
+
 ## 判断沿革：thread
 
 索引已经记录每轮的 `parent_run`。`thread` 把它还原成一条判断沿革：
