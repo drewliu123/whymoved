@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "question": "苹果 FY2024 经营利润增长，为什么净利润反而下降？",
+  "type": "asset",
+  "task": "两年盈利质量与税项核对",
+  "entity": "Apple",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "区分经营恶化与税项影响",
+  "prior_judgment": "利润下降常被当成经营变差，需要用税前与税项拆开",
+  "comparison": {
+    "period": "FY2024 对 FY2023",
+    "unit": "USD million",
+    "scope": "合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "两年税前利润、所得税与现金流取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "用税前利润与所得税拆开经营与税项",
+    "baseline": "FY2023 同口径",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入",
+      "营业利润",
+      "税前利润",
+      "所得税",
+      "净利润"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "营业利润、税前利润与所得税的变化方向",
+        "source": "官方年报",
+        "by": "下一份 10-K",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "营业利润下降"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "营业利润上升而所得税跳升"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "经营恶化导致净利润下降",
+      "discriminating_observation": "营业利润下降"
+    },
+    {
+      "id": "H2",
+      "explanation": "税项跳升导致净利润下降，经营仍在改善",
+      "discriminating_observation": "营业利润与税前利润上升、所得税大幅增加"
+    }
+  ],
+  "queries": [
+    {
+      "question": "两年营业利润、税前利润、所得税与现金流",
+      "query": "AAPL 10-K FY2023 FY2024 XBRL",
+      "source": "SEC company facts",
+      "purpose": "区分经营与税项",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

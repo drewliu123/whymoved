@@ -1,0 +1,429 @@
+{
+  "schema_version": 2,
+  "title": "苹果 FY2024：经营利润增长，净利润被税项拉低",
+  "question": "苹果 FY2024 经营利润增长，为什么净利润反而下降？",
+  "type": "asset",
+  "task": "两年盈利质量与税项核对",
+  "as_of": "2026-11-14T00:00:00Z",
+  "answer": {
+    "text": "FY2024 营业利润 123,216 高于 FY2023 的 114,301，税前利润也从 113,736 升至 123,485；净利润却从 96,995 降到 93,736。差异来自所得税：从 16,741 跳升到 29,749，有效税率明显上升。经营层面没有恶化，现金流质量也稳健（经营现金流高于净利润、资本开支强度低、现金周期为负）；但税项的具体一次性来源需要读年报附注，本报告只核对到数字层面。",
+    "claim_ids": [
+      "C19",
+      "C31",
+      "C32",
+      "C20",
+      "I-JUDGE"
+    ]
+  },
+  "findings": [
+    {
+      "title": "净利润下降来自税项，不是经营恶化",
+      "text": "营业利润与税前利润都上升，只有所得税费用大幅增加，净利润才下降。",
+      "claim_ids": [
+        "C19",
+        "C3",
+        "C31",
+        "C15",
+        "C32",
+        "C16"
+      ],
+      "why_it_matters": "把净利润下降直接当成经营变差，会错判这种一次性税项冲击。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "只看净利润的方向",
+        "detail": "税前与税项拆开后方向相反"
+      }
+    },
+    {
+      "title": "经营利润率仍在提升",
+      "text": "毛利率与营业利润率均较上年上升，收入增长快于成本。",
+      "claim_ids": [
+        "C17",
+        "C1",
+        "C18",
+        "C2"
+      ],
+      "why_it_matters": "经营层面的改善与税项冲击是两个独立事实，需要同时呈现。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "只看净利润",
+        "detail": "利润率与收入拆解"
+      }
+    },
+    {
+      "title": "现金流质量稳健，资本开支强度低",
+      "text": "经营现金流高于净利润，资本开支占收入比例很低，现金周期为负。",
+      "claim_ids": [
+        "C21",
+        "C20",
+        "C22",
+        "C24",
+        "C26"
+      ],
+      "why_it_matters": "税项冲击不改现金流结构；质量筛查未触发红旗。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "单看利润表",
+        "detail": "现金流与营运资本结构"
+      }
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "下一财年有效税率与所得税费用",
+      "meaning": "验证税项跳升是否一次性",
+      "claim_ids": [
+        "C32"
+      ],
+      "due": "2027-10-29",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "未取得折旧摊销，资本开支/折旧为 null；税项的具体一次性来源需读年报附注。",
+      "material": true,
+      "claim_ids": [
+        "C32"
+      ]
+    },
+    {
+      "text": "ROIC 按账面权益与有息负债计算，回购压低了权益、现金不含短期投资，数值偏高，不做跨公司比较。",
+      "material": true,
+      "claim_ids": [
+        "C28"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "两年利润与税项",
+      "columns": [
+        "指标",
+        "FY2023",
+        "FY2024"
+      ],
+      "units": [
+        "",
+        "百万美元",
+        "百万美元"
+      ],
+      "rows": [
+        [
+          "营业利润",
+          114301,
+          123216
+        ],
+        [
+          "税前利润",
+          113736,
+          123485
+        ],
+        [
+          "所得税",
+          16741,
+          29749
+        ],
+        [
+          "净利润",
+          96995,
+          93736
+        ]
+      ],
+      "claim_ids": [
+        "C19",
+        "C32"
+      ]
+    }
+  ],
+  "quality": {
+    "statements": {
+      "schema_version": 1,
+      "entity": "AAPL",
+      "currency": "USD",
+      "scale": "million",
+      "as_of": "2026-11-14T00:00:00Z",
+      "periods": [
+        {
+          "id": "FY2023",
+          "period_type": "fy",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "revenue": {
+            "value": 383285,
+            "claim_ids": [
+              "C1"
+            ]
+          },
+          "gross_profit": {
+            "value": 169148,
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          "operating_profit": {
+            "value": 114301,
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          "net_income": {
+            "value": 96995,
+            "claim_ids": [
+              "C4"
+            ]
+          },
+          "cfo": {
+            "value": 110543,
+            "claim_ids": [
+              "C5"
+            ]
+          },
+          "capex": {
+            "value": 10959,
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          "share_based_comp": {
+            "value": 10833,
+            "claim_ids": [
+              "C7"
+            ]
+          },
+          "receivables": {
+            "value": 29508,
+            "claim_ids": [
+              "C8"
+            ]
+          },
+          "inventory": {
+            "value": 6331,
+            "claim_ids": [
+              "C9"
+            ]
+          },
+          "payables": {
+            "value": 62611,
+            "claim_ids": [
+              "C10"
+            ]
+          },
+          "total_assets": {
+            "value": 352583,
+            "claim_ids": [
+              "C11"
+            ]
+          },
+          "equity": {
+            "value": 62146,
+            "claim_ids": [
+              "C12"
+            ]
+          },
+          "debt": {
+            "value": 105103,
+            "claim_ids": [
+              "C13"
+            ]
+          },
+          "cash": {
+            "value": 29965,
+            "claim_ids": [
+              "C14"
+            ]
+          },
+          "pretax_income": {
+            "value": 113736,
+            "claim_ids": [
+              "C15"
+            ]
+          },
+          "income_tax": {
+            "value": 16741,
+            "claim_ids": [
+              "C16"
+            ]
+          }
+        },
+        {
+          "id": "FY2024",
+          "period_type": "fy",
+          "period_start": "2023-10-01",
+          "period_end": "2024-09-28",
+          "revenue": {
+            "value": 391035,
+            "claim_ids": [
+              "C17"
+            ]
+          },
+          "gross_profit": {
+            "value": 180683,
+            "claim_ids": [
+              "C18"
+            ]
+          },
+          "operating_profit": {
+            "value": 123216,
+            "claim_ids": [
+              "C19"
+            ]
+          },
+          "net_income": {
+            "value": 93736,
+            "claim_ids": [
+              "C20"
+            ]
+          },
+          "cfo": {
+            "value": 118254,
+            "claim_ids": [
+              "C21"
+            ]
+          },
+          "capex": {
+            "value": 9447,
+            "claim_ids": [
+              "C22"
+            ]
+          },
+          "share_based_comp": {
+            "value": 11688,
+            "claim_ids": [
+              "C23"
+            ]
+          },
+          "receivables": {
+            "value": 33410,
+            "claim_ids": [
+              "C24"
+            ]
+          },
+          "inventory": {
+            "value": 7286,
+            "claim_ids": [
+              "C25"
+            ]
+          },
+          "payables": {
+            "value": 68960,
+            "claim_ids": [
+              "C26"
+            ]
+          },
+          "total_assets": {
+            "value": 364980,
+            "claim_ids": [
+              "C27"
+            ]
+          },
+          "equity": {
+            "value": 56950,
+            "claim_ids": [
+              "C28"
+            ]
+          },
+          "debt": {
+            "value": 96662,
+            "claim_ids": [
+              "C29"
+            ]
+          },
+          "cash": {
+            "value": 29943,
+            "claim_ids": [
+              "C30"
+            ]
+          },
+          "pretax_income": {
+            "value": 123485,
+            "claim_ids": [
+              "C31"
+            ]
+          },
+          "income_tax": {
+            "value": 29749,
+            "claim_ids": [
+              "C32"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2023 同口径",
+    "baseline_claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入",
+      "营业利润",
+      "税前利润",
+      "所得税",
+      "净利润"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "经营恶化导致净利润下降"
+      },
+      {
+        "id": "H2",
+        "explanation": "税项跳升导致净利润下降，经营仍在改善"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "营业利润下降"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "营业利润上升而所得税跳升"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "C19",
+          "C3",
+          "C31",
+          "C32"
+        ],
+        "interpretation": "营业利润与税前利润上升、所得税从 16,741 升至 29,749，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "下一财年有效税率",
+        "by": "2027-10-29",
+        "supports_if": "有效税率回落且经营利润继续增长",
+        "weakens_if": "经营利润转弱或税项继续抬升"
+      }
+    ],
+    "conclusion": "净利润下降由税项造成，经营与现金流质量稳健；税项的一次性来源需读年报附注。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "本轮用确定性报表与税项拆解，不适用固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题只判断利润质量，不判断价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

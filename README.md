@@ -37,6 +37,11 @@
 - **[阅读三年趋势报告](examples/msft-trend/research/work/report.md)**
 - **[查看完整案例与命令](examples/msft-trend/README.md)**
 
+**第五个例子：换一家公司还成立吗？** 苹果 FY2024 营业利润增长、净利润却下降——拆开税前与税项后，下降来自所得税跳升而不是经营恶化；ROIC 约 75.6%，但受回购与短期投资口径影响，不做跨公司比较。这个示例验证同一套工具在财年与结构都不同的公司上仍然成立。
+
+- **[阅读苹果质量报告](examples/aapl-quality/research/work/report.md)**
+- **[查看完整案例与命令](examples/aapl-quality/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

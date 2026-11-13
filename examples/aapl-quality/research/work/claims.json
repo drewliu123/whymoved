@@ -1,0 +1,821 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "AAPL FY2023 revenue 383285 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 383285,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C2",
+      "text": "AAPL FY2023 gross_profit 169148 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "gross_profit",
+        "value": 169148,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C3",
+      "text": "AAPL FY2023 operating_profit 114301 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_profit",
+        "value": 114301,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C4",
+      "text": "AAPL FY2023 net_income 96995 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "net_income",
+        "value": 96995,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C5",
+      "text": "AAPL FY2023 cfo 110543 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "cfo",
+        "value": 110543,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C6",
+      "text": "AAPL FY2023 capex 10959 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "capex",
+        "value": 10959,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C7",
+      "text": "AAPL FY2023 share_based_comp 10833 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "share_based_comp",
+        "value": 10833,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C8",
+      "text": "AAPL FY2023 receivables 29508 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "receivables",
+        "value": 29508,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C9",
+      "text": "AAPL FY2023 inventory 6331 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "inventory",
+        "value": 6331,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C10",
+      "text": "AAPL FY2023 payables 62611 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "payables",
+        "value": 62611,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C11",
+      "text": "AAPL FY2023 total_assets 352583 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "total_assets",
+        "value": 352583,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C12",
+      "text": "AAPL FY2023 equity 62146 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "equity",
+        "value": 62146,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C13",
+      "text": "AAPL FY2023 debt 105103 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "debt",
+        "value": 105103,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C14",
+      "text": "AAPL FY2023 cash 29965 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "cash",
+        "value": 29965,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C15",
+      "text": "AAPL FY2023 pretax_income 113736 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "pretax_income",
+        "value": 113736,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C16",
+      "text": "AAPL FY2023 income_tax 16741 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "income_tax",
+        "value": 16741,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2022-09-25",
+        "period_end": "2023-09-30",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C17",
+      "text": "AAPL FY2024 revenue 391035 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 391035,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C18",
+      "text": "AAPL FY2024 gross_profit 180683 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "gross_profit",
+        "value": 180683,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C19",
+      "text": "AAPL FY2024 operating_profit 123216 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_profit",
+        "value": 123216,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C20",
+      "text": "AAPL FY2024 net_income 93736 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "net_income",
+        "value": 93736,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C21",
+      "text": "AAPL FY2024 cfo 118254 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "cfo",
+        "value": 118254,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C22",
+      "text": "AAPL FY2024 capex 9447 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "capex",
+        "value": 9447,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C23",
+      "text": "AAPL FY2024 share_based_comp 11688 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "share_based_comp",
+        "value": 11688,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C24",
+      "text": "AAPL FY2024 receivables 33410 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "receivables",
+        "value": 33410,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C25",
+      "text": "AAPL FY2024 inventory 7286 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "inventory",
+        "value": 7286,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C26",
+      "text": "AAPL FY2024 payables 68960 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "payables",
+        "value": 68960,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C27",
+      "text": "AAPL FY2024 total_assets 364980 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "total_assets",
+        "value": 364980,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C28",
+      "text": "AAPL FY2024 equity 56950 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "equity",
+        "value": 56950,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C29",
+      "text": "AAPL FY2024 debt 96662 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "debt",
+        "value": 96662,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C30",
+      "text": "AAPL FY2024 cash 29943 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "cash",
+        "value": 29943,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C31",
+      "text": "AAPL FY2024 pretax_income 123485 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "pretax_income",
+        "value": 123485,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "C32",
+      "text": "AAPL FY2024 income_tax 29749 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "income_tax",
+        "value": 29749,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "entity": "AAPL",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "SEC company facts"
+      }
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "FY2024 经营利润与税前利润上升，净利润下降由所得税费用跳升造成；现金流质量稳健",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "C19",
+        "C31",
+        "C32",
+        "C20",
+        "C21",
+        "C24"
+      ]
+    }
+  ]
+}
