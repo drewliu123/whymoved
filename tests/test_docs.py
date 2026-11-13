@@ -1,6 +1,8 @@
 """Relative links and script references in shipped docs must resolve."""
 
 import re
+import subprocess
+import sys
 import unittest
 from pathlib import Path
 
@@ -10,6 +12,51 @@ LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 SCRIPT = re.compile(r"scripts/[A-Za-z0-9_]+\.py")
 # The iteration log records history, including files that were later renamed.
 HISTORICAL = {ROOT / "docs" / "iteration" / "log.md"}
+
+
+COMMAND = re.compile(r"scripts/([a-z_]+)\.py")
+SUBCOMMAND = re.compile(r"[\"']?\s*([A-Za-z][A-Za-z0-9_-]*)")
+
+
+def subcommands(script):
+    """Top-level argparse subcommands, read from the usage block's last choice group."""
+    process = subprocess.run([sys.executable, str(ROOT / "scripts" / script), "--help"],
+                             capture_output=True, text=True)
+    if process.returncode != 0:
+        return set()
+    usage = process.stdout.split("\n\n")[0]
+    groups = re.findall(r"\{([a-zA-Z0-9_,\-]+)\}", usage)
+    return set(groups[-1].split(",")) if groups else set()
+
+
+class CommandReferenceTests(unittest.TestCase):
+    def test_subcommand_parser_reads_positional_choices(self):
+        names = subcommands("financial_data.py")
+        self.assertIn("income", names, "positional subcommands must win over option choices")
+        self.assertNotIn("annual", names)
+
+    def test_documented_subcommands_exist(self):
+        excluded = {ROOT / "docs" / "iteration" / name
+                    for name in ("log.md", "backlog.md", "review-2026-11.md")}
+        cache, problems = {}, []
+        for path in FILES:
+            if path in excluded or path in HISTORICAL:
+                continue
+            text = path.read_text(encoding="utf-8")
+            for match in COMMAND.finditer(text):
+                script = match.group(1) + ".py"
+                if not (ROOT / "scripts" / script).exists():
+                    continue
+                token = SUBCOMMAND.match(text[match.end():match.end() + 120])
+                if not token:
+                    continue
+                name = token.group(1)
+                if script not in cache:
+                    cache[script] = subcommands(script)
+                allowed = cache[script]
+                if allowed and name not in allowed:
+                    problems.append((str(path.relative_to(ROOT)), script, name, sorted(allowed)))
+        self.assertEqual(problems, [], "documented subcommands do not exist: %r" % (problems,))
 
 
 class DocumentationTests(unittest.TestCase):

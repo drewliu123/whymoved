@@ -12,7 +12,7 @@ export PYTHONDONTWRITEBYTECODE=1
 python3 -m unittest discover -s tests
 ```
 
-当前基线为 521 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
+当前基线为 523 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
 
 ## 离线示例回归
 
@@ -83,6 +83,6 @@ python3 scripts/render_report.py examples/msft-cashflow/research/work/report.jso
 
 ## 提交前复查
 
-先阅读改动的最终 diff，确认文档从实际 clone 目录可执行、链接目标存在、生成输出没有混入无关变更。运行与改动相应的测试及离线示例检查，记录 Python 版本、执行结果及未验证范围。协议、schema 或固定模型变化应加入能验证行为的回归测试；纯文字修订通常只需链接和命令核对。
+先阅读改动的最终 diff，确认文档从实际 clone 目录可执行、链接目标存在、生成输出没有混入无关变更。运行与改动相应的测试及离线示例检查，记录 Python 版本、执行结果及未验证范围。协议、schema 或固定模型变化应加入能验证行为的回归测试；纯文字修订通常只需链接和命令核对。`tests/test_docs.py` 会校验相对链接、脚本引用与文档中写出的子命令（与 `--help` 的 choices 对照）。
 
 修改源码后，需按宿主的插件或 Skill 加载机制更新副本，再验证实际工具与权限；Claude Code 的市场更新命令见[更新说明](installation.md#更新已安装副本)，Codex、DeepSeek Harness 等加载路径见[兼容说明](installation.md#其他-coding-agent-的加载方式)。离线CLI通过、插件被识别与完整研究执行是不同的验证层次。
