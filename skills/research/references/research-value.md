@@ -66,7 +66,7 @@ market_view.basis约束引用类型：proxy必须至少引用一条inference，c
 | claim_ids | 非空、无重复的本轮主张引用，支撑reason / price_move / remaining_edge；重要判断以inference及basis入账，缺价格时引用说明缺口及其影响的有据推断，不编造price主张 |
 | trigger_results | 列表，旧run全部triggers各恰好出现一次，不遗漏、不混入新触发；每项{trigger_id, status, observation, claim_ids} |
 
-trigger_results.trigger_id对应旧run稳定id；status仅hit / not_hit / not_checked；observation非空，说明观察、检查时点、来源或未检查原因。claim_ids引用本轮已有claims，hit / not_hit须非空且有支持观察的证据；not_checked可为空，不能仅因没查到就写not_hit。hit表示原signal满足，支持/削弱/失效须再按原条件解释；not_hit只描述已核查窗口内未满足，不代表永久不会发生。到期且尚未检查仍写not_checked，不能宣称已失败。没有旧机会/触发时不伪造previous_status或结果；建立本轮新基准并说明无法作此比较。父run未采用trading时不强填交易更新对象。
+trigger_results.trigger_id对应旧run稳定id；status仅hit / not_hit / not_checked；observation非空，说明观察、检查时点、来源或未检查原因。claim_ids引用本轮已有claims，hit / not_hit须非空且有支持观察的证据；not_checked时仍须写出该字段（可为空列表`[]`），不能仅因没查到就写not_hit。hit表示原signal满足，支持/削弱/失效须再按原条件解释；not_hit只描述已核查窗口内未满足，不代表永久不会发生。到期且尚未检查仍写not_checked，不能宣称已失败。没有旧机会/触发时不伪造previous_status或结果；建立本轮新基准并说明无法作此比较。父run未采用trading时不强填交易更新对象。
 
 可选`report.update.opportunity.review={direction,magnitude,timing,mechanism,price_realization}`。若提供，五项均须非空文本，依据冻结前瞻分别说明方向、幅度、时点、机制与价格兑现；区分未到期、已观察、未核实，不把研究复盘冒充自动交易收益验收。
 

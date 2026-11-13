@@ -4,6 +4,14 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.64.1 · 真实 NVDA 更新链验收与提示修复
+
+用你归档里的英伟达 run 做了一次真实更新链验收：复制到临时数据根 → `doctor --renders` → 归档带 `update.opportunity` 的更新 → `thread` 回溯 2 轮 → `digest` 显示「同题 2 轮」→ 再跑体检。
+
+- 验收发现一处误导性提示：父 run 为 trading、更新缺少 `update.opportunity` 时，旧消息写「close a thesis explicitly」，像是要求平仓。现在拆成两条更准确的提示：缺更新对象时写明 `update.opportunity`，缺当前机会对象时写明 `report.opportunity`。
+- 文档补一句：`trigger_results` 里 `not_checked` 的 `claim_ids` 仍须写出（可为 `[]`）——这是墨菲式小摩擦，契约本身是对的。
+- 测试：新增 1 个用例锁定提示文案，全套 519 个测试通过。
+
 ## 0.64.0 · 文档链接与脚本引用校验
 
 新增 [tests/test_docs.py](tests/test_docs.py)：扫描 README、`docs/` 与 `skills/` 下的全部 Markdown，校验

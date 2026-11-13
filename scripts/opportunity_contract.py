@@ -138,8 +138,10 @@ def validate_parent_opportunity(parent, report):
     if not isinstance(old, dict) or old.get("applicability") != "trading":
         return ["update.opportunity requires a trading parent"] if change is not None else []
     current = report.get("opportunity")
-    if not isinstance(current, dict) or current.get("applicability") != "trading" or not isinstance(change, dict):
-        return ["trading parent requires opportunity and update.opportunity; close a thesis explicitly"]
+    if not isinstance(change, dict):
+        return ["trading parent update requires update.opportunity; state thesis progress or closure explicitly"]
+    if not isinstance(current, dict) or current.get("applicability") != "trading":
+        return ["trading parent update requires report.opportunity"]
     errors = []
     if change.get("previous_status") != old["assessment"]["status"]:
         errors.append("update.opportunity.previous_status differs from frozen parent")

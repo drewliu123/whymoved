@@ -129,6 +129,27 @@ class OpportunityTest(unittest.TestCase):
         self.assertTrue(opportunity_contract.validate_parent_opportunity(parent, self.r))
 
 
+class ParentUpdateMessageTests(unittest.TestCase):
+    def test_missing_opportunity_change_names_the_field(self):
+        parent = {"opportunity": {"applicability": "trading",
+                                  "assessment": {"status": "watch"},
+                                  "triggers": [{"id": "TR1", "signal": "x", "by": "y",
+                                                "supports_if": "a", "weakens_if": "b", "invalidates_if": "c",
+                                                "claim_ids": ["C1"]}]}}
+        report = {"opportunity": {"applicability": "trading"}}
+        errors = opportunity_contract.validate_parent_opportunity(parent, report)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("update.opportunity", errors[0])
+        report["update"] = {"opportunity": {"previous_status": "watch", "current_status": "watch",
+                                            "thesis_change": "unchanged", "claim_ids": ["C1"],
+                                            "reason": "r", "price_move": "p", "remaining_edge": "e",
+                                            "trigger_results": [{"trigger_id": "TR1", "status": "not_checked",
+                                                                 "observation": "o", "claim_ids": []}]}}
+        report.pop("opportunity")
+        errors = opportunity_contract.validate_parent_opportunity(parent, report)
+        self.assertIn("report.opportunity", errors[0])
+
+
 class OpportunityRunsTest(unittest.TestCase):
     def test_archive_update_list_and_parent_immutability(self):
         fixture = test_research_runs.ResearchRunsTest()

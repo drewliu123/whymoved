@@ -4,6 +4,55 @@
 
 ---
 
+## Cycle 65 · 2026-11-14 · 真实 NVDA 更新链验收与提示修复
+
+**对应卡片**：研究侧验收（第 64 轮结尾计划）
+
+**做法**：把你归档里的英伟达 run（`R20261112T153326Z`）复制到临时数据根，走一遍真实更新链：
+
+1. `doctor --renders`：1 个归档、渲染一致；
+2. 构造子 run：`update.judgment_changed=false` + `update.opportunity`（原状态 watch、不动论点、三个旧触发均未检查）；
+3. `research_run archive --parent-run` 归档为子 run；
+4. `thread` 回溯 2 轮；`digest --days 7` 显示「同题 2 轮、结论版本 1 个」；再跑体检。
+
+**验收答案**：链路本身是通的，`digest` 的「同题 2 轮」说明重复更新不会被误读成多次独立验证。
+
+**发现的两处摩擦**
+
+1. **误导性提示**：父 run 为 trading、子 run 缺少 `update.opportunity` 时，旧消息是「trading parent requires opportunity and update.opportunity; close a thesis explicitly」——用户只是想继续跟踪，看到「close a thesis」会以为必须平仓。现在拆成两条：缺更新对象写明 `update.opportunity`；缺当前机会对象写明 `report.opportunity`。
+2. **`not_checked` 仍须写 `claim_ids: []`**：契约要求字段存在（可为空），但文档只说「可为空」，没写「必须写出」。已在 research-value 补明。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/opportunity_contract.py` | 拆分两条父更新提示 |
+| `tests/test_opportunities.py` | 1 个用例锁定两条文案 |
+| `skills/research/references/research-value.md` | `not_checked` 的 `claim_ids` 必须写出 |
+| CHANGELOG | 0.64.1 |
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 519 tests ... OK
+```
+
+- 真实链：父子两个归档、lineage 2、digest 同题 2 轮、doctor 渲染 2/2 一致。
+- 提示：缺 `update.opportunity` → 消息含 `update.opportunity`；缺 `report.opportunity` → 消息含 `report.opportunity`。
+- 四个示例哈希一致；冻结渲染逐字节相同。
+
+**投研意义增量**
+
+1. 更新链在真实交易论点上验证过，不只是构造数据。
+2. 提示文案不再暗示「必须平仓」，减少误解成交易指令的风险。
+
+**遗留**
+
+- 验收只在临时目录完成，没有把 NVDA 更新链存档进仓库（用户数据不应提交）。
+- `opportunities.py list` 的链式展示未在本次验收中细看。
+- 真实链只用了「未变」论点；「增强/削弱/失效」路径仍未在真实数据上跑过。
+
 ## Cycle 64 · 2026-11-14 · 文档链接与脚本引用校验
 
 **对应卡片**：P4-1 遗留（参考文档命令与链接未校验）
