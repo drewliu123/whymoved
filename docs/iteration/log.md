@@ -4,6 +4,46 @@
 
 ---
 
+## Cycle 2 · 2026-11-14 · 可复算的派生计算
+
+**对应卡片**：P0-0a
+
+**问题**：`report.calculations[]` 只校验结构、数值与引用，公式字符串不执行——除 5 个固定模型外，报告里所有派生数字都不可复算。实盘 run `R20261112T153326Z`（NVDA）把 FY27 EPS 与 P/E 写进 `result.unit` 字符串，`CAL1` 的 6 个输入只产出 2.43，而 9.22 / 17.9x 这两个真正的估值支点既不是输入也不是结果，任何校验都碰不到；`CAL2` 同样把三个百分比塞进一个 unit 字符串。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/calculations.py`（新） | 白名单算子 `ratio / growth / cagr / difference / sum / product`；单位契约；`ref` 引用更早计算（≤2 层，禁止前向/自引用）；`result.precision` 舍入；重算比对（默认相对 1e-9） |
+| `scripts/render_report.py` | `validate_calculation_rows` 委托新模块；带 `op` 的行渲染「已按固定算子重算」「重算一致」，`ref` 输入显示 `= A1`；存在 op 行时追加一句说明；无 op 的报告输出字节不变 |
+| `tests/test_calculations.py`（新） | 19 个用例：六个算子、单位契约、引用链、深度、前向/自引用、舍入、除零/负基数/溢出、未知算子、旧行兼容、渲染标注 |
+| 文档 | memo-template 六算子表 + 可运行示例 + 「unit 只写单位」；architecture、development、CHANGELOG 0.7.1 |
+
+**关键设计决定**：`ref` 解析到被引用行**记录**的 result 值，而不是内部未舍入的浮点。理由：报告的可核验性来自读者能看见的数字；若下游用内部全精度，读者按文档复现不出整条链。这个决定是在用真实 run 的数字做演示时发现的——用内部值算得 0.55278，按记录值算得 0.5529，前者会让一份「正确地四舍五入」的报告校验失败。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 224 tests ... OK
+```
+
+- 冻结示例：`report.md` / `report.html` 重新渲染与冻结文件逐字节相同（215 个文件哈希校验通过）。
+- 用实盘 NVDA 数字重建链路并通过校验：总跌幅 −32.14%、丑闻前段 −17.77%、占比 55.29%（与实际报告一致，但现在是可复算的）。
+- 反向验证：把 55.29% 篡改为 60% → `calculations[2].result differs from deterministic recomputation`；把结果塞进 narrative unit → `growth result unit must be ratio`。
+- 旧档案：NVDA 的 `CAL1`/`CAL2` 无 `op`，仍按原样加载、渲染、归档，不被追溯改写。
+
+**投研意义增量**
+
+3. 多一条可核实的连接：P/E、涨跌幅占比、预期差这类「多步派生数字」从「模型自己抄对了」变成「固定算子可重算、篡改即失败」。
+4. 边界更清楚：算子数量与顺序固定、单位必须自洽、unit 不允许夹带第二个结果、缺 op 的行在文档与渲染中都被明确标为「仅记录」。
+
+**遗留**
+
+- 无 `op` 的行仍允许 narrative unit（旧档案必须保持可读）。下一步可加一个**非阻断 lint**（`calculations.py lint`）列出可疑 unit 与未标注公式，供研究者主动清理，而不是收紧校验破坏兼容。
+- 算子顺序是位置式的：`ratio/growth` 为 a÷b、`cagr` 为 end/begin/years。已写进文档与表；错序通常会被重算比对拦住，但不是绝对。
+- `percent` 结果不支持：百分比要写成 ratio（0.1493 而不是 14.93）。这是有意的，避免 ×100 歧义。
+
 ## Cycle 1 · 2026-11-14 · 相对估值（可比公司）
 
 **对应卡片**：P0-1（已完成的原始排期）

@@ -53,7 +53,36 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 
 可选chart：`{title,x_label,y_label,unit,rows:[{label,value}],claim_ids,note}`。value必须有限数值，口径相同、时间顺序明确；图表依数据需要选用。渲染器附同源数据表、键盘读数、明暗/移动布局。不要双轴混量纲，不以图形暗示不存在的因果。
 
-可选calculations列表：`{id,description,formula,inputs:[{name,value,unit,claim_ids}],result:{value,unit},claim_ids}`；对应claim可标calculation_id。公式只作可读记录，不执行来源文本。此旧计算记录只检查结构与引用，不自动重算，不能替代新analysis.models中的固定模型验证；真实计算命令和退出码另存evidence。
+可选calculations列表：`{id,description,formula,inputs:[{name,value,unit,claim_ids}],result:{value,unit,precision?},claim_ids,op?}`；对应claim可标calculation_id。
+
+行带`op`时由固定算子重算，并与冻结result比对，不一致即校验失败。白名单只有六个算子，输入顺序固定：
+
+| op | 计算 | 输入要求 | 结果unit |
+|---|---|---|---|
+| ratio | a / b | 两个同unit | ratio |
+| growth | a / b − 1 | 两个同unit | ratio |
+| cagr | (a / b)^(1/years) − 1 | end、begin同unit，years为year | ratio |
+| difference | a − b | 两个同unit | 同输入unit |
+| sum | a + b + … | 全部同unit | 同输入unit |
+| product | a × b × … | 恰好一个非ratio输入 | 该非ratio输入的unit |
+
+输入可用`value`（须带claim_ids）或`ref`引用更早的计算id（最多两层引用链，不能前向或自引用）；`ref`解析到被引用行**记录**的result值而非未舍入的内部值，读者按文档中可见数字即可复现整条链；`precision`（0–12）允许记录舍入后的结果。未标`op`的行仍是可读公式记录，只检查结构、单位与引用，不执行来源文本，渲染时不标「已重算」。两者都不能替代analysis.models的固定模型；真实计算命令和退出码另存evidence。
+
+虚构示例（C1–C3只示意引用）：
+
+```json
+{
+  "id": "A1", "description": "虚构收入同比", "formula": "(now/base-1)",
+  "op": "growth", "claim_ids": ["C1"],
+  "inputs": [
+    {"name": "now", "value": 120, "unit": "USD", "claim_ids": ["C1"]},
+    {"name": "base", "value": 100, "unit": "USD", "claim_ids": ["C2"]}
+  ],
+  "result": {"value": 0.2, "unit": "ratio"}
+}
+```
+
+不要在unit里塞第二个结果或口径说明：unit只写单位，推导过程写description/formula/新增行。
 
 ## analysis：底稿完整，正文简明
 

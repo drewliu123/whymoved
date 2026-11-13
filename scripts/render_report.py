@@ -215,46 +215,14 @@ def validate_report(report, ledger, sources=None):
 
 
 def validate_calculation_rows(rows, claim_ids):
-    """Check transparent formula/input/result records; never evaluate formula text.
+    """Check transparent formula/input/result records through calculations.py.
 
-    Arithmetic correctness needs external review. This validates only finite values,
-    units and resolvable evidence links, and does not claim recomputation.
+    Rows with a whitelisted `op` are recomputed and compared with the frozen
+    result; rows without `op` remain records of a readable formula whose
+    arithmetic needs external review. Neither path proves economic meaning.
     """
-    if not isinstance(rows, list):
-        return ["calculations must be a list"]
-    errors, seen = [], set()
-    for n, row in enumerate(rows):
-        path = "calculations[%d]" % n
-        if not isinstance(row, dict):
-            errors.append(path + " must be an object")
-            continue
-        cid = row.get("id")
-        if not isinstance(cid, str) or not ID.fullmatch(cid) or cid in seen:
-            errors.append(path + ".id must be a unique safe identifier")
-        else:
-            seen.add(cid)
-        for field in ("description", "formula"):
-            if not _text(row.get(field)):
-                errors.append(path + "." + field + " must be nonempty text")
-        def refs(item, location):
-            refs = item.get("claim_ids")
-            if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in claim_ids for c in refs):
-                errors.append(location + ".claim_ids must resolve")
-        refs(row, path)
-        inputs = row.get("inputs")
-        if not isinstance(inputs, list) or not inputs:
-            errors.append(path + ".inputs must be nonempty list")
-        else:
-            for i, item in enumerate(inputs):
-                location = path + ".inputs[%d]" % i
-                if not isinstance(item, dict) or not _text(item.get("name")) or not _text(item.get("unit")) or not _number(item.get("value")):
-                    errors.append(location + " requires name, finite value and unit")
-                else:
-                    refs(item, location)
-        result = row.get("result")
-        if not isinstance(result, dict) or not _number(result.get("value")) or not _text(result.get("unit")):
-            errors.append(path + ".result requires finite value and unit")
-    return errors
+    from calculations import validate_calculations
+    return validate_calculations(rows, claim_ids)
 
 
 def _number(value):
@@ -307,13 +275,22 @@ def _blocks(report, ledger, sources):
             yield ("p", "研究增量（" + finding["increment"]["kind"] + "）：" + finding["increment"]["detail"])
     if report.get("analysis"):
         yield from _analysis_blocks(report["analysis"], answer_text=report["answer"]["text"])
-    for calculation in report.get("calculations", []):
+    calculations = report.get("calculations", [])
+    for calculation in calculations:
         yield ("h2", calculation["description"])
-        yield ("p", "计算式：" + calculation["formula"], calculation["claim_ids"])
+        label = "计算式：" + calculation["formula"]
+        if calculation.get("op"):
+            label += "（op=" + str(calculation["op"]) + "，已按固定算子重算）"
+        yield ("p", label, calculation["claim_ids"])
         yield ("table", {"title": calculation["id"] + " 输入", "columns": ["名称", "数值", "单位"],
-                         "rows": [[v["name"], v["value"], v["unit"]] for v in calculation["inputs"]],
-                         "claim_ids": [cid for v in calculation["inputs"] for cid in v["claim_ids"]]})
-        yield ("p", "结果：" + str(calculation["result"]["value"]) + " " + calculation["result"]["unit"])
+                         "rows": [[v["name"], v.get("value", "= " + str(v.get("ref"))), v["unit"]] for v in calculation["inputs"]],
+                         "claim_ids": [cid for v in calculation["inputs"] for cid in v.get("claim_ids", [])]})
+        result_text = "结果：" + str(calculation["result"]["value"]) + " " + calculation["result"]["unit"]
+        if calculation.get("op"):
+            result_text += "（重算一致）"
+        yield ("p", result_text)
+    if any(isinstance(item, dict) and item.get("op") for item in calculations):
+        yield ("p", "标注 op 的计算式已由固定算子重算；未标注的仅记录公式，未经重算。")
     for table in report["tables"]:
         yield ("table", table)
     if report.get("chart"):

@@ -4,6 +4,18 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.7.1 · 可复算的派生计算
+
+报告里除固定模型外的数字此前只作记录，从不重算：`calculations[]` 校验数值、单位与引用，公式字符串不执行。实盘 run 出现过把第二个结果塞进 `result.unit` 的情况，估值支点因此不可核验。
+
+新增可选`op`字段，命中白名单即由[calculations.py](scripts/calculations.py)重算并与冻结结果比对，不一致直接校验失败；未标`op`的旧行保持原行为，只作透明记录。渲染标注「已按固定算子重算 / 重算一致」，未标注行仍按原样输出，冻结示例逐字节不变。
+
+- 算子：`ratio`、`growth`、`cagr`、`difference`、`sum`、`product`，输入顺序固定，结果单位有明确契约；`difference`/`sum`要求同单位，`product`只允许一个非ratio输入。
+- 引用：输入可用`ref`引用更早的计算id，最多两层链，禁止前向、自引用与交叉单位；`result.precision`（0–12）允许记录舍入值。
+- 失败可见：除零、负基数、溢出、未知算子、单位不符、结果不符都返回可读错误，不抛 traceback。
+- 文档：[memo-template.md](skills/research/references/memo-template.md) 说明六个算子与单位契约并给出可运行示例，并明确「unit只写单位，不要塞第二个结果」。
+- 测试：新增 [test_calculations.py](tests/test_calculations.py) 18 个用例，覆盖算子、单位、引用链、舍入、失败模式、渲染与旧行兼容；全套 223 个测试通过，冻结示例哈希不变。
+
 ## 0.7.0 · 相对估值与可比公司
 
 在绝对估值之外加入分析师最常用的相对估值：`relative_valuation` 固定模型读取目标指标、净债务、股数与带时刻价格，并按一组可比公司的倍数分布给出隐含 EV、隐含股权与隐含每股区间，同时反推当前价格隐含的倍数与相对可比中位数的溢价/折价。`valuation` 问题现在可由 `reverse_dcf` 或 `relative_valuation` 支撑，两者也可并用互相检验。

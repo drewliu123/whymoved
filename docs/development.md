@@ -12,7 +12,7 @@ export PYTHONDONTWRITEBYTECODE=1
 python3 -m unittest discover -s tests
 ```
 
-当前基线为 205 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
+当前基线为 224 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
 
 ## 离线示例回归
 
@@ -32,7 +32,7 @@ python3 scripts/analysis_contract.py check \
   --sources examples/msft-cashflow/research/work/sources.json
 ```
 
-工作输入在 [research/work](../examples/msft-cashflow/research/work/)，表格快照在 [official-tables.json](../examples/msft-cashflow/research/evidence/official-tables.json)。`calculations.json` 是透明计算记录；自由公式字符串不由核心 CLI 当成任意代码执行。上述算术脚本执行示例特定的复算，分析契约检查另外重算固定模型；二者都不能证明经济假设成立。
+工作输入在 [research/work](../examples/msft-cashflow/research/work/)，表格快照在 [official-tables.json](../examples/msft-cashflow/research/evidence/official-tables.json)。`calculations.json` 是透明计算记录；标了`op`的行由白名单算子重算，自由公式字符串不由核心 CLI 当成任意代码执行。上述算术脚本执行示例特定的复算，分析契约检查另外重算固定模型；二者都不能证明经济假设成立。
 
 可另行渲染到本机隔离目录，避免覆盖已冻结的演示网页：
 

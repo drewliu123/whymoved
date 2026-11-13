@@ -11,7 +11,7 @@
 
 ## P0-0a 可复算的派生计算（calculations op 白名单）
 
-- 状态：待认领（下一轮）
+- 状态：✅ 已完成（Cycle 2，见 [log.md](log.md)）
 - 价值：HIGH / 成本：S–M。这是最便宜的高价值改动，且修的是**已经发生的真实事故**。
 - 现状：`report.calculations[]` 只校验有限数值、单位与引用，**从不执行也不重算**（[render_report.py:217](../scripts/render_report.py)）。实盘 run `R20261112T153326Z`（NVDA）把 FY27 EPS 与 P/E 塞进 `result.unit` 字符串，全篇估值结论的支点既不是输入也不是结果，任何校验都碰不到。
 - 方案：
@@ -25,7 +25,7 @@
 
 ## P0-0b 数值事实结构（claim.metric）
 
-- 状态：待认领
+- 状态：待认领（下一轮）
 - 价值：HIGH / 成本：M。是财务质量、驱动建模、comps 一致性的共同前提。
 - 现状：claim 只有 `{id, text, type, as_of, sources, basis}`，数字只活在自然语言里；SEC 入口保留了 period_type / YTD / dimensions / scope，但下游没有任何地方消费。YTD 当季度、币种缩放不一致、分部当合并，全靠提示词警告。
 - 方案：fact / consensus / price 三类 claim 加**可选** `metric`：`{name, value, unit, currency, scale, period_start, period_end, period_type: fy|quarter|ytd|ltm|instant, scope: consolidated|segment:<name>, basis: gaap|adjusted, locator}`。
@@ -130,4 +130,5 @@
 
 ## 已完成
 
+- P0-0a 可复算派生计算（calculations op）— 2026-11-14，Cycle 2
 - P0-1 相对估值（comps）— 2026-11-14，Cycle 1
