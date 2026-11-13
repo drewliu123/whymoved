@@ -286,6 +286,24 @@ class AnalysisContractTests(unittest.TestCase):
             self.assertIn("FY2025A", text)
             self.assertIn("FY2026E", text)
 
+    def test_period_label_must_match_the_window(self):
+        def build(label):
+            data = summary_bundle()
+            for model_id in ("M2", "M3"):
+                model = next(item for item in data[0]["analysis"]["models"] if item["id"] == model_id)
+                model["period_window"] = {"start": "2025-01-01", "end": "2025-12-31", "period_type": "fy"}
+            for entry in data[0]["valuation_summary"]["rows"]:
+                entry["period"] = label if entry["model_id"] in {"M2", "M3"} else "FY2025A"
+            return data
+
+        self.check(build("FY2025A"))
+        self.check(build("2025Q3"))
+        self.check(build("基期口径"))
+        with self.assertRaisesRegex(ValueError, "label year 2024"):
+            self.check(build("FY2024A"))
+        with self.assertRaisesRegex(ValueError, "quarter label year 2024 is outside"):
+            self.check(build("2024Q4"))
+
     def test_same_windows_do_not_require_period(self):
         data = summary_bundle()
         window = {"start": "2025-01-01", "end": "2025-12-31", "period_type": "fy"}

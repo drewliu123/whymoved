@@ -423,6 +423,22 @@ def valuation_prices(models):
     return found
 
 
+def _period_label_error(label, window):
+    """Very narrow label check: only year-bearing labels are compared, nothing is parsed freely."""
+    match = re.search(r"(?:fy|FY)\s*((?:19|20)\d{2})", label)
+    start, end = window.get("start"), window.get("end")
+    if match and isinstance(start, str) and isinstance(end, str):
+        year = int(match.group(1))
+        if year != int(end[:4]) and year != int(start[:4]):
+            return "label year %d does not match the model window %s..%s" % (year, start, end)
+    match = re.search(r"((?:19|20)\d{2})\s*[Qq]([1-4])", label)
+    if match and isinstance(start, str) and isinstance(end, str):
+        year = int(match.group(1))
+        if not (int(start[:4]) <= year <= int(end[:4])):
+            return "quarter label year %d is outside the model window %s..%s" % (year, start, end)
+    return None
+
+
 def validate_valuation_summary(report):
     """A summary row may only name a model and a metric; every number comes from that model."""
     summary = report.get("valuation_summary")
@@ -483,6 +499,16 @@ def validate_valuation_summary(report):
             if isinstance(row, dict) and isinstance(row.get("model_id"), str) and row["model_id"] in model_map \
                     and not _text(row.get("period")):
                 errors.append("valuation_summary.rows[%d].period is required when the compared models use different period windows" % n)
+    for n, row in enumerate(rows):
+        if not isinstance(row, dict) or not _text(row.get("period")):
+            continue
+        model = model_map.get(row.get("model_id"))
+        window = model.get("period_window") if isinstance(model, dict) else None
+        if not isinstance(window, dict):
+            continue
+        message = _period_label_error(row["period"], window)
+        if message:
+            errors.append("valuation_summary.rows[%d].period " % n + message)
     prices = valuation_prices(models)
     if len(prices) > 1:
         rendered = ", ".join("%s %s" % (value, unit) for value, unit in sorted(prices, key=str))
