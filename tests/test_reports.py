@@ -371,6 +371,15 @@ class QualityReportTests(unittest.TestCase):
         report["quality"]["extra"] = 1
         self.assertTrue(any("unknown fields" in error for error in render_report.validate_report(report, ledger, sources)))
 
+    def test_unattributed_fields_are_listed(self):
+        report, ledger, sources = self.document()
+        report["quality"]["statements"]["periods"][1]["capex"] = 50
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("未挂 claim 的字段", text)
+        self.assertIn("FY2025", text)
+        self.assertIn("capex", text)
+
     def test_reports_without_quality_unchanged(self):
         report, ledger, sources = documents()
         self.assertNotIn("盈利质量", render_report.render_markdown(report, ledger, sources))

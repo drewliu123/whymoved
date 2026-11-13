@@ -85,7 +85,7 @@ class MetricTests(unittest.TestCase):
         days = (date(2025, 12, 31) - date(2025, 1, 1)).days
         for name, expected in {
             "gross_margin": 0.475, "operating_margin": 0.175, "net_margin": 0.1,
-            "cash_conversion": 100 / 120, "accrual_ratio": 20 / 1100,
+            "cash_conversion": 100 / 120, "accrual_ratio": 20 / 1000,
             "capex_intensity": 50 / 1200, "capex_to_da": 50 / 90,
             "sbc_ratio": 90 / 1200, "invested_capital": 690, "roic": 210 * 0.8 / 690,
         }.items():

@@ -104,7 +104,7 @@ consensus主张可带`consensus`块（series_id、metric、target_period、provi
 
 两期以上报表可把质量筛查嵌进报告：`report.quality = {statements, thresholds?}`。`statements` 与[financial-quality.md](financial-quality.md)的输入完全一致（字段值可为裸数字或`{value, claim_ids}`）；`thresholds`可覆盖默认阈值（键名必须是已知阈值，取值在(0,1]）。
 
-校验会检查报表结构与各字段的 `claim_ids` 是否存在；渲染在附录生成「盈利质量」小节：关键指标表（利润率、现金转化、应计、周转、资本开支、SBC、ROIC）、环比变化表、红旗清单。指标在校验/渲染时由嵌入输入重新计算，不是冻结的结论；没有该字段的报告渲染不变。
+校验会检查报表结构与各字段的 `claim_ids` 是否存在；渲染在附录生成「盈利质量」小节：关键指标表（利润率、现金转化、应计、周转、资本开支、SBC、ROIC）、环比变化表、未挂 claim 的字段清单与红旗清单。指标在校验/渲染时由嵌入输入重新计算，不是冻结的结论；没有该字段的报告渲染不变。
 
 ## 行业传导：可选 report.transmission
 

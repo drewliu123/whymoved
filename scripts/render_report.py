@@ -766,6 +766,10 @@ def _blocks(report, ledger, sources):
                                       [_metric_text(item.get(name)) for name, _ in change_fields]
                                       for item in changes],
                              "claim_ids": claim_ids})
+        unattributed = {period: fields for period, fields in (result.get("unattributed") or {}).items() if fields}
+        if unattributed:
+            yield ("p", "未挂 claim 的字段：" + "；".join(
+                "%s：%s" % (period, "、".join(fields)) for period, fields in unattributed.items()))
         if result["flags"]:
             yield ("h3", "红旗")
             for item in result["flags"]:

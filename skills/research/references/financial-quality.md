@@ -59,7 +59,7 @@ python3 "$TY_DIR/scripts/financial_quality.py" "$WORK/statements.json"
 | --- | --- | --- |
 | gross_margin / operating_margin / net_margin | 对应利润 ÷ 收入 | 水平值，同时给出期间变化（ratio 差，不是百分比变化） |
 | cash_conversion | CFO ÷ 净利润 | 净利为正时才计算；>1 表示利润有现金支撑 |
-| accrual_ratio | (净利润 − CFO) ÷ 期末总资产 | 未做期初期末平均，口径写在输出里；正值高说明利润的应计占比大 |
+| accrual_ratio | (净利润 − CFO) ÷ 平均总资产 | 有上期总资产时用期初期末平均，否则退回期末总资产；正值高说明利润的应计占比大 |
 | dso / dio / dpo | 应收（存货、应付）× 期间天数 ÷ 收入（成本） | 需要 `period_start` 才能算天数；COGS = 收入 − 毛利 |
 | cash_cycle | DSO + DIO − DPO | 任一分项缺失则为 null |
 | capex_intensity | 资本开支 ÷ 收入 | 重资产程度 |

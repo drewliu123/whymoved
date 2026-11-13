@@ -323,6 +323,15 @@ def analyse(document, thresholds=None):
             if not refs:
                 missing.append(field)
         unattributed[period["id"]] = missing
+    for index in range(1, len(periods)):
+        previous, current = periods[index - 1], periods[index]
+        net_now, _ = _field(current, "net_income")
+        cfo_now, _ = _field(current, "cfo")
+        assets_now, _ = _field(current, "total_assets")
+        assets_previous, _ = _field(previous, "total_assets")
+        if None not in (net_now, cfo_now, assets_now, assets_previous) and assets_now + assets_previous > 0:
+            average = (assets_now + assets_previous) / 2
+            rows[index]["metrics"]["accrual_ratio"] = (net_now - cfo_now) / average
     all_flags, changes = [], []
     for index, row in enumerate(rows):
         if index == 0:
@@ -337,6 +346,7 @@ def analyse(document, thresholds=None):
         "红旗是核查提示，不是舞弊或投资结论；阈值是经验默认值。",
         "同一期间类型才可比较；缺失字段不填补，直接略过相应指标。",
         "未标注 claim_ids 的字段列在 unattributed 中，说明证据链尚未接上。",
+        "应计比率在有上期总资产时用期初期末平均，否则用期末总资产。",
     ]
     return {"passed": True, "entity": document["entity"], "currency": document["currency"],
             "scale": document["scale"], "as_of": document.get("as_of", ""),
