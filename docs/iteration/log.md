@@ -4,6 +4,56 @@
 
 ---
 
+## Cycle 18 · 2026-11-14 · 一页式 IC memo
+
+**对应卡片**：P1-4 的 memo_pack 部分
+
+**问题**：完整报告是档案，但读者常先要一页：判断是什么、关键发现三条、区间在哪、下一个催化是什么、什么会推翻它。此前只能人工从报告里剪贴，剪贴又会引入手抄数字。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/memo_pack.py`（新） | 从冻结 report/claims/sources 裁剪 memo.md：判断、关键发现、方法区间、有日期催化、改变判断条件、主要风险、溯源；`--max-findings`、`--out` |
+| `tests/test_memo_pack.py`（新） | 8 个用例：章节、条数上限、估值读数与模型一致、日期催化、转义策略、CLI 成功与失败 |
+| 文档 | memo-template 增一页纸章节；architecture 入口；CHANGELOG 0.22.0 |
+
+**关键设计决定**
+
+1. **先校验再裁剪**：memo 走与渲染相同的 `validate_report`，校验不过直接失败。一页纸不能成为绕过契约的后门。
+2. **数字只从冻结模型读**：估值区间取自 `result.outputs` 与敏感性，不在 memo 里手写任何数值。
+3. **只转义会破坏结构的字符**：第一版把 `-`、`(`、`)` 全转义，结果标题变成 `CFO\-capex`，可读性明显下降；后来只保留反斜杠、反引号、星号、下划线与方括号，表格单元额外转义竖线。
+4. **催化只列有日期的**：没有 `due` 的观察项留给「什么会改变判断」，避免把散文冒充日历。
+5. **不覆盖报告**：memo 是独立文件，`report.json` 与归档哈希不受影响。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 374 tests ... OK
+python3 scripts/memo_pack.py examples/msft-cashflow/research/work/report.json \
+  --claims examples/msft-cashflow/research/work/claims.json \
+  --sources examples/msft-cashflow/research/work/sources.json
+```
+
+- 在真实微软示例上跑通：一页纸包含判断、三条发现、改变判断条件（T1 的支持/削弱）与风险（备选解释），主张数 10。
+- 估值：使用带 DCF/comps/反向DCF 的 summary bundle，memo 中的中位/隐含增长率字符串与模型输出完全一致。
+- 转义：标题 `*加粗尝试*` → `\*加粗尝试\*`；`CFO-capex（同口径）` 保持原样；表格标签 `DCF|基准` → `DCF\|基准`。
+- 失败：缺 `--claims`、`--max-findings 0`、缺 answer 的报告均退出 1；损坏 JSON 退出 2。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 多一种交付形态：先读一页，再进完整报告。
+2. 多回答一类问题：「如果只看一页，最重要的判断、区间与其失效条件是什么」。
+3. 边界更清楚：裁剪不新增证据、数字只能来自冻结模型。
+
+**遗留**
+
+- memo 目前只输出 Markdown；PDF/HTML 单页需要另一套渲染。
+- 未包含图表；一页纸若需要趋势图，应等 `charts[]` 多图容器。
+- `--max-findings` 只按报告顺序取前 N 条，不按影响排序（排序是研究者的判断，工具不应代劳）。
+
 ## Cycle 17 · 2026-11-14 · 多序列图表
 
 **对应卡片**：P1-4 后半之一

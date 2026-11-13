@@ -4,6 +4,16 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.22.0 · 一页式 IC memo
+
+完整报告是档案，但读者常先要一页。新增 [memo_pack.py](scripts/memo_pack.py)：从冻结报告、claims 与 sources 裁剪出 memo.md。
+
+- 内容：判断、最多三条关键发现、方法区间（数字只从冻结模型输出读）、有日期的催化、改变判断的条件（tests 的 supports_if/weakens_if 与 watch）、主要风险（material limitations 与备选解释）与溯源。
+- 校验：先跑与渲染相同的全套校验，不过就失败；`--claims` 必填，`--max-findings` 控制条数；不新增证据、不产生新数字、不改 report.json。
+- 转义：只转义会改变行内 Markdown 结构的字符；连字符、全角括号保持可读；表格单元额外转义竖线。
+- 测试：新增 [test_memo_pack.py](tests/test_memo_pack.py) 8 个用例（结构、条数上限、估值读数一致、有日期催化、转义、CLI 成功与失败），全套 374 个测试通过。
+- 文档：memo-template 增一页纸章节，architecture 补入口。
+
 ## 0.21.0 · 多序列图表
 
 报告图表此前只能画一条序列，而「收入与利润率一起看」「标的与基准对比」恰恰需要多条。`report.chart` 新增可选 `series`：

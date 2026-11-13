@@ -163,6 +163,19 @@ comparability.status为comparable/mixed/not_comparable。结构diff是新增/修
 
 可选update.opportunity.review同时记录direction / magnitude / timing / mechanism / price_realization五项文字，未到期与未观察如实标记；经营逻辑兑现与价格收益兑现分别评价，不把修改后的观点当作原先预测。机会档案与复盘是研究记录，不是自动交易或统计回测。
 
+## 一页纸：memo_pack
+
+完整报告是档案；页面读者常先要一页。`scripts/memo_pack.py` 从冻结报告、claims 与 sources 裁剪出一页式 memo：
+
+```bash
+python3 "$TY_DIR/scripts/memo_pack.py" "$WORK/report.json" \
+  --claims "$WORK/claims.json" --sources "$WORK/sources.json" --out "$WORK/memo.md"
+```
+
+内容：判断、最多三条关键发现、方法区间（数字只从冻结模型输出读取）、有日期的催化、改变判断的条件、主要风险与溯源。它先跑与渲染相同的全套校验，校验不过就直接失败；不新增证据、不产生新数字、不改 report.json。`--max-findings` 控制发现条数。
+
+一页纸是裁剪，不是替代：完整证据、计算、敏感性、审查记录仍在 report.json / Markdown / HTML 与归档里。
+
 ## 渲染与归档
 
 ```bash
