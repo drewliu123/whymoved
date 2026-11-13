@@ -46,6 +46,7 @@ flowchart TD
 | [calendar.py](../scripts/calendar.py) | 已冻结报告的催化日期汇总（upcoming / overdue / undated），只读、不监控 |
 | [research_memory.py](../scripts/research_memory.py) | 跨轮次研究记忆索引与当时视角查询，只存指针、不改归档 |
 | [consensus.py](../scripts/consensus.py) | 一致预期快照、修订与指引/共识分离，只读计算 |
+| [event_study.py](../scripts/event_study.py) | 参考类事件的窗口收益分布（观测点窗口、n与分位、不给p值） |
 | [analysis_contract.py](../scripts/analysis_contract.py) | 问题方法匹配、区分检验、模型与市场预期契约 |
 | [analysis_models.py](../scripts/analysis_models.py) | 经营桥、FCFF、DCF、反向DCF和可比公司相对估值固定模型 |
 | [render_report.py](../scripts/render_report.py) | 从冻结报告生成同源Markdown和HTML |
