@@ -165,6 +165,10 @@ def _quality_flags(report):
     if not flags:
         lines.append("- 未触发默认红旗阈值；这不等于没有风险。")
         return lines
+    unattributed = {period: fields for period, fields in (result.get("unattributed") or {}).items() if fields}
+    if unattributed:
+        lines.append("- 未挂 claim 的字段：%s" % "；".join(
+            "%s：%s" % (_escape(period), _escape("、".join(fields))) for period, fields in unattributed.items()))
     for item in flags[:5]:
         lines.append("- %s｜%s：%s" % (_escape(item["period"]), _escape(item["code"]),
                                        _escape(item["message"])))
@@ -208,6 +212,19 @@ def _event_study(report):
     return lines
 
 
+def _chart_inventory(report):
+    charts = []
+    if isinstance(report.get("chart"), dict):
+        charts.append(report["chart"])
+    charts.extend(item for item in report.get("charts", []) if isinstance(item, dict))
+    if not charts:
+        return []
+    titles = "、".join(_escape(_clip(chart.get("title", ""), 60)) for chart in charts[:4])
+    if len(charts) > 4:
+        titles += "等 %d 张" % len(charts)
+    return ["- 图表 %d 张：%s（完整报告或 HTML 版可查看）" % (len(charts), titles)]
+
+
 def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
     """Return memo markdown derived only from frozen fields; no new numbers."""
     answer = report.get("answer") if isinstance(report.get("answer"), dict) else {}
@@ -248,6 +265,7 @@ def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
     claims = ledger.get("claims") if isinstance(ledger, dict) else None
     lines.append("- 主张数：%s；完整证据与计算见 report.json / claims.json / sources.json。" % (
         len(claims) if isinstance(claims, list) else "未提供"))
+    lines.extend(_chart_inventory(report))
     lines.append("- 一页纸只做裁剪，不新增证据，也不替代完整报告与档案哈希。")
     return "\n".join(lines) + "\n"
 

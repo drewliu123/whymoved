@@ -131,11 +131,40 @@ class MemoLinkedSectionsTests(unittest.TestCase):
         self.assertIn("为正", text)
         self.assertIn("不是预测", text)
 
+    def test_quality_unattributed_is_listed(self):
+        report, ledger, sources = documents()
+        report["quality"] = {"statements": QualityReportTests().statements()}
+        report["quality"]["statements"]["periods"][1]["capex"] = 50
+        text = memo((report, ledger, sources)).replace("\\", "")
+        self.assertIn("未挂 claim 的字段", text)
+        self.assertIn("capex", text)
+
+    def test_chart_inventory(self):
+        report, ledger, sources = documents()
+        report["chart"] = {"title": "收入趋势", "x_label": "期间", "y_label": "收入", "unit": "亿元",
+                           "rows": [{"label": "Q1", "value": 1}, {"label": "Q2", "value": 2}],
+                           "claim_ids": ["C1"]}
+        text = memo((report, ledger, sources))
+        self.assertIn("图表 1 张", text)
+        self.assertIn("收入趋势", text)
+        self.assertIn("完整报告或 HTML 版", text)
+        report.pop("chart")
+        report["charts"] = [{"title": "第二张", "x_label": "x", "y_label": "y", "unit": "元",
+                             "rows": [{"label": "A", "value": 1}, {"label": "B", "value": 2}],
+                             "claim_ids": ["C1"]},
+                            {"title": "第三张", "x_label": "x", "y_label": "y", "unit": "元",
+                             "rows": [{"label": "A", "value": 1}, {"label": "B", "value": 2}],
+                             "claim_ids": ["C1"]}]
+        text = memo((report, ledger, sources))
+        self.assertIn("图表 2 张", text)
+        self.assertIn("第二张", text)
+
     def test_sections_absent_by_default(self):
         text = memo(documents())
         self.assertNotIn("## 传导瓶颈", text)
         self.assertNotIn("## 质量红旗", text)
         self.assertNotIn("## 参考类事件", text)
+        self.assertNotIn("图表", text)
 
 
 class MemoCliTests(unittest.TestCase):
