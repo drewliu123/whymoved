@@ -51,7 +51,7 @@ increment.kind可为new_fact/calculation/connection/contradiction/judgment_updat
 
 findings为空时必须给no_change_reason，说明本轮检查了哪些信号、为何未改变判断。answer仍需证据引用。所有重要分析通过claim_ids入账。
 
-可选chart：`{title,x_label,y_label,unit,rows:[{label,value}],claim_ids,note}`。value必须有限数值，口径相同、时间顺序明确；图表依数据需要选用。多序列改用`series:[{name,rows:[{label,value}]}]`替代`rows`：各序列的label必须完全一致（同一横轴），unit共享，渲染时以实线/虚线区分并在图下列出系列名；单序列仍保留原有悬停读数，多序列的精确数值以同源数据表为准。`rows`与`series`不能同时出现。需要多张图时用`charts:[...]`（每个元素与`chart`同构，单序列或多序列均可），`chart`与`charts`不能同时出现；每张图仍自动附同源数据表。渲染器附同源数据表、键盘读数、明暗/移动布局。不要双轴混量纲，不以图形暗示不存在的因果。
+可选chart：`{title,x_label,y_label,unit,rows:[{label,value}],claim_ids,note}`。value必须有限数值，口径相同、时间顺序明确；图表依数据需要选用。多序列改用`series:[{name,rows:[{label,value}]}]`替代`rows`：各序列的label必须完全一致（同一横轴），unit共享，渲染时以实线/虚线区分并在图下列出系列名；单序列仍保留原有悬停读数，多序列的精确数值以同源数据表为准。`rows`与`series`不能同时出现。需要多张图时用`charts:[...]`（每个元素与`chart`同构，单序列或多序列均可），`chart`与`charts`不能同时出现；每张图仍自动附同源数据表。可选`kind`：`line`（默认）/`bar`/`waterfall`。`bar`与`waterfall`只能用`rows`，不能带`series`。`waterfall`每行必须有`role`（`total`或`delta`），首行必须是`total`；后续`total`必须等于前面累计值，否则校验失败——这让利润桥、现金流桥自己检查算术。渲染时合计与变动用不同填充与线型区分，表格标签自动补「合计/变动」。渲染器附同源数据表、键盘读数、明暗/移动布局。不要双轴混量纲，不以图形暗示不存在的因果。
 
 可选calculations列表：`{id,description,formula,inputs:[{name,value,unit,claim_ids}],result:{value,unit,precision?},claim_ids,op?}`；对应claim可标calculation_id。
 

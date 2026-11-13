@@ -189,6 +189,80 @@ class ChartListTests(unittest.TestCase):
         self.assertEqual(page.count('<section class="chart">'), 1)
 
 
+class BarWaterfallTests(unittest.TestCase):
+    def bar_document(self):
+        report, ledger, sources = documents()
+        report["chart"] = {"kind": "bar", "title": "分部收入", "x_label": "分部", "y_label": "收入",
+                           "unit": "亿元", "claim_ids": ["C1"],
+                           "rows": [{"label": "云", "value": 12}, {"label": "设备", "value": -3}]}
+        return report, ledger, sources
+
+    def waterfall_document(self, final=71.5):
+        report, ledger, sources = documents()
+        report["chart"] = {"kind": "waterfall", "title": "现金流桥", "x_label": "项目", "y_label": "金额",
+                           "unit": "十亿美元", "claim_ids": ["C1"],
+                           "rows": [{"label": "经营现金流", "value": 136, "role": "total"},
+                                    {"label": "资本开支", "value": -64.5, "role": "delta"},
+                                    {"label": "自由现金流", "value": final, "role": "total"}]}
+        return report, ledger, sources
+
+    def test_bar_chart(self):
+        report, ledger, sources = self.bar_document()
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        self.assertEqual(page.count("<rect"), 2)
+        self.assertNotIn("<polyline", page)
+        for token in ("柱状", "云 12 亿元", "设备 -3 亿元", 'id="chart-readout"'):
+            self.assertIn(token, page)
+        markdown = render_report.render_markdown(report, ledger, sources)
+        self.assertIn("| 分部 | 收入（亿元） |", markdown)
+        self.assertIn("| 云 | 12 |", markdown)
+
+    def test_waterfall_chart_and_self_check(self):
+        report, ledger, sources = self.waterfall_document()
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        self.assertEqual(page.count("<rect"), 3)
+        self.assertIn("瀑布", page)
+        self.assertIn("经营现金流 136 十亿美元", page)
+        markdown = render_report.render_markdown(report, ledger, sources)
+        self.assertIn("经营现金流（合计）", markdown)
+        self.assertIn("资本开支（变动）", markdown)
+        self.assertIn("自由现金流（合计）", markdown)
+
+    def test_waterfall_checkpoint_mismatch(self):
+        report, ledger, sources = self.waterfall_document(final=72)
+        errors = render_report.validate_report(report, ledger, sources)
+        self.assertTrue(any("does not match the accumulated" in error for error in errors), errors)
+
+    def test_kind_validation(self):
+        report, ledger, sources = self.bar_document()
+        report["chart"]["kind"] = "pie"
+        self.assertTrue(any("kind must be" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.bar_document()
+        report["chart"]["series"] = [{"name": "A", "rows": [{"label": "Q1", "value": 1},
+                                                            {"label": "Q2", "value": 2}]}]
+        report["chart"].pop("rows")
+        self.assertTrue(any("cannot use series" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.waterfall_document()
+        report["chart"]["rows"][0].pop("role")
+        self.assertTrue(any("role must be" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = self.waterfall_document()
+        report["chart"]["rows"] = [{"label": "变动", "value": 1, "role": "delta"},
+                                   {"label": "合计", "value": 1, "role": "total"}]
+        self.assertTrue(any("start with a total" in error for error in render_report.validate_report(report, ledger, sources)))
+
+    def test_line_charts_unchanged(self):
+        report, ledger, sources = documents()
+        report["chart"] = {"title": "收入", "x_label": "期间", "y_label": "收入", "unit": "亿元",
+                           "rows": [{"label": "Q1", "value": 1}, {"label": "Q2", "value": 2}],
+                           "claim_ids": ["C1"]}
+        page = render_report.render_html(report, ledger, sources)
+        self.assertIn("<polyline", page)
+        self.assertNotIn("<rect", page)
+        self.assertNotIn("柱状", page)
+
+
 class Text(HTMLParser):
     def __init__(self):
         super().__init__()

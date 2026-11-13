@@ -50,6 +50,43 @@ def safe_link(value):
     return quote(value, safe="/:?&=#%+~@!$*,-._")
 
 
+def _numeric_value(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return None
+    try:
+        return value if math.isfinite(value) else None
+    except OverflowError:
+        return None
+
+
+def _waterfall_errors(rows, path):
+    """Waterfall totals must agree with the accumulated deltas between them."""
+    errors = []
+    running = None
+    for index, row in enumerate(rows):
+        if not isinstance(row, dict):
+            continue
+        role = row.get("role")
+        if role not in {"total", "delta"}:
+            errors.append("%s.rows[%d].role must be total or delta" % (path, index))
+            return errors
+        value = _numeric_value(row.get("value"))
+        if value is None:
+            continue
+        if role == "total":
+            if running is not None:
+                tolerance = max(1e-9 * max(abs(running), abs(value)), 1e-12)
+                if abs(value - running) > tolerance:
+                    errors.append("%s.rows[%d] total %s does not match the accumulated %s" % (path, index, value, running))
+            running = value
+        elif running is None:
+            errors.append(path + ".rows must start with a total row")
+            return errors
+        else:
+            running += value
+    return errors
+
+
 def _chart_errors(chart, path, refs):
     """Validate one chart (single or multi-series); shared by chart and charts[]."""
     errors = []
@@ -91,6 +128,15 @@ def _chart_errors(chart, path, refs):
         rows = chart.get("rows")
         if not isinstance(rows, list) or len(rows) < 2 or any(not isinstance(row, dict) or not _text(row.get("label")) or not _number(row.get("value")) for row in rows):
             errors.append(path + ".rows requires at least two label/finite numeric value pairs")
+    kind = chart.get("kind", "line")
+    if kind not in {"line", "bar", "waterfall"}:
+        errors.append(path + ".kind must be line, bar or waterfall")
+    elif kind != "line" and "series" in chart:
+        errors.append(path + ".kind " + kind + " cannot use series")
+    if kind == "waterfall":
+        rows = chart.get("rows")
+        if isinstance(rows, list):
+            errors.extend(_waterfall_errors(rows, path))
     refs(chart, path)
     if "note" in chart and not isinstance(chart["note"], str):
         errors.append(path + ".note must be text")
@@ -822,9 +868,13 @@ def _chart_table(c):
                 "rows": [[label] + [series["rows"][index]["value"] for series in c["series"]]
                          for index, label in enumerate(labels)],
                 "claim_ids": c["claim_ids"], "note": c.get("note", "")}
+    if c.get("kind") == "waterfall":
+        rows = [[row["label"] + ("（合计）" if row.get("role") == "total" else "（变动）"), row["value"]]
+                for row in c["rows"]]
+    else:
+        rows = [[row["label"], row["value"]] for row in c["rows"]]
     return {"title": c["title"], "columns": [c["x_label"], c["y_label"] + "（" + c["unit"] + "）"],
-            "rows": [[row["label"], row["value"]] for row in c["rows"]],
-            "claim_ids": c["claim_ids"], "note": c.get("note", "")}
+            "rows": rows, "claim_ids": c["claim_ids"], "note": c.get("note", "")}
 
 
 def _chart_series(chart):
@@ -835,10 +885,98 @@ def _chart_series(chart):
 
 
 def _chart(c):
+    kind = c.get("kind", "line")
+    if kind == "bar":
+        return _bar_chart(c)
+    if kind == "waterfall":
+        return _waterfall_chart(c)
     series = _chart_series(c)
     if len(series) == 1 and series[0][0] is None:
         return _single_chart(c)
     return _multi_chart(c, series)
+
+
+def _bar_chart(c):
+    rows = c["rows"]
+    values = [row["value"] for row in rows]
+    lo, hi = min(min(values), 0), max(max(values), 0)
+    scale = max(abs(lo), abs(hi), 1)
+    low, high = lo / scale, hi / scale
+
+    def y(value):
+        return 190 - ((value / scale - low) / (high - low) if high != low else .5) * 150
+
+    slot = 620 / len(rows)
+    out = ['<section class="chart"><h2>%s</h2><svg viewBox="0 0 720 250" role="group" aria-label="%s（柱状）">' % (
+        _h(c["title"]), _h(c["title"]))]
+    for value in (lo, 0, hi):
+        out.append('<line class="grid" x1="60" x2="680" y1="%s" y2="%s"/><text x="2" y="%s">%s</text>' % (
+            y(value), y(value), y(value) - 5, _h(value)))
+    for index, row in enumerate(rows):
+        left = 60 + index * slot + slot * 0.15
+        width = slot * 0.7
+        top = y(max(row["value"], 0))
+        height = abs(y(row["value"]) - y(0))
+        label = row["label"] + " " + str(row["value"]) + " " + c["unit"]
+        out.append('<rect x="%.3f" y="%.3f" width="%.3f" height="%.3f" fill="var(--series)" opacity="0.85" '
+                   'tabindex="0" role="img" aria-label="%s" aria-describedby="chart-readout"><title>%s</title></rect>' % (
+                       left, top, width, height, _h(label), _h(label)))
+    out.append('<text x="60" y="220">%s</text><text x="680" y="220" text-anchor="end">%s</text></svg>' % (
+        _h(rows[0]["label"]), _h(rows[-1]["label"])))
+    out.append('<p id="chart-readout" role="tooltip" aria-live="polite">%s</p></section>' % _h(
+        c["x_label"] + " · " + c["y_label"] + "（" + c["unit"] + "）"))
+    return "".join(out)
+
+
+def _waterfall_chart(c):
+    rows = c["rows"]
+    bars, running = [], None
+    for row in rows:
+        value = row["value"]
+        if row.get("role") == "total":
+            bars.append((0.0, value))
+            running = value
+        else:
+            start = running if running is not None else 0.0
+            end = start + value
+            bars.append((start, end))
+            running = end
+    points = [0] + [point for bar in bars for point in bar]
+    lo, hi = min(points), max(points)
+    scale = max(abs(lo), abs(hi), 1)
+    low, high = lo / scale, hi / scale
+
+    def y(value):
+        return 190 - ((value / scale - low) / (high - low) if high != low else .5) * 150
+
+    slot = 620 / len(bars)
+    out = ['<section class="chart"><h2>%s</h2><svg viewBox="0 0 720 250" role="group" aria-label="%s（瀑布）">' % (
+        _h(c["title"]), _h(c["title"]))]
+    for value in (lo, hi):
+        out.append('<line class="grid" x1="60" x2="680" y1="%s" y2="%s"/><text x="2" y="%s">%s</text>' % (
+            y(value), y(value), y(value) - 5, _h(value)))
+    out.append('<line class="grid" x1="60" x2="680" y1="%s" y2="%s"/>' % (y(0), y(0)))
+    previous = None
+    for index, ((start, end), row) in enumerate(zip(bars, rows)):
+        left = 60 + index * slot + slot * 0.2
+        width = slot * 0.6
+        top, height = y(max(start, end)), abs(y(end) - y(start))
+        total = row.get("role") == "total"
+        label = row["label"] + " " + str(row["value"]) + " " + c["unit"]
+        out.append('<rect x="%.3f" y="%.3f" width="%.3f" height="%.3f" fill="var(--series)" opacity="%s"%s '
+                   'tabindex="0" role="img" aria-label="%s" aria-describedby="chart-readout"><title>%s</title></rect>' % (
+                       left, top, width, height, "0.9" if total else "0.5",
+                       ' stroke="var(--series)" stroke-dasharray="3 2"' if not total else "",
+                       _h(label), _h(label)))
+        if previous is not None and float(start) != float(previous):
+            out.append('<line x1="%.3f" x2="%.3f" y1="%.3f" y2="%.3f" stroke="var(--sub)" stroke-dasharray="2 3"/>' % (
+                left - slot * 0.2, left, y(previous), y(previous)))
+        previous = end
+    out.append('<text x="60" y="220">%s</text><text x="680" y="220" text-anchor="end">%s</text></svg>' % (
+        _h(rows[0]["label"]), _h(rows[-1]["label"])))
+    out.append('<p id="chart-readout" role="tooltip" aria-live="polite">%s</p></section>' % _h(
+        c["x_label"] + " · " + c["y_label"] + "（" + c["unit"] + "）"))
+    return "".join(out)
 
 
 def _multi_chart(c, series):
