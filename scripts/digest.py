@@ -45,6 +45,19 @@ def build_digest(home, as_of=None, days=30):
         raise ValueError("--days must be at least 1")
     window_start = origin - timedelta(days=days)
     index = research_memory.build_index(home)
+    reports = {}
+    for record in index["runs"]:
+        try:
+            reports[record["run_id"]] = json.loads(
+                (Path(home).resolve() / "journal" / "runs" / record["run_id"] / "report.json")
+                .read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            reports[record["run_id"]] = None
+    try:
+        import opportunity_contract as opportunity_tool
+        status_label, thesis_label = opportunity_tool.STATUSES, opportunity_tool.THESIS
+    except ImportError:  # labels are cosmetic; raw identifiers still print
+        status_label, thesis_label = {}, {}
     recent = []
     for record in index["runs"]:
         stamp = _date(record.get("as_of"))
@@ -55,13 +68,39 @@ def build_digest(home, as_of=None, days=30):
     lines = ["# 研究摘要（%s 起 %d 天）" % (origin.date().isoformat(), days), ""]
     lines.append("归档 %d 轮；本窗口 %d 轮；实体 %d 个；跳过 %d 个坏档。" % (
         len(index["runs"]), len(recent), len(index["entities"]), len(index["skipped"])))
-    changed = [record for record in recent if record.get("judgment_changed") is True]
+    def change_signal(record):
+        report = reports.get(record.get("run_id"))
+        update = report.get("update") if isinstance(report, dict) else None
+        if not isinstance(update, dict):
+            return None
+        opportunity = update.get("opportunity")
+        thesis_changed = isinstance(opportunity, dict) and (
+            opportunity.get("thesis_change") in {"strengthened", "weakened", "invalidated"}
+            or opportunity.get("previous_status") != opportunity.get("current_status"))
+        if record.get("judgment_changed") is True or thesis_changed:
+            return update
+        return None
+
+    changed = [(record, change_signal(record)) for record in recent if change_signal(record) is not None]
     lines.extend(["", "## 判断变化", ""])
     if changed:
-        for record in changed:
+        for record, update in changed:
             lines.append("- %s ｜ %s ｜ %s" % (record.get("as_of", ""), record.get("run_id", ""),
                                                _clip(record.get("title", ""))))
             lines.append("  - 判断：%s" % _clip(record.get("judgment", ""), 220))
+            reason = _clip(update.get("reason", ""), 160)
+            if reason:
+                lines.append("  - 更新：%s" % reason)
+            opportunity = update.get("opportunity")
+            if isinstance(opportunity, dict):
+                previous = opportunity.get("previous_status")
+                current = opportunity.get("current_status")
+                thesis = opportunity.get("thesis_change")
+                before, after = status_label.get(previous, previous), status_label.get(current, current)
+                if previous == current:
+                    lines.append("  - 论点：%s（%s）" % (before, thesis_label.get(thesis, thesis)))
+                else:
+                    lines.append("  - 论点：%s → %s（%s）" % (before, after, thesis_label.get(thesis, thesis)))
     else:
         lines.append("- 本窗口没有声明改变判断的更新。")
     lines.extend(["", "## 本窗口研究", ""])
@@ -85,17 +124,25 @@ def build_digest(home, as_of=None, days=30):
                 others = [record.get("run_id", "") for record in records[1:]]
                 shown = "、".join(others[:3]) + ("等 %d 轮" % len(others) if len(others) > 3 else "")
                 versions = len({record.get("judgment", "") for record in records})
-                lines.append("  - 同题 %d 轮（另：%s）；结论版本 %d 个" % (len(records), shown, versions))
+                statuses = []
+                for record in records:
+                    report = reports.get(record.get("run_id"))
+                    opportunity = report.get("opportunity") if isinstance(report, dict) else None
+                    status = opportunity.get("assessment", {}).get("status") if isinstance(opportunity, dict) else None
+                    if status:
+                        statuses.append(status_label.get(status, status))
+                suffix = ""
+                if statuses:
+                    counts = {}
+                    for label in statuses:
+                        counts[label] = counts.get(label, 0) + 1
+                    suffix = "；论点状态：" + "、".join("%s %d" % (key, value) for key, value in counts.items())
+                lines.append("  - 同题 %d 轮（另：%s）；结论版本 %d 个%s" % (len(records), shown, versions, suffix))
     else:
         lines.append("- 本窗口没有新归档。")
     entries = []
     for record in index["runs"]:
-        report = None
-        try:
-            report = json.loads((Path(home).resolve() / "journal" / "runs" / record["run_id"] / "report.json")
-                                .read_text(encoding="utf-8"))
-        except (OSError, ValueError):
-            report = None
+        report = reports.get(record["run_id"])
         if isinstance(report, dict):
             for entry in calendar_tool.extract_entries(report, record["run_id"], record["run_id"]):
                 entries.append(entry)
@@ -127,7 +174,7 @@ def build_digest(home, as_of=None, days=30):
     lines.extend(["", "## 边界", "",
                   "- 摘要只复制已冻结报告里的判断与触发，不新增证据，也不给买卖建议。",
                   "- 没有 `due` 的观察项不进催化小节；不要从自由文本猜日期。",
-                  "- 判断是否改变以各 run 自己的 `update.judgment_changed` 为准。",
+                  "- 判断变化包含 `update.judgment_changed=true`，以及 `update.opportunity` 里论点被削弱/加强/推翻或状态改变。",
                   "- 同一问题跑多轮时合并显示，判断取最新一轮；重复实验不等于多次独立验证，结论版本数会标出。",
                   "- 窗口按各轮报告的 as_of 计算，不是归档写入时间；补档历史研究不会落进当前窗口。"])
     return "\n".join(lines) + "\n"

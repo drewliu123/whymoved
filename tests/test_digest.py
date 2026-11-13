@@ -60,6 +60,27 @@ class DigestTests(unittest.TestCase):
         self.assertNotIn("判断：偏多", text, "older runs of the same question collapse into the newest line")
         self.assertIn("重复实验不等于多次独立验证", text)
 
+    def test_thesis_status_change_is_reported_even_without_judgment_change(self):
+        run_id = "R20261110T000000Z-bbbbbbbbbbbb"
+        report_path = self.home / "journal" / "runs" / run_id / "report.json"
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        report["update"] = {"judgment_changed": False, "reason": "指引下修且 CEO 继任未落地",
+                            "opportunity": {"previous_status": "watch", "current_status": "no_edge",
+                                            "thesis_change": "weakened"}}
+        report["opportunity"] = {"applicability": "trading", "assessment": {"status": "no_edge"}}
+        report["question"] = "BTC 怎么看"
+        report_path.write_text(json.dumps(report, ensure_ascii=False), encoding="utf-8")
+        text = self.digest()
+        self.assertIn("更新：指引下修", text)
+        self.assertIn("论点：等待触发 → 未见优势（削弱）", text)
+        self.assertIn("论点状态：", text)
+        report["update"]["opportunity"] = {"previous_status": "watch", "current_status": "watch",
+                                          "thesis_change": "strengthened"}
+        report_path.write_text(json.dumps(report, ensure_ascii=False), encoding="utf-8")
+        text = self.digest()
+        self.assertIn("论点：等待触发（增强）", text)
+        self.assertNotIn("等待触发 → 等待触发", text)
+
     def test_upcoming_and_overdue_catalysts(self):
         write_run(self.home, "R20261112T000000Z-dddddddddddd", as_of="2026-11-12T00:00:00Z",
                   entity="BTC", judgment="等待信号", trigger_due="2026-11-13")
