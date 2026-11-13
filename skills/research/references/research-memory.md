@@ -78,6 +78,24 @@ python3 "$TY_DIR/scripts/research_memory.py" thread --home "$TY_HOME" R20261101T
 
 沿革同样只是指针：判断原文复制自各轮报告，引用前回冻结 run 读证据。
 
+## 多轮摘要：digest
+
+单轮查询回答「某标的」，`digest.py` 回答「这段时间我们做了什么、接下来要看什么」：
+
+```bash
+python3 "$TY_DIR/scripts/digest.py" --home "$TY_HOME" --as-of 2026-11-14 --days 14 --out "$WORK/digest.md"
+```
+
+内容：
+
+- **判断变化**：窗口内 `update.judgment_changed=true` 的 run，附判断原文。
+- **本窗口研究**：窗口内所有 run，按截点倒序。
+- **未来 30 天的催化**：从各 run 的 trigger / watch 里取有 `due` 且落在未来 30 天的条目，带距今天数。
+- **过期未核对**：`due` 已过但报告未记录核对的条目；文档里明确「过期不等于未触发」。
+- **边界**：没有 `due` 的观察项不进催化小节；摘要只复制冻结内容，不给买卖建议。
+
+窗口起点 = `--as-of` 减 `--days`；归档总数与坏档数一并列出，避免「看起来只有两轮」的错觉。
+
 ## 边界
 
 - **指针不是证据**：索引里的 `judgment` 是报告原文的复制，用于检索；引用它支撑新结论没有意义——必须回到冻结 run 读 claims 与 sources，再按当前研究重新入账。旧 `inference` 尤其不能直接当作新结论的依据。
