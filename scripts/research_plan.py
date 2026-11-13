@@ -78,7 +78,7 @@ def main():
     try:
         plan = json.loads(Path(args.plan).read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
-        print(str(exc), file=sys.stderr)
+        print("cannot read %s: %s" % (args.plan, exc), file=sys.stderr)
         return 2
     errors = validate_plan(plan)
     print(json.dumps({"passed": not errors, "errors": errors}, ensure_ascii=False, indent=2))

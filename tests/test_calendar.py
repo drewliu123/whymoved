@@ -185,7 +185,7 @@ class CliTests(unittest.TestCase):
             self.assertEqual(self.run_cli(str(bad)).returncode, 1)
             broken = Path(tmp) / "broken.json"
             broken.write_text("{", encoding="utf-8")
-            self.assertEqual(self.run_cli(str(broken)).returncode, 1)
+            self.assertEqual(self.run_cli(str(broken)).returncode, 2)
             self.assertEqual(self.run_cli(str(Path(tmp) / "missing.json")).returncode, 2)
             self.assertEqual(self.run_cli().returncode, 2)
 

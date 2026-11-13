@@ -761,14 +761,27 @@ def main():
     for name in ("plan", "report", "claims", "sources"):
         check.add_argument("--" + name, required=True, type=Path)
     args = parser.parse_args()
-    try:
-        if args.cmd == "route":
+    if args.cmd == "route":
+        try:
             result = route(args.question_kind)
-        else:
-            from render_report import read_document
-            from research_run import _validate_bundle
-            _validate_bundle(*(read_document(getattr(args, name)) for name in ("report", "claims", "sources", "plan")), require_analysis=True)
+        except (OSError, ValueError, TypeError, KeyError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+    else:
+        from render_report import read_document
+        from research_run import _validate_bundle
+        try:
+            documents = [read_document(getattr(args, name)) for name in ("report", "claims", "sources", "plan")]
+        except ValueError as exc:
+            print(str(exc), file=sys.stderr)
+            return 2
+        try:
+            _validate_bundle(*documents, require_analysis=True)
             result = {"passed": True, "note": "Contracts and fixed arithmetic verified; economic meaning still needs review."}
+        except (OSError, ValueError, TypeError, KeyError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+    try:
         print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))
         return 0
     except (OSError, ValueError, TypeError, KeyError) as exc:

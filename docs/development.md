@@ -12,7 +12,7 @@ export PYTHONDONTWRITEBYTECODE=1
 python3 -m unittest discover -s tests
 ```
 
-当前基线为 504 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
+当前基线为 509 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
 
 ## 离线示例回归
 
@@ -52,6 +52,13 @@ python3 scripts/render_report.py examples/msft-cashflow/research/work/report.jso
 [离线工作流](../.github/workflows/tests.yml)在 Python 3.9 / 3.11 / 3.12 下运行单元测试、示例算术脚本，并遍历 `examples/*/` 逐个校验哈希、来源与证据契约、分析契约以及 Markdown/HTML 渲染。运行数据写到 runner 的临时目录，不安装核心 pip 依赖，也不初始化第三方子模块。
 
 “离线”指这些检查不调用真实数据服务或模型；GitHub runner 获取代码及 Python 工具链仍需要平台网络。SEC 与金融接口的单元测试使用模拟响应。CI 通过不能代表真实 SEC 联网、账户权限、Claude Code 插件安装或浏览器视觉交互已验证。这些能力需在本机按实际环境单独检查，并如实记录状态和限制。
+
+## CLI 退码与错误约定
+
+- `0`：成功；`1`：输入可读但契约/校验失败；`2`：输入不可读（缺文件、坏 JSON、路径不安全）。
+- 不可读输入的错误必须带上路径，例如 `cannot read /path/x.json: ...`；不打印 traceback。
+- 库模块（如 `calculations.py`）直接运行时返回 `2` 并说明「无独立 CLI」，避免静默成功。
+- `tests/test_cli_errors.py` 锁定上述行为；新增 CLI 时照此实现。
 
 ## 代码与数据边界
 

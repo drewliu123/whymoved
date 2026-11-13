@@ -173,7 +173,11 @@ def _document_reports(paths, home):
                 run_id = json.loads(manifest.read_text(encoding="utf-8")).get("run_id")
             except ValueError:
                 run_id = None
-        documents.append((str(path), run_id, json.loads(path.resolve().read_text(encoding="utf-8"))))
+        try:
+            report = json.loads(path.resolve().read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            raise ValueError("cannot read " + str(path) + ": " + str(exc)) from exc
+        documents.append((str(path), run_id, report))
     return documents
 
 
@@ -192,8 +196,8 @@ def main():
         print(json.dumps({"passed": False, "errors": [str(exc)]}, ensure_ascii=False))
         return 2
     except ValueError as exc:
-        print(json.dumps({"passed": False, "errors": ["invalid report JSON: " + str(exc)]}, ensure_ascii=False))
-        return 1
+        print(json.dumps({"passed": False, "errors": [str(exc)]}, ensure_ascii=False))
+        return 2
     errors = []
     for source, _, report in documents:
         if not isinstance(report, dict):

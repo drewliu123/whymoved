@@ -1453,8 +1453,11 @@ def read_document(path):
         raise ValueError("symlink input refused: " + str(path))
     if not path.is_file():
         raise ValueError("input must be a regular file: " + str(path))
-    with path.open(encoding="utf-8") as f:
-        return json.load(f, parse_constant=lambda value: (_ for _ in ()).throw(ValueError("non-finite JSON: " + value)))
+    try:
+        with path.open(encoding="utf-8") as f:
+            return json.load(f, parse_constant=lambda value: (_ for _ in ()).throw(ValueError("non-finite JSON: " + value)))
+    except (OSError, ValueError) as exc:
+        raise ValueError("cannot read " + str(path) + ": " + str(exc)) from exc
 
 
 def write_outputs(directory, markdown, page, overwrite=False):
@@ -1486,6 +1489,10 @@ def main():
     args = parser.parse_args()
     try:
         report, ledger, sources = [read_document(p) for p in (args.report, args.claims, args.sources)]
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 2
+    try:
         markdown = render_markdown(report, ledger, sources)
         page = render_html(report, ledger, sources)
         paths = write_outputs(args.out_dir, markdown, page, args.overwrite)

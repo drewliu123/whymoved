@@ -413,7 +413,7 @@ def main():
         print(json.dumps({"out": str(args.out), "candidates": len(result["candidates"])}, ensure_ascii=False))
         return 0
     except (OSError, UnicodeError, json.JSONDecodeError, ValueError) as exc:
-        print(str(exc), file=sys.stderr)
+        print("cannot read %s: %s" % (args.input, exc), file=sys.stderr)
         return 2
 
 

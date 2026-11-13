@@ -4,6 +4,60 @@
 
 ---
 
+## Cycle 60 · 2026-11-14 · CLI 错误信息与退码统一
+
+**对应卡片**：P4-2（错误信息审查）
+
+**做法**：对 21 个 CLI 跑「缺文件 + 坏 JSON」的失败矩阵，记录退出码、是否 traceback、首行消息，再统一明显不一致处。
+
+**发现**
+
+1. **无 traceback**：所有路径都已经捕获异常，这一点原本就合格。
+2. **退码不一致**：坏 JSON 在多数 CLI 返回 2，但 `analysis_contract`、`render_report`、`catalyst_calendar` 返回 1；缺文件也不统一。
+3. **消息缺路径**：`read_document` 直接把 JSON 解析器的原文抛出来，如 `Expecting property name ...`，用户不知道是哪个文件。
+4. **静默成功**：`calculations.py` 是库，没有 `__main__` 守卫；直接运行退出 0 且无输出，看起来像「检查通过了」。
+
+**修复**
+
+| 位置 | 变更 |
+| --- | --- |
+| `render_report.read_document` | 捕获读取/解析异常并包装为 `cannot read <path>: ...` |
+| `render_report.main`、`analysis_contract.main` | 读取失败返回 2；契约失败返回 1 |
+| `catalyst_calendar` | 读取失败返回 2，消息带路径 |
+| `research_plan`、`sources` | 错误消息带路径 |
+| `calculations.py` | 增加 `__main__` 守卫：返回 2 并说明是库 |
+| `tests/test_cli_errors.py`（新） | 锁定坏 JSON/缺文件带路径、契约失败为 1、渲染校验失败为 1、库直跑为 2 |
+
+**关键设计决定**
+
+1. **退码即语义**：0 成功、1「读到了但不过」、2「读不到」；脚本与 CI 可以直接依赖这个区分。
+2. **错误必须带路径**：同一份坏 JSON 可能出现在四个参数里，不写路径等于让用户猜。
+3. **库不能假装是 CLI**：静默成功是失败路径里最危险的形态，比报错更糟。
+4. **测试锁定约定**：约定写进 development 文档，同时用 5 个用例守住，避免下一轮又漂移。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 509 tests ... OK
+```
+
+- 坏 JSON：4 个 CLI（plan/sources/contract/render/calendar）均返回 2，消息含路径。
+- 缺文件：plan/contract/render 均返回 2，消息含路径。
+- 契约失败：返回 1，消息指向 `answer.claim_ids`。
+- 库模块直跑：返回 2，stderr 说明「没有独立 CLI」。
+
+**投研意义增量**
+
+1. 出错时用户知道「哪个文件、哪一层失败」，而不是先猜。
+2. 静默成功被消除，避免「看起来跑过了」。
+
+**遗留**
+
+- 失败矩阵未覆盖所有子命令（如 `research_run update`、`sources import-last30days`）。
+- 中文与英文消息仍混用；用户侧中文、契约错误英文是有意设计，但没有书面规则。
+- `catalyst_calendar` 对空对象 `{}` 仍返回成功，是否收紧未决。
+
 ## Cycle 59 · 2026-11-14 · 跟做式教程与渲染确定性修复
 
 **对应卡片**：P4-1（第二次盘点后的最高优先项）

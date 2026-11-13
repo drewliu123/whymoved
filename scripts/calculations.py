@@ -256,3 +256,9 @@ def validate_calculations(rows, claim_ids):
         # the document must stay reproducible from the numbers a reader can see.
         previous[cid] = {"value": result["value"], "unit": unit, "depth": depth}
     return errors
+
+
+if __name__ == "__main__":
+    import sys as _sys
+    print("calculations.py is a library used by render_report; there is no standalone CLI.", file=_sys.stderr)
+    raise SystemExit(2)
