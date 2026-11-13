@@ -553,6 +553,33 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
                         if not claim_types & {"inference", "view"}:
                             errors.append(seg_path + ".claim_ids must include the evidenced drivers")
                         input_claims.update(seg_refs)
+            projection = spec.get("projection")
+            if projection is not None:
+                if spec.get("kind") != "driver_build":
+                    errors.append(path + ".spec.projection is only supported by driver_build")
+                elif not isinstance(projection, list) or not projection:
+                    errors.append(path + ".spec.projection must be a nonempty list")
+                elif len(projection) > 10:
+                    errors.append(path + ".spec.projection supports at most 10 years")
+                else:
+                    seen_labels = set()
+                    for n, step in enumerate(projection):
+                        step_path = path + ".spec.projection[%d]" % n
+                        if not isinstance(step, dict):
+                            errors.append(step_path + " must be an object")
+                            continue
+                        label = step.get("label")
+                        if not isinstance(label, str) or not label.strip():
+                            errors.append(step_path + ".label is required")
+                        elif label.strip().casefold() in seen_labels:
+                            errors.append(step_path + ".label duplicates another projection year")
+                        else:
+                            seen_labels.add(label.strip().casefold())
+                        growth = step.get("revenue_growth")
+                        if type(growth) not in (int, float) or not growth > -1:
+                            errors.append(step_path + ".revenue_growth must be greater than -1")
+                        if type(step.get("margin")) not in (int, float):
+                            errors.append(step_path + ".margin must be numeric")
             if spec.get("kind") in ("reverse_dcf", "relative_valuation"):
                 price = inputs.get("price", {})
                 price_refs = price.get("claim_ids", []) if isinstance(price, dict) else []

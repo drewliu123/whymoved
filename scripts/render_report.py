@@ -1006,11 +1006,22 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
                 rows.append(row)
             yield ("table", {"title": "分部驱动", "columns": columns, "rows": rows,
                              "claim_ids": segment_claims})
+            projection = model["result"]["outputs"].get("projection")
+            if isinstance(projection, list) and projection:
+                yield ("table", {"title": "多年推演（%s %s）" % (model["currency"], model["scale"]),
+                                 "columns": ["年度", "收入", "营业利润"],
+                                 "rows": [[year["label"], year["revenue"]["value"], year["profit"]["value"]]
+                                          for year in projection],
+                                 "claim_ids": segment_claims})
+                yield ("p", "推演逐年套用给定的收入增长率与利润率，从模型当年收入起步；不含 margin_delta 敏感性。")
         yield ("table", {"title": "观察值与假设", "columns": ["变量", "数值", "单位", "性质", "假设理由"],
                          "rows": [[name, v["value"], v["unit"], v["role"], model["assumptions"].get(name, "")] for name, v in model["spec"]["inputs"].items()],
                          "claim_ids": list(dict.fromkeys(cid for v in model["spec"]["inputs"].values() for cid in v["claim_ids"]))})
+        scalars = {name: v for name, v in model["result"]["outputs"].items()
+                   if isinstance(v, dict) and "value" in v and "unit" in v}
         yield ("table", {"title": "固定模型重算结果", "columns": ["输出", "结果", "单位"],
-                         "rows": [[name, v["value"], v["unit"]] for name, v in model["result"]["outputs"].items()], "claim_ids": model["output_claim_ids"]})
+                         "rows": [[name, v["value"], v["unit"]] for name, v in scalars.items()],
+                         "claim_ids": model["output_claim_ids"]})
         yield ("table", {"title": "单参数敏感性（其余输入固定）", "columns": ["变量", "改为", "单位", "输出", "结果", "结果单位"],
                          "rows": [[row["input"], row["value"], row["unit"], name, v["value"], v["unit"]] for row in model["result"]["sensitivity"] for name, v in row["outputs"].items()],
                          "claim_ids": model["output_claim_ids"]})

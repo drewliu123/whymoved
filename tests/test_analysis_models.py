@@ -448,6 +448,37 @@ class DriverBuildTests(unittest.TestCase):
         plain = compute_model(spec("driver_build"))
         self.assertAlmostEqual(value(plain, "base_profit"), 100 * 0.2 + 50 * 0.1)
 
+    def test_projection_builds_sequential_years(self):
+        item = spec("driver_build")
+        item["projection"] = [{"label": "Y1", "revenue_growth": 0.1, "margin": 0.22},
+                              {"label": "Y2", "revenue_growth": 0.05, "margin": 0.24}]
+        result = compute_model(item)
+        rows = result["outputs"]["projection"]
+        self.assertEqual([row["label"] for row in rows], ["Y1", "Y2"])
+        self.assertAlmostEqual(rows[0]["revenue"]["value"], value(result, "revenue") * 1.1)
+        self.assertAlmostEqual(rows[0]["profit"]["value"], rows[0]["revenue"]["value"] * 0.22)
+        self.assertAlmostEqual(rows[1]["revenue"]["value"], rows[0]["revenue"]["value"] * 1.05)
+        self.assertAlmostEqual(rows[1]["profit"]["value"], rows[1]["revenue"]["value"] * 0.24)
+        self.assertNotIn("projection", compute_model(spec("driver_build"))["outputs"])
+
+    def test_projection_validation(self):
+        cases = [
+            [{"label": "Y1", "revenue_growth": -1, "margin": 0.2}],
+            [{"label": "Y1", "revenue_growth": 0.1, "margin": 0.2}, {"label": "y1", "revenue_growth": 0.1, "margin": 0.2}],
+            [{"label": "", "revenue_growth": 0.1, "margin": 0.2}],
+            [{"label": "Y1", "revenue_growth": 0.1}],
+            [{"label": "Y%d" % n, "revenue_growth": 0.1, "margin": 0.2} for n in range(11)],
+        ]
+        for projection in cases:
+            item = spec("driver_build")
+            item["projection"] = projection
+            with self.assertRaises(ValueError):
+                compute_model(item)
+        bridge = spec("operating_bridge")
+        bridge["projection"] = [{"label": "Y1", "revenue_growth": 0.1, "margin": 0.2}]
+        with self.assertRaisesRegex(ValueError, "only supported by driver_build"):
+            compute_model(bridge)
+
     def test_base_margin_must_be_numeric(self):
         item = spec("driver_build")
         item["segments"][0]["base_margin"] = "0.2"

@@ -592,6 +592,26 @@ class AnalysisContractTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.check(data)
 
+    def test_projection_renders_and_validates(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "driver_build")
+        model = data[0]["analysis"]["models"][0]
+        model["spec"]["projection"] = [{"label": "FY2026E", "revenue_growth": 0.08, "margin": 0.21},
+                                       {"label": "FY2027E", "revenue_growth": 0.06, "margin": 0.22}]
+        model["result"] = analysis_models.compute_model(model["spec"])
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            self.assertIn("多年推演", text)
+            self.assertIn("FY2026E", text)
+            self.assertIn("FY2027E", text)
+            self.assertIn("不含 margin_delta 敏感性", text)
+        bad = bundle("operating_outlook")
+        add_model(bad[0], bad[1], "driver_build")
+        bad[0]["analysis"]["models"][0]["spec"]["projection"] = [{"label": "Y1", "revenue_growth": -1, "margin": 0.2}]
+        with self.assertRaises(ValueError):
+            self.check(bad)
+
     def test_base_margin_renders_and_validates(self):
         data = bundle("operating_outlook")
         add_model(data[0], data[1], "driver_build")

@@ -144,6 +144,29 @@ def _peer_rows(spec):
     return rows
 
 
+def _projection_rows(spec):
+    rows = spec.get("projection", [])
+    if not isinstance(rows, list):
+        raise ValueError("projection must be a list")
+    if len(rows) > 10:
+        raise ValueError("projection supports at most 10 years")
+    parsed, seen = [], set()
+    for index, row in enumerate(rows):
+        label = "projection[%d]" % index
+        _fields(row, ("label", "revenue_growth", "margin"), (), label)
+        if not isinstance(row["label"], str) or not row["label"].strip():
+            raise ValueError(label + ".label must be a nonempty string")
+        if row["label"].strip().casefold() in seen:
+            raise ValueError("duplicate projection label: " + row["label"])
+        seen.add(row["label"].strip().casefold())
+        growth = _number(row["revenue_growth"], label + ".revenue_growth")
+        if growth <= -1:
+            raise ValueError(label + ".revenue_growth must be greater than -1")
+        parsed.append({"label": row["label"].strip(), "revenue_growth": growth,
+                       "margin": _number(row["margin"], label + ".margin")})
+    return parsed
+
+
 def _segment_rows(spec):
     """Validate driver-build segments; order is preserved."""
     segments = spec.get("segments")
@@ -217,7 +240,7 @@ def _dcf(values, growth):
     return enterprise, discounted_terminal
 
 
-def _calculate(kind, values, peers=None, segments=None):
+def _calculate(kind, values, peers=None, segments=None, projection=None):
     _ranges(kind, values)
     if kind == "operating_bridge":
         base_profit = values["base_revenue"] * values["base_margin"]
@@ -277,6 +300,14 @@ def _calculate(kind, values, peers=None, segments=None):
             result["revenue_growth"] = _output(revenue / base_revenue - 1, "ratio")
         if revenue_change != 0:
             result["incremental_margin"] = _output((profit - base_profit) / revenue_change, "ratio")
+        if projection:
+            year_revenue, years = revenue, []
+            for step in projection:
+                year_revenue *= 1 + step["revenue_growth"]
+                years.append({"label": step["label"],
+                              "revenue": _output(year_revenue, "currency"),
+                              "profit": _output(year_revenue * step["margin"], "currency")})
+            result["projection"] = years
         return result
     if kind == "relative_valuation":
         if not peers:
@@ -350,7 +381,7 @@ def compute_model(spec):
     Raises ValueError for malformed specs, invalid ranges, overflow, or an
     unbracketed reverse valuation. Does not mutate the supplied spec.
     """
-    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers", "segments", "tornado"), "spec")
+    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers", "segments", "projection", "tornado"), "spec")
     kind = spec["kind"]
     if not isinstance(kind, str) or kind not in MODEL_UNITS:
         raise ValueError("unknown model kind")
@@ -362,10 +393,14 @@ def compute_model(spec):
         peers = None
     if kind == "driver_build":
         segments = _segment_rows(spec)
-    elif "segments" in spec:
-        raise ValueError("segments is only supported by driver_build")
+        projection = _projection_rows(spec)
     else:
+        if "segments" in spec:
+            raise ValueError("segments is only supported by driver_build")
+        if "projection" in spec:
+            raise ValueError("projection is only supported by driver_build")
         segments = None
+        projection = None
     units = MODEL_UNITS[kind]
     _fields(spec["inputs"], units, (), "inputs")
     values = {}
@@ -424,7 +459,7 @@ def compute_model(spec):
             if low == high:
                 raise ValueError("tornado " + name + " requires two different values")
     try:
-        outputs = _calculate(kind, values, peers, segments)
+        outputs = _calculate(kind, values, peers, segments, projection)
         sensitivity = []
         for row in scenarios:
             name = row["input"]
