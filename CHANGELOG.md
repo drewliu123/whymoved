@@ -4,6 +4,16 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.34.0 · 模型期间窗口
+
+模型 wrapper 的 `period` 一直是自由文本，无法核对「这个输入到底属于哪一期」。新增可选 `period_window`：
+
+- 结构：`{start, end, period_type?}`，ISO 日期，start 不晚于 end，period_type 取 fy / quarter / ltm / instant；未知字段拒绝。
+- 校验：一旦写了窗口，observed 输入所引用 claim 的 `metric` 期间必须落在窗口内（period_end 不晚于 end、period_start 不早于 start），且 period_type 与窗口一致。
+- 兼容：不写 `period_window` 的模型行为完全不变；`period` 仍作为人读描述保留，二者不应互相矛盾。
+- 测试：新增 2 个用例（期间越界与类型不一致、窗口形状五类负例），全套 432 个测试通过。
+- 文档：analysis-methods 与 memo-template 补字段规则。
+
 ## 0.33.0 · 事件研究嵌入报告
 
 参考类事件研究此前是独立脚本产物。新增可选 `report.event_study`，字段与 event_study 输入完全一致（event / window / samples）：

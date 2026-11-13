@@ -177,6 +177,66 @@ def _metric_dimension(unit):
     return None
 
 
+PERIOD_WINDOW_TYPES = {"fy", "quarter", "ltm", "instant"}
+
+
+def _iso_date(value):
+    if not isinstance(value, str):
+        return None
+    try:
+        from datetime import datetime
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return parsed
+
+
+def _period_window(model, path, errors):
+    """Parse the optional machine-checkable model period window."""
+    window = model.get("period_window")
+    if window is None:
+        return None
+    if not isinstance(window, dict):
+        errors.append(path + ".period_window must be an object")
+        return None
+    extra = set(window) - {"start", "end", "period_type"}
+    if extra:
+        errors.append(path + ".period_window has unknown fields: " + ", ".join(sorted(map(str, extra))))
+    start, end = _iso_date(window.get("start")), _iso_date(window.get("end"))
+    if start is None or end is None:
+        errors.append(path + ".period_window requires ISO start and end")
+        return None
+    if start > end:
+        errors.append(path + ".period_window.start must not be after end")
+        return None
+    kind = window.get("period_type")
+    if kind is not None and (not isinstance(kind, str) or kind not in PERIOD_WINDOW_TYPES):
+        errors.append(path + ".period_window.period_type must be one of " + ", ".join(sorted(PERIOD_WINDOW_TYPES)))
+        return None
+    return {"start": start, "end": end, "period_type": kind}
+
+
+def _metric_period_errors(name, cids, claim_map, window, path):
+    """Observed inputs must sit inside the model's declared period window."""
+    if not window:
+        return []
+    errors = []
+    for cid in cids:
+        metric = claim_map[cid].get("metric")
+        if not isinstance(metric, dict):
+            continue
+        kind = metric.get("period_type")
+        if window.get("period_type") and isinstance(kind, str) and kind != window["period_type"]:
+            errors.append(path + "." + name + " cites " + cid + " metric period_type " + kind +
+                          " but the model window is " + window["period_type"])
+        end, start = _iso_date(metric.get("period_end")), _iso_date(metric.get("period_start"))
+        if end is not None and end > window["end"]:
+            errors.append(path + "." + name + " cites " + cid + " metric period_end after the model period window")
+        if start is not None and start < window["start"]:
+            errors.append(path + "." + name + " cites " + cid + " metric period_start before the model period window")
+    return errors
+
+
 def _metric_input_errors(name, row, cids, claim_map, wrapper_scale, path):
     """Check an observed model input against the metric block of the cited claim.
 
@@ -392,6 +452,7 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
         for key in ("description", "currency", "scale", "period", "scope"):
             if not _text(model.get(key)):
                 errors.append(path + "." + key + " is required (currency and shares use the same scale)")
+        period_window = _period_window(model, path, errors)
         spec = model.get("spec")
         if not isinstance(spec, dict):
             errors.append(path + ".spec must be an object")
@@ -422,6 +483,7 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
                         errors.append(path + "." + name + " observed input must cite fact/price/consensus")
                     else:
                         errors.extend(_metric_input_errors(name, value, cids, claim_map, model.get("scale"), path))
+                        errors.extend(_metric_period_errors(name, cids, claim_map, period_window, path))
             if set(assumptions) != expected_assumptions:
                 errors.append(path + ".assumptions must match assumption inputs exactly")
             peers = spec.get("peers")

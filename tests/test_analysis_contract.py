@@ -436,6 +436,41 @@ class AnalysisContractTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, expected):
                 self.check(bad)
 
+    def test_model_period_window_checks_evidence_dates(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "operating_bridge")
+        self.attach_metric(data, "C1")
+        data[0]["analysis"]["models"][0]["period_window"] = {
+            "start": "2025-01-01", "end": "2025-12-31", "period_type": "fy"}
+        self.check(data)
+        bad = bundle("operating_outlook")
+        add_model(bad[0], bad[1], "operating_bridge")
+        self.attach_metric(bad, "C1", period_start="2024-01-01", period_end="2024-12-31")
+        bad[0]["analysis"]["models"][0]["period_window"] = {
+            "start": "2025-01-01", "end": "2025-12-31", "period_type": "fy"}
+        with self.assertRaisesRegex(ValueError, "before the model period window"):
+            self.check(bad)
+        bad = bundle("operating_outlook")
+        add_model(bad[0], bad[1], "operating_bridge")
+        self.attach_metric(bad, "C1", period_type="quarter",
+                           period_start="2025-01-01", period_end="2025-03-31")
+        bad[0]["analysis"]["models"][0]["period_window"] = {
+            "start": "2025-01-01", "end": "2025-12-31", "period_type": "fy"}
+        with self.assertRaisesRegex(ValueError, "metric period_type quarter"):
+            self.check(bad)
+
+    def test_model_period_window_shape(self):
+        for window in ({"start": "2025-02-01", "end": "2025-01-01"},
+                       {"start": "nope", "end": "2025-01-01"},
+                       {"start": "2025-01-01", "end": "2025-12-31", "period_type": "half"},
+                       {"start": "2025-01-01", "end": "2025-12-31", "extra": 1},
+                       "nope"):
+            data = bundle("operating_outlook")
+            add_model(data[0], data[1], "operating_bridge")
+            data[0]["analysis"]["models"][0]["period_window"] = window
+            with self.subTest(window=window), self.assertRaises(ValueError):
+                self.check(data)
+
     def test_unparseable_scale_skips_instead_of_guessing(self):
         data = bundle("operating_outlook")
         add_model(data[0], data[1], "operating_bridge")

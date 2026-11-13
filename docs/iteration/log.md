@@ -4,6 +4,52 @@
 
 ---
 
+## Cycle 30 · 2026-11-14 · 模型期间窗口
+
+**对应卡片**：P1-0d（新增；审计遗留的「期间是文本，无法核对」）
+
+**问题**：模型 wrapper 的 `period` 一直是自由文本（「一年基期；DCF明确期5年」）。模型可以引用一条 FY2024 的收入 claim，却在 description 里写「FY2025 基期」，没有任何东西会发现。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/analysis_contract.py` | 可选 `period_window: {start, end, period_type?}`；observed 输入的 metric 期间必须落入窗口、period_type 必须一致；窗口自身校验（ISO、顺序、枚举、未知字段） |
+| `tests/test_analysis_contract.py` | 2 个用例：期间越界/类型不一致；窗口形状五类负例 |
+| 文档 | analysis-methods 与 memo-template 补规则；CHANGELOG 0.34.0 |
+
+**关键设计决定**
+
+1. **不解析自由文本**：没有尝试从 `period` 里猜日期。另加一个结构化窗口，`period` 保持人读描述，二者并存；工具只相信结构化的那个。
+2. **窗口向内收，不向外扩**：metric 的起止必须落在窗口内（start ≥ window.start、end ≤ window.end）。宁可让研究者把窗口写宽一点并解释，也不让越界证据静默通过。
+3. **period_type 必须一致**：把季度指标塞进「财年模型」是常见口径事故；显式比较比人情判断可靠。
+4. **可选即兼容**：不写窗口的旧模型行为完全不变，真实归档全部照常加载。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 432 tests ... OK
+```
+
+- 正向：metric FY2025（2025-01-01..12-31）与窗口 fy 2025 一致 → 通过。
+- 越界：metric FY2024 + 窗口 2025 → `period_start before the model period window`。
+- 类型：quarter 指标 + fy 窗口 → `metric period_type quarter but the model window is fy`。
+- 窗口形状：start>end、非 ISO、period_type=half、未知字段、非对象全部拒绝。
+- 冻结示例：`report.md` / `report.html` 逐字节相同；真实归档不受影响。
+
+**投研意义增量**
+
+1. 多一条可核实连接：模型输入第一次能证明「这个数字属于哪一期」。
+2. 多回答一类问题：「模型用的基期与证据的期间是否一致」。
+3. 边界更清楚：结构化窗口与人读描述分开，不猜文本。
+
+**遗留**
+
+- `period_window` 只约束 observed 输入的 metric；assumption 本身没有期间，无法核对。
+- 没有检查模型 wrapper 之间的窗口一致性（例如 DCF 与 comps 用了不同基期）——这属于跨模型可比性，需要单独的检查卡。
+- memo 与渲染不显示窗口；目前只在附录的模型说明里有 `period` 文本。
+
 ## Cycle 29 · 2026-11-14 · 事件研究嵌入报告
 
 **对应卡片**：P2-1 遗留（报告渲染集成）
