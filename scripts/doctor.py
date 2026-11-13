@@ -40,7 +40,7 @@ def run_checks(home, as_of=None, renders=False):
     summary = {"home": str(root), "runs": 0, "loaded": 0, "failed": 0,
                "skipped_manifest": 0, "entities": 0, "aliases": 0,
                "dated_catalysts": 0, "undated_catalysts": 0, "overdue": 0,
-               "renders_checked": 0}
+               "renders_checked": 0, "runs_without_metric": 0}
     errors, warnings = [], []
     runs_dir = root / "journal" / "runs"
     if not runs_dir.is_dir():
@@ -60,6 +60,11 @@ def run_checks(home, as_of=None, renders=False):
             errors.append(run_id + ": " + str(exc)[:240])
             continue
         summary["loaded"] += 1
+        claims_doc = loaded.get("claims") or {}
+        claims_rows = claims_doc.get("claims") if isinstance(claims_doc, dict) else None
+        if isinstance(claims_rows, list) and not any(
+                isinstance(row, dict) and isinstance(row.get("metric"), dict) for row in claims_rows):
+            summary["runs_without_metric"] += 1
         if renders:
             from render_report import render_html, render_markdown
             try:
@@ -103,6 +108,9 @@ def run_checks(home, as_of=None, renders=False):
                 summary["dated_catalysts"] += 1
                 if origin is not None and due < origin:
                     summary["overdue"] += 1
+    if summary["runs_without_metric"]:
+        warnings.append("%d archive(s) have no claim.metric blocks; quality screening is unavailable for them"
+                        % summary["runs_without_metric"])
     if summary["undated_catalysts"]:
         warnings.append("%d catalyst entries have no due date; free-text windows are not parsed"
                         % summary["undated_catalysts"])

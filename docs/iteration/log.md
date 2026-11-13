@@ -4,6 +4,49 @@
 
 ---
 
+## Cycle 74 · 2026-11-14 · 体检说明质量筛查不可用的归档
+
+**对应卡片**：Cycle 73 遗留（旧 run 无 metric 的预期结果未进 doctor warnings）
+
+**问题**：全量扫查时 `quality_inputs` 对 25 个旧归档全部返回「no usable claim.metric blocks」。这个结果本身是对的，但用户跑体检时看不到原因，会以为自己哪里弄坏了。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/doctor.py` | 统计没有 `claim.metric` 的归档数（`runs_without_metric`），warnings 说明「这些归档的质量筛查不可用」 |
+| `tests/test_doctor.py` | 扩展健康用例，断言计数与提示 |
+| `docs/installation.md` | 补说明：这是旧格式提示，不是错误 |
+| CHANGELOG | 0.71.0 |
+
+**关键设计决定**
+
+1. **提示而不是错误**：旧归档能正常加载、渲染、归档；只是质量筛查缺输入。把它当 error 会让「健康」永远不成立。
+2. **计数可见**：`runs_without_metric` 与 `renders_checked` 并列，用户知道影响范围。
+3. **措辞写清「不可用」而不是「损坏」**：缺字段是格式差异，不是数据坏了。
+
+**验证证据**
+
+```bash
+python3 scripts/doctor.py --home . --as-of 2026-11-14 --renders
+# passed: true, loaded 25, without metric 25
+# warnings: ['25 archive(s) have no claim.metric blocks; quality screening is unavailable for them', ...]
+```
+
+- 真实数据根：提示与实际扫查一致。
+- 单测：健康用例断言 `runs_without_metric == 2` 与提示文本。
+- 五个示例哈希一致；冻结渲染逐字节相同。
+
+**投研意义增量**
+
+1. 「为什么质量筛查跑不了」从需要推断变成体检直接说明。
+2. 区分「格式差异」与「数据损坏」，避免用户做无谓修复。
+
+**遗留**
+
+- 只统计「全无 metric」，不统计「部分有」；混合归档不会提示。
+- 提示不区分旧格式与字段名不匹配。
+
 ## Cycle 73 · 2026-11-14 · 架构索引补全与全量验收
 
 **对应卡片**：第三次盘点后的维护项（文档完整性）

@@ -53,6 +53,8 @@ class DoctorTests(unittest.TestCase):
         self.assertEqual(summary["entities"], 2)
         self.assertEqual(summary["dated_catalysts"], 2)
         self.assertEqual(summary["overdue"], 0)
+        self.assertEqual(summary["runs_without_metric"], 2)
+        self.assertTrue(any("no claim.metric" in warning for warning in warnings))
 
     def test_overdue_catalyst_warns_but_does_not_fail(self):
         archive(self.home, watch_due="2026-11-12")

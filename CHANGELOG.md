@@ -4,6 +4,15 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.71.0 · 体检说明质量筛查不可用的归档
+
+上一轮全量扫查发现：25 个旧归档对 `quality_inputs` 全部返回「no usable claim.metric blocks」，但体检里看不出原因。
+
+- `doctor` 统计没有 `claim.metric` 的归档数（`runs_without_metric`），并在 warnings 里说明「这些归档的质量筛查不可用」；这是提示，不是错误。
+- 本机实测：`loaded 25 / without metric 25`，与扫查结果一致。
+- 测试：扩展健康用例，断言计数与提示；全套 524 个测试通过。
+- 文档：安装指南补说明。
+
 ## 0.70.1 · 架构索引补全与全量验收
 
 - 对 25 个真实归档跑了一遍跨工具扫查：渲染、memo、催化日历全部成功；`quality_inputs` 对没有 `claim.metric` 的 run 返回「no usable claim.metric blocks」，属于预期语义（退出码 1），不是故障；多窗口摘要与 `opportunities list/list --history` 均正常。
