@@ -7,6 +7,7 @@ Model arithmetic is recomputed; source meaning and assumptions still need review
 
 import argparse
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -126,6 +127,96 @@ def _same_result(actual, recorded):
     if type(actual) in (int, float):
         return type(recorded) in (int, float) and actual == recorded
     return type(actual) is type(recorded) and actual == recorded
+
+
+SCALE_WORDS = (
+    (r"trillion|\btrn\b|\btn\b|万亿", 1e12),
+    (r"billion|\bbn\b|十亿", 1e9),
+    (r"million|\bmn\b|百万", 1e6),
+    (r"thousand|\bth\b|千", 1e3),
+    (r"亿", 1e8),
+    (r"万", 1e4),
+)
+
+
+def _finite_number(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return None
+    try:
+        return value if math.isfinite(value) else None
+    except OverflowError:
+        return None
+
+
+def _scale_factor(text):
+    """Parse a scale label into a multiplier; None means 'cannot verify'."""
+    if not isinstance(text, str) or not text.strip():
+        return None
+    lowered = text.casefold()
+    for pattern, factor in SCALE_WORDS:
+        if re.search(pattern, lowered):
+            return factor
+    if re.search(r"单[位份]|\bone\b|\bunit\b|\b1\b", lowered):
+        return 1.0
+    return None
+
+
+def _metric_dimension(unit):
+    """Map a free-text metric unit to a canonical model-input dimension."""
+    if not isinstance(unit, str):
+        return None
+    text = unit.casefold().replace(" ", "")
+    if "/share" in text or "每股" in text:
+        return "currency/share"
+    if text in {"ratio", "percent", "%", "百分比", "比率"} or "ratio" in text or "percent" in text:
+        return "ratio"
+    if "share" in text or "股" in text:
+        return "shares"
+    if text == "currency" or re.search(r"usd|eur|cny|rmb|hkd|jpy|gbp|dollar|yuan|美元|人民币|港元|日元|元", text):
+        return "currency"
+    return None
+
+
+def _metric_input_errors(name, row, cids, claim_map, wrapper_scale, path):
+    """Check an observed model input against the metric block of the cited claim.
+
+    Only runs when both sides expose a parseable scale and the dimensions agree;
+    otherwise the input is reported as unverifiable by omission rather than by error.
+    """
+    errors = []
+    input_unit = row.get("unit")
+    input_value = _finite_number(row.get("value"))
+    if input_unit not in {"currency", "ratio", "shares", "currency/share"} or input_value is None:
+        return errors
+    wrapper_factor = _scale_factor(wrapper_scale) if input_unit in {"currency", "shares"} else 1.0
+    for cid in cids:
+        metric = claim_map[cid].get("metric")
+        if not isinstance(metric, dict):
+            continue
+        dimension = _metric_dimension(metric.get("unit"))
+        if dimension is None:
+            continue
+        if dimension != input_unit:
+            errors.append(path + "." + name + " unit " + str(input_unit) + " differs from the metric unit " +
+                          str(metric.get("unit")) + " of claim " + cid)
+            continue
+        metric_value = _finite_number(metric.get("value"))
+        if metric_value is None:
+            continue
+        if input_unit in {"currency", "shares"}:
+            metric_factor = _scale_factor(metric.get("scale"))
+            if wrapper_factor is None or metric_factor is None:
+                continue
+        else:
+            metric_factor = 1.0
+        expected = metric_value * metric_factor
+        actual = input_value * wrapper_factor
+        tolerance = max(1e-9 * max(abs(expected), abs(actual)), 1e-12)
+        if abs(actual - expected) > tolerance:
+            errors.append(path + "." + name + " value " + str(input_value) + " (model scale " + str(wrapper_scale) +
+                          ") differs from claim " + cid + " metric " + str(metric_value) + " " +
+                          str(metric.get("unit")) + " / " + str(metric.get("scale")))
+    return errors
 
 
 def _price_age_errors(market, market_refs, claim_map, sources, path, max_age_hours):
@@ -326,8 +417,11 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
                         errors.append(path + ".assumptions." + name + " needs a reason")
                     if any(claim_map[c].get("type") not in {"inference", "view"} for c in cids):
                         errors.append(path + "." + name + " assumption must cite inference/view claims")
-                elif value.get("role") == "observed" and any(claim_map[c].get("type") not in {"fact", "price", "consensus"} for c in cids):
-                    errors.append(path + "." + name + " observed input must cite fact/price/consensus")
+                elif value.get("role") == "observed":
+                    if any(claim_map[c].get("type") not in {"fact", "price", "consensus"} for c in cids):
+                        errors.append(path + "." + name + " observed input must cite fact/price/consensus")
+                    else:
+                        errors.extend(_metric_input_errors(name, value, cids, claim_map, model.get("scale"), path))
             if set(assumptions) != expected_assumptions:
                 errors.append(path + ".assumptions must match assumption inputs exactly")
             peers = spec.get("peers")

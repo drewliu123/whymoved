@@ -133,6 +133,8 @@ DCF的free_cash_flow为FCF0，须匹配完整年度或明确年化的基期，ye
 
 估值需正FCF、股数、价格及折现率，years为1–50整数，terminal_growth小于discount_rate。reverse_dcf增长上下界必须包住目标，否则如实报无解，不能伪造结果。金额unit固定currency，币种、缩放、期间、范围写wrapper.currency / scale / period / scope。金额和股数同一缩放（百万美元与百万股），price仍为美元/股；不混用分部利润与全公司资本支出。reverse_dcf wrapper另须instrument（如NVDA）；模型price输入value、wrapper.currency对应的每股报价unit（如USD/share）及instrument必须与所引sources.market_quote的value / unit / instrument精确一致。
 
+模型输入与metric的数值一致性：observed输入引用的claim若带`metric`块，校验会比较口径——metric.unit映射到currency / ratio / shares / currency/share，与输入unit不一致直接失败（引用了错误证据）；量纲一致时，用wrapper.scale与metric.scale的缩放倍数把两边换算到同一量级再比较，误差超过1e-9即失败。缩放文本无法解析（或任一侧缺失scale）时**跳过而不是猜**：宁可标为无法核对，也不制造假错误。price输入不走金额缩放，只比较每股数值。修正方式是对齐metric或改引正确claim，不是放宽校验。
+
 driver_build把收入拆成分部量价。spec.segments每段写name、base_revenue（基期收入）、volume_growth、price_growth（均须大于−1）、margin（段营业利润率）与claim_ids；claim_ids必须同时包含observed（fact / price / consensus，支撑基期收入）与假设（inference / view，支撑驱动），缺一边即契约失败——这是防止把没有依据的分部拆解写成精确结果。spec.inputs只有margin_delta（−1到1，assumption），表示统一的利润率冲击，wrapper.assumptions须解释它。
 
 收入恒等式：base×(1+v)(1+p)=base+volume_effect+price_effect+interaction_effect，三项效应之和在模型内部精确等于revenue_change（volume_effect=Σbase×v，price_effect=Σbase×p，interaction_effect=Σbase×v×p，不要重复计入交互项）。incremental_margin=Δprofit÷Δrevenue，收入不变时省略该输出。利润为Σ段收入×(margin+margin_delta)。

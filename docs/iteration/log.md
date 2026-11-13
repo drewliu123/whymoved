@@ -4,6 +4,54 @@
 
 ---
 
+## Cycle 22 · 2026-11-14 · 模型输入与 metric 的数值一致性
+
+**对应卡片**：P1-0c
+
+**问题**：模型 observed 输入引用 claim 时只校验类型，数值从不比对。一条「收入 1200」的 claim 可以被当成「capex 60」的证据写进模型，两边都能通过校验；这正是审计一开始指出的「数字层不可核验」的最后一环。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/analysis_contract.py` | 量纲映射（currency / ratio / shares / currency/share）、缩放解析（万/亿/千/百万/十亿/万亿等中英写法）、换算后比较（相对 1e-9）；无法解析则跳过 |
+| `tests/test_analysis_contract.py` | 4 个用例：金额匹配/数值不符/量纲不符/缩放不可解析；股本匹配与不符；每股匹配与不符 |
+| 文档 | analysis-methods 与 memo-template 补规则；CHANGELOG 0.26.0 |
+
+**关键设计决定**
+
+1. **量纲不符直接失败**：这不是数值误差，而是引用错误证据。把 ratio 当 currency 输入、把股本当金额输入，说明 claim 选错了。
+2. **缩放无法解析时跳过而不是猜**：wrapper.scale 是自由文本（「million (money and shares)」「金额百万美元」），解析不到倍数就保持通过并保持沉默。宁可少查一次，也不制造必须解释的假错误。
+3. **price 不走金额缩放**：每股价格本来就是每股口径，乘不乘金额倍数都会错；只比较原始每股数值。
+4. **只在 observed 输入触发**：assumption 输入引用的是 inference/view，本来就没有「原文数值」可比。
+5. **旧档案零影响**：没有 metric 的 claim 不触发；有 metric 但未被引用的也不触发。真实归档全部通过。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 401 tests ... OK
+```
+
+- 金额：C1 metric 100 USD million、wrapper scale million、输入 100（currency）→ 通过；把 metric 改 120 或 scale 改 thousand → 失败并给出两边数值。
+- 量纲：C1 metric unit 改成 ratio 后作为 currency 输入 → `unit currency differs from the metric unit ratio`。
+- 缩放不可解析：wrapper.scale 改成「same scale as the statement」且 metric 值明显不符 → 通过（不猜）。
+- 股本：C9 metric 10 million shares、模型 shares 输入 10 → 通过；12 → 失败。
+- 每股：P1 metric 15 USD/share、模型 price 15 → 通过；16 → 失败。
+- 冻结示例：`report.md` / `report.html` 逐字节相同；真实归档加载不受影响。
+
+**投研意义增量**
+
+1. 多一条可核实连接：模型里的每个 observed 数字第一次能和 claim.metric 对上，而不仅是「引用了一个 claim」。
+2. 多回答一类问题：「这个输入引用的证据数值真的是这个吗」。
+3. 边界更清楚：量纲错误是错误，缩放不可解析是未知——两者不混。
+
+**遗留**
+
+- metric 的 `unit` 仍是自由文本，靠关键词映射；若出现「per ADS」「per class A share」等特殊每股口径，会被跳过（无法识别）而不是误判。
+- 没有检查 metric 的期间与模型 wrapper.period 是否一致；期间是文本，需要先定义期间标签映射。
+- 缩放词表是静态的；新增写法（如「billions of dollars」）需要补正则。
+
 ## Cycle 21 · 2026-11-14 · 行业传导图
 
 **对应卡片**：P2-4（新增；目标里的「行业传导」）

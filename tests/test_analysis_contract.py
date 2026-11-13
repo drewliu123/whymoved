@@ -407,6 +407,73 @@ class AnalysisContractTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "at least one assumption input"):
             self.check(data)
 
+    def attach_metric(self, data, claim_id, **metric):
+        block = {"name": "revenue", "value": 100, "unit": "USD million", "period_type": "fy",
+                 "period_start": "2025-01-01", "period_end": "2025-12-31", "entity": "EXAMPLE",
+                 "currency": "USD", "scale": "million"}
+        block.update(metric)
+        if block.get("period_type") == "instant":
+            block.pop("period_start", None)
+        for claim in data[1]["claims"]:
+            if claim.get("id") == claim_id:
+                claim["metric"] = block
+                return
+        raise AssertionError(claim_id)
+
+    def test_model_input_metric_coherence(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "operating_bridge")
+        self.attach_metric(data, "C1")
+        self.check(data)
+        for mutate, expected in (
+            (lambda d: self.attach_metric(d, "C1", value=120), "differs from claim C1 metric"),
+            (lambda d: self.attach_metric(d, "C1", unit="ratio"), "unit currency differs from the metric unit"),
+            (lambda d: self.attach_metric(d, "C1", scale="thousand"), "differs from claim C1 metric"),
+        ):
+            bad = bundle("operating_outlook")
+            add_model(bad[0], bad[1], "operating_bridge")
+            mutate(bad)
+            with self.assertRaisesRegex(ValueError, expected):
+                self.check(bad)
+
+    def test_unparseable_scale_skips_instead_of_guessing(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "operating_bridge")
+        self.attach_metric(data, "C1", value=999999)
+        data[0]["analysis"]["models"][0]["scale"] = "same scale as the statement"
+        self.check(data)
+
+    def shares_bundle(self, metric_value):
+        data = comps_bundle()
+        ledger = data[1]
+        ledger["claims"].append({"id": "C9", "text": "虚构摊薄股本", "type": "fact",
+                                 "as_of": data[0]["as_of"], "sources": [{"source_id": "S1"}],
+                                 "metric": {"name": "shares", "value": metric_value, "unit": "million shares",
+                                            "period_type": "instant", "period_end": data[0]["as_of"],
+                                            "entity": "EXAMPLE", "scale": "million"}})
+        model = data[0]["analysis"]["models"][0]
+        model["spec"]["inputs"]["shares"]["claim_ids"] = ["C9"]
+        model["result"] = analysis_models.compute_model(model["spec"])
+        for claim in ledger["claims"]:
+            if claim.get("id") == "OM1":
+                claim["basis"].append("C9")
+        return data
+
+    def test_shares_and_per_share_coherence(self):
+        self.check(self.shares_bundle(10))
+        with self.assertRaisesRegex(ValueError, "differs from claim C9 metric"):
+            self.check(self.shares_bundle(12))
+
+        data = priced_bundle()
+        self.attach_metric(data, "P1", name="price", value=15, unit="USD/share",
+                           period_type="instant", period_end=data[0]["as_of"])
+        self.check(data)
+        bad = priced_bundle()
+        self.attach_metric(bad, "P1", name="price", value=16, unit="USD/share",
+                           period_type="instant", period_end=bad[0]["as_of"])
+        with self.assertRaisesRegex(ValueError, "differs from claim P1 metric"):
+            self.check(bad)
+
     def test_driver_build_supports_operating_outlook(self):
         data = bundle("operating_outlook")
         model = add_model(data[0], data[1], "driver_build")
