@@ -26,6 +26,14 @@ class PackagingTests(unittest.TestCase):
         self.assertIn(plugin["version"], headings)
         self.assertEqual(headings[0], plugin["version"], "newest changelog entry must match the release")
 
+    def test_script_names_do_not_shadow_the_standard_library(self):
+        """A module named like a stdlib module breaks any environment that imported it first."""
+        import sysconfig
+        stdlib = Path(sysconfig.get_paths()["stdlib"])
+        offenders = sorted(script.name for script in (ROOT / "scripts").glob("*.py")
+                           if (stdlib / script.name).exists() or (stdlib / script.stem).is_dir())
+        self.assertEqual(offenders, [], "rename these scripts; they shadow stdlib modules: %r" % (offenders,))
+
     def test_documented_entry_points_exist(self):
         architecture = (ROOT / "docs/architecture.md").read_text(encoding="utf-8")
         links = re.findall(r"\]\(\.\./(scripts/[^)]+)\)", architecture)

@@ -23,7 +23,7 @@ python3 --version
 python3 scripts/doctor.py --home "$TOUYAN_HOME"
 ```
 
-它会用当前校验器加载每个归档、重建研究记忆索引、统计催化日期，并给出可读的 errors / warnings；只读，不修复任何东西。退出码 0 健康（允许 warning）、1 至少一个归档无法加载、2 数据根或 `journal/runs` 不存在。
+它会用当前校验器加载每个归档、重建研究记忆索引、统计催化日期，并给出可读的 errors / warnings；只读，不修复任何东西。退出码 0 健康（允许 warning）、1 至少一个归档无法加载、2 数据根或 `journal/runs` 不存在。加 `--renders` 会额外用当前渲染器重渲染每个归档并与冻结的 `report.md` / `report.html` 逐字节比对，适合在升级插件后确认历史输出没有被改变。
 
 仓库内第三方 EdgarTools 源码以子模块记录。核心离线 CLI、示例和单元测试不需要初始化子模块；需要阅读该第三方源码时再运行：
 

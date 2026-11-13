@@ -6,7 +6,7 @@ archived run with the current validators, rebuilds the research-memory index,
 audits catalyst dates and reports what is missing or unreadable. It never writes
 into the data root and never fixes anything automatically.
 
-    python3 "$TY_DIR/scripts/doctor.py" [--home PATH] [--as-of DATE]
+    python3 "$TY_DIR/scripts/doctor.py" [--home PATH] [--as-of DATE] [--renders]
 
 Exit codes: 0 healthy (warnings allowed), 1 at least one archive failed to load,
 2 the data root or its journal/runs directory is missing.
@@ -29,12 +29,18 @@ def _date(value):
     return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
 
 
-def run_checks(home, as_of=None):
-    """Return (passed, summary, errors, warnings); never raises for bad archives."""
+def run_checks(home, as_of=None, renders=False):
+    """Return (passed, summary, errors, warnings); never raises for bad archives.
+
+    With renders=True every archive is re-rendered and compared with the frozen
+    report.md / report.html, so a renderer upgrade that would change historical
+    output is reported instead of trusted.
+    """
     root = Path(home).expanduser().resolve()
     summary = {"home": str(root), "runs": 0, "loaded": 0, "failed": 0,
                "skipped_manifest": 0, "entities": 0, "aliases": 0,
-               "dated_catalysts": 0, "undated_catalysts": 0, "overdue": 0}
+               "dated_catalysts": 0, "undated_catalysts": 0, "overdue": 0,
+               "renders_checked": 0}
     errors, warnings = [], []
     runs_dir = root / "journal" / "runs"
     if not runs_dir.is_dir():
@@ -54,6 +60,20 @@ def run_checks(home, as_of=None):
             errors.append(run_id + ": " + str(exc)[:240])
             continue
         summary["loaded"] += 1
+        if renders:
+            from render_report import render_html, render_markdown
+            try:
+                markdown = render_markdown(loaded["report"], loaded["claims"], loaded["sources"])
+                page = render_html(loaded["report"], loaded["claims"], loaded["sources"])
+            except Exception as exc:  # noqa: BLE001 - report every render regression
+                errors.append(run_id + ": render failed: " + str(exc)[:200])
+            else:
+                directory = Path(loaded["path"])
+                for name, rendered_text in (("report.md", markdown), ("report.html", page)):
+                    frozen = directory / name
+                    if frozen.is_file() and frozen.read_text(encoding="utf-8") != rendered_text:
+                        errors.append(run_id + ": " + name + " differs from the current renderer")
+                summary["renders_checked"] += 1
         manifest = loaded.get("manifest") or {}
         if not manifest.get("run_id"):
             summary["skipped_manifest"] += 1
@@ -96,6 +116,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--home", type=Path)
     parser.add_argument("--as-of", dest="as_of")
+    parser.add_argument("--renders", action="store_true",
+                        help="re-render each archive and compare with the frozen report.md/html")
     args = parser.parse_args()
     if args.as_of is not None and _date(args.as_of) is None:
         print(json.dumps({"passed": False, "errors": ["--as-of must be an ISO date"]}, ensure_ascii=False))
@@ -111,7 +133,7 @@ def main():
                           "errors": ["no journal/runs directory under " + str(root)], "warnings": []},
                          ensure_ascii=False, indent=2))
         return 2
-    passed, summary, errors, warnings = run_checks(home, args.as_of)
+    passed, summary, errors, warnings = run_checks(home, args.as_of, renders=args.renders)
     payload = {"passed": passed, "summary": summary, "errors": errors, "warnings": warnings}
     print(json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False))
     return 0 if passed else 1

@@ -12,6 +12,7 @@ SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 import doctor
 import research_run
+from unittest.mock import patch
 from test_analysis_contract import bundle
 
 
@@ -78,6 +79,16 @@ class DoctorTests(unittest.TestCase):
         self.assertEqual(summary["runs"], 0)
         self.assertTrue(any("no archived runs" in warning for warning in warnings))
 
+    def test_renders_check_matches_frozen_output(self):
+        archive(self.home, entity="BTC")
+        passed, summary, errors, warnings = doctor.run_checks(self.home, "2026-11-14", renders=True)
+        self.assertTrue(passed, errors)
+        self.assertEqual(summary["renders_checked"], 1)
+        with patch("render_report.render_markdown", return_value="changed by a future renderer"):
+            passed, summary, errors, warnings = doctor.run_checks(self.home, "2026-11-14", renders=True)
+        self.assertFalse(passed)
+        self.assertTrue(any("report.md differs from the current renderer" in error for error in errors), errors)
+
     def test_read_only(self):
         archive(self.home, entity="BTC")
 
@@ -115,6 +126,14 @@ class DoctorCliTests(unittest.TestCase):
             payload = json.loads(process.stdout)
             self.assertTrue(payload["passed"])
             self.assertEqual(payload["summary"]["loaded"], 1)
+
+    def test_renders_flag(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp).resolve()
+            archive(home, entity="BTC")
+            process = self.invoke("--home", str(home), "--as-of", "2026-11-14", "--renders")
+            self.assertEqual(process.returncode, 0, process.stdout + process.stderr)
+            self.assertEqual(json.loads(process.stdout)["summary"]["renders_checked"], 1)
 
     def test_default_home_comes_from_environment(self):
         with tempfile.TemporaryDirectory() as tmp:

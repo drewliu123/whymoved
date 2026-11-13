@@ -4,6 +4,53 @@
 
 ---
 
+## Cycle 52 · 2026-11-14 · 体检可选重渲染与标准库同名守卫
+
+**对应卡片**：P2-7 遗留（体检不含渲染）与 Cycle 49 遗留（标准库同名）
+
+**问题**：上一轮的「冻结渲染逐字节比对」只存在于测试里，用户升级插件后没有自查入口；而 `calendar.py` 遮蔽标准库的事故只修了当下，没有机制防止再次发生。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/doctor.py` | 新增 `--renders`：用当前渲染器重渲染每个归档并与冻结 md/html 比对；summary 增加 `renders_checked` |
+| `tests/test_doctor.py` | 2 个用例：正常重渲染通过、模拟渲染器变化被报错；CLI `--renders` |
+| `tests/test_packaging.py` | 标准库同名守卫：`scripts/*.py` 与标准库模块同名即失败 |
+| 文档 | 安装指南补 `--renders`；CHANGELOG 0.53.0 |
+
+**关键设计决定**
+
+1. **opt-in 而不是默认**：重渲染 25 个归档有成本，且大多数日常体检只关心「能不能加载」；升级后需要验证输出时再加 `--renders`。
+2. **只在冻结文件存在时比对**：极旧归档可能没有 md/html，跳过而不是报错。
+3. **错误与加载错误同列**：渲染不一致和哈希不一致一样，都是「历史输出变了」，应当同等级别展示。
+4. **命名守卫查标准库路径**：用 `sysconfig` 定位标准库目录并逐文件名比对，不维护手工黑名单；Python 3.9 没有 `stdlib_module_names`，这样写也能覆盖。
+
+**验证证据**
+
+```bash
+python3 scripts/doctor.py --home . --as-of 2026-11-14 --renders
+# passed: true, runs 25, renders_checked 25, errors []
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 497 tests ... OK
+```
+
+- 真实数据根：25 个归档全部重渲染一致。
+- 反例：patch 渲染器返回不同文本 → `report.md differs from the current renderer`，退出码非零。
+- 命名守卫：当前 `scripts/` 下无同名冲突；若重新加回 `calendar.py` 会失败。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 用户升级后可以自行验证历史报告未被改写，不必依赖开发者跑测试。
+2. 命名遮蔽从「事故后修复」变成「写入即被拦住」。
+
+**遗留**
+
+- `--renders` 只比字节，不验证 HTML 交互行为。
+- 命名守卫只查标准库，不查第三方包；后者冲突概率低但存在。
+- 体检仍不检查 `journal/work` 等临时目录。
+
 ## Cycle 51 · 2026-11-14 · 归档渲染回归与 CI 示例泛化
 
 **对应卡片**：P2-5 / CI 遗留（只测一个示例、渲染兼容无回归）
