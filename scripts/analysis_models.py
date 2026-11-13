@@ -301,6 +301,9 @@ def _calculate(kind, values, peers=None, segments=None):
         }
         if result["per_share_median"]["value"] > 0:
             result["price_vs_peer_median"] = _output(values["price"] / result["per_share_median"]["value"] - 1, "ratio")
+        implied = result["implied_multiple_at_price"]["value"]
+        below = sum(1 for multiple in multiples if multiple < implied)
+        result["implied_multiple_percentile"] = _output(below / len(multiples), "ratio")
         return result
     target = _number(values["price"] * values["shares"] + values["net_debt"], "target enterprise value")
     if target <= 0:

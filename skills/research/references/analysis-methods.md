@@ -123,7 +123,7 @@ analysis的question_kind / method / price_relevance / baseline / mechanism_chain
 | dcf | free_cash_flow: currency；growth: ratio；discount_rate: ratio；terminal_growth: ratio；years: year；net_debt: currency；shares: shares | enterprise_value、equity_value（currency）、per_share（currency/share）、terminal_value_share（ratio） |
 | reverse_dcf | free_cash_flow: currency；discount_rate: ratio；terminal_growth: ratio；years: year；net_debt: currency；shares: shares；price: currency/share；growth_low: ratio；growth_high: ratio | implied_growth（ratio），target_enterprise_value、solved_enterprise_value、residual（currency） |
 | driver_build | margin_delta: ratio；spec.segments非空 | segment_count（count）、base_revenue、revenue、revenue_change、volume_effect、price_effect、interaction_effect、base_profit、profit、profit_change（currency）；基准收入为正时revenue_growth（ratio）；收入变化非零时incremental_margin（ratio） |
-| relative_valuation | metric: currency；net_debt: currency；shares: shares；price: currency/share；spec.peers非空 | peer_count（count）、peer_multiple_min/q1/median/q3/max/mean（ratio）、implied_ev_median、implied_equity_median（currency）、per_share_median/per_share_low/per_share_high（currency/share）、implied_multiple_at_price（ratio）、可比中位隐含每股为正时price_vs_peer_median（ratio） |
+| relative_valuation | metric: currency；net_debt: currency；shares: shares；price: currency/share；spec.peers非空 | peer_count（count）、peer_multiple_min/q1/median/q3/max/mean（ratio）、implied_ev_median、implied_equity_median（currency）、per_share_median/per_share_low/per_share_high（currency/share）、implied_multiple_at_price、implied_multiple_percentile（ratio）、可比中位隐含每股为正时price_vs_peer_median（ratio） |
 
 经营桥用收入增长和利润率作桥，revenue_growth_effect是收入增长项，不自动识别纯数量效应，量价归因需额外证据。利润率接受有限数值，支持亏损、扭亏及利润率超过100%的情景；基准利润为零或负时省略profit_growth，使用绝对利润变化及桥拆解说明，避免负基数增长率误导。
 
@@ -139,7 +139,7 @@ driver_build把收入拆成分部量价。spec.segments每段写name、base_reve
 
 边界：分部相互独立，不建模共享成本、协同或分部间转移价；margin是营业利润率而不是净利率；margin_delta是统一冲击，不是分部特定情景，也不能当概率加权。敏感性扫margin_delta可以看整体利润率变化的传导，但单参数扫描仍不是联合情景。情景集：同一驱动结构可以生成bear / base / bull多个模型，各自wrapper写`scenario`（bear/base/bull）与`scenario_set`（同一共享id）。同一set须至少两个模型、含bear与bull、情景不重复、`spec.kind`一致、假设输入集合相同，且每个情景至少有一个assumption输入——否则拒绝。渲染时模型标题标注情景，附录末尾给「情景对比」表（只列各情景共有的输出）。情景之间不是概率加权：不计算期望值、不给概率、不把区间当预测。
 
-relative_valuation用一组可比公司的倍数分布给目标指标定价。spec.peers每项写name与multiple，可选note和claim_ids；claim_ids须引用fact / price / consensus证据，wrapper另写peer_set_rationale说明这批公司为什么可比（业务、规模、增长、会计口径）。模型输出peer_count、min/q1/median/q3/max/mean：n小或分布偏斜时只看中位数会高估精度，须同时报告分位与样本量。分位采用线性插值，n=1时min=median=max。再用中位倍数与四分位给隐含EV、隐含股权与隐含每股区间，并用当前价格反推implied_multiple_at_price（现价隐含多少倍）和price_vs_peer_median（相对可比中位数的溢价/折价）；后一项在可比中位隐含每股不为正时省略，避免负基数比率误导。
+relative_valuation用一组可比公司的倍数分布给目标指标定价。spec.peers每项写name与multiple，可选note和claim_ids；claim_ids须引用fact / price / consensus证据，wrapper另写peer_set_rationale说明这批公司为什么可比（业务、规模、增长、会计口径）。模型输出peer_count、min/q1/median/q3/max/mean：n小或分布偏斜时只看中位数会高估精度，须同时报告分位与样本量。分位采用线性插值，n=1时min=median=max。再用中位倍数与四分位给隐含EV、隐含股权与隐含每股区间，并用当前价格反推implied_multiple_at_price（现价隐含多少倍）、implied_multiple_percentile（现价隐含倍数在peer分布中的分位，按严格小于计算）和price_vs_peer_median（相对可比中位数的溢价/折价）；后一项在可比中位隐含每股不为正时省略，避免负基数比率误导。
 
 metric必须为正：亏损、负EBITDA或负收入不能用倍数法，应改用现金流模型或明确写model_status=missing。net_debt可为负表示净现金，shares与price须为正。目标指标与peer倍数必须同一口径：EV/EBITDA、EV/Sales对metric=EBITDA或收入并扣净债务；P/E对metric=净利润；不能用P/E乘EBITDA混用股权价值与企业价值。comps回答“相对这个可比集贵不贵”，不能证明可比集选对，也不产出目标价；样本少、可比性弱、口径不一时把限制写在相关判断旁。零或负FCF的标的可用comps估值，但仍须说明该方法何时失效。敏感性可扫metric（如指引区间两端），不能把单参数扫描当联合情景。
 

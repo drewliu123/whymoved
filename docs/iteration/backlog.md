@@ -39,7 +39,7 @@
 
 - 状态：✅ 已完成（Cycle 1，见 [log.md](log.md)）
 - 交付：`relative_valuation` 固定模型（peers 分布、隐含 EV/股权/每股区间、隐含倍数、相对中位数溢价）、契约与证据绑定、附录渲染、13 个新测试、文档与 0.7.0。
-- 遗留增强：`implied_multiple_percentile`（现价隐含倍数在 peer 分布中的分位）。
+- 遗留增强：✅ `implied_multiple_percentile` 已于 Cycle 13 补齐。
 
 ## P0-2 财务质量与法证筛查
 

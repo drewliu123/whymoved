@@ -502,6 +502,17 @@ class RelativeValuationTests(unittest.TestCase):
         self.assertEqual(result["outputs"]["peer_count"]["unit"], "count")
         self.assertEqual(result["outputs"]["per_share_median"]["unit"], "currency/share")
 
+    def percentile(self, price):
+        item = spec("relative_valuation", price=price)
+        item["peers"] = self.peers(8, 10, 12, 14)
+        return value(compute_model(item), "implied_multiple_percentile")
+
+    def test_implied_multiple_percentile(self):
+        self.assertEqual(self.percentile(15), 0.0)
+        self.assertEqual(self.percentile(98), 0.25)
+        self.assertEqual(self.percentile(111), 0.5)
+        self.assertEqual(self.percentile(200), 1.0)
+
     def test_peer_order_does_not_change_the_result(self):
         first, second = spec("relative_valuation"), spec("relative_valuation")
         first["peers"] = self.peers(14, 8, 12, 10)
