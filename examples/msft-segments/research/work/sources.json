@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "source_status": {
+    "official": {
+      "status": "ok"
+    }
+  },
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "publisher": "Microsoft",
+      "tier": "T0",
+      "published_at": "2025-07-30",
+      "retrieved_at": "2026-11-06T14:23:37Z",
+      "quote": "(In millions)\t2025\t\t2024\nProductivity and Business Processes\t\t\t\t\nRevenue\t\n$\n120,810",
+      "locator": "官方年报分部业绩表（examples/msft-cashflow evidence index 7）",
+      "origin_id": "msft-ar25-segments",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "分部收入与营业利润原始表",
+        "relevance": "direct",
+        "purpose": "分部利润归因",
+        "priority": "decisive"
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "微软 FY2025 三大分部哪一块贡献了主要营业利润增长？",
+  "type": "asset",
+  "task": "分部利润归因",
+  "entity": "Microsoft",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "区分云与生产力分部的利润增量贡献",
+  "prior_judgment": "公开叙事多强调云；这里用官方分部表检验利润增量归属",
+  "comparison": {
+    "period": "FY2025 对 FY2024",
+    "unit": "USD million",
+    "scope": "三大分部"
+  },
+  "budget": {
+    "max_queries": 2,
+    "max_followups": 0
+  },
+  "stop_condition": "分部收入与营业利润取得并可重算",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "operating_outlook",
+    "method": "driver_bridge",
+    "rationale": "用分部收入与利润率拆解营业利润增量",
+    "baseline": "FY2024 分部收入与营业利润",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "分部收入",
+      "分部利润率",
+      "营业利润",
+      "合并营业利润"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "三大分部营业利润同比增量",
+        "source": "官方年报分部表",
+        "by": "下一份年报",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "云分部增量最大"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "生产力分部增量最大"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "云分部贡献主要利润增量",
+      "discriminating_observation": "IC 营业利润增量最大"
+    },
+    {
+      "id": "H2",
+      "explanation": "生产力分部贡献主要利润增量",
+      "discriminating_observation": "PBP 营业利润增量最大"
+    }
+  ],
+  "queries": [
+    {
+      "question": "各分部收入与营业利润",
+      "query": "MSFT segment revenue operating income FY2025",
+      "source": "官方年报分部表",
+      "purpose": "区分分部贡献",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

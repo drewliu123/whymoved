@@ -120,7 +120,7 @@ def build_digest(home, as_of=None, days=30):
             lines.append("- %s（%.1f 天前）｜%s ｜ %s" % (entry.get("due", ""), -entry["days"],
                                                        entry.get("run_id") or "", _clip(entry.get("signal", ""))))
         if len(overdue) > 20:
-            lines.append("- 其余 %d 条见 calendar.py" % (len(overdue) - 20))
+            lines.append("- 其余 %d 条见 catalyst_calendar.py" % (len(overdue) - 20))
         lines.append("- 过期不等于未触发：只表示没有记录核对结果。")
     else:
         lines.append("- 没有过期未核对的催化。")

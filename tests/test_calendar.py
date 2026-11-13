@@ -120,7 +120,7 @@ class ShadowingTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp).resolve() / "report.json"
             path.write_text(json.dumps(report(watch=[watch(due="2026-12-15")])), encoding="utf-8")
-            process = subprocess.run([sys.executable, str(SCRIPTS / "calendar.py"), str(path)],
+            process = subprocess.run([sys.executable, str(SCRIPTS / "catalyst_calendar.py"), str(path)],
                                      capture_output=True, text=True)
             self.assertEqual(process.returncode, 0, process.stdout + process.stderr)
             self.assertEqual(json.loads(process.stdout)["upcoming"][0]["id"], "W1")
@@ -133,7 +133,7 @@ class CliTests(unittest.TestCase):
         return path
 
     def run_cli(self, *args):
-        return subprocess.run([sys.executable, str(SCRIPTS / "calendar.py"), *args],
+        return subprocess.run([sys.executable, str(SCRIPTS / "catalyst_calendar.py"), *args],
                               capture_output=True, text=True)
 
     def test_single_report_cli(self):

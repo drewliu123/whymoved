@@ -1,0 +1,353 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "PBP FY2024 收入 106820 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 106820,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "segment:PBP",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C2",
+      "text": "PBP FY2024 营业利润 59661 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_income",
+        "value": 59661,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "segment:PBP",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C3",
+      "text": "IC FY2024 收入 87464 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 87464,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "segment:IC",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C4",
+      "text": "IC FY2024 营业利润 37813 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_income",
+        "value": 37813,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "segment:IC",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C5",
+      "text": "MPC FY2024 收入 50838 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 50838,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "segment:MPC",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C6",
+      "text": "MPC FY2024 营业利润 11959 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_income",
+        "value": 11959,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "segment:MPC",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C7",
+      "text": "PBP FY2025 收入 120810 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 120810,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "segment:PBP",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C8",
+      "text": "PBP FY2025 营业利润 69773 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_income",
+        "value": 69773,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "segment:PBP",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C9",
+      "text": "IC FY2025 收入 106265 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 106265,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "segment:IC",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C10",
+      "text": "IC FY2025 营业利润 44589 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_income",
+        "value": 44589,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "segment:IC",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C11",
+      "text": "MPC FY2025 收入 54649 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 54649,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "segment:MPC",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "C12",
+      "text": "MPC FY2025 营业利润 14166 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_income",
+        "value": 14166,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "segment:MPC",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报分部表"
+      }
+    },
+    {
+      "id": "I-SEG",
+      "text": "官方只披露分部收入与营业利润，量价无法拆分，价增长按0处理",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "C7"
+      ]
+    },
+    {
+      "id": "O-SEG",
+      "text": "分部驱动模型在给定输入下的收入与利润合计",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "I-SEG",
+        "C1",
+        "C2",
+        "C7",
+        "C8",
+        "C3",
+        "C4",
+        "C9",
+        "C10",
+        "C5",
+        "C6",
+        "C11",
+        "C12"
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "FY2025 营业利润增量主要来自生产力与业务流程分部，而非云分部",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "C8",
+        "C10",
+        "C12",
+        "C2",
+        "C4",
+        "C6"
+      ]
+    }
+  ]
+}

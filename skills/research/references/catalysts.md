@@ -36,14 +36,14 @@
 
 ## 查询
 
-实现模块是 `scripts/catalyst_calendar.py`（避免与标准库 `calendar` 同名）；`scripts/calendar.py` 是兼容 CLI，命令不变。
+实现与 CLI 都是 `scripts/catalyst_calendar.py`；不要再使用旧名 `calendar.py`——它会遮蔽标准库的 `calendar`。
 
 ```bash
 # 扫描本机归档，看未来 30 天
-python3 "$TY_DIR/scripts/calendar.py" --home "$TY_HOME" --due 30
+python3 "$TY_DIR/scripts/catalyst_calendar.py" --home "$TY_HOME" --due 30
 
 # 指定一个已冻结报告与日历起点
-python3 "$TY_DIR/scripts/calendar.py" "$WORK/report.json" --as-of 2026-11-14 --due 14
+python3 "$TY_DIR/scripts/catalyst_calendar.py" "$WORK/report.json" --as-of 2026-11-14 --due 14
 ```
 
 输出 `{passed, as_of, as_of_text, horizon_days, upcoming, overdue, undated, notes}`：
@@ -65,5 +65,5 @@ python3 "$TY_DIR/scripts/calendar.py" "$WORK/report.json" --as-of 2026-11-14 --d
 ## 与研究流程的关系
 
 1. 计划阶段把催化写进 `watch` 或 `opportunity.triggers`，能给日期就给 `due`。
-2. 交付前用 `calendar.py` 自查一遍：近期的催化是否都在表里、有没有已经过期没核对的。
+2. 交付前用 `catalyst_calendar.py` 自查一遍：近期的催化是否都在表里、有没有已经过期没核对的。
 3. 更新研究时，先跑日历看旧触发状态，再把核对结果写进 `trigger_results`。

@@ -43,7 +43,7 @@ flowchart TD
 | [metrics.py](../scripts/metrics.py) | 可选结构化数值事实（claim.metric）的形状、期间与比较口径校验及导出 |
 | [financial_quality.py](../scripts/financial_quality.py) | 两期以上报表的利润率、现金转化、周转、资本开支与红旗筛查 |
 | [quality_inputs.py](../scripts/quality_inputs.py) | 从claim.metric装配盈利质量所需的标准化报表，保留证据引用 |
-| [catalyst_calendar.py](../scripts/catalyst_calendar.py) | 已冻结报告的催化日期汇总（upcoming / overdue / undated），只读、不监控；`scripts/calendar.py` 是兼容 CLI |
+| [catalyst_calendar.py](../scripts/catalyst_calendar.py) | 已冻结报告的催化日期汇总（upcoming / overdue / undated），只读、不监控；不与标准库 `calendar` 同名 |
 | [research_memory.py](../scripts/research_memory.py) | 跨轮次研究记忆索引与当时视角查询，只存指针、不改归档 |
 | [digest.py](../scripts/digest.py) | 多轮摘要：判断变化、窗口内研究、未来催化与过期未核对 |
 | [doctor.py](../scripts/doctor.py) | 数据根体检：归档可加载性、记忆索引、催化日期与只读保证 |

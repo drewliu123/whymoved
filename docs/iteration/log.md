@@ -4,6 +4,62 @@
 
 ---
 
+## Cycle 50 · 2026-11-14 · 第二个真实示例：分部利润归因
+
+**对应卡片**：上一轮验收遗留（把验收研究归档成示例）
+
+**问题**：第 49 轮的全链验收只存在于临时目录，无法被 CI 或读者复核。一个「能复现官方分部加总」的案例值得固化。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `examples/msft-segments/`（新） | 完整 plan/claims/sources/report + 同源 Markdown/HTML + SHA256 清单 + README |
+| `tests/test_examples.py`（新） | 2 个用例：示例逐个校验契约并重渲染比对冻结产物；清单逐文件核对 |
+| README / development | 案例入口与「新增示例」约定 |
+| CHANGELOG | 0.51.0 |
+
+**示例内容**
+
+- 12 条官方分部事实（3 分部 × 2 年 × 收入/营业利润），带 `metric`、`scope=segment:` 与期间。
+- `driver_build` 使用 `base_margin`（FY2024）与 `margin`（FY2025），重算合计收入 281,724、营业利润 128,528、变化 19,095，与官报一致。
+- 结论：利润增量第一是生产力分部（10,112），不是云（6,776）；云收入增量更大（18,801 对 13,990）。
+
+**关键设计决定**
+
+1. **示例自包含**：只用一份 T0 年报分部表作来源，不依赖旧示例的 claims；读者可以从零复算。
+2. **冻结渲染产物**：`report.md/html` 由渲染器生成并写入哈希清单，测试逐字节比对；手改产物会立刻失败。
+3. **清单相对示例根**：与 msft-cashflow 的约定一致，测试可直接按示例根解析。
+4. **量价如实留白**：官方无量价拆分，`price_growth` 显式 0 并在限制中说明，不用假设填满。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 493 tests ... OK
+python3 scripts/analysis_contract.py check --plan examples/msft-segments/research/work/plan.json \
+  --report examples/msft-segments/research/work/report.json \
+  --claims examples/msft-segments/research/work/claims.json \
+  --sources examples/msft-segments/research/work/sources.json
+```
+
+- 示例校验：两个示例（msft-cashflow、msft-segments）契约通过、重渲染与冻结产物逐字节相同。
+- 哈希：msft-segments 6 个文件全部匹配；msft-cashflow 22 个文件不变。
+- 模型：profit 128,528.00000000003、change 19,095.00000000003（浮点误差 < 1e-9）。
+- 过程摩擦：生成器最初把清单键写成工作目录相对，测试按示例根解析报错——已统一为示例根相对，与既有示例一致。
+
+**投研意义增量**
+
+1. 第二个可回归的真实案例，覆盖「分部利润归因」这一类问题。
+2. 示例本身成为「收入增速 ≠ 利润贡献」的教具。
+3. 新增示例的约定写进开发文档，后续不会靠记忆。
+
+**遗留**
+
+- 示例只有两个财年、单一公司；跨公司或多年趋势仍缺示例。
+- 没有把示例接入 CI 的独立 contract 步骤（测试已覆盖；CI 显式步骤只针对 msft-cashflow）。
+- `SHA256.json` 不含 README，改文档无需更新哈希。
+
 ## Cycle 49 · 2026-11-14 · 分部基期利润率、模块改名与全链验收
 
 **对应卡片**：真实验收的延续

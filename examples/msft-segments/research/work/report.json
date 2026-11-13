@@ -1,0 +1,436 @@
+{
+  "schema_version": 2,
+  "title": "微软 FY2025：利润增量主要来自生产力分部，不是云",
+  "question": "微软 FY2025 三大分部哪一块贡献了主要营业利润增长？",
+  "type": "asset",
+  "task": "分部利润归因",
+  "as_of": "2026-11-14T00:00:00Z",
+  "answer": {
+    "text": "按官方分部表，FY2025 营业利润同比增加 19,095 百万美元，其中生产力与业务流程 10,112、智能云 6,776、个人计算 2,207。增量最大的是生产力分部；云的收入增量更大（18,801 对 13,990），但利润增量更低，收入增速不能直接当成利润贡献。",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C12",
+      "I-JUDGE"
+    ]
+  },
+  "findings": [
+    {
+      "title": "利润增量第一是生产力分部",
+      "text": "生产力分部营业利润增加 10,112，高于智能云的 6,776。",
+      "claim_ids": [
+        "C8",
+        "C2",
+        "C10",
+        "C4"
+      ],
+      "why_it_matters": "把「云增长」直接等同于「利润增长」会高估云对合并利润的贡献。",
+      "increment": {
+        "kind": "calculation",
+        "baseline": "合并口径的现金流桥不区分分部",
+        "detail": "分部营业利润增量拆分"
+      },
+      "calculation_ids": [
+        "M1"
+      ]
+    },
+    {
+      "title": "云的收入增量更大，利润增量更小",
+      "text": "智能云收入增量 18,801，高于生产力分部的 13,990；利润增量却只有 6,776。",
+      "claim_ids": [
+        "C9",
+        "C3",
+        "C10",
+        "C4"
+      ],
+      "why_it_matters": "收入增速与利润贡献是两件事，需要分别核对。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看收入增速的判断",
+        "detail": "收入增量与利润增量方向不一致"
+      }
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "下一份年报的分部利润率",
+      "meaning": "验证生产力分部利润率能否维持",
+      "claim_ids": [
+        "C8"
+      ],
+      "due": "2027-07-30",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "官方只给分部收入与营业利润，没有量价拆分；价增长按 0 处理。",
+      "material": true,
+      "claim_ids": [
+        "I-SEG"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "分部营业利润与增量",
+      "columns": [
+        "分部",
+        "收入增量",
+        "利润增量"
+      ],
+      "units": [
+        "",
+        "百万美元",
+        "百万美元"
+      ],
+      "rows": [
+        [
+          "PBP",
+          13990,
+          10112
+        ],
+        [
+          "IC",
+          18801,
+          6776
+        ],
+        [
+          "MPC",
+          3811,
+          2207
+        ]
+      ],
+      "claim_ids": [
+        "C8",
+        "C10",
+        "C12"
+      ]
+    }
+  ],
+  "analysis": {
+    "version": 1,
+    "question_kind": "operating_outlook",
+    "method": "driver_bridge",
+    "baseline": "FY2024 分部收入与营业利润",
+    "baseline_claim_ids": [
+      "C1",
+      "C3"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "分部收入",
+      "分部利润率",
+      "营业利润",
+      "合并营业利润"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "云分部贡献主要利润增量"
+      },
+      {
+        "id": "H2",
+        "explanation": "生产力分部贡献主要利润增量"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "云分部增量最大"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "生产力分部增量最大"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "C8",
+          "C10",
+          "C12",
+          "C2",
+          "C4",
+          "C6"
+        ],
+        "interpretation": "生产力分部增量 10,112 大于云 6,776，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "下一份年报的分部利润率",
+        "by": "2027-07-30",
+        "supports_if": "生产力分部利润率维持或提升",
+        "weakens_if": "云分部利润率显著抬升并反超"
+      }
+    ],
+    "conclusion": "FY2025 合并营业利润增量主要来自生产力与业务流程分部，云分部贡献次之。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [
+      {
+        "id": "M1",
+        "instrument": "MSFT",
+        "description": "微软 FY2025 分部驱动模型",
+        "currency": "USD",
+        "scale": "million",
+        "period": "FY2024 基期至 FY2025（FY 结束于 6 月）",
+        "scope": "三大分部合并口径",
+        "assumptions": {
+          "margin_delta": "官方无分部量价拆分，统一利润率冲击设为0仅作敏感性参照"
+        },
+        "spec": {
+          "kind": "driver_build",
+          "inputs": {
+            "margin_delta": {
+              "value": 0,
+              "unit": "ratio",
+              "role": "assumption",
+              "claim_ids": [
+                "I-SEG"
+              ]
+            }
+          },
+          "segments": [
+            {
+              "name": "PBP",
+              "base_revenue": 106820,
+              "volume_growth": 0.13096798352368477,
+              "price_growth": 0,
+              "base_margin": 0.558519003931848,
+              "margin": 0.5775432497309826,
+              "claim_ids": [
+                "C1",
+                "C2",
+                "C7",
+                "C8",
+                "I-SEG"
+              ]
+            },
+            {
+              "name": "IC",
+              "base_revenue": 87464,
+              "volume_growth": 0.21495701088447827,
+              "price_growth": 0,
+              "base_margin": 0.43232644287935607,
+              "margin": 0.4196019385498518,
+              "claim_ids": [
+                "C3",
+                "C4",
+                "C9",
+                "C10",
+                "I-SEG"
+              ]
+            },
+            {
+              "name": "MPC",
+              "base_revenue": 50838,
+              "volume_growth": 0.07496360989810769,
+              "price_growth": 0,
+              "base_margin": 0.2352374208269405,
+              "margin": 0.2592179179856905,
+              "claim_ids": [
+                "C5",
+                "C6",
+                "C11",
+                "C12",
+                "I-SEG"
+              ]
+            }
+          ],
+          "sensitivity": [
+            {
+              "input": "margin_delta",
+              "values": [
+                -0.01,
+                0.01
+              ]
+            }
+          ]
+        },
+        "output_claim_ids": [
+          "O-SEG"
+        ],
+        "result": {
+          "outputs": {
+            "segment_count": {
+              "value": 3,
+              "unit": "count"
+            },
+            "base_revenue": {
+              "value": 245122.0,
+              "unit": "currency"
+            },
+            "revenue": {
+              "value": 281724.0,
+              "unit": "currency"
+            },
+            "revenue_change": {
+              "value": 36602.0,
+              "unit": "currency"
+            },
+            "volume_effect": {
+              "value": 36602.000000000015,
+              "unit": "currency"
+            },
+            "price_effect": {
+              "value": 0.0,
+              "unit": "currency"
+            },
+            "interaction_effect": {
+              "value": 0.0,
+              "unit": "currency"
+            },
+            "base_profit": {
+              "value": 109433.0,
+              "unit": "currency"
+            },
+            "profit": {
+              "value": 128528.00000000003,
+              "unit": "currency"
+            },
+            "profit_change": {
+              "value": 19095.00000000003,
+              "unit": "currency"
+            },
+            "revenue_growth": {
+              "value": 0.14932156232406713,
+              "unit": "ratio"
+            },
+            "incremental_margin": {
+              "value": 0.5216928036719313,
+              "unit": "ratio"
+            }
+          },
+          "sensitivity": [
+            {
+              "input": "margin_delta",
+              "value": -0.01,
+              "unit": "ratio",
+              "outputs": {
+                "segment_count": {
+                  "value": 3,
+                  "unit": "count"
+                },
+                "base_revenue": {
+                  "value": 245122.0,
+                  "unit": "currency"
+                },
+                "revenue": {
+                  "value": 281724.0,
+                  "unit": "currency"
+                },
+                "revenue_change": {
+                  "value": 36602.0,
+                  "unit": "currency"
+                },
+                "volume_effect": {
+                  "value": 36602.000000000015,
+                  "unit": "currency"
+                },
+                "price_effect": {
+                  "value": 0.0,
+                  "unit": "currency"
+                },
+                "interaction_effect": {
+                  "value": 0.0,
+                  "unit": "currency"
+                },
+                "base_profit": {
+                  "value": 109433.0,
+                  "unit": "currency"
+                },
+                "profit": {
+                  "value": 125710.76000000001,
+                  "unit": "currency"
+                },
+                "profit_change": {
+                  "value": 16277.76000000001,
+                  "unit": "currency"
+                },
+                "revenue_growth": {
+                  "value": 0.14932156232406713,
+                  "unit": "ratio"
+                },
+                "incremental_margin": {
+                  "value": 0.44472323916725887,
+                  "unit": "ratio"
+                }
+              }
+            },
+            {
+              "input": "margin_delta",
+              "value": 0.01,
+              "unit": "ratio",
+              "outputs": {
+                "segment_count": {
+                  "value": 3,
+                  "unit": "count"
+                },
+                "base_revenue": {
+                  "value": 245122.0,
+                  "unit": "currency"
+                },
+                "revenue": {
+                  "value": 281724.0,
+                  "unit": "currency"
+                },
+                "revenue_change": {
+                  "value": 36602.0,
+                  "unit": "currency"
+                },
+                "volume_effect": {
+                  "value": 36602.000000000015,
+                  "unit": "currency"
+                },
+                "price_effect": {
+                  "value": 0.0,
+                  "unit": "currency"
+                },
+                "interaction_effect": {
+                  "value": 0.0,
+                  "unit": "currency"
+                },
+                "base_profit": {
+                  "value": 109433.0,
+                  "unit": "currency"
+                },
+                "profit": {
+                  "value": 131345.24000000002,
+                  "unit": "currency"
+                },
+                "profit_change": {
+                  "value": 21912.24000000002,
+                  "unit": "currency"
+                },
+                "revenue_growth": {
+                  "value": 0.14932156232406713,
+                  "unit": "ratio"
+                },
+                "incremental_margin": {
+                  "value": 0.5986623681766029,
+                  "unit": "ratio"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "model_status": "computed",
+    "model_reason": "分部收入、利润率与基期利润率均有官方披露，可确定性重算",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题只做分部利润归因，不判断价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}
