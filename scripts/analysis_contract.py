@@ -19,6 +19,7 @@ METHODS = {
     "theme_transmission": {"method": "transmission_bottleneck", "inputs": ["demand_to_cash_chain", "cancellation_and_delivery", "profit_capture"], "test": True, "models": []},
     "commitment_check": {"method": "commitment_reconciliation", "inputs": ["dated_commitment", "conditions_and_authority", "observed_action"], "test": False, "models": []},
 }
+SCENARIOS = {"bear", "base", "bull"}
 MODEL_KINDS = {"operating_bridge", "free_cash_flow", "dcf", "reverse_dcf", "relative_valuation", "driver_build"}
 IDENTIFIER = re.compile(r"^[A-Za-z][A-Za-z0-9_.-]*$")
 
@@ -277,6 +278,7 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
         errors.append("analysis.models must be a list")
         models = []
     model_ids, kinds = set(), set()
+    scenario_models = {}
     for n, model in enumerate(models):
         path = "analysis.models[%d]" % n
         if not isinstance(model, dict):
@@ -287,6 +289,15 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
             errors.append(path + ".id must be unique and safe")
         else:
             model_ids.add(mid)
+        scenario = model.get("scenario")
+        scenario_set = model.get("scenario_set")
+        if scenario is not None or scenario_set is not None:
+            if not isinstance(scenario, str) or scenario not in SCENARIOS:
+                errors.append(path + ".scenario must be bear, base or bull")
+            elif not _id(scenario_set):
+                errors.append(path + ".scenario_set must be a safe id shared by the scenario models")
+            else:
+                scenario_models.setdefault(scenario_set, []).append((mid, scenario, model))
         for key in ("description", "currency", "scale", "period", "scope"):
             if not _text(model.get(key)):
                 errors.append(path + "." + key + " is required (currency and shares use the same scale)")
@@ -464,6 +475,36 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
                             errors.append(tpath + ".low and .high must be numbers")
                         elif low == high:
                             errors.append(tpath + " requires two different values")
+    for set_id, members in scenario_models.items():
+        if len(members) < 2:
+            errors.append("analysis model scenario_set " + set_id + " needs at least two models")
+            continue
+        names = [scenario for _, scenario, _ in members]
+        if len(set(names)) != len(names):
+            errors.append("analysis model scenario_set " + set_id + " duplicates a scenario")
+        if "bear" not in names or "bull" not in names:
+            errors.append("analysis model scenario_set " + set_id + " must include bear and bull")
+        kinds_in_set = set()
+        for _, _, model in members:
+            spec = model.get("spec")
+            if isinstance(spec, dict) and isinstance(spec.get("kind"), str):
+                kinds_in_set.add(spec["kind"])
+        if len(kinds_in_set) > 1:
+            errors.append("analysis model scenario_set " + set_id + " must share one model kind")
+        assumption_sets = []
+        for _, _, model in members:
+            spec = model.get("spec")
+            inputs = spec.get("inputs") if isinstance(spec, dict) else None
+            names_with_role = set()
+            if isinstance(inputs, dict):
+                for name, value in inputs.items():
+                    if isinstance(value, dict) and value.get("role") == "assumption":
+                        names_with_role.add(name)
+            if not names_with_role:
+                errors.append("analysis model scenario_set " + set_id + " requires at least one assumption input per scenario")
+            assumption_sets.append(names_with_role)
+        if assumption_sets and any(item != assumption_sets[0] for item in assumption_sets):
+            errors.append("analysis model scenario_set " + set_id + " must share the same assumption inputs")
     model_status = analysis.get("model_status")
     if not isinstance(model_status, str) or model_status not in {"computed", "missing", "not_applicable"}:
         errors.append("analysis.model_status must be computed/missing/not_applicable")

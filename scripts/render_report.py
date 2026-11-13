@@ -575,7 +575,10 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
         yield ("p", "支持：" + ", ".join(test["supports"]) + "；削弱：" + ", ".join(test["weakens"]))
         yield ("p", "下一观察：" + test["next_observation"] + "；时间/触发：" + test["by"] + "；支持条件：" + test["supports_if"] + "；削弱条件：" + test["weakens_if"])
     for model in analysis["models"]:
-        yield ("h3", model["description"])
+        heading = model["description"]
+        if model.get("scenario") in {"bear", "base", "bull"}:
+            heading = "[情景 " + model["scenario"] + "] " + heading
+        yield ("h3", heading)
         yield ("p", "模型：" + model["spec"]["kind"] + "；币种：" + model["currency"] + "；金额与股数共同缩放：" + model["scale"] + "；期间：" + model["period"] + "；范围：" + model["scope"])
         peers = model["spec"].get("peers")
         if peers:
@@ -608,6 +611,28 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
                                        row["high_output"]["value"], row["swing"]] for row in tornado_rows],
                              "claim_ids": model["output_claim_ids"]})
             yield ("p", "龙卷风逐项移动一个输入，不是联合情景；变动幅度是同一输出在两端之差。")
+    scenario_sets = {}
+    for model in analysis["models"]:
+        if isinstance(model, dict) and model.get("scenario") in {"bear", "base", "bull"} \
+                and isinstance(model.get("scenario_set"), str):
+            scenario_sets.setdefault(model["scenario_set"], []).append(model)
+    order = {"bear": 0, "base": 1, "bull": 2}
+    for set_id, members in scenario_sets.items():
+        members = sorted(members, key=lambda item: order.get(item.get("scenario"), 9))
+        outputs = [set(member["result"]["outputs"]) for member in members]
+        common = set.intersection(*outputs) if outputs else set()
+        columns = [name for name in members[0]["result"]["outputs"] if name in common]
+        if not columns:
+            continue
+        rows = [[member["scenario"]] + [member["result"]["outputs"][name]["value"] for name in columns]
+                for member in members]
+        claim_ids = list(dict.fromkeys(cid for member in members for cid in member.get("output_claim_ids", [])))
+        yield ("h3", "情景对比：" + set_id)
+        yield ("table", {"title": "情景输出对照",
+                         "columns": ["情景"] + [name + "（" + members[0]["result"]["outputs"][name]["unit"] + "）"
+                                                for name in columns],
+                         "rows": rows, "claim_ids": claim_ids})
+        yield ("p", "情景之间不是概率加权：不计算期望值、不给概率，也不把区间当作预测。")
     yield ("p", "固定模型的数值已重算；来源含义、假设合理性与因果解释仍需研究审查。敏感性结果不是统计置信区间。")
 
 

@@ -75,6 +75,17 @@ def summary_bundle():
     return report, ledger, sources, plan
 
 
+def scenario_bundle():
+    report, ledger, sources, plan = bundle("operating_outlook")
+    bear = add_model(report, ledger, "operating_bridge", model_id="M1")
+    bull = add_model(report, ledger, "operating_bridge", model_id="M2")
+    bear.update(scenario="bear", scenario_set="S1")
+    bull.update(scenario="bull", scenario_set="S1")
+    bull["spec"]["inputs"]["scenario_margin"]["value"] = .3
+    bull["result"] = analysis_models.compute_model(bull["spec"])
+    return report, ledger, sources, plan
+
+
 class AnalysisContractTests(unittest.TestCase):
     def check(self, data):
         research_run._validate_bundle(*data, require_analysis=True)
@@ -341,6 +352,59 @@ class AnalysisContractTests(unittest.TestCase):
         model["result"] = analysis_models.compute_model(model["spec"])
         model["result"]["tornado"][0]["swing"] = 999
         with self.assertRaisesRegex(ValueError, "recomputation"):
+            self.check(data)
+
+    def test_scenario_set_requires_bear_and_bull_and_renders(self):
+        data = scenario_bundle()
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            for word in ("[情景 bear]", "[情景 bull]", "情景对比：S1", "情景输出对照", "不是概率加权"):
+                self.assertIn(word, text)
+
+    def test_scenario_set_failures(self):
+        def mutate(fn):
+            data = scenario_bundle()
+            fn(data[0]["analysis"]["models"])
+            return data
+        cases = [
+            lambda models: models[0].update(scenario="sideways"),
+            lambda models: models[1].pop("scenario_set"),
+            lambda models: models[0].pop("scenario"),
+            lambda models: models[1].update(scenario="bear"),
+            lambda models: models[1].update(scenario="base"),
+            lambda models: models[0].update(scenario_set="S2"),
+            lambda models: (models[1].update(scenario_set="S2"), models[0].update(scenario_set="S3")),
+        ]
+        for fn in cases:
+            data = mutate(fn)
+            with self.assertRaises(ValueError):
+                self.check(data)
+
+    def test_scenario_set_must_share_kind_and_assumptions(self):
+        data = scenario_bundle()
+        other = add_model(data[0], data[1], "dcf", model_id="M3")
+        other.update(scenario="base", scenario_set="S1")
+        with self.assertRaisesRegex(ValueError, "share one model kind"):
+            self.check(data)
+
+        data = scenario_bundle()
+        bull = data[0]["analysis"]["models"][1]
+        bull["spec"]["inputs"]["revenue_growth"] = {"value": .3, "unit": "ratio", "role": "observed", "claim_ids": ["C1"]}
+        bull["assumptions"].pop("revenue_growth")
+        with self.assertRaisesRegex(ValueError, "same assumption inputs"):
+            self.check(data)
+
+        data = scenario_bundle()
+        model = data[0]["analysis"]["models"][0]
+        model.pop("scenario")
+        model.pop("scenario_set")
+        for name, value in (("revenue_growth", .3), ("scenario_margin", .15), ("base_margin", .2)):
+            model["spec"]["inputs"][name] = {"value": value, "unit": "ratio", "role": "observed", "claim_ids": ["C1"]}
+        model["assumptions"] = {}
+        model["result"] = analysis_models.compute_model(model["spec"])
+        model.update(scenario="bear", scenario_set="S1")
+        with self.assertRaisesRegex(ValueError, "at least one assumption input"):
             self.check(data)
 
     def test_driver_build_supports_operating_outlook(self):

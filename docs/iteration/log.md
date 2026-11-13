@@ -4,6 +4,53 @@
 
 ---
 
+## Cycle 11 · 2026-11-14 · 情景集（bear / base / bull）
+
+**对应卡片**：P1-3 的后半
+
+**问题**：研究人员需要三个情景时，只能建三个互不相干的模型：结构可以悄悄不一致（一个用 DCF、一个用经营桥），假设集合不同，也没有并排对比。读者看到的是三张附录表，不是一组情景。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/analysis_contract.py` | 可选 wrapper 字段 `scenario`（bear/base/bull）与 `scenario_set`；同 set 须≥2模型、含bear与bull、情景不重复、kind一致、假设输入集合一致、每情景至少一个 assumption |
+| `scripts/render_report.py` | 模型标题标注情景；附录末尾新增「情景对比」表（共有输出），注明不做概率加权 |
+| `tests/test_analysis_contract.py` | 4 个用例：正向渲染、结构失败、kind/假设不一致、零假设输入 |
+| 文档 | analysis-methods / memo-template / SKILL；CHANGELOG 0.16.0 |
+
+**关键设计决定**
+
+1. **必须含 bear 与 bull**：只有 base+bear 的「情景集」通常意味着缺一个上行情形，会系统性偏空；契约直接要求两头。
+2. **同一 set 必须同 kind 且同假设输入集合**：否则所谓情景只是三份不同研究拼在一起，对比表没有意义。
+3. **每个情景至少一个 assumption 输入**：全 observed 的模型没有情景自由度，应作为基准记录而不是情景。
+4. **对比表只列共有输出**：条件输出（如基准利润为负时省略的 profit_growth）不会强行补位；缺列比造假好。
+5. **不做概率加权**：没有概率、没有期望值、没有区间当作预测——与仓库一贯的「不制造精确性」一致。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 322 tests ... OK
+```
+
+- 正向：两个 operating_bridge 情景（bear margin 15%、bull margin 30%）通过契约，渲染出现 `[情景 bear]`、`[情景 bull]`、「情景对比：S1」、「情景输出对照」，并注明「不是概率加权」。
+- 负例：scenario 取值非法、缺 scenario_set、有 set 无 scenario、重复 bear、缺 bull、跨 set 混用、kind 不一致、假设集合不一致、全部 observed 全部拒绝。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 多一种分析表达：从「三个孤立模型」到「一组可比较情景」。
+2. 多回答一类问题：「熊市与牛市假设差在哪个驱动上，结果差多少」。
+3. 多一条可核实连接：情景对比的每个数字来自各自冻结模型输出。
+4. 边界更清楚：不做概率加权，不把情景区间当预测。
+
+**遗留**
+
+- 情景驱动目前是各模型独立填写；没有「共享 driver set」对象来强制同源假设值（只能靠假设输入名一致 + 人工核对数值）。
+- 对比表不显示每个情景的关键假设值，读者需要回到各模型表。
+- 与 tornado 的组合使用（每个情景内部再来一张龙卷风）尚未写成推荐范式。
+
 ## Cycle 10 · 2026-11-14 · 龙卷风敏感性
 
 **对应卡片**：P1-3 的前半（情景集仍未做）

@@ -91,7 +91,7 @@
 
 ## P1-1 一致预期序列、修订与指引 vs 实际
 
-- 状态：待认领（数据受限）
+- 状态：待认领（下一轮；数据受限，字段默认 missing）
 - 方案：(a) consensus claim 加 `series {series_id, metric, target_period, provider, n, median, low, high, as_of}`，用 P0-0a 的 growth 算子算修订；(b) claim 加 `guidance {metric, target_period, midpoint, range, as_of, company_guidance: true}`，契约硬规则：**指引永远不能充当 consensus**；(c) 渲染「预期 vs 实际 vs 修订」小表。
 - 风险：数据在付费墙后，做成字段后长期为空 → 要求 provider + n + method 三件套；`missing` 为默认；禁止拿分析师目标价当 consensus。
 
@@ -104,7 +104,8 @@
 
 ## P1-3 情景集 + 龙卷风敏感性
 
-- 状态：龙卷风 ✅ 已完成（Cycle 10）；情景集待认领（下一轮）
+- 状态：✅ 已完成（龙卷风 Cycle 10；情景集 Cycle 11）
+- 遗留：共享 driver set 对象；对比表展示关键假设值。
 - 方案：允许 N 个同 kind 模型带 `scenario: bear|base|bull` 并共享 driver-set id；契约要求至少一上一下、输入全为 assumption；`sensitivity_mode: tornado` 输出按影响幅度排序。两者都**不给概率**；≤4 个情景；图注写明各输入独立假设。
 
 ## P1-4 块级渲染 / IC memo 包
@@ -143,7 +144,7 @@
 
 ## 已完成
 
-- P1-3a 龙卷风敏感性 — 2026-11-14，Cycle 10
+- P1-3 情景集 + 龙卷风敏感性 — 2026-11-14，Cycle 10–11
 - P1-2 价格时效与来源冲突 — 2026-11-14，Cycle 9
 - P0-6 跨轮研究记忆 — 2026-11-14，Cycle 8
 - P0-5 催化日历 — 2026-11-14，Cycle 7
