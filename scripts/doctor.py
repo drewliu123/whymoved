@@ -73,7 +73,7 @@ def run_checks(home, as_of=None):
             warnings.append("memory index skipped %d archive(s)" % len(index["skipped"]))
     except FileNotFoundError:
         warnings.append("memory index unavailable: journal/runs missing")
-    import calendar as calendar_tool
+    import catalyst_calendar as calendar_tool
     for run_id, report in catalogs:
         for entry in calendar_tool.extract_entries(report, run_id, run_id):
             due = _date(entry.get("due"))

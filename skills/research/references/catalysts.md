@@ -36,6 +36,8 @@
 
 ## 查询
 
+实现模块是 `scripts/catalyst_calendar.py`（避免与标准库 `calendar` 同名）；`scripts/calendar.py` 是兼容 CLI，命令不变。
+
 ```bash
 # 扫描本机归档，看未来 30 天
 python3 "$TY_DIR/scripts/calendar.py" --home "$TY_HOME" --due 30

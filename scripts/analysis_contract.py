@@ -544,6 +544,8 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
                                 errors.append(seg_path + "." + field + " must be greater than -1")
                         if type(segment.get("margin")) not in (int, float):
                             errors.append(seg_path + ".margin must be numeric")
+                        if "base_margin" in segment and type(segment.get("base_margin")) not in (int, float):
+                            errors.append(seg_path + ".base_margin must be numeric when present")
                         seg_refs = refs(segment.get("claim_ids"), seg_path + ".claim_ids")
                         claim_types = {claim_map[c].get("type") for c in seg_refs}
                         if not claim_types & {"fact", "price", "consensus"}:

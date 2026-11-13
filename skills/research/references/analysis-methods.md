@@ -135,9 +135,9 @@ DCF的free_cash_flow为FCF0，须匹配完整年度或明确年化的基期，ye
 
 模型输入与metric的数值一致性：observed输入引用的claim若带`metric`块，校验会比较口径——metric.unit映射到currency / ratio / shares / currency/share，与输入unit不一致直接失败（引用了错误证据）；量纲一致时，用wrapper.scale与metric.scale的缩放倍数把两边换算到同一量级再比较，误差超过1e-9即失败。缩放文本无法解析（或任一侧缺失scale）时**跳过而不是猜**：宁可标为无法核对，也不制造假错误。price输入不走金额缩放，只比较每股数值。修正方式是对齐metric或改引正确claim，不是放宽校验。
 
-driver_build把收入拆成分部量价。spec.segments每段写name、base_revenue（基期收入）、volume_growth、price_growth（均须大于−1）、margin（段营业利润率）与claim_ids；claim_ids必须同时包含observed（fact / price / consensus，支撑基期收入）与假设（inference / view，支撑驱动），缺一边即契约失败——这是防止把没有依据的分部拆解写成精确结果。spec.inputs只有margin_delta（−1到1，assumption），表示统一的利润率冲击，wrapper.assumptions须解释它。
+driver_build把收入拆成分部量价。spec.segments每段写name、base_revenue（基期收入）、volume_growth、price_growth（均须大于−1）、margin（情景段营业利润率）与可选base_margin（基期段营业利润率）及claim_ids；给了base_margin时基期利润按基期利润率计算，利润变化与增量利润率才有意义；不给时基期利润沿用情景利润率（向后兼容）。claim_ids必须同时包含observed（fact / price / consensus，支撑基期收入）与假设（inference / view，支撑驱动），缺一边即契约失败——这是防止把没有依据的分部拆解写成精确结果。spec.inputs只有margin_delta（−1到1，assumption），表示统一的利润率冲击，wrapper.assumptions须解释它。
 
-收入恒等式：base×(1+v)(1+p)=base+volume_effect+price_effect+interaction_effect，三项效应之和在模型内部精确等于revenue_change（volume_effect=Σbase×v，price_effect=Σbase×p，interaction_effect=Σbase×v×p，不要重复计入交互项）。incremental_margin=Δprofit÷Δrevenue，收入不变时省略该输出。利润为Σ段收入×(margin+margin_delta)。
+收入恒等式：base×(1+v)(1+p)=base+volume_effect+price_effect+interaction_effect，三项效应之和在模型内部精确等于revenue_change（volume_effect=Σbase×v，price_effect=Σbase×p，interaction_effect=Σbase×v×p，不要重复计入交互项）。incremental_margin=Δprofit÷Δrevenue，收入不变时省略该输出。利润为Σ段收入×(margin+margin_delta)；基期利润为Σ基期收入×(base_margin，缺省用margin)。
 
 边界：分部相互独立，不建模共享成本、协同或分部间转移价；margin是营业利润率而不是净利率；margin_delta是统一冲击，不是分部特定情景，也不能当概率加权。敏感性扫margin_delta可以看整体利润率变化的传导，但单参数扫描仍不是联合情景。情景集：同一驱动结构可以生成bear / base / bull多个模型，各自wrapper写`scenario`（bear/base/bull）与`scenario_set`（同一共享id）。同一set须至少两个模型、含bear与bull、情景不重复、`spec.kind`一致、假设输入集合相同，且每个情景至少有一个assumption输入——否则拒绝。渲染时模型标题标注情景，附录末尾给「情景对比」表（只列各情景共有的输出）。情景之间不是概率加权：不计算期望值、不给概率、不把区间当预测。
 

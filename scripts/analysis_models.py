@@ -153,7 +153,7 @@ def _segment_rows(spec):
     for n, segment in enumerate(segments):
         label = "segments[%d]" % n
         _fields(segment, ("name", "base_revenue", "volume_growth", "price_growth", "margin"),
-                ("claim_ids",), label)
+                ("claim_ids", "base_margin"), label)
         name = segment["name"]
         if not isinstance(name, str) or not name.strip():
             raise ValueError(label + ".name must be nonempty text")
@@ -171,12 +171,15 @@ def _segment_rows(spec):
         if price <= -1:
             raise ValueError(label + ".price_growth must be greater than -1")
         margin = _number(segment["margin"], label + ".margin")
+        base_margin = _number(segment["base_margin"], label + ".base_margin") if "base_margin" in segment else None
         claim_ids = segment.get("claim_ids")
         if claim_ids is not None and (not isinstance(claim_ids, list) or any(
                 not isinstance(item, str) or not item.strip() for item in claim_ids)):
             raise ValueError(label + ".claim_ids must be a list of nonempty strings")
         row = {"name": name.strip(), "base_revenue": base, "volume_growth": volume,
                "price_growth": price, "margin": margin}
+        if base_margin is not None:
+            row["base_margin"] = base_margin
         if claim_ids is not None:
             row["claim_ids"] = list(claim_ids)
         rows.append(row)
@@ -253,7 +256,8 @@ def _calculate(kind, values, peers=None, segments=None):
         price_effect = math.fsum(segment["base_revenue"] * segment["price_growth"] for segment in segments)
         interaction_effect = math.fsum(segment["base_revenue"] * segment["volume_growth"] * segment["price_growth"]
                                        for segment in segments)
-        base_profit = math.fsum(segment["base_revenue"] * segment["margin"] for segment in segments)
+        base_profit = math.fsum(segment["base_revenue"] * segment.get("base_margin", segment["margin"])
+                               for segment in segments)
         profit = math.fsum(segment["base_revenue"] * (1 + segment["volume_growth"]) *
                            (1 + segment["price_growth"]) * (segment["margin"] + delta) for segment in segments)
         revenue_change = revenue - base_revenue

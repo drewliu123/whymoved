@@ -436,6 +436,24 @@ class DriverBuildTests(unittest.TestCase):
         self.assertEqual(value(result, "revenue_growth"), 0)
         self.assertAlmostEqual(value(result, "profit"), 20)
 
+    def test_base_margin_separates_base_and_scenario_profit(self):
+        item = spec("driver_build")
+        item["segments"][0]["base_margin"] = 0.15
+        item["segments"][1]["base_margin"] = 0.05
+        result = compute_model(item)
+        self.assertAlmostEqual(value(result, "base_profit"), 100 * 0.15 + 50 * 0.05)
+        self.assertAlmostEqual(value(result, "profit"), 161.4 * 0 + 115.5 * 0.2 + 45.9 * 0.1, places=9)
+        self.assertAlmostEqual(value(result, "profit_change"),
+                               value(result, "profit") - value(result, "base_profit"), places=9)
+        plain = compute_model(spec("driver_build"))
+        self.assertAlmostEqual(value(plain, "base_profit"), 100 * 0.2 + 50 * 0.1)
+
+    def test_base_margin_must_be_numeric(self):
+        item = spec("driver_build")
+        item["segments"][0]["base_margin"] = "0.2"
+        with self.assertRaises(ValueError):
+            compute_model(item)
+
     def test_negative_segment_margin_is_allowed(self):
         item = spec("driver_build")
         item["segments"] = [{"name": "growth", "base_revenue": 100, "volume_growth": 0.5,
@@ -614,12 +632,15 @@ class RealDataTests(unittest.TestCase):
                 "inputs": {"margin_delta": {"value": 0, "unit": "ratio", "role": "assumption", "claim_ids": ["A1"]}},
                 "segments": [{"name": now["segment"], "base_revenue": before["revenue"],
                               "volume_growth": now["revenue"] / before["revenue"] - 1, "price_growth": 0,
+                              "base_margin": before["operating_income"] / before["revenue"],
                               "margin": now["operating_income"] / now["revenue"], "claim_ids": ["C1", "A1"]}
                              for before, now in zip(segments["FY2024"], segments["FY2025"])],
                 "sensitivity": [{"input": "margin_delta", "values": [-0.01, 0.01]}]}
         outputs = compute_model(spec)["outputs"]
         self.assertAlmostEqual(outputs["revenue"]["value"], current_revenue, places=6)
         self.assertAlmostEqual(outputs["profit"]["value"], current_profit, places=6)
+        self.assertAlmostEqual(outputs["profit_change"]["value"],
+                               current_profit - periods[0]["operating_profit"], places=6)
         self.assertAlmostEqual(outputs["revenue_growth"]["value"], current_revenue / periods[0]["revenue"] - 1, places=9)
         self.assertGreater(outputs["incremental_margin"]["value"], 0)
 

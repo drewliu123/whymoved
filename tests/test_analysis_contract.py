@@ -592,6 +592,24 @@ class AnalysisContractTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.check(data)
 
+    def test_base_margin_renders_and_validates(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "driver_build")
+        model = data[0]["analysis"]["models"][0]
+        for segment in model["spec"]["segments"]:
+            segment["base_margin"] = segment["margin"] - 0.02
+        model["result"] = analysis_models.compute_model(model["spec"])
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            self.assertIn("基期利润率", text)
+            self.assertIn("情景利润率", text)
+        bad = bundle("operating_outlook")
+        add_model(bad[0], bad[1], "driver_build")
+        bad[0]["analysis"]["models"][0]["spec"]["segments"][0]["base_margin"] = "0.2"
+        with self.assertRaises(ValueError):
+            self.check(bad)
+
     def test_segments_are_rejected_outside_driver_build(self):
         data = bundle("operating_outlook")
         add_model(data[0], data[1], "operating_bridge")

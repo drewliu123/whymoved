@@ -36,7 +36,7 @@ def _clip(value, limit=180):
 
 def build_digest(home, as_of=None, days=30):
     """Return Markdown digest text; raises ValueError for unusable input."""
-    import calendar as calendar_tool
+    import catalyst_calendar as calendar_tool
     import research_memory
     origin = _date(as_of) if as_of else datetime.now(timezone.utc)
     if origin is None:

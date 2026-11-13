@@ -9,7 +9,7 @@ from pathlib import Path
 
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
-import calendar as cal
+import catalyst_calendar as cal
 
 
 def report(as_of="2026-11-14T00:00:00Z", triggers=None, watch=None):
@@ -103,6 +103,27 @@ class ExtractionTests(unittest.TestCase):
         result = cal.build_calendar([("r.json", None, report(triggers=[trigger(due="2026-12-09")]))], None)
         self.assertEqual(result["undated"][0]["days_from_as_of"], None)
         self.assertTrue(result["notes"])
+
+
+class ShadowingTests(unittest.TestCase):
+    def test_stdlib_calendar_preloaded_does_not_break_imports(self):
+        """A stdlib `calendar` already in sys.modules must not shadow our module."""
+        process = subprocess.run(
+            [sys.executable, "-c",
+             "import calendar, sys; sys.path.insert(0, 'scripts'); import render_report; "
+             "print('ok')"],
+            cwd=str(SCRIPTS.parent), capture_output=True, text=True)
+        self.assertEqual(process.returncode, 0, process.stderr)
+        self.assertIn("ok", process.stdout)
+
+    def test_cli_shim_still_works(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp).resolve() / "report.json"
+            path.write_text(json.dumps(report(watch=[watch(due="2026-12-15")])), encoding="utf-8")
+            process = subprocess.run([sys.executable, str(SCRIPTS / "calendar.py"), str(path)],
+                                     capture_output=True, text=True)
+            self.assertEqual(process.returncode, 0, process.stdout + process.stderr)
+            self.assertEqual(json.loads(process.stdout)["upcoming"][0]["id"], "W1")
 
 
 class CliTests(unittest.TestCase):

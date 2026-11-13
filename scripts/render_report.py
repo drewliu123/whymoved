@@ -412,7 +412,7 @@ def validate_report(report, ledger, sources=None):
         errors.extend("transmission: " + error for error in validate_transmission(report["transmission"], claims))
     errors.extend(_quality_errors(report, claims))
     errors.extend(_event_study_errors(report, claims))
-    from calendar import validate_report_catalysts
+    from catalyst_calendar import validate_report_catalysts
     errors.extend(validate_report_catalysts(report))
     from opportunity_contract import validate_opportunity
     errors.extend(validate_opportunity(report, claims))
@@ -993,9 +993,18 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
         segments = model["spec"].get("segments")
         if segments:
             segment_claims = list(dict.fromkeys(cid for segment in segments for cid in segment.get("claim_ids", [])))
-            yield ("table", {"title": "分部驱动", "columns": ["分部", "基期收入", "量增长", "价增长", "利润率"],
-                             "rows": [[segment["name"], segment["base_revenue"], segment["volume_growth"],
-                                       segment["price_growth"], segment["margin"]] for segment in segments],
+            has_base_margin = any("base_margin" in segment for segment in segments)
+            columns = ["分部", "基期收入", "量增长", "价增长"]
+            columns += ["基期利润率", "情景利润率"] if has_base_margin else ["利润率"]
+            rows = []
+            for segment in segments:
+                row = [segment["name"], segment["base_revenue"], segment["volume_growth"], segment["price_growth"]]
+                if has_base_margin:
+                    row += [segment.get("base_margin", "—"), segment["margin"]]
+                else:
+                    row.append(segment["margin"])
+                rows.append(row)
+            yield ("table", {"title": "分部驱动", "columns": columns, "rows": rows,
                              "claim_ids": segment_claims})
         yield ("table", {"title": "观察值与假设", "columns": ["变量", "数值", "单位", "性质", "假设理由"],
                          "rows": [[name, v["value"], v["unit"], v["role"], model["assumptions"].get(name, "")] for name, v in model["spec"]["inputs"].items()],

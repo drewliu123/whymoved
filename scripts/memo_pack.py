@@ -89,7 +89,7 @@ def _valuation(report):
 
 
 def _catalysts(report):
-    from calendar import extract_entries
+    from catalyst_calendar import extract_entries
     rows = []
     for entry in extract_entries(report):
         if not entry.get("due"):
