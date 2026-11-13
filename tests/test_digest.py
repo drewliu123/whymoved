@@ -47,6 +47,19 @@ class DigestTests(unittest.TestCase):
         self.assertIn("本窗口 1 轮", text)
         self.assertNotIn("首轮BTC", text.split("## 未来 30 天的催化")[0])
 
+    def test_same_question_runs_are_grouped(self):
+        write_run(self.home, "R20261111T000000Z-eeeeeeeeeeee", as_of="2026-11-11T00:00:00Z",
+                  title="BTC 重跑一", question="BTC 怎么看", entity="BTC", judgment="偏多")
+        write_run(self.home, "R20261112T000000Z-ffffffffffff", as_of="2026-11-12T00:00:00Z",
+                  title="BTC 重跑二", question="BTC 怎么看", entity="BTC", judgment="偏空")
+        text = self.digest()
+        self.assertIn("同题 3 轮", text)
+        self.assertIn("结论版本 3 个", text)
+        self.assertIn("BTC 重跑二", text)
+        self.assertIn("判断：偏空", text)
+        self.assertNotIn("判断：偏多", text, "older runs of the same question collapse into the newest line")
+        self.assertIn("重复实验不等于多次独立验证", text)
+
     def test_upcoming_and_overdue_catalysts(self):
         write_run(self.home, "R20261112T000000Z-dddddddddddd", as_of="2026-11-12T00:00:00Z",
                   entity="BTC", judgment="等待信号", trigger_due="2026-11-13")
