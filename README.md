@@ -32,6 +32,11 @@
 - **[阅读盈利质量报告](examples/msft-earnings-quality/research/work/report.md)**
 - **[查看完整案例与命令](examples/msft-earnings-quality/README.md)**
 
+**第四个例子：三年趋势里，质量有没有恶化？** 用 SEC XBRL 的 FY2023–FY2025 事实：现金转化三年均高于 1、应计为负、现金周期为负，增长质量总体稳定；但应收周转天数上升，是唯一压力点。这个例子演示多年趋势、应计/周转计算与报告内嵌折线图。
+
+- **[阅读三年趋势报告](examples/msft-trend/research/work/report.md)**
+- **[查看完整案例与命令](examples/msft-trend/README.md)**
+
 ## 用它研究什么
 
 - **解释变化**：公司为什么下跌？比较实际表现、背景和新增证据，区分不同解释。

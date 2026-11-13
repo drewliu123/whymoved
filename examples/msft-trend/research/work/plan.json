@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "question": "微软 FY2023–FY2025 的增长质量在恶化吗？",
+  "type": "asset",
+  "task": "三年盈利质量与周转趋势",
+  "entity": "Microsoft",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断增长是否有现金与周转支撑",
+  "prior_judgment": "增长质量只看单年容易误判，需看三年趋势",
+  "comparison": {
+    "period": "FY2023 至 FY2025",
+    "unit": "ratio 与 USD million",
+    "scope": "合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "三年关键报表事实取得并可确定性计算",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "用三年现金转化、应计与周转天数判断质量是否恶化",
+    "baseline": "FY2023 同口径",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入",
+      "利润",
+      "经营现金流",
+      "应收与应付",
+      "现金周期"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "三年现金转化、应计与周转天数",
+        "source": "质量表重算",
+        "by": "下一份年报",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "现金转化高于 1、应计为负、现金周期为负"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "现金转化下降或应计转正、周转天数显著拉长"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "增长质量稳定，利润有现金支撑",
+      "discriminating_observation": "CFO 持续高于净利润且应计为负"
+    },
+    {
+      "id": "H2",
+      "explanation": "增长质量恶化，靠应计与放宽信用",
+      "discriminating_observation": "CFO 低于净利润或应收天数大幅拉长"
+    }
+  ],
+  "queries": [
+    {
+      "question": "三年收入、利润、现金流与营运资本",
+      "query": "MSFT 10-K FY2023 FY2024 FY2025 XBRL",
+      "source": "SEC company facts",
+      "purpose": "判断质量趋势",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

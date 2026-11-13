@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "source_status": {
+    "sec": {
+      "status": "ok"
+    }
+  },
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "publisher": "U.S. SEC",
+      "tier": "T0",
+      "published_at": "2025-07-30",
+      "retrieved_at": "2026-11-14T00:00:00Z",
+      "quote": "us-gaap company facts, 10-K USD: RevenueFromContractWithCustomerExcludingAssessedTax 211,915 / 245,122 / 281,724",
+      "locator": "data.sec.gov companyfacts CIK0000789019（Microsoft），取 FY2023–FY2025 10-K 年度值",
+      "origin_id": "sec-msft-companyfacts",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方 XBRL 年度事实，可逐项复核",
+        "relevance": "direct",
+        "purpose": "三年趋势与质量筛查",
+        "priority": "decisive"
+      }
+    }
+  ]
+}

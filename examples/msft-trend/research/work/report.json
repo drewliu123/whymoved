@@ -1,0 +1,511 @@
+{
+  "schema_version": 2,
+  "title": "微软 FY2023–FY2025：增长质量总体稳定，应收周转值得跟踪",
+  "question": "微软 FY2023–FY2025 的增长质量在恶化吗？",
+  "type": "asset",
+  "task": "三年盈利质量与周转趋势",
+  "as_of": "2026-11-14T00:00:00Z",
+  "answer": {
+    "text": "三年看，经营现金流始终高于净利润、应计为负、现金周期为负，利润有现金支撑，增长质量没有恶化迹象；但应收周转天数从 FY2023 到 FY2025 上升，说明信用条件在放松，需要与新披露的应收增速对照。库存周转天数下降、应付天数上升，营运资本整体仍为负。",
+    "claim_ids": [
+      "C29",
+      "C28",
+      "C32",
+      "C8",
+      "I-JUDGE"
+    ]
+  },
+  "findings": [
+    {
+      "title": "经营现金流持续高于净利润",
+      "text": "FY2023、FY2024、FY2025 三年 CFO 均高于净利润，现金转化稳定高于 1。",
+      "claim_ids": [
+        "C5",
+        "C4",
+        "C29",
+        "C28"
+      ],
+      "why_it_matters": "若现金转化跌破 1 且应计转正，才是质量恶化的典型信号；这里相反。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "单年质量筛查",
+        "detail": "三年一致的现金支撑"
+      }
+    },
+    {
+      "title": "现金周期为负且改善",
+      "text": "应付天数高于应收与库存天数之和，营运资本继续为经营提供资金。",
+      "claim_ids": [
+        "C34",
+        "C32",
+        "C33",
+        "C25"
+      ],
+      "why_it_matters": "负现金周期意味着增长不占用自有资金；这是质量稳定的结构原因。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看利润表",
+        "detail": "营运资本结构对现金的贡献"
+      }
+    },
+    {
+      "title": "应收周转天数上升是唯一压力点",
+      "text": "应收从 FY2023 到 FY2025 增长快于收入，应收天数上升；库存天数下降部分抵消。",
+      "claim_ids": [
+        "C8",
+        "C32",
+        "C1",
+        "C25"
+      ],
+      "why_it_matters": "应收快于收入若持续，可能是信用放宽或回款变慢，需要下一期核对。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "总体稳定的判断",
+        "detail": "应收端出现反向信号"
+      }
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "下一期应收增速与收入增速",
+      "meaning": "验证应收天数上升是否持续",
+      "claim_ids": [
+        "C32"
+      ],
+      "due": "2027-07-30",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "未取得折旧摊销、债务与现金，资本开支/折旧与 ROIC 为 null；XBRL 事实可能被后续重述。",
+      "material": true,
+      "claim_ids": [
+        "C30"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "三年关键报表",
+      "columns": [
+        "指标",
+        "FY2023",
+        "FY2024",
+        "FY2025"
+      ],
+      "units": [
+        "",
+        "百万美元",
+        "百万美元",
+        "百万美元"
+      ],
+      "rows": [
+        [
+          "收入",
+          211915,
+          245122,
+          281724
+        ],
+        [
+          "经营现金流",
+          87582,
+          118548,
+          136162
+        ],
+        [
+          "净利润",
+          72361,
+          88136,
+          101832
+        ],
+        [
+          "应收",
+          48688,
+          56924,
+          69905
+        ]
+      ],
+      "claim_ids": [
+        "C25",
+        "C29",
+        "C28"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "kind": "line",
+      "title": "收入与经营现金流（百万美元）",
+      "x_label": "财年",
+      "y_label": "百万美元",
+      "unit": "百万美元",
+      "claim_ids": [
+        "C1",
+        "C13",
+        "C25",
+        "C5",
+        "C17",
+        "C29"
+      ],
+      "series": [
+        {
+          "name": "收入",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 211915
+            },
+            {
+              "label": "FY2024",
+              "value": 245122
+            },
+            {
+              "label": "FY2025",
+              "value": 281724
+            }
+          ]
+        },
+        {
+          "name": "经营现金流",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 87582
+            },
+            {
+              "label": "FY2024",
+              "value": 118548
+            },
+            {
+              "label": "FY2025",
+              "value": 136162
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quality": {
+    "statements": {
+      "schema_version": 1,
+      "entity": "MSFT",
+      "currency": "USD",
+      "scale": "million",
+      "as_of": "2026-11-14T00:00:00Z",
+      "periods": [
+        {
+          "id": "FY2023",
+          "period_type": "fy",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "revenue": {
+            "value": 211915,
+            "claim_ids": [
+              "C1"
+            ]
+          },
+          "gross_profit": {
+            "value": 146052,
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          "operating_profit": {
+            "value": 88523,
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          "net_income": {
+            "value": 72361,
+            "claim_ids": [
+              "C4"
+            ]
+          },
+          "cfo": {
+            "value": 87582,
+            "claim_ids": [
+              "C5"
+            ]
+          },
+          "capex": {
+            "value": 28107,
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          "share_based_comp": {
+            "value": 9611,
+            "claim_ids": [
+              "C7"
+            ]
+          },
+          "receivables": {
+            "value": 48688,
+            "claim_ids": [
+              "C8"
+            ]
+          },
+          "inventory": {
+            "value": 2500,
+            "claim_ids": [
+              "C9"
+            ]
+          },
+          "payables": {
+            "value": 18095,
+            "claim_ids": [
+              "C10"
+            ]
+          },
+          "total_assets": {
+            "value": 411976,
+            "claim_ids": [
+              "C11"
+            ]
+          },
+          "equity": {
+            "value": 206223,
+            "claim_ids": [
+              "C12"
+            ]
+          }
+        },
+        {
+          "id": "FY2024",
+          "period_type": "fy",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "revenue": {
+            "value": 245122,
+            "claim_ids": [
+              "C13"
+            ]
+          },
+          "gross_profit": {
+            "value": 171008,
+            "claim_ids": [
+              "C14"
+            ]
+          },
+          "operating_profit": {
+            "value": 109433,
+            "claim_ids": [
+              "C15"
+            ]
+          },
+          "net_income": {
+            "value": 88136,
+            "claim_ids": [
+              "C16"
+            ]
+          },
+          "cfo": {
+            "value": 118548,
+            "claim_ids": [
+              "C17"
+            ]
+          },
+          "capex": {
+            "value": 44477,
+            "claim_ids": [
+              "C18"
+            ]
+          },
+          "share_based_comp": {
+            "value": 10734,
+            "claim_ids": [
+              "C19"
+            ]
+          },
+          "receivables": {
+            "value": 56924,
+            "claim_ids": [
+              "C20"
+            ]
+          },
+          "inventory": {
+            "value": 1246,
+            "claim_ids": [
+              "C21"
+            ]
+          },
+          "payables": {
+            "value": 21996,
+            "claim_ids": [
+              "C22"
+            ]
+          },
+          "total_assets": {
+            "value": 512163,
+            "claim_ids": [
+              "C23"
+            ]
+          },
+          "equity": {
+            "value": 268477,
+            "claim_ids": [
+              "C24"
+            ]
+          }
+        },
+        {
+          "id": "FY2025",
+          "period_type": "fy",
+          "period_start": "2024-07-01",
+          "period_end": "2025-06-30",
+          "revenue": {
+            "value": 281724,
+            "claim_ids": [
+              "C25"
+            ]
+          },
+          "gross_profit": {
+            "value": 193893,
+            "claim_ids": [
+              "C26"
+            ]
+          },
+          "operating_profit": {
+            "value": 128528,
+            "claim_ids": [
+              "C27"
+            ]
+          },
+          "net_income": {
+            "value": 101832,
+            "claim_ids": [
+              "C28"
+            ]
+          },
+          "cfo": {
+            "value": 136162,
+            "claim_ids": [
+              "C29"
+            ]
+          },
+          "capex": {
+            "value": 64551,
+            "claim_ids": [
+              "C30"
+            ]
+          },
+          "share_based_comp": {
+            "value": 11974,
+            "claim_ids": [
+              "C31"
+            ]
+          },
+          "receivables": {
+            "value": 69905,
+            "claim_ids": [
+              "C32"
+            ]
+          },
+          "inventory": {
+            "value": 938,
+            "claim_ids": [
+              "C33"
+            ]
+          },
+          "payables": {
+            "value": 27724,
+            "claim_ids": [
+              "C34"
+            ]
+          },
+          "total_assets": {
+            "value": 619003,
+            "claim_ids": [
+              "C35"
+            ]
+          },
+          "equity": {
+            "value": 343479,
+            "claim_ids": [
+              "C36"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2023 同口径",
+    "baseline_claim_ids": [
+      "C5",
+      "C4"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入",
+      "利润",
+      "经营现金流",
+      "应收与应付",
+      "现金周期"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "增长质量稳定，利润有现金支撑"
+      },
+      {
+        "id": "H2",
+        "explanation": "增长质量恶化，靠应计与放宽信用"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "现金转化高于 1、应计为负、现金周期为负"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "现金转化下降或应计转正、周转天数显著拉长"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "C29",
+          "C28",
+          "C32",
+          "C8",
+          "C34",
+          "C33"
+        ],
+        "interpretation": "现金转化高于 1、应计为负、现金周期为负，支持 H1；应收天数上升削弱「完全稳定」，列入观察。",
+        "supports": [
+          "H1"
+        ],
+        "weakens": [
+          "H2"
+        ],
+        "next_observation": "下一期应收增速与收入增速",
+        "by": "2027-07-30",
+        "supports_if": "应收增速回落到收入增速附近",
+        "weakens_if": "应收增速继续显著高于收入"
+      }
+    ],
+    "conclusion": "增长质量总体稳定，现金周期为负；应收周转是唯一需要跟踪的压力点。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "本轮用确定性报表与周转计算，不适用固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题只判断质量趋势，不判断价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}
