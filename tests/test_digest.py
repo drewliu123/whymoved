@@ -75,11 +75,14 @@ class DigestTests(unittest.TestCase):
         self.assertIn("论点：等待触发 → 未见优势（削弱）", text)
         self.assertIn("论点状态：", text)
         report["update"]["opportunity"] = {"previous_status": "watch", "current_status": "watch",
-                                          "thesis_change": "strengthened"}
+                                          "thesis_change": "strengthened",
+                                          "trigger_results": [{"trigger_id": "TR1", "status": "hit"},
+                                                              {"trigger_id": "TR2", "status": "not_checked"}]}
         report_path.write_text(json.dumps(report, ensure_ascii=False), encoding="utf-8")
         text = self.digest()
         self.assertIn("论点：等待触发（增强）", text)
         self.assertNotIn("等待触发 → 等待触发", text)
+        self.assertIn("触发：已触发 1、未检查 1", text)
 
     def test_upcoming_and_overdue_catalysts(self):
         write_run(self.home, "R20261112T000000Z-dddddddddddd", as_of="2026-11-12T00:00:00Z",

@@ -57,7 +57,9 @@ def build_digest(home, as_of=None, days=30):
         import opportunity_contract as opportunity_tool
         status_label, thesis_label = opportunity_tool.STATUSES, opportunity_tool.THESIS
     except ImportError:  # labels are cosmetic; raw identifiers still print
-        status_label, thesis_label = {}, {}
+        status_label, thesis_label, result_label = {}, {}, {}
+    else:
+        result_label = opportunity_tool.RESULTS
     recent = []
     for record in index["runs"]:
         stamp = _date(record.get("as_of"))
@@ -101,6 +103,16 @@ def build_digest(home, as_of=None, days=30):
                     lines.append("  - 论点：%s（%s）" % (before, thesis_label.get(thesis, thesis)))
                 else:
                     lines.append("  - 论点：%s → %s（%s）" % (before, after, thesis_label.get(thesis, thesis)))
+                results = opportunity.get("trigger_results")
+                if isinstance(results, list) and results:
+                    counts = {}
+                    for row in results:
+                        status = row.get("status") if isinstance(row, dict) else None
+                        counts[status] = counts.get(status, 0) + 1
+                    ordered = [key for key in result_label if key in counts] + \
+                              [key for key in counts if key not in result_label]
+                    summary = "、".join("%s %d" % (result_label.get(key, key), counts[key]) for key in ordered)
+                    lines.append("  - 触发：%s" % summary)
     else:
         lines.append("- 本窗口没有声明改变判断的更新。")
     lines.extend(["", "## 本窗口研究", ""])
