@@ -55,6 +55,10 @@ python3 "$TY_DIR/scripts/transmission.py" "$WORK/transmission.json" --claims "$W
 - `paths`：从各个源头（无入边的节点）到瓶颈的路径；多条源头会给出多条。
 - `warnings`：无关节点、环路、没有挂 claim_ids 的节点、终点不在路径上的节点。
 
+## 嵌入报告
+
+把同一份文档放进 `report.transmission` 即可随报告一起归档：校验会用 claims 核对引用，渲染在附录生成「行业传导」小节（瓶颈与理由、节点方向表、传导路径、告警）。独立运行时用 `transmission.py`；嵌入时字段完全一致，不需要改写。
+
 ## 边界
 
 - **不判断机制真假**：`mechanism` 是研究者的解释，工具只检查它被写出来、有方向、有时滞。

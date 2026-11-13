@@ -94,6 +94,12 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 
 consensus主张可带`consensus`块（series_id、metric、target_period、provider、sample_size、median、low、high），同一series_id与target_period的多个截点用于计算修订；fact主张可带`guidance`块（metric、target_period、midpoint、可选low/high）。指引不能冒充共识：`guidance`放在consensus上会被拒绝。附录渲染「一致预期序列」与「公司指引（不是分析师共识）」。详见[evidence.md](evidence.md)与[expectations.md](expectations.md)。
 
+## 行业传导：可选 report.transmission
+
+主题研究可把传导图直接嵌进报告：`report.transmission` 的字段与[transmission.md](transmission.md)的输入完全一致（nodes / edges / bottleneck）。校验会用账本核对各节点、边与瓶颈的 `claim_ids` 是否存在；渲染在附录生成「行业传导」小节：瓶颈与理由、节点表（节点、标签、方向、可观察指标）、传导路径与告警。没有该字段的报告渲染不变。
+
+不要为了填字段硬造节点：`observables` 必须是能核对的观察，`lag` 必须是时间窗口或触发条件。
+
 ## 来源冲突：可选 report.conflicts
 
 同一指标多个来源给出不同数值时，不要悄悄挑一个。用可选`conflicts`记录取舍：

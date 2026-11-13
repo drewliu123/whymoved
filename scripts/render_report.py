@@ -323,6 +323,10 @@ def validate_report(report, ledger, sources=None):
         errors.extend(validate_analysis(report["analysis"], claims, sources=sources))
     errors.extend(validate_valuation_summary(report))
     errors.extend(validate_conflicts(report, ledger, sources))
+    if "transmission" in report:
+        from transmission import validate_document as validate_transmission
+        claims = ledger.get("claims") if isinstance(ledger, dict) else None
+        errors.extend("transmission: " + error for error in validate_transmission(report["transmission"], claims))
     from calendar import validate_report_catalysts
     errors.extend(validate_report_catalysts(report))
     from opportunity_contract import validate_opportunity
@@ -633,6 +637,25 @@ def _blocks(report, ledger, sources):
                          "rows": [[row["claim_id"], row["metric"], row["target_period"], row["midpoint"],
                                    row["low"], row["high"], row["as_of"]] for row in guidance_rows],
                          "claim_ids": [row["claim_id"] for row in guidance_rows]})
+    if report.get("transmission"):
+        from transmission import analyse as analyse_transmission
+        document = report["transmission"]
+        result = analyse_transmission(document)
+        yield ("h2", "行业传导")
+        yield ("p", "瓶颈：" + result["bottleneck"]["label"] + "（" + result["bottleneck"]["node"] + "）｜" +
+               result["bottleneck"]["reason"],
+               [cid for cid in document["bottleneck"].get("claim_ids", [])])
+        directions = {"upstream": "瓶颈上游", "downstream": "瓶颈下游", "bottleneck": "瓶颈", "unrelated": "无路径"}
+        yield ("table", {"title": "传导节点",
+                         "columns": ["节点", "标签", "方向", "可观察指标"],
+                         "rows": [[node["id"], node["label"], directions.get(result["directions"].get(node["id"]), "—"),
+                                   "；".join(node.get("observables", []))] for node in document["nodes"]],
+                         "claim_ids": list(dict.fromkeys(cid for node in document["nodes"]
+                                                         for cid in node.get("claim_ids", [])))})
+        if result["paths"]:
+            yield ("p", "传导路径：" + "；".join(" → ".join(path) for path in result["paths"]))
+        for warning in result["warnings"]:
+            yield ("p", "传导提示：" + warning)
     yield ("audit", "来源与结论审计")
     from metrics import describe as _describe_metric, extract_metrics
     metric_rows = extract_metrics(ledger["claims"])

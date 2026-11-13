@@ -263,6 +263,45 @@ class BarWaterfallTests(unittest.TestCase):
         self.assertNotIn("柱状", page)
 
 
+class TransmissionReportTests(unittest.TestCase):
+    def document(self):
+        report, ledger, sources = documents()
+        report["transmission"] = {
+            "schema_version": 1, "theme": "测试传导", "as_of": AS_OF,
+            "nodes": [{"id": "A", "label": "需求", "kind": "demand",
+                       "observables": ["新签订单"], "claim_ids": ["C1"]},
+                      {"id": "B", "label": "瓶颈", "kind": "capacity",
+                       "observables": ["排队时长"], "claim_ids": ["C1"]}],
+            "edges": [{"from": "A", "to": "B", "mechanism": "排队", "lag": "1个季度", "claim_ids": ["C1"]}],
+            "bottleneck": {"node": "B", "reason": "审批节奏", "claim_ids": ["C1"]}}
+        return report, ledger, sources
+
+    def test_validates_and_renders_appendix(self):
+        report, ledger, sources = self.document()
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(report, ledger, sources).replace("\\", "")
+            for word in ("行业传导", "瓶颈", "审批节奏", "传导节点", "瓶颈上游", "需求", "排队时长",
+                         "传导路径", "A", "B"):
+                self.assertIn(word, text)
+
+    def test_negative_transmission(self):
+        report, ledger, sources = self.document()
+        report["transmission"]["nodes"][0]["claim_ids"] = ["C404"]
+        errors = render_report.validate_report(report, ledger, sources)
+        self.assertTrue(any("transmission:" in error for error in errors), errors)
+        report, ledger, sources = self.document()
+        report["transmission"]["edges"][0]["to"] = "NOPE"
+        self.assertTrue(any("transmission:" in error for error in render_report.validate_report(report, ledger, sources)))
+        report, ledger, sources = documents()
+        report["transmission"] = "nope"
+        self.assertTrue(any("transmission:" in error for error in render_report.validate_report(report, ledger, sources)))
+
+    def test_reports_without_transmission_unchanged(self):
+        report, ledger, sources = documents()
+        self.assertNotIn("行业传导", render_report.render_markdown(report, ledger, sources))
+
+
 class Text(HTMLParser):
     def __init__(self):
         super().__init__()
