@@ -90,6 +90,10 @@ findings为空时必须给no_change_reason，说明本轮检查了哪些信号�
 
 没有metric的旧账本继续合法，渲染结果不变；不要为了填字段把区间、估算或未经核对的数字写成精确值。
 
+## 一致预期：可选 claim.consensus / claim.guidance
+
+consensus主张可带`consensus`块（series_id、metric、target_period、provider、sample_size、median、low、high），同一series_id与target_period的多个截点用于计算修订；fact主张可带`guidance`块（metric、target_period、midpoint、可选low/high）。指引不能冒充共识：`guidance`放在consensus上会被拒绝。附录渲染「一致预期序列」与「公司指引（不是分析师共识）」。详见[evidence.md](evidence.md)与[expectations.md](expectations.md)。
+
 ## 来源冲突：可选 report.conflicts
 
 同一指标多个来源给出不同数值时，不要悄悄挑一个。用可选`conflicts`记录取舍：

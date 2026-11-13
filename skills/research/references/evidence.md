@@ -45,6 +45,31 @@
 }
 ```
 
+## 一致预期与指引：可选 consensus / guidance
+
+consensus主张可加可选`consensus`块，把同一预期序列的截面变成可比较结构：
+
+```json
+{"id": "C7", "text": "分析师对FY2027 EPS的估计中位数", "type": "consensus", "as_of": "2026-10-31T12:00:00Z",
+ "sources": [{"source_id": "S9"}], "consensus_scope": "24 surveyed analysts",
+ "consensus": {"series_id": "NVDA_FY2027_EPS", "metric": "EPS", "target_period": "FY2027",
+               "provider": "LSEG", "sample_size": 24, "median": 9.0, "low": 8.2, "high": 9.8}}
+```
+
+字段：`series_id`（安全标识）、`metric`、`target_period`、`provider`、`sample_size`（≥2）、`median`、`low`、`high`；要求`low ≤ median ≤ high`，未知字段拒绝。`consensus`块只允许出现在consensus主张上；调查资格（T1或两家独立T1–T2）仍由原有survey契约负责。
+
+fact主张可加可选`guidance`块记录公司自己的指引：`{metric, target_period, midpoint, low?, high?}`，有区间时`low ≤ midpoint ≤ high`。
+
+**硬规则：指引不能冒充分析师共识。** `guidance`只允许出现在fact上；写在consensus主张上直接报错。公司指引与分析师共识是两个群体、两种用途，报告里必须分开呈现。
+
+校验与汇总：
+
+```bash
+python3 "$TY_DIR/scripts/consensus.py" "$WORK/claims.json"
+```
+
+按`series_id + target_period`分组，按claim截点排序，计算相邻快照的`delta`、`pct`与`up/down/flat`，并给出每条快照的离散度`(high−low)/|median|`。跨提供方混用、指标名不一致、只有单个快照都会进`warnings`；指引单独列在`guidance`。Markdown/HTML附录会渲染「一致预期序列」与「公司指引（不是分析师共识）」两张表。
+
 ## 数值事实：可选 metric
 
 fact / price / consensus 主张可加可选`metric`块，把数字连同单位、期间与范围变成可检查结构。没有该块时行为完全不变；有该块时校验形状与口径一致性，但仍不证明数字等于原文。

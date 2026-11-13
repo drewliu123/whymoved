@@ -401,6 +401,10 @@ def validate_ledger(ledger, sources=None):
                 errors = ["R1 malformed legacy claim"]
         else:
             errors = ["R1 claim must be an object"]
+        if isinstance(claim, dict) and ("consensus" in claim or "guidance" in claim):
+            from consensus import validate_claim_blocks
+            for message in validate_claim_blocks(claim):
+                errors = list(errors) + ["consensus: " + message]
         if isinstance(claim, dict) and "metric" in claim:
             from metrics import validate_metric
             if claim.get("type") not in {"fact", "price", "consensus"}:

@@ -4,6 +4,58 @@
 
 ---
 
+## Cycle 12 · 2026-11-14 · 一致预期序列与指引分离
+
+**对应卡片**：P1-1
+
+**问题**：`expectations.md` 早已要求「同一目标期间在两个截点比较」与「不用公司指引冒充分析师共识」，但只有文字要求：修订得手算，指引与共识混在叙述里，跨提供方比较也无人提醒。真实归档里 consensus 类型主张长期为 0，缺的正是落库结构。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/consensus.py`（新） | `consensus`/`guidance` 块校验；按 `series_id + target_period` 分组、按截点排序、计算修订与离散度；CLI 输出 series/guidance/warnings |
+| `scripts/check_claims.py` | 账本校验接入两块：形状错误、类型错误挂到对应主张；指引写在 consensus 上直接拒绝 |
+| `scripts/render_report.py` | 附录新增「一致预期序列」与「公司指引（不是分析师共识）」两张表 |
+| `tests/test_consensus.py`（新） | 16 个用例：块形状、类型硬规则、ledger 接入、修订方向/百分比/排序、零中位、提供方与指标混用、单快照警告、CLI、双格式渲染 |
+| 文档 | evidence / expectations / memo-template / architecture；CHANGELOG 0.17.0 |
+
+**关键设计决定**
+
+1. **`series_id + target_period` 才是序列身份**：同一家公司同一指标，FY2027 与 FY2028 不可比；不同提供方即使标签相同也不可直接串联。分组键写死，跨组不计算修订。
+2. **指引的硬规则放在校验层**：`guidance` 只允许在 fact 上，写在 consensus 上直接报错，并给出明确理由「guidance cannot stand in for analyst consensus」。这是规则而非提示词，无法绕过。
+3. **混用给 warning 而不是拒绝**：现实中确实会遇到中途换提供方；直接拒绝会逼人造假，给 warning 并把不可比性显式说出来更诚实。
+4. **离散度与样本量同时呈现**：`(high−low)/|median|` 单看会误导（样本 3 个也能很窄），所以表格强制带 `sample_size`。
+5. **不判断超预期**：工具只算修订与离散度；「是否超预期」「是否上修」仍由研究者在正文判断并入账。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 339 tests ... OK
+```
+
+- 修订：中位 9.0 → 9.45 → 9.0，输出 `up +5.0%` 与 `down −0.45`；首条快照离散度 2/9 ≈ 0.222。
+- 排序：输入顺序颠倒时仍按 claim `as_of` 排序，修订方向为正。
+- 零中位：pct 输出 `null`，方向照常 up。
+- 混用：提供方 LSEG/FactSet 与指标 `EPS`/`EPS (adj)` 分别触发两条 warning；单快照触发「no revision available」。
+- 账本接入：带 T1 survey 的 consensus 主张 + 合法 `consensus` 块通过校验；同块 `sample_size=1` 失败；consensus 上带 `guidance` 失败并指明理由。
+- 渲染：附录出现「一致预期序列」「共识快照」「公司指引」「管理层指引」；无相关块的报告输出不变。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 多一种分析师会用的方法：预期修订与分歧的结构化跟踪，而不是一次性引用。
+2. 多回答一类问题：「这个季度的共识比一个月前上修还是下修」「分歧有多大、样本多厚」。
+3. 多一条可核实连接：每条快照来自一条 consensus 主张，附截点与提供方。
+4. 边界更清楚：指引不是共识、跨提供方不可比、单快照不能算修订。
+
+**遗留**
+
+- 指引 vs 实际（guidance vs actual）尚未自动配对：`guidance.target_period` 是财年标签，与 `claim.metric` 的日期期间还没有映射规则；下一步需要定义期间标签映射，不能靠猜测。
+- 同一 series 的历史快照仍分属不同 run 的账本；跨 run 汇总需要类似 `research_memory` 的聚合层。
+- 未提供「共识 vs 价格隐含」的直接对比；那属于 market.assessed 与 opportunity 的职责。
+
 ## Cycle 11 · 2026-11-14 · 情景集（bear / base / bull）
 
 **对应卡片**：P1-3 的后半

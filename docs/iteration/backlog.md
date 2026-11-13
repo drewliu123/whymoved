@@ -91,7 +91,8 @@
 
 ## P1-1 一致预期序列、修订与指引 vs 实际
 
-- 状态：待认领（下一轮；数据受限，字段默认 missing）
+- 状态：✅ 已完成（Cycle 12；指引 vs 实际的期间映射未做，见遗留）
+- 遗留：guidance.target_period 与 claim.metric 日期期间的映射；跨 run 序列汇总。
 - 方案：(a) consensus claim 加 `series {series_id, metric, target_period, provider, n, median, low, high, as_of}`，用 P0-0a 的 growth 算子算修订；(b) claim 加 `guidance {metric, target_period, midpoint, range, as_of, company_guidance: true}`，契约硬规则：**指引永远不能充当 consensus**；(c) 渲染「预期 vs 实际 vs 修订」小表。
 - 风险：数据在付费墙后，做成字段后长期为空 → 要求 provider + n + method 三件套；`missing` 为默认；禁止拿分析师目标价当 consensus。
 
@@ -110,7 +111,7 @@
 
 ## P1-4 块级渲染 / IC memo 包
 
-- 状态：待认领
+- 状态：待认领（下一轮）
 - 方案：(a) findings 加 `table_ids` 内联；(b) `charts[]` 支持多序列与日期轴，同源数据表保留；(c) 列级 units；(d) `memo_pack`：一页判断 + variant + 估值汇总 + 催化 + 证伪条件。
 - 风险：`render_report.py` 是爆炸半径最大的文件；schema 变化需旧档案仍可渲染。
 
@@ -144,6 +145,7 @@
 
 ## 已完成
 
+- P1-1 一致预期序列与修订 — 2026-11-14，Cycle 12
 - P1-3 情景集 + 龙卷风敏感性 — 2026-11-14，Cycle 10–11
 - P1-2 价格时效与来源冲突 — 2026-11-14，Cycle 9
 - P0-6 跨轮研究记忆 — 2026-11-14，Cycle 8

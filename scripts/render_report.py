@@ -481,6 +481,25 @@ def _blocks(report, ledger, sources):
                                    entry["adopted_claim_id"], entry["unit"], entry["rule"], entry["reason"]]
                                   for entry in report["conflicts"]],
                          "claim_ids": [entry["adopted_claim_id"] for entry in report["conflicts"]]})
+    from consensus import guidance_entries, snapshots as consensus_snapshots
+    consensus_rows = consensus_snapshots(ledger["claims"])
+    if consensus_rows:
+        yield ("h2", "一致预期序列")
+        yield ("table", {"title": "共识快照",
+                         "columns": ["序列", "目标期间", "提供方", "截点", "中位", "样本量", "低", "高"],
+                         "rows": [[row["series_id"], row["target_period"], row["provider"], row["as_of"],
+                                   row["median"], row["sample_size"], row["low"], row["high"]]
+                                  for row in consensus_rows],
+                         "claim_ids": [row["claim_id"] for row in consensus_rows]})
+        yield ("p", "修订只在同一序列与目标期间内比较；跨提供方不可直接比较，样本量与离散度须一并看。")
+    guidance_rows = guidance_entries(ledger["claims"])
+    if guidance_rows:
+        yield ("h3", "公司指引（不是分析师共识）")
+        yield ("table", {"title": "管理层指引",
+                         "columns": ["主张", "指标", "目标期间", "中点", "低", "高", "截点"],
+                         "rows": [[row["claim_id"], row["metric"], row["target_period"], row["midpoint"],
+                                   row["low"], row["high"], row["as_of"]] for row in guidance_rows],
+                         "claim_ids": [row["claim_id"] for row in guidance_rows]})
     yield ("audit", "来源与结论审计")
     from metrics import describe as _describe_metric, extract_metrics
     metric_rows = extract_metrics(ledger["claims"])

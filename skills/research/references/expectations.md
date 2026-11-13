@@ -28,6 +28,12 @@ T1回答：结果揭晓之前，哪个群体对什么对象、哪个目标期间
 4. 只有当前值则只回答当前预期，历史变化记缺口。现有归档可用于后续比较；本Skill不会自动后台采集，也不在本轮批量补建历史库。
 5. 遇到付费、限流或不可达，记录payment_required/rate_limited等实际状态和影响；不循环重试、不读取凭据、不默认购买。若缺口使“超预期”或“预期上修”无法证实，应撤回该表述并明确已知范围。
 
+## 结构化记录与修订
+
+同一序列、同一目标期间的多个截点写成多条consensus主张，每条带`consensus`块（`series_id`、`metric`、`target_period`、`provider`、`sample_size`、`median`、`low`、`high`），claim的`as_of`就是该截点。修订由`scripts/consensus.py`按`series_id + target_period`自动比较：`delta`、`pct`、方向与每次快照的离散度。跨提供方的快照会给出warning——不同调查的样本与方法不同，不能当同一条序列直接比较。
+
+公司指引用fact主张上的`guidance`块记录（`metric`、`target_period`、`midpoint`、可选`low`/`high`）。**指引不能写成consensus**：校验会直接拒绝把`guidance`放在consensus主张上。指引与共识在报告里分开展示，比较「公司自己说的」与「分析师预期的」是两项工作。
+
 ## 每条预期材料的记录
 
 在来源摘录与本轮审计中保留以下信息；未知明确写明，不制造必填字段。以下是人工取证要求，不代表现有校验器已自动检查全部项目。

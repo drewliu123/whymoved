@@ -4,6 +4,17 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.17.0 · 一致预期序列与指引分离
+
+`expectations.md` 早就要求「同一目标期间在两个截点比较」，也要求「不用公司指引冒充分析师共识」，但此前没有结构化字段：修订只能手算，指引与共识混在文本里。
+
+- `consensus` claim 可带可选 `consensus` 块：`series_id`、`metric`、`target_period`、`provider`、`sample_size`（≥2）、`median`、`low`、`high`，要求 `low ≤ median ≤ high`，未知字段拒绝。
+- `fact` claim 可带可选 `guidance` 块：`metric`、`target_period`、`midpoint`、可选 `low`/`high`。**硬规则：`guidance` 不允许出现在 consensus 主张上**，直接报错。
+- 新工具 [consensus.py](scripts/consensus.py)：按 `series_id + target_period` 分组，按截点排序，输出 `delta`、`pct`、`up/down/flat` 与离散度 `(high−low)/|median|`；跨提供方、指标名不一致、单快照都会进 `warnings`；指引单独列出。
+- 渲染：附录新增「一致预期序列」与「公司指引（不是分析师共识）」两张表，无相关块时输出不变。
+- 测试：新增 [test_consensus.py](tests/test_consensus.py) 16 个用例（块校验、类型硬规则、ledger 接入、修订/排序/离散度/零中位、提供方混用、CLI、双格式渲染），全套 339 个测试通过。
+- 文档：evidence、expectations、memo-template、architecture 同步。
+
 ## 0.16.0 · 情景集（bear / base / bull）
 
 研究人员常需要三个情景，但此前只能建三个互不相干的模型：无法保证结构一致，也没有并排对比。新增可选的 `scenario` 与 `scenario_set` wrapper 字段。
