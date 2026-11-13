@@ -578,5 +578,51 @@ class RelativeValuationTests(unittest.TestCase):
             compute_model(item)
 
 
+class RealDataTests(unittest.TestCase):
+    """The fixed models must reproduce a real published income statement."""
+
+    def root(self):
+        return Path(__file__).resolve().parents[1] / "examples" / "msft-quality"
+
+    def test_operating_bridge_reproduces_msft_example(self):
+        periods = json.loads((self.root() / "statements.json").read_text(encoding="utf-8"))["periods"]
+        previous, current = periods
+        spec = {"kind": "operating_bridge", "inputs": {
+            "base_revenue": {"value": previous["revenue"], "unit": "currency", "role": "observed", "claim_ids": ["C1"]},
+            "revenue_growth": {"value": current["revenue"] / previous["revenue"] - 1, "unit": "ratio",
+                               "role": "observed", "claim_ids": ["C1"]},
+            "base_margin": {"value": previous["operating_profit"] / previous["revenue"], "unit": "ratio",
+                            "role": "observed", "claim_ids": ["C1"]},
+            "scenario_margin": {"value": current["operating_profit"] / current["revenue"], "unit": "ratio",
+                                "role": "observed", "claim_ids": ["C1"]}},
+            "sensitivity": [{"input": "scenario_margin", "values": [0.45, 0.46]}]}
+        outputs = compute_model(spec)["outputs"]
+        self.assertAlmostEqual(outputs["revenue"]["value"], current["revenue"], places=6)
+        self.assertAlmostEqual(outputs["profit"]["value"], current["operating_profit"], places=6)
+        self.assertAlmostEqual(outputs["profit_change"]["value"],
+                               current["operating_profit"] - previous["operating_profit"], places=6)
+        self.assertAlmostEqual(outputs["revenue_growth_effect"]["value"] +
+                               outputs["margin_effect"]["value"],
+                               outputs["profit_change"]["value"], places=6)
+
+    def test_driver_build_reproduces_msft_segments(self):
+        segments = json.loads((self.root() / "segments.json").read_text(encoding="utf-8"))
+        periods = json.loads((self.root() / "statements.json").read_text(encoding="utf-8"))["periods"]
+        current_revenue = periods[1]["revenue"]
+        current_profit = periods[1]["operating_profit"]
+        spec = {"kind": "driver_build",
+                "inputs": {"margin_delta": {"value": 0, "unit": "ratio", "role": "assumption", "claim_ids": ["A1"]}},
+                "segments": [{"name": now["segment"], "base_revenue": before["revenue"],
+                              "volume_growth": now["revenue"] / before["revenue"] - 1, "price_growth": 0,
+                              "margin": now["operating_income"] / now["revenue"], "claim_ids": ["C1", "A1"]}
+                             for before, now in zip(segments["FY2024"], segments["FY2025"])],
+                "sensitivity": [{"input": "margin_delta", "values": [-0.01, 0.01]}]}
+        outputs = compute_model(spec)["outputs"]
+        self.assertAlmostEqual(outputs["revenue"]["value"], current_revenue, places=6)
+        self.assertAlmostEqual(outputs["profit"]["value"], current_profit, places=6)
+        self.assertAlmostEqual(outputs["revenue_growth"]["value"], current_revenue / periods[0]["revenue"] - 1, places=9)
+        self.assertGreater(outputs["incremental_margin"]["value"], 0)
+
+
 if __name__ == "__main__":
     unittest.main()
