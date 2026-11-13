@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "source_status": {
+    "official": {
+      "status": "ok"
+    }
+  },
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "publisher": "Microsoft",
+      "tier": "T0",
+      "published_at": "2025-07-30",
+      "retrieved_at": "2026-11-06T14:23:37Z",
+      "quote": "INCOME STATEMENTS ... 2025 2024 Revenue $ 281,724 $ 245,122 ... Net income $ 101,832 $ 88,136",
+      "locator": "官方年报损益表与现金流量表（examples/msft-cashflow evidence index 6/18）",
+      "origin_id": "msft-ar25-primary",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方报表原始数字",
+        "relevance": "direct",
+        "purpose": "盈利质量筛查",
+        "priority": "decisive"
+      }
+    }
+  ]
+}

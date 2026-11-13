@@ -1,0 +1,319 @@
+{
+  "schema_version": 2,
+  "title": "微软 FY2025：利润增长有现金支撑，但资本开支强度在上升",
+  "question": "微软 FY2025 的利润增长有现金支撑吗？",
+  "type": "asset",
+  "task": "盈利质量筛查",
+  "as_of": "2026-11-14T00:00:00Z",
+  "answer": {
+    "text": "FY2025 经营现金流 136,162 百万美元，是净利润 101,832 的 1.34 倍，利润有现金支撑；资本开支 64,551 是折旧摊销 34,153 的 1.89 倍，说明投入偏扩张而不是维护不足。两期利润率基本稳定，增量利润率约 52%，红旗筛查未发现异常。需要盯的是资本开支强度（占收入 22.9%）能否转化为后续收入。",
+    "claim_ids": [
+      "C13",
+      "C12",
+      "C14",
+      "C15",
+      "I-JUDGE"
+    ]
+  },
+  "findings": [
+    {
+      "title": "利润有现金支撑",
+      "text": "经营现金流 136,162 高于净利润 101,832，现金转化 1.34 倍。",
+      "claim_ids": [
+        "C13",
+        "C12"
+      ],
+      "why_it_matters": "若 CFO 低于净利润，利润增长可能依赖应计；这里方向相反。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "只看利润表的判断",
+        "detail": "引入现金流量表的交叉核对"
+      }
+    },
+    {
+      "title": "资本开支高于折旧，投入偏扩张",
+      "text": "资本开支 64,551 是折旧摊销 34,153 的 1.89 倍。",
+      "claim_ids": [
+        "C14",
+        "C15"
+      ],
+      "why_it_matters": "低于折旧才是维护不足；高于折旧通常意味着扩张，但也要看回报。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "未区分维护性与扩张性投入",
+        "detail": "资本开支与折旧的比值"
+      }
+    },
+    {
+      "title": "增量利润率约 52%",
+      "text": "营业利润增加 19,095，收入增加 36,602，增量利润率约 52%。",
+      "claim_ids": [
+        "C11",
+        "C3",
+        "C9",
+        "C1"
+      ],
+      "why_it_matters": "新增收入仍在创造利润，而不是被成本吃掉。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看收入增速",
+        "detail": "收入增量与利润增量的比值"
+      }
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "下一期资本开支与收入增速",
+      "meaning": "验证扩张投入是否转化为收入",
+      "claim_ids": [
+        "C14"
+      ],
+      "due": "2027-07-30",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "未取得应收、存货与总资产，应计比率与周转天数为 null。",
+      "material": true,
+      "claim_ids": [
+        "C13"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "现金与投入",
+      "columns": [
+        "指标",
+        "FY2024",
+        "FY2025"
+      ],
+      "units": [
+        "",
+        "百万美元",
+        "百万美元"
+      ],
+      "rows": [
+        [
+          "经营现金流",
+          118548,
+          136162
+        ],
+        [
+          "净利润",
+          88136,
+          101832
+        ],
+        [
+          "资本开支",
+          44477,
+          64551
+        ],
+        [
+          "折旧摊销",
+          22287,
+          34153
+        ]
+      ],
+      "claim_ids": [
+        "C13",
+        "C12"
+      ]
+    }
+  ],
+  "quality": {
+    "statements": {
+      "schema_version": 1,
+      "entity": "MSFT",
+      "currency": "USD",
+      "scale": "million",
+      "as_of": "2026-11-14T00:00:00Z",
+      "periods": [
+        {
+          "id": "FY2024",
+          "period_type": "fy",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "revenue": {
+            "value": 245122,
+            "claim_ids": [
+              "C1"
+            ]
+          },
+          "gross_profit": {
+            "value": 171008,
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          "operating_profit": {
+            "value": 109433,
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          "net_income": {
+            "value": 88136,
+            "claim_ids": [
+              "C4"
+            ]
+          },
+          "cfo": {
+            "value": 118548,
+            "claim_ids": [
+              "C5"
+            ]
+          },
+          "capex": {
+            "value": 44477,
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          "depreciation_amortization": {
+            "value": 22287,
+            "claim_ids": [
+              "C7"
+            ]
+          },
+          "share_based_comp": {
+            "value": 10734,
+            "claim_ids": [
+              "C8"
+            ]
+          }
+        },
+        {
+          "id": "FY2025",
+          "period_type": "fy",
+          "period_start": "2024-07-01",
+          "period_end": "2025-06-30",
+          "revenue": {
+            "value": 281724,
+            "claim_ids": [
+              "C9"
+            ]
+          },
+          "gross_profit": {
+            "value": 193893,
+            "claim_ids": [
+              "C10"
+            ]
+          },
+          "operating_profit": {
+            "value": 128528,
+            "claim_ids": [
+              "C11"
+            ]
+          },
+          "net_income": {
+            "value": 101832,
+            "claim_ids": [
+              "C12"
+            ]
+          },
+          "cfo": {
+            "value": 136162,
+            "claim_ids": [
+              "C13"
+            ]
+          },
+          "capex": {
+            "value": 64551,
+            "claim_ids": [
+              "C14"
+            ]
+          },
+          "depreciation_amortization": {
+            "value": 34153,
+            "claim_ids": [
+              "C15"
+            ]
+          },
+          "share_based_comp": {
+            "value": 11974,
+            "claim_ids": [
+              "C16"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2024 同口径报表",
+    "baseline_claim_ids": [
+      "C5",
+      "C4"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入",
+      "营业利润",
+      "净利润",
+      "经营现金流",
+      "资本开支"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "利润增长有现金支撑，投入偏扩张"
+      },
+      {
+        "id": "H2",
+        "explanation": "利润增长主要来自会计口径"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "CFO/净利润 大于 1 且资本开支高于折旧"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "CFO/净利润 小于 1 或资本开支低于折旧"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "C13",
+          "C12",
+          "C14",
+          "C15"
+        ],
+        "interpretation": "CFO 1.34 倍净利润、资本开支 1.89 倍折旧，支持 H1、削弱 H2。",
+        "supports": [
+          "H1"
+        ],
+        "weakens": [
+          "H2"
+        ],
+        "next_observation": "下一期资本开支与收入增速",
+        "by": "2027-07-30",
+        "supports_if": "资本开支继续高于折旧且收入增长",
+        "weakens_if": "资本开支高企但收入停滞"
+      }
+    ],
+    "conclusion": "FY2025 利润增长有现金支撑，投入偏扩张；资本开支强度是后续要跟踪的变量。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "本轮用确定性报表筛查，不适用固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题只核对利润质量，不判断价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

@@ -27,6 +27,11 @@
 - **[阅读分部归因报告](examples/msft-segments/research/work/report.md)**
 - **[查看完整案例与命令](examples/msft-segments/README.md)**
 
+**第三个例子：利润增长有现金支撑吗？** 把损益表与现金流量表交叉核对：FY2025 经营现金流是净利润的 **1.34 倍**、资本开支是折旧摊销的 **1.89 倍**、增量利润率约 **52%**——利润有现金支撑，投入偏扩张；红旗筛查未触发，但资本开支强度是后续变量。这个例子演示 `report.quality` 如何嵌入完整报告，以及缺数据时如实留 null。
+
+- **[阅读盈利质量报告](examples/msft-earnings-quality/research/work/report.md)**
+- **[查看完整案例与命令](examples/msft-earnings-quality/README.md)**
+
 ## 用它研究什么
 
 - **解释变化**：公司为什么下跌？比较实际表现、背景和新增证据，区分不同解释。

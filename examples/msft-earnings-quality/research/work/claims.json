@@ -1,0 +1,419 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "MSFT FY2024 revenue 245122 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 245122,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C2",
+      "text": "MSFT FY2024 gross_profit 171008 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "gross_profit",
+        "value": 171008,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C3",
+      "text": "MSFT FY2024 operating_profit 109433 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_profit",
+        "value": 109433,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C4",
+      "text": "MSFT FY2024 net_income 88136 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "net_income",
+        "value": 88136,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C5",
+      "text": "MSFT FY2024 cfo 118548 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "cfo",
+        "value": 118548,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C6",
+      "text": "MSFT FY2024 capex 44477 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "capex",
+        "value": 44477,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C7",
+      "text": "MSFT FY2024 depreciation_amortization 22287 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "depreciation_amortization",
+        "value": 22287,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C8",
+      "text": "MSFT FY2024 share_based_comp 10734 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "share_based_comp",
+        "value": 10734,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2023-07-01",
+        "period_end": "2024-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C9",
+      "text": "MSFT FY2025 revenue 281724 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "revenue",
+        "value": 281724,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C10",
+      "text": "MSFT FY2025 gross_profit 193893 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "gross_profit",
+        "value": 193893,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C11",
+      "text": "MSFT FY2025 operating_profit 128528 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "operating_profit",
+        "value": 128528,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C12",
+      "text": "MSFT FY2025 net_income 101832 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "net_income",
+        "value": 101832,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C13",
+      "text": "MSFT FY2025 cfo 136162 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "cfo",
+        "value": 136162,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C14",
+      "text": "MSFT FY2025 capex 64551 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "capex",
+        "value": 64551,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C15",
+      "text": "MSFT FY2025 depreciation_amortization 34153 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "depreciation_amortization",
+        "value": 34153,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "C16",
+      "text": "MSFT FY2025 share_based_comp 11974 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "metric": {
+        "name": "share_based_comp",
+        "value": 11974,
+        "unit": "USD million",
+        "period_type": "fy",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "entity": "MSFT",
+        "scope": "consolidated",
+        "currency": "USD",
+        "scale": "million",
+        "basis": "gaap",
+        "locator": "官方年报"
+      }
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "FY2025 利润增长有现金支撑，同时资本开支强度显著上升",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "C13",
+        "C12",
+        "C14",
+        "C15"
+      ]
+    }
+  ]
+}

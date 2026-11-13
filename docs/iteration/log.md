@@ -4,6 +4,57 @@
 
 ---
 
+## Cycle 53 · 2026-11-14 · 第三个真实示例：盈利质量
+
+**对应卡片**：示例覆盖面（Cycle 51 遗留：不同问题形态缺示例）
+
+**问题**：已有示例分别覆盖「现金流变化解释」与「分部利润归因」；盈利质量这一常用方法只有工具演示（`examples/msft-quality`），没有完整研究 run，`report.quality` 嵌入报告只在测试里出现过。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `examples/msft-earnings-quality/`（新） | 完整 plan/claims/sources/report + `report.quality` + 同源 Markdown/HTML + SHA256 清单 + README |
+| README | 第三个案例入口 |
+| CHANGELOG | 0.54.0 |
+
+**示例结论**
+
+- 经营现金流 136,162 是净利润 101,832 的 1.34 倍；资本开支 64,551 是折旧摊销 34,153 的 1.89 倍；增量利润率约 52%。
+- 判断：利润增长有现金支撑，投入偏扩张；红旗筛查未触发，资本开支强度（占收入 22.9%）是后续变量。
+- 竞争解释 H1（现金支撑）与 H2（会计驱动），区分检验 T1 观测 CFO/净利润与资本开支/折旧，支持 H1、削弱 H2。
+
+**关键设计决定**
+
+1. **第三种问题形态**：`change_explanation` + 质量筛查，与前两个示例（现金流桥、分部归因）互补，覆盖「判断质量」而非「解释变化」或「拆解增量」。
+2. **质量嵌入真实报告**：两期 8 字段全部带 claim_ids，质量表、红旗、未挂字段都从冻结输入重算；memo 也已包含质量小节。
+3. **缺数据如实留白**：没有应收/存货/总资产，应计与周转为 null 并在限制中说明——示例本身演示「不知道就说不知道」。
+4. **测试与 CI 自动覆盖**：新增示例不需改测试；示例测试遍历 `examples/*/`，CI 循环同样自动纳入。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 497 tests ... OK
+python3 scripts/memo_pack.py examples/msft-earnings-quality/research/work/report.json   --claims examples/msft-earnings-quality/research/work/claims.json   --sources examples/msft-earnings-quality/research/work/sources.json
+```
+
+- 契约：0 错误；渲染与冻结 md/html 一致；哈希清单 6 个文件匹配。
+- memo：含「质量红旗 — 未触发默认红旗阈值；这不等于没有风险」与「接下来看什么」的 dated catalyst。
+- 过程摩擦：README 最初把 `quality_inputs.py` 写成 `--claims` 参数，实际是位置参数；按 CLI 实际用法改正。这说明示例命令也要真跑一遍。
+
+**投研意义增量**
+
+1. 三个示例覆盖三种研究方法，且都基于真实披露。
+2. `report.quality` 从测试用例变成可阅读的交付物。
+3. 缺数据留白的写法有了范例。
+
+**遗留**
+
+- 示例只有两个财年，趋势类判断仍无案例。
+- 质量筛查未覆盖应收/存货/总资产，需要年报原文补数据才能演示应计与周转。
+- 第三个示例的结论依赖「资本开支=扩张」的解读，示例内已注明边界。
+
 ## Cycle 52 · 2026-11-14 · 体检可选重渲染与标准库同名守卫
 
 **对应卡片**：P2-7 遗留（体检不含渲染）与 Cycle 49 遗留（标准库同名）

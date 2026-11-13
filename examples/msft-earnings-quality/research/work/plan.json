@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "question": "微软 FY2025 的利润增长有现金支撑吗？",
+  "type": "asset",
+  "task": "盈利质量筛查",
+  "entity": "Microsoft",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断利润增长是否有现金流支撑、资本开支是否在透支",
+  "prior_judgment": "公开叙事强调利润增长，现金与投入结构需要核对",
+  "comparison": {
+    "period": "FY2025 对 FY2024",
+    "unit": "ratio 与 USD million",
+    "scope": "合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "两期关键报表数字取得并可确定性计算",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "用现金流、资本开支与股权激励交叉核对利润质量",
+    "baseline": "FY2024 同口径报表",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入",
+      "营业利润",
+      "净利润",
+      "经营现金流",
+      "资本开支"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "CFO/净利润 与资本开支/折旧",
+        "source": "官方现金流量表",
+        "by": "下一份年报",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "CFO/净利润 大于 1 且资本开支高于折旧"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "CFO/净利润 小于 1 或资本开支低于折旧"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "利润增长有现金支撑，投入偏扩张",
+      "discriminating_observation": "CFO 高于净利润且资本开支高于折旧"
+    },
+    {
+      "id": "H2",
+      "explanation": "利润增长主要来自会计口径",
+      "discriminating_observation": "CFO 低于净利润"
+    }
+  ],
+  "queries": [
+    {
+      "question": "两期 CFO、净利润、资本开支与折旧",
+      "query": "MSFT FY2025 cash flow capex D&A",
+      "source": "官方年报现金流量表",
+      "purpose": "核对现金支撑",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}
