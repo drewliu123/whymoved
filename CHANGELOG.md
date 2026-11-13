@@ -4,6 +4,18 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.18.0 · 从主张账本装配质量报表
+
+`financial_quality.py` 需要一份标准化报表文档；手写它等于把转录风险搬回来。新增 [quality_inputs.py](scripts/quality_inputs.py)，从账本里的 `claim.metric` 直接装配，字段仍指回 claim id。
+
+- 映射：中英文指标名按别名表映射到 17 个报名字段（「营业收入」→revenue、SBC→share_based_comp、D&A→depreciation_amortization 等），映射不到的不猜，列进 `ignored`。
+- 期间：只取 fy / quarter / ltm 且同时有 `period_start`/`period_end`、`scope=consolidated` 的 metric；`instant`、分部、缺日期都会被跳过并写明原因。
+- 冲突：同一期间同一字段两个不同数值直接失败并列出；数值相同则合并 claim id。
+- 口径：`currency`/`scale` 必须唯一可推断，否则用 `--currency`/`--scale` 显式给出；`tax_rate` 的 percent 自动换算为小数；多实体需 `--entity`；至少两个可比期间。
+- 输出保留 `claim_ids`/`source_claims`，因此 `financial_quality` 的 `unattributed` 为空——数字真的接回了证据。
+- 测试：新增 [test_quality_inputs.py](tests/test_quality_inputs.py) 9 个用例（装配、别名与换算、忽略原因、冲突、合并、结构失败、口径、CLI 端到端），全套 349 个测试通过。
+- 文档：financial-quality 增「从主张账本装配」，evidence 与 architecture 补入口。
+
 ## 0.17.1 · 可比公司分位补齐
 
 `relative_valuation` 已经给出「现价隐含多少倍」，但没说这个倍数在 peer 分布里处于什么位置。新增 `implied_multiple_percentile`：现价隐含倍数严格高于多少 proportion 的 peer 倍数（0 表示最低，1 表示最高）。

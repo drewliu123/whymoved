@@ -42,6 +42,7 @@ flowchart TD
 | [check_claims.py](../scripts/check_claims.py) | 主张引用、来源资格、时间及推断关系校验 |
 | [metrics.py](../scripts/metrics.py) | 可选结构化数值事实（claim.metric）的形状、期间与比较口径校验及导出 |
 | [financial_quality.py](../scripts/financial_quality.py) | 两期以上报表的利润率、现金转化、周转、资本开支与红旗筛查 |
+| [quality_inputs.py](../scripts/quality_inputs.py) | 从claim.metric装配盈利质量所需的标准化报表，保留证据引用 |
 | [calendar.py](../scripts/calendar.py) | 已冻结报告的催化日期汇总（upcoming / overdue / undated），只读、不监控 |
 | [research_memory.py](../scripts/research_memory.py) | 跨轮次研究记忆索引与当时视角查询，只存指针、不改归档 |
 | [consensus.py](../scripts/consensus.py) | 一致预期快照、修订与指引/共识分离，只读计算 |

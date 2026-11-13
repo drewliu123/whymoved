@@ -4,6 +4,55 @@
 
 ---
 
+## Cycle 14 · 2026-11-14 · 从主张账本装配质量报表
+
+**对应卡片**：P1-5（新增；把 P0-2 与 P0-0b 接起来）
+
+**问题**：`financial_quality.py` 需要一份手写报表 JSON。这就把「数字必须回到证据」的原则在最后一步丢掉了：手抄时可以抄错、可以悄悄换口径，而质量筛查输出又会带着这些数字进入研究判断。
+
+**改动**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/quality_inputs.py`（新） | 从 `claim.metric` 装配 statements：中英文别名映射、期间分组、冲突拒绝、口径推断、`ignored` 原因、`--entity/--currency/--scale/--out` |
+| `tests/test_quality_inputs.py`（新） | 9 个用例：装配并喂给筛查器、别名与 percent 换算、忽略原因、冲突、重复值合并、结构失败、口径、CLI 端到端 |
+| 文档 | financial-quality 增装配章节；evidence 与 architecture 补入口；CHANGELOG 0.18.0 |
+
+**关键设计决定**
+
+1. **不猜名字**：映射表覆盖 17 个字段的中英别名，映射不到就进 `ignored`，绝不按模糊相似度匹配。
+2. **冲突即失败**：同期同字段两个不同数值，直接报错并列出两个 claim；相同数值才合并 claim id。质量筛查输入不允许「取一个看着对的」。
+3. **口径必须唯一**：`currency`/`scale` 从 metric 推断；出现多个值就要求显式传参，而不是取第一个。
+4. **保留证据链**：每个字段输出 `{value, claim_ids}`，`source_claims` 汇总；因此 `financial_quality` 的 `unattributed` 为空——这条链路第一次真正做到「每个数字可回到 claim」。
+5. **只做装配**：不做任何质量计算、不产生 claims、不判断对错。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 349 tests ... OK
+```
+
+- 端到端：8 个 metric × 2 个财年 → statements 通过 `financial_quality.validate_document`，`analyse` 得到 gross_margin 0.5；CLI 先 `quality_inputs --out` 再 `financial_quality` 均退出 0。
+- 别名：`营业收入` 映射 revenue；`有效税率` 21（percent）→ 0.21。
+- 忽略：未知指标名、instant、缺 period_start、分部、实体不匹配各自给出不同原因。
+- 冲突：同期间 revenue 1100 与 999 → `conflicting values` 并列出两个 claim。
+- 合并：同值重复 → 两个 claim id 都进 `claim_ids`。
+- 口径：去掉 currency 后要求显式传参；传入后成功。
+- 冻结示例：`report.md` / `report.html` 逐字节相同。
+
+**投研意义增量**
+
+1. 多一条端到端链路：披露 → claim.metric → 质量筛查 → 判断，中间不再有手抄。
+2. 多回答一类问题：「这段增长是现金还是会计」，且每个数字都可追溯。
+3. 边界更清楚：不猜字段、不取巧冲突、口径必须显式。
+
+**遗留**
+
+- `guidance` 与 `consensus` 尚未进入装配（它们是预期，不是历史报表字段）。
+- 别名表是静态的；不同行业的自定义指标（如 ARR、bookings）暂不支持，需扩展白名单而不是放宽匹配。
+- 分部报表装配（segment scope）未做；质量筛查目前只支持合并口径。
+
 ## Cycle 13 · 2026-11-14 · 可比公司分位补齐
 
 **对应卡片**：P0-1 遗留项

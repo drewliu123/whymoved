@@ -116,7 +116,7 @@ fact / price / consensus 主张可加可选`metric`块，把数字连同单位�
 python3 "$TY_DIR/scripts/metrics.py" "$WORK/claims.json"
 ```
 
-打印`{passed, metrics, failures}`。metric块会进入Markdown/HTML附录的「数值事实」表；没有metric的账本渲染结果不变。SEC取证得到的`period_type`、YTD/quarter与分部维度应直接写入metric，而不是只留在文本里。
+打印`{passed, metrics, failures}`。metric块会进入Markdown/HTML附录的「数值事实」表；没有metric的账本渲染结果不变。若要做盈利质量筛查，用`scripts/quality_inputs.py`从metric装配报表输入，不要手抄（见[financial-quality.md](financial-quality.md)）。SEC取证得到的`period_type`、YTD/quarter与分部维度应直接写入metric，而不是只留在文本里。
 
 获取状态access_status与source_status分开：前者ok/snippet/failed；后者使用ok/partial/no_results/not_run/error/rate_limited/auth_failed/payment_required/unreachable/timeout/schema_drift。字段用具体契约枚举，文字描述可说明失败原因。
 

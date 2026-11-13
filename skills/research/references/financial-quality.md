@@ -34,6 +34,25 @@ python3 "$TY_DIR/scripts/financial_quality.py" "$WORK/statements.json" [--out "$
 - 数值字段可写裸数字，或 `{"value": 120, "claim_ids": ["C3"]}`。没有 `claim_ids` 的字段会列在输出的 `unattributed` 里——这是证据链尚未接上的提示，不是错误。
 - 未列出的字段名直接拒绝（FQ1），避免把 `ebitda`、`fcf` 之类的自定义口径悄悄塞进来。所有比率输出为小数（0.42 而非 42%）。
 
+## 从主张账本装配
+
+手写报表 JSON 等于把转录风险搬回来。若账本里已经有 `claim.metric`，用适配器直接装配：
+
+```bash
+python3 "$TY_DIR/scripts/quality_inputs.py" "$WORK/claims.json" \
+  --entity "EXAMPLE" --out "$WORK/statements.json"
+python3 "$TY_DIR/scripts/financial_quality.py" "$WORK/statements.json"
+```
+
+规则：
+
+- 只取 `period_type` 为 fy / quarter / ltm、同时有 `period_start` 与 `period_end`、`scope=consolidated` 的 metric；`instant`、分部、缺起止日期的会被列进 `ignored` 并写明原因。
+- 指标名按别名表映射（中英文皆可，如「营业收入」→revenue、「SBC」→share_based_comp）；映射不到的名字不会猜。
+- 同一期间同一字段出现两个不同数值 → 直接失败并列出冲突，不静默取一个；数值相同则合并 `claim_ids`。
+- `currency` 与 `scale` 必须能从账本唯一推断，否则用 `--currency` / `--scale` 显式给出；`tax_rate` 的 percent 会换算成小数。
+- 输出仍保留每个字段的 `claim_ids` 与 `source_claims`，`financial_quality` 的 `unattributed` 因此为空。
+- 多实体账本必须 `--entity` 选择；至少两个可比期间，否则拒绝。
+
 ## 输出指标
 
 | 指标 | 公式 | 说明 |
