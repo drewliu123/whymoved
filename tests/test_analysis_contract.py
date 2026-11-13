@@ -293,6 +293,56 @@ class AnalysisContractTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.check(data)
 
+    def test_tornado_replaces_sensitivity_and_renders_ranked(self):
+        data = bundle("operating_outlook")
+        model = add_model(data[0], data[1], "operating_bridge")
+        spec = model["spec"]
+        spec["sensitivity"] = []
+        spec["tornado"] = {"output": "profit", "inputs": [
+            {"input": "scenario_margin", "low": .1, "high": .2},
+            {"input": "revenue_growth", "low": .2, "high": .4}]}
+        model["result"] = analysis_models.compute_model(spec)
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            for word in ("龙卷风敏感性（按影响排序）", "变动幅度", "scenario_margin", "revenue_growth", "不是联合情景"):
+                self.assertIn(word, text)
+
+    def test_tornado_validation_in_contract(self):
+        for mutate in (
+            lambda s: s.update(tornado={"output": "profit", "inputs": [{"input": "missing", "low": 1, "high": 2}]}),
+            lambda s: s.update(tornado={"output": "profit", "inputs": [{"input": "growth", "low": 1, "high": 1}]}),
+            lambda s: s.update(tornado={"output": "profit", "inputs": []}),
+            lambda s: s.update(tornado={"output": "", "inputs": [{"input": "growth", "low": 1, "high": 2}]}),
+            lambda s: s.update(tornado={"output": "profit", "inputs": [{"input": "growth", "low": 1, "high": 2}], "extra": 1}),
+            lambda s: s.update(tornado={"output": "profit", "inputs": [{"input": "growth", "low": 1, "high": 2},
+                                                                      {"input": "growth", "low": 3, "high": 4}]}),
+        ):
+            data = bundle("operating_outlook")
+            model = add_model(data[0], data[1], "operating_bridge")
+            model["spec"]["sensitivity"] = []
+            mutate(model["spec"])
+            with self.assertRaises(ValueError):
+                self.check(data)
+
+    def test_empty_sensitivity_without_tornado_is_rejected(self):
+        data = bundle("operating_outlook")
+        add_model(data[0], data[1], "operating_bridge")
+        data[0]["analysis"]["models"][0]["spec"]["sensitivity"] = []
+        with self.assertRaisesRegex(ValueError, "sensitivity sweep or a tornado"):
+            self.check(data)
+
+    def test_tornado_tampering_fails_recomputation(self):
+        data = bundle("operating_outlook")
+        model = add_model(data[0], data[1], "operating_bridge")
+        model["spec"]["sensitivity"] = []
+        model["spec"]["tornado"] = {"output": "profit", "inputs": [
+            {"input": "scenario_margin", "low": .1, "high": .2}]}
+        model["result"] = analysis_models.compute_model(model["spec"])
+        model["result"]["tornado"][0]["swing"] = 999
+        with self.assertRaisesRegex(ValueError, "recomputation"):
+            self.check(data)
+
     def test_driver_build_supports_operating_outlook(self):
         data = bundle("operating_outlook")
         model = add_model(data[0], data[1], "driver_build")

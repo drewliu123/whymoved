@@ -600,6 +600,14 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
         yield ("table", {"title": "单参数敏感性（其余输入固定）", "columns": ["变量", "改为", "单位", "输出", "结果", "结果单位"],
                          "rows": [[row["input"], row["value"], row["unit"], name, v["value"], v["unit"]] for row in model["result"]["sensitivity"] for name, v in row["outputs"].items()],
                          "claim_ids": model["output_claim_ids"]})
+        tornado_rows = model["result"].get("tornado")
+        if tornado_rows:
+            yield ("table", {"title": "龙卷风敏感性（按影响排序）",
+                             "columns": ["输入", "低值", "高值", "输出（低）", "输出（高）", "变动幅度"],
+                             "rows": [[row["input"], row["low"], row["high"], row["low_output"]["value"],
+                                       row["high_output"]["value"], row["swing"]] for row in tornado_rows],
+                             "claim_ids": model["output_claim_ids"]})
+            yield ("p", "龙卷风逐项移动一个输入，不是联合情景；变动幅度是同一输出在两端之差。")
     yield ("p", "固定模型的数值已重算；来源含义、假设合理性与因果解释仍需研究审查。敏感性结果不是统计置信区间。")
 
 

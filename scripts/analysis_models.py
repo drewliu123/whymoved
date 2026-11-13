@@ -5,6 +5,12 @@ Units are canonical labels: currency, ratio, year, shares, currency/share, count
 All currency and share quantities in one spec must use consistent scaling.
 Evidence semantics of role and claim_ids are validated by the caller.
 
+A spec may carry a `tornado` block instead of (or alongside) `sensitivity`:
+{"output": "<output name>", "inputs": [{"input": "<input>", "low": 0.08,
+"high": 0.10}, ...]}. Each input is moved to its low and high value and the
+selected output swing is ranked, making clear which assumption moves the
+answer most. Tornado rows are arithmetic, not a joint scenario.
+
 driver_build additionally accepts a `segments` list (name, base_revenue,
 volume_growth, price_growth, margin, claim_ids) and decomposes revenue into
 base, volume, price and interaction effects. It is arithmetic on stated
@@ -337,7 +343,7 @@ def compute_model(spec):
     Raises ValueError for malformed specs, invalid ranges, overflow, or an
     unbracketed reverse valuation. Does not mutate the supplied spec.
     """
-    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers", "segments"), "spec")
+    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers", "segments", "tornado"), "spec")
     kind = spec["kind"]
     if not isinstance(kind, str) or kind not in MODEL_UNITS:
         raise ValueError("unknown model kind")
@@ -385,6 +391,31 @@ def compute_model(spec):
             raise ValueError("sensitivity values must be a nonempty list")
         for value in row["values"]:
             _number(value, "sensitivity " + name)
+    tornado_rows = []
+    tornado = spec.get("tornado")
+    if tornado is not None:
+        if not isinstance(tornado, dict):
+            raise ValueError("tornado must be an object")
+        _fields(tornado, ("output", "inputs"), (), "tornado")
+        if not isinstance(tornado["output"], str) or not tornado["output"].strip():
+            raise ValueError("tornado.output must name an existing model output")
+        entries = tornado["inputs"]
+        if not isinstance(entries, list) or not entries:
+            raise ValueError("tornado.inputs must be a nonempty list")
+        seen_tornado = set()
+        for row in entries:
+            _fields(row, ("input", "low", "high"), (), "tornado entry")
+            name = row["input"]
+            if not isinstance(name, str) or name not in units:
+                raise ValueError("tornado input must name a model input")
+            if name in seen_tornado:
+                raise ValueError("duplicate tornado input: " + name)
+            seen_tornado.add(name)
+            if kind == "reverse_dcf" and name in ("growth_low", "growth_high", "years"):
+                raise ValueError("reverse_dcf tornado cannot change " + name)
+            low, high = _number(row["low"], "tornado " + name + " low"), _number(row["high"], "tornado " + name + " high")
+            if low == high:
+                raise ValueError("tornado " + name + " requires two different values")
     try:
         outputs = _calculate(kind, values, peers, segments)
         sensitivity = []
@@ -394,9 +425,28 @@ def compute_model(spec):
                 changed = dict(values, **{name: value})
                 sensitivity.append({"input": name, "value": value, "unit": units[name],
                                     "outputs": _calculate(kind, changed, peers, segments)})
+        if tornado is not None:
+            target = tornado["output"]
+            if target not in outputs:
+                raise ValueError("tornado.output is not defined for this model")
+            for row in tornado["inputs"]:
+                name, low, high = row["input"], row["low"], row["high"]
+                low_outputs = _calculate(kind, dict(values, **{name: low}), peers, segments)
+                high_outputs = _calculate(kind, dict(values, **{name: high}), peers, segments)
+                if target not in low_outputs or target not in high_outputs:
+                    raise ValueError("tornado.output is not defined at the swept values of " + name)
+                low_value, high_value = low_outputs[target]["value"], high_outputs[target]["value"]
+                tornado_rows.append({"input": name, "output": target,
+                                     "low": low, "high": high,
+                                     "low_output": low_outputs[target], "high_output": high_outputs[target],
+                                     "swing": _number(abs(high_value - low_value), "tornado swing")})
+            tornado_rows.sort(key=lambda item: (-item["swing"], item["input"]))
     except (OverflowError, ZeroDivisionError) as exc:
         raise ValueError("model arithmetic overflow or singular denominator") from exc
-    return {"outputs": outputs, "sensitivity": sensitivity}
+    result = {"outputs": outputs, "sensitivity": sensitivity}
+    if tornado is not None:
+        result["tornado"] = tornado_rows
+    return result
 
 
 def main():

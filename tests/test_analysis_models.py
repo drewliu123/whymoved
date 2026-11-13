@@ -330,6 +330,78 @@ class ModelTests(unittest.TestCase):
             self.assertEqual(sorted(p.name for p in Path(directory).iterdir()), ["input.json"])
 
 
+class TornadoTests(unittest.TestCase):
+    def tornado_spec(self, output="per_share", entries=None):
+        item = spec("dcf")
+        item["sensitivity"] = []
+        item["tornado"] = {"output": output, "inputs": entries or [
+            {"input": "discount_rate", "low": .08, "high": .12},
+            {"input": "growth", "low": .05, "high": .15},
+            {"input": "terminal_growth", "low": .0, "high": .02}]}
+        return item
+
+    def test_ranked_by_swing_and_outputs_match_forward_runs(self):
+        item = self.tornado_spec()
+        result = compute_model(item)
+        self.assertNotIn("sensitivity", result["outputs"])
+        self.assertIn("tornado", result)
+        swings = [row["swing"] for row in result["tornado"]]
+        self.assertEqual(swings, sorted(swings, reverse=True))
+        self.assertEqual({row["input"] for row in result["tornado"]},
+                         {"discount_rate", "growth", "terminal_growth"})
+        for row in result["tornado"]:
+            expected_low = compute_model(spec("dcf", **{row["input"]: row["low"]}))["outputs"]["per_share"]
+            expected_high = compute_model(spec("dcf", **{row["input"]: row["high"]}))["outputs"]["per_share"]
+            self.assertEqual(row["low_output"], expected_low)
+            self.assertEqual(row["high_output"], expected_high)
+            self.assertAlmostEqual(row["swing"], abs(expected_high["value"] - expected_low["value"]))
+            self.assertEqual(row["output"], "per_share")
+
+    def test_tornado_alone_is_enough_at_the_model_level(self):
+        item = self.tornado_spec()
+        del item["sensitivity"]
+        self.assertIn("tornado", compute_model(item))
+
+    def test_tornado_validation(self):
+        cases = [
+            lambda t: t.update(output="missing_output"),
+            lambda t: t.update(output=""),
+            lambda t: t.update(inputs=[]),
+            lambda t: t.update(inputs=[{"input": "nope", "low": 1, "high": 2}]),
+            lambda t: t.update(inputs=[{"input": "growth", "low": 1, "high": 1}]),
+            lambda t: t.update(inputs=[{"input": "growth", "low": "1", "high": 2}]),
+            lambda t: t.update(inputs=[{"input": "growth", "low": 1}]),
+            lambda t: t.update(inputs=[{"input": "growth", "low": 1, "high": 2, "extra": 1}]),
+            lambda t: t.update(extra=1),
+            lambda t: t.update(inputs=[{"input": "growth", "low": .1, "high": .2},
+                                       {"input": "growth", "low": .3, "high": .4}]),
+        ]
+        for mutate in cases:
+            item = self.tornado_spec()
+            mutate(item["tornado"])
+            with self.subTest(mutate=mutate), self.assertRaises(ValueError):
+                compute_model(item)
+        for invalid in ("tornado", [], 1):
+            item = self.tornado_spec()
+            item["tornado"] = invalid
+            with self.assertRaises(ValueError):
+                compute_model(item)
+
+    def test_reverse_dcf_cannot_sweep_solver_bounds(self):
+        item = spec("reverse_dcf")
+        item["sensitivity"] = []
+        item["tornado"] = {"output": "implied_growth", "inputs": [{"input": "growth_low", "low": -.4, "high": -.6}]}
+        with self.assertRaisesRegex(ValueError, "cannot change"):
+            compute_model(item)
+
+    def test_output_missing_at_one_end_is_an_error(self):
+        item = spec("operating_bridge")
+        item["sensitivity"] = []
+        item["tornado"] = {"output": "profit_growth", "inputs": [{"input": "base_margin", "low": .2, "high": -.2}]}
+        with self.assertRaisesRegex(ValueError, "not defined at the swept"):
+            compute_model(item)
+
+
 class DriverBuildTests(unittest.TestCase):
     def test_revenue_and_profit_decomposition(self):
         result = compute_model(spec("driver_build"))

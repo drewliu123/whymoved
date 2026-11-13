@@ -161,7 +161,7 @@ metric必须为正：亏损、负EBITDA或负收入不能用倍数法，应改�
 }
 ```
 
-observed引用fact / price / consensus；assumption引用inference / view。wrapper.assumptions逐输入名映射理由，键集合恰好等于假设输入集合。每个模型必须有至少一项单参数sensitivity、至少两个不同取值，每次只改一个输入，其余固定；reverse_dcf敏感性不能改growth_low / growth_high / years。解释参数范围，不把单参数扫描当联合情景预测。
+observed引用fact / price / consensus；assumption引用inference / view。wrapper.assumptions逐输入名映射理由，键集合恰好等于假设输入集合。每个模型必须有至少一项单参数sensitivity、至少两个不同取值，每次只改一个输入，其余固定；reverse_dcf敏感性不能改growth_low / growth_high / years。可用`tornado`替代sensitivity：`{"output": "<输出名>", "inputs": [{"input": "<输入>", "low": 0.08, "high": 0.10}, ...]}`，逐输入推到低/高两端并按选定输出的变动幅度排序；`output`必须是该模型确实输出的名称且在被扫两端都存在，否则报错。解释参数范围，不把单参数扫描或龙卷风当联合情景预测。
 
 以下是独立虚构经营示例，不与前文共用C编号。C1/C2为收入及利润率fact，C3/C4为有依据的假设inference或view；C5为输出inference，basis至少包含C1、C2、C3、C4。把spec对象单独保存为model-spec.json，wrapper留在report.analysis.models。
 

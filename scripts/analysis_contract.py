@@ -417,13 +417,53 @@ def validate_analysis(analysis, claims, design=None, hypotheses=None, sources=No
         except (ValueError, TypeError, OverflowError, ImportError) as exc:
             errors.append(path + ": " + str(exc))
         sensitivity = spec.get("sensitivity")
-        if not isinstance(sensitivity, list) or not sensitivity:
-            errors.append(path + ".spec.sensitivity requires at least one parameter sweep")
-        else:
+        tornado = spec.get("tornado")
+        if tornado is None and (not isinstance(sensitivity, list) or not sensitivity):
+            errors.append(path + ".spec requires at least one sensitivity sweep or a tornado block")
+        if sensitivity is not None and not isinstance(sensitivity, list):
+            errors.append(path + ".spec.sensitivity must be a list")
+        elif isinstance(sensitivity, list) and sensitivity:
             for sweep in sensitivity:
                 values = sweep.get("values") if isinstance(sweep, dict) else None
                 if not isinstance(values, list) or len({v for v in values if type(v) in (int, float)}) < 2:
                     errors.append(path + ".spec.sensitivity needs at least two different parameter values")
+        if tornado is not None:
+            if not isinstance(tornado, dict):
+                errors.append(path + ".spec.tornado must be an object")
+            else:
+                extra = set(tornado) - {"output", "inputs"}
+                if extra:
+                    errors.append(path + ".spec.tornado has unknown fields: " + ", ".join(sorted(map(str, extra))))
+                if not _text(tornado.get("output")):
+                    errors.append(path + ".spec.tornado.output must name a model output")
+                entries = tornado.get("inputs")
+                inputs = spec.get("inputs") if isinstance(spec.get("inputs"), dict) else {}
+                if not isinstance(entries, list) or not entries:
+                    errors.append(path + ".spec.tornado.inputs must be a nonempty list")
+                else:
+                    seen_tornado = set()
+                    for n, row in enumerate(entries):
+                        tpath = path + ".spec.tornado.inputs[%d]" % n
+                        if not isinstance(row, dict):
+                            errors.append(tpath + " must be an object")
+                            continue
+                        extra = set(row) - {"input", "low", "high"}
+                        if extra:
+                            errors.append(tpath + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
+                        name = row.get("input")
+                        if not isinstance(name, str) or name not in inputs:
+                            errors.append(tpath + ".input must name a model input")
+                        elif name in seen_tornado:
+                            errors.append(tpath + ".input duplicates another tornado input")
+                        else:
+                            seen_tornado.add(name)
+                            if spec.get("kind") == "reverse_dcf" and name in ("growth_low", "growth_high", "years"):
+                                errors.append(tpath + " cannot change " + name)
+                        low, high = row.get("low"), row.get("high")
+                        if type(low) not in (int, float) or type(high) not in (int, float):
+                            errors.append(tpath + ".low and .high must be numbers")
+                        elif low == high:
+                            errors.append(tpath + " requires two different values")
     model_status = analysis.get("model_status")
     if not isinstance(model_status, str) or model_status not in {"computed", "missing", "not_applicable"}:
         errors.append("analysis.model_status must be computed/missing/not_applicable")
