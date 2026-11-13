@@ -12,7 +12,7 @@ export PYTHONDONTWRITEBYTECODE=1
 python3 -m unittest discover -s tests
 ```
 
-当前基线为 493 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
+当前基线为 494 个测试，以命令实际输出为准。测试用临时数据目录隔离大部分写入；显式设置数据根也可避免手工 CLI 命令落入历史默认目录。不要为运行核心测试安装 EdgarTools，也不要把第三方子模块自己的测试混入这个入口。
 
 ## 离线示例回归
 
@@ -49,7 +49,7 @@ python3 scripts/render_report.py examples/msft-cashflow/research/work/report.jso
 
 ## CI 覆盖范围
 
-[离线工作流](../.github/workflows/tests.yml)在 Python 3.9 / 3.11 / 3.12 下运行单元测试、两个示例算术脚本、来源与证据契约、分析契约以及 Markdown/HTML 渲染。运行数据写到 runner 的临时目录，不安装核心 pip 依赖，也不初始化第三方子模块。
+[离线工作流](../.github/workflows/tests.yml)在 Python 3.9 / 3.11 / 3.12 下运行单元测试、示例算术脚本，并遍历 `examples/*/` 逐个校验哈希、来源与证据契约、分析契约以及 Markdown/HTML 渲染。运行数据写到 runner 的临时目录，不安装核心 pip 依赖，也不初始化第三方子模块。
 
 “离线”指这些检查不调用真实数据服务或模型；GitHub runner 获取代码及 Python 工具链仍需要平台网络。SEC 与金融接口的单元测试使用模拟响应。CI 通过不能代表真实 SEC 联网、账户权限、Claude Code 插件安装或浏览器视觉交互已验证。这些能力需在本机按实际环境单独检查，并如实记录状态和限制。
 
@@ -71,7 +71,7 @@ python3 scripts/render_report.py examples/msft-cashflow/research/work/report.jso
 4. **参考文档**：在 `skills/research/references/` 增加或更新说明，并在 [索引](../skills/research/references/README.md) 登记。
 5. **入口表**：`docs/architecture.md` 的主代码入口表加一行。
 6. **版本与记录**：`CHANGELOG.md` 加条目；`.claude-plugin/plugin.json` 与 `marketplace.json` 版本同步（`tests/test_packaging.py` 会检查三者一致）；`docs/iteration/log.md` 记本轮目标、改动、验证证据与遗留。
-7. **回归**：`python3 -m unittest discover -s tests` 全绿；`examples/msft-cashflow/SHA256.json` 校验通过；冻结报告重新渲染逐字节相同；`tests/test_archive_regression.py` 会加载 `journal/runs` 下每个真实归档，确保新契约不破坏旧档案。
+7. **回归**：`python3 -m unittest discover -s tests` 全绿；`tests/test_archive_regression.py` 会重渲染每个真实归档并与冻结的 `report.md` / `report.html` 逐字节比对；`examples/msft-cashflow/SHA256.json` 校验通过；冻结报告重新渲染逐字节相同；`tests/test_archive_regression.py` 会加载 `journal/runs` 下每个真实归档，确保新契约不破坏旧档案。
 8. **不伪造**：缺失写 `missing`/`null` 并说明原因；cannot verify（例如缩放不可解析）与 error 分开处理。
 
 ## 提交前复查
