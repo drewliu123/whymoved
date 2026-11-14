@@ -1014,6 +1014,110 @@
           "source_id": "S1"
         }
       ]
+    },
+    {
+      "id": "PXH-AAPL-22",
+      "text": "AAPL 2022-09-30 收盘 138.2 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-AAPL-22"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-AAPL-22",
+      "text": "AAPL FY2022 稀释加权股数 16325.8 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-AAPL-23",
+      "text": "AAPL 2023-09-29 收盘 171.21 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-AAPL-23"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-AAPL-23",
+      "text": "AAPL FY2023 稀释加权股数 15812.5 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-AAPL-24",
+      "text": "AAPL 2024-09-27 收盘 227.79 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-AAPL-24"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-AAPL-24",
+      "text": "AAPL FY2024 稀释加权股数 15408.1 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-AAPL-25",
+      "text": "AAPL 2025-09-26 收盘 255.46 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-AAPL-25"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-AAPL-25",
+      "text": "AAPL FY2025 稀释加权股数 15004.7 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PX-AAPL",
+      "text": "AAPL 2026-11-13 收盘 356.27 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-AAPL"
+        }
+      ]
     }
   ]
 }

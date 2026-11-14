@@ -31,6 +31,171 @@
         "purpose": "两年盈利质量与税项核对",
         "priority": "decisive"
       }
+    },
+    {
+      "id": "S-PXH-AAPL-22",
+      "url": "https://www.nasdaq.com/market-activity/stocks/aapl/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2022-09-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2022-09-30 close $138.2",
+      "locator": "Nasdaq AAPL 历史收盘，取财年末",
+      "origin_id": "nasdaq-aapl-2022",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2022-09-30T16:00:00-05:00",
+        "instrument": "AAPL",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 138.2,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-AAPL-23",
+      "url": "https://www.nasdaq.com/market-activity/stocks/aapl/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2023-09-29",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2023-09-29 close $171.21",
+      "locator": "Nasdaq AAPL 历史收盘，取财年末",
+      "origin_id": "nasdaq-aapl-2023",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2023-09-29T16:00:00-05:00",
+        "instrument": "AAPL",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 171.21,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-AAPL-24",
+      "url": "https://www.nasdaq.com/market-activity/stocks/aapl/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2024-09-27",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2024-09-27 close $227.79",
+      "locator": "Nasdaq AAPL 历史收盘，取财年末",
+      "origin_id": "nasdaq-aapl-2024",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2024-09-27T16:00:00-05:00",
+        "instrument": "AAPL",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 227.79,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-AAPL-25",
+      "url": "https://www.nasdaq.com/market-activity/stocks/aapl/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2025-09-26",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2025-09-26 close $255.46",
+      "locator": "Nasdaq AAPL 历史收盘，取财年末",
+      "origin_id": "nasdaq-aapl-2025",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2025-09-26T16:00:00-05:00",
+        "instrument": "AAPL",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 255.46,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-AAPL",
+      "url": "https://www.nasdaq.com/market-activity/stocks/aapl/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $356.27",
+      "locator": "Nasdaq AAPL historical quotes, 2026-11-01 至 2026-11-14",
+      "origin_id": "nasdaq-aapl",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "AAPL",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 356.27,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "P/E",
+        "priority": "decisive"
+      }
     }
   ]
 }

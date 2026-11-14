@@ -40,6 +40,12 @@ CFO 118,254→111,482→145,097；FY2026 CFO/净利润 1\.10；capex 9,041（占
 
 为什么重要：毛利率扩张是利润增长的另一驱动；若毛利率见顶，增长会更依赖收入。
 
+## 39\.7x 是五年最高，但盈利也在增长
+
+P/E 22\.6x（2022）→27\.9x（2023）→37\.4x（2024）→34\.2x（2025）→39\.7x（当前）；FY2026 净利润 132,175 百万美元，创新高。 [PXH\-AAPL\-22] [SHH\-AAPL\-22] [PXH\-AAPL\-23] [SHH\-AAPL\-23] [PXH\-AAPL\-24] [SHH\-AAPL\-24] [PXH\-AAPL\-25] [SHH\-AAPL\-25] [PX\-AAPL] [C45]
+
+为什么重要：估值扩张与盈利增长同时发生；39\.7x 不是无盈利支撑，但已是五年最高，增长放缓时压缩空间大。
+
 ## 这意味着什么
 
 ### 税项不是经营问题
@@ -53,6 +59,10 @@ CFO 145,097 高于净利润 132,175，capex 仅 9,041；FCF 保持高位。（FY
 ### 增长能否持续是下一个问题
 
 FY2026 收入 \+15\.1%、毛利率 48\.8%；若收入放缓而毛利率见顶，利润增速会下降。（FY2027） [C42] [C43] [C44]
+
+### 五年最高的 P/E 需要增长兑现
+
+39\.7x 对应 FY2026 净利润 \+18%；若 FY2027 增速降到 5% 以下，P/E 压缩会比盈利下降更快。（FY2027） [PX\-AAPL] [C45] [C20]
 
 ## 情景与触发条件
 
@@ -80,6 +90,14 @@ FY2027 收入与毛利率维持，利润继续增长。
 
 含义：税项重新成为拖累。
 
+### 估值压缩
+
+增长放缓，P/E 向五年中位回落。
+
+触发：净利润增速 &lt;5%；P/E &gt;35；收入增速 &lt;8%
+
+含义：估值压缩快于盈利。
+
 ## 分析判断
 
 净利润下降由税项造成，经营与现金流质量稳健；税项的一次性来源需读年报附注。 [I\-JUDGE]
@@ -104,6 +122,20 @@ FY2027 收入与毛利率维持，利润继续增长。
 
 有效税率=所得税/税前利润；由披露值计算并四舍五入。
 
+### 苹果 P/E（财年末价格 / 当年 EPS）
+
+| 财年 | 收盘价（美元/股） | EPS（美元/股） | P/E（倍） |
+| --- | --- | --- | --- |
+| 2022 | 138\.2 | 6\.11 | 22\.6 |
+| 2023 | 171\.21 | 6\.13 | 27\.9 |
+| 2024 | 227\.79 | 6\.08 | 37\.4 |
+| 2025 | 255\.46 | 7\.46 | 34\.2 |
+| 当前 | 356\.27 | 8\.98 | 39\.7 |
+
+[PXH\-AAPL\-22] [SHH\-AAPL\-22] [PXH\-AAPL\-23] [SHH\-AAPL\-23] [PXH\-AAPL\-24] [SHH\-AAPL\-24] [PXH\-AAPL\-25] [SHH\-AAPL\-25] [PX\-AAPL] [C45]
+
+P/E=财年末收盘价/\(净利润/稀释股数\)；当前为 2026\-11\-13 收盘 / FY2026 EPS。
+
 ### 苹果收入、营业利润与净利润（百万美元）
 
 | 财年 | 收入（百万美元） | 营业利润（百万美元） | 净利润（百万美元） |
@@ -115,6 +147,20 @@ FY2027 收入与毛利率维持，利润继续增长。
 [C17] [C19] [C20] [C33] [C35] [C36] [C42] [C44] [C45]
 
 同一单位；由披露值绘制。
+
+### 苹果 P/E：五年区间 22\.6–39\.7x
+
+| 财年 | 倍（倍） |
+| --- | --- |
+| 2022 | 22\.6 |
+| 2023 | 27\.9 |
+| 2024 | 37\.4 |
+| 2025 | 34\.2 |
+| 当前 | 39\.7 |
+
+[PXH\-AAPL\-22] [SHH\-AAPL\-22] [PXH\-AAPL\-23] [SHH\-AAPL\-23] [PXH\-AAPL\-24] [SHH\-AAPL\-24] [PXH\-AAPL\-25] [SHH\-AAPL\-25] [PX\-AAPL] [C45]
+
+财年末收盘价/当年 EPS；当前为 2026\-11\-13。
 
 ## 接下来观察什么
 
@@ -430,8 +476,64 @@ ROIC 按账面权益与有息负债计算，回购压低了权益、现金不含
 
 依据：；来源：S1
 
+\[PXH\-AAPL\-22\] AAPL 2022\-09\-30 收盘 138\.2 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-AAPL\-22
+
+\[SHH\-AAPL\-22\] AAPL FY2022 稀释加权股数 16325\.8 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S1
+
+\[PXH\-AAPL\-23\] AAPL 2023\-09\-29 收盘 171\.21 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-AAPL\-23
+
+\[SHH\-AAPL\-23\] AAPL FY2023 稀释加权股数 15812\.5 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S1
+
+\[PXH\-AAPL\-24\] AAPL 2024\-09\-27 收盘 227\.79 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-AAPL\-24
+
+\[SHH\-AAPL\-24\] AAPL FY2024 稀释加权股数 15408\.1 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S1
+
+\[PXH\-AAPL\-25\] AAPL 2025\-09\-26 收盘 255\.46 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-AAPL\-25
+
+\[SHH\-AAPL\-25\] AAPL FY2025 稀释加权股数 15004\.7 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S1
+
+\[PX\-AAPL\] AAPL 2026\-11\-13 收盘 356\.27 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-AAPL
+
 S1 · U\.S\. SEC · T0 · published\_at：2024\-11\-01 · retrieved\_at：2026\-11\-14T00:00:00Z · quote：us\-gaap company facts, 10\-K USD: RevenueFromContractWithCustomerExcludingAssessedTax 383,285 / 391,035; NetIncomeLoss 96,995 / 93,736 · locator：data\.sec\.gov companyfacts CIK0000320193（Apple），取 FY2023–FY2024 10\-K 年度值 · origin\_id：sec\-aapl\-companyfacts · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "两年盈利质量与税项核对", "reason": "官方 XBRL 年度事实，可逐项复核", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000320193\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json)
+
+S\-PXH\-AAPL\-22 · Nasdaq · T0 · published\_at：2022\-09\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2022\-09\-30 close $138\.2 · locator：Nasdaq AAPL 历史收盘，取财年末 · origin\_id：nasdaq\-aapl\-2022 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AAPL", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2022\-09\-30T16:00:00\-05:00", "unit": "USD/share", "value": 138\.2\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/aapl/historical](https://www.nasdaq.com/market-activity/stocks/aapl/historical)
+
+S\-PXH\-AAPL\-23 · Nasdaq · T0 · published\_at：2023\-09\-29 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2023\-09\-29 close $171\.21 · locator：Nasdaq AAPL 历史收盘，取财年末 · origin\_id：nasdaq\-aapl\-2023 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AAPL", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2023\-09\-29T16:00:00\-05:00", "unit": "USD/share", "value": 171\.21\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/aapl/historical](https://www.nasdaq.com/market-activity/stocks/aapl/historical)
+
+S\-PXH\-AAPL\-24 · Nasdaq · T0 · published\_at：2024\-09\-27 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2024\-09\-27 close $227\.79 · locator：Nasdaq AAPL 历史收盘，取财年末 · origin\_id：nasdaq\-aapl\-2024 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AAPL", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2024\-09\-27T16:00:00\-05:00", "unit": "USD/share", "value": 227\.79\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/aapl/historical](https://www.nasdaq.com/market-activity/stocks/aapl/historical)
+
+S\-PXH\-AAPL\-25 · Nasdaq · T0 · published\_at：2025\-09\-26 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-09\-26 close $255\.46 · locator：Nasdaq AAPL 历史收盘，取财年末 · origin\_id：nasdaq\-aapl\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AAPL", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-09\-26T16:00:00\-05:00", "unit": "USD/share", "value": 255\.46\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/aapl/historical](https://www.nasdaq.com/market-activity/stocks/aapl/historical)
+
+S\-PX\-AAPL · Nasdaq · T0 · published\_at：2026\-11\-13 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：11/13/2026 close $356\.27 · locator：Nasdaq AAPL historical quotes, 2026\-11\-01 至 2026\-11\-14 · origin\_id：nasdaq\-aapl · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "decisive", "purpose": "P/E", "reason": "交易所收盘价", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AAPL", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2026\-11\-13T16:00:00\-05:00", "unit": "USD/share", "value": 356\.27\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/aapl/historical](https://www.nasdaq.com/market-activity/stocks/aapl/historical)
 
 来源状态：\{"sec": \{"status": "ok"\}\}
