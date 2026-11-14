@@ -358,6 +358,110 @@
         "LLY-INV-25",
         "LLY-CAPEX-25"
       ]
+    },
+    {
+      "id": "PXH-LLY-22",
+      "text": "LLY 2022-12-30 收盘 365.84 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-LLY-22"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-LLY-22",
+      "text": "LLY FY2022 稀释加权股数 904.6 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-LLY-23",
+      "text": "LLY 2023-12-29 收盘 582.92 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-LLY-23"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-LLY-23",
+      "text": "LLY FY2023 稀释加权股数 903.3 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-LLY-24",
+      "text": "LLY 2024-12-31 收盘 772.0 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-LLY-24"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-LLY-24",
+      "text": "LLY FY2024 稀释加权股数 904.1 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-LLY-25",
+      "text": "LLY 2025-12-31 收盘 1074.68 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-LLY-25"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-LLY-25",
+      "text": "LLY FY2025 稀释加权股数 899.3 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PX-LLY",
+      "text": "LLY 2026-11-13 收盘 1443.50 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-LLY"
+        }
+      ]
     }
   ]
 }

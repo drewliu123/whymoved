@@ -10,7 +10,7 @@
 
 最反直觉：存货 43→137 亿美元、存货天数 238→451，资本开支 19→78 亿美元，CFO/净利润 0\.82；利润表很漂亮，现金被产能与库存占用。
 
-接下来验证：看 FY2026 存货天数能否回落到 400 以下、资本开支能否见顶；若收入增速降到 20% 以下而库存仍高，风险会从现金流转向利润表。
+接下来验证：看 FY2026 收入增速能否维持 30% 以上、存货天数能否回落；当前 63x P/E 处于自身 47–101x 区间中位，估值依赖增长而非倍数。
 
 ## 判断
 
@@ -40,6 +40,12 @@ capex 1\.9→3\.4→5\.1→7\.8；capex/收入 6\.7%→12\.0%。 [LLY\-CAPEX\-22
 
 为什么重要：产能扩张是主动选择；若需求兑现，capex 会变成护城河，否则是沉没成本。
 
+## 63x 是区间中位，不是极端
+
+礼来 P/E：2022 53\.4x、2023 101\.3x、2024 65\.9x、2025 46\.9x，当前 63\.0x；四年区间 46\.9–101\.3x。 [PXH\-LLY\-22] [SHH\-LLY\-22] [PXH\-LLY\-23] [SHH\-LLY\-23] [PXH\-LLY\-24] [SHH\-LLY\-24] [PXH\-LLY\-25] [SHH\-LLY\-25] [PX\-LLY] [LLY\-NI\-25]
+
+为什么重要：63x 看起来高，但相对自身历史只是中位；估值风险不在倍数本身，而在 45% 增长能否维持。
+
 ## 这意味着什么
 
 ### 利润率不是问题，现金是
@@ -53,6 +59,10 @@ capex 1\.9→3\.4→5\.1→7\.8；capex/收入 6\.7%→12\.0%。 [LLY\-CAPEX\-22
 ### capex 是主动扩张
 
 capex 占收入 12%，是为 GLP\-1 产能；若收入继续高增，这是护城河，不是费用。（FY2026–FY2027） [LLY\-CAPEX\-25] [LLY\-REV\-25]
+
+### 估值依赖增长，不是倍数
+
+63x 处于自身 47–101x 区间中位；若收入增速从 45% 降到 25%，P/E 才会显得贵。（FY2026） [PX\-LLY] [LLY\-REV\-25] [LLY\-NI\-25]
 
 ## 情景与触发条件
 
@@ -105,6 +115,20 @@ capex 占收入 12%，是为 GLP\-1 产能；若收入继续高增，这是护�
 
 毛利率=\(收入−营业成本\)/收入；研发费用率为不含 IPR&amp;D 的研发/收入；存货天数=存货/营业成本×365；CFO/净利润=经营现金流/净利润；由披露值计算并四舍五入。
 
+### 礼来 P/E（财年末价格 / 当年 EPS）
+
+| 财年 | 收盘价（美元/股） | EPS（美元/股） | P/E（倍） |
+| --- | --- | --- | --- |
+| 2022 | 365\.84 | 0\.01 | 53377\.2 |
+| 2023 | 582\.92 | 0\.01 | 101259\.9 |
+| 2024 | 772\.0 | 0\.01 | 65845\.8 |
+| 2025 | 1074\.68 | 0\.02 | 46915\.5 |
+| 当前 | 1443\.5 | 0\.02 | 63\.0 |
+
+[PXH\-LLY\-22] [SHH\-LLY\-22] [PXH\-LLY\-23] [SHH\-LLY\-23] [PXH\-LLY\-24] [SHH\-LLY\-24] [PXH\-LLY\-25] [SHH\-LLY\-25] [PX\-LLY] [LLY\-NI\-25]
+
+P/E=财年末收盘价/\(净利润/稀释股数\)；当前为 2026\-11\-13 收盘 / FY2025 EPS。
+
 ### 收入、毛利与营业成本（十亿美元）
 
 | 财年 | 收入（十亿美元） | 毛利（十亿美元） | 营业成本（十亿美元） |
@@ -130,6 +154,20 @@ capex 占收入 12%，是为 GLP\-1 产能；若收入继续高增，这是护�
 [LLY\-REV\-22] [LLY\-REV\-23] [LLY\-REV\-24] [LLY\-REV\-25] [LLY\-COGS\-22] [LLY\-COGS\-23] [LLY\-COGS\-24] [LLY\-COGS\-25] [LLY\-RD\-22] [LLY\-RD\-23] [LLY\-RD\-24] [LLY\-RD\-25] [LLY\-NI\-22] [LLY\-NI\-23] [LLY\-NI\-24] [LLY\-NI\-25]
 
 同一单位（%）；由披露值计算。
+
+### 礼来 P/E：四年区间 47–101x，当前 63x
+
+| 财年 | 倍（倍） |
+| --- | --- |
+| 2022 | 53377\.2 |
+| 2023 | 101259\.9 |
+| 2024 | 65845\.8 |
+| 2025 | 46915\.5 |
+| 当前 | 63\.0 |
+
+[PXH\-LLY\-22] [SHH\-LLY\-22] [PXH\-LLY\-23] [SHH\-LLY\-23] [PXH\-LLY\-24] [SHH\-LLY\-24] [PXH\-LLY\-25] [SHH\-LLY\-25] [PX\-LLY] [LLY\-NI\-25]
+
+财年末收盘价/当年 EPS；当前为 2026\-11\-13。
 
 ## 其他解释
 
@@ -301,8 +339,64 @@ capex 占收入 12%，是为 GLP\-1 产能；若收入继续高增，这是护�
 
 依据：LLY\-REV\-25, LLY\-INV\-25, LLY\-CAPEX\-25；来源：
 
+\[PXH\-LLY\-22\] LLY 2022\-12\-30 收盘 365\.84 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-LLY\-22
+
+\[SHH\-LLY\-22\] LLY FY2022 稀释加权股数 904\.6 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LLY
+
+\[PXH\-LLY\-23\] LLY 2023\-12\-29 收盘 582\.92 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-LLY\-23
+
+\[SHH\-LLY\-23\] LLY FY2023 稀释加权股数 903\.3 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LLY
+
+\[PXH\-LLY\-24\] LLY 2024\-12\-31 收盘 772\.0 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-LLY\-24
+
+\[SHH\-LLY\-24\] LLY FY2024 稀释加权股数 904\.1 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LLY
+
+\[PXH\-LLY\-25\] LLY 2025\-12\-31 收盘 1074\.68 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-LLY\-25
+
+\[SHH\-LLY\-25\] LLY FY2025 稀释加权股数 899\.3 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LLY
+
+\[PX\-LLY\] LLY 2026\-11\-13 收盘 1443\.50 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-LLY
+
 S\-LLY · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: ELI LILLY AND COMPANY · locator：data\.sec\.gov companyfacts CIK0000059478（Eli Lilly），10\-K 年度值 · origin\_id：sec\-lly · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "增长、产能与现金流", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000059478\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000059478.json)
+
+S\-PXH\-LLY\-22 · Nasdaq · T0 · published\_at：2022\-12\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2022\-12\-30 close $365\.84 · locator：Nasdaq LLY 历史收盘，取财年末 · origin\_id：nasdaq\-lly\-2022 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "LLY", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2022\-12\-30T16:00:00\-05:00", "unit": "USD/share", "value": 365\.84\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/lly/historical](https://www.nasdaq.com/market-activity/stocks/lly/historical)
+
+S\-PXH\-LLY\-23 · Nasdaq · T0 · published\_at：2023\-12\-29 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2023\-12\-29 close $582\.92 · locator：Nasdaq LLY 历史收盘，取财年末 · origin\_id：nasdaq\-lly\-2023 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "LLY", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2023\-12\-29T16:00:00\-05:00", "unit": "USD/share", "value": 582\.92\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/lly/historical](https://www.nasdaq.com/market-activity/stocks/lly/historical)
+
+S\-PXH\-LLY\-24 · Nasdaq · T0 · published\_at：2024\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2024\-12\-31 close $772\.0 · locator：Nasdaq LLY 历史收盘，取财年末 · origin\_id：nasdaq\-lly\-2024 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "LLY", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2024\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 772\.0\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/lly/historical](https://www.nasdaq.com/market-activity/stocks/lly/historical)
+
+S\-PXH\-LLY\-25 · Nasdaq · T0 · published\_at：2025\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-12\-31 close $1074\.68 · locator：Nasdaq LLY 历史收盘，取财年末 · origin\_id：nasdaq\-lly\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "LLY", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 1074\.68\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/lly/historical](https://www.nasdaq.com/market-activity/stocks/lly/historical)
+
+S\-PX\-LLY · Nasdaq · T0 · published\_at：2026\-11\-13 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：11/13/2026 close $1443\.50 · locator：Nasdaq LLY historical quotes, 2026\-11\-01 至 2026\-11\-14 · origin\_id：nasdaq\-lly · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "decisive", "purpose": "P/E", "reason": "交易所收盘价", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "LLY", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2026\-11\-13T16:00:00\-05:00", "unit": "USD/share", "value": 1443\.5\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/lly/historical](https://www.nasdaq.com/market-activity/stocks/lly/historical)
 
 来源状态：\{"sec": \{"status": "ok"\}\}
