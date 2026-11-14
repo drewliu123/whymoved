@@ -34,6 +34,11 @@ class ExampleReportQualityTests(unittest.TestCase):
                         best = max(best, len(left & right) / len(left | right))
                 self.assertLess(best, 0.35, "%s implication repeats a finding: %s" % (name, implication.get("title")))
 
+    def test_answers_stay_short(self):
+        for name, report in self.reports():
+            answer = report.get("answer", {}).get("text", "")
+            self.assertLessEqual(len(answer), 350, "%s answer is %d chars; keep it under 350" % (name, len(answer)))
+
     def test_charts_do_not_mix_units(self):
         for name, report in self.reports():
             for index, chart in enumerate(report.get("charts", [])):
