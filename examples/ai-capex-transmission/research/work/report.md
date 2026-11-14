@@ -1,4 +1,4 @@
-# AI 资本开支增 60%，应用材料只增 4\.4%：设备商不是等比例受益者
+# AI 资本开支增 60%，设备同行增 24%，只有 AMAT 掉队
 
 超大规模厂商资本开支的增长，传导到半导体设备商了吗？
 
@@ -6,67 +6,77 @@
 
 ## 执行摘要
 
-结论：AI 资本开支的增量没有等比例变成设备商收入：三家云厂商 capex 增约 60%，AMAT 收入只增 4\.4%。
+结论：设备行业接住了 AI 资本开支：LRCX、KLAC 收入增约 24%，但 AMAT 只增 4\.4%——掉队的是公司，不是行业。
 
-最反直觉：AMAT 毛利率上升，经营现金流却下降 8\.3%——利润表和现金流在讲两个故事。
+最反直觉：AMAT 经营现金流下降 8\.3%，而 LRCX、KLAC 分别增长 32\.7%、23\.4%；同行在赚钱，AMAT 在失血。
 
-接下来验证：看 2026 财年订单、验收与营运资本，判断是交付滞后还是需求外溢。
+接下来验证：看 AMAT 的产品结构、客户份额与中国收入，解释为什么同行接住了它没接住。
 
 ## 判断
 
-2024→2025 财年，微软、Alphabet、亚马逊三家资本开支合计从约 1,800 亿美元升至约 2,878 亿美元，增长约 60%；同期应用材料（AMAT）收入从 27,176 升至 28,368 百万美元，仅增长约 4\.4%。毛利率从 47\.4% 升至 48\.7%，经营现金流却从 8,677 降到 7,958 百万美元。逐节点看，资本开支的增长没有同幅传导到设备商收入，交付验收与客户结构可能是瓶颈；总量资本开支不是设备商需求的好代理，需要分部敞口与订单数据继续验证。 [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2025] [AMAT\-GROSS\_PROFIT\-2025] [AMAT\-CFO\-2025] [I\-JUDGE]
+2024→2025 财年，微软、Alphabet、亚马逊三家资本开支合计从约 1,800 亿美元升至约 2,878 亿美元，增长约 60%。同期设备三强里，LRCX 收入增长约 23\.7%、KLAC 约 23\.9%，而 AMAT 只有约 4\.4%；经营现金流 LRCX \+32\.7%、KLAC \+23\.4%，AMAT −8\.3%。这说明「设备环节没接住 AI 资本开支」并不成立——需求确实传导到了设备，掉队的是 AMAT 一家；问题更可能在产品结构、客户份额或中国收入，而不是行业总量。 [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2025] [AMAT\-GROSS\_PROFIT\-2025] [AMAT\-CFO\-2025] [I\-JUDGE]
 
 重要限制：财年不对齐：AMAT 财年 10 月结束，云厂商 12 月/6 月结束；同比比较存在期间错位。 [I\-JUDGE]
 
 重要限制：AMAT 客户结构未拆分，无法区分先进制程、存储与中国区敞口；总量数据不能证明因果。 [I\-DELIVERY]
 
-## 资本开支增长约 60%，设备商收入只增约 4%
+## 资本开支增约 60%，设备同行增约 24%，AMAT 只增 4\.4%
 
-三家合计资本开支从 180,011 升至 287,817 百万美元；AMAT 收入从 27,176 升至 28,368 百万美元。 [CAPEX\-MSFT\-24] [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-24] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-24] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025]
+三家云厂商 capex 从 180,011 升至 287,817 百万美元；同期 LRCX 收入 14,905→18,436、KLAC 9,812→12,156、AMAT 27,176→28,368（百万美元）。 [CAPEX\-MSFT\-24] [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-24] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-24] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025] [LRCX\-REVENUE\-2024] [LRCX\-REVENUE\-2025] [KLAC\-REVENUE\-2024] [KLAC\-REVENUE\-2025]
 
-为什么重要：若把总量 capex 当设备商收入领先指标，会显著高估短期传导幅度。
+为什么重要：同样的行业顺风，同行跑出 20%\+ 增长，AMAT 只有个位数；行业解释不了这个差距。
 
-相较基线：capex 直接驱动设备商收入的市场叙事
+相较基线：只看 AMAT 一家
 
-研究增量（contradiction）：两个相邻节点的增速差约 55 个百分点
+研究增量（new\_fact）：加入 LRCX、KLAC 同财年对照
 
-## 毛利率改善，但现金流下降
+## 同行现金流在增长，AMAT 在下降
 
-毛利率从 47\.4% 升至 48\.7%，经营现金流从 8,677 降至 7,958 百万美元。 [AMAT\-GROSS\_PROFIT\-2024] [AMAT\-GROSS\_PROFIT\-2025] [AMAT\-CFO\-2024] [AMAT\-CFO\-2025] [AMAT\-REVENUE\-2025]
+LRCX 经营现金流 4,652→6,173、KLAC 3,309→4,082，AMAT 8,677→7,958（百万美元）。 [LRCX\-CFO\-2024] [LRCX\-CFO\-2025] [KLAC\-CFO\-2024] [KLAC\-CFO\-2025] [AMAT\-CFO\-2024] [AMAT\-CFO\-2025]
 
-为什么重要：利润率与现金流方向不一致，说明营运资本或交付节奏在吸收传导。
+为什么重要：收入差距之外，现金流方向相反；如果只是行业交付节奏，三家公司不该差这么多。
 
-相较基线：只看毛利率改善
+相较基线：行业交付瓶颈解释
 
-研究增量（connection）：把现金流与交付节奏一起核对
+研究增量（contradiction）：同行现金流增长
 
-## 瓶颈在交付与客户结构，不在需求总量
+## AMAT 的毛利率在改善，但现金流率在下降
 
-资本开支没有消失，但设备商收入确认滞后；客户结构（先进制程/存储）敞口决定谁能接到订单。 [I\-DELIVERY] [I\-JUDGE]
+AMAT 毛利率 47\.4%→48\.7%，经营现金流率 31\.9%→28\.1%；收入微增、现金流失血，问题在营运资本与交付节奏。 [AMAT\-REVENUE\-2024] [AMAT\-GROSS\_PROFIT\-2024] [AMAT\-CFO\-2024] [AMAT\-REVENUE\-2025] [AMAT\-GROSS\_PROFIT\-2025] [AMAT\-CFO\-2025]
 
-为什么重要：下一步应查订单、分部收入与交付周期，而不是继续用总量 capex 外推。
+为什么重要：不是产品不赚钱，而是现金回收变差；这与同行形成对照，指向公司层面的执行问题。
 
-相较基线：总量传导假设
+相较基线：只看毛利率
 
-研究增量（new\_fact）：把瓶颈定位到交付与结构
+研究增量（connection）：毛利率与现金流率分化
+
+## 瓶颈假设从行业转向公司
+
+资本开支确实传导到了设备环节；AMAT 掉队更可能来自产品结构、客户份额或中国收入，而不是行业需求不足。 [I\-DELIVERY] [I\-JUDGE] [LRCX\-REVENUE\-2025] [KLAC\-REVENUE\-2025] [AMAT\-REVENUE\-2025]
+
+为什么重要：把 AMAT 的弱增长归因于「AI 资本开支节奏」是错的；下一步应拆公司变量，而不是继续等行业总量。
+
+相较基线：总量传导未闭合
+
+研究增量（judgment\_update）：行业传导成立、公司掉队
 
 ## 这意味着什么
 
-### 资本开支不是均匀的行业 beta
+### 设备环节整体接住了需求
 
-这一轮 AI 增量更多流向服务器、网络、电力与数据中心，晶圆设备只接到其中较窄的一段；用云厂商 capex 增速外推设备商收入，会系统性高估。（未来 4–6 个季度） [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2025]
+LRCX、KLAC 收入增约 24%，说明 AI 资本开支确实进入设备环节；「设备没接住」的行业叙事不成立。（FY2025 对照） [LRCX\-REVENUE\-2025] [KLAC\-REVENUE\-2025] [CAPEX\-MSFT\-25]
 
-### 设备商的现金流比收入更早反映交付节奏
+### AMAT 的问题更像公司变量
 
-AMAT 收入增长 4\.4%，经营现金流却下降 8\.3%；营运资本与验收节奏在吞噬现金。看设备商不能只看收入与毛利率，要把订单、验收与营运资本放在一起。（下一次财报） [AMAT\-REVENUE\-2025] [AMAT\-CFO\-2025] [I\-CASH]
+同行收入与现金流双增，AMAT 收入微增、现金流失血；产品结构、客户份额与中国收入比行业总量更能解释差距。（未来 4–6 个季度） [AMAT\-REVENUE\-2025] [AMAT\-CFO\-2025] [LRCX\-CFO\-2025] [KLAC\-CFO\-2025] [I\-JUDGE]
 
-### 资本开支拐点不是设备收入的同步拐点
+### 不要把 AMAT 当行业代理
 
-设备是后周期暴露：capex 增速回落时，设备订单与收入的下修可能更晚、也更陡。若 2026 年云厂商资本开支减速，设备端要预留更长的滞后窗口。（2026 财年） [CAPEX\-MSFT\-25] [I\-DELIVERY] [I\-JUDGE]
+用 AMAT 判断 AI 设备景气会低估行业；反过来，用行业景气解释 AMAT 会掩盖公司问题。看 AMAT 要单独跟踪份额与产品组合。（下一次财报） [AMAT\-REVENUE\-2025] [LRCX\-REVENUE\-2025] [KLAC\-REVENUE\-2025]
 
 ## 分析判断
 
-总量资本开支到设备商收入的传导未闭合；瓶颈假设在交付与客户结构，需要分部与订单数据验证。 [I\-JUDGE]
+行业层面 AI 资本开支传导到了设备：LRCX/KLAC 收入增约 24%；AMAT 只增 4\.4% 且现金流失血，掉队是公司因素，不是行业需求不足。 [I\-JUDGE]
 
 传导关系：资本开支 → 设备交付与验收 → 设备商收入 → 毛利率 → 经营现金流
 
@@ -83,29 +93,27 @@ AMAT 收入增长 4\.4%，经营现金流却下降 8\.3%；营运资本与验收
 
 [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2025]
 
-### FY2025 同比增速：资本开支与设备商现金流背离
+### 设备三强 FY2025 对照（百万美元）
 
-| 指标 | 同比 %（%） |
-| --- | --- |
-| 三家云厂商 capex | 59\.9 |
-| AMAT 收入 | 4\.4 |
-| AMAT 毛利 | 7\.1 |
-| AMAT 经营现金流 | \-8\.3 |
+| 公司 | FY2024 收入（百万美元） | FY2025 收入（百万美元） | 收入增速（%） | FY2024 CFO（百万美元） | FY2025 CFO（百万美元） | CFO 增速（%） |
+| --- | --- | --- | --- | --- | --- | --- |
+| AMAT | 27176 | 28368 | 4\.4 | 8677 | 7958 | \-8\.3 |
+| LRCX | 14905 | 18436 | 23\.7 | 4652 | 6173 | 32\.7 |
+| KLAC | 9812 | 12156 | 23\.9 | 3309 | 4082 | 23\.4 |
 
-[CAPEX\-MSFT\-24] [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-24] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-24] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025] [AMAT\-GROSS\_PROFIT\-2024] [AMAT\-GROSS\_PROFIT\-2025] [AMAT\-CFO\-2024] [AMAT\-CFO\-2025]
+[AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025] [AMAT\-CFO\-2024] [AMAT\-CFO\-2025] [LRCX\-REVENUE\-2024] [LRCX\-REVENUE\-2025] [LRCX\-CFO\-2024] [LRCX\-CFO\-2025] [KLAC\-REVENUE\-2024] [KLAC\-REVENUE\-2025] [KLAC\-CFO\-2024] [KLAC\-CFO\-2025]
 
-由披露值计算，四舍五入到 0\.1%；三家 capex 为微软 FY2025、Alphabet 与亚马逊 FY2025 合计对 FY2024。
+### 设备三强 FY2025 增速：AMAT 是例外
 
-### AMAT 毛利率上升，经营现金流率下降
-
-| 财年 | 毛利率（%） | 经营现金流率（%） |
+| 公司 | 收入增速（%） | 经营现金流增速（%） |
 | --- | --- | --- |
-| FY2024 | 47\.5 | 31\.9 |
-| FY2025 | 48\.7 | 28\.1 |
+| AMAT | 4\.4 | \-8\.3 |
+| LRCX | 23\.7 | 32\.7 |
+| KLAC | 23\.9 | 23\.4 |
 
-[AMAT\-REVENUE\-2024] [AMAT\-GROSS\_PROFIT\-2024] [AMAT\-CFO\-2024] [AMAT\-REVENUE\-2025] [AMAT\-GROSS\_PROFIT\-2025] [AMAT\-CFO\-2025]
+[AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025] [AMAT\-CFO\-2024] [AMAT\-CFO\-2025] [LRCX\-REVENUE\-2024] [LRCX\-REVENUE\-2025] [LRCX\-CFO\-2024] [LRCX\-CFO\-2025] [KLAC\-REVENUE\-2024] [KLAC\-REVENUE\-2025] [KLAC\-CFO\-2024] [KLAC\-CFO\-2025]
 
-毛利率=毛利/收入，经营现金流率=经营现金流/收入；由披露值计算并四舍五入。
+FY2024→FY2025；三家公司财年结束月不同（AMAT 10 月、LRCX/KLAC 6 月），同比存在期间错位；增速由披露值计算。
 
 ## 接下来观察什么
 
@@ -137,7 +145,7 @@ AMAT 收入增长 4\.4%，经营现金流却下降 8\.3%；营运资本与验收
 
 
 
-观察结果：capex 约 \+60%、AMAT 收入约 \+4\.4%，增速差约 55 个百分点，支持 H2、削弱 H1。 [CAPEX\-MSFT\-24] [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-24] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-24] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025]
+观察结果：capex 约 \+60%；LRCX/KLAC 收入约 \+24%，AMAT 仅 \+4\.4%。行业传导成立但幅度小于 capex，AMAT 显著掉队；支持 H2（总量 capex 不是好代理）并进一步指向公司因素。 [CAPEX\-MSFT\-24] [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-24] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-24] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025] [LRCX\-REVENUE\-2025] [KLAC\-REVENUE\-2025]
 
 支持：H2；削弱：H1
 
@@ -225,9 +233,41 @@ AMAT 收入增长 4\.4%，经营现金流却下降 8\.3%；营运资本与验收
 
 依据：AMAT\-CFO\-2024, AMAT\-CFO\-2025；来源：
 
-\[I\-JUDGE\] 总量层面的『资本开支→设备商收入』传导在 2024–2025 未闭合：capex 增长约 60%，AMAT 收入仅增长约 4%，需要分部敞口与订单数据才能判断真实传导（inference；2026\-11\-14T00:00:00Z）
+\[I\-JUDGE\] 行业层面资本开支传导到设备（LRCX/KLAC 收入增约 24%），但 AMAT 仅增 4\.4%、现金流失血；AMAT 的弱增长更像公司变量，而不是行业需求不足。（inference；2026\-11\-14T00:00:00Z）
 
-依据：CAPEX\-MSFT\-24, CAPEX\-MSFT\-25, CAPEX\-GOOGL\-24, CAPEX\-GOOGL\-25, CAPEX\-AMZN\-24, CAPEX\-AMZN\-25, AMAT\-REVENUE\-2024, AMAT\-REVENUE\-2025；来源：
+依据：CAPEX\-MSFT\-24, CAPEX\-MSFT\-25, CAPEX\-GOOGL\-24, CAPEX\-GOOGL\-25, CAPEX\-AMZN\-24, CAPEX\-AMZN\-25, AMAT\-REVENUE\-2024, AMAT\-REVENUE\-2025, LRCX\-REVENUE\-2025, KLAC\-REVENUE\-2025, LRCX\-CFO\-2025, KLAC\-CFO\-2025；来源：
+
+\[LRCX\-REVENUE\-2024\] LRCX FY2024 收入 14,905 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[LRCX\-REVENUE\-2025\] LRCX FY2025 收入 18,436 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[LRCX\-CFO\-2024\] LRCX FY2024 经营现金流 4,652 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[LRCX\-CFO\-2025\] LRCX FY2025 经营现金流 6,173 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[KLAC\-REVENUE\-2024\] KLAC FY2024 收入 9,812 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[KLAC\-REVENUE\-2025\] KLAC FY2025 收入 12,156 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[KLAC\-CFO\-2024\] KLAC FY2024 经营现金流 3,309 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[KLAC\-CFO\-2025\] KLAC FY2025 经营现金流 4,082 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
 
 S\-MSFT · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: Microsoft · locator：data\.sec\.gov companyfacts CIK0000789019（Microsoft），10\-K 年度值 · origin\_id：sec\-msft · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "传导节点指标", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
@@ -244,5 +284,13 @@ S\-AMZN · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-
 S\-AMAT · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: Applied Materials · locator：data\.sec\.gov companyfacts CIK0000006951（Applied Materials），10\-K 年度值 · origin\_id：sec\-amat · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "传导节点指标", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000006951\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000006951.json)
+
+S\-LRCX · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: Lam Research · locator：data\.sec\.gov companyfacts CIK0000707549（Lam Research），10\-K 年度值 · origin\_id：sec\-lrcx · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "设备同行对照", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
+
+[https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000707549\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000707549.json)
+
+S\-KLAC · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: KLA · locator：data\.sec\.gov companyfacts CIK0000319201（KLA），10\-K 年度值 · origin\_id：sec\-klac · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "设备同行对照", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
+
+[https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000319201\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000319201.json)
 
 来源状态：\{"AMAT": \{"status": "ok"\}, "AMZN": \{"status": "ok"\}, "GOOGL": \{"status": "ok"\}, "MSFT": \{"status": "ok"\}\}
