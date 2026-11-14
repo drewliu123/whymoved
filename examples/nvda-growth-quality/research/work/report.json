@@ -499,32 +499,11 @@
     },
     {
       "kind": "line",
-      "title": "CFO/净利润与应收天数",
+      "title": "应收天数与存货天数（年度）",
       "x_label": "财年",
-      "y_label": "比率 / 天",
-      "unit": "混合",
+      "y_label": "天",
+      "unit": "天",
       "series": [
-        {
-          "name": "CFO/净利润",
-          "rows": [
-            {
-              "label": "FY2023",
-              "value": 1.29
-            },
-            {
-              "label": "FY2024",
-              "value": 0.94
-            },
-            {
-              "label": "FY2025",
-              "value": 0.88
-            },
-            {
-              "label": "FY2026",
-              "value": 0.86
-            }
-          ]
-        },
         {
           "name": "应收天数",
           "rows": [
@@ -545,17 +524,30 @@
               "value": 65.0
             }
           ]
+        },
+        {
+          "name": "存货天数",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 162.1
+            },
+            {
+              "label": "FY2024",
+              "value": 116.0
+            },
+            {
+              "label": "FY2025",
+              "value": 112.7
+            },
+            {
+              "label": "FY2026",
+              "value": 125.0
+            }
+          ]
         }
       ],
       "claim_ids": [
-        "NVDA-NI-23",
-        "NVDA-NI-24",
-        "NVDA-NI-25",
-        "NVDA-NI-26",
-        "NVDA-CFO-23",
-        "NVDA-CFO-24",
-        "NVDA-CFO-25",
-        "NVDA-CFO-26",
         "NVDA-AR-23",
         "NVDA-AR-24",
         "NVDA-AR-25",
@@ -563,9 +555,17 @@
         "NVDA-REV-23",
         "NVDA-REV-24",
         "NVDA-REV-25",
-        "NVDA-REV-26"
+        "NVDA-REV-26",
+        "NVDA-INV-23",
+        "NVDA-INV-24",
+        "NVDA-INV-25",
+        "NVDA-INV-26",
+        "NVDA-COGS-23",
+        "NVDA-COGS-24",
+        "NVDA-COGS-25",
+        "NVDA-COGS-26"
       ],
-      "note": "两条线单位不同（比率与天），只用于同向/反向观察，不比较绝对高度。"
+      "note": "同一单位（天）；由披露值计算。"
     },
     {
       "kind": "line",
