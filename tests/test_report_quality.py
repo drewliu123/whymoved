@@ -18,6 +18,22 @@ class ExampleReportQualityTests(unittest.TestCase):
             scenarios = report.get("scenarios", [])
             self.assertLessEqual(len(scenarios), 4, "%s has %d scenarios; keep at most four" % (name, len(scenarios)))
 
+    def test_implications_are_not_finding_copies(self):
+        def grams(value):
+            value = "".join(value.split())
+            return {value[index:index + 2] for index in range(len(value) - 1)}
+
+        for name, report in self.reports():
+            findings = [item.get("title", "") + item.get("text", "") for item in report.get("findings", [])]
+            for implication in report.get("implications", []):
+                left = grams(implication.get("title", "") + implication.get("text", ""))
+                best = 0.0
+                for finding in findings:
+                    right = grams(finding)
+                    if left and right:
+                        best = max(best, len(left & right) / len(left | right))
+                self.assertLess(best, 0.35, "%s implication repeats a finding: %s" % (name, implication.get("title")))
+
     def test_charts_do_not_mix_units(self):
         for name, report in self.reports():
             for index, chart in enumerate(report.get("charts", [])):
