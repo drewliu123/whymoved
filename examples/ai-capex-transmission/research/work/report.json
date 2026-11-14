@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "title": "AI 资本开支增 60%，设备同行增 24%，只有 AMAT 掉队",
+  "title": "AI 资本开支两年：AMAT 收入没掉队，掉队的是现金流",
   "question": "超大规模厂商资本开支的增长，传导到半导体设备商了吗？",
   "type": "theme",
   "task": "产业链传导检验",
   "as_of": "2026-11-14T00:00:00Z",
   "answer": {
-    "text": "2024→2025 财年，微软、Alphabet、亚马逊三家资本开支合计从约 1,800 亿美元升至约 2,878 亿美元，增长约 60%。同期设备三强里，LRCX 收入增长约 23.7%、KLAC 约 23.9%，而 AMAT 只有约 4.4%；经营现金流 LRCX +32.7%、KLAC +23.4%，AMAT −8.3%。这说明「设备环节没接住 AI 资本开支」并不成立——需求确实传导到了设备，掉队的是 AMAT 一家；问题更可能在产品结构、客户份额或中国收入，而不是行业总量。",
+    "text": "把时间拉长到 FY2023→FY2025，结论会变：AMAT 收入两年 +7.0%，LRCX +5.8%，KLAC +15.8%——AMAT 并没有持续丢失收入份额；FY2025 的 4.4% 与同行 24% 的差距，很大一部分是 LRCX、KLAC 从 FY2024 下滑（−14.5%、−6.5%）中的反弹。真正持续背离的是现金流：两年经营现金流 AMAT −8.5%，LRCX +19.2%，KLAC +11.3%。所以问题不是「AMAT 收入掉队」，而是「同样的收入体量，AMAT 的现金转化更弱」。",
     "claim_ids": [
       "CAPEX-MSFT-25",
       "CAPEX-GOOGL-25",
@@ -19,80 +19,76 @@
   },
   "findings": [
     {
-      "title": "资本开支增约 60%，设备同行增约 24%，AMAT 只增 4.4%",
-      "text": "三家云厂商 capex 从 180,011 升至 287,817 百万美元；同期 LRCX 收入 14,905→18,436、KLAC 9,812→12,156、AMAT 27,176→28,368（百万美元）。",
+      "title": "一年维度：同行反弹，AMAT 微增",
+      "text": "FY2025 收入增速 AMAT +4.4%、LRCX +23.7%、KLAC +23.9%；但 LRCX、KLAC 在 FY2024 分别下滑 14.5%、6.5%，AMAT 同期增长 2.5%。",
       "claim_ids": [
-        "CAPEX-MSFT-24",
-        "CAPEX-MSFT-25",
-        "CAPEX-GOOGL-24",
-        "CAPEX-GOOGL-25",
-        "CAPEX-AMZN-24",
-        "CAPEX-AMZN-25",
+        "AMAT-REVENUE-2023",
         "AMAT-REVENUE-2024",
         "AMAT-REVENUE-2025",
+        "LRCX-REVENUE-2023",
         "LRCX-REVENUE-2024",
         "LRCX-REVENUE-2025",
+        "KLAC-REVENUE-2023",
         "KLAC-REVENUE-2024",
         "KLAC-REVENUE-2025"
       ],
-      "why_it_matters": "同样的行业顺风，同行跑出 20%+ 增长，AMAT 只有个位数；行业解释不了这个差距。",
-      "increment": {
-        "kind": "new_fact",
-        "baseline": "只看 AMAT 一家",
-        "detail": "加入 LRCX、KLAC 同财年对照"
-      }
-    },
-    {
-      "title": "同行现金流在增长，AMAT 在下降",
-      "text": "LRCX 经营现金流 4,652→6,173、KLAC 3,309→4,082，AMAT 8,677→7,958（百万美元）。",
-      "claim_ids": [
-        "LRCX-CFO-2024",
-        "LRCX-CFO-2025",
-        "KLAC-CFO-2024",
-        "KLAC-CFO-2025",
-        "AMAT-CFO-2024",
-        "AMAT-CFO-2025"
-      ],
-      "why_it_matters": "收入差距之外，现金流方向相反；如果只是行业交付节奏，三家公司不该差这么多。",
+      "why_it_matters": "只看 FY2025 同比，会把同行的低基数反弹误读成 AMAT 的份额流失。",
       "increment": {
         "kind": "contradiction",
-        "baseline": "行业交付瓶颈解释",
-        "detail": "同行现金流增长"
+        "baseline": "单年同比",
+        "detail": "加入 FY2023 基数后重算"
       }
     },
     {
-      "title": "AMAT 的毛利率在改善，但现金流率在下降",
-      "text": "AMAT 毛利率 47.4%→48.7%，经营现金流率 31.9%→28.1%；收入微增、现金流失血，问题在营运资本与交付节奏。",
+      "title": "两年维度：AMAT 收入与 LRCX 相当，KLAC 更强",
+      "text": "FY2023→FY2025，AMAT 收入 +7.0%、LRCX +5.8%、KLAC +15.8%；AMAT 不是持续掉队者。",
       "claim_ids": [
-        "AMAT-REVENUE-2024",
-        "AMAT-GROSS_PROFIT-2024",
-        "AMAT-CFO-2024",
+        "AMAT-REVENUE-2023",
         "AMAT-REVENUE-2025",
-        "AMAT-GROSS_PROFIT-2025",
-        "AMAT-CFO-2025"
-      ],
-      "why_it_matters": "不是产品不赚钱，而是现金回收变差；这与同行形成对照，指向公司层面的执行问题。",
-      "increment": {
-        "kind": "connection",
-        "baseline": "只看毛利率",
-        "detail": "毛利率与现金流率分化"
-      }
-    },
-    {
-      "title": "瓶颈假设从行业转向公司",
-      "text": "资本开支确实传导到了设备环节；AMAT 掉队更可能来自产品结构、客户份额或中国收入，而不是行业需求不足。",
-      "claim_ids": [
-        "I-DELIVERY",
-        "I-JUDGE",
+        "LRCX-REVENUE-2023",
         "LRCX-REVENUE-2025",
-        "KLAC-REVENUE-2025",
-        "AMAT-REVENUE-2025"
+        "KLAC-REVENUE-2023",
+        "KLAC-REVENUE-2025"
       ],
-      "why_it_matters": "把 AMAT 的弱增长归因于「AI 资本开支节奏」是错的；下一步应拆公司变量，而不是继续等行业总量。",
+      "why_it_matters": "两年维度推翻了「AMAT 丢失份额」的单年结论；份额变化需要更长窗口才能判断。",
       "increment": {
         "kind": "judgment_update",
-        "baseline": "总量传导未闭合",
-        "detail": "行业传导成立、公司掉队"
+        "baseline": "FY2025 单年掉队",
+        "detail": "两年维度持平 LRCX"
+      }
+    },
+    {
+      "title": "现金流是持续背离的那一项",
+      "text": "FY2023→FY2025 经营现金流：AMAT 8,700→7,958（−8.5%）、LRCX 5,178→6,173（+19.2%）、KLAC 3,669→4,082（+11.3%）。",
+      "claim_ids": [
+        "AMAT-CFO-2023",
+        "AMAT-CFO-2025",
+        "LRCX-CFO-2023",
+        "LRCX-CFO-2025",
+        "KLAC-CFO-2023",
+        "KLAC-CFO-2025"
+      ],
+      "why_it_matters": "收入没有持续掉队，现金却持续落后；问题在营运资本与验收节奏，而不是需求或份额。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看收入增速",
+        "detail": "两年现金流对照"
+      }
+    },
+    {
+      "title": "问题从「收入掉队」改为「现金转化弱」",
+      "text": "AMAT 的收入与 LRCX 两年持平，但现金流方向相反；这比「设备商没接住 AI 资本开支」更具体，也更可跟踪。",
+      "claim_ids": [
+        "I-JUDGE",
+        "AMAT-CFO-2025",
+        "LRCX-CFO-2025",
+        "KLAC-CFO-2025"
+      ],
+      "why_it_matters": "下一步应拆营运资本、验收与产品结构，而不是继续争论行业需求。",
+      "increment": {
+        "kind": "judgment_update",
+        "baseline": "公司收入掉队",
+        "detail": "现金转化弱"
       }
     }
   ],
@@ -234,6 +230,67 @@
         "KLAC-REVENUE-2025",
         "KLAC-CFO-2024",
         "KLAC-CFO-2025"
+      ]
+    },
+    {
+      "title": "设备三强三年收入与两年变化（百万美元）",
+      "columns": [
+        "公司",
+        "FY2023",
+        "FY2024",
+        "FY2025",
+        "FY2024 同比",
+        "FY2025 同比",
+        "两年变化"
+      ],
+      "units": [
+        "",
+        "百万美元",
+        "百万美元",
+        "百万美元",
+        "%",
+        "%",
+        "%"
+      ],
+      "rows": [
+        [
+          "AMAT",
+          26517,
+          27176,
+          28368,
+          2.5,
+          4.4,
+          7.0
+        ],
+        [
+          "LRCX",
+          17428,
+          14905,
+          18435,
+          -14.5,
+          23.7,
+          5.8
+        ],
+        [
+          "KLAC",
+          10496,
+          9812,
+          12156,
+          -6.5,
+          23.9,
+          15.8
+        ]
+      ],
+      "claim_ids": [
+        "AMAT-REVENUE-2023",
+        "AMAT-REVENUE-2024",
+        "AMAT-REVENUE-2025",
+        "LRCX-REVENUE-2023",
+        "LRCX-REVENUE-2024",
+        "LRCX-REVENUE-2025",
+        "KLAC-REVENUE-2023",
+        "KLAC-REVENUE-2024",
+        "KLAC-REVENUE-2025"
       ]
     }
   ],
@@ -404,9 +461,15 @@
           "AMAT-REVENUE-2024",
           "AMAT-REVENUE-2025",
           "LRCX-REVENUE-2025",
-          "KLAC-REVENUE-2025"
+          "KLAC-REVENUE-2025",
+          "AMAT-REVENUE-2023",
+          "LRCX-REVENUE-2023",
+          "KLAC-REVENUE-2023",
+          "AMAT-CFO-2023",
+          "LRCX-CFO-2023",
+          "KLAC-CFO-2023"
         ],
-        "interpretation": "capex 约 +60%；LRCX/KLAC 收入约 +24%，AMAT 仅 +4.4%。行业传导成立但幅度小于 capex，AMAT 显著掉队；支持 H2（总量 capex 不是好代理）并进一步指向公司因素。",
+        "interpretation": "FY2025 单年：AMAT +4.4% vs 同行 +24%；FY2023→FY2025：AMAT +7.0%、LRCX +5.8%、KLAC +15.8%，收入未持续掉队；现金流两年 AMAT −8.5% vs 同行 +11%–19%，背离持续。",
         "supports": [
           "H2"
         ],
@@ -419,7 +482,7 @@
         "weakens_if": "增速差继续扩大"
       }
     ],
-    "conclusion": "行业层面 AI 资本开支传导到了设备：LRCX/KLAC 收入增约 24%；AMAT 只增 4.4% 且现金流失血，掉队是公司因素，不是行业需求不足。",
+    "conclusion": "两年维度 AMAT 收入 +7.0% 与 LRCX +5.8% 相当，KLAC +15.8% 更强；AMAT 没有持续丢失收入份额，持续背离的是经营现金流（−8.5% vs 同行 +11%–19%），问题在现金转化而非收入。",
     "conclusion_claim_ids": [
       "I-JUDGE"
     ],
@@ -435,101 +498,173 @@
   },
   "implications": [
     {
-      "title": "设备环节整体接住了需求",
-      "text": "LRCX、KLAC 收入增约 24%，说明 AI 资本开支确实进入设备环节；「设备没接住」的行业叙事不成立。",
+      "title": "不要用一年同比判断份额",
+      "text": "同行的低基数反弹会放大差距；至少看两年，才能区分周期与份额。",
       "claim_ids": [
+        "LRCX-REVENUE-2024",
         "LRCX-REVENUE-2025",
-        "KLAC-REVENUE-2025",
-        "CAPEX-MSFT-25"
+        "KLAC-REVENUE-2024",
+        "KLAC-REVENUE-2025"
       ],
-      "horizon": "FY2025 对照"
+      "horizon": "FY2023–FY2025"
     },
     {
-      "title": "AMAT 的问题更像公司变量",
-      "text": "同行收入与现金流双增，AMAT 收入微增、现金流失血；产品结构、客户份额与中国收入比行业总量更能解释差距。",
+      "title": "AMAT 的异常在现金，不在收入",
+      "text": "两年收入 +7.0% 与 LRCX 相当，但经营现金流 −8.5%、同行增长；跟踪营运资本与验收比跟踪收入增速更有信息量。",
       "claim_ids": [
         "AMAT-REVENUE-2025",
         "AMAT-CFO-2025",
         "LRCX-CFO-2025",
-        "KLAC-CFO-2025",
-        "I-JUDGE"
+        "KLAC-CFO-2025"
       ],
       "horizon": "未来 4–6 个季度"
     },
     {
-      "title": "不要把 AMAT 当行业代理",
-      "text": "用 AMAT 判断 AI 设备景气会低估行业；反过来，用行业景气解释 AMAT 会掩盖公司问题。看 AMAT 要单独跟踪份额与产品组合。",
+      "title": "用两年窗口跟踪份额",
+      "text": "若 FY2026 AMAT 收入继续落后且现金流不改善，才支持份额流失；单年数据不足以定论。",
       "claim_ids": [
         "AMAT-REVENUE-2025",
-        "LRCX-REVENUE-2025",
-        "KLAC-REVENUE-2025"
+        "AMAT-REVENUE-2023",
+        "LRCX-REVENUE-2025"
       ],
-      "horizon": "下一次财报"
+      "horizon": "FY2026 财报"
     }
   ],
   "summary": {
-    "conclusion": "设备行业接住了 AI 资本开支：LRCX、KLAC 收入增约 24%，但 AMAT 只增 4.4%——掉队的是公司，不是行业。",
-    "surprise": "AMAT 经营现金流下降 8.3%，而 LRCX、KLAC 分别增长 32.7%、23.4%；同行在赚钱，AMAT 在失血。",
-    "next_check": "看 AMAT 的产品结构、客户份额与中国收入，解释为什么同行接住了它没接住。"
+    "conclusion": "两年维度看，AMAT 收入 +7.0%，与 LRCX +5.8% 相当，KLAC +15.8% 更强——AMAT 没有持续丢失收入份额。",
+    "surprise": "FY2025 的「同行 +24%、AMAT +4.4%」主要是 LRCX/KLAC 从 FY2024 下滑中反弹；真正持续掉队的是现金流：AMAT −8.5%，同行 +19.2%/+11.3%。",
+    "next_check": "看 FY2026 收入与经营现金流，判断 AMAT 的现金转化弱是营运资本、产品结构还是验收节奏。"
   },
   "charts": [
     {
-      "kind": "bar",
-      "title": "设备三强 FY2025 增速：AMAT 是例外",
-      "x_label": "公司",
-      "y_label": "同比 %",
-      "unit": "%",
+      "kind": "line",
+      "title": "收入指数（FY2023=100）：AMAT 平稳，同行先跌后反弹",
+      "x_label": "财年",
+      "y_label": "指数",
+      "unit": "指数",
       "series": [
         {
-          "name": "收入增速",
+          "name": "AMAT",
           "rows": [
             {
-              "label": "AMAT",
-              "value": 4.4
+              "label": "FY2023",
+              "value": 100
             },
             {
-              "label": "LRCX",
-              "value": 23.7
+              "label": "FY2024",
+              "value": 102.5
             },
             {
-              "label": "KLAC",
-              "value": 23.9
+              "label": "FY2025",
+              "value": 107.0
             }
           ]
         },
         {
-          "name": "经营现金流增速",
+          "name": "LRCX",
           "rows": [
             {
-              "label": "AMAT",
-              "value": -8.3
+              "label": "FY2023",
+              "value": 100
             },
             {
-              "label": "LRCX",
-              "value": 32.7
+              "label": "FY2024",
+              "value": 85.5
             },
             {
-              "label": "KLAC",
-              "value": 23.4
+              "label": "FY2025",
+              "value": 105.8
+            }
+          ]
+        },
+        {
+          "name": "KLAC",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 100
+            },
+            {
+              "label": "FY2024",
+              "value": 93.5
+            },
+            {
+              "label": "FY2025",
+              "value": 115.8
             }
           ]
         }
       ],
       "claim_ids": [
+        "AMAT-REVENUE-2023",
         "AMAT-REVENUE-2024",
         "AMAT-REVENUE-2025",
-        "AMAT-CFO-2024",
-        "AMAT-CFO-2025",
+        "LRCX-REVENUE-2023",
         "LRCX-REVENUE-2024",
         "LRCX-REVENUE-2025",
-        "LRCX-CFO-2024",
-        "LRCX-CFO-2025",
+        "KLAC-REVENUE-2023",
         "KLAC-REVENUE-2024",
+        "KLAC-REVENUE-2025"
+      ],
+      "note": "以各公司 FY2023 收入为 100，按披露值计算；财年结束月不同，指数仅用于同公司时间序列与近似对照。"
+    },
+    {
+      "kind": "bar",
+      "title": "两年变化：收入 AMAT 不落后，现金流明显落后",
+      "x_label": "公司",
+      "y_label": "FY2023→FY2025 变化 %",
+      "unit": "%",
+      "series": [
+        {
+          "name": "收入变化",
+          "rows": [
+            {
+              "label": "AMAT",
+              "value": 7.0
+            },
+            {
+              "label": "LRCX",
+              "value": 5.8
+            },
+            {
+              "label": "KLAC",
+              "value": 15.8
+            }
+          ]
+        },
+        {
+          "name": "经营现金流变化",
+          "rows": [
+            {
+              "label": "AMAT",
+              "value": -8.5
+            },
+            {
+              "label": "LRCX",
+              "value": 19.2
+            },
+            {
+              "label": "KLAC",
+              "value": 11.3
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "AMAT-REVENUE-2023",
+        "AMAT-REVENUE-2025",
+        "LRCX-REVENUE-2023",
+        "LRCX-REVENUE-2025",
+        "KLAC-REVENUE-2023",
         "KLAC-REVENUE-2025",
-        "KLAC-CFO-2024",
+        "AMAT-CFO-2023",
+        "AMAT-CFO-2025",
+        "LRCX-CFO-2023",
+        "LRCX-CFO-2025",
+        "KLAC-CFO-2023",
         "KLAC-CFO-2025"
       ],
-      "note": "FY2024→FY2025；三家公司财年结束月不同（AMAT 10 月、LRCX/KLAC 6 月），同比存在期间错位；增速由披露值计算。"
+      "note": "两年变化由披露值计算；现金流为经营现金流（CFO），不是自由现金流。"
     }
   ]
 }
