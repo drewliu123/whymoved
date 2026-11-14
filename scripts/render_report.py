@@ -850,25 +850,33 @@ def _blocks(report, ledger, sources):
         window = result["window"]
         yield ("h2", "事件研究")
         yield ("p", "事件类型：" + str(result["event"]) + "；窗口：−%s / +%s 个观测点" % (window["before"], window["after"]))
+        def _pct(value):
+            if isinstance(value, bool) or not isinstance(value, (int, float)):
+                return "—"
+            try:
+                return "{:.2f}%".format(value * 100)
+            except (OverflowError, ValueError):
+                return "—"
+
         summary_rows = []
         for name, label in (("pre_return", "前窗"), ("post_return", "后窗"), ("total_return", "全窗"),
                             ("excess_post_return", "后窗超额"), ("excess_total_return", "全窗超额")):
             stats = result["summary"].get(name)
             if not stats:
                 continue
-            summary_rows.append([label, stats["n"], _metric_text(stats["median"]), _metric_text(stats["mean"]),
-                                 _metric_text(stats["q1"]), _metric_text(stats["q3"]),
-                                 _metric_text(stats["min"]), _metric_text(stats["max"]),
-                                 _metric_text(stats["positive_rate"])])
+            summary_rows.append([label, stats["n"], _pct(stats["median"]), _pct(stats["mean"]),
+                                 _pct(stats["q1"]), _pct(stats["q3"]),
+                                 _pct(stats["min"]), _pct(stats["max"]),
+                                 _pct(stats["positive_rate"])])
         for name, entries in (result["summary"].get("benchmark_excess") or {}).items():
             for key, prefix in (("post_return", "后窗超额·"), ("total_return", "全窗超额·")):
                 stats = entries.get(key)
                 if not stats:
                     continue
-                summary_rows.append([prefix + str(name), stats["n"], _metric_text(stats["median"]),
-                                     _metric_text(stats["mean"]), _metric_text(stats["q1"]),
-                                     _metric_text(stats["q3"]), _metric_text(stats["min"]),
-                                     _metric_text(stats["max"]), _metric_text(stats["positive_rate"])])
+                summary_rows.append([prefix + str(name), stats["n"], _pct(stats["median"]),
+                                     _pct(stats["mean"]), _pct(stats["q1"]),
+                                     _pct(stats["q3"]), _pct(stats["min"]),
+                                     _pct(stats["max"]), _pct(stats["positive_rate"])])
         sample_claims = list(dict.fromkeys(cid for sample in report["event_study"].get("samples", [])
                                            if isinstance(sample, dict)
                                            for cid in sample.get("claim_ids", []) if isinstance(cid, str)))
@@ -881,10 +889,10 @@ def _blocks(report, ledger, sources):
             columns += ["后窗超额", "全窗超额"]
         rows = []
         for row in result["samples"]:
-            cells = [row["id"], row["event_date"], _metric_text(row["pre_return"]),
-                     _metric_text(row["post_return"]), _metric_text(row["total_return"])]
+            cells = [row["id"], row["event_date"], _pct(row["pre_return"]),
+                     _pct(row["post_return"]), _pct(row["total_return"])]
             if has_excess:
-                cells += [_metric_text(row.get("excess_post_return")), _metric_text(row.get("excess_total_return"))]
+                cells += [_pct(row.get("excess_post_return")), _pct(row.get("excess_total_return"))]
             rows.append(cells)
         yield ("table", {"title": "样本明细", "columns": columns, "rows": rows, "claim_ids": sample_claims})
         if result["skipped"]:

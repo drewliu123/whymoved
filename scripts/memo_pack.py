@@ -66,6 +66,15 @@ def _compact(value):
         return "—"
 
 
+def _pct(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return "—"
+    try:
+        return "{:.2f}%".format(value * 100)
+    except (OverflowError, ValueError):
+        return "—"
+
+
 def _percent(value):
     if isinstance(value, bool) or not isinstance(value, (int, float)):
         return "—"
@@ -232,16 +241,16 @@ def _event_study(report):
         if not stats:
             continue
         lines.append("- %s：n=%d，中位 %s，为正 %s，Q1—Q3 %s—%s" % (
-            label, stats["n"], _ratio(stats["median"]), _ratio(stats["positive_rate"]),
-            _ratio(stats["q1"]), _ratio(stats["q3"])))
+            label, stats["n"], _pct(stats["median"]), _pct(stats["positive_rate"]),
+            _pct(stats["q1"]), _pct(stats["q3"])))
     for name, entries in (result["summary"].get("benchmark_excess") or {}).items():
         for key, label in (("post_return", "后窗超额·"), ("total_return", "全窗超额·")):
             stats = entries.get(key)
             if not stats:
                 continue
             lines.append("- %s%s：n=%d，中位 %s，为正 %s，Q1—Q3 %s—%s" % (
-                label, name, stats["n"], _ratio(stats["median"]), _ratio(stats["positive_rate"]),
-                _ratio(stats["q1"]), _ratio(stats["q3"])))
+                label, name, stats["n"], _pct(stats["median"]), _pct(stats["positive_rate"]),
+                _pct(stats["q1"]), _pct(stats["q3"])))
     if result.get("skipped"):
         lines.append("- 跳过 %d 条样本（窗口不足或事件日缺失），详见完整报告。" % len(result["skipped"]))
     if result.get("warnings"):

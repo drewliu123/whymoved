@@ -117,20 +117,6 @@ class MultiSeriesChartTests(unittest.TestCase):
         self.assertIn("| Q1 | 12 | 2 |", markdown)
         self.assertIn("| Q2 | 15 | 3 |", markdown)
 
-    def test_returns_only_samples_render(self):
-        report, ledger, sources = documents()
-        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
-                                 "samples": [
-                                     {"id": "E1", "date": "2025-05-03",
-                                      "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
-                                     {"id": "E2", "date": "2025-06-03",
-                                      "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
-        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
-        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
-        self.assertIn("参考类收益分布", text)
-        self.assertIn("0.095", text)
-        self.assertIn("E1", text)
-
     def test_benchmark_excess_columns(self):
         report, ledger, sources = documents()
         prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
@@ -200,20 +186,6 @@ class ChartListTests(unittest.TestCase):
         self.assertLess(markdown.index("单序列"), markdown.index("双序列"))
         self.assertIn("| 期间 | 值（亿元） |", markdown)
         self.assertIn("| 期间 | A（亿元） | B（亿元） |", markdown)
-
-    def test_returns_only_samples_render(self):
-        report, ledger, sources = documents()
-        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
-                                 "samples": [
-                                     {"id": "E1", "date": "2025-05-03",
-                                      "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
-                                     {"id": "E2", "date": "2025-06-03",
-                                      "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
-        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
-        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
-        self.assertIn("参考类收益分布", text)
-        self.assertIn("0.095", text)
-        self.assertIn("E1", text)
 
     def test_benchmark_excess_columns(self):
         report, ledger, sources = documents()
@@ -466,20 +438,6 @@ class QualityReportTests(unittest.TestCase):
         self.assertIn("high_sbc", text)
         self.assertNotIn("gross_margin_pressure", text)
 
-    def test_returns_only_samples_render(self):
-        report, ledger, sources = documents()
-        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
-                                 "samples": [
-                                     {"id": "E1", "date": "2025-05-03",
-                                      "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
-                                     {"id": "E2", "date": "2025-06-03",
-                                      "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
-        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
-        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
-        self.assertIn("参考类收益分布", text)
-        self.assertIn("0.095", text)
-        self.assertIn("E1", text)
-
     def test_benchmark_excess_columns(self):
         report, ledger, sources = documents()
         prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
@@ -533,6 +491,63 @@ class QualityReportTests(unittest.TestCase):
 
 
 class EventStudyReportTests(unittest.TestCase):
+    def test_returns_only_samples_render(self):
+        report, ledger, sources = documents()
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
+                                 "samples": [
+                                     {"id": "E1", "date": "2025-05-03",
+                                      "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
+                                     {"id": "E2", "date": "2025-06-03",
+                                      "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("参考类收益分布", text)
+        self.assertIn("9.50%", text)
+        self.assertIn("E1", text)
+
+    def test_returns_only_samples_render(self):
+        report, ledger, sources = documents()
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
+                                 "samples": [
+                                     {"id": "E1", "date": "2025-05-03",
+                                      "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
+                                     {"id": "E2", "date": "2025-06-03",
+                                      "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("参考类收益分布", text)
+        self.assertIn("9.50%", text)
+        self.assertIn("E1", text)
+
+    def test_returns_only_samples_render(self):
+        report, ledger, sources = documents()
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
+                                 "samples": [
+                                     {"id": "E1", "date": "2025-05-03",
+                                      "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
+                                     {"id": "E2", "date": "2025-06-03",
+                                      "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("参考类收益分布", text)
+        self.assertIn("9.50%", text)
+        self.assertIn("E1", text)
+
+    def test_returns_only_samples_render(self):
+        report, ledger, sources = documents()
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
+                                 "samples": [
+                                     {"id": "E1", "date": "2025-05-03",
+                                      "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
+                                     {"id": "E2", "date": "2025-06-03",
+                                      "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("参考类收益分布", text)
+        self.assertIn("9.50%", text)
+        self.assertIn("E1", text)
+
+
     def test_named_benchmarks_render(self):
         report, ledger, sources = documents()
         prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
@@ -576,21 +591,7 @@ class EventStudyReportTests(unittest.TestCase):
                          "绝对收益", "不给p值", "不是预测"):
                 self.assertIn(word, text)
         markdown = render_report.render_markdown(report, ledger, sources).replace("\\", "")
-        self.assertIn("0.095", markdown)
-
-    def test_returns_only_samples_render(self):
-        report, ledger, sources = documents()
-        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},
-                                 "samples": [
-                                     {"id": "E1", "date": "2025-05-03",
-                                      "returns": {"pre": 0.2, "post": 0.2, "total": 0.44}},
-                                     {"id": "E2", "date": "2025-06-03",
-                                      "returns": {"pre": 0.0, "post": -0.01, "total": -0.01}}]}
-        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
-        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
-        self.assertIn("参考类收益分布", text)
-        self.assertIn("0.095", text)
-        self.assertIn("E1", text)
+        self.assertIn("9.50%", markdown)
 
     def test_benchmark_excess_columns(self):
         report, ledger, sources = documents()

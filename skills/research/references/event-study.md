@@ -46,7 +46,7 @@
 - `post_return = close(事件日) → close(事件日+after)`
 - `total_return = close(事件日−before) → close(事件日+after)`
 
-汇总给出 `n`、`mean`、`median`、`q1`、`q3`、`min`、`max` 与 `positive_rate`（收益为正的样本占比）。窗口覆盖不足、事件日不在序列里的样本进入 `skipped` 并写明原因；可用样本少于两条直接失败——两条以下的「分布」没有意义。
+汇总给出 `n`、`mean`、`median`、`q1`、`q3`、`min`、`max` 与 `positive_rate`（收益为正的样本占比）。JSON 输出保留小数比率；报告与一页纸以百分比显示（两位小数），收益为负时带负号。窗口覆盖不足、事件日不在序列里的样本进入 `skipped` 并写明原因；可用样本少于两条直接失败——两条以下的「分布」没有意义。
 
 ```bash
 python3 "$TY_DIR/scripts/event_study.py" "$WORK/events.json" --out "$WORK/event-result.json"
