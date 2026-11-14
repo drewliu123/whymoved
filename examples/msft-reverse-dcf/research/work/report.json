@@ -1,0 +1,466 @@
+{
+  "schema_version": 2,
+  "title": "微软现价隐含约 31% 的自由现金流增速，而过去三年在下降",
+  "question": "微软当前价格隐含了多少自由现金流增长？",
+  "type": "asset",
+  "task": "反向 DCF",
+  "as_of": "2026-11-14T05:00:00Z",
+  "answer": {
+    "text": "以 FY2026 自由现金流 66,987 百万美元（经营现金流 182,935 − 现金资本开支 115,948）、净债务 19,359、股数 7,453 百万与 2026-11-13 收盘 523.88 美元为输入，在 8% 折现、2.5% 终值、5 年显式期假设下，价格隐含约 31.2% 的五年自由现金流增速。折现率改为 7%/9% 时，隐含增长约 25.4%/36.4%；终值改为 2%/3% 时约 33.3%/28.9%。同期按同一口径的自由现金流从 FY2024 的 74,071 降到 FY2026 的 66,987。也就是说，当前价格嵌入了资本开支回落后现金流重新加速的预期；这不构成买卖结论，假设本身决定结论。",
+    "claim_ids": [
+      "O-DCF",
+      "I-JUDGE",
+      "C-PX"
+    ]
+  },
+  "findings": [
+    {
+      "title": "隐含增长约 31%，显著高于历史",
+      "text": "8% 折现、2.5% 终值下，现价隐含五年自由现金流增速约 31.2%；历史三年自由现金流从 74,071 降至 66,987。",
+      "claim_ids": [
+        "O-DCF",
+        "CFO-2024",
+        "CAPEX-2024",
+        "CFO-2026",
+        "CAPEX-2026",
+        "I-JUDGE"
+      ],
+      "why_it_matters": "价格与历史轨迹的差距，是研究要解释的核心，而不是「贵或便宜」的标签。",
+      "increment": {
+        "kind": "calculation",
+        "baseline": "只看市盈率",
+        "detail": "反推增长与历史自由现金流对照"
+      },
+      "calculation_ids": [
+        "M1"
+      ]
+    },
+    {
+      "title": "假设决定结论",
+      "text": "折现率 7%/9% 与终值 2%/3% 的组合把隐含增长从约 25% 推到约 36%。",
+      "claim_ids": [
+        "O-DCF",
+        "I-ASSUMP"
+      ],
+      "why_it_matters": "反向 DCF 是假设的算术；不写清假设就会把模型输出当成市场共识。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "单一折现率下的点估计",
+        "detail": "敏感性区间"
+      }
+    },
+    {
+      "title": "自由现金流口径与净债务都需声明",
+      "text": "自由现金流按 CFO − 现金资本开支；净债务只扣现金及等价物，不含短期投资。",
+      "claim_ids": [
+        "CFO-2026",
+        "CAPEX-2026",
+        "C-DEBT",
+        "C-CASH"
+      ],
+      "why_it_matters": "口径变化会直接改变隐含增长，必须与数字一起呈现。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "把自由现金流当成唯一口径",
+        "detail": "口径与净债务声明"
+      }
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "下一财年自由现金流与资本开支",
+      "meaning": "验证资本开支回落与现金流加速是否出现",
+      "claim_ids": [
+        "CFO-2026",
+        "CAPEX-2026"
+      ],
+      "due": "2027-07-29",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "8% 折现率、2.5% 终值与 5 年显式期都是研究者假设，不是市场共识；换假设结论会变。",
+      "material": true,
+      "claim_ids": [
+        "I-ASSUMP"
+      ]
+    },
+    {
+      "text": "自由现金流按 CFO − 现金资本开支；净债务只扣现金及等价物，不含 559 亿美元短期投资。",
+      "material": true,
+      "claim_ids": [
+        "C-CASH"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "自由现金流轨迹（CFO − 现金资本开支）",
+      "columns": [
+        "财年",
+        "经营现金流",
+        "现金资本开支",
+        "自由现金流"
+      ],
+      "units": [
+        "",
+        "百万美元",
+        "百万美元",
+        "百万美元"
+      ],
+      "rows": [
+        [
+          "FY2024",
+          118548,
+          44477,
+          74071
+        ],
+        [
+          "FY2025",
+          136162,
+          64551,
+          71611
+        ],
+        [
+          "FY2026",
+          182935,
+          115948,
+          66987
+        ]
+      ],
+      "claim_ids": [
+        "CFO-2024",
+        "CFO-2025",
+        "CFO-2026",
+        "CAPEX-2024",
+        "CAPEX-2025",
+        "CAPEX-2026"
+      ]
+    }
+  ],
+  "valuation_summary": {
+    "rows": [
+      {
+        "model_id": "M1",
+        "label": "反向 DCF 隐含增长",
+        "metric": "implied_growth"
+      }
+    ],
+    "note": "隐含增长是价格与假设的算术结果，不是预测；不同假设下区间很宽。"
+  },
+  "analysis": {
+    "version": 1,
+    "question_kind": "valuation",
+    "method": "reverse_valuation",
+    "baseline": "FY2026 自由现金流 66,987 与历史三年轨迹",
+    "baseline_claim_ids": [
+      "CFO-2026",
+      "CAPEX-2026"
+    ],
+    "price_relevance": true,
+    "mechanism_chain": [
+      "自由现金流",
+      "显式期增长",
+      "终值",
+      "企业价值",
+      "每股价值"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "价格依赖资本开支回落后自由现金流加速"
+      },
+      {
+        "id": "H2",
+        "explanation": "价格与历史自由现金流轨迹一致"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "隐含增长显著高于历史轨迹"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "隐含增长与历史轨迹一致"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "CFO-2024",
+          "CAPEX-2024",
+          "CFO-2026",
+          "CAPEX-2026",
+          "O-DCF"
+        ],
+        "interpretation": "隐含增长约 31%，历史三年自由现金流下降，支持 H1、削弱 H2。",
+        "supports": [
+          "H1"
+        ],
+        "weakens": [
+          "H2"
+        ],
+        "next_observation": "下一财年自由现金流与资本开支",
+        "by": "2027-07-29",
+        "supports_if": "资本开支回落且自由现金流加速",
+        "weakens_if": "资本开支维持高位且现金流继续下降"
+      }
+    ],
+    "conclusion": "现价隐含约 31% 的自由现金流增速，远高于过去三年轨迹；结论依赖显式假设，不构成买卖建议。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [
+      {
+        "id": "M1",
+        "instrument": "MSFT",
+        "description": "微软现价的反向 DCF 隐含增长",
+        "currency": "USD",
+        "scale": "million",
+        "period": "FY2026 自由现金流为基期，5 年显式期",
+        "scope": "CFO − 现金资本开支",
+        "assumptions": {
+          "discount_rate": "8% 为研究者假设，不是市场共识",
+          "terminal_growth": "2.5% 长期名义增长",
+          "years": "5 年显式期",
+          "growth_low": "求解下界 0%，覆盖负增长情形",
+          "growth_high": "求解上界 60%，确保括号住现价"
+        },
+        "spec": {
+          "kind": "reverse_dcf",
+          "inputs": {
+            "free_cash_flow": {
+              "value": 66987,
+              "unit": "currency",
+              "role": "observed",
+              "claim_ids": [
+                "CFO-2026",
+                "CAPEX-2026"
+              ]
+            },
+            "discount_rate": {
+              "value": 0.08,
+              "unit": "ratio",
+              "role": "assumption",
+              "claim_ids": [
+                "I-ASSUMP"
+              ]
+            },
+            "terminal_growth": {
+              "value": 0.025,
+              "unit": "ratio",
+              "role": "assumption",
+              "claim_ids": [
+                "I-ASSUMP"
+              ]
+            },
+            "years": {
+              "value": 5,
+              "unit": "year",
+              "role": "assumption",
+              "claim_ids": [
+                "I-ASSUMP"
+              ]
+            },
+            "net_debt": {
+              "value": 19359,
+              "unit": "currency",
+              "role": "observed",
+              "claim_ids": [
+                "C-DEBT",
+                "C-CASH"
+              ]
+            },
+            "shares": {
+              "value": 7453,
+              "unit": "shares",
+              "role": "observed",
+              "claim_ids": [
+                "C-SHARES"
+              ]
+            },
+            "price": {
+              "value": 523.88,
+              "unit": "currency/share",
+              "role": "observed",
+              "claim_ids": [
+                "C-PX"
+              ]
+            },
+            "growth_low": {
+              "value": 0.0,
+              "unit": "ratio",
+              "role": "assumption",
+              "claim_ids": [
+                "I-ASSUMP"
+              ]
+            },
+            "growth_high": {
+              "value": 0.6,
+              "unit": "ratio",
+              "role": "assumption",
+              "claim_ids": [
+                "I-ASSUMP"
+              ]
+            }
+          },
+          "sensitivity": [
+            {
+              "input": "discount_rate",
+              "values": [
+                0.07,
+                0.09
+              ]
+            },
+            {
+              "input": "terminal_growth",
+              "values": [
+                0.02,
+                0.03
+              ]
+            }
+          ]
+        },
+        "output_claim_ids": [
+          "O-DCF"
+        ],
+        "result": {
+          "outputs": {
+            "implied_growth": {
+              "value": 0.31181919614318754,
+              "unit": "ratio"
+            },
+            "target_enterprise_value": {
+              "value": 3923836.64,
+              "unit": "currency"
+            },
+            "solved_enterprise_value": {
+              "value": 3923836.6400032733,
+              "unit": "currency"
+            },
+            "residual": {
+              "value": 3.2731331884860992e-06,
+              "unit": "currency"
+            }
+          },
+          "sensitivity": [
+            {
+              "input": "discount_rate",
+              "value": 0.07,
+              "unit": "ratio",
+              "outputs": {
+                "implied_growth": {
+                  "value": 0.2538391445763409,
+                  "unit": "ratio"
+                },
+                "target_enterprise_value": {
+                  "value": 3923836.64,
+                  "unit": "currency"
+                },
+                "solved_enterprise_value": {
+                  "value": 3923836.640060842,
+                  "unit": "currency"
+                },
+                "residual": {
+                  "value": 6.084190681576729e-05,
+                  "unit": "currency"
+                }
+              }
+            },
+            {
+              "input": "discount_rate",
+              "value": 0.09,
+              "unit": "ratio",
+              "outputs": {
+                "implied_growth": {
+                  "value": 0.3634540098253637,
+                  "unit": "ratio"
+                },
+                "target_enterprise_value": {
+                  "value": 3923836.64,
+                  "unit": "currency"
+                },
+                "solved_enterprise_value": {
+                  "value": 3923836.639620551,
+                  "unit": "currency"
+                },
+                "residual": {
+                  "value": -0.0003794492222368717,
+                  "unit": "currency"
+                }
+              }
+            },
+            {
+              "input": "terminal_growth",
+              "value": 0.02,
+              "unit": "ratio",
+              "outputs": {
+                "implied_growth": {
+                  "value": 0.33328109993599364,
+                  "unit": "ratio"
+                },
+                "target_enterprise_value": {
+                  "value": 3923836.64,
+                  "unit": "currency"
+                },
+                "solved_enterprise_value": {
+                  "value": 3923836.6402350683,
+                  "unit": "currency"
+                },
+                "residual": {
+                  "value": 0.00023506814613938332,
+                  "unit": "currency"
+                }
+              }
+            },
+            {
+              "input": "terminal_growth",
+              "value": 0.03,
+              "unit": "ratio",
+              "outputs": {
+                "implied_growth": {
+                  "value": 0.28861599911469976,
+                  "unit": "ratio"
+                },
+                "target_enterprise_value": {
+                  "value": 3923836.64,
+                  "unit": "currency"
+                },
+                "solved_enterprise_value": {
+                  "value": 3923836.6397831696,
+                  "unit": "currency"
+                },
+                "residual": {
+                  "value": -0.0002168305218219757,
+                  "unit": "currency"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "model_status": "computed",
+    "model_reason": "输入均有 T0 来源，反推是确定性算术",
+    "market": {
+      "status": "assessed",
+      "reason": "用收盘价与反向 DCF 隐含增长对照",
+      "claim_ids": [
+        "O-DCF",
+        "C-PX"
+      ],
+      "model_ids": [
+        "M1"
+      ],
+      "implied_expectation": "现价隐含约 31.2% 的五年自由现金流增速（8% 折现、2.5% 终值）",
+      "research_expectation": "研究者认为资本开支回落后现金流可能改善，但幅度未验证",
+      "gap": "隐含增长与历史轨迹的差距需要未来资本开支与现金流验证",
+      "conditions": "折现率、终值或资本开支路径变化时重算"
+    }
+  }
+}

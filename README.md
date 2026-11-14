@@ -57,6 +57,11 @@
 - **[阅读相对估值报告](examples/mega-cap-peers/research/work/report.md)**
 - **[查看完整案例与命令](examples/mega-cap-peers/README.md)**
 
+**第九个例子：现价隐含多少增长？** 用微软 FY2026 真实现金流与 2026-11-13 收盘价做反向 DCF：在 8% 折现、2.5% 终值、5 年假设下，现价隐含约 **31.2%** 的五年自由现金流增速；而同期 FCF 从 74,071 降到 66,987 百万美元。折现率改 7%/9% 时隐含增长约 25.4%/36.4%——假设本身决定结论。
+
+- **[阅读反向 DCF 报告](examples/msft-reverse-dcf/research/work/report.md)**
+- **[查看完整案例与命令](examples/msft-reverse-dcf/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

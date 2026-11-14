@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "question": "微软当前价格隐含了多少自由现金流增长？",
+  "type": "asset",
+  "task": "反向 DCF",
+  "entity": "Microsoft",
+  "as_of": "2026-11-14T05:00:00Z",
+  "historical": false,
+  "decision_needed": "判断现价隐含增长与历史轨迹的差距",
+  "prior_judgment": "价格高不代表贵，需要反推隐含假设",
+  "comparison": {
+    "period": "FY2024–FY2026 历史与未来 5 年",
+    "unit": "USD million 与比率",
+    "scope": "MSFT 合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "自由现金流、净债务、股数与现价取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "valuation",
+    "method": "reverse_valuation",
+    "rationale": "固定折现与终值假设，反推价格隐含的自由现金流增速",
+    "baseline": "FY2026 自由现金流与历史三年轨迹",
+    "price_relevance": true,
+    "mechanism_chain": [
+      "自由现金流",
+      "显式期增长",
+      "终值",
+      "企业价值",
+      "每股价值"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "隐含增长与 FY2024–FY2026 自由现金流方向的对比",
+        "source": "SEC 现金流事实 + Nasdaq 收盘价",
+        "by": "下一次财报",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "隐含增长显著高于历史轨迹"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "隐含增长与历史轨迹一致"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "价格依赖资本开支回落后自由现金流加速",
+      "discriminating_observation": "隐含增长远高于历史"
+    },
+    {
+      "id": "H2",
+      "explanation": "价格与历史自由现金流轨迹一致",
+      "discriminating_observation": "隐含增长接近历史增速"
+    }
+  ],
+  "queries": [
+    {
+      "question": "FY2024–FY2026 CFO、资本开支、债务、现金与股数",
+      "query": "MSFT SEC XBRL + Nasdaq close",
+      "source": "SEC / Nasdaq",
+      "purpose": "反推隐含增长",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

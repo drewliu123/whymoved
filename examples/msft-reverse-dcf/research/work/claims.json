@@ -1,0 +1,161 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T05:00:00Z",
+  "claims": [
+    {
+      "id": "CFO-2024",
+      "text": "MSFT FY2024 cfo 118548 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-2024",
+      "text": "MSFT FY2024 capex 44477 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "CFO-2025",
+      "text": "MSFT FY2025 cfo 136162 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-2025",
+      "text": "MSFT FY2025 capex 64551 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "CFO-2026",
+      "text": "MSFT FY2026 cfo 182935 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-2026",
+      "text": "MSFT FY2026 capex 115948 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "C-DEBT",
+      "text": "MSFT FY2026 期末有息负债 40294（百万）",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "C-CASH",
+      "text": "MSFT FY2026 期末现金及等价物 20935（百万）",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "C-SHARES",
+      "text": "MSFT FY2026 稀释加权股数 7453（百万）",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC"
+        }
+      ]
+    },
+    {
+      "id": "C-PX",
+      "text": "MSFT 2026-11-13 收盘 523.88 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NASDAQ"
+        }
+      ]
+    },
+    {
+      "id": "I-ASSUMP",
+      "text": "反推假设：折现率 8%、终值增长 2.5%、5 年显式期；隐含增长在 0–60% 之间求解",
+      "type": "inference",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [],
+      "basis": [
+        "CFO-2026",
+        "CAPEX-2026"
+      ]
+    },
+    {
+      "id": "O-DCF",
+      "text": "在给定折现与终值假设下，当前价格隐含的五年自由现金流增速",
+      "type": "inference",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [],
+      "basis": [
+        "CFO-2026",
+        "CAPEX-2026",
+        "C-DEBT",
+        "C-CASH",
+        "C-SHARES",
+        "C-PX",
+        "I-ASSUMP"
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "在 8% 折现、2.5% 终值、5 年假设下，当前价格隐含约 31% 的五年自由现金流增速；而 FY2024–FY2026 按 CFO−capex 的自由现金流从 74,071 降到 66,987 百万美元，定价依赖未来资本开支回落或增长加速",
+      "type": "inference",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [],
+      "basis": [
+        "CFO-2024",
+        "CFO-2025",
+        "CFO-2026",
+        "CAPEX-2024",
+        "CAPEX-2025",
+        "CAPEX-2026",
+        "O-DCF",
+        "C-PX"
+      ]
+    }
+  ]
+}
