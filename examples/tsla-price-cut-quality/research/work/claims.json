@@ -359,6 +359,138 @@
         "TSLA-CAPEX-25",
         "I-JUDGE"
       ]
+    },
+    {
+      "id": "TSLA-OPEX-22",
+      "text": "Tesla FY2022 营业费用 7,197 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-OPEX-23",
+      "text": "Tesla FY2023 营业费用 8,769 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-OPEX-24",
+      "text": "Tesla FY2024 营业费用 10,374 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-OPEX-25",
+      "text": "Tesla FY2025 营业费用 12,739 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-RD-22",
+      "text": "Tesla FY2022 研发费用 3,075 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-RD-23",
+      "text": "Tesla FY2023 研发费用 3,969 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-RD-24",
+      "text": "Tesla FY2024 研发费用 4,540 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-RD-25",
+      "text": "Tesla FY2025 研发费用 6,411 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-SGA-22",
+      "text": "Tesla FY2022 销售与管理费用 3,946 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-SGA-23",
+      "text": "Tesla FY2023 销售与管理费用 4,800 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-SGA-24",
+      "text": "Tesla FY2024 销售与管理费用 5,150 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-SGA-25",
+      "text": "Tesla FY2025 销售与管理费用 5,834 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
     }
   ]
 }
