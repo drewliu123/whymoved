@@ -89,6 +89,32 @@
         "baseline": "两者同比例增长",
         "detail": "回购弹性更大"
       }
+    },
+    {
+      "title": "P/E 24.7x 是五年最高，股息率只剩 2.4%",
+      "text": "P/E 11.3x（2021）→8.1x（2022）→11.0x（2023）→13.9x（2024）→17.4x（2025）→24.7x（当前）；当前股息率 2.4%、FCF 收益率 3.3%。",
+      "claim_ids": [
+        "PXH-XOM-21",
+        "SHH-XOM-21",
+        "PXH-XOM-22",
+        "SHH-XOM-22",
+        "PXH-XOM-23",
+        "SHH-XOM-23",
+        "PXH-XOM-24",
+        "SHH-XOM-24",
+        "PXH-XOM-25",
+        "SHH-XOM-25",
+        "PX-XOM",
+        "XOM-DIV-25",
+        "XOM-CFO-25",
+        "XOM-CAPEX-25"
+      ],
+      "why_it_matters": "利润在降、估值在升；24.7x 与 3.3% 的 FCF 收益率没有为回购削减提供缓冲。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "只看分配缺口",
+        "detail": "P/E 五年最高"
+      }
     }
   ],
   "implications": [
@@ -120,6 +146,17 @@
       "claim_ids": [
         "XOM-CAPEX-25",
         "XOM-CFO-25"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "估值没有为回购削减提供缓冲",
+      "text": "24.7x、股息率 2.4%、FCF 收益率 3.3%；若回购下调，估值与现金回报同时承压。",
+      "claim_ids": [
+        "PX-XOM",
+        "XOM-DIV-25",
+        "XOM-CFO-25",
+        "XOM-CAPEX-25"
       ],
       "horizon": "FY2026"
     }
@@ -154,6 +191,16 @@
         "回购 <150"
       ],
       "implication": "分红与回购同时承压。"
+    },
+    {
+      "name": "估值压缩",
+      "thesis": "油价与现金流走弱，P/E 向五年中位回落。",
+      "triggers": [
+        "CFO <450",
+        "P/E >20",
+        "回购 <150"
+      ],
+      "implication": "估值与现金回报双杀。"
     }
   ],
   "alternatives": [
@@ -320,6 +367,73 @@
         "XOM-EQ-25"
       ],
       "note": "FCF=CFO−capex；FCF/分配=自由现金流/(分红+回购)；由披露值计算并四舍五入。"
+    },
+    {
+      "title": "埃克森 P/E（财年末价格 / 当年 EPS）",
+      "columns": [
+        "财年",
+        "收盘价",
+        "EPS",
+        "P/E"
+      ],
+      "units": [
+        "",
+        "美元/股",
+        "美元/股",
+        "倍"
+      ],
+      "rows": [
+        [
+          "2021",
+          61.19,
+          5.43,
+          11.3
+        ],
+        [
+          "2022",
+          110.3,
+          13.66,
+          8.1
+        ],
+        [
+          "2023",
+          99.98,
+          9.07,
+          11.0
+        ],
+        [
+          "2024",
+          107.57,
+          7.74,
+          13.9
+        ],
+        [
+          "2025",
+          120.34,
+          6.9,
+          17.4
+        ],
+        [
+          "当前",
+          170.59,
+          6.9,
+          24.7
+        ]
+      ],
+      "claim_ids": [
+        "PXH-XOM-21",
+        "SHH-XOM-21",
+        "PXH-XOM-22",
+        "SHH-XOM-22",
+        "PXH-XOM-23",
+        "SHH-XOM-23",
+        "PXH-XOM-24",
+        "SHH-XOM-24",
+        "PXH-XOM-25",
+        "SHH-XOM-25",
+        "PX-XOM"
+      ],
+      "note": "P/E=财年末收盘价/(净利润/普通股)；当前为 2026-11-13 / FY2025 EPS。"
     }
   ],
   "charts": [
@@ -511,6 +625,53 @@
         "XOM-BB-25"
       ],
       "note": "同一单位；FCF=CFO−capex。"
+    },
+    {
+      "kind": "line",
+      "title": "埃克森 P/E：利润下行、估值上行",
+      "x_label": "财年",
+      "y_label": "倍",
+      "unit": "倍",
+      "rows": [
+        {
+          "label": "2021",
+          "value": 11.3
+        },
+        {
+          "label": "2022",
+          "value": 8.1
+        },
+        {
+          "label": "2023",
+          "value": 11.0
+        },
+        {
+          "label": "2024",
+          "value": 13.9
+        },
+        {
+          "label": "2025",
+          "value": 17.4
+        },
+        {
+          "label": "当前",
+          "value": 24.7
+        }
+      ],
+      "claim_ids": [
+        "PXH-XOM-21",
+        "SHH-XOM-21",
+        "PXH-XOM-22",
+        "SHH-XOM-22",
+        "PXH-XOM-23",
+        "SHH-XOM-23",
+        "PXH-XOM-24",
+        "SHH-XOM-24",
+        "PXH-XOM-25",
+        "SHH-XOM-25",
+        "PX-XOM"
+      ],
+      "note": "财年末收盘价/当年 EPS；当前为 2026-11-13。"
     }
   ],
   "analysis": {

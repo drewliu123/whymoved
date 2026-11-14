@@ -443,6 +443,133 @@
         "XOM-DIV-25",
         "XOM-BB-25"
       ]
+    },
+    {
+      "id": "PXH-XOM-21",
+      "text": "XOM 2021-12-31 收盘 61.19 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-XOM-21"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-XOM-21",
+      "text": "XOM FY2021 普通股 4.24 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-XOM-22",
+      "text": "XOM 2022-12-30 收盘 110.3 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-XOM-22"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-XOM-22",
+      "text": "XOM FY2022 普通股 4.08 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-XOM-23",
+      "text": "XOM 2023-12-29 收盘 99.98 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-XOM-23"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-XOM-23",
+      "text": "XOM FY2023 普通股 3.97 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-XOM-24",
+      "text": "XOM 2024-12-31 收盘 107.57 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-XOM-24"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-XOM-24",
+      "text": "XOM FY2024 普通股 4.35 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-XOM-25",
+      "text": "XOM 2025-12-31 收盘 120.34 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-XOM-25"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-XOM-25",
+      "text": "XOM FY2025 普通股 4.18 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PX-XOM",
+      "text": "XOM 2026-11-13 收盘 170.59 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-XOM"
+        }
+      ]
     }
   ]
 }

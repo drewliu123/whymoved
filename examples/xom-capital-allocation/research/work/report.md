@@ -40,6 +40,12 @@ capex 120\.8（FY2021）→283\.6（FY2025），2\.35 倍；capex/CFO 25\.1%→5
 
 为什么重要：回购是弹性项，分红是承诺项；现金紧张时先砍回购。
 
+## P/E 24\.7x 是五年最高，股息率只剩 2\.4%
+
+P/E 11\.3x（2021）→8\.1x（2022）→11\.0x（2023）→13\.9x（2024）→17\.4x（2025）→24\.7x（当前）；当前股息率 2\.4%、FCF 收益率 3\.3%。 [PXH\-XOM\-21] [SHH\-XOM\-21] [PXH\-XOM\-22] [SHH\-XOM\-22] [PXH\-XOM\-23] [SHH\-XOM\-23] [PXH\-XOM\-24] [SHH\-XOM\-24] [PXH\-XOM\-25] [SHH\-XOM\-25] [PX\-XOM] [XOM\-DIV\-25] [XOM\-CFO\-25] [XOM\-CAPEX\-25]
+
+为什么重要：利润在降、估值在升；24\.7x 与 3\.3% 的 FCF 收益率没有为回购削减提供缓冲。
+
 ## 这意味着什么
 
 ### FCF 覆盖是核心指标
@@ -53,6 +59,10 @@ FY2025 FCF/分配 0\.63；回到 1 以上需要 CFO &gt;560 亿或分配下降�
 ### capex 是第二个变量
 
 capex 已占 CFO 54\.6%；若继续升，分配空间进一步压缩。（FY2026） [XOM\-CAPEX\-25] [XOM\-CFO\-25]
+
+### 估值没有为回购削减提供缓冲
+
+24\.7x、股息率 2\.4%、FCF 收益率 3\.3%；若回购下调，估值与现金回报同时承压。（FY2026） [PX\-XOM] [XOM\-DIV\-25] [XOM\-CFO\-25] [XOM\-CAPEX\-25]
 
 ## 情景与触发条件
 
@@ -80,6 +90,14 @@ CFO &lt;450 亿，capex 维持，分配被迫下调。
 
 含义：分红与回购同时承压。
 
+### 估值压缩
+
+油价与现金流走弱，P/E 向五年中位回落。
+
+触发：CFO &lt;450；P/E &gt;20；回购 &lt;150
+
+含义：估值与现金回报双杀。
+
 ## 分析判断
 
 分红与回购已超过 FCF，回购是第一个被削减的；资本配置从现金充裕转向依赖资产负债表。 [I\-JUDGE]
@@ -105,6 +123,21 @@ CFO &lt;450 亿，capex 维持，分配被迫下调。
 [XOM\-REV\-21] [XOM\-REV\-22] [XOM\-REV\-23] [XOM\-REV\-24] [XOM\-REV\-25] [XOM\-CFO\-21] [XOM\-CFO\-22] [XOM\-CFO\-23] [XOM\-CFO\-24] [XOM\-CFO\-25] [XOM\-CAPEX\-21] [XOM\-CAPEX\-22] [XOM\-CAPEX\-23] [XOM\-CAPEX\-24] [XOM\-CAPEX\-25] [XOM\-DIV\-21] [XOM\-DIV\-22] [XOM\-DIV\-23] [XOM\-DIV\-24] [XOM\-DIV\-25] [XOM\-BB\-21] [XOM\-BB\-22] [XOM\-BB\-23] [XOM\-BB\-24] [XOM\-BB\-25] [XOM\-NI\-21] [XOM\-NI\-22] [XOM\-NI\-23] [XOM\-NI\-24] [XOM\-NI\-25] [XOM\-EQ\-21] [XOM\-EQ\-22] [XOM\-EQ\-23] [XOM\-EQ\-24] [XOM\-EQ\-25]
 
 FCF=CFO−capex；FCF/分配=自由现金流/\(分红\+回购\)；由披露值计算并四舍五入。
+
+### 埃克森 P/E（财年末价格 / 当年 EPS）
+
+| 财年 | 收盘价（美元/股） | EPS（美元/股） | P/E（倍） |
+| --- | --- | --- | --- |
+| 2021 | 61\.19 | 5\.43 | 11\.3 |
+| 2022 | 110\.3 | 13\.66 | 8\.1 |
+| 2023 | 99\.98 | 9\.07 | 11\.0 |
+| 2024 | 107\.57 | 7\.74 | 13\.9 |
+| 2025 | 120\.34 | 6\.9 | 17\.4 |
+| 当前 | 170\.59 | 6\.9 | 24\.7 |
+
+[PXH\-XOM\-21] [SHH\-XOM\-21] [PXH\-XOM\-22] [SHH\-XOM\-22] [PXH\-XOM\-23] [SHH\-XOM\-23] [PXH\-XOM\-24] [SHH\-XOM\-24] [PXH\-XOM\-25] [SHH\-XOM\-25] [PX\-XOM]
+
+P/E=财年末收盘价/\(净利润/普通股\)；当前为 2026\-11\-13 / FY2025 EPS。
 
 ### 经营现金流、资本开支与股东回报（十亿美元）
 
@@ -133,6 +166,21 @@ FCF=CFO−capex；FCF/分配=自由现金流/\(分红\+回购\)；由披露值�
 [XOM\-CFO\-21] [XOM\-CFO\-22] [XOM\-CFO\-23] [XOM\-CFO\-24] [XOM\-CFO\-25] [XOM\-CAPEX\-21] [XOM\-CAPEX\-22] [XOM\-CAPEX\-23] [XOM\-CAPEX\-24] [XOM\-CAPEX\-25] [XOM\-DIV\-21] [XOM\-DIV\-22] [XOM\-DIV\-23] [XOM\-DIV\-24] [XOM\-DIV\-25] [XOM\-BB\-21] [XOM\-BB\-22] [XOM\-BB\-23] [XOM\-BB\-24] [XOM\-BB\-25]
 
 同一单位；FCF=CFO−capex。
+
+### 埃克森 P/E：利润下行、估值上行
+
+| 财年 | 倍（倍） |
+| --- | --- |
+| 2021 | 11\.3 |
+| 2022 | 8\.1 |
+| 2023 | 11\.0 |
+| 2024 | 13\.9 |
+| 2025 | 17\.4 |
+| 当前 | 24\.7 |
+
+[PXH\-XOM\-21] [SHH\-XOM\-21] [PXH\-XOM\-22] [SHH\-XOM\-22] [PXH\-XOM\-23] [SHH\-XOM\-23] [PXH\-XOM\-24] [SHH\-XOM\-24] [PXH\-XOM\-25] [SHH\-XOM\-25] [PX\-XOM]
+
+财年末收盘价/当年 EPS；当前为 2026\-11\-13。
 
 ## 其他解释
 
@@ -332,8 +380,76 @@ FY2025 缺口 139 亿可能由资产出售、营运资本或债务覆盖；需�
 
 依据：XOM\-CFO\-25, XOM\-CAPEX\-25, XOM\-DIV\-25, XOM\-BB\-25；来源：
 
+\[PXH\-XOM\-21\] XOM 2021\-12\-31 收盘 61\.19 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-XOM\-21
+
+\[SHH\-XOM\-21\] XOM FY2021 普通股 4\.24 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-XOM
+
+\[PXH\-XOM\-22\] XOM 2022\-12\-30 收盘 110\.3 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-XOM\-22
+
+\[SHH\-XOM\-22\] XOM FY2022 普通股 4\.08 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-XOM
+
+\[PXH\-XOM\-23\] XOM 2023\-12\-29 收盘 99\.98 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-XOM\-23
+
+\[SHH\-XOM\-23\] XOM FY2023 普通股 3\.97 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-XOM
+
+\[PXH\-XOM\-24\] XOM 2024\-12\-31 收盘 107\.57 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-XOM\-24
+
+\[SHH\-XOM\-24\] XOM FY2024 普通股 4\.35 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-XOM
+
+\[PXH\-XOM\-25\] XOM 2025\-12\-31 收盘 120\.34 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-XOM\-25
+
+\[SHH\-XOM\-25\] XOM FY2025 普通股 4\.18 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-XOM
+
+\[PX\-XOM\] XOM 2026\-11\-13 收盘 170\.59 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-XOM
+
 S\-XOM · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: Exxon Mobil Corporation · locator：data\.sec\.gov companyfacts CIK0000034088（Exxon Mobil），10\-K 年度值 · origin\_id：sec\-xom · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "资本配置", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000034088\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000034088.json)
+
+S\-PXH\-XOM\-21 · Nasdaq · T0 · published\_at：2021\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2021\-12\-31 close $61\.19 · locator：Nasdaq XOM 历史收盘，取财年末 · origin\_id：nasdaq\-xom\-2021 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "XOM", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2021\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 61\.19\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/xom/historical](https://www.nasdaq.com/market-activity/stocks/xom/historical)
+
+S\-PXH\-XOM\-22 · Nasdaq · T0 · published\_at：2022\-12\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2022\-12\-30 close $110\.3 · locator：Nasdaq XOM 历史收盘，取财年末 · origin\_id：nasdaq\-xom\-2022 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "XOM", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2022\-12\-30T16:00:00\-05:00", "unit": "USD/share", "value": 110\.3\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/xom/historical](https://www.nasdaq.com/market-activity/stocks/xom/historical)
+
+S\-PXH\-XOM\-23 · Nasdaq · T0 · published\_at：2023\-12\-29 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2023\-12\-29 close $99\.98 · locator：Nasdaq XOM 历史收盘，取财年末 · origin\_id：nasdaq\-xom\-2023 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "XOM", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2023\-12\-29T16:00:00\-05:00", "unit": "USD/share", "value": 99\.98\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/xom/historical](https://www.nasdaq.com/market-activity/stocks/xom/historical)
+
+S\-PXH\-XOM\-24 · Nasdaq · T0 · published\_at：2024\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2024\-12\-31 close $107\.57 · locator：Nasdaq XOM 历史收盘，取财年末 · origin\_id：nasdaq\-xom\-2024 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "XOM", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2024\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 107\.57\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/xom/historical](https://www.nasdaq.com/market-activity/stocks/xom/historical)
+
+S\-PXH\-XOM\-25 · Nasdaq · T0 · published\_at：2025\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-12\-31 close $120\.34 · locator：Nasdaq XOM 历史收盘，取财年末 · origin\_id：nasdaq\-xom\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "XOM", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 120\.34\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/xom/historical](https://www.nasdaq.com/market-activity/stocks/xom/historical)
+
+S\-PX\-XOM · Nasdaq · T0 · published\_at：2026\-11\-13 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：11/13/2026 close $170\.59 · locator：Nasdaq XOM historical quotes, 2026\-11\-01 至 2026\-11\-14 · origin\_id：nasdaq\-xom · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "decisive", "purpose": "P/E 与股息率", "reason": "交易所收盘价", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "XOM", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2026\-11\-13T16:00:00\-05:00", "unit": "USD/share", "value": 170\.59\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/xom/historical](https://www.nasdaq.com/market-activity/stocks/xom/historical)
 
 来源状态：\{"sec": \{"status": "ok"\}\}

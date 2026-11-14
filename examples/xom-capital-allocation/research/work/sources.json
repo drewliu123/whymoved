@@ -31,6 +31,204 @@
         "purpose": "资本配置",
         "priority": "decisive"
       }
+    },
+    {
+      "id": "S-PXH-XOM-21",
+      "url": "https://www.nasdaq.com/market-activity/stocks/xom/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2021-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2021-12-31 close $61.19",
+      "locator": "Nasdaq XOM 历史收盘，取财年末",
+      "origin_id": "nasdaq-xom-2021",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2021-12-31T16:00:00-05:00",
+        "instrument": "XOM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 61.19,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-XOM-22",
+      "url": "https://www.nasdaq.com/market-activity/stocks/xom/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2022-12-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2022-12-30 close $110.3",
+      "locator": "Nasdaq XOM 历史收盘，取财年末",
+      "origin_id": "nasdaq-xom-2022",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2022-12-30T16:00:00-05:00",
+        "instrument": "XOM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 110.3,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-XOM-23",
+      "url": "https://www.nasdaq.com/market-activity/stocks/xom/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2023-12-29",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2023-12-29 close $99.98",
+      "locator": "Nasdaq XOM 历史收盘，取财年末",
+      "origin_id": "nasdaq-xom-2023",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2023-12-29T16:00:00-05:00",
+        "instrument": "XOM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 99.98,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-XOM-24",
+      "url": "https://www.nasdaq.com/market-activity/stocks/xom/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2024-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2024-12-31 close $107.57",
+      "locator": "Nasdaq XOM 历史收盘，取财年末",
+      "origin_id": "nasdaq-xom-2024",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2024-12-31T16:00:00-05:00",
+        "instrument": "XOM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 107.57,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-XOM-25",
+      "url": "https://www.nasdaq.com/market-activity/stocks/xom/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2025-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2025-12-31 close $120.34",
+      "locator": "Nasdaq XOM 历史收盘，取财年末",
+      "origin_id": "nasdaq-xom-2025",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2025-12-31T16:00:00-05:00",
+        "instrument": "XOM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 120.34,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-XOM",
+      "url": "https://www.nasdaq.com/market-activity/stocks/xom/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $170.59",
+      "locator": "Nasdaq XOM historical quotes, 2026-11-01 至 2026-11-14",
+      "origin_id": "nasdaq-xom",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "XOM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 170.59,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "P/E 与股息率",
+        "priority": "decisive"
+      }
     }
   ]
 }
