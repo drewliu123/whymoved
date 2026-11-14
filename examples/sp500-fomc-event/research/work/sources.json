@@ -82,6 +82,30 @@
         "purpose": "计算简单超额收益",
         "priority": "decisive"
       }
+    },
+    {
+      "id": "S4",
+      "url": "https://fred.stlouisfed.org/series/DJIA",
+      "publisher": "Federal Reserve Bank of St. Louis (FRED)",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T00:00:00Z",
+      "quote": "observation_date,DJIA\n2024-01-30,38467.31\n2024-01-31,38150.30\n2024-02-01,38519.84",
+      "locator": "FRED series DJIA，日度收盘，取 2023-12-15 至 2024-12-31（CSV）",
+      "origin_id": "fred-djia",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方统计服务提供的日度收盘序列，用作第二基准",
+        "relevance": "direct",
+        "purpose": "检验结论是否依赖基准选择",
+        "priority": "decisive"
+      }
     }
   ]
 }
