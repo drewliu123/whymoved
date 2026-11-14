@@ -42,6 +42,11 @@
 - **[阅读苹果质量报告](examples/aapl-quality/research/work/report.md)**
 - **[查看完整案例与命令](examples/aapl-quality/README.md)**
 
+**第六个例子：FOMC 之后真的偏涨吗？** 用 FRED 的 S&P 500 日度收盘与美联储会议日历，对 2024 年 8 次 FOMC 做 −3/+3 观测点事件研究：后窗 6/8 为正、中位 +1.35%，但 7 月 31 日会后 3 个观测点跌约 6.1%，均值被压到接近零；绝对收益未去市场漂移，样本只有 8 次——不能当方向依据。
+
+- **[阅读事件研究报告](examples/sp500-fomc-event/research/work/report.md)**
+- **[查看完整案例与命令](examples/sp500-fomc-event/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

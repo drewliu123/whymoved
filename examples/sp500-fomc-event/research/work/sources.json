@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "source_status": {
+    "fred": {
+      "status": "ok"
+    },
+    "fed": {
+      "status": "ok"
+    }
+  },
+  "candidates": [
+    {
+      "id": "S1",
+      "url": "https://fred.stlouisfed.org/series/SP500",
+      "publisher": "Federal Reserve Bank of St. Louis (FRED)",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T00:00:00Z",
+      "quote": "observation_date,SP500\n2024-01-30,4924.97\n2024-01-31,4845.65\n2024-02-01,4906.19",
+      "locator": "FRED series SP500，日度收盘，取 2023-12-15 至 2024-12-31（CSV）",
+      "origin_id": "fred-sp500",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方统计服务提供的日度收盘序列",
+        "relevance": "direct",
+        "purpose": "参考类事件窗口价格",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S2",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publisher": "Federal Reserve",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T00:00:00Z",
+      "quote": "January 30-31 | March 19-20 | April 30-May 1 | June 11-12 | July 30-31 | September 17-18 | November 6-7 | December 17-18",
+      "locator": "2024 FOMC meeting calendar（声明日取每次会议第二天）",
+      "origin_id": "fed-fomc-2024",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方会议日历，确定事件日期",
+        "relevance": "direct",
+        "purpose": "事件定义",
+        "priority": "decisive"
+      }
+    }
+  ]
+}

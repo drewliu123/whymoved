@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "FOMC 决议日后 3 个交易日，标普 500 有稳定方向吗？",
+  "type": "asset",
+  "task": "参考类事件研究",
+  "entity": "S&P 500",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": true,
+  "decision_needed": "判断 FOMC 后窗口能否作为方向依据",
+  "prior_judgment": "市场常说 FOMC 后上涨，需要用样本检验",
+  "comparison": {
+    "period": "2024 年 8 次 FOMC 决议",
+    "unit": "指数点收益",
+    "scope": "S&P 500 指数"
+  },
+  "budget": {
+    "max_queries": 2,
+    "max_followups": 0
+  },
+  "stop_condition": "8 次会议窗口价格取得并重算",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "event_forecast",
+    "method": "reference_class_scenarios",
+    "rationale": "用事前选定的 2024 年 FOMC 样本估计后窗收益分布",
+    "baseline": "同一指数在事件窗口前的收盘",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "FOMC 声明",
+      "利率路径预期",
+      "风险溢价",
+      "指数收益"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "事件后 3 个观测点的收益分布与尾部",
+        "source": "FRED SP500 日度收盘",
+        "by": "下一次 FOMC",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "后窗收益中位为正且尾部小"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "后窗收益无稳定方向或尾部主导"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "FOMC 后存在正漂移",
+      "discriminating_observation": "后窗多数为正且无大幅尾部"
+    },
+    {
+      "id": "H2",
+      "explanation": "FOMC 后方向不稳定，样本不足以支持漂移",
+      "discriminating_observation": "后窗正负混合或存在主导尾部"
+    }
+  ],
+  "queries": [
+    {
+      "question": "2024 年 FOMC 日期与 S&P 500 日度收盘",
+      "query": "FRED SP500 + Fed FOMC calendar",
+      "source": "FRED / Federal Reserve",
+      "purpose": "构建事件窗口",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

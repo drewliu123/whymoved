@@ -1,0 +1,116 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>标普 500 在 FOMC 决议日后：样本多数为正，但尾部与漂移使方向不可靠</title><style>
+:root{color-scheme:light;--page:#fff;--ink:#000;--sub:#52514e;--rule:#deded9;--accent:#225eaa;--plot:#fcfcfb;--series:#2a78d6;--grid:#e1e0d9}
+:root[data-theme=dark]{color-scheme:dark;--page:#141414;--ink:#f0efec;--sub:#c3c2b7;--rule:#444;--accent:#8ab9ef;--plot:#1a1a19;--series:#3987e5;--grid:#2c2c2a}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--page:#141414;--ink:#f0efec;--sub:#c3c2b7;--rule:#444;--accent:#8ab9ef;--plot:#1a1a19;--series:#3987e5;--grid:#2c2c2a}}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:17px/1.85 'PingFang SC',system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:850px;padding:34px 28px 80px;margin:auto}header{padding:14px 5vw;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;gap:16px}button{font:inherit;color:inherit;background:transparent;border:1px solid var(--rule);padding:6px 12px;border-radius:5px;cursor:pointer}a{color:var(--accent);text-underline-offset:4px}h1{font-size:clamp(28px,4vw,42px);line-height:1.35;letter-spacing:-.025em}h2{font-size:23px;margin-top:36px;line-height:1.5}h3{font-size:19px}p{white-space:pre-wrap}a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.refs{font-size:13px;margin-left:8px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}caption{text-align:left;font-weight:650;padding:14px 0}th,td{padding:12px;text-align:left;vertical-align:top;border-top:1px solid var(--rule);white-space:pre-wrap}details{margin:32px 0;border-top:1px solid var(--rule);padding-top:20px}summary{cursor:pointer;font-weight:650}.source,.claim{font-size:14px;padding:12px 0;border-bottom:1px solid var(--rule)}.chart{background:var(--plot);padding:14px}.chart svg{width:100%;height:auto;display:block}.chart text{fill:var(--sub);font:12px system-ui,sans-serif}.line{stroke:var(--series);stroke-width:2;fill:none;stroke-linejoin:round}.dot{fill:var(--series);stroke:var(--plot);stroke-width:2}.grid{stroke:var(--grid)}.skip{position:absolute;left:-10000px}.skip:focus{left:20px;top:10px;background:var(--page)}@media(max-width:600px){main{padding:18px 6vw 60px}body{font-size:16px}th,td{min-width:100px;padding:10px 6px}header{font-size:14px}}@media print{header,.skip{display:none}main{max-width:none;padding:0}body{color:#000;background:#fff}details>*{display:block}.chart{break-inside:avoid}}
+</style></head><body><a class="skip" href="#content">跳到研究正文</a><header><span>投研助手</span><span><button id="theme" type="button">切换明暗</button> <button id="print" type="button">打印</button></span></header><main id="content" tabindex="-1"><h1>标普 500 在 FOMC 决议日后：样本多数为正，但尾部与漂移使方向不可靠</h1>
+<p>FOMC 决议日后 3 个交易日，标普 500 有稳定方向吗？</p>
+<p>研究截点 2026-11-14T00:00:00Z · asset · 参考类事件研究</p>
+<h2>判断</h2>
+<p>2024 年 8 次 FOMC 决议日到后窗终点，S&amp;P 500 有 6 次为正、2 次为负；事件后收益中位约 +1.35%，但 7 月 31 日事件后 3 个观测点下跌约 6.1%，把均值压到约 +0.46%。若算上前窗起点到后窗终点的全程，中位约 +1.6%、均值约 +0.9%。样本只有 8 次、集中在同一个上涨年份，且是绝对收益、未去市场漂移，因此不能把「FOMC 后偏涨」当作方向依据。<span class="refs"><a href="#claim-C3">[C3]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C25">[C25]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<p>重要限制：参考类只有 8 次、同一政策周期；绝对收益未去市场漂移；FRED 序列可能被后续修订。<span class="refs"><a href="#claim-C25">[C25]</a></span></p>
+<p>重要限制：事件定义取声明日，未区分市场是否已提前定价；窗口为观测点个数，不是自然日。<span class="refs"><a href="#claim-C25">[C25]</a></span></p>
+<h2>6/8 为正，但尾部很重</h2>
+<p>8 次样本中 6 次事件后为正；7 月 31 日事件后 3 个观测点下跌约 6.1%，把均值压到接近零。<span class="refs"><a href="#claim-C13">[C13]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C21">[C21]</a></span></p>
+<p>为什么重要：只看正样本占比会忽略单次尾部，而尾部正是仓位与风险管理的核心。</p>
+<p>相较基线：FOMC 后偏涨的印象</p>
+<p>研究增量（contradiction）：尾部样本改变均值与风险判断</p>
+<h2>绝对收益未去市场漂移</h2>
+<p>2024 年指数整体上涨，事件窗口的正收益可能来自市场漂移而不是 FOMC 本身。<span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<p>为什么重要：没有基准调整时，事件研究只能描述绝对涨跌，不能声称事件带来了超额收益。</p>
+<p>相较基线：把事件后上涨归因于事件</p>
+<p>研究增量（connection）：区分市场漂移与事件效应</p>
+<h2>样本太小，且在同一政策周期</h2>
+<p>8 次会议不足以形成稳定分布，也无法覆盖不同利率环境。<span class="refs"><a href="#claim-C25">[C25]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<p>为什么重要：参考类的价值取决于样本广度；同一周期的事件不能外推到所有环境。</p>
+<p>相较基线：把 8 次样本当一般规律</p>
+<p>研究增量（new_fact）：事件类型与周期单一</p>
+<h2>分析判断</h2>
+<p>样本内多数为正，但尾部、漂移与样本量使「FOMC 后偏涨」不能作为方向依据。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<p>传导关系：FOMC 声明 → 利率路径预期 → 风险溢价 → 指数收益</p>
+<p>模型不适用：参考类事件研究，不适用固定估值模型</p>
+<div class="table-wrap"><table><caption>事件窗口后收益</caption><thead><tr><th scope="col">FOMC 日期</th><th scope="col">前窗起点（指数点）</th><th scope="col">事件日（指数点）</th><th scope="col">后窗终点（指数点）</th></tr></thead><tbody>
+<tr><td>2024-01-31</td><td>4890.97</td><td>4845.65</td><td>4942.81</td></tr>
+<tr><td>2024-03-20</td><td>5117.09</td><td>5224.62</td><td>5218.19</td></tr>
+<tr><td>2024-05-01</td><td>5099.96</td><td>5018.39</td><td>5180.74</td></tr>
+<tr><td>2024-06-12</td><td>5346.99</td><td>5421.03</td><td>5473.23</td></tr>
+<tr><td>2024-07-31</td><td>5459.1</td><td>5522.3</td><td>5186.33</td></tr>
+<tr><td>2024-09-18</td><td>5626.02</td><td>5618.26</td><td>5718.57</td></tr>
+<tr><td>2024-11-07</td><td>5712.69</td><td>5973.1</td><td>5983.99</td></tr>
+<tr><td>2024-12-18</td><td>6051.09</td><td>5872.16</td><td>5974.07</td></tr>
+</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C24">[C24]</a></span><p></p></div>
+<h2>接下来观察什么</h2>
+<h3>下一次 FOMC 后 3 个观测点的 S&amp;P 500 收益</h3>
+<p>追加样本，检验尾部是否重复<span class="refs"><a href="#claim-C25">[C25]</a></span></p>
+<h2>附录：分析底稿与可复算模型</h2>
+<p>方法：reference_class_scenarios；比较基准：事件窗口前的收盘<span class="refs"><a href="#claim-C1">[C1]</a></span></p>
+<div class="table-wrap"><table><caption>候选解释</caption><thead><tr><th scope="col">编号</th><th scope="col">解释</th></tr></thead><tbody>
+<tr><td>H1</td><td>FOMC 后存在正漂移</td></tr>
+<tr><td>H2</td><td>FOMC 后方向不稳定，样本不足以支持漂移</td></tr>
+</tbody></table><span class="refs"></span><p></p></div>
+<h3>区分性检验 T1</h3>
+<div class="table-wrap"><table><caption>不同解释的事前预测</caption><thead><tr><th scope="col">解释</th><th scope="col">预期观察</th></tr></thead><tbody>
+<tr><td>H1</td><td>后窗中位为正且尾部小</td></tr>
+<tr><td>H2</td><td>后窗正负混合或存在主导尾部</td></tr>
+</tbody></table><span class="refs"></span><p></p></div>
+<p>观察结果：6/8 为正但存在 -5% 尾部、均值被拉低、未去漂移，支持 H2、削弱 H1。<span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a></span></p>
+<p>支持：H2；削弱：H1</p>
+<p>下一观察：下一次 FOMC 后窗收益；时间/触发：2026-12-09；支持条件：后续样本继续正且尾部收敛；削弱条件：再次出现主导尾部或方向反转</p>
+<p>固定模型的数值已重算；来源含义、假设合理性与因果解释仍需研究审查。敏感性结果不是统计置信区间。</p>
+<h2>事件研究</h2>
+<p>事件类型：FOMC 决议日（2024 年 8 次会议）；窗口：−3 / +3 个观测点</p>
+<div class="table-wrap"><table><caption>参考类收益分布</caption><thead><tr><th scope="col">收益口径</th><th scope="col">n</th><th scope="col">中位</th><th scope="col">均值</th><th scope="col">Q1</th><th scope="col">Q3</th><th scope="col">最小</th><th scope="col">最大</th><th scope="col">为正比例</th></tr></thead><tbody>
+<tr><td>前窗</td><td>8</td><td>0.0051</td><td>0.0045</td><td>-0.0109</td><td>0.0156</td><td>-0.0296</td><td>0.0456</td><td>0.5</td></tr>
+<tr><td>后窗</td><td>8</td><td>0.0135</td><td>0.0046</td><td>0.0011</td><td>0.0184</td><td>-0.0608</td><td>0.0324</td><td>0.75</td></tr>
+<tr><td>全窗</td><td>8</td><td>0.0161</td><td>0.0089</td><td>0.0048</td><td>0.0207</td><td>-0.05</td><td>0.0475</td><td>0.75</td></tr>
+</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a></span><p></p></div>
+<div class="table-wrap"><table><caption>样本明细</caption><thead><tr><th scope="col">样本</th><th scope="col">事件日</th><th scope="col">前窗收益</th><th scope="col">后窗收益</th><th scope="col">全窗收益</th></tr></thead><tbody>
+<tr><td>FOMC-20240131</td><td>2024-01-31</td><td>-0.0093</td><td>0.0201</td><td>0.0106</td></tr>
+<tr><td>FOMC-20240320</td><td>2024-03-20</td><td>0.021</td><td>-0.0012</td><td>0.0198</td></tr>
+<tr><td>FOMC-20240501</td><td>2024-05-01</td><td>-0.016</td><td>0.0324</td><td>0.0158</td></tr>
+<tr><td>FOMC-20240612</td><td>2024-06-12</td><td>0.0138</td><td>0.0096</td><td>0.0236</td></tr>
+<tr><td>FOMC-20240731</td><td>2024-07-31</td><td>0.0116</td><td>-0.0608</td><td>-0.05</td></tr>
+<tr><td>FOMC-20240918</td><td>2024-09-18</td><td>-0.0014</td><td>0.0179</td><td>0.0165</td></tr>
+<tr><td>FOMC-20241107</td><td>2024-11-07</td><td>0.0456</td><td>0.0018</td><td>0.0475</td></tr>
+<tr><td>FOMC-20241218</td><td>2024-12-18</td><td>-0.0296</td><td>0.0174</td><td>-0.0127</td></tr>
+</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a></span><p></p></div>
+<p>绝对收益、样本事前选定、不给p值；参考类分布不是预测，也不是超额收益。</p>
+<details id="audit"><summary>来源与结论审计</summary>
+<div class="claim" id="claim-C1"><p>[C1] S&amp;P 500 2024-01-26 收盘 4890.97 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C2"><p>[C2] S&amp;P 500 2024-01-31 收盘 4845.65 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C3"><p>[C3] S&amp;P 500 2024-02-05 收盘 4942.81 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C4"><p>[C4] S&amp;P 500 2024-03-15 收盘 5117.09 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C5"><p>[C5] S&amp;P 500 2024-03-20 收盘 5224.62 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C6"><p>[C6] S&amp;P 500 2024-03-25 收盘 5218.19 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C7"><p>[C7] S&amp;P 500 2024-04-26 收盘 5099.96 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C8"><p>[C8] S&amp;P 500 2024-05-01 收盘 5018.39 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C9"><p>[C9] S&amp;P 500 2024-05-06 收盘 5180.74 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C10"><p>[C10] S&amp;P 500 2024-06-07 收盘 5346.99 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C11"><p>[C11] S&amp;P 500 2024-06-12 收盘 5421.03 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C12"><p>[C12] S&amp;P 500 2024-06-17 收盘 5473.23 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C13"><p>[C13] S&amp;P 500 2024-07-26 收盘 5459.1 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C14"><p>[C14] S&amp;P 500 2024-07-31 收盘 5522.3 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C15"><p>[C15] S&amp;P 500 2024-08-05 收盘 5186.33 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C16"><p>[C16] S&amp;P 500 2024-09-13 收盘 5626.02 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C17"><p>[C17] S&amp;P 500 2024-09-18 收盘 5618.26 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C18"><p>[C18] S&amp;P 500 2024-09-23 收盘 5718.57 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C19"><p>[C19] S&amp;P 500 2024-11-04 收盘 5712.69 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C20"><p>[C20] S&amp;P 500 2024-11-07 收盘 5973.1 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C21"><p>[C21] S&amp;P 500 2024-11-12 收盘 5983.99 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C22"><p>[C22] S&amp;P 500 2024-12-13 收盘 6051.09 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C23"><p>[C23] S&amp;P 500 2024-12-18 收盘 5872.16 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C24"><p>[C24] S&amp;P 500 2024-12-23 收盘 5974.07 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-C25"><p>[C25] 2024 年 FOMC 会议日期：1/30-31、3/19-20、4/30-5/1、6/11-12、7/30-31、9/17-18、11/6-7、12/17-18，声明在第二天（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S2</p></div>
+<div class="claim" id="claim-I-JUDGE"><p>[I-JUDGE] FOMC 决议日后 3 个交易日，标普 500 在 2024 年 8 次样本中 6 次为正，但一次约 -6% 的事件后尾部与未去市场漂移使方向不可靠，不能作为方向依据（inference；2026-11-14T00:00:00Z）</p><p>依据：C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25；来源：</p></div>
+<div class="source"><p>S1 · Federal Reserve Bank of St. Louis (FRED) · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：observation_date,SP500
+2024-01-30,4924.97
+2024-01-31,4845.65
+2024-02-01,4906.19 · locator：FRED series SP500，日度收盘，取 2023-12-15 至 2024-12-31（CSV） · origin_id：fred-sp500 · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;参考类事件窗口价格&quot;, &quot;reason&quot;: &quot;官方统计服务提供的日度收盘序列&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://fred.stlouisfed.org/series/SP500" target="_blank" rel="noopener noreferrer">https://fred.stlouisfed.org/series/SP500</a></div>
+<div class="source"><p>S2 · Federal Reserve · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：January 30-31 | March 19-20 | April 30-May 1 | June 11-12 | July 30-31 | September 17-18 | November 6-7 | December 17-18 · locator：2024 FOMC meeting calendar（声明日取每次会议第二天） · origin_id：fed-fomc-2024 · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;事件定义&quot;, &quot;reason&quot;: &quot;官方会议日历，确定事件日期&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener noreferrer">https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm</a></div>
+<p>来源状态：{&quot;fed&quot;: {&quot;status&quot;: &quot;ok&quot;}, &quot;fred&quot;: {&quot;status&quot;: &quot;ok&quot;}}</p>
+</details></main><script>
+document.getElementById('theme').addEventListener('click',()=>{const d=document.documentElement;const dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;d.dataset.theme=dark?'light':'dark'});
+document.getElementById('print').addEventListener('click',()=>window.print());
+document.querySelectorAll('.refs a').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById(a.getAttribute('href').slice(1));if(t)t.closest('details').open=true}));
+document.querySelectorAll('[data-readout]').forEach(n=>{const show=()=>{document.getElementById('chart-readout').textContent=n.dataset.readout;const cross=document.getElementById('chart-crosshair');cross.setAttribute('x1',n.dataset.x);cross.setAttribute('x2',n.dataset.x);cross.setAttribute('visibility','visible')};n.addEventListener('focus',show);n.addEventListener('pointerenter',show);n.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){const nodes=Array.from(document.querySelectorAll('[data-readout]'));const i=nodes.indexOf(n);nodes[Math.max(0,Math.min(nodes.length-1,i+(e.key==='ArrowRight'?1:-1)))].focus();e.preventDefault()}})});
+</script></body></html>
