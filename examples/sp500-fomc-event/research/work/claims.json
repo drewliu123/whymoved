@@ -926,6 +926,391 @@
           "source_id": "S4"
         }
       ]
+    },
+    {
+      "id": "N26-01-PRE",
+      "text": "S&P 500 2026-01-23 收盘 6915.61 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-01-EVENT",
+      "text": "S&P 500 2026-01-28 收盘 6978.03 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-01-POST",
+      "text": "S&P 500 2026-02-02 收盘 6976.44 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "B26-01",
+      "text": "NASDAQCOM 2026-01-28 收盘 23857.45 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "D26-01",
+      "text": "DJIA 2026-01-28 收盘 49015.6 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "N26-02-PRE",
+      "text": "S&P 500 2026-03-13 收盘 6632.19 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-02-EVENT",
+      "text": "S&P 500 2026-03-18 收盘 6624.7 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-02-POST",
+      "text": "S&P 500 2026-03-23 收盘 6581.0 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "B26-02",
+      "text": "NASDAQCOM 2026-03-18 收盘 22152.42 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "D26-02",
+      "text": "DJIA 2026-03-18 收盘 46225.15 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "N26-03-PRE",
+      "text": "S&P 500 2026-04-24 收盘 7165.08 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-03-EVENT",
+      "text": "S&P 500 2026-04-29 收盘 7135.95 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-03-POST",
+      "text": "S&P 500 2026-05-04 收盘 7200.75 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "B26-03",
+      "text": "NASDAQCOM 2026-04-29 收盘 24673.24 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "D26-03",
+      "text": "DJIA 2026-04-29 收盘 48861.81 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "N26-04-PRE",
+      "text": "S&P 500 2026-06-12 收盘 7431.46 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-04-EVENT",
+      "text": "S&P 500 2026-06-17 收盘 7420.1 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-04-POST",
+      "text": "S&P 500 2026-06-23 收盘 7365.46 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "B26-04",
+      "text": "NASDAQCOM 2026-06-17 收盘 26021.66 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "D26-04",
+      "text": "DJIA 2026-06-17 收盘 51492.55 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "N26-05-PRE",
+      "text": "S&P 500 2026-07-24 收盘 7411.98 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-05-EVENT",
+      "text": "S&P 500 2026-07-29 收盘 7316.15 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-05-POST",
+      "text": "S&P 500 2026-08-03 收盘 7600.5 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "B26-05",
+      "text": "NASDAQCOM 2026-07-29 收盘 24442.94 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "D26-05",
+      "text": "DJIA 2026-07-29 收盘 51594.14 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "N26-06-PRE",
+      "text": "S&P 500 2026-09-11 收盘 7656.98 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-06-EVENT",
+      "text": "S&P 500 2026-09-16 收盘 7551.81 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-06-POST",
+      "text": "S&P 500 2026-09-21 收盘 7764.7 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "B26-06",
+      "text": "NASDAQCOM 2026-09-16 收盘 25978.42 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "D26-06",
+      "text": "DJIA 2026-09-16 收盘 51461.9 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ]
+    },
+    {
+      "id": "N26-07-PRE",
+      "text": "S&P 500 2026-10-23 收盘 7623.68 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-07-EVENT",
+      "text": "S&P 500 2026-10-28 收盘 7743.98 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "N26-07-POST",
+      "text": "S&P 500 2026-11-02 收盘 7541.4 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "B26-07",
+      "text": "NASDAQCOM 2026-10-28 收盘 26549.85 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "D26-07",
+      "text": "DJIA 2026-10-28 收盘 52475.1 点（FRED）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ]
     }
   ]
 }
