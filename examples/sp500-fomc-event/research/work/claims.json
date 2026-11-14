@@ -310,6 +310,94 @@
         "C24",
         "C25"
       ]
+    },
+    {
+      "id": "B1",
+      "text": "NASDAQCOM 2024-01-31 收盘 15164.01 点（FRED 日度收盘）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "text": "NASDAQCOM 2024-03-20 收盘 16369.41 点（FRED 日度收盘）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "text": "NASDAQCOM 2024-05-01 收盘 15605.48 点（FRED 日度收盘）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "text": "NASDAQCOM 2024-06-12 收盘 17608.44 点（FRED 日度收盘）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "text": "NASDAQCOM 2024-07-31 收盘 17599.4 点（FRED 日度收盘）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "text": "NASDAQCOM 2024-09-18 收盘 17573.3 点（FRED 日度收盘）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "B7",
+      "text": "NASDAQCOM 2024-11-07 收盘 19269.46 点（FRED 日度收盘）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "B8",
+      "text": "NASDAQCOM 2024-12-18 收盘 19392.69 点（FRED 日度收盘）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S3"
+        }
+      ]
     }
   ]
 }

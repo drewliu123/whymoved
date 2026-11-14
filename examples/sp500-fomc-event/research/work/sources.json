@@ -58,6 +58,30 @@
         "purpose": "事件定义",
         "priority": "decisive"
       }
+    },
+    {
+      "id": "S3",
+      "url": "https://fred.stlouisfed.org/series/NASDAQCOM",
+      "publisher": "Federal Reserve Bank of St. Louis (FRED)",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T00:00:00Z",
+      "quote": "observation_date,NASDAQCOM\n2024-01-30,15509.21\n2024-01-31,15164.01\n2024-02-01,15361.64",
+      "locator": "FRED series NASDAQCOM，日度收盘，取 2023-12-15 至 2024-12-31（CSV）",
+      "origin_id": "fred-nasdaq",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方统计服务提供的日度收盘序列，用作基准",
+        "relevance": "direct",
+        "purpose": "计算简单超额收益",
+        "priority": "decisive"
+      }
     }
   ]
 }
