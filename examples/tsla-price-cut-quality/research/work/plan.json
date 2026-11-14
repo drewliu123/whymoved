@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "特斯拉降价换来了增长吗？利润与现金流谁先受损？",
+  "type": "asset",
+  "task": "增长质量",
+  "entity": "Tesla",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断降价策略的结果与现金流质量",
+  "prior_judgment": "降价通常能换来销量与规模效应",
+  "comparison": {
+    "period": "FY2022→FY2025",
+    "unit": "USD million 与 %",
+    "scope": "Tesla 合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "收入、毛利、营业利润、净利润、CFO、资本开支、存货取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "比较降价后的收入、利润率与现金流，判断规模与利润的取舍",
+    "baseline": "FY2022 的利润率与现金流",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "降价",
+      "销量与收入",
+      "毛利率",
+      "经营现金流"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "收入增速与毛利率、现金流的方向",
+        "source": "SEC XBRL 年度事实",
+        "by": "FY2026 10-K",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "收入增长、毛利率稳定"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "收入不增、毛利率下降"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "降价换来销量与规模效应",
+      "discriminating_observation": "收入增长、毛利率稳定"
+    },
+    {
+      "id": "H2",
+      "explanation": "降价没有换来增长，利润受损",
+      "discriminating_observation": "收入下降、毛利率下降"
+    }
+  ],
+  "queries": [
+    {
+      "question": "Tesla FY2022–FY2025 收入、毛利、营业利润、净利润、CFO、资本开支、存货",
+      "query": "SEC companyfacts: TSLA",
+      "source": "SEC XBRL",
+      "purpose": "降价结果拆解",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

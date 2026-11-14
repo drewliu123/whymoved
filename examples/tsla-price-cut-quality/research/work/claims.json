@@ -1,0 +1,364 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "TSLA-REV-22",
+      "text": "Tesla FY2022 收入 81462 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-REV-23",
+      "text": "Tesla FY2023 收入 96773 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-REV-24",
+      "text": "Tesla FY2024 收入 97690 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-REV-25",
+      "text": "Tesla FY2025 收入 94827 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-GP-22",
+      "text": "Tesla FY2022 毛利 20853 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-GP-23",
+      "text": "Tesla FY2023 毛利 17660 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-GP-24",
+      "text": "Tesla FY2024 毛利 17450 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-GP-25",
+      "text": "Tesla FY2025 毛利 17094 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-OP-22",
+      "text": "Tesla FY2022 营业利润 13656 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-OP-23",
+      "text": "Tesla FY2023 营业利润 8891 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-OP-24",
+      "text": "Tesla FY2024 营业利润 7076 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-OP-25",
+      "text": "Tesla FY2025 营业利润 4355 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-NI-22",
+      "text": "Tesla FY2022 净利润 12556 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-NI-23",
+      "text": "Tesla FY2023 净利润 14997 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-NI-24",
+      "text": "Tesla FY2024 净利润 7091 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-NI-25",
+      "text": "Tesla FY2025 净利润 3794 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CFO-22",
+      "text": "Tesla FY2022 经营现金流 14724 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CFO-23",
+      "text": "Tesla FY2023 经营现金流 13256 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CFO-24",
+      "text": "Tesla FY2024 经营现金流 14923 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CFO-25",
+      "text": "Tesla FY2025 经营现金流 14747 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CAPEX-22",
+      "text": "Tesla FY2022 资本开支 7158 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CAPEX-23",
+      "text": "Tesla FY2023 资本开支 8899 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CAPEX-24",
+      "text": "Tesla FY2024 资本开支 11342 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-CAPEX-25",
+      "text": "Tesla FY2025 资本开支 8527 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-INV-22",
+      "text": "Tesla FY2022 存货 12839 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-INV-23",
+      "text": "Tesla FY2023 存货 13626 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-INV-24",
+      "text": "Tesla FY2024 存货 12017 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-INV-25",
+      "text": "Tesla FY2025 存货 12392 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "特斯拉 FY2024 收入见顶、FY2025 下降 2.9%，营业利润率从 FY2022 的 16.8% 降到 4.6%；降价没有换来增长，利润表显著恶化；CFO 却维持约 147 亿美元、FCF 回升，主要靠资本开支从 113 亿降到 85 亿",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "TSLA-REV-22",
+        "TSLA-REV-23",
+        "TSLA-REV-24",
+        "TSLA-REV-25",
+        "TSLA-GP-22",
+        "TSLA-GP-23",
+        "TSLA-GP-24",
+        "TSLA-GP-25",
+        "TSLA-OP-22",
+        "TSLA-OP-23",
+        "TSLA-OP-24",
+        "TSLA-OP-25",
+        "TSLA-NI-22",
+        "TSLA-NI-23",
+        "TSLA-NI-24",
+        "TSLA-NI-25",
+        "TSLA-CFO-22",
+        "TSLA-CFO-23",
+        "TSLA-CFO-24",
+        "TSLA-CFO-25",
+        "TSLA-CAPEX-22",
+        "TSLA-CAPEX-23",
+        "TSLA-CAPEX-24",
+        "TSLA-CAPEX-25",
+        "TSLA-INV-22",
+        "TSLA-INV-23",
+        "TSLA-INV-24",
+        "TSLA-INV-25"
+      ]
+    },
+    {
+      "id": "I-QUALITY",
+      "text": "FCF 改善来自资本开支收缩而非经营改善；若资本开支回到 FY2024 水平，FCF 会明显下降，当前现金流质量偏低",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "TSLA-CFO-25",
+        "TSLA-CAPEX-24",
+        "TSLA-CAPEX-25",
+        "I-JUDGE"
+      ]
+    }
+  ]
+}

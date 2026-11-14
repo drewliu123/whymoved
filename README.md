@@ -82,6 +82,11 @@
 - **[阅读报告](examples/ai-capex-value-chain/research/work/report.md)**
 - **[查看案例与命令](examples/ai-capex-value-chain/README.md)**
 
+**第十四个例子：特斯拉降价换来了增长吗？** 收入 FY2024 见顶、FY2025 转负；营业利润率从 16.8% 降到 4.6%，净利润从 149.97 亿降到 37.94 亿美元；CFO 却维持约 147 亿，FCF 回升靠资本开支从 113 亿降到 85 亿。利润表先受损，现金流靠收缩投资撑住。
+
+- **[阅读报告](examples/tsla-price-cut-quality/research/work/report.md)**
+- **[查看案例与命令](examples/tsla-price-cut-quality/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

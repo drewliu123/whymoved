@@ -1,0 +1,524 @@
+{
+  "schema_version": 2,
+  "layout": "brief",
+  "title": "特斯拉：降价没换来增长，现金流靠削减资本开支撑住",
+  "question": "特斯拉降价换来了增长吗？利润与现金流谁先受损？",
+  "type": "asset",
+  "task": "增长质量",
+  "as_of": "2026-11-14T00:00:00Z",
+  "summary": {
+    "conclusion": "FY2024 收入见顶、FY2025 下降 2.9%；营业利润率从 FY2022 的 16.8% 降到 4.6%，降价没有换来增长。",
+    "surprise": "净利润从 149.97 亿降到 37.94 亿美元，CFO 却维持约 147 亿美元；FCF 回升主要靠资本开支从 113 亿降到 85 亿，不是经营改善。",
+    "next_check": "看 FY2026 毛利率能否回到 20% 以上、资本开支是否回到 100 亿以上；若两者都没有，现金流质量会继续下降。"
+  },
+  "answer": {
+    "text": "特斯拉的降价没有换来增长。收入 FY2023 +18.8%、FY2024 +0.9%、FY2025 −2.9%，FY2024 见顶；营业利润率从 FY2022 的 16.8% 降到 FY2023 的 9.2%、FY2024 的 7.2%、FY2025 的 4.6%；净利润从 FY2023 的 149.97 亿降到 FY2025 的 37.94 亿美元。但 CFO 仍约 147 亿美元，FCF 从 35.81 亿回升到 62.20 亿——这主要来自资本开支从 113.42 亿降到 85.27 亿，而不是经营改善。结论：利润表先受损，现金流靠收缩投资撑住；若资本开支回到 FY2024 水平，FCF 会明显下降。",
+    "claim_ids": [
+      "I-JUDGE",
+      "I-QUALITY",
+      "TSLA-REV-25",
+      "TSLA-CFO-25"
+    ]
+  },
+  "findings": [
+    {
+      "title": "收入见顶，降价没有换来增长",
+      "text": "FY2023 +18.8%、FY2024 +0.9%、FY2025 −2.9%；FY2025 收入 94,827 百万美元，低于 FY2024 的 97,690。",
+      "claim_ids": [
+        "TSLA-REV-22",
+        "TSLA-REV-23",
+        "TSLA-REV-24",
+        "TSLA-REV-25"
+      ],
+      "why_it_matters": "降价如果有效，收入应加速；实际是减速并转负，规模效应没有出现。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "降价换量",
+        "detail": "收入见顶回落"
+      }
+    },
+    {
+      "title": "营业利润率从 16.8% 降到 4.6%",
+      "text": "营业利润率 FY2022 16.8%→FY2023 9.2%→FY2024 7.2%→FY2025 4.6%；毛利率 25.6%→18.3%→17.9%→18.0%。",
+      "claim_ids": [
+        "TSLA-REV-22",
+        "TSLA-OP-22",
+        "TSLA-REV-23",
+        "TSLA-OP-23",
+        "TSLA-REV-24",
+        "TSLA-OP-24",
+        "TSLA-REV-25",
+        "TSLA-OP-25"
+      ],
+      "why_it_matters": "毛利率在 FY2024 后企稳，但营业利润率继续下降，费用与规模去杠杆在起作用。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看毛利率",
+        "detail": "营业利润率与毛利率并置"
+      }
+    },
+    {
+      "title": "净利润腰斩，CFO 却没跌",
+      "text": "净利润 14,997→7,091→3,794；CFO 13,256→14,923→14,747；CFO/净利润从 0.88 升到 3.89。",
+      "claim_ids": [
+        "TSLA-NI-23",
+        "TSLA-NI-24",
+        "TSLA-NI-25",
+        "TSLA-CFO-23",
+        "TSLA-CFO-24",
+        "TSLA-CFO-25"
+      ],
+      "why_it_matters": "利润与现金流背离，需要解释；否则会把 CFO 稳定误读为经营稳定。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看净利润",
+        "detail": "CFO/净利润背离"
+      }
+    },
+    {
+      "title": "FCF 回升靠削减资本开支",
+      "text": "资本开支 11,342→8,527（−24.8%），FCF 3,581→6,220；若维持 FY2024 capex，FCF 约 3,405。",
+      "claim_ids": [
+        "TSLA-CAPEX-24",
+        "TSLA-CAPEX-25",
+        "TSLA-CFO-24",
+        "TSLA-CFO-25",
+        "I-QUALITY"
+      ],
+      "why_it_matters": "现金流改善是投资收缩的结果，不是经营改善；估值含义不同。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "FCF 回升",
+        "detail": "capex 削减的贡献"
+      }
+    },
+    {
+      "title": "存货天数没有恶化",
+      "text": "存货天数 77.3→62.9→54.7→58.2；FY2025 回升但仍低于 FY2023。",
+      "claim_ids": [
+        "TSLA-INV-23",
+        "TSLA-INV-24",
+        "TSLA-INV-25",
+        "TSLA-REV-23",
+        "TSLA-REV-24",
+        "TSLA-REV-25",
+        "TSLA-GP-25"
+      ],
+      "why_it_matters": "没有渠道压货证据；问题在定价与利润，不在库存。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "降价=库存压力",
+        "detail": "存货天数稳定"
+      }
+    }
+  ],
+  "implications": [
+    {
+      "title": "现金流质量偏低",
+      "text": "FCF 回升靠 capex 收缩；若 FY2026 资本开支回到 100 亿以上，FCF 会回落。看现金流要同时看资本开支。",
+      "claim_ids": [
+        "I-QUALITY",
+        "TSLA-CAPEX-24",
+        "TSLA-CAPEX-25"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "利润率的底在毛利率",
+      "text": "毛利率已在 18% 附近企稳，营业利润率仍降；若毛利率不能回到 20% 以上，费用去杠杆会继续压利润。",
+      "claim_ids": [
+        "TSLA-GP-25",
+        "TSLA-REV-25",
+        "TSLA-OP-25"
+      ],
+      "horizon": "未来 4–6 个季度"
+    },
+    {
+      "title": "降价不是增长引擎",
+      "text": "收入转负、利润率下降；继续降价只会压低利润，除非需求真的被价格激活。",
+      "claim_ids": [
+        "I-JUDGE",
+        "TSLA-REV-25",
+        "TSLA-OP-25"
+      ],
+      "horizon": "FY2026"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "利润率修复",
+      "thesis": "毛利率回到 20% 以上，收入恢复增长。",
+      "triggers": [
+        "毛利率 >20%",
+        "收入增速 >5%",
+        "营业利润率 >6%"
+      ],
+      "implication": "降价策略见底，利润修复。"
+    },
+    {
+      "name": "价格战继续",
+      "thesis": "收入不增、毛利率跌破 15%。",
+      "triggers": [
+        "收入增速 <0",
+        "毛利率 <15%",
+        "营业利润率 <3%"
+      ],
+      "implication": "利润继续被压缩，现金流靠 capex 撑。"
+    },
+    {
+      "name": "capex 回归",
+      "thesis": "资本开支回到 100 亿以上，FCF 回落。",
+      "triggers": [
+        "capex >10,000",
+        "FCF <4,000",
+        "毛利率未修复"
+      ],
+      "implication": "现金流质量暴露，估值承压。"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "费用与一次性项目",
+      "text": "营业利润率下降可能部分来自费用增长或一次性项目；需要拆分销售、研发与管理费用。",
+      "claim_ids": [
+        "I-JUDGE",
+        "TSLA-OP-25"
+      ]
+    }
+  ],
+  "watch": [
+    {
+      "signal": "FY2026 毛利率与资本开支",
+      "meaning": "决定利润率与现金流质量",
+      "claim_ids": [
+        "TSLA-GP-25",
+        "TSLA-CAPEX-25"
+      ],
+      "due": "2027-01-27",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "只有年度数据；没有销量、单价与区域拆分，无法区分降价与产品结构的影响。",
+      "material": true,
+      "claim_ids": [
+        "TSLA-REV-25"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "特斯拉 FY2022–FY2025：增长、利润率与现金流",
+      "columns": [
+        "指标",
+        "FY2022",
+        "FY2023",
+        "FY2024",
+        "FY2025"
+      ],
+      "units": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "收入（百万美元）",
+          81462,
+          96773,
+          97690,
+          94827
+        ],
+        [
+          "收入增速",
+          "—",
+          18.8,
+          0.9,
+          -2.9
+        ],
+        [
+          "毛利率",
+          25.6,
+          18.2,
+          17.9,
+          18.0
+        ],
+        [
+          "营业利润率",
+          16.8,
+          9.2,
+          7.2,
+          4.6
+        ],
+        [
+          "净利润（百万美元）",
+          12556,
+          14997,
+          7091,
+          3794
+        ],
+        [
+          "经营现金流（百万美元）",
+          14724,
+          13256,
+          14923,
+          14747
+        ],
+        [
+          "资本开支（百万美元）",
+          7158,
+          8899,
+          11342,
+          8527
+        ],
+        [
+          "自由现金流（百万美元）",
+          7566,
+          4357,
+          3581,
+          6220
+        ],
+        [
+          "存货天数",
+          77.3,
+          62.9,
+          54.7,
+          58.2
+        ]
+      ],
+      "claim_ids": [
+        "TSLA-REV-22",
+        "TSLA-REV-23",
+        "TSLA-REV-24",
+        "TSLA-REV-25",
+        "TSLA-GP-22",
+        "TSLA-GP-23",
+        "TSLA-GP-24",
+        "TSLA-GP-25",
+        "TSLA-OP-22",
+        "TSLA-OP-23",
+        "TSLA-OP-24",
+        "TSLA-OP-25",
+        "TSLA-NI-22",
+        "TSLA-NI-23",
+        "TSLA-NI-24",
+        "TSLA-NI-25",
+        "TSLA-CFO-22",
+        "TSLA-CFO-23",
+        "TSLA-CFO-24",
+        "TSLA-CFO-25",
+        "TSLA-CAPEX-22",
+        "TSLA-CAPEX-23",
+        "TSLA-CAPEX-24",
+        "TSLA-CAPEX-25",
+        "TSLA-INV-22",
+        "TSLA-INV-23",
+        "TSLA-INV-24",
+        "TSLA-INV-25"
+      ],
+      "note": "毛利率=毛利/收入；营业利润率=营业利润/收入；FCF=CFO−capex；存货天数=存货/(收入−毛利)×365；由披露值计算并四舍五入。"
+    }
+  ],
+  "charts": [
+    {
+      "kind": "line",
+      "title": "收入见顶，营业利润率下滑",
+      "x_label": "财年",
+      "y_label": "百万美元 / %",
+      "unit": "混合",
+      "series": [
+        {
+          "name": "收入（百万美元）",
+          "rows": [
+            {
+              "label": "FY2022",
+              "value": 81462
+            },
+            {
+              "label": "FY2023",
+              "value": 96773
+            },
+            {
+              "label": "FY2024",
+              "value": 97690
+            },
+            {
+              "label": "FY2025",
+              "value": 94827
+            }
+          ]
+        },
+        {
+          "name": "营业利润率（%）",
+          "rows": [
+            {
+              "label": "FY2022",
+              "value": 16.8
+            },
+            {
+              "label": "FY2023",
+              "value": 9.2
+            },
+            {
+              "label": "FY2024",
+              "value": 7.2
+            },
+            {
+              "label": "FY2025",
+              "value": 4.6
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "TSLA-REV-22",
+        "TSLA-REV-23",
+        "TSLA-REV-24",
+        "TSLA-REV-25",
+        "TSLA-OP-22",
+        "TSLA-OP-23",
+        "TSLA-OP-24",
+        "TSLA-OP-25"
+      ],
+      "note": "两条线单位不同，只用于方向对照。"
+    },
+    {
+      "kind": "bar",
+      "title": "净利润腰斩，经营现金流维持",
+      "x_label": "财年",
+      "y_label": "百万美元",
+      "unit": "百万美元",
+      "series": [
+        {
+          "name": "净利润",
+          "rows": [
+            {
+              "label": "FY2022",
+              "value": 12556
+            },
+            {
+              "label": "FY2023",
+              "value": 14997
+            },
+            {
+              "label": "FY2024",
+              "value": 7091
+            },
+            {
+              "label": "FY2025",
+              "value": 3794
+            }
+          ]
+        },
+        {
+          "name": "经营现金流",
+          "rows": [
+            {
+              "label": "FY2022",
+              "value": 14724
+            },
+            {
+              "label": "FY2023",
+              "value": 13256
+            },
+            {
+              "label": "FY2024",
+              "value": 14923
+            },
+            {
+              "label": "FY2025",
+              "value": 14747
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "TSLA-NI-22",
+        "TSLA-NI-23",
+        "TSLA-NI-24",
+        "TSLA-NI-25",
+        "TSLA-CFO-22",
+        "TSLA-CFO-23",
+        "TSLA-CFO-24",
+        "TSLA-CFO-25"
+      ],
+      "note": "由披露值绘制。"
+    }
+  ],
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2022 的利润率与现金流",
+    "baseline_claim_ids": [
+      "TSLA-REV-22",
+      "TSLA-OP-22"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "降价",
+      "销量与收入",
+      "毛利率",
+      "经营现金流"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "降价换来销量与规模效应"
+      },
+      {
+        "id": "H2",
+        "explanation": "降价没有换来增长，利润受损"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "收入增长、毛利率稳定"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "收入不增、毛利率下降"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "I-JUDGE",
+          "TSLA-REV-25",
+          "TSLA-OP-25",
+          "TSLA-GP-25"
+        ],
+        "interpretation": "收入转负、毛利率与营业利润率下降，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "FY2026 毛利率与资本开支",
+        "by": "2027-01-27",
+        "supports_if": "毛利率继续下降且收入不增",
+        "weakens_if": "毛利率回到 20% 以上、收入恢复"
+      }
+    ],
+    "conclusion": "降价没有换来增长，利润表显著受损；现金流靠 capex 收缩撑住，质量偏低。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "增长质量拆解，不需要固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题不判断当前价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}
