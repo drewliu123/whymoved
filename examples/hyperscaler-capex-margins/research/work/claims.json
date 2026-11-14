@@ -943,6 +943,72 @@
           "source_id": "S-META"
         }
       ]
+    },
+    {
+      "id": "META-25Q1-GA",
+      "text": "Meta 2025 年 3 月季度管理费用 2,280 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-25Q2-GA",
+      "text": "Meta 2025 年 6 月季度管理费用 2,663 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q1-GA",
+      "text": "Meta 2026 年 3 月季度管理费用 2,614 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q2-GA",
+      "text": "Meta 2026 年 6 月季度管理费用 5,609 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-25-9M-CFO",
+      "text": "Meta 2025 年前三季度经营现金流 79,586 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26-9M-CFO",
+      "text": "Meta 2026 年前三季度经营现金流 96,873 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
     }
   ]
 }
