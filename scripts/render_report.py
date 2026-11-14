@@ -716,7 +716,7 @@ def _blocks(report, ledger, sources):
         yield ("h2", finding["title"])
         yield ("p", finding["text"], finding["claim_ids"])
         yield ("p", "为什么重要：" + finding["why_it_matters"])
-        if "opportunity" not in report:
+        if report.get("layout") != "brief" and "opportunity" not in report:
             yield ("p", "相较基线：" + finding["increment"]["baseline"])
             yield ("p", "研究增量（" + finding["increment"]["kind"] + "）：" + finding["increment"]["detail"])
         for table_id in finding.get("table_ids", []):

@@ -22,19 +22,11 @@ FY2025 收入增速 AMAT \+4\.4%、LRCX \+23\.7%、KLAC \+23\.9%；但 LRCX、KL
 
 为什么重要：只看 FY2025 同比，会把同行的低基数反弹误读成 AMAT 的份额流失。
 
-相较基线：单年同比
-
-研究增量（contradiction）：加入 FY2023 基数后重算
-
 ## 两年维度：AMAT 收入与 LRCX 相当，KLAC 更强
 
 FY2023→FY2025，AMAT 收入 \+7\.0%、LRCX \+5\.8%、KLAC \+15\.8%；AMAT 不是持续掉队者。 [AMAT\-REVENUE\-2023] [AMAT\-REVENUE\-2025] [LRCX\-REVENUE\-2023] [LRCX\-REVENUE\-2025] [KLAC\-REVENUE\-2023] [KLAC\-REVENUE\-2025]
 
 为什么重要：两年维度推翻了「AMAT 丢失份额」的单年结论；份额变化需要更长窗口才能判断。
-
-相较基线：FY2025 单年掉队
-
-研究增量（judgment\_update）：两年维度持平 LRCX
 
 ## 应收没有恶化，现金周期反而改善
 
@@ -42,29 +34,17 @@ FY2023→FY2025，AMAT 收入 \+7\.0%、LRCX \+5\.8%、KLAC \+15\.8%；AMAT 不�
 
 为什么重要：现金流弱不能归因于应收或回款；需要看存货与预收款。
 
-相较基线：只看 CFO 下降
-
-研究增量（new\_fact）：拆应收与现金周期
-
 ## 同行释放存货，AMAT 堆存货
 
 存货天数 LRCX 196\.1→166\.3、KLAC 282\.0→246\.7，AMAT 138\.6→148\.3；现金周期改善幅度 AMAT 3\.3 天、LRCX 29\.1 天、KLAC 37\.3 天。 [AMAT\-INV\-2024] [AMAT\-INV\-2025] [AMAT\-COGS\-2024] [AMAT\-COGS\-2025] [LRCX\-INV\-2024] [LRCX\-INV\-2025] [LRCX\-COGS\-2024] [LRCX\-COGS\-2025] [KLAC\-INV\-2024] [KLAC\-INV\-2025] [KLAC\-COGS\-2024] [KLAC\-COGS\-2025]
 
 为什么重要：同样的行业环境，同行在去库存、AMAT 在加库存；这比「营运资本」四个字更能解释现金差距。
 
-相较基线：AMAT 单家营运资本拆解
-
-研究增量（contradiction）：同行存货与现金周期对照
-
 ## 同业 FY2026：收入增，现金也没跟上
 
 LRCX FY2026 收入 \+26\.0%、CFO −5\.1%；KLAC 收入 \+11\.7%、CFO \+1\.5%。同行也出现「收入增长、现金不同步」。 [LRCX\-REVENUE\-2025] [LRCX\-REVENUE\-2026] [LRCX\-CFO\-2025] [LRCX\-CFO\-2026] [KLAC\-REVENUE\-2025] [KLAC\-REVENUE\-2026] [KLAC\-CFO\-2025] [KLAC\-CFO\-2026]
 
 为什么重要：如果现金弱是行业交付/验收节奏，AMAT 的问题就不是独有的；这会削弱「公司备货」解释。
-
-相较基线：AMAT 公司问题
-
-研究增量（contradiction）：同业 FY2026 现金也不同步
 
 ## 这意味着什么
 
