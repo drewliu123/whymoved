@@ -256,7 +256,10 @@ def _event_study(report):
     if result.get("warnings"):
         lines.append("- 样本警告：%s。" % "；".join(result["warnings"]))
     if result["summary"].get("excess_total_return") or result["summary"].get("benchmark_excess"):
-        lines.append("- 超额收益是标的减基准的简单差，未做 beta 调整。")
+        if result.get("beta_adjusted"):
+            lines.append("- 超额按样本给定的 beta 调整（标的减 beta×基准）；beta 估计窗口与来源须在报告中说明。")
+        else:
+            lines.append("- 超额收益是标的减基准的简单差，未做 beta 调整。")
     lines.append("- 绝对收益、样本事前选定、不给 p 值；参考类分布不是预测。")
     return lines
 

@@ -491,6 +491,21 @@ class QualityReportTests(unittest.TestCase):
 
 
 class EventStudyReportTests(unittest.TestCase):
+    def test_beta_adjusted_footnote(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        bench = [{"date": "2024-01-30", "close": 50}, {"date": "2024-01-31", "close": 50},
+                 {"date": "2024-02-01", "close": 55}]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench, "benchmark_beta": 2},
+                                             {"id": "E2", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench, "benchmark_beta": 2}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_html(report, ledger, sources)
+        self.assertIn("beta×基准", text)
+
     def test_returns_only_samples_render(self):
         report, ledger, sources = documents()
         report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},

@@ -15,7 +15,8 @@
 | 共识快照、修订、指引分离、相邻财年增长 | 仅测试 | `test_consensus.py` | [expectations](../skills/research/references/expectations.md) |
 | 盈利质量与法证筛查（含 ROIC） | [趋势示例](../examples/msft-trend/README.md)、[苹果示例](../examples/aapl-quality/README.md) | `test_financial_quality.py`、`test_quality_inputs.py` | [financial-quality](../skills/research/references/financial-quality.md) |
 | 催化日历（到期、过期、无日期） | [教程第 2 步](tutorial.md) | `test_calendar.py` | [catalysts](../skills/research/references/catalysts.md) |
-| 事件研究（参考类分布） | [FOMC 事件示例](../examples/sp500-fomc-event/README.md) | `test_event_study.py` | [event-study](../skills/research/references/event-study.md) |
+| 事件研究（参考类分布） | [FOMC 事件示例](../examples/sp500-fomc-event/README.md) | `test_event_study.py` |
+| Beta 估计（对齐序列回归） | — | `test_beta.py` | [event-study](../skills/research/references/event-study.md) | [event-study](../skills/research/references/event-study.md) |
 | 行业传导（节点、方向、瓶颈） | [AI 资本开支传导示例](../examples/ai-capex-transmission/README.md) | `test_transmission.py` | [transmission](../skills/research/references/transmission.md) |
 | 跨轮研究记忆、沿革、实体别名 | [教程第 2 步](tutorial.md) | `test_research_memory.py` | [research-memory](../skills/research/references/research-memory.md) |
 | 多轮摘要（判断/论点/触发） | 仅测试 | `test_digest.py` | [research-memory](../skills/research/references/research-memory.md) |

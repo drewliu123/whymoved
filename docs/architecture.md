@@ -48,6 +48,7 @@ flowchart TD
 | [digest.py](../scripts/digest.py) | 多轮摘要：判断变化、窗口内研究、未来催化与过期未核对 |
 | [doctor.py](../scripts/doctor.py) | 数据根体检：归档可加载性、记忆索引、催化日期与只读保证 |
 | [consensus.py](../scripts/consensus.py) | 一致预期快照、修订与指引/共识分离，只读计算 |
+| [beta.py](../scripts/beta.py) | 从两条对齐序列估计 OLS beta 与 R²（不年化、不调整薄交易），供事件研究基准调整使用 |
 | [expectation_compare.py](../scripts/expectation_compare.py) | 价格隐含增长与共识相邻财年增长的受控并列，强制期限披露 |
 | [event_study.py](../scripts/event_study.py) | 参考类事件的窗口收益分布（观测点窗口、n与分位、不给p值） |
 | [transmission.py](../scripts/transmission.py) | 行业传导图：节点/机制/时滞/瓶颈校验与上下游方向、路径、告警 |

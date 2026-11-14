@@ -60,6 +60,23 @@ def _percentile(values, fraction):
     return ordered[lower] + (ordered[upper] - ordered[lower]) * (position - lower)
 
 
+def _validate_beta(sample, path, errors):
+    if "benchmark_beta" not in sample:
+        return
+    beta_row = sample.get("benchmark_beta")
+    if isinstance(beta_row, bool):
+        errors.append(path + ".benchmark_beta must be a finite number or a name-to-beta object")
+    elif isinstance(beta_row, (int, float)):
+        if _number(beta_row) is None or abs(beta_row) > 10:
+            errors.append(path + ".benchmark_beta must be finite with |beta| <= 10")
+    elif isinstance(beta_row, dict) and beta_row:
+        for name, beta in beta_row.items():
+            if not _text(name) or _number(beta) is None or abs(beta) > 10:
+                errors.append(path + ".benchmark_beta values must be finite with |beta| <= 10")
+    else:
+        errors.append(path + ".benchmark_beta must be a finite number or a name-to-beta object")
+
+
 def validate_document(document):
     """Validate structure of the event document (not sample coverage)."""
     if not isinstance(document, dict):
@@ -94,7 +111,7 @@ def validate_document(document):
             errors.append(path + " must be an object")
             continue
         extra = set(sample) - {"id", "date", "label", "claim_ids", "prices", "returns",
-                               "benchmark_prices", "benchmark_returns"}
+                               "benchmark_prices", "benchmark_returns", "benchmark_beta"}
         if extra:
             errors.append(path + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
         identifier = sample.get("id")
@@ -119,6 +136,7 @@ def validate_document(document):
                 errors.append(path + ".returns must contain exactly pre, post and total")
             elif any(_number(returns.get(key)) is None for key in ("pre", "post", "total")):
                 errors.append(path + ".returns values must be finite numbers")
+            _validate_beta(sample, path, errors)
             if "benchmark_returns" in sample:
                 bench = sample.get("benchmark_returns")
                 if isinstance(bench, dict) and set(bench) == {"pre", "post", "total"} \
@@ -149,6 +167,7 @@ def validate_document(document):
                 errors.append(path + ".prices must be ordered by strictly increasing date")
                 break
             last = point["date"]
+        _validate_beta(sample, path, errors)
         if "benchmark_prices" in sample:
             benchmark = sample.get("benchmark_prices")
             if isinstance(benchmark, list):
@@ -188,22 +207,26 @@ def sample_result(sample, before, after):
                "pre_return": returns.get("pre"), "post_return": returns.get("post"),
                "total_return": returns.get("total")}
         bench = sample.get("benchmark_returns")
+        beta_row = sample.get("benchmark_beta")
         if isinstance(bench, dict) and set(bench) == {"pre", "post", "total"}:
+            beta = beta_row if isinstance(beta_row, (int, float)) and not isinstance(beta_row, bool) else 1
             row.update(benchmark_pre_return=bench.get("pre"), benchmark_post_return=bench.get("post"),
-                       benchmark_total_return=bench.get("total"),
-                       excess_pre_return=row["pre_return"] - bench.get("pre"),
-                       excess_post_return=row["post_return"] - bench.get("post"),
-                       excess_total_return=row["total_return"] - bench.get("total"))
+                       benchmark_total_return=bench.get("total"), benchmark_beta=beta,
+                       excess_pre_return=row["pre_return"] - beta * bench.get("pre"),
+                       excess_post_return=row["post_return"] - beta * bench.get("post"),
+                       excess_total_return=row["total_return"] - beta * bench.get("total"))
         elif isinstance(bench, dict):
+            beta_map = beta_row if isinstance(beta_row, dict) else {}
             row["benchmarks"] = []
             for name in sorted(bench):
                 values = bench[name]
-                row["benchmarks"].append({"name": name,
+                beta = beta_map.get(name, 1)
+                row["benchmarks"].append({"name": name, "beta": beta,
                                           "pre_return": values.get("pre"), "post_return": values.get("post"),
                                           "total_return": values.get("total"),
-                                          "excess_pre_return": row["pre_return"] - values.get("pre"),
-                                          "excess_post_return": row["post_return"] - values.get("post"),
-                                          "excess_total_return": row["total_return"] - values.get("total")})
+                                          "excess_pre_return": row["pre_return"] - beta * values.get("pre"),
+                                          "excess_post_return": row["post_return"] - beta * values.get("post"),
+                                          "excess_total_return": row["total_return"] - beta * values.get("total")})
         return row, None
     prices = [point for point in sample.get("prices", []) if isinstance(point, dict)]
     dates = [point.get("date") for point in prices]
@@ -227,6 +250,7 @@ def sample_result(sample, before, after):
            "post_return": end / event - 1 if event else None,
            "total_return": end / start - 1 if start else None}
     benchmark = sample.get("benchmark_prices")
+    beta_row = sample.get("benchmark_beta")
     series_entries = []
     if isinstance(benchmark, list):
         series_entries = [(None, benchmark)]
@@ -243,15 +267,22 @@ def sample_result(sample, before, after):
         bench_pre = bench_event / bench_start - 1
         bench_post = bench_end / bench_event - 1
         bench_total = bench_end / bench_start - 1
-        payload = {"benchmark_pre_return": bench_pre, "benchmark_post_return": bench_post,
-                   "benchmark_total_return": bench_total,
-                   "excess_pre_return": row["pre_return"] - bench_pre,
-                   "excess_post_return": row["post_return"] - bench_post,
-                   "excess_total_return": row["total_return"] - bench_total}
         if name is None:
-            row.update(payload)
+            beta = beta_row if isinstance(beta_row, (int, float)) and not isinstance(beta_row, bool) else 1
+            row.update({"benchmark_pre_return": bench_pre, "benchmark_post_return": bench_post,
+                        "benchmark_total_return": bench_total, "benchmark_beta": beta,
+                        "excess_pre_return": row["pre_return"] - beta * bench_pre,
+                        "excess_post_return": row["post_return"] - beta * bench_post,
+                        "excess_total_return": row["total_return"] - beta * bench_total})
         else:
-            row.setdefault("benchmarks", []).append({"name": name, **payload})
+            beta = beta_row.get(name, 1) if isinstance(beta_row, dict) else 1
+            row.setdefault("benchmarks", []).append({
+                "name": name, "beta": beta,
+                "benchmark_pre_return": bench_pre, "benchmark_post_return": bench_post,
+                "benchmark_total_return": bench_total,
+                "excess_pre_return": row["pre_return"] - beta * bench_pre,
+                "excess_post_return": row["post_return"] - beta * bench_post,
+                "excess_total_return": row["total_return"] - beta * bench_total})
     return row, None
 
 
@@ -317,7 +348,11 @@ def analyse(document):
                 "q1": _percentile(values, 0.25), "q3": _percentile(values, 0.75),
                 "positive_rate": sum(1 for value in values if value > 0) / len(values)}
 
-    return {"passed": True, "event": document["event"], "window": document["window"],
+    beta_adjusted = any(
+        (row.get("benchmark_beta") not in (None, 1)) or
+        any(entry.get("beta") not in (None, 1) for entry in row.get("benchmarks", []))
+        for row in rows)
+    return {"passed": True, "beta_adjusted": beta_adjusted, "event": document["event"], "window": document["window"],
             "samples": rows, "skipped": skipped,
             "summary": {"pre_return": summary(pre), "post_return": summary(post),
                         "total_return": summary(total),
@@ -331,7 +366,8 @@ def analyse(document):
                       "收益是绝对收益；可选基准序列（单个或按名称多个）给出简单超额收益，样本由研究者事前选定。",
                       "不给p值或显著性结论：小样本与选择偏误不支持统计推断。",
                       "skipped列出的样本窗口不足或事件日缺失，不参与汇总。",
-                      "returns-only样本不内嵌价格序列，无法从价格重算收益；需要逐点复核时保留prices。"]}
+                      "returns-only样本不内嵌价格序列，无法从价格重算收益；需要逐点复核时保留prices。",
+                      "超额默认为标的减基准；若样本给出benchmark_beta，则超额为标的减beta×基准。"]}
 
 
 def main():
