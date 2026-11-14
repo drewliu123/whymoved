@@ -62,6 +62,11 @@
 - **[阅读反向 DCF 报告](examples/msft-reverse-dcf/research/work/report.md)**
 - **[查看完整案例与命令](examples/msft-reverse-dcf/README.md)**
 
+**第十个例子：一次复核如何被记住？** 两条真实归档（父研究 + 复核更新）冻结了 `thread` 沿革与 `digest` 摘要：父 → 子两轮、结论版本 1 个，判断未变但沿革保留。示例 home 是普通数据根，`doctor`、`digest`、`opportunities` 都按同一规则读取。
+
+- **[查看跨轮记忆示例](examples/memory-workflow/README.md)**
+- **[冻结的摘要输出](examples/memory-workflow/digest.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

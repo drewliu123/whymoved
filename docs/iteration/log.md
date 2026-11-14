@@ -4,6 +4,45 @@
 
 ---
 
+## Cycle 94 · 2026-11-14 · 跨轮记忆示例
+
+**对应卡片**：P10-1
+
+**做法**
+
+- 以微软现金流示例的真实输入为父研究，归档到 `examples/memory-workflow/home/journal/runs/`。
+- 子 run：同一份证据，`update.judgment_changed=false`、理由「复核官方年报与自由现金流计算，未发现新证据」，用 `--parent-run` 归档。
+- 重放 `thread`（父 → 子，lineage 2）与 `digest`（2026-11-14 起 30 天），冻结为 `thread.json` / `digest.md`。
+- 新增测试：复制示例 home 到临时目录，重放 index/thread/digest，与冻结输出 JSON/文本逐字节比对。
+
+**关键设计决定**
+
+1. **用真实归档，不构造假 report**：示例 home 是普通数据根，manifest、哈希、冻结 md/html 都在；`doctor` 也能直接读取。
+2. **冻结可重放输出**：thread/digest 的输出作为示例的一部分，逻辑变化会立刻在测试中暴露。
+3. **只覆盖「未变」更新**：示例聚焦沿革与摘要；论点变化路径由机会契约与真实验收覆盖，避免在示例里编造交易状态。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 560 tests ... OK
+```
+
+- 子 run manifest 的 `parent_run` 指向父 run；thread 顺序与冻结 JSON 完全一致。
+- digest 文本逐字节等于冻结输出（同题 2 轮、结论版本 1 个）。
+- 九个既有示例哈希一致；冻结渲染逐字节相同。
+
+**投研意义增量**
+
+1. 跨轮记忆从「工具存在」变成「有可读、可重放的案例」。
+2. 「判断未变也要留痕」的更新方式有了示例。
+
+**遗留**
+
+- 未覆盖论点变化（watch→no_edge）与多分支；真实 NVDA 链验收在临时目录，未提交。
+- digest 窗口固定为 30 天；示例未演示 7 天窗口。
+- 示例 home 含两条 run，不含用户私有归档。
+
 ## Cycle 93 · 2026-11-14 · 第五次阶段性盘点（自主迭代阶段）
 
 **对应目标**：阶段性判断能力覆盖是否「明显完整」

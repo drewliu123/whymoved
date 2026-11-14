@@ -108,7 +108,7 @@
 
 ### P10-1 跨轮记忆示例
 
-- 状态：待认领（下一优先）
+- 状态：✅ 已完成（Cycle 94）：examples/memory-workflow，thread/digest 冻结输出可重放
 - 方案：`examples/memory-workflow/`：两条真实 run（同题更新，含 update 与状态变化），冻结 thread / digest / 机会列表输出，并加测试按相同 home 重放；不使用用户私有归档。
 - 验收：测试可从示例归档重建 home 并比对冻结输出；示例说明沿革与摘要的关系。
 
@@ -284,6 +284,7 @@
 
 ## 已完成
 
+- P10-1 跨轮记忆示例 — 2026-11-14，Cycle 94
 - P9-2 FOMC 示例 beta 调整对照 — 2026-11-14，Cycle 92
 - P9-1 Beta 工具与事件研究 beta 调整 — 2026-11-14，Cycle 91
 - P8-6 事件研究百分比显示 — 2026-11-14，Cycle 90

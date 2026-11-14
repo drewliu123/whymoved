@@ -4,6 +4,15 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 0.83.0 · 跨轮记忆示例
+
+盘点指出跨轮记忆是唯一「有测试、无公开示例」的核心流程。
+
+- 新增 [examples/memory-workflow](examples/memory-workflow/README.md)：父研究 + 一次复核更新两条真实归档，含 manifest、哈希与冻结报告。
+- 冻结 `thread.json`（父 → 子两轮，判断未变）与 `digest.md`（同题 2 轮、结论版本 1 个），由 [test_memory_example.py](tests/test_memory_example.py) 在临时副本上重放并逐字节比对。
+- 能力索引与根 README 增加入口。
+- 测试：新增 3 个用例，全套 560 个测试通过。
+
 ## 0.82.2 · 第五次阶段性盘点（自主迭代阶段）
 
 - 自主阶段新增：真实价格事件研究（FRED）、多基准与 beta 调整、beta 估计工具、传导示例（SEC XBRL）、相对估值示例（Nasdaq + SEC）、反向 DCF（单阶段 + 五阶段）、重叠窗口警告、百分比交付。

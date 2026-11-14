@@ -1,0 +1,619 @@
+{
+  "alternatives": [
+    {
+      "claim_ids": [
+        "C2",
+        "C7",
+        "C9"
+      ],
+      "text": "CFO同比上升，故H2无法解释此次FCF减少。这只核对总额，不能据此判定应收、税款等所有经营现金转换都健康。",
+      "title": "CFO总额下滑的解释不符合同口径数字"
+    }
+  ],
+  "analysis": {
+    "baseline": "FY2024与FY2025截至6月30日完整财年、微软合并口径；金额百万美元，流出在分析中取正值。",
+    "baseline_claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "conclusion": "FY2025营收增长，并没有带来同方向的CFO减现金capex自由现金流：经营现金流增加17.614十亿美元，但现金资本开支增加20.074十亿美元，净抵消后FCF减少2.460十亿美元。下降来自资本现金需求增量更大，CFO总额本身并未下降。",
+    "conclusion_claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "hypotheses": [
+      {
+        "explanation": "现金capex增量超过CFO增量，导致CFO-capex下降。",
+        "id": "H1"
+      },
+      {
+        "explanation": "CFO总额下滑是FCF下降主因。",
+        "id": "H2"
+      }
+    ],
+    "market": {
+      "claim_ids": [],
+      "model_ids": [],
+      "reason": "仅回看FY24/FY25财务变化，不预测股价或提供当前投资建议。",
+      "status": "not_applicable"
+    },
+    "mechanism_chain": [
+      "收入",
+      "经营活动现金流CFO",
+      "现金PPE资本开支",
+      "CFO减现金capex自由现金流"
+    ],
+    "method": "comparative_attribution",
+    "model_reason": "本题重算财报CFO减现金PPE支出；固定free_cash_flow是NOPAT+折旧-capex-营运资本变化的FCFF，不能混作本口径。独立Python算术见arithmetic.py及arithmetic-output.json；formula记录只作结构校验，不称模型算术验证。",
+    "model_status": "not_applicable",
+    "models": [],
+    "price_relevance": false,
+    "question_kind": "change_explanation",
+    "tests": [
+      {
+        "by": "继续更新并取得相应完整财年数据时；本轮未执行后续财年核验",
+        "claim_ids": [
+          "C2",
+          "C3",
+          "C7"
+        ],
+        "id": "T1",
+        "interpretation": "CFO上升17614而capex上升20074百万美元，支持H1并削弱H2；不代表所有现金转换环节健康。",
+        "next_observation": "用户发起后续更新时，取下一完整财年的同口径CFO、cash capex、CFO/收入与FCF/收入及组成。",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "CFO上升但现金capex增加更多，deltaCFO减deltaCapex为负。"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "CFO同比减少，下降的CFO是FCF收缩的主要贡献。"
+          }
+        ],
+        "status": "observed",
+        "supports": [
+          "H1"
+        ],
+        "supports_if": "现金capex增量继续大于CFO增量时，支持该期资本现金需求抵消解释。",
+        "weakens": [
+          "H2"
+        ],
+        "weakens_if": "CFO下降并成为FCF下降主要贡献时，削弱将H1外推至该期。"
+      }
+    ],
+    "version": 1
+  },
+  "answer": {
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "text": "FY2025营收增长，并没有带来同方向的CFO减现金capex自由现金流：经营现金流增加17.614十亿美元，但现金资本开支增加20.074十亿美元，净抵消后FCF减少2.460十亿美元。下降来自资本现金需求增量更大，CFO总额本身并未下降。"
+  },
+  "as_of": "2026-11-06T14:23:37.833839Z",
+  "calculations": [
+    {
+      "claim_ids": [
+        "C6"
+      ],
+      "description": "FY2024 CFO-capex",
+      "formula": "118548-44477",
+      "id": "A1",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO24",
+          "unit": "百万美元",
+          "value": 118548
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 74071
+      }
+    },
+    {
+      "claim_ids": [
+        "C6"
+      ],
+      "description": "FY2025 CFO-capex",
+      "formula": "136162-64551",
+      "id": "A2",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO25",
+          "unit": "百万美元",
+          "value": 136162
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 71611
+      }
+    },
+    {
+      "claim_ids": [
+        "C6"
+      ],
+      "description": "收入同比百分比",
+      "formula": "(281724/245122-1)*100",
+      "id": "A3",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "revenue24",
+          "unit": "百万美元",
+          "value": 245122
+        },
+        {
+          "claim_ids": [
+            "C1"
+          ],
+          "name": "revenue25",
+          "unit": "百万美元",
+          "value": 281724
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": 14.932156232406712
+      }
+    },
+    {
+      "claim_ids": [
+        "C6"
+      ],
+      "description": "FCF同比百分比",
+      "formula": "((136162-64551)/(118548-44477)-1)*100",
+      "id": "A4",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO24",
+          "unit": "百万美元",
+          "value": 118548
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO25",
+          "unit": "百万美元",
+          "value": 136162
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        }
+      ],
+      "result": {
+        "unit": "percent",
+        "value": -3.3211378272198333
+      }
+    },
+    {
+      "claim_ids": [
+        "C7"
+      ],
+      "description": "CFO增量",
+      "formula": "136162-118548",
+      "id": "A5",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO24",
+          "unit": "百万美元",
+          "value": 118548
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO25",
+          "unit": "百万美元",
+          "value": 136162
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 17614
+      }
+    },
+    {
+      "claim_ids": [
+        "C7"
+      ],
+      "description": "现金capex增量",
+      "formula": "64551-44477",
+      "id": "A6",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 20074
+      }
+    },
+    {
+      "claim_ids": [
+        "C7"
+      ],
+      "description": "FCF变化桥",
+      "formula": "(136162-118548)-(64551-44477)",
+      "id": "A7",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO24",
+          "unit": "百万美元",
+          "value": 118548
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        },
+        {
+          "claim_ids": [
+            "C2"
+          ],
+          "name": "CFO25",
+          "unit": "百万美元",
+          "value": 136162
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": -2460
+      }
+    },
+    {
+      "claim_ids": [
+        "C8"
+      ],
+      "description": "投资净流出变化（流出正值）",
+      "formula": "72599-96970",
+      "id": "A8",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFI24_outflow",
+          "unit": "百万美元",
+          "value": 96970
+        },
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFI25_outflow",
+          "unit": "百万美元",
+          "value": 72599
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": -24371
+      }
+    },
+    {
+      "claim_ids": [
+        "C8"
+      ],
+      "description": "收购及无形等流出变化（流出正值）",
+      "formula": "5978-69132",
+      "id": "A9",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "acquisition24",
+          "unit": "百万美元",
+          "value": 69132
+        },
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "acquisition25",
+          "unit": "百万美元",
+          "value": 5978
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": -63154
+      }
+    },
+    {
+      "claim_ids": [
+        "C8"
+      ],
+      "description": "其余投资项目净流出变化残差",
+      "formula": "(72599-96970)-(64551-44477)-(5978-69132)",
+      "id": "A10",
+      "inputs": [
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFI24",
+          "unit": "百万美元",
+          "value": 96970
+        },
+        {
+          "claim_ids": [
+            "C4"
+          ],
+          "name": "CFI25",
+          "unit": "百万美元",
+          "value": 72599
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex24",
+          "unit": "百万美元",
+          "value": 44477
+        },
+        {
+          "claim_ids": [
+            "C3"
+          ],
+          "name": "capex25",
+          "unit": "百万美元",
+          "value": 64551
+        },
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "acquisition24",
+          "unit": "百万美元",
+          "value": 69132
+        },
+        {
+          "claim_ids": [
+            "C5"
+          ],
+          "name": "acquisition25",
+          "unit": "百万美元",
+          "value": 5978
+        }
+      ],
+      "result": {
+        "unit": "百万美元",
+        "value": 18709
+      }
+    }
+  ],
+  "findings": [
+    {
+      "calculation_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "claim_ids": [
+        "C1",
+        "C6"
+      ],
+      "increment": {
+        "baseline": "原年报分别列示收入、CFO和PPE现金支出。",
+        "detail": "将三项连接为同口径FCF及同比比较。",
+        "kind": "calculation"
+      },
+      "text": "FY2024至FY2025收入从245.122增至281.724十亿美元，增长14.93%；FCF从74.071降至71.611十亿美元，下降3.32%。这里的FCF定义为经营活动现金流减现金PPE增加支出。",
+      "title": "营收向上，CFO-capex自由现金流向下",
+      "why_it_matters": "收入增长与扣除资本支出后的现金留存并非同一个指标。"
+    },
+    {
+      "calculation_ids": [
+        "A5",
+        "A6",
+        "A7"
+      ],
+      "claim_ids": [
+        "C2",
+        "C3",
+        "C7"
+      ],
+      "increment": {
+        "baseline": "FY2024同口径CFO与现金capex。",
+        "detail": "分解两项变化并比较净贡献。",
+        "kind": "calculation"
+      },
+      "text": "CFO从118.548增至136.162十亿美元，现金capex从44.477增至64.551十亿美元。FCF变化桥为+17.614−20.074=−2.460十亿美元，支持资本现金需求抵消经营现金增量这一解释。",
+      "title": "现金capex增量超过CFO增量2.460十亿美元",
+      "why_it_matters": "明确FCF减少发生在哪个算术环节，避免误说经营现金流总额下滑。"
+    },
+    {
+      "claim_ids": [
+        "C3",
+        "C4",
+        "C5",
+        "C8"
+      ],
+      "increment": {
+        "baseline": "年报投资活动现金流净额与明细行。",
+        "detail": "区分投资净流出减少与PPE现金需求增加。",
+        "kind": "connection"
+      },
+      "text": "投资净流出由96.970降至72.599十亿美元；其中收购公司（扣除取得现金及剥离）、购买无形及其他资产的流出由69.132降至5.978十亿美元，减少63.154十亿美元。现金PPE支出却上升；其他投资项目也影响投资净额。",
+      "title": "总投资净流出下降，不代表现金capex减少",
+      "why_it_matters": "投资现金流净额混合多种项目，不能替代cash capex。"
+    }
+  ],
+  "limitations": [
+    {
+      "claim_ids": [
+        "C10"
+      ],
+      "material": false,
+      "text": "该FCF是CFO减现金PPE支出的财报口径，不作DCF所需FCFF；全公司PPE支出不能全称AI专属投入，也不推导AI ROI。"
+    },
+    {
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "material": false,
+      "text": "本例于2026-11回看FY2024至FY2025，仅解释该段历史变化，不代表最新经营结论；后续财年不被表述为尚未发生的未来披露。"
+    }
+  ],
+  "opportunity": {
+    "applicability": "not_applicable",
+    "reason": "解释已披露财报的现金流变化，不研究当前交易机会。",
+    "version": 1
+  },
+  "question": "微软FY2025营收增长，为什么按CFO减现金资本开支定义的自由现金流反而下降？",
+  "schema_version": 2,
+  "tables": [
+    {
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "columns": [
+        "指标",
+        "FY2024",
+        "FY2025",
+        "变化"
+      ],
+      "note": "截至6月30日完整财年，微软合并口径。原始报表单位百万美元，表内除以1000；cash capex为现金PPE增加支出，不含另行非现金取得资产。",
+      "rows": [
+        [
+          "收入",
+          245.122,
+          281.724,
+          36.602
+        ],
+        [
+          "CFO",
+          118.548,
+          136.162,
+          17.614
+        ],
+        [
+          "现金PPE资本开支",
+          44.477,
+          64.551,
+          20.074
+        ],
+        [
+          "CFO-capex FCF",
+          74.071,
+          71.611,
+          -2.46
+        ],
+        [
+          "投资净流出",
+          96.97,
+          72.599,
+          -24.371
+        ],
+        [
+          "收购及无形等现金支出",
+          69.132,
+          5.978,
+          -63.154
+        ]
+      ],
+      "title": "同口径年度比较（金额：十亿美元；流出取正值）"
+    }
+  ],
+  "task": "解释FY24至FY25经营现金流与现金资本开支变化",
+  "title": "微软FY2025：营收增长，现金资本开支使FCF小幅下降",
+  "type": "asset",
+  "watch": [
+    {
+      "claim_ids": [
+        "C9"
+      ],
+      "meaning": "继续研究时，取后续完整财年的同口径CFO、现金资本开支及现金转换率，重算变化桥并核查解释是否延续；本例仅解释FY2024至FY2025，不代表最新经营结论。",
+      "signal": "后续更新：取下一完整财年数据，按相同口径复查"
+    }
+  ]
+}

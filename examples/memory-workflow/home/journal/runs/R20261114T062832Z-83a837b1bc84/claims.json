@@ -1,0 +1,140 @@
+{
+  "as_of": "2026-11-06T14:23:37.833839Z",
+  "claims": [
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "id": "C1",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ],
+      "text": "微软合并收入FY2024为245122、FY2025为281724百万美元，均截至6月30日完整财年。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "id": "C2",
+      "sources": [
+        {
+          "source_id": "S2"
+        }
+      ],
+      "text": "Net cash from operations FY2024为118548、FY2025为136162百万美元。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "id": "C3",
+      "sources": [
+        {
+          "source_id": "S3"
+        },
+        {
+          "source_id": "S4"
+        }
+      ],
+      "text": "Additions to property and equipment报表现金流FY2024为(44477)、FY2025为(64551)百万美元；本题cash capex取流出正值44477、64551。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "id": "C4",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ],
+      "text": "Net cash used in investing FY2024为(96970)、FY2025为(72599)百万美元。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "id": "C5",
+      "sources": [
+        {
+          "source_id": "S4"
+        }
+      ],
+      "text": "Acquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets现金流FY2024为(69132)、FY2025为(5978)百万美元。",
+      "type": "fact"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "basis": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "calculation_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "id": "C6",
+      "sources": [],
+      "text": "按CFO减cash capex定义，FCF由74071降至71611百万美元，减少2460百万美元，降幅3.32113782721983%；同期收入增长14.93215623240672%。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "basis": [
+        "C2",
+        "C3",
+        "C6"
+      ],
+      "calculation_ids": [
+        "A5",
+        "A6",
+        "A7"
+      ],
+      "id": "C7",
+      "sources": [],
+      "text": "CFO增加17614百万美元，现金capex增加20074百万美元，后者超过前者2460百万美元；FCF变化=17614-20074=-2460百万美元。支持H1，削弱CFO总额下降的H2。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "basis": [
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "calculation_ids": [
+        "A8",
+        "A9",
+        "A10"
+      ],
+      "id": "C8",
+      "sources": [],
+      "text": "投资净流出减少24371百万美元不等于现金capex下降：收购及无形等支出流出减少63154百万美元，而现金PPE支出反而增加20074百万美元；其余投资项目的合计变化亦影响净额。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "basis": [
+        "C1",
+        "C2",
+        "C3",
+        "C7"
+      ],
+      "id": "C9",
+      "sources": [],
+      "text": "CFO没有下降不能证明所有经营现金转换健康；若用户继续更新，应取得后续完整财年的同口径CFO、cash capex、CFO/收入与(CFO-capex)/收入并检查组成。本例仅解释FY2024至FY2025，不代表最新经营结论。",
+      "type": "inference"
+    },
+    {
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "basis": [
+        "C2",
+        "C3"
+      ],
+      "id": "C10",
+      "sources": [],
+      "text": "这里的FCF是财报CFO减现金PPE支出的透明算术口径，不等于项目固定模型的FCFF，不用于DCF；全公司现金PPE支出不能全部归为AI专属投入，这些数字也不能推出AI ROI。",
+      "type": "inference"
+    }
+  ],
+  "schema_version": 2
+}

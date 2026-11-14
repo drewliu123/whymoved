@@ -1,0 +1,31 @@
+{
+  "analysis_changed": false,
+  "claims": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "comparability_issues": [],
+  "evidence": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "judgment": {
+    "comparability": {
+      "reason": "相同口径与期间",
+      "status": "comparable"
+    },
+    "judgment_changed": false,
+    "reason": "复核官方年报与自由现金流计算，未发现新证据"
+  },
+  "method": "structural_ids_and_fields",
+  "opportunity_changed": false,
+  "parent_run": "R20261114T062832Z-c67a8ff09ba8",
+  "schema_version": 2,
+  "sources": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "run_id": "R20261114T062832Z-83a837b1bc84",
+  "entity": "Microsoft Corporation",
+  "length": 2,
+  "lineage": [
+    {
+      "run_id": "R20261114T062832Z-c67a8ff09ba8",
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "title": "微软FY2025：营收增长，现金资本开支使FCF小幅下降",
+      "question": "微软FY2025营收增长，为什么按CFO减现金资本开支定义的自由现金流反而下降？",
+      "entity": "Microsoft Corporation",
+      "judgment": "FY2025营收增长，并没有带来同方向的CFO减现金capex自由现金流：经营现金流增加17.614十亿美元，但现金资本开支增加20.074十亿美元，净抵消后FCF减少2.460十亿美元。下降来自资本现金需求增量更大，CFO总额本身并未下降。",
+      "judgment_changed": null,
+      "opportunity_status": "",
+      "model_kinds": [],
+      "parent_run": "",
+      "depth": 0
+    },
+    {
+      "run_id": "R20261114T062832Z-83a837b1bc84",
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "title": "微软FY2025：营收增长，现金资本开支使FCF小幅下降",
+      "question": "微软FY2025营收增长，为什么按CFO减现金资本开支定义的自由现金流反而下降？",
+      "entity": "Microsoft Corporation",
+      "judgment": "FY2025营收增长，并没有带来同方向的CFO减现金capex自由现金流：经营现金流增加17.614十亿美元，但现金资本开支增加20.074十亿美元，净抵消后FCF减少2.460十亿美元。下降来自资本现金需求增量更大，CFO总额本身并未下降。",
+      "judgment_changed": false,
+      "opportunity_status": "",
+      "model_kinds": [],
+      "parent_run": "R20261114T062832Z-c67a8ff09ba8",
+      "depth": 1
+    }
+  ],
+  "children": [],
+  "notes": [
+    "lineage按parent_run回溯到最早一轮，顺序为旧→新。",
+    "judgment_changed取自每轮自己的update记录；None表示该轮未声明更新关系。",
+    "children只列直接子run；分支更新的完整家族需逐个run查看。"
+  ],
+  "passed": true
+}

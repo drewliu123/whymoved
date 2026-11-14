@@ -18,7 +18,7 @@
 | 事件研究（参考类分布） | [FOMC 事件示例](../examples/sp500-fomc-event/README.md) | `test_event_study.py` |
 | Beta 估计（对齐序列回归） | — | `test_beta.py` | [event-study](../skills/research/references/event-study.md) | [event-study](../skills/research/references/event-study.md) |
 | 行业传导（节点、方向、瓶颈） | [AI 资本开支传导示例](../examples/ai-capex-transmission/README.md) | `test_transmission.py` | [transmission](../skills/research/references/transmission.md) |
-| 跨轮研究记忆、沿革、实体别名 | [教程第 2 步](tutorial.md) | `test_research_memory.py` | [research-memory](../skills/research/references/research-memory.md) |
+| 跨轮研究记忆、沿革、实体别名 | [教程第 2 步](tutorial.md)、[跨轮记忆示例](../examples/memory-workflow/README.md) | `test_research_memory.py`、`test_memory_example.py` | [research-memory](../skills/research/references/research-memory.md) |
 | 多轮摘要（判断/论点/触发） | 仅测试 | `test_digest.py` | [research-memory](../skills/research/references/research-memory.md) |
 | 一页纸 memo（含质量、传导、事件、多年路径） | [教程第 3–5 步](tutorial.md) | `test_memo_pack.py` | [memo-template](../skills/research/references/memo-template.md) |
 | 价格隐含增长 vs 共识增长对照 | 仅测试 | `test_expectation_compare.py` | [expectations](../skills/research/references/expectations.md) |
