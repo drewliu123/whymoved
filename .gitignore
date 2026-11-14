@@ -16,3 +16,6 @@ research/edgartools-eval-venv/
 /data/sec-cache/
 /journal/work/
 /journal/tmp-*/
+
+# Local research archives stay on this machine; never pushed.
+/journal/runs/
