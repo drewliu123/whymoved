@@ -571,6 +571,138 @@
         "purpose": "五年 P/E 区间",
         "priority": "useful"
       }
+    },
+    {
+      "id": "S-PX-AMAT-17",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2017-10-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2017-10-31 close $56.43",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2017",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2017-10-31T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 56.43,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/E 区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-AMAT-18",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2018-10-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2018-10-31 close $32.88",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2018",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2018-10-31T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 32.88,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/E 区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-AMAT-19",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2019-10-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2019-10-31 close $54.26",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2019",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2019-10-31T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 54.26,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/E 区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-AMAT-20",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2020-10-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2020-10-30 close $59.23",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2020",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2020-10-30T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 59.23,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/E 区间",
+        "priority": "useful"
+      }
     }
   ]
 }

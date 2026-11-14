@@ -8,7 +8,7 @@ AI 资本开支的价值落在链条的哪一环？
 
 结论：云厂商 capex FY2024→FY2025 增约 59\.9%，但云收入只增 12\.4%–15\.1%；设备商 4\.4%–23\.9%，英伟达收入 \+65\.5%。增量主要落在算力供应商。 但价格已经把这个顺序部分反过来：设备商 trailing P/E 39–43，高于英伟达的 33 与云厂商的 27–37。
 
-最反直觉：价值落在算力/设备，估值却在设备，而且 AMAT 的 42\.8x 是五年最高（FY2021–FY2025 区间 12\.1–26\.4x）——设备溢价更像周期高点，不是结构性重估。
+最反直觉：价值落在算力/设备，估值却在设备，而且 AMAT 的 42\.8x 是九年最高（FY2017–FY2025 区间 11\.1–26\.9x）——设备溢价更像周期高点，不是结构性重估。
 
 接下来验证：看 AMAT FY2026 收入与利润率能否支撑 40x；若增速仍低于 10%，估值向五年区间回归的风险最大。
 
@@ -46,17 +46,17 @@ trailing P/E：AMAT 42\.8、KLAC 41\.6、LRCX 39\.2，英伟达 33\.2，云厂�
 
 为什么重要：基本面受益顺序是算力 &gt; 设备 &gt; 云，估值却是设备 &gt; 算力 &gt; 部分云；价格已经把设备复苏定价得更满。
 
-## AMAT 的 42\.8x 是五年最高，不是常态
+## AMAT 的 42\.8x 是九年最高，不是常态
 
-按各财年结束日收盘价与当年 EPS 计算 P/E：FY2021 21\.3x、FY2022 12\.1x、FY2023 16\.2x、FY2024 21\.7x、FY2025 26\.4x；当前（2026\-11\-13）42\.8x，高于五年区间上限。 [PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-22] [NI\-AMAT\-22] [SH\-AMAT\-22] [PX\-AMAT\-23] [NI\-AMAT\-23] [SH\-AMAT\-23] [PX\-AMAT\-24] [NI\-AMAT\-24] [SH\-AMAT\-24] [PX\-AMAT\-25] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT]
+按各财年结束日收盘价与当年 EPS 计算 P/E：FY2017 17\.4x、FY2018 11\.1x、FY2019 18\.9x、FY2020 15\.1x、FY2021 21\.3x、FY2022 11\.9x、FY2023 16\.3x、FY2024 21\.1x、FY2025 26\.9x；当前 42\.8x，高于九年区间。 [PX\-AMAT\-17] [NI\-AMAT\-17] [SH\-AMAT\-17] [PX\-AMAT\-18] [NI\-AMAT\-18] [SH\-AMAT\-18] [PX\-AMAT\-19] [NI\-AMAT\-19] [SH\-AMAT\-19] [PX\-AMAT\-20] [NI\-AMAT\-20] [SH\-AMAT\-20] [PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-22] [NI\-AMAT\-22] [SH\-AMAT\-22] [PX\-AMAT\-23] [NI\-AMAT\-23] [SH\-AMAT\-23] [PX\-AMAT\-24] [NI\-AMAT\-24] [SH\-AMAT\-24] [PX\-AMAT\-25] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT]
 
-为什么重要：设备商整体 39–43x 已贵，AMAT 还在自身五年最高；如果增长不能兑现，均值回归空间最大。
+为什么重要：设备商整体 39–43x 已贵，AMAT 还在自身九年最高；如果增长不能兑现，均值回归空间最大。
 
 ## 这意味着什么
 
 ### 估值风险在设备，不在算力
 
-设备商 P/E 39–43，高于英伟达 33；AMAT 42\.8x 还是五年最高（12–26x）。若 FY2026 增速不能兑现，下修空间在设备，AMAT 最脆弱。（FY2026） [PX\-AMAT] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT\-21] [PX\-AMAT\-25] [PX\-NVDA] [NI\-NVDA\-26] [SH\-NVDA\-26]
+设备商 P/E 39–43，高于英伟达 33；AMAT 42\.8x 还是九年最高（11–27x）。若 FY2026 增速不能兑现，下修空间在设备，AMAT 最脆弱。（FY2026） [PX\-AMAT] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT\-21] [PX\-AMAT\-25] [PX\-NVDA] [NI\-NVDA\-26] [SH\-NVDA\-26]
 
 ### 受益顺序：算力 &gt; 部分设备 &gt; 云厂商现金流
 
@@ -106,7 +106,7 @@ capex 增速转负，云 FCF 回升、算力/设备承压。
 
 ## 分析判断
 
-AI 资本开支的增量主要落在算力供应商与部分设备商；云厂商收入增速最低、FCF 利润率下降，承担了现金流成本。 估值顺序与价值顺序相反：设备最贵（39–43x），算力 33x，云 27–37x。 AMAT 当前 42\.8x 高于其五年 12–26x 区间，设备溢价更像周期高点。 [I\-JUDGE]
+AI 资本开支的增量主要落在算力供应商与部分设备商；云厂商收入增速最低、FCF 利润率下降，承担了现金流成本。 估值顺序与价值顺序相反：设备最贵（39–43x），算力 33x，云 27–37x。 AMAT 当前 42\.8x 高于其九年 11–27x 区间，设备溢价更像周期高点。 [I\-JUDGE]
 
 传导关系：资本开支 → 算力供给 → 设备交付 → 云收入 → 自由现金流
 
@@ -141,10 +141,14 @@ AI 资本开支的增量主要落在算力供应商与部分设备商；云厂�
 
 P/E=收盘价/\(净利润/稀释股数\)；各公司财年结束月不同（微软 6 月、Alphabet/亚马逊 12 月、英伟达 1 月、设备 6–10 月），trailing 口径不完全同期。
 
-### AMAT 五年 P/E（财年结束日收盘 / 当年 EPS）
+### AMAT 九年 P/E（财年结束日收盘 / 当年 EPS）
 
 | 财年 | 收盘价（美元/股） | EPS（美元/股） | P/E（倍） |
 | --- | --- | --- | --- |
+| 2017 | 56\.43 | 3\.25 | 17\.4 |
+| 2018 | 32\.88 | 2\.96 | 11\.1 |
+| 2019 | 54\.26 | 2\.86 | 18\.9 |
+| 2020 | 59\.23 | 3\.92 | 15\.1 |
 | 2021 | 136\.65 | 6\.41 | 21\.3 |
 | 2022 | 89\.72 | 7\.44 | 12\.1 |
 | 2023 | 131\.3 | 8\.11 | 16\.2 |
@@ -152,7 +156,7 @@ P/E=收盘价/\(净利润/稀释股数\)；各公司财年结束月不同（微�
 | 2025 | 228\.75 | 8\.66 | 26\.4 |
 | 当前 | 370\.5 | 8\.66 | 42\.8 |
 
-[PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-22] [NI\-AMAT\-22] [SH\-AMAT\-22] [PX\-AMAT\-23] [NI\-AMAT\-23] [SH\-AMAT\-23] [PX\-AMAT\-24] [NI\-AMAT\-24] [SH\-AMAT\-24] [PX\-AMAT\-25] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT]
+[PX\-AMAT\-17] [NI\-AMAT\-17] [SH\-AMAT\-17] [PX\-AMAT\-18] [NI\-AMAT\-18] [SH\-AMAT\-18] [PX\-AMAT\-19] [NI\-AMAT\-19] [SH\-AMAT\-19] [PX\-AMAT\-20] [NI\-AMAT\-20] [SH\-AMAT\-20] [PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-22] [NI\-AMAT\-22] [SH\-AMAT\-22] [PX\-AMAT\-23] [NI\-AMAT\-23] [SH\-AMAT\-23] [PX\-AMAT\-24] [NI\-AMAT\-24] [SH\-AMAT\-24] [PX\-AMAT\-25] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT]
 
 当前行使用 FY2025 EPS（trailing）；AMAT 财年 10 月结束，价格取财年结束前最后一个交易日。
 
@@ -189,10 +193,14 @@ P/E=收盘价/\(净利润/稀释股数\)；各公司财年结束月不同（微�
 
 2026\-11\-13 收盘价 / 最近财年 EPS；财年不同期。
 
-### AMAT P/E：五年区间 12–26x，当前 42\.8x
+### AMAT P/E：九年区间 11–27x，当前 42\.8x
 
 | 财年 | 倍（倍） |
 | --- | --- |
+| 2017 | 17\.4 |
+| 2018 | 11\.1 |
+| 2019 | 18\.9 |
+| 2020 | 15\.1 |
 | 2021 | 21\.3 |
 | 2022 | 12\.1 |
 | 2023 | 16\.2 |
@@ -200,7 +208,7 @@ P/E=收盘价/\(净利润/稀释股数\)；各公司财年结束月不同（微�
 | 2025 | 26\.4 |
 | 当前 | 42\.8 |
 
-[PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-22] [NI\-AMAT\-22] [SH\-AMAT\-22] [PX\-AMAT\-23] [NI\-AMAT\-23] [SH\-AMAT\-23] [PX\-AMAT\-24] [NI\-AMAT\-24] [SH\-AMAT\-24] [PX\-AMAT\-25] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT]
+[PX\-AMAT\-17] [NI\-AMAT\-17] [SH\-AMAT\-17] [PX\-AMAT\-18] [NI\-AMAT\-18] [SH\-AMAT\-18] [PX\-AMAT\-19] [NI\-AMAT\-19] [SH\-AMAT\-19] [PX\-AMAT\-20] [NI\-AMAT\-20] [SH\-AMAT\-20] [PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-22] [NI\-AMAT\-22] [SH\-AMAT\-22] [PX\-AMAT\-23] [NI\-AMAT\-23] [SH\-AMAT\-23] [PX\-AMAT\-24] [NI\-AMAT\-24] [SH\-AMAT\-24] [PX\-AMAT\-25] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT]
 
 当前为 2026\-11\-13 收盘 / FY2025 EPS；历史为各财年结束日收盘 / 当年 EPS。
 
@@ -518,6 +526,54 @@ AI 收入可能滞后 capex 2–4 个季度；当前 12%–15% 的云收入增�
 
 依据：；来源：S\-PX\-AMAT\-25
 
+\[PX\-AMAT\-17\] AMAT 2017\-10\-31 收盘 56\.43 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-AMAT\-17
+
+\[NI\-AMAT\-17\] AMAT FY2017 净利润 3519 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-AMAT
+
+\[SH\-AMAT\-17\] AMAT FY2017 稀释加权股数 1084 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-AMAT
+
+\[PX\-AMAT\-18\] AMAT 2018\-10\-31 收盘 32\.88 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-AMAT\-18
+
+\[NI\-AMAT\-18\] AMAT FY2018 净利润 3038 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-AMAT
+
+\[SH\-AMAT\-18\] AMAT FY2018 稀释加权股数 1026 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-AMAT
+
+\[PX\-AMAT\-19\] AMAT 2019\-10\-31 收盘 54\.26 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-AMAT\-19
+
+\[NI\-AMAT\-19\] AMAT FY2019 净利润 2706 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-AMAT
+
+\[SH\-AMAT\-19\] AMAT FY2019 稀释加权股数 945 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-AMAT
+
+\[PX\-AMAT\-20\] AMAT 2020\-10\-30 收盘 59\.23 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-AMAT\-20
+
+\[NI\-AMAT\-20\] AMAT FY2020 净利润 3619 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-AMAT
+
+\[SH\-AMAT\-20\] AMAT FY2020 稀释加权股数 923 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-AMAT
+
 S\-MSFT · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: 微软 · locator：data\.sec\.gov companyfacts CIK0000789019（微软），10\-K 年度值 · origin\_id：sec\-msft · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "价值链各环节收入、利润与现金流", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000789019\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json)
@@ -591,6 +647,22 @@ S\-PX\-AMAT\-24 · Nasdaq · T0 · published\_at：2024\-10\-25 · retrieved\_at
 [https://www\.nasdaq\.com/market\-activity/stocks/amat/historical](https://www.nasdaq.com/market-activity/stocks/amat/historical)
 
 S\-PX\-AMAT\-25 · Nasdaq · T0 · published\_at：2025\-10\-24 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-10\-24 close $228\.75 · locator：Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-amat\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "五年 P/E 区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AMAT", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-10\-24T16:00:00\-05:00", "unit": "USD/share", "value": 228\.75\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/amat/historical](https://www.nasdaq.com/market-activity/stocks/amat/historical)
+
+S\-PX\-AMAT\-17 · Nasdaq · T0 · published\_at：2017\-10\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2017\-10\-31 close $56\.43 · locator：Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-amat\-2017 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "十年 P/E 区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AMAT", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2017\-10\-31T16:00:00\-05:00", "unit": "USD/share", "value": 56\.43\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/amat/historical](https://www.nasdaq.com/market-activity/stocks/amat/historical)
+
+S\-PX\-AMAT\-18 · Nasdaq · T0 · published\_at：2018\-10\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2018\-10\-31 close $32\.88 · locator：Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-amat\-2018 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "十年 P/E 区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AMAT", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2018\-10\-31T16:00:00\-05:00", "unit": "USD/share", "value": 32\.88\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/amat/historical](https://www.nasdaq.com/market-activity/stocks/amat/historical)
+
+S\-PX\-AMAT\-19 · Nasdaq · T0 · published\_at：2019\-10\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2019\-10\-31 close $54\.26 · locator：Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-amat\-2019 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "十年 P/E 区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AMAT", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2019\-10\-31T16:00:00\-05:00", "unit": "USD/share", "value": 54\.26\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/amat/historical](https://www.nasdaq.com/market-activity/stocks/amat/historical)
+
+S\-PX\-AMAT\-20 · Nasdaq · T0 · published\_at：2020\-10\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2020\-10\-30 close $59\.23 · locator：Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-amat\-2020 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "十年 P/E 区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AMAT", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2020\-10\-30T16:00:00\-05:00", "unit": "USD/share", "value": 59\.23\}
 
 [https://www\.nasdaq\.com/market\-activity/stocks/amat/historical](https://www.nasdaq.com/market-activity/stocks/amat/historical)
 

@@ -768,6 +768,142 @@
           "source_id": "S-PX-AMAT-25"
         }
       ]
+    },
+    {
+      "id": "PX-AMAT-17",
+      "text": "AMAT 2017-10-31 收盘 56.43 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-AMAT-17"
+        }
+      ]
+    },
+    {
+      "id": "NI-AMAT-17",
+      "text": "AMAT FY2017 净利润 3519 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "SH-AMAT-17",
+      "text": "AMAT FY2017 稀释加权股数 1084 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "PX-AMAT-18",
+      "text": "AMAT 2018-10-31 收盘 32.88 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-AMAT-18"
+        }
+      ]
+    },
+    {
+      "id": "NI-AMAT-18",
+      "text": "AMAT FY2018 净利润 3038 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "SH-AMAT-18",
+      "text": "AMAT FY2018 稀释加权股数 1026 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "PX-AMAT-19",
+      "text": "AMAT 2019-10-31 收盘 54.26 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-AMAT-19"
+        }
+      ]
+    },
+    {
+      "id": "NI-AMAT-19",
+      "text": "AMAT FY2019 净利润 2706 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "SH-AMAT-19",
+      "text": "AMAT FY2019 稀释加权股数 945 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "PX-AMAT-20",
+      "text": "AMAT 2020-10-30 收盘 59.23 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-AMAT-20"
+        }
+      ]
+    },
+    {
+      "id": "NI-AMAT-20",
+      "text": "AMAT FY2020 净利润 3619 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "SH-AMAT-20",
+      "text": "AMAT FY2020 稀释加权股数 923 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
     }
   ]
 }
