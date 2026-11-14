@@ -545,13 +545,13 @@
   "charts": [
     {
       "kind": "line",
-      "title": "收入见顶，营业利润率下滑",
+      "title": "收入、毛利与营业利润（百万美元）",
       "x_label": "财年",
-      "y_label": "百万美元 / %",
-      "unit": "混合",
+      "y_label": "百万美元",
+      "unit": "百万美元",
       "series": [
         {
-          "name": "收入（百万美元）",
+          "name": "收入",
           "rows": [
             {
               "label": "FY2022",
@@ -572,38 +572,63 @@
           ]
         },
         {
-          "name": "营业利润率（%）",
+          "name": "毛利",
           "rows": [
             {
               "label": "FY2022",
-              "value": 16.8
+              "value": 20853
             },
             {
               "label": "FY2023",
-              "value": 9.2
+              "value": 17660
             },
             {
               "label": "FY2024",
-              "value": 7.2
+              "value": 17450
             },
             {
               "label": "FY2025",
-              "value": 4.6
+              "value": 17094
+            }
+          ]
+        },
+        {
+          "name": "营业利润",
+          "rows": [
+            {
+              "label": "FY2022",
+              "value": 13656
+            },
+            {
+              "label": "FY2023",
+              "value": 8891
+            },
+            {
+              "label": "FY2024",
+              "value": 7076
+            },
+            {
+              "label": "FY2025",
+              "value": 4355
             }
           ]
         }
       ],
       "claim_ids": [
         "TSLA-REV-22",
-        "TSLA-REV-23",
-        "TSLA-REV-24",
-        "TSLA-REV-25",
+        "TSLA-GP-22",
         "TSLA-OP-22",
+        "TSLA-REV-23",
+        "TSLA-GP-23",
         "TSLA-OP-23",
+        "TSLA-REV-24",
+        "TSLA-GP-24",
         "TSLA-OP-24",
+        "TSLA-REV-25",
+        "TSLA-GP-25",
         "TSLA-OP-25"
       ],
-      "note": "两条线单位不同，只用于方向对照。"
+      "note": "同一单位（百万美元）；利润率见另一张图。"
     },
     {
       "kind": "bar",
