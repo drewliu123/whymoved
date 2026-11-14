@@ -359,6 +359,226 @@
         "NVDA-REV-26",
         "NVDA-CFO-26"
       ]
+    },
+    {
+      "id": "NVDA-Q-2507-REV",
+      "text": "NVDA 2025-07 季度收入 46743 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2507-COGS",
+      "text": "NVDA 2025-07 季度营业成本 12890 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2507-AR",
+      "text": "NVDA 2025-07 季度应收账款 27808 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2507-INV",
+      "text": "NVDA 2025-07 季度存货 14962 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2507-DEF",
+      "text": "NVDA 2025-07 季度合同负债 980 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2510-REV",
+      "text": "NVDA 2025-10 季度收入 57006 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2510-COGS",
+      "text": "NVDA 2025-10 季度营业成本 15157 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2510-AR",
+      "text": "NVDA 2025-10 季度应收账款 33391 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2510-INV",
+      "text": "NVDA 2025-10 季度存货 19784 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2510-DEF",
+      "text": "NVDA 2025-10 季度合同负债 1248 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2604-REV",
+      "text": "NVDA 2026-04 季度收入 81615 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2604-COGS",
+      "text": "NVDA 2026-04 季度营业成本 20458 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2604-AR",
+      "text": "NVDA 2026-04 季度应收账款 40710 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2604-INV",
+      "text": "NVDA 2026-04 季度存货 25797 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2604-DEF",
+      "text": "NVDA 2026-04 季度合同负债 1714 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2607-REV",
+      "text": "NVDA 2026-07 季度收入 96221 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2607-COGS",
+      "text": "NVDA 2026-07 季度营业成本 24079 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2607-AR",
+      "text": "NVDA 2026-07 季度应收账款 63059 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2607-INV",
+      "text": "NVDA 2026-07 季度存货 31575 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-Q-2607-DEF",
+      "text": "NVDA 2026-07 季度合同负债 4616 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
     }
   ]
 }
