@@ -128,6 +128,8 @@
 | 报告里的数字能不能核 | 结构化数值事实、计算重算、模型输入与证据数值一致性 | [证据契约](skills/research/references/evidence.md) |
 | 能不能先看一页 | 一页式 IC memo（只裁剪，不新增证据） | [报告模板](skills/research/references/memo-template.md) |
 
+想先看「哪些示例回答了价格问题」？[估值覆盖图](docs/valuation-coverage.md) 把 9 个估值口径集中在一页。
+
 ## 快速开始
 
 ### 1. 直接看研究效果
