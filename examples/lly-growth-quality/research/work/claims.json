@@ -1,0 +1,363 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "LLY-REV-22",
+      "text": "LLY FY2022 收入 28.5 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-REV-23",
+      "text": "LLY FY2023 收入 34.1 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-REV-24",
+      "text": "LLY FY2024 收入 45.0 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-REV-25",
+      "text": "LLY FY2025 收入 65.2 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-COGS-22",
+      "text": "LLY FY2022 营业成本 6.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-COGS-23",
+      "text": "LLY FY2023 营业成本 7.1 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-COGS-24",
+      "text": "LLY FY2024 营业成本 8.4 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-COGS-25",
+      "text": "LLY FY2025 营业成本 11.1 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-RD-22",
+      "text": "LLY FY2022 研发费用 7.2 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-RD-23",
+      "text": "LLY FY2023 研发费用 9.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-RD-24",
+      "text": "LLY FY2024 研发费用 11.0 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-RD-25",
+      "text": "LLY FY2025 研发费用 13.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-CAPEX-22",
+      "text": "LLY FY2022 资本开支 1.9 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-CAPEX-23",
+      "text": "LLY FY2023 资本开支 3.4 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-CAPEX-24",
+      "text": "LLY FY2024 资本开支 5.1 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-CAPEX-25",
+      "text": "LLY FY2025 资本开支 7.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-INV-22",
+      "text": "LLY FY2022 存货 4.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-INV-23",
+      "text": "LLY FY2023 存货 5.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-INV-24",
+      "text": "LLY FY2024 存货 7.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-INV-25",
+      "text": "LLY FY2025 存货 13.7 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-CFO-22",
+      "text": "LLY FY2022 经营现金流 7.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-CFO-23",
+      "text": "LLY FY2023 经营现金流 4.2 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-CFO-24",
+      "text": "LLY FY2024 经营现金流 8.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-CFO-25",
+      "text": "LLY FY2025 经营现金流 16.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-NI-22",
+      "text": "LLY FY2022 净利润 6.2 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-NI-23",
+      "text": "LLY FY2023 净利润 5.2 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-NI-24",
+      "text": "LLY FY2024 净利润 10.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "LLY-NI-25",
+      "text": "LLY FY2025 净利润 20.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LLY"
+        }
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "礼来 FY2025 收入 +44.9%，毛利率 76.8%→83.0%、净利率 21.8%→31.6%、研发费用率 25.3%→20.4%；增长没有被费用吃掉，经营杠杆在扩张。但存货 4.3→13.7、存货天数 238→451，资本开支 1.9→7.8，CFO/净利润 0.82；被吃掉的是现金",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "LLY-REV-22",
+        "LLY-REV-23",
+        "LLY-REV-24",
+        "LLY-REV-25",
+        "LLY-COGS-22",
+        "LLY-COGS-23",
+        "LLY-COGS-24",
+        "LLY-COGS-25",
+        "LLY-RD-22",
+        "LLY-RD-23",
+        "LLY-RD-24",
+        "LLY-RD-25",
+        "LLY-CAPEX-22",
+        "LLY-CAPEX-23",
+        "LLY-CAPEX-24",
+        "LLY-CAPEX-25",
+        "LLY-INV-22",
+        "LLY-INV-23",
+        "LLY-INV-24",
+        "LLY-INV-25",
+        "LLY-CFO-22",
+        "LLY-CFO-23",
+        "LLY-CFO-24",
+        "LLY-CFO-25",
+        "LLY-NI-22",
+        "LLY-NI-23",
+        "LLY-NI-24",
+        "LLY-NI-25"
+      ]
+    },
+    {
+      "id": "I-WATCH",
+      "text": "若收入增速降到 20% 以下而存货天数仍高于 400，库存与产能风险会从现金流转向利润表；当前毛利率扩张足以吸收",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "LLY-REV-25",
+        "LLY-INV-25",
+        "LLY-CAPEX-25"
+      ]
+    }
+  ]
+}

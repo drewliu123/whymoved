@@ -97,6 +97,11 @@
 - **[阅读报告](examples/jpm-nim-provisions/research/work/report.md)**
 - **[查看案例与命令](examples/jpm-nim-provisions/README.md)**
 
+**第十七个例子：礼来的增长被费用吃掉了吗？** 收入 FY2025 +44.9%，毛利率 76.8%→83.0%、净利率 21.8%→31.6%、研发费用率 25.3%→20.4%——费用没有吃掉增长。被吃掉的是现金：存货天数 238→451、capex 占收入 12%、CFO/净利润 0.82。
+
+- **[阅读报告](examples/lly-growth-quality/research/work/report.md)**
+- **[查看案例与命令](examples/lly-growth-quality/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。
