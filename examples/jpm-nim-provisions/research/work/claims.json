@@ -406,6 +406,346 @@
         }
       ],
       "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-16",
+      "text": "JPM 2016-12-30 收盘 86.29 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-16"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-16",
+      "text": "JPM FY2016 普通股 3561.2 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-16",
+      "text": "JPM FY2016 股东权益 254.2 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-17",
+      "text": "JPM 2017-12-29 收盘 106.94 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-17"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-17",
+      "text": "JPM FY2017 普通股 3425.3 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-17",
+      "text": "JPM FY2017 股东权益 255.7 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-18",
+      "text": "JPM 2018-12-31 收盘 97.62 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-18"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-18",
+      "text": "JPM FY2018 普通股 3275.8 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-18",
+      "text": "JPM FY2018 股东权益 256.5 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-19",
+      "text": "JPM 2019-12-31 收盘 139.4 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-19"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-19",
+      "text": "JPM FY2019 普通股 3084.0 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-19",
+      "text": "JPM FY2019 股东权益 261.3 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-20",
+      "text": "JPM 2020-12-31 收盘 127.07 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-20"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-20",
+      "text": "JPM FY2020 普通股 3049.4 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-20",
+      "text": "JPM FY2020 股东权益 279.4 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-21",
+      "text": "JPM 2021-12-31 收盘 158.35 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-21"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-21",
+      "text": "JPM FY2021 普通股 2944.1 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-21",
+      "text": "JPM FY2021 股东权益 294.1 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-22",
+      "text": "JPM 2022-12-30 收盘 134.1 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-22"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-22",
+      "text": "JPM FY2022 普通股 2934.2 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-22",
+      "text": "JPM FY2022 股东权益 292.3 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-23",
+      "text": "JPM 2023-12-29 收盘 170.1 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-23"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-23",
+      "text": "JPM FY2023 普通股 2876.6 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-23",
+      "text": "JPM FY2023 股东权益 327.9 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-24",
+      "text": "JPM 2024-12-31 收盘 239.71 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-24"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-24",
+      "text": "JPM FY2024 普通股 2797.6 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-24",
+      "text": "JPM FY2024 股东权益 344.8 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-JPM-25",
+      "text": "JPM 2025-12-31 收盘 322.22 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-JPM-25"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-JPM-25",
+      "text": "JPM FY2025 普通股 2696.2 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "EQH-JPM-25",
+      "text": "JPM FY2025 股东权益 362.4 十亿美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
     }
   ]
 }

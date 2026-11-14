@@ -64,6 +64,336 @@
         "purpose": "P/E 与 P/B",
         "priority": "decisive"
       }
+    },
+    {
+      "id": "S-PXH-JPM-16",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2016-12-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2016-12-30 close $86.29",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2016",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2016-12-30T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 86.29,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-17",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2017-12-29",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2017-12-29 close $106.94",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2017",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2017-12-29T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 106.94,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-18",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2018-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2018-12-31 close $97.62",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2018",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2018-12-31T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 97.62,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-19",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2019-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2019-12-31 close $139.4",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2019",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2019-12-31T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 139.4,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-20",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2020-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2020-12-31 close $127.07",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2020",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2020-12-31T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 127.07,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-21",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2021-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2021-12-31 close $158.35",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2021",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2021-12-31T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 158.35,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-22",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2022-12-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2022-12-30 close $134.1",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2022",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2022-12-30T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 134.1,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-23",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2023-12-29",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2023-12-29 close $170.1",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2023",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2023-12-29T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 170.1,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-24",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2024-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2024-12-31 close $239.71",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2024",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2024-12-31T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 239.71,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-JPM-25",
+      "url": "https://www.nasdaq.com/market-activity/stocks/jpm/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2025-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2025-12-31 close $322.22",
+      "locator": "Nasdaq JPM 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-jpm-2025",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2025-12-31T16:00:00-05:00",
+        "instrument": "JPM",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 322.22,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "十年 P/B",
+        "priority": "useful"
+      }
     }
   ]
 }
