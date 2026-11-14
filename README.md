@@ -87,6 +87,11 @@
 - **[阅读报告](examples/tsla-price-cut-quality/research/work/report.md)**
 - **[查看案例与命令](examples/tsla-price-cut-quality/README.md)**
 
+**第十五个例子：耐克的收入企稳是拐点吗？** FY2025 收入 −9.8%、FY2026 +0.2%，只是止跌；毛利率 42.9% 仍低于 FY2022 的 46.0%，净利率 6.7%，CFO 从 FY2024 的 74.29 亿降到 28.68 亿美元（−61%）。收入企稳不等于修复。
+
+- **[阅读报告](examples/nke-turnaround/research/work/report.md)**
+- **[查看案例与命令](examples/nke-turnaround/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

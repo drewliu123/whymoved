@@ -1,0 +1,486 @@
+{
+  "schema_version": 2,
+  "layout": "brief",
+  "title": "耐克的收入企稳了，但利润与现金流没有修复",
+  "question": "耐克的收入企稳了，利润与现金流修复了吗？",
+  "type": "asset",
+  "task": "拐点验证",
+  "as_of": "2026-11-14T00:00:00Z",
+  "summary": {
+    "conclusion": "收入 FY2025 −9.8%、FY2026 +0.2%，只是止跌；毛利率 42.9% 仍低于 FY2022 的 46.0%，净利润 3.1B 约为峰值一半。",
+    "surprise": "CFO 从 FY2024 的 7.43B 降到 FY2026 的 2.87B，降幅 61%；资本开支也降到 0.68B。利润与现金流没有跟随收入企稳。",
+    "next_check": "看 FY2027 毛利率能否回到 44%、存货天数能否降到 95 以下、CFO 能否回到 4B 以上；三者不出现，拐点不成立。"
+  },
+  "answer": {
+    "text": "耐克的收入企稳不等于修复。收入 FY2025 下滑 9.8%、FY2026 仅 +0.2%，46,398 百万美元仍低于 FY2024 的 51,362；毛利率 42.9%，低于 FY2022 的 46.0%；净利润 3,108 百万美元，约为 FY2022 的一半；CFO 2,868 百万美元，比 FY2024 的 7,429 下降 61%。存货天数 103.4，虽低于 FY2023 的 106.7，仍高于 FY2024 的 96.4。收入止跌、利润与现金流继续恶化，拐点尚未成立。",
+    "claim_ids": [
+      "I-JUDGE",
+      "I-INV",
+      "NKE-REV-26",
+      "NKE-CFO-26"
+    ]
+  },
+  "findings": [
+    {
+      "title": "收入只是止跌，仍低于峰值",
+      "text": "收入 51,362（FY2024）→46,309（FY2025，−9.8%）→46,398（FY2026，+0.2%）。",
+      "claim_ids": [
+        "NKE-REV-24",
+        "NKE-REV-25",
+        "NKE-REV-26"
+      ],
+      "why_it_matters": "企稳与修复是两件事；收入没有回到 FY2024 水平，规模效应尚未恢复。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "收入企稳=拐点",
+        "detail": "仍低于 FY2024"
+      }
+    },
+    {
+      "title": "毛利率与净利率仍显著低于峰值",
+      "text": "毛利率 46.0%→43.5%→44.6%→42.7%→42.9%；净利率 12.9%→9.9%→11.1%→7.0%→6.7%。",
+      "claim_ids": [
+        "NKE-REV-22",
+        "NKE-GP-22",
+        "NKE-NI-22",
+        "NKE-REV-26",
+        "NKE-GP-26",
+        "NKE-NI-26"
+      ],
+      "why_it_matters": "毛利率没有回到 44% 以上，净利率只有峰值一半；利润修复没有发生。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "收入企稳带动利润",
+        "detail": "利润率仍低"
+      }
+    },
+    {
+      "title": "CFO 下降 61%，现金流比利润更弱",
+      "text": "CFO 7,429（FY2024）→3,698（FY2025）→2,868（FY2026）；资本开支从 969 降到 684。",
+      "claim_ids": [
+        "NKE-CFO-24",
+        "NKE-CFO-25",
+        "NKE-CFO-26",
+        "NKE-CAPEX-23",
+        "NKE-CAPEX-26"
+      ],
+      "why_it_matters": "现金流降幅大于净利润，说明营运资本或回款在恶化；不是一次性会计问题。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看净利润",
+        "detail": "CFO 降幅更大"
+      }
+    },
+    {
+      "title": "存货天数仍高于 FY2024",
+      "text": "存货天数 106.7（FY2023）→96.4（FY2024）→103.1（FY2025）→103.4（FY2026）。",
+      "claim_ids": [
+        "NKE-INV-23",
+        "NKE-INV-24",
+        "NKE-INV-25",
+        "NKE-INV-26",
+        "NKE-COGS-25",
+        "NKE-COGS-26"
+      ],
+      "why_it_matters": "库存清理未完成，折扣压力仍在；毛利率修复缺少支撑。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "库存已清理",
+        "detail": "天数仍高"
+      }
+    }
+  ],
+  "implications": [
+    {
+      "title": "拐点要看三个数，不是收入",
+      "text": "毛利率 >44%、存货天数 <95、CFO >4B；三者同时出现，才谈得上修复。",
+      "claim_ids": [
+        "NKE-GP-26",
+        "NKE-INV-26",
+        "NKE-CFO-26"
+      ],
+      "horizon": "FY2027"
+    },
+    {
+      "title": "现金流是最弱的一环",
+      "text": "CFO 降 61%，降幅大于净利润；看耐克不能只看利润率，现金流更早暴露问题。",
+      "claim_ids": [
+        "NKE-CFO-24",
+        "NKE-CFO-26",
+        "NKE-NI-26"
+      ],
+      "horizon": "未来 4–6 个季度"
+    },
+    {
+      "title": "收入企稳只是必要条件",
+      "text": "收入止跌为修复提供基础，但毛利率、库存与现金流都没有跟上。",
+      "claim_ids": [
+        "I-JUDGE",
+        "NKE-REV-26"
+      ],
+      "horizon": "FY2027"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "修复成立",
+      "thesis": "毛利率、库存与现金流三项同时改善。",
+      "triggers": [
+        "毛利率 >44%",
+        "存货天数 <95",
+        "CFO >4,000"
+      ],
+      "implication": "拐点成立，利润率与估值可修复。"
+    },
+    {
+      "name": "低位停滞",
+      "thesis": "收入持平，毛利率与现金流不改善。",
+      "triggers": [
+        "收入增速 ±2% 内",
+        "毛利率 <44%",
+        "CFO <3,500"
+      ],
+      "implication": "拐点不成立，继续磨底。"
+    },
+    {
+      "name": "再度恶化",
+      "thesis": "收入重新下滑、库存天数升破 110。",
+      "triggers": [
+        "收入增速 <-3%",
+        "存货天数 >110",
+        "CFO <2,500"
+      ],
+      "implication": "下行未结束，折扣与减值压力上升。"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "一次性重组与减值",
+      "text": "利润与现金流下降可能部分来自重组、减值或一次性费用；需要看附注拆分。",
+      "claim_ids": [
+        "I-JUDGE",
+        "NKE-NI-26"
+      ]
+    }
+  ],
+  "watch": [
+    {
+      "signal": "FY2027 毛利率、存货天数与 CFO",
+      "meaning": "三项决定拐点是否成立",
+      "claim_ids": [
+        "NKE-GP-26",
+        "NKE-INV-26",
+        "NKE-CFO-26"
+      ],
+      "due": "2027-06-30",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "只有年度数据；没有分渠道与区域收入，无法判断批发/直营与地区差异。",
+      "material": true,
+      "claim_ids": [
+        "NKE-REV-26"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "耐克 FY2022–FY2026：收入、利润率与现金流",
+      "columns": [
+        "指标",
+        "FY2022",
+        "FY2023",
+        "FY2024",
+        "FY2025",
+        "FY2026"
+      ],
+      "units": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "收入（百万美元）",
+          46710,
+          51217,
+          51362,
+          46309,
+          46398
+        ],
+        [
+          "毛利率",
+          46.0,
+          43.5,
+          44.6,
+          42.7,
+          42.9
+        ],
+        [
+          "净利率",
+          12.9,
+          9.9,
+          11.1,
+          7.0,
+          6.7
+        ],
+        [
+          "经营现金流",
+          5188,
+          5841,
+          7429,
+          3698,
+          2868
+        ],
+        [
+          "资本开支",
+          758,
+          969,
+          812,
+          430,
+          684
+        ],
+        [
+          "存货天数",
+          120.4,
+          106.7,
+          96.4,
+          103.1,
+          103.4
+        ]
+      ],
+      "claim_ids": [
+        "NKE-REV-22",
+        "NKE-REV-23",
+        "NKE-REV-24",
+        "NKE-REV-25",
+        "NKE-REV-26",
+        "NKE-GP-22",
+        "NKE-GP-23",
+        "NKE-GP-24",
+        "NKE-GP-25",
+        "NKE-GP-26",
+        "NKE-NI-22",
+        "NKE-NI-23",
+        "NKE-NI-24",
+        "NKE-NI-25",
+        "NKE-NI-26",
+        "NKE-CFO-22",
+        "NKE-CFO-23",
+        "NKE-CFO-24",
+        "NKE-CFO-25",
+        "NKE-CFO-26",
+        "NKE-CAPEX-22",
+        "NKE-CAPEX-23",
+        "NKE-CAPEX-24",
+        "NKE-CAPEX-25",
+        "NKE-CAPEX-26",
+        "NKE-INV-22",
+        "NKE-INV-23",
+        "NKE-INV-24",
+        "NKE-INV-25",
+        "NKE-INV-26",
+        "NKE-COGS-22",
+        "NKE-COGS-23",
+        "NKE-COGS-24",
+        "NKE-COGS-25",
+        "NKE-COGS-26"
+      ],
+      "note": "毛利率=毛利/收入；净利率=净利润/收入；存货天数=产成品存货/营业成本×365；由披露值计算并四舍五入。"
+    }
+  ],
+  "charts": [
+    {
+      "kind": "line",
+      "title": "收入止跌，毛利率与净利率仍低",
+      "x_label": "财年",
+      "y_label": "%",
+      "unit": "%",
+      "series": [
+        {
+          "name": "毛利率",
+          "rows": [
+            {
+              "label": "FY2022",
+              "value": 46.0
+            },
+            {
+              "label": "FY2023",
+              "value": 43.5
+            },
+            {
+              "label": "FY2024",
+              "value": 44.6
+            },
+            {
+              "label": "FY2025",
+              "value": 42.7
+            },
+            {
+              "label": "FY2026",
+              "value": 42.9
+            }
+          ]
+        },
+        {
+          "name": "净利率",
+          "rows": [
+            {
+              "label": "FY2022",
+              "value": 12.9
+            },
+            {
+              "label": "FY2023",
+              "value": 9.9
+            },
+            {
+              "label": "FY2024",
+              "value": 11.1
+            },
+            {
+              "label": "FY2025",
+              "value": 7.0
+            },
+            {
+              "label": "FY2026",
+              "value": 6.7
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "NKE-REV-22",
+        "NKE-REV-23",
+        "NKE-REV-24",
+        "NKE-REV-25",
+        "NKE-REV-26",
+        "NKE-GP-22",
+        "NKE-GP-23",
+        "NKE-GP-24",
+        "NKE-GP-25",
+        "NKE-GP-26",
+        "NKE-NI-22",
+        "NKE-NI-23",
+        "NKE-NI-24",
+        "NKE-NI-25",
+        "NKE-NI-26"
+      ],
+      "note": "由披露值计算。"
+    },
+    {
+      "kind": "bar",
+      "title": "经营现金流从 7,429 降到 2,868",
+      "x_label": "财年",
+      "y_label": "百万美元",
+      "unit": "百万美元",
+      "rows": [
+        {
+          "label": "FY2022",
+          "value": 5188
+        },
+        {
+          "label": "FY2023",
+          "value": 5841
+        },
+        {
+          "label": "FY2024",
+          "value": 7429
+        },
+        {
+          "label": "FY2025",
+          "value": 3698
+        },
+        {
+          "label": "FY2026",
+          "value": 2868
+        }
+      ],
+      "claim_ids": [
+        "NKE-CFO-22",
+        "NKE-CFO-23",
+        "NKE-CFO-24",
+        "NKE-CFO-25",
+        "NKE-CFO-26"
+      ],
+      "note": "由披露值绘制。"
+    }
+  ],
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2022 的利润率与现金流",
+    "baseline_claim_ids": [
+      "NKE-REV-22",
+      "NKE-CFO-22"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入",
+      "毛利率",
+      "净利润",
+      "经营现金流"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "收入企稳意味着经营修复"
+      },
+      {
+        "id": "H2",
+        "explanation": "收入企稳只是止跌，利润与现金流仍未修复"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "利润率与现金流同步回升"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "利润率与现金流仍低"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "I-JUDGE",
+          "NKE-GP-26",
+          "NKE-CFO-26",
+          "NKE-REV-26"
+        ],
+        "interpretation": "收入企稳但毛利率与现金流仍低，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "FY2027 毛利率、存货天数与 CFO",
+        "by": "2027-06-30",
+        "supports_if": "毛利率与现金流继续低",
+        "weakens_if": "三项同时改善"
+      }
+    ],
+    "conclusion": "收入止跌不等于修复；毛利率、库存与现金流仍未回到健康水平，拐点尚未成立。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "拐点验证，不需要固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题不判断当前价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "source_status": {
+    "sec": {
+      "status": "ok"
+    }
+  },
+  "candidates": [
+    {
+      "id": "S-NKE",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320187.json",
+      "publisher": "U.S. SEC",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T00:00:00Z",
+      "quote": "10-K company facts, USD: NIKE, Inc.",
+      "locator": "data.sec.gov companyfacts CIK0000320187（Nike），10-K 年度值",
+      "origin_id": "sec-nke",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方 XBRL 年度事实",
+        "relevance": "direct",
+        "purpose": "收入、利润率与现金流",
+        "priority": "decisive"
+      }
+    }
+  ]
+}

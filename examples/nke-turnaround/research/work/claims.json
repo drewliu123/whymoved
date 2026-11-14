@@ -1,0 +1,449 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "NKE-REV-22",
+      "text": "Nike FY2022 收入 46710 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-REV-23",
+      "text": "Nike FY2023 收入 51217 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-REV-24",
+      "text": "Nike FY2024 收入 51362 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-REV-25",
+      "text": "Nike FY2025 收入 46309 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-REV-26",
+      "text": "Nike FY2026 收入 46398 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-GP-22",
+      "text": "Nike FY2022 毛利 21479 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-GP-23",
+      "text": "Nike FY2023 毛利 22292 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-GP-24",
+      "text": "Nike FY2024 毛利 22887 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-GP-25",
+      "text": "Nike FY2025 毛利 19790 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-GP-26",
+      "text": "Nike FY2026 毛利 19911 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-NI-22",
+      "text": "Nike FY2022 净利润 6046 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-NI-23",
+      "text": "Nike FY2023 净利润 5070 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-NI-24",
+      "text": "Nike FY2024 净利润 5700 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-NI-25",
+      "text": "Nike FY2025 净利润 3219 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-NI-26",
+      "text": "Nike FY2026 净利润 3108 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CFO-22",
+      "text": "Nike FY2022 经营现金流 5188 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CFO-23",
+      "text": "Nike FY2023 经营现金流 5841 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CFO-24",
+      "text": "Nike FY2024 经营现金流 7429 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CFO-25",
+      "text": "Nike FY2025 经营现金流 3698 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CFO-26",
+      "text": "Nike FY2026 经营现金流 2868 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CAPEX-22",
+      "text": "Nike FY2022 资本开支 758 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CAPEX-23",
+      "text": "Nike FY2023 资本开支 969 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CAPEX-24",
+      "text": "Nike FY2024 资本开支 812 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CAPEX-25",
+      "text": "Nike FY2025 资本开支 430 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-CAPEX-26",
+      "text": "Nike FY2026 资本开支 684 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-INV-22",
+      "text": "Nike FY2022 产成品存货 8320 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-INV-23",
+      "text": "Nike FY2023 产成品存货 8454 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-INV-24",
+      "text": "Nike FY2024 产成品存货 7519 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-INV-25",
+      "text": "Nike FY2025 产成品存货 7489 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-INV-26",
+      "text": "Nike FY2026 产成品存货 7501 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-COGS-22",
+      "text": "Nike FY2022 营业成本 25231 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-COGS-23",
+      "text": "Nike FY2023 营业成本 28925 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-COGS-24",
+      "text": "Nike FY2024 营业成本 28475 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-COGS-25",
+      "text": "Nike FY2025 营业成本 26519 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "NKE-COGS-26",
+      "text": "Nike FY2026 营业成本 26487 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NKE"
+        }
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "耐克 FY2025 收入下滑 9.8%、FY2026 仅企稳 +0.2%；毛利率 42.9% 仍低于 FY2022 的 46.0%，净利润 3.1B 约为峰值一半，CFO 2.87B 远低于 FY2024 的 7.43B；收入企稳不等于利润与现金流修复",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "NKE-REV-22",
+        "NKE-REV-23",
+        "NKE-REV-24",
+        "NKE-REV-25",
+        "NKE-REV-26",
+        "NKE-GP-22",
+        "NKE-GP-23",
+        "NKE-GP-24",
+        "NKE-GP-25",
+        "NKE-GP-26",
+        "NKE-NI-22",
+        "NKE-NI-23",
+        "NKE-NI-24",
+        "NKE-NI-25",
+        "NKE-NI-26",
+        "NKE-CFO-22",
+        "NKE-CFO-23",
+        "NKE-CFO-24",
+        "NKE-CFO-25",
+        "NKE-CFO-26",
+        "NKE-CAPEX-22",
+        "NKE-CAPEX-23",
+        "NKE-CAPEX-24",
+        "NKE-CAPEX-25",
+        "NKE-CAPEX-26",
+        "NKE-INV-22",
+        "NKE-INV-23",
+        "NKE-INV-24",
+        "NKE-INV-25",
+        "NKE-INV-26",
+        "NKE-COGS-22",
+        "NKE-COGS-23",
+        "NKE-COGS-24",
+        "NKE-COGS-25",
+        "NKE-COGS-26"
+      ]
+    },
+    {
+      "id": "I-INV",
+      "text": "存货天数 103.4，虽低于 FY2023 的 106.7，仍高于 FY2024 的 96.4；库存清理没有完成，毛利率修复缺少支撑",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "NKE-INV-24",
+        "NKE-INV-25",
+        "NKE-INV-26",
+        "NKE-COGS-26",
+        "I-JUDGE"
+      ]
+    }
+  ]
+}
