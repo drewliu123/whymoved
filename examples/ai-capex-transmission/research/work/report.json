@@ -378,5 +378,91 @@
     "conclusion": "AI 资本开支的增量没有等比例变成设备商收入：三家云厂商 capex 增约 60%，AMAT 收入只增 4.4%。",
     "surprise": "AMAT 毛利率上升，经营现金流却下降 8.3%——利润表和现金流在讲两个故事。",
     "next_check": "看 2026 财年订单、验收与营运资本，判断是交付滞后还是需求外溢。"
-  }
+  },
+  "charts": [
+    {
+      "kind": "bar",
+      "title": "FY2025 同比增速：资本开支与设备商现金流背离",
+      "x_label": "指标",
+      "y_label": "同比 %",
+      "unit": "%",
+      "rows": [
+        {
+          "label": "三家云厂商 capex",
+          "value": 59.9
+        },
+        {
+          "label": "AMAT 收入",
+          "value": 4.4
+        },
+        {
+          "label": "AMAT 毛利",
+          "value": 7.1
+        },
+        {
+          "label": "AMAT 经营现金流",
+          "value": -8.3
+        }
+      ],
+      "claim_ids": [
+        "CAPEX-MSFT-24",
+        "CAPEX-MSFT-25",
+        "CAPEX-GOOGL-24",
+        "CAPEX-GOOGL-25",
+        "CAPEX-AMZN-24",
+        "CAPEX-AMZN-25",
+        "AMAT-REVENUE-2024",
+        "AMAT-REVENUE-2025",
+        "AMAT-GROSS_PROFIT-2024",
+        "AMAT-GROSS_PROFIT-2025",
+        "AMAT-CFO-2024",
+        "AMAT-CFO-2025"
+      ],
+      "note": "由披露值计算，四舍五入到 0.1%；三家 capex 为微软 FY2025、Alphabet 与亚马逊 FY2025 合计对 FY2024。"
+    },
+    {
+      "kind": "line",
+      "title": "AMAT 毛利率上升，经营现金流率下降",
+      "x_label": "财年",
+      "y_label": "%",
+      "unit": "%",
+      "series": [
+        {
+          "name": "毛利率",
+          "rows": [
+            {
+              "label": "FY2024",
+              "value": 47.5
+            },
+            {
+              "label": "FY2025",
+              "value": 48.7
+            }
+          ]
+        },
+        {
+          "name": "经营现金流率",
+          "rows": [
+            {
+              "label": "FY2024",
+              "value": 31.9
+            },
+            {
+              "label": "FY2025",
+              "value": 28.1
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "AMAT-REVENUE-2024",
+        "AMAT-GROSS_PROFIT-2024",
+        "AMAT-CFO-2024",
+        "AMAT-REVENUE-2025",
+        "AMAT-GROSS_PROFIT-2025",
+        "AMAT-CFO-2025"
+      ],
+      "note": "毛利率=毛利/收入，经营现金流率=经营现金流/收入；由披露值计算并四舍五入。"
+    }
+  ]
 }

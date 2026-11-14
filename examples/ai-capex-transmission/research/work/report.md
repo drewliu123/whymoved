@@ -83,6 +83,30 @@ AMAT 收入增长 4\.4%，经营现金流却下降 8\.3%；营运资本与验收
 
 [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2025]
 
+### FY2025 同比增速：资本开支与设备商现金流背离
+
+| 指标 | 同比 %（%） |
+| --- | --- |
+| 三家云厂商 capex | 59\.9 |
+| AMAT 收入 | 4\.4 |
+| AMAT 毛利 | 7\.1 |
+| AMAT 经营现金流 | \-8\.3 |
+
+[CAPEX\-MSFT\-24] [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-24] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-24] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025] [AMAT\-GROSS\_PROFIT\-2024] [AMAT\-GROSS\_PROFIT\-2025] [AMAT\-CFO\-2024] [AMAT\-CFO\-2025]
+
+由披露值计算，四舍五入到 0\.1%；三家 capex 为微软 FY2025、Alphabet 与亚马逊 FY2025 合计对 FY2024。
+
+### AMAT 毛利率上升，经营现金流率下降
+
+| 财年 | 毛利率（%） | 经营现金流率（%） |
+| --- | --- | --- |
+| FY2024 | 47\.5 | 31\.9 |
+| FY2025 | 48\.7 | 28\.1 |
+
+[AMAT\-REVENUE\-2024] [AMAT\-GROSS\_PROFIT\-2024] [AMAT\-CFO\-2024] [AMAT\-REVENUE\-2025] [AMAT\-GROSS\_PROFIT\-2025] [AMAT\-CFO\-2025]
+
+毛利率=毛利/收入，经营现金流率=经营现金流/收入；由披露值计算并四舍五入。
+
 ## 接下来观察什么
 
 ### 下一财年 AMAT 收入增速与云厂商资本开支增速之差
