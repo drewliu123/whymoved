@@ -99,3 +99,84 @@ class ExampleCashFlowTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExampleRatioTests(unittest.TestCase):
+    PERCENT_RULES = [
+        ("净利率", "净利润", "收入", 100.0),
+        ("研发费用率", "研发费用", "收入", 100.0),
+        ("毛利率", "毛利", "收入", 100.0),
+        ("营业利润率", "营业利润", "收入", 100.0),
+        ("capex/收入", "资本开支", "收入", 100.0),
+        ("资本开支/收入", "资本开支", "收入", 100.0),
+        ("分配/CFO", "分红+回购", "经营现金流", 100.0),
+        ("NII/总资产", "净利息收入", "总资产", 100.0),
+        ("ROE", "净利润", "股东权益", 100.0),
+        ("ROE", "净利润", "权益", 100.0),
+    ]
+    RATIO_RULES = [
+        ("CFO/净利润", "经营现金流", "净利润"),
+        ("FCF/分配", "自由现金流", "分红+回购"),
+    ]
+    DAY_RULES = [
+        ("DSO", "应收", "收入", 365.0),
+        ("应收天数", "应收", "收入", 365.0),
+        ("存货天数", "存货", "营业成本", 365.0),
+        ("DIO", "存货", "营业成本", 365.0),
+        ("应付天数", "应付", "营业成本", 365.0),
+        ("DPO", "应付", "营业成本", 365.0),
+    ]
+
+    @staticmethod
+    def normalize(label):
+        import re
+        return re.sub(r"（.*?）|\(.*?\)", "", str(label)).strip()
+
+    def test_ratio_rows_recompute(self):
+        checked = 0
+        for report_path in sorted((ROOT / "examples").glob("*/research/work/report.json")):
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+            for table in report.get("tables", []):
+                columns = table.get("columns", [])
+                if not columns or columns[0] != "指标":
+                    continue
+                rows = {self.normalize(row[0]): row for row in table.get("rows", []) if row}
+                for index in range(1, len(columns)):
+                    for out_label, numerator, denominator, factor in self.PERCENT_RULES:
+                        checked += self.check(rows, out_label, numerator, denominator, factor, index,
+                                              report_path.parents[2].name, columns[index], "percent")
+                    for out_label, numerator, denominator in self.RATIO_RULES:
+                        checked += self.check(rows, out_label, numerator, denominator, 1.0, index,
+                                              report_path.parents[2].name, columns[index], "ratio")
+                    for out_label, numerator, denominator, factor in self.DAY_RULES:
+                        checked += self.check(rows, out_label, numerator, denominator, factor, index,
+                                              report_path.parents[2].name, columns[index], "days")
+        self.assertGreaterEqual(checked, 15, "expected to check ratio rows")
+
+    def check(self, rows, out_label, numerator, denominator, factor, index, name, column, kind):
+        out_row = rows.get(out_label)
+        num_row = rows.get(numerator)
+        den_row = rows.get(denominator)
+        if not (out_row and num_row and den_row):
+            return 0
+        if max(len(out_row), len(num_row), len(den_row)) <= index:
+            return 0
+        out = number(out_row[index])
+        num = number(num_row[index])
+        den = number(den_row[index])
+        if out is None or num is None or den in (None, 0):
+            return 0
+        expected = num / den * factor
+        if kind == "percent":
+            tolerance = max(0.5, abs(expected) * 0.02)
+        elif kind == "days":
+            tolerance = max(1.5, abs(expected) * 0.02)
+        else:
+            tolerance = max(0.05, abs(expected) * 0.03)
+        self.assertLessEqual(abs(expected - out), tolerance,
+                             "%s %s %s %.2f but computed %.2f" % (name, column, out_label, out, expected))
+        return 1
+
+
+if __name__ == "__main__":
+    unittest.main()
