@@ -414,6 +414,94 @@
         "C14",
         "C15"
       ]
+    },
+    {
+      "id": "C17",
+      "text": "MSFT FY2026 revenue 331839 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "text": "MSFT FY2026 gross_profit 225465 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "text": "MSFT FY2026 operating_profit 155237 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "text": "MSFT FY2026 net_income 133749 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "text": "MSFT FY2026 cfo 182935 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "text": "MSFT FY2026 capex 115948 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "text": "MSFT FY2026 depreciation_amortization 34300 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "text": "MSFT FY2026 share_based_comp 12405 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
     }
   ]
 }

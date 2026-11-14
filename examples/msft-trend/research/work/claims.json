@@ -1216,6 +1216,182 @@
         "C33",
         "C1"
       ]
+    },
+    {
+      "id": "C49",
+      "text": "MSFT FY2026 revenue 331839 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C50",
+      "text": "MSFT FY2026 gross_profit 225465 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C51",
+      "text": "MSFT FY2026 operating_profit 155237 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C52",
+      "text": "MSFT FY2026 net_income 133749 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C53",
+      "text": "MSFT FY2026 cfo 182935 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C54",
+      "text": "MSFT FY2026 capex 115948 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C55",
+      "text": "MSFT FY2026 share_based_comp 12405 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C56",
+      "text": "MSFT FY2026 receivables 80876 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C57",
+      "text": "MSFT FY2026 inventory 1397 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C58",
+      "text": "MSFT FY2026 payables 42416 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C59",
+      "text": "MSFT FY2026 total_assets 758376 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C60",
+      "text": "MSFT FY2026 equity 442387 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C61",
+      "text": "MSFT FY2026 debt 40294 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C62",
+      "text": "MSFT FY2026 cash 20935 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C63",
+      "text": "MSFT FY2026 pretax_income 165934 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C64",
+      "text": "MSFT FY2026 income_tax 32185 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
     }
   ]
 }
