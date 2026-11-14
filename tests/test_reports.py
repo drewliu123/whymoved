@@ -533,6 +533,22 @@ class QualityReportTests(unittest.TestCase):
 
 
 class EventStudyReportTests(unittest.TestCase):
+    def test_named_benchmarks_render(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        flat = [{"date": point["date"], "close": 50} for point in prices]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": {"FLAT": flat, "UP": flat}},
+                                             {"id": "E2", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": {"FLAT": flat, "UP": flat}}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_html(report, ledger, sources)
+        self.assertIn("后窗超额·FLAT", text)
+        self.assertIn("全窗超额·UP", text)
+        self.assertIn("多基准时各基准的分布", text)
+
     def test_overlap_warnings_render(self):
         report, ledger, sources = documents()
         prices = [{"date": "2024-01-%02d" % day, "close": 100 + day} for day in range(1, 31)]

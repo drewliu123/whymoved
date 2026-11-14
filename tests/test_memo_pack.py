@@ -89,6 +89,20 @@ class MemoContentTests(unittest.TestCase):
 
 
 class MemoLinkedSectionsTests(unittest.TestCase):
+    def test_named_benchmark_lines(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        flat = [{"date": point["date"], "close": 50} for point in prices]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": {"FLAT": flat, "UP": flat}},
+                                             {"id": "E2", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": {"FLAT": flat, "UP": flat}}]}
+        text = memo((report, ledger, sources))
+        self.assertIn("后窗超额·FLAT", text)
+        self.assertIn("未做 beta 调整", text)
+
     def transmission(self):
         return {"schema_version": 1, "theme": "测试传导", "as_of": "2026-10-31T12:00:00Z",
                 "nodes": [{"id": "A", "label": "需求", "kind": "demand",

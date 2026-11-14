@@ -860,6 +860,15 @@ def _blocks(report, ledger, sources):
                                  _metric_text(stats["q1"]), _metric_text(stats["q3"]),
                                  _metric_text(stats["min"]), _metric_text(stats["max"]),
                                  _metric_text(stats["positive_rate"])])
+        for name, entries in (result["summary"].get("benchmark_excess") or {}).items():
+            for key, prefix in (("post_return", "后窗超额·"), ("total_return", "全窗超额·")):
+                stats = entries.get(key)
+                if not stats:
+                    continue
+                summary_rows.append([prefix + str(name), stats["n"], _metric_text(stats["median"]),
+                                     _metric_text(stats["mean"]), _metric_text(stats["q1"]),
+                                     _metric_text(stats["q3"]), _metric_text(stats["min"]),
+                                     _metric_text(stats["max"]), _metric_text(stats["positive_rate"])])
         sample_claims = list(dict.fromkeys(cid for sample in report["event_study"].get("samples", [])
                                            if isinstance(sample, dict)
                                            for cid in sample.get("claim_ids", []) if isinstance(cid, str)))
@@ -882,7 +891,11 @@ def _blocks(report, ledger, sources):
             yield ("p", "跳过：" + "；".join("%s（%s）" % (row["id"], row["reason"]) for row in result["skipped"]))
         if result.get("warnings"):
             yield ("p", "样本警告：" + "；".join(result["warnings"]) + "。参考类统计不独立，不能当独立样本外推。")
-        if has_excess:
+        named = result["summary"].get("benchmark_excess") or {}
+        if named:
+            yield ("p", "前窗/后窗/全窗是绝对收益；超额是标的收益减基准收益（简单差，未做 beta 调整）。"
+                        "多基准时各基准的分布见「后窗超额·名称」行。样本事前选定、不给p值；参考类分布不是预测。")
+        elif has_excess:
             yield ("p", "前窗/后窗/全窗是绝对收益；后窗超额/全窗超额是标的收益减基准收益（简单差，未做 beta 调整）。样本事前选定、不给p值；参考类分布不是预测。")
         else:
             yield ("p", "绝对收益、样本事前选定、不给p值；参考类分布不是预测，也不是超额收益。")

@@ -234,11 +234,19 @@ def _event_study(report):
         lines.append("- %s：n=%d，中位 %s，为正 %s，Q1—Q3 %s—%s" % (
             label, stats["n"], _ratio(stats["median"]), _ratio(stats["positive_rate"]),
             _ratio(stats["q1"]), _ratio(stats["q3"])))
+    for name, entries in (result["summary"].get("benchmark_excess") or {}).items():
+        for key, label in (("post_return", "后窗超额·"), ("total_return", "全窗超额·")):
+            stats = entries.get(key)
+            if not stats:
+                continue
+            lines.append("- %s%s：n=%d，中位 %s，为正 %s，Q1—Q3 %s—%s" % (
+                label, name, stats["n"], _ratio(stats["median"]), _ratio(stats["positive_rate"]),
+                _ratio(stats["q1"]), _ratio(stats["q3"])))
     if result.get("skipped"):
         lines.append("- 跳过 %d 条样本（窗口不足或事件日缺失），详见完整报告。" % len(result["skipped"]))
     if result.get("warnings"):
         lines.append("- 样本警告：%s。" % "；".join(result["warnings"]))
-    if result["summary"].get("excess_total_return"):
+    if result["summary"].get("excess_total_return") or result["summary"].get("benchmark_excess"):
         lines.append("- 超额收益是标的减基准的简单差，未做 beta 调整。")
     lines.append("- 绝对收益、样本事前选定、不给 p 值；参考类分布不是预测。")
     return lines

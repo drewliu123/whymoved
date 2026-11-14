@@ -195,6 +195,44 @@ class BenchmarkTests(unittest.TestCase):
                             for error in event_study.validate_document(document)))
 
 
+class NamedBenchmarkTests(unittest.TestCase):
+    def document(self):
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        flat = [{"date": point["date"], "close": 50} for point in prices]
+        rising = [{"date": "2024-01-30", "close": 50}, {"date": "2024-01-31", "close": 50},
+                  {"date": "2024-02-01", "close": 55}]
+        return {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                "samples": [
+                    {"id": "E1", "date": "2024-01-31", "prices": prices,
+                     "benchmark_prices": {"FLAT": flat, "UP": rising}},
+                    {"id": "E2", "date": "2024-01-31",
+                     "prices": [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 90},
+                                {"date": "2024-02-01", "close": 90}],
+                     "benchmark_prices": {"FLAT": flat, "UP": rising}}]}
+
+    def test_named_benchmarks_summarised(self):
+        self.assertEqual(event_study.validate_document(self.document()), [])
+        result = event_study.analyse(self.document())
+        names = sorted(result["summary"]["benchmark_excess"])
+        self.assertEqual(names, ["FLAT", "UP"])
+        self.assertAlmostEqual(result["summary"]["benchmark_excess"]["FLAT"]["post_return"]["median"], 0.05)
+        self.assertIsNone(result["summary"]["excess_post_return"], "named benchmarks do not fill legacy keys")
+
+    def test_named_returns_only(self):
+        document = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                    "samples": [
+                        {"id": "E1", "date": "2024-01-31", "returns": {"pre": 0.1, "post": 0.1, "total": 0.21},
+                         "benchmark_returns": {"A": {"pre": 0.0, "post": 0.0, "total": 0.0},
+                                                "B": {"pre": 0.02, "post": 0.02, "total": 0.04}}},
+                        {"id": "E2", "date": "2024-03-20", "returns": {"pre": -0.1, "post": 0.0, "total": -0.1},
+                         "benchmark_returns": {"A": {"pre": 0.01, "post": -0.01, "total": 0.0},
+                                                "B": {"pre": 0.0, "post": 0.0, "total": 0.0}}}]}
+        self.assertEqual(event_study.validate_document(document), [])
+        result = event_study.analyse(document)
+        self.assertAlmostEqual(result["summary"]["benchmark_excess"]["B"]["post_return"]["median"], 0.04)
+
+
 class OverlapTests(unittest.TestCase):
     def document(self, first, second, third=None):
         series = [{"date": "2024-01-%02d" % day, "close": 100 + day} for day in range(1, 31)]
