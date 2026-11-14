@@ -176,7 +176,7 @@
     },
     {
       "id": "I-JUDGE",
-      "text": "两年维度 AMAT 收入与 LRCX 相当（+7.0% vs +5.8%），没有持续丢失份额；但经营现金流两年 −8.5%，同行 +11%–19%，现金转化才是持续背离。",
+      "text": "两年维度 AMAT 收入与 LRCX 相当（+7.0% vs +5.8%），没有持续丢失份额；CFO 两年 −8.5%，主要拖累是存货增加与合同负债下降，应收与现金周期反而改善。",
       "type": "inference",
       "as_of": "2026-11-14T00:00:00Z",
       "sources": [],
@@ -198,7 +198,13 @@
         "KLAC-REVENUE-2023",
         "AMAT-CFO-2023",
         "LRCX-CFO-2023",
-        "KLAC-CFO-2023"
+        "KLAC-CFO-2023",
+        "AMAT-INV-2024",
+        "AMAT-INV-2025",
+        "AMAT-DEFERRED-2024",
+        "AMAT-DEFERRED-2025",
+        "AMAT-AP-2024",
+        "AMAT-AP-2025"
       ]
     },
     {
@@ -352,6 +358,116 @@
       "sources": [
         {
           "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-AR-2024",
+      "text": "AMAT FY2024 期末应收账款 5,234 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-AR-2025",
+      "text": "AMAT FY2025 期末应收账款 5,185 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-INV-2024",
+      "text": "AMAT FY2024 期末存货 5,421 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-INV-2025",
+      "text": "AMAT FY2025 期末存货 5,915 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-AP-2024",
+      "text": "AMAT FY2024 期末应付账款 1,570 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-AP-2025",
+      "text": "AMAT FY2025 期末应付账款 1,978 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-DEFERRED-2024",
+      "text": "AMAT FY2024 期末合同负债 2,849 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-DEFERRED-2025",
+      "text": "AMAT FY2025 期末合同负债 2,566 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-COGS-2024",
+      "text": "AMAT FY2024 营业成本 14,279 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-COGS-2025",
+      "text": "AMAT FY2025 营业成本 14,560 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
         }
       ]
     }
