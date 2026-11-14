@@ -40,6 +40,12 @@ CFO 292\.7（FY2022）→87\.0（FY2023）→127\.4（FY2024）→117\.0（FY202
 
 为什么重要：现金创造能力也回到疫情前水平，不能靠存量现金维持利润叙事。
 
+## P/E 21\.2x 不贵，但股息率 6% 说明市场不信盈利
+
+P/E 9\.4x（2022）→77\.5x（2023 低谷）→18\.8x（2024）→18\.3x（2025）→21\.2x（当前）；股息率从 3\.1% 升到 5\.95%。 [PXH\-PFE\-22] [SHH\-PFE\-22] [DPS\-PFE\-22] [PXH\-PFE\-23] [SHH\-PFE\-23] [DPS\-PFE\-23] [PXH\-PFE\-24] [SHH\-PFE\-24] [DPS\-PFE\-24] [PXH\-PFE\-25] [SHH\-PFE\-25] [DPS\-PFE\-25] [PX\-PFE]
+
+为什么重要：低 P/E 是盈利低谷造成的；6% 股息率是市场对利润修复的怀疑，不是安全垫。
+
 ## 这意味着什么
 
 ### 收入企稳不等于利润修复
@@ -53,6 +59,10 @@ CFO 292\.7（FY2022）→87\.0（FY2023）→127\.4（FY2024）→117\.0（FY202
 ### non\-COVID 增长是唯一解
 
 收入已稳定，利润要靠新产品的增量，而不是继续砍成本。（FY2026–FY2027） [PFE\-REV\-25] [PFE\-NI\-25]
+
+### 估值给时间，但不给确定性
+
+21x 对应 12\.4% 净利率；6% 股息率说明市场在等修复，而不是确认修复。（FY2026） [PX\-PFE] [PFE\-NI\-25] [PFE\-REV\-25]
 
 ## 情景与触发条件
 
@@ -80,6 +90,14 @@ non\-COVID 产品放量，收入增速 &gt;3%、研发费用率回落。
 
 含义：利润二次探底。
 
+### 估值重估
+
+利润修复被确认，P/E 与股息率同时回落。
+
+触发：净利率 &gt;14%；收入增速 &gt;3%；股息率 &lt;5%
+
+含义：估值从怀疑转向确认。
+
 ## 分析判断
 
 收入已经企稳，利润没有回来；研发费用刚性是主因，non\-COVID 增长是唯一解。 [I\-JUDGE]
@@ -103,6 +121,20 @@ non\-COVID 产品放量，收入增速 &gt;3%、研发费用率回落。
 [PFE\-REV\-21] [PFE\-REV\-22] [PFE\-REV\-23] [PFE\-REV\-24] [PFE\-REV\-25] [PFE\-NI\-21] [PFE\-NI\-22] [PFE\-NI\-23] [PFE\-NI\-24] [PFE\-NI\-25] [PFE\-CFO\-21] [PFE\-CFO\-22] [PFE\-CFO\-23] [PFE\-CFO\-24] [PFE\-CFO\-25] [PFE\-RD\-21] [PFE\-RD\-22] [PFE\-RD\-23] [PFE\-RD\-24] [PFE\-RD\-25] [PFE\-CAPEX\-21] [PFE\-CAPEX\-22] [PFE\-CAPEX\-23] [PFE\-CAPEX\-24] [PFE\-CAPEX\-25]
 
 净利率=净利润/收入；研发费用率为不含收购 IPR&amp;D 的研发/收入；由披露值计算并四舍五入。
+
+### 辉瑞 P/E 与股息率（财年末价格 / 当年 EPS）
+
+| 财年 | 收盘价（美元/股） | EPS（美元/股） | P/E（倍） | 股息率（%） |
+| --- | --- | --- | --- | --- |
+| 2022 | 51\.24 | 5\.47 | 9\.4 | 3\.1 |
+| 2023 | 28\.79 | 0\.37 | 77\.5 | 5\.7 |
+| 2024 | 26\.53 | 1\.41 | 18\.8 | 6\.4 |
+| 2025 | 24\.9 | 1\.36 | 18\.3 | 6\.9 |
+| 当前 | 28\.89 | 1\.36 | 21\.2 | 6\.0 |
+
+[PXH\-PFE\-22] [SHH\-PFE\-22] [DPS\-PFE\-22] [PXH\-PFE\-23] [SHH\-PFE\-23] [DPS\-PFE\-23] [PXH\-PFE\-24] [SHH\-PFE\-24] [DPS\-PFE\-24] [PXH\-PFE\-25] [SHH\-PFE\-25] [DPS\-PFE\-25] [PX\-PFE]
+
+P/E=财年末收盘价/\(净利润/稀释股数\)；股息率=每股分红/收盘价；当前为 2026\-11\-13 / FY2025。
 
 ### 辉瑞收入与净利润（十亿美元）
 
@@ -131,6 +163,20 @@ non\-COVID 产品放量，收入增速 &gt;3%、研发费用率回落。
 [PFE\-REV\-21] [PFE\-REV\-22] [PFE\-REV\-23] [PFE\-REV\-24] [PFE\-REV\-25] [PFE\-NI\-21] [PFE\-NI\-22] [PFE\-NI\-23] [PFE\-NI\-24] [PFE\-NI\-25] [PFE\-RD\-21] [PFE\-RD\-22] [PFE\-RD\-23] [PFE\-RD\-24] [PFE\-RD\-25]
 
 同一单位（%）；由披露值计算。
+
+### 辉瑞 P/E：低谷造成的高倍数
+
+| 财年 | 倍（倍） |
+| --- | --- |
+| 2022 | 9\.4 |
+| 2023 | 77\.5 |
+| 2024 | 18\.8 |
+| 2025 | 18\.3 |
+| 当前 | 21\.2 |
+
+[PXH\-PFE\-22] [SHH\-PFE\-22] [PXH\-PFE\-23] [SHH\-PFE\-23] [PXH\-PFE\-24] [SHH\-PFE\-24] [PXH\-PFE\-25] [SHH\-PFE\-25] [PX\-PFE]
+
+财年末收盘价/当年 EPS；当前为 2026\-11\-13。
 
 ## 其他解释
 
@@ -290,8 +336,80 @@ FY2023 利润低点可能含重组、减值或收购 IPR&amp;D；未拆分一次
 
 依据：PFE\-REV\-25, PFE\-RD\-25, PFE\-NI\-25；来源：
 
+\[PXH\-PFE\-22\] PFE 2022\-12\-30 收盘 51\.24 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-PFE\-22
+
+\[SHH\-PFE\-22\] PFE FY2022 稀释加权股数 5\.733 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PFE
+
+\[DPS\-PFE\-22\] PFE FY2022 每股分红 1\.61 美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PFE
+
+\[PXH\-PFE\-23\] PFE 2023\-12\-29 收盘 28\.79 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-PFE\-23
+
+\[SHH\-PFE\-23\] PFE FY2023 稀释加权股数 5\.709 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PFE
+
+\[DPS\-PFE\-23\] PFE FY2023 每股分红 1\.65 美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PFE
+
+\[PXH\-PFE\-24\] PFE 2024\-12\-31 收盘 26\.53 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-PFE\-24
+
+\[SHH\-PFE\-24\] PFE FY2024 稀释加权股数 5\.7 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PFE
+
+\[DPS\-PFE\-24\] PFE FY2024 每股分红 1\.69 美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PFE
+
+\[PXH\-PFE\-25\] PFE 2025\-12\-31 收盘 24\.9 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-PFE\-25
+
+\[SHH\-PFE\-25\] PFE FY2025 稀释加权股数 5\.713 十亿股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PFE
+
+\[DPS\-PFE\-25\] PFE FY2025 每股分红 1\.72 美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PFE
+
+\[PX\-PFE\] PFE 2026\-11\-13 收盘 28\.89 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-PFE
+
 S\-PFE · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: PFIZER INC · locator：data\.sec\.gov companyfacts CIK0000078003（Pfizer），10\-K 年度值 · origin\_id：sec\-pfe · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "后疫情收入与利润", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000078003\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000078003.json)
+
+S\-PXH\-PFE\-22 · Nasdaq · T0 · published\_at：2022\-12\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2022\-12\-30 close $51\.24 · locator：Nasdaq PFE 历史收盘，取财年末 · origin\_id：nasdaq\-pfe\-2022 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E 与股息率", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "PFE", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2022\-12\-30T16:00:00\-05:00", "unit": "USD/share", "value": 51\.24\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/pfe/historical](https://www.nasdaq.com/market-activity/stocks/pfe/historical)
+
+S\-PXH\-PFE\-23 · Nasdaq · T0 · published\_at：2023\-12\-29 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2023\-12\-29 close $28\.79 · locator：Nasdaq PFE 历史收盘，取财年末 · origin\_id：nasdaq\-pfe\-2023 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E 与股息率", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "PFE", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2023\-12\-29T16:00:00\-05:00", "unit": "USD/share", "value": 28\.79\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/pfe/historical](https://www.nasdaq.com/market-activity/stocks/pfe/historical)
+
+S\-PXH\-PFE\-24 · Nasdaq · T0 · published\_at：2024\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2024\-12\-31 close $26\.53 · locator：Nasdaq PFE 历史收盘，取财年末 · origin\_id：nasdaq\-pfe\-2024 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E 与股息率", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "PFE", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2024\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 26\.53\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/pfe/historical](https://www.nasdaq.com/market-activity/stocks/pfe/historical)
+
+S\-PXH\-PFE\-25 · Nasdaq · T0 · published\_at：2025\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-12\-31 close $24\.9 · locator：Nasdaq PFE 历史收盘，取财年末 · origin\_id：nasdaq\-pfe\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E 与股息率", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "PFE", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 24\.9\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/pfe/historical](https://www.nasdaq.com/market-activity/stocks/pfe/historical)
+
+S\-PX\-PFE · Nasdaq · T0 · published\_at：2026\-11\-13 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：11/13/2026 close $28\.89 · locator：Nasdaq PFE historical quotes, 2026\-11\-01 至 2026\-11\-14 · origin\_id：nasdaq\-pfe · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "decisive", "purpose": "P/E 与股息率", "reason": "交易所收盘价", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "PFE", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2026\-11\-13T16:00:00\-05:00", "unit": "USD/share", "value": 28\.89\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/pfe/historical](https://www.nasdaq.com/market-activity/stocks/pfe/historical)
 
 来源状态：\{"sec": \{"status": "ok"\}\}

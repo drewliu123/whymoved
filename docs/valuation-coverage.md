@@ -2,7 +2,7 @@
 
 这份页面对应 2026-11-14 的示例集。它不新增数字，只把各示例的估值口径集中到一处，方便对照与审计。
 
-## 已有价格判断的示例（10 个）
+## 已有价格判断的示例（11 个）
 
 | 示例 | 估值指标 | 读数 | 口径与截点 | 回答的问题 |
 | --- | --- | --- | --- | --- |
@@ -16,6 +16,7 @@
 | [nvda-growth-quality](../examples/nvda-growth-quality/README.md) | P/E | 33.2x（四年最低） | 2026-11-13 / FY2026 EPS | 股价新高是否等于估值新高 |
 | [ai-capex-value-chain](../examples/ai-capex-value-chain/README.md) | AMAT 九年 P/E | 42.8x vs 11.1–26.9x | 财年末价格 / 当年 EPS | 设备溢价是周期高点还是结构性 |
 | [xom-capital-allocation](../examples/xom-capital-allocation/README.md) | P/E、股息率、FCF 收益率 | 24.7x、2.4%、3.3% | 2026-11-13 / FY2025 EPS 与 FCF | 分红回购超 FCF 时估值是否给了缓冲 |
+| [pfe-post-covid-reset](../examples/pfe-post-covid-reset/README.md) | P/E、股息率 | 21.2x、5.95% | 2026-11-13 / FY2025 EPS 与每股分红 | 利润没回来时估值是否已反映 |
 
 ## 刻意没有价格判断的示例
 

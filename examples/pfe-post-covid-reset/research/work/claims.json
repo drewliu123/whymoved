@@ -322,6 +322,154 @@
         "PFE-RD-25",
         "PFE-NI-25"
       ]
+    },
+    {
+      "id": "PXH-PFE-22",
+      "text": "PFE 2022-12-30 收盘 51.24 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-PFE-22"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-PFE-22",
+      "text": "PFE FY2022 稀释加权股数 5.733 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PFE"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "DPS-PFE-22",
+      "text": "PFE FY2022 每股分红 1.61 美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PFE"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-PFE-23",
+      "text": "PFE 2023-12-29 收盘 28.79 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-PFE-23"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-PFE-23",
+      "text": "PFE FY2023 稀释加权股数 5.709 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PFE"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "DPS-PFE-23",
+      "text": "PFE FY2023 每股分红 1.65 美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PFE"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-PFE-24",
+      "text": "PFE 2024-12-31 收盘 26.53 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-PFE-24"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-PFE-24",
+      "text": "PFE FY2024 稀释加权股数 5.7 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PFE"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "DPS-PFE-24",
+      "text": "PFE FY2024 每股分红 1.69 美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PFE"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-PFE-25",
+      "text": "PFE 2025-12-31 收盘 24.9 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-PFE-25"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-PFE-25",
+      "text": "PFE FY2025 稀释加权股数 5.713 十亿股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PFE"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "DPS-PFE-25",
+      "text": "PFE FY2025 每股分红 1.72 美元",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PFE"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PX-PFE",
+      "text": "PFE 2026-11-13 收盘 28.89 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-PFE"
+        }
+      ]
     }
   ]
 }

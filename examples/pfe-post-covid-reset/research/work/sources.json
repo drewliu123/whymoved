@@ -31,6 +31,171 @@
         "purpose": "后疫情收入与利润",
         "priority": "decisive"
       }
+    },
+    {
+      "id": "S-PXH-PFE-22",
+      "url": "https://www.nasdaq.com/market-activity/stocks/pfe/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2022-12-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2022-12-30 close $51.24",
+      "locator": "Nasdaq PFE 历史收盘，取财年末",
+      "origin_id": "nasdaq-pfe-2022",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2022-12-30T16:00:00-05:00",
+        "instrument": "PFE",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 51.24,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E 与股息率",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-PFE-23",
+      "url": "https://www.nasdaq.com/market-activity/stocks/pfe/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2023-12-29",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2023-12-29 close $28.79",
+      "locator": "Nasdaq PFE 历史收盘，取财年末",
+      "origin_id": "nasdaq-pfe-2023",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2023-12-29T16:00:00-05:00",
+        "instrument": "PFE",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 28.79,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E 与股息率",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-PFE-24",
+      "url": "https://www.nasdaq.com/market-activity/stocks/pfe/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2024-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2024-12-31 close $26.53",
+      "locator": "Nasdaq PFE 历史收盘，取财年末",
+      "origin_id": "nasdaq-pfe-2024",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2024-12-31T16:00:00-05:00",
+        "instrument": "PFE",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 26.53,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E 与股息率",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PXH-PFE-25",
+      "url": "https://www.nasdaq.com/market-activity/stocks/pfe/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2025-12-31",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2025-12-31 close $24.9",
+      "locator": "Nasdaq PFE 历史收盘，取财年末",
+      "origin_id": "nasdaq-pfe-2025",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2025-12-31T16:00:00-05:00",
+        "instrument": "PFE",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 24.9,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "历史 P/E 与股息率",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-PFE",
+      "url": "https://www.nasdaq.com/market-activity/stocks/pfe/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $28.89",
+      "locator": "Nasdaq PFE historical quotes, 2026-11-01 至 2026-11-14",
+      "origin_id": "nasdaq-pfe",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "PFE",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 28.89,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "P/E 与股息率",
+        "priority": "decisive"
+      }
     }
   ]
 }
