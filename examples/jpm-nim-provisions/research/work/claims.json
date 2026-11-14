@@ -1,0 +1,388 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "JPM-NII-21",
+      "text": "JPM FY2021 净利息收入 52.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NII-22",
+      "text": "JPM FY2022 净利息收入 66.7 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NII-23",
+      "text": "JPM FY2023 净利息收入 89.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NII-24",
+      "text": "JPM FY2024 净利息收入 92.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NII-25",
+      "text": "JPM FY2025 净利息收入 95.4 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-ASSETS-21",
+      "text": "JPM FY2021 总资产 3743.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-ASSETS-22",
+      "text": "JPM FY2022 总资产 3665.7 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-ASSETS-23",
+      "text": "JPM FY2023 总资产 3875.4 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-ASSETS-24",
+      "text": "JPM FY2024 总资产 4002.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-ASSETS-25",
+      "text": "JPM FY2025 总资产 4424.9 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-PROV-21",
+      "text": "JPM FY2021 贷款租赁及其他损失拨备 -9.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-PROV-22",
+      "text": "JPM FY2022 贷款租赁及其他损失拨备 6.4 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-PROV-23",
+      "text": "JPM FY2023 贷款租赁及其他损失拨备 9.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-PROV-24",
+      "text": "JPM FY2024 贷款租赁及其他损失拨备 10.7 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-PROV-25",
+      "text": "JPM FY2025 贷款租赁及其他损失拨备 14.2 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NI-21",
+      "text": "JPM FY2021 净利润 48.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NI-22",
+      "text": "JPM FY2022 净利润 37.7 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NI-23",
+      "text": "JPM FY2023 净利润 49.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NI-24",
+      "text": "JPM FY2024 净利润 58.5 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NI-25",
+      "text": "JPM FY2025 净利润 57.0 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-EQUITY-21",
+      "text": "JPM FY2021 股东权益 294.1 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-EQUITY-22",
+      "text": "JPM FY2022 股东权益 292.3 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-EQUITY-23",
+      "text": "JPM FY2023 股东权益 327.9 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-EQUITY-24",
+      "text": "JPM FY2024 股东权益 344.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-EQUITY-25",
+      "text": "JPM FY2025 股东权益 362.4 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NCO-21",
+      "text": "JPM FY2021 净核销 2.9 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NCO-22",
+      "text": "JPM FY2022 净核销 2.9 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NCO-23",
+      "text": "JPM FY2023 净核销 6.2 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NCO-24",
+      "text": "JPM FY2024 净核销 8.6 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "JPM-NCO-25",
+      "text": "JPM FY2025 净核销 9.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "摩根大通 FY2025 净利息收入 954 亿美元仍增长 3.0%，但净利息收入/总资产从 2.31% 降到 2.16%，拨备从 107 亿升到 142 亿（+32.7%）、净核销 98 亿；净利润下降 2.6%、ROE 从 17.0% 降到 15.7%，净息差红利见顶、信用成本接棒",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "JPM-NII-21",
+        "JPM-NII-22",
+        "JPM-NII-23",
+        "JPM-NII-24",
+        "JPM-NII-25",
+        "JPM-ASSETS-21",
+        "JPM-ASSETS-22",
+        "JPM-ASSETS-23",
+        "JPM-ASSETS-24",
+        "JPM-ASSETS-25",
+        "JPM-PROV-21",
+        "JPM-PROV-22",
+        "JPM-PROV-23",
+        "JPM-PROV-24",
+        "JPM-PROV-25",
+        "JPM-NI-21",
+        "JPM-NI-22",
+        "JPM-NI-23",
+        "JPM-NI-24",
+        "JPM-NI-25",
+        "JPM-EQUITY-21",
+        "JPM-EQUITY-22",
+        "JPM-EQUITY-23",
+        "JPM-EQUITY-24",
+        "JPM-EQUITY-25",
+        "JPM-NCO-21",
+        "JPM-NCO-22",
+        "JPM-NCO-23",
+        "JPM-NCO-24",
+        "JPM-NCO-25"
+      ]
+    },
+    {
+      "id": "I-WATCH",
+      "text": "若 FY2026 净利息收入/总资产跌破 2.1% 且拨备超过 150 亿美元，盈利下行会加速；当前 ROE 15.7% 仍高于资本成本区间的常态水平",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "JPM-NII-25",
+        "JPM-ASSETS-25",
+        "JPM-PROV-25",
+        "JPM-EQUITY-25"
+      ]
+    }
+  ]
+}

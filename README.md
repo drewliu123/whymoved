@@ -92,6 +92,11 @@
 - **[阅读报告](examples/nke-turnaround/research/work/report.md)**
 - **[查看案例与命令](examples/nke-turnaround/README.md)**
 
+**第十六个例子：摩根大通的净息差红利结束了吗？** FY2025 净利息收入仍增 3.0%，但 NII/总资产从 2.31% 降到 2.16%；拨备 107 亿→142 亿美元（+32.7%）、净核销 98 亿；净利润 −2.6%，ROE 从 17.0% 降到 15.7%。利差还在，盈利已经转弱。
+
+- **[阅读报告](examples/jpm-nim-provisions/research/work/report.md)**
+- **[查看案例与命令](examples/jpm-nim-provisions/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

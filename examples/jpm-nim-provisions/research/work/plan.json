@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "高利率周期后，摩根大通的净息差与拨备怎么走？",
+  "type": "asset",
+  "task": "盈利驱动拆解",
+  "entity": "JPMorgan",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断净息差红利与信用成本的方向",
+  "prior_judgment": "高利率提升银行净息差，盈利应持续增长",
+  "comparison": {
+    "period": "FY2021→FY2025",
+    "unit": "USD billion 与 %",
+    "scope": "JPMorgan 合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "净利息收入、总资产、拨备、净利润、权益、核销取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "比较净息差、拨备与盈利的变化，判断驱动从利差转向信用成本",
+    "baseline": "FY2021 的净息差与拨备",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "净利息收入",
+      "净息差",
+      "拨备",
+      "净利润"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "净息差与拨备的方向是否反向",
+        "source": "SEC XBRL 年度事实",
+        "by": "FY2026 10-K",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "净息差继续升、拨备稳定"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "净息差见顶、拨备上升"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "净息差继续扩张，盈利增长",
+      "discriminating_observation": "净息差上升、拨备稳定"
+    },
+    {
+      "id": "H2",
+      "explanation": "净息差见顶，信用成本接棒",
+      "discriminating_observation": "净息差下降、拨备上升"
+    }
+  ],
+  "queries": [
+    {
+      "question": "JPM FY2021–FY2025 净利息收入、总资产、拨备、净利润、权益、净核销",
+      "query": "SEC companyfacts: JPM",
+      "source": "SEC XBRL",
+      "purpose": "盈利驱动拆解",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

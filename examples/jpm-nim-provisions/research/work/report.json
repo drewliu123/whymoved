@@ -1,0 +1,534 @@
+{
+  "schema_version": 2,
+  "layout": "brief",
+  "title": "摩根大通：净息差红利见顶，信用成本接棒",
+  "question": "高利率周期后，摩根大通的净息差与拨备怎么走？",
+  "type": "asset",
+  "task": "盈利驱动拆解",
+  "as_of": "2026-11-14T00:00:00Z",
+  "summary": {
+    "conclusion": "FY2025 净利息收入 954 亿美元仍增 3.0%，但净利息收入/总资产从 2.31% 降到 2.16%，净息差红利见顶。",
+    "surprise": "拨备从 107 亿升到 142 亿（+32.7%）、净核销 98 亿；净利润下降 2.6%、ROE 从 17.0% 降到 15.7%。利差还在，盈利已经转弱。",
+    "next_check": "看 FY2026 净利息收入/总资产能否守住 2.1%、拨备是否超过 150 亿美元；两者同时恶化，盈利下行会加速。"
+  },
+  "answer": {
+    "text": "高利率周期后，摩根大通的净息差红利接近尾声。净利息收入 FY2022 +27.5%、FY2023 +33.9%，FY2024 +3.7%、FY2025 +3.0%；净利息收入/总资产在 FY2023–FY2024 见顶 2.31%，FY2025 降到 2.16%。同时拨备从 FY2024 的 107 亿美元升到 142 亿（+32.7%），净核销从 86 亿升到 98 亿；净利润下降 2.6%，ROE 从 17.0% 降到 15.7%。结论：利差还在增长，但盈利驱动已从净息差转向信用成本；FY2026 的关键是净息差能否守住 2.1% 与拨备是否见顶。",
+    "claim_ids": [
+      "I-JUDGE",
+      "I-WATCH",
+      "JPM-NII-25",
+      "JPM-PROV-25"
+    ]
+  },
+  "findings": [
+    {
+      "title": "净利息收入增速从 34% 降到 3%",
+      "text": "NII 667（FY2022）→893（FY2023）→926（FY2024）→954（FY2025）亿美元；增速 +27.5%、+33.9%、+3.7%、+3.0%。",
+      "claim_ids": [
+        "JPM-NII-22",
+        "JPM-NII-23",
+        "JPM-NII-24",
+        "JPM-NII-25"
+      ],
+      "why_it_matters": "净息差红利的高增阶段已结束，NII 仍在增长但斜率大幅放缓。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "高利率持续提升 NII",
+        "detail": "增速降至 3%"
+      }
+    },
+    {
+      "title": "净息差见顶：NII/总资产 2.31%→2.16%",
+      "text": "NII/总资产 FY2021 1.40%→FY2023 2.30%→FY2024 2.31%→FY2025 2.16%；总资产 4,002.8→4,424.9（+10.5%）。",
+      "claim_ids": [
+        "JPM-NII-21",
+        "JPM-ASSETS-21",
+        "JPM-NII-23",
+        "JPM-ASSETS-23",
+        "JPM-NII-24",
+        "JPM-ASSETS-24",
+        "JPM-NII-25",
+        "JPM-ASSETS-25"
+      ],
+      "why_it_matters": "资产增长 10.5% 而 NII 只增 3.0%，单位资产收益在下降；这是净息差红利的反转。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看 NII 总额",
+        "detail": "NII/总资产并置"
+      }
+    },
+    {
+      "title": "拨备 +32.7%，净核销 98 亿",
+      "text": "拨备 64（FY2022）→93→107→142 亿美元；净核销 29→62→86→98 亿美元。",
+      "claim_ids": [
+        "JPM-PROV-22",
+        "JPM-PROV-23",
+        "JPM-PROV-24",
+        "JPM-PROV-25",
+        "JPM-NCO-22",
+        "JPM-NCO-23",
+        "JPM-NCO-24",
+        "JPM-NCO-25"
+      ],
+      "why_it_matters": "信用成本接棒净息差，成为盈利的下一个拖累；拨备增速远高于 NII。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看净利润",
+        "detail": "拨备与核销上升"
+      }
+    },
+    {
+      "title": "净利润 −2.6%，ROE 从 17.0% 降到 15.7%",
+      "text": "净利润 585→570 亿美元；权益 3,448→3,624 亿美元；ROE 17.0%→15.7%。",
+      "claim_ids": [
+        "JPM-NI-24",
+        "JPM-NI-25",
+        "JPM-EQUITY-24",
+        "JPM-EQUITY-25"
+      ],
+      "why_it_matters": "盈利仍高，但方向转弱；ROE 15.7% 仍健康，问题是趋势。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "NII 增长带动盈利",
+        "detail": "净利润下降"
+      }
+    }
+  ],
+  "implications": [
+    {
+      "title": "看 NII/总资产与拨备两项",
+      "text": "NII/总资产跌破 2.1%、拨备超过 150 亿美元，是盈利加速下行的信号；只看 NII 总额会漏掉。",
+      "claim_ids": [
+        "JPM-NII-25",
+        "JPM-ASSETS-25",
+        "JPM-PROV-25"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "信用成本是下一个驱动",
+      "text": "拨备 +32.7%、核销 98 亿；若核销继续升，拨备会压缩利润，净息差已无法对冲。",
+      "claim_ids": [
+        "JPM-PROV-25",
+        "JPM-NCO-25",
+        "JPM-NI-25"
+      ],
+      "horizon": "未来 4–6 个季度"
+    },
+    {
+      "title": "ROE 15.7% 仍健康",
+      "text": "盈利方向转弱，但 ROE 仍高于常态；不是危机，是周期从利差转向信用成本。",
+      "claim_ids": [
+        "JPM-NI-25",
+        "JPM-EQUITY-25",
+        "I-WATCH"
+      ],
+      "horizon": "FY2026"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "净息差企稳",
+      "thesis": "NII/总资产守住 2.1%，拨备见顶。",
+      "triggers": [
+        "NII/总资产 >2.1%",
+        "拨备 <150",
+        "净核销 <100"
+      ],
+      "implication": "盈利维持，ROE 15% 以上。"
+    },
+    {
+      "name": "信用成本上行",
+      "thesis": "拨备超过 150 亿、核销继续升。",
+      "triggers": [
+        "拨备 >150",
+        "净核销 >110",
+        "NII/总资产 <2.1%"
+      ],
+      "implication": "盈利下行加速，ROE 向 14% 靠。"
+    },
+    {
+      "name": "降息压缩利差",
+      "thesis": "降息导致 NII 收缩，拨备同时上升。",
+      "triggers": [
+        "NII 同比 <0",
+        "NII/总资产 <2.0%",
+        "拨备 >150"
+      ],
+      "implication": "利差与信用成本双杀。"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "拨备是主动计提",
+      "text": "拨备上升可能是主动、前瞻的计提，而非资产质量恶化；需要看逾期与不良生成率。",
+      "claim_ids": [
+        "I-JUDGE",
+        "JPM-PROV-25"
+      ]
+    }
+  ],
+  "watch": [
+    {
+      "signal": "FY2026 NII/总资产与拨备",
+      "meaning": "决定盈利方向",
+      "claim_ids": [
+        "JPM-NII-25",
+        "JPM-PROV-25"
+      ],
+      "due": "2027-01-15",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "净利息收入/总资产是净息差的近似，不是银行披露的 NIM；未做资产结构（贷款/证券）拆分。",
+      "material": true,
+      "claim_ids": [
+        "JPM-NII-25",
+        "JPM-ASSETS-25"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "摩根大通 FY2021–FY2025：净息差、拨备与盈利",
+      "columns": [
+        "指标",
+        "FY2021",
+        "FY2022",
+        "FY2023",
+        "FY2024",
+        "FY2025"
+      ],
+      "units": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "净利息收入（十亿美元）",
+          52.3,
+          66.7,
+          89.3,
+          92.6,
+          95.4
+        ],
+        [
+          "NII 增速",
+          "—",
+          27.5,
+          33.9,
+          3.7,
+          3.0
+        ],
+        [
+          "NII/总资产",
+          1.4,
+          1.82,
+          2.3,
+          2.31,
+          2.16
+        ],
+        [
+          "拨备（十亿美元）",
+          -9.3,
+          6.4,
+          9.3,
+          10.7,
+          14.2
+        ],
+        [
+          "净核销（十亿美元）",
+          2.9,
+          2.9,
+          6.2,
+          8.6,
+          9.8
+        ],
+        [
+          "净利润（十亿美元）",
+          48.3,
+          37.7,
+          49.6,
+          58.5,
+          57.0
+        ],
+        [
+          "ROE",
+          16.4,
+          12.9,
+          15.1,
+          17.0,
+          15.7
+        ]
+      ],
+      "claim_ids": [
+        "JPM-NII-21",
+        "JPM-NII-22",
+        "JPM-NII-23",
+        "JPM-NII-24",
+        "JPM-NII-25",
+        "JPM-ASSETS-21",
+        "JPM-ASSETS-22",
+        "JPM-ASSETS-23",
+        "JPM-ASSETS-24",
+        "JPM-ASSETS-25",
+        "JPM-PROV-21",
+        "JPM-PROV-22",
+        "JPM-PROV-23",
+        "JPM-PROV-24",
+        "JPM-PROV-25",
+        "JPM-NI-21",
+        "JPM-NI-22",
+        "JPM-NI-23",
+        "JPM-NI-24",
+        "JPM-NI-25",
+        "JPM-EQUITY-21",
+        "JPM-EQUITY-22",
+        "JPM-EQUITY-23",
+        "JPM-EQUITY-24",
+        "JPM-EQUITY-25",
+        "JPM-NCO-21",
+        "JPM-NCO-22",
+        "JPM-NCO-23",
+        "JPM-NCO-24",
+        "JPM-NCO-25"
+      ],
+      "note": "NII/总资产=净利息收入/期末总资产，是净息差的近似；ROE=净利润/期末股东权益；由披露值计算并四舍五入。"
+    }
+  ],
+  "charts": [
+    {
+      "kind": "line",
+      "title": "净利息收入与拨备（十亿美元）",
+      "x_label": "财年",
+      "y_label": "十亿美元",
+      "unit": "十亿美元",
+      "series": [
+        {
+          "name": "净利息收入",
+          "rows": [
+            {
+              "label": "FY2021",
+              "value": 52.3
+            },
+            {
+              "label": "FY2022",
+              "value": 66.7
+            },
+            {
+              "label": "FY2023",
+              "value": 89.3
+            },
+            {
+              "label": "FY2024",
+              "value": 92.6
+            },
+            {
+              "label": "FY2025",
+              "value": 95.4
+            }
+          ]
+        },
+        {
+          "name": "拨备",
+          "rows": [
+            {
+              "label": "FY2021",
+              "value": -9.3
+            },
+            {
+              "label": "FY2022",
+              "value": 6.4
+            },
+            {
+              "label": "FY2023",
+              "value": 9.3
+            },
+            {
+              "label": "FY2024",
+              "value": 10.7
+            },
+            {
+              "label": "FY2025",
+              "value": 14.2
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "JPM-NII-21",
+        "JPM-NII-22",
+        "JPM-NII-23",
+        "JPM-NII-24",
+        "JPM-NII-25",
+        "JPM-PROV-21",
+        "JPM-PROV-22",
+        "JPM-PROV-23",
+        "JPM-PROV-24",
+        "JPM-PROV-25"
+      ],
+      "note": "同一单位；由披露值绘制。"
+    },
+    {
+      "kind": "line",
+      "title": "NII/总资产见顶，ROE 回落",
+      "x_label": "财年",
+      "y_label": "%",
+      "unit": "%",
+      "series": [
+        {
+          "name": "NII/总资产",
+          "rows": [
+            {
+              "label": "FY2021",
+              "value": 1.4
+            },
+            {
+              "label": "FY2022",
+              "value": 1.82
+            },
+            {
+              "label": "FY2023",
+              "value": 2.3
+            },
+            {
+              "label": "FY2024",
+              "value": 2.31
+            },
+            {
+              "label": "FY2025",
+              "value": 2.16
+            }
+          ]
+        },
+        {
+          "name": "ROE",
+          "rows": [
+            {
+              "label": "FY2021",
+              "value": 16.4
+            },
+            {
+              "label": "FY2022",
+              "value": 12.9
+            },
+            {
+              "label": "FY2023",
+              "value": 15.1
+            },
+            {
+              "label": "FY2024",
+              "value": 17.0
+            },
+            {
+              "label": "FY2025",
+              "value": 15.7
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "JPM-NII-21",
+        "JPM-NII-22",
+        "JPM-NII-23",
+        "JPM-NII-24",
+        "JPM-NII-25",
+        "JPM-ASSETS-21",
+        "JPM-ASSETS-22",
+        "JPM-ASSETS-23",
+        "JPM-ASSETS-24",
+        "JPM-ASSETS-25",
+        "JPM-NI-21",
+        "JPM-NI-22",
+        "JPM-NI-23",
+        "JPM-NI-24",
+        "JPM-NI-25",
+        "JPM-EQUITY-21",
+        "JPM-EQUITY-22",
+        "JPM-EQUITY-23",
+        "JPM-EQUITY-24",
+        "JPM-EQUITY-25"
+      ],
+      "note": "同一单位（%）；由披露值计算。"
+    }
+  ],
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2021 的净息差与拨备",
+    "baseline_claim_ids": [
+      "JPM-NII-21",
+      "JPM-ASSETS-21"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "净利息收入",
+      "净息差",
+      "拨备",
+      "净利润"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "净息差继续扩张，盈利增长"
+      },
+      {
+        "id": "H2",
+        "explanation": "净息差见顶，信用成本接棒"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "净息差上升、拨备稳定"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "净息差下降、拨备上升"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "I-JUDGE",
+          "JPM-NII-25",
+          "JPM-ASSETS-25",
+          "JPM-PROV-25"
+        ],
+        "interpretation": "NII/总资产下降、拨备上升、净利润下降，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "FY2026 NII/总资产与拨备",
+        "by": "2027-01-15",
+        "supports_if": "NII/总资产继续降、拨备继续升",
+        "weakens_if": "NII/总资产企稳、拨备见顶"
+      }
+    ],
+    "conclusion": "净息差红利见顶，信用成本接棒；盈利方向转弱，但 ROE 仍健康。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "盈利驱动拆解，不需要固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题不判断当前价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}
