@@ -1,85 +1,72 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FOMC 不是方向事件：会后正收益在基准与 beta 下消失</title><style>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FOMC 事件研究：样本扩到 16 次，基准调整后效应趋零</title><style>
 :root{color-scheme:light;--page:#fff;--ink:#000;--sub:#52514e;--rule:#deded9;--accent:#225eaa;--plot:#fcfcfb;--series:#2a78d6;--grid:#e1e0d9}
 :root[data-theme=dark]{color-scheme:dark;--page:#141414;--ink:#f0efec;--sub:#c3c2b7;--rule:#444;--accent:#8ab9ef;--plot:#1a1a19;--series:#3987e5;--grid:#2c2c2a}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--page:#141414;--ink:#f0efec;--sub:#c3c2b7;--rule:#444;--accent:#8ab9ef;--plot:#1a1a19;--series:#3987e5;--grid:#2c2c2a}}
 *{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:17px/1.85 'PingFang SC',system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:850px;padding:34px 28px 80px;margin:auto}header{padding:14px 5vw;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;gap:16px}button{font:inherit;color:inherit;background:transparent;border:1px solid var(--rule);padding:6px 12px;border-radius:5px;cursor:pointer}a{color:var(--accent);text-underline-offset:4px}h1{font-size:clamp(28px,4vw,42px);line-height:1.35;letter-spacing:-.025em}h2{font-size:23px;margin-top:36px;line-height:1.5}h3{font-size:19px}p{white-space:pre-wrap}a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.refs{font-size:13px;margin-left:8px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}caption{text-align:left;font-weight:650;padding:14px 0}th,td{padding:12px;text-align:left;vertical-align:top;border-top:1px solid var(--rule);white-space:pre-wrap}details{margin:32px 0;border-top:1px solid var(--rule);padding-top:20px}summary{cursor:pointer;font-weight:650}.source,.claim{font-size:14px;padding:12px 0;border-bottom:1px solid var(--rule)}.chart{background:var(--plot);padding:14px}.chart svg{width:100%;height:auto;display:block}.chart text{fill:var(--sub);font:12px system-ui,sans-serif}.line{stroke:var(--series);stroke-width:2;fill:none;stroke-linejoin:round}.dot{fill:var(--series);stroke:var(--plot);stroke-width:2}.grid{stroke:var(--grid)}.skip{position:absolute;left:-10000px}.skip:focus{left:20px;top:10px;background:var(--page)}@media(max-width:600px){main{padding:18px 6vw 60px}body{font-size:16px}th,td{min-width:100px;padding:10px 6px}header{font-size:14px}}@media print{header,.skip{display:none}main{max-width:none;padding:0}body{color:#000;background:#fff}details>*{display:block}.chart{break-inside:avoid}}
-</style></head><body><a class="skip" href="#content">跳到研究正文</a><header><span>投研助手</span><span><button id="theme" type="button">切换明暗</button> <button id="print" type="button">打印</button></span></header><main id="content" tabindex="-1"><h1>FOMC 不是方向事件：会后正收益在基准与 beta 下消失</h1>
+</style></head><body><a class="skip" href="#content">跳到研究正文</a><header><span>投研助手</span><span><button id="theme" type="button">切换明暗</button> <button id="print" type="button">打印</button></span></header><main id="content" tabindex="-1"><h1>FOMC 事件研究：样本扩到 16 次，基准调整后效应趋零</h1>
 <p>FOMC 决议日后 3 个交易日，标普 500 有稳定方向吗？</p>
 <p>研究截点 2026-11-14T00:00:00Z · asset · 参考类事件研究</p>
 <h2>执行摘要</h2>
-<p>结论：FOMC 决议日后标普方向不稳定，不能当方向事件交易。</p>
-<p>最反直觉：绝对收益中位 +1.35%，相对纳斯达克超额 −0.33%、beta 调整后接近零——正收益主要是市场 beta。</p>
-<p>接下来验证：用 2025 年样本复验，并事先固定基准与 beta。</p>
+<p>结论：2024 与 2025 各 8 次 FOMC：绝对后窗中位 +1.35% 与 +0.45%，合并 16 次 +1.19%（62.5% 为正）。</p>
+<p>最反直觉：基准超额在 2025 年接近零（纳斯达克 −0.10%、道指 +0.09%）；2024 年的 −0.33%/+0.37% 没有复现，效应依赖年份。</p>
+<p>接下来验证：继续扩到 2026 样本；若 16 次合并超额仍接近零，应把 FOMC 从方向框架中移除，只保留波动管理。</p>
 <h2>判断</h2>
-<p>2024 年 8 次 FOMC 后窗 6/8 为正、中位 +1.35%，但 7 月 31 日单次 −6.1% 把均值压到 +0.5% 以下；相对纳斯达克超额中位 −0.33%（为正仅 25%），beta 调整后接近零，beta 在 0.5–0.9 之间符号翻转。结论：FOMC 不是方向事件，绝对收益主要来自市场 beta；样本只有 8 次、同一政策周期，不能外推。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D8">[D8]</a></span></p>
-<h2>6/8 为正，但尾部很重</h2>
-<p>8 次样本中 6 次事件后为正；7 月 31 日事件后 3 个观测点下跌约 6.1%，把均值压到接近零。<span class="refs"><a href="#claim-C13">[C13]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C21">[C21]</a></span></p>
-<p>为什么重要：只看正样本占比会忽略单次尾部，而尾部正是仓位与风险管理的核心。</p>
-<h2>绝对收益为正，但相对纳斯达克是负超额</h2>
-<p>后窗绝对收益中位 +1.35%；相对纳斯达克为 −0.33%，相对道指为 +0.37%，基准不同结论不同。<span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-B2">[B2]</a> <a href="#claim-B3">[B3]</a> <a href="#claim-B4">[B4]</a> <a href="#claim-B5">[B5]</a> <a href="#claim-B6">[B6]</a> <a href="#claim-B7">[B7]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D2">[D2]</a> <a href="#claim-D3">[D3]</a> <a href="#claim-D4">[D4]</a> <a href="#claim-D5">[D5]</a> <a href="#claim-D6">[D6]</a> <a href="#claim-D7">[D7]</a> <a href="#claim-D8">[D8]</a></span></p>
-<p>为什么重要：绝对收益可能是市场整体上涨；加基准后仍要先问「对哪个基准」。</p>
-<h2>样本太小，且在同一政策周期</h2>
-<p>8 次会议不足以形成稳定分布，也无法覆盖不同利率环境。<span class="refs"><a href="#claim-C25">[C25]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
-<p>为什么重要：参考类的价值取决于样本广度；同一周期的事件不能外推到所有环境。</p>
-<h2>结论对基准与 beta 都敏感</h2>
-<p>简单超额：纳斯达克 −0.33%（25% 为正）、道指 +0.37%（75%）；按 beta 调整后：纳斯达克约 +0.05%（75%）、道指约 +0.45%（75%）。方向与幅度随基准和 beta 变化。<span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D8">[D8]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
-<p>为什么重要：只报一种口径，等于把基准与 beta 选择藏在结论里；三种口径并列才能说明「效应不稳定」。</p>
-<h2>beta 敏感性：纳斯达克超额跨零</h2>
-<p>beta 0.5 / 0.673 / 0.9 对应纳斯达克后窗超额中位 +0.42% / +0.05% / −0.24%；道指在 0.7–1.1 之间为 +0.76% / +0.45% / +0.33%，始终为正。<span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D8">[D8]</a></span></p>
-<p>为什么重要：beta 是估计值，不是常数；只报一个 beta 的点估计，会把「符号翻转」藏起来。</p>
+<p>2024 与 2025 各 8 次 FOMC：绝对后窗中位 +1.35% 与 +0.45%，合并 +1.19%（62.5% 为正）；但基准超额在 2025 年接近零（纳斯达克 −0.10%、道指 +0.09%），2024 年的负/正超额没有复现。beta 调整后合并纳斯达克 +0.05%、道指 +0.31%。结论：绝对收益有正偏，但基准调整后效应不稳定，样本扩展后趋零；FOMC 不是可靠的方向事件。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-N25-08-EVENT">[N25-08-EVENT]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a></span></p>
+<h2>2025 绝对收益低于 2024</h2>
+<p>后窗绝对中位 +1.35%（2024）→+0.45%（2025）；为正比例 75%→50%。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-N25-08-EVENT">[N25-08-EVENT]</a></span></p>
+<p>为什么重要：同一事件在另一年没有复现同样的正偏；单年样本会高估效应。</p>
+<h2>2025 基准超额接近零</h2>
+<p>纳斯达克简单超额中位 −0.10%（25% 为正）、道指 +0.09%；2024 年为 −0.33%/+0.37%。<span class="refs"><a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<p>为什么重要：基准调整后的方向不稳定，2024 的结论不能外推到 2025。</p>
+<h2>合并 16 次：绝对正偏、超额趋零</h2>
+<p>绝对中位 +1.19%、62.5% 为正；纳斯达克简单超额约 0.00%、道指 +0.24%；beta 调整后 +0.05%/+0.31%。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a></span></p>
+<p>为什么重要：样本翻倍后效应被拉回零，支持「无稳定事件效应」。</p>
+<h2>beta 敏感性收窄</h2>
+<p>16 次样本：纳斯达克 beta 0.5/0.9 对应 +0.11%/+0.02%；道指 0.7/1.1 对应 +0.38%/+0.25%。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a></span></p>
+<p>为什么重要：样本扩大后，beta 选择不再让符号翻转，但效应本身接近零。</p>
 <h2>这意味着什么</h2>
-<h3>把 FOMC 当方向事件交易，样本不支持</h3>
-<p>8 次样本里 6 次为正，但一次约 −6% 的尾部就把均值压到接近零；方向不稳定，事件更适合做风险管理与波动预算，而不是方向下注。（下一次 FOMC）<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
-<h3>会后的正收益更像市场 beta，而不是事件 alpha</h3>
-<p>绝对收益中位 +1.35%，相对纳斯达克简单超额 −0.33%，beta 调整后接近零；风格与基准暴露比「会后上涨」这个叙事更能解释结果。（2025 年样本）<span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D8">[D8]</a></span></p>
-<h3>可执行的输出是条件分布，不是点位</h3>
-<p>分布能给出仓位与止损的参考区间：多数样本落在 −1.5% 到 +3.2%，尾部到 −6%。把它当概率或目标价都会误用。（事件窗口 −3/+3）<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<h3>FOMC 不适合做方向交易</h3>
+<p>合并 16 次、基准调整后超额接近零；方向不稳定，事件更适合波动与风险管理。（2026 样本）<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<h3>单年 8 次样本会误导</h3>
+<p>2024 的 −0.33%/+0.37% 在 2025 变成 −0.10%/+0.09%；至少 16 次再谈方向。（2026）<span class="refs"><a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a></span></p>
+<h3>继续扩样本比继续调 beta 更有用</h3>
+<p>beta 敏感性已收窄；下一步是 2026 事件，而不是再换基准。（2026）<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
 <h2>情景与触发条件</h2>
 <h3>方向事件</h3>
-<p>FOMC 后存在可交易的方向性漂移，且在多个基准上同向。</p>
-<p>触发：样本数 ≥ 12 次；后窗超额中位 &gt; +0.5%；两个基准方向一致且为正比例 ≥ 60%</p>
-<p>含义：事件可纳入方向框架；否则只做波动与风险管理。</p>
+<p>16 次以上样本、两个基准超额同向且 &gt;0.5%。</p>
+<p>触发：样本 ≥16；两基准后窗超额中位 &gt;0.5%；为正比例 ≥60%</p>
+<p>含义：可纳入方向框架。</p>
 <h3>波动事件</h3>
-<p>事件主要放大波动，不提供稳定方向。</p>
-<p>触发：绝对收益中位绝对值 &gt; 1.5%；超额中位在 ±0.5% 内；两个基准方向不一致</p>
-<p>含义：用事件窗口做仓位与止损管理，不用来下方向。</p>
+<p>绝对收益有波动、超额接近零。</p>
+<p>触发：绝对收益中位绝对值 &gt;1%；超额中位在 ±0.5% 内</p>
+<p>含义：只做波动与风险管理。</p>
 <h3>尾部风险</h3>
-<p>单次事件的尾部损失足以改变组合结果。</p>
-<p>触发：单次后窗跌幅 &gt; 5%；类似幅度事件 ≥ 2 次；尾部事件集中在同一政策周期</p>
-<p>含义：事件前后降低杠杆或对冲，而不是持有穿越。</p>
+<p>单次后窗跌幅 &gt;5% 仍会出现。</p>
+<p>触发：单次跌幅 &gt;5%；类似事件 ≥2 次</p>
+<p>含义：事件前后降杠杆或对冲。</p>
 <h2>分析判断</h2>
 <p>样本内多数为正，但尾部、漂移与样本量使「FOMC 后偏涨」不能作为方向依据。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
 <p>传导关系：FOMC 声明 → 利率路径预期 → 风险溢价 → 指数收益</p>
 <p>模型不适用：参考类事件研究，不适用固定估值模型</p>
-<div class="table-wrap"><table><caption>事件窗口后收益</caption><thead><tr><th scope="col">FOMC 日期</th><th scope="col">前窗起点（指数点）</th><th scope="col">事件日（指数点）</th><th scope="col">后窗终点（指数点）</th></tr></thead><tbody>
-<tr><td>2024-01-31</td><td>4890.97</td><td>4845.65</td><td>4942.81</td></tr>
-<tr><td>2024-03-20</td><td>5117.09</td><td>5224.62</td><td>5218.19</td></tr>
-<tr><td>2024-05-01</td><td>5099.96</td><td>5018.39</td><td>5180.74</td></tr>
-<tr><td>2024-06-12</td><td>5346.99</td><td>5421.03</td><td>5473.23</td></tr>
-<tr><td>2024-07-31</td><td>5459.1</td><td>5522.3</td><td>5186.33</td></tr>
-<tr><td>2024-09-18</td><td>5626.02</td><td>5618.26</td><td>5718.57</td></tr>
-<tr><td>2024-11-07</td><td>5712.69</td><td>5973.1</td><td>5983.99</td></tr>
-<tr><td>2024-12-18</td><td>6051.09</td><td>5872.16</td><td>5974.07</td></tr>
-</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C24">[C24]</a></span><p></p></div>
-<div class="table-wrap"><table><caption>beta 敏感性（后窗超额中位）</caption><thead><tr><th scope="col">基准</th><th scope="col">beta</th><th scope="col">后窗超额中位（%）</th><th scope="col">为正比例（%）</th><th scope="col">全窗超额中位（%）</th></tr></thead><tbody>
-<tr><td>NASDAQCOM</td><td>0.5</td><td>0.42</td><td>75.0</td><td>0.43</td></tr>
-<tr><td>NASDAQCOM</td><td>0.673</td><td>0.05</td><td>75.0</td><td>0.02</td></tr>
-<tr><td>NASDAQCOM</td><td>0.9</td><td>-0.24</td><td>37.5</td><td>-0.44</td></tr>
-<tr><td>DJIA</td><td>0.7</td><td>0.76</td><td>75.0</td><td>0.51</td></tr>
-<tr><td>DJIA</td><td>0.912</td><td>0.45</td><td>75.0</td><td>0.27</td></tr>
-<tr><td>DJIA</td><td>1.1</td><td>0.33</td><td>75.0</td><td>0.19</td></tr>
-</tbody></table><span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D8">[D8]</a></span><p></p></div>
-<section class="chart"><h2>8 次 FOMC 后窗收益：绝对为正，但多数跑输纳斯达克</h2><svg viewBox="0 0 720 250" role="group" aria-label="8 次 FOMC 后窗收益：绝对为正，但多数跑输纳斯达克（分组柱状）"><line class="grid" x1="60" x2="680" y1="190.0" y2="190.0"/><text x="2" y="185.0">-6.08</text><line class="grid" x1="60" x2="680" y1="92.14592274678112" y2="92.14592274678112"/><text x="2" y="87.14592274678112">0</text><line class="grid" x1="60" x2="680" y1="40.0" y2="40.0"/><text x="2" y="35.0">3.24</text><rect x="72.917" y="59.796" width="23.250" height="32.350" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="后窗绝对收益 · 01-31 2.01 %" aria-describedby="chart-readout"><title>后窗绝对收益 · 01-31 2.01 %</title></rect><rect x="150.417" y="92.146" width="23.250" height="1.931" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="后窗绝对收益 · 03-20 -0.12 %" aria-describedby="chart-readout"><title>后窗绝对收益 · 03-20 -0.12 %</title></rect><rect x="227.917" y="40.000" width="23.250" height="52.146" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="后窗绝对收益 · 05-01 3.24 %" aria-describedby="chart-readout"><title>后窗绝对收益 · 05-01 3.24 %</title></rect><rect x="305.417" y="76.695" width="23.250" height="15.451" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="后窗绝对收益 · 06-12 0.96 %" aria-describedby="chart-readout"><title>后窗绝对收益 · 06-12 0.96 %</title></rect><rect x="382.917" y="92.146" width="23.250" height="97.854" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="后窗绝对收益 · 07-31 -6.08 %" aria-describedby="chart-readout"><title>后窗绝对收益 · 07-31 -6.08 %</title></rect><rect x="460.417" y="63.337" width="23.250" height="28.809" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="后窗绝对收益 · 09-18 1.79 %" aria-describedby="chart-readout"><title>后窗绝对收益 · 09-18 1.79 %</title></rect><rect x="537.917" y="89.249" width="23.250" height="2.897" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="后窗绝对收益 · 11-07 0.18 %" aria-describedby="chart-readout"><title>后窗绝对收益 · 11-07 0.18 %</title></rect><rect x="615.417" y="64.142" width="23.250" height="28.004" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="后窗绝对收益 · 12-18 1.74 %" aria-describedby="chart-readout"><title>后窗绝对收益 · 12-18 1.74 %</title></rect><rect x="98.750" y="92.146" width="23.250" height="13.680" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="相对 NASDAQCOM 超额（β=1） · 01-31 -0.85 %" aria-describedby="chart-readout"><title>相对 NASDAQCOM 超额（β=1） · 01-31 -0.85 %</title></rect><rect x="176.250" y="92.146" width="23.250" height="3.541" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="相对 NASDAQCOM 超额（β=1） · 03-20 -0.22 %" aria-describedby="chart-readout"><title>相对 NASDAQCOM 超额（β=1） · 03-20 -0.22 %</title></rect><rect x="253.750" y="92.146" width="23.250" height="24.624" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="相对 NASDAQCOM 超额（β=1） · 05-01 -1.53 %" aria-describedby="chart-readout"><title>相对 NASDAQCOM 超额（β=1） · 05-01 -1.53 %</title></rect><rect x="331.250" y="92.146" width="23.250" height="7.242" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="相对 NASDAQCOM 超额（β=1） · 06-12 -0.45 %" aria-describedby="chart-readout"><title>相对 NASDAQCOM 超额（β=1） · 06-12 -0.45 %</title></rect><rect x="408.750" y="62.049" width="23.250" height="30.097" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="相对 NASDAQCOM 超额（β=1） · 07-31 1.87 %" aria-describedby="chart-readout"><title>相对 NASDAQCOM 超额（β=1） · 07-31 1.87 %</title></rect><rect x="486.250" y="92.146" width="23.250" height="8.047" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="相对 NASDAQCOM 超额（β=1） · 09-18 -0.5 %" aria-describedby="chart-readout"><title>相对 NASDAQCOM 超额（β=1） · 09-18 -0.5 %</title></rect><rect x="563.750" y="90.215" width="23.250" height="1.931" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="相对 NASDAQCOM 超额（β=1） · 11-07 0.12 %" aria-describedby="chart-readout"><title>相对 NASDAQCOM 超额（β=1） · 11-07 0.12 %</title></rect><rect x="641.250" y="92.146" width="23.250" height="2.897" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="相对 NASDAQCOM 超额（β=1） · 12-18 -0.18 %" aria-describedby="chart-readout"><title>相对 NASDAQCOM 超额（β=1） · 12-18 -0.18 %</title></rect><text x="60" y="220">01-31</text><text x="680" y="220" text-anchor="end">12-18</text></svg><p style="font-size:13px">系列顺序（同组从左到右，色调由深到浅）：后窗绝对收益、相对 NASDAQCOM 超额（β=1）。精确数值见下方同源数据表。</p><p id="chart-readout" role="tooltip" aria-live="polite">2024 年决议日 · %（%）</p></section>
-<div class="table-wrap"><table><caption>8 次 FOMC 后窗收益：绝对为正，但多数跑输纳斯达克</caption><thead><tr><th scope="col">2024 年决议日</th><th scope="col">后窗绝对收益（%）</th><th scope="col">相对 NASDAQCOM 超额（β=1）（%）</th></tr></thead><tbody>
-<tr><td>01-31</td><td>2.01</td><td>-0.85</td></tr>
-<tr><td>03-20</td><td>-0.12</td><td>-0.22</td></tr>
-<tr><td>05-01</td><td>3.24</td><td>-1.53</td></tr>
-<tr><td>06-12</td><td>0.96</td><td>-0.45</td></tr>
-<tr><td>07-31</td><td>-6.08</td><td>1.87</td></tr>
-<tr><td>09-18</td><td>1.79</td><td>-0.5</td></tr>
-<tr><td>11-07</td><td>0.18</td><td>0.12</td></tr>
-<tr><td>12-18</td><td>1.74</td><td>-0.18</td></tr>
-</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-B2">[B2]</a> <a href="#claim-B3">[B3]</a> <a href="#claim-B4">[B4]</a> <a href="#claim-B5">[B5]</a> <a href="#claim-B6">[B6]</a> <a href="#claim-B7">[B7]</a> <a href="#claim-B8">[B8]</a></span><p>后窗=事件日到后 3 个观测点；超额=标的收益−纳斯达克收益（β=1，未做 beta 调整）；数值由冻结价格序列计算并四舍五入到 0.01%。</p></div>
+<div class="table-wrap"><table><caption>分年对比（后窗）</caption><thead><tr><th scope="col">年份</th><th scope="col">n</th><th scope="col">绝对中位（%）</th><th scope="col">绝对为正（%）</th><th scope="col">纳斯达克简单超额（%）</th><th scope="col">道指简单超额（%）</th></tr></thead><tbody>
+<tr><td>2024</td><td>8</td><td>1.35</td><td>75.0</td><td>-0.33</td><td>0.37</td></tr>
+<tr><td>2025</td><td>8</td><td>0.45</td><td>50.0</td><td>-0.1</td><td>0.09</td></tr>
+<tr><td>合并</td><td>16</td><td>1.19</td><td>62.5</td><td>0.0</td><td>0.24</td></tr>
+</tbody></table><span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a></span><p>后窗=事件日到后 3 个观测点；由冻结价格序列计算并四舍五入。</p></div>
+<div class="table-wrap"><table><caption>beta 敏感性（16 次样本，后窗超额中位）</caption><thead><tr><th scope="col">基准</th><th scope="col">beta</th><th scope="col">后窗超额中位（%）</th><th scope="col">为正比例（%）</th></tr></thead><tbody>
+<tr><td>NASDAQCOM</td><td>0.5</td><td>0.11</td><td>68.8</td></tr>
+<tr><td>NASDAQCOM</td><td>0.673</td><td>0.05</td><td>62.5</td></tr>
+<tr><td>NASDAQCOM</td><td>0.9</td><td>0.02</td><td>56.3</td></tr>
+<tr><td>DJIA</td><td>0.7</td><td>0.38</td><td>62.5</td></tr>
+<tr><td>DJIA</td><td>0.912</td><td>0.31</td><td>68.8</td></tr>
+<tr><td>DJIA</td><td>1.1</td><td>0.25</td><td>68.8</td></tr>
+</tbody></table><span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a></span><p>公司 beta 用 2024 日收益估计；由冻结价格序列计算。</p></div>
+<section class="chart"><h2>2024 vs 2025：绝对收益与基准超额（后窗中位）</h2><svg viewBox="0 0 720 250" role="group" aria-label="2024 vs 2025：绝对收益与基准超额（后窗中位）（分组柱状）"><line class="grid" x1="60" x2="680" y1="190.0" y2="190.0"/><text x="2" y="185.0">-0.33</text><line class="grid" x1="60" x2="680" y1="160.53571428571428" y2="160.53571428571428"/><text x="2" y="155.53571428571428">0</text><line class="grid" x1="60" x2="680" y1="40.0" y2="40.0"/><text x="2" y="35.0">1.35</text><rect x="94.444" y="40.000" width="62.000" height="120.536" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="2024 · 绝对 1.35 %" aria-describedby="chart-readout"><title>2024 · 绝对 1.35 %</title></rect><rect x="301.111" y="160.536" width="62.000" height="29.464" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="2024 · 纳斯达克超额 -0.33 %" aria-describedby="chart-readout"><title>2024 · 纳斯达克超额 -0.33 %</title></rect><rect x="507.778" y="127.500" width="62.000" height="33.036" fill="var(--series)" opacity="0.9" tabindex="0" role="img" aria-label="2024 · 道指超额 0.37 %" aria-describedby="chart-readout"><title>2024 · 道指超额 0.37 %</title></rect><rect x="163.333" y="120.357" width="62.000" height="40.179" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="2025 · 绝对 0.45 %" aria-describedby="chart-readout"><title>2025 · 绝对 0.45 %</title></rect><rect x="370.000" y="160.536" width="62.000" height="8.929" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="2025 · 纳斯达克超额 -0.1 %" aria-describedby="chart-readout"><title>2025 · 纳斯达克超额 -0.1 %</title></rect><rect x="576.667" y="152.500" width="62.000" height="8.036" fill="var(--series)" opacity="0.65" tabindex="0" role="img" aria-label="2025 · 道指超额 0.09 %" aria-describedby="chart-readout"><title>2025 · 道指超额 0.09 %</title></rect><text x="60" y="220">绝对</text><text x="680" y="220" text-anchor="end">道指超额</text></svg><p style="font-size:13px">系列顺序（同组从左到右，色调由深到浅）：2024、2025。精确数值见下方同源数据表。</p><p id="chart-readout" role="tooltip" aria-live="polite">口径 · %（%）</p></section>
+<div class="table-wrap"><table><caption>2024 vs 2025：绝对收益与基准超额（后窗中位）</caption><thead><tr><th scope="col">口径</th><th scope="col">2024（%）</th><th scope="col">2025（%）</th></tr></thead><tbody>
+<tr><td>绝对</td><td>1.35</td><td>0.45</td></tr>
+<tr><td>纳斯达克超额</td><td>-0.33</td><td>-0.1</td></tr>
+<tr><td>道指超额</td><td>0.37</td><td>0.09</td></tr>
+</tbody></table><span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a></span><p>后窗中位；同一单位（%）。</p></div>
 <h2>接下来观察什么</h2>
 <h3>下一次 FOMC 后 3 个观测点的 S&amp;P 500 收益</h3>
 <p>追加样本，检验尾部是否重复<span class="refs"><a href="#claim-C25">[C25]</a></span></p>
@@ -108,14 +95,14 @@
 <h2>事件研究</h2>
 <p>事件类型：FOMC 决议日（2024 年 8 次会议）；窗口：−3 / +3 个观测点</p>
 <div class="table-wrap"><table><caption>参考类收益分布</caption><thead><tr><th scope="col">收益口径</th><th scope="col">n</th><th scope="col">中位</th><th scope="col">均值</th><th scope="col">Q1</th><th scope="col">Q3</th><th scope="col">最小</th><th scope="col">最大</th><th scope="col">为正比例</th></tr></thead><tbody>
-<tr><td>前窗</td><td>8</td><td>0.51%</td><td>0.45%</td><td>-1.09%</td><td>1.56%</td><td>-2.96%</td><td>4.56%</td><td>50.00%</td></tr>
-<tr><td>后窗</td><td>8</td><td>1.35%</td><td>0.46%</td><td>0.11%</td><td>1.84%</td><td>-6.08%</td><td>3.24%</td><td>75.00%</td></tr>
-<tr><td>全窗</td><td>8</td><td>1.61%</td><td>0.89%</td><td>0.48%</td><td>2.07%</td><td>-5.00%</td><td>4.75%</td><td>75.00%</td></tr>
-<tr><td>后窗超额·DJIA</td><td>8</td><td>0.45%</td><td>0.37%</td><td>0.20%</td><td>0.84%</td><td>-1.30%</td><td>1.46%</td><td>75.00%</td></tr>
-<tr><td>全窗超额·DJIA</td><td>8</td><td>0.27%</td><td>0.44%</td><td>0.10%</td><td>0.58%</td><td>-0.76%</td><td>2.41%</td><td>87.50%</td></tr>
-<tr><td>后窗超额·NASDAQCOM</td><td>8</td><td>0.05%</td><td>0.00%</td><td>-0.04%</td><td>0.17%</td><td>-0.73%</td><td>0.44%</td><td>75.00%</td></tr>
-<tr><td>全窗超额·NASDAQCOM</td><td>8</td><td>0.02%</td><td>-0.00%</td><td>-0.49%</td><td>0.47%</td><td>-0.73%</td><td>0.67%</td><td>50.00%</td></tr>
-</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-B2">[B2]</a> <a href="#claim-D2">[D2]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-B3">[B3]</a> <a href="#claim-D3">[D3]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-B4">[B4]</a> <a href="#claim-D4">[D4]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-B5">[B5]</a> <a href="#claim-D5">[D5]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-B6">[B6]</a> <a href="#claim-D6">[D6]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-B7">[B7]</a> <a href="#claim-D7">[D7]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D8">[D8]</a></span><p></p></div>
+<tr><td>前窗</td><td>16</td><td>0.15%</td><td>0.24%</td><td>-0.94%</td><td>1.21%</td><td>-2.96%</td><td>4.56%</td><td>56.25%</td></tr>
+<tr><td>后窗</td><td>16</td><td>1.19%</td><td>0.60%</td><td>-0.53%</td><td>1.80%</td><td>-6.08%</td><td>3.78%</td><td>62.50%</td></tr>
+<tr><td>全窗</td><td>16</td><td>1.61%</td><td>0.82%</td><td>-0.82%</td><td>2.05%</td><td>-5.00%</td><td>4.75%</td><td>68.75%</td></tr>
+<tr><td>后窗超额·DJIA</td><td>16</td><td>0.31%</td><td>0.18%</td><td>-0.13%</td><td>0.72%</td><td>-1.70%</td><td>1.46%</td><td>68.75%</td></tr>
+<tr><td>全窗超额·DJIA</td><td>16</td><td>0.24%</td><td>0.13%</td><td>-0.03%</td><td>0.57%</td><td>-1.74%</td><td>2.41%</td><td>75.00%</td></tr>
+<tr><td>后窗超额·NASDAQCOM</td><td>16</td><td>0.05%</td><td>0.05%</td><td>-0.18%</td><td>0.17%</td><td>-0.73%</td><td>0.68%</td><td>62.50%</td></tr>
+<tr><td>全窗超额·NASDAQCOM</td><td>16</td><td>0.09%</td><td>-0.02%</td><td>-0.49%</td><td>0.47%</td><td>-0.94%</td><td>0.70%</td><td>56.25%</td></tr>
+</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-B2">[B2]</a> <a href="#claim-D2">[D2]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-B3">[B3]</a> <a href="#claim-D3">[D3]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-B4">[B4]</a> <a href="#claim-D4">[D4]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-B5">[B5]</a> <a href="#claim-D5">[D5]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-B6">[B6]</a> <a href="#claim-D6">[D6]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-B7">[B7]</a> <a href="#claim-D7">[D7]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D8">[D8]</a> <a href="#claim-N25-01-PRE">[N25-01-PRE]</a> <a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-N25-01-POST">[N25-01-POST]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a> <a href="#claim-N25-02-PRE">[N25-02-PRE]</a> <a href="#claim-N25-02-EVENT">[N25-02-EVENT]</a> <a href="#claim-N25-02-POST">[N25-02-POST]</a> <a href="#claim-B25-02">[B25-02]</a> <a href="#claim-D25-02">[D25-02]</a> <a href="#claim-N25-03-PRE">[N25-03-PRE]</a> <a href="#claim-N25-03-EVENT">[N25-03-EVENT]</a> <a href="#claim-N25-03-POST">[N25-03-POST]</a> <a href="#claim-B25-03">[B25-03]</a> <a href="#claim-D25-03">[D25-03]</a> <a href="#claim-N25-04-PRE">[N25-04-PRE]</a> <a href="#claim-N25-04-EVENT">[N25-04-EVENT]</a> <a href="#claim-N25-04-POST">[N25-04-POST]</a> <a href="#claim-B25-04">[B25-04]</a> <a href="#claim-D25-04">[D25-04]</a> <a href="#claim-N25-05-PRE">[N25-05-PRE]</a> <a href="#claim-N25-05-EVENT">[N25-05-EVENT]</a> <a href="#claim-N25-05-POST">[N25-05-POST]</a> <a href="#claim-B25-05">[B25-05]</a> <a href="#claim-D25-05">[D25-05]</a> <a href="#claim-N25-06-PRE">[N25-06-PRE]</a> <a href="#claim-N25-06-EVENT">[N25-06-EVENT]</a> <a href="#claim-N25-06-POST">[N25-06-POST]</a> <a href="#claim-B25-06">[B25-06]</a> <a href="#claim-D25-06">[D25-06]</a> <a href="#claim-N25-07-PRE">[N25-07-PRE]</a> <a href="#claim-N25-07-EVENT">[N25-07-EVENT]</a> <a href="#claim-N25-07-POST">[N25-07-POST]</a> <a href="#claim-B25-07">[B25-07]</a> <a href="#claim-D25-07">[D25-07]</a> <a href="#claim-N25-08-PRE">[N25-08-PRE]</a> <a href="#claim-N25-08-EVENT">[N25-08-EVENT]</a> <a href="#claim-N25-08-POST">[N25-08-POST]</a> <a href="#claim-B25-08">[B25-08]</a> <a href="#claim-D25-08">[D25-08]</a></span><p></p></div>
 <div class="table-wrap"><table><caption>样本明细</caption><thead><tr><th scope="col">样本</th><th scope="col">事件日</th><th scope="col">前窗收益</th><th scope="col">后窗收益</th><th scope="col">全窗收益</th></tr></thead><tbody>
 <tr><td>FOMC-20240131</td><td>2024-01-31</td><td>-0.93%</td><td>2.01%</td><td>1.06%</td></tr>
 <tr><td>FOMC-20240320</td><td>2024-03-20</td><td>2.10%</td><td>-0.12%</td><td>1.98%</td></tr>
@@ -125,7 +112,15 @@
 <tr><td>FOMC-20240918</td><td>2024-09-18</td><td>-0.14%</td><td>1.79%</td><td>1.65%</td></tr>
 <tr><td>FOMC-20241107</td><td>2024-11-07</td><td>4.56%</td><td>0.18%</td><td>4.75%</td></tr>
 <tr><td>FOMC-20241218</td><td>2024-12-18</td><td>-2.96%</td><td>1.74%</td><td>-1.27%</td></tr>
-</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-B2">[B2]</a> <a href="#claim-D2">[D2]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-B3">[B3]</a> <a href="#claim-D3">[D3]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-B4">[B4]</a> <a href="#claim-D4">[D4]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-B5">[B5]</a> <a href="#claim-D5">[D5]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-B6">[B6]</a> <a href="#claim-D6">[D6]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-B7">[B7]</a> <a href="#claim-D7">[D7]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D8">[D8]</a></span><p></p></div>
+<tr><td>FOMC-20250129</td><td>2025-01-29</td><td>-1.02%</td><td>-0.74%</td><td>-1.75%</td></tr>
+<tr><td>FOMC-20250319</td><td>2025-03-19</td><td>0.64%</td><td>1.63%</td><td>2.28%</td></tr>
+<tr><td>FOMC-20250507</td><td>2025-05-07</td><td>-0.97%</td><td>3.78%</td><td>2.77%</td></tr>
+<tr><td>FOMC-20250618</td><td>2025-06-18</td><td>0.07%</td><td>1.86%</td><td>1.93%</td></tr>
+<tr><td>FOMC-20250730</td><td>2025-07-30</td><td>-0.40%</td><td>-0.52%</td><td>-0.92%</td></tr>
+<tr><td>FOMC-20250917</td><td>2025-09-17</td><td>0.24%</td><td>1.42%</td><td>1.66%</td></tr>
+<tr><td>FOMC-20251029</td><td>2025-10-29</td><td>1.46%</td><td>-0.56%</td><td>0.89%</td></tr>
+<tr><td>FOMC-20251210</td><td>2025-12-10</td><td>0.24%</td><td>-1.02%</td><td>-0.78%</td></tr>
+</tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-B2">[B2]</a> <a href="#claim-D2">[D2]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-B3">[B3]</a> <a href="#claim-D3">[D3]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-B4">[B4]</a> <a href="#claim-D4">[D4]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-B5">[B5]</a> <a href="#claim-D5">[D5]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-B6">[B6]</a> <a href="#claim-D6">[D6]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-B7">[B7]</a> <a href="#claim-D7">[D7]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D8">[D8]</a> <a href="#claim-N25-01-PRE">[N25-01-PRE]</a> <a href="#claim-N25-01-EVENT">[N25-01-EVENT]</a> <a href="#claim-N25-01-POST">[N25-01-POST]</a> <a href="#claim-B25-01">[B25-01]</a> <a href="#claim-D25-01">[D25-01]</a> <a href="#claim-N25-02-PRE">[N25-02-PRE]</a> <a href="#claim-N25-02-EVENT">[N25-02-EVENT]</a> <a href="#claim-N25-02-POST">[N25-02-POST]</a> <a href="#claim-B25-02">[B25-02]</a> <a href="#claim-D25-02">[D25-02]</a> <a href="#claim-N25-03-PRE">[N25-03-PRE]</a> <a href="#claim-N25-03-EVENT">[N25-03-EVENT]</a> <a href="#claim-N25-03-POST">[N25-03-POST]</a> <a href="#claim-B25-03">[B25-03]</a> <a href="#claim-D25-03">[D25-03]</a> <a href="#claim-N25-04-PRE">[N25-04-PRE]</a> <a href="#claim-N25-04-EVENT">[N25-04-EVENT]</a> <a href="#claim-N25-04-POST">[N25-04-POST]</a> <a href="#claim-B25-04">[B25-04]</a> <a href="#claim-D25-04">[D25-04]</a> <a href="#claim-N25-05-PRE">[N25-05-PRE]</a> <a href="#claim-N25-05-EVENT">[N25-05-EVENT]</a> <a href="#claim-N25-05-POST">[N25-05-POST]</a> <a href="#claim-B25-05">[B25-05]</a> <a href="#claim-D25-05">[D25-05]</a> <a href="#claim-N25-06-PRE">[N25-06-PRE]</a> <a href="#claim-N25-06-EVENT">[N25-06-EVENT]</a> <a href="#claim-N25-06-POST">[N25-06-POST]</a> <a href="#claim-B25-06">[B25-06]</a> <a href="#claim-D25-06">[D25-06]</a> <a href="#claim-N25-07-PRE">[N25-07-PRE]</a> <a href="#claim-N25-07-EVENT">[N25-07-EVENT]</a> <a href="#claim-N25-07-POST">[N25-07-POST]</a> <a href="#claim-B25-07">[B25-07]</a> <a href="#claim-D25-07">[D25-07]</a> <a href="#claim-N25-08-PRE">[N25-08-PRE]</a> <a href="#claim-N25-08-EVENT">[N25-08-EVENT]</a> <a href="#claim-N25-08-POST">[N25-08-POST]</a> <a href="#claim-B25-08">[B25-08]</a> <a href="#claim-D25-08">[D25-08]</a></span><p></p></div>
 <p>前窗/后窗/全窗是绝对收益；超额是标的收益减基准收益（简单差）；样本给出 beta 时超额按标的减 beta×基准计算。多基准时各基准的分布见「后窗超额·名称」行。样本事前选定、不给p值；参考类分布不是预测。</p>
 <details id="audit"><summary>来源与结论审计</summary>
 <div class="claim" id="claim-C1"><p>[C1] S&amp;P 500 2024-01-26 收盘 4890.97 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
@@ -170,6 +165,46 @@
 <div class="claim" id="claim-D6"><p>[D6] DJIA 2024-09-18 收盘 41503.1 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
 <div class="claim" id="claim-D7"><p>[D7] DJIA 2024-11-07 收盘 43729.34 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
 <div class="claim" id="claim-D8"><p>[D8] DJIA 2024-12-18 收盘 42326.87 点（FRED 日度收盘）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
+<div class="claim" id="claim-N25-01-PRE"><p>[N25-01-PRE] S&amp;P 500 2025-01-24 收盘 6101.24 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-01-EVENT"><p>[N25-01-EVENT] S&amp;P 500 2025-01-29 收盘 6039.31 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-01-POST"><p>[N25-01-POST] S&amp;P 500 2025-02-03 收盘 5994.57 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-B25-01"><p>[B25-01] NASDAQCOM 2025-01-29 收盘 19632.32 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S3</p></div>
+<div class="claim" id="claim-D25-01"><p>[D25-01] DJIA 2025-01-29 收盘 44713.52 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
+<div class="claim" id="claim-N25-02-PRE"><p>[N25-02-PRE] S&amp;P 500 2025-03-14 收盘 5638.94 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-02-EVENT"><p>[N25-02-EVENT] S&amp;P 500 2025-03-19 收盘 5675.29 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-02-POST"><p>[N25-02-POST] S&amp;P 500 2025-03-24 收盘 5767.57 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-B25-02"><p>[B25-02] NASDAQCOM 2025-03-19 收盘 17750.79 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S3</p></div>
+<div class="claim" id="claim-D25-02"><p>[D25-02] DJIA 2025-03-19 收盘 41964.63 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
+<div class="claim" id="claim-N25-03-PRE"><p>[N25-03-PRE] S&amp;P 500 2025-05-02 收盘 5686.67 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-03-EVENT"><p>[N25-03-EVENT] S&amp;P 500 2025-05-07 收盘 5631.28 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-03-POST"><p>[N25-03-POST] S&amp;P 500 2025-05-12 收盘 5844.19 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-B25-03"><p>[B25-03] NASDAQCOM 2025-05-07 收盘 17738.16 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S3</p></div>
+<div class="claim" id="claim-D25-03"><p>[D25-03] DJIA 2025-05-07 收盘 41113.97 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
+<div class="claim" id="claim-N25-04-PRE"><p>[N25-04-PRE] S&amp;P 500 2025-06-13 收盘 5976.97 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-04-EVENT"><p>[N25-04-EVENT] S&amp;P 500 2025-06-18 收盘 5980.87 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-04-POST"><p>[N25-04-POST] S&amp;P 500 2025-06-24 收盘 6092.18 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-B25-04"><p>[B25-04] NASDAQCOM 2025-06-18 收盘 19546.27 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S3</p></div>
+<div class="claim" id="claim-D25-04"><p>[D25-04] DJIA 2025-06-18 收盘 42171.66 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
+<div class="claim" id="claim-N25-05-PRE"><p>[N25-05-PRE] S&amp;P 500 2025-07-25 收盘 6388.64 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-05-EVENT"><p>[N25-05-EVENT] S&amp;P 500 2025-07-30 收盘 6362.9 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-05-POST"><p>[N25-05-POST] S&amp;P 500 2025-08-04 收盘 6329.94 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-B25-05"><p>[B25-05] NASDAQCOM 2025-07-30 收盘 21129.67 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S3</p></div>
+<div class="claim" id="claim-D25-05"><p>[D25-05] DJIA 2025-07-30 收盘 44461.28 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
+<div class="claim" id="claim-N25-06-PRE"><p>[N25-06-PRE] S&amp;P 500 2025-09-12 收盘 6584.29 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-06-EVENT"><p>[N25-06-EVENT] S&amp;P 500 2025-09-17 收盘 6600.35 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-06-POST"><p>[N25-06-POST] S&amp;P 500 2025-09-22 收盘 6693.75 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-B25-06"><p>[B25-06] NASDAQCOM 2025-09-17 收盘 22261.33 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S3</p></div>
+<div class="claim" id="claim-D25-06"><p>[D25-06] DJIA 2025-09-17 收盘 46018.32 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
+<div class="claim" id="claim-N25-07-PRE"><p>[N25-07-PRE] S&amp;P 500 2025-10-24 收盘 6791.69 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-07-EVENT"><p>[N25-07-EVENT] S&amp;P 500 2025-10-29 收盘 6890.59 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-07-POST"><p>[N25-07-POST] S&amp;P 500 2025-11-03 收盘 6851.97 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-B25-07"><p>[B25-07] NASDAQCOM 2025-10-29 收盘 23958.47 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S3</p></div>
+<div class="claim" id="claim-D25-07"><p>[D25-07] DJIA 2025-10-29 收盘 47632.0 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
+<div class="claim" id="claim-N25-08-PRE"><p>[N25-08-PRE] S&amp;P 500 2025-12-05 收盘 6870.4 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-08-EVENT"><p>[N25-08-EVENT] S&amp;P 500 2025-12-10 收盘 6886.68 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-N25-08-POST"><p>[N25-08-POST] S&amp;P 500 2025-12-15 收盘 6816.51 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S1</p></div>
+<div class="claim" id="claim-B25-08"><p>[B25-08] NASDAQCOM 2025-12-10 收盘 23654.16 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S3</p></div>
+<div class="claim" id="claim-D25-08"><p>[D25-08] DJIA 2025-12-10 收盘 48057.75 点（FRED）（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S4</p></div>
 <div class="source"><p>S1 · Federal Reserve Bank of St. Louis (FRED) · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：observation_date,SP500
 2024-01-30,4924.97
 2024-01-31,4845.65
