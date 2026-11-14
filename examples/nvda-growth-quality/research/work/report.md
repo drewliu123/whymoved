@@ -46,6 +46,12 @@ FY2026 合同负债 2,572 百万美元，仅占收入 1\.2%；英伟达的订单
 
 为什么重要：不能用合同负债判断订单；应收与存货比合同负债更有信息量。
 
+## P/E 从 117x 降到 33x：盈利跑赢了股价
+
+P/E 116\.8x（FY2023）→51\.2x（FY2024）→48\.5x（FY2025）→38\.3x（FY2026）→33\.2x（当前）；净利润从 43\.68 亿增到 1,200\.67 亿美元。 [PXH\-NVDA\-23] [SHH\-NVDA\-23] [PXH\-NVDA\-24] [SHH\-NVDA\-24] [PXH\-NVDA\-25] [SHH\-NVDA\-25] [PXH\-NVDA\-26] [SHH\-NVDA\-26] [PX\-NVDA]
+
+为什么重要：股价在涨，估值反而在降；这是盈利驱动的估值消化，不是「涨多了就贵」的直觉。
+
 ## 这意味着什么
 
 ### 增长质量看 CFO/净利润与天数
@@ -59,6 +65,10 @@ FY2026 合同负债 2,572 百万美元，仅占收入 1\.2%；英伟达的订单
 ### 现金流仍是增长的朋友
 
 CFO/收入约 48%，增长没有靠举债或透支现金；这不是质量警报，而是质量折扣。（FY2027） [NVDA\-CFO\-26] [NVDA\-REV\-26]
+
+### 估值消化来自盈利，不是价格
+
+33x 是四年最低；若增长放缓，P/E 才会重新扩张。跟踪净利润增速比跟踪股价更有意义。（FY2027） [PX\-NVDA] [SHH\-NVDA\-26] [NVDA\-NI\-26]
 
 ## 情景与触发条件
 
@@ -85,6 +95,14 @@ CFO/收入约 48%，增长没有靠举债或透支现金；这不是质量警报
 触发：收入增速 &lt;30%；DSO 下降；存货天数下降
 
 含义：现金流改善，但需确认需求没有同步恶化。
+
+### 估值重估
+
+增长放缓，P/E 从 33x 重新扩张。
+
+触发：净利润增速 &lt;30%；P/E &gt;40；收入增速 &lt;25%
+
+含义：估值不再被盈利消化。
 
 ## 分析判断
 
@@ -134,6 +152,20 @@ CFO/收入约 48%，增长没有靠举债或透支现金；这不是质量警报
 
 季度 DSO=应收/季度收入×91；存货天数=存货/季度营业成本×91；由披露值计算并四舍五入。
 
+### 英伟达 P/E（财年末价格 / 当年 EPS）
+
+| 财年 | 收盘价（美元/股） | EPS（美元/股） | P/E（倍） |
+| --- | --- | --- | --- |
+| 2023 | 20\.365 | 0\.17 | 116\.9 |
+| 2024 | 61\.031 | 1\.19 | 51\.1 |
+| 2025 | 142\.62 | 2\.94 | 48\.5 |
+| 2026 | 187\.67 | 4\.9 | 38\.3 |
+| 当前 | 162\.85 | 4\.9 | 33\.2 |
+
+[PXH\-NVDA\-23] [SHH\-NVDA\-23] [PXH\-NVDA\-24] [SHH\-NVDA\-24] [PXH\-NVDA\-25] [SHH\-NVDA\-25] [PXH\-NVDA\-26] [SHH\-NVDA\-26] [PX\-NVDA]
+
+EPS=净利润/拆股调整后稀释股数；P/E=财年末收盘价/EPS；当前为 2026\-11\-13 / FY2026 EPS。
+
 ### 收入与经营现金流（百万美元）
 
 | 财年 | 收入（百万美元） | 经营现金流（百万美元） |
@@ -172,6 +204,20 @@ CFO/收入约 48%，增长没有靠举债或透支现金；这不是质量警报
 [NVDA\-Q\-2507\-REV] [NVDA\-Q\-2507\-COGS] [NVDA\-Q\-2507\-AR] [NVDA\-Q\-2507\-INV] [NVDA\-Q\-2507\-DEF] [NVDA\-Q\-2510\-REV] [NVDA\-Q\-2510\-COGS] [NVDA\-Q\-2510\-AR] [NVDA\-Q\-2510\-INV] [NVDA\-Q\-2510\-DEF] [NVDA\-Q\-2604\-REV] [NVDA\-Q\-2604\-COGS] [NVDA\-Q\-2604\-AR] [NVDA\-Q\-2604\-INV] [NVDA\-Q\-2604\-DEF] [NVDA\-Q\-2607\-REV] [NVDA\-Q\-2607\-COGS] [NVDA\-Q\-2607\-AR] [NVDA\-Q\-2607\-INV] [NVDA\-Q\-2607\-DEF]
 
 由季度披露值计算；季度天数按 91 天折算。
+
+### 英伟达 P/E：盈利增长消化估值
+
+| 财年 | 倍（倍） |
+| --- | --- |
+| 2023 | 116\.9 |
+| 2024 | 51\.1 |
+| 2025 | 48\.5 |
+| 2026 | 38\.3 |
+| 当前 | 33\.2 |
+
+[PXH\-NVDA\-23] [SHH\-NVDA\-23] [PXH\-NVDA\-24] [SHH\-NVDA\-24] [PXH\-NVDA\-25] [SHH\-NVDA\-25] [PXH\-NVDA\-26] [SHH\-NVDA\-26] [PX\-NVDA]
+
+财年末收盘价/当年 EPS；当前为 2026\-11\-13。
 
 ## 其他解释
 
@@ -423,8 +469,64 @@ CFO/净利润下降可能来自股权激励等非现金费用与采购承诺，�
 
 依据：；来源：S\-NVDA
 
+\[PXH\-NVDA\-23\] NVDA 2023\-01\-27 收盘 20\.365 美元/股（拆股调整后）（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-NVDA\-23
+
+\[SHH\-NVDA\-23\] NVDA FY2023 稀释加权股数 25070\.0 百万股（拆股调整后）（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-NVDA
+
+\[PXH\-NVDA\-24\] NVDA 2024\-01\-26 收盘 61\.031 美元/股（拆股调整后）（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-NVDA\-24
+
+\[SHH\-NVDA\-24\] NVDA FY2024 稀释加权股数 24940\.0 百万股（拆股调整后）（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-NVDA
+
+\[PXH\-NVDA\-25\] NVDA 2025\-01\-24 收盘 142\.62 美元/股（拆股调整后）（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-NVDA\-25
+
+\[SHH\-NVDA\-25\] NVDA FY2025 稀释加权股数 24804\.0 百万股（拆股调整后）（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-NVDA
+
+\[PXH\-NVDA\-26\] NVDA 2026\-01\-23 收盘 187\.67 美元/股（拆股调整后）（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-NVDA\-26
+
+\[SHH\-NVDA\-26\] NVDA FY2026 稀释加权股数 24514\.0 百万股（拆股调整后）（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-NVDA
+
+\[PX\-NVDA\] NVDA 2026\-11\-13 收盘 162\.85 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-NVDA
+
 S\-NVDA · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: NVIDIA CORP · locator：data\.sec\.gov companyfacts CIK0001045810（NVIDIA），10\-K 年度值 · origin\_id：sec\-nvda · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "增长与现金转化", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0001045810\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json)
+
+S\-PXH\-NVDA\-23 · Nasdaq · T0 · published\_at：2023\-01\-27 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2023\-01\-27 close $20\.365 · locator：Nasdaq NVDA 历史收盘（拆股调整后），取财年末 · origin\_id：nasdaq\-nvda\-2023 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "NVDA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2023\-01\-27T16:00:00\-05:00", "unit": "USD/share", "value": 20\.365\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/nvda/historical](https://www.nasdaq.com/market-activity/stocks/nvda/historical)
+
+S\-PXH\-NVDA\-24 · Nasdaq · T0 · published\_at：2024\-01\-26 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2024\-01\-26 close $61\.031 · locator：Nasdaq NVDA 历史收盘（拆股调整后），取财年末 · origin\_id：nasdaq\-nvda\-2024 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "NVDA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2024\-01\-26T16:00:00\-05:00", "unit": "USD/share", "value": 61\.031\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/nvda/historical](https://www.nasdaq.com/market-activity/stocks/nvda/historical)
+
+S\-PXH\-NVDA\-25 · Nasdaq · T0 · published\_at：2025\-01\-24 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-01\-24 close $142\.62 · locator：Nasdaq NVDA 历史收盘（拆股调整后），取财年末 · origin\_id：nasdaq\-nvda\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "NVDA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-01\-24T16:00:00\-05:00", "unit": "USD/share", "value": 142\.62\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/nvda/historical](https://www.nasdaq.com/market-activity/stocks/nvda/historical)
+
+S\-PXH\-NVDA\-26 · Nasdaq · T0 · published\_at：2026\-01\-23 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2026\-01\-23 close $187\.67 · locator：Nasdaq NVDA 历史收盘（拆股调整后），取财年末 · origin\_id：nasdaq\-nvda\-2026 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "NVDA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2026\-01\-23T16:00:00\-05:00", "unit": "USD/share", "value": 187\.67\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/nvda/historical](https://www.nasdaq.com/market-activity/stocks/nvda/historical)
+
+S\-PX\-NVDA · Nasdaq · T0 · published\_at：2026\-11\-13 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：11/13/2026 close $162\.85 · locator：Nasdaq NVDA historical quotes, 2026\-11\-01 至 2026\-11\-14 · origin\_id：nasdaq\-nvda · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "decisive", "purpose": "P/E", "reason": "交易所收盘价", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "NVDA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2026\-11\-13T16:00:00\-05:00", "unit": "USD/share", "value": 162\.85\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/nvda/historical](https://www.nasdaq.com/market-activity/stocks/nvda/historical)
 
 来源状态：\{"sec": \{"status": "ok"\}\}

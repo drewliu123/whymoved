@@ -108,6 +108,27 @@
         "baseline": "把合同负债当订单指标",
         "detail": "合同负债占收入 1.2%"
       }
+    },
+    {
+      "title": "P/E 从 117x 降到 33x：盈利跑赢了股价",
+      "text": "P/E 116.8x（FY2023）→51.2x（FY2024）→48.5x（FY2025）→38.3x（FY2026）→33.2x（当前）；净利润从 43.68 亿增到 1,200.67 亿美元。",
+      "claim_ids": [
+        "PXH-NVDA-23",
+        "SHH-NVDA-23",
+        "PXH-NVDA-24",
+        "SHH-NVDA-24",
+        "PXH-NVDA-25",
+        "SHH-NVDA-25",
+        "PXH-NVDA-26",
+        "SHH-NVDA-26",
+        "PX-NVDA"
+      ],
+      "why_it_matters": "股价在涨，估值反而在降；这是盈利驱动的估值消化，不是「涨多了就贵」的直觉。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "股价新高=估值新高",
+        "detail": "P/E 117x→33x"
+      }
     }
   ],
   "implications": [
@@ -138,6 +159,16 @@
       "claim_ids": [
         "NVDA-CFO-26",
         "NVDA-REV-26"
+      ],
+      "horizon": "FY2027"
+    },
+    {
+      "title": "估值消化来自盈利，不是价格",
+      "text": "33x 是四年最低；若增长放缓，P/E 才会重新扩张。跟踪净利润增速比跟踪股价更有意义。",
+      "claim_ids": [
+        "PX-NVDA",
+        "SHH-NVDA-26",
+        "NVDA-NI-26"
       ],
       "horizon": "FY2027"
     }
@@ -172,6 +203,16 @@
         "存货天数下降"
       ],
       "implication": "现金流改善，但需确认需求没有同步恶化。"
+    },
+    {
+      "name": "估值重估",
+      "thesis": "增长放缓，P/E 从 33x 重新扩张。",
+      "triggers": [
+        "净利润增速 <30%",
+        "P/E >40",
+        "收入增速 <25%"
+      ],
+      "implication": "估值不再被盈利消化。"
     }
   ],
   "alternatives": [
@@ -432,6 +473,65 @@
         "NVDA-Q-2607-DEF"
       ],
       "note": "季度 DSO=应收/季度收入×91；存货天数=存货/季度营业成本×91；由披露值计算并四舍五入。"
+    },
+    {
+      "title": "英伟达 P/E（财年末价格 / 当年 EPS）",
+      "columns": [
+        "财年",
+        "收盘价",
+        "EPS",
+        "P/E"
+      ],
+      "units": [
+        "",
+        "美元/股",
+        "美元/股",
+        "倍"
+      ],
+      "rows": [
+        [
+          "2023",
+          20.365,
+          0.17,
+          116.9
+        ],
+        [
+          "2024",
+          61.031,
+          1.19,
+          51.1
+        ],
+        [
+          "2025",
+          142.62,
+          2.94,
+          48.5
+        ],
+        [
+          "2026",
+          187.67,
+          4.9,
+          38.3
+        ],
+        [
+          "当前",
+          162.85,
+          4.9,
+          33.2
+        ]
+      ],
+      "claim_ids": [
+        "PXH-NVDA-23",
+        "SHH-NVDA-23",
+        "PXH-NVDA-24",
+        "SHH-NVDA-24",
+        "PXH-NVDA-25",
+        "SHH-NVDA-25",
+        "PXH-NVDA-26",
+        "SHH-NVDA-26",
+        "PX-NVDA"
+      ],
+      "note": "EPS=净利润/拆股调整后稀释股数；P/E=财年末收盘价/EPS；当前为 2026-11-13 / FY2026 EPS。"
     }
   ],
   "charts": [
@@ -640,6 +740,47 @@
         "NVDA-Q-2607-DEF"
       ],
       "note": "由季度披露值计算；季度天数按 91 天折算。"
+    },
+    {
+      "kind": "line",
+      "title": "英伟达 P/E：盈利增长消化估值",
+      "x_label": "财年",
+      "y_label": "倍",
+      "unit": "倍",
+      "rows": [
+        {
+          "label": "2023",
+          "value": 116.9
+        },
+        {
+          "label": "2024",
+          "value": 51.1
+        },
+        {
+          "label": "2025",
+          "value": 48.5
+        },
+        {
+          "label": "2026",
+          "value": 38.3
+        },
+        {
+          "label": "当前",
+          "value": 33.2
+        }
+      ],
+      "claim_ids": [
+        "PXH-NVDA-23",
+        "SHH-NVDA-23",
+        "PXH-NVDA-24",
+        "SHH-NVDA-24",
+        "PXH-NVDA-25",
+        "SHH-NVDA-25",
+        "PXH-NVDA-26",
+        "SHH-NVDA-26",
+        "PX-NVDA"
+      ],
+      "note": "财年末收盘价/当年 EPS；当前为 2026-11-13。"
     }
   ],
   "analysis": {

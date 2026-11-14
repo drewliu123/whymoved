@@ -579,6 +579,110 @@
           "source_id": "S-NVDA"
         }
       ]
+    },
+    {
+      "id": "PXH-NVDA-23",
+      "text": "NVDA 2023-01-27 收盘 20.365 美元/股（拆股调整后）",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-NVDA-23"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-NVDA-23",
+      "text": "NVDA FY2023 稀释加权股数 25070.0 百万股（拆股调整后）",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-NVDA-24",
+      "text": "NVDA 2024-01-26 收盘 61.031 美元/股（拆股调整后）",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-NVDA-24"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-NVDA-24",
+      "text": "NVDA FY2024 稀释加权股数 24940.0 百万股（拆股调整后）",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-NVDA-25",
+      "text": "NVDA 2025-01-24 收盘 142.62 美元/股（拆股调整后）",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-NVDA-25"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-NVDA-25",
+      "text": "NVDA FY2025 稀释加权股数 24804.0 百万股（拆股调整后）",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-NVDA-26",
+      "text": "NVDA 2026-01-23 收盘 187.67 美元/股（拆股调整后）",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-NVDA-26"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-NVDA-26",
+      "text": "NVDA FY2026 稀释加权股数 24514.0 百万股（拆股调整后）",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PX-NVDA",
+      "text": "NVDA 2026-11-13 收盘 162.85 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-NVDA"
+        }
+      ]
     }
   ]
 }
