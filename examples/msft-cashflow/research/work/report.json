@@ -616,5 +616,119 @@
       "signal": "后续更新：取下一完整财年数据，按相同口径复查"
     }
   ],
-  "layout": "brief"
+  "layout": "brief",
+  "summary": {
+    "conclusion": "FY2025 收入 +14.9%、经营现金流 +14.9%，但现金资本开支 +44.8%，自由现金流从 74,071 降到 71,611 百万美元。",
+    "surprise": "FCF 下降全部来自资本开支增量超过 CFO 增量（20,074 vs 17,614）；经营现金流本身在增长，不是经营恶化。",
+    "next_check": "看 FY2026 资本开支增速是否回落到收入增速以下；若继续更高，FCF 仍会承压。"
+  },
+  "implications": [
+    {
+      "title": "FCF 下降是投资强度问题",
+      "text": "经营现金流在增长，FCF 下降来自 capex 增量更大；把它当经营恶化会误判。",
+      "claim_ids": [
+        "C2",
+        "C3",
+        "C7"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "资本开支增速是下一年的关键变量",
+      "text": "capex +44.8% 远高于收入 +14.9%；若 FY2026 capex 增速回落，FCF 会修复。",
+      "claim_ids": [
+        "C1",
+        "C3",
+        "C7"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "看 FCF 要同时看 CFO 与 capex",
+      "text": "只报 FCF 数字会掩盖两侧变化；CFO 与 capex 的增速差才是驱动。",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "horizon": "FY2026"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "资本开支回落",
+      "thesis": "FY2026 capex 增速降到收入增速以下，FCF 修复。",
+      "triggers": [
+        "capex 增速 < 收入增速",
+        "FCF > 71,611",
+        "CFO 增速 >10%"
+      ],
+      "implication": "FCF 压力缓解。"
+    },
+    {
+      "name": "投资强度维持",
+      "thesis": "capex 增速继续高于收入，FCF 继续下降。",
+      "triggers": [
+        "capex 增速 > 收入增速",
+        "FCF < 71,611",
+        "CFO 增速 <15%"
+      ],
+      "implication": "FCF 压力延续，估值需重估。"
+    }
+  ],
+  "charts": [
+    {
+      "kind": "bar",
+      "title": "经营现金流、资本开支与自由现金流（百万美元）",
+      "x_label": "财年",
+      "y_label": "百万美元",
+      "unit": "百万美元",
+      "series": [
+        {
+          "name": "经营现金流",
+          "rows": [
+            {
+              "label": "FY2024",
+              "value": 118548
+            },
+            {
+              "label": "FY2025",
+              "value": 136162
+            }
+          ]
+        },
+        {
+          "name": "现金资本开支",
+          "rows": [
+            {
+              "label": "FY2024",
+              "value": 44477
+            },
+            {
+              "label": "FY2025",
+              "value": 64551
+            }
+          ]
+        },
+        {
+          "name": "自由现金流",
+          "rows": [
+            {
+              "label": "FY2024",
+              "value": 74071
+            },
+            {
+              "label": "FY2025",
+              "value": 71611
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "C2",
+        "C3",
+        "C6"
+      ],
+      "note": "同一单位；FCF=CFO−现金资本开支。"
+    }
+  ]
 }
