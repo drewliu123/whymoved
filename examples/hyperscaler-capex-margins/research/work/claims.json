@@ -855,6 +855,94 @@
           "source_id": "S-META"
         }
       ]
+    },
+    {
+      "id": "META-25Q3-COGS",
+      "text": "Meta 2025 年 9 月季度营业成本 9,206 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q3-COGS",
+      "text": "Meta 2026 年 9 月季度营业成本 13,369 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-25Q3-RD",
+      "text": "Meta 2025 年 9 月季度研发费用 15,144 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q3-RD",
+      "text": "Meta 2026 年 9 月季度研发费用 20,054 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-25Q3-SM",
+      "text": "Meta 2025 年 9 月季度销售与营销费用 2,845 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q3-SM",
+      "text": "Meta 2026 年 9 月季度销售与营销费用 3,333 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-25Q3-GA",
+      "text": "Meta 2025 年 9 月季度管理费用 3,512 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q3-GA",
+      "text": "Meta 2026 年 9 月季度管理费用 14,857 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
     }
   ]
 }
