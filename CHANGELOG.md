@@ -4,6 +4,14 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 1.4.0 · 事件方向预测：NVDA 2026-11-17 偏多
+
+- 新增 [docs/event-notes/nvda-2026-11-17.md](docs/event-notes/nvda-2026-11-17.md)：事件前方向预判「偏多」、把握度中等偏低、T+3 打分（2026-11-20）。
+- 核心隐藏视角：市场把「增速放缓」当成估值还要压缩，但 NVDA P/E 已从 116.8x 降到 33.2x、股价接近 52 周低点，悲观已部分定价；只要不出现「指引下修 + DSO 恶化」双杀，容易 relief rally。
+- 新增 [scripts/event_forecast.py](scripts/event_forecast.py)：事件方向预测的 list/score；到期前拒绝、不可重复打分；记录收益率。
+- 新增 [docs/event-forecast-protocol.md](docs/event-forecast-protocol.md)：方向、共识、隐藏视角、失效条件与打分规则。
+- 预测日志 [predictions/events-2026.json](predictions/events-2026.json)：E1 open；589 个测试通过。
+
 ## 1.3.0 · 催化剂日历：未来三个月哪些时点放大波动
 
 - 新增 [docs/catalyst-calendar.md](docs/catalyst-calendar.md)：已确认日期（NVDA 11-17、BEA PCE 12-02、FOMC 12-08/09、NKE 12-17、GDP 12-23）、预计窗口（非农/CPI、1 月下旬与 2 月上旬财报）、当前预期与预测打分点。

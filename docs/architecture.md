@@ -57,6 +57,7 @@ flowchart TD
 | [render_report.py](../scripts/render_report.py) | 从冻结报告生成同源Markdown和HTML |
 | [memo_pack.py](../scripts/memo_pack.py) | 从冻结报告裁剪一页式IC memo，只复制不新增数字 |
 | [prediction_log.py](../scripts/prediction_log.py) | 列出与打分可证伪预测；到期后用官方值记录 hit/miss |
+| [event_forecast.py](../scripts/event_forecast.py) | 列出与打分事件方向预测；T+3 收盘相对基准价 |
 | [research_run.py](../scripts/research_run.py) | 新建、更新、读取、比较与不可覆盖归档 |
 | [sec_data.py](../scripts/sec_data.py) | 可选SEC披露取证入口，通过独立运行时使用EdgarTools |
 | [financial_data.py](../scripts/financial_data.py) | 可选Financial Datasets适配器，授权与配额由服务方管理 |

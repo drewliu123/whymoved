@@ -8,7 +8,7 @@
 
 | 日期 | 事件 | 当前预期/共识 | 为什么可能放大波动 | 关联报告 |
 | --- | --- | --- | --- | --- |
-| **2026-11-17（盘后）** | 英伟达 FY2027 Q3 财报 | 共识 EPS **$2.49**（Nasdaq；营收预期未提供） | AI 算力基准；DSO、毛利率、数据中心指引会传导到设备（AMAT/LRCX/KLAC）与云厂商 | [nvda-growth-quality](../examples/nvda-growth-quality/README.md)、[ai-capex-value-chain](../examples/ai-capex-value-chain/README.md) |
+| **2026-11-17（盘后）** | 英伟达 FY2027 Q3 财报 | 共识 EPS **$2.49**（Nasdaq；营收预期未提供）；**本项目方向预测：偏多（T+3），把握度中等偏低** | AI 算力基准；DSO、毛利率、数据中心指引会传导到设备（AMAT/LRCX/KLAC）与云厂商 | [事件预判](event-notes/nvda-2026-11-17.md)、[nvda-growth-quality](../examples/nvda-growth-quality/README.md)、[ai-capex-value-chain](../examples/ai-capex-value-chain/README.md) |
 | **2026-12-02 08:30 ET** | BEA：10 月个人收入与支出（含 PCE） | 本机无可信 consensus；看核心 PCE 环比与同比 | 影响降息路径与久期资产；对高估值成长（NVDA/LLY/TSLA）与银行（JPM）同时有估值传导 | [jpm-nim-provisions](../examples/jpm-nim-provisions/README.md) |
 | **2026-12-08/09** | FOMC 会议（声明 12-09） | 本机无法取得市场隐含概率；看声明、点阵图与发布会 | 全市场贴现率；但本项目 23 次样本显示「FOMC 后方向」不稳定 | [sp500-fomc-event](../examples/sp500-fomc-event/README.md) |
 | **2026-12-17** | 耐克 FY2027 Q2 财报 | 共识 EPS **$0.34**（Nasdaq；时间未定） | 毛利率、存货天数与全年指引；消费与关税敏感 | [nke-turnaround](../examples/nke-turnaround/README.md) |
@@ -62,3 +62,9 @@
 - BEA 发布日程（bea.gov/news/schedule，2026-11-14 取）。
 - Nasdaq earnings calendar 与 quote info（2026-11-14 取；NVDA/NKE EPS consensus）。
 - 价格：Nasdaq 2026-11-13 收盘。
+
+
+## 事件方向预测
+
+- [NVDA 2026-11-17 事件预判](event-notes/nvda-2026-11-17.md)：偏多、把握度中等偏低、T+3 打分。
+- [事件预测协议](event-forecast-protocol.md)：字段、依据、打分与边界。
