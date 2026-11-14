@@ -383,6 +383,29 @@
         "JPM-PROV-25",
         "JPM-EQUITY-25"
       ]
+    },
+    {
+      "id": "PX-JPM",
+      "text": "JPM 2026-11-13 收盘 346.19 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-JPM"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SH-JPM",
+      "text": "JPM 2026-09-30 普通股 2,655.6 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-JPM"
+        }
+      ],
+      "type": "fact"
     }
   ]
 }

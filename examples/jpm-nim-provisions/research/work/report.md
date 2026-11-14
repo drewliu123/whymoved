@@ -40,6 +40,12 @@ NII/总资产 FY2021 1\.40%→FY2023 2\.30%→FY2024 2\.31%→FY2025 2\.16%；�
 
 为什么重要：盈利仍高，但方向转弱；ROE 15\.7% 仍健康，问题是趋势。
 
+## 估值：P/E 16\.9x、P/B 2\.5x 已反映 15\.7% ROE
+
+收盘 346\.19 美元 × 26\.56 亿股 = 市值约 919 亿美元；净利 570 亿、权益 3,624 亿，对应 P/E 16\.9x、P/B 2\.54x、ROE 15\.7%。 [PX\-JPM] [SH\-JPM] [JPM\-NI\-25] [JPM\-EQUITY\-25]
+
+为什么重要：2\.5 倍账面价值要求 ROE 维持；若净息差与拨备同时恶化，P/B 是最脆弱的倍数。
+
 ## 这意味着什么
 
 ### 看 NII/总资产与拨备两项
@@ -53,6 +59,10 @@ NII/总资产跌破 2\.1%、拨备超过 150 亿美元，是盈利加速下行�
 ### ROE 15\.7% 仍健康
 
 盈利方向转弱，但 ROE 仍高于常态；不是危机，是周期从利差转向信用成本。（FY2026） [JPM\-NI\-25] [JPM\-EQUITY\-25] [I\-WATCH]
+
+### P/B 是最脆弱的倍数
+
+2\.5x 账面价值已包含 15\.7% ROE 的假设；若 ROE 跌到 12%，P/B 需要压缩才能维持同样的 P/E。（FY2026） [PX\-JPM] [SH\-JPM] [JPM\-EQUITY\-25] [JPM\-NI\-25]
 
 ## 情景与触发条件
 
@@ -103,6 +113,23 @@ NII/总资产守住 2\.1%，拨备见顶。
 [JPM\-NII\-21] [JPM\-NII\-22] [JPM\-NII\-23] [JPM\-NII\-24] [JPM\-NII\-25] [JPM\-ASSETS\-21] [JPM\-ASSETS\-22] [JPM\-ASSETS\-23] [JPM\-ASSETS\-24] [JPM\-ASSETS\-25] [JPM\-PROV\-21] [JPM\-PROV\-22] [JPM\-PROV\-23] [JPM\-PROV\-24] [JPM\-PROV\-25] [JPM\-NI\-21] [JPM\-NI\-22] [JPM\-NI\-23] [JPM\-NI\-24] [JPM\-NI\-25] [JPM\-EQUITY\-21] [JPM\-EQUITY\-22] [JPM\-EQUITY\-23] [JPM\-EQUITY\-24] [JPM\-EQUITY\-25] [JPM\-NCO\-21] [JPM\-NCO\-22] [JPM\-NCO\-23] [JPM\-NCO\-24] [JPM\-NCO\-25]
 
 NII/总资产=净利息收入/期末总资产，是净息差的近似；ROE=净利润/期末股东权益；由披露值计算并四舍五入。
+
+### 估值对照（2026\-11\-13）
+
+| 项目 | 数值 |
+| --- | --- |
+| 收盘价（美元/股） | 346\.19 |
+| 普通股（百万股） | 2655\.6 |
+| 市值（十亿美元） | 919\.3 |
+| 净利润（十亿美元） | 57\.0 |
+| 股东权益（十亿美元） | 362\.4 |
+| P/E | 16\.9 |
+| P/B | 2\.54 |
+| ROE | 15\.7 |
+
+[PX\-JPM] [SH\-JPM] [JPM\-NI\-25] [JPM\-EQUITY\-25]
+
+市值=收盘价×普通股；P/E=收盘价/\(净利润/稀释股数\)；P/B=市值/权益；ROE=净利润/权益。
 
 ### 净利息收入与拨备（十亿美元）
 
@@ -310,8 +337,20 @@ NII/总资产=净利息收入/期末总资产，是净息差的近似；ROE=净�
 
 依据：JPM\-NII\-25, JPM\-ASSETS\-25, JPM\-PROV\-25, JPM\-EQUITY\-25；来源：
 
+\[PX\-JPM\] JPM 2026\-11\-13 收盘 346\.19 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-JPM
+
+\[SH\-JPM\] JPM 2026\-09\-30 普通股 2,655\.6 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-JPM
+
 S\-JPM · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: JPMorgan Chase &amp; Co\. · locator：data\.sec\.gov companyfacts CIK0000019617（JPMorgan），10\-K 年度值 · origin\_id：sec\-jpm · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "净息差、拨备与盈利", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000019617\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000019617.json)
+
+S\-PX\-JPM · Nasdaq · T0 · published\_at：2026\-11\-13 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：11/13/2026 close $346\.19 · locator：Nasdaq JPM historical quotes, 2026\-11\-01 至 2026\-11\-14，取 11/13 收盘 · origin\_id：nasdaq\-jpm · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "decisive", "purpose": "P/E 与 P/B", "reason": "交易所收盘价", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "JPM", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2026\-11\-13T16:00:00\-05:00", "unit": "USD/share", "value": 346\.19\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/jpm/historical](https://www.nasdaq.com/market-activity/stocks/jpm/historical)
 
 来源状态：\{"sec": \{"status": "ok"\}\}
