@@ -349,7 +349,7 @@
     },
     {
       "id": "I-JUDGE",
-      "text": "FY2023→FY2025 三家营业利润率全部扩张、capex 强度全部上升、FCF 利润率全部下降；AI 资本开支没有压营业利润率，压的是自由现金流，未来风险在折旧追赶",
+      "text": "FY2023→FY2025 三家营业利润率扩张、capex 强度上升、FCF 利润率下降；折旧增速是收入增速的 1.4–3 倍，折旧追赶已开始，但被收入增长盖过；利润率风险取决于收入与折旧的赛跑。",
       "type": "inference",
       "as_of": "2026-11-14T00:00:00Z",
       "sources": [],
@@ -382,7 +382,13 @@
         "AMZN-OP-25",
         "AMZN-CAPEX-25",
         "AMZN-CFO-25",
-        "I-MECH"
+        "I-MECH",
+        "MSFT-DA-23",
+        "MSFT-DA-25",
+        "GOOGL-DA-23",
+        "GOOGL-DA-25",
+        "AMZN-DA-23",
+        "AMZN-DA-25"
       ]
     },
     {
@@ -397,6 +403,83 @@
         "MSFT-REV-26",
         "MSFT-OP-26",
         "I-MECH"
+      ]
+    },
+    {
+      "id": "MSFT-DA-23",
+      "text": "MSFT FY2023 折旧 11,000 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-DA-25",
+      "text": "MSFT FY2025 折旧 22,000 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-DA-26",
+      "text": "MSFT FY2026 折旧 34,300 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-DA-23",
+      "text": "Alphabet FY2023 折旧 11,946 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-DA-25",
+      "text": "Alphabet FY2025 折旧 21,136 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-DA-23",
+      "text": "Amazon FY2023 折旧与摊销 48,663 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-DA-25",
+      "text": "Amazon FY2025 折旧与摊销 65,756 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
       ]
     }
   ]
