@@ -542,5 +542,113 @@
       "conditions": "同行倍数或微软盈利预期变化时重算"
     }
   },
-  "layout": "brief"
+  "layout": "brief",
+  "summary": {
+    "conclusion": "微软最近财年 P/E 约 29.2x，低于三家同行中位 37.2x，折价约 21.5%；但 Alphabet 只有 27.4x，同组内本身分层。",
+    "surprise": "折价并不等于全组最低——Alphabet 更低；同行财年终点不同，倍数并非完全可比。",
+    "next_check": "看同行下一财年盈利与增速：若微软盈利增速不低于同行，折价才可能收敛；否则折价是合理的。"
+  },
+  "implications": [
+    {
+      "title": "折价事实成立，低估不成立",
+      "text": "29.2x vs 37.2x 是事实；但财年、增长与资本结构不同，折价本身不足以证明低估。",
+      "claim_ids": [
+        "I-JUDGE",
+        "I-PE",
+        "PX-MSFT",
+        "NI-MSFT"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "同行中位数会掩盖分层",
+      "text": "Alphabet 27.4x 低于微软，说明「同行中位」不是每家的锚；比较要看单家财年与增长。",
+      "claim_ids": [
+        "I-PE",
+        "PX-GOOGL",
+        "NI-GOOGL"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "隐含区间不是目标价",
+      "text": "按同行中位倍数推出的 667 美元/股只是倍数参照，不是目标价；不要当买卖信号。",
+      "claim_ids": [
+        "O-EQ",
+        "PX-MSFT"
+      ],
+      "horizon": "—"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "折价收敛",
+      "thesis": "微软盈利增速不低于同行，P/E 向同行中位靠拢。",
+      "triggers": [
+        "微软 EPS 增速 ≥ 同行中位",
+        "P/E 折价收窄到 10% 以内"
+      ],
+      "implication": "折价被增长证明为低估。"
+    },
+    {
+      "name": "折价维持",
+      "thesis": "增长与资本开支差异持续，折价长期存在。",
+      "triggers": [
+        "EPS 增速低于同行",
+        "P/E 折价维持 20% 左右"
+      ],
+      "implication": "折价是结构性折价，不是机会。"
+    },
+    {
+      "name": "折价扩大",
+      "thesis": "盈利下修或资本开支压力使折价扩大。",
+      "triggers": [
+        "EPS 下修",
+        "P/E 折价超过 30%"
+      ],
+      "implication": "折价反映风险，不是低估。"
+    }
+  ],
+  "charts": [
+    {
+      "kind": "bar",
+      "title": "大型科技同行 P/E（2026-11-13 收盘 / 最近财年 EPS）",
+      "x_label": "公司",
+      "y_label": "倍",
+      "unit": "倍",
+      "rows": [
+        {
+          "label": "MSFT",
+          "value": 29.2
+        },
+        {
+          "label": "AAPL",
+          "value": 39.7
+        },
+        {
+          "label": "GOOGL",
+          "value": 27.4
+        },
+        {
+          "label": "AMZN",
+          "value": 37.2
+        }
+      ],
+      "claim_ids": [
+        "PX-MSFT",
+        "NI-MSFT",
+        "SH-MSFT",
+        "PX-AAPL",
+        "NI-AAPL",
+        "SH-AAPL",
+        "PX-GOOGL",
+        "NI-GOOGL",
+        "SH-GOOGL",
+        "PX-AMZN",
+        "NI-AMZN",
+        "SH-AMZN"
+      ],
+      "note": "P/E=收盘价/(净利润/稀释股数)；各公司财年终点不同。"
+    }
+  ]
 }

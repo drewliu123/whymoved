@@ -125,8 +125,8 @@
 
 ### P20-2 旧示例结构回填
 
-- 状态：待认领
-- 顺序：mega-cap-peers → aapl-quality → msft-earnings-quality / msft-segments / msft-trend。
+- 状态：进行中（已完成 mega-cap-peers、aapl-quality）
+- 剩余：msft-earnings-quality / msft-segments / msft-trend。
 - 只补摘要、含义、情景与单一单位图；不新增事实。
 
 ### P10-4 暂缓
@@ -290,6 +290,7 @@
 
 ## 已完成
 
+- P20-3 mega-cap-peers、aapl-quality 结构补齐 — 2026-11-14，Cycle 136
 - P20-1 msft-cashflow 结构补齐 — 2026-11-14，Cycle 135
 - P19-3 answer 压缩与上限 — 2026-11-14，Cycle 134
 - P19-2 礼来增长质量 — 2026-11-14，Cycle 133
