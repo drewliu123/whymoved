@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-14",
+  "note": "consensus 是公开叙事/趋势外推，不是分析师一致预期；本机无法取得 consensus 数据。",
+  "entries": [
+    {
+      "id": "P1",
+      "example": "msft-cashflow",
+      "metric": "capex/revenue",
+      "threshold": 33.0,
+      "direction": "below",
+      "unit": "%",
+      "consensus": "趋势外推：capex/收入维持 35% 以上",
+      "forecast": "FY2027 的 capex/收入低于 33%",
+      "horizon_end": "2027-07-31",
+      "benchmark": "FY2026 的 34.9%",
+      "invalidation": "capex/收入高于或等于 36%",
+      "source": "SEC XBRL，微软 FY2027 10-K",
+      "status": "open"
+    },
+    {
+      "id": "P2",
+      "example": "lly-growth-quality",
+      "metric": "inventory_days",
+      "threshold": 420.0,
+      "direction": "below",
+      "unit": "天",
+      "consensus": "扩张延续，存货天数维持 450 左右",
+      "forecast": "FY2026 存货天数低于 420",
+      "horizon_end": "2027-02-28",
+      "benchmark": "FY2025 的 450.5 天",
+      "invalidation": "存货天数高于或等于 450",
+      "source": "SEC XBRL，礼来 FY2026 10-K",
+      "status": "open"
+    },
+    {
+      "id": "P3",
+      "example": "jpm-nim-provisions",
+      "metric": "roe",
+      "threshold": 15.5,
+      "direction": "below",
+      "unit": "%",
+      "consensus": "净息差企稳、拨备见顶，ROE 维持 15.7% 以上",
+      "forecast": "FY2026 ROE 低于 15.5%",
+      "horizon_end": "2027-01-31",
+      "benchmark": "FY2025 的 15.7%",
+      "invalidation": "ROE 高于或等于 16.0%",
+      "source": "SEC XBRL，JPM FY2026 10-K",
+      "status": "open"
+    },
+    {
+      "id": "P4",
+      "example": "nvda-growth-quality",
+      "metric": "dso",
+      "threshold": 65.0,
+      "direction": "below",
+      "unit": "天",
+      "consensus": "增长伴随应收上升，DSO 继续升",
+      "forecast": "FY2027 应收天数低于或等于 65 天",
+      "horizon_end": "2027-02-28",
+      "benchmark": "FY2026 的 65.0 天",
+      "invalidation": "DSO 高于 70 天",
+      "source": "SEC XBRL，英伟达 FY2027 10-K",
+      "status": "open"
+    },
+    {
+      "id": "P5",
+      "example": "xom-capital-allocation",
+      "metric": "buybacks",
+      "threshold": 18.0,
+      "direction": "below",
+      "unit": "十亿美元",
+      "consensus": "回购维持 200 亿美元以上",
+      "forecast": "FY2026 回购低于 180 亿美元",
+      "horizon_end": "2027-02-28",
+      "benchmark": "FY2025 的 202.7 亿美元",
+      "invalidation": "回购高于或等于 200 亿美元",
+      "source": "SEC XBRL，埃克森 FY2026 10-K",
+      "status": "open"
+    }
+  ]
+}

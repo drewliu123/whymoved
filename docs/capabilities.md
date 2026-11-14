@@ -72,3 +72,9 @@
 ## 综合
 
 - [2026 研究总览](research-synthesis-2026.md)：19 个案例的五个共同机制与边界。
+
+
+## 预测实验
+
+- [预测协议](prediction-protocol.md)：可证伪预测的字段、五条预测与打分规则。
+- [预测日志](../predictions/2026-11.json)：JSON 记录，脚本打分。

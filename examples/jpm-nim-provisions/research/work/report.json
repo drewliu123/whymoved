@@ -933,5 +933,12 @@
       "claim_ids": [],
       "model_ids": []
     }
+  },
+  "prediction": {
+    "consensus": "净息差企稳、拨备见顶，ROE 维持 15.7% 以上",
+    "forecast": "FY2026 ROE 低于 15.5%",
+    "horizon": "FY2026 10-K（2027-01）",
+    "benchmark": "FY2025 的 15.7%",
+    "invalidation": "ROE 高于或等于 16.0%"
   }
 }

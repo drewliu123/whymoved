@@ -747,5 +747,12 @@
       "claim_ids": [],
       "model_ids": []
     }
+  },
+  "prediction": {
+    "consensus": "回购维持 200 亿美元以上",
+    "forecast": "FY2026 回购低于 180 亿美元",
+    "horizon": "FY2026 10-K（2027-02）",
+    "benchmark": "FY2025 的 202.7 亿美元",
+    "invalidation": "回购高于或等于 200 亿美元"
   }
 }

@@ -259,6 +259,13 @@ def validate_report(report, ledger, sources=None):
     layout = report.get("layout")
     if layout is not None and layout not in ("classic", "brief"):
         errors.append("layout must be classic or brief")
+    prediction = report.get("prediction")
+    if prediction is not None:
+        if not isinstance(prediction, dict) or set(prediction) != {"consensus", "forecast", "horizon", "benchmark", "invalidation"}:
+            errors.append("prediction must contain exactly consensus, forecast, horizon, benchmark and invalidation")
+        elif any(not _text(prediction.get(key)) for key in ("consensus", "forecast", "horizon", "benchmark", "invalidation")):
+            errors.append("prediction fields must be nonempty text")
+
     summary = report.get("summary")
     if summary is not None:
         if not isinstance(summary, dict) or set(summary) != {"conclusion", "surprise", "next_check"}:
@@ -700,6 +707,11 @@ def _blocks(report, ledger, sources):
             yield ("p", label + "：" + report["summary"][key])
     yield ("h2", "判断")
     yield ("p", report["answer"]["text"], report["answer"]["claim_ids"])
+    if report.get("prediction"):
+        prediction = report["prediction"]
+        yield ("h2", "预测与失效条件")
+        for key, label in (("consensus", "共识/基准预期"), ("forecast", "本报告预测"), ("horizon", "期限"), ("benchmark", "比较基准"), ("invalidation", "失效条件")):
+            yield ("p", label + "：" + prediction[key])
     if report.get("opportunity"):
         from opportunity_contract import opportunity_blocks
         yield from opportunity_blocks(report["opportunity"])

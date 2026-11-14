@@ -859,5 +859,12 @@
       "claim_ids": [],
       "model_ids": []
     }
+  },
+  "prediction": {
+    "consensus": "增长伴随应收上升，DSO 继续升",
+    "forecast": "FY2027 应收天数低于或等于 65 天",
+    "horizon": "FY2027 10-K（2027-02）",
+    "benchmark": "FY2026 的 65.0 天",
+    "invalidation": "DSO 高于 70 天"
   }
 }

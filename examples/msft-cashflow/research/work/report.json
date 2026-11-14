@@ -757,5 +757,12 @@
       ],
       "note": "同一单位；FCF=CFO−现金资本开支。"
     }
-  ]
+  ],
+  "prediction": {
+    "consensus": "趋势外推：capex/收入维持 35% 以上",
+    "forecast": "FY2027 的 capex/收入低于 33%",
+    "horizon": "FY2027 10-K（2027-07）",
+    "benchmark": "FY2026 的 34.9%",
+    "invalidation": "capex/收入高于或等于 36%"
+  }
 }

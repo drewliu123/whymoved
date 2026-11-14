@@ -4,6 +4,14 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 1.2.0 · 预测实验：从解释转向可证伪下注
+
+- 报告新增可选 `prediction` 字段：共识/基准预期、预测、期限、比较基准、失效条件；渲染为「预测与失效条件」一节。
+- 新增 [predictions/2026-11.json](predictions/2026-11.json)：5 条预测（微软 capex/收入、礼来存货天数、JPM ROE、英伟达 DSO、埃克森回购），全部 open。
+- 新增 [scripts/prediction_log.py](scripts/prediction_log.py)：list 与 score；到期前拒绝打分、每条只能打一次、记录 observed 与 scored_at。
+- 新增 [docs/prediction-protocol.md](docs/prediction-protocol.md)：说明共识数据不可得、当前用公开叙事/趋势外推替代，以及打分规则。
+- README 明确「不是阿尔法引擎」；5 个示例加入预测块；585 个测试通过。
+
 ## 1.1.0 · 全托管阶段收口
 
 - 25 轮全托管：19 个示例、11 个估值覆盖、FOMC 23 次、微软/苹果 FY2026、埃克森/辉瑞新增。

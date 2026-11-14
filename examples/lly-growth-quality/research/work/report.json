@@ -678,5 +678,12 @@
       "claim_ids": [],
       "model_ids": []
     }
+  },
+  "prediction": {
+    "consensus": "扩张延续，存货天数维持 450 左右",
+    "forecast": "FY2026 存货天数低于 420",
+    "horizon": "FY2026 10-K（2027-02）",
+    "benchmark": "FY2025 的 450.5 天",
+    "invalidation": "存货天数高于或等于 450"
   }
 }
