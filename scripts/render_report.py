@@ -240,6 +240,22 @@ def validate_report(report, ledger, sources=None):
         errors.append("report.type is invalid")
     if not _date(report.get("as_of")):
         errors.append("report.as_of must be an ISO date/datetime")
+    scenarios = report.get("scenarios")
+    if scenarios is not None:
+        if not isinstance(scenarios, list) or not scenarios:
+            errors.append("scenarios must be a nonempty list")
+        else:
+            for n, item in enumerate(scenarios):
+                path = "scenarios[%d]" % n
+                if not isinstance(item, dict):
+                    errors.append(path + " must be an object")
+                    continue
+                for key in ("name", "thesis", "implication"):
+                    if not _text(item.get(key)):
+                        errors.append(path + "." + key + " must be nonempty text")
+                triggers = item.get("triggers")
+                if not isinstance(triggers, list) or not triggers or any(not _text(t) for t in triggers):
+                    errors.append(path + ".triggers must be a nonempty text list")
     summary = report.get("summary")
     if summary is not None:
         if not isinstance(summary, dict) or set(summary) != {"conclusion", "surprise", "next_check"}:
@@ -710,6 +726,13 @@ def _blocks(report, ledger, sources):
             suffix = "（" + item["horizon"] + "）" if item.get("horizon") else ""
             yield ("h3", item["title"])
             yield ("p", item["text"] + suffix, item.get("claim_ids", []))
+    if report.get("scenarios"):
+        yield ("h2", "情景与触发条件")
+        for item in report["scenarios"]:
+            yield ("h3", item["name"])
+            yield ("p", item["thesis"])
+            yield ("p", "触发：" + "；".join(item["triggers"]))
+            yield ("p", "含义：" + item["implication"])
     if report.get("analysis"):
         yield from _analysis_blocks(report["analysis"], answer_text=report["answer"]["text"])
     if report.get("valuation_summary"):

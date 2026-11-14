@@ -55,6 +55,8 @@ increment.kind可为new_fact/calculation/connection/contradiction/judgment_updat
 
 findings为空时必须给no_change_reason，说明本轮检查了哪些信号、为何未改变判断。answer仍需证据引用。所有重要分析通过claim_ids入账。
 
+可选`scenarios`：`[{name,thesis,triggers:[...],implication}]`，写「看到什么就相信什么」的情景，而不是概率预测。每条给 1–4 个可观察触发条件与一个含义；渲染为「情景与触发条件」，一页纸取前三条。不要用情景包装预测数字；触发条件必须能用下一份披露核对。
+
 可选`implications`：`[{title,text,claim_ids?,horizon?}]`，回答「这对投资判断意味着什么」，而不是复述发现或追加限制。渲染为「这意味着什么」一节（标题+正文+期限），一页纸取前三条。它不替代answer与findings：answer给结论，findings给证据与机制，implications给读者该怎么用。写作要求：每条落到一个判断或动作（如「资本开支不是均匀的行业 beta」「设备端下修可能更晚更陡」），避免「需持续关注」这类空话；horizon写适用期限（如「未来 4–6 个季度」「下一次财报」）。
 
 可选chart：`{title,x_label,y_label,unit,rows:[{label,value}],claim_ids,note}`。value必须有限数值，口径相同、时间顺序明确；图表依数据需要选用。多序列改用`series:[{name,rows:[{label,value}]}]`替代`rows`：各序列的label必须完全一致（同一横轴），unit共享，渲染时以实线/虚线区分并在图下列出系列名；单序列仍保留原有悬停读数，多序列的精确数值以同源数据表为准。`rows`与`series`不能同时出现。需要多张图时用`charts:[...]`（每个元素与`chart`同构，单序列或多序列均可），`chart`与`charts`不能同时出现；每张图仍自动附同源数据表。可选`kind`：`line`（默认）/`bar`/`waterfall`。`bar`可以带`series`（分组柱状，同组从左到右按系列排列，色调由深到浅，图下列出系列顺序）；再加`bar_mode: "stacked"`变成堆叠柱状（展示构成与占比，要求全为非负值，自下而上按系列堆叠）。`waterfall`只能用`rows`，不能带`series`。`waterfall`每行必须有`role`（`total`或`delta`），首行必须是`total`；后续`total`必须等于前面累计值，否则校验失败——这让利润桥、现金流桥自己检查算术。渲染时合计与变动用不同填充与线型区分，表格标签自动补「合计/变动」。渲染器附同源数据表、键盘读数、明暗/移动布局。不要双轴混量纲，不以图形暗示不存在的因果。

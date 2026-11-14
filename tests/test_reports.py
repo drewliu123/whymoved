@@ -491,6 +491,19 @@ class QualityReportTests(unittest.TestCase):
 
 
 class EventStudyReportTests(unittest.TestCase):
+    def test_scenarios_section(self):
+        report, ledger, sources = documents()
+        report["scenarios"] = [
+            {"name": "情景甲", "thesis": "如果 A 发生", "triggers": ["指标一", "指标二"], "implication": "则判断下调"},
+            {"name": "情景乙", "thesis": "如果 B 发生", "triggers": ["指标三"], "implication": "则判断维持"}]
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        html = render_report.render_html(report, ledger, sources)
+        for token in ("情景与触发条件", "情景甲", "触发：指标一；指标二", "则判断下调"):
+            self.assertIn(token, html)
+        bad = documents()
+        bad[0]["scenarios"] = [{"name": "x", "thesis": "y", "triggers": [], "implication": "z"}]
+        self.assertTrue(any("triggers must be" in error for error in render_report.validate_report(*bad)))
+
     def test_executive_summary(self):
         report, ledger, sources = documents()
         report["summary"] = {"conclusion": "结论一句", "surprise": "反直觉一句", "next_check": "验证一句"}

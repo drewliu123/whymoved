@@ -333,6 +333,17 @@ def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
     findings = _findings(report, max_findings)
     if findings:
         lines.extend(["", "## 关键发现", ""] + ["%d. %s" % (index, row) for index, row in enumerate(findings, 1)])
+    scenarios = report.get("scenarios")
+    if isinstance(scenarios, list) and scenarios:
+        lines.extend(["", "## 情景", ""])
+        for item in scenarios[:3]:
+            if not isinstance(item, dict) or not isinstance(item.get("name"), str) or not isinstance(item.get("thesis"), str):
+                continue
+            triggers = item.get("triggers") if isinstance(item.get("triggers"), list) else []
+            implication = item.get("implication") if isinstance(item.get("implication"), str) else ""
+            lines.append("- **%s**：%s（触发：%s → %s）" % (
+                _escape(item["name"]), _escape(item["thesis"]),
+                _escape("；".join(t for t in triggers if isinstance(t, str))), _escape(implication)))
     implications = report.get("implications")
     if isinstance(implications, list) and implications:
         lines.extend(["", "## 这意味着什么", ""])

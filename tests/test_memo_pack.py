@@ -89,6 +89,14 @@ class MemoContentTests(unittest.TestCase):
 
 
 class MemoLinkedSectionsTests(unittest.TestCase):
+    def test_scenarios_in_memo(self):
+        report, ledger, sources = documents()
+        report["scenarios"] = [{"name": "情景甲", "thesis": "如果 A 发生", "triggers": ["指标一"], "implication": "判断下调"}]
+        text = memo((report, ledger, sources))
+        self.assertIn("## 情景", text)
+        self.assertIn("情景甲", text)
+        self.assertIn("判断下调", text)
+
     def test_executive_summary_in_memo(self):
         report, ledger, sources = documents()
         report["summary"] = {"conclusion": "结论一句", "surprise": "反直觉一句", "next_check": "验证一句"}
