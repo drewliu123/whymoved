@@ -1,4 +1,4 @@
-# AI 资本开支：折旧追赶已经开始，只是被收入盖过
+# AI 资本开支：三家利润率仍扩张，Meta 已先拐头
 
 AI 资本开支是在压利润率，还是被收入增长消化？
 
@@ -6,11 +6,11 @@ AI 资本开支是在压利润率，还是被收入增长消化？
 
 ## 执行摘要
 
-结论：年度看，三家营业利润率扩张（\+3\.9/\+4\.6/\+4\.7 个百分点），但折旧增速是收入增速的 1\.4–3 倍。截至 2026 年 3 月季度，利润率仍在扩张，拐点还没到——但赛跑在变紧。
+结论：三家云厂商 FY2023→FY2025 营业利润率仍在扩张，折旧追赶被收入盖过；但 Meta 2026 年 9 月季度营业利润率从 40\.1% 降到 20\.1%，拐点已经出现在第四家。
 
-最反直觉：最新季度（2026 年 3 月）折旧同比 \+55\.2% / \+44\.5% / \+32\.8%，收入 \+18\.3% / \+21\.8% / \+16\.6%，营业利润率却仍同比上升 0\.7–2\.2 个百分点。折旧追赶没有停止，只是还没压过收入。
+最反直觉：Meta 折旧同比只增 43\.1%，不足以解释 20 个百分点的利润率下降——利润率拐点可能来自折旧之外的成本；不能把四家当成同一个行业模式。
 
-接下来验证：看收入增速与折旧增速的赛跑：收入降到 10% 以下而折旧仍 &gt;20% 时，营业利润率会先于现金流反应。
+接下来验证：拆 Meta 的营业费用与一次性项目，判断 20 个百分点里有多少会重复；同时看另外三家下一季度是否跟随。
 
 ## 判断
 
@@ -78,6 +78,16 @@ FY2023→FY2025 折旧：微软 \+100\.0%、Alphabet \+76\.9%、亚马逊 \+35\.
 
 研究增量（new\_fact）：微软 FY2026 先行样本
 
+## Meta 是反例：最新季度利润率减半
+
+Meta 2026 年 9 月季度收入 \+26\.1%，营业利润 20,535→12,988，营业利润率 40\.1%→20\.1%；折旧 4,760→6,810（\+43\.1%），只能解释其中一小部分。 [META\-25Q3\-REV] [META\-26Q3\-REV] [META\-25Q3\-OP] [META\-26Q3\-OP] [META\-25Q3\-DA] [META\-26Q3\-DA]
+
+为什么重要：如果折旧不足以解释 Meta 的利润率下降，那么「AI 资本开支不压利润率」在第四家身上不成立；需要区分折旧与其他成本。
+
+相较基线：三家利润率扩张
+
+研究增量（contradiction）：Meta 最新季度利润率减半
+
 ## 这意味着什么
 
 ### 利润率的风险是条件性的
@@ -91,6 +101,10 @@ FY2023→FY2025 折旧：微软 \+100\.0%、Alphabet \+76\.9%、亚马逊 \+35\.
 ### 微软 FY2026 是压力样本
 
 capex 强度 34\.9%、FCF 利润率 20\.2%、折旧强度 10\.3%，营业利润率仍 46\.8%；三者同时收紧时才是拐点。（FY2027） [I\-RISK] [MSFT\-CAPEX\-26] [MSFT\-CFO\-26] [MSFT\-DA\-26]
+
+### 不要把一个行业当成同质样本
+
+三家仍扩张、Meta 已拐头；利润率拐点可能来自折旧之外的成本。把四家当成同一个 AI 资本开支模式，会漏掉公司层面的费用冲击。（下一季度） [META\-25Q3\-OP] [META\-26Q3\-OP] [META\-26Q3\-DA] [MSFT\-26Q1\-OP]
 
 ## 情景与触发条件
 
@@ -118,9 +132,17 @@ AI 收入增长快于折旧，利润率维持。
 
 含义：现金流压力缓解，但需确认需求没有同步走弱。
 
+### 成本冲击扩散
+
+Meta 的利润率下降来自折旧之外的费用，且其他三家开始出现类似成本。
+
+触发：其他三家营业费用增速 &gt; 收入增速；营业利润率连续两季下降；折旧增速仍低于利润率降幅
+
+含义：利润率拐点先于折旧到来，估值需要重估。
+
 ## 分析判断
 
-资本开支没有压营业利润率，但折旧追赶已经开始；最新季度利润率仍在扩张，说明收入仍跑赢折旧。拐点取决于这个赛跑，而不是折旧的绝对水平。 [I\-JUDGE]
+三家云厂商利润率仍在扩张、折旧追赶被收入盖过；Meta 最新季度利润率减半且折旧只能解释一小部分，说明利润率拐点可能来自折旧之外的成本，行业不是同质样本。 [I\-JUDGE]
 
 传导关系：资本开支 → 折旧 → 营业利润 → 自由现金流
 
@@ -133,8 +155,9 @@ AI 收入增长快于折旧，利润率维持。
 | MSFT | 41\.8 | 46\.8 | 13\.3 | 34\.9 | 28\.1 | 20\.2 |
 | GOOGL | 27\.4 | 32\.0 | 10\.5 | 22\.7 | 22\.6 | 18\.2 |
 | AMZN | 6\.4 | 11\.2 | 9\.2 | 18\.4 | 5\.6 | 1\.1 |
+| META | 34\.7 | 41\.4 | 20\.0 | 34\.7 | 32\.7 | 22\.9 |
 
-[MSFT\-REV\-23] [MSFT\-REV\-25] [MSFT\-REV\-26] [MSFT\-OP\-23] [MSFT\-OP\-25] [MSFT\-OP\-26] [MSFT\-CAPEX\-23] [MSFT\-CAPEX\-25] [MSFT\-CAPEX\-26] [MSFT\-CFO\-23] [MSFT\-CFO\-25] [MSFT\-CFO\-26] [GOOGL\-REV\-23] [GOOGL\-REV\-25] [GOOGL\-OP\-23] [GOOGL\-OP\-25] [GOOGL\-CAPEX\-23] [GOOGL\-CAPEX\-25] [GOOGL\-CFO\-23] [GOOGL\-CFO\-25] [AMZN\-REV\-23] [AMZN\-REV\-25] [AMZN\-OP\-23] [AMZN\-OP\-25] [AMZN\-CAPEX\-23] [AMZN\-CAPEX\-25] [AMZN\-CFO\-23] [AMZN\-CFO\-25]
+[MSFT\-REV\-23] [MSFT\-REV\-25] [MSFT\-REV\-26] [MSFT\-OP\-23] [MSFT\-OP\-25] [MSFT\-OP\-26] [MSFT\-CAPEX\-23] [MSFT\-CAPEX\-25] [MSFT\-CAPEX\-26] [MSFT\-CFO\-23] [MSFT\-CFO\-25] [MSFT\-CFO\-26] [GOOGL\-REV\-23] [GOOGL\-REV\-25] [GOOGL\-OP\-23] [GOOGL\-OP\-25] [GOOGL\-CAPEX\-23] [GOOGL\-CAPEX\-25] [GOOGL\-CFO\-23] [GOOGL\-CFO\-25] [AMZN\-REV\-23] [AMZN\-REV\-25] [AMZN\-OP\-23] [AMZN\-OP\-25] [AMZN\-CAPEX\-23] [AMZN\-CAPEX\-25] [AMZN\-CFO\-23] [AMZN\-CFO\-25] [META\-REV\-23] [META\-REV\-25] [META\-OP\-23] [META\-OP\-25] [META\-CAPEX\-23] [META\-CAPEX\-25] [META\-CFO\-23] [META\-CFO\-25]
 
 利润率=营业利润/收入；capex 强度=资本开支/收入；FCF 利润率=\(经营现金流−资本开支\)/收入；由披露值计算并四舍五入。
 
@@ -182,8 +205,9 @@ FY2026 为微软最新财年，与其他两家期间不可直接比较，仅作�
 | MSFT | 5\.0 | 21\.6 | \-7\.9 |
 | GOOGL | 4\.6 | 12\.2 | \-4\.4 |
 | AMZN | 4\.8 | 9\.2 | \-4\.5 |
+| META | 6\.8 | 14\.6 | \-9\.7 |
 
-[MSFT\-REV\-23] [MSFT\-REV\-25] [MSFT\-REV\-26] [MSFT\-OP\-23] [MSFT\-OP\-25] [MSFT\-OP\-26] [MSFT\-CAPEX\-23] [MSFT\-CAPEX\-25] [MSFT\-CAPEX\-26] [MSFT\-CFO\-23] [MSFT\-CFO\-25] [MSFT\-CFO\-26] [GOOGL\-REV\-23] [GOOGL\-REV\-25] [GOOGL\-OP\-23] [GOOGL\-OP\-25] [GOOGL\-CAPEX\-23] [GOOGL\-CAPEX\-25] [GOOGL\-CFO\-23] [GOOGL\-CFO\-25] [AMZN\-REV\-23] [AMZN\-REV\-25] [AMZN\-OP\-23] [AMZN\-OP\-25] [AMZN\-CAPEX\-23] [AMZN\-CAPEX\-25] [AMZN\-CFO\-23] [AMZN\-CFO\-25]
+[MSFT\-REV\-23] [MSFT\-REV\-25] [MSFT\-REV\-26] [MSFT\-OP\-23] [MSFT\-OP\-25] [MSFT\-OP\-26] [MSFT\-CAPEX\-23] [MSFT\-CAPEX\-25] [MSFT\-CAPEX\-26] [MSFT\-CFO\-23] [MSFT\-CFO\-25] [MSFT\-CFO\-26] [GOOGL\-REV\-23] [GOOGL\-REV\-25] [GOOGL\-OP\-23] [GOOGL\-OP\-25] [GOOGL\-CAPEX\-23] [GOOGL\-CAPEX\-25] [GOOGL\-CFO\-23] [GOOGL\-CFO\-25] [AMZN\-REV\-23] [AMZN\-REV\-25] [AMZN\-OP\-23] [AMZN\-OP\-25] [AMZN\-CAPEX\-23] [AMZN\-CAPEX\-25] [AMZN\-CFO\-23] [AMZN\-CFO\-25] [META\-REV\-23] [META\-REV\-25] [META\-OP\-23] [META\-OP\-25] [META\-CAPEX\-23] [META\-CAPEX\-25] [META\-CFO\-23] [META\-CFO\-25]
 
 单位百分点；由披露值计算。
 
@@ -247,7 +271,7 @@ FY2026 为微软最新财年，与其他两家期间不可直接比较，仅作�
 
 
 
-观察结果：营业利润率全部上升、FCF 利润率全部下降，支持 H2；同时折旧增速是收入增速的 1\.4–3 倍，说明 H2 的「压力在现金流」正在向利润表传导。 最新季度营业利润率仍同比上升，说明折旧追赶尚未压过收入。 [I\-JUDGE] [MSFT\-OP\-25] [GOOGL\-OP\-25] [AMZN\-OP\-25] [MSFT\-CFO\-25] [GOOGL\-CFO\-25] [AMZN\-CFO\-25] [MSFT\-DA\-23] [MSFT\-DA\-25] [GOOGL\-DA\-23] [GOOGL\-DA\-25] [AMZN\-DA\-23] [AMZN\-DA\-25] [MSFT\-26Q1\-OP] [MSFT\-25Q1\-OP] [GOOGL\-26Q1\-OP] [GOOGL\-25Q1\-OP] [AMZN\-26Q1\-OP] [AMZN\-25Q1\-OP]
+观察结果：营业利润率全部上升、FCF 利润率全部下降，支持 H2；同时折旧增速是收入增速的 1\.4–3 倍，说明 H2 的「压力在现金流」正在向利润表传导。 最新季度营业利润率仍同比上升，说明折旧追赶尚未压过收入。 Meta 最新季度利润率减半、折旧仅解释一小部分，说明成本冲击可能先于折旧。 [I\-JUDGE] [MSFT\-OP\-25] [GOOGL\-OP\-25] [AMZN\-OP\-25] [MSFT\-CFO\-25] [GOOGL\-CFO\-25] [AMZN\-CFO\-25] [MSFT\-DA\-23] [MSFT\-DA\-25] [GOOGL\-DA\-23] [GOOGL\-DA\-25] [AMZN\-DA\-23] [AMZN\-DA\-25] [MSFT\-26Q1\-OP] [MSFT\-25Q1\-OP] [GOOGL\-26Q1\-OP] [GOOGL\-25Q1\-OP] [AMZN\-26Q1\-OP] [AMZN\-25Q1\-OP] [META\-25Q3\-OP] [META\-26Q3\-OP] [META\-26Q3\-DA]
 
 支持：H2；削弱：H1
 
@@ -481,6 +505,70 @@ FY2026 为微软最新财年，与其他两家期间不可直接比较，仅作�
 
 依据：；来源：S\-AMZN
 
+\[META\-REV\-23\] Meta FY2023 收入 134,902 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-REV\-25\] Meta FY2025 收入 200,966 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-OP\-23\] Meta FY2023 营业利润 46,751 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-OP\-25\] Meta FY2025 营业利润 83,276 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-CAPEX\-23\] Meta FY2023 资本开支 27,045 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-CAPEX\-25\] Meta FY2025 资本开支 69,691 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-CFO\-23\] Meta FY2023 经营现金流 71,113 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-CFO\-25\] Meta FY2025 经营现金流 115,800 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-DA\-23\] Meta FY2023 折旧 11,020 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-DA\-25\] Meta FY2025 折旧 18,000 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-25Q3\-REV\] Meta 2025 年 9 月季度收入 51,242 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-26Q3\-REV\] Meta 2026 年 9 月季度收入 64,601 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-25Q3\-OP\] Meta 2025 年 9 月季度营业利润 20,535 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-26Q3\-OP\] Meta 2026 年 9 月季度营业利润 12,988 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-25Q3\-DA\] Meta 2025 年 9 月季度折旧 4,760 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
+\[META\-26Q3\-DA\] Meta 2026 年 9 月季度折旧 6,810 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-META
+
 S\-MSFT · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: 微软 · locator：data\.sec\.gov companyfacts CIK0000789019（微软），10\-K 年度值 · origin\_id：sec\-msft · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "资本开支、营业利润与现金流", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000789019\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json)
@@ -492,5 +580,9 @@ S\-GOOGL · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\
 S\-AMZN · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: 亚马逊 · locator：data\.sec\.gov companyfacts CIK0001018724（亚马逊），10\-K 年度值 · origin\_id：sec\-amzn · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "资本开支、营业利润与现金流", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0001018724\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json)
+
+S\-META · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K / 10\-Q company facts, USD: Meta Platforms · locator：data\.sec\.gov companyfacts CIK0001326801（Meta Platforms），10\-K 与 10\-Q · origin\_id：sec\-meta · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "第四家对照与最新季度反例", "reason": "官方 XBRL 事实", "relevance": "direct", "selected": true\}
+
+[https://data\.sec\.gov/api/xbrl/companyfacts/CIK0001326801\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json)
 
 来源状态：\{"sec": \{"status": "ok"\}\}

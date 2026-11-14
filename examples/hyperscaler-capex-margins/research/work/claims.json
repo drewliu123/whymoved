@@ -679,6 +679,182 @@
           "source_id": "S-AMZN"
         }
       ]
+    },
+    {
+      "id": "META-REV-23",
+      "text": "Meta FY2023 收入 134,902 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-REV-25",
+      "text": "Meta FY2025 收入 200,966 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-OP-23",
+      "text": "Meta FY2023 营业利润 46,751 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-OP-25",
+      "text": "Meta FY2025 营业利润 83,276 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-CAPEX-23",
+      "text": "Meta FY2023 资本开支 27,045 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-CAPEX-25",
+      "text": "Meta FY2025 资本开支 69,691 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-CFO-23",
+      "text": "Meta FY2023 经营现金流 71,113 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-CFO-25",
+      "text": "Meta FY2025 经营现金流 115,800 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-DA-23",
+      "text": "Meta FY2023 折旧 11,020 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-DA-25",
+      "text": "Meta FY2025 折旧 18,000 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-25Q3-REV",
+      "text": "Meta 2025 年 9 月季度收入 51,242 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q3-REV",
+      "text": "Meta 2026 年 9 月季度收入 64,601 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-25Q3-OP",
+      "text": "Meta 2025 年 9 月季度营业利润 20,535 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q3-OP",
+      "text": "Meta 2026 年 9 月季度营业利润 12,988 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-25Q3-DA",
+      "text": "Meta 2025 年 9 月季度折旧 4,760 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
+    },
+    {
+      "id": "META-26Q3-DA",
+      "text": "Meta 2026 年 9 月季度折旧 6,810 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-META"
+        }
+      ]
     }
   ]
 }
