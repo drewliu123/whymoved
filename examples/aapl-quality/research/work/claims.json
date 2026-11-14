@@ -816,6 +816,204 @@
         "C21",
         "C24"
       ]
+    },
+    {
+      "id": "C33",
+      "text": "AAPL FY2025 revenue 416161 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C34",
+      "text": "AAPL FY2025 gross_profit 195201 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C35",
+      "text": "AAPL FY2025 operating_profit 133050 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C36",
+      "text": "AAPL FY2025 net_income 112010 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C37",
+      "text": "AAPL FY2025 cfo 111482 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C38",
+      "text": "AAPL FY2025 capex 12715 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C39",
+      "text": "AAPL FY2025 share_based_comp 12863 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C40",
+      "text": "AAPL FY2025 pretax_income 132729 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C41",
+      "text": "AAPL FY2025 income_tax 20719 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C42",
+      "text": "AAPL FY2026 revenue 478834 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C43",
+      "text": "AAPL FY2026 gross_profit 233602 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C44",
+      "text": "AAPL FY2026 operating_profit 158063 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C45",
+      "text": "AAPL FY2026 net_income 132175 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C46",
+      "text": "AAPL FY2026 cfo 145097 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C47",
+      "text": "AAPL FY2026 capex 9041 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C48",
+      "text": "AAPL FY2026 share_based_comp 13789 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C49",
+      "text": "AAPL FY2026 pretax_income 159237 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
+    },
+    {
+      "id": "C50",
+      "text": "AAPL FY2026 income_tax 27062 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S1"
+        }
+      ]
     }
   ]
 }
