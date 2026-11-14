@@ -173,6 +173,21 @@
         "C-PX",
         "I-ASSUMP"
       ]
+    },
+    {
+      "id": "O-DCF3",
+      "text": "在 8% 增长、8% 折现、2.5% 终值、5 年假设下，每股内在价值",
+      "type": "inference",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [],
+      "basis": [
+        "CFO-2026",
+        "CAPEX-2026",
+        "C-DEBT",
+        "C-CASH",
+        "C-SHARES",
+        "I-ASSUMP"
+      ]
     }
   ]
 }

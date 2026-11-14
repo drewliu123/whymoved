@@ -6,11 +6,13 @@
 
 ## 判断
 
-以 FY2026 自由现金流 66,987 百万美元（经营现金流 182,935 − 现金资本开支 115,948）、净债务 19,359、股数 7,453 百万与 2026\-11\-13 收盘 523\.88 美元为输入，在 8% 折现、2\.5% 终值、5 年显式期假设下，价格隐含约 31\.2% 的五年自由现金流增速；若显式期后再用 5 年线性收敛到终值增长，隐含增速降到约 23\.0%，敏感性区间 18\.9%–26\.6%。折现率改为 7%/9% 时，隐含增长约 25\.4%/36\.3%；终值改为 2%/3% 时约 33\.3%/28\.9%。同期按同一口径的自由现金流从 FY2024 的 74,071 降到 FY2026 的 66,987。两种口径都远高于过去三年自由现金流的方向，说明价格嵌入了资本开支回落后现金流重新加速的预期；这不构成买卖结论，阶段结构与假设本身决定结论。 [O\-DCF] [I\-JUDGE] [C\-PX]
+以 FY2026 自由现金流 66,987 百万美元（经营现金流 182,935 − 现金资本开支 115,948）、净债务 19,359、股数 7,453 百万与 2026\-11\-13 收盘 523\.88 美元为输入，在 8% 折现、2\.5% 终值、5 年显式期假设下，价格隐含约 31\.2% 的五年自由现金流增速；若显式期后再用 5 年线性收敛到终值增长，隐含增速降到约 23\.0%，敏感性区间 18\.9%–26\.6%。折现率改为 7%/9% 时，隐含增长约 25\.4%/36\.3%；终值改为 2%/3% 时约 33\.3%/28\.9%。同期按同一口径的自由现金流从 FY2024 的 74,071 降到 FY2026 的 66,987。两种口径都远高于过去三年自由现金流的方向。作为交叉检验，正向 DCF 在同一组现金流与 8% 折现下，若显式期增长 8%，每股价值约 209\.84 美元；要到约 31% 的增长才与现价 523\.88 美元吻合；终值占比约 78\.8%，说明结论对终值与增长假设高度敏感。这不构成买卖结论。 [O\-DCF] [I\-JUDGE] [C\-PX]
 
 重要限制：8% 折现率、2\.5% 终值与 5 年显式期都是研究者假设，不是市场共识；换假设结论会变。 [I\-ASSUMP]
 
 重要限制：自由现金流按 CFO − 现金资本开支；净债务只扣现金及等价物，不含 559 亿美元短期投资。 [C\-CASH]
+
+重要限制：正向 DCF 的终值占比约 78\.8%；折现率、终值与增长假设同时变动会显著改变每股价值，示例未做联合情景。 [O\-DCF3]
 
 ## 隐含增长约 31%，显著高于历史
 
@@ -52,6 +54,16 @@
 
 研究增量（connection）：口径与净债务声明
 
+## 正向 DCF 在 8% 增长下只有约 210 美元/股
+
+同一组 FCF、净债务、股数与折现假设，8% 增长对应每股约 209\.84 美元，仅为现价的约 40%；31% 增长才回到现价。 [O\-DCF3] [O\-DCF] [C\-PX] [I\-ASSUMP]
+
+为什么重要：正向与反向 DCF 互相校验：不是模型算不出价格，而是价格要求的增长远高于常见假设。
+
+相较基线：反向 DCF 的隐含增长单点
+
+研究增量（calculation）：正向 DCF 交叉检验
+
 ## 分析判断
 
 现价隐含约 31% 的自由现金流增速，远高于过去三年轨迹；结论依赖显式假设，不构成买卖建议。 [I\-JUDGE]
@@ -76,8 +88,9 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 反向 DCF 隐含增长 | 隐含增长率 | — | 0\.31181919614318754 | — | ratio | — |
 | 反向 DCF（5 年收敛） | 隐含增长率 | — | 0\.22958240197040136 | — | ratio | — |
+| 正向 DCF（8% 增长） | 每股价值 | 184\.2280982681096 | 209\.84437017430443 | 248\.49451223491957 | currency/share | \-0\.5994419138461013 |
 
-[O\-DCF] [O\-DCF2]
+[O\-DCF] [O\-DCF2] [O\-DCF3]
 
 参考现价（来自模型输入的带时刻价格）：523\.88 currency/share。
 
@@ -125,7 +138,7 @@
 
 
 
-观察结果：隐含增长约 31%，历史三年自由现金流下降，支持 H1、削弱 H2。 [CFO\-2024] [CAPEX\-2024] [CFO\-2026] [CAPEX\-2026] [O\-DCF] [O\-DCF2]
+观察结果：隐含增长约 31%，历史三年自由现金流下降，支持 H1、削弱 H2。 正向 DCF 在 8% 增长下约 210 美元/股，反向 DCF 需约 31% 增长才匹配现价，两个方向互相印证。 [CFO\-2024] [CAPEX\-2024] [CFO\-2026] [CAPEX\-2026] [O\-DCF] [O\-DCF2] [O\-DCF3]
 
 支持：H1；削弱：H2
 
@@ -241,6 +254,50 @@
 
 [O\-DCF2]
 
+### 微软正向 DCF（8% 显式期增长）
+
+模型：dcf；币种：USD；金额与股数共同缩放：million；期间：FY2026 自由现金流为基期，5 年显式期；范围：CFO − 现金资本开支
+
+### 观察值与假设
+
+| 变量 | 数值 | 单位 | 性质 | 假设理由 |
+| --- | --- | --- | --- | --- |
+| free\_cash\_flow | 66987 | currency | observed |  |
+| growth | 0\.08 | ratio | assumption | 8% 为研究者假设，不是预测 |
+| discount\_rate | 0\.08 | ratio | assumption | 8% 为研究者假设 |
+| terminal\_growth | 0\.025 | ratio | assumption | 2\.5% 长期名义增长 |
+| years | 5 | year | assumption | 5 年显式期 |
+| net\_debt | 19359 | currency | observed |  |
+| shares | 7453 | shares | observed |  |
+
+[CFO\-2026] [CAPEX\-2026] [I\-ASSUMP] [C\-DEBT] [C\-CASH] [C\-SHARES]
+
+### 固定模型重算结果
+
+| 输出 | 结果 | 单位 |
+| --- | --- | --- |
+| enterprise\_value | 1583329\.0909090908 | currency |
+| equity\_value | 1563970\.0909090908 | currency |
+| per\_share | 209\.84437017430443 | currency/share |
+| terminal\_value\_share | 0\.7884615384615384 | ratio |
+
+[O\-DCF3]
+
+### 单参数敏感性（其余输入固定）
+
+| 变量 | 改为 | 单位 | 输出 | 结果 | 结果单位 |
+| --- | --- | --- | --- | --- | --- |
+| growth | 0\.05 | ratio | enterprise\_value | 1392411\.0163922207 | currency |
+| growth | 0\.05 | ratio | equity\_value | 1373052\.0163922207 | currency |
+| growth | 0\.05 | ratio | per\_share | 184\.2280982681096 | currency/share |
+| growth | 0\.05 | ratio | terminal\_value\_share | 0\.7787749464048792 | ratio |
+| growth | 0\.12 | ratio | enterprise\_value | 1871388\.5996868555 | currency |
+| growth | 0\.12 | ratio | equity\_value | 1852029\.5996868555 | currency |
+| growth | 0\.12 | ratio | per\_share | 248\.49451223491957 | currency/share |
+| growth | 0\.12 | ratio | terminal\_value\_share | 0\.8001272487292733 | ratio |
+
+[O\-DCF3]
+
 固定模型的数值已重算；来源含义、假设合理性与因果解释仍需研究审查。敏感性结果不是统计置信区间。
 
 ## 来源与结论审计
@@ -300,6 +357,10 @@
 \[O\-DCF2\] 在 5 年线性收敛假设下，当前价格隐含的五年自由现金流增速（inference；2026\-11\-14T05:00:00Z）
 
 依据：CFO\-2026, CAPEX\-2026, C\-DEBT, C\-CASH, C\-SHARES, C\-PX, I\-ASSUMP；来源：
+
+\[O\-DCF3\] 在 8% 增长、8% 折现、2\.5% 终值、5 年假设下，每股内在价值（inference；2026\-11\-14T05:00:00Z）
+
+依据：CFO\-2026, CAPEX\-2026, C\-DEBT, C\-CASH, C\-SHARES, I\-ASSUMP；来源：
 
 S\-SEC · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T04:50:00Z · quote：10\-K company facts: NetCashProvidedByUsedInOperatingActivities FY2026 182,935; PaymentsToAcquirePropertyPlantAndEquipment FY2026 115,948; LongTermDebt 40,294; CashAndCashEquivalents 20,935 · locator：SEC companyfacts CIK0000789019（Microsoft），FY2024–FY2026 年度值与 FY2026 期末余额 · origin\_id：sec\-msft\-fcf · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "自由现金流与净债务", "reason": "官方现金流与资产负债表事实", "relevance": "direct", "selected": true\}
 
