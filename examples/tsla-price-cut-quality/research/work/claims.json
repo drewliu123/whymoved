@@ -491,6 +491,204 @@
           "source_id": "S-TSLA"
         }
       ]
+    },
+    {
+      "id": "TSLA-Q-25Q1-REV",
+      "text": "Tesla 2025Q1 收入 19335 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-25Q1-RD",
+      "text": "Tesla 2025Q1 研发费用 1409 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-25Q1-SGA",
+      "text": "Tesla 2025Q1 销售与管理费用 1251 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-25Q2-REV",
+      "text": "Tesla 2025Q2 收入 22496 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-25Q2-RD",
+      "text": "Tesla 2025Q2 研发费用 1589 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-25Q2-SGA",
+      "text": "Tesla 2025Q2 销售与管理费用 1366 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-25Q3-REV",
+      "text": "Tesla 2025Q3 收入 28095 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-25Q3-RD",
+      "text": "Tesla 2025Q3 研发费用 1630 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-25Q3-SGA",
+      "text": "Tesla 2025Q3 销售与管理费用 1562 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q1-REV",
+      "text": "Tesla 2026Q1 收入 22387 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q1-RD",
+      "text": "Tesla 2026Q1 研发费用 1946 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q1-SGA",
+      "text": "Tesla 2026Q1 销售与管理费用 1833 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q2-REV",
+      "text": "Tesla 2026Q2 收入 28236 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q2-RD",
+      "text": "Tesla 2026Q2 研发费用 2371 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q2-SGA",
+      "text": "Tesla 2026Q2 销售与管理费用 1982 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q3-REV",
+      "text": "Tesla 2026Q3 收入 28046 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q3-RD",
+      "text": "Tesla 2026Q3 研发费用 2761 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-Q-26Q3-SGA",
+      "text": "Tesla 2026Q3 销售与管理费用 2015 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ]
     }
   ]
 }
