@@ -10,7 +10,8 @@
 | 相对估值（comps、分位、现价隐含倍数） | [大型科技同行 P/E 示例](../examples/mega-cap-peers/README.md) | `test_analysis_models.py`、`test_analysis_contract.py` |
 | 反向 DCF（价格隐含增长） | [微软反向 DCF 示例](../examples/msft-reverse-dcf/README.md) | `test_analysis_models.py`、`test_analysis_contract.py` |
 | 资本开支 vs 利润率与现金流 | [云厂商资本开支示例](../examples/hyperscaler-capex-margins/README.md) | `test_examples.py` |
-| 增长质量（现金流与营运资本） | [英伟达增长质量示例](../examples/nvda-growth-quality/README.md) | `test_examples.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
+| 增长质量（现金流与营运资本） | [英伟达增长质量示例](../examples/nvda-growth-quality/README.md) | `test_examples.py` |
+| 价值链比较（capex 受益者） | [AI 资本开支价值链示例](../examples/ai-capex-value-chain/README.md) | `test_examples.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 驱动式经营模型与多年推演 | [分部示例](../examples/msft-segments/README.md) | `test_analysis_models.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 敏感性 / 龙卷风 / 三情景 | 仅测试 | `test_analysis_models.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 可复算计算（op 白名单、引用链） | [现金流示例](../examples/msft-cashflow/README.md) | `test_calculations.py`、`test_reports.py` | [evidence](../skills/research/references/evidence.md) |

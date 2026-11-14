@@ -1,0 +1,137 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 资本开支的价值，主要不在出钱的人手里</title><style>
+:root{color-scheme:light;--page:#fff;--ink:#000;--sub:#52514e;--rule:#deded9;--accent:#225eaa;--plot:#fcfcfb;--series:#2a78d6;--grid:#e1e0d9}
+:root[data-theme=dark]{color-scheme:dark;--page:#141414;--ink:#f0efec;--sub:#c3c2b7;--rule:#444;--accent:#8ab9ef;--plot:#1a1a19;--series:#3987e5;--grid:#2c2c2a}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--page:#141414;--ink:#f0efec;--sub:#c3c2b7;--rule:#444;--accent:#8ab9ef;--plot:#1a1a19;--series:#3987e5;--grid:#2c2c2a}}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:17px/1.85 'PingFang SC',system-ui,sans-serif;overflow-wrap:anywhere}main{max-width:850px;padding:34px 28px 80px;margin:auto}header{padding:14px 5vw;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;gap:16px}button{font:inherit;color:inherit;background:transparent;border:1px solid var(--rule);padding:6px 12px;border-radius:5px;cursor:pointer}a{color:var(--accent);text-underline-offset:4px}h1{font-size:clamp(28px,4vw,42px);line-height:1.35;letter-spacing:-.025em}h2{font-size:23px;margin-top:36px;line-height:1.5}h3{font-size:19px}p{white-space:pre-wrap}a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.refs{font-size:13px;margin-left:8px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}caption{text-align:left;font-weight:650;padding:14px 0}th,td{padding:12px;text-align:left;vertical-align:top;border-top:1px solid var(--rule);white-space:pre-wrap}details{margin:32px 0;border-top:1px solid var(--rule);padding-top:20px}summary{cursor:pointer;font-weight:650}.source,.claim{font-size:14px;padding:12px 0;border-bottom:1px solid var(--rule)}.chart{background:var(--plot);padding:14px}.chart svg{width:100%;height:auto;display:block}.chart text{fill:var(--sub);font:12px system-ui,sans-serif}.line{stroke:var(--series);stroke-width:2;fill:none;stroke-linejoin:round}.dot{fill:var(--series);stroke:var(--plot);stroke-width:2}.grid{stroke:var(--grid)}.skip{position:absolute;left:-10000px}.skip:focus{left:20px;top:10px;background:var(--page)}@media(max-width:600px){main{padding:18px 6vw 60px}body{font-size:16px}th,td{min-width:100px;padding:10px 6px}header{font-size:14px}}@media print{header,.skip{display:none}main{max-width:none;padding:0}body{color:#000;background:#fff}details>*{display:block}.chart{break-inside:avoid}}
+</style></head><body><a class="skip" href="#content">跳到研究正文</a><header><span>投研助手</span><span><button id="theme" type="button">切换明暗</button> <button id="print" type="button">打印</button></span></header><main id="content" tabindex="-1"><h1>AI 资本开支的价值，主要不在出钱的人手里</h1>
+<p>AI 资本开支的价值落在链条的哪一环？</p>
+<p>研究截点 2026-11-14T00:00:00Z · theme · 价值链比较</p>
+<h2>执行摘要</h2>
+<p>结论：云厂商 capex FY2024→FY2025 增约 59.9%，但云收入只增 12.4%–15.1%；设备商 4.4%–23.9%，英伟达收入 +65.5%。增量主要落在算力供应商。</p>
+<p>最反直觉：云厂商营业利润率在上升，FCF 利润率却下降 2.7–4.5 个百分点；资本开支不压利润表，压的是出钱人的现金流。</p>
+<p>接下来验证：看 capex 增速回落时，算力/设备收入与云 FCF 谁先转向；若 capex 降而云 FCF 不回升，成本结构已永久抬升。</p>
+<h2>判断</h2>
+<p>AI 资本开支的价值主要不在出钱的人手里。FY2024→FY2025，微软、Alphabet、亚马逊 capex 合计从 180,011 增到 287,817 百万美元（+59.9%），但三家云收入只增 12.4%–15.1%；设备商收入增 4.4%–23.9%，英伟达 FY2026 收入 +65.5%。云厂商营业利润率仍在上升，FCF 利润率却下降 2.7–4.5 个百分点——资本开支不经过营业利润，压的是现金流。算力供应商收入增长最快，但英伟达 CFO/净利润 0.86、应收天数 65，现金质量也在打折。受益顺序是算力 &gt; 部分设备 &gt; 云厂商现金流。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-I-CASH">[I-CASH]</a> <a href="#claim-CAPEX-MSFT-25">[CAPEX-MSFT-25]</a> <a href="#claim-NVDA-REV-26">[NVDA-REV-26]</a></span></p>
+<h2>capex 增约 60%，云收入只增 12%–15%</h2>
+<p>capex 180,011→287,817；云收入增速：微软 +14.9%、Alphabet +15.1%、亚马逊 +12.4%。<span class="refs"><a href="#claim-CAPEX-MSFT-24">[CAPEX-MSFT-24]</a> <a href="#claim-CAPEX-MSFT-25">[CAPEX-MSFT-25]</a> <a href="#claim-CAPEX-GOOGL-24">[CAPEX-GOOGL-24]</a> <a href="#claim-CAPEX-GOOGL-25">[CAPEX-GOOGL-25]</a> <a href="#claim-CAPEX-AMZN-24">[CAPEX-AMZN-24]</a> <a href="#claim-CAPEX-AMZN-25">[CAPEX-AMZN-25]</a> <a href="#claim-CLOUD-REV-MSFT-24">[CLOUD-REV-MSFT-24]</a> <a href="#claim-CLOUD-REV-MSFT-25">[CLOUD-REV-MSFT-25]</a> <a href="#claim-CLOUD-REV-GOOGL-24">[CLOUD-REV-GOOGL-24]</a> <a href="#claim-CLOUD-REV-GOOGL-25">[CLOUD-REV-GOOGL-25]</a> <a href="#claim-CLOUD-REV-AMZN-24">[CLOUD-REV-AMZN-24]</a> <a href="#claim-CLOUD-REV-AMZN-25">[CLOUD-REV-AMZN-25]</a></span></p>
+<p>为什么重要：如果资本开支直接变成云收入，收入增速应与 capex 同量级；12%–15% 说明变现有时滞或留存。</p>
+<h2>云厂商 FCF 利润率下降 2.7–4.5 个百分点</h2>
+<p>微软 30.2%→25.4%、Alphabet 20.8%→18.2%、亚马逊 5.2%→1.1%；同期营业利润率在上升。<span class="refs"><a href="#claim-CLOUD-CFO-MSFT-24">[CLOUD-CFO-MSFT-24]</a> <a href="#claim-CLOUD-CFO-MSFT-25">[CLOUD-CFO-MSFT-25]</a> <a href="#claim-CAPEX-MSFT-24">[CAPEX-MSFT-24]</a> <a href="#claim-CAPEX-MSFT-25">[CAPEX-MSFT-25]</a> <a href="#claim-CLOUD-REV-MSFT-24">[CLOUD-REV-MSFT-24]</a> <a href="#claim-CLOUD-REV-MSFT-25">[CLOUD-REV-MSFT-25]</a> <a href="#claim-CLOUD-CFO-GOOGL-24">[CLOUD-CFO-GOOGL-24]</a> <a href="#claim-CLOUD-CFO-GOOGL-25">[CLOUD-CFO-GOOGL-25]</a> <a href="#claim-CAPEX-GOOGL-24">[CAPEX-GOOGL-24]</a> <a href="#claim-CAPEX-GOOGL-25">[CAPEX-GOOGL-25]</a> <a href="#claim-CLOUD-REV-GOOGL-24">[CLOUD-REV-GOOGL-24]</a> <a href="#claim-CLOUD-REV-GOOGL-25">[CLOUD-REV-GOOGL-25]</a> <a href="#claim-CLOUD-CFO-AMZN-24">[CLOUD-CFO-AMZN-24]</a> <a href="#claim-CLOUD-CFO-AMZN-25">[CLOUD-CFO-AMZN-25]</a> <a href="#claim-CAPEX-AMZN-24">[CAPEX-AMZN-24]</a> <a href="#claim-CAPEX-AMZN-25">[CAPEX-AMZN-25]</a> <a href="#claim-CLOUD-REV-AMZN-24">[CLOUD-REV-AMZN-24]</a> <a href="#claim-CLOUD-REV-AMZN-25">[CLOUD-REV-AMZN-25]</a></span></p>
+<p>为什么重要：利润表与现金流背离，是资本开支周期的典型特征；出钱的人先承担现金成本。</p>
+<h2>设备商分化：4%–24%</h2>
+<p>AMAT +4.4%、LRCX +23.7%、KLAC +23.9%；设备环节不是均匀受益。<span class="refs"><a href="#claim-EQUIP-REV-AMAT-24">[EQUIP-REV-AMAT-24]</a> <a href="#claim-EQUIP-REV-AMAT-25">[EQUIP-REV-AMAT-25]</a> <a href="#claim-EQUIP-REV-LRCX-24">[EQUIP-REV-LRCX-24]</a> <a href="#claim-EQUIP-REV-LRCX-25">[EQUIP-REV-LRCX-25]</a> <a href="#claim-EQUIP-REV-KLAC-24">[EQUIP-REV-KLAC-24]</a> <a href="#claim-EQUIP-REV-KLAC-25">[EQUIP-REV-KLAC-25]</a></span></p>
+<p>为什么重要：同样的 capex 顺风，设备商增速差 20 个百分点；选环节比选行业更重要。</p>
+<h2>算力供应商增长最快，但现金质量也在打折</h2>
+<p>英伟达 FY2026 收入 +65.5%，CFO/净利润 0.86、应收天数 65.0；增长真实，现金转化弱。<span class="refs"><a href="#claim-NVDA-REV-25">[NVDA-REV-25]</a> <a href="#claim-NVDA-REV-26">[NVDA-REV-26]</a> <a href="#claim-NVDA-CFO-26">[NVDA-CFO-26]</a> <a href="#claim-NVDA-NI-26">[NVDA-NI-26]</a> <a href="#claim-I-CASH">[I-CASH]</a></span></p>
+<p>为什么重要：算力是最大受益环节，但不是无懈可击；增长质量折扣会限制估值扩张。</p>
+<h2>这意味着什么</h2>
+<h3>受益顺序：算力 &gt; 部分设备 &gt; 云厂商现金流</h3>
+<p>收入增量集中在算力与部分设备；云厂商收入增速最低、FCF 利润率下降最多。选 AI 暴露时，先看你在链条的哪一环。（FY2026）<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-NVDA-REV-26">[NVDA-REV-26]</a> <a href="#claim-CLOUD-REV-MSFT-25">[CLOUD-REV-MSFT-25]</a> <a href="#claim-EQUIP-REV-LRCX-25">[EQUIP-REV-LRCX-25]</a></span></p>
+<h3>capex 回落时先看云 FCF</h3>
+<p>若 capex 增速回落而云 FCF 利润率不回升，说明成本结构已永久抬升；若回升，资本开支周期才是可逆的。（下一财年）<span class="refs"><a href="#claim-CLOUD-CFO-MSFT-25">[CLOUD-CFO-MSFT-25]</a> <a href="#claim-CAPEX-MSFT-25">[CAPEX-MSFT-25]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<h3>设备看公司，不看行业</h3>
+<p>AMAT +4.4% 与 LRCX +23.7% 的差距说明设备环节分化；用行业 capex 选设备股会漏掉公司变量。（FY2026）<span class="refs"><a href="#claim-EQUIP-REV-AMAT-25">[EQUIP-REV-AMAT-25]</a> <a href="#claim-EQUIP-REV-LRCX-25">[EQUIP-REV-LRCX-25]</a> <a href="#claim-EQUIP-REV-KLAC-25">[EQUIP-REV-KLAC-25]</a></span></p>
+<h2>情景与触发条件</h2>
+<h3>capex 维持</h3>
+<p>capex 继续高增，算力与设备收入维持。</p>
+<p>触发：capex 增速 &gt;30%；英伟达收入增速 &gt;40%；云 FCF 利润率不再下降</p>
+<p>含义：价值链格局维持，算力仍是最大受益者。</p>
+<h3>capex 回落</h3>
+<p>capex 增速转负，云 FCF 回升、算力/设备承压。</p>
+<p>触发：capex 增速 &lt;0；云 FCF 利润率回升 2pp 以上；设备收入增速转负</p>
+<p>含义：受益顺序反转，现金流回到云厂商。</p>
+<h3>变现加速</h3>
+<p>云收入加速、capex 受控，云厂商重新占优。</p>
+<p>触发：云收入增速 &gt;25%；capex 增速 &lt;10%；云 FCF 利润率企稳</p>
+<p>含义：资本开支被收入消化，云厂商估值修复。</p>
+<h2>分析判断</h2>
+<p>AI 资本开支的增量主要落在算力供应商与部分设备商；云厂商收入增速最低、FCF 利润率下降，承担了现金流成本。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<p>传导关系：资本开支 → 算力供给 → 设备交付 → 云收入 → 自由现金流</p>
+<p>模型不适用：价值链比较，不需要固定估值模型</p>
+<div class="table-wrap"><table><caption>价值链各环节：收入增速与现金流</caption><thead><tr><th scope="col">环节</th><th scope="col">代表</th><th scope="col">收入增速（%）</th><th scope="col">利润率/FCF 变化（百分点）</th></tr></thead><tbody>
+<tr><td>资本开支</td><td>三家云厂商合计</td><td>59.9</td><td>—</td></tr>
+<tr><td>云收入</td><td>微软 / Alphabet / 亚马逊</td><td>14.9 / 15.1 / 12.4</td><td>FCF −2.7 / −4.4 / −4.5</td></tr>
+<tr><td>设备</td><td>AMAT / LRCX / KLAC</td><td>4.4 / 23.7 / 23.9</td><td>—</td></tr>
+<tr><td>算力</td><td>英伟达</td><td>65.5</td><td>CFO/净利润 0.86</td></tr>
+</tbody></table><span class="refs"><a href="#claim-CAPEX-MSFT-24">[CAPEX-MSFT-24]</a> <a href="#claim-CAPEX-MSFT-25">[CAPEX-MSFT-25]</a> <a href="#claim-CLOUD-REV-MSFT-25">[CLOUD-REV-MSFT-25]</a> <a href="#claim-CLOUD-REV-GOOGL-25">[CLOUD-REV-GOOGL-25]</a> <a href="#claim-CLOUD-REV-AMZN-25">[CLOUD-REV-AMZN-25]</a> <a href="#claim-EQUIP-REV-AMAT-25">[EQUIP-REV-AMAT-25]</a> <a href="#claim-EQUIP-REV-LRCX-25">[EQUIP-REV-LRCX-25]</a> <a href="#claim-EQUIP-REV-KLAC-25">[EQUIP-REV-KLAC-25]</a> <a href="#claim-NVDA-REV-26">[NVDA-REV-26]</a> <a href="#claim-NVDA-CFO-26">[NVDA-CFO-26]</a> <a href="#claim-NVDA-NI-26">[NVDA-NI-26]</a></span><p>云与设备为 FY2025 同比；英伟达为 FY2026（2026 年 1 月）同比，存在期间错位。</p></div>
+<section class="chart"><h2>最近一个财年收入增速：算力 &gt; 设备 &gt; 云</h2><svg viewBox="0 0 720 250" role="group" aria-label="最近一个财年收入增速：算力 &gt; 设备 &gt; 云（柱状）"><line class="grid" x1="60" x2="680" y1="190.0" y2="190.0"/><text x="2" y="185.0">0</text><line class="grid" x1="60" x2="680" y1="190.0" y2="190.0"/><text x="2" y="185.0">0</text><line class="grid" x1="60" x2="680" y1="40.0" y2="40.0"/><text x="2" y="35.0">65.5</text><rect x="71.625" y="52.824" width="54.250" height="137.176" fill="var(--series)" opacity="0.85" tabindex="0" role="img" aria-label="capex 59.9 %" aria-describedby="chart-readout"><title>capex 59.9 %</title></rect><rect x="149.125" y="155.878" width="54.250" height="34.122" fill="var(--series)" opacity="0.85" tabindex="0" role="img" aria-label="云-Microsoft 14.9 %" aria-describedby="chart-readout"><title>云-Microsoft 14.9 %</title></rect><rect x="226.625" y="155.420" width="54.250" height="34.580" fill="var(--series)" opacity="0.85" tabindex="0" role="img" aria-label="云-Alphabet 15.1 %" aria-describedby="chart-readout"><title>云-Alphabet 15.1 %</title></rect><rect x="304.125" y="161.603" width="54.250" height="28.397" fill="var(--series)" opacity="0.85" tabindex="0" role="img" aria-label="云-Amazon 12.4 %" aria-describedby="chart-readout"><title>云-Amazon 12.4 %</title></rect><rect x="381.625" y="179.924" width="54.250" height="10.076" fill="var(--series)" opacity="0.85" tabindex="0" role="img" aria-label="设备-AMAT 4.4 %" aria-describedby="chart-readout"><title>设备-AMAT 4.4 %</title></rect><rect x="459.125" y="135.725" width="54.250" height="54.275" fill="var(--series)" opacity="0.85" tabindex="0" role="img" aria-label="设备-LRCX 23.7 %" aria-describedby="chart-readout"><title>设备-LRCX 23.7 %</title></rect><rect x="536.625" y="135.267" width="54.250" height="54.733" fill="var(--series)" opacity="0.85" tabindex="0" role="img" aria-label="设备-KLAC 23.9 %" aria-describedby="chart-readout"><title>设备-KLAC 23.9 %</title></rect><rect x="614.125" y="40.000" width="54.250" height="150.000" fill="var(--series)" opacity="0.85" tabindex="0" role="img" aria-label="算力-NVDA 65.5 %" aria-describedby="chart-readout"><title>算力-NVDA 65.5 %</title></rect><text x="60" y="220">capex</text><text x="680" y="220" text-anchor="end">算力-NVDA</text></svg><p id="chart-readout" role="tooltip" aria-live="polite">环节 · 同比 %（%）</p></section>
+<div class="table-wrap"><table><caption>最近一个财年收入增速：算力 &gt; 设备 &gt; 云</caption><thead><tr><th scope="col">环节</th><th scope="col">同比 %（%）</th></tr></thead><tbody>
+<tr><td>capex</td><td>59.9</td></tr>
+<tr><td>云-Microsoft</td><td>14.9</td></tr>
+<tr><td>云-Alphabet</td><td>15.1</td></tr>
+<tr><td>云-Amazon</td><td>12.4</td></tr>
+<tr><td>设备-AMAT</td><td>4.4</td></tr>
+<tr><td>设备-LRCX</td><td>23.7</td></tr>
+<tr><td>设备-KLAC</td><td>23.9</td></tr>
+<tr><td>算力-NVDA</td><td>65.5</td></tr>
+</tbody></table><span class="refs"><a href="#claim-CAPEX-MSFT-25">[CAPEX-MSFT-25]</a> <a href="#claim-CLOUD-REV-MSFT-25">[CLOUD-REV-MSFT-25]</a> <a href="#claim-CLOUD-REV-GOOGL-25">[CLOUD-REV-GOOGL-25]</a> <a href="#claim-CLOUD-REV-AMZN-25">[CLOUD-REV-AMZN-25]</a> <a href="#claim-EQUIP-REV-AMAT-25">[EQUIP-REV-AMAT-25]</a> <a href="#claim-EQUIP-REV-LRCX-25">[EQUIP-REV-LRCX-25]</a> <a href="#claim-EQUIP-REV-KLAC-25">[EQUIP-REV-KLAC-25]</a> <a href="#claim-NVDA-REV-26">[NVDA-REV-26]</a></span><p>云/设备 FY2025 同比；英伟达 FY2026（2026 年 1 月）同比，期间不完全一致。</p></div>
+<h2>其他解释</h2>
+<h3>云收入时滞</h3>
+<p>AI 收入可能滞后 capex 2–4 个季度；当前 12%–15% 的云收入增速可能低估了未来的变现。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-CLOUD-REV-MSFT-25">[CLOUD-REV-MSFT-25]</a></span></p>
+<h2>接下来观察什么</h2>
+<h3>下一财年 capex 增速与云 FCF 利润率</h3>
+<p>决定价值分配是否反转<span class="refs"><a href="#claim-CAPEX-MSFT-25">[CAPEX-MSFT-25]</a> <a href="#claim-CLOUD-CFO-MSFT-25">[CLOUD-CFO-MSFT-25]</a></span></p>
+<h2>限制与边界</h2>
+<p>英伟达用 FY2026（2026 年 1 月）与云厂商 FY2025（2025 年 12 月/6 月）比较，存在约半年到一年期间错位；设备商用 FY2025。<span class="refs"><a href="#claim-NVDA-REV-26">[NVDA-REV-26]</a> <a href="#claim-CLOUD-REV-MSFT-25">[CLOUD-REV-MSFT-25]</a></span></p>
+<h2>附录：分析底稿与可复算模型</h2>
+<p>方法：comparative_attribution；比较基准：FY2024 的各环节收入与现金流<span class="refs"><a href="#claim-CLOUD-REV-MSFT-24">[CLOUD-REV-MSFT-24]</a> <a href="#claim-EQUIP-REV-AMAT-24">[EQUIP-REV-AMAT-24]</a></span></p>
+<div class="table-wrap"><table><caption>候选解释</caption><thead><tr><th scope="col">编号</th><th scope="col">解释</th></tr></thead><tbody>
+<tr><td>H1</td><td>资本开支的收益均匀分布</td></tr>
+<tr><td>H2</td><td>收益集中在供给侧，现金流成本由云厂商承担</td></tr>
+</tbody></table><span class="refs"></span><p></p></div>
+<h3>区分性检验 T1</h3>
+<div class="table-wrap"><table><caption>不同解释的事前预测</caption><thead><tr><th scope="col">解释</th><th scope="col">预期观察</th></tr></thead><tbody>
+<tr><td>H1</td><td>各环节收入同步增长、云 FCF 不受影响</td></tr>
+<tr><td>H2</td><td>算力/设备收入高增、云 FCF 下降</td></tr>
+</tbody></table><span class="refs"></span><p></p></div>
+<p>观察结果：capex 增约 60%，云收入只增 12%–15%，算力 +65.5%、设备分化；云 FCF 下降，支持 H2、削弱 H1。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a> <a href="#claim-NVDA-REV-26">[NVDA-REV-26]</a> <a href="#claim-CLOUD-REV-MSFT-25">[CLOUD-REV-MSFT-25]</a> <a href="#claim-CLOUD-CFO-MSFT-25">[CLOUD-CFO-MSFT-25]</a></span></p>
+<p>支持：H2；削弱：H1</p>
+<p>下一观察：下一财年 capex 与云 FCF；时间/触发：2027-02-15；支持条件：capex 回落而云 FCF 不回升；削弱条件：云收入加速、FCF 回升</p>
+<p>固定模型的数值已重算；来源含义、假设合理性与因果解释仍需研究审查。敏感性结果不是统计置信区间。</p>
+<details id="audit"><summary>来源与结论审计</summary>
+<div class="claim" id="claim-CAPEX-MSFT-24"><p>[CAPEX-MSFT-24] MSFT FY2024 资本开支 44477 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-MSFT</p></div>
+<div class="claim" id="claim-CLOUD-REV-MSFT-24"><p>[CLOUD-REV-MSFT-24] MSFT FY2024 收入 245122 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-MSFT</p></div>
+<div class="claim" id="claim-CLOUD-CFO-MSFT-24"><p>[CLOUD-CFO-MSFT-24] MSFT FY2024 经营现金流 118548 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-MSFT</p></div>
+<div class="claim" id="claim-CAPEX-MSFT-25"><p>[CAPEX-MSFT-25] MSFT FY2025 资本开支 64551 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-MSFT</p></div>
+<div class="claim" id="claim-CLOUD-REV-MSFT-25"><p>[CLOUD-REV-MSFT-25] MSFT FY2025 收入 281724 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-MSFT</p></div>
+<div class="claim" id="claim-CLOUD-CFO-MSFT-25"><p>[CLOUD-CFO-MSFT-25] MSFT FY2025 经营现金流 136162 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-MSFT</p></div>
+<div class="claim" id="claim-CAPEX-GOOGL-24"><p>[CAPEX-GOOGL-24] GOOGL FY2024 资本开支 52535 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-GOOGL</p></div>
+<div class="claim" id="claim-CLOUD-REV-GOOGL-24"><p>[CLOUD-REV-GOOGL-24] GOOGL FY2024 收入 350018 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-GOOGL</p></div>
+<div class="claim" id="claim-CLOUD-CFO-GOOGL-24"><p>[CLOUD-CFO-GOOGL-24] GOOGL FY2024 经营现金流 125299 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-GOOGL</p></div>
+<div class="claim" id="claim-CAPEX-GOOGL-25"><p>[CAPEX-GOOGL-25] GOOGL FY2025 资本开支 91447 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-GOOGL</p></div>
+<div class="claim" id="claim-CLOUD-REV-GOOGL-25"><p>[CLOUD-REV-GOOGL-25] GOOGL FY2025 收入 402836 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-GOOGL</p></div>
+<div class="claim" id="claim-CLOUD-CFO-GOOGL-25"><p>[CLOUD-CFO-GOOGL-25] GOOGL FY2025 经营现金流 164713 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-GOOGL</p></div>
+<div class="claim" id="claim-CAPEX-AMZN-24"><p>[CAPEX-AMZN-24] AMZN FY2024 资本开支 82999 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-AMZN</p></div>
+<div class="claim" id="claim-CLOUD-REV-AMZN-24"><p>[CLOUD-REV-AMZN-24] AMZN FY2024 收入 637959 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-AMZN</p></div>
+<div class="claim" id="claim-CLOUD-CFO-AMZN-24"><p>[CLOUD-CFO-AMZN-24] AMZN FY2024 经营现金流 115877 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-AMZN</p></div>
+<div class="claim" id="claim-CAPEX-AMZN-25"><p>[CAPEX-AMZN-25] AMZN FY2025 资本开支 131819 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-AMZN</p></div>
+<div class="claim" id="claim-CLOUD-REV-AMZN-25"><p>[CLOUD-REV-AMZN-25] AMZN FY2025 收入 716924 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-AMZN</p></div>
+<div class="claim" id="claim-CLOUD-CFO-AMZN-25"><p>[CLOUD-CFO-AMZN-25] AMZN FY2025 经营现金流 139514 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-AMZN</p></div>
+<div class="claim" id="claim-EQUIP-REV-AMAT-24"><p>[EQUIP-REV-AMAT-24] AMAT FY2024 收入 27176 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-AMAT</p></div>
+<div class="claim" id="claim-EQUIP-REV-AMAT-25"><p>[EQUIP-REV-AMAT-25] AMAT FY2025 收入 28368 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-AMAT</p></div>
+<div class="claim" id="claim-EQUIP-REV-LRCX-24"><p>[EQUIP-REV-LRCX-24] LRCX FY2024 收入 14905 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-LRCX</p></div>
+<div class="claim" id="claim-EQUIP-REV-LRCX-25"><p>[EQUIP-REV-LRCX-25] LRCX FY2025 收入 18436 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-LRCX</p></div>
+<div class="claim" id="claim-EQUIP-REV-KLAC-24"><p>[EQUIP-REV-KLAC-24] KLAC FY2024 收入 9812 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-KLAC</p></div>
+<div class="claim" id="claim-EQUIP-REV-KLAC-25"><p>[EQUIP-REV-KLAC-25] KLAC FY2025 收入 12156 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-KLAC</p></div>
+<div class="claim" id="claim-NVDA-REV-25"><p>[NVDA-REV-25] NVDA FY2025 收入 130497 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-NVDA</p></div>
+<div class="claim" id="claim-NVDA-CFO-25"><p>[NVDA-CFO-25] NVDA FY2025 经营现金流 64089 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-NVDA</p></div>
+<div class="claim" id="claim-NVDA-NI-25"><p>[NVDA-NI-25] NVDA FY2025 净利润 72880 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-NVDA</p></div>
+<div class="claim" id="claim-NVDA-REV-26"><p>[NVDA-REV-26] NVDA FY2026 收入 215938 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-NVDA</p></div>
+<div class="claim" id="claim-NVDA-CFO-26"><p>[NVDA-CFO-26] NVDA FY2026 经营现金流 102718 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-NVDA</p></div>
+<div class="claim" id="claim-NVDA-NI-26"><p>[NVDA-NI-26] NVDA FY2026 净利润 120067 百万美元（fact；2026-11-14T00:00:00Z）</p><p>依据：；来源：S-NVDA</p></div>
+<div class="claim" id="claim-I-JUDGE"><p>[I-JUDGE] AI 资本开支的增量主要落在算力供应商：capex 增约 60%，云厂商收入只增 12%–15%，设备商 4%–24%，英伟达收入 +65.5%；云厂商 FCF 利润率下降 2.7–4.5 个百分点，出钱的人承担现金流成本（inference；2026-11-14T00:00:00Z）</p><p>依据：CAPEX-MSFT-24, CLOUD-REV-MSFT-24, CLOUD-CFO-MSFT-24, CAPEX-MSFT-25, CLOUD-REV-MSFT-25, CLOUD-CFO-MSFT-25, CAPEX-GOOGL-24, CLOUD-REV-GOOGL-24, CLOUD-CFO-GOOGL-24, CAPEX-GOOGL-25, CLOUD-REV-GOOGL-25, CLOUD-CFO-GOOGL-25, CAPEX-AMZN-24, CLOUD-REV-AMZN-24, CLOUD-CFO-AMZN-24, CAPEX-AMZN-25, CLOUD-REV-AMZN-25, CLOUD-CFO-AMZN-25, EQUIP-REV-AMAT-24, EQUIP-REV-AMAT-25, EQUIP-REV-LRCX-24, EQUIP-REV-LRCX-25, EQUIP-REV-KLAC-24, EQUIP-REV-KLAC-25, NVDA-REV-25, NVDA-CFO-25, NVDA-NI-25, NVDA-REV-26, NVDA-CFO-26, NVDA-NI-26；来源：</p></div>
+<div class="claim" id="claim-I-CASH"><p>[I-CASH] 英伟达收入增长最快，但 CFO/净利润 0.86、应收天数升至 65，说明算力环节也在打折；价值集中在收入端，现金质量并非无懈可击（inference；2026-11-14T00:00:00Z）</p><p>依据：NVDA-CFO-26, NVDA-NI-26, I-JUDGE；来源：</p></div>
+<div class="source"><p>S-MSFT · U.S. SEC · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：10-K company facts, USD: 微软 · locator：data.sec.gov companyfacts CIK0000789019（微软），10-K 年度值 · origin_id：sec-msft · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;价值链各环节收入、利润与现金流&quot;, &quot;reason&quot;: &quot;官方 XBRL 年度事实&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json" target="_blank" rel="noopener noreferrer">https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json</a></div>
+<div class="source"><p>S-GOOGL · U.S. SEC · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：10-K company facts, USD: Alphabet · locator：data.sec.gov companyfacts CIK0001652044（Alphabet），10-K 年度值 · origin_id：sec-googl · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;价值链各环节收入、利润与现金流&quot;, &quot;reason&quot;: &quot;官方 XBRL 年度事实&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json" target="_blank" rel="noopener noreferrer">https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json</a></div>
+<div class="source"><p>S-AMZN · U.S. SEC · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：10-K company facts, USD: 亚马逊 · locator：data.sec.gov companyfacts CIK0001018724（亚马逊），10-K 年度值 · origin_id：sec-amzn · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;价值链各环节收入、利润与现金流&quot;, &quot;reason&quot;: &quot;官方 XBRL 年度事实&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json" target="_blank" rel="noopener noreferrer">https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json</a></div>
+<div class="source"><p>S-AMAT · U.S. SEC · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：10-K company facts, USD: 应用材料 · locator：data.sec.gov companyfacts CIK0000006951（应用材料），10-K 年度值 · origin_id：sec-amat · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;价值链各环节收入、利润与现金流&quot;, &quot;reason&quot;: &quot;官方 XBRL 年度事实&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0000006951.json" target="_blank" rel="noopener noreferrer">https://data.sec.gov/api/xbrl/companyfacts/CIK0000006951.json</a></div>
+<div class="source"><p>S-LRCX · U.S. SEC · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：10-K company facts, USD: Lam Research · locator：data.sec.gov companyfacts CIK0000707549（Lam Research），10-K 年度值 · origin_id：sec-lrcx · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;价值链各环节收入、利润与现金流&quot;, &quot;reason&quot;: &quot;官方 XBRL 年度事实&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0000707549.json" target="_blank" rel="noopener noreferrer">https://data.sec.gov/api/xbrl/companyfacts/CIK0000707549.json</a></div>
+<div class="source"><p>S-KLAC · U.S. SEC · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：10-K company facts, USD: KLA · locator：data.sec.gov companyfacts CIK0000319201（KLA），10-K 年度值 · origin_id：sec-klac · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;价值链各环节收入、利润与现金流&quot;, &quot;reason&quot;: &quot;官方 XBRL 年度事实&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0000319201.json" target="_blank" rel="noopener noreferrer">https://data.sec.gov/api/xbrl/companyfacts/CIK0000319201.json</a></div>
+<div class="source"><p>S-NVDA · U.S. SEC · T0 · published_at：unknown · retrieved_at：2026-11-14T00:00:00Z · quote：10-K company facts, USD: NVIDIA CORP · locator：data.sec.gov companyfacts CIK0001045810（NVIDIA），10-K 年度值 · origin_id：sec-nvda · origin_basis：Direct official publication · evidence_kind：document · access_status：ok · supports：[&quot;fact&quot;] · selection：{&quot;priority&quot;: &quot;decisive&quot;, &quot;purpose&quot;: &quot;算力供应商&quot;, &quot;reason&quot;: &quot;官方 XBRL 年度事实&quot;, &quot;relevance&quot;: &quot;direct&quot;, &quot;selected&quot;: true}</p><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json" target="_blank" rel="noopener noreferrer">https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json</a></div>
+<p>来源状态：{&quot;sec&quot;: {&quot;status&quot;: &quot;ok&quot;}}</p>
+</details></main><script>
+document.getElementById('theme').addEventListener('click',()=>{const d=document.documentElement;const dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;d.dataset.theme=dark?'light':'dark'});
+document.getElementById('print').addEventListener('click',()=>window.print());
+document.querySelectorAll('.refs a').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById(a.getAttribute('href').slice(1));if(t)t.closest('details').open=true}));
+document.querySelectorAll('[data-readout]').forEach(n=>{const show=()=>{document.getElementById('chart-readout').textContent=n.dataset.readout;const cross=document.getElementById('chart-crosshair');cross.setAttribute('x1',n.dataset.x);cross.setAttribute('x2',n.dataset.x);cross.setAttribute('visibility','visible')};n.addEventListener('focus',show);n.addEventListener('pointerenter',show);n.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){const nodes=Array.from(document.querySelectorAll('[data-readout]'));const i=nodes.indexOf(n);nodes[Math.max(0,Math.min(nodes.length-1,i+(e.key==='ArrowRight'?1:-1)))].focus();e.preventDefault()}})});
+</script></body></html>

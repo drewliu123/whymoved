@@ -77,6 +77,11 @@
 - **[阅读报告](examples/nvda-growth-quality/research/work/report.md)**
 - **[查看案例与命令](examples/nvda-growth-quality/README.md)**
 
+**第十三个例子：AI 资本开支的价值落在哪一环？** capex 增约 60%，云收入只增 12%–15%，设备商 4.4%–23.9%，英伟达 +65.5%。增量主要落在算力供应商；云厂商利润表仍好看，FCF 利润率却下降 2.7–4.5 个百分点。受益顺序：算力 > 部分设备 > 云厂商现金流。
+
+- **[阅读报告](examples/ai-capex-value-chain/research/work/report.md)**
+- **[查看案例与命令](examples/ai-capex-value-chain/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

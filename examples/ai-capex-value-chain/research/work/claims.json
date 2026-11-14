@@ -1,0 +1,387 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "CAPEX-MSFT-24",
+      "text": "MSFT FY2024 资本开支 44477 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-REV-MSFT-24",
+      "text": "MSFT FY2024 收入 245122 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-CFO-MSFT-24",
+      "text": "MSFT FY2024 经营现金流 118548 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-MSFT-25",
+      "text": "MSFT FY2025 资本开支 64551 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-REV-MSFT-25",
+      "text": "MSFT FY2025 收入 281724 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-CFO-MSFT-25",
+      "text": "MSFT FY2025 经营现金流 136162 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-GOOGL-24",
+      "text": "GOOGL FY2024 资本开支 52535 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-REV-GOOGL-24",
+      "text": "GOOGL FY2024 收入 350018 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-CFO-GOOGL-24",
+      "text": "GOOGL FY2024 经营现金流 125299 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-GOOGL-25",
+      "text": "GOOGL FY2025 资本开支 91447 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-REV-GOOGL-25",
+      "text": "GOOGL FY2025 收入 402836 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-CFO-GOOGL-25",
+      "text": "GOOGL FY2025 经营现金流 164713 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-AMZN-24",
+      "text": "AMZN FY2024 资本开支 82999 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-REV-AMZN-24",
+      "text": "AMZN FY2024 收入 637959 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-CFO-AMZN-24",
+      "text": "AMZN FY2024 经营现金流 115877 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-AMZN-25",
+      "text": "AMZN FY2025 资本开支 131819 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-REV-AMZN-25",
+      "text": "AMZN FY2025 收入 716924 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "CLOUD-CFO-AMZN-25",
+      "text": "AMZN FY2025 经营现金流 139514 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "EQUIP-REV-AMAT-24",
+      "text": "AMAT FY2024 收入 27176 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "EQUIP-REV-AMAT-25",
+      "text": "AMAT FY2025 收入 28368 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "EQUIP-REV-LRCX-24",
+      "text": "LRCX FY2024 收入 14905 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "EQUIP-REV-LRCX-25",
+      "text": "LRCX FY2025 收入 18436 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "EQUIP-REV-KLAC-24",
+      "text": "KLAC FY2024 收入 9812 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "EQUIP-REV-KLAC-25",
+      "text": "KLAC FY2025 收入 12156 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-REV-25",
+      "text": "NVDA FY2025 收入 130497 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-CFO-25",
+      "text": "NVDA FY2025 经营现金流 64089 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-NI-25",
+      "text": "NVDA FY2025 净利润 72880 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-REV-26",
+      "text": "NVDA FY2026 收入 215938 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-CFO-26",
+      "text": "NVDA FY2026 经营现金流 102718 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-NI-26",
+      "text": "NVDA FY2026 净利润 120067 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "AI 资本开支的增量主要落在算力供应商：capex 增约 60%，云厂商收入只增 12%–15%，设备商 4%–24%，英伟达收入 +65.5%；云厂商 FCF 利润率下降 2.7–4.5 个百分点，出钱的人承担现金流成本",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "CAPEX-MSFT-24",
+        "CLOUD-REV-MSFT-24",
+        "CLOUD-CFO-MSFT-24",
+        "CAPEX-MSFT-25",
+        "CLOUD-REV-MSFT-25",
+        "CLOUD-CFO-MSFT-25",
+        "CAPEX-GOOGL-24",
+        "CLOUD-REV-GOOGL-24",
+        "CLOUD-CFO-GOOGL-24",
+        "CAPEX-GOOGL-25",
+        "CLOUD-REV-GOOGL-25",
+        "CLOUD-CFO-GOOGL-25",
+        "CAPEX-AMZN-24",
+        "CLOUD-REV-AMZN-24",
+        "CLOUD-CFO-AMZN-24",
+        "CAPEX-AMZN-25",
+        "CLOUD-REV-AMZN-25",
+        "CLOUD-CFO-AMZN-25",
+        "EQUIP-REV-AMAT-24",
+        "EQUIP-REV-AMAT-25",
+        "EQUIP-REV-LRCX-24",
+        "EQUIP-REV-LRCX-25",
+        "EQUIP-REV-KLAC-24",
+        "EQUIP-REV-KLAC-25",
+        "NVDA-REV-25",
+        "NVDA-CFO-25",
+        "NVDA-NI-25",
+        "NVDA-REV-26",
+        "NVDA-CFO-26",
+        "NVDA-NI-26"
+      ]
+    },
+    {
+      "id": "I-CASH",
+      "text": "英伟达收入增长最快，但 CFO/净利润 0.86、应收天数升至 65，说明算力环节也在打折；价值集中在收入端，现金质量并非无懈可击",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "NVDA-CFO-26",
+        "NVDA-NI-26",
+        "I-JUDGE"
+      ]
+    }
+  ]
+}

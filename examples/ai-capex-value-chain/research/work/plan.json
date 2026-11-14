@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "question": "AI 资本开支的价值落在链条的哪一环？",
+  "type": "theme",
+  "task": "价值链比较",
+  "entity": "AI capex value chain",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断 AI 资本开支的受益者与现金流成本",
+  "prior_judgment": "资本开支利好整条产业链",
+  "comparison": {
+    "period": "FY2024→FY2025（英伟达 FY2025→FY2026）",
+    "unit": "USD million 与 %",
+    "scope": "云厂商、设备商、算力供应商"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "各环节收入、现金流与资本开支取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "比较资本开支、各环节收入与现金流，判断价值落在哪一环",
+    "baseline": "FY2024 的各环节收入与现金流",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "资本开支",
+      "算力供给",
+      "设备交付",
+      "云收入",
+      "自由现金流"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "capex 增长与各环节收入增速、FCF 利润率的对比",
+        "source": "SEC XBRL 年度事实",
+        "by": "下一财年",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "各环节收入同步增长、云厂商 FCF 不受影响"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "收入集中在算力/设备，云厂商 FCF 下降"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "资本开支的收益均匀分布",
+      "discriminating_observation": "各环节收入同幅"
+    },
+    {
+      "id": "H2",
+      "explanation": "收益集中在供给侧，现金流成本由云厂商承担",
+      "discriminating_observation": "算力/设备收入高增、云 FCF 降"
+    }
+  ],
+  "queries": [
+    {
+      "question": "云厂商 capex/收入/CFO、设备商收入、英伟达收入/CFO/净利润",
+      "query": "SEC companyfacts: MSFT/GOOGL/AMZN/AMAT/LRCX/KLAC/NVDA",
+      "source": "SEC XBRL",
+      "purpose": "价值链比较",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}
