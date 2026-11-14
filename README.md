@@ -47,6 +47,11 @@
 - **[阅读事件研究报告](examples/sp500-fomc-event/research/work/report.md)**
 - **[查看完整案例与命令](examples/sp500-fomc-event/README.md)**
 
+**第七个例子：AI 资本开支传导到设备商了吗？** 用四家公司的 SEC 10-K 事实逐节点核对：三家云厂商资本开支 FY2024→FY2025 增长约 60%，而应用材料收入只增长约 4.4%、经营现金流下降约 8.3%。总量传导没有闭合，瓶颈被定位到设备交付与客户结构。
+
+- **[阅读传导报告](examples/ai-capex-transmission/research/work/report.md)**
+- **[查看完整案例与命令](examples/ai-capex-transmission/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

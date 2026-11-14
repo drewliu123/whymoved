@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "question": "超大规模厂商资本开支的增长，传导到半导体设备商了吗？",
+  "type": "theme",
+  "task": "产业链传导检验",
+  "entity": "AI capex → semiconductor equipment",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断总量资本开支能否作为设备商需求的代理",
+  "prior_judgment": "市场常把云厂商 capex 直接当作设备商收入领先指标",
+  "comparison": {
+    "period": "FY2024 对 FY2025",
+    "unit": "USD million 与增速",
+    "scope": "三家云厂商 + AMAT"
+  },
+  "budget": {
+    "max_queries": 2,
+    "max_followups": 0
+  },
+  "stop_condition": "四个节点的官方年度数据取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "theme_transmission",
+    "method": "transmission_bottleneck",
+    "rationale": "逐个节点核对资本开支到设备商收入、毛利与现金的传导",
+    "baseline": "FY2024 同口径",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "资本开支",
+      "设备交付与验收",
+      "设备商收入",
+      "毛利率",
+      "经营现金流"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "四个节点的年度同比方向是否一致",
+        "source": "SEC XBRL 年度事实",
+        "by": "下一份 10-K",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "capex 与设备商收入同向同幅"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "capex 增长而设备商收入滞后或不同幅"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "总量资本开支顺畅传导到设备商收入与现金",
+      "discriminating_observation": "设备商收入增速接近资本开支增速"
+    },
+    {
+      "id": "H2",
+      "explanation": "传导在交付/结构处受阻，总量 capex 不是好代理",
+      "discriminating_observation": "收入增速显著低于资本开支增速"
+    }
+  ],
+  "queries": [
+    {
+      "question": "三家云厂商资本开支与 AMAT 收入/毛利/现金流",
+      "query": "SEC XBRL 10-K facts",
+      "source": "SEC",
+      "purpose": "核对传导链每个节点",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

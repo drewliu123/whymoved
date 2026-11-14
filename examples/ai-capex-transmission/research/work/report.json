@@ -1,0 +1,344 @@
+{
+  "schema_version": 2,
+  "title": "AI 资本开支传导到设备商了吗？总量数据没有闭合",
+  "question": "超大规模厂商资本开支的增长，传导到半导体设备商了吗？",
+  "type": "theme",
+  "task": "产业链传导检验",
+  "as_of": "2026-11-14T00:00:00Z",
+  "answer": {
+    "text": "2024→2025 财年，微软、Alphabet、亚马逊三家资本开支合计从约 1,800 亿美元升至约 2,878 亿美元，增长约 60%；同期应用材料（AMAT）收入从 27,176 升至 28,368 百万美元，仅增长约 4.4%。毛利率从 47.4% 升至 48.7%，经营现金流却从 8,677 降到 7,958 百万美元。逐节点看，资本开支的增长没有同幅传导到设备商收入，交付验收与客户结构可能是瓶颈；总量资本开支不是设备商需求的好代理，需要分部敞口与订单数据继续验证。",
+    "claim_ids": [
+      "CAPEX-MSFT-25",
+      "CAPEX-GOOGL-25",
+      "CAPEX-AMZN-25",
+      "AMAT-REVENUE-2025",
+      "AMAT-GROSS_PROFIT-2025",
+      "AMAT-CFO-2025",
+      "I-JUDGE"
+    ]
+  },
+  "findings": [
+    {
+      "title": "资本开支增长约 60%，设备商收入只增约 4%",
+      "text": "三家合计资本开支从 180,011 升至 287,817 百万美元；AMAT 收入从 27,176 升至 28,368 百万美元。",
+      "claim_ids": [
+        "CAPEX-MSFT-24",
+        "CAPEX-MSFT-25",
+        "CAPEX-GOOGL-24",
+        "CAPEX-GOOGL-25",
+        "CAPEX-AMZN-24",
+        "CAPEX-AMZN-25",
+        "AMAT-REVENUE-2024",
+        "AMAT-REVENUE-2025"
+      ],
+      "why_it_matters": "若把总量 capex 当设备商收入领先指标，会显著高估短期传导幅度。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "capex 直接驱动设备商收入的市场叙事",
+        "detail": "两个相邻节点的增速差约 55 个百分点"
+      }
+    },
+    {
+      "title": "毛利率改善，但现金流下降",
+      "text": "毛利率从 47.4% 升至 48.7%，经营现金流从 8,677 降至 7,958 百万美元。",
+      "claim_ids": [
+        "AMAT-GROSS_PROFIT-2024",
+        "AMAT-GROSS_PROFIT-2025",
+        "AMAT-CFO-2024",
+        "AMAT-CFO-2025",
+        "AMAT-REVENUE-2025"
+      ],
+      "why_it_matters": "利润率与现金流方向不一致，说明营运资本或交付节奏在吸收传导。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看毛利率改善",
+        "detail": "把现金流与交付节奏一起核对"
+      }
+    },
+    {
+      "title": "瓶颈在交付与客户结构，不在需求总量",
+      "text": "资本开支没有消失，但设备商收入确认滞后；客户结构（先进制程/存储）敞口决定谁能接到订单。",
+      "claim_ids": [
+        "I-DELIVERY",
+        "I-JUDGE"
+      ],
+      "why_it_matters": "下一步应查订单、分部收入与交付周期，而不是继续用总量 capex 外推。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "总量传导假设",
+        "detail": "把瓶颈定位到交付与结构"
+      }
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "下一财年 AMAT 收入增速与云厂商资本开支增速之差",
+      "meaning": "验证传导是否只是滞后",
+      "claim_ids": [
+        "I-DELIVERY"
+      ],
+      "due": "2027-02-28",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "财年不对齐：AMAT 财年 10 月结束，云厂商 12 月/6 月结束；同比比较存在期间错位。",
+      "material": true,
+      "claim_ids": [
+        "I-JUDGE"
+      ]
+    },
+    {
+      "text": "AMAT 客户结构未拆分，无法区分先进制程、存储与中国区敞口；总量数据不能证明因果。",
+      "material": true,
+      "claim_ids": [
+        "I-DELIVERY"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "传导节点年度数据",
+      "columns": [
+        "节点",
+        "FY2024",
+        "FY2025",
+        "同比"
+      ],
+      "units": [
+        "",
+        "百万美元",
+        "百万美元",
+        ""
+      ],
+      "rows": [
+        [
+          "三家云厂商资本开支合计",
+          180011,
+          287817,
+          "+59.9%"
+        ],
+        [
+          "AMAT 收入",
+          27176,
+          28368,
+          "+4.4%"
+        ],
+        [
+          "AMAT 毛利",
+          12897,
+          13808,
+          "+7.1%"
+        ],
+        [
+          "AMAT 经营现金流",
+          8677,
+          7958,
+          "-8.3%"
+        ]
+      ],
+      "claim_ids": [
+        "CAPEX-MSFT-25",
+        "CAPEX-GOOGL-25",
+        "CAPEX-AMZN-25",
+        "AMAT-REVENUE-2025"
+      ]
+    }
+  ],
+  "transmission": {
+    "schema_version": 1,
+    "theme": "超大规模厂商资本开支向半导体设备传导",
+    "as_of": "2026-11-14T00:00:00Z",
+    "nodes": [
+      {
+        "id": "CAPEX",
+        "label": "超大规模厂商资本开支",
+        "kind": "capex",
+        "observables": [
+          "MSFT/GOOGL/AMZN 年度资本开支同比"
+        ],
+        "claim_ids": [
+          "CAPEX-MSFT-24",
+          "CAPEX-MSFT-25",
+          "CAPEX-GOOGL-24",
+          "CAPEX-GOOGL-25",
+          "CAPEX-AMZN-24",
+          "CAPEX-AMZN-25"
+        ]
+      },
+      {
+        "id": "DELIVERY",
+        "label": "设备交付与验收",
+        "kind": "capacity",
+        "observables": [
+          "设备商收入增速相对资本开支增速的滞后",
+          "客户结构（先进制程/存储）敞口"
+        ],
+        "claim_ids": [
+          "I-DELIVERY"
+        ]
+      },
+      {
+        "id": "REVENUE",
+        "label": "设备商收入",
+        "kind": "demand",
+        "observables": [
+          "AMAT 年度收入同比"
+        ],
+        "claim_ids": [
+          "AMAT-REVENUE-2024",
+          "AMAT-REVENUE-2025"
+        ]
+      },
+      {
+        "id": "MARGIN",
+        "label": "设备商毛利率",
+        "kind": "margin",
+        "observables": [
+          "AMAT 毛利率（毛利/收入）"
+        ],
+        "claim_ids": [
+          "AMAT-GROSS_PROFIT-2024",
+          "AMAT-GROSS_PROFIT-2025"
+        ]
+      },
+      {
+        "id": "CASH",
+        "label": "设备商经营现金流",
+        "kind": "cash",
+        "observables": [
+          "AMAT 经营现金流同比"
+        ],
+        "claim_ids": [
+          "AMAT-CFO-2024",
+          "AMAT-CFO-2025"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "CAPEX",
+        "to": "DELIVERY",
+        "mechanism": "资本开支转为设备采购订单，交付排队",
+        "lag": "1-4 个季度",
+        "claim_ids": [
+          "I-DELIVERY"
+        ]
+      },
+      {
+        "from": "DELIVERY",
+        "to": "REVENUE",
+        "mechanism": "验收后确认收入，交付节奏决定确认时点",
+        "lag": "1-2 个季度",
+        "claim_ids": [
+          "I-DELIVERY"
+        ]
+      },
+      {
+        "from": "REVENUE",
+        "to": "MARGIN",
+        "mechanism": "产品结构与产能利用率影响毛利率",
+        "lag": "同季至 1 个季度",
+        "claim_ids": [
+          "I-MARGIN"
+        ]
+      },
+      {
+        "from": "MARGIN",
+        "to": "CASH",
+        "mechanism": "利润率与营运资本共同决定现金流",
+        "lag": "同季",
+        "claim_ids": [
+          "I-CASH"
+        ]
+      }
+    ],
+    "bottleneck": {
+      "node": "DELIVERY",
+      "reason": "资本开支增长未同步进入设备商收入，交付/验收与客户结构是假设中的瓶颈，需订单与分部数据验证",
+      "claim_ids": [
+        "I-DELIVERY"
+      ]
+    }
+  },
+  "analysis": {
+    "version": 1,
+    "question_kind": "theme_transmission",
+    "method": "transmission_bottleneck",
+    "baseline": "FY2024 同口径",
+    "baseline_claim_ids": [
+      "CAPEX-MSFT-24",
+      "AMAT-REVENUE-2024"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "资本开支",
+      "设备交付与验收",
+      "设备商收入",
+      "毛利率",
+      "经营现金流"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "总量资本开支顺畅传导到设备商收入与现金"
+      },
+      {
+        "id": "H2",
+        "explanation": "传导在交付/结构处受阻，总量 capex 不是好代理"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "收入增速接近资本开支增速"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "收入增速显著低于资本开支增速"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "CAPEX-MSFT-24",
+          "CAPEX-MSFT-25",
+          "CAPEX-GOOGL-24",
+          "CAPEX-GOOGL-25",
+          "CAPEX-AMZN-24",
+          "CAPEX-AMZN-25",
+          "AMAT-REVENUE-2024",
+          "AMAT-REVENUE-2025"
+        ],
+        "interpretation": "capex 约 +60%、AMAT 收入约 +4.4%，增速差约 55 个百分点，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "下一财年收入增速与 capex 增速之差",
+        "by": "2027-02-28",
+        "supports_if": "收入增速追上 capex 增速",
+        "weakens_if": "增速差继续扩大"
+      }
+    ],
+    "conclusion": "总量资本开支到设备商收入的传导未闭合；瓶颈假设在交付与客户结构，需要分部与订单数据验证。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "本题是传导链核对，不适用固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "只检验产业链传导，不判断价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

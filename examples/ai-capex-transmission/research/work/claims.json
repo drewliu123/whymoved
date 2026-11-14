@@ -1,0 +1,195 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "CAPEX-MSFT-24",
+      "text": "MSFT FY2024-06 资本开支 44477 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-MSFT-25",
+      "text": "MSFT FY2025-06 资本开支 64551 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-GOOGL-24",
+      "text": "GOOGL FY2024-12 资本开支 52535 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-GOOGL-25",
+      "text": "GOOGL FY2025-12 资本开支 91447 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-AMZN-24",
+      "text": "AMZN FY2024-12 资本开支 82999 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "CAPEX-AMZN-25",
+      "text": "AMZN FY2025-12 资本开支 131819 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-REVENUE-2024",
+      "text": "AMAT FY2024 revenue 27176 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-GROSS_PROFIT-2024",
+      "text": "AMAT FY2024 gross_profit 12897 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-CFO-2024",
+      "text": "AMAT FY2024 cfo 8677 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-REVENUE-2025",
+      "text": "AMAT FY2025 revenue 28368 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-GROSS_PROFIT-2025",
+      "text": "AMAT FY2025 gross_profit 13808 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "AMAT-CFO-2025",
+      "text": "AMAT FY2025 cfo 7958 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "I-DELIVERY",
+      "text": "资本开支增速远高于设备商收入增速，交付验收与客户结构可能吸收冲击",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "CAPEX-MSFT-24",
+        "CAPEX-MSFT-25",
+        "CAPEX-GOOGL-24",
+        "CAPEX-GOOGL-25",
+        "CAPEX-AMZN-24",
+        "CAPEX-AMZN-25",
+        "AMAT-REVENUE-2024",
+        "AMAT-REVENUE-2025"
+      ]
+    },
+    {
+      "id": "I-MARGIN",
+      "text": "设备商毛利率随产品结构改善而上升，但收入增长有限",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "AMAT-GROSS_PROFIT-2024",
+        "AMAT-GROSS_PROFIT-2025",
+        "AMAT-REVENUE-2025"
+      ]
+    },
+    {
+      "id": "I-CASH",
+      "text": "经营现金流下降与营运资本及交付节奏一致，利润率不是唯一驱动",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "AMAT-CFO-2024",
+        "AMAT-CFO-2025"
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "总量层面的『资本开支→设备商收入』传导在 2024–2025 未闭合：capex 增长约 60%，AMAT 收入仅增长约 4%，需要分部敞口与订单数据才能判断真实传导",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "CAPEX-MSFT-24",
+        "CAPEX-MSFT-25",
+        "CAPEX-GOOGL-24",
+        "CAPEX-GOOGL-25",
+        "CAPEX-AMZN-24",
+        "CAPEX-AMZN-25",
+        "AMAT-REVENUE-2024",
+        "AMAT-REVENUE-2025"
+      ]
+    }
+  ]
+}
