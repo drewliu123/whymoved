@@ -226,6 +226,33 @@ def analyse(document):
             rows.append(result)
     if len(rows) < 2:
         raise ValueError("fewer than two usable samples after window checks; cannot describe a reference class")
+    warnings = []
+    seen_dates = {}
+    for sample in document.get("samples", []):
+        if not isinstance(sample, dict):
+            continue
+        date = sample.get("date")
+        if isinstance(date, str):
+            if date in seen_dates:
+                warnings.append("samples %s and %s share the same event date; results double-count that day"
+                                % (seen_dates[date], sample.get("id")))
+            else:
+                seen_dates[date] = sample.get("id")
+    windows = []
+    for sample in document.get("samples", []):
+        if not isinstance(sample, dict):
+            continue
+        prices = sample.get("prices")
+        if not isinstance(prices, list):
+            continue
+        dates = {point.get("date") for point in prices if isinstance(point, dict)}
+        if sample.get("date") in dates:
+            windows.append((sample.get("id"), dates))
+    for i, (first_id, first_dates) in enumerate(windows):
+        for second_id, second_dates in windows[i + 1:]:
+            if first_dates & second_dates:
+                warnings.append("windows of %s and %s share observations; their returns are not independent"
+                                % (first_id, second_id))
     post = [row["post_return"] for row in rows if row["post_return"] is not None]
     pre = [row["pre_return"] for row in rows if row["pre_return"] is not None]
     total = [row["total_return"] for row in rows if row["total_return"] is not None]
@@ -246,6 +273,7 @@ def analyse(document):
                         "total_return": summary(total),
                         "excess_post_return": summary(excess_post),
                         "excess_total_return": summary(excess_total)},
+            "warnings": warnings,
             "notes": ["窗口单位是每条价格序列自己的观测点（通常为交易日），不是自然日。",
                       "收益是绝对收益；可选基准序列给出简单超额收益，样本由研究者事前选定。",
                       "不给p值或显著性结论：小样本与选择偏误不支持统计推断。",

@@ -880,6 +880,8 @@ def _blocks(report, ledger, sources):
         yield ("table", {"title": "样本明细", "columns": columns, "rows": rows, "claim_ids": sample_claims})
         if result["skipped"]:
             yield ("p", "跳过：" + "；".join("%s（%s）" % (row["id"], row["reason"]) for row in result["skipped"]))
+        if result.get("warnings"):
+            yield ("p", "样本警告：" + "；".join(result["warnings"]) + "。参考类统计不独立，不能当独立样本外推。")
         if has_excess:
             yield ("p", "前窗/后窗/全窗是绝对收益；后窗超额/全窗超额是标的收益减基准收益（简单差，未做 beta 调整）。样本事前选定、不给p值；参考类分布不是预测。")
         else:

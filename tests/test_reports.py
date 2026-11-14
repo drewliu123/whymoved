@@ -533,6 +533,17 @@ class QualityReportTests(unittest.TestCase):
 
 
 class EventStudyReportTests(unittest.TestCase):
+    def test_overlap_warnings_render(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-%02d" % day, "close": 100 + day} for day in range(1, 31)]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-10", "prices": prices},
+                                             {"id": "E2", "date": "2024-01-11", "prices": prices}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        text = render_report.render_html(report, ledger, sources)
+        self.assertIn("样本警告", text)
+        self.assertIn("share observations", text)
+
     def document(self):
         report, ledger, sources = documents()
         report["event_study"] = event_document(

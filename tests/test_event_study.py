@@ -195,6 +195,31 @@ class BenchmarkTests(unittest.TestCase):
                             for error in event_study.validate_document(document)))
 
 
+class OverlapTests(unittest.TestCase):
+    def document(self, first, second, third=None):
+        series = [{"date": "2024-01-%02d" % day, "close": 100 + day} for day in range(1, 31)]
+        by_date = {point["date"]: point for point in series}
+
+        def window(day):
+            return [by_date["2024-01-%02d" % offset] for offset in (day - 1, day, day + 1)]
+
+        samples = [{"id": "E1", "date": "2024-01-%02d" % first, "prices": window(first)},
+                   {"id": "E2", "date": "2024-01-%02d" % second, "prices": window(second)}]
+        if third:
+            samples.append({"id": "E3", "date": "2024-01-%02d" % third, "prices": window(third)})
+        return {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1}, "samples": samples}
+
+    def test_overlapping_windows_warn(self):
+        result = event_study.analyse(self.document(10, 11))
+        self.assertTrue(any("share observations" in warning for warning in result["warnings"]))
+        result = event_study.analyse(self.document(5, 20))
+        self.assertEqual(result["warnings"], [])
+
+    def test_duplicate_event_dates_warn(self):
+        result = event_study.analyse(self.document(10, 11, 11))
+        self.assertTrue(any("share the same event date" in warning for warning in result["warnings"]))
+
+
 class ReturnsOnlyTests(unittest.TestCase):
     def document(self):
         return {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},

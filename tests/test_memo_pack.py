@@ -193,6 +193,15 @@ class MemoLinkedSectionsTests(unittest.TestCase):
         self.assertIn("后窗超额", text)
         self.assertIn("标的减基准", text)
 
+    def test_event_overlap_warning_in_memo(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-%02d" % day, "close": 100 + day} for day in range(1, 31)]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-10", "prices": prices},
+                                             {"id": "E2", "date": "2024-01-11", "prices": prices}]}
+        text = memo((report, ledger, sources))
+        self.assertIn("样本警告", text)
+
     def test_sections_absent_by_default(self):
         text = memo(documents())
         self.assertNotIn("## 传导瓶颈", text)
