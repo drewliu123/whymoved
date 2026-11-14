@@ -49,7 +49,7 @@ python3 scripts/memo_pack.py examples/aapl-quality/research/work/report.json \
 
 ## 数据来源与边界
 
-- 数据来自 SEC XBRL company facts（CIK 0000320193，FY2023/FY2024 10-K 年度值），逐项核对后冻结；抓取时点 2026-11-14。
+- 数据来自 SEC XBRL company facts（CIK 0000320193，FY2024–FY2026 10-K 年度值），逐项核对后冻结；抓取时点 2026-11-14。
 - 税项的具体一次性来源（如欧盟税务事项）需要读年报附注；本示例只核对到数字层面，不替读者下结论。
 - 未取得折旧摊销，`capex_to_da` 为 null。
 - 两个财年不足以判断长期趋势。
