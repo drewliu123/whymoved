@@ -1,0 +1,448 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "XOM-REV-21",
+      "text": "XOM FY2021 收入 285.64 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-REV-22",
+      "text": "XOM FY2022 收入 413.68 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-REV-23",
+      "text": "XOM FY2023 收入 344.58 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-REV-24",
+      "text": "XOM FY2024 收入 349.58 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-REV-25",
+      "text": "XOM FY2025 收入 332.24 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CFO-21",
+      "text": "XOM FY2021 经营现金流 48.13 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CFO-22",
+      "text": "XOM FY2022 经营现金流 76.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CFO-23",
+      "text": "XOM FY2023 经营现金流 55.37 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CFO-24",
+      "text": "XOM FY2024 经营现金流 55.02 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CFO-25",
+      "text": "XOM FY2025 经营现金流 51.97 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CAPEX-21",
+      "text": "XOM FY2021 资本开支 12.08 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CAPEX-22",
+      "text": "XOM FY2022 资本开支 18.41 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CAPEX-23",
+      "text": "XOM FY2023 资本开支 21.92 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CAPEX-24",
+      "text": "XOM FY2024 资本开支 24.31 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-CAPEX-25",
+      "text": "XOM FY2025 资本开支 28.36 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-DIV-21",
+      "text": "XOM FY2021 普通股分红 14.92 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-DIV-22",
+      "text": "XOM FY2022 普通股分红 14.94 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-DIV-23",
+      "text": "XOM FY2023 普通股分红 14.94 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-DIV-24",
+      "text": "XOM FY2024 普通股分红 16.7 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-DIV-25",
+      "text": "XOM FY2025 普通股分红 17.23 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-BB-21",
+      "text": "XOM FY2021 普通股回购 0.15 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-BB-22",
+      "text": "XOM FY2022 普通股回购 15.15 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-BB-23",
+      "text": "XOM FY2023 普通股回购 17.75 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-BB-24",
+      "text": "XOM FY2024 普通股回购 19.63 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-BB-25",
+      "text": "XOM FY2025 普通股回购 20.27 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-NI-21",
+      "text": "XOM FY2021 净利润 23.04 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-NI-22",
+      "text": "XOM FY2022 净利润 55.74 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-NI-23",
+      "text": "XOM FY2023 净利润 36.01 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-NI-24",
+      "text": "XOM FY2024 净利润 33.68 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-NI-25",
+      "text": "XOM FY2025 净利润 28.84 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-EQ-21",
+      "text": "XOM FY2021 股东权益 168.58 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-EQ-22",
+      "text": "XOM FY2022 股东权益 195.05 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-EQ-23",
+      "text": "XOM FY2023 股东权益 204.8 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-EQ-24",
+      "text": "XOM FY2024 股东权益 263.7 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "XOM-EQ-25",
+      "text": "XOM FY2025 股东权益 259.39 十亿美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-XOM"
+        }
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "埃克森 FY2025 经营现金流 519.7 亿、资本开支 283.6 亿，自由现金流 236.1 亿；分红 172.3 亿加回购 202.7 亿共 375.0 亿，超过 FCF 1.39 倍，缺口约 139 亿；分配占 CFO 72.2%，资本配置从现金充裕转向依赖资产负债表",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "XOM-REV-21",
+        "XOM-REV-22",
+        "XOM-REV-23",
+        "XOM-REV-24",
+        "XOM-REV-25",
+        "XOM-CFO-21",
+        "XOM-CFO-22",
+        "XOM-CFO-23",
+        "XOM-CFO-24",
+        "XOM-CFO-25",
+        "XOM-CAPEX-21",
+        "XOM-CAPEX-22",
+        "XOM-CAPEX-23",
+        "XOM-CAPEX-24",
+        "XOM-CAPEX-25",
+        "XOM-DIV-21",
+        "XOM-DIV-22",
+        "XOM-DIV-23",
+        "XOM-DIV-24",
+        "XOM-DIV-25",
+        "XOM-BB-21",
+        "XOM-BB-22",
+        "XOM-BB-23",
+        "XOM-BB-24",
+        "XOM-BB-25",
+        "XOM-NI-21",
+        "XOM-NI-22",
+        "XOM-NI-23",
+        "XOM-NI-24",
+        "XOM-NI-25",
+        "XOM-EQ-21",
+        "XOM-EQ-22",
+        "XOM-EQ-23",
+        "XOM-EQ-24",
+        "XOM-EQ-25"
+      ]
+    },
+    {
+      "id": "I-WATCH",
+      "text": "若 FY2026 CFO 低于 500 亿而 capex 维持 280 亿以上，回购将首先被削减；分红连续性高于回购",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "XOM-CFO-25",
+        "XOM-CAPEX-25",
+        "XOM-DIV-25",
+        "XOM-BB-25"
+      ]
+    }
+  ]
+}

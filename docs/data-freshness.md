@@ -20,6 +20,7 @@
 | [jpm-nim-provisions](../examples/jpm-nim-provisions/README.md) | FY2025 + 2026-11-13 收盘 | SEC + Nasdaq | 4Q26 财报，约 2027-01 |
 | [lly-growth-quality](../examples/lly-growth-quality/README.md) | FY2025 + 2026-11-13 收盘 | SEC + Nasdaq | FY2026 10-K，约 2027-02 |
 | [nke-turnaround](../examples/nke-turnaround/README.md) | FY2026（2026-05） | SEC XBRL | FY2027 10-K，约 2027-06 |
+| [xom-capital-allocation](../examples/xom-capital-allocation/README.md) | FY2025（2025-12） | SEC XBRL | FY2026 10-K，约 2027-02 |
 
 ## 说明
 

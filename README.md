@@ -102,6 +102,11 @@
 - **[阅读报告](examples/lly-growth-quality/research/work/report.md)**
 - **[查看案例与命令](examples/lly-growth-quality/README.md)**
 
+**第十八个例子：埃克森的分红与回购还能撑多久？** FY2025 CFO 519.7 亿、capex 283.6 亿，FCF 236.1 亿；分红 172.3 亿加回购 202.7 亿共 375.0 亿，超过 FCF 1.59 倍，缺口约 139 亿。分配占 CFO 72.2%，FY2024 起 FCF 已不能覆盖。
+
+- **[阅读报告](examples/xom-capital-allocation/research/work/report.md)**
+- **[查看案例与命令](examples/xom-capital-allocation/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

@@ -15,7 +15,8 @@
 | 降价与现金流质量 | [特斯拉降价示例](../examples/tsla-price-cut-quality/README.md) | `test_examples.py` |
 | 拐点验证（企稳 vs 修复） | [耐克拐点示例](../examples/nke-turnaround/README.md) | `test_examples.py` |
 | 银行净息差与信用成本 | [摩根大通示例](../examples/jpm-nim-provisions/README.md) | `test_examples.py` |
-| 制药增长质量（产能与存货） | [礼来增长示例](../examples/lly-growth-quality/README.md) | `test_examples.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
+| 制药增长质量（产能与存货） | [礼来增长示例](../examples/lly-growth-quality/README.md) | `test_examples.py` |
+| 能源资本配置（分红/回购 vs FCF） | [埃克森资本配置示例](../examples/xom-capital-allocation/README.md) | `test_examples.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 驱动式经营模型与多年推演 | [分部示例](../examples/msft-segments/README.md) | `test_analysis_models.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 敏感性 / 龙卷风 / 三情景 | 仅测试 | `test_analysis_models.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 可复算计算（op 白名单、引用链） | [现金流示例](../examples/msft-cashflow/README.md) | `test_calculations.py`、`test_reports.py` | [evidence](../skills/research/references/evidence.md) |

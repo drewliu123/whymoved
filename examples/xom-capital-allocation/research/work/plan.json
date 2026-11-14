@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "高油价周期结束，埃克森的现金还能同时支撑资本开支、分红和回购吗？",
+  "type": "asset",
+  "task": "资本配置",
+  "entity": "Exxon Mobil",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断股东回报的可持续性",
+  "prior_judgment": "高油价利润足以覆盖资本开支与股东回报",
+  "comparison": {
+    "period": "FY2021→FY2025",
+    "unit": "USD billion 与 %",
+    "scope": "ExxonMobil 合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "收入、CFO、capex、分红、回购、净利润、权益取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "比较 CFO、capex 与股东回报，判断现金分配是否仍被经营现金流覆盖",
+    "baseline": "FY2022 高油价峰值",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "油价与利润",
+      "经营现金流",
+      "资本开支",
+      "分红与回购"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "FCF 是否覆盖分红+回购",
+        "source": "SEC XBRL 年度事实",
+        "by": "FY2026 10-K",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "FCF 持续覆盖分配"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "分配超过 FCF，依赖资产负债表"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "现金仍覆盖资本开支与股东回报",
+      "discriminating_observation": "FCF/分配 >1"
+    },
+    {
+      "id": "H2",
+      "explanation": "分配超过 FCF，回购不可持续",
+      "discriminating_observation": "FCF/分配 <1"
+    }
+  ],
+  "queries": [
+    {
+      "question": "XOM FY2021–FY2025 CFO、capex、分红、回购、净利润",
+      "query": "SEC companyfacts: XOM",
+      "source": "SEC XBRL",
+      "purpose": "资本配置",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}
