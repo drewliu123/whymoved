@@ -481,6 +481,204 @@
           "source_id": "S-AMZN"
         }
       ]
+    },
+    {
+      "id": "MSFT-26Q1-REV",
+      "text": "MSFT 2026 年 3 月季度收入 82,886 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-25Q1-REV",
+      "text": "MSFT 2025 年 3 月季度收入 70,066 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-26Q1-OP",
+      "text": "MSFT 2026 年 3 月季度营业利润 38,398 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-25Q1-OP",
+      "text": "MSFT 2025 年 3 月季度营业利润 32,000 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-26Q1-DA",
+      "text": "MSFT 2026 年 3 月季度折旧 9,000 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-25Q1-DA",
+      "text": "MSFT 2025 年 3 月季度折旧 5,800 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-26Q1-REV",
+      "text": "Alphabet 2026 年 3 月季度收入 109,896 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-25Q1-REV",
+      "text": "Alphabet 2025 年 3 月季度收入 90,234 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-26Q1-OP",
+      "text": "Alphabet 2026 年 3 月季度营业利润 39,696 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-25Q1-OP",
+      "text": "Alphabet 2025 年 3 月季度营业利润 30,606 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-26Q1-DA",
+      "text": "Alphabet 2026 年 3 月季度折旧 6,482 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-25Q1-DA",
+      "text": "Alphabet 2025 年 3 月季度折旧 4,487 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-26Q1-REV",
+      "text": "Amazon 2026 年 3 月季度收入 181,519 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-25Q1-REV",
+      "text": "Amazon 2025 年 3 月季度收入 155,667 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-26Q1-OP",
+      "text": "Amazon 2026 年 3 月季度营业利润 23,852 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-25Q1-OP",
+      "text": "Amazon 2025 年 3 月季度营业利润 18,405 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-26Q1-DA",
+      "text": "Amazon 2026 年 3 月季度折旧与摊销 18,945 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-25Q1-DA",
+      "text": "Amazon 2025 年 3 月季度折旧与摊销 14,262 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
     }
   ]
 }
