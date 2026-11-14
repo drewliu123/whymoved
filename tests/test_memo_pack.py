@@ -178,6 +178,21 @@ class MemoLinkedSectionsTests(unittest.TestCase):
         self.assertIn("图表 2 张", text)
         self.assertIn("第二张", text)
 
+    def test_event_study_excess_line(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        bench = [{"date": "2024-01-30", "close": 50}, {"date": "2024-01-31", "close": 50},
+                 {"date": "2024-02-01", "close": 52}]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench},
+                                             {"id": "E2", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench}]}
+        text = memo((report, ledger, sources))
+        self.assertIn("后窗超额", text)
+        self.assertIn("标的减基准", text)
+
     def test_sections_absent_by_default(self):
         text = memo(documents())
         self.assertNotIn("## 传导瓶颈", text)

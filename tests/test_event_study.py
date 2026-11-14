@@ -137,6 +137,64 @@ class AnalyseTests(unittest.TestCase):
         self.assertTrue(event_study.validate_document(doc))
 
 
+class BenchmarkTests(unittest.TestCase):
+    def document(self, bench_shift=0.0):
+        def sample(identifier, date, closes):
+            return {"id": identifier, "date": date,
+                    "prices": [{"date": "2024-01-30", "close": closes[0]},
+                               {"date": "2024-01-31", "close": closes[1]},
+                               {"date": "2024-02-01", "close": closes[2]}],
+                    "benchmark_prices": [{"date": "2024-01-30", "close": 50},
+                                         {"date": "2024-01-31", "close": 50 + bench_shift},
+                                         {"date": "2024-02-01", "close": 50 + bench_shift}]}
+        return {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                "samples": [sample("E1", "2024-01-31", [100, 110, 121]),
+                            sample("E2", "2024-01-31", [100, 90, 90])]}
+
+    def test_aligned_benchmark_yields_excess(self):
+        document = self.document(bench_shift=2)
+        self.assertEqual(event_study.validate_document(document), [])
+        result = event_study.analyse(document)
+        self.assertIsNotNone(result["summary"]["excess_post_return"])
+        first = result["samples"][0]
+        self.assertAlmostEqual(first["excess_post_return"], 0.1)
+        self.assertAlmostEqual(first["excess_total_return"], 0.21 - (52 / 50 - 1))
+
+    def test_benchmark_must_align(self):
+        document = self.document()
+        document["samples"][0]["benchmark_prices"].pop()
+        self.assertTrue(any("align with prices" in error for error in event_study.validate_document(document)))
+        document = self.document()
+        document["samples"][0]["benchmark_prices"][1]["date"] = "2024-02-02"
+        self.assertTrue(any("dates must match" in error for error in event_study.validate_document(document)))
+        document = self.document()
+        document["samples"][0]["benchmark_prices"][1]["close"] = 0
+        self.assertTrue(any("positive finite" in error for error in event_study.validate_document(document)))
+
+    def test_returns_only_benchmark(self):
+        document = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                    "samples": [
+                        {"id": "E1", "date": "2024-01-31", "returns": {"pre": 0.1, "post": 0.1, "total": 0.21},
+                         "benchmark_returns": {"pre": 0.02, "post": 0.02, "total": 0.04}},
+                        {"id": "E2", "date": "2024-03-20", "returns": {"pre": -0.1, "post": 0.0, "total": -0.1},
+                         "benchmark_returns": {"pre": 0.01, "post": -0.01, "total": 0.0}}]}
+        self.assertEqual(event_study.validate_document(document), [])
+        result = event_study.analyse(document)
+        self.assertAlmostEqual(result["samples"][0]["excess_total_return"], 0.17)
+        self.assertAlmostEqual(result["summary"]["excess_post_return"]["median"], 0.045)
+
+    def test_benchmark_shape_errors(self):
+        document = self.document()
+        document["samples"][0]["benchmark_returns"] = {"pre": 0, "post": 0, "total": 0}
+        self.assertTrue(any("benchmark_returns requires returns" in error
+                            for error in event_study.validate_document(document)))
+        document = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                    "samples": [{"id": "E1", "date": "2024-01-31", "returns": {"pre": 0, "post": 0, "total": 0},
+                                 "benchmark_returns": {"pre": 0, "post": 0}}] * 2}
+        self.assertTrue(any("benchmark_returns must contain" in error
+                            for error in event_study.validate_document(document)))
+
+
 class ReturnsOnlyTests(unittest.TestCase):
     def document(self):
         return {"schema_version": 1, "event": "虚构事件", "window": {"before": 2, "after": 2},

@@ -131,6 +131,24 @@ class MultiSeriesChartTests(unittest.TestCase):
         self.assertIn("0.095", text)
         self.assertIn("E1", text)
 
+    def test_benchmark_excess_columns(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        bench = [{"date": "2024-01-30", "close": 50}, {"date": "2024-01-31", "close": 50},
+                 {"date": "2024-02-01", "close": 52}]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench},
+                                             {"id": "E2", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        for token in ("后窗超额", "全窗超额", "标的收益减基准收益"):
+            self.assertIn(token, page)
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("后窗超额", text)
+
     def test_negative_cases(self):
         cases = [
             lambda c: c.update(rows=[{"label": "Q1", "value": 1}]),
@@ -196,6 +214,24 @@ class ChartListTests(unittest.TestCase):
         self.assertIn("参考类收益分布", text)
         self.assertIn("0.095", text)
         self.assertIn("E1", text)
+
+    def test_benchmark_excess_columns(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        bench = [{"date": "2024-01-30", "close": 50}, {"date": "2024-01-31", "close": 50},
+                 {"date": "2024-02-01", "close": 52}]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench},
+                                             {"id": "E2", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        for token in ("后窗超额", "全窗超额", "标的收益减基准收益"):
+            self.assertIn(token, page)
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("后窗超额", text)
 
     def test_negative_cases(self):
         report, ledger, sources = self.document()
@@ -444,6 +480,24 @@ class QualityReportTests(unittest.TestCase):
         self.assertIn("0.095", text)
         self.assertIn("E1", text)
 
+    def test_benchmark_excess_columns(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        bench = [{"date": "2024-01-30", "close": 50}, {"date": "2024-01-31", "close": 50},
+                 {"date": "2024-02-01", "close": 52}]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench},
+                                             {"id": "E2", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        for token in ("后窗超额", "全窗超额", "标的收益减基准收益"):
+            self.assertIn(token, page)
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("后窗超额", text)
+
     def test_negative_cases(self):
         report, ledger, sources = self.document()
         report["quality"] = "nope"
@@ -510,6 +564,24 @@ class EventStudyReportTests(unittest.TestCase):
         self.assertIn("参考类收益分布", text)
         self.assertIn("0.095", text)
         self.assertIn("E1", text)
+
+    def test_benchmark_excess_columns(self):
+        report, ledger, sources = documents()
+        prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
+                  {"date": "2024-02-01", "close": 121}]
+        bench = [{"date": "2024-01-30", "close": 50}, {"date": "2024-01-31", "close": 50},
+                 {"date": "2024-02-01", "close": 52}]
+        report["event_study"] = {"schema_version": 1, "event": "虚构事件", "window": {"before": 1, "after": 1},
+                                 "samples": [{"id": "E1", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench},
+                                             {"id": "E2", "date": "2024-01-31", "prices": prices,
+                                              "benchmark_prices": bench}]}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        page = render_report.render_html(report, ledger, sources)
+        for token in ("后窗超额", "全窗超额", "标的收益减基准收益"):
+            self.assertIn(token, page)
+        text = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("后窗超额", text)
 
     def test_negative_cases(self):
         report, ledger, sources = self.document()

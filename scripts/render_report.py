@@ -851,7 +851,8 @@ def _blocks(report, ledger, sources):
         yield ("h2", "事件研究")
         yield ("p", "事件类型：" + str(result["event"]) + "；窗口：−%s / +%s 个观测点" % (window["before"], window["after"]))
         summary_rows = []
-        for name, label in (("pre_return", "前窗"), ("post_return", "后窗"), ("total_return", "全窗")):
+        for name, label in (("pre_return", "前窗"), ("post_return", "后窗"), ("total_return", "全窗"),
+                            ("excess_post_return", "后窗超额"), ("excess_total_return", "全窗超额")):
             stats = result["summary"].get(name)
             if not stats:
                 continue
@@ -865,15 +866,24 @@ def _blocks(report, ledger, sources):
         yield ("table", {"title": "参考类收益分布",
                          "columns": ["收益口径", "n", "中位", "均值", "Q1", "Q3", "最小", "最大", "为正比例"],
                          "rows": summary_rows, "claim_ids": sample_claims})
-        yield ("table", {"title": "样本明细",
-                         "columns": ["样本", "事件日", "前窗收益", "后窗收益", "全窗收益"],
-                         "rows": [[row["id"], row["event_date"], _metric_text(row["pre_return"]),
-                                   _metric_text(row["post_return"]), _metric_text(row["total_return"])]
-                                  for row in result["samples"]],
-                         "claim_ids": sample_claims})
+        has_excess = any(row.get("excess_total_return") is not None for row in result["samples"])
+        columns = ["样本", "事件日", "前窗收益", "后窗收益", "全窗收益"]
+        if has_excess:
+            columns += ["后窗超额", "全窗超额"]
+        rows = []
+        for row in result["samples"]:
+            cells = [row["id"], row["event_date"], _metric_text(row["pre_return"]),
+                     _metric_text(row["post_return"]), _metric_text(row["total_return"])]
+            if has_excess:
+                cells += [_metric_text(row.get("excess_post_return")), _metric_text(row.get("excess_total_return"))]
+            rows.append(cells)
+        yield ("table", {"title": "样本明细", "columns": columns, "rows": rows, "claim_ids": sample_claims})
         if result["skipped"]:
             yield ("p", "跳过：" + "；".join("%s（%s）" % (row["id"], row["reason"]) for row in result["skipped"]))
-        yield ("p", "绝对收益、样本事前选定、不给p值；参考类分布不是预测，也不是超额收益。")
+        if has_excess:
+            yield ("p", "前窗/后窗/全窗是绝对收益；后窗超额/全窗超额是标的收益减基准收益（简单差，未做 beta 调整）。样本事前选定、不给p值；参考类分布不是预测。")
+        else:
+            yield ("p", "绝对收益、样本事前选定、不给p值；参考类分布不是预测，也不是超额收益。")
     yield ("audit", "来源与结论审计")
     from metrics import describe as _describe_metric, extract_metrics
     metric_rows = extract_metrics(ledger["claims"])

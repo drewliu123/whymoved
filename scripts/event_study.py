@@ -18,8 +18,8 @@ Input:
 
 Window units are **observations** in each sample's own price series (typically
 trading days), not calendar days: `before` points before the event close and
-`after` points after it. Returns are absolute, not excess over a benchmark, and
-no p-value is produced — small, hand-picked samples do not support significance
+`after` points after it. Returns are absolute by default; an optional benchmark
+series may be supplied to compute simple excess returns, and no p-value is produced — small, hand-picked samples do not support significance
 claims. Samples that cannot cover the window are skipped with a reason; at least
 two usable samples are required.
 """
@@ -93,7 +93,8 @@ def validate_document(document):
         if not isinstance(sample, dict):
             errors.append(path + " must be an object")
             continue
-        extra = set(sample) - {"id", "date", "label", "claim_ids", "prices", "returns"}
+        extra = set(sample) - {"id", "date", "label", "claim_ids", "prices", "returns",
+                               "benchmark_prices", "benchmark_returns"}
         if extra:
             errors.append(path + " has unknown fields: " + ", ".join(sorted(map(str, extra))))
         identifier = sample.get("id")
@@ -108,12 +109,22 @@ def validate_document(document):
         if "claim_ids" in sample and (not isinstance(sample["claim_ids"], list) or
                                       any(not _text(cid) for cid in sample["claim_ids"])):
             errors.append(path + ".claim_ids must be a list of claim ids")
+        if "benchmark_prices" in sample and "returns" in sample:
+            errors.append(path + ".benchmark_prices requires prices, not returns")
+        if "benchmark_returns" in sample and "prices" in sample:
+            errors.append(path + ".benchmark_returns requires returns, not prices")
         if "returns" in sample:
             returns = sample.get("returns")
             if not isinstance(returns, dict) or set(returns) != {"pre", "post", "total"}:
                 errors.append(path + ".returns must contain exactly pre, post and total")
             elif any(_number(returns.get(key)) is None for key in ("pre", "post", "total")):
                 errors.append(path + ".returns values must be finite numbers")
+            if "benchmark_returns" in sample:
+                bench = sample.get("benchmark_returns")
+                if not isinstance(bench, dict) or set(bench) != {"pre", "post", "total"}:
+                    errors.append(path + ".benchmark_returns must contain exactly pre, post and total")
+                elif any(_number(bench.get(key)) is None for key in ("pre", "post", "total")):
+                    errors.append(path + ".benchmark_returns values must be finite numbers")
             continue
         prices = sample.get("prices")
         if not isinstance(prices, list) or len(prices) < 2:
@@ -132,6 +143,19 @@ def validate_document(document):
                 errors.append(path + ".prices must be ordered by strictly increasing date")
                 break
             last = point["date"]
+        benchmark = sample.get("benchmark_prices")
+        if "benchmark_prices" in sample:
+            if not isinstance(benchmark, list) or len(benchmark) != len(prices):
+                errors.append(path + ".benchmark_prices must align with prices by date")
+            else:
+                for price_point, bench_point in zip(prices, benchmark):
+                    if not isinstance(bench_point, dict) or bench_point.get("date") != price_point.get("date"):
+                        errors.append(path + ".benchmark_prices dates must match prices exactly")
+                        break
+                    close = _number(bench_point.get("close"))
+                    if close is None or close <= 0:
+                        errors.append(path + ".benchmark_prices require positive finite closes")
+                        break
     return errors
 
 
@@ -139,10 +163,18 @@ def sample_result(sample, before, after):
     """Return (result, None) or (None, reason) for one sample."""
     if "returns" in sample:
         returns = sample["returns"]
-        return {"id": sample.get("id"), "event_date": sample.get("date", ""),
-                "label": sample.get("label", ""), "claim_ids": sample.get("claim_ids", []),
-                "pre_return": returns.get("pre"), "post_return": returns.get("post"),
-                "total_return": returns.get("total")}, None
+        row = {"id": sample.get("id"), "event_date": sample.get("date", ""),
+               "label": sample.get("label", ""), "claim_ids": sample.get("claim_ids", []),
+               "pre_return": returns.get("pre"), "post_return": returns.get("post"),
+               "total_return": returns.get("total")}
+        bench = sample.get("benchmark_returns")
+        if isinstance(bench, dict):
+            row.update(benchmark_pre_return=bench.get("pre"), benchmark_post_return=bench.get("post"),
+                       benchmark_total_return=bench.get("total"),
+                       excess_pre_return=row["pre_return"] - bench.get("pre"),
+                       excess_post_return=row["post_return"] - bench.get("post"),
+                       excess_total_return=row["total_return"] - bench.get("total"))
+        return row, None
     prices = [point for point in sample.get("prices", []) if isinstance(point, dict)]
     dates = [point.get("date") for point in prices]
     if sample.get("date") not in dates:
@@ -157,13 +189,28 @@ def sample_result(sample, before, after):
     end = _number(prices[index + after]["close"])
     if None in (start, event, end):
         return None, "prices contain a non-finite close"
-    return {"id": sample.get("id"), "event_date": sample["date"],
-            "label": sample.get("label", ""), "claim_ids": sample.get("claim_ids", []),
-            "start_date": prices[index - before]["date"], "start_close": start,
-            "event_close": event, "end_date": prices[index + after]["date"], "end_close": end,
-            "pre_return": event / start - 1 if start else None,
-            "post_return": end / event - 1 if event else None,
-            "total_return": end / start - 1 if start else None}, None
+    row = {"id": sample.get("id"), "event_date": sample["date"],
+           "label": sample.get("label", ""), "claim_ids": sample.get("claim_ids", []),
+           "start_date": prices[index - before]["date"], "start_close": start,
+           "event_close": event, "end_date": prices[index + after]["date"], "end_close": end,
+           "pre_return": event / start - 1 if start else None,
+           "post_return": end / event - 1 if event else None,
+           "total_return": end / start - 1 if start else None}
+    benchmark = sample.get("benchmark_prices")
+    if isinstance(benchmark, list) and len(benchmark) == len(prices):
+        bench_start = _number(benchmark[index - before].get("close"))
+        bench_event = _number(benchmark[index].get("close"))
+        bench_end = _number(benchmark[index + after].get("close"))
+        if None not in (bench_start, bench_event, bench_end):
+            row.update(benchmark_start_close=bench_start, benchmark_event_close=bench_event,
+                       benchmark_end_close=bench_end,
+                       benchmark_pre_return=bench_event / bench_start - 1 if bench_start else None,
+                       benchmark_post_return=bench_end / bench_event - 1 if bench_event else None,
+                       benchmark_total_return=bench_end / bench_start - 1 if bench_start else None,
+                       excess_pre_return=row["pre_return"] - (bench_event / bench_start - 1),
+                       excess_post_return=row["post_return"] - (bench_end / bench_event - 1),
+                       excess_total_return=row["total_return"] - (bench_end / bench_start - 1))
+    return row, None
 
 
 def analyse(document):
@@ -182,6 +229,8 @@ def analyse(document):
     post = [row["post_return"] for row in rows if row["post_return"] is not None]
     pre = [row["pre_return"] for row in rows if row["pre_return"] is not None]
     total = [row["total_return"] for row in rows if row["total_return"] is not None]
+    excess_post = [row["excess_post_return"] for row in rows if row.get("excess_post_return") is not None]
+    excess_total = [row["excess_total_return"] for row in rows if row.get("excess_total_return") is not None]
 
     def summary(values):
         if not values:
@@ -194,9 +243,11 @@ def analyse(document):
     return {"passed": True, "event": document["event"], "window": document["window"],
             "samples": rows, "skipped": skipped,
             "summary": {"pre_return": summary(pre), "post_return": summary(post),
-                        "total_return": summary(total)},
+                        "total_return": summary(total),
+                        "excess_post_return": summary(excess_post),
+                        "excess_total_return": summary(excess_total)},
             "notes": ["窗口单位是每条价格序列自己的观测点（通常为交易日），不是自然日。",
-                      "收益是绝对收益，不是相对基准的超额收益；样本由研究者事前选定。",
+                      "收益是绝对收益；可选基准序列给出简单超额收益，样本由研究者事前选定。",
                       "不给p值或显著性结论：小样本与选择偏误不支持统计推断。",
                       "skipped列出的样本窗口不足或事件日缺失，不参与汇总。",
                       "returns-only样本不内嵌价格序列，无法从价格重算收益；需要逐点复核时保留prices。"]}

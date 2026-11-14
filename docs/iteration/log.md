@@ -4,6 +4,48 @@
 
 ---
 
+## Cycle 85 · 2026-11-14 · 事件研究支持可选基准与超额收益
+
+**对应卡片**：Round 7 结尾计划（事件研究只有绝对收益）
+
+**实现**
+
+| 文件 | 变更 |
+| --- | --- |
+| `scripts/event_study.py` | 样本可选 `benchmark_prices`（与 prices 逐日对齐）或 `benchmark_returns`；计算 benchmark_* 与 excess_*；summary 增加 `excess_post_return` / `excess_total_return` |
+| `scripts/render_report.py` | 分布表增加「后窗超额/全窗超额」，明细表在有基准时加两列；脚注区分绝对与简单超额 |
+| `scripts/memo_pack.py` | 参考类事件小节增加超额 n/中位/为正，并注明「标的减基准的简单差，未做 beta 调整」 |
+| 测试 | 4 个事件研究用例 + 1 个渲染 + 1 个 memo 用例 |
+
+**关键设计决定**
+
+1. **默认不变**：不给基准时输出与渲染逐字节不变；既有示例哈希不变。
+2. **对齐而不插值**：基准必须与价格序列逐日完全一致，缺一天就报错；避免「大致对齐」引入假精度。
+3. **简单超额**：只做标的减基准，不做 beta/因子调整；memo 与报告都写明。
+4. **两种形态**：价格样本用 `benchmark_prices`，returns-only 样本用 `benchmark_returns`；混用直接拒绝。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 544 tests ... OK
+```
+
+- 超额计算：价格样本 E1（+10% vs 基准 0%）后窗超额 10%；returns-only 两样本超额中位 4.5%。
+- 负例：基准少一天、日期错位、收盘价 0、形状错误、形态混用全部拒绝。
+- 九个示例哈希一致；冻结渲染逐字节相同。
+
+**投研意义增量**
+
+1. 事件研究从「绝对涨跌」扩展到「相对基准的超额」，更接近专业做法。
+2. 对齐与简单超额的边界写清，避免读者误以为是 CAR 或 beta 调整后的 alpha。
+
+**遗留**
+
+- 没有 beta 调整、因子模型或事件窗口重叠处理。
+- FRED 基准序列需要逐日对齐；节假日差异会导致直接拒绝，适合同市场指数。
+- 示例尚未使用基准；下一轮给 FOMC 示例加 NASDAQCOM 基准。
+
 ## Cycle 84 · 2026-11-14 · 反向 DCF 示例加入五阶段收敛对照
 
 **对应卡片**：Cycle 83 遗留（示例仍是单阶段）

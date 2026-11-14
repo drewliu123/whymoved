@@ -226,7 +226,8 @@ def _event_study(report):
     window = result["window"]
     lines = ["", "## 参考类事件", "",
              "- 事件：%s；窗口：−%s / +%s 个观测点" % (_escape(str(result["event"])), window["before"], window["after"])]
-    for name, label in (("post_return", "后窗"), ("total_return", "全窗")):
+    for name, label in (("post_return", "后窗"), ("total_return", "全窗"),
+                        ("excess_post_return", "后窗超额"), ("excess_total_return", "全窗超额")):
         stats = result["summary"].get(name)
         if not stats:
             continue
@@ -235,6 +236,8 @@ def _event_study(report):
             _ratio(stats["q1"]), _ratio(stats["q3"])))
     if result.get("skipped"):
         lines.append("- 跳过 %d 条样本（窗口不足或事件日缺失），详见完整报告。" % len(result["skipped"]))
+    if result["summary"].get("excess_total_return"):
+        lines.append("- 超额收益是标的减基准的简单差，未做 beta 调整。")
     lines.append("- 绝对收益、样本事前选定、不给 p 值；参考类分布不是预测。")
     return lines
 
