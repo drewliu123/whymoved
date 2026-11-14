@@ -6,7 +6,7 @@
 
 ## 判断
 
-以 FY2026 自由现金流 66,987 百万美元（经营现金流 182,935 − 现金资本开支 115,948）、净债务 19,359、股数 7,453 百万与 2026\-11\-13 收盘 523\.88 美元为输入，在 8% 折现、2\.5% 终值、5 年显式期假设下，价格隐含约 31\.2% 的五年自由现金流增速。折现率改为 7%/9% 时，隐含增长约 25\.4%/36\.3%；终值改为 2%/3% 时约 33\.3%/28\.9%。同期按同一口径的自由现金流从 FY2024 的 74,071 降到 FY2026 的 66,987。也就是说，当前价格嵌入了资本开支回落后现金流重新加速的预期；这不构成买卖结论，假设本身决定结论。 [O\-DCF] [I\-JUDGE] [C\-PX]
+以 FY2026 自由现金流 66,987 百万美元（经营现金流 182,935 − 现金资本开支 115,948）、净债务 19,359、股数 7,453 百万与 2026\-11\-13 收盘 523\.88 美元为输入，在 8% 折现、2\.5% 终值、5 年显式期假设下，价格隐含约 31\.2% 的五年自由现金流增速；若显式期后再用 5 年线性收敛到终值增长，隐含增速降到约 23\.0%，敏感性区间 18\.9%–26\.6%。折现率改为 7%/9% 时，隐含增长约 25\.4%/36\.3%；终值改为 2%/3% 时约 33\.3%/28\.9%。同期按同一口径的自由现金流从 FY2024 的 74,071 降到 FY2026 的 66,987。两种口径都远高于过去三年自由现金流的方向，说明价格嵌入了资本开支回落后现金流重新加速的预期；这不构成买卖结论，阶段结构与假设本身决定结论。 [O\-DCF] [I\-JUDGE] [C\-PX]
 
 重要限制：8% 折现率、2\.5% 终值与 5 年显式期都是研究者假设，不是市场共识；换假设结论会变。 [I\-ASSUMP]
 
@@ -21,6 +21,16 @@
 相较基线：只看市盈率
 
 研究增量（calculation）：反推增长与历史自由现金流对照
+
+## 多阶段假设把隐含增速降到约 23%
+
+恒定增长口径约 31\.2%，加入 5 年线性收敛后约 23\.0%；同一现价下，阶段结构本身就是一个关键假设。 [O\-DCF] [O\-DCF2] [I\-ASSUMP]
+
+为什么重要：只报单一阶段会把「价格要求什么」简化成一个数；阶段结构改变，隐含增速也随之改变。
+
+相较基线：恒定增长单一口径
+
+研究增量（calculation）：多阶段收敛对照
 
 ## 假设决定结论
 
@@ -50,13 +60,13 @@
 
 ### 价格要求什么，研究判断有什么不同
 
-隐含预期：现价隐含约 31\.2% 的五年自由现金流增速（8% 折现、2\.5% 终值） [O\-DCF] [C\-PX]
+隐含预期：现价隐含约 31\.2%（恒定）或 23\.0%（5 年收敛）的五自由现金流增速 [O\-DCF] [O\-DCF2] [C\-PX]
 
-研究假设：研究者认为资本开支回落后现金流可能改善，但幅度未验证 [O\-DCF] [C\-PX]
+研究假设：研究者认为资本开支回落后现金流可能改善，但幅度未验证 [O\-DCF] [O\-DCF2] [C\-PX]
 
-差异：隐含增长与历史轨迹的差距需要未来资本开支与现金流验证 [O\-DCF] [C\-PX]
+差异：隐含增长与历史轨迹的差距需要未来资本开支与现金流验证 [O\-DCF] [O\-DCF2] [C\-PX]
 
-改变判断的条件：折现率、终值或资本开支路径变化时重算 [O\-DCF] [C\-PX]
+改变判断的条件：折现率、终值或资本开支路径变化时重算 [O\-DCF] [O\-DCF2] [C\-PX]
 
 ## 估值汇总
 
@@ -65,8 +75,9 @@
 | 方法 | 指标 | 低 | 中 | 高 | 单位 | 中位相对现价 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 反向 DCF 隐含增长 | 隐含增长率 | — | 0\.31181919614318754 | — | ratio | — |
+| 反向 DCF（5 年收敛） | 隐含增长率 | — | 0\.22958240197040136 | — | ratio | — |
 
-[O\-DCF]
+[O\-DCF] [O\-DCF2]
 
 参考现价（来自模型输入的带时刻价格）：523\.88 currency/share。
 
@@ -114,7 +125,7 @@
 
 
 
-观察结果：隐含增长约 31%，历史三年自由现金流下降，支持 H1、削弱 H2。 [CFO\-2024] [CAPEX\-2024] [CFO\-2026] [CAPEX\-2026] [O\-DCF]
+观察结果：隐含增长约 31%，历史三年自由现金流下降，支持 H1、削弱 H2。 [CFO\-2024] [CAPEX\-2024] [CFO\-2026] [CAPEX\-2026] [O\-DCF] [O\-DCF2]
 
 支持：H1；削弱：H2
 
@@ -174,6 +185,62 @@
 
 [O\-DCF]
 
+### 微软现价的反向 DCF 隐含增长（显式期后 5 年线性收敛）
+
+模型：reverse\_dcf；币种：USD；金额与股数共同缩放：million；期间：FY2026 自由现金流为基期，5 年显式期 \+ 5 年线性收敛；范围：CFO − 现金资本开支
+
+显式期后按 5 年线性收敛到终值增长（多阶段），不是恒定增长。
+
+### 观察值与假设
+
+| 变量 | 数值 | 单位 | 性质 | 假设理由 |
+| --- | --- | --- | --- | --- |
+| free\_cash\_flow | 66987 | currency | observed |  |
+| discount\_rate | 0\.08 | ratio | assumption | 8% 为研究者假设，不是市场共识 |
+| terminal\_growth | 0\.025 | ratio | assumption | 2\.5% 长期名义增长 |
+| years | 5 | year | assumption | 5 年显式期 |
+| net\_debt | 19359 | currency | observed |  |
+| shares | 7453 | shares | observed |  |
+| price | 523\.88 | currency/share | observed |  |
+| growth\_low | 0\.0 | ratio | assumption | 求解下界 0%，覆盖负增长情形 |
+| growth\_high | 0\.6 | ratio | assumption | 求解上界 60%，确保括号住现价 |
+
+[CFO\-2026] [CAPEX\-2026] [I\-ASSUMP] [C\-DEBT] [C\-CASH] [C\-SHARES] [C\-PX]
+
+### 固定模型重算结果
+
+| 输出 | 结果 | 单位 |
+| --- | --- | --- |
+| implied\_growth | 0\.22958240197040136 | ratio |
+| residual | 0\.00017170002683997154 | currency |
+| solved\_enterprise\_value | 3923836\.6401717 | currency |
+| target\_enterprise\_value | 3923836\.64 | currency |
+
+[O\-DCF2]
+
+### 单参数敏感性（其余输入固定）
+
+| 变量 | 改为 | 单位 | 输出 | 结果 | 结果单位 |
+| --- | --- | --- | --- | --- | --- |
+| discount\_rate | 0\.07 | ratio | implied\_growth | 0\.1886099137016572 | ratio |
+| discount\_rate | 0\.07 | ratio | residual | \-0\.0003508031368255615 | currency |
+| discount\_rate | 0\.07 | ratio | solved\_enterprise\_value | 3923836\.639649197 | currency |
+| discount\_rate | 0\.07 | ratio | target\_enterprise\_value | 3923836\.64 | currency |
+| discount\_rate | 0\.09 | ratio | implied\_growth | 0\.2660674239392392 | ratio |
+| discount\_rate | 0\.09 | ratio | residual | \-0\.00011520460247993469 | currency |
+| discount\_rate | 0\.09 | ratio | solved\_enterprise\_value | 3923836\.6398847955 | currency |
+| discount\_rate | 0\.09 | ratio | target\_enterprise\_value | 3923836\.64 | currency |
+| terminal\_growth | 0\.02 | ratio | implied\_growth | 0\.2432674920419231 | ratio |
+| terminal\_growth | 0\.02 | ratio | residual | \-9\.27504152059555e\-05 | currency |
+| terminal\_growth | 0\.02 | ratio | solved\_enterprise\_value | 3923836\.6399072497 | currency |
+| terminal\_growth | 0\.02 | ratio | target\_enterprise\_value | 3923836\.64 | currency |
+| terminal\_growth | 0\.03 | ratio | implied\_growth | 0\.21466686080675573 | ratio |
+| terminal\_growth | 0\.03 | ratio | residual | 0\.00014628469944000244 | currency |
+| terminal\_growth | 0\.03 | ratio | solved\_enterprise\_value | 3923836\.640146285 | currency |
+| terminal\_growth | 0\.03 | ratio | target\_enterprise\_value | 3923836\.64 | currency |
+
+[O\-DCF2]
+
 固定模型的数值已重算；来源含义、假设合理性与因果解释仍需研究审查。敏感性结果不是统计置信区间。
 
 ## 来源与结论审计
@@ -228,7 +295,11 @@
 
 \[I\-JUDGE\] 在 8% 折现、2\.5% 终值、5 年假设下，当前价格隐含约 31% 的五年自由现金流增速；而 FY2024–FY2026 按 CFO−capex 的自由现金流从 74,071 降到 66,987 百万美元，定价依赖未来资本开支回落或增长加速（inference；2026\-11\-14T05:00:00Z）
 
-依据：CFO\-2024, CFO\-2025, CFO\-2026, CAPEX\-2024, CAPEX\-2025, CAPEX\-2026, O\-DCF, C\-PX；来源：
+依据：CFO\-2024, CFO\-2025, CFO\-2026, CAPEX\-2024, CAPEX\-2025, CAPEX\-2026, O\-DCF, C\-PX, O\-DCF2；来源：
+
+\[O\-DCF2\] 在 5 年线性收敛假设下，当前价格隐含的五年自由现金流增速（inference；2026\-11\-14T05:00:00Z）
+
+依据：CFO\-2026, CAPEX\-2026, C\-DEBT, C\-CASH, C\-SHARES, C\-PX, I\-ASSUMP；来源：
 
 S\-SEC · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T04:50:00Z · quote：10\-K company facts: NetCashProvidedByUsedInOperatingActivities FY2026 182,935; PaymentsToAcquirePropertyPlantAndEquipment FY2026 115,948; LongTermDebt 40,294; CashAndCashEquivalents 20,935 · locator：SEC companyfacts CIK0000789019（Microsoft），FY2024–FY2026 年度值与 FY2026 期末余额 · origin\_id：sec\-msft\-fcf · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "自由现金流与净债务", "reason": "官方现金流与资产负债表事实", "relevance": "direct", "selected": true\}
 
