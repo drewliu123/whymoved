@@ -1,0 +1,195 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T05:00:00Z",
+  "claims": [
+    {
+      "id": "PX-MSFT",
+      "text": "MSFT 2026-11-13 收盘 523.88 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NASDAQ-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "PX-AAPL",
+      "text": "AAPL 2026-11-13 收盘 356.27 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NASDAQ-AAPL"
+        }
+      ]
+    },
+    {
+      "id": "PX-GOOGL",
+      "text": "GOOGL 2026-11-13 收盘 295.77 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NASDAQ-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "PX-AMZN",
+      "text": "AMZN 2026-11-13 收盘 266.66 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NASDAQ-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "NI-MSFT",
+      "text": "MSFT 最近财年净利润 133749 百万美元（2025-07-01 至 2026-06-30）",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "SH-MSFT",
+      "text": "MSFT 最近财年稀释加权股数 7453 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "NI-AAPL",
+      "text": "AAPL 最近财年净利润 132175 百万美元（2025-09-28 至 2026-09-26）",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC-AAPL"
+        }
+      ]
+    },
+    {
+      "id": "SH-AAPL",
+      "text": "AAPL 最近财年稀释加权股数 14720.306 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC-AAPL"
+        }
+      ]
+    },
+    {
+      "id": "NI-GOOGL",
+      "text": "GOOGL 最近财年净利润 132170 百万美元（2025-01-01 至 2025-12-31）",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "SH-GOOGL",
+      "text": "GOOGL 最近财年稀释加权股数 12230 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "NI-AMZN",
+      "text": "AMZN 最近财年净利润 77670 百万美元（2025-01-01 至 2025-12-31）",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "SH-AMZN",
+      "text": "AMZN 最近财年稀释加权股数 10827 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-SEC-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "I-PE",
+      "text": "市盈率为股权口径，不做净债务调整；同行财年终点不同，倍数按各自最近财年计算",
+      "type": "inference",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [],
+      "basis": [
+        "NI-MSFT",
+        "NI-AAPL",
+        "NI-GOOGL",
+        "NI-AMZN"
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "微软按最近财年市盈率低于三家同行中位，折价约两成；但财年、增长与资本结构不同，折价本身不足以证明低估",
+      "type": "inference",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [],
+      "basis": [
+        "PX-MSFT",
+        "NI-MSFT",
+        "NI-AAPL",
+        "NI-GOOGL",
+        "NI-AMZN",
+        "SH-MSFT",
+        "SH-AAPL",
+        "SH-GOOGL",
+        "SH-AMZN"
+      ]
+    },
+    {
+      "id": "O-EQ",
+      "text": "可比公司模型在给定同行倍数下的每股价值区间",
+      "type": "inference",
+      "as_of": "2026-11-14T05:00:00Z",
+      "sources": [],
+      "basis": [
+        "PX-MSFT",
+        "NI-MSFT",
+        "SH-MSFT",
+        "I-PE",
+        "PX-AAPL",
+        "NI-AAPL",
+        "SH-AAPL",
+        "PX-GOOGL",
+        "NI-GOOGL",
+        "SH-GOOGL",
+        "PX-AMZN",
+        "NI-AMZN",
+        "SH-AMZN"
+      ]
+    }
+  ]
+}

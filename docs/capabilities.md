@@ -7,7 +7,7 @@
 | 来源分层、选择与去重 | [现金流示例](../examples/msft-cashflow/README.md) | `test_sources.py`、`test_evidence_v2.py` | [evidence](../skills/research/references/evidence.md) |
 | 研究计划与问题路由 | [教程第 1 步](tutorial.md)、[苹果示例](../examples/aapl-quality/README.md) | `test_research_plan.py`、`test_analysis_contract.py` | [templates](../skills/research/references/templates.md) |
 | 数值事实与口径校验（量纲/缩放/期间） | [质量示例](../examples/msft-earnings-quality/README.md) | `test_metrics.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
-| 相对估值（comps、分位、现价隐含倍数） | 仅测试 | `test_analysis_models.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
+| 相对估值（comps、分位、现价隐含倍数） | [大型科技同行 P/E 示例](../examples/mega-cap-peers/README.md) | `test_analysis_models.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 驱动式经营模型与多年推演 | [分部示例](../examples/msft-segments/README.md) | `test_analysis_models.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 敏感性 / 龙卷风 / 三情景 | 仅测试 | `test_analysis_models.py`、`test_analysis_contract.py` | [analysis-methods](../skills/research/references/analysis-methods.md) |
 | 可复算计算（op 白名单、引用链） | [现金流示例](../examples/msft-cashflow/README.md) | `test_calculations.py`、`test_reports.py` | [evidence](../skills/research/references/evidence.md) |

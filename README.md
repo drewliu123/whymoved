@@ -52,6 +52,11 @@
 - **[阅读传导报告](examples/ai-capex-transmission/research/work/report.md)**
 - **[查看完整案例与命令](examples/ai-capex-transmission/README.md)**
 
+**第八个例子：微软相对同行的市盈率折价是低估吗？** 用 Nasdaq 收盘价与四家公司最近财年的 SEC 盈利数据：微软 29.2x，同行中位 37.2x，折价约 21.5%；但 Alphabet 也只有 27.4x，且财年终点不同。折价事实成立，「低估」需要盈利预期与资本回报对齐后才能判断。
+
+- **[阅读相对估值报告](examples/mega-cap-peers/research/work/report.md)**
+- **[查看完整案例与命令](examples/mega-cap-peers/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

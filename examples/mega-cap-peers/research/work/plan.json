@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "微软相对大型科技同行的市盈率折价，是低估还是口径差异？",
+  "type": "asset",
+  "task": "可比公司估值",
+  "entity": "Microsoft",
+  "as_of": "2026-11-14T05:00:00Z",
+  "historical": false,
+  "decision_needed": "判断折价能否作为相对低估的依据",
+  "prior_judgment": "市场常把与同行的 P/E 折价直接当作低估",
+  "comparison": {
+    "period": "各自最近财年",
+    "unit": "USD/share 与倍数",
+    "scope": "MSFT / AAPL / GOOGL / AMZN"
+  },
+  "budget": {
+    "max_queries": 2,
+    "max_followups": 0
+  },
+  "stop_condition": "四家公司收盘价与最近财年 EPS 取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "valuation",
+    "method": "reverse_valuation",
+    "rationale": "用同行 P/E 分布对照微软现价倍数，并检查折价是否可用口径解释",
+    "baseline": "同行最近财年 P/E",
+    "price_relevance": true,
+    "mechanism_chain": [
+      "最近财年盈利",
+      "同行倍数",
+      "隐含每股价值",
+      "当前价格"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "微软 P/E 在同行分布中的位置与财年差异",
+        "source": "Nasdaq 收盘价 + SEC 年度净利润/股数",
+        "by": "下一次财报",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "折价可由财年与结构差异解释，且同组内也有低倍数"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "微软显著低于所有同行且无口径差异"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "折价来自财年与业务结构差异，不能直接读成低估",
+      "discriminating_observation": "同组内存在相近低倍数且财年不同"
+    },
+    {
+      "id": "H2",
+      "explanation": "微软相对同行被低估",
+      "discriminating_observation": "微软倍数低于全部同行且口径一致"
+    }
+  ],
+  "queries": [
+    {
+      "question": "四家公司收盘价与最近财年 EPS",
+      "query": "Nasdaq historical + SEC company facts",
+      "source": "Nasdaq / SEC",
+      "purpose": "计算同行 P/E 与隐含价值",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

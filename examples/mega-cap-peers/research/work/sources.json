@@ -1,0 +1,243 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T05:00:00Z",
+  "historical": false,
+  "source_status": {
+    "nasdaq": {
+      "status": "ok"
+    },
+    "sec": {
+      "status": "ok"
+    }
+  },
+  "candidates": [
+    {
+      "id": "S-NASDAQ-MSFT",
+      "url": "https://www.nasdaq.com/market-activity/stocks/msft/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-14T04:50:00Z",
+      "quote": "11/13/2026 close $523.88; 11/12/2026 close $523.0",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-msft",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "MSFT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 523.88,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所报价，明确收盘日",
+        "relevance": "direct",
+        "purpose": "可比公司市盈率与目标价",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-SEC-MSFT",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "publisher": "U.S. SEC",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T04:50:00Z",
+      "quote": "10-K company facts: NetIncomeLoss and WeightedAverageNumberOfDilutedSharesOutstanding",
+      "locator": "SEC companyfacts CIK0000789019（MSFT），最近一个完整财年",
+      "origin_id": "sec-msft",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方年度净利润与稀释股数",
+        "relevance": "direct",
+        "purpose": "计算每股收益与市盈率",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-NASDAQ-AAPL",
+      "url": "https://www.nasdaq.com/market-activity/stocks/aapl/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-14T04:50:00Z",
+      "quote": "11/13/2026 close $356.27; 11/12/2026 close $354.88",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-aapl",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "AAPL",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 356.27,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所报价，明确收盘日",
+        "relevance": "direct",
+        "purpose": "可比公司市盈率与目标价",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-SEC-AAPL",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "publisher": "U.S. SEC",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T04:50:00Z",
+      "quote": "10-K company facts: NetIncomeLoss and WeightedAverageNumberOfDilutedSharesOutstanding",
+      "locator": "SEC companyfacts CIK0000320193（AAPL），最近一个完整财年",
+      "origin_id": "sec-aapl",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方年度净利润与稀释股数",
+        "relevance": "direct",
+        "purpose": "计算每股收益与市盈率",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-NASDAQ-GOOGL",
+      "url": "https://www.nasdaq.com/market-activity/stocks/googl/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-14T04:50:00Z",
+      "quote": "11/13/2026 close $295.77; 11/12/2026 close $298.7",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-googl",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "GOOGL",
+        "outcome": "closing price",
+        "direction": "down",
+        "value": 295.77,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所报价，明确收盘日",
+        "relevance": "direct",
+        "purpose": "可比公司市盈率与目标价",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-SEC-GOOGL",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+      "publisher": "U.S. SEC",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T04:50:00Z",
+      "quote": "10-K company facts: NetIncomeLoss and WeightedAverageNumberOfDilutedSharesOutstanding",
+      "locator": "SEC companyfacts CIK0001652044（GOOGL），最近一个完整财年",
+      "origin_id": "sec-googl",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方年度净利润与稀释股数",
+        "relevance": "direct",
+        "purpose": "计算每股收益与市盈率",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-NASDAQ-AMZN",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amzn/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-14T04:50:00Z",
+      "quote": "11/13/2026 close $266.66; 11/12/2026 close $267.44",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-amzn",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "AMZN",
+        "outcome": "closing price",
+        "direction": "down",
+        "value": 266.66,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所报价，明确收盘日",
+        "relevance": "direct",
+        "purpose": "可比公司市盈率与目标价",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-SEC-AMZN",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+      "publisher": "U.S. SEC",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-14T04:50:00Z",
+      "quote": "10-K company facts: NetIncomeLoss and WeightedAverageNumberOfDilutedSharesOutstanding",
+      "locator": "SEC companyfacts CIK0001018724（AMZN），最近一个完整财年",
+      "origin_id": "sec-amzn",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方年度净利润与稀释股数",
+        "relevance": "direct",
+        "purpose": "计算每股收益与市盈率",
+        "priority": "decisive"
+      }
+    }
+  ]
+}

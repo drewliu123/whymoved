@@ -1,0 +1,545 @@
+{
+  "schema_version": 2,
+  "title": "微软与大型科技同行的市盈率折价：事实成立，低估不成立",
+  "question": "微软相对大型科技同行的市盈率折价，是低估还是口径差异？",
+  "type": "asset",
+  "task": "可比公司估值",
+  "as_of": "2026-11-14T05:00:00Z",
+  "answer": {
+    "text": "按 2026-11-13 收盘价与各自最近财年净利润/稀释股数，微软市盈率约 29.2 倍，低于三家同行中位约 37.2 倍，折价约 21.5%；同行中 Alphabet 也只有约 27.4 倍，说明同组内本身分层。按同行中位倍数，微软最近财年 EPS 隐含每股约 667 美元，区间约 579–690 美元，但这是倍数参照，不是目标价。折价事实成立，但财年终点不同、增长与资本开支结构不同，「低估」需要盈利预期与资本回报对齐后才能判断。",
+    "claim_ids": [
+      "PX-MSFT",
+      "NI-MSFT",
+      "SH-MSFT",
+      "PX-GOOGL",
+      "NI-GOOGL",
+      "SH-GOOGL",
+      "I-JUDGE"
+    ]
+  },
+  "findings": [
+    {
+      "title": "折价约 21.5%，但同组内也有低倍数",
+      "text": "微软 29.2 倍，同行中位 37.2 倍，Alphabet 27.4 倍、Amazon 37.2 倍、Apple 39.7 倍。",
+      "claim_ids": [
+        "PX-MSFT",
+        "PX-AAPL",
+        "PX-GOOGL",
+        "PX-AMZN",
+        "NI-GOOGL",
+        "SH-GOOGL"
+      ],
+      "why_it_matters": "折价不是微软独有；把「低于同行」直接当作错误定价会忽略组内差异。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "折价等于低估的直觉",
+        "detail": "同行分布本身分化"
+      }
+    },
+    {
+      "title": "财年不一致使倍数不完全可比",
+      "text": "MSFT 与 AAPL 用 2026 财年，GOOGL 与 AMZN 用 2025 财年；盈利增长会改变分母。",
+      "claim_ids": [
+        "NI-MSFT",
+        "NI-AAPL",
+        "NI-GOOGL",
+        "NI-AMZN",
+        "I-PE"
+      ],
+      "why_it_matters": "同一时点的价格配不同财年的盈利，倍数差异可能来自时间差而不是估值差。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "把四家倍数当同期",
+        "detail": "财年终点差异"
+      }
+    },
+    {
+      "title": "隐含区间只能作参照",
+      "text": "同行中位倍数乘以微软 EPS 得到约 667 美元/股，区间约 579–690 美元；相对现价高约 10%–32%。",
+      "claim_ids": [
+        "O-EQ",
+        "PX-MSFT",
+        "NI-MSFT",
+        "SH-MSFT"
+      ],
+      "why_it_matters": "倍数选择决定结论；这个区间不是目标价，也不含增长调整。",
+      "increment": {
+        "kind": "calculation",
+        "baseline": "只看当前倍数",
+        "detail": "同行分位对应的隐含每股价值"
+      },
+      "calculation_ids": [
+        "M1"
+      ]
+    }
+  ],
+  "alternatives": [],
+  "watch": [
+    {
+      "signal": "下一次财报后的 P/E 差与盈利增速差",
+      "meaning": "验证折价是否随盈利预期收敛",
+      "claim_ids": [
+        "PX-MSFT"
+      ],
+      "due": "2027-01-29",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "同行财年终点不同，P/E 未做 TTM 对齐；四家均为大型平台公司，不能代表全市场。",
+      "material": true,
+      "claim_ids": [
+        "I-PE"
+      ]
+    },
+    {
+      "text": "未调整增长、资本开支与回购差异；折价与低估之间不能画等号。",
+      "material": true,
+      "claim_ids": [
+        "I-JUDGE"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "同行市盈率",
+      "columns": [
+        "公司",
+        "收盘价（美元/股）",
+        "最近财年 EPS",
+        "P/E"
+      ],
+      "units": [
+        "",
+        "USD/share",
+        "USD/share",
+        "x"
+      ],
+      "rows": [
+        [
+          "MSFT",
+          523.88,
+          17.9457,
+          29.193
+        ],
+        [
+          "AAPL",
+          356.27,
+          8.9791,
+          39.678
+        ],
+        [
+          "GOOGL",
+          295.77,
+          10.807,
+          27.368
+        ],
+        [
+          "AMZN",
+          266.66,
+          7.1737,
+          37.172
+        ]
+      ],
+      "claim_ids": [
+        "PX-MSFT",
+        "PX-AAPL",
+        "PX-GOOGL",
+        "PX-AMZN",
+        "NI-MSFT",
+        "NI-AAPL",
+        "NI-GOOGL",
+        "NI-AMZN"
+      ]
+    }
+  ],
+  "valuation_summary": {
+    "rows": [
+      {
+        "model_id": "M1",
+        "label": "可比公司 P/E",
+        "metric": "per_share"
+      }
+    ],
+    "note": "同行倍数只给参照区间；不同财年与增长结构尚未对齐，不能当目标价。"
+  },
+  "analysis": {
+    "version": 1,
+    "question_kind": "valuation",
+    "method": "reverse_valuation",
+    "baseline": "同行最近财年 P/E",
+    "baseline_claim_ids": [
+      "PX-MSFT",
+      "NI-MSFT"
+    ],
+    "price_relevance": true,
+    "mechanism_chain": [
+      "最近财年盈利",
+      "同行倍数",
+      "隐含每股价值",
+      "当前价格"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "折价来自财年与业务结构差异，不能直接读成低估"
+      },
+      {
+        "id": "H2",
+        "explanation": "微软相对同行被低估"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "折价可由财年与结构差异解释，且同组内也有低倍数"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "微软显著低于所有同行且无口径差异"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "PX-MSFT",
+          "PX-GOOGL",
+          "PX-AAPL",
+          "PX-AMZN",
+          "I-PE"
+        ],
+        "interpretation": "折价约 21.5%，但 Alphabet 倍数更低、财年不一致，支持 H1、不足以支持 H2。",
+        "supports": [
+          "H1"
+        ],
+        "weakens": [
+          "H2"
+        ],
+        "next_observation": "下一次财报后的 P/E 差",
+        "by": "2027-01-29",
+        "supports_if": "折价随盈利增速差收敛而收窄",
+        "weakens_if": "折价扩大且无基本面差异"
+      }
+    ],
+    "conclusion": "折价事实成立，但财年与结构差异使其不能直接读成低估；隐含区间只是倍数参照。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [
+      {
+        "id": "M1",
+        "instrument": "MSFT",
+        "description": "微软相对三家大型科技同行的市盈率对照",
+        "currency": "USD",
+        "scale": "million",
+        "period": "各自最近财年（MSFT FY2026-06、AAPL FY2026-09、GOOGL/AMZN FY2025-12）",
+        "scope": "最近财年净利润与稀释股数",
+        "peer_set_rationale": "三家均为大型平台科技公司，但业务结构与资本开支强度不同；只作为倍数参照，不证明可比",
+        "assumptions": {
+          "net_debt": "P/E 为股权口径，净债务按 0 处理，不做 EV 调整"
+        },
+        "spec": {
+          "kind": "relative_valuation",
+          "inputs": {
+            "metric": {
+              "value": 133749,
+              "unit": "currency",
+              "role": "observed",
+              "claim_ids": [
+                "NI-MSFT"
+              ]
+            },
+            "net_debt": {
+              "value": 0,
+              "unit": "currency",
+              "role": "assumption",
+              "claim_ids": [
+                "I-PE"
+              ]
+            },
+            "shares": {
+              "value": 7453,
+              "unit": "shares",
+              "role": "observed",
+              "claim_ids": [
+                "SH-MSFT"
+              ]
+            },
+            "price": {
+              "value": 523.88,
+              "unit": "currency/share",
+              "role": "observed",
+              "claim_ids": [
+                "PX-MSFT"
+              ]
+            }
+          },
+          "peers": [
+            {
+              "name": "AAPL",
+              "multiple": 39.67772588326083,
+              "note": "P/E on latest fiscal-year EPS",
+              "claim_ids": [
+                "PX-AAPL",
+                "NI-AAPL",
+                "SH-AAPL"
+              ]
+            },
+            {
+              "name": "GOOGL",
+              "multiple": 27.368291594159036,
+              "note": "P/E on latest fiscal-year EPS",
+              "claim_ids": [
+                "PX-GOOGL",
+                "NI-GOOGL",
+                "SH-GOOGL"
+              ]
+            },
+            {
+              "name": "AMZN",
+              "multiple": 37.171724217844734,
+              "note": "P/E on latest fiscal-year EPS",
+              "claim_ids": [
+                "PX-AMZN",
+                "NI-AMZN",
+                "SH-AMZN"
+              ]
+            }
+          ],
+          "sensitivity": [
+            {
+              "input": "metric",
+              "values": [
+                120374.1,
+                147123.90000000002
+              ]
+            }
+          ]
+        },
+        "output_claim_ids": [
+          "O-EQ"
+        ],
+        "result": {
+          "outputs": {
+            "peer_count": {
+              "value": 3,
+              "unit": "count"
+            },
+            "peer_multiple_min": {
+              "value": 27.368291594159036,
+              "unit": "ratio"
+            },
+            "peer_multiple_q1": {
+              "value": 32.27000790600189,
+              "unit": "ratio"
+            },
+            "peer_multiple_median": {
+              "value": 37.171724217844734,
+              "unit": "ratio"
+            },
+            "peer_multiple_q3": {
+              "value": 38.42472505055278,
+              "unit": "ratio"
+            },
+            "peer_multiple_max": {
+              "value": 39.67772588326083,
+              "unit": "ratio"
+            },
+            "peer_multiple_mean": {
+              "value": 34.73924723175487,
+              "unit": "ratio"
+            },
+            "implied_ev_median": {
+              "value": 4971680.942412515,
+              "unit": "currency"
+            },
+            "implied_equity_median": {
+              "value": 4971680.942412515,
+              "unit": "currency"
+            },
+            "per_share_median": {
+              "value": 667.071104577018,
+              "unit": "currency/share"
+            },
+            "per_share_low": {
+              "value": 579.1065728458133,
+              "unit": "currency/share"
+            },
+            "per_share_high": {
+              "value": 689.5570308313945,
+              "unit": "currency/share"
+            },
+            "implied_multiple_at_price": {
+              "value": 29.192574449154762,
+              "unit": "ratio"
+            },
+            "price_vs_peer_median": {
+              "value": -0.21465643406607127,
+              "unit": "ratio"
+            },
+            "implied_multiple_percentile": {
+              "value": 0.3333333333333333,
+              "unit": "ratio"
+            }
+          },
+          "sensitivity": [
+            {
+              "input": "metric",
+              "value": 120374.1,
+              "unit": "currency",
+              "outputs": {
+                "peer_count": {
+                  "value": 3,
+                  "unit": "count"
+                },
+                "peer_multiple_min": {
+                  "value": 27.368291594159036,
+                  "unit": "ratio"
+                },
+                "peer_multiple_q1": {
+                  "value": 32.27000790600189,
+                  "unit": "ratio"
+                },
+                "peer_multiple_median": {
+                  "value": 37.171724217844734,
+                  "unit": "ratio"
+                },
+                "peer_multiple_q3": {
+                  "value": 38.42472505055278,
+                  "unit": "ratio"
+                },
+                "peer_multiple_max": {
+                  "value": 39.67772588326083,
+                  "unit": "ratio"
+                },
+                "peer_multiple_mean": {
+                  "value": 34.73924723175487,
+                  "unit": "ratio"
+                },
+                "implied_ev_median": {
+                  "value": 4474512.848171264,
+                  "unit": "currency"
+                },
+                "implied_equity_median": {
+                  "value": 4474512.848171264,
+                  "unit": "currency"
+                },
+                "per_share_median": {
+                  "value": 600.3639941193162,
+                  "unit": "currency/share"
+                },
+                "per_share_low": {
+                  "value": 521.195915561232,
+                  "unit": "currency/share"
+                },
+                "per_share_high": {
+                  "value": 620.6013277482551,
+                  "unit": "currency/share"
+                },
+                "implied_multiple_at_price": {
+                  "value": 32.436193832394174,
+                  "unit": "ratio"
+                },
+                "price_vs_peer_median": {
+                  "value": -0.12739603785119036,
+                  "unit": "ratio"
+                },
+                "implied_multiple_percentile": {
+                  "value": 0.3333333333333333,
+                  "unit": "ratio"
+                }
+              }
+            },
+            {
+              "input": "metric",
+              "value": 147123.90000000002,
+              "unit": "currency",
+              "outputs": {
+                "peer_count": {
+                  "value": 3,
+                  "unit": "count"
+                },
+                "peer_multiple_min": {
+                  "value": 27.368291594159036,
+                  "unit": "ratio"
+                },
+                "peer_multiple_q1": {
+                  "value": 32.27000790600189,
+                  "unit": "ratio"
+                },
+                "peer_multiple_median": {
+                  "value": 37.171724217844734,
+                  "unit": "ratio"
+                },
+                "peer_multiple_q3": {
+                  "value": 38.42472505055278,
+                  "unit": "ratio"
+                },
+                "peer_multiple_max": {
+                  "value": 39.67772588326083,
+                  "unit": "ratio"
+                },
+                "peer_multiple_mean": {
+                  "value": 34.73924723175487,
+                  "unit": "ratio"
+                },
+                "implied_ev_median": {
+                  "value": 5468849.036653767,
+                  "unit": "currency"
+                },
+                "implied_equity_median": {
+                  "value": 5468849.036653767,
+                  "unit": "currency"
+                },
+                "per_share_median": {
+                  "value": 733.7782150347199,
+                  "unit": "currency/share"
+                },
+                "per_share_low": {
+                  "value": 637.0172301303946,
+                  "unit": "currency/share"
+                },
+                "per_share_high": {
+                  "value": 758.5127339145341,
+                  "unit": "currency/share"
+                },
+                "implied_multiple_at_price": {
+                  "value": 26.538704044686142,
+                  "unit": "ratio"
+                },
+                "price_vs_peer_median": {
+                  "value": -0.2860513036964285,
+                  "unit": "ratio"
+                },
+                "implied_multiple_percentile": {
+                  "value": 0.0,
+                  "unit": "ratio"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "model_status": "computed",
+    "model_reason": "收盘价、净利润与股数均有 T0 来源，可确定性重算",
+    "market": {
+      "status": "assessed",
+      "reason": "用最近收盘价与同行倍数对照",
+      "claim_ids": [
+        "O-EQ",
+        "PX-MSFT"
+      ],
+      "model_ids": [
+        "M1"
+      ],
+      "implied_expectation": "同行中位倍数对微软最近财年 EPS 隐含每股约 667 美元",
+      "research_expectation": "研究只把该区间当参照，不认为折价等于低估",
+      "gap": "现价与中位隐含值的差异取决于财年、增长与资本结构口径",
+      "conditions": "同行倍数或微软盈利预期变化时重算"
+    }
+  }
+}
