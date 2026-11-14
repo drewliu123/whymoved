@@ -406,6 +406,171 @@
         "purpose": "计算 trailing P/E",
         "priority": "decisive"
       }
+    },
+    {
+      "id": "S-PX-AMAT-21",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2021-10-29",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2021-10-29 close $136.65",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2021",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2021-10-29T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 136.65,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "五年 P/E 区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-AMAT-22",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2022-10-28",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2022-10-28 close $89.72",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2022",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2022-10-28T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 89.72,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "五年 P/E 区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-AMAT-23",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2023-10-27",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2023-10-27 close $131.3",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2023",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2023-10-27T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 131.3,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "五年 P/E 区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-AMAT-24",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2024-10-25",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2024-10-25 close $186.52",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2024",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2024-10-25T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 186.52,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "五年 P/E 区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-AMAT-25",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2025-10-24",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2025-10-24 close $228.75",
+      "locator": "Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-amat-2025",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2025-10-24T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 228.75,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "五年 P/E 区间",
+        "priority": "useful"
+      }
     }
   ]
 }
