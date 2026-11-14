@@ -8,7 +8,7 @@ AI 资本开支的价值落在链条的哪一环？
 
 结论：云厂商 capex FY2024→FY2025 增约 59\.9%，但云收入只增 12\.4%–15\.1%；设备商 4\.4%–23\.9%，英伟达收入 \+65\.5%。增量主要落在算力供应商。 但价格已经把这个顺序部分反过来：设备商 trailing P/E 39–43，高于英伟达的 33 与云厂商的 27–37。
 
-最反直觉：价值落在算力/设备，估值却在设备，而且 AMAT 的 42\.8x 是九年最高（FY2017–FY2025 区间 11\.1–26\.9x）——设备溢价更像周期高点，不是结构性重估。
+最反直觉：价值落在算力/设备，估值却在设备：三家设备商当前 P/E 都在或接近三年高位，AMAT 相对自身九年区间最极端（42\.8x vs 11\.1–26\.9x）。
 
 接下来验证：看 AMAT FY2026 收入与利润率能否支撑 40x；若增速仍低于 10%，估值向五年区间回归的风险最大。
 
@@ -51,6 +51,12 @@ trailing P/E：AMAT 42\.8、KLAC 41\.6、LRCX 39\.2，英伟达 33\.2，云厂�
 按各财年结束日收盘价与当年 EPS 计算 P/E：FY2017 17\.4x、FY2018 11\.1x、FY2019 18\.9x、FY2020 15\.1x、FY2021 21\.3x、FY2022 11\.9x、FY2023 16\.3x、FY2024 21\.1x、FY2025 26\.9x；当前 42\.8x，高于九年区间。 [PX\-AMAT\-17] [NI\-AMAT\-17] [SH\-AMAT\-17] [PX\-AMAT\-18] [NI\-AMAT\-18] [SH\-AMAT\-18] [PX\-AMAT\-19] [NI\-AMAT\-19] [SH\-AMAT\-19] [PX\-AMAT\-20] [NI\-AMAT\-20] [SH\-AMAT\-20] [PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-22] [NI\-AMAT\-22] [SH\-AMAT\-22] [PX\-AMAT\-23] [NI\-AMAT\-23] [SH\-AMAT\-23] [PX\-AMAT\-24] [NI\-AMAT\-24] [SH\-AMAT\-24] [PX\-AMAT\-25] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT]
 
 为什么重要：设备商整体 39–43x 已贵，AMAT 还在自身九年最高；如果增长不能兑现，均值回归空间最大。
+
+## 设备三强都在高位，AMAT 相对自身历史最极端
+
+LRCX 当前 39\.2x（FY2023–25：19\.4/36\.7/23\.4），KLAC 41\.6x（20\.1/40\.7/29\.5），AMAT 42\.8x（九年 11\.1–26\.9）。LRCX、KLAC 接近 FY2024 高点，AMAT 已越过九年区间。 [PX\-LRCX\-23] [PX\-LRCX\-24] [PX\-LRCX\-25] [NI\-LRCX\-23] [SH\-LRCX\-23] [NI\-LRCX\-24] [SH\-LRCX\-24] [NI\-LRCX\-25] [SH\-LRCX\-25] [PX\-KLAC\-23] [PX\-KLAC\-24] [PX\-KLAC\-25] [NI\-KLAC\-23] [SH\-KLAC\-23] [NI\-KLAC\-24] [SH\-KLAC\-24] [NI\-KLAC\-25] [SH\-KLAC\-25] [PX\-AMAT] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT\-21] [PX\-AMAT\-25]
+
+为什么重要：设备溢价不是 AMAT 一家的问题；但 AMAT 的相对估值最极端，增长却最低，风险最集中。
 
 ## 这意味着什么
 
@@ -106,7 +112,7 @@ capex 增速转负，云 FCF 回升、算力/设备承压。
 
 ## 分析判断
 
-AI 资本开支的增量主要落在算力供应商与部分设备商；云厂商收入增速最低、FCF 利润率下降，承担了现金流成本。 估值顺序与价值顺序相反：设备最贵（39–43x），算力 33x，云 27–37x。 AMAT 当前 42\.8x 高于其九年 11–27x 区间，设备溢价更像周期高点。 [I\-JUDGE]
+AI 资本开支的增量主要落在算力供应商与部分设备商；云厂商收入增速最低、FCF 利润率下降，承担了现金流成本。 估值顺序与价值顺序相反：设备最贵（39–43x），算力 33x，云 27–37x。 AMAT 当前 42\.8x 高于其九年 11–27x 区间，设备溢价更像周期高点。 LRCX/KLAC 也接近三年高位，设备溢价是行业性的；AMAT 相对自身九年区间最极端。 [I\-JUDGE]
 
 传导关系：资本开支 → 算力供给 → 设备交付 → 云收入 → 自由现金流
 
@@ -159,6 +165,18 @@ P/E=收盘价/\(净利润/稀释股数\)；各公司财年结束月不同（微�
 [PX\-AMAT\-17] [NI\-AMAT\-17] [SH\-AMAT\-17] [PX\-AMAT\-18] [NI\-AMAT\-18] [SH\-AMAT\-18] [PX\-AMAT\-19] [NI\-AMAT\-19] [SH\-AMAT\-19] [PX\-AMAT\-20] [NI\-AMAT\-20] [SH\-AMAT\-20] [PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-22] [NI\-AMAT\-22] [SH\-AMAT\-22] [PX\-AMAT\-23] [NI\-AMAT\-23] [SH\-AMAT\-23] [PX\-AMAT\-24] [NI\-AMAT\-24] [SH\-AMAT\-24] [PX\-AMAT\-25] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT]
 
 当前行使用 FY2025 EPS（trailing）；AMAT 财年 10 月结束，价格取财年结束前最后一个交易日。
+
+### 设备三强 P/E 对照
+
+| 公司 | FY2023（倍） | FY2024（倍） | FY2025（倍） | 当前（倍） | 历史区间 |
+| --- | --- | --- | --- | --- | --- |
+| AMAT | 16\.3 | 21\.1 | 26\.9 | 42\.8 | 11\.1–26\.9（九年） |
+| LRCX | 19\.4 | 36\.7 | 23\.4 | 39\.2 | 19\.4–36\.7（三年） |
+| KLAC | 20\.1 | 40\.7 | 29\.5 | 41\.6 | 20\.1–40\.7（三年） |
+
+[PX\-LRCX\-23] [PX\-LRCX\-24] [PX\-LRCX\-25] [NI\-LRCX\-23] [SH\-LRCX\-23] [NI\-LRCX\-24] [SH\-LRCX\-24] [NI\-LRCX\-25] [SH\-LRCX\-25] [PX\-KLAC\-23] [PX\-KLAC\-24] [PX\-KLAC\-25] [NI\-KLAC\-23] [SH\-KLAC\-23] [NI\-KLAC\-24] [SH\-KLAC\-24] [NI\-KLAC\-25] [SH\-KLAC\-25] [PX\-AMAT] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-AMAT\-21] [PX\-AMAT\-25]
+
+LRCX/KLAC 为 FY2023–FY2025 三年区间；KLAC FY2023 股数按 10:1 拆股调整；AMAT 为九年区间。当前为 2026\-11\-13 收盘 / 最近财年 EPS。
 
 ### 最近一个财年收入增速：算力 &gt; 设备 &gt; 云
 
@@ -252,7 +270,7 @@ AI 收入可能滞后 capex 2–4 个季度；当前 12%–15% 的云收入增�
 
 
 
-观察结果：capex 增约 60%，云收入只增 12%–15%，算力 \+65\.5%、设备分化；云 FCF 下降，支持 H2、削弱 H1。 估值上设备商最贵，AMAT 4\.4% 增长对应 42\.8x，是价值链中最脆弱的组合。 AMAT 42\.8x 高于五年 12–26x 区间，设备估值处于自身历史高位。 [I\-JUDGE] [NVDA\-REV\-26] [CLOUD\-REV\-MSFT\-25] [CLOUD\-CFO\-MSFT\-25] [PX\-AMAT] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-NVDA] [NI\-NVDA\-26] [SH\-NVDA\-26] [PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-25]
+观察结果：capex 增约 60%，云收入只增 12%–15%，算力 \+65\.5%、设备分化；云 FCF 下降，支持 H2、削弱 H1。 估值上设备商最贵，AMAT 4\.4% 增长对应 42\.8x，是价值链中最脆弱的组合。 AMAT 42\.8x 高于五年 12–26x 区间，设备估值处于自身历史高位。 设备三强都在或接近历史高位，AMAT 相对自身九年区间最极端。 [I\-JUDGE] [NVDA\-REV\-26] [CLOUD\-REV\-MSFT\-25] [CLOUD\-CFO\-MSFT\-25] [PX\-AMAT] [NI\-AMAT\-25] [SH\-AMAT\-25] [PX\-NVDA] [NI\-NVDA\-26] [SH\-NVDA\-26] [PX\-AMAT\-21] [NI\-AMAT\-21] [SH\-AMAT\-21] [PX\-AMAT\-25] [PX\-LRCX\-24] [NI\-LRCX\-24] [SH\-LRCX\-24] [PX\-KLAC\-24] [NI\-KLAC\-24] [SH\-KLAC\-24]
 
 支持：H2；削弱：H1
 
@@ -574,6 +592,78 @@ AI 收入可能滞后 capex 2–4 个季度；当前 12%–15% 的云收入增�
 
 依据：；来源：S\-AMAT
 
+\[PX\-LRCX\-23\] LRCX 2023\-06\-30 收盘 64\.286 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-LRCX\-23
+
+\[NI\-LRCX\-23\] LRCX FY2023 净利润 4510\.9 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[SH\-LRCX\-23\] LRCX FY2023 稀释加权股数 1358\.3 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[PX\-LRCX\-24\] LRCX 2024\-06\-28 收盘 106\.485 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-LRCX\-24
+
+\[NI\-LRCX\-24\] LRCX FY2024 净利润 3827\.8 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[SH\-LRCX\-24\] LRCX FY2024 稀释加权股数 1319\.9 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[PX\-LRCX\-25\] LRCX 2025\-06\-30 收盘 97\.34 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-LRCX\-25
+
+\[NI\-LRCX\-25\] LRCX FY2025 净利润 5358\.2 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[SH\-LRCX\-25\] LRCX FY2025 稀释加权股数 1290\.1 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[PX\-KLAC\-23\] KLAC 2023\-06\-30 收盘 48\.502 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-KLAC\-23
+
+\[NI\-KLAC\-23\] KLAC FY2023 净利润 3387\.3 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[SH\-KLAC\-23\] KLAC FY2023 稀释加权股数 140\.2 百万股（拆股前，按 10:1 调整）（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[PX\-KLAC\-24\] KLAC 2024\-06\-28 收盘 82\.451 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-KLAC\-24
+
+\[NI\-KLAC\-24\] KLAC FY2024 净利润 2761\.9 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[SH\-KLAC\-24\] KLAC FY2024 稀释加权股数 1361\.9 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[PX\-KLAC\-25\] KLAC 2025\-06\-30 收盘 89\.574 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-KLAC\-25
+
+\[NI\-KLAC\-25\] KLAC FY2025 净利润 4061\.6 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[SH\-KLAC\-25\] KLAC FY2025 稀释加权股数 1337\.5 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
 S\-MSFT · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: 微软 · locator：data\.sec\.gov companyfacts CIK0000789019（微软），10\-K 年度值 · origin\_id：sec\-msft · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "价值链各环节收入、利润与现金流", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000789019\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json)
@@ -665,5 +755,29 @@ S\-PX\-AMAT\-19 · Nasdaq · T0 · published\_at：2019\-10\-31 · retrieved\_at
 S\-PX\-AMAT\-20 · Nasdaq · T0 · published\_at：2020\-10\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2020\-10\-30 close $59\.23 · locator：Nasdaq AMAT 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-amat\-2020 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "十年 P/E 区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "AMAT", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2020\-10\-30T16:00:00\-05:00", "unit": "USD/share", "value": 59\.23\}
 
 [https://www\.nasdaq\.com/market\-activity/stocks/amat/historical](https://www.nasdaq.com/market-activity/stocks/amat/historical)
+
+S\-PX\-LRCX\-23 · Nasdaq · T0 · published\_at：2023\-06\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2023\-06\-30 close $64\.286 · locator：Nasdaq LRCX 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-lrcx\-2023 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "设备商 P/E 三年区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "LRCX", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2023\-06\-30T16:00:00\-05:00", "unit": "USD/share", "value": 64\.286\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/lrcx/historical](https://www.nasdaq.com/market-activity/stocks/lrcx/historical)
+
+S\-PX\-LRCX\-24 · Nasdaq · T0 · published\_at：2024\-06\-28 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2024\-06\-28 close $106\.485 · locator：Nasdaq LRCX 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-lrcx\-2024 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "设备商 P/E 三年区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "LRCX", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2024\-06\-28T16:00:00\-05:00", "unit": "USD/share", "value": 106\.485\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/lrcx/historical](https://www.nasdaq.com/market-activity/stocks/lrcx/historical)
+
+S\-PX\-LRCX\-25 · Nasdaq · T0 · published\_at：2025\-06\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-06\-30 close $97\.34 · locator：Nasdaq LRCX 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-lrcx\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "设备商 P/E 三年区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "LRCX", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-06\-30T16:00:00\-05:00", "unit": "USD/share", "value": 97\.34\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/lrcx/historical](https://www.nasdaq.com/market-activity/stocks/lrcx/historical)
+
+S\-PX\-KLAC\-23 · Nasdaq · T0 · published\_at：2023\-06\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2023\-06\-30 close $48\.502 · locator：Nasdaq KLAC 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-klac\-2023 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "设备商 P/E 三年区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "KLAC", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2023\-06\-30T16:00:00\-05:00", "unit": "USD/share", "value": 48\.502\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/klac/historical](https://www.nasdaq.com/market-activity/stocks/klac/historical)
+
+S\-PX\-KLAC\-24 · Nasdaq · T0 · published\_at：2024\-06\-28 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2024\-06\-28 close $82\.451 · locator：Nasdaq KLAC 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-klac\-2024 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "设备商 P/E 三年区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "KLAC", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2024\-06\-28T16:00:00\-05:00", "unit": "USD/share", "value": 82\.451\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/klac/historical](https://www.nasdaq.com/market-activity/stocks/klac/historical)
+
+S\-PX\-KLAC\-25 · Nasdaq · T0 · published\_at：2025\-06\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-06\-30 close $89\.574 · locator：Nasdaq KLAC 历史收盘，取财年结束前最后一个交易日 · origin\_id：nasdaq\-klac\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "设备商 P/E 三年区间", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "KLAC", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-06\-30T16:00:00\-05:00", "unit": "USD/share", "value": 89\.574\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/klac/historical](https://www.nasdaq.com/market-activity/stocks/klac/historical)
 
 来源状态：\{"sec": \{"status": "ok"\}\}

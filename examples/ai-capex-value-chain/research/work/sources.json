@@ -703,6 +703,204 @@
         "purpose": "十年 P/E 区间",
         "priority": "useful"
       }
+    },
+    {
+      "id": "S-PX-LRCX-23",
+      "url": "https://www.nasdaq.com/market-activity/stocks/lrcx/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2023-06-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2023-06-30 close $64.286",
+      "locator": "Nasdaq LRCX 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-lrcx-2023",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2023-06-30T16:00:00-05:00",
+        "instrument": "LRCX",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 64.286,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "设备商 P/E 三年区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-LRCX-24",
+      "url": "https://www.nasdaq.com/market-activity/stocks/lrcx/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2024-06-28",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2024-06-28 close $106.485",
+      "locator": "Nasdaq LRCX 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-lrcx-2024",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2024-06-28T16:00:00-05:00",
+        "instrument": "LRCX",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 106.485,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "设备商 P/E 三年区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-LRCX-25",
+      "url": "https://www.nasdaq.com/market-activity/stocks/lrcx/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2025-06-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2025-06-30 close $97.34",
+      "locator": "Nasdaq LRCX 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-lrcx-2025",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2025-06-30T16:00:00-05:00",
+        "instrument": "LRCX",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 97.34,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "设备商 P/E 三年区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-KLAC-23",
+      "url": "https://www.nasdaq.com/market-activity/stocks/klac/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2023-06-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2023-06-30 close $48.502",
+      "locator": "Nasdaq KLAC 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-klac-2023",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2023-06-30T16:00:00-05:00",
+        "instrument": "KLAC",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 48.502,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "设备商 P/E 三年区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-KLAC-24",
+      "url": "https://www.nasdaq.com/market-activity/stocks/klac/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2024-06-28",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2024-06-28 close $82.451",
+      "locator": "Nasdaq KLAC 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-klac-2024",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2024-06-28T16:00:00-05:00",
+        "instrument": "KLAC",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 82.451,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "设备商 P/E 三年区间",
+        "priority": "useful"
+      }
+    },
+    {
+      "id": "S-PX-KLAC-25",
+      "url": "https://www.nasdaq.com/market-activity/stocks/klac/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2025-06-30",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "2025-06-30 close $89.574",
+      "locator": "Nasdaq KLAC 历史收盘，取财年结束前最后一个交易日",
+      "origin_id": "nasdaq-klac-2025",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2025-06-30T16:00:00-05:00",
+        "instrument": "KLAC",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 89.574,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所历史收盘",
+        "relevance": "direct",
+        "purpose": "设备商 P/E 三年区间",
+        "priority": "useful"
+      }
     }
   ]
 }

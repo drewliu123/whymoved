@@ -904,6 +904,210 @@
           "source_id": "S-AMAT"
         }
       ]
+    },
+    {
+      "id": "PX-LRCX-23",
+      "text": "LRCX 2023-06-30 收盘 64.286 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-LRCX-23"
+        }
+      ]
+    },
+    {
+      "id": "NI-LRCX-23",
+      "text": "LRCX FY2023 净利润 4510.9 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "SH-LRCX-23",
+      "text": "LRCX FY2023 稀释加权股数 1358.3 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "PX-LRCX-24",
+      "text": "LRCX 2024-06-28 收盘 106.485 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-LRCX-24"
+        }
+      ]
+    },
+    {
+      "id": "NI-LRCX-24",
+      "text": "LRCX FY2024 净利润 3827.8 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "SH-LRCX-24",
+      "text": "LRCX FY2024 稀释加权股数 1319.9 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "PX-LRCX-25",
+      "text": "LRCX 2025-06-30 收盘 97.34 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-LRCX-25"
+        }
+      ]
+    },
+    {
+      "id": "NI-LRCX-25",
+      "text": "LRCX FY2025 净利润 5358.2 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "SH-LRCX-25",
+      "text": "LRCX FY2025 稀释加权股数 1290.1 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "PX-KLAC-23",
+      "text": "KLAC 2023-06-30 收盘 48.502 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-KLAC-23"
+        }
+      ]
+    },
+    {
+      "id": "NI-KLAC-23",
+      "text": "KLAC FY2023 净利润 3387.3 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "SH-KLAC-23",
+      "text": "KLAC FY2023 稀释加权股数 140.2 百万股（拆股前，按 10:1 调整）",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "PX-KLAC-24",
+      "text": "KLAC 2024-06-28 收盘 82.451 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-KLAC-24"
+        }
+      ]
+    },
+    {
+      "id": "NI-KLAC-24",
+      "text": "KLAC FY2024 净利润 2761.9 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "SH-KLAC-24",
+      "text": "KLAC FY2024 稀释加权股数 1361.9 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "PX-KLAC-25",
+      "text": "KLAC 2025-06-30 收盘 89.574 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-KLAC-25"
+        }
+      ]
+    },
+    {
+      "id": "NI-KLAC-25",
+      "text": "KLAC FY2025 净利润 4061.6 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "SH-KLAC-25",
+      "text": "KLAC FY2025 稀释加权股数 1337.5 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
     }
   ]
 }
