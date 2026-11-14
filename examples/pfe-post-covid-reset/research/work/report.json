@@ -1,0 +1,516 @@
+{
+  "schema_version": 2,
+  "layout": "brief",
+  "title": "辉瑞：收入已经企稳，利润还没有回来",
+  "question": "后疫情时代，辉瑞的收入腰斩后稳住了吗？利润为什么没回来？",
+  "type": "asset",
+  "task": "收入与利润修复",
+  "as_of": "2026-11-14T00:00:00Z",
+  "summary": {
+    "conclusion": "收入从 FY2022 的 1,011.7 亿降到 FY2023 的 595.5 亿，FY2024/25 稳定在 636.3/625.8 亿；净利润却从 313.7 亿降到 77.7 亿。",
+    "surprise": "研发费用只从 114.3 亿降到 104.4 亿，研发费用率从 11.3% 升到 16.7%；费用刚性使利润没有随收入企稳而修复。",
+    "next_check": "看 FY2026 收入增速能否超过 3%、研发费用率能否降到 16% 以下；两者不改善，利润修复会继续慢于收入。"
+  },
+  "answer": {
+    "text": "辉瑞的收入在 FY2023 腰斩后已经企稳：595.5 亿→636.3 亿→625.8 亿。但净利润从 313.7 亿降到 77.7 亿，净利率从 31.0% 降到 12.4%；研发费用只从 114.3 亿降到 104.4 亿，研发费用率反而从 11.3% 升到 16.7%。结论：收入企稳不等于利润修复，费用刚性是主因；下一步看 non-COVID 收入增长。",
+    "claim_ids": [
+      "I-JUDGE",
+      "PFE-REV-25",
+      "PFE-NI-25",
+      "PFE-RD-25"
+    ]
+  },
+  "findings": [
+    {
+      "title": "收入腰斩后企稳在 626 亿",
+      "text": "收入 1,011.7（FY2022）→595.5（FY2023）→636.3（FY2024）→625.8（FY2025）十亿美元；FY2024 +6.9%、FY2025 −1.7%。",
+      "claim_ids": [
+        "PFE-REV-22",
+        "PFE-REV-23",
+        "PFE-REV-24",
+        "PFE-REV-25"
+      ],
+      "why_it_matters": "收入端已经止跌，但只是稳定在比峰值低 38% 的水平。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "收入继续下滑",
+        "detail": "企稳在 626 亿"
+      }
+    },
+    {
+      "title": "净利润没有回来：313.7 亿→77.7 亿",
+      "text": "净利润 313.7（FY2022）→21.2（FY2023）→80.3（FY2024）→77.7（FY2025）；净利率 31.0%→12.4%。",
+      "claim_ids": [
+        "PFE-NI-22",
+        "PFE-NI-23",
+        "PFE-NI-24",
+        "PFE-NI-25",
+        "PFE-REV-25"
+      ],
+      "why_it_matters": "收入企稳三年，利润仍只有峰值的四分之一；修复不是时间问题。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "收入恢复=利润恢复",
+        "detail": "净利率 12.4%"
+      }
+    },
+    {
+      "title": "研发费用刚性：只降 8.7%，费用率升到 16.7%",
+      "text": "研发费用 114.3→104.4 亿美元（−8.7%），收入 −38.1%；研发费用率 11.3%→16.7%。",
+      "claim_ids": [
+        "PFE-RD-22",
+        "PFE-RD-25",
+        "PFE-REV-22",
+        "PFE-REV-25"
+      ],
+      "why_it_matters": "研发是战略投入，不会随收入同比例收缩；这是利润修复慢的主因。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "费用随收入下降",
+        "detail": "研发费用率上升"
+      }
+    },
+    {
+      "title": "现金流同步重置：CFO 293 亿→117 亿",
+      "text": "CFO 292.7（FY2022）→87.0（FY2023）→127.4（FY2024）→117.0（FY2025）；capex 26.3 亿。",
+      "claim_ids": [
+        "PFE-CFO-22",
+        "PFE-CFO-23",
+        "PFE-CFO-24",
+        "PFE-CFO-25",
+        "PFE-CAPEX-25"
+      ],
+      "why_it_matters": "现金创造能力也回到疫情前水平，不能靠存量现金维持利润叙事。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "现金流保持高位",
+        "detail": "CFO 117 亿"
+      }
+    }
+  ],
+  "implications": [
+    {
+      "title": "收入企稳不等于利润修复",
+      "text": "净利率 12.4%、研发费用率 16.7%；利润修复需要收入增长或费用率下降，二者目前都没有。",
+      "claim_ids": [
+        "I-JUDGE",
+        "PFE-NI-25",
+        "PFE-RD-25",
+        "PFE-REV-25"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "研发费用率是关键",
+      "text": "从 11.3% 升到 16.7%；若 FY2026 仍在 16% 以上，利润修复会继续慢于收入。",
+      "claim_ids": [
+        "PFE-RD-25",
+        "PFE-REV-25"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "non-COVID 增长是唯一解",
+      "text": "收入已稳定，利润要靠新产品的增量，而不是继续砍成本。",
+      "claim_ids": [
+        "PFE-REV-25",
+        "PFE-NI-25"
+      ],
+      "horizon": "FY2026–FY2027"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "增长修复",
+      "thesis": "non-COVID 产品放量，收入增速 >3%、研发费用率回落。",
+      "triggers": [
+        "收入增速 >3%",
+        "研发费用率 <16%",
+        "净利率 >14%"
+      ],
+      "implication": "利润开始追赶收入。"
+    },
+    {
+      "name": "平台期",
+      "thesis": "收入持平，研发费用率维持，利润低位稳定。",
+      "triggers": [
+        "收入增速 0–3%",
+        "研发费用率 >16%",
+        "净利率 12–14%"
+      ],
+      "implication": "利润修复停滞。"
+    },
+    {
+      "name": "费用反弹",
+      "thesis": "研发或并购投入上升，利润再次承压。",
+      "triggers": [
+        "研发费用率 >18%",
+        "净利率 <11%"
+      ],
+      "implication": "利润二次探底。"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "利润下降也含一次性项目",
+      "text": "FY2023 利润低点可能含重组、减值或收购 IPR&D；未拆分一次性项目，净利率的「正常化」水平需看附注。",
+      "claim_ids": [
+        "I-JUDGE",
+        "PFE-NI-23"
+      ]
+    }
+  ],
+  "watch": [
+    {
+      "signal": "FY2026 收入增速与研发费用率",
+      "meaning": "判断利润修复是否开始",
+      "claim_ids": [
+        "PFE-REV-25",
+        "PFE-RD-25"
+      ],
+      "due": "2027-02-15",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "未拆分 COVID 与非 COVID 产品收入；未拆分一次性重组/减值项目；研发费用不含收购 IPR&D。",
+      "material": true,
+      "claim_ids": [
+        "PFE-REV-25",
+        "PFE-RD-25"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "辉瑞 FY2021–FY2025：收入、利润与费用",
+      "columns": [
+        "指标",
+        "FY2021",
+        "FY2022",
+        "FY2023",
+        "FY2024",
+        "FY2025"
+      ],
+      "units": [
+        "",
+        "十亿美元",
+        "十亿美元",
+        "十亿美元",
+        "十亿美元",
+        "十亿美元"
+      ],
+      "rows": [
+        [
+          "收入",
+          81.29,
+          101.17,
+          59.55,
+          63.63,
+          62.58
+        ],
+        [
+          "净利润",
+          21.98,
+          31.37,
+          2.12,
+          8.03,
+          7.77
+        ],
+        [
+          "净利率",
+          "27.0%",
+          "31.0%",
+          "3.6%",
+          "12.6%",
+          "12.4%"
+        ],
+        [
+          "研发费用",
+          10.36,
+          11.43,
+          10.68,
+          10.82,
+          10.44
+        ],
+        [
+          "研发费用率",
+          "12.7%",
+          "11.3%",
+          "17.9%",
+          "17.0%",
+          "16.7%"
+        ],
+        [
+          "经营现金流",
+          32.58,
+          29.27,
+          8.7,
+          12.74,
+          11.7
+        ],
+        [
+          "资本开支",
+          2.71,
+          3.24,
+          3.91,
+          2.91,
+          2.63
+        ]
+      ],
+      "claim_ids": [
+        "PFE-REV-21",
+        "PFE-REV-22",
+        "PFE-REV-23",
+        "PFE-REV-24",
+        "PFE-REV-25",
+        "PFE-NI-21",
+        "PFE-NI-22",
+        "PFE-NI-23",
+        "PFE-NI-24",
+        "PFE-NI-25",
+        "PFE-CFO-21",
+        "PFE-CFO-22",
+        "PFE-CFO-23",
+        "PFE-CFO-24",
+        "PFE-CFO-25",
+        "PFE-RD-21",
+        "PFE-RD-22",
+        "PFE-RD-23",
+        "PFE-RD-24",
+        "PFE-RD-25",
+        "PFE-CAPEX-21",
+        "PFE-CAPEX-22",
+        "PFE-CAPEX-23",
+        "PFE-CAPEX-24",
+        "PFE-CAPEX-25"
+      ],
+      "note": "净利率=净利润/收入；研发费用率为不含收购 IPR&D 的研发/收入；由披露值计算并四舍五入。"
+    }
+  ],
+  "charts": [
+    {
+      "kind": "bar",
+      "title": "辉瑞收入与净利润（十亿美元）",
+      "x_label": "财年",
+      "y_label": "十亿美元",
+      "unit": "十亿美元",
+      "series": [
+        {
+          "name": "收入",
+          "rows": [
+            {
+              "label": "FY2021",
+              "value": 81.29
+            },
+            {
+              "label": "FY2022",
+              "value": 101.17
+            },
+            {
+              "label": "FY2023",
+              "value": 59.55
+            },
+            {
+              "label": "FY2024",
+              "value": 63.63
+            },
+            {
+              "label": "FY2025",
+              "value": 62.58
+            }
+          ]
+        },
+        {
+          "name": "净利润",
+          "rows": [
+            {
+              "label": "FY2021",
+              "value": 21.98
+            },
+            {
+              "label": "FY2022",
+              "value": 31.37
+            },
+            {
+              "label": "FY2023",
+              "value": 2.12
+            },
+            {
+              "label": "FY2024",
+              "value": 8.03
+            },
+            {
+              "label": "FY2025",
+              "value": 7.77
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "PFE-REV-21",
+        "PFE-REV-22",
+        "PFE-REV-23",
+        "PFE-REV-24",
+        "PFE-REV-25",
+        "PFE-NI-21",
+        "PFE-NI-22",
+        "PFE-NI-23",
+        "PFE-NI-24",
+        "PFE-NI-25"
+      ],
+      "note": "同一单位；由披露值绘制。"
+    },
+    {
+      "kind": "line",
+      "title": "净利率与研发费用率：利润没有随收入修复",
+      "x_label": "财年",
+      "y_label": "%",
+      "unit": "%",
+      "series": [
+        {
+          "name": "净利率",
+          "rows": [
+            {
+              "label": "FY2021",
+              "value": 27.0
+            },
+            {
+              "label": "FY2022",
+              "value": 31.0
+            },
+            {
+              "label": "FY2023",
+              "value": 3.6
+            },
+            {
+              "label": "FY2024",
+              "value": 12.6
+            },
+            {
+              "label": "FY2025",
+              "value": 12.4
+            }
+          ]
+        },
+        {
+          "name": "研发费用率",
+          "rows": [
+            {
+              "label": "FY2021",
+              "value": 12.7
+            },
+            {
+              "label": "FY2022",
+              "value": 11.3
+            },
+            {
+              "label": "FY2023",
+              "value": 17.9
+            },
+            {
+              "label": "FY2024",
+              "value": 17.0
+            },
+            {
+              "label": "FY2025",
+              "value": 16.7
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "PFE-REV-21",
+        "PFE-REV-22",
+        "PFE-REV-23",
+        "PFE-REV-24",
+        "PFE-REV-25",
+        "PFE-NI-21",
+        "PFE-NI-22",
+        "PFE-NI-23",
+        "PFE-NI-24",
+        "PFE-NI-25",
+        "PFE-RD-21",
+        "PFE-RD-22",
+        "PFE-RD-23",
+        "PFE-RD-24",
+        "PFE-RD-25"
+      ],
+      "note": "同一单位（%）；由披露值计算。"
+    }
+  ],
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2022 疫情峰值",
+    "baseline_claim_ids": [
+      "PFE-REV-22",
+      "PFE-NI-22"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "疫情产品收入",
+      "总收入与结构",
+      "研发费用刚性",
+      "净利润与现金流"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "收入企稳后利润同步修复"
+      },
+      {
+        "id": "H2",
+        "explanation": "费用刚性使利润修复慢于收入"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "净利率回升"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "净利率不回升、研发费用率高"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "I-JUDGE",
+          "PFE-NI-25",
+          "PFE-RD-25",
+          "PFE-REV-25"
+        ],
+        "interpretation": "收入企稳但净利率 12.4%、研发费用率 16.7%，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "FY2026 收入增速与研发费用率",
+        "by": "2027-02-15",
+        "supports_if": "收入增速 <3% 且研发费用率 >16%",
+        "weakens_if": "收入增速 >5% 且研发费用率 <15%"
+      }
+    ],
+    "conclusion": "收入已经企稳，利润没有回来；研发费用刚性是主因，non-COVID 增长是唯一解。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "收入与利润修复拆解，不需要固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题不判断当前价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

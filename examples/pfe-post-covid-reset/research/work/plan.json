@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "后疫情时代，辉瑞的收入腰斩后稳住了吗？利润为什么没回来？",
+  "type": "asset",
+  "task": "收入与利润修复",
+  "entity": "Pfizer",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断收入企稳是否等于利润修复",
+  "prior_judgment": "收入恢复后利润会同步恢复",
+  "comparison": {
+    "period": "FY2021→FY2025",
+    "unit": "USD billion 与 %",
+    "scope": "Pfizer 合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "收入、净利润、CFO、研发、资本开支取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "比较收入、利润、研发与现金流，判断利润修复为何滞后",
+    "baseline": "FY2022 疫情峰值",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "疫情产品收入",
+      "总收入与结构",
+      "研发费用刚性",
+      "净利润与现金流"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "收入企稳后净利率与研发费用率的方向",
+        "source": "SEC XBRL 年度事实",
+        "by": "FY2026 10-K",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "净利率随收入回升"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "净利率不回升，研发费用率维持高位"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "收入企稳后利润同步修复",
+      "discriminating_observation": "净利率回升"
+    },
+    {
+      "id": "H2",
+      "explanation": "费用刚性使利润修复慢于收入",
+      "discriminating_observation": "研发费用率维持高位、净利率低"
+    }
+  ],
+  "queries": [
+    {
+      "question": "PFE FY2021–FY2025 收入、净利润、CFO、研发、capex",
+      "query": "SEC companyfacts: PFE",
+      "source": "SEC XBRL",
+      "purpose": "后疫情修复",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

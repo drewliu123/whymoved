@@ -107,6 +107,11 @@
 - **[阅读报告](examples/xom-capital-allocation/research/work/report.md)**
 - **[查看案例与命令](examples/xom-capital-allocation/README.md)**
 
+**第十九个例子：辉瑞的收入企稳了，利润为什么没回来？** 收入从 FY2022 的 1,011.7 亿降到 595.5 亿后稳定在 626 亿；净利润却从 313.7 亿降到 77.7 亿，净利率 31.0%→12.4%。研发费用只降 8.7%，研发费用率升到 16.7%——收入企稳不等于利润修复。
+
+- **[阅读报告](examples/pfe-post-covid-reset/research/work/report.md)**
+- **[查看案例与命令](examples/pfe-post-covid-reset/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。
