@@ -58,6 +58,12 @@ FY2023 \+18\.8%、FY2024 \+0\.9%、FY2025 −2\.9%；FY2025 收入 94,827 百万
 
 为什么重要：费用扩张是主动投入还是失控，取决于新业务收入；当前看不到收入回报，费用率仍在上升。
 
+## P/E 363x：利润崩塌，估值没有
+
+P/E 从 2022 的 34\.1x 升到 2023 的 57\.7x、2024 的 199\.2x、2025 的 418\.2x，当前 362\.9x；净利润从 149\.97 亿降到 37\.94 亿美元。 [PXH\-TSLA\-22] [SHH\-TSLA\-22] [PXH\-TSLA\-23] [SHH\-TSLA\-23] [PXH\-TSLA\-24] [SHH\-TSLA\-24] [PXH\-TSLA\-25] [SHH\-TSLA\-25] [PX\-TSLA] [TSLA\-NI\-25]
+
+为什么重要：P/E 对特斯拉已经失去意义；市场在定价汽车之外的东西，盈利修复是估值的前提。
+
 ## 这意味着什么
 
 ### 现金流质量偏低
@@ -71,6 +77,10 @@ FCF 回升靠 capex 收缩；若 FY2026 资本开支回到 100 亿以上，FCF �
 ### 降价不是增长引擎
 
 收入转负、利润率下降；继续降价只会压低利润，除非需求真的被价格激活。（FY2026） [I\-JUDGE] [TSLA\-REV\-25] [TSLA\-OP\-25]
+
+### P/E 不是特斯拉的估值锚
+
+363x 无法用当前盈利解释；若只按 P/E 判断贵贱，会错过市场在定价的非汽车叙事。（FY2026） [PX\-TSLA] [TSLA\-NI\-25] [TSLA\-REV\-25]
 
 ## 情景与触发条件
 
@@ -90,14 +100,6 @@ FCF 回升靠 capex 收缩；若 FY2026 资本开支回到 100 亿以上，FCF �
 
 含义：利润继续被压缩，现金流靠 capex 撑。
 
-### capex 回归
-
-资本开支回到 100 亿以上，FCF 回落。
-
-触发：capex &gt;10,000；FCF &lt;4,000；毛利率未修复
-
-含义：现金流质量暴露，估值承压。
-
 ### 费用扩张失控
 
 研发与销售费用继续快于收入，营业利润率跌破 3%。
@@ -105,6 +107,14 @@ FCF 回升靠 capex 收缩；若 FY2026 资本开支回到 100 亿以上，FCF �
 触发：研发费用率 &gt;10%；研发费用同比 &gt;50%；营业利润率 &lt;3%
 
 含义：利润率问题从价格转向费用，降价无效。
+
+### 盈利修复
+
+利润率回升，P/E 从 363x 回落。
+
+触发：营业利润率 &gt;8%；净利润 &gt;8,000；P/E &lt;150
+
+含义：估值回到盈利可解释区间。
 
 ## 分析判断
 
@@ -160,6 +170,20 @@ FCF 回升靠 capex 收缩；若 FY2026 资本开支回到 100 亿以上，FCF �
 
 费用率=费用/季度收入；收入同比为 2026 季度对 2025 同季；由披露值计算并四舍五入。
 
+### 特斯拉 P/E（财年末价格 / 当年 EPS）
+
+| 财年 | 收盘价（美元/股） | EPS（美元/股） | P/E（倍） |
+| --- | --- | --- | --- |
+| 2022 | 123\.18 | 0\.0 | 34091\.3 |
+| 2023 | 248\.48 | 0\.0 | 57741\.7 |
+| 2024 | 403\.84 | 0\.0 | 199214\.8 |
+| 2025 | 449\.72 | 0\.0 | 418189\.8 |
+| 当前 | 390\.22 | 0\.0 | 362\.9 |
+
+[PXH\-TSLA\-22] [SHH\-TSLA\-22] [PXH\-TSLA\-23] [SHH\-TSLA\-23] [PXH\-TSLA\-24] [SHH\-TSLA\-24] [PXH\-TSLA\-25] [SHH\-TSLA\-25] [PX\-TSLA] [TSLA\-NI\-25]
+
+P/E=财年末收盘价/\(净利润/稀释股数\)；当前为 2026\-11\-13 收盘 / FY2025 EPS。
+
 ### 收入、毛利与营业利润（百万美元）
 
 | 财年 | 收入（百万美元） | 毛利（百万美元） | 营业利润（百万美元） |
@@ -198,6 +222,20 @@ FCF 回升靠 capex 收缩；若 FY2026 资本开支回到 100 亿以上，FCF �
 [TSLA\-REV\-22] [TSLA\-GP\-22] [TSLA\-OPEX\-22] [TSLA\-OP\-22] [TSLA\-REV\-23] [TSLA\-GP\-23] [TSLA\-OPEX\-23] [TSLA\-OP\-23] [TSLA\-REV\-24] [TSLA\-GP\-24] [TSLA\-OPEX\-24] [TSLA\-OP\-24] [TSLA\-REV\-25] [TSLA\-GP\-25] [TSLA\-OPEX\-25] [TSLA\-OP\-25]
 
 由披露值计算；费用率为营业费用/收入。
+
+### 特斯拉 P/E：从 34x 到 363x
+
+| 财年 | 倍（倍） |
+| --- | --- |
+| 2022 | 34091\.3 |
+| 2023 | 57741\.7 |
+| 2024 | 199214\.8 |
+| 2025 | 418189\.8 |
+| 当前 | 362\.9 |
+
+[PXH\-TSLA\-22] [SHH\-TSLA\-22] [PXH\-TSLA\-23] [SHH\-TSLA\-23] [PXH\-TSLA\-24] [SHH\-TSLA\-24] [PXH\-TSLA\-25] [SHH\-TSLA\-25] [PX\-TSLA] [TSLA\-NI\-25]
+
+财年末收盘价/当年 EPS；当前为 2026\-11\-13。
 
 ## 其他解释
 
@@ -489,8 +527,64 @@ FCF 回升靠 capex 收缩；若 FY2026 资本开支回到 100 亿以上，FCF �
 
 依据：；来源：S\-TSLA
 
+\[PXH\-TSLA\-22\] TSLA 2022\-12\-30 收盘 123\.18 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-TSLA\-22
+
+\[SHH\-TSLA\-22\] TSLA FY2022 稀释加权股数 3475\.0 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-TSLA
+
+\[PXH\-TSLA\-23\] TSLA 2023\-12\-29 收盘 248\.48 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-TSLA\-23
+
+\[SHH\-TSLA\-23\] TSLA FY2023 稀释加权股数 3485\.0 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-TSLA
+
+\[PXH\-TSLA\-24\] TSLA 2024\-12\-31 收盘 403\.84 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-TSLA\-24
+
+\[SHH\-TSLA\-24\] TSLA FY2024 稀释加权股数 3498\.0 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-TSLA
+
+\[PXH\-TSLA\-25\] TSLA 2025\-12\-31 收盘 449\.72 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PXH\-TSLA\-25
+
+\[SHH\-TSLA\-25\] TSLA FY2025 稀释加权股数 3528\.0 百万股（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-TSLA
+
+\[PX\-TSLA\] TSLA 2026\-11\-13 收盘 390\.22 美元/股（price；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-PX\-TSLA
+
 S\-TSLA · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: Tesla, Inc\. · locator：data\.sec\.gov companyfacts CIK0001318605（Tesla），10\-K 年度值 · origin\_id：sec\-tsla · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "利润率与现金流", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 
 [https://data\.sec\.gov/api/xbrl/companyfacts/CIK0001318605\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json)
+
+S\-PXH\-TSLA\-22 · Nasdaq · T0 · published\_at：2022\-12\-30 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2022\-12\-30 close $123\.18 · locator：Nasdaq TSLA 历史收盘，取财年末 · origin\_id：nasdaq\-tsla\-2022 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "TSLA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2022\-12\-30T16:00:00\-05:00", "unit": "USD/share", "value": 123\.18\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/tsla/historical](https://www.nasdaq.com/market-activity/stocks/tsla/historical)
+
+S\-PXH\-TSLA\-23 · Nasdaq · T0 · published\_at：2023\-12\-29 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2023\-12\-29 close $248\.48 · locator：Nasdaq TSLA 历史收盘，取财年末 · origin\_id：nasdaq\-tsla\-2023 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "TSLA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2023\-12\-29T16:00:00\-05:00", "unit": "USD/share", "value": 248\.48\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/tsla/historical](https://www.nasdaq.com/market-activity/stocks/tsla/historical)
+
+S\-PXH\-TSLA\-24 · Nasdaq · T0 · published\_at：2024\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2024\-12\-31 close $403\.84 · locator：Nasdaq TSLA 历史收盘，取财年末 · origin\_id：nasdaq\-tsla\-2024 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "TSLA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2024\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 403\.84\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/tsla/historical](https://www.nasdaq.com/market-activity/stocks/tsla/historical)
+
+S\-PXH\-TSLA\-25 · Nasdaq · T0 · published\_at：2025\-12\-31 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：2025\-12\-31 close $449\.72 · locator：Nasdaq TSLA 历史收盘，取财年末 · origin\_id：nasdaq\-tsla\-2025 · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "useful", "purpose": "历史 P/E", "reason": "交易所历史收盘", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "TSLA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2025\-12\-31T16:00:00\-05:00", "unit": "USD/share", "value": 449\.72\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/tsla/historical](https://www.nasdaq.com/market-activity/stocks/tsla/historical)
+
+S\-PX\-TSLA · Nasdaq · T0 · published\_at：2026\-11\-13 · retrieved\_at：2026\-11\-13T21:30:00Z · quote：11/13/2026 close $390\.22 · locator：Nasdaq TSLA historical quotes, 2026\-11\-01 至 2026\-11\-14 · origin\_id：nasdaq\-tsla · origin\_basis：Direct official publication · evidence\_kind：market\_quote · access\_status：ok · supports：\["price"\] · selection：\{"priority": "decisive", "purpose": "P/E", "reason": "交易所收盘价", "relevance": "direct", "selected": true\} · market\_quote：\{"direction": "up", "instrument": "TSLA", "outcome": "closing price", "quote\_type": "close", "quoted\_at": "2026\-11\-13T16:00:00\-05:00", "unit": "USD/share", "value": 390\.22\}
+
+[https://www\.nasdaq\.com/market\-activity/stocks/tsla/historical](https://www.nasdaq.com/market-activity/stocks/tsla/historical)
 
 来源状态：\{"sec": \{"status": "ok"\}\}

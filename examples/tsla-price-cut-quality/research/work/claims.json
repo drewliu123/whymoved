@@ -689,6 +689,110 @@
           "source_id": "S-TSLA"
         }
       ]
+    },
+    {
+      "id": "PXH-TSLA-22",
+      "text": "TSLA 2022-12-30 收盘 123.18 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-TSLA-22"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-TSLA-22",
+      "text": "TSLA FY2022 稀释加权股数 3475.0 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-TSLA-23",
+      "text": "TSLA 2023-12-29 收盘 248.48 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-TSLA-23"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-TSLA-23",
+      "text": "TSLA FY2023 稀释加权股数 3485.0 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-TSLA-24",
+      "text": "TSLA 2024-12-31 收盘 403.84 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-TSLA-24"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-TSLA-24",
+      "text": "TSLA FY2024 稀释加权股数 3498.0 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PXH-TSLA-25",
+      "text": "TSLA 2025-12-31 收盘 449.72 美元/股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PXH-TSLA-25"
+        }
+      ],
+      "type": "price",
+      "price_kind": "close"
+    },
+    {
+      "id": "SHH-TSLA-25",
+      "text": "TSLA FY2025 稀释加权股数 3528.0 百万股",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-TSLA"
+        }
+      ],
+      "type": "fact"
+    },
+    {
+      "id": "PX-TSLA",
+      "text": "TSLA 2026-11-13 收盘 390.22 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-TSLA"
+        }
+      ]
     }
   ]
 }
