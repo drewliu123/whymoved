@@ -4,6 +4,48 @@
 
 ---
 
+## Cycle 166 · 2026-11-14 · 数据源可达性
+
+**对应目标**：记录哪些源可用，避免重复撞 403
+
+**做法**
+
+- 新增 `docs/data-sources.md`：SEC companyfacts、submissions、Archives、Financial Statement Data Sets、Microsoft IR、AMAT IR、Nasdaq、FRED、美联储日历的实际状态。
+- 更新传导示例：AMAT FY2026 8-K 已于 2026-11-12 提交，但正文不可得；10-K 预计 12 月。
+- 时效表同步。
+
+**结论**
+
+- 可用：data.sec.gov、Nasdaq、FRED、美联储日历。
+- 不可用：SEC Archives、FSDS、Microsoft IR、AMAT IR（均 403）。
+- 微软分部明细与 AMAT FY2026 的阻塞原因被写清，而不是反复尝试。
+
+**关键设计决定**
+
+1. **只记录实际请求结果**：不写「理论上可用」。
+2. **不绕过 403**：不伪造 UA/身份。
+3. **阻塞写进示例限制**：读者知道为什么还没更新。
+
+**验证证据**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+# Ran 580 tests ... OK
+```
+
+- 契约 0 错误；传导示例哈希更新；其余十七篇不变。
+
+**投研意义增量**
+
+1. 数据获取的边界成为文档，而不是隐性知识。
+2. 后续研究可以优先走可用源。
+
+**遗留**
+
+- 微软分部数据仍不可得。
+- AMAT 10-K 未到。
+- 数据源状态可能变化，需要定期复核。
+
 ## Cycle 165 · 2026-11-14 · 图表系列与表格行比对
 
 **对应目标**：把图表一致性从估值图扩展到现金流/利润图

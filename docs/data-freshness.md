@@ -11,7 +11,7 @@
 | [msft-reverse-dcf](../examples/msft-reverse-dcf/README.md) | FY2026 + 2026-11-13 收盘 | SEC XBRL + Nasdaq | 下一财年或价格变化 |
 | [aapl-quality](../examples/aapl-quality/README.md) | FY2026（2026-09） | SEC XBRL | FY2027 10-K，约 2027-10 |
 | [mega-cap-peers](../examples/mega-cap-peers/README.md) | 2026-11-13 收盘；最近财年盈利 | Nasdaq + SEC | 价格每日；盈利按各自财年 |
-| [ai-capex-transmission](../examples/ai-capex-transmission/README.md) | FY2025（AMAT 2025-10；LRCX/KLAC 2025-06） | SEC XBRL | FY2026 10-K，约 2027-01 |
+| [ai-capex-transmission](../examples/ai-capex-transmission/README.md) | FY2025（AMAT 2025-10；LRCX/KLAC 2026-06） | SEC XBRL | AMAT FY2026 8-K 已于 2026-11-12 提交但正文 403；10-K 约 2026-12 |
 | [ai-capex-value-chain](../examples/ai-capex-value-chain/README.md) | FY2025 + NVDA FY2026 + 2026-11-13 收盘 | SEC + Nasdaq | 各公司下一财年 |
 | [hyperscaler-capex-margins](../examples/hyperscaler-capex-margins/README.md) | FY2025 + MSFT FY2026 | SEC XBRL | 云厂商 FY2026，约 2027-02 |
 | [sp500-fomc-event](../examples/sp500-fomc-event/README.md) | 2024–2026 年 10 月，23 次 | 美联储 + FRED | 2026-12-09 会议后补第 24 次 |
