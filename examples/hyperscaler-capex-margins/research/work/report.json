@@ -1,0 +1,598 @@
+{
+  "schema_version": 2,
+  "title": "AI 资本开支没有压营业利润率，压的是自由现金流",
+  "question": "AI 资本开支是在压利润率，还是被收入增长消化？",
+  "type": "theme",
+  "task": "机制研究",
+  "as_of": "2026-11-14T00:00:00Z",
+  "summary": {
+    "conclusion": "FY2023→FY2025，微软、Alphabet、亚马逊营业利润率全部扩张（+3.9 / +4.6 / +4.7 个百分点），资本开支强度也全部上升（+9.7 / +12.2 / +9.2 个百分点）。",
+    "surprise": "资本开支不计入营业利润，折旧才计入；三家 FCF 利润率全部下降（−2.7 / −4.4 / −4.5 个百分点）。压力在现金流，不在利润表。",
+    "next_check": "看折旧增速是否开始超过收入；微软 FY2026 capex 强度 35%、FCF 利润率 20% 是先行样本。"
+  },
+  "answer": {
+    "text": "AI 资本开支没有压营业利润率。FY2023→FY2025，三家营业利润率分别从 41.8%/27.4%/6.4% 升到 45.6%/32.0%/11.2%，同期资本开支强度从 13.3%/10.5%/9.2% 升到 22.9%/22.7%/18.4%。原因在会计位置：资本开支在营业利润之下，折旧才进入营业成本；资本开支先压低自由现金流。三家 FCF 利润率从 28.1%/22.6%/5.6% 降到 25.4%/18.2%/1.1%。真正的风险不是当期利润率，而是折旧追赶与现金流约束。",
+    "claim_ids": [
+      "I-JUDGE",
+      "I-MECH",
+      "MSFT-REV-23",
+      "GOOGL-REV-25",
+      "AMZN-REV-25"
+    ]
+  },
+  "findings": [
+    {
+      "title": "营业利润率全部扩张",
+      "text": "FY2023→FY2025：微软 41.8%→45.6%、Alphabet 27.4%→32.0%、亚马逊 6.4%→11.2%。",
+      "claim_ids": [
+        "MSFT-OP-23",
+        "MSFT-REV-23",
+        "MSFT-OP-25",
+        "MSFT-REV-25",
+        "GOOGL-OP-23",
+        "GOOGL-REV-23",
+        "GOOGL-OP-25",
+        "GOOGL-REV-25",
+        "AMZN-OP-23",
+        "AMZN-REV-23",
+        "AMZN-OP-25",
+        "AMZN-REV-25"
+      ],
+      "why_it_matters": "如果资本开支直接压利润率，这组数字应该相反；没有发生，说明成本落在别处。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "把 capex 当利润率压力",
+        "detail": "三家利润率实际扩张"
+      }
+    },
+    {
+      "title": "资本开支强度同步大幅上升",
+      "text": "capex/收入：微软 13.3%→22.9%、Alphabet 10.5%→22.7%、亚马逊 9.2%→18.4%。",
+      "claim_ids": [
+        "MSFT-CAPEX-23",
+        "MSFT-REV-23",
+        "MSFT-CAPEX-25",
+        "MSFT-REV-25",
+        "GOOGL-CAPEX-23",
+        "GOOGL-REV-23",
+        "GOOGL-CAPEX-25",
+        "GOOGL-REV-25",
+        "AMZN-CAPEX-23",
+        "AMZN-REV-23",
+        "AMZN-CAPEX-25",
+        "AMZN-REV-25"
+      ],
+      "why_it_matters": "资本开支确实在加速，但营业利润率没有被压；需要解释会计位置。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看 capex 绝对额",
+        "detail": "capex 强度与利润率并置"
+      }
+    },
+    {
+      "title": "FCF 利润率全部下降",
+      "text": "FCF/收入：微软 28.1%→25.4%、Alphabet 22.6%→18.2%、亚马逊 5.6%→1.1%。",
+      "claim_ids": [
+        "MSFT-CFO-23",
+        "MSFT-CAPEX-23",
+        "MSFT-REV-23",
+        "MSFT-CFO-25",
+        "MSFT-CAPEX-25",
+        "MSFT-REV-25",
+        "GOOGL-CFO-23",
+        "GOOGL-CAPEX-23",
+        "GOOGL-REV-23",
+        "GOOGL-CFO-25",
+        "GOOGL-CAPEX-25",
+        "GOOGL-REV-25",
+        "AMZN-CFO-23",
+        "AMZN-CAPEX-23",
+        "AMZN-REV-23",
+        "AMZN-CFO-25",
+        "AMZN-CAPEX-25",
+        "AMZN-REV-25"
+      ],
+      "why_it_matters": "资本开支的真实成本先出现在现金流；这是投资者能立刻观察到的压力。",
+      "increment": {
+        "kind": "contradiction",
+        "baseline": "利润率不受影响",
+        "detail": "FCF 利润率下降"
+      }
+    },
+    {
+      "title": "微软 FY2026：capex 35%、FCF 20%",
+      "text": "微软 FY2026 capex/收入升到 34.9%，FCF 利润率降到 20.2%；营业利润率仍 46.8%。",
+      "claim_ids": [
+        "MSFT-CAPEX-26",
+        "MSFT-REV-26",
+        "MSFT-CFO-26",
+        "MSFT-OP-26",
+        "I-RISK"
+      ],
+      "why_it_matters": "最新样本延续「利润稳、现金流紧」的模式；折旧追赶是下一阶段风险。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "FY2025 三家对照",
+        "detail": "微软 FY2026 先行样本"
+      }
+    }
+  ],
+  "implications": [
+    {
+      "title": "不要把 capex 当利润率利空",
+      "text": "资本开支不经过营业利润；当期利润率的压力来自折旧与运营费用，不是 capex 本身。",
+      "claim_ids": [
+        "I-MECH",
+        "MSFT-OP-25",
+        "GOOGL-OP-25"
+      ],
+      "horizon": "FY2026"
+    },
+    {
+      "title": "先看 FCF，再看折旧",
+      "text": "三家 FCF 利润率已下降；下一阶段看折旧增速是否超过收入，届时才会压到营业利润率。",
+      "claim_ids": [
+        "I-JUDGE",
+        "MSFT-CFO-26",
+        "MSFT-CAPEX-26"
+      ],
+      "horizon": "未来 4–6 个季度"
+    },
+    {
+      "title": "微软 FY2026 是压力样本",
+      "text": "capex 强度 35%、FCF 利润率 20%，营业利润率仍 46.8%；若折旧加速，利润表才会反应。",
+      "claim_ids": [
+        "I-RISK",
+        "MSFT-CAPEX-26",
+        "MSFT-CFO-26"
+      ],
+      "horizon": "FY2027"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "折旧追赶",
+      "thesis": "折旧增速持续高于收入，营业利润率见顶。",
+      "triggers": [
+        "折旧增速 > 收入增速",
+        "营业利润率连续两季下降",
+        "capex 强度仍高于 25%"
+      ],
+      "implication": "压力从现金流进入利润表，估值需要下调。"
+    },
+    {
+      "name": "收入消化",
+      "thesis": "AI 收入增长快于折旧，利润率维持。",
+      "triggers": [
+        "收入增速 > 折旧增速",
+        "营业利润率持平或上升",
+        "FCF 利润率企稳"
+      ],
+      "implication": "资本开支被增长消化，现金流压力可控。"
+    },
+    {
+      "name": "capex 回落",
+      "thesis": "资本开支增速转负，FCF 利润率回升。",
+      "triggers": [
+        "capex 同比 < 0",
+        "FCF 利润率连续两季上升",
+        "折旧增速回落"
+      ],
+      "implication": "现金流压力缓解，但需确认需求没有同步走弱。"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "折旧周期尚未到",
+      "text": "资本开支的折旧年限较长，当期利润表还没反映；未来 2–3 年折旧追赶可能改变结论。",
+      "claim_ids": [
+        "I-MECH",
+        "I-RISK"
+      ]
+    }
+  ],
+  "watch": [
+    {
+      "signal": "三家折旧增速与营业利润率",
+      "meaning": "折旧超过收入时，利润率压力才会显性化",
+      "claim_ids": [
+        "I-RISK"
+      ],
+      "due": "2027-02-15",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "三家财年结束月不同（微软 6 月、Alphabet/亚马逊 12 月），FY2025 对照存在约半年错位；微软 FY2026 单列，不与其他两家同期比较。",
+      "material": true,
+      "claim_ids": [
+        "MSFT-REV-26"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "营业利润率、capex 强度与 FCF 利润率（FY2023→FY2025）",
+      "columns": [
+        "公司",
+        "营业利润率 FY2023",
+        "营业利润率 FY2025",
+        "capex 强度 FY2023",
+        "capex 强度 FY2025",
+        "FCF 利润率 FY2023",
+        "FCF 利润率 FY2025"
+      ],
+      "units": [
+        "",
+        "%",
+        "%",
+        "%",
+        "%",
+        "%",
+        "%"
+      ],
+      "rows": [
+        [
+          "MSFT",
+          41.8,
+          46.8,
+          13.3,
+          34.9,
+          28.1,
+          20.2
+        ],
+        [
+          "GOOGL",
+          27.4,
+          32.0,
+          10.5,
+          22.7,
+          22.6,
+          18.2
+        ],
+        [
+          "AMZN",
+          6.4,
+          11.2,
+          9.2,
+          18.4,
+          5.6,
+          1.1
+        ]
+      ],
+      "claim_ids": [
+        "MSFT-REV-23",
+        "MSFT-REV-25",
+        "MSFT-REV-26",
+        "MSFT-OP-23",
+        "MSFT-OP-25",
+        "MSFT-OP-26",
+        "MSFT-CAPEX-23",
+        "MSFT-CAPEX-25",
+        "MSFT-CAPEX-26",
+        "MSFT-CFO-23",
+        "MSFT-CFO-25",
+        "MSFT-CFO-26",
+        "GOOGL-REV-23",
+        "GOOGL-REV-25",
+        "GOOGL-OP-23",
+        "GOOGL-OP-25",
+        "GOOGL-CAPEX-23",
+        "GOOGL-CAPEX-25",
+        "GOOGL-CFO-23",
+        "GOOGL-CFO-25",
+        "AMZN-REV-23",
+        "AMZN-REV-25",
+        "AMZN-OP-23",
+        "AMZN-OP-25",
+        "AMZN-CAPEX-23",
+        "AMZN-CAPEX-25",
+        "AMZN-CFO-23",
+        "AMZN-CFO-25"
+      ],
+      "note": "利润率=营业利润/收入；capex 强度=资本开支/收入；FCF 利润率=(经营现金流−资本开支)/收入；由披露值计算并四舍五入。"
+    },
+    {
+      "title": "微软三年（FY2023–FY2026）",
+      "columns": [
+        "指标",
+        "FY2023",
+        "FY2025",
+        "FY2026"
+      ],
+      "units": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "收入（百万美元）",
+          211915,
+          281724,
+          331839
+        ],
+        [
+          "营业利润率",
+          41.8,
+          45.6,
+          46.8
+        ],
+        [
+          "capex 强度",
+          13.3,
+          22.9,
+          34.9
+        ],
+        [
+          "FCF 利润率",
+          28.1,
+          25.4,
+          20.2
+        ]
+      ],
+      "claim_ids": [
+        "MSFT-REV-23",
+        "MSFT-REV-25",
+        "MSFT-REV-26",
+        "MSFT-OP-23",
+        "MSFT-OP-25",
+        "MSFT-OP-26",
+        "MSFT-CAPEX-23",
+        "MSFT-CAPEX-25",
+        "MSFT-CAPEX-26",
+        "MSFT-CFO-23",
+        "MSFT-CFO-25",
+        "MSFT-CFO-26"
+      ],
+      "note": "FY2026 为微软最新财年，与其他两家期间不可直接比较，仅作趋势观察。"
+    }
+  ],
+  "charts": [
+    {
+      "kind": "bar",
+      "title": "FY2023→FY2025 变化：利润率上升、capex 强度上升、FCF 利润率下降",
+      "x_label": "公司",
+      "y_label": "百分点",
+      "unit": "pp",
+      "series": [
+        {
+          "name": "营业利润率变化",
+          "rows": [
+            {
+              "label": "MSFT",
+              "value": 5.0
+            },
+            {
+              "label": "GOOGL",
+              "value": 4.6
+            },
+            {
+              "label": "AMZN",
+              "value": 4.8
+            }
+          ]
+        },
+        {
+          "name": "capex 强度变化",
+          "rows": [
+            {
+              "label": "MSFT",
+              "value": 21.6
+            },
+            {
+              "label": "GOOGL",
+              "value": 12.2
+            },
+            {
+              "label": "AMZN",
+              "value": 9.2
+            }
+          ]
+        },
+        {
+          "name": "FCF 利润率变化",
+          "rows": [
+            {
+              "label": "MSFT",
+              "value": -7.9
+            },
+            {
+              "label": "GOOGL",
+              "value": -4.4
+            },
+            {
+              "label": "AMZN",
+              "value": -4.5
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "MSFT-REV-23",
+        "MSFT-REV-25",
+        "MSFT-REV-26",
+        "MSFT-OP-23",
+        "MSFT-OP-25",
+        "MSFT-OP-26",
+        "MSFT-CAPEX-23",
+        "MSFT-CAPEX-25",
+        "MSFT-CAPEX-26",
+        "MSFT-CFO-23",
+        "MSFT-CFO-25",
+        "MSFT-CFO-26",
+        "GOOGL-REV-23",
+        "GOOGL-REV-25",
+        "GOOGL-OP-23",
+        "GOOGL-OP-25",
+        "GOOGL-CAPEX-23",
+        "GOOGL-CAPEX-25",
+        "GOOGL-CFO-23",
+        "GOOGL-CFO-25",
+        "AMZN-REV-23",
+        "AMZN-REV-25",
+        "AMZN-OP-23",
+        "AMZN-OP-25",
+        "AMZN-CAPEX-23",
+        "AMZN-CAPEX-25",
+        "AMZN-CFO-23",
+        "AMZN-CFO-25"
+      ],
+      "note": "单位百分点；由披露值计算。"
+    },
+    {
+      "kind": "line",
+      "title": "微软：利润率稳、capex 强度升、FCF 利润率降",
+      "x_label": "财年",
+      "y_label": "%",
+      "unit": "%",
+      "series": [
+        {
+          "name": "营业利润率",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 41.8
+            },
+            {
+              "label": "FY2025",
+              "value": 45.6
+            },
+            {
+              "label": "FY2026",
+              "value": 46.8
+            }
+          ]
+        },
+        {
+          "name": "capex 强度",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 13.3
+            },
+            {
+              "label": "FY2025",
+              "value": 22.9
+            },
+            {
+              "label": "FY2026",
+              "value": 34.9
+            }
+          ]
+        },
+        {
+          "name": "FCF 利润率",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 28.1
+            },
+            {
+              "label": "FY2025",
+              "value": 25.4
+            },
+            {
+              "label": "FY2026",
+              "value": 20.2
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "MSFT-REV-23",
+        "MSFT-REV-25",
+        "MSFT-REV-26",
+        "MSFT-OP-23",
+        "MSFT-OP-25",
+        "MSFT-OP-26",
+        "MSFT-CAPEX-23",
+        "MSFT-CAPEX-25",
+        "MSFT-CAPEX-26",
+        "MSFT-CFO-23",
+        "MSFT-CFO-25",
+        "MSFT-CFO-26"
+      ],
+      "note": "由披露值计算；FY2026 为微软最新财年。"
+    }
+  ],
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2023 的利润率与资本开支强度",
+    "baseline_claim_ids": [
+      "MSFT-REV-23",
+      "GOOGL-REV-23",
+      "AMZN-REV-23"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "资本开支",
+      "折旧",
+      "营业利润",
+      "自由现金流"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "资本开支上升直接压缩利润率"
+      },
+      {
+        "id": "H2",
+        "explanation": "资本开支不经过营业利润，压的是自由现金流"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "营业利润率随资本开支上升而下降"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "营业利润率不降，FCF 利润率下降"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "I-JUDGE",
+          "MSFT-OP-25",
+          "GOOGL-OP-25",
+          "AMZN-OP-25",
+          "MSFT-CFO-25",
+          "GOOGL-CFO-25",
+          "AMZN-CFO-25"
+        ],
+        "interpretation": "三家营业利润率全部上升、FCF 利润率全部下降，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "三家折旧增速与营业利润率",
+        "by": "2027-02-15",
+        "supports_if": "折旧增速超过收入且营业利润率下降",
+        "weakens_if": "收入增速持续高于折旧、利润率维持"
+      }
+    ],
+    "conclusion": "资本开支没有压营业利润率，压的是自由现金流；压力是否进入利润表，取决于折旧增速是否超过收入。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "比较归因，不需要固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题不涉及当前价格判断",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

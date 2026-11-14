@@ -67,6 +67,11 @@
 - **[查看跨轮记忆示例](examples/memory-workflow/README.md)**
 - **[冻结的摘要输出](examples/memory-workflow/digest.md)**
 
+**第十一个例子：AI 资本开支为什么没压利润率？** 三家云厂商 FY2023→FY2025 营业利润率全部扩张（+3.9/+4.6/+4.7 个百分点），capex 强度上升 9–12 个百分点，FCF 利润率下降 2.7–4.5 个百分点。资本开支在营业利润之下，压的是现金流；真正的风险是折旧追赶。
+
+- **[阅读报告](examples/hyperscaler-capex-margins/research/work/report.md)**
+- **[查看案例与命令](examples/hyperscaler-capex-margins/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。

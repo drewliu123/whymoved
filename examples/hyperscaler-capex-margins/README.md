@@ -1,0 +1,54 @@
+# AI 资本开支没有压营业利润率，压的是自由现金流
+
+问题：**AI 资本开支是在压利润率，还是被收入增长消化？**
+
+数据来自 SEC XBRL 的 10-K 年度事实（微软、Alphabet、亚马逊各一个来源，共 28 条），比较 FY2023 与 FY2025：
+
+| 公司 | 营业利润率 | capex 强度 | FCF 利润率 |
+| --- | --- | --- | --- |
+| 微软 | 41.8% → **45.6%** | 13.3% → **22.9%** | 28.1% → **25.4%** |
+| Alphabet | 27.4% → **32.0%** | 10.5% → **22.7%** | 22.6% → **18.2%** |
+| 亚马逊 | 6.4% → **11.2%** | 9.2% → **18.4%** | 5.6% → **1.1%** |
+
+**结论：资本开支没有压营业利润率，压的是自由现金流。** 三家营业利润率全部扩张（+3.9 / +4.6 / +4.7 个百分点），同期 capex 强度上升 9–12 个百分点，FCF 利润率下降 2.7–4.5 个百分点。
+
+原因在会计位置：**资本开支在营业利润之下，折旧才进入营业成本**。资本开支先消耗现金，之后逐年以折旧形式进入利润表。所以「capex 上升 → 利润率下降」在当期并不成立；真正的风险是折旧追赶。
+
+微软 FY2026 是先行样本：capex 强度升到 **34.9%**、FCF 利润率降到 **20.2%**，营业利润率仍有 46.8%。如果折旧增速开始超过收入，压力才会进入利润表。
+
+## 三种情景与触发条件
+
+| 情景 | 触发 | 含义 |
+| --- | --- | --- |
+| 折旧追赶 | 折旧增速 > 收入增速、营业利润率连续两季下降、capex 强度仍 >25% | 压力进入利润表 |
+| 收入消化 | 收入增速 > 折旧增速、利润率持平或上升、FCF 利润率企稳 | 资本开支被增长消化 |
+| capex 回落 | capex 同比 <0、FCF 利润率连续两季上升 | 现金流压力缓解 |
+
+情景不给概率，只给「看到什么就相信什么」。
+
+## 这个示例演示什么
+
+- **会计位置决定结论**：capex 与折旧的位置不同，不能把资本开支直接当利润表成本。
+- **利润率与现金流分开看**：三家公司利润率扩张，FCF 利润率下降；只看一个会误判。
+- **同行 + 时间序列**：三家同表对照，微软再单列最新财年，兼顾横向与纵向。
+- **可跟踪**：下一份财报看折旧增速与营业利润率是否出现拐点。
+
+## 命令
+
+```bash
+python3 scripts/analysis_contract.py check \
+  --plan examples/hyperscaler-capex-margins/research/work/plan.json \
+  --report examples/hyperscaler-capex-margins/research/work/report.json \
+  --claims examples/hyperscaler-capex-margins/research/work/claims.json \
+  --sources examples/hyperscaler-capex-margins/research/work/sources.json
+
+python3 scripts/memo_pack.py examples/hyperscaler-capex-margins/research/work/report.json \
+  --claims examples/hyperscaler-capex-margins/research/work/claims.json \
+  --sources examples/hyperscaler-capex-margins/research/work/sources.json
+```
+
+## 边界
+
+- 三家财年结束月不同（微软 6 月，Alphabet/亚马逊 12 月），FY2025 对照有约半年错位。
+- 没有折旧明细与 AI 收入拆分；折旧追赶的判断是机制推断，不是已发生事实。
+- 资本开支口径为购买物业与设备（亚马逊用 productive assets），不含融资租赁等其他形式。

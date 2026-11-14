@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "AI 资本开支是在压利润率，还是被收入增长消化？",
+  "type": "theme",
+  "task": "机制研究",
+  "entity": "Microsoft, Alphabet, Amazon",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断资本开支对利润与现金的含义",
+  "prior_judgment": "资本开支上升常被直接解读为利润率压力",
+  "comparison": {
+    "period": "FY2023→FY2025",
+    "unit": "USD million 与 %",
+    "scope": "三家公司合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "收入、营业利润、资本开支与经营现金流的年度值取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "比较资本开支强度与营业利润率、FCF 利润率的变化，判断成本落在哪一行",
+    "baseline": "FY2023 的利润率与资本开支强度",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "资本开支",
+      "折旧",
+      "营业利润",
+      "自由现金流"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "资本开支强度上升时，营业利润率与 FCF 利润率的方向",
+        "source": "SEC XBRL 年度事实",
+        "by": "FY2026 10-K",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "营业利润率随资本开支上升而下降"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "营业利润率不降，FCF 利润率下降"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "资本开支上升直接压缩利润率",
+      "discriminating_observation": "营业利润率下降"
+    },
+    {
+      "id": "H2",
+      "explanation": "资本开支不经过营业利润，压的是自由现金流",
+      "discriminating_observation": "营业利润率扩张、FCF 利润率下降"
+    }
+  ],
+  "queries": [
+    {
+      "question": "三家 FY2023 与 FY2025 收入、营业利润、资本开支、经营现金流",
+      "query": "SEC companyfacts: MSFT/GOOGL/AMZN",
+      "source": "SEC XBRL",
+      "purpose": "比较利润率与资本开支强度",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

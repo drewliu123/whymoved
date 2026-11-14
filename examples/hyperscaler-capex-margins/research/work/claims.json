@@ -1,0 +1,403 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "MSFT-REV-23",
+      "text": "MSFT FY2023 收入 211915 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-OP-23",
+      "text": "MSFT FY2023 营业利润 88523 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-CAPEX-23",
+      "text": "MSFT FY2023 资本开支 28107 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-CFO-23",
+      "text": "MSFT FY2023 经营现金流 87582 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-REV-25",
+      "text": "MSFT FY2025 收入 281724 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-OP-25",
+      "text": "MSFT FY2025 营业利润 128528 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-CAPEX-25",
+      "text": "MSFT FY2025 资本开支 64551 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-CFO-25",
+      "text": "MSFT FY2025 经营现金流 136162 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-REV-26",
+      "text": "MSFT FY2026 收入 331839 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-OP-26",
+      "text": "MSFT FY2026 营业利润 155237 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-CAPEX-26",
+      "text": "MSFT FY2026 资本开支 115948 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "MSFT-CFO-26",
+      "text": "MSFT FY2026 经营现金流 182935 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-REV-23",
+      "text": "GOOGL FY2023 收入 307394 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-OP-23",
+      "text": "GOOGL FY2023 营业利润 84293 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-CAPEX-23",
+      "text": "GOOGL FY2023 资本开支 32251 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-CFO-23",
+      "text": "GOOGL FY2023 经营现金流 101746 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-REV-25",
+      "text": "GOOGL FY2025 收入 402836 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-OP-25",
+      "text": "GOOGL FY2025 营业利润 129039 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-CAPEX-25",
+      "text": "GOOGL FY2025 资本开支 91447 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "GOOGL-CFO-25",
+      "text": "GOOGL FY2025 经营现金流 164713 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-REV-23",
+      "text": "AMZN FY2023 收入 574785 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-OP-23",
+      "text": "AMZN FY2023 营业利润 36852 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-CAPEX-23",
+      "text": "AMZN FY2023 资本开支 52729 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-CFO-23",
+      "text": "AMZN FY2023 经营现金流 84946 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-REV-25",
+      "text": "AMZN FY2025 收入 716924 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-OP-25",
+      "text": "AMZN FY2025 营业利润 79975 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-CAPEX-25",
+      "text": "AMZN FY2025 资本开支 131819 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "AMZN-CFO-25",
+      "text": "AMZN FY2025 经营现金流 139514 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "I-MECH",
+      "text": "资本开支不计入营业利润，折旧才进入营业成本；资本开支上升压的是自由现金流，营业利润率可以同时扩张",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "MSFT-REV-23",
+        "MSFT-OP-23",
+        "MSFT-CAPEX-23",
+        "MSFT-CFO-23",
+        "MSFT-REV-25",
+        "MSFT-OP-25",
+        "MSFT-CAPEX-25",
+        "MSFT-CFO-25",
+        "MSFT-REV-26",
+        "MSFT-OP-26",
+        "MSFT-CAPEX-26",
+        "MSFT-CFO-26",
+        "GOOGL-REV-23",
+        "GOOGL-OP-23",
+        "GOOGL-CAPEX-23",
+        "GOOGL-CFO-23",
+        "GOOGL-REV-25",
+        "GOOGL-OP-25",
+        "GOOGL-CAPEX-25",
+        "GOOGL-CFO-25",
+        "AMZN-REV-23",
+        "AMZN-OP-23",
+        "AMZN-CAPEX-23",
+        "AMZN-CFO-23",
+        "AMZN-REV-25",
+        "AMZN-OP-25",
+        "AMZN-CAPEX-25",
+        "AMZN-CFO-25"
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "FY2023→FY2025 三家营业利润率全部扩张、capex 强度全部上升、FCF 利润率全部下降；AI 资本开支没有压营业利润率，压的是自由现金流，未来风险在折旧追赶",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "MSFT-REV-23",
+        "MSFT-OP-23",
+        "MSFT-CAPEX-23",
+        "MSFT-CFO-23",
+        "MSFT-REV-25",
+        "MSFT-OP-25",
+        "MSFT-CAPEX-25",
+        "MSFT-CFO-25",
+        "MSFT-REV-26",
+        "MSFT-OP-26",
+        "MSFT-CAPEX-26",
+        "MSFT-CFO-26",
+        "GOOGL-REV-23",
+        "GOOGL-OP-23",
+        "GOOGL-CAPEX-23",
+        "GOOGL-CFO-23",
+        "GOOGL-REV-25",
+        "GOOGL-OP-25",
+        "GOOGL-CAPEX-25",
+        "GOOGL-CFO-25",
+        "AMZN-REV-23",
+        "AMZN-OP-23",
+        "AMZN-CAPEX-23",
+        "AMZN-CFO-23",
+        "AMZN-REV-25",
+        "AMZN-OP-25",
+        "AMZN-CAPEX-25",
+        "AMZN-CFO-25",
+        "I-MECH"
+      ]
+    },
+    {
+      "id": "I-RISK",
+      "text": "若折旧增速持续高于收入，营业利润率才可能见顶；微软 FY2026 capex 强度 35%、FCF 利润率 20% 是先行样本",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "MSFT-CAPEX-26",
+        "MSFT-CFO-26",
+        "MSFT-REV-26",
+        "MSFT-OP-26",
+        "I-MECH"
+      ]
+    }
+  ]
+}
