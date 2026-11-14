@@ -238,3 +238,66 @@ class ExampleChartConsistencyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExampleSeriesConsistencyTests(unittest.TestCase):
+    ALIASES = {
+        "现金资本开支": ("资本开支", "现金资本开支"),
+        "分红+回购": ("分红+回购", "分红与回购"),
+        "自由现金流": ("自由现金流",),
+        "经营现金流": ("经营现金流",),
+        "净利润": ("净利润",),
+        "收入": ("收入",),
+        "毛利": ("毛利",),
+    }
+
+    @staticmethod
+    def key(label):
+        text = str(label)
+        digits = "".join(ch for ch in text if ch.isdigit())
+        return digits[-4:] if len(digits) >= 4 else text
+
+    def test_chart_series_match_table_rows(self):
+        checked = 0
+        for report_path in sorted((ROOT / "examples").glob("*/research/work/report.json")):
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+            tables = report.get("tables", [])
+            for chart in report.get("charts", []):
+                series_list = chart.get("series") or [{"name": chart.get("title", ""), "rows": chart.get("rows", [])}]
+                for series in series_list:
+                    name = str(series.get("name", ""))
+                    candidates = self.ALIASES.get(name, (name,))
+                    table = None
+                    row = None
+                    for candidate_table in tables:
+                        columns = candidate_table.get("columns", [])
+                        if not columns or columns[0] != "指标":
+                            continue
+                        mapping = {str(item[0]): item for item in candidate_table.get("rows", []) if item}
+                        for candidate in candidates:
+                            if candidate in mapping:
+                                table = candidate_table
+                                row = mapping[candidate]
+                                break
+                        if row:
+                            break
+                    if not row:
+                        continue
+                    year_columns = {self.key(column): index for index, column in enumerate(table["columns"]) if self.key(column).isdigit()}
+                    for point in series.get("rows", []):
+                        key = self.key(point.get("label"))
+                        index = year_columns.get(key)
+                        value = number(point.get("value"))
+                        if index is None or value is None or len(row) <= index:
+                            continue
+                        expected = number(row[index])
+                        if expected is None:
+                            continue
+                        self.assertLessEqual(abs(value - expected), max(0.05, abs(expected) * 0.02),
+                                             "%s chart '%s' %s is %.2f but table says %.2f" % (report_path.parents[2].name, series.get("name"), point.get("label"), value, expected))
+                        checked += 1
+        self.assertGreaterEqual(checked, 15, "expected to match chart series to table rows")
+
+
+if __name__ == "__main__":
+    unittest.main()
