@@ -40,9 +40,9 @@ FY2023→FY2025，AMAT 收入 \+7\.0%、LRCX \+5\.8%、KLAC \+15\.8%；AMAT 不�
 
 为什么重要：同样的行业环境，同行在去库存、AMAT 在加库存；这比「营运资本」四个字更能解释现金差距。
 
-## 同业 FY2026：收入增，现金也没跟上
+## 同业 FY2026 已披露：收入增，现金不同步
 
-LRCX FY2026 收入 \+26\.0%、CFO −5\.1%；KLAC 收入 \+11\.7%、CFO \+1\.5%。同行也出现「收入增长、现金不同步」。 [LRCX\-REVENUE\-2025] [LRCX\-REVENUE\-2026] [LRCX\-CFO\-2025] [LRCX\-CFO\-2026] [KLAC\-REVENUE\-2025] [KLAC\-REVENUE\-2026] [KLAC\-CFO\-2025] [KLAC\-CFO\-2026]
+LRCX FY2026 收入 \+26\.0%、CFO −5\.1%，毛利率 48\.7%→50\.5%；KLAC 收入 \+11\.7%、CFO \+1\.5%。不是利润率问题，是现金回收不同步。 [LRCX\-REVENUE\-2025] [LRCX\-REVENUE\-2026] [LRCX\-CFO\-2025] [LRCX\-CFO\-2026] [KLAC\-REVENUE\-2025] [KLAC\-REVENUE\-2026] [KLAC\-CFO\-2025] [KLAC\-CFO\-2026] [LRCX\-GROSS\-2026]
 
 为什么重要：如果现金弱是行业交付/验收节奏，AMAT 的问题就不是独有的；这会削弱「公司备货」解释。
 
@@ -151,7 +151,7 @@ DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本�
 
 DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本×365；CCC 变化为 FY2024→FY2025；由披露值计算并四舍五入。
 
-### 同业 FY2026 前瞻（百万美元）
+### 同业 FY2026 实际（LRCX/KLAC，百万美元）
 
 | 公司 | FY2026 收入（百万美元） | 收入增速（%） | FY2026 CFO（百万美元） | CFO 增速（%） | 存货变化（百万美元） | 合同负债变化（百万美元） |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -160,7 +160,7 @@ DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本�
 
 [LRCX\-REVENUE\-2025] [LRCX\-REVENUE\-2026] [LRCX\-CFO\-2025] [LRCX\-CFO\-2026] [LRCX\-INV\-2025] [LRCX\-INV\-2026] [LRCX\-DEFERRED\-2025] [LRCX\-DEFERRED\-2026] [KLAC\-REVENUE\-2025] [KLAC\-REVENUE\-2026] [KLAC\-CFO\-2025] [KLAC\-CFO\-2026] [KLAC\-INV\-2025] [KLAC\-INV\-2026] [KLAC\-DEFERRED\-2025] [KLAC\-DEFERRED\-2026]
 
-LRCX 合同负债为流动口径，KLAC 为总额口径，二者不完全一致；增速与变化由披露值计算。
+LRCX/KLAC 财年已于 2026\-06 结束并披露；AMAT FY2026（10 月财年）尚未披露。
 
 ### 收入指数（FY2023=100）：AMAT 平稳，同行先跌后反弹
 
@@ -207,6 +207,8 @@ LRCX、KLAC FY2026 收入增长但现金未同步，说明设备行业的收入�
 财年不对齐：AMAT 财年 10 月结束，云厂商 12 月/6 月结束；同比比较存在期间错位。 [I\-JUDGE]
 
 AMAT 客户结构未拆分，无法区分先进制程、存储与中国区敞口；总量数据不能证明因果。 [I\-DELIVERY]
+
+AMAT FY2026 尚未披露（10 月财年，10\-K 预计 2026\-12），因此公司问题与行业节奏仍未最终分辨。 [LRCX\-REVENUE\-2026] [KLAC\-REVENUE\-2026]
 
 ## 附录：分析底稿与可复算模型
 
@@ -531,6 +533,10 @@ AMAT 客户结构未拆分，无法区分先进制程、存储与中国区敞口
 \[KLAC\-DEFERRED\-2026\] KLAC FY2026 期末合同负债 1,775 百万美元（fact；2026\-11\-14T00:00:00Z）
 
 依据：；来源：S\-KLAC
+
+\[LRCX\-GROSS\-2026\] LRCX FY2026 毛利润 11,729 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
 
 S\-MSFT · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-14T00:00:00Z · quote：10\-K company facts, USD: Microsoft · locator：data\.sec\.gov companyfacts CIK0000789019（Microsoft），10\-K 年度值 · origin\_id：sec\-msft · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "传导节点指标", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
 

@@ -99,8 +99,8 @@
       }
     },
     {
-      "title": "同业 FY2026：收入增，现金也没跟上",
-      "text": "LRCX FY2026 收入 +26.0%、CFO −5.1%；KLAC 收入 +11.7%、CFO +1.5%。同行也出现「收入增长、现金不同步」。",
+      "title": "同业 FY2026 已披露：收入增，现金不同步",
+      "text": "LRCX FY2026 收入 +26.0%、CFO −5.1%，毛利率 48.7%→50.5%；KLAC 收入 +11.7%、CFO +1.5%。不是利润率问题，是现金回收不同步。",
       "claim_ids": [
         "LRCX-REVENUE-2025",
         "LRCX-REVENUE-2026",
@@ -109,7 +109,8 @@
         "KLAC-REVENUE-2025",
         "KLAC-REVENUE-2026",
         "KLAC-CFO-2025",
-        "KLAC-CFO-2026"
+        "KLAC-CFO-2026",
+        "LRCX-GROSS-2026"
       ],
       "why_it_matters": "如果现金弱是行业交付/验收节奏，AMAT 的问题就不是独有的；这会削弱「公司备货」解释。",
       "increment": {
@@ -156,6 +157,14 @@
       "material": true,
       "claim_ids": [
         "I-DELIVERY"
+      ]
+    },
+    {
+      "text": "AMAT FY2026 尚未披露（10 月财年，10-K 预计 2026-12），因此公司问题与行业节奏仍未最终分辨。",
+      "material": true,
+      "claim_ids": [
+        "LRCX-REVENUE-2026",
+        "KLAC-REVENUE-2026"
       ]
     }
   ],
@@ -490,7 +499,7 @@
       "note": "DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本×365；CCC 变化为 FY2024→FY2025；由披露值计算并四舍五入。"
     },
     {
-      "title": "同业 FY2026 前瞻（百万美元）",
+      "title": "同业 FY2026 实际（LRCX/KLAC，百万美元）",
       "columns": [
         "公司",
         "FY2026 收入",
@@ -547,7 +556,7 @@
         "KLAC-DEFERRED-2025",
         "KLAC-DEFERRED-2026"
       ],
-      "note": "LRCX 合同负债为流动口径，KLAC 为总额口径，二者不完全一致；增速与变化由披露值计算。"
+      "note": "LRCX/KLAC 财年已于 2026-06 结束并披露；AMAT FY2026（10 月财年）尚未披露。"
     }
   ],
   "transmission": {
