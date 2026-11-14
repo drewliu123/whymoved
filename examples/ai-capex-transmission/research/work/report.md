@@ -8,9 +8,9 @@
 
 结论：两年维度 AMAT 收入 \+7\.0%，与 LRCX \+5\.8% 相当；真正持续掉队的是现金流（−8\.5%）。
 
-最反直觉：同行在释放存货：LRCX 存货天数降 29\.8 天、KLAC 降 35\.3 天，AMAT 反而升 9\.7 天；AMAT 的存货增加与行业方向相反。
+最反直觉：同行在释放存货，AMAT 反而加库存；但 LRCX FY2026 也出现收入 \+26%、CFO −5\.1%，现金弱可能部分是行业交付节奏。
 
-接下来验证：看 FY2026 存货天数是否回落，以及合同负债是否继续下降；若两者同时恶化，需求走弱会比收入更早出现。
+接下来验证：拿 AMAT FY2026 与 LRCX/KLAC FY2026 对照：若 AMAT 也收入增、现金不增，公司归因要下调；若更差，公司问题成立。
 
 ## 判断
 
@@ -60,6 +60,16 @@ FY2023→FY2025，AMAT 收入 \+7\.0%、LRCX \+5\.8%、KLAC \+15\.8%；AMAT 不�
 
 研究增量（contradiction）：同行存货与现金周期对照
 
+## 同业 FY2026：收入增，现金也没跟上
+
+LRCX FY2026 收入 \+26\.0%、CFO −5\.1%；KLAC 收入 \+11\.7%、CFO \+1\.5%。同行也出现「收入增长、现金不同步」。 [LRCX\-REVENUE\-2025] [LRCX\-REVENUE\-2026] [LRCX\-CFO\-2025] [LRCX\-CFO\-2026] [KLAC\-REVENUE\-2025] [KLAC\-REVENUE\-2026] [KLAC\-CFO\-2025] [KLAC\-CFO\-2026]
+
+为什么重要：如果现金弱是行业交付/验收节奏，AMAT 的问题就不是独有的；这会削弱「公司备货」解释。
+
+相较基线：AMAT 公司问题
+
+研究增量（contradiction）：同业 FY2026 现金也不同步
+
 ## 这意味着什么
 
 ### 存货方向是公司信号
@@ -70,13 +80,13 @@ FY2023→FY2025，AMAT 收入 \+7\.0%、LRCX \+5\.8%、KLAC \+15\.8%；AMAT 不�
 
 AMAT 合同负债 2,849→2,566、LRCX 1,552→2,680、KLAC 1,782→1,714；AMAT 与 KLAC 下降、LRCX 上升，行业订单并不一致。（未来 4–6 个季度） [AMAT\-DEFERRED\-2025] [LRCX\-DEFERRED\-2025] [KLAC\-DEFERRED\-2025]
 
-### 现金周期改善不等于现金健康
+### 用 FY2026 分辨公司还是行业
 
-三家 CCC 都在改善，但 AMAT 的改善幅度最小且 CFO 下降；看现金要同时看存货方向与预收款。（FY2026） [AMAT\-CFO\-2025] [AMAT\-INV\-2025] [LRCX\-INV\-2025] [KLAC\-INV\-2025]
+AMAT FY2026 若与同行一样「收入增、现金不增」，公司归因下调；若存货继续升、合同负债继续降且现金流更差，公司问题成立。（FY2026 财报） [AMAT\-INV\-2025] [AMAT\-DEFERRED\-2025] [LRCX\-CFO\-2026] [KLAC\-CFO\-2026]
 
 ## 分析判断
 
-两年维度 AMAT 收入 \+7\.0% 与 LRCX \+5\.8% 相当，没有持续丢失份额；现金流 −8\.5% 的差异与同行方向相反：LRCX/KLAC 在去库存、AMAT 在加库存，CCC 改善幅度也小得多。 [I\-JUDGE]
+两年维度 AMAT 收入 \+7\.0% 与 LRCX \+5\.8% 相当；现金流 −8\.5% 且存货方向与同行相反，但 LRCX/KLAC FY2026 也出现「收入增、现金不同步」，行业交付节奏可能是部分解释；需用 AMAT FY2026 区分公司问题与行业节奏。 [I\-JUDGE]
 
 传导关系：资本开支 → 设备交付与验收 → 设备商收入 → 毛利率 → 经营现金流
 
@@ -139,6 +149,17 @@ DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本�
 
 DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本×365；CCC 变化为 FY2024→FY2025；由披露值计算并四舍五入。
 
+### 同业 FY2026 前瞻（百万美元）
+
+| 公司 | FY2026 收入（百万美元） | 收入增速（%） | FY2026 CFO（百万美元） | CFO 增速（%） | 存货变化（百万美元） | 合同负债变化（百万美元） |
+| --- | --- | --- | --- | --- | --- | --- |
+| LRCX | 23233 | 26\.0 | 5858 | \-5\.1 | \-32 | \-286 |
+| KLAC | 13579 | 11\.7 | 4143 | 1\.5 | 436 | 61 |
+
+[LRCX\-REVENUE\-2025] [LRCX\-REVENUE\-2026] [LRCX\-CFO\-2025] [LRCX\-CFO\-2026] [LRCX\-INV\-2025] [LRCX\-INV\-2026] [LRCX\-DEFERRED\-2025] [LRCX\-DEFERRED\-2026] [KLAC\-REVENUE\-2025] [KLAC\-REVENUE\-2026] [KLAC\-CFO\-2025] [KLAC\-CFO\-2026] [KLAC\-INV\-2025] [KLAC\-INV\-2026] [KLAC\-DEFERRED\-2025] [KLAC\-DEFERRED\-2026]
+
+LRCX 合同负债为流动口径，KLAC 为总额口径，二者不完全一致；增速与变化由披露值计算。
+
 ### 收入指数（FY2023=100）：AMAT 平稳，同行先跌后反弹
 
 | 财年 | AMAT（指数） | LRCX（指数） | KLAC（指数） |
@@ -166,6 +187,12 @@ DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本�
 [AMAT\-CFO\-2024] [AMAT\-CFO\-2025] [AMAT\-INV\-2024] [AMAT\-INV\-2025] [AMAT\-DEFERRED\-2024] [AMAT\-DEFERRED\-2025] [AMAT\-AP\-2024] [AMAT\-AP\-2025] [AMAT\-AR\-2024] [AMAT\-AR\-2025]
 
 存货、合同负债、应付、应收按期末余额变动对现金的近似影响列示；其余项目为轧差，不单独建模。
+
+## 其他解释
+
+### 行业交付节奏解释
+
+LRCX、KLAC FY2026 收入增长但现金未同步，说明设备行业的收入确认与现金回收存在时滞；AMAT 的现金流弱可能部分是行业节奏，而非公司备货失误。 [LRCX\-REVENUE\-2026] [LRCX\-CFO\-2026] [KLAC\-REVENUE\-2026] [KLAC\-CFO\-2026] [AMAT\-CFO\-2025]
 
 ## 接下来观察什么
 
@@ -197,7 +224,7 @@ DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本�
 
 
 
-观察结果：收入两年 AMAT \+7\.0%、LRCX \+5\.8%、KLAC \+15\.8%，未持续掉队；现金两年 AMAT −8\.5%，存货方向与同行相反（AMAT \+9\.7 天、LRCX −29\.8 天、KLAC −35\.3 天），CCC 改善幅度也最小。 [CAPEX\-MSFT\-24] [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-24] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-24] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025] [LRCX\-REVENUE\-2025] [KLAC\-REVENUE\-2025] [AMAT\-REVENUE\-2023] [LRCX\-REVENUE\-2023] [KLAC\-REVENUE\-2023] [AMAT\-CFO\-2023] [LRCX\-CFO\-2023] [KLAC\-CFO\-2023] [AMAT\-INV\-2024] [AMAT\-INV\-2025] [AMAT\-DEFERRED\-2024] [AMAT\-DEFERRED\-2025] [AMAT\-AP\-2024] [AMAT\-AP\-2025] [AMAT\-COGS\-2024] [AMAT\-COGS\-2025] [LRCX\-INV\-2024] [LRCX\-INV\-2025] [LRCX\-COGS\-2024] [LRCX\-COGS\-2025] [KLAC\-INV\-2024] [KLAC\-INV\-2025] [KLAC\-COGS\-2024] [KLAC\-COGS\-2025]
+观察结果：收入两年 AMAT \+7\.0%、LRCX \+5\.8%、KLAC \+15\.8%，未持续掉队；现金两年 AMAT −8\.5%，存货方向与同行相反（AMAT \+9\.7 天、LRCX −29\.8 天、KLAC −35\.3 天），CCC 改善幅度也最小。 同业 FY2026 收入增长而现金未同步，行业节奏解释部分成立；AMAT FY2026 是关键分辨点。 [CAPEX\-MSFT\-24] [CAPEX\-MSFT\-25] [CAPEX\-GOOGL\-24] [CAPEX\-GOOGL\-25] [CAPEX\-AMZN\-24] [CAPEX\-AMZN\-25] [AMAT\-REVENUE\-2024] [AMAT\-REVENUE\-2025] [LRCX\-REVENUE\-2025] [KLAC\-REVENUE\-2025] [AMAT\-REVENUE\-2023] [LRCX\-REVENUE\-2023] [KLAC\-REVENUE\-2023] [AMAT\-CFO\-2023] [LRCX\-CFO\-2023] [KLAC\-CFO\-2023] [AMAT\-INV\-2024] [AMAT\-INV\-2025] [AMAT\-DEFERRED\-2024] [AMAT\-DEFERRED\-2025] [AMAT\-AP\-2024] [AMAT\-AP\-2025] [AMAT\-COGS\-2024] [AMAT\-COGS\-2025] [LRCX\-INV\-2024] [LRCX\-INV\-2025] [LRCX\-COGS\-2024] [LRCX\-COGS\-2025] [KLAC\-INV\-2024] [KLAC\-INV\-2025] [KLAC\-COGS\-2024] [KLAC\-COGS\-2025] [LRCX\-REVENUE\-2026] [LRCX\-CFO\-2026] [KLAC\-REVENUE\-2026] [KLAC\-CFO\-2026]
 
 支持：H2；削弱：H1
 
@@ -462,6 +489,38 @@ DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本�
 依据：；来源：S\-KLAC
 
 \[KLAC\-COGS\-2025\] KLAC FY2025 营业成本 4,752 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[LRCX\-REVENUE\-2026\] LRCX FY2026 收入 23,233 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[LRCX\-CFO\-2026\] LRCX FY2026 经营现金流 5,858 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[LRCX\-INV\-2026\] LRCX FY2026 期末存货 4,276 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[LRCX\-DEFERRED\-2026\] LRCX FY2026 期末合同负债（流动）2,279 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-LRCX
+
+\[KLAC\-REVENUE\-2026\] KLAC FY2026 收入 13,579 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[KLAC\-CFO\-2026\] KLAC FY2026 经营现金流 4,143 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[KLAC\-INV\-2026\] KLAC FY2026 期末存货 3,649 百万美元（fact；2026\-11\-14T00:00:00Z）
+
+依据：；来源：S\-KLAC
+
+\[KLAC\-DEFERRED\-2026\] KLAC FY2026 期末合同负债 1,775 百万美元（fact；2026\-11\-14T00:00:00Z）
 
 依据：；来源：S\-KLAC
 

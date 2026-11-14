@@ -694,6 +694,94 @@
           "source_id": "S-KLAC"
         }
       ]
+    },
+    {
+      "id": "LRCX-REVENUE-2026",
+      "text": "LRCX FY2026 收入 23,233 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-CFO-2026",
+      "text": "LRCX FY2026 经营现金流 5,858 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-INV-2026",
+      "text": "LRCX FY2026 期末存货 4,276 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-DEFERRED-2026",
+      "text": "LRCX FY2026 期末合同负债（流动）2,279 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-REVENUE-2026",
+      "text": "KLAC FY2026 收入 13,579 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-CFO-2026",
+      "text": "KLAC FY2026 经营现金流 4,143 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-INV-2026",
+      "text": "KLAC FY2026 期末存货 3,649 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-DEFERRED-2026",
+      "text": "KLAC FY2026 期末合同负债 1,775 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
     }
   ]
 }
