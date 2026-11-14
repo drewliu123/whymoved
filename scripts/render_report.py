@@ -256,6 +256,9 @@ def validate_report(report, ledger, sources=None):
                 triggers = item.get("triggers")
                 if not isinstance(triggers, list) or not triggers or any(not _text(t) for t in triggers):
                     errors.append(path + ".triggers must be a nonempty text list")
+    layout = report.get("layout")
+    if layout is not None and layout not in ("classic", "brief"):
+        errors.append("layout must be classic or brief")
     summary = report.get("summary")
     if summary is not None:
         if not isinstance(summary, dict) or set(summary) != {"conclusion", "surprise", "next_check"}:
@@ -700,9 +703,10 @@ def _blocks(report, ledger, sources):
     if report.get("opportunity"):
         from opportunity_contract import opportunity_blocks
         yield from opportunity_blocks(report["opportunity"])
-    for limit in report["limitations"]:
-        if limit["material"]:
-            yield ("p", "重要限制：" + limit["text"], limit["claim_ids"])
+    if report.get("layout") != "brief":
+        for limit in report["limitations"]:
+            if limit["material"]:
+                yield ("p", "重要限制：" + limit["text"], limit["claim_ids"])
     if report.get("no_change_reason"):
         yield ("p", report["no_change_reason"])
     tables_by_id = {table["id"]: table for table in report["tables"]
@@ -770,6 +774,11 @@ def _blocks(report, ledger, sources):
         for item in report[field]:
             yield ("h3", item.get("title", item.get("signal")))
             yield ("p", item.get("text", item.get("meaning")), item["claim_ids"])
+    material = [item for item in report["limitations"] if item["material"]]
+    if material and report.get("layout") == "brief":
+        yield ("h2", "限制与边界")
+        for item in material:
+            yield ("p", item["text"], item["claim_ids"])
     other = [item for item in report["limitations"] if not item["material"]]
     if other:
         yield ("h2", "其他限制")

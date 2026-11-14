@@ -491,6 +491,14 @@ class QualityReportTests(unittest.TestCase):
 
 
 class EventStudyReportTests(unittest.TestCase):
+    def test_layout_is_optional_and_known(self):
+        report, ledger, sources = documents()
+        report["layout"] = "brief"
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        report["layout"] = "compact"
+        self.assertTrue(any("layout must be classic or brief" in error
+                            for error in render_report.validate_report(report, ledger, sources)))
+
     def test_scenarios_section(self):
         report, ledger, sources = documents()
         report["scenarios"] = [
