@@ -180,3 +180,61 @@ class ExampleRatioTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExampleChartConsistencyTests(unittest.TestCase):
+    @staticmethod
+    def key(label):
+        text = str(label)
+        if "当前" in text:
+            return "current"
+        digits = "".join(ch for ch in text if ch.isdigit())
+        return digits[-4:] if len(digits) >= 4 else text
+
+    def test_pe_charts_match_tables(self):
+        checked = 0
+        for report_path in sorted((ROOT / "examples").glob("*/research/work/report.json")):
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+            for chart in report.get("charts", []):
+                if "P/E" not in chart.get("title", ""):
+                    continue
+                table = next((item for item in report.get("tables", []) if "P/E" in item.get("columns", [])), None)
+                if not table:
+                    continue
+                pe_index = table["columns"].index("P/E")
+                table_values = {self.key(row[0]): number(row[pe_index]) for row in table["rows"] if len(row) > pe_index}
+                for row in chart.get("rows", []):
+                    value = number(row.get("value"))
+                    expected = table_values.get(self.key(row.get("label")))
+                    if value is None or expected is None:
+                        continue
+                    self.assertLessEqual(abs(value - expected), max(1.0, abs(expected) * 0.05),
+                                         "%s chart %s P/E %.1f but table says %.1f" % (report_path.parents[2].name, row.get("label"), value, expected))
+                    checked += 1
+        self.assertGreaterEqual(checked, 20, "expected to match valuation charts to tables")
+
+    def test_pb_charts_match_tables(self):
+        checked = 0
+        for report_path in sorted((ROOT / "examples").glob("*/research/work/report.json")):
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+            for chart in report.get("charts", []):
+                if "P/B" not in chart.get("title", ""):
+                    continue
+                table = next((item for item in report.get("tables", []) if "P/B" in item.get("columns", [])), None)
+                if not table:
+                    continue
+                pb_index = table["columns"].index("P/B")
+                table_values = {self.key(row[0]): number(row[pb_index]) for row in table["rows"] if len(row) > pb_index}
+                for row in chart.get("rows", []):
+                    value = number(row.get("value"))
+                    expected = table_values.get(self.key(row.get("label")))
+                    if value is None or expected is None:
+                        continue
+                    self.assertLessEqual(abs(value - expected), max(0.05, abs(expected) * 0.05),
+                                         "%s chart %s P/B %.2f but table says %.2f" % (report_path.parents[2].name, row.get("label"), value, expected))
+                    checked += 1
+        self.assertGreater(checked, 5, "expected to match the JPM P/B chart to its table")
+
+
+if __name__ == "__main__":
+    unittest.main()
