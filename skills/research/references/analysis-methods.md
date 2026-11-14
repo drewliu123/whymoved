@@ -129,7 +129,7 @@ analysis的question_kind / method / price_relevance / baseline / mechanism_chain
 
 free_cash_flow模型是简化的企业自由现金流FCFF：税后营业利润+折旧−资本支出−营运资本增量。DCF及reverse_dcf的free_cash_flow均要求FCFF，discount_rate为与币种及名义口径一致的加权平均资本成本WACC；先计算企业价值EV，再减净债务得到股权价值。不能将已扣利息的股权自由现金流FCFE搭配WACC，或对其再扣净债务。
 
-DCF的free_cash_flow为FCF0，须匹配完整年度或明确年化的基期，years单位为年；不能把季度FCF直接当年度输入。模型先将FCF0增长至第1年再折现，终值基于最后一年现金流继续按terminal_growth增长。reverse_dcf以price×shares+net_debt为目标，反求给定年限内恒定增长率，这是条件隐含预期。净债务、股数和价格须同范围、同一估值截点。当前估值模型不适用于零或负FCF；明确记录模型缺失及原因，不能据此判断企业没有价值。
+DCF的free_cash_flow为FCF0，须匹配完整年度或明确年化的基期，years单位为年；不能把季度FCF直接当年度输入。模型先将FCF0增长至第1年再折现，终值基于最后一年现金流继续按terminal_growth增长。可选`fade_years`（0–20 整数）：显式期结束后用该年数把增速从求解/给定增速线性收敛到终值增长，再算终值；缺省 0 时行为不变。收敛期增加中间年度现金流，同一价格隐含的初始增速通常更低，报告会注明「线性收敛到终值增长」。reverse_dcf以price×shares+net_debt为目标，反求给定年限内恒定增长率，这是条件隐含预期。净债务、股数和价格须同范围、同一估值截点。当前估值模型不适用于零或负FCF；明确记录模型缺失及原因，不能据此判断企业没有价值。
 
 估值需正FCF、股数、价格及折现率，years为1–50整数，terminal_growth小于discount_rate。reverse_dcf增长上下界必须包住目标，否则如实报无解，不能伪造结果。金额unit固定currency，币种、缩放、期间、范围写wrapper.currency / scale / period / scope。金额和股数同一缩放（百万美元与百万股），price仍为美元/股；不混用分部利润与全公司资本支出。reverse_dcf wrapper另须instrument（如NVDA）；模型price输入value、wrapper.currency对应的每股报价unit（如USD/share）及instrument必须与所引sources.market_quote的value / unit / instrument精确一致。
 

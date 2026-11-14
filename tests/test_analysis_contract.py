@@ -248,6 +248,21 @@ class AnalysisContractTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.check(bad)
 
+    def test_fade_years_renders_and_validates(self):
+        data = priced_bundle()
+        model = data[0]["analysis"]["models"][0]
+        model["spec"]["fade_years"] = 5
+        model["result"] = analysis_models.compute_model(model["spec"])
+        self.check(data)
+        for render in (render_report.render_markdown, render_report.render_html):
+            text = render(*data[:3]).replace("\\", "")
+            self.assertIn("线性收敛到终值增长", text)
+        bad = priced_bundle()
+        bad_model = bad[0]["analysis"]["models"][0]
+        bad_model["spec"]["fade_years"] = -1
+        with self.assertRaises(ValueError):
+            self.check(bad)
+
     def test_valuation_summary_reads_frozen_model_outputs(self):
         data = summary_bundle()
         self.check(data)

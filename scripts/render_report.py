@@ -1014,6 +1014,9 @@ def _analysis_blocks(analysis, appendix=False, answer_text=None):
                                           for year in projection],
                                  "claim_ids": segment_claims})
                 yield ("p", "推演逐年套用给定的收入增长率与利润率，从模型当年收入起步；不含 margin_delta 敏感性。")
+        fade = model["spec"].get("fade_years")
+        if isinstance(fade, int) and fade:
+            yield ("p", "显式期后按 %d 年线性收敛到终值增长（多阶段），不是恒定增长。" % fade)
         yield ("table", {"title": "观察值与假设", "columns": ["变量", "数值", "单位", "性质", "假设理由"],
                          "rows": [[name, v["value"], v["unit"], v["role"], model["assumptions"].get(name, "")] for name, v in model["spec"]["inputs"].items()],
                          "claim_ids": list(dict.fromkeys(cid for v in model["spec"]["inputs"].values() for cid in v["claim_ids"]))})

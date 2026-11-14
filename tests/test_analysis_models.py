@@ -635,6 +635,37 @@ class RelativeValuationTests(unittest.TestCase):
             compute_model(item)
 
 
+class FadeTests(unittest.TestCase):
+    def spec(self, fade=0):
+        return {"kind": "reverse_dcf", "fade_years": fade,
+                "inputs": {
+                    "free_cash_flow": {"value": 1000, "unit": "currency", "role": "observed", "claim_ids": ["C1"]},
+                    "discount_rate": {"value": 0.08, "unit": "ratio", "role": "assumption", "claim_ids": ["A1"]},
+                    "terminal_growth": {"value": 0.02, "unit": "ratio", "role": "assumption", "claim_ids": ["A1"]},
+                    "years": {"value": 5, "unit": "year", "role": "assumption", "claim_ids": ["A1"]},
+                    "net_debt": {"value": 100, "unit": "currency", "role": "observed", "claim_ids": ["C2"]},
+                    "shares": {"value": 100, "unit": "shares", "role": "observed", "claim_ids": ["C3"]},
+                    "price": {"value": 250, "unit": "currency/share", "role": "observed", "claim_ids": ["C4"]},
+                    "growth_low": {"value": 0.0, "unit": "ratio", "role": "assumption", "claim_ids": ["A1"]},
+                    "growth_high": {"value": 0.8, "unit": "ratio", "role": "assumption", "claim_ids": ["A1"]}},
+                "sensitivity": [{"input": "discount_rate", "values": [0.07, 0.09]}]}
+
+    def test_fade_changes_the_implied_growth(self):
+        plain = compute_model(self.spec(0))["outputs"]["implied_growth"]["value"]
+        faded = compute_model(self.spec(5))["outputs"]["implied_growth"]["value"]
+        self.assertLess(faded, plain, "extra fade years add cash flow, so less growth is needed")
+        self.assertAlmostEqual(compute_model(self.spec(0))["outputs"]["implied_growth"]["value"], plain)
+
+    def test_fade_validation(self):
+        for fade in (-1, 21, 1.5, "3", True):
+            with self.assertRaises(ValueError):
+                compute_model(self.spec(fade))
+        bridge = spec("operating_bridge")
+        bridge["fade_years"] = 3
+        with self.assertRaisesRegex(ValueError, "only supported by dcf"):
+            compute_model(bridge)
+
+
 class RealDataTests(unittest.TestCase):
     """The fixed models must reproduce a real published income statement."""
 

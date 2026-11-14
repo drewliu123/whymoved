@@ -222,13 +222,21 @@ def _percentile(sorted_values, fraction):
 
 
 
-def _dcf(values, growth):
-    """Return enterprise value and discounted terminal value using FCF0."""
+def _dcf(values, growth, fade_years=0):
+    """Return enterprise value and discounted terminal value using FCF0.
+
+    With fade_years > 0 the growth rate declines linearly from `growth` to
+    terminal_growth across those extra years before the terminal value applies.
+    """
     cash_flow = values["free_cash_flow"]
     discount = 1.0
     cash_flows = []
-    for _ in range(int(values["years"])):
-        cash_flow = _number(cash_flow * (1 + growth), "projected free cash flow")
+    rates = [growth] * int(values["years"])
+    if fade_years:
+        for step in range(1, fade_years + 1):
+            rates.append(growth + (values["terminal_growth"] - growth) * step / fade_years)
+    for rate in rates:
+        cash_flow = _number(cash_flow * (1 + rate), "projected free cash flow")
         discount = _number(discount * (1 + values["discount_rate"]), "discount factor")
         cash_flows.append(_number(cash_flow / discount, "discounted free cash flow"))
     terminal = _number(cash_flow * (1 + values["terminal_growth"]) /
@@ -240,7 +248,7 @@ def _dcf(values, growth):
     return enterprise, discounted_terminal
 
 
-def _calculate(kind, values, peers=None, segments=None, projection=None):
+def _calculate(kind, values, peers=None, segments=None, projection=None, fade_years=0):
     _ranges(kind, values)
     if kind == "operating_bridge":
         base_profit = values["base_revenue"] * values["base_margin"]
@@ -260,7 +268,7 @@ def _calculate(kind, values, peers=None, segments=None, projection=None):
                values["depreciation"] - values["capex"] - values["change_working_capital"])
         return {"free_cash_flow": _output(fcf, "currency")}
     if kind == "dcf":
-        enterprise, terminal = _dcf(values, values["growth"])
+        enterprise, terminal = _dcf(values, values["growth"], fade_years)
         equity = enterprise - values["net_debt"]
         return {
             "enterprise_value": _output(enterprise, "currency"),
@@ -344,8 +352,8 @@ def _calculate(kind, values, peers=None, segments=None, projection=None):
     if target <= 0:
         raise ValueError("target enterprise value must be positive")
     low, high = values["growth_low"], values["growth_high"]
-    low_ev, _ = _dcf(values, low)
-    high_ev, _ = _dcf(values, high)
+    low_ev, _ = _dcf(values, low, fade_years)
+    high_ev, _ = _dcf(values, high, fade_years)
     if not low_ev <= target <= high_ev:
         raise ValueError("no solution: growth bounds do not bracket target enterprise value")
     # Retain the best representable result, including an exact endpoint solution.
@@ -357,7 +365,7 @@ def _calculate(kind, values, peers=None, segments=None, projection=None):
         midpoint = low + (high - low) / 2
         if midpoint == low or midpoint == high:
             break
-        enterprise, _ = _dcf(values, midpoint)
+        enterprise, _ = _dcf(values, midpoint, fade_years)
         if abs(enterprise - target) < abs(solved - target):
             growth, solved = midpoint, enterprise
         if enterprise < target:
@@ -366,7 +374,7 @@ def _calculate(kind, values, peers=None, segments=None, projection=None):
             high = midpoint
     if abs(solved - target) > tolerance:
         raise ValueError("no numerically reliable solution within growth bounds")
-    solved, _ = _dcf(values, growth)
+    solved, _ = _dcf(values, growth, fade_years)
     return {
         "implied_growth": _output(growth, "ratio"),
         "target_enterprise_value": _output(target, "currency"),
@@ -381,10 +389,15 @@ def compute_model(spec):
     Raises ValueError for malformed specs, invalid ranges, overflow, or an
     unbracketed reverse valuation. Does not mutate the supplied spec.
     """
-    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers", "segments", "projection", "tornado"), "spec")
+    _fields(spec, ("kind", "inputs"), ("sensitivity", "peers", "segments", "projection", "tornado", "fade_years"), "spec")
     kind = spec["kind"]
     if not isinstance(kind, str) or kind not in MODEL_UNITS:
         raise ValueError("unknown model kind")
+    fade_years = spec.get("fade_years", 0)
+    if type(fade_years) is not int or not 0 <= fade_years <= 20:
+        raise ValueError("fade_years must be an integer between 0 and 20")
+    if fade_years and kind not in ("dcf", "reverse_dcf"):
+        raise ValueError("fade_years is only supported by dcf and reverse_dcf")
     if kind == "relative_valuation":
         peers = _peer_rows(spec)
     elif "peers" in spec:
@@ -459,14 +472,14 @@ def compute_model(spec):
             if low == high:
                 raise ValueError("tornado " + name + " requires two different values")
     try:
-        outputs = _calculate(kind, values, peers, segments, projection)
+        outputs = _calculate(kind, values, peers, segments, projection, fade_years)
         sensitivity = []
         for row in scenarios:
             name = row["input"]
             for value in row["values"]:
                 changed = dict(values, **{name: value})
                 sensitivity.append({"input": name, "value": value, "unit": units[name],
-                                    "outputs": _calculate(kind, changed, peers, segments)})
+                                    "outputs": _calculate(kind, changed, peers, segments, fade_years=fade_years)})
         if tornado is not None:
             target = tornado["output"]
             if target not in outputs:
@@ -475,8 +488,8 @@ def compute_model(spec):
                 raise ValueError("tornado.output must name a scalar output")
             for row in tornado["inputs"]:
                 name, low, high = row["input"], row["low"], row["high"]
-                low_outputs = _calculate(kind, dict(values, **{name: low}), peers, segments)
-                high_outputs = _calculate(kind, dict(values, **{name: high}), peers, segments)
+                low_outputs = _calculate(kind, dict(values, **{name: low}), peers, segments, fade_years=fade_years)
+                high_outputs = _calculate(kind, dict(values, **{name: high}), peers, segments, fade_years=fade_years)
                 if target not in low_outputs or target not in high_outputs:
                     raise ValueError("tornado.output is not defined at the swept values of " + name)
                 low_value, high_value = low_outputs[target]["value"], high_outputs[target]["value"]
