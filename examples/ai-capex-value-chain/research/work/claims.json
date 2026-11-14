@@ -382,6 +382,244 @@
         "NVDA-NI-26",
         "I-JUDGE"
       ]
+    },
+    {
+      "id": "PX-MSFT",
+      "text": "MSFT 2026-11-13 收盘 523.88 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "NI-MSFT-26",
+      "text": "MSFT FY2026 净利润 133749 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "SH-MSFT-26",
+      "text": "MSFT FY2026 稀释加权股数 7453 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-MSFT"
+        }
+      ]
+    },
+    {
+      "id": "PX-GOOGL",
+      "text": "GOOGL 2026-11-13 收盘 295.77 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "NI-GOOGL-25",
+      "text": "GOOGL FY2025 净利润 132170 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "SH-GOOGL-25",
+      "text": "GOOGL FY2025 稀释加权股数 12230 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-GOOGL"
+        }
+      ]
+    },
+    {
+      "id": "PX-AMZN",
+      "text": "AMZN 2026-11-13 收盘 266.66 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "NI-AMZN-25",
+      "text": "AMZN FY2025 净利润 77670 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "SH-AMZN-25",
+      "text": "AMZN FY2025 稀释加权股数 10827 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMZN"
+        }
+      ]
+    },
+    {
+      "id": "PX-NVDA",
+      "text": "NVDA 2026-11-13 收盘 162.85 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NI-NVDA-26",
+      "text": "NVDA FY2026 净利润 120067 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "SH-NVDA-26",
+      "text": "NVDA FY2026 稀释加权股数 24514 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "PX-AMAT",
+      "text": "AMAT 2026-11-13 收盘 370.5 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "NI-AMAT-25",
+      "text": "AMAT FY2025 净利润 6998 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "SH-AMAT-25",
+      "text": "AMAT FY2025 稀释加权股数 808 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "PX-LRCX",
+      "text": "LRCX 2026-11-13 收盘 225.92 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "NI-LRCX-26",
+      "text": "LRCX FY2026 净利润 7265 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "SH-LRCX-26",
+      "text": "LRCX FY2026 稀释加权股数 1261.1 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "PX-KLAC",
+      "text": "KLAC 2026-11-13 收盘 152.32 美元/股",
+      "type": "price",
+      "price_kind": "close",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-PX-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "NI-KLAC-26",
+      "text": "KLAC FY2026 净利润 4830 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "SH-KLAC-26",
+      "text": "KLAC FY2026 稀释加权股数 1319.6 百万股",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
     }
   ]
 }

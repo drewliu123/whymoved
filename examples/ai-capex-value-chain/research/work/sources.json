@@ -175,6 +175,237 @@
         "purpose": "算力供应商",
         "priority": "decisive"
       }
+    },
+    {
+      "id": "S-PX-MSFT",
+      "url": "https://www.nasdaq.com/market-activity/stocks/msft/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $523.88",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-msft",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "MSFT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 523.88,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "计算 trailing P/E",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-PX-GOOGL",
+      "url": "https://www.nasdaq.com/market-activity/stocks/googl/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $295.77",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-googl",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "GOOGL",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 295.77,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "计算 trailing P/E",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-PX-AMZN",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amzn/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $266.66",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-amzn",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "AMZN",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 266.66,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "计算 trailing P/E",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-PX-NVDA",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nvda/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $162.85",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-nvda",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "NVDA",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 162.85,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "计算 trailing P/E",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-PX-AMAT",
+      "url": "https://www.nasdaq.com/market-activity/stocks/amat/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $370.5",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-amat",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "AMAT",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 370.5,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "计算 trailing P/E",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-PX-LRCX",
+      "url": "https://www.nasdaq.com/market-activity/stocks/lrcx/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $225.92",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-lrcx",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "LRCX",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 225.92,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "计算 trailing P/E",
+        "priority": "decisive"
+      }
+    },
+    {
+      "id": "S-PX-KLAC",
+      "url": "https://www.nasdaq.com/market-activity/stocks/klac/historical",
+      "publisher": "Nasdaq",
+      "tier": "T0",
+      "published_at": "2026-11-13",
+      "retrieved_at": "2026-11-13T21:30:00Z",
+      "quote": "11/13/2026 close $152.32",
+      "locator": "Nasdaq historical quotes, 2026-11-01 至 2026-11-14，取 11/13 收盘",
+      "origin_id": "nasdaq-klac",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "price"
+      ],
+      "evidence_kind": "market_quote",
+      "access_status": "ok",
+      "market_quote": {
+        "quoted_at": "2026-11-13T16:00:00-05:00",
+        "instrument": "KLAC",
+        "outcome": "closing price",
+        "direction": "up",
+        "value": 152.32,
+        "unit": "USD/share",
+        "quote_type": "close"
+      },
+      "selection": {
+        "selected": true,
+        "reason": "交易所收盘价",
+        "relevance": "direct",
+        "purpose": "计算 trailing P/E",
+        "priority": "decisive"
+      }
     }
   ]
 }
