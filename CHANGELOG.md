@@ -4,6 +4,12 @@
 
 本页记录源码与研究协议演进。版本号不代表已部署到用户客户端，也不代表研究准确率或投资收益。
 
+## 1.0.25 · 2026 研究总览：五个共同机制
+
+- 新增 [docs/research-synthesis-2026.md](docs/research-synthesis-2026.md)：把 19 个示例归纳为五个机制——资本开支吃现金流、收入企稳≠利润修复、现金流质量分化、估值与增长错配、事件效应不稳定。
+- 每个判断都链接回示例；同时写明边界：历史数据、财年错位、无 forward、部分数据不可得。
+- README 与能力索引加入入口；测试 580 个。
+
 ## 1.0.24 · 数据源可达性表；更新 AMAT 8-K 状态
 
 - 新增 [docs/data-sources.md](docs/data-sources.md)：实际记录 SEC companyfacts、SEC Archives、Microsoft IR、Nasdaq、FRED 等源的可达性（403 与可用项）。
