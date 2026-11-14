@@ -134,6 +134,61 @@
       "sources": [],
       "text": "这里的FCF是财报CFO减现金PPE支出的透明算术口径，不等于项目固定模型的FCFF，不用于DCF；全公司现金PPE支出不能全部归为AI专属投入，这些数字也不能推出AI ROI。",
       "type": "inference"
+    },
+    {
+      "id": "C11",
+      "text": "MSFT FY2026 revenue 331839 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "sources": [
+        {
+          "source_id": "S5"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "MSFT FY2026 net_income 133749 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "sources": [
+        {
+          "source_id": "S5"
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "MSFT FY2026 cfo 182935 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "sources": [
+        {
+          "source_id": "S5"
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "text": "MSFT FY2026 cash capex 115948 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "sources": [
+        {
+          "source_id": "S5"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "MSFT FY2026 depreciation 34300 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-06T14:23:37.833839Z",
+      "sources": [
+        {
+          "source_id": "S5"
+        }
+      ]
     }
   ],
   "schema_version": 2

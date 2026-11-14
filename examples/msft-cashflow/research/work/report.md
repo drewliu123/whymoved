@@ -1,4 +1,4 @@
-# 微软FY2025：营收增长，现金资本开支使FCF小幅下降
+# 微软 FY2026：FCF 连续第二年下降，capex 强度 34\.9%
 
 微软FY2025营收增长，为什么按CFO减现金资本开支定义的自由现金流反而下降？
 
@@ -6,67 +6,83 @@
 
 ## 执行摘要
 
-结论：FY2025 收入 \+14\.9%、经营现金流 \+14\.9%，但现金资本开支 \+44\.8%，自由现金流从 74,071 降到 71,611 百万美元。
+结论：FY2026 收入 331,839（\+17\.8%）、CFO 182,935（\+34\.4%），但 capex 115,948（\+79\.6%），FCF 66,987，连续第二年下降、两年累计 −9\.6%。
 
-最反直觉：FCF 下降全部来自资本开支增量超过 CFO 增量（20,074 vs 17,614）；经营现金流本身在增长，不是经营恶化。
+最反直觉：FCF 下降全部来自资本开支：capex/收入从 18\.1% 升到 34\.9%，而经营现金流是净利润的 1\.37 倍，经营没有恶化。
 
-接下来验证：看 FY2026 资本开支增速是否回落到收入增速以下；若继续更高，FCF 仍会承压。
+接下来验证：看 FY2027 capex 增速能否降到收入增速以下、capex/收入能否回到 30% 以下；否则 FCF 仍会下降。
 
 ## 判断
 
-FY2025营收增长，并没有带来同方向的CFO减现金capex自由现金流：经营现金流增加17\.614十亿美元，但现金资本开支增加20\.074十亿美元，净抵消后FCF减少2\.460十亿美元。下降来自资本现金需求增量更大，CFO总额本身并未下降。 [C6] [C7]
+FY2026 收入增长 17\.8%、经营现金流增长 34\.4%，但资本开支增长 79\.6% 到 115,948 百万美元；自由现金流 66,987，连续第二年下降、两年累计 −9\.6%。capex/收入从 18\.1% 升到 34\.9%，是 FCF 压力的全部来源；经营现金流仍是净利润的 1\.37 倍。结论：问题在投资强度，不在经营现金流；FY2027 看 capex 是否见顶。 [C11] [C12] [C13] [C14] [C15]
 
-## 营收向上，CFO\-capex自由现金流向下
+## FCF 连续第二年下降，两年累计 −9\.6%
 
-FY2024至FY2025收入从245\.122增至281\.724十亿美元，增长14\.93%；FCF从74\.071降至71\.611十亿美元，下降3\.32%。这里的FCF定义为经营活动现金流减现金PPE增加支出。 [C1] [C6]
+FCF 74\.071（FY2024）→71\.611（FY2025）→66\.987（FY2026）十亿美元；FY2026 −6\.5%。 [C1] [C5] [C6] [C9] [C13] [C14] [C11]
 
-为什么重要：收入增长与扣除资本支出后的现金留存并非同一个指标。
+为什么重要：不是单年波动，而是连续两年下降；投资强度没有见顶。
 
-## 现金capex增量超过CFO增量2\.460十亿美元
+## FCF 压力全部来自 capex
 
-CFO从118\.548增至136\.162十亿美元，现金capex从44\.477增至64\.551十亿美元。FCF变化桥为\+17\.614−20\.074=−2\.460十亿美元，支持资本现金需求抵消经营现金增量这一解释。 [C2] [C3] [C7]
+capex 44\.477（FY2024）→115\.948（FY2026），2\.61 倍；capex/收入 18\.1%→34\.9%；CFO 同期 \+54\.3%。 [C5] [C6] [C1] [C13] [C14] [C11]
 
-为什么重要：明确FCF减少发生在哪个算术环节，避免误说经营现金流总额下滑。
+为什么重要：经营现金流在增长，FCF 下降由投资强度解释；把它当经营恶化会误判。
 
-## 总投资净流出下降，不代表现金capex减少
+## 经营现金流仍强：CFO 是净利润 1\.37 倍
 
-投资净流出由96\.970降至72\.599十亿美元；其中收购公司（扣除取得现金及剥离）、购买无形及其他资产的流出由69\.132降至5\.978十亿美元，减少63\.154十亿美元。现金PPE支出却上升；其他投资项目也影响投资净额。 [C3] [C4] [C5] [C8]
+FY2026 CFO 182\.935、净利润 133\.749 十亿美元；CFO/净利润 1\.37，利润有现金支撑。 [C12] [C13]
 
-为什么重要：投资现金流净额混合多种项目，不能替代cash capex。
+为什么重要：投资的钱来自经营现金流，不是举债或透支；这是主动扩张而非被动失血。
+
+## capex 是扩张，不是维护不足
+
+FY2026 capex 115\.948 vs 折旧 34\.300 十亿美元，capex/折旧 3\.38 倍。 [C14] [C15]
+
+为什么重要：投入远超维护需求，指向产能/AI 基础设施扩张；若收入兑现，这是护城河。
 
 ## 这意味着什么
 
-### FCF 下降是投资强度问题
+### FCF 压力是投资强度，不是经营恶化
 
-经营现金流在增长，FCF 下降来自 capex 增量更大；把它当经营恶化会误判。（FY2026） [C2] [C3] [C7]
+CFO 增长 34\.4%，FCF 下降来自 capex \+79\.6%；看 FCF 必须同时看 capex/收入。（FY2027） [C13] [C14] [C11]
 
-### 资本开支增速是下一年的关键变量
+### capex/收入是关键跟踪指标
 
-capex \+44\.8% 远高于收入 \+14\.9%；若 FY2026 capex 增速回落，FCF 会修复。（FY2026） [C1] [C3] [C7]
+34\.9% 是历史高位；回到 30% 以下，FCF 才会修复。（FY2027） [C11] [C14]
 
-### 看 FCF 要同时看 CFO 与 capex
+### 经营现金流支撑扩张
 
-只报 FCF 数字会掩盖两侧变化；CFO 与 capex 的增速差才是驱动。（FY2026） [C6] [C7]
+CFO 是净利润 1\.37 倍，投资来自经营现金；不是靠举债维持 capex。（FY2027） [C12] [C13]
 
 ## 情景与触发条件
 
-### 资本开支回落
+### capex 见顶
 
-FY2026 capex 增速降到收入增速以下，FCF 修复。
+FY2027 capex 增速降到收入增速以下，FCF 修复。
 
-触发：capex 增速 &lt; 收入增速；FCF &gt; 71,611；CFO 增速 &gt;10%
+触发：capex 增速 &lt; 收入增速；capex/收入 &lt;30%；FCF &gt;66,987
 
 含义：FCF 压力缓解。
 
 ### 投资强度维持
 
-capex 增速继续高于收入，FCF 继续下降。
+capex/收入维持 30% 以上，FCF 继续下降。
 
-触发：capex 增速 &gt; 收入增速；FCF &lt; 71,611；CFO 增速 &lt;15%
+触发：capex/收入 &gt;30%；FCF &lt;66,987；CFO 增速 &lt;20%
 
-含义：FCF 压力延续，估值需重估。
+含义：FCF 压力延续。
+
+### 收入加速
+
+收入增速超过 capex 增速，capex 强度被动下降。
+
+触发：收入增速 &gt;20%；capex 增速 &lt;15%；FCF 企稳
+
+含义：扩张被收入消化。
 
 ## 分析判断
+
+FY2025营收增长，并没有带来同方向的CFO减现金capex自由现金流：经营现金流增加17\.614十亿美元，但现金资本开支增加20\.074十亿美元，净抵消后FCF减少2\.460十亿美元。下降来自资本现金需求增量更大，CFO总额本身并未下降。 [C6] [C7] [C8]
 
 传导关系：收入 → 经营活动现金流CFO → 现金PPE资本开支 → CFO减现金capex自由现金流
 
@@ -230,29 +246,29 @@ capex 增速继续高于收入，FCF 继续下降。
 
 结果：18709 百万美元
 
-### 同口径年度比较（金额：十亿美元；流出取正值）
+### 同口径年度比较（金额：十亿美元）
 
-| 指标 | FY2024 | FY2025 | 变化 |
+| 指标 | FY2024（十亿美元） | FY2025（十亿美元） | FY2026（十亿美元） |
 | --- | --- | --- | --- |
-| 收入 | 245\.122 | 281\.724 | 36\.602 |
-| CFO | 118\.548 | 136\.162 | 17\.614 |
-| 现金PPE资本开支 | 44\.477 | 64\.551 | 20\.074 |
-| CFO\-capex FCF | 74\.071 | 71\.611 | \-2\.46 |
-| 投资净流出 | 96\.97 | 72\.599 | \-24\.371 |
-| 收购及无形等现金支出 | 69\.132 | 5\.978 | \-63\.154 |
+| 收入 | 245\.122 | 281\.724 | 331\.839 |
+| 经营现金流 | 118\.548 | 136\.162 | 182\.935 |
+| 现金资本开支 | 44\.477 | 64\.551 | 115\.948 |
+| 自由现金流 | 74\.071 | 71\.611 | 66\.987 |
+| capex/收入 | 18\.1 | 22\.9 | 34\.9 |
 
-[C1] [C2] [C3] [C4] [C5] [C6] [C7] [C8]
+[C1] [C5] [C6] [C9] [C11] [C12] [C13] [C14]
 
-截至6月30日完整财年，微软合并口径。原始报表单位百万美元，表内除以1000；cash capex为现金PPE增加支出，不含另行非现金取得资产。
+截至 6 月 30 日完整财年，微软合并口径；FCF=CFO−现金资本开支；由披露值计算并四舍五入。
 
-### 经营现金流、资本开支与自由现金流（百万美元）
+### 经营现金流、资本开支与自由现金流（十亿美元）
 
-| 财年 | 经营现金流（百万美元） | 现金资本开支（百万美元） | 自由现金流（百万美元） |
+| 财年 | 经营现金流（十亿美元） | 现金资本开支（十亿美元） | 自由现金流（十亿美元） |
 | --- | --- | --- | --- |
-| FY2024 | 118548 | 44477 | 74071 |
-| FY2025 | 136162 | 64551 | 71611 |
+| FY2024 | 118\.548 | 44\.477 | 74\.071 |
+| FY2025 | 136\.162 | 64\.551 | 71\.611 |
+| FY2026 | 182\.935 | 115\.948 | 66\.987 |
 
-[C2] [C3] [C6]
+[C5] [C6] [C13] [C14] [C1] [C11]
 
 同一单位；FCF=CFO−现金资本开支。
 
@@ -268,19 +284,19 @@ CFO同比上升，故H2无法解释此次FCF减少。这只核对总额，不能
 
 继续研究时，取后续完整财年的同口径CFO、现金资本开支及现金转换率，重算变化桥并核查解释是否延续；本例仅解释FY2024至FY2025，不代表最新经营结论。 [C9]
 
-## 其他限制
+## 限制与边界
 
-该FCF是CFO减现金PPE支出的财报口径，不作DCF所需FCFF；全公司PPE支出不能全称AI专属投入，也不推导AI ROI。 [C10]
-
-本例于2026\-11回看FY2024至FY2025，仅解释该段历史变化，不代表最新经营结论；后续财年不被表述为尚未发生的未来披露。 [C1] [C2] [C3]
+FY2026 数据来自 SEC XBRL；现金资本开支不含非现金取得资产，与公司口径可能不同。 [C14]
 
 ## 附录：相对原文与旧判断的增量
 
-营收向上，CFO\-capex自由现金流向下；基线：原年报分别列示收入、CFO和PPE现金支出。；增加的判断：将三项连接为同口径FCF及同比比较。 [C1] [C6]
+FCF 连续第二年下降，两年累计 −9\.6%；基线：FY2025 FCF 小幅下降；增加的判断：FY2026 再降，累计 −9\.6% [C1] [C5] [C6] [C9] [C13] [C14] [C11]
 
-现金capex增量超过CFO增量2\.460十亿美元；基线：FY2024同口径CFO与现金capex。；增加的判断：分解两项变化并比较净贡献。 [C2] [C3] [C7]
+FCF 压力全部来自 capex；基线：只看 FCF 下降；增加的判断：capex 强度翻倍 [C5] [C6] [C1] [C13] [C14] [C11]
 
-总投资净流出下降，不代表现金capex减少；基线：年报投资活动现金流净额与明细行。；增加的判断：区分投资净流出减少与PPE现金需求增加。 [C3] [C4] [C5] [C8]
+经营现金流仍强：CFO 是净利润 1\.37 倍；基线：只看 FCF 为负增长；增加的判断：CFO/净利润 1\.37 [C12] [C13]
+
+capex 是扩张，不是维护不足；基线：capex 只是成本；增加的判断：capex/折旧 3\.38x [C14] [C15]
 
 ## 附录：分析底稿与可复算模型
 
@@ -356,6 +372,26 @@ CFO同比上升，故H2无法解释此次FCF减少。这只核对总额，不能
 
 依据：C2, C3；来源：
 
+\[C11\] MSFT FY2026 revenue 331839 百万美元（fact；2026\-11\-06T14:23:37\.833839Z）
+
+依据：；来源：S5
+
+\[C12\] MSFT FY2026 net\_income 133749 百万美元（fact；2026\-11\-06T14:23:37\.833839Z）
+
+依据：；来源：S5
+
+\[C13\] MSFT FY2026 cfo 182935 百万美元（fact；2026\-11\-06T14:23:37\.833839Z）
+
+依据：；来源：S5
+
+\[C14\] MSFT FY2026 cash capex 115948 百万美元（fact；2026\-11\-06T14:23:37\.833839Z）
+
+依据：；来源：S5
+
+\[C15\] MSFT FY2026 depreciation 34300 百万美元（fact；2026\-11\-06T14:23:37\.833839Z）
+
+依据：；来源：S5
+
 S1 · Microsoft · T0 · published\_at：unknown · retrieved\_at：2026\-11\-06T14:14:24\.369Z · quote：INCOME STATEMENTS<br>\(In millions, except per share amounts\)<br>Year Ended June 30,	2025		2024		2023<br>Revenue:					<br>Product	<br>$<br>63,946		<br>$<br>64,773		<br>$<br>64,699<br>Service and other	217,778		180,349		147,216<br>Total revenue	281,724		245,122		211,915 · locator：官方年报DOM文本 lines 1133\-1145; table 15 \(official\-tables\.json index\) · origin\_id：microsoft\-fy2025\-annual\-report · origin\_basis：同一Microsoft FY2025官方年报，片段共享一个原始出处，不计独立来源。 · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "FY24/FY25收入", "reason": "直接提供同一财年、单位与合并范围的原始行及表头。", "relevance": "direct", "selected": true\}
 
 [https://www\.microsoft\.com/investor/reports/ar25/index\.html](https://www.microsoft.com/investor/reports/ar25/index.html)
@@ -371,5 +407,9 @@ S3 · Microsoft · T0 · published\_at：unknown · retrieved\_at：2026\-11\-06
 S4 · Microsoft · T0 · published\_at：unknown · retrieved\_at：2026\-11\-06T14:14:24\.369Z · quote：CASH FLOWS STATEMENTS<br>\(In millions\)<br>Year Ended June 30,	2025		2024		2023<br>Investing					<br>Additions to property and equipment	\(64,551\)		\(44,477\)		\(28,107\)<br>Acquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets	\(5,978\)		\(69,132\)		\(1,670\)<br>Purchases of investments	\(29,775\)		\(17,732\)		\(37,651\)<br>Maturities of investments	16,079		24,775		33,510<br>Sales of investments	9,309		10,894		14,354<br>Other, net	2,317		\(1,298\)		\(3,116\)<br>Net cash used in investing	\(72,599\)		\(96,970\)		\(22,680\) · locator：官方年报DOM文本 lines 1309\-1316; table 18 \(official\-tables\.json index\) · origin\_id：microsoft\-fy2025\-annual\-report · origin\_basis：同一Microsoft FY2025官方年报，片段共享一个原始出处，不计独立来源。 · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "现金PPE支出、收购及无形等支出与投资净流出", "reason": "直接提供同一财年、单位与合并范围的原始行及表头。", "relevance": "direct", "selected": true\}
 
 [https://www\.microsoft\.com/investor/reports/ar25/index\.html](https://www.microsoft.com/investor/reports/ar25/index.html)
+
+S5 · U\.S\. SEC · T0 · published\_at：unknown · retrieved\_at：2026\-11\-05T00:00:00Z · quote：10\-K company facts: Revenues 331,839; NetIncomeLoss 133,749; NetCashProvidedByUsedInOperatingActivities 182,935; PaymentsToAcquirePropertyPlantAndEquipment 115,948; Depreciation 34,300 \(FY2026\) · locator：data\.sec\.gov companyfacts CIK0000789019（Microsoft），FY2026 10\-K 年度值 · origin\_id：sec\-msft\-fy26 · origin\_basis：Direct official publication · evidence\_kind：document · access\_status：ok · supports：\["fact"\] · selection：\{"priority": "decisive", "purpose": "FY2026 现金流与资本开支", "reason": "官方 XBRL 年度事实", "relevance": "direct", "selected": true\}
+
+[https://data\.sec\.gov/api/xbrl/companyfacts/CIK0000789019\.json](https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json)
 
 来源状态：\{"community": \{"reason": "本题为财报现金流算术归因，社区材料不增加同口径检验信息。", "status": "not\_run"\}, "official": \{"reason": "Lead通过ego\-browser读取官方年报；本轮已读取保存全文、表格与真实下载元数据。", "status": "ok"\}\}

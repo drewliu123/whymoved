@@ -128,6 +128,30 @@
       ],
       "tier": "T0",
       "url": "https://www.microsoft.com/investor/reports/ar25/index.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "publisher": "U.S. SEC",
+      "tier": "T0",
+      "published_at": "unknown",
+      "retrieved_at": "2026-11-05T00:00:00Z",
+      "quote": "10-K company facts: Revenues 331,839; NetIncomeLoss 133,749; NetCashProvidedByUsedInOperatingActivities 182,935; PaymentsToAcquirePropertyPlantAndEquipment 115,948; Depreciation 34,300 (FY2026)",
+      "locator": "data.sec.gov companyfacts CIK0000789019（Microsoft），FY2026 10-K 年度值",
+      "origin_id": "sec-msft-fy26",
+      "origin_basis": "Direct official publication",
+      "supports": [
+        "fact"
+      ],
+      "evidence_kind": "document",
+      "access_status": "ok",
+      "selection": {
+        "selected": true,
+        "reason": "官方 XBRL 年度事实",
+        "relevance": "direct",
+        "purpose": "FY2026 现金流与资本开支",
+        "priority": "decisive"
+      }
     }
   ],
   "historical": false,
