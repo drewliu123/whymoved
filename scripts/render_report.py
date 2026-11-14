@@ -302,11 +302,14 @@ def validate_report(report, ledger, sources=None):
         errors.append("answer requires text and claim_ids")
     else:
         refs(answer, "answer")
-    shapes = {"findings": ("title", "text", "why_it_matters"), "alternatives": ("title", "text"),
+    shapes = {"findings": ("title", "text", "why_it_matters"), "implications": ("title", "text"),
+              "alternatives": ("title", "text"),
               "watch": ("signal", "meaning"), "limitations": ("text",), "tables": ("title",)}
     table_refs, table_ids = set(), set()
     for field, texts in shapes.items():
         items = report.get(field)
+        if field == "implications" and items is None:
+            continue
         if not isinstance(items, list):
             errors.append(field + " must be a list")
             continue
@@ -318,7 +321,13 @@ def validate_report(report, ledger, sources=None):
             for key in texts:
                 if not _text(item.get(key)):
                     errors.append(path + "." + key + " must be nonempty text")
-            refs(item, path, required=field != "limitations")
+            if field == "implications":
+                if "claim_ids" in item:
+                    refs(item, path, required=False)
+            else:
+                refs(item, path, required=field != "limitations")
+            if field == "implications" and "horizon" in item and not _text(item.get("horizon")):
+                errors.append(path + ".horizon must be nonempty text when present")
             if field == "findings":
                 inc = item.get("increment")
                 if not isinstance(inc, dict) or not isinstance(inc.get("kind"), str) or inc.get("kind") not in INCREMENTS or not all(_text(inc.get(k)) for k in ("baseline", "detail")):
@@ -685,6 +694,12 @@ def _blocks(report, ledger, sources):
             if table is not None:
                 yield ("table", table)
                 referenced_tables.add(table_id)
+    if report.get("implications"):
+        yield ("h2", "这意味着什么")
+        for item in report["implications"]:
+            suffix = "（" + item["horizon"] + "）" if item.get("horizon") else ""
+            yield ("h3", item["title"])
+            yield ("p", item["text"] + suffix, item.get("claim_ids", []))
     if report.get("analysis"):
         yield from _analysis_blocks(report["analysis"], answer_text=report["answer"]["text"])
     if report.get("valuation_summary"):

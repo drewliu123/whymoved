@@ -491,6 +491,22 @@ class QualityReportTests(unittest.TestCase):
 
 
 class EventStudyReportTests(unittest.TestCase):
+    def test_implications_section(self):
+        report, ledger, sources = documents()
+        report["implications"] = [
+            {"title": "这对判断意味着什么", "text": "资本开支不是均匀的行业 beta。", "claim_ids": ["C1"]},
+            {"title": "下一步看什么", "text": "看订单与验收节奏。", "horizon": "未来 2-4 个季度"}]
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        html = render_report.render_html(report, ledger, sources)
+        for token in ("这意味着什么", "这对判断意味着什么", "未来 2-4 个季度"):
+            self.assertIn(token, html)
+        markdown = render_report.render_markdown(report, ledger, sources).replace("\\", "")
+        self.assertIn("这意味着什么", markdown)
+        bad = documents()
+        bad[0]["implications"] = [{"title": "x", "text": "", "claim_ids": ["C1"]}]
+        self.assertTrue(any(".text must be nonempty" in error
+                            for error in render_report.validate_report(*bad)))
+
     def test_beta_adjusted_footnote(self):
         report, ledger, sources = documents()
         prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},

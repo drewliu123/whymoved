@@ -326,6 +326,16 @@ def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
     findings = _findings(report, max_findings)
     if findings:
         lines.extend(["", "## 关键发现", ""] + ["%d. %s" % (index, row) for index, row in enumerate(findings, 1)])
+    implications = report.get("implications")
+    if isinstance(implications, list) and implications:
+        lines.extend(["", "## 这意味着什么", ""])
+        for item in implications[:3]:
+            if not isinstance(item, dict) or not isinstance(item.get("title"), str) or not item["title"].strip() \
+                    or not isinstance(item.get("text"), str) or not item["text"].strip():
+                continue
+            horizon = item.get("horizon")
+            suffix = "（%s）" % horizon if isinstance(horizon, str) and horizon.strip() else ""
+            lines.append("- **%s**：%s%s" % (_escape(item["title"]), _escape(item["text"]), _escape(suffix)))
     lines.extend(_projection(report))
     valuation = _valuation(report)
     if valuation:

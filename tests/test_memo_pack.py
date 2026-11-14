@@ -89,6 +89,13 @@ class MemoContentTests(unittest.TestCase):
 
 
 class MemoLinkedSectionsTests(unittest.TestCase):
+    def test_implications_in_memo(self):
+        report, ledger, sources = documents()
+        report["implications"] = [{"title": "含义一", "text": "这对投资判断意味着什么。", "claim_ids": ["C1"]}]
+        text = memo((report, ledger, sources))
+        self.assertIn("## 这意味着什么", text)
+        self.assertIn("含义一", text)
+
     def test_beta_adjusted_memo_line(self):
         report, ledger, sources = documents()
         prices = [{"date": "2024-01-30", "close": 100}, {"date": "2024-01-31", "close": 110},
