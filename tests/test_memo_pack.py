@@ -89,6 +89,13 @@ class MemoContentTests(unittest.TestCase):
 
 
 class MemoLinkedSectionsTests(unittest.TestCase):
+    def test_executive_summary_in_memo(self):
+        report, ledger, sources = documents()
+        report["summary"] = {"conclusion": "结论一句", "surprise": "反直觉一句", "next_check": "验证一句"}
+        text = memo((report, ledger, sources))
+        self.assertIn("## 执行摘要", text)
+        self.assertLess(text.index("## 执行摘要"), text.index("## 判断"))
+
     def test_implications_in_memo(self):
         report, ledger, sources = documents()
         report["implications"] = [{"title": "含义一", "text": "这对投资判断意味着什么。", "claim_ids": ["C1"]}]

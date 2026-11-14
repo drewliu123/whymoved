@@ -491,6 +491,19 @@ class QualityReportTests(unittest.TestCase):
 
 
 class EventStudyReportTests(unittest.TestCase):
+    def test_executive_summary(self):
+        report, ledger, sources = documents()
+        report["summary"] = {"conclusion": "结论一句", "surprise": "反直觉一句", "next_check": "验证一句"}
+        self.assertEqual(render_report.validate_report(report, ledger, sources), [])
+        html = render_report.render_html(report, ledger, sources)
+        self.assertIn("执行摘要", html)
+        self.assertIn("最反直觉：反直觉一句", html)
+        self.assertLess(html.index("执行摘要"), html.index("<h2>判断</h2>"))
+        bad = documents()
+        bad[0]["summary"] = {"conclusion": "x", "surprise": "y"}
+        self.assertTrue(any("summary must contain exactly" in error
+                            for error in render_report.validate_report(*bad)))
+
     def test_implications_section(self):
         report, ledger, sources = documents()
         report["implications"] = [

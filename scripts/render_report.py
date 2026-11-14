@@ -240,6 +240,12 @@ def validate_report(report, ledger, sources=None):
         errors.append("report.type is invalid")
     if not _date(report.get("as_of")):
         errors.append("report.as_of must be an ISO date/datetime")
+    summary = report.get("summary")
+    if summary is not None:
+        if not isinstance(summary, dict) or set(summary) != {"conclusion", "surprise", "next_check"}:
+            errors.append("summary must contain exactly conclusion, surprise and next_check")
+        elif any(not _text(summary.get(key)) for key in ("conclusion", "surprise", "next_check")):
+            errors.append("summary fields must be nonempty text")
     if not isinstance(ledger, dict):
         return errors + ["ledger must be an object"]
     if sources is None and isinstance(ledger.get("sources"), dict):
@@ -669,6 +675,10 @@ def _blocks(report, ledger, sources):
     legacy = ledger.get("schema_version", 1) == 1
     if legacy:
         yield ("p", "证据模式：旧版 schema 1；本报告未按 schema 2 的来源与证据契约校验。")
+    if report.get("summary"):
+        yield ("h2", "执行摘要")
+        for key, label in (("conclusion", "结论"), ("surprise", "最反直觉"), ("next_check", "接下来验证")):
+            yield ("p", label + "：" + report["summary"][key])
     yield ("h2", "判断")
     yield ("p", report["answer"]["text"], report["answer"]["claim_ids"])
     if report.get("opportunity"):

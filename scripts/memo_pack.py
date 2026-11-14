@@ -322,6 +322,13 @@ def build_memo(report, ledger=None, max_findings=MAX_FINDINGS):
                                                 _date(report.get("as_of")),
                                                 _escape(report.get("type", "")),
                                                 _escape(report.get("task", ""))))
+    summary = report.get("summary")
+    if isinstance(summary, dict) and all(isinstance(summary.get(key), str) and summary[key].strip()
+                                         for key in ("conclusion", "surprise", "next_check")):
+        lines.extend(["", "## 执行摘要", "",
+                      "- **结论**：" + _escape(summary["conclusion"]),
+                      "- **最反直觉**：" + _escape(summary["surprise"]),
+                      "- **接下来验证**：" + _escape(summary["next_check"])])
     lines.extend(["", "## 判断", "", _escape(_clip(answer.get("text", ""), MAX_TEXT * 2))])
     findings = _findings(report, max_findings)
     if findings:
