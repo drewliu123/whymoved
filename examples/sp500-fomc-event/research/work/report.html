@@ -7,12 +7,13 @@
 <p>FOMC 决议日后 3 个交易日，标普 500 有稳定方向吗？</p>
 <p>研究截点 2026-11-14T00:00:00Z · asset · 参考类事件研究</p>
 <h2>判断</h2>
-<p>2024 年 8 次 FOMC 决议日到后窗终点，S&amp;P 500 有 6 次为正、2 次为负；事件后收益中位约 +1.35%，但 7 月 31 日事件后 3 个观测点下跌约 6.1%，把均值压到约 +0.46%。若算上前窗起点到后窗终点的全程，中位约 +1.6%、均值约 +0.9%。相对纳斯达克，后窗超额中位约 −0.33%（为正仅 25%）、全窗约 −0.53%；但相对道指，后窗超额中位约 +0.37%（为正 75%）、全窗约 +0.17%。若再按 2024 年日收益估计的 beta 调整（S&amp;P 对纳斯达克 0.673、对道指 0.912），纳斯达克后窗超额中位收敛到约 +0.05%（为正 75%），道指约 +0.45%（为正 75%）。三组口径（绝对、简单超额、beta 调整）方向与幅度都不一致，说明结论对基准与 beta 假设敏感，不能声称存在稳定的事件效应。样本只有 8 次、集中在同一个上涨年份，因此不能把「FOMC 后偏涨」当作方向依据。<span class="refs"><a href="#claim-C3">[C3]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C25">[C25]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
+<p>2024 年 8 次 FOMC 决议日到后窗终点，S&amp;P 500 有 6 次为正、2 次为负；事件后收益中位约 +1.35%，但 7 月 31 日事件后 3 个观测点下跌约 6.1%，把均值压到约 +0.46%。若算上前窗起点到后窗终点的全程，中位约 +1.6%、均值约 +0.9%。相对纳斯达克，后窗超额中位约 −0.33%（为正仅 25%）、全窗约 −0.53%；但相对道指，后窗超额中位约 +0.37%（为正 75%）、全窗约 +0.17%。若再按 2024 年日收益估计的 beta 调整（S&amp;P 对纳斯达克 0.673、对道指 0.912），纳斯达克后窗超额中位收敛到约 +0.05%（为正 75%），道指约 +0.45%（为正 75%）。三组口径（绝对、简单超额、beta 调整）方向与幅度都不一致。再把 beta 在 0.5–0.9 之间移动：纳斯达克后窗超额从 +0.42% 变到 −0.24%（符号翻转），道指在 0.7–1.1 之间保持 +0.33% 到 +0.76%。结论对基准与 beta 假设都敏感，不能声称存在稳定的事件效应。样本只有 8 次、集中在同一个上涨年份，因此不能把「FOMC 后偏涨」当作方向依据。<span class="refs"><a href="#claim-C3">[C3]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C25">[C25]</a> <a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
 <p>重要限制：参考类只有 8 次、同一政策周期；绝对收益与简单超额都未做 beta 调整；FRED 序列可能被后续修订。<span class="refs"><a href="#claim-C25">[C25]</a></span></p>
 <p>重要限制：事件定义取声明日，未区分市场是否已提前定价；窗口为观测点个数，不是自然日。<span class="refs"><a href="#claim-C25">[C25]</a></span></p>
 <p>重要限制：超额收益是标的减纳斯达克的简单差，未做 beta、行业或因子调整；基准选择本身会影响结论。<span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-B8">[B8]</a></span></p>
 <p>重要限制：多基准对照显示方向依赖基准（纳斯达克为负、道指为正）；基准选择本身是研究决策，不能只报有利的那个。<span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-D1">[D1]</a></span></p>
 <p>重要限制：beta 由 FRED 的 S&amp;P 500、NASDAQCOM、DJIA 2024 年日收益（n=261）估计：对纳斯达克 0.673（R² 0.917）、对道指 0.912（R² 0.672）；beta 是回归假设，未做行业或风格调整。<span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-D1">[D1]</a></span></p>
+<p>重要限制：beta 敏感性只扫描 0.5–0.9（纳斯达克）与 0.7–1.1（道指）；区间外的符号不再外推，beta 仍为样本内估计。<span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-D1">[D1]</a></span></p>
 <h2>6/8 为正，但尾部很重</h2>
 <p>8 次样本中 6 次事件后为正；7 月 31 日事件后 3 个观测点下跌约 6.1%，把均值压到接近零。<span class="refs"><a href="#claim-C13">[C13]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C21">[C21]</a></span></p>
 <p>为什么重要：只看正样本占比会忽略单次尾部，而尾部正是仓位与风险管理的核心。</p>
@@ -33,6 +34,11 @@
 <p>为什么重要：只报一种口径，等于把基准与 beta 选择藏在结论里；三种口径并列才能说明「效应不稳定」。</p>
 <p>相较基线：绝对收益口径</p>
 <p>研究增量（contradiction）：简单超额口径</p>
+<h2>beta 敏感性：纳斯达克超额跨零</h2>
+<p>beta 0.5 / 0.673 / 0.9 对应纳斯达克后窗超额中位 +0.42% / +0.05% / −0.24%；道指在 0.7–1.1 之间为 +0.76% / +0.45% / +0.33%，始终为正。<span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D8">[D8]</a></span></p>
+<p>为什么重要：beta 是估计值，不是常数；只报一个 beta 的点估计，会把「符号翻转」藏起来。</p>
+<p>相较基线：单一 beta 点估计</p>
+<p>研究增量（new_fact）：beta 区间扫描</p>
 <h2>分析判断</h2>
 <p>样本内多数为正，但尾部、漂移与样本量使「FOMC 后偏涨」不能作为方向依据。<span class="refs"><a href="#claim-I-JUDGE">[I-JUDGE]</a></span></p>
 <p>传导关系：FOMC 声明 → 利率路径预期 → 风险溢价 → 指数收益</p>
@@ -47,6 +53,14 @@
 <tr><td>2024-11-07</td><td>5712.69</td><td>5973.1</td><td>5983.99</td></tr>
 <tr><td>2024-12-18</td><td>6051.09</td><td>5872.16</td><td>5974.07</td></tr>
 </tbody></table><span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C24">[C24]</a></span><p></p></div>
+<div class="table-wrap"><table><caption>beta 敏感性（后窗超额中位）</caption><thead><tr><th scope="col">基准</th><th scope="col">beta</th><th scope="col">后窗超额中位（%）</th><th scope="col">为正比例（%）</th><th scope="col">全窗超额中位（%）</th></tr></thead><tbody>
+<tr><td>NASDAQCOM</td><td>0.5</td><td>0.42</td><td>75.0</td><td>0.43</td></tr>
+<tr><td>NASDAQCOM</td><td>0.673</td><td>0.05</td><td>75.0</td><td>0.02</td></tr>
+<tr><td>NASDAQCOM</td><td>0.9</td><td>-0.24</td><td>37.5</td><td>-0.44</td></tr>
+<tr><td>DJIA</td><td>0.7</td><td>0.76</td><td>75.0</td><td>0.51</td></tr>
+<tr><td>DJIA</td><td>0.912</td><td>0.45</td><td>75.0</td><td>0.27</td></tr>
+<tr><td>DJIA</td><td>1.1</td><td>0.33</td><td>75.0</td><td>0.19</td></tr>
+</tbody></table><span class="refs"><a href="#claim-B1">[B1]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D8">[D8]</a></span><p></p></div>
 <h2>接下来观察什么</h2>
 <h3>下一次 FOMC 后 3 个观测点的 S&amp;P 500 收益</h3>
 <p>追加样本，检验尾部是否重复<span class="refs"><a href="#claim-C25">[C25]</a></span></p>
@@ -61,7 +75,7 @@
 <tr><td>H1</td><td>后窗中位为正且尾部小</td></tr>
 <tr><td>H2</td><td>后窗正负混合或存在主导尾部</td></tr>
 </tbody></table><span class="refs"></span><p></p></div>
-<p>观察结果：绝对收益 +1.35%、简单超额 −0.33%（纳斯达克）/+0.37%（道指）、beta 调整超额 +0.05%/+0.45%；三种口径下方向与幅度均不稳定，支持「无稳定事件效应」，削弱任何单一口径的正漂移结论。<span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-B2">[B2]</a> <a href="#claim-B3">[B3]</a> <a href="#claim-B4">[B4]</a> <a href="#claim-B5">[B5]</a> <a href="#claim-B6">[B6]</a> <a href="#claim-B7">[B7]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D2">[D2]</a> <a href="#claim-D3">[D3]</a> <a href="#claim-D4">[D4]</a> <a href="#claim-D5">[D5]</a> <a href="#claim-D6">[D6]</a> <a href="#claim-D7">[D7]</a> <a href="#claim-D8">[D8]</a></span></p>
+<p>观察结果：绝对 +1.35%；简单超额纳斯达克 −0.33%、道指 +0.37%；beta 调整后纳斯达克 +0.05%、道指 +0.45%；beta 0.5–0.9 扫描使纳斯达克超额跨零（+0.42% 至 −0.24%）。方向对基准与 beta 都不稳定，支持「无稳定事件效应」。<span class="refs"><a href="#claim-C1">[C1]</a> <a href="#claim-C2">[C2]</a> <a href="#claim-C3">[C3]</a> <a href="#claim-C4">[C4]</a> <a href="#claim-C5">[C5]</a> <a href="#claim-C6">[C6]</a> <a href="#claim-C7">[C7]</a> <a href="#claim-C8">[C8]</a> <a href="#claim-C9">[C9]</a> <a href="#claim-C10">[C10]</a> <a href="#claim-C11">[C11]</a> <a href="#claim-C12">[C12]</a> <a href="#claim-C13">[C13]</a> <a href="#claim-C14">[C14]</a> <a href="#claim-C15">[C15]</a> <a href="#claim-C16">[C16]</a> <a href="#claim-C17">[C17]</a> <a href="#claim-C18">[C18]</a> <a href="#claim-C19">[C19]</a> <a href="#claim-C20">[C20]</a> <a href="#claim-C21">[C21]</a> <a href="#claim-C22">[C22]</a> <a href="#claim-C23">[C23]</a> <a href="#claim-C24">[C24]</a> <a href="#claim-B1">[B1]</a> <a href="#claim-B2">[B2]</a> <a href="#claim-B3">[B3]</a> <a href="#claim-B4">[B4]</a> <a href="#claim-B5">[B5]</a> <a href="#claim-B6">[B6]</a> <a href="#claim-B7">[B7]</a> <a href="#claim-B8">[B8]</a> <a href="#claim-D1">[D1]</a> <a href="#claim-D2">[D2]</a> <a href="#claim-D3">[D3]</a> <a href="#claim-D4">[D4]</a> <a href="#claim-D5">[D5]</a> <a href="#claim-D6">[D6]</a> <a href="#claim-D7">[D7]</a> <a href="#claim-D8">[D8]</a></span></p>
 <p>支持：H2；削弱：H1</p>
 <p>下一观察：下一次 FOMC 后窗收益；时间/触发：2026-12-09；支持条件：后续样本继续正且尾部收敛；削弱条件：再次出现主导尾部或方向反转</p>
 <p>固定模型的数值已重算；来源含义、假设合理性与因果解释仍需研究审查。敏感性结果不是统计置信区间。</p>
