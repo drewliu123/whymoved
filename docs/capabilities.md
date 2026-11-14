@@ -78,3 +78,8 @@
 
 - [预测协议](prediction-protocol.md)：可证伪预测的字段、五条预测与打分规则。
 - [预测日志](../predictions/2026-11.json)：JSON 记录，脚本打分。
+
+
+## 事件与日历
+
+- [催化剂日历](catalyst-calendar.md)：已确认日期、预计窗口、当前预期与预测打分点。
