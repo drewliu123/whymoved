@@ -1,0 +1,539 @@
+{
+  "schema_version": 2,
+  "layout": "brief",
+  "title": "英伟达增长是真的，但现金转化在变弱",
+  "question": "英伟达的增长有没有现金流与营运资本支撑？",
+  "type": "asset",
+  "task": "增长质量",
+  "as_of": "2026-11-14T00:00:00Z",
+  "summary": {
+    "conclusion": "FY2023→FY2026 收入从 26,974 增到 215,938 百万美元、CFO 从 5,641 增到 102,718；增长是真实的，现金也在增长。",
+    "surprise": "CFO/净利润从 1.29 降到 0.86，应收天数从 51.8 升到 65.0；现金转化在变弱，营运资本吸收了部分增长。",
+    "next_check": "看 FY2027 应收天数是否超过 70、存货天数是否超过 130；若收入增速降到 30% 以下，营运资本会从吸收现金转为需要现金。"
+  },
+  "answer": {
+    "text": "英伟达 FY2023→FY2026 收入从 26,974 增到 215,938 百万美元（约 8 倍），经营现金流从 5,641 增到 102,718 百万美元（约 18 倍）；增长不是账面故事，现金也在增长。但现金转化在变弱：CFO/净利润从 1.29 降到 0.86，应收天数从 51.8 升到 65.0，存货天数从 112.7 升到 125.0（FY2026）。增长越快，应收与存货吸收的现金越多；这不是欺诈或渠道压货的证据，但它是增长质量的折扣。若收入增速降到 30% 以下而天数不回落，营运资本会从吸收现金转为需要现金。",
+    "claim_ids": [
+      "I-JUDGE",
+      "I-WATCH",
+      "NVDA-REV-26",
+      "NVDA-CFO-26"
+    ]
+  },
+  "findings": [
+    {
+      "title": "收入与现金流都在高速增长",
+      "text": "FY2026 收入 215,938（+65.5%）、CFO 102,718（+60.3%）；CFO/收入约 47.6%，增长有现金支撑。",
+      "claim_ids": [
+        "NVDA-REV-25",
+        "NVDA-REV-26",
+        "NVDA-CFO-25",
+        "NVDA-CFO-26"
+      ],
+      "why_it_matters": "高增长若没有现金流，才是风险；英伟达的 CFO 与收入同向，先排除了「只增利润不增现金」。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "只看收入增速",
+        "detail": "收入与 CFO 并置"
+      }
+    },
+    {
+      "title": "CFO/净利润从 1.29 降到 0.86",
+      "text": "FY2023 1.29、FY2024 0.94、FY2025 0.88、FY2026 0.86；利润增长持续快于现金。",
+      "claim_ids": [
+        "NVDA-NI-23",
+        "NVDA-CFO-23",
+        "NVDA-NI-26",
+        "NVDA-CFO-26"
+      ],
+      "why_it_matters": "CFO/净利润下降说明利润里非现金项目或营运资本占用在增加；这是增长质量的第一个折扣。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "只看净利润",
+        "detail": "CFO/净利润四年趋势"
+      }
+    },
+    {
+      "title": "应收天数升 13 天，存货天数从 113 升到 125",
+      "text": "应收天数 51.8→65.0，存货天数 112.7→125.0（FY2025→FY2026）；应收账款 FY2026 增 66.8%，与收入 65.5% 接近。",
+      "claim_ids": [
+        "NVDA-AR-25",
+        "NVDA-AR-26",
+        "NVDA-REV-25",
+        "NVDA-REV-26",
+        "NVDA-INV-25",
+        "NVDA-INV-26",
+        "NVDA-COGS-25",
+        "NVDA-COGS-26"
+      ],
+      "why_it_matters": "应收与收入同步不算恶化，但存货天数回升说明备货在增加；需要看是新品 ramp 还是需求转弱。",
+      "increment": {
+        "kind": "new_fact",
+        "baseline": "只看应收",
+        "detail": "应收与存货天数并置"
+      }
+    },
+    {
+      "title": "合同负债很小，订单可见度有限",
+      "text": "FY2026 合同负债 2,572 百万美元，仅占收入 1.2%；英伟达的订单更多是短期采购承诺，不在合同负债里。",
+      "claim_ids": [
+        "NVDA-DEF-26",
+        "NVDA-REV-26"
+      ],
+      "why_it_matters": "不能用合同负债判断订单；应收与存货比合同负债更有信息量。",
+      "increment": {
+        "kind": "connection",
+        "baseline": "把合同负债当订单指标",
+        "detail": "合同负债占收入 1.2%"
+      }
+    }
+  ],
+  "implications": [
+    {
+      "title": "增长质量看 CFO/净利润与天数",
+      "text": "收入与 CFO 同向，但 CFO/净利润在下降；跟踪应收天数与存货天数比跟踪收入增速更能提前发现变化。",
+      "claim_ids": [
+        "NVDA-CFO-26",
+        "NVDA-AR-26",
+        "NVDA-INV-26"
+      ],
+      "horizon": "FY2027"
+    },
+    {
+      "title": "存货回升要区分新品与需求",
+      "text": "存货天数 112.7→125.0，可能是新品 ramp 备货；若收入增速放缓且天数继续升，才是需求转弱信号。",
+      "claim_ids": [
+        "NVDA-INV-25",
+        "NVDA-INV-26",
+        "NVDA-REV-26"
+      ],
+      "horizon": "未来 2–4 个季度"
+    },
+    {
+      "title": "现金流仍是增长的朋友",
+      "text": "CFO/收入约 48%，增长没有靠举债或透支现金；这不是质量警报，而是质量折扣。",
+      "claim_ids": [
+        "NVDA-CFO-26",
+        "NVDA-REV-26"
+      ],
+      "horizon": "FY2027"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "需求持续",
+      "thesis": "收入继续高增，应收与存货天数稳定。",
+      "triggers": [
+        "收入增速 > 40%",
+        "应收天数 < 70",
+        "存货天数 < 130"
+      ],
+      "implication": "增长质量维持，现金流继续支持扩张。"
+    },
+    {
+      "name": "渠道库存",
+      "thesis": "收入放缓但存货天数继续升，应收天数不降。",
+      "triggers": [
+        "收入增速 < 30%",
+        "存货天数 > 130",
+        "应收天数 > 70"
+      ],
+      "implication": "备货可能变成库存压力，现金流先于收入恶化。"
+    },
+    {
+      "name": "现金释放",
+      "thesis": "收入放缓、营运资本反向释放，CFO/净利润回升。",
+      "triggers": [
+        "收入增速 < 30%",
+        "应收天数下降",
+        "存货天数下降"
+      ],
+      "implication": "现金流改善，但需确认需求没有同步恶化。"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "SBC 与采购承诺解释缺口",
+      "text": "CFO/净利润下降可能来自股权激励等非现金费用与采购承诺，而不是应收恶化；需要看现金流量表附注。",
+      "claim_ids": [
+        "I-JUDGE",
+        "NVDA-CFO-26",
+        "NVDA-NI-26"
+      ]
+    }
+  ],
+  "watch": [
+    {
+      "signal": "FY2027 应收天数与存货天数",
+      "meaning": "天数决定现金转化是继续变弱还是修复",
+      "claim_ids": [
+        "NVDA-AR-26",
+        "NVDA-INV-26"
+      ],
+      "due": "2027-02-25",
+      "type": "earnings"
+    }
+  ],
+  "limitations": [
+    {
+      "text": "没有季度数据与客户集中度；应收/存货天数只能看年度趋势，无法定位单季变化。",
+      "material": true,
+      "claim_ids": [
+        "NVDA-AR-26",
+        "NVDA-INV-26"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "英伟达 FY2023–FY2026 增长质量",
+      "columns": [
+        "指标",
+        "FY2023",
+        "FY2024",
+        "FY2025",
+        "FY2026"
+      ],
+      "units": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "收入（百万美元）",
+          26974,
+          60922,
+          130497,
+          215938
+        ],
+        [
+          "收入增速",
+          "—",
+          125.9,
+          114.2,
+          65.5
+        ],
+        [
+          "经营现金流（百万美元）",
+          5641,
+          28090,
+          64089,
+          102718
+        ],
+        [
+          "CFO/净利润",
+          1.29,
+          0.94,
+          0.88,
+          0.86
+        ],
+        [
+          "应收天数",
+          51.8,
+          59.9,
+          64.5,
+          65.0
+        ],
+        [
+          "存货天数",
+          162.1,
+          116.0,
+          112.7,
+          125.0
+        ]
+      ],
+      "claim_ids": [
+        "NVDA-REV-23",
+        "NVDA-REV-24",
+        "NVDA-REV-25",
+        "NVDA-REV-26",
+        "NVDA-NI-23",
+        "NVDA-NI-24",
+        "NVDA-NI-25",
+        "NVDA-NI-26",
+        "NVDA-CFO-23",
+        "NVDA-CFO-24",
+        "NVDA-CFO-25",
+        "NVDA-CFO-26",
+        "NVDA-AR-23",
+        "NVDA-AR-24",
+        "NVDA-AR-25",
+        "NVDA-AR-26",
+        "NVDA-INV-23",
+        "NVDA-INV-24",
+        "NVDA-INV-25",
+        "NVDA-INV-26",
+        "NVDA-COGS-23",
+        "NVDA-COGS-24",
+        "NVDA-COGS-25",
+        "NVDA-COGS-26"
+      ],
+      "note": "应收天数=应收/收入×365；存货天数=存货/营业成本×365；CFO/净利润=经营现金流/净利润；由披露值计算并四舍五入。"
+    },
+    {
+      "title": "营运资本（百万美元）",
+      "columns": [
+        "项目",
+        "FY2023",
+        "FY2024",
+        "FY2025",
+        "FY2026"
+      ],
+      "units": [
+        "",
+        "百万美元",
+        "百万美元",
+        "百万美元",
+        "百万美元"
+      ],
+      "rows": [
+        [
+          "应收账款",
+          3827,
+          9999,
+          23065,
+          38466
+        ],
+        [
+          "存货",
+          5159,
+          5282,
+          10080,
+          21403
+        ],
+        [
+          "合同负债",
+          572,
+          1337,
+          1813,
+          2572
+        ]
+      ],
+      "claim_ids": [
+        "NVDA-AR-23",
+        "NVDA-AR-24",
+        "NVDA-AR-25",
+        "NVDA-AR-26",
+        "NVDA-INV-23",
+        "NVDA-INV-24",
+        "NVDA-INV-25",
+        "NVDA-INV-26",
+        "NVDA-DEF-23",
+        "NVDA-DEF-24",
+        "NVDA-DEF-25",
+        "NVDA-DEF-26"
+      ],
+      "note": "期末余额。"
+    }
+  ],
+  "charts": [
+    {
+      "kind": "line",
+      "title": "收入与经营现金流（百万美元）",
+      "x_label": "财年",
+      "y_label": "百万美元",
+      "unit": "百万美元",
+      "series": [
+        {
+          "name": "收入",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 26974
+            },
+            {
+              "label": "FY2024",
+              "value": 60922
+            },
+            {
+              "label": "FY2025",
+              "value": 130497
+            },
+            {
+              "label": "FY2026",
+              "value": 215938
+            }
+          ]
+        },
+        {
+          "name": "经营现金流",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 5641
+            },
+            {
+              "label": "FY2024",
+              "value": 28090
+            },
+            {
+              "label": "FY2025",
+              "value": 64089
+            },
+            {
+              "label": "FY2026",
+              "value": 102718
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "NVDA-REV-23",
+        "NVDA-REV-24",
+        "NVDA-REV-25",
+        "NVDA-REV-26",
+        "NVDA-CFO-23",
+        "NVDA-CFO-24",
+        "NVDA-CFO-25",
+        "NVDA-CFO-26"
+      ],
+      "note": "由披露值绘制。"
+    },
+    {
+      "kind": "line",
+      "title": "CFO/净利润与应收天数",
+      "x_label": "财年",
+      "y_label": "比率 / 天",
+      "unit": "混合",
+      "series": [
+        {
+          "name": "CFO/净利润",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 1.29
+            },
+            {
+              "label": "FY2024",
+              "value": 0.94
+            },
+            {
+              "label": "FY2025",
+              "value": 0.88
+            },
+            {
+              "label": "FY2026",
+              "value": 0.86
+            }
+          ]
+        },
+        {
+          "name": "应收天数",
+          "rows": [
+            {
+              "label": "FY2023",
+              "value": 51.8
+            },
+            {
+              "label": "FY2024",
+              "value": 59.9
+            },
+            {
+              "label": "FY2025",
+              "value": 64.5
+            },
+            {
+              "label": "FY2026",
+              "value": 65.0
+            }
+          ]
+        }
+      ],
+      "claim_ids": [
+        "NVDA-NI-23",
+        "NVDA-NI-24",
+        "NVDA-NI-25",
+        "NVDA-NI-26",
+        "NVDA-CFO-23",
+        "NVDA-CFO-24",
+        "NVDA-CFO-25",
+        "NVDA-CFO-26",
+        "NVDA-AR-23",
+        "NVDA-AR-24",
+        "NVDA-AR-25",
+        "NVDA-AR-26",
+        "NVDA-REV-23",
+        "NVDA-REV-24",
+        "NVDA-REV-25",
+        "NVDA-REV-26"
+      ],
+      "note": "两条线单位不同（比率与天），只用于同向/反向观察，不比较绝对高度。"
+    }
+  ],
+  "analysis": {
+    "version": 1,
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "baseline": "FY2023 的现金转化与营运资本",
+    "baseline_claim_ids": [
+      "NVDA-REV-23",
+      "NVDA-CFO-23"
+    ],
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入增长",
+      "应收与存货",
+      "经营现金流",
+      "现金转化"
+    ],
+    "hypotheses": [
+      {
+        "id": "H1",
+        "explanation": "增长由现金支撑，营运资本稳定"
+      },
+      {
+        "id": "H2",
+        "explanation": "增长部分依赖营运资本扩张"
+      }
+    ],
+    "tests": [
+      {
+        "id": "T1",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "CFO 与收入同步、天数稳定"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "CFO 落后于利润、天数上升"
+          }
+        ],
+        "status": "observed",
+        "claim_ids": [
+          "I-JUDGE",
+          "NVDA-CFO-26",
+          "NVDA-AR-26",
+          "NVDA-INV-26"
+        ],
+        "interpretation": "CFO 与收入同向但 CFO/净利润下降、天数上升，支持 H2、削弱 H1。",
+        "supports": [
+          "H2"
+        ],
+        "weakens": [
+          "H1"
+        ],
+        "next_observation": "FY2027 应收天数与存货天数",
+        "by": "2027-02-25",
+        "supports_if": "天数继续上升且 CFO/净利润下降",
+        "weakens_if": "天数回落、CFO/净利润回升"
+      }
+    ],
+    "conclusion": "英伟达的增长是真实的、有现金流支撑，但现金转化在变弱；应收与存货天数决定这是增长质量折扣还是渠道库存风险。",
+    "conclusion_claim_ids": [
+      "I-JUDGE"
+    ],
+    "models": [],
+    "model_status": "not_applicable",
+    "model_reason": "增长质量拆解，不需要固定估值模型",
+    "market": {
+      "status": "not_applicable",
+      "reason": "本题不判断当前价格",
+      "claim_ids": [],
+      "model_ids": []
+    }
+  }
+}

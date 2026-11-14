@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "question": "英伟达的增长有没有现金流与营运资本支撑？",
+  "type": "asset",
+  "task": "增长质量",
+  "entity": "NVIDIA",
+  "as_of": "2026-11-14T00:00:00Z",
+  "historical": false,
+  "decision_needed": "判断增长的质量与可持续性",
+  "prior_judgment": "收入高增长通常被视为需求强劲",
+  "comparison": {
+    "period": "FY2023→FY2026",
+    "unit": "USD million、天与比率",
+    "scope": "NVIDIA 合并口径"
+  },
+  "budget": {
+    "max_queries": 1,
+    "max_followups": 0
+  },
+  "stop_condition": "收入、利润、现金流、应收、存货、合同负债取得",
+  "analysis_version": 1,
+  "research_design": {
+    "question_kind": "change_explanation",
+    "method": "comparative_attribution",
+    "rationale": "比较利润增长与现金流、应收、存货的变化，判断增长是否被现金支撑",
+    "baseline": "FY2023 的现金转化与营运资本水平",
+    "price_relevance": false,
+    "mechanism_chain": [
+      "收入增长",
+      "应收与存货",
+      "经营现金流",
+      "现金转化"
+    ],
+    "discrimination_tests": [
+      {
+        "id": "T1",
+        "observe": "收入增长时 CFO/净利润与应收天数、存货天数的方向",
+        "source": "SEC XBRL 年度事实",
+        "by": "FY2027 10-K",
+        "outcomes": [
+          {
+            "hypothesis_id": "H1",
+            "prediction": "CFO 与收入同步、应收与存货天数稳定"
+          },
+          {
+            "hypothesis_id": "H2",
+            "prediction": "CFO 落后于利润、应收或存货天数上升"
+          }
+        ]
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "explanation": "增长由现金支撑，营运资本稳定",
+      "discriminating_observation": "CFO/净利润稳定、天数稳定"
+    },
+    {
+      "id": "H2",
+      "explanation": "增长部分依赖营运资本扩张",
+      "discriminating_observation": "CFO/净利润下降、天数上升"
+    }
+  ],
+  "queries": [
+    {
+      "question": "NVDA FY2023–FY2026 收入、净利润、CFO、应收、存货、合同负债、营业成本",
+      "query": "SEC companyfacts: NVDA",
+      "source": "SEC XBRL",
+      "purpose": "增长质量拆解",
+      "test_ids": [
+        "T1"
+      ]
+    }
+  ]
+}

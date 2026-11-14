@@ -1,0 +1,364 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-14T00:00:00Z",
+  "claims": [
+    {
+      "id": "NVDA-REV-23",
+      "text": "NVDA FY2023 收入 26974 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-REV-24",
+      "text": "NVDA FY2024 收入 60922 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-REV-25",
+      "text": "NVDA FY2025 收入 130497 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-REV-26",
+      "text": "NVDA FY2026 收入 215938 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-NI-23",
+      "text": "NVDA FY2023 净利润 4368 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-NI-24",
+      "text": "NVDA FY2024 净利润 29760 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-NI-25",
+      "text": "NVDA FY2025 净利润 72880 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-NI-26",
+      "text": "NVDA FY2026 净利润 120067 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-CFO-23",
+      "text": "NVDA FY2023 经营现金流 5641 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-CFO-24",
+      "text": "NVDA FY2024 经营现金流 28090 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-CFO-25",
+      "text": "NVDA FY2025 经营现金流 64089 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-CFO-26",
+      "text": "NVDA FY2026 经营现金流 102718 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-AR-23",
+      "text": "NVDA FY2023 应收账款 3827 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-AR-24",
+      "text": "NVDA FY2024 应收账款 9999 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-AR-25",
+      "text": "NVDA FY2025 应收账款 23065 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-AR-26",
+      "text": "NVDA FY2026 应收账款 38466 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-INV-23",
+      "text": "NVDA FY2023 存货 5159 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-INV-24",
+      "text": "NVDA FY2024 存货 5282 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-INV-25",
+      "text": "NVDA FY2025 存货 10080 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-INV-26",
+      "text": "NVDA FY2026 存货 21403 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-DEF-23",
+      "text": "NVDA FY2023 合同负债总额 572 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-DEF-24",
+      "text": "NVDA FY2024 合同负债总额 1337 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-DEF-25",
+      "text": "NVDA FY2025 合同负债总额 1813 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-DEF-26",
+      "text": "NVDA FY2026 合同负债总额 2572 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-COGS-23",
+      "text": "NVDA FY2023 营业成本 11618 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-COGS-24",
+      "text": "NVDA FY2024 营业成本 16621 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-COGS-25",
+      "text": "NVDA FY2025 营业成本 32639 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "NVDA-COGS-26",
+      "text": "NVDA FY2026 营业成本 62475 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-NVDA"
+        }
+      ]
+    },
+    {
+      "id": "I-JUDGE",
+      "text": "英伟达 FY2023→FY2026 收入增 7 倍、CFO 增 17 倍，但 CFO/净利润从 1.29 降到 0.86、应收天数从 52 升到 65；增长是真实的，现金转化在变弱，营运资本吸收了部分增长",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "NVDA-REV-23",
+        "NVDA-REV-24",
+        "NVDA-REV-25",
+        "NVDA-REV-26",
+        "NVDA-NI-23",
+        "NVDA-NI-24",
+        "NVDA-NI-25",
+        "NVDA-NI-26",
+        "NVDA-CFO-23",
+        "NVDA-CFO-24",
+        "NVDA-CFO-25",
+        "NVDA-CFO-26",
+        "NVDA-AR-23",
+        "NVDA-AR-24",
+        "NVDA-AR-25",
+        "NVDA-AR-26",
+        "NVDA-INV-23",
+        "NVDA-INV-24",
+        "NVDA-INV-25",
+        "NVDA-INV-26",
+        "NVDA-DEF-23",
+        "NVDA-DEF-24",
+        "NVDA-DEF-25",
+        "NVDA-DEF-26",
+        "NVDA-COGS-23",
+        "NVDA-COGS-24",
+        "NVDA-COGS-25",
+        "NVDA-COGS-26"
+      ]
+    },
+    {
+      "id": "I-WATCH",
+      "text": "若收入增速降到 30% 以下且应收/存货天数不回落，营运资本会从吸收现金转为需要现金支持；当前没有欺诈或渠道压货的证据",
+      "type": "inference",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [],
+      "basis": [
+        "NVDA-AR-26",
+        "NVDA-INV-26",
+        "NVDA-REV-26",
+        "NVDA-CFO-26"
+      ]
+    }
+  ]
+}

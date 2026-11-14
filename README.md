@@ -72,6 +72,11 @@
 - **[阅读报告](examples/hyperscaler-capex-margins/research/work/report.md)**
 - **[查看案例与命令](examples/hyperscaler-capex-margins/README.md)**
 
+**第十二个例子：英伟达的增长有现金流支撑吗？** FY2023→FY2026 收入增约 7 倍、CFO 增约 17 倍，增长是真实的；但 CFO/净利润从 1.29 降到 0.86、应收天数从 52 升到 65，现金转化在变弱。这是增长质量的折扣，不是欺诈证据。
+
+- **[阅读报告](examples/nvda-growth-quality/research/work/report.md)**
+- **[查看案例与命令](examples/nvda-growth-quality/README.md)**
+
 想自己跑一遍？从 [跟做式教程](docs/tutorial.md) 开始：四类研究、每步命令与预期输出，全程离线。
 
 想知道每项能力在哪里被验证？看 [能力索引](docs/capabilities.md)：能力 → 示例 / 测试 / 参考文档。
