@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "title": "AI 资本开支两年：AMAT 收入没掉队，现金被存货与预收款拖住",
+  "title": "AI 资本开支两年：同行释放存货，AMAT 在堆存货",
   "question": "超大规模厂商资本开支的增长，传导到半导体设备商了吗？",
   "type": "theme",
   "task": "产业链传导检验",
   "as_of": "2026-11-14T00:00:00Z",
   "answer": {
-    "text": "两年维度看，AMAT 收入 +7.0%，与 LRCX +5.8% 相当，KLAC +15.8% 更强——AMAT 没有持续丢失收入份额。真正持续背离的是现金流：两年经营现金流 AMAT −8.5%，LRCX +19.2%、KLAC +11.3%。拆开营运资本：应收账款天数从 70.3 降到 66.7 天，现金周期反而从 168.7 改善到 165.4 天；但存货增加 494 百万美元、合同负债减少 283 百万美元，合计拖走约 777 百万美元现金，应付账款增加 408 百万美元只是部分对冲。也就是说，AMAT 的现金弱不是收款问题，而是存货与预收款（订单）问题。",
+    "text": "两年维度看，AMAT 收入 +7.0%，与 LRCX +5.8% 相当，KLAC +15.8% 更强——AMAT 没有持续丢失收入份额。真正持续背离的是现金流：两年经营现金流 AMAT −8.5%，LRCX +19.2%、KLAC +11.3%。拆开营运资本后，差异更清楚：LRCX 存货天数从 196.1 降到 166.3、KLAC 从 282.0 降到 246.7，AMAT 反而从 138.6 升到 148.3；现金周期三家都在改善，但 AMAT 只改善 3.3 天，LRCX、KLAC 分别改善 29.1、37.3 天。AMAT 的存货增加与同行方向相反，现金弱更像公司层面的备货/订单节奏，而不是行业营运资本周期。",
     "claim_ids": [
       "CAPEX-MSFT-25",
       "CAPEX-GOOGL-25",
@@ -75,23 +75,27 @@
       }
     },
     {
-      "title": "存货与合同负债拖走现金，应付账款只是部分对冲",
-      "text": "存货 5,421→5,915（−494 现金）、合同负债 2,849→2,566（−283 现金）、应付账款 1,570→1,978（+408 现金）；CFO 桥的其余项目约 −399。",
+      "title": "同行释放存货，AMAT 堆存货",
+      "text": "存货天数 LRCX 196.1→166.3、KLAC 282.0→246.7，AMAT 138.6→148.3；现金周期改善幅度 AMAT 3.3 天、LRCX 29.1 天、KLAC 37.3 天。",
       "claim_ids": [
         "AMAT-INV-2024",
         "AMAT-INV-2025",
-        "AMAT-DEFERRED-2024",
-        "AMAT-DEFERRED-2025",
-        "AMAT-AP-2024",
-        "AMAT-AP-2025",
-        "AMAT-CFO-2024",
-        "AMAT-CFO-2025"
+        "AMAT-COGS-2024",
+        "AMAT-COGS-2025",
+        "LRCX-INV-2024",
+        "LRCX-INV-2025",
+        "LRCX-COGS-2024",
+        "LRCX-COGS-2025",
+        "KLAC-INV-2024",
+        "KLAC-INV-2025",
+        "KLAC-COGS-2024",
+        "KLAC-COGS-2025"
       ],
-      "why_it_matters": "现金弱来自备货与预收款下降；合同负债继续下降会比收入更早暴露订单走弱。",
+      "why_it_matters": "同样的行业环境，同行在去库存、AMAT 在加库存；这比「营运资本」四个字更能解释现金差距。",
       "increment": {
-        "kind": "connection",
-        "baseline": "「现金转化弱」的判断",
-        "detail": "CFO 桥与营运资本拆解"
+        "kind": "contradiction",
+        "baseline": "AMAT 单家营运资本拆解",
+        "detail": "同行存货与现金周期对照"
       }
     }
   ],
@@ -364,6 +368,94 @@
         "AMAT-COGS-2025"
       ],
       "note": "DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本×365；由披露值计算并四舍五入。"
+    },
+    {
+      "title": "营运资本对照（FY2025，天数与百万美元）",
+      "columns": [
+        "公司",
+        "DSO",
+        "DIO",
+        "DPO",
+        "CCC",
+        "CCC 变化",
+        "存货变化",
+        "合同负债变化"
+      ],
+      "units": [
+        "",
+        "天",
+        "天",
+        "天",
+        "天",
+        "天",
+        "百万美元",
+        "百万美元"
+      ],
+      "rows": [
+        [
+          "AMAT",
+          66.7,
+          148.3,
+          49.6,
+          165.4,
+          -3.3,
+          494,
+          -283
+        ],
+        [
+          "LRCX",
+          66.9,
+          166.3,
+          33.0,
+          200.2,
+          -29.1,
+          90,
+          1128
+        ],
+        [
+          "KLAC",
+          68.0,
+          246.7,
+          35.2,
+          279.5,
+          -37.3,
+          177,
+          -69
+        ]
+      ],
+      "claim_ids": [
+        "AMAT-AR-2024",
+        "AMAT-AR-2025",
+        "AMAT-INV-2024",
+        "AMAT-INV-2025",
+        "AMAT-AP-2024",
+        "AMAT-AP-2025",
+        "AMAT-DEFERRED-2024",
+        "AMAT-DEFERRED-2025",
+        "AMAT-COGS-2024",
+        "AMAT-COGS-2025",
+        "LRCX-AR-2024",
+        "LRCX-AR-2025",
+        "LRCX-INV-2024",
+        "LRCX-INV-2025",
+        "LRCX-AP-2024",
+        "LRCX-AP-2025",
+        "LRCX-DEFERRED-2024",
+        "LRCX-DEFERRED-2025",
+        "LRCX-COGS-2024",
+        "LRCX-COGS-2025",
+        "KLAC-AR-2024",
+        "KLAC-AR-2025",
+        "KLAC-INV-2024",
+        "KLAC-INV-2025",
+        "KLAC-AP-2024",
+        "KLAC-AP-2025",
+        "KLAC-DEFERRED-2024",
+        "KLAC-DEFERRED-2025",
+        "KLAC-COGS-2024",
+        "KLAC-COGS-2025"
+      ],
+      "note": "DSO=应收/收入×365，DIO=存货/营业成本×365，DPO=应付/营业成本×365；CCC 变化为 FY2024→FY2025；由披露值计算并四舍五入。"
     }
   ],
   "transmission": {
@@ -545,9 +637,19 @@
           "AMAT-DEFERRED-2024",
           "AMAT-DEFERRED-2025",
           "AMAT-AP-2024",
-          "AMAT-AP-2025"
+          "AMAT-AP-2025",
+          "AMAT-COGS-2024",
+          "AMAT-COGS-2025",
+          "LRCX-INV-2024",
+          "LRCX-INV-2025",
+          "LRCX-COGS-2024",
+          "LRCX-COGS-2025",
+          "KLAC-INV-2024",
+          "KLAC-INV-2025",
+          "KLAC-COGS-2024",
+          "KLAC-COGS-2025"
         ],
-        "interpretation": "FY2025 单年 AMAT +4.4% vs 同行 +24%；两年 AMAT +7.0%、LRCX +5.8%、KLAC +15.8%，收入未持续掉队；CFO 两年 −8.5%，桥显示存货增加与合同负债下降是主因，应收改善。",
+        "interpretation": "收入两年 AMAT +7.0%、LRCX +5.8%、KLAC +15.8%，未持续掉队；现金两年 AMAT −8.5%，存货方向与同行相反（AMAT +9.7 天、LRCX −29.8 天、KLAC −35.3 天），CCC 改善幅度也最小。",
         "supports": [
           "H2"
         ],
@@ -560,7 +662,7 @@
         "weakens_if": "增速差继续扩大"
       }
     ],
-    "conclusion": "两年维度 AMAT 收入 +7.0% 与 LRCX +5.8% 相当，没有持续丢失份额；现金流 −8.5% 的拖累来自存货增加与合同负债下降，应收与现金周期反而改善。",
+    "conclusion": "两年维度 AMAT 收入 +7.0% 与 LRCX +5.8% 相当，没有持续丢失份额；现金流 −8.5% 的差异与同行方向相反：LRCX/KLAC 在去库存、AMAT 在加库存，CCC 改善幅度也小得多。",
     "conclusion_claim_ids": [
       "I-JUDGE"
     ],
@@ -576,39 +678,41 @@
   },
   "implications": [
     {
-      "title": "跟踪存货与合同负债，而不是应收",
-      "text": "应收天数在改善，现金压力来自存货增加与预收款减少；这两个科目比 DSO 更能解释 CFO。",
+      "title": "存货方向是公司信号",
+      "text": "同行存货天数下降 30 天以上，AMAT 上升近 10 天；若 FY2026 仍不回落，说明备货可能变成滞销或需求误判。",
       "claim_ids": [
         "AMAT-INV-2025",
-        "AMAT-DEFERRED-2025",
-        "AMAT-AR-2025"
-      ],
-      "horizon": "未来 4–6 个季度"
-    },
-    {
-      "title": "合同负债是订单的领先指标",
-      "text": "合同负债从 2,849 降到 2,566 百万美元；若继续下降，订单走弱会比收入更早出现。",
-      "claim_ids": [
-        "AMAT-DEFERRED-2024",
-        "AMAT-DEFERRED-2025"
+        "LRCX-INV-2025",
+        "KLAC-INV-2025"
       ],
       "horizon": "FY2026 财报"
     },
     {
-      "title": "区分「备货」与「需求转弱」",
-      "text": "存货增加可能是为反弹备货，也可能是需求转弱；结合合同负债与 FY2026 收入才能分辨。",
+      "title": "合同负债是订单的领先指标",
+      "text": "AMAT 合同负债 2,849→2,566、LRCX 1,552→2,680、KLAC 1,782→1,714；AMAT 与 KLAC 下降、LRCX 上升，行业订单并不一致。",
       "claim_ids": [
-        "AMAT-INV-2024",
+        "AMAT-DEFERRED-2025",
+        "LRCX-DEFERRED-2025",
+        "KLAC-DEFERRED-2025"
+      ],
+      "horizon": "未来 4–6 个季度"
+    },
+    {
+      "title": "现金周期改善不等于现金健康",
+      "text": "三家 CCC 都在改善，但 AMAT 的改善幅度最小且 CFO 下降；看现金要同时看存货方向与预收款。",
+      "claim_ids": [
+        "AMAT-CFO-2025",
         "AMAT-INV-2025",
-        "AMAT-REVENUE-2025"
+        "LRCX-INV-2025",
+        "KLAC-INV-2025"
       ],
       "horizon": "FY2026"
     }
   ],
   "summary": {
     "conclusion": "两年维度 AMAT 收入 +7.0%，与 LRCX +5.8% 相当；真正持续掉队的是现金流（−8.5%）。",
-    "surprise": "应收天数在下降、现金周期在改善，但 CFO 仍降 8.3%——拖累来自存货增加 4.94 亿与合同负债减少 2.83 亿，不是收不回钱。",
-    "next_check": "看 FY2026 存货与合同负债：若合同负债继续下降，订单走弱会比收入更早出现。"
+    "surprise": "同行在释放存货：LRCX 存货天数降 29.8 天、KLAC 降 35.3 天，AMAT 反而升 9.7 天；AMAT 的存货增加与行业方向相反。",
+    "next_check": "看 FY2026 存货天数是否回落，以及合同负债是否继续下降；若两者同时恶化，需求走弱会比收入更早出现。"
   },
   "charts": [
     {

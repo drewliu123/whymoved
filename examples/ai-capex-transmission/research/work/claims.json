@@ -176,7 +176,7 @@
     },
     {
       "id": "I-JUDGE",
-      "text": "两年维度 AMAT 收入与 LRCX 相当（+7.0% vs +5.8%），没有持续丢失份额；CFO 两年 −8.5%，主要拖累是存货增加与合同负债下降，应收与现金周期反而改善。",
+      "text": "两年维度 AMAT 收入与 LRCX 相当（+7.0% vs +5.8%），没有持续丢失份额；CFO 两年 −8.5%，存货天数上升而 LRCX/KLAC 下降 30 天左右，现金弱更像公司备货/订单节奏，而不是行业周期。",
       "type": "inference",
       "as_of": "2026-11-14T00:00:00Z",
       "sources": [],
@@ -204,7 +204,11 @@
         "AMAT-DEFERRED-2024",
         "AMAT-DEFERRED-2025",
         "AMAT-AP-2024",
-        "AMAT-AP-2025"
+        "AMAT-AP-2025",
+        "LRCX-INV-2024",
+        "LRCX-INV-2025",
+        "KLAC-INV-2024",
+        "KLAC-INV-2025"
       ]
     },
     {
@@ -468,6 +472,226 @@
       "sources": [
         {
           "source_id": "S-AMAT"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-AR-2024",
+      "text": "LRCX FY2024 期末应收账款 2,519 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-AR-2025",
+      "text": "LRCX FY2025 期末应收账款 3,378 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-INV-2024",
+      "text": "LRCX FY2024 期末存货 4,218 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-INV-2025",
+      "text": "LRCX FY2025 期末存货 4,308 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-AP-2024",
+      "text": "LRCX FY2024 期末应付账款 614 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-AP-2025",
+      "text": "LRCX FY2025 期末应付账款 854 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-DEFERRED-2024",
+      "text": "LRCX FY2024 期末合同负债 1,552 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-DEFERRED-2025",
+      "text": "LRCX FY2025 期末合同负债 2,680 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-COGS-2024",
+      "text": "LRCX FY2024 营业成本 7,853 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "LRCX-COGS-2025",
+      "text": "LRCX FY2025 营业成本 9,457 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-LRCX"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-AR-2024",
+      "text": "KLAC FY2024 期末应收账款 1,833 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-AR-2025",
+      "text": "KLAC FY2025 期末应收账款 2,264 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-INV-2024",
+      "text": "KLAC FY2024 期末存货 3,035 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-INV-2025",
+      "text": "KLAC FY2025 期末存货 3,212 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-AP-2024",
+      "text": "KLAC FY2024 期末应付账款 359 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-AP-2025",
+      "text": "KLAC FY2025 期末应付账款 459 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-DEFERRED-2024",
+      "text": "KLAC FY2024 期末合同负债 1,782 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-DEFERRED-2025",
+      "text": "KLAC FY2025 期末合同负债 1,714 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-COGS-2024",
+      "text": "KLAC FY2024 营业成本 3,928 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
+        }
+      ]
+    },
+    {
+      "id": "KLAC-COGS-2025",
+      "text": "KLAC FY2025 营业成本 4,752 百万美元",
+      "type": "fact",
+      "as_of": "2026-11-14T00:00:00Z",
+      "sources": [
+        {
+          "source_id": "S-KLAC"
         }
       ]
     }
