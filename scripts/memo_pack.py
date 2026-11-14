@@ -53,6 +53,28 @@ def _findings(report, limit):
     return rows
 
 
+def _compact(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return "—"
+    try:
+        if abs(value) >= 1000:
+            return "{:,.0f}".format(value)
+        if abs(value) >= 10:
+            return "{:,.2f}".format(value)
+        return "{:.4g}".format(value)
+    except (OverflowError, ValueError):
+        return "—"
+
+
+def _percent(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return "—"
+    try:
+        return "{:.1f}%".format(value * 100)
+    except (OverflowError, ValueError):
+        return "—"
+
+
 def _valuation(report):
     summary = report.get("valuation_summary")
     analysis = report.get("analysis")
@@ -70,21 +92,26 @@ def _valuation(report):
         label = entry.get("label", "")
         if isinstance(entry.get("period"), str) and entry["period"].strip():
             label = str(label) + "（" + entry["period"].strip() + "）"
+        per_share_unit = (model.get("currency") or "货币") + "/股"
         if kind == "relative_valuation" and "per_share_median" in outputs:
             rows.append("| %s | 每股价值 | %s | %s | %s | %s |" % (
-                _cell(label), outputs["per_share_low"]["value"],
-                outputs["per_share_median"]["value"], outputs["per_share_high"]["value"],
-                _cell(outputs["per_share_median"]["unit"])))
+                _cell(label), _compact(outputs["per_share_low"]["value"]),
+                _compact(outputs["per_share_median"]["value"]), _compact(outputs["per_share_high"]["value"]),
+                _cell(per_share_unit)))
         elif kind == "dcf" and "per_share" in outputs:
             mid = outputs["per_share"]["value"]
             values = [row["outputs"]["per_share"]["value"] for row in model.get("result", {}).get("sensitivity", [])
                       if isinstance(row, dict) and isinstance(row.get("outputs"), dict) and "per_share" in row["outputs"]]
             low, high = (min(values), max(values)) if values else (mid, mid)
             rows.append("| %s | 每股价值 | %s | %s | %s | %s |" % (
-                _cell(label), low, mid, high, _cell(outputs["per_share"]["unit"])))
+                _cell(label), _compact(low), _compact(mid), _compact(high), _cell(per_share_unit)))
         elif kind == "reverse_dcf" and "implied_growth" in outputs:
-            rows.append("| %s | 隐含增长率 | — | %s | — | ratio |" % (
-                _cell(label), outputs["implied_growth"]["value"]))
+            mid = outputs["implied_growth"]["value"]
+            values = [row["outputs"]["implied_growth"]["value"] for row in model.get("result", {}).get("sensitivity", [])
+                      if isinstance(row, dict) and isinstance(row.get("outputs"), dict) and "implied_growth" in row["outputs"]]
+            low, high = (min(values), max(values)) if values else (mid, mid)
+            rows.append("| %s | 隐含增长率 | %s | %s | %s | %% |" % (
+                _cell(label), _percent(low), _percent(mid), _percent(high)))
     return rows
 
 

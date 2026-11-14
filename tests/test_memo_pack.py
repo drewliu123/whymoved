@@ -54,10 +54,12 @@ class MemoContentTests(unittest.TestCase):
             self.assertIn(token, text)
         dcf = next(model for model in data[0]["analysis"]["models"]
                    if model["spec"]["kind"] == "dcf")
-        self.assertIn(str(dcf["result"]["outputs"]["per_share"]["value"]), text)
+        self.assertIn(memo_pack._compact(dcf["result"]["outputs"]["per_share"]["value"]), text)
         reverse = next(model for model in data[0]["analysis"]["models"]
                        if model["spec"]["kind"] == "reverse_dcf")
-        self.assertIn(str(reverse["result"]["outputs"]["implied_growth"]["value"]), text)
+        self.assertIn(memo_pack._percent(reverse["result"]["outputs"]["implied_growth"]["value"]), text)
+        self.assertNotIn(str(reverse["result"]["outputs"]["implied_growth"]["value"]), text,
+                         "raw floats should not leak into the memo")
 
     def test_dated_catalysts_only(self):
         report, ledger, sources = documents()
