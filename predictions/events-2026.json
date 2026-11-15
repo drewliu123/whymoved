@@ -9,13 +9,28 @@
       "date": "2026-11-17",
       "ticker": "NVDA",
       "consensus": "EPS $2.49 (Nasdaq); revenue consensus unavailable",
-      "direction": "up",
+      "direction": "down",
       "confidence": "medium-low",
       "horizon_end": "2026-11-20",
       "baseline_price": 162.85,
       "benchmark": "NVDA absolute; Nasdaq/SOX relative if available",
-      "variant_view": "Valuation already de-rated to 33x and price sits near the 52-week low; a modest beat/guide is enough for a relief rally even if growth slows.",
-      "invalidation": "Close below 148.80, DSO above 70, data-center guide down, or gross-margin guide below 70%.",
+      "variant_view": "A beat is already consensus, and the stock fell over T+3 in three of the last four reports despite EPS beats; DSO and cash conversion give the market a quality excuse to sell the news.",
+      "invalidation": "T+1 gain above 8%, DSO below 60 with data-center guide up more than 10%, gross-margin guide above 72%, or T+3 close above 180.",
+      "status": "open"
+    },
+    {
+      "id": "E2",
+      "event": "NKE FY2027 Q2 earnings",
+      "date": "2026-12-17",
+      "ticker": "NKE",
+      "consensus": "EPS $0.34 (Nasdaq); revenue consensus unavailable",
+      "direction": "down",
+      "confidence": "medium-low",
+      "horizon_end": "2026-12-22",
+      "baseline_price": 37.99,
+      "benchmark": "NKE absolute",
+      "variant_view": "Revenue has stabilised but gross margin, profit and cash flow have not; three of the last four reports fell over T+3 despite EPS beats.",
+      "invalidation": "T+1 gain above 6%, gross-margin guide above 44% with inventory days below 95, or T+3 close above 42.",
       "status": "open"
     }
   ]

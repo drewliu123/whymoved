@@ -8,10 +8,10 @@
 
 | 日期 | 事件 | 当前预期/共识 | 为什么可能放大波动 | 关联报告 |
 | --- | --- | --- | --- | --- |
-| **2026-11-17（盘后）** | 英伟达 FY2027 Q3 财报 | 共识 EPS **$2.49**（Nasdaq；营收预期未提供）；**本项目方向预测：偏多（T+3），把握度中等偏低** | AI 算力基准；DSO、毛利率、数据中心指引会传导到设备（AMAT/LRCX/KLAC）与云厂商 | [事件预判](event-notes/nvda-2026-11-17.md)、[nvda-growth-quality](../examples/nvda-growth-quality/README.md)、[ai-capex-value-chain](../examples/ai-capex-value-chain/README.md) |
+| **2026-11-17（盘后）** | 英伟达 FY2027 Q3 财报 | 共识 EPS **$2.49**（Nasdaq；营收预期未提供）；**本项目方向预测：偏空（T+3），把握度中等偏低** | AI 算力基准；DSO、毛利率、数据中心指引会传导到设备（AMAT/LRCX/KLAC）与云厂商 | [事件预判](event-notes/nvda-2026-11-17.md)、[nvda-growth-quality](../examples/nvda-growth-quality/README.md)、[ai-capex-value-chain](../examples/ai-capex-value-chain/README.md) |
 | **2026-12-02 08:30 ET** | BEA：10 月个人收入与支出（含 PCE） | 本机无可信 consensus；看核心 PCE 环比与同比 | 影响降息路径与久期资产；对高估值成长（NVDA/LLY/TSLA）与银行（JPM）同时有估值传导 | [jpm-nim-provisions](../examples/jpm-nim-provisions/README.md) |
 | **2026-12-08/09** | FOMC 会议（声明 12-09） | 本机无法取得市场隐含概率；看声明、点阵图与发布会 | 全市场贴现率；但本项目 23 次样本显示「FOMC 后方向」不稳定 | [sp500-fomc-event](../examples/sp500-fomc-event/README.md) |
-| **2026-12-17** | 耐克 FY2027 Q2 财报 | 共识 EPS **$0.34**（Nasdaq；时间未定） | 毛利率、存货天数与全年指引；消费与关税敏感 | [nke-turnaround](../examples/nke-turnaround/README.md) |
+| **2026-12-17** | 耐克 FY2027 Q2 财报 | 共识 EPS **$0.34**（Nasdaq；时间未定）；**本项目方向预测：偏空（T+3），把握度中等偏低** | 毛利率、存货天数与全年指引；消费与关税敏感 | [事件预判](event-notes/nke-2026-12-17.md)、[nke-turnaround](../examples/nke-turnaround/README.md) |
 | **2026-12-23 08:30 ET** | BEA：Q3 GDP 第三次估算 | 本机无可信 consensus | 增长与通胀组合；对利率与周期股有传导，但通常低于 PCE/CPI | — |
 
 ## 二、预计窗口（日期未确认，需在接近时复核）
@@ -35,21 +35,28 @@
 
 完整的共识假设、期限与失效条件见 [预测协议](prediction-protocol.md) 与 [预测日志](../predictions/2026-11.json)。
 
-## 四、传导与拥挤
+## 四、方向预测打分点
+
+| 预测 | 事件 | 方向 | 打分日 |
+| --- | --- | --- | --- |
+| E1 | NVDA 2026-11-17 财报 | 偏空 | 2026-11-20 |
+| E2 | NKE 2026-12-17 财报 | 偏空 | 2026-12-22 |
+
+## 五、传导与拥挤
 
 - **NVDA → 设备 → 云**：一个事件同时影响 AMAT/LRCX/KLAC 与 MSFT/GOOGL/AMZN/META 的 AI 叙事；持有多个 AI 名字时，事件风险不是分散的，而是同一链条的重复暴露。
 - **FOMC/PCE → 所有估值**：高 P/E 名字（TSLA 363x、NVDA 33x、LLY 63x）对贴现率更敏感；银行（JPM）则同时受净息差与信用成本影响。
 - **NKE 与消费**：单一公司事件，但毛利率/库存指引会影响消费板块情绪。
 - **财报密集周**：2027-01 下旬与 2027-02 上旬是重叠窗口，多个高权重名字可能在同一周放大指数波动。
 
-## 五、当前预期的诚实边界
+## 六、当前预期的诚实边界
 
 - **只有 NVDA 与 NKE 有可核对的 EPS consensus**（Nasdaq 提供）；其他公司财报日期尚未进入日历，consensus 不可得。
 - **宏观 consensus 不可得**：BLS 日历 403，Nasdaq 经济日历无 consensus 字段且与美联储官方日期冲突（曾把 FOMC 标为 12-10）；本表以美联储/BEA 官方日期为准。
 - **没有市场隐含概率/期权定价**：无法量化「市场预期几次降息」或「财报隐含波动」。
 - 波动潜力是编辑判断，不是统计估计；日期未确认的条目必须接近时复核。
 
-## 六、接下来怎么用
+## 七、接下来怎么用
 
 1. **11-17 前**：只关注 NVDA 一个事件；检查 DSO、毛利率、数据中心指引，以及对本项目 P4 的含义。
 2. **12-02 与 12-08/09**：先看 PCE，再看 FOMC；不要用 FOMC 做方向交易，本项目样本显示无稳定效应。
@@ -66,5 +73,6 @@
 
 ## 事件方向预测
 
-- [NVDA 2026-11-17 事件预判](event-notes/nvda-2026-11-17.md)：偏多、把握度中等偏低、T+3 打分。
+- [NVDA 2026-11-17 事件预判](event-notes/nvda-2026-11-17.md)：偏空、把握度中等偏低、T+3 打分；含 4 次历史反应 base rate。
+- [NKE 2026-12-17 事件预判](event-notes/nke-2026-12-17.md)：偏空、把握度中等偏低、T+3 打分。
 - [事件预测协议](event-forecast-protocol.md)：字段、依据、打分与边界。

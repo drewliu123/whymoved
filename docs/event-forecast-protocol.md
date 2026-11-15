@@ -35,7 +35,8 @@
 
 | ID | 事件 | 方向 | 把握度 | 打分日 | 文件 |
 | --- | --- | --- | --- | --- | --- |
-| E1 | NVDA 2026-11-17 财报 | up | medium-low | 2026-11-20 | [事件预判](event-notes/nvda-2026-11-17.md) |
+| E1 | NVDA 2026-11-17 财报 | down | medium-low | 2026-11-20 | [事件预判](event-notes/nvda-2026-11-17.md) |
+| E2 | NKE 2026-12-17 财报 | down | medium-low | 2026-12-22 | [事件预判](event-notes/nke-2026-12-17.md) |
 
 日志：[predictions/events-2026.json](../predictions/events-2026.json)；打分命令：
 
@@ -43,6 +44,10 @@
 python3 scripts/event_forecast.py list
 python3 scripts/event_forecast.py score --id E1 --close 165.00 --date 2026-11-20
 ```
+
+## 修正规则
+
+预测在事件发生前可以修正，但必须保留修正记录与理由；事件发生后不允许改方向。NVDA 的 E1 就从「偏多」改为「偏空」，原因写进了事件笔记。
 
 ## 与「催化剂日历」的关系
 
